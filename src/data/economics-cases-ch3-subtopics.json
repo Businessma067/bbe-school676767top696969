@@ -1469,11 +1469,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about secondary matches the chapter reading.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn the setting — the primary, secondary, and tertiary sectors as stages from extraction through manufacturing to services.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "In “Three-sector Model Basics”, this wording on primary holds. Map the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "Against “Three-sector Model Basics”, this letter overreaches on primary.\n\nThe because-bridge fails: “they are basic needs.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (the primary, secondary, and tertiary sectors as stages from extraction through manufacturing to services), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False."
+      "Mining pulls ore from the ground — that is primary extraction. Smelting turns ore into metal ingots, which is a manufacturing step, so it sits in the secondary sector.\n\nSo the statement is True.",
+      "Banking, insurance, and coaching are service activities: they do not dig raw materials or assemble physical goods. That places them in the tertiary sector.\n\nSo the statement is True.",
+      "Primary work is the first stage — taking materials from nature. Farming, fishing, mining, and forestry all extract raw materials, so they belong there.\n\nSo the statement is True.",
+      "Banking and insurance are financial services, not extraction. Calling them “basic needs” does not move them into the primary sector; primary still means farming, fishing, mining, and forestry.\n\nA household needs food, but the bank that holds its savings is still tertiary.\n\nSo the statement is False.",
+      "Secondary means transforming materials — smelting, milling, assembling. Banking and insurance are services delivered to households, so they are tertiary, not secondary.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1498,11 +1498,11 @@
       false
     ],
     "tactical_explanations": [
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about capital.\n\nThe because-bridge fails: “they teach on mountain slopes.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nIn this stem’s setting (a Tyrolean ski resort hires instructors and sells lift passes to local visitors), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "The wording on tertiary fights the usual test. The because-bridge fails: “guests consume the experience.” does not justify the labelled conclusion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on primary shows quickly.\n\nThe because-bridge fails: “it operates on a mountainside.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (a Tyrolean ski resort hires instructors and sells lift passes to local visitors), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Lift passes and ski lessons are services sold to visitors. In the three-sector model that is tertiary activity, not extraction or factory work.\n\nSo the statement is True.",
+      "Instructors are labour: people teaching on the slopes. Capital would be produced means of production such as lifts, snowcats, or rented kit — not the teachers themselves.\n\nTeaching on a mountain does not redefine labour as capital.\n\nSo the statement is False.",
+      "Building skis on site would transform materials into goods. That is secondary manufacturing. Guests consuming the ski experience does not keep ski-making in the tertiary sector.\n\nService delivery (passes, lessons) is tertiary; fabricating equipment is secondary.\n\nSo the statement is False.",
+      "Guest services — rentals, instruction, hospitality — are tertiary. Snow being natural does not turn the resort’s guest operations into primary extraction the way mining or forestry would.\n\nPrimary extracts raw materials from nature; hosting skiers does not.\n\nSo the statement is False.",
+      "A mountainside location does not decide the sector. The resort’s core activities are services to visitors, so it is tertiary. Primary would require extracting raw materials from nature, not simply operating outdoors.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1527,11 +1527,11 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — “A coal mine extracting ore belongs to the primary sector” is the standard classroom sense.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "The claim about primary matches the chapter reading.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "In “Primary Sector Activities”, this wording on secondary holds. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Under the usual test, the claim on primary is sound.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn the setting — classification of primary-sector activity.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of primary.\n\nSo the statement is True."
+      "A coal mine taking ore from the ground is textbook primary extraction.\n\nSo the statement is True.",
+      "Growing olives and harvesting them is agricultural primary activity. Even when the farm presses oil on site as part of that crop handling, the core story remains primary agriculture rather than factory manufacturing or retail services.\n\nSo the statement is True.",
+      "Forestry concessions that cut and supply logs to mills extract a natural resource. That is primary-sector work before any mill transforms the wood.\n\nSo the statement is True.",
+      "Once logs reach a timber mill and become export boards, materials are being transformed. That manufacturing step is secondary, not primary forestry.\n\nSo the statement is True.",
+      "Commercial fishing that lands herring for sale extracts a natural resource for market. That sits in the primary sector alongside farming and mining.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1556,11 +1556,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports tertiary accurately as written.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "In “Secondary Manufacturing”, this wording on tertiary holds. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "The absolute or swapped label on tertiary fails the chapter test.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on tertiary shows quickly.\n\nThe because-bridge fails: “jackets are sold later.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is False.",
-      "Against “Secondary Manufacturing”, this letter overreaches on primary. The because-bridge fails: “ore originates underground.” does not justify the labelled conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False."
+      "Selling finished jackets in a shop is trade and distribution — a service stage after manufacturing. That is tertiary, not secondary sewing.\n\nSo the statement is True.",
+      "Warehousing steel until it is welded is logistics: storing and moving goods rather than shaping them. Logistics services belong in the tertiary sector.\n\nSo the statement is True.",
+      "A car plant assembling vehicles transforms parts into finished cars. That is secondary manufacturing. Serving customers later does not push assembly into the tertiary sector.\n\nTertiary would be the dealer’s sales service, not the plant’s production line.\n\nSo the statement is False.",
+      "Sewing jackets is fabrication — secondary manufacturing. Later retail sales can be tertiary, but the sewing floor itself is not “tertiary retail” just because jackets will eventually be sold.\n\nManufacture and retail are different stages; the because-clause mixes them up.\n\nSo the statement is False.",
+      "Smelters reshape ore into metal. That transformation is secondary. Ore’s underground origin explains the input, not the smelter’s sector; extraction at the mine is primary, smelting is not.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1585,11 +1585,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Yes — “Construction spending on bridge rebuilds is included in GDP measurement” is the standard classroom sense.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "“Rebuild spending can raise measured GDP while citizen…” fits the chapter sense of gdp.\n\nSo the statement is True.",
-      "The sentence reports services accurately as written.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "“Rebuild activity proves GDP always equals citizen wellbeing after disasters” slips once you restore the chapter criterion.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False."
+      "GDP adds up the money value of final output. After floods, bridge rebuilds generate construction spending that can lift measured GDP even though the disaster itself destroyed wellbeing.\n\nSo the statement is True.",
+      "Bridge rebuilds are construction of final infrastructure services/goods counted in the accounts. That spending enters GDP measurement like other domestic construction.\n\nSo the statement is True.",
+      "Rebuild outlays can raise the GDP total while citizens are worse off than before the floods. GDP tracks monetary production, not a welfare scorecard, so the two can move in opposite directions.\n\nSo the statement is True.",
+      "By definition GDP is the monetary value of final goods and services produced within national borders over a period. That is exactly what the statement restates.\n\nSo the statement is True.",
+      "Rebuild activity can push measured GDP up without restoring lost wellbeing. GDP does not “always equal” citizen welfare after disasters — it can rise while living conditions remain damaged.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1614,11 +1614,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about services matches the chapter reading. Map the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "“Remote coaching sessions sold to foreign clients are…” fits the chapter sense of services.\n\nSo the statement is True.",
-      "In “Tertiary Services Scope”, this wording on secondary holds. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Under the usual test, the claim on services is sound.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn the setting — the scope of tertiary-sector services.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Restore the right criterion for services and the claim falls away.\n\nSo the statement is False."
+      "Loan desks at banking branches deliver financial services. That is classic tertiary activity.\n\nSo the statement is True.",
+      "Remote coaching sold abroad is still a service: advice and training, not extraction or fabrication. Foreign clients do not change the tertiary classification.\n\nSo the statement is True.",
+      "Smelting ore into metal ingots on site transforms materials. That manufacturing step is secondary.\n\nSo the statement is True.",
+      "Software helpdesks that troubleshoot home networks sell support services. Troubleshooting is tertiary work.\n\nSo the statement is True.",
+      "Insurance cooperatives that process claims provide financial services. They do not extract raw materials, so calling them primary extraction is the wrong sector.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1643,11 +1643,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Emerging Economy Sector Mix”, this wording on primary holds.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn the setting — sector patterns in emerging economies.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of primary.\n\nSo the statement is True.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "The wording on primary fights the usual test.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (sector patterns in emerging economies), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "“Emerging economies typically report tertiary output above seventy percent of GDP” slips once you restore the chapter criterion.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is False."
+      "When a large share of employment sits in farming in a less developed country, that signals primary-sector weight in the economy’s structure.\n\nSo the statement is True.",
+      "As development advances, farming and other primary shares usually shrink relative to industry and especially services. That pattern is the standard sector-shift story.\n\nSo the statement is True.",
+      "Emerging economies typically carry larger primary shares than advanced EU states, not smaller ones. Advanced economies have already shifted toward services.\n\nSo the statement is False.",
+      "Tertiary output above roughly seventy percent of GDP is a developed-economy pattern. Emerging economies usually still show heavier primary (and often secondary) weights, not that high service share.\n\nSo the statement is False.",
+      "Service shares above seventy percent of output characterise advanced economies, not most emerging ones. Emerging economies more often lean on primary activity and a smaller tertiary share.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1672,11 +1672,11 @@
       false
     ],
     "tactical_explanations": [
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on secondary shows quickly.\n\nThe because-bridge fails: “bottled oil is a processed product.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (a farm selling olive oil while a factory fills an industrial production order), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Restore the right criterion for tertiary and the claim falls away.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about tertiary. The because-bridge fails: “parts go to other businesses.” does not justify the labelled conclusion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "The wording on tertiary fights the usual test.\n\nThe because-bridge fails: “oil is sold to customers.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn this stem’s setting (a farm selling olive oil while a factory fills an industrial production order), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Fabricating electronic components reshapes materials into parts. That transformation is secondary manufacturing.\n\nSo the statement is True.",
+      "An olive farm’s harvest-and-press work is primary agriculture. Bottling oil as part of farm output does not by itself turn the farm into a secondary factory; secondary would be industrial processing separate from the farm’s extractive stage.\n\nSelling a processed food does not automatically re-label the farm secondary.\n\nSo the statement is False.",
+      "Selling to customers does not force a tertiary label. The farm’s crop work is primary; the factory’s production order is secondary. Customer sales can accompany any sector.\n\nSo the statement is False.",
+      "Making components from materials is manufacturing — secondary. Selling parts to other businesses (B2B) does not convert fabrication into a tertiary service.\n\nBuyer type does not rewrite the production stage.\n\nSo the statement is False.",
+      "Harvesting and pressing olives on the farm is primary agricultural activity. Selling the oil to customers is how farms market output; it does not move the harvest into the tertiary sector.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -1701,11 +1701,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports advanced accurately as written. Map the actors onto the stem: advanced sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "In “Developed EU Tertiary Share”, this wording on tertiary holds.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Under the usual test, the claim on gdp is sound. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "The absolute or swapped label on primary fails the chapter test.\n\nSo the statement is False.",
-      "Against “Developed EU Tertiary Share”, this letter overreaches on primary.\n\nThe because-bridge fails: “food is essential.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (tertiary dominance in advanced European economies), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Advanced EU economies are service-dominated in output shares even though food production still matters. Tertiary weight is the structural story, not a claim that farming vanished.\n\nSo the statement is True.",
+      "In highly developed EU economies the tertiary sector often exceeds seventy percent of output — the usual advanced-economy profile.\n\nSo the statement is True.",
+      "In the model, higher GDP per capita in EU members is linked to high living standards. The statement matches that link.\n\nSo the statement is True.",
+      "A seventy-percent-plus service share is tertiary dominance, not primary dominance. Primary would be farming, fishing, mining, and forestry taking the large share.\n\nSo the statement is False.",
+      "Developed EU states do not keep primary output above seventy percent. Food remains essential, but its share of total output is small; services dominate.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1730,11 +1730,11 @@
       true
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on services is sound.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Yes — “GDP is usually calculated for final production within one year inside national borders” is the standard classroom sense.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "The claim about services matches the chapter reading.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "“GDP measures production within borders regardless of…” fits the chapter sense of gdp.\n\nSo the statement is True.",
-      "In “Gross Domestic Product Definition”, this wording on services holds. Map the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True."
+      "GDP counts final goods and services. Intermediate goods traded between factories are left out to avoid double counting.\n\nSo the statement is True.",
+      "Standard GDP figures cover final production inside national borders over a period such as one year. That is the usual classroom framing.\n\nSo the statement is True.",
+      "GDP is the monetary sum of final goods and services produced within a country’s borders. The statement restates that definition.\n\nSo the statement is True.",
+      "What matters for GDP is where production happens. A plant inside the border counts even if the owning firm is foreign; nationality of the firm does not remove domestic output from GDP.\n\nSo the statement is True.",
+      "Final services produced domestically — insurance among them — enter GDP just as final goods do. Services are not excluded by default.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1759,11 +1759,11 @@
       true
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "The sentence reports services accurately as written. Map the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "In “EU Services at Seventy-four Percent”, this wording on share holds.\n\nMap the actors onto the stem: share sits inside the definition the chapter uses for this case.\n\nSector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nIn the setting — a GDP report for an EU member state shows services at seventy-four percent of total output.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Yes — “That pattern reflects rising relative importance of tertiary activity with development” is the standard classroom sense.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True."
+      "A seventy-four percent service share says tertiary activity dominates measured output. It says nothing by itself about whether every GDP component is environmentally sustainable.\n\nSo the statement is True.",
+      "Seventy-four percent services means tertiary leadership, not primary leadership. Primary would require a large extractive share, which this figure does not show.\n\nSo the statement is True.",
+      "Service shares around that level are typical for advanced EU economies that have already shifted toward tertiary output.\n\nSo the statement is True.",
+      "A highly developed EU pattern is precisely a large tertiary share such as seventy-four percent of output. The report fits that pattern.\n\nSo the statement is True.",
+      "Development usually raises the relative importance of tertiary activity. A seventy-four percent service share is what that rising weight looks like in the accounts.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1788,11 +1788,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. The claim on inflation matches that reading.\n\nSo the statement is True.",
-      "Under the usual test, the claim on inflation is sound. Map the actors onto the stem: inflation sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "“Nominal GDP increases always equal real economic growth” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for gdp and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on inflation shows quickly. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False."
+      "GDP growth for real comparisons uses inflation-adjusted GDP across years so price rises are not mistaken for more production.\n\nSo the statement is True.",
+      "Strip inflation from nominal figures and you can get real GDP; divide by population and real GDP per capita can rise even when price indexes moved.\n\nSo the statement is True.",
+      "Real GDP holds prices constant (or otherwise removes price change) so year-to-year comparisons track the volume of production, not just higher price tags.\n\nSo the statement is True.",
+      "Nominal GDP can rise because prices rose, even if real output flatlined. Nominal increases therefore do not always equal real economic growth.\n\nSo the statement is False.",
+      "Ignoring inflation does affect growth comparisons: when prices rise, nominal growth overstates real expansion. The “never affects” claim is wrong.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1817,11 +1817,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “Remote delivery to foreign clients keeps the activity tertiary” is the standard classroom sense.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn the setting — an Estonian coach delivers remote training sessions to clients in other countries.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Against “Remote Coaching Abroad”, this letter overreaches on primary. The because-bridge fails: “trainers work from home offices.” does not justify the labelled conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about goods.\n\nThe because-bridge fails: “no goods cross borders, the activity cannot be counted in GDP.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for goods and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn this stem’s setting (an Estonian coach delivers remote training sessions to clients in other countries), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False."
+      "Remote sessions sold to foreign clients are still coaching services. Delivery channel and client location do not push the work out of the tertiary sector.\n\nSo the statement is True.",
+      "Exporting advice is a service export. It does not turn coaching into secondary manufacturing, which would require transforming materials into goods.\n\nSo the statement is True.",
+      "Working from a home office does not make coaching primary. Primary extracts raw materials from nature; online training is a service.\n\nSo the statement is False.",
+      "Services produced for foreign clients can still count in GDP where the service is produced. “No goods cross borders” does not erase service output from the accounts.\n\nSo the statement is False.",
+      "Home-office coaching is tertiary service work. It is not primary extraction merely because the trainer sits at home.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1846,11 +1846,11 @@
       false
     ],
     "tactical_explanations": [
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "In “Coal Mine and Car Plant Quarter”, this wording on secondary holds.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn the setting — a Romanian coal mine and a Graz car plant report output in the same quarter.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of secondary.\n\nSo the statement is True.",
-      "Under the usual test, the claim on primary is sound. Map the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Against “Coal Mine and Car Plant Quarter”, this letter overreaches on tertiary.\n\nThe because-bridge fails: “they employ office staff.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn this stem’s setting (a Romanian coal mine and a Graz car plant report output in the same quarter), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Coal taken from the Romanian mine is primary-sector extraction.\n\nSo the statement is True.",
+      "Assembling vehicles in Graz transforms parts into cars. That plant work is secondary manufacturing.\n\nSo the statement is True.",
+      "Steel may originate in mining, but once a car plant assembles vehicles the activity is manufacturing. Input origins do not drag assembly back into the primary sector.\n\nSo the statement is True.",
+      "Office staff support the mine or plant; they do not redefine the core activity. Extraction stays primary and assembly stays secondary even when clerks and managers are on the payroll.\n\nSo the statement is True.",
+      "Office employment does not place both sites in the tertiary sector. The mine’s core output is primary coal; the plant’s core output is secondary vehicles. Support roles do not overwrite those labels.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1875,11 +1875,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. The claim on gdp matches that reading.\n\nSo the statement is True.",
-      "Against “GDP Income Coverage Critique”, this letter overreaches on barter.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for barter and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn this stem’s setting (criticisms that GDP misses some income), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False.",
-      "The wording on household fights the usual test. Swap in the textbook criterion for household and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False.",
-      "“Household volunteering and unpaid care are always counted in official GDP totals” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for household and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False."
+      "One recurring critique is that GDP leaves out some income sources — unpaid household work, much informal barter, and similar flows — so using GDP alone is debated.\n\nSo the statement is True.",
+      "Barter is often missed or only partly captured in official GDP. Saying every barter deal is always fully recorded overstates what the accounts catch.\n\nSo the statement is False.",
+      "Owner-performed unpaid home maintenance is typically outside GDP. It is not “always included.”\n\nSo the statement is False.",
+      "Household volunteering and unpaid care are classic GDP omissions. The totals do not fully capture them.\n\nSo the statement is False.",
+      "Official GDP does not always count household volunteering and unpaid care. Those non-market flows are a standard gap in the measure.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -1904,11 +1904,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about services matches the chapter reading.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "“Both operations are tertiary because each serves customers” slips once you restore the chapter criterion.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is False.",
-      "The absolute or swapped label on primary fails the chapter test.\n\nSo the statement is False.",
-      "Against “Insurance Branch and Wheat Farm”, this letter overreaches on secondary.\n\nThe because-bridge fails: “flour milling follows.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (an insurance cooperative processes claims while a nearby farm harvests wheat), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about secondary. The because-bridge fails: “grain is processed into flour elsewhere.” does not justify the labelled conclusion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False."
+      "Wheat harvesting on the farm is primary; claims processing at the insurance cooperative is tertiary. The two activities can sit side by side in different sectors.\n\nSo the statement is True.",
+      "Serving customers does not force a shared tertiary label. Farming remains primary extraction/agriculture; insurance remains a financial service. Customer contact alone is not the sector test.\n\nSo the statement is False.",
+      "Claims handling is an insurance service — tertiary. Covering “basic risks” does not move underwriting into the primary sector.\n\nSo the statement is False.",
+      "Harvesting wheat is primary agriculture. Flour milling elsewhere would be secondary, but that later stage does not reclassify the harvest itself as manufacturing.\n\nSo the statement is False.",
+      "Grain may later become flour in a mill, yet the farm’s harvest is still primary. Downstream processing does not pull the farm into the secondary sector.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1933,11 +1933,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Under the usual test, the claim on gdp is sound. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "“Rebuilds after disasters can raise GDP without…” fits the chapter sense of gdp.\n\nSo the statement is True.",
-      "The claim about gdp matches the chapter reading.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on gdp shows quickly. Swap in the textbook criterion for gdp and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False."
+      "GDP is a money total of final output. It does not report whether that growth depleted resources or harmed wellbeing.\n\nSo the statement is True.",
+      "Used alone, GDP says little about quality or sustainability. You need other indicators for pollution, resource stocks, and living conditions.\n\nSo the statement is True.",
+      "After disasters, rebuild spending can raise GDP while quality of life stays damaged. Higher measured output need not mean better daily life.\n\nSo the statement is True.",
+      "GDP can climb while pollution rises or resources are drawn down. The accounts do not subtract environmental damage by default.\n\nSo the statement is True.",
+      "Quality and sustainability concerns are central to debates about using GDP as a welfare measure. Saying they are unrelated misstates the critique.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1962,11 +1962,11 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — “Mining origins of steel do not make warehousing or shipbuilding primary” is the standard classroom sense.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "“The chain shows tertiary logistics feeding secondary…” fits the chapter sense of secondary.\n\nSo the statement is True.",
-      "The sentence reports secondary accurately as written. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "In “Port Warehouse and Shipyard”, this wording on secondary holds.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn the setting — a port warehouse stores imported steel before a shipyard welds hull sections.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“Warehousing imported steel before fabrication is a…” fits the chapter sense of tertiary.\n\nSo the statement is True."
+      "Steel may have been mined earlier, but that history does not make port warehousing or shipyard welding primary. Each stage keeps its own sector label.\n\nSo the statement is True.",
+      "Warehousing imported steel is logistics (tertiary); welding hull sections transforms materials (secondary). The chain is tertiary logistics feeding secondary production.\n\nSo the statement is True.",
+      "Welding hull sections at the shipyard is manufacturing — secondary-sector work.\n\nSo the statement is True.",
+      "Building ships from steel plate transforms inputs into a finished vessel. That is secondary manufacturing.\n\nSo the statement is True.",
+      "Storing imported steel before fabrication is a logistics service, not fabrication itself. Warehousing belongs in the tertiary sector.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1991,11 +1991,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports inflation accurately as written.\n\nMap the actors onto the stem: inflation sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — a Prague clinic expands while real GDP per capita rises after inflation adjustment.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of inflation.\n\nSo the statement is True.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "Under the usual test, the claim on gdp is sound.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — a Prague clinic expands while real GDP per capita rises after inflation adjustment.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on primary shows quickly. The because-bridge fails: “health is a basic need.” does not justify the labelled conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False."
+      "When real GDP per capita rises after inflation has been stripped out, that is the usual signal of real growth in average output.\n\nSo the statement is True.",
+      "Healthcare delivery is a service — tertiary — even though health is a basic need. “Basic need” does not reclassify clinics as primary extraction.\n\nSo the statement is True.",
+      "Nominal GDP can rise with prices alone. Without an inflation adjustment you cannot treat a nominal increase as proof of real growth.\n\nSo the statement is True.",
+      "A Prague clinic expanding is tertiary healthcare services. Health being a basic need does not place clinic growth in the primary sector.\n\nSo the statement is False.",
+      "Healthcare can expand while real GDP per capita rises; the two are compatible. Nothing in the accounts forbids service growth alongside real per-capita gains.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2020,11 +2020,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Yes — “Recovery and rebuild spending adds to measured output” is the standard classroom sense.\n\nMap the actors onto the stem: recovery sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False.",
-      "The wording on gdp fights the usual test. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False.",
-      "“Disaster rebuilds exclude construction wages from GDP to avoid counting damage twice” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for gdp and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False."
+      "Infrastructure rebuilds after ecological damage generate construction and related output that can raise measured GDP.\n\nSo the statement is True.",
+      "Recovery and rebuild spending is final domestic production activity, so it adds to measured output in the GDP accounts.\n\nSo the statement is True.",
+      "GDP rising after disasters tracks rebuild spending, not automatically better living standards. Welfare can still be lower than before the damage.\n\nSo the statement is False.",
+      "Cleanup and repair spending adds to measured GDP; it does not automatically reduce the total because it “repairs harm.” The accounts record the production activity.\n\nSo the statement is False.",
+      "Construction wages on rebuilds are part of the value of that output and enter GDP. They are not excluded to “avoid counting damage twice.”\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2049,11 +2049,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about secondary matches the chapter reading. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "The sentence reports primary accurately as written.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on secondary shows quickly.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing. Keep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "The absolute or swapped label on primary fails the chapter test.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about services.\n\nThe because-bridge fails: “designs are creative services.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for services and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn this stem’s setting (a fishing fleet lands herring while a fashion label sews jackets from imported fabric), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Sewing jackets from imported fabric transforms materials into garments. That is secondary manufacturing regardless of where the fabric was woven.\n\nSo the statement is True.",
+      "Landing herring for sale is commercial fishing — primary-sector extraction of a natural resource.\n\nSo the statement is True.",
+      "Light onboard filleting as part of commercial fishing does not by itself reclassify the fleet’s core landing activity as a secondary processing plant. Primary fishing remains the right sector for landing catch for sale.\n\nSo the statement is False.",
+      "Using natural fish or imported fabric does not make both firms primary. The fleet’s landing is primary; the fashion label’s sewing is secondary. Input stories differ from the production stage.\n\nSo the statement is False.",
+      "Creative design may be a service, but sewing jackets on a production floor is manufacturing. Fashion sewing is secondary, not tertiary, just because design work is creative.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2078,11 +2078,11 @@
       true
     ],
     "tactical_explanations": [
-      "In “A small IT-support venture Sector Classification”, this wording on tertiary holds.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "Under the usual test, the claim on tertiary is sound. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Yes — “A small IT-support venture trade goods, develop software, and provide technical support in the…” is the standard classroom sense.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nSo the statement is True.",
-      "“Minerals inside devices do not reclassify their…” fits the chapter sense of primary.\n\nSo the statement is True.",
-      "The sentence reports secondary accurately as written. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True."
+      "Writing software for customers is a service activity — tertiary in the three-sector model.\n\nSo the statement is True.",
+      "Refurbishing laptops as a support offering and providing technical help are service activities. Both sit in the tertiary sector for this kind of IT-support venture.\n\nSo the statement is True.",
+      "Trading refurbished gear, developing software, and giving technical support are all service-side activities for a small IT-support venture. They are classified as tertiary, not as mining or factory assembly of new devices.\n\nSo the statement is True.",
+      "Devices contain minerals, but support work does not extract those minerals. The minerals story does not reclassify helpdesk or refurb support as primary extraction.\n\nSo the statement is True.",
+      "Handling physical laptops during support or light refurb does not turn the venture into secondary manufacturing of new machines. The core activity remains tertiary support services.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2107,11 +2107,11 @@
       false
     ],
     "tactical_explanations": [
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on secondary shows quickly.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services. Once the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Against “Mining Pit and Smelters Chain”, this letter overreaches on primary.\n\nThe because-bridge fails: “metal is natural.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (a mining pit extracts ore while downstream smelters shape metal for machinery plants), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False.",
-      "The wording on primary fights the usual test. The because-bridge fails: “ore comes directly from the earth.” does not justify the labelled conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False."
+      "Smelters that shape metal transform ore into usable metal. That is secondary transformation, not mining.\n\nSo the statement is True.",
+      "Smelting is processing — secondary — not a continuation of primary extraction. The pit extracts; the smelter transforms.\n\nSo the statement is False.",
+      "Metal’s natural origin does not freeze every later stage as primary. Mining is primary; smelting and machinery plants are secondary manufacturing steps.\n\nSo the statement is False.",
+      "Downstream steps after the pit — smelting, shaping, machinery production — are secondary, not primary. “Metal is natural” does not keep the whole chain in extraction.\n\nSo the statement is False.",
+      "Ore comes from the earth, but once it is smelted the activity is manufacturing. Smelting is secondary, not primary.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2136,11 +2136,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports inflation accurately as written. Map the actors onto the stem: inflation sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "“Inflation adjustment is generally required for…” fits the chapter sense of inflation.\n\nSo the statement is True.",
-      "Under the usual test, the claim on nominal is sound.\n\nMap the actors onto the stem: nominal sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Yes — “Ignoring inflation can overstate growth when prices rise faster than output” is the standard classroom sense.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False."
+      "Year-to-year GDP comparisons need inflation adjustment if you want real growth rather than a mix of output and price change.\n\nSo the statement is True.",
+      "Meaningful real growth comparisons generally require stripping out inflation. Otherwise rising prices masquerade as expansion.\n\nSo the statement is True.",
+      "When prices are stable, nominal and real growth sit close together because there is little price drift to remove.\n\nSo the statement is True.",
+      "If prices rise faster than output, ignoring inflation overstates growth: nominal GDP climbs even when real production barely moves.\n\nSo the statement is True.",
+      "Real GDP removes price changes to compare production volumes. It does not “include all price changes” — that would be closer to a nominal story.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2165,11 +2165,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on secondary is sound.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn the setting — a bookstore branch distributes publishers' titles to local readers.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "The claim about tertiary matches the chapter reading. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "The wording on secondary fights the usual test.\n\nThe because-bridge fails: “books are physical products.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (a bookstore branch distributes publishers' titles to local readers), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False."
+      "Printing titles at a publisher’s plant is manufacturing — secondary-sector work.\n\nSo the statement is True.",
+      "Retail trade of printed titles to local readers is tertiary distribution, not printing.\n\nSo the statement is True.",
+      "Distributing publishers’ titles to readers is a distribution service. That is tertiary activity.\n\nSo the statement is True.",
+      "Books are physical products, yet selling them in a bookstore is retail trade — tertiary. Physical form does not make sales secondary manufacturing.\n\nSo the statement is False.",
+      "Reading promotion events are still part of bookstore retail/service activity. They do not turn the shop into primary agriculture.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2194,11 +2194,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "The sentence reports gdp accurately as written.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — GDP correlation with health and happiness indicators.\n\nSo the statement is True.",
-      "In “Well-being Correlation”, this wording on gdp holds. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about gdp.\n\nSwap in the textbook criterion for gdp and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn this stem’s setting (GDP correlation with health and happiness indicators), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False."
+      "Across countries, GDP often moves with health and happiness indicators: richer measured economies frequently show better scores on those measures.\n\nSo the statement is True.",
+      "Higher GDP frequently lines up with better health and happiness scores in cross-country patterns, which is why people still glance at GDP when talking about living conditions.\n\nSo the statement is True.",
+      "Even critics who list GDP’s gaps usually concede it correlates with some wellbeing measures. Correlation is not the same as a complete welfare index.\n\nSo the statement is True.",
+      "Correlation is not perfection. GDP can track some wellbeing indicators without capturing every aspect of wellbeing.\n\nSo the statement is False.",
+      "Cross-country data typically show a positive link between GDP and health outcomes, not “no link.”\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2223,11 +2223,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Forestry and Furniture Plant”, this wording on secondary holds. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about household.\n\nThe because-bridge fails: “buyers are households.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for household and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn this stem’s setting (a forestry concession supplies logs to a furniture plant finishing dining tables), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is False.",
-      "“Both stages are secondary because furniture is sold to households” slips once you restore the chapter criterion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on secondary shows quickly.\n\nThe because-bridge fails: “output is sold retail.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (a forestry concession supplies logs to a furniture plant finishing dining tables), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Logs from the forestry concession are primary output; finishing dining tables at the furniture plant is secondary manufacturing. The link is primary feeding secondary.\n\nSo the statement is True.",
+      "Finishing tables is fabrication — secondary. Household buyers do not push furniture making into the tertiary sector.\n\nSo the statement is False.",
+      "Serving home customers describes the market, not the production stage. Furniture finishing remains secondary manufacturing.\n\nSo the statement is False.",
+      "Only the plant’s finishing stage is secondary. Logging is primary. Household sales do not make both stages secondary.\n\nSo the statement is False.",
+      "Retail sale of furniture is a later distribution step. Logging stays primary and factory finishing stays secondary; selling retail does not collapse both into secondary.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2252,11 +2252,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “Client technical advice alongside fabrication does not remove secondary classification” is the standard classroom sense.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nSo the statement is True.",
-      "The claim about secondary matches the chapter reading. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "In “Secondary Manufacturing Role”, this wording on secondary holds.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn the setting — a manufacturer producing electronic components for industrial buyers.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of secondary.\n\nSo the statement is True.",
-      "The wording on tertiary fights the usual test. The because-bridge fails: “it sells to smartphone makers, not final consumers.” does not justify the labelled conclusion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False."
+      "Giving clients technical advice beside the fabrication line does not erase secondary classification. The core output is still manufactured components.\n\nSo the statement is True.",
+      "Components made in the plant are secondary-sector output whether inputs were mined nearby or imported. Input origin does not rewrite the manufacturing stage.\n\nSo the statement is True.",
+      "Selling to smartphone makers is a B2B channel. Fabrication of components remains secondary manufacturing.\n\nSo the statement is True.",
+      "Turning raw materials into finished components is the definition of secondary manufacturing in this model.\n\nSo the statement is True.",
+      "Industrial buyers instead of final consumers do not make the manufacturer tertiary. Secondary covers intermediate goods sold to other firms as well as consumer durables.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2281,11 +2281,11 @@
       false
     ],
     "tactical_explanations": [
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "In “Sector Assignment Traps”, this wording on tertiary holds. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Restore the right criterion for tertiary and the claim falls away.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on secondary shows quickly.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is False.",
-      "Against “Sector Assignment Traps”, this letter overreaches on tertiary. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is False."
+      "Retail distribution of finished goods is trade and logistics — tertiary.\n\nSo the statement is True.",
+      "A software helpdesk supporting manufactured devices still sells a service. Device hardware being manufactured goods does not pull the helpdesk into secondary manufacturing.\n\nSo the statement is True.",
+      "A firm can manufacture (secondary) and also run after-sales service (tertiary). That mix does not mean the entire firm is tertiary only.\n\nSo the statement is False.",
+      "Printing books is secondary; bookstore distribution is tertiary. They are not both secondary.\n\nSo the statement is False.",
+      "After-sales repair is tertiary service activity, but it does not force the whole firm — including any manufacturing arm — into a tertiary-only label.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2310,11 +2310,11 @@
       true
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on gdp is sound. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "“Final goods produced domestically within a year enter…” fits the chapter sense of goods.\n\nSo the statement is True.",
-      "The claim about gdp matches the chapter reading. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "The sentence reports gdp accurately as written.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — the geographic rule for GDP measurement.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“Territorial production location determines GDP…” fits the chapter sense of gdp.\n\nSo the statement is True."
+      "GDP follows production inside the country’s borders. Firm nationality does not decide inclusion.\n\nSo the statement is True.",
+      "Final goods produced domestically within the year enter the GDP total for that territory.\n\nSo the statement is True.",
+      "A foreign-owned plant operating inside the country still produces domestic output, so that output counts in the host country’s GDP.\n\nSo the statement is True.",
+      "When domestic firms produce abroad, that output is counted where it occurs — in the foreign country’s GDP — not automatically in home GDP.\n\nSo the statement is True.",
+      "Territorial location of production is the GDP rule: produce it here, count it here.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2339,11 +2339,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about gdp matches the chapter reading.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — limits of GDP regarding growth quality.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of gdp.\n\nSo the statement is True.",
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "In “Quality of Growth Critique”, this wording on gdp holds.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — limits of GDP regarding growth quality.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Under the usual test, the claim on gdp is sound. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False."
+      "Rebuild spending after a disaster can lift GDP even when lost wellbeing is not restored. The accounts record the rebuild, not a full welfare repair.\n\nSo the statement is True.",
+      "Quality-of-growth worries — pollution, depleted resources, hollow recoveries — are part of why people debate GDP as a standalone indicator.\n\nSo the statement is True.",
+      "GDP adds monetary value of output. It does not automatically tag which output is harmful and which is beneficial.\n\nSo the statement is True.",
+      "Nothing in the GDP total shows whether growth improved environmental conditions. You need separate environmental measures for that.\n\nSo the statement is True.",
+      "Rising GDP can accompany environmental damage. It does not necessarily prove growth is environmentally sustainable.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2368,11 +2368,11 @@
       false
     ],
     "tactical_explanations": [
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Under the usual test, the claim on primary is sound.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn the setting — banking within the three-sector model.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Restore the right criterion for secondary and the claim falls away.\n\nSo the statement is False.",
-      "“Insurance and banking both belong to the secondary sector” slips once you restore the chapter criterion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on secondary shows quickly.\n\nThe because-bridge fails: “it funds manufacturing clients.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (banking within the three-sector model), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Bank branches that provide loans deliver financial services. That is tertiary activity.\n\nSo the statement is True.",
+      "Money handled in banking is a financial medium, not a natural resource dug from the ground. Banking therefore is not primary extraction.\n\nSo the statement is True.",
+      "Serving only home customers does not turn a bank into secondary manufacturing. Banking remains a tertiary financial service regardless of the customer’s passport.\n\nSo the statement is False.",
+      "Insurance and banking are both financial services — tertiary. Neither belongs in the secondary manufacturing sector.\n\nSo the statement is False.",
+      "Funding manufacturing clients is a banking service. Lending to factories does not make the bank itself secondary.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2397,11 +2397,11 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — “Steel import storage and hull welding occupy different sectors” is the standard classroom sense.\n\nSector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nSo the statement is True.",
-      "The claim about tertiary matches the chapter reading.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "The sentence reports tertiary accurately as written. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Under the usual test, the claim on secondary is sound.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True."
+      "Storing imported steel at the port is tertiary logistics; welding hulls is secondary manufacturing. The two stages occupy different sectors.\n\nSo the statement is True.",
+      "Ships may later carry cargo at sea, but that future use does not reclassify shipbuilding as a tertiary transport service. Building the vessel is still secondary manufacturing.\n\nSo the statement is True.",
+      "Port warehousing before welding is storage and handling — tertiary logistics — not fabrication.\n\nSo the statement is True.",
+      "Painting finished hulls for delivery supports the manufacturing process on the yard. It remains part of secondary shipbuilding support, not a separate primary or pure retail stage.\n\nSo the statement is True.",
+      "Welding hull sections from steel plate transforms materials into a ship structure. That is secondary manufacturing.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2426,11 +2426,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports services accurately as written.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "The wording on tertiary fights the usual test. Swap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False.",
-      "“Primary share above seventy percent typifies rich EU economies” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (measuring tertiary share in total output), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Restore the right criterion for service and the claim falls away.\n\nSo the statement is False.",
-      "Against “Service Share Measurement”, this letter overreaches on primary. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False."
+      "In advanced economies, services often take the largest share of total output — tertiary dominance is the usual picture.\n\nSo the statement is True.",
+      "Tertiary share is a slice of GDP (or related output totals), not a measure kept wholly separate from those totals. You read service share from the same production accounts.\n\nSo the statement is False.",
+      "Rich EU economies do not show primary shares above seventy percent. Their large shares are tertiary; primary food output is a small fraction of total production.\n\nSo the statement is False.",
+      "An economy-wide service share does not label every firm. Individual activities still need their own sector test — extract, manufacture, or serve.\n\nSo the statement is False.",
+      "Less developed economies typically show larger primary shares than advanced EU states, not smaller ones.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2455,11 +2455,11 @@
       false
     ],
     "tactical_explanations": [
-      "GDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Yes — “GDP does not replace all other indicators because it misses some income sources” is the standard classroom sense.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "The claim about services matches the chapter reading.\n\nMap the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — GDP as an overall activity indicator.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False.",
-      "“Insurance and other final services are omitted from official GDP totals” slips once you restore the chapter criterion.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False."
+      "GDP per capita is widely used as a rough living-standards indicator, even though it is incomplete.\n\nSo the statement is True.",
+      "Because GDP misses some income sources and non-market work, it does not replace every other indicator. Complementary measures still matter.\n\nSo the statement is True.",
+      "GDP counts final goods and services produced in a defined period inside the relevant territory. That is its activity-summary role.\n\nSo the statement is True.",
+      "Final services such as insurance produced domestically are included in GDP. They are not excluded by definition.\n\nSo the statement is False.",
+      "Insurance and other final services enter official GDP totals when produced domestically. They are not omitted as a class.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2484,11 +2484,11 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about tertiary matches the chapter reading. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "“Warehouse pick-and-pack for e-commerce orders is…” fits the chapter sense of tertiary.\n\nSo the statement is True.",
-      "In “Retail Sector Trap”, this wording on secondary holds.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Under the usual test, the claim on secondary is sound. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "“Printing the titles is secondary while selling them…” fits the chapter sense of secondary.\n\nSo the statement is True."
+      "A bookstore selling printed titles is retail distribution — tertiary trade.\n\nSo the statement is True.",
+      "Pick-and-pack of e-commerce orders in a warehouse is logistics service work, classified as tertiary.\n\nSo the statement is True.",
+      "One firm can manufacture goods (secondary) and also run retail (tertiary). Mixed operations can span both sectors.\n\nSo the statement is True.",
+      "Shops sell physical goods, but retail is still a distribution service. Physical merchandise does not automatically make retail secondary manufacturing.\n\nSo the statement is True.",
+      "Printing titles is secondary manufacturing; selling them in the shop is tertiary retail. Same product, different stages.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2513,11 +2513,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Software Support Sector Trap”, this wording on tertiary holds.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn the setting — sector traps around software support services.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Yes — “Software helpdesks troubleshooting networks provide tertiary services” is the standard classroom sense.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "“Writing code for clients is secondary manufacturing” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (sector traps around software support services), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False."
+      "Technical support from a small IT-support venture stays tertiary even when it is tied to refurbished goods. Refurb-and-support is still service activity.\n\nSo the statement is True.",
+      "Remote support delivered abroad remains tertiary when the service is produced domestically. Distance to the client does not change the sector.\n\nSo the statement is True.",
+      "Helpdesks that troubleshoot networks sell support services — tertiary work.\n\nSo the statement is True.",
+      "Writing code for clients is a software service, not secondary manufacturing of physical goods.\n\nSo the statement is False.",
+      "Computers being manufactured products does not pull support work into secondary manufacturing. The helpdesk sells a service.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2542,11 +2542,11 @@
       false
     ],
     "tactical_explanations": [
-      "Sector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on primary shows quickly.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (firms operating across more than one sector), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Against “Multi-sector Firms”, this letter overreaches on tertiary. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "Sector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nSo the statement is False.",
-      "The wording on sector fights the usual test.\n\nSwap in the textbook criterion for sector and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nIn this stem’s setting (firms operating across more than one sector), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False."
+      "The three-sector model labels activities — extract, manufacture, serve — not whole economies with a single exclusive tag. Firms and countries routinely host more than one sector’s work.\n\nSo the statement is True.",
+      "A farm’s harvest is primary, but the same business might also run a farm shop (tertiary) or a small processing line (secondary). It is not locked to primary only.\n\nSo the statement is False.",
+      "Client advice can be tertiary while fabrication remains secondary. Offering advice does not make the manufacturer tertiary only.\n\nSo the statement is False.",
+      "One sector label on a firm’s main line does not block other activities in other sectors. Mixed firms are common.\n\nSo the statement is False.",
+      "Applying one sector label to a firm does not prevent activity in another sector. Classification follows what each activity does.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2571,11 +2571,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports tertiary accurately as written. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "In “Output Share Shifts”, this wording on secondary holds.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "Yes — “Economic development advancing tends to raise relative tertiary output” is the standard classroom sense.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Against “Output Share Shifts”, this letter overreaches on secondary.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False."
+      "Emerging countries often lean heavily on primary activity before services take the lead. That early primary weight is the usual starting pattern.\n\nSo the statement is True.",
+      "Even when tertiary output dominates in EU states, some primary and secondary production remains. Dominance is about shares, not exclusive presence.\n\nSo the statement is True.",
+      "As countries develop, the primary share of output often falls while industry and services expand.\n\nSo the statement is True.",
+      "Development tending to raise relative tertiary output is the standard structural-change claim in this chapter.\n\nSo the statement is True.",
+      "When the primary share falls, secondary and tertiary shares typically rise (at least one of them does), not both fall together. The claim that both must fall is backwards.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2600,11 +2600,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on gdp is sound.\n\nMap the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Yes — “Per capita averages miss distribution of income within a country” is the standard classroom sense.\n\nSector labels follow the stage of activity — extract, manufacture, or serve — not how ‘basic’ the product feels.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False.",
-      "The wording on gdp fights the usual test.\n\nSwap in the textbook criterion for gdp and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn this stem’s setting (linking GDP per capita to living standards), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "“Low GDP per capita alone defines an emerging economy's entire sector mix” slips once you restore the chapter criterion.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False."
+      "Living standards correlate with GDP, yet GDP still misses unpaid care, leisure, inequality detail, and other welfare dimensions.\n\nSo the statement is True.",
+      "GDP per capita is an average. It does not show how income is distributed across households inside the country.\n\nSo the statement is True.",
+      "An average cannot fully capture inequality. Two countries with the same GDP per capita can have very different income spreads.\n\nSo the statement is False.",
+      "Higher GDP per capita in EU members is commonly linked to higher living standards in the model. Saying it is unrelated contradicts that link.\n\nSo the statement is False.",
+      "Low GDP per capita is one marker, but it does not by itself define an emerging economy’s entire sector mix. Sector shares still need their own reading.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2629,11 +2629,11 @@
       true
     ],
     "tactical_explanations": [
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "“Advice to clients converts fabrication into tertiary services only” slips once you restore the chapter criterion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "Restore the right criterion for primary and the claim falls away.\n\nSo the statement is False.",
-      "Against “Classifying Industrial Fabrication”, this letter overreaches on tertiary.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "Yes — “Buying mined materials for production does not move manufacturing from secondary to primary” is the standard classroom sense.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True."
+      "Offering client advice beside fabrication does not strip the secondary label from industrial manufacturing. Advice can be tertiary while the plant’s core work stays secondary.\n\nSo the statement is True.",
+      "Advice alone does not convert the whole fabrication operation into tertiary services only. Manufacturing remains secondary even when consultants talk to clients.\n\nSo the statement is False.",
+      "Buying mined metals as inputs supplies materials; it does not turn the factory into a mine. Fabrication stays secondary, not primary extraction.\n\nSo the statement is False.",
+      "In-factory product testing supports manufacturing quality control. It does not become a standalone tertiary inspection bureau that erases the secondary classification of the plant.\n\nSo the statement is False.",
+      "Purchased mined materials are inputs. Using them in production keeps the plant in secondary manufacturing; it does not move the firm into primary extraction.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2658,11 +2658,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Insurance Sector Type”, this wording on services holds. Map the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "“Underwriting and claims payment are tertiary…” fits the chapter sense of services.\n\nSo the statement is True.",
-      "Yes — “Claims handling is tertiary whether the client is a farm or a factory” is the standard classroom sense.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "“Insurance is primary because policies cover basic risks” slips once you restore the chapter criterion.\n\nThe because-bridge fails: “policies cover basic risks.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIn this stem’s setting (insurance within tertiary services), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Restore the right criterion for secondary and the claim falls away.\n\nSo the statement is False."
+      "Insurance cooperatives that process claims deliver financial services — tertiary.\n\nSo the statement is True.",
+      "Underwriting and paying claims are tertiary financial services, not extraction or manufacturing.\n\nSo the statement is True.",
+      "Claims handling stays tertiary whether the insured client is a farm or a factory. The client’s sector does not rewrite the insurer’s.\n\nSo the statement is True.",
+      "Covering basic risks does not make insurance primary. Primary still means extracting raw materials; insurance is a service.\n\nSo the statement is False.",
+      "Policies linked to manufactured goods remain insurance services. They do not become secondary manufacturing.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2687,11 +2687,11 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — “Fashion retail selling finished jackets is tertiary trade” is the standard classroom sense.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of tertiary.\n\nSo the statement is True.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "The sentence reports secondary accurately as written.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "In “Clothing Production Sector”, this wording on secondary holds. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True."
+      "Fashion retail selling finished jackets is tertiary trade after the garments exist.\n\nSo the statement is True.",
+      "Design work can be classified as a tertiary creative/service activity while sewing on the floor is secondary manufacturing. One brand can host both.\n\nSo the statement is True.",
+      "Imported fabric arriving on a sewing floor is an input to garment making. The sewing stage remains secondary manufacturing.\n\nSo the statement is True.",
+      "Even when fashion is marketed as a consumer experience, sewing garments is still fabrication — secondary.\n\nSo the statement is True.",
+      "Sewing jackets from imported fabric transforms materials into clothing. That is secondary manufacturing.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2716,11 +2716,11 @@
       false
     ],
     "tactical_explanations": [
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "In “Coaching as Tertiary”, this wording on tertiary holds.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn the setting — coaching within the tertiary sector.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“Coaching combined with merchandise sales can still be…” fits the chapter sense of tertiary.\n\nSo the statement is True.",
-      "Yes — “Coaching studios renting space and paying trainers deliver tertiary services” is the standard classroom sense.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Against “Coaching as Tertiary”, this letter overreaches on secondary.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (coaching within the tertiary sector), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False."
+      "Remote coaching sessions sold to clients are services — tertiary.\n\nSo the statement is True.",
+      "Exporting coaching abroad keeps the activity tertiary. Foreign clients do not invent a manufacturing label.\n\nSo the statement is True.",
+      "Merchandise sales alongside coaching do not erase the service delivery. Coaching can remain tertiary even when a few goods are sold at the desk.\n\nSo the statement is True.",
+      "Studios that rent space and pay trainers are organised to deliver coaching services. That is tertiary activity.\n\nSo the statement is True.",
+      "Designing training programmes is planning a service, not secondary manufacturing of physical goods.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2745,11 +2745,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on services is sound. Map the actors onto the stem: services sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Yes — “Retail distribution of finished goods to shops is tertiary trade” is the standard classroom sense.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about secondary. The because-bridge fails: “steel will be manufactured.” does not justify the labelled conclusion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "The absolute or swapped label on secondary fails the chapter test.\n\nSo the statement is False.",
-      "“Physical goods make distribution secondary manufacturing” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for secondary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (distribution and logistics as tertiary activity), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False."
+      "Picking and dispatching online orders from a warehouse is logistics — tertiary service work.\n\nSo the statement is True.",
+      "Retail distribution of finished goods to shops is tertiary trade, not manufacturing.\n\nSo the statement is True.",
+      "Warehousing steel that will later be manufactured is still logistics. Future manufacturing at a plant does not make the warehouse secondary.\n\nSo the statement is False.",
+      "Bookstores sell printed books; retail trade is tertiary. Books being printed products does not make the shop secondary.\n\nSo the statement is False.",
+      "Moving and selling physical goods is distribution — tertiary. Physical form alone does not turn distribution into secondary manufacturing.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2774,11 +2774,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about primary matches the chapter reading.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "The sentence reports primary accurately as written. Map the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "In “Raw Material Extraction”, this wording on primary holds.\n\nMap the actors onto the stem: primary sits inside the definition the chapter uses for this case.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "“Coal mining extracting ore is primary-sector activity” fits the chapter sense of primary.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about secondary.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing. Keep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False."
+      "Forestry that supplies logs to mills extracts a natural resource — primary.\n\nSo the statement is True.",
+      "Olive farms harvesting crops perform primary agricultural activity.\n\nSo the statement is True.",
+      "Farming, fishing, mining, and forestry are the standard primary cluster: extracting raw materials from nature.\n\nSo the statement is True.",
+      "Coal mining that extracts ore is primary-sector activity.\n\nSo the statement is True.",
+      "Onboard filleting as part of commercial fishing does not automatically reclassify the whole catch operation as secondary manufacturing. Landing fish for sale remains primary extraction in this model’s usual treatment.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2803,11 +2803,11 @@
       false
     ],
     "tactical_explanations": [
-      "Secondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about services. The because-bridge fails: “components support services.” does not justify the labelled conclusion.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nSo the statement is False.",
-      "The wording on tertiary fights the usual test.\n\nThe because-bridge fails: “fashion is a consumer service.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn this stem’s setting (secondary-sector transformation), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on tertiary shows quickly. The because-bridge fails: “ships later carry cargo.” does not justify the labelled conclusion.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is False."
+      "Timber mills that turn logs into export boards process materials — secondary manufacturing.\n\nSo the statement is True.",
+      "Fabricating industrial components is manufacturing. Supporting later services does not move component making into the tertiary sector.\n\nSo the statement is False.",
+      "Sewing is garment manufacturing — secondary. Fashion as a consumer experience does not redefine sewing as a tertiary service.\n\nSo the statement is False.",
+      "Ore comes from mines, but smelting transforms it. Smelting is secondary, not primary.\n\nSo the statement is False.",
+      "Shipbuilding manufactures vessels. Later cargo transport at sea is a different activity; it does not make the yard tertiary.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2832,11 +2832,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “As economies develop, relative tertiary output tends to increase” is the standard classroom sense.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "“Higher GDP per capita in EU members links to high…” fits the chapter sense of gdp.\n\nSo the statement is True.",
-      "Against “EU Tertiary Dominance”, this letter overreaches on primary.\n\nSwap in the textbook criterion for primary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about tertiary.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is False.",
-      "Restore the right criterion for primary and the claim falls away.\n\nSo the statement is False."
+      "As economies develop, relative tertiary output tends to increase — the usual structural shift toward services.\n\nSo the statement is True.",
+      "In the chapter model, higher GDP per capita in EU members links to high living standards.\n\nSo the statement is True.",
+      "Rich EU states are service-dominated. Primary food production remains important for nutrition but does not dominate measured output.\n\nSo the statement is False.",
+      "High tertiary shares typify advanced economies with high GDP per capita, not emerging economies with low GDP per capita.\n\nSo the statement is False.",
+      "Developed EU states do not keep primary output above seventy percent; services take that large share.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2861,11 +2861,11 @@
       true
     ],
     "tactical_explanations": [
-      "The sentence reports tertiary accurately as written.\n\nMap the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nIn the setting — sector traps around software support.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Under the usual test, the claim on tertiary is sound. Map the actors onto the stem: tertiary sits inside the definition the chapter uses for this case.\n\nTertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True.",
-      "Yes — “Manufacturing devices and supporting them can span secondary and tertiary activity” is the standard classroom sense.\n\nMap the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nSo the statement is True.",
-      "Tertiary activity supplies services — banking, retail, coaching, tourism services — rather than extraction or fabrication.\n\nSo the statement is True."
+      "Support around refurbished goods from a small IT-support venture remains tertiary service activity, not factory production of new devices.\n\nSo the statement is True.",
+      "Remote support to foreign clients is still a domestically produced tertiary service.\n\nSo the statement is True.",
+      "Network troubleshooting by software helpdesks is tertiary service work.\n\nSo the statement is True.",
+      "Making devices is secondary; supporting them is tertiary. One business story can span both sectors.\n\nSo the statement is True.",
+      "Writing client software is a service — tertiary activity in the three-sector model.\n\nSo the statement is True."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2890,11 +2890,11 @@
       false
     ],
     "tactical_explanations": [
-      "Primary activity extracts from nature: farming, fishing, mining, forestry — not manufacturing or services.\n\nSo the statement is True.",
-      "Yes — “GDP measures final domestic production and supports growth comparisons when inflation-adjusted” is the standard classroom sense.\n\nMap the actors onto the stem: inflation sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nIn the setting — integrated sector and GDP claims.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of inflation.\n\nSo the statement is True.",
-      "The claim about gdp matches the chapter reading. Map the actors onto the stem: gdp sits inside the definition the chapter uses for this case.\n\nGDP totals the money value of final output inside borders. Rebuild spending can lift GDP while wellbeing falls; GDP is not a welfare score.\n\nSo the statement is True.",
-      "Rising GDP is not proof of sustainable welfare; rebuild spending can lift GDP while wellbeing falls.\n\nSo the statement is False.",
-      "“Manufacturing components and offering after-sales support collapse into a single tertiary label” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nSecondary activity transforms materials: smelting, milling, assembling, and related manufacturing.\n\nIn this stem’s setting (integrated sector and GDP claims), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False."
+      "Emerging economies often lean on primary activity; advanced EU states typically show tertiary dominance. That contrast is the chapter’s sector-development sketch.\n\nSo the statement is True.",
+      "GDP measures final domestic production and, when inflation-adjusted, supports real growth comparisons across years.\n\nSo the statement is True.",
+      "Standard critiques note missing income, weak quality/sustainability signals, and the oddity that disaster rebuilds can lift GDP. The statement bundles those points correctly.\n\nSo the statement is True.",
+      "GDP correlates with some health and happiness measures but does not track them perfectly in every case. Perfect correlation is too strong.\n\nSo the statement is False.",
+      "Manufacturing components is secondary; after-sales support is tertiary. The two do not collapse into a single tertiary label.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2919,11 +2919,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about profit matches the chapter reading. Map the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit compares revenue with total costs. Strong demand helps sales, but expenses can still wipe any surplus.\n\nSo the statement is True.",
-      "“Break-even performance is the primary long-run goal of most profit-oriented manufacturers” slips once you restore the chapter criterion.\n\nProfit-oriented manufacturers usually seek a surplus, not exact cost matching. Break-even is not the long-run commercial goal.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even. Cost recovery is a floor, not the usual long-run goal.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Profit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is False.",
-      "Against “Profit-oriented Basics”, this letter overreaches on profit. Profit-oriented manufacturers usually seek a surplus, not exact cost matching.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even. Cost recovery is a floor, not the usual long-run goal.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about profit.\n\nProfit-oriented manufacturers usually seek a surplus, not exact cost matching. Break-even is not the long-run commercial goal.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even. Cost recovery is a floor, not the usual long-run goal.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False."
+      "Profit orientation centres on revenue relative to costs. Strong customer demand is the sales-side force in that comparison for the profit-oriented firm in this case set.\n\nSo the statement is True.",
+      "Most profit-oriented manufacturers aim for a surplus over costs in the long run. Exact break-even is a floor or a temporary outcome, not the primary commercial goal.\n\nSo the statement is False.",
+      "Booking revenue while ignoring cost control does not satisfy the profit objective. Profit needs revenue to beat total expenses, not sales figures alone.\n\nSo the statement is False.",
+      "Matching expenses exactly and ignoring any surplus describes break-even, not profit. Profit is the surplus when revenue exceeds costs.\n\nSo the statement is False.",
+      "Covering costs alone is cost recovery or break-even. Profit-oriented manufacturers usually seek revenue above costs as the long-run goal.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2948,11 +2948,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Bakery Oven Reinvestment”, this wording on profit holds.\n\nMap the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Under the usual test, the claim on profit is sound. Map the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is True.",
-      "Profit appears when revenue exceeds total costs and expenses. The claim on shop matches that reading.\n\nSo the statement is True.",
-      "“Durability requires distributing all earnings immediately to owners” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for durability and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on oven shows quickly. Swap in the textbook criterion for oven and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nNot-for-profits pursue a mission, not owner profit. Surpluses usually return to the mission; a fee alone does not make them profit-maximisers.\n\nSo the statement is False."
+      "Targeting revenue above costs so the chain can buy new ovens is classic profit-oriented reinvestment thinking: surplus funds capacity.\n\nSo the statement is True.",
+      "A retained surplus from profitable sales is a normal internal source for equipment upgrades such as new ovens.\n\nSo the statement is True.",
+      "The shop treats higher revenue than expenses as the funding base for oven purchases — profit first, then reinvestment.\n\nSo the statement is True.",
+      "Durability does not require paying out every euro of earnings immediately. Retaining some profit for reinvestment is how many shops stay viable.\n\nSo the statement is False.",
+      "Oven purchases can be financed from business surplus. They need not come from donations.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2977,11 +2977,11 @@
       true
     ],
     "tactical_explanations": [
-      "Profit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is True.",
-      "The claim about profit matches the chapter reading. Map the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is True.",
-      "“Margin above break-even allows commercial firms to…” fits the chapter sense of break-even.\n\nSo the statement is True.",
-      "In “Revenue versus Costs”, this wording on profit holds.\n\nMap the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Under the usual test, the claim on profit is sound. Map the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is True."
+      "Profit is revenue minus total expenses, so cost control matters as much as sales. Without watching costs, revenue gains may not become profit.\n\nSo the statement is True.",
+      "Commercial expansion usually rides on profit (or accumulated surplus), not on running persistent losses forever.\n\nSo the statement is True.",
+      "Margin above break-even gives commercial firms resources to expand operations — new capacity, more staff, more locations.\n\nSo the statement is True.",
+      "When revenue exceeds total costs in a period, the difference is profit.\n\nSo the statement is True.",
+      "Profit orientation means aiming for revenues that exceed costs and expenses, not merely matching them.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3006,11 +3006,11 @@
       false
     ],
     "tactical_explanations": [
-      "Absolute or swapped categories break this sentence about profit.\n\nNot-for-profits pursue a mission, not owner profit. Surpluses usually return to the mission; a fee alone does not make them profit-maximisers.\n\nSo the statement is False.",
-      "“Any surplus from donations can be reinvested into…” fits the chapter sense of surplus.\n\nSo the statement is True.",
-      "“Not-for-profit status means the organisation may ignore funding entirely” slips once you restore the chapter criterion.\n\nNot-for-profits pursue a mission, not owner profit. Surpluses usually return to the mission; a fee alone does not make them profit-maximisers.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on dispatching shows quickly.\n\nSwap in the textbook criterion for dispatching and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nNot-for-profits pursue a mission, not owner profit. Surpluses usually return to the mission; a fee alone does not make them profit-maximisers.\n\nIn this stem’s setting (a humanitarian NPO collecting donations before dispatching flood-relief kits to affected towns), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Restore the right criterion for needs and the claim falls away.\n\nSo the statement is False."
+      "A humanitarian NPO may charge a modest cost-recovery fee for some supplies without becoming a profit-maximising firm. Mission and surplus use still follow relief goals, not owner profit maximisation.\n\nSo the statement is False.",
+      "Any surplus from donations can be ploughed back into further relief work — kits, logistics, staff — rather than paid out as owner profit.\n\nSo the statement is True.",
+      "Not-for-profit status does not mean the organisation can ignore funding. Relief still needs donations, grants, or other inflows to operate.\n\nSo the statement is False.",
+      "Dispatching kits without prior inflows is not typical NPO practice. Organisations usually raise funds before or alongside distribution so supplies can be bought and shipped.\n\nSo the statement is False.",
+      "Volunteers help, but they do not remove the need for inflows to buy kits, transport, and other costs. Relief organisations still need funding.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3035,11 +3035,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on profit is sound.\n\nMap the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nIn the setting — reinvestment of profit in commercial firms.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of profit.\n\nSo the statement is True.",
-      "Profit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is True.",
-      "The claim about reinvestment matches the chapter reading.\n\nMap the actors onto the stem: reinvestment sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nIn the setting — reinvestment of profit in commercial firms.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "The sentence reports profit accurately as written. Map the actors onto the stem: profit sits inside the definition the chapter uses for this case.\n\nProfit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is True.",
-      "Profit appears when revenue exceeds total costs and expenses. Sales without cost control do not deliver the profit objective.\n\nSo the statement is False."
+      "Profits can buy new equipment that raises future service capacity — more jobs completed, better tools, wider coverage.\n\nSo the statement is True.",
+      "Retained profit reinvested in the firm can strengthen durability and sustainability of the business over time.\n\nSo the statement is True.",
+      "Reinvestment supports long-run survival while owners may still take returns. The two aims often sit together in commercial firms.\n\nSo the statement is True.",
+      "A repair shop that ploughs profit into diagnostic tools is a clear commercial reinvestment example.\n\nSo the statement is True.",
+      "Profit need not be distributed immediately; it can fund equipment. Immediate full payout is not a rule that blocks reinvestment.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
