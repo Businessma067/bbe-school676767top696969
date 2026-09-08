@@ -21,6 +21,7 @@ import { LanguageProvider } from "../lib/i18n/context";
 import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
+import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo/social-image";
 
 const FloatingAssistant = lazyNamed(
   () => import("../components/FloatingAssistant"),
@@ -108,8 +109,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@BBESchool" },
       { name: "twitter:title", content: "BBE School | WU Vienna BBE Exam Prep" },
       { name: "twitter:description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
-      { property: "og:image", content: "https://bbe-school.com/og-image.jpg" },
-      { name: "twitter:image", content: "https://bbe-school.com/og-image.jpg" },
+      { property: "og:image", content: DEFAULT_SOCIAL_IMAGE },
+      { name: "twitter:image", content: DEFAULT_SOCIAL_IMAGE },
       { property: "og:site_name", content: "BBE School" },
     ],
     links: [
@@ -144,7 +145,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             width: 1024,
             height: 1024,
           },
-          image: "https://bbe-school.com/og-image.jpg",
+          image: DEFAULT_SOCIAL_IMAGE,
           description:
             "Interactive exam simulator and preparation course for the WU Vienna BBE entrance exam.",
           sameAs: ["https://twitter.com/BBESchool", "https://x.com/BBESchool"],

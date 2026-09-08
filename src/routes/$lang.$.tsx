@@ -1,5 +1,6 @@
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { buildLocaleHead } from "@/lib/i18n/locale-head";
+import { getEnglishHeadForPath } from "@/lib/i18n/localized-heads";
 import {
   isLocalePrefix,
   isLocalizablePath,
@@ -27,7 +28,7 @@ export const Route = createFileRoute("/$lang/$")({
   head: ({ params }) => {
     if (!isLocalePrefix(params.lang)) return {};
     const path = normalizeAppPath(`/${params._splat ?? ""}`);
-    return buildLocaleHead(params.lang, path);
+    return buildLocaleHead(params.lang, path, getEnglishHeadForPath(path));
   },
   component: LocalizedSplatPage,
 });

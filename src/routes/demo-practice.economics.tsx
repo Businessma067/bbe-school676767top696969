@@ -1,5 +1,6 @@
-import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute } from "@tanstack/react-router";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { recordTaskAttempt } from "@/lib/user-progress";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { cn } from "@/lib/utils";
@@ -60,6 +61,12 @@ export const Route = createFileRoute("/demo-practice/economics")({
     meta: [
       { title: "Economics Tasks — BBE School" },
       { name: "description", content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam." },
+      { property: "og:title", content: "Economics Tasks — BBE School" },
+      {
+        property: "og:description",
+        content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam.",
+      },
+      ...socialImageMetaForPath("/demo-practice/economics"),
     ],
   }),
   component: EconomicsTasks,

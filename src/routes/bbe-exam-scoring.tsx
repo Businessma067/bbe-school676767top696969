@@ -16,6 +16,7 @@ import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/bbe-exam-scoring")({
   head: () => ({
@@ -43,6 +44,7 @@ export const Route = createFileRoute("/bbe-exam-scoring")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/bbe-exam-scoring"),
     ],
   }),
   component: BbeExamScoringPage,

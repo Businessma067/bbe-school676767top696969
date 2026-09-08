@@ -5,6 +5,7 @@ import examHallImg from "@/assets/exam-hall-real.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/features/answer-sheet")({
   head: () => ({
@@ -24,6 +25,7 @@ export const Route = createFileRoute("/features/answer-sheet")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/features/answer-sheet"),
     ],
   }),
   component: AnswerSheetFeaturePage,

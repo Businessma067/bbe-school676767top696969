@@ -2,6 +2,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { buildLocaleHead } from "@/lib/i18n/locale-head";
 import { isLocalePrefix } from "@/lib/i18n/locale-path";
 import { getLocalizedPage } from "@/lib/i18n/localized-pages";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/$lang/")({
   beforeLoad: ({ params }) => {
@@ -24,6 +25,7 @@ export const Route = createFileRoute("/$lang/")({
             "Practice the real BBE exam format: True/False cases, partial-credit scoring, timed mocks and tactical explanations.",
         },
         { property: "og:type", content: "website" },
+        ...socialImageMetaForPath("/"),
       ],
     });
   },
