@@ -19,11 +19,11 @@
       true
     ],
     "tactical_explanations": [
-      "A sole proprietorship puts ownership and day-to-day control in one natural person. That person owns the trading assets, chooses suppliers and prices, and keeps residual risk.\n\nThere is no co-owner layer and no separate company person standing between the proprietor and the business.\n\nKeep sole proprietorship sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "With no partners or board, decision rights are undivided.\n\nAdvice can be taken, but consultation is optional — not a structural requirement of the form. Keep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nSo the statement is True.",
-      "A sole proprietorship is not a separate legal person. Corporate personality, stand-alone corporate tax filing, or default limited liability do not appear just because a trading name or bank account exists.\n\nPicture a neighbourhood bakery run by one owner-manager: suppliers and the tax office still look to that person, not to a fictional company shell.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False.",
-      "Continuity hangs on one person’s capacity to own and manage.\n\nRetirement or long-term illness can stall customers and contracts unless succession is arranged. Keep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "A sole proprietorship puts ownership and day-to-day running in one natural person. That person is both owner and manager — no co-owners and no separate board.\n\nSo the statement is True.",
+      "Decision rights sit undivided with the proprietor. Advice can be taken, but other opinions are not a formal requirement before acting.\n\nSo the statement is True.",
+      "The firm is not a separate legal person, so trading profit is not taxed on a corporate return. It lands on the owner’s personal income tax statement.\n\nSo the statement is True.",
+      "A sole proprietorship is not a separate legal person. Corporate personality and an independent corporate tax filing belong to incorporated companies, not to a sole trader.\n\nCounterexample: the bakery owner reports bakery profit on a personal return, not as a corporation.\n\nSo the statement is False.",
+      "Continuity hangs on one person’s capacity to own and manage. Retirement or long-term illness can interrupt operations unless ownership and control are transferred.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -48,11 +48,11 @@
       false
     ],
     "tactical_explanations": [
-      "Unlike many company forms, a sole proprietorship can start without a mandatory minimum share-capital deposit — that is why the form is described as easy to establish.\n\nKeep sole proprietorships sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Limited liability would wall off private assets once business assets are exhausted.\n\nSo the statement is False.",
-      "Unlimited liability means creditors are not capped at assets labelled “business property.” If business cash is short, private assets can be reached.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Incorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not. The labels are different legal shells.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nKeep sole proprietorship sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is False.",
-      "Trade credit is still a liability to the supplier.\n\nSo the statement is False."
+      "For small ventures, start-up as a sole trader needs no minimum capital deposit. That low formal hurdle is why the form is described as easy to establish.\n\nSo the statement is True.",
+      "Sole traders face unlimited liability. Creditors are not confined to assets labelled “business property”; private wealth can be reached when debts remain unpaid.\n\nSo the statement is False.",
+      "Unlimited liability means repayment duty follows the owner personally. If firm cash is short, personal property can be used to settle business debts.\n\nSo the statement is True.",
+      "Calling the firm a sole proprietorship does not create limited liability or treat capital invested as a liability cap. Limited liability is a corporate feature, not a sole-trader one.\n\nSo the statement is False.",
+      "Trade credit only defers payment; it does not cancel the obligation. Supplier balances remain debts the proprietor must honour.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -77,11 +77,11 @@
       true
     ],
     "tactical_explanations": [
-      "Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nSo the statement is True.",
-      "Because there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nKeep owner pays tax sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "Employment does not shift unlimited liability onto workers or incorporate the firm. Headcount is not an incorporation trigger.\n\nIn the stem’s business setting, applying the correct legal or finance label already overturns the absolute wording.\n\nKeep because profits pass sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is False.",
-      "Hiring is allowed.\n\nAssistants expand capacity, but residual risk and key decisions stay with the proprietor. Keep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "Unlike a corporation, a sole proprietorship has no legal personality apart from the owner. Contracts and assets attach to that person.\n\nSo the statement is True.",
+      "Profits are taxed as the owner’s personal income. The personal tax statement — not a separate corporate return — carries the business profit.\n\nSo the statement is True.",
+      "Day-to-day and strategic control concentrate on the proprietor. The most important decisions stay with that one owner-manager.\n\nSo the statement is True.",
+      "Pass-through tax treatment does not block hiring or supplier contracts. A sole trader can employ staff and buy on account while still reporting profit personally.\n\nSo the statement is False.",
+      "Extra hands are allowed. Hired personnel support operations, yet the proprietor keeps the central management role and the associated risk.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -106,11 +106,11 @@
       true
     ],
     "tactical_explanations": [
-      "Hiring is allowed. Assistants expand capacity, but residual risk and key decisions stay with the proprietor.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "Limited liability would wall off private assets once business assets are exhausted. Sole proprietors do not get that wall.\n\nCollateral pledged to one lender secures that lender — it does not convert the firm into a limited company for everyone else.\n\nSo the statement is False.",
-      "Assistants expand capacity, but residual risk and key decisions stay with the proprietor.\n\nSo the statement is True.",
-      "Start from how this chapter defines sole proprietor.\n\nWith no partners or board, decision rights are undivided. Advice can be taken, but consultation is optional — not a structural requirement of the form.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Continuity hangs on one person’s capacity to own and manage.\n\nRetirement or long-term illness can stall customers and contracts unless succession is arranged. Keep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "When workload exceeds what one person can cover, the proprietor may hire staff. Employment does not change the sole-trader legal form.\n\nSo the statement is True.",
+      "Staff wages do not shift debt risk. Unlimited liability for business obligations stays with the owner, not with employees.\n\nSo the statement is False.",
+      "Assistants can run tills or handle deliveries, but the proprietor still makes the key management calls and bears the full risk.\n\nSo the statement is True.",
+      "Undivided ownership means undivided decision rights. The owner need not clear choices with co-owners — there are none.\n\nSo the statement is True.",
+      "Long-term illness of the only owner-manager can halt continuity. The business depends on that person’s capacity to keep managing.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -135,11 +135,11 @@
       false
     ],
     "tactical_explanations": [
-      "A sole proprietorship is not a separate legal person.\n\nSo the statement is False.",
-      "Because there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nKeep sole proprietorship sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "Incorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not. The labels are different legal shells.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nKeep limited liability sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is False.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for sole proprietorship — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False."
+      "A trading name on a sole proprietorship is still just a label for the owner’s business. It does not create an incorporated legal person with its own tax identity.\n\nSo the statement is False.",
+      "Profit flows straight onto the owner’s personal income tax statement because the firm lacks separate legal personality.\n\nSo the statement is True.",
+      "Sole traders face no substantial minimum share capital before trading. That capital hurdle belongs to companies, not to this unincorporated form.\n\nSo the statement is False.",
+      "Limited liability does not protect a sole trader’s private home. If business debts exceed firm assets, personal property remains exposed.\n\nSo the statement is False.",
+      "Equal sharing of tasks and risk needs two (or more) owners — a partnership. A sole proprietorship has only one owner by definition.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -164,11 +164,11 @@
       true
     ],
     "tactical_explanations": [
-      "Nothing in the sole-trader shell automatically keeps operations unchanged when the owner retires or is long absent.\n\nSo the statement is False.",
-      "Continuity hangs on one person’s capacity to own and manage.\n\nRetirement or long-term illness can stall customers and contracts unless succession is arranged. Keep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "A sole proprietorship puts ownership and day-to-day control in one natural person.\n\nSo the statement is False.",
-      "Nothing in the sole-trader shell automatically keeps operations unchanged when the owner retires or is long absent. Staff do not inherit ownership by default.\n\nEmployment does not shift unlimited liability onto workers or incorporate the firm. Headcount is not an incorporation trigger.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True."
+      "Retirement does not leave the firm running on autopilot. Without a transfer of ownership and management, the sole proprietorship does not simply continue unchanged.\n\nSo the statement is False.",
+      "Because control sits with one person, retirement or long-term illness can create real continuity problems for the workshop.\n\nSo the statement is True.",
+      "“Always simpler” overstates succession. Shares in a company can transfer more cleanly; a sole trader’s retirement still needs an explicit hand-over of the business.\n\nSo the statement is False.",
+      "Staff cannot legally assume ownership just by continuing to work. Ownership must be transferred; retirement without that step breaks continuity.\n\nSo the statement is False.",
+      "Management still depends on the proprietor. The most important decision rights remain with that single owner-manager.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -193,11 +193,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim on sole proprietor matches how this chapter defines the idea.\n\nSo the statement is True.",
-      "Limited liability would wall off private assets once business assets are exhausted. Sole proprietors do not get that wall.\n\nCollateral pledged to one lender secures that lender — it does not convert the firm into a limited company for everyone else.\n\nIncorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not. The labels are different legal shells.\n\nTrade credit defers payment to suppliers for a short agreed period — weeks, not years. Deferral alone does not make it long-term debt finance.\n\nSupplier invoices due in thirty days remain short-term trade credit, not long-term loan capital.\n\nSo the statement is False.",
-      "Long-term bank loans are often secured on land or property through a mortgage.\n\nCollateral reduces lender risk; it does not erase the borrower’s repayment duty. Keep collateral sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim on sole proprietor matches how this chapter defines the idea.\n\nSo the statement is True.",
-      "Limited liability would wall off private assets once business assets are exhausted. Sole proprietors do not get that wall.\n\nCollateral pledged to one lender secures that lender — it does not convert the firm into a limited company for everyone else.\n\nLong-term bank loans are often secured on land or property through a mortgage. Collateral reduces lender risk; it does not erase the borrower’s repayment duty.\n\nCollateral for one lender does not convert a sole trader into a limited company for all creditors.\n\nSo the statement is False."
+      "Unlimited liability covers every business debt and obligation. The proprietor stands behind them all.\n\nSo the statement is True.",
+      "Unlimited liability is not limited to trade credit. Long-term bank loans — even those secured on property — remain personal obligations of the sole trader.\n\nSo the statement is False.",
+      "Lenders often want pledgeable assets, especially on long-term facilities. Collateral is a standard condition for that kind of credit.\n\nSo the statement is True.",
+      "If the firm fails and debts remain, private assets are also at stake. That is the practical meaning of unlimited liability.\n\nSo the statement is True.",
+      "Pledging collateral does not fence off every other private asset. Creditors can still pursue remaining personal wealth if the secured asset does not cover the debt.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -222,11 +222,11 @@
       false
     ],
     "tactical_explanations": [
-      "Start from how this chapter defines sole proprietorship.\n\nA sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nBecause there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nKeep sole proprietorship sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "The claim about owner pays tax lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for owner pays tax in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "The claim about business profits proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for business profits proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep business profits proprietor sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "A sole proprietorship is not a separate legal person.\n\nSo the statement is False."
+      "No separate legal entity means no separate corporate tax shell. Business profit is reported on the owner’s personal income tax statement.\n\nSo the statement is True.",
+      "Sole-trader status does not wipe out tax on profits. The owner still pays income tax on what the business earns.\n\nSo the statement is False.",
+      "Tax is assessed on the individual, not through a corporate return. The proprietor pays on business profits as personal income.\n\nSo the statement is True.",
+      "Business profit and other personal income can sit on the same personal assessment. That is how pass-through taxation works for sole traders.\n\nSo the statement is True.",
+      "Separate legal personality is not a precondition for personal taxation of profits. Sole traders are taxed personally precisely because they lack that personality.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -251,11 +251,11 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about sole proprietorship lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietorship in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "The claim on sole proprietorships matches how this chapter defines the idea.\n\nSo the statement is True.",
-      "A sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nKeep business not legal sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Unlimited liability means creditors are not capped at assets labelled “business property.” If business cash is short, private assets can be reached.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Assistants expand capacity, but residual risk and key decisions stay with the proprietor.\n\nSo the statement is True."
+      "One individual owns the firm and runs it day to day. There are no partners splitting ownership or management.\n\nSo the statement is True.",
+      "Start-up is light on formal finance hurdles: no minimum capital is required, which suits many small businesses.\n\nSo the statement is True.",
+      "Without its own legal personality, the firm’s profit is taxed on the owner’s personal income statement.\n\nSo the statement is True.",
+      "Unlimited liability puts private assets on the line when business debts must be repaid beyond firm resources.\n\nSo the statement is True.",
+      "Personnel can be hired for support, yet key management decisions stay with the proprietor.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -280,11 +280,11 @@
       true
     ],
     "tactical_explanations": [
-      "A sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nA corporation is a legal person of its own: it can own assets, hire, contract, sue and be sued in its own name.\n\nSo the statement is True.",
-      "Because there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nSo the statement is True.",
-      "Unlimited liability means creditors are not capped at assets labelled “business property.” If business cash is short, private assets can be reached.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "The claim about sole proprietorships lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietorships in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "Continuity hangs on one person’s capacity to own and manage.\n\nSo the statement is True."
+      "A corporation can sue and be sued in its own name. A sole proprietorship cannot — it has no separate legal personality.\n\nSo the statement is True.",
+      "Profit reporting follows the owner’s personal income tax statement, not a company return.\n\nSo the statement is True.",
+      "When business debts remain unpaid, unlimited liability lets creditors pursue private assets of the proprietor.\n\nSo the statement is True.",
+      "No capital threshold blocks entry. That ease of establishment is why sole trading suits many small start-ups.\n\nSo the statement is True.",
+      "Long-term illness or retirement of the only owner-manager can interrupt continuity of the business.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -309,11 +309,11 @@
       false
     ],
     "tactical_explanations": [
-      "With no partners or board, decision rights are undivided. Advice can be taken, but consultation is optional — not a structural requirement of the form.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "The claim about administrative tasks are lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for administrative tasks are in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep administrative tasks are sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "Employment does not shift unlimited liability onto workers or incorporate the firm.\n\nSo the statement is False."
+      "With no co-owners, the designer need not clear decisions with other equity holders. All management decisions can be taken alone.\n\nSo the statement is True.",
+      "Even with occasional administrative help, the most important decisions and all of the risk stay with the proprietor.\n\nSo the statement is True.",
+      "There is no board of directors in this form. Management depends on the sole proprietor personally.\n\nSo the statement is True.",
+      "Delegating paperwork does not surrender strategic control. Authority over the most important management decisions remains with the owner.\n\nSo the statement is True.",
+      "Hired help does not take over strategic direction. Employees support operations; the proprietor still sets the firm’s course.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -338,11 +338,11 @@
       true
     ],
     "tactical_explanations": [
-      "Unlike many company forms, a sole proprietorship can start without a mandatory minimum share-capital deposit — that is why the form is described as easy to establish.\n\nKeep sole proprietorships sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "A sole proprietorship puts ownership and day-to-day control in one natural person. That person owns the trading assets, chooses suppliers and prices, and keeps residual risk.\n\nThere is no co-owner layer and no separate company person standing between the proprietor and the business.\n\nSo the statement is True.",
-      "Continuity hangs on one person’s capacity to own and manage.\n\nSo the statement is True.",
-      "The claim about extra money can lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for extra money can in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep extra money can sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "A sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nBecause there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nSo the statement is True."
+      "No financial requirements must be met before trading as a sole proprietor. That is the establishment advantage for small start-ups.\n\nSo the statement is True.",
+      "Ownership and central operational responsibility sit with one person who both owns and manages the firm.\n\nSo the statement is True.",
+      "Stepping away through retirement or prolonged illness can interrupt continuity when everything hangs on that one manager.\n\nSo the statement is True.",
+      "When personal funds run short, extra money can be sought from investors and/or banks — external finance options for the sole trader.\n\nSo the statement is True.",
+      "Lacking separate legal personality, profits are taxed on the owner’s personal income tax statement.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -367,11 +367,11 @@
       false
     ],
     "tactical_explanations": [
-      "A sole proprietorship is not a separate legal person. Corporate personality, stand-alone corporate tax filing, or default limited liability do not appear just because a trading name or bank account exists.\n\nPicture a neighbourhood bakery run by one owner-manager: suppliers and the tax office still look to that person, not to a fictional company shell.\n\nA corporation is a legal person of its own: it can own assets, hire, contract, sue and be sued in its own name.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False.",
-      "Assistants expand capacity, but residual risk and key decisions stay with the proprietor.\n\nSo the statement is True.",
-      "A sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nBecause there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "Retained profit and unused-asset sales are internal sources.\n\nSo the statement is False."
+      "A trading name is only a business style. It does not transform a sole proprietorship into a corporation with its own legal personality.\n\nSo the statement is False.",
+      "Tax registration and a payroll do not incorporate the firm. The sole proprietorship stays unincorporated despite employees and tax filings.\n\nSo the statement is True.",
+      "Because the business is not a legal entity of its own, the proprietor pays personal income tax on business profits.\n\nSo the statement is True.",
+      "Short-term and long-term credit alike are liabilities of the sole proprietor. Duration does not remove the obligation.\n\nSo the statement is True.",
+      "Collateral is a lender’s condition on external borrowing, not on internal finance. Retained profit does not require pledged assets.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -396,11 +396,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about sole proprietorship lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False.",
-      "Incorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not.\n\nSo the statement is False.",
-      "Start from how this chapter defines partnership.\n\nIn a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "The claim about partnerships collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnerships — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False."
+      "One owner who manages and accepts the risk fits sole proprietorship by design.\n\nSo the statement is True.",
+      "Two equal co-owners need a partnership structure and agreement. Sole proprietorship has a single owner — it cannot split management rights between two equals.\n\nSo the statement is False.",
+      "Limited liability through transferable shares is a corporate story. Sole proprietorship offers neither limited liability nor share transfer for several investors.\n\nSo the statement is False.",
+      "Sharing tasks and risk with equal rights points to partnership. That is the structure Tina-and-Steve-style founders should use.\n\nSo the statement is True.",
+      "Sole proprietorship rules do not create equal co-ownership for two founders. Partnership is the form that shares ownership properly.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -425,11 +425,11 @@
       false
     ],
     "tactical_explanations": [
-      "Because there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nSo the statement is True.",
-      "A sole trader is not a separate legal entity.\n\nContracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement. Keep owner pays tax sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Because there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nSo the statement is False.",
-      "The claim about operating without corporate lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for operating without corporate in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep operating without corporate sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for sole proprietorship — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False."
+      "Unincorporated status sends business profits straight onto the owner’s personal income tax statement.\n\nSo the statement is True.",
+      "The firm is not a separate legal entity, so the owner pays tax on profits earned from the business as personal income.\n\nSo the statement is True.",
+      "Sole traders do not pay themselves dividends before tax is due. Profit is taxed as personal income without a corporate dividend step.\n\nSo the statement is False.",
+      "Missing corporate personality does not create a tax holiday. The proprietor still owes tax on business profits.\n\nSo the statement is True.",
+      "A separate corporate tax return is not required for a sole proprietorship. Personal taxation replaces that corporate filing.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -454,11 +454,11 @@
       true
     ],
     "tactical_explanations": [
-      "Trade credit lets the firm buy now and pay the supplier later under agreed terms.\n\nSo the statement is False.",
-      "Trade credit lets the firm buy now and pay the supplier later under agreed terms.\n\nIt is a short-term liability until invoices are cleared. Keep trade credit sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Limited liability would wall off private assets once business assets are exhausted.\n\nSo the statement is False.",
-      "Unlimited liability means creditors are not capped at assets labelled “business property.” If business cash is short, private assets can be reached.\n\nKeep business fails private sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True."
+      "Deferred payment is still a debt. Trade credit is not a grant; the supplier expects repayment of the purchase price.\n\nSo the statement is False.",
+      "Supplier trade credit is a short-term liability. The sole proprietor must honour the outstanding balance when due.\n\nSo the statement is True.",
+      "Collateral on a land-backed loan does not carve that debt out of unlimited liability. The loan remains an obligation; private exposure can remain if collateral falls short.\n\nSo the statement is False.",
+      "Failure that leaves debts unpaid puts private assets at stake once business funds are exhausted.\n\nSo the statement is True.",
+      "Whether the facility lasts months or years, credit remains an obligation of the sole proprietor.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -483,11 +483,11 @@
       false
     ],
     "tactical_explanations": [
-      "A sole proprietorship is not a separate legal person.\n\nSo the statement is False.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for sole proprietorship — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False.",
-      "Start from how this chapter defines because firm lacks.\n\nA sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nKeep because firm lacks sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "Incorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not.\n\nSo the statement is False.",
-      "Incorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not. The labels are different legal shells.\n\nEmployment does not shift unlimited liability onto workers or incorporate the firm. Headcount is not an incorporation trigger.\n\nSo the statement is False."
+      "A commercial trading name does not automatically create separate corporate legal personality for a sole trader.\n\nSo the statement is False.",
+      "Equal management shares for two friends call for a partnership. A sole proprietorship admits only one owner.\n\nSo the statement is False.",
+      "Lacking separate legal personality, business profits are assessed as the proprietor’s personal income.\n\nSo the statement is True.",
+      "Opening a business bank account does not switch on incorporated limited liability. The legal form stays sole trader unless the business is actually incorporated.\n\nSo the statement is False.",
+      "A larger payroll does not incorporate the firm. Hiring employees leaves a sole proprietorship unincorporated and without automatic limited liability.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -512,11 +512,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about share capital collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for share capital — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False.",
-      "A sole proprietorship is not a separate legal person.\n\nSo the statement is False.",
-      "Incorporating as a company can create limited liability; calling the firm a “sole proprietorship” does not. The labels are different legal shells.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False.",
-      "Because there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nKeep owner pays tax sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False."
+      "No mandatory minimum share capital must be deposited before a sole proprietorship may trade. That requirement belongs to companies.\n\nSo the statement is False.",
+      "A sole proprietorship is not a separate legal person and does not file corporate income tax independently of the owner.\n\nSo the statement is False.",
+      "Limited liability is not a sole-trader protection. When debts exceed business assets, private wealth remains exposed.\n\nSo the statement is False.",
+      "The owner pays tax on profits through personal income taxation — the standard fiscal treatment for this form.\n\nSo the statement is True.",
+      "Sole proprietorship profits are not assessed on a separate corporate return. They sit with the owner’s personal tax affairs.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -541,11 +541,11 @@
       true
     ],
     "tactical_explanations": [
-      "A sole proprietorship puts ownership and day-to-day control in one natural person. That person owns the trading assets, chooses suppliers and prices, and keeps residual risk.\n\nThere is no co-owner layer and no separate company person standing between the proprietor and the business.\n\nKeep one person owns sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "A sole trader is not a separate legal entity. Contracts, assets, and liabilities attach to the owner personally, so profits flow onto the owner's personal income tax statement.\n\nBecause there is no corporate taxpayer, trading profit is attributed to the proprietor and declared on the personal income tax statement.\n\nSo the statement is True.",
-      "The claim on sole proprietorship matches how this chapter defines the idea.\n\nSo the statement is True.",
-      "Start from how this chapter defines Unlimited liability.\n\nUnlimited liability means creditors are not capped at assets labelled “business property.” If business cash is short, private assets can be reached.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Continuity hangs on one person’s capacity to own and manage.\n\nRetirement or long-term illness can stall customers and contracts unless succession is arranged. Keep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "One person owns, manages, and runs the business, keeping the most important decision authority.\n\nSo the statement is True.",
+      "Without separate legal personality, business profits are assessed on the owner’s personal income tax statement.\n\nSo the statement is True.",
+      "Small sole traders face no minimum capital requirement at establishment.\n\nSo the statement is True.",
+      "Unlimited liability means private assets are also at stake if business debts must be repaid.\n\nSo the statement is True.",
+      "Retirement or long-term illness of the sole proprietor can create continuity problems for the firm.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -570,11 +570,11 @@
       true
     ],
     "tactical_explanations": [
-      "Internal finance comes from inside the firm: profit kept rather than withdrawn, or cash from selling assets no longer needed. No new outside creditor is created for that slice.\n\nKeep retained profit sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "In this chapter’s map, owner start-up savings and outside investor funds are external: they enter from outside retained trading surplus.\n\nSo the statement is True.",
-      "Retained profit and unused-asset sales are internal sources. Labelling them external confuses origin — surplus already inside — with the bank account where cash sits.\n\nRetained earnings left in the firm are internal finance even though the cash sits in a bank account.\n\nSo the statement is False.",
-      "The claim about sole proprietorship collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for sole proprietorship — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nKeep sole proprietorship sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "The claim about internal sources finance lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True."
+      "Profit kept in the business and ploughed back into operations is internal finance.\n\nSo the statement is True.",
+      "Personal savings put in at the start come from outside the firm’s own operations. In this chapter’s classification, the owner’s investment is an external source.\n\nSo the statement is True.",
+      "Retained earnings and sales of unused assets are generated inside the business. They are internal sources, not external ones.\n\nSo the statement is False.",
+      "Bank credit is money owed to an outside lender. Depositing the loan in the business account does not make borrowing internal finance.\n\nSo the statement is False.",
+      "Internal funds carry no interest bill to a creditor. That absence of financial charges is their advantage over borrowed money.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -599,11 +599,11 @@
       false
     ],
     "tactical_explanations": [
-      "A bank overdraft is flexible short-term credit on a business current account.\n\nInterest is typically charged only while the account is overdrawn. Keep bank overdraft sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Trade credit lets the firm buy now and pay the supplier later under agreed terms.\n\nSo the statement is True.",
-      "A bank overdraft is flexible short-term credit on a business current account.\n\nInterest is typically charged only while the account is overdrawn. Keep bank overdraft sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Long-term bank loans are often secured on land or property through a mortgage. Collateral reduces lender risk; it does not erase the borrower’s repayment duty.\n\nKeep collateral sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Trade credit defers payment to suppliers for a short agreed period — weeks, not years.\n\nSo the statement is False."
+      "After a current account exists, an overdraft can supply flexible short-term credit when cash is tight.\n\nSo the statement is True.",
+      "Under a supplier agreement, purchases need not be paid at once. Trade credit defers settlement for an agreed period.\n\nSo the statement is True.",
+      "Overdraft interest runs only while the account is overdrawn — not on a positive balance.\n\nSo the statement is True.",
+      "Long-term bank loans frequently use land and property as mortgage collateral.\n\nSo the statement is True.",
+      "Deferred supplier payment is still short-term trade credit, not long-term debt finance. Duration of the credit period keeps it in the short-term category.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -628,11 +628,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about sole proprietors lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietors in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "The claim about personal savings invested collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "Unlike many company forms, a sole proprietorship can start without a mandatory minimum share-capital deposit — that is why the form is described as easy to establish.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False.",
-      "Start from how this chapter defines sole proprietor — the claim overshoots it.\n\nThe claim about sole proprietor collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for sole proprietor — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False."
+      "Most sole proprietors begin with their own savings. That owner investment is classified as an external source of finance.\n\nSo the statement is True.",
+      "Funds available to the firm lean heavily on the proprietor’s own means. Thin personal finance makes start-up very difficult.\n\nSo the statement is True.",
+      "Personal savings at launch are not earlier business profits. They arrive from outside trading, so they are external — not internal — finance.\n\nSo the statement is False.",
+      "“No financial requirements” means no legal minimum capital, not that the owner never puts money in. Personal capital is still typically contributed.\n\nSo the statement is False.",
+      "The proprietor’s financial capability largely determines what funds the business can raise. Capability has a direct bearing on available finance.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -657,11 +657,11 @@
       false
     ],
     "tactical_explanations": [
-      "Retained profit and unused-asset sales are internal sources.\n\nSo the statement is False.",
-      "A sole proprietorship is not a separate legal person. Corporate personality, stand-alone corporate tax filing, or default limited liability do not appear just because a trading name or bank account exists.\n\nPicture a neighbourhood bakery run by one owner-manager: suppliers and the tax office still look to that person, not to a fictional company shell.\n\nRetained earnings left in the firm are internal finance even though the cash sits in a bank account.\n\nSo the statement is False.",
-      "Internal finance comes from inside the firm: profit kept rather than withdrawn, or cash from selling assets no longer needed.\n\nNo new outside creditor is created for that slice. Keep retained profit sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about investor funds creditor collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "The claim about internal sources finance collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for internal sources finance — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nKeep internal sources finance sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False."
+      "Selling unused assets releases cash from within the business. That is internal finance, not external money from creditors.\n\nSo the statement is False.",
+      "Owner savings are external in this classification even though owner and firm share one legal person. Internal finance starts from operating surplus and similar inside sources.\n\nSo the statement is False.",
+      "Profit kept in the firm and reinvested instead of withdrawn is the classic internal source once trading is under way.\n\nSo the statement is True.",
+      "Investors and bank creditors stand outside the firm. Their funds are external sources even when the cash sits in the business account.\n\nSo the statement is False.",
+      "Internal finance is valued precisely because it avoids market interest to a lender. The proprietor is not treated as an interest-charging creditor for retained funds.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -686,11 +686,11 @@
       true
     ],
     "tactical_explanations": [
-      "In this chapter’s map, owner start-up savings and outside investor funds are external: they enter from outside retained trading surplus.\n\nKeep owner investment funds sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Internal finance comes from inside the firm: profit kept rather than withdrawn, or cash from selling assets no longer needed.\n\nSo the statement is True.",
-      "Start from how this chapter defines sole proprietor.\n\nThe claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "The claim on unlimited liability matches how this chapter defines the idea.\n\nSo the statement is True."
+      "Owner investment plus money from investors and creditors make up the external finance side.\n\nSo the statement is True.",
+      "Once operations throw off a surplus, retained profit and sale of unneeded assets supply internal finance.\n\nSo the statement is True.",
+      "Every credit facility — short or long — is a liability on the sole proprietor.\n\nSo the statement is True.",
+      "When revenues beat expenses, profit can be retained and reinvested unless the proprietor takes it out.\n\nSo the statement is True.",
+      "Changing the mix of internal and external funds does not cancel unlimited liability. The proprietor still stands behind the debts.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -715,11 +715,11 @@
       true
     ],
     "tactical_explanations": [
-      "Unlike many company forms, a sole proprietorship can start without a mandatory minimum share-capital deposit — that is why the form is described as easy to establish.\n\nKeep entry sole trader sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about sole proprietors lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietors in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep sole proprietors sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "The claim about extra money can lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "Internal finance comes from inside the firm: profit kept rather than withdrawn, or cash from selling assets no longer needed.\n\nNo new outside creditor is created for that slice. Keep retained profit sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Long-term bank loans are often secured on land or property through a mortgage. Collateral reduces lender risk; it does not erase the borrower’s repayment duty.\n\nKeep collateral sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True."
+      "Entry is straightforward: no financial requirements must be met before starting as a sole trader.\n\nSo the statement is True.",
+      "Launch funding typically comes from the proprietor’s own savings.\n\nSo the statement is True.",
+      "When personal funds are not enough, investors and/or banks are the usual places to seek extra money.\n\nSo the statement is True.",
+      "After trading begins, retained profit can sit alongside external borrowing in the finance mix.\n\nSo the statement is True.",
+      "Long-term lenders commonly insist on assets that can serve as collateral before they advance funds.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
