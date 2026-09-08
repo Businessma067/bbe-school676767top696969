@@ -1,4 +1,5 @@
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import {
@@ -42,6 +43,7 @@ export const Route = createFileRoute("/bbe-mathematics")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/bbe-mathematics"),
     ],
   }),
   component: BbeMathematicsPage,

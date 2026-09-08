@@ -30,6 +30,7 @@ export function buildLocaleHead(lang: LocalePrefix, pathname: string, englishHea
     if (entry.property === "og:description" && entry.content) {
       return { ...entry, content: translate(entry.content, lang) ?? entry.content };
     }
+    // Keep absolute social image URLs as-is (do not translate).
     if (entry.property === "og:url") {
       const canonical = localeHeadLinks(lang, path).find((l) => l.rel === "canonical");
       return canonical ? { ...entry, content: canonical.href } : entry;

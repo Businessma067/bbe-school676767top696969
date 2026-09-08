@@ -5,6 +5,7 @@ import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
@@ -20,6 +21,7 @@ export const Route = createFileRoute("/demo-practice/")({
         property: "og:description",
         content: "Try 50+ demo tasks in Economics, Math, and English for the WU BBE exam.",
       },
+      ...socialImageMetaForPath("/demo-practice"),
     ],
   }),
   component: DemoPractice,

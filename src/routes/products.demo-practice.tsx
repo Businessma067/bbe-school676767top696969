@@ -11,6 +11,7 @@ import slide5 from "@/assets/demo-slide-5.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/products/demo-practice")({
   head: () => ({
@@ -30,8 +31,8 @@ export const Route = createFileRoute("/products/demo-practice")({
         property: "og:description",
         content: "Free trial with 50+ baseline cases across three subjects.",
       },
-      { property: "og:image", content: slide1.url },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/products/demo-practice"),
     ],
   }),
   component: DemoPracticeProduct,

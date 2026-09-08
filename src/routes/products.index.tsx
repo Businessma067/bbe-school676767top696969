@@ -8,6 +8,7 @@ import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PROVIDER = {
   "@type": "Organization",
@@ -86,6 +87,7 @@ export const Route = createFileRoute("/products/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://bbe-school.com/products" },
+      ...socialImageMetaForPath("/products"),
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(courseListJsonLd) },

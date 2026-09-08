@@ -10,6 +10,7 @@ import { AuthModal } from "@/components/AuthModal";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
@@ -30,8 +31,8 @@ export const Route = createFileRoute("/products/lite-bbe-course")({
         content:
           "950+ practice tasks, 2 mock exams, and AI explanations for early-stage WU BBE preparation.",
       },
-      { property: "og:image", content: liteAsset.url },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/products/lite-bbe-course"),
     ],
   }),
   component: LiteBbeCourseProduct,

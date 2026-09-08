@@ -7,6 +7,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/parents")({
   head: () => ({
@@ -29,14 +30,7 @@ export const Route = createFileRoute("/parents")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
-      {
-        property: "og:image",
-        content: `https://bbe-school.com${hallAsset.url}`,
-      },
-      {
-        name: "twitter:image",
-        content: `https://bbe-school.com${hallAsset.url}`,
-      },
+      ...socialImageMetaForPath("/parents"),
     ],
   }),
   component: ParentsPage,

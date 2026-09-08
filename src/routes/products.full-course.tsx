@@ -22,6 +22,7 @@ import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const FULL_COURSE_PRICE = 479;
 
@@ -44,8 +45,8 @@ export const Route = createFileRoute("/products/full-course")({
         content:
           "2000+ practice tasks, mock exams, AI assistance, and direct support built for the real WU BBE exam.",
       },
-      { property: "og:image", content: fullAsset.url },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/products/full-course"),
     ],
   }),
   component: FullCourseProduct,

@@ -13,6 +13,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,6 +34,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://bbe-school.com/" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/"),
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(homepageFaqs)) },
