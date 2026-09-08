@@ -1469,11 +1469,11 @@
       true
     ],
     "tactical_explanations": [
-      "When two or more persons jointly found a business, the ownership form is a partnership.\n\nRights, duties, and profit shares are normally fixed in a partnership agreement. Keep partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "In a general partnership, partners jointly own and manage.\n\nSo the statement is True.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Partners can divide tasks — one on clients, one on operations — while still sharing ownership risk under the agreement.\n\nKeep partners can share sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True."
+      "Two or more people founding a business together create a partnership — that is the ownership label for a jointly founded firm.\n\nSo the statement is True.",
+      "A partnership agreement settles rights, responsibilities, and how profits and losses are split. Founders need that written settlement.\n\nSo the statement is True.",
+      "In a general partnership, partners stand on equal footing for rights, liabilities, and responsibilities.\n\nSo the statement is True.",
+      "Unlimited liability means each partner is solely liable for all debts of the business — not just a slice of them.\n\nSo the statement is True.",
+      "Work can be divided: partners share tasks and may specialise in different areas of the firm.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1498,11 +1498,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "Start from how this chapter defines limited partner.\n\nA limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partner sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nSo the statement is False.",
-      "In a general partnership, partners jointly own and manage.\n\nSo the statement is False.",
-      "Unincorporated firms (sole traders, partnerships) lack separate legal personality. Incorporated companies are legal persons with limited liability for shareholders as the usual pattern.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep partnerships sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is False."
+      "One person owning and managing alone is a sole proprietorship, not a partnership. Partnership needs two or more founders.\n\nSo the statement is False.",
+      "Stay out of management as a limited partner and liability stops at the money contributed to the business.\n\nSo the statement is True.",
+      "Active daily management breaks the limited-partner shield. Taking an active management role does not leave liability capped at contributed capital.\n\nSo the statement is False.",
+      "A general partnership does not require a silent limited partner. That non-managing capital provider belongs to the limited-partnership form.\n\nSo the statement is False.",
+      "Several owners do not automatically incorporate the firm or grant limited liability. Partnerships remain unincorporated with their own liability rules.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1527,11 +1527,11 @@
       true
     ],
     "tactical_explanations": [
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "When two or more persons jointly found a business, the ownership form is a partnership.\n\nSo the statement is True.",
-      "Long-term bank loans are often secured on land or property through a mortgage.\n\nCollateral reduces lender risk; it does not erase the borrower’s repayment duty. Keep collateral sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about partnerships lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for partnerships in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep partnerships sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is True."
+      "A limited partnership always includes at least one partner who stays out of management.\n\nSo the statement is True.",
+      "Two or more partners can usually put in more savings and raise more funds than one sole proprietor alone.\n\nSo the statement is True.",
+      "Combined private assets from several partners can strengthen the collateral package offered for a business loan.\n\nSo the statement is True.",
+      "In broad terms, partnership finance looks similar to sole-trader finance — savings, credit, collateral — just with more people to draw on.\n\nSo the statement is True.",
+      "The agreement records each partner’s ownership percentage and how profit and loss are divided.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1556,11 +1556,11 @@
       true
     ],
     "tactical_explanations": [
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is False.",
-      "Start from how this chapter defines partnership — the claim overshoots it.\n\nThe claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnership — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "Profit-sharing ratios do not cap a general partner’s liability. A creditor may claim the whole shortfall from any general partner.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is False.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True."
+      "Trust between two founders does not replace a partnership agreement. Rights, responsibilities, and profit division still need to be settled in writing.\n\nSo the statement is False.",
+      "A salaried manager is an employee, not a co-owner. Hiring one does not turn a one-person business into a partnership.\n\nSo the statement is False.",
+      "Assigning supplier work to one partner does not lift unlimited liability from the other general partners.\n\nSo the statement is False.",
+      "Ownership percentage in the agreement does not cap a general partner’s liability at that share of the debts. Unlimited liability still reaches the full obligation.\n\nSo the statement is False.",
+      "Decision making and dispute resolution are exactly the kinds of detail partners put into the partnership agreement.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1585,11 +1585,11 @@
       false
     ],
     "tactical_explanations": [
-      "Profit-sharing ratios do not cap a general partner’s liability. A creditor may claim the whole shortfall from any general partner.\n\nActive management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nSo the statement is False.",
-      "The claim about difficult situations partners lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nA limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True.",
-      "Start from how this chapter defines recording unequal ownership.\n\nThe claim about recording unequal ownership lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for recording unequal ownership in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep recording unequal ownership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is False."
+      "In a limited partnership, not everyone faces unlimited liability. The non-managing limited partner’s exposure is capped at contribution.\n\nSo the statement is False.",
+      "When problems arise, partners can bounce ideas off each other and may reach better decisions than one person working alone.\n\nSo the statement is True.",
+      "Managing partners in a limited partnership keep unlimited liability for all firm debts.\n\nSo the statement is True.",
+      "Unequal ownership percentages do not, by themselves, cap each general partner’s liability at that debt share.\n\nSo the statement is True.",
+      "A sixty-percent ownership clause does not limit that partner’s liability to sixty percent of debts. General partners remain fully exposed.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1614,11 +1614,11 @@
       true
     ],
     "tactical_explanations": [
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nSo the statement is True.",
-      "Start from how this chapter defines Limited partnership.\n\nEach general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nA limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnership — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False.",
-      "The claim about profit-sharing proportions stated lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True."
+      "Specialising in finance or sales does not carve those partners out of unlimited liability for debts arising elsewhere in the firm.\n\nSo the statement is True.",
+      "Limited-partnership status leaves managing partners on unlimited liability. Only the non-managing limited partner gets the cap.\n\nSo the statement is True.",
+      "Calling the firm a partnership does not grant limited liability equal to capital contributed. That automatic limited-liability story belongs to companies, not this form.\n\nSo the statement is False.",
+      "Profit-sharing ratios in the agreement do not automatically split legal liability in the same proportions.\n\nSo the statement is True.",
+      "Under unlimited liability, a creditor may pursue any one general partner for the full outstanding partnership debt.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1643,11 +1643,11 @@
       false
     ],
     "tactical_explanations": [
-      "Start from how this chapter defines partnership.\n\nThe agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "In a general partnership, partners jointly own and manage.\n\nEach general partner typically has equal rights and responsibilities unless the agreement says otherwise. Keep general partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is False.",
-      "Profit-sharing ratios do not cap a general partner’s liability. A creditor may claim the whole shortfall from any general partner.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False."
+      "Alongside profit division, the agreement may record partnership terms and other operational details.\n\nSo the statement is True.",
+      "Equal management involvement and shared financial risk point founders toward a general partnership structure.\n\nSo the statement is True.",
+      "Rights and responsibilities of each partner are core matters settled in the partnership agreement.\n\nSo the statement is True.",
+      "Oral promises do not remove the need to settle profit division in a written partnership agreement.\n\nSo the statement is False.",
+      "Unlimited liability does not force a creditor to collect equal fractions from every partner at once. One partner may be pursued for the full amount.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1672,11 +1672,11 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnership — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False.",
-      "The claim about because partners share collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "In a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nPartners can divide tasks — one on clients, one on operations — while still sharing ownership risk under the agreement.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep general partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "In a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nPartners can divide tasks — one on clients, one on operations — while still sharing ownership risk under the agreement.\n\nSo the statement is False.",
-      "Long-term bank loans are often secured on land or property through a mortgage.\n\nSo the statement is True."
+      "Hiring a salaried manager leaves ownership with one person. That is still a sole proprietorship, not a partnership.\n\nSo the statement is False.",
+      "Profit shares do not automatically carve legal liability into matching proportions. Unlimited liability can still reach the full debt.\n\nSo the statement is False.",
+      "General partners may share tasks and specialise. They are not required to perform every management task personally.\n\nSo the statement is False.",
+      "Equal rights do not forbid specialised roles. One partner can focus on clients while another handles operations.\n\nSo the statement is False.",
+      "Several partners combining personal resources can plausibly offer more private assets as collateral.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1701,11 +1701,11 @@
       true
     ],
     "tactical_explanations": [
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "When two or more persons jointly found a business, the ownership form is a partnership. Rights, duties, and profit shares are normally fixed in a partnership agreement.\n\nA limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True.",
-      "In a general partnership, partners jointly own and manage.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "In a limited partnership, a silent capital contributor who does not manage has liability limited to the money contributed.\n\nSo the statement is True.",
+      "General or limited partnership rules apply only after two or more persons jointly found the business.\n\nSo the statement is True.",
+      "Equal rights among general partners can sit alongside unequal ownership percentages written into the agreement.\n\nSo the statement is True.",
+      "Decision-making procedures and dispute-resolution methods belong in the partnership agreement together.\n\nSo the statement is True.",
+      "Each partner’s ownership percentage is one of the details settled when the agreement is set up.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1730,11 +1730,11 @@
       true
     ],
     "tactical_explanations": [
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nSo the statement is True.",
-      "Start from how this chapter defines limited partnership — the claim overshoots it.\n\nThe agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nActive management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "When two or more persons jointly found a business, the ownership form is a partnership. Rights, duties, and profit shares are normally fixed in a partnership agreement.\n\nIn a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nSo the statement is True.",
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True.",
-      "The claim about pooling partner savings lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for pooling partner savings in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep pooling partner savings sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True."
+      "If business assets cannot cover unpaid debts, unlimited liability can reach partners’ private assets.\n\nSo the statement is True.",
+      "Liability rules alone do not settle governance. A limited partnership still needs a partnership agreement for ownership, profit, and decision details.\n\nSo the statement is False.",
+      "Two consultants founding together with equal management involvement are describing a general partnership.\n\nSo the statement is True.",
+      "Limited partners stay out of management; general partners run operations.\n\nSo the statement is True.",
+      "Pooling savings across partners can lift total investable funds above what a single owner could provide.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1759,11 +1759,11 @@
       true
     ],
     "tactical_explanations": [
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep limited partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "Long-term bank loans are often secured on land or property through a mortgage. Collateral reduces lender risk; it does not erase the borrower’s repayment duty.\n\nA one-person repair booth with personal tax on profits is still a sole trader even with a fancy trading name.\n\nSo the statement is False.",
-      "The claim about partnerships collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep limited partner sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nA limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True."
+      "Not every partner in a limited partnership enjoys a liability cap. Managing partners remain on unlimited liability.\n\nSo the statement is False.",
+      "A multi-partner firm can usually assemble more combined collateral than one sole proprietor alone — not less.\n\nSo the statement is False.",
+      "Partnership finance is broadly similar to sole-trader finance; partners can still invest personal savings in the same spirit.\n\nSo the statement is False.",
+      "Managing daily operations as a “limited” partner breaks the cap. Liability is not then limited to the ownership percentage in the agreement.\n\nSo the statement is False.",
+      "A limited partnership can combine managing partners on unlimited liability with a non-managing partner whose liability is capped.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1788,11 +1788,11 @@
       false
     ],
     "tactical_explanations": [
-      "In a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nActive management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "The claim about exchanging ideas difficult lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for exchanging ideas difficult in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "Active management usually breaks the limited-partner pattern.\n\nSo the statement is False.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nLong-term bank loans are often secured on land or property through a mortgage. Collateral reduces lender risk; it does not erase the borrower’s repayment duty.\n\nKeep collateral sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "The claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnership — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False."
+      "Unequal ownership percentages do not, by themselves, convert a general partnership into a limited partnership.\n\nSo the statement is False.",
+      "Talking through hard choices together may produce better decisions than each partner deciding in isolation.\n\nSo the statement is True.",
+      "The silent capital contributor in a limited partnership does not manage daily operations — that is the point of the limited role.\n\nSo the statement is False.",
+      "Partners may still pledge private assets as loan collateral even while general partners face unlimited liability.\n\nSo the statement is True.",
+      "Oral understandings are not enough. Founders need a partnership agreement before relying on settled rights and duties.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1817,11 +1817,11 @@
       false
     ],
     "tactical_explanations": [
-      "Start from how this chapter defines profit loss division — the claim overshoots it.\n\nThe claim about profit loss division collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for profit loss division — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "Long-term bank loans are often secured on land or property through a mortgage.\n\nSo the statement is False.",
-      "Start from how this chapter defines partnership agreement.\n\nThe agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nSo the statement is False."
+      "Trust does not replace documentation. Profit and loss division still needs to appear in the agreement.\n\nSo the statement is False.",
+      "Decision-making rules and dispute procedures are standard agreement content — they should appear there.\n\nSo the statement is False.",
+      "Two partners acting together can usually pledge more combined private collateral than one sole proprietor.\n\nSo the statement is False.",
+      "How disputes between partners will be resolved is a matter the partnership agreement may address.\n\nSo the statement is True.",
+      "Limited partnership status does not remove personal liability from every partner. Managing partners still face unlimited liability.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1846,11 +1846,11 @@
       true
     ],
     "tactical_explanations": [
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nSo the statement is False.",
-      "The claim about partner who paid lines up with how this chapter defines the ownership form or finance source.\n\nSo the statement is True.",
-      "Start from how this chapter defines partnership agreement — the claim overshoots it.\n\nThe agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nSo the statement is False.",
-      "When two or more persons jointly found a business, the ownership form is a partnership.\n\nSo the statement is True."
+      "Claiming limited-partner status while taking an active management role does not preserve the liability cap.\n\nSo the statement is False.",
+      "A partner who pays a creditor in full may still seek internal recovery from co-partners under the partnership’s internal arrangements.\n\nSo the statement is True.",
+      "Two founders still need a partnership agreement. Equal shares are not safely assumed by default without one.\n\nSo the statement is False.",
+      "Limited partners who manage daily operations lose the contribution-only cap. Management and limited liability do not mix.\n\nSo the statement is False.",
+      "Two or more persons who jointly found a business create what is called a partnership.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1875,11 +1875,11 @@
       false
     ],
     "tactical_explanations": [
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnership — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "In a general partnership, partners jointly own and manage.\n\nSo the statement is False.",
-      "Partners can divide tasks — one on clients, one on operations — while still sharing ownership risk under the agreement.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False."
+      "The partnership agreement records rights, responsibilities, and how profit and loss are divided — together in one settlement.\n\nSo the statement is True.",
+      "Decision-making procedures and dispute-resolution methods are specified within that same agreement.\n\nSo the statement is True.",
+      "“Always raises less” is too absolute. Partnerships are not barred from substantial external finance simply because they do not sell public shares.\n\nSo the statement is False.",
+      "Equal management involvement points to a general partnership, not a limited partnership with a non-managing capital provider.\n\nSo the statement is False.",
+      "Specialising in client relations does not confine liability to client-contract debts. A general partner remains exposed to firm debts generally.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1904,11 +1904,11 @@
       true
     ],
     "tactical_explanations": [
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Profit-sharing ratios do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "Active management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nSo the statement is False.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nEach general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "Long-term bank loans are often secured on land or property through a mortgage.\n\nSo the statement is True."
+      "Partnership terms and other operational details may sit in the agreement alongside the headline economic clauses.\n\nSo the statement is True.",
+      "Unequal ownership percentages do not convert everyone’s unlimited liability into limited liability.\n\nSo the statement is False.",
+      "Managing general partners in a limited partnership do not enjoy a liability cap at their ownership percentage.\n\nSo the statement is False.",
+      "Even with unequal ownership percentages, each general partner remains solely liable for all debts.\n\nSo the statement is True.",
+      "More combined savings and collateral can make borrowing more plausible than for a lone sole trader.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1933,11 +1933,11 @@
       true
     ],
     "tactical_explanations": [
-      "Active management usually breaks the limited-partner pattern.\n\nSo the statement is False.",
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partner sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Profit-sharing ratios do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "When two or more persons jointly found a business, the ownership form is a partnership. Rights, duties, and profit shares are normally fixed in a partnership agreement.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "A limited partnership needs at least one partner who manages. It cannot exist with only non-managing partners.\n\nSo the statement is False.",
+      "The limited partner’s liability stops at the amount of money contributed to the business.\n\nSo the statement is True.",
+      "Joint profit sharing does not put every limited-partnership partner on equal unlimited liability. The limited partner’s cap remains.\n\nSo the statement is False.",
+      "Joint founding by two or more persons is the defining condition for calling the business a partnership.\n\nSo the statement is True.",
+      "Partners must set up a partnership agreement to settle rights, responsibilities, and profit-loss division.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1962,11 +1962,11 @@
       false
     ],
     "tactical_explanations": [
-      "Profit-sharing ratios do not cap a general partner’s liability. A creditor may claim the whole shortfall from any general partner.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "The claim about pooling partner savings collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "The claim about partnership lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for partnership in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "In a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nEach general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nSo the statement is True.",
-      "In a general partnership, partners jointly own and manage.\n\nSo the statement is False."
+      "Unlimited liability does not ban pledging private property as security. Partners can still offer collateral for credit.\n\nSo the statement is False.",
+      "Pooling savings across partners does increase total investable funds compared with a single owner.\n\nSo the statement is False.",
+      "Investing pooled savings does not cancel full liability for partnership debts. Partners remain fully liable.\n\nSo the statement is True.",
+      "In a general partnership under unlimited liability, each partner is solely liable for all debts of the business.\n\nSo the statement is True.",
+      "Different ownership percentages do not automatically strip minority partners of equal management rights in a general partnership.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1991,11 +1991,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about general partner who collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "The claim about creditors may demand lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for creditors may demand in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True.",
-      "The claim about creditors must first collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for creditors must first — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nKeep creditors must first sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "In a general partnership, partners jointly own and manage.\n\nSo the statement is False.",
-      "The claim about limited liability collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for limited liability — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False."
+      "A general partner can be liable for debts another partner created for the firm. Not signing a particular supplier contract does not create a free pass.\n\nSo the statement is False.",
+      "Creditors may demand full repayment from one partner even when others hold larger ownership shares.\n\nSo the statement is True.",
+      "Creditors are not forced to collect only proportional shares after exhausting business assets. Unlimited liability allows fuller pursuit of a partner.\n\nSo the statement is False.",
+      "A general partnership does not give limited liability protecting each consultant’s private assets by default.\n\nSo the statement is False.",
+      "Sitting in on management meetings as an “observer” while claiming limited liability is risky framing — limited status requires staying out of management, not hovering in the room with a contribution-only shield assumed.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2020,11 +2020,11 @@
       true
     ],
     "tactical_explanations": [
-      "Profit-sharing ratios do not cap a general partner’s liability. A creditor may claim the whole shortfall from any general partner.\n\nActive management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nSo the statement is False.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "Start from how this chapter defines sole proprietor.\n\nUnlimited liability means creditors are not capped at assets labelled “business property.” If business cash is short, private assets can be reached.\n\nEach general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nKeep sole proprietor sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "When two or more persons jointly found a business, the ownership form is a partnership.\n\nSo the statement is True."
+      "Unincorporated status does not put every limited-partnership partner on equal unlimited liability. The limited partner’s liability is capped.\n\nSo the statement is False.",
+      "The partnership agreement can cover details beyond profit division — terms, rights, disputes, and more.\n\nSo the statement is True.",
+      "A verbal promise to share profits equally does not make the written partnership agreement optional.\n\nSo the statement is False.",
+      "A sole proprietor and each general partner both face unlimited liability for business debts.\n\nSo the statement is True.",
+      "Two or more partners may raise more funds and offer more collateral than a sole proprietor can alone.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2049,11 +2049,11 @@
       true
     ],
     "tactical_explanations": [
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "When two or more persons jointly found a business, the ownership form is a partnership.\n\nRights, duties, and profit shares are normally fixed in a partnership agreement. Keep partnership sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is True.",
-      "Partners can divide tasks — one on clients, one on operations — while still sharing ownership risk under the agreement.\n\nKeep partners share tasks sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nNothing further in the stem overturns that ownership or finance reading.\n\nSo the statement is True.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership agreement sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True."
+      "A limited partnership needs at least one non-managing partner whose liability is capped at contribution.\n\nSo the statement is True.",
+      "Two or more persons jointly founding the business is what creates a partnership.\n\nSo the statement is True.",
+      "Partners set up an agreement settling rights, responsibilities, and profit-loss division.\n\nSo the statement is True.",
+      "They share tasks, may specialise, and can exchange ideas when decisions get difficult.\n\nSo the statement is True.",
+      "The agreement also specifies decision making, dispute resolution, and each partner’s ownership percentage.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2078,11 +2078,11 @@
       true
     ],
     "tactical_explanations": [
-      "Start from how this chapter defines unlimited liability.\n\nIn a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nEach general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "In a general partnership, partners jointly own and manage. Each general partner typically has equal rights and responsibilities unless the agreement says otherwise.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True.",
-      "The claim about partnerships lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for partnerships in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nKeep partnerships sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nSo the statement is True.",
-      "The claim about sole proprietor lines up with how this chapter defines the ownership form or finance source.\n\nKeep the textbook criterion for sole proprietor in view: legal personality, liability, and where the money comes from are the usual sorting keys.\n\nSo the statement is True."
+      "Silence at meetings does not remove unlimited liability. A general partner still faces all firm debts.\n\nSo the statement is True.",
+      "Equal responsibilities do not forbid specialisation. One partner may focus on finance while another focuses on sales.\n\nSo the statement is False.",
+      "A limited partner kept out of management has liability limited to capital contributed.\n\nSo the statement is True.",
+      "Partnership finance is broadly like sole-trader finance, with the added option of pooling resources across partners.\n\nSo the statement is True.",
+      "Several partners can invest more combined savings than one sole proprietor acting alone.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2107,11 +2107,11 @@
       false
     ],
     "tactical_explanations": [
-      "Long-term bank loans are often secured on land or property through a mortgage.\n\nCollateral reduces lender risk; it does not erase the borrower’s repayment duty. Keep collateral sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Active management usually breaks the limited-partner pattern.\n\nSo the statement is False.",
-      "Profit-sharing ratios do not cap a general partner’s liability. A creditor may claim the whole shortfall from any general partner.\n\nActive management usually breaks the limited-partner pattern. The liability cap is tied to a passive capital role, not to merely holding a title.\n\nA silent investor who never manages can keep the cap; the same person taking daily control risks losing that protection.\n\nTwo consultants sharing an agreement remain partners; profit shares do not cap a general partner’s liability.\n\nSo the statement is False.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nKeep unlimited liability sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "Active management usually breaks the limited-partner pattern.\n\nSo the statement is False."
+      "More private assets offered as collateral can make partnership borrowing more plausible than sole trading.\n\nSo the statement is True.",
+      "Specialising in one function does not convert a general partner into a limited partner with capped liability.\n\nSo the statement is False.",
+      "A silent partner’s capital does not lift unlimited liability from the managing general partners in a limited partnership.\n\nSo the statement is False.",
+      "Under unlimited liability, any one partner may be pursued for the full outstanding debt of the firm.\n\nSo the statement is True.",
+      "Limited partnership status does not mean no partner ever faces personal liability beyond contribution — managing partners still do.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2136,11 +2136,11 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about corporations collides with the chapter definition of the ownership form or finance source.\n\nSo the statement is False.",
-      "Long-term bank loans are often secured on land or property through a mortgage. Collateral reduces lender risk; it does not erase the borrower’s repayment duty.\n\nKeep collateral sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True.",
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nKeep limited partner sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is True.",
-      "A limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True.",
-      "Start from how this chapter defines partnership.\n\nThe agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nKeep partnership sorted by legal personality, liability, and where the money comes from.\n\nNeighbouring labels with similar vocabulary should not pull the classification away.\n\nOnce that defining feature is fixed, the true/false call is stable.\n\nSo the statement is True."
+      "Corporations can raise share capital on a stock exchange; partnerships do not raise funds that way. The methods are not identical.\n\nSo the statement is False.",
+      "Partners applying jointly may offer more private assets as collateral than one person alone.\n\nSo the statement is True.",
+      "Even when a limited partner contributes capital without managing, general partners remain liable for all debts.\n\nSo the statement is True.",
+      "The non-managing capital provider in a limited partnership has liability limited to the money contributed.\n\nSo the statement is True.",
+      "Partnership terms, decision making, and dispute resolution may all sit in the partnership agreement.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2165,11 +2165,11 @@
       true
     ],
     "tactical_explanations": [
-      "Active management usually breaks the limited-partner pattern.\n\nSo the statement is False.",
-      "The claim about partnership collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for partnership — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nSo the statement is False.",
-      "The claim about joint founding requires collides with the chapter definition of the ownership form or finance source.\n\nRestore the right test for joint founding requires — liability, legal personality, or internal versus external origin — and the sentence no longer holds.\n\nIn the stem’s business setting, applying the correct legal or finance label already overturns the absolute wording.\n\nKeep joint founding requires sorted by legal personality, liability, and where the money comes from.\n\nSo the statement is False.",
-      "The agreement settles ownership shares, profit and loss splits, roles, and decision rules so disputes have a written baseline.\n\nSo the statement is False.",
-      "Each general partner can be pursued for the full remaining business debt — liability is not capped at that partner’s profit share.\n\nA limited partner’s loss is normally capped at the contribution, provided that partner stays out of day-to-day management.\n\nSo the statement is True."
+      "Unincorporated status does not give every limited-partnership partner a liability cap. Managing partners remain unlimited.\n\nSo the statement is False.",
+      "Salaried managers who are not partners do not turn a one-owner firm into a partnership. Partnership needs co-owners who jointly found.\n\nSo the statement is False.",
+      "Joint founding does not require every participant to manage from day one — limited partners, for example, stay out of management.\n\nSo the statement is False.",
+      "A partnership agreement does not create corporate separate legal personality. That is a company feature.\n\nSo the statement is False.",
+      "Managing partners in a limited partnership remain subject to unlimited liability for all partnership debts.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
