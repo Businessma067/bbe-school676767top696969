@@ -35,7 +35,7 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
 export const DISCOUNT_CODE = "BBE-JfkDjt15";
 export const DISCOUNT_PCT = 15;
 
-/** Hardcoded discount fallbacks when Supabase `promocodes` table is missing / empty. */
+/** Hardcoded discount fallbacks when Supabase `promocodes` table is missing / empty. (Lovable sync) */
 export type HardcodedDiscountPromo = {
   code: string;
   discountPct: number;

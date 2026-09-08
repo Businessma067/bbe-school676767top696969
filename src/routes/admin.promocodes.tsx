@@ -73,7 +73,7 @@ function AdminPromocodesPage() {
             <code className="rounded bg-destructive/10 px-1">
               supabase/migrations/20260908121000_promocodes_bootstrap_30_full.sql
             </code>{" "}
-            (creates tables + 30% Full codes), run it, then refresh this page.
+            (creates tables + 30% Full codes). Run that full file — not a bare INSERT — then refresh this page.
           </p>
         </div>
       ) : null}
