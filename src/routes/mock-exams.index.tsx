@@ -16,7 +16,6 @@ import {
   type ProductTier,
 } from "@/lib/mock-exams";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
-import { userOwnsFullCourse } from "@/lib/full-course-access";
 import {
   fetchMockAttempts,
   type MockAttempt,
@@ -58,10 +57,14 @@ function MockExamsPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [owns, history] = await Promise.all([userOwnsFullCourse(), fetchMockAttempts()]);
+      const [{ fetchAccessState }, history] = await Promise.all([
+        import("@/lib/entitlements"),
+        fetchMockAttempts(),
+      ]);
+      const state = await fetchAccessState();
       if (cancelled) return;
-      // Site lockdown: only allowlisted full-site accounts see mock exams.
-      setTier(owns ? "full" : "none");
+      // Lite buyers only see Lite mocks; Full buyers see the full set.
+      setTier(state.tier === "full" || state.tier === "lite" ? state.tier : "none");
       setAttempts(history);
 
       const progress: Record<string, { timed: boolean; answerSheet: boolean }> = {};

@@ -5,7 +5,9 @@
 import {
   DEMO_ONLY_HREF,
   hasFullSiteAccess,
+  isFullCourseProtectedPath,
   isFullSiteProtectedPath,
+  requiredTierForPath,
 } from "../src/lib/site-access.ts";
 
 let failed = 0;
@@ -42,12 +44,14 @@ for (const [path, expected] of [
   ["/tutor-exam", true],
   ["/mock-exams/1/take", true],
   ["/practice", true],
-  ["/dashboard", true],
+  ["/dashboard", false],
   ["/products/full-course-math", true],
   ["/products/lite-bbe-course-english", true],
   ["/products/custom-mock-builder", true],
-  ["/admin", true],
+  ["/admin", false],
   ["/login", false],
+  ["/de/products/full-course-math", false],
+  ["/uk/flashcards", false],
 ] as const) {
   assert(
     isFullSiteProtectedPath(path) === expected,
@@ -55,6 +59,11 @@ for (const [path, expected] of [
   );
 }
 
+assert(isFullCourseProtectedPath("/products/full-course-math") === true, "full math is full-gated");
+assert(isFullCourseProtectedPath("/products/lite-bbe-course-math") === false, "lite math is not full-gated");
+assert(requiredTierForPath("/products/full-course-economics") === "full", "econ requires full");
+assert(requiredTierForPath("/flashcards") === "lite", "flashcards require lite");
+assert(requiredTierForPath("/demo-practice") === null, "demo is open");
 assert(DEMO_ONLY_HREF === "/demo-practice", "demo href");
 
 if (failed) {

@@ -1,12 +1,26 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { buildLocaleHead } from "@/lib/i18n/locale-head";
-import { isLocalePrefix, isLocalizablePath, normalizeAppPath } from "@/lib/i18n/locale-path";
+import {
+  isLocalePrefix,
+  isLocalizablePath,
+  isStudyContentPath,
+  normalizeAppPath,
+} from "@/lib/i18n/locale-path";
 import { getLocalizedPage } from "@/lib/i18n/localized-pages";
+import { isFullSiteProtectedPath } from "@/lib/site-access";
 
 export const Route = createFileRoute("/$lang/$")({
   beforeLoad: ({ params }) => {
     if (!isLocalePrefix(params.lang)) throw notFound();
     const path = normalizeAppPath(`/${params._splat ?? ""}`);
+
+    // Paid / study surfaces stay English-only. Locale-prefixed deep links
+    // (e.g. /de/products/full-course-math) must land on the gated English
+    // route — never skip RequireFullCourse via a translated URL.
+    if (!isLocalizablePath(path) && (isFullSiteProtectedPath(path) || isStudyContentPath(path))) {
+      throw redirect({ to: path as never });
+    }
+
     if (!isLocalizablePath(path) || path === "/") throw notFound();
     if (!getLocalizedPage(path)) throw notFound();
   },
