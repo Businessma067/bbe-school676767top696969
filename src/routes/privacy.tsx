@@ -21,15 +21,7 @@ export const Route = createFileRoute("/privacy")({
 export function PrivacyPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader
-        maxWidthClassName="max-w-3xl"
-        compact
-        actions={
-          <LocalizedLink to="/" className="text-sm text-primary hover:underline">
-            ← Back to home
-          </LocalizedLink>
-        }
-      />
+      <SiteHeader compact maxWidthClassName="max-w-3xl" showNav={false} showMobileNav={false} />
       <div className="mx-auto max-w-3xl px-6 py-16">
         <h1 className="font-display text-3xl font-bold tracking-tight">Privacy Policy</h1>
         <p className="mt-2 text-sm text-muted-foreground">Last updated: 08.09.2026</p>
