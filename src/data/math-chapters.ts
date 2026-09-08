@@ -41,33 +41,32 @@ export type MathChapter = {
   comingSoon?: boolean;
 };
 
-/** Fallback: how many free tasks per unspecified chapter in the Demo tier. */
-export const DEMO_MATH_FREE_LIMIT = 2;
+/**
+ * Fallback: how many free tasks per unspecified chapter in the Demo tier.
+ * Chapters outside DEMO_MATH_SUBSECTION_FREE stay fully locked.
+ */
+export const DEMO_MATH_FREE_LIMIT = 0;
 
 /**
  * Demo unlocks by subsection. Unlisted subsections in these chapters stay locked.
  * Counts are the first N tasks in that subsection.
+ * Topics 1–6: first 10 of the first subtopic; topics 7–8: first 5 of the first subtopic.
  */
 export const DEMO_MATH_SUBSECTION_FREE: Partial<
   Record<number, Readonly<Record<string, number>>>
 > = {
-  1: { "1.1": 10, "1.2": 5 },
-  2: { "2.1": 10, "2.2": 5, "2.3": 5, "2.4": 5 },
-  3: { "3.1": 10, "3.2": 5, "3.3": 5, "3.4": 5 },
-  4: { "4.1": 10, "4.2": 5, "4.3": 5, "4.4": 5 },
+  1: { "1.1": 10 },
+  2: { "2.1": 10 },
+  3: { "3.1": 10 },
+  4: { "4.1": 10 },
   5: { "5": 10 },
-  6: { "6.1": 10, "6.2": 5, "6.3": 5, "6.4": 5, "6.5": 4 },
-  7: { "7": 10 },
-  8: { "8": 10 },
-  9: { "9": 10 },
-  10: { "10.1": 10, "10.2": 5, "10.3": 5 },
-  11: { "11.1": 10, "11.2": 10, "11.3": 10, "11.4": 10, "11.5": 5 },
+  6: { "6.1": 10 },
+  7: { "7": 5 },
+  8: { "8": 5 },
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */
-export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {
-  /** Chapters 7 and 9 use subsection maps above; this remains the fallback. */
-};
+export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {};
 
 function localIndexInSubsection(
   tasks: MathTask[],
