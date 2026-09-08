@@ -517,34 +517,34 @@ export type Database = {
       }
       promo_usages: {
         Row: {
-          id: string
-          promocode_id: string
           code: string
-          user_id: string | null
-          user_email: string | null
-          product_slug: string
-          payment_id: string | null
           created_at: string
+          id: string
+          payment_id: string | null
+          product_slug: string
+          promocode_id: string
+          user_email: string | null
+          user_id: string | null
         }
         Insert: {
-          id?: string
-          promocode_id: string
           code: string
-          user_id?: string | null
-          user_email?: string | null
-          product_slug: string
-          payment_id?: string | null
           created_at?: string
+          id?: string
+          payment_id?: string | null
+          product_slug: string
+          promocode_id: string
+          user_email?: string | null
+          user_id?: string | null
         }
         Update: {
-          id?: string
-          promocode_id?: string
           code?: string
-          user_id?: string | null
-          user_email?: string | null
-          product_slug?: string
-          payment_id?: string | null
           created_at?: string
+          id?: string
+          payment_id?: string | null
+          product_slug?: string
+          promocode_id?: string
+          user_email?: string | null
+          user_id?: string | null
         }
         Relationships: [
           {
