@@ -6893,10 +6893,10 @@
     ],
     "tactical_explanations": [
       "Orientation suitability depends on the offering and how many rivals compete.\n\nSo the statement is True.",
-      "A business software supplier of seasonal fashion garments may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
-      "High quality still does not excuse neglecting markets and customer expectations.\n\nA technically fine seasonal range can miss the season if buyers have already moved on — quality without market attention is not enough.\n\nSo the statement is True.",
+      "A business software supplier of seasonal fashion garments may share profitability objectives with rivals yet follow different orientation paths.\n\nOne firm can lock specs early while another keeps reading demand first — same profit goal, different starting point.\n\nSo the statement is True.",
+      "High quality still does not excuse neglecting markets and customer expectations.\n\nA technically fine seasonal range can miss the season if buyers have already moved on.\n\nSo the statement is True.",
       "For hotel accommodation in food service markets, orientation fit likewise depends on the offering and rival intensity.\n\nSo the statement is True.",
-      "A food service supplier of hotel accommodation may share profit goals with rivals while choosing a different orientation path.\n\nSo the statement is True."
+      "A food service supplier of hotel accommodation may share profit goals with rivals while choosing a different orientation path.\n\nShared targets do not force a shared specs-first or needs-first sequence.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6921,11 +6921,11 @@
       true
     ],
     "tactical_explanations": [
-      "Strong quality still leaves markets and customer expectations relevant.\n\nSo the statement is True.",
-      "For dental care services in financial services markets, orientation fit depends on the offering and competitor numbers.\n\nSo the statement is True.",
+      "Strong hotel accommodation quality in food service still leaves markets and customer expectations relevant.\n\nSo the statement is True.",
+      "For dental care services in financial services markets, orientation fit depends on the offering and competitor numbers.\n\nSparse competition may tolerate more product-led emphasis; a crowded category usually needs closer reading of client wants.\n\nSo the statement is True.",
       "A financial services supplier of dental care may share profitability objectives with rivals yet start from a different orientation.\n\nSo the statement is True.",
       "Home furniture in healthcare supplies markets follows the same contingency: product type and rival count shape orientation fit.\n\nSo the statement is True.",
-      "A healthcare supplies supplier of home furniture ranges can share profit targets with rivals while using a different orientation path.\n\nOne firm may lock specs early; another may keep reading demand signals first. Shared profitability objectives do not erase that process difference.\n\nSo the statement is True."
+      "A healthcare supplies supplier of home furniture ranges can share profit targets with rivals while using a different orientation path.\n\nOne path may lock specs early; another may keep reading demand signals first.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6981,9 +6981,9 @@
     "tactical_explanations": [
       "A home improvement supplier of online grocery deliveries may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
       "High quality in online grocery deliveries for home improvement still does not licence neglecting markets and expectations.\n\nSo the statement is True.",
-      "For fitness class memberships in automotive after-sales markets, orientation fit depends on the offering itself and how many rivals compete in that category.\n\nSparse competition around a specialised membership may tolerate more product-led emphasis; a crowded local fitness market usually pushes firms toward closer reading of member wants.\n\nSo the statement is True.",
+      "For fitness class memberships in automotive after-sales markets, orientation fit depends on the offering itself and how many rivals compete in that category.\n\nA specialised membership with few rivals may tolerate more product-led emphasis; a crowded local fitness market usually pushes firms toward closer reading of member wants.\n\nSo the statement is True.",
       "An automotive after-sales supplier of fitness memberships can share profit goals with rivals while choosing a different orientation path.\n\nSo the statement is True.",
-      "Even strong fitness membership quality in automotive after-sales leaves customer expectations relevant.\n\nSo the statement is True."
+      "Even strong fitness membership quality in automotive after-sales leaves customer expectations relevant.\n\nNeglecting those expectations still risks churn when rivals adapt faster.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
