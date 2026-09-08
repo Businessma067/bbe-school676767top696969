@@ -47,3 +47,8 @@ Approximate counts from v2 scan:
 ## Rewrite rule (unchanged)
 Prefer one line: `LHS = mid = 0 \implies var = n`
 No short `&= number` tails; no nested `\dfrac{-\frac}`.
+
+## Clarification (user)
+Do **not** smash ordinary pedagogical step ladders (probability expansions, etc.).
+Only rewrite displays that look crooked like the elasticity screenshot:
+short `&=` tails, phantom `& expr \\ &= result`, nested fracs, orphan `=`, FOC densify.

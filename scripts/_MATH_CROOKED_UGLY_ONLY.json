@@ -1,0 +1,43 @@
+[
+  {
+    "case_id": "MATH 4.45",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "ov",
+      "ov"
+    ],
+    "reasons": [
+      "aligned_multi_short",
+      "aligned_phantom_lhs_short_tail"
+    ],
+    "samples": [
+      [
+        "ov",
+        "aligned_phantom_lhs_short_tail",
+        "& \\sum_{i = 1}^{5} y_i // &= (10 + k)x + 70 - 2k"
+      ],
+      [
+        "ov",
+        "aligned_multi_short",
+        "& \\sum_{i = 1}^{5} y_i // &= (10x + 40) + kx - 2k + 30 // &= (10 + k)x + 70 - 2k"
+      ]
+    ]
+  },
+  {
+    "case_id": "MATH 4.217",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "t1"
+    ],
+    "reasons": [
+      "aligned_phantom_lhs_short_tail"
+    ],
+    "samples": [
+      [
+        "t1",
+        "aligned_phantom_lhs_short_tail",
+        "& 15 \\cdot \\frac{18}{5} // &= 54\\ \\text{km/h}"
+      ]
+    ]
+  }
+]
