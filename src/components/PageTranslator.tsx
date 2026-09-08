@@ -35,11 +35,14 @@ export function PageTranslator() {
   // not from already-translated DOM text.
   const originalsRef = useRef(new WeakMap<Text, string>());
   const lastWrittenRef = useRef(new WeakMap<Text, string>());
+  const translatedRef = useRef(new WeakMap<Text, string>());
 
   useEffect(() => {
     if (typeof document === "undefined") return;
     const originals = originalsRef.current;
     const lastWritten = lastWrittenRef.current;
+    const translated = translatedRef.current;
+
 
     const shouldSkip = (node: Text) => {
       let el = node.parentElement;
@@ -54,6 +57,7 @@ export function PageTranslator() {
     const writeNode = (node: Text, next: string) => {
       if ((node.nodeValue ?? "") === next) return;
       lastWritten.set(node, next);
+      translated.set(node, next);
       node.nodeValue = next;
     };
 
@@ -78,15 +82,25 @@ export function PageTranslator() {
         }
 
         if (effectiveLang === "en") {
+          const source = originals.get(node);
+          if (source !== undefined && translated.get(node) === value) {
+            // Node still shows our translation — restore the English source.
+            translated.delete(node);
+            lastWritten.set(node, source);
+            node.nodeValue = source;
+            continue;
+          }
           // Live English from React is authoritative (timers, toggles, counters).
+          translated.delete(node);
           originals.set(node, value);
           continue;
         }
 
-        if (fromCharacterData || !originals.has(node)) {
+        if (translated.get(node) !== value && (fromCharacterData || !originals.has(node))) {
           // First sight, or React changed the English source text.
           originals.set(node, value);
         }
+
 
         const source = originals.get(node) ?? value;
         const next = translate(source, effectiveLang) ?? source;
