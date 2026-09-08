@@ -72,8 +72,12 @@ function AdminPromocodesPage() {
             Open Supabase → SQL Editor, paste{" "}
             <code className="rounded bg-destructive/10 px-1">
               supabase/migrations/20260907180000_discount_promocodes.sql
-            </code>
-            , run it, then refresh this page.
+            </code>{" "}
+            (and{" "}
+            <code className="rounded bg-destructive/10 px-1">
+              20260908120000_discount_promocodes_30_full.sql
+            </code>{" "}
+            for 30% Full codes), run it, then refresh this page.
           </p>
         </div>
       ) : null}
@@ -85,7 +89,7 @@ function AdminPromocodesPage() {
         <StatCard
           label="Active discounts"
           value={loading ? "…" : activeDiscounts}
-          hint="15% multi-use codes"
+          hint="Multi-use % off codes"
         />
       </div>
 
