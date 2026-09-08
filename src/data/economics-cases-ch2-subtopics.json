@@ -919,7 +919,7 @@
     ],
     "tactical_explanations": [
       "Fifteen euros cannot buy lunch and fund the full boot pot at once. Mira has to split or dedicate that scarce cash.\n\nSo the statement is True.",
-      "Once the fifteen euros buy lunch, that cash is gone from today’s choice set. The claim treats the lunch-or-boots allocation of this pocket money as settled once the meal is purchased.\n\nSo the statement is True.",
+      "Spending the fifteen euros on lunch closes that particular cash choice: those euros are no longer available for boots today.\n\nSo the statement is True.",
       "Saving the money instead of eating out is still allocating scarce euros — toward boots later rather than lunch now. No receipt does not mean no economic decision.\n\nSo the statement is True.",
       "A hot lunch covers nutrition, a basic need. Designer boots are typically a style want beyond bare footwear necessity, so the contrast in the claim fits the needs-versus-wants split.\n\nSo the statement is True.",
       "Students with pocket money buy lunches, save, and trade second-hand goods. They participate as households (or young consumers) under scarcity. Owning a business is not required to be inside the economy.\n\nSo the statement is False."
@@ -976,7 +976,7 @@
       true
     ],
     "tactical_explanations": [
-      "Concert tickets are a leisure want, not food, shelter, or basic care.\n\nSo the statement is True.",
+      "Concert tickets are leisure spending. They sit with wants, not with food, shelter, or basic medical care.\n\nSo the statement is True.",
       "Weekend cinema and premium streaming are enjoyable extras. Households can cut them when budgets tighten without the same damage as cutting essentials, so they read as wants.\n\nSo the statement is True.",
       "Shelter, food, and basic healthcare are the standard examples of needs for household well-being.\n\nSo the statement is True.",
       "When income cannot cover every line item, sorting needs from wants explains which purchases get priority and which get postponed — that is economising in practice.\n\nSo the statement is True.",
@@ -1443,7 +1443,7 @@
       "Households and entrepreneurs meet in markets: goods and services move to address needs and wants. That interaction is the core picture of economic life in this chapter.\n\nSo the statement is True.",
       "Goods have tangible form; services are intangible activities performed for someone — the standard split.\n\nSo the statement is True.",
       "Limited resources force every actor — household, firm, or government — to economise rather than satisfy every claim at once.\n\nSo the statement is True.",
-      "Retail checkout, household second-hand sales, and barter among neighbours are exchange too. Wholesale firm-to-firm trade is only one channel, not the whole definition.\n\nSo the statement is False.",
+      "Retail checkouts, second-hand sales between neighbours, and barter among classmates are exchange too.\nWholesale deals among firms are only one channel — not the whole of exchange.\n\nSo the statement is False.",
       "Consumers, students, and retirees make scarce-resource decisions constantly. Opening a business is not required to participate in economic life.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
