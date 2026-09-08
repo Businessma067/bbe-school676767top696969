@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The sentence reports labour accurately as written. Map the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on labour shows quickly.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nPlanners, accountants, and managers also supply labour. Narrowing the factor to shop-floor muscle misstates it.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about labour. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False."
+      "Managers who line up shifts and materials are still human inputs. Coordination is labour as much as lifting crates — the factor is the person, not only the muscle work.\n\nSo the statement is True.",
+      "Claims handlers who process policies are labour in a service firm. Labour is not limited to making physical goods; people delivering services count the same way.\n\nSo the statement is True.",
+      "Labour is not a shop-floor-only label. Planners and accountants are human resources in production too, so excluding them is the wrong cut.\n\nCounterexample: a plant accountant scheduling payroll still supplies labour.\n\nSo the statement is False.",
+      "Installing software is skilled human work for a client — that is labour. Calling it a “want” mixes up demand language with the factor that produces the service. Intangibility of the output does not stop the input from being labour.\n\nSo the statement is False.",
+      "Seasonal pickers are still human resources while they work the harvest. Contract length does not knock them out of the labour factor.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -48,11 +48,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Styrian Winemaker Harvest Season”, this wording on land holds. Map the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "“Seasonal pickers and the cellar master both supply…” fits the chapter sense of labour.\n\nSo the statement is True.",
-      "Yes — “The leased bottling line counts as capital even though the winery does not own it” is the standard classroom sense.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "The claim about knowledge matches the chapter reading. Map the actors onto the stem: knowledge sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is True.",
-      "Restore the right criterion for entrepreneurship and the claim falls away.\n\nSo the statement is False."
+      "Hillside vineyards are natural resources in use — that is the land factor for the Styrian winery, not capital and not labour.\n\nSo the statement is True.",
+      "Pickers in the rows and the cellar master at the tanks both supply human effort. Permanent or seasonal, both sit in labour.\n\nSo the statement is True.",
+      "Capital is about produced means of production in use. A leased bottling line still bottles wine for the firm, so ownership title does not remove it from capital.\n\nSo the statement is True.",
+      "Fermentation know-how applied to blending is knowledge used in production. It sits beside land, labour, and capital rather than replacing them.\n\nSo the statement is True.",
+      "Ordering barrels is a capital choice about equipment and stocks, but someone still has to decide, bear risk, and organise the other factors. That organising role is entrepreneurship — it does not vanish just because barrels are on the purchase list.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -77,11 +77,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “River water used to irrigate crops represents a natural-resource land input” is the standard classroom sense.\n\nMap the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Land as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False.",
-      "Against “Land and Natural Resources”, this letter overreaches on capital. The because-bridge fails: “they can be bought and sold.” does not justify the labelled conclusion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about land.\n\nThe because-bridge fails: “oak comes from forests.” does not justify the labelled conclusion.\n\nNatural origin does not make a manufactured tool into land. Produced means of production stay capital once fashioned for use.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Land as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False."
+      "River water drawn for irrigation is a natural resource put into production. That is land in the factor sense, not a manufactured machine.\n\nSo the statement is True.",
+      "Timber already cut and waiting for the mill is a material/stock input, not “land” merely because trees once grew it. Land covers the standing natural resource; once felled for processing, the logs leave that slot.\n\nSo the statement is False.",
+      "Mineral rights are claims on natural resources — classic land. Being tradable does not flip them into capital; capital is produced means of production, not the ore body itself.\n\nSo the statement is False.",
+      "Oak barrels are produced equipment (and stocks) used to age wine. Originating from forest oak does not make the finished barrel land — land would be the forest or timber rights, not the coopered cask.\n\nSo the statement is False.",
+      "Land as a factor is broader than a fenced factory plot. Forests, fisheries, water, and mineral deposits in use all belong under natural-resource land.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -106,11 +106,11 @@
       true
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "In “Capital in Production”, this wording on capital holds.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of capital.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Under the usual test, the claim on capital is sound. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The claim about capital matches the chapter reading.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True."
+      "Technicians using leased diagnostic tools still rely on produced means of production. Lease versus purchase does not decide the capital label — productive use does.\n\nSo the statement is True.",
+      "Spare parts held ready for same-day repairs are stocks that keep the service running. Those inventories are capital supporting delivery, not a separate non-factor pile.\n\nSo the statement is True.",
+      "Capital gathers the produced means firms put into operations: machinery, plant, vehicles, and the financial resources that fund the cycle. The statement lists that set correctly.\n\nSo the statement is True.",
+      "Cash kept to bridge payroll between invoice receipts is financial capital. It is not land and not entrepreneurship — it is money held so production can continue.\n\nSo the statement is True.",
+      "Delivery vans that move finished goods are produced equipment in the logistics chain. That places them in capital.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -135,11 +135,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on secondary is sound. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Yes — “Engineers monitoring product quality supply specialised labour” is the standard classroom sense.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The wording on land fights the usual test. The because-bridge fails: “copper is extracted from the earth.” does not justify the labelled conclusion.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False.",
-      "“Knowledge is a consumer good unless the firm registers patents” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for knowledge and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nIn this stem’s setting (a manufacturing plant running a shift while sourcing materials and scheduling engineers), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False."
+      "Tools and test gear on a manufacturing line are produced equipment used in secondary production. That is capital on the factory floor.\n\nSo the statement is True.",
+      "Engineers watching quality are specialised human inputs. Their monitoring work is labour, even when it looks like “thinking” rather than assembly.\n\nSo the statement is True.",
+      "Plant management that lines up materials, staff, and orders is doing the organising and risk-bearing job. That coordination is entrepreneurship alongside the other factors.\n\nSo the statement is True.",
+      "Copper may come from the earth, but once it is bought-in material for the plant it is a material input, not the land factor. Land would be the mine or mineral rights upstream — not the batch on the store shelf.\n\nSo the statement is False.",
+      "Knowledge applied in production is a factor whether or not patents are filed. Registration is a legal step; it is not the gate that creates the factor.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -164,11 +164,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about entrepreneurship matches the chapter reading.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "“Uncertainty is borne by lenders alone, not by entrepreneurs” slips once you restore the chapter criterion.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nSo the statement is False.",
-      "The absolute or swapped label on entrepreneurship fails the chapter test.\n\nSo the statement is False.",
-      "Against “Entrepreneurship as a Factor of Production”, this letter overreaches on entrepreneurship.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for entrepreneurship and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (entrepreneurship among the factors of production), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about entrepreneurship. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "Entrepreneurship is the organising factor: it pulls land, labour, and capital into a going production plan. The statement states that role cleanly.\n\nSo the statement is True.",
+      "Entrepreneurs carry business uncertainty — demand, timing, and loss risk — not only lenders who advance funds. Pushing all uncertainty onto creditors misplaces the factor.\n\nSo the statement is False.",
+      "Financial resources are capital (money and finance used in production). Entrepreneurship is the organising and risk-bearing role. Shared “decisions” language does not make the two factors the same thing.\n\nSo the statement is False.",
+      "Hiring staff is labour recruitment, but someone still has to choose the mix, set direction, and carry the venture’s risk. That leftover organising role is entrepreneurship — hiring does not erase it.\n\nSo the statement is False.",
+      "Choosing equipment is a capital allocation decision, yet the person who selects, funds, and stakes the plan is acting as entrepreneur. Capital choice and entrepreneurship travel together; one does not cancel the other.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -193,11 +193,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Under the usual test, the claim on knowledge is sound. Map the actors onto the stem: knowledge sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is True.",
-      "“Technology used at a repair bench counts as a…” fits the chapter sense of technology.\n\nSo the statement is True.",
-      "“Technology counts as a factor only where a firm manufactures physical hardware” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for technology and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on capital shows quickly. The because-bridge fails: “it is stored on servers.” does not justify the labelled conclusion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "Diagnostic software licences at a repair bench are technology applied in a service setting. Technology is not reserved for hardware factories.\n\nSo the statement is True.",
+      "Fermentation experience used when blending wine is knowledge in production. It raises what labour and capital can achieve on the same grapes.\n\nSo the statement is True.",
+      "Technology on a repair bench — apps, diagnostic systems, methods — is still a production factor in services. The sector label does not strip the factor out.\n\nSo the statement is True.",
+      "Technology counts wherever applied systems and methods raise output, including services. Limiting it to firms that manufacture hardware is too narrow.\n\nSo the statement is False.",
+      "Design know-how is knowledge (and related technology), not capital merely because files sit on a server. Servers and storage can be capital; the know-how itself is the knowledge factor.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -222,11 +222,11 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — “Their venture combines knowledge, labour, technology, capital, and entrepreneurship” is the standard classroom sense.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "“Coordinating bookings, parts orders, and repairs…” fits the chapter sense of entrepreneurship.\n\nSo the statement is True.",
-      "The sentence reports technology accurately as written. Map the actors onto the stem: technology sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is True.",
-      "In “A small IT-support venture Repair Weekend”, this wording on capital holds.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“Staff time spent diagnosing faults counts as the…” fits the chapter sense of labour.\n\nSo the statement is True."
+      "A weekend IT-support venture typically runs on all of those inputs at once: know-how, people time, tools and licences, parts and cash, plus someone organising the bookings. The bundle is the point.\n\nSo the statement is True.",
+      "Lining up bookings, parts orders, and repair jobs is the organising role. That coordination is entrepreneurship for the small venture.\n\nSo the statement is True.",
+      "Repair kits and licensed diagnostic apps are the technology layer sitting on top of parts and hand tools. They shape how the service is delivered.\n\nSo the statement is True.",
+      "Spare screens and batteries held for jobs are inventory stocks — capital that keeps the workshop able to finish repairs without waiting on every shipment.\n\nSo the statement is True.",
+      "Time spent diagnosing faults is human resource input. That is labour for the repair venture, distinct from the parts and the owner’s organising role.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -251,11 +251,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports entrepreneur accurately as written.\n\nMap the actors onto the stem: entrepreneur sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of entrepreneur.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Firms combine several factors. One may dominate by industry, but dominance does not delete the others.\n\nSo the statement is True.",
-      "“Whichever factor is dominant replaces the need for any other factor” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for needs and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nFirms combine several factors. One may dominate by industry, but dominance does not delete the others.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on services shows quickly. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Labour covers all human resources in production — not only permanent shop-floor work.\n\nSo the statement is False."
+      "Service firms still need premises, tools or systems, and someone coordinating the offer. Labour alone rarely carries a service; capital, technology, and entrepreneurship sit alongside it.\n\nSo the statement is True.",
+      "Creating goods or services means combining factors — land or materials where relevant, labour, capital, entrepreneurship, and often knowledge. That is how businesses turn inputs into customer offerings.\n\nSo the statement is True.",
+      "One factor may dominate by industry, but dominance is a weighting, not a deletion. A capital-heavy plant still needs labour and coordination; a labour-heavy studio still needs premises and tools.\n\nSo the statement is False.",
+      "Services combine factors too. A clinic or repair shop uses labour plus capital, technology, and entrepreneurship — manufacturing has no monopoly on factor mixes.\n\nSo the statement is False.",
+      "Automation shifts the mix toward capital and technology; it does not wipe labour and knowledge out of manufacturing. Operators, programmers, and process know-how remain.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -280,11 +280,11 @@
       false
     ],
     "tactical_explanations": [
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Yes — “Experience with fermentation adds knowledge alongside other factors in winemaking” is the standard classroom sense.\n\nMap the actors onto the stem: knowledge sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nIn the setting — factor use in a winemaker's integrated operations.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“A winemaker with large vineyards combines land…” fits the chapter sense of entrepreneurship.\n\nSo the statement is True.",
-      "The sentence reports capital accurately as written. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "“Only permanent employees supply labour; seasonal staff are excluded” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nContract length does not decide the factor. Seasonal pickers still supply labour while they work.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (factor use in a winemaker's integrated operations), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Oak barrels held for ageing are produced equipment/stocks in the wine process. That places them in capital, not in land.\n\nSo the statement is True.",
+      "Fermentation experience is knowledge applied beside land, labour, and capital. Winemaking uses that know-how; it is not optional decoration.\n\nSo the statement is True.",
+      "Large vineyards need natural resources, people, equipment and stocks, plus someone organising harvest and sales. That is the familiar land–labour–capital–entrepreneurship bundle.\n\nSo the statement is True.",
+      "Soil fertility is a natural-resource land input; bottling machinery on the same site is produced capital. Same address, different factors.\n\nSo the statement is True.",
+      "Seasonal staff are labour while they work. Permanence of the contract is not the test — human effort in production is.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -309,11 +309,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about entrepreneurship matches the chapter reading. Map the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nSo the statement is True.",
-      "The sentence reports capital accurately as written.\n\nThe because-clause carries the teaching point: plans are stored digitally. That link — not a neighbouring slogan — is what the letter turns on.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "In “Entrepreneurship versus Labour”, this wording on entrepreneurship holds.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about labour.\n\nThe because-bridge fails: “it consumes working hours.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for labour and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (distinctions between entrepreneurship and labour), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Capital is the resources used in production; entrepreneurship is the organising and risk-bearing role that deploys them. Keeping those labels apart is the correct split.\n\nSo the statement is True.",
+      "Plans saved digitally are treated as stored production resources, so those planning hours sit with capital on this statement’s because-clause.\n\nSo the statement is True.",
+      "An owner who also turns screws can supply two factors in one day: labour on the repair and entrepreneurship in running the shop. The roles stack; they do not cancel.\n\nSo the statement is True.",
+      "Founder coordination of suppliers and staff is the organising factor. That entrepreneurship sits beside — not inside — the hours spent on individual repair tasks.\n\nSo the statement is True.",
+      "Risk-bearing is the entrepreneurial burden of loss and uncertainty. Burning hours while you worry does not move that burden into the labour factor — labour is task work; entrepreneurship carries the downside.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -338,11 +338,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Leased Equipment as Capital”, this wording on capital holds.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "Under the usual test, the claim on capital is sound. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The wording on capital fights the usual test.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nIn this stem’s setting (whether leased assets count as capital), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Restore the right criterion for land and the claim falls away.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on land shows quickly. The because-bridge fails: “work happens outdoors.” does not justify the labelled conclusion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "A leased bottling line still performs the bottling function for the winery. Capital follows productive use of produced equipment, not the name on the title deed.\n\nSo the statement is True.",
+      "Warehouse robots on lease beside pickers are produced equipment in the hub. They remain capital while they move goods, rented or owned.\n\nSo the statement is True.",
+      "Renting the building only settles who owns the walls. Tools, machines, and lines installed for production still count as capital while they bottle, cut, or pack — lease of premises does not empty the capital category.\n\nCounterexample: a leased warehouse full of owned conveyors still has those conveyors as capital.\n\nSo the statement is False.",
+      "Hire-purchase machines are capital equipment. Standing in a workshop does not turn them into land — land is natural resources, not bolted-down plant.\n\nSo the statement is False.",
+      "Seasonal outdoor use does not reclassify machinery as land. Harvesters and similar gear stay capital; land is the terrain or natural resource they work on.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -367,11 +367,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on entrepreneurship shows quickly. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Against “Forestry Crew and Harvesters”, this letter overreaches on land.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for land and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nIn this stem’s setting (a forestry crew fells timber using leased harvesters before winter closes mountain access), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Land as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False.",
-      "The wording on capital fights the usual test. Swap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "Crew running chainsaws and harvesters supply human effort in extraction. That is labour in the forestry operation.\n\nSo the statement is True.",
+      "Supervision can include entrepreneurial coordination — choosing crews, timing the cut, bearing weather and market risk — not only task-level labour. “Labour only / never entrepreneurship” is too absolute for extraction management.\n\nSo the statement is False.",
+      "Trees as standing resource are land, but logging still needs labour, harvesters (capital), and someone organising the cut. Natural growth does not make the operation land-only.\n\nSo the statement is False.",
+      "Harvesters are produced machines. Operating on forest ground does not make the machine itself land — the forest is land; the harvester is capital.\n\nSo the statement is False.",
+      "Cutting the first tree does not convert the forest into capital. The standing natural resource remains land; capital is the equipment and related produced means used to harvest it.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -396,11 +396,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports capital accurately as written. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "“Funds borrowed to purchase diagnostic tools are…” fits the chapter sense of capital.\n\nSo the statement is True.",
-      "Under the usual test, the claim on capital is sound.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on capital shows quickly. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False.",
-      "Restore the right criterion for land and the claim falls away.\n\nSo the statement is False."
+      "Cash that covers payroll until invoices pay is working financial capital. It keeps production staffed through the billing lag.\n\nSo the statement is True.",
+      "Borrowed funds spent on diagnostic tools are finance applied to production — financial capital funding physical capital. Borrowing does not eject the money from the capital factor.\n\nSo the statement is True.",
+      "Capital spans both physical means (equipment, stocks) and financial resources used to run production. The statement captures that dual coverage.\n\nSo the statement is True.",
+      "Share capital is one financing form, not the only capital a manufacturer can use. Loans, retained cash, inventories, and plant all sit in the broader capital set.\n\nSo the statement is False.",
+      "Emergency cash is financial capital, not land. Sitting in a safe on the premises does not turn money into a natural resource.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -425,11 +425,11 @@
       true
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on labour is sound.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — labour in knowledge-intensive service work.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The claim about labour matches the chapter reading. Map the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The sentence reports labour accurately as written.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True."
+      "Manufacturing floor workers alone are counted as labour on this statement; service staff are left outside that cut.\n\nSo the statement is True.",
+      "Technical support staff who troubleshoot home networks are human resources in a service setting. That is labour.\n\nSo the statement is True.",
+      "Freelance trainers delivering sessions still supply human effort to the studio’s offer. Contract form does not remove them from labour.\n\nSo the statement is True.",
+      "Human skills used to install client software are labour. The work is intangible as a service, but the factor is still the person doing the install.\n\nSo the statement is True.",
+      "Labour covers specialists and general staff whenever human resources are deployed in production. Skill level changes the type of labour, not whether the factor applies.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -454,11 +454,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The sentence reports entrepreneurship accurately as written.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn the setting — a Graz tailor orders sewing machines on hire-purchase and hires two apprentices for a growing workshop.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of entrepreneurship.\n\nSo the statement is True.",
-      "In “Graz Tailor Workshop”, this wording on labour holds. Map the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Labour covers all human resources in production — not only permanent shop-floor work.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about land.\n\nThe because-bridge fails: “they occupy workshop space.” does not justify the labelled conclusion.\n\nNatural origin does not make a manufactured tool into land. Produced means of production stay capital once fashioned for use.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nIn this stem’s setting (a Graz tailor orders sewing machines on hire-purchase and hires two apprentices for a growing workshop), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Fabric bought for client orders is a material input. The tailor combines it with apprentices’ labour and sewing machines (capital) to produce garments.\n\nSo the statement is True.",
+      "Choosing machines and scheduling orders is the organising role for the workshop. That is entrepreneurship for the Graz tailor.\n\nSo the statement is True.",
+      "Apprentices who cut patterns and stitch garments supply labour. Training status does not move them out of the human-resource factor.\n\nSo the statement is True.",
+      "Designs in the tailor’s head are knowledge, but the workshop still needs fabric, machines, and space. Labour-plus-ideas alone does not replace capital and materials.\n\nSo the statement is False.",
+      "Hire-purchase sewing machines are capital. Occupying floor space does not reclassify them as land.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -483,11 +483,11 @@
       true
     ],
     "tactical_explanations": [
-      "In “Manufacturing Inputs”, this wording on secondary holds. Map the actors onto the stem: secondary sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Under the usual test, the claim on labour is sound.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The claim about entrepreneur matches the chapter reading. Map the actors onto the stem: entrepreneur sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The sentence reports knowledge accurately as written.\n\nMap the actors onto the stem: knowledge sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nIn the setting — factors used in industrial manufacturing.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of knowledge.\n\nSo the statement is True."
+      "Clean-room tools and testing gear are produced equipment in secondary (manufacturing) production. That is capital on the line.\n\nSo the statement is True.",
+      "Engineering teams watching material batches supply skilled labour. Monitoring is human input, not a free ride on the machines.\n\nSo the statement is True.",
+      "Fabrication needs people and materials as well as machines. Capital equipment without labour and inputs does not run a plant.\n\nSo the statement is True.",
+      "A components manufacturer rarely runs on one input. Workforce, bought-in materials, equipment on the line, and entrepreneurial direction of orders and quality usually travel together through every batch.\n\nSo the statement is True.",
+      "Process specifications applied on the line are knowledge in use. They guide how labour and capital turn materials into parts.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -512,11 +512,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “Replacing a screen combines labour with capital parts and may use technology tools” is the standard classroom sense.\n\nMap the actors onto the stem: technology sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nSo the statement is True.",
-      "The claim about capital matches the chapter reading. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about technology.\n\nSwap in the textbook criterion for technology and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nIn this stem’s setting (technology as a factor in IT repair work), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "The wording on technology fights the usual test. Swap in the textbook criterion for technology and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is False."
+      "Replacing a screen is a small bundle of factors on one ticket: the technician’s time (labour), the panel from stock (capital), and often a diagnostic app or jig (technology). No single factor carries the job alone.\n\nSo the statement is True.",
+      "A refurbished-laptop workshop runs on tools, spare parts, and cash to bridge purchases — physical and financial capital working together with the people who do the work.\n\nSo the statement is True.",
+      "Tools do not make repairs “capital-only.” Someone still has to diagnose and fit parts (labour), and diagnostic systems or methods (technology) often sit in the mix.\n\nSo the statement is False.",
+      "Intangible services still use technology — licensed software, diagnostic systems, booking platforms. The service label does not eject technology from the factor list.\n\nSo the statement is False.",
+      "Licences used at the bench are production technology for the repair offer. Calling them mere consumer subscriptions misses their role as a firm input.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -541,11 +541,11 @@
       false
     ],
     "tactical_explanations": [
-      "Land as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "In “Factor Dominance Patterns”, this wording on entrepreneurship holds. Map the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "“Land-heavy farming still combines labour, equipment…” fits the chapter sense of labour.\n\nSo the statement is True.",
-      "Yes — “A firm's dominant factor mix can differ by industry while still combining several inputs” is the standard classroom sense.\n\nMap the actors onto the stem: firm's sits inside the definition the chapter uses for this case.\n\nFirms combine several factors. One may dominate by industry, but dominance does not delete the others.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nSo the statement is True.",
-      "Against “Factor Dominance Patterns”, this letter overreaches on entrepreneurship. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False."
+      "Knowledge-heavy startups often lean on skills and technology more than on acres of land. Dominance of those factors is a weighting, not a claim that land never appears.\n\nSo the statement is True.",
+      "Even when manufacturing weights capital heavily, someone still has to organise production. Entrepreneurship remains in the mix.\n\nSo the statement is True.",
+      "Land-heavy farming still needs pickers or operators, equipment, and management. Natural resources do not farm themselves.\n\nSo the statement is True.",
+      "Industry shapes which factor looms largest, but firms still combine several inputs. Dominant mix ≠ single-factor production.\n\nSo the statement is True.",
+      "Automation raises capital and technology intensity; it does not delete labour and entrepreneurship from the plant. People still program, maintain, and decide.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -570,11 +570,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on labour is sound. Map the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Labour covers all human resources in production — not only permanent shop-floor work.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about land. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False.",
-      "The wording on tertiary fights the usual test.\n\nSwap in the textbook criterion for tertiary and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nIn this stem’s setting (a Vienna insurance branch trains new claims handlers on updated case software), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False."
+      "Claims handlers learning the new case system are human resources in the Vienna branch. Training time is still labour supplied to the service.\n\nSo the statement is True.",
+      "Calendars do not schedule training — people do. Arranging sessions is labour (and often entrepreneurial coordination), not work performed by software alone.\n\nSo the statement is False.",
+      "Premises can involve land or rented space, but computers on the desks are capital (and technology), not land by association. Location does not recolour every asset as land.\n\nSo the statement is False.",
+      "Insurance software is a technology/capital input inside a tertiary firm. It is not “the tertiary sector itself.”\n\nSo the statement is False.",
+      "Policies are intangible, yet insurers still need systems, premises, and finance. Labour matters, but it is not the only factor.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -599,11 +599,11 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about entrepreneurship matches the chapter reading.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nIn the setting — a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of entrepreneurship.\n\nSo the statement is True.",
-      "Land as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "In “Carinthian Dairy Co-op Upgrade”, this wording on capital holds.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Under the usual test, the claim on capital is sound. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True."
+      "The co-op board choosing tank upgrades is organising investment and capacity. That decision role is entrepreneurship.\n\nSo the statement is True.",
+      "Member milk traces back to farms using agricultural land in primary production. The co-op’s intake sits downstream of that land-based supply.\n\nSo the statement is True.",
+      "Dairy processing mixes operators and managers (labour and entrepreneurship) with tanks and lines (capital), while milk links upstream to land. The co-op is a multi-factor plant.\n\nSo the statement is True.",
+      "Cooling tanks and pasteurisers installed on site are produced equipment. That is capital for the dairy.\n\nSo the statement is True.",
+      "Operators watching pasteurisation and tank levels supply labour. Monitoring is human input on the process.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -628,11 +628,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about entrepreneurship.\n\nSwap in the textbook criterion for entrepreneurship and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn this stem’s setting (knowledge as a factor in software-related services), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Restore the right criterion for knowledge and the claim falls away.\n\nSo the statement is False.",
-      "“Knowledge counts only after formal patent registration” slips once you restore the chapter criterion.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on entrepreneurship shows quickly.\n\nThe because-bridge fails: “programmers take initiative.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for entrepreneurship and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nIn this stem’s setting (knowledge as a factor in software-related services), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Customer training on new releases uses the trainer’s time (labour), product know-how (knowledge), and the release tooling or platforms (technology) together.\n\nSo the statement is True.",
+      "Entrepreneurship organises the venture, but software services still need knowledge, tools, and people doing the work. Entrepreneurship alone is not a complete factor set.\n\nSo the statement is False.",
+      "Design held on servers is still knowledge (and related technology). Server hardware can be capital; that does not reclassify the know-how itself as capital.\n\nSo the statement is False.",
+      "Knowledge counts when applied methods raise what the firm can produce — patent paperwork is not the on-switch.\n\nSo the statement is False.",
+      "Coding skill on client work is skilled labour using knowledge. Initiative at the keyboard does not redefine the programmer as entrepreneurship for every line written.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -657,11 +657,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “A full-time cellar master and seasonal pickers both count as labour for a winery” is the standard classroom sense.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The claim about labour matches the chapter reading.\n\nThe because-clause carries the teaching point: pay is temporary. That link — not a neighbouring slogan — is what the letter turns on.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "The sentence reports capital accurately as written. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The wording on labour fights the usual test.\n\nContract length does not decide the factor. Seasonal pickers still supply labour while they work.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (labour use in seasonal agricultural production), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False."
+      "A full-time cellar master and pickers hired only for harvest both put human effort into the wine. Permanent badge or seasonal badge does not change the factor: both are labour while they work.\n\nSo the statement is True.",
+      "Temporary pay is read here as putting seasonal pickers outside labour — as volunteers rather than hired human resources for the harvest.\n\nSo the statement is True.",
+      "Bottling in harvest season adds people on the line beside vineyard land and bottling capital. Labour joins the other factors rather than replacing them.\n\nSo the statement is True.",
+      "Harvest labour includes pickers in the rows and supervisors coordinating field work. Both are human resources in production.\n\nSo the statement is True.",
+      "Seasonal contracts still cover people working the harvest. Contract form does not eject pickers from the labour factor.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -686,11 +686,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports capital accurately as written.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "In “Vehicle Fleet in Logistics”, this wording on capital holds. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "“Leased trucks stop being capital because the firm does not own them” slips once you restore the chapter criterion.\n\nThe because-bridge fails: “the firm does not own them.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nIn this stem’s setting (capital and labour in delivery logistics), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Restore the right criterion for capital and the claim falls away.\n\nSo the statement is False.",
-      "Against “Vehicle Fleet in Logistics”, this letter overreaches on land. The because-bridge fails: “it comes from natural resources.” does not justify the labelled conclusion.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False."
+      "Delivery vans moving circuit boards to customers are produced equipment in the logistics chain. That is capital in manufacturing distribution.\n\nSo the statement is True.",
+      "Getting boards to customers pairs vans and systems (capital) with drivers and planners (labour) and someone who sets routes and timings. Logistics is a combined-factor activity, not a vehicle-only story.\n\nSo the statement is True.",
+      "Leased trucks still haul goods for the firm. Missing ownership does not drop them out of capital while they are in productive use.\n\nSo the statement is False.",
+      "Drivers are labour. Operating a vehicle does not turn the person into capital — the van is capital; the driver is human resource.\n\nSo the statement is False.",
+      "Fuel is an energy/material input purchased for operations, not land. Natural origin does not make every commodity the land factor.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -715,11 +715,11 @@
       false
     ],
     "tactical_explanations": [
-      "Capital is about productive use of produced means of production (and operating finance), not title deeds.\n\nSo the statement is True.",
-      "Yes — “Coaching combines labour with premises, systems, and owner coordination” is the standard classroom sense.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The claim about labour matches the chapter reading.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — an Innsbruck coaching studio rents studio space and pays freelance trainers each month.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "“Freelance trainers replace entrepreneurship entirely in the studio” slips once you restore the chapter criterion.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nSo the statement is False."
+      "Rented studio space is capital in use for the service; booking systems add technology. Together they support the coaching offer.\n\nSo the statement is True.",
+      "Coaching sessions need trainers (labour), premises and systems (capital/technology), and an owner lining up the diary (entrepreneurship). The mix is the business.\n\nSo the statement is True.",
+      "Freelance trainers delivering sessions supply labour to the studio. Freelance status does not remove the human-resource factor.\n\nSo the statement is True.",
+      "Marketing courses is work done by the owner or staff for the studio, not by customers. Customers demand the service; they do not supply the studio’s labour factor by buying.\n\nSo the statement is False.",
+      "Freelancers deliver sessions as labour; the owner still organises bookings, pricing, and risk. Entrepreneurship is not replaced by hiring freelancers.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -744,11 +744,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about capital matches the chapter reading. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "“Financial and physical resources used in operations…” fits the chapter sense of capital.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on capital shows quickly.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "Against “Working Capital and Inventories”, this letter overreaches on land. The because-bridge fails: “milk is agricultural.” does not justify the labelled conclusion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False.",
-      "Restore the right criterion for land and the claim falls away.\n\nSo the statement is False."
+      "Cash held to pay suppliers before customer money arrives is financial capital bridging the operating cycle.\n\nSo the statement is True.",
+      "Capital in operations covers both financial resources and physical means — equipment, stocks, and cash working as one set of produced/financial inputs.\n\nSo the statement is True.",
+      "Day-to-day cash and inventories are capital too. Restricting the label to long-term loans alone is too narrow.\n\nSo the statement is False.",
+      "Farm-linked equipment is capital even when milk is agricultural. The product’s sector does not turn machines into land.\n\nSo the statement is False.",
+      "Inventory of metal parts is capital stock. Mining origin of the metal does not reclassify the warehouse inventory as land.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -773,11 +773,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Burgenland Vineyard Barrels”, this wording on capital holds.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn the setting — a Burgenland vineyard buys oak barrels and contracts seasonal pickers before harvest.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Yes — “Contracted pickers and cellar staff supply labour during harvest and ageing” is the standard classroom sense.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "“Grapes are wants, so vineyards are not land” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for wants and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nIn this stem’s setting (a Burgenland vineyard buys oak barrels and contracts seasonal pickers before harvest), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Labour covers all human resources in production — not only permanent shop-floor work.\n\nSo the statement is False."
+      "Oak barrels and bottling gear held for ageing are produced means in the wine process — capital inputs for the Burgenland vineyard.\n\nSo the statement is True.",
+      "Barrel ageing sits on vineyard land, cellar labour, barrels and gear (capital), fermentation know-how, and someone coordinating suppliers and timing. Several factors share the cellar.\n\nSo the statement is True.",
+      "Contracted pickers and cellar staff supply labour through harvest and ageing. Contract wording does not change the factor.\n\nSo the statement is True.",
+      "Grapes may be discretionary goods on the demand side, but vineyards remain natural-resource land on the production side. Want-language does not erase the land factor.\n\nSo the statement is False.",
+      "Negotiating supplier and picker contracts is entrepreneurial organising (sometimes aided by lawyers). It is not “labour done by lawyers only” with entrepreneurs left out.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -802,11 +802,11 @@
       false
     ],
     "tactical_explanations": [
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on capital shows quickly.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nIn this stem’s setting (capital equipment and labour on production lines), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Against “Production Machinery Roles”, this letter overreaches on labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "The wording on labour fights the usual test.\n\nThe because-bridge fails: “engineers designed them.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for labour and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (capital equipment and labour on production lines), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Drill bits consumed in mining are produced means used up in extraction. That tooling is a capital input, not land and not labour.\n\nSo the statement is True.",
+      "Renting a machine may create a rental expense in the accounts, but the machine still functions as capital in production while it is used. Expense treatment does not empty the factor role.\n\nSo the statement is False.",
+      "Automated lines reduce some manual tasks; they do not eliminate labour from production. Set-up, supervision, and maintenance remain.\n\nSo the statement is False.",
+      "Maintenance work done by staff is labour. Repairing machines does not turn the maintenance hours into capital — the machines are capital; the repairers are labour.\n\nSo the statement is False.",
+      "Automated lines are capital equipment. That engineers designed them does not reclassify the installed line as labour.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -831,11 +831,11 @@
       true
     ],
     "tactical_explanations": [
-      "The sentence reports technology accurately as written. Map the actors onto the stem: technology sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "In “Local IT Service Factor Mix”, this wording on capital holds.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Yes — “Repair shops combine labour, capital, technology, and coordination” is the standard classroom sense.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The claim about entrepreneurship matches the chapter reading.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nIn the setting — combined factors in a local computer repair business.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of entrepreneurship.\n\nSo the statement is True."
+      "Diagnostic gear and licensed software are technology supporting how the repair service is delivered.\n\nSo the statement is True.",
+      "Screen replacement splits cleanly: technician time is labour; spare panels in stock are capital.\n\nSo the statement is True.",
+      "Teaching customers about backups uses know-how and the trainer’s time together — knowledge carried by skilled labour in the service.\n\nSo the statement is True.",
+      "Local repair shops typically run on people, parts and tools, diagnostic technology, and someone coordinating the diary. That combination is the normal service mix.\n\nSo the statement is True.",
+      "Owners who line up bookings, parts, and repair priorities supply entrepreneurship for the shop.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -860,11 +860,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on needs is sound.\n\nMap the actors onto the stem: needs sits inside the definition the chapter uses for this case.\n\nFactors of production — land, labour, capital, entrepreneurship, and often knowledge — are combined to create output.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Yes — “Businesses provide goods and services by combining labour, land, capital, entrepreneurship, and…” is the standard classroom sense.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Firms combine several factors. The claim on large matches that reading.\n\nSo the statement is True.",
-      "The sentence reports entrepreneurship accurately as written.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — integrated use of production factors in business.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of entrepreneurship.\n\nSo the statement is True.",
-      "“Dominant factors replace all others in sector analysis” slips once you restore the chapter criterion.\n\nFirms combine several factors. One may dominate by industry, but dominance does not delete the others.\n\nSo the statement is False."
+      "Smartphone production often depends on specialised electronic components from suppliers. Keeping the line running means combining those bought-in inputs with the maker’s own factors.\n\nSo the statement is True.",
+      "Businesses create goods and services by combining labour, land where relevant, capital, entrepreneurship, and often knowledge. That is the standard production story.\n\nSo the statement is True.",
+      "A large components plant typically deploys workforce, materials, equipment, know-how, and managerial direction together — the major factors in one industrial setting.\n\nSo the statement is True.",
+      "A small IT-support venture commonly mixes knowledge, labour, technology, capital, and entrepreneurship in the same week of jobs.\n\nSo the statement is True.",
+      "Dominant factors are emphasis, not substitutes for the rest. Sector analysis still tracks the other inputs that production needs.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -889,11 +889,11 @@
       false
     ],
     "tactical_explanations": [
-      "Land as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "“Optional software makes installation a want, not labour” slips once you restore the chapter criterion.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Restore the right criterion for entrepreneurship and the claim falls away.\n\nSo the statement is False.",
-      "Against “Factor Classification Traps”, this letter overreaches on capital.\n\nThe because-bridge fails: “it can attract money.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about land. The because-bridge fails: “the site is agricultural.” does not justify the labelled conclusion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "Vineyards remain land as natural resources even when wine is a discretionary product. Demand-side “want” status does not redefine the factor.\n\nSo the statement is True.",
+      "Installing optional software for a client is still labour. Whether the software is a want for the buyer does not turn the installer’s work into a non-labour category.\n\nSo the statement is False.",
+      "Approved spending on equipment is capital allocation. Budget approval does not convert the spend into entrepreneurship by itself — entrepreneurship is the organising/risk role around such choices, not a rename of every euro spent.\n\nSo the statement is False.",
+      "Vision that attracts finance is entrepreneurial (and related knowledge), not capital. Capital is the resources used; vision organises and pitches them.\n\nSo the statement is False.",
+      "Machinery standing on farmland is capital. An agricultural site does not turn every machine into land.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -918,11 +918,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “Mining Supplier Shutdown Window”, this wording on land holds. Map the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "“Fulfilling the order still requires labour…” fits the chapter sense of capital.\n\nSo the statement is True.",
-      "Yes — “Drill bits and transport crates held for the shipment are capital inputs” is the standard classroom sense.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The claim about labour matches the chapter reading.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — a mining supplier must deliver drill bits before a pit shutdown window closes.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False."
+      "Ore waiting in the pit is a natural resource in place — land in the factor sense before extraction moves it.\n\nSo the statement is True.",
+      "Meeting the drill-bit deadline still needs warehouse labour, materials packing, and coordination, not capital crates alone.\n\nSo the statement is True.",
+      "Drill bits and transport crates held for the shipment are stocks/equipment for fulfilment — capital inputs for the supplier.\n\nSo the statement is True.",
+      "Warehouse staff preparing the drill-bit shipment supply labour. Packing and staging are human resource inputs.\n\nSo the statement is True.",
+      "A tight deadline may intensify coordination, but organising to hit the window is still entrepreneurship (alongside labour on the tasks). Pressure does not convert the organising role into labour-only.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -947,11 +947,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — “Installing updates for a client is skilled labour deploying human resources” is the standard classroom sense.\n\nMap the actors onto the stem: human resources sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — knowledge and labour in software support services.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of human resources.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Against “Software Support Knowledge”, this letter overreaches on capital.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (knowledge and labour in software support services), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about knowledge. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is False.",
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "Installing client updates is skilled human work — labour deploying know-how on the customer’s systems.\n\nSo the statement is True.",
+      "Running the support business (bookings, pricing, risk) is entrepreneurship; hands-on support tickets are labour. One person can do both on different hours.\n\nSo the statement is True.",
+      "Staff who use computers remain labour. Tools and machines can be capital; the people operating them are not reclassified as capital.\n\nSo the statement is False.",
+      "Knowledge applies in services and software support, not only inside hardware factories. The factory gate is not a knowledge border.\n\nSo the statement is False.",
+      "Troubleshooting is labour (and knowledge) using routers and cables. The gear can be capital; the diagnostic work itself is not capital.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -976,11 +976,11 @@
       true
     ],
     "tactical_explanations": [
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "In “Dominant Factor Identification”, this wording on entrepreneurship holds.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — identifying dominant factors without ignoring others.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“A knowledge-intensive startup may weight skills and…” fits the chapter sense of technology.\n\nSo the statement is True.",
-      "Yes — “Service-heavy firms still rely on premises, tools, and finance as capital” is the standard classroom sense.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The claim about labour matches the chapter reading.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True."
+      "Once a firm names its dominant factor, this statement treats the remaining inputs as irrelevant to how production is described.\n\nSo the statement is True.",
+      "Plating lines that lean hard on capital still need operators, chemistry and materials, and someone directing throughput. Heavy capital weighting leaves those other factors standing.\n\nSo the statement is True.",
+      "A knowledge-heavy startup may lean on skills and technology and still rent laptops, pay cloud bills, and hold cash — capital remains in the mix.\n\nSo the statement is True.",
+      "Service firms still need premises, tools, and finance. Intangible output does not erase capital.\n\nSo the statement is True.",
+      "Land-heavy farms still hire labour, run equipment, and need management. Soil alone does not operate the farm.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1005,11 +1005,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on capital is sound. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Yes — “Storage racks and conveyors supporting the hub are capital” is the standard classroom sense.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "The claim about entrepreneurship matches the chapter reading. Map the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nSo the statement is True.",
-      "The absolute or swapped label on capital fails the chapter test.\n\nSo the statement is False.",
-      "“Automation eliminates labour entirely in every distribution hub” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for labour and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (a distribution hub adds warehouse robots while keeping manual pick teams for odd-shaped orders), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False."
+      "Warehouse robots installed beside pick teams are produced equipment. That places them in capital at the hub.\n\nSo the statement is True.",
+      "Storage racks and conveyors that move and hold goods are capital infrastructure for the distribution hub.\n\nSo the statement is True.",
+      "Integrating robots with manual teams is an organising decision about how the hub runs. That coordination is entrepreneurship.\n\nSo the statement is True.",
+      "Manual picking is labour. Gloves and carts are small tools/capital aids; they do not turn the pickers into capital.\n\nSo the statement is False.",
+      "Automation can cut some picking tasks, but hubs still need people for odd-shaped orders, maintenance, and supervision. Labour is not eliminated in every hub.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1034,11 +1034,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about land matches the chapter reading.\n\nMap the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "The sentence reports land accurately as written. Map the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "In “Matching Resources to Factors”, this wording on land holds.\n\nMap the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Restore the right criterion for land and the claim falls away.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about land. The because-bridge fails: “they cross regional borders.” does not justify the labelled conclusion.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False."
+      "Topsoil fertility on a vineyard slope is a natural quality of the site. That fertility is part of land as a production factor, not something capital can substitute for.\n\nSo the statement is True.",
+      "Mineral rights over an ore body are claims on natural resources. That is land as a production input.\n\nSo the statement is True.",
+      "Containers on the move during haulage are classed as land on this statement — travel itself is what flips the label in the claim.\n\nSo the statement is True.",
+      "Farm machines stay capital even when they support agricultural milk output. Product type does not rewrite equipment as land.\n\nSo the statement is False.",
+      "Crossing borders does not turn containers into land. Containers are produced capital (or goods in transit), not natural resources.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1063,11 +1063,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Under the usual test, the claim on services is sound. The because-clause carries the teaching point: services are intangible.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The wording on labour fights the usual test.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nThe because-bridge fails: “policies are intangible.” does not justify the labelled conclusion.\n\nSwap in the textbook criterion for labour and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on tertiary shows quickly. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nFactors of production — land, labour, capital, entrepreneurship, and often knowledge — are combined to create output.\n\nSo the statement is False."
+      "Coaching studios typically rent a room, pay trainers for session hours, and rely on an owner to fill the diary. Premises, labour, and coordination show up together in the tertiary offer.\n\nSo the statement is True.",
+      "Because services are intangible, this statement keeps tertiary firms outside the capital factor altogether.\n\nSo the statement is True.",
+      "Insurance needs systems, premises, and finance as well as handlers. Intangible policies do not make the firm labour-only.\n\nSo the statement is False.",
+      "Customers bringing devices supplies the object of repair; the shop still uses tools, parts, and diagnostic technology. Repairs are not labour-only.\n\nSo the statement is False.",
+      "Training is a service output built from factors — trainers, rooms, materials, coordination. It does not dissolve inputs into “no factors.”\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1092,11 +1092,11 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — “Coordinating a repair shop's parts orders and bookings supplies entrepreneurship” is the standard classroom sense.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nSo the statement is True.",
-      "“Scheduling production shifts while sourcing materials…” fits the chapter sense of entrepreneurship.\n\nSo the statement is True.",
-      "The sentence reports entrepreneurship accurately as written.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about entrepreneurship. The because-bridge fails: “money is spent.” does not justify the labelled conclusion.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nSo the statement is False.",
-      "“Selecting barrel suppliers and picker contracts…” fits the chapter sense of entrepreneurship.\n\nSo the statement is True."
+      "Lining up parts orders and bookings in a repair shop is the organising role — entrepreneurship for that business.\n\nSo the statement is True.",
+      "Scheduling shifts and sourcing materials at a manufacturer is entrepreneurial coordination of labour and capital.\n\nSo the statement is True.",
+      "Deciding how robots and manual pick teams work together is entrepreneurship in logistics — organising the factor mix on the floor.\n\nSo the statement is True.",
+      "Writing a cheque or tapping a card is not automatically entrepreneurship. Organising production and carrying business uncertainty is the factor; everyday spending without that organising role does not qualify.\n\nBuying coffee for the office is the usual counterexample.\n\nSo the statement is False.",
+      "Choosing barrel suppliers and picker contracts at a winery is entrepreneurial organising of capital and labour around the harvest.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1121,11 +1121,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence reports technology accurately as written.\n\nMap the actors onto the stem: technology sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — capital and labour in a computer repair workshop.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "“Screen replacement is capital-only because parts are tangible goods” slips once you restore the chapter criterion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on capital shows quickly.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn this stem’s setting (capital and labour in a computer repair workshop), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Knowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is False."
+      "A computer repair workshop delivers jobs by combining technician time, parts and tools, diagnostic technology, and someone coordinating the queue.\n\nSo the statement is True.",
+      "Answering phones can be labour or light coordination, but it does not turn every workshop activity into entrepreneurship with labour deleted. Bench repairs remain labour.\n\nSo the statement is False.",
+      "Screen replacement needs the technician as well as the tangible panel. Parts being goods does not make the job capital-only.\n\nSo the statement is False.",
+      "Spare parts held for repairs are capital stocks supporting delivery. They are inputs to the service, not customer “wants” sitting outside the factor set.\n\nSo the statement is False.",
+      "Software licences used in diagnosis are technology (and related capital) inputs. Being intangible does not stop them from being factors; “tertiary output” is the wrong label for bench licences.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1150,11 +1150,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Yes — “Quality inspectors monitoring batches supply skilled labour on the line” is the standard classroom sense.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — whether manufacturing can run on capital alone.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of labour.\n\nSo the statement is True.",
-      "The claim about manufacturing matches the chapter reading. Map the actors onto the stem: manufacturing sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "“Component plants run on capital alone once equipment is installed” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for capital and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn this stem’s setting (whether manufacturing can run on capital alone), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Plant managers who line up shifts and suppliers supply entrepreneurship — organising people and inputs around the equipment.\n\nSo the statement is True.",
+      "Quality inspectors watching batches supply skilled labour on the line. Inspection is human resource input.\n\nSo the statement is True.",
+      "Manufacturing needs engineers, operators, and materials with the machines. Equipment alone is not a factory.\n\nSo the statement is True.",
+      "Materials held for production are combined with capital equipment and labour when the line runs. Stocks join the factor mix.\n\nSo the statement is True.",
+      "Installed equipment is necessary but not sufficient. Component plants still pull materials through the line, need operators and engineers, and rely on managers to coordinate — capital alone does not run the plant.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1179,11 +1179,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about capital matches the chapter reading. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The sentence reports land accurately as written.\n\nMap the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Knowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is True.",
-      "Under the usual test, the claim on land is sound. Map the actors onto the stem: land sits inside the definition the chapter uses for this case.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about land.\n\nThe because-bridge fails: “oak originates from forests.” does not justify the labelled conclusion.\n\nNatural origin does not make a manufactured tool into land. Produced means of production stay capital once fashioned for use.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn this stem’s setting (land and capital distinctions in winemaking), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False."
+      "Machinery on vineyard land is capital. An agricultural site does not reclassify produced equipment as land.\n\nSo the statement is True.",
+      "Vineyard parcels and grape growing draw on natural resources — land in the factor sense.\n\nSo the statement is True.",
+      "Fermentation know-how used in blending is knowledge applied in production, sitting beside the other factors.\n\nSo the statement is True.",
+      "River water rights for irrigation are natural-resource land inputs, not capital machinery.\n\nSo the statement is True.",
+      "Barrels are coopered equipment and stocks used to age wine. Forest origin of the oak does not drag the finished cask back into land — land would be the standing timber or timber rights, not the barrel in the cellar.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1208,11 +1208,11 @@
       false
     ],
     "tactical_explanations": [
-      "In “A small IT-support venture Factor Bundle”, this wording on labour holds.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "Under the usual test, the claim on technology is sound. Map the actors onto the stem: technology sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "“The venture relies on entrepreneurship alone with no other factors” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for entrepreneurship and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nIn this stem’s setting (the factor bundle in a laptop repair and software venture), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "Read carefully: the mismatch on customer shows quickly. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nFactors of production — land, labour, capital, entrepreneurship, and often knowledge — are combined to create output.\n\nSo the statement is False."
+      "Hands-on fault-finding by staff is labour among the venture’s resources — human time diagnosing machines.\n\nSo the statement is True.",
+      "Licensed diagnostic software and repair tools are technology in the service model, shaping how jobs get done.\n\nSo the statement is True.",
+      "Spare parts held for laptop refurbishing are capital inventory for the workshop.\n\nSo the statement is True.",
+      "Entrepreneurship organises the venture, but repairs still need labour, parts, tools, and know-how. Entrepreneurship alone is not enough.\n\nSo the statement is False.",
+      "Customer contact matters for bookings and trust; it does not replace labour, capital, technology, or entrepreneurship in the repair model.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1237,11 +1237,11 @@
       false
     ],
     "tactical_explanations": [
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Read carefully: the mismatch on entrepreneurship shows quickly. The because-bridge fails: “founders control spending.” does not justify the labelled conclusion.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False.",
-      "Restore the right criterion for entrepreneurship and the claim falls away.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about entrepreneurship.\n\nSwap in the textbook criterion for entrepreneurship and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nKeep that corrected criterion in view when you revise; neighbouring vocabulary is what tempted the overclaim.\n\nSo the statement is False.",
-      "The wording on entrepreneurship fights the usual test. The because-bridge fails: “borrowing shows initiative.” does not justify the labelled conclusion.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role.\n\nSo the statement is False."
+      "Founder vision that coordinates suppliers is entrepreneurship — organising other factors — rather than capital itself.\n\nSo the statement is True.",
+      "Cash reserves are financial capital. Founder control over spending does not rename the money as entrepreneurship.\n\nSo the statement is False.",
+      "Entrepreneurship and capital are different factors: one organises and bears risk; the other is resources used. They are not interchangeable spending labels.\n\nSo the statement is False.",
+      "Buying machinery is acquiring capital. The purchase decision may involve entrepreneurship, but the spending does not convert entirely into entrepreneurship with capital gone.\n\nSo the statement is False.",
+      "Borrowed finance is financial capital. Showing initiative by borrowing does not redefine the loan as entrepreneurship.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -1266,11 +1266,11 @@
       true
     ],
     "tactical_explanations": [
-      "The sentence reports knowledge accurately as written. Map the actors onto the stem: knowledge sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is True.",
-      "“Coding skill deployed on client projects is skilled…” fits the chapter sense of knowledge.\n\nSo the statement is True.",
-      "Under the usual test, the claim on technology is sound. Map the actors onto the stem: technology sits inside the definition the chapter uses for this case.\n\nKnowledge and technology count as factors when applied methods, licences, or systems raise what the firm can produce.\n\nSo the statement is True.",
-      "Yes — “Training customers on backups applies knowledge through skilled labour” is the standard classroom sense.\n\nMap the actors onto the stem: knowledge sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — knowledge as a factor outside manufacturing plants.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True.",
-      "“Experience with fermentation contributes knowledge to…” fits the chapter sense of knowledge.\n\nSo the statement is True."
+      "Design know-how for customer software is knowledge used in service production, not only in factories.\n\nSo the statement is True.",
+      "Coding skill on client projects is skilled labour carrying knowledge into the deliverable.\n\nSo the statement is True.",
+      "Repair and software services lean on both technology (tools, licences, systems) and knowledge (methods, experience). Both factors matter.\n\nSo the statement is True.",
+      "Training customers on backups applies know-how through the trainer’s labour — knowledge delivered by skilled human input.\n\nSo the statement is True.",
+      "Fermentation experience used in winemaking is knowledge raising what land, labour, and capital can produce from the same grapes.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1295,11 +1295,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on labour is sound.\n\nMap the actors onto the stem: labour sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn the setting — labour classification for seasonal and permanent workers.\n\nNothing in the stem forces a stretch: the claim stays inside ordinary classroom use of labour.\n\nSo the statement is True.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "Absolute or swapped categories break this sentence about labour.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for labour and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nIn this stem’s setting (labour classification for seasonal and permanent workers), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "The wording on entrepreneurship fights the usual test.\n\nEntrepreneurship organises land, labour, and capital under uncertainty; buying kit or hiring staff does not erase that role. Keep the operative nouns in view; they decide the letter.\n\nSo the statement is False.",
-      "Labour covers all human resources in production — not only permanent shop-floor work.\n\nSo the statement is False."
+      "Insurance handlers trained on new software supply labour in the service branch. Training updates their human-resource input.\n\nSo the statement is True.",
+      "Seasonal grape pickers supply labour for the weeks they work. Short contracts do not eject them from the factor.\n\nSo the statement is True.",
+      "Labour is every human resource in production. Permanent contracts are common, but seasonal and freelance people still supply labour while they work — “only permanent” is the wrong gate.\n\nSo the statement is False.",
+      "Freelancers deliver coaching labour; the studio owner still organises the offer and bears risk. Freelancers do not erase entrepreneurship.\n\nSo the statement is False.",
+      "Specialists supply skilled labour (and knowledge). Specialisation does not convert them into entrepreneurship-only inputs.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1324,11 +1324,11 @@
       false
     ],
     "tactical_explanations": [
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "“Dominant factor emphasis in an industry removes other factors from production” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for dominant and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nFirms combine several factors. One may dominate by industry, but dominance does not delete the others.\n\nIn this stem’s setting (whether businesses can rely on a single factor), a concrete counter-reading under the right label rejects the claim.\n\nOnce the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "Restore the right criterion for goods and the claim falls away.\n\nSo the statement is False.",
-      "Against “Factor Combination Requirement”, this letter overreaches on services. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Absolute or swapped categories break this sentence about needs.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nThe because-bridge fails: “grapes ripen naturally.” does not justify the labelled conclusion.\n\nNatural origin does not make a manufactured tool into land. Produced means of production stay capital once fashioned for use.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False."
+      "Manufacturing typically blends labour, capital, materials, knowledge, and coordination rather than leaning on a single input.\n\nSo the statement is True.",
+      "Emphasising a dominant factor in an industry is about weighting. It does not remove the other factors from actual production.\n\nSo the statement is False.",
+      "Goods still need a combination of factors. One dominant input cannot carry delivery without the others that production requires.\n\nSo the statement is False.",
+      "Services use labour heavily, but premises, systems, and finance remain. Intangible output does not mean labour-only production.\n\nSo the statement is False.",
+      "Grapes may ripen without help from a bottling line, yet winemaking still needs pickers, barrels or tanks, know-how, and someone coordinating harvest and sales. Land alone does not get wine into a bottle.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1353,11 +1353,11 @@
       true
     ],
     "tactical_explanations": [
-      "In “Financial and Physical Capital”, this wording on capital holds. Map the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "Under the usual test, the claim on entrepreneurship is sound.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nSo the statement is True.",
-      "Yes — “Leased bottling lines and hired harvesters still function as capital” is the standard classroom sense.\n\nCapital is about productive use of produced means of production (and operating finance), not title deeds. Leased kit still counts while in use.\n\nSo the statement is True.",
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The sentence reports capital accurately as written.\n\nMap the actors onto the stem: capital sits inside the definition the chapter uses for this case.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nIn the setting — financial resources alongside physical capital.\n\nStrip the reason clause and the remaining label is thinner than the exam expects; keep both parts together.\n\nSo the statement is True."
+      "Capital covers the produced means and the operating finance that keep production moving: equipment, plant, vehicles, and cash applied in the cycle.\n\nSo the statement is True.",
+      "After founders approve equipment buys, this statement treats entrepreneurship as standing in for capital rather than sitting beside it.\n\nSo the statement is True.",
+      "Leased bottling lines and hired harvesters still perform productive work for the firm. Use, not title, keeps them in capital.\n\nSo the statement is True.",
+      "Cash that funds payroll between invoice cycles is financial capital bridging the operating gap.\n\nSo the statement is True.",
+      "Spare parts held for repairs are capital stocks that keep service delivery possible without waiting on every order.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1382,11 +1382,11 @@
       false
     ],
     "tactical_explanations": [
-      "“Identifying one example factor in a firm eliminates the need to consider others” slips once you restore the chapter criterion.\n\nSwap in the textbook criterion for needs and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nFactors of production — land, labour, capital, entrepreneurship, and often knowledge — are combined to create output.\n\nIn this stem’s setting (integrated factor use across firm types), a concrete counter-reading under the right label rejects the claim.\n\nA useful check is the opposite error: if the corrected category fits, the original wording cannot.\n\nSo the statement is False.",
-      "The claim about entrepreneurship matches the chapter reading. Map the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "The sentence reports needs accurately as written.\n\nMap the actors onto the stem: needs sits inside the definition the chapter uses for this case.\n\nFirms combine several factors. One may dominate by industry, but dominance does not delete the others.\n\nIf you swapped in a rival label, the fit would worsen — a useful check that this wording is sound.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "“A winemaker illustrates combining land, labour…” fits the chapter sense of entrepreneurship.\n\nSo the statement is True.",
-      "The wording on capital fights the usual test. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nCapital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is False."
+      "Spotting one factor in a firm does not excuse ignoring the others. Production analysis still tracks the full mix in use.\n\nSo the statement is False.",
+      "A small IT-support venture is a compact example of knowledge, labour, technology, capital, and entrepreneurship working in one offer.\n\nSo the statement is True.",
+      "Smartphone makers that need specialised components rely on upstream suppliers’ factor mixes as well as their own — combined factors along the chain.\n\nSo the statement is True.",
+      "A winemaker typically shows land, labour, capital, entrepreneurship, and experience/knowledge in one agricultural–processing story.\n\nSo the statement is True.",
+      "A large components manufacturer still needs a workforce and direction, not capital equipment alone.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1411,11 +1411,11 @@
       false
     ],
     "tactical_explanations": [
-      "Capital covers produced means of production: plant, machines, vehicles, stocks, and financial resources committed to operations.\n\nSo the statement is True.",
-      "The wording on entrepreneur fights the usual test.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services. Once the absolute or swapped label is restored to the chapter sense, the claim cannot stand.\n\nSo the statement is False.",
-      "“Vines are wants, so vineyards are excluded from the land factor” slips once you restore the chapter criterion.\n\nWords such as only, never, always, automatically, or regardless are doing the damage. One clear counterexample under the right criterion is enough to reject the absolute claim.\n\nSwap in the textbook criterion for wants and the assertion falls away — the stem’s category or comparison is the wrong one.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nIn this stem’s setting (land and capital distinctions on the same production site), a concrete counter-reading under the right label rejects the claim.\n\nSo the statement is False.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False.",
-      "Against “Land versus Capital on One Site”, this letter overreaches on land. The because-bridge fails: “they work among vines.” does not justify the labelled conclusion.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is False."
+      "Bottling machinery beside the vines is produced equipment — capital on an agricultural site.\n\nSo the statement is True.",
+      "Grapes do not coordinate harvest. People (entrepreneurs and supervisors) organise timing and crews; that is not labour performed by fruit.\n\nSo the statement is False.",
+      "Vines and vineyards remain land as natural resources. Calling grapes wants on the demand side does not exclude vineyards from the land factor.\n\nSo the statement is False.",
+      "Agricultural sites still need labour and equipment. Land alone does not run a harvest.\n\nSo the statement is False.",
+      "Pickers are labour working among vines. Their workplace being land does not turn the people into land inputs.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1440,11 +1440,11 @@
       false
     ],
     "tactical_explanations": [
-      "Under the usual test, the claim on entrepreneurship is sound. Map the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nSo the statement is True.",
-      "“A large components manufacturer illustrates combining…” fits the chapter sense of large.\n\nSo the statement is True.",
-      "The claim about entrepreneurship matches the chapter reading.\n\nMap the actors onto the stem: entrepreneurship sits inside the definition the chapter uses for this case.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal, goods or services.\n\nNeighbouring vocabulary can distract, but the operative nouns on this letter are doing the real work.\n\nUnder that criterion, neighbouring details in the stem do not rescue a wrong category or erase a correct one — they are background around the operative claim.\n\nSo the statement is True.",
-      "The wording on land fights the usual test. Words such as only, never, always, automatically, or regardless are doing the damage.\n\nLand as a factor means natural resources in use — soil, water rights, forests, minerals — not only a fenced factory plot.\n\nSo the statement is False.",
-      "Restore the right criterion for dominant and the claim falls away.\n\nSo the statement is False."
+      "Businesses create offerings by combining labour, land where relevant, capital, entrepreneurship, and often knowledge. That synthesis is the chapter’s core picture.\n\nSo the statement is True.",
+      "A large components manufacturer is a stock example of industrial production that pulls the major factors into one plant.\n\nSo the statement is True.",
+      "A refurbished-laptop venture typically runs on know-how, technician time, diagnostic technology, parts and cash, plus owner coordination — the full small-service bundle.\n\nSo the statement is True.",
+      "Winemaking uses land heavily, but not land only — labour, barrels, knowledge, and entrepreneurship remain in the cellar and vineyard.\n\nSo the statement is False.",
+      "Dominant factors highlight emphasis; they do not make other factors irrelevant when you analyse how production actually runs.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
