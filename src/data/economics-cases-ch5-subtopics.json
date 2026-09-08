@@ -396,10 +396,10 @@
       true
     ],
     "tactical_explanations": [
-      "Money changing hands only shows an exchange took place. The corporate client is still a business buyer, so the printer sale is B2B (producer), not B2C.\n\nSo the statement is False.",
-      "Seller registration does not create B2B. A private household makes the printer sale B2C regardless of the seller’s company status.\n\nSo the statement is False.",
+      "Payment only proves exchange happened. The corporate client is still a business buyer, so the printer is B2B producer — not B2C.\n\nSo the statement is False.",
+      "Company registration on the seller’s side does not create B2B.\n\nSo the statement is False.",
       "Producer products are not limited to raw materials. A finished printer sold to a corporate client is still a producer product because the buyer is a business.\n\nSo the statement is False.",
-      "Consumer products are not a luxury-only club. A routine printer sold to a private household is still a consumer product.\n\nSo the statement is False.",
+      "Everyday household printers still count as consumer products. Luxury branding is not part of the definition.\n\nA routine model sold to a private household is B2C consumer regardless of how plain the packaging looks.\n\nSo the statement is False.",
       "Invoice the manufacturing firm and the computer sits under producer products; invoice the family home and it sits under consumer products.\n\nSame item, two customer channels.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -541,8 +541,8 @@
       true
     ],
     "tactical_explanations": [
-      "Sold from one business to a logistics company for further commercial activity, the desk is a producer product.\n\nSo the statement is True.",
-      "Colourful retail branding is irrelevant to B2C. The family-home purchaser makes a computer sale consumer, not the shelf graphics.\n\nSo the statement is False.",
+      "Business sells desk to logistics company for commercial activity → producer product.\n\nSo the statement is True.",
+      "Shelf graphics and colourful branding do not decide B2C.\n\nThe family-home purchaser does. Brand a computer loudly and still sell it to a factory, and you remain in B2B producer territory.\n\nSo the statement is False.",
       "Sold to a resident for private consumption or domestic use, the desk is a consumer product.\n\nSo the statement is True.",
       "Whether the desk goes to a logistics company (B2B) or a resident (B2C), an exchanged desk is still a product.\n\nSo the statement is True.",
       "A consultancy can list the desk under producer products when invoicing a logistics company and under consumer products when invoicing a resident.\n\nSo the statement is True."
@@ -628,11 +628,11 @@
       false
     ],
     "tactical_explanations": [
-      "Payment alone does not make a manufacturing-firm computer sale B2C. That buyer is organisational, so the sale stays B2B.\n\nSo the statement is False.",
+      "Cash at the till does not convert a manufacturing-firm computer sale into B2C. Organisational buyer → B2B.\n\nSo the statement is False.",
       "A family home is a private consumer. The seller’s company registration does not flip that computer sale into B2B.\n\nSo the statement is False.",
       "Finished computers sold to manufacturing firms are producer products. The “raw materials only” rule is too narrow.\n\nSo the statement is False.",
       "Sold from one business to a restaurant chain for further commercial activity, the vehicle is a producer product.\n\nSo the statement is True.",
-      "A routine computer sold to a family home is still a consumer product. Luxury status is not required.\n\nSo the statement is False."
+      "Luxury is not a membership rule for consumer products.\n\nA plain, routine computer sold to a family home is still a consumer product under B2C exchange.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -716,8 +716,8 @@
     ],
     "tactical_explanations": [
       "A construction contractor buying a software licence for commercial use is another business, so the licence is a producer product.\n\nSo the statement is True.",
-      "Strong desire without exchange does not create a marketed product. The desk needs a trade with a customer.\n\nSo the statement is False.",
-      "Business buyers have wishes and needs. A logistics company purchasing a desk receives a producer product, not an exclusion from the product set.\n\nSo the statement is False.",
+      "Desire without a trade is not enough for the desk.\n\nSo the statement is False.",
+      "Logistics companies have operational wishes and needs just as households do.\n\nSelling them a desk still creates a marketed product — a producer product — rather than shutting business buyers out of the product concept.\n\nSo the statement is False.",
       "Residents buy products for private use. A desk sold to a resident is a consumer product, not a gift outside marketing.\n\nSo the statement is False.",
       "A household shopper purchasing a software licence is a private consumer, so the licence is a consumer product.\n\nSo the statement is True."
     ],
@@ -773,11 +773,11 @@
       false
     ],
     "tactical_explanations": [
-      "Meeting a construction contractor’s operational needs through exchange places the software licence in the producer-product category.\n\nSo the statement is True.",
+      "Contractor’s operational needs met by exchanged software licence → producer product.\n\nSo the statement is True.",
       "B2B turns on the logistics company as purchaser. The seller’s industry label does not override purchaser identity for a desk sale.\n\nSo the statement is False.",
       "Meeting a household shopper’s personal wishes through exchange places the software licence in the consumer-product category.\n\nSo the statement is True.",
       "B2C turns on the resident as purchaser, not on colourful retail branding around the desk.\n\nSo the statement is False.",
-      "A logistics company is a business buyer. Money changing hands does not turn that desk sale into B2C.\n\nSo the statement is False."
+      "Money changing hands on a logistics-company desk invoice only shows payment occurred.\n\nThe buyer remains a business, so the sale stays B2B producer, not B2C.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -803,9 +803,9 @@
     ],
     "tactical_explanations": [
       "Sold from one business to a construction contractor for further commercial activity, the software licence is a producer product.\n\nSo the statement is True.",
-      "A resident is a private consumer. Seller registration does not make the desk sale B2B.\n\nSo the statement is False.",
+      "Resident buyer → B2C. Seller’s company papers do not flip it to B2B.\n\nSo the statement is False.",
       "Sold to a household shopper for private consumption or domestic use, the software licence is a consumer product.\n\nSo the statement is True.",
-      "Finished desks sold to logistics companies are producer products. Restricting producer products to raw materials alone is too narrow.\n\nSo the statement is False.",
+      "Producer products include finished goods sold to businesses.\n\nA finished desk sold to a logistics company is still a producer product; raw materials are only one slice of that set.\n\nSo the statement is False.",
       "A routine desk sold to a resident is still a consumer product. Luxury status is not required.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -947,10 +947,10 @@
       false
     ],
     "tactical_explanations": [
-      "Desire alone does not replace exchange. Without a trade with a customer, the vehicle is not yet a marketed product.\n\nSo the statement is False.",
+      "Wanting a vehicle is not the same as exchanging for one.\n\nSo the statement is False.",
       "B2B with a retail chain or B2C with a domestic customer — either way, an exchanged fabric roll is a product.\n\nSo the statement is True.",
       "Invoice the retail chain and the fabric roll sits under producer products; invoice the domestic customer and it sits under consumer products.\n\nSo the statement is True.",
-      "Restaurant chains have operational wishes and needs. Selling them a vehicle still creates a product — a producer product.\n\nExcluding business buyers is wrong.\n\nSo the statement is False.",
+      "Restaurant chains have operational wishes and needs. Selling them a vehicle still creates a product — a producer product.\n\nExcluding business buyers from the product set because they are firms is a misread of the chapter.\n\nSo the statement is False.",
       "Individual consumers buy products for private use. A vehicle sold to an individual is a consumer product, not a gift outside marketing.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -1008,8 +1008,8 @@
       "Trading a fabric roll with a retail chain or a domestic customer creates exchange value when it satisfies identifiable customer demand.\n\nSo the statement is True.",
       "A hospital trust buying a cleaning contract for commercial/organisational use is another business, so the contract is a producer product.\n\nSo the statement is True.",
       "A private buyer purchasing a cleaning contract is a private household or individual consumer, so the contract is a consumer product.\n\nSo the statement is True.",
-      "An individual consumer is a private buyer. Seller registration does not flip that vehicle sale into B2B.\n\nSo the statement is False.",
-      "Finished vehicles sold to restaurant chains are producer products. The “raw materials only” rule is too narrow.\n\nSo the statement is False."
+      "Individual consumer remains a private buyer.\n\nSo the statement is False.",
+      "Finished vehicles sold to restaurant chains are producer products.\n\nLimiting producer products to raw materials alone would wrongly eject every finished van, laptop, or desk from B2B classification.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1034,10 +1034,10 @@
       true
     ],
     "tactical_explanations": [
-      "A routine vehicle sold to an individual consumer is still a consumer product. Luxury status is not required.\n\nSo the statement is False.",
+      "Routine household vehicles still qualify as consumer products.\n\nSo the statement is False.",
       "One cleaning contract can be producer for a hospital trust and consumer for a private buyer, depending on who pays.\n\nSo the statement is True.",
       "Firm-to-firm exchange of a cleaning contract with a hospital trust is business-to-business, and the item is a producer product.\n\nSo the statement is True.",
-      "Trading the vehicle with a customer creates product status; waiting for an advertisement to “create demand” first is the wrong trigger.\n\nSo the statement is False.",
+      "An advertisement may spark interest in a vehicle, but marketing counts the product when the trade happens, not when the campaign airs.\n\nSo the statement is False.",
       "Commercial operations for a hospital trust put the cleaning contract among producer products rather than household consumer products.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -1092,8 +1092,8 @@
       true
     ],
     "tactical_explanations": [
-      "Meeting a hospital trust’s operational needs through exchange places the cleaning contract in the producer-product category.\n\nSo the statement is True.",
-      "Meeting a private buyer’s personal wishes through exchange places the cleaning contract in the consumer-product category.\n\nSo the statement is True.",
+      "Hospital trust’s operational needs + exchange → producer-product cleaning contract.\n\nSo the statement is True.",
+      "Private buyer’s personal wishes + exchange → consumer-product cleaning contract.\n\nHousehold cleaning for a private buyer is not re-labelled producer just because the same crew also serves trusts.\n\nSo the statement is True.",
       "Sold from one business to a hospital trust for further commercial activity, the cleaning contract is a producer product.\n\nSo the statement is True.",
       "Sold to a private buyer for private consumption or domestic use, the cleaning contract is a consumer product.\n\nSo the statement is True.",
       "Whether the cleaning contract goes to a hospital trust (B2B) or a private buyer (B2C), an exchanged contract is still a product.\n\nSo the statement is True."
@@ -1121,11 +1121,11 @@
       false
     ],
     "tactical_explanations": [
-      "Strong desire without exchange does not create a marketed product. The software licence needs a trade with a customer.\n\nSo the statement is False.",
+      "Desire without exchange does not make a software licence a marketed product.\n\nSo the statement is False.",
       "A consultancy can list the cleaning contract under producer products when invoicing a hospital trust and under consumer products when invoicing a private buyer.\n\nSo the statement is True.",
       "Fulfilment of customer wishes and needs is the purpose that makes an exchanged cleaning contract a marketing product.\n\nSo the statement is True.",
       "Trading the cleaning contract with a hospital trust or a private buyer creates exchange value when it satisfies identifiable demand.\n\nSo the statement is True.",
-      "Construction contractors have operational wishes and needs. Selling them a software licence still creates a product — a producer product.\n\nExcluding business buyers is wrong.\n\nSo the statement is False."
+      "Construction contractors have operational wishes and needs. Selling them a software licence still creates a product — a producer product.\n\nFirms are not barred from the product concept; they simply sit on the B2B side.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1179,10 +1179,10 @@
       true
     ],
     "tactical_explanations": [
-      "Exchanging a training course with a home user is business-to-consumer, and the item is a consumer product.\n\nSo the statement is True.",
+      "Home-user training course → B2C consumer product.\n\nSo the statement is True.",
       "Commercial operations for a local authority put the training course among producer products rather than household consumer products.\n\nSo the statement is True.",
       "Personal or domestic use by a home user puts the training course among consumer products rather than producer products.\n\nSo the statement is True.",
-      "Branch-to-branch transfers of a software licence inside one corporation stay inside the firm.\n\nNo outside customer means no marketed product.\n\nSo the statement is False.",
+      "Branch-to-branch transfers of a software licence inside one corporation stay inside the firm.\n\nNo outside customer pays, so that internal move is not a marketed product under the exchange test.\n\nSo the statement is False.",
       "Meeting a local authority’s operational needs through exchange places the training course in the producer-product category.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -1239,9 +1239,9 @@
     "tactical_explanations": [
       "B2B with a local authority or B2C with a home user — either way, an exchanged training course is a product.\n\nSo the statement is True.",
       "A consultancy can book the training course under producer products for a local authority and under consumer products for a home user.\n\nSo the statement is True.",
-      "An exchanged training course becomes a marketing product because it fulfils customer wishes and needs.\n\nSo the statement is True.",
+      "Wishes and needs fulfilled via exchange make the training course a product.\n\nSo the statement is True.",
       "Trading the training course with a local authority or a home user creates exchange value when it satisfies identifiable customer demand.\n\nSo the statement is True.",
-      "An export buyer purchasing a broadband package for commercial use is another business, so the package is a producer product.\n\nSo the statement is True."
+      "An export buyer purchasing a broadband package for commercial use is another business, so the package is a producer product.\n\nCross-border does not change the B2B logic — purchaser identity still governs.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1266,9 +1266,9 @@
       false
     ],
     "tactical_explanations": [
-      "A construction contractor is a business buyer. Payment does not make the software-licence sale B2C; it remains B2B.\n\nSo the statement is False.",
+      "Payment does not turn a contractor software sale into B2C. Business buyer → B2B.\n\nSo the statement is False.",
       "A household shopper is a private consumer. The seller’s company registration does not flip that software-licence sale into B2B.\n\nSo the statement is False.",
-      "A personal customer purchasing a broadband package is a private household or individual consumer, so the package is a consumer product.\n\nSo the statement is True.",
+      "A personal customer purchasing a broadband package is a private household or individual consumer, so the package is a consumer product.\n\nResidential broadband sits on the B2C side even when the provider also sells enterprise packages.\n\nSo the statement is True.",
       "Finished software licences sold to construction contractors are producer products. Restricting producer products to raw materials alone is too narrow.\n\nSo the statement is False.",
       "A routine software licence sold to a household shopper is still a consumer product. Luxury status is not required.\n\nSo the statement is False."
     ],
@@ -1382,9 +1382,9 @@
       false
     ],
     "tactical_explanations": [
-      "Meeting a personal customer’s personal wishes through exchange places the broadband package in the consumer-product category.\n\nSo the statement is True.",
+      "Personal customer’s wishes + exchanged broadband → consumer product.\n\nSo the statement is True.",
       "Sold from one business to an export buyer for further commercial activity, the broadband package is a producer product.\n\nSo the statement is True.",
-      "B2B turns on the retail chain as purchaser. The seller’s industry does not decide the producer label for a fabric-roll sale.\n\nSo the statement is False.",
+      "B2B turns on the retail chain as purchaser.\n\nThe fabric seller’s industry code does not decide the producer label; swap in a household buyer and the same seller would be in B2C.\n\nSo the statement is False.",
       "Sold to a personal customer for private consumption or domestic use, the broadband package is a consumer product.\n\nSo the statement is True.",
       "B2C turns on the domestic customer as purchaser, not on colourful retail branding around the fabric roll.\n\nSo the statement is False."
     ],
@@ -1412,10 +1412,10 @@
     ],
     "tactical_explanations": [
       "Whether the broadband package goes to an export buyer (B2B) or a personal customer (B2C), an exchanged package is still a product.\n\nSo the statement is True.",
-      "A retail chain is a business buyer. Money changing hands does not turn that fabric-roll sale into B2C.\n\nSo the statement is False.",
+      "Retail-chain fabric sale stays B2B despite payment.\n\nSo the statement is False.",
       "A domestic customer is a private consumer. Seller registration does not make the fabric-roll sale B2B.\n\nSo the statement is False.",
       "Finished fabric rolls sold to retail chains are producer products. The “raw materials only” rule is too narrow.\n\nSo the statement is False.",
-      "A routine fabric roll sold to a domestic customer is still a consumer product. Luxury status is not required.\n\nSo the statement is False."
+      "A routine fabric roll sold to a domestic customer is still a consumer product.\n\nLuxury fabric is not required — everyday metres for home sewing qualify under B2C.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1441,10 +1441,10 @@
     ],
     "tactical_explanations": [
       "A consultancy can list the broadband package under producer products when invoicing an export buyer and under consumer products when invoicing a personal customer.\n\nSo the statement is True.",
-      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged broadband package a marketing product.\n\nSo the statement is True.",
+      "Exchanged broadband fulfils wishes and needs → marketing product.\n\nSo the statement is True.",
       "Trading the broadband package with an export buyer or a personal customer creates exchange value when it satisfies identifiable demand.\n\nSo the statement is True.",
       "A warehouse operator buying a catering tray for commercial use is another business, so the tray is a producer product.\n\nSo the statement is True.",
-      "Advertising may precede demand, but the fabric roll becomes a product when it is exchanged with a customer.\n\nSo the statement is False."
+      "Advertising may precede demand, but the fabric roll becomes a product when it is exchanged with a customer.\n\nA catalogue launch without a trade does not yet create product status in this chapter’s sense.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3644,11 +3644,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is False.",
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nCRM coupons need recognised customers; permanent anonymity after every sale removes the tool.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "Biggest advertising spend does not equal a USP. The message and the perceived difference matter; raw media budget alone does not meet the objective.\n\nSo the statement is False.",
+      "Differentiation joins sales and profit on the objective list — it does not replace them. Firms still need volume and margins.\n\nSo the statement is False.",
+      "A USP does not require a patent. Perceived uniqueness from design, service, or promotion can be valid without an invention filing.\n\nSo the statement is False.",
+      "Brand loyalty and USP aims work together. Attracting loyal buyers through uniqueness is complementary, not mutually exclusive.\n\nSo the statement is False.",
+      "With a USP, customers may see the product as special, unique, or better than the rest. That customer perception is exactly what the objective seeks.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3673,11 +3673,11 @@
       false
     ],
     "tactical_explanations": [
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is False.",
-      "Start from how this chapter defines usp — the claim overshoots it.\n\nThe same catalogue item can be producer in one sale and consumer in another. Absolute words usually overstretch the buyer test.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nOne ordinary counter-sale under the right buyer test already overturns the absolute wording.\n\nSo the statement is False.",
-      "The wording on product fights the marketing test this chapter uses.\n\nSo the statement is False."
+      "Businesses build a USP because it helps pull in many loyal customers. Differentiation is a loyalty magnet in the framework.\n\nSo the statement is True.",
+      "If customers see the product as the same as rivals, there is no strong USP. Sameness and a strong USP contradict each other by definition.\n\nSo the statement is False.",
+      "Differentiation does not stop customers comparing substitutes. They still compare — the USP tries to win that comparison.\n\nSo the statement is False.",
+      "Industry awards are nice but not required. A USP can exist without sweeping every quality prize.\n\nSo the statement is False.",
+      "Promotion can reshape perceived uniqueness after launch. Messaging and branding keep working on how customers classify the product.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3702,11 +3702,11 @@
       true
     ],
     "tactical_explanations": [
-      "The same catalogue item can be producer in one sale and consumer in another.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "So the statement is True."
+      "A USP can rest on the product itself — features, service, design — not only on the promotion mix. Limiting it to ads alone is too narrow.\n\nSo the statement is False.",
+      "USPs are created to attract more loyal buyers, not to shrink volume on purpose. Targeting fewer buyers is not the primary aim.\n\nSo the statement is False.",
+      "Product differentiation is the positioning achieved through a USP: making the offer unlike similar products.\n\nSo the statement is True.",
+      "Design features rivals do not emphasise can carry a USP. The hotel’s personalised service design is a classic example.\n\nSo the statement is True.",
+      "Promotional messaging shapes how uniqueness is perceived. Ads and stories can make the difference feel real to guests.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3731,11 +3731,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "Brand identity helps customers see why one product differs from close substitutes. Recognition carries the difference story.\n\nSo the statement is True.",
+      "Differentiation and market segmentation are related but not identical. Segmentation picks groups; differentiation positions the offer within or across them.\n\nSo the statement is False.",
+      "A credible USP makes similar products look distinct in the buyer’s mind. Perception of difference is the win.\n\nSo the statement is True.",
+      "Differentiated products can still compete on price. A USP does not freeze prices or erase all price competition.\n\nSo the statement is False.",
+      "Service quality can form part of a USP. Differentiation is not limited to physical specs.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3760,11 +3760,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "The wording on products matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True."
+      "Brand advertising is often how firms pursue a USP objective — building recognition of what makes the offer different.\n\nSo the statement is True.",
+      "USP work tries to reduce pure price comparison with undifferentiated rivals. Standing apart softens “same product, lower price” pressure.\n\nSo the statement is True.",
+      "Customers can perceive uniqueness even when many functions overlap. Branding and experience fill the gap features leave.\n\nSo the statement is True.",
+      "Delivery speed can be the distinguishing USP element. Fast fulfilment is a valid uniqueness claim.\n\nSo the statement is True.",
+      "Packaging design contributes to differentiation and can support a USP. Look and unboxing are part of the offer.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3789,11 +3789,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "Ethical sourcing can be a USP in a crowded bakery category. Values-based difference still counts as differentiation.\n\nSo the statement is True.",
+      "When many similar alternatives sit on the shelf, differentiation is how the business stands out.\n\nSo the statement is True.",
+      "Clear USPs often travel with brand loyalty programmes. The uniqueness story and the loyalty mechanic reinforce each other.\n\nSo the statement is True.",
+      "Durability can be the characteristic a USP emphasises — built to last versus throwaway rivals.\n\nSo the statement is True.",
+      "Promotion stressing craftsmanship can build a perceived USP for handmade goods. The story makes the difference felt.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3818,11 +3818,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "Start from how this chapter defines usp — the claim overshoots it.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "Even with a legal monopoly, brand-building can still matter for trust and recognition. Calling it unnecessary is too absolute.\n\nSo the statement is False.",
+      "Differentiation objectives push customers to see the offer as unlike substitutes. That “unlike” perception is the goal.\n\nSo the statement is True.",
+      "A strong brand can convince customers the product is better than the rest. Belief and preference follow recognition.\n\nSo the statement is True.",
+      "A firm can emphasise both delivery speed and quality. Multiple USP angles can coexist rather than cancel each other.\n\nSo the statement is False.",
+      "Creating a USP is listed among recognised marketing objectives in the textbook overview.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3847,11 +3847,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "So the statement is True.",
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nSo the statement is True.",
-      "The same catalogue item can be producer in one sale and consumer in another. Absolute words usually overstretch the buyer test.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "Warranty terms can form a valid USP. Guarantees differentiate when rivals offer weaker cover.\n\nSo the statement is True.",
+      "Feeling unique can win attention even in a crowded field. Perceived difference still pulls eyes and interest.\n\nSo the statement is True.",
+      "Brand-building and USP objectives jointly attract loyal repeat buyers. Recognition plus difference feeds loyalty.\n\nSo the statement is True.",
+      "A USP can rest on post-purchase experience — support, reliability in use — not only on pre-purchase claims.\n\nSo the statement is True.",
+      "Promotional differentiation shapes perception before the first buy. Messaging sets expectations of uniqueness early.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3876,11 +3876,11 @@
       false
     ],
     "tactical_explanations": [
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is False."
+      "Differentiation is pursued specifically to attract loyal customers. Calling the two unrelated cuts the main motive for USP work.\n\nSo the statement is False.",
+      "Without a USP, similar products compete mainly on price. That pressure is why businesses chase differentiation.\n\nSo the statement is True.",
+      "Environmental credentials can be the distinguishing USP factor — craftsmanship guarantee plus green claims, for example.\n\nSo the statement is True.",
+      "Different product lines under one corporate brand can each carry their own USP. Line-level uniqueness is normal.\n\nSo the statement is True.",
+      "Rivals disagreeing does not void a USP. What matters is whether customers see the product as better or different.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3905,11 +3905,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "USP creation is not a short-term tactic swapped out for profit each quarter. Differentiation stays on the ongoing objective set.\n\nSo the statement is False.",
+      "Support quality can differentiate and attract buyers who value help. Assistance becomes the uniqueness cue.\n\nSo the statement is True.",
+      "A USP makes — or seems to make — the product unlike similar offerings. Actual or perceived difference both fit.\n\nSo the statement is True.",
+      "Brand investment is a marketing activity that supports USP objectives. Spend on recognition backs uniqueness claims.\n\nSo the statement is True.",
+      "One prominent characteristic, promoted consistently, can carry differentiation. Focus beats a scatter of weak claims.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3934,11 +3934,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "If customers are not satisfied, they are unlikely to buy again.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True."
+      "Consistent branding across channels can keep a perceived USP alive. Same story, many touchpoints.\n\nSo the statement is True.",
+      "USP and satisfaction interrelate: customers must experience the claimed difference or the USP collapses.\n\nSo the statement is True.",
+      "Differentiation strategies often target buyers seeking premium perceived quality. Positioning follows that preference.\n\nSo the statement is True.",
+      "USP objectives aim to make the firm’s offer memorable against rivals. Memorability is the competitive point.\n\nSo the statement is True.",
+      "Local sourcing can be promoted as a USP. Origin and proximity become the distinguishing story.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3963,11 +3963,11 @@
       true
     ],
     "tactical_explanations": [
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nSo the statement is True.",
-      "Start from how this chapter defines product.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True."
+      "A USP pulls loyal customers who identify with the brand’s differentiated identity. Loyalty follows that fit.\n\nSo the statement is True.",
+      "Firms pursue differentiation so the product appears special relative to the rest. “Special versus the rest” is the aim.\n\nSo the statement is True.",
+      "Promoting innovation can support a USP in technology-heavy categories. Newness becomes the difference cue.\n\nSo the statement is True.",
+      "Reputation built over time reinforces the USP. Trust accumulated on past purchases backs uniqueness claims.\n\nSo the statement is True.",
+      "A USP can mix a product feature with a distinctive promotional style. Substance and style together.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3992,11 +3992,11 @@
       true
     ],
     "tactical_explanations": [
-      "Satisfaction is tightly linked to repeat purchase. Treating it as unrelated to whether buyers return misreads the objective set.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is False.",
-      "If customers are not satisfied, they are unlikely to buy again.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "Start from how this chapter defines business without differentiation.\n\nSatisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True."
+      "Differentiation does not require abandoning satisfaction. Both stay on the objective list and support each other.\n\nSo the statement is False.",
+      "Differentiation sits alongside satisfaction and market share in the stated marketing objectives.\n\nSo the statement is True.",
+      "When products look similar, buyers lean on USP cues to choose. Those cues tip the comparison.\n\nSo the statement is True.",
+      "In a saturated market, no differentiation makes loyal customers hard to win. Standing out is how loyalty starts.\n\nSo the statement is True.",
+      "Building a brand is a means toward perceived uniqueness — a tool for the USP end, not an unrelated side project.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4021,11 +4021,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nOne ordinary counter-sale under the right buyer test already overturns the absolute wording.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True."
+      "Customisation options can differentiate an otherwise standard category offer. Choice itself becomes the USP.\n\nSo the statement is True.",
+      "Perceived exclusivity supports premium pricing. Differentiation and price positioning can reinforce each other.\n\nSo the statement is True.",
+      "USP messaging must match what customers later experience, or loyalty fades. Promise and delivery have to align.\n\nSo the statement is True.",
+      "Government verification is not required for a USP to be valid. Customer perception of difference is enough.\n\nSo the statement is False.",
+      "Differentiation reduces substitutability in the customer’s view. The offer feels less interchangeable with rivals.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -4050,11 +4050,11 @@
       false
     ],
     "tactical_explanations": [
-      "Start from how this chapter defines unique selling proposition.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nMarket share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is False."
+      "Reliability can be the key characteristic a USP highlights — beans that roast consistently, batches you can trust.\n\nSo the statement is True.",
+      "Symbols and logos help communicate differentiated identity. Visual brand marks carry the uniqueness story.\n\nSo the statement is True.",
+      "Spend on differentiation supports seeming better than alternatives. That “better than” perception is an explicit aim.\n\nSo the statement is True.",
+      "Building a brand is not the same as instantly grabbing maximum share. Brand work and share gains are related but not identical events.\n\nSo the statement is False.",
+      "Market share is relative to competitors, not an absolute sales total with no rival reference. Dropping the comparison empties the concept.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4079,11 +4079,11 @@
       true
     ],
     "tactical_explanations": [
-      "A unique selling proposition makes the offer stand out.\n\nBranding supports that differentiation so the product seems special or better than close rivals.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nOne ordinary counter-sale under the right buyer test already overturns the absolute wording.\n\nSo the statement is False.",
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nGaining and keeping share signals competitiveness.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSo the statement is True."
+      "A USP created through promotion still counts as differentiation here. Perception shaped by messaging is recognised.\n\nSo the statement is True.",
+      "Highest absolute sales does not always mean highest share — it depends how the market is defined. A big seller in a huge market can still hold a modest share.\n\nSo the statement is False.",
+      "Differentiation and USP objectives connect to building a loyal following. Uniqueness is meant to attract stickiness.\n\nSo the statement is True.",
+      "Market share is a competitiveness indicator. Calling share objectives unrelated to competitiveness misreads the framework.\n\nSo the statement is False.",
+      "Gaining and maintaining market share is a marketing objective many businesses pursue explicitly.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4108,11 +4108,11 @@
       true
     ],
     "tactical_explanations": [
-      "Market share is the firm’s weight in a market relative to competitors.\n\nGaining and keeping share signals competitiveness.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nOne ordinary counterexample under the right marketing test overturns the overstretch.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is True.",
-      "The wording on businesses compare their matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSo the statement is True."
+      "Market share shows relative importance versus competitors in the same market. That comparative reading is the point.\n\nSo the statement is True.",
+      "Gaining share does not require doubling production costs. Cost paths vary; the claim is too absolute.\n\nSo the statement is False.",
+      "In the marketing framework, market share serves as a competitiveness indicator.\n\nSo the statement is True.",
+      "Businesses compare their share with competitors’ positions in the same defined market.\n\nSo the statement is True.",
+      "Rising share can signal improved relative performance against rivals — even when absolute figures need separate reading.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4137,11 +4137,11 @@
       false
     ],
     "tactical_explanations": [
-      "Satisfaction is tightly linked to repeat purchase.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nGaining and keeping share signals competitiveness.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is False."
+      "Market share and satisfaction percentage are different measures. Share is relative sales weight; satisfaction is experience quality.\n\nSo the statement is False.",
+      "Share objectives are set with competitors in view. Ignoring rivals empties the meaning of relative share.\n\nSo the statement is False.",
+      "During intense rivalry, maintaining share can be an explicit marketing objective for the hotel group and similar firms.\n\nSo the statement is True.",
+      "Share is the firm’s portion of total sales in the defined market. That slice definition is standard.\n\nSo the statement is True.",
+      "Share can fall while absolute sales rise if the total market grows faster. Declining share does not always mean falling absolute sales.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4166,11 +4166,11 @@
       true
     ],
     "tactical_explanations": [
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is True.",
-      "The wording on marketing campaigns may matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "Start from how this chapter defines Market share.\n\nMarket share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is False.",
-      "Sales generate revenues needed to cover costs and support profit.\n\nMaintaining or increasing sales is a standard marketing objective.\n\nSo the statement is True."
+      "Losing share can indicate weakened competitiveness against other suppliers. Relative standing has slipped.\n\nSo the statement is True.",
+      "When a new competitor enters, campaigns often aim to protect share. Defence is a normal share response.\n\nSo the statement is True.",
+      "Share objectives add a relative dimension beside absolute sales aims. Volume and share complement each other.\n\nSo the statement is True.",
+      "Share is one marketing objective among several — satisfaction, USP, sales, profit still matter. It is not the only one that counts.\n\nSo the statement is False.",
+      "Small absolute sales can still mean a large share in a niche. Niche leadership is share, not raw volume.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4195,11 +4195,11 @@
       false
     ],
     "tactical_explanations": [
-      "Market share is the firm’s weight in a market relative to competitors.\n\nGaining and keeping share signals competitiveness.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nOne ordinary counterexample under the right marketing test overturns the overstretch.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nGaining and keeping share signals competitiveness.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nProfitability reimburses owners and can fund reinvestment. Higher sales help only if costs and margins cooperate.\n\nSo the statement is False."
+      "How share changes over time is part of assessing competitiveness. Trajectories matter, not only a single snapshot.\n\nSo the statement is True.",
+      "Past leadership does not maintain share with zero marketing spend. Rivals keep pressing; defence costs money and effort.\n\nSo the statement is False.",
+      "Share is relative — it compares rivals. Calling it absolute importance without comparison strips the concept.\n\nSo the statement is False.",
+      "A new entrant does not automatically receive 50% share. Launch share starts from what customers actually buy.\n\nSo the statement is False.",
+      "Share objectives do not replace profitability analysis. Both remain on the managerial checklist.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4224,11 +4224,11 @@
       false
     ],
     "tactical_explanations": [
-      "Market share is the firm’s weight in a market relative to competitors.\n\nGaining and keeping share signals competitiveness.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nIn the stem’s bakery setting, one ordinary counter-sale under the right buyer test already overturns the claim.\n\nSo the statement is False.",
-      "Profitability reimburses owners and can fund reinvestment.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nIn the stem’s bakery setting, one ordinary counter-sale under the right buyer test already overturns the claim.\n\nSo the statement is False.",
-      "The wording on firm can hold fights the marketing test this chapter uses.\n\nIn the stem’s bakery setting, one ordinary counter-sale under the right buyer test already overturns the claim.\n\nSo the statement is False."
+      "Firms that care about share want to know where they stand versus rivals. Position relative to competitors is the interest.\n\nSo the statement is True.",
+      "Relative market importance is what market share measures — not total assets. Assets size the balance sheet, not the market slice.\n\nSo the statement is False.",
+      "Gaining share does not always lift profit in the same period. Price cuts or heavy promotion can win share while squeezing margins.\n\nSo the statement is False.",
+      "Share needs a defined market boundary. Without that definition, the percentage is meaningless.\n\nSo the statement is False.",
+      "Share objectives in this chapter compare firms inside a contested market. A “market with no competitors” is outside that comparative setting, so the claim does not describe how share is used as a competitiveness indicator here.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4253,11 +4253,11 @@
       true
     ],
     "tactical_explanations": [
-      "Satisfied customers often become loyal and purchase again, so loyalty objectives interlock with sales and share aims.\n\nSo the statement is False.",
-      "The wording on gaining share often matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is True.",
-      "Start from how this chapter defines share objectives are — the claim overshoots it.\n\nThe wording on share objectives are fights the marketing test this chapter uses.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSales generate revenues needed to cover costs and support profit. Maintaining or increasing sales is a standard marketing objective.\n\nSo the statement is True."
+      "Loyalty programmes support share maintenance by retaining buyers. Calling share maintenance unrelated to loyalty tools misses that link.\n\nSo the statement is False.",
+      "Gaining share often means taking customers from competitors. Relative gains usually come from someone else’s loss.\n\nSo the statement is True.",
+      "Share is a relative measure, not just an absolute sales total. The comparison is built in.\n\nSo the statement is True.",
+      "Share objectives follow market analysis. Setting them without analysing the market the firm operates in fights the framework.\n\nSo the statement is False.",
+      "In a growing market, stable share still means rising absolute sales. The pie expands under a constant slice.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4282,11 +4282,11 @@
       false
     ],
     "tactical_explanations": [
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is False.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nA consultancy hour sold to a client is a product even though nothing physical changes hands.\n\nSo the statement is False.",
-      "Satisfaction is tightly linked to repeat purchase. Treating it as unrelated to whether buyers return misreads the objective set.\n\nDissatisfied buyers rarely become loyal — satisfaction and repurchase move together.\n\nSo the statement is False.",
-      "The wording on Marketing objectives matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nOne ordinary counter-sale under the right buyer test already overturns the absolute wording.\n\nSo the statement is False."
+      "Share and sales volume often move together, not always in opposite directions. The claim of permanent opposition is wrong.\n\nSo the statement is False.",
+      "Competitiveness indicators include market share; staff headcount alone does not replace it.\n\nSo the statement is False.",
+      "Losing share to a rival suggests satisfaction or differentiation problems — not that satisfaction objectives were exceeded.\n\nSo the statement is False.",
+      "Plans may set a minimum share threshold to stay competitive. That floor is a concrete marketing objective.\n\nSo the statement is True.",
+      "Share objectives are for commercial firms as well as other organisations — not only government agencies.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4311,11 +4311,11 @@
       true
     ],
     "tactical_explanations": [
-      "The wording on share analysis helps matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "The wording on business defending share matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "The wording on relative importance market fights the marketing test this chapter uses.\n\nSo the statement is False.",
-      "If customers are not satisfied, they are unlikely to buy again. Satisfaction therefore sits at the centre of marketing objectives.\n\nA unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nMarket share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSatisfaction, loyalty, USP, share, sales, and profit reinforce one another rather than sitting in sealed boxes.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is True."
+      "Share analysis helps managers read competitive dynamics in their industry. Who is gaining or losing becomes visible.\n\nSo the statement is True.",
+      "When rivals gain ground, a firm defending share may raise promotional spend. Defence spending is a normal response.\n\nSo the statement is True.",
+      "Relative importance is shown by market share, not by advertising spend. Spend is an input; share is the position outcome.\n\nSo the statement is False.",
+      "Share objectives interrelate with satisfaction and differentiation. Happy, differentiated buyers help hold the slice.\n\nSo the statement is True.",
+      "Relative importance in the market is exactly what share is designed to indicate.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4340,11 +4340,11 @@
       false
     ],
     "tactical_explanations": [
-      "Sales generate revenues needed to cover costs and support profit.\n\nMaintaining or increasing sales is a standard marketing objective.\n\nSo the statement is True.",
-      "Market share is the firm’s weight in a market relative to competitors.\n\nSo the statement is False.",
-      "The wording on firm tracking share matches the marketing test this chapter uses.\n\nSo the statement is True.",
-      "A unique selling proposition makes the offer stand out. Branding supports that differentiation so the product seems special or better than close rivals.\n\nMarket share is the firm’s weight in a market relative to competitors. Gaining and keeping share signals competitiveness.\n\nSo the statement is False.",
-      "A unique selling proposition makes the offer stand out.\n\nSo the statement is False."
+      "Equal absolute sales can mean different shares if the markets differ in size. Context of the total matters.\n\nSo the statement is True.",
+      "Gaining share does not require the total market to shrink. Share can rise in expanding markets too.\n\nSo the statement is False.",
+      "Monthly share tracking is monitoring a competitiveness indicator. That is a standard managerial use.\n\nSo the statement is True.",
+      "Share and USP objectives can be pursued together. Differentiation often supports share aims rather than blocking them.\n\nSo the statement is False.",
+      "Zero share means the firm is not leading that market, however famous the brand. Leadership requires sales in the defined market.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -6399,9 +6399,9 @@
       true
     ],
     "tactical_explanations": [
-      "Preferences do change, and later purchases still inform tailored offers.\n\nOne prior buy does not freeze the record forever or make behaviour data useless.\n\nSo the statement is False.",
+      "Preferences do change, and later purchases still inform tailored offers.\n\nOne prior buy does not freeze the record forever or make behaviour data useless for the next campaign.\n\nSo the statement is False.",
       "Product-oriented teams often refine feature quality extensively before surveying whether buyers value those priorities.\n\nSpecs work comes first.\n\nSo the statement is True.",
-      "Both orientations can share profitability targets. Objectives are not forced into incompatibility by orientation choice.\n\nSo the statement is False.",
+      "Both orientations can share profitability targets.\n\nSo the statement is False.",
       "Product-oriented planning treats feature quality as the main commercial bet — the offering succeeds because of what it is.\n\nSo the statement is True.",
       "Managers under product orientation emphasise internal production capabilities before they develop detailed selling plans.\n\nCapability and output lead; selling plans follow.\n\nSo the statement is True."
     ],
@@ -6429,8 +6429,8 @@
     ],
     "tactical_explanations": [
       "Market orientation often uses purchase histories to understand customers better.\n\nCollecting personal data for that purpose is allowed in the approach; it is not prohibited.\n\nSo the statement is False.",
-      "Mailing coupons before any specifications exist is not the definition of product orientation.\n\nProduct orientation defines the product first, then sells.\n\nSo the statement is False.",
-      "Customer expectations matter for product-oriented firms too — the chapter warns against neglecting markets even with strong specs.\n\nThey are not relevant only to market-oriented firms.\n\nSo the statement is False.",
+      "Product orientation is not defined by mailing coupons before any specifications exist.\n\nSo the statement is False.",
+      "Customer expectations matter for product-oriented firms too — the chapter warns against neglecting markets even with strong specs.\n\nThey are not relevant only to market-oriented businesses. A specs-led firm that ignores shifting wants can still lose the market.\n\nSo the statement is False.",
       "A product-oriented team may refine internal production capabilities at length before surveying buyer priorities.\n\nThat internal-first path matches the orientation.\n\nSo the statement is True.",
       "Product orientation for consumer electronics retailers starts with specifications, not with analysing every customer’s needs first.\n\nNeeds-first is market orientation.\n\nSo the statement is False."
     ],
@@ -6458,10 +6458,10 @@
     ],
     "tactical_explanations": [
       "Product-oriented planning treats internal production capabilities as the primary commercial foundation.\n\nThe firm believes capability and output will carry success.\n\nSo the statement is True.",
-      "High internal feature quality does not let market-oriented consumer electronics retailers ignore customer expectations.\n\nMarket orientation exists to track those expectations.\n\nSo the statement is False.",
+      "High internal feature quality does not let market-oriented consumer electronics retailers ignore customer expectations.\n\nMarket orientation exists to track those expectations; quality alone does not retire the customer focus.\n\nSo the statement is False.",
       "Identical profitability targets do not force identical orientation processes.\n\nTwo retailers can share a profit goal and still differ on specs-first versus needs-first.\n\nSo the statement is False.",
       "CRM keeps personal records between transactions so follow-up is possible.\n\nDeleting everything after each sale would block newsletters and personalised coupons.\n\nSo the statement is False.",
-      "Personalised coupons need identifiable membership. Complete anonymity and personalisation do not travel together.\n\nSo the statement is False."
+      "Personalised coupons need identifiable membership.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6544,11 +6544,11 @@
       false
     ],
     "tactical_explanations": [
-      "Collecting buying-behaviour data is central to CRM practice for consumer electronics retailers, and it enables tailored offers.\n\nSaying the data is unrelated to CRM is wrong.\n\nSo the statement is False.",
+      "Collecting buying-behaviour data is central to CRM for consumer electronics retailers and enables tailored offers.\n\nSaying the data is unrelated to CRM practice is wrong — without those records, personalisation has little to work with.\n\nSo the statement is False.",
       "Market-oriented retailers aim to respond earlier to changing wants, not later.\n\nWaiting for finished specifications first is the product-led delay.\n\nSo the statement is False.",
       "After examining recorded purchase histories, a market-oriented business tailors its offering rather than assuming internal preferences are enough.\n\nSo the statement is True.",
       "Product-oriented consumer electronics retailers do rely on feature quality; they do not abandon strong offerings for coupons alone.\n\nSo the statement is False.",
-      "Product orientation for regional supermarket chains starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False."
+      "Product orientation for supermarket chains starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6573,7 +6573,7 @@
       true
     ],
     "tactical_explanations": [
-      "Market-oriented regional supermarket chains cannot ignore customer expectations just because internal feature quality looks high.\n\nExpectations are the focus of that orientation.\n\nSo the statement is False.",
+      "Market-oriented regional supermarket chains cannot ignore customer expectations just because internal feature quality looks high.\n\nExpectations are the focus of that orientation, so quality never retires the customer reading.\n\nSo the statement is False.",
       "When purchase histories show prior assumptions no longer hold, market-oriented managers adjust promotions.\n\nSo the statement is True.",
       "Market-oriented planning studies identified market requirements before final specifications are locked.\n\nSo the statement is True.",
       "Identical profitability targets do not force identical orientation processes across supermarket chains.\n\nShared goals, different paths remain possible.\n\nSo the statement is False.",
@@ -6602,7 +6602,7 @@
       true
     ],
     "tactical_explanations": [
-      "CRM at regional supermarket chains keeps personal records between trips so reminders and offers can be sent.\n\nPermanent deletion after each transaction would break that model.\n\nSo the statement is False.",
+      "CRM at regional supermarket chains keeps personal records between trips so reminders and offers can be sent.\n\nPermanent deletion after each transaction would break that model and leave the next visit without a usable history.\n\nSo the statement is False.",
       "Personalised coupons need identifiable shoppers. Complete anonymity cannot sit alongside true personalisation.\n\nSo the statement is False.",
       "Buying-behaviour data is part of CRM practice and is how supermarket chains tailor offers.\n\nCalling collection unrelated to CRM is false.\n\nSo the statement is False.",
       "Market-oriented chains try to respond earlier when wants change, not later after specs are finished.\n\nSo the statement is False.",
@@ -6631,7 +6631,7 @@
       false
     ],
     "tactical_explanations": [
-      "Product-oriented supermarket chains still rely on feature and product quality; they do not run on coupons alone without a strong offering.\n\nSo the statement is False.",
+      "Product-oriented supermarket chains still rely on feature and product quality; they do not run on coupons alone without a strong offering.\n\nThe orientation’s bet is the product, not empty promotional noise.\n\nSo the statement is False.",
       "Market-oriented planning studies evolving buyer expectations before locking final product specifications.\n\nSo the statement is True.",
       "Product orientation for fashion garment suppliers starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False.",
       "Market-oriented fashion garment suppliers still track customer expectations even when internal feature quality is high.\n\nIgnoring expectations contradicts the orientation.\n\nSo the statement is False.",
@@ -6661,9 +6661,9 @@
     ],
     "tactical_explanations": [
       "Fashion CRM keeps personal records for follow-up. Deleting them after every transaction would end newsletters and loyalty contact.\n\nSo the statement is False.",
-      "Personalised coupons require identifiable members. Full anonymity and personalisation conflict.\n\nSo the statement is False.",
+      "Personalised coupons require identifiable members.\n\nSo the statement is False.",
       "Collecting buying-behaviour data is how fashion firms tailor CRM offers; it is not unrelated to CRM.\n\nSo the statement is False.",
-      "A market-oriented business examines evolving buyer expectations, then tailors the offering instead of assuming internal preferences suffice.\n\nSo the statement is True.",
+      "A market-oriented business examines evolving buyer expectations, then tailors the offering instead of assuming internal preferences suffice.\n\nThat expectations-first sequence is what separates market orientation from specs-led development.\n\nSo the statement is True.",
       "When those evolving expectations show prior promotion assumptions are stale, market-oriented managers adjust.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -6747,8 +6747,8 @@
       true
     ],
     "tactical_explanations": [
-      "Market-oriented fashion suppliers aim to respond earlier to changing wants, not later while waiting on finished specs.\n\nSo the statement is False.",
-      "After examining requirements from market research, a market-oriented business tailors the offering rather than assuming internal preferences suffice.\n\nSo the statement is True.",
+      "Market-oriented fashion suppliers aim to respond earlier to changing wants, not later.\n\nSo the statement is False.",
+      "After examining requirements from market research, a market-oriented business tailors the offering rather than assuming internal preferences suffice.\n\nResearch sits upstream of the final range, so the firm is not guessing from the design room alone.\n\nSo the statement is True.",
       "Product-oriented fashion suppliers rely on feature quality; they do not depend only on coupons without strong offerings.\n\nSo the statement is False.",
       "Product orientation for software subscription providers starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False.",
       "When market-research requirements show prior promotion assumptions are wrong, market-oriented managers adjust.\n\nSo the statement is True."
@@ -6779,8 +6779,8 @@
       "Wants signalled through repeat purchase patterns are studied before final specifications are locked under market-oriented planning.\n\nSo the statement is True.",
       "The offering is then tailored from those repeat-purchase signals rather than from internal preferences alone.\n\nSo the statement is True.",
       "Market-oriented software subscription providers still attend to customer expectations even when internal feature quality is high.\n\nSo the statement is False.",
-      "Identical profitability targets do not force software providers into identical orientation processes.\n\nSo the statement is False.",
-      "CRM keeps personal records between subscriptions so upgrades and offers can be sent.\n\nDeleting all records after each transaction would block that follow-up.\n\nSo the statement is False."
+      "Identical profitability targets do not force identical orientation processes.\n\nSo the statement is False.",
+      "CRM keeps personal records between subscriptions so upgrades and offers can be sent.\n\nDeleting all records after each transaction would block that follow-up and turn “relationship management” into a one-shot receipt.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6805,9 +6805,9 @@
       true
     ],
     "tactical_explanations": [
-      "Personalised coupons need identifiable members. Loyalty programmes at software providers do not preserve complete anonymity while personalising.\n\nSo the statement is False.",
+      "Personalised coupons need identifiable members.\n\nSo the statement is False.",
       "When repeat-purchase patterns show prior promotion assumptions are stale, market-oriented managers adjust.\n\nSo the statement is True.",
-      "For consumer electronics in hospitality markets, orientation fit depends on the offering and how many rivals compete in that category.\n\nSo the statement is True.",
+      "For consumer electronics in hospitality markets, orientation fit depends on the offering and how many rivals compete in that category.\n\nA specialised hospitality channel with few rivals may tolerate more product-led emphasis; a crowded one usually demands closer reading of buyer wants.\n\nSo the statement is True.",
       "Buying-behaviour data is part of CRM and enables tailored offers for software subscription providers.\n\nCalling collection unrelated to CRM is false.\n\nSo the statement is False.",
       "A hospitality supplier of consumer electronics can share profitability objectives with rivals yet follow a different orientation path.\n\nShared goals do not force shared starting points.\n\nSo the statement is True."
     ],
@@ -6834,9 +6834,9 @@
       true
     ],
     "tactical_explanations": [
-      "High quality in hospitality consumer electronics still does not licence neglecting markets and customer expectations.\n\nSo the statement is True.",
+      "Even high consumer-electronics quality in hospitality does not licence neglecting markets and customer expectations.\n\nSo the statement is True.",
       "For household groceries in retail fashion markets, orientation fit again depends on the offering and rival numbers in that category.\n\nSo the statement is True.",
-      "Market-oriented software subscription providers try to respond earlier to changing wants, not later after specs are finished.\n\nSo the statement is False.",
+      "Market-oriented software subscription providers try to respond earlier to changing wants, not later after specs are finished.\n\nWaiting on a finished specification before noticing demand shifts is the product-led delay, not the market-oriented pattern.\n\nSo the statement is False.",
       "Product-oriented software providers still rely on feature quality rather than coupons alone without a strong offering.\n\nSo the statement is False.",
       "A retail fashion supplier of household groceries may share profitability objectives with rivals while taking a different orientation path.\n\nSo the statement is True."
     ],
@@ -6865,9 +6865,9 @@
     "tactical_explanations": [
       "Product orientation for hotel loyalty programmes defines the offer first; it does not require analysing every customer’s needs before any specifications.\n\nSo the statement is False.",
       "Market-oriented hotel loyalty programmes still track customer expectations even when internal feature quality is high.\n\nSo the statement is False.",
-      "Identical profitability targets do not force hotel loyalty programmes into identical orientation processes.\n\nSo the statement is False.",
+      "Identical profitability targets do not force identical orientation processes for hotel loyalty programmes.\n\nSo the statement is False.",
       "Even strong household grocery quality in retail fashion does not justify neglecting markets and customer expectations.\n\nSo the statement is True.",
-      "Hotel CRM keeps personal guest records between stays. Deleting them after each transaction would end tailored follow-up.\n\nSo the statement is False."
+      "Hotel CRM keeps personal guest records between stays.\n\nDeleting them after each transaction would end tailored follow-up — room preferences, offers, and repeat-stay prompts would have no memory to draw on.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6950,8 +6950,8 @@
       true
     ],
     "tactical_explanations": [
-      "Market-oriented hotels do use guest preferences when shaping offers, but they may still keep a core standard room product while adapting extras around it.\n\nThe absolute reading — that orientation means never offering an unchanged standard product — overreaches how hotels usually operate.\n\nSo the statement is False.",
-      "Hotel loyalty programmes use buying-behaviour data inside CRM to tailor offers.\n\nSaying collection is unrelated to CRM is incorrect.\n\nSo the statement is False.",
+      "Market-oriented hotels do use guest preferences when shaping offers, but they may still keep a core standard room product while adapting extras around it.\n\nReading the claim as “never push any unchanged standard product” overreaches ordinary hotel practice under that orientation.\n\nSo the statement is False.",
+      "Hotel loyalty programmes use buying-behaviour data inside CRM to tailor offers.\n\nSo the statement is False.",
       "Market-oriented hotel loyalty programmes aim to respond earlier to changing wants, not later after finished specifications.\n\nSo the statement is False.",
       "Even strong home furniture quality in healthcare supplies does not justify neglecting markets and customer expectations.\n\nSo the statement is True.",
       "For online grocery deliveries in home improvement markets, orientation fit depends on the offering and how many rivals compete.\n\nSo the statement is True."
@@ -7010,8 +7010,8 @@
     "tactical_explanations": [
       "For corporate catering in education technology markets, orientation suitability depends on the offering and competitor intensity.\n\nSo the statement is True.",
       "An education technology supplier of corporate catering menus may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
-      "High catering quality in that setting still does not excuse neglecting markets and customer expectations.\n\nSo the statement is True.",
-      "Product-oriented hotel loyalty programmes still rely on feature quality of the stay or offer; they do not depend only on coupons without a strong offering.\n\nSo the statement is False.",
+      "High catering quality still does not excuse neglecting markets and customer expectations.\n\nSo the statement is True.",
+      "Product-oriented hotel loyalty programmes still rely on feature quality of the stay or offer; they do not depend only on coupons without a strong offering.\n\nCoupons may support retention, but the orientation’s commercial bet remains the product itself.\n\nSo the statement is False.",
       "For bookshop inventory selections in leisure travel markets, orientation fit depends on the offering and how many rivals compete.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -7039,8 +7039,8 @@
     "tactical_explanations": [
       "Product orientation for dental membership schemes starts with the service specifications, not with analysing every customer’s needs first.\n\nSo the statement is False.",
       "Market-oriented dental membership schemes still track expectations even when internal feature quality looks high.\n\nSo the statement is False.",
-      "A leisure travel supplier of bookshop inventory selections may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
-      "Identical profitability targets do not force dental membership schemes into identical orientation processes.\n\nSo the statement is False.",
+      "A leisure travel supplier of bookshop inventory selections may share profitability objectives with rivals yet follow different orientation paths.\n\nOne path may lock assortment rules early; another may keep reading traveller demand first. Shared profit goals do not erase that difference.\n\nSo the statement is True.",
+      "Identical profitability targets do not force identical orientation processes.\n\nSo the statement is False.",
       "Even strong bookshop inventory quality in leisure travel does not justify neglecting markets and customer expectations.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -7067,9 +7067,9 @@
     ],
     "tactical_explanations": [
       "For vehicle maintenance in specialty cosmetics markets, orientation fit depends on the offering and how many rivals compete in that category.\n\nSo the statement is True.",
-      "Dental membership CRM keeps personal records between visits for reminders and offers.\n\nDeleting all records after each transaction would end that follow-up.\n\nSo the statement is False.",
+      "Dental membership CRM keeps personal records between visits for reminders and offers.\n\nDeleting all records after each transaction would end that follow-up and empty the loyalty toolset the scheme depends on.\n\nSo the statement is False.",
       "A specialty cosmetics supplier of vehicle maintenance services may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
-      "Personalised coupons need identifiable members. Loyalty programmes cannot preserve complete anonymity while still personalising.\n\nSo the statement is False.",
+      "Personalised coupons need identifiable members.\n\nSo the statement is False.",
       "Even strong vehicle maintenance quality in specialty cosmetics leaves markets and customer expectations relevant to the supplier.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
