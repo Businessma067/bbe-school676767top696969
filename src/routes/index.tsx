@@ -289,9 +289,25 @@ export function Index() {
                 BBE School
               </span>
             </div>
-            <p className="text-xs text-muted-foreground">
-              © 2026 BBE School. Not affiliated with WU Vienna.
-            </p>
+            <div className="flex flex-col items-center gap-2 sm:items-end">
+              <nav className="flex items-center gap-4 text-xs">
+                <LocalizedLink
+                  to="/terms"
+                  className="text-muted-foreground hover:text-foreground hover:underline"
+                >
+                  Terms of Service
+                </LocalizedLink>
+                <LocalizedLink
+                  to="/privacy"
+                  className="text-muted-foreground hover:text-foreground hover:underline"
+                >
+                  Privacy Policy
+                </LocalizedLink>
+              </nav>
+              <p className="text-xs text-muted-foreground">
+                © 2026 BBE School. Not affiliated with WU Vienna.
+              </p>
+            </div>
           </div>
         </footer>
       </main>

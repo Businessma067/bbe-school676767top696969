@@ -15,6 +15,7 @@ import { Route as FullCourseRoute } from "@/routes/products.full-course";
 import { Route as ProductsRoute } from "@/routes/products.index";
 import { Route as LiteCourseRoute } from "@/routes/products.lite-bbe-course";
 import { Route as TermsRoute } from "@/routes/terms";
+import { Route as PrivacyRoute } from "@/routes/privacy";
 import { Route as LoginRoute } from "@/routes/login";
 import { Route as SignupRoute } from "@/routes/signup";
 import { Route as ResetPasswordRoute } from "@/routes/reset-password";
@@ -55,6 +56,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/important-features": () => headFrom(ImportantFeaturesRoute),
   "/features/answer-sheet": () => headFrom(AnswerSheetRoute),
   "/terms": () => headFrom(TermsRoute),
+  "/privacy": () => headFrom(PrivacyRoute),
   "/products": () => headFrom(ProductsRoute),
   "/products/demo-practice": () => headFrom(DemoPracticeProductRoute),
   "/products/full-course": () => headFrom(FullCourseRoute),

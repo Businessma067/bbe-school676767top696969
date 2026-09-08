@@ -50,6 +50,9 @@ export const uiExtraDe: Record<string, string> = {
   "Start your WU Vienna BBE preparation.": "Starte deine WU-Wien-BBE-Vorbereitung.",
   "Resend confirmation email": "Bestätigungs-E-Mail erneut senden",
   "I agree to the ": "Ich stimme den ",
+  "Terms of Service": "Nutzungsbedingungen",
+  "Privacy Policy": "Datenschutzrichtlinie",
+  " and ": " und der ",
   "Terms of Service & Privacy Policy": "Nutzungsbedingungen & Datenschutzrichtlinie",
   "Check your email to confirm your account, then sign in.":
     "Prüfe deine E-Mail, um dein Konto zu bestätigen, und melde dich dann an.",
@@ -241,6 +244,9 @@ export const uiExtraUk: Record<string, string> = {
   "Start your WU Vienna BBE preparation.": "Розпочніть підготовку до WU Vienna BBE.",
   "Resend confirmation email": "Надіслати лист підтвердження ще раз",
   "I agree to the ": "Я погоджуюся з ",
+  "Terms of Service": "Умовами використання",
+  "Privacy Policy": "Політикою конфіденційності",
+  " and ": " та ",
   "Terms of Service & Privacy Policy": "Умовами використання та Політикою конфіденційності",
   "Check your email to confirm your account, then sign in.":
     "Перевірте пошту, щоб підтвердити обліковий запис, потім увійдіть.",

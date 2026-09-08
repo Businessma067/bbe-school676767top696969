@@ -300,7 +300,11 @@ export function AuthModal({
               <span>
                 I agree to the{" "}
                 <LocalizedLink to="/terms" className="font-medium text-primary hover:underline">
-                  Terms of Service &amp; Privacy Policy
+                  Terms of Service
+                </LocalizedLink>{" "}
+                and{" "}
+                <LocalizedLink to="/privacy" className="font-medium text-primary hover:underline">
+                  Privacy Policy
                 </LocalizedLink>
                 .
               </span>
