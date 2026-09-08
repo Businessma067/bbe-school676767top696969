@@ -3094,7 +3094,7 @@
     ],
     "tactical_explanations": [
       "The classroom split is standard: micro looks at individual households, businesses, or markets; macro looks at the economy as a whole. That is the sorting rule the teacher’s quiz is testing.\n\nSo the statement is True.",
-      "One consumer choosing organic milk is a single buyer’s decision. That example is microeconomics.\n\nSo the statement is True.",
+      "Organic milk on one shopping trip is a single consumer choosing among grocery options. That household purchase sits in microeconomics, not in national aggregates.\n\nSo the statement is True.",
       "The national unemployment rate summarises the whole labour market. It is a macroeconomic indicator.\n\nSo the statement is True.",
       "At both scopes, economics uses theories about limited resources to explain behaviour and to predict outcomes. Micro and macro differ in the unit studied, not in whether theory and prediction apply.\n\nSo the statement is True.",
       "Mentioning government does not force a macro label. A household applying for one means-tested benefit, or a firm bidding on one public contract, can still be micro if that single unit is the object of study.\n\nMacro needs an economy-wide question — national spending, the price level, aggregate employment — not merely the word “government” in the stem.\n\nSo the statement is False."
@@ -3154,7 +3154,7 @@
       "One farmer allocating scarce irrigation between wheat and vegetables is a single producer’s choice. That is microeconomics.\n\nSo the statement is True.",
       "A bakery resetting its loaf price after flour costs rise is one firm adjusting in its product market. The unit of analysis stays micro even though flour prices may also move in national data.\n\nSo the statement is True.",
       "When only the bus company’s own route fare is under study, the question is firm-level pricing. That keeps the example in microeconomics despite the public-service setting.\n\nSo the statement is True.",
-      "A published national GDP growth rate summarises the entire economy’s output change. That aggregate is macroeconomics.\n\nSo the statement is True.",
+      "Published GDP growth for the whole country compresses every sector into one output figure. Because the summary covers the entire economy, the publication is macroeconomics.\n\nSo the statement is True.",
       "Microeconomics’ job is to explain and predict how individual markets, households, and firms behave under scarcity. Crop mix, loaf pricing, and a single-route fare are all inside that remit.\n\nThe trap to avoid is treating every familiar topic word as macro; scope of the unit analysed still decides the label.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -3210,7 +3210,7 @@
     ],
     "tactical_explanations": [
       "Looking at text-message pricing across the whole national mobile market widens the lens beyond one carrier’s private spreadsheet. Market-wide collusion questions can draw on that broader, aggregate-style reading of the industry.\n\nSo the statement is True.",
-      "The regulators’ object here is national text-message pricing among carriers, not one subscriber’s private plan switch. A lone handset user picking a cheaper plan is a different unit of analysis from that market-wide probe, so the claim does not stand as a correct reading of this case’s question.\n\nSo the statement is False.",
+      "The statement points at one subscriber’s plan choice. In this case the live question is national pricing among three carriers, not that private handset decision, so the letter does not correctly describe the analysis under study.\n\nSo the statement is False.",
       "Economics builds theories of firm behaviour and market outcomes, including how rivalry or collusion shapes prices. Competition-authority questions sit inside that explanatory project.\n\nSo the statement is True.",
       "When analysts isolate one carrier’s pricing strategy alone, the unit is a single firm. That is microeconomics.\n\nSo the statement is True.",
       "Market competition is a central economic topic, especially in micro and industrial organisation. Government budgets matter in public finance, but they do not monopolise the subject or push rivalry off the syllabus.\n\nThe carriers’ alleged text-price collusion is precisely the sort of market-outcome question economics studies.\n\nSo the statement is False."
@@ -3299,7 +3299,7 @@
       "An average household savings rate for the entire country is an economy-wide aggregate. That figure is macroeconomic.\n\nSo the statement is True.",
       "One family raising monthly saving by fifty euros is a single household’s budget change. Calling saving a “national policy topic” in the abstract does not turn that family’s ledger into macro analysis.\n\nMacro is the published national average; micro is this one household’s fifty-euro shift.\n\nSo the statement is False.",
       "Macro’s usual variables include growth, unemployment, inflation, and interest rates. Economy-wide averages such as the national savings rate sit in that same aggregate family.\n\nSo the statement is True.",
-      "Explaining and predicting how aggregate saving moves when interest rates change is standard macroeconomic work.\n\nSo the statement is True.",
+      "Linking the national savings average to interest-rate moves is an aggregate prediction problem. Economics builds that kind of macro explanation routinely.\n\nSo the statement is True.",
       "When the unit analysed is one family’s saving choice alone, the question is microeconomic. The same word “saving” appears in the central bank’s national average, but the object of study — one household versus the countrywide mean — decides the label.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
