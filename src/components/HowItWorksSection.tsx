@@ -166,13 +166,14 @@ export function HowItWorksSection() {
 
           <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.75fr)_minmax(15rem,0.7fr)] lg:gap-8">
             <div className="min-w-0">
-              <div className="overflow-hidden rounded-xl border border-border bg-[#f7f6f2]">
+              {/* Frame matches recording aspect (3420×1966) so object-cover fills with no crop or letterbox. */}
+              <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
                 {tab === "course" ? (
-                  <div className="relative min-h-[16rem] sm:min-h-[22rem] lg:min-h-[28rem] xl:min-h-[30rem]">
+                  <div className="relative aspect-[3420/1966] w-full">
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-contain object-top"
+                      className="absolute inset-0 h-full w-full object-cover"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -183,7 +184,7 @@ export function HowItWorksSection() {
                     />
                   </div>
                 ) : (
-                  <div className="flex min-h-[16rem] items-center justify-center px-6 text-center sm:min-h-[22rem] lg:min-h-[28rem]">
+                  <div className="flex aspect-[3420/1966] w-full items-center justify-center px-6 text-center">
                     <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
                       Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.
                     </p>
