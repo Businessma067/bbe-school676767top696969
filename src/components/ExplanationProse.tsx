@@ -110,8 +110,17 @@ export function ExplanationProse({
           );
         }
         if (chunk.kind === "math") {
+          const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
+          const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
           return (
-            <div key={idx} className="my-4">
+            <div
+              key={idx}
+              className={cn(
+                prevMath || nextMath ? "my-1.5" : "my-4",
+                prevMath && "mt-1",
+                nextMath && "mb-1",
+              )}
+            >
               <FlashcardMath text={chunk.text} displayPrefer />
             </div>
           );

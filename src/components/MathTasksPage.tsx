@@ -1555,8 +1555,17 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
         }
 
         if (chunk.kind === "math") {
+          const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
+          const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
           return (
-            <div key={idx} className="my-5">
+            <div
+              key={idx}
+              className={cn(
+                prevMath || nextMath ? "my-1.5" : "my-5",
+                prevMath && "mt-1",
+                nextMath && "mb-1",
+              )}
+            >
               <FlashcardMath text={chunk.text} displayPrefer />
             </div>
           );
@@ -1577,8 +1586,18 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
             <div key={idx} className="mb-6 mt-5 first:mt-2">
               {stepParas.map((para, j) => {
                 if (isDisplayMathPara(para)) {
+                  const prevMath = j > 0 && isDisplayMathPara(stepParas[j - 1]!);
+                  const nextMath =
+                    j < stepParas.length - 1 && isDisplayMathPara(stepParas[j + 1]!);
                   return (
-                    <div key={j} className="my-5">
+                    <div
+                      key={j}
+                      className={cn(
+                        prevMath || nextMath ? "my-1.5" : "my-5",
+                        prevMath && "mt-1",
+                        nextMath && "mb-1",
+                      )}
+                    >
                       <FlashcardMath text={para} displayPrefer />
                     </div>
                   );
