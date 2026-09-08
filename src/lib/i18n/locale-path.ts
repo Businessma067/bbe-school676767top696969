@@ -20,6 +20,7 @@ export const LOCALIZABLE_PATHS = [
   "/important-features",
   "/features/answer-sheet",
   "/terms",
+  "/privacy",
   "/products",
   "/products/demo-practice",
   "/products/full-course",

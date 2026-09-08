@@ -15,6 +15,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ProductsRouteImport } from './routes/products'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PracticeRouteImport } from './routes/practice'
 import { Route as PaymentResultRouteImport } from './routes/payment-result'
 import { Route as ParentsRouteImport } from './routes/parents'
@@ -107,6 +108,11 @@ const ResetPasswordRoute = ResetPasswordRouteImport.update({
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PracticeRoute = PracticeRouteImport.update({
@@ -458,6 +464,7 @@ export interface FileRoutesByFullPath {
   '/parents': typeof ParentsRoute
   '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
+  '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
@@ -523,6 +530,7 @@ export interface FileRoutesByTo {
   '/parents': typeof ParentsRoute
   '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
+  '/privacy': typeof PrivacyRoute
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -592,6 +600,7 @@ export interface FileRoutesById {
   '/parents': typeof ParentsRoute
   '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
+  '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
@@ -665,6 +674,7 @@ export interface FileRouteTypes {
     | '/parents'
     | '/payment-result'
     | '/practice'
+    | '/privacy'
     | '/products'
     | '/reset-password'
     | '/signup'
@@ -730,6 +740,7 @@ export interface FileRouteTypes {
     | '/parents'
     | '/payment-result'
     | '/practice'
+    | '/privacy'
     | '/reset-password'
     | '/signup'
     | '/sitemap.xml'
@@ -798,6 +809,7 @@ export interface FileRouteTypes {
     | '/parents'
     | '/payment-result'
     | '/practice'
+    | '/privacy'
     | '/products'
     | '/reset-password'
     | '/signup'
@@ -870,6 +882,7 @@ export interface RootRouteChildren {
   ParentsRoute: typeof ParentsRoute
   PaymentResultRoute: typeof PaymentResultRoute
   PracticeRoute: typeof PracticeRoute
+  PrivacyRoute: typeof PrivacyRoute
   ProductsRoute: typeof ProductsRouteWithChildren
   ResetPasswordRoute: typeof ResetPasswordRoute
   SignupRoute: typeof SignupRoute
@@ -926,6 +939,13 @@ declare module '@tanstack/react-router' {
       path: '/products'
       fullPath: '/products'
       preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/practice': {
@@ -1549,6 +1569,7 @@ const rootRouteChildren: RootRouteChildren = {
   ParentsRoute: ParentsRoute,
   PaymentResultRoute: PaymentResultRoute,
   PracticeRoute: PracticeRoute,
+  PrivacyRoute: PrivacyRoute,
   ProductsRoute: ProductsRouteWithChildren,
   ResetPasswordRoute: ResetPasswordRoute,
   SignupRoute: SignupRoute,

@@ -12,6 +12,7 @@ import { ParentsPage } from "@/routes/parents";
 import { ImportantFeaturesPage } from "@/routes/important-features";
 import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
 import { TermsPage } from "@/routes/terms";
+import { PrivacyPage } from "@/routes/privacy";
 import { ProductsPage } from "@/routes/products.index";
 import { DemoPracticeProduct } from "@/routes/products.demo-practice";
 import { FullCourseProduct } from "@/routes/products.full-course";
@@ -41,6 +42,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/important-features": ImportantFeaturesPage,
   "/features/answer-sheet": AnswerSheetFeaturePage,
   "/terms": TermsPage,
+  "/privacy": PrivacyPage,
   "/products": ProductsPage,
   "/products/demo-practice": DemoPracticeProduct,
   "/products/full-course": FullCourseProduct,

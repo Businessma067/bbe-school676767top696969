@@ -78,7 +78,7 @@ export function isSitemapIndexablePath(pathname: string): boolean {
 function priorityFor(englishPath: string): string {
   if (englishPath === "/") return "1.0";
   if (englishPath === "/products") return "0.9";
-  if (englishPath === "/terms") return "0.3";
+  if (englishPath === "/terms" || englishPath === "/privacy") return "0.3";
   if (englishPath === "/important-features" || englishPath === "/features/answer-sheet") {
     return "0.6";
   }
