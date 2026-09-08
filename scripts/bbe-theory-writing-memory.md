@@ -103,6 +103,7 @@ Do:
 Avoid:
 
 - Em-dashes and dash piles (`—`, long ` – ` chains). Prefer commas, periods, or “so / because / which”.
+- Economics theory (ch2–ch6): avoid em dashes in student-facing prose. Use commas, colons, or short parentheses for asides. Keep en dashes only for true ranges or compounds if needed.
 - AI filler: “It is important to note”, “In conclusion”, “delve”, “robust”, “leverage”, “comprehensive overview”.
 - Over-formal textbook stacking with many semicolons.
 - Fake enthusiasm or marketing tone.
