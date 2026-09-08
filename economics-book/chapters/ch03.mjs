@@ -1,9 +1,9 @@
 export default {
   "num": 3,
   "title": "Focus on different types of businesses",
-  "intro": "Chapter 2 showed how households and businesses meet in markets; Chapter 3 asks a sharper question about what you do once you can see a business at all — namely, how you describe it accurately. Two firms can both sell to customers and still differ in the resources they combine, the sector they sit in, whether profit is the mission, how large they are, and how far their market reaches. Once you overlay stakeholder interests on that map, you can classify almost any organisation the exam throws at you.",
+  "intro": "Chapter 2 showed how households and businesses meet in markets; Chapter 3 asks a sharper question about what you do once you can see a business at all, namely, how you describe it accurately. Two firms can both sell to customers and still differ in the resources they combine, the sector they sit in, whether profit is the mission, how large they are, and how far their market reaches. Once you overlay stakeholder interests on that map, you can classify almost any organisation the exam throws at you.",
   "objectives": [
-    "Name the factors of production (land, labour, capital, entrepreneurship/enterprise) and sort concrete inputs into the right factor.",
+    "Name the factors of production (land, labour, capital, entrepreneurship/enterprise), and sort concrete inputs into the right factor.",
     "Classify activity as primary, secondary or tertiary, and explain why developed economies are tertiary-heavy.",
     "Distinguish profit-oriented businesses from not-for-profit organisations without claiming either can ignore cash.",
     "Measure business size with employees, turnover and balance-sheet total, and place a firm as micro, small, medium or large using course thresholds.",
@@ -26,11 +26,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "Those four core factors fit together in a particular way: **land** supplies natural resources, **labour** supplies human effort and skill, and **capital** supplies produced means of production together with the financial resources that keep operations running, while **entrepreneurship** — or enterprise — is the organising factor that combines the others, chooses what to make, and bears the risk that the plan fails. Without enterprise, land, labour and capital sit idle or misaligned, which is why classification tasks always ask not only what resources are present but who is coordinating them."
+          "text": "Those four core factors fit together in a particular way: **land** supplies natural resources, **labour** supplies human effort and skill, and **capital** supplies produced means of production together with the financial resources that keep operations running, while **entrepreneurship** (or enterprise) is the organising factor that combines the others, chooses what to make, and bears the risk that the plan fails. Without enterprise, land, labour and capital sit idle or misaligned, which is why classification tasks always ask not only what resources are present but who is coordinating them."
         },
         {
           "type": "p",
-          "text": "In course language, **land** covers natural resources used in production — soil, water, minerals, forests, fisheries, and sites with natural character — so HarborGlow’s coastal workshop site and the copper ore’s origin before refining sit in that category. **Labour** covers all human resources applied in production, manual and mental, permanent and seasonal, which means cutters, assemblers, a bookkeeper and a quality checker all count. **Capital** covers machinery, plant, vehicles and the financial resources used to operate, including HarborGlow’s press, leased laser cutter, delivery van and cash for payroll. **Entrepreneurship** brings land, labour and capital together, coordinates decisions and bears business risk — the founder choosing the model range, signing shop contracts and absorbing the risk of unsold stock."
+          "text": "In course language, **land** covers natural resources used in production, soil, water, minerals, forests, fisheries, and sites with natural character, so HarborGlow’s coastal workshop site and the copper ore’s origin before refining sit in that category. **Labour** covers all human resources applied in production, manual and mental, permanent and seasonal, which means cutters, assemblers, a bookkeeper and a quality checker all count. **Capital** covers machinery, plant, vehicles and the financial resources used to operate, including HarborGlow’s press, leased laser cutter, delivery van and cash for payroll. **Entrepreneurship** brings land, labour and capital together, coordinates decisions and bears business risk, the founder choosing the model range, signing shop contracts and absorbing the risk of unsold stock."
         },
         {
           "type": "p",
@@ -51,7 +51,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "If a technician replaces a phone screen using a spare part from inventory, the technician is **labour** and the spare part is **capital**, while **entrepreneurship** belongs to whoever organises the venture and bears its risk — for example a franchise owner deciding which repairs to advertise this month. A common mistake is to treat labour as only physical work, capital as only owned machines, or entrepreneurship as any purchase decision; labour includes office and service work, leased tools remain capital, and spending money alone is not entrepreneurship, because organising factors and bearing business risk is. Exam vignettes about a winery, repair shop, factory or insurer usually ask whether a named item is land, labour, capital or entrepreneurship, so translate the item into the factor definition first and watch for false splits such as “services use only labour” or “risk-bearing is labour because it takes time.” Factors of production are the micro building blocks that later feed sector classification — what the firm mainly does — and stakeholder analysis — who supplies or depends on those factors."
+          "text": "If a technician replaces a phone screen using a spare part from inventory, the technician is **labour** and the spare part is **capital**, while **entrepreneurship** belongs to whoever organises the venture and bears its risk, for example a franchise owner deciding which repairs to advertise this month. A common mistake is to treat labour as only physical work, capital as only owned machines, or entrepreneurship as any purchase decision; labour includes office and service work, leased tools remain capital, and spending money alone is not entrepreneurship, because organising factors and bearing business risk is. Exam vignettes about a winery, repair shop, factory or insurer usually ask whether a named item is land, labour, capital or entrepreneurship, so translate the item into the factor definition first and watch for false splits such as “services use only labour” or “risk-bearing is labour because it takes time.” Factors of production are the micro building blocks that later feed sector classification (what the firm mainly does), and stakeholder analysis, who supplies or depends on those factors."
         }
       ]
     },
@@ -66,16 +66,16 @@ export default {
         {
           "type": "idea",
           "term": "Three-sector model",
-          "text": "The three-sector model sorts economic activity into **primary** (extraction of raw materials), **secondary** (manufacturing transformation into goods) and **tertiary** (services)."
+          "text": "The three-sector model sorts economic activity into **primary** (extraction of raw materials), **secondary** (manufacturing transformation into goods), and **tertiary** (services)."
         },
         {
           "type": "figure",
           "id": "economic-sectors",
-          "caption": "Economic sectors — primary extracts, secondary manufactures, tertiary serves. Follow the main activity of the business, not the story of the raw material alone."
+          "caption": "Economic sectors, primary extracts, secondary manufactures, tertiary serves. Follow the main activity of the business, not the story of the raw material alone."
         },
         {
           "type": "p",
-          "text": "To assign a sector, ask what the business mainly does day to day. If it extracts or harvests from nature, it is **primary** — farming, fishing, mining, forestry. If it transforms materials into goods, it is **secondary** — cars, ships, machinery, circuit boards, clothing, computers. If it provides services such as distribution, banking, insurance, coaching, technical support or retail, it is **tertiary**. A retailer of packaged food is **tertiary** even though the food began on a farm, because the firm’s main operation is distribution and service rather than extraction or fabrication."
+          "text": "To assign a sector, ask what the business mainly does day to day. If it extracts or harvests from nature, it is **primary**, farming, fishing, mining, forestry. If it transforms materials into goods, it is **secondary**, cars, ships, machinery, circuit boards, clothing, computers. If it provides services such as distribution, banking, insurance, coaching, technical support or retail, it is **tertiary**. A retailer of packaged food is **tertiary** even though the food began on a farm, because the firm’s main operation is distribution and service rather than extraction or fabrication."
         },
         {
           "type": "p",
@@ -87,7 +87,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "As economic development advances, the **tertiary sector** usually grows in importance. In highly developed economies — for example EU countries with high GDP per capita — the tertiary sector commonly accounts for **more than 70%** of economic output, while the **primary sector** is a small percentage of output even though food production remains vital."
+          "text": "As economic development advances, the **tertiary sector** usually grows in importance. In highly developed economies (for example EU countries with high GDP per capita), the tertiary sector commonly accounts for **more than 70%** of economic output, while the **primary sector** is a small percentage of output even though food production remains vital."
         },
         {
           "type": "idea",
@@ -120,11 +120,11 @@ export default {
         {
           "type": "idea",
           "term": "Not-for-profit organisation (NPO)",
-          "text": "A not-for-profit organisation mainly aims to **cover costs** while pursuing a **mission**. It still needs revenues — often donations, fees, grants or membership income — and may generate a surplus, but that surplus is reinvested into services or projects rather than treated as private profit as the organisation’s purpose."
+          "text": "A not-for-profit organisation mainly aims to **cover costs** while pursuing a **mission**. It still needs revenues (often donations, fees, grants or membership income), and may generate a surplus, but that surplus is reinvested into services or projects rather than treated as private profit as the organisation’s purpose."
         },
         {
           "type": "p",
-          "text": "**Surplus** still matters for NPOs because covering costs is not optional: without enough inflow, an NPO cannot deliver aid, culture or environmental work, and a surplus is useful precisely because it funds more projects and stronger delivery. The difference from a profit-oriented firm is the **primary aim** and how success is judged — **mission delivery** plus financial sustainability versus **financial return** alongside viability."
+          "text": "**Surplus** still matters for NPOs because covering costs is not optional: without enough inflow, an NPO cannot deliver aid, culture or environmental work, and a surplus is useful precisely because it funds more projects and stronger delivery. The difference from a profit-oriented firm is the **primary aim** and how success is judged, **mission delivery** plus financial sustainability versus **financial return** alongside viability."
         },
         {
           "type": "table",
@@ -137,7 +137,7 @@ export default {
           "rows": [
             [
               "Primary aim",
-              "Earn profits (revenues above costs) as a central goal",
+              "Earn profits (revenues above costs), as a central goal",
               "Cover costs while pursuing a mission"
             ],
             [
@@ -164,7 +164,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "A private language school that expands campuses when forecast profit covers rent risk is **profit-oriented**, whereas an international relief organisation that raises donations for emergency shelters, covers overheads and uses excess to expand programmes is **not-for-profit**. Both monitor cash weekly; only the school treats owner profit as a core success score, so cash discipline is shared while purpose and surplus destination separate the two types. If an environmental NPO sells branded water bottles to fund river clean-ups and ends the year with a surplus, that surplus does not automatically turn it into a profit-oriented business, provided the surplus continues to strengthen mission delivery rather than private owner return. Believing NPOs need no money, or that any surplus proves the organisation is secretly profit-oriented, confuses means with purpose; conversely, a firm that reinvests heavily can still be profit-oriented if owner return remains a central aim. Look for **aim language** — “reward investors” versus “cover costs / mission” — and remember that needing revenue is not the same as being profit-oriented. Profit orientation also shapes which stakeholders push hardest, investors seeking return versus donors seeking mission proof, which Section 3.6 develops."
+          "text": "A private language school that expands campuses when forecast profit covers rent risk is **profit-oriented**, whereas an international relief organisation that raises donations for emergency shelters, covers overheads and uses excess to expand programmes is **not-for-profit**. Both monitor cash weekly; only the school treats owner profit as a core success score, so cash discipline is shared while purpose and surplus destination separate the two types. If an environmental NPO sells branded water bottles to fund river clean-ups and ends the year with a surplus, that surplus does not automatically turn it into a profit-oriented business, provided the surplus continues to strengthen mission delivery rather than private owner return. Believing NPOs need no money, or that any surplus proves the organisation is secretly profit-oriented, confuses means with purpose; conversely, a firm that reinvests heavily can still be profit-oriented if owner return remains a central aim. Look for **aim language** (“reward investors” versus “cover costs / mission”), and remember that needing revenue is not the same as being profit-oriented. Profit orientation also shapes which stakeholders push hardest, investors seeking return versus donors seeking mission proof, which Section 3.6 develops."
         }
       ]
     },
@@ -174,7 +174,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "Three bike businesses can share one street name in conversation — a two-person repair loft, a regional frame workshop with dozens of staff, and a listed group with thousands of employees worldwide — and customers may say “bike company” for all three, yet size measures force a clearer label once **headcount** and **financial ceilings** enter the picture."
+          "text": "Three bike businesses can share one street name in conversation, a two-person repair loft, a regional frame workshop with dozens of staff, and a listed group with thousands of employees worldwide, and customers may say “bike company” for all three, yet size measures force a clearer label once **headcount** and **financial ceilings** enter the picture."
         },
         {
           "type": "idea",
@@ -244,7 +244,7 @@ export default {
         {
           "type": "idea",
           "term": "Local (regional) business",
-          "text": "A local or regional business operates in a **limited area**. Most customers live nearby. It does not serve a national or international market. Typical early-stage challenges include winning enough local customers and avoiding **undercapitalisation** — own funds are thin and extra finance is hard to obtain."
+          "text": "A local or regional business operates in a **limited area**. Most customers live nearby. It does not serve a national or international market. Typical early-stage challenges include winning enough local customers and avoiding **undercapitalisation**: own funds are thin and extra finance is hard to obtain."
         },
         {
           "type": "idea",
@@ -258,7 +258,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "Wider reach raises **coordination load** because each step outward adds interfaces: local firms fight for nearby demand and cash, national firms must design domestic logistics and consistent delivery, and international firms add borders with rules, cultures, languages and currency risk. As more firms operate across borders, markets and production integrate more deeply — the process called **globalisation**."
+          "text": "Wider reach raises **coordination load** because each step outward adds interfaces: local firms fight for nearby demand and cash, national firms must design domestic logistics and consistent delivery, and international firms add borders with rules, cultures, languages and currency risk. As more firms operate across borders, markets and production integrate more deeply, the process called **globalisation**."
         },
         {
           "type": "idea",
@@ -271,7 +271,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "A neighbourhood bike workshop with clients within a few kilometres is **local**; a supermarket chain in every major city of one country and none abroad is **national**; and a components manufacturer with plants in Europe and Asia selling worldwide is **international** or **multinational**. The same product family can sit at any reach level, because the market map decides the label. An online tutor who teaches only students in one country remains national for Chapter 3 reach classification even if servers and payment processors sit abroad, because the market definition that matters most is where customers are served rather than where every technical component sits. Calling any firm with an imported input “international,” or treating multinational as a synonym for “large,” confuses inputs and size with reach: reach is about where the firm makes and/or sells, so a micro exporter can be international while a huge domestic chain can remain national. Vignettes usually stress customer geography and plant locations; match local, national or international definitions, then mention the matching challenge — undercapitalisation, domestic logistics, or cross-border complexity. Wider reach also multiplies stakeholders across communities and governments, which the next section takes up."
+          "text": "A neighbourhood bike workshop with clients within a few kilometres is **local**; a supermarket chain in every major city of one country and none abroad is **national**; and a components manufacturer with plants in Europe and Asia selling worldwide is **international** or **multinational**. The same product family can sit at any reach level, because the market map decides the label. An online tutor who teaches only students in one country remains national for Chapter 3 reach classification even if servers and payment processors sit abroad, because the market definition that matters most is where customers are served rather than where every technical component sits. Calling any firm with an imported input “international,” or treating multinational as a synonym for “large,” confuses inputs and size with reach: reach is about where the firm makes and/or sells, so a micro exporter can be international while a huge domestic chain can remain national. Vignettes usually stress customer geography and plant locations; match local, national or international definitions, then mention the matching challenge, undercapitalisation, domestic logistics, or cross-border complexity. Wider reach also multiplies stakeholders across communities and governments, which the next section takes up."
         }
       ]
     },
@@ -281,7 +281,7 @@ export default {
       "blocks": [
         {
           "type": "p",
-          "text": "At MeadowMill, which processes dairy for supermarket buyers, owners want faster fulfilment and night shifts would please buyers while raising utilisation, yet residents hate lorry noise after 22:00, tired staff worry about safety, and a river community watches wastewater quality. One decision, several legitimate interests — that is **stakeholder** reality."
+          "text": "At MeadowMill, which processes dairy for supermarket buyers, owners want faster fulfilment and night shifts would please buyers while raising utilisation, yet residents hate lorry noise after 22:00, tired staff worry about safety, and a river community watches wastewater quality. One decision, several legitimate interests, that is **stakeholder** reality."
         },
         {
           "type": "idea",
@@ -291,26 +291,26 @@ export default {
         {
           "type": "idea",
           "term": "Shareholder",
-          "text": "A shareholder is an owner of **shares** in a corporation — a specific ownership stake. Shareholders are stakeholders, but **not all stakeholders are shareholders**. Employees, customers, suppliers, neighbours and regulators can have strong interests without owning shares."
+          "text": "A shareholder is an owner of **shares** in a corporation, a specific ownership stake. Shareholders are stakeholders, but **not all stakeholders are shareholders**. Employees, customers, suppliers, neighbours and regulators can have strong interests without owning shares."
         },
         {
           "type": "figure",
           "id": "stakeholder-map",
-          "caption": "Stakeholders of a business — the firm at the centre, with owners, managers, employees, customers, suppliers, government, communities and the environment around it."
+          "caption": "Stakeholders of a business, the firm at the centre, with owners, managers, employees, customers, suppliers, government, communities and the environment around it."
         },
         {
           "type": "p",
-          "text": "**Internal stakeholders** operate inside the organisation — owners and shareholders, managers and employees — while **external stakeholders** sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local, national and international communities, and the natural environment. Managers may or may not also be owners."
+          "text": "**Internal stakeholders** operate inside the organisation (owners and shareholders, managers and employees), while **external stakeholders** sit outside day-to-day membership but are affected by or interested in the firm: customers, suppliers, government, local, national and international communities, and the natural environment. Managers may or may not also be owners."
         },
         {
           "type": "figure",
           "id": "values-vision",
-          "caption": "Interdependencies of people, values, objectives and vision — alignment supports long-run success."
+          "caption": "Interdependencies of people, values, objectives and vision, alignment supports long-run success."
         },
         {
           "type": "figure",
           "id": "environment-impact",
-          "caption": "Business activities affect the environment through energy, materials, water and products in use — concrete results matter more than greenwashing claims."
+          "caption": "Business activities affect the environment through energy, materials, water and products in use, concrete results matter more than greenwashing claims."
         },
         {
           "type": "p",
@@ -318,11 +318,11 @@ export default {
         },
         {
           "type": "p",
-          "text": "**Shareholders** own shares in a company and are a **subset of stakeholders** who care strongly about returns and firm value, and who can sell shares or the business to realise gains. Other stakeholders may have no ownership stake at all — staff, buyers, suppliers, the state, communities and the environment — yet they care about jobs, prices, payment, rules and local quality of life, and they can enable or block the firm even without shares."
+          "text": "**Shareholders** own shares in a company and are a **subset of stakeholders** who care strongly about returns and firm value, and who can sell shares or the business to realise gains. Other stakeholders may have no ownership stake at all, staff, buyers, suppliers, the state, communities and the environment, yet they care about jobs, prices, payment, rules and local quality of life, and they can enable or block the firm even without shares."
         },
         {
           "type": "p",
-          "text": "Owners invest capital and seek a payoff for risk; successful trading can raise business value — often reflected in share prices for companies — which owners may realise by selling shares or the whole business, though profit need not be their only goal when solving customer problems and contributing to social welfare also matter. Managers and employees depend on the firm for income and often for identity, while the firm depends on them in return, and shared values and objectives support long-run success. Suppliers and customers create mutual dependency because quality, quantity and timing of inputs must match production needs while payment and future orders keep suppliers alive, and because customers need reliable offers while the firm needs their demand. Communities and government are affected through jobs, taxes, congestion and pollution, and environmental responsibility requires concrete results rather than greenwashing — claiming friendliness without proven action."
+          "text": "Owners invest capital and seek a payoff for risk; successful trading can raise business value (often reflected in share prices for companies), which owners may realise by selling shares or the whole business, though profit need not be their only goal when solving customer problems and contributing to social welfare also matter. Managers and employees depend on the firm for income and often for identity, while the firm depends on them in return, and shared values and objectives support long-run success. Suppliers and customers create mutual dependency because quality, quantity and timing of inputs must match production needs while payment and future orders keep suppliers alive, and because customers need reliable offers while the firm needs their demand. Communities and government are affected through jobs, taxes, congestion and pollution, and environmental responsibility requires concrete results rather than greenwashing, claiming friendliness without proven action."
         },
         {
           "type": "p",
@@ -330,7 +330,7 @@ export default {
         },
         {
           "type": "p",
-          "text": "At MeadowMill, the night-shift proposal touches family owners, plant managers, production staff, milk suppliers, supermarket buyers, municipal government, nearby residents and the river ecosystem. Owners and some buyers gain speed, residents lose quiet, staff face fatigue risk, and wastewater timing may worry environmental monitors, so decision quality depends on recognising the conflict early rather than denying that residents or staff are stakeholders. Conflicting interests are normal; classification skill is listing who is affected and what each group wants before choosing a path. If a city council cuts a supplier’s night delivery permit to protect residents, nearby residents and the municipal government gain on quiet and regulation, while managers, owners and staff inside the firm are most likely pressured next by slower fulfilment and higher coordination cost. Equating “**stakeholder**” with “**shareholder**,” assuming only people inside the firm count, or treating environmental claims as enough without activities and proven results, are the usual traps. Questions often mix ownership language with staff, suppliers, communities and environment, so ask who is affected or interested, who owns shares, whether the group is internal or external, and where aims clash. Legal structure and finance in later chapters sit beside stakeholder management as success factors, and Chapter 4 turns to ownership forms and finance — how shareholders, partners and sole owners differ legally — while this section keeps the wider interest map in view."
+          "text": "At MeadowMill, the night-shift proposal touches family owners, plant managers, production staff, milk suppliers, supermarket buyers, municipal government, nearby residents and the river ecosystem. Owners and some buyers gain speed, residents lose quiet, staff face fatigue risk, and wastewater timing may worry environmental monitors, so decision quality depends on recognising the conflict early rather than denying that residents or staff are stakeholders. Conflicting interests are normal; classification skill is listing who is affected and what each group wants before choosing a path. If a city council cuts a supplier’s night delivery permit to protect residents, nearby residents and the municipal government gain on quiet and regulation, while managers, owners and staff inside the firm are most likely pressured next by slower fulfilment and higher coordination cost. Equating “**stakeholder**” with “**shareholder**,” assuming only people inside the firm count, or treating environmental claims as enough without activities and proven results, are the usual traps. Questions often mix ownership language with staff, suppliers, communities and environment, so ask who is affected or interested, who owns shares, whether the group is internal or external, and where aims clash. Legal structure and finance in later chapters sit beside stakeholder management as success factors, and Chapter 4 turns to ownership forms and finance (how shareholders, partners and sole owners differ legally), while this section keeps the wider interest map in view."
         }
       ]
     }
