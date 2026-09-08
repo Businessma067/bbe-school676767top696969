@@ -3,13 +3,18 @@ import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { requireAdmin } from "@/lib/require-admin.server";
 import { COURSE_CATALOG, type CourseSlug } from "@/lib/user-progress";
-import { DISCOUNT_CODE, DISCOUNT_PCT, isPaidProductSlug } from "@/lib/checkout-catalog";
+import {
+  DISCOUNT_CODE,
+  DISCOUNT_PCT,
+  HARDCODED_DISCOUNT_PROMOS,
+  isPaidProductSlug,
+} from "@/lib/checkout-catalog";
 
 const MAX_ATTEMPTS_PER_IP = 10;
 const ATTEMPT_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 const MIGRATION_HINT =
-  "Promocode tables are missing in Supabase. Run supabase/migrations/20260829210000_promocodes.sql and supabase/migrations/20260907180000_discount_promocodes.sql in the Supabase SQL Editor, then reload.";
+  "Promocode tables are missing in Supabase. Run supabase/migrations/20260908121000_promocodes_bootstrap_30_full.sql in the Supabase/Lovable SQL Editor, then reload.";
 
 const RedeemInput = z.object({
   code: z.string().min(1).max(64),
@@ -188,7 +193,29 @@ export async function lookupDiscountPromo(input: {
     console.error("lookupDiscountPromo", err);
   }
 
-  // Legacy hardcoded discount (pre-migration / backwards compatible).
+  // Hardcoded discounts (pre-migration / when DB table is missing).
+  const hardcoded = HARDCODED_DISCOUNT_PROMOS.find((p) => normalizeCode(p.code) === code);
+  if (hardcoded) {
+    if (isExpired(hardcoded.expiresAt)) {
+      return { ok: false, error: "This promocode has expired." };
+    }
+    const applies =
+      hardcoded.productSlug === "any-paid" ||
+      !input.productSlug ||
+      hardcoded.productSlug === input.productSlug;
+    if (!applies) {
+      return { ok: false, error: "This promocode does not apply to this course." };
+    }
+    return {
+      ok: true,
+      code: normalizeCode(hardcoded.code),
+      discountPct: hardcoded.discountPct,
+      name: hardcoded.name,
+      expiresAt: hardcoded.expiresAt,
+    };
+  }
+
+  // Keep single-code legacy alias (mixed case in older UI copy).
   if (code === normalizeCode(DISCOUNT_CODE)) {
     return {
       ok: true,
@@ -425,10 +452,37 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
       .order("kind", { ascending: true })
       .order("code", { ascending: true });
 
+    const hardcodedRows = (): AdminPromocodeRow[] =>
+      HARDCODED_DISCOUNT_PROMOS.map((p) => ({
+        id: `hardcoded-${normalizeCode(p.code)}`,
+        code: normalizeCode(p.code),
+        name: p.name,
+        kind: "discount" as const,
+        productSlug: p.productSlug,
+        discountPct: p.discountPct,
+        maxUses: null,
+        expiresAt: p.expiresAt,
+        usedAt: null,
+        usedBy: null,
+        usedByEmail: null,
+        createdAt: new Date(0).toISOString(),
+        useCount: 0,
+        usages: [],
+        status: isExpired(p.expiresAt) ? ("expired" as const) : ("active" as const),
+      }));
+
     if (error) {
       console.error("adminListPromocodes", error);
       if (isMissingRelationError(error)) {
-        return { ok: false, error: MIGRATION_HINT };
+        // Table missing: still surface hardcoded active discount codes so admin isn't empty.
+        const codes = hardcodedRows();
+        return {
+          ok: true,
+          codes,
+          available: 0,
+          used: 0,
+          activeDiscounts: codes.filter((c) => c.status === "active").length,
+        };
       }
       return { ok: false, error: errorMessage(error, "Failed to load promocodes") };
     }
@@ -503,6 +557,18 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
         usages,
         status,
       };
+    });
+
+    // Merge hardcoded discounts that are not yet present in DB.
+    const existing = new Set(codes.map((c) => normalizeCode(c.code)));
+    for (const row of hardcodedRows()) {
+      if (!existing.has(normalizeCode(row.code))) {
+        codes.push(row);
+      }
+    }
+    codes.sort((a, b) => {
+      if (a.kind !== b.kind) return a.kind < b.kind ? -1 : 1;
+      return a.code.localeCompare(b.code);
     });
 
     const used = codes.filter((c) => c.kind === "unlock" && c.status === "used").length;

@@ -71,13 +71,9 @@ function AdminPromocodesPage() {
           <p className="text-xs text-destructive/80">
             Open Supabase → SQL Editor, paste{" "}
             <code className="rounded bg-destructive/10 px-1">
-              supabase/migrations/20260907180000_discount_promocodes.sql
+              supabase/migrations/20260908121000_promocodes_bootstrap_30_full.sql
             </code>{" "}
-            (and{" "}
-            <code className="rounded bg-destructive/10 px-1">
-              20260908120000_discount_promocodes_30_full.sql
-            </code>{" "}
-            for 30% Full codes), run it, then refresh this page.
+            (creates tables + 30% Full codes), run it, then refresh this page.
           </p>
         </div>
       ) : null}
