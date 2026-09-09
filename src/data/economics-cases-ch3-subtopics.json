@@ -21,7 +21,7 @@
     "tactical_explanations": [
       "Managers who line up shifts and materials are still human inputs. Coordination is labour as much as lifting crates — the factor is the person, not only the muscle work.\n\nSo the statement is True.",
       "Claims handlers who process policies are labour in a service firm. Labour is not limited to making physical goods; people delivering services count the same way.\n\nSo the statement is True.",
-      "Labour is not a shop-floor-only label. Planners and accountants are human resources in production too, so excluding them is the wrong cut.\n\nCounterexample: a plant accountant scheduling payroll still supplies labour.\n\nSo the statement is False.",
+      "Labour is not a shop-floor-only label. Planners and accountants are human resources in production too, so excluding them is the wrong cut. Counterexample: a plant accountant scheduling payroll still supplies labour.\n\nSo the statement is False.",
       "Installing software is skilled human work for a client — that is labour. Calling it a “want” mixes up demand language with the factor that produces the service. Intangibility of the output does not stop the input from being labour.\n\nSo the statement is False.",
       "Seasonal pickers are still human resources while they work the harvest. Contract length does not knock them out of the labour factor.\n\nSo the statement is False."
     ],
@@ -340,7 +340,7 @@
     "tactical_explanations": [
       "A leased bottling line still performs the bottling function for the winery. Capital follows productive use of produced equipment, not the name on the title deed.\n\nSo the statement is True.",
       "Warehouse robots on lease beside pickers are produced equipment in the hub. They remain capital while they move goods, rented or owned.\n\nSo the statement is True.",
-      "Renting the building only settles who owns the walls. Tools, machines, and lines installed for production still count as capital while they bottle, cut, or pack — lease of premises does not empty the capital category.\n\nCounterexample: a leased warehouse full of owned conveyors still has those conveyors as capital.\n\nSo the statement is False.",
+      "Renting the building only settles who owns the walls. Tools, machines, and lines installed for production still count as capital while they bottle, cut, or pack — lease of premises does not empty the capital category. Counterexample: a leased warehouse full of owned conveyors still has those conveyors as capital.\n\nSo the statement is False.",
       "Hire-purchase machines are capital equipment. Standing in a workshop does not turn them into land — land is natural resources, not bolted-down plant.\n\nSo the statement is False.",
       "Seasonal outdoor use does not reclassify machinery as land. Harvesters and similar gear stay capital; land is the terrain or natural resource they work on.\n\nSo the statement is False."
     ],
@@ -1095,7 +1095,7 @@
       "Lining up parts orders and bookings in a repair shop is the organising role — entrepreneurship for that business.\n\nSo the statement is True.",
       "Scheduling shifts and sourcing materials at a manufacturer is entrepreneurial coordination of labour and capital.\n\nSo the statement is True.",
       "Deciding how robots and manual pick teams work together is entrepreneurship in logistics — organising the factor mix on the floor.\n\nSo the statement is True.",
-      "Writing a cheque or tapping a card is not automatically entrepreneurship. Organising production and carrying business uncertainty is the factor; everyday spending without that organising role does not qualify.\n\nBuying coffee for the office is the usual counterexample.\n\nSo the statement is False.",
+      "Writing a cheque or tapping a card is not automatically entrepreneurship. Organising production and carrying business uncertainty is the factor; everyday spending without that organising role does not qualify. Buying coffee for the office is the usual counterexample.\n\nSo the statement is False.",
       "Choosing barrel suppliers and picker contracts at a winery is entrepreneurial organising of capital and labour around the harvest.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -1472,7 +1472,7 @@
       "Mining pulls ore from the ground — that is primary extraction. Smelting turns ore into metal ingots, which is a manufacturing step, so it sits in the secondary sector.\n\nSo the statement is True.",
       "Banking, insurance, and coaching are service activities: they do not dig raw materials or assemble physical goods. That places them in the tertiary sector.\n\nSo the statement is True.",
       "Primary work is the first stage — taking materials from nature. Farming, fishing, mining, and forestry all extract raw materials, so they belong there.\n\nSo the statement is True.",
-      "Banking and insurance are financial services, not extraction. Calling them “basic needs” does not move them into the primary sector; primary still means farming, fishing, mining, and forestry.\n\nA household needs food, but the bank that holds its savings is still tertiary.\n\nSo the statement is False.",
+      "Banking and insurance are financial services, not extraction. Calling them “basic needs” does not move them into the primary sector; primary still means farming, fishing, mining, and forestry. A household needs food, but the bank that holds its savings is still tertiary.\n\nSo the statement is False.",
       "Secondary means transforming materials — smelting, milling, assembling. Banking and insurance are services delivered to households, so they are tertiary, not secondary.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -1499,9 +1499,9 @@
     ],
     "tactical_explanations": [
       "Lift passes and ski lessons are services sold to visitors. In the three-sector model that is tertiary activity, not extraction or factory work.\n\nSo the statement is True.",
-      "Instructors are labour: people teaching on the slopes. Capital would be produced means of production such as lifts, snowcats, or rented kit — not the teachers themselves.\n\nTeaching on a mountain does not redefine labour as capital.\n\nSo the statement is False.",
-      "Building skis on site would transform materials into goods. That is secondary manufacturing. Guests consuming the ski experience does not keep ski-making in the tertiary sector.\n\nService delivery (passes, lessons) is tertiary; fabricating equipment is secondary.\n\nSo the statement is False.",
-      "Guest services — rentals, instruction, hospitality — are tertiary. Snow being natural does not turn the resort’s guest operations into primary extraction the way mining or forestry would.\n\nPrimary extracts raw materials from nature; hosting skiers does not.\n\nSo the statement is False.",
+      "Instructors are labour: people teaching on the slopes. Capital would be produced means of production such as lifts, snowcats, or rented kit — not the teachers themselves. Teaching on a mountain does not redefine labour as capital.\n\nSo the statement is False.",
+      "Building skis on site would transform materials into goods. That is secondary manufacturing. Guests consuming the ski experience does not keep ski-making in the tertiary sector. Service delivery (passes, lessons) is tertiary; fabricating equipment is secondary.\n\nSo the statement is False.",
+      "Guest services — rentals, instruction, hospitality — are tertiary. Snow being natural does not turn the resort’s guest operations into primary extraction the way mining or forestry would. Primary extracts raw materials from nature; hosting skiers does not.\n\nSo the statement is False.",
       "A mountainside location does not decide the sector. The resort’s core activities are services to visitors, so it is tertiary. Primary would require extracting raw materials from nature, not simply operating outdoors.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -1558,8 +1558,8 @@
     "tactical_explanations": [
       "Selling finished jackets in a shop is trade and distribution — a service stage after manufacturing. That is tertiary, not secondary sewing.\n\nSo the statement is True.",
       "Warehousing steel until it is welded is logistics: storing and moving goods rather than shaping them. Logistics services belong in the tertiary sector.\n\nSo the statement is True.",
-      "A car plant assembling vehicles transforms parts into finished cars. That is secondary manufacturing. Serving customers later does not push assembly into the tertiary sector.\n\nTertiary would be the dealer’s sales service, not the plant’s production line.\n\nSo the statement is False.",
-      "Sewing jackets is fabrication — secondary manufacturing. Later retail sales can be tertiary, but the sewing floor itself is not “tertiary retail” just because jackets will eventually be sold.\n\nManufacture and retail are different stages; the because-clause mixes them up.\n\nSo the statement is False.",
+      "A car plant assembling vehicles transforms parts into finished cars. That is secondary manufacturing. Serving customers later does not push assembly into the tertiary sector. Tertiary would be the dealer’s sales service, not the plant’s production line.\n\nSo the statement is False.",
+      "Sewing jackets is fabrication — secondary manufacturing. Later retail sales can be tertiary, but the sewing floor itself is not “tertiary retail” just because jackets will eventually be sold. Manufacture and retail are different stages; the because-clause mixes them up.\n\nSo the statement is False.",
       "Smelters reshape ore into metal. That transformation is secondary. Ore’s underground origin explains the input, not the smelter’s sector; extraction at the mine is primary, smelting is not.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -1673,9 +1673,9 @@
     ],
     "tactical_explanations": [
       "Fabricating electronic components reshapes materials into parts. That transformation is secondary manufacturing.\n\nSo the statement is True.",
-      "An olive farm’s harvest-and-press work is primary agriculture. Bottling oil as part of farm output does not by itself turn the farm into a secondary factory; secondary would be industrial processing separate from the farm’s extractive stage.\n\nSelling a processed food does not automatically re-label the farm secondary.\n\nSo the statement is False.",
+      "An olive farm’s harvest-and-press work is primary agriculture. Bottling oil as part of farm output does not by itself turn the farm into a secondary factory; secondary would be industrial processing separate from the farm’s extractive stage. Selling a processed food does not automatically re-label the farm secondary.\n\nSo the statement is False.",
       "Selling to customers does not force a tertiary label. The farm’s crop work is primary; the factory’s production order is secondary. Customer sales can accompany any sector.\n\nSo the statement is False.",
-      "Making components from materials is manufacturing — secondary. Selling parts to other businesses (B2B) does not convert fabrication into a tertiary service.\n\nBuyer type does not rewrite the production stage.\n\nSo the statement is False.",
+      "Making components from materials is manufacturing — secondary. Selling parts to other businesses (B2B) does not convert fabrication into a tertiary service. Buyer type does not rewrite the production stage.\n\nSo the statement is False.",
       "Harvesting and pressing olives on the farm is primary agricultural activity. Selling the oil to customers is how farms market output; it does not move the harvest into the tertiary sector.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",

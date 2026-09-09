@@ -48,7 +48,7 @@
       true
     ],
     "tactical_explanations": [
-      "Goods are tangible items — a loaf, a phone, a coat.\n\nIntangible activities (repairs, lessons, software installs) are services, not goods. The claim swaps the two labels.\n\nSo the statement is False.",
+      "Goods are tangible items — a loaf, a phone, a coat. Intangible activities (repairs, lessons, software installs) are services, not goods. The claim swaps the two labels.\n\nSo the statement is False.",
       "A service is an intangible activity done for someone: installing software or preparing a drink fits that test.\n\nSo the statement is True.",
       "Needs keep basic well-being going; wants are desired extras that are not essential. That split is exactly what the statement reports.\n\nSo the statement is True.",
       "Families need food and shelter; firms need staff, materials, and working equipment. Either side can meet those needs by trading with the other.\n\nSo the statement is True.",
@@ -165,10 +165,10 @@
     ],
     "tactical_explanations": [
       "Getting to school with the bus pass supports a need; the game skin is entertainment, not a basic necessity.\n\nSo the statement is True.",
-      "Price tags do not turn wants into needs. A ten-euro skin remains a want even though it costs money.\n\nClassification rests on necessity for well-being, not on whether something is sold.\n\nSo the statement is False.",
+      "Price tags do not turn wants into needs. A ten-euro skin remains a want even though it costs money. Classification rests on necessity for well-being, not on whether something is sold.\n\nSo the statement is False.",
       "Jonas’s twelve-euro choice already forces trade-offs among the bus pass, the game skin, and saving — before any business registration enters the picture.\n\nSo the statement is False.",
       "Saving the twelve euros is itself an allocation: hold cash now rather than buy the pass or the skin. Choosing not to buy is not escaping economics; it is one use of limited means.\n\nSo the statement is False.",
-      "Buying the bus pass does not delete the desire for the game skin. The want can return next month with new pocket money.\n\n“Permanently” and “never” overclaim.\n\nSo the statement is False."
+      "Buying the bus pass does not delete the desire for the game skin. The want can return next month with new pocket money. “Permanently” and “never” overclaim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -281,7 +281,7 @@
     ],
     "tactical_explanations": [
       "Gardening lessons for a handmade bookshelf is a clear swap of valued things. Money is absent; exchange is not.\n\nSo the statement is True.",
-      "Euro notes and bank transfers are convenient media of exchange, not the definition of it.\n\nTwo neighbours can still trade lessons for furniture with no cash changing hands. Requiring banknotes would wrongly exclude barter from economics.\n\nSo the statement is False.",
+      "Euro notes and bank transfers are convenient media of exchange, not the definition of it. Two neighbours can still trade lessons for furniture with no cash changing hands. Requiring banknotes would wrongly exclude barter from economics.\n\nSo the statement is False.",
       "Wood for the bookshelf is finite. Using more on one project leaves less for the next — the carpenter must economise.\n\nSo the statement is True.",
       "Gardening lessons are an activity performed for the neighbour, not a physical object handed over — a service.\n\nSo the statement is True.",
       "People have needs and wants whether or not they run a firm.\n\nSo the statement is True."
@@ -312,7 +312,7 @@
       "Petra’s family buys as a household; Fabian builds and sells as an entrepreneur.\n\nSo the statement is True.",
       "The finished oak table is a tangible item Fabian produces and delivers — a good.\n\nSo the statement is True.",
       "Paying €650 for the table is exchange that meets the family’s furniture need.\n\nSo the statement is True.",
-      "Timber is an operational input Fabian must obtain to keep building. Calling raw materials “merely wants” mislabels a production need.\n\nWithout oak he cannot deliver the commissioned table at all.\n\nSo the statement is False.",
+      "Timber is an operational input Fabian must obtain to keep building. Calling raw materials “merely wants” mislabels a production need. Without oak he cannot deliver the commissioned table at all.\n\nSo the statement is False.",
       "Oak is limited and costly. Fabian has to plan how much board goes into each commission rather than cut freely.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -456,7 +456,7 @@
     "tactical_explanations": [
       "Large cash reserves do not create infinite managerial attention or factory hours. Those remain scarce even for a multinational.\n\nSo the statement is True.",
       "Unlimited wants are exactly why budgets bite.\n\nSo the statement is False.",
-      "Raising taxes takes political time and still claims finite real resources — labour, materials, administrative capacity.\n\nA government cannot fund every project “immediately” just by changing a tax rate. Scarcity binds the public sector too.\n\nSo the statement is False.",
+      "Raising taxes takes political time and still claims finite real resources — labour, materials, administrative capacity. A government cannot fund every project “immediately” just by changing a tax rate. Scarcity binds the public sector too.\n\nSo the statement is False.",
       "When a resource has competing uses and is limited, careful allocation — economising — is the rational response.\n\nSo the statement is True.",
       "Labour hours and raw materials cost money and run out. Entrepreneurs who ignore that constraint do not stay viable.\n\nSo the statement is True."
     ],
@@ -544,7 +544,7 @@
       "Growing your own food still uses limited land, time, and seed. Retirees must choose plot layouts and crop mixes — economising continues.\n\nSo the statement is True.",
       "Bicycle repair is work performed on the customer’s bike — a service.\n\nSo the statement is True.",
       "Surplus eggs sold for cash give neighbours food and the seller money. That trade fulfils needs or wants through exchange.\n\nSo the statement is True.",
-      "Stopping wage work does not turn retirees into entrepreneurs by default.\n\nThey typically remain households. Selling the occasional surplus egg does not automatically reclassify them as firms organising production under uncertainty.\n\nSo the statement is False.",
+      "Stopping wage work does not turn retirees into entrepreneurs by default. They typically remain households. Selling the occasional surplus egg does not automatically reclassify them as firms organising production under uncertainty.\n\nSo the statement is False.",
       "Land planted in vegetables cannot also hold the same square metres of chicken run. The mix is an unavoidable allocation choice under scarce space.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -718,7 +718,7 @@
       "Buying groceries is household–firm trade; selling used furniture to a neighbour is household–household trade.\n\nSo the statement is True.",
       "Households trade constantly — shopping, selling used goods, hiring help. Exchange is not an entrepreneur-only privilege.\n\nSo the statement is False.",
       "When each person gives something the other values, barter is exchange.\n\nSo the statement is True.",
-      "Most everyday trades need no registered written contract.\n\nHandshake sales, market-stall cash, and till receipts still count. Requiring government paperwork would erase nearly all ordinary exchange from the definition.\n\nSo the statement is False.",
+      "Most everyday trades need no registered written contract. Handshake sales, market-stall cash, and till receipts still count. Requiring government paperwork would erase nearly all ordinary exchange from the definition.\n\nSo the statement is False.",
       "A mobile-app transfer moves purchasing power just as coins or banknotes do. The medium changes; the exchange does not.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -746,7 +746,7 @@
     "tactical_explanations": [
       "Free soup still meets hunger. Recipients get a meal; volunteers and donors still allocate scarce vegetables, kitchen space, and time. “No price” is not “no need” and not “no exchange of effort for help.”\n\nSo the statement is False.",
       "Donated vegetables, kitchen hours, and volunteer labour are finite. Someone still has to decide how much soup to cook and who gets a bowl first.\n\nSo the statement is True.",
-      "Skipping cash does not eject anyone from economics. Volunteers choose how long to stay; the church chooses whether to lend the kitchen; recipients queue and eat rather than walk away. Those are allocations of scarce time, space, and food even when no euro changes hands.\n\nA gift economy still forces ranking: which night to open, which stock to use, how many litres to prepare.\n\nSo the statement is False.",
+      "Skipping cash does not eject anyone from economics. Volunteers choose how long to stay; the church chooses whether to lend the kitchen; recipients queue and eat rather than walk away. Those are allocations of scarce time, space, and food even when no euro changes hands. A gift economy still forces ranking: which night to open, which stock to use, how many litres to prepare.\n\nSo the statement is False.",
       "With a limited crate of vegetables, using carrots today means fewer carrots tomorrow. That ranking of scarce ingredients is an economic decision, money or not.\n\nSo the statement is True.",
       "A church still needs a usable kitchen, volunteers, and donated stock to run the meal. Not-for-profit status does not cancel operational needs.\n\nSo the statement is False."
     ],
@@ -1443,7 +1443,7 @@
       "Households and entrepreneurs meet in markets: goods and services move to address needs and wants. That interaction is the core picture of economic life in this chapter.\n\nSo the statement is True.",
       "Goods have tangible form; services are intangible activities performed for someone — the standard split.\n\nSo the statement is True.",
       "Limited resources force every actor — household, firm, or government — to economise rather than satisfy every claim at once.\n\nSo the statement is True.",
-      "Retail checkouts, second-hand sales between neighbours, and barter among classmates are exchange too.\nWholesale deals among firms are only one channel — not the whole of exchange.\n\nSo the statement is False.",
+      "Retail checkouts, second-hand sales between neighbours, and barter among classmates are exchange too. Wholesale deals among firms are only one channel — not the whole of exchange.\n\nSo the statement is False.",
       "Consumers, students, and retirees make scarce-resource decisions constantly. Opening a business is not required to participate in economic life.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -1790,7 +1790,7 @@
     "tactical_explanations": [
       "The chain can open only one store with this year’s capital. Funds are scarce between location A and location B.\n\nSo the statement is True.",
       "Opening at A forgoes location B’s projected 180,000-euro profit. That forgone B profit is the opportunity cost of choosing A.\n\nSo the statement is True.",
-      "Opening at B forgoes A’s 220,000-euro profit — not 400,000 euros. Adding both locations’ profits as if both were earned is the classic sum-of-options mistake.\n\n$$\n\\text{Wrong combined figure} = 220{,}000 + 180{,}000 = 400{,}000\n$$\n\nOpportunity cost of B is only the next-best alternative: A’s 220,000 euros forgone.\n\nSo the statement is False.",
+      "Opening at B forgoes A’s 220,000-euro profit — not 400,000 euros. Adding both locations’ profits as if both were earned is the classic sum-of-options mistake; opportunity cost of B is only the next-best alternative: A’s 220,000 euros forgone.\n\n$$\n\\text{Wrong combined figure} = 220{,}000 + 180{,}000 = 400{,}000\n$$\n\nSo the statement is False.",
       "Firm size does not remove scarcity. Even a large chain has limited expansion capital this year and must pick among sites.\n\nSo the statement is False.",
       "The store-location choice is firms allocating limited resources among competing uses — the same structure households face when a budget covers only one big purchase.\n\nSo the statement is True."
     ],
@@ -1818,7 +1818,7 @@
     ],
     "tactical_explanations": [
       "Irrigation water this month can fully cover wheat *or* vegetables, not both. The water is scarce and must be allocated between the two field types.\n\nSo the statement is True.",
-      "Irrigating vegetables forgoes wheat revenue of 12,000 euros — not 27,500. Adding both crops’ revenues invents a figure nobody collects:\n\n$$\n\\text{Wrong sum} = 12{,}000 + 15{,}500 = 27{,}500\n$$\n\nOpportunity cost of vegetables is wheat’s 12,000 euros forgone.\n\nSo the statement is False.",
+      "Irrigating vegetables forgoes wheat revenue of 12,000 euros — not 27,500. Adding both crops’ revenues invents a figure nobody collects; opportunity cost of vegetables is wheat’s 12,000 euros forgone.\n\n$$\n\\text{Wrong sum} = 12{,}000 + 15{,}500 = 27{,}500\n$$\n\nSo the statement is False.",
       "Farmers face opportunity cost whether or not they are registered companies. Ilić still gives up one crop’s revenue when water goes to the other field.\n\nSo the statement is False.",
       "Irrigating wheat means vegetables do not get that water. Forgone vegetable revenue is 15,500 euros — that is the opportunity cost of watering wheat.\n\nSo the statement is True.",
       "Same-farm location does not erase scarcity. One water allocation still excludes the other field; choosing wheat versus vegetables is precisely allocating a scarce resource.\n\nSo the statement is False."
@@ -2195,9 +2195,9 @@
     ],
     "tactical_explanations": [
       "Skipping paid overtime for a free concert still costs the wages you could have earned that evening.\n\nSo the statement is True.",
-      "Price tags are not required. Unpaid leisure, volunteering, or a quiet evening at home can be the next-best option you give up.\n\nIf only cash-priced choices counted, almost every household timetable decision would fall outside economics — and that is not how opportunity cost works.\n\nSo the statement is False.",
+      "Price tags are not required. Unpaid leisure, volunteering, or a quiet evening at home can be the next-best option you give up. If only cash-priced choices counted, almost every household timetable decision would fall outside economics — and that is not how opportunity cost works.\n\nSo the statement is False.",
       "Volunteering uses hours that could have been sold as labour. The forgone wage (or other paid work) is the opportunity cost of that leisure, even though the volunteering itself has no ticket price.\n\nSo the statement is True.",
-      "Enjoyment, stress relief, and other non-money payoffs routinely sit inside opportunity-cost thinking.\n\nCounterexample: choosing a lower-paid job because it is less stressful still trades wages against a non-financial benefit. The claim that enjoyment never enters is simply too absolute.\n\nSo the statement is False.",
+      "Enjoyment, stress relief, and other non-money payoffs routinely sit inside opportunity-cost thinking. Counterexample: choosing a lower-paid job because it is less stressful still trades wages against a non-financial benefit. The claim that enjoyment never enters is simply too absolute.\n\nSo the statement is False.",
       "Holding other determinants fixed, scarcer time widens the trade-off: each hour locked into one use blocks another. That is enough for opportunity cost to appear.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -2225,9 +2225,9 @@
     "tactical_explanations": [
       "Tobias shrinks scarcity to ministries and huge budgets. A family weighing debt repayment against a home extension still has one euro pot and two rival uses — the same allocation problem, just smaller scale.\n\nSo the statement is True.",
       "Households and firms face scarce money, time, and space every week. Scarcity is not a government-only label.\n\nSo the statement is False.",
-      "A small euro amount can still force a real choice. Paying down a credit card instead of booking a weekend trip forgoes the trip’s benefit — that is opportunity cost, not a rounding error.\n\nScale does not erase the trade-off.\n\nSo the statement is False.",
+      "A small euro amount can still force a real choice. Paying down a credit card instead of booking a weekend trip forgoes the trip’s benefit — that is opportunity cost, not a rounding error. Scale does not erase the trade-off.\n\nSo the statement is False.",
       "Families forgo alternatives when they repay debt whether or not they run a registered firm. Incorporation is irrelevant to the definition.\n\nSo the statement is False.",
-      "Opportunity cost applies to one person’s Tuesday evening as readily as to a national programme. Millions of people are not a prerequisite.\n\nA student skipping a shift for revision already has a measurable forgone wage.\n\nSo the statement is False."
+      "Opportunity cost applies to one person’s Tuesday evening as readily as to a national programme. Millions of people are not a prerequisite. A student skipping a shift for revision already has a measurable forgone wage.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2255,7 +2255,7 @@
       "One remaining ICU bed cannot serve both the scheduled surgery and tonight’s emergency at once. That is scarcity in the ward.\n\nSo the statement is True.",
       "Give the bed to the emergency arrival and the scheduled patient’s expected health gain is what you leave behind. That forgone surgical benefit is the opportunity cost of the emergency assignment.\n\nSo the statement is True.",
       "Reserve the bed for the scheduled case and you forgo the emergency patient’s treatment benefit instead.\n\nSo the statement is True.",
-      "Medical ethics guide who should get priority; they do not delete the trade-off. With one bed, choosing A still means B waits.\n\nEthics may reshape which benefit you weigh more heavily, but the forgone alternative remains an opportunity cost.\n\nSo the statement is False.",
+      "Medical ethics guide who should get priority; they do not delete the trade-off. With one bed, choosing A still means B waits. Ethics may reshape which benefit you weigh more heavily, but the forgone alternative remains an opportunity cost.\n\nSo the statement is False.",
       "Opportunity cost is the value of the next-best use, not a cash invoice. Life-saving or recovery benefits between patients fit that definition even when no euro price is attached.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -2282,9 +2282,9 @@
     ],
     "tactical_explanations": [
       "By definition you count the best alternative you did not take — not a pile of every rejected option’s value stacked together. If three holidays are ruled out, opportunity cost is the best of those three, not their sum.\n\nSo the statement is True.",
-      "Each side of a trade has its own next-best alternative. A buyer’s forgone purchase and a seller’s forgone other customer need not match in size or content.\n\n“Both give something up” does not make the opportunity costs identical.\n\nSo the statement is False.",
+      "Each side of a trade has its own next-best alternative. A buyer’s forgone purchase and a seller’s forgone other customer need not match in size or content. “Both give something up” does not make the opportunity costs identical.\n\nSo the statement is False.",
       "Missing a quiet evening with family or a free concert still has opportunity cost even if no wage or fee is measured.\n\nSo the statement is False.",
-      "Picking the weaker option raises opportunity cost, it does not wipe it. The better option you left on the table is exactly what you forgo.\n\nSaying the cost is zero because a better choice “was available” confuses availability with choosing it.\n\nSo the statement is False.",
+      "Picking the weaker option raises opportunity cost, it does not wipe it. The better option you left on the table is exactly what you forgo. Saying the cost is zero because a better choice “was available” confuses availability with choosing it.\n\nSo the statement is False.",
       "Wherever scarce means are allocated — kitchen table, firm, or ministry — choosing one use forgoes another.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -2343,7 +2343,7 @@
       "The print shop is one instance of a general rule: every actor must allocate scarce capacity among rival jobs.\n\nSo the statement is True.",
       "Fill the week with wedding invitations and the school workbook contract’s income (and goodwill) is what you leave behind. That forgone workbook value is the opportunity cost of the wedding schedule.\n\nSo the statement is True.",
       "One press and one week cannot print both queues fully at once. Capacity is scarce between workbooks and weddings.\n\nSo the statement is True.",
-      "Electricity is an operating outlay on whatever you print. Opportunity cost is the wedding (or workbook) revenue you did not earn by locking the press into the other job.\n\nThe power bill is not a substitute for that forgone alternative.\n\nSo the statement is False."
+      "Electricity is an operating outlay on whatever you print. Opportunity cost is the wedding (or workbook) revenue you did not earn by locking the press into the other job. The power bill is not a substitute for that forgone alternative.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2604,7 +2604,7 @@
       "Sixty euros is small next to a national budget, yet choosing tickets still forgoes the game. Size does not cancel opportunity cost.\n\nSo the statement is True.",
       "Parents might top up later; that hope does not make this month’s 60-euro jar unlimited. Right now the pool funds one purchase, not both.\n\nSo the statement is False.",
       "A longer-lived game does not erase the cinema outing’s benefit from the comparison. Durability is one attribute among others, not a wipe-out clause.\n\nSo the statement is False.",
-      "Children with a shared jar already rank wishes under a hard euro limit. That ranking is economising.\n\nWhether parents “should” fund every wish is a separate norm; it does not describe how scarce pocket money actually works.\n\nSo the statement is False."
+      "Children with a shared jar already rank wishes under a hard euro limit. That ranking is economising. Whether parents “should” fund every wish is a separate norm; it does not describe how scarce pocket money actually works.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2661,7 +2661,7 @@
       "One staff week cannot fully draft both the housing and the arts grant. Capacity is scarce between those applications.\n\nSo the statement is True.",
       "Chase the arts grant and the housing programme’s expected funding benefit is what you leave unwritten. That forgone housing payoff is the opportunity cost.\n\nSo the statement is True.",
       "Put the week into housing instead and the arts proposal’s funding benefit is forgone if that file never goes in. Same scarce week, mirrored trade-off.\n\nSo the statement is True.",
-      "Salary is the accounting cost of employing the writer. Opportunity cost is the value of the grant line not pursued with that week of effort.\n\nMixing the two concepts misreads the letter.\n\nSo the statement is False.",
+      "Salary is the accounting cost of employing the writer. Opportunity cost is the value of the grant line not pursued with that week of effort. Mixing the two concepts misreads the letter.\n\nSo the statement is False.",
       "Nonprofits allocate scarce staff weeks every funding cycle. Profit-seeking is not required for scarcity.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -2720,7 +2720,7 @@
       "A graduate picking between two programmes faces the same scarce-capacity problem a firm faces when it can fund only one training track.\n\nSo the statement is True.",
       "Extra enjoyment at the museum can justify the choice; it does not cancel the wages left on the table at the industry placement.\n\nSo the statement is True.",
       "Take the unpaid museum role and the paid placement’s wages are the clearest forgone alternative.\n\nSo the statement is True.",
-      "Euro wages matter here, but they are not the only admissible content of opportunity cost. Mentoring quality, portfolio pieces, or network access at the museum can weigh in the comparison too.\n\nRestricting graduates to cash-only opportunity cost is too narrow.\n\nSo the statement is False."
+      "Euro wages matter here, but they are not the only admissible content of opportunity cost. Mentoring quality, portfolio pieces, or network access at the museum can weigh in the comparison too. Restricting graduates to cash-only opportunity cost is too narrow.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2893,7 +2893,7 @@
       "Nine hundred euros funds kits or the fridge repair this round, not both in full. The club purse is limited between those uses.\n\nSo the statement is True.",
       "Buy the football kits and cold storage stays broken: spoiled food and lost kitchen use are the benefits forgone. That package is the opportunity cost of the kits.\n\nSo the statement is True.",
       "Repair the fridge instead and training quality from new kits is what the club forgoes.\n\nSo the statement is True.",
-      "Charitable purpose does not suspend economics. Treasurers still rank scarce euros between kits and repairs.\n\nNonprofit status is a legal form, not an exemption from opportunity cost.\n\nSo the statement is False.",
+      "Charitable purpose does not suspend economics. Treasurers still rank scarce euros between kits and repairs. Nonprofit status is a legal form, not an exemption from opportunity cost.\n\nSo the statement is False.",
       "The invoice for kits or for the repair is the cash outlay on what you bought. Opportunity cost is the benefit of the option you did not fund.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -2923,7 +2923,7 @@
       "A national EV bonus sits in the background of Fatima’s decision, but the unit she analyses is still her own car purchase. Scope — one household versus economy-wide aggregates — decides micro versus macro, not whether a government programme exists somewhere.\n\nSo the statement is False.",
       "One café resetting cake prices is a firm-level price move. That stays microeconomics unless the question shifts to the economy’s overall price level.\n\nSo the statement is False.",
       "Once the lens is nationwide car-sales totals after the bonus, the object is an aggregate, not Fatima’s private trade-off. Whole-economy sales statistics are the classic macro reading of the same policy backdrop.\n\nSo the statement is True.",
-      "Micro and macro share scarcity and choice, but they do not ask the same question. Micro follows units such as Fatima’s hatchback versus petrol keep-or-buy; macro follows national output, employment, inflation, and similar totals.\n\nTreating the two scopes as identical erases that split. Fatima’s private comparison and a national car-sales series are different objects of analysis.\n\nSo the statement is False."
+      "Micro and macro share scarcity and choice, but they do not ask the same question. Micro follows units such as Fatima’s hatchback versus petrol keep-or-buy; macro follows national output, employment, inflation, and similar totals. Treating the two scopes as identical erases that split. Fatima’s private comparison and a national car-sales series are different objects of analysis.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2949,9 +2949,9 @@
     ],
     "tactical_explanations": [
       "National GDP falling for two quarters and job losses across the economy are whole-economy aggregates. Those are macroeconomic phenomena.\n\nSo the statement is True.",
-      "A single shop closing and dismissing two workers is a firm-level layoff. Sharing a word with the recession headline does not promote that shop into macro analysis.\n\nMacro here is the economy-wide GDP drop and job-loss totals, not one employer’s roster change.\n\nSo the statement is False.",
+      "A single shop closing and dismissing two workers is a firm-level layoff. Sharing a word with the recession headline does not promote that shop into macro analysis. Macro here is the economy-wide GDP drop and job-loss totals, not one employer’s roster change.\n\nSo the statement is False.",
       "Explaining why output and employment fall together, and forecasting how recoveries unfold, is core macro work. Recession and recovery patterns are exactly the kind of economy-wide dynamics the field targets.\n\nSo the statement is True.",
-      "Economics as a discipline covers scarce-resource decisions at every scale. Micro takes households, firms, and particular markets; macro takes national income, employment, and the price level.\n\nThe recession headline sits on the macro side, yet the same scarcity foundation still underwrites both branches. Limited resources force choices whether the unit is one shop or the whole labour force.\n\nSo the statement is True.",
+      "Economics as a discipline covers scarce-resource decisions at every scale. Micro takes households, firms, and particular markets; macro takes national income, employment, and the price level. The recession headline sits on the macro side, yet the same scarcity foundation still underwrites both branches. Limited resources force choices whether the unit is one shop or the whole labour force.\n\nSo the statement is True.",
       "Micro can study a worker’s job search or one firm’s hiring even though national unemployment is a macro aggregate. Existence of a macro series does not ban micro questions about unemployment.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -2981,7 +2981,7 @@
       "Growth, unemployment, and central-bank interest rates belong with inflation and the price level on the macro list. Freonia’s statistics office is publishing exactly those economy-wide variables each quarter.\n\nSo the statement is True.",
       "A bakery watching only its own sales and staffing is studying one firm. That unit of analysis is microeconomics.\n\nSo the statement is True.",
       "As a science, economics builds theories that explain nationwide movements and that support predictions about them. Freonia’s growth and unemployment releases are the kind of phenomena those theories address.\n\nSo the statement is True.",
-      "Micro and macro are branches of one subject. Both start from decisions under limited resources; they part ways on whether the question tracks a single unit or economy-wide totals.\n\nFreonia’s national report and a bakery’s staffing plan therefore sit under the same economics umbrella at different scopes.\n\nSo the statement is True."
+      "Micro and macro are branches of one subject. Both start from decisions under limited resources; they part ways on whether the question tracks a single unit or economy-wide totals. Freonia’s national report and a bakery’s staffing plan therefore sit under the same economics umbrella at different scopes.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3006,11 +3006,11 @@
       false
     ],
     "tactical_explanations": [
-      "Macroeconomics exists precisely to explain recessions and other whole-economy swings. The claim that only micro markets exist, so macro cannot speak to downturns, denies that second scope.\n\nThe Weiss family’s heating contract is a micro choice; recession analysis is a different, aggregate question.\n\nSo the statement is False.",
+      "Macroeconomics exists precisely to explain recessions and other whole-economy swings. The claim that only micro markets exist, so macro cannot speak to downturns, denies that second scope. The Weiss family’s heating contract is a micro choice; recession analysis is a different, aggregate question.\n\nSo the statement is False.",
       "Energy is not locked into macro because heating shows up in national consumption data. The Weiss family’s supplier comparison, with national policy set aside, remains a household micro decision.\n\nSo the statement is False.",
       "Shift the object to total household energy use and its imprint on national inflation, and the same sector becomes a macro problem. Policymakers reading economy-wide energy demand for inflation are doing macroeconomics.\n\nSo the statement is True.",
       "Choosing gas versus a heat pump under a limited monthly budget is a classic scarce-resource household trade-off. Economics studies exactly those choices.\n\nSo the statement is True.",
-      "Micro and macro do not ask identical questions. Studying the Weiss family’s winter contract is not the same exercise as studying the nation’s energy use or inflation.\n\nOne tracks a single household’s alternatives; the other tracks aggregates. Equating the two collapses the scope distinction the chapter uses.\n\nSo the statement is False."
+      "Micro and macro do not ask identical questions. Studying the Weiss family’s winter contract is not the same exercise as studying the nation’s energy use or inflation. One tracks a single household’s alternatives; the other tracks aggregates. Equating the two collapses the scope distinction the chapter uses.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3036,9 +3036,9 @@
     ],
     "tactical_explanations": [
       "Country-wide export and import totals are aggregates for the whole economy. Those trade figures are macroeconomic statistics.\n\nSo the statement is True.",
-      "One winery’s shipment calendar to Germany is a single firm’s logistics plan. Crossing a border does not by itself turn that plan into macro analysis.\n\nMacro appears when the ministry’s national export and import totals are the object, not when one exporter books a truck.\n\nSo the statement is False.",
+      "One winery’s shipment calendar to Germany is a single firm’s logistics plan. Crossing a border does not by itself turn that plan into macro analysis. Macro appears when the ministry’s national export and import totals are the object, not when one exporter books a truck.\n\nSo the statement is False.",
       "Macro’s usual cast includes growth, unemployment, inflation, and interest rates. National trade totals sit beside those aggregates as another economy-wide measure.\n\nSo the statement is True.",
-      "Economics aims to explain movements such as why a country’s export performance rises or falls over time. Theories link exchange rates, demand abroad, costs at home, and related forces to those national outcomes.\n\nThe ministry’s annual trade release is raw material for that explanatory work.\n\nSo the statement is True.",
+      "Economics aims to explain movements such as why a country’s export performance rises or falls over time. Theories link exchange rates, demand abroad, costs at home, and related forces to those national outcomes. The ministry’s annual trade release is raw material for that explanatory work.\n\nSo the statement is True.",
       "When the unit analysed is one firm’s export decision, the question is microeconomic even though trade also appears in national accounts.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -3065,10 +3065,10 @@
     ],
     "tactical_explanations": [
       "Micro and macro differ in scope: individual units and particular markets versus economy-wide aggregates. They do not study identical questions.\n\nSo the statement is False.",
-      "Wages are not automatically macro. A firm setting one worker’s pay or a household weighing two offers is still micro, even though labour markets can also be measured nationally.\n\nTopic words such as “wages” or “jobs” do not freeze the label; the scope of the question does.\n\nSo the statement is False.",
+      "Wages are not automatically macro. A firm setting one worker’s pay or a household weighing two offers is still micro, even though labour markets can also be measured nationally. Topic words such as “wages” or “jobs” do not freeze the label; the scope of the question does.\n\nSo the statement is False.",
       "An economy-wide average wage-growth number from a statistics office is an aggregate. That publication is macroeconomics.\n\nSo the statement is True.",
       "A household picking between two job offers under limited time is comparing personal alternatives. That is a micro-level choice, not a reading of national labour aggregates.\n\nSo the statement is True.",
-      "Economics is not confined to nationwide aggregates. Microeconomics exists to explain individual choices — which job to take, what to buy, how a firm prices — under scarcity.\n\nSaying the subject can only speak to economy-wide totals erases the household and firm half of the field the students are debating.\n\nSo the statement is False."
+      "Economics is not confined to nationwide aggregates. Microeconomics exists to explain individual choices — which job to take, what to buy, how a firm prices — under scarcity. Saying the subject can only speak to economy-wide totals erases the household and firm half of the field the students are debating.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3097,7 +3097,7 @@
       "Organic milk on one shopping trip is a single consumer choosing among grocery options. That household purchase sits in microeconomics, not in national aggregates.\n\nSo the statement is True.",
       "The national unemployment rate summarises the whole labour market. It is a macroeconomic indicator.\n\nSo the statement is True.",
       "At both scopes, economics uses theories about limited resources to explain behaviour and to predict outcomes. Micro and macro differ in the unit studied, not in whether theory and prediction apply.\n\nSo the statement is True.",
-      "Mentioning government does not force a macro label. A household applying for one means-tested benefit, or a firm bidding on one public contract, can still be micro if that single unit is the object of study.\n\nMacro needs an economy-wide question — national spending, the price level, aggregate employment — not merely the word “government” in the stem.\n\nSo the statement is False."
+      "Mentioning government does not force a macro label. A household applying for one means-tested benefit, or a firm bidding on one public contract, can still be micro if that single unit is the object of study. Macro needs an economy-wide question — national spending, the price level, aggregate employment — not merely the word “government” in the stem.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3122,10 +3122,10 @@
       true
     ],
     "tactical_explanations": [
-      "National unemployment figures are aggregates even though each unemployed person is an individual. Counting the whole labour force’s joblessness is macro work, not micro because the raw units are people.\n\nInês raising BrewPeak’s espresso price remains the micro contrast in this case.\n\nSo the statement is False.",
+      "National unemployment figures are aggregates even though each unemployed person is an individual. Counting the whole labour force’s joblessness is macro work, not micro because the raw units are people. Inês raising BrewPeak’s espresso price remains the micro contrast in this case.\n\nSo the statement is False.",
       "Macroeconomics is not “any price change.” One café’s espresso hike is a firm-level price decision; macro tracks economy-wide price levels and related aggregates.\n\nSo the statement is False.",
-      "Microeconomics routinely studies how firms interact in one product market — rivalry, pricing responses, differentiation. Saying it never does that erases a large part of industrial organisation and market analysis.\n\nBrewPeak reacting to bean costs is exactly the kind of firm behaviour micro examines, including against nearby cafés.\n\nSo the statement is False.",
-      "Inflation is a central macro topic: the rise in the overall price level. Single-shop price changes can feed into that aggregate, but they do not make macro “refuse” to discuss inflation.\n\nInês’s Porto menu is micro; Freonia-style CPI or euro-area inflation readings are macro. Both price stories can appear in economics without one cancelling the other.\n\nSo the statement is False.",
+      "Microeconomics routinely studies how firms interact in one product market — rivalry, pricing responses, differentiation. Saying it never does that erases a large part of industrial organisation and market analysis. BrewPeak reacting to bean costs is exactly the kind of firm behaviour micro examines, including against nearby cafés.\n\nSo the statement is False.",
+      "Inflation is a central macro topic: the rise in the overall price level. Single-shop price changes can feed into that aggregate, but they do not make macro “refuse” to discuss inflation. Inês’s Porto menu is micro; Freonia-style CPI or euro-area inflation readings are macro. Both price stories can appear in economics without one cancelling the other.\n\nSo the statement is False.",
       "Economics still builds theories to explain and predict behaviour even though people forecast imperfectly. Imperfect prediction does not strip the subject of its scientific aims.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -3155,7 +3155,7 @@
       "A bakery resetting its loaf price after flour costs rise is one firm adjusting in its product market. The unit of analysis stays micro even though flour prices may also move in national data.\n\nSo the statement is True.",
       "When only the bus company’s own route fare is under study, the question is firm-level pricing. That keeps the example in microeconomics despite the public-service setting.\n\nSo the statement is True.",
       "Published GDP growth for the whole country compresses every sector into one output figure. Because the summary covers the entire economy, the publication is macroeconomics.\n\nSo the statement is True.",
-      "Microeconomics’ job is to explain and predict how individual markets, households, and firms behave under scarcity. Crop mix, loaf pricing, and a single-route fare are all inside that remit.\n\nThe trap to avoid is treating every familiar topic word as macro; scope of the unit analysed still decides the label.\n\nSo the statement is True."
+      "Microeconomics’ job is to explain and predict how individual markets, households, and firms behave under scarcity. Crop mix, loaf pricing, and a single-route fare are all inside that remit. The trap to avoid is treating every familiar topic word as macro; scope of the unit analysed still decides the label.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3181,10 +3181,10 @@
     ],
     "tactical_explanations": [
       "Surge pricing for one platform in one district is a local market pricing problem. Studying that response is microeconomics.\n\nSo the statement is True.",
-      "Many riders feeling the same concert-night spike does not make the episode macro. The object is still one platform’s fares in one district, not the economy’s overall price level or output.\n\nCrowd size inside a local market is not the same as an economy-wide aggregate.\n\nSo the statement is False.",
+      "Many riders feeling the same concert-night spike does not make the episode macro. The object is still one platform’s fares in one district, not the economy’s overall price level or output. Crowd size inside a local market is not the same as an economy-wide aggregate.\n\nSo the statement is False.",
       "If analysts ask whether those district spikes moved the city’s overall consumer price index, the object becomes an aggregate price measure. That index movement is read as macroeconomics.\n\nSo the statement is True.",
       "Economics can predict how riders cut trips or how drivers reposition when a local fare spikes. Those responses are exactly the kind of behaviour theory targets.\n\nSo the statement is True.",
-      "Individual market pricing sits squarely inside economics — especially microeconomics. Governments are not the only price setters; platforms, shops, and other private sellers set prices constantly.\n\nThe concert-night surge is a private pricing rule under local scarcity of rides, and it is a legitimate economic object of study.\n\nSo the statement is False."
+      "Individual market pricing sits squarely inside economics — especially microeconomics. Governments are not the only price setters; platforms, shops, and other private sellers set prices constantly. The concert-night surge is a private pricing rule under local scarcity of rides, and it is a legitimate economic object of study.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3213,7 +3213,7 @@
       "The statement points at one subscriber’s plan choice. In this case the live question is national pricing among three carriers, not that private handset decision, so the letter does not correctly describe the analysis under study.\n\nSo the statement is False.",
       "Economics builds theories of firm behaviour and market outcomes, including how rivalry or collusion shapes prices. Competition-authority questions sit inside that explanatory project.\n\nSo the statement is True.",
       "When analysts isolate one carrier’s pricing strategy alone, the unit is a single firm. That is microeconomics.\n\nSo the statement is True.",
-      "Market competition is a central economic topic, especially in micro and industrial organisation. Government budgets matter in public finance, but they do not monopolise the subject or push rivalry off the syllabus.\n\nThe carriers’ alleged text-price collusion is precisely the sort of market-outcome question economics studies.\n\nSo the statement is False."
+      "Market competition is a central economic topic, especially in micro and industrial organisation. Government budgets matter in public finance, but they do not monopolise the subject or push rivalry off the syllabus. The carriers’ alleged text-price collusion is precisely the sort of market-outcome question economics studies.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3242,7 +3242,7 @@
       "Inflation targeting by a central bank for an entire currency area is an economy-wide policy problem. That belongs to macroeconomics, not to the bookstore’s branch experiment.\n\nSo the statement is True.",
       "Economy-wide consumer price inflation reported by the national statistics office is an aggregate. That release is macroeconomics.\n\nSo the statement is True.",
       "Microeconomics stays with individual households, businesses, and markets. It does not take the whole economy’s totals as its primary object — that is macro’s job.\n\nSo the statement is True.",
-      "Economics tries to explain and predict outcomes such as how a branch’s revenue moves after a price cut. Demand responses, rival stores, and margin effects are the kind of behaviour theory is built to handle at the micro scope.\n\nThe chain’s one-city experiment is a concrete instance of that predictive aim.\n\nSo the statement is True."
+      "Economics tries to explain and predict outcomes such as how a branch’s revenue moves after a price cut. Demand responses, rival stores, and margin effects are the kind of behaviour theory is built to handle at the micro scope. The chain’s one-city experiment is a concrete instance of that predictive aim.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3267,10 +3267,10 @@
       true
     ],
     "tactical_explanations": [
-      "GDP growth is an economy-wide aggregate; a household grocery list is a single unit’s consumption plan. They are not analysed with identical tools or the same scope.\n\nKelvinia’s rate rise is a national policy move aimed at inflation — a macro setting that does not collapse into one family’s shopping list.\n\nSo the statement is False.",
+      "GDP growth is an economy-wide aggregate; a household grocery list is a single unit’s consumption plan. They are not analysed with identical tools or the same scope. Kelvinia’s rate rise is a national policy move aimed at inflation — a macro setting that does not collapse into one family’s shopping list.\n\nSo the statement is False.",
       "A nationwide policy rate is a macro instrument even though each mortgage is signed by one borrower. The policy object is the whole economy’s borrowing conditions and inflation, not one loan file.\n\nSo the statement is False.",
       "Neither branch is a cartoon of “only diagrams” versus “only newspaper opinion.” Both use theory, data, and models; they differ by whether the question is unit-level or economy-wide.\n\nSo the statement is False.",
-      "Mortgage payments of particular families may change after the rate rise, but that side-effect does not reclassify the central-bank decision as microeconomics. The bank’s move is a nationwide inflation tool.\n\nA family refinancing its own loan would be a micro story; Kelvinia’s key-rate decision is not that story.\n\nSo the statement is False.",
+      "Mortgage payments of particular families may change after the rate rise, but that side-effect does not reclassify the central-bank decision as microeconomics. The bank’s move is a nationwide inflation tool. A family refinancing its own loan would be a micro story; Kelvinia’s key-rate decision is not that story.\n\nSo the statement is False.",
       "Economics builds theories for why central banks raise rates and for how inflation then responds. Explanation and prediction at that aggregate level are part of the subject’s aim.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -3297,7 +3297,7 @@
     ],
     "tactical_explanations": [
       "An average household savings rate for the entire country is an economy-wide aggregate. That figure is macroeconomic.\n\nSo the statement is True.",
-      "One family raising monthly saving by fifty euros is a single household’s budget change. Calling saving a “national policy topic” in the abstract does not turn that family’s ledger into macro analysis.\n\nMacro is the published national average; micro is this one household’s fifty-euro shift.\n\nSo the statement is False.",
+      "One family raising monthly saving by fifty euros is a single household’s budget change. Calling saving a “national policy topic” in the abstract does not turn that family’s ledger into macro analysis. Macro is the published national average; micro is this one household’s fifty-euro shift.\n\nSo the statement is False.",
       "Macro’s usual variables include growth, unemployment, inflation, and interest rates. Economy-wide averages such as the national savings rate sit in that same aggregate family.\n\nSo the statement is True.",
       "Linking the national savings average to interest-rate moves is an aggregate prediction problem. Economics builds that kind of macro explanation routinely.\n\nSo the statement is True.",
       "When the unit analysed is one family’s saving choice alone, the question is microeconomic. The same word “saving” appears in the central bank’s national average, but the object of study — one household versus the countrywide mean — decides the label.\n\nSo the statement is True."
@@ -3329,7 +3329,7 @@
       "Venture capital may be discussed as a national trend, but studying one robotics firm’s hiring plan keeps the unit at firm level. A national backdrop does not automatically relabel every firm study as macro.\n\nSo the statement is False.",
       "Summing startup investment across the country to judge growth turns the lens to an aggregate. That summation is macroeconomics.\n\nSo the statement is True.",
       "Microeconomics explains and predicts how individual businesses and markets behave — including one startup’s hiring under a funding round. That is the branch’s ordinary remit.\n\nSo the statement is True.",
-      "Entrepreneurial firms are not too small for economic science. Micro theory regularly covers startups’ hiring, pricing, and investment under scarce cash and talent.\n\nExcluding them because they are small would erase a large share of real business decisions the field studies.\n\nSo the statement is False."
+      "Entrepreneurial firms are not too small for economic science. Micro theory regularly covers startups’ hiring, pricing, and investment under scarce cash and talent. Excluding them because they are small would erase a large share of real business decisions the field studies.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3383,11 +3383,11 @@
       false
     ],
     "tactical_explanations": [
-      "Micro and macro are related branches of the same subject. Both rest on scarce-resource decisions; they differ in whether the unit is Elif’s hours or national employment and output.\n\nCalling them unrelated subjects with no shared foundation is wrong.\n\nSo the statement is False.",
+      "Micro and macro are related branches of the same subject. Both rest on scarce-resource decisions; they differ in whether the unit is Elif’s hours or national employment and output. Calling them unrelated subjects with no shared foundation is wrong.\n\nSo the statement is False.",
       "Students and other households are core micro actors. Elif allocating bookstore hours among tuition, rent, and study is inside economics, not outside it for lack of a company charter.\n\nSo the statement is False.",
-      "Economics does not only ever look at one market. Macroeconomics studies recessions as economy-wide contractions of output and employment.\n\nElif’s personal hour choice is micro; that does not ban recession analysis at the aggregate level.\n\nSo the statement is False.",
+      "Economics does not only ever look at one market. Macroeconomics studies recessions as economy-wide contractions of output and employment. Elif’s personal hour choice is micro; that does not ban recession analysis at the aggregate level.\n\nSo the statement is False.",
       "Households deciding how to use limited time and income are a central object of economic study. Elif’s weekly hour plan is exactly that kind of decision.\n\nSo the statement is True.",
-      "No government bonus is required before economic theory can speak. Scarcity of time and income alone is enough to analyse Elif’s trade-off among work, rent, tuition, and study.\n\nPolicy programmes can change constraints, but their absence does not eject a household decision from economics.\n\nSo the statement is False."
+      "No government bonus is required before economic theory can speak. Scarcity of time and income alone is enough to analyse Elif’s trade-off among work, rent, tuition, and study. Policy programmes can change constraints, but their absence does not eject a household decision from economics.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3416,7 +3416,7 @@
       "A national subsidy can change the net price and still leave the analysis micro if the object is this family’s payback alone. Programme scale in the background does not forbid a household-level reading.\n\nSo the statement is False.",
       "Measuring how the subsidy shifted total national renewable investment turns the question into an aggregate. That measurement is macroeconomics.\n\nSo the statement is True.",
       "Economics studies household investment choices when budgets are limited and expected energy savings matter. The solar payback arithmetic is a concrete instance of that.\n\nSo the statement is True.",
-      "Policy programmes do not retire microeconomics. Individual buyers still compare net prices, credit, and payback even when a subsidy is on offer.\n\nAnalysts studying only this family’s calculation are doing the micro work that remains necessary beside any national programme evaluation.\n\nSo the statement is False."
+      "Policy programmes do not retire microeconomics. Individual buyers still compare net prices, credit, and payback even when a subsidy is on offer. Analysts studying only this family’s calculation are doing the micro work that remains necessary beside any national programme evaluation.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3471,10 +3471,10 @@
     ],
     "tactical_explanations": [
       "The word “price” does not force a macro label. Whose price, and whether the object is one item or the economy-wide price level, decides the scope.\n\nSo the statement is False.",
-      "Tracking one grocery item in one shop is a micro price observation. Invoking the word “inflation” does not convert that shelf tag into macro measurement of the overall price level.\n\nEuro-area inflation at 2.3% is the macro object in this case; one shop’s loaf is not.\n\nSo the statement is False.",
+      "Tracking one grocery item in one shop is a micro price observation. Invoking the word “inflation” does not convert that shelf tag into macro measurement of the overall price level. Euro-area inflation at 2.3% is the macro object in this case; one shop’s loaf is not.\n\nSo the statement is False.",
       "A household switching bread brands after a price rise is a single consumer’s adjustment. That is microeconomics.\n\nSo the statement is True.",
       "Macroeconomics explains and predicts movements in the economy-wide price level and the policy responses that follow. Commentators debating tighter euro-area policy at 2.3% inflation are in that lane.\n\nSo the statement is True.",
-      "Economics does not study only macro aggregates. Microeconomics covers household adjustments such as brand switching when bread gets dearer.\n\nIgnoring individual responses would leave out half the subject the ECB discussion sits beside.\n\nSo the statement is False."
+      "Economics does not study only macro aggregates. Microeconomics covers household adjustments such as brand switching when bread gets dearer. Ignoring individual responses would leave out half the subject the ECB discussion sits beside.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3528,11 +3528,11 @@
       false
     ],
     "tactical_explanations": [
-      "Economics uses theories precisely because behaviour is not treated as pure permanent randomness. Patterns in choices under scarcity are what models try to explain and predict.\n\nA town’s permit decision for one apartment block is still open to that theoretical reading.\n\nSo the statement is False.",
+      "Economics uses theories precisely because behaviour is not treated as pure permanent randomness. Patterns in choices under scarcity are what models try to explain and predict. A town’s permit decision for one apartment block is still open to that theoretical reading.\n\nSo the statement is False.",
       "Not all construction is macro. One municipality approving a single apartment block, while ignoring national construction statistics, is a local project decision — micro in scope.\n\nSo the statement is False.",
       "Total national housing starts tied to growth are an aggregate. Measuring that series for its growth effects is macroeconomics.\n\nSo the statement is True.",
       "Limited land and budgets shaping one municipality’s permit choice are scarce-resource decisions economics can study at that local unit.\n\nSo the statement is True.",
-      "Households searching for flats are a standard micro topic — matching, rents, and search under limited budgets. Housing also appears in macro aggregates, but that does not exile household search from microeconomics.\n\n“Housing is macro only” is the trap; scope of the question still decides the label.\n\nSo the statement is False."
+      "Households searching for flats are a standard micro topic — matching, rents, and search under limited budgets. Housing also appears in macro aggregates, but that does not exile household search from microeconomics. “Housing is macro only” is the trap; scope of the question still decides the label.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
