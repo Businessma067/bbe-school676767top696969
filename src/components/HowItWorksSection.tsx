@@ -111,8 +111,8 @@ const VIDEO_TABS: MainTab[] = ["course", "games"];
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
-/** Open the lightbox already magnified so UI text is readable. */
-const INITIAL_LIGHTBOX_ZOOM = 1.55;
+/** Open the lightbox at native 100% — sharper on large screens than CSS upscaling. */
+const INITIAL_LIGHTBOX_ZOOM = 1;
 
 export function HowItWorksSection() {
   const [tab, setTab] = useState<MainTab>("course");
@@ -307,9 +307,9 @@ export function HowItWorksSection() {
                       type="button"
                       onClick={openZoom}
                       aria-label="Zoom in"
-                      className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-2 rounded-md border border-white/30 bg-[#161616]/92 px-4 py-2.5 text-sm font-semibold text-[#F2F1ED] shadow-lg backdrop-blur-sm transition hover:bg-[#161616] sm:px-5 sm:py-3 sm:text-base"
+                      className="absolute bottom-2.5 right-2.5 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/25 bg-[#161616]/90 px-2.5 py-1.5 text-[11px] font-semibold text-[#F2F1ED] shadow-md backdrop-blur-sm transition hover:bg-[#161616] sm:px-3 sm:py-2 sm:text-xs"
                     >
-                      <ZoomIn className="h-5 w-5 sm:h-6 sm:w-6" />
+                      <ZoomIn className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                       Zoom in
                     </button>
                   </div>
@@ -420,11 +420,19 @@ export function HowItWorksSection() {
                 onClick={(event) => event.stopPropagation()}
               >
                 <div className="relative aspect-[3420/1966] w-full overflow-hidden">
+                  {/*
+                    Zoom by sizing the video element (not CSS transform scale), so 100%
+                    stays sharp on large screens and magnification reuses decoded pixels
+                    without an extra soft compositor upscale pass when possible.
+                  */}
                   <video
                     key={`zoom-${slide.key}`}
                     ref={zoomVideoRef}
-                    className="absolute inset-0 h-full w-full object-cover origin-center will-change-transform"
-                    style={{ transform: `scale(${lightboxScale})` }}
+                    className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
+                    style={{
+                      width: `${lightboxScale * 100}%`,
+                      height: `${lightboxScale * 100}%`,
+                    }}
                     poster={slide.poster}
                     src={slide.video}
                     muted
