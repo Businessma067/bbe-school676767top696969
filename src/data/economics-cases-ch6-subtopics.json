@@ -109,7 +109,7 @@
       true
     ],
     "tactical_explanations": [
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Physical form alone does not make an industrial dishwasher inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts industrial dishwasher among non-current tangibles.\n\nSo the statement is False.",
       "A dealer’s industrial dishwasher held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False.",
       "The same industrial dishwasher need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False.",
@@ -350,7 +350,7 @@
     ],
     "tactical_explanations": [
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True.",
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "Bought to resell, a warehouse crane belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
       "The same warehouse crane need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False."
@@ -473,7 +473,7 @@
       "Multi-year operating use of a delivery scooter fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
       "Physical form alone does not make a delivery scooter inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts delivery scooter among non-current tangibles.\n\nSo the statement is False.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True.",
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True."
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -710,7 +710,7 @@
     ],
     "tactical_explanations": [
       "Wear is handled by depreciating a fixed asset, not by calling operating kit inventory. Daily own use of a delivery scooter supports non-current classification.\n\nCounterexample: factory machines wear out yet sit in plant & equipment.\n\nSo the statement is False.",
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "After the sale, the buyer’s purpose governs classification. If the buyer puts the machine into operations, it becomes the buyer’s non-current asset.\n\nThe seller’s old inventory label does not travel with the object forever.\n\nSo the statement is False.",
       "Physical form alone does not make a packaging line inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts packaging line among non-current tangibles.\n\nSo the statement is False.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True."
@@ -829,7 +829,7 @@
       true
     ],
     "tactical_explanations": [
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "A dealer’s packaging line held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False.",
       "Bought to resell, a concrete mixer belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
@@ -1371,7 +1371,7 @@
     "tactical_explanations": [
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is wrong.\n\nSo the statement is False.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
-      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
+      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nNote: depreciation is non-cash in the period charged — the cash outlay was at purchase.\n\nSo the statement is True.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True."
     ],
@@ -1434,7 +1434,7 @@
     "tactical_explanations": [
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is off.\n\nSo the statement is False.",
       "Straight-line annual charge for each asset is (cost − residual) ÷ useful life; sum the three charges.\n\n$$\n\\text{Asset A – Machinery}:\n$$\n\n$$\n170,000 - 0\n$$\n\n$$\n= 170,000\n$$\n\n$$\n\\frac{170,000}{10}\n$$\n\n$$\n\\approx 17,000\n$$\n\n$$\n\\text{Asset B – Delivery truck}:\n$$\n\n$$\n57,000 - 6,000\n$$\n\n$$\n= 51,000\n$$\n\n$$\n\\frac{51,000}{6}\n$$\n\n$$\n\\approx 8,500\n$$\n\n$$\n\\text{Asset C – Computer equipment}:\n$$\n\n$$\n22,000 - 0\n$$\n\n$$\n= 22,000\n$$\n\n$$\n\\frac{22,000}{3}\n$$\n\n$$\n\\approx 7,333\n$$\n\n$$\n\\text{Combined} = 32,833\n$$\n\nActual ≈ €32,833.\n\nSo the statement is True.",
-      "Straight-line depreciation uses cost minus residual value over useful life.\n\n$$\n\\text{Annual dep.} = \\frac{\\text{cost} - \\text{residual}}{\\text{useful life}}\n$$\n\n$$\n\\text{Cost} = 57,000\n$$\n\n$$\n\\text{Residual} = 6,000\n$$\n\n$$\n\\text{Cost} - \\text{Residual} = 57,000 - 6,000\n$$\n\n$$\n= 51,000\n$$\n\n$$\n\\text{Useful life} = 6\n$$\n\n$$\n\\frac{51,000}{6}\n$$\n\n$$\n= 8,500\n$$\n\nThe computed result does not match the claim.\n\nSo the statement is False.",
+      "Straight-line depreciation uses cost minus residual value over useful life.\n\n$$\n\\text{Annual dep.} = \\frac{\\text{cost} - \\text{residual}}{\\text{useful life}}\n$$\n\n$$\n\\text{Cost} = 57,000\n$$\n\n$$\n\\text{Residual} = 6,000\n$$\n\n$$\n\\text{Cost} - \\text{Residual} = 57,000 - 6,000\n$$\n\n$$\n= 51,000\n$$\n\n$$\n\\text{Useful life} = 6\n$$\n\n$$\n\\frac{51,000}{6}\n$$\n\n$$\n= 8,500\n$$\n\nThe computed result does not match the claim.\n\nNote: straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is False.",
       "Depreciated share of machinery cost after three years is three charges over purchase price.\n\n$$\n\\text{Annual} = 17,000, \\quad \\text{Cost} = 170,000\n$$\n\n$$\n\\frac{3 \\times 17,000}{170,000}\n$$\n\n$$\n\\approx inf\n$$\n\n$$\n\\approx 30.0\\%\n$$\n\nActual 30.\n\nSo the statement is False.",
       "Compare the truck's straight-line annual charge with the computer's.\n\n$$\n\\text{Truck annual} = 8,500, \\quad \\text{Computer annual} = 7,333\n$$\n\n$$\n\\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_2 = 8,500, \\quad Y_1 = 7,333\n$$\n\n$$\nY_2 - Y_1 = 8,500 - 7,333\n$$\n\n$$\n= 1,167\n$$\n\n$$\n\\frac{1,167}{7,333}\n$$\n\n$$\n\\approx 0.1591\n$$\n\n$$\n\\approx 15.9\\%\n$$\n\nActual premium 15.\n\nSo the statement is False."
     ]
@@ -1765,7 +1765,7 @@
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
       "Straight-line annual charge for each asset is (cost − residual) ÷ useful life; sum the three charges.\n\n$$\n\\text{Asset A – Machinery}:\n$$\n\n$$\n170,000 - 0\n$$\n\n$$\n= 170,000\n$$\n\n$$\n\\frac{170,000}{8}\n$$\n\n$$\n\\approx 21,250\n$$\n\n$$\n\\text{Asset B – Delivery truck}:\n$$\n\n$$\n52,000 - 7,000\n$$\n\n$$\n= 45,000\n$$\n\n$$\n\\frac{45,000}{6}\n$$\n\n$$\n\\approx 7,500\n$$\n\n$$\n\\text{Asset C – Computer equipment}:\n$$\n\n$$\n20,000 - 0\n$$\n\n$$\n= 20,000\n$$\n\n$$\n\\frac{20,000}{3}\n$$\n\n$$\n\\approx 6,667\n$$\n\n$$\n\\text{Combined} = 35,417\n$$\n\nActual ≈ €35,417.\n\nSo the statement is False.",
       "Carrying value after three years subtracts three annual charges from cost.\n\n$$\n52,000 - 7,000\n$$\n\n$$\n= 45,000\n$$\n\n$$\n\\frac{45,000}{6}\n$$\n\n$$\n\\approx 7,500\n$$\n\n$$\nBV_{3} = 52,000 - 3 \\times 7,500 = 29,500\n$$\n\nActual ≈ €29,500.\n\nSo the statement is False.",
-      "Straight-line depreciation uses cost minus residual value over useful life.\n\n$$\n\\text{Annual dep.} = \\frac{\\text{cost} - \\text{residual}}{\\text{useful life}}\n$$\n\n$$\n\\text{Cost} = 52,000\n$$\n\n$$\n\\text{Residual} = 7,000\n$$\n\n$$\n\\text{Cost} - \\text{Residual} = 52,000 - 7,000\n$$\n\n$$\n= 45,000\n$$\n\n$$\n\\text{Useful life} = 6\n$$\n\n$$\n\\frac{45,000}{6}\n$$\n\n$$\n= 7,500\n$$\n\nThe computed result does not match the claim.\n\nSo the statement is False.",
+      "Straight-line depreciation uses cost minus residual value over useful life.\n\n$$\n\\text{Annual dep.} = \\frac{\\text{cost} - \\text{residual}}{\\text{useful life}}\n$$\n\n$$\n\\text{Cost} = 52,000\n$$\n\n$$\n\\text{Residual} = 7,000\n$$\n\n$$\n\\text{Cost} - \\text{Residual} = 52,000 - 7,000\n$$\n\n$$\n= 45,000\n$$\n\n$$\n\\text{Useful life} = 6\n$$\n\n$$\n\\frac{45,000}{6}\n$$\n\n$$\n= 7,500\n$$\n\nThe computed result does not match the claim.\n\nNote: straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is False.",
       "With nil residual, the asset is fully written down once elapsed years reach useful life.\n\n$$\n\\text{Cost} = €20,000, \\quad \\text{Life} = 3\\text{ years}, \\quad \\text{Residual} = €0\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True."
     ]
   },
@@ -1939,7 +1939,7 @@
       true
     ],
     "tactical_explanations": [
-      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
+      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nNote: straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is fine.\n\nSo the statement is True.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True.",
@@ -2209,7 +2209,7 @@
       true
     ],
     "tactical_explanations": [
-      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
+      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nNote: depreciation is non-cash in the period charged — the cash outlay was at purchase.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
@@ -2603,7 +2603,7 @@
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion fall.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nSo the statement is True.",
-      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nSo the statement is True."
+      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -2875,7 +2875,7 @@
       "Assets always equal liabilities plus equity — the sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 95 and current assets = 285. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{95}{285}\n$$\n\n$$\nShare = 33.3\\%\n$$\n\nActual 33.\n\nSo the statement is True.",
       "This is a composition claim: express Cash and cash equivalents as a percentage of current assets.\n\nFrom the extract, Cash and cash equivalents = 106 and current assets = 285. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{106}{285}\n$$\n\n$$\nShare = 37.2\\%\n$$\n\nActual 37.\n\nSo the statement is True.",
-      "Inventory of €84 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True.",
+      "Inventory of €84 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True."
     ]
   },
@@ -3113,7 +3113,7 @@
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
-      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False."
+      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -3416,7 +3416,7 @@
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 719\n$$\n\n$$\n\\text{Total assets} = 1,003\n$$\n\n$$\n\\frac{719}{1,003}\n$$\n\n$$\n\\approx 0.7168\n$$\n\n$$\n\\approx 71.7\\%\n$$\n\n$$\n71.7\\% > 67.1\\%\n$$\n\nactual 71.\n\nSo the statement is True.",
       "This is a composition claim: express Inventory as a percentage of current assets.\n\nFrom the extract, Inventory = 109 and current assets = 215. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{109}{215}\n$$\n\n$$\nShare = 50.7\\%\n$$\n\nActual 50.\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 71 and current assets = 215. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{71}{215}\n$$\n\n$$\nShare = 33.0\\%\n$$\n\nActual 33.\n\nSo the statement is True.",
-      "Inventory of €109 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True."
+      "Inventory of €109 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ]
   },
   {
@@ -3923,7 +3923,7 @@
     ],
     "tactical_explanations": [
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
-      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
+      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nNote: straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is incorrect.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False."
@@ -4102,7 +4102,7 @@
       true
     ],
     "tactical_explanations": [
-      "Depreciation allocates past asset cost over useful life; unlike wages or energy, it does not trigger a cash payment in the period charged.\n\nSo the statement is True.",
+      "Depreciation allocates past asset cost over useful life; unlike wages or energy, it does not trigger a cash payment in the period charged.\n\nNote: depreciation is non-cash in the period charged — the cash outlay was at purchase.\n\nSo the statement is True.",
       "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{65,000 - 0}{7} = 9,286\n$$\n\n$$\n\\text{Asset B} = \\frac{24,000 - 3,000}{5} = 4,200\n$$\n\n$$\n\\begin{aligned}\n&\\frac{9,286 - 4,200}{4,200} = 121.1\\% \\\\[0.65em]\n&\\text{Claim: more than 29.9\\% higher}\n\\end{aligned}\n$$\n\nAsset A's charge is 121.1% above Asset B's, which exceeds the 29.9% threshold.\n\nNote: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
       "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
       "An audit gives reasonable assurance, not absolute certainty — the opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
@@ -5663,7 +5663,7 @@
     ],
     "tactical_explanations": [
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 80 and current assets = 227. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{80}{227}\n$$\n\n$$\nShare = 35.2\\%\n$$\n\nActual 35.\n\nSo the statement is True.",
-      "Inventory of €111 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True.",
+      "Inventory of €111 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 417\n$$\n\n$$\n\\text{Total assets} = 969\n$$\n\n$$\n\\frac{417}{969}\n$$\n\n$$\n\\approx 0.4303\n$$\n\n$$\n\\approx 43.0\\%\n$$\n\n$$\n43.0\\% > 34\\%\n$$\n\nactual 43.\n\nSo the statement is True.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True."
@@ -6266,7 +6266,7 @@
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 611\n$$\n\n$$\n\\text{Total assets} = 936\n$$\n\n$$\n\\frac{611}{936}\n$$\n\n$$\n\\approx 0.6528\n$$\n\n$$\n\\approx 65.3\\%\n$$\n\n$$\n65.3\\% > 60.2\\%\n$$\n\nactual 65.\n\nSo the statement is True.",
       "This is a composition claim: express Inventory as a percentage of current assets.\n\nFrom the extract, Inventory = 138 and current assets = 265. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{138}{265}\n$$\n\n$$\nShare = 52.1\\%\n$$\n\nActual 52.\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 87 and current assets = 265. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{87}{265}\n$$\n\n$$\nShare = 32.8\\%\n$$\n\nActual 32.\n\nSo the statement is True.",
-      "Inventory of €138 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True."
+      "Inventory of €138 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ]
   },
   {

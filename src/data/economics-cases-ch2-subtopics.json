@@ -19,7 +19,7 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about scarcity is wrong.\n\nA steady salary reallocates the budget — it does not abolish scarcity. Competing uses for the same euro and the same evening still remain after payday.\n\nNote: scarcity is not poverty — high-income households still rank rival uses.\n\nSo the statement is False.",
+      "A steady salary reallocates the budget — it does not abolish scarcity. Competing uses for the same euro and the same evening still remain after payday.\n\nNote: scarcity is not poverty — high-income households still rank rival uses.\n\nSo the statement is False.",
       "The sentence accurately describes economising.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nEconomising is careful allocation under limits: ranking uses instead of treating stocks as infinite.\n\nSo the statement is True.",
       "The assertion about economic decisions holds.\n\nKeeping pocket money unspent still decides against buying something today. That is an economic choice about scarce resources — there is no neutral exit.\n\nEven inaction uses scarce time or money, so nobody fully opts out of economic decisions.\n\nIn «Scarcity and economising», the claim fits the definition as written.\n\nSo the statement is True.",
       "This overstates or mislabels scarcity.\n\nHouseholds rank spending every week: rent, food, transport, savings. Scarcity and economising are not privileges reserved for firms with a trade register.\n\nNote: scarcity is not poverty — high-income households still rank rival uses.\n\nSo the statement is False.",
@@ -50,7 +50,7 @@
     "tactical_explanations": [
       "The absolute wording on goods breaks on a counterexample.\n\nGoods are tangible; services are intangible activities — this sentence reverses the pair.\n\nGoods are tangible items you can transfer; services are intangible activities performed for someone.\n\nSo the statement is False.",
       "The assertion about services holds.\n\nInstalling software or preparing a drink is work performed for someone without handing over a physical product as the main item — that is a service.\n\nSo the statement is True.",
-      "needs is defined the way this sentence says.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nIn «Goods, services, needs, and wants», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
+      "Needs is defined the way this sentence says.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nIn «Goods, services, needs, and wants», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "The wording on exchange fits the standard definition.\n\nExchange is any agreed swap of goods, services, or claims.\n\nExchange is any agreed swap of goods, services, or claims. Money often helps, but barter without cash still counts.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "Yes — this is how scarcity works in the chapter.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nSo the statement is True."
     ],
@@ -106,7 +106,7 @@
       true
     ],
     "tactical_explanations": [
-      "goods is defined the way this sentence says.\n\nGoods are tangible items you can transfer; services are intangible activities performed for someone.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
+      "Goods is defined the way this sentence says.\n\nGoods are tangible items you can transfer; services are intangible activities performed for someone.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "The wording on manufacturers fits the standard definition.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nApply that definition directly to the claim's nouns and the verdict follows.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "Yes — this is how fabricate works in the chapter.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This matches the chapter definition of exchange.\n\nGoods are tangible items you can transfer; services are intangible activities performed for someone.\n\nSo the statement is True.",
@@ -167,7 +167,7 @@
       "Yes — this is how pass works in the chapter.\n\nIn the Jonas example, the nouns in the claim line up with the definition.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nIn «Jonas: bus pass or game skin», the claim fits the definition as written.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "The sentence does not hold for needs.\n\nThe because-clause fails: both items have a price, they must both be classified as needs rather than wants does not justify the conclusion.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is False.",
       "This is a correct statement about economic decisions.\n\nIn the Jonas example, the nouns in the claim line up with the definition.\n\nSo the statement is True.",
-      "The claim about choosing is wrong.\n\nIn the Jonas example, a concrete counterexample shows the claim does not hold.\n\nEven inaction uses scarce time or money, so nobody fully opts out of economic decisions.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "In the Jonas example, a concrete counterexample shows the claim does not hold.\n\nEven inaction uses scarce time or money, so nobody fully opts out of economic decisions.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The absolute wording on jonas breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -226,7 +226,7 @@
       "The claim about goods is correct.\n\nInstalling software or preparing a drink is work performed for someone without handing over a physical product as the main item — that is a service.\n\nSo the statement is True.",
       "The sentence accurately describes exchange.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nApply that definition to the claim's exact wording.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "The assertion about scarcity holds.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nScarcity is limited means facing rival uses. Extra income eases one budget line but does not erase every competing claim on time or money.\n\nIn «Defining the economy from scratch», the claim fits the definition as written.\n\nNote: scarcity is not poverty — high-income households still rank rival uses.\n\nSo the statement is True.",
-      "economic decisions is defined the way this sentence says.\n\nKeeping pocket money unspent still decides against buying something today. That is an economic choice about scarce resources — there is no neutral exit.\n\nSo the statement is True."
+      "Economic decisions is defined the way this sentence says.\n\nKeeping pocket money unspent still decides against buying something today. That is an economic choice about scarce resources — there is no neutral exit.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -282,7 +282,7 @@
     "tactical_explanations": [
       "The sentence accurately describes exchange.\n\nExchange is any agreed swap of goods, services, or claims.\n\nExchange is any agreed swap of goods, services, or claims. Money often helps, but barter without cash still counts.\n\nSo the statement is True.",
       "No — this misstates exchange.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "wood is defined the way this sentence says.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nEconomising is careful allocation under limits: ranking uses instead of treating stocks as infinite.\n\nIn «Exchange without money», the claim fits the definition as written.\n\nSo the statement is True.",
+      "Wood is defined the way this sentence says.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nEconomising is careful allocation under limits: ranking uses instead of treating stocks as infinite.\n\nIn «Exchange without money», the claim fits the definition as written.\n\nSo the statement is True.",
       "The wording on gardening fits the standard definition.\n\nThe because-clause is correct: they are an activity performed for the neighbour, not a physical item.\n\nA service is an intangible activity — repair, tutoring, preparation — not a physical object as the main product.\n\nSo the statement is True.",
       "Yes — this is how exchange works in the chapter.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True."
     ],
@@ -310,7 +310,7 @@
     ],
     "tactical_explanations": [
       "The assertion about entrepreneur holds.\n\nHouseholds consume and may sell labour or used goods; entrepreneurs organise production under uncertainty.\n\nIn «Petra's dining table commission», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "finished is defined the way this sentence says.\n\nThe because-clause is correct: it is a tangible item Fabian produces and delivers.\n\nSo the statement is True.",
+      "Finished is defined the way this sentence says.\n\nThe because-clause is correct: it is a tangible item Fabian produces and delivers.\n\nSo the statement is True.",
       "The wording on exchange fits the standard definition.\n\nExchange is any agreed swap of goods, services, or claims.\n\nExchange is any agreed swap of goods, services, or claims. Money often helps, but barter without cash still counts.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "The assertion about wants does not survive the definition.\n\nThe because-clause fails: raw materials are merely wants for any business does not justify the conclusion.\n\nHouseholds consume and may sell labour or used goods; entrepreneurs organise production under uncertainty. Both can trade.\n\nIn «Petra's dining table commission», one ordinary counterexample is enough to reject the claim.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is False.",
       "This matches the chapter definition of timber.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nSo the statement is True."
@@ -338,7 +338,7 @@
       false
     ],
     "tactical_explanations": [
-      "manufacturer is defined the way this sentence says.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
+      "Manufacturer is defined the way this sentence says.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is True.",
       "This misapplies needs.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is False.",
       "Yes — this is how goods works in the chapter.\n\nNeeds support basic well-being or continued operations; wants are desired extras.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for wants.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
@@ -371,7 +371,7 @@
       "The assertion about household does not survive the definition.\n\nThe because-clause fails: lukas receives money from parents, he is not part of the household side of the economy does not justify the conclusion.\n\nHouseholds consume and may sell labour or used goods; entrepreneurs organise production under uncertainty. Both can trade.\n\nIn «Lukas end-of-month pocket money», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The sentence does not hold for buying.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is False.",
       "The claim fails on wanting.\n\nScarcity, economising, goods versus services, needs versus wants, and exchange are the core ideas here.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "The claim about needs is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEconomising is careful allocation under limits: ranking uses instead of treating stocks as infinite.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEconomising is careful allocation under limits: ranking uses instead of treating stocks as infinite.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -455,10 +455,10 @@
     ],
     "tactical_explanations": [
       "This is a correct statement about multinational.\n\nScarcity is limited means facing rival uses.\n\nScarcity is limited means facing rival uses. Extra income eases one budget line but does not erase every competing claim on time or money.\n\nSo the statement is True.",
-      "The claim about wants is wrong.\n\nHouseholds rank spending every week: rent, food, transport, savings. Scarcity and economising are not privileges reserved for firms with a trade register.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is False.",
+      "Households rank spending every week: rent, food, transport, savings. Scarcity and economising are not privileges reserved for firms with a trade register.\n\nNote: needs support basic well-being; wants are desired extras even when both have prices.\n\nSo the statement is False.",
       "The absolute wording on scarcity breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nScarcity is limited means facing rival uses. Extra income eases one budget line but does not erase every competing claim on time or money.\n\nNote: scarcity is not poverty — high-income households still rank rival uses.\n\nSo the statement is False.",
       "The assertion about economising holds.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nEconomising is careful allocation under limits: ranking uses instead of treating stocks as infinite.\n\nIn «whether scarcity and economising apply uniformly», the claim fits the definition as written.\n\nSo the statement is True.",
-      "entrepreneur is defined the way this sentence says.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nSo the statement is True."
+      "Entrepreneur is defined the way this sentence says.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -542,7 +542,7 @@
     ],
     "tactical_explanations": [
       "The assertion about household holds.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Three actors, one week», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "opportunity cost is defined the way this sentence says.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
+      "Opportunity cost is defined the way this sentence says.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "The wording on hiring fits the standard definition.\n\nThe definition matches: Choices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how resurfacing works in the chapter.\n\nThe definition matches: Choices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Three actors, one week», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of opportunity cost.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True."
@@ -570,7 +570,7 @@
       true
     ],
     "tactical_explanations": [
-      "opportunity cost is defined the way this sentence says.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
+      "Opportunity cost is defined the way this sentence says.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "This misapplies robin's.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Misunderstanding opportunity cost», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The assertion about scarcity does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nSo the statement is False.",
       "The sentence does not hold for opportunity cost.\n\nOpportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
@@ -631,7 +631,7 @@
       "Yes — this is how saturday works in the chapter.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Mila: bookstore or swimming academy», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of opportunity cost.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "This is a correct statement about opportunity cost.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
-      "The claim about opportunity cost is wrong.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nIn «Mila: bookstore or swimming academy», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nIn «Mila: bookstore or swimming academy», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence accurately describes individuals.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -659,7 +659,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of government.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nSo the statement is True.",
       "The claim fails on opportunity cost.\n\nThe because-clause fails: they are not market-priced does not justify the conclusion.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
-      "The claim about opportunity cost is wrong.\n\nThe because-clause fails: both projects improve transport, they cannot be compared using opportunity cost at all does not justify the conclusion.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
+      "The because-clause fails: both projects improve transport, they cannot be compared using opportunity cost at all does not justify the conclusion.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "The sentence accurately describes opportunity cost.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nIn «City hall transport budget», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "No — this misstates household.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
@@ -687,7 +687,7 @@
     ],
     "tactical_explanations": [
       "The claim fails on opportunity cost.\n\nOpportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
-      "The claim about opportunity cost is wrong.\n\nOpportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
+      "Opportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "The sentence accurately describes opportunity cost.\n\nIn the bakery example, the nouns in the claim line up with the definition.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nSo the statement is True.",
       "No — this misstates scarcity.\n\nThe because-clause fails: she selects between jobs rather than physical goods does not justify the conclusion.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Ana: bakery job or market stall», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "This overstates or mislabels opportunity cost.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
@@ -746,7 +746,7 @@
     "tactical_explanations": [
       "The sentence accurately describes forty.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about opportunity cost holds.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
-      "choosing is defined the way this sentence says.\n\nThe definition matches: Choices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Almeida garden plot», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Choosing is defined the way this sentence says.\n\nThe definition matches: Choices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Almeida garden plot», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on allocating fits the standard definition.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how household works in the chapter.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nSo the statement is True."
     ],
@@ -774,7 +774,7 @@
     ],
     "tactical_explanations": [
       "The assertion about mateo holds.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Mateo: salary versus freelancing», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "opportunity cost is defined the way this sentence says.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
+      "Opportunity cost is defined the way this sentence says.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "The wording on opportunity cost fits the standard definition.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "Yes — this is how cannot works in the chapter.\n\nThe because-clause is correct: he cannot do both full-time, working hours are a scarce resource forcing one choice.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Mateo: salary versus freelancing», the claim fits the definition as written.\n\nSo the statement is True.",
       "This matches the chapter definition of opportunity cost.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nSo the statement is True."
@@ -802,7 +802,7 @@
       true
     ],
     "tactical_explanations": [
-      "capital is defined the way this sentence says.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nSo the statement is True.",
+      "Capital is defined the way this sentence says.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nSo the statement is True.",
       "The wording on opportunity cost fits the standard definition.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nIn «Retail chain store location», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "The assertion about opportunity cost does not survive the definition.\n\nOpportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "The sentence does not hold for large.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
@@ -835,7 +835,7 @@
       "The assertion about opportunity cost does not survive the definition.\n\nOpportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nIn «Irrigation water: wheat or vegetables», one ordinary counterexample is enough to reject the claim.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "The sentence does not hold for opportunity cost.\n\nThe because-clause fails: ilić is a farmer not a registered firm, his decisions involve no opportunity cost does not justify the conclusion.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "This is a correct statement about opportunity cost.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nSo the statement is True.",
-      "The claim about same-farm is wrong.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Irrigation water: wheat or vegetables», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Choices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Irrigation water: wheat or vegetables», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -863,7 +863,7 @@
       "Yes — this is how overtime works in the chapter.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Factory overtime hours», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of opportunity cost.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
       "This is a correct statement about opportunity cost.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is True.",
-      "The claim about overtime is wrong.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Factory overtime hours», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Choices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nIn «Factory overtime hours», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence accurately describes opportunity cost.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -891,7 +891,7 @@
     "tactical_explanations": [
       "The sentence does not hold for scarcity.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "The claim fails on opportunity cost.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
-      "The claim about councils is wrong.\n\nThe because-clause fails: councils can raise taxes in principle, this year's 90,000-euro budget is not scarce does not justify the conclusion.\n\nSo the statement is False.",
+      "The because-clause fails: councils can raise taxes in principle, this year's 90,000-euro budget is not scarce does not justify the conclusion.\n\nSo the statement is False.",
       "The absolute wording on opportunity cost breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The assertion about opportunity cost holds.\n\nThe definition matches: Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
@@ -919,10 +919,10 @@
     ],
     "tactical_explanations": [
       "The claim fails on opportunity cost.\n\nOpportunity cost names one next-best forgone benefit, not a shopping-list total and not the cash outlay alone.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
-      "The claim about opportunity cost is wrong.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
+      "Opportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nNote: opportunity cost is the next-best forgone benefit, not a sum of every rejected option.\n\nSo the statement is False.",
       "The absolute wording on economising breaks on a counterexample.\n\nChoices under scarcity carry opportunity cost: what you forgo by locking a resource into one use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "No — this misstates opportunity cost.\n\nThe because-clause fails: the wood is used either way does not justify the conclusion.\n\nOpportunity cost is the value of the best alternative given up — not the cash bill on the chosen option alone.\n\nIn «Handwerk GmbH timber choice», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
-      "economising is defined the way this sentence says.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nSo the statement is True."
+      "Economising is defined the way this sentence says.\n\nEconomising is exactly what you do when money or time is limited: you compare options and refuse to spend as if the pot were infinite.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -947,10 +947,10 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about macroeconomics is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
       "The absolute wording on macroeconomics breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMicroeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
       "No — this misstates single.\n\nOne café's price change or one household's purchase stays micro. Nationwide totals mark macro scope.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Fatima's electric hatchback choice», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
-      "nationwide is defined the way this sentence says.\n\nIn the Fatima example, the nouns in the claim line up with the definition.\n\nSo the statement is True.",
+      "Nationwide is defined the way this sentence says.\n\nIn the Fatima example, the nouns in the claim line up with the definition.\n\nSo the statement is True.",
       "This misapplies microeconomics.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMicroeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -978,7 +978,7 @@
     "tactical_explanations": [
       "The sentence accurately describes gdp.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nApply that definition to the claim's exact wording.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "No — this misstates macroeconomics.\n\nOne café's price change or one household's purchase stays micro. Nationwide totals mark macro scope.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
-      "macroeconomics is defined the way this sentence says.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Recession headline», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Macroeconomics is defined the way this sentence says.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Recession headline», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on economics fits the standard definition.\n\nMicroeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about microeconomics does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
     ],
@@ -1006,7 +1006,7 @@
     ],
     "tactical_explanations": [
       "The assertion about this holds.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Freonia quarterly report», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
-      "inflation is defined the way this sentence says.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "The wording on microeconomics fits the standard definition.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how economics works in the chapter.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Freonia quarterly report», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of both.\n\nEconomics studies allocation of scarce resources; micro and macro split by the scope of the question.\n\nSo the statement is True."
@@ -1151,10 +1151,10 @@
     ],
     "tactical_explanations": [
       "The claim fails on microeconomics.\n\nThe because-clause fails: each worker is an individual does not justify the conclusion.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
-      "The claim about macroeconomics is wrong.\n\nOne café's price change or one household's purchase stays micro. Nationwide totals mark macro scope.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
+      "One café's price change or one household's purchase stays micro. Nationwide totals mark macro scope.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
       "The absolute wording on microeconomics breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nSo the statement is False.",
       "No — this misstates macroeconomics.\n\nOne café's price change or one household's purchase stays micro. Nationwide totals mark macro scope.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «BrewPeak espresso price hike», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
-      "economics is defined the way this sentence says.\n\nEconomics studies allocation of scarce resources; micro and macro split by the scope of the question.\n\nSo the statement is True."
+      "Economics is defined the way this sentence says.\n\nEconomics studies allocation of scarce resources; micro and macro split by the scope of the question.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1182,7 +1182,7 @@
       "The claim about microeconomics is correct.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "The sentence accurately describes microeconomics.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nApply that definition to the claim's exact wording.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "The assertion about microeconomics holds.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nIn «Micro scope traps», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "macroeconomics is defined the way this sentence says.\n\nThe because-clause is correct: it summarises the entire economy.\n\nSo the statement is True.",
+      "Macroeconomics is defined the way this sentence says.\n\nThe because-clause is correct: it summarises the entire economy.\n\nSo the statement is True.",
       "The wording on microeconomics fits the standard definition.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -1210,7 +1210,7 @@
     "tactical_explanations": [
       "The sentence accurately describes microeconomics.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nApply that definition to the claim's exact wording.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "No — this misstates macroeconomics.\n\nThe because-clause fails: many riders are affected at once does not justify the conclusion.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
-      "macroeconomics is defined the way this sentence says.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Ride-hail surge pricing», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Macroeconomics is defined the way this sentence says.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Ride-hail surge pricing», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on economics fits the standard definition.\n\nEconomics studies allocation of scarce resources; micro and macro split by the scope of the question.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about individual does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
     ],
@@ -1266,7 +1266,7 @@
       true
     ],
     "tactical_explanations": [
-      "microeconomics is defined the way this sentence says.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
+      "Microeconomics is defined the way this sentence says.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "The wording on macroeconomics fits the standard definition.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Bookstore pricing experiment», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
       "Yes — this is how macroeconomics works in the chapter.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This matches the chapter definition of household.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nSo the statement is True.",
@@ -1383,10 +1383,10 @@
     ],
     "tactical_explanations": [
       "This is a correct statement about microeconomics.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nApply that definition to the claim's exact wording.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is True.",
-      "The claim about macroeconomics is wrong.\n\nThe because-clause fails: airlines operate internationally does not justify the conclusion.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
+      "The because-clause fails: airlines operate internationally does not justify the conclusion.\n\nNote: unit of analysis decides micro vs macro, not whether a government word appears.\n\nSo the statement is False.",
       "The sentence accurately describes economics.\n\nEconomics studies allocation of scarce resources; micro and macro split by the scope of the question.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about macroeconomics holds.\n\nMacroeconomics tracks whole-economy totals — not one household's purchase.\n\nIn «Budget airline seat sale», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "household is defined the way this sentence says.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nSo the statement is True."
+      "Household is defined the way this sentence says.\n\nMicroeconomics stays with one household, one firm, or one market.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1411,7 +1411,7 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about inflation is wrong.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
+      "Inflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "The sentence accurately describes free.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about financing holds.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Tax-funded lighthouse», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This overstates or mislabels goods.\n\nThe because-clause fails: ships are private businesses, lighthouse services cannot be public goods by definition does not justify the conclusion.\n\nNote: own-price moves you along a curve; other determinants shift it.\n\nSo the statement is False.",
@@ -1442,7 +1442,7 @@
     "tactical_explanations": [
       "The sentence accurately describes inflation.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nApply that definition to the claim's exact wording.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is True.",
       "No — this misstates inflation.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
-      "inflation is defined the way this sentence says.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nIn «Saving euros under low inflation», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nIn «Saving euros under low inflation», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on inflation fits the standard definition.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how purchasing works in the chapter.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True."
     ],
@@ -1498,7 +1498,7 @@
       true
     ],
     "tactical_explanations": [
-      "inflation is defined the way this sentence says.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is True.",
       "The wording on medium of exchange fits the standard definition.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nIn «Hyperinflation pocket money», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Yes — this is how inflation works in the chapter.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nApply that definition to the claim's exact wording.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is True.",
       "This matches the chapter definition of inflation.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nSo the statement is True.",
@@ -1531,7 +1531,7 @@
       "Yes — this is how services works in the chapter.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «National park entry debate», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of funding.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True.",
       "The claim fails on goods.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nSo the statement is False.",
-      "The claim about free-rider is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1559,7 +1559,7 @@
       "The assertion about inflation does not survive the definition.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nIn «Money's three functions», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "The sentence does not hold for inflation.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nApply that definition to the claim's exact wording.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "The claim fails on street.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "The claim about money is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence accurately describes medium of exchange.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -1587,7 +1587,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of services.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True.",
       "This is a correct statement about government.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about household is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The sentence accurately describes subsidies.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Circular flow with government», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "No — this misstates circular flow.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nSo the statement is False."
     ],
@@ -1618,7 +1618,7 @@
       "The claim about specialisation is correct.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nSo the statement is True.",
       "The sentence accurately describes circular flow.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about billing holds.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Call centre task split», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "dependency is defined the way this sentence says.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True."
+      "Dependency is defined the way this sentence says.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1643,10 +1643,10 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about wants is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The absolute wording on call breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nSo the statement is False.",
       "No — this misstates goods.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "subsidised is defined the way this sentence says.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nNote: own-price moves you along a curve; other determinants shift it.\n\nSo the statement is True.",
+      "Subsidised is defined the way this sentence says.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nNote: own-price moves you along a curve; other determinants shift it.\n\nSo the statement is True.",
       "The wording on transfers fits the standard definition.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -1702,7 +1702,7 @@
     ],
     "tactical_explanations": [
       "The assertion about wants holds.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Barter weekend market», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "medium of exchange is defined the way this sentence says.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nSo the statement is True.",
+      "Medium of exchange is defined the way this sentence says.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nSo the statement is True.",
       "The wording on exchange fits the standard definition.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about goods does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This matches the chapter definition of medium of exchange.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nSo the statement is True."
@@ -1763,7 +1763,7 @@
       "The assertion about inflation does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "The sentence does not hold for money.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nSo the statement is False.",
       "This is a correct statement about goods.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about inflation is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False."
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1791,7 +1791,7 @@
       "Yes — this is how residents works in the chapter.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Voluntary donation park cleanup», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of public-good-like.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This is a correct statement about financing.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True.",
-      "The claim about medium of exchange is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The absolute wording on voluntary breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -1847,10 +1847,10 @@
     ],
     "tactical_explanations": [
       "This is a correct statement about inflation.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nApply that definition to the claim's exact wording.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is True.",
-      "The claim about inflation is wrong.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
+      "Inflation is a sustained rise in the general price level, not one shop's promotion.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "The sentence accurately describes inflation.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "No — this misstates inflation.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "central is defined the way this sentence says.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True."
+      "Central is defined the way this sentence says.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1878,7 +1878,7 @@
       "The claim about student is correct.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nSo the statement is True.",
       "The sentence accurately describes transfers.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about transport holds.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Student grant transfer», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "circular flow is defined the way this sentence says.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nSo the statement is True.",
+      "Circular flow is defined the way this sentence says.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nSo the statement is True.",
       "The wording on transfers fits the standard definition.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -1934,7 +1934,7 @@
     ],
     "tactical_explanations": [
       "The assertion about division of labour holds.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nIn «Specialisation in hospitals», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "specialisation is defined the way this sentence says.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nSo the statement is True.",
+      "Specialisation is defined the way this sentence says.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nSo the statement is True.",
       "This misapplies specialisation.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "Yes — this is how drawbacks works in the chapter.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Specialisation in hospitals», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of needs.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nSo the statement is True."
@@ -2023,7 +2023,7 @@
       "The assertion about specialisation does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nSo the statement is False.",
       "The sentence does not hold for circular flow.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The claim fails on division of labour.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "The claim about services is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence accurately describes interdependent.\n\nDivision of labour raises output per person through repetition, but it also creates interdependence across stations.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -2051,7 +2051,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of circular flow.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nSo the statement is True.",
       "This is a correct statement about goods.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about circular flow is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The sentence accurately describes medium of exchange.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nIn «Circular flow income loop», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The assertion about saving holds.\n\nIn the circular flow, firms pay households for factors and households return spending as firm revenue.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
@@ -2138,7 +2138,7 @@
     "tactical_explanations": [
       "The sentence accurately describes unit.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "No — this misstates unit.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nSo the statement is False.",
-      "goods is defined the way this sentence says.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Compare prices across aisles», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Goods is defined the way this sentence says.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Compare prices across aisles», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This misapplies medium of exchange.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMoney works as medium of exchange, unit of account, and store of value — related roles that stay distinct.\n\nSo the statement is False.",
       "The assertion about inflation does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False."
     ],
@@ -2166,7 +2166,7 @@
     ],
     "tactical_explanations": [
       "The assertion about listeners holds.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nIn «Free rider street concert», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "pure is defined the way this sentence says.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nSo the statement is True.",
+      "Pure is defined the way this sentence says.\n\nPublic goods are hard to exclude non-payers from and often non-rival in use.\n\nSo the statement is True.",
       "The wording on tax-funded fits the standard definition.\n\nMoney, circular flow, specialisation, and public finance organise how agents trade under scarcity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about inflation does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nInflation is a sustained rise in the general price level, not one shop's promotion.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: inflation is a general price-level rise, not one shop's sale.\n\nSo the statement is False.",
       "The sentence does not hold for non-paying.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
@@ -2339,7 +2339,7 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about free is wrong.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
+      "Economic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
       "The absolute wording on consumer sovereignty breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nConsumer sovereignty means household spending influences what firms produce through price and sales signals.\n\nSo the statement is False.",
       "The assertion about profit holds.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Consumer sovereignty test», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This overstates or mislabels planned.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
@@ -2426,7 +2426,7 @@
       true
     ],
     "tactical_explanations": [
-      "free is defined the way this sentence says.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is True.",
+      "Free is defined the way this sentence says.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is True.",
       "The wording on social fits the standard definition.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nIn «Compare three market models», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Yes — this is how eco-social works in the chapter.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nApply that definition to the claim's exact wording.\n\nNote: consumer sovereignty means spending signals steer production.\n\nSo the statement is True.",
       "This matches the chapter definition of consumer sovereignty.\n\nThe definition matches: Consumer sovereignty means household spending influences what firms produce through price and sales signals.\n\nSo the statement is True.",
@@ -2487,7 +2487,7 @@
       "The assertion about goods does not survive the definition.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Free market economy traits», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: consumer sovereignty means spending signals steer production.\n\nSo the statement is False.",
       "The sentence does not hold for market.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
       "The claim fails on free.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
-      "The claim about market is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence accurately describes prices.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -2515,7 +2515,7 @@
     "tactical_explanations": [
       "The sentence does not hold for eco-social.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is False.",
       "This is a correct statement about co-determination.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about social is wrong.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is False.",
+      "A social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is False.",
       "The sentence accurately describes market.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «German social partners», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The assertion about eco-social holds.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
@@ -2546,7 +2546,7 @@
       "The claim about social is correct.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True.",
       "The sentence accurately describes exclusive.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about eco-social holds.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nIn «Universal basic services debate», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "consumer sovereignty is defined the way this sentence says.\n\nConsumer sovereignty means household spending influences what firms produce through price and sales signals.\n\nSo the statement is True."
+      "Consumer sovereignty is defined the way this sentence says.\n\nConsumer sovereignty means household spending influences what firms produce through price and sales signals.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2571,10 +2571,10 @@
       true
     ],
     "tactical_explanations": [
-      "The claim about oecd is wrong.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
+      "Economic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
       "The absolute wording on social breaks on a counterexample.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "No — this misstates transformation.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Social safety net in markets», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "labour is defined the way this sentence says.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is True.",
+      "Labour is defined the way this sentence says.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is True.",
       "The wording on social fits the standard definition.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -2602,7 +2602,7 @@
     "tactical_explanations": [
       "The sentence accurately describes consumer sovereignty.\n\nConsumer sovereignty means household spending influences what firms produce through price and sales signals.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "No — this misstates goods.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "profit is defined the way this sentence says.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Consumer boycott effect», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Profit is defined the way this sentence says.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Consumer boycott effect», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on market fits the standard definition.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how labour works in the chapter.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True."
     ],
@@ -2630,7 +2630,7 @@
     ],
     "tactical_explanations": [
       "The assertion about transformation holds.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Transformation unemployment spike», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "social is defined the way this sentence says.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True.",
+      "Social is defined the way this sentence says.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True.",
       "This misapplies transition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is False.",
       "Yes — this is how long-run works in the chapter.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Transformation unemployment spike», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of eco-social.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True."
@@ -2778,7 +2778,7 @@
       "The claim about environmental is correct.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nSo the statement is True.",
       "The absolute wording on eco-social breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is False.",
       "The assertion about regulation holds.\n\nEconomic systems differ in how production and distribution decisions are coordinated.\n\nIn «Eco-social housing standard», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "social is defined the way this sentence says.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True."
+      "Social is defined the way this sentence says.\n\nA social market pairs competitive markets with social rules; eco-social variants add environmental standards.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2862,7 +2862,7 @@
     ],
     "tactical_explanations": [
       "The assertion about demand holds.\n\nThe because-clause is correct: marginal buyers drop out as price increases.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «The Law of Demand», the claim fits the definition as written.\n\nSo the statement is True.",
-      "ceteris is defined the way this sentence says.\n\nThe definition matches: Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
+      "Ceteris is defined the way this sentence says.\n\nThe definition matches: Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "This misapplies goods.\n\nThe because-clause fails: buyers treat tickets as prestige goods does not justify the conclusion.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nSo the statement is False.",
       "The assertion about lower does not survive the definition.\n\nThe because-clause fails: buyers expect inferior quality does not justify the conclusion.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nIn «The Law of Demand», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The sentence does not hold for law of demand.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False."
@@ -2890,7 +2890,7 @@
       false
     ],
     "tactical_explanations": [
-      "quantity is defined the way this sentence says.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nSo the statement is True.",
+      "Quantity is defined the way this sentence says.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nSo the statement is True.",
       "This misapplies law of supply.\n\nOther things equal, a higher price raises quantity supplied.\n\nIn «Demand Schedules and Curves», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The assertion about demand does not survive the definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The sentence does not hold for movement.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
@@ -2923,7 +2923,7 @@
       "The assertion about higher does not survive the definition.\n\nThe because-clause fails: holiday visitors budget more for equipment does not justify the conclusion.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nIn «Innsbruck Ski Equipment Hire», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The sentence does not hold for competing.\n\nThe because-clause fails: customers ignore substitutes does not justify the conclusion.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
       "The claim fails on equilibrium.\n\nThe because-clause fails: customers prefer scarce rentals does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False.",
-      "The claim about equilibrium is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2951,7 +2951,7 @@
       "Yes — this is how law of supply works in the chapter.\n\nOther things equal, a higher price raises quantity supplied.\n\nIn «The Law of Supply», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for supply.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
       "The claim fails on prices.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
-      "The claim about movement is wrong.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «The Law of Supply», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «The Law of Supply», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The absolute wording on higher breaks on a counterexample.\n\nThe because-clause fails: farming costs rise with crop value does not justify the conclusion.\n\nOther things equal, a higher price raises quantity supplied.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -2979,7 +2979,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of plotting.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is True.",
       "The claim fails on quantity.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nOther things equal, a higher price raises quantity supplied.\n\nSo the statement is False.",
-      "The claim about profit is wrong.\n\nThe because-clause fails: profit margins shrink on every unit does not justify the conclusion.\n\nSo the statement is False.",
+      "The because-clause fails: profit margins shrink on every unit does not justify the conclusion.\n\nSo the statement is False.",
       "The absolute wording on supply breaks on a counterexample.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Supply Schedules and Curves», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "No — this misstates price.\n\nOther things equal, a higher price raises quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
@@ -3007,7 +3007,7 @@
     ],
     "tactical_explanations": [
       "This is a correct statement about when.\n\nIn the Bakery example, the nouns in the claim line up with the definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
-      "The claim about early is wrong.\n\nThe because-clause fails: bakeries open earlier without demand changing does not justify the conclusion.\n\nSo the statement is False.",
+      "The because-clause fails: bakeries open earlier without demand changing does not justify the conclusion.\n\nSo the statement is False.",
       "The absolute wording on flour breaks on a counterexample.\n\nThe because-clause fails: customers seek cheaper carbohydrates does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
       "No — this misstates equilibrium.\n\nThe because-clause fails: customers interpret higher price as higher quality does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Graz Bakery Morning Rush», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "This overstates or mislabels higher.\n\nThe because-clause fails: expensive flour discourages baking does not justify the conclusion.\n\nSo the statement is False."
@@ -3038,7 +3038,7 @@
       "The claim about equilibrium is correct.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The sentence accurately describes equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about equilibrium holds.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Market Equilibrium», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The wording on equilibrium fits the standard definition.\n\nThe definition matches: Equilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -3066,7 +3066,7 @@
     "tactical_explanations": [
       "The sentence accurately describes equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about goods holds.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
-      "surplus is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Adjusting Toward Equilibrium», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Surplus is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Adjusting Toward Equilibrium», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on equilibrium fits the standard definition.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how competitive works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True."
     ],
@@ -3094,7 +3094,7 @@
     ],
     "tactical_explanations": [
       "The assertion about equilibrium holds.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Linz Rental Housing Listings», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "This misapplies cutting.\n\nThe because-clause fails: tenants prefer costlier apartments does not justify the conclusion.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nSo the statement is False.",
       "The assertion about equilibrium does not survive the definition.\n\nThe because-clause fails: tenants avoid cheap flats does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Linz Rental Housing Listings», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The sentence does not hold for land.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
@@ -3122,7 +3122,7 @@
       false
     ],
     "tactical_explanations": [
-      "surplus is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Surplus is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The wording on surplus fits the standard definition.\n\nThe because-clause is correct: sellers compete to reduce excess stock.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Surplus in Product Markets», the claim fits the definition as written.\n\nSo the statement is True.",
       "The assertion about goods does not survive the definition.\n\nThe because-clause fails: buyers crave expensive goods does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False.",
       "The sentence does not hold for rapid.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False.",
@@ -3155,7 +3155,7 @@
       "Yes — this is how equilibrium works in the chapter.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Shortage in Product Markets», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "This is a correct statement about shortage.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about shortage is wrong.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Shortage in Product Markets», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Equilibrium is where quantity demanded equals quantity supplied.\n\nIn «Shortage in Product Markets», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3183,7 +3183,7 @@
       "Yes — this is how minutes-long works in the chapter.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nIn «Salzburg Festival Ticket Queue», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of overnight.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim fails on persistent.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False.",
-      "The claim about adding is wrong.\n\nThe because-clause fails: audiences dislike additional shows does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Salzburg Festival Ticket Queue», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
+      "The because-clause fails: audiences dislike additional shows does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Salzburg Festival Ticket Queue», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The absolute wording on raising breaks on a counterexample.\n\nThe because-clause fails: fewer buyers withdraw does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -3211,7 +3211,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of income.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "This is a correct statement about goods.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about household is wrong.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
+      "Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
       "The absolute wording on goods breaks on a counterexample.\n\nThe because-clause fails: buyers save everything does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Income as a Demand Shifter», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "No — this misstates equilibrium.\n\nThe because-clause fails: richer buyers demand discounts does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False."
     ],
@@ -3270,7 +3270,7 @@
       "The claim about surging is correct.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The sentence accurately describes award.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about equilibrium holds.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Styrian Wine Tasting Boom», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "raising is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Raising is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "This misapplies expanded.\n\nThe because-clause fails: tourists dislike longer schedules does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -3298,7 +3298,7 @@
     "tactical_explanations": [
       "The sentence accurately describes equilibrium.\n\nThe because-clause is correct: cross-price shifts alter their equilibrium sales.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The assertion about substitute holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
-      "cheaper is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Prices of Substitute Goods», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Cheaper is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Prices of Substitute Goods», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This misapplies coffee.\n\nThe because-clause fails: beverages are complements does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
       "The assertion about rise does not survive the definition.\n\nThe because-clause fails: travel becomes undesirable does not justify the conclusion.\n\nSo the statement is False."
     ],
@@ -3326,7 +3326,7 @@
     ],
     "tactical_explanations": [
       "The assertion about rise holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Prices of Complementary Goods», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The wording on reduced fits the standard definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how lower works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Prices of Complementary Goods», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of complementary.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True."
@@ -3354,7 +3354,7 @@
       false
     ],
     "tactical_explanations": [
-      "higher is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
+      "Higher is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The wording on subsidy fits the standard definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Electric Bus Fleet Procurement», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Yes — this is how equilibrium works in the chapter.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for electric.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is False.",
@@ -3387,7 +3387,7 @@
       "Yes — this is how services works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Input Costs and Supply», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The claim fails on input.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
-      "The claim about drop is wrong.\n\nThe because-clause fails: buyers expect weaker furniture does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Input Costs and Supply», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
+      "The because-clause fails: buyers expect weaker furniture does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Input Costs and Supply», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3530,7 +3530,7 @@
     "tactical_explanations": [
       "The sentence accurately describes labour.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about timely holds.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nHillside vineyards are natural resources in productive use — that is the land factor.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Harvest Season Labour Contracts», the claim fits the definition as written.\n\nSo the statement is True.",
+      "Equilibrium is defined the way this sentence says.\n\nHillside vineyards are natural resources in productive use — that is the land factor.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Harvest Season Labour Contracts», the claim fits the definition as written.\n\nSo the statement is True.",
       "The wording on competing fits the standard definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how labour works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True."
     ],
@@ -3558,7 +3558,7 @@
     ],
     "tactical_explanations": [
       "The assertion about equilibrium holds.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Simultaneous Demand and Supply Shifts», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The wording on equilibrium fits the standard definition.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how equilibrium works in the chapter.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Simultaneous Demand and Supply Shifts», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of supply.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True."
@@ -3586,7 +3586,7 @@
       false
     ],
     "tactical_explanations": [
-      "non-price is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
+      "Non-price is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The wording on equilibrium fits the standard definition.\n\nThe because-clause is correct: market price stays below the cap.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Price Ceilings Below Equilibrium», the claim fits the definition as written.\n\nSo the statement is True.",
       "Yes — this is how land works in the chapter.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for ceiling.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nSo the statement is False.",
@@ -3619,7 +3619,7 @@
       "Yes — this is how controlled works in the chapter.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Graz Rent-Control Apartment Search», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of land.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The claim fails on tenants.\n\nThe because-clause fails: flats are abundant does not justify the conclusion.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
-      "The claim about equilibrium is wrong.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Graz Rent-Control Apartment Search», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Equilibrium is where quantity demanded equals quantity supplied.\n\nIn «Graz Rent-Control Apartment Search», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3734,7 +3734,7 @@
       "The claim about goods is correct.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The sentence accurately describes inflation.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about inflation holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Inflation as Rising Price Levels», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "This misapplies inflation.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -3762,7 +3762,7 @@
     "tactical_explanations": [
       "The sentence accurately describes inflation.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about everyone holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
-      "inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Too Much Money Chasing Goods», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Too Much Money Chasing Goods», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This misapplies goods.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The assertion about goods does not survive the definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False."
     ],
@@ -3790,7 +3790,7 @@
     ],
     "tactical_explanations": [
       "The assertion about shopkeepers holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Central Bank Note-Issuance Debate», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The wording on goods fits the standard definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how inflation works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Central Bank Note-Issuance Debate», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of policymakers.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True."
@@ -3818,7 +3818,7 @@
       true
     ],
     "tactical_explanations": [
-      "inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
+      "Inflation is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The wording on higher fits the standard definition.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Interest Rates and Inflation Control», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Yes — this is how interest works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This matches the chapter definition of monetary.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
@@ -3851,7 +3851,7 @@
       "Yes — this is how central works in the chapter.\n\nThe because-clause is correct: rate effects appear with lags.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Tightening Monetary Policy», the claim fits the definition as written.\n\nSo the statement is True.",
       "This matches the chapter definition of tightening.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The claim fails on business.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "The claim about inflation is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False."
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3879,7 +3879,7 @@
       "Yes — this is how higher works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Vienna Mortgage Rate Shopping», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of postponing.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim fails on inflation.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
-      "The claim about equilibrium is wrong.\n\nThe because-clause fails: fewer buyers compete does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Vienna Mortgage Rate Shopping», one ordinary counterexample is enough to reject the claim.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
+      "The because-clause fails: fewer buyers compete does not justify the conclusion.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Vienna Mortgage Rate Shopping», one ordinary counterexample is enough to reject the claim.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
       "The absolute wording on higher breaks on a counterexample.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -3907,7 +3907,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The claim fails on equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "The claim about more is wrong.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
+      "Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is False.",
       "The absolute wording on equilibrium breaks on a counterexample.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Demand Increase at Equilibrium», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "No — this misstates after.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
@@ -3938,7 +3938,7 @@
       "The claim about buyers is correct.\n\nOther things equal, a higher price lowers quantity demanded — a move along demand.\n\nNote: a binding ceiling below equilibrium creates shortage; a floor above creates surplus.\n\nSo the statement is True.",
       "The sentence accurately describes equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about production holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Supply Decrease at Equilibrium», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True."
+      "Equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4050,7 +4050,7 @@
       false
     ],
     "tactical_explanations": [
-      "drought is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
+      "Drought is defined the way this sentence says.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The wording on importers fits the standard definition.\n\nOther things equal, a higher price raises quantity supplied.\n\nIn «Weather Shocks and Agricultural Supply», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Yes — this is how short-run works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This matches the chapter definition of equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
@@ -4083,7 +4083,7 @@
       "Yes — this is how expectations works in the chapter.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Consumer Expectations and Demand», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of goods.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The claim fails on expectations.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
-      "The claim about panic is wrong.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Consumer Expectations and Demand», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Consumer Expectations and Demand», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4111,7 +4111,7 @@
       "Yes — this is how labour works in the chapter.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Labour Market Wage Adjustment», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of labour.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim fails on labour.\n\nOther things equal, a higher price raises quantity supplied.\n\nSo the statement is False.",
-      "The claim about goods is wrong.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nIn «Labour Market Wage Adjustment», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "Equilibrium is where quantity demanded equals quantity supplied.\n\nIn «Labour Market Wage Adjustment», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The absolute wording on employers breaks on a counterexample.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -4139,7 +4139,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True.",
       "The claim fails on equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "The claim about firms is wrong.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
+      "Markets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is False.",
       "The absolute wording on port breaks on a counterexample.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Global Supply Chain Disruption», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "No — this misstates goods.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
@@ -4170,7 +4170,7 @@
       "The claim about inflation is correct.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nSo the statement is True.",
       "The sentence accurately describes equilibrium.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about demand holds.\n\nMarkets coordinate buyers and sellers at prices; own-price moves along curves, while other factors shift them.\n\nIn «Integrated Market Mechanisms Review», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True."
+      "Equilibrium is defined the way this sentence says.\n\nEquilibrium is where quantity demanded equals quantity supplied.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -4282,7 +4282,7 @@
       false
     ],
     "tactical_explanations": [
-      "competition is defined the way this sentence says.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is True.",
+      "Competition is defined the way this sentence says.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is True.",
       "The wording on oligopoly fits the standard definition.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nIn «Cartel Enforcement Headline», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The assertion about open does not survive the definition.\n\nA cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The sentence does not hold for cartels.\n\nA cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nSo the statement is False.",
@@ -4315,7 +4315,7 @@
       "The assertion about perfect competition does not survive the definition.\n\nThe because-clause fails: clothes are physical goods does not justify the conclusion.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nIn «Wheat Exchange Floor», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "This matches the chapter definition of oligopoly.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nSo the statement is True.",
       "The claim fails on perfect competition.\n\nThe because-clause fails: wheat is a crop does not justify the conclusion.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nSo the statement is False.",
-      "The claim about exchange is wrong.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nIn «Wheat Exchange Floor», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Competitive heat rises with more suppliers and closer substitutes.\n\nIn «Wheat Exchange Floor», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4371,7 +4371,7 @@
     "tactical_explanations": [
       "This matches the chapter definition of oligopoly.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nSo the statement is True.",
       "The claim fails on perfect competition.\n\nThe because-clause fails: differentiation requires perfect competition does not justify the conclusion.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nSo the statement is False.",
-      "The claim about standardised is wrong.\n\nThe because-clause fails: boxes share similar dimensions does not justify the conclusion.\n\nSo the statement is False.",
+      "The because-clause fails: boxes share similar dimensions does not justify the conclusion.\n\nSo the statement is False.",
       "The absolute wording on perfect competition breaks on a counterexample.\n\nThe because-clause fails: cereal boxes are physical goods on shelves does not justify the conclusion.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nIn «Breakfast Cereal Aisle», one ordinary counterexample is enough to reject the claim.\n\nNote: structure labels turn on seller count, product sameness, entry, and collusion.\n\nSo the statement is False.",
       "No — this misstates private.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is False."
     ],
@@ -4427,7 +4427,7 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about perfect competition is wrong.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nSo the statement is False.",
+      "Perfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nSo the statement is False.",
       "The sentence accurately describes perfect competition.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nApply that definition to the claim's exact wording.\n\nNote: structure labels turn on seller count, product sameness, entry, and collusion.\n\nSo the statement is True.",
       "The assertion about perfect competition holds.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nIn «Perfect Competition Assumption Audit», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This overstates or mislabels perfect competition.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nSo the statement is False.",
@@ -4486,7 +4486,7 @@
     ],
     "tactical_explanations": [
       "The assertion about relevant holds.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nIn «Village Pharmacy Distance», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "regulation is defined the way this sentence says.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is True.",
+      "Regulation is defined the way this sentence says.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is True.",
       "The wording on perfect competition fits the standard definition.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Yes — this is how monopoly works in the chapter.\n\nA monopoly is a single seller; local exclusivity can create monopoly-like power.\n\nIn «Village Pharmacy Distance», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for long.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is False."
@@ -4514,7 +4514,7 @@
       false
     ],
     "tactical_explanations": [
-      "oligopoly is defined the way this sentence says.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nSo the statement is True.",
+      "Oligopoly is defined the way this sentence says.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nSo the statement is True.",
       "The wording on matching fits the standard definition.\n\nA cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nIn «Airline Route Duopoly», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Yes — this is how thin-route works in the chapter.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This matches the chapter definition of rapid.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nSo the statement is True.",
@@ -4547,7 +4547,7 @@
       "The assertion about perfect competition does not survive the definition.\n\nPerfect competition asks many sellers, a homogeneous product, free entry, and good information.\n\nIn «Online Marketplace Sellers», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence does not hold for interchangeable.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The claim fails on price-taking.\n\nCompetitive heat rises with more suppliers and closer substitutes.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "The claim about monopoly is wrong.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nA monopoly is a single seller; local exclusivity can create monopoly-like power.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nA monopoly is a single seller; local exclusivity can create monopoly-like power.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4575,7 +4575,7 @@
       "Yes — this is how secret works in the chapter.\n\nA cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nIn «Coffee Roaster Collusion», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of oligopoly.\n\nOligopoly means few large interdependent sellers who watch each other's prices and capacity.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim fails on oligopoly.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "The claim about competition is wrong.\n\nA cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nIn «Coffee Roaster Collusion», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "A cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nIn «Coffee Roaster Collusion», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The absolute wording on cartels breaks on a counterexample.\n\nA cartel coordinates rivals to weaken competition — distinct from open rivalry.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
