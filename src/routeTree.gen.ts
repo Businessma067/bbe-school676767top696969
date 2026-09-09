@@ -28,6 +28,7 @@ import { Route as FlashcardsRouteImport } from './routes/flashcards'
 import { Route as DemoPracticeRouteImport } from './routes/demo-practice'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ConfirmEmailRouteImport } from './routes/confirm-email'
+import { Route as BbeVsWisoRouteImport } from './routes/bbe-vs-wiso'
 import { Route as BbeMathematicsRouteImport } from './routes/bbe-mathematics'
 import { Route as BbeExamScoringRouteImport } from './routes/bbe-exam-scoring'
 import { Route as BbeExamPreparationRouteImport } from './routes/bbe-exam-preparation'
@@ -173,6 +174,11 @@ const DashboardRoute = DashboardRouteImport.update({
 const ConfirmEmailRoute = ConfirmEmailRouteImport.update({
   id: '/confirm-email',
   path: '/confirm-email',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BbeVsWisoRoute = BbeVsWisoRouteImport.update({
+  id: '/bbe-vs-wiso',
+  path: '/bbe-vs-wiso',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BbeMathematicsRoute = BbeMathematicsRouteImport.update({
@@ -452,6 +458,7 @@ export interface FileRoutesByFullPath {
   '/bbe-exam-preparation': typeof BbeExamPreparationRoute
   '/bbe-exam-scoring': typeof BbeExamScoringRoute
   '/bbe-mathematics': typeof BbeMathematicsRoute
+  '/bbe-vs-wiso': typeof BbeVsWisoRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
@@ -522,6 +529,7 @@ export interface FileRoutesByTo {
   '/bbe-exam-preparation': typeof BbeExamPreparationRoute
   '/bbe-exam-scoring': typeof BbeExamScoringRoute
   '/bbe-mathematics': typeof BbeMathematicsRoute
+  '/bbe-vs-wiso': typeof BbeVsWisoRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/forgot-password': typeof ForgotPasswordRoute
@@ -588,6 +596,7 @@ export interface FileRoutesById {
   '/bbe-exam-preparation': typeof BbeExamPreparationRoute
   '/bbe-exam-scoring': typeof BbeExamScoringRoute
   '/bbe-mathematics': typeof BbeMathematicsRoute
+  '/bbe-vs-wiso': typeof BbeVsWisoRoute
   '/confirm-email': typeof ConfirmEmailRoute
   '/dashboard': typeof DashboardRoute
   '/demo-practice': typeof DemoPracticeRouteWithChildren
@@ -662,6 +671,7 @@ export interface FileRouteTypes {
     | '/bbe-exam-preparation'
     | '/bbe-exam-scoring'
     | '/bbe-mathematics'
+    | '/bbe-vs-wiso'
     | '/confirm-email'
     | '/dashboard'
     | '/demo-practice'
@@ -732,6 +742,7 @@ export interface FileRouteTypes {
     | '/bbe-exam-preparation'
     | '/bbe-exam-scoring'
     | '/bbe-mathematics'
+    | '/bbe-vs-wiso'
     | '/confirm-email'
     | '/dashboard'
     | '/forgot-password'
@@ -797,6 +808,7 @@ export interface FileRouteTypes {
     | '/bbe-exam-preparation'
     | '/bbe-exam-scoring'
     | '/bbe-mathematics'
+    | '/bbe-vs-wiso'
     | '/confirm-email'
     | '/dashboard'
     | '/demo-practice'
@@ -870,6 +882,7 @@ export interface RootRouteChildren {
   BbeExamPreparationRoute: typeof BbeExamPreparationRoute
   BbeExamScoringRoute: typeof BbeExamScoringRoute
   BbeMathematicsRoute: typeof BbeMathematicsRoute
+  BbeVsWisoRoute: typeof BbeVsWisoRoute
   ConfirmEmailRoute: typeof ConfirmEmailRoute
   DashboardRoute: typeof DashboardRoute
   DemoPracticeRoute: typeof DemoPracticeRouteWithChildren
@@ -1030,6 +1043,13 @@ declare module '@tanstack/react-router' {
       path: '/confirm-email'
       fullPath: '/confirm-email'
       preLoaderRoute: typeof ConfirmEmailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bbe-vs-wiso': {
+      id: '/bbe-vs-wiso'
+      path: '/bbe-vs-wiso'
+      fullPath: '/bbe-vs-wiso'
+      preLoaderRoute: typeof BbeVsWisoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bbe-mathematics': {
@@ -1557,6 +1577,7 @@ const rootRouteChildren: RootRouteChildren = {
   BbeExamPreparationRoute: BbeExamPreparationRoute,
   BbeExamScoringRoute: BbeExamScoringRoute,
   BbeMathematicsRoute: BbeMathematicsRoute,
+  BbeVsWisoRoute: BbeVsWisoRoute,
   ConfirmEmailRoute: ConfirmEmailRoute,
   DashboardRoute: DashboardRoute,
   DemoPracticeRoute: DemoPracticeRouteWithChildren,

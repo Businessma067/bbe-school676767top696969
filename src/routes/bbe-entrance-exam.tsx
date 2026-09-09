@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   ClipboardList,
   Languages,
+  Scale,
   XCircle,
 } from "lucide-react";
 import {
@@ -499,6 +500,12 @@ export function BbeEntranceExamHubPage() {
               title="Admission & application"
               to="/bbe-admission"
               body="Registration, OSA, entrance exam and ranking overview"
+            />
+            <ResourceCard
+              icon={<Scale className="h-4 w-4" />}
+              title="BBE vs WISO"
+              to="/bbe-vs-wiso"
+              body="Compare language, places, selectivity, and which exam fits you"
             />
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">

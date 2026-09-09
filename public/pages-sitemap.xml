@@ -58,6 +58,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-admission"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/bbe-vs-wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -258,6 +266,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-admission"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/bbe-vs-wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -392,6 +408,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-admission"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-admission"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-admission"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/bbe-vs-wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/parents</loc>

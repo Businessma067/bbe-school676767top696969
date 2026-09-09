@@ -16,6 +16,7 @@ const PUBLIC_LOCALIZABLE = [
   "/bbe-economics-english",
   "/bbe-exam-preparation",
   "/bbe-admission",
+  "/bbe-vs-wiso",
   "/parents",
   "/important-features",
   "/features/answer-sheet",
