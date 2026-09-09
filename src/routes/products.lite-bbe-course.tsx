@@ -3,7 +3,6 @@ import { useState } from "react";
 import { BookOpen, ListChecks, Clock, Users, Lightbulb, Check, Quote } from "lucide-react";
 import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CompareTable } from "@/components/CompareTable";
-import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PaymentModal } from "@/components/PaymentModal";
 import { AuthModal } from "@/components/AuthModal";
@@ -11,6 +10,9 @@ import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+/** Local remake served from public/ (avoids stale Lovable CDN asset). */
+const LITE_COURSE_IMAGE = "/lite-bbe-course.png";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
@@ -206,9 +208,9 @@ export function LiteBbeCourseProduct() {
 
           <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
             <img
-              src={liteAsset.url}
+              src={LITE_COURSE_IMAGE}
               alt="Light BBE Course"
-              className="w-full object-cover"
+              className="w-full object-contain"
               draggable={false}
             />
           </div>

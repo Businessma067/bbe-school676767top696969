@@ -1,16 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CompareTable } from "@/components/CompareTable";
 import { SiteHeader } from "@/components/SiteHeader";
-import demoAsset from "@/assets/demo-practice-product.png.asset.json";
-import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
-/** Local remake served from public/ (avoids stale Lovable CDN asset). */
+/** Local remakes served from public/ (avoids stale Lovable CDN assets). */
 const FULL_COURSE_IMAGE = "/full-course-product.png";
+const LITE_COURSE_IMAGE = "/lite-bbe-course.png";
+const DEMO_COURSE_IMAGE = "/demo-practice-product.png";
 
 const PROVIDER = {
   "@type": "Organization",
@@ -116,7 +116,7 @@ type Product = {
 const products: Product[] = [
   {
     title: "Demo-Practice Package",
-    image: demoAsset.url,
+    image: DEMO_COURSE_IMAGE,
     description:
       "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.",
     cta: "Visit for free",
@@ -135,7 +135,7 @@ const products: Product[] = [
   },
   {
     title: "Lite BBE Course",
-    image: liteAsset.url,
+    image: LITE_COURSE_IMAGE,
     description:
       "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.",
     cta: "Coming soon",

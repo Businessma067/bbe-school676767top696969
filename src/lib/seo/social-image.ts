@@ -2,12 +2,12 @@ import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import examHallAsset from "@/assets/exam-hall-real.png.asset.json";
 import hallAsset from "@/assets/parents-hall.jpg.asset.json";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
-import liteProduct from "@/assets/lite-bbe-course.png.asset.json";
-import demoSlide1 from "@/assets/demo-slide-1.png.asset.json";
 import { SITE_ORIGIN } from "@/lib/i18n/locale-path";
 
-/** Product hero remake in public/ — prefer over Lovable CDN asset URL. */
+/** Product hero remakes in public/ — prefer over Lovable CDN asset URLs. */
 const FULL_COURSE_PRODUCT_IMAGE = "/full-course-product.png";
+const LITE_COURSE_PRODUCT_IMAGE = "/lite-bbe-course.png";
+const DEMO_COURSE_PRODUCT_IMAGE = "/demo-practice-product.png";
 
 /** Absolute URL for Open Graph / Twitter images (crawlers reject relative paths). */
 export function absoluteMediaUrl(pathOrUrl: string): string {
@@ -47,9 +47,9 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/important-features": absoluteMediaUrl(examHallAsset.url),
   "/features/answer-sheet": absoluteMediaUrl(examHallAsset.url),
   "/products": absoluteMediaUrl(FULL_COURSE_PRODUCT_IMAGE),
-  "/products/demo-practice": absoluteMediaUrl(demoSlide1.url),
+  "/products/demo-practice": absoluteMediaUrl(DEMO_COURSE_PRODUCT_IMAGE),
   "/products/full-course": absoluteMediaUrl(FULL_COURSE_PRODUCT_IMAGE),
-  "/products/lite-bbe-course": absoluteMediaUrl(liteProduct.url),
+  "/products/lite-bbe-course": absoluteMediaUrl(LITE_COURSE_PRODUCT_IMAGE),
   "/demo-practice": absoluteMediaUrl(economicsAsset.url),
   // Economics practice: subject card art (distinct from homepage product poster)
   "/demo-practice/economics": absoluteMediaUrl(economicsAsset.url),
