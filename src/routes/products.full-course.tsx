@@ -44,7 +44,7 @@ export const Route = createFileRoute("/products/full-course")({
         content:
           "2000+ practice tasks, mock exams, AI assistance, and direct support built for the real WU BBE exam.",
       },
-      { property: "og:image", content: fullAsset.url },
+      { property: "og:image", content: `https://bbe-school.com${fullAsset.url}` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
