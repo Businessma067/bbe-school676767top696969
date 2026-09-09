@@ -3,14 +3,14 @@ import { CompareTable } from "@/components/CompareTable";
 import { SiteHeader } from "@/components/SiteHeader";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
-
-/** Local remake served from public/ (avoids stale Lovable CDN asset). */
-const FULL_COURSE_IMAGE = "/full-course-product.png";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+/** Local remake served from public/ (avoids stale Lovable CDN asset). */
+const FULL_COURSE_IMAGE = "/full-course-product.png";
 
 const PROVIDER = {
   "@type": "Organization",

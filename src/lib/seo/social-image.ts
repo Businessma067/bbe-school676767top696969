@@ -2,7 +2,6 @@ import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import examHallAsset from "@/assets/exam-hall-real.png.asset.json";
 import hallAsset from "@/assets/parents-hall.jpg.asset.json";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
-import fullProduct from "@/assets/full-course-product.png.asset.json";
 import liteProduct from "@/assets/lite-bbe-course.png.asset.json";
 import demoSlide1 from "@/assets/demo-slide-1.png.asset.json";
 import { SITE_ORIGIN } from "@/lib/i18n/locale-path";
