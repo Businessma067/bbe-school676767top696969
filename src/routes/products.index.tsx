@@ -2,8 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CompareTable } from "@/components/CompareTable";
 import { SiteHeader } from "@/components/SiteHeader";
 import demoAsset from "@/assets/demo-practice-product.png.asset.json";
-import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
+
+/** Local remake served from public/ (avoids stale Lovable CDN asset). */
+const FULL_COURSE_IMAGE = "/full-course-product.png";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -120,7 +122,7 @@ const products: Product[] = [
   },
   {
     title: "Full BBE Course",
-    image: fullAsset.url,
+    image: FULL_COURSE_IMAGE,
     description:
       "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
     cta: "Buy course · €479",

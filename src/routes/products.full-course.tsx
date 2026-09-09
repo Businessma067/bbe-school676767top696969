@@ -16,8 +16,10 @@ import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CompareTable } from "@/components/CompareTable";
 import { PaymentModal } from "@/components/PaymentModal";
 import { AuthModal } from "@/components/AuthModal";
-import fullAsset from "@/assets/full-course-product.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+
+/** Local remake served from public/ (avoids stale Lovable CDN asset). */
+const FULL_COURSE_IMAGE = "/full-course-product.png";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
@@ -44,7 +46,7 @@ export const Route = createFileRoute("/products/full-course")({
         content:
           "2000+ practice tasks, mock exams, AI assistance, and direct support built for the real WU BBE exam.",
       },
-      { property: "og:image", content: `https://bbe-school.com${fullAsset.url}` },
+      { property: "og:image", content: `https://bbe-school.com${FULL_COURSE_IMAGE}` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
@@ -260,7 +262,7 @@ export function FullCourseProduct() {
 
           <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
             <img
-              src={fullAsset.url}
+              src={FULL_COURSE_IMAGE}
               alt="Full BBE Course"
               className="w-full object-contain"
               draggable={false}
