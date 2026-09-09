@@ -19,9 +19,9 @@
       true
     ],
     "tactical_explanations": [
-      "Physical form alone does not make a pallet loader inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts pallet loader among non-current tangibles.\n\nSo the statement is False.",
+      "Physical form alone does not make a pallet loader inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns.\n\nOperating use beyond a year puts pallet loader among non-current tangibles.\n\nSo the statement is False.",
       "A dealer’s pallet loader held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False.",
-      "Multi-year operating use of a pallet loader fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
+      "Multi-year operating use of a pallet loader fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
       "The same pallet loader need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False.",
       "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True."
     ],
@@ -49,7 +49,7 @@
       false
     ],
     "tactical_explanations": [
-      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent — operate or resell — decides the class.\n\nA cheap pallet loader used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
+      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent (operate or resell) decides the class.\n\nA cheap pallet loader used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets.\n\nResale intent, not shelf time, decides the line.\n\nSo the statement is False.",
       "Wear is handled by depreciating a fixed asset, not by calling operating kit inventory. Daily own use of a pallet loader supports non-current classification.\n\nCounterexample: factory machines wear out yet sit in plant & equipment.\n\nSo the statement is False.",
@@ -82,7 +82,7 @@
       "Bought to resell, a pallet loader belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
       "A pallet loader bought for the firm’s own daily work is a tangible fixed asset.\n\nBenefit spans periods; it is not held for sale.\n\nSo the statement is True.",
       "A dealer displaying a pallet loader for sale holds inventory.\n\nThat stock is not the dealer’s fixed asset.\n\nSo the statement is True.",
-      "Multi-year operating use of an industrial dishwasher fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
+      "Multi-year operating use of an industrial dishwasher fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -109,8 +109,8 @@
       true
     ],
     "tactical_explanations": [
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
-      "Physical form alone does not make an industrial dishwasher inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts industrial dishwasher among non-current tangibles.\n\nSo the statement is False.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
+      "Physical form alone does not make an industrial dishwasher inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns.\n\nOperating use beyond a year puts industrial dishwasher among non-current tangibles.\n\nSo the statement is False.",
       "A dealer’s industrial dishwasher held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False.",
       "The same industrial dishwasher need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True."
@@ -202,7 +202,7 @@
       false
     ],
     "tactical_explanations": [
-      "Assets always equal liabilities plus equity — the sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+      "Assets always equal liabilities plus equity. The sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 160 + 79 + 113\n$$\n\n$$\nCA = 352\n$$\n\n$$\nCL = 188 + 40\n$$\n\n$$\nCL = 228\n$$\n\n$$\n\\frac{352}{228}\n$$\n\n$$\n\\approx 1.5439\n$$\n\n$$\n1.5439 > 1.54\n$$\n\nactual 1.\n\nSo the statement is True.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 160 + 79 + 113\n$$\n\n$$\nCA = 352\n$$\n\n$$\nCL = 188 + 40\n$$\n\n$$\nCL = 228\n$$\n\n$$\n\\frac{352}{228}\n$$\n\n$$\n\\approx 1.5439\n$$\n\n$$\n1.5439 > 0.79\n$$\n\nactual 1.\n\nSo the statement is False.",
       "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.\n\nFrom the extract, current assets total 352 and current liabilities total 228:\n\n$$\nWC = CA - CL\n$$\n\n$$\nCA = 352, \\quad CL = 228\n$$\n\n$$\nWC = 352 - 228\n$$\n\n$$\nWC = 124\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True.",
@@ -231,7 +231,7 @@
     "tactical_explanations": [
       "Bought to resell, an industrial dishwasher belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
       "An industrial dishwasher bought for the firm’s own daily work is a tangible fixed asset.\n\nBenefit spans periods; it is not held for sale.\n\nSo the statement is True.",
-      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent — operate or resell — decides the class.\n\nA cheap industrial dishwasher used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
+      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent (operate or resell) decides the class.\n\nA cheap industrial dishwasher used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
       "A dealer displaying an industrial dishwasher for sale holds inventory.\n\nThat stock is not the dealer’s fixed asset.\n\nSo the statement is True.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets.\n\nResale intent, not shelf time, decides the line.\n\nSo the statement is False."
     ],
@@ -291,8 +291,8 @@
     "tactical_explanations": [
       "Wear is handled by depreciating a fixed asset, not by calling operating kit inventory. Daily own use of an industrial dishwasher supports non-current classification.\n\nCounterexample: factory machines wear out yet sit in plant & equipment.\n\nSo the statement is False.",
       "After the sale, the buyer’s purpose governs classification. If the buyer puts the machine into operations, it becomes the buyer’s non-current asset.\n\nThe seller’s old inventory label does not travel with the object forever.\n\nSo the statement is False.",
-      "Multi-year operating use of a warehouse crane fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
-      "Physical form alone does not make a warehouse crane inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts warehouse crane among non-current tangibles.\n\nSo the statement is False.",
+      "Multi-year operating use of a warehouse crane fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
+      "Physical form alone does not make a warehouse crane inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns.\n\nOperating use beyond a year puts warehouse crane among non-current tangibles.\n\nSo the statement is False.",
       "A dealer’s warehouse crane held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -350,7 +350,7 @@
     ],
     "tactical_explanations": [
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True.",
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "Bought to resell, a warehouse crane belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
       "The same warehouse crane need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False."
@@ -382,7 +382,7 @@
       false
     ],
     "tactical_explanations": [
-      "Equity = assets − liabilities — the owners’ residual interest.\n\nIt is the portion of assets not financed by outside debt.\n\nSo the statement is True.",
+      "Equity = assets − liabilities. The owners’ residual interest.\n\nIt is the portion of assets not financed by outside debt.\n\nSo the statement is True.",
       "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 395 + 84\n$$\n\n$$\n\\text{NCL} = 479\n$$\n\n$$\n\\text{Equity} = 351\n$$\n\n$$\n\\frac{479}{351}\n$$\n\n$$\n\\approx 1.3647\n$$\n\n$$\n\\approx 136.5\\%\n$$\n\n$$\n136.5\\% > 102.9\\%\n$$\n\nYear 1 NCL/equity is 136.\n\nSo the statement is True.",
       "This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.\n\nFrom the extract, Non-current assets = 819 and total assets in Year 2 = 1,203. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\nShare = \\frac{819}{1,203}\n$$\n\n$$\nShare = 68.1\\%\n$$\n\nActual 68.\n\nSo the statement is True.",
       "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 351, \\quad Y_2 = 381\n$$\n\n$$\nY_2 - Y_1 = 381 - 351\n$$\n\n$$\n= 30\n$$\n\n$$\n\\frac{30}{351}\n$$\n\n$$\n\\approx 0.0855\n$$\n\n$$\n\\approx 8.5\\%\n$$\n\n$$\n8.5\\% \\le  9.3\\%\n$$\n\nactual growth is 8.\n\nSo the statement is False.",
@@ -439,7 +439,7 @@
       true
     ],
     "tactical_explanations": [
-      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent — operate or resell — decides the class.\n\nA cheap warehouse crane used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
+      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent (operate or resell) decides the class.\n\nA cheap warehouse crane used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets.\n\nResale intent, not shelf time, decides the line.\n\nSo the statement is False.",
       "Wear is handled by depreciating a fixed asset, not by calling operating kit inventory. Daily own use of a warehouse crane supports non-current classification.\n\nCounterexample: factory machines wear out yet sit in plant & equipment.\n\nSo the statement is False.",
       "A warehouse crane bought for the firm’s own daily work is a tangible fixed asset.\n\nBenefit spans periods; it is not held for sale.\n\nSo the statement is True.",
@@ -470,10 +470,10 @@
     ],
     "tactical_explanations": [
       "After the sale, the buyer’s purpose governs classification. If the buyer puts the machine into operations, it becomes the buyer’s non-current asset.\n\nThe seller’s old inventory label does not travel with the object forever.\n\nSo the statement is False.",
-      "Multi-year operating use of a delivery scooter fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
-      "Physical form alone does not make a delivery scooter inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts delivery scooter among non-current tangibles.\n\nSo the statement is False.",
+      "Multi-year operating use of a delivery scooter fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
+      "Physical form alone does not make a delivery scooter inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns.\n\nOperating use beyond a year puts delivery scooter among non-current tangibles.\n\nSo the statement is False.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True.",
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -562,7 +562,7 @@
       true
     ],
     "tactical_explanations": [
-      "Assets always equal liabilities plus equity — the sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+      "Assets always equal liabilities plus equity. The sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
       "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 297 + 70\n$$\n\n$$\n\\text{NCL} = 367\n$$\n\n$$\n\\text{Equity} = 613\n$$\n\n$$\n\\frac{367}{613}\n$$\n\n$$\n\\approx 0.5987\n$$\n\n$$\n\\approx 59.9\\%\n$$\n\n$$\n59.9\\% > 50.2\\%\n$$\n\nYear 1 NCL/equity is 59.\n\nSo the statement is True.",
       "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 345 + 80\n$$\n\n$$\n\\text{NCL} = 425\n$$\n\n$$\n\\text{Equity} = 620\n$$\n\n$$\n\\frac{425}{620}\n$$\n\n$$\n\\approx 0.6855\n$$\n\n$$\n\\approx 68.5\\%\n$$\n\n$$\n68.5\\% < 107.9\\%\n$$\n\nYear 2 NCL/equity is 68.\n\nSo the statement is True.",
       "This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.\n\nFrom the extract, Non-current assets = 900 and total assets in Year 2 = 1,347. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\nShare = \\frac{900}{1,347}\n$$\n\n$$\nShare = 66.8\\%\n$$\n\nActual 66.\n\nSo the statement is True.",
@@ -622,7 +622,7 @@
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "A dealer’s delivery scooter held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False.",
       "The same delivery scooter need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False.",
-      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent — operate or resell — decides the class.\n\nA cheap delivery scooter used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
+      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent (operate or resell) decides the class.\n\nA cheap delivery scooter used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets.\n\nResale intent, not shelf time, decides the line.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -652,7 +652,7 @@
       true
     ],
     "tactical_explanations": [
-      "A high equity ratio means owners financed a larger share of assets.\n\nCreditors then fund a smaller slice — less gearing, other things equal.\n\nSo the statement is True.",
+      "A high equity ratio means owners financed a larger share of assets.\n\nCreditors then fund a smaller slice. Less gearing, other things equal.\n\nSo the statement is True.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 164 + 127 + 30\n$$\n\n$$\nCA = 321\n$$\n\n$$\nCL = 65 + 41\n$$\n\n$$\nCL = 106\n$$\n\n$$\n\\frac{321}{106}\n$$\n\n$$\n\\approx 3.0283\n$$\n\n$$\n3.0283 > 1.41\n$$\n\nactual 3.\n\nSo the statement is True.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 164 + 127 + 30\n$$\n\n$$\nCA = 321\n$$\n\n$$\nCL = 65 + 41\n$$\n\n$$\nCL = 106\n$$\n\n$$\n\\frac{321}{106}\n$$\n\n$$\n\\approx 3.0283\n$$\n\n$$\n3.0283 > 0.95\n$$\n\nactual 3.\n\nSo the statement is False.",
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 537\n$$\n\n$$\n\\text{Total assets} = 1,046\n$$\n\n$$\n\\frac{537}{1,046}\n$$\n\n$$\n\\approx 0.5134\n$$\n\n$$\n\\approx 51.3\\%\n$$\n\n$$\n51.3\\% > 26.9\\%\n$$\n\nactual 51.\n\nSo the statement is False.",
@@ -682,7 +682,7 @@
       "Bought to resell, a delivery scooter belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
       "A delivery scooter bought for the firm’s own daily work is a tangible fixed asset.\n\nBenefit spans periods; it is not held for sale.\n\nSo the statement is True.",
       "A dealer displaying a delivery scooter for sale holds inventory.\n\nThat stock is not the dealer’s fixed asset.\n\nSo the statement is True.",
-      "Multi-year operating use of a packaging line fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
+      "Multi-year operating use of a packaging line fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -710,9 +710,9 @@
     ],
     "tactical_explanations": [
       "Wear is handled by depreciating a fixed asset, not by calling operating kit inventory. Daily own use of a delivery scooter supports non-current classification.\n\nCounterexample: factory machines wear out yet sit in plant & equipment.\n\nSo the statement is False.",
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "After the sale, the buyer’s purpose governs classification. If the buyer puts the machine into operations, it becomes the buyer’s non-current asset.\n\nThe seller’s old inventory label does not travel with the object forever.\n\nSo the statement is False.",
-      "Physical form alone does not make a packaging line inventory. Inventory is held for sale or for cycle consumption — not every machine the firm owns.\n\nOperating use beyond a year puts packaging line among non-current tangibles.\n\nSo the statement is False.",
+      "Physical form alone does not make a packaging line inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns.\n\nOperating use beyond a year puts packaging line among non-current tangibles.\n\nSo the statement is False.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -772,7 +772,7 @@
       "Bought to resell, a packaging line belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
       "A packaging line bought for the firm’s own daily work is a tangible fixed asset.\n\nBenefit spans periods; it is not held for sale.\n\nSo the statement is True.",
       "A dealer displaying a packaging line for sale holds inventory.\n\nThat stock is not the dealer’s fixed asset.\n\nSo the statement is True.",
-      "Multi-year operating use of a concrete mixer fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
+      "Multi-year operating use of a concrete mixer fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -829,7 +829,7 @@
       true
     ],
     "tactical_explanations": [
-      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
+      "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "A dealer’s packaging line held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm.\n\nBeing a business does not override the held-for-sale test.\n\nSo the statement is False.",
       "Bought to resell, a concrete mixer belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
@@ -860,7 +860,7 @@
     ],
     "tactical_explanations": [
       "A dealer displaying a concrete mixer for sale holds inventory.\n\nThat stock is not the dealer’s fixed asset.\n\nSo the statement is True.",
-      "Multi-year operating use of a laptop computer fits the non-current tangible test.\n\nUseful life beyond the period plus own use — not resale — drive that line.\n\nSo the statement is True.",
+      "Multi-year operating use of a laptop computer fits the non-current tangible test.\n\nUseful life beyond the period plus own use (not resale) drive that line.\n\nSo the statement is True.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True.",
       "The same packaging line need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object.\n\nOperator → non-current tangible; dealer → inventory.\n\nNote: The same physical item can be inventory for a dealer and a fixed asset for an operator.\n\nSo the statement is False.",
       "Intended use decides the line for the same physical object.\n\nAn operator records a non-current tangible; a dealer records inventory.\n\nSo the statement is True."
@@ -922,7 +922,7 @@
       false
     ],
     "tactical_explanations": [
-      "Assets always equal liabilities plus equity — the sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+      "Assets always equal liabilities plus equity. The sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
       "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 290\n$$\n\n$$\n\\text{Inventory} = 130\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 290 - 130\n$$\n\n$$\n= 160\n$$\n\n$$\n\\text{CL} = 261\n$$\n\n$$\n\\frac{160}{261}\n$$\n\n$$\n\\approx 0.6130\n$$\n\n$$\n0.6130 \\le  1.26\n$$\n\nacid-test 0.\n\nSo the statement is False.",
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 449\n$$\n\n$$\n\\text{Total assets} = 966\n$$\n\n$$\n\\frac{449}{966}\n$$\n\n$$\n\\approx 0.4648\n$$\n\n$$\n\\approx 46.5\\%\n$$\n\n$$\n46.5\\% > 25.8\\%\n$$\n\nactual 46.\n\nSo the statement is False.",
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 517\n$$\n\n$$\n\\text{Total assets} = 966\n$$\n\n$$\n\\frac{517}{966}\n$$\n\n$$\n\\approx 0.5352\n$$\n\n$$\n\\approx 53.5\\%\n$$\n\n$$\n53.5\\% < 77.4\\%\n$$\n\nactual 53.\n\nSo the statement is False.",
@@ -951,7 +951,7 @@
     "tactical_explanations": [
       "Intent to use the asset in operations beyond one period places it among non-current assets.\n\nResale intent would have put the same object in inventory.\n\nSo the statement is True.",
       "Bought to resell, a laptop computer belongs in inventory (current).\n\nIt is not an operating fixed asset of the buyer-dealer.\n\nSo the statement is True.",
-      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent — operate or resell — decides the class.\n\nA cheap packaging line used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
+      "Purchase price measures cost; it does not choose inventory vs fixed asset. Management intent (operate or resell) decides the class.\n\nA cheap packaging line used for years is still non-current; a costly one held for sale is inventory.\n\nSo the statement is False.",
       "A laptop computer bought for the firm’s own daily work is a tangible fixed asset.\n\nBenefit spans periods; it is not held for sale.\n\nSo the statement is True.",
       "Goods bought for resale enter inventory immediately. Sitting unsold for months does not promote them into non-current assets.\n\nResale intent, not shelf time, decides the line.\n\nSo the statement is False."
     ],
@@ -1070,10 +1070,10 @@
     ],
     "tactical_explanations": [
       "For this bakery, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
-      "For this bakery, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this bakery, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "For this bakery, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure.\n\nCounterexample: a healthy retailer opening new stores shows investing outflows.\n\nSo the statement is False.",
-      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle — wages, suppliers, customers — not debt service principal.\n\nSo the statement is False."
+      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle (wages, suppliers, customers) not debt service principal.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1136,7 +1136,7 @@
       "Percentage growth for Cash flow from operating activities is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 314, \\quad Y_2 = 359\n$$\n\n$$\nY_2 - Y_1 = 359 - 314\n$$\n\n$$\n= 45\n$$\n\n$$\n\\frac{45}{314}\n$$\n\n$$\n\\approx 0.1433\n$$\n\n$$\n\\approx 14.3\\%\n$$\n\n$$\n14.3\\% > 13.7\\%\n$$\n\nactual growth is 14.\n\nSo the statement is True.",
       "Compare financing cash flow across the two years.\n\nRead cash flow from financing activities for each year.\n\n$$\n\\text{CFF}_{\\text{Y1}} = 21\n$$\n\n$$\n\\text{CFF}_{\\text{Y2}} = -6\n$$\n\n$$\n-6 < 21\n$$\n\nYear 2 is higher than Year 1.\n\nSo the statement is False.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
-      "Dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False."
+      "Dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False."
     ]
   },
   {
@@ -1223,7 +1223,7 @@
       "For this hotel chain, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
       "For this hotel chain, collecting a receivable is operating cash from the trading cycle.\n\nIt is not new revenue and not an investing inflow.\n\nSo the statement is True.",
       "For this hotel chain, buying long-lived equipment for cash is an investing outflow.\n\nOperating cash is the trading cycle, not plant purchases.\n\nSo the statement is True.",
-      "For this hotel chain, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False."
+      "For this hotel chain, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1309,11 +1309,11 @@
       false
     ],
     "tactical_explanations": [
-      "For this furniture maker, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this furniture maker, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure.\n\nCounterexample: a healthy retailer opening new stores shows investing outflows.\n\nSo the statement is False.",
       "For this furniture maker, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
       "For this furniture maker, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
-      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle — wages, suppliers, customers — not debt service principal.\n\nSo the statement is False."
+      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle (wages, suppliers, customers) not debt service principal.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -1343,7 +1343,7 @@
     ],
     "tactical_explanations": [
       "Percentage growth for Cash flow from operating activities is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 367, \\quad Y_2 = 397\n$$\n\n$$\nY_2 - Y_1 = 397 - 367\n$$\n\n$$\n= 30\n$$\n\n$$\n\\frac{30}{367}\n$$\n\n$$\n\\approx 0.0817\n$$\n\n$$\n\\approx 8.2\\%\n$$\n\n$$\n8.2\\% \\le  11.7\\%\n$$\n\nactual growth is 8.\n\nSo the statement is False.",
-      "Dividends paid are financing outflows — cash returned to owners.\n\nInvesting covers long-term asset purchases and sales, not owner distributions.\n\nSo the statement is True.",
+      "Dividends paid are financing outflows. Cash returned to owners.\n\nInvesting covers long-term asset purchases and sales, not owner distributions.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is wrong.\n\nSo the statement is False."
@@ -1371,7 +1371,7 @@
     "tactical_explanations": [
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is wrong.\n\nSo the statement is False.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
-      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nNote: depreciation is non-cash in the period charged — the cash outlay was at purchase.\n\nSo the statement is True.",
+      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nNote: depreciation is non-cash in the period charged. The cash outlay was at purchase.\n\nSo the statement is True.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True."
     ],
@@ -1490,9 +1490,9 @@
     ],
     "tactical_explanations": [
       "For this printing company, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
-      "For this printing company, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this printing company, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure.\n\nCounterexample: a healthy retailer opening new stores shows investing outflows.\n\nSo the statement is False.",
-      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle — wages, suppliers, customers — not debt service principal.\n\nSo the statement is False.",
+      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle (wages, suppliers, customers) not debt service principal.\n\nSo the statement is False.",
       "For this printing company, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -1525,7 +1525,7 @@
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is fine.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
-      "Dividends paid are financing outflows — cash returned to owners.\n\nInvesting covers long-term asset purchases and sales, not owner distributions.\n\nSo the statement is True.",
+      "Dividends paid are financing outflows. Cash returned to owners.\n\nInvesting covers long-term asset purchases and sales, not owner distributions.\n\nSo the statement is True.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True."
     ]
   },
@@ -1582,7 +1582,7 @@
       true
     ],
     "tactical_explanations": [
-      "Dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "Dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 124 + 76 + 30\n$$\n\n$$\nCA = 230\n$$\n\n$$\nCL = 142 + 34\n$$\n\n$$\nCL = 176\n$$\n\n$$\n\\frac{230}{176}\n$$\n\n$$\n\\approx 1.3068\n$$\n\n$$\n1.3068 > 1.28\n$$\n\nactual 1.\n\nSo the statement is False.",
       "This is a composition claim: express Buildings as a percentage of total assets.\n\nFrom the extract, Buildings = 351 and total assets = 890. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\nShare = \\frac{351}{890}\n$$\n\n$$\nShare = 39.4\\%\n$$\n\nActual 39.\n\nSo the statement is False.",
       "This is a composition claim: express Cash and cash equivalents as a percentage of current assets.\n\nFrom the extract, Cash and cash equivalents = 30 and current assets = 230. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{30}{230}\n$$\n\n$$\nShare = 13.0\\%\n$$\n\nActual 13.\n\nSo the statement is False.",
@@ -1642,7 +1642,7 @@
       true
     ],
     "tactical_explanations": [
-      "Dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "Dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "Land is not depreciated like buildings and machinery. It ordinarily has an indefinite useful life.\n\nCounterexample: a factory plot stays at cost while the building is written down.\n\nSo the statement is False.",
       "Percentage growth for Cash flow from operating activities is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 397, \\quad Y_2 = 467\n$$\n\n$$\nY_2 - Y_1 = 467 - 397\n$$\n\n$$\n= 70\n$$\n\n$$\n\\frac{70}{397}\n$$\n\n$$\n\\approx 0.1763\n$$\n\n$$\n\\approx 17.6\\%\n$$\n\n$$\n17.6\\% > 17.4\\%\n$$\n\nactual growth is 17.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
@@ -1699,7 +1699,7 @@
       true
     ],
     "tactical_explanations": [
-      "For this logistics company, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this logistics company, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "For this logistics company, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure.\n\nCounterexample: a healthy retailer opening new stores shows investing outflows.\n\nSo the statement is False.",
       "For this logistics company, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
@@ -1909,7 +1909,7 @@
       true
     ],
     "tactical_explanations": [
-      "For this fitness club chain, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this fitness club chain, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "For this fitness club chain, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
       "For this fitness club chain, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure.\n\nCounterexample: a healthy retailer opening new stores shows investing outflows.\n\nSo the statement is False.",
@@ -2090,10 +2090,10 @@
     ],
     "tactical_explanations": [
       "For this publishing house, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
-      "For this publishing house, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this publishing house, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "For this publishing house, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
       "A negative investing total often means the firm bought long-term assets. Growth capex is not proof of failure.\n\nCounterexample: a healthy retailer opening new stores shows investing outflows.\n\nSo the statement is False.",
-      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle — wages, suppliers, customers — not debt service principal.\n\nSo the statement is False."
+      "Loan repayments are financing outflows.\n\nOperating cash is the trading cycle (wages, suppliers, customers) not debt service principal.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full",
@@ -2209,7 +2209,7 @@
       true
     ],
     "tactical_explanations": [
-      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nNote: depreciation is non-cash in the period charged — the cash outlay was at purchase.\n\nSo the statement is True.",
+      "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nNote: depreciation is non-cash in the period charged. The cash outlay was at purchase.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is mislabeled.\n\nSo the statement is False.",
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is right.\n\nSo the statement is True.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
@@ -2304,9 +2304,9 @@
     "tactical_explanations": [
       "Percentage growth for Cash flow from operating activities is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 305, \\quad Y_2 = 354\n$$\n\n$$\nY_2 - Y_1 = 354 - 305\n$$\n\n$$\n= 49\n$$\n\n$$\n\\frac{49}{305}\n$$\n\n$$\n\\approx 0.1607\n$$\n\n$$\n\\approx 16.1\\%\n$$\n\n$$\n16.1\\% \\le  19.1\\%\n$$\n\nactual growth is 16.\n\nSo the statement is False.",
       "Sort the movement into operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders.\n\nOn that map the assertion is sound.\n\nSo the statement is True.",
-      "Profit hits retained earnings on the balance sheet.\n\nThe cash-flow statement starts from profit (indirect method) or focuses on cash lines — profit is not a separate cash bucket of its own.\n\nSo the statement is True.",
+      "Profit hits retained earnings on the balance sheet.\n\nThe cash-flow statement starts from profit (indirect method) or focuses on cash lines. Profit is not a separate cash bucket of its own.\n\nSo the statement is True.",
       "Dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
-      "Dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False."
+      "Dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False."
     ]
   },
   {
@@ -2330,7 +2330,7 @@
     ],
     "tactical_explanations": [
       "For this catering company, dividends paid belong in financing activities.\n\nThey return cash to equity providers, not to the trading cycle.\n\nSo the statement is True.",
-      "For this catering company, dividends paid are financing outflows — cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
+      "For this catering company, dividends paid are financing outflows. Cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions.\n\nCounterexample: buying machinery is investing; paying a dividend is financing.\n\nSo the statement is False.",
       "For this catering company, investing and financing are separate cash-flow sections.\n\nCapex can sit beside a dividend payment in the same year without contradiction.\n\nSo the statement is True.",
       "For this catering company, collecting a receivable is operating cash from the trading cycle.\n\nIt is not new revenue and not an investing inflow.\n\nSo the statement is True.",
       "For this catering company, buying long-lived equipment for cash is an investing outflow.\n\nOperating cash is the trading cycle, not plant purchases.\n\nSo the statement is True."
@@ -2603,7 +2603,7 @@
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion fall.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nSo the statement is True.",
-      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
+      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is accepted.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -2663,7 +2663,7 @@
     ],
     "tactical_explanations": [
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 265 + 71 + 93\n$$\n\n$$\nCA = 429\n$$\n\n$$\nCL = 225 + 38\n$$\n\n$$\nCL = 263\n$$\n\n$$\n\\frac{429}{263}\n$$\n\n$$\n\\approx 1.6312\n$$\n\n$$\n1.6312 > 1.22\n$$\n\nactual 1.\n\nSo the statement is False.",
-      "Assets always equal liabilities plus equity — the sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+      "Assets always equal liabilities plus equity. The sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 265 + 71 + 93\n$$\n\n$$\nCA = 429\n$$\n\n$$\nCL = 225 + 38\n$$\n\n$$\nCL = 263\n$$\n\n$$\n\\frac{429}{263}\n$$\n\n$$\n\\approx 1.6312\n$$\n\n$$\n1.6312 > 1.57\n$$\n\nactual 1.\n\nSo the statement is True.",
       "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 429\n$$\n\n$$\n\\text{Inventory} = 265\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 429 - 265\n$$\n\n$$\n= 164\n$$\n\n$$\n\\text{CL} = 263\n$$\n\n$$\n\\frac{164}{263}\n$$\n\n$$\n\\approx 0.6236\n$$\n\n$$\n0.6236 \\le  0.71\n$$\n\nacid-test 0.\n\nSo the statement is False.",
       "This is a composition claim: express Inventory as a percentage of current assets.\n\nFrom the extract, Inventory = 265 and current assets = 429. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{265}{429}\n$$\n\n$$\nShare = 61.8\\%\n$$\n\nActual 61.\n\nSo the statement is True."
@@ -2872,10 +2872,10 @@
       true
     ],
     "tactical_explanations": [
-      "Assets always equal liabilities plus equity — the sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+      "Assets always equal liabilities plus equity. The sheet is an identity.\n\nAny asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 95 and current assets = 285. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{95}{285}\n$$\n\n$$\nShare = 33.3\\%\n$$\n\nActual 33.\n\nSo the statement is True.",
       "This is a composition claim: express Cash and cash equivalents as a percentage of current assets.\n\nFrom the extract, Cash and cash equivalents = 106 and current assets = 285. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{106}{285}\n$$\n\n$$\nShare = 37.2\\%\n$$\n\nActual 37.\n\nSo the statement is True.",
-      "Inventory of €84 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
+      "Inventory of €84 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True."
     ]
   },
@@ -3113,7 +3113,7 @@
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
-      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is False."
+      "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -3416,7 +3416,7 @@
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 719\n$$\n\n$$\n\\text{Total assets} = 1,003\n$$\n\n$$\n\\frac{719}{1,003}\n$$\n\n$$\n\\approx 0.7168\n$$\n\n$$\n\\approx 71.7\\%\n$$\n\n$$\n71.7\\% > 67.1\\%\n$$\n\nactual 71.\n\nSo the statement is True.",
       "This is a composition claim: express Inventory as a percentage of current assets.\n\nFrom the extract, Inventory = 109 and current assets = 215. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{109}{215}\n$$\n\n$$\nShare = 50.7\\%\n$$\n\nActual 50.\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 71 and current assets = 215. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{71}{215}\n$$\n\n$$\nShare = 33.0\\%\n$$\n\nActual 33.\n\nSo the statement is True.",
-      "Inventory of €109 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
+      "Inventory of €109 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ]
   },
   {
@@ -3865,8 +3865,8 @@
       "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings.\n\nAgainst that rule the claim is off.\n\nSo the statement is False.",
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 65 + 0 + 55\n$$\n\n$$\nCA = 120\n$$\n\n$$\nCL = 32 + 0\n$$\n\n$$\nCL = 32\n$$\n\n$$\n\\frac{120}{32}\n$$\n\n$$\n\\approx 3.7500\n$$\n\n$$\n3.7500 > 1.27\n$$\n\nactual 3.\n\nSo the statement is True.",
       "Inventory of €65 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
-      "An audit gives reasonable assurance, not absolute certainty — the opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True."
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
+      "An audit gives reasonable assurance, not absolute certainty. The opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True."
     ]
   },
   {
@@ -3950,8 +3950,8 @@
     ],
     "tactical_explanations": [
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion fall.\n\nSo the statement is False.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion fall.\n\nSo the statement is False.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True."
     ],
@@ -4040,7 +4040,7 @@
     ],
     "tactical_explanations": [
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True."
@@ -4074,9 +4074,9 @@
     "tactical_explanations": [
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True.",
       "Inventory of €116 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
-      "An audit gives reasonable assurance, not absolute certainty — the opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True."
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
+      "An audit gives reasonable assurance, not absolute certainty. The opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True."
     ]
   },
   {
@@ -4102,11 +4102,11 @@
       true
     ],
     "tactical_explanations": [
-      "Depreciation allocates past asset cost over useful life; unlike wages or energy, it does not trigger a cash payment in the period charged.\n\nNote: depreciation is non-cash in the period charged — the cash outlay was at purchase.\n\nSo the statement is True.",
+      "Depreciation allocates past asset cost over useful life; unlike wages or energy, it does not trigger a cash payment in the period charged.\n\nNote: depreciation is non-cash in the period charged. The cash outlay was at purchase.\n\nSo the statement is True.",
       "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{65,000 - 0}{7} = 9,286\n$$\n\n$$\n\\text{Asset B} = \\frac{24,000 - 3,000}{5} = 4,200\n$$\n\n$$\n\\begin{aligned}\n&\\frac{9,286 - 4,200}{4,200} = 121.1\\% \\\\[0.65em]\n&\\text{Claim: more than 29.9\\% higher}\n\\end{aligned}\n$$\n\nAsset A's charge is 121.1% above Asset B's, which exceeds the 29.9% threshold.\n\nNote: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
-      "An audit gives reasonable assurance, not absolute certainty — the opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True."
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
+      "An audit gives reasonable assurance, not absolute certainty. The opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True."
     ]
   },
   {
@@ -4132,7 +4132,7 @@
       true
     ],
     "tactical_explanations": [
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
       "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.\n\nFrom the extract, current assets total 356 and current liabilities total 223:\n\n$$\nWC = CA - CL\n$$\n\n$$\nCA = 356, \\quad CL = 223\n$$\n\n$$\nWC = 356 - 223\n$$\n\n$$\nWC = 133\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True.",
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 703\n$$\n\n$$\n\\text{Total assets} = 1,181\n$$\n\n$$\n\\frac{703}{1,181}\n$$\n\n$$\n\\approx 0.5953\n$$\n\n$$\n\\approx 59.5\\%\n$$\n\n$$\n59.5\\% > 56\\%\n$$\n\nactual 59.\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 81 and current assets = 356. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{81}{356}\n$$\n\n$$\nShare = 22.8\\%\n$$\n\nActual 22.\n\nSo the statement is True.",
@@ -4164,8 +4164,8 @@
     "tactical_explanations": [
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion fall.\n\nSo the statement is False.",
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 319\n$$\n\n$$\n\\text{Total assets} = 517\n$$\n\n$$\n\\frac{319}{517}\n$$\n\n$$\n\\approx 0.6170\n$$\n\n$$\n\\approx 61.7\\%\n$$\n\n$$\n61.7\\% > 29.8\\%\n$$\n\nactual 61.\n\nSo the statement is False.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
-      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest — borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
+      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest. Borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is incorrect.\n\nSo the statement is False."
     ]
   },
@@ -4193,7 +4193,7 @@
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion fall.\n\nSo the statement is False.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True.",
       "Read the claim against the chapter rule: {snippet}. Test classification, measurement, or the stated comparison on its own terms.\n\nThat reading makes the assertion hold.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is False."
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
@@ -4222,7 +4222,7 @@
       false
     ],
     "tactical_explanations": [
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is False.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is False.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is incorrect.\n\nSo the statement is False.",
       "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{74,000 - 0}{8} = 9,250\n$$\n\n$$\n\\text{Asset B} = \\frac{24,000 - 2,000}{5} = 4,400\n$$\n\n$$\n\\begin{aligned}\n&\\frac{9,250 - 4,400}{4,400} = 110.2\\% \\\\[0.65em]\n&\\text{Claim: more than 39.5\\% higher}\n\\end{aligned}\n$$\n\nAsset A's charge is 110.2% above Asset B's, which exceeds the 39.5% threshold.\n\nNote: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
       "Classification for the item follows use, benefit timing, and settlement timing. Physical appearance alone does not choose the line.\n\nOn the chapter test the wording is rejected.\n\nSo the statement is False.",
@@ -4286,7 +4286,7 @@
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 85 + 0 + 76\n$$\n\n$$\nCA = 161\n$$\n\n$$\nCL = 36 + 0\n$$\n\n$$\nCL = 36\n$$\n\n$$\n\\frac{161}{36}\n$$\n\n$$\n\\approx 4.4722\n$$\n\n$$\n4.4722 > 1.3\n$$\n\nactual 4.\n\nSo the statement is True.",
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 279\n$$\n\n$$\n\\text{Total assets} = 416\n$$\n\n$$\n\\frac{279}{416}\n$$\n\n$$\n\\approx 0.6707\n$$\n\n$$\n\\approx 67.1\\%\n$$\n\n$$\n67.1\\% > 25.2\\%\n$$\n\nactual 67.\n\nSo the statement is False.",
       "Inventory of €85 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nSo the statement is True.",
-      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest — borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False."
+      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest. Borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False."
     ]
   },
   {
@@ -4312,11 +4312,11 @@
       true
     ],
     "tactical_explanations": [
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is False.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is False.",
       "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{78,000 - 0}{8} = 9,750\n$$\n\n$$\n\\text{Asset B} = \\frac{39,000 - 4,000}{5} = 7,000\n$$\n\n$$\n\\begin{aligned}\n&\\frac{9,750 - 7,000}{7,000} = 39.3\\% \\\\[0.65em]\n&\\text{Claim: more than 32.4\\% higher}\n\\end{aligned}\n$$\n\nAsset A's charge is 39.3% above Asset B's, which exceeds the 32.4% threshold.\n\nNote: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True.",
-      "An audit gives reasonable assurance, not absolute certainty — the opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
-      "Financial statements prepared for outsiders — lenders, shareholders, or tax authorities — are financial accounting, not management reports.\n\nSo the statement is True."
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True.",
+      "An audit gives reasonable assurance, not absolute certainty. The opinion targets material misstatement in the figures, not perfection or future profit.\n\nSo the statement is True.",
+      "Financial statements prepared for outsiders (lenders, shareholders, or tax authorities) are financial accounting, not management reports.\n\nSo the statement is True."
     ]
   },
   {
@@ -4585,7 +4585,7 @@
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True.",
       "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{147 + 155}{2}\n$$\n\n$$\n\\approx 151\n$$\n\n$$\n\\frac{766}{151}\n$$\n\n$$\n\\approx 5.07\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True.",
       "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{804 + 933}{2}\n$$\n\n$$\n\\approx 868.5\n$$\n\n$$\n\\frac{1,116}{868.5}\n$$\n\n$$\n\\approx 1.2850\n$$\n\nActual 1.\n\nSo the statement is False.",
-      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,116\\text{ thousand}\n$$\n\nActual revenue is €1,116 thousand, which exceeds that level.\n\nSo the statement is True.",
+      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold. A level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,116\\text{ thousand}\n$$\n\nActual revenue is €1,116 thousand, which exceeds that level.\n\nSo the statement is True.",
       "Asset growth on this extract is a direct comparison of beginning and ending total assets.\n\nRead beginning and ending total assets from the extract:\n\n$$\n\\text{Assets}_{\\text{begin}} = 804\n$$\n\n$$\n\\text{Assets}_{\\text{end}} = 933\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True."
     ]
   },
@@ -4856,7 +4856,7 @@
       "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{99 + 147}{2}\n$$\n\n$$\n\\approx 123\n$$\n\n$$\n\\frac{996}{123}\n$$\n\n$$\n\\approx 8.0976\n$$\n\nActual 8.\n\nSo the statement is False.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True.",
       "Average inventory and average assets are midpoints of the beginning and ending balances on the extract.\n\n$$\n\\frac{136 + 194}{2}\n$$\n\n$$\n\\approx 165\n$$\n\n$$\n\\frac{886 + 933}{2}\n$$\n\n$$\n\\approx 909.5\n$$\n\n$$\n\\frac{165}{909.5}\n$$\n\n$$\n\\approx 0.1814\n$$\n\n$$\n\\approx 18.1\\%\n$$\n\nActual 18.\n\nSo the statement is False.",
-      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.\n\n$$\n\\text{Revenue} = €996\\text{ thousand}\n$$\n\nActual revenue is €996 thousand, which does not exceed that level.\n\nSo the statement is False."
+      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold. A level check, not a ratio.\n\n$$\n\\text{Revenue} = €996\\text{ thousand}\n$$\n\nActual revenue is €996 thousand, which does not exceed that level.\n\nSo the statement is False."
     ]
   },
   {
@@ -5156,7 +5156,7 @@
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is fine.\n\nSo the statement is True.",
       "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{110 + 121}{2}\n$$\n\n$$\n\\approx 115.5\n$$\n\n$$\n\\frac{1,249}{115.5}\n$$\n\n$$\n\\approx 10.8139\n$$\n\nActual 10.\n\nSo the statement is True.",
       "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{145 + 178}{2}\n$$\n\n$$\n\\approx 161.5\n$$\n\n$$\n\\frac{783}{161.5}\n$$\n\n$$\n\\approx 4.85\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True.",
-      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,249\\text{ thousand}\n$$\n\nActual revenue is €1,249 thousand, which exceeds that level.\n\nSo the statement is True."
+      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold. A level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,249\\text{ thousand}\n$$\n\nActual revenue is €1,249 thousand, which exceeds that level.\n\nSo the statement is True."
     ]
   },
   {
@@ -5335,7 +5335,7 @@
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is fine.\n\nSo the statement is True.",
       "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{823 + 1,028}{2}\n$$\n\n$$\n\\approx 925.5\n$$\n\n$$\n\\frac{1,019}{925.5}\n$$\n\n$$\n\\approx 1.1010\n$$\n\nActual 1.\n\nSo the statement is False.",
       "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{169 + 179}{2}\n$$\n\n$$\n\\approx 174\n$$\n\n$$\n\\frac{674}{174}\n$$\n\n$$\n\\approx 3.87\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True.",
-      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,019\\text{ thousand}\n$$\n\nActual revenue is €1,019 thousand, which exceeds that level.\n\nSo the statement is True.",
+      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold. A level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,019\\text{ thousand}\n$$\n\nActual revenue is €1,019 thousand, which exceeds that level.\n\nSo the statement is True.",
       "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{135 + 107}{2}\n$$\n\n$$\n\\approx 121\n$$\n\n$$\n\\frac{1,019}{121}\n$$\n\n$$\n\\approx 8.4215\n$$\n\nActual 8.\n\nSo the statement is False."
     ]
   },
@@ -5455,7 +5455,7 @@
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 821\n$$\n\n$$\n\\text{Total assets} = 1,301\n$$\n\n$$\n\\frac{821}{1,301}\n$$\n\n$$\n\\approx 0.6311\n$$\n\n$$\n\\approx 63.1\\%\n$$\n\n$$\n63.1\\% > 34.9\\%\n$$\n\nactual 63.\n\nSo the statement is False.",
       "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.\n\nFrom the extract, current assets total 436 and current liabilities total 152:\n\n$$\nWC = CA - CL\n$$\n\n$$\nCA = 436, \\quad CL = 152\n$$\n\n$$\nWC = 436 - 152\n$$\n\n$$\nWC = 284\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True.",
       "This is a composition claim: express Cash and cash equivalents as a percentage of current assets.\n\nFrom the extract, Cash and cash equivalents = 112 and current assets = 436. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{112}{436}\n$$\n\n$$\nShare = 25.7\\%\n$$\n\nActual 25.\n\nSo the statement is False.",
-      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest — borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False.",
+      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest. Borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False.",
       "Bank overdrafts are presented as current liabilities. Rollover habits do not move them into the non-current section.\n\nReporting convention treats overdrafts as short-term claims.\n\nSo the statement is False."
     ]
   },
@@ -5663,7 +5663,7 @@
     ],
     "tactical_explanations": [
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 80 and current assets = 227. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{80}{227}\n$$\n\n$$\nShare = 35.2\\%\n$$\n\nActual 35.\n\nSo the statement is True.",
-      "Inventory of €111 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
+      "Inventory of €111 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True.",
       "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 417\n$$\n\n$$\n\\text{Total assets} = 969\n$$\n\n$$\n\\frac{417}{969}\n$$\n\n$$\n\\approx 0.4303\n$$\n\n$$\n\\approx 43.0\\%\n$$\n\n$$\n43.0\\% > 34\\%\n$$\n\nactual 43.\n\nSo the statement is True.",
       "Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales.\n\nRead that way, the statement is correct.\n\nSo the statement is True.",
       "Inventory is held for sale or cycle use and is classified as a current asset.\n\nSo the statement is True."
@@ -6266,7 +6266,7 @@
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 611\n$$\n\n$$\n\\text{Total assets} = 936\n$$\n\n$$\n\\frac{611}{936}\n$$\n\n$$\n\\approx 0.6528\n$$\n\n$$\n\\approx 65.3\\%\n$$\n\n$$\n65.3\\% > 60.2\\%\n$$\n\nactual 65.\n\nSo the statement is True.",
       "This is a composition claim: express Inventory as a percentage of current assets.\n\nFrom the extract, Inventory = 138 and current assets = 265. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{138}{265}\n$$\n\n$$\nShare = 52.1\\%\n$$\n\nActual 52.\n\nSo the statement is True.",
       "This is a composition claim: express Trade receivables as a percentage of current assets.\n\nFrom the extract, Trade receivables = 87 and current assets = 265. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\nShare = \\frac{87}{265}\n$$\n\n$$\nShare = 32.8\\%\n$$\n\nActual 32.\n\nSo the statement is True.",
-      "Inventory of €138 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current — held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
+      "Inventory of €138 thousand is stock expected to be sold or used within the operating cycle, so it belongs among current assets.\n\nNote: inventory is current. Held for sale or cycle use, not a long-term operating asset.\n\nSo the statement is True."
     ]
   },
   {
@@ -6445,7 +6445,7 @@
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is fine.\n\nSo the statement is True.",
       "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{101 + 143}{2}\n$$\n\n$$\n\\approx 122\n$$\n\n$$\n\\frac{1,026}{122}\n$$\n\n$$\n\\approx 8.4098\n$$\n\nActual 8.\n\nSo the statement is True.",
       "Collection days convert receivables turnover into an approximate outstanding period.\n\n$$\n\\frac{1,026}{122}\n$$\n\n$$\n\\approx 8.4098\n$$\n\n$$\n\\frac{365}{8.4098}\n$$\n\n$$\n\\approx 43.4\n$$\n\nActual 43 days.\n\nSo the statement is True.",
-      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,026\\text{ thousand}\n$$\n\nActual revenue is €1,026 thousand, which exceeds that level.\n\nSo the statement is True.",
+      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold. A level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,026\\text{ thousand}\n$$\n\nActual revenue is €1,026 thousand, which exceeds that level.\n\nSo the statement is True.",
       "Cost of sales as a share of revenue is the COS-to-revenue ratio.\n\nFrom the extract, cost of sales = 712 and revenue = 1,026. Plug the figures step by step:\n\n$$\nCOS\\% = \\frac{\\text{cost of sales}}{\\text{revenue}}\n$$\n\n$$\nCOS\\% = \\frac{712}{1,026}\n$$\n\n$$\nCOS\\% = 69.4\\%\n$$\n\nActual 69.\n\nSo the statement is True."
     ]
   },
@@ -6506,7 +6506,7 @@
       "Keep period performance on the income statement. Revenue and costs are period flows; assets and liabilities are stocks.\n\nWith that split the claim is fine.\n\nSo the statement is True.",
       "Collection days convert receivables turnover into an approximate outstanding period.\n\n$$\n\\frac{1,036}{122}\n$$\n\n$$\n\\approx 8.4918\n$$\n\n$$\n\\frac{365}{8.4918}\n$$\n\n$$\n\\approx 43.0\n$$\n\nActual 43 days.\n\nSo the statement is False.",
       "Average inventory and average assets are midpoints of the beginning and ending balances on the extract.\n\n$$\n\\frac{134 + 174}{2}\n$$\n\n$$\n\\approx 154\n$$\n\n$$\n\\frac{849 + 988}{2}\n$$\n\n$$\n\\approx 918.5\n$$\n\n$$\n\\frac{154}{918.5}\n$$\n\n$$\n\\approx 0.1677\n$$\n\n$$\n\\approx 16.8\\%\n$$\n\nActual 16.\n\nSo the statement is False.",
-      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,036\\text{ thousand}\n$$\n\nActual revenue is €1,036 thousand, which does not exceed that level.\n\nSo the statement is False."
+      "Revenue is read directly from the extract and compared with the stated euro-thousand threshold. A level check, not a ratio.\n\n$$\n\\text{Revenue} = €1,036\\text{ thousand}\n$$\n\nActual revenue is €1,036 thousand, which does not exceed that level.\n\nSo the statement is False."
     ]
   },
   {
@@ -6535,7 +6535,7 @@
       "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\nCA = 169 + 103 + 83\n$$\n\n$$\nCA = 355\n$$\n\n$$\nCL = 143 + 34\n$$\n\n$$\nCL = 177\n$$\n\n$$\n\\frac{355}{177}\n$$\n\n$$\n\\approx 2.0056\n$$\n\n$$\n2.0056 > 1.8\n$$\n\nactual 2.\n\nSo the statement is True.",
       "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 355\n$$\n\n$$\n\\text{Inventory} = 169\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 355 - 169\n$$\n\n$$\n= 186\n$$\n\n$$\n\\text{CL} = 177\n$$\n\n$$\n\\frac{186}{177}\n$$\n\n$$\n\\approx 1.0508\n$$\n\n$$\n1.0508 \\le  1.14\n$$\n\nacid-test 1.\n\nSo the statement is False.",
       "This is a composition claim: express Buildings as a percentage of total assets.\n\nFrom the extract, Buildings = 305 and total assets = 933. Plug the figures step by step:\n\n$$\nShare = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\nShare = \\frac{305}{933}\n$$\n\n$$\nShare = 32.7\\%\n$$\n\nActual 32.\n\nSo the statement is False.",
-      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest — borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False.",
+      "A bank loan is a liability owed to a lender. Equity is owners’ residual interest. Borrowed funds do not belong there.\n\nCounterexample: a term loan sits under liabilities, never under share capital.\n\nSo the statement is False.",
       "Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.\n\nFrom the extract, current assets total 355 and current liabilities total 177:\n\n$$\nWC = CA - CL\n$$\n\n$$\nCA = 355, \\quad CL = 177\n$$\n\n$$\nWC = 355 - 177\n$$\n\n$$\nWC = 178\n$$\n\nThe computed result matches the claim.\n\nSo the statement is True."
     ]
   },
