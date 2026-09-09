@@ -6,6 +6,7 @@ import { Route as BbeEntranceExamRoute } from "@/routes/bbe-entrance-exam";
 import { Route as BbeExamPreparationRoute } from "@/routes/bbe-exam-preparation";
 import { Route as BbeExamScoringRoute } from "@/routes/bbe-exam-scoring";
 import { Route as BbeMathematicsRoute } from "@/routes/bbe-mathematics";
+import { Route as BbeVsWisoRoute } from "@/routes/bbe-vs-wiso";
 import { Route as DemoPracticeRoute } from "@/routes/demo-practice.index";
 import { Route as AnswerSheetRoute } from "@/routes/features.answer-sheet";
 import { Route as ImportantFeaturesRoute } from "@/routes/important-features";
@@ -52,6 +53,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/bbe-economics-english": () => headFrom(BbeEconomicsEnglishRoute),
   "/bbe-exam-preparation": () => headFrom(BbeExamPreparationRoute),
   "/bbe-admission": () => headFrom(BbeAdmissionRoute),
+  "/bbe-vs-wiso": () => headFrom(BbeVsWisoRoute),
   "/parents": () => headFrom(ParentsRoute),
   "/important-features": () => headFrom(ImportantFeaturesRoute),
   "/features/answer-sheet": () => headFrom(AnswerSheetRoute),

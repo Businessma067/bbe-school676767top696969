@@ -23,6 +23,7 @@ const SEGMENT_LABELS: Record<string, string> = {
   "bbe-economics-english": "Economics & English",
   "bbe-exam-preparation": "How to Prepare",
   "bbe-admission": "Admission",
+  "bbe-vs-wiso": "BBE vs WISO",
   "demo-practice": "Demo Practice",
   products: "Products",
   "custom-mock-builder": "Custom Mock Builder",

@@ -26,6 +26,7 @@ const EXAM_INFO_PREFIXES = [
   "/bbe-economics-english",
   "/bbe-exam-preparation",
   "/bbe-admission",
+  "/bbe-vs-wiso",
 ];
 
 const PRODUCTS_EXACT = [
