@@ -18,6 +18,9 @@ import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
+const MATH_POINTS_LABEL = SCORING_CONFIG.math.pointsPerTask.join(", ");
+const ENGLISH_TYPE_LABEL = `text ${SCORING_CONFIG.english.pointsByType.text} · grammar ${SCORING_CONFIG.english.pointsByType.grammar} · vocabulary ${SCORING_CONFIG.english.pointsByType.vocabulary}`;
+
 export const Route = createFileRoute("/bbe-exam-scoring")({
   head: () => ({
     scripts: [
@@ -68,7 +71,7 @@ const faqs = [
   },
   {
     question: "What are the section point totals used in BBE School mocks?",
-    answer: `BBE School practice scoring uses ${SCORING_CONFIG.economics.totalPoints} points for Economics (${SCORING_CONFIG.economics.taskCount} tasks), ${SCORING_CONFIG.english.totalPoints} for English (${SCORING_CONFIG.english.taskCount} tasks), and ${SCORING_CONFIG.math.totalPoints} for Mathematics (${SCORING_CONFIG.math.taskCount} tasks), for ${SCORING_CONFIG.examTotalPoints} points overall. That aligns with the most recent exam’s question counts and approximate 40/20/40 score weighting.`,
+    answer: `BBE School practice scoring uses ${SCORING_CONFIG.economics.totalPoints} points for Economics (${SCORING_CONFIG.economics.taskCount} tasks × ${SCORING_CONFIG.economics.defaultMaxPerTask}), ${SCORING_CONFIG.english.totalPoints} for English (${SCORING_CONFIG.english.taskCount} tasks; ${ENGLISH_TYPE_LABEL}), and ${SCORING_CONFIG.math.totalPoints} for Mathematics (${SCORING_CONFIG.math.taskCount} tasks with per-question maxima), for ${SCORING_CONFIG.examTotalPoints} points overall. Approximate score weighting: Economics ${BBE_EXAM_FORMAT.scoreWeighting.economics}, English ${BBE_EXAM_FORMAT.scoreWeighting.english}, Mathematics ${BBE_EXAM_FORMAT.scoreWeighting.mathematics}.`,
   },
   {
     question: "Does the OSA affect my exam score?",
@@ -179,8 +182,8 @@ export function BbeExamScoringPage() {
 
         <BbeSection id="max-points" title="Maximum points per question">
           <p>
-            In BBE School practice and mocks, task maxima are calibrated so section totals reflect the most
-            recent exam’s question counts and approximate weighting:
+            In BBE School practice and mocks, task maxima follow the most recent exam’s published point
+            distribution (Economics uniform; English by question type; Mathematics per task):
           </p>
           <div className="overflow-x-auto rounded-2xl border border-border">
             <table className="w-full min-w-[28rem] text-left text-sm">
@@ -189,7 +192,7 @@ export function BbeExamScoringPage() {
                   <th className="px-4 py-3 font-semibold">Section</th>
                   <th className="px-4 py-3 font-semibold">Tasks</th>
                   <th className="px-4 py-3 font-semibold">Section total</th>
-                  <th className="px-4 py-3 font-semibold">Default max / task</th>
+                  <th className="px-4 py-3 font-semibold">Max / task</th>
                 </tr>
               </thead>
               <tbody className="text-neutral-800">
@@ -197,19 +200,19 @@ export function BbeExamScoringPage() {
                   <td className="px-4 py-3 text-foreground">Economics &amp; Business</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.economics.taskCount}</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.economics.totalPoints}</td>
-                  <td className="px-4 py-3">{SCORING_CONFIG.economics.defaultMaxPerTask}</td>
+                  <td className="px-4 py-3">{SCORING_CONFIG.economics.defaultMaxPerTask} each</td>
                 </tr>
                 <tr className="border-t border-border bg-secondary/30">
                   <td className="px-4 py-3 text-foreground">English</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.english.taskCount}</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.english.totalPoints}</td>
-                  <td className="px-4 py-3">~{SCORING_CONFIG.english.defaultMaxPerTask}</td>
+                  <td className="px-4 py-3">{ENGLISH_TYPE_LABEL}</td>
                 </tr>
                 <tr className="border-t border-border">
                   <td className="px-4 py-3 text-foreground">Mathematics</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.math.taskCount}</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.math.totalPoints}</td>
-                  <td className="px-4 py-3">{SCORING_CONFIG.math.defaultMaxPerTask}</td>
+                  <td className="px-4 py-3">Varies (3–7)</td>
                 </tr>
                 <tr className="border-t border-border bg-secondary/30">
                   <td className="px-4 py-3 font-semibold text-foreground">Exam total</td>
@@ -221,6 +224,22 @@ export function BbeExamScoringPage() {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div className="mt-4 space-y-3 rounded-2xl border border-border bg-secondary/20 px-4 py-4 text-sm text-neutral-800">
+            <p>
+              <span className="font-medium text-foreground">Mathematics points per question:</span>{" "}
+              {MATH_POINTS_LABEL} (sum {SCORING_CONFIG.math.totalPoints}).
+            </p>
+            <p>
+              <span className="font-medium text-foreground">English by type:</span>{" "}
+              {SCORING_CONFIG.english.pointsByType.text} points for text questions,{" "}
+              {SCORING_CONFIG.english.pointsByType.grammar} for grammar,{" "}
+              {SCORING_CONFIG.english.pointsByType.vocabulary} for vocabulary.
+            </p>
+            <p>
+              For comparison, the WiSo written exam in the same cycle totaled{" "}
+              {SCORING_CONFIG.wisoExamTotalPoints} points.
+            </p>
           </div>
           <BbeInfoCallout label="BBE School practice scoring" tone="advice">
             These point allocations are what BBE School uses so mocks feel comparable to the most recent

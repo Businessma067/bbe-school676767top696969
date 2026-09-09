@@ -34,14 +34,14 @@ export const extraDe: Record<string, string> = {
     "Eine schriftliche Multiple-Choice-Prüfung vor Ort, Teil des Aufnahmeverfahrens für das englischsprachige Bachelorprogramm Business and Economics der WU Wien, die stattfindet, wenn es mehr Anmeldungen als Plätze gibt.",
   "Economics & Business, English language skills, and mathematics.":
     "Wirtschaft & Betriebswirtschaft, Englischkenntnisse und Mathematik.",
-  "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.":
-    "Laut der letzten Prüfung: insgesamt 34 Fragen, aufgeteilt in 10 Wirtschaft & Betriebswirtschaft, 11 Englisch und 13 Mathematik.",
+  "Based on the most recent exam: 35 questions total, split into 10 Economics & Business, 11 English, and 14 Mathematics.":
+    "Laut der letzten Prüfung: insgesamt 35 Fragen, aufgeteilt in 10 Wirtschaft & Betriebswirtschaft, 11 Englisch und 14 Mathematik.",
   "2 hours, based on the most recent exam structure.":
     "2 Stunden, basierend auf der letzten Prüfungsstruktur.",
   "Difficulty varies by section. Math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.":
     "Die Schwierigkeit unterscheidet sich je Teil. Mathematik verlangt meist die meiste Vorbereitungszeit, Wirtschaft belohnt präzises Lesen von Definitionen, Englisch belohnt über Zeit aufgebaute Sprachkompetenz.",
-  "Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics 40%, English 20%, Mathematics 40%.":
-    "Über ein System mit Teilpunkten, bei dem richtige und falsche Markierungen derselben Aufgabe gegeneinander verrechnet werden. Ungefähre Gewichtung laut letzter Prüfung: Wirtschaft 40 %, Englisch 20 %, Mathematik 40 %.",
+  "Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics 37.5%, English 19%, Mathematics 43%.":
+    "Über ein System mit Teilpunkten, bei dem richtige und falsche Markierungen derselben Aufgabe gegeneinander verrechnet werden. Ungefähre Gewichtung laut letzter Prüfung: Wirtschaft 37,5 %, Englisch 19 %, Mathematik 43 %.",
   "By written exam performance against the 240 available places; the OSA is ungraded and does not factor into ranking.":
     "Nach dem Ergebnis der schriftlichen Prüfung im Verhältnis zu den 240 verfügbaren Plätzen; das OSA wird nicht benotet und zählt nicht für das Ranking.",
   "Independent study of Fuhrmann, B. (2019), Introduction to Business and Economics, Chapters 1 to 6.":
@@ -224,14 +224,14 @@ export const extraUk: Record<string, string> = {
     "Письмовий очний тест із варіантами відповіді, що є частиною відбору на англомовну бакалаврську програму Business and Economics у WU Відень; проводиться, якщо заявок більше, ніж місць.",
   "Economics & Business, English language skills, and mathematics.":
     "Економіка та бізнес, англійська мова і математика.",
-  "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.":
-    "За останнім іспитом: 34 запитання загалом — 10 з економіки та бізнесу, 11 з англійської та 13 з математики.",
+  "Based on the most recent exam: 35 questions total, split into 10 Economics & Business, 11 English, and 14 Mathematics.":
+    "За останнім іспитом: 35 запитань загалом — 10 з економіки та бізнесу, 11 з англійської та 14 з математики.",
   "2 hours, based on the most recent exam structure.":
     "2 години, за структурою останнього іспиту.",
   "Difficulty varies by section. Math typically demands the most preparation time, economics rewards precise reading of definitions, and English rewards general proficiency built over time.":
     "Складність різна за частинами. Математика зазвичай потребує найбільше часу, економіка винагороджує точне читання визначень, а англійська — рівень, напрацьований роками.",
-  "Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics 40%, English 20%, Mathematics 40%.":
-    "Через систему часткових балів, де правильні й помилкові позначення в одному завданні врівноважують одне одного. Приблизна вага за останнім іспитом: економіка 40%, англійська 20%, математика 40%.",
+  "Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics 37.5%, English 19%, Mathematics 43%.":
+    "Через систему часткових балів, де правильні й помилкові позначення в одному завданні врівноважують одне одного. Приблизна вага за останнім іспитом: економіка 37.5%, англійська 19%, математика 43%.",
   "By written exam performance against the 240 available places; the OSA is ungraded and does not factor into ranking.":
     "За результатом письмового іспиту щодо 240 доступних місць; OSA не оцінюється і не впливає на рейтинг.",
   "Independent study of Fuhrmann, B. (2019), Introduction to Business and Economics, Chapters 1 to 6.":

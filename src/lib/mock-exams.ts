@@ -1,4 +1,8 @@
-import { SCORING_CONFIG, type SubjectKey } from "@/config/scoring-config";
+import {
+  SCORING_CONFIG,
+  pointsSequenceForSubject,
+  type SubjectKey,
+} from "@/config/scoring-config";
 import {
   displayTitleForCustomMock,
   isCustomExamId,
@@ -53,13 +57,18 @@ export interface ExamQuestion {
   solutionOverview?: string;
 }
 
+const FULL_EXAM_QUESTION_COUNT =
+  SCORING_CONFIG.economics.taskCount +
+  SCORING_CONFIG.english.taskCount +
+  SCORING_CONFIG.math.taskCount;
+
 /** Available exams. Placeholder content until real questions are added. */
 export const MOCK_EXAMS: MockExamSummary[] = [
-  { id: "mock-1", title: "Mock Exam 1", questionCount: 34, durationMinutes: 120, tier: "lite" },
-  { id: "mock-2", title: "Mock Exam 2", questionCount: 34, durationMinutes: 120, tier: "lite" },
-  { id: "mock-3", title: "Mock Exam 3", questionCount: 34, durationMinutes: 120, tier: "full" },
-  { id: "mock-4", title: "Mock Exam 4", questionCount: 34, durationMinutes: 120, tier: "full" },
-  { id: "mock-5", title: "Mock Exam 5", questionCount: 34, durationMinutes: 120, tier: "full" },
+  { id: "mock-1", title: "Mock Exam 1", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
+  { id: "mock-2", title: "Mock Exam 2", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
+  { id: "mock-3", title: "Mock Exam 3", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
+  { id: "mock-4", title: "Mock Exam 4", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
+  { id: "mock-5", title: "Mock Exam 5", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
@@ -100,14 +109,10 @@ function makeRandom(seed: string) {
   };
 }
 
-const SECTION_ORDER: { subject: SubjectKey; count: number; points: number }[] = [
-  { subject: "economics", count: SCORING_CONFIG.economics.taskCount, points: SCORING_CONFIG.economics.defaultMaxPerTask },
-  { subject: "english", count: SCORING_CONFIG.english.taskCount, points: SCORING_CONFIG.english.defaultMaxPerTask },
-  { subject: "math", count: SCORING_CONFIG.math.taskCount, points: SCORING_CONFIG.math.defaultMaxPerTask },
-];
+const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
 /**
- * Placeholder question set (34 tasks, 5 statements each).
+ * Placeholder question set (full exam task counts, 5 statements each).
  * Real content will replace this; the shape stays identical.
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
@@ -115,8 +120,9 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   const questions: ExamQuestion[] = [];
   let index = 0;
 
-  for (const section of SECTION_ORDER) {
-    for (let i = 0; i < section.count; i++) {
+  for (const subject of SECTION_ORDER) {
+    const points = pointsSequenceForSubject(subject);
+    for (let i = 0; i < points.length; i++) {
       index += 1;
       const trueCount = 1 + Math.floor(rand() * 4); // 1..4 true statements
       const flags = Array.from({ length: 5 }, (_, s) => s < trueCount).sort(
@@ -126,9 +132,9 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
       questions.push({
         id: `${examId}-q${index}`,
         index,
-        subject: section.subject,
-        maxPoints: section.points,
-        stem: `Task ${index} · ${section.subject === "economics" ? "Economics" : section.subject === "english" ? "English" : "Math"} — question text will be added here. Decide which of the following statements are true.`,
+        subject,
+        maxPoints: points[i]!,
+        stem: `Task ${index} · ${subject === "economics" ? "Economics" : subject === "english" ? "English" : "Math"} — question text will be added here. Decide which of the following statements are true.`,
         statements: Array.from({ length: 5 }, (_, s) => ({
           id: `${examId}-q${index}-s${s + 1}`,
           text: `Statement ${String.fromCharCode(65 + s)} — placeholder statement text for task ${index}.`,

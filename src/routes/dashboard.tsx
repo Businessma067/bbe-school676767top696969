@@ -19,7 +19,7 @@ import {
 import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
-import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
+import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
 import {
@@ -909,14 +909,19 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
           <SubjectAvg
             name="Economics"
             points={avg("economics")}
-            max={64}
+            max={SCORING_CONFIG.economics.totalPoints}
             color={SUBJECT_COLORS.economics}
           />
-          <SubjectAvg name="Math" points={avg("math")} max={62.4} color={SUBJECT_COLORS.math} />
+          <SubjectAvg
+            name="Math"
+            points={avg("math")}
+            max={SCORING_CONFIG.math.totalPoints}
+            color={SUBJECT_COLORS.math}
+          />
           <SubjectAvg
             name="English"
             points={avg("english")}
-            max={33.6}
+            max={SCORING_CONFIG.english.totalPoints}
             color={SUBJECT_COLORS.english}
           />
         </div>
