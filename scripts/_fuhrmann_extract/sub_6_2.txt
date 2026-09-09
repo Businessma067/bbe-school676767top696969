@@ -1,0 +1,126 @@
+--- book p.52 / pdf 50 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS52
+Accounting – keeping record of business transactions
+6 Accounting – keeping record 
+of business transactions
+During their first year in business, Tina and Steve buy and sell a lot of computers, they sup-
+port their customers by solving their computer problems, and they hire two assistants who 
+deal with the customers and other stakeholders, take care of the company’s website and 
+do all the paperwork and the bookkeeping. This means that a lot of business transactions 
+like purchases, sales, borrowing and lending money etc. take place and businesses need 
+to keep accurate records of these business transactions. Bookkeepers are responsible 
+for recording these transactions that are always verified by a document (e.g. an invoice or 
+a receipt). The aim of recording all transactions is to generate information on the financial 
+status of the business. Statements that provide this information are called accounts.
+6.1 What a balance sheet is
+Tina and Steve have started their business, using computers that they already had as well 
+as a new one. They have also purchased some equipment and office furniture and use Ti-
+na’s car to drive to their customers. Computers, office equipment and cars – these things 
+are all assets, “things” that the business owns and that are used for the business. Tina and 
+Steve make a list with all the assets of their business and their values in euros (on the left 
+side of the list) and compare it with the amount of money that had to be borrowed from the 
+bank (on the right side of the list) to pay for some of their purchases:
+Assets euros euros
+Office equipment including computers 25,000
+Car 8,000
+Inventory: computers in stock to be sold again 12,500 Bank loan 25,000
+Cash and bank deposit 3,500
+49,000
+Please note that there are two types of computers in the list: computers that are used in 
+the office and are not for sale, and other computers that were bought to be resold (inven-
+tory). This difference is important because they are different types of assets.
+Only part of the assets was financed by using money from the bank loan. This is due to the 
+fact that Tina uses her own car exclusively for the company and Steve uses computers that 
+he already owned. They also had some money of their own which they used for setting up 
+the business. Therefore, the total amount of the bank loan (which is a liability, i.e. money 
+that is owed to someone else) is lower than the total amount of the assets. The difference 
+between these two positions is the amount that Tina and Steve were able to finance them-
+selves; it is called owner’s equity. It is the proportion of the assets that was NOT financed 
+by debt. If we add this position to Tina’s and Steve’s list, their list becomes a balance 
+sheet:
+
+--- book p.53 / pdf 51 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 53
+Assets (euros) Liabilities and equity (euros)
+Office equipment including 
+computers 25,000 Owner’s equity (capital) 24,000
+Car 8,000
+Inventory 12,500 Bank loan ( liabilities) 25,000
+Cash and bank deposit 3,500
+49,000 49,000
+A balance sheet comprises a company’s assets and reveals how they were financed. 
+The amount of assets equals the amount of liabilities plus owner’s equity:
+assets = liabilities + owner’s equity
+This must be an equation because 
+ ∎ all assets were funded either through equity or liabilities, 
+ ∎ all funds are somehow bound or invested in the business (even money held as cash 
+or in a bank account was either funded through equity or liabilities and is bound in the 
+specific form it is currently held) and
+ ∎ any increase in assets must be financed by an increase in either liabilities or equity 
+(capital). 
+Please note that if Tina and Steve buy computer software and pay cash, the total amount 
+of the assets remains the same (one asset – software – increases, but another one – cash 
+– decreases by the exact same amount, so it is just an “asset swap”). But if they buy the 
+software on credit, then the amount of assets increases and liabilities also increase by the 
+exact same amount. Accordingly, the balance sheet total increases.
+Assets are usually listed in the balance sheet in a certain order. They comprise fixed assets 
+(or non-current assets) that normally have a lifespan of more than one year and are in-
+tended to be used in the company for a longer time period than one year. Usually they can-
+not be turned into cash so easily. Current assets have higher liquidity. They are usually not 
+used longer than a year because they are used up, spent in production or sold.
+Examples of fixed assets / non-current assets are property, plant, premises, buildings, 
+machinery and all kind of equipment like office equipment, e.g. computers that are used in 
+the office. Also financial assets – if meant to be kept longer than a year – can be fixed or 
+non-current assets.
+Examples of current assets  are inventory (merchandise that has not been sold yet, like 
+computers in stock), accounts receivables / debtors (money that is owed to the business, 
+also called trade receivables), cash.
+There are also intangible assets like trademarks, patents and copyrights. Although they 
+cannot be seen or touched they are also of value for the business like tangible assets are. 
+Tina and Steve do not have any intangible assets (yet), but the AT&S balance sheet (see 
+below) contains intangible assets of almost 76 million euros, mainly acquired patents, 
+trademarks and licenses.
+
+--- book p.54 / pdf 52 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS54
+Accounting – keeping record of business transactions
+Liabilities are debts and obligations that are owed to other persons, businesses or banks 
+and need to be repaid at a certain point in time and/or over a certain period of time. These 
+funds are usually provided by banks or suppliers. Money owed to suppliers is also called 
+trade credit or trade payables. Current liabilities are debts or obligations that are due with-
+in one year. Accordingly, non-current liabilities have a duration of more than one year.
+Equity / owner’s equity is the difference of assets and liabilities. It is an indicator of the 
+wealth of the company. A high equity ratio (= equity / total capital) indicates that the re-
+spective portion of assets was financed by the company’s own resources (for example with 
+funds provided by the owners or shareholders of the company). It is important for a busi-
+ness to have sufficient equity because: 1) equity usually does not have to be repaid, 2) it 
+helps a business to be relatively independent from its creditors and 3) if the company has 
+a loss and there is a higher amount of equity, the company will not be over-indebted.
+Determining the value of assets is an important but also tricky task. While it might not be 
+difficult to determine the exact amount of a bank loan, it is more difficult to tell what a build-
+ing is worth many years after it was buil t. Businesses usually want to present themselves 
+in the best way possible when setting up their balance sheet. However, they need to stick 
+to the legal rules and regulations that aim to ensure that information given in balance 
+sheets can be trusted.
+6.2 Other components of the financial statement of a business
+The balance sheet is not the only component of the financial statement of a business. The 
+financial statement of the business aims to show the performance of the business over a 
+certain period of time, but the balance sheet only shows the assets, liabilities and equity at a 
+certain point in time. It does not contain information on total sales (turnover), nor does it 
+reveal the cost of producing the goods and services or other expenses. Therefore, the finan-
+cial statement consists of the balance sheet, the income statement (profit and loss account) 
+and the cash flow statement, which gives an insight into the inflow and outflow of cash.
+Figure 24. The main components of a financial statement of a business
+Balance sheet
+Assets, liabilities 
+and equity
+Income 
+statement
+Revenues, costs 
+and expenses
+Cash flow 
+statement
+Inflow and 
+outflow of cash
+Financial statement
+reveals the performance of a business over a certain period of time

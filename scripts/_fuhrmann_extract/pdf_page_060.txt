@@ -1,0 +1,34 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS62
+Accounting – keeping record of business transactions
+Working capital problems and cash flow problems are interlinked but not identical. Cash 
+flow problems can be mitigated by borrowing money using a short-term bank loan or using 
+overdraft facilities and trade credit. Although this brings cash into the business, it will in-
+crease current liabilities and reduce working capital. The most effective way to improve 
+both working capital and cash flow is to increase equity or borrow more long-term credit.
+Working capital can also be calculated as a ratio:
+Working capital ratio / current ratio = Current assets / current liabilities 
+As current assets should exceed current liabilities, this ratio should be greater than 1, ide-
+ally even between 1.5 and 2.
+Working capital ratio for AT&S = 586,172 / 303,772 = 1.9
+It can be argued that inventories should not be taken into consideration for this calculation. 
+There are many reasons why inventories could possibly not be turned into cash. This is why 
+a modified calculation, the so-called acid test ratio, does not consider inventories and al-
+lows a stricter evaluation of liquidity.
+Acid test ratio = (current assets – inventory) / current liabilities
+Acid test ratio for AT&S = (586,172 – 136,097) / 303,772 = 1.5
+So the result of the acid test ratio for AT&S is still greater than 1, which indicates a sufficient 
+level of liquidity.
+6.5.2 Profitability
+If revenues exceed costs, the business makes a profit. This does not necessarily mean that 
+the business is sufficiently profitable because the amount of profit might be minuscule in 
+relation to the money that has been invested (and the risk that has been taken). Hence, 
+profitability refers to a business’s profit in relation to an indicator of the size of the business 
+(total assets or total average assets, total equity, turnover). 
+ ∎ Return on equity
+ROE = profit before tax and interest (EBIT) / equity
+AT&S: 90,286 / 711,391 = 12.7%
+Another ratio that is often calculated is return on capital employed (ROCE). Capital em-
+ployed is usually the sum of equity and non-current liabilities (or simply assets minus cur-
+rent liabilities). Instead of capital employed at the end of the financial year, the average 
+capital employed can be used (e.g. by summing up capital employed at the beginning and 
+at the end of the financial year and dividing by 2).

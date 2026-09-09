@@ -1,0 +1,45 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 47
+Fixed costs are a straight horizontal line. In the short run, they remain the same regardless 
+of the output. Of course, fixed costs could increase by a certain amount (“stepped fixed 
+cost”) at a certain level of output because more office space, more equipment and/or more 
+staff for administration are required. Variable costs increase directly as output rises. Total 
+costs equal variable costs plus fixed costs. The point where the revenue line and the total 
+cost line intersect is called the break-even point. It indicates the level of output a business 
+needs to produce and sell to break even, i.e. to start making profits. 
+ ∎ Selling price €720 – variable cost €480 = €240 that contribute to covering fixed costs. 
+This is why the difference between selling price and variable cost per item is also called 
+contribution.
+ ∎ The contribution of €240/item will contribute to the total fixed costs of the business 
+(€130,000) and the profit.
+ ∎ Fixed costs of €130,000 / €240 contribution per item = 541.67 items that it takes to 
+cover the fixed costs.
+ ∎ Starting with the 542nd item sold, the business will make a profit. Below that level, the 
+business will make a loss.
+Figure 21. Break-even point
+Of course, the break-even point can be reached more easily by increasing prices and/or by 
+reducing variable costs.
+Variable cost plus pricing / distribution pricing
+In order to calculate prices, a markup is added to the variable cost of producing a good (or 
+service). If Tina and Steve choose to add a 50% markup and the variable cost of one laptop 
+that they have just repaired and set up is 480 euros, then the selling price for one laptop 
+would be 480 + 240 = 720 euros (excl. VAT). 
+Let’s assume one customer offered to buy ten such laptops but was only willing to pay 
+6,000 euros for the ten laptops (excl. VAT). Should they refuse that offer? They would not 
+earn the 50% markup, but they would be able to cover their variable costs (€4,800) and earn 
+a contribution towards the fixed costs. Only if they are sure of selling the laptops to some-
+1,000,000
+900,000
+800,000
+700,000
+600,000
+500,000
+400,000
+300,000
+200,000
+100,000
+0
+0 100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400
+Number of items
+ Revenues     Fixed costs     Variable costs     Total costs
+Break-even point: Revenues = total costs
+Euros

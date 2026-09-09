@@ -1,0 +1,122 @@
+--- book p.55 / pdf 53 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 55
+6.2.1 Profit and loss account
+The profit and loss account is needed to determine whether a business has made a profit 
+or a loss over a certain period of time. While the balance sheet contains the assets, liabili-
+ties and equity as of a certain day, all the revenues, costs and expenses that occur during 
+a time period (e.g. a year) are summarised in the profit and loss account, which is also 
+called income statement. 
+Revenues are the income (usually cash or accounts receivable) that is generated from sell-
+ing goods or services to customers. Costs consist of resources that are consumed in order 
+to produce the goods or provide the services.
+If the revenues exceed the costs and expenses, the company has a profit. If the company’s 
+costs and expenses are higher than the revenue, it suffers a loss. Let’s assume that the 
+2018 income statement of T&S Computer Services OG contains 
+ ∎ sales revenue of €400,000 and 
+ ∎ costs and expenses (like material, wages, rent, energy, depreciation*) and other ex-
+penses) of €310,000, then the difference would be a profit of €90,000.
+*) Depreciation
+Fixed assets are used again and again over a longer period of time. Tina’s car for example 
+will be used for at least five more years. Steve’s new computer will be used for three years. 
+During that time, the value of these assets decreases ; it is “used up”. Recognising this 
+effect is called depreciation. Without depreciation, the values of assets that are shown in 
+the accounts would be inaccurate. The value of the assets in the balance sheet would be 
+overstated and the financial information given would be flawed.
+Steve paid 2,100 euros for his computer and will use it for around three years (so three 
+years is the “expected useful life” of the computer). Therefore, depreciation equals 700 
+euros per year (using the straight line method to calculate depreciation). After the first year, 
+the book value of this computer will be 1,400 euros (2,100 − 700) in the balance sheet, 700 
+euros after the second year and 0 euros after the third year.
+AT&S describes its depreciation method in the annual report: “From the time of their avail-
+ability for use, the assets are depreciated on a straight line basis over their expected useful 
+lives. (…) Land is not subject to depreciation. Scheduled depreciation is based on the fol-
+lowing useful lives: plants and buildings 10-50 years, machinery and technical equipment 
+4-15 years, tools, fixtures, furniture and office equipment 3-15 years.”
+As depreciation represents an asset’s loss in value, it is recognised as an expense included 
+in the income statement that reduces the (gross) profit, just like other expenses (wages for 
+administration, staff, rent, energy, insurance) do. The main difference to other expenses like 
+energy, heating or wages is the fact that depreciation does not cause an actual payment.
+Profits and losses cannot only be seen in the income statement
+At the end of 2018, Tina and Steve draw up another balance sheet to see how their assets 
+and capital structure have changed over the first year of business. Due to depreciation, the 
+loss of value of their fixed assets, their initial office equipment and the car have a lower 
+value than one year before. As they have bought some more office equipment over the year, 
+the position has risen to 42,000 euros. Their inventory has increased, but they try to keep 
+
+--- book p.56 / pdf 54 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS56
+Accounting – keeping record of business transactions
+their inventory low because computers need a lot of space and lose their value very quick-
+ly. Some customers still owe them money (accounts receivables), just like they have not 
+paid all their dues yet (trade credit or accounts payables). They were able to repay part of 
+their bank loan. 
+Assets (euros) Liabilities and equity (euros)
+Office equipment including 
+computers 42,000 Owner’s equity 114,000
+Van 40,000
+Car 6,000
+Computers in stock to be sold 
+again 18,000 Bank loan 12,500
+Receivables 12,500 Trade credit / payables 15,000
+Cash and bank deposit 23,000
+141,500 141,500
+Equity has increased significantly, due to the profit that they made. To learn more about the 
+performance of a business (profit or loss), you can either look at the income statement or 
+at the development of (owner’s) equity. It is important to note that any profit increases and 
+any loss decreases equity.
+6.2.2 Cash flow statement
+A cash flow statement is another component of the financial statement of a business. It 
+reveals the flows of cash into and out of the business during the year. This is important 
+information because cash is needed for the operating activities of the business and for in-
+vesting. But please note that a positive cash flow is not identical with a profit.
+At the beginning of 2018, Tina and Steve had 3,500 euros held in cash positions (including 
+cash in bank deposits) and at the end of 2014, they had 23,000 euros in cash. This develop-
+ment results in a total cash flow of 19,500 euros (23,000 – 3,500). This means that at the 
+end of the year, there is more cash available, so cash must have flowed into the business. 
+To learn more about a cash flow’s origin, a cash flow statement is prepared that differenti-
+ates between changes in cash positions in
+ ∎ operations (these are the core activities of a business, e.g. manufacturing PCBs),
+ ∎ investments and
+ ∎ financing activities.
+Cash flow from operations shows how well a business generates cash with its core 
+business. Therefore, it is the most important part of the cash flow statement. This figure 
+should be positive, showing that the business is doing well. If a customer pays a receivable 
+for example, the payment represents cash from operations. Buying raw material or reduc-
+ing trade credit are activities recorded as cash flow from operations.
+Cash flow from investments shows how cash is spent for long-term investments (e.g. the 
+purchase of a plant or office equipment) or generated by the sale of such assets. A negative 
+
+--- book p.57 / pdf 55 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 57
+figure does not necessarily indicate a problem. It rather indicates that the business has 
+invested in some assets. Inflows of cash from investments could only come from the sale 
+of assets or some investments held.
+Financing activities refer to cash that is flowing in from investors or creditors and flowing 
+out for paying interest, dividends or repaying debt. At the bottom of the cash flow state-
+ment the net change in cash and equivalents can be found. If this figure is positive, then 
+the business has had a positive cash flow that can be used for further activities like making 
+investments, expanding the business or for repaying debt.
+The cash flow statement of AT&S shows an (overall) positive picture; cash flow has in-
+creased over the past year. Cash flow from operating activities has been positive and a bit 
+higher in 2017/18 than in 2016/17. Due to investments, cash flow from investing activities 
+was negative in both years but – at least partly – counterbalanced by cash flow from fi-
+nancing activities and from operating activities. All in all, cash flow is 67.2 million euros 
+(270.7 – 203.5) for 2017/18.
+Table 5. Example of a cash flow statement (source: AT&S annual report 2017/18)
+Please note: not all components of this cash flow statement have been explained in the text.
+6.3 What can be learnt from reading a balance sheet and an 
+income statement
+Balance sheets and income statements should always be read with some caution. A lot 
+depends on the valuation of assets and businesses are not completely free to determine 
+the values of their assets. Depreciation also decreases the value of assets in the balance 
+sheet that might actually have a higher value.
+Nevertheless, a lot can be learnt by taking a closer look at the balance sheet and the in-
+come statement of a business. It is of particular interest to see how some positions have 
+developed over time as well as in comparison to other competitors in the market. This al-
+lows us to answer questions like:
+Question 1: Which assets does the business have – is there a higher percentage of current 
+or non-current assets and is this typical of that type of business?
+Question 2: How has equity developed and how have the assets been financed? Is there a 
+higher percentage of long-term or short-term liabilities? 
+Question 3: Is there a balance between non-current assets and long-term financial re-
+sources? 

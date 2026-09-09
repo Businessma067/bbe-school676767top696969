@@ -1,0 +1,39 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS52
+Accounting – keeping record of business transactions
+6 Accounting – keeping record 
+of business transactions
+During their first year in business, Tina and Steve buy and sell a lot of computers, they sup-
+port their customers by solving their computer problems, and they hire two assistants who 
+deal with the customers and other stakeholders, take care of the company’s website and 
+do all the paperwork and the bookkeeping. This means that a lot of business transactions 
+like purchases, sales, borrowing and lending money etc. take place and businesses need 
+to keep accurate records of these business transactions. Bookkeepers are responsible 
+for recording these transactions that are always verified by a document (e.g. an invoice or 
+a receipt). The aim of recording all transactions is to generate information on the financial 
+status of the business. Statements that provide this information are called accounts.
+6.1 What a balance sheet is
+Tina and Steve have started their business, using computers that they already had as well 
+as a new one. They have also purchased some equipment and office furniture and use Ti-
+na’s car to drive to their customers. Computers, office equipment and cars – these things 
+are all assets, “things” that the business owns and that are used for the business. Tina and 
+Steve make a list with all the assets of their business and their values in euros (on the left 
+side of the list) and compare it with the amount of money that had to be borrowed from the 
+bank (on the right side of the list) to pay for some of their purchases:
+Assets euros euros
+Office equipment including computers 25,000
+Car 8,000
+Inventory: computers in stock to be sold again 12,500 Bank loan 25,000
+Cash and bank deposit 3,500
+49,000
+Please note that there are two types of computers in the list: computers that are used in 
+the office and are not for sale, and other computers that were bought to be resold (inven-
+tory). This difference is important because they are different types of assets.
+Only part of the assets was financed by using money from the bank loan. This is due to the 
+fact that Tina uses her own car exclusively for the company and Steve uses computers that 
+he already owned. They also had some money of their own which they used for setting up 
+the business. Therefore, the total amount of the bank loan (which is a liability, i.e. money 
+that is owed to someone else) is lower than the total amount of the assets. The difference 
+between these two positions is the amount that Tina and Steve were able to finance them-
+selves; it is called owner’s equity. It is the proportion of the assets that was NOT financed 
+by debt. If we add this position to Tina’s and Steve’s list, their list becomes a balance 
+sheet:

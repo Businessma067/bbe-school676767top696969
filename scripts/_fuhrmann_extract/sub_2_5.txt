@@ -1,0 +1,44 @@
+--- book p.10 / pdf 8 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS10
+Basic economic concepts
+per year in such a job, this 35,000 euros would be their opportunity cost per person if they 
+decided to set up their own business. If they took these jobs, they would also have oppor-
+tunity cost: the amount of money that they could have earned with their business. Of course, 
+it would be difficult to tell how much that could have been. Opportunity cost is the (finan-
+cial) benefit of the (next best) alternative that is lost or given up in order to choose or 
+achieve something else.
+2.3 Economics as the study of economic decisions
+Economics is the study of how individuals (as part of private households) and busi-
+nesses make decisions to satisfy their needs and wants with limited resources.  It 
+comprises a number of scientific fields and branches, two of which are microeconomics 
+and macroeconomics. Microeconomics focuses on the behaviour and decisions of indi-
+vidual households and businesses and how they interact. A question in microeconomics 
+could focus on the change in demand of electric cars if buyers of electric cars receive a 
+bonus. In contrast, macroeconomics looks at the bigger picture and deals with questions 
+concerning the overall economy (of one country for example) and aggregate quantities. 
+Among other phenomena, it studies economic growth, unemployment, interest rates, price 
+levels and inflation. As a science, economics strives to explain the observed phenomena 
+and also to make predictions, both based on various theories.
+2.4 Exchanging creates a circular flow and division of labour
+While households mainly offer labour and receive wages, businesses offer goods and ser-
+vices that are bought by households and other businesses and receive money for what they 
+sell (see figure 1). This is how a circular flow of goods, services and money is created. As 
+money is used as a means of exchange that is widely used and accepted, these exchanges 
+can be carried out relatively easily. Without money, people would have to barter, which is 
+much more complicated. If you want to acquire a good from another person, but do not 
+have what this person wants in return, there will be no exchange. Money allows for a 
+ ∎ flexibility of exchange (first function: medium of exchange). 
+It also allows us to express the 
+ ∎ value of things (second function: unit of account) and to 
+ ∎ store value over time (third function: store of value).
+Money fulfils these functions best if its value remains pretty stable over time. However, if 
+there is a general rise in prices of goods and services, you can only buy a lower amount 
+of goods and services, which means that the purchasing power of money (i.e. its value) 
+declines. 
+Price indexes allow us to measure the extent of this general increase in prices, a phenom-
+enon that is also called inflation. Low inflation rates can be tolerated. The European Cen-
+tral Bank considers an inflation rate of slightly below 2% per year most beneficial to the 
+economy. But if inflation rates are considerably higher, the purchasing power of money 
+decreases considerably. As the amount of goods and services that can be bought for a 
+certain amount of money continuously decreases, people lose their trust in money and try 
+to get rid of it. 

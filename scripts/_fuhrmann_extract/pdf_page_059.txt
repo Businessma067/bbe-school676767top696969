@@ -1,0 +1,42 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 61
+6.5 Analysis of financial statements
+The information given in the balance sheet and in the income statement can be used to 
+calculate figures and ratios in order to learn more, e.g. about the
+ ∎ liquidity (or the solvency) of a business,
+ ∎ profitability, which refers to the relationship of profit to the capital employed or to 
+the turnover,
+ ∎ financial efficiency, which deals with the question how effectively a business has 
+employed its resources and
+ ∎ financial structure, which can be evaluated on the basis of equity ratio (equity in per 
+cent of total assets) and debt ratio (total debt in per cent of total assets).
+Please note: Since these figures and ratios can vary a lot from one industry to another, 
+some comparisons would not be very meaningful. Comparisons are meaningful for differ-
+ent businesses within the same industry or sector or for one single business over time 
+(comparisons of several different financial years).
+There might also be different ways to calculate some of these ratios, so it is always impor-
+tant to know how ratios were calculated if you want to make comparisons.
+6.5.1 Liquidity
+The term liquidity refers to the ability of a business to pay its bills and repay its debts on 
+time. One approach to evaluate liquidity is to calculate the working capital of a business. 
+Working capital (or circulating capital) indicates whether or not a business is able to pay its 
+day-to-day bills such as electricity, rent and wages and buy components for its production. 
+Therefore, the focus is on short-term assets and liabilities.
+Working capital = current assets – current liabilities
+The calculation of working capital is based on the idea that current assets of a business are 
+relatively liquid (meaning that they can be easily turned into cash). Current assets comprise 
+cash itself, inventory and accounts receivable. If all the current assets are turned into cash 
+to repay current liabilities, working capital is the amount that is left over after all current 
+debts have been paid. 
+Working capital for AT&S in the financial year 2017/18:
+586,172 – 303,772 = 282,400 (thousand euros)
+Working capital should be positive, meaning that current assets should be higher than cur-
+rent liabilities. If they are not, this would indicate that part of the non-current assets was 
+financed by short-term liabilities, which might cause problems when these liabilities need 
+to be repaid. A low level of working capital might also indicate that there is not enough cash 
+or the business has borrowed too much through trade credit. Businesses that need a lot of 
+inventory (like retailers) are likely to have higher levels of working capital than businesses 
+that provide services (like a hairdresser or a business coach).
+A high level of inventory can be important to a business in order to satisfy customers’ needs 
+very quickly, but keeping inventories also has downsides for the business. First of all, it 
+takes space, but it is also risky. Unused inventory ties up money in a business; it might be-
+come obsolete and lose its value.

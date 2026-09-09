@@ -1,0 +1,41 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 49
+For other products, the situation might be different. Let’s assume Steve and Tina have de-
+veloped a computer program that optimises data storage and Internet security. If they sold 
+a licence for that software for 60 euros they would be able to sell 90 licences per month. A 
+€10 price reduction (−17%) would only increase the quantity of sold licences by 11% (and 
+revenues would actually decrease), so a price reduction might not make much sense. In-
+elastic demand is often found with products that people need anyway and buy more or less 
+regardless of the price. Salt, fuel or medicine are classic examples of such products.
+Let’s have a closer look at the example in figure 23:
+ ∎ Price reduction €10; €60 initial price = 17% price reduction.
+ ∎ Increase in quantity demanded of 10; initial quantity demanded 90 = 11% increase 
+in demand.
+ ∎ In this case, the price elasticity of demand (again, as measured from the initial 
+point on the demand curve) amounts to +11 / −17 = −0.65. The demand is inelastic 
+(the ratio 0.65 is less than 1) because the change in demand (+11%) is lower than 
+the price adjustment (17%).
+ ∎ Revenues decrease by 400 euros.
+Figure 23. Price elasticity of 
+demand: example of inelastic 
+demand
+Elasticity of demand does not only depend on prices and price change. Demand is more in-
+elastic if a product cannot be easily substituted by other products. It is also important to note 
+that elasticity in the short run (up to one year) might differ from elasticity in the long run. In 
+the long run, demand for some products may be elastic (even if it is not in the short run) be-
+cause it takes people some time to change their habits and find substitutes for products that 
+have become more expensive (e.g. taking the train instead of driving by car in times of high 
+fuel prices). At the same time, the opposite may be true for other products that are durable 
+and can be stocked so people would quickly buy them when prices have dropped.
+90 100 120
+€ 60
+€ 50
+€ 40
+demand (for software licences)
+Price elasticity of demand
+Price
+revenue
+= € 5,400
+revenue
+= € 5,000
+revenue
+= € 4,800

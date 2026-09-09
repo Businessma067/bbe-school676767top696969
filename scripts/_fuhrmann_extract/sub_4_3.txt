@@ -1,0 +1,231 @@
+--- book p.23 / pdf 21 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 23
+4 Forms of business ownership and 
+sources of finance
+As soon as businesses are set up and exchange goods and services with customers, the 
+customers might wonder who – from a legal point of view – they are actually dealing with: 
+the business itself or the people who founded and/or who run it. The answer to this ques-
+tion is of particular interest in the case of closing a contract, investing in the business or 
+legal troubles: who owns the business? Who runs it? Who is the contracting party and who 
+is to be sued in a litigation? Is the business a legal entity of its own or is the business com-
+pletely identical with the owner(s) of the business? The answer depends on the legal struc-
+ture that has been chosen for the business, something that has implications for a number 
+of important questions:
+ ∎ Who owns the business? Is this a single person or more than one? Please note that a 
+business can also be owned by another business.
+ ∎ Does the owner / do the owners also run the business? Or is (are) there (a) different 
+person(s) who manage(s) the business?
+ ∎ Who is liable for the debts and obligations of the business? And is this liability limited 
+or unlimited?
+ ∎ How can financial resources be raised for the business?
+These questions are not only important for those who do business with a company. They 
+are also of utmost importance for the founders and owners of a company. Some owners 
+might be interested in running the business themselves and fulfil important management 
+tasks such as developing objectives for the business, identifying measures to achieve 
+them, planning and organising business activities as well as monitoring and steering the 
+business. Others just wish to invest their money and own (a part of) the business but want 
+other people to run the business and make the management decisions.
+Finance is important because businesses need money for their activities. In the beginning, 
+money is needed to get started, to meet all initial expenditures like buying assets (equip-
+ment, machinery, vehicles and inventory for example) and covering the expenses like pay-
+ing the rent, energy and insurance. Most of these costs occur repeatedly. Depending on 
+their legal structure, some businesses have to meet capital requirements. Later, business-
+es need money to keep going and – possibly – to expand and grow. Money flowing in from 
+sales can be used for that purpose but will possibly not be sufficient and will not always be 
+available right at the moment and in the amount that is needed for financing all expendi-
+tures. Businesses usually need some additional sources of finance. The legal structure of 
+a business has an impact on its financial options. Therefore, businesses often change 
+their legal structure in order to gain access to further financial options.
+Although the different forms of legal structure as well as their denomination vary among 
+countries, the basic forms of legal structure are quite similar in many countries of the world. 
+
+--- book p.24 / pdf 22 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS24
+Forms of business ownership and sources of finance
+4.1 Sole proprietorship / sole traders
+A sole proprietorship is a business that is owned by one person who also manages and runs 
+the business. It is easy to establish – especially for small businesses – because there are no 
+financial requirements to start this kind of business. The business is not a legal entity of its 
+own, so the profits are directly reported on the business owner’s personal income tax state-
+ment. This means that the owner pays tax on the profits that are earned from the business. 
+The management of the business largely depends on the sole proprietor. On the one hand, 
+he/she can make all management decisions and does not necessarily have to consider 
+other opinions. On the other, continuity problems may occur if the sole proprietor wants to 
+retire or suffers a (long-term) illness. If the sole proprietor needs support, he/she can hire 
+personnel. However, it will always be his/her task to make the most important manage-
+ment decisions and take all the risk. 
+Available financial funds for sole proprietors
+Financial funds of the business mainly depend on the financial capabilities of the sole pro-
+prietor. If he/she lacks financial funds, it will be very difficult to set up the business. Most 
+sole proprietors invest their own savings in their business. If they need some extra money, 
+they can try to get it from investors and/or from banks. The owner’s investment and finan-
+cial funds from other investors and creditors are external sources of finance.
+Banks and other financial institutions offer different kinds of credit, short-term (duration 
+less than a year) as well as long-term. The creditor, e.g. the bank, provides money for a 
+certain time period which needs to be repaid according to the agreement, usually with a 
+rate of return (the interest). Creditors usually ask for assets that can serve as collateral, 
+especially for long-term credit. Especially long-term bank loans are often based on land 
+and property as collateral (mortgage). 
+The most common forms of short-term credit are a bank overdraft and trade credit. A 
+bank overdraft is a very flexible instrument, because once the bank account has been 
+opened, the sole proprietor can withdraw money from the account when it is needed. Inter-
+est is only paid when the account is overdrawn. Trade credit is based on an agreement with 
+the supplier. Usually a business does not have to pay all purchases immediately but is 
+provided a trade credit period. All kinds of credit – short-term as well as long-term – are 
+liabilities for the sole proprietor. 
+The sole proprietor is liable for all debts and obligations so his/her private assets are also 
+at stake if the business fails and debts need to be repaid and/or the private assets served 
+as collateral.
+As soon as the business starts operating and generates revenues, internal sources of fi-
+nance can possibly be used. If revenues exceed expenses, the business makes a profit 
+that can be retained and reinvested in the business (unless the profit is taken by the sole 
+proprietor). Another option is the sale of assets that are not needed anymore. Internal 
+sources of finance are very important to a business because no financial charges (e.g. inter-
+est) have to be paid for this sort of funds.
+A sole proprietorship is not the appropriate legal structure for Tina and Steve. They want to 
+share the tasks and the risk and have equal rights and responsibilities. Their idea of their 
+own business is best realised as a partnership.
+
+--- book p.25 / pdf 23 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 25
+4.2 Partnership
+If two or more persons jointly found a business, this business is called a partnership. They 
+need to set up a partnership agreement in order to settle the rights and responsibilities as 
+well as the division of profits and losses. In a general partnership all partners have equal 
+rights, liabilities and responsibilities. They can share the tasks and specialise. In difficult 
+situations they can exchange their ideas and (maybe) make better decisions. In Austria, 
+this form of business ownership is called “Offene Gesellschaft”, or “OG” in short. Tina and 
+Steve’s business is located in Austria and they choose to found such an “Offene Gesell-
+schaft”, because they intend to be equally involved in the management of the business and 
+share the financial risk. Its firm name is T&S Computer Services OG . They will (have to) 
+set up a partnership agreement in which they specify each partner’s percentage of owner-
+ship, the division of profit and loss, terms of the partnership, rights and responsibilities, 
+decision making and resolving disputes, and other details of the partnership.
+Available financial funds for partnerships
+In general, the financial aspects of partnerships are similar to those of sole proprietors. 
+However, two (or more) partners should possibly be able to invest more savings and raise 
+more financial funds than a sole proprietor. It also seems plausible that they can offer more 
+(private) assets as collateral for getting a loan. Each of the partners is solely liable for all 
+debts of the business (unlimited liability).
+In a limited partnership there is at least one partner who is not involved in the management 
+of the business and this person’s liability is limited to the amount of money that he or she 
+has contributed to the business. This form of business ownership is called “Kommanditge-
+sellschaft”, or “KG” in short, in Austria.
+4.3 Corporations
+Corporations are businesses that are legal entities of their own , which means that they 
+have the same rights and obligations as people: legal persons can – just like natural per-
+sons – own land and property, hire people, close contracts, sue and be sued. The people 
+who found the corporation and own a share of the business need not be involved in the 
+management of the business, and the managers need not own a share of the business. 
+Corporations are more difficult to set up, but the shareholders’ liability is usually limited to 
+the amount of money they invested when buying the shares.
+4.3.1 Shareholders are not (necessarily) managers of the business
+So if shareholders only provide the money for share capital but are neither obliged nor en-
+titled to manage the company, who does? The corporation is managed by the board of 
+directors, persons who are elected by the shareholders to make all major business deci-
+sions and to represent the shareholders. 
+The highest-ranking manager of this board is called the Chief Executive Officer (CEO). Other 
+board members are the Chief Financial Officer (CFO), Chief Operating Officer (COO), Chief 
+Information Officer (CIO) or Chief Marketing Officer (CMO). The board of directors of AT&S 
+consists of three persons with different tasks and responsibilities (see below).
+
+--- book p.26 / pdf 24 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS26
+Forms of business ownership and sources of finance
+a) Andreas Gerstenmayer is Chairman of the Management Board (CEO) 
+and responsible for
+ ∎ Sales/marketing
+ ∎ Investor Relations/Public Relations/
+Internal Communication
+ ∎ Purchasing
+ ∎ Business Development  Strategy
+ ∎ Compliance
+b) Monika Stoisser-Göhring is Deputy Chairwoman of the Management Board 
+and as SFO responsible for
+ ∎ Finance and Accounting
+ ∎ Controlling
+ ∎ Human Resources incl. CSR
+ ∎ Legal & Internal Audit
+ ∎ IT & Tools
+c) Heinz Moitzi is COO and responsible for:
+ ∎ Research & Development (R&D)
+ ∎ Maintenance
+ ∎ Production
+ ∎ Quality Assurance
+ ∎ Supply and Disposal
+ ∎ Quality Management
+ ∎ Business Process Excellence
+ ∎ Environment & Sustainability
+ ∎ Safety
+Source: AT&S annual report 2017/18. The board of directors of AT&S, p. 11.
+4.3.2 Available financial funds for corporations
+Corporations usually have more options to raise financial funds than sole proprietors and 
+partnerships. Their financial funds mainly comprise share capital as well as loans and 
+credit. 
+Share capital
+The capital of a corporation is divided into shares, which is why it is called share capital. If 
+share capital equals 1,000,000 euros and is divided by 100,000 shares, each share (also 
+called stock) represents 10 euros or 0.001 per cent of the share capital. Persons who buy 
+shares become shareholders. Shares can be bought either at the time they are initially is-
+sued by the corporation or later on from some other shareholder who sells his shares. If all 
+100,000 shares are actually sold, the corporation gains 1,000,000 euros as share capital. 
+This example shows that huge amounts of money can be raised from the sale of shares. 
+The share capital of AT&S for example equals 141,846,000 euros. Share capital is usually 
+not redeemed by the company. It is long-term capital or even permanent capital.
+A corporation’s stock can but does not have to be listed on a stock market or stock ex-
+change. A stock exchange is a financial market, regulated by the authorities, where shares 
+and other securities (e.g. bonds) can be easily bought and sold by lots of people and busi-
+nesses. The corporations that want their shares to be listed have to comply with certain 
+rules and fulfil listing requirements. The shares are introduced on the stock exchange at a 
+certain price (this introduction is also called initial public offering (IPO)) and then the prices 
+are determined by demand and supply. According to the laws of supply and demand, usu-
+ally the prices go up if demand for shares is high and vice versa. There are a lot of reasons 
+why demand for shares of a corporation can change: rising demand can be due to people’s 
+expectations that the business is doing well, that it will make profits in the (near) future, 
+
+--- book p.27 / pdf 25 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 27
+that it will increase market share and/or successfully introduce a new product. Demand for 
+shares is also influenced by economic indicators like economic growth, interest rates and 
+inflation. Usually there is higher demand for shares when the economy is thriving (because 
+many people have money to invest), with comparatively higher rates of inflation (because 
+share prices would also increase) and comparatively low interest rates (because high inter-
+est rates would make other investments more attractive). Please note that an increase in 
+share prices after they have been issued does not have any additional financing effect for 
+the issuing corporation. The beneficiaries of this increase are the shareholders only.
+Among the biggest and most well-known stock markets of the world are the New York 
+Stock Exchange (NYSE), Nasdaq Inc. in New York, London Stock Exchange (LSE), Tokyo 
+Stock Exchange, Hong Kong Exchanges and Clearing, and Shanghai Stock Exchange. Apart 
+from the LSE, the most important stock exchanges in Europe are the Deutsche Börse  in 
+Frankfurt, the NYSE Euronext (Europe), the SIX Swiss Exchange (Geneva, Basel and Zurich), 
+Borsa Italiana in Milan, and the Spanish Exchange.
+There are many reasons why people invest in shares. The most important reasons are: 
+ ∎ The intent to provide money for a business they believe in and want to support finan-
+cially.
+ ∎ Annual income: The wish to get dividends in return; dividends are (part of the) profits 
+of the corporation that are paid to the shareholders. There is no obligation for a cor-
+poration to do so, but if no dividends are paid over a longer period of time, the shares 
+might become unattractive for investors and decreasing demand might lead to falling 
+share prices.
+ ∎ Capital growth: The hope that share prices will rise and the shares can be sold at a 
+higher price than they were bought at.
+ ∎ The wish to go to the annual stockholders’ meeting and have the chance to vote and 
+influence some business decisions (because common stock includes the right to vote 
+at the stockholders’ meeting). Shareholders of preferred shares of stock do not have 
+this right but earn a higher dividend.
+ ∎ That an investment in shares represents an investment in real values  that will not 
+lose its value so easily even in times of high inflation.
+In some English-speaking countries, the public limited company (PLC) is one type of such 
+a corporation. The term PLC is more commonly used in the United Kingdom and some Com-
+monwealth countries. In the USA and other countries, you would rather find the denomina-
+tion “Inc.”, which stands for “Incorporated”, or “Ltd” for “Limited”. In German-speaking 
+countries this form of legal structure for a business is called “Aktiengesellschaft” (abbrevi-
+ated AG) as “Aktien” means “shares” and “Gesellschaft” stands for “corporation”. The min-
+imum capital requirement for founding an AG is 70,000 euros, which is the main reason why 
+Tina and Steve do not consider an AG the appropriate legal structure for their business.
+Another type of corporation is the European Company (SE, société européenne). It is sim-
+ilar to an “Aktiengesellschaft” or PLC governed by Community law directly applicable in all 
+– and only in – member states of the European Union.
+AT&S is an “Aktiengesellschaft” according to Austrian law, and the shares were initially 
+listed on the Neuer Markt of the Frankfurt Stock Exchange in July 1999. In spring 2008, 
+AT&S decided to switch to the home stock exchange in Vienna. AT&S has been quoted in 

@@ -1,0 +1,40 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS38
+Marketing
+Market share refers to the proportion (percentage) of a certain market that is held by a busi-
+ness or its products or brands. It is calculated by dividing the sales of a business by the 
+amount of total sales in the market.
+Absolute market share =  
+sales volume of one business (or one brand) / market volume
+Example: if the sales volume of one business is 150,000 euros and the whole market vol-
+ume is 1,000,000 euros, the absolute market share of the business will be 15%.
+Absolute market share is important information for the business itself, but also for (poten-
+tial) investors. However, this figure does not tell a lot about the other competitors in the 
+market. Relative market share shows how a business (or one of its brands) is doing in terms 
+of its largest competitor. This figure adds context to calculating the market share:
+Relative market share =  
+market share of a business (or a brand) / largest competitor’s market share
+Example continued: if the largest competitor has a market share of 30%, then the relative 
+market share will be 15/30 = 0.5
+Volume Potential
+All businesses 
+in the market
+Market Volume 
+Sales volume of all firms 
+in the market
+Market Potential 
+ Market volume 
++ Potential customers
+One business
+Sales Volume 
+Sales volume 
+of one firm
+Sales Potential 
+ Sales volume 
++ Gains from
+ competitors
++ Share in the increase
+ of market potential
+Figure 13. Market and sales volume versus market and sales potential
+Based  on the assumptions that there are potential customers in the market that could be 
+won, the market potential exceeds market volume, and the sales potential of a business 
+exceeds its current sales volume.  

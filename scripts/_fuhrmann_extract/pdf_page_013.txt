@@ -1,0 +1,44 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 15
+In the real world, other factors than price also affect demand and supply.
+Demand is also affected by: 
+ ∎ Changes in income: If income increases, people can afford more (and more expen-
+sive) computer services and – all other things held constant – demand would increase 
+(so the demand curve would shift to the right). Similarly, if income decreased, people 
+would not be able to spend so much money on technical support anymore, and conse-
+quently, demand would decrease (and the demand curve would shift to the left).
+ ∎ Changes in consumer preferences: More and more people might want to have ad-
+ditional technical support, so demand would increase. In a different scenario, people 
+could possibly like to have new and faster computers, so demand for used computers 
+would decrease (regardless of the price).
+ ∎ Complementary goods: If an additional service is offered that is related to the com-
+puter support service and that people are highly interested in, demand for computer 
+services would be very likely to increase.
+ ∎ The availability of substitute goods:  If people found a service that perfectly sub-
+stitutes computer support services, the demand for computer support service offers 
+would also decrease. This effect will also be discussed in chapter 5, Marketing.
+Supply is also affected by:
+ ∎ Number of suppliers: The more profitable a market is considered to be, the more sup-
+pliers will enter this market. As the number of suppliers increases, supply will increase 
+(the supply curve would shift to the right), until supply is so high that prices fall again 
+and no more additional suppliers enter the market.
+ ∎ Technological changes: These might enable more people to provide computer ser-
+vices and enter the market.
+ ∎ Changes in resource prices: If the costs for offering the service decreased but prices 
+for the services stayed the same, more providers would be willinwg to enter the market. 
+ ∎ Price expectations: If providers think that prices in the computer market could fall, 
+they will probably think of some other field of business to work in and reduce their sup-
+ply in their original field of business.
+Figure 4. Supply and 
+demand intersect at the 
+market price (price in euros, 
+quantity in 1,000 hours) 
+250
+200
+150
+100
+50
+0
+Quantity
+Supply and demand
+Price
+0 1 02 03 04 05 06 07 08 09 0 1 0 0

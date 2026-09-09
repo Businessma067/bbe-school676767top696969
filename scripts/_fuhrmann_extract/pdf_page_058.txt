@@ -1,0 +1,45 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS60
+Accounting – keeping record of business transactions
+Please note: 
+Cost of sales (COS) (or cost of goods sold (COGS)) are the costs that are directly tied to the 
+production of the products like the cost of labour (that is directly linked to production), ma-
+terials and manufacturing overhead. For example, the COGS for a manufacturer of PCBs 
+includes the material costs for the elements that are used for making PCBs and the labour 
+costs for putting the PCBs together. Administration costs, the cost of shipping the PCBs to 
+customers or the cost of sales personnel is NOT included in COGS.
+Gross profit reveals the earnings of a business after deducting the direct costs of producing 
+the goods (without operating expenses). Therefore, it focuses on the financial performance 
+of revenue from production only. There is another metric that allows us to analyse operating 
+performance while including operating expenses: earnings before interest, taxes, depre-
+ciation and amortisation (EBITDA). By deducting depreciation and amortisation, the next 
+metric for earnings of a business is gained: earnings before interest and taxes (EBIT).
+In accounting, expenditures and expenses are not the same. While expenditures are pay-
+ments that are either made to purchase (non-current as well as current) assets, expenses are 
+costs that have expired or were “used up” in order to produce the goods or provide the ser-
+vices that were sold. For example, COGS are considered to be expenses, and so are other 
+expenses such as salaries, marketing costs, interest, insurance, rent, and so on.
+Answer to question 4: Revenues have increased by about 176,937,000 euros, which is 
+an increase of 21.7% compared to revenues of the financial year 2016/17. Most inter-
+estingly, the cost of sales has only increased by around 9.1% (69,367 / 760,172 * 100).
+Answer to question 5: Gross profit has significantly increased (actually, it has more 
+than tripled). The operating result has improved even more; it has reached almost 14 
+times the amount of the previous financial year.
+6.4 Use of these accounts – types of accounting
+These accounts are needed for a number of stakeholders who are interested in the financial 
+situation of a business. Some of them are internal users like the owners of the business, the 
+managers and the employees. They are all interested to learn if the business is thriving. Man-
+agers need to make decisions based on financial information (like “Do we need to cut costs in 
+marketing?”) and owners will want to know if their investment is worth the risk (like “How much 
+profit do I get in return for investing and risking my money?”). There are also external users of 
+financial information like tax authorities, suppliers, competitors, investors and the media. 
+For some companies it is mandatory to have their accounts checked for authenticity by an 
+independent firm of accountants, an auditing company. This task is called auditing. The 
+result of the auditing process can be read in the annual report.
+Managerial accounting focuses on providing information for the management of the busi-
+ness. Based on the data gained from managerial accounting, managers are able to make 
+decisions like where to cut costs and how to calculate prices. Of course, managers are also 
+interested in financial accounting, something that is also of interest for decision makers 
+outside a business like tax authorities or banks. Information gained from financial account-
+ing like the balance sheet and the income statement can be found in the annual reports for 
+example. Many large businesses also publish selected information on their financials on 
+their websites.

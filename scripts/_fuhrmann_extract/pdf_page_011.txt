@@ -1,0 +1,45 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 13
+2.6 Supply and demand: Households, businesses 
+and the government meet in the market
+In a market economy, goods and services are offered and sold on/at markets. Buyers and 
+sellers meet to communicate the conditions of exchanging goods and services and thus 
+form a market. A market can be an actual place, like a flower market in the city of Rome or 
+a flea market in a small village, but it can also be a virtual place like a market on the Inter-
+net (e.g. eBay, Amazon). Buying and selling take place in shops, but also on the phone. 
+Therefore, there are many different markets, also depending on what is offered: consumer 
+goods markets, labour markets (supply and demand for work), housing markets, money 
+markets, capital markets, commodity markets (supply and demand for raw materials).
+2.6.1 The law of supply 
+Supply (of a certain good or service) is the quantity of that good or service that is 
+available for purchase. Basically, this quantity mainly depends on the businesses’ pro-
+duction capacities and the available resources, but also on the price that can be charged 
+for the good or the service. The higher this price is, the higher the supply will be. All 
+other things held constant (“ceteris paribus”), this relationship is true for most goods and 
+services in the economy (law of supply). 
+In Tina’s and Steve’s case, the quantity of hours that they (as well as other providers of 
+similar computer support services) are willing to work depends on the price they can charge 
+and that will be paid. It is tiring work and the providers of this service need to be very 
+skilled. If the price is low, let’s say below 30 euros per hour for example, no provider would 
+offer that service. The opportunity cost would be too high: as the providers are very skilled, 
+they could earn more money by doing something else (that is also less tiring), so they would 
+leave this market and offer another kind of service. The higher the price, the higher the 
+number of hours that would be offered. More potential providers would enter the market 
+and would be willing to offer a higher number of hours of their service. 
+The shape of the supply curve can also be explained by the concept of increasing marginal 
+costs faced by many industries and businesses. Marginal cost is the cost of producing an 
+additional unit of a good or by providing an additional unit of a service. As output increases 
+and exceeds a certain level it will become more and more costly to produce; businesses 
+need to build higher capacities (machinery, personnel) so marginal costs would rise. Only 
+250
+200
+150
+100
+50
+0
+0 5 10 15 20 25 30 35 40 45
+Quantity
+Supply per week
+Price
+Figure 2. The supply curve 
+(price in euros, quantity in 
+1,000 hours)

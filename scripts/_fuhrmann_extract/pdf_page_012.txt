@@ -1,0 +1,44 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS14
+Basic economic concepts
+if the price level increases and exceeds (or at least equals) marginal costs would busi-
+nesses be willing to produce and supply a higher amount.
+Figure 2 shows the relationship between prices and supply in the market for computer sup-
+port services (e.g. within a country).
+2.6.2 The law of demand
+Demand, on the other hand, is the quantity of a good or service that customers are 
+willing and able to buy. Usually the higher the price is, the lower demand will be. The 
+more Tina and Steve as well as other providers charge for their technical computer support 
+service per hour, the more demand will decrease (because more and more people cannot 
+afford such high prices or are not willing to pay such high prices for that service and will 
+instead look for other ways to get help with their computer problems). People’s willingness 
+to pay a certain price is related to the utility or the level of satisfaction the people get from 
+consuming the service. Figure 3 gives you an idea of how many hours of technical support 
+would be demanded in the market, depending on the price.
+The graph in figure 3 shows that the quantity demanded decreases as the price rises. Accord-
+ingly, the quantity demanded (the quantity that people are willing and able to buy) increases 
+as the price falls. Therefore, the quantity demanded is negatively or inversely related to the 
+price. All other things equal (“ceteris paribus”), this relationship can be found with almost all 
+goods and services in the economy, so that it is also called the law of demand.
+2.6.3 The market equilibrium
+If we have a look at both curves, we can see that they intersect at a certain point, at the 
+price of 150 euros. At this point, the quantity of hours that is demanded in the market 
+equals the quantity of hours that is supplied.
+Assuming that these curves represent supply and demand in the whole market for com-
+puter support services, this price would also be called the market price or equilibrium 
+price (because supply equals demand). At the price of 150 euros per hour demand and 
+supply balance each other out. As the quantity supplied equals the quantity demanded, 
+there is neither a surplus (higher supply than demand) nor a shortage (higher demand than 
+supply). At a higher price, demand would be lower than supply and vice versa. 
+Figure 3. The demand curve 
+(price in euros, quantity in 
+1,000 hours)
+250
+200
+150
+100
+50
+0
+Quantity
+Demand per week
+Price
+0 1 02 03 04 05 06 07 08 09 0 1 0 0
