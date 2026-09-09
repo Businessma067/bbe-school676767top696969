@@ -72,7 +72,7 @@ export function ExplanationProse({
     <div
       className={cn(
         "font-expl text-[15px] leading-[1.6] text-[#1f1f1f] sm:text-[15.5px]",
-        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-3",
+        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-3.5",
         className,
       )}
     >
@@ -112,13 +112,14 @@ export function ExplanationProse({
         if (chunk.kind === "math") {
           const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
           const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
+          // Consecutive display lines need more air than prose-adjacent blocks.
           return (
             <div
               key={idx}
               className={cn(
-                prevMath || nextMath ? "my-1.5" : "my-4",
-                prevMath && "mt-1",
-                nextMath && "mb-1",
+                prevMath || nextMath ? "my-3" : "my-4",
+                prevMath && "mt-2.5",
+                nextMath && "mb-2.5",
               )}
             >
               <FlashcardMath text={chunk.text} displayPrefer />
