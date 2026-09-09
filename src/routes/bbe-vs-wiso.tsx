@@ -214,20 +214,6 @@ export function BbeVsWisoPage() {
           </BbeInfoCallout>
         </BbeSection>
 
-        <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-          <img
-            src="/exam-info/classroom-ready.jpg"
-            alt="Empty classroom with desks facing a chalkboard, ready for a written exam"
-            className="h-auto max-h-[24rem] w-full object-cover"
-            loading="lazy"
-          />
-          <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
-            Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed
-            multiple-choice paper. The programmes diverge before that — in language, places, and how
-            you prepare.
-          </figcaption>
-        </figure>
-
         <BbeSection id="side-by-side" title="Side-by-side comparison">
           <p>
             Use this table as a decision snapshot. For BBE exam format details, see the BBE Entrance
@@ -284,7 +270,7 @@ export function BbeVsWisoPage() {
                 "Economics & business fundamentals",
                 "English grammar, vocabulary, and reading",
                 "Mathematics at Austrian school-leaving depth",
-                "Most recent BBE structure: 35 questions in 2 hours",
+                `Most recent BBE structure: ${BBE_EXAM_FORMAT.questionCount} questions in ${BBE_EXAM_FORMAT.durationHours} hours`,
               ]}
               accent="bbe"
             />
@@ -300,18 +286,7 @@ export function BbeVsWisoPage() {
               accent="wiso"
             />
           </div>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <PhotoCard
-              src="/exam-info/english-business-news.jpg"
-              alt="Folded newspaper open to a World Business section in English"
-              caption="BBE’s language section rewards fluent reading of English business and economics texts — grammar and vocabulary under time pressure, not casual conversation."
-            />
-            <PhotoCard
-              src="/exam-info/business-reading-stack.jpg"
-              alt="Stack of business and economics study books on a desk"
-              caption="Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters — not open-ended business trivia."
-            />
-          </div>
+          <ExamStructureCharts />
         </BbeSection>
 
         <BbeSection id="question-style" title="Question style: what actually feels different">
@@ -338,8 +313,10 @@ export function BbeVsWisoPage() {
                   that question.
                 </li>
                 <li>
-                  Approximate score weighting from the most recent cycle: Economics 40%, English 20%,
-                  Mathematics 40%.
+                  Approximate score weighting from the most recent cycle: Economics{" "}
+                  {BBE_EXAM_FORMAT.scoreWeighting.economics}, English{" "}
+                  {BBE_EXAM_FORMAT.scoreWeighting.english}, Mathematics{" "}
+                  {BBE_EXAM_FORMAT.scoreWeighting.mathematics}.
                 </li>
                 <li>
                   Math stems often mean multiple calculations under one question, so time management
@@ -499,18 +476,18 @@ export function BbeVsWisoPage() {
             <BbeTextLink to={BBE_PRACTICE_ROUTES.demo}>free demo course →</BbeTextLink>
             <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>diagnostic-style mock exam →</BbeTextLink>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <PhotoCard
-              src="/exam-info/math-whiteboard.jpg"
-              alt="Hand writing calculus integrals on a whiteboard during math preparation"
-              caption="Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems so one question does not eat the clock."
-            />
-            <PhotoCard
+          <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+            <img
               src={examHallAsset.url}
-              alt="Large exam hall seating at a WU Vienna entrance exam"
-              caption="Both pathways can lead to the same high-pressure hall. Quality of preparation matters more than collecting random PDFs."
+              alt="WU Vienna entrance exam hall with rows of desks at VIECON"
+              className="h-auto max-h-[22rem] w-full object-cover"
+              loading="lazy"
             />
-          </div>
+            <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
+              The WU entrance exam hall: both pathways can lead here. Preparation quality matters more
+              than collecting random PDFs.
+            </figcaption>
+          </figure>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbeTextLink to="/bbe-exam-scoring">How BBE scoring works →</BbeTextLink>
             <BbeTextLink to="/bbe-exam-preparation">How to prepare for BBE →</BbeTextLink>
@@ -571,6 +548,92 @@ export function BbeVsWisoPage() {
         </aside>
       </div>
     </BbeExamShell>
+  );
+}
+
+function ExamStructureCharts() {
+  const segments = [
+    {
+      label: "Economics",
+      share: BBE_EXAM_FORMAT.scoreWeighting.economics,
+      width: 37.5,
+      color: "#0F766E",
+    },
+    {
+      label: "English",
+      share: BBE_EXAM_FORMAT.scoreWeighting.english,
+      width: 19,
+      color: "#E85D3A",
+    },
+    {
+      label: "Mathematics",
+      share: BBE_EXAM_FORMAT.scoreWeighting.mathematics,
+      width: 43.5,
+      color: "#1D4ED8",
+    },
+  ];
+
+  return (
+    <div className="mt-6 grid gap-4 lg:grid-cols-2">
+      <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+          BBE approximate score weighting
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+          From the most recent cycle’s section point totals — not the share of question counts.
+        </p>
+        <div className="mt-5 flex h-12 overflow-hidden rounded-xl">
+          {segments.map((seg) => (
+            <div
+              key={seg.label}
+              className="flex items-center justify-center px-1 text-center text-[10px] font-semibold leading-tight text-white sm:text-xs"
+              style={{ width: `${seg.width}%`, background: seg.color }}
+              title={`${seg.label} ${seg.share}`}
+            >
+              <span className="hidden sm:inline">
+                {seg.label} {seg.share}
+              </span>
+              <span className="sm:hidden">{seg.share}</span>
+            </div>
+          ))}
+        </div>
+        <ul className="mt-4 space-y-1.5 text-sm text-neutral-700">
+          {segments.map((seg) => (
+            <li key={seg.label} className="flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full" style={{ background: seg.color }} />
+              {seg.label}: {seg.share}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+          Where the exams diverge
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+          Shared pillars sit in the middle. Language is the fork that decides most of your prep plan.
+        </p>
+        <div className="mt-5 space-y-3">
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 text-center text-sm font-semibold">
+            <span className="rounded-lg bg-orange-100 px-3 py-3 text-[#C2410C]">BBE · English</span>
+            <span className="text-xs font-medium text-neutral-500">vs</span>
+            <span className="rounded-lg bg-teal-100 px-3 py-3 text-teal-900">WISO · German</span>
+          </div>
+          <div className="rounded-lg border border-dashed border-border bg-secondary/40 px-3 py-3 text-center text-sm font-medium text-foreground">
+            Shared: mathematics + economics / business basics
+          </div>
+          <div className="grid grid-cols-2 gap-2 text-xs text-neutral-600">
+            <p className="rounded-md bg-orange-50/80 px-3 py-2">
+              Train English reading, grammar, and vocabulary under BBE statement style.
+            </p>
+            <p className="rounded-md bg-teal-50/80 px-3 py-2">
+              Train German comprehension for the WISO language section.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -717,17 +780,6 @@ function CompetitionCard({
       </div>
       <p className="mt-2 text-[11px] text-neutral-600">1 seat · each dot ≈ one competitor</p>
     </div>
-  );
-}
-
-function PhotoCard({ src, alt, caption }: { src: string; alt: string; caption: string }) {
-  return (
-    <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-      <img src={src} alt={alt} className="h-48 w-full object-cover sm:h-56" loading="lazy" />
-      <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground">
-        {caption}
-      </figcaption>
-    </figure>
   );
 }
 
