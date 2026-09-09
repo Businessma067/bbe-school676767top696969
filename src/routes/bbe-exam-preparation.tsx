@@ -188,7 +188,7 @@ export function BbeExamPreparationPage() {
 
         <BbeSection id="mocks" title="Take full mock exams">
           <p>
-            Full-length mocks (34 questions, three sections) teach endurance and scoring behaviour. Review
+            Full-length mocks (35 questions, three sections) teach endurance and scoring behaviour. Review
             every mock as carefully as you sat it. The value is in the error analysis, not the raw total
             alone.
           </p>

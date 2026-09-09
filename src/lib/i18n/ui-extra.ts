@@ -17,8 +17,8 @@ export const uiExtraDe: Record<string, string> = {
     "Baue Lesegeschwindigkeit, Wortschatz und logisches Denken für den Sprach- und Verständnisteil des Exams auf.",
   "Go to tasks →": "Zu den Aufgaben →",
   "Exam simulation": "Prüfungssimulation",
-  "Full-length exam simulations: 34 tasks, 2 hours, 160 points, scored with the official wi2 method.":
-    "Vollständige Prüfungssimulationen: 34 Aufgaben, 2 Stunden, 160 Punkte, bewertet nach der offiziellen wi2-Methode.",
+  "Full-length exam simulations: 35 tasks, 2 hours, 160 points, scored with the official wi2 method.":
+    "Vollständige Prüfungssimulationen: 35 Aufgaben, 2 Stunden, 160 Punkte, bewertet nach der offiziellen wi2-Methode.",
 
   // exam hub math overview
   "Covers logic, elementary algebra, elementary financial mathematics, equations, linear equations in two unknowns, inequalities, linear and quadratic functions, power functions, polynomial functions, exponential and logarithmic functions, differentiation and single-variable optimization, elementary probability, and binomial distribution. The level is comparable to Austria’s “Standardised Competence-Oriented Written School-Leaving Examination,” and a formula sheet is provided at the exam.":
@@ -214,8 +214,8 @@ export const uiExtraUk: Record<string, string> = {
     "Розвивай швидкість читання, словниковий запас і логічне мислення для мовної та розуміючої частини іспиту.",
   "Go to tasks →": "До завдань →",
   "Exam simulation": "Симуляція іспиту",
-  "Full-length exam simulations: 34 tasks, 2 hours, 160 points, scored with the official wi2 method.":
-    "Повноформатні симуляції іспиту: 34 завдання, 2 години, 160 балів, оцінювання за офіційним методом wi2.",
+  "Full-length exam simulations: 35 tasks, 2 hours, 160 points, scored with the official wi2 method.":
+    "Повноформатні симуляції іспиту: 35 завдань, 2 години, 160 балів, оцінювання за офіційним методом wi2.",
 
   "Covers logic, elementary algebra, elementary financial mathematics, equations, linear equations in two unknowns, inequalities, linear and quadratic functions, power functions, polynomial functions, exponential and logarithmic functions, differentiation and single-variable optimization, elementary probability, and binomial distribution. The level is comparable to Austria’s “Standardised Competence-Oriented Written School-Leaving Examination,” and a formula sheet is provided at the exam.":
     "Охоплює логіку, елементарну алгебру, елементарну фінансову математику, рівняння, лінійні рівняння з двома невідомими, нерівності, лінійні та квадратичні функції, степеневі функції, поліноміальні функції, експоненційні та логарифмічні функції, диференціювання та оптимізацію однієї змінної, елементарну теорію ймовірностей і біноміальний розподіл. Рівень порівнянний з австрійським «Стандартизованим компетентнісно орієнтованим письмовим шкільним іспитом», а на іспиті надається довідник формул.",

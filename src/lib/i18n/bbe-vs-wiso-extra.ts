@@ -34,8 +34,8 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "Place counts are the clearest structural difference. WISO offers many more seats; BBE remains one of WU’s most competitive bachelor intakes. In a recent WU announcement, roughly 3,900 people were eligible for the BBE exam against 240 places, while about 6,370 were eligible for WISO against 2,703 places.":
     "Die Platzzahlen sind der klarste strukturelle Unterschied. WISO bietet deutlich mehr Plätze; BBE bleibt einer der kompetitivsten Bachelorzugänge der WU. In einer aktuellen WU-Mitteilung waren rund 3.900 Personen für die BBE-Prüfung zugelassen gegenüber 240 Plätzen, während etwa 6.370 für WISO gegenüber 2.703 Plätzen zugelassen waren.",
 
-  "Most recent BBE structure: 34 questions in 2 hours":
-    "Aktuellste BBE-Struktur: 34 Fragen in 2 Stunden",
+  "Most recent BBE structure: 35 questions in 2 hours":
+    "Aktuellste BBE-Struktur: 35 Fragen in 2 Stunden",
 
   "If you are aiming at BBE specifically, dig into the Mathematics and Economics & English guides next.":
     "Wenn du gezielt auf BBE zielst, schau als Nächstes in die Leitfäden zu Mathematik sowie Wirtschaft & Englisch.",
@@ -349,8 +349,8 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "Place counts are the clearest structural difference. WISO offers many more seats; BBE remains one of WU’s most competitive bachelor intakes. In a recent WU announcement, roughly 3,900 people were eligible for the BBE exam against 240 places, while about 6,370 were eligible for WISO against 2,703 places.":
     "Кількість місць — найчіткіша структурна різниця. У WISO значно більше місць; BBE лишається одним із найбільш конкурентних бакалаврських наборів WU. У нещодавньому повідомленні WU приблизно 3 900 осіб були допущені до іспиту BBE проти 240 місць, тоді як близько 6 370 були допущені до WISO проти 2 703 місць.",
 
-  "Most recent BBE structure: 34 questions in 2 hours":
-    "Найновіша структура BBE: 34 питання за 2 години",
+  "Most recent BBE structure: 35 questions in 2 hours":
+    "Найновіша структура BBE: 35 питань за 2 години",
 
   "If you are aiming at BBE specifically, dig into the Mathematics and Economics & English guides next.":
     "Якщо ви цілитеся саме в BBE, далі заглибтеся в гайди з математики та економіки й англійської.",

@@ -287,7 +287,7 @@ export function BbeVsWisoPage() {
                 "Economics & business fundamentals",
                 "English grammar, vocabulary, and reading",
                 "Mathematics at Austrian school-leaving depth",
-                "Most recent BBE structure: 34 questions in 2 hours",
+                "Most recent BBE structure: 35 questions in 2 hours",
               ]}
               accent="bbe"
             />

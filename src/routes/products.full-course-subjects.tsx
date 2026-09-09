@@ -170,7 +170,7 @@ function FullCourseSubjects() {
                 </span>
                 <h2 className="font-display text-xl font-semibold text-foreground">Mock Exams</h2>
                 <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                  Full-length exam simulations: 34 tasks, 2 hours, 160 points, scored with the
+                  Full-length exam simulations: 35 tasks, 2 hours, 160 points, scored with the
                   official wi2 method.
                 </p>
               </div>
