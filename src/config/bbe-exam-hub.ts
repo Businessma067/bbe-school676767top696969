@@ -12,7 +12,8 @@ export type BbeExamHubPath =
   | "/bbe-economics-english"
   | "/bbe-exam-preparation"
   | "/bbe-admission"
-  | "/bbe-vs-wiso";
+  | "/bbe-vs-wiso"
+  | "/wu-vienna";
 
 export type BbeExamNavItem = {
   label: string;
@@ -33,6 +34,7 @@ export const BBE_EXAM_SUBNAV: BbeExamNavItem[] = [
   { label: "Preparation", shortLabel: "Prep", href: "/bbe-exam-preparation" },
   { label: "Admission", shortLabel: "Admission", href: "/bbe-admission" },
   { label: "BBE vs WISO", shortLabel: "vs WISO", href: "/bbe-vs-wiso" },
+  { label: "WU Vienna", shortLabel: "WU", href: "/wu-vienna" },
 ];
 
 /** Breadcrumb labels for flat hub URLs (Home → BBE Exam → Page). */
@@ -44,6 +46,7 @@ export const BBE_EXAM_BREADCRUMB_LABELS: Record<string, string> = {
   "bbe-exam-preparation": "How to Prepare",
   "bbe-admission": "Admission",
   "bbe-vs-wiso": "BBE vs WISO",
+  "wu-vienna": "WU Vienna",
 };
 
 export const BBE_EXAM_HUB_SEGMENTS = new Set(Object.keys(BBE_EXAM_BREADCRUMB_LABELS));

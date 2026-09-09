@@ -9,6 +9,7 @@ import { BbeEconomicsEnglishPage } from "@/routes/bbe-economics-english";
 import { BbeExamPreparationPage } from "@/routes/bbe-exam-preparation";
 import { BbeAdmissionPage } from "@/routes/bbe-admission";
 import { BbeVsWisoPage } from "@/routes/bbe-vs-wiso";
+import { WuViennaOverviewPage } from "@/routes/wu-vienna";
 import { ParentsPage } from "@/routes/parents";
 import { ImportantFeaturesPage } from "@/routes/important-features";
 import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
@@ -40,6 +41,7 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/bbe-exam-preparation": BbeExamPreparationPage,
   "/bbe-admission": BbeAdmissionPage,
   "/bbe-vs-wiso": BbeVsWisoPage,
+  "/wu-vienna": WuViennaOverviewPage,
   "/parents": ParentsPage,
   "/important-features": ImportantFeaturesPage,
   "/features/answer-sheet": AnswerSheetFeaturePage,

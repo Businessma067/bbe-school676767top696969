@@ -3,6 +3,7 @@ import { extraDe, extraUk } from "./extra";
 import { uiExtraDe, uiExtraUk } from "./ui-extra";
 import { featuresExtraDe, featuresExtraUk } from "./features-extra";
 import { bbeVsWisoExtraDe, bbeVsWisoExtraUk } from "./bbe-vs-wiso-extra";
+import { wuViennaExtraDe, wuViennaExtraUk } from "./wu-vienna-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -367,6 +368,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...uiExtraDe,
     ...featuresExtraDe,
     ...bbeVsWisoExtraDe,
+    ...wuViennaExtraDe,
     ...baseDictionary.de,
   },
   uk: {
@@ -375,6 +377,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...uiExtraUk,
     ...featuresExtraUk,
     ...bbeVsWisoExtraUk,
+    ...wuViennaExtraUk,
     ...baseDictionary.uk,
   },
 };

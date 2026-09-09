@@ -17,6 +17,7 @@ export const LOCALIZABLE_PATHS = [
   "/bbe-exam-preparation",
   "/bbe-admission",
   "/bbe-vs-wiso",
+  "/wu-vienna",
   "/parents",
   "/important-features",
   "/features/answer-sheet",
