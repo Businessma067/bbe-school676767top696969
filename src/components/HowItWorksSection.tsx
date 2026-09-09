@@ -238,12 +238,12 @@ export function HowItWorksSection() {
   return (
     <section id="how-it-works" className="relative bg-background px-3 py-14 sm:px-5 lg:px-6 lg:py-20">
       <div className="mx-auto max-w-[90rem] text-center">
-        <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl">
+        <h2 className="font-display text-[1.75rem] font-semibold text-foreground sm:text-4xl lg:text-5xl">
           How it works
         </h2>
       </div>
 
-      <div className="mx-auto mt-8 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2">
+      <div className="mx-auto mt-6 flex w-full max-w-3xl flex-wrap items-center justify-center gap-2 sm:mt-8">
         {MAIN_TABS.map((item) => {
           const active = tab === item.key;
           return (
@@ -252,7 +252,7 @@ export function HowItWorksSection() {
               type="button"
               onClick={() => setTab(item.key)}
               className={cn(
-                "rounded-sm border px-4 py-2 text-xs font-semibold tracking-wide transition-colors sm:px-5 sm:text-sm",
+                "min-h-10 rounded-sm border px-3.5 py-2 text-xs font-semibold tracking-wide transition-colors sm:px-5 sm:text-sm",
                 active
                   ? "border-[#161616] bg-[#161616] text-[#F2F1ED]"
                   : "border-border bg-card text-muted-foreground hover:border-foreground/30 hover:text-foreground",
@@ -267,13 +267,13 @@ export function HowItWorksSection() {
       <div className="relative mx-auto mt-8 max-w-[90rem]">
         <div
           ref={stageRef}
-          className="relative rounded-2xl border border-border bg-card px-8 py-4 shadow-sm sm:px-10 sm:py-5 lg:px-12 lg:py-5"
+          className="relative rounded-2xl border border-border bg-card px-4 py-4 shadow-sm sm:px-10 sm:py-5 lg:px-12 lg:py-5"
         >
           <button
             type="button"
             aria-label="Previous"
             onClick={() => (hasVideoShowcase ? goSlide(slideIndex - 1) : cycleTab(tab, -1, setTab))}
-            className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background text-foreground transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
+            className="absolute left-1 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -281,12 +281,12 @@ export function HowItWorksSection() {
             type="button"
             aria-label="Next"
             onClick={() => (hasVideoShowcase ? goSlide(slideIndex + 1) : cycleTab(tab, 1, setTab))}
-            className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background text-foreground transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
+            className="absolute right-1 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
           >
             <ChevronRight className="h-5 w-5" />
           </button>
 
-          <div className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
+          <div className="grid items-stretch gap-5 px-8 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
                 {hasVideoShowcase ? (
@@ -307,9 +307,9 @@ export function HowItWorksSection() {
                       type="button"
                       onClick={openZoom}
                       aria-label="Zoom in"
-                      className="absolute bottom-2.5 right-2.5 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/25 bg-[#161616]/90 px-2.5 py-1.5 text-[11px] font-semibold text-[#F2F1ED] shadow-md backdrop-blur-sm transition hover:bg-[#161616] sm:px-3 sm:py-2 sm:text-xs"
+                      className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-[#161616]/95 px-3 py-2 text-xs font-semibold text-[#F2F1ED] shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-[#161616] sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
                     >
-                      <ZoomIn className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                      <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
                       Zoom in
                     </button>
                   </div>
@@ -349,7 +349,7 @@ export function HowItWorksSection() {
                       );
                     })}
                   </div>
-                  <h3 className="mt-5 font-display text-2xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
+                  <h3 className="mt-5 font-display text-xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
                     {slide.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
@@ -357,7 +357,7 @@ export function HowItWorksSection() {
                   </p>
                   <LocalizedLink
                     to={slide.href}
-                    className="mt-6 inline-flex w-fit items-center gap-1.5 rounded-sm bg-[#161616] px-5 py-2.5 text-sm font-semibold text-[#F2F1ED] transition hover:bg-[#2a2a2a]"
+                    className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-sm bg-[#161616] px-5 py-2.5 text-sm font-semibold text-[#F2F1ED] transition hover:bg-[#2a2a2a] sm:w-fit"
                   >
                     {slide.cta}
                     <ChevronRight className="h-4 w-4" />
@@ -365,7 +365,7 @@ export function HowItWorksSection() {
                 </>
               ) : (
                 <>
-                  <h3 className="font-display text-2xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
+                  <h3 className="font-display text-xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
                     {PLACEHOLDERS[tab].title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
@@ -377,7 +377,7 @@ export function HowItWorksSection() {
           </div>
         </div>
 
-        <div className="mt-5 flex items-center justify-center gap-2">
+        <div className="mt-5 flex items-center justify-center gap-0.5">
           {hasVideoShowcase
             ? slides.map((item, i) => (
                 <button
@@ -385,11 +385,15 @@ export function HowItWorksSection() {
                   type="button"
                   aria-label={`Show ${item.label}`}
                   onClick={() => setSlideKey(item.key)}
-                  className={cn(
-                    "h-2 rounded-full transition-all",
-                    i === slideIndex ? "w-7 bg-foreground" : "w-2 bg-border hover:bg-muted-foreground/40",
-                  )}
-                />
+                  className="flex h-10 w-10 items-center justify-center"
+                >
+                  <span
+                    className={cn(
+                      "rounded-full transition-all",
+                      i === slideIndex ? "h-2 w-6 bg-foreground" : "h-2 w-2 bg-border",
+                    )}
+                  />
+                </button>
               ))
             : MAIN_TABS.map((item) => (
                 <button
@@ -397,11 +401,15 @@ export function HowItWorksSection() {
                   type="button"
                   aria-label={`Show ${item.label}`}
                   onClick={() => setTab(item.key)}
-                  className={cn(
-                    "h-2 rounded-full transition-all",
-                    tab === item.key ? "w-7 bg-foreground" : "w-2 bg-border hover:bg-muted-foreground/40",
-                  )}
-                />
+                  className="flex h-10 w-10 items-center justify-center"
+                >
+                  <span
+                    className={cn(
+                      "rounded-full transition-all",
+                      tab === item.key ? "h-2 w-6 bg-foreground" : "h-2 w-2 bg-border",
+                    )}
+                  />
+                </button>
               ))}
         </div>
       </div>

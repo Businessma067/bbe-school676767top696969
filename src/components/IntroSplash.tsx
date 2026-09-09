@@ -35,18 +35,18 @@ export function IntroSplash() {
       }`}
       aria-hidden="true"
     >
-      <div className="intro-content flex items-center gap-5 px-6">
-        <div className="relative grid h-16 w-16 place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-accent to-primary shadow-xl ring-1 ring-primary/30">
-          <span className="font-display text-lg font-bold leading-none text-primary-foreground tracking-tight">
+      <div className="intro-content flex items-center gap-4 px-6 sm:gap-5">
+        <div className="relative grid h-14 w-14 place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-accent to-primary shadow-xl ring-1 ring-primary/30 sm:h-16 sm:w-16">
+          <span className="font-display text-base font-bold leading-none tracking-tight text-primary-foreground sm:text-lg">
             BBE
           </span>
         </div>
 
-        <div className="flex flex-col leading-tight whitespace-nowrap">
-          <span className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
-            BBE-School
+        <div className="hidden flex-col leading-tight whitespace-nowrap sm:flex">
+          <span className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            BBE School
           </span>
-          <span className="mt-1 text-[11px] sm:text-xs font-medium uppercase tracking-[0.28em] text-taupe">
+          <span className="mt-1 text-[11px] font-medium uppercase tracking-[0.28em] text-taupe sm:text-xs">
             Be ready for everything
           </span>
         </div>
