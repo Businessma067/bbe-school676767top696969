@@ -43,6 +43,7 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/bbe-exam-preparation": WU_CAMPUS_SOCIAL_IMAGE,
   "/bbe-admission": WU_CAMPUS_SOCIAL_IMAGE,
   "/bbe-vs-wiso": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wu-vienna": WU_CAMPUS_SOCIAL_IMAGE,
   "/parents": absoluteMediaUrl(hallAsset.url),
   "/important-features": absoluteMediaUrl(examHallAsset.url),
   "/features/answer-sheet": absoluteMediaUrl(examHallAsset.url),

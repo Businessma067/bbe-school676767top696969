@@ -27,6 +27,7 @@ const EXAM_INFO_PREFIXES = [
   "/bbe-exam-preparation",
   "/bbe-admission",
   "/bbe-vs-wiso",
+  "/wu-vienna",
 ];
 
 const PRODUCTS_EXACT = [
