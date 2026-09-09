@@ -53,6 +53,10 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Gebäude des WU-Wien-Campus an einem klaren Tag",
   "Same WU Vienna campus, two bachelor pathways: BBE and WISO share the university but differ in language, cohort size, and how competitive the entrance exam is.":
     "Derselbe WU-Wien-Campus, zwei Bachelorwege: BBE und WISO teilen die Universität, unterscheiden sich aber in Sprache, Kohortengröße und Wettbewerb um die Aufnahmeprüfung.",
+  "Empty classroom with desks facing a chalkboard, ready for a written exam":
+    "Leeres Klassenzimmer mit Tischen vor einer Tafel, bereit für eine schriftliche Prüfung",
+  "Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed multiple-choice paper. The programmes diverge before that — in language, places, and how you prepare.":
+    "Sowohl BBE als auch WISO enden meist im selben Raumtyp: Tische, Stille und eine zeitlich begrenzte Multiple-Choice-Arbeit. Die Programme trennen sich davor — bei Sprache, Plätzen und der Vorbereitung.",
   "How many seats exist?": "Wie viele Plätze gibt es?",
   "Each block below is drawn to scale. WISO has about":
     "Jeder Block unten ist maßstabsgetreu. WISO hat etwa",
@@ -70,10 +74,22 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Englisch-Lernmaterialien für BBE-typische Sprachpraxis",
   "BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight.":
     "Der Sprachteil von BBE belohnt Grammatik, Wortschatz und flüssiges Lesen auf Englisch — Fähigkeiten, die du über Monate aufbaust, nicht über Nacht lernst.",
+  "Folded newspaper open to a World Business section in English":
+    "Gefaltete Zeitung, aufgeschlagen bei einem World-Business-Teil auf Englisch",
+  "BBE’s language section rewards fluent reading of English business and economics texts — grammar and vocabulary under time pressure, not casual conversation.":
+    "Der Sprachteil von BBE belohnt flüssiges Lesen englischer Wirtschafts- und Ökonomietexte — Grammatik und Wortschatz unter Zeitdruck, nicht Smalltalk.",
   "Economics study materials for WU entrance exam preparation":
     "Wirtschafts-Lernmaterialien zur Vorbereitung auf die WU-Aufnahmeprüfung",
   "Both exams expect economics and business basics. On BBE, that usually means precise reading of definitions from the required literature.":
     "Beide Prüfungen erwarten Wirtschafts- und Businessgrundlagen. Bei BBE heißt das meist präzises Lesen von Definitionen aus der Pflichtliteratur.",
+  "Stack of business and economics study books on a desk":
+    "Stapel von Wirtschafts- und Business-Lernbüchern auf einem Schreibtisch",
+  "Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters — not open-ended business trivia.":
+    "Wirtschaftsvorbereitung ist literaturlastig. Bei BBE heißt das meist präzises Lesen der Pflichtkapitel — nicht offenes Business-Trivia.",
+  "Hand writing calculus integrals on a whiteboard during math preparation":
+    "Hand schreibt Integralrechnung an ein Whiteboard während der Mathevorbereitung",
+  "Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems so one question does not eat the clock.":
+    "Mathe-Vorbereitung überträgt sich am besten, wenn du früh Grundlagen aufbaust und dann zu gemischten timed Stämmen wechselst, damit eine Frage nicht die Zeit frisst.",
   "Question style: what actually feels different":
     "Fragestil: was sich wirklich anders anfühlt",
   "Applicants often ask whether the “questions themselves” are the same. The short answer: the subject pillars overlap, but the way BBE tasks are written and scored is a study problem of its own.":
@@ -368,6 +384,10 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Будівлі кампусу WU Vienna у ясний день",
   "Same WU Vienna campus, two bachelor pathways: BBE and WISO share the university but differ in language, cohort size, and how competitive the entrance exam is.":
     "Той самий кампус WU Vienna, два бакалаврські шляхи: BBE і WISO ділять університет, але відрізняються мовою, розміром когорти та конкуренцією на вступному іспиті.",
+  "Empty classroom with desks facing a chalkboard, ready for a written exam":
+    "Порожня аудиторія зі партами навпроти дошки, готова до письмового іспиту",
+  "Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed multiple-choice paper. The programmes diverge before that — in language, places, and how you prepare.":
+    "І BBE, і WISO зазвичай закінчуються в одному типі зали: парти, тиша й тест із варіантами на час. Програми розходяться раніше — у мові, місцях і підготовці.",
   "How many seats exist?": "Скільки місць є?",
   "Each block below is drawn to scale. WISO has about":
     "Кожен блок нижче намальований у масштабі. У WISO приблизно",
@@ -385,10 +405,22 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Матеріали з англійської для практики в стилі BBE",
   "BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight.":
     "Мовний блок BBE винагороджує граматику, словник і вільне читання англійською — навички, які будують місяцями, а не за ніч.",
+  "Folded newspaper open to a World Business section in English":
+    "Складена газета, розгорнута на розділі World Business англійською",
+  "BBE’s language section rewards fluent reading of English business and economics texts — grammar and vocabulary under time pressure, not casual conversation.":
+    "Мовний блок BBE винагороджує вільне читання англійських бізнес- та економічних текстів — граматику й словник під тиском часу, а не світську розмову.",
   "Economics study materials for WU entrance exam preparation":
     "Матеріали з економіки для підготовки до вступного іспиту WU",
   "Both exams expect economics and business basics. On BBE, that usually means precise reading of definitions from the required literature.":
     "Обидва іспити очікують основи економіки та бізнесу. На BBE це зазвичай точне читання означень з обов’язкової літератури.",
+  "Stack of business and economics study books on a desk":
+    "Стопка підручників з бізнесу та економіки на столі",
+  "Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters — not open-ended business trivia.":
+    "Підготовка з економіки літературоцентрична. На BBE це зазвичай точне читання обов’язкових розділів — не відкрите бізнес-trivia.",
+  "Hand writing calculus integrals on a whiteboard during math preparation":
+    "Рука пише інтеграли на білій дошці під час підготовки з математики",
+  "Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems so one question does not eat the clock.":
+    "Математична підготовка переноситься найкраще, коли рано відновлюєте основи, а потім переходите до змішаних timed-стовбурів, щоб одне питання не з’їло час.",
   "Question style: what actually feels different":
     "Стиль питань: що справді відчувається інакше",
   "Applicants often ask whether the “questions themselves” are the same. The short answer: the subject pillars overlap, but the way BBE tasks are written and scored is a study problem of its own.":
