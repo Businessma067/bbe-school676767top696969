@@ -340,6 +340,34 @@ const DENSE_SHORT_DISPLAY_MIN = 3;
  *   $$=-2$$
  * into one left-aligned `aligned` block so KaTeX does not center a lone `= -2`.
  */
+/**
+ * When a single display block runs `… = 45{,}000` straight into `\frac{…}{6}`,
+ * KaTeX prints them on one line. Split onto aligned rows before render.
+ */
+function normalizeCrampedFractionSteps(body: string): string {
+  const t = body.trim();
+  if (!t || isStackedMathBody(t)) return body;
+  if (!/\\frac/.test(t)) return body;
+  const lines = t.split("\n");
+  const out: string[] = [];
+  let changed = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    const next = lines[i + 1]?.trim() ?? "";
+    if (
+      /=\s*[\d{,}]+\s*$/.test(line) &&
+      next.startsWith("\\frac") &&
+      !/\\\\/.test(line)
+    ) {
+      out.push(`${line.trimEnd()} \\\\[0.65em]`);
+      changed = true;
+      continue;
+    }
+    out.push(line);
+  }
+  return changed ? out.join("\n") : body;
+}
+
 function formatAlignedContinuationChain(bodies: string[]): string {
   const lines: string[] = [];
   for (let k = 0; k < bodies.length; k++) {
@@ -589,7 +617,7 @@ function splitMath(input: string): Part[] {
           value += text[i];
           i += 1;
         }
-        parts.push({ type: "display", value });
+        parts.push({ type: "display", value: normalizeCrampedFractionSteps(value) });
         continue;
       }
     }
