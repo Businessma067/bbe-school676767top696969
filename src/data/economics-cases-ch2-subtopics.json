@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "A salary reallocates scarcity; it does not erase it.\n\nEven with steady pay, the household still has a finite budget and finite time — it cannot buy everything at once.\n\nSo the statement is False.",
-      "Economising is careful use of limited resources.\n\nTreating money, time, or materials as if they were infinite is the opposite of that idea.\n\nSo the statement is True.",
-      "Skipping a purchase is still a decision about scarce time or money.\n\nInaction does not remove you from the set of economic choices; it is one of them.\n\nNobody gets a clean exit simply by doing nothing.\n\nSo the statement is True.",
-      "Households with regular income still face limited budgets and must choose what to buy.\n\nScarcity is not reserved for registered firms — families economise every week on rent, food, and leisure.\n\nSo the statement is False.",
-      "Households exchange whenever they buy bread, pay for a haircut, or sell a used bike.\n\nEntrepreneur status is not a ticket of admission to trade.\n\nSo the statement is False."
+      "A salary reallocates scarcity; it does not erase it. Even with steady pay, the household still has a finite budget and finite time — it cannot buy everything at once.\n\nSo the statement is False.",
+      "Economising is careful use of limited resources. Treating money, time, or materials as if they were infinite is the opposite of that idea.\n\nSo the statement is True.",
+      "Skipping a purchase is still a decision about scarce time or money. Inaction does not remove you from the set of economic choices; it is one of them. Nobody gets a clean exit simply by doing nothing.\n\nSo the statement is True.",
+      "Households with regular income still face limited budgets and must choose what to buy. Scarcity is not reserved for registered firms — families economise every week on rent, food, and leisure.\n\nSo the statement is False.",
+      "Households exchange whenever they buy bread, pay for a haircut, or sell a used bike. Entrepreneur status is not a ticket of admission to trade.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -50,9 +50,9 @@
     "tactical_explanations": [
       "Goods are tangible items — a loaf, a phone, a coat.\n\nIntangible activities (repairs, lessons, software installs) are services, not goods. The claim swaps the two labels.\n\nSo the statement is False.",
       "A service is an intangible activity done for someone: installing software or preparing a drink fits that test.\n\nSo the statement is True.",
-      "Needs keep basic well-being going; wants are desired extras that are not essential.\n\nThat split is exactly what the statement reports.\n\nSo the statement is True.",
-      "Families need food and shelter; firms need staff, materials, and working equipment.\n\nEither side can meet those needs by trading with the other.\n\nSo the statement is True.",
-      "Limited resources force careful choices — that is scarcity, and economising is the response.\n\nAssuming unlimited supply would ignore the constraint the chapter starts from.\n\nSo the statement is True."
+      "Needs keep basic well-being going; wants are desired extras that are not essential. That split is exactly what the statement reports.\n\nSo the statement is True.",
+      "Families need food and shelter; firms need staff, materials, and working equipment. Either side can meet those needs by trading with the other.\n\nSo the statement is True.",
+      "Limited resources force careful choices — that is scarcity, and economising is the response. Assuming unlimited supply would ignore the constraint the chapter starts from.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -77,11 +77,11 @@
       false
     ],
     "tactical_explanations": [
-      "Businesses trade with households every day — selling goods, buying labour, hiring suppliers.\n\nThere is no legal bar that confines exchange to consumers alone.\n\nSo the statement is False.",
-      "A shop needs stock, premises, and staff just as a family needs food and heat.\n\nRegistered businesses are not need-free shells.\n\nSo the statement is False.",
-      "Leaving pocket money unspent is still a choice about scarce cash — save now, spend later, or hold it.\n\nThe teenager has not stepped outside economic decision-making.\n\nSo the statement is False.",
+      "Businesses trade with households every day — selling goods, buying labour, hiring suppliers. There is no legal bar that confines exchange to consumers alone.\n\nSo the statement is False.",
+      "A shop needs stock, premises, and staff just as a family needs food and heat. Registered businesses are not need-free shells.\n\nSo the statement is False.",
+      "Leaving pocket money unspent is still a choice about scarce cash — save now, spend later, or hold it. The teenager has not stepped outside economic decision-making.\n\nSo the statement is False.",
       "When a household pays a firm (or another household) for something useful, exchange is doing the work of fulfilling a need or want.\n\nSo the statement is True.",
-      "Barter is exchange without money: gardening help for a bookshelf still swaps valued things.\n\nCash is common, not required.\n\nSo the statement is False."
+      "Barter is exchange without money: gardening help for a bookshelf still swaps valued things. Cash is common, not required.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -107,10 +107,10 @@
     ],
     "tactical_explanations": [
       "Computers are goods; installing software is a service — both help people meet needs.\n\nSo the statement is True.",
-      "A smartphone maker cannot assemble handsets without specialised electronic parts from suppliers.\n\nThat input requirement is an operational need of the manufacturer.\n\nSo the statement is True.",
+      "A smartphone maker cannot assemble handsets without specialised electronic parts from suppliers. That input requirement is an operational need of the manufacturer.\n\nSo the statement is True.",
       "Fabricating components means drawing on raw materials and a workforce; isolation is not how production works.\n\nSo the statement is True.",
       "People buy, sell, and swap goods and services directly — they are full participants in trade, not spectators.\n\nSo the statement is True.",
-      "Food, shelter, and medical care are household needs; cinema nights are wants layered on top.\n\nBoth sit inside everyday household demand.\n\nSo the statement is True."
+      "Food, shelter, and medical care are household needs; cinema nights are wants layered on top. Both sit inside everyday household demand.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -136,9 +136,9 @@
     ],
     "tactical_explanations": [
       "Roasted beans in a bag are a tangible good; the barista’s drink preparation is an intangible service.\n\nSo the statement is True.",
-      "Needing enough caffeine to function is not the same as craving a flavoured latte for pleasure.\n\nNeeds cover basic well-being; wants cover non-essential desires — the concepts are not identical.\n\nSo the statement is False.",
+      "Needing enough caffeine to function is not the same as craving a flavoured latte for pleasure. Needs cover basic well-being; wants cover non-essential desires — the concepts are not identical.\n\nSo the statement is False.",
       "A habitual favourite drink that is not essential for survival or basic health sits in the want category.\n\nSo the statement is True.",
-      "The café needs reliable bean suppliers, cups, and staff hours to keep serving customers.\n\nBeing a business does not wipe those operational needs away.\n\nSo the statement is False.",
+      "The café needs reliable bean suppliers, cups, and staff hours to keep serving customers. Being a business does not wipe those operational needs away.\n\nSo the statement is False.",
       "Customer pays, café supplies — each side gets something valued. That two-sided fulfilment is exchange.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -167,7 +167,7 @@
       "Getting to school with the bus pass supports a need; the game skin is entertainment, not a basic necessity.\n\nSo the statement is True.",
       "Price tags do not turn wants into needs. A ten-euro skin remains a want even though it costs money.\n\nClassification rests on necessity for well-being, not on whether something is sold.\n\nSo the statement is False.",
       "Jonas’s twelve-euro choice already forces trade-offs among the bus pass, the game skin, and saving — before any business registration enters the picture.\n\nSo the statement is False.",
-      "Saving the twelve euros is itself an allocation: hold cash now rather than buy the pass or the skin.\n\nChoosing not to buy is not escaping economics; it is one use of limited means.\n\nSo the statement is False.",
+      "Saving the twelve euros is itself an allocation: hold cash now rather than buy the pass or the skin. Choosing not to buy is not escaping economics; it is one use of limited means.\n\nSo the statement is False.",
       "Buying the bus pass does not delete the desire for the game skin. The want can return next month with new pocket money.\n\n“Permanently” and “never” overclaim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -194,9 +194,9 @@
     ],
     "tactical_explanations": [
       "Screen replacement is labour on the customer’s device — a service. A phone case sold at the counter is a tangible take-away — a good.\n\nSo the statement is True.",
-      "A limited monthly parts batch is scarce by definition: once it is gone, further repairs wait.\n\nCalling the shop a business does not create an infinite stockroom.\n\nSo the statement is False.",
+      "A limited monthly parts batch is scarce by definition: once it is gone, further repairs wait. Calling the shop a business does not create an infinite stockroom.\n\nSo the statement is False.",
       "A decorative case bought only for its look is preference, not a requirement for basic well-being — a want.\n\nSo the statement is True.",
-      "Whether someone casually calls phones a luxury, repair can still meet a real need — school contact, work, emergencies.\n\nPhones are not outside economic analysis, and “never” is too strong.\n\nSo the statement is False.",
+      "Whether someone casually calls phones a luxury, repair can still meet a real need — school contact, work, emergencies. Phones are not outside economic analysis, and “never” is too strong.\n\nSo the statement is False.",
       "A fixed monthly parts batch is a hard capacity ceiling. The shop must decide which jobs to take, delay, or refuse — that ranking is economising.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -253,7 +253,7 @@
     "tactical_explanations": [
       "Herr Novak organises production and sale at the bakery — entrepreneur. Families buying bread act as households.\n\nSo the statement is True.",
       "Bread is a tangible good; doorstep delivery is an intangible service. Tangible versus activity matches the usual split.\n\nSo the statement is True.",
-      "Owning a bakery does not cancel Herr Novak’s personal needs for food, housing, or rest.\n\nEntrepreneur role and private household needs coexist in the same person.\n\nSo the statement is False.",
+      "Owning a bakery does not cancel Herr Novak’s personal needs for food, housing, or rest. Entrepreneur role and private household needs coexist in the same person.\n\nSo the statement is False.",
       "Paying one euro extra for delivery is still a swap of money for a valued service. Performance ending does not erase the exchange that just occurred.\n\nSo the statement is False.",
       "Flour and oven fuel arrive in limited quantities and at a cost. A bakery must choose batch sizes and recipes under those limits — that is economising.\n\nSo the statement is False."
     ],
@@ -341,7 +341,7 @@
       "Without specialised electronic parts from suppliers, laptop production stalls.\n\nSo the statement is True.",
       "High-tech firms need components, energy, and skilled staff just as consumers need goods. “Zero internal needs” is wrong.\n\nSo the statement is False.",
       "Daily shopping — food, transport, streaming, clothes — is households using market exchange for both needs and wants.\n\nSo the statement is True.",
-      "Satisfying food and rent for one month does not switch off desires for holidays, gadgets, or better housing.\n\nWants keep regenerating; they are not a one-time checklist that disappears when basics are covered.\n\nSo the statement is False.",
+      "Satisfying food and rent for one month does not switch off desires for holidays, gadgets, or better housing. Wants keep regenerating; they are not a one-time checklist that disappears when basics are covered.\n\nSo the statement is False.",
       "Teenagers with pocket money already buy, save, and trade. They sit on the household side long before any business registration.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -369,7 +369,7 @@
     "tactical_explanations": [
       "Transport and toiletries support everyday functioning — needs. Designer trainers at €140 are desired extras — a want.\n\nSo the statement is True.",
       "Money from parents places Lukas inside a household budget.\n\nSo the statement is False.",
-      "Buying trainers spends part of the month’s cash; it does not cancel the need to get to school.\n\nTransport still has to be covered from whatever remains of the €300 — the want purchase does not erase the need.\n\nSo the statement is False.",
+      "Buying trainers spends part of the month’s cash; it does not cancel the need to get to school. Transport still has to be covered from whatever remains of the €300 — the want purchase does not erase the need.\n\nSo the statement is False.",
       "Economics studies how people allocate scarce means among competing ends — including wants. Calling trainers “irrational” does not eject them from the subject.\n\nSo the statement is False.",
       "Three hundred euros a month is a hard ceiling. Choosing trainers versus transport is economising, not swimming in unlimited means.\n\nSo the statement is False."
     ],
@@ -429,7 +429,7 @@
       "A cheese wheel is a good; face-painting is a service.\n\nSo the statement is True.",
       "Weekly grocery cheese supports a need; face-painting is enjoyment rather than basic well-being — more of a want.\n\nSo the statement is True.",
       "Money for cheese or for face-painting is exchange: each side gives something and receives something valued.\n\nSo the statement is True.",
-      "Thirty wheels left is a hard stock limit on market day.\n\nToni must decide how many to hold for regulars, how many to sell early, and whom to turn away when the queue outruns the crate — that ranking is economising under scarcity.\n\nSo the statement is True."
+      "Thirty wheels left is a hard stock limit on market day. Toni must decide how many to hold for regulars, how many to sell early, and whom to turn away when the queue outruns the crate — that ranking is economising under scarcity.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -574,7 +574,7 @@
       "Avoiding shops does not cancel decisions about time, firewood, and food stocks. Karl still chooses under scarcity.\n\nSo the statement is False.",
       "Claiming “I need nobody” does not create infinite wood, daylight, or energy. Scarcity still binds his daily work.\n\nSo the statement is False.",
       "Forests regenerate slowly and chopping takes time and tools. Remote living does not make timber an unlimited free flow.\n\nSo the statement is False.",
-      "Needs, wants, and scarcity apply to people generally.\n\nA cabin dweller trading with hikers still faces limited daylight for chopping and limited shelf space for cans — formal registration is irrelevant to those constraints.\n\nSo the statement is False."
+      "Needs, wants, and scarcity apply to people generally. A cabin dweller trading with hikers still faces limited daylight for chopping and limited shelf space for cans — formal registration is irrelevant to those constraints.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -659,7 +659,7 @@
     "tactical_explanations": [
       "Elena’s violin performance is an activity listeners enjoy — a service.\n\nSo the statement is True.",
       "Paying for atmosphere and music is enjoyment rather than survival — a want.\n\nSo the statement is True.",
-      "A tip still swaps money for a performance the listener values.\n\nVoluntary and unfixed amounts do not cancel exchange; street music funded by coins in a case is still trade of money for a service.\n\nSo the statement is False.",
+      "A tip still swaps money for a performance the listener values. Voluntary and unfixed amounts do not cancel exchange; street music funded by coins in a case is still trade of money for a service.\n\nSo the statement is False.",
       "Rent is a personal obligation. Elena’s need to cover it shows individuals face economic needs, not only registered firms.\n\nSo the statement is True.",
       "Sunday hours are limited. Choosing one square over another allocates scarce performing time — economising.\n\nSo the statement is True."
     ],
@@ -2196,9 +2196,9 @@
     "tactical_explanations": [
       "Skipping paid overtime for a free concert still costs the wages you could have earned that evening.\n\nSo the statement is True.",
       "Price tags are not required. Unpaid leisure, volunteering, or a quiet evening at home can be the next-best option you give up.\n\nIf only cash-priced choices counted, almost every household timetable decision would fall outside economics — and that is not how opportunity cost works.\n\nSo the statement is False.",
-      "Volunteering uses hours that could have been sold as labour.\n\nThe forgone wage (or other paid work) is the opportunity cost of that leisure, even though the volunteering itself has no ticket price.\n\nSo the statement is True.",
+      "Volunteering uses hours that could have been sold as labour. The forgone wage (or other paid work) is the opportunity cost of that leisure, even though the volunteering itself has no ticket price.\n\nSo the statement is True.",
       "Enjoyment, stress relief, and other non-money payoffs routinely sit inside opportunity-cost thinking.\n\nCounterexample: choosing a lower-paid job because it is less stressful still trades wages against a non-financial benefit. The claim that enjoyment never enters is simply too absolute.\n\nSo the statement is False.",
-      "Holding other determinants fixed, scarcer time widens the trade-off: each hour locked into one use blocks another.\n\nThat is enough for opportunity cost to appear.\n\nSo the statement is True."
+      "Holding other determinants fixed, scarcer time widens the trade-off: each hour locked into one use blocks another. That is enough for opportunity cost to appear.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2253,7 +2253,7 @@
     ],
     "tactical_explanations": [
       "One remaining ICU bed cannot serve both the scheduled surgery and tonight’s emergency at once. That is scarcity in the ward.\n\nSo the statement is True.",
-      "Give the bed to the emergency arrival and the scheduled patient’s expected health gain is what you leave behind.\n\nThat forgone surgical benefit is the opportunity cost of the emergency assignment.\n\nSo the statement is True.",
+      "Give the bed to the emergency arrival and the scheduled patient’s expected health gain is what you leave behind. That forgone surgical benefit is the opportunity cost of the emergency assignment.\n\nSo the statement is True.",
       "Reserve the bed for the scheduled case and you forgo the emergency patient’s treatment benefit instead.\n\nSo the statement is True.",
       "Medical ethics guide who should get priority; they do not delete the trade-off. With one bed, choosing A still means B waits.\n\nEthics may reshape which benefit you weigh more heavily, but the forgone alternative remains an opportunity cost.\n\nSo the statement is False.",
       "Opportunity cost is the value of the next-best use, not a cash invoice. Life-saving or recovery benefits between patients fit that definition even when no euro price is attached.\n\nSo the statement is True."
@@ -2281,7 +2281,7 @@
       true
     ],
     "tactical_explanations": [
-      "By definition you count the best alternative you did not take — not a pile of every rejected option’s value stacked together.\n\nIf three holidays are ruled out, opportunity cost is the best of those three, not their sum.\n\nSo the statement is True.",
+      "By definition you count the best alternative you did not take — not a pile of every rejected option’s value stacked together. If three holidays are ruled out, opportunity cost is the best of those three, not their sum.\n\nSo the statement is True.",
       "Each side of a trade has its own next-best alternative. A buyer’s forgone purchase and a seller’s forgone other customer need not match in size or content.\n\n“Both give something up” does not make the opportunity costs identical.\n\nSo the statement is False.",
       "Missing a quiet evening with family or a free concert still has opportunity cost even if no wage or fee is measured.\n\nSo the statement is False.",
       "Picking the weaker option raises opportunity cost, it does not wipe it. The better option you left on the table is exactly what you forgo.\n\nSaying the cost is zero because a better choice “was available” confuses availability with choosing it.\n\nSo the statement is False.",
@@ -2341,7 +2341,7 @@
     "tactical_explanations": [
       "Shorter changeovers between workbook and wedding runs squeeze more useful output from the same press week. That is economising under a tight schedule.\n\nSo the statement is True.",
       "The print shop is one instance of a general rule: every actor must allocate scarce capacity among rival jobs.\n\nSo the statement is True.",
-      "Fill the week with wedding invitations and the school workbook contract’s income (and goodwill) is what you leave behind.\n\nThat forgone workbook value is the opportunity cost of the wedding schedule.\n\nSo the statement is True.",
+      "Fill the week with wedding invitations and the school workbook contract’s income (and goodwill) is what you leave behind. That forgone workbook value is the opportunity cost of the wedding schedule.\n\nSo the statement is True.",
       "One press and one week cannot print both queues fully at once. Capacity is scarce between workbooks and weddings.\n\nSo the statement is True.",
       "Electricity is an operating outlay on whatever you print. Opportunity cost is the wedding (or workbook) revenue you did not earn by locking the press into the other job.\n\nThe power bill is not a substitute for that forgone alternative.\n\nSo the statement is False."
     ],
@@ -2371,8 +2371,8 @@
       "Lena has one Tuesday evening. Full attendance at the language course and a full babysitting shift cannot both happen.\n\nSo the statement is True.",
       "Liking babysitting does not delete the classroom progress she forgoes. Enjoyment can tip the choice; it does not erase the forgone benefit from the ledger.\n\nSo the statement is True.",
       "Classroom learning, credentials, and reduced stress can all count as opportunity cost even when no cash changes hands.\n\nSo the statement is False.",
-      "Valuable skills make the course attractive; they do not cancel what Lena gives up by skipping the babysitting shift (or vice versa).\n\nWorthiness of the chosen path never sets opportunity cost to zero.\n\nSo the statement is False.",
-      "A personal timetable and a government budget look different, but both allocate scarce hours or euros among competing claims.\n\nLena’s Tuesday evening is a miniature version of the same scarce-resource problem ministries face when they fund one programme instead of another.\n\nSo the statement is False."
+      "Valuable skills make the course attractive; they do not cancel what Lena gives up by skipping the babysitting shift (or vice versa). Worthiness of the chosen path never sets opportunity cost to zero.\n\nSo the statement is False.",
+      "A personal timetable and a government budget look different, but both allocate scarce hours or euros among competing claims. Lena’s Tuesday evening is a miniature version of the same scarce-resource problem ministries face when they fund one programme instead of another.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2430,7 +2430,7 @@
       "Art without a price tag still uses the Friday stage. Giving the slot to a commercial forgoes the documentary’s creative and reputational payoff — a real opportunity cost.\n\nSo the statement is False.",
       "A waiting list is evidence of excess demand for a limited stage, not proof that scarcity has vanished. Strong demand intensifies the allocation problem.\n\nSo the statement is False.",
       "Corporate calendars and household budgets both stretch limited means across rival uses. The economic logic does not switch species at the office door.\n\nSo the statement is False.",
-      "Even if commercials often win the booking, a documentary still has forgone value when it loses the stage.\n\n“Always dominate” does not set the rejected project’s opportunity cost to zero; it only describes a frequent ranking, not a law that erases trade-offs.\n\nSo the statement is False."
+      "Even if commercials often win the booking, a documentary still has forgone value when it loses the stage. “Always dominate” does not set the rejected project’s opportunity cost to zero; it only describes a frequent ranking, not a law that erases trade-offs.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2455,7 +2455,7 @@
       false
     ],
     "tactical_explanations": [
-      "Opportunity cost is the benefit of the best alternative forgone, not the sum of both price tags.\n\nThe mistaken combined-price total would stack both tags:\n\n$$\n300 + 450 = 750\n$$\n\nIf Maya picks the tablet, she forgoes the bike’s benefit — linked to the 450-euro alternative — not 750 euros as if she somehow spent both amounts.\n\nSo the statement is True.",
+      "Opportunity cost is the benefit of the best alternative forgone, not the sum of both price tags. The mistaken combined-price total would stack both tags:\n\n$$\n300 + 450 = 750\n$$\n\nIf Maya picks the tablet, she forgoes the bike’s benefit — linked to the 450-euro alternative — not 750 euros as if she somehow spent both amounts.\n\nSo the statement is True.",
       "Two mutually exclusive options already create a next-best alternative. A third choice is optional, not required for the concept.\n\nSo the statement is True.",
       "Whether the allocator is a household, a firm, or a government, locking scarce means into one use forgoes another.\n\nSo the statement is True.",
       "Textbook opportunity cost picks the best forgone option. Adding every rejected price is a common student error, not the standard definition.\n\nSo the statement is False.",
@@ -2546,7 +2546,7 @@
       "Clinical urgency can rank which batch runs first; it does not make the forgone culture run costless. Medical importance reshapes priorities, not the existence of opportunity cost.\n\nSo the statement is False.",
       "Grant funding buys machines and staff; it does not create infinite overnight slots. Funded labs still trade one experiment against another.\n\nSo the statement is False.",
       "Two projects under one roof often share centrifuges, freezers, and technician time. Competition for equipment is routine, not exceptional.\n\nSo the statement is False.",
-      "Extra machines ease the bottleneck; they rarely erase queues when overnight capacity is still finite and samples arrive together.\n\nA lab with several centrifuges can still face a backlog on a busy night — “never queue” overstates the relief.\n\nSo the statement is False."
+      "Extra machines ease the bottleneck; they rarely erase queues when overnight capacity is still finite and samples arrive together. A lab with several centrifuges can still face a backlog on a busy night — “never queue” overstates the relief.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2575,7 +2575,7 @@
       "Freight trailers versus passenger cars on one sailing mirrors a transport ministry choosing rail versus road with one investment pot — rival claims on limited capacity.\n\nSo the statement is True.",
       "Load more freight and cars stay ashore: passenger-ticket revenue forgone is the opportunity cost of that freight priority.\n\nSo the statement is True.",
       "Deck square metres on a single sailing are finite between trailers and cars.\n\nSo the statement is True.",
-      "Travellers may need a car for a trip, but that label does not delete freight’s contribution to the operator’s income when space is scarce.\n\nNeeds language does not make freight revenue “disappear” from the trade-off.\n\nSo the statement is False."
+      "Travellers may need a car for a trip, but that label does not delete freight’s contribution to the operator’s income when space is scarce. Needs language does not make freight revenue “disappear” from the trade-off.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2632,8 +2632,8 @@
       "Bundling inspection and repair jobs that share one crane setup saves scarce hoist time inside the low-wind window. That is economising.\n\nSo the statement is True.",
       "Calm wind opens a maintenance window; it does not create unlimited technician hours. Fatigue, safety limits, and the calendar still bind.\n\nSo the statement is False.",
       "Energy operators choose inspections versus blade repairs under the same opportunity-cost logic as any other firm.\n\nSo the statement is False.",
-      "Safety rules constrain how work is done; they do not remove the need to sequence scarce crane time between inspections and repairs.\n\nCompliance and trade-offs coexist.\n\nSo the statement is False.",
-      "Calling inspections a regulatory need explains why they rank high; it does not set the forgone value of delayed blade repairs to zero.\n\nSkip repairs to finish inspections and you still give up storm-readiness or output protection those repairs would have bought.\n\nSo the statement is False."
+      "Safety rules constrain how work is done; they do not remove the need to sequence scarce crane time between inspections and repairs. Compliance and trade-offs coexist.\n\nSo the statement is False.",
+      "Calling inspections a regulatory need explains why they rank high; it does not set the forgone value of delayed blade repairs to zero. Skip repairs to finish inspections and you still give up storm-readiness or output protection those repairs would have bought.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2660,7 +2660,7 @@
     "tactical_explanations": [
       "One staff week cannot fully draft both the housing and the arts grant. Capacity is scarce between those applications.\n\nSo the statement is True.",
       "Chase the arts grant and the housing programme’s expected funding benefit is what you leave unwritten. That forgone housing payoff is the opportunity cost.\n\nSo the statement is True.",
-      "Put the week into housing instead and the arts proposal’s funding benefit is forgone if that file never goes in.\n\nSame scarce week, mirrored trade-off.\n\nSo the statement is True.",
+      "Put the week into housing instead and the arts proposal’s funding benefit is forgone if that file never goes in. Same scarce week, mirrored trade-off.\n\nSo the statement is True.",
       "Salary is the accounting cost of employing the writer. Opportunity cost is the value of the grant line not pursued with that week of effort.\n\nMixing the two concepts misreads the letter.\n\nSo the statement is False.",
       "Nonprofits allocate scarce staff weeks every funding cycle. Profit-seeking is not required for scarcity.\n\nSo the statement is False."
     ],
@@ -2749,7 +2749,7 @@
       "A Saturday volunteer shift can block a paid shift. Forgone wage income is a standard opportunity cost of unpaid work.\n\nSo the statement is True.",
       "Unpriced leisure, study, or care work still uses scarce time. A price tag is not required for opportunity cost.\n\nSo the statement is False.",
       "Charity describes the motive; economics still applies whenever scarce hours are allocated. Volunteers economise even when no invoice is issued.\n\nSo the statement is False.",
-      "How happy you feel after volunteering is an outcome of the chosen path, not a measure of what you forwent.\n\nOpportunity cost looks at the next-best alternative left behind, not post-choice mood.\n\nSo the statement is False."
+      "How happy you feel after volunteering is an outcome of the chosen path, not a measure of what you forwent. Opportunity cost looks at the next-best alternative left behind, not post-choice mood.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2778,7 +2778,7 @@
       "Foldable walls help only if both groups accept smaller spaces — stretching one room toward two uses under a capacity constraint. That is economising.\n\nSo the statement is True.",
       "One large room for one morning cannot host the client workshop and the internal session fully at once.\n\nSo the statement is True.",
       "The hub’s room choice is the same species of problem as a firm picking one of two marketing channels with limited budget.\n\nSo the statement is True.",
-      "Client revenue often ranks high, but “automatically overrides all internal benefits” is too strong.\n\nA critical compliance training or team launch can outweigh one hire fee on a given morning — ranking is a decision, not an automatic wipe-out of internal value.\n\nSo the statement is False."
+      "Client revenue often ranks high, but “automatically overrides all internal benefits” is too strong. A critical compliance training or team launch can outweigh one hire fee on a given morning — ranking is a decision, not an automatic wipe-out of internal value.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3445,7 +3445,7 @@
       "Growth, unemployment, inflation, and interest rates are the usual headline macro variables. The labour agency’s year-end jobs report sits in that same aggregate family.\n\nSo the statement is True.",
       "One restaurant weighing longer opening hours, studied alone, is a firm-level decision. That is microeconomics.\n\nSo the statement is True.",
       "Macro analysis links downturns to rising unemployment through weaker aggregate demand and related mechanisms. Explaining why joblessness climbs in a recession is part of that work.\n\nSo the statement is True.",
-      "Even at the macro level, economics still concerns decisions and outcomes under limited resources — labour, capital, and productive capacity for the economy as a whole.\n\nThe national jobs report is an aggregate lens on those scarce-resource outcomes, not a departure from the scarcity foundation.\n\nSo the statement is True."
+      "Even at the macro level, economics still concerns decisions and outcomes under limited resources — labour, capital, and productive capacity for the economy as a whole. The national jobs report is an aggregate lens on those scarce-resource outcomes, not a departure from the scarcity foundation.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"

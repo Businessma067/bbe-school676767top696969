@@ -20,7 +20,7 @@
     ],
     "tactical_explanations": [
       "Services sit inside the marketing product definition. A consultancy hour or a maintenance visit sold to a customer is still a product even though nothing physical changes hands.\n\nPhysical goods alone are too narrow.\n\nSo the statement is False.",
-      "In marketing language a product is every good and/or service that can be exchanged to fulfil customers’ wishes and needs.\n\nMerchandise and services both count once that exchange is on the table.\n\nSo the statement is True.",
+      "In marketing language a product is every good and/or service that can be exchanged to fulfil customers’ wishes and needs. Merchandise and services both count once that exchange is on the table.\n\nSo the statement is True.",
       "Producer versus consumer turns on who buys, not on whether the item left a factory.\n\nA printer sold to another firm is a producer product; the same model sold to a household is a consumer product. Factory origin does not decide the label.\n\nSo the statement is False.",
       "Retail packaging size does not define a consumer product. Household versus business buyer does.\n\nA small bag sold to a supermarket shopper can be consumer; a bulk sack sold to a restaurant can be producer — packaging is not the test.\n\nSo the statement is False.",
       "Households are visible printer users, but that does not freeze every printer as a consumer product.\n\nAn office printer bought by a logistics firm is a producer product; the identical model sold for home use is a consumer product. “Always” fails the buyer test.\n\nSo the statement is False."
@@ -48,10 +48,10 @@
       true
     ],
     "tactical_explanations": [
-      "Manufacturer supply chains do not lock a printer into the producer-product box.\n\nSold to a private household for home use, that printer is a consumer product even though a factory made it for commercial distribution.\n\nSo the statement is False.",
+      "Manufacturer supply chains do not lock a printer into the producer-product box. Sold to a private household for home use, that printer is a consumer product even though a factory made it for commercial distribution.\n\nSo the statement is False.",
       "Marketing’s product idea is simple: any good or service offered through exchange to satisfy customer wishes and needs.\n\nSo the statement is True.",
-      "Tangible goods and intangible services both qualify once they are exchanged with customers.\n\nA printer and a support contract can each be products under that rule.\n\nSo the statement is True.",
-      "Introductory marketing treats other businesses and private households as legitimate customers of products.\n\nB2B and B2C are both inside the frame.\n\nSo the statement is True.",
+      "Tangible goods and intangible services both qualify once they are exchanged with customers. A printer and a support contract can each be products under that rule.\n\nSo the statement is True.",
+      "Introductory marketing treats other businesses and private households as legitimate customers of products. B2B and B2C are both inside the frame.\n\nSo the statement is True.",
       "Producer products are the goods and services one business sells to another in business-to-business exchange.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -78,7 +78,7 @@
     ],
     "tactical_explanations": [
       "Consumer products are goods and services sold to consumers or private households in business-to-consumer exchange.\n\nSo the statement is True.",
-      "Lack of physical form does not eject computer support from the product set.\n\nWhen support is sold to customers, marketing still calls it a product — service form, not an exception.\n\nSo the statement is False.",
+      "Lack of physical form does not eject computer support from the product set. When support is sold to customers, marketing still calls it a product — service form, not an exception.\n\nSo the statement is False.",
       "Business-to-business marketing is the channel that carries producer products between firms.\n\nSo the statement is True.",
       "Business-to-consumer marketing is the channel that carries consumer products to private households.\n\nSo the statement is True.",
       "Buyer use decides the label. A printer bought for office operations by a business is a producer product even when an identical home model sits in the catalogue.\n\nSo the statement is True."
@@ -106,10 +106,10 @@
       true
     ],
     "tactical_explanations": [
-      "Free after-sales advice may help the customer, but without payment or another form of exchange it is not a marketed product in this chapter’s sense.\n\nSatisfaction alone does not create product status.\n\nSo the statement is False.",
+      "Free after-sales advice may help the customer, but without payment or another form of exchange it is not a marketed product in this chapter’s sense. Satisfaction alone does not create product status.\n\nSo the statement is False.",
       "Private home use puts a printer in the consumer-product category, even when offices buy the same model as a producer product.\n\nSo the statement is True.",
       "Computer support sold mainly to private households is a consumer product delivered as a service.\n\nSo the statement is True.",
-      "Moving office supplies between departments inside one company is an internal transfer, not a market exchange with an outside customer.\n\nThat move is not a product in the marketing sense.\n\nSo the statement is False.",
+      "Moving office supplies between departments inside one company is an internal transfer, not a market exchange with an outside customer. That move is not a product in the marketing sense.\n\nSo the statement is False.",
       "Computer support sold to other businesses is a producer product in service form — firm-to-firm exchange.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -135,8 +135,8 @@
       true
     ],
     "tactical_explanations": [
-      "B2B and B2C name the customer relationship, not the production technology on the factory floor.\n\nWho purchases — firm or household — sets those labels.\n\nSo the statement is False.",
-      "Exchange is required before marketing treats a good or service as a product.\n\nDesire without a trade is not enough.\n\nSo the statement is True.",
+      "B2B and B2C name the customer relationship, not the production technology on the factory floor. Who purchases — firm or household — sets those labels.\n\nSo the statement is False.",
+      "Exchange is required before marketing treats a good or service as a product. Desire without a trade is not enough.\n\nSo the statement is True.",
       "A maintenance contract exchanged to fulfil customer needs is a product even though it is a service.\n\nSo the statement is True.",
       "Equipment and materials count as products when they are exchanged to fulfil customer wishes and needs.\n\nSo the statement is True.",
       "A corporate client buying a printer for commercial use is another business, so the sale is a producer product.\n\nSo the statement is True."
@@ -165,7 +165,7 @@
     ],
     "tactical_explanations": [
       "A private household or individual consumer purchasing a printer places that sale in the consumer-product category.\n\nSo the statement is True.",
-      "One printer design can be billed as a producer product to a corporate client and as a consumer product to a household.\n\nThe buyer in that transaction flips the label without redesigning the machine.\n\nSo the statement is True.",
+      "One printer design can be billed as a producer product to a corporate client and as a consumer product to a household. The buyer in that transaction flips the label without redesigning the machine.\n\nSo the statement is True.",
       "Firm-to-firm exchange of a printer with a corporate client is business-to-business, and the item is a producer product.\n\nSo the statement is True.",
       "Firm-to-household exchange of a printer is business-to-consumer, and the item is a consumer product.\n\nSo the statement is True.",
       "Commercial operations for a corporate client put the printer among producer products, not among household consumer products.\n\nSo the statement is True."
@@ -194,10 +194,10 @@
     ],
     "tactical_explanations": [
       "Other businesses are customers too.\n\nSo the statement is False.",
-      "A gift with no exchange may please the recipient, but marketing reserves “product” for offerings traded with customers.\n\nHanding someone a free printer as a present does not turn that gift into a marketed product under the exchange test.\n\nSo the statement is False.",
+      "A gift with no exchange may please the recipient, but marketing reserves “product” for offerings traded with customers. Handing someone a free printer as a present does not turn that gift into a marketed product under the exchange test.\n\nSo the statement is False.",
       "Portability does not create a consumer product. A compact printer sold to an office is still a producer product; size is not the test.\n\nSo the statement is False.",
       "Personal or domestic use by a private household puts the printer in the consumer-product category rather than the producer category.\n\nSo the statement is True.",
-      "Weight or bulk does not create a producer product.\n\nA heavy machine sold to a household for home use remains a consumer product; mass is irrelevant to B2B versus B2C.\n\nSo the statement is False."
+      "Weight or bulk does not create a producer product. A heavy machine sold to a household for home use remains a consumer product; mass is irrelevant to B2B versus B2C.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -223,7 +223,7 @@
     ],
     "tactical_explanations": [
       "Services sold only to businesses are producer products. Ultimate human beneficiaries do not re-label firm-to-firm exchange as consumer.\n\nSo the statement is False.",
-      "A corporate client is a business buyer, so the printer is a producer product.\n\nSaying every sale “ultimately serves human needs” does not flip that B2B purchase into a consumer product.\n\nSo the statement is False.",
+      "A corporate client is a business buyer, so the printer is a producer product. Saying every sale “ultimately serves human needs” does not flip that B2B purchase into a consumer product.\n\nSo the statement is False.",
       "Exchanging a printer to meet a corporate client’s operational needs creates a marketed product on the producer side.\n\nSo the statement is True.",
       "The seller being a business firm is true of almost every marketed offering. A private household buyer still makes that printer a consumer product, not a producer product.\n\nSo the statement is False.",
       "Design can stay fixed while the buyer changes. Corporate sale → producer; household sale → consumer.\n\nOne permanent label for all buyers fights that switch.\n\nSo the statement is False."
@@ -281,7 +281,7 @@
     ],
     "tactical_explanations": [
       "Whether the invoice goes to a corporate client (B2B) or a private household (B2C), an exchanged printer is still a product in marketing terms.\n\nSo the statement is True.",
-      "The same consultancy can book the printer under producer products for a corporate client and under consumer products for a private household.\n\nBuyer channel splits the catalogue row.\n\nSo the statement is True.",
+      "The same consultancy can book the printer under producer products for a corporate client and under consumer products for a private household. Buyer channel splits the catalogue row.\n\nSo the statement is True.",
       "Fulfilment of customer wishes and needs is the purpose that turns an exchanged printer into a marketing product.\n\nSo the statement is True.",
       "Trading the printer with a corporate client or a private household creates exchange value when it satisfies identifiable demand on either side.\n\nSo the statement is True.",
       "A manufacturing firm buying a computer for commercial use is another business, so that sale is a producer product.\n\nSo the statement is True."
@@ -313,7 +313,7 @@
       "Businesses have operational wishes and needs. A printer sold to a corporate client is still a product — a producer product — not an exclusion from the product set.\n\nSo the statement is False.",
       "Households buy products for private use. A printer sold to a private household is a consumer product, not a gift outside marketing.\n\nSo the statement is False.",
       "One computer specification can be producer for a manufacturing firm and consumer for a family home, depending on who pays.\n\nSo the statement is True.",
-      "Branch-to-branch transfers inside one corporation never leave the firm as a market exchange.\n\nWithout an outside customer, that printer move is not a marketed product.\n\nSo the statement is False."
+      "Branch-to-branch transfers inside one corporation never leave the firm as a market exchange. Without an outside customer, that printer move is not a marketed product.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -339,7 +339,7 @@
     ],
     "tactical_explanations": [
       "Firm sells computer to manufacturing firm → B2B producer product.\n\nSo the statement is True.",
-      "Commercial operations for a manufacturing firm put the computer among producer products rather than household consumer products.\n\nThe buyer’s commercial role — not the machine’s appearance — is what keeps it off the consumer list.\n\nSo the statement is True.",
+      "Commercial operations for a manufacturing firm put the computer among producer products rather than household consumer products. The buyer’s commercial role — not the machine’s appearance — is what keeps it off the consumer list.\n\nSo the statement is True.",
       "Family home, personal use: consumer product.\n\nSo the statement is True.",
       "Meeting a manufacturing firm’s operational needs through exchange places the computer in the producer-product category.\n\nSo the statement is True.",
       "When the family home’s personal wishes are met by that paid computer, marketing parks the sale in the consumer-product category.\n\nSo the statement is True."
@@ -367,7 +367,7 @@
       true
     ],
     "tactical_explanations": [
-      "B2B hinges on the corporate client as purchaser, not on which industry the seller sits in.\n\nChange the buyer to a household and the same seller’s printer becomes B2C.\n\nSo the statement is False.",
+      "B2B hinges on the corporate client as purchaser, not on which industry the seller sits in. Change the buyer to a household and the same seller’s printer becomes B2C.\n\nSo the statement is False.",
       "Sold from one business to a manufacturing firm for further commercial activity, the computer is a producer product.\n\nSo the statement is True.",
       "Colourful retail branding does not decide B2C. The private household as purchaser does.\n\nSo the statement is False.",
       "Sold to a family home for private consumption or domestic use, the computer is a consumer product.\n\nSo the statement is True.",
@@ -400,7 +400,7 @@
       "Company registration on the seller’s side does not create B2B.\n\nSo the statement is False.",
       "Producer products are not limited to raw materials. A finished printer sold to a corporate client is still a producer product because the buyer is a business.\n\nSo the statement is False.",
       "Everyday household printers still count as consumer products. Luxury branding is not part of the definition.\n\nA routine model sold to a private household is B2C consumer regardless of how plain the packaging looks.\n\nSo the statement is False.",
-      "Invoice the manufacturing firm and the computer sits under producer products; invoice the family home and it sits under consumer products.\n\nSame item, two customer channels.\n\nSo the statement is True."
+      "Invoice the manufacturing firm and the computer sits under producer products; invoice the family home and it sits under consumer products. Same item, two customer channels.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -426,10 +426,10 @@
     ],
     "tactical_explanations": [
       "An exchanged computer becomes a marketing product because it fulfils customer wishes and needs.\n\nSo the statement is True.",
-      "A campaign can create awareness, yet the printer becomes a product only when it is exchanged with a customer.\n\nLaunch-day advertising is not the moment product status begins.\n\nSo the statement is False.",
-      "A manufacturing firm is a business buyer, so the computer is a producer product.\n\nUltimate human needs do not reclassify that B2B purchase as consumer.\n\nSo the statement is False.",
+      "A campaign can create awareness, yet the printer becomes a product only when it is exchanged with a customer. Launch-day advertising is not the moment product status begins.\n\nSo the statement is False.",
+      "A manufacturing firm is a business buyer, so the computer is a producer product. Ultimate human needs do not reclassify that B2B purchase as consumer.\n\nSo the statement is False.",
       "The seller being a business firm does not make a family-home computer a producer product. The household is a private consumer, so the sale is B2C.\n\nSo the statement is False.",
-      "The same computer can be producer for a manufacturing firm and consumer for a family home with no design change.\n\nA single permanent label ignores that buyer switch.\n\nSo the statement is False."
+      "The same computer can be producer for a manufacturing firm and consumer for a family home with no design change. A single permanent label ignores that buyer switch.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -485,9 +485,9 @@
     "tactical_explanations": [
       "Logistics company as purchaser → producer product.\n\nSo the statement is True.",
       "A resident purchasing a desk is a private household or individual consumer, so the desk is a consumer product.\n\nSo the statement is True.",
-      "One desk design can be producer for a logistics company and consumer for a resident, depending on who buys.\n\nNothing about the timber or finish has to change for that dual labelling to work.\n\nSo the statement is True.",
+      "One desk design can be producer for a logistics company and consumer for a resident, depending on who buys. Nothing about the timber or finish has to change for that dual labelling to work.\n\nSo the statement is True.",
       "Firm-to-firm exchange of a desk with a logistics company is business-to-business, and the item is a producer product.\n\nSo the statement is True.",
-      "Commercial operations for a logistics company put the desk among producer products rather than household consumer products.\n\nA warehouse office desk is not reclassified as consumer just because similar models appear in homes.\n\nSo the statement is True."
+      "Commercial operations for a logistics company put the desk among producer products rather than household consumer products. A warehouse office desk is not reclassified as consumer just because similar models appear in homes.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -516,7 +516,7 @@
       "Internal branch transfers of a computer stay inside the corporation. No outside exchange means no marketed product.\n\nSo the statement is False.",
       "Meeting a logistics company’s operational needs through exchange places the desk in the producer-product category.\n\nSo the statement is True.",
       "Meeting a resident’s personal wishes through exchange places the desk in the consumer-product category.\n\nSo the statement is True.",
-      "B2B classification follows the manufacturing firm as purchaser, not the seller’s industry code.\n\nSwap the buyer to a household and the same computer seller would be in B2C.\n\nSo the statement is False."
+      "B2B classification follows the manufacturing firm as purchaser, not the seller’s industry code. Swap the buyer to a household and the same computer seller would be in B2C.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -600,7 +600,7 @@
     ],
     "tactical_explanations": [
       "Restaurant chain buys the vehicle → B2B producer product.\n\nSo the statement is True.",
-      "Commercial operations for a restaurant chain put the vehicle among producer products rather than household consumer products.\n\nDelivery vans on a restaurant account stay producer even if families drive similar models privately.\n\nSo the statement is True.",
+      "Commercial operations for a restaurant chain put the vehicle among producer products rather than household consumer products. Delivery vans on a restaurant account stay producer even if families drive similar models privately.\n\nSo the statement is True.",
       "Individual consumer, domestic use: consumer product.\n\nSo the statement is True.",
       "Meeting a restaurant chain’s operational needs through exchange places the vehicle in the producer-product category.\n\nSo the statement is True.",
       "When an individual consumer’s personal wishes are met by that purchase, the vehicle sits in the consumer-product category.\n\nSo the statement is True."
@@ -632,7 +632,7 @@
       "A family home is a private consumer. The seller’s company registration does not flip that computer sale into B2B.\n\nSo the statement is False.",
       "Finished computers sold to manufacturing firms are producer products. The “raw materials only” rule is too narrow.\n\nSo the statement is False.",
       "Sold from one business to a restaurant chain for further commercial activity, the vehicle is a producer product.\n\nSo the statement is True.",
-      "Luxury is not a membership rule for consumer products.\n\nA plain, routine computer sold to a family home is still a consumer product under B2C exchange.\n\nSo the statement is False."
+      "Luxury is not a membership rule for consumer products. A plain, routine computer sold to a family home is still a consumer product under B2C exchange.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -658,8 +658,8 @@
     ],
     "tactical_explanations": [
       "Sold to an individual consumer for private consumption or domestic use, the vehicle is a consumer product.\n\nSo the statement is True.",
-      "When a computer is traded with a customer it is a product — the ad launch date does not decide that.\n\nDemand may grow from promotion, but exchange is what marketing counts.\n\nSo the statement is False.",
-      "A logistics company is a business buyer, so the desk is a producer product.\n\nUltimate human needs do not turn that B2B sale into a consumer product.\n\nSo the statement is False.",
+      "When a computer is traded with a customer it is a product — the ad launch date does not decide that. Demand may grow from promotion, but exchange is what marketing counts.\n\nSo the statement is False.",
+      "A logistics company is a business buyer, so the desk is a producer product. Ultimate human needs do not turn that B2B sale into a consumer product.\n\nSo the statement is False.",
       "B2B with a restaurant chain or B2C with an individual consumer — either way, an exchanged vehicle is a product.\n\nSo the statement is True.",
       "Invoice the restaurant chain and the vehicle sits under producer products; invoice the individual consumer and it sits under consumer products.\n\nSo the statement is True."
     ],
@@ -689,7 +689,7 @@
       "An exchanged vehicle becomes a marketing product because it fulfils customer wishes and needs.\n\nSo the statement is True.",
       "The seller being a business firm does not make a resident’s desk a producer product. The resident is a private consumer, so the sale is B2C.\n\nSo the statement is False.",
       "Design can stay fixed while the buyer changes. Logistics company → producer desk; resident → consumer desk.\n\nOne fixed label for all buyers is too rigid.\n\nSo the statement is False.",
-      "Desks are often physical goods, but that is not the gatekeeper for product status — and services exchanged with customers are products too.\n\nSaying a desk is “not a product” unless it is a manufactured physical good misstates the marketing definition.\n\nSo the statement is False.",
+      "Desks are often physical goods, but that is not the gatekeeper for product status — and services exchanged with customers are products too. Saying a desk is “not a product” unless it is a manufactured physical good misstates the marketing definition.\n\nSo the statement is False.",
       "Trading the vehicle with a restaurant chain or an individual consumer creates exchange value when it satisfies identifiable customer demand.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -717,7 +717,7 @@
     "tactical_explanations": [
       "A construction contractor buying a software licence for commercial use is another business, so the licence is a producer product.\n\nSo the statement is True.",
       "Desire without a trade is not enough for the desk.\n\nSo the statement is False.",
-      "Logistics companies have operational wishes and needs just as households do.\n\nSelling them a desk still creates a marketed product — a producer product — rather than shutting business buyers out of the product concept.\n\nSo the statement is False.",
+      "Logistics companies have operational wishes and needs just as households do. Selling them a desk still creates a marketed product — a producer product — rather than shutting business buyers out of the product concept.\n\nSo the statement is False.",
       "Residents buy products for private use. A desk sold to a resident is a consumer product, not a gift outside marketing.\n\nSo the statement is False.",
       "A household shopper purchasing a software licence is a private consumer, so the licence is a consumer product.\n\nSo the statement is True."
     ],
@@ -747,7 +747,7 @@
       "One software licence can be producer for a construction contractor and consumer for a household shopper, depending on who buys.\n\nSo the statement is True.",
       "Firm-to-firm exchange of a software licence with a construction contractor is business-to-business, and the item is a producer product.\n\nSo the statement is True.",
       "Commercial operations for a construction contractor put the software licence among producer products rather than household consumer products.\n\nSo the statement is True.",
-      "Moving a desk between branches inside one corporation is an internal transfer, not a sale to an outside customer.\n\nThat move is not a marketed product.\n\nSo the statement is False.",
+      "Moving a desk between branches inside one corporation is an internal transfer, not a sale to an outside customer. That move is not a marketed product.\n\nSo the statement is False.",
       "Personal or domestic use by a household shopper puts the software licence among consumer products rather than producer products.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -777,7 +777,7 @@
       "B2B turns on the logistics company as purchaser. The seller’s industry label does not override purchaser identity for a desk sale.\n\nSo the statement is False.",
       "Meeting a household shopper’s personal wishes through exchange places the software licence in the consumer-product category.\n\nSo the statement is True.",
       "B2C turns on the resident as purchaser, not on colourful retail branding around the desk.\n\nSo the statement is False.",
-      "Money changing hands on a logistics-company desk invoice only shows payment occurred.\n\nThe buyer remains a business, so the sale stays B2B producer, not B2C.\n\nSo the statement is False."
+      "Money changing hands on a logistics-company desk invoice only shows payment occurred. The buyer remains a business, so the sale stays B2B producer, not B2C.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -805,7 +805,7 @@
       "Sold from one business to a construction contractor for further commercial activity, the software licence is a producer product.\n\nSo the statement is True.",
       "Resident buyer → B2C. Seller’s company papers do not flip it to B2B.\n\nSo the statement is False.",
       "Sold to a household shopper for private consumption or domestic use, the software licence is a consumer product.\n\nSo the statement is True.",
-      "Producer products include finished goods sold to businesses.\n\nA finished desk sold to a logistics company is still a producer product; raw materials are only one slice of that set.\n\nSo the statement is False.",
+      "Producer products include finished goods sold to businesses. A finished desk sold to a logistics company is still a producer product; raw materials are only one slice of that set.\n\nSo the statement is False.",
       "A routine desk sold to a resident is still a consumer product. Luxury status is not required.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -834,7 +834,7 @@
       "Advertising may precede demand, but the desk becomes a product when it is exchanged with a customer.\n\nSo the statement is False.",
       "Whether the software licence goes to a construction contractor (B2B) or a household shopper (B2C), an exchanged licence is still a product.\n\nSo the statement is True.",
       "A consultancy can book the software licence under producer products for a construction contractor and under consumer products for a household shopper.\n\nSo the statement is True.",
-      "A restaurant chain is a business buyer, so the vehicle is a producer product.\n\nUltimate human needs do not re-label that B2B purchase as consumer.\n\nSo the statement is False.",
+      "A restaurant chain is a business buyer, so the vehicle is a producer product. Ultimate human needs do not re-label that B2B purchase as consumer.\n\nSo the statement is False.",
       "Fulfilment of customer wishes and needs is the purpose that makes an exchanged software licence a marketing product.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -863,7 +863,7 @@
       "Trading a software licence with a construction contractor or a household shopper creates exchange value when it satisfies identifiable demand.\n\nSo the statement is True.",
       "A retail chain buying a fabric roll for commercial use is another business, so the roll is a producer product.\n\nSo the statement is True.",
       "A domestic customer purchasing a fabric roll is a private household buyer, so the roll is a consumer product.\n\nSo the statement is True.",
-      "The same fabric roll can be marketed as a producer product to a retail chain and as a consumer product to a domestic customer.\n\nBuyer identity switches the label.\n\nSo the statement is True.",
+      "The same fabric roll can be marketed as a producer product to a retail chain and as a consumer product to a domestic customer. Buyer identity switches the label.\n\nSo the statement is True.",
       "Exchanging a fabric roll with a retail chain is business-to-business, and the item is a producer product.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -890,7 +890,7 @@
     ],
     "tactical_explanations": [
       "Domestic customer → B2C consumer product.\n\nSo the statement is True.",
-      "Commercial operations for a retail chain put the fabric roll among producer products rather than household consumer products.\n\nWholesale rolls for store stock stay producer even when craft shops sell remnants to hobbyists.\n\nSo the statement is True.",
+      "Commercial operations for a retail chain put the fabric roll among producer products rather than household consumer products. Wholesale rolls for store stock stay producer even when craft shops sell remnants to hobbyists.\n\nSo the statement is True.",
       "Personal or domestic use by a domestic customer puts the fabric roll among consumer products rather than producer products.\n\nSo the statement is True.",
       "Meeting a retail chain’s operational needs through exchange places the fabric roll in the producer-product category.\n\nSo the statement is True.",
       "When a domestic customer’s personal wishes are met by that fabric purchase, marketing records a consumer product.\n\nSo the statement is True."
@@ -921,8 +921,8 @@
       "The seller being a business firm does not make an individual consumer’s vehicle a producer product. The buyer is a private consumer, so the sale is B2C.\n\nSo the statement is False.",
       "Sold from one business to a retail chain for further commercial activity, the fabric roll is a producer product.\n\nSo the statement is True.",
       "Sold to a domestic customer for private consumption or domestic use, the fabric roll is a consumer product.\n\nSo the statement is True.",
-      "The same vehicle can be producer for a restaurant chain and consumer for an individual with no design change.\n\nLocking one fixed label for all buyers is wrong.\n\nSo the statement is False.",
-      "Vehicles are typically physical goods, but product status does not require “manufactured physical good” as a gatekeeper — and exchanged services are products too.\n\nThe claim is too narrow.\n\nSo the statement is False."
+      "The same vehicle can be producer for a restaurant chain and consumer for an individual with no design change. Locking one fixed label for all buyers is wrong.\n\nSo the statement is False.",
+      "Vehicles are typically physical goods, but product status does not require “manufactured physical good” as a gatekeeper — and exchanged services are products too. The claim is too narrow.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -976,7 +976,7 @@
       false
     ],
     "tactical_explanations": [
-      "Shifting a vehicle between branches inside one corporation never leaves the firm as a market exchange.\n\nInternal transfers are not marketed products.\n\nSo the statement is False.",
+      "Shifting a vehicle between branches inside one corporation never leaves the firm as a market exchange. Internal transfers are not marketed products.\n\nSo the statement is False.",
       "An exchanged fabric roll becomes a marketing product because it fulfils customer wishes and needs.\n\nSo the statement is True.",
       "B2B hinges on the restaurant chain as purchaser, not on the seller’s industry.\n\nSo the statement is False.",
       "Colourful retail branding does not decide B2C. The individual consumer as purchaser does for a vehicle sale.\n\nSo the statement is False.",
@@ -1009,7 +1009,7 @@
       "A hospital trust buying a cleaning contract for commercial/organisational use is another business, so the contract is a producer product.\n\nSo the statement is True.",
       "A private buyer purchasing a cleaning contract is a private household or individual consumer, so the contract is a consumer product.\n\nSo the statement is True.",
       "Individual consumer remains a private buyer.\n\nSo the statement is False.",
-      "Finished vehicles sold to restaurant chains are producer products.\n\nLimiting producer products to raw materials alone would wrongly eject every finished van, laptop, or desk from B2B classification.\n\nSo the statement is False."
+      "Finished vehicles sold to restaurant chains are producer products. Limiting producer products to raw materials alone would wrongly eject every finished van, laptop, or desk from B2B classification.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1064,10 +1064,10 @@
     ],
     "tactical_explanations": [
       "Personal or domestic use by a private buyer puts the cleaning contract among consumer products rather than producer products.\n\nSo the statement is True.",
-      "A construction contractor is a business buyer, so the software licence is a producer product.\n\nUltimate human needs do not turn that B2B sale into a consumer product.\n\nSo the statement is False.",
+      "A construction contractor is a business buyer, so the software licence is a producer product. Ultimate human needs do not turn that B2B sale into a consumer product.\n\nSo the statement is False.",
       "The seller being a business firm does not make a household shopper’s software licence a producer product. The shopper is a private consumer.\n\nSo the statement is False.",
       "Design can stay fixed while the buyer changes. Contractor → producer licence; household shopper → consumer licence.\n\nOne permanent label for all buyers fights that switch.\n\nSo the statement is False.",
-      "Software licences are typically intangible services or rights, yet traded to meet customer needs they are still products.\n\nRequiring a manufactured physical good is too narrow.\n\nSo the statement is False."
+      "Software licences are typically intangible services or rights, yet traded to meet customer needs they are still products. Requiring a manufactured physical good is too narrow.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1093,7 +1093,7 @@
     ],
     "tactical_explanations": [
       "Hospital trust’s operational needs + exchange → producer-product cleaning contract.\n\nSo the statement is True.",
-      "Private buyer’s personal wishes + exchange → consumer-product cleaning contract.\n\nHousehold cleaning for a private buyer is not re-labelled producer just because the same crew also serves trusts.\n\nSo the statement is True.",
+      "Private buyer’s personal wishes + exchange → consumer-product cleaning contract. Household cleaning for a private buyer is not re-labelled producer just because the same crew also serves trusts.\n\nSo the statement is True.",
       "Sold from one business to a hospital trust for further commercial activity, the cleaning contract is a producer product.\n\nSo the statement is True.",
       "Sold to a private buyer for private consumption or domestic use, the cleaning contract is a consumer product.\n\nSo the statement is True.",
       "Whether the cleaning contract goes to a hospital trust (B2B) or a private buyer (B2C), an exchanged contract is still a product.\n\nSo the statement is True."
@@ -1153,7 +1153,7 @@
       "A local authority buying a training course for organisational use is another business (organisational) buyer, so the course is a producer product.\n\nSo the statement is True.",
       "Household shoppers buy products for private use. A software licence sold to a household shopper is a consumer product, not a gift outside marketing.\n\nSo the statement is False.",
       "A home user purchasing a training course is a private household or individual consumer, so the course is a consumer product.\n\nSo the statement is True.",
-      "The same training course can be marketed as a producer product to a local authority and as a consumer product to a home user.\n\nBuyer channel splits the label.\n\nSo the statement is True.",
+      "The same training course can be marketed as a producer product to a local authority and as a consumer product to a home user. Buyer channel splits the label.\n\nSo the statement is True.",
       "Exchanging a training course with a local authority is business-to-business, and the item is a producer product.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -1182,7 +1182,7 @@
       "Home-user training course → B2C consumer product.\n\nSo the statement is True.",
       "Commercial operations for a local authority put the training course among producer products rather than household consumer products.\n\nSo the statement is True.",
       "Personal or domestic use by a home user puts the training course among consumer products rather than producer products.\n\nSo the statement is True.",
-      "Branch-to-branch transfers of a software licence inside one corporation stay inside the firm.\n\nNo outside customer pays, so that internal move is not a marketed product under the exchange test.\n\nSo the statement is False.",
+      "Branch-to-branch transfers of a software licence inside one corporation stay inside the firm. No outside customer pays, so that internal move is not a marketed product under the exchange test.\n\nSo the statement is False.",
       "Meeting a local authority’s operational needs through exchange places the training course in the producer-product category.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -1208,7 +1208,7 @@
       true
     ],
     "tactical_explanations": [
-      "B2B classification follows the construction contractor as purchaser, not the seller’s industry code.\n\nSwap the buyer to a household and the same software seller would be in B2C.\n\nSo the statement is False.",
+      "B2B classification follows the construction contractor as purchaser, not the seller’s industry code. Swap the buyer to a household and the same software seller would be in B2C.\n\nSo the statement is False.",
       "Meeting a home user’s personal wishes through exchange places the training course in the consumer-product category.\n\nSo the statement is True.",
       "Colourful retail branding is irrelevant to B2C. The household shopper as purchaser decides for a software-licence sale.\n\nSo the statement is False.",
       "Sold from one business to a local authority for further commercial activity, the training course is a producer product.\n\nSo the statement is True.",
@@ -1241,7 +1241,7 @@
       "A consultancy can book the training course under producer products for a local authority and under consumer products for a home user.\n\nSo the statement is True.",
       "Wishes and needs fulfilled via exchange make the training course a product.\n\nSo the statement is True.",
       "Trading the training course with a local authority or a home user creates exchange value when it satisfies identifiable customer demand.\n\nSo the statement is True.",
-      "An export buyer purchasing a broadband package for commercial use is another business, so the package is a producer product.\n\nCross-border does not change the B2B logic — purchaser identity still governs.\n\nSo the statement is True."
+      "An export buyer purchasing a broadband package for commercial use is another business, so the package is a producer product. Cross-border does not change the B2B logic — purchaser identity still governs.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1268,7 +1268,7 @@
     "tactical_explanations": [
       "Payment does not turn a contractor software sale into B2C. Business buyer → B2B.\n\nSo the statement is False.",
       "A household shopper is a private consumer. The seller’s company registration does not flip that software-licence sale into B2B.\n\nSo the statement is False.",
-      "A personal customer purchasing a broadband package is a private household or individual consumer, so the package is a consumer product.\n\nResidential broadband sits on the B2C side even when the provider also sells enterprise packages.\n\nSo the statement is True.",
+      "A personal customer purchasing a broadband package is a private household or individual consumer, so the package is a consumer product. Residential broadband sits on the B2C side even when the provider also sells enterprise packages.\n\nSo the statement is True.",
       "Finished software licences sold to construction contractors are producer products. Restricting producer products to raw materials alone is too narrow.\n\nSo the statement is False.",
       "A routine software licence sold to a household shopper is still a consumer product. Luxury status is not required.\n\nSo the statement is False."
     ],
@@ -1296,10 +1296,10 @@
     ],
     "tactical_explanations": [
       "A software licence is a product when exchanged with a customer. Promotion may help demand form, but the campaign itself does not confer product status.\n\nSo the statement is False.",
-      "A retail chain is a business buyer, so the fabric roll is a producer product.\n\nUltimate human needs do not reclassify that B2B purchase as consumer.\n\nSo the statement is False.",
+      "A retail chain is a business buyer, so the fabric roll is a producer product. Ultimate human needs do not reclassify that B2B purchase as consumer.\n\nSo the statement is False.",
       "The seller being a business firm does not make a domestic customer’s fabric roll a producer product. The domestic customer is a private consumer.\n\nSo the statement is False.",
       "One broadband package can be producer for an export buyer and consumer for a personal customer without any redesign.\n\nSo the statement is True.",
-      "The same fabric roll can be producer for a retail chain and consumer for a domestic customer with no design change.\n\nA single permanent label ignores that buyer switch.\n\nSo the statement is False."
+      "The same fabric roll can be producer for a retail chain and consumer for a domestic customer with no design change. A single permanent label ignores that buyer switch.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1324,7 +1324,7 @@
       false
     ],
     "tactical_explanations": [
-      "Even for a physical fabric roll, marketing does not reserve “product” for manufactured goods alone — and the roll traded to meet customer needs already qualifies.\n\nThe manufactured-physical-good gatekeeper is too narrow.\n\nSo the statement is False.",
+      "Even for a physical fabric roll, marketing does not reserve “product” for manufactured goods alone — and the roll traded to meet customer needs already qualifies. The manufactured-physical-good gatekeeper is too narrow.\n\nSo the statement is False.",
       "Desire alone is not enough. Without an exchange with a customer, the fabric roll is not yet a marketed product.\n\nSo the statement is False.",
       "Retail chains have operational wishes and needs. Selling them a fabric roll still creates a product — a producer product.\n\nExcluding business buyers is wrong.\n\nSo the statement is False.",
       "Exchanging a broadband package with an export buyer is business-to-business, and the item is a producer product.\n\nSo the statement is True.",
@@ -1355,7 +1355,7 @@
     "tactical_explanations": [
       "Exchanging a broadband package with a personal customer is business-to-consumer, and the item is a consumer product.\n\nSo the statement is True.",
       "Commercial operations for an export buyer put the broadband package among producer products rather than household consumer products.\n\nSo the statement is True.",
-      "Moving a fabric roll between branches inside one corporation is an internal transfer, not a market exchange with an outside customer.\n\nThat move is not a marketed product.\n\nSo the statement is False.",
+      "Moving a fabric roll between branches inside one corporation is an internal transfer, not a market exchange with an outside customer. That move is not a marketed product.\n\nSo the statement is False.",
       "Personal or domestic use by a personal customer puts the broadband package among consumer products rather than producer products.\n\nSo the statement is True.",
       "Meeting an export buyer’s operational needs through exchange places the broadband package in the producer-product category.\n\nSo the statement is True."
     ],
@@ -1384,7 +1384,7 @@
     "tactical_explanations": [
       "Personal customer’s wishes + exchanged broadband → consumer product.\n\nSo the statement is True.",
       "Sold from one business to an export buyer for further commercial activity, the broadband package is a producer product.\n\nSo the statement is True.",
-      "B2B turns on the retail chain as purchaser.\n\nThe fabric seller’s industry code does not decide the producer label; swap in a household buyer and the same seller would be in B2C.\n\nSo the statement is False.",
+      "B2B turns on the retail chain as purchaser. The fabric seller’s industry code does not decide the producer label; swap in a household buyer and the same seller would be in B2C.\n\nSo the statement is False.",
       "Sold to a personal customer for private consumption or domestic use, the broadband package is a consumer product.\n\nSo the statement is True.",
       "B2C turns on the domestic customer as purchaser, not on colourful retail branding around the fabric roll.\n\nSo the statement is False."
     ],
@@ -1415,7 +1415,7 @@
       "Retail-chain fabric sale stays B2B despite payment.\n\nSo the statement is False.",
       "A domestic customer is a private consumer. Seller registration does not make the fabric-roll sale B2B.\n\nSo the statement is False.",
       "Finished fabric rolls sold to retail chains are producer products. The “raw materials only” rule is too narrow.\n\nSo the statement is False.",
-      "A routine fabric roll sold to a domestic customer is still a consumer product.\n\nLuxury fabric is not required — everyday metres for home sewing qualify under B2C.\n\nSo the statement is False."
+      "A routine fabric roll sold to a domestic customer is still a consumer product. Luxury fabric is not required — everyday metres for home sewing qualify under B2C.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1444,7 +1444,7 @@
       "Exchanged broadband fulfils wishes and needs → marketing product.\n\nSo the statement is True.",
       "Trading the broadband package with an export buyer or a personal customer creates exchange value when it satisfies identifiable demand.\n\nSo the statement is True.",
       "A warehouse operator buying a catering tray for commercial use is another business, so the tray is a producer product.\n\nSo the statement is True.",
-      "Advertising may precede demand, but the fabric roll becomes a product when it is exchanged with a customer.\n\nA catalogue launch without a trade does not yet create product status in this chapter’s sense.\n\nSo the statement is False."
+      "Advertising may precede demand, but the fabric roll becomes a product when it is exchanged with a customer. A catalogue launch without a trade does not yet create product status in this chapter’s sense.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1469,10 +1469,10 @@
       false
     ],
     "tactical_explanations": [
-      "A hospital trust is a business buyer, so the cleaning contract is a producer product (B2B).\n\nSaying every sale “ultimately serves human needs” does not flip a firm-to-firm purchase into a consumer product.\n\nSo the statement is False.",
+      "A hospital trust is a business buyer, so the cleaning contract is a producer product (B2B). Saying every sale “ultimately serves human needs” does not flip a firm-to-firm purchase into a consumer product.\n\nSo the statement is False.",
       "Who buys matters, not who sells. A private buyer takes the cleaning contract as a consumer product (B2C).\n\nThe seller being a business firm is true of almost every marketed offering and does not make the sale B2B.\n\nSo the statement is False.",
       "A household member buying a catering tray is a private consumer, so the tray is a consumer product.\n\nSo the statement is True.",
-      "Sell the catering tray to a warehouse canteen and it is a producer product; sell the same tray to a household and it is a consumer product.\n\nBuyer identity in that transaction sets the label, even when the tray itself looks identical.\n\nSo the statement is True.",
+      "Sell the catering tray to a warehouse canteen and it is a producer product; sell the same tray to a household and it is a consumer product. Buyer identity in that transaction sets the label, even when the tray itself looks identical.\n\nSo the statement is True.",
       "Design can stay fixed while the buyer changes. The cleaning contract is producer when a hospital trust pays and consumer when a household pays.\n\nOne fixed label for all buyers fights that buyer test.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -1529,8 +1529,8 @@
     "tactical_explanations": [
       "Personal or domestic use by a household member places the catering tray among consumer products, not producer products.\n\nSo the statement is True.",
       "Households buy products for private use all the time. A cleaning contract sold to a private buyer is a consumer product, not a gift outside the product set.\n\nSo the statement is False.",
-      "An internal branch-to-branch transfer never leaves the corporation as a market exchange.\n\nWithout an outside customer paying for the cleaning contract, it is not a marketed product.\n\nSo the statement is False.",
-      "B2B turns on the hospital trust as purchaser, not on which industry the seller sits in.\n\nChange the buyer to a household and the same seller’s cleaning contract becomes B2C.\n\nSo the statement is False.",
+      "An internal branch-to-branch transfer never leaves the corporation as a market exchange. Without an outside customer paying for the cleaning contract, it is not a marketed product.\n\nSo the statement is False.",
+      "B2B turns on the hospital trust as purchaser, not on which industry the seller sits in. Change the buyer to a household and the same seller’s cleaning contract becomes B2C.\n\nSo the statement is False.",
       "A warehouse operator buys the catering tray for operational needs, so the exchange is a producer-product sale.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -1588,7 +1588,7 @@
       "Sold to a household member for private or domestic use, the catering tray is a consumer product.\n\nSo the statement is True.",
       "Producer products are not limited to raw materials. A finished cleaning contract sold to a hospital trust is still a producer product because the buyer is a business.\n\nSo the statement is False.",
       "Whether the catering tray goes to a warehouse operator (B2B) or a household member (B2C), an exchanged offering that meets customer needs counts as a product.\n\nSo the statement is True.",
-      "Invoice the warehouse operator and the catering tray sits under producer products; invoice the household member and it sits under consumer products.\n\nSame item, two customer channels, two labels.\n\nSo the statement is True.",
+      "Invoice the warehouse operator and the catering tray sits under producer products; invoice the household member and it sits under consumer products. Same item, two customer channels, two labels.\n\nSo the statement is True.",
       "In marketing language, an exchanged catering tray is a product precisely because it fulfils customer wishes and needs.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -1615,8 +1615,8 @@
     ],
     "tactical_explanations": [
       "Consumer products are not a luxury-only club. A routine cleaning contract sold to a private buyer is still a consumer product.\n\nEveryday domestic purchases qualify whenever a household exchanges for them.\n\nSo the statement is False.",
-      "Advertising may raise awareness, but product status arrives with the exchange itself.\n\nA cleaning contract becomes a product when a customer pays for it, not when a campaign runs.\n\nSo the statement is False.",
-      "A local authority is an organisational buyer, so the training course is a producer product.\n\n“Every sale ultimately serves human needs” does not reclassify that B2B purchase as consumer.\n\nSo the statement is False.",
+      "Advertising may raise awareness, but product status arrives with the exchange itself. A cleaning contract becomes a product when a customer pays for it, not when a campaign runs.\n\nSo the statement is False.",
+      "A local authority is an organisational buyer, so the training course is a producer product. “Every sale ultimately serves human needs” does not reclassify that B2B purchase as consumer.\n\nSo the statement is False.",
       "Trading the catering tray with a warehouse operator or a household member creates exchange value when it satisfies identifiable demand on either side.\n\nSo the statement is True.",
       "The seller being a business firm does not make a home-user training course a producer product. The home user is a private consumer, so the course is B2C.\n\nSo the statement is False."
     ],
@@ -1644,7 +1644,7 @@
     ],
     "tactical_explanations": [
       "Network maintenance sold to an insurance company is firm-to-firm, so it is a producer product.\n\nSo the statement is True.",
-      "The training course can be producer for a local authority and consumer for a home user without any redesign.\n\nA single permanent label for every buyer ignores that switch.\n\nSo the statement is False.",
+      "The training course can be producer for a local authority and consumer for a home user without any redesign. A single permanent label for every buyer ignores that switch.\n\nSo the statement is False.",
       "Sold to a retired couple for personal use, network maintenance is a consumer product under B2C exchange.\n\nSo the statement is True.",
       "The insurance company pays for network maintenance to meet business needs, so the contract is a marketed product — on the producer side.\n\nSo the statement is True.",
       "The retired couple’s household wishes are met by an exchanged network maintenance visit, so that visit is a product as well — a consumer product.\n\nSo the statement is True."
@@ -1702,9 +1702,9 @@
     ],
     "tactical_explanations": [
       "Network maintenance provided to a retired couple for personal or domestic benefit is a consumer product.\n\nSo the statement is True.",
-      "Moving a training course between branches inside one corporation is an internal transfer, not a market exchange with an outside customer.\n\nThat move is not a marketed product.\n\nSo the statement is False.",
+      "Moving a training course between branches inside one corporation is an internal transfer, not a market exchange with an outside customer. That move is not a marketed product.\n\nSo the statement is False.",
       "B2B hinges on the local authority as buyer. The seller’s industry label does not override purchaser identity.\n\nSo the statement is False.",
-      "To the insurance company the network maintenance is a B2B producer product; to the retired couple it is a B2C consumer product.\n\nOne firm can run both lines.\n\nSo the statement is True.",
+      "To the insurance company the network maintenance is a B2B producer product; to the retired couple it is a B2C consumer product. One firm can run both lines.\n\nSo the statement is True.",
       "Whenever network maintenance is exchanged — with the insurance company or the retired couple — marketing counts it as a product.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -1789,9 +1789,9 @@
     ],
     "tactical_explanations": [
       "Payroll processing sold to a young professional for personal use is a consumer product under B2C exchange.\n\nSo the statement is True.",
-      "Product status follows the exchange with a customer, not the advertising launch date.\n\nA training course is a product when traded, whether or not a campaign created demand first.\n\nSo the statement is False.",
+      "Product status follows the exchange with a customer, not the advertising launch date. A training course is a product when traded, whether or not a campaign created demand first.\n\nSo the statement is False.",
       "An exchanged payroll-processing contract with an accounting partnership meets that firm’s business needs, so it counts as a product.\n\nSo the statement is True.",
-      "An export buyer is a business customer, so the broadband package is a producer product.\n\nUltimate human needs do not turn that B2B sale into a consumer product.\n\nSo the statement is False.",
+      "An export buyer is a business customer, so the broadband package is a producer product. Ultimate human needs do not turn that B2B sale into a consumer product.\n\nSo the statement is False.",
       "The young professional’s household wishes are met by paid payroll processing, so that visit is a marketed consumer product.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -1819,7 +1819,7 @@
     "tactical_explanations": [
       "Payroll processing under a commercial contract to an accounting partnership is a producer product.\n\nSo the statement is True.",
       "The same service sold to a young professional for personal or domestic benefit is a consumer product.\n\nSo the statement is True.",
-      "One supplier can invoice payroll processing as B2B producer to the partnership and as B2C consumer to the young professional.\n\nBuyer channel splits the label.\n\nSo the statement is True.",
+      "One supplier can invoice payroll processing as B2B producer to the partnership and as B2C consumer to the young professional. Buyer channel splits the label.\n\nSo the statement is True.",
       "Exchanged payroll processing is a product for either the accounting partnership or the young professional.\n\nSo the statement is True.",
       "Seller type does not freeze the label. A personal customer makes the broadband package a consumer product, not a producer product.\n\nSo the statement is False."
     ],
@@ -1846,7 +1846,7 @@
       true
     ],
     "tactical_explanations": [
-      "The same broadband package can be producer for an export buyer and consumer for a personal customer without any design change.\n\nA permanent single label is too rigid.\n\nSo the statement is False.",
+      "The same broadband package can be producer for an export buyer and consumer for a personal customer without any design change. A permanent single label is too rigid.\n\nSo the statement is False.",
       "Broadband is typically a service offering. It is still a product when exchanged, even though it is not a manufactured physical good sitting in a carton.\n\nSo the statement is False.",
       "Customer desire without exchange does not create a marketed product. The broadband package needs a trade with a buyer.\n\nSo the statement is False.",
       "Business buyers have wishes and needs. An export buyer purchasing broadband receives a producer product, not an exclusion from the product set.\n\nSo the statement is False.",
@@ -1905,7 +1905,7 @@
     ],
     "tactical_explanations": [
       "Equipment leasing sold to a shipping line is B2B, so it is a producer product.\n\nSo the statement is True.",
-      "B2B classification follows the export buyer as purchaser, not the seller’s industry code.\n\nSwap the buyer to a household and the same broadband seller would be in B2C.\n\nSo the statement is False.",
+      "B2B classification follows the export buyer as purchaser, not the seller’s industry code. Swap the buyer to a household and the same broadband seller would be in B2C.\n\nSo the statement is False.",
       "Equipment leasing sold to a suburban family for private use is B2C, so it is a consumer product.\n\nSo the statement is True.",
       "Colourful retail branding does not decide B2C. The personal customer as buyer does for the broadband package.\n\nSo the statement is False.",
       "An export buyer is a business customer. Money changing hands does not turn that broadband sale into B2C.\n\nSo the statement is False."
@@ -1937,7 +1937,7 @@
       "A suburban family’s household wishes met by paid equipment leasing likewise make that visit a product.\n\nSo the statement is True.",
       "Commercial equipment leasing to a shipping line sits among producer products.\n\nSo the statement is True.",
       "Equipment leasing for a suburban family’s personal or domestic benefit sits among consumer products.\n\nSo the statement is True.",
-      "The lessor can book the shipping-line contract as a B2B producer product and the family lease as a B2C consumer product.\n\nSame service family, two buyer types.\n\nSo the statement is True."
+      "The lessor can book the shipping-line contract as a B2B producer product and the family lease as a B2C consumer product. Same service family, two buyer types.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1964,9 +1964,9 @@
     "tactical_explanations": [
       "A personal customer makes the broadband package B2C. The seller’s company registration does not flip it to B2B.\n\nSo the statement is False.",
       "Whether the shipping line or the suburban family pays, exchanged equipment leasing counts as a product.\n\nSo the statement is True.",
-      "A shipping line buying equipment leasing is in B2B exchange for a producer-product service.\n\nFleet capacity for commercial haulage is an organisational purchase, not a household one.\n\nSo the statement is True.",
+      "A shipping line buying equipment leasing is in B2B exchange for a producer-product service. Fleet capacity for commercial haulage is an organisational purchase, not a household one.\n\nSo the statement is True.",
       "A suburban family buying equipment leasing is in B2C exchange for a consumer-product service.\n\nSo the statement is True.",
-      "Leasing is intangible, but traded to satisfy customer needs it still qualifies as a product.\n\nNothing about a physical warehouse SKU is required for that label.\n\nSo the statement is True."
+      "Leasing is intangible, but traded to satisfy customer needs it still qualifies as a product. Nothing about a physical warehouse SKU is required for that label.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2021,9 +2021,9 @@
     ],
     "tactical_explanations": [
       "A student renter’s household wishes met by paid staff training make that visit a marketed product.\n\nSo the statement is True.",
-      "Staff training under commercial contract to an engineering plant belongs with producer products.\n\nThe plant is buying organisational capability, not a household course.\n\nSo the statement is True.",
+      "Staff training under commercial contract to an engineering plant belongs with producer products. The plant is buying organisational capability, not a household course.\n\nSo the statement is True.",
       "Staff training for a student renter’s personal or domestic benefit belongs with consumer products.\n\nSo the statement is True.",
-      "The same academy can sell staff training as B2B producer to the plant and as B2C consumer to the student renter.\n\nTwo invoices, two customer types, two labels — the syllabus can stay identical.\n\nSo the statement is True.",
+      "The same academy can sell staff training as B2B producer to the plant and as B2C consumer to the student renter. Two invoices, two customer types, two labels — the syllabus can stay identical.\n\nSo the statement is True.",
       "Exchanged staff training is a product for either the engineering plant or the student renter.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -2051,7 +2051,7 @@
     "tactical_explanations": [
       "An engineering plant purchasing staff training is in B2B exchange for a producer-product service.\n\nSo the statement is True.",
       "A student renter purchasing staff training is in B2C exchange for a consumer-product service.\n\nSo the statement is True.",
-      "Staff training has no warehouse SKU, yet traded to meet customer needs it is still a product.\n\nIntangibility does not push it out of the product set.\n\nSo the statement is True.",
+      "Staff training has no warehouse SKU, yet traded to meet customer needs it is still a product. Intangibility does not push it out of the product set.\n\nSo the statement is True.",
       "Exchange via payment that transfers staff training to a customer with unmet needs is what makes it a marketing product.\n\nSo the statement is True.",
       "Security monitoring sold to a data-centre operator is firm-to-firm, so it is a producer product.\n\nSo the statement is True."
     ],
@@ -2108,7 +2108,7 @@
     ],
     "tactical_explanations": [
       "Advertising may precede demand, but the broadband package becomes a product when it is exchanged with a customer.\n\nSo the statement is False.",
-      "A warehouse operator is a business buyer, so the catering tray is a producer product.\n\nUltimate human needs do not re-label that B2B sale as consumer.\n\nSo the statement is False.",
+      "A warehouse operator is a business buyer, so the catering tray is a producer product. Ultimate human needs do not re-label that B2B sale as consumer.\n\nSo the statement is False.",
       "A household member buying a catering tray is a private consumer. The seller being a firm does not make the tray a producer product.\n\nSo the statement is False.",
       "Security monitoring for a self-employed artisan’s personal or domestic benefit is a consumer product.\n\nSo the statement is True.",
       "One provider can sell security monitoring as B2B producer to the data-centre operator and as B2C consumer to the artisan.\n\nSo the statement is True."
@@ -2138,7 +2138,7 @@
     "tactical_explanations": [
       "Exchanged security monitoring counts as a product whether the buyer is the data-centre operator or the self-employed artisan.\n\nSo the statement is True.",
       "A data-centre operator buying security monitoring is in B2B exchange for a producer-product service.\n\nSo the statement is True.",
-      "The catering tray can be producer for a warehouse and consumer for a household with no design change.\n\nLocking one fixed label for all buyers is wrong.\n\nSo the statement is False.",
+      "The catering tray can be producer for a warehouse and consumer for a household with no design change. Locking one fixed label for all buyers is wrong.\n\nSo the statement is False.",
       "A self-employed artisan buying security monitoring is in B2C exchange for a consumer-product service.\n\nSo the statement is True.",
       "Intangible security monitoring still qualifies as a product when traded to satisfy customer needs.\n\nSo the statement is True."
     ],
@@ -2225,7 +2225,7 @@
     "tactical_explanations": [
       "Document printing for a weekend gardener’s personal or domestic benefit is a consumer product.\n\nSo the statement is True.",
       "The print shop can invoice document printing as B2B producer to the advertising agency and as B2C consumer to the gardener.\n\nSo the statement is True.",
-      "Shifting a catering tray between branches inside one corporation is not a sale to an outside customer.\n\nInternal transfers are not marketed products.\n\nSo the statement is False.",
+      "Shifting a catering tray between branches inside one corporation is not a sale to an outside customer. Internal transfers are not marketed products.\n\nSo the statement is False.",
       "B2B turns on the warehouse operator as purchaser. The seller’s industry does not decide the producer label.\n\nSo the statement is False.",
       "B2C turns on the household member as purchaser, not on colourful retail branding around the catering tray.\n\nSo the statement is False."
     ],
@@ -2313,8 +2313,8 @@
       "The catering tray becomes a product when exchanged with a customer, not when an advertisement first creates demand.\n\nSo the statement is False.",
       "Cloud storage sold to a first-time buyer for personal use is a consumer product under B2C.\n\nSo the statement is True.",
       "A property manager paying for cloud storage to support operations is exchanging for a product.\n\nSo the statement is True.",
-      "An insurance company buying network maintenance is a business customer, so the service is a producer product.\n\nServices are not “always final consumption.”\n\nSo the statement is False.",
-      "A retired couple buying network maintenance is a household customer, so the service is a consumer product.\n\nThe provider being commercial does not flip that B2C sale into a producer product.\n\nSo the statement is False."
+      "An insurance company buying network maintenance is a business customer, so the service is a producer product. Services are not “always final consumption.”\n\nSo the statement is False.",
+      "A retired couple buying network maintenance is a household customer, so the service is a consumer product. The provider being commercial does not flip that B2C sale into a producer product.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2371,7 +2371,7 @@
       "Cloud storage under commercial contract to a property manager belongs with producer products.\n\nSo the statement is True.",
       "Cloud storage for a first-time buyer’s personal or domestic benefit belongs with consumer products.\n\nSo the statement is True.",
       "One vendor can sell cloud storage as B2B producer to the property manager and as B2C consumer to the first-time buyer.\n\nSo the statement is True.",
-      "Exchanged cloud storage is a product for either the property manager or the first-time buyer.\n\nChannel changes the producer/consumer label, not whether a product exists.\n\nSo the statement is True.",
+      "Exchanged cloud storage is a product for either the property manager or the first-time buyer. Channel changes the producer/consumer label, not whether a product exists.\n\nSo the statement is True.",
       "A property manager purchasing cloud storage is in B2B exchange for a producer-product service.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -2398,7 +2398,7 @@
     ],
     "tactical_explanations": [
       "A first-time buyer purchasing cloud storage is in B2C exchange for a consumer-product service.\n\nSo the statement is True.",
-      "Employees performing network maintenance for their own employer are not selling a product to an outside customer.\n\nThat internal work is not a B2B producer-product sale.\n\nSo the statement is False.",
+      "Employees performing network maintenance for their own employer are not selling a product to an outside customer. That internal work is not a B2B producer-product sale.\n\nSo the statement is False.",
       "Intangible cloud storage still qualifies as a product when traded to satisfy customer needs.\n\nSo the statement is True.",
       "Payment transferring cloud storage to a customer with unmet wishes or needs is how exchange creates a marketing product.\n\nSo the statement is True.",
       "Need fulfilment without payment or exchange does not create a marketed product. Network maintenance must be traded with a customer.\n\nSo the statement is False."
@@ -2428,7 +2428,7 @@
     "tactical_explanations": [
       "Legal advice sold to a law firm is B2B, so it is a producer product.\n\nSo the statement is True.",
       "Legal advice sold to a community volunteer for personal use is B2C, so it is a consumer product.\n\nSo the statement is True.",
-      "An insurance company buying network maintenance is a business buyer, so the service is a producer product.\n\nImmediate consumption of a service does not turn B2B into a consumer-product sale.\n\nSo the statement is False.",
+      "An insurance company buying network maintenance is a business buyer, so the service is a producer product. Immediate consumption of a service does not turn B2B into a consumer-product sale.\n\nSo the statement is False.",
       "A law firm paying for legal advice to meet professional needs is exchanging for a product.\n\nSo the statement is True.",
       "A community volunteer’s household wishes met by paid legal advice make that visit a marketed product.\n\nSo the statement is True."
     ],
@@ -2457,7 +2457,7 @@
     "tactical_explanations": [
       "Legal advice under commercial contract to a law firm belongs with producer products.\n\nSo the statement is True.",
       "Legal advice for a community volunteer’s personal or domestic benefit belongs with consumer products.\n\nSo the statement is True.",
-      "The consultancy can book legal advice as B2B producer for the law firm and as B2C consumer for the volunteer.\n\nSame advisers, different customer rows on the revenue ledger.\n\nSo the statement is True.",
+      "The consultancy can book legal advice as B2B producer for the law firm and as B2C consumer for the volunteer. Same advisers, different customer rows on the revenue ledger.\n\nSo the statement is True.",
       "Exchanged legal advice is a product for either the law firm or the community volunteer.\n\nSo the statement is True.",
       "A law firm purchasing legal advice is in B2B exchange for a producer-product service.\n\nSo the statement is True."
     ],
@@ -2484,11 +2484,11 @@
       false
     ],
     "tactical_explanations": [
-      "A retired couple buying network maintenance is a household customer, so they receive a consumer product.\n\nThe firm “producing” the service does not make the sale a producer product.\n\nSo the statement is False.",
+      "A retired couple buying network maintenance is a household customer, so they receive a consumer product. The firm “producing” the service does not make the sale a producer product.\n\nSo the statement is False.",
       "Warehouse-shelf goods are only one form of product. Exchanged network maintenance qualifies too.\n\nSo the statement is False.",
       "Producer products include services sold to businesses. Network maintenance sold B2B is not barred for lacking physical components.\n\nSo the statement is False.",
       "A community volunteer purchasing legal advice is in B2C exchange for a consumer-product service.\n\nSo the statement is True.",
-      "An accounting partnership buying payroll processing is a business customer, so the service is a producer product.\n\nServices are not always final consumption.\n\nSo the statement is False."
+      "An accounting partnership buying payroll processing is a business customer, so the service is a producer product. Services are not always final consumption.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2544,7 +2544,7 @@
     "tactical_explanations": [
       "A pensioner household’s wishes met by paid pest control make that visit a marketed product.\n\nSo the statement is True.",
       "Pest control under commercial contract to a food processor belongs with producer products.\n\nSo the statement is True.",
-      "A young professional buying payroll processing is a private consumer, so the service is a consumer product.\n\nThe provider being commercial does not flip it to producer.\n\nSo the statement is False.",
+      "A young professional buying payroll processing is a private consumer, so the service is a consumer product. The provider being commercial does not flip it to producer.\n\nSo the statement is False.",
       "Customers need not take physical possession of payroll processing. An exchanged service is still a product.\n\nSo the statement is False.",
       "Complimentary payroll processing given free to an accounting partnership lacks paid exchange, so it is not a marketed product here.\n\nSo the statement is False."
     ],
@@ -2574,7 +2574,7 @@
       "Pest control for a pensioner household’s personal or domestic benefit is a consumer product.\n\nSo the statement is True.",
       "One firm can sell pest control as B2B producer to the food processor and as B2C consumer to the pensioner household.\n\nSo the statement is True.",
       "Exchanged pest control is a product for either the food processor or the pensioner household.\n\nSo the statement is True.",
-      "A food processor purchasing pest control is in B2B exchange for a producer-product service.\n\nHygiene compliance for a plant is an operational buy, not a domestic one.\n\nSo the statement is True.",
+      "A food processor purchasing pest control is in B2B exchange for a producer-product service. Hygiene compliance for a plant is an operational buy, not a domestic one.\n\nSo the statement is True.",
       "A pensioner household purchasing pest control is in B2C exchange for a consumer-product service.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -2603,7 +2603,7 @@
       "Long contracts do not move partnership payroll processing into B2C. The accounting partnership remains a business buyer, so the sale stays B2B.\n\nSo the statement is False.",
       "Intangible pest control still qualifies as a product when traded to satisfy customer needs.\n\nSo the statement is True.",
       "A young professional remains a household buyer. The provider’s business licence does not reclassify their payroll processing as B2B.\n\nSo the statement is False.",
-      "Employees running payroll for their own employer are not selling a B2B product to an outside customer.\n\nInternal processing is not a marketed producer-product sale.\n\nSo the statement is False.",
+      "Employees running payroll for their own employer are not selling a B2B product to an outside customer. Internal processing is not a marketed producer-product sale.\n\nSo the statement is False.",
       "Payment transferring pest control to a customer with unmet wishes or needs is how exchange creates a marketing product.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -2630,7 +2630,7 @@
     ],
     "tactical_explanations": [
       "Need fulfilment without payment or exchange does not make payroll processing a marketed product.\n\nSo the statement is False.",
-      "An accounting partnership buying payroll processing is a business buyer, so the service is a producer product.\n\nImmediate service consumption does not turn B2B into a consumer-product sale.\n\nSo the statement is False.",
+      "An accounting partnership buying payroll processing is a business buyer, so the service is a producer product. Immediate service consumption does not turn B2B into a consumer-product sale.\n\nSo the statement is False.",
       "Landscaping sold to a school district is B2B, so it is a producer product.\n\nSo the statement is True.",
       "Landscaping sold to an urban flat owner for personal use is B2C, so it is a consumer product.\n\nSo the statement is True.",
       "A school district paying for landscaping to maintain grounds is exchanging for a product.\n\nSo the statement is True."
@@ -2659,9 +2659,9 @@
     ],
     "tactical_explanations": [
       "An urban flat owner’s household wishes met by paid landscaping make that visit a marketed product.\n\nSo the statement is True.",
-      "Landscaping under commercial contract to a school district belongs with producer products.\n\nGrounds maintenance for an organisation is B2B work, not a private garden job.\n\nSo the statement is True.",
+      "Landscaping under commercial contract to a school district belongs with producer products. Grounds maintenance for an organisation is B2B work, not a private garden job.\n\nSo the statement is True.",
       "Landscaping for an urban flat owner’s personal or domestic benefit belongs with consumer products.\n\nSo the statement is True.",
-      "The same landscaper can sell as B2B producer to the school district and as B2C consumer to the flat owner.\n\nCrew, plants, and methods may look alike; the buyer on the invoice still splits the label.\n\nSo the statement is True.",
+      "The same landscaper can sell as B2B producer to the school district and as B2C consumer to the flat owner. Crew, plants, and methods may look alike; the buyer on the invoice still splits the label.\n\nSo the statement is True.",
       "Exchanged landscaping is a product for either the school district or the urban flat owner.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -2687,11 +2687,11 @@
       false
     ],
     "tactical_explanations": [
-      "A young professional buying payroll processing is a household customer, so they receive a consumer product.\n\nThe firm producing the service does not make the sale a producer product.\n\nSo the statement is False.",
+      "A young professional buying payroll processing is a household customer, so they receive a consumer product. The firm producing the service does not make the sale a producer product.\n\nSo the statement is False.",
       "Shelf goods are only one form of product. Exchanged payroll processing qualifies as well.\n\nSo the statement is False.",
       "A school district purchasing landscaping is in B2B exchange for a producer-product service.\n\nSo the statement is True.",
       "Producer products include business services. Payroll processing sold B2B is not excluded for lacking physical components.\n\nSo the statement is False.",
-      "A shipping line leasing equipment is a business buyer, so the lease is a producer product.\n\nServices are not always final consumption.\n\nSo the statement is False."
+      "A shipping line leasing equipment is a business buyer, so the lease is a producer product. Services are not always final consumption.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2719,7 +2719,7 @@
       "An urban flat owner purchasing landscaping is in B2C exchange for a consumer-product service.\n\nSo the statement is True.",
       "Landscaping is intangible, yet traded to satisfy customer needs it still counts as a product.\n\nSo the statement is True.",
       "Payment that transfers landscaping to a customer with unmet wishes or needs creates a marketing product through exchange.\n\nSo the statement is True.",
-      "A suburban family leasing equipment is a private consumer, so the lease is a consumer product.\n\nThe provider being commercial does not flip it to producer.\n\nSo the statement is False.",
+      "A suburban family leasing equipment is a private consumer, so the lease is a consumer product. The provider being commercial does not flip it to producer.\n\nSo the statement is False.",
       "Customers need not take physical possession of a lease. Exchanged equipment leasing is still a product.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -2775,7 +2775,7 @@
     ],
     "tactical_explanations": [
       "Complimentary equipment leasing given free to a shipping line lacks paid exchange, so it is not a marketed product here.\n\nSo the statement is False.",
-      "Invoices to the corporate client list steel sheet as a producer product; receipts to the private household list it as a consumer product.\n\nBuyer channel sets the row.\n\nSo the statement is True.",
+      "Invoices to the corporate client list steel sheet as a producer product; receipts to the private household list it as a consumer product. Buyer channel sets the row.\n\nSo the statement is True.",
       "Long contracts do not move a shipping-line equipment lease into B2C. The shipping line remains a business buyer.\n\nSo the statement is False.",
       "Business-to-business exchange of steel sheet for further processing is a producer-product sale in goods form.\n\nSo the statement is True.",
       "A suburban family remains a household buyer. The provider’s business licence does not reclassify their equipment lease as B2B.\n\nSo the statement is False."
@@ -2803,11 +2803,11 @@
       true
     ],
     "tactical_explanations": [
-      "Employees arranging equipment leasing for their own employer are not selling a B2B product to an outside customer.\n\nInternal arrangements are not marketed producer-product sales.\n\nSo the statement is False.",
+      "Employees arranging equipment leasing for their own employer are not selling a B2B product to an outside customer. Internal arrangements are not marketed producer-product sales.\n\nSo the statement is False.",
       "Steel sheet exchanged with a household for non-commercial use is a consumer product in goods form.\n\nSo the statement is True.",
       "Bulk timber beam delivered to a manufacturing firm for production use is a B2B producer product.\n\nSo the statement is True.",
       "Retail timber beam sold to a family home for a DIY project is a B2C consumer product.\n\nSo the statement is True.",
-      "The same timber-beam specification can be producer in wholesale trade and consumer in a hobby shop.\n\nBuyer identity switches the label without changing the beam.\n\nSo the statement is True."
+      "The same timber-beam specification can be producer in wholesale trade and consumer in a hobby shop. Buyer identity switches the label without changing the beam.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2863,8 +2863,8 @@
     "tactical_explanations": [
       "Bulk chemical solvent delivered to a logistics company for manufacturing use is a B2B producer product.\n\nSo the statement is True.",
       "Need fulfilment without payment or exchange does not make equipment leasing a marketed product.\n\nSo the statement is False.",
-      "A shipping line buying equipment leasing is a business customer, so the service is a producer product.\n\nImmediate consumption does not turn that B2B lease into a consumer product.\n\nSo the statement is False.",
-      "A suburban family buying equipment leasing is a household customer, so they receive a consumer product.\n\nThe firm producing the service does not make the sale a producer product.\n\nSo the statement is False.",
+      "A shipping line buying equipment leasing is a business customer, so the service is a producer product. Immediate consumption does not turn that B2B lease into a consumer product.\n\nSo the statement is False.",
+      "A suburban family buying equipment leasing is a household customer, so they receive a consumer product. The firm producing the service does not make the sale a producer product.\n\nSo the statement is False.",
       "Warehouse-shelf goods are only one form of product. Exchanged equipment leasing qualifies too.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -4284,7 +4284,7 @@
     "tactical_explanations": [
       "Share and sales volume often move together, not always in opposite directions. The claim of permanent opposition is wrong.\n\nSo the statement is False.",
       "Competitiveness indicators include market share; staff headcount alone does not replace it.\n\nSo the statement is False.",
-      "Losing share to a rival suggests satisfaction or differentiation problems — not that satisfaction objectives were exceeded.\n\nIf guests migrate to a competitor’s personalised service story, that is a miss on holding the experience edge, not proof you over-delivered on satisfaction.\n\nSo the statement is False.",
+      "Losing share to a rival suggests satisfaction or differentiation problems — not that satisfaction objectives were exceeded. If guests migrate to a competitor’s personalised service story, that is a miss on holding the experience edge, not proof you over-delivered on satisfaction.\n\nSo the statement is False.",
       "Plans may set a minimum share threshold to stay competitive.\n\nSo the statement is True.",
       "Share objectives are for commercial firms as well as other organisations — not only government agencies.\n\nSo the statement is False."
     ],
@@ -5097,7 +5097,7 @@
       "Maintaining sales keeps cash coming in for day-to-day activity.\n\nSo the statement is True.",
       "Sales and profit are linked: sales create the revenue from which profit is calculated after costs.\n\nThey are different measures, but calling them completely unrelated is wrong. A firm can raise unit sales and still miss its profit target if discounts or costs wipe out the margin — that is interdependence, not independence.\n\nSo the statement is False.",
       "Share tells you how you stand against rivals; sales tell you the absolute volume or revenue you actually achieved.\n\nBoth matter. A firm can hold share while absolute sales fall in a shrinking market, so the sales figure still needs its own target.\n\nSo the statement is True.",
-      "Owners get reimbursed from profit — the surplus after costs — not from raw sales volume alone.\n\nSelling a thousand units at a loss does not pay owners for their capital.\n\nSo the statement is False.",
+      "Owners get reimbursed from profit — the surplus after costs — not from raw sales volume alone. Selling a thousand units at a loss does not pay owners for their capital.\n\nSo the statement is False.",
       "A short promotional bundle can lift units sold in the period, which is exactly what a sales-volume objective tracks.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -5123,11 +5123,11 @@
       false
     ],
     "tactical_explanations": [
-      "USP work and profit reinvestment sit side by side in marketing plans.\n\nNothing in a uniqueness objective bans ploughing surplus back into the business.\n\nSo the statement is False.",
+      "USP work and profit reinvestment sit side by side in marketing plans. Nothing in a uniqueness objective bans ploughing surplus back into the business.\n\nSo the statement is False.",
       "Customers pay when they buy. That payment is sales revenue flowing into the firm.\n\nSo the statement is True.",
-      "Higher sales usually help profit, but not always.\n\nHeavy discounting, rising input costs, or extra marketing spend can erase the gain — so the link has real limitations.\n\nSo the statement is False.",
-      "Sales targets are a core marketing objective category because the business needs revenue to operate and to work toward profit.\n\nA plan that skips them leaves out that revenue pillar.\n\nSo the statement is True.",
-      "Fifty percent share says nothing about costs or margins.\n\nA firm can dominate a market and still lose money if prices sit below unit cost.\n\nProfit needs revenue above the relevant costs, not a share threshold alone.\n\nSo the statement is False."
+      "Higher sales usually help profit, but not always. Heavy discounting, rising input costs, or extra marketing spend can erase the gain — so the link has real limitations.\n\nSo the statement is False.",
+      "Sales targets are a core marketing objective category because the business needs revenue to operate and to work toward profit. A plan that skips them leaves out that revenue pillar.\n\nSo the statement is True.",
+      "Fifty percent share says nothing about costs or margins. A firm can dominate a market and still lose money if prices sit below unit cost. Profit needs revenue above the relevant costs, not a share threshold alone.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5153,10 +5153,10 @@
     ],
     "tactical_explanations": [
       "Online channel volume still counts toward overall sales objectives.\n\nSo the statement is True.",
-      "Repeat buyers from a loyal base keep volume coming without endlessly hunting new customers.\n\nThat repeat flow is a durable source of sales growth when satisfaction holds.\n\nSo the statement is True.",
+      "Repeat buyers from a loyal base keep volume coming without endlessly hunting new customers. That repeat flow is a durable source of sales growth when satisfaction holds.\n\nSo the statement is True.",
       "If production lags the sales plan, stockouts appear; if it overruns, inventory piles up.\n\nAligning output with sales targets avoids both traps. Operations and marketing therefore share the same volume number even when their daily tasks differ.\n\nSo the statement is True.",
-      "A campaign spike still belongs to the period’s sales total.\n\nObjectives usually measure what was sold in the window, including temporary lifts.\n\nSo the statement is True.",
-      "When revenue is high enough, it covers variable costs first and then contributes toward fixed production costs.\n\nThat coverage is why sales matter before any profit line is drawn.\n\nSo the statement is True."
+      "A campaign spike still belongs to the period’s sales total. Objectives usually measure what was sold in the window, including temporary lifts.\n\nSo the statement is True.",
+      "When revenue is high enough, it covers variable costs first and then contributes toward fixed production costs. That coverage is why sales matter before any profit line is drawn.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5183,7 +5183,7 @@
     "tactical_explanations": [
       "Owners put capital at risk and expect a return. Profit is how that return shows up.\n\nSaying profits do not matter because owners need no return reverses the textbook reason for profitability objectives.\n\nSo the statement is False.",
       "Maximising unit sales with deep discounts can destroy margin.\n\nMore units at a loss do not maximise profit. Volume and profit can pull in opposite directions under aggressive price cuts, which is why “always maximises profit simultaneously” fails.\n\nSo the statement is False.",
-      "Satisfaction and profitability reinforce each other when loyal customers buy again at viable margins.\n\nThey are not mutually exclusive objectives.\n\nSo the statement is False.",
+      "Satisfaction and profitability reinforce each other when loyal customers buy again at viable margins. They are not mutually exclusive objectives.\n\nSo the statement is False.",
       "Month-end actual-versus-target sales checks track progress on volume goals.\n\nSo the statement is True.",
       "Retained earnings are profit kept in the business. Firms routinely use that internal finance for campaigns and brand work.\n\nSo the statement is False."
     ],
@@ -5210,11 +5210,11 @@
       true
     ],
     "tactical_explanations": [
-      "In ordinary trading conditions, higher sales expand the revenue base that can support profit once costs are covered.\n\nThe claim that higher sales never help profit under any condition is too absolute.\n\nSo the statement is False.",
+      "In ordinary trading conditions, higher sales expand the revenue base that can support profit once costs are covered. The claim that higher sales never help profit under any condition is too absolute.\n\nSo the statement is False.",
       "Export growth is a legitimate sales objective when the firm wants volume outside the home market.\n\nSo the statement is True.",
-      "If demand analysis shows a ceiling, managers can revise volume targets downward rather than chase an unreachable number.\n\nSales objectives are planning tools, not fixed forever.\n\nSo the statement is True.",
-      "Profit is calculated after sales revenue is earned and costs are matched against it.\n\nYou do not book profit before customers have paid.\n\nSo the statement is False.",
-      "Cutting price often lifts units sold while shrinking revenue per unit.\n\nBoth effects matter when you read the sales and profit outcomes together.\n\nSo the statement is True."
+      "If demand analysis shows a ceiling, managers can revise volume targets downward rather than chase an unreachable number. Sales objectives are planning tools, not fixed forever.\n\nSo the statement is True.",
+      "Profit is calculated after sales revenue is earned and costs are matched against it. You do not book profit before customers have paid.\n\nSo the statement is False.",
+      "Cutting price often lifts units sold while shrinking revenue per unit. Both effects matter when you read the sales and profit outcomes together.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5240,7 +5240,7 @@
     ],
     "tactical_explanations": [
       "Share gains are one competitiveness signal, but marketing success is also judged on sales, satisfaction, and profit.\n\nIgnoring profit while chasing share alone is not how the chapter frames success. A firm can buy share with unsustainable discounting and still fail the wider objective set.\n\nSo the statement is False.",
-      "Reinvestment means keeping profit inside the firm for future use — not handing every euro of revenue straight to suppliers.\n\nPaying suppliers is a cost settlement, not retained earnings.\n\nSo the statement is False.",
+      "Reinvestment means keeping profit inside the firm for future use — not handing every euro of revenue straight to suppliers. Paying suppliers is a cost settlement, not retained earnings.\n\nSo the statement is False.",
       "Profitability needs sales revenue above costs. Driving sales down to “eliminate costs” does not create profit; it shrinks the revenue base.\n\nSo the statement is False.",
       "Promotional reach metrics track awareness or exposure. They do not reimburse owners for invested capital.\n\nThat reimbursement comes from profit.\n\nSo the statement is False.",
       "Sales bring in the money that covers production costs and, if enough remains, profit.\n\nSo the statement is True."
@@ -5270,7 +5270,7 @@
     "tactical_explanations": [
       "Retail sell-through feeds manufacturer shipments. Volume targets at retail therefore roll up into the manufacturer’s sales objectives.\n\nSo the statement is True.",
       "A USP helps the product stand out and can support loyalty, but profit still needs units sold at margins that clear costs.\n\nUniqueness on its own does not print a surplus. A distinctive offer that barely sells, or sells only after deep discounting, can still miss the profit target.\n\nSo the statement is False.",
-      "Entering a new segment often starts with a sales-growth push to build presence before later tightening margin goals.\n\nPrioritising volume there is a normal marketing choice.\n\nSo the statement is True.",
+      "Entering a new segment often starts with a sales-growth push to build presence before later tightening margin goals. Prioritising volume there is a normal marketing choice.\n\nSo the statement is True.",
       "Profitability objectives apply with many rivals or with few.\n\nSo the statement is False.",
       "Retained profit stays in the business. It is not an annual mandatory payout to creditors.\n\nCreditors are paid under debt terms; retained earnings finance growth.\n\nSo the statement is False."
     ],
@@ -5300,8 +5300,8 @@
       "Limitations mean higher sales do not always raise profit — for example when discounts erase margin.\n\nThey do not mean higher sales always lower profit. That flips a caution into an absolute reverse claim the chapter does not make.\n\nSo the statement is False.",
       "Comparing actual sales with the plan checks whether marketing delivered the volume it promised.\n\nSo the statement is True.",
       "Revenue = price × volume (in simple form). Sales objectives and price decisions therefore sit right next to revenue goals.\n\nSo the statement is True.",
-      "Marketing does generate costs, but it also generates the sales that fund the business.\n\nProfitability remains a marketing objective precisely because those sales must leave a surplus after costs.\n\nSo the statement is False.",
-      "Holding volume when demand softens in a downturn is a tough but real sales objective.\n\nMany plans explicitly aim to maintain sales rather than grow them in that phase.\n\nSo the statement is True."
+      "Marketing does generate costs, but it also generates the sales that fund the business. Profitability remains a marketing objective precisely because those sales must leave a surplus after costs.\n\nSo the statement is False.",
+      "Holding volume when demand softens in a downturn is a tough but real sales objective. Many plans explicitly aim to maintain sales rather than grow them in that phase.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5326,10 +5326,10 @@
       false
     ],
     "tactical_explanations": [
-      "Repeat purchases from existing customers cut the need to keep buying expensive new leads.\n\nThat saving is one reason satisfaction and loyalty objectives support sales.\n\nSo the statement is True.",
+      "Repeat purchases from existing customers cut the need to keep buying expensive new leads. That saving is one reason satisfaction and loyalty objectives support sales.\n\nSo the statement is True.",
       "“Double sales” is a substantial volume (or revenue) stretch target.\n\nSo the statement is True.",
       "Sales growth widens the revenue pool. After costs, that is what makes profit possible.\n\nSo the statement is True.",
-      "Trade promotions aimed at retailers often exist to push sell-through — more units leaving the shelf.\n\nThat is a sales-volume play.\n\nSo the statement is True.",
+      "Trade promotions aimed at retailers often exist to push sell-through — more units leaving the shelf. That is a sales-volume play.\n\nSo the statement is True.",
       "High satisfaction and profitability routinely sit in the same plan.\n\nLoyal, happy customers can still be served at a margin that reimburses owners. Treating the two objectives as mutually exclusive invents a conflict the chapter does not require.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -5357,8 +5357,8 @@
     "tactical_explanations": [
       "Regional sales monitoring helps allocate marketing resources.\n\nSo the statement is True.",
       "If the objective is sales, units or revenue sold are the direct progress score.\n\nSo the statement is True.",
-      "Profit is what remains after sales revenue covers costs.\n\nYou earn the revenue first; only then can you distribute or retain a surplus.\n\nSo the statement is True.",
-      "Launch periods sometimes trade margin for a volume milestone — accept a thinner contribution for a while to hit the sales gate.\n\nThat temporary bargain is still a conscious marketing choice, not an accident.\n\nSo the statement is True.",
+      "Profit is what remains after sales revenue covers costs. You earn the revenue first; only then can you distribute or retain a surplus.\n\nSo the statement is True.",
+      "Launch periods sometimes trade margin for a volume milestone — accept a thinner contribution for a while to hit the sales gate. That temporary bargain is still a conscious marketing choice, not an accident.\n\nSo the statement is True.",
       "Businesses need revenues to operate. Sales objectives exist because that cash inflow has to be planned and monitored.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -5385,9 +5385,9 @@
     ],
     "tactical_explanations": [
       "Issuing new shares brings fresh external capital from investors.\n\nReinvesting profit keeps earnings already earned inside the firm. Those are different financing routes, even though both can fund growth.\n\nSo the statement is False.",
-      "Satisfied loyal customers buy again, lifting sales while also advancing satisfaction and loyalty goals.\n\nThat cross-link is exactly “interrelated marketing objectives” in action.\n\nSo the statement is True.",
+      "Satisfied loyal customers buy again, lifting sales while also advancing satisfaction and loyalty goals. That cross-link is exactly “interrelated marketing objectives” in action.\n\nSo the statement is True.",
       "A new store’s sales target expresses geographic expansion in volume or revenue.\n\nSo the statement is True.",
-      "Growing units while costs race ahead can leave profit flat or worse.\n\nVolume without cost control does not guarantee a better bottom line.\n\nSo the statement is True.",
+      "Growing units while costs race ahead can leave profit flat or worse. Volume without cost control does not guarantee a better bottom line.\n\nSo the statement is True.",
       "Covering production costs gets you to break-even on those costs. Profit still needs a margin above that coverage.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -5414,10 +5414,10 @@
     ],
     "tactical_explanations": [
       "Profitability is a marketing objective because profits reimburse owners for invested money.\n\nSo the statement is True.",
-      "When earnings stay in the firm, managers can fund capacity, brand, or product work for later growth.\n\nRetained profit is that internal fuel.\n\nSo the statement is True.",
-      "As a rule of thumb, more sales mean more profit — with the chapter’s limitations on costs, discounts, and mix still applying.\n\nManagers therefore read sales lifts together with margin, not as an automatic profit promise.\n\nSo the statement is True.",
-      "Profit sits in the same objective set as satisfaction, differentiation, share, and sales.\n\nPlans typically juggle all of them rather than picking only one.\n\nSo the statement is True.",
-      "When revenues clear the relevant costs, marketing activity has contributed to profit.\n\nThat ultimate financial test closes the loop on the other marketing goals.\n\nSo the statement is True."
+      "When earnings stay in the firm, managers can fund capacity, brand, or product work for later growth. Retained profit is that internal fuel.\n\nSo the statement is True.",
+      "As a rule of thumb, more sales mean more profit — with the chapter’s limitations on costs, discounts, and mix still applying. Managers therefore read sales lifts together with margin, not as an automatic profit promise.\n\nSo the statement is True.",
+      "Profit sits in the same objective set as satisfaction, differentiation, share, and sales. Plans typically juggle all of them rather than picking only one.\n\nSo the statement is True.",
+      "When revenues clear the relevant costs, marketing activity has contributed to profit. That ultimate financial test closes the loop on the other marketing goals.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5444,9 +5444,9 @@
     "tactical_explanations": [
       "Satisfaction scores measure how customers feel. Profitability is a financial surplus after costs.\n\nUseful as both are, they are not the same yardstick, and substituting one for the other misreads the objective set.\n\nSo the statement is False.",
       "Owners expect profits as compensation for invested capital.\n\nSo the statement is True.",
-      "Keeping profit inside the firm can buy new equipment without a new loan or share issue.\n\nThat is retained earnings at work.\n\nSo the statement is True.",
+      "Keeping profit inside the firm can buy new equipment without a new loan or share issue. That is retained earnings at work.\n\nSo the statement is True.",
       "A target such as “12% margin on sales” is a profitability objective stated as a percentage of revenue.\n\nSo the statement is True.",
-      "If unit margins hold and costs stay in check, lifting sales lifts profit.\n\nWhen those conditions break, the support weakens — which is why the link is conditional, not magical.\n\nSo the statement is True."
+      "If unit margins hold and costs stay in check, lifting sales lifts profit. When those conditions break, the support weakens — which is why the link is conditional, not magical.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5474,7 +5474,7 @@
       "Profit objectives exist partly because sales volume alone can disappoint.\n\nSo the statement is True.",
       "Campaign reviews routinely ask whether the lift was profitable sales, not just noisy traffic.\n\nSo the statement is True.",
       "Ploughed-back profit can fund plant, systems, or marketing capacity that supports later periods.\n\nSo the statement is True.",
-      "Without profit, owners lose their return and the firm lacks internal funds to renew itself.\n\nThat dual role is why profitability matters in the marketing objective set.\n\nSo the statement is True.",
+      "Without profit, owners lose their return and the firm lacks internal funds to renew itself. That dual role is why profitability matters in the marketing objective set.\n\nSo the statement is True.",
       "Strong sales do not remove the need to reinvest. Capacity, brands, and product lines still need funding over time.\n\nHigher sales can create the profit that makes reinvestment possible — they do not replace that reinvestment step.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -5501,10 +5501,10 @@
     ],
     "tactical_explanations": [
       "Managers can refuse unprofitable volume that fails margin thresholds rather than chase empty sales.\n\nSo the statement is True.",
-      "Equating advertising spend with total revenue only describes a cost ratio.\n\nIt never shows whether anything remains after all costs — so it cannot, by itself, meet a profitability objective.\n\nA firm could spend every euro of revenue on ads and still report a loss.\n\nSo the statement is False.",
+      "Equating advertising spend with total revenue only describes a cost ratio. It never shows whether anything remains after all costs — so it cannot, by itself, meet a profitability objective. A firm could spend every euro of revenue on ads and still report a loss.\n\nSo the statement is False.",
       "Owners can take profit as their return on capital. Wages pay labour, not ownership reimbursement.\n\nCollapsing profit into wages misstates how owners are compensated.\n\nSo the statement is False.",
-      "A cost spike can cancel the benefit of higher sales and leave profit little improved.\n\nThat is one of the standard limitations on the sales–profit link.\n\nSo the statement is True.",
-      "Retained earnings reduce how much the firm must borrow for expansion.\n\nInternal profit keeps the balance sheet less dependent on outside lenders.\n\nSo the statement is True."
+      "A cost spike can cancel the benefit of higher sales and leave profit little improved. That is one of the standard limitations on the sales–profit link.\n\nSo the statement is True.",
+      "Retained earnings reduce how much the firm must borrow for expansion. Internal profit keeps the balance sheet less dependent on outside lenders.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5530,10 +5530,10 @@
     ],
     "tactical_explanations": [
       "Marketing objectives include profitability because owners need returns on investment.\n\nSo the statement is True.",
-      "A discount that moves more units can shrink contribution per unit.\n\nVolume up, profit per sale down — both can happen at once.\n\nSo the statement is True.",
-      "Profit is typically sales revenue minus production and marketing costs.\n\nThat arithmetic is how the surplus is measured.\n\nSo the statement is True.",
+      "A discount that moves more units can shrink contribution per unit. Volume up, profit per sale down — both can happen at once.\n\nSo the statement is True.",
+      "Profit is typically sales revenue minus production and marketing costs. That arithmetic is how the surplus is measured.\n\nSo the statement is True.",
       "Reviewing whether marketing spend earned an adequate return is a profitability check on the campaign mix.\n\nSo the statement is True.",
-      "Share and profit sometimes move together and sometimes trade off — for example when share is bought with heavy discounting.\n\nThey do not move in opposite directions in every case, so the absolute claim fails.\n\nSo the statement is False."
+      "Share and profit sometimes move together and sometimes trade off — for example when share is bought with heavy discounting. They do not move in opposite directions in every case, so the absolute claim fails.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5560,9 +5560,9 @@
     "tactical_explanations": [
       "Satisfied loyal customers who buy repeatedly can improve lifetime profitability.\n\nSo the statement is True.",
       "Retained profit can pay for brand-building that later supports differentiation and a clearer USP.\n\nSo the statement is True.",
-      "Usually more sales mean more profit, subject to rising costs, mix shifts, or discount pressure.\n\nThe chapter states the positive link with those limitations attached rather than as an unconditional law.\n\nSo the statement is True.",
+      "Usually more sales mean more profit, subject to rising costs, mix shifts, or discount pressure. The chapter states the positive link with those limitations attached rather than as an unconditional law.\n\nSo the statement is True.",
       "Profit objectives push managers to cover costs properly, not just to celebrate gross revenue.\n\nSo the statement is True.",
-      "Owners may take some profit as personal income and leave the rest inside as retained earnings.\n\nBoth uses are ordinary.\n\nSo the statement is True."
+      "Owners may take some profit as personal income and leave the rest inside as retained earnings. Both uses are ordinary.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5588,7 +5588,7 @@
     ],
     "tactical_explanations": [
       "Sales targets should be checked for profit compatibility.\n\nSo the statement is True.",
-      "Surplus from a strong line can fund marketing on a developing line.\n\nCross-subsidy inside the portfolio is a normal use of profit.\n\nSo the statement is True.",
+      "Surplus from a strong line can fund marketing on a developing line. Cross-subsidy inside the portfolio is a normal use of profit.\n\nSo the statement is True.",
       "Sales create the revenue figure that profit calculations start from once costs are deducted.\n\nWithout that sales base there is simply no surplus line to discuss. That is why profitability objectives stay linked to sales performance even when managers also watch margin and mix.\n\nSo the statement is True.",
       "Retained earnings are internal finance. Marketing initiatives often draw on that stock of past profit.\n\nSo the statement is True.",
       "Buying share with thin margins can cut near-term profitability on purpose while the firm builds position.\n\nSo the statement is True."
@@ -5617,10 +5617,10 @@
     ],
     "tactical_explanations": [
       "Profit objectives motivate careful use of marketing budgets.\n\nSo the statement is True.",
-      "If unit costs rise unfavourably, extra sales may not lift profit.\n\nThat cost move is one clear limitation on the sales–profit link.\n\nSo the statement is True.",
-      "Profit can pay owners while still leaving funds inside for growth.\n\nCompensation and retention can share the same surplus.\n\nSo the statement is True.",
+      "If unit costs rise unfavourably, extra sales may not lift profit. That cost move is one clear limitation on the sales–profit link.\n\nSo the statement is True.",
+      "Profit can pay owners while still leaving funds inside for growth. Compensation and retention can share the same surplus.\n\nSo the statement is True.",
       "Tracking gross profit by product shows which lines carry the profitability objective and which drag it.\n\nSo the statement is True.",
-      "A USP that supports a premium price improves profit when costs stay controlled under that price.\n\nDifferentiation then feeds the financial objective directly instead of living only in the brand story.\n\nSo the statement is True."
+      "A USP that supports a premium price improves profit when costs stay controlled under that price. Differentiation then feeds the financial objective directly instead of living only in the brand story.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5645,11 +5645,11 @@
       true
     ],
     "tactical_explanations": [
-      "Ploughing profit into capacity can raise what the firm can sell later.\n\nReinvestment today supports sales growth tomorrow.\n\nSo the statement is True.",
+      "Ploughing profit into capacity can raise what the firm can sell later. Reinvestment today supports sales growth tomorrow.\n\nSo the statement is True.",
       "Profitability is listed among the textbook marketing objectives.\n\nSo the statement is True.",
-      "Until sales cover production costs, there is no profit left to record.\n\nCost coverage comes first in the arithmetic.\n\nSo the statement is True.",
-      "Owners reinvest profit when they expect better future returns from expanded operations — new capacity, new markets, or stronger brands that should pay back later.\n\nThat forward-looking bet is why retained earnings are not only an accounting leftover.\n\nSo the statement is True.",
-      "Stable sales with falling profit often point to higher input costs squeezing the margin.\n\nVolume held steady while the cost line moved.\n\nSo the statement is True."
+      "Until sales cover production costs, there is no profit left to record. Cost coverage comes first in the arithmetic.\n\nSo the statement is True.",
+      "Owners reinvest profit when they expect better future returns from expanded operations — new capacity, new markets, or stronger brands that should pay back later. That forward-looking bet is why retained earnings are not only an accounting leftover.\n\nSo the statement is True.",
+      "Stable sales with falling profit often point to higher input costs squeezing the margin. Volume held steady while the cost line moved.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5677,8 +5677,8 @@
       "Profit targets may be set annually alongside sales and share objectives.\n\nSo the statement is True.",
       "Attracting segments that buy at healthy margins advances the profitability objective, not only awareness.\n\nSo the statement is True.",
       "Retained profit is finance generated inside the firm — ready for marketing initiatives without a new loan.\n\nSo the statement is True.",
-      "In general, more sales help profit, but exceptions exist when costs or discounts intervene.\n\nPositive on average, not guaranteed in every instance.\n\nSo the statement is True.",
-      "Profitability objectives force the comparison: did revenue growth outrun cost growth?\n\nWithout that reminder, volume alone can look like success while the surplus shrinks underneath.\n\nSo the statement is True."
+      "In general, more sales help profit, but exceptions exist when costs or discounts intervene. Positive on average, not guaranteed in every instance.\n\nSo the statement is True.",
+      "Profitability objectives force the comparison: did revenue growth outrun cost growth? Without that reminder, volume alone can look like success while the surplus shrinks underneath.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5703,11 +5703,11 @@
       false
     ],
     "tactical_explanations": [
-      "Retained profit is a standard source of funds for expanding production capacity.\n\nSaying it cannot support that expansion is incorrect.\n\nSo the statement is False.",
-      "Headcount is not a profitability measure.\n\nHaving the most employees does not fulfil a profit objective.\n\nSo the statement is False.",
+      "Retained profit is a standard source of funds for expanding production capacity. Saying it cannot support that expansion is incorrect.\n\nSo the statement is False.",
+      "Headcount is not a profitability measure. Having the most employees does not fulfil a profit objective.\n\nSo the statement is False.",
       "Contribution margin per unit shows how each sale helps cover fixed costs and profit.\n\nSo the statement is True.",
-      "Sales up with costs rising faster can leave profit unchanged or lower.\n\n“Always increases profit” is the false absolute — marketing that buys volume with expensive acquisition or heavy discounting can grow the top line while the bottom line stalls.\n\nSo the statement is False.",
-      "Analysing wishes and needs does not exclude profitability.\n\nMarket-oriented work still aims for a surplus; customer focus and profit sit together.\n\nSo the statement is False."
+      "Sales up with costs rising faster can leave profit unchanged or lower. “Always increases profit” is the false absolute — marketing that buys volume with expensive acquisition or heavy discounting can grow the top line while the bottom line stalls.\n\nSo the statement is False.",
+      "Analysing wishes and needs does not exclude profitability. Market-oriented work still aims for a surplus; customer focus and profit sit together.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5733,10 +5733,10 @@
     ],
     "tactical_explanations": [
       "Profits reimburse owners and can be ploughed back into the business.\n\nSo the statement is True.",
-      "When discounting erodes margins, sales growth may not deliver the profit target.\n\nProfit objectives have to recognise that limitation.\n\nSo the statement is True.",
-      "Higher volume enlarges the revenue pool from which profit is calculated after costs.\n\nMore units do not guarantee a bigger surplus, but they do widen the starting revenue figure managers then challenge with cost lines.\n\nSo the statement is True.",
+      "When discounting erodes margins, sales growth may not deliver the profit target. Profit objectives have to recognise that limitation.\n\nSo the statement is True.",
+      "Higher volume enlarges the revenue pool from which profit is calculated after costs. More units do not guarantee a bigger surplus, but they do widen the starting revenue figure managers then challenge with cost lines.\n\nSo the statement is True.",
       "Keeping profit inside can fund improvements — service, quality, or experience — that later lift satisfaction.\n\nSo the statement is True.",
-      "Profits matter for reinvestment and owner return, not only for tax line items.\n\nReducing their importance to tax alone is wrong.\n\nSo the statement is False."
+      "Profits matter for reinvestment and owner return, not only for tax line items. Reducing their importance to tax alone is wrong.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5763,9 +5763,9 @@
     "tactical_explanations": [
       "Did marketing grow sales in a cost-effective way? That question is part of profitability assessment.\n\nSo the statement is True.",
       "Successful operations earn profits that reimburse owners for the money they invested.\n\nSo the statement is True.",
-      "A firm may delay profit growth while investing heavily in brand and USP development.\n\nManagers sometimes accept that delay deliberately because differentiation built now is meant to support margins later.\n\nSo the statement is True.",
+      "A firm may delay profit growth while investing heavily in brand and USP development. Managers sometimes accept that delay deliberately because differentiation built now is meant to support margins later.\n\nSo the statement is True.",
       "Profit reinvestment is a strategic use of earnings kept inside the business.\n\nSo the statement is True.",
-      "If marketing expenditure rises with sales, the extra cost can limit how much profit the volume creates.\n\nThat simultaneous spend increase is one stated limitation.\n\nSo the statement is True."
+      "If marketing expenditure rises with sales, the extra cost can limit how much profit the volume creates. That simultaneous spend increase is one stated limitation.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5791,10 +5791,10 @@
     ],
     "tactical_explanations": [
       "Sales track volume or revenue; profitability tracks the surplus after costs. Related, not identical.\n\nSo the statement is True.",
-      "Over time marketing is judged partly on whether it supports sustainable profitability — not only on short bursts of awareness or traffic.\n\nA campaign that fills the funnel but never clears cost will fail that longer test even if sales noise looked healthy for a week.\n\nSo the statement is True.",
-      "Retained profit strengthens equity and cash capacity for later campaigns.\n\nA healthier balance sheet funds the next push.\n\nSo the statement is True.",
+      "Over time marketing is judged partly on whether it supports sustainable profitability — not only on short bursts of awareness or traffic. A campaign that fills the funnel but never clears cost will fail that longer test even if sales noise looked healthy for a week.\n\nSo the statement is True.",
+      "Retained profit strengthens equity and cash capacity for later campaigns. A healthier balance sheet funds the next push.\n\nSo the statement is True.",
       "Sharp price cuts can raise units while cutting profit per unit — total volume up, unit profit down.\n\nSo the statement is True.",
-      "Setting sales volume targets does not kick profitability out of the objective set.\n\nPlans usually carry both.\n\nSo the statement is False."
+      "Setting sales volume targets does not kick profitability out of the objective set. Plans usually carry both.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5821,9 +5821,9 @@
     "tactical_explanations": [
       "Product orientation starts with the product and its specifications.\n\nNeeds-and-wants analysis first is the market-oriented sequence, not the product-oriented one. Swapping those starting points mislabels the orientation.\n\nSo the statement is False.",
       "A product-oriented business focuses on the product and its specifications first, then on how to sell it.\n\nSo the statement is True.",
-      "Market orientation flips the order: study needs and wants, then shape the offer to match.\n\nTailoring follows the analysis.\n\nSo the statement is True.",
-      "Both orientations can chase the same goals — share, satisfaction, profit — while starting from different places in development.\n\nIdentical objectives do not require identical starting points.\n\nSo the statement is True.",
-      "Product-oriented success bets mainly on feature quality carrying the sale.\n\nThe firm leans on what the product is, more than on continuous market adaptation.\n\nSo the statement is True."
+      "Market orientation flips the order: study needs and wants, then shape the offer to match. Tailoring follows the analysis.\n\nSo the statement is True.",
+      "Both orientations can chase the same goals — share, satisfaction, profit — while starting from different places in development. Identical objectives do not require identical starting points.\n\nSo the statement is True.",
+      "Product-oriented success bets mainly on feature quality carrying the sale. The firm leans on what the product is, more than on continuous market adaptation.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5850,9 +5850,9 @@
     "tactical_explanations": [
       "Market orientation’s advantage is anticipating changing needs and responding earlier than product-oriented rivals.\n\nSo the statement is True.",
       "Defining specs first and checking demand later is product orientation.\n\nMarket orientation does the needs work before finalising the offer. The claim reverses that order.\n\nSo the statement is False.",
-      "Objectives such as profitability or share can be shared across orientations.\n\nStrategic path differs; the destination goals need not.\n\nSo the statement is False.",
-      "Product orientation emphasises features and quality; it does not mean abandoning quality for empty advertising.\n\nThe claim reverses what product orientation actually relies on.\n\nSo the statement is False.",
-      "Market orientation is built to notice changing needs — that is its point.\n\nSaying it cannot anticipate change because it stares only at current specs describes the wrong orientation.\n\nSo the statement is False."
+      "Objectives such as profitability or share can be shared across orientations. Strategic path differs; the destination goals need not.\n\nSo the statement is False.",
+      "Product orientation emphasises features and quality; it does not mean abandoning quality for empty advertising. The claim reverses what product orientation actually relies on.\n\nSo the statement is False.",
+      "Market orientation is built to notice changing needs — that is its point. Saying it cannot anticipate change because it stares only at current specs describes the wrong orientation.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5877,11 +5877,11 @@
       true
     ],
     "tactical_explanations": [
-      "Fit depends on the product and how crowded the market is.\n\nA near-commodity with many rivals often needs stronger market orientation than a highly specialised offering with few competitors.\n\nSo the statement is True.",
-      "Suitability is not identical for every product.\n\nProduct characteristics and competitive intensity change which orientation works better, so a single universal fit claim fails.\n\nSo the statement is False.",
-      "Even a firm proud of internal R&D still needs to watch markets and customer expectations.\n\nStrong specs do not licence neglect.\n\nSo the statement is True.",
+      "Fit depends on the product and how crowded the market is. A near-commodity with many rivals often needs stronger market orientation than a highly specialised offering with few competitors.\n\nSo the statement is True.",
+      "Suitability is not identical for every product. Product characteristics and competitive intensity change which orientation works better, so a single universal fit claim fails.\n\nSo the statement is False.",
+      "Even a firm proud of internal R&D still needs to watch markets and customer expectations. Strong specs do not licence neglect.\n\nSo the statement is True.",
       "CRM aims at long-term relationships rather than isolated one-off sales.\n\nSo the statement is True.",
-      "Stored customer data lets the firm send newsletters, coupons, and product notes that invite another purchase.\n\nThat retained contact is core CRM practice.\n\nSo the statement is True."
+      "Stored customer data lets the firm send newsletters, coupons, and product notes that invite another purchase. That retained contact is core CRM practice.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5907,9 +5907,9 @@
     ],
     "tactical_explanations": [
       "Detailed CRM profiles hold personal information. Handling that data carefully is indispensable if trust is to last.\n\nSo the statement is True.",
-      "Loyalty cards and accounts typically trade anonymity for discounts and special offers.\n\nCustomers often accept that trade willingly.\n\nSo the statement is True.",
+      "Loyalty cards and accounts typically trade anonymity for discounts and special offers. Customers often accept that trade willingly.\n\nSo the statement is True.",
       "Strong specifications never justify ignoring markets and customer expectations.\n\nSo the statement is False.",
-      "Purchase histories and account data let firms tailor offers to what each customer tends to buy.\n\nCollecting behaviour for that purpose is standard CRM practice, and it is why personal accounts matter beyond the checkout moment itself.\n\nSo the statement is True.",
+      "Purchase histories and account data let firms tailor offers to what each customer tends to buy. Collecting behaviour for that purpose is standard CRM practice, and it is why personal accounts matter beyond the checkout moment itself.\n\nSo the statement is True.",
       "Product orientation puts production and features first; customer needs get detailed attention later in the sequence.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -5935,9 +5935,9 @@
       false
     ],
     "tactical_explanations": [
-      "CRM aims at long-term relationships, not only a single completed transaction.\n\nOne-off selling without follow-up is the opposite of the CRM goal.\n\nSo the statement is False.",
+      "CRM aims at long-term relationships, not only a single completed transaction. One-off selling without follow-up is the opposite of the CRM goal.\n\nSo the statement is False.",
       "Market orientation emphasises customers’ needs and wants when deciding what to produce and promote.\n\nSo the statement is True.",
-      "CRM systems keep data so the firm can mail or email later — newsletters, coupons, product information.\n\nDeleting everything after each purchase would kill that follow-up and empty the relationship toolset.\n\nSo the statement is False.",
+      "CRM systems keep data so the firm can mail or email later — newsletters, coupons, product information. Deleting everything after each purchase would kill that follow-up and empty the relationship toolset.\n\nSo the statement is False.",
       "Loyalty programmes run on personal data. Treating sensitive use as optional undercuts trust and often breaches good practice.\n\nSo the statement is False.",
       "Loyalty cards and personal accounts identify the customer. Full anonymity is not preserved if the programme works as designed.\n\nSo the statement is False."
     ],
@@ -5965,10 +5965,10 @@
     ],
     "tactical_explanations": [
       "CRM routinely collects buying-behaviour data so offers can be personalised.\n\nCollection is not prohibited — it is how tailored marketing works. Without those records, newsletters and coupons have little individual signal to use.\n\nSo the statement is False.",
-      "The orientations differ in development focus — specs-first versus needs-first — not merely in slogans.\n\nAdvertising copy is not the dividing line.\n\nSo the statement is False.",
+      "The orientations differ in development focus — specs-first versus needs-first — not merely in slogans. Advertising copy is not the dividing line.\n\nSo the statement is False.",
       "Market orientation means shaping production around customer requirements, not around engineers’ private preferences in isolation.\n\nSo the statement is False.",
       "Over recent decades many businesses have moved from product orientation toward market orientation.\n\nSo the statement is True.",
-      "CRM encourages repeat purchases through contact between sales — newsletters, coupons, reminders.\n\nAvoiding contact would undermine the relationship goal.\n\nSo the statement is False."
+      "CRM encourages repeat purchases through contact between sales — newsletters, coupons, reminders. Avoiding contact would undermine the relationship goal.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5995,9 +5995,9 @@
     "tactical_explanations": [
       "A product-oriented business may believe a good product sells itself through features and quality.\n\nSo the statement is True.",
       "Market orientation asks what customers need and want, then produces to match — not what internal teams prefer in a vacuum.\n\nSo the statement is True.",
-      "Stored records let the firm contact customers with relevant offers that invite another visit.\n\nThat informed follow-up is how CRM encourages return purchases.\n\nSo the statement is True.",
-      "As loyalty programmes expand, personal data sensitivity becomes a major topic.\n\nTrust and compliance both ride on careful handling of the identifiable records those programmes create.\n\nSo the statement is True.",
-      "Tailored offers draw on purchase histories and account data that reveal individual preferences.\n\nWithout that stored knowledge, personalisation has little to work with.\n\nSo the statement is True."
+      "Stored records let the firm contact customers with relevant offers that invite another visit. That informed follow-up is how CRM encourages return purchases.\n\nSo the statement is True.",
+      "As loyalty programmes expand, personal data sensitivity becomes a major topic. Trust and compliance both ride on careful handling of the identifiable records those programmes create.\n\nSo the statement is True.",
+      "Tailored offers draw on purchase histories and account data that reveal individual preferences. Without that stored knowledge, personalisation has little to work with.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6022,10 +6022,10 @@
       false
     ],
     "tactical_explanations": [
-      "Loyalty discounts made personal data more common, not less important.\n\nSensitivity remains relevant precisely because programmes hold identifiable information that can be misused if handled carelessly.\n\nSo the statement is False.",
+      "Loyalty discounts made personal data more common, not less important. Sensitivity remains relevant precisely because programmes hold identifiable information that can be misused if handled carelessly.\n\nSo the statement is False.",
       "A market-oriented firm analyses requirements before tailoring; a product-oriented firm defines specifications before selling.\n\nSo the statement is True.",
-      "Believing a good product sells itself without studying needs is product-oriented thinking.\n\nMarket-oriented firms start with the customer side.\n\nSo the statement is False.",
-      "Upfront needs analysis before tailoring is market orientation.\n\nProduct-oriented firms define specs first rather than leading with that analysis.\n\nSo the statement is False.",
+      "Believing a good product sells itself without studying needs is product-oriented thinking. Market-oriented firms start with the customer side.\n\nSo the statement is False.",
+      "Upfront needs analysis before tailoring is market orientation. Product-oriented firms define specs first rather than leading with that analysis.\n\nSo the statement is False.",
       "The recent trend has been toward market orientation, not a universal retreat back to product-only thinking.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -6052,10 +6052,10 @@
     ],
     "tactical_explanations": [
       "Identical profitability or share objectives can coexist with different orientation choices.\n\nSo the statement is True.",
-      "CRM newsletters and coupons rely on retained customer records — addresses, emails, purchase tags.\n\nThey are not free-floating messages with no personal data behind them, so calling them unrelated to stored records is false.\n\nSo the statement is False.",
+      "CRM newsletters and coupons rely on retained customer records — addresses, emails, purchase tags. They are not free-floating messages with no personal data behind them, so calling them unrelated to stored records is false.\n\nSo the statement is False.",
       "Market-oriented rivals who watched wants shift can move earlier; product-oriented competitors often react later once specs are already locked.\n\nSo the statement is True.",
-      "Email contact between purchases uses the customer data CRM keeps on file.\n\nCoupons and newsletters are that retained-contact channel.\n\nSo the statement is True.",
-      "Signing up for a loyalty card usually means trading anonymity for a discount or special offer.\n\nIdentifiable membership is the point of the exchange.\n\nSo the statement is True."
+      "Email contact between purchases uses the customer data CRM keeps on file. Coupons and newsletters are that retained-contact channel.\n\nSo the statement is True.",
+      "Signing up for a loyalty card usually means trading anonymity for a discount or special offer. Identifiable membership is the point of the exchange.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6080,11 +6080,11 @@
       false
     ],
     "tactical_explanations": [
-      "Many customers do accept less anonymity when the discount or offer is worth it.\n\nCalling loyalty benefits always worthless misstates why programmes enrol people in the first place.\n\nSo the statement is False.",
+      "Many customers do accept less anonymity when the discount or offer is worth it. Calling loyalty benefits always worthless misstates why programmes enrol people in the first place.\n\nSo the statement is False.",
       "Buying-behaviour data is gathered mainly to tailor marketing, not merely to fill tax forms.\n\nSo the statement is False.",
-      "Market-oriented competitors aim to respond earlier to change, not later.\n\nWaiting for engineers to finish specs first describes a product-led delay.\n\nSo the statement is False.",
+      "Market-oriented competitors aim to respond earlier to change, not later. Waiting for engineers to finish specs first describes a product-led delay.\n\nSo the statement is False.",
       "Buying-behaviour records help match promotional content to what individual customers value.\n\nSo the statement is True.",
-      "Product orientation puts production and features ahead of needs analysis at the start.\n\nNeeds-first is market orientation.\n\nSo the statement is False."
+      "Product orientation puts production and features ahead of needs analysis at the start. Needs-first is market orientation.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -6138,11 +6138,11 @@
       true
     ],
     "tactical_explanations": [
-      "CRM’s long-term aim is supported by mailing or emailing product information that brings customers back.\n\nCommunication between purchases is part of the method, not an optional extra bolted on after the relationship already exists.\n\nSo the statement is True.",
-      "Registering an account often means accepting less anonymity in exchange for discounts and special offers.\n\nCustomers frequently make that trade.\n\nSo the statement is True.",
-      "After collecting customer and buying-behaviour data, firms tailor offers to personal preferences.\n\nThat sequence is standard CRM practice.\n\nSo the statement is True.",
+      "CRM’s long-term aim is supported by mailing or emailing product information that brings customers back. Communication between purchases is part of the method, not an optional extra bolted on after the relationship already exists.\n\nSo the statement is True.",
+      "Registering an account often means accepting less anonymity in exchange for discounts and special offers. Customers frequently make that trade.\n\nSo the statement is True.",
+      "After collecting customer and buying-behaviour data, firms tailor offers to personal preferences. That sequence is standard CRM practice.\n\nSo the statement is True.",
       "Long-term CRM relationships need ongoing contact.\n\nSo the statement is False.",
-      "Whether product or market orientation fits better depends on product type and competitive conditions.\n\nIt is contingent, not fixed by a universal rule.\n\nSo the statement is True."
+      "Whether product or market orientation fits better depends on product type and competitive conditions. It is contingent, not fixed by a universal rule.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -6169,9 +6169,9 @@
     "tactical_explanations": [
       "Commercial CRM programmes hold personal data too. Sensitivity is not only a government-agency issue.\n\nSo the statement is False.",
       "Product orientation centres production and feature development before detailed attention to external customer needs.\n\nSo the statement is True.",
-      "Identical marketing objectives do not prove two firms share the same orientation starting point.\n\nOne can be specs-led and another needs-led while both chase the same profit or share number.\n\nSo the statement is False.",
-      "Market-oriented firms often collect customer data precisely because customer focus needs evidence of preferences and behaviour.\n\nData collection supports that focus; it does not contradict it.\n\nSo the statement is False.",
-      "Product-oriented firms still advertise and promote; they simply develop the offering first.\n\nThey do not assume buyers will discover features with zero promotion.\n\nSo the statement is False."
+      "Identical marketing objectives do not prove two firms share the same orientation starting point. One can be specs-led and another needs-led while both chase the same profit or share number.\n\nSo the statement is False.",
+      "Market-oriented firms often collect customer data precisely because customer focus needs evidence of preferences and behaviour. Data collection supports that focus; it does not contradict it.\n\nSo the statement is False.",
+      "Product-oriented firms still advertise and promote; they simply develop the offering first. They do not assume buyers will discover features with zero promotion.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6199,8 +6199,8 @@
       "Market orientation places customers’ needs and wants at the forefront when shaping the offer.\n\nSo the statement is True.",
       "Coupons aimed at registered customers are a classic CRM retention tactic — bring them back for another purchase.\n\nSo the statement is True.",
       "CRM keeps identifiable information for ongoing contact, so personal data sensitivity matters.\n\nSo the statement is True.",
-      "Loyalty programmes typically identify members so discounts can be personal.\n\nThey do not force anonymity on customers who want the benefit — identification is usually the entry ticket.\n\nSo the statement is False.",
-      "When wants begin to change, market-oriented firms that have been watching the market can respond earlier.\n\nThat timing edge is a stated advantage.\n\nSo the statement is True."
+      "Loyalty programmes typically identify members so discounts can be personal. They do not force anonymity on customers who want the benefit — identification is usually the entry ticket.\n\nSo the statement is False.",
+      "When wants begin to change, market-oriented firms that have been watching the market can respond earlier. That timing edge is a stated advantage.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6226,9 +6226,9 @@
     ],
     "tactical_explanations": [
       "Product-oriented firms mainly bet on feature quality rather than continuous market adaptation.\n\nSo the statement is True.",
-      "Registered loyalty schemes show customers accepting less anonymity to get price benefits.\n\nThe trade is voluntary and common.\n\nSo the statement is True.",
-      "CRM stores individual histories, not only industry-wide aggregates, so offers can reflect personal preferences.\n\nIgnoring preferences is not how tailored CRM is designed.\n\nSo the statement is False.",
-      "Even advanced specifications do not make neglecting expectations a good idea.\n\nMarkets still move; ignoring them is risky.\n\nSo the statement is False.",
+      "Registered loyalty schemes show customers accepting less anonymity to get price benefits. The trade is voluntary and common.\n\nSo the statement is True.",
+      "CRM stores individual histories, not only industry-wide aggregates, so offers can reflect personal preferences. Ignoring preferences is not how tailored CRM is designed.\n\nSo the statement is False.",
+      "Even advanced specifications do not make neglecting expectations a good idea. Markets still move; ignoring them is risky.\n\nSo the statement is False.",
       "CRM aims to sustain relationships over time. A single campaign with no ongoing aim is not the same thing.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -6255,10 +6255,10 @@
     ],
     "tactical_explanations": [
       "Stored customer histories enable tailored product emails aligned with prior interests.\n\nSo the statement is True.",
-      "Personal accounts and loyalty cards typically do record buying behaviour for later marketing contact.\n\nClaiming they never record usable behaviour contradicts ordinary CRM practice.\n\nSo the statement is False.",
-      "Market orientation still cares about product quality; it simply decides what to make by starting from customer needs.\n\nOpinions alone do not replace a workable offering.\n\nSo the statement is False.",
+      "Personal accounts and loyalty cards typically do record buying behaviour for later marketing contact. Claiming they never record usable behaviour contradicts ordinary CRM practice.\n\nSo the statement is False.",
+      "Market orientation still cares about product quality; it simply decides what to make by starting from customer needs. Opinions alone do not replace a workable offering.\n\nSo the statement is False.",
       "Product orientation emphasises production and features; it does not mean abandoning production for service scripts only.\n\nSo the statement is False.",
-      "Both orientations may aim for satisfaction, yet product orientation still puts specifications ahead of the selling plan.\n\nShared goals, different sequence.\n\nSo the statement is True."
+      "Both orientations may aim for satisfaction, yet product orientation still puts specifications ahead of the selling plan. Shared goals, different sequence.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6284,10 +6284,10 @@
     ],
     "tactical_explanations": [
       "Markets and customer expectations should not be neglected because competitive markets punish firms that ignore shifting wants.\n\nSo the statement is True.",
-      "Anticipating change is presented as an advantage of market orientation, not a disadvantage.\n\nAdaptation costs may exist, but the chapter frames early response as a strength.\n\nSo the statement is False.",
-      "Competitor numbers help decide which orientation fits better — crowded markets often push firms toward stronger market orientation.\n\nSaying numbers have no bearing is wrong.\n\nSo the statement is False.",
-      "Emailing coupons to registered customers is a standard CRM retention tool.\n\nIt supports long-term relationships rather than contradicting them.\n\nSo the statement is False.",
-      "Sensitive use means protecting personal records, not publishing them publicly.\n\nA public dump of customer data is the opposite of sensitivity.\n\nSo the statement is False."
+      "Anticipating change is presented as an advantage of market orientation, not a disadvantage. Adaptation costs may exist, but the chapter frames early response as a strength.\n\nSo the statement is False.",
+      "Competitor numbers help decide which orientation fits better — crowded markets often push firms toward stronger market orientation. Saying numbers have no bearing is wrong.\n\nSo the statement is False.",
+      "Emailing coupons to registered customers is a standard CRM retention tool. It supports long-term relationships rather than contradicting them.\n\nSo the statement is False.",
+      "Sensitive use means protecting personal records, not publishing them publicly. A public dump of customer data is the opposite of sensitivity.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -6313,9 +6313,9 @@
     ],
     "tactical_explanations": [
       "CRM’s long-term relationship goals distinguish ongoing contact from single-transaction selling.\n\nSo the statement is True.",
-      "Buying-behaviour data lets offers mirror what individual customers prefer.\n\nCollection supports that personalisation.\n\nSo the statement is True.",
-      "Product-oriented selling logic assumes superior features attract buyers even when prior market research was limited.\n\nSpecs carry much of the persuasive load in that worldview.\n\nSo the statement is True.",
-      "Market-oriented workflows start with requirements and finish with products shaped to meet them.\n\nNeeds first, offer second.\n\nSo the statement is True.",
+      "Buying-behaviour data lets offers mirror what individual customers prefer. Collection supports that personalisation.\n\nSo the statement is True.",
+      "Product-oriented selling logic assumes superior features attract buyers even when prior market research was limited. Specs carry much of the persuasive load in that worldview.\n\nSo the statement is True.",
+      "Market-oriented workflows start with requirements and finish with products shaped to meet them. Needs first, offer second.\n\nSo the statement is True.",
       "Loyalty cards and accounts identify people. Sensitive handling of that personal data is indispensable.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -6341,11 +6341,11 @@
       false
     ],
     "tactical_explanations": [
-      "Defining products first and asking customers afterwards is product orientation.\n\nMarket-oriented firms reverse that order, so the claim mislabels the approach.\n\nSo the statement is False.",
+      "Defining products first and asking customers afterwards is product orientation. Market-oriented firms reverse that order, so the claim mislabels the approach.\n\nSo the statement is False.",
       "Anticipating changing needs gives market-oriented businesses a timing advantage over specification-led rivals.\n\nSo the statement is True.",
       "As competition made customer adaptation more critical, many firms shifted emphasis toward market orientation over time.\n\nSo the statement is True.",
       "In product orientation, managers emphasise the product and its specifications before they build detailed selling plans for the finished offering.\n\nSo the statement is True.",
-      "Product-oriented firms still plan how to sell; they simply do it after the offering is defined.\n\nSuperior features do not erase selling activity.\n\nSo the statement is False."
+      "Product-oriented firms still plan how to sell; they simply do it after the offering is defined. Superior features do not erase selling activity.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6372,7 +6372,7 @@
     "tactical_explanations": [
       "A product-oriented team may refine specifications extensively before surveying whether buyers value those priorities.\n\nSo the statement is True.",
       "Newsletters exist partly because customers do return. Retaining data for that follow-up is central to CRM, not pointless.\n\nEmptying the database after every mailshot would erase the relationship the programme is built to sustain.\n\nSo the statement is False.",
-      "Loyalty discounts tied to personal accounts are member-specific; they are not anonymous deals for every visitor.\n\nAccounts make the discount personal.\n\nSo the statement is False.",
+      "Loyalty discounts tied to personal accounts are member-specific; they are not anonymous deals for every visitor. Accounts make the discount personal.\n\nSo the statement is False.",
       "Product-oriented planning treats the product and its specifications as the main reason the offering should succeed commercially.\n\nSo the statement is True.",
       "Feature quality comes first in the product-oriented sequence; detailed selling plans come after.\n\nSo the statement is True."
     ],
@@ -6399,11 +6399,11 @@
       true
     ],
     "tactical_explanations": [
-      "Preferences do change, and later purchases still inform tailored offers.\n\nOne prior buy does not freeze the record forever or make behaviour data useless for the next campaign.\n\nSo the statement is False.",
-      "Product-oriented teams often refine feature quality extensively before surveying whether buyers value those priorities.\n\nSpecs work comes first.\n\nSo the statement is True.",
+      "Preferences do change, and later purchases still inform tailored offers. One prior buy does not freeze the record forever or make behaviour data useless for the next campaign.\n\nSo the statement is False.",
+      "Product-oriented teams often refine feature quality extensively before surveying whether buyers value those priorities. Specs work comes first.\n\nSo the statement is True.",
       "Both orientations can share profitability targets.\n\nSo the statement is False.",
       "Product-oriented planning treats feature quality as the main commercial bet — the offering succeeds because of what it is.\n\nSo the statement is True.",
-      "Managers under product orientation emphasise internal production capabilities before they develop detailed selling plans.\n\nCapability and output lead; selling plans follow.\n\nSo the statement is True."
+      "Managers under product orientation emphasise internal production capabilities before they develop detailed selling plans. Capability and output lead; selling plans follow.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6428,11 +6428,11 @@
       false
     ],
     "tactical_explanations": [
-      "Market orientation often uses purchase histories to understand customers better.\n\nCollecting personal data for that purpose is allowed in the approach; it is not prohibited.\n\nSo the statement is False.",
+      "Market orientation often uses purchase histories to understand customers better. Collecting personal data for that purpose is allowed in the approach; it is not prohibited.\n\nSo the statement is False.",
       "Product orientation is not defined by mailing coupons before any specifications exist.\n\nSo the statement is False.",
       "Customer expectations matter for product-oriented firms too — the chapter warns against neglecting markets even with strong specs.\n\nThey are not relevant only to market-oriented businesses. A specs-led firm that ignores shifting wants can still lose the market.\n\nSo the statement is False.",
-      "A product-oriented team may refine internal production capabilities at length before surveying buyer priorities.\n\nThat internal-first path matches the orientation.\n\nSo the statement is True.",
-      "Product orientation for consumer electronics retailers starts with specifications, not with analysing every customer’s needs first.\n\nNeeds-first is market orientation.\n\nSo the statement is False."
+      "A product-oriented team may refine internal production capabilities at length before surveying buyer priorities. That internal-first path matches the orientation.\n\nSo the statement is True.",
+      "Product orientation for consumer electronics retailers starts with specifications, not with analysing every customer’s needs first. Needs-first is market orientation.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6457,10 +6457,10 @@
       false
     ],
     "tactical_explanations": [
-      "Product-oriented planning treats internal production capabilities as the primary commercial foundation.\n\nThe firm believes capability and output will carry success.\n\nSo the statement is True.",
-      "High internal feature quality does not let market-oriented consumer electronics retailers ignore customer expectations.\n\nMarket orientation exists to track those expectations; quality alone does not retire the customer focus.\n\nSo the statement is False.",
-      "Identical profitability targets do not force identical orientation processes.\n\nTwo retailers can share a profit goal and still differ on specs-first versus needs-first.\n\nSo the statement is False.",
-      "CRM keeps personal records between transactions so follow-up is possible.\n\nDeleting everything after each sale would block newsletters and personalised coupons.\n\nSo the statement is False.",
+      "Product-oriented planning treats internal production capabilities as the primary commercial foundation. The firm believes capability and output will carry success.\n\nSo the statement is True.",
+      "High internal feature quality does not let market-oriented consumer electronics retailers ignore customer expectations. Market orientation exists to track those expectations; quality alone does not retire the customer focus.\n\nSo the statement is False.",
+      "Identical profitability targets do not force identical orientation processes. Two retailers can share a profit goal and still differ on specs-first versus needs-first.\n\nSo the statement is False.",
+      "CRM keeps personal records between transactions so follow-up is possible. Deleting everything after each sale would block newsletters and personalised coupons.\n\nSo the statement is False.",
       "Personalised coupons need identifiable membership.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -6490,7 +6490,7 @@
       "A product-oriented team may refine those technical specifications extensively before surveying whether buyers value them.\n\nSo the statement is True.",
       "Planning under product orientation treats technical specifications as the primary basis for commercial success.\n\nSo the statement is True.",
       "Laboratory formulation and feature-set work can run long before any buyer survey — classic product-oriented sequencing.\n\nSo the statement is True.",
-      "Market-oriented planning studies customers’ needs and wants before locking final product specifications.\n\nThat needs-first sequence is the mirror image of specs-led product orientation, and it is what lets the firm reshape the offer when preferences move.\n\nSo the statement is True."
+      "Market-oriented planning studies customers’ needs and wants before locking final product specifications. That needs-first sequence is the mirror image of specs-led product orientation, and it is what lets the firm reshape the offer when preferences move.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -6516,10 +6516,10 @@
     ],
     "tactical_explanations": [
       "A market-oriented business examines needs and wants, then tailors the offering.\n\nSo the statement is True.",
-      "When needs and wants show prior assumptions are wrong, market-oriented managers adjust promotions.\n\nFeedback drives the change.\n\nSo the statement is True.",
+      "When needs and wants show prior assumptions are wrong, market-oriented managers adjust promotions. Feedback drives the change.\n\nSo the statement is True.",
       "Shifting preferences are studied before final specs are locked under market-oriented planning.\n\nSo the statement is True.",
-      "The same adjustment logic applies when shifting preferences overturn earlier promotion assumptions.\n\nMarket-oriented managers rewrite the promo plan accordingly.\n\nSo the statement is True.",
-      "Recorded purchase histories feed market-oriented planning before specifications are finalised.\n\nBehaviour evidence — what people actually bought — shapes what gets locked in, rather than leaving the assortment to internal habit alone.\n\nSo the statement is True."
+      "The same adjustment logic applies when shifting preferences overturn earlier promotion assumptions. Market-oriented managers rewrite the promo plan accordingly.\n\nSo the statement is True.",
+      "Recorded purchase histories feed market-oriented planning before specifications are finalised. Behaviour evidence — what people actually bought — shapes what gets locked in, rather than leaving the assortment to internal habit alone.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -6544,8 +6544,8 @@
       false
     ],
     "tactical_explanations": [
-      "Collecting buying-behaviour data is central to CRM for consumer electronics retailers and enables tailored offers.\n\nSaying the data is unrelated to CRM practice is wrong — without those records, personalisation has little to work with.\n\nSo the statement is False.",
-      "Market-oriented retailers aim to respond earlier to changing wants, not later.\n\nWaiting for finished specifications first is the product-led delay.\n\nSo the statement is False.",
+      "Collecting buying-behaviour data is central to CRM for consumer electronics retailers and enables tailored offers. Saying the data is unrelated to CRM practice is wrong — without those records, personalisation has little to work with.\n\nSo the statement is False.",
+      "Market-oriented retailers aim to respond earlier to changing wants, not later. Waiting for finished specifications first is the product-led delay.\n\nSo the statement is False.",
       "After examining recorded purchase histories, a market-oriented business tailors its offering rather than assuming internal preferences are enough.\n\nSo the statement is True.",
       "Product-oriented consumer electronics retailers do rely on feature quality; they do not abandon strong offerings for coupons alone.\n\nSo the statement is False.",
       "Product orientation for supermarket chains starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False."
@@ -6573,10 +6573,10 @@
       true
     ],
     "tactical_explanations": [
-      "Market-oriented regional supermarket chains cannot ignore customer expectations just because internal feature quality looks high.\n\nExpectations are the focus of that orientation, so quality never retires the customer reading.\n\nSo the statement is False.",
+      "Market-oriented regional supermarket chains cannot ignore customer expectations just because internal feature quality looks high. Expectations are the focus of that orientation, so quality never retires the customer reading.\n\nSo the statement is False.",
       "When purchase histories show prior assumptions no longer hold, market-oriented managers adjust promotions.\n\nSo the statement is True.",
       "Market-oriented planning studies identified market requirements before final specifications are locked.\n\nSo the statement is True.",
-      "Identical profitability targets do not force identical orientation processes across supermarket chains.\n\nShared goals, different paths remain possible.\n\nSo the statement is False.",
+      "Identical profitability targets do not force identical orientation processes across supermarket chains. Shared goals, different paths remain possible.\n\nSo the statement is False.",
       "After examining identified market requirements, a market-oriented business shapes the offer — internal preferences alone do not decide it.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -6602,9 +6602,9 @@
       true
     ],
     "tactical_explanations": [
-      "CRM at regional supermarket chains keeps personal records between trips so reminders and offers can be sent.\n\nPermanent deletion after each transaction would break that model and leave the next visit without a usable history.\n\nSo the statement is False.",
+      "CRM at regional supermarket chains keeps personal records between trips so reminders and offers can be sent. Permanent deletion after each transaction would break that model and leave the next visit without a usable history.\n\nSo the statement is False.",
       "Personalised coupons need identifiable shoppers. Complete anonymity cannot sit alongside true personalisation.\n\nSo the statement is False.",
-      "Buying-behaviour data is part of CRM practice and is how supermarket chains tailor offers.\n\nCalling collection unrelated to CRM is false.\n\nSo the statement is False.",
+      "Buying-behaviour data is part of CRM practice and is how supermarket chains tailor offers. Calling collection unrelated to CRM is false.\n\nSo the statement is False.",
       "Market-oriented chains try to respond earlier when wants change, not later after specs are finished.\n\nSo the statement is False.",
       "When identified market requirements overturn prior assumptions, market-oriented managers adjust promotions.\n\nSo the statement is True."
     ],
@@ -6631,10 +6631,10 @@
       false
     ],
     "tactical_explanations": [
-      "Product-oriented supermarket chains still rely on feature and product quality; they do not run on coupons alone without a strong offering.\n\nThe orientation’s bet is the product, not empty promotional noise.\n\nSo the statement is False.",
+      "Product-oriented supermarket chains still rely on feature and product quality; they do not run on coupons alone without a strong offering. The orientation’s bet is the product, not empty promotional noise.\n\nSo the statement is False.",
       "Market-oriented planning studies evolving buyer expectations before locking final product specifications.\n\nSo the statement is True.",
       "Product orientation for fashion garment suppliers starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False.",
-      "Market-oriented fashion garment suppliers still track customer expectations even when internal feature quality is high.\n\nIgnoring expectations contradicts the orientation.\n\nSo the statement is False.",
+      "Market-oriented fashion garment suppliers still track customer expectations even when internal feature quality is high. Ignoring expectations contradicts the orientation.\n\nSo the statement is False.",
       "Identical profitability targets do not force fashion suppliers into identical orientation processes.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -6663,7 +6663,7 @@
       "Fashion CRM keeps personal records for follow-up. Deleting them after every transaction would end newsletters and loyalty contact.\n\nSo the statement is False.",
       "Personalised coupons require identifiable members.\n\nSo the statement is False.",
       "Collecting buying-behaviour data is how fashion firms tailor CRM offers; it is not unrelated to CRM.\n\nSo the statement is False.",
-      "A market-oriented business examines evolving buyer expectations, then tailors the offering instead of assuming internal preferences suffice.\n\nThat expectations-first sequence is what separates market orientation from specs-led development.\n\nSo the statement is True.",
+      "A market-oriented business examines evolving buyer expectations, then tailors the offering instead of assuming internal preferences suffice. That expectations-first sequence is what separates market orientation from specs-led development.\n\nSo the statement is True.",
       "When those evolving expectations show prior promotion assumptions are stale, market-oriented managers adjust.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -6722,7 +6722,7 @@
       "Preferences expressed through loyalty accounts are studied before final product specifications are locked.\n\nSo the statement is True.",
       "After examining those loyalty-account preferences, a market-oriented business tailors its offering.\n\nSo the statement is True.",
       "Promotion adjustments follow when loyalty-account preferences show earlier assumptions are outdated.\n\nSo the statement is True.",
-      "Requirements revealed by market research also come before locked specifications in market-oriented planning.\n\nResearch findings sit upstream of the final bill of materials or assortment, so the firm is not guessing from internal preference alone.\n\nSo the statement is True."
+      "Requirements revealed by market research also come before locked specifications in market-oriented planning. Research findings sit upstream of the final bill of materials or assortment, so the firm is not guessing from internal preference alone.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6748,7 +6748,7 @@
     ],
     "tactical_explanations": [
       "Market-oriented fashion suppliers aim to respond earlier to changing wants, not later.\n\nSo the statement is False.",
-      "After examining requirements from market research, a market-oriented business tailors the offering rather than assuming internal preferences suffice.\n\nResearch sits upstream of the final range, so the firm is not guessing from the design room alone.\n\nSo the statement is True.",
+      "After examining requirements from market research, a market-oriented business tailors the offering rather than assuming internal preferences suffice. Research sits upstream of the final range, so the firm is not guessing from the design room alone.\n\nSo the statement is True.",
       "Product-oriented fashion suppliers rely on feature quality; they do not depend only on coupons without strong offerings.\n\nSo the statement is False.",
       "Product orientation for software subscription providers starts with specifications, not with analysing every customer’s needs first.\n\nSo the statement is False.",
       "When market-research requirements show prior promotion assumptions are wrong, market-oriented managers adjust.\n\nSo the statement is True."
@@ -6780,7 +6780,7 @@
       "The offering is then tailored from those repeat-purchase signals rather than from internal preferences alone.\n\nSo the statement is True.",
       "Market-oriented software subscription providers still attend to customer expectations even when internal feature quality is high.\n\nSo the statement is False.",
       "Identical profitability targets do not force identical orientation processes.\n\nSo the statement is False.",
-      "CRM keeps personal records between subscriptions so upgrades and offers can be sent.\n\nDeleting all records after each transaction would block that follow-up and turn “relationship management” into a one-shot receipt.\n\nSo the statement is False."
+      "CRM keeps personal records between subscriptions so upgrades and offers can be sent. Deleting all records after each transaction would block that follow-up and turn “relationship management” into a one-shot receipt.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6807,9 +6807,9 @@
     "tactical_explanations": [
       "Personalised coupons need identifiable members.\n\nSo the statement is False.",
       "When repeat-purchase patterns show prior promotion assumptions are stale, market-oriented managers adjust.\n\nSo the statement is True.",
-      "For consumer electronics in hospitality markets, orientation fit depends on the offering and how many rivals compete in that category.\n\nA specialised hospitality channel with few rivals may tolerate more product-led emphasis; a crowded one usually demands closer reading of buyer wants.\n\nSo the statement is True.",
-      "Buying-behaviour data is part of CRM and enables tailored offers for software subscription providers.\n\nCalling collection unrelated to CRM is false.\n\nSo the statement is False.",
-      "A hospitality supplier of consumer electronics can share profitability objectives with rivals yet follow a different orientation path.\n\nShared goals do not force shared starting points.\n\nSo the statement is True."
+      "For consumer electronics in hospitality markets, orientation fit depends on the offering and how many rivals compete in that category. A specialised hospitality channel with few rivals may tolerate more product-led emphasis; a crowded one usually demands closer reading of buyer wants.\n\nSo the statement is True.",
+      "Buying-behaviour data is part of CRM and enables tailored offers for software subscription providers. Calling collection unrelated to CRM is false.\n\nSo the statement is False.",
+      "A hospitality supplier of consumer electronics can share profitability objectives with rivals yet follow a different orientation path. Shared goals do not force shared starting points.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6836,7 +6836,7 @@
     "tactical_explanations": [
       "Even high consumer-electronics quality in hospitality does not licence neglecting markets and customer expectations.\n\nSo the statement is True.",
       "For household groceries in retail fashion markets, orientation fit again depends on the offering and rival numbers in that category.\n\nSo the statement is True.",
-      "Market-oriented software subscription providers try to respond earlier to changing wants, not later after specs are finished.\n\nWaiting on a finished specification before noticing demand shifts is the product-led delay, not the market-oriented pattern.\n\nSo the statement is False.",
+      "Market-oriented software subscription providers try to respond earlier to changing wants, not later after specs are finished. Waiting on a finished specification before noticing demand shifts is the product-led delay, not the market-oriented pattern.\n\nSo the statement is False.",
       "Product-oriented software providers still rely on feature quality rather than coupons alone without a strong offering.\n\nSo the statement is False.",
       "A retail fashion supplier of household groceries may share profitability objectives with rivals while taking a different orientation path.\n\nSo the statement is True."
     ],
@@ -6867,7 +6867,7 @@
       "Market-oriented hotel loyalty programmes still track customer expectations even when internal feature quality is high.\n\nSo the statement is False.",
       "Identical profitability targets do not force identical orientation processes for hotel loyalty programmes.\n\nSo the statement is False.",
       "Even strong household grocery quality in retail fashion does not justify neglecting markets and customer expectations.\n\nSo the statement is True.",
-      "Hotel CRM keeps personal guest records between stays.\n\nDeleting them after each transaction would end tailored follow-up — room preferences, offers, and repeat-stay prompts would have no memory to draw on.\n\nSo the statement is False."
+      "Hotel CRM keeps personal guest records between stays. Deleting them after each transaction would end tailored follow-up — room preferences, offers, and repeat-stay prompts would have no memory to draw on.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6893,10 +6893,10 @@
     ],
     "tactical_explanations": [
       "Orientation suitability depends on the offering and how many rivals compete.\n\nSo the statement is True.",
-      "A business software supplier of seasonal fashion garments may share profitability objectives with rivals yet follow different orientation paths.\n\nOne firm can lock specs early while another keeps reading demand first — same profit goal, different starting point.\n\nSo the statement is True.",
-      "High quality still does not excuse neglecting markets and customer expectations.\n\nA technically fine seasonal range can miss the season if buyers have already moved on.\n\nSo the statement is True.",
+      "A business software supplier of seasonal fashion garments may share profitability objectives with rivals yet follow different orientation paths. One firm can lock specs early while another keeps reading demand first — same profit goal, different starting point.\n\nSo the statement is True.",
+      "High quality still does not excuse neglecting markets and customer expectations. A technically fine seasonal range can miss the season if buyers have already moved on.\n\nSo the statement is True.",
       "For hotel accommodation in food service markets, orientation fit likewise depends on the offering and rival intensity.\n\nSo the statement is True.",
-      "A food service supplier of hotel accommodation may share profit goals with rivals while choosing a different orientation path.\n\nShared targets do not force a shared specs-first or needs-first sequence.\n\nSo the statement is True."
+      "A food service supplier of hotel accommodation may share profit goals with rivals while choosing a different orientation path. Shared targets do not force a shared specs-first or needs-first sequence.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -6922,10 +6922,10 @@
     ],
     "tactical_explanations": [
       "Strong hotel accommodation quality in food service still leaves markets and customer expectations relevant.\n\nSo the statement is True.",
-      "For dental care services in financial services markets, orientation fit depends on the offering and competitor numbers.\n\nSparse competition may tolerate more product-led emphasis; a crowded category usually needs closer reading of client wants.\n\nSo the statement is True.",
+      "For dental care services in financial services markets, orientation fit depends on the offering and competitor numbers. Sparse competition may tolerate more product-led emphasis; a crowded category usually needs closer reading of client wants.\n\nSo the statement is True.",
       "A financial services supplier of dental care may share profitability objectives with rivals yet start from a different orientation.\n\nSo the statement is True.",
       "Home furniture in healthcare supplies markets follows the same contingency: product type and rival count shape orientation fit.\n\nSo the statement is True.",
-      "A healthcare supplies supplier of home furniture ranges can share profit targets with rivals while using a different orientation path.\n\nOne path may lock specs early; another may keep reading demand signals first.\n\nSo the statement is True."
+      "A healthcare supplies supplier of home furniture ranges can share profit targets with rivals while using a different orientation path. One path may lock specs early; another may keep reading demand signals first.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6950,7 +6950,7 @@
       true
     ],
     "tactical_explanations": [
-      "Market-oriented hotels do use guest preferences when shaping offers, but they may still keep a core standard room product while adapting extras around it.\n\nReading the claim as “never push any unchanged standard product” overreaches ordinary hotel practice under that orientation.\n\nSo the statement is False.",
+      "Market-oriented hotels do use guest preferences when shaping offers, but they may still keep a core standard room product while adapting extras around it. Reading the claim as “never push any unchanged standard product” overreaches ordinary hotel practice under that orientation.\n\nSo the statement is False.",
       "Hotel loyalty programmes use buying-behaviour data inside CRM to tailor offers.\n\nSo the statement is False.",
       "Market-oriented hotel loyalty programmes aim to respond earlier to changing wants, not later after finished specifications.\n\nSo the statement is False.",
       "Even strong home furniture quality in healthcare supplies does not justify neglecting markets and customer expectations.\n\nSo the statement is True.",
@@ -6981,9 +6981,9 @@
     "tactical_explanations": [
       "A home improvement supplier of online grocery deliveries may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
       "High quality in online grocery deliveries for home improvement still does not licence neglecting markets and expectations.\n\nSo the statement is True.",
-      "For fitness class memberships in automotive after-sales markets, orientation fit depends on the offering itself and how many rivals compete in that category.\n\nA specialised membership with few rivals may tolerate more product-led emphasis; a crowded local fitness market usually pushes firms toward closer reading of member wants.\n\nSo the statement is True.",
+      "For fitness class memberships in automotive after-sales markets, orientation fit depends on the offering itself and how many rivals compete in that category. A specialised membership with few rivals may tolerate more product-led emphasis; a crowded local fitness market usually pushes firms toward closer reading of member wants.\n\nSo the statement is True.",
       "An automotive after-sales supplier of fitness memberships can share profit goals with rivals while choosing a different orientation path.\n\nSo the statement is True.",
-      "Even strong fitness membership quality in automotive after-sales leaves customer expectations relevant.\n\nNeglecting those expectations still risks churn when rivals adapt faster.\n\nSo the statement is True."
+      "Even strong fitness membership quality in automotive after-sales leaves customer expectations relevant. Neglecting those expectations still risks churn when rivals adapt faster.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -7011,7 +7011,7 @@
       "For corporate catering in education technology markets, orientation suitability depends on the offering and competitor intensity.\n\nSo the statement is True.",
       "An education technology supplier of corporate catering menus may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
       "High catering quality still does not excuse neglecting markets and customer expectations.\n\nSo the statement is True.",
-      "Product-oriented hotel loyalty programmes still rely on feature quality of the stay or offer; they do not depend only on coupons without a strong offering.\n\nCoupons may support retention, but the orientation’s commercial bet remains the product itself.\n\nSo the statement is False.",
+      "Product-oriented hotel loyalty programmes still rely on feature quality of the stay or offer; they do not depend only on coupons without a strong offering. Coupons may support retention, but the orientation’s commercial bet remains the product itself.\n\nSo the statement is False.",
       "For bookshop inventory selections in leisure travel markets, orientation fit depends on the offering and how many rivals compete.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -7067,7 +7067,7 @@
     ],
     "tactical_explanations": [
       "For vehicle maintenance in specialty cosmetics markets, orientation fit depends on the offering and how many rivals compete in that category.\n\nSo the statement is True.",
-      "Dental membership CRM keeps personal records between visits for reminders and offers.\n\nDeleting all records after each transaction would end that follow-up and empty the loyalty toolset the scheme depends on.\n\nSo the statement is False.",
+      "Dental membership CRM keeps personal records between visits for reminders and offers. Deleting all records after each transaction would end that follow-up and empty the loyalty toolset the scheme depends on.\n\nSo the statement is False.",
       "A specialty cosmetics supplier of vehicle maintenance services may share profitability objectives with rivals yet follow different orientation paths.\n\nSo the statement is True.",
       "Personalised coupons need identifiable members.\n\nSo the statement is False.",
       "Even strong vehicle maintenance quality in specialty cosmetics leaves markets and customer expectations relevant to the supplier.\n\nSo the statement is True."

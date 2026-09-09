@@ -22,7 +22,7 @@
       "One person owns the firm and runs it day to day.\n\nSo the statement is True.",
       "Decision rights sit undivided with the proprietor. Advice is optional; other opinions are not a formal gate before acting.\n\nSo the statement is True.",
       "The firm is not a separate legal person, so trading profit is not taxed on a corporate return. It lands on the owner’s personal income tax statement.\n\nSo the statement is True.",
-      "A sole proprietorship is not a separate legal person. Corporate personality and an independent corporate tax filing belong to incorporated companies, not to a sole trader.\n\nCounterexample: the bakery owner reports bakery profit on a personal return, not as a corporation filing its own tax.\n\nCalling the shop a “company” in everyday speech does not create that legal personality.\n\nSo the statement is False.",
+      "A sole proprietorship is not a separate legal person. Corporate personality and an independent corporate tax filing belong to incorporated companies, not to a sole trader.\n\nCounterexample: the bakery owner reports bakery profit on a personal return, not as a corporation filing its own tax. Calling the shop a “company” in everyday speech does not create that legal personality.\n\nSo the statement is False.",
       "Continuity hangs on one person’s capacity to own and manage. Retirement or long-term illness can interrupt operations unless ownership and control are transferred.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -254,7 +254,7 @@
       "One individual owns the firm and runs it day to day.\n\nSo the statement is True.",
       "Start-up is light on formal finance hurdles: no minimum capital is required, which suits many small businesses.\n\nSo the statement is True.",
       "Without its own legal personality, the firm’s profit is taxed on the owner’s personal income statement.\n\nSo the statement is True.",
-      "Unlimited liability puts private assets on the line when business debts must be repaid beyond firm resources.\n\nIf the shop’s cash cannot cover a supplier or bank claim, the proprietor’s personal property can be reached.\n\nSo the statement is True.",
+      "Unlimited liability puts private assets on the line when business debts must be repaid beyond firm resources. If the shop’s cash cannot cover a supplier or bank claim, the proprietor’s personal property can be reached.\n\nSo the statement is True.",
       "Personnel can be hired for support, yet key management decisions stay with the proprietor.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -342,7 +342,7 @@
       "Ownership and central operational responsibility sit with one person who both owns and manages the firm.\n\nSo the statement is True.",
       "Stepping away through retirement or prolonged illness can interrupt continuity when everything hangs on that one manager.\n\nSo the statement is True.",
       "When personal funds run short, extra money can be sought from investors and/or banks — external finance options for the sole trader.\n\nSo the statement is True.",
-      "Lacking separate legal personality, profits are taxed on the owner’s personal income tax statement.\n\nMissing separate personality is exactly why the tax bill lands on the individual.\n\nSo the statement is True."
+      "Lacking separate legal personality, profits are taxed on the owner’s personal income tax statement. Missing separate personality is exactly why the tax bill lands on the individual.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -545,7 +545,7 @@
       "Without separate legal personality, business profits are assessed on the owner’s personal income tax statement.\n\nSo the statement is True.",
       "Small sole traders face no minimum capital requirement at establishment.\n\nSo the statement is True.",
       "Unlimited liability means private assets are also at stake if business debts must be repaid.\n\nSo the statement is True.",
-      "Retirement or long-term illness of the sole proprietor can create continuity problems for the firm.\n\nThe business depends on that one owner-manager remaining able to run it.\n\nSo the statement is True."
+      "Retirement or long-term illness of the sole proprietor can create continuity problems for the firm. The business depends on that one owner-manager remaining able to run it.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -690,7 +690,7 @@
       "Once operations throw off a surplus, retained profit and sale of unneeded assets supply internal finance.\n\nSo the statement is True.",
       "Every credit facility — short or long — is a liability on the sole proprietor.\n\nSo the statement is True.",
       "When revenues beat expenses, profit can be retained and reinvested unless the proprietor takes it out.\n\nSo the statement is True.",
-      "Changing the mix of internal and external funds does not cancel unlimited liability.\n\nWhen debts outrun business assets, personal exposure is the cost of this unincorporated form.\n\nSo the statement is True."
+      "Changing the mix of internal and external funds does not cancel unlimited liability. When debts outrun business assets, personal exposure is the cost of this unincorporated form.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -719,7 +719,7 @@
       "Launch funding typically comes from the proprietor’s own savings.\n\nSo the statement is True.",
       "When personal funds are not enough, investors and/or banks are the usual places to seek extra money.\n\nSo the statement is True.",
       "After trading begins, retained profit can sit alongside external borrowing in the finance mix.\n\nSo the statement is True.",
-      "Long-term lenders commonly insist on assets that can serve as collateral before they advance funds.\n\nSeveral partners can usually assemble more savings and collateral than one sole trader.\n\nSo the statement is True."
+      "Long-term lenders commonly insist on assets that can serve as collateral before they advance funds. Several partners can usually assemble more savings and collateral than one sole trader.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -834,7 +834,7 @@
       "With a business current account in place, an overdraft can bridge short cash gaps flexibly until receipts arrive.\n\nSo the statement is True.",
       "An overdraft is just a credit line on the account. It does not turn the sole proprietorship into a limited company.\n\nSo the statement is False.",
       "Short maturity does not remove liability status. An overdrawn balance is still a debt the proprietor owes the bank.\n\nSo the statement is False.",
-      "Interest is charged when the account is overdrawn — not on a positive balance that never crosses into overdraft.\n\nShort-term or long-term label changes timing, not whether the debt exists.\n\nSo the statement is False.",
+      "Interest is charged when the account is overdrawn — not on a positive balance that never crosses into overdraft. Short-term or long-term label changes timing, not whether the debt exists.\n\nSo the statement is False.",
       "The facility is bank credit, so it is external finance. Using “the proprietor’s own account” does not make the borrowed money internal.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -893,7 +893,7 @@
       "Outside investors who contribute capital also supply external finance.\n\nSo the statement is True.",
       "Bank and other creditor funds are external and must be repaid on the credit agreement’s terms.\n\nSo the statement is True.",
       "Thin personal wealth makes it hard to launch: available funds lean heavily on what the proprietor can bring.\n\nSo the statement is True.",
-      "Typical start-up funding begins with the proprietor’s own savings before other sources are added.\n\nPooled private assets can make the collateral package for a loan more convincing.\n\nSo the statement is True."
+      "Typical start-up funding begins with the proprietor’s own savings before other sources are added. Pooled private assets can make the collateral package for a loan more convincing.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1009,7 +1009,7 @@
       "Selling assets no longer needed raises internal finance without an interest charge from a lender.\n\nSo the statement is True.",
       "Internal sources avoid the interest paid on borrowed funds — that is their cost advantage.\n\nSo the statement is True.",
       "Reinvested surplus funds operations without creating a new creditor liability.\n\nSo the statement is True.",
-      "Once profit is withdrawn for personal spending, it is no longer sitting in the business as internal finance.\n\nDividends are a corporate distribution story — sole traders do not need that step to be taxed.\n\nSo the statement is False."
+      "Once profit is withdrawn for personal spending, it is no longer sitting in the business as internal finance. Dividends are a corporate distribution story — sole traders do not need that step to be taxed.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1183,7 +1183,7 @@
       "Starting is easy: no financial requirements must be met before this kind of business can begin.\n\nSo the statement is True.",
       "Because the firm is not a legal entity, profits are taxed on the owner’s personal income tax statement.\n\nSo the statement is True.",
       "Unlimited liability puts private assets at stake alongside business assets when debts must be met.\n\nSo the statement is True.",
-      "Retained profit as internal finance avoids interest; external credit creates liabilities that usually carry interest.\n\nPrivate assets enter the picture precisely because the form carries unlimited liability.\n\nSo the statement is True."
+      "Retained profit as internal finance avoids interest; external credit creates liabilities that usually carry interest. Private assets enter the picture precisely because the form carries unlimited liability.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1355,7 +1355,7 @@
     "tactical_explanations": [
       "Not being a legal entity sends profits onto the owner’s personal income tax statement.\n\nSo the statement is True.",
       "Profit retained rather than withdrawn is internal finance and avoids interest charges.\n\nSo the statement is True.",
-      "Personal income tax on profits does not add a separate corporate tax on retained earnings for a sole trader.\n\nHiring staff or signing supplier contracts does not force a switch to corporate tax.\n\nSo the statement is False.",
+      "Personal income tax on profits does not add a separate corporate tax on retained earnings for a sole trader. Hiring staff or signing supplier contracts does not force a switch to corporate tax.\n\nSo the statement is False.",
       "Investor and bank funds are external; they create outside ownership claims or liabilities.\n\nSo the statement is True.",
       "Once operating, selling unused assets can release internal finance.\n\nSo the statement is True."
     ],
@@ -1386,7 +1386,7 @@
       "Failure that leaves debts unpaid puts private assets at stake as well.\n\nSo the statement is True.",
       "Overdrafts, trade credit, and long-term loans are all liabilities of the sole proprietor.\n\nSo the statement is True.",
       "Relying on retained profit or asset sales for finance does not switch off unlimited liability.\n\nSo the statement is True.",
-      "Unlimited liability covers business debts generally — not only the slice that was borrowed externally.\n\nUnincorporated ownership keeps the owner’s wider wealth in play once firm funds run out.\n\nSo the statement is True."
+      "Unlimited liability covers business debts generally — not only the slice that was borrowed externally. Unincorporated ownership keeps the owner’s wider wealth in play once firm funds run out.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1415,7 +1415,7 @@
       "Operating profits land on the proprietor’s personal income tax return because the firm lacks separate legal personality.\n\nSo the statement is True.",
       "Owner savings and bank credit sit on the external side; retained profit and asset sales on the internal side.\n\nSo the statement is True.",
       "Overdrafts and trade credit create liabilities, and unlimited liability can reach private assets.\n\nSo the statement is True.",
-      "Retirement or long-term illness of the sole proprietor can disrupt continuity — the claim that continuity is unaffected is wrong.\n\nWithout a transfer arrangement, stepping away from management leaves the service business exposed.\n\nSo the statement is False."
+      "Retirement or long-term illness of the sole proprietor can disrupt continuity — the claim that continuity is unaffected is wrong. Without a transfer arrangement, stepping away from management leaves the service business exposed.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1442,7 +1442,7 @@
     "tactical_explanations": [
       "Routine tasks can be delegated; the most important management decisions still sit with the sole proprietor.\n\nSo the statement is True.",
       "Easy entry does not erase later continuity or liability concerns. Those risks remain part of the sole-trader profile.\n\nSo the statement is False.",
-      "Retained profit reinvested does not require interest payments to external creditors — that charge belongs to borrowed money.\n\nThe owner’s personal assessment carries the trading result because the firm lacks separate personality.\n\nSo the statement is False.",
+      "Retained profit reinvested does not require interest payments to external creditors — that charge belongs to borrowed money. The owner’s personal assessment carries the trading result because the firm lacks separate personality.\n\nSo the statement is False.",
       "When revenues exceed expenses, profit may be retained for reinvestment unless the proprietor withdraws it.\n\nSo the statement is True.",
       "Investor funds and bank loans are external even when the cash is deposited in the business account.\n\nSo the statement is False."
     ],
@@ -1473,7 +1473,7 @@
       "A partnership agreement settles rights, responsibilities, and how profits and losses are split.\n\nSo the statement is True.",
       "In a general partnership, partners stand on equal footing for rights, liabilities, and responsibilities.\n\nSo the statement is True.",
       "Unlimited liability means each partner is solely liable for all debts of the business — not just a slice of them.\n\nSo the statement is True.",
-      "Work can be divided: partners share tasks and may specialise in different areas of the firm.\n\nSplitting client work from back-office work leaves shared unlimited liability intact.\n\nSo the statement is True."
+      "Work can be divided: partners share tasks and may specialise in different areas of the firm. Splitting client work from back-office work leaves shared unlimited liability intact.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1531,7 +1531,7 @@
       "Two or more partners can usually put in more savings and raise more funds than one sole proprietor alone.\n\nSo the statement is True.",
       "Combined private assets from several partners can strengthen the collateral package offered for a business loan.\n\nSo the statement is True.",
       "In broad terms, partnership finance looks similar to sole-trader finance — savings, credit, collateral — just with more people to draw on.\n\nSo the statement is True.",
-      "The agreement records each partner’s ownership percentage and how profit and loss are divided.\n\nFounders write those governance and profit-sharing details down so disputes have a text to follow.\n\nSo the statement is True."
+      "The agreement records each partner’s ownership percentage and how profit and loss are divided. Founders write those governance and profit-sharing details down so disputes have a text to follow.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1558,7 +1558,7 @@
     "tactical_explanations": [
       "Trust between two founders does not replace a partnership agreement. Rights, responsibilities, and profit division still need to be settled in writing.\n\nSo the statement is False.",
       "A salaried manager is an employee, not a co-owner. Hiring one does not turn a one-person business into a partnership.\n\nSo the statement is False.",
-      "Assigning supplier work to one partner does not lift unlimited liability from the other general partners.\n\nThe legal reach of creditors is set by the ownership form, not by how the loan was labelled.\n\nSo the statement is False.",
+      "Assigning supplier work to one partner does not lift unlimited liability from the other general partners. The legal reach of creditors is set by the ownership form, not by how the loan was labelled.\n\nSo the statement is False.",
       "Ownership percentage in the agreement does not cap a general partner’s liability at that share of the debts. Unlimited liability still reaches the full obligation.\n\nSo the statement is False.",
       "Decision making and dispute resolution are exactly the kinds of detail partners put into the partnership agreement.\n\nSo the statement is True."
     ],
@@ -1705,7 +1705,7 @@
       "General or limited partnership rules apply only after two or more persons jointly found the business.\n\nSo the statement is True.",
       "Equal rights among general partners can sit alongside unequal ownership percentages written into the agreement.\n\nSo the statement is True.",
       "Decision-making procedures and dispute-resolution methods belong in the partnership agreement together.\n\nSo the statement is True.",
-      "Each partner’s ownership percentage is one of the details settled when the agreement is set up.\n\nOwnership percentages and decision rules belong in the agreement before trading friction appears.\n\nSo the statement is True."
+      "Each partner’s ownership percentage is one of the details settled when the agreement is set up. Ownership percentages and decision rules belong in the agreement before trading friction appears.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1761,7 +1761,7 @@
     "tactical_explanations": [
       "Not every partner in a limited partnership enjoys a liability cap. Managing partners remain on unlimited liability.\n\nSo the statement is False.",
       "A multi-partner firm can usually assemble more combined collateral than one sole proprietor alone — not less.\n\nSo the statement is False.",
-      "Partnership finance is broadly similar to sole-trader finance; partners can still invest personal savings in the same spirit.\n\nA salaried helper is not a partner and does not trigger partnership liability rules.\n\nSo the statement is False.",
+      "Partnership finance is broadly similar to sole-trader finance; partners can still invest personal savings in the same spirit. A salaried helper is not a partner and does not trigger partnership liability rules.\n\nSo the statement is False.",
       "Managing daily operations as a “limited” partner breaks the cap. Liability is not then limited to the ownership percentage in the agreement.\n\nSo the statement is False.",
       "A limited partnership can combine managing partners on unlimited liability with a non-managing partner whose liability is capped.\n\nSo the statement is True."
     ],
@@ -1790,7 +1790,7 @@
     "tactical_explanations": [
       "Unequal ownership percentages do not, by themselves, convert a general partnership into a limited partnership.\n\nSo the statement is False.",
       "Talking through hard choices together may produce better decisions than each partner deciding in isolation.\n\nSo the statement is True.",
-      "The silent capital contributor in a limited partnership does not manage daily operations — that is the point of the limited role.\n\nCapped liability is a limited-partner status, not a prize for every co-owner.\n\nSo the statement is False.",
+      "The silent capital contributor in a limited partnership does not manage daily operations — that is the point of the limited role. Capped liability is a limited-partner status, not a prize for every co-owner.\n\nSo the statement is False.",
       "Partners may still pledge private assets as loan collateral even while general partners face unlimited liability.\n\nSo the statement is True.",
       "Oral understandings are not enough. Founders need a partnership agreement before relying on settled rights and duties.\n\nSo the statement is False."
     ],
@@ -1819,7 +1819,7 @@
     "tactical_explanations": [
       "Trust does not replace documentation. Profit and loss division still needs to appear in the agreement.\n\nSo the statement is False.",
       "Decision-making rules and dispute procedures are standard agreement content — they should appear there.\n\nSo the statement is False.",
-      "Two partners acting together can usually pledge more combined private collateral than one sole proprietor.\n\nEqual management intent points to a general partnership, with unlimited liability attached.\n\nSo the statement is False.",
+      "Two partners acting together can usually pledge more combined private collateral than one sole proprietor. Equal management intent points to a general partnership, with unlimited liability attached.\n\nSo the statement is False.",
       "How disputes between partners will be resolved is a matter the partnership agreement may address.\n\nSo the statement is True.",
       "Limited partnership status does not remove personal liability from every partner. Managing partners still face unlimited liability.\n\nSo the statement is False."
     ],
@@ -1878,7 +1878,7 @@
       "The partnership agreement records rights, responsibilities, and how profit and loss are divided — together in one settlement.\n\nSo the statement is True.",
       "Decision-making procedures and dispute-resolution methods are specified within that same agreement.\n\nSo the statement is True.",
       "“Always raises less” is too absolute. Partnerships are not barred from substantial external finance simply because they do not sell public shares.\n\nSo the statement is False.",
-      "Equal management involvement points to a general partnership, not a limited partnership with a non-managing capital provider.\n\nSilent capital without management is the limited-partner pattern — active management is not.\n\nSo the statement is False.",
+      "Equal management involvement points to a general partnership, not a limited partnership with a non-managing capital provider. Silent capital without management is the limited-partner pattern — active management is not.\n\nSo the statement is False.",
       "Specialising in client relations does not confine liability to client-contract debts. A general partner remains exposed to firm debts generally.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -1906,7 +1906,7 @@
     "tactical_explanations": [
       "Partnership terms and other operational details may sit in the agreement alongside the headline economic clauses.\n\nSo the statement is True.",
       "Unequal ownership percentages do not convert everyone’s unlimited liability into limited liability.\n\nSo the statement is False.",
-      "Managing general partners in a limited partnership do not enjoy a liability cap at their ownership percentage.\n\nOutside investors or banks do not absorb the owner’s unlimited exposure by lending.\n\nSo the statement is False.",
+      "Managing general partners in a limited partnership do not enjoy a liability cap at their ownership percentage. Outside investors or banks do not absorb the owner’s unlimited exposure by lending.\n\nSo the statement is False.",
       "Even with unequal ownership percentages, each general partner remains solely liable for all debts.\n\nSo the statement is True.",
       "More combined savings and collateral can make borrowing more plausible than for a lone sole trader.\n\nSo the statement is True."
     ],
@@ -1963,7 +1963,7 @@
     ],
     "tactical_explanations": [
       "Unlimited liability does not ban pledging private property as security. Partners can still offer collateral for credit.\n\nSo the statement is False.",
-      "Pooling savings across partners does increase total investable funds compared with a single owner.\n\nThe agreement records governance; it does not invent corporate limited liability for all partners.\n\nSo the statement is False.",
+      "Pooling savings across partners does increase total investable funds compared with a single owner. The agreement records governance; it does not invent corporate limited liability for all partners.\n\nSo the statement is False.",
       "Investing pooled savings does not cancel full liability for partnership debts. Partners remain fully liable.\n\nSo the statement is True.",
       "In a general partnership under unlimited liability, each partner is solely liable for all debts of the business.\n\nSo the statement is True.",
       "Different ownership percentages do not automatically strip minority partners of equal management rights in a general partnership.\n\nSo the statement is False."
@@ -1994,7 +1994,7 @@
       "A general partner can be liable for debts another partner created for the firm. Not signing a particular supplier contract does not create a free pass.\n\nSo the statement is False.",
       "Creditors may demand full repayment from one partner even when others hold larger ownership shares.\n\nSo the statement is True.",
       "Creditors are not forced to collect only proportional shares after exhausting business assets. Unlimited liability allows fuller pursuit of a partner.\n\nSo the statement is False.",
-      "A general partnership does not give limited liability protecting each consultant’s private assets by default.\n\nBalance-sheet presentation of “business” assets does not wall off personal wealth.\n\nSo the statement is False.",
+      "A general partnership does not give limited liability protecting each consultant’s private assets by default. Balance-sheet presentation of “business” assets does not wall off personal wealth.\n\nSo the statement is False.",
       "Sitting in on management meetings as an “observer” while claiming limited liability is risky framing — limited status requires staying out of management, not hovering in the room with a contribution-only shield assumed.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -2022,7 +2022,7 @@
     "tactical_explanations": [
       "Unincorporated status does not put every limited-partnership partner on equal unlimited liability. The limited partner’s liability is capped.\n\nSo the statement is False.",
       "The partnership agreement can cover details beyond profit division — terms, rights, disputes, and more.\n\nSo the statement is True.",
-      "A verbal promise to share profits equally does not make the written partnership agreement optional.\n\nRetained earnings inside a sole tradership are still the owner’s taxable profit story, not a corporate retention regime.\n\nSo the statement is False.",
+      "A verbal promise to share profits equally does not make the written partnership agreement optional. Retained earnings inside a sole tradership are still the owner’s taxable profit story, not a corporate retention regime.\n\nSo the statement is False.",
       "A sole proprietor and each general partner both face unlimited liability for business debts.\n\nSo the statement is True.",
       "Two or more partners may raise more funds and offer more collateral than a sole proprietor can alone.\n\nSo the statement is True."
     ],
@@ -2053,7 +2053,7 @@
       "Two or more persons jointly founding the business is what creates a partnership.\n\nSo the statement is True.",
       "Partners set up an agreement settling rights, responsibilities, and profit-loss division.\n\nSo the statement is True.",
       "They share tasks, may specialise, and can exchange ideas when decisions get difficult.\n\nSo the statement is True.",
-      "The agreement also specifies decision making, dispute resolution, and each partner’s ownership percentage.\n\nDispute procedures sit beside profit division for a reason — partners need both settled.\n\nSo the statement is True."
+      "The agreement also specifies decision making, dispute resolution, and each partner’s ownership percentage. Dispute procedures sit beside profit division for a reason — partners need both settled.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2109,7 +2109,7 @@
     "tactical_explanations": [
       "More private assets offered as collateral can make partnership borrowing more plausible than sole trading.\n\nSo the statement is True.",
       "Specialising in one function does not convert a general partner into a limited partner with capped liability.\n\nSo the statement is False.",
-      "A silent partner’s capital does not lift unlimited liability from the managing general partners in a limited partnership.\n\nLimited liability would require a different legal structure, not a different loan memo.\n\nSo the statement is False.",
+      "A silent partner’s capital does not lift unlimited liability from the managing general partners in a limited partnership. Limited liability would require a different legal structure, not a different loan memo.\n\nSo the statement is False.",
       "Under unlimited liability, any one partner may be pursued for the full outstanding debt of the firm.\n\nSo the statement is True.",
       "Limited partnership status does not mean no partner ever faces personal liability beyond contribution — managing partners still do.\n\nSo the statement is False."
     ],
@@ -2167,7 +2167,7 @@
     "tactical_explanations": [
       "Unincorporated status does not give every limited-partnership partner a liability cap. Managing partners remain unlimited.\n\nSo the statement is False.",
       "Salaried managers who are not partners do not turn a one-owner firm into a partnership. Partnership needs co-owners who jointly found.\n\nSo the statement is False.",
-      "Joint founding does not require every participant to manage from day one — limited partners, for example, stay out of management.\n\nPayroll expansion never relocates unlimited liability onto employees.\n\nSo the statement is False.",
+      "Joint founding does not require every participant to manage from day one — limited partners, for example, stay out of management. Payroll expansion never relocates unlimited liability onto employees.\n\nSo the statement is False.",
       "A partnership agreement does not create corporate separate legal personality. That is a company feature.\n\nSo the statement is False.",
       "Managing partners in a limited partnership remain subject to unlimited liability for all partnership debts.\n\nSo the statement is True."
     ],
@@ -2227,7 +2227,7 @@
       "An active role in daily management puts a so-called limited partner on unlimited liability for partnership obligations.\n\nSo the statement is True.",
       "Ownership percentages, decision-making, and dispute-resolution procedures can all be specified in the same partnership agreement.\n\nSo the statement is True.",
       "Limited liability for all partners is not the default in a general partnership. Unlimited liability is.\n\nSo the statement is False.",
-      "Silent non-managing behaviour alone does not create a liability cap without the limited-partnership structure.\n\nOperational success later does not rewrite the liability that attached when the debt was taken.\n\nSo the statement is False."
+      "Silent non-managing behaviour alone does not create a liability cap without the limited-partnership structure. Operational success later does not rewrite the liability that attached when the debt was taken.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2314,7 +2314,7 @@
       "Unlimited liability does not shrink the collateral package lenders will accept. Several partners can often pledge more, not less, than one sole trader.\n\nSo the statement is False.",
       "In a general partnership, each partner is solely liable for all debts of the business.\n\nSo the statement is True.",
       "The partnership agreement settles rights and responsibilities as well as how profits and losses are divided.\n\nSo the statement is True.",
-      "One person operating alone — even with hired staff — is a sole proprietorship, not a partnership.\n\nLimited partnership still needs at least one managing partner on unlimited liability.\n\nSo the statement is False."
+      "One person operating alone — even with hired staff — is a sole proprietorship, not a partnership. Limited partnership still needs at least one managing partner on unlimited liability.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2343,7 +2343,7 @@
       "Pooling more collateral than one owner could does not cancel unlimited liability.\n\nSo the statement is True.",
       "Limited partners who stay out of management still contribute capital that can help the partnership raise funds.\n\nSo the statement is True.",
       "How disputes between partners will be resolved is among the matters the agreement addresses.\n\nSo the statement is True.",
-      "Each partner’s ownership percentage is recorded alongside profit-loss division in the agreement.\n\nThe agreement is where rights, duties, and surplus splits are made explicit.\n\nSo the statement is True."
+      "Each partner’s ownership percentage is recorded alongside profit-loss division in the agreement. The agreement is where rights, duties, and surplus splits are made explicit.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2372,7 +2372,7 @@
       "In a general partnership, unlimited liability for business debts applies to every partner.\n\nSo the statement is True.",
       "Joint founding by two or more persons establishes a partnership even before the written agreement is fully finalised.\n\nSo the statement is True.",
       "Equal management rights do not stop the agreement from specifying different ownership percentages.\n\nSo the statement is True.",
-      "Specialising in different tasks does not carve partners out of joint unlimited liability for all debts.\n\nThe liability rule does not stop at the shop door when claims remain unpaid.\n\nSo the statement is True."
+      "Specialising in different tasks does not carve partners out of joint unlimited liability for all debts. The liability rule does not stop at the shop door when claims remain unpaid.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2399,7 +2399,7 @@
     "tactical_explanations": [
       "Managing partners in a general partnership do not receive automatic limited liability. Unlimited liability remains.\n\nSo the statement is False.",
       "Facing a hard problem, partners can exchange ideas and perhaps reach better joint decisions.\n\nSo the statement is True.",
-      "Limited partners who manage daily operations lose the ownership-percentage or contribution-only cap.\n\nInternal finance choices also leave unlimited liability untouched.\n\nSo the statement is False.",
+      "Limited partners who manage daily operations lose the ownership-percentage or contribution-only cap. Internal finance choices also leave unlimited liability untouched.\n\nSo the statement is False.",
       "A general partner’s liability is not restricted to the ownership proportion stated in the agreement.\n\nSo the statement is False.",
       "A limited partnership always includes at least one partner who is not involved in management.\n\nSo the statement is True."
     ],
@@ -2430,7 +2430,7 @@
       "General managing partners in a limited partnership remain on unlimited liability for firm debts.\n\nSo the statement is True.",
       "Even in a limited partnership, the agreement still documents ownership shares and profit-loss division among the partners.\n\nSo the statement is True.",
       "Whatever the profit-loss split says, each general partner remains solely liable for all debts.\n\nSo the statement is True.",
-      "Not all partners in a limited partnership enjoy a contribution-only cap — managing partners do not.\n\nA mortgage is security for repayment, not a substitute for repayment.\n\nSo the statement is False."
+      "Not all partners in a limited partnership enjoy a contribution-only cap — managing partners do not. A mortgage is security for repayment, not a substitute for repayment.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2459,7 +2459,7 @@
       "How profit and loss are divided must be settled within the partnership agreement.\n\nSo the statement is True.",
       "Recording each partner’s ownership percentage is part of setting up that agreement.\n\nSo the statement is True.",
       "A silent partner’s large capital stake does not lift unlimited liability from the managing partners in a limited partnership.\n\nSo the statement is True.",
-      "Two or more persons must jointly found the business before general or limited partnership rules apply.\n\nOne founder alone never triggers partnership status.\n\nSo the statement is True."
+      "Two or more persons must jointly found the business before general or limited partnership rules apply. One founder alone never triggers partnership status.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2514,7 +2514,7 @@
     ],
     "tactical_explanations": [
       "Unincorporated status does not put every limited-partnership partner on equal unlimited liability. The limited partner’s exposure is capped.\n\nSo the statement is False.",
-      "Unequal ownership percentages do not reduce each general partner’s maximum liability to that percentage of total debt.\n\nThe claim fails once you separate financing technique from the liability rule of the form.\n\nSo the statement is False.",
+      "Unequal ownership percentages do not reduce each general partner’s maximum liability to that percentage of total debt. The claim fails once you separate financing technique from the liability rule of the form.\n\nSo the statement is False.",
       "Even with unequal profit shares in the agreement, unlimited liability extends to every general partner.\n\nSo the statement is True.",
       "Specialising in operations does not shield a managing partner from debts created in another partner’s area.\n\nSo the statement is False.",
       "Limited partners who refrain from management have liability limited to their contributed capital.\n\nSo the statement is True."
@@ -2545,7 +2545,7 @@
       "Financial aspects of the partnership remain, in general, similar to those of a sole proprietor.\n\nSo the statement is True.",
       "An informal coffee chat does not settle rights and responsibilities. Joint founders still need a proper partnership agreement.\n\nSo the statement is False.",
       "Combined private assets from partners may provide more collateral when the partnership seeks credit.\n\nSo the statement is True.",
-      "Multiple owners do not automatically qualify a partnership for corporate-style limited liability.\n\nPersonal guarantees and collateral stack on top of unlimited liability; they do not replace it.\n\nSo the statement is False.",
+      "Multiple owners do not automatically qualify a partnership for corporate-style limited liability. Personal guarantees and collateral stack on top of unlimited liability; they do not replace it.\n\nSo the statement is False.",
       "A written partnership agreement defines partners’ rights, duties, and how profit and loss are shared.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -2575,7 +2575,7 @@
       "Together, partners may offer more private assets as collateral when seeking a business loan.\n\nSo the statement is True.",
       "In difficult situations, general partners can exchange ideas and perhaps reach stronger collective decisions.\n\nSo the statement is True.",
       "Setting up a partnership agreement is necessary to settle rights and responsibilities among the founders.\n\nSo the statement is True.",
-      "That agreement records rights and responsibilities together with the division of profits and losses.\n\nWithout that document, equal intent alone is a thin substitute for settled terms.\n\nSo the statement is True."
+      "That agreement records rights and responsibilities together with the division of profits and losses. Without that document, equal intent alone is a thin substitute for settled terms.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2603,7 +2603,7 @@
       "Managing partners in a limited partnership remain subject to unlimited liability for business debts.\n\nSo the statement is True.",
       "Assigning supplier work to one partner in the agreement does not remove unlimited liability from the remaining general partners.\n\nSo the statement is False.",
       "Relative to a sole trader, several partners can usually put a larger pool of personal funds into the start-up.\n\nSo the statement is True.",
-      "Dispute resolution belongs in the partnership agreement; saying it need not be recorded is wrong.\n\nVerbal profit promises do not replace a partnership agreement’s settlement of rights.\n\nSo the statement is False.",
+      "Dispute resolution belongs in the partnership agreement; saying it need not be recorded is wrong. Verbal profit promises do not replace a partnership agreement’s settlement of rights.\n\nSo the statement is False.",
       "When seeking bank credit, partners may collectively pledge more private property as security than a lone owner could.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -2632,7 +2632,7 @@
       "Sharing tasks and specialising does not shrink the rule: each partner is solely liable for all debts of the business.\n\nSo the statement is True.",
       "Terms of the partnership, decision making, and resolving disputes are included in — not excluded from — the partnership agreement.\n\nSo the statement is False.",
       "Partners may and do specify each partner’s percentage of ownership within the agreement.\n\nSo the statement is False.",
-      "Limited liability for every partner is not the rule in a general partnership.\n\nShop assets first, private assets next — that sequence is the unlimited-liability reading.\n\nSo the statement is False.",
+      "Limited liability for every partner is not the rule in a general partnership. Shop assets first, private assets next — that sequence is the unlimited-liability reading.\n\nSo the statement is False.",
       "Specialists are not liable only for debts in their own area. Unlimited liability reaches firm debts generally.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -2660,7 +2660,7 @@
     "tactical_explanations": [
       "Equal management intent from the outset does not remove the need for a written partnership agreement.\n\nSo the statement is False.",
       "Partners specify partnership terms, decision making, and dispute resolution within the agreement.\n\nSo the statement is True.",
-      "Limited-partnership status does not cap every partner — including managing partners — at capital contributed.\n\nPooling savings raises capacity; it does not cancel each general partner’s full debt exposure.\n\nSo the statement is False.",
+      "Limited-partnership status does not cap every partner — including managing partners — at capital contributed. Pooling savings raises capacity; it does not cancel each general partner’s full debt exposure.\n\nSo the statement is False.",
       "Partnership financial aspects resemble sole-trader finance closely enough that personal savings can still be invested.\n\nSo the statement is False.",
       "General partners who specialise in operations remain fully exposed to liability for debts incurred anywhere in the firm.\n\nSo the statement is True."
     ],
@@ -2691,7 +2691,7 @@
       "Silent limited partners supply capital without managing, and their liability stays capped at the contribution amount.\n\nSo the statement is True.",
       "Rights, responsibilities, decision making, and resolving disputes are settled through the partnership agreement.\n\nSo the statement is True.",
       "In a general partnership, equal rights, liabilities, and responsibilities hold despite task specialisation.\n\nSo the statement is True.",
-      "Partners may document other details of the partnership beyond ownership percentages and profit-loss division.\n\nThe fiscal route mirrors the legal one: owner and firm are not taxed as two persons.\n\nSo the statement is True."
+      "Partners may document other details of the partnership beyond ownership percentages and profit-loss division. The fiscal route mirrors the legal one: owner and firm are not taxed as two persons.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -2719,7 +2719,7 @@
       "Two consultants founding together with equal management intent illustrate a general partnership arrangement.\n\nSo the statement is True.",
       "A verbal promise to share profits equally does not remove the need for a partnership agreement.\n\nSo the statement is False.",
       "Different ownership percentages do not automatically strip minority partners of equal rights in a general partnership.\n\nSo the statement is False.",
-      "Voting on major contracts in weekly strategy meetings is management involvement — not a posture that keeps capped liability intact.\n\nNo clause in a supplier agreement deletes the proprietor’s duty to pay.\n\nSo the statement is False.",
+      "Voting on major contracts in weekly strategy meetings is management involvement — not a posture that keeps capped liability intact. No clause in a supplier agreement deletes the proprietor’s duty to pay.\n\nSo the statement is False.",
       "Unlimited liability does not force a creditor to sue all partners jointly and collect equal shares from each one.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -2747,7 +2747,7 @@
     "tactical_explanations": [
       "A limited partnership pairs at least one non-managing partner with capped liability and managing partners with unlimited liability.\n\nSo the statement is True.",
       "A partnership agreement alone does not create the form without joint founding by two or more persons.\n\nSo the statement is False.",
-      "Partnership finance is related to sole-proprietorship finance and does not follow an entirely separate investment rulebook.\n\nAttending strategy votes is management involvement, not a way to keep a liability cap.\n\nSo the statement is False.",
+      "Partnership finance is related to sole-proprietorship finance and does not follow an entirely separate investment rulebook. Attending strategy votes is management involvement, not a way to keep a liability cap.\n\nSo the statement is False.",
       "If every partner manages, the limited-partner cap cannot apply to all of them. Limited partnership needs a non-managing capital provider.\n\nSo the statement is False.",
       "Partners together can raise more financial funds by combining savings than a single sole proprietor typically can.\n\nSo the statement is True."
     ],
@@ -2778,7 +2778,7 @@
       "Several partners combining savings may give the partnership more financial funds than a sole proprietor has.\n\nSo the statement is True.",
       "Pooling more collateral than one owner could does not remove unlimited liability from each general partner.\n\nSo the statement is True.",
       "Partners set up an agreement specifying ownership percentages, profit-loss division, and dispute resolution.\n\nSo the statement is True.",
-      "In a limited partnership, the limited partner’s liability is limited to the money contributed to the business.\n\nPersonal means back the business debts after internal resources are exhausted.\n\nSo the statement is True."
+      "In a limited partnership, the limited partner’s liability is limited to the money contributed to the business. Personal means back the business debts after internal resources are exhausted.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2803,7 +2803,7 @@
       true
     ],
     "tactical_explanations": [
-      "A limited partner contributing most of the capital does not let general partners escape unlimited liability.\n\nOverdraft flexibility is about cash timing, not about who ultimately owes the bank.\n\nSo the statement is False.",
+      "A limited partner contributing most of the capital does not let general partners escape unlimited liability. Overdraft flexibility is about cash timing, not about who ultimately owes the bank.\n\nSo the statement is False.",
       "Partners can share tasks, specialise, and exchange ideas in difficult situations to improve decision quality.\n\nSo the statement is True.",
       "General managing partners remain solely liable for all debts of the business in both general and limited partnerships.\n\nSo the statement is True.",
       "When founders set up the partnership agreement, they document each partner’s percentage of ownership.\n\nSo the statement is True.",
@@ -2832,7 +2832,7 @@
       true
     ],
     "tactical_explanations": [
-      "Profit division in the agreement does not automatically limit each partner’s liability to that profit share.\n\nRetained profit as a funding source never rewrites creditor rights against the owner.\n\nSo the statement is False.",
+      "Profit division in the agreement does not automatically limit each partner’s liability to that profit share. Retained profit as a funding source never rewrites creditor rights against the owner.\n\nSo the statement is False.",
       "Assigning different specialised roles does not break equal liabilities among partners in a general partnership.\n\nSo the statement is True.",
       "How profit and loss are divided is among the financial matters settled in the partnership agreement.\n\nSo the statement is True.",
       "At least one partner in a limited partnership stays outside management with liability capped at that partner’s contribution.\n\nSo the statement is True.",
@@ -2893,7 +2893,7 @@
       "Partners who jointly found a business must settle rights, responsibilities, and profit-loss division through a partnership agreement.\n\nSo the statement is True.",
       "Dividing operational tasks does not end joint responsibility for all partnership debts among general partners.\n\nSo the statement is True.",
       "Founders use their agreement to settle ownership percentages, profit-loss shares, and governance rules.\n\nSo the statement is True.",
-      "Equal responsibilities do not require every partner to perform the same daily tasks without variation.\n\nCreditors may pursue one general partner for the whole outstanding partnership debt.\n\nSo the statement is False.",
+      "Equal responsibilities do not require every partner to perform the same daily tasks without variation. Creditors may pursue one general partner for the whole outstanding partnership debt.\n\nSo the statement is False.",
       "Sharing management duties in a general partnership does not reduce each partner’s unlimited liability for firm debts.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -2950,7 +2950,7 @@
     "tactical_explanations": [
       "After the IPO, secondary-market price rises go to trading shareholders. The issuer does not automatically receive fresh share capital equal to that gain.\n\nSo the statement is False.",
       "A sustained climb in secondary prices does not inject permanent equity finance into the issuer beyond what the original issue raised.\n\nSo the statement is False.",
-      "Higher post-issue market prices do not oblige the corporation to pay matching dividends to all past and future shareholders.\n\nA trading name or a larger payroll does not confer corporate legal personality.\n\nSo the statement is False.",
+      "Higher post-issue market prices do not oblige the corporation to pay matching dividends to all past and future shareholders. A trading name or a larger payroll does not confer corporate legal personality.\n\nSo the statement is False.",
       "Once shares are issued, a later rise in their market price has no additional financing effect for the issuing corporation.\n\nSo the statement is True.",
       "When existing shareholders sell stock to one another at higher prices, those capital gains stay with the sellers — the corporation does not share equally in them.\n\nSo the statement is False."
     ],

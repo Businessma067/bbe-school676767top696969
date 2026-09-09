@@ -6,8 +6,10 @@ export function cleanExplanation(text: string): string {
   const withoutVerdictLead = text
     .replace(/^(?:TRUE|FALSE)\s*[—–-]\s*/i, "")
     .replace(/\*\*/g, "")
-    .replace(/—/g, ". ")
+    // Em dashes are asides, not sentence ends — never turn them into periods.
+    .replace(/\s*—\s*/g, ", ")
     .replace(/–/g, "-")
+    .replace(/,\s*,/g, ",")
     .replace(/\.\s*\./g, ".")
     .replace(/[ \t]{2,}/g, " ")
     .trim();
