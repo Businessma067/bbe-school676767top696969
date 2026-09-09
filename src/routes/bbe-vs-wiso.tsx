@@ -6,10 +6,14 @@ import {
   Globe2,
   GraduationCap,
   Languages,
+  PencilLine,
 } from "lucide-react";
+import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
+import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import examHallAsset from "@/assets/exam-hall-real.png.asset.json";
+import mathAsset from "@/assets/math-bw.jpg.asset.json";
+import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import {
-  BbeDemoCta,
   BbeGhostButton,
   BbeInfoCallout,
   BbePrimaryButton,
@@ -29,6 +33,9 @@ const WISO_PLACES = 2703;
 const BBE_PLACES = BBE_EXAM_FORMAT.places;
 const WISO_ELIGIBLE_APPROX = 6370;
 const BBE_ELIGIBLE_APPROX = 3900;
+const BBE_PER_PLACE = Math.round(BBE_ELIGIBLE_APPROX / BBE_PLACES);
+const WISO_PER_PLACE = Math.round((WISO_ELIGIBLE_APPROX / WISO_PLACES) * 10) / 10;
+const PLACE_MULTIPLIER = Math.round(WISO_PLACES / BBE_PLACES);
 
 export const Route = createFileRoute("/bbe-vs-wiso")({
   head: () => ({
@@ -70,7 +77,11 @@ export const Route = createFileRoute("/bbe-vs-wiso")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "keywords", content: "BBE vs WISO, WU Vienna, Aufnahmeprüfung, BBE entrance exam, WISO entrance exam, Business and Economics, Wirtschafts- und Sozialwissenschaften" },
+      {
+        name: "keywords",
+        content:
+          "BBE vs WISO, WU Vienna, Aufnahmeprüfung, BBE entrance exam, WISO entrance exam, Business and Economics, Wirtschafts- und Sozialwissenschaften",
+      },
       ...socialImageMetaForPath(PATH),
     ],
   }),
@@ -209,16 +220,14 @@ export function BbeVsWisoPage() {
 
         <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
           <img
-            src="/exam-info/bbe-vs-wiso-paths.jpg"
-            alt="Illustration of two academic pathways branching from one university campus"
-            className="h-auto w-full object-cover"
+            src={wuAsset.url}
+            alt="WU Vienna campus buildings on a clear day"
+            className="h-auto max-h-[24rem] w-full object-cover"
             loading="lazy"
-            width={1600}
-            height={900}
           />
           <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
-            One university, two bachelor pathways: BBE and WISO share a WU campus identity but differ
-            in language, cohort size, and entrance-exam competition.
+            Same WU Vienna campus, two bachelor pathways: BBE and WISO share the university but differ
+            in language, cohort size, and how competitive the entrance exam is.
           </figcaption>
         </figure>
 
@@ -257,8 +266,7 @@ export function BbeVsWisoPage() {
             roughly 3,900 people were eligible for the BBE exam against 240 places, while about 6,370
             were eligible for WISO against 2,703 places.
           </p>
-          <PlacesChart />
-          <SelectivityChart />
+          <PlacesAndSelectivityVisual />
           <p className="text-sm text-muted-foreground">
             Charts use approximate recent-cycle figures for illustration. Competition ratios move
             with each year’s registrations.
@@ -295,20 +303,87 @@ export function BbeVsWisoPage() {
               accent="wiso"
             />
           </div>
-          <figure className="mt-6 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-            <img
-              src="/exam-info/bbe-vs-wiso-languages.jpg"
-              alt="Split academic atmosphere suggesting English-taught and German-taught study environments"
-              className="h-auto w-full object-cover"
-              loading="lazy"
-              width={1600}
-              height={900}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <PhotoCard
+              src={englishAsset.url}
+              alt="English study materials used in BBE-style language practice"
+              caption="BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight."
             />
-            <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
-              Language is the hinge decision: BBE campus life and exam tasks run in English; WISO
-              study and the language section of the exam assume solid German.
-            </figcaption>
-          </figure>
+            <PhotoCard
+              src={economicsAsset.url}
+              alt="Economics study materials for WU entrance exam preparation"
+              caption="Both exams expect economics and business basics. On BBE, that usually means precise reading of definitions from the required literature."
+            />
+          </div>
+        </BbeSection>
+
+        <BbeSection id="question-style" title="Question style: what actually feels different">
+          <p>
+            Applicants often ask whether the “questions themselves” are the same. The short answer:
+            the subject pillars overlap, but the way BBE tasks are written and scored is a study
+            problem of its own.
+          </p>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-2xl border border-orange-200/70 bg-orange-50/40 p-5">
+              <div className="flex items-center gap-2">
+                <PencilLine className="h-5 w-5 text-[#E85D3A]" />
+                <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
+                  How BBE questions usually work
+                </h3>
+              </div>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-neutral-800">
+                <li>
+                  One stem (scenario, claim, passage, or calculation) with several statements you
+                  judge independently.
+                </li>
+                <li>
+                  Partial credit: correct ticks and wrong ticks interact, with a floor at zero for
+                  that question.
+                </li>
+                <li>
+                  Approximate score weighting from the most recent cycle: Economics 40%, English 20%,
+                  Mathematics 40%.
+                </li>
+                <li>
+                  Math stems often mean multiple calculations under one question, so time management
+                  matters as much as knowing the method.
+                </li>
+              </ul>
+              <div className="mt-4">
+                <BbeTextLink to="/bbe-exam-scoring">BBE scoring explained →</BbeTextLink>
+              </div>
+            </div>
+            <div className="rounded-2xl border border-teal-200/70 bg-teal-50/40 p-5">
+              <div className="flex items-center gap-2">
+                <Languages className="h-5 w-5 text-teal-800" />
+                <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
+                  How WISO questions usually differ
+                </h3>
+              </div>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-neutral-800">
+                <li>
+                  Same broad pillars — economics/business basics, language, mathematics — but the
+                  language tasks are in German, not English.
+                </li>
+                <li>
+                  Multiple-choice only, held in person when the selection procedure runs; confirm
+                  current item counts and timing on official WU materials.
+                </li>
+                <li>
+                  German comprehension is not a small add-on: weak reading speed or vocabulary can
+                  cost points even if your math is strong.
+                </li>
+                <li>
+                  Because there are far more places, the ranking pool is larger and less scarce —
+                  but it is still a competitive WU intake.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <BbeInfoCallout label="Practical takeaway" tone="advice">
+            If you train only on single-answer quizzes, you will undershoot BBE preparation. Train
+            the multi-statement stem style, including when to leave a doubtful statement blank.
+          </BbeInfoCallout>
           <p>
             If you are aiming at BBE specifically, dig into the Mathematics and Economics & English
             guides next.
@@ -366,12 +441,58 @@ export function BbeVsWisoPage() {
           </div>
         </BbeSection>
 
-        <BbeSection id="preparation-overlap" title="Preparation overlap — and what does not transfer">
+        <BbeSection id="preparation-overlap" title="Preparation differences that actually matter">
           <p>
             Mathematics and basic economics preparation can transfer between the two exams. What does
-            not transfer is the language section: English practice will not replace German
-            comprehension prep for WISO, and the reverse is also true.
+            not transfer is the language section — and for BBE, the multi-statement scoring behaviour
+            is another skill you must train deliberately.
           </p>
+          <div className="overflow-x-auto rounded-2xl border border-border">
+            <table className="w-full min-w-[36rem] border-collapse text-left text-[0.95rem]">
+              <thead>
+                <tr className="border-b border-border bg-secondary/50">
+                  <th className="px-4 py-3 font-semibold text-foreground">Prep area</th>
+                  <th className="px-4 py-3 font-semibold text-foreground">Transfers to both?</th>
+                  <th className="px-4 py-3 font-semibold text-foreground">What to do differently</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    area: "Mathematics fundamentals",
+                    transfers: "Mostly yes",
+                    diff: "For BBE, also train multi-statement stems and timed blocks so one question does not eat the clock.",
+                  },
+                  {
+                    area: "Economics / business basics",
+                    transfers: "Partly",
+                    diff: "BBE prep typically centres on the required Fuhrmann chapters with precise definition reading; do not assume open-ended “business trivia” study is enough.",
+                  },
+                  {
+                    area: "Language section",
+                    transfers: "No",
+                    diff: "BBE needs steady English reading + grammar/vocab practice. WISO needs German comprehension. Swap languages and you lose the section.",
+                  },
+                  {
+                    area: "Scoring tactics",
+                    transfers: "BBE-specific",
+                    diff: "Learn when to leave a statement unmarked. Over-ticking false statements can wipe out correct work on the same stem.",
+                  },
+                  {
+                    area: "Mocks and diagnostics",
+                    transfers: "Format-specific",
+                    diff: "Sit practice that matches the exam you will take. A German WISO drill will not diagnose your BBE English section.",
+                  },
+                ].map((row) => (
+                  <tr key={row.area} className="border-b border-border last:border-b-0">
+                    <th className="px-4 py-3 align-top font-medium text-foreground">{row.area}</th>
+                    <td className="px-4 py-3 align-top text-neutral-800">{row.transfers}</td>
+                    <td className="px-4 py-3 align-top text-neutral-800">{row.diff}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <p>
             For BBE applicants, the highest-leverage sequence is usually: understand format and
             scoring, run a diagnostic, close topic gaps, then add timed mocks. A practical starting
@@ -381,18 +502,18 @@ export function BbeVsWisoPage() {
             <BbeTextLink to={BBE_PRACTICE_ROUTES.demo}>free demo course →</BbeTextLink>
             <BbeTextLink to={BBE_PRACTICE_ROUTES.mockExams}>diagnostic-style mock exam →</BbeTextLink>
           </div>
-          <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-            <img
+          <div className="grid gap-4 sm:grid-cols-2">
+            <PhotoCard
+              src={mathAsset.url}
+              alt="Mathematics practice materials for entrance exam preparation"
+              caption="Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems."
+            />
+            <PhotoCard
               src={examHallAsset.url}
               alt="Large exam hall seating at a WU Vienna entrance exam"
-              className="h-auto max-h-[22rem] w-full object-cover"
-              loading="lazy"
+              caption="Both pathways can lead to the same high-pressure hall. Quality of preparation matters more than collecting random PDFs."
             />
-            <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
-              Both pathways can lead to the same kind of high-pressure hall experience. Preparation
-              quality matters more than collecting random PDFs.
-            </figcaption>
-          </figure>
+          </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbeTextLink to="/bbe-exam-scoring">How BBE scoring works →</BbeTextLink>
             <BbeTextLink to="/bbe-exam-preparation">How to prepare for BBE →</BbeTextLink>
@@ -432,103 +553,184 @@ export function BbeVsWisoPage() {
           </dl>
         </BbeSection>
 
-        <BbeSection id="next-steps" title="Next steps if you choose BBE">
-          <p>
+        <BbeFaqAccordion faqs={faqs} />
+
+        <aside
+          id="next-steps"
+          className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-7"
+        >
+          <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            Next steps if you choose BBE
+          </h2>
+          <p className="mt-4 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
             If BBE is your target — or your parallel application — start with format literacy, then
             measure your baseline under exam-style statements. The free demo course shows how BBE
             School lessons and explanations feel; diagnostic mocks show where your score leaks first.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>Start the free demo course</BbePrimaryButton>
             <BbeGhostButton to={BBE_PRACTICE_ROUTES.mockExams}>Open diagnostic mocks</BbeGhostButton>
           </div>
-        </BbeSection>
-
-        <BbeFaqAccordion faqs={faqs} />
-
-        <BbeDemoCta
-          title="Want to feel the BBE exam style before you commit?"
-          body="Use the free demo course to sample Economics, Math, and English tasks with explanations, then take a diagnostic mock to see your starting point."
-          cta="Start Free Demo Course →"
-        />
+        </aside>
       </div>
     </BbeExamShell>
   );
 }
 
-function PlacesChart() {
-  const max = WISO_PLACES;
-  const bars = [
-    { label: "BBE places", value: BBE_PLACES, color: "#E85D3A" },
-    { label: "WISO places", value: WISO_PLACES, color: "#0F766E" },
-  ];
-
+function PlacesAndSelectivityVisual() {
   return (
-    <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
-        Available places (recent cycle)
-      </p>
-      <div className="mt-5 space-y-4">
-        {bars.map((bar) => (
-          <div key={bar.label}>
-            <div className="mb-1.5 flex items-baseline justify-between gap-3">
-              <span className="text-sm font-medium text-foreground">{bar.label}</span>
-              <span className="font-display text-lg font-bold tabular-nums text-foreground">
-                {bar.value.toLocaleString("en-US")}
-              </span>
-            </div>
-            <div className="h-3 overflow-hidden rounded-full bg-secondary">
-              <div
-                className="h-full rounded-full transition-[width] duration-700"
-                style={{
-                  width: `${Math.max(4, (bar.value / max) * 100)}%`,
-                  background: bar.color,
-                }}
-              />
-            </div>
+    <div className="space-y-4">
+      <div className="grid gap-4 lg:grid-cols-2">
+        <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+            How many seats exist?
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+            Each block below is drawn to scale. WISO has about {PLACE_MULTIPLIER}× as many places as
+            BBE.
+          </p>
+          <div className="mt-6 space-y-5">
+            <ScaleBar
+              label="BBE"
+              valueLabel={`${BBE_PLACES.toLocaleString("en-US")} places`}
+              widthPct={Math.max(6, (BBE_PLACES / WISO_PLACES) * 100)}
+              color="#E85D3A"
+              note="Smaller intake"
+            />
+            <ScaleBar
+              label="WISO"
+              valueLabel={`${WISO_PLACES.toLocaleString("en-US")} places`}
+              widthPct={100}
+              color="#0F766E"
+              note="Larger intake"
+            />
           </div>
-        ))}
+        </div>
+
+        <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+            How many people compete for one seat?
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+            Read it as: “for every 1 place, about this many eligible applicants.”
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <CompetitionCard
+              title="BBE"
+              ratio={`~${BBE_PER_PLACE}`}
+              subtitle="eligible applicants per place"
+              dots={16}
+              color="#E85D3A"
+              tone="bbe"
+            />
+            <CompetitionCard
+              title="WISO"
+              ratio={`~${WISO_PER_PLACE}`}
+              subtitle="eligible applicants per place"
+              dots={3}
+              color="#0F766E"
+              tone="wiso"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-amber-200/80 bg-amber-50/70 px-5 py-4">
+        <p className="text-[1.02rem] leading-relaxed text-neutral-800">
+          Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them
+          across far more places — so each WISO seat is less contested than each BBE seat.
+        </p>
       </div>
     </div>
   );
 }
 
-function SelectivityChart() {
-  const bbeRatio = Math.round(BBE_ELIGIBLE_APPROX / BBE_PLACES);
-  const wisoRatio = Math.round((WISO_ELIGIBLE_APPROX / WISO_PLACES) * 10) / 10;
-  const max = bbeRatio;
-  const bars = [
-    { label: "BBE · eligible per place", value: bbeRatio, display: `~${bbeRatio}`, color: "#E85D3A" },
-    { label: "WISO · eligible per place", value: wisoRatio, display: `~${wisoRatio}`, color: "#0F766E" },
-  ];
-
+function ScaleBar({
+  label,
+  valueLabel,
+  widthPct,
+  color,
+  note,
+}: {
+  label: string;
+  valueLabel: string;
+  widthPct: number;
+  color: string;
+  note: string;
+}) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
-        Approximate competition (eligible applicants ÷ places)
-      </p>
-      <div className="mt-5 space-y-4">
-        {bars.map((bar) => (
-          <div key={bar.label}>
-            <div className="mb-1.5 flex items-baseline justify-between gap-3">
-              <span className="text-sm font-medium text-foreground">{bar.label}</span>
-              <span className="font-display text-lg font-bold tabular-nums text-foreground">
-                {bar.display}
-              </span>
-            </div>
-            <div className="h-3 overflow-hidden rounded-full bg-secondary">
-              <div
-                className="h-full rounded-full"
-                style={{
-                  width: `${Math.max(8, (bar.value / max) * 100)}%`,
-                  background: bar.color,
-                }}
-              />
-            </div>
-          </div>
-        ))}
+    <div>
+      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+        <div>
+          <span className="text-sm font-semibold text-foreground">{label}</span>
+          <span className="ml-2 text-xs text-neutral-600">{note}</span>
+        </div>
+        <span className="font-display text-xl font-bold tabular-nums text-foreground">{valueLabel}</span>
+      </div>
+      <div className="h-10 overflow-hidden rounded-xl bg-secondary/80">
+        <div
+          className="h-full rounded-xl"
+          style={{ width: `${widthPct}%`, background: color, minWidth: "0.75rem" }}
+        />
       </div>
     </div>
+  );
+}
+
+function CompetitionCard({
+  title,
+  ratio,
+  subtitle,
+  dots,
+  color,
+  tone,
+}: {
+  title: string;
+  ratio: string;
+  subtitle: string;
+  dots: number;
+  color: string;
+  tone: "bbe" | "wiso";
+}) {
+  return (
+    <div
+      className={cn(
+        "rounded-xl border px-4 py-4",
+        tone === "bbe" ? "border-orange-200/80 bg-orange-50/50" : "border-teal-200/80 bg-teal-50/50",
+      )}
+    >
+      <p className="text-sm font-semibold text-foreground">{title}</p>
+      <p className="mt-1 font-display text-3xl font-bold tracking-tight" style={{ color }}>
+        {ratio}
+      </p>
+      <p className="mt-1 text-xs leading-snug text-neutral-600">{subtitle}</p>
+      <div className="mt-4 flex flex-wrap gap-1.5" aria-hidden>
+        <span
+          className="inline-flex h-3.5 w-3.5 items-center justify-center rounded-sm border-2 border-foreground/70 bg-white"
+          title="1 place"
+        />
+        <span className="px-0.5 text-[10px] font-medium text-neutral-500">vs</span>
+        {Array.from({ length: dots }).map((_, i) => (
+          <span
+            key={i}
+            className="inline-block h-3.5 w-3.5 rounded-full"
+            style={{ background: color, opacity: 0.85 }}
+          />
+        ))}
+      </div>
+      <p className="mt-2 text-[11px] text-neutral-600">1 seat · each dot ≈ one competitor</p>
+    </div>
+  );
+}
+
+function PhotoCard({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+  return (
+    <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+      <img src={src} alt={alt} className="h-48 w-full object-cover sm:h-56" loading="lazy" />
+      <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground">
+        {caption}
+      </figcaption>
+    </figure>
   );
 }
 
