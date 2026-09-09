@@ -6863,11 +6863,11 @@
       false
     ],
     "tactical_explanations": [
-      "Product orientation for hotel loyalty programmes defines the offer first; it does not require analysing every customer’s needs before any specifications.\n\nSo the statement is False.",
-      "Market-oriented hotel loyalty programmes still track customer expectations even when internal feature quality is high.\n\nSo the statement is False.",
-      "Identical profitability targets do not force identical orientation processes for hotel loyalty programmes.\n\nSo the statement is False.",
-      "Even strong household grocery quality in retail fashion does not justify neglecting markets and customer expectations.\n\nSo the statement is True.",
-      "Hotel CRM keeps personal guest records between stays. Deleting them after each transaction would end tailored follow-up — room preferences, offers, and repeat-stay prompts would have no memory to draw on.\n\nSo the statement is False."
+      "Product orientation starts from what the hotel already wants to sell — room packages, points grids, partner vouchers — and only then looks for guests who will take that catalogue. The claim reverses the order: it says the programme must map every guest need before any specification is written. That “needs first, specs second” sequence is market orientation, not product orientation. A chain that freezes a standard points ladder in HQ and rolls it out unchanged across cities is acting product-oriented even though it never ran a guest-by-guest needs study.\n\nSo the statement is False.",
+      "High room quality does not retire market orientation’s job of watching guest expectations.\n\nSo the statement is False.",
+      "Two hotel loyalty programmes can both chase the same EBITDA or RevPAR target and still run opposite orientation processes: one locks a fixed points catalogue (product-led), the other reshapes offers after every guest survey wave (market-led). Shared profit maths do not force a shared product-versus-market process.\n\nSo the statement is False.",
+      "The claim is about discipline, not about which sector looks glamorous. Even if household groceries in a retail-fashion channel look strong on quality metrics, the supplier still has to track markets and customer expectations. Quality of the SKU does not license a “we already know what shoppers want” shrug; neglecting the market side is exactly what the chapter warns against when orientation slips.\n\nA fashion retailer stocking private-label groceries still needs shelf feedback, rival prices, and shopper habits — the high quality score does not replace that work.\n\nSo the statement is True.",
+      "Hotel CRM exists to remember guests between stays: preferred floor, pillow type, late checkout habits, offer history. Wiping every personal record after each transaction would leave the next booking cold — no tailored follow-up, no repeat-stay prompt with memory behind it. Permanent deletion-for-anonymity after every stay is the opposite of how loyalty CRM is used.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
