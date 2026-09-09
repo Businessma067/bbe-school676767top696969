@@ -294,7 +294,7 @@ export function HowItWorksSection() {
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-cover"
+                      className="absolute inset-0 h-full w-full object-cover [image-rendering:-webkit-optimize-contrast]"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -428,7 +428,7 @@ export function HowItWorksSection() {
                   <video
                     key={`zoom-${slide.key}`}
                     ref={zoomVideoRef}
-                    className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
+                    className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover [image-rendering:-webkit-optimize-contrast]"
                     style={{
                       width: `${lightboxScale * 100}%`,
                       height: `${lightboxScale * 100}%`,
