@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about labour is correct.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nNote: leased tools remain capital — ownership is not the test.\n\nSo the statement is True.",
-      "The sentence accurately describes labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "No — this misstates labour.\n\nPlanners, accountants, and managers also supply labour — the factor is not shop-floor muscle alone.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Labour as a Factor of Production», one ordinary counterexample is enough to reject the claim.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is False.",
+      "The claim about labour is correct.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nNote: leased tools remain capital. Ownership is not the test.\n\nSo the statement is True.",
+      "The sentence accurately describes labour.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "No, this misstates labour.\n\nPlanners, accountants, and managers also supply labour. The factor is not shop-floor muscle alone.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Labour as a Factor of Production», one ordinary counterexample is enough to reject the claim.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is False.",
       "This overstates or mislabels labour.\n\nPerforming a service is labour as a production factor. A household want is not the same label as a factor input.\n\nSo the statement is False.",
-      "This misapplies labour.\n\nContract length does not decide the factor. Seasonal pickers still supply labour while they work.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is False."
+      "This misapplies labour.\n\nContract length does not decide the factor. Seasonal pickers still supply labour while they work.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -48,11 +48,11 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence accurately describes land.\n\nHillside vineyards are natural resources in productive use — that is the land factor.\n\nLand means natural resources in use — soil, water rights, forests, minerals.\n\nSo the statement is True.",
-      "The assertion about labour holds.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is True.",
-      "Capital is defined the way this sentence says.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Styrian Winemaker Harvest Season», the claim fits the definition as written.\n\nNote: leased tools remain capital — ownership is not the test.\n\nSo the statement is True.",
+      "The sentence accurately describes land.\n\nHillside vineyards are natural resources in productive use. That is the land factor.\n\nLand means natural resources in use. Soil, water rights, forests, minerals.\n\nSo the statement is True.",
+      "The assertion about labour holds.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is True.",
+      "Capital is defined the way this sentence says.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Styrian Winemaker Harvest Season», the claim fits the definition as written.\n\nNote: leased tools remain capital. Ownership is not the test.\n\nSo the statement is True.",
       "The wording on fermentation fits the standard definition.\n\nKnowledge and technology count as factors when applied methods raise what the firm can produce.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The assertion about entrepreneurship does not survive the definition.\n\nOrdering capital or hiring labour is often exactly when entrepreneurship is present — organising factors under uncertainty.\n\nSo the statement is False."
+      "The assertion about entrepreneurship does not survive the definition.\n\nOrdering capital or hiring labour is often exactly when entrepreneurship is present. Organising factors under uncertainty.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -77,10 +77,10 @@
       false
     ],
     "tactical_explanations": [
-      "The assertion about land holds.\n\nLand means natural resources in use — soil, water rights, forests, minerals.\n\nIn «Land and Natural Resources», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "The assertion about land holds.\n\nLand means natural resources in use. Soil, water rights, forests, minerals.\n\nIn «Land and Natural Resources», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This overstates or mislabels land.\n\nTimber in inventory is a produced good stored as capital stock, not raw land still in the forest.\n\nSo the statement is False.",
-      "This misapplies capital.\n\nMineral rights are natural-resource land inputs; tradability does not reclassify them as capital.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is False.",
-      "The assertion about land does not survive the definition.\n\nOak barrels are manufactured capital goods. Forest origin does not make finished barrels into land.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Land and Natural Resources», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
+      "This misapplies capital.\n\nMineral rights are natural-resource land inputs; tradability does not reclassify them as capital.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is False.",
+      "The assertion about land does not survive the definition.\n\nOak barrels are manufactured capital goods. Forest origin does not make finished barrels into land.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Land and Natural Resources», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The sentence does not hold for land.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -106,11 +106,11 @@
       true
     ],
     "tactical_explanations": [
-      "Capital is defined the way this sentence says.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nNote: leased tools remain capital — ownership is not the test.\n\nSo the statement is True.",
-      "The wording on capital fits the standard definition.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Capital in Production», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "Yes — this is how capital works in the chapter.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "This matches the chapter definition of capital.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is True.",
-      "This is a correct statement about goods.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Capital in Production», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
+      "Capital is defined the way this sentence says.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nNote: leased tools remain capital. Ownership is not the test.\n\nSo the statement is True.",
+      "The wording on capital fits the standard definition.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Capital in Production», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how capital works in the chapter.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "This matches the chapter definition of capital.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is True.",
+      "This is a correct statement about goods.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Capital in Production», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -135,10 +135,10 @@
       false
     ],
     "tactical_explanations": [
-      "The wording on capital fits the standard definition.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how labour works in the chapter.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Factory Production Shift», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "This matches the chapter definition of entrepreneurship.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is True.",
-      "The claim fails on land.\n\nThe because-clause fails: copper is extracted from the earth does not justify the conclusion.\n\nLand means natural resources in use — soil, water rights, forests, minerals.\n\nSo the statement is False.",
+      "The wording on capital fits the standard definition.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how labour works in the chapter.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Factory Production Shift», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "This matches the chapter definition of entrepreneurship.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is True.",
+      "The claim fails on land.\n\nThe because-clause fails: copper is extracted from the earth does not justify the conclusion.\n\nLand means natural resources in use. Soil, water rights, forests, minerals.\n\nSo the statement is False.",
       "Knowledge and technology count as factors when applied methods raise what the firm can produce.\n\nIn «Factory Production Shift», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -164,11 +164,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how entrepreneurship works in the chapter.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Entrepreneurship as a Factor of Production», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how entrepreneurship works in the chapter.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Entrepreneurship as a Factor of Production», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for entrepreneur.\n\nEntrepreneurship organises land, labour, and capital under uncertainty.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The claim fails on entrepreneurship.\n\nThe because-clause fails: both involve business decisions does not justify the conclusion.\n\nSo the statement is False.",
-      "Labour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Entrepreneurship as a Factor of Production», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "The absolute wording on entrepreneurship breaks on a counterexample.\n\nOrdering capital or hiring labour is often exactly when entrepreneurship is present — organising factors under uncertainty.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is False."
+      "Labour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Entrepreneurship as a Factor of Production», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "The absolute wording on entrepreneurship breaks on a counterexample.\n\nOrdering capital or hiring labour is often exactly when entrepreneurship is present. Organising factors under uncertainty.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -193,11 +193,11 @@
       false
     ],
     "tactical_explanations": [
-      "This matches the chapter definition of services.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is True.",
+      "This matches the chapter definition of services.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is True.",
       "This is a correct statement about experience.\n\nKnowledge and technology count as factors when applied methods raise what the firm can produce.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about technology is correct.\n\nKnowledge and technology count as factors when applied methods raise what the firm can produce.\n\nSo the statement is True.",
       "The absolute wording on technology breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nKnowledge and technology count as factors when applied methods raise what the firm can produce.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "No — this misstates capital.\n\nThe because-clause fails: it is stored on servers does not justify the conclusion.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is False."
+      "No, this misstates capital.\n\nThe because-clause fails: it is stored on servers does not justify the conclusion.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -222,11 +222,11 @@
       true
     ],
     "tactical_explanations": [
-      "This is a correct statement about entrepreneurship.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "This is a correct statement about entrepreneurship.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about entrepreneurship is correct.\n\nEntrepreneurship organises land, labour, and capital under uncertainty.\n\nSo the statement is True.",
       "The sentence accurately describes repair.\n\nKnowledge and technology count as factors when applied methods raise what the firm can produce.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The assertion about capital holds.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «A small IT-support venture Repair Weekend», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "Labour is defined the way this sentence says.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is True."
+      "The assertion about capital holds.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «A small IT-support venture Repair Weekend», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Labour is defined the way this sentence says.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -251,11 +251,11 @@
       false
     ],
     "tactical_explanations": [
-      "The claim about entrepreneur is correct.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is True.",
+      "The claim about entrepreneur is correct.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is True.",
       "The sentence accurately describes factors of production.\n\nFirms combine land, labour, capital, entrepreneurship, and often knowledge to create output.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "No — this misstates whichever.\n\nFirms combine land, labour, capital, entrepreneurship, and often knowledge to create output.\n\nIn «Combining Production Factors», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates whichever.\n\nFirms combine land, labour, capital, entrepreneurship, and often knowledge to create output.\n\nIn «Combining Production Factors», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This overstates or mislabels services.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "This misapplies labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "This misapplies labour.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -280,10 +280,10 @@
       false
     ],
     "tactical_explanations": [
-      "The sentence accurately describes capital.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "The sentence accurately describes capital.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about experience holds.\n\nKnowledge and technology count as factors when applied methods raise what the firm can produce.\n\nSo the statement is True.",
-      "Entrepreneurship is defined the way this sentence says.\n\nHillside vineyards are natural resources in productive use — that is the land factor.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Winemaker Integrated Factors», the claim fits the definition as written.\n\nSo the statement is True.",
-      "The wording on capital fits the standard definition.\n\nHillside vineyards are natural resources in productive use — that is the land factor.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is True.",
+      "Entrepreneurship is defined the way this sentence says.\n\nHillside vineyards are natural resources in productive use. That is the land factor.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Winemaker Integrated Factors», the claim fits the definition as written.\n\nSo the statement is True.",
+      "The wording on capital fits the standard definition.\n\nHillside vineyards are natural resources in productive use. That is the land factor.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is True.",
       "The assertion about labour does not survive the definition.\n\nContract length does not decide the factor. Seasonal pickers still supply labour while they work.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -309,10 +309,10 @@
       false
     ],
     "tactical_explanations": [
-      "The assertion about entrepreneurship holds.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Entrepreneurship versus Labour», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "The assertion about entrepreneurship holds.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Entrepreneurship versus Labour», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This overstates or mislabels capital.\n\nThe because-clause fails: plans are stored digitally does not justify the conclusion.\n\nSo the statement is False.",
-      "The wording on entrepreneurship fits the standard definition.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how entrepreneurship works in the chapter.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Entrepreneurship versus Labour», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "The wording on entrepreneurship fits the standard definition.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how entrepreneurship works in the chapter.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Entrepreneurship versus Labour», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for labour.\n\nThe because-clause fails: it consumes working hours does not justify the conclusion.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -338,11 +338,11 @@
       false
     ],
     "tactical_explanations": [
-      "Capital is defined the way this sentence says.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nNote: leased tools remain capital — ownership is not the test.\n\nSo the statement is True.",
-      "The wording on capital fits the standard definition.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Leased Equipment as Capital», the claim fits the definition as written.\n\nNote: leased tools remain capital — ownership is not the test.\n\nSo the statement is True.",
-      "The assertion about capital does not survive the definition.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
+      "Capital is defined the way this sentence says.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nNote: leased tools remain capital. Ownership is not the test.\n\nSo the statement is True.",
+      "The wording on capital fits the standard definition.\n\nLeased equipment still functions as capital while the firm uses it in production.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Leased Equipment as Capital», the claim fits the definition as written.\n\nNote: leased tools remain capital. Ownership is not the test.\n\nSo the statement is True.",
+      "The assertion about capital does not survive the definition.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The sentence does not hold for land.\n\nThe because-clause fails: they stand in a workshop does not justify the conclusion.\n\nSo the statement is False.",
-      "The claim fails on land.\n\nThe because-clause fails: work happens outdoors does not justify the conclusion.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Leased Equipment as Capital», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
+      "The claim fails on land.\n\nThe because-clause fails: work happens outdoors does not justify the conclusion.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Leased Equipment as Capital», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -367,11 +367,11 @@
       false
     ],
     "tactical_explanations": [
-      "The wording on labour fits the standard definition.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The assertion about entrepreneurship does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "The sentence does not hold for land.\n\nLand means natural resources in use — soil, water rights, forests, minerals.\n\nSo the statement is False.",
-      "The claim fails on land.\n\nThe because-clause fails: they operate on forest terrain does not justify the conclusion.\n\nLand means natural resources in use — soil, water rights, forests, minerals.\n\nSo the statement is False.",
-      "Capital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Forestry Crew and Harvesters», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "The wording on labour fits the standard definition.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "The assertion about entrepreneurship does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "The sentence does not hold for land.\n\nLand means natural resources in use. Soil, water rights, forests, minerals.\n\nSo the statement is False.",
+      "The claim fails on land.\n\nThe because-clause fails: they operate on forest terrain does not justify the conclusion.\n\nLand means natural resources in use. Soil, water rights, forests, minerals.\n\nSo the statement is False.",
+      "Capital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Forestry Crew and Harvesters», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -396,11 +396,11 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how capital works in the chapter.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nIn «Financial Resources as Capital», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "This matches the chapter definition of capital.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "This is a correct statement about capital.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is True.",
-      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "The absolute wording on land breaks on a counterexample.\n\nThe because-clause fails: it is stored on business premises does not justify the conclusion.\n\nLand means natural resources in use — soil, water rights, forests, minerals.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is False."
+      "Yes, this is how capital works in the chapter.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nIn «Financial Resources as Capital», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "This matches the chapter definition of capital.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "This is a correct statement about capital.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is True.",
+      "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "The absolute wording on land breaks on a counterexample.\n\nThe because-clause fails: it is stored on business premises does not justify the conclusion.\n\nLand means natural resources in use. Soil, water rights, forests, minerals.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -426,10 +426,10 @@
     ],
     "tactical_explanations": [
       "The sentence does not hold for labour.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
-      "This is a correct statement about labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about labour is correct.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nSo the statement is True.",
-      "The sentence accurately describes labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nIn «Human Skills in Services», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is True.",
-      "The assertion about labour holds.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
+      "This is a correct statement about labour.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "The claim about labour is correct.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nSo the statement is True.",
+      "The sentence accurately describes labour.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nIn «Human Skills in Services», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is True.",
+      "The assertion about labour holds.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -454,10 +454,10 @@
       false
     ],
     "tactical_explanations": [
-      "This is a correct statement about labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "The claim about entrepreneurship is correct.\n\nCapital covers produced means of production and operating finance — owned or leased while in use.\n\nSo the statement is True.",
-      "The sentence accurately describes labour.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is True.",
-      "No — this misstates needs.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nLabour is every human-resource input to production — manual or office, permanent or seasonal.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "This is a correct statement about labour.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "The claim about entrepreneurship is correct.\n\nCapital covers produced means of production and operating finance. Owned or leased while in use.\n\nSo the statement is True.",
+      "The sentence accurately describes labour.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nApply that definition to the claim's exact wording.\n\nNote: labour covers office and service work, not only shop-floor muscle.\n\nSo the statement is True.",
+      "No, this misstates needs.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nLabour is every human-resource input to production. Manual or office, permanent or seasonal.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This overstates or mislabels land.\n\nThe because-clause fails: they occupy workshop space does not justify the conclusion.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -513,7 +513,7 @@
     ],
     "tactical_explanations": [
       "The sentence accurately describes services.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nApply that definition to the claim's exact wording.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
-      "No — this misstates capital.\n\nThe because-clause fails: they teach on mountain slopes does not justify the conclusion.\n\nSo the statement is False.",
+      "No, this misstates capital.\n\nThe because-clause fails: they teach on mountain slopes does not justify the conclusion.\n\nSo the statement is False.",
       "This overstates or mislabels tertiary.\n\nThe because-clause fails: guests consume the experience does not justify the conclusion.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Tyrolean Ski Resort Services», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "This misapplies services.\n\nThe because-clause fails: snow is natural does not justify the conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is False.",
       "The assertion about primary does not survive the definition.\n\nThe because-clause fails: it operates on a mountainside does not justify the conclusion.\n\nSo the statement is False."
@@ -544,7 +544,7 @@
       "The assertion about primary holds.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nIn «Primary Sector Activities», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Primary is defined the way this sentence says.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is True.",
       "The wording on primary fits the standard definition.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how secondary works in the chapter.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Primary Sector Activities», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how secondary works in the chapter.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Primary Sector Activities», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of land.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -600,10 +600,10 @@
     ],
     "tactical_explanations": [
       "The wording on gdp fits the standard definition.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nApply that definition to the claim's exact wording.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
-      "Yes — this is how gdp works in the chapter.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «Flood Rebuild and GDP», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
+      "Yes, this is how gdp works in the chapter.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «Flood Rebuild and GDP», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
       "This matches the chapter definition of gdp.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nSo the statement is True.",
       "This is a correct statement about goods.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Rising GDP can accompany environmental damage or rebuild after disaster — measured output is not proof of welfare.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «Flood Rebuild and GDP», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
+      "Rising GDP can accompany environmental damage or rebuild after disaster. Measured output is not proof of welfare.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «Flood Rebuild and GDP», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -628,7 +628,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how services works in the chapter.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «Tertiary Services Scope», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how services works in the chapter.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «Tertiary Services Scope», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of services.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This is a correct statement about secondary.\n\nSecondary activity transforms materials through manufacturing.\n\nSo the statement is True.",
       "The claim about services is correct.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «Tertiary Services Scope», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
@@ -661,7 +661,7 @@
       "This is a correct statement about primary.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Primary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is False.",
       "The absolute wording on tertiary breaks on a counterexample.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «Emerging Economy Sector Mix», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is False.",
-      "No — this misstates services.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "No, this misstates services.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -689,7 +689,7 @@
       "This is a correct statement about secondary.\n\nSecondary activity transforms materials through manufacturing.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The because-clause fails: bottled oil is a processed product does not justify the conclusion.\n\nSo the statement is False.",
       "The absolute wording on tertiary breaks on a counterexample.\n\nThe because-clause fails: each sells to customers does not justify the conclusion.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nSo the statement is False.",
-      "No — this misstates tertiary.\n\nThe because-clause fails: parts go to other businesses does not justify the conclusion.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «Olive Farm and Factory Order», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
+      "No, this misstates tertiary.\n\nThe because-clause fails: parts go to other businesses does not justify the conclusion.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «Olive Farm and Factory Order», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "This overstates or mislabels tertiary.\n\nThe because-clause fails: oil is sold to customers does not justify the conclusion.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
@@ -748,7 +748,7 @@
       "The assertion about gdp holds.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
       "Goods is defined the way this sentence says.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «Gross Domestic Product Definition», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on gdp fits the standard definition.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how services works in the chapter.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nSo the statement is True."
+      "Yes, this is how services works in the chapter.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -775,8 +775,8 @@
     "tactical_explanations": [
       "The assertion about gdp holds.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «EU Services at Seventy-four Percent», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
       "Services is defined the way this sentence says.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is True.",
-      "The wording on such fits the standard definition.\n\nSector labels follow the stage of activity — extract, manufacture, or serve.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how seventy-four works in the chapter.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «EU Services at Seventy-four Percent», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "The wording on such fits the standard definition.\n\nSector labels follow the stage of activity. Extract, manufacture, or serve.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how seventy-four works in the chapter.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «EU Services at Seventy-four Percent», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of tertiary.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -804,7 +804,7 @@
     "tactical_explanations": [
       "Gdp is defined the way this sentence says.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
       "The wording on gdp fits the standard definition.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «GDP Growth Measure», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is True.",
-      "Yes — this is how gdp works in the chapter.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how gdp works in the chapter.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for gdp.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The claim fails on inflation.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
@@ -832,7 +832,7 @@
     ],
     "tactical_explanations": [
       "The wording on tertiary fits the standard definition.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how secondary works in the chapter.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Remote Coaching Abroad», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how secondary works in the chapter.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Remote Coaching Abroad», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for primary.\n\nThe because-clause fails: trainers work from home offices does not justify the conclusion.\n\nSo the statement is False.",
       "The claim fails on goods.\n\nThe because-clause fails: no goods cross borders, the activity cannot be counted in GDP does not justify the conclusion.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is False.",
       "The because-clause fails: trainers work from home offices does not justify the conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nIn «Remote Coaching Abroad», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
@@ -860,7 +860,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how primary works in the chapter.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nIn «Coal Mine and Car Plant Quarter», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how primary works in the chapter.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nIn «Coal Mine and Car Plant Quarter», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of secondary.\n\nSecondary activity transforms materials through manufacturing.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This is a correct statement about primary.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is True.",
       "The claim about services is correct.\n\nTertiary activity supplies services rather than extraction or fabrication.\n\nIn «Coal Mine and Car Plant Quarter», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
@@ -893,7 +893,7 @@
       "The claim fails on gdp.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nNote: GDP tracks activity; it is not a wellbeing score.\n\nSo the statement is False.",
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The absolute wording on gdp breaks on a counterexample.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nIn «criticisms that GDP misses some income», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "No — this misstates gdp.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nSo the statement is False."
+      "No, this misstates gdp.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nGDP totals the money value of final output inside borders; it is not a welfare score.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -921,7 +921,7 @@
       "This is a correct statement about services.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The because-clause fails: each serves customers does not justify the conclusion.\n\nSo the statement is False.",
       "The absolute wording on primary breaks on a counterexample.\n\nThe because-clause fails: policies cover basic risks does not justify the conclusion.\n\nPrimary activity extracts from nature: farming, fishing, mining, forestry.\n\nSo the statement is False.",
-      "No — this misstates secondary.\n\nThe because-clause fails: flour milling follows does not justify the conclusion.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Insurance Branch and Wheat Farm», one ordinary counterexample is enough to reject the claim.\n\nNote: sector follows the firm's main activity, not the raw material's origin story.\n\nSo the statement is False.",
+      "No, this misstates secondary.\n\nThe because-clause fails: flour milling follows does not justify the conclusion.\n\nSecondary activity transforms materials through manufacturing.\n\nIn «Insurance Branch and Wheat Farm», one ordinary counterexample is enough to reject the claim.\n\nNote: sector follows the firm's main activity, not the raw material's origin story.\n\nSo the statement is False.",
       "This overstates or mislabels secondary.\n\nThe because-clause fails: grain is processed into flour elsewhere does not justify the conclusion.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -949,7 +949,7 @@
     "tactical_explanations": [
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The absolute wording on primary breaks on a counterexample.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "No — this misstates profit.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Profit-oriented Basics», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
+      "No, this misstates profit.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Profit-oriented Basics», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
       "This overstates or mislabels profit.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is False.",
       "This misapplies profit.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
@@ -1008,7 +1008,7 @@
       "The assertion about profit holds.\n\nThe because-clause is correct: profit compares revenue with total expenses.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Revenue versus Costs», the claim fits the definition as written.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "Profit is defined the way this sentence says.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is True.",
       "The wording on margin fits the standard definition.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how profit works in the chapter.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Revenue versus Costs», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how profit works in the chapter.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Revenue versus Costs», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of profit.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
@@ -1064,7 +1064,7 @@
     ],
     "tactical_explanations": [
       "The wording on profit fits the standard definition.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how profit works in the chapter.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Profit Reinvestment», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how profit works in the chapter.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Profit Reinvestment», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of reinvestment.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is True.",
       "This is a correct statement about profit.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The because-clause fails: it must be distributed immediately does not justify the conclusion.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Profit Reinvestment», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False."
@@ -1092,7 +1092,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how selling works in the chapter.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Merchandise and Mission Funding», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
+      "Yes, this is how selling works in the chapter.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Merchandise and Mission Funding», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "This matches the chapter definition of merchandise.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim fails on habitat.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is False.",
       "Not-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Merchandise and Mission Funding», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
@@ -1125,7 +1125,7 @@
       "This is a correct statement about capital.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The because-clause fails: customers pay prices does not justify the conclusion.\n\nSo the statement is False.",
       "The sentence accurately describes profit.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Owner and Investor Reward», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "No — this misstates owners.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "No, this misstates owners.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1153,7 +1153,7 @@
       "The claim fails on investors.\n\nThe because-clause fails: lenders absorb all uncertainty does not justify the conclusion.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is False.",
       "The because-clause fails: early years may show low margins does not justify the conclusion.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
       "The absolute wording on covering breaks on a counterexample.\n\nProfit-oriented firms aim for revenue above total costs, not merely break-even.\n\nApply that definition to the claim's exact wording.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
-      "No — this misstates capital.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Startup Founder Risk», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates capital.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Startup Founder Risk», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This overstates or mislabels risk-bearing.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
@@ -1237,7 +1237,7 @@
       false
     ],
     "tactical_explanations": [
-      "No — this misstates npos.\n\nThe because-clause fails: mission work is voluntary in nature does not justify the conclusion.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Covering Costs in NPOs», one ordinary counterexample is enough to reject the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
+      "No, this misstates npos.\n\nThe because-clause fails: mission work is voluntary in nature does not justify the conclusion.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Covering Costs in NPOs», one ordinary counterexample is enough to reject the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is False.",
       "Food is defined the way this sentence says.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nSo the statement is True.",
       "The wording on not-for-profit fits the standard definition.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nApply that definition to the claim's exact wording.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "The assertion about mission does not survive the definition.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Covering Costs in NPOs», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -1268,7 +1268,7 @@
     "tactical_explanations": [
       "Ticket is defined the way this sentence says.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is True.",
       "The wording on outreach fits the standard definition.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «NGO Theatre Ticket Surplus», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
-      "Yes — this is how performances works in the chapter.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nApply that definition to the claim's exact wording.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
+      "Yes, this is how performances works in the chapter.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nApply that definition to the claim's exact wording.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "This matches the chapter definition of reinvesting.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nSo the statement is True.",
       "This is a correct statement about theatre.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «NGO Theatre Ticket Surplus», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
     ],
@@ -1324,7 +1324,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how capital works in the chapter.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Investors and Retained Profit», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how capital works in the chapter.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nIn «Investors and Retained Profit», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of capital.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This is a correct statement about retained.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is True.",
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -1357,7 +1357,7 @@
       "This is a correct statement about trading.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nApply that definition to the claim's exact wording.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The absolute wording on mission breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "No — this misstates surplus.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "No, this misstates surplus.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1385,7 +1385,7 @@
       "This is a correct statement about humanitarian.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nApply that definition to the claim's exact wording.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "The claim about primary is correct.\n\nThe definition matches: Not-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nNote: needing revenue is not the same as chasing owner profit as the primary aim.\n\nSo the statement is True.",
       "The absolute wording on profit breaks on a counterexample.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "No — this misstates humanitarian.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Humanitarian NPO Characteristics», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates humanitarian.\n\nNot-for-profits pursue a mission, not owner profit; surpluses usually return to the mission.\n\nIn «Humanitarian NPO Characteristics», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This overstates or mislabels shareholder.\n\nProfit appears when revenue exceeds total costs and expenses.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -1413,7 +1413,7 @@
     "tactical_explanations": [
       "The because-clause fails: staff are below ten, a firm remains a micro enterprise despite turnover above €2m does not justify the conclusion.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
       "The absolute wording on forty-five breaks on a counterexample.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is False.",
-      "No — this misstates meeting.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
+      "No, this misstates meeting.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
       "Under is defined the way this sentence says.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nSo the statement is True.",
       "This misapplies firm.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nSo the statement is False."
     ],
@@ -1444,7 +1444,7 @@
       "The assertion about micro holds.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "Exceeding is defined the way this sentence says.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Micro turnover edge case», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "The wording on small fits the standard definition.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how small works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is True."
+      "Yes, this is how small works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1469,7 +1469,7 @@
       false
     ],
     "tactical_explanations": [
-      "No — this misstates firm.\n\nThe because-clause fails: both financial figures must be below their respective caps does not justify the conclusion.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nIn «Micro balance sheet OR test», one ordinary counterexample is enough to reject the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
+      "No, this misstates firm.\n\nThe because-clause fails: both financial figures must be below their respective caps does not justify the conclusion.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nIn «Micro balance sheet OR test», one ordinary counterexample is enough to reject the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
       "Medium is defined the way this sentence says.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "This misapplies turnover.\n\nThe because-clause fails: turnover is within €50m, balance sheet size is irrelevant for medium classification does not justify the conclusion.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nSo the statement is False.",
       "The assertion about hundred does not survive the definition.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nIn «Micro balance sheet OR test», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -1528,7 +1528,7 @@
     ],
     "tactical_explanations": [
       "The wording on workforce fits the standard definition.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nApply that definition to the claim's exact wording.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
-      "Yes — this is how approximately works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nIn «Small turnover breach», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
+      "Yes, this is how approximately works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nIn «Small turnover breach», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "The sentence does not hold for accounting.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "This is a correct statement about hundred.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "EU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Small turnover breach», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
@@ -1556,7 +1556,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how official works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nIn «Medium staff limit», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
+      "Yes, this is how official works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nIn «Medium staff limit», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "This matches the chapter definition of size.\n\nThe because-clause is correct: accounting rules may differ for smaller and larger firms.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is True.",
       "The claim fails on employees.\n\nThe because-clause fails: the threshold says fewer than ten does not justify the conclusion.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
       "EU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nIn «Medium staff limit», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -1673,7 +1673,7 @@
     ],
     "tactical_explanations": [
       "The sentence accurately describes medium.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nApply that definition to the claim's exact wording.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
-      "No — this misstates micro.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
+      "No, this misstates micro.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
       "Micro is defined the way this sentence says.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «SME share in the EU», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This misapplies small.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The assertion about medium does not survive the definition.\n\nThe because-clause fails: staff and turnover both qualify despite balance sheet breach does not justify the conclusion.\n\nSo the statement is False."
@@ -1704,7 +1704,7 @@
       "The assertion about people holds.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Why definitions matter», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "This overstates or mislabels smes.\n\nThe because-clause fails: sMEs are numerous, individual SME failures have no community impact does not justify the conclusion.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is False.",
       "The wording on lenders fits the standard definition.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how tiers works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nIn «Why definitions matter», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how tiers works in the chapter.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nIn «Why definitions matter», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of most.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -1760,7 +1760,7 @@
     ],
     "tactical_explanations": [
       "The wording on small fits the standard definition.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nApply that definition to the claim's exact wording.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
-      "Yes — this is how complete works in the chapter.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Accounting rules by size», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
+      "Yes, this is how complete works in the chapter.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Accounting rules by size», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "The sentence does not hold for definitions.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is False.",
       "This is a correct statement about hundred.\n\nEU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about micro is correct.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Accounting rules by size», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
@@ -1821,7 +1821,7 @@
       "This is a correct statement about medium.\n\nThe definition matches: EU medium firms need fewer than 250 staff and turnover ≤ €50m or balance sheet ≤ €43m.\n\nApply that definition to the claim's exact wording.\n\nNote: EU size = staff headcount AND (turnover OR balance-sheet total).\n\nSo the statement is True.",
       "EU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nSo the statement is False.",
       "The sentence accurately describes eight.\n\nEU micro firms need fewer than 10 staff and turnover ≤ €2m or balance sheet ≤ €2m.\n\nIn «Ten employees boundary», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "No — this misstates gdp.\n\nRising GDP can accompany environmental damage or rebuild after disaster — measured output is not proof of welfare.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is False."
+      "No, this misstates gdp.\n\nRising GDP can accompany environmental damage or rebuild after disaster. Measured output is not proof of welfare.\n\nEU small firms need fewer than 50 staff and turnover ≤ €10m or balance sheet ≤ €10m.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1908,7 +1908,7 @@
       "The assertion about national holds.\n\nA national business serves the home-country market but not foreign markets.\n\nSo the statement is True.",
       "Capital is defined the way this sentence says.\n\nA local business operates in a limited area with nearby customers.\n\nIn «Regional supplier reach», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This misapplies website.\n\nA national business serves the home-country market but not foreign markets.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is False.",
-      "Yes — this is how national works in the chapter.\n\nA local business operates in a limited area with nearby customers.\n\nSo the statement is True."
+      "Yes, this is how national works in the chapter.\n\nA local business operates in a limited area with nearby customers.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -1933,7 +1933,7 @@
       false
     ],
     "tactical_explanations": [
-      "No — this misstates globalisation.\n\nA national business serves the home-country market but not foreign markets.\n\nIn «National retailer chain», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates globalisation.\n\nA national business serves the home-country market but not foreign markets.\n\nIn «National retailer chain», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "International is defined the way this sentence says.\n\nA national business serves the home-country market but not foreign markets.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
       "This misapplies international.\n\nA national business serves the home-country market but not foreign markets.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is False.",
       "The assertion about national does not survive the definition.\n\nThe because-clause fails: transport is faster domestically does not justify the conclusion.\n\nA local business operates in a limited area with nearby customers.\n\nIn «National retailer chain», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
@@ -1992,7 +1992,7 @@
     ],
     "tactical_explanations": [
       "The wording on manufacturing fits the standard definition.\n\nA national business serves the home-country market but not foreign markets.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
-      "Yes — this is how customer works in the chapter.\n\nA local business operates in a limited area with nearby customers.\n\nIn «Local customer proximity», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
+      "Yes, this is how customer works in the chapter.\n\nA local business operates in a limited area with nearby customers.\n\nIn «Local customer proximity», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
       "This matches the chapter definition of regional.\n\nA local business operates in a limited area with nearby customers.\n\nSo the statement is True.",
       "This is a correct statement about selling.\n\nA national business serves the home-country market but not foreign markets.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "A national business serves the home-country market but not foreign markets.\n\nIn «Local customer proximity», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
@@ -2020,7 +2020,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how components works in the chapter.\n\nA national business serves the home-country market but not foreign markets.\n\nIn «Regional funding challenge», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how components works in the chapter.\n\nA national business serves the home-country market but not foreign markets.\n\nIn «Regional funding challenge», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of capital.\n\nA local business operates in a limited area with nearby customers.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
       "The claim fails on currency.\n\nReach runs local → national → international depending on where the firm makes and/or sells.\n\nSo the statement is False.",
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nA local business operates in a limited area with nearby customers.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -2081,7 +2081,7 @@
       "The claim fails on proximity.\n\nA local business operates in a limited area with nearby customers.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is False.",
       "A national business serves the home-country market but not foreign markets.\n\nSo the statement is False.",
       "The sentence accurately describes currency.\n\nA national business serves the home-country market but not foreign markets.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
-      "No — this misstates components.\n\nThe because-clause fails: its first plant was in one town does not justify the conclusion.\n\nA local business operates in a limited area with nearby customers.\n\nIn «National supply chain length», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
+      "No, this misstates components.\n\nThe because-clause fails: its first plant was in one town does not justify the conclusion.\n\nA local business operates in a limited area with nearby customers.\n\nIn «National supply chain length», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "Globalisation is defined the way this sentence says.\n\nReach runs local → national → international depending on where the firm makes and/or sells.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -2137,7 +2137,7 @@
     ],
     "tactical_explanations": [
       "The sentence accurately describes cross-border.\n\nA national business serves the home-country market but not foreign markets.\n\nApply that definition to the claim's exact wording.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
-      "No — this misstates international.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is False.",
+      "No, this misstates international.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is False.",
       "This overstates or mislabels domestic-only.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nA national business serves the home-country market but not foreign markets.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This misapplies local.\n\nA local business operates in a limited area with nearby customers.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The assertion about exporting does not survive the definition.\n\nA national business serves the home-country market but not foreign markets.\n\nSo the statement is False."
@@ -2285,7 +2285,7 @@
       "This is a correct statement about policy.\n\nA local business operates in a limited area with nearby customers.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about importing is correct.\n\nA national business serves the home-country market but not foreign markets.\n\nSo the statement is True.",
       "The sentence accurately describes local.\n\nThe definition matches: A local business operates in a limited area with nearby customers.\n\nIn «Currency exposure abroad», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: reach is where the firm makes and/or sells, not whether an input was imported.\n\nSo the statement is True.",
-      "No — this misstates operating.\n\nReach runs local → national → international depending on where the firm makes and/or sells.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "No, this misstates operating.\n\nReach runs local → national → international depending on where the firm makes and/or sells.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2341,7 +2341,7 @@
     "tactical_explanations": [
       "The claim about stakeholder is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The absolute wording on stakeholder breaks on a counterexample.\n\nShareholders own shares; they are stakeholders, but not all stakeholders are shareholders.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "No — this misstates stakeholder.\n\nThe because-clause fails: they receive payment does not justify the conclusion.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nThe because-clause fails: they receive payment does not justify the conclusion.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "Stakeholder is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This misapplies stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False."
     ],
@@ -2372,7 +2372,7 @@
       "The assertion about profit holds.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "Growing is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owner profit motives», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on they fits the standard definition.\n\nThe because-clause is correct: poor trading could reduce their personal return.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
-      "Yes — this is how profit works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True."
+      "Yes, this is how profit works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2397,7 +2397,7 @@
       false
     ],
     "tactical_explanations": [
-      "No — this misstates reward.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owner risk reward», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates reward.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owner risk reward», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "Capital is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This misapplies owners.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The assertion about capital does not survive the definition.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
@@ -2428,7 +2428,7 @@
     "tactical_explanations": [
       "Stakeholder is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The wording on security fits the standard definition.\n\nThe because-clause is correct: firm failure could end their employment.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Manager income security», the claim fits the definition as written.\n\nSo the statement is True.",
-      "Yes — this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
+      "Yes, this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "This matches the chapter definition of managers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This is a correct statement about stakeholder.\n\nThe because-clause is correct: business outcomes affect their careers and pay.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Manager income security», the claim fits the definition as written.\n\nSo the statement is True."
     ],
@@ -2484,7 +2484,7 @@
       false
     ],
     "tactical_explanations": [
-      "Yes — this is how managers works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Mutual dependence staff», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
+      "Yes, this is how managers works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Mutual dependence staff», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The sentence does not hold for labour.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The claim fails on staff.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -2601,10 +2601,10 @@
     ],
     "tactical_explanations": [
       "The sentence accurately describes mutual.\n\nThe definition matches: Businesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "No — this misstates customers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
+      "No, this misstates customers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
       "Customers is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Customer mutual dependency», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The wording on bakery fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how bakery works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
+      "Yes, this is how bakery works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2632,7 +2632,7 @@
       "The assertion about residents holds.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Community interest», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "Stakeholder is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The wording on stakeholder fits the standard definition.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "Yes — this is how town works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Community interest», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how town works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Community interest», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for stakeholder.\n\nThe because-clause fails: they do not sign contracts with the firm does not justify the conclusion.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -2660,7 +2660,7 @@
     "tactical_explanations": [
       "This overstates or mislabels stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This misapplies stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "Yes — this is how regulators works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how regulators works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for government.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "This is a correct statement about government.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government interest», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
     ],
@@ -2691,7 +2691,7 @@
       "The assertion about real does not survive the definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Environment real action», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "The sentence does not hold for environmental.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "This is a correct statement about stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "Environmental responsibility needs concrete activities and proven results — not greenwashing.\n\nIn «Environment real action», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
+      "Environmental responsibility needs concrete activities and proven results, not greenwashing.\n\nIn «Environment real action», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2716,10 +2716,10 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — this is how stakeholder works in the chapter.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nIn «Greenwash warning», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "The sentence does not hold for stakeholder.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "The claim fails on greenwash.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nSo the statement is False.",
-      "The claim about advertising is correct.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nIn «Greenwash warning», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how stakeholder works in the chapter.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nIn «Greenwash warning», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
+      "The sentence does not hold for stakeholder.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "The claim fails on greenwash.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nSo the statement is False.",
+      "The claim about advertising is correct.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nIn «Greenwash warning», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence accurately describes stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -2777,7 +2777,7 @@
       "This is a correct statement about profit.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about profit is correct.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nSo the statement is True.",
       "The sentence accurately describes stakeholder.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "No — this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Conflicting interests», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Conflicting interests», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This overstates or mislabels stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
@@ -2833,10 +2833,10 @@
     ],
     "tactical_explanations": [
       "The sentence accurately describes stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "No — this misstates stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This overstates or mislabels stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Financial structure factor», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "This misapplies stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
-      "Yes — this is how financial works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
+      "Yes, this is how financial works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2920,7 +2920,7 @@
     ],
     "tactical_explanations": [
       "The wording on profit fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how owners works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owners share value», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how owners works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owners share value», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of rising.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "This is a correct statement about owners.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about building is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owners share value», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
@@ -3009,7 +3009,7 @@
       "This is a correct statement about suppliers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "Businesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
       "The sentence accurately describes delayed.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "No — this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Suppliers timely orders», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Suppliers timely orders», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This overstates or mislabels suppliers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -3037,7 +3037,7 @@
     "tactical_explanations": [
       "The claim about customers is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "The sentence accurately describes fair.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "No — this misstates stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "Customers is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This misapplies buyers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
@@ -3065,7 +3065,7 @@
     ],
     "tactical_explanations": [
       "The sentence accurately describes stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "No — this misstates stakeholder.\n\nThe because-clause fails: communities do not trade with the firm does not justify the conclusion.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nThe because-clause fails: communities do not trade with the firm does not justify the conclusion.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This overstates or mislabels stakeholder.\n\nThe because-clause fails: employment is private does not justify the conclusion.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Community local impact», one ordinary counterexample is enough to reject the claim.\n\nSo the statement is False.",
       "The wording on residents fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about communities does not survive the definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False."
@@ -3093,10 +3093,10 @@
       true
     ],
     "tactical_explanations": [
-      "No — this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government tax compliance», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government tax compliance», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This overstates or mislabels compliance.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "The wording on stakeholder fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "Yes — this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government tax compliance», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government tax compliance», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of collection.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -3122,9 +3122,9 @@
       false
     ],
     "tactical_explanations": [
-      "This overstates or mislabels stakeholder.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "This overstates or mislabels stakeholder.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This misapplies stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Environment beyond slogan», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "Yes — this is how stakeholder works in the chapter.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how stakeholder works in the chapter.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
       "The claim fails on using.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Environment beyond slogan», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False."
     ],
@@ -3152,7 +3152,7 @@
     ],
     "tactical_explanations": [
       "The wording on stakeholder fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "Yes — this is how stakeholder works in the chapter.\n\nThe because-clause is correct: payment and order decisions affect their operations.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Stakeholders not shareholders only», the claim fits the definition as written.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
+      "Yes, this is how stakeholder works in the chapter.\n\nThe because-clause is correct: payment and order decisions affect their operations.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Stakeholders not shareholders only», the claim fits the definition as written.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "This matches the chapter definition of stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This is a correct statement about stakeholder.\n\nShareholders own shares; they are stakeholders, but not all stakeholders are shareholders.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim about stakeholder is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Stakeholders not shareholders only», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
@@ -3180,7 +3180,7 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — this is how capital works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owner risk bearing», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how capital works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owner risk bearing», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of rising.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The claim fails on profit.\n\nThe because-clause fails: businesses guarantee profits does not justify the conclusion.\n\nSo the statement is False.",
       "The claim about profit is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Owner risk bearing», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
@@ -3213,7 +3213,7 @@
       "The claim fails on staff.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False.",
       "The claim about managers is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "The absolute wording on employees breaks on a counterexample.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Manager employee dependence», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "No — this misstates mutual.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "No, this misstates mutual.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -3269,7 +3269,7 @@
     "tactical_explanations": [
       "Businesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
       "The absolute wording on stakeholder breaks on a counterexample.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "No — this misstates suppliers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Customer firm reliance», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates suppliers.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Customer firm reliance», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "Customers is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "The wording on buyers fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True."
     ],
@@ -3300,7 +3300,7 @@
       "The assertion about local holds.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "Stakeholder is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Community facility impact», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The wording on community fits the standard definition.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
+      "Yes, this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3328,7 +3328,7 @@
       "The assertion about stakeholder holds.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government regulation aim», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "Business is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This misapplies stakeholder.\n\nThe because-clause fails: businesses operate independently of public policy does not justify the conclusion.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "Yes — this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government regulation aim», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how stakeholder works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Government regulation aim», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "The sentence does not hold for government.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -3356,7 +3356,7 @@
     "tactical_explanations": [
       "Published is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "The wording on communities fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Sustainability reporting duty», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "Yes — this is how investors works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how investors works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The sentence does not hold for green.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is False.",
       "The claim fails on stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Sustainability reporting duty», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False."
     ],
@@ -3412,7 +3412,7 @@
       true
     ],
     "tactical_explanations": [
-      "Yes — this is how expansion works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Growth versus community conflict», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
+      "Yes, this is how expansion works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Growth versus community conflict», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
       "This matches the chapter definition of stakeholder.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "This is a correct statement about small.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The claim about profit is correct.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Growth versus community conflict», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
@@ -3444,8 +3444,8 @@
       "The sentence does not hold for mutual.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nSo the statement is False.",
       "This is a correct statement about stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "Words such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
-      "The absolute wording on stakeholder breaks on a counterexample.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nIn «stakeholder theory and success factors for exam review», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "No — this misstates stakeholder.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
+      "The absolute wording on stakeholder breaks on a counterexample.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nIn «stakeholder theory and success factors for exam review», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nStakeholder interests often pull in different directions; management has to surface trade-offs.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -3473,7 +3473,7 @@
       "This is a correct statement about stakeholder.\n\nIn the Bakery example, the nouns in the claim line up with the definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "The claim about profit is correct.\n\nIn the Bakery example, the nouns in the claim line up with the definition.\n\nSo the statement is True.",
       "The sentence accurately describes stakeholder.\n\nIn the Bakery example, the nouns in the claim line up with the definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
-      "No — this misstates capital.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
+      "No, this misstates capital.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
       "Stakeholder is defined the way this sentence says.\n\nIn the Bakery example, the nouns in the claim line up with the definition.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
@@ -3531,8 +3531,8 @@
       "The absolute wording on stakeholder breaks on a counterexample.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "The assertion about stakeholder holds.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is True.",
       "This overstates or mislabels stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Greenwash marketing trap», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
-      "The wording on stakeholder fits the standard definition.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
-      "Yes — this is how advertising works in the chapter.\n\nEnvironmental responsibility needs concrete activities and proven results — not greenwashing.\n\nSo the statement is True."
+      "The wording on stakeholder fits the standard definition.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how advertising works in the chapter.\n\nEnvironmental responsibility needs concrete activities and proven results, not greenwashing.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -3557,7 +3557,7 @@
       false
     ],
     "tactical_explanations": [
-      "No — this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Supplier contract fairness», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
+      "No, this misstates stakeholder.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Supplier contract fairness», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "This overstates or mislabels stakeholder.\n\nWords such as only, never, always, or automatically turn a nearby true idea into an absolute you can break with one ordinary example.\n\nNote: every shareholder is a stakeholder; not every stakeholder is a shareholder.\n\nSo the statement is False.",
       "The wording on stakeholder fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "The assertion about stakeholder does not survive the definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Supplier contract fairness», one ordinary counterexample is enough to reject the claim.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is False.",
@@ -3588,7 +3588,7 @@
     "tactical_explanations": [
       "Staff is defined the way this sentence says.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "The wording on shared fits the standard definition.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Employee shared values», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True.",
-      "Yes — this is how alignment works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
+      "Yes, this is how alignment works in the chapter.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nApply that definition to the claim's exact wording.\n\nSo the statement is True.",
       "This matches the chapter definition of staff.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nSo the statement is True.",
       "This is a correct statement about aligned.\n\nBusinesses operate among people and groups whose interests must be considered.\n\nIn «Employee shared values», the claim fits the definition as written.\n\nThe chapter criterion settles the wording once applied to the claim.\n\nSo the statement is True."
     ],
