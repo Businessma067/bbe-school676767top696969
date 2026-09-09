@@ -50,7 +50,7 @@ const COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
-    aspect: "3420 / 1966",
+    aspect: "1710 / 982",
   },
   {
     key: "english",
