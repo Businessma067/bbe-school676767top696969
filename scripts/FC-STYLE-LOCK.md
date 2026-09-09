@@ -24,7 +24,11 @@ Academic Title Case, like Full Course: `Labour as a Factor of Production`, not `
 - NO “the book”, “according to the book”, “(alt…)”, “Fuhrmann notes”.
 
 ## Explanations
-`TRUE — …` / `FALSE — …` full sentence, FC tone.
+Teacher voice, same depth as math tactical explanations:
+- No `TRUE —` / `FALSE —` leads and no em dashes.
+- Calm tutor prose: why the claim holds or fails, every needed step for numbers/ratios.
+- Plain closing sentence: `The statement is true.` / `The statement is false.`
+- Practice UI already prints `**A.** → True/False` above the body; do not repeat that stamp.
 
 ## Mix
 ~25% lived scenes woven into Consider/Analyze context; ~75% theory Analyze/Review stems.

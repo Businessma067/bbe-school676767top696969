@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   ClipboardList,
   Languages,
+  Scale,
   XCircle,
 } from "lucide-react";
 import {
@@ -26,6 +27,7 @@ import {
 import { cn } from "@/lib/utils";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/bbe-entrance-exam")({
   head: () => ({
@@ -53,6 +55,7 @@ export const Route = createFileRoute("/bbe-entrance-exam")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/bbe-entrance-exam"),
     ],
   }),
   component: BbeEntranceExamHubPage,
@@ -71,7 +74,7 @@ const faqs = [
   {
     question: "How many questions are on the exam?",
     answer:
-      "Based on the most recent exam: 34 questions total, split into 10 Economics & Business, 11 English, and 13 Mathematics.",
+      `Based on the most recent exam: ${BBE_EXAM_FORMAT.questionCount} questions total, split into ${BBE_EXAM_FORMAT.economicsQuestions} Economics & Business, ${BBE_EXAM_FORMAT.englishQuestions} English, and ${BBE_EXAM_FORMAT.mathQuestions} Mathematics.`,
   },
   {
     question: "How long is the exam?",
@@ -85,7 +88,7 @@ const faqs = [
   {
     question: "How is the BBE exam scored?",
     answer:
-      "Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics 40%, English 20%, Mathematics 40%.",
+      `Via a partial-credit system where correct and incorrect selections under the same stem are weighed against each other. Approximate score weighting from the most recent exam: Economics ${BBE_EXAM_FORMAT.scoreWeighting.economics}, English ${BBE_EXAM_FORMAT.scoreWeighting.english}, Mathematics ${BBE_EXAM_FORMAT.scoreWeighting.mathematics}.`,
   },
   {
     question: "How are applicants ranked?",
@@ -111,7 +114,7 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
   },
   {
     field: "Question count (most recent exam)",
-    detail: `34 total: ${BBE_EXAM_FORMAT.economicsQuestions} Economics & Business, ${BBE_EXAM_FORMAT.englishQuestions} English, ${BBE_EXAM_FORMAT.mathQuestions} Mathematics`,
+    detail: `${BBE_EXAM_FORMAT.questionCount} total: ${BBE_EXAM_FORMAT.economicsQuestions} Economics & Business, ${BBE_EXAM_FORMAT.englishQuestions} English, ${BBE_EXAM_FORMAT.mathQuestions} Mathematics`,
   },
   {
     field: "Approximate score weighting",
@@ -356,7 +359,7 @@ export function BbeEntranceExamHubPage() {
         </BbeSection>
 
         <BbeSection id="economics-overview" title="Economics & Business overview">
-          <SectionCard icon={<BookOpen className="h-5 w-5" />} title="Economics & Business: roughly 40% of the score">
+          <SectionCard icon={<BookOpen className="h-5 w-5" />} title={`Economics & Business: roughly ${BBE_EXAM_FORMAT.scoreWeighting.economics} of the score`}>
             <p>
               Tested via independent literature study of Fuhrmann, B. (2019),{" "}
               <cite className="font-medium not-italic text-foreground">
@@ -497,6 +500,12 @@ export function BbeEntranceExamHubPage() {
               title="Admission & application"
               to="/bbe-admission"
               body="Registration, OSA, entrance exam and ranking overview"
+            />
+            <ResourceCard
+              icon={<Scale className="h-4 w-4" />}
+              title="BBE vs WISO"
+              to="/bbe-vs-wiso"
+              body="Compare language, places, selectivity, and which exam fits you"
             />
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">

@@ -6,6 +6,18 @@ import { cn } from "@/lib/utils";
 
 type MainTab = "course" | "mock-exams" | "mock-builder" | "games";
 type CourseSubject = "economics" | "math" | "english";
+type StudyTool = "flashcards" | "matching" | "tutor-exam";
+
+type ShowcaseSlide = {
+  key: string;
+  label: string;
+  title: string;
+  body: string;
+  cta: string;
+  href: string;
+  video: string;
+  poster: string;
+};
 
 const MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
@@ -14,16 +26,7 @@ const MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "games", label: "Study tools" },
 ];
 
-const COURSE_SUBJECTS: {
-  key: CourseSubject;
-  label: string;
-  title: string;
-  body: string;
-  cta: string;
-  href: string;
-  video: string;
-  poster: string;
-}[] = [
+const COURSE_SUBJECTS: ShowcaseSlide[] = [
   {
     key: "economics",
     label: "Economics",
@@ -56,42 +59,85 @@ const COURSE_SUBJECTS: {
   },
 ];
 
+const STUDY_TOOLS: ShowcaseSlide[] = [
+  {
+    key: "flashcards",
+    label: "Flashcards",
+    title: "Flip cards for terms and formulas",
+    body: "Drill Economics definitions, Math formulas, and English vocabulary. Flip each card, rate how well you know it, and build recall before the exam.",
+    cta: "Open Flashcards",
+    href: "/flashcards",
+    video: "/how-it-works/flashcards.mp4",
+    poster: "/how-it-works/flashcards-poster.jpg",
+  },
+  {
+    key: "matching",
+    label: "Matching",
+    title: "Connect concepts to the right meaning",
+    body: "Pair each term with its definition in a timed matching board. Same decks as the flashcards — a different way to lock the links in.",
+    cta: "Open Matching",
+    href: "/matching",
+    video: "/how-it-works/matching.mp4",
+    poster: "/how-it-works/matching-poster.jpg",
+  },
+  {
+    key: "tutor-exam",
+    label: "Tutor Exam",
+    title: "A random theoretical quiz with a tutor",
+    body: "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.",
+    cta: "Open Tutor Exam",
+    href: "/tutor-exam",
+    video: "/how-it-works/tutor-exam.mp4",
+    poster: "/how-it-works/tutor-exam-poster.jpg",
+  },
+];
+
 const PLACEHOLDERS: Record<
-  Exclude<MainTab, "course">,
+  Exclude<MainTab, "course" | "games">,
   { title: string; body: string }
 > = {
   "mock-exams": {
     title: "Full-length exam simulations",
-    body: "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.",
+    body: "This walkthrough is next. Use Course or Study tools to see how practice actually feels.",
   },
   "mock-builder": {
     title: "Build a mock around your weak spots",
-    body: "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.",
-  },
-  games: {
-    title: "Flashcards, matching, and drills",
-    body: "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.",
+    body: "This walkthrough is next. Use Course or Study tools to see how practice actually feels.",
   },
 };
+
+const VIDEO_TABS: MainTab[] = ["course", "games"];
 
 export function HowItWorksSection() {
   const [tab, setTab] = useState<MainTab>("course");
   const [subject, setSubject] = useState<CourseSubject>("economics");
+  const [tool, setTool] = useState<StudyTool>("flashcards");
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
 
-  const slide = COURSE_SUBJECTS.find((s) => s.key === subject) ?? COURSE_SUBJECTS[0];
-  const subjectIndex = COURSE_SUBJECTS.findIndex((s) => s.key === subject);
+  const slides = tab === "games" ? STUDY_TOOLS : COURSE_SUBJECTS;
+  const activeKey = tab === "games" ? tool : subject;
+  const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
+  const slideIndex = slides.findIndex((s) => s.key === slide.key);
 
-  const goSubject = (next: number) => {
-    const i = (next + COURSE_SUBJECTS.length) % COURSE_SUBJECTS.length;
-    setSubject(COURSE_SUBJECTS[i].key);
+  const goSlide = (next: number) => {
+    const i = (next + slides.length) % slides.length;
+    const key = slides[i].key;
+    if (tab === "games") setTool(key as StudyTool);
+    else setSubject(key as CourseSubject);
   };
+
+  const setSlideKey = (key: string) => {
+    if (tab === "games") setTool(key as StudyTool);
+    else setSubject(key as CourseSubject);
+  };
+
+  const hasVideoShowcase = VIDEO_TABS.includes(tab);
 
   useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
-    if (!video || !stage || tab !== "course") return;
+    if (!video || !stage || !hasVideoShowcase) return;
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduceMotion) {
@@ -111,10 +157,10 @@ export function HowItWorksSection() {
     );
     observer.observe(stage);
     return () => observer.disconnect();
-  }, [tab, subject]);
+  }, [tab, subject, tool, hasVideoShowcase]);
 
   return (
-    <section id="how-it-works" className="relative bg-background px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="how-it-works" className="relative bg-background px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-7xl text-center">
         <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl">
           How it works
@@ -150,7 +196,7 @@ export function HowItWorksSection() {
           <button
             type="button"
             aria-label="Previous"
-            onClick={() => (tab === "course" ? goSubject(subjectIndex - 1) : cycleTab(tab, -1, setTab))}
+            onClick={() => (hasVideoShowcase ? goSlide(slideIndex - 1) : cycleTab(tab, -1, setTab))}
             className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background text-foreground transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -158,7 +204,7 @@ export function HowItWorksSection() {
           <button
             type="button"
             aria-label="Next"
-            onClick={() => (tab === "course" ? goSubject(subjectIndex + 1) : cycleTab(tab, 1, setTab))}
+            onClick={() => (hasVideoShowcase ? goSlide(slideIndex + 1) : cycleTab(tab, 1, setTab))}
             className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background text-foreground transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
           >
             <ChevronRight className="h-5 w-5" />
@@ -166,26 +212,27 @@ export function HowItWorksSection() {
 
           <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.75fr)_minmax(15rem,0.7fr)] lg:gap-8">
             <div className="min-w-0">
-              <div className="overflow-hidden rounded-xl border border-border bg-[#f7f6f2]">
-                {tab === "course" ? (
-                  <div className="relative min-h-[18rem] sm:min-h-[26rem] lg:min-h-[34rem] xl:min-h-[38rem]">
+              {/* Frame matches recording aspect (3420×1966) so object-cover fills with no crop or letterbox. */}
+              <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
+                {hasVideoShowcase ? (
+                  <div className="relative aspect-[3420/1966] w-full">
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-contain object-top"
+                      className="absolute inset-0 h-full w-full object-cover"
                       poster={slide.poster}
                       src={slide.video}
                       muted
                       loop
                       playsInline
                       preload="metadata"
-                      aria-label={`${slide.label} course walkthrough`}
+                      aria-label={`${slide.label} walkthrough`}
                     />
                   </div>
                 ) : (
-                  <div className="flex min-h-[18rem] items-center justify-center px-6 text-center sm:min-h-[26rem] lg:min-h-[34rem]">
+                  <div className="flex aspect-[3420/1966] w-full items-center justify-center px-6 text-center">
                     <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
-                      Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.
+                      Walkthrough coming next. Switch to Course or Study tools to watch the demos.
                     </p>
                   </div>
                 )}
@@ -193,19 +240,19 @@ export function HowItWorksSection() {
             </div>
 
             <div
-              key={tab === "course" ? slide.key : tab}
+              key={hasVideoShowcase ? slide.key : tab}
               className="relative z-10 flex flex-col justify-center px-1 py-1 text-left sm:px-2 lg:py-2"
             >
-              {tab === "course" ? (
+              {hasVideoShowcase ? (
                 <>
                   <div className="flex flex-wrap gap-1.5">
-                    {COURSE_SUBJECTS.map((item) => {
-                      const active = subject === item.key;
+                    {slides.map((item) => {
+                      const active = slide.key === item.key;
                       return (
                         <button
                           key={item.key}
                           type="button"
-                          onClick={() => setSubject(item.key)}
+                          onClick={() => setSlideKey(item.key)}
                           className={cn(
                             "rounded-sm border px-3 py-1.5 text-[11px] font-semibold transition-colors sm:text-xs",
                             active
@@ -247,16 +294,16 @@ export function HowItWorksSection() {
         </div>
 
         <div className="mt-5 flex items-center justify-center gap-2">
-          {tab === "course"
-            ? COURSE_SUBJECTS.map((item, i) => (
+          {hasVideoShowcase
+            ? slides.map((item, i) => (
                 <button
                   key={item.key}
                   type="button"
                   aria-label={`Show ${item.label}`}
-                  onClick={() => setSubject(item.key)}
+                  onClick={() => setSlideKey(item.key)}
                   className={cn(
                     "h-2 rounded-full transition-all",
-                    i === subjectIndex ? "w-7 bg-foreground" : "w-2 bg-border hover:bg-muted-foreground/40",
+                    i === slideIndex ? "w-7 bg-foreground" : "w-2 bg-border hover:bg-muted-foreground/40",
                   )}
                 />
               ))

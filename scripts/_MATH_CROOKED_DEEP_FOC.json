@@ -1,0 +1,1059 @@
+[
+  {
+    "case_id": "MATH 11.167",
+    "file": "math-ch11-exam.json",
+    "title": "Bakery chain: demand, tax, and average cost",
+    "sort": 167,
+    "fields": [
+      "tactical[0]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=1 :: P(Q) = 38Q-\\dfrac{3}{4}Q^{2}-180 || P^{\\prime}(Q) = 38-\\dfrac{3}{2}Q || P^{\\prime}(Q) = 0 || Q = \\dfrac{76}{3}"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "Q = 10 || Q = 18"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]",
+      "tactical[1]"
+    ],
+    "foc_sample": "P_{t}^{\\prime}(Q) = 34-\\dfrac{3}{2}Q =0 || Q = \\dfrac{68}{3}"
+  },
+  {
+    "case_id": "MATH 11.171",
+    "file": "math-ch11-exam.json",
+    "title": "Greenhouse: two inputs and labour value",
+    "sort": 171,
+    "fields": [
+      "tactical[0]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=3 :: \\pi^{\\prime}(L) = \\dfrac{120}{\\sqrt{L}}-30 || \\pi^{\\prime}(L) = 0 || \\sqrt{L} = 4 || L = 16"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_pair",
+        "sample": "VMP = 10\\cdot 3 || 10\\times 3 = 30"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: Q_{L}(16,16) = 3>0 || VMP = w || Q^{\\prime} = 0"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]"
+    ],
+    "foc_sample": "\\pi^{\\prime}(L) = \\dfrac{120}{\\sqrt{L}}-30 || \\pi^{\\prime}(L) = 0 || \\sqrt{L} = 4 || L = 16"
+  },
+  {
+    "case_id": "MATH 11.174",
+    "file": "math-ch11-exam.json",
+    "title": "Shipping line: capacity, cost, and a smooth loading rule",
+    "sort": 174,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_pair",
+        "sample": "P^{\\prime}(x) = 126+12x-1.5x^{2} || P^{\\prime}(x) = -1.5(x-14)(x+6)"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: R^{\\prime}(x) = 150-6x || R^{\\prime}(x) = 0 || x = 25"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=6 shorts=2 :: AC(x) = 0.5x^{2}-9x+24+\\dfrac{500}{x} || AC^{\\prime}(x) = x-9-\\dfrac{500}{x^{2}} || AC^{\\prime}(10) = 10-9-5 || 10 - 9 = 1"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "x = 10 || x = 18"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]"
+    ],
+    "foc_sample": "R^{\\prime}(x) = 150-6x || R^{\\prime}(x) = 0 || x = 25"
+  },
+  {
+    "case_id": "MATH 11.177",
+    "file": "math-ch11-exam.json",
+    "title": "Riverside market: three-sided stall enclosure",
+    "sort": 177,
+    "fields": [
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: A^{\\prime}(x) = 120-4x || A^{\\prime}(x) = 0 || x = 30"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_pair",
+        "sample": "A^{\\prime}(x) = 120-4x || A^{\\prime}(x) = 0"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_pair",
+        "sample": "A^{\\prime\\prime}(30) = -4<0 || A^{\\prime\\prime} = 0"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "A^{\\prime}(x) = 120-4x>0 || x = 30"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "foc_sample": "A^{\\prime}(x) = 120-4x>0 || x = 30"
+  },
+  {
+    "case_id": "MATH 11.181",
+    "file": "math-ch11-exam.json",
+    "title": "Design duo: two inputs under a budget",
+    "sort": 181,
+    "fields": [
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: U^{\\prime}(x) = 10-x || U^{\\prime}(x) = 0 || x = 10"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_pair",
+        "sample": "U^{\\prime}(x) = 10-x || U^{\\prime}(x) = 0"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "U(x,0) = 0 || y = 0"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]",
+      "tactical[2]"
+    ],
+    "foc_sample": "U^{\\prime}(x) = 10-x || U^{\\prime}(x) = 0 || y = 10-\\dfrac12\\cdot 10 = 5"
+  },
+  {
+    "case_id": "MATH 11.188",
+    "file": "math-ch11-exam.json",
+    "title": "Summer festival: campaign weeks and ticket profit",
+    "sort": 188,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=2 :: \\pi(t) = 16t-t^{2}-10 || \\pi^{\\prime}(t) = 16-2t || 16-2t = 0 || t = 8"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_pair",
+        "sample": "\\pi(t) = D(t)-10 || t = 8"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]"
+    ],
+    "foc_sample": "\\pi^{\\prime}(t) = 16-2t || 16-2t = 0 || t = 8 || \\pi^{\\prime\\prime}(t) = -2<0"
+  },
+  {
+    "case_id": "MATH 11.190",
+    "file": "math-ch11-exam.json",
+    "title": "Cold-chain: spoilage index over delivery hours",
+    "sort": 190,
+    "fields": [
+      "tactical[1]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=1 :: S^{\\prime\\prime}(1) = 6\\cdot 1-12 || S^{\\prime\\prime}(1) = -6<0 || t = 1 || S^{\\prime} = 3(t-1)(t-3)"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "S^{\\prime\\prime}(3) = 18-12 || 18 - 12 = 6"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]",
+      "tactical[2]"
+    ],
+    "foc_sample": "S^{\\prime\\prime}(3) = 6\\cdot 3-12 || S^{\\prime\\prime}(3) = 6>0 || t = 3"
+  },
+  {
+    "case_id": "MATH 11.192",
+    "file": "math-ch11-exam.json",
+    "title": "Print kiosk: demand figure plus quadratic cost",
+    "sort": 192,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=6 shorts=4 :: D(15) = 30 || R(15) = 15\\cdot 30 || 15\\times 30 = 450 || D(15) = 60-30"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_pair",
+        "sample": "R^{\\prime}(15) = 60-4\\cdot 15 || R^{\\prime}(15) = 0"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=3 :: D(10) = 60-20 || 60 - 20 = 40 || D(10) = 40"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[1]"
+    ],
+    "foc_sample": "\\varepsilon(p) = \\dfrac{D^{\\prime}(p)\\,p}{D(p)} = \\dfrac{-2p || \\varepsilon = \\dfrac{-2\\cdot 15}{60-30} = \\dfrac{-30}{30} =  || R^{\\prime}(15) = 60-4\\cdot 15 || R^{\\prime}(15) = 0"
+  },
+  {
+    "case_id": "MATH 11.194",
+    "file": "math-ch11-exam.json",
+    "title": "Herb box: inverse demand inside a fencing budget",
+    "sort": 194,
+    "fields": [
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=10 shorts=7 :: A^{\\prime}(x) = 60-4x || 60-4x = 0 || x = 15 || A^{\\prime\\prime}(x) = -4<0"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: R^{\\prime}(A) = 24-A || 24-A = 0 || A = 24"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_pair",
+        "sample": "p = 24-\\frac12\\cdot 450 || p = -201"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "p = 24-\\dfrac{1}{2}A || A = 48-2p"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "R^{\\prime}(A) = 24-A || R^{\\prime}(A) = 0"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "foc_sample": "R^{\\prime}(A) = 24-A || R^{\\prime}(A) = 0"
+  },
+  {
+    "case_id": "MATH 11.198",
+    "file": "math-ch11-exam.json",
+    "title": "Design duo: budget reduction then read U′ from the figure",
+    "sort": 198,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: U^{\\prime}(x) = 10-x || U^{\\prime}(x) = 0 || x = 10"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_pair",
+        "sample": "2\\cdot 10+4\\cdot 5 = 20+20 || 20 + 20 = 40"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=1 :: U^{\\prime}(x) = 10-x || U^{\\prime}(4) = 10-4 || 10 - 4 = 6 || U^{\\prime}(4) = 6"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]"
+    ],
+    "foc_sample": "U^{\\prime}(x) = 10-x || U^{\\prime}(x) = 0 || x = 10"
+  },
+  {
+    "case_id": "MATH 11.202",
+    "file": "math-ch11-exam.json",
+    "title": "Club: inverse-demand figure, membership fee, and MC",
+    "sort": 202,
+    "fields": [
+      "solution_overview",
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "solution_overview",
+        "reason": "eq_step_pair",
+        "sample": "R(Q)=20Q-\\dfrac{1}{2}Q^{2} || MR=20-Q"
+      },
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_pair",
+        "sample": "p = 20-\\dfrac{1}{2}\\cdot 20 || p = 10"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_pair",
+        "sample": "20-Q = 4 || Q = 16"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_pair",
+        "sample": "20-Q = 4 || Q = 16"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=4 :: MR = 20-16 || 20 - 16 = 4 || MR = 4 || MR = MC"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]"
+    ],
+    "foc_sample": "MR = R^{\\prime}(Q) = 20-Q || 20-Q = 4 || Q = 16"
+  },
+  {
+    "case_id": "MATH 11.205",
+    "file": "math-ch11-exam.json",
+    "title": "Distillery: quadratic cost, linear demand, and a unit tax",
+    "sort": 205,
+    "fields": [
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade",
+      "eq_step_pair"
+    ],
+    "sev": 6,
+    "samples": [
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=3 :: 30-\\dfrac{2}{3}Q = 0 || Q = 45 || p = 30-\\dfrac{1}{3}\\cdot 45 || p = 15"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_pair",
+        "sample": "MR = 0 || Q = 45"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]"
+    ],
+    "foc_sample": "MC = C^{\\prime}(Q) = \\dfrac{4}{5}Q+8 || 30-\\dfrac{2}{3}Q = \\dfrac{4}{5}Q+8 || 22 = \\dfrac{2}{3}Q+\\dfrac{4}{5}Q = \\dfrac{10}{15}Q+\\dfrac{12 || Q = 15"
+  },
+  {
+    "case_id": "MATH 11.161",
+    "file": "math-ch11-exam.json",
+    "title": "Carpentry workshop: revenue, cost, and build time",
+    "sort": 161,
+    "fields": [
+      "tactical[2]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=0 :: T^{\\prime}(Q) = Q+4 || T^{\\prime}(11) = 15 || T^{\\prime}(Q) = 12 || T^{\\prime}(15) = 12"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: R_{e}(6) = R(6) || Q = 6 || Q = 9"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: R^{\\prime}(Q) = -6Q+90 || R^{\\prime}(Q) = 0 || Q = 15 || R^{\\prime\\prime}(Q) = -6<0"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[4]"
+    ],
+    "foc_sample": "R^{\\prime}(Q) = -6Q+90 || R^{\\prime}(Q) = 0 || Q = 15 || R^{\\prime\\prime}(Q) = -6<0"
+  },
+  {
+    "case_id": "MATH 11.163",
+    "file": "math-ch11-exam.json",
+    "title": "Print shop: price, demand, and elasticity",
+    "sort": 163,
+    "fields": [
+      "solution_overview",
+      "tactical[0]",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "solution_overview",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=0 :: R(p)=120p-4p^{2} || R^{\\prime}(p)=120-8p || \\varepsilon(p)=\\dfrac{-4p}{120-4p} || C^{\\prime}(Q)=2+0.1Q"
+      },
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: R(p) = 120p-4p^{2} || R^{\\prime}(p) = 120-8p || R^{\\prime}(p) = 0 || p = 15"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=1 :: C^{\\prime}(Q) = 2+0.1Q || C^{\\prime}(60) = 2+6 || 2 + 6 = 8 || C^{\\prime}(60) = 8"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[0]"
+    ],
+    "foc_sample": "R^{\\prime}(p) = 120-8p || R^{\\prime}(p) = 0 || p = 15"
+  },
+  {
+    "case_id": "MATH 11.164",
+    "file": "math-ch11-exam.json",
+    "title": "Market garden: labour, output, and wage",
+    "sort": 164,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: \\pi^{\\prime}(L) = 48-4L || \\pi^{\\prime}(L) = 0 || L = 12"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=6 shorts=3 :: Q^{\\prime}(L) = 30-2L || Q^{\\prime}(12) = 30-24 || 30 - 24 = 6 || Q^{\\prime}(12) = 6"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "foc_sample": "Q^{\\prime}(L) = 30-2L =0 || L = 15"
+  },
+  {
+    "case_id": "MATH 11.165",
+    "file": "math-ch11-exam.json",
+    "title": "Courier fleet: routes, cost, and a threshold",
+    "sort": 165,
+    "fields": [
+      "tactical[1]",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: AC(x) = x+20+\\dfrac{100}{x} || AC^{\\prime}(x) = 1-\\dfrac{100}{x^{2}} || AC^{\\prime}(x) = 0 || x = 10"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=1 :: P(x) = 40x-\\dfrac{3}{2}x^{2}-100 || P^{\\prime}(x) = 40-3x || P^{\\prime}(x) = 0 || x = \\dfrac{40}{3}"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]",
+      "tactical[2]"
+    ],
+    "foc_sample": "P^{\\prime}(x) = 40-3x || P^{\\prime}(x) = 0 || x = \\dfrac{40}{3}"
+  },
+  {
+    "case_id": "MATH 11.166",
+    "file": "math-ch11-exam.json",
+    "title": "Gift-tube producer: volume, tax, and rival revenue",
+    "sort": 166,
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: R(Q) = 72Q-Q^{2} || R^{\\prime}(Q) = 72-2Q || R^{\\prime}(Q) = 0 || Q = 36"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[2]",
+      "tactical[3]"
+    ],
+    "foc_sample": "R_{t}^{\\prime}(Q) = 66-2Q =0 || Q = 33"
+  },
+  {
+    "case_id": "MATH 11.168",
+    "file": "math-ch11-exam.json",
+    "title": "Data studio: labour, output, and marginal value",
+    "sort": 168,
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=3 :: \\pi^{\\prime}(L) = \\dfrac{120}{\\sqrt{L}}-20 || \\pi^{\\prime}(L) = 0 || \\sqrt{L} = 6 || L = 36"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]",
+      "tactical[3]"
+    ],
+    "foc_sample": "Q^{\\prime}(36) = \\dfrac{40}{6} = \\dfrac{20}{3} || VMP = 3\\cdot\\dfrac{20}{3} = 20"
+  },
+  {
+    "case_id": "MATH 11.170",
+    "file": "math-ch11-exam.json",
+    "title": "Ride platform: fare, commission, and profit",
+    "sort": 170,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: P(Q) = 100Q-\\dfrac{5}{2}Q^{2}-600 || P^{\\prime}(Q) = 100-5Q || P^{\\prime}(Q) = 0 || Q = 20"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: R^{\\prime}(Q) = 120-4Q || R^{\\prime}(Q) = 0 || Q = 30"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[4]"
+    ],
+    "foc_sample": "P_{c}^{\\prime}(Q) = 90-5Q =0 || Q = 18"
+  },
+  {
+    "case_id": "MATH 11.172",
+    "file": "math-ch11-exam.json",
+    "title": "Solar maintenance: output and a smooth service rule",
+    "sort": 172,
+    "fields": [
+      "tactical[0]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: \\pi^{\\prime}(m) = 42-2m || \\pi^{\\prime}(m) = 0 || m = 21"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=2 :: S^{\\prime}(8) = 16 || S^{\\prime}(12) = 20 || m = 8 || m = 12"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]",
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "foc_sample": "S^{\\prime}(8) = 16 || S^{\\prime}(12) = 20 || m = 8 || m = 12"
+  },
+  {
+    "case_id": "MATH 11.173",
+    "file": "math-ch11-exam.json",
+    "title": "Retail launch: price elasticity and a tax",
+    "sort": 173,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: R(p) = 200p-5p^{2} || R^{\\prime}(p) = 200-10p || R^{\\prime}(p) = 0 || p = 20"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=1 :: P(Q) = 35Q-0.3Q^{2}-300 || P^{\\prime}(Q) = 35-0.6Q || P^{\\prime}(Q) = 0 || Q = \\dfrac{175}{3}"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=3 :: Q = 40 || Q = 60 || Q = 50"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[0]",
+      "tactical[1]"
+    ],
+    "foc_sample": "P^{\\prime}(Q) = 35-0.6Q || P^{\\prime}(Q) = 0 || Q = \\dfrac{175}{3}"
+  },
+  {
+    "case_id": "MATH 11.175",
+    "file": "math-ch11-exam.json",
+    "title": "Festival stalls: demand, levy, and setup time",
+    "sort": 175,
+    "fields": [
+      "tactical[0]",
+      "tactical[1]",
+      "tactical[2]",
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=8 shorts=6 :: MR = 30-\\dfrac{2}{3}Q || MC = \\dfrac{1}{3}Q+6 || MR(24) = 30-16 || 30 - 16 = 14"
+      },
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: P_{t}(Q) = 20Q-\\dfrac{1}{2}Q^{2}-120 || P_{t}^{\\prime}(Q) = 20-Q || P_{t}^{\\prime}(Q) = 0 || Q = 20"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=3 :: Q = 90-30 || 90 - 30 = 60 || Q = 60"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=6 shorts=1 :: \\dfrac{1}{2}(400)+20 = 220 || 21\\cdot 20-200 = 220 || S^{\\prime}_{-}(20) = 20+1 || 20 + 1 = 21"
+      }
+    ],
+    "foc_fields": [
+      "tactical[1]"
+    ],
+    "foc_sample": "P_{t}^{\\prime}(Q) = 20-Q || P_{t}^{\\prime}(Q) = 0 || Q = 20"
+  },
+  {
+    "case_id": "MATH 11.176",
+    "file": "math-ch11-exam.json",
+    "title": "Podcast studio: advertising spend and listeners",
+    "sort": 176,
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=3 :: \\pi(a) = 100\\sqrt{a}-a-40 || \\pi^{\\prime}(a) = \\dfrac{50}{\\sqrt{a}}-1 || \\pi^{\\prime}(a) = 0 || \\sqrt{a} = 50"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]",
+      "tactical[3]"
+    ],
+    "foc_sample": "\\pi^{\\prime}(100) = \\dfrac{50}{10}-1 = 4>0 || a = 100"
+  },
+  {
+    "case_id": "MATH 11.178",
+    "file": "math-ch11-exam.json",
+    "title": "Pharmacy warehouse: order quantity and holding cost",
+    "sort": 178,
+    "fields": [
+      "tactical[0]",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=3 :: TC^{\\prime}(Q) = -\\dfrac{20000}{Q^{2}}+2 || TC^{\\prime}(Q) = 0 || Q^{2} = 10000 || Q = 100"
+      },
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: 2\\cdot 100 = 200 || Q = 100 || hQ/2 = 2Q || \\dfrac{hQ}{2} = 2Q"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[0]"
+    ],
+    "foc_sample": "TC^{\\prime}(Q) = -\\dfrac{20000}{Q^{2}}+2 || TC^{\\prime}(Q) = 0 || Q^{2} = 10000 || Q = 100"
+  },
+  {
+    "case_id": "MATH 11.179",
+    "file": "math-ch11-exam.json",
+    "title": "Artisan soap: inverse demand and revenue",
+    "sort": 179,
+    "fields": [
+      "tactical[0]",
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[0]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=2 :: R(Q) = 36Q-3Q^{2} || R^{\\prime}(Q) = 36-6Q || R^{\\prime}(Q) = 0 || Q = 6"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=1 :: R(Q) = 36Q-3Q^{2} || R^{\\prime}(Q) = 36-6Q || R^{\\prime}(4) = 36-24 || 36 - 24 = 12"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]",
+      "tactical[2]"
+    ],
+    "foc_sample": "P^{\\prime}(Q) = 30-6Q =0 || Q = 5"
+  },
+  {
+    "case_id": "MATH 11.180",
+    "file": "math-ch11-exam.json",
+    "title": "Founder's wealth utility: risk attitude",
+    "sort": 180,
+    "fields": [
+      "tactical[2]",
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=3 :: w = 200 || U^{\\prime} = 0 || w = 200"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=1 :: U(w) = 20w-0.05w^{2} || U^{\\prime}(w) = 20-0.1w || U^{\\prime}(50) = 20-5 || 20 - 5 = 15"
+      }
+    ],
+    "foc_fields": [
+      "tactical[2]"
+    ],
+    "foc_sample": "U^{\\prime} = 0 || w = 200"
+  },
+  {
+    "case_id": "MATH 11.185",
+    "file": "math-ch11-exam.json",
+    "title": "Ceramic kiln: cost inflection and marginal cost",
+    "sort": 185,
+    "fields": [
+      "tactical[1]",
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[1]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=3 :: C^{\\prime\\prime}(Q) = 6Q-12 || 6Q-12 = 0 || 6Q = 12 || Q = 2"
+      },
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=3 :: C^{\\prime\\prime} = 0 || AC = \\dfrac{C}{Q} || Q = 2 || AC = MC"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=3 :: C(0) = 0-0+0+10 || 0 + 0 = 0 || 0 + 10 = 10 || C(0) = 10"
+      }
+    ],
+    "foc_fields": [
+      "solution_overview",
+      "tactical[1]",
+      "tactical[3]"
+    ],
+    "foc_sample": "C^{\\prime\\prime} = 0 || AC = \\dfrac{C}{Q} || Q = 2 || AC = MC"
+  },
+  {
+    "case_id": "MATH 11.186",
+    "file": "math-ch11-exam.json",
+    "title": "Pop-up shop: Newton quotient for weekend profit",
+    "sort": 186,
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=4 :: P(4) = 16-24+20 || 16 - 24 = -8 || -8 + 20 = 12 || P(4) = 12"
+      }
+    ],
+    "foc_fields": [
+      "tactical[4]"
+    ],
+    "foc_sample": "P^{\\prime}(x) = 2(x-3) || P^{\\prime\\prime}(x) = 2>0 || x = 3"
+  },
+  {
+    "case_id": "MATH 11.197",
+    "file": "math-ch11-exam.json",
+    "title": "Foundry: MC and MC′ figure for inflection of total cost",
+    "sort": 197,
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=3 :: AC^{\\prime} = 0 || MC = AC || C^{\\prime\\prime} = 0"
+      }
+    ],
+    "foc_fields": [
+      "tactical[2]"
+    ],
+    "foc_sample": "AC^{\\prime} = 0 || MC = AC || C^{\\prime\\prime} = 0"
+  },
+  {
+    "case_id": "MATH 11.199",
+    "file": "math-ch11-exam.json",
+    "title": "Warehouse: EOQ with a spoilage penalty overlay",
+    "sort": 199,
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[3]",
+        "reason": "eq_step_cascade",
+        "sample": "len=4 shorts=4 :: S(1) = 1-6+9 || 1 - 6 = -5 || -5 + 9 = 4 || S(1) = 4"
+      }
+    ],
+    "foc_fields": [
+      "tactical[0]"
+    ],
+    "foc_sample": "TC^{\\prime}(Q) = -\\dfrac{20000}{Q^{2}}+2 || -\\dfrac{20000}{Q^{2}}+2 = 0 || Q^{2} = \\dfrac{20000}{2} = 10000 || Q = 100"
+  },
+  {
+    "case_id": "MATH 11.203",
+    "file": "math-ch11-exam.json",
+    "title": "Mill: average-cost drift and a rival's marginal revenue",
+    "sort": 203,
+    "fields": [
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "eq_step_cascade"
+    ],
+    "sev": 4,
+    "samples": [
+      {
+        "field": "tactical[2]",
+        "reason": "eq_step_cascade",
+        "sample": "len=3 shorts=2 :: Q = 8 || Q = 5 || R_{\\mathrm{rival}}(5) = R(5)"
+      },
+      {
+        "field": "tactical[4]",
+        "reason": "eq_step_cascade",
+        "sample": "len=5 shorts=3 :: C^{\\prime}(Q) = Q^{2}-8Q+30 || C^{\\prime\\prime}(Q) = 2Q-8 || 2Q-8 = 0 || 2Q = 8"
+      }
+    ],
+    "foc_fields": [
+      "tactical[3]",
+      "tactical[4]"
+    ],
+    "foc_sample": "C^{\\prime}(Q) = Q^{2}-8Q+30 || C^{\\prime\\prime}(Q) = 2Q-8 || 2Q-8 = 0 || 2Q = 8"
+  }
+]

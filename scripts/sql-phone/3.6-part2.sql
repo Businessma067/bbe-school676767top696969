@@ -1,973 +1,532 @@
 -- Update expanded explanations for 3.6-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Communities are affected by business activity and count as stakeholders.
 
-Communities are affected by business activity and count as stakeholders.
+Applied carefully, "Local communities can be stakeholders affected by jobs, traffic, and spending from nearby firms" lines up with the textbook idea without adding an extra restriction.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Communities are stakeholders even without direct commercial contracts.
 
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Communities are stakeholders even without direct commercial contracts.
+The statement is false.', 'Communities are affected by local employment and are stakeholders.
 
-Those restricting words stretch a limited idea past what the definition allows.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is false.', 'Local amenities and jobs link communities to business outcomes.
 
-Communities are affected by local employment and are stakeholders.
+Applied carefully, "Residents near an industrial plant may care about noise, pollution, and local jobs created by the firm" lines up with the textbook idea without adding an extra restriction.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Local spending and jobs link community interests to firm activity.
 
-The statement is false.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Local amenities and jobs link communities to business outcomes.
+The statement is false.'] WHERE case_id = 'CASE 3.6.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Tax and policy interests remain even where regulation is light.
 
-The sentence therefore reports the concept accurately for this item.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Tax collection links government interests to business trading performance.
 
-Local spending and jobs link community interests to firm activity.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Government is a stakeholder via regulation and policy.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Enforcement of business rules shows government acting as a stakeholder in firm conduct" lines up with the textbook idea without adding an extra restriction.
 
-Tax and policy interests remain even where regulation is light.
+The statement is true.', 'Government protects public interest through regulation and tax.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Applied carefully, "Compliance inspections link government oversight to how firms treat wider stakeholder interests" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.', 'Fiscal policy links government interests to business activity.
 
-Tax collection links government interests to business trading performance.
+Applied carefully, "Tax collection gives government a stake in the trading performance of local firms" lines up with the textbook idea without adding an extra restriction.
 
-Those restricting words stretch a limited idea past what the definition allows.
+The statement is true.'] WHERE case_id = 'CASE 3.6.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Genuine action is required, not greenwash slogans alone.
 
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Government is a stakeholder via regulation and policy.
+The statement is false.', 'Real action, not slogans, is required on environmental issues.
 
-The sentence therefore reports the concept accurately for this item.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is false.', 'Genuine environmental action is expected, not slogans alone.
 
-Government protects public interest through regulation and tax.
+Applied carefully, "Beyond slogans, environmental stakeholders still expect substantive measures rather than marketing alone" lines up with the textbook idea without adding an extra restriction.
 
-Under that classification the assertion describes the situation correctly.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.', 'Real operational action is expected, not cosmetic changes alone.
 
-Fiscal policy links government interests to business activity.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.', 'Genuine action is prioritised over superficial claims.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Genuine action is required, not greenwash slogans alone.
+The statement is false.'] WHERE case_id = 'CASE 3.6.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Stakeholder status does not require ownership.
 
-Against the scenario (whether environmental concerns require substantive measures, not slogans alone), the claim attaches the wrong label.
+Applied carefully, "Employees count as stakeholders through wages and job security even without owning shares" lines up with the textbook idea without adding an extra restriction.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Suppliers are stakeholders through payment and order dependency.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Suppliers are stakeholders because payment and order decisions affect their operations" lines up with the textbook idea without adding an extra restriction.
 
-Real action, not slogans, is required on environmental issues.
+The statement is true.', 'Communities are affected by business activity and count as stakeholders.
 
-In the case setting — whether environmental concerns require substantive measures, not slogans alone — the sentence mislabels the category or overreaches.
+Applied carefully, "Communities affected by traffic and jobs from a nearby plant count as stakeholders" lines up with the textbook idea without adding an extra restriction.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Stakeholders are defined broadly as affected or interested parties.
 
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Stakeholders include anyone affected by or interested in the business, extending beyond shareholders" lines up with the textbook idea without adding an extra restriction.
 
-Genuine environmental action is expected, not slogans alone.
+The statement is true.', 'Customers are affected by and interested in firm performance.
 
-The scenario (whether environmental concerns require substantive measures, not slogans alone) supports that classification.
+Applied carefully, "Customers who depend on a firm''s products are stakeholders through mutual dependency" lines up with the textbook idea without adding an extra restriction.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.'] WHERE case_id = 'CASE 3.6.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Risk bearing is central to the owner stakeholder position.
 
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Poor trading performance can reduce owner returns and the value of capital they invested" lines up with the textbook idea without adding an extra restriction.
 
-Real operational action is expected, not cosmetic changes alone.
+The statement is true.', 'Share or business value growth is a recognised owner interest.
 
-In the case setting — whether environmental concerns require substantive measures, not slogans alone — the sentence mislabels the category or overreaches.
+Applied carefully, "Rising share or business value rewards owners who accepted earlier business risk" lines up with the textbook idea without adding an extra restriction.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Owners face risk when performance is poor despite seeking profit.
 
-The statement is false.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Genuine action is prioritised over superficial claims.
+The statement is false.', 'Owners want profit and reward for risk.
 
-Against the scenario (whether environmental concerns require substantive measures, not slogans alone), the claim attaches the wrong label.
+Applied carefully, "Owners typically seek profit and a return for bearing business risk" lines up with the textbook idea without adding an extra restriction.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Risk bearing includes potential loss of capital when performance is weak.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+Applied carefully, "Owners accept that poor results can reduce the value of their invested capital" lines up with the textbook idea without adding an extra restriction.
 
-Stakeholder status does not require ownership.
+The statement is true.'] WHERE case_id = 'CASE 3.6.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Income and job security tie managers to firm performance.
 
-The sentence therefore reports the concept accurately for this item.
+The absolute wording "regardless" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is false.', 'Closure harms staff jobs and income tied to the firm.
 
-Suppliers are stakeholders through payment and order dependency.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.', 'Mutual dependence links managers, employees, and the firm.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Managers and employees both rely on the firm''s continued operation for income and jobs" lines up with the textbook idea without adding an extra restriction.
 
-Communities are affected by business activity and count as stakeholders.
+The statement is true.', 'The business depends on staff to operate and generate revenue.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is false.', 'Managers and employees are mutually dependent on the business.
 
-Stakeholders are defined broadly as affected or interested parties.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is false.'] WHERE case_id = 'CASE 3.6.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Suppliers are stakeholders through payment and order dependency.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Customers are affected by and interested in firm performance.
+The statement is false.', 'Suppliers expect payment and orders without needing ownership.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+Applied carefully, "The flour supplier expects payment and future orders from a neighbourhood bakery" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is true.', 'Mutual dependency runs both ways between buyers and suppliers.
 
-Risk bearing is central to the owner stakeholder position.
+Applied carefully, "The bakery depends on the supplier for quality flour while the supplier depends on bakery orders" lines up with the textbook idea without adding an extra restriction.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Order volumes affect supplier livelihoods as stakeholders.
 
-The statement is true.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+Applied carefully, "Delayed bakery orders threaten the flour supplier''s cash flow and staffing plans" lines up with the textbook idea without adding an extra restriction.
 
-Share or business value growth is a recognised owner interest.
+The statement is true.', 'Supplier cash flow depends on steady bakery orders from buyers.
 
-The sentence therefore reports the concept accurately for this item.
+Applied carefully, "Buyers and suppliers rely on each other for orders and cash flow" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is true.'] WHERE case_id = 'CASE 3.6.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customers rely on specific firms for product quality and availability.
 
-Owners face risk when performance is poor despite seeking profit.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Customer welfare ties to firm performance through mutual dependency.
 
-The statement is false.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Owners want profit and reward for risk.
+The statement is false.', 'Mutual dependency means customers rely on suppliers too.
 
-The sentence therefore reports the concept accurately for this item.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is false.', 'Customer welfare ties to firm performance through mutual dependency.
 
-Risk bearing includes potential loss of capital when performance is weak.
+Applied carefully, "Customers lose access if a relied-upon supplier closes" lines up with the textbook idea without adding an extra restriction.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Mutual dependency runs both ways between customers and firms.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+Applied carefully, "Buyers need reliable suppliers just as suppliers need paying customers" lines up with the textbook idea without adding an extra restriction.
 
-Income and job security tie managers to firm performance.
+The statement is true.'] WHERE case_id = 'CASE 3.6.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Communities are affected by business activity and count as stakeholders.
 
-Against the scenario (managers and employees rely on firm performance for livelihood), the claim attaches the wrong label.
+Applied carefully, "Communities affected by noise from a new plant hold stakeholder interests in how the firm operates" lines up with the textbook idea without adding an extra restriction.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Local employment ties community interests to firm outcomes.
 
-The statement is false.
-', 'FALSE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+Applied carefully, "Local employment linked to a warehouse gives the community a stake in the firm''s continued operation" lines up with the textbook idea without adding an extra restriction.
 
-Closure harms staff jobs and income tied to the firm.
+The statement is true.', 'Communities are affected by facility impacts and local employment.
 
-Against the scenario (managers and employees rely on firm performance for livelihood), the claim attaches the wrong label.
+Applied carefully, "A new warehouse affects traffic and jobs in a town, creating community stakeholder interests" lines up with the textbook idea without adding an extra restriction.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Community and owner interests may conflict on expansion impacts.
 
-The statement is false.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+Applied carefully, "Community opposition to a new warehouse signals conflicting interests with the developer" lines up with the textbook idea without adding an extra restriction.
 
-Mutual dependence links managers, employees, and the firm.
+The statement is true.', 'Traffic impacts create community stakeholder interests.
 
-In the case setting — managers and employees rely on firm performance for livelihood — that reading fits the facts given.
+Applied carefully, "Residents near a new facility may experience stakeholder effects from increased lorry movements" lines up with the textbook idea without adding an extra restriction.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.'] WHERE case_id = 'CASE 3.6.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Government stakeholder role includes protecting public interest via regulation.
 
-The statement is true.
-', 'FALSE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+Applied carefully, "Regulation aims to balance business activity with protection of wider stakeholder interests" lines up with the textbook idea without adding an extra restriction.
 
-The business depends on staff to operate and generate revenue.
+The statement is true.', 'Government protects public interest through regulation.
 
-In the case setting — managers and employees rely on firm performance for livelihood — the sentence mislabels the category or overreaches.
+Applied carefully, "Business rules set by regulators reflect protection of the wider public interest" lines up with the textbook idea without adding an extra restriction.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Government is a stakeholder via tax, regulation, and policy.
 
-The statement is false.
-', 'FALSE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Managers and employees are mutually dependent on the business.
+The statement is false.', 'Regulation can represent environmental and community stakeholder concerns.
 
-Against the scenario (managers and employees rely on firm performance for livelihood), the claim attaches the wrong label.
+Applied carefully, "Environmental rules reflect government acting as a stakeholder for the wider community" lines up with the textbook idea without adding an extra restriction.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Infrastructure links to economic activity affecting business and public stakeholders.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Suppliers are stakeholders through payment and order dependency.
+The statement is false.'] WHERE case_id = 'CASE 3.6.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Environmental reporting serves stakeholder information needs.
 
-Those restricting words stretch a limited idea past what the definition allows.
+Applied carefully, "Published sustainability data can inform investors and communities about environmental impacts" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.', 'Reporting addresses community stakeholder information needs.
 
-Suppliers expect payment and orders without needing ownership.
+Applied carefully, "Communities may rely on published environmental data when assessing local facility impacts" lines up with the textbook idea without adding an extra restriction.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Reporting supports stakeholder evaluation of environmental performance.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+Applied carefully, "Investors may use sustainability disclosures to judge whether environmental claims are credible" lines up with the textbook idea without adding an extra restriction.
 
-Mutual dependency runs both ways between buyers and suppliers.
+The statement is true.', 'Reporting remains part of environmental stakeholder expectations.
 
-Under that classification the assertion describes the situation correctly.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+The statement is false.', 'Reporting informs stakeholders rather than concealing impacts by design.
 
-Order volumes affect supplier livelihoods as stakeholders.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.'] WHERE case_id = 'CASE 3.6.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profit and environmental goals can conflict in the same decision.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+Applied carefully, "Higher profit targets may clash with environmental spending on cleaner production" lines up with the textbook idea without adding an extra restriction.
 
-Supplier cash flow depends on steady bakery orders from buyers.
+The statement is true.', 'Conflicting stakeholder interests include environmental tensions.
 
-The sentence therefore reports the concept accurately for this item.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Conflicting interests among stakeholders are common.
 
-Customers rely on specific firms for product quality and availability.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Owner profit aims can clash with environmental demands.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Customer welfare ties to firm performance through mutual dependency.
+The statement is false.', 'Owner profit aims can clash with environmental demands.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Applied carefully, "Cleaner production spending can lower short-term profit and tension owner and environmental aims" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.'] WHERE case_id = 'CASE 3.6.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Community and owner interests may conflict on expansion impacts.
 
-Mutual dependency means customers rely on suppliers too.
+Applied carefully, "Expansion plans may clash with community preferences about noise and traffic" lines up with the textbook idea without adding an extra restriction.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Conflicting stakeholder interests arise when growth affects local amenities.
 
-The statement is false.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+Applied carefully, "Community objections to a bakery extension illustrate conflicting stakeholder interests in practice" lines up with the textbook idea without adding an extra restriction.
 
-Customer welfare ties to firm performance through mutual dependency.
+The statement is true.', 'Neighbour objections to a bakery extension illustrate owner-community tension.
 
-The sentence therefore reports the concept accurately for this item.
+Applied carefully, "A small IT-support venture''s growth ambitions may conflict with neighbours'' wish to limit delivery traffic" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.', 'Profit and community concerns can conflict in expansion decisions.
 
-Mutual dependency runs both ways between customers and firms.
+Applied carefully, "Profit from a larger bakery and community concerns about noise can pull owners and neighbours in different directions" lines up with the textbook idea without adding an extra restriction.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Local amenity concerns can pull neighbours and owners in different directions.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Neighbours opposing a small IT-support venture''s extension show conflicting stakeholder interests over local amenities" lines up with the textbook idea without adding an extra restriction.
 
-Communities are affected by business activity and count as stakeholders.
+The statement is true.'] WHERE case_id = 'CASE 3.6.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Mutual dependence links managers, employees, customers, suppliers, and the firm.
 
-The sentence therefore reports the concept accurately for this item.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Stakeholders are defined broadly as affected or interested parties.
 
-Local employment ties community interests to firm outcomes.
+Applied carefully, "Exam review: stakeholders include anyone affected by or interested in the business" lines up with the textbook idea without adding an extra restriction.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Stakeholders include anyone affected or interested, not shareholders alone.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Communities are affected by facility impacts and local employment.
+The statement is false.', 'Genuine environmental action is expected, not greenwash slogans alone.
 
-Under that classification the assertion describes the situation correctly.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Conflicting stakeholder interests arise in many decisions.
 
-Community and owner interests may conflict on expansion impacts.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.'] WHERE case_id = 'CASE 3.6.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Employees depend on firm success for livelihood.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Bakery staff depend on the shop for wages and job security as employee stakeholders" lines up with the textbook idea without adding an extra restriction.
 
-Traffic impacts create community stakeholder interests.
+The statement is true.', 'Owners typically seek profit and bear business risk.
 
-Under that classification the assertion describes the situation correctly.
+Applied carefully, "Bakery owners seek profit and bear risk from how the shop trades" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is true.', 'Multiple groups affected by the bakery fit the stakeholder definition.
 
-Government stakeholder role includes protecting public interest via regulation.
+Applied carefully, "The owners, staff, flour suppliers, and neighbours all hold stakeholder interests in the bakery" lines up with the textbook idea without adding an extra restriction.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Stakeholders include staff, suppliers, customers, and neighbours too.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Government protects public interest through regulation.
+The statement is false.', 'Suppliers expect payment and orders without needing ownership.
 
-The sentence therefore reports the concept accurately for this item.
+Applied carefully, "The flour supplier expects payment and future orders as a supplier stakeholder" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is true.'] WHERE case_id = 'CASE 3.6.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Employees are stakeholders through income, security, and identification.
 
-Government is a stakeholder via tax, regulation, and policy.
+Applied carefully, "Employees at a components manufacturer''s plants are stakeholders affected by corporate decisions" lines up with the textbook idea without adding an extra restriction.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Government is a stakeholder via regulation, tax, and policy.
 
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Government regulators in host countries hold stakeholder interests in a components manufacturer''s operations" lines up with the textbook idea without adding an extra restriction.
 
-Regulation can represent environmental and community stakeholder concerns.
+The statement is true.', 'Communities are affected by business activity and count as stakeholders.
 
-Under that classification the assertion describes the situation correctly.
+Applied carefully, "Communities near a components manufacturer''s facilities may be stakeholders affected by jobs and local spending" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.', 'Large multinationals have broad stakeholder groups.
 
-Infrastructure links to economic activity affecting business and public stakeholders.
+Applied carefully, "A components manufacturer affects employees, suppliers, communities, and regulators across its operating countries" lines up with the textbook idea without adding an extra restriction.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Stakeholders include employees, suppliers, communities, and regulators too.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Environmental reporting serves stakeholder information needs.
+The statement is false.'] WHERE case_id = 'CASE 3.6.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Greenwash misleads stakeholders and undermines trust when uncovered.
 
-The sentence therefore reports the concept accurately for this item.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Real action, not slogans, is required on environmental issues.
 
-Reporting addresses community stakeholder information needs.
+Applied carefully, "Superficial eco-labels without operational change fail environmental stakeholder expectations" lines up with the textbook idea without adding an extra restriction.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Genuine action is required, not greenwash slogans alone.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Reporting supports stakeholder evaluation of environmental performance.
+The statement is false.', 'Greenwash means exaggerated claims without real action.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+Applied carefully, "Greenwash misleads stakeholders by exaggerating environmental performance in advertising" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is true.', 'Misleading green claims without real action exemplify greenwash.
 
-Reporting remains part of environmental stakeholder expectations.
+Applied carefully, "Advertising recyclable boxes while dumping waste illegally illustrates greenwash risk" lines up with the textbook idea without adding an extra restriction.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.'] WHERE case_id = 'CASE 3.6.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cash-flow pressure from delayed payment affects suppliers as stakeholders.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Reporting informs stakeholders rather than concealing impacts by design.
+The statement is false.', 'Payment timing affects supplier stakeholders directly.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Fair payment terms reflect how the buyer treats supplier stakeholders.
 
-Profit and environmental goals can conflict in the same decision.
+Applied carefully, "Fair payment terms matter to suppliers as stakeholder treatment, not only to accountants" lines up with the textbook idea without adding an extra restriction.
 
-The scenario (higher profit targets may clash with environmental spending) supports that classification.
+The statement is true.', 'Timely payment is a core supplier stakeholder interest.
 
-The sentence therefore reports the concept accurately for this item.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Supplier fairness concerns extend beyond narrow legal formalities.
 
-Conflicting stakeholder interests include environmental tensions.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Against the scenario (higher profit targets may clash with environmental spending), the claim attaches the wrong label.
+The statement is false.'] WHERE case_id = 'CASE 3.6.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Alignment of values supports cooperation on business goals.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Applied carefully, "Staff engagement improves when employees feel company practices match their personal values" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is true.', 'Shared values link employees with organisational performance.
 
-Conflicting interests among stakeholders are common.
+Applied carefully, "Shared values between staff and the organisation can support overall business success" lines up with the textbook idea without adding an extra restriction.
 
-Against the scenario (higher profit targets may clash with environmental spending), the claim attaches the wrong label.
+The statement is true.', 'Value alignment can improve day-to-day cooperation at work.
 
-Once the defining feature is restored, the assertion falls away.
+Applied carefully, "Alignment of personal and company values can improve cooperation on business objectives" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is true.', 'Identification with firm success is an employee stakeholder theme.
 
-Owner profit aims can clash with environmental demands.
+Applied carefully, "Staff who share organisational values may identify more closely with firm success" lines up with the textbook idea without adding an extra restriction.
 
-Against the scenario (higher profit targets may clash with environmental spending), the claim attaches the wrong label.
+The statement is true.', 'Shared values support mutual dependence and identification themes.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Applied carefully, "Aligned values help employees and managers cooperate on shared business objectives" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is true.'] WHERE case_id = 'CASE 3.6.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Owners may want share or business value to increase.
 
-Owner profit aims can clash with environmental demands.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-In the case setting — higher profit targets may clash with environmental spending — that reading fits the facts given.
+The statement is false.', 'Value growth links to owner risk and reward.
 
-Under that classification the assertion describes the situation correctly.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The statement is false.', 'Reinvestment versus payout shapes owner value interests.
 
-Community and owner interests may conflict on expansion impacts.
+Applied carefully, "Weighing dividends against reinvestment affects the long-term value owners seek" lines up with the textbook idea without adding an extra restriction.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Reinvestment choices shape owner value interests.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Retaining profit in the business rather than paying dividends can build long-term owner value" lines up with the textbook idea without adding an extra restriction.
 
-Conflicting stakeholder interests arise when growth affects local amenities.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Reinvestment choices shape owner value interests.
 
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Neighbour objections to a bakery extension illustrate owner-community tension.
+The statement is false.'] WHERE case_id = 'CASE 3.6.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Mutual dependency gives customers influence when they can switch.
 
-The sentence therefore reports the concept accurately for this item.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The statement is true.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+The statement is false.', 'Customers depend on firms for product quality and availability.
 
-Profit and community concerns can conflict in expansion decisions.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.', 'Poor performance can drive customers to switch suppliers.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Customers may switch if quality falls, exercising stakeholder influence on revenue" lines up with the textbook idea without adding an extra restriction.
 
-Local amenity concerns can pull neighbours and owners in different directions.
+The statement is true.', 'Customers can influence firms through switching or boycotts.
 
-The sentence therefore reports the concept accurately for this item.
+Applied carefully, "Customer boycotts after poor service show stakeholder power over firm revenue" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+The statement is true.', 'Even small-quantity buyers can switch when quality or service disappoints.
 
-Mutual dependence links managers, employees, customers, suppliers, and the firm.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Those restricting words stretch a limited idea past what the definition allows.
+The statement is false.'] WHERE case_id = 'CASE 3.6.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Community interests are affected when a major local employer closes.
 
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "If the factory closes, the community loses jobs linked to that employer" lines up with the textbook idea without adding an extra restriction.
 
-Stakeholders are defined broadly as affected or interested parties.
+The statement is true.', 'Communities are affected by business activity and count as stakeholders.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+Applied carefully, "A major employer''s expansion or closure decision affects community stakeholders beyond the factory gate" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is true.', 'Residents with family members at the plant hold a community stake in its future.
 
-Stakeholders include anyone affected or interested, not shareholders alone.
+Applied carefully, "Residents whose family members work at the plant hold a community stakeholder interest in its future" lines up with the textbook idea without adding an extra restriction.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Local spending and jobs link community welfare to the firm''s continued operation.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Local spending from factory wages links community welfare to the firm''s continued operation" lines up with the textbook idea without adding an extra restriction.
 
-Genuine environmental action is expected, not greenwash slogans alone.
+The statement is true.', 'Local employment ties community interests to firm outcomes.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Applied carefully, "Local jobs concentrating on a single company give the community a direct interest in that firm''s continuity" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The statement is true.'] WHERE case_id = 'CASE 3.6.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Government affects and is affected by business as a stakeholder.
 
-Conflicting stakeholder interests arise in many decisions.
+Applied carefully, "Infrastructure used by firms links government investment to business stakeholder context" lines up with the textbook idea without adding an extra restriction.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Fiscal links connect government and business stakeholder interests.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+Applied carefully, "Tax revenue from trading firms helps fund public infrastructure used by business" lines up with the textbook idea without adding an extra restriction.
 
-Employees depend on firm success for livelihood.
+The statement is true.', 'Infrastructure links to economic activity affecting business and public stakeholders.
 
-The scenario (a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours) supports that classification.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.', 'Government stakeholder role includes regulation affecting business logistics.
 
-The statement is true.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
+Applied carefully, "Regulators may set transport standards affecting firms that depend on road networks" lines up with the textbook idea without adding an extra restriction.
 
-Owners typically seek profit and bear business risk.
+The statement is true.', 'Infrastructure links government investment to business activity.
 
-In the case setting — a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours — that reading fits the facts given.
+Applied carefully, "Roads built for public use also support business logistics and distributor operations" lines up with the textbook idea without adding an extra restriction.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.'] WHERE case_id = 'CASE 3.6.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Environment is treated as a stakeholder expecting action and reporting.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital. Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Multiple groups affected by the bakery fit the stakeholder definition.
+The statement is false.', 'Environment is a stakeholder expecting genuine action and reporting.
 
-In the case setting — a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours — that reading fits the facts given.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.', 'Real action, not slogans, is required on environmental issues.
 
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Stakeholders include staff, suppliers, customers, and neighbours too.
+The statement is false.', 'Environment is a stakeholder expecting action and reporting.
 
-Against the scenario (a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours), the claim attaches the wrong label.
+Applied carefully, "Environmental stakeholder theory treats nature as a party expecting action and reporting" lines up with the textbook idea without adding an extra restriction.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Reporting communicates impacts to environment-focused stakeholders.
 
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Suppliers expect payment and orders without needing ownership.
+The statement is false.'] WHERE case_id = 'CASE 3.6.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Legal and financial structure are success factors affecting stakeholders.
 
-The scenario (a neighbourhood bakery, which affects owners, staff, suppliers, and neighbours) supports that classification.
+Applied carefully, "Legal and financial structure shapes how well a firm can meet stakeholder expectations" lines up with the textbook idea without adding an extra restriction.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Market awareness helps meet customer and competitive pressures.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Employees are stakeholders through income, security, and identification.
+The statement is false.', 'Costs and profitability connect to owner and employee outcomes.
 
-In the case setting — a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries — that reading fits the facts given.
+Applied carefully, "Cost control and profitability influence wages, orders, and returns for stakeholder groups" lines up with the textbook idea without adding an extra restriction.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Market awareness supports meeting customer and competitive pressures.
 
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
+Applied carefully, "Understanding market trends helps firms respond to customer and competitive pressures" lines up with the textbook idea without adding an extra restriction.
 
-Government is a stakeholder via regulation, tax, and policy.
+The statement is true.', 'Legal structure is listed among success factors affecting performance.
 
-The scenario (a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries) supports that classification.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Communities are affected by business activity and count as stakeholders.
-
-In the case setting — a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Large multinationals have broad stakeholder groups.
-
-In the case setting — a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Stakeholders include employees, suppliers, communities, and regulators too.
-
-In the case setting — a components manufacturer that affects owners, employees, suppliers, communities, and regulators in many countries — the sentence mislabels the category or overreaches.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Greenwash misleads stakeholders and undermines trust when uncovered.
-
-In the case setting — a firm that advertises eco-friendly packaging while increasing pollution — the sentence mislabels the category or overreaches.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Real action, not slogans, is required on environmental issues.
-
-The scenario (a firm that advertises eco-friendly packaging while increasing pollution) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Genuine action is required, not greenwash slogans alone.
-
-Against the scenario (a firm that advertises eco-friendly packaging while increasing pollution), the claim attaches the wrong label.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Greenwash means exaggerated claims without real action.
-
-The scenario (a firm that advertises eco-friendly packaging while increasing pollution) supports that classification.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Misleading green claims without real action exemplify greenwash.
-
-In the case setting — a firm that advertises eco-friendly packaging while increasing pollution — that reading fits the facts given.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Cash-flow pressure from delayed payment affects suppliers as stakeholders.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Payment timing affects supplier stakeholders directly.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Fair payment terms reflect how the buyer treats supplier stakeholders.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Timely payment is a core supplier stakeholder interest.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Supplier fairness concerns extend beyond narrow legal formalities.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Alignment of values supports cooperation on business goals.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Shared values link employees with organisational performance.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Value alignment can improve day-to-day cooperation at work.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Identification with firm success is an employee stakeholder theme.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Shared values support mutual dependence and identification themes.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
-
-Owners may want share or business value to increase.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
-
-Value growth links to owner risk and reward.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
-
-Reinvestment versus payout shapes owner value interests.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
-
-Reinvestment choices shape owner value interests.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Owners seek profit as reward for organising the venture and bear financial risk when revenue falls short of costs. Risk and reward are linked for providers of capital.
-
-Reinvestment choices shape owner value interests.
-
-Those restricting words stretch a limited idea past what the definition allows.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Mutual dependency gives customers influence when they can switch.
-
-Against the scenario (customers may switch suppliers if quality falls), the claim attaches the wrong label.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Customers depend on firms for product quality and availability.
-
-Against the scenario (customers may switch suppliers if quality falls), the claim attaches the wrong label.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Poor performance can drive customers to switch suppliers.
-
-The scenario (customers may switch suppliers if quality falls) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Customers can influence firms through switching or boycotts.
-
-In the case setting — customers may switch suppliers if quality falls — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Even small-quantity buyers can switch when quality or service disappoints.
-
-Against the scenario (customers may switch suppliers if quality falls), the claim attaches the wrong label.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Community interests are affected when a major local employer closes.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Communities are affected by business activity and count as stakeholders.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Residents with family members at the plant hold a community stake in its future.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Local spending and jobs link community welfare to the firm''s continued operation.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Local employment ties community interests to firm outcomes.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Government affects and is affected by business as a stakeholder.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Fiscal links connect government and business stakeholder interests.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Infrastructure links to economic activity affecting business and public stakeholders.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Government stakeholder role includes regulation affecting business logistics.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Infrastructure links government investment to business activity.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-'] WHERE case_id = 'CASE 3.6.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Environment is treated as a stakeholder expecting action and reporting.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Environment is a stakeholder expecting genuine action and reporting.
-
-Those restricting words stretch a limited idea past what the definition allows.
-
-The statement is false.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Real action, not slogans, is required on environmental issues.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Environment is a stakeholder expecting action and reporting.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Reporting communicates impacts to environment-focused stakeholders.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Legal and financial structure are success factors affecting stakeholders.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Market awareness helps meet customer and competitive pressures.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status. Managers and employees are stakeholders because pay, promotion, and job security depend on the firm''s continued success. Receiving wages does not end that interest.
-
-Costs and profitability connect to owner and employee outcomes.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Stakeholders are parties affected by or interested in the business, broader than shareholders alone.
-
-Market awareness supports meeting customer and competitive pressures.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Stakeholders are anyone affected by or interested in the firm — customers, suppliers, employees, managers, owners, communities — not voting shareholders alone. Payment or lack of shares does not remove stakeholder status.
-
-Legal structure is listed among success factors affecting performance.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.6.50' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 3.6.50' AND tier = 'full';

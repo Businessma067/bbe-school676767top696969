@@ -50,7 +50,7 @@ function blockToMd(b) {
     if (text.toLowerCase().startsWith(term.toLowerCase())) {
       return `**${term}**${text.slice(term.length)}\n`;
     }
-    return `**${term}** — ${text}\n`;
+    return `**${term}**. ${text}\n`;
   }
   if (t === "formula") {
     const label = mdInline(b.label || "");
@@ -79,7 +79,7 @@ function blockToMd(b) {
     const id = mdInline(b.id || "");
     const caption = mdInline(b.caption || "").replace(/^(Figure|Table)\s*\d*\s*[.:—-]?\s*/i, "");
     if (!id) return caption ? `*${caption}*\n` : "";
-    // Live site figure marker — TheoryReader renders React/SVG (not PNG)
+    // Live site figure marker: TheoryReader renders React/SVG (not PNG)
     return `[[FIGURE:${id}|${caption || id}]]\n`;
   }
   if (t === "bullets" || t === "takeaways") {
@@ -113,7 +113,7 @@ function blockToMd(b) {
 
 function chapterToMd(ch) {
   const parts = [];
-  parts.push(`# Chapter ${ch.num} — ${ch.title}\n`);
+  parts.push(`# Chapter ${ch.num}: ${ch.title}\n`);
   if (ch.intro) parts.push(`${mdInline(ch.intro)}\n`);
   if (ch.objectives?.length) {
     parts.push(`## Learning objectives\n`);

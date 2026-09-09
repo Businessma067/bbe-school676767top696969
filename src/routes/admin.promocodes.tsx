@@ -71,9 +71,9 @@ function AdminPromocodesPage() {
           <p className="text-xs text-destructive/80">
             Open Supabase → SQL Editor, paste{" "}
             <code className="rounded bg-destructive/10 px-1">
-              supabase/migrations/20260907180000_discount_promocodes.sql
-            </code>
-            , run it, then refresh this page.
+              supabase/migrations/20260908121000_promocodes_bootstrap_30_full.sql
+            </code>{" "}
+            (creates tables + 30% Full codes). Run that full file — not a bare INSERT — then refresh this page.
           </p>
         </div>
       ) : null}
@@ -85,7 +85,7 @@ function AdminPromocodesPage() {
         <StatCard
           label="Active discounts"
           value={loading ? "…" : activeDiscounts}
-          hint="15% multi-use codes"
+          hint="Multi-use % off codes"
         />
       </div>
 

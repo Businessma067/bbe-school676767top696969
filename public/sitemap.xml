@@ -58,6 +58,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-admission"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/bbe-vs-wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -88,6 +96,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/terms"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/terms"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/privacy</loc>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/privacy"/>
   </url>
   <url>
     <loc>https://bbe-school.com/products</loc>
@@ -250,6 +266,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-admission"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/de/bbe-vs-wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/de/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -280,6 +304,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/terms"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/terms"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/privacy</loc>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/privacy"/>
   </url>
   <url>
     <loc>https://bbe-school.com/de/products</loc>
@@ -378,6 +410,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-admission"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/uk/bbe-vs-wiso</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/uk/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -408,6 +448,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/terms"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/terms"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/privacy</loc>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/privacy"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/products</loc>

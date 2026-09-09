@@ -2,6 +2,7 @@ import { generatedDe, generatedUk } from "./generated";
 import { extraDe, extraUk } from "./extra";
 import { uiExtraDe, uiExtraUk } from "./ui-extra";
 import { featuresExtraDe, featuresExtraUk } from "./features-extra";
+import { bbeVsWisoExtraDe, bbeVsWisoExtraUk } from "./bbe-vs-wiso-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -86,11 +87,25 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Explore English": "Englisch entdecken",
     "Full-length exam simulations": "Vollständige Prüfungssimulationen",
     "Build a mock around your weak spots": "Baue eine Probeprüfung um deine Schwachstellen",
-    "Flashcards, matching, and drills": "Karteikarten, Matching und Drills",
-    "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.":
-      "Diese Tour folgt als Nächstes. Unter Kurs siehst du, wie sich Wirtschaft, Mathematik und Englisch in der Praxis anfühlen.",
-    "Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.":
-      "Die Tour folgt als Nächstes. Wechsle zurück zu Kurs, um Wirtschaft, Mathematik und Englisch zu sehen.",
+    "This walkthrough is next. Use Course or Study tools to see how practice actually feels.":
+      "Diese Tour folgt als Nächstes. Unter Kurs oder Lernwerkzeuge siehst du, wie sich die Praxis anfühlt.",
+    "Walkthrough coming next. Switch to Course or Study tools to watch the demos.":
+      "Die Tour folgt als Nächstes. Wechsle zu Kurs oder Lernwerkzeuge, um die Demos zu sehen.",
+    Flashcards: "Karteikarten",
+    Matching: "Matching",
+    "Tutor Exam": "Tutor-Prüfung",
+    "Flip cards for terms and formulas": "Wendekarten für Begriffe und Formeln",
+    "Drill Economics definitions, Math formulas, and English vocabulary. Flip each card, rate how well you know it, and build recall before the exam.":
+      "Übe Wirtschaftsdefinitionen, Mathematikformeln und Englisch-Vokabeln. Drehe jede Karte, bewerte dein Wissen und baue Abruf vor der Prüfung auf.",
+    "Open Flashcards": "Karteikarten öffnen",
+    "Connect concepts to the right meaning": "Begriffe mit der richtigen Bedeutung verbinden",
+    "Pair each term with its definition in a timed matching board. Same decks as the flashcards — a different way to lock the links in.":
+      "Ordne jeden Begriff seiner Definition auf einem timed Matching-Board zu. Dieselben Decks wie die Karteikarten — ein anderer Weg, die Verbindungen zu festigen.",
+    "Open Matching": "Matching öffnen",
+    "A random theoretical quiz with a tutor": "Ein zufälliges Theorie-Quiz mit Tutor",
+    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.":
+      "Der Tutor-Roboter wählt bei jedem Durchlauf neue Fragen. Antworte, erhalte sofort Feedback und übe Theorie, bis sie automatisch sitzt.",
+    "Open Tutor Exam": "Tutor-Prüfung öffnen",
 
     // Products
     "Demo-Practice Package": "Demo-Übungspaket",
@@ -239,11 +254,25 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Explore English": "До англійської",
     "Full-length exam simulations": "Повноформатні симуляції іспиту",
     "Build a mock around your weak spots": "Збери пробний іспит під свої слабкі місця",
-    "Flashcards, matching, and drills": "Картки, matching і тренування",
-    "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.":
-      "Цей огляд буде наступним. У вкладці Курс видно, як насправді виглядає практика з економіки, математики та англійської.",
-    "Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.":
-      "Огляд буде наступним. Повернись до Курсу, щоб подивитись економіку, математику та англійську.",
+    "This walkthrough is next. Use Course or Study tools to see how practice actually feels.":
+      "Цей огляд буде наступним. У вкладках Курс або Навчальні інструменти видно, як виглядає практика.",
+    "Walkthrough coming next. Switch to Course or Study tools to watch the demos.":
+      "Огляд буде наступним. Перейди до Курсу або Навчальних інструментів, щоб подивитись демо.",
+    Flashcards: "Картки",
+    Matching: "Matching",
+    "Tutor Exam": "Tutor Exam",
+    "Flip cards for terms and formulas": "Картки для термінів і формул",
+    "Drill Economics definitions, Math formulas, and English vocabulary. Flip each card, rate how well you know it, and build recall before the exam.":
+      "Тренуй визначення з економіки, формули з математики та англійську лексику. Перевертай картку, оцінюй знання й зміцнюй пригадування до іспиту.",
+    "Open Flashcards": "Відкрити картки",
+    "Connect concepts to the right meaning": "З’єднай поняття з правильним значенням",
+    "Pair each term with its definition in a timed matching board. Same decks as the flashcards — a different way to lock the links in.":
+      "Зістав кожен термін із визначенням на timed matching-дошці. Ті самі колоди, що й у картках — інший спосіб закріпити зв’язки.",
+    "Open Matching": "Відкрити Matching",
+    "A random theoretical quiz with a tutor": "Випадковий теоретичний квіз із тьютором",
+    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.":
+      "Робот-тьютор щоразу обирає нові питання. Відповідай, отримуй миттєвий фідбек і тренуй теорію, доки вона не стане автоматичною.",
+    "Open Tutor Exam": "Відкрити Tutor Exam",
 
     // Products
     "Demo-Practice Package": "Пакет демо-практики",
@@ -326,8 +355,22 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
 /** Hand-written entries win over auto-generated page copy. */
 export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
-  de: { ...generatedDe, ...extraDe, ...uiExtraDe, ...featuresExtraDe, ...baseDictionary.de },
-  uk: { ...generatedUk, ...extraUk, ...uiExtraUk, ...featuresExtraUk, ...baseDictionary.uk },
+  de: {
+    ...generatedDe,
+    ...extraDe,
+    ...uiExtraDe,
+    ...featuresExtraDe,
+    ...bbeVsWisoExtraDe,
+    ...baseDictionary.de,
+  },
+  uk: {
+    ...generatedUk,
+    ...extraUk,
+    ...uiExtraUk,
+    ...featuresExtraUk,
+    ...bbeVsWisoExtraUk,
+    ...baseDictionary.uk,
+  },
 };
 
 /** Same tables keyed by whitespace-collapsed text, for multi-line JSX nodes. */

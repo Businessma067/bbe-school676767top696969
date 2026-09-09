@@ -343,13 +343,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe patron total translates directly into a count equation. With $x$ for 3D tickets and $y$ for standard tickets,\n\n$$x + y = 180$$\n\nThe overview already recorded that as equation (1). Matching the claim.\n\nSo the statement is True.",
         "**B.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nRevenue at the two fixed prices translates into\n\n$$16x + 11y = 2430$$\n\nThe overview already recorded that as equation (2). Matching the claim.\n\nSo the statement is True.",
-        "**C.** → False\n\nRead the figure already produced by the shared solve, then compare it with the claim.\n\nThe overview recovered $x = 90$ 3D tickets. The claim says $99$. Comparing,\n\n$$90 \\ne 99$$\n\nso the ticket count does not match.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe overview recovered $x = 90$ 3D tickets. The claim says $99$. Comparing,\n\n$$90 \\ne 99$$\n\nso the ticket count does not match.\n\nSo the statement is False.",
         "**D.** → False\n\nThe gap between the two recovered unknowns is their difference:\n\n$$\nd = x - y\n$$\n\nUsing the recovered solution values $x = 90$ and $y = 90$ as inputs for this claim:\n\nTheir difference is\n\n$$\nx - y = 90 - 90 = 0\n$$\n\nThe claim says the counts differ by $10$. We have $0 \\ne 10$.\n\nThe shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\n3D revenue uses the recovered count:\n\n$$\n16 \\times 90 = 1{,}440\n$$\n\nThe claim asserts\n\n$$1600.$$\n\n The gap is \\$160.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 71,
-      "solution_overview": "At a cinema gala, 180 patrons each bought one ticket. A 3D ticket costs \\$16 and a standard ticket costs \\$11. The box office recorded \\$2{,}430.\n\nLet $x$ = number of 3D tickets and $y$ = number of standard tickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultiply (1) by $11$ and subtract from (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y\n$$\n\n$$\n= 90\n$$\n\n3D revenue is $16 \\times 90 = 1{,}440$, and standard revenue is $11 \\times 90 = 990$.",
+      "solution_overview": "At a cinema gala, 180 patrons each bought one ticket. A 3D ticket costs \\$16 and a standard ticket costs \\$11. The box office recorded \\$2{,}430.\n\nLet $x$ = number of 3D tickets and $y$ = number of standard tickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultiply (1) by $11$ and subtract from (2):\n\n$$5x = 450$$\n\n$$\nx = 90,\\qquad y = 90\n$$\n\n3D revenue is $16 \\times 90 = 1{,}440$, and standard revenue is $11 \\times 90 = 990$.",
       "placeholder": false
     },
     {
@@ -376,12 +376,12 @@
         "**A.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nTotal volume is the sum of the two source amounts:\n\n$$x + y = 70$$\n\nThe overview already recorded that volume equation. Matching the claim.\n\nSo the statement is True.",
         "**B.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nUse the recovered values from the overview for this claim-specific check.\n\nMango content, written in percentage points, gives\n\n$$\n35x + 10y = 25 \\times 70 = 1750\n$$\n\nThe overview already recorded that mango equation. Matching the claim.\n\nSo the statement is True.",
         "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 70$$\n\n$$\n35x + 10y = 25 \\times 70 = 1750\n$$\n\n$$25x = 1050$$\n\n$$x = 42$$\n\n$$\ny = 28\n$$\n\nThe recovered value is\n\n$$x = 42$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
-        "**D.** → False\n\nRead the figure already produced by the shared solve, then compare it with the claim.\n\nThe overview recovered $y = 28$ liters of the weaker drink. The claim asserts\n\n$$30$$\n\nComparing,\n\n$$28 \\ne 30.$$\n\nSo the statement is False.",
+        "**D.** → False\n\nThe overview recovered $y = 28$ liters of the weaker drink. The claim asserts\n\n$$30$$\n\nComparing,\n\n$$28 \\ne 30.$$\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered pair from the overview; this letter only tests the named comparison.\n\nThe recovered source volumes are $x = 42$ and $y = 28$. Equality would require $x = y$. Here\n\n$$42 \\ne 28.$$\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 72,
-      "solution_overview": "A juice bar prepares 70 liters from a $35\\%$ mango drink and a $10\\%$ mango drink so the blend is $25\\%$ mango.\n\nLet $x$ = liters of the stronger drink and $y$ = liters of the weaker drink.\n\n$$x + y = 70 \\tag{1}$$\n\n$$\n35x + 10y = 25 \\times 70\n$$\n\n$$\n= 1750 \\tag{2}\n$$\n\nMultiply (1) by $10$ and subtract from (2):\n\n$$25x = 1050$$\n\n$$\nx = 42,\\qquad y\n$$\n\n$$\n= 28\n$$",
+      "solution_overview": "A juice bar prepares 70 liters from a $35\\%$ mango drink and a $10\\%$ mango drink so the blend is $25\\%$ mango.\n\nLet $x$ = liters of the stronger drink and $y$ = liters of the weaker drink.\n\n$$x + y = 70 \\tag{1}$$\n\n$$\n35x + 10y = 25 \\times 70 = 1750 \\tag{2}\n$$\n\nMultiply (1) by $10$ and subtract from (2):\n\n$$25x = 1050$$\n\n$$\nx = 42,\\qquad y = 28\n$$",
       "placeholder": false
     },
     {
@@ -413,7 +413,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 73,
-      "solution_overview": "A two-digit room code plus its digit reversal equals $121$, and the tens digit is $3$ greater than the units digit.\n\nLet $x$ = tens digit and $y$ = units digit. The code is $10x+y$ and the reversal is $10y+x$, so\n\n$$(10x+y)+(10y+x) = 121$$\n\n$$11x + 11y = 121$$\n\n$$x + y = 11 \\tag{1}$$\n\n$$x - y = 3 \\tag{2}$$\n\nAdding (1) and (2):\n\n$$2x = 14$$\n\n$$\nx = 7,\\qquad y\n$$\n\n$$\n= 4\n$$\n\nThe original code is $74$ and the reversal is $47$.",
+      "solution_overview": "A two-digit room code plus its digit reversal equals $121$, and the tens digit is $3$ greater than the units digit.\n\nLet $x$ = tens digit and $y$ = units digit. The code is $10x+y$ and the reversal is $10y+x$, so\n\n$$(10x+y)+(10y+x) = 121$$\n\n$$11x + 11y = 121$$\n\n$$x + y = 11 \\tag{1}$$\n\n$$x - y = 3 \\tag{2}$$\n\nAdding (1) and (2):\n\n$$2x = 14$$\n\n$$\nx = 7,\\qquad y = 4\n$$\n\nThe original code is $74$ and the reversal is $47$.",
       "placeholder": false
     },
     {
@@ -439,13 +439,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nCombined production and the stated gap translate into\n\n$$x + y = 108$$\n\n$$x - y = 12$$\n\nThe overview already recorded both equations. Matching the claim.\n\nSo the statement is True.",
         "**B.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 108$$\n\n$$x - y = 12$$\n\n$$2x = 120$$\n\n$$x = 60$$\n\n$$\ny = 48\n$$\n\nThe recovered value is\n\n$$x = 60$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
-        "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 108$$\n\n$$x - y = 12$$\n\n$$2x = 120$$\n\n$$x = 60$$\n\n$$\ny = 48\n$$\n\nThe recovered value is\n\n$$y = 48$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 108$$\n\n$$x - y = 12$$\n\n$$2x = 120$$\n\n$$x = 60$$\n\n$$\ny = 48\n$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nUse the recovered pair from the overview; this letter only tests the named comparison.\n\nThe recovered rate ratio is\n\n$$\n\\frac{x}{y} = \\frac{60}{48} = 1.25\n$$\n\nTwice as fast would mean ratio $2$. We have $1.25 \\ne 2$.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\nRobot Y's two-hour output uses the recovered rate:\n\n$$\n2 \\times 48 = 96\n$$\n\nThe claim asserts\n\n$$108$$\n\nComparing,\n\n$$96 \\ne 108.$$\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 74,
-      "solution_overview": "Two robots produce $108$ housings per hour together, and robot X produces $12$ more per hour than robot Y.\n\nLet $x$ and $y$ be the hourly rates of X and Y.\n\n$$x + y = 108 \\tag{1}$$\n\n$$x - y = 12 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 120$$\n\n$$\nx = 60,\\qquad y\n$$\n\n$$\n= 48\n$$\n\nThe rate ratio is $60/48 = 1.25$, and robot Y's two-hour output is $2 \\times 48 = 96$.",
+      "solution_overview": "Two robots produce $108$ housings per hour together, and robot X produces $12$ more per hour than robot Y.\n\nLet $x$ and $y$ be the hourly rates of X and Y.\n\n$$x + y = 108 \\tag{1}$$\n\n$$x - y = 12 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 120$$\n\n$$\nx = 60,\\qquad y = 48\n$$\n\nThe rate ratio is $60/48 = 1.25$, and robot Y's two-hour output is $2 \\times 48 = 96$.",
       "placeholder": false
     },
     {
@@ -503,13 +503,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nPass counts and register total translate into\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\nThe overview already recorded both sales equations. Matching the claim.\n\nSo the statement is True.",
         "**B.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nThe recovered value is\n\n$$x = 60$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
-        "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nThe recovered value is\n\n$$y = 100$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\n$$9x = 540$$\n\n$$x = 60$$\n\n$$\ny = 100\n$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nExpress-pass revenue uses the recovered count:\n\n$$\n21 \\times 60 = 1{,}260\n$$\n\nThe claim asserts\n\n$$1200.$$\n\n Comparing,\n\n$$1{,}260 \\ne 1{,}200.$$\n\nSo the statement is False.",
         "**E.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nExpress revenue is \\$1{,}260 and local revenue is \\$1{,}200:\n\n$$\n1{,}260 - 1{,}200 = 60\n$$\n\nLocal revenue is \\$60 lower, not higher. The claim says local exceeded express.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 76,
-      "solution_overview": "An airport kiosk issued $160$ transit passes. Express passes cost \\$21 and local passes cost \\$12, for a register total of \\$2{,}460.\n\nLet $x$ = express passes and $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultiply (1) by $12$ and subtract from (2):\n\n$$9x = 540$$\n\n$$\nx = 60,\\qquad y\n$$\n\n$$\n= 100\n$$\n\nExpress revenue is $21 \\times 60 = 1{,}260$, and local revenue is $12 \\times 100 = 1{,}200$.",
+      "solution_overview": "An airport kiosk issued $160$ transit passes. Express passes cost \\$21 and local passes cost \\$12, for a register total of \\$2{,}460.\n\nLet $x$ = express passes and $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultiply (1) by $12$ and subtract from (2):\n\n$$9x = 540$$\n\n$$\nx = 60,\\qquad y = 100\n$$\n\nExpress revenue is $21 \\times 60 = 1{,}260$, and local revenue is $12 \\times 100 = 1{,}200$.",
       "placeholder": false
     },
     {
@@ -537,11 +537,11 @@
         "**B.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe stem's total cost is \\$1{,}140, so the cost equation is\n\n$$30x + 18y = 1140$$\n\nThe claim writes right-hand side $1150$. Comparing,\n\n$$1140 \\ne 1150.$$\n\nSo the statement is False.",
         "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 50$$\n\n$$30x + 18y = 1140$$\n\n$$12x = 240$$\n\n$$x = 20$$\n\n$$\ny = 30\n$$\n\nThe recovered value is\n\n$$x = 20$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nPremium tea's cost contribution is\n\n$$\n30 \\times 20 = 600\n$$\n\nThe claim asserts\n\n$$780.$$\n\n Comparing,\n\n$$600 \\ne 780.$$\n\nSo the statement is False.",
-        "**E.** → False\n\nRead the figure already produced by the shared solve, then compare it with the claim.\n\nThe overview recovered $y = 30$ kg of standard tea. The claim asserts\n\n$$32$$\n\nComparing,\n\n$$30 \\ne 32.$$\n\nSo the statement is False."
+        "**E.** → False\n\nThe overview recovered $y = 30$ kg of standard tea. The claim asserts\n\n$$32$$\n\nComparing,\n\n$$30 \\ne 32.$$\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 77,
-      "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg with standard tea at \\$18/kg so the total cost is \\$1{,}140.\n\nLet $x$ = kg of premium and $y$ = kg of standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultiply (1) by $18$ and subtract from (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y\n$$\n\n$$\n= 30\n$$\n\nPremium cost is $30 \\times 20 = 600$.",
+      "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg with standard tea at \\$18/kg so the total cost is \\$1{,}140.\n\nLet $x$ = kg of premium and $y$ = kg of standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultiply (1) by $18$ and subtract from (2):\n\n$$12x = 240$$\n\n$$\nx = 20,\\qquad y = 30\n$$\n\nPremium cost is $30 \\times 20 = 600$.",
       "placeholder": false
     },
     {
@@ -569,11 +569,11 @@
         "**B.** → True\n\nElimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:\n\n$$\nx = 8\n$$\n\nThe computed value is approximately 8, which matches the claim.\n\nThe shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.\n\nEach display isolates one step so the comparison with the claim is unambiguous.\n\nSo the statement is True.",
         "**C.** → False\n\nRead the recovered unknown from the shared solve, then compare it with the claim:\n\n$$\ny = 3\n$$\n\nCompare the computed value with the claim (the units digit is $4$). Comparing those figures:\n\n$$\n3 \\ne 4\n$$\n\nThe two sides do not agree.\n\nSo the statement is False.",
         "**D.** → True\n\nFor this claim, start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nWith $x = 8$ and $y = 3$, the badge number is\n\n$$\n10x + y = 80 + 3 = 83\n$$\n\nThe claim asserts\n\n$$83$$\n\nThe displayed comparison settles the claim.\n\nSo the statement is True.",
-        "**E.** → False\n\nNext, start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe reversed badge is $38$. Compared with the original $83$,\n\n$$\n83 - 38 = 45\n$$\n\nso the reversal is $45$ smaller, not $38$ greater. So the statement is false.\n\nSo the statement is False."
+        "**E.** → False\n\nNext, start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe reversed badge is $38$. Compared with the original $83$,\n\n$$\n83 - 38 = 45\n$$\n\nso the reversal is $45$ smaller, not $38$ greater. So the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 78,
-      "solution_overview": "A two-digit badge number satisfies $4x - y = 29$ and $2x + y = 19$, where $x$ is the tens digit and $y$ is the units digit.\n\nAdding the two equations eliminates $y$:\n\n$$6x = 48$$\n\n$$x = 8$$\n\nFrom $2x + y = 19$,\n\n$$\ny = 19 - 16\n$$\n\n$$\n= 3\n$$\n\nThe badge is $83$. The reversal is $38$, and\n\n$$83 - 38 = 45$$\n\nso the reversal is $45$ less than the original, not $38$ greater.",
+      "solution_overview": "A two-digit badge number satisfies $4x - y = 29$ and $2x + y = 19$, where $x$ is the tens digit and $y$ is the units digit.\n\nAdding the two equations eliminates $y$:\n\n$$6x = 48$$\n\n$$x = 8$$\n\nFrom $2x + y = 19$,\n\n$$\ny = 19 - 16 = 3\n$$\n\nThe badge is $83$. The reversal is $38$, and\n\n$$83 - 38 = 45$$\n\nso the reversal is $45$ less than the original, not $38$ greater.",
       "placeholder": false
     },
     {
@@ -599,13 +599,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the stem wording into the matching linear equation, then confirm it is the same relation already tagged in the overview.\n\nUse the recovered values from the overview for this claim-specific check.\n\nDownstream and upstream speeds translate into\n\n$$x + y = 25$$\n\n$$x - y = 17$$\n\nThe overview already recorded both speed equations. Matching the claim.\n\nSo the statement is True.",
         "**B.** → False\n\nUse the recovered pair from the overview; this letter only tests the named comparison.\n\nThe overview recovered still-water speed $x = 21$. The claim asserts\n\n$$22$$\n\nComparing,\n\n$$21 \\ne 22.$$\n\nSo the statement is False.",
-        "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 25$$\n\n$$x - y = 17$$\n\n$$2x = 42$$\n\n$$x = 21$$\n\n$$\ny = 4\n$$\n\nThe recovered value is\n\n$$y = 4$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$x + y = 25$$\n\n$$x - y = 17$$\n\n$$2x = 42$$\n\n$$x = 21$$\n\n$$\ny = 4\n$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nRead the recovered unknown from the shared solve, then compare it with the claim:\n\n$$\ny = 4\n$$\n\nCompare the computed value with the claim (the tide speed is $6$). Comparing those figures:\n\n$$\n4 \\ne 6\n$$\n\nThe two sides do not agree.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\nUpstream speed is $x - y = 17$, so three hours cover\n\n$$\n3 \\times 17 = 51\n$$\n\nThe claim asserts\n\n$$54$$\n\nComparing,\n\n$$51 \\ne 54.$$\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 79,
-      "solution_overview": "A boat travels downstream at $25$ knots and upstream at $17$ knots against the same tide.\n\nLet $x$ = still-water speed and $y$ = tide speed.\n\n$$x + y = 25 \\tag{1}$$\n\n$$x - y = 17 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 42$$\n\n$$\nx = 21,\\qquad y\n$$\n\n$$\n= 4\n$$\n\nThree upstream hours cover $3(x-y) = 3 \\times 17 = 51$ nautical miles.",
+      "solution_overview": "A boat travels downstream at $25$ knots and upstream at $17$ knots against the same tide.\n\nLet $x$ = still-water speed and $y$ = tide speed.\n\n$$x + y = 25 \\tag{1}$$\n\n$$x - y = 17 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 42$$\n\n$$\nx = 21,\\qquad y = 4\n$$\n\nThree upstream hours cover $3(x-y) = 3 \\times 17 = 51$ nautical miles.",
       "placeholder": false
     },
     {
@@ -630,14 +630,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nThe overview's elimination step produces\n\n$$7y = 119$$\n\nbefore solving for $y$. Matching the claim.\n\nThe displayed comparison settles the claim.\n\nSo the statement is True.",
-        "**B.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$4x + 3y = 123$$\n\n$$2x + 5y = 121$$\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$y = 17$$\n\n$$\nx = 18\n$$\n\nThe recovered value is\n\n$$x = 18$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$4x + 3y = 123$$\n\n$$2x + 5y = 121$$\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$y = 17$$\n\n$$\nx = 18\n$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**C.** → True\n\nSolve the overview system, keeping every algebraic move in its own display.\n\n$$4x + 3y = 123$$\n\n$$2x + 5y = 121$$\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$y = 17$$\n\n$$\nx = 18\n$$\n\nThe recovered value is\n\n$$y = 17$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nStart from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.\n\nTotal baskets are\n\n$$\nx + y = 18 + 17 = 35\n$$\n\nThe claim asserts\n\n$$36$$\n\nComparing,\n\n$$35 \\ne 36.$$\n\nThe displayed comparison settles the claim against the stated figure.\n\nSo the statement is False.",
         "**E.** → False\n\nUse the recovered values from the overview for this claim-specific check.\n\nCod baskets use $4$ units each of the first resource:\n\n$$\n4 \\times 18 = 72\n$$\n\nThe claim asserts\n\n$$70$$\n\nComparing,\n\n$$72 \\ne 70.$$\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 80,
-      "solution_overview": "A packing shift uses resources\n\n$$4x + 3y = 123 \\tag{1}$$\n\n$$2x + 5y = 121 \\tag{2}$$\n\nwhere $x$ counts cod baskets and $y$ counts salmon baskets.\n\nEliminate $x$: multiply (2) by $2$ and subtract from (1),\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$\ny = 17,\\qquad x\n$$\n\n$$\n= 18\n$$\n\nTotal baskets: $18 + 17 = 35$. Cod's first-resource use: $4 \\times 18 = 72$.",
+      "solution_overview": "A packing shift uses resources\n\n$$4x + 3y = 123 \\tag{1}$$\n\n$$2x + 5y = 121 \\tag{2}$$\n\nwhere $x$ counts cod baskets and $y$ counts salmon baskets.\n\nEliminate $x$: multiply (2) by $2$ and subtract from (1),\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$\ny = 17,\\qquad x = 18\n$$\n\nTotal baskets: $18 + 17 = 35$. Cod's first-resource use: $4 \\times 18 = 72$.",
       "placeholder": false
     }
   ]

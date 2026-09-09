@@ -88,7 +88,7 @@
         "**A.** → True\n\nA conjunction fails precisely when at least one conjunct fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv \\neg p\\vee \\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)$$\n\nThis is De Morgan's law for conjunction.\n\nSo the statement is True.",
         "**B.** → True\n\nSuccessor difference:\n\n$$m=n+1$$\n\n$$m-n=(n+1)-n$$\n\n$$(n+1)-n=1$$\n\nSo the statement is True.",
         "**C.** → False\n\nRepeated roster entries do not create new elements of a set. Collapse duplicates first:\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\nOrder is irrelevant as well:\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\nCardinality then counts distinct members only:\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2$$\n\n$$2\\neq 3$$\n\nThe equality of rosters is correct, but the claimed cardinality $3$ is not.\n\nSo the statement is False.",
-        "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$\n|A\\setminus B| = 18-5 = 13\n$$\n\n$$\n|B\\setminus A| = 14-5 = 9\n$$\n\n$$\n|A\\triangle B| = 13+9 = 22\\ne23\n$$\n\nThe symmetric difference has size $22$,\n\nSo the statement is False.",
+        "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$\n|A\\setminus B| = 18-5 = 13\n$$\n\n$$\n|B\\setminus A| = 14-5 = 9\n$$\n\n$$\n|A\\triangle B| = 13+9 = 22\\ne23\n$$\n\nThe symmetric difference has size $22$.\n\nSo the statement is False.",
         "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p = T\\Longrightarrow p = T$$\n\n$$p = T\\ \\text{and}\\ p\\rightarrow q = T\\Longrightarrow q = T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -149,8 +149,8 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions,\n\nSo the statement is False.",
-        "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$\n|R\\setminus F| = 30-9 = 21\\ne19\n$$\n\nThere are $21$ red nonfragrant plants,\n\nSo the statement is False.",
+        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions.\n\nSo the statement is False.",
+        "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$\n|R\\setminus F| = 30-9 = 21\\ne19\n$$\n\nThere are $21$ red nonfragrant plants.\n\nSo the statement is False.",
         "**C.** → True\n\nA conjunction fails precisely when at least one conjunct fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv \\neg p\\vee \\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)$$\n\nThis is De Morgan's law for conjunction.\n\nSo the statement is True.",
         "**D.** → True\n\nFollowing one arbitrary novelist through the two premises forces the negated property. The premises are\n\n$$\\forall x\\,(N(x)\\rightarrow O(x))$$\n\n$$\\forall x\\,(O(x)\\rightarrow\\neg C(x))$$\n\nFix any $a$ with $N(a)$. Then\n\n$$N(a)\\Longrightarrow O(a)\\Longrightarrow\\neg C(a)$$\n\nso every novelist fails $C$. The universal conclusion follows.\n\nSo the statement is True.",
         "**E.** → True\n\nThe empty set can be listed as an element and is also a subset of every set. Membership:\n\n$$\\emptyset\\in\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\nSubsethood is vacuous:\n\n$$\\forall z\\,(z\\in\\emptyset\\Longrightarrow z\\in E)$$\n\n$$\\emptyset\\subseteq E$$\n\nBoth uses of the empty set are valid.\n\nSo the statement is True."
@@ -181,10 +181,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
+        "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct.\n\nSo the statement is True.",
         "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q) = (T,T)\\Longrightarrow p\\wedge q = T$$\n\n$$(p,q) = (F,F)\\Longrightarrow\\neg p\\wedge\\neg q = T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows.\n\nSo the statement is True.",
-        "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$\nV(\\mathrm{Lee}) = F,\\quad M(\\mathrm{Lee}) = T\n$$\n\nThe last line is a countermodel to the conclusion,\n\nSo the statement is False.",
-        "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible,\n\nSo the statement is False.",
+        "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$\nV(\\mathrm{Lee}) = F,\\quad M(\\mathrm{Lee}) = T\n$$\n\nThe last line is a countermodel to the conclusion.\n\nSo the statement is False.",
+        "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible.\n\nSo the statement is False.",
         "**E.** → True\n\n$$10+8=18$$\n\n$$18+6=24$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -214,10 +214,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nCompare the formulas on an assignment where the antecedent holds and the consequent fails:\n\n$$(p,q)=(T,F)$$\n\nThe original implication is\n\n$$\np\\rightarrow q = T\\rightarrow F = F\n$$\n\nwhile the inverse is\n\n$$\n\\neg p\\rightarrow\\neg q = F\\rightarrow T = T\n$$\n\nThe two truth values differ, so the inverse is not always equivalent to the original.\n\nSo the statement is False.",
-        "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$,\n\nSo the statement is False.",
-        "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$\n|\\mathcal P(S)| = 2^5 = 32\n$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets,\n\nSo the statement is False.",
+        "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\n\\forall y\\in\\mathbb R,\\qquad y^2\\ge0 = -1\\ \\text{has no real solution}\n$$\n\nThe universal claim fails at $x=-1$.\n\nSo the statement is False.",
+        "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$\n|\\mathcal P(S)| = 2^5 = 32\n$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets.\n\nSo the statement is False.",
         "**D.** → False\n\nEvaluating both sides reveals that the proposed placement of the intersection is not distributive. With $A=\\{1\\}$, $B=\\{2\\}$, $C=\\{3\\}$:\n\n$$B\\cap C=\\emptyset$$\n\n$$\nA\\cup(B\\cap C) = \\{1\\}\\cup\\emptyset = \\{1\\}\n$$\n\n$$\n(A\\cup B)\\cap C = \\{1,2\\}\\cap\\{3\\} = \\emptyset\n$$\n\n$$\\{1\\}\\neq\\emptyset$$\n\nThe two sides differ.\n\nSo the statement is False.",
-        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$\np\\vee(q\\wedge r) = T\\vee(F\\wedge F) = T\n$$\n\n$$\n(p\\vee q)\\wedge r = (T\\vee F)\\wedge F = F\n$$\n\nThe formulas are not equivalent,\n\nSo the statement is False."
+        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$\np\\vee(q\\wedge r) = T\\vee(F\\wedge F) = T\n$$\n\n$$\n(p\\vee q)\\wedge r = (T\\vee F)\\wedge F = F\n$$\n\nThe formulas are not equivalent.\n\nSo the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 115,
@@ -248,7 +248,7 @@
         "**A.** → True\n\nOn the zero first coordinate:\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y$$\n\nSo the statement is True.",
         "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked:\n\n$$\nn^{2} = 16\\Longleftrightarrow n = \\pm 4\n$$\n\n$$A=\\{-4,4\\}$$\n\nThe integer $4$ sits in $A$:\n\n$$4\\in A$$\n\nbut a singleton set is a different object from that integer:\n\n$$\\{4\\}\\notin A.$$\n\nSo the statement is False.",
         "**C.** → False\n\n$$|A|=70$$\n\n$$|B|=50$$\n\n$$|A\\cap B|=10$$\n\n$$70+50=120$$\n\n$$120-10=110$$\n\n$$|A\\cup B|=110$$\n\nSo the statement is False.",
-        "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$p\\rightarrow(q\\vee r) = F\\Longleftrightarrow p$$\n\n$$\n= T\\ \\text{and}\\ q\\vee r = F\n$$\n\n$$\nq\\vee r = F\\Longleftrightarrow(q,r) = (F,F)\n$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment.\n\nSo the statement is True.",
+        "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$\np\\rightarrow(q\\vee r) = F\\Longleftrightarrow p = T\\ \\text{and}\\ q\\vee r = F\n$$\n\n$$\nq\\vee r = F\\Longleftrightarrow(q,r) = (F,F)\n$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment.\n\nSo the statement is True.",
         "**E.** → False\n\nDifferent domain elements may satisfy different sides of the disjunction.\n\n$$\nD = \\{1,2\\},\\quad P(x)\\Longleftrightarrow x = 1,\\quad Q(x)\\Longleftrightarrow x = 2\n$$\n\n$$\\forall x\\in D\\,(P(x)\\vee Q(x))=T$$\n\n$$\n(\\forall x\\in D\\,P(x))\\vee(\\forall x\\in D\\,Q(x)) = F\\vee F = F\n$$\n\nThe countermodel separates the two formulas.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
@@ -277,11 +277,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$\n|\\mathcal P(S)| = 2^4 = 16\n$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$,\n\nSo the statement is True.",
-        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$\n(A\\cap B^c)^c = A^c\\cup(B^c)^c = A^c\\cup B\n$$\n\nThe proposed identity follows,\n\nSo the statement is True.",
+        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$\n|\\mathcal P(S)| = 2^4 = 16\n$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$.\n\nSo the statement is True.",
+        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$\n(A\\cap B^c)^c = A^c\\cup(B^c)^c = A^c\\cup B\n$$\n\nThe proposed identity follows.\n\nSo the statement is True.",
         "**C.** → False\n\nRewrite the implication as a disjunction before applying negation:\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\nNegate both sides:\n\n$$\\neg(p\\rightarrow q)\\equiv\\neg(\\neg p\\vee q)$$\n\nDe Morgan then yields\n\n$$\\equiv p\\wedge\\neg q$$\n\nThe claimed formula reverses both required truth values.\n\nSo the statement is False.",
         "**D.** → True\n\nA witness for the disjunction witnesses at least one side, and either side supplies a witness for the disjunction.\n\n$$\\exists x\\,(P(x)\\vee Q(x))\\Longrightarrow(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$$\n\n$$\\exists x\\,P(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\n$$\\exists x\\,Q(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\nBoth directions of the equivalence hold.\n\nSo the statement is True.",
-        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B$$\n\n$$g\\in B\\setminus A$$\n\n$$g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$,\n\nSo the statement is True."
+        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B$$\n\n$$g\\in B\\setminus A$$\n\n$$g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 117,
@@ -312,8 +312,8 @@
         "**A.** → True\n\nSymmetric difference records unequal membership, so its complement records equal membership.\n\n$$A\\triangle B=(A\\cap B^c)\\cup(A^c\\cap B)$$\n\n$$x\\notin A\\triangle B\\Longleftrightarrow[x\\in A\\Longleftrightarrow x\\in B]$$\n\n$$(A\\triangle B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$$\n\nThe description matches the complement.\n\nSo the statement is True.",
         "**B.** → True\n\nImplication elimination puts the original and contrapositive into the same disjunction.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg q\\rightarrow\\neg p\\equiv\\neg(\\neg q)\\vee\\neg p$$\n\n$$q\\vee\\neg p\\equiv\\neg p\\vee q$$\n\nThe two formulas are logically equivalent.\n\nSo the statement is True.",
         "**C.** → True\n\nApply the universal implication to the witness supplied by the existential premise:\n\n$$\\forall x\\,(M(x)\\rightarrow L(x))$$\n\n$$\\exists x\\,M(x)$$\n\nPick a medic witness $a$, so $M(a)$ holds. The universal forces\n\n$$M(a)\\rightarrow L(a)\\Longrightarrow L(a)$$\n\nhence\n\n$$\\exists x\\,L(x)$$\n\nA licensed witness is forced.\n\nSo the statement is True.",
-        "**D.** → False\n\nMembers of a power set are subsets of the original set, not its bare symbols.\n\n$$\\{r\\}\\subseteq S\\Longrightarrow\\{r\\}\\in\\mathcal P(S)$$\n\n$$r\\in S$$\n\n$$r\\notin\\mathcal P(S)$$\n\nThe second membership assertion fails,\n\nSo the statement is False.",
-        "**E.** → False\n\nThe just-one total is the sum of the two exclusive regions.\n\n$$\n|D\\setminus C| = 28-11 = 17\n$$\n\n$$\n|C\\setminus D| = 24-11 = 13\n$$\n\n$$17+13=30\\ne35$$\n\nExactly $30$ animals are in just one group,\n\nSo the statement is False."
+        "**D.** → False\n\nMembers of a power set are subsets of the original set, not its bare symbols.\n\n$$\\{r\\}\\subseteq S\\Longrightarrow\\{r\\}\\in\\mathcal P(S)$$\n\n$$r\\in S$$\n\n$$r\\notin\\mathcal P(S)$$\n\nThe second membership assertion fails.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe just-one total is the sum of the two exclusive regions.\n\n$$\n|D\\setminus C| = 28-11 = 17\n$$\n\n$$\n|C\\setminus D| = 24-11 = 13\n$$\n\n$$17+13=30\\ne35$$\n\nExactly $30$ animals are in just one group.\n\nSo the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 118,
@@ -342,10 +342,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nIntersection keeps only elements that sit in both $M$ and $E$.\n\n$$M=\\{Ada,Cleo,Eli,Finn\\}$$\n\n$$E=\\{Ben,Cleo,Dara,Finn\\}$$\n\n$$Ada\\in M,\\ Ada\\notin E$$\n\n$$Cleo\\in M,\\ Cleo\\in E$$\n\n$$Eli\\in M,\\ Eli\\notin E$$\n\n$$Finn\\in M,\\ Finn\\in E$$\n\n$$M\\cap E=\\{Cleo,Finn\\}$$\n\n$$\\{Cleo,Finn\\}$$\n\nThe computed roster matches the claim.\n\nSo the statement is True.",
-        "**B.** → False\n\nForm the union by listing every name that appears in $M$ or in $E$ (or both):\n\n$$M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$$\n\n$$|M\\cup E|=6$$\n\nThe claim says the union has size $7$, but the computed size is $6$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**B.** → False\n\nForm the union by listing every name that appears in $M$ or in $E$ (or both):\n\n$$M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$$\n\n$$|M\\cup E|=6$$\n\nThe claim says the union has size $7$, but the computed size is $6$.\n\nSo the statement is False.",
         "**C.** → True\n\nDifference $P\\setminus M$ keeps members of $P$ that miss $M$.\n\n$$P=\\{Ada,Dara,Finn,Gia\\}$$\n\n$$M=\\{Ada,Cleo,Eli,Finn\\}$$\n\n$$Ada\\in P,\\ Ada\\in M$$\n\n$$Dara\\in P,\\ Dara\\notin M$$\n\n$$Finn\\in P,\\ Finn\\in M$$\n\n$$Gia\\in P,\\ Gia\\notin M$$\n\n$$P\\setminus M=\\{Dara,Gia\\}$$\n\n$$\\{Dara,Gia\\}$$\n\nThe computed roster matches the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nElements of $P$ are individual names. The object $\\{Ada,Finn\\}$ is a two-element set of names, not one of those names:\n\nAda satisfies $A\\in P$ and Finn satisfies $F\\in P$:\n\n$$A\\in P$$\n\n$$F\\in P$$\n\n$$\\{Ada,Finn\\}\\notin P$$\n\nMembership fails, even though both people appear separately in $P$.\n\nSo the statement is False.",
-        "**E.** → False\n\nSymmetric difference is the disjoint union of the two exclusive regions:\n\n$$M\\setminus E=\\{Ada,Eli\\}$$\n\n$$E\\setminus M=\\{Ben,Dara\\}$$\n\n$$\n|M\\triangle E| = 2+2 = 4\\neq 3\n$$\n\nThe size is $4$, not $3$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False."
+        "**E.** → False\n\nSymmetric difference is the disjoint union of the two exclusive regions:\n\n$$M\\setminus E=\\{Ada,Eli\\}$$\n\n$$E\\setminus M=\\{Ben,Dara\\}$$\n\n$$\n|M\\triangle E| = 2+2 = 4\\neq 3\n$$\n\nThe size is $4$, not $3$.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 119,
@@ -440,7 +440,7 @@
         "**A.** → True\n\nCheck every priority parcel against the scanned set:\n\n$$P = \\{a,c\\},$$\n\n$$\nS = \\{a,b,c\\}\n$$\n\n$$a\\in S$$\n\n$$c\\in S$$\n\nEvery priority parcel is scanned, so the universal implication holds.\n\nSo the statement is True.",
         "**B.** → True\n\nA single witness is enough for an existential claim. Parcel $c$ lies in both sets:\n\n$$c\\in P\\cap L=\\{c\\}$$\n\n$$P(c)\\wedge L(c)$$\n\nThe required joint witness exists.\n\nSo the statement is True.",
         "**C.** → False\n\nUniversal claims fail from one counterexample. Parcel $c$ is scanned and late:\n\n$$c\\in S\\cap L$$\n\n$$S(c)\\wedge L(c)$$\n\nSo scanned does not imply not-late.\n\nSo the statement is False.",
-        "**D.** → False\n\nForm the union of scanned and late parcels inside $D$:\n\n$$\nS\\cup L = \\{a,b,c,d\\} = D\n$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**D.** → False\n\nForm the union of scanned and late parcels inside $D$:\n\n$$\nS\\cup L = \\{a,b,c,d\\} = D\n$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nSo the statement is False.",
         "**E.** → True\n\nAn existential claim needs one late parcel that is not priority.\n\nThe late roster is $L=\\{c,d\\}$. Check priority:\n\n$$c\\in P$$\n\n$$d\\notin P$$\n\nParcel $d$ is late and not priority, so $\\exists x\\,(L(x)\\wedge\\neg P(x))$ holds.\n\nSo the statement is True."
       ],
       "difficulty_level": "4/5",
@@ -470,7 +470,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nIntersection keeps only elements that sit in both $C$ and $E$.\n\n$$C=\\{a,b,d,f\\}$$\n\n$$E=\\{b,c,e,f,g\\}$$\n\n$$a\\in C,\\ a\\notin E$$\n\n$$b\\in C,\\ b\\in E$$\n\n$$d\\in C,\\ d\\notin E$$\n\n$$f\\in C,\\ f\\in E$$\n\n$$C\\cap E=\\{b,f\\}$$\n\n$$\\{b,f\\}$$\n\nThe computed roster matches the claim.\n\nSo the statement is True.",
-        "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nSo the statement is False.",
         "**C.** → False\n\nDifference $C\\setminus A$ keeps members of $C$ that miss $A$.\n\n$$C=\\{a,b,d,f\\}$$\n\n$$A=\\{a,c,f,h\\}$$\n\n$$a\\in C,\\ a\\in A$$\n\n$$b\\in C,\\ b\\notin A$$\n\n$$d\\in C,\\ d\\notin A$$\n\n$$f\\in C,\\ f\\in A$$\n\n$$C\\setminus A=\\{b,d\\}$$\n\n$$\\{b,d,f\\}$$\n\nThe computed roster does not match the claim.\n\nSo the statement is False.",
         "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nSo the statement is True.",
         "**E.** → False\n\n$$|C|=4$$\n\n$$|E|=5$$\n\n$$|C\\cap E|=2$$\n\n$$2\\cdot 2=4$$\n\n$$4+5=9$$\n\n$$9-4=5$$\n\n$$|C\\triangle E|=5$$\n\nSo the statement is False."
@@ -568,7 +568,7 @@
         "**A.** → False\n\nUniversal claims fail from one counterexample. Cy is a team lead outside the certified set:\n\n$$L = \\{Ava,Cy\\},$$\n\n$$\nC = \\{Ava,Bo,Di\\}\n$$\n\n$$Cy\\in L$$\n\n$$Cy\\notin C$$\n\nSo not every team lead is certified.\n\nSo the statement is False.",
         "**B.** → True\n\nBo belongs to both the certified and remote rosters:\n\n$$Bo\\in C\\cap R=\\{Bo\\}$$\n\nThat single witness makes the existential claim true.\n\nSo the statement is True.",
         "**C.** → False\n\nBo is remote but is not listed as a team lead:\n\n$$Bo\\in R$$\n\n$$Bo\\notin L$$\n\nRemote does not universally imply lead.\n\nSo the statement is False.",
-        "**D.** → False\n\nForm the union of certified and remote employees:\n\n$$C\\cup R=\\{Ava,Bo,Cy,Di\\}$$\n\nThat union is the whole four-person domain, so\n\n$$|\\{x:\\neg C(x)\\wedge\\neg R(x)\\}|=0\\neq 1$$\n\nNobody is outside both sets.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**D.** → False\n\nForm the union of certified and remote employees:\n\n$$C\\cup R=\\{Ava,Bo,Cy,Di\\}$$\n\nThat union is the whole four-person domain, so\n\n$$|\\{x:\\neg C(x)\\wedge\\neg R(x)\\}|=0\\neq 1$$\n\nNobody is outside both sets.\n\nSo the statement is False.",
         "**E.** → True\n\nAn existential claim needs one team lead outside the remote set.\n\nLeads are $L=\\{Ava,Cy\\}$. Check remote membership:\n\n$$Ava\\notin R$$\n\n$$Cy\\in R$$\n\nAva is a non-remote lead, so $\\exists x\\,(L(x)\\wedge\\neg R(x))$ holds.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -599,7 +599,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nIntersection keeps only elements that sit in both $X$ and $N$.\n\n$$X=\\{1,3,4,7\\}$$\n\n$$N=\\{2,3,5,7,8\\}$$\n\n$$1\\in X,\\ 1\\notin N$$\n\n$$3\\in X,\\ 3\\in N$$\n\n$$4\\in X,\\ 4\\notin N$$\n\n$$7\\in X,\\ 7\\in N$$\n\n$$X\\cap N=\\{3,7\\}$$\n\n$$\\{3,7\\}$$\n\nThe computed roster matches the claim.\n\nSo the statement is True.",
         "**B.** → True\n\nComplement $N^c$ keeps routes in $U$ that miss the night list $N=\\{2,3,5,7,8\\}$.\n\nList $U\\setminus N$:\n\n$$\\{1,2,3,4,5,6,7,8\\}\\setminus\\{2,3,5,7,8\\}=\\{1,4,6\\}$$\n\nSo $N^c=\\{1,4,6\\}$, matching the claim.\n\n$$N^c=\\{1,4,6\\}$$\n\nSo the statement is True.",
-        "**C.** → False\n\nForm the union of express and accessible routes:\n\n$$X\\cup A=\\{1,2,3,4,6,7,8\\}$$\n\nRoute $5$ is missing, so\n\n$$X\\cup A\\neq U$$\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**C.** → False\n\nForm the union of express and accessible routes:\n\n$$X\\cup A=\\{1,2,3,4,6,7,8\\}$$\n\nRoute $5$ is missing, so\n\n$$X\\cup A\\neq U$$\n\nSo the statement is False.",
         "**D.** → False\n\nAccessible routes outside the night list are\n\n$$A\\setminus N=\\{1,6\\}$$\n\n$$|A\\setminus N|=2\\neq 3$$\n\nOnly two routes meet the description.\n\nSo the statement is False.",
         "**E.** → False\n\nA set is a member of a power set precisely when it is a subset of the ground set.\n\nCheck $\\{3,7\\}\\subseteq X=\\{1,3,4,7\\}$:\n\n$$3\\in X$$\n\n$$7\\in X$$\n\nHence $\\{3,7\\}\\in\\mathcal P(X)$. The claim says that membership is false, which is wrong.\n\nSo the statement is False."
       ],

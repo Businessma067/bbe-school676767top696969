@@ -4,6 +4,7 @@ import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 
 export const Route = createFileRoute("/important-features")({
@@ -23,6 +24,7 @@ export const Route = createFileRoute("/important-features")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/important-features"),
     ],
   }),
   component: ImportantFeaturesPage,

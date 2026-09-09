@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.1-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales to a business customer classify the cleaning contract as a b2b producer product, not a consumer product.
 
-Sales to a business customer classify the cleaning contract as a b2b producer product, not a consumer product.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Sales to a household customer classify the cleaning contract as a b2c consumer product, not a producer product.
 
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Sales to a household customer classify the cleaning contract as a b2c consumer product, not a producer product.
+The statement is false.', 'Sales to household customers classify the catering tray as a b2c consumer product.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Identical catering tray models shift between producer and consumer labels with the customer, not the design.
 
-Sales to household customers classify the catering tray as a b2c consumer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Identical cleaning contract models can be producer or consumer products depending on the buyer.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Identical catering tray models shift between producer and consumer labels with the customer, not the design.
+The statement is false.'] WHERE case_id = 'CASE 5.1.51' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A cleaning contract can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+The statement is false.', 'B2b exchange with a business buyer makes the catering tray a producer product.
 
-Identical cleaning contract models can be producer or consumer products depending on the buyer.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Exchange is required for a cleaning contract to count as a product in marketing terminology.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.51' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-A cleaning contract can be a product when exchanged as a good or service to fulfil customer wishes and needs.
+The statement is false.', 'Commercial use by a business purchaser defines the catering tray as a producer product.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Business customers have operational wishes and needs that exchanged cleaning contract offerings can fulfil as products.
 
-B2b exchange with a business buyer makes the catering tray a producer product.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.'] WHERE case_id = 'CASE 5.1.52' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Personal or domestic use by a household purchaser defines the catering tray as a consumer product.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Exchange is required for a cleaning contract to count as a product in marketing terminology.
+The statement is true.', 'Household customers acquire consumer products such as a cleaning contract through b2c exchange.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Internal transfers not offered for external exchange are not products in the marketing sense.
 
-Commercial use by a business purchaser defines the catering tray as a producer product.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-The statement is true.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Business customers have operational wishes and needs that exchanged cleaning contract offerings can fulfil as products.
+The statement is false.', 'Operational needs of a business buyer place an exchanged catering tray among producer products.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.52' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.'] WHERE case_id = 'CASE 5.1.53' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2c classification depends on the household purchaser, not on retail branding alone.
 
-Personal or domestic use by a household purchaser defines the catering tray as a consumer product.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Personal wishes of a household buyer place an exchanged catering tray among consumer products.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (households): household customers acquire consumer products such as a cleaning contract through b2c exchange.
+The statement is true.', 'Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-Those restricting words stretch a limited idea past what marketing allows.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The statement is false.', 'Inter-business sale of a catering tray to a warehouse operator is a textbook producer product case.
 
-Internal transfers not offered for external exchange are not products in the marketing sense.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-B2b classification depends on the business purchaser, not solely on the seller''s industry.
+The statement is false.'] WHERE case_id = 'CASE 5.1.54' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Household sale of a catering tray to a household member is a textbook consumer product case.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.', 'Producer products include goods and services sold to businesses, including a finished cleaning contract for a hospital trust.
 
-Operational needs of a business buyer place an exchanged catering tray among producer products.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'A catering tray remains a product in either channel; only the producer versus consumer label changes with the buyer.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.53' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-B2c classification depends on the household purchaser, not on retail branding alone.
+The statement is true.', 'Customer identity on the invoice determines whether the same catering tray is recorded as producer or consumer.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.', 'Wishes and needs give the exchanged catering tray its role as a product rather than a non-market item.
 
-Personal wishes of a household buyer place an exchanged catering tray among consumer products.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.1.55' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Consumer products include ordinary goods and services sold to households, including a cleaning contract for a private buyer.
 
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
+The statement is false.', 'A cleaning contract is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Sales to a business customer classify the training course as a b2b producer product, not a consumer product.
 
-Inter-business sale of a catering tray to a warehouse operator is a textbook producer product case.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Traded catering tray offerings create exchange value whether the buyer is a business or a household.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
+The statement is true.', 'Sales to a household customer classify the training course as a b2c consumer product, not a producer product.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.54' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.'] WHERE case_id = 'CASE 5.1.56' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b network maintenance for a business customer is classified as a producer product.
 
-Household sale of a catering tray to a household member is a textbook consumer product case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Identical training course models can be producer or consumer products depending on the buyer.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Producer products include goods and services sold to businesses, including a finished cleaning contract for a hospital trust.
+The statement is false.', 'B2c network maintenance for a household customer is classified as a consumer product.
 
-Those restricting words stretch a limited idea past what marketing allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Business-need fulfilment through exchanged network maintenance makes the service a product sold b2b.
 
-On this stem (household): a catering tray remains a product in either channel; only the producer versus consumer label changes with the buyer.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Household-wish fulfilment through exchanged network maintenance makes the service a product sold b2c.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (consultancy / household): customer identity on the invoice determines whether the same catering tray is recorded as producer or consumer.
+The statement is true.'] WHERE case_id = 'CASE 5.1.57' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A training course can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is false.', 'Exchange is required for a training course to count as a product in marketing terminology.
 
-Wishes and needs give the exchanged catering tray its role as a product rather than a non-market item.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Business customers have operational wishes and needs that exchanged training course offerings can fulfil as products.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.55' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Consumer products include ordinary goods and services sold to households, including a cleaning contract for a private buyer.
+The statement is false.', 'Network maintenance under a commercial contract to a insurance company is a producer product service.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.', 'Household customers acquire consumer products such as a training course through b2c exchange.
 
-A cleaning contract is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.'] WHERE case_id = 'CASE 5.1.58' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Network maintenance for personal or domestic benefit to a retired couple is a consumer product service.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Sales to a business customer classify the training course as a b2b producer product, not a consumer product.
+The statement is true.', 'Internal transfers not offered for external exchange are not products in the marketing sense.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Customers in the product definition may be other businesses or private households. That customer identity — not the factory process alone — drives B2B versus B2C product labels.
+The statement is false.', 'B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-Traded catering tray offerings create exchange value whether the buyer is a business or a household.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Dual-channel network maintenance sales illustrate producer and consumer labels driven by customer type.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Sales to a household customer classify the training course as a b2c consumer product, not a producer product.
+The statement is true.', 'Exchange of network maintenance with either business or household buyers keeps it within the product concept.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.56' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.'] WHERE case_id = 'CASE 5.1.59' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b purchase of network maintenance by a insurance company yields a producer product classification.
 
-B2b network maintenance for a business customer is classified as a producer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'B2c classification depends on the household purchaser, not on retail branding alone.
 
-The statement is true.
-', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Identical training course models can be producer or consumer products depending on the buyer.
+The statement is false.', 'Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.', 'B2c purchase of network maintenance by a retired couple yields a consumer product classification.
 
-B2c network maintenance for a household customer is classified as a consumer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Intangible network maintenance counts as a product once exchanged to satisfy needs.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (maintenance contract): business-need fulfilment through exchanged network maintenance makes the service a product sold b2b.
+The statement is true.'] WHERE case_id = 'CASE 5.1.60' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is false.', 'Paid transfer of network maintenance to a customer with unmet wishes or needs defines a marketing product.
 
-Household-wish fulfilment through exchanged network maintenance makes the service a product sold b2c.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Producer products include goods and services sold to businesses, including a finished training course for a local authority.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.57' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-A training course can be a product when exchanged as a good or service to fulfil customer wishes and needs.
+The statement is false.', 'B2b payroll processing for a business customer is classified as a producer product.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The statement is true.', 'Consumer products include ordinary goods and services sold to households, including a training course for a home user.
 
-Exchange is required for a training course to count as a product in marketing terminology.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.'] WHERE case_id = 'CASE 5.1.61' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2c payroll processing for a household customer is classified as a consumer product.
 
-The statement is false.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Business customers have operational wishes and needs that exchanged training course offerings can fulfil as products.
+The statement is true.', 'A training course is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Business-need fulfilment through exchanged payroll processing makes the service a product sold b2b.
 
-Network maintenance under a commercial contract to a insurance company is a producer product service.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Sales to a business customer classify the broadband package as a b2b producer product, not a consumer product.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (households): household customers acquire consumer products such as a training course through b2c exchange.
+The statement is false.', 'Household-wish fulfilment through exchanged payroll processing makes the service a product sold b2c.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.58' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.'] WHERE case_id = 'CASE 5.1.62' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Payroll processing under a commercial contract to a accounting partnership is a producer product service.
 
-Network maintenance for personal or domestic benefit to a retired couple is a consumer product service.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Payroll processing for personal or domestic benefit to a young professional is a consumer product service.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Internal transfers not offered for external exchange are not products in the marketing sense.
+The statement is true.', 'Dual-channel payroll processing sales illustrate producer and consumer labels driven by customer type.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Exchange of payroll processing with either business or household buyers keeps it within the product concept.
 
-B2b classification depends on the business purchaser, not solely on the seller''s industry.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Sales to a household customer classify the broadband package as a b2c consumer product, not a producer product.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Dual-channel network maintenance sales illustrate producer and consumer labels driven by customer type.
+The statement is false.'] WHERE case_id = 'CASE 5.1.63' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Identical broadband package models can be producer or consumer products depending on the buyer.
 
-Under that definition the assertion is the right description of the situation.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+The statement is false.', 'A broadband package can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-Exchange of network maintenance with either business or household buyers keeps it within the product concept.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Exchange is required for a broadband package to count as a product in marketing terminology.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.59' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-B2b purchase of network maintenance by a insurance company yields a producer product classification.
+The statement is false.', 'Business customers have operational wishes and needs that exchanged broadband package offerings can fulfil as products.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.', 'B2b purchase of payroll processing by a accounting partnership yields a producer product classification.
 
-B2c classification depends on the household purchaser, not on retail branding alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.1.64' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Household customers acquire consumer products such as a broadband package through b2c exchange.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
+The statement is false.', 'Internal transfers not offered for external exchange are not products in the marketing sense.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.', 'B2c purchase of payroll processing by a young professional yields a consumer product classification.
 
-B2c purchase of network maintenance by a retired couple yields a consumer product classification.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Intangible payroll processing counts as a product once exchanged to satisfy needs.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Intangible network maintenance counts as a product once exchanged to satisfy needs.
+The statement is true.', 'Paid transfer of payroll processing to a customer with unmet wishes or needs defines a marketing product.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.60' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.'] WHERE case_id = 'CASE 5.1.65' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b equipment leasing for a business customer is classified as a producer product.
 
-The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Paid transfer of network maintenance to a customer with unmet wishes or needs defines a marketing product.
+The statement is false.', 'B2c equipment leasing for a household customer is classified as a consumer product.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'B2c classification depends on the household purchaser, not on retail branding alone.
 
-Producer products include goods and services sold to businesses, including a finished training course for a local authority.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.', 'Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-B2b payroll processing for a business customer is classified as a producer product.
+The statement is false.'] WHERE case_id = 'CASE 5.1.66' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Business-need fulfilment through exchanged equipment leasing makes the service a product sold b2b.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Household-wish fulfilment through exchanged equipment leasing makes the service a product sold b2c.
 
-Consumer products include ordinary goods and services sold to households, including a training course for a home user.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Equipment leasing under a commercial contract to a shipping line is a producer product service.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.61' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-B2c payroll processing for a household customer is classified as a consumer product.
+The statement is true.', 'Equipment leasing for personal or domestic benefit to a suburban family is a consumer product service.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.', 'Dual-channel equipment leasing sales illustrate producer and consumer labels driven by customer type.
 
-A training course is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.'] WHERE case_id = 'CASE 5.1.67' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Business-need fulfilment through exchanged payroll processing makes the service a product sold b2b.
+The statement is false.', 'Exchange of equipment leasing with either business or household buyers keeps it within the product concept.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'B2b purchase of equipment leasing by a shipping line yields a producer product classification.
 
-Sales to a business customer classify the broadband package as a b2b producer product, not a consumer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'B2c purchase of equipment leasing by a suburban family yields a consumer product classification.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Household-wish fulfilment through exchanged payroll processing makes the service a product sold b2c.
+The statement is true.', 'Intangible equipment leasing counts as a product once exchanged to satisfy needs.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.62' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.'] WHERE case_id = 'CASE 5.1.68' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Producer products include goods and services sold to businesses, including a finished broadband package for a export buyer.
 
-Payroll processing under a commercial contract to a accounting partnership is a producer product service.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Paid transfer of equipment leasing to a customer with unmet wishes or needs defines a marketing product.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Payroll processing for personal or domestic benefit to a young professional is a consumer product service.
+The statement is true.', 'B2b staff training for a business customer is classified as a producer product.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'B2c staff training for a household customer is classified as a consumer product.
 
-Dual-channel payroll processing sales illustrate producer and consumer labels driven by customer type.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Business-need fulfilment through exchanged staff training makes the service a product sold b2b.
 
-The statement is true.
-', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Exchange of payroll processing with either business or household buyers keeps it within the product concept.
+The statement is true.'] WHERE case_id = 'CASE 5.1.69' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Household-wish fulfilment through exchanged staff training makes the service a product sold b2c.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Staff training under a commercial contract to a engineering plant is a producer product service.
 
-Sales to a household customer classify the broadband package as a b2c consumer product, not a producer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Staff training for personal or domestic benefit to a student renter is a consumer product service.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.63' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical broadband package models can be producer or consumer products depending on the buyer.
+The statement is true.', 'Dual-channel staff training sales illustrate producer and consumer labels driven by customer type.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+The statement is true.', 'Exchange of staff training with either business or household buyers keeps it within the product concept.
 
-A broadband package can be a product when exchanged as a good or service to fulfil customer wishes and needs.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.1.70' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b purchase of staff training by a engineering plant yields a producer product classification.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Exchange is required for a broadband package to count as a product in marketing terminology.
+The statement is true.', 'B2c purchase of staff training by a student renter yields a consumer product classification.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.', 'Intangible staff training counts as a product once exchanged to satisfy needs.
 
-Business customers have operational wishes and needs that exchanged broadband package offerings can fulfil as products.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Paid transfer of staff training to a customer with unmet wishes or needs defines a marketing product.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-B2b purchase of payroll processing by a accounting partnership yields a producer product classification.
+The statement is true.', 'B2b security monitoring for a business customer is classified as a producer product.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.64' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The statement is true.'] WHERE case_id = 'CASE 5.1.71' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Consumer products include ordinary goods and services sold to households, including a broadband package for a personal customer.
 
-On this stem (broadband / households): household customers acquire consumer products such as a broadband package through b2c exchange.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'B2c security monitoring for a household customer is classified as a consumer product.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (broadband): internal transfers not offered for external exchange are not products in the marketing sense.
+The statement is true.', 'Business-need fulfilment through exchanged security monitoring makes the service a product sold b2b.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Household-wish fulfilment through exchanged security monitoring makes the service a product sold b2c.
 
-B2c purchase of payroll processing by a young professional yields a consumer product classification.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Security monitoring under a commercial contract to a data centre operator is a producer product service.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Intangible payroll processing counts as a product once exchanged to satisfy needs.
+The statement is true.'] WHERE case_id = 'CASE 5.1.72' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A broadband package is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is false.', 'Sales to a business customer classify the catering tray as a b2b producer product, not a consumer product.
 
-Paid transfer of payroll processing to a customer with unmet wishes or needs defines a marketing product.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Sales to a household customer classify the catering tray as a b2c consumer product, not a producer product.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.65' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-B2b equipment leasing for a business customer is classified as a producer product.
+The statement is false.', 'Security monitoring for personal or domestic benefit to a self-employed artisan is a consumer product service.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Dual-channel security monitoring sales illustrate producer and consumer labels driven by customer type.
 
-On this stem (broadband): b2b classification depends on the business purchaser, not solely on the seller''s industry.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.'] WHERE case_id = 'CASE 5.1.73' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Exchange of security monitoring with either business or household buyers keeps it within the product concept.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-B2c equipment leasing for a household customer is classified as a consumer product.
+The statement is true.', 'B2b purchase of security monitoring by a data centre operator yields a producer product classification.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Identical catering tray models can be producer or consumer products depending on the buyer.
 
-On this stem (broadband / branding): b2c classification depends on the household purchaser, not on retail branding alone.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'B2c purchase of security monitoring by a self-employed artisan yields a consumer product classification.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (broadband): payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
+The statement is true.', 'Intangible security monitoring counts as a product once exchanged to satisfy needs.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.66' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.'] WHERE case_id = 'CASE 5.1.74' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Paid transfer of security monitoring to a customer with unmet wishes or needs defines a marketing product.
 
-Business-need fulfilment through exchanged equipment leasing makes the service a product sold b2b.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'A catering tray can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Household-wish fulfilment through exchanged equipment leasing makes the service a product sold b2c.
+The statement is false.', 'B2b document printing for a business customer is classified as a producer product.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Exchange is required for a catering tray to count as a product in marketing terminology.
 
-Equipment leasing under a commercial contract to a shipping line is a producer product service.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'B2c document printing for a household customer is classified as a consumer product.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Equipment leasing for personal or domestic benefit to a suburban family is a consumer product service.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Dual-channel equipment leasing sales illustrate producer and consumer labels driven by customer type.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.67' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (broadband): the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
-
-Exchange of equipment leasing with either business or household buyers keeps it within the product concept.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-B2b purchase of equipment leasing by a shipping line yields a producer product classification.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-B2c purchase of equipment leasing by a suburban family yields a consumer product classification.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Intangible equipment leasing counts as a product once exchanged to satisfy needs.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.68' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-Producer products include goods and services sold to businesses, including a finished broadband package for a export buyer.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Paid transfer of equipment leasing to a customer with unmet wishes or needs defines a marketing product.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-B2b staff training for a business customer is classified as a producer product.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-B2c staff training for a household customer is classified as a consumer product.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Business-need fulfilment through exchanged staff training makes the service a product sold b2b.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.69' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Household-wish fulfilment through exchanged staff training makes the service a product sold b2c.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-Staff training under a commercial contract to a engineering plant is a producer product service.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Staff training for personal or domestic benefit to a student renter is a consumer product service.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Dual-channel staff training sales illustrate producer and consumer labels driven by customer type.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
-
-Exchange of staff training with either business or household buyers keeps it within the product concept.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.70' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-B2b purchase of staff training by a engineering plant yields a producer product classification.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-B2c purchase of staff training by a student renter yields a consumer product classification.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Intangible staff training counts as a product once exchanged to satisfy needs.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Paid transfer of staff training to a customer with unmet wishes or needs defines a marketing product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-B2b security monitoring for a business customer is classified as a producer product.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.71' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Consumer products include ordinary goods and services sold to households, including a broadband package for a personal customer.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-B2c security monitoring for a household customer is classified as a consumer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Business-need fulfilment through exchanged security monitoring makes the service a product sold b2b.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Household-wish fulfilment through exchanged security monitoring makes the service a product sold b2c.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-Security monitoring under a commercial contract to a data centre operator is a producer product service.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.72' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-A broadband package is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Sales to a business customer classify the catering tray as a b2b producer product, not a consumer product.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-Sales to a household customer classify the catering tray as a b2c consumer product, not a producer product.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Security monitoring for personal or domestic benefit to a self-employed artisan is a consumer product service.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Dual-channel security monitoring sales illustrate producer and consumer labels driven by customer type.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.73' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
-
-Exchange of security monitoring with either business or household buyers keeps it within the product concept.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-B2b purchase of security monitoring by a data centre operator yields a producer product classification.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
-
-Identical catering tray models can be producer or consumer products depending on the buyer.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-B2c purchase of security monitoring by a self-employed artisan yields a consumer product classification.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Intangible security monitoring counts as a product once exchanged to satisfy needs.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.74' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Paid transfer of security monitoring to a customer with unmet wishes or needs defines a marketing product.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
-
-A catering tray can be a product when exchanged as a good or service to fulfil customer wishes and needs.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-B2b document printing for a business customer is classified as a producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
-
-Exchange is required for a catering tray to count as a product in marketing terminology.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-B2c document printing for a household customer is classified as a consumer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.75' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 5.1.75' AND tier = 'full';

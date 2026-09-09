@@ -1,1217 +1,278 @@
 -- Update expanded explanations for 2.1-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Even a steady salary remains finite. The household still allocates limited income among competing needs and wants, so scarcity does not disappear when pay arrives on schedule. The absolute claim that income "removes all limits" is what makes the sentence fail.
 
-Scarcity is the gap between limited means and unlimited ends. A steady salary raises purchasing power, but the paycheck is still a finite euro amount that must be split among rent, food, transport, saving, and leisure.
+The statement is false.', 'Economising is the careful use of resources that are limited relative to what people would like to do with them. Treating those resources as if they were unlimited is the opposite of that idea, so the definition in the claim is sound.
 
-Choosing more of one use always means choosing less of another. Regular income reallocates scarcity; it does not abolish it. The claim that salary “removes all limits” treats money as infinite once it arrives on schedule, which is not how budgets work.
+The statement is true.', 'Sitting still or spending nothing still uses scarce time or money in a particular way. That allocation is itself an economic decision, so nobody can step fully outside economic choice by refusing to act.
 
-Held against the chapter test (here: Scarcity, household), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.', 'Households work with limited budgets just as firms work with limited inputs. Regular income does not cancel the need to prioritise spending, and scarcity is not reserved for registered businesses alone.
 
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+The statement is false.', 'Exchange is trade between parties who value what the other offers. Households routinely buy goods and services with money or goods of their own, so they participate directly; entrepreneurship is not a prerequisite for exchange.
 
-The statement is false.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
+The statement is false.'] WHERE case_id = 'CASE 2.1.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Goods are the tangible items that can be handed over, such as a phone or a bag of beans. Services are the intangible activities performed for someone. The claim reverses that distinction and therefore fails.
 
-Economising is the deliberate response to scarcity: using a limited stock of resources carefully so competing uses are weighed rather than ignored. Treating resources “as if they were unlimited” would mean spending without ranking alternatives.
+The statement is false.', 'A service is work done for a customer rather than a physical object taken away. Installing software or preparing a drink fits that definition cleanly.
 
-Economising is the opposite habit — planning, prioritising, and substituting so finite means stretch further. The statement matches that definition.
+The statement is true.', 'Needs are what is necessary for well-being. Wants are desired extras that go beyond that baseline. Keeping those two categories apart is exactly what the claim does.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Firms need inputs, labour, and premises just as households need food and shelter. Both sides can meet those needs by trading with other actors, so the claim holds.
 
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
+The statement is true.', 'When resources are limited relative to wants, every actor has to allocate carefully. That is economising under scarcity, not an assumption of unlimited supply.
 
-The statement is true.
-', 'TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
+The statement is true.'] WHERE case_id = 'CASE 2.1.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Markets are built on trade between households and businesses. Firms sell to consumers every day, so the claim that businesses are barred from trading with households is simply wrong.
 
-An economic decision is any choice about how to use scarce means such as time, money, or attention. Refusing to buy, delaying a purchase, or leaving an afternoon unused still assigns those means to a particular use — keeping them unavailable for other options.
+The statement is false.', 'A workshop still needs parts, tools, and workers. Operational needs belong to businesses as well as to consumers, so zero internal need is an overclaim.
 
-Because time and money remain limited whether or not someone tries to “opt out,” inaction is still a choice under scarcity. Nobody can step outside that logic entirely.
+The statement is false.', 'Leaving pocket money unspent is a choice about how to use a scarce resource. Inaction still allocates time or cash, so it does not escape economic decision-making.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is false.', 'When a household pays a firm, or a firm pays a supplier, each side gets something it values. That mutual fulfilment through trade is what exchange means.
 
-The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
+The statement is true.', 'Barter is exchange without money: each party gives something the other wants. Monetary payment is common but not required for a trade to count.
 
-The statement is true.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
+The statement is false.'] WHERE case_id = 'CASE 2.1.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A computer is a tangible good; installing software is an activity performed for the buyer. Firms routinely supply both so that people can meet needs.
 
-Scarcity is not a registration status. Households face finite budgets just as firms face finite cash and capacity.
+The statement is true.', 'Assembling a smartphone depends on specialised electronic parts. Those components are operational inputs the manufacturer genuinely needs from suppliers.
 
-A regular salary still has to cover competing household uses, so economising on spending remains necessary. The words “only” and “never” falsely confine scarcity to registered businesses and deny it for households. Everyday shopping, saving, and bill-paying show that households economise continuously.
+The statement is true.', 'Fabrication cannot run on empty shelves. Raw materials and a workforce are scarce inputs the manufacturer must secure, so isolation from suppliers is not an option.
 
-Held against the chapter test (here: scarcity), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.', 'People buy from shops, sell used goods, and trade with neighbours. Individuals are active participants in exchange, not spectators on the sidelines.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is true.', 'Food, shelter, and medical care sit on the needs side. Cinema visits sit on the wants side. Households hold both kinds of demand at once.
 
-The statement is false.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is true.'] WHERE case_id = 'CASE 2.1.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Roasted beans are a physical product the customer can take home. The barista''s preparation of a drink is work performed for that customer. Good and service line up exactly that way.
 
-Exchange is any mutually agreed swap of goods, services, or claims — money for groceries, labour for wages, or barter of items. Households do this every day when they buy, sell, or hire.
+The statement is true.', 'Necessity for well-being marks a need; a preferred flavoured latte beyond that baseline is a want. The two concepts are not identical, so collapsing them fails.
 
-Entrepreneurs often organise production and sell on markets, but they are not a required party in every trade. Two households can trade with each other, and a household can trade directly with a firm. The claim that households “can never” participate directly is wrong.
+The statement is false.', 'A habitual craving for one particular drink is usually about preference, not survival. Unless it is essential for basic well-being, it belongs with wants.
 
-Held against the chapter test (here: entrepreneur), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.', 'A café still needs reliable bean suppliers, staff, and premises. Being a business does not erase those operational needs.
 
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+The statement is false.', 'Paying for beans or a prepared drink is monetary exchange. Each side gets something it values, so needs or wants are fulfilled through the trade.
 
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
+The statement is true.'] WHERE case_id = 'CASE 2.1.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Getting to school is necessary for Jonas''s well-being in this setting, so the bus pass is a need. A game skin is enjoyable but not essential, so it is a want. The pairing is correct.
 
-Goods are tangible items that can be owned and transferred (bread, phones, furniture). Services are intangible activities performed for someone (repairs, lessons, deliveries).
+The statement is true.', 'Price tells you that something is traded in a market, not that it is necessary for well-being. Both items can have prices while only one counts as a need.
 
-Saying goods “must be intangible” reverses those labels, and calling every tangible item a service compounds the error. Tangibility points toward goods, not services.
+The statement is false.', 'The claim treats every individual as already making full economic decisions in the textbook sense before any household or firm role appears. In this framing, facing scarce pocket money is real, but the sentence still overreaches the roles the chapter assigns, so it does not stand as stated.
 
-Held against the chapter test (here: Goods, service), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is false.', 'Saving the twelve euros is itself a decision about scarce cash. Opting out of purchases is not opting out of economic choice.
 
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+The statement is false.', 'Buying the bus pass meets a need; it does not delete the desire for the skin. Wants can remain after a need has been covered.
 
-The statement is false.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
+The statement is false.'] WHERE case_id = 'CASE 2.1.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Screen replacement is work performed on the device, so it is a service. A phone case sold at the counter is a tangible product, so it is a good.
 
-A service is work or an activity delivered to a customer rather than a physical object permanently handed over as the main product. Installing software or preparing a drink are performances: the customer receives the result of labour. That matches the intangible-activity definition of services.
+The statement is true.', 'Spare parts arrive in fixed monthly batches. A fixed batch is limited by definition, so scarcity still binds a business the same way it binds a household.
 
-Held against the chapter test (here: Services), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is false.', 'Choosing a case for its look is about preference, not basic necessity. That purchase satisfies a want.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.', 'A working phone often supports daily communication and coordination. Repair can therefore meet a genuine household need; calling every phone a luxury outside economics is too strong.
 
-The statement is true.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is false.', 'With only a limited batch of parts, the shop cannot accept every job at once. Prioritising which repairs to take is economising under scarcity.
 
-Needs are requirements tied to basic well-being (food, shelter, essential care). Wants are preferences that improve comfort or enjoyment but are not required for that baseline.
+The statement is true.'] WHERE case_id = 'CASE 2.1.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['In the basic picture used here, the economy is households and entrepreneurs interacting through production and trade. That is the essential cast of characters.
 
-The statement keeps the two categories distinct: necessity versus desire. That is the standard teaching contrast.
+The statement is true.', 'Tangible items are goods; intangible activities performed for someone are services. The contrast is the standard classification.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Both households and firms hold needs and wants. Exchange is one channel through which those needs and wants get met on each side of a trade.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'Limited resources relative to competing uses force careful allocation. Economising is the response; assuming unlimited supply is not.
 
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is true.', 'Even refusing to buy or to produce still allocates scarce time or money. Neither households nor businesses can step fully outside that kind of choice.
 
-Needs are not reserved for private consumers. A household needs food and housing; a business needs inputs, labour, energy, and working capital to keep operating.
+The statement is true.'] WHERE case_id = 'CASE 2.1.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Herr Novak supplies bread as a business owner, so he acts as an entrepreneur. The families who buy from him act as households.
 
-Both sides often meet those needs by exchanging with other actors — buying from suppliers, hiring workers, or selling output. The statement correctly extends needs and exchange to households and businesses alike.
+The statement is true.', 'Bread is a tangible loaf; doorstep delivery is an activity performed for the customer. That is the goods-versus-services split.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Owning a bakery does not erase personal or operational needs. He still needs flour, fuel, staff, and premises to keep going.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is false.', 'Paying one euro extra for delivery is money given for a service. That is exchange, and the service retains value in the trade even after it is performed.
 
-The statement is true.
-', 'TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
+The statement is false.', 'Flour and oven fuel must be bought and are limited relative to how much bread he could bake. He has to economise on those inputs like any other producer.
 
-Scarcity means available resources fall short of all desired uses. Because supply is limited relative to competing uses, decision-makers must economise: rank alternatives and allocate carefully instead of assuming an endless stock. The statement links scarcity directly to economising for individuals and firms, which is the core causal chain in introductory economics.
+The statement is false.'] WHERE case_id = 'CASE 2.1.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Each neighbour gives something the other values: lessons for a bookshelf. Needs or wants are fulfilled on both sides without money, so the swap is still exchange.
 
-Held against the chapter test (here: Scarcity, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Exchange is mutual fulfilment through trade, not a rule that only euros count. Barter qualifies even when no banknote or transfer is used.
 
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
+The statement is false.', 'Wood for the bookshelf is a limited raw material. Using more on one project means less for another, so the carpenter must economise.
 
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is true.', 'Gardening lessons are an activity performed for the neighbour, not a physical object handed over. That makes them a service.
 
-Markets are two-sided. Households buy goods and services from firms; firms buy labour, materials, and services from households and other firms.
+The statement is true.', 'Individuals hold needs and wants of their own. Direct exchange, including neighbour-to-neighbour trades, is one way those needs and wants get satisfied.
 
-Trade is not a one-way privilege of “consumers only,” and businesses are not barred from trading with households — retail and wage payments are everyday counterexamples. The absolute wording (“only,” “all trade”) collapses as soon as ordinary shopping or employment is considered.
+The statement is true.'] WHERE case_id = 'CASE 2.1.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Petra''s family is buying for household use; Fabian is a self-employed craftsperson supplying the table. Household and entrepreneur roles fit the transaction.
 
-Held against the chapter test (here: goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.', 'The finished oak table is a physical item produced and delivered. Tangible products of that kind are goods.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is true.', 'Paying 650 euros for the table is monetary exchange. The family''s need for usable furniture is met through that trade.
 
-The statement is false.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is true.', 'Without timber Fabian cannot fulfil commissions. Raw materials are operational needs for the business, not mere decorative wants.
 
-Firms have operational needs of their own: raw materials, power, spare parts, skilled hours, and cash flow. Those are requirements for continued production, not merely consumer wants renamed. Saying businesses have “zero internal needs” confuses the customer-facing purpose of a firm with the input requirements that make the firm run.
+The statement is false.', 'Oak is costly and finite for each job. Using more on one table leaves less for the next, so he must economise on material.
 
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.'] WHERE case_id = 'CASE 2.1.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Laptop production depends on specialised electronic parts from suppliers. Those components are an operational need if assembly is to continue.
 
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+The statement is true.', 'Manufacturers need inputs, labour, and customers just as end users need finished devices. Need is not reserved for final consumers alone.
 
-The statement is false.
-', 'FALSE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
+The statement is false.', 'Daily life is full of purchases from firms: food, transport, repairs, entertainment. Households use those trades to cover both needs and wants.
 
-Pocket money is a scarce resource. Leaving it unspent is a decision to hold cash rather than buy goods now — a choice about timing and use.
+The statement is true.', 'Meeting every need in a month does not erase desires for extras. Wants can remain after necessities are covered.
 
-The teenager has not escaped economic decision-making; they have chosen one allocation (saving or holding) over others (spending). Inaction with money still answers the scarcity problem.
+The statement is false.', 'Teenagers already choose how to spend limited pocket money. They participate as consumers long before they register a business or form a formal household of their own.
 
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is false.'] WHERE case_id = 'CASE 2.1.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Transport and toiletries support basic functioning, so the ninety euros cover needs. Designer trainers are desired but not essential, so they cover a want.
 
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+The statement is true.', 'Parental support funds household consumption; it does not eject Lukas from the household side of the economy. He still makes spending choices with that money.
 
-The statement is false.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is false.', 'Trainers and transport compete for the same monthly budget. Buying one does not cancel the ongoing need to get around for the rest of the month.
 
-Exchange is the mechanism that matches someone who has a good or service with someone who wants it and is willing to give something in return. When households and businesses trade, needs and wants on both sides can be fulfilled without each party producing everything themselves. That is why exchange sits at the centre of everyday economic life.
+The statement is false.', 'Economics studies how people allocate scarce means among needs and wants. Non-essential desires are inside that scope, not outside it.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is false.', 'Three hundred euros a month is a capped sum. Competing claims on that sum force economising; the allowance is not an unlimited resource.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is false.'] WHERE case_id = 'CASE 2.1.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Reinisch produces and sells at the stall, so he acts as an entrepreneur. Village buyers purchasing vegetables act as households.
 
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is true.', 'Land somewhere else does not enlarge the eight hectares he actually farms. For his planting decisions that acreage remains fixed and scarce.
 
-Exchange is defined by mutual transfer of value, not by the medium of payment. Barter — goods or services swapped directly — is exchange without money.
+The statement is false.', 'Potatoes and carrots are tangible produce. Needing to cook them before eating does not turn them into services.
 
-Money makes many trades easier, but it is not required for the concept. Denying that barter counts would erase a large class of real trades.
+The statement is true.', 'Eight hectares cannot grow every crop at once. Splitting the land between uses is an allocation choice he cannot avoid under scarcity.
 
-Held against the chapter test (here: barter), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.', 'Cash paid for potatoes is money given for goods. Monetary payment is a standard form of exchange, not a non-trade.
 
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+The statement is false.'] WHERE case_id = 'CASE 2.1.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Toni and Rosa supply cheese and face-painting as stallholders, so they act as entrepreneurs. Visiting families buy as households.
 
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
+The statement is true.', 'A cheese wheel is a tangible product. Face-painting is an activity performed on the child. Good and service again line up that way.
 
-Firms specialise in producing what others need or want. Computers are tangible goods; software installation is an intangible service.
+The statement is true.', 'Weekly groceries support basic nutrition, so cheese for the household table meets a need. Face-painting for fun is optional enjoyment, so it meets a want.
 
-Users obtain both through market exchange to satisfy needs and wants. The statement correctly pairs product type with how people use businesses to meet those ends.
+The statement is true.', 'Money changes hands for cheese or for painting. Each side of the trade gets something it values, which is exchange fulfilling needs or wants.
 
-Map that definition onto the case where households, startups, and manufacturing firms interacting in a market system. The claim’s actors and constraints (here: goods, services) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Thirty wheels left is a fixed stock. Toni must decide how to allocate that scarce remaining supply among the queue.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.'] WHERE case_id = 'CASE 2.1.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cash on the balance sheet does not multiply managerial hours or factory floors. Attention and capacity remain limited among competing projects, so scarcity still binds a large firm.
 
-The statement is true.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is true.', 'Household wants may be open-ended, but budgets are not. Finite income forces trade-offs, which is exactly economising.
 
-Production is a chain of inputs. A smartphone maker cannot assemble devices without specialised components — chips, screens, batteries — from upstream suppliers.
+The statement is false.', 'Tax capacity and political capital are limited within any budget period. Governments still allocate among projects rather than funding every idea at once.
 
-That input requirement is an operational need of the manufacturer. The statement describes that supplier dependence accurately.
+The statement is false.', 'When a resource has more valuable uses than units available, careful prioritisation is the rational response. That is what economising means.
 
-Map that definition onto the case where households, startups, and manufacturing firms interacting in a market system. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Labour hours and raw materials are limited inputs. Entrepreneurs who ignore that limit struggle to stay viable, so economising on inputs is required.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.'] WHERE case_id = 'CASE 2.1.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sami owns the café and supplies beans and prepared drinks, so he acts as an entrepreneur. Customers buying from him act as households.
 
-The statement is true.
-', 'TRUE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
+The statement is true.', 'A bag of beans is a tangible product. Espresso preparation is work performed for the customer. That is the familiar goods-versus-services split.
 
-Fabricating components requires material inputs and labour. A manufacturer that tried to operate without raw materials or a workforce could not transform anything into finished parts. The statement restates that production needs factors and materials rather than self-sufficiency in isolation.
+The statement is true.', 'A strong coffee habit is usually about preference rather than bare survival. Treated that way, it sits with wants more than with strict needs.
 
-Map that definition onto the case where households, startups, and manufacturing firms interacting in a market system. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Trying a seasonal flavour for pleasure goes beyond necessity. Enjoyment-driven tasting is a want.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is true.', 'Forty kilograms for the season is a hard cap. Sami must decide how to stretch that scarce lot across weeks and drinks.
 
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is true.'] WHERE case_id = 'CASE 2.1.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Nora gives novels; Felix gives tutoring time. Each side gets something it values without money changing hands, so the swap is barter exchange.
 
-Individuals, as households or sole traders, buy, sell, and barter routinely — groceries, used goods, freelance work, peer-to-peer swaps. They are not passive spectators waiting for firms to act; they are active trading partners. The statement affirms that direct participation in exchange.
+The statement is false.', 'Novels are tangible items; tutoring is an activity performed for Nora. Goods and services classify exactly that way.
 
-Map that definition onto the case where households, startups, and manufacturing firms interacting in a market system. The claim’s actors and constraints (here: goods, services) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Students still have scarce time, books, and study needs. Economic concepts apply to individuals, not only to registered firms.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is false.', 'Felix has only so many free afternoons. Choosing tutoring over other uses of those hours is allocating a scarce resource.
 
-The statement is true.
-', 'TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
+The statement is true.', 'Agreeing to one swap settles that trade only. Remaining evenings, other books, and other commitments still require fresh choices.
 
-Households combine survival requirements with preferences. Food, shelter, and medical care sit on the needs side; cinema and similar leisure sit on the wants side.
+The statement is false.'] WHERE case_id = 'CASE 2.1.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Home-grown food still depends on limited land, time, and seed. Those constraints force economising even when no wage is earned.
 
-Both motivate spending and exchange. The statement keeps that needs/wants split while recognising both as household motives.
+The statement is true.', 'Bicycle repair is work performed on the customer''s bike. That activity is a service even if some physical parts are fitted along the way.
 
-Map that definition onto the case where households, startups, and manufacturing firms interacting in a market system. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Eggs sold for cash meet the neighbours'' demand for food. Money for produce is exchange that fulfils needs or wants.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is true.', 'Retirement changes labour-market status, not the household-versus-entrepreneur distinction by itself. Growing food for their own table keeps them on the household side unless they are running a business.
 
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
+The statement is false.', 'Land and animals cannot be devoted fully to every use at once. Choosing how much to plant versus how many chickens to keep is a scarce-resource decision.
 
-Classification follows what is transferred. A bag of roasted beans is a tangible item the customer takes away — a good.
+The statement is true.'] WHERE case_id = 'CASE 2.1.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Firewood for canned food is a direct swap that meets needs on both sides. Distance from shops does not stop that trade from counting as exchange.
 
-The barista’s preparation of a drink is labour performed for the customer — a service. One café can sell both categories in the same visit; the statement separates them correctly.
+The statement is true.', 'Karl still decides how much wood to cut, what to trade, and how to use his time. Avoiding shops does not remove those economic choices.
 
-Map that definition onto the case where a corner café where customers buy bags of coffee beans and pay baristas to prepare drinks. The claim’s actors and constraints (here: good, service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.', 'Claiming independence does not create unlimited labour, food, or firewood. Scarcity of effort and stores still applies to him personally.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is false.', 'Accessible wood and the hours needed to chop it are limited. Remote living does not turn forests into an unlimited free resource for any one person.
 
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is false.', 'Needs, wants, and scarcity apply to people generally. Formal business or household registration is not a ticket into those concepts.
 
-Needs and wants are different teaching categories. A need is tied to basic well-being; a want is a preferred but non-essential desire.
+The statement is false.'] WHERE case_id = 'CASE 2.1.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The Hoffmanns buy repair for their kitchen, so they act as a household. Boris supplies the wiring as a tradesperson, so he acts as an entrepreneur in that deal.
 
-A general craving for caffeine may feel urgent, but a flavoured latte is a specific preference layered on top of any hydration or alertness need. Treating the two concepts as identical erases that distinction.
+The statement is true.', 'Electrical repair is work performed on the property rather than a finished object simply handed over. That makes it a service.
 
-Map that definition onto the case where a corner café where customers buy bags of coffee beans and pay baristas to prepare drinks. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Faulty wiring created a need for a safe, working system. Paying 180 euros for the repair meets that need through exchange.
 
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+The statement is true.', 'Later the same day Boris shops for his family''s groceries. In that role he is a household with needs of his own, not an entrepreneur selling repair.
 
-The statement is false.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is true.', 'Working hours in a day are finite. Spreading them across jobs means prioritising, which is economising on a scarce resource.
 
-If a habitual drink is not required for basic well-being, it belongs with wants: desired, repeatable, but not a survival necessity. Habit strength does not automatically promote a preference into a need. The statement applies that filter correctly to a craving for a particular drink.
+The statement is true.'] WHERE case_id = 'CASE 2.1.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Installation is an activity performed on the customer''s machine. The physical computer in the room does not turn that activity into a good.
 
-Map that definition onto the case where a corner café where customers buy bags of coffee beans and pay baristas to prepare drinks. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'An e-book file is a transferable product the buyer obtains, even without physical weight. Digital goods still count as goods when they are items delivered, not merely work performed.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is false.', 'Haircuts, repairs, lessons, and transport are routinely bought and sold. Services are exchanged in markets just as goods are.
 
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is false.', 'Sitting down for a prepared meal is mainly the catering service of cooking and serving, not merely taking home a tangible product. Calling every on-site meal "always a good" oversimplifies the classification.
 
-Being organised as a business does not erase operational needs. A café needs reliable bean suppliers, milk, cups, staff hours, and working equipment.
+The statement is false.', 'The pizza remains a tangible good; bringing it to the door is an added delivery service. Delivery does not flip the pizza from service into good or the other way around.
 
-Without those inputs, it cannot serve customers. The claim that a business cannot itself have needs confuses legal form with economic reality.
+The statement is false.'] WHERE case_id = 'CASE 2.1.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Live violin playing is an activity listeners enjoy in the moment. Nothing physical is handed over as the main product, so the performance is a service.
 
-Map that definition onto the case where a corner café where customers buy bags of coffee beans and pay baristas to prepare drinks. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Enjoying atmosphere on the square is not required for survival. Tips given for that enjoyment satisfy a want.
 
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+The statement is true.', 'Listeners still give money in return for the music they heard. Voluntary, unfixed amounts do not erase the exchange; they only leave the price open.
 
-The statement is false.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
+The statement is false.', 'Rent is a personal housing need. Individuals face such needs whether or not they run a registered company.
 
-Payment completes a two-sided exchange: the customer gives money and receives beans or a prepared drink; the café gives the product or service and receives revenue. Each side advances a need or want through that trade. The statement describes that mutual fulfilment accurately.
+The statement is true.', 'A Sunday has only so many performing hours. Choosing where to busk allocates that scarce time across locations.
 
-Map that definition onto the case where a corner café where customers buy bags of coffee beans and pay baristas to prepare drinks. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.'] WHERE case_id = 'CASE 2.1.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A haircut is work performed on Sabine''s hair, so it is a service. A shampoo bottle taken home is a tangible product, so it is a good.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'Paying with money does not decide the classification. The haircut remains an activity performed; only the bottle is a good.
 
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is false.', 'Timo still needs premises, products, and personal living costs. Supplying haircuts as an entrepreneur does not erase those needs.
 
-With twelve euros, Jonas faces a classic scarce budget. An eight-euro bus pass supports getting to school — framed here as a need — while a ten-euro game skin is entertainment — a want.
+The statement is false.', 'Repeating the visit every six weeks does not create unlimited time or money. Each appointment is still a scarce-resource choice.
 
-The labels follow the needs-versus-wants distinction, not the euro price alone. $$8 + 10 = 18 > 12$$ He cannot buy both from the twelve-euro budget, which is why the classification matters for the choice.
+The statement is false.', 'Whether Sabine pays for the cut or the bottle, money is given for something she values. That is exchange fulfilling a need or a want.
 
-Map that definition onto the case where jonas has twelve euros pocket money and must choose between an eight-euro bus pass and a ten-euro game skin. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.'] WHERE case_id = 'CASE 2.1.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Buying groceries is household-to-firm trade. Selling used furniture to another family is household-to-household trade. Both are exchange.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.', 'Households purchase, sell, and barter every day. Consumption does not bar them from trading; they are active exchange partners.
 
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
+The statement is false.', 'When each person gives something the other values, needs or wants are fulfilled on both sides. Money is optional for that definition of exchange.
 
-Price does not decide the needs/wants category. Many wants have prices (concert tickets, game skins); many needs also have prices (food, transport).
+The statement is true.', 'Everyday purchases work without a registered written contract. Formal paperwork can help in some deals, but it is not required for exchange to exist.
 
-Classification depends on necessity for well-being, not on whether a sticker price exists. So both items having prices does not force both to be needs.
+The statement is false.', 'A mobile transfer moves purchasing power just as coins or notes do. Electronic payment is monetary exchange in another form.
 
-Map that definition onto the case where jonas has twelve euros pocket money and must choose between an eight-euro bus pass and a ten-euro game skin. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-The wording asserts that individuals already face scarce-resource choices before entrepreneurship — which is how Jonas’s pocket-money problem is usually taught — yet this letter is scored false in the bank. For scoring purposes the letter is false; do not flip it to true by recognising the familiar participation topic alone.
-
-Map that definition onto the case where jonas has twelve euros pocket money and must choose between an eight-euro bus pass and a ten-euro game skin. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'FALSE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
-
-Saving the twelve euros is itself an allocation decision: Jonas assigns the scarce budget to “hold cash now” rather than to the bus pass or the game skin. Opting not to buy is not opting out of economics; it is choosing one use of limited means over others. The claim that he has escaped all economic decision-making fails.
-
-Map that definition onto the case where jonas has twelve euros pocket money and must choose between an eight-euro bus pass and a ten-euro game skin. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Satisfying one use of the budget does not delete other desires. After buying the bus pass, Jonas may still want the game skin; the want can return next month when new pocket money arrives.
-
-The absolute words “permanently” and “never” overclaim. Needs and wants are separate categories that can coexist after a purchase.
-
-Map that definition onto the case where jonas has twelve euros pocket money and must choose between an eight-euro bus pass and a ten-euro game skin. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Screen replacement is labour performed on the customer’s device — a service. A phone case sold at the counter is a tangible product the customer takes away — a good. PhoneFix can supply both in one visit; the statement separates the categories correctly.
-
-Map that definition onto the case where phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. The claim’s actors and constraints (here: service, good) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-A limited monthly batch of spare parts is scarce by definition: the shop cannot accept unlimited repair jobs once the batch is used up. Being a business rather than a household does not magically create an infinite parts stock.
-
-The word “never” is the overclaim. Businesses face scarcity of inputs just as households face scarcity of income.
-
-Map that definition onto the case where phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. Even if the stem mentions related details (here: household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-A decorative case bought purely for design is a preference about appearance, not a requirement for basic well-being. That places it on the wants side of the needs/wants split. Functionally necessary repair might support a need; design-only accessories typically do not.
-
-Map that definition onto the case where phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Whether a phone is labelled a luxury in casual speech does not remove it from economic analysis. For many households a working phone is needed for work, school contact, or emergencies, so repair can fulfil a genuine need. The absolute “never” and the claim that phones sit “outside” economics are both wrong.
-
-Map that definition onto the case where phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
-
-The statement is false.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-A fixed monthly parts batch is a hard capacity constraint. The shop must decide which jobs to accept, delay, or refuse — that prioritisation is economising under scarcity. Without the batch limit, ranking jobs would be less urgent; with it, allocation is unavoidable.
-
-Map that definition onto the case where phoneFix Wien replaces cracked screens using spare parts ordered in limited monthly batches. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Introductory models often summarise the economy as households and entrepreneurs (firms) interacting through exchange of goods, services, and factors. That pairing is the core building block the lesson asks students to list. The statement captures that interaction framing.
-
-Map that definition onto the case where during a first lesson students list core building blocks of economic life. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Goods are tangible items; services are intangible activities performed for someone. The statement restates that standard classification without mixing the labels.
-
-Map that definition onto the case where during a first lesson students list core building blocks of economic life. The claim’s actors and constraints (here: Goods, services) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Both households and businesses have needs (and wants). Exchange is one way those needs and wants get fulfilled when parties trade rather than producing everything themselves. The statement joins the actor-level needs claim with the role of exchange correctly.
-
-Map that definition onto the case where during a first lesson students list core building blocks of economic life. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Scarcity means resources are limited relative to desired uses. Economising — careful allocation — is the rational response; assuming unlimited resources would deny the constraint. The statement links scarcity to economising for individuals and businesses.
-
-Map that definition onto the case where during a first lesson students list core building blocks of economic life. The claim’s actors and constraints (here: Scarcity) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Every actor faces scarce time and limited means. Trying to “opt out” still leaves those constraints in place, so decisions about use continue — including the decision to do nothing with a resource. The statement correctly denies a full exit from economic decision-making.
-
-Map that definition onto the case where during a first lesson students list core building blocks of economic life. The claim’s actors and constraints (here: household) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Herr Novak organises production and sale of bread — the entrepreneur role. Families buying bread for household consumption act as households. The statement assigns both roles in the bakery transaction correctly.
-
-Map that definition onto the case where herr Novak sells bread at his Linz bakery and charges one euro extra for doorstep delivery. The claim’s actors and constraints (here: entrepreneur) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Bread is a tangible product — a good. Doorstep delivery is an activity performed for the customer — a service.
-
-Charging one euro extra for delivery does not change that classification; it prices the service alongside the good. The statement matches the tangible/intangible distinction.
-
-Map that definition onto the case where herr Novak sells bread at his Linz bakery and charges one euro extra for doorstep delivery. The claim’s actors and constraints (here: good, service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Owning a business does not erase personal or operational needs. Herr Novak still needs food and housing as a person, and the bakery needs flour, fuel, staff, and premises to operate. The claim that he “personally has no needs” confuses the supplier role with the disappearance of needs.
-
-Map that definition onto the case where herr Novak sells bread at his Linz bakery and charges one euro extra for doorstep delivery. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Reject the reason link first — once the because-clause fails, the heading category fails with it.
-
-The statement is false.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Paying money for delivery is a standard monetary exchange: money for a service. A service does not lose economic value the moment it is performed; the payment is precisely for that performance. Denying that the payment is exchange misreads both services and exchange.
-
-Map that definition onto the case where herr Novak sells bread at his Linz bakery and charges one euro extra for doorstep delivery. Even if the stem mentions related details (here: service), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'FALSE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Flour and oven fuel must be bought or otherwise obtained in limited quantities. They are not an infinite free flow.
-
-Any bakery must economise — how much dough to bake, how hot to run the oven, which batches to prioritise. The words “unlimited” and “never” are the overclaims.
-
-Map that definition onto the case where herr Novak sells bread at his Linz bakery and charges one euro extra for doorstep delivery. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Exchange is mutual transfer of valued goods or services. Swapping gardening lessons for a bookshelf is barter: each neighbour gives something the other values.
-
-Money is absent, but exchange is present. The statement correctly counts the swap as exchange.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Restricting exchange to euro cash or electronic transfers would exclude all barter. Exchange is broader than monetary payment; the medium can be goods or services. The word “only” is the overclaim.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Wood for the bookshelf is a physical input available only in limited quantity for the carpenter’s projects. Using more wood on one shelf means less wood for other work, so economising on how much he uses is required. The statement links a limited resource to economising correctly.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Gardening lessons are an activity performed for the neighbour, not a physical object handed over as the main product. That is the definition of a service. The statement classifies the lessons correctly.
-
-Held against the chapter test (here: service), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
-
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Individuals have needs and wants whether or not they own a firm. Direct exchange between neighbours can help satisfy those needs and wants without a shop or formal business on either side. The statement correctly refuses to reserve needs, wants, and exchange for businesses alone.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Petra’s family buys the table for household use — household role. Fabian produces and sells the table as his trade — entrepreneur role. The 650-euro commission is the market link between those roles.
-
-Map that definition onto the case where petra pays carpenter Fabian 650 euros for an oak dining table he builds and delivers. The claim’s actors and constraints (here: household, entrepreneur) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — A good is a tangible item that can be owned and transferred — bread, furniture, timber, devices — as distinct from an activity performed for a customer.
-
-The finished oak dining table is a tangible item produced and delivered — a good. Delivery may accompany it, but the table itself remains a physical product. The statement classifies the table correctly.
-
-Map that definition onto the case where petra pays carpenter Fabian 650 euros for an oak dining table he builds and delivers. The claim’s actors and constraints (here: good) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
-
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Paying 650 euros for the table is monetary exchange that supplies the family with furniture they need (or want) without building it themselves. Fulfilment of that furniture requirement runs through the trade. The statement describes that channel correctly.
-
-Map that definition onto the case where petra pays carpenter Fabian 650 euros for an oak dining table he builds and delivers. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Timber is an operational input Fabian must obtain to fulfil commissions. Calling raw materials “merely wants” for a business understates their role: without oak he cannot deliver the ordered table. Businesses have genuine needs for inputs, not only households.
-
-Map that definition onto the case where petra pays carpenter Fabian 650 euros for an oak dining table he builds and delivers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Reject the reason link first — once the because-clause fails, the heading category fails with it.
-
-The statement is false.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Oak stock is limited for each commission and across Fabian’s order book. Using thicker boards or larger dimensions on one table reduces what remains for others, so he must economise on how much oak each job consumes. The statement links limited timber to economising correctly.
-
-Map that definition onto the case where petra pays carpenter Fabian 650 euros for an oak dining table he builds and delivers. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Keeping laptop production running requires specialised components from suppliers. That input requirement is an operational need of the manufacturer in the supply chain. The statement describes that dependence accurately.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-High-tech manufacturers have extensive internal needs: components, skilled labour, energy, logistics, and working capital. End consumers are not the only parties who experience genuine need. The claim of “zero internal needs” is false.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Daily life is full of household purchases of goods and services — food, transport, repairs, entertainment — that satisfy both needs and wants. Businesses are the usual counterparties in those trades. The statement correctly places households on the buying side of that exchange.
-
-Held against the chapter test (here: goods, services), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Meeting needs in a given month does not automatically wipe out wants. After rent and food are covered, preferences for leisure, fashion, or upgrades can remain and even grow. Needs and wants are separate categories; satisfying one does not erase the other.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'FALSE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Teenagers with pocket money already choose how to spend or save limited means. That is household-side (or individual) economic participation long before any business registration. The claim that they sit “outside the economy” until formal status is acquired is wrong.
-
-Held against the chapter test (here: household), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-In the stem, transport and toiletries are framed as needs (about 90 euros) while designer trainers at 140 euros are a want. The remaining budget after needs still has to cover or forgo the want. $$90 + 140 = 230$$ Against a 300-euro monthly sum, both fit numerically, but the classification still separates necessity from preference.
-
-Map that definition onto the case where student Lukas has 300 euros monthly for transport, toiletries, and designer trainers. The claim’s actors and constraints (here: 140) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Receiving money from parents does not remove Lukas from the household side of the economy. He is a household member allocating consumption and saving; the source of the transfer does not redefine his role as “outside.”.
-
-Map that definition onto the case where student Lukas has 300 euros monthly for transport, toiletries, and designer trainers. Even if the stem mentions related details (here: household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Reject the reason link first — once the because-clause fails, the heading category fails with it.
-
-The statement is false.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Buying trainers uses part of the budget for a want; it does not cancel the ongoing need for transport. He still needs to get around for the rest of the month, so transport spending remains relevant. One purchase does not erase a different category of need.
-
-Map that definition onto the case where student Lukas has 300 euros monthly for transport, toiletries, and designer trainers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-The statement is false.
-', 'FALSE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Economics studies how people choose among scarce means to satisfy needs and wants. Non-essential desires are inside that scope, not excluded for being “irrational” in casual speech. Wanting trainers is a preference the framework can analyse.
-
-Map that definition onto the case where student Lukas has 300 euros monthly for transport, toiletries, and designer trainers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-The statement is false.
-', 'FALSE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-A fixed monthly sum is capped. Three hundred euros cannot fund unlimited purchases; Lukas must economise among transport, toiletries, trainers, and anything else. “Unlimited” and “never” deny the budget constraint that defines the case.
-
-Map that definition onto the case where student Lukas has 300 euros monthly for transport, toiletries, and designer trainers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Reinisch organises production and sale at the stall — entrepreneur. Village buyers purchase for household use — households. The Saturday market is the exchange setting that links those roles.
-
-Map that definition onto the case where farmer Reinisch sells potatoes and carrots from eight hectares at a Saturday village market. The claim’s actors and constraints (here: entrepreneur) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Scarcity is about the means actually available for a decision, not about whether more land exists somewhere else in theory. Reinisch’s eight hectares are fixed for his planting plan; using a hectare for potatoes means it is not available for carrots. Theoretical land markets elsewhere do not make his current plot non-scarce.
-
-Map that definition onto the case where farmer Reinisch sells potatoes and carrots from eight hectares at a Saturday village market. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Potatoes and carrots are tangible products — goods — even if they will later be cooked. Cooking does not reclassify the raw produce as a service at the point of sale. The statement keeps goods and services distinct correctly.
-
-Map that definition onto the case where farmer Reinisch sells potatoes and carrots from eight hectares at a Saturday village market. The claim’s actors and constraints (here: goods, services) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
-
-Eight hectares are a hard land constraint. Splitting them among crops is an allocation decision Reinisch cannot avoid if he wants to use the land productively. That is economising under scarcity of land.
-
-Map that definition onto the case where farmer Reinisch sells potatoes and carrots from eight hectares at a Saturday village market. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Cash payment for produce is ordinary monetary exchange. Barter is also exchange, but it is not the only form that “counts.” Restricting “real” trade to barter alone is false.
-
-Map that definition onto the case where farmer Reinisch sells potatoes and carrots from eight hectares at a Saturday village market. Even if the stem mentions related details (here: barter), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Toni and Rosa supply cheese and face-painting for sale — entrepreneurs. Visiting families buy for household consumption or leisure — households. The market-day setting assigns those roles clearly.
-
-Map that definition onto the case where toni sells cheese wheels; Rosa offers children''s face-painting; families buy for groceries or fun. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-A cheese wheel is a tangible item — a good. Face-painting is an activity performed for a child — a service. The statement applies the goods/services split correctly.
-
-Map that definition onto the case where toni sells cheese wheels; Rosa offers children''s face-painting; families buy for groceries or fun. The claim’s actors and constraints (here: good, service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Cheese bought for weekly groceries supports nutrition — typically a need in this lesson framing. Face-painting is enjoyment — a want. The statement maps each purchase to the matching category.
-
-Map that definition onto the case where toni sells cheese wheels; Rosa offers children''s face-painting; families buy for groceries or fun. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Paying for cheese or face-painting is exchange: money for a good or service. Sellers receive revenue; buyers receive what fulfils a need or want. Both sides of each trade advance their aims through that swap.
-
-Map that definition onto the case where toni sells cheese wheels; Rosa offers children''s face-painting; families buy for groceries or fun. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Thirty wheels left is a physical stock limit. Toni must decide how to allocate that stock among queuing families — who gets how many, at what pace — which is economising under scarcity. Without the stock cap, prioritisation would be less binding.
-
-Map that definition onto the case where toni sells cheese wheels; Rosa offers children''s face-painting; families buy for groceries or fun. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Large cash reserves ease one constraint but not all. Managerial attention, factory hours, and machine capacity remain limited relative to competing projects, so scarcity continues inside a multinational. The statement correctly refuses to equate “rich in cash” with “no scarcity.”.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Unlimited wants are exactly why households must economise: budgets are finite while desires compete. Saying households “never economise” because wants are unlimited reverses the logic — unlimited wants plus limited budgets force trade-offs.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Governments face budget and capacity limits within a period. Raising taxes takes time, has political and economic costs, and still leaves a finite revenue pool to allocate among projects. They are not exempt from scarcity.
-
-Held against the chapter test (here: scarcity), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-When a resource is limited relative to competing uses, careful allocation — economising — is the rational response. The statement states that conditional definition cleanly.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Labour hours and raw materials are costly, limited inputs. Entrepreneurs who ignore those limits risk losses or shutdown; economising on inputs is part of staying viable.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Sami sells bean bags and espresso service as a business owner — entrepreneur. Customers buy for household consumption — households. The morning-queue setting matches that role split.
-
-Map that definition onto the case where owner Sami sells bean bags and employs baristas; a rare Ethiopian lot is limited to forty kilograms. The claim’s actors and constraints (here: goods, services, entrepreneur) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-The bean bag is a tangible take-away product — a good. Espresso preparation is barista labour — a service. The statement classifies both offerings correctly.
-
-Map that definition onto the case where owner Sami sells bean bags and employs baristas; a rare Ethiopian lot is limited to forty kilograms. The claim’s actors and constraints (here: good, service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-A strong habitual coffee craving can feel urgent without being a survival requirement. In the needs/wants framework it is usually treated as a want unless the lesson ties it to basic well-being. The statement allows that want classification.
-
-Map that definition onto the case where owner Sami sells bean bags and employs baristas; a rare Ethiopian lot is limited to forty kilograms. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Trying a new seasonal flavour for enjoyment is preference and variety-seeking — a want, not a basic necessity. The statement places it correctly on the wants side.
-
-Map that definition onto the case where owner Sami sells bean bags and employs baristas; a rare Ethiopian lot is limited to forty kilograms. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Forty kilograms of a rare lot is a hard seasonal cap. Sami must decide how much to brew each day, what to reserve, and what to sell as bags — economising across the season. $$40\text{ kg}$$ total is finite; every kilogram allocated one way is unavailable another way.
-
-Map that definition onto the case where owner Sami sells bean bags and employs baristas; a rare Ethiopian lot is limited to forty kilograms. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Exchange does not require money. Nora’s novels for Felix’s tutoring is barter: each transfers something the other values. The absence of cash does not cancel the exchange.
-
-Map that definition onto the case where nora lends Felix novels; Felix tutors her two afternoons with no money exchanged. Even if the stem mentions related details (here: tutoring), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-The statement is false.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Felix’s tutoring is an activity performed for Nora — a service. Nora’s novels are tangible items — goods. The statement matches the standard classification.
-
-Map that definition onto the case where nora lends Felix novels; Felix tutors her two afternoons with no money exchanged. The claim’s actors and constraints (here: tutoring, service, goods) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Being students rather than registered businesses does not switch off needs, wants, or exchange. Individuals face those concepts whenever they allocate scarce time and belongings. The claim that the concepts “do not apply” is wrong.
-
-Map that definition onto the case where nora lends Felix novels; Felix tutors her two afternoons with no money exchanged. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Reject the reason link first — once the because-clause fails, the heading category fails with it.
-
-The statement is false.
-', 'TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Felix’s free afternoons are limited. Two afternoons spent tutoring cannot also be spent on other commitments, so his time is a scarce resource he allocates. The statement identifies that scarcity correctly.
-
-Map that definition onto the case where nora lends Felix novels; Felix tutors her two afternoons with no money exchanged. The claim’s actors and constraints (here: tutoring) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
-
-Agreeing to one swap settles that particular trade; it does not end all future choices about remaining time, other novels, or other study plans. Scarcity of time continues after the handshake.
-
-Map that definition onto the case where nora lends Felix novels; Felix tutors her two afternoons with no money exchanged. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Growing one’s own food still uses limited land, time, and seed. Retirees must decide what to plant, how much effort to spend, and what to preserve — economising under scarcity even without supermarket trips. Self-provision does not abolish scarcity.
-
-Held against the chapter test (here: scarcity), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Bicycle repair is work performed on the customer’s bike rather than a new physical product as the main output — a service. The statement classifies workshop repair correctly.
-
-Held against the chapter test (here: service), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Selling surplus eggs for cash is monetary exchange. Buyers obtain eggs that fulfil a need or want; sellers obtain money. Both sides gain through the trade.
-
-Held against the chapter test (here: surplus), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Role labels follow activity, not age or wage status. Retirees who mainly consume and manage a household budget remain households.
-
-They become entrepreneurs only if they organise production and sale as a business activity — for example regularly selling eggs as a market operation — and even then the household role can coexist. “No longer earn wages” alone does not force the entrepreneur label.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
-
-The statement is false.
-', 'TRUE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
-
-Land and time devoted to planting are unavailable for expanding the chicken flock, and vice versa. Choosing the mix is an allocation decision under scarcity that cannot be escaped by wishing resources were unlimited.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Trading firewood for canned food is barter exchange that helps meet needs (heat and food) even without nearby shops. Money and storefronts are unnecessary for the exchange concept.
-
-Map that definition onto the case where karl lives in a remote cabin and occasionally trades firewood for canned food from hikers. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Introductory micro foundations here turn on scarcity, economising, goods versus services, needs versus wants, and the household–entrepreneur roles in exchange.
-
-Avoiding shops changes where trades happen; it does not remove choices about firewood, food stocks, and labour time. Karl still decides how much to cut, store, and trade. That is ongoing economic decision-making, not a successful opt-out.
-
-Map that definition onto the case where karl lives in a remote cabin and occasionally trades firewood for canned food from hikers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
-
-The statement is false.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Declaring “I need nobody” is a social claim, not a proof that scarcity vanished. Karl still faces limited firewood, limited canned food, and limited chopping time. Scarcity applies to his means regardless of how independent he feels.
-
-Map that definition onto the case where karl lives in a remote cabin and occasionally trades firewood for canned food from hikers. Even if the stem mentions related details (here: scarcity), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-The statement is false.
-', 'FALSE — Economising is the deliberate response to scarcity: ranking alternatives, substituting, and allocating finite stocks carefully instead of treating resources as unlimited.
-
-Accessible timber, dry storage, and chopping effort are limited. Forests in the abstract do not give Karl unlimited ready firewood without time and transport costs. He must economise on how much he cuts and trades.
-
-Map that definition onto the case where karl lives in a remote cabin and occasionally trades firewood for canned food from hikers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
-
-The statement is false.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Needs, wants, and scarcity apply to individuals generally — including someone living remotely — not only to formally registered businesses or official household units. Registration status is not the on/off switch for those concepts.
-
-Map that definition onto the case where karl lives in a remote cabin and occasionally trades firewood for canned food from hikers. Even if the stem mentions related details (here: scarcity), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Role depends on the activity in each transaction. When the Hoffmanns pay for kitchen wiring, they buy for household use — household.
-
-Boris supplies the repair as his trade — entrepreneur. The 180-euro payment links those roles in the morning transaction.
-
-Map that definition onto the case where the Hoffmanns pay Boris 180 euros for kitchen wiring; that evening Boris buys groceries for his family. The claim’s actors and constraints (here: household, entrepreneur) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Electrical repair is labour performed on the existing kitchen system. The main thing transferred is work, not a new packaged object as the product — so it is a service. Spare parts may be used, but the classification follows the repair activity.
-
-Map that definition onto the case where the Hoffmanns pay Boris 180 euros for kitchen wiring; that evening Boris buys groceries for his family. The claim’s actors and constraints (here: service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-The statement is true.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Faulty wiring created a practical need for a safe, working system. Paying money for Boris’s repair is exchange that fulfils that need without the Hoffmanns doing the work themselves. The statement traces need → exchange → fulfilment correctly.
-
-Map that definition onto the case where the Hoffmanns pay Boris 180 euros for kitchen wiring; that evening Boris buys groceries for his family. The claim’s actors and constraints (here: service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-The same person can wear different economic roles in different transactions. After work, Boris buys groceries for his family — he is then on the household side with consumption needs of his own. Entrepreneur by day and household shopper by evening is normal, not a contradiction.
-
-Map that definition onto the case where the Hoffmanns pay Boris 180 euros for kitchen wiring; that evening Boris buys groceries for his family. The claim’s actors and constraints (here: household) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Boris cannot be in two kitchens at once. His working hours in a day are limited, so accepting one job means less time for another. That forces economising across jobs under scarcity of labour time.
-
-Map that definition onto the case where the Hoffmanns pay Boris 180 euros for kitchen wiring; that evening Boris buys groceries for his family. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Software installation is an activity performed on the customer’s machine. The physical computer is the customer’s good; the installation labour is a service.
-
-Involving a tangible device does not turn the installation itself into a good. The statement keeps that distinction clear.
-
-Held against the chapter test (here: service, good), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Lack of physical weight does not decide the goods/services label by itself. A downloadable e-book is still a transferable digital product often classified with goods (or digital goods), not automatically a service merely because it is weightless.
-
-Services are activities performed for someone; an e-book file is content delivered as a product. Weightlessness alone does not force the service label.
-
-Held against the chapter test (here: service, good), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Markets routinely exchange services: repairs, lessons, transport, consulting, installations. Households buy services from firms and sometimes sell services to firms. The words “only” and “never” wrongly ban services from exchange.
-
-Held against the chapter test (here: goods, services), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'FALSE — A good is a tangible item that can be owned and transferred — bread, furniture, timber, devices — as distinct from an activity performed for a customer.
-
-A restaurant meal on the premises mixes tangible food (good elements) with preparation and serving (service elements). Saying it “is a good because food is always tangible” ignores the service component that is central to dining out. Classification should recognise the combination, not flatten everything to “good.”.
-
-Held against the chapter test (here: good), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'FALSE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Delivery is a service layered onto the pizza. The pizza remains a tangible good; adding doorstep delivery does not convert the pizza “from a service into a good,” nor does delivery redefine the pizza’s product type in the reverse direction the sentence claims. Delivery adds a service; it does not rewrite the pizza’s classification through a false conversion story.
-
-Held against the chapter test (here: service, good), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.1.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Elena’s violin performance is an activity listeners enjoy in the moment. No physical object is the main thing handed over — so the performance is a service. Tips pay for that activity.
-
-Map that definition onto the case where elena busks on the main square; listeners drop coins into her case for violin performances. The claim’s actors and constraints (here: service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-The statement is true.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Paying for atmosphere and enjoyment is preference, not a survival requirement. In the needs/wants framework that is a want. Listeners can value the music highly without it becoming a basic need.
-
-Map that definition onto the case where elena busks on the main square; listeners drop coins into her case for violin performances. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
-
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Exchange does not require a fixed, pre-agreed price list. Listeners give coins; Elena gives a performance.
-
-Voluntary tip amounts still complete a mutual transfer of value. Unfixed and voluntary does not mean “no exchange.”.
-
-Map that definition onto the case where elena busks on the main square; listeners drop coins into her case for violin performances. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'TRUE — Needs are requirements tied to basic well-being or to keeping a firm operating; wants are desired extras that raise comfort but are not required for that baseline. Both households and businesses have needs that exchange can help meet.
-
-Rent is a household need. Elena’s need to cover rent shows that individuals experience economic needs even when they are not a registered company. Needs are not reserved for formal businesses.
-
-Map that definition onto the case where elena busks on the main square; listeners drop coins into her case for violin performances. The claim’s actors and constraints (here: rent) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Sunday performing hours are limited. Time spent at one square cannot also be spent at another location the same afternoon, so Elena must economise across places. That is scarcity of performing time.
-
-Map that definition onto the case where elena busks on the main square; listeners drop coins into her case for violin performances. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-A haircut is labour performed on Sabine’s hair — a service. A shampoo bottle is a tangible product taken home — a good. One salon visit can include both; the statement separates them correctly.
-
-Map that definition onto the case where sabine pays twenty-five euros for a haircut and may buy a shampoo bottle at the counter. The claim’s actors and constraints (here: service, good) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — A service is an intangible activity performed for someone — repair, tutoring, delivery, advice — rather than a physical object permanently handed over as the main product.
-
-Paying with money does not force the goods label. Money is the medium of exchange for both goods and services.
-
-The haircut remains a service even though it is paid in euros. Payment method does not rewrite product classification.
-
-Map that definition onto the case where sabine pays twenty-five euros for a haircut and may buy a shampoo bottle at the counter. Even if the stem mentions related details (here: goods, services), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Reject the reason link first — once the because-clause fails, the heading category fails with it.
-
-The statement is false.
-', 'FALSE — Households are consuming units that buy goods and services and may also sell labour or used items. Entrepreneurs organise production and sale under uncertainty. The same person can act as entrepreneur at work and as a household when shopping.
-
-Being on the entrepreneur side when cutting hair does not erase Timo’s personal needs (food, housing) or his business’s operational needs (premises, products, tools, bookings). Role as supplier ≠ absence of needs.
-
-Map that definition onto the case where sabine pays twenty-five euros for a haircut and may buy a shampoo bottle at the counter. Even if the stem mentions related details (here: entrepreneur), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-The statement is false.
-', 'FALSE — Scarcity is the gap between limited means — time, money, materials, attention — and unlimited ends. Extra income or capacity can ease one constraint, but it never makes every competing use affordable at once; choosing more of one use still means less of another.
-
-Routine purchases still use limited income and limited salon capacity. Visiting every six weeks does not create infinite money or infinite appointment slots. Scarcity continues; habit only makes the choice familiar.
-
-Map that definition onto the case where sabine pays twenty-five euros for a haircut and may buy a shampoo bottle at the counter. Even if the stem mentions related details (here: scarcity), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Paying for the cut or the bottle is exchange: money for a service or a good. Either purchase can fulfil a need (grooming, hygiene) or a want (a preferred brand), depending on motive.
-
-Map that definition onto the case where sabine pays twenty-five euros for a haircut and may buy a shampoo bottle at the counter. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Exchange is not limited to household↔firm retail. Households buy groceries from firms and can also sell used furniture to other households.
-
-Both are exchange. The statement correctly widens the map of who trades with whom.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Households trade constantly: buying, selling second-hand goods, renting, hiring services. Entrepreneurs are important market actors, but they do not hold an exclusive “entitlement” to exchange. “Only” and “never” are false.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Barter is exchange without money when each party gives something the other values. Two individuals swapping items or favours meet that definition.
-
-Held against the chapter test (here: Barter), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-Everyday exchange is valid without written, government-registered contracts — buying bread, tipping a musician, bartering among neighbours. Requiring registration for every valid exchange is an overclaim.
-
-Held against the chapter test (here: government), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
-
-The statement is false.
-', 'TRUE — Exchange is any mutually agreed swap of goods, services, or claims. Money often mediates the trade, but barter without money still counts as exchange because value changes hands by agreement.
-
-A mobile-app transfer is electronic money moving from buyer to seller in return for goods or services. That is monetary exchange, just like coins or banknotes. The medium changed; the exchange concept did not.
-
-Held against the chapter test (here: transfer), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.1.25' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 2.1.25' AND tier = 'full';

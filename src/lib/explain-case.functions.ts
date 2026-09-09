@@ -85,9 +85,9 @@ ${passages || "(no strong retrieval hits — rely on well-established economics 
 
 Produce a JSON object with EXACTLY these three fields:
 
-1. "classic_explanation": 2-4 clear sentences of plain-English reasoning explaining WHY the statement is ${truthLabel}. No jargon dumps, no bullet lists — flowing conversational tutor voice. Do not reference "the passage" or "the textbook".
+1. "classic_explanation": A living tutor walkthrough (4–8 sentences, or longer when numbers appear). Explain WHY the statement is ${truthLabel} the way a careful teacher would at the board: name the concept, show every needed comparison or calculation step in order, then finish with a plain verdict sentence ("The statement is true/false."). No jargon dumps, no bullet lists, no "It is important to note", no "In conclusion". Do not start with "TRUE" or "FALSE". Do not use em dashes (—) or en dashes (–); use commas or periods. Do not reference "the passage" or "the textbook".
 
-2. "textbook_context": ONE clean paragraph (60-180 words) copied/paraphrased tightly from the most relevant retrieved passage above. It must be self-contained prose that a student could read like an excerpt from the BBE book. Preserve the book's tone. No headings, no "[Passage 1]" markers.
+2. "textbook_context": ONE clean paragraph (60-180 words) copied/paraphrased tightly from the most relevant retrieved passage above. It must be self-contained prose that a student could read like an excerpt from the BBE book. Preserve the book's tone. No headings, no "[Passage 1]" markers. No em dashes.
 
 3. "highlight_text": A single verbatim substring taken from your "textbook_context" field — the exact sentence (or phrase) that most directly proves or disproves the statement. It MUST appear character-for-character inside "textbook_context". Keep it short: 4-25 words.`;
 

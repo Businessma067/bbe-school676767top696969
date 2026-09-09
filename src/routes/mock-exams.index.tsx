@@ -16,7 +16,6 @@ import {
   type ProductTier,
 } from "@/lib/mock-exams";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
-import { userOwnsFullCourse } from "@/lib/full-course-access";
 import {
   fetchMockAttempts,
   type MockAttempt,
@@ -32,13 +31,13 @@ export const Route = createFileRoute("/mock-exams/")({
       {
         name: "description",
         content:
-          "Full-length WU BBE mock exams: 34 tasks, 160 points, scored with the official wi2 method.",
+          "Full-length WU BBE mock exams: 35 tasks, 160 points, scored with the official wi2 method.",
       },
       { property: "og:title", content: "Mock Exams — BBE School" },
       {
         property: "og:description",
         content:
-          "Full-length WU BBE mock exams: 34 tasks, 160 points, scored with the official wi2 method.",
+          "Full-length WU BBE mock exams: 35 tasks, 160 points, scored with the official wi2 method.",
       },
     ],
   }),
@@ -58,10 +57,14 @@ function MockExamsPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [owns, history] = await Promise.all([userOwnsFullCourse(), fetchMockAttempts()]);
+      const [{ fetchAccessState }, history] = await Promise.all([
+        import("@/lib/entitlements"),
+        fetchMockAttempts(),
+      ]);
+      const state = await fetchAccessState();
       if (cancelled) return;
-      // Site lockdown: only allowlisted full-site accounts see mock exams.
-      setTier(owns ? "full" : "none");
+      // Lite buyers only see Lite mocks; Full buyers see the full set.
+      setTier(state.tier === "full" || state.tier === "lite" ? state.tier : "none");
       setAttempts(history);
 
       const progress: Record<string, { timed: boolean; answerSheet: boolean }> = {};
@@ -118,7 +121,7 @@ function MockExamsPage() {
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-caramel-deep" />
             <span className="text-xs font-medium tracking-wide text-taupe">
-              34 tasks · 160 points · wi2 scoring
+              35 tasks · 160 points · wi2 scoring
             </span>
           </div>
           <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">Mock Exams</h1>
@@ -269,19 +272,24 @@ function MockExamsPage() {
           <div className="rounded-xl border border-border bg-secondary/40 p-4 text-sm">
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Economics</span>
-              <span className="font-semibold">10 questions</span>
+              <span className="font-semibold">{SCORING_CONFIG.economics.taskCount} questions</span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">English</span>
-              <span className="font-semibold">11 questions</span>
+              <span className="font-semibold">{SCORING_CONFIG.english.taskCount} questions</span>
             </div>
             <div className="flex items-center justify-between py-1">
               <span className="text-muted-foreground">Math</span>
-              <span className="font-semibold">13 questions</span>
+              <span className="font-semibold">{SCORING_CONFIG.math.taskCount} questions</span>
             </div>
             <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="font-semibold">Total</span>
-              <span className="font-semibold">34 questions</span>
+              <span className="font-semibold">
+                {SCORING_CONFIG.economics.taskCount +
+                  SCORING_CONFIG.english.taskCount +
+                  SCORING_CONFIG.math.taskCount}{" "}
+                questions
+              </span>
             </div>
           </div>
 

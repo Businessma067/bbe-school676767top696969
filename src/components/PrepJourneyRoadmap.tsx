@@ -212,25 +212,25 @@ function NodeCaption({
 /** Wide desktop: path through circle centers; captions clear of the stroke. */
 function SpreadDesktopRoadmap() {
   /**
-   * Circle centers (percent of container) — path is drawn through these.
-   * High nodes: caption above. Low nodes: caption below.
-   * Above captions use enough offset to clear the "you are here" badge.
+   * Circle centers — even horizontal spacing (0 / 25 / 50 / 75), path sits lower
+   * in the frame so captions breathe under the hero copy.
    */
   const nodes = [
-    { milestone: MILESTONES[0], left: "0%", centerY: "42%", caption: "above" as const },
-    { milestone: MILESTONES[1], left: "25%", centerY: "62%", caption: "below" as const },
-    { milestone: MILESTONES[2], left: "51%", centerY: "42%", caption: "above" as const },
-    { milestone: MILESTONES[3], left: "76%", centerY: "58%", caption: "below" as const },
+    { milestone: MILESTONES[0], left: "0%", centerY: "54%", caption: "above" as const },
+    { milestone: MILESTONES[1], left: "25%", centerY: "74%", caption: "below" as const },
+    { milestone: MILESTONES[2], left: "50%", centerY: "54%", caption: "above" as const },
+    { milestone: MILESTONES[3], left: "75%", centerY: "72%", caption: "below" as const },
   ];
 
+  // Centers at ~125 / 375 / 625 / 875 in a 1000-wide viewBox (matches left + 12.5%).
   const pathD =
-    "M125 185 C 250 185, 280 273, 375 273 S 530 185, 625 185 S 790 255, 875 255";
+    "M125 173 C 250 173, 280 237, 375 237 S 530 173, 625 173 S 790 230, 875 230";
 
   return (
-    <div className="relative hidden h-[420px] w-full overflow-visible md:block lg:h-[440px]">
+    <div className="relative hidden h-[300px] w-full overflow-visible md:block lg:h-[320px]">
       <svg
         className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-        viewBox="0 0 1000 440"
+        viewBox="0 0 1000 320"
         preserveAspectRatio="none"
         aria-hidden
       >
@@ -280,7 +280,7 @@ function SpreadDesktopRoadmap() {
               {n.caption === "above" && (
                 <div
                   className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
-                  style={{ bottom: "calc(100% + 1.5rem)" }}
+                  style={{ bottom: "calc(100% + 1rem)" }}
                 >
                   <NodeCaption milestone={n.milestone} />
                 </div>
@@ -289,7 +289,7 @@ function SpreadDesktopRoadmap() {
               {n.caption === "below" && (
                 <div
                   className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
-                  style={{ top: "calc(100% + 0.85rem)" }}
+                  style={{ top: "calc(100% + 0.65rem)" }}
                 >
                   <NodeCaption milestone={n.milestone} />
                 </div>

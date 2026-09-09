@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.2-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dissatisfied customers typically withhold repeat purchases, which is why satisfaction is a core marketing objective.
 
-Dissatisfied customers typically withhold repeat purchases, which is why satisfaction is a core marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Satisfaction frequently leads to loyalty and repeat buying behaviour.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Satisfaction frequently leads to loyalty and repeat buying behaviour.
+The statement is true.', 'Satisfaction is explicitly interrelated with repeat purchase and loyalty objectives.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'The text links satisfaction to other marketing goals rather than treating it in isolation.
 
-Satisfaction is explicitly interrelated with repeat purchase and loyalty objectives.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Businesses analyse wishes and needs before clarifying the objectives they pursue.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The text links satisfaction to other marketing goals rather than treating it in isolation.
+The statement is true.'] WHERE case_id = 'CASE 5.2.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Unsatisfied customers tend not to return, undermining sales and loyalty objectives.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is true.', 'Dissatisfied customers are unlikely to buy again per the marketing framework.
 
-Businesses analyse wishes and needs before clarifying the objectives they pursue.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Future purchase intent is tied to how satisfied the customer felt after buying.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Unsatisfied customers tend not to return, undermining sales and loyalty objectives.
+The statement is true.', 'Satisfaction is one of several objectives, not the sole aim.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'The text requires market and wishes/needs analysis before setting objectives.
 
-Dissatisfied customers are unlikely to buy again per the marketing framework.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.'] WHERE case_id = 'CASE 5.2.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repeat purchases from loyal customers support the sales objective.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Future purchase intent is tied to how satisfied the customer felt after buying.
+The statement is true.', 'Satisfaction aims at ongoing relationships, not isolated single purchases.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Satisfied customers often become loyal and may buy again.
 
-Satisfaction is one of several objectives, not the sole aim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'Positive satisfaction can generate word-of-mouth that supports sales growth.
 
-The statement is false.
-', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The text requires market and wishes/needs analysis before setting objectives.
+The statement is true.', 'Satisfaction is a general marketing objective for businesses fulfilling customer needs.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.'] WHERE case_id = 'CASE 5.2.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repeat purchase is evidence satisfaction objectives matter, not that they are redundant.
 
-Repeat purchases from loyal customers support the sales objective.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Repurchase potential is linked to satisfaction in the marketing objectives framework.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Satisfaction aims at ongoing relationships, not isolated single purchases.
+The statement is true.', 'Persistent dissatisfaction indicates objectives around satisfaction are not being met.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Profitability does not remove satisfaction from the set of possible objectives.
 
-Satisfied customers often become loyal and may buy again.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'The text states dissatisfied customers will not buy again, not merely resist until a small discount.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Positive satisfaction can generate word-of-mouth that supports sales growth.
+The statement is false.'] WHERE case_id = 'CASE 5.2.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Satisfaction is an objective in its own right, not a post-profit afterthought.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Feedback instruments help assess progress toward satisfaction goals.
 
-Satisfaction is a general marketing objective for businesses fulfilling customer needs.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Loyalty generally builds on satisfaction with what was purchased.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Repeat purchase is evidence satisfaction objectives matter, not that they are redundant.
+The statement is true.', 'Loyalty in the framework builds on satisfied customers who may buy again.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is false.', 'Expectations met through satisfactory experience encourage buying again.
 
-Repurchase potential is linked to satisfaction in the marketing objectives framework.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.2.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Satisfaction is interrelated with other marketing objectives including sales.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Persistent dissatisfaction indicates objectives around satisfaction are not being met.
+The statement is false.', 'Wishes and needs analysis precedes clear marketing objectives regardless of brand strength.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'The text presents satisfaction as interrelated with sales and other objectives.
 
-Profitability does not remove satisfaction from the set of possible objectives.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'The text requires satisfaction, not impossible perfection on every dimension.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The text states dissatisfied customers will not buy again, not merely resist until a small discount.
+The statement is false.', 'Rising complaints signal failure on satisfaction objectives.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.'] WHERE case_id = 'CASE 5.2.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Understanding needs helps avoid the outcome where buyers refuse repeat purchase.
 
-Satisfaction is an objective in its own right, not a post-profit afterthought.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'The satisfaction objective supports turning initial purchases into repeat business.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Feedback instruments help assess progress toward satisfaction goals.
+The statement is true.', 'Retained satisfied buyers help maintain share against competitors.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Satisfied customers may recommend products, extending marketing impact.
 
-Loyalty generally builds on satisfaction with what was purchased.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Price cuts alone do not define satisfaction in the marketing objectives framework.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Loyalty in the framework builds on satisfied customers who may buy again.
+The statement is false.'] WHERE case_id = 'CASE 5.2.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A single purchase does not prove satisfaction objectives are met.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is false.', 'Dissatisfied customers will not buy again according to the text.
 
-Expectations met through satisfactory experience encourage buying again.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Objectives are interrelated and can coexist within a marketing plan.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (market share): satisfaction is interrelated with other marketing objectives including sales.
+The statement is false.', 'Elevated complaints indicate failure relative to the satisfaction goal.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Surveys help assess whether satisfaction objectives are being achieved.
 
-Wishes and needs analysis precedes clear marketing objectives regardless of brand strength.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.'] WHERE case_id = 'CASE 5.2.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Loyalty initiatives work best when underlying satisfaction is already present.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The text presents satisfaction as interrelated with sales and other objectives.
+The statement is true.', 'Unmet needs undermine sales because buyers avoid repeat purchase.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Loyalty is linked to satisfied customers who possibly buy again.
 
-The text requires satisfaction, not impossible perfection on every dimension.
+The absolute wording "regardless" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'Quality satisfaction supports brand-level repeat choice.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Rising complaints signal failure on satisfaction objectives.
+The statement is true.', 'Satisfaction and sales objectives are presented as interrelated.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.'] WHERE case_id = 'CASE 5.2.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repurchase frequency reflects whether customers remain satisfied.
 
-Understanding needs helps avoid the outcome where buyers refuse repeat purchase.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Fulfilled wishes support the repeat purchase outcome described in the text.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The satisfaction objective supports turning initial purchases into repeat business.
+The statement is true.', 'Customers must be satisfied with the differentiated offer for loyalty to follow.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is true.', 'Dissatisfied customers may switch to rivals, reducing relative share.
 
-On this stem (market share): retained satisfied buyers help maintain share against competitors.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'The text states dissatisfied customers will not buy again.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Satisfied customers may recommend products, extending marketing impact.
+The statement is true.'] WHERE case_id = 'CASE 5.2.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Satisfaction is not deferred until share targets are met.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Satisfaction and loyalty are explicitly linked in the framework.
 
-Price cuts alone do not define satisfaction in the marketing objectives framework.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Loyalty in the framework follows from satisfactory prior buying experiences.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-A single purchase does not prove satisfaction objectives are met.
+The statement is true.', 'Fulfilling wishes and needs remains central even with differentiation.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Loyal repeat buyers support sales, share, and profitability aims.
 
-Dissatisfied customers will not buy again according to the text.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.2.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repeat purchase from satisfaction is voluntary customer behaviour.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Objectives are interrelated and can coexist within a marketing plan.
+The statement is false.', 'Market analysis of wishes and needs supports satisfaction objectives.
 
-Those restricting words stretch a limited idea past what marketing allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Satisfaction interrelates with sales through repeat purchase and loyalty.
 
-Elevated complaints indicate failure relative to the satisfaction goal.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Satisfaction supports but does not replace other objectives like share.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Surveys help assess whether satisfaction objectives are being achieved.
+The statement is false.', 'Dissatisfaction leads customers not to buy again, harming sales.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.'] WHERE case_id = 'CASE 5.2.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Reach alone does not satisfy; experience with the product matters.
 
-On this stem (brand): loyalty initiatives work best when underlying satisfaction is already present.
+The absolute wording "regardless" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Satisfied customers may buy other products from the firm.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (growth): unmet needs undermine sales because buyers avoid repeat purchase.
+The statement is false.', 'Retention of satisfied buyers supplements acquisition in meeting sales goals.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Usp and satisfaction interrelate when customers experience the differentiated offer.
 
-Loyalty is linked to satisfied customers who possibly buy again.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Falling repurchase despite claimed satisfaction may reflect real objective failure.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Quality satisfaction supports brand-level repeat choice.
+The statement is false.'] WHERE case_id = 'CASE 5.2.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The text lists satisfaction among multiple possible marketing objectives.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Repeat revenue from satisfied customers can support profit objectives.
 
-Satisfaction and sales objectives are presented as interrelated.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Satisfaction reduces switching, helping maintain share and sales.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Repurchase frequency reflects whether customers remain satisfied.
+The statement is true.', 'Satisfaction concerns meeting wishes and needs, not being cheapest.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is false.', 'Satisfaction metrics complement sales data in objective review.
 
-Fulfilled wishes support the repeat purchase outcome described in the text.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.2.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Loyalty programmes complement but do not replace satisfaction objectives.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Customers must be satisfied with the differentiated offer for loyalty to follow.
+The statement is false.', 'Dissatisfaction undermines loyalty even with rewards enrolment.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is false.', 'Positive first-use experience supports subsequent loyalty.
 
-On this stem (market share): dissatisfied customers may switch to rivals, reducing relative share.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Satisfaction is a marketing objective distinct from gross profit.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The text states dissatisfied customers will not buy again.
+The statement is false.', 'Satisfaction is a general objective across market conditions.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is false.'] WHERE case_id = 'CASE 5.2.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Satisfaction helps retention but does not make switching impossible.
 
-On this stem (market share): satisfaction is not deferred until share targets are met.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.', 'Maximising production volume does not equate to customer satisfaction.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Satisfaction and loyalty are explicitly linked in the framework.
+The statement is false.', 'Usp means the product is or is considered different from similar products.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Temporary sales spikes fail if buyers are dissatisfied and do not return.
 
-Loyalty in the framework follows from satisfactory prior buying experiences.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Delivering on promises links satisfaction to credible usp claims.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Fulfilling wishes and needs remains central even with differentiation.
+The statement is true.'] WHERE case_id = 'CASE 5.2.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Household repeat visits indicate ongoing satisfaction.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Recurring revenue from loyal buyers can support profit aims.
 
-Loyal repeat buyers support sales, share, and profitability aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Differentiation can be based on perception and promotion as well as characteristics.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Repeat purchase from satisfaction is voluntary customer behaviour.
+The statement is false.', 'Building a brand supports creating a usp per the text.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Satisfaction is one objective among several, not the only one.
 
-Market analysis of wishes and needs supports satisfaction objectives.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.2.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Falling satisfaction can foreshadow share loss to rivals.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Satisfaction interrelates with sales through repeat purchase and loyalty.
+The statement is true.', 'Satisfaction with the core offer supports acceptance of related products.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is true.', 'Repeat purchase from satisfied customers is explicitly noted.
 
-On this stem (market share): satisfaction supports but does not replace other objectives like share.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Usp objectives assume satisfaction sustains the loyalty usp is meant to create.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Dissatisfaction leads customers not to buy again, harming sales.
+The statement is true.', 'Understanding needs informs what satisfaction should look like.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.'] WHERE case_id = 'CASE 5.2.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Service satisfaction supports broader objective success.
 
-Reach alone does not satisfy; experience with the product matters.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Usp concerns differentiation, not total market dominance.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Satisfied customers may buy other products from the firm.
+The statement is false.', 'Differentiation is also called product differentiation in the usp context.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Repeat buyers lower effective acquisition cost, aiding profitability.
 
-Retention of satisfied buyers supplements acquisition in meeting sales goals.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Preventing abandonment through satisfaction supports retention.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Usp and satisfaction interrelate when customers experience the differentiated offer.
+The statement is true.'] WHERE case_id = 'CASE 5.2.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Differentiation can arise from promotion and how customers perceive the product.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Usp positions the product as special, unique, or better than the rest.
 
-Falling repurchase despite claimed satisfaction may reflect real objective failure.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'Usp helps attract many loyal customers, not only one-time buyers.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The text lists satisfaction among multiple possible marketing objectives.
+The statement is false.', 'Loyal satisfied buyers may resist switching on price alone.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Brand-building supports rather than undermines usp creation.
 
-Repeat revenue from satisfied customers can support profit objectives.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.'] WHERE case_id = 'CASE 5.2.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Feedback reveals whether perceived differentiation is experienced as satisfactory.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Satisfaction reduces switching, helping maintain share and sales.
+The statement is true.', 'Usp interrelates with satisfaction when customers experience the offer.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.', 'Usp and differentiation are general marketing objectives.
 
-Satisfaction concerns meeting wishes and needs, not being cheapest.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Promotion-based perception is explicitly valid for differentiation.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Satisfaction metrics complement sales data in objective review.
+The statement is false.', 'Product lines may carry distinct usps within a brand.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.'] WHERE case_id = 'CASE 5.2.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dissatisfaction can spread wariness across the firm''s offerings.
 
-Loyalty programmes complement but do not replace satisfaction objectives.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Usp aims to attract loyal customers through perceived difference.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Dissatisfaction undermines loyalty even with rewards enrolment.
+The statement is false.', 'Fulfilling wishes and needs is the broader aim satisfaction supports.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Differentiation requires difference from similar products, not exact copying.
 
-Positive first-use experience supports subsequent loyalty.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Usp concerns uniqueness or perceived superiority, not price alone.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Satisfaction is a marketing objective distinct from gross profit.
+The statement is false.'] WHERE case_id = 'CASE 5.2.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Satisfaction often precedes loyalty in the described relationship.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Repurchase signals progress on satisfaction-linked loyalty.
 
-Satisfaction is a general objective across market conditions.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Retained buyers help hold share against competitors.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (USP): satisfaction helps retention but does not make switching impossible.
+The statement is true.', 'Multi-period sales benefit when satisfaction drives repeat buying.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Usp attraction of loyal customers assumes satisfactory product experience.
 
-Maximising production volume does not equate to customer satisfaction.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.2.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Satisfaction and sales objectives reinforce each other in the text.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (unique selling proposition): usp means the product is or is considered different from similar products.
+The statement is true.', 'Better satisfaction can show up as higher retention over time.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Usp is defined as actual or perceived difference from similar offerings.
 
-Temporary sales spikes fail if buyers are dissatisfied and do not return.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Differentiation may rest on tangible product features.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Delivering on promises links satisfaction to credible usp claims.
+The statement is true.', 'Brand-building supports usp within marketing objectives.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is false.'] WHERE case_id = 'CASE 5.2.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Promotion and perception are valid bases for differentiation.
 
-Household repeat visits indicate ongoing satisfaction.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Customers may consider a product different even when functional similarities exist.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Recurring revenue from loyal buyers can support profit aims.
+The statement is false.', 'Usp supports competitiveness but does not alone guarantee share.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Packaging and presentation can contribute to perceived differentiation.
 
-Differentiation can be based on perception and promotion as well as characteristics.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Brand-building is explicitly linked to usp creation.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (brand / unique selling proposition): building a brand supports creating a usp per the text.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): satisfaction is one objective among several, not the only one.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (decline / market share): falling satisfaction can foreshadow share loss to rivals.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-On this stem (product line): satisfaction with the core offer supports acceptance of related products.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Repeat purchase from satisfied customers is explicitly noted.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp objectives assume satisfaction sustains the loyalty usp is meant to create.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Understanding needs informs what satisfaction should look like.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Service satisfaction supports broader objective success.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (USP / market share): usp concerns differentiation, not total market dominance.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (unique selling proposition): differentiation is also called product differentiation in the usp context.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Repeat buyers lower effective acquisition cost, aiding profitability.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Preventing abandonment through satisfaction supports retention.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (unique selling proposition): differentiation can arise from promotion and how customers perceive the product.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp positions the product as special, unique, or better than the rest.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp helps attract many loyal customers, not only one-time buyers.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Loyal satisfied buyers may resist switching on price alone.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Brand-building supports rather than undermines usp creation.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Feedback reveals whether perceived differentiation is experienced as satisfactory.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (unique selling proposition): usp interrelates with satisfaction when customers experience the offer.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp and differentiation are general marketing objectives.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (USP): promotion-based perception is explicitly valid for differentiation.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Product lines may carry distinct usps within a brand.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Dissatisfaction can spread wariness across the firm''s offerings.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp aims to attract loyal customers through perceived difference.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Fulfilling wishes and needs is the broader aim satisfaction supports.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Differentiation requires difference from similar products, not exact copying.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp concerns uniqueness or perceived superiority, not price alone.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Satisfaction often precedes loyalty in the described relationship.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Repurchase signals progress on satisfaction-linked loyalty.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): retained buyers help hold share against competitors.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Multi-period sales benefit when satisfaction drives repeat buying.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Usp attraction of loyal customers assumes satisfactory product experience.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Satisfaction and sales objectives reinforce each other in the text.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Better satisfaction can show up as higher retention over time.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (unique selling proposition): usp is defined as actual or perceived difference from similar offerings.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Differentiation may rest on tangible product features.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Brand-building supports usp within marketing objectives.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Promotion and perception are valid bases for differentiation.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (USP): customers may consider a product different even when functional similarities exist.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (unique selling proposition / market share): usp supports competitiveness but does not alone guarantee share.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (USP): packaging and presentation can contribute to perceived differentiation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (brand / unique selling proposition): brand-building is explicitly linked to usp creation.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.25' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 5.2.25' AND tier = 'full';

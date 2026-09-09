@@ -4,6 +4,7 @@ import { FlashcardMath } from "@/components/FlashcardMath";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { SIM_TASKS, type SimTask } from "@/data/how-it-works-tasks";
+import { cleanExplanation } from "@/lib/clean-explanation";
 import {
   practiceExplanationToggleClass,
   practiceSubmitButtonClass,
@@ -48,29 +49,6 @@ function clock(total: number) {
   const m = Math.floor(total / 60);
   const s = total % 60;
   return `${m}:${String(s).padStart(2, "0")}`;
-}
-
-function cleanExplanation(text: string) {
-  const withoutVerdictLead = text
-    .replace(/^(?:TRUE|FALSE)\s*[—-]\s*/i, "")
-    .replace(/\*\*/g, "")
-    .trim();
-  const seen = new Set<string>();
-  let verdictSeen = false;
-  return withoutVerdictLead
-    .split(/\n\s*\n/)
-    .map((paragraph) => paragraph.trim())
-    .filter((paragraph) => {
-      if (!paragraph) return false;
-      const isVerdict = /^the statement is (?:true|false)\b/i.test(paragraph);
-      if (isVerdict && verdictSeen) return false;
-      if (isVerdict) verdictSeen = true;
-      const key = paragraph.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    })
-    .join("\n\n");
 }
 
 /**

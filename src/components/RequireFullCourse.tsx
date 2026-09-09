@@ -44,13 +44,14 @@ export function RequireFullCourse({
 
       if (!state.signedIn) {
         setAllowed(false);
-        navigate({ to: "/login" });
+        navigate({ to: "/login", replace: true });
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
         setAllowed(false);
         navigate({
           to: minTier === "full" ? "/products/full-course" : "/products/lite-bbe-course",
+          replace: true,
         });
         return;
       }

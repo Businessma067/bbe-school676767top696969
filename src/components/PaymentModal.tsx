@@ -146,6 +146,8 @@ export function PaymentModal({
         setError(result.error);
         return;
       }
+      const { clearAccessStateCache } = await import("@/lib/entitlements");
+      clearAccessStateCache();
       setPromoUnlocked(true);
       setTimeout(() => {
         onOpenChange(false);

@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.2-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Usp requires meaningful difference or perception, not spend alone.
 
-Usp requires meaningful difference or perception, not spend alone.
+The absolute wording "regardless" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Differentiation is one objective among several.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The absolute wording "entirely" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Differentiation is one objective among several.
+The statement is false.', 'Usp can rest on characteristics or promotion, not only patents.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Brand-building and usp work together to attract loyal customers.
 
-Usp can rest on characteristics or promotion, not only patents.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Usp positions the product as distinctive or superior in customer perception.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Brand / USP): brand-building and usp work together to attract loyal customers.
+The statement is true.'] WHERE case_id = 'CASE 5.2.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Usp is pursued to draw loyal customers to the offering.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Usp requires actual or perceived difference from similar products.
 
-Usp positions the product as distinctive or superior in customer perception.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Customers may still compare; usp shapes how the product is viewed in comparison.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Usp is pursued to draw loyal customers to the offering.
+The statement is false.', 'Awards are not required; characteristics or perception can establish usp.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Promotion shapes perception as a valid differentiation basis.
 
-Usp requires actual or perceived difference from similar products.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.'] WHERE case_id = 'CASE 5.2.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Usp can rest on product characteristics or promotion and perception.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Customers may still compare; usp shapes how the product is viewed in comparison.
+The statement is false.', 'Usp aims to attract many loyal customers, supporting sales.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Differentiation and usp are treated as related concepts.
 
-Awards are not required; characteristics or perception can establish usp.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Design emphasis can underpin differentiation.
 
-The statement is false.
-', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Promotion shapes perception as a valid differentiation basis.
+The statement is true.', 'Perception shaped by promotion supports usp.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.'] WHERE case_id = 'CASE 5.2.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Brand identity reinforces differentiated recognition.
 
-On this stem (unique selling proposition): usp can rest on product characteristics or promotion and perception.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Differentiation concerns usp; segmentation is a distinct marketing concept.
 
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (targeting): usp aims to attract many loyal customers, supporting sales.
+The statement is false.', 'Usp creates mental distinction among similar products.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Usp reduces price-only competition but does not eliminate pricing decisions.
 
-On this stem (positioning / unique selling proposition): differentiation and usp are treated as related concepts.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Service quality may be the differentiating characteristic.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (USP): design emphasis can underpin differentiation.
+The statement is true.'] WHERE case_id = 'CASE 5.2.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Brand advertising supports usp-related differentiation.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is true.', 'Differentiation moves competition beyond pure price comparison.
 
-Perception shaped by promotion supports usp.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Perceived uniqueness can exist alongside functional similarity.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Brand identity reinforces differentiated recognition.
+The statement is true.', 'Delivery speed may serve as the usp characteristic.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Packaging may be part of the differentiated presentation.
 
-Differentiation concerns usp; segmentation is a distinct marketing concept.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.'] WHERE case_id = 'CASE 5.2.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Ethical sourcing claims can underpin differentiation.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Usp creates mental distinction among similar products.
+The statement is true.', 'Differentiation addresses crowded markets with similar options.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Loyalty programmes complement usp-driven differentiation.
 
-Usp reduces price-only competition but does not eliminate pricing decisions.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Durability can be the differentiating product characteristic.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (unique selling proposition): service quality may be the differentiating characteristic.
+The statement is true.', 'Craftsmanship messaging supports perceived differentiation.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.'] WHERE case_id = 'CASE 5.2.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Brand still supports perceived uniqueness even with limited competition.
 
-On this stem (brand / USP): brand advertising supports usp-related differentiation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'The aim is distinct perception versus substitutes.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (USP): differentiation moves competition beyond pure price comparison.
+The statement is true.', 'Brand strength supports better-than-the-rest perception.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is true.', 'Different characteristics can be emphasised in usp messaging.
 
-Perceived uniqueness can exist alongside functional similarity.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Usp is listed among marketing objectives businesses may pursue.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (unique selling proposition): delivery speed may serve as the usp characteristic.
+The statement is true.'] WHERE case_id = 'CASE 5.2.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Warranty terms may differentiate the offering.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Perceived uniqueness draws attention in competitive markets.
 
-On this stem (USP): packaging may be part of the differentiated presentation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Brand and usp jointly support loyal customer attraction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (USP): ethical sourcing claims can underpin differentiation.
+The statement is true.', 'Post-purchase experience can sustain differentiation.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Pre-purchase perception is shaped by promotion.
 
-Differentiation addresses crowded markets with similar options.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.2.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Usp is pursued because it helps attract many loyal customers.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (Brand / unique selling proposition): loyalty programmes complement usp-driven differentiation.
+The statement is false.', 'Without usp, price becomes the primary competitive lever.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Environmental credentials may underpin the usp.
 
-On this stem (USP): durability can be the differentiating product characteristic.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Different usps can apply across product lines under one brand.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (USP): craftsmanship messaging supports perceived differentiation.
+The statement is true.', 'Usp concerns customer perception, not unanimous rival agreement.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.'] WHERE case_id = 'CASE 5.2.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Usp is a sustained marketing objective, not a quarterly replacement for profit.
 
-Brand still supports perceived uniqueness even with limited competition.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Support quality may be the differentiating element.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The aim is distinct perception versus substitutes.
+The statement is true.', 'Usp creates actual or apparent difference from similar products.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Brand investment is linked to usp creation in the text.
 
-Brand strength supports better-than-the-rest perception.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'One promoted characteristic can anchor the usp.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Different characteristics can be emphasised in usp messaging.
+The statement is true.'] WHERE case_id = 'CASE 5.2.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Consistent branding sustains perceived differentiation.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Experienced difference links usp to satisfaction outcomes.
 
-Usp is listed among marketing objectives businesses may pursue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Premium quality perception can be the differentiation target.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (unique selling proposition): warranty terms may differentiate the offering.
+The statement is true.', 'Memorable distinction is a usp outcome.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is true.', 'Local sourcing may be promoted as the usp.
 
-Perceived uniqueness draws attention in competitive markets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.2.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Brand identity alignment attracts loyal buyers.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Brand / USP): brand and usp jointly support loyal customer attraction.
+The statement is true.', 'Special appearance relative to alternatives is a usp aim.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Innovation messaging can underpin differentiation.
 
-On this stem (USP): post-purchase experience can sustain differentiation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Reputation reinforces ongoing usp credibility.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Pre-purchase perception is shaped by promotion.
+The statement is true.', 'Features and promotional style can jointly form the usp.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.'] WHERE case_id = 'CASE 5.2.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Differentiation and satisfaction objectives interrelate.
 
-Usp is pursued because it helps attract many loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Usp/differentiation sits among the stated marketing objectives.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Without usp, price becomes the primary competitive lever.
+The statement is true.', 'Usp cues guide choice among similar products.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Saturated markets make usp important for loyal customer attraction.
 
-On this stem (unique selling proposition): environmental credentials may underpin the usp.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Brand-building serves perceived uniqueness objectives.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Product lines / USP): different usps can apply across product lines under one brand.
+The statement is true.'] WHERE case_id = 'CASE 5.2.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customisation can differentiate within a standard category.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Exclusivity perception can accompany premium positioning.
 
-Usp concerns customer perception, not unanimous rival agreement.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Aligned experience sustains loyalty promised by usp.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Usp is a sustained marketing objective, not a quarterly replacement for profit.
+The statement is true.', 'Usp rests on business positioning and customer perception, not regulatory certification.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Differentiation lowers perceived substitutability.
 
-Support quality may be the differentiating element.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.2.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Reliability may be the highlighted differentiating characteristic.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Usp creates actual or apparent difference from similar products.
+The statement is true.', 'Visual brand elements communicate differentiation.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Differentiation spend targets better-than-alternatives perception.
 
-On this stem (Brand / USP): brand investment is linked to usp creation in the text.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Brand-building supports usp; it does not instantly maximise share.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The absolute wording "instantly" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-One promoted characteristic can anchor the usp.
+The statement is false.', 'Market share indicates relative importance compared with competitors.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.'] WHERE case_id = 'CASE 5.2.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Promotion-based differentiation is explicitly recognised.
 
-On this stem (USP / branding): consistent branding sustains perceived differentiation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Share depends on market boundary; highest absolute sales may not mean highest share.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Experienced difference links usp to satisfaction outcomes.
+The statement is false.', 'Usp aims to attract many loyal customers per the text.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Market share is described as an indicator of competitiveness.
 
-Premium quality perception can be the differentiation target.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Market share is listed among marketing objectives.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Memorable distinction is a usp outcome.
+The statement is true.'] WHERE case_id = 'CASE 5.2.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share reflects relative standing versus rivals.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Share can be gained through marketing without requiring cost doubling.
 
-On this stem (unique selling proposition): local sourcing may be promoted as the usp.
+The absolute wording "impossible" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Share is described as a competitiveness indicator.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (USP / brand): brand identity alignment attracts loyal buyers.
+The statement is true.', 'Share is assessed relative to competitor positions.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Share gains suggest improved relative performance.
 
-Special appearance relative to alternatives is a usp aim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.2.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share and satisfaction are distinct objectives.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (USP): innovation messaging can underpin differentiation.
+The statement is false.', 'Share is inherently relative to competitors'' positions.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Share maintenance is a valid stated objective.
 
-On this stem (Brand / unique selling proposition): reputation reinforces ongoing usp credibility.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Share is a portion of total market sales.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Features and promotional style can jointly form the usp.
+The statement is true.', 'Share can fall while absolute sales rise if the market grows faster.
 
-Under that definition the assertion is the right description of the situation.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.'] WHERE case_id = 'CASE 5.2.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share loss signals weakened relative competitiveness.
 
-Differentiation and satisfaction objectives interrelate.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Defensive campaigns can target share protection.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (market share): usp/differentiation sits among the stated marketing objectives.
+The statement is true.', 'Share adds relative context to absolute sales.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Share is one of several possible marketing objectives.
 
-Usp cues guide choice among similar products.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Share can be significant even with modest absolute sales in niches.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Saturated markets make usp important for loyal customer attraction.
+The statement is true.'] WHERE case_id = 'CASE 5.2.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share trends inform competitiveness assessment.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Share maintenance typically requires ongoing marketing effort.
 
-Brand-building serves perceived uniqueness objectives.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Share indicates relative importance compared with competitors.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (USP): customisation can differentiate within a standard category.
+The statement is false.', 'Entrants must earn share through competitive performance.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Share complements but does not replace profit objectives.
 
-Exclusivity perception can accompany premium positioning.
+The absolute wording "entirely" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.'] WHERE case_id = 'CASE 5.2.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share answers relative position questions.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Aligned experience sustains loyalty promised by usp.
+The statement is true.', 'Share, not assets alone, indicates relative market importance in this framework.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.', 'Share gains may temporarily reduce profit when achieved through heavy spending.
 
-Usp rests on business positioning and customer perception, not regulatory certification.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.', 'Share requires a defined market among competing firms.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Differentiation lowers perceived substitutability.
+The statement is false.', 'Share comparisons require competitors within the defined market.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is false.'] WHERE case_id = 'CASE 5.2.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Loyal customers help maintain share against rivals.
 
-On this stem (unique selling proposition): reliability may be the highlighted differentiating characteristic.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Share gains typically come at rivals'' expense.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Visual brand elements communicate differentiation.
+The statement is true.', 'Share is inherently relative to the market total.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Market analysis precedes objective setting including share targets.
 
-Differentiation spend targets better-than-alternatives perception.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Stable share can coexist with rising absolute sales in growing markets.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (brand / market share): brand-building supports usp; it does not instantly maximise share.
+The statement is true.'] WHERE case_id = 'CASE 5.2.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales growth can support share when the firm outpaces market growth.
 
-Once the defining feature is restored, the assertion falls away.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is false.', 'Share is explicitly a competitiveness indicator.
 
-Market share indicates relative importance compared with competitors.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Share loss often signals competitive weakness, not excess satisfaction.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (USP): promotion-based differentiation is explicitly recognised.
+The statement is false.', 'Minimum share targets express competitiveness aims.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is true.', 'Share objectives apply to businesses competing in markets.
 
-On this stem (market share): share depends on market boundary; highest absolute sales may not mean highest share.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.'] WHERE case_id = 'CASE 5.2.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share data illuminates industry competitive dynamics.
 
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Usp aims to attract many loyal customers per the text.
+The statement is true.', 'Promotional response can aim at share defence.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is true.', 'Share indicates relative importance; ad spend alone does not.
 
-Market share is described as an indicator of competitiveness.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Share links to other objectives in the framework.
 
-The statement is false.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Market share is listed among marketing objectives.
+The statement is true.', 'Share indicates relative market importance per the text.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is true.'] WHERE case_id = 'CASE 5.2.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share depends on market total, not absolute sales alone.
 
-On this stem (Market share): share reflects relative standing versus rivals.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Share can be gained while the market grows or shrinks.
 
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (market share): share can be gained through marketing without requiring cost doubling.
+The statement is false.', 'Regular share tracking monitors competitiveness.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+The statement is true.', 'Share and usp objectives can be pursued within one marketing plan.
 
-On this stem (Market share): share is described as a competitiveness indicator.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Leadership is reflected in share relative to competitors, not brand fame alone.
 
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Share is assessed relative to competitor positions.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share gains suggest improved relative performance.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share and satisfaction are distinct objectives.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share is inherently relative to competitors'' positions.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share maintenance is a valid stated objective.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share is a portion of total market sales.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share can fall while absolute sales rise if the market grows faster.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share loss signals weakened relative competitiveness.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Defensive campaigns can target share protection.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share adds relative context to absolute sales.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share is one of several possible marketing objectives.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Share can be significant even with modest absolute sales in niches.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share trends inform competitiveness assessment.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share maintenance typically requires ongoing marketing effort.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share indicates relative importance compared with competitors.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): entrants must earn share through competitive performance.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share complements but does not replace profit objectives.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share answers relative position questions.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share, not assets alone, indicates relative market importance in this framework.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Share gains may temporarily reduce profit when achieved through heavy spending.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share requires a defined market among competing firms.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Share comparisons require competitors within the defined market.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): loyal customers help maintain share against rivals.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Share gains typically come at rivals'' expense.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share is inherently relative to the market total.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Market analysis precedes objective setting including share targets.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): stable share can coexist with rising absolute sales in growing markets.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): sales growth can support share when the firm outpaces market growth.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share is explicitly a competitiveness indicator.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Share loss often signals competitive weakness, not excess satisfaction.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Minimum share targets express competitiveness aims.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (Market share): share objectives apply to businesses competing in markets.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Share data illuminates industry competitive dynamics.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Promotional response can aim at share defence.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Share indicates relative importance; ad spend alone does not.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (Market share): share links to other objectives in the framework.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share indicates relative market importance per the text.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Share depends on market total, not absolute sales alone.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
-
-On this stem (market share): share can be gained while the market grows or shrinks.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
-
-Regular share tracking monitors competitiveness.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (Market share / USP): share and usp objectives can be pursued within one marketing plan.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (market share / brand): leadership is reflected in share relative to competitors, not brand fame alone.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.50' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 5.2.50' AND tier = 'full';

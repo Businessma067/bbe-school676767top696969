@@ -1,8 +1,8 @@
-import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute } from "@tanstack/react-router";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { recordTaskAttempt } from "@/lib/user-progress";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
-import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { useTimedSession } from "@/lib/timed-practice";
@@ -12,6 +12,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
+import { cleanExplanation } from "@/lib/clean-explanation";
+import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
@@ -28,7 +30,6 @@ import {
 } from "@/components/PracticeMobileChapters";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { useAuthGate } from "@/hooks/use-auth-gate";
-import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -60,6 +61,12 @@ export const Route = createFileRoute("/demo-practice/economics")({
     meta: [
       { title: "Economics Tasks — BBE School" },
       { name: "description", content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam." },
+      { property: "og:title", content: "Economics Tasks — BBE School" },
+      {
+        property: "og:description",
+        content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam.",
+      },
+      ...socialImageMetaForPath("/demo-practice/economics"),
     ],
   }),
   component: EconomicsTasks,
@@ -153,19 +160,26 @@ function EconomicsTasks() {
   useEffect(() => {
     let cancel = false;
     (async () => {
-      const { data, error } = await supabase
-        .from("economics_cases")
-        .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order")
-        .eq("tier", "demo")
-        .order("sort_order", { ascending: true });
-      if (cancel) return;
-      if (error) setError(error.message);
-      else {
-        const rows = ((data as Case[]) ?? []).map((c) => ({
-          ...c,
-          difficulty_level: economicsDifficultyFor(c.case_id, c.difficulty_level),
-        }));
+      try {
+        const loaded = await loadAllEconomicsChapterTasks();
+        if (cancel) return;
+        const rows: Case[] = loaded.flatMap(({ tasks }) =>
+          tasks.map((t) => ({
+            id: t.id,
+            case_id: t.case_id,
+            title: t.title,
+            context: t.context,
+            statements: t.statements,
+            answer_key: t.answer_key,
+            tactical_explanations: t.tactical_explanations,
+            difficulty_level: t.difficulty_level,
+            sort_order: t.sort_order,
+          })),
+        );
         setCases(rows);
+      } catch (err) {
+        if (cancel) return;
+        setError(err instanceof Error ? err.message : "Failed to load economics cases.");
       }
     })();
     return () => { cancel = true; };
@@ -187,7 +201,7 @@ function EconomicsTasks() {
   const requestExplanation = async (caseData: Case, i: number) => {
     const key = `${caseData.id}:${i}`;
     if (explanation?.key === key) return;
-    setShowExplanations(true);
+    setShowExplanations(false);
     const stmt = caseData.statements[i];
     const correct = caseData.answer_key[i];
     setExplanation({
@@ -437,14 +451,11 @@ function EconomicsTasks() {
                                   {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && "line-through text-muted-foreground")}>
+                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
                                   Task {i + 1}{locked && " · Locked"}
                                 </span>
                                 {timed.enabled && !locked && (
                                   <TimerStatusDot entry={timed.state[c.id]} />
-                                )}
-                                {!locked && c.difficulty_level !== "—" && (
-                                  <DifficultyBars level={c.difficulty_level} />
                                 )}
                               </button>
                             </li>
@@ -575,9 +586,7 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {activeCase && !isLocked(activeChapter, activeIdx) && (
-            <TimedModeBar session={timed} questionId={activeCase.id} />
-          )}
+          {activeCase && !isLocked(activeChapter, activeIdx) && <TimedModeBar session={timed} />}
 
           {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
             const freeLimit = freeLimitOf(activeChapter);
@@ -625,24 +634,15 @@ function EconomicsTasks() {
                   statementCount: activeCase.statements.length || 5,
                 });
               }}
-              onResetProgress={() => {
-                resetCaseIds([activeCase.id]);
-                timed.resetQuestion(activeCase.id);
-                if (timed.enabled) timed.openQuestion(activeCase.id);
-              }}
-              onRetry={() => {
-                timed.resetQuestion(activeCase.id);
-                if (timed.enabled) timed.openQuestion(activeCase.id);
-              }}
-              explanationsOpen={showExplanations}
+              onResetProgress={() => resetCaseIds([activeCase.id])}
+              explanationsOpen={showExplanations && !explanation}
               onShowExplanations={() => {
+                setExplanation(null);
                 setShowExplanations(true);
               }}
               onToggleExplanations={() => {
-                setShowExplanations((v) => {
-                  if (v) setExplanation(null);
-                  return !v;
-                });
+                setExplanation(null);
+                setShowExplanations((v) => !v);
               }}
             />
           )}
@@ -674,23 +674,23 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Right panel: Calculator or full solution with optional side-by-side AI */}
-        <DemoEconPracticeAside hasExplanation={showExplanations} wide={!!explanation}>
-          {showExplanations && activeCase ? (
+        {/* Right panel: Calculator, Full solution, or AI Explanation */}
+        <DemoEconPracticeAside hasExplanation={showExplanations || !!explanation}>
+          {explanation ? (
+            <ExplanationPanels
+              state={explanation}
+              onClose={() => setExplanation(null)}
+              onRetry={() => {
+                if (!activeCase) return;
+                requestExplanation(activeCase, explanation.statementIndex);
+              }}
+            />
+          ) : showExplanations && activeCase ? (
             <AllExplanationsPanel
               task={activeCase}
               index={activeIdx}
-              onClose={() => {
-                setShowExplanations(false);
-                setExplanation(null);
-              }}
+              onClose={() => setShowExplanations(false)}
               onRequestAi={(i) => requestExplanation(activeCase, i)}
-              aiState={explanation}
-              onCloseAi={() => setExplanation(null)}
-              onRetryAi={() => {
-                if (!activeCase || !explanation) return;
-                requestExplanation(activeCase, explanation.statementIndex);
-              }}
             />
           ) : null}
         </DemoEconPracticeAside>
@@ -843,7 +843,7 @@ function CustomResetModal({
 
 
 function CaseCard({
-  data, index, onGraded, inRevision, alreadyPassed, onResetProgress, onRetry,
+  data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
   explanationsOpen, onShowExplanations, onToggleExplanations,
   reviewOnly = false, timerNote = null,
   requireAuth,
@@ -854,13 +854,11 @@ function CaseCard({
   onGraded: (allCorrect: boolean, correctCount: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
-  onRetry?: () => void;
   explanationsOpen: boolean;
   onShowExplanations: () => void;
   onToggleExplanations: () => void;
   requireAuth?: () => boolean;
 }) {
-  const calc = usePracticeCalcOptional();
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
 
@@ -873,7 +871,6 @@ function CaseCard({
   useEffect(() => {
     if (!reviewOnly) return;
     setChecked(true);
-    calc?.setOpen(false);
     onShowExplanations();
     // Only re-run when the timed review state or case changes.
     // eslint-disable-next-line react-hooks/exhaustive-deps -- onShowExplanations is an inline parent callback
@@ -893,14 +890,12 @@ function CaseCard({
     if (requireAuth && !requireAuth()) return;
     setChecked(true);
     onGraded(correctCount === 5, correctCount);
-    calc?.setOpen(false);
     onShowExplanations();
   };
 
   const handleReset = () => {
     setChecked(false);
     setAnswers([null, null, null, null, null]);
-    onRetry?.();
   };
 
   const handleFullReset = () => {
@@ -1053,31 +1048,27 @@ function AllExplanationsPanel({
   index,
   onClose,
   onRequestAi,
-  aiState,
-  onCloseAi,
-  onRetryAi,
 }: {
   task: Case;
   index: number;
   onClose: () => void;
   onRequestAi: (i: number) => void;
-  aiState: ExplanationPanelState | null;
-  onCloseAi: () => void;
-  onRetryAi: () => void;
 }) {
   const letters = "ABCDEF";
-  const body = task.statements
-    .flatMap((_, i) => {
+  const body = [
+    ...task.statements.flatMap((_, i) => {
       const letter = letters[i] ?? String(i + 1);
       const verdict = task.answer_key[i] ? "True" : "False";
-      let expl = (task.tactical_explanations[i] ?? "").trim();
+      const expl = cleanExplanation((task.tactical_explanations[i] ?? "").trim());
       if (expl) {
-        expl = expl.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "").trim();
-        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
       }
-      const prose = expl || scrubStatementHints(task.statements[i]);
-      return [`**${letter}.** → ${verdict}\n\n${prose}`, ""];
-    })
+      return [
+        `**${letter}.** → ${verdict}\n\n${scrubStatementHints(task.statements[i])}`,
+        "",
+      ];
+    }),
+  ]
     .join("\n")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
@@ -1102,31 +1093,17 @@ function AllExplanationsPanel({
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <EconAnswerKeyTable answerKey={task.answer_key} />
         <div className="mb-6 flex flex-wrap gap-2">
-          {task.statements.map((_, i) => {
-            const letter = letters[i] ?? String(i + 1);
-            const aiOpen = aiState?.statementIndex === i;
-            return (
-              <button
-                key={i}
-                type="button"
-                onClick={() => (aiOpen ? onCloseAi() : onRequestAi(i))}
-                className={practiceInlineAiButtonClass(!!aiOpen)}
-                aria-label={`AI explanation for statement ${letter}`}
-              >
-                {aiOpen ? `Hide AI · ${letter}` : `AI · ${letter}`}
-              </button>
-            );
-          })}
+          {task.statements.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => onRequestAi(i)}
+              className={practiceInlineAiButtonClass(false)}
+            >
+              AI · {letters[i] ?? i + 1}
+            </button>
+          ))}
         </div>
-        {aiState ? (
-          <div className="mb-6">
-            <InlineAiBesideStatement
-              state={aiState}
-              onClose={onCloseAi}
-              onRetry={onRetryAi}
-            />
-          </div>
-        ) : null}
         <ExplanationProse text={body} />
       </div>
     </div>
@@ -1289,31 +1266,18 @@ type ExplanationPanelState = {
 
 function DemoEconPracticeAside({
   hasExplanation,
-  wide = false,
   children,
 }: {
   hasExplanation: boolean;
-  wide?: boolean;
   children: ReactNode;
 }) {
   const calc = usePracticeCalcOptional();
   if (!hasExplanation && !calc?.open) return null;
-  return (
-    <PracticeRightSlot
-      className={cn(
-        "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:shrink-0",
-        wide ? "lg:w-[min(100%,42rem)] xl:w-[46rem]" : "lg:w-[28rem] xl:w-[32rem]",
-      )}
-    >
-      {children}
-    </PracticeRightSlot>
-  );
+  return <PracticeRightSlot>{children}</PracticeRightSlot>;
 }
 
-function InlineAiBesideStatement({
-  state,
-  onClose,
-  onRetry,
+function ExplanationPanels({
+  state, onClose, onRetry,
 }: {
   state: ExplanationPanelState;
   onClose: () => void;
@@ -1338,64 +1302,77 @@ function InlineAiBesideStatement({
   }, [reveal]);
 
   return (
-    <div className="flex min-w-0 flex-col gap-3 rounded-xl border border-primary/30 bg-primary/5 p-4">
-      <div className="flex items-center justify-between gap-2">
-        <p className={practicePanelSectionLabelClass}>AI explanation</p>
+    <div className="flex h-full flex-col gap-3" data-practice-surface>
+      {/* Header */}
+      <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
+        <span className={practicePanelSectionLabelClass}>
+          AI Explanation · Statement {state.statementIndex + 1}
+        </span>
         <button
-          type="button"
           onClick={onClose}
-          aria-label="Close AI explanation"
+          aria-label="Close explanation"
           className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
         >
           <X className="h-4 w-4" />
         </button>
       </div>
-      <div className="flex flex-wrap items-center gap-2">
-        <span
-          className={cn(
+
+      {/* Panel B: Classic Explanation */}
+      <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+        <div className="mb-2 flex items-center gap-2">
+          <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+            Classic Explanation
+          </span>
+          <span className={cn(
             "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-            state.correctAnswer
-              ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-              : "bg-destructive/15 text-destructive",
-          )}
-        >
-          Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
-        </span>
-      </div>
-      <p className="text-[11px] italic text-muted-foreground">&ldquo;{state.statementText}&rdquo;</p>
-      {state.loading && (
-        <div className="flex items-center gap-2 text-xs text-muted-foreground">
-          <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
+            state.correctAnswer ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" : "bg-destructive/15 text-destructive",
+          )}>
+            Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
+          </span>
         </div>
-      )}
-      {state.error && (
-        <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
-          {state.error}
-          <button type="button" onClick={onRetry} className="ml-2 underline">
-            Retry
-          </button>
-        </div>
-      )}
-      {state.data && (
-        <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
-      )}
-      {state.data && (
-        <div className="overflow-hidden rounded-lg border border-border bg-[#fdf9f0]">
-          <div className="border-b border-border/60 bg-white/60 px-3 py-1.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-              Textbook
-            </span>
+        <p className="mb-3 text-[11px] italic text-muted-foreground">"{state.statementText}"</p>
+        {state.loading && (
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
           </div>
-          <div className="max-h-48 overflow-y-auto px-3 py-3 font-serif text-[12px] leading-relaxed text-[#3a2e1f]">
+        )}
+        {state.error && (
+          <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
+            {state.error}
+            <button onClick={onRetry} className="ml-2 underline">Retry</button>
+          </div>
+        )}
+        {state.data && (
+          <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
+        )}
+      </div>
+
+      {/* Panel C: Textbook Canvas */}
+      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
+        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Textbook Canvas
+          </span>
+          <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+            BBE School Textbook
+          </span>
+        </div>
+        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+          {state.loading && (
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Loader2 className="h-3.5 w-3.5 animate-spin" /> Fetching the page…
+            </div>
+          )}
+          {state.data && (
             <TextbookCanvasBody
               text={state.data.textbook_context}
               highlight={state.data.highlight_text}
               reveal={reveal}
               highlightRef={highlightRef}
             />
-          </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -1427,47 +1404,6 @@ function TextbookCanvasBody({
       </span>
       {after}
     </p>
-  );
-}
-
-function parseDifficulty(level: string): { n: number; max: number } {
-  const [rawN, rawMax] = level.split("/");
-  const max = Math.max(1, Number(rawMax) || 5);
-  const n = Math.max(0, Math.min(Number(rawN) || 0, max));
-  return { n, max };
-}
-
-/** Green → red heat for difficulty 1…5. */
-const DIFFICULTY_BAR_COLORS = [
-  "bg-emerald-500",
-  "bg-lime-500",
-  "bg-amber-400",
-  "bg-orange-500",
-  "bg-red-500",
-] as const;
-
-/** Cell-signal bars for the chapter sidebar task list. */
-function DifficultyBars({ level }: { level: string }) {
-  const { n, max } = parseDifficulty(level);
-  const color = DIFFICULTY_BAR_COLORS[Math.max(0, n - 1)] ?? DIFFICULTY_BAR_COLORS[0];
-  const heights = ["h-[3px]", "h-[5px]", "h-[7px]", "h-[9px]", "h-[11px]"];
-  return (
-    <span
-      className="inline-flex h-[11px] shrink-0 items-end gap-[2px]"
-      title={`Difficulty ${level}`}
-      aria-label={`Difficulty ${level}`}
-    >
-      {Array.from({ length: max }, (_, i) => (
-        <span
-          key={i}
-          className={cn(
-            "w-[3px] rounded-[1px]",
-            heights[i] ?? "h-[11px]",
-            i < n ? color : "bg-muted-foreground/20",
-          )}
-        />
-      ))}
-    </span>
   );
 }
 

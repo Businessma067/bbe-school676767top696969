@@ -1,5 +1,9 @@
 import { Minus, Plus } from "lucide-react";
-import type { StatementResult } from "@/lib/scoring";
+import {
+  statementPointDelta,
+  type StatementResult,
+  type Wi2Rates,
+} from "@/lib/scoring";
 import { cn } from "@/lib/utils";
 
 export type ScoringExample = {
@@ -23,16 +27,18 @@ function breakdownStatement(
   perCorrect: number,
   perWrong: number,
 ): StatementBreakdown {
-  if (s.isTrue && s.userMarked) {
-    return { letter, isTrue: true, userMarked: true, points: perCorrect };
-  }
-  if (s.isTrue && !s.userMarked) {
-    return { letter, isTrue: true, userMarked: false, points: 0 };
-  }
-  if (!s.isTrue && s.userMarked) {
-    return { letter, isTrue: false, userMarked: true, points: -perWrong };
-  }
-  return { letter, isTrue: false, userMarked: false, points: 0 };
+  const rates: Wi2Rates = {
+    perCorrect,
+    perWrong,
+    trueCount: 0,
+    falseCount: 0,
+  };
+  return {
+    letter,
+    isTrue: s.isTrue,
+    userMarked: s.userMarked,
+    points: statementPointDelta(s, rates),
+  };
 }
 
 function formatPoints(n: number) {

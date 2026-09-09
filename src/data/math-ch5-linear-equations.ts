@@ -37,13 +37,7 @@ $$
 x=360
 $$
 
-The claim asserts
-
-$$
-x=360
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -95,8 +89,6 @@ $$
 The claim asserts
 
 $$120$$
-
-$.
 
 The computed figure does not match the claim.
 
@@ -157,9 +149,12 @@ $$x = 360$$
 
 From (1):
 
-$$y=620 - 360$$
-
-$$=260$$
+$$
+\begin{aligned}
+y &=620 - 360 \\
+&=260
+\end{aligned}
+$$
 
 **Answer.** North = 360 crates | South = 260 crates`,
   },
@@ -191,13 +186,7 @@ $$
 x=3.50
 $$
 
-The claim asserts
-
-$$
-x=3.50
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -227,11 +216,7 @@ The printed total is
 
 $$185$$
 
-The claim asserts
-
-$$185$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -313,17 +298,23 @@ $$428 - 160y + 25y = 185$$
 
 $$-135y = -243$$
 
-$$y=\\frac{243}{135}$$
-
-$$=1.80$$
+$$
+\begin{aligned}
+y &=\\frac{243}{135} \\
+&=1.80
+\end{aligned}
+$$
 
 Then
 
 $$x = 10.70 - 4(1.80)$$
 
-$$x=10.70 - 7.20$$
-
-$$=3.50$$
+$$
+\begin{aligned}
+x &=10.70 - 7.20 \\
+&=3.50
+\end{aligned}
+$$
 
 **Answer.** Notebook = \\$3.50 | Pen = \\$1.80`,
   },
@@ -355,13 +346,7 @@ $$
 a=12
 $$
 
-The claim asserts
-
-$$
-a=12
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -374,13 +359,7 @@ $$
 c=7
 $$
 
-The claim asserts
-
-$$
-c=7
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -477,17 +456,23 @@ $$90a + 8250 - 600a = 2130$$
 
 $$-510a = -6120$$
 
-$$a=\\frac{6120}{510}$$
-
-$$=12$$
+$$
+\begin{aligned}
+a &=\\frac{6120}{510} \\
+&=12
+\end{aligned}
+$$
 
 Then
 
 $$c = 55 - 4(12)$$
 
-$$c=55 - 48$$
-
-$$=7$$
+$$
+\begin{aligned}
+c &=55 - 48 \\
+&=7
+\end{aligned}
+$$
 
 **Answer.** Adult = \\$12.00 | Child = \\$7.00`,
   },
@@ -515,13 +500,7 @@ $$
 x=7
 $$
 
-The claim asserts
-
-$$
-x=7
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -534,13 +513,7 @@ $$
 y=5
 $$
 
-The claim asserts
-
-$$
-y=5
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -578,11 +551,7 @@ The printed total is
 
 $$74.00$$
 
-The claim asserts
-
-$$74.00$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -703,8 +672,6 @@ Those two displays do not agree.
 So the statement is False.`,
       `**C.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $x=6000$ in Account A. Interest on that principal at $4\\%$ is
 
 $$
@@ -719,8 +686,6 @@ $$260.00$$
 
 So the statement is False.`,
       `**D.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=4000$ in Account B. Interest on that principal at $7\\%$ is
 
@@ -779,15 +744,21 @@ $$400 - 0.04y + 0.07y = 520$$
 
 $$0.03y = 120$$
 
-$$y=\\frac{120}{0.03}$$
-
-$$=4000$$
+$$
+\begin{aligned}
+y &=\\frac{120}{0.03} \\
+&=4000
+\end{aligned}
+$$
 
 Then
 
-$$x=10000 - 4000$$
-
-$$=6000$$
+$$
+\begin{aligned}
+x &=10000 - 4000 \\
+&=6000
+\end{aligned}
+$$
 
 **Answer.** Account A = \\$6,000 | Account B = \\$4,000`,
   },
@@ -815,13 +786,7 @@ $$
 x=304
 $$
 
-The claim asserts
-
-$$
-x=304
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -844,8 +809,6 @@ Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=349$. Twelve Premium chairs are worth
 
@@ -935,15 +898,21 @@ $$18x + 12x + 540 = 9660$$
 
 $$30x = 9120$$
 
-$$x=\\frac{9120}{30}$$
-
-$$=304$$
+$$
+\begin{aligned}
+x &=\\frac{9120}{30} \\
+&=304
+\end{aligned}
+$$
 
 Then
 
-$$y=304 + 45$$
-
-$$=349$$
+$$
+\begin{aligned}
+y &=304 + 45 \\
+&=349
+\end{aligned}
+$$
 
 **Answer.** Standard = \\$304.00 | Premium = \\$349.00`,
   },
@@ -971,13 +940,7 @@ $$
 f=17
 $$
 
-The claim asserts
-
-$$
-f=17
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -990,13 +953,7 @@ $$
 r=0.30
 $$
 
-The claim asserts
-
-$$
-r=0.30
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -1151,7 +1108,7 @@ Those two displays do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Scale the recovered Standard count by the 4 assembly hours listed per unit, then compare the product with the claim.
 
 The overview recovered $s=75$ Standard ovens at 4 hours each:
 
@@ -1163,12 +1120,12 @@ The claim asserts
 
 $$300$$
 
-$ assembly hours.
+assembly hours.
 
 So the statement is True.`,
       `**D.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Scale the recovered Deluxe count by the 9 assembly hours listed per unit, then compare the product with the claim.
 
 The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
@@ -1180,12 +1137,12 @@ The claim asserts
 
 $$500$$
 
-$ assembly hours.
+assembly hours.
 
 So the statement is False.`,
       `**E.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Scale the recovered Standard count by the \\$120 material cost per unit, then compare the product with the claim.
 
 The overview recovered $s=75$ Standard ovens at \\$120 each:
 
@@ -1196,8 +1153,6 @@ $$
 The claim asserts
 
 $$9000.00$$
-
-.
 
 So the statement is True.`,
     ],
@@ -1231,9 +1186,12 @@ $$d = 55$$
 
 Then
 
-$$s=130 - 55$$
-
-$$=75$$
+$$
+\begin{aligned}
+s &=130 - 55 \\
+&=75
+\end{aligned}
+$$
 
 **Answer.** Standard = 75 | Deluxe = 55`,
   },
@@ -1265,13 +1223,7 @@ $$
 x=350
 $$
 
-The claim asserts
-
-$$
-x=350
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -1284,13 +1236,7 @@ $$
 y=200
 $$
 
-The claim asserts
-
-$$
-y=200
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1320,11 +1266,7 @@ The printed total is
 
 $$9300$$
 
-The claim asserts
-
-$$9300$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -1379,17 +1321,23 @@ $$14x + 19800 - 44x = 9300$$
 
 $$-30x = -10500$$
 
-$$x=\\frac{10500}{30}$$
-
-$$=350$$
+$$
+\begin{aligned}
+x &=\\frac{10500}{30} \\
+&=350
+\end{aligned}
+$$
 
 Then
 
 $$y = 900 - 2(350)$$
 
-$$y=900 - 700$$
-
-$$=200$$
+$$
+\begin{aligned}
+y &=900 - 700 \\
+&=200
+\end{aligned}
+$$
 
 **Answer.** Sofa = \\$350.00 | Armchair = \\$200.00`,
   },
@@ -1565,8 +1513,6 @@ $$f = 9$$
     tactical_explanations: [
       `**A.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $y=6$. Ben's 5 burritos alone cost
 
 $$
@@ -1604,8 +1550,6 @@ The shared elimination already fixed the unique pair; this letter only tests the
 
 So the statement is True.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
 
@@ -1734,13 +1678,7 @@ $$
 x=12
 $$
 
-The claim asserts
-
-$$
-x=12
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -1763,8 +1701,6 @@ Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x=12$. One hundred extra paperbacks add
 
@@ -1808,8 +1744,6 @@ The claim needs a total less than \\$75. We have equality.
 So the statement is False.`,
       `**E.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $y=17$. Three hundred ten hardcovers alone would be
 
 $$
@@ -1846,15 +1780,21 @@ $$400x + 220x + 1100 = 8540$$
 
 $$620x = 7440$$
 
-$$x=\\frac{7440}{620}$$
-
-$$=12$$
+$$
+\begin{aligned}
+x &=\\frac{7440}{620} \\
+&=12
+\end{aligned}
+$$
 
 Then
 
-$$y=12 + 5$$
-
-$$=17$$
+$$
+\begin{aligned}
+y &=12 + 5 \\
+&=17
+\end{aligned}
+$$
 
 **Answer.** Paperback = \\$12.00 | Hardcover = \\$17.00`,
   },
@@ -1911,13 +1851,7 @@ $$
 y=3
 $$
 
-The claim asserts
-
-$$
-y=3
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2136,13 +2070,7 @@ $$
 y=210
 $$
 
-The claim asserts
-
-$$
-y=210
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
     ],
@@ -2186,9 +2114,12 @@ $$14x + 10080 - 45x = 5740$$
 
 $$-31x = -4340$$
 
-$$x=\\frac{4340}{31}$$
-
-$$=140$$
+$$
+\begin{aligned}
+x &=\\frac{4340}{31} \\
+&=140
+\end{aligned}
+$$
 
 Then
 
@@ -2229,13 +2160,7 @@ $$
 x=12
 $$
 
-The claim asserts
-
-$$
-x=12
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -2432,13 +2357,7 @@ $$
 x=14
 $$
 
-The claim asserts
-
-$$
-x=14
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2588,13 +2507,7 @@ $$
 y=2
 $$
 
-The claim asserts
-
-$$
-y=2
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2786,8 +2699,6 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**D.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $C(d)=6+d$. At $30$ km:
 
 $$
@@ -2802,8 +2713,6 @@ $$36.00$$
 
 So the statement is True.`,
       `**E.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
@@ -3055,9 +2964,12 @@ $$9x_A = 81$$
 
 $$x_A = 9$$
 
-$$y_A=30 - 12$$
-
-$$=18$$
+$$
+\begin{aligned}
+y_A &=30 - 12 \\
+&=18
+\end{aligned}
+$$
 
 Vendor B, divide the first quote by $5$:
 
@@ -3073,9 +2985,12 @@ $$27x_B = 297$$
 
 $$x_B = 11$$
 
-$$y_B=\\frac{92 - 44}{3}$$
-
-$$=16$$
+$$
+\begin{aligned}
+y_B &=\\frac{92 - 44}{3} \\
+&=16
+\end{aligned}
+$$
 
 **Answer.** Vendor A: X = \\$9, Y = \\$18 | Vendor B: X = \\$11, Y = \\$16`,
   },
@@ -3237,9 +3152,12 @@ $$2B = 28200$$
 
 $$B = 14100$$
 
-$$A=27200 - 14100$$
-
-$$=13100$$
+$$
+\begin{aligned}
+A &=27200 - 14100 \\
+&=13100
+\end{aligned}
+$$
 
 The price system is then
 
@@ -3437,13 +3355,7 @@ $$
 x = 19
 $$
 
-The claim asserts
-
-$$
-x = 19
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -3577,18 +3489,10 @@ $$
 x = 4.80
 $$
 
-The claim asserts
-
-$$
-x = 4.80
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.
 
@@ -3717,13 +3621,7 @@ $$
 x = 33
 $$
 
-The claim asserts
-
-$$
-x = 33
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -3851,18 +3749,10 @@ $$
 x = 19
 $$
 
-The claim asserts
-
-$$
-x = 19
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.
 
@@ -3987,13 +3877,7 @@ $$
 x = 21
 $$
 
-The claim asserts
-
-$$
-x = 21
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4137,13 +4021,7 @@ $$
 x = 29
 $$
 
-The claim asserts
-
-$$
-x = 29
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4276,13 +4154,7 @@ $$
 x = 55
 $$
 
-The claim asserts
-
-$$
-x = 55
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4407,13 +4279,7 @@ $$
 x = 7
 $$
 
-The claim asserts
-
-$$
-x = 7
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4576,13 +4442,7 @@ $$
 x = 29
 $$
 
-The claim asserts
-
-$$
-x = 29
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4603,8 +4463,6 @@ So the statement is False.`,
 Once the unit prices are recovered from the shared solve, this stem total is fixed. Read the printed figure and compare it with the claim.
 
 Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. East reported \\$3,200.
 
@@ -4672,9 +4530,12 @@ $$
 
 Testing East at the recovered prices:
 
-$$65(29) + 50(24)=1885 + 1200$$
-
-$$=3085$$
+$$
+\begin{aligned}
+65(29) + 50(24) &=1885 + 1200 \\
+&=3085
+\end{aligned}
+$$
 
 East reported \\$3,200, so that row does not reconcile.
 
@@ -5144,8 +5005,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $x = 13.85$ per dozen croissants. Four dozen:
 
 $$
@@ -5571,11 +5430,13 @@ Let $x$ = price per Nitrogen-type cylinder, $y$ = price per Oxygen-type cylinder
 
 Invoice 2 versus Invoice 1:
 
-$$\\frac{9}{15}=\\frac{12}{20}$$
-
-$$=\\frac{419.40}{699.00}$$
-
-$$=0.60$$
+$$
+\begin{aligned}
+\\frac{9}{15} &=\\frac{12}{20} \\
+&=\\frac{419.40}{699.00} \\
+&=0.60
+\end{aligned}
+$$
 
 **1. Translate: Invoice 1.**
 
@@ -5809,8 +5670,6 @@ The margin sits closer to eighteen than to nineteen.
 So the statement is True.`,
       `**C.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered Season 3's T-Shirt count as $T = 245$.
 
 $$245 = 24 \\times 10 + 5$$
@@ -5958,8 +5817,6 @@ the real fee overshoots \\$89 by about 6%.
 
 So the statement is True.`,
       `**B.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y = 3.15$ per kilogram. Tripled:
 
@@ -6342,11 +6199,13 @@ $$
 
 **2.** Substitute back:
 
-$$y=2(4800) + 4000$$
-
-$$=9600 + 4000$$
-
-$$=13600$$
+$$
+\begin{aligned}
+y &=2(4800) + 4000 \\
+&=9600 + 4000 \\
+&=13600
+\end{aligned}
+$$
 
 **Answer.** Fund A holds \\$4,800 and Fund B holds \\$13,600.`,
   },
@@ -6477,17 +6336,22 @@ $$
 
 **3.** Then
 
-$$y=92 - 5(16)$$
-
-$$=92 - 80$$
-
-$$=12$$
+$$
+\begin{aligned}
+y &=92 - 5(16) \\
+&=92 - 80 \\
+&=12
+\end{aligned}
+$$
 
 **4.** Audit Batch 3 (8 L at 1:3 is $2$ L of A and $6$ L of B):
 
-$$2(16) + 6(12)=32 + 72$$
-
-$$=104$$
+$$
+\begin{aligned}
+2(16) + 6(12) &=32 + 72 \\
+&=104
+\end{aligned}
+$$
 
 versus 109 g recorded, a 5 g discrepancy.
 
@@ -7110,8 +6974,6 @@ Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger.
 So the statement is False.`,
       `**D.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered current ages $47$ and $19$. Ten years ago the ages were $37$ and $9$.
 
 $$
@@ -7179,11 +7041,13 @@ $$
 
 **3.** Substitute $y = 19$ into $x = 2y + 9$:
 
-$$x=2(19) + 9$$
-
-$$=38 + 9$$
-
-$$=47$$
+$$
+\begin{aligned}
+x &=2(19) + 9 \\
+&=38 + 9 \\
+&=47
+\end{aligned}
+$$
 
 **Answer.** Elder employee = 47 years old | Younger employee = 19 years old.`,
   },
@@ -7611,17 +7475,22 @@ $$
 
 **3.** Substitute $y = 11.4$ back:
 
-$$x=41.8 - 3(11.4)$$
-
-$$=41.8 - 34.2$$
-
-$$=7.6$$
+$$
+\begin{aligned}
+x &=41.8 - 3(11.4) \\
+&=41.8 - 34.2 \\
+&=7.6
+\end{aligned}
+$$
 
 **4.** Audit Batch 3:
 
-$$9.5(7.6) + 6(11.4)=72.2 + 68.4$$
-
-$$=140.6$$
+$$
+\begin{aligned}
+9.5(7.6) + 6(11.4) &=72.2 + 68.4 \\
+&=140.6
+\end{aligned}
+$$
 
 versus 147.0 kg recorded, a 6.4 kg discrepancy.
 
@@ -7657,8 +7526,6 @@ about $1.741\\%$, which is less than $1.75\\%$.
 
 So the statement is True.`,
       `**B.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.
 
@@ -7894,9 +7761,12 @@ $$
 
 **5.** Audit Batch 3 ($0.32$ L $= 320$ mL of A):
 
-$$320(8.4) + 450(15.6)=2688 + 7020$$
-
-$$=9708$$
+$$
+\begin{aligned}
+320(8.4) + 450(15.6) &=2688 + 7020 \\
+&=9708
+\end{aligned}
+$$
 
 versus 9,700 mg recorded, an 8 mg discrepancy.
 
@@ -8177,9 +8047,12 @@ $$
 
 **3.** Verification at reading $45.0$:
 
-$$45.0(3.50) + 13.50=157.50 + 13.50$$
-
-$$=171.00$$
+$$
+\begin{aligned}
+45.0(3.50) + 13.50 &=157.50 + 13.50 \\
+&=171.00
+\end{aligned}
+$$
 
 versus recorded 172.20, a $1.20$ discrepancy.
 
@@ -8319,11 +8192,13 @@ $$
 
 **3.** Substitute $y = 4.85$ back:
 
-$$x=9.11 - 0.6(4.85)$$
-
-$$=9.11 - 2.91$$
-
-$$=6.20$$
+$$
+\begin{aligned}
+x &=9.11 - 0.6(4.85) \\
+&=9.11 - 2.91 \\
+&=6.20
+\end{aligned}
+$$
 
 **Answer.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg.`,
   },
@@ -8466,9 +8341,12 @@ $$
 
 **4.** Audit Route 3 ($155.3$ mi $\\approx 250$ km $= 2.5$ hundreds of km):
 
-$$2.5(32) + 4(18)=80 + 72$$
-
-$$=152$$
+$$
+\begin{aligned}
+2.5(32) + 4(18) &=80 + 72 \\
+&=152
+\end{aligned}
+$$
 
 versus 155 L recorded, a 3 L discrepancy.
 
@@ -8630,8 +8508,6 @@ Then $y = 5.4 + 1.2 = 6.6$.
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The recovered / computed figure is
 
@@ -8873,9 +8749,12 @@ $$
 
 **2.** Then
 
-$$x=2(36)$$
-
-$$=72$$
+$$
+\begin{aligned}
+x &=2(36) \\
+&=72
+\end{aligned}
+$$
 
 **3.** Year 6 populations:
 
@@ -9014,9 +8893,12 @@ $$
 
 **6.** Audit Day 3 ($1020$ min $= 17$ hrs):
 
-$$17(145) + 11(98)=2465 + 1078$$
-
-$$=3543$$
+$$
+\begin{aligned}
+17(145) + 11(98) &=2465 + 1078 \\
+&=3543
+\end{aligned}
+$$
 
 versus 3,553 MWh recorded, a 10 MWh discrepancy.
 

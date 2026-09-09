@@ -1,1137 +1,534 @@
 -- Update expanded explanations for 4.3-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['They remain incorporated legal persons despite private ownership.
 
-They remain incorporated legal persons despite private ownership.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'Private shares are not freely sold to the public on exchanges.
 
-The statement is false.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Private shares are not freely sold to the public on exchanges.
+The statement is false.', 'Private limited firms combine incorporation with limited liability.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Private limited companies are incorporated businesses with limited liability for shareholders" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Listing is not required for incorporated status.
 
-The statement is false.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+Applied carefully, "Private limited companies need not list shares on a stock exchange to exist as legal persons" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Liability is generally capped at invested capital.
 
-Private limited firms combine incorporation with limited liability.
+Applied carefully, "Shareholders in a private limited company are typically not liable beyond the capital they invested" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.'] WHERE case_id = 'CASE 4.3.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Minimum capital rules target certain incorporated forms, not sole traders or partnerships.
 
-The statement is true.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Listing is not required for incorporated status.
+The statement is false.', 'Some corporations must meet capital thresholds at formation.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Some incorporated forms face minimum capital requirements that must be met when the company is established" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.', 'Minimum capital provides a creditor protection buffer.
 
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+Applied carefully, "Minimum capital rules aim to protect creditors by ensuring a base equity buffer in the corporation" lines up with the textbook idea without adding an extra restriction.
 
-Liability is generally capped at invested capital.
+The statement is true.', 'Dividends remain discretionary even after capital requirements are met.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The absolute wording "guarantees" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is false.', 'Formal capital and registration add setup complexity versus unincorporated firms.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Corporations remain more difficult to set up than unincorporated businesses partly because of formal capital and registration rules" lines up with the textbook idea without adding an extra restriction.
 
-Minimum capital rules target certain incorporated forms, not sole traders or partnerships.
+The statement is true.'] WHERE case_id = 'CASE 4.3.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Corporations may combine equity with bonds and bank loans.
 
-Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'Bond interest may undercut comparable bank rates.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Issuing bonds may offer a lower interest rate than a comparable bank loan for large-scale investment" lines up with the textbook idea without adding an extra restriction.
 
-Some corporations must meet capital thresholds at formation.
+The statement is true.', 'Bonds can trade on regulated markets alongside shares.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Bonds, like shares, may be securities traded on regulated financial markets subject to authority oversight" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The statement is true.', 'Debt must be repaid; equity does not carry the same obligation.
 
-Minimum capital provides a creditor protection buffer.
+Applied carefully, "Bond finance adds debt obligations, whereas share capital does not create a contractual repayment like a loan" lines up with the textbook idea without adding an extra restriction.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'The incorporated firm contracts in its own name with limited owner exposure.
 
-The statement is true.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+Applied carefully, "The corporation remains a legal person that can contract for the plant independently of bondholders'' personal assets" lines up with the textbook idea without adding an extra restriction.
 
-Dividends remain discretionary even after capital requirements are met.
+The statement is true.'] WHERE case_id = 'CASE 4.3.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Shareholders may attend meetings even if they are not directors.
 
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is false.', 'Voting rights motivate attendance at the annual meeting.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Investors may buy shares partly to attend the annual stockholders'' meeting and vote on major decisions" lines up with the textbook idea without adding an extra restriction.
 
-Formal capital and registration add setup complexity versus unincorporated firms.
+The statement is true.', 'Preferred stock often limits voting in return for dividend priority.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Preferred shareholders usually trade stronger dividend claims for reduced or no voting rights at that meeting" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is true.', 'Voting does not require shareholders to manage daily operations.
 
-Corporations may combine equity with bonds and bank loans.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is false.', 'Ownership persists even when management is delegated.
 
-So the sentence does not survive once the correct mechanism is applied.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is false.'] WHERE case_id = 'CASE 4.3.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Separate legal personality defines incorporation.
 
-Corporate bonds and bank loans are both debt, but bonds are issued to investors in the market whereas bank loans are negotiated with lenders. Neither is equity: both create repayment obligations rather than residual ownership claims.
+Applied carefully, "Corporations are incorporated businesses that are legal entities separate from their owners" lines up with the textbook idea without adding an extra restriction.
 
-Bond interest may undercut comparable bank rates.
+The statement is true.', 'Limited liability caps owner exposure at invested capital.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Shareholders'' liability is usually limited to the amount invested when purchasing shares" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is true.', 'Primary share sales can mobilise substantial equity.
 
-Bonds can trade on regulated markets alongside shares.
+Applied carefully, "Share capital divided into shares can raise large sums when investors buy newly issued stock" lines up with the textbook idea without adding an extra restriction.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is true.', 'Listing facilitates trading but remains optional.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Corporations may list shares on a regulated stock exchange but are not required to do so" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is true.', 'Boards run operations while shareholders may remain passive owners.
 
-Corporate bonds and bank loans are both debt, but bonds are issued to investors in the market whereas bank loans are negotiated with lenders. Neither is equity: both create repayment obligations rather than residual ownership claims.
+Applied carefully, "Management by a board of directors allows separation of ownership and control within the corporation" lines up with the textbook idea without adding an extra restriction.
 
-Debt must be repaid; equity does not carry the same obligation.
+The statement is true.'] WHERE case_id = 'CASE 4.3.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Shares trade at issue and on secondary markets, not only at meetings.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is false.', 'Secondary trading continues without repeating an ipo annually.
 
-As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The incorporated firm contracts in its own name with limited owner exposure.
+The statement is false.', 'Shares trade at initial issue or on the secondary market between shareholders.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Investors may acquire shares directly from the corporation at issue or purchase them later from an existing shareholder" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is true.', 'Only primary sales fund the issuer; later trades swap owners.
 
-Shareholders may attend meetings even if they are not directors.
+Applied carefully, "Buying at initial issue provides share capital to the corporation; buying later transfers ownership between investors" lines up with the textbook idea without adding an extra restriction.
 
-The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+The statement is true.', 'Any share purchase confers shareholder status.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Persons who buy shares become shareholders regardless of whether purchase occurs at issue or on the secondary market" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The statement is true.'] WHERE case_id = 'CASE 4.3.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary rallies do not increase registered share capital.
 
-Voting rights motivate attendance at the annual meeting.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is false.', 'Profit expectations can lift investor demand and prices.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Expectations of higher future profits from the contract can increase demand and push up share prices" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+The statement is true.', 'Holders may realise capital growth on later sales.
 
-Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
+Applied carefully, "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices" lines up with the textbook idea without adding an extra restriction.
 
-Preferred stock often limits voting in return for dividend priority.
+The statement is true.', 'Trade proceeds flow between investors, not to the issuer.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The statement is false.', 'Dividends remain discretionary and are not tied to price spikes.
 
-Voting does not require shareholders to manage daily operations.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is false.'] WHERE case_id = 'CASE 4.3.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Authority oversight defines regulated exchanges.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "A stock exchange is regulated by the authorities as a financial market for securities" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+The statement is true.', 'Listing demands compliance with exchange rules.
 
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+Applied carefully, "Corporations seeking a listing must comply with certain rules and fulfil listing requirements" lines up with the textbook idea without adding an extra restriction.
 
-Ownership persists even when management is delegated.
+The statement is true.', 'Post-ipo prices reflect market demand and supply.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "Shares introduced on an exchange at the IPO are thereafter priced largely by demand and supply" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.3.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Bond trading may occur alongside share trading.
 
-Separate legal personality defines incorporation.
+Applied carefully, "Bonds as well as shares may be bought and sold on such regulated markets" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Later trades benefit transacting investors, not the issuer''s capital account.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Listing facilitates trading among many people and businesses but does not oblige the issuer to receive later trade proceeds" lines up with the textbook idea without adding an extra restriction.
 
-Limited liability caps owner exposure at invested capital.
+The statement is true.'] WHERE case_id = 'CASE 4.3.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Shareholders are not generally liable for all corporate tax debts beyond investment.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The absolute wording "all" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is false.', 'Exposure is usually capped at subscribed capital.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Shareholders'' liability is usually confined to the money they invested when buying shares" lines up with the textbook idea without adding an extra restriction.
 
-Primary share sales can mobilise substantial equity.
+The statement is true.', 'Market losses on share values can still occur.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is false.', 'Non-shareholder managers do not automatically share the same liability shield as investors.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The absolute wording "always" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Listing facilitates trading but remains optional.
+The statement is false.', 'Unlimited or broader owner liability marks many unincorporated structures.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Limited liability distinguishes corporations from many unincorporated forms where owners face broader personal exposure" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.'] WHERE case_id = 'CASE 4.3.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Legal personality does not require distributing all profit as dividends.
 
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Boards run operations while shareholders may remain passive owners.
+The statement is false.', 'Dividends are not fixed to market prices nor strictly mandatory.
 
-The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Omitted dividends can weaken demand and affect prices.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The absolute wording "always" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Shares trade at issue and on secondary markets, not only at meetings.
+The statement is false.', 'Dividends come from profits, not mandatory interest on capital.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The absolute wording "regardless" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is false.', 'Discretionary dividends affect attractiveness when withheld too long.
 
-The statement is false.
-', 'FALSE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
+Applied carefully, "Dividends are discretionary profit distributions; prolonged omission can reduce share attractiveness and demand" lines up with the textbook idea without adding an extra restriction.
 
-Secondary trading continues without repeating an ipo annually.
+The statement is true.'] WHERE case_id = 'CASE 4.3.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Private limited firms retain limited liability without public listing.
 
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'Incorporation gives separate legal personality for assets and hiring.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "The manufacturer remains an incorporated legal person able to own equipment and hire workers" lines up with the textbook idea without adding an extra restriction.
 
-Shares trade at initial issue or on the secondary market between shareholders.
+The statement is true.', 'Minimum capital can apply at formation regardless of listing plans.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is false.', 'Private firms may still elect boards and delegate management.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Only primary sales fund the issuer; later trades swap owners.
+The statement is false.', 'Private limited companies operate without public share sales.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Shares need not be sold to the general public on an exchange for the firm to operate as a private limited company" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.'] WHERE case_id = 'CASE 4.3.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Low rates raise the relative appeal of equity.
 
-The statement is true.
-', 'TRUE — After issue, shares trade among investors. A rise in the secondary-market price enriches the selling shareholder relative to their purchase price; it does not by itself inject new cash into the corporation''s accounts.
+Applied carefully, "Comparatively low interest rates can increase share demand by making other investments less attractive" lines up with the textbook idea without adding an extra restriction.
 
-Any share purchase confers shareholder status.
+The statement is true.', 'High rates favour fixed-return alternatives over shares.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Comparatively high interest rates can pull investors toward interest-bearing alternatives and away from shares" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.', 'Growth signals are among demand influences cited for shares.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Economic growth indicators form part of the wider set of factors influencing share demand" lines up with the textbook idea without adding an extra restriction.
 
-Secondary rallies do not increase registered share capital.
+The statement is true.', 'High rates tend to reduce share demand rather than automatically lift prices.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The absolute wording "always" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'Price effects from demand do not fund the issuer after shares are issued.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Demand shifts from such conditions affect market prices but do not by themselves add share capital to the issuer after issue" lines up with the textbook idea without adding an extra restriction.
 
-Profit expectations can lift investor demand and prices.
+The statement is true.'] WHERE case_id = 'CASE 4.3.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Inflation may lift expected share values and demand.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Comparatively higher inflation may support share demand when investors expect share prices to rise with general prices" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.', 'Inflation appears among cited demand influences.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Inflation is among the economic indicators that can influence demand for corporate shares" lines up with the textbook idea without adding an extra restriction.
 
-Holders may realise capital growth on later sales.
+The statement is true.', 'Prosperity can coincide with stronger equity demand.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Thriving economic conditions with available investable funds can coincide with stronger share demand" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'Registered share capital is not automatically adjusted with inflation.
 
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Trade proceeds flow between investors, not to the issuer.
+The statement is false.', 'Market gains from inflation expectations accrue to shareholders, not issuer finance.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Price changes driven by inflation expectations benefit trading shareholders rather than financing the issuer anew" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-The statement is false.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+The statement is true.'] WHERE case_id = 'CASE 4.3.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The ceo heads the management board.
 
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+Applied carefully, "The management board''s highest-ranking officer is the Chief Executive Officer who leads corporate execution" lines up with the textbook idea without adding an extra restriction.
 
-Dividends remain discretionary and are not tied to price spikes.
+The statement is true.', 'Cfo duties do not require holding the largest share block.
 
-So the sentence does not survive once the correct mechanism is applied.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.3.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The statement is false.', 'The coo may sit on the board managing operations.
 
-Authority oversight defines regulated exchanges.
+Applied carefully, "The Chief Operating Officer may manage operations as a member of the board of directors" lines up with the textbook idea without adding an extra restriction.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is true.', 'Capital providers need not run daily operations.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The statement is true.', 'Corporations separate owners from professional managers.
 
-Listing demands compliance with exchange rules.
+Applied carefully, "Separation of ownership and management is a defining feature of corporate organisation" lines up with the textbook idea without adding an extra restriction.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is true.'] WHERE case_id = 'CASE 4.3.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Primary ipo sales raise share capital inside the firm.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Proceeds from shares sold at the IPO entered the corporation as share capital when investors bought at issue" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
+The statement is true.', 'Secondary doubling does not double internal cash capital.
 
-Post-ipo prices reflect market demand and supply.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
+The statement is false.', 'Regulators do not capture trading gains as issuer equity.
 
-That is why the claim stands for this form of business or source of finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is false.', 'Holders are not obliged to pay market premiums back to the firm.
 
-Bond trading may occur alongside share trading.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The statement is false.', 'Higher prices do not grant unlimited interest-free debt rights.
 
-That is why the claim stands for this form of business or source of finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The statement is false.'] WHERE case_id = 'CASE 4.3.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Incorporated firms hold assets in the corporate name.
 
-Later trades benefit transacting investors, not the issuer''s capital account.
+Applied carefully, "A corporation may own land and property in its own name rather than in shareholders'' personal names" lines up with the textbook idea without adding an extra restriction.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'The legal entity remains suable despite owners'' limited liability.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Shareholders are not generally liable for all corporate tax debts beyond investment.
+The statement is false.', 'The corporation hires staff under its own legal personality.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'Litigation runs against or by the firm itself.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "The corporation may sue and be sued as a legal entity independent of individual owners" lines up with the textbook idea without adding an extra restriction.
 
-Exposure is usually capped at subscribed capital.
+The statement is true.', 'Contracts bind the corporation rather than each owner personally.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Legal personality allows the business to close contracts that bind the corporation, not shareholders personally" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.'] WHERE case_id = 'CASE 4.3.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary payments go to selling shareholders, not share capital.
 
-The statement is true.
-', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Market losses on share values can still occur.
+The statement is false.', 'Exchange trades normally occur between investors, not as issuer capital inflows.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'Trading premiums do not expand permanent registered equity.
 
-The statement is false.
-', 'FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The statement is false.', 'Primary issue proceeds are what raise issuer share capital.
 
-Non-shareholder managers do not automatically share the same liability shield as investors.
+Applied carefully, "Only proceeds from shares bought at initial issue from the corporation typically increase its share capital" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Price falls do not force capital redemption.
 
-The statement is false.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.'] WHERE case_id = 'CASE 4.3.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Founders may remain investors without managing.
 
-Unlimited or broader owner liability marks many unincorporated structures.
+Applied carefully, "People who found the corporation and own shares need not manage the business themselves" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Managers may be non-owners appointed to the board.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
+Applied carefully, "Managers running the corporation need not own shares of the business" lines up with the textbook idea without adding an extra restriction.
 
-Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+The statement is true.', 'Passive shareholders elect representatives to the board.
 
-Legal personality does not require distributing all profit as dividends.
+Applied carefully, "Shareholders may elect directors to represent their interests while remaining passive investors" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Major decisions sit with the board rather than each owner.
 
-The statement is false.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+Applied carefully, "The board of directors, not every shareholder, makes major business decisions in typical corporations" lines up with the textbook idea without adding an extra restriction.
 
-Dividends are not fixed to market prices nor strictly mandatory.
+The statement is true.', 'Incorporation persists; ownership can change without losing legal personality.
 
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
+The absolute wording "all" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.'] WHERE case_id = 'CASE 4.3.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividends are discretionary, not legally guaranteed each year.
 
-The statement is false.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+Applied carefully, "The corporation was not legally obliged to pay dividends despite shareholders'' wish for annual income" lines up with the textbook idea without adding an extra restriction.
 
-Omitted dividends can weaken demand and affect prices.
+The statement is true.', 'Retention alone does not guarantee price rises.
 
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
+The absolute wording "all" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'Limited liability is unaffected by dividend policy.
 
-The statement is false.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Dividends come from profits, not mandatory interest on capital.
+The statement is false.', 'Long non-payment can reduce attractiveness and demand.
 
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
+Applied carefully, "Prolonged omission of dividends may make shares less attractive and weaken investor demand" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Dividends distribute a portion of profits to owners.
 
-The statement is false.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+Applied carefully, "Dividends, when paid, represent part of the corporation''s profits distributed to shareholders" lines up with the textbook idea without adding an extra restriction.
 
-Discretionary dividends affect attractiveness when withheld too long.
+The statement is true.'] WHERE case_id = 'CASE 4.3.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share capital is capital split into shares.
 
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
+Applied carefully, "Share capital is the capital of a corporation divided into shares" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Stock represents a fraction of total share capital.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+Applied carefully, "Each share, also called stock, represents a portion of the total share capital" lines up with the textbook idea without adding an extra restriction.
 
-Private limited firms retain limited liability without public listing.
+The statement is true.', 'Primary sales can raise large sums.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Selling newly issued shares to investors can raise substantial funds for the corporation" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Equity is typically permanent and unredeemed.
 
-The statement is false.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
+Applied carefully, "Share capital is generally long-term capital that the company usually does not redeem" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Share buyers become owners of the corporation.
 
-Incorporation gives separate legal personality for assets and hiring.
+Applied carefully, "Shareholders are persons who buy shares and thereby own a stake in the corporation" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.'] WHERE case_id = 'CASE 4.3.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Primary issues fund the corporation through share capital.
 
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Initial share sales can raise large amounts of share capital for the corporation" lines up with the textbook idea without adding an extra restriction.
 
-Minimum capital can apply at formation regardless of listing plans.
+The statement is true.', 'Secondary trades move ownership without issuer finance.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Later exchange trading transfers shares among investors without adding finance to the issuer" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Post-introduction prices follow market forces.
 
-The statement is false.
-', 'FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+Applied carefully, "Demand and supply on the exchange determine prices after the initial introduction of shares" lines up with the textbook idea without adding an extra restriction.
 
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is true.', 'Motives include income, growth, and voting rights.
 
-Private firms may still elect boards and delegate management.
+Applied carefully, "Investors may seek dividends, capital growth, or voting influence when buying stock" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Multiple macro indicators shape share demand.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Economic growth, inflation, and interest rates can all influence demand for shares" lines up with the textbook idea without adding an extra restriction.
 
-Private limited companies operate without public share sales.
+The statement is true.'] WHERE case_id = 'CASE 4.3.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Equity and debt both fund corporations.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Share capital is a principal financial fund available to corporations alongside borrowing" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'Borrowing complements share capital.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Loans and credit also form part of the financial funds corporations may use" lines up with the textbook idea without adding an extra restriction.
 
-Low rates raise the relative appeal of equity.
+The statement is true.', 'Incorporated firms access broader finance channels.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Corporations typically have more funding options than sole proprietors or partnerships" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'Bonds compete with bank loans as debt sources.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Bonds may be issued as an alternative to bank loans for raising debt finance" lines up with the textbook idea without adding an extra restriction.
 
-High rates favour fixed-return alternatives over shares.
+The statement is true.', 'Equity lacks the fixed repayment duty of debt.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Share capital differs from debt because it does not create the same contractual repayment obligation as a loan" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.'] WHERE case_id = 'CASE 4.3.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Private placements can raise equity without listing.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Growth signals are among demand influences cited for shares.
+The statement is false.', 'Unlisted firms remain incorporated legal persons.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "An unlisted corporation may still be a legal person owning laboratories and hiring researchers" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Equity can be raised off-exchange through private sales.
 
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Private share placements can supply equity without an initial public offering on an exchange" lines up with the textbook idea without adding an extra restriction.
 
-High rates tend to reduce share demand rather than automatically lift prices.
+The statement is true.', 'Limited liability applies to private shareholders.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Shareholders in such a corporation retain limited liability tied to their investment" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Listing is optional and mainly aids broad secondary trading.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Listing remains optional; exchange trading mainly facilitates secondary transfers among many market participants" lines up with the textbook idea without adding an extra restriction.
 
-Price effects from demand do not fund the issuer after shares are issued.
+The statement is true.'] WHERE case_id = 'CASE 4.3.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Common stock usually carries meeting votes.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "At the annual stockholders'' meeting, common stockholders ordinarily exercise voting rights on major resolutions" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Preferred holders typically forgo voting for dividend priority.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The absolute wording "always" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Inflation may lift expected share values and demand.
+The statement is false.', 'Preferred shares exchange votes for income preference.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Preferred shares often trade voting rights for priority in dividend payments" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Voting rights motivate some equity purchases.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "Investors may purchase shares partly to influence corporate decisions through those voting rights" lines up with the textbook idea without adding an extra restriction.
 
-Inflation appears among cited demand influences.
+The statement is true.', 'Even preferred priority leaves dividends discretionary overall.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Dividend priority for preferred stock does not eliminate the discretionary nature of overall dividend policy" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.'] WHERE case_id = 'CASE 4.3.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Corporations mix equity with debt finance.
 
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+Applied carefully, "The corporation may finance operations through both share capital and loans" lines up with the textbook idea without adding an extra restriction.
 
-Prosperity can coincide with stronger equity demand.
+The statement is true.', 'Bank loans do not block subsequent share issues.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Debt and equity differ; neither removes limited liability for shareholders.
 
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Registered share capital is not automatically adjusted with inflation.
+The statement is false.', 'Borrowing does not expand shareholders'' personal liability beyond investment.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Shareholders'' liability generally remains limited to their invested capital despite additional borrowing" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Bond issues may still be used alongside existing bank debt.
 
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Market gains from inflation expectations accrue to shareholders, not issuer finance.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Cfo duties do not require holding the largest share block.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The coo may sit on the board managing operations.
-
-The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
-
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-Capital providers need not run daily operations.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Corporations separate owners from professional managers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Primary ipo sales raise share capital inside the firm.
-
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
-
-An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Secondary doubling does not double internal cash capital.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Regulators do not capture trading gains as issuer equity.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Holders are not obliged to pay market premiums back to the firm.
-
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Higher prices do not grant unlimited interest-free debt rights.
-
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.3.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Incorporated firms hold assets in the corporate name.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-The legal entity remains suable despite owners'' limited liability.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-The corporation hires staff under its own legal personality.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-Litigation runs against or by the firm itself.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-Contracts bind the corporation rather than each owner personally.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Secondary payments go to selling shareholders, not share capital.
-
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
-
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-Exchange trades normally occur between investors, not as issuer capital inflows.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
-
-Trading premiums do not expand permanent registered equity.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Primary issue proceeds are what raise issuer share capital.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
-
-An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Price falls do not force capital redemption.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.3.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Founders may remain investors without managing.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Managers may be non-owners appointed to the board.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-Passive shareholders elect representatives to the board.
-
-The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-Major decisions sit with the board rather than each owner.
-
-The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-Incorporation persists; ownership can change without losing legal personality.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.3.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Dividends are discretionary, not legally guaranteed each year.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Retention alone does not guarantee price rises.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Limited liability is unaffected by dividend policy.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Long non-payment can reduce attractiveness and demand.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Dividends distribute a portion of profits to owners.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Share capital is capital split into shares.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Stock represents a fraction of total share capital.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Equity is typically permanent and unredeemed.
-
-After issue, shares are transferable property of the investor. A later sale on the secondary market moves ownership from one investor to another; the corporation is not required to buy the shares back (redeem them) merely because a shareholder wants to exit. Primary issue raises cash for the firm; secondary transfer generally does not.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Share buyers become owners of the corporation.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Primary issues fund the corporation through share capital.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Secondary trades move ownership without issuer finance.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Post-introduction prices follow market forces.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Motives include income, growth, and voting rights.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Multiple macro indicators shape share demand.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Incorporated firms access broader finance channels.
-
-Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Corporate bonds and bank loans are both debt, but bonds are issued to investors in the market whereas bank loans are negotiated with lenders. Neither is equity: both create repayment obligations rather than residual ownership claims.
-
-Bonds compete with bank loans as debt sources.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Equity lacks the fixed repayment duty of debt.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Private placements can raise equity without listing.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-Unlisted firms remain incorporated legal persons.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
-
-Equity can be raised off-exchange through private sales.
-
-An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-Limited liability applies to private shareholders.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — After issue, shares trade among investors. A rise in the secondary-market price enriches the selling shareholder relative to their purchase price; it does not by itself inject new cash into the corporation''s accounts.
-
-Listing is optional and mainly aids broad secondary trading.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Common stock usually carries meeting votes.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
-
-Preferred holders typically forgo voting for dividend priority.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
-
-Preferred shares exchange votes for income preference.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Voting rights motivate some equity purchases.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
-
-Even preferred priority leaves dividends discretionary overall.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.3.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Corporations mix equity with debt finance.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers. Bank loans do not block subsequent share issues.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Debt and equity differ; neither removes limited liability for shareholders.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
-
-Borrowing does not expand shareholders'' personal liability beyond investment.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bond issues may still be used alongside existing bank debt.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.3.50' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 4.3.50' AND tier = 'full';

@@ -707,7 +707,7 @@ Evaluate the following economic assertions:`;
     if (!item) throw new Error(`cfTableCase pool miss ${slot.case_id} want=${want}`);
     used.add(item.s);
     statements.push(item.s);
-    tactical_explanations.push(`${want ? "TRUE" : "FALSE"} — ${item.e}`);
+    tactical_explanations.push(item.e);
   }
 
   return {

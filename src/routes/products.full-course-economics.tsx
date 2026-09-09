@@ -9,6 +9,8 @@ import { TheoryReader } from "@/components/TheoryReader";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
+import { cleanExplanation } from "@/lib/clean-explanation";
+import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -28,39 +30,11 @@ import {
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
-import { loadAllEconomicsChapterTasks, type EconomicsTask } from "@/data/economics-chapters";
 
-/** Keep ~35% of each chapter playable; hide the rest (explanations still being tightened). */
-const UNLOCK_RATIO = 0.35;
-/** Show this many locked rows after the last open task, fading out (rest stay hidden). */
-const LOCKED_TEASER_COUNT = 5;
-
-function unlockCountFor(listLength: number): number {
-  if (listLength <= 0) return 0;
-  return Math.max(1, Math.floor(listLength * UNLOCK_RATIO));
-}
-
-function freeLimitOf(
-  chapter: number | "revision" | null,
-  listLength: number,
-): number {
-  if (chapter === "revision" || chapter === null) return Number.POSITIVE_INFINITY;
-  return unlockCountFor(listLength);
-}
-
-function isLocked(
-  chapter: number | "revision" | null,
-  idx: number,
-  listLength: number,
-): boolean {
-  return idx >= freeLimitOf(chapter, listLength);
-}
-
-/** Sidebar: unlocked tasks + next N locked teasers; deeper locked tasks stay hidden. */
-function sidebarVisibleCount(listLength: number): number {
-  const open = unlockCountFor(listLength);
-  return Math.min(listLength, open + LOCKED_TEASER_COUNT);
-}
+// Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
+const phantomCountFor = (_ch: number): number => 0;
+const freeLimitOf = (_ch: number | "revision" | null): number => Number.POSITIVE_INFINITY;
+const isLocked = (_chapter: number | "revision" | null, _idx: number) => false;
 
 
 export const Route = createFileRoute("/products/full-course-economics")({
@@ -80,7 +54,19 @@ export const Route = createFileRoute("/products/full-course-economics")({
   },
 });
 
-type Case = EconomicsTask;
+type Case = {
+  id: string;
+  case_id: string;
+  title: string;
+  context: string;
+  statements: string[];
+  answer_key: boolean[];
+  tactical_explanations: string[];
+  difficulty_level: string;
+  sort_order: number;
+  /** Book subsection id, e.g. "2.1" (same local banks as Custom Mock Builder). */
+  subsection?: string;
+};
 
 const CHAPTERS: { num: number; title: string }[] = [
   { num: 2, title: "Basic Economic Concepts" },
@@ -90,8 +76,7 @@ const CHAPTERS: { num: number; title: string }[] = [
   { num: 6, title: "Accounting – keeping record of business transactions" },
 ];
 
-/** v2: progress keys are stable case_id values from local JSON banks (not Supabase UUIDs). */
-const STORAGE_KEY = "bbe.economics.progress.v2";
+const STORAGE_KEY = "bbe.economics.progress.v1";
 
 type Progress = {
   passed: string[];   // case ids fully correct
@@ -162,7 +147,21 @@ function EconomicsTasks() {
       try {
         const loaded = await loadAllEconomicsChapterTasks();
         if (cancel) return;
-        setCases(loaded.flatMap(({ tasks }) => tasks));
+        const rows: Case[] = loaded.flatMap(({ tasks }) =>
+          tasks.map((t) => ({
+            id: t.id,
+            case_id: t.case_id,
+            title: t.title,
+            context: t.context,
+            statements: t.statements,
+            answer_key: t.answer_key,
+            tactical_explanations: t.tactical_explanations,
+            difficulty_level: t.difficulty_level,
+            sort_order: t.sort_order,
+            subsection: t.subsection,
+          })),
+        );
+        setCases(rows);
       } catch (err) {
         if (cancel) return;
         setError(err instanceof Error ? err.message : "Failed to load economics cases.");
@@ -187,7 +186,7 @@ function EconomicsTasks() {
   const requestExplanation = async (caseData: Case, i: number) => {
     const key = `${caseData.id}:${i}`;
     if (explanation?.key === key) return;
-    setShowExplanations(true);
+    setShowExplanations(false);
     const stmt = caseData.statements[i];
     const correct = caseData.answer_key[i];
     setExplanation({
@@ -249,10 +248,7 @@ function EconomicsTasks() {
       });
       return;
     }
-    if (
-      activeCase &&
-      !isLocked(activeChapter, activeIdx, activeList.length)
-    ) {
+    if (activeCase && !isLocked(activeChapter, activeIdx)) {
       const chNum = chapterOf(activeCase);
       const chTitle = CHAPTERS.find((c) => c.num === chNum)?.title ?? "";
       setPracticeCase({
@@ -365,12 +361,8 @@ function EconomicsTasks() {
             <ul className="practice-scroll min-h-0 flex-1 space-y-1.5 overflow-y-auto overscroll-contain pr-1">
               {CHAPTERS.map((ch) => {
                 const list = byChapter.get(ch.num) ?? [];
-                const openCount = unlockCountFor(list.length);
-                const visible = list.slice(0, sidebarVisibleCount(list.length));
-                const done = list
-                  .slice(0, openCount)
-                  .filter((c) => progress.passed.includes(c.id)).length;
-                const total = openCount;
+                const done = list.filter((c) => progress.passed.includes(c.id)).length;
+                const total = list.length;
                 const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                 const isOpen = !!expanded[ch.num];
                 const isActiveCh = activeChapter === ch.num;
@@ -411,11 +403,7 @@ function EconomicsTasks() {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        const openIds = list.slice(0, openCount).map((c) => c.id);
-                        const touched = openIds.some(
-                          (id) => progress.passed.includes(id) || progress.revision.includes(id),
-                        );
-                        if (!touched) return;
+                        if (done + (list.filter((c) => progress.revision.includes(c.id)).length) === 0) return;
                         if (window.confirm(`Reset all progress for Chapter ${ch.num}?`)) resetChapter(ch.num);
                       }}
                       title={`Reset Chapter ${ch.num}`}
@@ -427,25 +415,21 @@ function EconomicsTasks() {
                   </div>
                     {isOpen && (
                       <ul className="border-t border-border/60 py-1">
-                        {visible.length === 0 && (
+                        {list.length === 0 && (
                           <li className="px-4 py-2 text-[11px] text-muted-foreground">No cases yet.</li>
                         )}
-                        {visible.map((c, i) => {
+                        {list.map((c, i) => {
                           const passed = progress.passed.includes(c.id);
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                          const locked = isLocked(ch.num, i, list.length);
-                          const lockedPos = locked ? i - freeLimitOf(ch.num, list.length) : -1;
-                          // Fade text toward invisibility across the teaser locked rows
+                          const locked = isLocked(ch.num, i);
+                          const lockedPos = locked ? i - freeLimitOf(ch.num) : -1;
+                          // Fade text toward invisibility as tasks get deeper into locked territory
                           const lockedOpacity = locked
-                            ? Math.max(0.1, 0.52 - Math.min(lockedPos, 4) * 0.1)
+                            ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
                             : undefined;
-                          const isLastVisible = i === visible.length - 1 && locked;
                           return (
-                            <li
-                              key={c.id}
-                              className={cn(isLastVisible && "relative")}
-                            >
+                            <li key={c.id}>
                               <button
                                 onClick={() => {
                                   setTheoryChapter(null);
@@ -477,30 +461,37 @@ function EconomicsTasks() {
                                   {!locked && passed && <Check className="h-3 w-3" strokeWidth={3} />}
                                   {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
-                                <span className={cn("min-w-0 flex-1 truncate", passed && !locked && "line-through text-muted-foreground")}>
-                                  Task {i + 1}{locked && " · Soon"}
+                                <span className={cn("truncate", passed && !locked && "line-through text-muted-foreground")}>
+                                  Task {i + 1}{locked && " · Locked"}
                                 </span>
                                 {timed.enabled && !locked && (
                                   <TimerStatusDot entry={timed.state[c.id]} />
                                 )}
-                                {!locked && c.difficulty_level !== "—" && (
-                                  <DifficultyBars level={c.difficulty_level} />
-                                )}
                               </button>
-                              {isLastVisible && (
-                                <div
-                                  aria-hidden
-                                  className="pointer-events-none absolute inset-x-0 -bottom-1 h-8 bg-gradient-to-b from-transparent to-card"
-                                />
-                              )}
+                            </li>
+                          );
+
+
+                        })}
+                        {Array.from({ length: phantomCountFor(ch.num) }).map((_, p) => {
+                          const num = list.length + p + 1;
+                          const opacity = Math.max(0.08, 0.45 - p * 0.15);
+                          return (
+                            <li key={`phantom-${ch.num}-${p}`}>
+                              <button
+                                type="button"
+                                disabled
+                                style={{ opacity }}
+                                className="flex w-full cursor-not-allowed items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground"
+                              >
+                                <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
+                                  <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
+                                </span>
+                                <span className="truncate">Task {num} · Locked</span>
+                              </button>
                             </li>
                           );
                         })}
-                        {list.length > visible.length && (
-                          <li className="px-3 py-1.5 pl-9 text-[10px] text-muted-foreground/70">
-                            +{list.length - openCount} more tasks preparing…
-                          </li>
-                        )}
                       </ul>
                     )}
                   </li>
@@ -619,23 +610,23 @@ function EconomicsTasks() {
             </div>
           )}
 
-          {activeCase && <TimedModeBar session={timed} questionId={activeCase.id} />}
+          {activeCase && <TimedModeBar session={timed} />}
 
 
-          {activeCase && isLocked(activeChapter, activeIdx, activeList.length) ? (() => {
-            const freeLimit = freeLimitOf(activeChapter, activeList.length);
+          {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
+            const freeLimit = freeLimitOf(activeChapter);
 
             return (
             <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                 <Lock className="h-6 w-6" />
               </div>
-              <h2 className="font-display text-xl font-bold">More tasks coming soon</h2>
+              <h2 className="font-display text-xl font-bold">Locked in demo</h2>
               <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                Chapter {activeChapter} currently opens the first {freeLimit} tasks while we finish the rest of the bank.
+                Chapter {activeChapter} tasks {freeLimit + 1}+ are part of the full course. The first {freeLimit} are free.
               </p>
               <button
-                onClick={() => setActiveIdx(Math.max(0, freeLimit - 1))}
+                onClick={() => setActiveIdx(freeLimit - 1)}
                 className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimit}
@@ -667,24 +658,15 @@ function EconomicsTasks() {
                   statementCount: activeCase.statements.length || 5,
                 });
               }}
-              onResetProgress={() => {
-                resetCaseIds([activeCase.id]);
-                timed.resetQuestion(activeCase.id);
-                if (timed.enabled) timed.openQuestion(activeCase.id);
-              }}
-              onRetry={() => {
-                timed.resetQuestion(activeCase.id);
-                if (timed.enabled) timed.openQuestion(activeCase.id);
-              }}
-              explanationsOpen={showExplanations}
+              onResetProgress={() => resetCaseIds([activeCase.id])}
+              explanationsOpen={showExplanations && !explanation}
               onShowExplanations={() => {
+                setExplanation(null);
                 setShowExplanations(true);
               }}
               onToggleExplanations={() => {
-                setShowExplanations((v) => {
-                  if (v) setExplanation(null);
-                  return !v;
-                });
+                setExplanation(null);
+                setShowExplanations((v) => !v);
               }}
             />
           )}
@@ -699,35 +681,18 @@ function EconomicsTasks() {
                 <ChevronLeft className="h-4 w-4" /> Prev
               </button>
               <span className="text-xs text-muted-foreground">
-                {Math.min(activeIdx + 1, freeLimitOf(activeChapter, activeList.length))} /{" "}
-                {freeLimitOf(activeChapter, activeList.length)}
+                {activeIdx + 1} / {activeList.length}
               </span>
               <button
-                onClick={() =>
-                  setActiveIdx((i) =>
-                    Math.min(freeLimitOf(activeChapter, activeList.length) - 1, i + 1),
-                  )
-                }
+                onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
                 disabled={
-                  activeIdx >= freeLimitOf(activeChapter, activeList.length) - 1 ||
-                  isLocked(activeChapter, activeIdx + 1, activeList.length)
+                  activeIdx >= activeList.length - 1 ||
+                  isLocked(activeChapter, activeIdx + 1)
                 }
-                title={
-                  isLocked(activeChapter, activeIdx + 1, activeList.length)
-                    ? "Next tasks are still being prepared"
-                    : undefined
-                }
+                title={isLocked(activeChapter, activeIdx + 1) ? "Next task is locked in the demo" : undefined}
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                {isLocked(activeChapter, activeIdx + 1, activeList.length) ? (
-                  <>
-                    <Lock className="h-3.5 w-3.5" /> Soon
-                  </>
-                ) : (
-                  <>
-                    Next <ChevronRight className="h-4 w-4" />
-                  </>
-                )}
+                {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
               </button>
             </div>
           )}
@@ -735,24 +700,24 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Right panel: Calculator or full solution with optional side-by-side AI */}
+        {/* Right panel: Calculator, Full solution, or AI Explanation */}
         {theoryChapter === null && (
-        <EconomicsPracticeAside hasExplanation={showExplanations} wide={!!explanation}>
-          {showExplanations && activeCase ? (
+        <EconomicsPracticeAside hasExplanation={showExplanations || !!explanation}>
+          {explanation ? (
+            <ExplanationPanels
+              state={explanation}
+              onClose={() => setExplanation(null)}
+              onRetry={() => {
+                if (!activeCase) return;
+                requestExplanation(activeCase, explanation.statementIndex);
+              }}
+            />
+          ) : showExplanations && activeCase ? (
             <AllExplanationsPanel
               task={activeCase}
               index={activeIdx}
-              onClose={() => {
-                setShowExplanations(false);
-                setExplanation(null);
-              }}
+              onClose={() => setShowExplanations(false)}
               onRequestAi={(i) => requestExplanation(activeCase, i)}
-              aiState={explanation}
-              onCloseAi={() => setExplanation(null)}
-              onRetryAi={() => {
-                if (!activeCase || !explanation) return;
-                requestExplanation(activeCase, explanation.statementIndex);
-              }}
             />
           ) : null}
         </EconomicsPracticeAside>
@@ -904,7 +869,7 @@ function CustomResetModal({
 
 
 function CaseCard({
-  data, index, onGraded, inRevision, alreadyPassed, onResetProgress, onRetry,
+  data, index, onGraded, inRevision, alreadyPassed, onResetProgress,
   explanationsOpen, onShowExplanations, onToggleExplanations,
   reviewOnly = false, timerNote = null,
 }: {
@@ -912,14 +877,12 @@ function CaseCard({
   onGraded: (allCorrect: boolean, correctCount: number) => void;
   inRevision: boolean; alreadyPassed: boolean;
   onResetProgress: () => void;
-  onRetry?: () => void;
   explanationsOpen: boolean;
   onShowExplanations: () => void;
   onToggleExplanations: () => void;
   reviewOnly?: boolean;
   timerNote?: string | null;
 }) {
-  const calc = usePracticeCalcOptional();
   const [answers, setAnswers] = useState<(boolean | null)[]>([null, null, null, null, null]);
   const [checked, setChecked] = useState(false);
 
@@ -931,7 +894,6 @@ function CaseCard({
   useEffect(() => {
     if (!reviewOnly) return;
     setChecked(true);
-    calc?.setOpen(false);
     onShowExplanations();
     // eslint-disable-next-line react-hooks/exhaustive-deps -- onShowExplanations is an inline parent callback
   }, [reviewOnly, data.id]);
@@ -949,14 +911,12 @@ function CaseCard({
   const handleSubmit = () => {
     setChecked(true);
     onGraded(correctCount === 5, correctCount);
-    calc?.setOpen(false);
     onShowExplanations();
   };
 
   const handleReset = () => {
     setChecked(false);
     setAnswers([null, null, null, null, null]);
-    onRetry?.();
   };
 
   const handleFullReset = () => {
@@ -1109,32 +1069,27 @@ function AllExplanationsPanel({
   index,
   onClose,
   onRequestAi,
-  aiState,
-  onCloseAi,
-  onRetryAi,
 }: {
   task: Case;
   index: number;
   onClose: () => void;
   onRequestAi: (i: number) => void;
-  aiState: ExplanationPanelState | null;
-  onCloseAi: () => void;
-  onRetryAi: () => void;
 }) {
   const letters = "ABCDEF";
-  // Same continuous plain-text flow as math Full solution (no per-letter boxes).
-  const body = task.statements
-    .flatMap((_, i) => {
+  const body = [
+    ...task.statements.flatMap((_, i) => {
       const letter = letters[i] ?? String(i + 1);
       const verdict = task.answer_key[i] ? "True" : "False";
-      let expl = (task.tactical_explanations[i] ?? "").trim();
+      const expl = cleanExplanation((task.tactical_explanations[i] ?? "").trim());
       if (expl) {
-        expl = expl.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "").trim();
-        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
       }
-      const prose = expl || scrubStatementHints(task.statements[i]);
-      return [`**${letter}.** → ${verdict}\n\n${prose}`, ""];
-    })
+      return [
+        `**${letter}.** → ${verdict}\n\n${scrubStatementHints(task.statements[i])}`,
+        "",
+      ];
+    }),
+  ]
     .join("\n")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
@@ -1159,31 +1114,17 @@ function AllExplanationsPanel({
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <EconAnswerKeyTable answerKey={task.answer_key} />
         <div className="mb-6 flex flex-wrap gap-2">
-          {task.statements.map((_, i) => {
-            const letter = letters[i] ?? String(i + 1);
-            const aiOpen = aiState?.statementIndex === i;
-            return (
-              <button
-                key={i}
-                type="button"
-                onClick={() => (aiOpen ? onCloseAi() : onRequestAi(i))}
-                className={practiceInlineAiButtonClass(!!aiOpen)}
-                aria-label={`AI explanation for statement ${letter}`}
-              >
-                {aiOpen ? `Hide AI · ${letter}` : `AI · ${letter}`}
-              </button>
-            );
-          })}
+          {task.statements.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => onRequestAi(i)}
+              className={practiceInlineAiButtonClass(false)}
+            >
+              AI · {letters[i] ?? i + 1}
+            </button>
+          ))}
         </div>
-        {aiState ? (
-          <div className="mb-6">
-            <InlineAiBesideStatement
-              state={aiState}
-              onClose={onCloseAi}
-              onRetry={onRetryAi}
-            />
-          </div>
-        ) : null}
         <ExplanationProse text={body} />
       </div>
     </div>
@@ -1260,14 +1201,9 @@ function StatsOverview({
   progress: Progress;
   byChapter: Map<number, Case[]>;
 }) {
-  const openCases = CHAPTERS.flatMap((ch) => {
-    const list = byChapter.get(ch.num) ?? [];
-    return list.slice(0, unlockCountFor(list.length));
-  });
-  const openIds = new Set(openCases.map((c) => c.id));
-  const total = openCases.length;
-  const passed = progress.passed.filter((id) => openIds.has(id)).length;
-  const rev = progress.revision.filter((id) => openIds.has(id)).length;
+  const total = cases.length;
+  const passed = progress.passed.length;
+  const rev = progress.revision.length;
   const attempted = passed + rev;
   const accuracy = attempted > 0 ? Math.round((passed / attempted) * 100) : 0;
 
@@ -1290,10 +1226,8 @@ function StatsOverview({
       <ul className="mt-5 space-y-2">
         {CHAPTERS.map((ch) => {
           const list = byChapter.get(ch.num) ?? [];
-          const open = unlockCountFor(list.length);
-          const openList = list.slice(0, open);
-          const done = openList.filter((c) => progress.passed.includes(c.id)).length;
-          const pct = open ? Math.round((done / open) * 100) : 0;
+          const done = list.filter((c) => progress.passed.includes(c.id)).length;
+          const pct = list.length ? Math.round((done / list.length) * 100) : 0;
           return (
             <li key={ch.num} className="flex items-center gap-3">
               <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">Ch.{ch.num}</span>
@@ -1307,7 +1241,7 @@ function StatsOverview({
                 />
               </div>
               <span className="w-14 shrink-0 text-right text-[11px] font-semibold text-muted-foreground">
-                {done}/{open}
+                {done}/{list.length}
               </span>
             </li>
           );
@@ -1347,31 +1281,18 @@ type ExplanationPanelState = {
 
 function EconomicsPracticeAside({
   hasExplanation,
-  wide = false,
   children,
 }: {
   hasExplanation: boolean;
-  wide?: boolean;
   children: ReactNode;
 }) {
   const calc = usePracticeCalcOptional();
   if (!hasExplanation && !calc?.open) return null;
-  return (
-    <PracticeRightSlot
-      className={cn(
-        "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:shrink-0",
-        wide ? "lg:w-[min(100%,42rem)] xl:w-[46rem]" : "lg:w-[28rem] xl:w-[32rem]",
-      )}
-    >
-      {children}
-    </PracticeRightSlot>
-  );
+  return <PracticeRightSlot>{children}</PracticeRightSlot>;
 }
 
-function InlineAiBesideStatement({
-  state,
-  onClose,
-  onRetry,
+function ExplanationPanels({
+  state, onClose, onRetry,
 }: {
   state: ExplanationPanelState;
   onClose: () => void;
@@ -1396,64 +1317,77 @@ function InlineAiBesideStatement({
   }, [reveal]);
 
   return (
-    <div className="flex min-w-0 flex-col gap-3 rounded-xl border border-primary/30 bg-primary/5 p-4">
-      <div className="flex items-center justify-between gap-2">
-        <p className={practicePanelSectionLabelClass}>AI explanation</p>
+    <div className="flex h-full flex-col gap-3" data-practice-surface>
+      {/* Header */}
+      <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
+        <span className={practicePanelSectionLabelClass}>
+          AI Explanation · Statement {state.statementIndex + 1}
+        </span>
         <button
-          type="button"
           onClick={onClose}
-          aria-label="Close AI explanation"
+          aria-label="Close explanation"
           className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
         >
           <X className="h-4 w-4" />
         </button>
       </div>
-      <div className="flex flex-wrap items-center gap-2">
-        <span
-          className={cn(
+
+      {/* Panel B: Classic Explanation */}
+      <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
+        <div className="mb-2 flex items-center gap-2">
+          <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+            Classic Explanation
+          </span>
+          <span className={cn(
             "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-            state.correctAnswer
-              ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
-              : "bg-destructive/15 text-destructive",
-          )}
-        >
-          Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
-        </span>
-      </div>
-      <p className="text-[11px] italic text-muted-foreground">&ldquo;{state.statementText}&rdquo;</p>
-      {state.loading && (
-        <div className="flex items-center gap-2 text-xs text-muted-foreground">
-          <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
+            state.correctAnswer ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" : "bg-destructive/15 text-destructive",
+          )}>
+            Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
+          </span>
         </div>
-      )}
-      {state.error && (
-        <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
-          {state.error}
-          <button type="button" onClick={onRetry} className="ml-2 underline">
-            Retry
-          </button>
-        </div>
-      )}
-      {state.data && (
-        <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
-      )}
-      {state.data && (
-        <div className="overflow-hidden rounded-lg border border-border bg-[#fdf9f0]">
-          <div className="border-b border-border/60 bg-white/60 px-3 py-1.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-              Textbook
-            </span>
+        <p className="mb-3 text-[11px] italic text-muted-foreground">"{state.statementText}"</p>
+        {state.loading && (
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
           </div>
-          <div className="max-h-48 overflow-y-auto px-3 py-3 font-serif text-[12px] leading-relaxed text-[#3a2e1f]">
+        )}
+        {state.error && (
+          <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
+            {state.error}
+            <button onClick={onRetry} className="ml-2 underline">Retry</button>
+          </div>
+        )}
+        {state.data && (
+          <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
+        )}
+      </div>
+
+      {/* Panel C: Textbook Canvas */}
+      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
+        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Textbook Canvas
+          </span>
+          <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
+            BBE School Textbook
+          </span>
+        </div>
+        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+          {state.loading && (
+            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+              <Loader2 className="h-3.5 w-3.5 animate-spin" /> Fetching the page…
+            </div>
+          )}
+          {state.data && (
             <TextbookCanvasBody
               text={state.data.textbook_context}
               highlight={state.data.highlight_text}
               reveal={reveal}
               highlightRef={highlightRef}
             />
-          </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -1485,47 +1419,6 @@ function TextbookCanvasBody({
       </span>
       {after}
     </p>
-  );
-}
-
-function parseDifficulty(level: string): { n: number; max: number } {
-  const [rawN, rawMax] = level.split("/");
-  const max = Math.max(1, Number(rawMax) || 5);
-  const n = Math.max(0, Math.min(Number(rawN) || 0, max));
-  return { n, max };
-}
-
-/** Green → red heat for difficulty 1…5. */
-const DIFFICULTY_BAR_COLORS = [
-  "bg-emerald-500",
-  "bg-lime-500",
-  "bg-amber-400",
-  "bg-orange-500",
-  "bg-red-500",
-] as const;
-
-/** Cell-signal bars for the chapter sidebar task list. */
-function DifficultyBars({ level }: { level: string }) {
-  const { n, max } = parseDifficulty(level);
-  const color = DIFFICULTY_BAR_COLORS[Math.max(0, n - 1)] ?? DIFFICULTY_BAR_COLORS[0];
-  const heights = ["h-[3px]", "h-[5px]", "h-[7px]", "h-[9px]", "h-[11px]"];
-  return (
-    <span
-      className="inline-flex h-[11px] shrink-0 items-end gap-[2px]"
-      title={`Difficulty ${level}`}
-      aria-label={`Difficulty ${level}`}
-    >
-      {Array.from({ length: max }, (_, i) => (
-        <span
-          key={i}
-          className={cn(
-            "w-[3px] rounded-[1px]",
-            heights[i] ?? "h-[11px]",
-            i < n ? color : "bg-muted-foreground/20",
-          )}
-        />
-      ))}
-    </span>
   );
 }
 

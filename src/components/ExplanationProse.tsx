@@ -1,4 +1,7 @@
-import { FlashcardMath } from "@/components/FlashcardMath";
+import {
+  FlashcardMath,
+  mergeContinuationDisplayParagraphs,
+} from "@/components/FlashcardMath";
 import { cn } from "@/lib/utils";
 
 /**
@@ -12,10 +15,12 @@ export function ExplanationProse({
   text: string;
   className?: string;
 }) {
-  const paragraphs = text
-    .split(/\n\n+/)
-    .map((p) => p.trim())
-    .filter(Boolean);
+  const paragraphs = mergeContinuationDisplayParagraphs(
+    text
+      .split(/\n\n+/)
+      .map((p) => p.trim())
+      .filter(Boolean),
+  );
 
   type Chunk =
     | { kind: "part"; title: string }
@@ -105,8 +110,17 @@ export function ExplanationProse({
           );
         }
         if (chunk.kind === "math") {
+          const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
+          const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
           return (
-            <div key={idx} className="my-4">
+            <div
+              key={idx}
+              className={cn(
+                prevMath || nextMath ? "my-1.5" : "my-4",
+                prevMath && "mt-1",
+                nextMath && "mb-1",
+              )}
+            >
               <FlashcardMath text={chunk.text} displayPrefer />
             </div>
           );

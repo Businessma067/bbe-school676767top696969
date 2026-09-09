@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.2-part4 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Ongoing activity requires maintained sales revenue.
 
-Ongoing activity requires maintained sales revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Higher sales usually support profit with stated limitations.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Higher sales usually support profit with stated limitations.
+The statement is false.', 'Absolute sales complement relative share measures.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Owners are reimbursed through profits, not unit volume alone.
 
-Absolute sales complement relative share measures.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Bundles can stimulate short-term volume.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Owners are reimbursed through profits, not unit volume alone.
+The statement is true.'] WHERE case_id = 'CASE 5.2.76' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profit can be reinvested including in brand and differentiation.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Customer purchases generate sales revenue.
 
-Bundles can stimulate short-term volume.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'The text explicitly notes certain limitations on the sales-profit link.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.76' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (USP): profit can be reinvested including in brand and differentiation.
+The statement is false.', 'Sales targets belong in comprehensive marketing plans.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Profit requires revenue exceeding costs, not share alone.
 
-Customer purchases generate sales revenue.
+The absolute wording "regardless" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.'] WHERE case_id = 'CASE 5.2.77' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Online channel sales count in total volume.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The text explicitly notes certain limitations on the sales-profit link.
+The statement is true.', 'Loyal repeat buyers sustainably add volume.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Operations align with sales objective levels.
 
-Sales targets belong in comprehensive marketing plans.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Campaign spikes contribute to period volume.
 
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (market share): profit requires revenue exceeding costs, not share alone.
+The statement is true.', 'Sufficient revenue covers both cost types.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.77' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.'] WHERE case_id = 'CASE 5.2.78' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profits are important to reimburse owners for invested capital.
 
-Online channel sales count in total volume.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Discount-driven volume can reduce unit profitability.
 
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (growth): loyal repeat buyers sustainably add volume.
+The statement is false.', 'Objectives interrelate and can coexist within marketing planning.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Monthly actual-versus-target comparison tracks sales objectives.
 
-Operations align with sales objective levels.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Retained profit can fund marketing and reinvestment.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Campaign spikes contribute to period volume.
+The statement is false.'] WHERE case_id = 'CASE 5.2.79' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Higher sales usually mean more profit with certain limitations.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Export growth is a valid sales objective.
 
-Sufficient revenue covers both cost types.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Demand analysis can revise volume targets.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.78' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profits are important to reimburse owners for invested capital.
+The statement is true.', 'Revenue from sales precedes profit calculation.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Price cuts can raise units while changing revenue per unit.
 
-Discount-driven volume can reduce unit profitability.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.'] WHERE case_id = 'CASE 5.2.80' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profitability is a recognised marketing objective alongside share.
 
-The statement is false.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Objectives interrelate and can coexist within marketing planning.
+The statement is false.', 'Reinvestment retains profit in the business for future use.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Profit generally benefits from adequate sales covering costs.
 
-Monthly actual-versus-target comparison tracks sales objectives.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Owners are reimbursed through profits, not reach metrics.
 
-The statement is true.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Retained profit can fund marketing and reinvestment.
+The statement is false.', 'Sales fund costs and enable profit per the text.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.79' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.'] WHERE case_id = 'CASE 5.2.81' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Retail volume aggregates to supplier sales.
 
-Higher sales usually mean more profit with certain limitations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Usp supports marketing but profit still depends on sales and costs.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Export growth is a valid sales objective.
+The statement is false.', 'New segments often trigger sales growth focus.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Profit objectives apply in competitive markets.
 
-Demand analysis can revise volume targets.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Profit can be retained in the business rather than paid to creditors.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The absolute wording "entirely" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Revenue from sales precedes profit calculation.
+The statement is false.'] WHERE case_id = 'CASE 5.2.82' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Limitations qualify the positive link; they do not reverse it always.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Plan variance shows marketing effectiveness.
 
-Price cuts can raise units while changing revenue per unit.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Revenue depends on volume and price together.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.80' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profitability is a recognised marketing objective alongside share.
+The statement is true.', 'Marketing aims contribute to profitable sales outcomes.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Downturns make sales maintenance challenging.
 
-Reinvestment retains profit in the business for future use.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.'] WHERE case_id = 'CASE 5.2.83' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repeat sales lower acquisition reliance.
 
-The statement is false.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profit generally benefits from adequate sales covering costs.
+The statement is true.', 'Doubling sales is an explicit volume ambition.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
+The statement is true.', 'Volume growth supports profit after cost coverage.
 
-Owners are reimbursed through profits, not reach metrics.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Trade promos target sell-through volume.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Sales fund costs and enable profit per the text.
+The statement is true.', 'Satisfaction and profitability objectives can be pursued together.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.81' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.'] WHERE case_id = 'CASE 5.2.84' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Regional sales data guides resource allocation.
 
-Retail volume aggregates to supplier sales.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Units sold directly measure sales progress.
 
-The statement is true.
-', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Usp supports marketing but profit still depends on sales and costs.
+The statement is true.', 'Profit follows earned sales revenue.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Volume milestones may justify temporary margin sacrifice.
 
-New segments often trigger sales growth focus.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Sales objectives reflect revenue necessity.
 
-The statement is true.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profit objectives apply in competitive markets.
+The statement is true.'] WHERE case_id = 'CASE 5.2.85' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Reinvestment uses retained profit internally, unlike new share issues.
 
-Those restricting words stretch a limited idea past what marketing allows.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is false.', 'Loyalty-driven sales show objective interrelation.
 
-Profit can be retained in the business rather than paid to creditors.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'New store targets express geographic sales aims.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.82' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Limitations qualify the positive link; they do not reverse it always.
+The statement is true.', 'Uncosted volume growth may not improve profit.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Profit requires revenue above costs, not mere cost coverage alone.
 
-Plan variance shows marketing effectiveness.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.'] WHERE case_id = 'CASE 5.2.86' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profits return value to owners for their investment.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Revenue depends on volume and price together.
+The statement is true.', 'Retained profits fund reinvestment.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Higher sales generally raise profit subject to limitations.
 
-Marketing aims contribute to profitable sales outcomes.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Profit is one objective among several.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Downturns make sales maintenance challenging.
+The statement is true.', 'Profit arises when revenue exceeds costs.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.83' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.'] WHERE case_id = 'CASE 5.2.87' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profit is a financial surplus; satisfaction is a separate objective.
 
-Repeat sales lower acquisition reliance.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Owner reimbursement is a stated profit rationale.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Doubling sales is an explicit volume ambition.
+The statement is true.', 'Retained profit funds internal investment.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Margin percentages operationalise profit targets.
 
-Volume growth supports profit after cost coverage.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Favourable margins make higher sales support profit.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Trade promos target sell-through volume.
+The statement is true.'] WHERE case_id = 'CASE 5.2.88' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Limitations on the sales-profit link are recognised.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.', 'Campaigns should contribute to profitable sales.
 
-Satisfaction and profitability objectives can be pursued together.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Reinvested profit builds future capacity.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.84' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Regional sales data guides resource allocation.
+The statement is true.', 'Profit sustains the business for owners and growth.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Reinvestment remains valuable even when sales rise.
 
-Units sold directly measure sales progress.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.'] WHERE case_id = 'CASE 5.2.89' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Unprofitable volume may be rejected.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profit follows earned sales revenue.
+The statement is true.', 'Matching ad spend to revenue does not define profit.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is false.', 'Profits reimburse owners for invested money per the text.
 
-Volume milestones may justify temporary margin sacrifice.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Rising costs can cap profit despite sales growth.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Sales objectives reflect revenue necessity.
+The statement is true.', 'Retention lowers borrowing needs for expansion.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.85' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.'] WHERE case_id = 'CASE 5.2.90' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Owner returns motivate profit objectives.
 
-Reinvestment uses retained profit internally, unlike new share issues.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Discount-driven volume can cut unit profitability.
 
-The statement is false.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Loyalty-driven sales show objective interrelation.
+The statement is true.', 'Profit is revenue minus relevant costs.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Marketing roi forms part of profit review.
 
-New store targets express geographic sales aims.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Share and profit can both improve or require trade-offs depending on strategy.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Uncosted volume growth may not improve profit.
+The statement is false.'] WHERE case_id = 'CASE 5.2.91' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repeat loyal buyers can raise lifetime profit.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Profit can fund brand investment for usp.
 
-Profit requires revenue above costs, not mere cost coverage alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'The text notes the usual sales-profit link with limitations.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.86' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profits return value to owners for their investment.
+The statement is true.', 'Profit focus requires cost awareness beyond revenue.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Profit can be distributed or retained.
 
-On this stem (growth): retained profits fund reinvestment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.2.92' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Targets should align with profit compatibility.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Higher sales generally raise profit subject to limitations.
+The statement is true.', 'Cross-line profit can fund marketing.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+The statement is true.', 'Sales revenue forms the profit calculation base.
 
-Profit is one objective among several.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Retained profit supports marketing finance.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profit arises when revenue exceeds costs.
+The statement is true.', 'Share pursuit can temporarily lower profit.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.87' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.'] WHERE case_id = 'CASE 5.2.93' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profit aims encourage marketing efficiency.
 
-Profit is a financial surplus; satisfaction is a separate objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Unit cost changes limit the sales-profit relationship.
 
-The statement is false.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Owner reimbursement is a stated profit rationale.
+The statement is true.', 'Profit serves both owner compensation and retention.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Product-level gross profit tracks objective progress.
 
-Retained profit funds internal investment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Premium usp can lift profit with cost control.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Margin percentages operationalise profit targets.
+The statement is true.'] WHERE case_id = 'CASE 5.2.94' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Capacity investment links profit retention to sales.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Profit is explicitly listed as a marketing objective.
 
-Favourable margins make higher sales support profit.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Cost coverage precedes profit recording.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.88' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Limitations on the sales-profit link are recognised.
+The statement is true.', 'Reinvestment reflects expected future returns.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Stable sales with falling profit may mean higher costs.
 
-Campaigns should contribute to profitable sales.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.2.95' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Annual profit targets accompany other objectives.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reinvested profit builds future capacity.
+The statement is true.', 'Segment choice affects profit outcomes.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Retention provides internal marketing finance.
 
-Profit sustains the business for owners and growth.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'General positive link with exceptions is stated.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reinvestment remains valuable even when sales rise.
+The statement is true.', 'Profit requires revenue growth to beat cost growth.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.89' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.'] WHERE case_id = 'CASE 5.2.96' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Retained profit can be reinvested in the business including capacity.
 
-Unprofitable volume may be rejected.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Profit relates to financial surplus, not headcount.
 
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Matching ad spend to revenue does not define profit.
+The statement is false.', 'Contribution margin analysis aids profit planning.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Rising costs can offset sales growth and limit profit gains.
 
-Profits reimburse owners for invested money per the text.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'Profit is one objective set alongside market analysis.
 
-The statement is false.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Rising costs can cap profit despite sales growth.
+The statement is false.'] WHERE case_id = 'CASE 5.2.97' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Owner reimbursement and reinvestment are both noted.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Discount erosion is a profit limitation.
 
-Retention lowers borrowing needs for expansion.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Larger revenue pool supports profit after costs.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.90' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Owner returns motivate profit objectives.
+The statement is true.', 'Reinvestment can later improve satisfaction.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Profits can be retained and reinvested in the business.
 
-Discount-driven volume can cut unit profitability.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.'] WHERE case_id = 'CASE 5.2.98' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cost-effective growth matters for profit.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profit is revenue minus relevant costs.
+The statement is true.', 'Operations generate profit that reimburses owners.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
+The statement is true.', 'Brand investment may defer near-term profit.
 
-Marketing roi forms part of profit review.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Retained earnings serve strategic reinvestment.
 
-The statement is true.
-', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (market share): share and profit can both improve or require trade-offs depending on strategy.
+The statement is true.', 'Higher marketing spend can limit profit from sales growth.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.91' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
+The statement is true.'] WHERE case_id = 'CASE 5.2.99' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales and profit relate but differ.
 
-Repeat loyal buyers can raise lifetime profit.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Sustainable profit is the long-run marketing contribution.
 
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profit can fund brand investment for usp.
+The statement is true.', 'Balance sheet strength supports future campaigns.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+The statement is true.', 'Sharp price cuts can reduce unit profit despite volume.
 
-The text notes the usual sales-profit link with limitations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Profitability remains a valid objective alongside sales volume targets.
 
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Profit focus requires cost awareness beyond revenue.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Profit can be distributed or retained.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.92' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Targets should align with profit compatibility.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-On this stem (product line): cross-line profit can fund marketing.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Sales revenue forms the profit calculation base.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Retained profit supports marketing finance.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Share pursuit can temporarily lower profit.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.93' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Profit aims encourage marketing efficiency.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Unit cost changes limit the sales-profit relationship.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-On this stem (growth): profit serves both owner compensation and retention.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Product-level gross profit tracks objective progress.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-Premium usp can lift profit with cost control.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.94' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-On this stem (growth): capacity investment links profit retention to sales.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Profit is explicitly listed as a marketing objective.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Cost coverage precedes profit recording.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Reinvestment reflects expected future returns.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-On this stem (decline): stable sales with falling profit may mean higher costs.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.95' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Annual profit targets accompany other objectives.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Segment choice affects profit outcomes.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Retention provides internal marketing finance.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-General positive link with exceptions is stated.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Profit requires revenue growth to beat cost growth.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.96' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Retained profit can be reinvested in the business including capacity.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Profit relates to financial surplus, not headcount.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Contribution margin analysis aids profit planning.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Rising costs can offset sales growth and limit profit gains.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Profit is one objective set alongside market analysis.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.97' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Owner reimbursement and reinvestment are both noted.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Discount erosion is a profit limitation.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Larger revenue pool supports profit after costs.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
-
-Reinvestment can later improve satisfaction.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Profits can be retained and reinvested in the business.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.98' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Cost-effective growth matters for profit.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Operations generate profit that reimburses owners.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
-
-On this stem (growth / brand): brand investment may defer near-term profit.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Retained earnings serve strategic reinvestment.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Higher marketing spend can limit profit from sales growth.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.2.99' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Sales and profit relate but differ.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Sustainable profit is the long-run marketing contribution.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
-
-Balance sheet strength supports future campaigns.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Sharp price cuts can reduce unit profit despite volume.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
-
-Profitability remains a valid objective alongside sales volume targets.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.2.100' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 5.2.100' AND tier = 'full';

@@ -1,1143 +1,536 @@
 -- Update expanded explanations for 4.5-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share capital comes from investors outside the firm and counts as external equity finance.
 
-Share capital comes from investors outside the firm and counts as external equity finance.
+Applied carefully, "Share capital provided by outside investors is an external equity source of finance for the corporation" lines up with the textbook idea without adding an extra restriction.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+The statement is true.', 'Profit kept in the firm supplies internal equity without creating a repayment obligation to creditors.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Retained earnings that remain in the business count as internal equity finance under the standard overview" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+The statement is true.', 'Investor contributions enter as external equity under the textbook classification of finance sources.
 
-Profit kept in the firm supplies internal equity without creating a repayment obligation to creditors.
+Applied carefully, "Funds provided by investors are classified as external equity finance in the sources-of-finance framework" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Overdrafts and supplier credit finance short-term obligations and are grouped as short-term debt.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Bank overdrafts and trade credit are commonly listed examples of short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Investor contributions enter as external equity under the textbook classification of finance sources.
+The statement is true.', 'Multi-year loans and bond issues provide longer-term creditor finance that must be serviced.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Long-term bank loans and bonds issued to investors are forms of long-term external debt finance" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.'] WHERE case_id = 'CASE 4.5.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The overview treats equity as having internal and external elements, unlike debt which is external.
 
-The statement is true.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+Applied carefully, "Equity finance encompasses both internal sources such as retained earnings and external sources such as share capital" lines up with the textbook idea without adding an extra restriction.
 
-A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+The statement is true.', 'Short-term bank loans finance near-term needs and belong to short-term debt finance.
 
-Overdrafts and supplier credit finance short-term obligations and are grouped as short-term debt.
+Applied carefully, "Short-term bank loans used to cover working capital are classified as short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'All debt finance is external; creditors lie outside the firm regardless of loan maturity.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Debt finance is always external because borrowed funds create obligations to outside creditors" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is true.', 'The balance sheet displays how assets are financed through equity and debt sources.
 
-Multi-year loans and bond issues provide longer-term creditor finance that must be serviced.
+Applied carefully, "The balance sheet reveals the sources of finance that a business has used in building its assets" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Large firms must prepare a balance sheet under the accounting framework referenced in the chapter.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Large businesses are obliged to draw up a balance sheet showing how operations have been funded" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+The statement is true.'] WHERE case_id = 'CASE 4.5.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Owner loans appear under long-term credit as external debt, not as equity.
 
-The overview treats equity as having internal and external elements, unlike debt which is external.
+Applied carefully, "A loan provided by owners is classified as long-term credit within external debt finance" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Share capital comes from outside investors and is external equity, not internal equity.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Short-term bank loans finance near-term needs and belong to short-term debt finance.
+The statement is false.', 'Retained earnings are internal equity even though they originate from trading activity.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Debt finance is external; interest is a cost of borrowing, not internal equity.
 
-The statement is true.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-All debt finance is external; creditors lie outside the firm regardless of loan maturity.
+The statement is false.', 'Overdrafts are classified as short-term credit despite renewable facilities.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.'] WHERE case_id = 'CASE 4.5.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Bonds are long-term debt finance even when traded after issue.
 
-The statement is true.
-', 'TRUE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The balance sheet displays how assets are financed through equity and debt sources.
+The statement is false.', 'Supplier credit is a textbook short-term debt source for routine purchases.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Trade credit from suppliers is short-term debt finance that postpones payment for goods and services" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Bond issues raise long-term external debt from investors who hold creditor status.
 
-The statement is true.
-', 'TRUE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
+Applied carefully, "Bonds issued to investors provide long-term debt finance through formal creditor instruments" lines up with the textbook idea without adding an extra restriction.
 
-Large firms must prepare a balance sheet under the accounting framework referenced in the chapter.
+The statement is true.', 'Multi-year bank loans are listed under long-term credit in the finance overview.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Long-term bank loans are a form of long-term external debt finance used for extended investment periods" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'Owner loans are long-term credit and debt finance, not equity, despite the owners'' stake.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Owner loans appear under long-term credit as external debt, not as equity.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.'] WHERE case_id = 'CASE 4.5.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Overdrafts, trade credit, and short-term loans appear as short-term debt in the overview.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Table 3 groups bank overdrafts, trade credit, and short-term loans under short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Share capital from outside investors is external equity, not internal equity. Internal equity is retained earnings generated by the firm itself and kept rather than distributed.
+The statement is true.', 'Bank loans, owner loans, and bonds are long-term credit examples in the table.
 
-Share capital comes from outside investors and is external equity, not internal equity.
+Applied carefully, "Table 3 includes bank loans, owner loans, and bonds among long-term credit sources" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Undistributed profit kept in the firm is internal equity, not external borrowing.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "Retained earnings supply internal equity finance without bringing in new external funds" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
+The statement is true.', 'Overdraft facilities are a standard short-term debt source in the finance table.
 
-Retained earnings are internal equity even though they originate from trading activity.
+Applied carefully, "Bank overdrafts provide flexible short-term debt finance for day-to-day cash shortfalls" lines up with the textbook idea without adding an extra restriction.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+The statement is true.', 'Equity finance components including share capital and retained earnings fund the balance sheet.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "Share capital and retained earnings both appear as equity finance sources on the balance sheet" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Retained profit kept in the firm is not treated as a loan from the owner that must pay market interest. Avoiding creditor interest is precisely why internal finance is attractive.
+The statement is true.'] WHERE case_id = 'CASE 4.5.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Creditor funds from short-term and long-term credit appear as debt finance sources.
 
-Debt finance is external; interest is a cost of borrowing, not internal equity.
+Applied carefully, "Short-term and long-term credit from creditors are recorded as debt finance on the balance sheet" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Supplier trade credit is short-term debt finance, not equity shared with suppliers.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
+The statement is false.', 'Investor funds are external equity; expecting a return does not reclassify them as debt.
 
-Overdrafts are classified as short-term credit despite renewable facilities.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Retained earnings are internal equity, not liabilities owed to external creditors.
 
-That misclassification is enough to reject the claim.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is false.', 'Equity spans external share capital and internal retained earnings in the overview.
 
-Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital. Bonds are long-term debt finance even when traded after issue. Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Equity finance includes share capital from investors and retained earnings kept within the firm" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.'] WHERE case_id = 'CASE 4.5.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Debt finance is split into short-term and long-term credit categories.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Debt finance covers short-term credit such as overdrafts and long-term credit such as bank loans" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+The statement is true.', 'Investor contributions are external equity under the sources-of-finance overview.
 
-Supplier credit is a textbook short-term debt source for routine purchases.
+Applied carefully, "Funds provided by investors count as external equity when investors subscribe for ownership in the firm" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Profit kept in the firm supplies internal equity without interest charges.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Retained earnings reinvested in the business represent internal equity finance rather than borrowed funds" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-Bond issues raise long-term external debt from investors who hold creditor status.
+The statement is true.', 'Short-term bank loans belong to short-term credit in the finance table.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Short-term bank loans are short-term debt finance used to cover temporary funding gaps" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.', 'Owner loans are long-term credit and remain debt finance despite the owners'' equity stake.
 
-The statement is true.
-', 'TRUE — Multi-year bank loans are listed under long-term credit in the finance overview.
+Applied carefully, "A loan provided by owners is long-term debt finance even though the lenders are also owners of the firm" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.'] WHERE case_id = 'CASE 4.5.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Debt finance in the table is external; no internal debt category is listed.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Table 3 shows that debt finance is always external to the business entity" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Owner loans are long-term credit and debt finance, not equity, despite the owners'' stake.
+The statement is true.', 'The table places share capital, retained earnings, and investor funds within equity finance.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Table 3 lists share capital, retained earnings, and investor funds under equity finance categories" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Bond issues are a textbook long-term debt source funded by outside investors.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+Applied carefully, "Bonds issued to investors are long-term external debt finance creating creditor claims on the business" lines up with the textbook idea without adding an extra restriction.
 
-A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+The statement is true.', 'Retained earnings are reinvested internally and classified as internal equity finance.
 
-The statement uses quantitative claims that should be read in order:
+Applied carefully, "Retained earnings are internal equity finance because undistributed profit remains within the business" lines up with the textbook idea without adding an extra restriction.
 
-Step 1: the amount 3 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The statement is true.', 'Retained earnings remain internal equity; external reporting does not reclassify them as external.
 
-Overdrafts, trade credit, and short-term loans appear as short-term debt in the overview.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.'] WHERE case_id = 'CASE 4.5.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share capital is external equity, not debt, regardless of how long investors remain.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is false.', 'Trade credit is a textbook short-term debt source in the finance overview.
 
-The statement uses quantitative claims that should be read in order:
+Applied carefully, "Trade credit from suppliers is short-term external debt finance for purchases on deferred payment terms" lines up with the textbook idea without adding an extra restriction.
 
-Step 1: the amount 3 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The statement is true.', 'Short-term bank loans remain short-term debt regardless of renewal intentions.
 
-Bank loans, owner loans, and bonds are long-term credit examples in the table.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Debt finance is external even if the creditor is also a shareholder; lending creates debt, not equity.
 
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Undistributed profit kept in the firm is internal equity, not external borrowing.
+The statement is false.', 'Share capital is external equity from outside investors.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Share capital from investors is external equity finance contributing to the ownership base of the corporation" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.'] WHERE case_id = 'CASE 4.5.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Retained earnings are internal equity even though revenue comes from customers.
 
-The statement is true.
-', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Overdraft facilities are a standard short-term debt source in the finance table.
+The statement is false.', 'Bonds and long-term bank loans are long-term external debt.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Bonds and long-term bank loans are long-term debt finance creating creditor claims on the firm" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.', 'Overdrafts are short-term debt finance, not equity, regardless of working-capital purpose.
 
-The statement is true.
-', 'TRUE — Equity finance components including share capital and retained earnings fund the balance sheet.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Retained earnings are internal equity finance, not short-term debt.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Creditor funds from short-term and long-term credit appear as debt finance sources.
+The statement is false.', 'Equity includes internal and external elements in the finance table.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Equity finance comprises internal retained earnings and external share capital and investor funds" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.'] WHERE case_id = 'CASE 4.5.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Debt is external with short-term and long-term subdivisions.
 
-The statement is true.
-', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
+Applied carefully, "Debt finance is external and divided into short-term credit and long-term credit components" lines up with the textbook idea without adding an extra restriction.
 
-Supplier trade credit is short-term debt finance, not equity shared with suppliers.
+The statement is true.', 'Bank loans, owner loans, and bonds are long-term debt sources.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Long-term bank loans, owner loans, and bonds exemplify long-term external debt finance" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Overdrafts, trade credit, and short-term loans are short-term debt.
 
-The statement is false.
-', 'FALSE — Investor funds are external equity; expecting a return does not reclassify them as debt.
+Applied carefully, "Bank overdrafts, trade credit, and short-term loans exemplify short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'The balance sheet shows the finance sources used by the business.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+Applied carefully, "The balance sheet reveals which equity and debt sources have funded the business assets" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Retained earnings are internal equity, not liabilities owed to external creditors.
+The statement is true.', 'Retained earnings are internal equity from undistributed profit.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Retained earnings are internal equity finance because profit kept in the firm does not come from new external borrowing" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.'] WHERE case_id = 'CASE 4.5.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Equity includes internal retained earnings as well as external share capital.
 
-The statement is false.
-', 'TRUE — Equity spans external share capital and internal retained earnings in the overview.
+The absolute wording "always" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Trade credit is short-term debt despite ongoing supplier relationships.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+The statement is false.', 'Regular coupon payments do not make bonds short-term debt; bonds are long-term credit.
 
-Debt finance is split into short-term and long-term credit categories.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Share capital is external equity from outside investors.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Share capital is external equity finance because investors contribute ownership funds from outside the business" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+The statement is true.', 'Share capital is external equity; equity capital is not repaid like debt with interest.
 
-Investor contributions are external equity under the sources-of-finance overview.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.'] WHERE case_id = 'CASE 4.5.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Retained earnings are internal equity despite arising from external trading.
 
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Profit kept in the firm supplies internal equity without interest charges.
+The statement is false.', 'Overdrafts remain short-term debt even with repeated use within a year.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Bank overdrafts are short-term debt finance even when used repeatedly throughout the trading year" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Overdrafts are short-term debt; the customer''s shareholding in the bank does not reclassify the overdraft.
 
-The statement is true.
-', 'TRUE — Short-term bank loans belong to short-term credit in the finance table.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Owner loans are long-term credit and debt finance, not equity, despite shared ownership.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is false.', 'Long-term bank loans are long-term external debt.
 
-The statement is true.
-', 'TRUE — Owner loans are long-term credit and remain debt finance despite the owners'' equity stake.
+Applied carefully, "Long-term bank loans are long-term external debt finance with scheduled repayment over extended periods" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.'] WHERE case_id = 'CASE 4.5.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Investor funds are external equity, not short-term debt, regardless of expected holding period.
 
-That is why the claim stands for this form of business or source of finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The statement uses quantitative claims that should be read in order:
+The statement is false.', 'Bonds are long-term debt from external investors.
 
-Step 1: the amount 3 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+Applied carefully, "Bonds issued to investors are long-term debt finance creating creditor claims traded in capital markets" lines up with the textbook idea without adding an extra restriction.
 
-Debt finance in the table is external; no internal debt category is listed.
+The statement is true.', 'Using retained earnings to repay loans does not make debt finance internal; debt remains external.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Share capital is external equity from outside investors, not internal equity.
 
-The statement is true.
-', 'TRUE — The statement uses quantitative claims that should be read in order:
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Step 1: the amount 3 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The statement is false.', 'Retained earnings are internal equity; publication in accounts does not make them external.
 
-The table places share capital, retained earnings, and investor funds within equity finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.'] WHERE case_id = 'CASE 4.5.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share capital and investor funds are external equity sources.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Share capital and funds from investors are external equity finance sources listed in the finance overview" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+The statement is true.', 'Retained earnings are internal equity from undistributed profit.
 
-Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+Applied carefully, "Retained earnings are internal equity finance sourced from profits not distributed to shareholders" lines up with the textbook idea without adding an extra restriction.
 
-Bond issues are a textbook long-term debt source funded by outside investors.
+The statement is true.', 'Overdrafts are short-term debt despite ongoing bank review of limits.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is false.', 'Bonds are long-term external debt from investors.
 
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+Applied carefully, "Bonds are long-term debt finance raising external creditor funds from investors" lines up with the textbook idea without adding an extra restriction.
 
-Retained earnings are reinvested internally and classified as internal equity finance.
+The statement is true.', 'Trade credit is short-term debt from suppliers.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Trade credit is short-term debt finance allowing suppliers to defer cash receipt for goods delivered" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.'] WHERE case_id = 'CASE 4.5.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Long-term bank loans are long-term external debt.
 
-The statement is true.
-', 'FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
+Applied carefully, "Long-term bank loans are long-term debt finance with repayment schedules extending beyond one year" lines up with the textbook idea without adding an extra restriction.
 
-Retained earnings remain internal equity; external reporting does not reclassify them as external.
+The statement is true.', 'Owner loans are long-term credit within debt finance.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+Applied carefully, "A loan provided by owners is long-term credit classified as external debt finance in the overview" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Short-term bank loans are short-term debt for working capital.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Share capital is external equity, not debt, regardless of how long investors remain.
+Applied carefully, "Short-term bank loans are short-term debt finance covering near-term working-capital requirements" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Equity combines internal and external sources in the finance overview.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "Equity finance includes both internal retained earnings and external share capital from investors" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+The statement is true.', 'Debt is external and includes short-term credit categories.
 
-Trade credit is a textbook short-term debt source in the finance overview.
+Applied carefully, "Debt finance is external and includes short-term credit such as overdrafts and trade credit" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.'] WHERE case_id = 'CASE 4.5.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade credit is short-term debt, not equity shared with suppliers.
 
-That is why the claim stands for this form of business or source of finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'FALSE — Short-term bank loans remain short-term debt regardless of renewal intentions.
+The statement is false.', 'Bonds are long-term external debt finance.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Bonds issued to investors are long-term debt finance creating marketable creditor instruments" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Retained earnings are internal equity from kept profit.
 
-The statement is false.
-', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
+Applied carefully, "Retained earnings are internal equity finance because kept profit funds the business without new borrowing" lines up with the textbook idea without adding an extra restriction.
 
-Debt finance is external even if the creditor is also a shareholder; lending creates debt, not equity.
+The statement is true.', 'Share capital is external equity from outside investors.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Share capital is external equity finance from investors who subscribe for shares in the corporation" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Overdrafts are short-term debt for liquidity needs.
 
-The statement is false.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+Applied carefully, "Bank overdrafts are short-term debt finance for bridging temporary cash shortfalls on current accounts" lines up with the textbook idea without adding an extra restriction.
 
-Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
+The statement is true.'] WHERE case_id = 'CASE 4.5.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Investor contributions are external equity under the sources-of-finance framework.
 
-Share capital is external equity from outside investors.
+Applied carefully, "Funds provided by investors are external equity finance when investors supply ownership capital to the business" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Early redemption options do not reclassify bonds as short-term debt; bonds are long-term credit.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
+The statement is false.', 'Only part of equity is internal; debt finance is entirely external despite balance-sheet presentation.
 
-Retained earnings are internal equity even though revenue comes from customers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+The statement is false.', 'Share capital is external equity, not long-term debt from creditors.
 
-That misclassification is enough to reject the claim.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is false.', 'Retained earnings are internal equity, not debt owed to creditors.
 
-Bonds and long-term bank loans are long-term external debt.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.'] WHERE case_id = 'CASE 4.5.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Retained earnings are internal equity from kept profit.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Retained earnings are internal equity finance representing profit reinvested rather than paid to owners" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-Overdrafts are short-term debt finance, not equity, regardless of working-capital purpose.
+The statement is true.', 'Share capital is external equity from investors.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Share capital is external equity finance contributed by investors who acquire ownership stakes" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Overdrafts are short-term debt finance, not equity, regardless of dividend protection purpose.
 
-The statement is false.
-', 'FALSE — The statement uses quantitative claims that should be read in order:
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Step 1: the amount 3 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The statement is false.', 'Owner loans are long-term credit classified as external debt.
 
-Retained earnings are internal equity finance, not short-term debt.
+Applied carefully, "A loan provided by owners is long-term credit within external debt finance despite the lenders'' ownership role" lines up with the textbook idea without adding an extra restriction.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+The statement is true.', 'Bonds and long-term bank loans are long-term external debt.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+Applied carefully, "Bonds and long-term bank loans are long-term debt finance sources from external creditors" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+The statement is true.'] WHERE case_id = 'CASE 4.5.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Retained earnings are internal equity from undistributed profit.
 
-In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+Applied carefully, "Profit kept inside the firm rather than distributed to owners supplies internal equity finance through retained earnings" lines up with the textbook idea without adding an extra restriction.
 
-Equity includes internal and external elements in the finance table.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.', 'Share capital is external equity from outside investors.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Share capital is external equity finance when investors provide ownership funding from outside the business" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Debt is external with short-term and long-term subdivisions.
+The statement is true.', 'Overdrafts are short-term debt for liquidity management.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Bank overdrafts are short-term debt finance used to cover temporary cash shortfalls on current accounts" lines up with the textbook idea without adding an extra restriction.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+The statement is true.', 'Long-term bank loans are long-term external debt.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Long-term bank loans are long-term debt finance with repayment extending beyond the short-term credit category" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The statement is true.', 'Bonds are long-term external debt from investors.
 
-Bank loans, owner loans, and bonds are long-term debt sources.
+Applied carefully, "Bonds issued to investors are long-term external debt finance listed among long-term credit sources" lines up with the textbook idea without adding an extra restriction.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is true.'] WHERE case_id = 'CASE 4.5.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Investor funds are external equity; equity capital is not repaid like debt.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+The statement is false.', 'Share subscriptions from outside investors supply external equity through share capital.
 
-A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+Applied carefully, "When investors subscribe for newly issued shares, the resulting share capital counts as external equity finance" lines up with the textbook idea without adding an extra restriction.
 
-Overdrafts, trade credit, and short-term loans are short-term debt.
+The statement is true.', 'Share issues to external parties raise external equity, not debt.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Ownership funding raised by issuing shares to outside parties is classified as external equity finance" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Profit retained rather than distributed is internal equity finance.
 
-The statement is true.
-', 'TRUE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
+Applied carefully, "Undistributed profit retained for reinvestment supplies internal equity finance within the business" lines up with the textbook idea without adding an extra restriction.
 
-The balance sheet shows the finance sources used by the business.
+The statement is true.', 'Dividends foregone in favour of retention create internal equity.
 
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+Applied carefully, "Profit kept within the firm rather than paid as dividends represents internal equity finance" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+The statement is true.'] WHERE case_id = 'CASE 4.5.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Short-term bank loans remain short-term debt despite a long banking relationship.
 
-Retained earnings are internal equity from undistributed profit.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Earnings kept in the entity are internal equity, not external borrowing.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Reinvested earnings that remain inside the business entity count as internal equity finance" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Equity includes internal retained earnings as well as external share capital.
+The statement is true.', 'Share subscriptions bring external equity from subscribing investors.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Investor subscriptions for shares supply external equity finance to the corporation" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Customer-generated revenue does not reclassify retained earnings as external equity.
 
-The statement is false.
-', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Trade credit is short-term debt despite ongoing supplier relationships.
+The statement is false.', 'Share capital is external equity; investment risk does not reclassify equity as debt.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is false.'] WHERE case_id = 'CASE 4.5.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade credit is short-term debt despite repeated negotiation of payment terms.
 
-The statement is false.
-', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Regular coupon payments do not make bonds short-term debt; bonds are long-term credit.
+The statement is false.', 'Periodic interest does not make bonds short-term; bonds are long-term debt finance.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'Overdrafts are short-term debt despite multi-year facilities.
 
-The statement is false.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
+The statement is false.', 'External audit reporting does not convert retained earnings from internal to external equity.
 
-Share capital is external equity from outside investors.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Current-account overdrafts are short-term debt for liquidity management.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "A bank overdraft facility on a current account is classified as short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Share capital is external equity; equity capital is not repaid like debt with interest.
+The statement is true.'] WHERE case_id = 'CASE 4.5.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share capital is external equity from outside investors, not internal equity.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is false.', 'Owner loans are long-term credit and debt finance, not equity reinvestment.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Retained earnings are internal equity despite arising from external trading.
+The statement is false.', 'Using an overdraft draws on short-term external debt.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+Applied carefully, "Drawing on an agreed overdraft limit to cover cash shortfalls represents short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Deferred supplier payment is short-term debt under trade credit.
 
-The statement is false.
-', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+Applied carefully, "Delayed payment to suppliers under trade credit terms qualifies as short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-Overdrafts remain short-term debt even with repeated use within a year.
+The statement is true.', 'Postponed supplier payment is short-term debt, not equity.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Supplier credit that postpones cash payment for delivered goods is short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.'] WHERE case_id = 'CASE 4.5.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Investor funds are external equity; expecting returns classifies them as equity investors, not creditors.
 
-The statement is true.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Overdrafts are short-term debt; the customer''s shareholding in the bank does not reclassify the overdraft.
+The statement is false.', 'Overdrafts are short-term debt finance, not equity, regardless of repeated use.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'Retained earnings are internal equity finance, not short-term debt.
 
-The statement is false.
-', 'FALSE — Owner loans are long-term credit and debt finance, not equity, despite shared ownership.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+The statement is false.', 'Share capital is external equity, not short-term debt from creditors.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'TRUE — Long-term bank loans are long-term external debt.
+The statement is false.', 'Sub-one-year bank borrowing is short-term debt finance.
 
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
+Applied carefully, "Borrowing from a bank for a period of less than one year is short-term debt finance" lines up with the textbook idea without adding an extra restriction.
 
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Investor funds are external equity, not short-term debt, regardless of expected holding period.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bonds are long-term debt from external investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'FALSE — Using retained earnings to repay loans does not make debt finance internal; debt remains external.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — Share capital from outside investors is external equity, not internal equity. Internal equity is retained earnings generated by the firm itself and kept rather than distributed.
-
-Share capital is external equity from outside investors, not internal equity.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
-
-Retained earnings are internal equity; publication in accounts does not make them external.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
-
-Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
-
-Share capital and investor funds are external equity sources.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
-
-Retained earnings are internal equity from undistributed profit.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
-
-Overdrafts are short-term debt despite ongoing bank review of limits.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
-
-Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bonds are long-term external debt from investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
-
-Trade credit is short-term debt from suppliers.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Long-term bank loans are long-term external debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Owner loans are long-term credit within debt finance.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Short-term bank loans are short-term debt for working capital.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
-
-Equity combines internal and external sources in the finance overview.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
-
-A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
-
-Debt is external and includes short-term credit categories.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
-
-Trade credit is short-term debt, not equity shared with suppliers.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bonds are long-term external debt finance.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
-
-Retained earnings are internal equity from kept profit.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
-
-Share capital is external equity from outside investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
-
-Overdrafts are short-term debt for liquidity needs.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
-
-Investor contributions are external equity under the sources-of-finance framework.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital. Early redemption options do not reclassify bonds as short-term debt; bonds are long-term credit. Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Only part of equity is internal; debt finance is entirely external despite balance-sheet presentation.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — Share capital is external equity, not long-term debt from creditors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — Retained earnings are internal equity, not debt owed to creditors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
-
-Retained earnings are internal equity from kept profit.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
-
-Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
-
-Share capital is external equity from investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
-
-Overdrafts are short-term debt finance, not equity, regardless of dividend protection purpose.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Owner loans are long-term credit classified as external debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
-
-Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bonds and long-term bank loans are long-term external debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
-
-Retained earnings are internal equity from undistributed profit.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
-
-Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
-
-Share capital is external equity from outside investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
-
-Overdrafts are short-term debt for liquidity management.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Long-term bank loans are long-term external debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Bonds are long-term external debt from investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Investor funds are external equity; equity capital is not repaid like debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — Share capital subscribed by outside investors is external equity: investors hold ownership claims, not a fixed repayment schedule like a bank loan. It lengthens the firm''s equity base.
-
-Share subscriptions from outside investors supply external equity through share capital.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Share issues to external parties raise external equity, not debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
-
-Profit retained rather than distributed is internal equity finance.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Dividends foregone in favour of retention create internal equity.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short-term bank loans remain short-term debt despite a long banking relationship.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — Earnings kept in the entity are internal equity, not external borrowing.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Share subscriptions bring external equity from subscribing investors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
-
-Customer-generated revenue does not reclassify retained earnings as external equity.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Share capital is external equity; investment risk does not reclassify equity as debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.5.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
-
-Trade credit is short-term debt despite repeated negotiation of payment terms.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
-
-Periodic interest does not make bonds short-term; bonds are long-term debt finance.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
-
-Overdrafts are short-term debt despite multi-year facilities.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
-
-External audit reporting does not convert retained earnings from internal to external equity.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
-
-Current-account overdrafts are short-term debt for liquidity management.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Share capital from outside investors is external equity, not internal equity. Internal equity is retained earnings generated by the firm itself and kept rather than distributed.
-
-Share capital is external equity from outside investors, not internal equity.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — Owner loans are long-term credit and debt finance, not equity reinvestment.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
-
-Using an overdraft draws on short-term external debt.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
-
-Deferred supplier payment is short-term debt under trade credit.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — Postponed supplier payment is short-term debt, not equity.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Investor funds are external equity; expecting returns classifies them as equity investors, not creditors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
-
-Overdrafts are short-term debt finance, not equity, regardless of repeated use.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
-
-Retained earnings are internal equity finance, not short-term debt.
-
-Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'FALSE — Share capital is external equity, not short-term debt from creditors.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — Sub-one-year bank borrowing is short-term debt finance.
-
-Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
-
-Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.5.25' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 4.5.25' AND tier = 'full';

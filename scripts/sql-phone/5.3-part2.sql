@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.3-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Businesses collect behavioural data to tailor offers to personal preferences.
 
-On this stem (CRM): businesses collect behavioural data to tailor offers to personal preferences.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'Market-oriented firms anticipate and respond earlier than product-oriented competitors.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Market-oriented firms anticipate and respond earlier than product-oriented competitors.
+The statement is false.', 'Tailoring follows examination of recorded purchase histories in market-oriented development.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Product orientation mainly relies on the quality of product features for market success.
 
-Tailoring follows examination of recorded purchase histories in market-oriented development.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
 
-The statement is true.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Product orientation mainly relies on the quality of product features for market success.
+The statement is false.'] WHERE case_id = 'CASE 5.3.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Markets and customer expectations should not be neglected even with strong features.
 
-Those restricting words stretch a limited idea past what marketing allows.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+The statement is false.', 'Shifts in recorded purchase histories trigger promotional adjustment under market orientation.
 
-Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Market orientation starts with analysis of identified market requirements prior to specification decisions.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.3.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Markets and customer expectations should not be neglected even with strong features.
+The statement is true.', 'Identical objectives can coexist with different orientation starting points.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Tailoring follows examination of identified market requirements in market-oriented development.
 
-Shifts in recorded purchase histories trigger promotional adjustment under market orientation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.3.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Market orientation starts with analysis of identified market requirements prior to specification decisions.
+The statement is false.', 'Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Businesses collect behavioural data to tailor offers to personal preferences.
 
-Identical objectives can coexist with different orientation starting points.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Market-oriented firms anticipate and respond earlier than product-oriented competitors.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Tailoring follows examination of identified market requirements in market-oriented development.
+The statement is false.', 'Shifts in identified market requirements trigger promotional adjustment under market orientation.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+The statement is true.'] WHERE case_id = 'CASE 5.3.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Product orientation mainly relies on the quality of product features for market success.
 
-Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Market orientation starts with analysis of evolving buyer expectations prior to specification decisions.
 
-The statement is false.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
+The statement is true.', 'Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+The statement is false.', 'Markets and customer expectations should not be neglected even with strong features.
 
-On this stem (CRM): businesses collect behavioural data to tailor offers to personal preferences.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'Identical objectives can coexist with different orientation starting points.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Market-oriented firms anticipate and respond earlier than product-oriented competitors.
+The statement is false.'] WHERE case_id = 'CASE 5.3.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
 
-Shifts in identified market requirements trigger promotional adjustment under market orientation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Businesses collect behavioural data to tailor offers to personal preferences.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Product orientation mainly relies on the quality of product features for market success.
+The statement is false.', 'Tailoring follows examination of evolving buyer expectations in market-oriented development.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Shifts in evolving buyer expectations trigger promotional adjustment under market orientation.
 
-Market orientation starts with analysis of evolving buyer expectations prior to specification decisions.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.3.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Market orientation starts with analysis of segment-specific customer demands prior to specification decisions.
 
-The statement is true.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
+The statement is true.', 'Tailoring follows examination of segment-specific customer demands in market-oriented development.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Shifts in segment-specific customer demands trigger promotional adjustment under market orientation.
 
-Markets and customer expectations should not be neglected even with strong features.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Market orientation starts with analysis of feedback gathered from target buyers prior to specification decisions.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical objectives can coexist with different orientation starting points.
+The statement is true.', 'Tailoring follows examination of feedback gathered from target buyers in market-oriented development.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.3.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+The statement is true.'] WHERE case_id = 'CASE 5.3.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Shifts in feedback gathered from target buyers trigger promotional adjustment under market orientation.
 
-Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Market orientation starts with analysis of preferences expressed through loyalty accounts prior to specification decisions.
 
-The statement is false.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
+The statement is true.', 'Tailoring follows examination of preferences expressed through loyalty accounts in market-oriented development.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+The statement is true.', 'Shifts in preferences expressed through loyalty accounts trigger promotional adjustment under market orientation.
 
-On this stem (CRM): businesses collect behavioural data to tailor offers to personal preferences.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Market orientation starts with analysis of requirements revealed by market research prior to specification decisions.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Tailoring follows examination of evolving buyer expectations in market-oriented development.
+The statement is true.'] WHERE case_id = 'CASE 5.3.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Market-oriented firms anticipate and respond earlier than product-oriented competitors.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Tailoring follows examination of requirements revealed by market research in market-oriented development.
 
-Shifts in evolving buyer expectations trigger promotional adjustment under market orientation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Product orientation mainly relies on the quality of product features for market success.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Market orientation starts with analysis of segment-specific customer demands prior to specification decisions.
+The statement is false.', 'Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Shifts in requirements revealed by market research trigger promotional adjustment under market orientation.
 
-Tailoring follows examination of segment-specific customer demands in market-oriented development.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.3.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Market orientation starts with analysis of wants signalled through repeat purchase patterns prior to specification decisions.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Shifts in segment-specific customer demands trigger promotional adjustment under market orientation.
+The statement is true.', 'Tailoring follows examination of wants signalled through repeat purchase patterns in market-oriented development.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Markets and customer expectations should not be neglected even with strong features.
 
-Market orientation starts with analysis of feedback gathered from target buyers prior to specification decisions.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Identical objectives can coexist with different orientation starting points.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Tailoring follows examination of feedback gathered from target buyers in market-oriented development.
+The statement is false.', 'Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.'] WHERE case_id = 'CASE 5.3.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
 
-Shifts in feedback gathered from target buyers trigger promotional adjustment under market orientation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Shifts in wants signalled through repeat purchase patterns trigger promotional adjustment under market orientation.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Market orientation starts with analysis of preferences expressed through loyalty accounts prior to specification decisions.
+The statement is true.', 'Orientation suitability for consumer electronics in hospitality hinges on product traits and competitor numbers.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Businesses collect behavioural data to tailor offers to personal preferences.
 
-Tailoring follows examination of preferences expressed through loyalty accounts in market-oriented development.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Identical objectives can coexist with different orientations in hospitality consumer electronics markets.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Shifts in preferences expressed through loyalty accounts trigger promotional adjustment under market orientation.
+The statement is true.'] WHERE case_id = 'CASE 5.3.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Strong consumer electronics features in hospitality do not justify ignoring market and customer expectations.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Orientation suitability for household groceries in retail fashion hinges on product traits and competitor numbers.
 
-Market orientation starts with analysis of requirements revealed by market research prior to specification decisions.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Market-oriented firms anticipate and respond earlier than product-oriented competitors.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Market-oriented firms anticipate and respond earlier than product-oriented competitors.
+The statement is false.', 'Product orientation mainly relies on the quality of product features for market success.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Identical objectives can coexist with different orientations in retail fashion household groceries markets.
 
-Tailoring follows examination of requirements revealed by market research in market-oriented development.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.3.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
 
-The statement is true.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Product orientation mainly relies on the quality of product features for market success.
+The statement is false.', 'Markets and customer expectations should not be neglected even with strong features.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+The statement is false.', 'Identical objectives can coexist with different orientation starting points.
 
-On this stem (software): product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Strong household groceries features in retail fashion do not justify ignoring market and customer expectations.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Shifts in requirements revealed by market research trigger promotional adjustment under market orientation.
+The statement is true.', 'Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.'] WHERE case_id = 'CASE 5.3.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Orientation suitability for seasonal fashion garments in business software hinges on product traits and competitor numbers.
 
-Market orientation starts with analysis of wants signalled through repeat purchase patterns prior to specification decisions.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Identical objectives can coexist with different orientations in business software seasonal fashion garments markets.
 
-The statement is true.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Tailoring follows examination of wants signalled through repeat purchase patterns in market-oriented development.
+The statement is true.', 'Strong seasonal fashion garments features in business software do not justify ignoring market and customer expectations.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Orientation suitability for hotel accommodation services in food service hinges on product traits and competitor numbers.
 
-On this stem (software): markets and customer expectations should not be neglected even with strong features.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Identical objectives can coexist with different orientations in food service hotel accommodation services markets.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (software): identical objectives can coexist with different orientation starting points.
+The statement is true.'] WHERE case_id = 'CASE 5.3.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Strong hotel accommodation services features in food service do not justify ignoring market and customer expectations.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+The statement is true.', 'Orientation suitability for dental care services in financial services hinges on product traits and competitor numbers.
 
-On this stem (CRM / software): crm retains data to mail or email newsletters, coupons, and product information for repeat business.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Identical objectives can coexist with different orientations in financial services dental care services markets.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.3.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (software): customers often willingly give up anonymity through loyalty cards and accounts for discounts.
+The statement is true.', 'Orientation suitability for home furniture ranges in healthcare supplies hinges on product traits and competitor numbers.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Identical objectives can coexist with different orientations in healthcare supplies home furniture ranges markets.
 
-Shifts in wants signalled through repeat purchase patterns trigger promotional adjustment under market orientation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.3.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Orientation suitability for consumer electronics in hospitality hinges on product traits and competitor numbers.
+The statement is false.', 'Businesses collect behavioural data to tailor offers to personal preferences.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+The statement is false.', 'Market-oriented firms anticipate and respond earlier than product-oriented competitors.
 
-On this stem (software / CRM): businesses collect behavioural data to tailor offers to personal preferences.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'Strong home furniture ranges features in healthcare supplies do not justify ignoring market and customer expectations.
 
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical objectives can coexist with different orientations in hospitality consumer electronics markets.
+The statement is true.', 'Orientation suitability for online grocery deliveries in home improvement hinges on product traits and competitor numbers.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.'] WHERE case_id = 'CASE 5.3.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Identical objectives can coexist with different orientations in home improvement online grocery deliveries markets.
 
-Strong consumer electronics features in hospitality do not justify ignoring market and customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Strong online grocery deliveries features in home improvement do not justify ignoring market and customer expectations.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Orientation suitability for household groceries in retail fashion hinges on product traits and competitor numbers.
+The statement is true.', 'Orientation suitability for fitness class memberships in automotive after-sales hinges on product traits and competitor numbers.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Identical objectives can coexist with different orientations in automotive after-sales fitness class memberships markets.
 
-On this stem (software): market-oriented firms anticipate and respond earlier than product-oriented competitors.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Strong fitness class memberships features in automotive after-sales do not justify ignoring market and customer expectations.
 
-The statement is false.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (software): product orientation mainly relies on the quality of product features for market success.
+The statement is true.'] WHERE case_id = 'CASE 5.3.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Orientation suitability for corporate catering menus in education technology hinges on product traits and competitor numbers.
 
-Those restricting words stretch a limited idea past what marketing allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Identical objectives can coexist with different orientations in education technology corporate catering menus markets.
 
-Identical objectives can coexist with different orientations in retail fashion household groceries markets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Strong corporate catering menus features in education technology do not justify ignoring market and customer expectations.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
+The statement is true.', 'Product orientation mainly relies on the quality of product features for market success.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is false.', 'Orientation suitability for bookshop inventory selections in leisure travel hinges on product traits and competitor numbers.
 
-Markets and customer expectations should not be neglected even with strong features.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.'] WHERE case_id = 'CASE 5.3.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Identical objectives can coexist with different orientation starting points.
+The statement is false.', 'Markets and customer expectations should not be neglected even with strong features.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is false.', 'Identical objectives can coexist with different orientations in leisure travel bookshop inventory selections markets.
 
-Strong household groceries features in retail fashion do not justify ignoring market and customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Identical objectives can coexist with different orientation starting points.
 
-The statement is true.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
+The statement is false.', 'Strong bookshop inventory selections features in leisure travel do not justify ignoring market and customer expectations.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.3.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.'] WHERE case_id = 'CASE 5.3.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Orientation suitability for vehicle maintenance services in specialty cosmetics hinges on product traits and competitor numbers.
 
-Orientation suitability for seasonal fashion garments in business software hinges on product traits and competitor numbers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Identical objectives can coexist with different orientations in business software seasonal fashion garments markets.
+The statement is false.', 'Identical objectives can coexist with different orientations in specialty cosmetics vehicle maintenance services markets.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
 
-Strong seasonal fashion garments features in business software do not justify ignoring market and customer expectations.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Strong vehicle maintenance services features in specialty cosmetics do not justify ignoring market and customer expectations.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Orientation suitability for hotel accommodation services in food service hinges on product traits and competitor numbers.
+The statement is true.'] WHERE case_id = 'CASE 5.3.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Orientation suitability for cosmetic beauty products in hospitality hinges on product traits and competitor numbers.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Identical objectives can coexist with different orientations in hospitality cosmetic beauty products markets.
 
-Identical objectives can coexist with different orientations in food service hotel accommodation services markets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Strong cosmetic beauty products features in hospitality do not justify ignoring market and customer expectations.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Strong hotel accommodation services features in food service do not justify ignoring market and customer expectations.
+The statement is true.', 'Orientation suitability for family holiday packages in retail fashion hinges on product traits and competitor numbers.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Identical objectives can coexist with different orientations in retail fashion family holiday packages markets.
 
-Orientation suitability for dental care services in financial services hinges on product traits and competitor numbers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.3.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Strong family holiday packages features in retail fashion do not justify ignoring market and customer expectations.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical objectives can coexist with different orientations in financial services dental care services markets.
+The statement is true.', 'Orientation suitability for artisan bakery products in business software hinges on product traits and competitor numbers.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Identical objectives can coexist with different orientations in business software artisan bakery products markets.
 
-Orientation suitability for home furniture ranges in healthcare supplies hinges on product traits and competitor numbers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Strong artisan bakery products features in business software do not justify ignoring market and customer expectations.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical objectives can coexist with different orientations in healthcare supplies home furniture ranges markets.
+The statement is true.', 'Email newsletters within CRM can encourage customers to return and buy again when personal data is used sensitively.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.'] WHERE case_id = 'CASE 5.3.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Email newsletters within CRM can maintain contact between purchase occasions when personal data is used sensitively.
 
-Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Email newsletters within CRM can strengthen long-term customer relationships when personal data is used sensitively.
 
-The statement is false.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (CRM): businesses collect behavioural data to tailor offers to personal preferences.
+The statement is true.', 'Email newsletters within CRM can support repeat purchasing behaviour when personal data is used sensitively.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
+The statement is true.', 'Email newsletters within CRM can keep customers informed about relevant products when personal data is used sensitively.
 
-Market-oriented firms anticipate and respond earlier than product-oriented competitors.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Email newsletters within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.
 
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Strong home furniture ranges features in healthcare supplies do not justify ignoring market and customer expectations.
+The statement is true.'] WHERE case_id = 'CASE 5.3.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Businesses collect behavioural data to tailor offers to personal preferences.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is false.', 'Market-oriented firms anticipate and respond earlier than product-oriented competitors.
 
-Orientation suitability for online grocery deliveries in home improvement hinges on product traits and competitor numbers.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Product orientation mainly relies on the quality of product features for market success.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Identical objectives can coexist with different orientations in home improvement online grocery deliveries markets.
+The statement is false.', 'Email newsletters within CRM can sustain engagement beyond single transactions when personal data is used sensitively.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Email newsletters within CRM can build durable commercial relationships with buyers when personal data is used sensitively.
 
-Strong online grocery deliveries features in home improvement do not justify ignoring market and customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.3.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Email newsletters within CRM can prompt additional visits through informed contact when personal data is used sensitively.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Orientation suitability for fitness class memberships in automotive after-sales hinges on product traits and competitor numbers.
+The statement is true.', 'Email newsletters within CRM can foster continuity rather than one-off sales when personal data is used sensitively.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Posted coupon mailings within CRM can encourage customers to return and buy again when personal data is used sensitively.
 
-Identical objectives can coexist with different orientations in automotive after-sales fitness class memberships markets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Strong fitness class memberships features in automotive after-sales do not justify ignoring market and customer expectations.
+The statement is false.', 'Posted coupon mailings within CRM can maintain contact between purchase occasions when personal data is used sensitively.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.'] WHERE case_id = 'CASE 5.3.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Markets and customer expectations should not be neglected even with strong features.
 
-Orientation suitability for corporate catering menus in education technology hinges on product traits and competitor numbers.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Posted coupon mailings within CRM can strengthen long-term customer relationships when personal data is used sensitively.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical objectives can coexist with different orientations in education technology corporate catering menus markets.
+The statement is true.', 'Posted coupon mailings within CRM can support repeat purchasing behaviour when personal data is used sensitively.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
+The statement is true.', 'Posted coupon mailings within CRM can keep customers informed about relevant products when personal data is used sensitively.
 
-Strong corporate catering menus features in education technology do not justify ignoring market and customer expectations.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Identical objectives can coexist with different orientation starting points.
 
-The statement is true.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Product orientation mainly relies on the quality of product features for market success.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Orientation suitability for bookshop inventory selections in leisure travel hinges on product traits and competitor numbers.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
-
-Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
-
-Markets and customer expectations should not be neglected even with strong features.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Identical objectives can coexist with different orientations in leisure travel bookshop inventory selections markets.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
-
-Identical objectives can coexist with different orientation starting points.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Strong bookshop inventory selections features in leisure travel do not justify ignoring market and customer expectations.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Orientation suitability for vehicle maintenance services in specialty cosmetics hinges on product traits and competitor numbers.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Crm retains data to mail or email newsletters, coupons, and product information for repeat business.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Identical objectives can coexist with different orientations in specialty cosmetics vehicle maintenance services markets.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Customers often willingly give up anonymity through loyalty cards and accounts for discounts.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Strong vehicle maintenance services features in specialty cosmetics do not justify ignoring market and customer expectations.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Orientation suitability for cosmetic beauty products in hospitality hinges on product traits and competitor numbers.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Identical objectives can coexist with different orientations in hospitality cosmetic beauty products markets.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Strong cosmetic beauty products features in hospitality do not justify ignoring market and customer expectations.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Orientation suitability for family holiday packages in retail fashion hinges on product traits and competitor numbers.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Identical objectives can coexist with different orientations in retail fashion family holiday packages markets.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Strong family holiday packages features in retail fashion do not justify ignoring market and customer expectations.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Orientation suitability for artisan bakery products in business software hinges on product traits and competitor numbers.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Identical objectives can coexist with different orientations in business software artisan bakery products markets.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Over time many firms have moved from product orientation toward market orientation, without neglecting either product quality or customer expectations.
-
-Strong artisan bakery products features in business software do not justify ignoring market and customer expectations.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can encourage customers to return and buy again when personal data is used sensitively.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can maintain contact between purchase occasions when personal data is used sensitively.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can strengthen long-term customer relationships when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can support repeat purchasing behaviour when personal data is used sensitively.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can keep customers informed about relevant products when personal data is used sensitively.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can reward loyal buyers with ongoing incentives when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM): businesses collect behavioural data to tailor offers to personal preferences.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
-
-Market-oriented firms anticipate and respond earlier than product-oriented competitors.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
-
-Product orientation mainly relies on the quality of product features for market success.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can sustain engagement beyond single transactions when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can build durable commercial relationships with buyers when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can prompt additional visits through informed contact when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-On this stem (CRM / newsletters): email newsletters within CRM can foster continuity rather than one-off sales when personal data is used sensitively.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Posted coupon mailings within CRM can encourage customers to return and buy again when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A product-oriented business starts with the product and its features and only later works out how to sell it. Success is expected mainly from the quality of those features.
-
-Product orientation focuses on the product first; needs analysis leads market orientation, not product orientation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Posted coupon mailings within CRM can maintain contact between purchase occasions when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.3.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
-
-Markets and customer expectations should not be neglected even with strong features.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Posted coupon mailings within CRM can strengthen long-term customer relationships when personal data is used sensitively.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Posted coupon mailings within CRM can support repeat purchasing behaviour when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Customer relationship management (CRM) aims at lasting relationships. Firms keep data to send newsletters, coupons, and product information that encourage repeat purchases, while sensitive use of personal data remains essential.
-
-Posted coupon mailings within CRM can keep customers informed about relevant products when personal data is used sensitively.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A market-oriented business first studies customers'' needs and wants and then shapes the offering to match. That stance helps anticipate demand shifts earlier than a purely product-led rival.
-
-Identical objectives can coexist with different orientation starting points.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.3.50' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 5.3.50' AND tier = 'full';

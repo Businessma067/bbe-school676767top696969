@@ -22,7 +22,7 @@ TRUE counts 1–5 even inside each subtopic (already in slot plan). Difficulty a
 4. Spell out terms — **no** EBIT, EBITDA, ROCE, ROE, EPS, WC, P&L, BS, IS, CF abbreviations in student-facing text.
 5. **Zero** parenthetical formula hints in statements (no “(cost of sales divided by…)”, “(current assets / current liabilities)”).
 6. **No obvious read-offs**: ban statements that just compare two printed line items (“Buildings of €374 thousand exceed machinery of €129 thousand”, “Total liabilities of €X exceed total equity of €Y”). Require calculation, classification judgment, threshold tests, or conceptual reasoning.
-7. Explanations: `TRUE — …` / `FALSE — …` clear and specific.
+7. Explanations: teacher prose with every calc step for ratios; no `TRUE —` / `FALSE —` leads; no em dashes.
 8. No duplicate statements within the subtopic bank (and avoid near-dups Jaccard ≥ 0.78 inside a case).
 9. ~25% SCENE contexts among **text** cases; rest THEORY (`Analyze`/`Review` stems).
 

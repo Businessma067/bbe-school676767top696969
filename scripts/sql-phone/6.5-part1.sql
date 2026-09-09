@@ -1,1150 +1,564 @@
 -- Update expanded explanations for 6.5-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On a stock exchange, existing shares change hands between investors.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary trading does not raise new company funds.
 
-That transfer does not raise new capital for the issuer; fresh equity cash comes only from primary issues or similar company transactions.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "Secondary-market trading changes who owns the shares; it does not, by itself, inject fresh equity cash into the issuing company."
+The statement is true.', 'Asset turnover ≈ 1.03.
 
-Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — Asset turnover shows how many times revenue covers average total assets over the year.
+The statement is false.', 'Receivables turnover ≈ 7.12.
 
-Name the identity in words: asset turnover = revenue ÷ average total assets.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Avg assets} = \frac{796 + 983}{2} = 889.5
-$$
+The statement is false.', 'Average inventory are about 18.0% of average total assets.
 
-$$
-AT = \frac{919}{889.5} = 1.0332
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Claimed above 1.13. Actual 1.03.
+The statement is false.', 'Cost of sales is about 63.1% of revenue.
 
-Reading the arithmetic against the claim: asset turnover 1.03 versus ''above 1.13'' so the statement does not hold.
-
-The statement is false.', 'FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
-
-Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
-
-$$
-\text{Avg receivables} = \frac{111 + 147}{2} = 129
-$$
-
-$$
-RT = \frac{919}{129} = 7.1240
-$$
-
-Threshold: exceeds 10.53. Actual 7.12.
-
-Reading the arithmetic against the claim: receivables turnover 7.12 does not exceed 10.53 so the statement does not hold.
-
-The statement is false.', 'FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
-
-Name the identity in words: average-inventory share = average inventory ÷ average total assets.
-
-$$
-\text{Avg inventory} = \frac{136 + 184}{2} = 160
-$$
-
-$$
-\text{Avg assets} = \frac{796 + 983}{2} = 889.5
-$$
-
-$$
-\frac{160}{889.5} = 18.0\%
-$$
-
-Threshold: less than 15.8%. Actual 18.0%.
-
-Reading the arithmetic against the claim: the share is 18.0% versus ''less than 15.8%'' so the statement does not hold.
-
-The statement is false.', 'FALSE — Cost of sales as a share of revenue is the COS-to-revenue ratio.
-
-Name the identity in words: COS share = cost of sales ÷ revenue.
-
-From the extract, cost of sales = 580 and revenue = 919. Plug the figures step by step:
-
-$$
-COS\% = \frac{\text{cost of sales}}{\text{revenue}}
-$$
-
-$$
-COS\% = \frac{580}{919}
-$$
-
-$$
-COS\% = 63.1\%
-$$
-
-Threshold: more than 67.5%. Actual 63.1%.
-
-Reading the arithmetic against the claim: COS share 63.1% does not exceed 67.5% so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.001' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Working capital is current assets minus current liabilities, not the reverse; a larger current asset balance raises it.
 
-Absolute or misapplied wording conflicts with the rule for "Working Capital Fundamentals in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Working capital is defined as current liabilities minus current assets, so a larger current asset balance always reduces working capital."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Negative working capital means current liabilities exceed current assets and does not imply excess cash.
 
-Absolute or misapplied wording conflicts with the rule for "Working Capital Fundamentals in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A business with negative working capital automatically holds more cash than it needs for its daily operations."
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Working capital equals current assets minus current liabilities by definition.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital is defined as current assets minus current liabilities, so a business with more current liabilities than current assets reports negative working capital."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Some margin of current assets over current liabilities is generally desired, with the required size depending on the sector.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A comfortable liquidity position generally means current assets are large enough to cover current liabilities with some margin to spare, though the exact margin needed varies by sector."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'A current ratio above one means current assets are larger than current liabilities.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio expresses how many times current assets cover current liabilities, so a ratio above one indicates current assets exceed current liabilities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.002' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['One and a half to two is a common guideline for the current ratio, tempered by industry context.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A current ratio commonly cited as comfortable falls somewhere between one and a half and two, though this guideline should be read alongside the norms of the specific industry."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'A current ratio below one means liabilities exceed current assets, a possible liquidity warning sign.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A current ratio below one suggests that current liabilities exceed current assets, which can signal difficulty meeting short-term obligations from those assets alone."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Excluding inventory before comparing with current liabilities is what defines the acid-test ratio.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The acid-test ratio removes inventory from current assets before comparing the remainder with current liabilities, producing a stricter measure of immediate liquidity."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Slow-to-sell inventory is why the acid-test ratio is stricter than the current ratio for stock-heavy businesses.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Because inventory can take time to sell and convert into cash, the acid-test ratio gives a more cautious liquidity picture than the current ratio for businesses holding substantial stock."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Short-term borrowing can raise cash yet still reduce working capital because current liabilities also rise.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Raising a short-term loan to pay suppliers can increase a business''s cash balance while simultaneously increasing current liabilities, so the net effect on working capital may be negative rather th…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.003' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Extended supplier credit raises current liabilities and can reduce working capital without any change in cash.
 
-The wording matches the relevant rule for "Working Capital Fundamentals for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Relying on extended supplier credit increases current liabilities, which can erode working capital even while the cash balance on hand remains unchanged."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Sustainable working capital improvement relies on long-term finance or operational change, not repeated short-term loans.
 
-The wording matches the relevant rule for "Working Capital Fundamentals for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Strengthening working capital on a lasting basis typically calls for long-term finance or genuine operational improvement rather than another round of short-term borrowing."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'The current ratio compares current assets with current liabilities; a ratio above one means assets exceed liabilities, not the reverse.
 
-Absolute or misapplied wording conflicts with the rule for "Working Capital Fundamentals for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The current ratio expresses how many times current liabilities cover current assets, so a ratio above one means liabilities exceed assets."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Working capital is a point-in-time balance-sheet concept, distinct from cash flow, which tracks movements over time.
 
-The wording matches the relevant rule for "Working Capital Fundamentals for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital problems and cash flow problems are related concepts but are not identical, since working capital reflects a balance-sheet position at a point in time while cash flow tracks movemen…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Return on equity links profit before interest and tax to owners'' equity.
 
-The wording matches the relevant rule for "Working Capital Fundamentals for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity relates profit before interest and tax generated during the period to the equity invested by owners, showing how effectively that equity produced a return."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.004' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Risk borne by owners is part of judging whether a given return on equity is adequate.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Because return on equity is judged against the risk owners bear by investing in the business, a modest return may still be considered inadequate if the business carries substantial risk."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Return on capital employed links profit before interest and tax to combined owner and long-term lender funds.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on capital employed relates profit before interest and tax to the long-term capital employed in the business, combining funds contributed by both owners and long-term lenders."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Capital employed is approximated as equity plus non-current liabilities.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Capital employed can be approximated by adding non-current liabilities to equity, representing the long-term funds financing the business."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Comparative context, not an isolated figure, is what makes return on capital employed informative.
 
-The wording matches the relevant rule for "Working Capital Fundamentals Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A single return on capital employed figure is most informative when set against the same business''s results in earlier years or against similar businesses in the same industry."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'The one-and-a-half to two range is a common guideline, not a legal requirement, and industry norms still matter.
 
-Absolute or misapplied wording conflicts with the rule for "Working Capital Fundamentals Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A current ratio between one and a half and two is an exact legal requirement that every business in every industry must satisfy."
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.005' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['These match the textbook motives for buying shares.
 
-The wording matches the relevant rule for "Liquidity From the Balance Sheet 6". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is true.', 'Current assets gather the short-term asset lines:
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Inventory (218) + Trade receivables (166) + Cash and cash equivalents (87)
+= 471
 
-Build current assets and current liabilities from the extract:
+Current liabilities gather the short-term claims:
 
-$$
-CA = 218 + 166 + 87 = 471
-$$
+Trade payables (135) + Bank overdraft (87)
+= 222
 
-$$
-CL = 135 + 87 = 222
-$$
+Current ratio = 471 / 222 ≈ 2.12
 
-$$
-\text{Current ratio} = \frac{471}{222} = 2.1216
-$$
+The claim says the ratio exceeds 1.1. We have about 2.12, which matches that comparison.
 
-Claimed: exceeds 1.1. Actual 2.12.
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-Reading the arithmetic against the claim: actual current ratio 2.12 versus ''exceeds 1.1'' so the statement holds.
+471 - 222 = 249
 
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The claim cites 249. We have 249, so the figures line up.
 
-Name the identity in words: working capital = current assets − current liabilities.
+The statement is true.', 'Acid-test ratio ≈ 1.14.
 
-From the extract, current assets total 471 and current liabilities total 222:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-WC = CA - CL
-$$
+The statement is false.', 'Equity ratio = total equity / total assets.
 
-$$
-CA = 471, \quad CL = 222
-$$
+809 / 1339 ≈ 60.4%
 
-$$
-WC = 471 - 222 = 249
-$$
-
-The statement cites working capital of €249 thousand and that it is positive. Calculated WC is 249, which is positive.
-
-Reading the arithmetic against the claim: WC = 249 is positive as claimed so the statement holds.
-
-The statement is true.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 471, \quad \text{Inventory} = 218, \quad CL = 222
-$$
-
-$$
-CA - \text{Inventory} = 471 - 218 = 253
-$$
-
-$$
-\text{Acid-test} = \frac{253}{222} = 1.1396
-$$
-
-Threshold: more than 1.34. Actual 1.14.
-
-Reading the arithmetic against the claim: acid-test 1.14 is not more than 1.34 so the statement does not hold.
-
-The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: equity ratio = equity ÷ total assets.
-
-From the extract, equity = 809 and total assets = 1,339. Plug the figures step by step:
-
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
-
-$$
-ER = \frac{809}{1,339}
-$$
-
-$$
-ER = 60.4\%
-$$
-
-Claimed: is below 25.6%. Actual 60.4%.
-
-Reading the arithmetic against the claim: actual equity ratio 60.4% does not match ''is below 25.6%'' so the statement does not hold.
+The claim says the ratio below 25.6%. We have about 60.4%, which does not match that comparison.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.006' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A consistent profit definition across a comparison prevents distorted return conclusions.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "When comparing return measures across two businesses, using the same definition of profit throughout the comparison avoids distorted conclusions."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Asset turnover links revenue to average total assets.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Asset turnover relates revenue generated during the period to the average total assets employed to generate that revenue."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Assets outgrowing revenue causes asset turnover to fall despite rising revenue.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "If revenue grows more slowly than the asset base a business has invested in, asset turnover will decline even while revenue itself keeps rising."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Averaging balances reduces timing distortions in turnover ratio calculations.
 
-The wording matches the relevant rule for "Working Capital Fundamentals in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Using average asset or inventory balances rather than a single year-end figure helps smooth out timing distortions when calculating turnover ratios."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'A current ratio below one suggests current assets may not fully cover current liabilities, the opposite of a guarantee.
 
-Absolute or misapplied wording conflicts with the rule for "Working Capital Fundamentals in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A current ratio below one guarantees that a business can comfortably settle every short-term obligation immediately."
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.007' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Receivables turnover ≈ 8.37.
 
-Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Avg receivables} = \frac{118 + 128}{2} = 123
-$$
+The statement is false.', 'New share capital arises at issue, not in aftermarket trades.
 
-$$
-RT = \frac{1,029}{123} = 8.3659
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Threshold: exceeds 10.27. Actual 8.37.
+The statement is true.', 'Average collection period ≈ 44 days.
 
-Reading the arithmetic against the claim: receivables turnover 8.37 does not exceed 10.27 so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Average inventory are about 17.1% of average total assets.
 
-The wording matches the relevant rule for "Turnover and Liquidity Extract 8". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — Collection days convert receivables turnover into an approximate outstanding period.
+The statement is false.', 'Inventory turnover ≈ 4.51 versus receivables turnover ≈ 8.37.
 
-Name the identity in words: collection days ≈ 365 ÷ receivables turnover.
-
-$$
-RT = \frac{1,029}{123} = 8.3659
-$$
-
-$$
-\text{Days} = \frac{365}{8.3659} = 43.6
-$$
-
-Threshold: more than 52 days. Actual 44 days.
-
-Reading the arithmetic against the claim: collection days 44 do not exceed 52 so the statement does not hold.
-
-The statement is false.', 'FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
-
-Name the identity in words: average-inventory share = average inventory ÷ average total assets.
-
-$$
-\text{Avg inventory} = \frac{130 + 177}{2} = 153.5
-$$
-
-$$
-\text{Avg assets} = \frac{865 + 931}{2} = 898
-$$
-
-$$
-\frac{153.5}{898} = 17.1\%
-$$
-
-Threshold: less than 13.9%. Actual 17.1%.
-
-Reading the arithmetic against the claim: the share is 17.1% versus ''less than 13.9%'' so the statement does not hold.
-
-The statement is false.', 'FALSE — Compare inventory turnover with receivables turnover, each built from the same extract''s averages.
-
-Name the identities in words: inventory turnover = cost of sales ÷ average inventory; receivables turnover = revenue ÷ average trade receivables.
-
-$$
-IT = \frac{692}{153.5} = 4.5081
-$$
-
-$$
-RT = \frac{1,029}{123} = 8.3659
-$$
-
-Inventory turnover is not higher than receivables turnover.
-
-Reading the arithmetic against the claim: IT 4.51 ≤ RT 8.37 so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.008' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary-market price rises do not raise new company cash.
 
-The wording matches the relevant rule for "Asset and Inventory Turnover 9". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation''s cash reserves."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.
+The statement is true.', 'High turnover signals faster stock rotation.
 
-Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Avg inventory} = \frac{147 + 155}{2} = 151
-$$
+The statement is true.', 'Asset turnover ≈ 1.28.
 
-$$
-IT = \frac{766}{151} = 5.07
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-That reading matches the definition used in the claim.
+The statement is false.', 'Apply the case evidence: Revenue = 1,116. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
 
-Reading the arithmetic against the claim: inventory turnover is about 5.07, consistent with the stated interpretation so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Asset turnover shows how many times revenue covers average total assets over the year.
+The statement is true.', 'Assets moved from 804 to 933.
 
-Name the identity in words: asset turnover = revenue ÷ average total assets.
-
-$$
-\text{Avg assets} = \frac{804 + 933}{2} = 868.5
-$$
-
-$$
-AT = \frac{1,116}{868.5} = 1.2850
-$$
-
-Claimed above 1.51. Actual 1.28.
-
-Reading the arithmetic against the claim: asset turnover 1.28 versus ''above 1.51'' so the statement does not hold.
-
-The statement is false.', 'TRUE — Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.
-
-From the extract:
-
-$$
-\text{Revenue} = €1,116\text{ thousand}
-$$
-
-The statement claims revenue exceeds €1,106 thousand. Actual revenue is €1,116 thousand, which exceeds that level.
-
-Reading the arithmetic against the claim: revenue €1,116k exceeds €1,106k so the statement holds.
-
-The statement is true.', 'TRUE — Asset growth on this extract is a direct comparison of beginning and ending total assets.
-
-Read beginning and ending total assets from the extract:
-
-$$
-\text{Assets}_{\text{begin}} = 804
-$$
-
-$$
-\text{Assets}_{\text{end}} = 933
-$$
-
-Assets grew during the year (804 → 933).
-
-Reading the arithmetic against the claim: assets move from 804 to 933 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.009' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The acid-test ratio excludes inventory, giving a stricter, not more lenient, measure than the current ratio.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The acid-test ratio adds inventory to current assets before comparing the total with current liabilities, giving a more lenient measure than the current ratio."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Inventory does not convert into cash instantly, which is exactly why the acid-test ratio can differ from the current ratio.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Because inventory converts into cash instantly, the acid-test ratio and the current ratio always produce identical results for any business."
+The absolute wording "instantly" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Inventory turnover links cost of sales to average inventory.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Inventory turnover relates the cost of sales incurred during the period to the average inventory held over that same period."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Short-term borrowing raises current liabilities alongside cash, so working capital can fall rather than rise.
 
-The claim states: Raising a short-term loan to pay suppliers always increases working capital. The reason — the cash received immediately outweighs any increase in liabilities. — does not support that label under the chapter definitions. Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Extended supplier credit increases current liabilities and can reduce working capital.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Extending supplier credit terms has no effect whatsoever on a business''s current liabilities or its working capital."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.010' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Long-term finance and operational improvement, not repeated short-term loans, sustainably strengthen working capital.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Working capital can be strengthened permanently only by taking out repeated short-term loans, since long-term finance has no bearing on the current asset and liability position."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Faster stock rotation and less money tied up in stock is what a higher inventory turnover signals.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A higher inventory turnover figure generally indicates that stock is sold and replaced more quickly, tying up less money in unsold goods."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Inventory turnover is conventionally expressed as a number of times per year.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Inventory turnover is typically expressed as a number of times per year, reflecting how often stock is estimated to be replaced."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'The equity ratio is equity expressed as a percentage of total assets.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The equity ratio expresses equity as a percentage of total assets, showing what proportion of the asset base owners have financed themselves."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Working capital is a balance-sheet snapshot while cash flow tracks movements over time; the two are related but distinct.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Working capital and cash flow describe exactly the same concept and can always be used interchangeably without any loss of meaning."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.011' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['These match the textbook motives for buying shares.
 
-The wording matches the relevant rule for "Liquidity From the Balance Sheet 12". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-Name the identity in words: working capital = current assets − current liabilities.
+449 - 189 = 260
 
-From the extract, current assets total 449 and current liabilities total 189:
+The claim cites 260. We have 260, so the figures line up.
 
-$$
-WC = CA - CL
-$$
+The statement is true.', 'Inventory are about 51.2% of current assets.
 
-$$
-CA = 449, \quad CL = 189
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-WC = 449 - 189 = 260
-$$
+The statement is true.', 'Trade receivables are about 31.2% of current assets.
 
-The statement cites working capital of €260 thousand and that it is positive. Calculated WC is 260, which is positive.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: WC = 260 is positive as claimed so the statement holds.
+The statement is true.', 'Long-term financing covers non-current assets by about 33.4%.
 
-The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
-
-Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
-
-From the extract, Inventory = 230 and current assets = 449. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Inventory}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{230}{449}
-$$
-
-$$
-Share = 51.2\%
-$$
-
-Threshold: more than 46.9%. Actual 51.2%.
-
-Reading the arithmetic against the claim: actual share 51.2% matches ''more than 46.9%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
-
-Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
-
-From the extract, Trade receivables = 140 and current assets = 449. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Trade receivables}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{140}{449}
-$$
-
-$$
-Share = 31.2\%
-$$
-
-Threshold: less than 46.6%. Actual 31.2%.
-
-Reading the arithmetic against the claim: actual share 31.2% matches ''less than 46.6%'' so the statement holds.
-
-The statement is true.', 'TRUE — Long-term financing is equity plus non-current liabilities; the claim compares that pool with non-current assets.
-
-Name the identity in words: surplus = (equity + non-current liabilities) ÷ non-current assets − 1.
-
-$$
-\text{Equity} + \text{NCL} = 577 + 461 = 1,038
-$$
-
-$$
-\text{NCA} = 778
-$$
-
-$$
-\frac{1,038}{778} - 1 = 33.4\%
-$$
-
-Threshold: more than 30.8%. Actual surplus 33.4%.
-
-Reading the arithmetic against the claim: the surplus is 33.4%, which exceeds 30.8% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.012' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary-market price rises do not raise new company cash.
 
-The wording matches the relevant rule for "Asset and Inventory Turnover 13". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the high…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Receivables turnover shows how many times revenue covers average trade receivables.
+The statement is true.', 'Receivables turnover ≈ 10.52.
 
-Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Avg receivables} = \frac{115 + 123}{2} = 119
-$$
+The statement is true.', 'Average inventory are about 19.1% of average total assets.
 
-$$
-RT = \frac{1,252}{119} = 10.5210
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Threshold: exceeds 7.21. Actual 10.52.
+The statement is true.', 'High turnover signals faster stock rotation.
 
-Reading the arithmetic against the claim: receivables turnover 10.52 exceeds 7.21 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
+The statement is true.', 'Inventory changed by about 51.9% between the two years.
 
-Name the identity in words: average-inventory share = average inventory ÷ average total assets.
-
-$$
-\text{Avg inventory} = \frac{129 + 196}{2} = 162.5
-$$
-
-$$
-\text{Avg assets} = \frac{763 + 942}{2} = 852.5
-$$
-
-$$
-\frac{162.5}{852.5} = 19.1\%
-$$
-
-Threshold: less than 19.7%. Actual 19.1%.
-
-Reading the arithmetic against the claim: the share is 19.1% versus ''less than 19.7%'' so the statement holds.
-
-The statement is true.', 'TRUE — Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.
-
-Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
-
-$$
-\text{Avg inventory} = \frac{129 + 196}{2} = 162.5
-$$
-
-$$
-IT = \frac{869}{162.5} = 5.35
-$$
-
-That reading matches the definition used in the claim.
-
-Reading the arithmetic against the claim: inventory turnover is about 5.35, consistent with the stated interpretation so the statement holds.
-
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
-
-The wording matches the relevant rule for "Asset and Inventory Turnover 13". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Inventory grew by more than 32.9% between Year 1 and Year 2."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.013' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Return on equity relates profit before interest and tax to equity, not cash to liabilities.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Return on equity is calculated by comparing a business''s cash balance with its total liabilities rather than relating profit to equity."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'The debt ratio is total liabilities expressed as a percentage of total assets.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The debt ratio expresses total liabilities as a percentage of total assets, showing what proportion of the asset base has been financed through borrowing."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Equity and liabilities financing the same total assets means the equity ratio and debt ratio move inversely.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Because equity and liabilities together finance the whole of the balance sheet, the equity ratio and the debt ratio move in opposite directions as one rises the other falls correspondingly."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Risk borne by owners is precisely what makes a low return on equity potentially unacceptable.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A low return on equity is always acceptable regardless of how much risk the owners have taken on by investing in the business."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Return on capital employed relates profit to long-term capital employed, not to inventory levels.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Return on capital employed relates profit before interest and tax to inventory levels rather than to the long-term capital financing the business."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.014' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A rising debt ratio reflects greater borrowing reliance and higher financial risk for owners.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A rising debt ratio generally signals greater reliance on borrowed funds and, with it, increased financial risk for the owners of the business."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Capital employed is approximated by adding non-current liabilities to equity, not subtracting them.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Capital employed is calculated by subtracting non-current liabilities from equity rather than adding the two together."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Liquidity, profitability, financial efficiency and financial structure are the four broad analytical questions.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Financial statement analysis is commonly organised around four broad questions: whether a business can pay its short-term obligations, whether it is sufficiently profitable, how efficiently it uses…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Meeting short-term obligations on time is the focus of liquidity analysis.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Liquidity analysis is primarily concerned with whether a business can meet its short-term obligations as they fall due."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Relating profit to equity or capital employed, not viewing it alone, is the essence of profitability analysis.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Profitability analysis judges profit not in isolation but in relation to the size of the equity or capital employed that generated it."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.015' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Return on capital employed gains meaning chiefly from comparison over time or with peers, not in isolation.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A single return on capital employed figure is always fully meaningful on its own and requires no comparison with other years or similar businesses."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Mixing different profit definitions across a comparison distorts rather than clarifies the result.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Comparing return measures calculated using different definitions of profit across two businesses always produces a fair and reliable comparison."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Converting assets into revenue effectively is the focus of financial efficiency analysis.
 
-The wording matches the relevant rule for "Liquidity Through the Current Ratio in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Financial efficiency analysis asks how effectively a business converts the assets it holds into revenue."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Asset turnover relates revenue to average assets, not profit to assets.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Asset turnover relates profit for the year to average total assets rather than relating revenue to those assets."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Asset turnover falls, rather than rises, if added assets are not matched by proportional revenue growth.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity Through the Current Ratio in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Asset turnover automatically rises whenever a business adds more assets, regardless of what happens to revenue."
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.016' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Equity ratio = total equity / total assets.
 
-Name the identity in words: equity ratio = equity ÷ total assets.
+481 / 1043 ≈ 46.1%
 
-From the extract, equity = 481 and total assets = 1,043. Plug the figures step by step:
+The claim says the ratio below 39.4%. We have about 46.1%, which does not match that comparison.
 
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
+The statement is false.', 'Secondary-market price rises do not raise new company cash.
 
-$$
-ER = \frac{481}{1,043}
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-ER = 46.1\%
-$$
+The statement is true.', 'Current assets gather the short-term asset lines:
 
-Claimed: is below 39.4%. Actual 46.1%.
+Inventory (96) + Trade receivables (130) + Cash and cash equivalents (114)
+= 340
 
-Reading the arithmetic against the claim: actual equity ratio 46.1% does not match ''is below 39.4%'' so the statement does not hold.
+Current liabilities gather the short-term claims:
 
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+Trade payables (133) + Bank overdraft (61)
+= 194
 
-The wording matches the relevant rule for "Balance Sheet Structure Review 17". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation''s cash reserves."
+Current ratio = 340 / 194 ≈ 1.75
 
-The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The claim says the ratio exceeds 1.09. We have about 1.75, which matches that comparison.
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+The statement is true.', 'Apply the case evidence: Debt ratio ≈ 53.9%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
 
-Build current assets and current liabilities from the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-CA = 96 + 130 + 114 = 340
-$$
+The statement is false.', 'Inventory are about 28.2% of current assets.
 
-$$
-CL = 133 + 61 = 194
-$$
-
-$$
-\text{Current ratio} = \frac{340}{194} = 1.7526
-$$
-
-Claimed: exceeds 1.09. Actual 1.75.
-
-Reading the arithmetic against the claim: actual current ratio 1.75 versus ''exceeds 1.09'' so the statement holds.
-
-The statement is true.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: debt ratio = debt ÷ total assets.
-
-From the extract, debt = 562 and total assets = 1,043. Plug the figures step by step:
-
-$$
-DR = \frac{\text{debt}}{\text{total assets}}
-$$
-
-$$
-DR = \frac{562}{1,043}
-$$
-
-$$
-DR = 53.9\%
-$$
-
-Claimed: exceeds 76.9%. Actual 53.9%.
-
-Reading the arithmetic against the claim: actual debt ratio 53.9% does not match ''exceeds 76.9%'' so the statement does not hold.
-
-The statement is false.', 'FALSE — This is a composition claim: express Inventory as a percentage of current assets.
-
-Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
-
-From the extract, Inventory = 96 and current assets = 340. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Inventory}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{96}{340}
-$$
-
-$$
-Share = 28.2\%
-$$
-
-Threshold: more than 31%. Actual 28.2%.
-
-Reading the arithmetic against the claim: actual share 28.2% does not match ''more than 31%'' so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.017' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Asset turnover shows how many times revenue covers average total assets over the year.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Asset turnover ≈ 1.10.
 
-Name the identity in words: asset turnover = revenue ÷ average total assets.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Avg assets} = \frac{886 + 933}{2} = 909.5
-$$
+The statement is false.', 'Receivables turnover ≈ 8.10.
 
-$$
-AT = \frac{996}{909.5} = 1.0951
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Claimed above 1.29. Actual 1.10.
+The statement is false.', 'Common shares vote; preferred shares usually emphasise dividend priority.
 
-Reading the arithmetic against the claim: asset turnover 1.10 versus ''above 1.29'' so the statement does not hold.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
+The statement is true.', 'Average inventory are about 18.1% of average total assets.
 
-Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Avg receivables} = \frac{99 + 147}{2} = 123
-$$
+The statement is false.', 'From the figures or classification rule involved, revenue = 996. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
 
-$$
-RT = \frac{996}{123} = 8.0976
-$$
-
-Threshold: exceeds 9.83. Actual 8.10.
-
-Reading the arithmetic against the claim: receivables turnover 8.10 does not exceed 9.83 so the statement does not hold.
-
-The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
-
-The wording matches the relevant rule for "Turnover and Liquidity Extract 18". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Voting rights ordinarily attach to common shares, while preferred shareholders usually accept limited voting rights in return for a preferential dividend."
-
-The statement is true.', 'FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
-
-Name the identity in words: average-inventory share = average inventory ÷ average total assets.
-
-$$
-\text{Avg inventory} = \frac{136 + 194}{2} = 165
-$$
-
-$$
-\text{Avg assets} = \frac{886 + 933}{2} = 909.5
-$$
-
-$$
-\frac{165}{909.5} = 18.1\%
-$$
-
-Threshold: less than 13.2%. Actual 18.1%.
-
-Reading the arithmetic against the claim: the share is 18.1% versus ''less than 13.2%'' so the statement does not hold.
-
-The statement is false.', 'FALSE — Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.
-
-From the extract:
-
-$$
-\text{Revenue} = €996\text{ thousand}
-$$
-
-The statement claims revenue exceeds €1,029 thousand. Actual revenue is €996 thousand, which does not exceed that level.
-
-Reading the arithmetic against the claim: revenue €996k does not exceed €1,029k so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.018' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The owner-versus-lender funding balance is the focus of financial structure analysis.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Financial structure analysis examines the balance between funds contributed by owners and funds borrowed from lenders."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Peer comparison provides a benchmark an isolated ratio figure lacks.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Comparing a business''s ratios with those of close competitors in the same industry provides a benchmark that a single isolated figure cannot offer."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Multi-year tracking reveals trends a single year''s figure would hide.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Tracking the same ratio for one business across several consecutive years can reveal a trend that a single year''s figure would conceal."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Cross-industry benchmarks applied without adjustment can mislead.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Applying liquidity or gearing benchmarks drawn from an unrelated industry to a business in a very different sector can produce a misleading assessment."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'A rounded assessment combines all four analytical dimensions rather than relying on one ratio.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Because liquidity, profitability, financial efficiency and financial structure each capture a different dimension of performance, a rounded assessment of a business draws on all four rather than an…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.019' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['These match the textbook motives for buying shares.
 
-The wording matches the relevant rule for "Turnover and Liquidity Extract 20". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
+The statement is true.', 'Inventory turnover ≈ 3.99.
 
-Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Avg inventory} = \frac{158 + 155}{2} = 156.5
-$$
+The statement is true.', 'Asset turnover ≈ 1.00.
 
-$$
-IT = \frac{625}{156.5} = 3.9936
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Claimed below 6.24. Actual 3.99.
+The statement is false.', 'Receivables turnover ≈ 7.30.
 
-Reading the arithmetic against the claim: inventory turnover 3.99 versus ''below 6.24'' so the statement holds.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — Asset turnover shows how many times revenue covers average total assets over the year.
+The statement is false.', 'High turnover signals faster stock rotation.
 
-Name the identity in words: asset turnover = revenue ÷ average total assets.
-
-$$
-\text{Avg assets} = \frac{836 + 972}{2} = 904
-$$
-
-$$
-AT = \frac{901}{904} = 0.9967
-$$
-
-Claimed above 1.18. Actual 1.00.
-
-Reading the arithmetic against the claim: asset turnover 1.00 versus ''above 1.18'' so the statement does not hold.
-
-The statement is false.', 'FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
-
-Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
-
-$$
-\text{Avg receivables} = \frac{113 + 134}{2} = 123.5
-$$
-
-$$
-RT = \frac{901}{123.5} = 7.2955
-$$
-
-Threshold: exceeds 10.47. Actual 7.30.
-
-Reading the arithmetic against the claim: receivables turnover 7.30 does not exceed 10.47 so the statement does not hold.
-
-The statement is false.', 'TRUE — Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.
-
-Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
-
-$$
-\text{Avg inventory} = \frac{158 + 155}{2} = 156.5
-$$
-
-$$
-IT = \frac{625}{156.5} = 3.99
-$$
-
-That reading matches the definition used in the claim.
-
-Reading the arithmetic against the claim: inventory turnover is about 3.99, consistent with the stated interpretation so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.020' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current assets = 387
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 222
 
-$$
-CA = 166 + 107 + 114 = 387
-$$
+Current ratio = 387 / 222 ≈ 1.74
 
-$$
-CL = 152 + 70 = 222
-$$
+The claim says the ratio exceeds 1.86. We have about 1.74, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{387}{222} = 1.7432
-$$
+The statement is false.', 'Equity ratio = total equity / total assets.
 
-Claimed: exceeds 1.86. Actual 1.74.
+685 / 1197 ≈ 57.2%
 
-Reading the arithmetic against the claim: actual current ratio 1.74 versus ''exceeds 1.86'' so the statement does not hold.
+The claim says the ratio below 27.7%. We have about 57.2%, which does not match that comparison.
 
-The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+The statement is false.', 'Secondary trading does not raise new company funds.
 
-Name the identity in words: equity ratio = equity ÷ total assets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-From the extract, equity = 685 and total assets = 1,197. Plug the figures step by step:
+The statement is true.', 'Apply the case evidence: Debt ratio ≈ 42.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
 
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-ER = \frac{685}{1,197}
-$$
+The statement is false.', 'Buildings are about 39.3% of total assets.
 
-$$
-ER = 57.2\%
-$$
-
-Claimed: is below 27.7%. Actual 57.2%.
-
-Reading the arithmetic against the claim: actual equity ratio 57.2% does not match ''is below 27.7%'' so the statement does not hold.
-
-The statement is false.', 'TRUE — On a stock exchange, existing shares change hands between investors.
-
-That transfer does not raise new capital for the issuer; fresh equity cash comes only from primary issues or similar company transactions.
-
-Using the stem facts: "Secondary-market trading changes who owns the shares; it does not, by itself, inject fresh equity cash into the issuing company."
-
-Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
-
-The statement is true.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: debt ratio = debt ÷ total assets.
-
-From the extract, debt = 512 and total assets = 1,197. Plug the figures step by step:
-
-$$
-DR = \frac{\text{debt}}{\text{total assets}}
-$$
-
-$$
-DR = \frac{512}{1,197}
-$$
-
-$$
-DR = 42.8\%
-$$
-
-Claimed: exceeds 54.7%. Actual 42.8%.
-
-Reading the arithmetic against the claim: actual debt ratio 42.8% does not match ''exceeds 54.7%'' so the statement does not hold.
-
-The statement is false.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
-
-Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
-
-From the extract, Buildings = 471 and total assets = 1,197. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Buildings}}{\text{total assets}}
-$$
-
-$$
-Share = \frac{471}{1,197}
-$$
-
-$$
-Share = 39.3\%
-$$
-
-Threshold: more than 44.2%. Actual 39.3%.
-
-Reading the arithmetic against the claim: actual share 39.3% does not match ''more than 44.2%'' so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.021' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Large seasonal inventory can widen the gap between the acid-test ratio and the current ratio without implying a liquidity problem.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A business carrying large seasonal inventories can show a materially lower acid-test ratio than its current ratio would suggest, even when its overall liquidity position is otherwise adequate."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Loan agreements can embed minimum liquidity or gearing ratios as ongoing risk monitors.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Lenders sometimes write minimum liquidity or gearing requirements into loan agreements, using ratios such as the current ratio or the debt ratio to monitor ongoing risk."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Fast cash collection ahead of supplier payment can make negative working capital manageable rather than distressed.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Negative working capital is not automatically a sign of financial distress for a business that collects cash from customers well before it must pay its own suppliers."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Profit tied up in inventory or receivables, rather than cash, can still leave a business facing a liquidity squeeze.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A business can report a profit for the year and still face a liquidity squeeze if that profit is tied up in inventory or receivables rather than held as cash."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Both return measures use profit before interest and tax but divide it by different capital bases.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity and return on capital employed both start from profit before interest and tax but relate it to a different capital base, owners'' equity in one case and total long-term capital in t…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.022' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Inventory turnover and asset turnover need not move together, since they relate to different parts of the asset base.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A firm''s inventory turnover and asset turnover can move in different directions in the same year if inventory management improves while overall investment in non-current assets expands."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'A single year-end balance can distort turnover ratios, which is exactly why averages are preferred.
 
-Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Using a single year-end balance instead of an average figure never distorts a turnover ratio calculation."
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Inventory turnover uses cost of sales relative to average inventory, not revenue.
 
-Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory turnover relates revenue to average inventory rather than relating cost of sales to average inventory."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Higher inventory turnover indicates faster stock rotation and less money tied up, not more.
 
-Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A higher inventory turnover figure generally indicates that more money is being tied up in unsold stock for longer periods."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Inventory turnover is conventionally expressed as a number of times per year, not in currency units.
 
-Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory turnover is always expressed in currency units rather than as a number of times per year."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.023' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The standard working capital definition applies to a supermarket chain: current assets minus current liabilities.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital for a supermarket chain is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Positive working capital is generally preferable for a supermarket chain as a cushion over short-term obligations.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A supermarket chain is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'Current ratio analysis for a supermarket chain compares current assets with current liabilities.
 
-The wording matches the relevant rule for "The Acid-Test Liquidity Check Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio for a supermarket chain sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is true.', 'The equity ratio is equity, not liabilities, expressed as a percentage of total assets; that description matches the debt ratio instead.
 
-Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The equity ratio expresses total liabilities as a percentage of total assets rather than expressing equity as a percentage of total assets."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Because equity and liabilities finance the same total assets, the equity ratio and debt ratio move inversely, not together.
 
-Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The equity ratio and the debt ratio always move in the same direction, both rising or both falling together."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.5.024' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Collection days convert receivables turnover into an approximate outstanding period.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Average collection period ≈ 40 days.
 
-Name the identity in words: collection days ≈ 365 ÷ receivables turnover.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-RT = \frac{1,288}{140} = 9.2000
-$$
+The statement is false.', 'Inventory changed by about 32.7% between the two years.
 
-$$
-\text{Days} = \frac{365}{9.2000} = 39.7
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Threshold: more than 53 days. Actual 40 days.
+The statement is false.', 'Trade receivables moved from 140 to 140.
 
-Reading the arithmetic against the claim: collection days 40 do not exceed 53 so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+The statement is false.', 'Secondary trading does not raise new company funds.
 
-Absolute or misapplied wording conflicts with the rule for "Asset and Inventory Turnover 25". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory grew by more than 36.8% between Year 1 and Year 2."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'FALSE — Receivables growth compares ending with beginning trade receivables.
+The statement is true.', 'Asset turnover ≈ 1.40.
 
-Name the identity in words: growth = (ending − beginning) ÷ beginning.
-
-$$
-R_{0} = 140, \quad R_{1} = 140
-$$
-
-$$
-\frac{140 - 140}{140} = 0.0\%
-$$
-
-Threshold: more than 19.4%. Actual 0.0%.
-
-Reading the arithmetic against the claim: growth 0.0% does not exceed 19.4% so the statement does not hold.
-
-The statement is false.', 'TRUE — On a stock exchange, existing shares change hands between investors.
-
-That transfer does not raise new capital for the issuer; fresh equity cash comes only from primary issues or similar company transactions.
-
-Using the stem facts: "Secondary-market trading changes who owns the shares; it does not, by itself, inject fresh equity cash into the issuing company."
-
-Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
-
-The statement is true.', 'TRUE — Asset turnover shows how many times revenue covers average total assets over the year.
-
-Name the identity in words: asset turnover = revenue ÷ average total assets.
-
-$$
-\text{Avg assets} = \frac{790 + 1,050}{2} = 920
-$$
-
-$$
-AT = \frac{1,288}{920} = 1.4000
-$$
-
-Claimed above 1.14. Actual 1.40.
-
-Reading the arithmetic against the claim: asset turnover 1.40 versus ''above 1.14'' so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.5.025' AND tier = 'full';

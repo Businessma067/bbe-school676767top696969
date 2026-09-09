@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EnglishTasksPage } from "@/components/EnglishTasksPage";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/demo-practice/english")({
   head: () => ({
@@ -10,6 +11,12 @@ export const Route = createFileRoute("/demo-practice/english")({
         name: "description",
         content: "Reading, Grammar and Vocabulary practice for the WU BBE entrance exam.",
       },
+      { property: "og:title", content: "English Tasks — BBE School" },
+      {
+        property: "og:description",
+        content: "Reading, Grammar and Vocabulary practice for the WU BBE entrance exam.",
+      },
+      ...socialImageMetaForPath("/demo-practice/english"),
     ],
   }),
   component: DemoEnglishTasks,

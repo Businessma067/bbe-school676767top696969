@@ -302,6 +302,255 @@ function normalizeBrokenMathMarkup(input: string): string {
   return s;
 }
 
+/**
+ * Display lines that continue a prior equation (lone `= −2`, `\approx 1.23`, …).
+ * Used so KaTeX does not center each fragment on its own airy row.
+ */
+const RELATION_CONTINUATION_RE =
+  /^(?:=|\\approx\b|\\simeq\b|\\sim\b|\\cong\b|\\equiv\b|\\neq\b|\\ne\b|\\le\b|\\leq\b|\\leqslant\b|\\leqq\b|\\ge\b|\\geq\b|\\geqslant\b|\\geqq\b|\\ll\b|\\gg\b|\\propto\b|\\iff\b|\\implies\b|\\Rightarrow\b|\\Leftrightarrow\b|\\rightarrow\b|\\longrightarrow\b|\\to\b|\\mapsto\b|\\leftarrow\b|\\longleftarrow\b|<|>)/;
+
+export function isRelationContinuationBody(body: string): boolean {
+  return RELATION_CONTINUATION_RE.test(body.trim());
+}
+
+/** Already a multi-line KaTeX stack — do not wrap again. */
+function isStackedMathBody(body: string): boolean {
+  return /\\begin\{(?:aligned|align\*?|gather\*?|gathered|eqnarray\*?|array)\}/.test(body);
+}
+
+/**
+ * Short single-step displays (memberships, tiny intermediates). Long formulas
+ * keep the airy single-equation layout.
+ */
+function isCompactDisplayBody(body: string): boolean {
+  const t = body.trim();
+  if (!t || isStackedMathBody(t) || /\\begin\{/.test(t)) return false;
+  return t.replace(/\s+/g, " ").length <= 88;
+}
+
+/** Minimum consecutive short displays before stacking into gather*. */
+const DENSE_SHORT_DISPLAY_MIN = 3;
+
+/**
+ * Turn a chain like
+ *   $$\varepsilon=\dfrac{…}{20}$$
+ *   $$=-2$$
+ * into one left-aligned `aligned` block so KaTeX does not center a lone `= -2`.
+ */
+function formatAlignedContinuationChain(bodies: string[]): string {
+  const lines: string[] = [];
+  for (let k = 0; k < bodies.length; k++) {
+    const raw = bodies[k].trim();
+    if (!raw) continue;
+    if (k === 0) {
+      lines.push(toAlignedFirstLine(raw));
+    } else if (/^\s*=/.test(raw)) {
+      lines.push(`&${raw}`);
+    } else {
+      lines.push(`& ${raw}`);
+    }
+  }
+  return `\\begin{aligned}\n${lines.join(" \\\\\n")}\n\\end{aligned}`;
+}
+
+function formatGatherBlock(bodies: string[]): string {
+  return `\\begin{gather*}\n${bodies.map((b) => b.trim()).filter(Boolean).join(" \\\\\n")}\n\\end{gather*}`;
+}
+
+/** Put `&=` on the first top-level equals so the chain lines up. */
+function toAlignedFirstLine(s: string): string {
+  let depth = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i]!;
+    if (c === "{" || c === "(") depth += 1;
+    else if (c === "}" || c === ")") depth = Math.max(0, depth - 1);
+    else if (c === "=" && depth === 0) {
+      if (i > 0 && s[i - 1] === "\\") continue;
+      const before = s.slice(0, i).replace(/\s+$/, "");
+      if (
+        /\\(?:neq|leq|geq|eq|approx|equiv|sim|cong|leqslant|geqslant|doteq|coloneqq)$/.test(
+          before,
+        )
+      ) {
+        continue;
+      }
+      return `${s.slice(0, i).trimEnd()} &=${s.slice(i + 1)}`;
+    }
+  }
+  return `& ${s}`;
+}
+
+function coalesceContinuationDisplays(parts: Part[]): Part[] {
+  const afterRelations = coalesceRelationContinuationDisplays(parts);
+  return coalesceDenseShortDisplays(afterRelations);
+}
+
+function coalesceRelationContinuationDisplays(parts: Part[]): Part[] {
+  const out: Part[] = [];
+  let i = 0;
+  while (i < parts.length) {
+    const p = parts[i]!;
+    if (p.type !== "display") {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+
+    const bodies = [p.value];
+    let j = i + 1;
+    let end = j;
+    while (j < parts.length) {
+      const mid = parts[j]!;
+      if (mid.type === "text" && mid.value.trim() === "") {
+        j += 1;
+        continue;
+      }
+      if (mid.type === "display" && isRelationContinuationBody(mid.value)) {
+        bodies.push(mid.value);
+        j += 1;
+        end = j;
+        continue;
+      }
+      break;
+    }
+
+    if (bodies.length > 1) {
+      out.push({ type: "display", value: formatAlignedContinuationChain(bodies) });
+      i = end;
+    } else {
+      out.push(p);
+      i += 1;
+    }
+  }
+  return out;
+}
+
+/** Stack runs of many tiny display fragments into one gather* block. */
+function coalesceDenseShortDisplays(parts: Part[]): Part[] {
+  const out: Part[] = [];
+  let i = 0;
+  while (i < parts.length) {
+    const p = parts[i]!;
+    if (p.type !== "display" || !isCompactDisplayBody(p.value)) {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+
+    const bodies = [p.value];
+    let j = i + 1;
+    let end = j;
+    while (j < parts.length) {
+      const mid = parts[j]!;
+      if (mid.type === "text" && mid.value.trim() === "") {
+        j += 1;
+        continue;
+      }
+      if (mid.type === "display" && isCompactDisplayBody(mid.value)) {
+        bodies.push(mid.value);
+        j += 1;
+        end = j;
+        continue;
+      }
+      break;
+    }
+
+    if (bodies.length >= DENSE_SHORT_DISPLAY_MIN) {
+      out.push({ type: "display", value: formatGatherBlock(bodies) });
+      i = end;
+    } else {
+      // Keep originals (with any blank text parts between) when the run is short.
+      out.push(p);
+      i += 1;
+    }
+  }
+  return out;
+}
+
+/** True when a paragraph is only a display-math block (optional trailing punct). */
+export function isSoleDisplayMathParagraph(trimmed: string): boolean {
+  return /^\$\$[\s\S]+\$\$[.,:;!?]*$/.test(trimmed.trim());
+}
+
+function extractSoleDisplayBody(para: string): string {
+  const t = para.trim();
+  const m = t.match(/^\$\$([\s\S]+)\$\$[.,:;!?]*$/);
+  return (m?.[1] ?? t).trim();
+}
+
+function mergeRelationContinuationParagraphs(paragraphs: string[]): string[] {
+  const out: string[] = [];
+  let i = 0;
+  while (i < paragraphs.length) {
+    const p = paragraphs[i]!;
+    if (!isSoleDisplayMathParagraph(p)) {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+    const bodies = [extractSoleDisplayBody(p)];
+    let j = i + 1;
+    while (
+      j < paragraphs.length &&
+      isSoleDisplayMathParagraph(paragraphs[j]!) &&
+      isRelationContinuationBody(extractSoleDisplayBody(paragraphs[j]!))
+    ) {
+      bodies.push(extractSoleDisplayBody(paragraphs[j]!));
+      j += 1;
+    }
+    if (bodies.length === 1) {
+      out.push(p);
+    } else {
+      out.push(`$$\n${formatAlignedContinuationChain(bodies)}\n$$`);
+    }
+    i = j;
+  }
+  return out;
+}
+
+/**
+ * Stack ≥3 consecutive short sole-display paragraphs into one gather* so
+ * membership checklists and tiny intermediates are not each given a large gap.
+ */
+function mergeDenseShortDisplayParagraphs(paragraphs: string[]): string[] {
+  const out: string[] = [];
+  let i = 0;
+  while (i < paragraphs.length) {
+    const p = paragraphs[i]!;
+    if (!isSoleDisplayMathParagraph(p) || !isCompactDisplayBody(extractSoleDisplayBody(p))) {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+    let j = i + 1;
+    while (
+      j < paragraphs.length &&
+      isSoleDisplayMathParagraph(paragraphs[j]!) &&
+      isCompactDisplayBody(extractSoleDisplayBody(paragraphs[j]!))
+    ) {
+      j += 1;
+    }
+    if (j - i >= DENSE_SHORT_DISPLAY_MIN) {
+      const bodies = paragraphs.slice(i, j).map(extractSoleDisplayBody);
+      out.push(`$$\n${formatGatherBlock(bodies)}\n$$`);
+      i = j;
+    } else {
+      for (let k = i; k < j; k++) out.push(paragraphs[k]!);
+      i = j;
+    }
+  }
+  return out;
+}
+
+/**
+ * Merge consecutive blank-line-separated `$$…$$` paragraphs when later ones
+ * are relation continuations (`= …`, `\approx …`, …), then stack long runs of
+ * short displays into gather* (fixes floating `= -2` and airy membership lists).
+ */
+export function mergeContinuationDisplayParagraphs(paragraphs: string[]): string[] {
+  return mergeDenseShortDisplayParagraphs(mergeRelationContinuationParagraphs(paragraphs));
+}
+
 function splitMath(input: string): Part[] {
   const text = normalizeBrokenMathMarkup(
     input
@@ -387,7 +636,7 @@ function splitMath(input: string): Part[] {
   }
   flush();
   if (parts.length === 0) parts.push({ type: "text", value: text });
-  return parts;
+  return coalesceContinuationDisplays(parts);
 }
 
 /** Exported for stem audits / unit checks. */

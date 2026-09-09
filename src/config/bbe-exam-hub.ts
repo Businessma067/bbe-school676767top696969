@@ -11,7 +11,8 @@ export type BbeExamHubPath =
   | "/bbe-mathematics"
   | "/bbe-economics-english"
   | "/bbe-exam-preparation"
-  | "/bbe-admission";
+  | "/bbe-admission"
+  | "/bbe-vs-wiso";
 
 export type BbeExamNavItem = {
   label: string;
@@ -31,6 +32,7 @@ export const BBE_EXAM_SUBNAV: BbeExamNavItem[] = [
   },
   { label: "Preparation", shortLabel: "Prep", href: "/bbe-exam-preparation" },
   { label: "Admission", shortLabel: "Admission", href: "/bbe-admission" },
+  { label: "BBE vs WISO", shortLabel: "vs WISO", href: "/bbe-vs-wiso" },
 ];
 
 /** Breadcrumb labels for flat hub URLs (Home → BBE Exam → Page). */
@@ -41,6 +43,7 @@ export const BBE_EXAM_BREADCRUMB_LABELS: Record<string, string> = {
   "bbe-economics-english": "Economics & English",
   "bbe-exam-preparation": "How to Prepare",
   "bbe-admission": "Admission",
+  "bbe-vs-wiso": "BBE vs WISO",
 };
 
 export const BBE_EXAM_HUB_SEGMENTS = new Set(Object.keys(BBE_EXAM_BREADCRUMB_LABELS));
@@ -63,16 +66,16 @@ export const BBE_PRACTICE_ROUTES = {
  * Present as previous/latest; next cycle expected similar.
  */
 export const BBE_EXAM_FORMAT = {
-  questionCount: 34,
+  questionCount: 35,
   durationHours: 2,
   economicsQuestions: 10,
   englishQuestions: 11,
-  mathQuestions: 13,
-  /** Approximate score weighting — NOT share of questions. */
+  mathQuestions: 14,
+  /** Approximate score weighting from section point totals — NOT share of questions. */
   scoreWeighting: {
-    economics: "40%",
-    english: "20%",
-    mathematics: "40%",
+    economics: "37.5%",
+    english: "19%",
+    mathematics: "43%",
   },
   places: 240,
   location: "VIECON, Vienna Congress and Convention Center (Messe Wien)",
@@ -87,7 +90,7 @@ export const BBE_EXAM_FORMAT = {
 } as const;
 
 export const BBE_FORMAT_NOTE =
-  "The most recent BBE entrance exam had 34 questions over 2 hours. WU has used a similar structure in past cycles, though the university may adjust the selection procedure in future years.";
+  "The most recent BBE entrance exam had 35 questions over 2 hours. WU has used a similar structure in past cycles, though the university may adjust the selection procedure in future years.";
 
 export const MATH_TOPICS = [
   {

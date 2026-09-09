@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.7-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['High share in a low-growth market is a cash cow, not a question mark.
 
-On this stem (market share / growth): high share in a low-growth market is a cash cow, not a question mark.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Launch pricing for new garden tools can support introduction-stage customer acquisition.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Launch pricing for new garden tools can support introduction-stage customer acquisition.
+The statement is true.', 'Website plus retailer partners blend online place with indirect distribution for garden tools.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'Seasonal events for garden tools are promotional sales-promotion activities.
 
-Website plus retailer partners blend online place with indirect distribution for garden tools.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'New variants within one pet food line illustrate line extension deepening the line.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Seasonal events for garden tools are promotional sales-promotion activities.
+The statement is true.'] WHERE case_id = 'CASE 5.7.51' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Social-media promotion is a promotional tool, not a place or warehouse decision.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is false.', 'Charm pricing is a psychological pricing tool within the price p.
 
-On this stem (line extension / product line): new variants within one pet food line illustrate line extension deepening the line.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'The product p includes services as well as goods offered by the business.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.51' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Social-media promotion is a promotional tool, not a place or warehouse decision.
+The statement is false.', 'A separate pet food line added to the portfolio is mix extension increasing width.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'Brands serve as a guarantee of stable quality maintained across markets.
 
-Charm pricing is a psychological pricing tool within the price p.
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.'] WHERE case_id = 'CASE 5.7.52' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Packaging colour changes for pet food exemplify minor relaunch alteration.
 
-The statement is false.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The product p includes services as well as goods offered by the business.
+The statement is true.', 'Wholesaler channels indicate indirect distribution, not direct.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The absolute wording "exclusively" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is false.', 'Low introductory pricing aligns with penetration or launch pricing, not skimming.
 
-On this stem (product line / mix extension): a separate pet food line added to the portfolio is mix extension increasing width.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Eliminating a weak pet food variant is product-mix contraction.
 
-The statement is true.
-', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Brands serve as a guarantee of stable quality maintained across markets.
+The statement is true.', 'Brand symbols on pet food support differentiation within the product element.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.52' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.'] WHERE case_id = 'CASE 5.7.53' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Launch pricing for new pet food can support introduction-stage customer acquisition.
 
-Packaging colour changes for pet food exemplify minor relaunch alteration.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Website plus retailer partners blend online place with indirect distribution for pet food.
 
-The statement is true.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Wholesaler channels indicate indirect distribution, not direct.
+The statement is true.', 'Seasonal events for pet food are promotional sales-promotion activities.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'New variants within one skincare creams line illustrate line extension deepening the line.
 
-Low introductory pricing aligns with penetration or launch pricing, not skimming.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'A separate skincare creams line added to the portfolio is mix extension increasing width.
 
-The statement is false.
-', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Eliminating a weak pet food variant is product-mix contraction.
+The statement is true.'] WHERE case_id = 'CASE 5.7.54' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Packaging colour changes for skincare creams exemplify minor relaunch alteration.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+The statement is true.', 'Eliminating a weak skincare creams variant is product-mix contraction.
 
-Brand symbols on pet food support differentiation within the product element.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Elimination after failed relaunch is contraction, not expansion.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.53' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Launch pricing for new pet food can support introduction-stage customer acquisition.
+The statement is false.', 'High share in a low-growth market is a cash cow, not a question mark.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is false.', 'Social-media promotion is a promotional tool, not a place or warehouse decision.
 
-Website plus retailer partners blend online place with indirect distribution for pet food.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.'] WHERE case_id = 'CASE 5.7.55' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Brand symbols on skincare creams support differentiation within the product element.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Seasonal events for pet food are promotional sales-promotion activities.
+The statement is true.', 'Launch pricing for new skincare creams can support introduction-stage customer acquisition.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.', 'Website plus retailer partners blend online place with indirect distribution for skincare creams.
 
-On this stem (line extension / product line): new variants within one skincare creams line illustrate line extension deepening the line.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Seasonal events for skincare creams are promotional sales-promotion activities.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (product line / mix extension): a separate skincare creams line added to the portfolio is mix extension increasing width.
+The statement is true.', 'New variants within one kitchen appliances line illustrate line extension deepening the line.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.54' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.'] WHERE case_id = 'CASE 5.7.56' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A separate kitchen appliances line added to the portfolio is mix extension increasing width.
 
-Packaging colour changes for skincare creams exemplify minor relaunch alteration.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Packaging colour changes for kitchen appliances exemplify minor relaunch alteration.
 
-The statement is true.
-', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Eliminating a weak skincare creams variant is product-mix contraction.
+The statement is true.', 'Eliminating a weak kitchen appliances variant is product-mix contraction.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.', 'Brand symbols on kitchen appliances support differentiation within the product element.
 
-On this stem (relaunch / mix extension): elimination after failed relaunch is contraction, not expansion.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Launch pricing for new kitchen appliances can support introduction-stage customer acquisition.
 
-The statement is false.
-', 'FALSE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (market share / growth): high share in a low-growth market is a cash cow, not a question mark.
+The statement is true.'] WHERE case_id = 'CASE 5.7.57' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Website plus retailer partners blend online place with indirect distribution for kitchen appliances.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'Seasonal events for kitchen appliances are promotional sales-promotion activities.
 
-Social-media promotion is a promotional tool, not a place or warehouse decision.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'New variants within one children''s toys line illustrate line extension deepening the line.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.55' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Brand symbols on skincare creams support differentiation within the product element.
+The statement is true.', 'A separate children''s toys line added to the portfolio is mix extension increasing width.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is true.', 'Packaging colour changes for children''s toys exemplify minor relaunch alteration.
 
-Launch pricing for new skincare creams can support introduction-stage customer acquisition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.7.58' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Charm pricing is a psychological pricing tool within the price p.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The absolute wording "exclusively" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Website plus retailer partners blend online place with indirect distribution for skincare creams.
+The statement is false.', 'Eliminating a weak children''s toys variant is product-mix contraction.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'Brand symbols on children''s toys support differentiation within the product element.
 
-Seasonal events for skincare creams are promotional sales-promotion activities.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'The product p includes services as well as goods offered by the business.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (line extension / product line): new variants within one kitchen appliances line illustrate line extension deepening the line.
+The statement is false.', 'Launch pricing for new children''s toys can support introduction-stage customer acquisition.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.56' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.'] WHERE case_id = 'CASE 5.7.59' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Website plus retailer partners blend online place with indirect distribution for children''s toys.
 
-On this stem (product line / mix extension): a separate kitchen appliances line added to the portfolio is mix extension increasing width.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Brands serve as a guarantee of stable quality maintained across markets.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Packaging colour changes for kitchen appliances exemplify minor relaunch alteration.
+The statement is false.', 'Seasonal events for children''s toys are promotional sales-promotion activities.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+The statement is true.', 'New variants within one bicycle accessories line illustrate line extension deepening the line.
 
-Eliminating a weak kitchen appliances variant is product-mix contraction.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'A separate bicycle accessories line added to the portfolio is mix extension increasing width.
 
-The statement is true.
-', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Brand symbols on kitchen appliances support differentiation within the product element.
+The statement is true.'] WHERE case_id = 'CASE 5.7.60' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Wholesaler channels indicate indirect distribution, not direct.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "exclusively" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is false.', 'Low introductory pricing aligns with penetration or launch pricing, not skimming.
 
-Launch pricing for new kitchen appliances can support introduction-stage customer acquisition.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Packaging colour changes for bicycle accessories exemplify minor relaunch alteration.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.57' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Website plus retailer partners blend online place with indirect distribution for kitchen appliances.
+The statement is true.', 'Elimination after failed relaunch is contraction, not expansion.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is false.', 'High share in a low-growth market is a cash cow, not a question mark.
 
-Seasonal events for kitchen appliances are promotional sales-promotion activities.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.'] WHERE case_id = 'CASE 5.7.61' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Eliminating a weak bicycle accessories variant is product-mix contraction.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (line extension / product line): new variants within one children''s toys line illustrate line extension deepening the line.
+The statement is true.', 'Brand symbols on bicycle accessories support differentiation within the product element.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.', 'Social-media promotion is a promotional tool, not a place or warehouse decision.
 
-On this stem (product line / mix extension): a separate children''s toys line added to the portfolio is mix extension increasing width.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Launch pricing for new bicycle accessories can support introduction-stage customer acquisition.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Packaging colour changes for children''s toys exemplify minor relaunch alteration.
+The statement is true.', 'Website plus retailer partners blend online place with indirect distribution for bicycle accessories.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.58' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.'] WHERE case_id = 'CASE 5.7.62' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Seasonal events for bicycle accessories are promotional sales-promotion activities.
 
-Charm pricing is a psychological pricing tool within the price p.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Introduction can show losses while development and launch costs dominate.
 
-The statement is false.
-', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Eliminating a weak children''s toys variant is product-mix contraction.
+The statement is true.', 'Charm pricing is a psychological pricing tool within the price p.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+The statement is false.', 'Introductory promotion spending supports early awareness building.
 
-Brand symbols on children''s toys support differentiation within the product element.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Growth-stage sales growth can outpace cost increases.
 
-The statement is true.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The product p includes services as well as goods offered by the business.
+The statement is true.'] WHERE case_id = 'CASE 5.7.63' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The product p includes services as well as goods offered by the business.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is false.', 'Brands serve as a guarantee of stable quality maintained across markets.
 
-Launch pricing for new children''s toys can support introduction-stage customer acquisition.
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Wholesaler channels indicate indirect distribution, not direct.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.59' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The absolute wording "exclusively" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Website plus retailer partners blend online place with indirect distribution for children''s toys.
+The statement is false.', 'Higher output in growth can lower average costs per unit.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+The statement is true.', 'Maturity is commonly the profit peak in the plc model.
 
-Brands serve as a guarantee of stable quality maintained across markets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.'] WHERE case_id = 'CASE 5.7.64' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Low introductory pricing aligns with penetration or launch pricing, not skimming.
 
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Seasonal events for children''s toys are promotional sales-promotion activities.
+The statement is false.', 'Mature markets face competitive price and promotion pressure.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.', 'Elimination after failed relaunch is contraction, not expansion.
 
-On this stem (line extension / product line): new variants within one bicycle accessories line illustrate line extension deepening the line.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Decline features declining sales as demand weakens.
 
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (product line / mix extension): a separate bicycle accessories line added to the portfolio is mix extension increasing width.
+The statement is true.', 'High share in a low-growth market is a cash cow, not a question mark.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.60' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+The statement is false.'] WHERE case_id = 'CASE 5.7.65' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Social-media promotion is a promotional tool, not a place or warehouse decision.
 
-Wholesaler channels indicate indirect distribution, not direct.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Declining sales in the final stage typically reduce profits.
 
-The statement is false.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Low introductory pricing aligns with penetration or launch pricing, not skimming.
+The statement is true.', 'Question marks combine low share with high growth.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.', 'Cost-plus pricing is a recognised price tool in the marketing mix.
 
-Packaging colour changes for bicycle accessories exemplify minor relaunch alteration.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Penetration pricing is a recognised price tool in the marketing mix.
 
-The statement is true.
-', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (relaunch / mix extension): elimination after failed relaunch is contraction, not expansion.
+The statement is true.'] WHERE case_id = 'CASE 5.7.66' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Charm pricing is a psychological pricing tool within the price p.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
+The statement is false.', 'Price skimming is a recognised price tool in the marketing mix.
 
-On this stem (market share / growth): high share in a low-growth market is a cash cow, not a question mark.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'The product p includes services as well as goods offered by the business.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.61' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Eliminating a weak bicycle accessories variant is product-mix contraction.
+The statement is false.', 'Brands serve as a guarantee of stable quality maintained across markets.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "guarantees" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+The statement is false.', 'Wholesaler channels indicate indirect distribution, not direct.
 
-Brand symbols on bicycle accessories support differentiation within the product element.
+The absolute wording "exclusively" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.'] WHERE case_id = 'CASE 5.7.67' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Low introductory pricing aligns with penetration or launch pricing, not skimming.
 
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Social-media promotion is a promotional tool, not a place or warehouse decision.
+The statement is false.', 'Competitive pricing is a recognised price tool in the marketing mix.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is true.', 'Psychological pricing is a recognised price tool in the marketing mix.
 
-Launch pricing for new bicycle accessories can support introduction-stage customer acquisition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Elimination after failed relaunch is contraction, not expansion.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Website plus retailer partners blend online place with indirect distribution for bicycle accessories.
+The statement is false.', 'High share in a low-growth market is a cash cow, not a question mark.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.62' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is false.'] WHERE case_id = 'CASE 5.7.68' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade discounts is a recognised price tool in the marketing mix.
 
-Seasonal events for bicycle accessories are promotional sales-promotion activities.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Social-media promotion is a promotional tool, not a place or warehouse decision.
 
-The statement is true.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (introduction / product life cycle): introduction can show losses while development and launch costs dominate.
+The statement is false.', 'Loyalty discounts is a recognised price tool in the marketing mix.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'Instalment terms is a recognised price tool in the marketing mix.
 
-Charm pricing is a psychological pricing tool within the price p.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Charm pricing is a psychological pricing tool within the price p.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The absolute wording "exclusively" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (introduction / product life cycle): introductory promotion spending supports early awareness building.
+The statement is false.'] WHERE case_id = 'CASE 5.7.69' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade discounts is a price tool with a distinct role described in the marketing-mix framework.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is false.', 'Direct distribution describes a place or distribution approach in the mix.
 
-On this stem (growth stage / product life cycle): growth-stage sales growth can outpace cost increases.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Loyalty discounts is a price tool with a distinct role described in the marketing-mix framework.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.63' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The product p includes services as well as goods offered by the business.
+The statement is false.', 'Instalment terms is a price tool with a distinct role described in the marketing-mix framework.
 
-Those restricting words stretch a limited idea past what marketing allows.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+The statement is false.', 'Competitive pricing is a price tool with a distinct role described in the marketing-mix framework.
 
-Brands serve as a guarantee of stable quality maintained across markets.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.'] WHERE case_id = 'CASE 5.7.70' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Indirect distribution describes a place or distribution approach in the mix.
 
-The statement is false.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Wholesaler channels indicate indirect distribution, not direct.
+The statement is true.', 'Cost-plus pricing is a price tool with a distinct role described in the marketing-mix framework.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is false.', 'Intensive distribution describes a place or distribution approach in the mix.
 
-On this stem (growth stage / product life cycle): higher output in growth can lower average costs per unit.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Selective distribution describes a place or distribution approach in the mix.
 
-The statement is true.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (maturity / product life cycle): maturity is commonly the profit peak in the plc model.
+The statement is true.', 'Exclusive distribution describes a place or distribution approach in the mix.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.64' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.'] WHERE case_id = 'CASE 5.7.71' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Online distribution describes a place or distribution approach in the mix.
 
-Low introductory pricing aligns with penetration or launch pricing, not skimming.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Advertising is a promotional tool within the marketing mix.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (maturity / product life cycle): mature markets face competitive price and promotion pressure.
+The statement is true.', 'Sales promotion is a promotional tool within the marketing mix.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
+The statement is true.', 'Intensive distribution relates to customer access within the place element.
 
-On this stem (relaunch / mix extension): elimination after failed relaunch is contraction, not expansion.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Personal selling is a promotional tool within the marketing mix.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (decline / product life cycle): decline features declining sales as demand weakens.
+The statement is true.'] WHERE case_id = 'CASE 5.7.72' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Public relations is a promotional tool within the marketing mix.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
+The statement is true.', 'Window displays is a promotional tool within the marketing mix.
 
-On this stem (market share / growth): high share in a low-growth market is a cash cow, not a question mark.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Social-media campaigns is a promotional tool within the marketing mix.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.65' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Social-media promotion is a promotional tool, not a place or warehouse decision.
+The statement is true.', 'Selective distribution relates to customer access within the place element.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'TRUE — The product life cycle models stages — introduction, growth, maturity, decline — with typical patterns of sales volume and profit or loss over time.
+The statement is false.', 'Research on students informs coordinated decisions across all four ps.
 
-On this stem (decline / product life cycle): declining sales in the final stage typically reduce profits.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.7.73' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Segment-focused promotion must align with product, price, and place for students.
 
-The statement is true.
-', 'TRUE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (question mark / market share): question marks combine low share with high growth.
+The statement is true.', 'Affordable price for students fits the core marketing-mix objective.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is true.', 'Familiar brands provide reassurance valued by students.
 
-Cost-plus pricing is a recognised price tool in the marketing mix.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Exclusive distribution relates to customer access within the place element.
 
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Penetration pricing is a recognised price tool in the marketing mix.
+The statement is false.', 'Online distribution relates to customer access within the place element.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.66' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+The statement is false.'] WHERE case_id = 'CASE 5.7.74' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Selective outlets can protect quality when targeting students.
 
-Charm pricing is a psychological pricing tool within the price p.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Complex offers to students can benefit from personal selling.
 
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Price skimming is a recognised price tool in the marketing mix.
+The statement is true.', 'Packaging relaunch can renew interest among students within alteration strategy.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
+The statement is true.', 'Budget variants for students deepen the line through line extension.
 
-The product p includes services as well as goods offered by the business.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Research on families with young children informs coordinated decisions across all four ps.
 
-The statement is false.
-', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Brands serve as a guarantee of stable quality maintained across markets.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
-
-Wholesaler channels indicate indirect distribution, not direct.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.67' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Low introductory pricing aligns with penetration or launch pricing, not skimming.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Competitive pricing is a recognised price tool in the marketing mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Psychological pricing is a recognised price tool in the marketing mix.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
-
-On this stem (relaunch / mix extension): elimination after failed relaunch is contraction, not expansion.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
-
-On this stem (market share / growth): high share in a low-growth market is a cash cow, not a question mark.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.68' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Trade discounts is a recognised price tool in the marketing mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Social-media promotion is a promotional tool, not a place or warehouse decision.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Loyalty discounts is a recognised price tool in the marketing mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Instalment terms is a recognised price tool in the marketing mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Charm pricing is a psychological pricing tool within the price p.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.69' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Trade discounts is a price tool with a distinct role described in the marketing-mix framework.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Direct distribution describes a place or distribution approach in the mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Loyalty discounts is a price tool with a distinct role described in the marketing-mix framework.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Instalment terms is a price tool with a distinct role described in the marketing-mix framework.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Competitive pricing is a price tool with a distinct role described in the marketing-mix framework.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.70' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Indirect distribution describes a place or distribution approach in the mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Cost-plus pricing is a price tool with a distinct role described in the marketing-mix framework.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Intensive distribution describes a place or distribution approach in the mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Selective distribution describes a place or distribution approach in the mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Exclusive distribution describes a place or distribution approach in the mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.71' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Online distribution describes a place or distribution approach in the mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Advertising is a promotional tool within the marketing mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Sales promotion is a promotional tool within the marketing mix.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
-
-Intensive distribution relates to customer access within the place element.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Personal selling is a promotional tool within the marketing mix.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.72' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Public relations is a promotional tool within the marketing mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Window displays is a promotional tool within the marketing mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Social-media campaigns is a promotional tool within the marketing mix.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Selective distribution relates to customer access within the place element.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Research on students informs coordinated decisions across all four ps.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.73' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Segment-focused promotion must align with product, price, and place for students.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Affordable price for students fits the core marketing-mix objective.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
-
-Familiar brands provide reassurance valued by students.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
-
-Exclusive distribution relates to customer access within the place element.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
-
-Online distribution relates to customer access within the place element.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.7.74' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
-
-Selective outlets can protect quality when targeting students.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
-
-Complex offers to students can benefit from personal selling.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
-
-On this stem (relaunch / product line): packaging relaunch can renew interest among students within alteration strategy.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
-
-On this stem (Line extension / product line): budget variants for students deepen the line through line extension.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
-
-Research on families with young children informs coordinated decisions across all four ps.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.7.75' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 5.7.75' AND tier = 'full';

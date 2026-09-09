@@ -11,6 +11,7 @@ import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
 import { BBE_EXAM_FORMAT, BBE_FORMAT_NOTE, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { cn } from "@/lib/utils";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 export const Route = createFileRoute("/bbe-admission")({
   head: () => ({
@@ -39,6 +40,7 @@ export const Route = createFileRoute("/bbe-admission")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...socialImageMetaForPath("/bbe-admission"),
     ],
   }),
   component: BbeAdmissionPage,

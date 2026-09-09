@@ -1,7 +1,12 @@
 import { memo, startTransition, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { Link } from "@tanstack/react-router";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
+import {
+  FlashcardMath,
+  indexOfUnescapedDollar,
+  mergeContinuationDisplayParagraphs,
+} from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
@@ -11,6 +16,13 @@ import {
   PracticeChaptersOpenButton,
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
@@ -47,7 +59,10 @@ import {
   Lock,
   PanelLeftClose,
   PanelLeftOpen,
+  Sparkles,
 } from "lucide-react";
+
+const FULL_COURSE_BUY_HREF = "/products/full-course";
 
 export type MathTasksTier = "demo" | "lite" | "full";
 
@@ -77,7 +92,9 @@ function saveProgress(p: Progress) {
 
 function phantomCountFor(tier: MathTasksTier): number {
   // Demo already has locked real placeholder slots past the free limit.
+  // Lite shows a short locked teaser after the unlock cap.
   if (tier === "demo") return 0;
+  if (tier === "lite") return 3;
   return 0;
 }
 
@@ -87,7 +104,12 @@ function isLocked(
   idx: number,
   tasks: MathTask[],
 ) {
-  if (tier !== "demo") return false;
+  if (tier === "full") return false;
+  if (tier === "lite") {
+    // Keep ~60% of each chapter for Lite (matches English Lite caps).
+    const unlockCount = Math.max(1, Math.floor(tasks.length * 0.6));
+    return idx >= unlockCount;
+  }
   return isDemoMathTaskLocked(chapter, idx, tasks);
 }
 
@@ -136,6 +158,11 @@ export function MathTasksPage({ tier }: Props) {
   const authGate = useAuthGate();
   const requireAuthForAnswers =
     tier === "demo" ? authGate.requireAuth : () => true;
+  const [unlockOpen, setUnlockOpen] = useState(false);
+
+  const openUnlockPrompt = () => {
+    if (tier === "demo") setUnlockOpen(true);
+  };
 
   useEffect(() => {
     setProgress(loadProgress());
@@ -397,7 +424,7 @@ export function MathTasksPage({ tier }: Props) {
     resetCaseIds(list.map((c) => c.id));
   };
 
-  const showTheory = tier !== "demo";
+  const showTheory = tier === "full";
 
   const closeChapterSubtopics = (chapterNum: number) => {
     const prefix = `${chapterNum}:`;
@@ -677,12 +704,19 @@ export function MathTasksPage({ tier }: Props) {
                                               <button
                                                 type="button"
                                                 onClick={() => {
+                                                  if (locked) {
+                                                    openUnlockPrompt();
+                                                    skipNextIdxResetRef.current = true;
+                                                    setTheoryChapter(null);
+                                                    setActiveChapter(ch.num);
+                                                    setActiveIdx(i);
+                                                    return;
+                                                  }
                                                   setTheoryChapter(null);
                                                   skipNextIdxResetRef.current = true;
                                                   setActiveChapter(ch.num);
                                                   setActiveIdx(i);
                                                 }}
-                                                disabled={locked}
                                                 style={
                                                   locked ? { opacity: lockedOpacity } : undefined
                                                 }
@@ -692,7 +726,7 @@ export function MathTasksPage({ tier }: Props) {
                                                     ? "font-semibold text-primary"
                                                     : "text-foreground hover:bg-secondary/60",
                                                   locked &&
-                                                    "cursor-not-allowed text-muted-foreground hover:bg-transparent",
+                                                    "text-muted-foreground hover:bg-secondary/40",
                                                 )}
                                               >
                                                 <span
@@ -761,12 +795,19 @@ export function MathTasksPage({ tier }: Props) {
                                     <button
                                       type="button"
                                       onClick={() => {
+                                        if (locked) {
+                                          openUnlockPrompt();
+                                          skipNextIdxResetRef.current = true;
+                                          setTheoryChapter(null);
+                                          setActiveChapter(ch.num);
+                                          setActiveIdx(i);
+                                          return;
+                                        }
                                         setTheoryChapter(null);
                                         skipNextIdxResetRef.current = true;
                                         setActiveChapter(ch.num);
                                         setActiveIdx(i);
                                       }}
-                                      disabled={locked}
                                       style={locked ? { opacity: lockedOpacity } : undefined}
                                       className={cn(
                                         "flex w-full items-center gap-2 px-3 py-1.5 pl-9 text-left text-xs transition-colors",
@@ -774,7 +815,7 @@ export function MathTasksPage({ tier }: Props) {
                                           ? "font-semibold text-primary"
                                           : "text-foreground hover:bg-secondary/60",
                                         locked &&
-                                          "cursor-not-allowed text-muted-foreground hover:bg-transparent",
+                                          "text-muted-foreground hover:bg-secondary/40",
                                       )}
                                     >
                                       <span
@@ -886,6 +927,16 @@ export function MathTasksPage({ tier }: Props) {
           </PracticeChaptersShell>
 
         <main className="min-w-0 flex-1" data-practice-surface>
+          {tier === "demo" && (
+            <Link
+              to={FULL_COURSE_BUY_HREF}
+              className="mb-4 inline-flex max-w-full items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:bg-primary/15"
+            >
+              <Sparkles className="h-3.5 w-3.5 shrink-0" />
+              <span className="truncate">Unlock 2800+ more questions</span>
+              <ChevronRight className="h-3.5 w-3.5 shrink-0 opacity-70" />
+            </Link>
+          )}
           {theoryChapter === null && (
             <PracticeChaptersOpenButton
               onClick={() => {
@@ -1044,8 +1095,17 @@ export function MathTasksPage({ tier }: Props) {
               </span>
               <button
                 type="button"
-                onClick={() => nextTaskIdx !== null && setActiveIdx(nextTaskIdx)}
-                disabled={nextTaskIdx === null}
+                onClick={() => {
+                  if (remainingLocked && tier === "demo") {
+                    openUnlockPrompt();
+                    if (activeIdx < activeList.length - 1) {
+                      setActiveIdx(activeIdx + 1);
+                    }
+                    return;
+                  }
+                  if (nextTaskIdx !== null) setActiveIdx(nextTaskIdx);
+                }}
+                disabled={nextTaskIdx === null && !remainingLocked}
                 title={
                   remainingLocked ? "Next task is locked in the demo" : undefined
                 }
@@ -1105,6 +1165,10 @@ export function MathTasksPage({ tier }: Props) {
 
       {tier === "demo" && (
         <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+      )}
+
+      {tier === "demo" && (
+        <UnlockQuestionsDialog open={unlockOpen} onOpenChange={setUnlockOpen} />
       )}
 
       {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
@@ -1274,19 +1338,22 @@ function isPartStartPara(trimmed: string): boolean {
  */
 const MathProse = memo(function MathProse({ text, className }: { text: string; className?: string }) {
   // Keep blank-line paragraphs, but also split consecutive bullet lines apart.
-  const paragraphs = text
-    .split(/\n\n+/)
-    .flatMap((block) => {
-      const trimmed = block.trim();
-      if (!trimmed) return [];
-      if (/^[•\-]/.test(trimmed) && /\n[•\-]/.test(trimmed)) {
-        return trimmed
-          .split(/\n(?=[•\-]\s+)/)
-          .map((line) => line.trim())
-          .filter(Boolean);
-      }
-      return [trimmed];
-    });
+  // Then fold `$$…$$` / `$$=…$$` continuation chains into one aligned display.
+  const paragraphs = mergeContinuationDisplayParagraphs(
+    text
+      .split(/\n\n+/)
+      .flatMap((block) => {
+        const trimmed = block.trim();
+        if (!trimmed) return [];
+        if (/^[•\-]/.test(trimmed) && /\n[•\-]/.test(trimmed)) {
+          return trimmed
+            .split(/\n(?=[•\-]\s+)/)
+            .map((line) => line.trim())
+            .filter(Boolean);
+        }
+        return [trimmed];
+      }),
+  );
 
   // Group: each numbered step keeps its following prose/math until the next step/part/claim.
   type Chunk =
@@ -1488,8 +1555,17 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
         }
 
         if (chunk.kind === "math") {
+          const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
+          const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
           return (
-            <div key={idx} className="my-5">
+            <div
+              key={idx}
+              className={cn(
+                prevMath || nextMath ? "my-1.5" : "my-5",
+                prevMath && "mt-1",
+                nextMath && "mb-1",
+              )}
+            >
               <FlashcardMath text={chunk.text} displayPrefer />
             </div>
           );
@@ -1505,12 +1581,23 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
         }
 
         if (chunk.kind === "step") {
+          const stepParas = mergeContinuationDisplayParagraphs(chunk.paras);
           return (
             <div key={idx} className="mb-6 mt-5 first:mt-2">
-              {chunk.paras.map((para, j) => {
+              {stepParas.map((para, j) => {
                 if (isDisplayMathPara(para)) {
+                  const prevMath = j > 0 && isDisplayMathPara(stepParas[j - 1]!);
+                  const nextMath =
+                    j < stepParas.length - 1 && isDisplayMathPara(stepParas[j + 1]!);
                   return (
-                    <div key={j} className="my-5">
+                    <div
+                      key={j}
+                      className={cn(
+                        prevMath || nextMath ? "my-1.5" : "my-5",
+                        prevMath && "mt-1",
+                        nextMath && "mb-1",
+                      )}
+                    >
                       <FlashcardMath text={para} displayPrefer />
                     </div>
                   );
@@ -1870,24 +1957,72 @@ function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
   );
 }
 
+function UnlockQuestionsDialog({
+  open,
+  onOpenChange,
+}: {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}) {
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent className="sm:max-w-md">
+        <DialogHeader className="text-center sm:text-center">
+          <div className="mx-auto mb-2 grid h-12 w-12 place-items-center rounded-full bg-primary/10 text-primary">
+            <Lock className="h-5 w-5" />
+          </div>
+          <DialogTitle className="font-display text-xl">Unlock all questions</DialogTitle>
+          <DialogDescription className="text-sm">
+            This task is part of the full course. Get access to 2800+ math questions with
+            full explanations.
+          </DialogDescription>
+        </DialogHeader>
+        <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
+          <Link
+            to={FULL_COURSE_BUY_HREF}
+            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
+          >
+            Unlock all questions
+          </Link>
+          <button
+            type="button"
+            onClick={() => onOpenChange(false)}
+            className="inline-flex items-center justify-center rounded-md border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-secondary"
+          >
+            Keep practicing free
+          </button>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+}
+
 function LockedDemoCard({ onBack }: { onBack: () => void }) {
   return (
     <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
       <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
         <Lock className="h-6 w-6" />
       </div>
-      <h2 className="font-display text-xl font-bold">Locked in demo</h2>
+      <h2 className="font-display text-xl font-bold">Unlock all questions</h2>
       <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
         This task is part of the full course. Demo practice includes a free sample of
         each topic.
       </p>
-      <button
-        type="button"
-        onClick={onBack}
-        className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
-      >
-        <ChevronLeft className="h-4 w-4" /> Back to free tasks
-      </button>
+      <div className="mt-5 flex flex-col items-center justify-center gap-2 sm:flex-row">
+        <Link
+          to={FULL_COURSE_BUY_HREF}
+          className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
+        >
+          Unlock all questions
+        </Link>
+        <button
+          type="button"
+          onClick={onBack}
+          className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
+        >
+          <ChevronLeft className="h-4 w-4" /> Back to free tasks
+        </button>
+      </div>
     </div>
   );
 }

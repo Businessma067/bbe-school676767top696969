@@ -516,15 +516,265 @@ def normalize_existing_math(text: str, is_true: bool, statement: str = "") -> st
     return format_math_explanation(letter, is_true, synthetic, statement)
 
 
-ECON_METHOD = {
-    "numeric": "Apply the statement's figure to the named accounting identity or ratio, using the case numbers rather than a memorised benchmark.",
-    "accounting": "Classify the item on the correct statement (balance sheet versus income/cash flow) and check the direction of the change.",
-    "definition": "Compare the sentence, word for word, with the textbook definition of the named concept.",
-    "absolute": "Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.",
-    "comparison": "Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.",
-    "application": "Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.",
-    "general": "Check the sentence against the core concept named in the stem, including every scope word.",
-}
+def scrub_econ_dashes(text: str) -> str:
+    """Ban em/en dashes in econ explanations (prefer periods or commas)."""
+    s = text or ""
+    s = s.replace("—", ". ").replace("–", "-")
+    s = re.sub(r"\.\s*\.", ".", s)
+    # Collapse horizontal whitespace only; keep paragraph breaks.
+    s = re.sub(r"[^\S\n]{2,}", " ", s)
+    s = re.sub(r" +\n", "\n", s)
+    s = re.sub(r"\n{3,}", "\n\n", s)
+    s = re.sub(r" +\.", ".", s)
+    return s.strip()
+
+
+TEACHER_STAMP_RES = [
+    re.compile(
+        r"The word \"[^\"]+\" turns an otherwise familiar idea into an overclaim\."
+        r"(?:\s*One routine counterexample is enough to reject it\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"Match the sentence phrase by phrase with the textbook definition\."
+        r"(?:\s*A near-miss definition usually fails on one scope word, not on the whole topic\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"Every scope word in the definition is respected here[\s\S]*?standard wording\.",
+        re.I,
+    ),
+    re.compile(
+        r"Check the direction of the comparison and which member of the pair carries the feature\."
+        r"(?:\s*Swapping the sides is a common way this kind of claim goes wrong\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"The comparison runs in the stated direction and attaches the feature to the correct "
+        r"member of the pair\.",
+        re.I,
+    ),
+    re.compile(
+        r"Once the scenario is placed in the right textbook category[\s\S]*?without extra conditions\.",
+        re.I,
+    ),
+    re.compile(
+        r"Map the story onto the textbook category first\."
+        r"(?:\s*The claim fails because that mapping does not support what the sentence says\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"Agreeing with the topic around \"[^\"]+\" is not enough\."
+        r"(?:\s*Every scope word in the sentence has to hold\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"Read the full claim against the core concept in the stem\."
+        r"(?:\s*Nothing in the wording stretches the concept beyond its standard use\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"(?:Name the ratio, substitute the case amounts, then read the result:|"
+        r"Recompute from the case figures:)\s*",
+        re.I,
+    ),
+    re.compile(
+        r"Compare that figure with the claim's threshold\."
+        r"(?:\s*Do not lean on a memorised textbook benchmark\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"Line that result up against the claimed threshold or direction\."
+        r"(?:\s*The sentence fails as soon as the comparison does not hold\.?)?",
+        re.I,
+    ),
+    re.compile(
+        r"Work(?: the identity with the case figures in order| from the case figures)[\s\S]*?"
+        r"(?:memorised textbook benchmark|Do not lean on a memorised textbook benchmark)\.?",
+        re.I,
+    ),
+    re.compile(
+        r"Recompute with the case figures[\s\S]*?"
+        r"(?:does not match what the sentence asserts|does not hold)\.?",
+        re.I,
+    ),
+    re.compile(
+        r"Place the item on the correct statement first[\s\S]*?matches the wording\.",
+        re.I,
+    ),
+    re.compile(
+        r"Check which statement the item belongs on[\s\S]*?"
+        r"(?:direction of the change is right|classification or the direction is wrong)\.?",
+        re.I,
+    ),
+    re.compile(
+        r"Accounting statements fail when a loss is treated as increasing equity[\s\S]*?"
+        r"ratio inequality is reversed\.?",
+        re.I,
+    ),
+    re.compile(
+        r"(?:From the figures or classification rule involved|Apply the case evidence)\s*,?\s*",
+        re.I,
+    ),
+    re.compile(
+        r"Judge the claim against the core concept in the stem, including every scope word\.",
+        re.I,
+    ),
+]
+
+
+def sanitize_econ_application(application: str) -> str:
+    """Drop leftover verdict / student-who / teacher-stamp text from prior pipeline passes."""
+    s = application or ""
+    s = re.sub(
+        r"A student who (?:overlooked|matched|recognised|recognized|reversed)[\s\S]*?"
+        r"(?:mark the statement true\.?|breaks the claim\.?)",
+        " ",
+        s,
+        flags=re.I,
+    )
+    s = re.sub(r"The disputed claim is\s*\".*?\"\.?", " ", s, flags=re.I | re.S)
+    s = re.sub(r"\(Statement [A-E]\.\)", " ", s, flags=re.I)
+    s = re.sub(r"\bThe statement is (?:true|false)\.?", " ", s, flags=re.I)
+    s = re.sub(r"This letter tests the claim:.*$", " ", s, flags=re.I | re.S)
+    for pat in TEACHER_STAMP_RES:
+        s = pat.sub(" ", s)
+    s = re.sub(r"\s{2,}", " ", s)
+    s = academic_prose(s).strip(" ,;")
+    if s and not s.endswith((".", "!", "?")):
+        s += "."
+    # Drop empty leftovers like "." or "From the figures."
+    if len(s) < 12:
+        return ""
+    return s
+
+
+def _format_numeric_steps(app: str) -> str:
+    """Split ratio / arithmetic crumbs onto their own lines like a worked solution."""
+    s = academic_prose(app).strip().rstrip(".")
+    if not s:
+        return ""
+    # Prefer a clean figure line when present.
+    fig = re.search(
+        r"((?:[A-Za-z][A-Za-z \-/]*?)?(?:ratio|turnover|gearing|period|margin|equity|capital)"
+        r"[^=≈~]*\s*[≈=~=]\s*[\d.,]+%?)",
+        s,
+        flags=re.I,
+    )
+    if fig:
+        figure = fig.group(1).strip().rstrip(".")
+        lead = (s[: fig.start()] + s[fig.end() :]).strip(" .;")
+        lead = re.sub(r"\s{2,}", " ", lead).strip(" .,;")
+        if lead and len(lead) > 8:
+            return f"{lead[0].upper() + lead[1:]}.\n\n{figure}"
+        return figure
+    parts = re.split(r"(?<=[.;])\s+(?=(?:Then|Next|So|Therefore|Hence)\b)", s)
+    if len(parts) >= 2:
+        return "\n\n".join(p.strip().rstrip(".") + "." for p in parts if p.strip())
+    return s + "."
+
+
+def build_econ_teacher_body(
+    is_true: bool,
+    statement: str,
+    application: str,
+    kind: str = "general",
+    trap_word: str | None = None,
+) -> list[str]:
+    """
+    Living tutor paragraphs (no TRUE/FALSE lead, no method boilerplate).
+    Practice UI already prints **A.** → True/False above the body.
+    """
+    app = sanitize_econ_application(application or "")
+    if app and app[0].islower():
+        app = app[0].upper() + app[1:]
+    if app and not app.endswith((".", "!", "?")):
+        app += "."
+
+    paras: list[str] = []
+
+    if kind in ("numeric", "accounting") and app:
+        paras.append(_format_numeric_steps(app))
+        if kind == "numeric" and is_true:
+            figure = paras[0]
+            if re.search(r"(?:ratio|turnover|gearing|capital)\s*[≈=~=]", figure, re.I):
+                paras[0] = (
+                    "Name the ratio, substitute the case amounts, then read the result:\n\n"
+                    f"{figure}"
+                )
+            paras.append(
+                "Compare that figure with the claim's threshold. "
+                "Do not lean on a memorised textbook benchmark."
+            )
+        elif kind == "numeric":
+            figure = paras[0]
+            if re.search(r"(?:ratio|turnover|gearing|capital)\s*[≈=~=]", figure, re.I):
+                paras[0] = (
+                    "Recompute from the case figures:\n\n"
+                    f"{figure}"
+                )
+            paras.append(
+                "Line that result up against the claimed threshold or direction. "
+                "The sentence fails as soon as the comparison does not hold."
+            )
+        elif kind == "accounting" and not is_true:
+            paras.append(
+                "Check which statement the item belongs on (balance sheet at a date versus "
+                "income or cash flow over a period) and whether the direction of the change is right. "
+                "A familiar topic word is not enough if the classification or the direction is wrong."
+            )
+    elif app:
+        paras.append(app)
+
+    if kind == "absolute" and not is_true:
+        word = trap_word or "absolute"
+        paras.append(
+            f'The word "{word}" turns an otherwise familiar idea into an overclaim. '
+            "One routine counterexample is enough to reject it."
+        )
+    elif kind == "definition" and not is_true:
+        paras.append(
+            "Match the sentence phrase by phrase with the textbook definition. "
+            "A near-miss definition usually fails on one scope word, not on the whole topic."
+        )
+    elif kind == "definition" and is_true and app:
+        paras.append(
+            "Every scope word in the definition is respected here, so the sentence survives "
+            "a phrase-by-phrase check against the standard wording."
+        )
+    elif kind == "comparison" and not is_true:
+        paras.append(
+            "Check the direction of the comparison and which member of the pair carries the feature. "
+            "Swapping the sides is a common way this kind of claim goes wrong."
+        )
+    elif kind == "application" and is_true and app:
+        paras.append(
+            "Once the scenario is placed in the right textbook category, "
+            "the wording of the claim matches that category without extra conditions."
+        )
+    elif kind == "application" and not is_true:
+        paras.append(
+            "Map the story onto the textbook category first. "
+            "The claim fails because that mapping does not support what the sentence says."
+        )
+    elif kind == "general" and not is_true and not trap_word:
+        pin = statement_pin(statement)
+        paras.append(
+            f'Agreeing with the topic around "{pin}" is not enough. '
+            "Every scope word in the sentence has to hold."
+        )
+    elif kind == "general" and is_true and app:
+        paras.append(
+            "Read the full claim against the core concept in the stem. "
+            "Nothing in the wording stretches the concept beyond its standard use."
+        )
+
+    if not paras:
+        paras.append(
+            "Judge the claim against the core concept in the stem, including every scope word."
+        )
+
+    return paras
 
 
 def format_econ_explanation(
@@ -535,32 +785,16 @@ def format_econ_explanation(
     trap_word: str | None = None,
     used_mistakes: set[str] | None = None,
 ) -> str:
-    prefix = "TRUE" if is_true else "FALSE"
-    method = ECON_METHOD.get(kind, ECON_METHOD["general"])
-    app = academic_prose(application).rstrip(".") + "."
-    if app and app[0].islower():
-        app = app[0].upper() + app[1:]
-    if is_true:
-        close = "The statement is true."
+    # used_mistakes kept for call-site compatibility; teacher voice no longer stamps unique-mistake tails.
+    _ = used_mistakes
+    paras = build_econ_teacher_body(is_true, statement, application, kind, trap_word)
+    close = "The statement is true." if is_true else "The statement is false."
+    # Avoid a duplicate closing if the application already ended that way.
+    if paras and re.search(r"the statement is (?:true|false)\.?$", paras[-1], re.I):
+        body = "\n\n".join(paras)
     else:
-        pin = statement_pin(statement)
-        if trap_word:
-            draft = (
-                f'A student who overlooked the word "{trap_word}" in "{pin}" '
-                "would treat the restriction as absent and mark the statement true."
-            )
-        else:
-            draft = (
-                f'A student who matched the topic to "{pin}" without checking '
-                "the rest of the sentence would mark the statement true."
-            )
-        used = used_mistakes if used_mistakes is not None else set()
-        from explanation_builder import Quantities, unique_mistake
-
-        q = Quantities(letter="A", is_true=False)
-        mistake = unique_mistake(draft, used, q, statement)
-        close = f"The statement is false. {mistake}"
-    return f"{prefix} — {method}\n\n{app}\n\n{close}"
+        body = "\n\n".join([*paras, close])
+    return scrub_econ_dashes(body)
 
 
 GENERIC_ECON_STARTS = (
@@ -649,9 +883,13 @@ def classify_econ(statement: str, body: str, subsection: str) -> str:
         return "accounting"
     if ABSOLUTE_WORD_RE.search(statement):
         return "absolute"
-    if re.search(r"\b(is defined|means that|refers to)\b", statement, re.I):
+    if re.search(r"\b(is defined|means that|refers to|means making|means using)\b", statement, re.I):
         return "definition"
-    if re.search(r"\b(compared|versus|unlike|whereas|rather than)\b", statement, re.I):
+    # "X rather than Y" inside a definition is not a comparison trap.
+    if re.search(r"\b(compared|versus|unlike|whereas)\b", statement, re.I) or (
+        re.search(r"\brather than\b", statement, re.I)
+        and not re.search(r"\bmeans\b", statement, re.I)
+    ):
         return "comparison"
     if re.search(r"\b(if|when|because|scenario)\b", statement, re.I):
         return "application"
@@ -719,49 +957,23 @@ def rewrite_task_explanations(task: dict) -> dict:
         is_true = bool(keys[i]) if i < len(keys) else True
         stmt = stmts[i] if i < len(stmts) else ""
         if subsection.startswith(("2.", "3.", "4.", "5.", "6.")) and not str(subsection).startswith("12."):
-            already = bool(re.match(r"^(TRUE|FALSE) — ", (expl or "").strip()))
-            if already:
-                if is_true:
-                    out.append(expl)
-                    continue
-                parts = re.split(r"\n\s*\n", (expl or "").strip())
-                head = "\n\n".join(parts[:-1]) if len(parts) >= 3 else parts[0]
-                hits = ABSOLUTE_WORD_RE.findall(stmt)
-                trap_word = hits[0].lower() if hits else None
-                pin = statement_pin(stmt)
-                if trap_word:
-                    draft = (
-                        f'A student who overlooked the word "{trap_word}" in "{pin}" '
-                        "would treat the restriction as absent and mark the statement true."
-                    )
-                else:
-                    draft = (
-                        f'A student who matched the topic to "{pin}" without checking '
-                        "the rest of the sentence would mark the statement true."
-                    )
-                q = Quantities(letter=LETTERS[i], is_true=False)
-                mistake = unique_mistake(draft, used_mistakes, q, stmt)
-                if len(parts) >= 3:
-                    out.append(head.rstrip() + "\n\nThe statement is false. " + mistake + "\n")
-                else:
-                    app = extract_econ_application(expl, stmt) or ""
-                    out.append(
-                        format_econ_explanation(
-                            is_true,
-                            stmt,
-                            app,
-                            classify_econ(stmt, expl, subsection),
-                            trap_word,
-                            used_mistakes,
-                        )
-                    )
-                continue
             kind = classify_econ(stmt, expl, subsection)
             hits = ABSOLUTE_WORD_RE.findall(stmt) if not is_true else []
             trap_word = hits[0].lower() if hits else None
             app = extract_econ_application(expl, stmt)
             if not app:
-                app = academic_prose(re.sub(r"^(TRUE|FALSE)\s*[—–-]\s*", "", expl.strip()))
+                app = academic_prose(re.sub(r"^(TRUE|FALSE)\s*[—–-]\s*", "", (expl or "").strip()))
+            # Drop stamped method lead if it is still the whole "application".
+            app = re.sub(
+                r"^(?:Read the quantifier|Check that the comparison|Map the scenario|"
+                r"Check the sentence against|Apply the statement's figure|"
+                r"Classify the item on the correct statement|"
+                r"Compare the sentence, word for word)\.[^\n]*\n*",
+                "",
+                app or "",
+                flags=re.I,
+            ).strip()
+            app = sanitize_econ_application(app)
             out.append(
                 format_econ_explanation(
                     is_true, stmt, app, kind, trap_word, used_mistakes
@@ -772,7 +984,11 @@ def rewrite_task_explanations(task: dict) -> dict:
         else:
             out.append(light_cleanup(expl) if expl.strip() else expl)
     out = _uniquify_explanations(out, expls, stmts)
-    out = seal_question_explanations(out, stmts, keys)
+    is_econ = subsection.startswith(("2.", "3.", "4.", "5.", "6.")) and not str(
+        subsection
+    ).startswith("12.")
+    if not is_econ:
+        out = seal_question_explanations(out, stmts, keys)
     task["tactical_explanations"] = out
     overview = task.get("solution_overview") or ""
     if GENERIC_LEAD_RE.search(overview) or overview.startswith("Organize counts into a table"):
