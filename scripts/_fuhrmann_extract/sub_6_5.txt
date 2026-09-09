@@ -1,0 +1,196 @@
+--- book p.59 / pdf 57 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 59
+Answer to question 1: The percentage of non-current assets is 61.7% of total assets, 
+most of them being property, plant and equipment. This seems to be typical of a man-
+ufacturing business that needs production plants and a lot of equipment and machin-
+ery. Cash and cash equivalents account for almost half of the current assets (46.2%), 
+whereas inventories have a significantly lower level (23.2% of current assets). The 
+cash position is also a lot higher than trade payables, so the business would be able 
+to pay all the bills if it were necessary.
+Answer to question 2: The total equity has increased by 171,297,000 euros. In 2018, 
+it reached 46.8 per cent of total equity and liabilities (equity ratio). So almost half of 
+the assets were financed by equity.
+Answer to question 3: Yes, there is, because non-current assets account for around 
+944,267,000 euros and there is equity of approximately 711,391,000 euros and non-
+current liabilities (therefore, long-term) of around 458,359,000 euros. This is impor-
+tant because long-term assets should be financed with long-term financial resources.
+Questions 4 and 5 require a look at the statement of profit and loss.
+AT&S statement of profit and loss
+€ in thousands 2017/18 2016/17
+Revenue 991,843 814,906
+ Cost of sales (829,539) (760,172)
+Gross profit 162,304 54,734
+ Distribution costs (32,606) (29,392)
+ General and admin. costs (39,480) (28,283)
+ Other operating result 68 9,590
+Operating result 
+(earnings before interest and taxes (EBIT))
+90,286 6,649
+ Finance income 3,348 2,646
+ Finance costs (18,123) (20,145)
+Finance costs – net (14,775) (17,499)
+Profit / (loss) before tax 75,511 (10,850)
+Income taxes (18,992) (12,047)
+Profit / (loss) for the year 56,519 (22,897)
+Source: AT&S annual report 2017/18
+
+--- book p.60 / pdf 58 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS60
+Accounting – keeping record of business transactions
+Please note: 
+Cost of sales (COS) (or cost of goods sold (COGS)) are the costs that are directly tied to the 
+production of the products like the cost of labour (that is directly linked to production), ma-
+terials and manufacturing overhead. For example, the COGS for a manufacturer of PCBs 
+includes the material costs for the elements that are used for making PCBs and the labour 
+costs for putting the PCBs together. Administration costs, the cost of shipping the PCBs to 
+customers or the cost of sales personnel is NOT included in COGS.
+Gross profit reveals the earnings of a business after deducting the direct costs of producing 
+the goods (without operating expenses). Therefore, it focuses on the financial performance 
+of revenue from production only. There is another metric that allows us to analyse operating 
+performance while including operating expenses: earnings before interest, taxes, depre-
+ciation and amortisation (EBITDA). By deducting depreciation and amortisation, the next 
+metric for earnings of a business is gained: earnings before interest and taxes (EBIT).
+In accounting, expenditures and expenses are not the same. While expenditures are pay-
+ments that are either made to purchase (non-current as well as current) assets, expenses are 
+costs that have expired or were “used up” in order to produce the goods or provide the ser-
+vices that were sold. For example, COGS are considered to be expenses, and so are other 
+expenses such as salaries, marketing costs, interest, insurance, rent, and so on.
+Answer to question 4: Revenues have increased by about 176,937,000 euros, which is 
+an increase of 21.7% compared to revenues of the financial year 2016/17. Most inter-
+estingly, the cost of sales has only increased by around 9.1% (69,367 / 760,172 * 100).
+Answer to question 5: Gross profit has significantly increased (actually, it has more 
+than tripled). The operating result has improved even more; it has reached almost 14 
+times the amount of the previous financial year.
+6.4 Use of these accounts – types of accounting
+These accounts are needed for a number of stakeholders who are interested in the financial 
+situation of a business. Some of them are internal users like the owners of the business, the 
+managers and the employees. They are all interested to learn if the business is thriving. Man-
+agers need to make decisions based on financial information (like “Do we need to cut costs in 
+marketing?”) and owners will want to know if their investment is worth the risk (like “How much 
+profit do I get in return for investing and risking my money?”). There are also external users of 
+financial information like tax authorities, suppliers, competitors, investors and the media. 
+For some companies it is mandatory to have their accounts checked for authenticity by an 
+independent firm of accountants, an auditing company. This task is called auditing. The 
+result of the auditing process can be read in the annual report.
+Managerial accounting focuses on providing information for the management of the busi-
+ness. Based on the data gained from managerial accounting, managers are able to make 
+decisions like where to cut costs and how to calculate prices. Of course, managers are also 
+interested in financial accounting, something that is also of interest for decision makers 
+outside a business like tax authorities or banks. Information gained from financial account-
+ing like the balance sheet and the income statement can be found in the annual reports for 
+example. Many large businesses also publish selected information on their financials on 
+their websites.
+
+--- book p.61 / pdf 59 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 61
+6.5 Analysis of financial statements
+The information given in the balance sheet and in the income statement can be used to 
+calculate figures and ratios in order to learn more, e.g. about the
+ ∎ liquidity (or the solvency) of a business,
+ ∎ profitability, which refers to the relationship of profit to the capital employed or to 
+the turnover,
+ ∎ financial efficiency, which deals with the question how effectively a business has 
+employed its resources and
+ ∎ financial structure, which can be evaluated on the basis of equity ratio (equity in per 
+cent of total assets) and debt ratio (total debt in per cent of total assets).
+Please note: Since these figures and ratios can vary a lot from one industry to another, 
+some comparisons would not be very meaningful. Comparisons are meaningful for differ-
+ent businesses within the same industry or sector or for one single business over time 
+(comparisons of several different financial years).
+There might also be different ways to calculate some of these ratios, so it is always impor-
+tant to know how ratios were calculated if you want to make comparisons.
+6.5.1 Liquidity
+The term liquidity refers to the ability of a business to pay its bills and repay its debts on 
+time. One approach to evaluate liquidity is to calculate the working capital of a business. 
+Working capital (or circulating capital) indicates whether or not a business is able to pay its 
+day-to-day bills such as electricity, rent and wages and buy components for its production. 
+Therefore, the focus is on short-term assets and liabilities.
+Working capital = current assets – current liabilities
+The calculation of working capital is based on the idea that current assets of a business are 
+relatively liquid (meaning that they can be easily turned into cash). Current assets comprise 
+cash itself, inventory and accounts receivable. If all the current assets are turned into cash 
+to repay current liabilities, working capital is the amount that is left over after all current 
+debts have been paid. 
+Working capital for AT&S in the financial year 2017/18:
+586,172 – 303,772 = 282,400 (thousand euros)
+Working capital should be positive, meaning that current assets should be higher than cur-
+rent liabilities. If they are not, this would indicate that part of the non-current assets was 
+financed by short-term liabilities, which might cause problems when these liabilities need 
+to be repaid. A low level of working capital might also indicate that there is not enough cash 
+or the business has borrowed too much through trade credit. Businesses that need a lot of 
+inventory (like retailers) are likely to have higher levels of working capital than businesses 
+that provide services (like a hairdresser or a business coach).
+A high level of inventory can be important to a business in order to satisfy customers’ needs 
+very quickly, but keeping inventories also has downsides for the business. First of all, it 
+takes space, but it is also risky. Unused inventory ties up money in a business; it might be-
+come obsolete and lose its value.
+
+--- book p.62 / pdf 60 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS62
+Accounting – keeping record of business transactions
+Working capital problems and cash flow problems are interlinked but not identical. Cash 
+flow problems can be mitigated by borrowing money using a short-term bank loan or using 
+overdraft facilities and trade credit. Although this brings cash into the business, it will in-
+crease current liabilities and reduce working capital. The most effective way to improve 
+both working capital and cash flow is to increase equity or borrow more long-term credit.
+Working capital can also be calculated as a ratio:
+Working capital ratio / current ratio = Current assets / current liabilities 
+As current assets should exceed current liabilities, this ratio should be greater than 1, ide-
+ally even between 1.5 and 2.
+Working capital ratio for AT&S = 586,172 / 303,772 = 1.9
+It can be argued that inventories should not be taken into consideration for this calculation. 
+There are many reasons why inventories could possibly not be turned into cash. This is why 
+a modified calculation, the so-called acid test ratio, does not consider inventories and al-
+lows a stricter evaluation of liquidity.
+Acid test ratio = (current assets – inventory) / current liabilities
+Acid test ratio for AT&S = (586,172 – 136,097) / 303,772 = 1.5
+So the result of the acid test ratio for AT&S is still greater than 1, which indicates a sufficient 
+level of liquidity.
+6.5.2 Profitability
+If revenues exceed costs, the business makes a profit. This does not necessarily mean that 
+the business is sufficiently profitable because the amount of profit might be minuscule in 
+relation to the money that has been invested (and the risk that has been taken). Hence, 
+profitability refers to a business’s profit in relation to an indicator of the size of the business 
+(total assets or total average assets, total equity, turnover). 
+ ∎ Return on equity
+ROE = profit before tax and interest (EBIT) / equity
+AT&S: 90,286 / 711,391 = 12.7%
+Another ratio that is often calculated is return on capital employed (ROCE). Capital em-
+ployed is usually the sum of equity and non-current liabilities (or simply assets minus cur-
+rent liabilities). Instead of capital employed at the end of the financial year, the average 
+capital employed can be used (e.g. by summing up capital employed at the beginning and 
+at the end of the financial year and dividing by 2).
+
+--- book p.63 / pdf 61 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 63
+ ∎ Return on capital employed
+ROCE = profit before tax and interest (EBIT) / capital employed
+ 
+AT&S: 
+total capital employed = assets (1,530,439) – current liabilities (303,772) = 1,226,667
+ROCE = 90,286 / 1,226,667 = 7.3%
+or with average capital employed: (1,226,667 + 1,109,943) / 2 = 1,168,305
+ROCE = 90,286 / 1,168,305 = 7.7%
+The ROCE figures are important for comparisons between different businesses in the 
+same industry or sector as well as for the evaluation of profitability of one business 
+over time. Investors usually prefer investments with a comparatively high ROCE (al-
+though the decision to invest may also depend on other criteria) and will have a close 
+look at the development of ROCE over time.
+6.5.3 Financial efficiency
+Financial efficiency refers to the question how efficiently a business has employed its re-
+sources. Two of the ratios that can be calculated to evaluate financial efficiency are asset 
+turnover and inventory (stock) turnover. Asset turnover aims to indicate how much turnover 
+was generated by every euro invested in total average assets or – alternatively – in net as-
+sets (net assets being assets minus long-term liabilities):
+ ∎ Asset turnover = turnover / average assets 
+average assets = (assets at the beginning of the year + assets at the end 
+of the year) / 2
+AT&S: average assets = (1,530,439 + 1,436,694) / 2 = 1,483,566.5
+asset turnover = 991,843 / 1,483,566.5 = 0.67
+or 
+ 
+AT&S: net assets 2018 = 1,530,439 – 515,276 = 1,015,163
+net assets 2017 = 1,436,694 – 569,849 = 866,845
+average net assets = (1,015,163 + 866,845) / 2 = 941,004
+asset turnover = 991,843 / 941,004 = 1.05
+asset turnover = turnover / average net assets

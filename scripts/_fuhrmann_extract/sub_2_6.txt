@@ -1,0 +1,133 @@
+--- book p.11 / pdf 9 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 11
+In the circular flow of the economy (see figure 1), public authorities (mainly governments) 
+also play an important role. They levy taxes from households and businesses and use the 
+money to provide goods, transfer payments and subsidies. Such goods as infrastructure 
+(e.g. streets and street lights) and services like national defence and public security (e.g. 
+police) need to be provided by governments and financed by taxation. There is demand for 
+these goods, but private businesses would not want to supply them as “free riders” (people 
+who do not pay for a good or service) cannot be excluded from enjoying them. In many – but 
+not all – countries health care and education are also provided (at least to a large extent) 
+by public authorities. 
+Figure 1. The circular flow of goods, services and money within the economy
+Division of labour and specialisation
+Without exchange of goods and services, individuals would have to produce everything 
+they need themselves. That would be very difficult, time-consuming and inefficient be-
+cause they would have to spend time on performing tasks that they lack the skills for. Ex-
+changing goods and services allows for the division of labour and therefore specialisation. 
+Individuals and businesses can concentrate on what they can do best. This explains the 
+wide variety of jobs and of businesses. Using a widely accepted means of exchange like 
+money facilitates the exchanges.
+Specialisation can be found on many levels: 
+ ∎ Within households, for example where individuals can concentrate on what they can 
+do best or what they like doing (like one individual does the shopping, the other one the 
+cooking). 
+ ∎ The same principle applies to businesses: within businesses, some people concen-
+trate on production, others on procurement, some others on sales, on recording all 
+Private 
+households
+Government
+(public authorities)
+Businesses
+Goods, services, transfer payments Goods, services and subsidies
+Taxes Taxes
+Payments
+Labour
+Wages
+Goods and services
+
+--- book p.12 / pdf 10 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS12
+Basic economic concepts
+financial transactions or on managing human resources. Accordingly, these (different) 
+tasks of a business are often summarised in different departments of a business: pro-
+curement, production, sales department, marketing, finance and accounting.
+ ∎ Specialisation can also be found between businesses as every business focuses on a 
+special range of products: some offer all kinds of furniture, others just beds and couch-
+es, some others just produce kitchens. These businesses operate on the same level of 
+production. But specialisation can also be based on division of labour between busi-
+nesses on different levels of production (first level: production of wood and iron, sec-
+ond level: production of boards and nails, third level: production of tables, final level: 
+selling them) or in different sectors of the economy (see chapter 3).
+ ∎ Specialisation can also be found on an international level,  as countries differ in cli-
+mate, natural resources, geographical position and many other characteristics. Due 
+to very different characteristics, countries also differ in their conditions for different 
+industries (industry being a number of businesses that produce or sell the same prod-
+uct) and different business functions. AT&S for example has production sites in Europe 
+as well as in Asia (China, India and South Korea). While production in Europe is highly 
+diversified and relatively low in volume, production in Asia reaches a much higher vol-
+ume but has a lower product diversity. This kind of division of labour can be explained 
+by differences in terms of know-how of the workforce, labour costs, availability of other 
+resources and the legal framework in different countries.
+While division of labour has many advantages, it also has some disadvantages that need 
+to be considered: for very specialised workers, work may become boring over time. Being 
+specialised also means less flexibility as it is hard to develop other skills or develop com-
+petencies in other fields. A specialised business may be brilliant in that field, but if – for 
+some reason – that specialisation is not needed anymore, the business is at risk and peo-
+ple could lose their jobs.
+2.5 Different economic systems
+The role of governments described above is mainly true for the governments in some sort 
+of market economy. While in market economies individuals and businesses are – more or 
+less – allowed to make many of their own economic decisions, in planned economic sys-
+tems the governments play a dominant role. They (mainly or partly) decide which goods 
+are produced and which services are offered (at which prices). Furthermore, they (mainly or 
+partly) control the resources and the means of production. People have a limited choice of 
+which job to do and which products to buy.
+In most countries of the world, economies can be characterised as some kind of market 
+economy. In some of these countries, the governments play a minor role by only providing 
+the legal framework and not influencing the economy much, so their economic system 
+comes close to what is called a “free market economy”. In many other countries, the gov-
+ernment plays a more important role by influencing the economy to a somewhat higher 
+extent, by supporting the poor and protecting the environment for example. These systems 
+are called “social market economies” or “eco-social market economies”. 
+Over the past decades, a lot of former communist countries that used to have planned 
+economic systems have adopted the main principles of the market economy. Many Central 
+and Eastern European Countries (CEE), China and former Soviet countries are examples of 
+such a transformation. 
+
+--- book p.13 / pdf 11 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS 13
+2.6 Supply and demand: Households, businesses 
+and the government meet in the market
+In a market economy, goods and services are offered and sold on/at markets. Buyers and 
+sellers meet to communicate the conditions of exchanging goods and services and thus 
+form a market. A market can be an actual place, like a flower market in the city of Rome or 
+a flea market in a small village, but it can also be a virtual place like a market on the Inter-
+net (e.g. eBay, Amazon). Buying and selling take place in shops, but also on the phone. 
+Therefore, there are many different markets, also depending on what is offered: consumer 
+goods markets, labour markets (supply and demand for work), housing markets, money 
+markets, capital markets, commodity markets (supply and demand for raw materials).
+2.6.1 The law of supply 
+Supply (of a certain good or service) is the quantity of that good or service that is 
+available for purchase. Basically, this quantity mainly depends on the businesses’ pro-
+duction capacities and the available resources, but also on the price that can be charged 
+for the good or the service. The higher this price is, the higher the supply will be. All 
+other things held constant (“ceteris paribus”), this relationship is true for most goods and 
+services in the economy (law of supply). 
+In Tina’s and Steve’s case, the quantity of hours that they (as well as other providers of 
+similar computer support services) are willing to work depends on the price they can charge 
+and that will be paid. It is tiring work and the providers of this service need to be very 
+skilled. If the price is low, let’s say below 30 euros per hour for example, no provider would 
+offer that service. The opportunity cost would be too high: as the providers are very skilled, 
+they could earn more money by doing something else (that is also less tiring), so they would 
+leave this market and offer another kind of service. The higher the price, the higher the 
+number of hours that would be offered. More potential providers would enter the market 
+and would be willing to offer a higher number of hours of their service. 
+The shape of the supply curve can also be explained by the concept of increasing marginal 
+costs faced by many industries and businesses. Marginal cost is the cost of producing an 
+additional unit of a good or by providing an additional unit of a service. As output increases 
+and exceeds a certain level it will become more and more costly to produce; businesses 
+need to build higher capacities (machinery, personnel) so marginal costs would rise. Only 
+250
+200
+150
+100
+50
+0
+0 5 10 15 20 25 30 35 40 45
+Quantity
+Supply per week
+Price
+Figure 2. The supply curve 
+(price in euros, quantity in 
+1,000 hours)

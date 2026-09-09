@@ -1,0 +1,313 @@
+[
+  {
+    "subsection": "2.1",
+    "book_pages": [
+      7
+    ],
+    "weight": 1,
+    "chars": 2852,
+    "target_cases": 16
+  },
+  {
+    "subsection": "2.2",
+    "book_pages": [
+      7
+    ],
+    "weight": 1,
+    "chars": 2852,
+    "target_cases": 16
+  },
+  {
+    "subsection": "2.3",
+    "book_pages": [
+      8
+    ],
+    "weight": 1,
+    "chars": 1429,
+    "target_cases": 16
+  },
+  {
+    "subsection": "2.4",
+    "book_pages": [
+      8,
+      9
+    ],
+    "weight": 2,
+    "chars": 4754,
+    "target_cases": 32
+  },
+  {
+    "subsection": "2.5",
+    "book_pages": [
+      10
+    ],
+    "weight": 1,
+    "chars": 3306,
+    "target_cases": 16
+  },
+  {
+    "subsection": "2.6",
+    "book_pages": [
+      11,
+      12,
+      13
+    ],
+    "weight": 3,
+    "chars": 8663,
+    "target_cases": 48
+  },
+  {
+    "subsection": "2.7",
+    "book_pages": [
+      14
+    ],
+    "weight": 1,
+    "chars": 2569,
+    "target_cases": 16
+  },
+  {
+    "subsection": "3.1",
+    "book_pages": [
+      15
+    ],
+    "weight": 1,
+    "chars": 2408,
+    "target_cases": 16
+  },
+  {
+    "subsection": "3.2",
+    "book_pages": [
+      15
+    ],
+    "weight": 1,
+    "chars": 2408,
+    "target_cases": 16
+  },
+  {
+    "subsection": "3.3",
+    "book_pages": [
+      16
+    ],
+    "weight": 1,
+    "chars": 3445,
+    "target_cases": 16
+  },
+  {
+    "subsection": "3.4",
+    "book_pages": [
+      17
+    ],
+    "weight": 1,
+    "chars": 2254,
+    "target_cases": 16
+  },
+  {
+    "subsection": "3.5",
+    "book_pages": [
+      17
+    ],
+    "weight": 1,
+    "chars": 2254,
+    "target_cases": 16
+  },
+  {
+    "subsection": "3.6",
+    "book_pages": [
+      18,
+      19,
+      20
+    ],
+    "weight": 3,
+    "chars": 7791,
+    "target_cases": 48
+  },
+  {
+    "subsection": "4.1",
+    "book_pages": [
+      22
+    ],
+    "weight": 1,
+    "chars": 1404,
+    "target_cases": 16
+  },
+  {
+    "subsection": "4.2",
+    "book_pages": [
+      23
+    ],
+    "weight": 1,
+    "chars": 3073,
+    "target_cases": 16
+  },
+  {
+    "subsection": "4.3",
+    "book_pages": [
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "weight": 5,
+    "chars": 16485,
+    "target_cases": 79
+  },
+  {
+    "subsection": "4.4",
+    "book_pages": [
+      28
+    ],
+    "weight": 1,
+    "chars": 2597,
+    "target_cases": 16
+  },
+  {
+    "subsection": "4.5",
+    "book_pages": [
+      29
+    ],
+    "weight": 1,
+    "chars": 1985,
+    "target_cases": 16
+  },
+  {
+    "subsection": "4.6",
+    "book_pages": [
+      29
+    ],
+    "weight": 1,
+    "chars": 1985,
+    "target_cases": 16
+  },
+  {
+    "subsection": "5.1",
+    "book_pages": [
+      31
+    ],
+    "weight": 1,
+    "chars": 1860,
+    "target_cases": 16
+  },
+  {
+    "subsection": "5.2",
+    "book_pages": [
+      31
+    ],
+    "weight": 1,
+    "chars": 1860,
+    "target_cases": 16
+  },
+  {
+    "subsection": "5.3",
+    "book_pages": [
+      32
+    ],
+    "weight": 1,
+    "chars": 2670,
+    "target_cases": 16
+  },
+  {
+    "subsection": "5.4",
+    "book_pages": [
+      33
+    ],
+    "weight": 1,
+    "chars": 3206,
+    "target_cases": 16
+  },
+  {
+    "subsection": "5.5",
+    "book_pages": [
+      33,
+      34,
+      35,
+      36
+    ],
+    "weight": 4,
+    "chars": 10685,
+    "target_cases": 63
+  },
+  {
+    "subsection": "5.6",
+    "book_pages": [
+      37,
+      38
+    ],
+    "weight": 2,
+    "chars": 3991,
+    "target_cases": 32
+  },
+  {
+    "subsection": "5.7",
+    "book_pages": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "weight": 11,
+    "chars": 25494,
+    "target_cases": 174
+  },
+  {
+    "subsection": "6.1",
+    "book_pages": [
+      50,
+      51
+    ],
+    "weight": 2,
+    "chars": 4384,
+    "target_cases": 32
+  },
+  {
+    "subsection": "6.2",
+    "book_pages": [
+      52,
+      53,
+      54
+    ],
+    "weight": 3,
+    "chars": 8222,
+    "target_cases": 48
+  },
+  {
+    "subsection": "6.3",
+    "book_pages": [
+      55,
+      56,
+      57
+    ],
+    "weight": 3,
+    "chars": 8576,
+    "target_cases": 48
+  },
+  {
+    "subsection": "6.4",
+    "book_pages": [
+      58
+    ],
+    "weight": 1,
+    "chars": 1598,
+    "target_cases": 16
+  },
+  {
+    "subsection": "6.5",
+    "book_pages": [
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "weight": 5,
+    "chars": 12916,
+    "target_cases": 79
+  }
+]

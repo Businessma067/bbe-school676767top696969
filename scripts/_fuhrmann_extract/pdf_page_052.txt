@@ -1,0 +1,42 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS54
+Accounting – keeping record of business transactions
+Liabilities are debts and obligations that are owed to other persons, businesses or banks 
+and need to be repaid at a certain point in time and/or over a certain period of time. These 
+funds are usually provided by banks or suppliers. Money owed to suppliers is also called 
+trade credit or trade payables. Current liabilities are debts or obligations that are due with-
+in one year. Accordingly, non-current liabilities have a duration of more than one year.
+Equity / owner’s equity is the difference of assets and liabilities. It is an indicator of the 
+wealth of the company. A high equity ratio (= equity / total capital) indicates that the re-
+spective portion of assets was financed by the company’s own resources (for example with 
+funds provided by the owners or shareholders of the company). It is important for a busi-
+ness to have sufficient equity because: 1) equity usually does not have to be repaid, 2) it 
+helps a business to be relatively independent from its creditors and 3) if the company has 
+a loss and there is a higher amount of equity, the company will not be over-indebted.
+Determining the value of assets is an important but also tricky task. While it might not be 
+difficult to determine the exact amount of a bank loan, it is more difficult to tell what a build-
+ing is worth many years after it was buil t. Businesses usually want to present themselves 
+in the best way possible when setting up their balance sheet. However, they need to stick 
+to the legal rules and regulations that aim to ensure that information given in balance 
+sheets can be trusted.
+6.2 Other components of the financial statement of a business
+The balance sheet is not the only component of the financial statement of a business. The 
+financial statement of the business aims to show the performance of the business over a 
+certain period of time, but the balance sheet only shows the assets, liabilities and equity at a 
+certain point in time. It does not contain information on total sales (turnover), nor does it 
+reveal the cost of producing the goods and services or other expenses. Therefore, the finan-
+cial statement consists of the balance sheet, the income statement (profit and loss account) 
+and the cash flow statement, which gives an insight into the inflow and outflow of cash.
+Figure 24. The main components of a financial statement of a business
+Balance sheet
+Assets, liabilities 
+and equity
+Income 
+statement
+Revenues, costs 
+and expenses
+Cash flow 
+statement
+Inflow and 
+outflow of cash
+Financial statement
+reveals the performance of a business over a certain period of time

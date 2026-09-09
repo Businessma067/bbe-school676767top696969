@@ -1,0 +1,40 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 53
+Assets (euros) Liabilities and equity (euros)
+Office equipment including 
+computers 25,000 Owner’s equity (capital) 24,000
+Car 8,000
+Inventory 12,500 Bank loan ( liabilities) 25,000
+Cash and bank deposit 3,500
+49,000 49,000
+A balance sheet comprises a company’s assets and reveals how they were financed. 
+The amount of assets equals the amount of liabilities plus owner’s equity:
+assets = liabilities + owner’s equity
+This must be an equation because 
+ ∎ all assets were funded either through equity or liabilities, 
+ ∎ all funds are somehow bound or invested in the business (even money held as cash 
+or in a bank account was either funded through equity or liabilities and is bound in the 
+specific form it is currently held) and
+ ∎ any increase in assets must be financed by an increase in either liabilities or equity 
+(capital). 
+Please note that if Tina and Steve buy computer software and pay cash, the total amount 
+of the assets remains the same (one asset – software – increases, but another one – cash 
+– decreases by the exact same amount, so it is just an “asset swap”). But if they buy the 
+software on credit, then the amount of assets increases and liabilities also increase by the 
+exact same amount. Accordingly, the balance sheet total increases.
+Assets are usually listed in the balance sheet in a certain order. They comprise fixed assets 
+(or non-current assets) that normally have a lifespan of more than one year and are in-
+tended to be used in the company for a longer time period than one year. Usually they can-
+not be turned into cash so easily. Current assets have higher liquidity. They are usually not 
+used longer than a year because they are used up, spent in production or sold.
+Examples of fixed assets / non-current assets are property, plant, premises, buildings, 
+machinery and all kind of equipment like office equipment, e.g. computers that are used in 
+the office. Also financial assets – if meant to be kept longer than a year – can be fixed or 
+non-current assets.
+Examples of current assets  are inventory (merchandise that has not been sold yet, like 
+computers in stock), accounts receivables / debtors (money that is owed to the business, 
+also called trade receivables), cash.
+There are also intangible assets like trademarks, patents and copyrights. Although they 
+cannot be seen or touched they are also of value for the business like tangible assets are. 
+Tina and Steve do not have any intangible assets (yet), but the AT&S balance sheet (see 
+below) contains intangible assets of almost 76 million euros, mainly acquired patents, 
+trademarks and licenses.

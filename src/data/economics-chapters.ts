@@ -4,8 +4,8 @@
  * Source of truth for explanations in Full Course practice and Custom Mock Builder
  * (same local JSON pattern as math).
  *
- * Intentionally ~35% of the historical full bank per chapter (prefix kept).
- * Remaining cases stay in git history until explanations are ready to ship.
+ * Case counts follow Fuhrmann book subsection length (page weight).
+ * Every book subsection 2.1–6.5 is covered; explanations are teacher-style.
  */
 
 import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";

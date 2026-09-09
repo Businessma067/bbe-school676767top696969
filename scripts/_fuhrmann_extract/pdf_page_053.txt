@@ -1,0 +1,43 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS 55
+6.2.1 Profit and loss account
+The profit and loss account is needed to determine whether a business has made a profit 
+or a loss over a certain period of time. While the balance sheet contains the assets, liabili-
+ties and equity as of a certain day, all the revenues, costs and expenses that occur during 
+a time period (e.g. a year) are summarised in the profit and loss account, which is also 
+called income statement. 
+Revenues are the income (usually cash or accounts receivable) that is generated from sell-
+ing goods or services to customers. Costs consist of resources that are consumed in order 
+to produce the goods or provide the services.
+If the revenues exceed the costs and expenses, the company has a profit. If the company’s 
+costs and expenses are higher than the revenue, it suffers a loss. Let’s assume that the 
+2018 income statement of T&S Computer Services OG contains 
+ ∎ sales revenue of €400,000 and 
+ ∎ costs and expenses (like material, wages, rent, energy, depreciation*) and other ex-
+penses) of €310,000, then the difference would be a profit of €90,000.
+*) Depreciation
+Fixed assets are used again and again over a longer period of time. Tina’s car for example 
+will be used for at least five more years. Steve’s new computer will be used for three years. 
+During that time, the value of these assets decreases ; it is “used up”. Recognising this 
+effect is called depreciation. Without depreciation, the values of assets that are shown in 
+the accounts would be inaccurate. The value of the assets in the balance sheet would be 
+overstated and the financial information given would be flawed.
+Steve paid 2,100 euros for his computer and will use it for around three years (so three 
+years is the “expected useful life” of the computer). Therefore, depreciation equals 700 
+euros per year (using the straight line method to calculate depreciation). After the first year, 
+the book value of this computer will be 1,400 euros (2,100 − 700) in the balance sheet, 700 
+euros after the second year and 0 euros after the third year.
+AT&S describes its depreciation method in the annual report: “From the time of their avail-
+ability for use, the assets are depreciated on a straight line basis over their expected useful 
+lives. (…) Land is not subject to depreciation. Scheduled depreciation is based on the fol-
+lowing useful lives: plants and buildings 10-50 years, machinery and technical equipment 
+4-15 years, tools, fixtures, furniture and office equipment 3-15 years.”
+As depreciation represents an asset’s loss in value, it is recognised as an expense included 
+in the income statement that reduces the (gross) profit, just like other expenses (wages for 
+administration, staff, rent, energy, insurance) do. The main difference to other expenses like 
+energy, heating or wages is the fact that depreciation does not cause an actual payment.
+Profits and losses cannot only be seen in the income statement
+At the end of 2018, Tina and Steve draw up another balance sheet to see how their assets 
+and capital structure have changed over the first year of business. Due to depreciation, the 
+loss of value of their fixed assets, their initial office equipment and the car have a lower 
+value than one year before. As they have bought some more office equipment over the year, 
+the position has risen to 42,000 euros. Their inventory has increased, but they try to keep 

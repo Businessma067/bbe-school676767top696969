@@ -1,0 +1,49 @@
+INTRODUCTION TO BUSINESS AND ECONOMICS48
+Marketing
+one else for a higher price should they decline the offer. In fact, the variable costs of pro-
+ducing a good represent the absolute lower limit for the price of this good. As soon as the 
+price exceeds the variable costs, this “excess” contributes to covering the fixed costs. 
+Therefore, this amount is also called “contribution”. 
+So if variable costs for one of these laptops were 480 euros and the price was 600 euros 
+(excl. VAT), then 120 euros would contribute to covering the fixed costs and making a prof-
+it. In competitive markets that require businesses to consider the pricing policies of their 
+competitors, businesses usually employ distribution pricing when setting prices for new 
+products or for contract bidding: they add a certain markup to variable costs.
+Price elasticity of demand
+Before changing prices it makes sense to consider how customers might react to an in-
+creased or decreased price. A price adjustment will not affect demand uniformly for all 
+types of products. How demand is affected depends on the price elasticity of demand. 
+Demand is “elastic” if the change in demand (in per cent) exceeds the price adjustment (in 
+per cent). Let’s assume that lowering the price for used laptop computers from 500 to 400 
+euros (which is a price reduction of 20%) causes an increase in demand from 70 to 100 
+pieces (an increase in the quantity demanded of 43%). People who were thinking about 
+buying a laptop computer now decide to buy one. And even people who already have a 
+desktop computer purchase a laptop computer as a second option. Demand is elastic and 
+price adjustments may make sense because the quantity demanded increases by 43% (and 
+– depending on the costs – profits might also rise). 
+Figure 22 shows an example of the effects of a price reduction on the quantity demanded 
+and on revenues:
+ ∎ Price reduction of €100/initial price €500 = 20% price reduction.
+ ∎ Increase in demand of 30 units/initial demand 70 units = 43% increase in quantity 
+demanded.
+ ∎ The ratio +43/−20 = −2.15 is the price elasticity of demand as measured from the 
+initial point on the demand curve. 
+The demand for laptops is elastic (the ratio 2.15 is greater than 1), because the 
+change in demand (+43%) exceeds the price adjustment (−20%).
+ ∎ Increase in revenues of €5,000/initial revenues €35,000 = 14.3% increase in revenues.
+Figure 22. Price elasticity of 
+demand: example of elastic 
+demand
+70 100 150
+€ 500
+€ 400
+€ 300
+demand (for used notebook computers)
+Price elasticity of demand
+Price
+revenue
+= € 35,000
+revenue
+= € 40,000
+revenue
+= € 45,000

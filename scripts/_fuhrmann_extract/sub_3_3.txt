@@ -1,0 +1,44 @@
+--- book p.16 / pdf 14 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS16
+Basic economic concepts
+Supply and demand for money 
+Please note that the laws of supply and demand also help to understand one of the main 
+causes of inflation. If the quantity of money within a country is increased (in order to stim-
+ulate the economy), people and businesses are able to buy more and to invest, so demand 
+for goods and services usually rises. If the quantity of available goods and services in this 
+country remains the same and does not increase accordingly, then the prices for goods and 
+services will rise. “Too many dollars chasing too few goods” expresses very well what infla-
+tion is about. It is by increasing the price for money, i.e. the interest rates, that inflation can 
+be fought. If it is more expensive to borrow money, people and businesses tend to spend 
+less, demand for goods and services decreases again and so do their prices.
+2.7 Competition in the market
+The level of competition in a market is mainly influenced by the number of suppliers and 
+the availability of substitute goods. If there is just one supplier, the market situation is 
+called a monopoly. Monopolies are rare in a market economy but there might be goods and 
+services that are only provided by one business (like the railway in some countries).
+Some businesses might not be the sole suppliers in the whole market, but they might be 
+the only supplier within a certain area, which also makes them a kind of monopolist. The 
+owners of a ski hut might be in a monopoly-like situation if they are the only ones to offer 
+food and beverages on a particular mountain. A theatre bar is in a similar situation. Tina 
+and Steve could find themselves in such a situation if they are the only ones that offer such 
+a service within a radius of 50 km for example. 
+If there are a few suppliers, the market form is called an oligopoly. Each supplier has a 
+relatively large share of the market (e.g. telecom companies, car manufacturers). Competi-
+tion can be strong, because as soon as one supplier changes the product or the price, its 
+competitors are very likely to react in order to maintain their share of the market. Alterna-
+tively, suppliers could try to negotiate their terms of sale in order to prevent such harmful 
+competition. Such agreements – also called a cartel – are usually not considered legal. In 
+general, laws support competition in a market because it is considered beneficial for cus-
+tomers.
+Perfect competition can (theoretically) be found in markets with so many suppliers and 
+buyers that no single individual or business can possibly influence the price. Considering 
+perfect competition, in economics we also assume the following (theoretical) prerequisites:
+ ∎ All market players (buyers and sellers) must have access to all information at all times.
+ ∎ There must not be any barriers to enter or exit the market.
+ ∎ There must not be any (personal) preferences – i.e. goods, as mentioned, must be re-
+placeable.
+In real life, perfect competition is rarely found but, nevertheless, some markets come close 
+to the concept of perfect competition. These are markets for goods and/or services that are 
+almost identical (regardless of the supplier), e.g. agricultural markets, or that can be stan-
+dardised. Even if the number of suppliers is not so high, competition can be almost “per-
+fect” if competition among suppliers is especially fierce.

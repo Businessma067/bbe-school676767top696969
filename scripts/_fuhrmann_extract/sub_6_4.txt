@@ -1,0 +1,38 @@
+--- book p.58 / pdf 56 ---
+INTRODUCTION TO BUSINESS AND ECONOMICS58
+Accounting – keeping record of business transactions
+Question 4: How have revenues developed over the past year? Have they increased – and 
+if yes, to what extent? Have the costs, especially costs of sale, developed accordingly?
+Question 5: How have profits (or losses) developed? 
+The first three questions can be answered by analysing the balance sheet, for example the 
+AT&S balance sheet as of 31 March 2018. Questions 4 and 5 require a look at the statement 
+of profit and loss.
+AT&S balance sheet / Statement of financial position
+€ in thousands 31 March 2018 31 March 2017
+ASSETS
+ Property, plant and equipment 766,378 833,095
+ Intangible assets 75,856 91,655
+ Financial assets 284 173
+ Other assets 101,749 104,440
+Non-current assets 944,267 1,029,363
+ Inventories 136,097 108,844
+ Trade and other receivables 119,711 86,342
+ Financial assets 59,635 8,660
+ Cash and cash equivalents 270,729 203,485
+Current assets 586,172 407,331
+Total assets 1,530,439 1,436,694
+EQUITY
+ Share capital 141,846 141,846
+ Reserves and other equity 200,392 81,729
+ Retained earnings 369,153 316,519
+Total equity 711,391 540,094
+LIABILITIES
+ Non-current financial liabilities 458,359 519,830
+ Provisions and other non-current liabilities 56,917 50,019
+Non-current liabilities 515,276 569,849
+ Trade and other payables 199,880 230,845
+ Other current liabilities and provisions 103,892 95,906
+Current liabilities 303,772 326,751
+Total liabilities 819,048 896,600
+Total equity and liabilities 1,530,439 1,436,694
+Source: AT&S annual report 2017/18
