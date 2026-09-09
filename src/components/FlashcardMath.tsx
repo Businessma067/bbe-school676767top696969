@@ -91,7 +91,7 @@ const MathChunk = memo(function MathChunk({
               key={j}
               className={
                 displayMode
-                  ? "flashcard-math-display my-0 block h-auto w-full overflow-x-auto overflow-y-hidden py-2 text-center [scrollbar-gutter:auto] [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:overflow-visible [&_.katex-display]:py-0.5"
+                  ? "flashcard-math-display my-0 block h-auto w-full overflow-x-auto overflow-y-hidden py-2.5 text-center [scrollbar-gutter:auto] [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:overflow-visible [&_.katex-display]:py-1"
                   : "mx-0.5 inline-block align-baseline"
               }
               dangerouslySetInnerHTML={{ __html: html }}
@@ -325,6 +325,9 @@ function isStackedMathBody(body: string): boolean {
 function isCompactDisplayBody(body: string): boolean {
   const t = body.trim();
   if (!t || isStackedMathBody(t) || /\\begin\{/.test(t)) return false;
+  // Keep fraction / large-operator steps as separate airy displays (econ
+  // ratio stacks, long divisions). Membership checklists stay compact.
+  if (/\\(?:d|t)?frac|\\sum|\\int|\\prod/.test(t)) return false;
   return t.replace(/\s+/g, " ").length <= 88;
 }
 
@@ -350,11 +353,12 @@ function formatAlignedContinuationChain(bodies: string[]): string {
       lines.push(`& ${raw}`);
     }
   }
-  return `\\begin{aligned}\n${lines.join(" \\\\\n")}\n\\end{aligned}`;
+  // Extra row gap so stacked = continuations are not cramped.
+  return `\\begin{aligned}\n${lines.join(" \\\\[0.75em]\n")}\n\\end{aligned}`;
 }
 
 function formatGatherBlock(bodies: string[]): string {
-  return `\\begin{gather*}\n${bodies.map((b) => b.trim()).filter(Boolean).join(" \\\\\n")}\n\\end{gather*}`;
+  return `\\begin{gather*}\n${bodies.map((b) => b.trim()).filter(Boolean).join(" \\\\[0.85em]\n")}\n\\end{gather*}`;
 }
 
 /** Put `&=` on the first top-level equals so the chain lines up. */
