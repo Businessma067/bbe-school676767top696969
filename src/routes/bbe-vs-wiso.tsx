@@ -8,11 +8,7 @@ import {
   Languages,
   PencilLine,
 } from "lucide-react";
-import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
-import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import examHallAsset from "@/assets/exam-hall-real.png.asset.json";
-import mathAsset from "@/assets/math-bw.jpg.asset.json";
-import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import {
   BbeGhostButton,
   BbeInfoCallout,
@@ -220,14 +216,15 @@ export function BbeVsWisoPage() {
 
         <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
           <img
-            src={wuAsset.url}
-            alt="WU Vienna campus buildings on a clear day"
+            src="/exam-info/classroom-ready.jpg"
+            alt="Empty classroom with desks facing a chalkboard, ready for a written exam"
             className="h-auto max-h-[24rem] w-full object-cover"
             loading="lazy"
           />
           <figcaption className="border-t border-border px-4 py-3 text-sm text-muted-foreground sm:px-5">
-            Same WU Vienna campus, two bachelor pathways: BBE and WISO share the university but differ
-            in language, cohort size, and how competitive the entrance exam is.
+            Both BBE and WISO usually end in the same kind of room: desks, silence, and a timed
+            multiple-choice paper. The programmes diverge before that — in language, places, and how
+            you prepare.
           </figcaption>
         </figure>
 
@@ -305,14 +302,14 @@ export function BbeVsWisoPage() {
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <PhotoCard
-              src={englishAsset.url}
-              alt="English study materials used in BBE-style language practice"
-              caption="BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight."
+              src="/exam-info/english-business-news.jpg"
+              alt="Folded newspaper open to a World Business section in English"
+              caption="BBE’s language section rewards fluent reading of English business and economics texts — grammar and vocabulary under time pressure, not casual conversation."
             />
             <PhotoCard
-              src={economicsAsset.url}
-              alt="Economics study materials for WU entrance exam preparation"
-              caption="Both exams expect economics and business basics. On BBE, that usually means precise reading of definitions from the required literature."
+              src="/exam-info/business-reading-stack.jpg"
+              alt="Stack of business and economics study books on a desk"
+              caption="Economics prep is literature-heavy. On BBE, that usually means precise reading of the required chapters — not open-ended business trivia."
             />
           </div>
         </BbeSection>
@@ -504,9 +501,9 @@ export function BbeVsWisoPage() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <PhotoCard
-              src={mathAsset.url}
-              alt="Mathematics practice materials for entrance exam preparation"
-              caption="Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems."
+              src="/exam-info/math-whiteboard.jpg"
+              alt="Hand writing calculus integrals on a whiteboard during math preparation"
+              caption="Math prep transfers best when you rebuild fundamentals early, then switch to mixed timed stems so one question does not eat the clock."
             />
             <PhotoCard
               src={examHallAsset.url}
