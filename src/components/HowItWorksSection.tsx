@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { cn } from "@/lib/utils";
@@ -108,12 +108,18 @@ const PLACEHOLDERS: Record<
 };
 
 const VIDEO_TABS: MainTab[] = ["course", "games"];
+const MIN_ZOOM = 1;
+const MAX_ZOOM = 2.4;
+const ZOOM_STEP = 0.35;
+/** Open the lightbox already magnified so UI text is readable. */
+const INITIAL_LIGHTBOX_ZOOM = 1.55;
 
 export function HowItWorksSection() {
   const [tab, setTab] = useState<MainTab>("course");
   const [subject, setSubject] = useState<CourseSubject>("economics");
   const [tool, setTool] = useState<StudyTool>("flashcards");
   const [zoomed, setZoomed] = useState(false);
+  const [lightboxScale, setLightboxScale] = useState(INITIAL_LIGHTBOX_ZOOM);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -139,6 +145,7 @@ export function HowItWorksSection() {
 
   const openZoom = () => {
     videoRef.current?.pause();
+    setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
     setZoomed(true);
   };
 
@@ -149,7 +156,14 @@ export function HowItWorksSection() {
       inline.currentTime = zoomVideo.currentTime;
     }
     setZoomed(false);
+    setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
     if (inline) void inline.play().catch(() => {});
+  };
+
+  const nudgeLightboxZoom = (dir: 1 | -1) => {
+    setLightboxScale((prev) =>
+      Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, +(prev + dir * ZOOM_STEP).toFixed(2))),
+    );
   };
 
   useEffect(() => {
@@ -170,7 +184,16 @@ export function HowItWorksSection() {
         const v = videoRef.current;
         if (z && v && Number.isFinite(z.currentTime)) v.currentTime = z.currentTime;
         setZoomed(false);
+        setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
         if (v) void v.play().catch(() => {});
+      }
+      if (event.key === "+" || event.key === "=") {
+        event.preventDefault();
+        setLightboxScale((prev) => Math.min(MAX_ZOOM, +(prev + ZOOM_STEP).toFixed(2)));
+      }
+      if (event.key === "-" || event.key === "_") {
+        event.preventDefault();
+        setLightboxScale((prev) => Math.max(MIN_ZOOM, +(prev - ZOOM_STEP).toFixed(2)));
       }
     };
     const prevOverflow = document.body.style.overflow;
@@ -183,9 +206,10 @@ export function HowItWorksSection() {
   }, [zoomed, slide.key]);
 
   useEffect(() => {
-    // Close lightbox when switching tabs/slides so the wrong clip never stays open.
     setZoomed(false);
+    setLightboxScale(INITIAL_LIGHTBOX_ZOOM);
   }, [tab, subject, tool]);
+
   useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
@@ -264,14 +288,13 @@ export function HowItWorksSection() {
 
           <div className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
             <div className="min-w-0">
-              {/* Frame matches recording aspect (3420×1966) so object-cover fills with no crop or letterbox. */}
               <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
                 {hasVideoShowcase ? (
                   <div className="relative aspect-[3420/1966] w-full">
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-cover [image-rendering:auto]"
+                      className="absolute inset-0 h-full w-full object-cover"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -284,9 +307,9 @@ export function HowItWorksSection() {
                       type="button"
                       onClick={openZoom}
                       aria-label="Zoom in"
-                      className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/25 bg-[#161616]/90 px-3 py-2 text-xs font-semibold text-[#F2F1ED] shadow-md backdrop-blur-sm transition hover:bg-[#161616]"
+                      className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-2 rounded-md border border-white/30 bg-[#161616]/92 px-4 py-2.5 text-sm font-semibold text-[#F2F1ED] shadow-lg backdrop-blur-sm transition hover:bg-[#161616] sm:px-5 sm:py-3 sm:text-base"
                     >
-                      <ZoomIn className="h-4 w-4" />
+                      <ZoomIn className="h-5 w-5 sm:h-6 sm:w-6" />
                       Zoom in
                     </button>
                   </div>
@@ -386,21 +409,22 @@ export function HowItWorksSection() {
       {zoomed && hasVideoShowcase
         ? createPortal(
             <div
-              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 p-2 sm:p-4"
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/88 p-2 sm:p-4"
               role="dialog"
               aria-modal="true"
               aria-label={`${slide.label} walkthrough zoomed`}
               onClick={closeZoom}
             >
               <div
-                className="relative w-[min(96vw,calc(92vh*3420/1966))] overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
+                className="relative w-[min(98vw,calc(94vh*3420/1966))] overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
                 onClick={(event) => event.stopPropagation()}
               >
-                <div className="relative aspect-[3420/1966] w-full">
+                <div className="relative aspect-[3420/1966] w-full overflow-hidden">
                   <video
                     key={`zoom-${slide.key}`}
                     ref={zoomVideoRef}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-cover origin-center will-change-transform"
+                    style={{ transform: `scale(${lightboxScale})` }}
                     poster={slide.poster}
                     src={slide.video}
                     muted
@@ -411,11 +435,36 @@ export function HowItWorksSection() {
                     aria-label={`${slide.label} walkthrough enlarged`}
                   />
                 </div>
+
+                <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-[#161616]/92 p-1.5 shadow-lg backdrop-blur-sm">
+                  <button
+                    type="button"
+                    onClick={() => nudgeLightboxZoom(-1)}
+                    disabled={lightboxScale <= MIN_ZOOM}
+                    aria-label="Zoom out"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[#F2F1ED] transition hover:bg-white/10 disabled:opacity-40"
+                  >
+                    <ZoomOut className="h-5 w-5" />
+                  </button>
+                  <span className="min-w-[3.25rem] text-center text-sm font-semibold tabular-nums text-[#F2F1ED]">
+                    {Math.round(lightboxScale * 100)}%
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => nudgeLightboxZoom(1)}
+                    disabled={lightboxScale >= MAX_ZOOM}
+                    aria-label="Zoom in"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[#F2F1ED] transition hover:bg-white/10 disabled:opacity-40"
+                  >
+                    <ZoomIn className="h-5 w-5" />
+                  </button>
+                </div>
+
                 <button
                   type="button"
                   onClick={closeZoom}
                   aria-label="Close zoom"
-                  className="absolute right-3 top-3 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-[#161616]/90 text-[#F2F1ED] shadow-md backdrop-blur-sm transition hover:bg-[#161616]"
+                  className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-[#161616]/92 text-[#F2F1ED] shadow-md backdrop-blur-sm transition hover:bg-[#161616]"
                 >
                   <X className="h-5 w-5" />
                 </button>
