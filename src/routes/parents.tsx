@@ -44,9 +44,10 @@ export function ParentsPage() {
         actions={
           <LocalizedLink
             to="/"
-            className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-colors hover:bg-secondary"
+            className="inline-flex min-h-9 items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1.5 text-xs font-semibold text-foreground transition-colors hover:bg-secondary sm:px-3"
           >
-            <ArrowLeft className="h-3.5 w-3.5" /> Back
+            <ArrowLeft className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Back</span>
           </LocalizedLink>
         }
       />
@@ -55,28 +56,28 @@ export function ParentsPage() {
       <section
         className="relative overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.72), rgba(0,0,0,0.85)), url(${hallAsset.url})`,
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(${hallAsset.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="mx-auto max-w-4xl px-6 py-24 text-center lg:px-8 lg:py-32">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.25em] text-white/90 backdrop-blur">
+        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white backdrop-blur-sm [text-shadow:0_1px_2px_rgba(0,0,0,0.55)] sm:tracking-[0.25em]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#E85D3A]" />
             An open letter to parents
           </span>
-          <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 font-display text-[1.75rem] font-bold leading-[1.15] tracking-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:mt-6 sm:text-5xl sm:leading-tight lg:text-6xl">
             A Frank Audit for Parents:
             <br />
             <span className="text-[#F0A64D]">The Real Cost of WU Vienna Admission</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-6 sm:text-lg">
             Weigh the time and money spent on a failed admission.
           </p>
         </div>
       </section>
 
-      <main className="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
+      <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         {/* Section 1 */}
         <article className="prose-neutral">
           <div className="mb-4 flex items-center gap-3">

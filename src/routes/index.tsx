@@ -65,11 +65,11 @@ export function Index() {
                 </span>
               </div>
 
-              <h1 className="font-display text-[2.25rem] font-semibold leading-[1.08] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
+              <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Step by step preparation for your 2027 WU BBE exam
               </h1>
 
-              <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Master every detail and tactic of the actual exam.
               </p>
 
@@ -102,12 +102,12 @@ export function Index() {
 
               <div
                 id="important-features"
-                className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
+                className="mt-5 flex flex-col items-center gap-2 text-center text-xs font-medium tracking-wide text-taupe sm:mt-5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-6 sm:gap-y-2"
               >
                 <span>Beauty of stress and time management</span>
-                <span className="h-1 w-1 rounded-full bg-border" />
+                <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
                 <span>Most common and tricky Mistakes</span>
-                <span className="h-1 w-1 rounded-full bg-border" />
+                <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
                 <span>Exam life hacks and loopholes</span>
               </div>
             </div>
@@ -122,21 +122,20 @@ export function Index() {
 
         {/* PARALLAX BAND — darkened WU campus */}
         <section
-          className="relative bg-fixed"
+          className="relative bg-scroll md:bg-fixed"
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.78), rgba(0,0,0,0.72)), url(${wuAsset.url})`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            backgroundAttachment: "fixed",
           }}
         >
-          <div className="mx-auto max-w-5xl px-6 py-16 text-center lg:px-8 lg:py-20">
-            <h2 className="font-display text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+          <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl lg:text-5xl">
               A triple-accredited elite business school.
               <br />
-              <span className="text-white/80">Almost free education.</span>
+              <span className="text-white/95">Almost free education.</span>
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
               One 2-hour exam stands between your family and a world-class degree at almost zero
               cost.
             </p>
@@ -147,10 +146,10 @@ export function Index() {
         <section className="relative overflow-hidden bg-why-us-bg px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
           <div className="relative mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-display text-3xl font-semibold leading-[1.1] text-primary-foreground sm:text-4xl lg:text-5xl">
+              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-primary-foreground sm:text-4xl lg:text-5xl">
                 Why Choose US
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-primary-foreground/70 sm:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
                 The standards at WU Vienna are exceptionally high. Let's be honest: entry
                 competition is brutal, and no software can ever guarantee your admission. Success
                 requires hard, disciplined work. But our data proves how we shift the odds in your
@@ -240,16 +239,15 @@ export function Index() {
 
         {/* PARALLAX BAND #2 */}
         <section
-          className="relative bg-fixed"
+          className="relative bg-scroll md:bg-fixed"
           style={{
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.82), rgba(0,0,0,0.68)), url(${wuAsset.url})`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center 30%",
-            backgroundAttachment: "fixed",
           }}
         >
-          <div className="mx-auto max-w-5xl px-6 py-14 text-center lg:px-8 lg:py-16">
-            <h2 className="font-display text-3xl font-semibold leading-tight text-white sm:text-4xl">
+          <div className="mx-auto max-w-5xl px-4 py-12 text-center sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
               Voices from the exam hall floor.
             </h2>
           </div>
@@ -533,21 +531,25 @@ function WhyUsSlider() {
         <ChevronRight size={24} />
       </button>
 
-      {/* Dot indicators */}
-      <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 sm:bottom-6">
+      {/* Dot indicators — larger hit area on phones */}
+      <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1 sm:bottom-6 sm:gap-2">
         {Array.from({ length: total }).map((_, i) => (
           <button
             key={i}
             type="button"
             aria-label={`Go to slide ${i + 1}`}
             onClick={() => goTo(i)}
-            className={cn(
-              "h-2 rounded-full transition-all duration-300",
-              active === i
-                ? "w-8 bg-white"
-                : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50",
-            )}
-          />
+            className="flex h-10 w-10 items-center justify-center"
+          >
+            <span
+              className={cn(
+                "rounded-full transition-all duration-300",
+                active === i
+                  ? "h-2 w-8 bg-white"
+                  : "h-2 w-2 bg-primary-foreground/30",
+              )}
+            />
+          </button>
         ))}
       </div>
 
@@ -646,10 +648,10 @@ function WhyUsSlider() {
 
 function WhySlide({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="relative flex w-full min-w-full flex-none items-center justify-center px-6 py-10 sm:px-10 lg:px-16">
-      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
-        <div className="mb-8 border-b border-white/12 pb-5">
-          <h3 className="font-display text-2xl font-semibold text-primary-foreground sm:text-3xl">
+    <section className="relative flex w-full min-w-full flex-none items-center justify-center px-4 py-8 sm:px-10 sm:py-10 lg:px-16">
+      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-5 sm:p-10 lg:p-12">
+        <div className="mb-6 border-b border-white/12 pb-4 sm:mb-8 sm:pb-5">
+          <h3 className="font-display text-xl font-semibold text-primary-foreground sm:text-3xl">
             {title}
           </h3>
         </div>

@@ -28,7 +28,11 @@ type SiteHeaderProps = {
 
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
-    <LocalizedLink to="/" className="group flex shrink-0 items-center gap-2 sm:gap-3">
+    <LocalizedLink
+      to="/"
+      aria-label="BBE School home"
+      className="group flex shrink-0 items-center gap-2 sm:gap-3"
+    >
       <div
         className={cn(
           "relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105",
@@ -44,9 +48,10 @@ function BrandMark({ compact = false }: { compact?: boolean }) {
           BBE
         </span>
       </div>
+      {/* Full name only from sm up — keeps the phone header from crowding. */}
       <span
         className={cn(
-          "font-display font-bold tracking-tight text-foreground",
+          "hidden font-display font-bold tracking-tight text-foreground sm:inline",
           compact ? "text-sm" : "text-sm sm:text-base",
         )}
       >
@@ -85,9 +90,10 @@ export function SiteHeader({
     >
       <div
         className={cn(
-          "mx-auto flex items-center gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-4 lg:gap-4 lg:px-8",
+          "mx-auto flex items-center gap-1.5 px-3 py-2 sm:gap-3 sm:px-6 sm:py-4 lg:gap-4 lg:px-8",
+          "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
           maxWidthClassName,
-          compact && "py-2.5 sm:py-3",
+          compact && "py-2 sm:py-3",
           innerClassName,
         )}
       >
@@ -98,7 +104,7 @@ export function SiteHeader({
           ) : (
             <div className="min-w-0 flex-1" aria-hidden="true" />
           ))}
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2.5">
+        <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1 sm:gap-2.5">
           {actions}
           <LanguageSwitcher />
           <AuthNav />

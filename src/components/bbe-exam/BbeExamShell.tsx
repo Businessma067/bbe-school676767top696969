@@ -43,33 +43,35 @@ export function BbeExamShell({
       <section
         className="relative overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.72), rgba(0,0,0,0.86)), url(${wuAsset.url})`,
+          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.82), rgba(0,0,0,0.9)), url(${wuAsset.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
           <div className="flex flex-wrap gap-2">
             {badges.map((badge) => (
               <span
                 key={badge}
-                className="inline-flex items-center rounded-full border border-white/25 bg-white/10 px-3 py-1 text-[11px] font-medium text-white/90 backdrop-blur"
+                className="inline-flex max-w-full items-center rounded-full border border-white/30 bg-black/35 px-3 py-1 text-[11px] font-medium leading-snug text-white backdrop-blur-sm [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
               >
                 {badge}
               </span>
             ))}
           </div>
-          <h1 className="mt-6 font-display text-[1.75rem] font-bold leading-[1.12] tracking-tight text-white sm:text-4xl sm:leading-[1.1] lg:text-[2.75rem]">
+          <h1 className="mt-5 font-display text-[1.65rem] font-bold leading-[1.15] tracking-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:mt-6 sm:text-4xl sm:leading-[1.1] lg:text-[2.75rem]">
             {h1}
           </h1>
-          <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/80 sm:text-lg">{lead}</p>
-          {heroActions ? <div className="mt-8 flex flex-col gap-3 sm:flex-row">{heroActions}</div> : null}
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/95 [text-shadow:0_1px_8px_rgba(0,0,0,0.5)] sm:mt-5 sm:text-lg">
+            {lead}
+          </p>
+          {heroActions ? <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row">{heroActions}</div> : null}
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-6 py-12 lg:px-8 lg:py-16">{children}</div>
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">{children}</div>
 
-      <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
+      <footer className="border-t border-border bg-card px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
           <p className="text-xs leading-relaxed text-muted-foreground">
             Independent preparation guide. Not affiliated with WU Vienna. Dates and rules can change, so

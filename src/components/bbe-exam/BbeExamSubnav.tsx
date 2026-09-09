@@ -16,11 +16,11 @@ export function BbeExamSubnav() {
       aria-label="BBE Exam sections"
       className="border-b border-border/70 bg-background/90 backdrop-blur"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <p className="pt-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:pt-3.5">
+      <div className="mx-auto max-w-6xl px-3 sm:px-6 lg:px-8">
+        <p className="pt-2.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:pt-3.5">
           BBE Exam
         </p>
-        <ul className="-mx-1 flex gap-1 overflow-x-auto pb-3 pt-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <ul className="-mx-0.5 flex gap-1 overflow-x-auto pb-2.5 pt-1.5 [scrollbar-width:none] sm:pb-3 sm:pt-2 [&::-webkit-scrollbar]:hidden">
           {BBE_EXAM_SUBNAV.map((item) => {
             const active =
               pathForActive === item.href ||
@@ -33,7 +33,7 @@ export function BbeExamSubnav() {
                   to={link.to as never}
                   params={link.params as never}
                   className={cn(
-                    "inline-flex items-center rounded-md px-2.5 py-1.5 text-sm transition-colors",
+                    "inline-flex min-h-10 items-center rounded-md px-3 py-2 text-sm transition-colors",
                     active
                       ? "bg-secondary font-semibold text-foreground"
                       : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground",

@@ -45,14 +45,16 @@ export function AuthNav() {
   }, [open]);
 
   if (!ready)
-    return <div className="h-9 w-28 rounded-md border border-border bg-card" aria-hidden="true" />;
+    return (
+      <div className="h-9 w-16 rounded-md border border-border bg-card sm:w-28" aria-hidden="true" />
+    );
 
   if (!auth) {
     return (
       <div className="flex items-center gap-1 sm:gap-2">
         <LocalizedLink
           to="/login"
-          className="rounded-md border border-border bg-card px-2 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
+          className="inline-flex min-h-9 items-center justify-center rounded-md border border-border bg-card px-2.5 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
         >
           <span className="sm:hidden">In</span>
           <span className="hidden sm:inline">Sign in</span>
@@ -87,7 +89,7 @@ export function AuthNav() {
           aria-label="Open account menu"
           aria-expanded={open}
           aria-haspopup="menu"
-          className="flex items-center gap-2 rounded-md border border-border bg-card px-2 py-1 hover:bg-secondary"
+          className="touch-target flex min-h-9 items-center gap-1.5 rounded-md border border-border bg-card px-1.5 py-1 hover:bg-secondary sm:gap-2 sm:px-2"
         >
           <div className="grid h-7 w-7 place-items-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
             {initial}
