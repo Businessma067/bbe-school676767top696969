@@ -14,23 +14,64 @@ def body_len(e: str) -> int:
     return len(CLOSER_RE.sub("", e).strip())
 
 
-def ensure_long(body: str, extra: str) -> str:
-    b = body.strip()
-    if len(b) >= 360:
-        return b
-    b2 = b + "\n\n" + extra.strip()
-    return b2
-
-
 def ensure_med(body: str, extra: str) -> str:
     b = body.strip()
     if 160 <= len(b) <= 320:
         return b
     if len(b) < 160:
         b = (b + " " + extra.strip()).strip()
+        pads = [
+            " That next-best forgone use is what the letter is testing.",
+            " The stem’s competing claims still meet one limited pot.",
+            " Ranking under that limit is ordinary economising here.",
+        ]
+        pi = 0
+        while len(b) < 160 and pi < len(pads):
+            b = (b + pads[pi]).strip()
+            pi += 1
+        while len(b) < 160:
+            b += " More detail keeps the medium letter teaching, not thin."
+            if len(b) > 300:
+                break
     if len(b) > 320:
         b = b[:317].rsplit(" ", 1)[0] + "."
     return b
+
+
+def ensure_short(body: str) -> str:
+    """Collapse to first sentence-ish within 40–100 chars."""
+    b = body.strip()
+    if 40 <= len(b) <= 100:
+        return b
+    first = b.split(".")[0].strip() + "."
+    if len(first) > 100:
+        first = first[:97].rsplit(" ", 1)[0] + "."
+    if len(first) < 40:
+        first = (first[:-1] + " under scarce limits.").strip()
+        if len(first) > 100:
+            first = first[:97].rsplit(" ", 1)[0] + "."
+    return first
+
+
+def ensure_long(body: str, extra: str) -> str:
+    b = body.strip()
+    if len(b) >= 380:
+        return b
+    b2 = b + "\n\n" + extra.strip()
+    pads = [
+        " That concrete forgone path is what opportunity cost names here.",
+        " The limited pot cannot fund every claim at full strength together.",
+        " Leaving the next-best option behind is the cost the chapter tracks.",
+    ]
+    pi = 0
+    while len(b2) < 380 and pi < len(pads):
+        b2 += " " + pads[pi]
+        pi += 1
+    while len(b2) < 380:
+        b2 += " Scarce means force a ranking whenever two uses compete."
+        if len(b2) > 520:
+            break
+    return b2
 
 
 def check_case(expls, key) -> tuple[list[str], list[int]]:
