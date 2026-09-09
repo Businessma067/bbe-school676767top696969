@@ -18,6 +18,8 @@ type ShowcaseSlide = {
   href: string;
   video: string;
   poster: string;
+  /** CSS aspect-ratio for a perfect edge-to-edge fit (no letterbox / crop). */
+  aspect: string;
 };
 
 const MAIN_TABS: { key: MainTab; label: string }[] = [
@@ -37,6 +39,7 @@ const COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/economics",
     video: "/how-it-works/economics.mp4",
     poster: "/how-it-works/economics-poster.jpg",
+    aspect: "16 / 9",
   },
   {
     key: "math",
@@ -47,6 +50,7 @@ const COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
+    aspect: "3420 / 1966",
   },
   {
     key: "english",
@@ -57,6 +61,7 @@ const COURSE_SUBJECTS: ShowcaseSlide[] = [
     href: "/demo-practice/english",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
+    aspect: "3420 / 1966",
   },
 ];
 
@@ -70,6 +75,7 @@ const STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/flashcards",
     video: "/how-it-works/flashcards.mp4",
     poster: "/how-it-works/flashcards-poster.jpg",
+    aspect: "3420 / 1966",
   },
   {
     key: "matching",
@@ -80,6 +86,7 @@ const STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/matching",
     video: "/how-it-works/matching.mp4",
     poster: "/how-it-works/matching-poster.jpg",
+    aspect: "3420 / 1966",
   },
   {
     key: "tutor-exam",
@@ -90,6 +97,7 @@ const STUDY_TOOLS: ShowcaseSlide[] = [
     href: "/tutor-exam",
     video: "/how-it-works/tutor-exam.mp4",
     poster: "/how-it-works/tutor-exam-poster.jpg",
+    aspect: "3420 / 1966",
   },
 ];
 
@@ -290,7 +298,7 @@ export function HowItWorksSection() {
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
                 {hasVideoShowcase ? (
-                  <div className="relative aspect-[3420/1966] w-full">
+                  <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
                     <video
                       key={slide.key}
                       ref={videoRef}
@@ -314,7 +322,10 @@ export function HowItWorksSection() {
                     </button>
                   </div>
                 ) : (
-                  <div className="flex aspect-[3420/1966] w-full items-center justify-center px-6 text-center">
+                  <div
+                    className="flex w-full items-center justify-center px-6 text-center"
+                    style={{ aspectRatio: "16 / 9" }}
+                  >
                     <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
                       Walkthrough coming next. Switch to Course or Study tools to watch the demos.
                     </p>
@@ -424,10 +435,13 @@ export function HowItWorksSection() {
               onClick={closeZoom}
             >
               <div
-                className="relative w-[min(98vw,calc(94vh*3420/1966))] overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
+                className="relative overflow-hidden rounded-xl border border-white/15 bg-black shadow-2xl"
+                style={{
+                  width: `min(98vw, calc(94vh * (${slide.aspect})))`,
+                }}
                 onClick={(event) => event.stopPropagation()}
               >
-                <div className="relative aspect-[3420/1966] w-full overflow-hidden">
+                <div className="relative w-full overflow-hidden" style={{ aspectRatio: slide.aspect }}>
                   {/*
                     Zoom by sizing the video element (not CSS transform scale), so 100%
                     stays sharp on large screens and magnification reuses decoded pixels
