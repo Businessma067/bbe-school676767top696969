@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "A salary reallocates scarcity; it does not erase it. Even with steady pay, the household still has a finite budget and finite time — it cannot buy everything at once.\n\nSo the statement is False.",
-      "Economising is careful use of limited resources. Treating money, time, or materials as if they were infinite is the opposite of that idea.\n\nSo the statement is True.",
-      "Skipping a purchase is still a decision about scarce time or money. Inaction does not remove you from the set of economic choices; it is one of them. Nobody gets a clean exit simply by doing nothing.\n\nSo the statement is True.",
-      "Households with regular income still face limited budgets and must choose what to buy. Scarcity is not reserved for registered firms — families economise every week on rent, food, and leisure.\n\nSo the statement is False.",
-      "Households exchange whenever they buy bread, pay for a haircut, or sell a used bike. Entrepreneur status is not a ticket of admission to trade.\n\nSo the statement is False."
+      "Steady salary does not switch scarcity off. A household with regular pay still faces a finite monthly budget and finite hours in the day — rent, food, transport, and leisure compete for the same euros. Income changes which constraint bites hardest; it does not remove the fact that wants exceed what the paycheck can cover.\n\nPicture a nurse who earns a reliable wage yet still chooses between a weekend trip and repairing the washing machine. That choice only exists because scarcity survived the salary. The claim that income removes all limits confuses “more room to choose” with “no limits left.”\n\nSo the statement is False.",
+      "Economising is careful use of limited resources, not treating them as endless.\n\nSo the statement is True.",
+      "Skipping a purchase is still a decision about scarce time or money. Sitting on the sofa instead of shopping does not eject you from economic life; it ranks “do nothing now” above other uses of those hours and euros. Nobody gets a clean exit simply by inactivity.\n\nSo the statement is True.",
+      "Registered firms are not the only ones who meet limits. A family with steady income still rations rent, groceries, and leisure against a finite budget each month. Treating scarcity as a business-only problem ignores ordinary household economising — the weekly shop, the heating bill, the decision to repair rather than replace.\n\nSo the statement is False.",
+      "Households trade every day: buying bread, paying for a haircut, selling a used bike. Entrepreneur status is not a ticket of admission to exchange.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -48,11 +48,11 @@
       true
     ],
     "tactical_explanations": [
-      "Goods are tangible items — a loaf, a phone, a coat. Intangible activities (repairs, lessons, software installs) are services, not goods. The claim swaps the two labels.\n\nSo the statement is False.",
-      "A service is an intangible activity done for someone: installing software or preparing a drink fits that test.\n\nSo the statement is True.",
-      "Needs keep basic well-being going; wants are desired extras that are not essential. That split is exactly what the statement reports.\n\nSo the statement is True.",
-      "Families need food and shelter; firms need staff, materials, and working equipment. Either side can meet those needs by trading with the other.\n\nSo the statement is True.",
-      "Limited resources force careful choices — that is scarcity, and economising is the response. Assuming unlimited supply would ignore the constraint the chapter starts from.\n\nSo the statement is True."
+      "Goods are tangible items such as a loaf or a coat, not intangible activities.\n\nSo the statement is False.",
+      "A service is work done for someone without handing over a lasting object: installing software or preparing a drink fits that test. The intangibility of the activity is what places it on the service side of the goods–services line.\n\nSo the statement is True.",
+      "Needs keep basic well-being going — food, shelter, essential care — while wants are desired extras that are not required for that baseline. The statement’s split matches how the chapter separates what you must cover from what you merely desire.\n\nA household can skip a cinema night and still be okay; skipping food or heat is a different category. That contrast is exactly the needs-versus-wants distinction, and it survives even when both are bought in the same weekly shop.\n\nSo the statement is True.",
+      "Families need food and shelter; firms need staff, materials, and working equipment. Either side can meet those needs by trading with the other — groceries for cash, wages for labour, parts for invoices.\n\nSo the statement is True.",
+      "Limited resources force careful choices: that is scarcity, and economising is the response. Assuming unlimited supply would ignore the constraint the chapter starts from.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -77,11 +77,11 @@
       false
     ],
     "tactical_explanations": [
-      "Businesses trade with households every day — selling goods, buying labour, hiring suppliers. There is no legal bar that confines exchange to consumers alone.\n\nSo the statement is False.",
-      "A shop needs stock, premises, and staff just as a family needs food and heat. Registered businesses are not need-free shells.\n\nSo the statement is False.",
-      "Leaving pocket money unspent is still a choice about scarce cash — save now, spend later, or hold it. The teenager has not stepped outside economic decision-making.\n\nSo the statement is False.",
-      "When a household pays a firm (or another household) for something useful, exchange is doing the work of fulfilling a need or want.\n\nSo the statement is True.",
-      "Barter is exchange without money: gardening help for a bookshelf still swaps valued things. Cash is common, not required.\n\nSo the statement is False."
+      "Businesses trade with households every day — selling goods, buying labour, hiring suppliers. There is no legal bar that confines exchange to consumers alone.\n\nA bakery sells loaves to families; a café buys milk from a dairy; a teenager sells a used console online. Trade runs both ways across the household–firm boundary, not only from shoppers toward empty shelves.\n\nSo the statement is False.",
+      "Shops need stock, premises, and staff — businesses are not need-free.\n\nSo the statement is False.",
+      "Leaving pocket money unspent is still a choice about scarce cash — save now, spend later, or hold it. The teenager has not stepped outside economic decision-making by refusing to buy.\n\nSo the statement is False.",
+      "When a household pays a firm for something useful, exchange fulfils a need or want through trade.\n\nSo the statement is True.",
+      "Barter is exchange without money: gardening help for a bookshelf still swaps valued things. Cash is common, not required for the swap to count as genuine exchange.\n\nImagine two neighbours agreeing that one mows the lawn while the other builds a shelf. No euros change hands, yet each gives something the other values — that is exchange under another payment form, not a non-economic favour outside the chapter’s map.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -107,10 +107,10 @@
     ],
     "tactical_explanations": [
       "Computers are goods; installing software is a service — both help people meet needs.\n\nSo the statement is True.",
-      "A smartphone maker cannot assemble handsets without specialised electronic parts from suppliers. That input requirement is an operational need of the manufacturer.\n\nSo the statement is True.",
-      "Fabricating components means drawing on raw materials and a workforce; isolation is not how production works.\n\nSo the statement is True.",
-      "People buy, sell, and swap goods and services directly — they are full participants in trade, not spectators.\n\nSo the statement is True.",
-      "Food, shelter, and medical care are household needs; cinema nights are wants layered on top. Both sit inside everyday household demand.\n\nSo the statement is True."
+      "A smartphone maker cannot assemble handsets without specialised electronic parts from suppliers. That input requirement is an operational need of the manufacturer, not a consumer-side curiosity. Without those components, the production line stops regardless of how strong final demand looks.\n\nSo the statement is True.",
+      "Fabricating components means drawing on raw materials and a workforce; isolation is not how production works. A plant that tried to invent every input alone would still need people and materials from somewhere.\n\nSo the statement is True.",
+      "People buy, sell, and swap goods and services directly — they are full participants in trade, not spectators standing outside the market while firms alone move resources.\n\nSo the statement is True.",
+      "Food, shelter, and medical care are household needs; cinema nights are wants layered on top. Both sit inside everyday household demand, but only the first group is essential for basic well-being.\n\nA family that skips the film is still housed and fed; a family that cannot cover rent faces a different problem. Keeping that split clear matters when you classify why households enter exchange.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -135,11 +135,11 @@
       true
     ],
     "tactical_explanations": [
-      "Roasted beans in a bag are a tangible good; the barista’s drink preparation is an intangible service.\n\nSo the statement is True.",
-      "Needing enough caffeine to function is not the same as craving a flavoured latte for pleasure. Needs cover basic well-being; wants cover non-essential desires — the concepts are not identical.\n\nSo the statement is False.",
-      "A habitual favourite drink that is not essential for survival or basic health sits in the want category.\n\nSo the statement is True.",
-      "The café needs reliable bean suppliers, cups, and staff hours to keep serving customers. Being a business does not wipe those operational needs away.\n\nSo the statement is False.",
-      "Customer pays, café supplies — each side gets something valued. That two-sided fulfilment is exchange.\n\nSo the statement is True."
+      "Roasted beans are a good; barista drink preparation is a service.\n\nSo the statement is True.",
+      "Needing enough caffeine to function is not the same as craving a flavoured latte for pleasure. Needs cover basic well-being; wants cover non-essential desires — the concepts are not identical, even when both involve coffee.\n\nA customer who buys plain filter coffee to stay awake for a night shift is closer to a functional need than one who orders a caramel-syrup cappuccino purely for taste. Collapsing both into one label erases that difference and misreads the café counter.\n\nSo the statement is False.",
+      "A habitual craving for a particular drink is more accurately a want when it is not essential for basic well-being. Enjoyment and habit do not automatically turn the order into a need.\n\nSo the statement is True.",
+      "Cafés need reliable bean suppliers, working machines, and staff just as any other firm needs inputs. Being a business does not erase those operational needs — without beans or a working grinder, the menu stops.\n\nSo the statement is False.",
+      "Paying for beans or drinks is exchange: the customer gets a good or service, the café gets revenue that can meet its own bills.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -164,11 +164,11 @@
       false
     ],
     "tactical_explanations": [
-      "Getting to school with the bus pass supports a need; the game skin is entertainment, not a basic necessity.\n\nSo the statement is True.",
-      "Price tags do not turn wants into needs. A ten-euro skin remains a want even though it costs money. Classification rests on necessity for well-being, not on whether something is sold.\n\nSo the statement is False.",
-      "Jonas’s twelve-euro choice already forces trade-offs among the bus pass, the game skin, and saving — before any business registration enters the picture.\n\nSo the statement is False.",
-      "Saving the twelve euros is itself an allocation: hold cash now rather than buy the pass or the skin. Choosing not to buy is not escaping economics; it is one use of limited means.\n\nSo the statement is False.",
-      "Buying the bus pass does not delete the desire for the game skin. The want can return next month with new pocket money. “Permanently” and “never” overclaim.\n\nSo the statement is False."
+      "The bus pass is a school-travel need; the game skin is a non-essential want.\n\nSo the statement is True.",
+      "A price on both items does not turn the game skin into a need. Needs and wants can both cost money; classification follows well-being, not the sticker.\n\nJonas could skip the skin and still reach school with a pass. Treating every priced item as a need would erase the chapter’s distinction the moment a shop attaches a euro amount to cosmetics and transport alike.\n\nSo the statement is False.",
+      "Scarce time and pocket money force choices long before anyone registers a firm. Individuals face economic decisions as soon as resources are limited relative to competing uses — school transport versus game cosmetics included.\n\nSo the statement is False.",
+      "Saving the twelve euros and buying nothing is still a ranking of scarce cash: hold it, spend later, or spend now. Jonas has not opted out of economic decision-making by refusing the purchase.\n\nSo the statement is False.",
+      "Buying the bus pass does not delete the want for the game skin forever. Wants can return next month when pocket money refreshes; satisfying one claim on the budget does not erase other desires.\n\nPicture Jonas riding to school with the pass and still browsing the skin shop on his phone. The want survived the purchase. Permanent disappearance is not how wants behave after a single alternative spend.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -193,11 +193,11 @@
       true
     ],
     "tactical_explanations": [
-      "Screen replacement is labour on the customer’s device — a service. A phone case sold at the counter is a tangible take-away — a good.\n\nSo the statement is True.",
-      "A limited monthly parts batch is scarce by definition: once it is gone, further repairs wait. Calling the shop a business does not create an infinite stockroom.\n\nSo the statement is False.",
-      "A decorative case bought only for its look is preference, not a requirement for basic well-being — a want.\n\nSo the statement is True.",
-      "Whether someone casually calls phones a luxury, repair can still meet a real need — school contact, work, emergencies. Phones are not outside economic analysis, and “never” is too strong.\n\nSo the statement is False.",
-      "A fixed monthly parts batch is a hard capacity ceiling. The shop must decide which jobs to take, delay, or refuse — that ranking is economising.\n\nSo the statement is True."
+      "Screen replacement is a service; a phone case on the shelf is a good.\n\nSo the statement is True.",
+      "PhoneFix still faces scarce spare parts each month even though it is a business. Firm status does not invent unlimited inventory; a thin batch of screens forces triage of which repairs to take.\n\nA shop that burns through its monthly allotment by Wednesday cannot magic more modules into existence because it has a trade licence. Scarcity of parts is an operational fact, not a household-only problem.\n\nSo the statement is False.",
+      "A decorative case bought purely for design satisfies a want, not a basic need. Style preference does not become essential well-being just because the item protects a phone.\n\nSo the statement is True.",
+      "Phones can be central to work and contact; repairing one can fulfil a genuine need. Calling every handset a luxury outside economics misreads how households use communication devices day to day.\n\nSo the statement is False.",
+      "A limited monthly batch of parts forces the shop to economise: prioritise urgent jobs, defer others, or refuse overflow. That allocation under a hard stock cap is textbook economising.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -222,11 +222,11 @@
       true
     ],
     "tactical_explanations": [
-      "Introductory models summarise the economy as households and entrepreneurs interacting through exchange.\n\nSo the statement is True.",
-      "Goods are tangible items; services are intangible activities performed for someone.\n\nSo the statement is True.",
-      "Both households and businesses have needs (and wants). Trading with others is one way those get fulfilled.\n\nSo the statement is True.",
-      "Scarcity means resources are limited relative to desired uses. Economising is the careful response; assuming unlimited means denies the constraint.\n\nSo the statement is True.",
-      "Every actor still faces scarce time and limited means. Trying to “opt out” leaves those constraints in place — including the decision to do nothing with a resource.\n\nSo the statement is True."
+      "Households and entrepreneurs interacting form the economy’s core cast.\n\nSo the statement is True.",
+      "Goods are tangible items you can hold; services are intangible activities performed for someone. A loaf versus a haircut is the standard illustration of that split.\n\nSo the statement is True.",
+      "Both households and businesses have needs — food and shelter on one side, stock and staff on the other — and exchange is one way those needs and wants get fulfilled when the two sides trade.\n\nA family pays a bakery for bread; the bakery pays a miller for flour. Needs travel through those swaps rather than vanishing because one party is a firm.\n\nSo the statement is True.",
+      "Scarcity means resources are limited relative to competing uses, so individuals and businesses must economise instead of assuming unlimited supply. Careful allocation is the rational response to that constraint.\n\nIgnoring the limit — spending as if time, money, and materials never run out — is exactly what economising rejects. The statement states that discipline correctly.\n\nSo the statement is True.",
+      "Nobody truly opts out: even “doing nothing” ranks scarce time or money against other options. Households and businesses alike stay inside economic decision-making.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -251,11 +251,11 @@
       false
     ],
     "tactical_explanations": [
-      "Herr Novak organises production and sale at the bakery — entrepreneur. Families buying bread act as households.\n\nSo the statement is True.",
-      "Bread is a tangible good; doorstep delivery is an intangible service. Tangible versus activity matches the usual split.\n\nSo the statement is True.",
-      "Owning a bakery does not cancel Herr Novak’s personal needs for food, housing, or rest. Entrepreneur role and private household needs coexist in the same person.\n\nSo the statement is False.",
-      "Paying one euro extra for delivery is still a swap of money for a valued service. Performance ending does not erase the exchange that just occurred.\n\nSo the statement is False.",
-      "Flour and oven fuel arrive in limited quantities and at a cost. A bakery must choose batch sizes and recipes under those limits — that is economising.\n\nSo the statement is False."
+      "Herr Novak is the entrepreneur; bread-buying families are households.\n\nSo the statement is True.",
+      "Bread is a tangible good; doorstep delivery is an intangible service. The bakery can sell both in one order without collapsing the distinction.\n\nSo the statement is True.",
+      "Owning a business does not erase personal needs. Herr Novak still needs food, rest, and income for his own household life even while he runs the bakery. Entrepreneur status and personal needs coexist.\n\nA baker who works sixteen-hour days still has to eat and sleep. Treating the owner as a need-free machine confuses the firm’s role with the person’s biology and budget.\n\nSo the statement is False.",
+      "Paying for delivery is still exchange: money for a service that has value when performed. Finished work does not erase that it was traded.\n\nSo the statement is False.",
+      "Flour and oven fuel are limited inputs. Any bakery that treats them as unlimited will over-order, waste heat, or run out mid-bake — so Herr Novak must economise on ingredients like every other producer.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -280,11 +280,11 @@
       true
     ],
     "tactical_explanations": [
-      "Gardening lessons for a handmade bookshelf is a clear swap of valued things. Money is absent; exchange is not.\n\nSo the statement is True.",
-      "Euro notes and bank transfers are convenient media of exchange, not the definition of it. Two neighbours can still trade lessons for furniture with no cash changing hands. Requiring banknotes would wrongly exclude barter from economics.\n\nSo the statement is False.",
-      "Wood for the bookshelf is finite. Using more on one project leaves less for the next — the carpenter must economise.\n\nSo the statement is True.",
-      "Gardening lessons are an activity performed for the neighbour, not a physical object handed over — a service.\n\nSo the statement is True.",
-      "People have needs and wants whether or not they run a firm.\n\nSo the statement is True."
+      "Gardening lessons swapped for a bookshelf still count as exchange without money.\n\nSo the statement is True.",
+      "Exchange does not require euro banknotes or electronic transfers. Barter — lessons for a bookshelf — is exchange under another payment form. Insisting on cash-only trade would erase neighbour swaps that clearly move valued goods and services.\n\nIf only bank transfers counted, those two neighbours would be “outside” exchange while each still gains something the other supplies. That is an artificial gate the chapter does not set.\n\nSo the statement is False.",
+      "Wood used to build the bookshelf is a limited resource, so the carpenter must economise on how much he uses per piece — cut carefully, avoid waste, choose dimensions that fit the available timber.\n\nSo the statement is True.",
+      "Gardening lessons are an activity performed for the neighbour — a service, not a physical object.\n\nSo the statement is True.",
+      "Individuals, not only businesses, have needs and wants that direct exchange can help satisfy — food grown, shelves built, skills shared between people without a shopfront.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -309,11 +309,11 @@
       true
     ],
     "tactical_explanations": [
-      "Petra’s family buys as a household; Fabian builds and sells as an entrepreneur.\n\nSo the statement is True.",
-      "The finished oak table is a tangible item Fabian produces and delivers — a good.\n\nSo the statement is True.",
-      "Paying €650 for the table is exchange that meets the family’s furniture need.\n\nSo the statement is True.",
-      "Timber is an operational input Fabian must obtain to keep building. Calling raw materials “merely wants” mislabels a production need. Without oak he cannot deliver the commissioned table at all.\n\nSo the statement is False.",
-      "Oak is limited and costly. Fabian has to plan how much board goes into each commission rather than cut freely.\n\nSo the statement is True."
+      "Petra’s family is the household; Fabian is the entrepreneur in the trade.\n\nSo the statement is True.",
+      "The finished dining table is a tangible good Fabian produces and delivers to the family.\n\nSo the statement is True.",
+      "Paying for the table fulfils the family’s furniture need through exchange: money for a usable good that meets a household requirement rather than a gift or a favour outside trade.\n\nSo the statement is True.",
+      "Timber is a genuine operational need for a carpenter, not a mere want. Without oak or similar stock, Fabian cannot build the commission. Calling raw materials “only wants” mislabels a production input as optional desire.\n\nA workshop that runs out of boards cannot deliver tables no matter how strong customer demand is. That shortage is a needs problem on the firm side, not a cosmetic preference.\n\nSo the statement is False.",
+      "Timber is limited, so Fabian must economise on oak per commission — design cuts, scrap rates, and board choice all ration the stock.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -338,11 +338,11 @@
       false
     ],
     "tactical_explanations": [
-      "Without specialised electronic parts from suppliers, laptop production stalls.\n\nSo the statement is True.",
-      "High-tech firms need components, energy, and skilled staff just as consumers need goods. “Zero internal needs” is wrong.\n\nSo the statement is False.",
-      "Daily shopping — food, transport, streaming, clothes — is households using market exchange for both needs and wants.\n\nSo the statement is True.",
-      "Satisfying food and rent for one month does not switch off desires for holidays, gadgets, or better housing. Wants keep regenerating; they are not a one-time checklist that disappears when basics are covered.\n\nSo the statement is False.",
-      "Teenagers with pocket money already buy, save, and trade. They sit on the household side long before any business registration.\n\nSo the statement is False."
+      "Laptop makers need specialised electronic components from suppliers to keep production running.\n\nSo the statement is True.",
+      "High-tech firms have internal needs — components, skilled staff, power, premises — just as end consumers have needs. Restricting “genuine need” to shoppers alone would leave the factory unexplained when parts run short.\n\nAn assembler waiting on delayed chips is experiencing a real production need. Pretending only final buyers feel need erases that side of the economy and misreads why firms enter exchange for inputs.\n\nSo the statement is False.",
+      "Households buy goods and services from businesses to satisfy both needs and wants in daily life — groceries and heating alongside cinema tickets and gadgets.\n\nSo the statement is True.",
+      "Wants do not vanish automatically once monthly needs are covered. Extra desires can appear or persist even after rent and food are paid — new trainers, a trip, a better phone.\n\nSo the statement is False.",
+      "Teenagers with pocket money already make scarce-resource choices inside the economy. They do not wait for a business licence or formal household registration to start economising on allowance and time.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -367,11 +367,11 @@
       false
     ],
     "tactical_explanations": [
-      "Transport and toiletries support everyday functioning — needs. Designer trainers at €140 are desired extras — a want.\n\nSo the statement is True.",
-      "Money from parents places Lukas inside a household budget.\n\nSo the statement is False.",
-      "Buying trainers spends part of the month’s cash; it does not cancel the need to get to school. Transport still has to be covered from whatever remains of the €300 — the want purchase does not erase the need.\n\nSo the statement is False.",
-      "Economics studies how people allocate scarce means among competing ends — including wants. Calling trainers “irrational” does not eject them from the subject.\n\nSo the statement is False.",
-      "Three hundred euros a month is a hard ceiling. Choosing trainers versus transport is economising, not swimming in unlimited means.\n\nSo the statement is False."
+      "Transport and toiletries are needs; the 140-euro trainers are a want.\n\nSo the statement is True.",
+      "Receiving money from parents still places Lukas on the household side of the economy. Pocket money is a household transfer, not an exit pass from economic life.\n\nA student who budgets the allowance between bus fares and trainers is exactly the household decision-maker the chapter describes — dependent funding does not erase the role or the scarcity of the monthly sum.\n\nSo the statement is False.",
+      "Buying trainers does not cancel the need for transport for the rest of the month. Needs and wants compete for the same budget; satisfying one claim leaves the other intact.\n\nSo the statement is False.",
+      "Wanting trainers is a preference economics can analyse; “irrational” is not a reason to eject the desire from the subject. Scarce money still forces a choice whether or not outsiders approve of the purchase.\n\nSo the statement is False.",
+      "A fixed monthly sum is a limited resource that must be economised across competing uses. Calling it unlimited contradicts the hard cap of the allowance itself — once the euros are spent, nothing remains to stretch.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -396,11 +396,11 @@
       false
     ],
     "tactical_explanations": [
-      "Reinisch sells produce as an entrepreneur; village buyers act as households at the stall.\n\nSo the statement is True.",
-      "Eight hectares on this farm are the land he actually commands. Theoretical land elsewhere does not make his own plot non-scarce.\n\nSo the statement is False.",
-      "Potatoes and carrots are tangible items. Needing cooking before eating does not turn them into services.\n\nSo the statement is True.",
-      "Limited land means crop mix is a forced allocation decision — Reinisch cannot plant everything on the same hectares.\n\nSo the statement is True.",
-      "Cash payment is the usual form of exchange at a market stall. Barter is one form of trade, not the only valid one.\n\nSo the statement is False."
+      "Reinisch sells as an entrepreneur; village buyers act as households.\n\nSo the statement is True.",
+      "Farmland elsewhere does not make Reinisch’s eight hectares non-scarce for him. What he can plant this season is limited by the fields he controls; theoretical purchases elsewhere do not expand today’s acreage.\n\nIf he splits the eight hectares between potatoes and carrots, every extra row of one crop means fewer rows of the other. That trade-off is scarcity on his own land, regardless of listings in another district.\n\nSo the statement is False.",
+      "Potatoes and carrots are tangible goods even if cooked later; preparation does not turn them into services.\n\nSo the statement is True.",
+      "Splitting eight hectares between crops is an economic decision Reinisch cannot avoid given limited land. Allocation under a hard acreage cap is economising in plain form.\n\nSo the statement is True.",
+      "Cash at the stall is genuine exchange — money for goods. Barter is one form, not the only form that counts.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -425,11 +425,11 @@
       true
     ],
     "tactical_explanations": [
-      "Toni and Rosa organise offerings for sale — entrepreneurs. Visiting families buy as households.\n\nSo the statement is True.",
-      "A cheese wheel is a good; face-painting is a service.\n\nSo the statement is True.",
-      "Weekly grocery cheese supports a need; face-painting is enjoyment rather than basic well-being — more of a want.\n\nSo the statement is True.",
-      "Money for cheese or for face-painting is exchange: each side gives something and receives something valued.\n\nSo the statement is True.",
-      "Thirty wheels left is a hard stock limit on market day. Toni must decide how many to hold for regulars, how many to sell early, and whom to turn away when the queue outruns the crate — that ranking is economising under scarcity.\n\nSo the statement is True."
+      "Toni and Rosa organise stalls and sell as entrepreneurs; visiting families buy as households. Market day puts those roles face to face.\n\nSo the statement is True.",
+      "A cheese wheel is a tangible good; face-painting is an activity performed for a child — a service.\n\nSo the statement is True.",
+      "Cheese for weekly groceries leans toward a need; face-painting for festival fun leans toward a want. Both can be bought on the same square without collapsing the categories.\n\nSo the statement is True.",
+      "Paying for cheese or face-painting is exchange on both sides: buyers get a good or service, sellers get revenue that can meet their own needs or wants.\n\nSo the statement is True.",
+      "With only thirty wheels left, Toni must allocate stock among queuing families — who gets a full wheel, who gets a half, who waits. That rationing under a hard inventory cap is economising in public view.\n\nA seller who pretends the remaining wheels are unlimited will over-promise and leave the last customers empty-handed. Scarcity of stock forces the allocation choice whether or not Toni likes making it.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -454,11 +454,11 @@
       true
     ],
     "tactical_explanations": [
-      "Large cash reserves do not create infinite managerial attention or factory hours. Those remain scarce even for a multinational.\n\nSo the statement is True.",
-      "Unlimited wants are exactly why budgets bite.\n\nSo the statement is False.",
-      "Raising taxes takes political time and still claims finite real resources — labour, materials, administrative capacity. A government cannot fund every project “immediately” just by changing a tax rate. Scarcity binds the public sector too.\n\nSo the statement is False.",
-      "When a resource has competing uses and is limited, careful allocation — economising — is the rational response.\n\nSo the statement is True.",
-      "Labour hours and raw materials cost money and run out. Entrepreneurs who ignore that constraint do not stay viable.\n\nSo the statement is True."
+      "Cash reserves do not erase scarce managerial attention or factory capacity.\n\nSo the statement is True.",
+      "Unlimited wants do not free households from budgets. Wants being open-ended is exactly why limited income forces economising — more desires than euros.\n\nA family that wants a holiday, new furniture, and a car still faces a paycheck that cannot fund all three at once. Pretending budgets do not constrain because wants are unlimited reverses the logic: unlimited wants make the budget bite harder.\n\nSo the statement is False.",
+      "Governments face scarce time, political capital, and real resources even when they can tax. Raising revenue does not instantly create unlimited capacity for every project on the wishlist.\n\nSo the statement is False.",
+      "Economising is rational when a resource is limited relative to competing uses — allocate carefully instead of treating the stock as endless.\n\nSo the statement is True.",
+      "Entrepreneurs must economise on labour hours and raw materials to stay viable. Input limits are everyday firm constraints, not optional thrift for “small” producers only.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -483,11 +483,11 @@
       true
     ],
     "tactical_explanations": [
-      "Sami sells beans and drinks as an entrepreneur; customers buy as households.\n\nSo the statement is True.",
-      "A bag of beans is a good; pulling an espresso is a service performed for the customer.\n\nSo the statement is True.",
-      "A strong coffee habit can be comfort or preference rather than a strict survival requirement — often a want.\n\nSo the statement is True.",
-      "Trying a new seasonal flavour for enjoyment is desire, not basic necessity — a want.\n\nSo the statement is True.",
-      "Forty kilograms of the rare lot is a hard season cap. Sami must decide which drinks and bag sales get that coffee — economising under the limit.\n\nSo the statement is True."
+      "Sami is the entrepreneur; coffee customers act as households in the queue.\n\nSo the statement is True.",
+      "The bean bag is a tangible good; espresso preparation is work performed — a service. Both can leave the same counter without merging categories into one vague “coffee product.”\n\nSo the statement is True.",
+      "A strong habitual coffee craving may still be a want rather than a strict survival need. Habit and enjoyment do not automatically equal essential well-being, even when the craving feels urgent before work.\n\nSo the statement is True.",
+      "Trying a new seasonal flavour for enjoyment is a want, not a basic well-being need.\n\nSo the statement is True.",
+      "A forty-kilogram seasonal bean cap forces Sami to allocate roast across drinks, retail bags, and days of the week. That hard weight limit is scarcity; spreading it carefully is economising.\n\nIf he pours most of the stock into one popular drink in week one, later weeks run dry. The cap makes those trade-offs unavoidable whether or not morning demand feels endless at the till.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -512,11 +512,11 @@
       false
     ],
     "tactical_explanations": [
-      "Novels for algebra tutoring is still a mutual swap of valued things. Money is not required for exchange.\n\nSo the statement is False.",
-      "Felix’s tutoring is an activity — a service. Nora’s novels are tangible goods. The labels line up.\n\nSo the statement is True.",
-      "Students still have scarce time, needs, and wants. Being classmates rather than firms does not eject them from exchange concepts.\n\nSo the statement is False.",
-      "Felix’s free afternoons are limited. Tutoring Nora means fewer hours for homework, sport, or rest — allocation of a scarce resource.\n\nSo the statement is True.",
-      "After the swap, both still decide how to use remaining evenings, weekends, and energy. Agreement on one trade is not a full exit from economic choices.\n\nSo the statement is False."
+      "Novels-for-tutoring is exchange without money: each classmate gives something the other values. Cash is not a required ingredient for the swap to count.\n\nIf only euros defined exchange, Felix’s algebra help and Nora’s books would sit outside economics while clearly moving valued services and goods between them. That cash-only gate is artificial and would mislabel an obvious trade of help for novels.\n\nSo the statement is False.",
+      "Felix’s tutoring is a service; Nora’s novels are goods under the usual split.\n\nSo the statement is True.",
+      "Students still have needs, wants, and scarce time. Being not-yet-businesses does not eject them from exchange concepts — the swap itself is economic activity between two people.\n\nSo the statement is False.",
+      "Felix’s limited free time is a scarce resource allocated between tutoring and other commitments. Agreeing to help Nora means fewer hours for something else that week.\n\nSo the statement is True.",
+      "Agreeing the swap does not end further economic decisions about remaining time.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -541,11 +541,11 @@
       true
     ],
     "tactical_explanations": [
-      "Growing your own food still uses limited land, time, and seed. Retirees must choose plot layouts and crop mixes — economising continues.\n\nSo the statement is True.",
-      "Bicycle repair is work performed on the customer’s bike — a service.\n\nSo the statement is True.",
-      "Surplus eggs sold for cash give neighbours food and the seller money. That trade fulfils needs or wants through exchange.\n\nSo the statement is True.",
-      "Stopping wage work does not turn retirees into entrepreneurs by default. They typically remain households. Selling the occasional surplus egg does not automatically reclassify them as firms organising production under uncertainty.\n\nSo the statement is False.",
-      "Land planted in vegetables cannot also hold the same square metres of chicken run. The mix is an unavoidable allocation choice under scarce space.\n\nSo the statement is True."
+      "Self-grown food still faces scarce land, time, and seed — retirees must economise.\n\nSo the statement is True.",
+      "Bicycle repair at a workshop is work performed — a service — not mainly an item handed over as the product sold.\n\nSo the statement is True.",
+      "Selling surplus eggs to neighbours for cash is exchange that can fulfil buyers’ needs or wants while giving the retirees income or trade value in return. Money changing hands for food is ordinary household–neighbour trade, not a non-economic gift just because the sellers are retired.\n\nSo the statement is True.",
+      "No longer earning wages does not reclassify retirees as entrepreneurs by default. Growing food and selling eggs can include household roles; pension status alone does not force the entrepreneur label.\n\nA couple planting for their own kitchen is acting as a household meeting its own needs. Occasional egg sales do not automatically rewrite that primary role into “entrepreneur instead of household.”\n\nSo the statement is False.",
+      "How much land to plant versus how many chickens to keep is an unavoidable economic choice under limits.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -570,11 +570,11 @@
       false
     ],
     "tactical_explanations": [
-      "Firewood for canned food is exchange that meets needs even far from shops.\n\nSo the statement is True.",
-      "Avoiding shops does not cancel decisions about time, firewood, and food stocks. Karl still chooses under scarcity.\n\nSo the statement is False.",
-      "Claiming “I need nobody” does not create infinite wood, daylight, or energy. Scarcity still binds his daily work.\n\nSo the statement is False.",
-      "Forests regenerate slowly and chopping takes time and tools. Remote living does not make timber an unlimited free flow.\n\nSo the statement is False.",
-      "Needs, wants, and scarcity apply to people generally. A cabin dweller trading with hikers still faces limited daylight for chopping and limited shelf space for cans — formal registration is irrelevant to those constraints.\n\nSo the statement is False."
+      "Firewood-for-food trade fulfils needs through exchange even without nearby shops.\n\nSo the statement is True.",
+      "Avoiding shops does not mean Karl has opted out of economic decisions. He still allocates scarce time to chopping wood, storing food, and arranging trades with neighbours.\n\nA cabin dweller who spends a morning on firewood instead of fishing has ranked scarce hours. Distance from retail does not create an exit from that kind of choice or from scarcity of energy and stores.\n\nSo the statement is False.",
+      "Claiming he needs nobody does not abolish scarcity for Karl. Land, time, tools, and energy remain limited relative to what he wants done around the cabin.\n\nSo the statement is False.",
+      "Forests are not unlimited for one person in one season. Chopping firewood still requires economising on time, dry wood access, and storage — remote living does not invent infinite timber on demand.\n\nSo the statement is False.",
+      "Needs, wants, and scarcity affect individuals whether or not they hold a business licence or sit in an “official” household form. Karl’s cabin life is still inside those constraints.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -599,11 +599,11 @@
       true
     ],
     "tactical_explanations": [
-      "The Hoffmanns pay for kitchen wiring as a household; Boris supplies the repair as an entrepreneur.\n\nSo the statement is True.",
-      "Electrical repair is labour performed, not a boxed product delivered — a service.\n\nSo the statement is True.",
-      "Faulty wiring created a need for a safe working system; paying Boris meets that need through exchange.\n\nSo the statement is True.",
-      "Buying groceries that evening, Boris spends as a household with his own family’s needs — roles can switch across the day.\n\nSo the statement is True.",
-      "Working hours are finite. Accepting one job means less time for another; Boris must economise across bookings.\n\nSo the statement is True."
+      "Hoffmanns pay as a household; Boris supplies the repair as an entrepreneur.\n\nSo the statement is True.",
+      "Electrical repair is work performed rather than a physical item delivered as the product — a service that restores function in the home when wiring fails. The Hoffmanns pay for skilled labour, not for a boxed appliance left on the doorstep.\n\nSo the statement is True.",
+      "Faulty wiring created a need for a working system; paying Boris fulfils that need through exchange of money for skilled service at the property.\n\nSo the statement is True.",
+      "When Boris buys groceries later, he acts as a household with needs of his own. Entrepreneur by day does not erase household roles after hours.\n\nAn electrician who invoices the Hoffmanns in the afternoon and shops for dinner in the evening switches roles without contradiction. Both sides of economic life apply to the same person at different moments, and groceries remain a household need even for someone who runs a trade.\n\nSo the statement is True.",
+      "Boris’s limited working hours are scarce and must be economised across jobs.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -628,11 +628,11 @@
       false
     ],
     "tactical_explanations": [
-      "Installing software is an activity performed for the customer. The computer’s physical presence does not turn the install into a good.\n\nSo the statement is True.",
-      "An e-book file is a digital good — an item that can be owned and transferred — even though it has no weight. Lack of mass does not force the service label.\n\nSo the statement is False.",
-      "Haircuts, repairs, lessons, and installs are exchanged every day between households and firms. Services trade in markets too.\n\nSo the statement is False.",
-      "A meal on the premises mixes food with preparation and serving. Calling the whole experience “a good because food is tangible” ignores the service element restaurants sell.\n\nSo the statement is False.",
-      "Delivery is an extra service layered onto the pizza. The pizza remains a good; the drop-off does not rewrite its category.\n\nSo the statement is False."
+      "Software installation is a service even when a physical computer is involved.\n\nSo the statement is True.",
+      "A downloadable e-book is still a good in the digital sense: a lasting product transferred to the buyer, not an activity performed live. Lack of weight does not automatically make it a service.\n\nCalling every weightless file a service would turn music downloads, e-books, and software licences into “services” by mass alone, blurring the chapter’s activity-versus-item line beyond recognition.\n\nSo the statement is False.",
+      "Services are exchanged in markets every day — repairs, lessons, deliveries — alongside goods. Markets are not goods-only clubs closed to intangible activities.\n\nSo the statement is False.",
+      "A restaurant meal mixes food with preparation and service on the premises; treating it as “always only a good because food is tangible” oversimplifies what the diner pays for at the table.\n\nSo the statement is False.",
+      "Delivering a pizza does not convert the pizza from a service into a good by magic of the doorbell. The food remains a good; the delivery run is a service layered on top.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -657,11 +657,11 @@
       true
     ],
     "tactical_explanations": [
-      "Elena’s violin performance is an activity listeners enjoy — a service.\n\nSo the statement is True.",
-      "Paying for atmosphere and music is enjoyment rather than survival — a want.\n\nSo the statement is True.",
-      "A tip still swaps money for a performance the listener values. Voluntary and unfixed amounts do not cancel exchange; street music funded by coins in a case is still trade of money for a service.\n\nSo the statement is False.",
-      "Rent is a personal obligation. Elena’s need to cover it shows individuals face economic needs, not only registered firms.\n\nSo the statement is True.",
-      "Sunday hours are limited. Choosing one square over another allocates scarce performing time — economising.\n\nSo the statement is True."
+      "Elena’s street performance is a service — activity enjoyed, not an item handed over.\n\nSo the statement is True.",
+      "Listeners tipping for atmosphere satisfy a want, not a basic survival need. Enjoyment of music is desirable, not essential well-being.\n\nSo the statement is True.",
+      "Voluntary, unfixed tip amounts can still be exchange: listeners give money, Elena gives a performance they value. Lack of a posted price does not erase the swap.\n\nA passer-by who drops two euros because the song was worth it has traded money for a service. Fixed menus are common in shops, not a requirement for exchange to exist on a street corner between musician and listener.\n\nSo the statement is False.",
+      "Elena’s need to cover rent shows individuals, not only registered businesses, experience economic needs. Housing costs do not wait for a company registration number.\n\nSo the statement is True.",
+      "Limited Sunday performing time is scarce; Elena must economise across locations.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -686,11 +686,11 @@
       true
     ],
     "tactical_explanations": [
-      "The haircut is labour performed — a service. The shampoo bottle is a tangible take-home product — a good.\n\nSo the statement is True.",
-      "Paying with money does not force both items into the goods column. Classification follows tangibility and activity, not the payment medium.\n\nSo the statement is False.",
-      "Self-employed Timo still needs food, housing, and rest as a person. Standing on the entrepreneur side of a trade does not erase private needs.\n\nSo the statement is False.",
-      "Routine six-week visits still use scarce money and chair time. Familiarity does not abolish scarcity.\n\nSo the statement is False.",
-      "Paying for the cut or the bottle is still exchange that can meet a need (grooming) or a want (a preferred brand).\n\nSo the statement is True."
+      "The haircut is a service; the shampoo bottle sold at the till is a good.\n\nSo the statement is True.",
+      "Paying with money does not turn a haircut into a good. Payment method does not rewrite the intangible-activity versus tangible-item distinction.\n\nSabine can pay cash for both the cut and the bottle; the cut remains a service and the bottle a good. Euros on the counter are common to both, not a classifier that forces one label onto everything purchased in the salon visit.\n\nSo the statement is False.",
+      "Self-employed Timo still has personal needs — food, rent, rest — even while he stands on the entrepreneur side of the chair. Role at work does not erase household needs after closing time.\n\nSo the statement is False.",
+      "Routine six-week visits do not abolish scarcity. Sabine still faces limited money and time; habit only makes the purchase familiar, not unlimited in cost or opportunity.\n\nSo the statement is False.",
+      "Paying for the cut or the shampoo still involves exchange fulfilling a need or want.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -715,11 +715,11 @@
       true
     ],
     "tactical_explanations": [
-      "Buying groceries is household–firm trade; selling used furniture to a neighbour is household–household trade.\n\nSo the statement is True.",
-      "Households trade constantly — shopping, selling used goods, hiring help. Exchange is not an entrepreneur-only privilege.\n\nSo the statement is False.",
-      "When each person gives something the other values, barter is exchange.\n\nSo the statement is True.",
-      "Most everyday trades need no registered written contract. Handshake sales, market-stall cash, and till receipts still count. Requiring government paperwork would erase nearly all ordinary exchange from the definition.\n\nSo the statement is False.",
-      "A mobile-app transfer moves purchasing power just as coins or banknotes do. The medium changes; the exchange does not.\n\nSo the statement is True."
+      "Households trade with firms for groceries and with other households for used furniture.\n\nSo the statement is True.",
+      "Households trade constantly — buying food, selling used goods, hiring help. Entrepreneurs are not the only party entitled to exchange; consumption does not ban trade.\n\nA family that sells a sofa online and buys milk at the supermarket is exchanging as a household. Restricting trade rights to entrepreneurs alone contradicts everyday market life and the chapter’s map of who may participate.\n\nSo the statement is False.",
+      "Barter between two individuals still counts as exchange when each gives something the other values. Money is optional packaging, not the definition of the swap.\n\nSo the statement is True.",
+      "Exchange does not always require a written government-registered contract. Oral deals, till receipts, and informal swaps can all be genuine exchange between willing parties.\n\nSo the statement is False.",
+      "App transfers pay for valued things just like coins — same exchange, different rail.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
