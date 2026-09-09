@@ -70,6 +70,24 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
   "1 seat · each dot ≈ one competitor": "1 Platz · jeder Punkt ≈ eine konkurrierende Person",
   "Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them across far more places — so each WISO seat is less contested than each BBE seat.":
     "Einfach gesagt: BBE ist der knappere Platz. WISO zieht insgesamt mehr Bewerber:innen an, verteilt sie aber auf weit mehr Plätze — daher ist jeder WISO-Platz weniger umkämpft als jeder BBE-Platz.",
+  "BBE approximate score weighting": "Ungefähre BBE-Punktegewichtung",
+  "From the most recent cycle’s section point totals — not the share of question counts.":
+    "Aus den Abschnittspunktesummen des letzten Zyklus — nicht dem Anteil der Fragenanzahl.",
+  "Where the exams diverge": "Wo sich die Prüfungen trennen",
+  "Shared pillars sit in the middle. Language is the fork that decides most of your prep plan.":
+    "Gemeinsame Säulen sitzen in der Mitte. Die Sprache ist die Gabelung, die den Großteil deines Vorbereitungsplans entscheidet.",
+  "BBE · English": "BBE · Englisch",
+  "WISO · German": "WISO · Deutsch",
+  "Shared: mathematics + economics / business basics":
+    "Gemeinsam: Mathematik + Wirtschafts- / Businessgrundlagen",
+  "Train English reading, grammar, and vocabulary under BBE statement style.":
+    "Trainiere englisches Lesen, Grammatik und Wortschatz im BBE-Aussagenstil.",
+  "Train German comprehension for the WISO language section.":
+    "Trainiere deutsches Sprachverständnis für den WISO-Sprachteil.",
+  "WU Vienna entrance exam hall with rows of desks at VIECON":
+    "WU-Wien-Aufnahmeprüfungssaal mit Tischreihen im VIECON",
+  "The WU entrance exam hall: both pathways can lead here. Preparation quality matters more than collecting random PDFs.":
+    "Der WU-Aufnahmeprüfungssaal: beide Wege können hierher führen. Qualität der Vorbereitung zählt mehr als das Sammeln zufälliger PDFs.",
   "English study materials used in BBE-style language practice":
     "Englisch-Lernmaterialien für BBE-typische Sprachpraxis",
   "BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight.":
@@ -401,6 +419,24 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
   "1 seat · each dot ≈ one competitor": "1 місце · кожна точка ≈ один конкурент",
   "Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them across far more places — so each WISO seat is less contested than each BBE seat.":
     "Простими словами: місце BBE рідкісніше. WISO приваблює більше абітурієнтів загалом, але розподіляє їх на набагато більше місць — тож кожне місце WISO менш оспорюване, ніж кожне місце BBE.",
+  "BBE approximate score weighting": "Орієнтовна вага балів BBE",
+  "From the most recent cycle’s section point totals — not the share of question counts.":
+    "З сум балів розділів останнього циклу — не частка кількості питань.",
+  "Where the exams diverge": "Де іспити розходяться",
+  "Shared pillars sit in the middle. Language is the fork that decides most of your prep plan.":
+    "Спільні блоки посередині. Мова — розвилка, яка визначає більшість плану підготовки.",
+  "BBE · English": "BBE · Англійська",
+  "WISO · German": "WISO · Німецька",
+  "Shared: mathematics + economics / business basics":
+    "Спільно: математика + основи економіки / бізнесу",
+  "Train English reading, grammar, and vocabulary under BBE statement style.":
+    "Тренуйте англійське читання, граматику й словник у стилі тверджень BBE.",
+  "Train German comprehension for the WISO language section.":
+    "Тренуйте розуміння німецької для мовного блоку WISO.",
+  "WU Vienna entrance exam hall with rows of desks at VIECON":
+    "Зала вступного іспиту WU Vienna з рядами парт у VIECON",
+  "The WU entrance exam hall: both pathways can lead here. Preparation quality matters more than collecting random PDFs.":
+    "Зала вступного іспиту WU: обидва шляхи можуть привести сюди. Якість підготовки важливіша за збір випадкових PDF.",
   "English study materials used in BBE-style language practice":
     "Матеріали з англійської для практики в стилі BBE",
   "BBE’s language section rewards grammar, vocabulary, and reading fluency in English — skills you build over months, not cram overnight.":
