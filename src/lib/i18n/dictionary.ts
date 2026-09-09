@@ -106,6 +106,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.":
       "Der Tutor-Roboter wählt bei jedem Durchlauf neue Fragen. Antworte, erhalte sofort Feedback und übe Theorie, bis sie automatisch sitzt.",
     "Open Tutor Exam": "Tutor-Prüfung öffnen",
+    "Zoom in": "Vergrößern",
+    "Close zoom": "Vergrößerung schließen",
 
     // Products
     "Demo-Practice Package": "Demo-Übungspaket",
@@ -273,6 +275,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.":
       "Робот-тьютор щоразу обирає нові питання. Відповідай, отримуй миттєвий фідбек і тренуй теорію, доки вона не стане автоматичною.",
     "Open Tutor Exam": "Відкрити Tutor Exam",
+    "Zoom in": "Збільшити",
+    "Close zoom": "Закрити збільшення",
 
     // Products
     "Demo-Practice Package": "Пакет демо-практики",
