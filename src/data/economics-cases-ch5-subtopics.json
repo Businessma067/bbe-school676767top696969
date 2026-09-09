@@ -4659,11 +4659,11 @@
       true
     ],
     "tactical_explanations": [
-      "Market share is how much of the market’s total sales the firm captures. That portion definition is the core idea.\n\nSo the statement is True.",
-      "Gaining share while rivals lose ground is a competitiveness improvement. Relative movement favours you.\n\nSo the statement is True.",
-      "Share targets follow analysis of the market the business wants to operate in. Objectives come after that reading.\n\nSo the statement is True.",
-      "Falling satisfaction often precedes share loss as customers switch. Experience problems show up in the slice.\n\nSo the statement is True.",
-      "Share objectives align with wanting a defined portion of market sales. The target is that portion.\n\nSo the statement is True."
+      "Market share is simply the firm’s slice of total market sales.\n\nSo the statement is True.",
+      "When a regional bakery gains share while neighbouring chains lose it, competitiveness has moved in its favour. Share is a relative scoreboard: your slice grows only if someone else’s shrinks or the market expands faster for you than for them. Tracking complaint rates and promotional responses helps explain why that shift happened, but the share number itself is the competitiveness signal.\n\nSo the statement is True.",
+      "Share targets are not invented in a vacuum. The bakery first maps the markets it wants — weekday office lunches, weekend family cakes, catering — and only then sets a share ambition that fits those arenas. Analysing the market comes before locking the percentage goal.\n\nSo the statement is True.",
+      "Satisfaction and share travel together more often than managers like to admit. If repeat buyers sour on the product — stale rolls, slow counters, ignored complaints — they switch. Once they switch, the bakery’s portion of local sales falls even if the total bread market is flat.\n\nA declining satisfaction score is therefore an early warning for share loss, not a soft metric that lives in a separate report. The annual marketing targets that track complaints and repurchase are really defending the share objective under another name.\n\nSo the statement is True.",
+      "A share objective is the plan’s way of naming the portion of market sales the firm wants.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4688,11 +4688,11 @@
       false
     ],
     "tactical_explanations": [
-      "Industry reports ranking firms by share illustrate relative importance. The ranking is the comparative story.\n\nSo the statement is True.",
-      "Sales objectives rest on market analysis of wishes and needs. Treating them as independent of that analysis is wrong.\n\nSo the statement is False.",
-      "Rising sales still require cost monitoring. Volume growth does not retire attention to production costs.\n\nSo the statement is False.",
-      "Peak warehouse stock is not sales volume success. Sales are customer purchases, not inventory sitting on pallets.\n\nSo the statement is False.",
-      "Revenue must still cover costs when pursuing differentiation. Differentiation does not make cost coverage irrelevant.\n\nSo the statement is False."
+      "Share rankings show relative importance among firms, not warehouse size.\n\nSo the statement is True.",
+      "Sales objectives sit on top of market analysis. You only know what volume to chase after you have read wishes and needs in the segments you want. Treating sales targets as independent of that analysis cuts the link the chapter insists on — analyse the market first, then set the sales number.\n\nSo the statement is False.",
+      "Rising sales do not retire cost discipline. A firm can grow revenue and still watch margins collapse if production costs drift. Monitoring costs stays on the agenda whether the top line is climbing or not.\n\nPicture a mid-size apparel brand whose units soar after a viral campaign: if fabric and overtime costs race ahead of the extra revenue, the sales win becomes a profit loss. Cost watch is not optional just because the sales chart looks healthy.\n\nSo the statement is False.",
+      "Peak warehouse stock is inventory, not achieved sales volume.\n\nSo the statement is False.",
+      "Differentiation still needs revenue that covers costs. A unique design story does not make cost coverage irrelevant — without sales revenue paying production bills, the differentiated offer cannot survive.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -4717,11 +4717,11 @@
       true
     ],
     "tactical_explanations": [
-      "Defensive marketing aims to stop share loss to aggressive competitors. Holding the line is the defence goal.\n\nSo the statement is True.",
-      "Share and sales objectives together give relative and absolute views. Managers need both lenses.\n\nSo the statement is True.",
-      "A competitiveness review typically puts market share next to rival trends. Comparative reading is standard.\n\nSo the statement is True.",
-      "In a mature market, gaining share usually means taking customers from established rivals. Growth comes from switching.\n\nSo the statement is True.",
-      "Share is an indicator, not a substitute for profitability analysis. Both still need separate attention.\n\nSo the statement is True."
+      "Defensive marketing exists to stop rivals peeling away your share.\n\nSo the statement is True.",
+      "Share alone is relative; sales alone are absolute. Using both objectives gives managers a dual view — how big you are in pounds or units, and how you stack against rivals. A firm can grow absolute sales yet lose share if the market grows faster, so the pair of metrics catches that trap.\n\nSo the statement is True.",
+      "Competitiveness reviews routinely put market share next to rival trends. You cannot judge competitive strength from your own sales curve in isolation; you need the relative picture and what competitors are doing in the same window.\n\nSo the statement is True.",
+      "In a mature market, total demand barely expands. Gaining share therefore usually means winning customers who already buy from someone else — switching, not inventing new demand out of thin air.\n\nA soft-drink brand that wants another two points of a flat cola market must take those points from established rivals’ shelves and fountain contracts. That is why share fights in mature categories feel like zero-sum contests: one firm’s gain is another’s loss of the same customer pool.\n\nSo the statement is True.",
+      "Market share is an indicator of relative position, not a substitute for asking whether the business is profitable. You can lead the category and still bleed cash if margins are wrong.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4746,11 +4746,11 @@
       false
     ],
     "tactical_explanations": [
-      "Sales growth built on dissatisfied one-time buyers is not a sustainable long-run strategy. Repeat custom fails to appear.\n\nSo the statement is False.",
-      "Businesses monitor share because it shows position relative to competitors. That comparative use is the reason.\n\nSo the statement is True.",
-      "Unit sales targets sit inside quarterly marketing planning. Calling them unrelated misreads how plans are built.\n\nSo the statement is False.",
-      "Sales feed profitability through revenue; profit does not come only from asset sales. Operating sales matter.\n\nSo the statement is False.",
-      "Maintaining sales does not mean raising prices every month regardless of demand. Price paths follow the market.\n\nSo the statement is False."
+      "Dissatisfied one-time buyers do not sustain long-run sales growth.\n\nSo the statement is False.",
+      "Firms monitor share because it places them relative to competitors fighting for the same furniture buyers. Absolute sales say how much you moved; share says how that compares with rivals. Satisfaction surveys and craftsmanship guarantees feed that relative reading when happier buyers stay.\n\nSo the statement is True.",
+      "Unit sales targets sit inside quarterly marketing plans, not outside them. Campaigns, promotions, and store pushes are timed to hit those volume numbers — calling the targets unrelated to planning severs the plan from its scoreboard.\n\nSo the statement is False.",
+      "Sales and profitability are linked through the revenue that must cover costs. Profit does not come “only from asset sales”; ordinary product sales are the normal route to a surplus after costs.\n\nA furniture floor that sells sofas and dining sets generates the cash that pays workshops, delivery crews, and rent. Pretending profit arrives only when you sell the building or the van fleet invents a finance story the marketing chapter does not teach. Trading sales are how ongoing profit is supposed to form.\n\nSo the statement is False.",
+      "Maintaining sales does not require a monthly price hike. Demand can collapse under relentless increases; holding volume often means sensible pricing, not automatic rises.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4775,11 +4775,11 @@
       true
     ],
     "tactical_explanations": [
-      "A grow-share objective implies outperforming rivals in relative terms. Beating the field’s growth is the point.\n\nSo the statement is True.",
-      "Awareness without purchases does not meet sales objectives. Reach is not sell-through.\n\nSo the statement is False.",
-      "Sales volume is measured by customer purchases, not by headcount. Employees are not the volume metric.\n\nSo the statement is False.",
-      "Loyalty built through satisfaction supports share maintenance. Retained buyers hold the slice.\n\nSo the statement is True.",
-      "Relative importance in the market is the concept share is meant to convey.\n\nSo the statement is True."
+      "Growing share means outperforming rivals on the market’s sales split.\n\nSo the statement is True.",
+      "Awareness without purchases does not meet a sales objective. Sales count units or revenue sold, not how many people merely heard the ad. A campaign that fills minds but empties tills fails the sales test even if brand recall looks strong.\n\nSo the statement is False.",
+      "Sales volume is measured by what customers purchase, not by payroll headcount. Employee numbers describe staffing capacity; they do not tell you whether units left the shelf. A delivery-speed USP can raise purchases, but the sales objective still counts those purchases, not how many couriers you hired.\n\nSo the statement is False.",
+      "Loyalty built on satisfaction is one of the cleaner ways to hold share. Buyers who like the delivery speed, design, or service stay; staying customers protect the firm’s slice when rivals push.\n\nA courier-led USP that actually delights receivers keeps reorder rates high, so competitors must work harder to steal volume. Share maintenance is therefore not only a pricing fight — it is often a satisfaction-and-loyalty defence of the same customers you already have.\n\nSo the statement is True.",
+      "Market share exists to convey relative importance in the market.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4804,11 +4804,11 @@
       false
     ],
     "tactical_explanations": [
-      "Maintaining or increasing sales is a marketing objective because sales generate revenue.\n\nSo the statement is True.",
-      "Satisfaction and sales growth are compatible. Raising sales does not become impossible when satisfaction is pursued.\n\nSo the statement is False.",
-      "Differentiated products still need sales revenue to fund production costs. Differentiation does not block that funding role.\n\nSo the statement is False.",
-      "Sales matter because revenues must cover production costs. That coverage role is why volume sits among the objectives — without sell-through, roasting and packaging outlays have no revenue offset.\n\nSo the statement is True.",
-      "Forecasts without actual sales do not meet sales volume objectives. Objectives are judged on realised volume.\n\nSo the statement is False."
+      "Sales stay on the marketing objective list because they generate the revenue the business runs on.\n\nSo the statement is True.",
+      "Satisfaction and sales growth are allies, not enemies. Happy buyers repurchase, which raises sales — so chasing satisfaction does not make sales increases impossible. Treating the two as mutually exclusive misreads how the objectives reinforce each other.\n\nSo the statement is False.",
+      "Differentiation does not block sales revenue from funding production costs. A distinct product still needs revenue to pay for making it; uniqueness is not a substitute for cash from customers.\n\nSo the statement is False.",
+      "Businesses care about sales because revenues have to cover production costs. Without that coverage, the rest of the marketing story — share, brand, USP — sits on an empty cash register.\n\nEven a niche manufacturer with a sharp differentiated offer still invoices customers to pay materials, labour, and overhead. Sales matter as the funding stream, not as a vanity chart. That cost-coverage role is why sales objectives appear alongside the softer marketing aims.\n\nSo the statement is True.",
+      "Forecasts are plans, not achievements. Zero actual sales cannot meet a sales volume objective no matter how optimistic the spreadsheet looks.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4833,11 +4833,11 @@
       true
     ],
     "tactical_explanations": [
-      "Sales revenue is what makes profit possible after costs are met. No revenue path, no operating profit.\n\nSo the statement is True.",
-      "Pursuing higher sales means strengthening revenue inflow. That cash stream is the immediate aim.\n\nSo the statement is True.",
-      "Campaigns often target a sales volume increase in a defined period — a launch quarter, a season, a year.\n\nSo the statement is True.",
-      "Sales objectives do not replace profitability analysis. Volume and profit both need review.\n\nSo the statement is False.",
-      "Sales objectives may be stated in units or in revenue. Either formulation is standard.\n\nSo the statement is True."
+      "Sales revenue is what makes profit possible once costs are cleared — no revenue base, no surplus.\n\nSo the statement is True.",
+      "Chasing higher sales is a direct attempt to strengthen revenue inflow. The cosmetics launch that pushes premium skincare units is trying to thicken that inflow, not just collect compliments on the jar design.\n\nSo the statement is True.",
+      "Campaigns frequently name a sales volume lift for a defined window — this quarter, this season, this launch period. That time-bound volume target is a classic marketing sales objective.\n\nSo the statement is True.",
+      "Sales objectives do not retire profitability analysis. You can hit volume and still miss profit if discounts or costs erase the margin. The chapter keeps both on the board: sales feed the revenue pool, but managers still check whether a surplus remains.\n\nA premium skincare range that sells out after heavy gift-with-purchase deals may look victorious on units while the margin sheet stays red. Replacing profit review with a sales-only scorecard is exactly the trap the statement invents.\n\nSo the statement is False.",
+      "Sales objectives can be written in units sold or in revenue terms — both are legitimate sales languages.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4862,11 +4862,11 @@
       true
     ],
     "tactical_explanations": [
-      "Without adequate sales, production costs cannot be covered from revenue. Volume is the funding engine.\n\nSo the statement is True.",
-      "Increasing sales is listed among marketing objectives businesses may pursue. It is a core entry on the list.\n\nSo the statement is True.",
-      "Seasonal peaks can still serve an annual volume-increase objective. Timing within the year does not cancel the yearly aim.\n\nSo the statement is True.",
-      "Export revenue counts toward sales volume objectives. Geography of the sale does not exclude it.\n\nSo the statement is False.",
-      "Sales growth supports cash inflows for day-to-day operations. Working cash rides on selling.\n\nSo the statement is True."
+      "Without adequate sales, revenue cannot cover production costs.\n\nSo the statement is True.",
+      "Increasing sales sits on the standard menu of marketing objectives. Firms list it beside satisfaction, share, and profit aims because volume funds so much of the rest.\n\nSo the statement is True.",
+      "Seasonal peaks can still serve an annual volume goal. A holiday spike that fits inside a yearly increase target is alignment, not a contradiction — the peak is a path to the year-end number.\n\nSo the statement is True.",
+      "Export revenue counts toward sales volume like any other sale. Geography of the invoice does not eject the units from the sales objective.\n\nA maker shipping abroad still records those shipments as sales for the period. Saying export revenue “does not count” invents a carve-out the marketing objectives framework does not use. Domestic and export sales both feed the volume and revenue targets unless the plan explicitly segments them — and even then, exports remain sales.\n\nSo the statement is False.",
+      "Sales growth feeds the cash inflows day-to-day operations need.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -4891,11 +4891,11 @@
       true
     ],
     "tactical_explanations": [
-      "Higher sales do not drive production costs per unit to zero. Unit costs may fall with scale, but they do not vanish — beans, energy, and labour still sit on the cost sheet.\n\nSo the statement is False.",
-      "A promotional discount can lift short-term sales volume.\n\nSo the statement is True.",
-      "Sales growth objectives link to loyalty from satisfaction — repeat buyers add volume. Calling them unrelated cuts that path.\n\nSo the statement is False.",
-      "A temporary spike from a failed product does not satisfy long-term sales objectives. Sustainability matters.\n\nSo the statement is False.",
-      "Sales targets are set after analysing the market the firm wishes to serve. Analysis precedes the numbers.\n\nSo the statement is True."
+      "Higher sales never drive production cost per unit all the way to zero.\n\nSo the statement is False.",
+      "A promotional discount is a classic short-term volume lever: lower the ticket for a window, lift units sold in that window. It may trade margin for volume, but as a sales-lift tool it is exactly what many plans use.\n\nSo the statement is True.",
+      "Sales growth and loyalty from satisfaction are linked. Satisfied loyal buyers repurchase, which is sales growth by another name — calling the two unrelated breaks the objective hierarchy the stem describes.\n\nSo the statement is False.",
+      "A temporary spike from a failed product does not satisfy long-term sales objectives. Long-run targets need lasting demand, not a one-week curiosity bump that dies when the product disappoints.\n\nThink of a gadget that trends for a fortnight then returns flood in: the spike looks like a sales win on the weekly chart and a sales failure on the annual one. Long-term objectives care about the lasting pattern, not the fireworks that leave no repeat buyers.\n\nSo the statement is False.",
+      "Sales targets follow analysis of the market the firm wants to serve.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4920,11 +4920,11 @@
       true
     ],
     "tactical_explanations": [
-      "For profit to be possible, sales revenue must exceed production costs. That surplus condition is basic.\n\nSo the statement is True.",
-      "When a market matures, maintaining sales volume can itself be the objective — hold the line rather than chase growth.\n\nSo the statement is True.",
-      "Sales performance is monitored to judge progress toward marketing objectives. Tracking is how managers know.\n\nSo the statement is True.",
-      "A decline in unit sales may signal failure on sales-related objectives. Falling volume is a warning.\n\nSo the statement is True.",
-      "Higher sales usually support profitability, subject to cost and pricing limitations the chapter states.\n\nSo the statement is True."
+      "Profit needs sales revenue above production costs — that inequality is the doorway to any surplus.\n\nSo the statement is True.",
+      "When a market matures, growth slows, so holding sales volume becomes a sensible objective in its own right. The coffee roaster defending specialty-segment volume is often protecting a plateau rather than chasing hypergrowth.\n\nSo the statement is True.",
+      "Managers watch sales performance to see whether marketing objectives are on track. The sales line is a progress meter for those volume and revenue aims, not a decorative chart.\n\nSo the statement is True.",
+      "Falling unit sales can mean the sales-related marketing objectives are failing. If the plan said grow or hold volume and units slip, the scoreboard is flashing red on that objective.\n\nA specialty coffee brand that loses bags per week while rivals hold steady is not “fine because brand love is high” — the sales objective failed on its own terms. Monitoring that decline is how teams know the marketing plan needs a fix, not a shrug.\n\nSo the statement is True.",
+      "Higher sales usually help profitability, with the usual caveats on costs and pricing — the chapter’s “subject to limitations” reading.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4949,11 +4949,11 @@
       true
     ],
     "tactical_explanations": [
-      "Sales and satisfaction interrelate because repeat buyers add volume. Happy customers feed the sales objective.\n\nSo the statement is True.",
-      "Distribution expansion is a route to higher sales in new geographic areas. Reach growth supports volume.\n\nSo the statement is True.",
-      "Quarterly sales targets are a normal part of a marketing plan. Periodised volume aims are standard.\n\nSo the statement is True.",
-      "Sales matter alongside share, not as a licence to ignore share completely. Relative position still counts.\n\nSo the statement is False.",
-      "Volume growth on a new product launch is a common marketing objective. Launch plans almost always include it.\n\nSo the statement is True."
+      "Satisfied repeat buyers add volume, linking sales aims to satisfaction.\n\nSo the statement is True.",
+      "Opening new geographic distribution is a sales-growth move: more places to buy means more potential volume. Expanding the map is often how firms chase higher sales without inventing a new product.\n\nSo the statement is True.",
+      "Quarterly sales targets are ordinary furniture in a marketing plan: timed volume goals that campaigns, channels, and promotions are built to hit. Without those period numbers, the plan lacks a clear sales scoreboard for the quarter.\n\nSo the statement is True.",
+      "Sales importance does not license ignoring market share. Absolute volume and relative share answer different questions; strong sales do not make the competitive share picture optional.\n\nIn a mature market with entrenched rivals, you can sell more in absolute terms yet still lose relative ground if competitors grow faster. Dropping share from the dashboard because “sales are up” blinds the firm to that erosion. Sales matter — and share still matters beside them.\n\nSo the statement is False.",
+      "Growing launch-period sales volume is a common marketing objective.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4978,11 +4978,11 @@
       true
     ],
     "tactical_explanations": [
-      "Maintaining sales usually needs continued marketing spend, not a total shut-down of expenditure.\n\nSo the statement is False.",
-      "Sales volume and revenue are related concepts in the framework — units and the money they bring. Calling them unrelated is wrong.\n\nSo the statement is False.",
-      "Production costs are covered from sales revenue in the marketing framework, not from government grants as a general rule.\n\nSo the statement is False.",
-      "Sales matter beyond busy-looking activity because revenue must cover costs. Coverage is the deeper reason.\n\nSo the statement is True.",
-      "Wholesale and retail channels both feed total sales volume. Channel mix still counts toward the firm total.\n\nSo the statement is True."
+      "Holding sales usually needs marketing spend, not shutting it all down.\n\nSo the statement is False.",
+      "Sales volume and sales revenue are related views of the same commercial activity — units versus money. Calling them unrelated concepts inside the marketing objectives framework invents a split the chapter does not teach.\n\nSo the statement is False.",
+      "Production costs are meant to be covered from sales revenue, not from a standing government-grant fantasy. Trading income is the normal funding source for making the product.\n\nSo the statement is False.",
+      "Sales matter beyond busy-looking activity because revenue has to cover costs. A warehouse full of motion with no cost coverage is not marketing success — it is unpaid production.\n\nFixed and variable costs wait for invoices to customers. That is why revenue-coverage language appears when textbooks explain sales objectives: volume is not vanity; it is how the cost base gets paid so profit remains possible.\n\nSo the statement is True.",
+      "Wholesale and retail channels both feed the firm’s total sales volume.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5007,11 +5007,11 @@
       false
     ],
     "tactical_explanations": [
-      "Rising sales does not make profitability objectives unnecessary. Costs and margins still need managing — occupancy can climb while discounting wipes out the surplus the hotel group wanted.\n\nSo the statement is False.",
-      "When supply constraints cap growth, a maintain-volume sales objective can still apply. Hold what you can sell.\n\nSo the statement is True.",
-      "Building distribution centres without sell-through does not fulfil sales objectives. Capacity is not purchases.\n\nSo the statement is False.",
-      "Advertising may aim to raise sales of a specific product line.\n\nSo the statement is True.",
-      "High satisfaction without sales does not create profit. Profit needs revenue after costs, not goodwill alone.\n\nSo the statement is False."
+      "Rising sales do not retire the need for profitability objectives.\n\nSo the statement is False.",
+      "When supply is capped, “maintain volume” can be the honest sales objective. The boutique hotel with fixed rooms cannot invent endless occupancy growth; holding sellable nights may be the realistic target while service quality stays high.\n\nSo the statement is True.",
+      "Building distribution centres is logistics capacity, not sales fulfilment. Sales objectives need sell-through to customers — empty shiny warehouses do not count as volume sold.\n\nSo the statement is False.",
+      "Advertising spend is often aimed at lifting sales of a named line. The campaign’s job is commercial: more of that product sold, not awareness for its own sake.\n\nA hotel group pushing a weekend package with review-score proof points is trying to raise occupancy revenue on that offer. The marketing budget is therefore tied to a sales objective for the line, which is exactly how the chapter links promotion to sales goals.\n\nSo the statement is True.",
+      "High satisfaction without sales cannot create profit — no revenue, no surplus.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5036,11 +5036,11 @@
       true
     ],
     "tactical_explanations": [
-      "Unit sales growth enlarges the revenue pool from which costs are paid. More units, more revenue capacity.\n\nSo the statement is True.",
-      "Profitability is linked to sales through operating revenue. Profits do not come only from borrowed funds.\n\nSo the statement is False.",
-      "Higher sales do not always reduce profit through infinitely rising costs. Scale and margins can improve with volume.\n\nSo the statement is False.",
-      "Profits can be retained in the business for reinvestment. Retention is a normal use of earnings.\n\nSo the statement is False.",
-      "Sales data helps managers see whether marketing objectives are being achieved. Numbers check the plan.\n\nSo the statement is True."
+      "More units sold enlarge the revenue pool that pays costs — growth feeds that pool.\n\nSo the statement is True.",
+      "Profitability is tied to sales because trading surplus comes from revenue after costs, not from borrowed funds alone. Loans are financing, not the profit definition the marketing chapter uses.\n\nSo the statement is False.",
+      "Higher sales do not automatically destroy profit through infinite cost growth. Costs rise with volume, but revenue can rise faster — that is the normal profit path when margins hold.\n\nThe claim assumes production costs explode without bound the moment units increase. Real cost curves are steeper or flatter depending on capacity, not a law that every extra sale is a loss. Treating volume as inherently anti-profit reverses the usual sales-profit story.\n\nSo the statement is False.",
+      "Profits can be retained and reinvested — that retention option is a standard use of earnings, not a forbidden act.\n\nSo the statement is False.",
+      "Sales data show managers whether marketing objectives are being hit. The numbers are the feedback loop for volume and revenue aims after the campaign runs.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5065,11 +5065,11 @@
       false
     ],
     "tactical_explanations": [
-      "Rising sales with rising costs can still miss profit objectives. Volume without margin control fails the profit aim — more bags roasted at a loss do not reimburse owners.\n\nSo the statement is True.",
-      "Profitability objectives include reimbursing owners for invested capital. Excluding that reimbursement misreads the aim.\n\nSo the statement is False.",
-      "Marketing objectives do include profitability — not awareness alone. Profit sits in the objective set.\n\nSo the statement is False.",
-      "Falling sales does not let a firm raise profit without cost changes. Shrinking revenue usually pressures profit unless costs fall too.\n\nSo the statement is False.",
-      "Retained profit is earnings kept in the business, not short-term trade credit from suppliers.\n\nSo the statement is False."
+      "Rising sales with rising costs can still miss profit — the cost climb can eat the revenue gain.\n\nSo the statement is True.",
+      "Profitability objectives include reimbursing owners for capital they put in. Cutting owner return out of the profit story deletes one of the reasons profitability is listed as a marketing-linked aim.\n\nSo the statement is False.",
+      "Marketing objectives do include profitability. Marketing is not an awareness-only club; the overview places profit beside satisfaction, share, and sales.\n\nA brand that wins mental classification through clever promotion still has to clear costs and leave a surplus. Pretending marketing “never” touches profitability confuses a promotional tactic with the full objective set. Awareness can serve profit; it does not replace it.\n\nSo the statement is False.",
+      "Falling sales do not magically raise profit with zero cost change — less revenue usually squeezes the surplus, not expands it.\n\nSo the statement is False.",
+      "Retained profit is earnings kept in the firm; trade credit is a supplier liability. They are different financing ideas, not twins.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5094,11 +5094,11 @@
       true
     ],
     "tactical_explanations": [
-      "Maintaining sales keeps cash coming in for day-to-day activity.\n\nSo the statement is True.",
-      "Sales and profit are linked: sales create the revenue from which profit is calculated after costs. They are different measures, but calling them completely unrelated is wrong. A firm can raise unit sales and still miss its profit target if discounts or costs wipe out the margin — that is interdependence, not independence.\n\nSo the statement is False.",
-      "Share tells you how you stand against rivals; sales tell you the absolute volume or revenue you actually achieved. Both matter. A firm can hold share while absolute sales fall in a shrinking market, so the sales figure still needs its own target.\n\nSo the statement is True.",
-      "Owners get reimbursed from profit — the surplus after costs — not from raw sales volume alone. Selling a thousand units at a loss does not pay owners for their capital.\n\nSo the statement is False.",
-      "A short promotional bundle can lift units sold in the period, which is exactly what a sales-volume objective tracks.\n\nSo the statement is True."
+      "Maintaining sales keeps revenue flowing so the business can fund its ongoing activity.\n\nSo the statement is True.",
+      "Profitability and sales are related, not sealed off. Sales build the revenue base; profit asks what remains after costs. Calling them completely unrelated measures ignores that shared foundation.\n\nSo the statement is False.",
+      "Sales objectives give the absolute performance view that share alone cannot. Share is relative; sales say how many units or pounds actually moved. Using both is how competitive benchmarking stays grounded in real volume.\n\nSo the statement is True.",
+      "Owners are reimbursed through profit, not through raw sales volume with no surplus calculated. High volume with zero margin does not pay owners for their capital.\n\nA firm can clear thousands of units and still leave owners unpaid if discounts and costs wipe the margin. Sales volume is necessary input to the profit story, not a substitute for the profit calculation itself.\n\nSo the statement is False.",
+      "Promotional bundles are a quick volume stimulant — package deals designed to lift sales in a short burst.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5123,11 +5123,11 @@
       false
     ],
     "tactical_explanations": [
-      "USP work and profit reinvestment sit side by side in marketing plans. Nothing in a uniqueness objective bans ploughing surplus back into the business.\n\nSo the statement is False.",
-      "Customers pay when they buy. That payment is sales revenue flowing into the firm.\n\nSo the statement is True.",
-      "Higher sales usually help profit, but not always. Heavy discounting, rising input costs, or extra marketing spend can erase the gain — so the link has real limitations.\n\nSo the statement is False.",
-      "Sales targets are a core marketing objective category because the business needs revenue to operate and to work toward profit. A plan that skips them leaves out that revenue pillar.\n\nSo the statement is True.",
-      "Fifty percent share says nothing about costs or margins. A firm can dominate a market and still lose money if prices sit below unit cost. Profit needs revenue above the relevant costs, not a share threshold alone.\n\nSo the statement is False."
+      "Pursuing a USP does not prohibit ploughing profit back into the firm.\n\nSo the statement is False.",
+      "Sales revenue is the inflow that appears when customers purchase the product in the market. Those payments are what sales objectives track — cash from buyers, not wishful forecasts or warehouse motion without sell-through.\n\nSo the statement is True.",
+      "There are clear limitations on the sales-profit link: discounting, cost inflation, and mix shifts can raise sales while profit stalls. Saying there are “no limitations” denies the chapter’s usual caveat.\n\nSo the statement is False.",
+      "A marketing plan that skips sales targets omits a core objective category. Satisfaction and brand matter, but sales volume and revenue remain central pillars of the plan’s commercial scoreboard.\n\nCash inflows strengthen before profit is calculated precisely because sales happen first. Dropping sales targets leaves the plan without a volume ambition for those inflows — an incomplete objective set by the textbook’s own framing.\n\nSo the statement is True.",
+      "Fifty percent share with wrecked costs is still not profitability.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5152,11 +5152,11 @@
       true
     ],
     "tactical_explanations": [
-      "Online channel volume still counts toward overall sales objectives.\n\nSo the statement is True.",
-      "Repeat buyers from a loyal base keep volume coming without endlessly hunting new customers. That repeat flow is a durable source of sales growth when satisfaction holds.\n\nSo the statement is True.",
-      "If production lags the sales plan, stockouts appear; if it overruns, inventory piles up. Aligning output with sales targets avoids both traps. Operations and marketing therefore share the same volume number even when their daily tasks differ.\n\nSo the statement is True.",
-      "A campaign spike still belongs to the period’s sales total. Objectives usually measure what was sold in the window, including temporary lifts.\n\nSo the statement is True.",
-      "When revenue is high enough, it covers variable costs first and then contributes toward fixed production costs. That coverage is why sales matter before any profit line is drawn.\n\nSo the statement is True."
+      "Online units sold still count toward overall sales objectives.\n\nSo the statement is True.",
+      "Loyal repeat buyers are a sustainable sales source: they come back without the full cost of winning a stranger each time. Volume built on loyalty is sturdier than volume built only on one-shot promotions.\n\nSo the statement is True.",
+      "Production has to match sales ambitions. Undershoot and you stock out; overshoot and you drown in excess stock. Aligning output with sales objectives avoids both failures.\n\nSo the statement is True.",
+      "A campaign spike still adds to period volume. Temporary does not mean “does not count” — those units belong to the period’s sales total even if the lift fades later.\n\nLimitations on the sales-profit link (heavy discounting, cost spikes) can still leave the volume objective met while profit disappoints. That is a different scorecard. For the sales objective itself, the spike’s units are real period sales.\n\nSo the statement is True.",
+      "Sufficient sales revenue covers variable and fixed production costs.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5181,11 +5181,11 @@
       false
     ],
     "tactical_explanations": [
-      "Owners put capital at risk and expect a return. Profit is how that return shows up. Saying profits do not matter because owners need no return reverses the textbook reason for profitability objectives.\n\nSo the statement is False.",
-      "Maximising unit sales with deep discounts can destroy margin. More units at a loss do not maximise profit. Volume and profit can pull in opposite directions under aggressive price cuts, which is why “always maximises profit simultaneously” fails.\n\nSo the statement is False.",
-      "Satisfaction and profitability reinforce each other when loyal customers buy again at viable margins. They are not mutually exclusive objectives.\n\nSo the statement is False.",
-      "Month-end actual-versus-target sales checks track progress on volume goals.\n\nSo the statement is True.",
-      "Retained earnings are profit kept in the business. Firms routinely use that internal finance for campaigns and brand work.\n\nSo the statement is False."
+      "Owners do expect a return on invested money — profits are not “unimportant” in that story.\n\nSo the statement is False.",
+      "Maxing unit sales through discounting does not always max profit. Deeper cuts can raise units while crushing margin, so the sales peak and the profit peak need not arrive together.\n\nSo the statement is False.",
+      "Profitability and customer satisfaction can coexist and often reinforce each other across the lifecycle. Happy customers repurchase; repurchase supports profitable volume. Framing them as unable to coexist invents a false conflict.\n\nSo the statement is False.",
+      "Comparing actual sales to targeted sales each month is routine marketing control — the feedback loop on the sales objective.\n\nSo the statement is True.",
+      "Retained earnings from profit can finance marketing campaigns. That internal funding is one reason retention matters — it can pay for the next push without new borrowing.\n\nInterrelated objectives show up here: satisfaction supports loyalty and sales; sales and cost control support profit; retained profit can fund further marketing. Saying retained profit “cannot” finance campaigns cuts that loop for no textbook reason.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5210,11 +5210,11 @@
       true
     ],
     "tactical_explanations": [
-      "In ordinary trading conditions, higher sales expand the revenue base that can support profit once costs are covered. The claim that higher sales never help profit under any condition is too absolute.\n\nSo the statement is False.",
-      "Export growth is a legitimate sales objective when the firm wants volume outside the home market.\n\nSo the statement is True.",
-      "If demand analysis shows a ceiling, managers can revise volume targets downward rather than chase an unreachable number. Sales objectives are planning tools, not fixed forever.\n\nSo the statement is True.",
-      "Profit is calculated after sales revenue is earned and costs are matched against it. You do not book profit before customers have paid.\n\nSo the statement is False.",
-      "Cutting price often lifts units sold while shrinking revenue per unit. Both effects matter when you read the sales and profit outcomes together.\n\nSo the statement is True."
+      "Higher sales often contribute to profit when margins hold — “never” is far too absolute.\n\nSo the statement is False.",
+      "Export sales growth can be a deliberate marketing objective for firms expanding beyond the home market. New country volume is still a sales aim.\n\nSo the statement is True.",
+      "After market analysis reveals demand ceilings, sales volume objectives may be revised downward or reshaped. The analysis disciplines the target so it fits what the market can actually absorb.\n\nSo the statement is True.",
+      "Profit is calculated after sales revenue is earned, not before. You cannot record trading profit ahead of the customer payments that create the revenue line.\n\nLoyalty from satisfaction means buyers return; those return purchases are sales first, then inputs to profit. Reversing the order — booking profit before revenue — breaks basic sequencing. Satisfaction-led loyalty feeds future sales; it does not invent profit in advance of them.\n\nSo the statement is False.",
+      "A price cut can lift unit sales while changing revenue per unit — more tickets, less money each, a trade-off managers must read carefully.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5239,11 +5239,11 @@
       true
     ],
     "tactical_explanations": [
-      "Share gains are one competitiveness signal, but marketing success is also judged on sales, satisfaction, and profit. Ignoring profit while chasing share alone is not how the chapter frames success. A firm can buy share with unsustainable discounting and still fail the wider objective set.\n\nSo the statement is False.",
-      "Reinvestment means keeping profit inside the firm for future use — not handing every euro of revenue straight to suppliers. Paying suppliers is a cost settlement, not retained earnings.\n\nSo the statement is False.",
-      "Profitability needs sales revenue above costs. Driving sales down to “eliminate costs” does not create profit; it shrinks the revenue base.\n\nSo the statement is False.",
-      "Promotional reach metrics track awareness or exposure. They do not reimburse owners for invested capital. That reimbursement comes from profit.\n\nSo the statement is False.",
-      "Sales bring in the money that covers production costs and, if enough remains, profit.\n\nSo the statement is True."
+      "Share gains alone do not judge marketing success if profit collapses.\n\nSo the statement is False.",
+      "Profit reinvestment means keeping earnings inside the firm for later use — capacity, brand, or product work. It is not the same as paying every pound of revenue straight to suppliers as invoices arrive.\n\nSo the statement is False.",
+      "Profitability does not require sales to fall so that costs can be eliminated. Healthy profit usually needs sales revenue large enough to cover costs and leave a surplus — cutting volume to chase zero cost is the wrong recipe.\n\nSo the statement is False.",
+      "Promotional reach metrics do not reimburse owners’ invested money. Owners are reimbursed through profit, not through impressions or click counts.\n\nA USP that makes the product feel “better than the rest” may lift willingness to pay, which can help profit — but the reimbursement itself is still the financial surplus, not the awareness dashboard. Confusing reach with owner return mixes a communication KPI with a capital-return outcome.\n\nSo the statement is False.",
+      "Sales fund production-cost coverage and open the path to profit.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5268,11 +5268,11 @@
       false
     ],
     "tactical_explanations": [
-      "Retail sell-through feeds manufacturer shipments. Volume targets at retail therefore roll up into the manufacturer’s sales objectives.\n\nSo the statement is True.",
-      "A USP helps the product stand out and can support loyalty, but profit still needs units sold at margins that clear costs. Uniqueness on its own does not print a surplus. A distinctive offer that barely sells, or sells only after deep discounting, can still miss the profit target.\n\nSo the statement is False.",
-      "Entering a new segment often starts with a sales-growth push to build presence before later tightening margin goals. Prioritising volume there is a normal marketing choice.\n\nSo the statement is True.",
-      "Profitability objectives apply with many rivals or with few.\n\nSo the statement is False.",
-      "Retained profit stays in the business. It is not an annual mandatory payout to creditors. Creditors are paid under debt terms; retained earnings finance growth.\n\nSo the statement is False."
+      "Retail volume targets roll up into manufacturer sales objectives.\n\nSo the statement is True.",
+      "A USP does not guarantee profit without regard to sales volume or costs — uniqueness helps positioning, but surplus still needs volume and cost control behind the story.\n\nSo the statement is False.",
+      "Entering a new customer segment often brings a sales-growth priority: win volume in the unfamiliar group before refining every margin detail. Growth first can be a deliberate phase.\n\nSo the statement is True.",
+      "Profitability objectives apply with or without competitors. Monopoly or crowded market, owners still care whether revenue beats costs.\n\nShare is relative, so it needs a competitive field to be meaningful; profit is a firm-level surplus test that does not switch off when rivals disappear. Saying profitability objectives exist “only” with competitors confuses a relative share idea with an absolute profit idea.\n\nSo the statement is False.",
+      "Retained profit stays in the business; it need not all go to creditors yearly.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5297,11 +5297,11 @@
       true
     ],
     "tactical_explanations": [
-      "Limitations mean higher sales do not always raise profit — for example when discounts erase margin. They do not mean higher sales always lower profit. That flips a caution into an absolute reverse claim the chapter does not make.\n\nSo the statement is False.",
-      "Comparing actual sales with the plan checks whether marketing delivered the volume it promised.\n\nSo the statement is True.",
-      "Revenue = price × volume (in simple form). Sales objectives and price decisions therefore sit right next to revenue goals.\n\nSo the statement is True.",
-      "Marketing does generate costs, but it also generates the sales that fund the business. Profitability remains a marketing objective precisely because those sales must leave a surplus after costs.\n\nSo the statement is False.",
-      "Holding volume when demand softens in a downturn is a tough but real sales objective. Many plans explicitly aim to maintain sales rather than grow them in that phase.\n\nSo the statement is True."
+      "Sales-profit limitations do not mean higher sales always cut profit.\n\nSo the statement is False.",
+      "Sales versus plan is a direct effectiveness read: did marketing deliver the volume it promised? Performance against the sales target is one of the clearest marketing scorecards.\n\nSo the statement is True.",
+      "Revenue objectives hinge on sales volume and selling price together — units times price (with mix) shape the revenue line. You cannot separate revenue ambition from those sales mechanics.\n\nSo the statement is True.",
+      "Marketing is not a pure cost centre sealed off from profitability. It aims to generate sales that, after costs, support profit. Calling profitability unrelated because marketing “only generates costs” ignores the revenue side marketing is hired to create.\n\nMaintaining sales to fund activity is itself a profitability-adjacent discipline: without ongoing revenue, cost coverage fails. Marketing’s job includes that commercial outcome, not just spending.\n\nSo the statement is False.",
+      "Holding sales in a downturn is itself a demanding marketing objective.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5326,11 +5326,11 @@
       false
     ],
     "tactical_explanations": [
-      "Repeat purchases from existing customers cut the need to keep buying expensive new leads. That saving is one reason satisfaction and loyalty objectives support sales.\n\nSo the statement is True.",
-      "“Double sales” is a substantial volume (or revenue) stretch target.\n\nSo the statement is True.",
-      "Sales growth widens the revenue pool. After costs, that is what makes profit possible.\n\nSo the statement is True.",
-      "Trade promotions aimed at retailers often exist to push sell-through — more units leaving the shelf. That is a sales-volume play.\n\nSo the statement is True.",
-      "High satisfaction and profitability routinely sit in the same plan. Loyal, happy customers can still be served at a margin that reimburses owners. Treating the two objectives as mutually exclusive invents a conflict the chapter does not require.\n\nSo the statement is False."
+      "Repeat-purchase sales cut dependence on costly new-customer acquisition.\n\nSo the statement is True.",
+      "A “double sales” objective signals a substantial volume increase, not a soft wish — the plan must resource and measure that jump.\n\nSo the statement is True.",
+      "Sales growth serves the broader profit aim once costs are covered. More volume thickens the revenue base from which a surplus can form — subject to margin reality.\n\nSo the statement is True.",
+      "Trade promotions to retailers often exist to lift sell-through volume. The mechanic is commercial: move more units through the channel in the promotional window.\n\nProfitability that reimburses owners and retains funds internally still sits beside that volume play. Pushing sell-through does not cancel the profit objective; it is usually meant to support the revenue side of it. Satisfaction-rich repeat sales and trade pushes are different tools aimed at related commercial outcomes.\n\nSo the statement is True.",
+      "High satisfaction does not block profitability objectives; happy buyers can be the most profitable.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5355,11 +5355,11 @@
       true
     ],
     "tactical_explanations": [
-      "Regional sales monitoring helps allocate marketing resources.\n\nSo the statement is True.",
-      "If the objective is sales, units or revenue sold are the direct progress score.\n\nSo the statement is True.",
-      "Profit is what remains after sales revenue covers costs. You earn the revenue first; only then can you distribute or retain a surplus.\n\nSo the statement is True.",
-      "Launch periods sometimes trade margin for a volume milestone — accept a thinner contribution for a while to hit the sales gate. That temporary bargain is still a conscious marketing choice, not an accident.\n\nSo the statement is True.",
-      "Businesses need revenues to operate. Sales objectives exist because that cash inflow has to be planned and monitored.\n\nSo the statement is True."
+      "Regional sales monitoring guides where marketing resources should go.\n\nSo the statement is True.",
+      "Volume sold is the straight progress measure for sales-related marketing objectives. If the plan promised units or revenue and the period delivers less, the sales objective missed — brand compliments do not rewrite that count.\n\nSo the statement is True.",
+      "Sales revenue must be earned before profit is distributed or retained. Sequencing matters: cash-in from customers first, then decide what to pay out or plough back.\n\nSo the statement is True.",
+      "Firms sometimes accept a thinner margin for a stretch to hit a volume milestone — launch share, listing thresholds, or capacity fill. That trade-off is deliberate, not confusion about objectives.\n\nMarket analysis still comes first: you set those milestones after reading the markets you want to operate in. Temporary margin sacrifice in service of a sales target is a known tactic, provided the plan knows why and for how long.\n\nSo the statement is True.",
+      "Sales objectives exist because businesses need revenues to operate.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5384,11 +5384,11 @@
       false
     ],
     "tactical_explanations": [
-      "Issuing new shares brings fresh external capital from investors. Reinvesting profit keeps earnings already earned inside the firm. Those are different financing routes, even though both can fund growth.\n\nSo the statement is False.",
-      "Satisfied loyal customers buy again, lifting sales while also advancing satisfaction and loyalty goals. That cross-link is exactly “interrelated marketing objectives” in action.\n\nSo the statement is True.",
-      "A new store’s sales target expresses geographic expansion in volume or revenue.\n\nSo the statement is True.",
-      "Growing units while costs race ahead can leave profit flat or worse. Volume without cost control does not guarantee a better bottom line.\n\nSo the statement is True.",
-      "Covering production costs gets you to break-even on those costs. Profit still needs a margin above that coverage.\n\nSo the statement is False."
+      "Reinvesting profit is not the same as issuing new share capital.\n\nSo the statement is False.",
+      "Higher sales from satisfied loyal customers show how objectives interlock: satisfaction → loyalty → sales. The chain is the chapter’s interdependence story in miniature.\n\nSo the statement is True.",
+      "New-store sales targets express geographic expansion as volume goals for the fresh catchment.\n\nSo the statement is True.",
+      "Volume growth without cost control can leave profitability flat or worse. Extra units that drag extra cost may fail the profit test even when the sales chart looks triumphant.\n\nSatisfaction-linked loyalty helps the sales side of that story, but cost discipline still decides whether the extra volume becomes extra profit. The marketing overview keeps both sales and profitability on the table for exactly this reason.\n\nSo the statement is True.",
+      "Covering production costs is break-even territory, not profit. Profit needs a margin above cost coverage — sufficiency for survival is not sufficiency for surplus.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5413,11 +5413,11 @@
       true
     ],
     "tactical_explanations": [
-      "Profitability is a marketing objective because profits reimburse owners for invested money.\n\nSo the statement is True.",
-      "When earnings stay in the firm, managers can fund capacity, brand, or product work for later growth. Retained profit is that internal fuel.\n\nSo the statement is True.",
-      "As a rule of thumb, more sales mean more profit — with the chapter’s limitations on costs, discounts, and mix still applying. Managers therefore read sales lifts together with margin, not as an automatic profit promise.\n\nSo the statement is True.",
-      "Profit sits in the same objective set as satisfaction, differentiation, share, and sales. Plans typically juggle all of them rather than picking only one.\n\nSo the statement is True.",
-      "When revenues clear the relevant costs, marketing activity has contributed to profit. That ultimate financial test closes the loop on the other marketing goals.\n\nSo the statement is True."
+      "Profitability reimburses owners for the capital they invested.\n\nSo the statement is True.",
+      "Profits can be retained and reinvested for future growth — new capacity, brand work, or product improvement funded from earnings rather than only from fresh borrowing. That plough-back option is why profitability sits among the lasting commercial aims.\n\nSo the statement is True.",
+      "Usually higher sales mean more profit, with limitations the text flags: cost spikes, discounting, and mix problems can break the link. The “usually” is deliberate, not a guarantee.\n\nSo the statement is True.",
+      "Profitability sits in the same objective family as satisfaction, differentiation, share, and sales. A USP that attracts loyal customers can support all of them, but profit remains its own named aim beside the others.\n\nLoyalty from a clear unique selling proposition helps repurchase and pricing power; those effects feed sales and, when costs behave, profit. The point of listing profitability among marketing objectives is that commercial success is judged partly by surplus, not only by soft brand metrics.\n\nSo the statement is True.",
+      "Marketing success lands as profit when revenues exceed relevant costs.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5442,11 +5442,11 @@
       true
     ],
     "tactical_explanations": [
-      "Satisfaction scores measure how customers feel. Profitability is a financial surplus after costs. Useful as both are, they are not the same yardstick, and substituting one for the other misreads the objective set.\n\nSo the statement is False.",
-      "Owners expect profits as compensation for invested capital.\n\nSo the statement is True.",
-      "Keeping profit inside the firm can buy new equipment without a new loan or share issue. That is retained earnings at work.\n\nSo the statement is True.",
-      "A target such as “12% margin on sales” is a profitability objective stated as a percentage of revenue.\n\nSo the statement is True.",
-      "If unit margins hold and costs stay in check, lifting sales lifts profit. When those conditions break, the support weakens — which is why the link is conditional, not magical.\n\nSo the statement is True."
+      "Profitability is a financial surplus test, not a customer-satisfaction scorecard under another name.\n\nSo the statement is False.",
+      "Owners put capital in and expect profits as compensation for that risk. The return-on-invested-money idea is why profitability earns its place among business aims tied to marketing performance.\n\nSo the statement is True.",
+      "Retained profit can buy new equipment without a fresh external raise. Internal earnings become internal finance — a practical freedom when share battles and sales pushes need better kit.\n\nSo the statement is True.",
+      "A profitability target may be written as a margin percentage on sales — surplus relative to revenue, not only a raw pound figure.\n\nGaining and maintaining share shows relative competitiveness; margin targets show whether that competitive position is commercially healthy. A firm can win share with heavy discounting and still miss a margin objective. Keeping both ideas separate stops managers from mistaking a share trophy for a profit win.\n\nSo the statement is True.",
+      "Higher sales help profitability when unit margins and costs stay favourable — volume helps only if the unit economics cooperate.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5471,11 +5471,11 @@
       false
     ],
     "tactical_explanations": [
-      "Profit objectives exist partly because sales volume alone can disappoint.\n\nSo the statement is True.",
-      "Campaign reviews routinely ask whether the lift was profitable sales, not just noisy traffic.\n\nSo the statement is True.",
-      "Ploughed-back profit can fund plant, systems, or marketing capacity that supports later periods.\n\nSo the statement is True.",
-      "Without profit, owners lose their return and the firm lacks internal funds to renew itself. That dual role is why profitability matters in the marketing objective set.\n\nSo the statement is True.",
-      "Strong sales do not remove the need to reinvest. Capacity, brands, and product lines still need funding over time. Higher sales can create the profit that makes reinvestment possible — they do not replace that reinvestment step.\n\nSo the statement is False."
+      "Profit objectives exist because sales alone do not always guarantee profit.\n\nSo the statement is True.",
+      "Campaigns are judged partly on whether they improve profitable sales, not merely noisy activity. A lift that fails the margin test is a weaker marketing result even if reach looks strong.\n\nSo the statement is True.",
+      "Reinvesting profit builds long-term marketing and production capacity — future campaigns and output funded from past surplus rather than from endless new external finance alone.\n\nSo the statement is True.",
+      "Profitability sustains the business for owners and for reinvestment. Without surplus, owner returns and internal funding both dry up, and the sales machine eventually loses fuel.\n\nMaintaining or increasing sales to cover production costs is the front half of that story; earning profit is the back half. The importance of sales for cost coverage does not erase the further step of leaving a surplus worth retaining or distributing.\n\nSo the statement is True.",
+      "Higher sales do not remove the need to reinvest profit for growth and upkeep.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5500,11 +5500,11 @@
       true
     ],
     "tactical_explanations": [
-      "Managers can refuse unprofitable volume that fails margin thresholds rather than chase empty sales.\n\nSo the statement is True.",
-      "Equating advertising spend with total revenue only describes a cost ratio. It never shows whether anything remains after all costs — so it cannot, by itself, meet a profitability objective. A firm could spend every euro of revenue on ads and still report a loss.\n\nSo the statement is False.",
-      "Owners can take profit as their return on capital. Wages pay labour, not ownership reimbursement. Collapsing profit into wages misstates how owners are compensated.\n\nSo the statement is False.",
-      "A cost spike can cancel the benefit of higher sales and leave profit little improved. That is one of the standard limitations on the sales–profit link.\n\nSo the statement is True.",
-      "Retained earnings reduce how much the firm must borrow for expansion. Internal profit keeps the balance sheet less dependent on outside lenders.\n\nSo the statement is True."
+      "Firms may reject unprofitable volume that misses margin thresholds.\n\nSo the statement is True.",
+      "Advertising spend that equals total revenue is not a profitability objective met. That pattern describes promotion consuming the entire top line, leaving no surplus to reimburse owners or reinvest.\n\nSo the statement is False.",
+      "Owners can be reimbursed through profit as a return on capital, not only through wages for labour. Treating wages as the sole channel denies the capital-return role profitability plays in the objective set.\n\nSo the statement is False.",
+      "Cost increases can cancel sales-growth benefits. More units at worse unit cost may leave profit little improved — the limitation the profitability chapter keeps repeating.\n\nProfitability as a marketing objective is about reimbursing owners and enabling reinvestment; neither happens if cost inflation eats the volume win. Watching costs beside sales is how the profit objective stays honest.\n\nSo the statement is True.",
+      "Retained profit reduces dependence on external borrowing for expansion.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5529,11 +5529,11 @@
       false
     ],
     "tactical_explanations": [
-      "Marketing objectives include profitability because owners need returns on investment.\n\nSo the statement is True.",
-      "A discount that moves more units can shrink contribution per unit. Volume up, profit per sale down — both can happen at once.\n\nSo the statement is True.",
-      "Profit is typically sales revenue minus production and marketing costs. That arithmetic is how the surplus is measured.\n\nSo the statement is True.",
-      "Reviewing whether marketing spend earned an adequate return is a profitability check on the campaign mix.\n\nSo the statement is True.",
-      "Share and profit sometimes move together and sometimes trade off — for example when share is bought with heavy discounting. They do not move in opposite directions in every case, so the absolute claim fails.\n\nSo the statement is False."
+      "Marketing objectives include profitability because owners need returns on what they invested.\n\nSo the statement is True.",
+      "Discounting can raise sales volume while cutting profit per unit. More tickets at a thinner margin is a familiar trade-off between sales and profitability objectives.\n\nSo the statement is True.",
+      "Profit is measured from sales revenue minus production and marketing costs. That arithmetic is why sales and cost lines both matter to the profit read.\n\nSo the statement is True.",
+      "A profitability review asks whether marketing spend earned adequate returns — not only whether awareness moved, but whether the commercial surplus justified the outlay.\n\nSatisfaction interlocks with sales and loyalty; those links can improve lifetime value and thus profit. Still, share and profit do not always move as mirrored opposites or locked twins — managers read them as related but separate dials.\n\nSo the statement is True.",
+      "Profitability and market share do not move in opposite directions in every case. They can rise together when volume is won on healthy margins.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5558,11 +5558,11 @@
       true
     ],
     "tactical_explanations": [
-      "Satisfied loyal customers who buy repeatedly can improve lifetime profitability.\n\nSo the statement is True.",
-      "Retained profit can pay for brand-building that later supports differentiation and a clearer USP.\n\nSo the statement is True.",
-      "Usually more sales mean more profit, subject to rising costs, mix shifts, or discount pressure. The chapter states the positive link with those limitations attached rather than as an unconditional law.\n\nSo the statement is True.",
-      "Profit objectives push managers to cover costs properly, not just to celebrate gross revenue.\n\nSo the statement is True.",
-      "Owners may take some profit as personal income and leave the rest inside as retained earnings. Both uses are ordinary.\n\nSo the statement is True."
+      "Loyal repeat buyers improve lifetime profitability through ongoing contribution.\n\nSo the statement is True.",
+      "Profit plough-back can fund brand-building that supports future differentiation. Earnings today pay for the perception work that keeps the offer distinct tomorrow.\n\nSo the statement is True.",
+      "Higher sales figures usually mean more profit, though limitations such as rising costs and discounting apply. The usual link holds until those limits bite — volume helps, it does not guarantee surplus.\n\nSo the statement is True.",
+      "Profitability objectives push attention onto cost coverage, not only onto gross revenue. Differentiation — whether through product traits or promotion-shaped perception — still has to clear costs if surplus is the aim.\n\nA perception-led USP that wins mental uniqueness without cost discipline can grow revenue and still miss profit. The objective set therefore keeps profitability as a reminder: cover costs, then claim success.\n\nSo the statement is True.",
+      "Owners may withdraw some profit as income and retain the rest in the firm.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5587,11 +5587,11 @@
       true
     ],
     "tactical_explanations": [
-      "Sales targets should be checked for profit compatibility.\n\nSo the statement is True.",
-      "Surplus from a strong line can fund marketing on a developing line. Cross-subsidy inside the portfolio is a normal use of profit.\n\nSo the statement is True.",
-      "Sales create the revenue figure that profit calculations start from once costs are deducted. Without that sales base there is simply no surplus line to discuss. That is why profitability objectives stay linked to sales performance even when managers also watch margin and mix.\n\nSo the statement is True.",
-      "Retained earnings are internal finance. Marketing initiatives often draw on that stock of past profit.\n\nSo the statement is True.",
-      "Buying share with thin margins can cut near-term profitability on purpose while the firm builds position.\n\nSo the statement is True."
+      "Sales targets in the marketing plan should stay profit-compatible on margin.\n\nSo the statement is True.",
+      "Profit from one product line can subsidise marketing investment in another. Internal surplus becomes the budget for a sister product’s push, which is how plough-back links profit objectives to ongoing brand and USP work.\n\nSo the statement is True.",
+      "Profitability is linked to sales because sales provide the revenue base for the profit calculation. Without that revenue line, there is no trading surplus to analyse or retain.\n\nSo the statement is True.",
+      "Retained earnings strengthen internal finance for marketing. Brand and USP building often need sustained spend; plough-back is one way to fund that without constant external raises.\n\nBuilding a brand to support a unique selling proposition is expensive over time. Profit retention is how many firms pay for that long game while still treating profitability itself as an objective, not an afterthought.\n\nSo the statement is True.",
+      "Chasing share at the expense of margin can temporarily cut profitability.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5616,11 +5616,11 @@
       true
     ],
     "tactical_explanations": [
-      "Profit objectives motivate careful use of marketing budgets.\n\nSo the statement is True.",
-      "If unit costs rise unfavourably, extra sales may not lift profit. That cost move is one clear limitation on the sales–profit link.\n\nSo the statement is True.",
-      "Profit can pay owners while still leaving funds inside for growth. Compensation and retention can share the same surplus.\n\nSo the statement is True.",
-      "Tracking gross profit by product shows which lines carry the profitability objective and which drag it.\n\nSo the statement is True.",
-      "A USP that supports a premium price improves profit when costs stay controlled under that price. Differentiation then feeds the financial objective directly instead of living only in the brand story.\n\nSo the statement is True."
+      "Profit objectives push teams to use marketing budgets efficiently — spend that must earn its keep.\n\nSo the statement is True.",
+      "Unfavourable unit-cost changes are a classic limit on the sales-profit link: volume can rise while profit still disappoints because each unit got more expensive to make.\n\nSo the statement is True.",
+      "Profitability allows owners to be compensated while the firm also retains funds for growth. The same surplus pool can pay a return and still leave plough-back for the next capacity or campaign step.\n\nSo the statement is True.",
+      "Tracking gross profit by product aligns day-to-day marketing with profitability objectives. Share shows relative position versus competitors; gross profit shows whether that position pays.\n\nA product that wins share through aggressive trade terms can look strong on the relative chart and weak on the margin chart. Staff who watch both avoid celebrating a share-only victory that fails the profit objective.\n\nSo the statement is True.",
+      "A USP enabling premium pricing can raise profitability when costs stay controlled.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5645,11 +5645,11 @@
       true
     ],
     "tactical_explanations": [
-      "Ploughing profit into capacity can raise what the firm can sell later. Reinvestment today supports sales growth tomorrow.\n\nSo the statement is True.",
-      "Profitability is listed among the textbook marketing objectives.\n\nSo the statement is True.",
-      "Until sales cover production costs, there is no profit left to record. Cost coverage comes first in the arithmetic.\n\nSo the statement is True.",
-      "Owners reinvest profit when they expect better future returns from expanded operations — new capacity, new markets, or stronger brands that should pay back later. That forward-looking bet is why retained earnings are not only an accounting leftover.\n\nSo the statement is True.",
-      "Stable sales with falling profit often point to higher input costs squeezing the margin. Volume held steady while the cost line moved.\n\nSo the statement is True."
+      "Profit reinvested in capacity can support later sales growth.\n\nSo the statement is True.",
+      "Profitability is listed among marketing objectives in the textbook overview, not treated as a private finance hobby. Sales, share, and profit sit on the same planning board even when teams specialise day to day.\n\nSo the statement is True.",
+      "Sales must cover production costs before any profit can be recorded.\n\nSo the statement is True.",
+      "Owners plough profit back when they expect future returns from expanded operations. Retention is a bet on tomorrow’s earnings from today’s surplus.\n\nHigher sales figures usually help profitability within stated limitations — cost shocks, discounting, mix. A stable sales line with falling profit often points to those limitations, especially input-cost pressure, rather than a mysterious divorce between the two measures.\n\nSo the statement is True.",
+      "Stable sales with declining profitability often signal higher input costs eating the margin — same volume, worse unit economics.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5674,11 +5674,11 @@
       true
     ],
     "tactical_explanations": [
-      "Profit targets may be set annually alongside sales and share objectives.\n\nSo the statement is True.",
-      "Attracting segments that buy at healthy margins advances the profitability objective, not only awareness.\n\nSo the statement is True.",
-      "Retained profit is finance generated inside the firm — ready for marketing initiatives without a new loan.\n\nSo the statement is True.",
-      "In general, more sales help profit, but exceptions exist when costs or discounts intervene. Positive on average, not guaranteed in every instance.\n\nSo the statement is True.",
-      "Profitability objectives force the comparison: did revenue growth outrun cost growth? Without that reminder, volume alone can look like success while the surplus shrinks underneath.\n\nSo the statement is True."
+      "Annual profit targets can sit beside sales and share objectives.\n\nSo the statement is True.",
+      "Marketing that attracts profitable customer segments supports profitability objectives directly. Not every buyer is equally worth winning; segment choice is part of how profit aims get met.\n\nSo the statement is True.",
+      "Retained profit is internal finance for marketing initiatives.\n\nSo the statement is True.",
+      "Sales and profit usually move together, but exceptions exist. Discount wars, cost spikes, and bad mix can break the positive link, which is why the chapter refuses a blind “more sales, always more profit” rule.\n\nDissatisfied customers rarely buy again, so satisfaction failures also threaten future sales and, downstream, profit. The interdependence runs through repurchase: unhappy buyers exit, volume suffers, and profitability objectives get harder to hit.\n\nSo the statement is True.",
+      "Profitability objectives remind managers that revenue growth must outpace cost growth — otherwise the “growth” is hollow.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5703,11 +5703,11 @@
       false
     ],
     "tactical_explanations": [
-      "Retained profit is a standard source of funds for expanding production capacity. Saying it cannot support that expansion is incorrect.\n\nSo the statement is False.",
-      "Headcount is not a profitability measure. Having the most employees does not fulfil a profit objective.\n\nSo the statement is False.",
-      "Contribution margin per unit shows how each sale helps cover fixed costs and profit.\n\nSo the statement is True.",
-      "Sales up with costs rising faster can leave profit unchanged or lower. “Always increases profit” is the false absolute — marketing that buys volume with expensive acquisition or heavy discounting can grow the top line while the bottom line stalls.\n\nSo the statement is False.",
-      "Analysing wishes and needs does not exclude profitability. Market-oriented work still aims for a surplus; customer focus and profit sit together.\n\nSo the statement is False."
+      "Retained profit can fund production capacity expansion — that is a standard use of plough-back.\n\nSo the statement is False.",
+      "Having the most employees does not fulfil a profitability objective. Headcount is not surplus.\n\nSo the statement is False.",
+      "Contribution margin per unit is a practical lens for profit objectives: it shows what each sale leaves after variable cost toward covering fixed costs and profit.\n\nSo the statement is True.",
+      "Sales up with costs rising faster need not raise profit — the cost chase can erase the volume gain. “Always increases profit” is the false absolute.\n\nA USP that makes the product feel special can lift willingness to pay, which helps the profit side when costs behave. But marketing that only inflates volume while costs race ahead fails the profitability test. Uniqueness in buyers’ minds is not a free pass past cost arithmetic.\n\nSo the statement is False.",
+      "Analysing customer wishes and needs does not exclude profitability. Market analysis informs objectives that still include profit among the set.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5732,11 +5732,11 @@
       false
     ],
     "tactical_explanations": [
-      "Profits reimburse owners and can be ploughed back into the business.\n\nSo the statement is True.",
-      "When discounting erodes margins, sales growth may not deliver the profit target. Profit objectives have to recognise that limitation.\n\nSo the statement is True.",
-      "Higher volume enlarges the revenue pool from which profit is calculated after costs. More units do not guarantee a bigger surplus, but they do widen the starting revenue figure managers then challenge with cost lines.\n\nSo the statement is True.",
-      "Keeping profit inside can fund improvements — service, quality, or experience — that later lift satisfaction.\n\nSo the statement is True.",
-      "Profits matter for reinvestment and owner return, not only for tax line items. Reducing their importance to tax alone is wrong.\n\nSo the statement is False."
+      "Profits reimburse owners and can be ploughed back into the firm.\n\nSo the statement is True.",
+      "Profit objectives build in the risk that discounting erodes margins even when volume rises — that limitation shapes how serious profit targets are written.\n\nSo the statement is True.",
+      "Higher sales volume enlarges the revenue pool from which profit is calculated after costs. More pool does not guarantee more profit, but it is the starting feedstock.\n\nSo the statement is True.",
+      "Retaining profit can fund improvements that later support customer satisfaction — better service systems, quality fixes, training — paid from earnings kept inside.\n\nMaintaining sales volume to generate revenue is the ongoing commercial heartbeat; profit retention is how that heartbeat also finances future satisfaction and competitiveness. Treating profits as tax-only trivia ignores that reinvestment role entirely.\n\nSo the statement is True.",
+      "Profits matter for reinvestment and owner return, not only for tax forms.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5761,11 +5761,11 @@
       true
     ],
     "tactical_explanations": [
-      "Did marketing grow sales in a cost-effective way? That question is part of profitability assessment.\n\nSo the statement is True.",
-      "Successful operations earn profits that reimburse owners for the money they invested.\n\nSo the statement is True.",
-      "A firm may delay profit growth while investing heavily in brand and USP development. Managers sometimes accept that delay deliberately because differentiation built now is meant to support margins later.\n\nSo the statement is True.",
-      "Profit reinvestment is a strategic use of earnings kept inside the business.\n\nSo the statement is True.",
-      "If marketing expenditure rises with sales, the extra cost can limit how much profit the volume creates. That simultaneous spend increase is one stated limitation.\n\nSo the statement is True."
+      "Profitability checks whether marketing delivered cost-effective sales growth.\n\nSo the statement is True.",
+      "Owners’ invested money is reimbursed through profits earned from successful operations. That capital-return path is central to why profitability earns a place among marketing-linked business aims.\n\nSo the statement is True.",
+      "Firms may accept delayed profit growth while they invest heavily in brand and USP development. Short-term surplus is traded for longer-term positioning — a conscious sequence, not accidental neglect.\n\nSo the statement is True.",
+      "Profit reinvestment is the strategic use of earnings kept in the business: capacity, marketing assets, or product work funded internally.\n\nHigher sales can create the retained profit that gets reinvested, but limitations apply when marketing expenditure rises in step with volume. The sales-driven profit story stays conditional on those cost and spend patterns, which is why assessment looks at cost-effectiveness, not volume alone.\n\nSo the statement is True.",
+      "Sales-driven profit weakens when marketing spend rises in step with volume.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -5790,11 +5790,11 @@
       false
     ],
     "tactical_explanations": [
-      "Sales track volume or revenue; profitability tracks the surplus after costs. Related, not identical.\n\nSo the statement is True.",
-      "Over time marketing is judged partly on whether it supports sustainable profitability — not only on short bursts of awareness or traffic. A campaign that fills the funnel but never clears cost will fail that longer test even if sales noise looked healthy for a week.\n\nSo the statement is True.",
-      "Retained profit strengthens equity and cash capacity for later campaigns. A healthier balance sheet funds the next push.\n\nSo the statement is True.",
-      "Sharp price cuts can raise units while cutting profit per unit — total volume up, unit profit down.\n\nSo the statement is True.",
-      "Setting sales volume targets does not kick profitability out of the objective set. Plans usually carry both.\n\nSo the statement is False."
+      "Profitability and sales are related measures, not identical ones.\n\nSo the statement is True.",
+      "Marketing performance should ultimately contribute to sustainable profitability. Soft wins on awareness or volume that never clear costs fail the commercial end-test the objective set is aiming at.\n\nSo the statement is True.",
+      "Retained profit strengthens the balance sheet for future marketing campaigns, giving the firm internal equity cushion to fund the next push without relying only on new borrowing.\n\nSo the statement is True.",
+      "Sharp price cuts can lift total volume while cutting profit per unit. The firm sells more and earns less on each ticket — a clean illustration that sales and profitability objectives can diverge.\n\nSatisfaction, differentiation, share, sales, and profitability interdepend, but they are not fused into one number. A plan that sets volume targets still keeps profitability in the objective set; excluding profit whenever sales targets appear would break that interdependence the stem asks you to review.\n\nSo the statement is True.",
+      "Sales volume targets do not exclude profitability from the marketing objective set.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
