@@ -24,7 +24,7 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
-const FULL_COURSE_IMAGE = "/full-course-product.png";
+const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 
 const FULL_COURSE_PRICE = 479;
 

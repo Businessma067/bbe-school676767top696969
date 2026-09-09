@@ -12,7 +12,7 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
-const LITE_COURSE_IMAGE = "/lite-bbe-course.png";
+const LITE_COURSE_IMAGE = "/lite-bbe-course-v2.png";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({

@@ -5,9 +5,9 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { SITE_ORIGIN } from "@/lib/i18n/locale-path";
 
 /** Product hero remakes in public/ — prefer over Lovable CDN asset URLs. */
-const FULL_COURSE_PRODUCT_IMAGE = "/full-course-product.png";
-const LITE_COURSE_PRODUCT_IMAGE = "/lite-bbe-course.png";
-const DEMO_COURSE_PRODUCT_IMAGE = "/demo-practice-product.png";
+const FULL_COURSE_PRODUCT_IMAGE = "/full-course-product-v2.png";
+const LITE_COURSE_PRODUCT_IMAGE = "/lite-bbe-course-v2.png";
+const DEMO_COURSE_PRODUCT_IMAGE = "/demo-practice-product-v2.png";
 
 /** Absolute URL for Open Graph / Twitter images (crawlers reject relative paths). */
 export function absoluteMediaUrl(pathOrUrl: string): string {
