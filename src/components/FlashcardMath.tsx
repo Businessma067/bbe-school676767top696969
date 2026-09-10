@@ -283,10 +283,17 @@ function looksLikeMathInner(inner: string): boolean {
 function normalizeBrokenMathMarkup(input: string): string {
   let s = input;
 
+  // Repair mangled KaTeX row breaks: `\\[0.85em]` / `\\[4pt]` corrupted into
+  // `\$0.85em]` or `$0.85em]` (bare `$` makes whole gather*/aligned fail red).
+  s = s.replace(/\\?\$(\d+(?:\.\d+)?(?:em|ex|pt|mu)\])/g, "\\\\");
+
   // `\$…\$` used as math delimiters (common in some generated explanations).
+  // Skip spacing-corruption leftovers and never unwrap across display math.
   s = s.replace(/\\\$([^$]*?)\\\$/g, (_m, inner: string) => {
     const t = inner.trim();
     if (!t) return _m;
+    // `\$0.85em] … \$0.75em]` must not become `$0.85em] … $`.
+    if (/^\d+(?:\.\d+)?(?:em|ex|pt|mu)\]/.test(t)) return _m;
     if (/\\[a-zA-Z]/.test(t) || /[=<>≠≤≥^_{}+*/\\]/.test(t) || /[A-Za-z]\s*\(/.test(t)) {
       return `$${inner}$`;
     }
@@ -359,7 +366,9 @@ function normalizeCrampedFractionSteps(body: string): string {
       next.startsWith("\\frac") &&
       !/\\\\/.test(line)
     ) {
-      out.push(`${line.trimEnd()} \\\\[0.65em]`);
+      // Plain `\\` — never `\\[0.65em]` (optional-break brackets are eaten by
+      // delimiter normalizers that rewrite `\[` → `$$`).
+      out.push(`${line.trimEnd()} \\\\`);
       changed = true;
       continue;
     }
@@ -381,12 +390,14 @@ function formatAlignedContinuationChain(bodies: string[]): string {
       lines.push(`& ${raw}`);
     }
   }
-  // Extra row gap so stacked = continuations are not cramped.
-  return `\\begin{aligned}\n${lines.join(" \\\\[0.75em]\n")}\n\\end{aligned}`;
+  // Plain `\\` row breaks (avoid `\\[…em]`, which corrupts into `$0.85em]`).
+  return `\\begin{aligned}\n${lines.join(" \\\\\n")}\n\\end{aligned}`;
 }
 
 function formatGatherBlock(bodies: string[]): string {
-  return `\\begin{gather*}\n${bodies.map((b) => b.trim()).filter(Boolean).join(" \\\\[0.85em]\n")}\n\\end{gather*}`;
+  // Plain `\\` — `\\[0.85em]` was rewritten to `$0.85em]` and turned whole
+  // gather* blocks into red katex-error source across explanations.
+  return `\\begin{gather*}\n${bodies.map((b) => b.trim()).filter(Boolean).join(" \\\\\n")}\n\\end{gather*}`;
 }
 
 /** Put `&=` on the first top-level equals so the chain lines up. */
@@ -585,15 +596,15 @@ export function mergeContinuationDisplayParagraphs(paragraphs: string[]): string
 
 function splitMath(input: string): Part[] {
   // Convert TeX delimiters \(…\) / \[…\] to $…$ / $$…$$.
-  // Must use paired matches + a function replacer:
-  // 1) Bare /\\\[/ also matches KaTeX row breaks `\\[0.85em]` (and `\\[4pt]`, …)
-  //    and would corrupt them into literal `$0.85em]`.
+  // Lookbehind + paired match + function replacer:
+  // 1) Must not match KaTeX row breaks `\\[0.85em]` / `\\[4pt]` (a bare /\\\[/
+  //    turns those into `$0.85em]` and red-fails whole gather* blocks).
   // 2) String.replace treats `$$` in a string replacement as a single `$`,
   //    which would turn display `\[…\]` into inline `$…$`.
   const text = normalizeBrokenMathMarkup(
     input
-      .replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner: string) => `$${inner}$`)
-      .replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner: string) => `$$${inner}$$`),
+      .replace(/(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)/g, (_m, inner: string) => `$${inner}$`)
+      .replace(/(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]/g, (_m, inner: string) => `$$${inner}$$`),
   );
 
   const parts: Part[] = [];
