@@ -29,7 +29,7 @@ import {
   TutorModeArt,
 } from "@/components/study-modes/ModeArt";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
-import { LockedFeaturePanel } from "@/components/CourseLockedView";
+import { LockedFeaturePanel, LockedToolCard } from "@/components/CourseLockedView";
 import {
   BookOpen,
   ClipboardCheck,
@@ -200,7 +200,6 @@ function DashboardPage() {
               icon={<Layers className="h-4 w-4" />}
               label="Study tools"
               active={tab === "games"}
-              locked={paidToolsLocked}
               onClick={() => setTab("games")}
             />
           </nav>
@@ -259,7 +258,7 @@ function DashboardPage() {
             <MobileTab active={tab === "custom"} locked={paidToolsLocked} onClick={() => setTab("custom")}>
               Custom
             </MobileTab>
-            <MobileTab active={tab === "games"} locked={paidToolsLocked} onClick={() => setTab("games")}>
+            <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
               Study tools
             </MobileTab>
           </div>
@@ -289,10 +288,8 @@ function DashboardPage() {
                   attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
                 />
               )
-            ) : paidToolsLocked ? (
-              <LockedFeaturePanel feature="study-tools" />
             ) : (
-              <GamesTab />
+              <GamesTab locked={paidToolsLocked} />
             )}
           </div>
         </main>
@@ -573,13 +570,41 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 
 /* -------------------- STUDY MODES TAB -------------------- */
 
-function GamesTab() {
+function GamesTab({ locked = false }: { locked?: boolean }) {
   const navigate = useLocalizedNavigate();
 
   const openTool = (to: "/flashcards" | "/matching" | "/tutor-exam") => {
+    if (locked) return;
     // Explicit empty search so tab=games is not stripped on /dashboard first.
     void navigate({ to, search: {} });
   };
+
+  const cards = [
+    {
+      feature: "flashcards" as const,
+      to: "/flashcards" as const,
+      title: "Flashcards",
+      blurb: "Drill Economics terms, Math formulas, and English vocabulary with flip cards.",
+      cta: "Open flashcards →",
+      art: <FlashcardsModeArt />,
+    },
+    {
+      feature: "matching" as const,
+      to: "/matching" as const,
+      title: "Matching",
+      blurb: "Connect each concept to the right definition — same decks, different interaction.",
+      cta: "Open matching →",
+      art: <MatchingModeArt />,
+    },
+    {
+      feature: "tutor-exam" as const,
+      to: "/tutor-exam" as const,
+      title: "Tutor Exam",
+      blurb: "A tutor robot runs a random theoretical quiz — new questions every time.",
+      cta: "Open tutor exam →",
+      art: <TutorModeArt />,
+    },
+  ];
 
   return (
     <div className="space-y-6">
@@ -590,63 +615,40 @@ function GamesTab() {
         </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <button
-          type="button"
-          onClick={() => openTool("/flashcards")}
-          className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-        >
-          <div className="h-32 w-full overflow-hidden">
-            <FlashcardsModeArt />
-          </div>
-          <div className="p-5">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Study mode
-            </p>
-            <h3 className="mt-1 font-display text-lg font-bold">Flashcards</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Drill Economics terms, Math formulas, and English vocabulary with flip cards.
-            </p>
-            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
-          </div>
-        </button>
-        <button
-          type="button"
-          onClick={() => openTool("/matching")}
-          className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-        >
-          <div className="h-32 w-full overflow-hidden">
-            <MatchingModeArt />
-          </div>
-          <div className="p-5">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Study mode
-            </p>
-            <h3 className="mt-1 font-display text-lg font-bold">Matching</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Connect each concept to the right definition — same decks, different interaction.
-            </p>
-            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open matching →</p>
-          </div>
-        </button>
-        <button
-          type="button"
-          onClick={() => openTool("/tutor-exam")}
-          className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-        >
-          <div className="h-32 w-full overflow-hidden">
-            <TutorModeArt />
-          </div>
-          <div className="p-5">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Study mode
-            </p>
-            <h3 className="mt-1 font-display text-lg font-bold">Tutor Exam</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              A tutor robot runs a random theoretical quiz — new questions every time.
-            </p>
-            <p className="mt-4 text-xs font-semibold text-caramel-deep">Open tutor exam →</p>
-          </div>
-        </button>
+        {cards.map((card) => {
+          const body = (
+            <>
+              <div className="h-32 w-full overflow-hidden">{card.art}</div>
+              <div className="p-5">
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                  Study mode
+                </p>
+                <h3 className="mt-1 font-display text-lg font-bold">{card.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{card.blurb}</p>
+                <p className="mt-4 text-xs font-semibold text-caramel-deep">{card.cta}</p>
+              </div>
+            </>
+          );
+
+          if (locked) {
+            return (
+              <LockedToolCard key={card.feature} feature={card.feature}>
+                {body}
+              </LockedToolCard>
+            );
+          }
+
+          return (
+            <button
+              key={card.feature}
+              type="button"
+              onClick={() => openTool(card.to)}
+              className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+            >
+              {body}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

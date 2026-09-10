@@ -66,25 +66,78 @@ export function courseLockCopy(feature: CourseLockFeature, minTier: AccessTier) 
 function LockCallout({
   feature,
   minTier,
+  compact = false,
 }: {
   feature: CourseLockFeature;
   minTier: AccessTier;
+  compact?: boolean;
 }) {
   const { message, ctaLabel, ctaTo } = courseLockCopy(feature, minTier);
   return (
-    <div className="mx-auto flex w-full max-w-md flex-col items-center text-center">
-      <div className="mb-4 grid h-14 w-14 place-items-center rounded-2xl border border-border bg-card shadow-sm">
-        <Lock className="h-6 w-6 text-caramel-deep" aria-hidden="true" />
+    <div className="mx-auto flex w-full max-w-md flex-col items-center px-3 text-center">
+      <div
+        className={cn(
+          "grid place-items-center rounded-2xl border border-border bg-card shadow-sm",
+          compact ? "mb-2.5 h-10 w-10" : "mb-4 h-14 w-14",
+        )}
+      >
+        <Lock
+          className={cn(compact ? "h-4 w-4" : "h-6 w-6", "text-caramel-deep")}
+          aria-hidden="true"
+        />
       </div>
-      <p className="font-display text-lg font-semibold tracking-tight text-foreground sm:text-xl">
+      <p
+        className={cn(
+          "font-display font-semibold tracking-tight text-foreground",
+          compact ? "text-sm leading-snug" : "text-lg sm:text-xl",
+        )}
+      >
         {message}
       </p>
       <Link
         to={ctaTo}
-        className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+        className={cn(
+          "inline-flex items-center justify-center rounded-md bg-primary font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90",
+          compact ? "mt-3 min-h-9 px-3.5 py-1.5 text-xs" : "mt-6 min-h-11 px-5 py-2.5 text-sm",
+        )}
       >
         {ctaLabel}
       </Link>
+    </div>
+  );
+}
+
+/**
+ * Compact lock overlay for a single study-tool card (Flashcards / Matching / Tutor).
+ * Keeps the card visible underneath so users can see what they are missing.
+ */
+export function LockedToolCard({
+  feature,
+  minTier = "lite",
+  children,
+  className,
+}: {
+  feature: CourseLockFeature;
+  minTier?: AccessTier;
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn(
+        "relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm",
+        className,
+      )}
+    >
+      <div
+        className="pointer-events-none select-none opacity-50 grayscale-[30%]"
+        aria-hidden="true"
+      >
+        <div className="blur-[1.5px]">{children}</div>
+      </div>
+      <div className="absolute inset-0 z-10 flex items-center justify-center bg-background/50 p-3 backdrop-blur-[1.5px]">
+        <LockCallout feature={feature} minTier={minTier} compact />
+      </div>
     </div>
   );
 }
