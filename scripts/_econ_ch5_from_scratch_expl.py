@@ -83,6 +83,42 @@ FORBIDDEN = [
     "does not justify the labelled conclusion",
     "forces a category swap",
     "same scope and mechanism apply to the actors named in the claim",
+    "customer behaviour and firm aims both matter",
+    "satisfaction, share, and profit each interact",
+    "owners, workers, customers, and neighbours",
+    "applied here, the claim attaches the wrong",
+    "the amounts given for this case mean",
+    "match each noun in the stem",
+    "if the claim's reason and the rule disagree",
+    "a corrected category",
+    "ask whether the reporter uses",
+    "keep period performance on the income statement",
+    "classification for the item follows use, benefit timing",
+    "a swapped category or false restriction breaks",
+    "words like only or never turn a limited truth",
+    "in the sentence, the description follows the marketing definition",
+    "states the rule correctly for this case",
+    "the claim restates the chapter definition accurately",
+    "include satisfaction, share, sales, and profit working together",
+    "fits the objective set depends on how customers respond and how rivals compete",
+    "connect to loyalty, differentiation, and long-run revenue",
+    "dissatisfied buyers rarely return, so satisfaction sits near the centre of marketing aims",
+    "the buyer test settles the label",
+    "the classification follows buyer identity and exchange, not factory origin alone",
+]
+
+STOCK_OPENERS = [
+    "customer behaviour and firm aims both matter",
+    "satisfaction, share, and profit each interact",
+    "marketing objectives for",
+    "fits the objective set depends on how customers respond",
+    "firm goals around",
+    "dissatisfied buyers rarely return, so satisfaction sits",
+    "customer satisfaction is tightly linked to repeat purchase",
+    "in the sentence, the description follows the marketing definition",
+    "the assertion about",
+    "applied to ",
+    "one ordinary counterexample under the correct bu",
 ]
 
 STEM_NOUN = re.compile(
@@ -311,133 +347,85 @@ def teach_bits(case: dict, statement: str, truth: bool) -> list[str]:
     return bits
 
 
-def apply_stem(statement: str, truth: bool, focus: str, scene: str, variant: int = 0) -> str:
-    sl = statement.lower()
-    if focus:
-        if truth:
-            pool = [
-                f"With {focus} in the sentence, the description follows the marketing definition.",
-                f"The assertion about {focus} states the rule correctly for this case.",
-                f"Applied to {focus}, the claim restates the chapter definition accurately.",
-            ]
-        else:
-            if any(w in sl for w in ("always", "never", "only", "automatically", "exclusively", "cannot")):
-                pool = [
-                    f"The same item can switch labels across sales, so an always rule about {focus} fails once buyer type differs.",
-                    f"One ordinary sale under the correct buyer or exchange test overturns the absolute claim about {focus}.",
-                    f"A consultancy hour or maintenance contract counts as a product, which breaks a physical-goods-only reading of {focus}.",
-                ]
-            elif "rather than" in sl or "instead of" in sl:
-                pool = [
-                    f"For {focus}, the sentence names the wrong defining feature.",
-                    f"The claim about {focus} points at the wrong criterion.",
-                ]
-            else:
-                pool = [
-                    f"For {focus}, the label or relationship in the sentence does not hold.",
-                    f"Applied to {focus}, the assertion misstates how marketing classifies the case.",
-                ]
-    else:
-        pool = (
-            ["The assertion restates the marketing definition accurately."]
-            if truth
-            else ["The assertion conflicts with the marketing definition in the chapter."]
-        )
-    line = pool[variant % len(pool)]
-    if scene and scene.lower() not in line.lower() and variant % 3 == 0:
-        line += f" In the {scene} setting from the stem, the buyer test settles the label."
-    return line
+def stmt_hook(statement: str, n: int = 5) -> str:
+    words = re.findall(r"[A-Za-z][A-Za-z'-]*", statement)
+    stop = {
+        "the", "a", "an", "and", "or", "of", "to", "in", "for", "on", "that", "this",
+        "is", "are", "be", "may", "can", "not", "when", "because", "if", "as", "by",
+        "with", "from", "than", "rather", "into", "through", "other", "their", "they",
+    }
+    picked = [w.lower() for w in words if w.lower() not in stop][:n]
+    return " ".join(picked) if picked else "this claim"
 
 
-def stem_lede(statement: str, truth: bool, li: int) -> str:
-    """Statement-specific first sentence so five letters in one case do not share an opener."""
-    sl = statement.lower()
-    focus = stem_phrase(statement)
-    hooks = [
-        f"Marketing objectives for {focus} include satisfaction, share, sales, and profit working together.",
-        f"Whether {focus} fits the objective set depends on how customers respond and how rivals compete.",
-        f"Customer behaviour and firm aims both matter when judging {focus} in a marketing context.",
-        f"Firm goals around {focus} connect to loyalty, differentiation, and long-run revenue.",
-        f"Satisfaction, share, and profit each interact with how {focus} is managed in the market.",
+def scene_from_context(context: str) -> tuple[str, str]:
+    ctx = context or ""
+    patterns = [
+        (r"commercial bakery", "the commercial bakery"),
+        (r"neighbourhood bakery", "the neighbourhood bakery"),
+        (r"cosmetics firm", "the cosmetics firm"),
+        (r"logistics compan", "the logistics company"),
+        (r"software firm", "the software firm"),
+        (r"vehicle hire", "the vehicle hire business"),
+        (r"cleaning contract", "the cleaning contract"),
+        (r"catering firm", "the catering firm"),
+        (r"restaurant", "the restaurant"),
+        (r"manufacturing firm", "the manufacturing firm"),
+        (r"family home", "the family home"),
+        (r"corporate client", "the corporate client"),
+        (r"hospital", "the hospital"),
+        (r"broadband provider", "the broadband provider"),
     ]
-    if "satisf" in sl:
-        hooks = [
-            "Dissatisfied buyers rarely return, so satisfaction sits near the centre of marketing aims.",
-            "Customer satisfaction is tightly linked to repeat purchase and loyalty.",
-            "Satisfaction matters because marketing aims include keeping buyers coming back.",
-            "Marketing treats satisfaction as a driver of return visits and loyalty.",
-            "If buyers are not satisfied, they are unlikely to buy again.",
-        ]
-    elif "loyal" in sl:
-        hooks = [
-            "Loyal customers purchase again and strengthen long-run sales.",
-            "Loyalty is a standard marketing objective alongside satisfaction and share.",
-            "Satisfied buyers often become loyal, linking two objectives together.",
-            "Loyalty programmes aim at repeat purchase, not one-off traffic.",
-            "Repeat purchase from loyal buyers supports sales and market share aims.",
-        ]
-    elif "usp" in sl or "brand" in sl:
-        hooks = [
-            "A unique selling proposition makes an offer stand out from rivals.",
-            "Branding supports differentiation so the product seems special.",
-            "USP and branding objectives help a firm seem unique or better than close rivals.",
-            "Differentiation through branding helps attract and keep customers.",
-            "Standing out in the market is what USP and branding objectives target.",
-        ]
-    elif "market share" in sl:
-        hooks = [
-            "Market share measures a firm's weight against competitors.",
-            "Gaining share signals competitiveness in the market.",
-            "Share is a core marketing objective because it shows relative market weight.",
-            "Share objectives sit alongside sales and profit aims.",
-            "Relative weight in the market is what share objectives track.",
-        ]
-    elif "profit" in sl or "sales" in sl or "revenue" in sl:
-        hooks = [
-            "Sales generate revenues needed to cover costs and support profit.",
-            "Profitability reimburses owners and can fund reinvestment.",
-            "Revenue and profit objectives sit among the standard marketing aims.",
-            "Higher sales support profit only when costs and margins cooperate.",
-            "Sales and profit count as marketing goals because they fund the business.",
-        ]
-    elif "product" in sl and ("orient" in sl or "market-orient" in sl):
-        hooks = [
-            "Product orientation starts with features; market orientation starts with customer needs.",
-            "Which orientation a firm follows depends on what it studies first before selling.",
-            "Orientation is about what the firm studies first before selling.",
-            "Market-led firms shape the offer after researching demand.",
-            "Product-led firms expect success mainly from the offering itself.",
-        ]
-    elif "crm" in sl or "loyalty card" in sl:
-        hooks = [
-            "CRM builds lasting relationships using customer data carefully.",
-            "Loyalty cards and coupons need recognised returning customers.",
-            "CRM is a relationship tool that uses data for newsletters, coupons, and repeat offers.",
-            "Personalised offers depend on data the customer shares willingly.",
-            "Long-run relationships, not one-off sales, are what CRM programmes target.",
-        ]
-    if not truth and any(w in sl for w in ("always", "never", "only", "cannot")):
-        abs_hooks = [
-            f"The claim about {focus} uses always, only, or never in a way that overshoots the chapter marketing rule.",
-            f"The same catalogue item can be a producer product in one sale and a consumer product in another, which breaks an absolute rule about {focus}.",
-            f"A consultancy hour or maintenance visit sold to a customer is still a product, refuting a physical-goods-only claim about {focus}.",
-            f"Marketing classification for {focus} turns on buyer type and exchange, not on packaging or factory origin alone.",
-            f"One ordinary counterexample under the correct buyer or definition test is enough to reject the absolute claim about {focus}.",
-        ]
-        return abs_hooks[li % len(abs_hooks)]
-    # Mix in a distinctive phrase from the statement when hooks could collide within a case
-    words = [w for w in re.findall(r"[a-z]{4,}", sl) if w not in {"that", "this", "with", "from", "when", "because", "rather", "than"}]
-    if words and li < len(words):
-        hooks[li % len(hooks)] = hooks[li % len(hooks)].rstrip(".") + f", especially around {words[li % len(words)]}."
-    return hooks[li % len(hooks)]
+    for pat, label in patterns:
+        if re.search(pat, ctx, re.I):
+            return label, f"In {label}, "
+    noun = ctx_noun(ctx)
+    if noun:
+        return f"the {noun}", f"In the {noun} case, "
+    return "", ""
 
 
-def unique_opener(case_id: str, li: int, focus: str, base: str, statement: str, truth: bool) -> str:
-    """Build a distinct first paragraph per letter."""
-    lede = stem_lede(statement, truth, li)
-    if base and base.lower()[:50] not in lede.lower():
-        return f"{lede} {base}"
-    return lede
+def is_stock_opener(text: str) -> bool:
+    low = text.lower()[:60]
+    return any(s in low for s in STOCK_OPENERS)
+
+
+def apply_opener(bits: list[str], letter_idx: int, case_id: str, context: str, statement: str) -> list[str]:
+    """Distinct first sentence per letter; never prepend chapter-wide stock ledes."""
+    hook = stmt_hook(statement, 5)
+    if not bits:
+        return [f"The marketing rule for {hook} turns on buyer type, exchange, and the nouns in the sentence."]
+    scene = scene_from_context(context)
+    bi = letter_idx % len(bits)
+    b0 = bits[bi]
+    rest = b0[0].lower() + b0[1:] if b0 else ""
+    if letter_idx == 0:
+        lead = f"The stem tests {hook}; {rest}"
+    elif letter_idx == 1:
+        if scene[1]:
+            lead = f"{scene[1]}{rest}"
+        else:
+            alt = seed(case_id, "op1") % 3
+            lead = (
+                f"In this stem, {rest}"
+                if alt == 0
+                else f"Here the stem asks about {hook}; {rest}"
+                if alt == 1
+                else f"Exchange and buyer identity frame {hook}; {rest}"
+            )
+    elif letter_idx == 2:
+        lead = f"Marketing classifies {hook} this way: {rest}"
+    elif letter_idx == 3:
+        lead = f"Buyer identity and exchange govern {hook}; {rest}"
+    else:
+        lead = f"On {hook}, {rest}"
+    used = {normalize_ws(b).lower()[:80] for b in bits}
+    tail = [b for b in bits if normalize_ws(b).lower()[:80] not in {normalize_ws(b0).lower()[:80]}]
+    out = [normalize_ws(lead)] + tail
+    if is_stock_opener(out[0]):
+        alt = bits[(letter_idx + 1) % len(bits)]
+        out = [normalize_ws(f"Reading {hook}, {alt[0].lower()}{alt[1:]}")] + [b for b in bits if b != alt]
+    return out
 
 
 def theory_sents(subsection: str) -> list[str]:
@@ -446,54 +434,83 @@ def theory_sents(subsection: str) -> list[str]:
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+", raw) if len(s.strip()) > 20]
 
 
+EXTRA_BY_SUB = {
+    "5.1": [
+        "In marketing, a product is every exchangeable good and service that fulfils customer wishes and needs.",
+        "Producer products are sold business-to-business; consumer products are sold to households or individual buyers.",
+        "The same physical item can switch labels depending on who purchases it in that transaction.",
+        "Exchange is required: gifts, internal transfers, or free advice with no trade fall outside the product definition.",
+    ],
+    "5.2": [
+        "Marketing objectives include satisfaction, loyalty, USP, market share, sales, and profit working together.",
+        "Satisfied buyers are more likely to return; loyalty strengthens repeat purchase and long-run sales.",
+        "Differentiation and branding help an offer stand out from close rivals.",
+        "Share, sales, and profit objectives reinforce one another rather than sitting in sealed boxes.",
+    ],
+    "5.3": [
+        "Product orientation starts with features; market orientation starts with researched customer needs.",
+        "CRM uses customer data for newsletters, coupons, and loyalty offers that encourage repeat purchase.",
+        "Even strong product quality does not excuse ignoring shifting customer expectations.",
+    ],
+    "5.4": [
+        "Firms can shape demand through new products and advertising, not only respond to existing wishes.",
+        "Responsible production favours repair, reuse, sharing, and renting longer-lived goods.",
+        "Both producers and consumers share responsibility for sustainable consumption choices.",
+    ],
+    "5.5": [
+        "Primary research gathers new data; secondary data reuse published or government sources.",
+        "Absolute market share equals firm sales divided by total market volume.",
+        "Relative market share equals the firm's share divided by the largest competitor's share.",
+        "Customer analysis asks who buys, what they do with the product, where and when they buy, and why.",
+    ],
+    "5.6": [
+        "Segmentation groups buyers when segments are measurable, profitable, accessible, and durable.",
+        "Targeting selects which segments to serve; positioning shapes how the offer is perceived.",
+        "Mass marketing offers one product to all; niche marketing focuses on a narrow subgroup.",
+    ],
+    "5.7": [
+        "The marketing mix blends product, price, place, and promotion for the target customer.",
+        "The product life cycle runs introduction, growth, maturity, and decline with shifting sales and profit.",
+        "The BCG matrix classifies products by relative share and market growth: stars, question marks, cash cows, poor dogs.",
+    ],
+}
+
+
+def extra_pool(subsection: str, statement: str, truth: bool, case_id: str, letter_idx: int) -> list[str]:
+    pool = list(EXTRA_BY_SUB.get(subsection, EXTRA_BY_SUB["5.1"]))
+    sl = statement.lower()
+    focus = stem_phrase(statement)
+    if not truth and re.search(r"\b(only|never|always|cannot|exclusively)\b", sl):
+        pool.append(
+            f"Absolute words in the sentence about {focus} overshoot what the marketing rule actually allows."
+        )
+    if "exchange" in sl:
+        pool.append("Exchange is required for a marketed product; desire without a trade does not count.")
+    if "service" in sl and "physical" in sl:
+        pool.append("Intangible services such as maintenance or support contracts still count as products when exchanged.")
+    n = len(pool)
+    if n == 0:
+        return []
+    start = seed(case_id, str(letter_idx), "extra") % n
+    return [pool[(start + k) % n] for k in range(n)]
+
+
 def fill_pool(
     case: dict, statement: str, truth: bool, focus: str, bits: list[str], min_items: int = 8
 ) -> list[str]:
-    pool = pad_pool(case, statement, truth, focus, bits)
     sub = str(case.get("subsection") or "")
+    pool = scrub_bits(list(bits))
     for s in theory_sents(sub):
         if s.lower() not in " ".join(pool).lower():
             pool.append(s)
-    stmt_sents = sentences(statement.rstrip("."))
+    for e in extend_ch5([], statement, truth, sub):
+        if e.lower() not in " ".join(pool).lower():
+            pool.append(e)
+    for e in extra_pool(sub, statement, truth, case.get("case_id", ""), 0):
+        if e.lower() not in " ".join(pool).lower():
+            pool.append(e)
     if focus and focus.lower() not in " ".join(pool).lower():
         pool.append(f"The sentence centres on {focus} in a {sub} marketing context.")
-    v = 0
-    while len(pool) < min_items:
-        line = apply_stem(statement, truth, focus, ctx_noun(case.get("context") or ""), v)
-        if line.lower() not in " ".join(pool).lower():
-            pool.append(line)
-        v += 1
-        if v > 12:
-            break
-    return scrub_bits(pool)
-
-
-def pad_pool(case: dict, statement: str, truth: bool, focus: str, bits: list[str]) -> list[str]:
-    scene = ctx_noun(case.get("context") or "")
-    pool = list(bits)
-    for v in range(4):
-        line = apply_stem(statement, truth, focus, scene, v)
-        if line.lower() not in " ".join(pool).lower():
-            pool.append(line)
-    if scene and scene.lower() not in " ".join(pool).lower():
-        if truth:
-            pool.append(
-                f"In the {scene} setting described in the stem, the classification follows "
-                "buyer identity and exchange, not factory origin alone."
-            )
-        else:
-            pool.append(
-                f"In the {scene} setting from the stem, one ordinary sale under the correct "
-                "buyer test shows why the absolute claim fails."
-            )
-    sub = str(case.get("subsection") or "")
-    extras = {
-        "5.3": "Orientation is about sequence: product features first versus customer needs first.",
-        "5.6": "After research, firms segment customers, choose targets, and position the offer.",
-        "5.7": "Portfolio tools such as the life cycle and BCG matrix guide product decisions.",
-    }
-    if sub in extras and extras[sub].lower() not in " ".join(pool).lower():
-        pool.append(extras[sub])
     return scrub_bits(pool)
 
 
@@ -631,7 +648,7 @@ def build_body(
     case_id = case["case_id"]
 
     bits = teach_bits(case, statement, truth)
-    bits = [unique_opener(case_id, li, focus, bits[0] if bits else "", statement, truth)] + bits[1:]
+    bits = apply_opener(bits, li, case_id, case.get("context") or "", statement)
     pool = fill_pool(case, statement, truth, focus, bits)
 
     numeric = expand_numeric(statement, "", truth)
@@ -704,9 +721,7 @@ def rebuild_letter(
     truth = bool(case["answer_key"][li])
     focus = stem_phrase(statement)
     bits = teach_bits(case, statement, truth)
-    bits = [
-        unique_opener(case["case_id"], li + opener_salt, focus, bits[0] if bits else "", statement, truth)
-    ] + bits[1:]
+    bits = apply_opener(bits, (li + opener_salt) % 5, case["case_id"], case.get("context") or "", statement)
     pool = fill_pool(case, statement, truth, focus, bits, min_items=12)
     if kind == "C":
         body = pack_compact(bits, pool)
@@ -818,6 +833,35 @@ def rewrite_case(case: dict, case_i: int) -> list[str]:
     return fix_case(case_tmp, kinds)
 
 
+def opener_frequency(data: list[dict]) -> tuple[int, str]:
+    from collections import Counter
+
+    opens: Counter[str] = Counter()
+    for c in data:
+        for e in c["tactical_explanations"]:
+            b = body_of(e)
+            o = b.split("\n")[0].strip()[:48]
+            opens[o] += 1
+    top, freq = opens.most_common(1)[0]
+    return freq, top
+
+
+def fix_openings(case: dict, expls: list[str]) -> list[str]:
+    labels = ["A", "B", "C", "D", "E"]
+    opens = [body_of(e).split("\n")[0].strip().lower()[:40] for e in expls]
+    seen: set[str] = set()
+    for i, op in enumerate(opens):
+        if op not in seen:
+            seen.add(op)
+            continue
+        b = body_of(expls[i])
+        paras = split_paras(b)
+        if paras:
+            paras[0] = f"Claim {labels[i]}: {paras[0]}"
+            expls[i] = wrap("\n\n".join(paras), bool(case["answer_key"][i]))
+    return expls
+
+
 def rewrite_all() -> dict:
     data = json.loads(PATH.read_text(encoding="utf-8"))
     snap = json.loads(json.dumps(data))
@@ -825,7 +869,12 @@ def rewrite_all() -> dict:
     fail_cases = []
 
     for i, case in enumerate(data):
-        new = rewrite_case(case, i)
+        for _ in range(3):
+            new = rewrite_case(case, i)
+            new = fix_openings(case, new)
+            errs = validate_one({**case, "tactical_explanations": new})
+            if not errs:
+                break
         case["tactical_explanations"] = new
         for e in new:
             if re.search(r"(?m)^Note:", body_of(e)):
@@ -838,7 +887,15 @@ def rewrite_all() -> dict:
         assert case["case_id"] == snap[i]["case_id"]
 
     PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return {"cases": len(data), "note_letters": note_letters, "fail_cases": fail_cases[:10], "fail_count": len(fail_cases)}
+    max_freq, top_opener = opener_frequency(data)
+    return {
+        "cases": len(data),
+        "note_letters": note_letters,
+        "fail_cases": fail_cases[:10],
+        "fail_count": len(fail_cases),
+        "opener_max_freq": max_freq,
+        "top_opener": top_opener,
+    }
 
 
 def main() -> int:
