@@ -15,6 +15,11 @@ import {
   YAxis,
 } from "recharts";
 import examHallAsset from "@/assets/exam-hall-real.png.asset.json";
+import audimaxImg from "@/assets/wu-vienna/audimax.jpg";
+import campusPlazaImg from "@/assets/wu-vienna/campus-plaza.jpg";
+import libraryInteriorImg from "@/assets/wu-vienna/library-interior.jpg";
+import libraryExteriorImg from "@/assets/wu-vienna/library-learning-center.jpg";
+import teachingCenterImg from "@/assets/wu-vienna/teaching-center.jpg";
 import {
   BbeGhostButton,
   BbeInfoCallout,
@@ -29,14 +34,15 @@ import { absoluteMediaUrl, socialImageMetaForPath } from "@/lib/seo/social-image
 
 const PATH = "/wu-vienna" as const;
 const CANONICAL = `${SITE_ORIGIN}${PATH}`;
+/** Stable public URL for OG/Twitter crawlers (also kept under public/wu-vienna/). */
 const PAGE_IMAGE = absoluteMediaUrl("/wu-vienna/campus-plaza.jpg");
 
 const IMAGES = {
-  campusPlaza: "/wu-vienna/campus-plaza.jpg",
-  teachingCenter: "/wu-vienna/teaching-center.jpg",
-  audimax: "/wu-vienna/audimax.jpg",
-  libraryExterior: "/wu-vienna/library-learning-center.jpg",
-  libraryInterior: "/wu-vienna/library-interior.jpg",
+  campusPlaza: campusPlazaImg,
+  teachingCenter: teachingCenterImg,
+  audimax: audimaxImg,
+  libraryExterior: libraryExteriorImg,
+  libraryInterior: libraryInteriorImg,
 } as const;
 
 const CHART = {
@@ -175,9 +181,9 @@ const articleJsonLd = {
   mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
   image: [
     PAGE_IMAGE,
-    absoluteMediaUrl(IMAGES.libraryExterior),
-    absoluteMediaUrl(IMAGES.teachingCenter),
-    absoluteMediaUrl(IMAGES.libraryInterior),
+    absoluteMediaUrl("/wu-vienna/library-learning-center.jpg"),
+    absoluteMediaUrl("/wu-vienna/teaching-center.jpg"),
+    absoluteMediaUrl("/wu-vienna/library-interior.jpg"),
   ],
   about: {
     "@type": "CollegeOrUniversity",
