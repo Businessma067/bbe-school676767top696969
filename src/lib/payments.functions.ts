@@ -52,7 +52,7 @@ export const createCheckout = createServerFn({ method: "POST" })
       }
       const product = PAID_PRODUCTS[slug];
 
-      let discount = 0;
+      let discountPct = 0;
       let appliedPromoCode: string | null = null;
       const rawPromo = (data.promoCode ?? "").trim();
       if (rawPromo) {
@@ -60,16 +60,21 @@ export const createCheckout = createServerFn({ method: "POST" })
         if (!promo.ok) {
           return { ok: false, error: promo.error };
         }
-        discount = promo.discountPct;
+        discountPct = Math.max(0, Math.min(100, Number(promo.discountPct) || 0));
         appliedPromoCode = promo.code;
       }
 
       // Optional test override, e.g. MONOBANK_TEST_AMOUNT_MINOR=10000 (100 UAH).
+      // Discount still applies on top of the test base so promo pricing can be verified.
       const testAmount = Number(process.env["MONOBANK_TEST_AMOUNT_MINOR"] ?? "");
-      const amountMinor =
+      const baseMinor =
         Number.isFinite(testAmount) && testAmount > 0
           ? Math.round(testAmount)
-          : Math.round(product.priceUah * 100 * (1 - discount / 100));
+          : Math.round(product.priceUah * 100);
+      const amountMinor = Math.max(
+        1,
+        Math.round(baseMinor * (1 - discountPct / 100)),
+      );
 
       const { getRequest } = await import("@tanstack/react-start/server");
       const request = getRequest();
