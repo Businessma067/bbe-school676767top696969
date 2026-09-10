@@ -66,6 +66,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
   </url>
   <url>
+    <loc>https://bbe-school.com/wu-vienna</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
+  </url>
+  <url>
     <loc>https://bbe-school.com/parents</loc>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/parents"/>
@@ -158,58 +166,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bbe-school.com/mock-exams</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/flashcards</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/flashcards/economics</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/flashcards/math</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/flashcards/english</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/matching</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/matching/economics</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/matching/math</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/matching/english</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/tutor-exam</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/tutor-exam/economics</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/tutor-exam/math</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bbe-school.com/tutor-exam/english</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://bbe-school.com/de</loc>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/"/>
@@ -272,6 +228,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/de/wu-vienna</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
   </url>
   <url>
     <loc>https://bbe-school.com/de/parents</loc>
@@ -416,6 +380,14 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/bbe-vs-wiso"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/bbe-vs-wiso"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/bbe-vs-wiso"/>
+  </url>
+  <url>
+    <loc>https://bbe-school.com/uk/wu-vienna</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bbe-school.com/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bbe-school.com/de/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bbe-school.com/uk/wu-vienna"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bbe-school.com/wu-vienna"/>
   </url>
   <url>
     <loc>https://bbe-school.com/uk/parents</loc>
