@@ -126,6 +126,8 @@ function isExpired(expiresAt: string | null | undefined): boolean {
 export async function lookupDiscountPromo(input: {
   code: string;
   productSlug?: string;
+  /** When set, a code already claimed by this user still validates (checkout after apply). */
+  userId?: string;
 }): Promise<DiscountValidateResult> {
   const code = normalizeCode(input.code);
   if (!code) return { ok: false, error: "Enter a promocode." };
@@ -138,7 +140,7 @@ export async function lookupDiscountPromo(input: {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data, error } = await supabaseAdmin
       .from("promocodes")
-      .select("id, code, name, kind, discount_pct, max_uses, expires_at, product_slug")
+      .select("id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at, used_by")
       .eq("code", code)
       .maybeSingle();
 
@@ -152,6 +154,9 @@ export async function lookupDiscountPromo(input: {
     } else if (data) {
       if (data.kind !== "discount") {
         return { ok: false, error: "This promocode unlocks access — redeem it in the Promo tab." };
+      }
+      if (data.used_at && data.used_by !== input.userId) {
+        return { ok: false, error: "This promocode has already been used." };
       }
       if (isExpired(data.expires_at)) {
         return { ok: false, error: "This promocode has expired." };
@@ -229,6 +234,72 @@ export async function lookupDiscountPromo(input: {
   return { ok: false, error: "This promocode is invalid or has already been used." };
 }
 
+/**
+ * Mark a discount promocode used as soon as it is entered/applied.
+ * The same user may still check out with it; everyone else is blocked.
+ */
+async function claimDiscountPromoOnApply(input: {
+  code: string;
+  userId: string;
+  userEmail: string | null;
+}): Promise<{ ok: true } | { ok: false; error: string }> {
+  const code = normalizeCode(input.code);
+  if (!code) return { ok: false, error: "Enter a promocode." };
+
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const usedAt = new Date().toISOString();
+
+    const { data: claimed, error } = await supabaseAdmin
+      .from("promocodes")
+      .update({
+        used_at: usedAt,
+        used_by: input.userId,
+        used_by_email: input.userEmail,
+      })
+      .eq("code", code)
+      .eq("kind", "discount")
+      .is("used_at", null)
+      .select("id")
+      .maybeSingle();
+
+    if (error) {
+      if (isMissingRelationError(error)) {
+        // No table yet — nothing to mute.
+        return { ok: true };
+      }
+      console.error("claimDiscountPromoOnApply", error);
+      return { ok: false, error: "Could not apply promocode. Try again." };
+    }
+
+    if (claimed) return { ok: true };
+
+    const { data: existing, error: existingError } = await supabaseAdmin
+      .from("promocodes")
+      .select("id, used_by, kind")
+      .eq("code", code)
+      .maybeSingle();
+
+    if (existingError) {
+      if (isMissingRelationError(existingError)) return { ok: true };
+      console.error("claimDiscountPromoOnApply existing", existingError);
+      return { ok: false, error: "Could not apply promocode. Try again." };
+    }
+
+    if (!existing || existing.kind !== "discount") {
+      // Hardcoded-only code (not in DB) — cannot mute; still allow apply.
+      return { ok: true };
+    }
+
+    if (existing.used_by === input.userId) return { ok: true };
+
+    return { ok: false, error: "This promocode has already been used." };
+  } catch (err) {
+    console.error("claimDiscountPromoOnApply", err);
+    return { ok: false, error: "Could not apply promocode. Try again." };
+  }
+}
+
 export async function recordPromoUsage(input: {
   code: string;
   userId: string;
@@ -275,11 +346,27 @@ export async function recordPromoUsage(input: {
 export const validateDiscountCode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => DiscountInput.parse(d))
-  .handler(async ({ data }): Promise<DiscountValidateResult> => {
-    return lookupDiscountPromo({
+  .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
+    const userId = context.userId;
+    const userEmail =
+      typeof context.claims.email === "string" ? context.claims.email : null;
+
+    const result = await lookupDiscountPromo({
       code: data.code,
       productSlug: data.productSlug,
+      userId,
     });
+    if (!result.ok) return result;
+
+    // Mute the code as soon as it is entered/applied so nobody else can reuse it.
+    const claimed = await claimDiscountPromoOnApply({
+      code: result.code,
+      userId,
+      userEmail,
+    });
+    if (!claimed.ok) return claimed;
+
+    return result;
   });
 
 export const redeemPromocode = createServerFn({ method: "POST" })
@@ -525,19 +612,27 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
 
       let status: AdminPromocodeRow["status"];
       if (kind === "discount") {
-        status = isExpired(row.expires_at) ? "expired" : "active";
+        if (row.used_at) status = "used";
+        else if (isExpired(row.expires_at)) status = "expired";
+        else if (row.max_uses != null && usages.length >= row.max_uses) status = "used";
+        else status = "active";
       } else {
         status = row.used_at ? "used" : "available";
       }
 
-      // Surface one-time unlock redeemers in the same usages shape for the admin table.
-      if (kind === "unlock" && row.used_at) {
-        usages.push({
-          userId: row.used_by,
-          userEmail: row.used_by_email,
-          productSlug: row.product_slug,
-          createdAt: row.used_at,
-        });
+      // Surface one-time unlock redeemers / discount claimers in the usages shape.
+      if (row.used_at) {
+        const already =
+          kind === "discount" &&
+          usages.some((u) => u.userId === row.used_by && u.createdAt === row.used_at);
+        if (kind === "unlock" || !already) {
+          usages.push({
+            userId: row.used_by,
+            userEmail: row.used_by_email,
+            productSlug: row.product_slug,
+            createdAt: row.used_at,
+          });
+        }
       }
 
       return {

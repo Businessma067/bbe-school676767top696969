@@ -60,7 +60,11 @@ export const createCheckout = createServerFn({ method: "POST" })
       let appliedPromoCode: string | null = null;
       const rawPromo = (data.promoCode ?? "").trim();
       if (rawPromo) {
-        const promo = await lookupDiscountPromo({ code: rawPromo, productSlug: slug });
+        const promo = await lookupDiscountPromo({
+          code: rawPromo,
+          productSlug: slug,
+          userId: context.userId,
+        });
         if (!promo.ok) {
           return { ok: false, error: promo.error };
         }
