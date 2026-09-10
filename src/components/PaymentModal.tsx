@@ -44,8 +44,10 @@ export function PaymentModal({
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
-  const uahPrice = Math.round(product.priceUah * (discountApplied ? 1 - discountPct / 100 : 1));
-  const eurPrice = Math.round(priceEuros * (discountApplied ? 1 - discountPct / 100 : 1));
+  const priceFactor = discountApplied ? 1 - discountPct / 100 : 1;
+  const uahPrice = Math.round(product.priceUah * priceFactor);
+  const eurPrice = Math.round(priceEuros * priceFactor);
+  const showDiscountedTotal = method !== "promo" || discountApplied;
 
   useEffect(() => {
     if (!open) return;
@@ -99,6 +101,66 @@ export function PaymentModal({
     }
   };
 
+  const applyDiscountCode = async (code: string): Promise<boolean> => {
+    const discount = await validateDiscountCode({
+      data: { code, productSlug },
+    });
+    if (discount.ok) {
+      setAppliedPromoCode(discount.code);
+      setDiscountPct(discount.discountPct);
+      setMethod("card");
+      setError(null);
+      return true;
+    }
+
+    const discountOnlyError =
+      /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
+      !/unlock/i.test(discount.error);
+    if (discountOnlyError) {
+      setAppliedPromoCode(null);
+      setDiscountPct(0);
+      setError(discount.error);
+      return true; // handled; caller should not try unlock
+    }
+    return false;
+  };
+
+  const handleApplyDiscountOnCard = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(null);
+
+    const code = promoCode.trim();
+    if (!code) {
+      setError("Enter a promocode.");
+      return;
+    }
+
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      setAuthOpen(true);
+      setError("Sign in to apply a promocode.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const handled = await applyDiscountCode(code);
+      if (!handled) {
+        setError("This promocode is invalid, or it is an unlock code — use the Promo tab.");
+      }
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Could not apply promocode.";
+      if (/unauthorized/i.test(message)) {
+        setAuthOpen(true);
+        setError("Sign in to apply a promocode.");
+      } else {
+        setError(message);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handlePromoRedeem = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -118,22 +180,8 @@ export function PaymentModal({
 
     setLoading(true);
     try {
-      // Try percent-off discount codes first.
-      const discount = await validateDiscountCode({
-        data: { code, productSlug },
-      });
-      if (discount.ok) {
-        setAppliedPromoCode(discount.code);
-        setDiscountPct(discount.discountPct);
-        setMethod("card");
-        return;
-      }
-
-      const discountOnlyError =
-        /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
-        !/unlock/i.test(discount.error);
-      if (discountOnlyError) {
-        setError(discount.error);
+      // Try percent-off discount codes first — these reduce the Monobank charge.
+      if (await applyDiscountCode(code)) {
         return;
       }
 
@@ -186,15 +234,25 @@ export function PaymentModal({
               <p className="mt-0.5 font-display text-sm font-semibold text-foreground">
                 {productName}
               </p>
-              {method !== "promo" && (
+              {showDiscountedTotal && (
                 <p className="mt-0.5 text-xs text-muted-foreground">
                   Charged as {uahPrice.toLocaleString("uk-UA")} UAH
+                  {discountApplied ? ` (−${discountPct}%)` : ""}
                 </p>
               )}
             </div>
-            <p className="font-display text-2xl font-bold text-foreground">
-              {method === "promo" ? "Free" : `€${eurPrice}`}
-            </p>
+            <div className="text-right">
+              {method === "promo" && !discountApplied ? (
+                <p className="font-display text-2xl font-bold text-foreground">Free</p>
+              ) : (
+                <>
+                  {discountApplied && (
+                    <p className="text-sm text-muted-foreground line-through">€{priceEuros}</p>
+                  )}
+                  <p className="font-display text-2xl font-bold text-foreground">€{eurPrice}</p>
+                </>
+              )}
+            </div>
           </div>
 
           {promoUnlocked ? (
@@ -235,6 +293,30 @@ export function PaymentModal({
                     checkout page and returned here right after the payment.
                   </p>
 
+                  <form onSubmit={handleApplyDiscountOnCard} className="space-y-2">
+                    <label className="block text-xs font-medium text-foreground">
+                      Discount promocode
+                    </label>
+                    <div className="flex gap-2">
+                      <input
+                        type="text"
+                        value={promoCode}
+                        onChange={(e) => setPromoCode(e.target.value)}
+                        placeholder="BBE-15-……"
+                        autoComplete="off"
+                        spellCheck={false}
+                        className="min-w-0 flex-1 rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase outline-none focus:ring-2 focus:ring-ring"
+                      />
+                      <button
+                        type="submit"
+                        disabled={loading}
+                        className="shrink-0 rounded-md border border-border bg-background px-3 py-2 text-sm font-semibold hover:bg-secondary disabled:opacity-70"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </form>
+
                   {discountApplied && (
                     <p
                       className="rounded-md border px-3 py-2 text-sm font-semibold"
@@ -244,7 +326,9 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% discount applied ({appliedPromoCode})
+                      {discountPct}% off applied ({appliedPromoCode}) — pay{" "}
+                      {uahPrice.toLocaleString("uk-UA")} UAH instead of{" "}
+                      {product.priceUah.toLocaleString("uk-UA")} UAH
                     </p>
                   )}
 
