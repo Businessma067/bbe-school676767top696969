@@ -5,7 +5,8 @@ import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { cn } from "@/lib/utils";
 
-type MainTab = "course" | "mock-exams" | "mock-builder" | "games";
+/** Mock exams / Mock Builder temporarily hidden from How it works. */
+type MainTab = "course" | "games";
 type CourseSubject = "economics" | "math" | "english";
 type StudyTool = "flashcards" | "matching" | "tutor-exam";
 
@@ -24,11 +25,8 @@ type ShowcaseSlide = {
 
 const MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
-  { key: "mock-exams", label: "Mock exams" },
-  { key: "mock-builder", label: "Mock Builder" },
   { key: "games", label: "Study tools" },
 ];
-
 const COURSE_SUBJECTS: ShowcaseSlide[] = [
   {
     key: "economics",
@@ -101,21 +99,6 @@ const STUDY_TOOLS: ShowcaseSlide[] = [
   },
 ];
 
-const PLACEHOLDERS: Record<
-  Exclude<MainTab, "course" | "games">,
-  { title: string; body: string }
-> = {
-  "mock-exams": {
-    title: "Full-length exam simulations",
-    body: "This walkthrough is next. Use Course or Study tools to see how practice actually feels.",
-  },
-  "mock-builder": {
-    title: "Build a mock around your weak spots",
-    body: "This walkthrough is next. Use Course or Study tools to see how practice actually feels.",
-  },
-};
-
-const VIDEO_TABS: MainTab[] = ["course", "games"];
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
@@ -148,8 +131,6 @@ export function HowItWorksSection() {
     if (tab === "games") setTool(key as StudyTool);
     else setSubject(key as CourseSubject);
   };
-
-  const hasVideoShowcase = VIDEO_TABS.includes(tab);
 
   const openZoom = () => {
     videoRef.current?.pause();
@@ -221,7 +202,7 @@ export function HowItWorksSection() {
   useEffect(() => {
     const video = videoRef.current;
     const stage = stageRef.current;
-    if (!video || !stage || !hasVideoShowcase || zoomed) return;
+    if (!video || !stage || zoomed) return;
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduceMotion) {
@@ -241,7 +222,7 @@ export function HowItWorksSection() {
     );
     observer.observe(stage);
     return () => observer.disconnect();
-  }, [tab, subject, tool, hasVideoShowcase, zoomed]);
+  }, [tab, subject, tool, zoomed]);
 
   return (
     <section id="how-it-works" className="relative bg-background px-3 py-14 sm:px-5 lg:px-6 lg:py-20">
@@ -280,7 +261,7 @@ export function HowItWorksSection() {
           <button
             type="button"
             aria-label="Previous"
-            onClick={() => (hasVideoShowcase ? goSlide(slideIndex - 1) : cycleTab(tab, -1, setTab))}
+            onClick={() => goSlide(slideIndex - 1)}
             className="absolute left-1 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:left-3 sm:h-11 sm:w-11 lg:-left-4"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -288,7 +269,7 @@ export function HowItWorksSection() {
           <button
             type="button"
             aria-label="Next"
-            onClick={() => (hasVideoShowcase ? goSlide(slideIndex + 1) : cycleTab(tab, 1, setTab))}
+            onClick={() => goSlide(slideIndex + 1)}
             className="absolute right-1 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-background/95 text-foreground shadow-sm transition hover:bg-secondary sm:right-3 sm:h-11 sm:w-11 lg:-right-4"
           >
             <ChevronRight className="h-5 w-5" />
@@ -297,135 +278,94 @@ export function HowItWorksSection() {
           <div className="grid items-stretch gap-5 px-8 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
-                {hasVideoShowcase ? (
-                  <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
-                    <video
-                      key={slide.key}
-                      ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-cover"
-                      poster={slide.poster}
-                      src={slide.video}
-                      muted
-                      loop
-                      playsInline
-                      preload="auto"
-                      aria-label={`${slide.label} walkthrough`}
-                    />
-                    <button
-                      type="button"
-                      onClick={openZoom}
-                      aria-label="Zoom in"
-                      className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-[#161616]/95 px-3 py-2 text-xs font-semibold text-[#F2F1ED] shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-[#161616] sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
-                    >
-                      <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
-                      Zoom in
-                    </button>
-                  </div>
-                ) : (
-                  <div
-                    className="flex w-full items-center justify-center px-6 text-center"
-                    style={{ aspectRatio: "16 / 9" }}
+                <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
+                  <video
+                    key={slide.key}
+                    ref={videoRef}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    poster={slide.poster}
+                    src={slide.video}
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                    aria-label={`${slide.label} walkthrough`}
+                  />
+                  <button
+                    type="button"
+                    onClick={openZoom}
+                    aria-label="Zoom in"
+                    className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-[#161616]/95 px-3 py-2 text-xs font-semibold text-[#F2F1ED] shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-[#161616] sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
                   >
-                    <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
-                      Walkthrough coming next. Switch to Course or Study tools to watch the demos.
-                    </p>
-                  </div>
-                )}
+                    <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
+                    Zoom in
+                  </button>
+                </div>
               </div>
             </div>
 
             <div
-              key={hasVideoShowcase ? slide.key : tab}
+              key={slide.key}
               className="relative z-10 flex flex-col justify-center px-1 py-1 text-left sm:px-2 lg:py-2"
             >
-              {hasVideoShowcase ? (
-                <>
-                  <div className="flex flex-wrap gap-1.5">
-                    {slides.map((item) => {
-                      const active = slide.key === item.key;
-                      return (
-                        <button
-                          key={item.key}
-                          type="button"
-                          onClick={() => setSlideKey(item.key)}
-                          className={cn(
-                            "rounded-sm border px-3 py-1.5 text-[11px] font-semibold transition-colors sm:text-xs",
-                            active
-                              ? "border-[#161616] bg-[#161616] text-[#F2F1ED]"
-                              : "border-border bg-background text-muted-foreground hover:border-foreground/30 hover:text-foreground",
-                          )}
-                        >
-                          {item.label}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  <h3 className="mt-5 font-display text-xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
-                    {slide.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-                    {slide.body}
-                  </p>
-                  <LocalizedLink
-                    to={slide.href}
-                    className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-sm bg-[#161616] px-5 py-2.5 text-sm font-semibold text-[#F2F1ED] transition hover:bg-[#2a2a2a] sm:w-fit"
-                  >
-                    {slide.cta}
-                    <ChevronRight className="h-4 w-4" />
-                  </LocalizedLink>
-                </>
-              ) : (
-                <>
-                  <h3 className="font-display text-xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
-                    {PLACEHOLDERS[tab as Exclude<MainTab, "course" | "games">].title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-                    {PLACEHOLDERS[tab as Exclude<MainTab, "course" | "games">].body}
-                  </p>
-                </>
-              )}
+              <div className="flex flex-wrap gap-1.5">
+                {slides.map((item) => {
+                  const active = slide.key === item.key;
+                  return (
+                    <button
+                      key={item.key}
+                      type="button"
+                      onClick={() => setSlideKey(item.key)}
+                      className={cn(
+                        "rounded-sm border px-3 py-1.5 text-[11px] font-semibold transition-colors sm:text-xs",
+                        active
+                          ? "border-[#161616] bg-[#161616] text-[#F2F1ED]"
+                          : "border-border bg-background text-muted-foreground hover:border-foreground/30 hover:text-foreground",
+                      )}
+                    >
+                      {item.label}
+                    </button>
+                  );
+                })}
+              </div>
+              <h3 className="mt-5 font-display text-xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
+                {slide.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                {slide.body}
+              </p>
+              <LocalizedLink
+                to={slide.href}
+                className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-sm bg-[#161616] px-5 py-2.5 text-sm font-semibold text-[#F2F1ED] transition hover:bg-[#2a2a2a] sm:w-fit"
+              >
+                {slide.cta}
+                <ChevronRight className="h-4 w-4" />
+              </LocalizedLink>
             </div>
           </div>
         </div>
 
         <div className="mt-5 flex items-center justify-center gap-0.5">
-          {hasVideoShowcase
-            ? slides.map((item, i) => (
-                <button
-                  key={item.key}
-                  type="button"
-                  aria-label={`Show ${item.label}`}
-                  onClick={() => setSlideKey(item.key)}
-                  className="flex h-10 w-10 items-center justify-center"
-                >
-                  <span
-                    className={cn(
-                      "rounded-full transition-all",
-                      i === slideIndex ? "h-2 w-6 bg-foreground" : "h-2 w-2 bg-border",
-                    )}
-                  />
-                </button>
-              ))
-            : MAIN_TABS.map((item) => (
-                <button
-                  key={item.key}
-                  type="button"
-                  aria-label={`Show ${item.label}`}
-                  onClick={() => setTab(item.key)}
-                  className="flex h-10 w-10 items-center justify-center"
-                >
-                  <span
-                    className={cn(
-                      "rounded-full transition-all",
-                      tab === item.key ? "h-2 w-6 bg-foreground" : "h-2 w-2 bg-border",
-                    )}
-                  />
-                </button>
-              ))}
+          {slides.map((item, i) => (
+            <button
+              key={item.key}
+              type="button"
+              aria-label={`Show ${item.label}`}
+              onClick={() => setSlideKey(item.key)}
+              className="flex h-10 w-10 items-center justify-center"
+            >
+              <span
+                className={cn(
+                  "rounded-full transition-all",
+                  i === slideIndex ? "h-2 w-6 bg-foreground" : "h-2 w-2 bg-border",
+                )}
+              />
+            </button>
+          ))}
         </div>
       </div>
 
-      {zoomed && hasVideoShowcase
+      {zoomed
         ? createPortal(
             <div
               className="fixed inset-0 z-[100] flex items-center justify-center bg-black/88 p-2 sm:p-4"
@@ -461,7 +401,7 @@ export function HowItWorksSection() {
                     loop
                     playsInline
                     autoPlay
-                    preload="auto"
+                    preload="metadata"
                     aria-label={`${slide.label} walkthrough enlarged`}
                   />
                 </div>
@@ -505,14 +445,4 @@ export function HowItWorksSection() {
         : null}
     </section>
   );
-}
-
-function cycleTab(
-  current: MainTab,
-  dir: -1 | 1,
-  setTab: (tab: MainTab) => void,
-) {
-  const i = MAIN_TABS.findIndex((t) => t.key === current);
-  const next = MAIN_TABS[(i + dir + MAIN_TABS.length) % MAIN_TABS.length];
-  setTab(next.key);
 }
