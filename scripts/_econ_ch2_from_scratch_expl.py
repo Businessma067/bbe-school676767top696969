@@ -133,6 +133,214 @@ def cue_phrase(cue: str) -> str:
     return c[0].lower() + c[1:] if c else ""
 
 
+def because_reason(st: str) -> str | None:
+    m = re.search(r"\bbecause\b\s*(.+)$", st, re.I)
+    if not m:
+        return None
+    return m.group(1).strip().rstrip(".")
+
+
+def explain_because_false(st: str, sc: str, core: str) -> str | None:
+    """State why the because-clause fails and what the correct reason is."""
+    reason = because_reason(st)
+    if not reason:
+        return None
+    rl = reason.lower()
+    sl = st.lower()
+    if "only governments set prices" in rl or "only government" in rl:
+        return (
+            f"The ride-hail platform in {sc} sets surge fares after the concert, so private firms "
+            "do set prices. Economics studies that market pricing; the correct view is that "
+            "individual market prices fall inside economics, not outside it."
+        )
+    if "many riders" in rl or "affected at once" in rl or "many people" in rl:
+        return (
+            "Many riders in one district still leaves the unit of analysis at one local market. "
+            "Macro scope needs an economy-wide aggregate such as city-wide CPI, not a headcount "
+            "in one district."
+        )
+    if "internship pays nothing" in rl or "zero opportunity cost" in rl or "no opportunity cost" in rl:
+        return (
+            f"In {sc}, the forgone tutoring income and career experience still count as opportunity "
+            "cost even when the internship pays zero. The correct measure is the best alternative "
+            "given up, not the cash wage on the chosen path."
+        )
+    if "not market-priced" in rl:
+        return (
+            "Unpaid or non-market options still have a forgone alternative. The correct test is "
+            "the value of the best path not taken, not whether a price tag appears on every option."
+        )
+    if "scarcity requires many options" in rl:
+        return (
+            "Scarcity means limited means against unlimited ends, not a minimum count of options. "
+            "Even two rival uses in one budget force a ranking and an opportunity cost."
+        )
+    if "heating affects national consumption" in rl or "consumption statistics" in rl:
+        return (
+            "A household heating bill is a micro price in one market. The correct macro link would "
+            "be a national consumption aggregate, not relabelling one local price move as macro."
+        )
+    if "labour markets are national" in rl and "micro" in sl:
+        return (
+            "One worker choosing among local job offers is still micro even though labour markets "
+            "can be wide. Scope follows the decision unit named in the claim, not the word national."
+        )
+    if "phones are luxury" in rl or "outside normal economic" in rl:
+        return (
+            "Economics covers all agreed exchanges, including phone repairs. The correct view is "
+            "that repair services and spare parts in the shop are ordinary economic goods and needs."
+        )
+    if "only barter counts" in rl or "only barter" in rl:
+        return (
+            f"Barter and cash trades are both exchange. In {sc}, value can change hands by agreement "
+            "with or without money, which is exactly what the chapter counts as economic trade."
+        )
+    if "always raise taxes" in rl:
+        return (
+            "Tax capacity does not erase scarcity. The correct point is that even governments rank "
+            "rival projects when the budget is finite in the year."
+        )
+    if "herr novak" in rl or "no needs of his own" in rl or "business rather than a household" in rl:
+        return (
+            "Business owners still have operating needs for inputs and personal needs as households. "
+            "The correct split is needs versus wants, not denying needs to anyone who runs a firm."
+        )
+    if "raw materials are merely wants" in rl:
+        return (
+            "Timber and other inputs needed to fulfil a commission are operating needs for the "
+            "business, not optional wants. The correct label follows whether the input keeps "
+            "production running."
+        )
+    if "only end consumers" in rl:
+        return (
+            "Firms also face genuine needs for inputs and continued operations. The correct view is "
+            "that both households and businesses can experience need, not only final consumers."
+        )
+    if "lukas receives money from parents" in rl or "not part of the household" in rl:
+        return (
+            "A teenager spending pocket money is still on the household side of the circular flow. "
+            "The correct label is household consumer, not a separate non-household actor."
+        )
+    if "layoffs appear in the headline" in rl:
+        return (
+            "A local surge price stays micro even when a recession headline appears in the background. "
+            "The correct macro link would be economy-wide unemployment, not the district fare itself."
+        )
+    if "unemployment exists only at macro" in rl:
+        return (
+            "Macro unemployment is an aggregate, but one worker's job choice remains micro. The "
+            "correct scope follows what the sentence is actually about."
+        )
+    if "mortgages of specific families" in rl or "central-bank move is automatically micro" in rl:
+        return (
+            "A central-bank rate change is a macro policy shock. The correct label is macro when "
+            "the claim is about economy-wide interest rates, not one family's mortgage payment alone."
+        )
+    if "too small for scientific study" in rl:
+        return (
+            "Microeconomics routinely studies single firms and local markets. The correct view is "
+            "that small scale does not place a decision outside economics."
+        )
+    if "nominal euro amounts stay unchanged" in rl:
+        return (
+            "Money's purchasing power can change with inflation even when the number on the note "
+            "is fixed. The correct point is that real value, not the printed nominal, carries "
+            "economic meaning."
+        )
+    if "national bonus programme" in rl and "automatically becomes macro" in rl:
+        return (
+            "A national subsidy programme sits in the policy backdrop, but one household's car "
+            "purchase is still a micro consumption choice. The correct scope is the individual "
+            "buyer's decision, not the whole programme."
+        )
+    if "trade crosses a border" in rl:
+        return (
+            "One export sale can be studied as a firm-level micro decision even when goods cross "
+            "a border. The correct macro view would be total exports for the economy, not one "
+            "transaction relabelled as macro."
+        )
+    if "a better option existed" in rl and "opportunity cost" in sl:
+        return (
+            "Opportunity cost is the value of the best alternative forgone, not proof that no cost "
+            "exists. The correct reading names that best rejected use."
+        )
+    if "the wood is used either way" in rl:
+        return (
+            "Choosing one timber grade still leaves another grade unchosen. The correct cost is "
+            "what the firm gives up by not using the next-best timber option."
+        )
+    if "wants are unlimited and budgets do not constrain" in rl:
+        return (
+            "Public budgets are finite in the year. The correct point is that councils still rank "
+            "rival projects under a cash limit."
+        )
+    if "councils can raise taxes in principle" in rl and "not scarce" in sl:
+        return (
+            "Legal tax capacity does not make this year's euro pot unlimited. The correct view is "
+            "that the budget line still forces choices among projects."
+        )
+    if "she selects between jobs rather than physical goods" in rl:
+        return (
+            "Opportunity cost applies to time and job choices as well as goods. The correct measure "
+            "is the best alternative job income and experience left behind."
+        )
+    if "the stall pays more" in rl and "zero opportunity cost" in rl:
+        return (
+            "Leaving the lower-paid stall still sacrifices its wage and experience. The correct "
+            "cost is what Ana gives up by not staying on that path."
+        )
+    if "both projects improve transport" in rl and "cannot be compared" in rl:
+        return (
+            "Comparable alternatives can still be ranked by net benefit. The correct method picks "
+            "the single next-best project forgone, not a claim that comparison is impossible."
+        )
+    # fallback with case nouns
+    first = core.split(".")[0].strip()
+    if first:
+        return (
+            f"The because-clause ({reason.lower()}) misreads {sc}. {first} is the correct "
+            "criterion for judging the claim."
+        )
+    return (
+        f"The because-clause ({reason.lower()}) misreads {sc}. Apply the chapter definition to "
+        "the stem nouns instead."
+    )
+
+
+def absolute_counterexample(st: str, sc: str, core: str) -> str:
+    sl = st.lower()
+    if "only governments set prices" in sl:
+        return (
+            f"The ride-hail platform in {sc} sets surge fares after the concert. Private market "
+            "pricing inside economics refutes both never and only governments."
+        )
+    if "never" in sl and "scarc" in sl:
+        return (
+            f"In {sc}, monthly spare parts or repair slots can still run out before demand is met, "
+            "so scarcity does not disappear for a business."
+        )
+    if "never" in sl and "exchange" in sl:
+        return (
+            f"In {sc}, agreed swaps of goods or services count as exchange whether or not cash "
+            "changes hands."
+        )
+    if "never" in sl and "economics" in sl and "price" in sl:
+        return (
+            f"Surge pricing by the ride-hail platform in {sc} is individual market pricing studied "
+            "in economics."
+        )
+    if "always" in sl or "only" in sl or "never" in sl:
+        lead = core.split(".")[0].strip() if core else "The chapter definition"
+        return (
+            f"One ordinary episode in {sc} under {lead.lower()} refutes the absolute wording in "
+            "the sentence."
+        )
+    return (
+        f"One ordinary episode in {sc} under the chapter definition refutes the overgeneralised "
+        "claim."
+    )
+
+
 def clip_para(text: str, lo: int, hi: int) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     if not text.endswith("."):
@@ -176,9 +384,9 @@ def clip_body(paras: list[str], lo: int, hi: int) -> str:
             core_paras = core_paras[:-1]
             body = "\n\n".join(core_paras)
     pads = [
-        " The case nouns anchor that reading to one concrete market or actor.",
-        " Scope and mechanism matter more than buzzwords alone.",
-        " Rival uses of the same limited resource still force a ranking.",
+        " That reading follows from the chapter definition applied to the stem nouns.",
+        " The mechanism named in the sentence matches what the subsection teaches.",
+        " Limited resources still force a ranking among rival uses in this setting.",
     ]
     pi = 0
     while len(body) + len(note) + (2 if note else 0) < lo and pi < len(pads):
@@ -400,9 +608,18 @@ def apply_statement(st: str, truth: bool, sub: str, sc: str, core: str, cue: str
             reason = m_because.group(1).strip().rstrip(".")
             paras.append(f"The stated reason ({reason.lower()}) supports the classification.")
 
-        cp = cue_phrase(cue)
-        if cp:
-            paras.append(f"When {cp}, the same scope and mechanism apply to the actors named in the claim.")
+        if sub == "2.3" and "macro" in sl and any(
+            w in sl for w in ("cpi", "consumer price index", "price index", "general price level", "overall consumer")
+        ):
+            paras.append(
+                "The consumer price index measures an economy-wide or city-wide price level, not one "
+                "shop's relative move alone."
+            )
+            paras.append(
+                f"Measuring whether district fare spikes in {sc} moved city-wide CPI asks about an "
+                "aggregate price index, which is macroeconomics even though the fare spike started "
+                "in one district."
+            )
 
         if sub == "2.3" and "predict" in sl:
             paras.append(
@@ -466,19 +683,33 @@ def apply_statement(st: str, truth: bool, sub: str, sc: str, core: str, cue: str
             paras.append(
                 "Cartels coordinate rivals to restrict output and raise joint prices. Open undercutting is rivalry, not collusion."
             )
-        elif any(w in sl for w in ("only", "never", "always", "automatically", "excludes", "outside")):
+        elif "only governments set prices" in sl or (
+            m_because and "only government" in m_because.group(1).lower()
+        ):
             paras.append(
-                "Absolute wording invites a counterexample. One ordinary case under the chapter definition breaks the blanket rule."
+                f"Private firms set prices in {sc}. The ride-hail platform raises surge fares after "
+                "the concert, which is market pricing studied in economics."
             )
+            paras.append(
+                "Economics covers household, firm, and government choices over scarce resources, "
+                "including prices set in individual markets."
+            )
+        elif any(w in sl for w in ("only", "never", "always", "automatically", "excludes", "outside")):
+            paras.append(absolute_counterexample(st, sc, core))
         else:
             paras.append(core)
             paras.append(
-                f"Mapped onto {sc}, the category or reason in the sentence does not survive the chapter test."
+                f"In {sc}, the label or reason in the sentence fails once the chapter definition is applied."
             )
 
-        if m_because and not (sub == "2.3" and "macro" in sl and "district" in sl):
-            reason = m_because.group(1).strip().rstrip(".")
-            paras.append(f"The because-clause ({reason.lower()}) does not justify the labelled conclusion.")
+        if m_because and not (
+            sub == "2.3"
+            and "macro" in sl
+            and any(w in sl for w in ("district", "many riders", "affected"))
+        ):
+            expl = explain_because_false(st, sc, core)
+            if expl:
+                paras.append(expl)
 
     # de-dupe
     out: list[str] = []
@@ -548,13 +779,21 @@ def expanded_extra(st: str, truth: bool, sub: str, sc: str, li: int) -> list[str
         extras.append(
             f"Relevant market boundaries can be local in {sc} when travel to rivals is costly."
         )
+    elif truth and sub == "2.3" and "macro" in sl and any(
+        w in sl for w in ("cpi", "consumer price index", "price index", "overall consumer")
+    ):
+        extras.append(
+            f"District ride-hail fares in {sc} can feed into a city-wide CPI reading, and that index "
+            "question is macro because it tracks the general price level."
+        )
     elif truth:
         extras.append(
-            f"Nothing in {sc} forces a category swap; the sentence describes the mechanism the chapter teaches."
+            f"The nouns in {sc} fit the chapter mechanism the sentence describes, so the label stands."
         )
     else:
         extras.append(
-            f"A realistic counterexample inside {sc} is enough; the printed restriction is what makes the statement false."
+            f"In {sc}, one ordinary case under the chapter definition is enough to reject the "
+            "overgeneralised claim."
         )
     pick = extras[li % len(extras)] if extras else (
         f"{'The claim survives' if truth else 'The claim fails'} when checked against the chapter definition in {sc}."
@@ -645,7 +884,7 @@ def ensure_case(case: dict, case_i: int, expls: list[str]) -> list[str]:
         if not any(n >= 550 for n in L):
             i = max(range(5), key=lambda j: L[j])
             b = body_of(expls[i])
-            pad = " Scope and mechanism decide the label once the case nouns are fixed."
+            pad = " The chapter definition applied to the stem nouns settles the label."
             for _ in range(8):
                 if len(b) >= 560:
                     break
@@ -700,7 +939,7 @@ def ensure_case(case: dict, case_i: int, expls: list[str]) -> list[str]:
             b = body_of(expls[i])
             pad = (
                 " The chapter definition, applied to the stem's own nouns, "
-                "leaves no room for a neighbouring mislabel."
+                "settles why the claim is true or false."
             )
             for _ in range(8):
                 if len(b) >= 560:

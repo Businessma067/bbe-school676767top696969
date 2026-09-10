@@ -78,6 +78,11 @@ FORBIDDEN = [
     "picture ",
     "lines up with how this chapter",
     "conflicts with how this chapter",
+    "words such as always or only stretch",
+    "absolute wording invites a counterexample",
+    "does not justify the labelled conclusion",
+    "forces a category swap",
+    "same scope and mechanism apply to the actors named in the claim",
 ]
 
 STEM_NOUN = re.compile(
@@ -318,9 +323,9 @@ def apply_stem(statement: str, truth: bool, focus: str, scene: str, variant: int
         else:
             if any(w in sl for w in ("always", "never", "only", "automatically", "exclusively", "cannot")):
                 pool = [
-                    f"For {focus}, the absolute wording fails: one counterexample under the correct test is enough.",
-                    f"The sentence overstates what {focus} implies. A single ordinary sale under the right buyer test overturns it.",
-                    f"Regarding {focus}, the restricting word makes a limited case sound universal.",
+                    f"The same item can switch labels across sales, so an always rule about {focus} fails once buyer type differs.",
+                    f"One ordinary sale under the correct buyer or exchange test overturns the absolute claim about {focus}.",
+                    f"A consultancy hour or maintenance contract counts as a product, which breaks a physical-goods-only reading of {focus}.",
                 ]
             elif "rather than" in sl or "instead of" in sl:
                 pool = [
@@ -413,11 +418,11 @@ def stem_lede(statement: str, truth: bool, li: int) -> str:
         ]
     if not truth and any(w in sl for w in ("always", "never", "only", "cannot")):
         abs_hooks = [
-            f"Words such as always or only stretch a limited marketing rule past what the chapter allows for {focus}.",
-            f"A restricting word in the {focus} claim makes a partial truth sound universal.",
-            f"One ordinary counterexample under the correct test is enough to reject the absolute claim about {focus}.",
-            f"Marketing classification for {focus} is narrower than the overgeneralised claim suggests.",
-            f"Absolute quantifiers about {focus} fail once the proper buyer or definition test is applied.",
+            f"The claim about {focus} uses always, only, or never in a way that overshoots the chapter marketing rule.",
+            f"The same catalogue item can be a producer product in one sale and a consumer product in another, which breaks an absolute rule about {focus}.",
+            f"A consultancy hour or maintenance visit sold to a customer is still a product, refuting a physical-goods-only claim about {focus}.",
+            f"Marketing classification for {focus} turns on buyer type and exchange, not on packaging or factory origin alone.",
+            f"One ordinary counterexample under the correct buyer or definition test is enough to reject the absolute claim about {focus}.",
         ]
         return abs_hooks[li % len(abs_hooks)]
     # Mix in a distinctive phrase from the statement when hooks could collide within a case
@@ -479,7 +484,7 @@ def pad_pool(case: dict, statement: str, truth: bool, focus: str, bits: list[str
         else:
             pool.append(
                 f"In the {scene} setting from the stem, one ordinary sale under the correct "
-                "buyer test already overturns the absolute wording."
+                "buyer test shows why the absolute claim fails."
             )
     sub = str(case.get("subsection") or "")
     extras = {
