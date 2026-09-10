@@ -32,6 +32,7 @@ import {
 import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
+import { CourseLockedView } from "@/components/CourseLockedView";
 import { ExamQuestionBody, ExamStatementText } from "@/components/mock-exam/ExamQuestionContent";
 import {
   Sheet,
@@ -40,6 +41,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+import type { AccessTier } from "@/lib/entitlements";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/mock-exams/$examId/take")({
@@ -84,6 +86,7 @@ function TakeExamPage() {
   const [examSeconds, setExamSeconds] = useState(2 * 60 * 60);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [contentReady, setContentReady] = useState(false);
+  const [lockMinTier, setLockMinTier] = useState<AccessTier | null>(null);
 
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions]);
   const examSecondsRef = useRef(examSeconds);
@@ -108,6 +111,7 @@ function TakeExamPage() {
     setHydrated(false);
     setSession(null);
     setLoadError(null);
+    setLockMinTier(null);
     warningsSeeded.current = false;
     submitted.current = false;
     (async () => {
@@ -123,7 +127,8 @@ function TakeExamPage() {
         const ownsFull = await userOwnsFullTier();
         if (cancelled) return;
         if (!ownsFull) {
-          navigate({ to: "/products/full-course" });
+          setLockMinTier("full");
+          setContentReady(true);
           return;
         }
       } else if (resolved.summary.tier === "lite") {
@@ -131,7 +136,8 @@ function TakeExamPage() {
         const ownsPaid = await userOwnsPaidCourse();
         if (cancelled) return;
         if (!ownsPaid) {
-          navigate({ to: "/products/lite-bbe-course" });
+          setLockMinTier("lite");
+          setContentReady(true);
           return;
         }
       }
@@ -143,7 +149,7 @@ function TakeExamPage() {
     return () => {
       cancelled = true;
     };
-  }, [examId, navigate]);
+  }, [examId]);
 
   useEffect(() => {
     if (!contentReady || questions.length === 0 || loadError) return;
@@ -403,6 +409,10 @@ function TakeExamPage() {
     }
     return set;
   }, [questions, flaggedSet]);
+
+  if (lockMinTier) {
+    return <CourseLockedView feature="mock-exams" minTier={lockMinTier} />;
+  }
 
   if (loadError) {
     return (

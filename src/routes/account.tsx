@@ -290,18 +290,7 @@ export function AccountPage() {
 }
 
 function PageHeader() {
-  return (
-    <SiteHeader
-      sticky={false}
-      compact
-      maxWidthClassName="max-w-5xl"
-      actions={
-        <Link to="/practice" className="text-sm font-semibold text-primary hover:underline">
-          Practice →
-        </Link>
-      }
-    />
-  );
+  return <SiteHeader compact />;
 }
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {

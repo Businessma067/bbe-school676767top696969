@@ -19,6 +19,10 @@ type SiteHeaderProps = {
   center?: ReactNode;
   showNav?: boolean;
   showMobileNav?: boolean;
+  /**
+   * @deprecated Header chrome is full-width on every page so nav never
+   * compresses into a horizontal scroll. Kept for call-site compatibility.
+   */
   maxWidthClassName?: string;
   className?: string;
   innerClassName?: string;
@@ -67,12 +71,13 @@ export function SiteHeader({
   center,
   showNav,
   showMobileNav,
-  maxWidthClassName = "max-w-7xl",
+  maxWidthClassName: _maxWidthClassName,
   className,
   innerClassName,
   sticky = true,
-  compact = false,
+  compact = true,
 }: SiteHeaderProps) {
+  void _maxWidthClassName;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const pathForNav = stripLocalePrefix(pathname);
   const { hasLite, hasFull } = useAccountNavTier();
@@ -83,17 +88,16 @@ export function SiteHeader({
   return (
     <header
       className={cn(
-        "z-30 border-b border-border/60 bg-background/85 backdrop-blur",
+        "z-30 w-full shrink-0 border-b border-border/60 bg-background/85 backdrop-blur",
         sticky && "sticky top-0",
         className,
       )}
     >
       <div
         className={cn(
-          "mx-auto flex items-center gap-1.5 px-3 py-2 sm:gap-3 sm:px-6 sm:py-4 lg:gap-4 lg:px-8",
+          "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3 lg:flex-nowrap lg:gap-x-4 lg:px-8",
           "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
-          maxWidthClassName,
-          compact && "py-2 sm:py-3",
+          !compact && "sm:py-4",
           innerClassName,
         )}
       >
