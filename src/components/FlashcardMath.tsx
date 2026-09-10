@@ -584,12 +584,16 @@ export function mergeContinuationDisplayParagraphs(paragraphs: string[]): string
 }
 
 function splitMath(input: string): Part[] {
+  // Convert TeX delimiters \(…\) / \[…\] to $…$ / $$…$$.
+  // Must use paired matches + a function replacer:
+  // 1) Bare /\\\[/ also matches KaTeX row breaks `\\[0.85em]` (and `\\[4pt]`, …)
+  //    and would corrupt them into literal `$0.85em]`.
+  // 2) String.replace treats `$$` in a string replacement as a single `$`,
+  //    which would turn display `\[…\]` into inline `$…$`.
   const text = normalizeBrokenMathMarkup(
     input
-      .replace(/\\\(/g, "$")
-      .replace(/\\\)/g, "$")
-      .replace(/\\\[/g, "$$")
-      .replace(/\\\]/g, "$$"),
+      .replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner: string) => `$${inner}$`)
+      .replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner: string) => `$$${inner}$$`),
   );
 
   const parts: Part[] = [];
