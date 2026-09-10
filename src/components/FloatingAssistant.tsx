@@ -22,8 +22,9 @@ function preprocessMath(src: string): string {
     codeBlocks.push(m);
     return `\u0000CODE${codeBlocks.length - 1}\u0000`;
   });
-  s = s.replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner) => `$$${inner}$$`);
-  s = s.replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner) => `$${inner}$`);
+  // Lookbehind so KaTeX row breaks `\\[0.85em]` are not treated as `\[…\]`.
+  s = s.replace(/(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]/g, (_m, inner) => `$$${inner}$$`);
+  s = s.replace(/(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)/g, (_m, inner) => `$${inner}$`);
   const parts = s.split(/(\$\$[\s\S]+?\$\$|\$[^\n$]+?\$)/g);
   const cmd =
     /\\(?:boxed|frac|dfrac|tfrac|sqrt|cdot|times|div|pm|mp|leq|geq|neq|approx|infty|sum|prod|int|lim|log|ln|sin|cos|tan|alpha|beta|gamma|delta|theta|lambda|mu|pi|sigma|phi|omega|mathbb|mathrm|mathbf|text|left|right|to|Rightarrow|Leftrightarrow|forall|exists|in|notin|subset|cup|cap|partial|nabla|binom|overline|underline|hat|bar|vec)\b/;

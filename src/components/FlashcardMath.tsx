@@ -274,24 +274,50 @@ function looksLikeMathInner(inner: string): boolean {
  * Never let two currency signs swallow the prose between them as KaTeX.
  */
 /**
+ * Convert TeX delimiters `\(...\)` / `\[...\]` to `$...$` / `$$...$$`.
+ * Uses paired matches + a function replacer, and refuses to match when the
+ * opener is preceded by another backslash — otherwise KaTeX row breaks
+ * `\\[0.85em]` / `\\[4pt]` are eaten (and can later become literal `$0.85em]`).
+ */
+export function convertTexDelimiters(input: string): string {
+  return input
+    .replace(/(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)/g, (_m, inner: string) => `$${inner}$`)
+    .replace(/(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]/g, (_m, inner: string) => `$$${inner}$$`);
+}
+
+/**
+ * Corrupted row-break residue (`\$0.85em]…\$`) must NOT be treated as
+ * `\$…\$` math delimiters — that unwraps to bare `$0.85em]` inside gather*
+ * and KaTeX red-errors the whole block.
+ */
+function looksLikeCorruptedRowBreakInner(inner: string): boolean {
+  return /^\d*\.?\d+(?:em|ex|pt|mu|bp|dd|cm|mm|in)\]/.test(inner.trim());
+}
+
+/**
  * Normalize broken authoring so users never see raw KaTeX control sequences:
  * - `$12\,000 subject…` (thin-space thousands that never close before English)
  *   → `$12,000 subject…`
  * - `\$P(A \mid B)\$` (escaped dollars around real math) → `$P(A \mid B)$`
- * Do not touch legitimate display math `$$40\,000 e^{…}$$`.
+ * Do not touch legitimate display math `$$40\,000 e^{…}$$`, and never unwrap
+ * `\$…\$` pairs that sit inside an existing `$$…$$` display (currency / row
+ * breaks must keep their backslashes there).
  */
 function normalizeBrokenMathMarkup(input: string): string {
-  let s = input;
-
-  // `\$…\$` used as math delimiters (common in some generated explanations).
-  s = s.replace(/\\\$([^$]*?)\\\$/g, (_m, inner: string) => {
-    const t = inner.trim();
-    if (!t) return _m;
-    if (/\\[a-zA-Z]/.test(t) || /[=<>≠≤≥^_{}+*/\\]/.test(t) || /[A-Za-z]\s*\(/.test(t)) {
-      return `$${inner}$`;
-    }
-    return _m;
-  });
+  // Only rewrite `\$…\$` delimiters in prose outside display math.
+  const parts = input.split(/(\$\$[\s\S]*?\$\$)/g);
+  for (let i = 0; i < parts.length; i++) {
+    if (i % 2 === 1) continue; // inside $$…$$
+    parts[i] = parts[i]!.replace(/\\\$([^$]*?)\\\$/g, (_m, inner: string) => {
+      const t = inner.trim();
+      if (!t || looksLikeCorruptedRowBreakInner(t)) return _m;
+      if (/\\[a-zA-Z]/.test(t) || /[=<>≠≤≥^_{}+*/\\]/.test(t) || /[A-Za-z]\s*\(/.test(t)) {
+        return `$${inner}$`;
+      }
+      return _m;
+    });
+  }
+  let s = parts.join("");
 
   // `$12\,000 subject` → `$12,000 subject` (not `$$40\,000 e`)
   s = s.replace(
@@ -584,17 +610,7 @@ export function mergeContinuationDisplayParagraphs(paragraphs: string[]): string
 }
 
 function splitMath(input: string): Part[] {
-  // Convert TeX delimiters \(…\) / \[…\] to $…$ / $$…$$.
-  // Must use paired matches + a function replacer:
-  // 1) Bare /\\\[/ also matches KaTeX row breaks `\\[0.85em]` (and `\\[4pt]`, …)
-  //    and would corrupt them into literal `$0.85em]`.
-  // 2) String.replace treats `$$` in a string replacement as a single `$`,
-  //    which would turn display `\[…\]` into inline `$…$`.
-  const text = normalizeBrokenMathMarkup(
-    input
-      .replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner: string) => `$${inner}$`)
-      .replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner: string) => `$$${inner}$$`),
-  );
+  const text = normalizeBrokenMathMarkup(convertTexDelimiters(input));
 
   const parts: Part[] = [];
   let i = 0;

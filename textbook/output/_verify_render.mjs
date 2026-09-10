@@ -63,10 +63,10 @@ function looksLikeMathInner(inner) {
 }
 
 function splitMath(input) {
-  // Paired delimiters + function replacer — do not mangle KaTeX `\\[0.85em]`.
+  // Lookbehind so KaTeX row breaks `\\[0.85em]` are not treated as `\[…\]`.
   const text = input
-    .replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner) => `$${inner}$`)
-    .replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner) => `$$${inner}$$`);
+    .replace(/(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)/g, (_m, inner) => `$${inner}$`)
+    .replace(/(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]/g, (_m, inner) => `$$${inner}$$`);
 
   const parts = [];
   let i = 0;

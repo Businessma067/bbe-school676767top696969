@@ -20,10 +20,10 @@ const CURRENCY_RE =
   /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/y;
 
 function splitMath(input) {
-  // Paired delimiters + function replacer — do not mangle KaTeX `\\[0.85em]`.
+  // Lookbehind so KaTeX row breaks `\\[0.85em]` are not treated as `\[…\]`.
   const text = input
-    .replace(/\\\(([\s\S]+?)\\\)/g, (_m, inner) => `$${inner}$`)
-    .replace(/\\\[([\s\S]+?)\\\]/g, (_m, inner) => `$$${inner}$$`);
+    .replace(/(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)/g, (_m, inner) => `$${inner}$`)
+    .replace(/(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]/g, (_m, inner) => `$$${inner}$$`);
   const parts = [];
   let i = 0;
   let buf = "";
