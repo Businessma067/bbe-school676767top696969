@@ -1,4 +1,9 @@
 import { useEffect, useState, type ReactNode } from "react";
+import { useRouterState } from "@tanstack/react-router";
+import {
+  CourseLockedView,
+  courseLockFeatureForPath,
+} from "@/components/CourseLockedView";
 import {
   fetchAccessState,
   peekAccessState,
@@ -13,10 +18,13 @@ function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, sig
   return tier != null && tierAtLeast(tier, minTier);
 }
 
+type GateStatus = "checking" | "allowed" | "locked" | "login";
+
 /**
  * Gates paid study tools behind a real entitlement (paid via Monobank or
- * unlocked with a promocode). Guests are sent to login, signed-in users
- * without the required tier are sent to the matching product page.
+ * unlocked with a promocode). Guests are sent to login. Signed-in users
+ * without the required tier stay on the route and see a locked UI shell
+ * instead of being redirected away.
  *
  * Uses a short-lived in-memory entitlement cache so navigating between
  * flashcards / matching / tutor does not blank the page on every click.
@@ -30,10 +38,16 @@ export function RequireFullCourse({
   minTier?: AccessTier;
 }) {
   const navigate = useLocalizedNavigate();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
   const cached = peekAccessState();
-  const [allowed, setAllowed] = useState(() =>
-    cached ? isAllowedForTier(cached.tier, minTier, cached.signedIn) : false,
-  );
+  const [status, setStatus] = useState<GateStatus>(() => {
+    if (!cached) return "checking";
+    if (!cached.signedIn) return "login";
+    if (minTier !== "none" && !isAllowedForTier(cached.tier, minTier, cached.signedIn)) {
+      return "locked";
+    }
+    return isAllowedForTier(cached.tier, minTier, cached.signedIn) ? "allowed" : "checking";
+  });
 
   useEffect(() => {
     let cancelled = false;
@@ -43,33 +57,38 @@ export function RequireFullCourse({
       if (cancelled) return;
 
       if (!state.signedIn) {
-        setAllowed(false);
+        setStatus("login");
         navigate({ to: "/login", replace: true });
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
-        setAllowed(false);
-        navigate({
-          to: minTier === "full" ? "/products/full-course" : "/products/lite-bbe-course",
-          replace: true,
-        });
+        setStatus("locked");
         return;
       }
-      setAllowed(true);
+      setStatus("allowed");
     })();
 
     return () => {
       cancelled = true;
     };
-  }, [navigate, minTier]);
+  }, [navigate, minTier, pathname]);
 
-  if (!allowed) {
+  if (status === "allowed") {
+    return <>{children}</>;
+  }
+
+  if (status === "locked") {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-background px-6">
-        <p className="text-sm text-muted-foreground">Checking course access…</p>
-      </div>
+      <CourseLockedView
+        feature={courseLockFeatureForPath(pathname)}
+        minTier={minTier}
+      />
     );
   }
 
-  return <>{children}</>;
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-background px-6">
+      <p className="text-sm text-muted-foreground">Checking course access…</p>
+    </div>
+  );
 }
