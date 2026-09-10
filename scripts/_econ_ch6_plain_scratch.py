@@ -1311,7 +1311,7 @@ def conceptual_bits(stmt: str, truth: bool) -> tuple[list[str], list[str]]:
     # Ultimate fallback — still statement-tied, never old prose
     snippet = core if len(core) <= 140 else core[:137] + "…"
     bits = [
-        with_firm("Read the claim against the chapter rule: {snippet}"),
+        with_firm(f"Read the claim against the chapter rule: {snippet}"),
         "Test classification, measurement, or the stated comparison on its own terms.",
         f"That reading makes the assertion {'hold' if truth else 'fall'}.",
     ]
