@@ -120,7 +120,7 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Full BBE Course": "BBE-Vollkurs",
     "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.":
       "Das komplette Vorbereitungssystem: 1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen. Alles, was du am Prüfungstag brauchst.",
-    "Buy course · €479": "Kurs kaufen · 479 €",
+    "Buy course · €449": "Kurs kaufen · 449 €",
     "Lite BBE Course": "BBE-Kurs Lite",
     "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.":
       "Zugang zu einer kuratierten Datenbank mit 950+ Fragen und klarer Schritt-für-Schritt-Logik unter jeder Aussage. Für ruhige Vorbereitung im eigenen Tempo.",
@@ -290,7 +290,7 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Full BBE Course": "Повний курс BBE",
     "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.":
       "Повна система підготовки: 1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори. Усе, що потрібно в день іспиту.",
-    "Buy course · €479": "Купити курс · €479",
+    "Buy course · €449": "Купити курс · €449",
     "Lite BBE Course": "Курс BBE Lite",
     "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.":
       "Доступ до бази з 950+ добірних питань із чіткою покроковою логікою під кожним твердженням. Для спокійної підготовки у власному темпі.",

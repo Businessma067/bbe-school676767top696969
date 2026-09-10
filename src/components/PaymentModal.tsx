@@ -29,7 +29,7 @@ export function PaymentModal({
   open,
   onOpenChange,
   productName = "Full BBE Course",
-  priceEuros = 479,
+  priceEuros = 449,
   productSlug = "full-course",
 }: PaymentModalProps) {
   const navigate = useNavigate();
@@ -45,8 +45,8 @@ export function PaymentModal({
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
   const priceFactor = discountApplied ? 1 - discountPct / 100 : 1;
-  const uahPrice = Math.round(product.priceUah * priceFactor);
-  const eurPrice = Math.round(priceEuros * priceFactor);
+  const catalogEur = product.priceEur;
+  const eurPrice = Math.round(catalogEur * priceFactor);
   const showDiscountedTotal = method !== "promo" || discountApplied;
 
   useEffect(() => {
@@ -236,7 +236,7 @@ export function PaymentModal({
               </p>
               {showDiscountedTotal && (
                 <p className="mt-0.5 text-xs text-muted-foreground">
-                  Charged as {uahPrice.toLocaleString("uk-UA")} UAH
+                  Charged as €{eurPrice}
                   {discountApplied ? ` (−${discountPct}%)` : ""}
                 </p>
               )}
@@ -247,7 +247,7 @@ export function PaymentModal({
               ) : (
                 <>
                   {discountApplied && (
-                    <p className="text-sm text-muted-foreground line-through">€{priceEuros}</p>
+                    <p className="text-sm text-muted-foreground line-through">€{catalogEur}</p>
                   )}
                   <p className="font-display text-2xl font-bold text-foreground">€{eurPrice}</p>
                 </>
@@ -326,9 +326,8 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% off applied ({appliedPromoCode}) — pay{" "}
-                      {uahPrice.toLocaleString("uk-UA")} UAH instead of{" "}
-                      {product.priceUah.toLocaleString("uk-UA")} UAH
+                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPrice} instead of
+                      €{catalogEur}
                     </p>
                   )}
 
@@ -350,7 +349,7 @@ export function PaymentModal({
                     ) : (
                       <>
                         <Lock className="h-4 w-4" />
-                        Proceed to payment · {uahPrice.toLocaleString("uk-UA")} UAH
+                        Proceed to payment · €{eurPrice}
                       </>
                     )}
                   </button>

@@ -63,7 +63,7 @@ const courseListJsonLd = [
     provider: PROVIDER,
     offers: {
       "@type": "Offer",
-      price: "479",
+      price: "449",
       priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: "https://bbe-school.com/products/full-course",
@@ -127,7 +127,7 @@ const products: Product[] = [
     image: FULL_COURSE_IMAGE,
     description:
       "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
-    cta: "Buy course · €479",
+    cta: "Buy course · €449",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
     ownedTo: FULL_COURSE_HREF,

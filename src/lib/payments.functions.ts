@@ -1,11 +1,15 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
+import {
+  MONOBANK_CURRENCY_EUR,
+  PAID_PRODUCTS,
+  isPaidProductSlug,
+} from "@/lib/checkout-catalog";
 import { lookupDiscountPromo } from "@/lib/promo.functions";
 
 export type CheckoutResult =
-  | { ok: true; pageUrl: string; invoiceId: string; amountUah: number }
+  | { ok: true; pageUrl: string; invoiceId: string; amountEur: number }
   | { ok: false; error: string };
 
 export type PaymentStatusResult =
@@ -16,7 +20,7 @@ export type PaymentStatusResult =
       productSlug: string | null;
       productName: string | null;
       href: string | null;
-      amountUah: number | null;
+      amountEur: number | null;
       failureReason?: string;
     }
   | { ok: false; error: string };
@@ -64,13 +68,8 @@ export const createCheckout = createServerFn({ method: "POST" })
         appliedPromoCode = promo.code;
       }
 
-      // Optional test override, e.g. MONOBANK_TEST_AMOUNT_MINOR=10000 (100 UAH).
-      // Discount still applies on top of the test base so promo pricing can be verified.
-      const testAmount = Number(process.env["MONOBANK_TEST_AMOUNT_MINOR"] ?? "");
-      const baseMinor =
-        Number.isFinite(testAmount) && testAmount > 0
-          ? Math.round(testAmount)
-          : Math.round(product.priceUah * 100);
+      // Charge the catalog EUR price in minor units (cents). Promocode % still applies.
+      const baseMinor = Math.round(product.priceEur * 100);
       const amountMinor = Math.max(
         1,
         Math.round(baseMinor * (1 - discountPct / 100)),
@@ -86,6 +85,7 @@ export const createCheckout = createServerFn({ method: "POST" })
       const reference = `${slug}:${context.userId}:${Date.now()}`;
       const { invoiceId, pageUrl } = await createMonoInvoice({
         amountMinor,
+        ccy: MONOBANK_CURRENCY_EUR,
         destination: product.name,
         reference,
         redirectUrl: `${origin}/payment-result`,
@@ -101,7 +101,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         tier: product.tier,
         invoice_id: invoiceId,
         amount_minor: amountMinor,
-        currency_code: 980,
+        currency_code: MONOBANK_CURRENCY_EUR,
         status: "created",
         page_url: pageUrl,
         ...(appliedPromoCode ? { promo_code: appliedPromoCode } : {}),
@@ -111,7 +111,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         return { ok: false, error: "Could not start the payment. Try again." };
       }
 
-      return { ok: true, pageUrl, invoiceId, amountUah: amountMinor / 100 };
+      return { ok: true, pageUrl, invoiceId, amountEur: amountMinor / 100 };
     } catch (err) {
       console.error("createCheckout", err);
       const message = err instanceof Error ? err.message : "Could not start the payment.";
@@ -147,7 +147,7 @@ export const getPaymentStatus = createServerFn({ method: "POST" })
         productSlug: row.product_slug,
         productName: row.product_name,
         href: result.href,
-        amountUah: row.amount_minor / 100,
+        amountEur: row.amount_minor / 100,
         ...(result.failureReason ? { failureReason: result.failureReason } : {}),
       };
     } catch (err) {
@@ -170,7 +170,7 @@ export const listMyPayments = createServerFn({ method: "GET" })
     return (data ?? []).map((p) => ({
       invoiceId: p.invoice_id,
       productName: p.product_name,
-      amountUah: p.amount_minor / 100,
+      amountEur: p.amount_minor / 100,
       status: p.status,
       createdAt: p.created_at,
     }));
