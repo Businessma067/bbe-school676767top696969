@@ -69,13 +69,18 @@ KIND_SCHEDULES = [
     ["standard", "compact", "standard", "expanded", "compact"],
 ]
 
-CASE_OPENERS = [
+SCAFFOLD_PREFIXES = (
     "Balance-sheet lines in the extract show ",
     "The amounts given for this case mean ",
     "Reading the claim against the extract shows ",
     "On this balance sheet, ",
     "For the line items listed, ",
-]
+)
+
+EMPTY_NUMERIC_LEADS = (
+    "The labelled extract totals must be compared to the claim's threshold.",
+    "the labelled extract totals must be compared to the claim's threshold.",
+)
 
 EXPAND_PADS = {
     "ratio": [
@@ -127,6 +132,45 @@ def body_of(expl: str) -> str:
 def split_paras(text: str) -> list[str]:
     parts = re.split(r"\n\s*\n", text.strip())
     return [p.strip() for p in parts if p.strip()]
+
+
+def strip_scaffold_lead(text: str) -> str:
+    """Remove empty per-letter opener scaffolds; keep real accounting content."""
+    text = text.strip()
+    if not text:
+        return text
+    low = text.lower()
+    for prefix in SCAFFOLD_PREFIXES:
+        pl = prefix.lower()
+        if low.startswith(pl):
+            text = text[len(prefix) :].lstrip()
+            if text and text[0].islower():
+                text = text[0].upper() + text[1:]
+            low = text.lower()
+            break
+    for empty in EMPTY_NUMERIC_LEADS:
+        if low == empty.lower():
+            return ""
+        if low.startswith(empty.lower()):
+            text = text[len(empty) :].lstrip()
+            if text and text[0].islower():
+                text = text[0].upper() + text[1:]
+            break
+    return text.strip()
+
+
+def strip_scaffold_body(body: str) -> str:
+    parts = split_paras(body)
+    if not parts:
+        return body
+    cleaned: list[str] = []
+    for i, p in enumerate(parts):
+        if i == 0 and not p.strip().startswith("$$"):
+            p = strip_scaffold_lead(p)
+            if not p:
+                continue
+        cleaned.append(p)
+    return "\n\n".join(cleaned)
 
 
 def no_dash(text: str) -> str:
@@ -245,35 +289,41 @@ def pack_conceptual(truth: bool, kind: str, bits: list[str], pads: list[str], st
 
 
 def numeric_lead(stmt: str, idx: int) -> str:
-    opener = CASE_OPENERS[idx % len(CASE_OPENERS)]
+    """Return a substantive formula identity when numeric body lacks one."""
     sl = stmt.lower()
     firm = ""
     m = re.match(r"^For this\s+([^,]+),\s*", stmt, re.I)
     if m:
         firm = m.group(1).strip()
     if "current ratio" in sl:
-        tail = "short-term cover equals current assets divided by current liabilities."
-    elif "equity ratio" in sl or "debt ratio" in sl:
-        tail = "the equity or debt ratio places owners' claims or liabilities against total assets."
+        tail = "Current ratio = current assets ÷ current liabilities."
+    elif "equity ratio" in sl:
+        tail = "Equity ratio = total equity ÷ total assets."
+    elif "debt ratio" in sl:
+        tail = "Debt ratio = total liabilities ÷ total assets."
     elif "acid-test" in sl or "excluding inventory" in sl:
-        tail = "the acid-test ratio uses current assets minus inventory over current liabilities."
+        tail = "Acid-test ratio = (current assets − inventory) ÷ current liabilities."
     elif "working capital" in sl:
-        tail = "working capital is current assets minus current liabilities."
+        tail = "Working capital = current assets − current liabilities."
     elif "depreciat" in sl or "carrying value" in sl:
-        tail = "straight-line depreciation spreads (cost minus residual) over useful life."
+        tail = "Straight-line charge = (cost − residual) ÷ useful life."
     elif "grew by" in sl or "fell by" in sl:
-        tail = "percentage change uses Year 2 minus Year 1, divided by Year 1."
-    elif "market capitalisation" in sl or "share price" in sl or "earnings per share" in sl:
-        tail = "market and per-share measures combine price lines with shares outstanding."
+        tail = "Percentage change = (Year 2 − Year 1) ÷ Year 1."
+    elif "market capitalisation" in sl:
+        tail = "Market capitalisation = share price × shares outstanding."
+    elif "share price" in sl or "earnings per share" in sl:
+        tail = "Per-share measures combine price lines with shares outstanding."
     elif "turnover" in sl or "margin" in sl or "return on" in sl:
-        tail = "activity and margin ratios link income-statement flows to balance-sheet bases."
+        tail = "Activity and margin ratios link income flows to balance-sheet bases."
     elif "make up" in sl and "% of" in sl:
-        tail = "the composition share is the part line divided by the whole line from the extract."
+        tail = "Composition share = part line ÷ whole line from the extract."
+    elif "non-current liabilities" in sl and "equity" in sl:
+        tail = "NCL-to-equity share = non-current liabilities ÷ total equity."
     else:
-        tail = "the labelled extract totals must be compared to the claim's threshold."
+        return ""
     if firm:
-        return f"{opener}that for {firm}, {tail}"
-    return f"{opener}{tail}"
+        return f"For this {firm}, {tail[0].lower() + tail[1:]}"
+    return tail
 
 
 def numeric_outro(stmt: str, truth: bool) -> str:
@@ -284,14 +334,19 @@ def numeric_outro(stmt: str, truth: bool) -> str:
 
 def expand_numeric(body: str, stmt: str, truth: bool, kind: str, case: dict, idx: int) -> str:
     lo, hi = KIND_BANDS[kind]
-    intro = numeric_lead(stmt, idx)
     outro = numeric_outro(stmt, truth)
-    parts = split_paras(body)
-    if intro and intro not in body:
+    parts = split_paras(strip_scaffold_body(body))
+    if parts and not parts[0].strip().startswith("$$"):
+        parts[0] = strip_scaffold_lead(parts[0])
+    intro = numeric_lead(stmt, idx)
+    has_formula = any(p.strip().startswith("$$") for p in parts) or re.search(
+        r"=\s*[^.]+\.", parts[0] if parts else ""
+    )
+    if intro and not has_formula and intro not in body:
         parts.insert(0, intro)
     if outro not in body:
         parts.append(outro)
-    body = "\n\n".join(parts)
+    body = "\n\n".join(p for p in parts if p.strip())
     pads = extra_pads(stmt, truth, [], [])
     guard = 0
     while len(body) < lo and guard < 8:
@@ -319,18 +374,7 @@ def expand_numeric(body: str, stmt: str, truth: bool, kind: str, case: dict, idx
 
 
 def apply_case_opener(body: str, idx: int) -> str:
-    opener = CASE_OPENERS[idx % len(CASE_OPENERS)]
-    parts = split_paras(body)
-    if not parts:
-        return opener.rstrip() + "."
-    first = parts[0]
-    if first.lower().startswith(opener.strip().lower()[:20]):
-        return body
-    if first.startswith("$$"):
-        parts.insert(0, opener.rstrip() + ":")
-    else:
-        parts[0] = opener + (first[0].lower() + first[1:] if first else "")
-    return "\n\n".join(parts)
+    return strip_scaffold_body(body)
 
 
 def build_letter(case: dict, idx: int, kind: str) -> str:
@@ -377,6 +421,37 @@ def build_letter(case: dict, idx: int, kind: str) -> str:
     return finish(truth, body, note=note)
 
 
+def dedupe_opening(parts: list[str], stmt: str, truth: bool, seen: set[str]) -> list[str]:
+    if not parts:
+        return parts
+    first = strip_scaffold_lead(parts[0])
+    key = first.lower()[:40]
+    if key not in seen:
+        parts[0] = first
+        return parts
+    got = conceptual_bits(stmt, truth)
+    if got:
+        for candidate in got[0]:
+            ck = candidate.lower()[:40]
+            if ck not in seen:
+                parts[0] = candidate
+                return parts
+    item = asset_name(stmt)
+    if first and not first.lower().startswith(item.lower()):
+        parts[0] = f"Applied to {a_an(item)}, {first[0].lower() + first[1:]}"
+    elif first:
+        m = re.match(r"^For this\s+([^,]+),\s*", stmt, re.I)
+        if m:
+            parts[0] = f"For this {m.group(1).strip()}, {first[0].lower() + first[1:]}"
+        else:
+            words = stmt.split()[:6]
+            tag = " ".join(words).rstrip(",.")
+            if len(tag) > 48:
+                tag = tag[:45].rsplit(" ", 1)[0]
+            parts[0] = f"On «{tag}», {first[0].lower() + first[1:]}"
+    return parts
+
+
 def fix_openings(expls: list[str], case: dict) -> list[str]:
     ctx = case.get("context") or ""
     tables = parse_tables(ctx)
@@ -388,35 +463,22 @@ def fix_openings(expls: list[str], case: dict) -> list[str]:
         if nm:
             note = re.sub(r"^Note:\s*", "", nm.group(0), flags=re.I).strip()
         stmt = case["statements"][i]
-        core = NOTE_RE.sub("", body_of(expl)).strip()
-        is_numeric = computable_numeric(stmt, tables, ctx) or (
-            needs_numeric(stmt) and numeric_bits(stmt, bool(case["answer_key"][i]), tables) is not None
-        )
-        if not is_numeric:
-            core = apply_case_opener(core, i)
-        else:
-            lead = numeric_lead(stmt, i)
-            parts = split_paras(core)
-            if parts and lead.split()[0].lower() not in parts[0].lower()[:30]:
-                parts[0] = lead
-            core = "\n\n".join(parts)
+        core = strip_scaffold_body(NOTE_RE.sub("", body_of(expl)).strip())
         out.append(finish(truth, core, note=note))
     seen: set[str] = set()
     for i, expl in enumerate(out):
-        op = body_of(expl).split("\n")[0].strip().lower()[:40]
-        if op in seen:
-            alt = CASE_OPENERS[(i + 3) % len(CASE_OPENERS)]
-            truth = expl.rstrip().endswith("True.")
-            note = ""
-            nm = NOTE_RE.search(body_of(expl))
-            if nm:
-                note = re.sub(r"^Note:\s*", "", nm.group(0), flags=re.I).strip()
-            core = NOTE_RE.sub("", body_of(expl)).strip()
-            parts = split_paras(core)
-            if parts:
-                parts[0] = alt + (parts[0][0].lower() + parts[0][1:] if parts[0] else "")
-            out[i] = finish(truth, "\n\n".join(parts), note=note)
-        seen.add(body_of(out[i]).split("\n")[0].strip().lower()[:40])
+        truth = expl.rstrip().endswith("True.")
+        note = ""
+        nm = NOTE_RE.search(body_of(expl))
+        if nm:
+            note = re.sub(r"^Note:\s*", "", nm.group(0), flags=re.I).strip()
+        stmt = case["statements"][i]
+        core = NOTE_RE.sub("", body_of(expl)).strip()
+        parts = split_paras(strip_scaffold_body(core))
+        parts = dedupe_opening(parts, stmt, bool(case["answer_key"][i]), seen)
+        out[i] = finish(truth, "\n\n".join(parts), note=note)
+        first = body_of(out[i]).split("\n")[0].strip().lower()[:40]
+        seen.add(first)
     return out
 
 
@@ -437,7 +499,7 @@ def expand_to_min(expl: str, stmt: str, truth: bool, target: int, case: dict) ->
     return finish(truth, rebuilt, note=note)
 
 
-def enforce_case(expls: list[str], kinds: list[str], case: dict) -> list[str]:
+def enforce_lengths(expls: list[str], kinds: list[str], case: dict) -> list[str]:
     stmts = case["statements"]
     keys = case["answer_key"]
 
@@ -468,8 +530,15 @@ def enforce_case(expls: list[str], kinds: list[str], case: dict) -> list[str]:
         idx = max(range(5), key=lambda j: lens()[j])
         expls[idx] = expand_to_min(expls[idx], stmts[idx], bool(keys[idx]), lens()[idx] + 90, case)
         guard += 1
+    return expls
 
+
+def enforce_case(expls: list[str], kinds: list[str], case: dict) -> list[str]:
+    keys = case["answer_key"]
     expls = fix_openings(expls, case)
+    expls = enforce_lengths(expls, kinds, case)
+    expls = fix_openings(expls, case)
+    expls = enforce_lengths(expls, kinds, case)
     fixed: list[str] = []
     for i, e in enumerate(expls):
         note = ""
