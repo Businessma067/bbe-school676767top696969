@@ -9,6 +9,7 @@ import {
   fetchEnrollments,
   fetchMockAttempts,
   fetchTaskAttempts,
+  highestTier,
   summarizeTaskAttempts,
   type CourseSlug,
   type Enrollment,
@@ -28,6 +29,7 @@ import {
   TutorModeArt,
 } from "@/components/study-modes/ModeArt";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
+import { LockedFeaturePanel } from "@/components/CourseLockedView";
 import {
   BookOpen,
   ClipboardCheck,
@@ -40,9 +42,11 @@ import {
   GraduationCap,
   Wand2,
   Layers,
+  Lock,
 } from "lucide-react";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { tierAtLeast } from "@/lib/entitlements";
 
 export type DashboardTab = "courses" | "mocks" | "custom" | "games";
 
@@ -156,6 +160,12 @@ function DashboardPage() {
     sessionAnswers === null ||
     customMocks === null;
 
+  // Free / demo accounts see lock + unlock CTA on paid tabs immediately
+  // (Mock Exams, Custom Mocks, Study tools) — not only after navigating away.
+  const rawTier = !loading ? highestTier(enrollments!) : "none";
+  const accountTier = rawTier === "none" ? "demo" : rawTier;
+  const paidToolsLocked = !loading && auth.role !== "admin" && !tierAtLeast(accountTier, "lite");
+
   const handleLogout = async () => {
     await supabase.auth.signOut();
     navigateHome({ to: "/" });
@@ -176,18 +186,21 @@ function DashboardPage() {
               icon={<ClipboardCheck className="h-4 w-4" />}
               label="Mock Exams"
               active={tab === "mocks"}
+              locked={paidToolsLocked}
               onClick={() => setTab("mocks")}
             />
             <SideItem
               icon={<Wand2 className="h-4 w-4" />}
               label="Custom Mocks"
               active={tab === "custom"}
+              locked={paidToolsLocked}
               onClick={() => setTab("custom")}
             />
             <SideItem
               icon={<Layers className="h-4 w-4" />}
               label="Study tools"
               active={tab === "games"}
+              locked={paidToolsLocked}
               onClick={() => setTab("games")}
             />
           </nav>
@@ -240,13 +253,13 @@ function DashboardPage() {
             <MobileTab active={tab === "courses"} onClick={() => setTab("courses")}>
               Courses
             </MobileTab>
-            <MobileTab active={tab === "mocks"} onClick={() => setTab("mocks")}>
+            <MobileTab active={tab === "mocks"} locked={paidToolsLocked} onClick={() => setTab("mocks")}>
               Mock Exams
             </MobileTab>
-            <MobileTab active={tab === "custom"} onClick={() => setTab("custom")}>
+            <MobileTab active={tab === "custom"} locked={paidToolsLocked} onClick={() => setTab("custom")}>
               Custom
             </MobileTab>
-            <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
+            <MobileTab active={tab === "games"} locked={paidToolsLocked} onClick={() => setTab("games")}>
               Study tools
             </MobileTab>
           </div>
@@ -262,12 +275,22 @@ function DashboardPage() {
                 sessionAnswers={sessionAnswers!}
               />
             ) : tab === "mocks" ? (
-              <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
+              paidToolsLocked ? (
+                <LockedFeaturePanel feature="mock-exams" />
+              ) : (
+                <MocksTab mocks={mocks!.filter((m) => !isCustomExamId(m.exam_id))} />
+              )
             ) : tab === "custom" ? (
-              <CustomMocksTab
-                customMocks={customMocks!}
-                attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
-              />
+              paidToolsLocked ? (
+                <LockedFeaturePanel feature="mock-builder" />
+              ) : (
+                <CustomMocksTab
+                  customMocks={customMocks!}
+                  attempts={mocks!.filter((m) => isCustomExamId(m.exam_id))}
+                />
+              )
+            ) : paidToolsLocked ? (
+              <LockedFeaturePanel feature="study-tools" />
             ) : (
               <GamesTab />
             )}
@@ -1133,11 +1156,13 @@ function SideItem({
   icon,
   label,
   active,
+  locked = false,
   onClick,
 }: {
   icon: React.ReactNode;
   label: string;
   active: boolean;
+  locked?: boolean;
   onClick: () => void;
 }) {
   return (
@@ -1152,17 +1177,20 @@ function SideItem({
       }
     >
       {icon}
-      <span>{label}</span>
+      <span className="flex-1 text-left">{label}</span>
+      {locked ? <Lock className="h-3.5 w-3.5 shrink-0 opacity-80" aria-label="Locked" /> : null}
     </button>
   );
 }
 
 function MobileTab({
   active,
+  locked = false,
   onClick,
   children,
 }: {
   active: boolean;
+  locked?: boolean;
   onClick: () => void;
   children: React.ReactNode;
 }) {
@@ -1171,13 +1199,14 @@ function MobileTab({
       type="button"
       onClick={onClick}
       className={
-        "flex-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
+        "inline-flex flex-1 items-center justify-center gap-1 rounded-md border px-3 py-2 text-sm font-semibold transition-colors " +
         (active
           ? "border-primary bg-primary text-primary-foreground"
           : "border-border bg-card text-foreground hover:bg-secondary")
       }
     >
       {children}
+      {locked ? <Lock className="h-3 w-3 shrink-0 opacity-80" aria-hidden="true" /> : null}
     </button>
   );
 }
