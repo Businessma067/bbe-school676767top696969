@@ -42,23 +42,13 @@ const PRIVATE_PATH_PREFIXES = [
   "/products/lite-bbe-course-economics",
 ] as const;
 
+/** Free, no-login English-only pages. Anything behind a course purchase or a
+ *  sign-in wall (flashcards, matching, tutor exam, mock exams, course subjects)
+ *  is intentionally excluded. */
 export const ENGLISH_ONLY_INDEXABLE_PATHS = [
   "/demo-practice/economics",
   "/demo-practice/math",
   "/demo-practice/english",
-  "/mock-exams",
-  "/flashcards",
-  "/flashcards/economics",
-  "/flashcards/math",
-  "/flashcards/english",
-  "/matching",
-  "/matching/economics",
-  "/matching/math",
-  "/matching/english",
-  "/tutor-exam",
-  "/tutor-exam/economics",
-  "/tutor-exam/math",
-  "/tutor-exam/english",
 ] as const;
 
 type SitemapEntry = {

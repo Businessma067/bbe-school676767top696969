@@ -377,10 +377,10 @@ export function HowItWorksSection() {
               ) : (
                 <>
                   <h3 className="font-display text-xl font-semibold leading-tight text-foreground sm:text-[1.75rem] lg:text-[1.85rem]">
-                    {PLACEHOLDERS[tab].title}
+                    {PLACEHOLDERS[tab as Exclude<MainTab, "course" | "games">].title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-                    {PLACEHOLDERS[tab].body}
+                    {PLACEHOLDERS[tab as Exclude<MainTab, "course" | "games">].body}
                   </p>
                 </>
               )}
