@@ -38,12 +38,15 @@ function monoToken(): string {
 
 export async function createMonoInvoice(input: {
   amountMinor: number;
+  /** ISO 4217 numeric currency code. Defaults to EUR (978). */
+  ccy?: number;
   destination: string;
   reference: string;
   redirectUrl: string;
   webHookUrl?: string;
   basketName?: string;
 }): Promise<{ invoiceId: string; pageUrl: string }> {
+  const ccy = input.ccy ?? 978;
   const res = await fetch(`${MONO_API}/invoice/create`, {
     method: "POST",
     headers: {
@@ -52,7 +55,7 @@ export async function createMonoInvoice(input: {
     },
     body: JSON.stringify({
       amount: input.amountMinor,
-      ccy: 980,
+      ccy,
       merchantPaymInfo: {
         reference: input.reference,
         destination: input.destination,

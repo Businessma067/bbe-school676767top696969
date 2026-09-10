@@ -2,13 +2,15 @@
 
 export type PaidProductSlug = "full-course" | "lite-bbe-course";
 
+/** ISO 4217 numeric code for EUR (Monobank `ccy`). */
+export const MONOBANK_CURRENCY_EUR = 978;
+
 export type PaidProduct = {
   slug: PaidProductSlug;
   name: string;
   tier: "lite" | "full";
+  /** Charged amount in euros (Monobank invoice uses EUR minor units). */
   priceEur: number;
-  /** Charged amount in UAH (Monobank settles in hryvnia). */
-  priceUah: number;
   href: string;
 };
 
@@ -17,8 +19,7 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     slug: "full-course",
     name: "Full BBE Course",
     tier: "full",
-    priceEur: 479,
-    priceUah: 21500,
+    priceEur: 449,
     href: "/products/full-course-subjects",
   },
   "lite-bbe-course": {
@@ -26,7 +27,6 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     name: "Lite BBE Course",
     tier: "lite",
     priceEur: 279,
-    priceUah: 12500,
     href: "/products/lite-bbe-course-subjects",
   },
 };

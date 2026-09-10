@@ -26,7 +26,7 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 /** Local remake served from public/ (avoids stale Lovable CDN asset). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 
-const FULL_COURSE_PRICE = 479;
+const FULL_COURSE_PRICE = 449;
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
@@ -118,7 +118,7 @@ const fullCourseFaqs = [
   {
     question: "Is this a subscription or a one-time payment?",
     answer:
-      "It is a strict one-time payment of €479. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
+      "It is a strict one-time payment of €449. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
   },
   {
     question: "How does the AI Study Companion work?",
