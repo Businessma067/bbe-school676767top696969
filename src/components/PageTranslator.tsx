@@ -26,6 +26,9 @@ const SKIP_TAGS = new Set([
  * Important: when React updates live English UI (timers, ON/OFF labels, etc.),
  * we refresh the cached source instead of reverting the DOM to the first
  * value we saw — otherwise dynamic controls appear stuck.
+ *
+ * Mutations are coalesced to one apply pass per animation frame so homepage
+ * counters / carousels do not re-walk the whole tree 60×/sec.
  */
 export function PageTranslator() {
   const { lang } = useLanguage();
@@ -42,7 +45,6 @@ export function PageTranslator() {
     const originals = originalsRef.current;
     const lastWritten = lastWrittenRef.current;
     const translated = translatedRef.current;
-
 
     const shouldSkip = (node: Text) => {
       let el = node.parentElement;
@@ -101,7 +103,6 @@ export function PageTranslator() {
           originals.set(node, value);
         }
 
-
         const source = originals.get(node) ?? value;
         const next = translate(source, effectiveLang) ?? source;
         writeNode(node, next);
@@ -110,14 +111,32 @@ export function PageTranslator() {
 
     applyTo(document.body);
 
+    let raf = 0;
+    const pendingRoots = new Set<Node>();
+    const pendingCharData = new Set<Text>();
+
+    const flush = () => {
+      raf = 0;
+      for (const node of pendingCharData) applyTo(node, true);
+      pendingCharData.clear();
+      for (const root of pendingRoots) applyTo(root);
+      pendingRoots.clear();
+    };
+
+    const schedule = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(flush);
+    };
+
     const observer = new MutationObserver((records) => {
       for (const record of records) {
         if (record.type === "characterData") {
-          applyTo(record.target, true);
+          pendingCharData.add(record.target as Text);
         } else {
-          record.addedNodes.forEach((n) => applyTo(n));
+          record.addedNodes.forEach((n) => pendingRoots.add(n));
         }
       }
+      schedule();
     });
 
     observer.observe(document.body, {
@@ -126,7 +145,10 @@ export function PageTranslator() {
       characterData: true,
     });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, [effectiveLang]);
 
   return null;

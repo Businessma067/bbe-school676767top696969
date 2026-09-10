@@ -182,7 +182,9 @@ function RootComponent() {
       <LanguageProvider>
         <PracticeCaseProvider>
           <LocaleSync />
-          <PageTranslator />
+          <DeferredChrome delayMs={400}>
+            <PageTranslator />
+          </DeferredChrome>
           <IntroSplash />
           <HashScrollOnLoad />
           <ActivityTracker />

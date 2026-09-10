@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { Suspense, lazy, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
@@ -10,10 +10,13 @@ import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { SiteHeader } from "@/components/SiteHeader";
-import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+const HowItWorksSection = lazy(() =>
+  import("@/components/HowItWorksSection").then((m) => ({ default: m.HowItWorksSection })),
+);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -118,11 +121,13 @@ export function Index() {
           </div>
         </section>
 
-        <HowItWorksSection />
+        <Suspense fallback={<div className="min-h-[28rem] bg-background" aria-hidden />}>
+          <HowItWorksSection />
+        </Suspense>
 
         {/* PARALLAX BAND — darkened WU campus */}
         <section
-          className="relative bg-scroll md:bg-fixed"
+          className="relative bg-scroll"
           style={{
             backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.84), rgba(0,0,0,0.8)), url(${wuAsset.url})`,
             backgroundSize: "cover",
@@ -239,7 +244,7 @@ export function Index() {
 
         {/* PARALLAX BAND #2 */}
         <section
-          className="relative bg-scroll md:bg-fixed"
+          className="relative bg-scroll"
           style={{
             backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
             backgroundSize: "cover",
@@ -464,7 +469,7 @@ function RingMetric({
           <path d={fullCircle} className="fill-white/15" />
           <path d={filledPath} className={cn("ring-animate-fill", "fill-caramel-deep")} />
         </svg>
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center" data-no-i18n>
           <span
             className={cn(
               "font-display font-bold tabular-nums tracking-tight leading-none",
