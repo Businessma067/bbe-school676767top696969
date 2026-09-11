@@ -71,8 +71,7 @@ export function AdminLayout({ children, title, wide }: Props) {
     <Shell maxW={maxW}>
       <div className="flex flex-col gap-6 lg:flex-row">
         <aside className="lg:w-52 lg:shrink-0">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Admin</p>
-          <nav className="mt-3 flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-1">
+          <nav className="flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-1">
             <AdminNavLink to="/admin/users">Users</AdminNavLink>
             <AdminNavLink to="/admin/promocodes">Promocodes</AdminNavLink>
           </nav>

@@ -73,9 +73,6 @@ export function AnswerSheetFeaturePage() {
           <AnswerSheetPreviewFill fit="width" className="w-full" />
 
           <div>
-            <span className="mb-3 inline-block rounded-full border border-border bg-card px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-              Official Answer Sheet
-            </span>
             <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Official Answer Sheet Simulator
             </h1>
@@ -198,7 +195,7 @@ export function AnswerSheetFeaturePage() {
               backgroundColor: `${PRODUCT_ORANGE}10`,
             }}
           >
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+            <p className="text-sm font-semibold text-foreground">
               What we actually recommend
             </p>
             <p className="mt-2 font-display text-lg font-semibold leading-snug text-foreground">

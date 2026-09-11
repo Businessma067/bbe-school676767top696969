@@ -263,11 +263,8 @@ export function AuthShell({
               BBE
             </span>
           </div>
-          <div className="flex flex-col leading-tight">
+          <div className="flex items-center">
             <span className="font-display text-base font-bold tracking-tight">BBE School</span>
-            <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-taupe">
-              WU Vienna · Prep
-            </span>
           </div>
         </LocalizedLink>
         <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">

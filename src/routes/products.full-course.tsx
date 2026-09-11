@@ -303,7 +303,7 @@ export function FullCourseProduct() {
           {/* Price + CTA */}
           <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
             <div>
-              <div className="text-xs font-medium uppercase tracking-widest text-taupe">
+              <div className="text-sm text-muted-foreground">
                 {ownsFullCourse ? "Your access" : "One-time payment"}
               </div>
               <div className="mt-1 flex items-baseline gap-2">
@@ -542,10 +542,7 @@ export function FullCourseProduct() {
           {/* FAQ */}
           <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
             <div className="mx-auto max-w-3xl">
-              <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-taupe">
-                Questions & Answers
-              </p>
-              <h2 className="mt-5 text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+              <h2 className="text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                 Frequently asked questions
               </h2>
 

@@ -285,7 +285,7 @@ export function WuViennaOverviewPage() {
     >
       <div className="space-y-14">
         <nav aria-label="On this page" className="rounded-2xl border border-border bg-card px-4 py-4 shadow-sm sm:px-5">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+          <p className="text-sm font-semibold text-foreground">
             On this page
           </p>
           <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
@@ -591,7 +591,7 @@ export function WuViennaOverviewPage() {
                 key={fact.label}
                 className="rounded-2xl border border-border bg-card px-4 py-4 shadow-sm"
               >
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                <p className="text-sm font-semibold text-foreground">
                   {fact.label}
                 </p>
                 <p className="mt-2 font-medium text-foreground">{fact.value}</p>

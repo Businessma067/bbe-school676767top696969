@@ -26,8 +26,7 @@ export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
   return (
     <div className="space-y-5">
       <section className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-taupe">Account</p>
-        <h2 className="mt-1 break-all font-mono text-xl font-bold tracking-tight sm:text-2xl">
+        <h2 className="break-all font-mono text-xl font-bold tracking-tight sm:text-2xl">
           {p.email || "—"}
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">{p.displayName}</p>

@@ -471,10 +471,7 @@ function FlashcardSubjectPage() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">
-                Flashcards
-              </p>
-              <h1 className="mt-1 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 {subject.title}
               </h1>
               <p className="mt-2 text-sm text-muted-foreground">{subject.description}</p>

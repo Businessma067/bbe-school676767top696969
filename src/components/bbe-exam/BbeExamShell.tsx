@@ -120,7 +120,7 @@ export function BbeStatGrid({
           key={item.label}
           className="rounded-2xl border border-border bg-card px-4 py-4 shadow-sm"
         >
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+          <p className="text-xs font-medium text-muted-foreground">
             {item.label}
           </p>
           <p className="mt-2 font-display text-xl font-bold tracking-tight text-foreground">

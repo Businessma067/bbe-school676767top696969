@@ -58,16 +58,6 @@ export function Index() {
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
               <ExamCountdown className="mb-5 sm:mb-6" />
 
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-                <span
-                  className="h-1.5 w-1.5 rounded-full"
-                  style={{ backgroundColor: "#2DD4A8" }}
-                />
-                <span className="text-xs font-medium tracking-wide text-taupe">
-                  Built by top 1% of the hall
-                </span>
-              </div>
-
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
                 Step by step preparation for your 2027 WU BBE exam
               </h1>
@@ -100,20 +90,9 @@ export function Index() {
                   </span>
                 </LocalizedLink>
               </div>
-
-              <div
-                id="important-features"
-                className="mt-5 flex flex-col items-center gap-2 text-center text-xs font-medium tracking-wide text-taupe sm:mt-5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-6 sm:gap-y-2"
-              >
-                <span>Beauty of stress and time management</span>
-                <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
-                <span>Most common and tricky Mistakes</span>
-                <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
-                <span>Exam life hacks and loopholes</span>
-              </div>
             </div>
 
-            <div className="mt-10 sm:mt-12 lg:mt-14">
+            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
               <PrepJourneyRoadmap />
             </div>
           </div>

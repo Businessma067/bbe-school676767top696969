@@ -128,7 +128,7 @@ function AdminForm() {
         <Field label="Difficulty" value={meta.difficulty} onChange={(v) => setMeta({ ...meta, difficulty: v })} placeholder="3/5" />
         <Field label="Sort order" value={String(meta.sortOrder)} onChange={(v) => setMeta({ ...meta, sortOrder: Number(v) || 0 })} />
         <label className="sm:col-span-2 flex flex-col gap-1">
-          <span className="text-xs font-semibold uppercase tracking-widest text-taupe">Context</span>
+          <span className="text-xs font-medium text-muted-foreground">Context</span>
           <textarea
             value={meta.context}
             onChange={(e) => setMeta({ ...meta, context: e.target.value })}
@@ -199,7 +199,7 @@ function Field({ label, value, onChange, placeholder, className, required }: {
 }) {
   return (
     <label className={cn("flex flex-col gap-1", className)}>
-      <span className="text-xs font-semibold uppercase tracking-widest text-taupe">{label}</span>
+      <span className="text-xs font-medium text-muted-foreground">{label}</span>
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}

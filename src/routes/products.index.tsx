@@ -162,12 +162,6 @@ export function ProductsPage() {
       <main className="px-6 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-              <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: ORANGE }} />
-              <span className="text-xs font-medium tracking-wide text-taupe">
-                BBE-School products
-              </span>
-            </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
               Our products
             </h1>

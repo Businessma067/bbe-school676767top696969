@@ -17,10 +17,7 @@ export function BbeExamSubnav() {
       className="border-b border-border/70 bg-background/90 backdrop-blur"
     >
       <div className="mx-auto max-w-6xl px-3 sm:px-6 lg:px-8">
-        <p className="pt-2.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground sm:pt-3.5">
-          BBE Exam
-        </p>
-        <ul className="-mx-0.5 flex gap-1 overflow-x-auto pb-2.5 pt-1.5 [scrollbar-width:none] sm:pb-3 sm:pt-2 [&::-webkit-scrollbar]:hidden">
+        <ul className="-mx-0.5 flex gap-1 overflow-x-auto py-2.5 [scrollbar-width:none] sm:py-3 [&::-webkit-scrollbar]:hidden">
           {BBE_EXAM_SUBNAV.map((item) => {
             const active =
               pathForActive === item.href ||

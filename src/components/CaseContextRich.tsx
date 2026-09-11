@@ -54,7 +54,7 @@ function CasePieChart({
   return (
     <div className="my-4 w-full rounded-lg border border-border bg-card/40 p-3 sm:p-4">
       {title ? (
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-taupe">{title}</p>
+        <p className="mb-3 text-sm font-semibold text-foreground">{title}</p>
       ) : null}
       <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:gap-6">
         <div className="mx-auto shrink-0 sm:mx-0" style={{ width: size, height: size }}>
@@ -192,7 +192,7 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
   return (
     <div className="my-4 w-full rounded-lg border border-border bg-card/40 p-3 sm:p-4">
       {title ? (
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-taupe">{title}</p>
+        <p className="mb-3 text-sm font-semibold text-foreground">{title}</p>
       ) : null}
       <div className="w-full" style={{ height }}>
         <ResponsiveContainer width="100%" height="100%" debounce={80}>

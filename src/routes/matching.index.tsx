@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { MatchingSubjectArt } from "@/components/study-modes/ModeArt";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
-import { Link2 } from "lucide-react";
 
 export const Route = createFileRoute("/matching/")({
   head: () => ({
@@ -33,12 +32,6 @@ function MatchingIndexPage() {
       <main className="px-6 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-              <Link2 className="h-3.5 w-3.5 text-caramel-deep" />
-              <span className="text-xs font-medium tracking-wide text-taupe">
-                Study mode · Matching
-              </span>
-            </div>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
               Matching
             </h1>

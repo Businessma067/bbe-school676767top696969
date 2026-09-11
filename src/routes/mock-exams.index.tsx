@@ -118,12 +118,6 @@ function MockExamsPage() {
       <SiteHeader compact maxWidthClassName="max-w-5xl" />
       <main className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
         <div className="mb-10">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-caramel-deep" />
-            <span className="text-xs font-medium tracking-wide text-taupe">
-              35 tasks · 160 points · wi2 scoring
-            </span>
-          </div>
           <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">Mock Exams</h1>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Full-length simulations of the WU BBE entrance exam. Same structure, same time limit,

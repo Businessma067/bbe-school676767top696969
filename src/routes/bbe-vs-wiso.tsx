@@ -576,7 +576,7 @@ function ExamStructureCharts() {
   return (
     <div className="mt-6 grid gap-4 lg:grid-cols-2">
       <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        <p className="text-sm font-semibold text-foreground">
           BBE approximate score weighting
         </p>
         <p className="mt-2 text-sm leading-relaxed text-foreground/80">
@@ -608,7 +608,7 @@ function ExamStructureCharts() {
       </div>
 
       <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        <p className="text-sm font-semibold text-foreground">
           Where the exams diverge
         </p>
         <p className="mt-2 text-sm leading-relaxed text-foreground/80">
@@ -642,7 +642,7 @@ function PlacesAndSelectivityVisual() {
     <div className="space-y-4">
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="text-sm font-semibold text-foreground">
             How many seats exist?
           </p>
           <p className="mt-2 text-sm leading-relaxed text-foreground/80">
@@ -668,7 +668,7 @@ function PlacesAndSelectivityVisual() {
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="text-sm font-semibold text-foreground">
             How many people compete for one seat?
           </p>
           <p className="mt-2 text-sm leading-relaxed text-foreground/80">

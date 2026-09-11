@@ -46,9 +46,6 @@ export function IntroSplash() {
           <span className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             BBE School
           </span>
-          <span className="mt-1 text-[11px] font-medium uppercase tracking-[0.28em] text-taupe sm:text-xs">
-            Be ready for everything
-          </span>
         </div>
       </div>
 

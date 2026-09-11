@@ -211,10 +211,7 @@ function DashboardPage() {
               {initial}
             </div>
             <div className="flex-1">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">
-                Dashboard
-              </p>
-              <h1 className="mt-0.5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 Welcome back, {auth.name}
               </h1>
             </div>
@@ -343,7 +340,7 @@ function CoursesTab({
           <div className="grid gap-3 sm:grid-cols-2">
             {enrollments.map((e) => (
               <div key={e.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                <p className="text-xs text-muted-foreground">
                   {e.tier} access
                 </p>
                 <h3 className="mt-1 font-display text-lg font-bold">{e.product_name}</h3>
@@ -391,7 +388,7 @@ function CoursesTab({
                 }
                 className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
+                <p className="text-xs text-muted-foreground">
                   {COURSE_CATALOG[slug].tier} access
                 </p>
                 <h3 className="mt-1 font-display text-base font-bold">
@@ -620,10 +617,7 @@ function GamesTab({ locked = false }: { locked?: boolean }) {
             <>
               <div className="h-32 w-full overflow-hidden">{card.art}</div>
               <div className="p-5">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-                  Study mode
-                </p>
-                <h3 className="mt-1 font-display text-lg font-bold">{card.title}</h3>
+                <h3 className="font-display text-lg font-bold">{card.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{card.blurb}</p>
                 <p className="mt-4 text-xs font-semibold text-caramel-deep">{card.cta}</p>
               </div>

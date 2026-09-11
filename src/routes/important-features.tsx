@@ -64,9 +64,6 @@ export function ImportantFeaturesPage() {
 
       <main className="mx-auto max-w-5xl px-6 py-12 lg:px-8 lg:py-16">
         <div className="mb-10 max-w-2xl">
-          <span className="mb-3 inline-block rounded-full border border-border bg-card px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-            Product Directory
-          </span>
           <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             BBE Exam Preparation Features
           </h1>

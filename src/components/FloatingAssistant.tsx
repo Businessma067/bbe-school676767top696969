@@ -184,7 +184,7 @@ export function FloatingAssistant() {
                   DB · {caseBadge(casePayload)}
                 </span>
               ) : (
-                <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                <span className="text-[10px] font-medium text-muted-foreground">
                   Case bank · site guide
                 </span>
               )}

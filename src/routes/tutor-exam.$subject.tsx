@@ -15,7 +15,7 @@ import {
   TUTOR_WRONG,
   type TutorExamQuestion,
 } from "@/lib/tutor-exam";
-import { Bot, Check, RotateCcw, Shuffle, X } from "lucide-react";
+import { Check, RotateCcw, Shuffle, X } from "lucide-react";
 
 export const Route = createFileRoute("/tutor-exam/$subject")({
   beforeLoad: ({ params }) => {
@@ -136,10 +136,6 @@ function TutorExamSubjectPage() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-taupe">
-                <Bot className="h-3.5 w-3.5 text-caramel-deep" />
-                Tutor Exam · {subject.title}
-              </div>
               <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">
                 Theory exam with Tutor Bot
               </h1>

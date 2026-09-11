@@ -16,7 +16,7 @@ import {
   type Flashcard,
   type FlashcardSection,
 } from "@/data/flashcards";
-import { Check, Link2, RotateCcw, Shuffle, X } from "lucide-react";
+import { Check, RotateCcw, Shuffle, X } from "lucide-react";
 
 export const Route = createFileRoute("/matching/$subject")({
   beforeLoad: ({ params }) => {
@@ -521,10 +521,6 @@ function MatchingSubjectPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-taupe">
-                <Link2 className="h-3.5 w-3.5 text-caramel-deep" />
-                Matching · {subject.title}
-              </div>
               <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">
                 Connect concept → meaning
               </h1>

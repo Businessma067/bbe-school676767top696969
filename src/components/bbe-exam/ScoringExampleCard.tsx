@@ -121,7 +121,7 @@ export function ScoringExampleCard({
             </p>
           </div>
           <div className="rounded-xl border border-border bg-background px-4 py-3 text-right shadow-sm">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+            <p className="text-xs font-medium text-muted-foreground">
               Task score
             </p>
             <p className="font-display text-2xl font-bold tabular-nums text-foreground">

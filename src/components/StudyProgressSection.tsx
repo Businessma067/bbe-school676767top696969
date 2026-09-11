@@ -29,10 +29,7 @@ export function StudyProgressSection({ tasks, mocks, sessionAnswers }: Props) {
     <section className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
       <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-taupe">
-            Consistency
-          </p>
-          <h2 className="mt-1 font-display text-xl font-bold tracking-tight sm:text-2xl">
+          <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">
             Study Progress
           </h2>
           <p className="mt-1 max-w-xl text-sm text-muted-foreground">

@@ -548,7 +548,7 @@ export function BbeEntranceExamHubPage() {
 function QuestionFormatVisual() {
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-      <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+      <p className="text-center text-sm font-semibold text-foreground">
         One stem
       </p>
       <div className="mx-auto mt-3 max-w-md rounded-xl border border-border bg-secondary/50 px-4 py-3 text-center text-sm font-medium text-foreground">

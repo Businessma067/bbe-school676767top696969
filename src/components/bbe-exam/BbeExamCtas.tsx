@@ -147,7 +147,7 @@ export function BbeInfoCallout({
 
   return (
     <aside className={cn("rounded-xl border px-4 py-3 sm:px-5 sm:py-4", toneClass)}>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+      <p className="text-sm font-semibold text-foreground">
         {label}
       </p>
       <div className="mt-2 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
