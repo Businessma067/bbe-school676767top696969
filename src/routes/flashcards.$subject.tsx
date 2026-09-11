@@ -682,7 +682,7 @@ function FlashcardSubjectPage() {
               type="button"
               onClick={() => rateCard("unknown")}
               disabled={!deck.length || busy}
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-red-500/30 bg-red-500/10 px-4 py-2.5 text-sm font-semibold text-red-700 hover:bg-red-500/15 disabled:opacity-40 sm:flex-none"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-red-500/30 bg-red-500/10 px-4 py-2.5 text-sm font-semibold text-red-700 hover:bg-red-500/15 disabled:opacity-40 dark:text-red-300 sm:flex-none"
             >
               <ThumbsDown className="h-4 w-4" />
               Don't know
@@ -702,7 +702,7 @@ function FlashcardSubjectPage() {
               type="button"
               onClick={() => rateCard("known")}
               disabled={!deck.length || busy}
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-emerald-500/30 bg-emerald-500/10 px-4 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-500/15 disabled:opacity-40 sm:flex-none"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-emerald-500/30 bg-emerald-500/10 px-4 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-500/15 disabled:opacity-40 dark:text-emerald-300 sm:flex-none"
             >
               <ThumbsUp className="h-4 w-4" />
               Know

@@ -403,7 +403,7 @@ export function BbeMathematicsPage() {
           <h2 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl">
             Prepare for BBE Mathematics
           </h2>
-          <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+          <p className="mt-2 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
             Work through the syllabus in order. Learn the question format. Then train yourself to solve
             accurately under time pressure.
           </p>
@@ -439,7 +439,7 @@ function TopicBlock({ title, children }: { title: string; children: ReactNode })
   return (
     <article className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
       <h3 className="font-display text-xl font-bold tracking-tight text-foreground">{title}</h3>
-      <div className="mt-3 space-y-3 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+      <div className="mt-3 space-y-3 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
         {children}
       </div>
     </article>
@@ -450,7 +450,7 @@ function DifferenceItem({ title, children }: { title: string; children: ReactNod
   return (
     <article className="rounded-xl border border-border bg-card p-5">
       <h3 className="font-display text-base font-semibold text-foreground">{title}</h3>
-      <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">{children}</p>
+      <p className="mt-2 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">{children}</p>
     </article>
   );
 }

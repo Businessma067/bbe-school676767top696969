@@ -50,16 +50,16 @@ function formatPoints(n: number) {
 function StatementCell({ item }: { item: StatementBreakdown }) {
   const tone =
     item.points > 0
-      ? "border-emerald-300/80 bg-emerald-50/90"
+      ? "border-emerald-300/80 bg-emerald-50/90 dark:border-emerald-800/60 dark:bg-emerald-950/40"
       : item.points < 0
-        ? "border-red-300/80 bg-red-50/90"
+        ? "border-red-300/80 bg-red-50/90 dark:border-red-800/60 dark:bg-red-950/40"
         : "border-border bg-secondary/30";
 
   const pointsTone =
     item.points > 0
-      ? "text-emerald-800"
+      ? "text-emerald-800 dark:text-emerald-300"
       : item.points < 0
-        ? "text-red-800"
+        ? "text-red-800 dark:text-red-300"
         : "text-muted-foreground";
 
   return (
@@ -71,7 +71,7 @@ function StatementCell({ item }: { item: StatementBreakdown }) {
         <span
           className={cn(
             "rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide",
-            item.isTrue ? "bg-emerald-100 text-emerald-900" : "bg-red-100 text-red-900",
+            item.isTrue ? "bg-emerald-100 text-emerald-900 dark:bg-emerald-950/70 dark:text-emerald-200" : "bg-red-100 text-red-900 dark:bg-red-950/70 dark:text-red-200",
           )}
         >
           {item.isTrue ? "True" : "False"}
@@ -150,23 +150,23 @@ export function ScoringExampleCard({
             <tbody className="text-foreground">
               <tr className="border-b border-border/70">
                 <td className="px-4 py-3">
-                  <span className="inline-flex items-center gap-1.5 text-emerald-800">
+                  <span className="inline-flex items-center gap-1.5 text-emerald-800 dark:text-emerald-300">
                     <Plus className="h-3.5 w-3.5" aria-hidden="true" />
                     Credit for correct marks
                   </span>
                 </td>
-                <td className="px-4 py-3 font-display font-bold tabular-nums text-emerald-800">
+                <td className="px-4 py-3 font-display font-bold tabular-nums text-emerald-800 dark:text-emerald-300">
                   +{earned.toFixed(1)}
                 </td>
               </tr>
               <tr className="border-b border-border/70">
                 <td className="px-4 py-3">
-                  <span className="inline-flex items-center gap-1.5 text-red-800">
+                  <span className="inline-flex items-center gap-1.5 text-red-800 dark:text-red-300">
                     <Minus className="h-3.5 w-3.5" aria-hidden="true" />
                     Penalties for wrong ticks
                   </span>
                 </td>
-                <td className="px-4 py-3 font-display font-bold tabular-nums text-red-800">
+                <td className="px-4 py-3 font-display font-bold tabular-nums text-red-800 dark:text-red-300">
                   {lost.toFixed(1)}
                 </td>
               </tr>
@@ -209,15 +209,15 @@ export function ScoringExamplesLegend({
         Each task below is worth <span className="font-medium text-foreground">{maxPoints} points</span>.
         The correct truth pattern is A, B, and D true; C and E false. With three true and two false
         statements, each correct true mark earns{" "}
-        <span className="font-medium text-emerald-800">+{perCorrect.toFixed(1)}</span> and each wrong
+        <span className="font-medium text-emerald-800 dark:text-emerald-300">+{perCorrect.toFixed(1)}</span> and each wrong
         tick on a false statement costs{" "}
-        <span className="font-medium text-red-800">−{perWrong.toFixed(1)}</span>.
+        <span className="font-medium text-red-800 dark:text-red-300">−{perWrong.toFixed(1)}</span>.
       </p>
       <div className="mt-4 flex flex-wrap gap-3 text-xs">
-        <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300/80 bg-emerald-50 px-3 py-1.5 font-medium text-emerald-900">
+        <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300/80 bg-emerald-50 px-3 py-1.5 font-medium text-emerald-900 dark:border-emerald-800/60 dark:bg-emerald-950/40 dark:text-emerald-200">
           Green: points added
         </span>
-        <span className="inline-flex items-center gap-2 rounded-full border border-red-300/80 bg-red-50 px-3 py-1.5 font-medium text-red-900">
+        <span className="inline-flex items-center gap-2 rounded-full border border-red-300/80 bg-red-50 px-3 py-1.5 font-medium text-red-900 dark:border-red-800/60 dark:bg-red-950/40 dark:text-red-200">
           Red: points deducted
         </span>
         <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-3 py-1.5 font-medium text-muted-foreground">

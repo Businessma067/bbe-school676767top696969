@@ -498,7 +498,7 @@ function SubjectSection({ stats }: { stats: SubjectStats }) {
                 <div className="flex items-center gap-2">
                   <p className="truncate text-sm font-semibold">{c.chapter}</p>
                   {needsReview && (
-                    <span className="inline-flex items-center gap-1 rounded-full border border-orange-400/40 bg-orange-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-orange-600">
+                    <span className="inline-flex items-center gap-1 rounded-full border border-orange-400/40 bg-orange-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-orange-600 dark:text-orange-300">
                       <AlertTriangle className="h-3 w-3" />
                       Needs review
                     </span>

@@ -233,8 +233,8 @@ export function BbeVsWisoPage() {
                 {comparisonRows.map((row) => (
                   <tr key={row.aspect} className="border-b border-border last:border-b-0">
                     <th className="px-4 py-3 align-top font-medium text-foreground">{row.aspect}</th>
-                    <td className="px-4 py-3 align-top text-neutral-800">{row.bbe}</td>
-                    <td className="px-4 py-3 align-top text-neutral-800">{row.wiso}</td>
+                    <td className="px-4 py-3 align-top text-foreground">{row.bbe}</td>
+                    <td className="px-4 py-3 align-top text-foreground">{row.wiso}</td>
                   </tr>
                 ))}
               </tbody>
@@ -296,14 +296,14 @@ export function BbeVsWisoPage() {
             problem of its own.
           </p>
           <div className="grid gap-4 lg:grid-cols-2">
-            <div className="rounded-2xl border border-orange-200/70 bg-orange-50/40 p-5">
+            <div className="rounded-2xl border border-orange-200/70 bg-orange-50/40 p-5 dark:border-orange-800/40 dark:bg-orange-950/25">
               <div className="flex items-center gap-2">
                 <PencilLine className="h-5 w-5 text-[#E85D3A]" />
                 <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
                   How BBE questions usually work
                 </h3>
               </div>
-              <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-neutral-800">
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-foreground">
                 <li>
                   One stem (scenario, claim, passage, or calculation) with several statements you
                   judge independently.
@@ -327,14 +327,14 @@ export function BbeVsWisoPage() {
                 <BbeTextLink to="/bbe-exam-scoring">BBE scoring explained →</BbeTextLink>
               </div>
             </div>
-            <div className="rounded-2xl border border-teal-200/70 bg-teal-50/40 p-5">
+            <div className="rounded-2xl border border-teal-200/70 bg-teal-50/40 p-5 dark:border-teal-800/40 dark:bg-teal-950/25">
               <div className="flex items-center gap-2">
                 <Languages className="h-5 w-5 text-teal-800" />
                 <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
                   How WISO questions usually differ
                 </h3>
               </div>
-              <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-neutral-800">
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-foreground">
                 <li>
                   Same broad pillars — economics/business basics, language, mathematics — but the
                   language tasks are in German, not English.
@@ -401,15 +401,15 @@ export function BbeVsWisoPage() {
                 key={card.title}
                 className={cn(
                   "rounded-2xl border px-5 py-5",
-                  card.tone === "bbe" && "border-orange-200/80 bg-orange-50/50",
-                  card.tone === "wiso" && "border-sky-200/80 bg-sky-50/60",
+                  card.tone === "bbe" && "border-orange-200/80 bg-orange-50/50 dark:border-orange-800/40 dark:bg-orange-950/25",
+                  card.tone === "wiso" && "border-sky-200/80 bg-sky-50/60 dark:border-sky-800/40 dark:bg-sky-950/25",
                   card.tone === "both" && "border-border bg-card",
                 )}
               >
                 <h3 className="font-display text-lg font-bold tracking-tight text-foreground">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-[1.02rem] leading-relaxed text-neutral-800">{card.body}</p>
+                <p className="mt-2 text-[1.02rem] leading-relaxed text-foreground">{card.body}</p>
               </div>
             ))}
           </div>
@@ -460,8 +460,8 @@ export function BbeVsWisoPage() {
                 ].map((row) => (
                   <tr key={row.area} className="border-b border-border last:border-b-0">
                     <th className="px-4 py-3 align-top font-medium text-foreground">{row.area}</th>
-                    <td className="px-4 py-3 align-top text-neutral-800">{row.transfers}</td>
-                    <td className="px-4 py-3 align-top text-neutral-800">{row.diff}</td>
+                    <td className="px-4 py-3 align-top text-foreground">{row.transfers}</td>
+                    <td className="px-4 py-3 align-top text-foreground">{row.diff}</td>
                   </tr>
                 ))}
               </tbody>
@@ -500,7 +500,7 @@ export function BbeVsWisoPage() {
               <dt className="font-semibold text-foreground">
                 “WISO is just the easy German version of BBE.”
               </dt>
-              <dd className="mt-1 text-neutral-800">
+              <dd className="mt-1 text-foreground">
                 Not accurate. WISO is a different programme with its own scale, language, and
                 curriculum options. It is less scarce on seats, but it is still a competitive WU
                 bachelor intake.
@@ -510,7 +510,7 @@ export function BbeVsWisoPage() {
               <dt className="font-semibold text-foreground">
                 “If I prepare for one exam, I am ready for both.”
               </dt>
-              <dd className="mt-1 text-neutral-800">
+              <dd className="mt-1 text-foreground">
                 Shared math and economics skills help, but the language section and ranking pools are
                 separate. Treat each registration as its own race.
               </dd>
@@ -519,7 +519,7 @@ export function BbeVsWisoPage() {
               <dt className="font-semibold text-foreground">
                 “BBE is only for international students.”
               </dt>
-              <dd className="mt-1 text-neutral-800">
+              <dd className="mt-1 text-foreground">
                 BBE is English-taught and attracts an international cohort, but eligibility depends on
                 WU’s official requirements — not on nationality alone.
               </dd>
@@ -536,7 +536,7 @@ export function BbeVsWisoPage() {
           <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
             Next steps if you choose BBE
           </h2>
-          <p className="mt-4 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+          <p className="mt-4 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
             If BBE is your target — or your parallel application — start with format literacy, then
             measure your baseline under exam-style statements. The free demo course shows how BBE
             School lessons and explanations feel; diagnostic mocks show where your score leaks first.
@@ -576,10 +576,10 @@ function ExamStructureCharts() {
   return (
     <div className="mt-6 grid gap-4 lg:grid-cols-2">
       <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
           BBE approximate score weighting
         </p>
-        <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+        <p className="mt-2 text-sm leading-relaxed text-foreground/80">
           From the most recent cycle’s section point totals — not the share of question counts.
         </p>
         <div className="mt-5 flex h-12 overflow-hidden rounded-xl">
@@ -597,7 +597,7 @@ function ExamStructureCharts() {
             </div>
           ))}
         </div>
-        <ul className="mt-4 space-y-1.5 text-sm text-neutral-700">
+        <ul className="mt-4 space-y-1.5 text-sm text-foreground/80">
           {segments.map((seg) => (
             <li key={seg.label} className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full" style={{ background: seg.color }} />
@@ -608,26 +608,26 @@ function ExamStructureCharts() {
       </div>
 
       <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
           Where the exams diverge
         </p>
-        <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+        <p className="mt-2 text-sm leading-relaxed text-foreground/80">
           Shared pillars sit in the middle. Language is the fork that decides most of your prep plan.
         </p>
         <div className="mt-5 space-y-3">
           <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 text-center text-sm font-semibold">
-            <span className="rounded-lg bg-orange-100 px-3 py-3 text-[#C2410C]">BBE · English</span>
-            <span className="text-xs font-medium text-neutral-500">vs</span>
-            <span className="rounded-lg bg-teal-100 px-3 py-3 text-teal-900">WISO · German</span>
+            <span className="rounded-lg bg-orange-100 px-3 py-3 text-[#C2410C] dark:bg-orange-950/50 dark:text-orange-300">BBE · English</span>
+            <span className="text-xs font-medium text-muted-foreground">vs</span>
+            <span className="rounded-lg bg-teal-100 px-3 py-3 text-teal-900 dark:bg-teal-950/50 dark:text-teal-200">WISO · German</span>
           </div>
           <div className="rounded-lg border border-dashed border-border bg-secondary/40 px-3 py-3 text-center text-sm font-medium text-foreground">
             Shared: mathematics + economics / business basics
           </div>
-          <div className="grid grid-cols-2 gap-2 text-xs text-neutral-600">
-            <p className="rounded-md bg-orange-50/80 px-3 py-2">
+          <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
+            <p className="rounded-md bg-orange-50/80 px-3 py-2 dark:bg-orange-950/40">
               Train English reading, grammar, and vocabulary under BBE statement style.
             </p>
-            <p className="rounded-md bg-teal-50/80 px-3 py-2">
+            <p className="rounded-md bg-teal-50/80 px-3 py-2 dark:bg-teal-950/40">
               Train German comprehension for the WISO language section.
             </p>
           </div>
@@ -642,10 +642,10 @@ function PlacesAndSelectivityVisual() {
     <div className="space-y-4">
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
             How many seats exist?
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+          <p className="mt-2 text-sm leading-relaxed text-foreground/80">
             Each block below is drawn to scale. WISO has about {PLACE_MULTIPLIER}× as many places as
             BBE.
           </p>
@@ -668,10 +668,10 @@ function PlacesAndSelectivityVisual() {
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
             How many people compete for one seat?
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+          <p className="mt-2 text-sm leading-relaxed text-foreground/80">
             Read it as: “for every 1 place, about this many eligible applicants.”
           </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -695,8 +695,8 @@ function PlacesAndSelectivityVisual() {
         </div>
       </div>
 
-      <div className="rounded-2xl border border-amber-200/80 bg-amber-50/70 px-5 py-4">
-        <p className="text-[1.02rem] leading-relaxed text-neutral-800">
+      <div className="rounded-2xl border border-amber-200/80 bg-amber-50/70 px-5 py-4 dark:border-amber-800/40 dark:bg-amber-950/25">
+        <p className="text-[1.02rem] leading-relaxed text-foreground">
           Plain reading: BBE is the scarcer seat. WISO draws more total applicants, but spreads them
           across far more places — so each WISO seat is less contested than each BBE seat.
         </p>
@@ -723,7 +723,7 @@ function ScaleBar({
       <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
         <div>
           <span className="text-sm font-semibold text-foreground">{label}</span>
-          <span className="ml-2 text-xs text-neutral-600">{note}</span>
+          <span className="ml-2 text-xs text-muted-foreground">{note}</span>
         </div>
         <span className="font-display text-xl font-bold tabular-nums text-foreground">{valueLabel}</span>
       </div>
@@ -756,20 +756,20 @@ function CompetitionCard({
     <div
       className={cn(
         "rounded-xl border px-4 py-4",
-        tone === "bbe" ? "border-orange-200/80 bg-orange-50/50" : "border-teal-200/80 bg-teal-50/50",
+        tone === "bbe" ? "border-orange-200/80 bg-orange-50/50 dark:border-orange-800/40 dark:bg-orange-950/25" : "border-teal-200/80 bg-teal-50/50 dark:border-teal-800/40 dark:bg-teal-950/25",
       )}
     >
       <p className="text-sm font-semibold text-foreground">{title}</p>
       <p className="mt-1 font-display text-3xl font-bold tracking-tight" style={{ color }}>
         {ratio}
       </p>
-      <p className="mt-1 text-xs leading-snug text-neutral-600">{subtitle}</p>
+      <p className="mt-1 text-xs leading-snug text-muted-foreground">{subtitle}</p>
       <div className="mt-4 flex flex-wrap gap-1.5" aria-hidden>
         <span
-          className="inline-flex h-3.5 w-3.5 items-center justify-center rounded-sm border-2 border-foreground/70 bg-white"
+          className="inline-flex h-3.5 w-3.5 items-center justify-center rounded-sm border-2 border-foreground/70 bg-card"
           title="1 place"
         />
-        <span className="px-0.5 text-[10px] font-medium text-neutral-500">vs</span>
+        <span className="px-0.5 text-[10px] font-medium text-muted-foreground">vs</span>
         {Array.from({ length: dots }).map((_, i) => (
           <span
             key={i}
@@ -778,7 +778,7 @@ function CompetitionCard({
           />
         ))}
       </div>
-      <p className="mt-2 text-[11px] text-neutral-600">1 seat · each dot ≈ one competitor</p>
+      <p className="mt-2 text-[11px] text-muted-foreground">1 seat · each dot ≈ one competitor</p>
     </div>
   );
 }
@@ -798,21 +798,21 @@ function SubjectCard({
     <div
       className={cn(
         "rounded-2xl border bg-card p-5 shadow-sm",
-        accent === "bbe" ? "border-orange-200/70" : "border-teal-200/70",
+        accent === "bbe" ? "border-orange-200/70 dark:border-orange-800/40" : "border-teal-200/70 dark:border-teal-800/40",
       )}
     >
       <div className="flex items-center gap-2 text-foreground">
         <span
           className={cn(
             "inline-flex h-9 w-9 items-center justify-center rounded-full",
-            accent === "bbe" ? "bg-orange-100 text-[#E85D3A]" : "bg-teal-100 text-teal-800",
+            accent === "bbe" ? "bg-orange-100 text-[#E85D3A] dark:bg-orange-950/50 dark:text-orange-300" : "bg-teal-100 text-teal-800 dark:bg-teal-950/50 dark:text-teal-200",
           )}
         >
           {icon}
         </span>
         <h3 className="font-display text-lg font-bold tracking-tight">{title}</h3>
       </div>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-neutral-800">
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-[1.02rem] leading-relaxed text-foreground">
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}

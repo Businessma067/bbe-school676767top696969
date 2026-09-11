@@ -152,7 +152,7 @@ function AdminForm() {
                   onChange={(e) => setAnswers(answers.map((a, idx) => (idx === i ? e.target.checked : a)))}
                   className="h-4 w-4 rounded border-border"
                 />
-                Answer key: <span className={cn("rounded px-2 py-0.5 font-bold", answers[i] ? "bg-emerald-500/15 text-emerald-700" : "bg-destructive/15 text-destructive")}>{answers[i] ? "TRUE" : "FALSE"}</span>
+                Answer key: <span className={cn("rounded px-2 py-0.5 font-bold", answers[i] ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" : "bg-destructive/15 text-destructive")}>{answers[i] ? "TRUE" : "FALSE"}</span>
               </label>
             </div>
             <textarea

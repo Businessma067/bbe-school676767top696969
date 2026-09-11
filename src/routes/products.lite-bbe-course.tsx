@@ -206,11 +206,11 @@ export function LiteBbeCourseProduct() {
             Light BBE Course
           </h1>
 
-          <div className="overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
+          <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
             <img
               src={LITE_COURSE_IMAGE}
               alt="Light BBE Course"
-              className="w-full object-contain"
+              className="absolute inset-0 h-full w-full object-cover object-center"
               draggable={false}
             />
           </div>

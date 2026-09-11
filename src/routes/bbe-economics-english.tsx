@@ -287,7 +287,7 @@ function SubjectCard({
         </span>
         <div className="min-w-0 space-y-3">
           <h3 className="font-display text-lg font-bold tracking-tight text-foreground">{title}</h3>
-          <div className="space-y-3 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+          <div className="space-y-3 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
             {children}
           </div>
         </div>

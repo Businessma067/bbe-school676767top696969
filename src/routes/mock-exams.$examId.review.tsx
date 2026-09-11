@@ -461,8 +461,8 @@ function TaskReviewWorkspace({
                 className={cn(
                   "relative flex h-8 w-8 items-center justify-center rounded-md border text-xs font-semibold transition-colors",
                   isCurrent && "ring-2 ring-foreground/30 ring-offset-2 ring-offset-card",
-                  allCorrect && !isCurrent && "border-emerald-500/50 bg-emerald-500/15 text-emerald-800",
-                  anyWrong && !allCorrect && !isCurrent && "border-red-500/40 bg-red-500/10 text-red-800",
+                  allCorrect && !isCurrent && "border-emerald-500/50 bg-emerald-500/15 text-emerald-800 dark:text-emerald-300",
+                  anyWrong && !allCorrect && !isCurrent && "border-red-500/40 bg-red-500/10 text-red-800 dark:text-red-300",
                   isCurrent && allCorrect && "border-emerald-700 bg-emerald-600 text-white",
                   isCurrent && anyWrong && !allCorrect && "border-red-700 bg-red-600 text-white",
                   isCurrent && !allCorrect && !anyWrong && "border-foreground bg-foreground text-background",

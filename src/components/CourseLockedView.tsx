@@ -310,7 +310,7 @@ function SubjectsShell({
           >
             <div
               className="flex h-28 items-center justify-center"
-              style={{ background: `${s.accent}18` }}
+              style={{ background: `color-mix(in oklab, ${s.accent} 16%, var(--card))` }}
             >
               <Icon className="h-8 w-8" style={{ color: s.accent }} />
             </div>
@@ -359,7 +359,7 @@ function StudyToolsShell({ compact = false }: { compact?: boolean }) {
             key={tool.title}
             className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
           >
-            <div className="h-24" style={{ background: `${tool.accent}22` }} />
+            <div className="h-24" style={{ background: `color-mix(in oklab, ${tool.accent} 18%, var(--card))` }} />
             <div className="p-5">
               <h3 className="font-display text-lg font-bold">{tool.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{tool.blurb}</p>

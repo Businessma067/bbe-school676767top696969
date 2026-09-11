@@ -63,14 +63,14 @@ export function accuracyToLevel(accuracy: number | null): 0 | 1 | 2 | 3 | 4 | 5 
 
 /** Seven orange intensity shades + idle gray — brand caramel family. */
 export const HEATMAP_LEVEL_COLORS: Record<0 | 1 | 2 | 3 | 4 | 5 | 6 | 7, string> = {
-  0: "#e9e9e9",
-  1: "#fde8d0",
-  2: "#f7c894",
-  3: "#efaa62",
-  4: "#e48c3d",
-  5: "#d47328",
-  6: "#c45f1a",
-  7: "#a34a12",
+  0: "var(--heat-0)",
+  1: "var(--heat-1)",
+  2: "var(--heat-2)",
+  3: "var(--heat-3)",
+  4: "var(--heat-4)",
+  5: "var(--heat-5)",
+  6: "var(--heat-6)",
+  7: "var(--heat-7)",
 };
 
 export async function fetchSessionAnswerStats(sinceIso?: string): Promise<SessionAnswerStat[]> {

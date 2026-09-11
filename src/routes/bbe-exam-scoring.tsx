@@ -195,7 +195,7 @@ export function BbeExamScoringPage() {
                   <th className="px-4 py-3 font-semibold">Max / task</th>
                 </tr>
               </thead>
-              <tbody className="text-neutral-800">
+              <tbody className="text-foreground">
                 <tr className="border-t border-border">
                   <td className="px-4 py-3 text-foreground">Economics &amp; Business</td>
                   <td className="px-4 py-3">{SCORING_CONFIG.economics.taskCount}</td>
@@ -225,7 +225,7 @@ export function BbeExamScoringPage() {
               </tbody>
             </table>
           </div>
-          <div className="mt-4 space-y-3 rounded-2xl border border-border bg-secondary/20 px-4 py-4 text-sm text-neutral-800">
+          <div className="mt-4 space-y-3 rounded-2xl border border-border bg-secondary/20 px-4 py-4 text-sm text-foreground">
             <p>
               <span className="font-medium text-foreground">Mathematics points per question:</span>{" "}
               {MATH_POINTS_LABEL} (sum {SCORING_CONFIG.math.totalPoints}).

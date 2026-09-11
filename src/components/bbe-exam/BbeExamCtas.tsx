@@ -116,7 +116,7 @@ export function BbeDemoCta({
       <h3 className="font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
         {title}
       </h3>
-      <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+      <p className="mt-2 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
         {body}
       </p>
       <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -140,17 +140,17 @@ export function BbeInfoCallout({
 }) {
   const toneClass =
     tone === "official"
-      ? "border-sky-200 bg-sky-50/80"
+      ? "border-sky-200 bg-sky-50/80 dark:border-sky-800/50 dark:bg-sky-950/30"
       : tone === "advice"
-        ? "border-amber-200 bg-amber-50/70"
+        ? "border-amber-200 bg-amber-50/70 dark:border-amber-800/50 dark:bg-amber-950/30"
         : "border-border bg-secondary/40";
 
   return (
     <aside className={cn("rounded-xl border px-4 py-3 sm:px-5 sm:py-4", toneClass)}>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-neutral-600">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
         {label}
       </p>
-      <div className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]">
+      <div className="mt-2 text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]">
         {children}
       </div>
     </aside>

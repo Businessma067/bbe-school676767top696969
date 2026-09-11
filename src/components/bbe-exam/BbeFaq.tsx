@@ -8,7 +8,7 @@ export function BbeFaqAccordion({ faqs }: { faqs: BbeFaqItem[] }) {
       className="mt-2"
       items={faqs}
       questionClassName="text-[1.0625rem] sm:text-lg"
-      answerClassName="text-[1.0625rem] leading-relaxed text-neutral-800 sm:text-[1.125rem]"
+      answerClassName="text-[1.0625rem] leading-relaxed text-foreground sm:text-[1.125rem]"
     />
   );
 }

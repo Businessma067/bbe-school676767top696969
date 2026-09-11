@@ -256,7 +256,7 @@ function DateTable({ rows }: { rows: { field: string; detail: ReactNode }[] }) {
             )}
           >
             <dt className="text-[0.975rem] font-semibold text-foreground">{row.field}</dt>
-            <dd className="text-[0.975rem] leading-relaxed text-neutral-800 sm:text-[1.0625rem]">
+            <dd className="text-[0.975rem] leading-relaxed text-foreground sm:text-[1.0625rem]">
               {row.detail}
             </dd>
           </div>

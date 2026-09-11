@@ -212,7 +212,7 @@ export function ProductsPage() {
                     </span>
                   )}
                   <div
-                    className={`relative flex min-h-[200px] items-center justify-center overflow-hidden bg-secondary sm:min-h-[220px] ${
+                    className={`relative aspect-[4/3] w-full overflow-hidden bg-secondary ${
                       p.badge ? "rounded-t-[14px]" : "rounded-t-2xl"
                     }`}
                   >
@@ -220,7 +220,7 @@ export function ProductsPage() {
                       src={p.image}
                       alt={p.title}
                       loading="lazy"
-                      className="max-h-[240px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:max-h-[280px]"
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                     />
                   </div>
                   <div className="flex flex-1 flex-col p-6">

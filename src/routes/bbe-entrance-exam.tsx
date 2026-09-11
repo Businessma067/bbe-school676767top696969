@@ -253,7 +253,7 @@ export function BbeEntranceExamHubPage() {
                   )}
                 >
                   <dt className="text-[0.975rem] font-semibold text-foreground">{row.field}</dt>
-                  <dd className="text-[0.975rem] leading-relaxed text-neutral-800 sm:text-[1.0625rem]">
+                  <dd className="text-[0.975rem] leading-relaxed text-foreground sm:text-[1.0625rem]">
                     {row.detail}
                   </dd>
                 </div>
@@ -315,7 +315,7 @@ export function BbeEntranceExamHubPage() {
                   <th className="px-4 py-3 font-semibold">Approx. score weighting</th>
                 </tr>
               </thead>
-              <tbody className="text-neutral-800">
+              <tbody className="text-foreground">
                 <tr className="border-t border-border">
                   <td className="px-4 py-3 text-foreground">Economics &amp; Business</td>
                   <td className="px-4 py-3">{BBE_EXAM_FORMAT.economicsQuestions}</td>
@@ -409,7 +409,7 @@ export function BbeEntranceExamHubPage() {
               <p className="font-display text-base font-semibold text-foreground">
                 Mathematics: high preparation demand
               </p>
-              <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800">
+              <p className="mt-2 text-[1.0625rem] leading-relaxed text-foreground">
                 Wide-ranging topics and yearly variation in question style mean volume and variety of
                 practice matter more than memorizing fixed problem types.
               </p>
@@ -418,7 +418,7 @@ export function BbeEntranceExamHubPage() {
               <p className="font-display text-base font-semibold text-foreground">
                 Economics: concept- and wording-focused
               </p>
-              <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800">
+              <p className="mt-2 text-[1.0625rem] leading-relaxed text-foreground">
                 The material is bounded to one required text, but exam statements hinge on precise phrasing.
               </p>
             </li>
@@ -426,7 +426,7 @@ export function BbeEntranceExamHubPage() {
               <p className="font-display text-base font-semibold text-foreground">
                 English: proficiency- and speed-focused
               </p>
-              <p className="mt-2 text-[1.0625rem] leading-relaxed text-neutral-800">
+              <p className="mt-2 text-[1.0625rem] leading-relaxed text-foreground">
                 Harder to prepare for with a fixed syllabus; reading speed and vocabulary help most.
               </p>
             </li>
@@ -587,7 +587,7 @@ function SampleOption({ option }: { option: (typeof sampleOptions)[number] }) {
         <span
           className={cn(
             "inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide",
-            option.answer === "True" ? "bg-emerald-50 text-emerald-800" : "bg-red-50 text-red-800",
+            option.answer === "True" ? "bg-emerald-50 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300" : "bg-red-50 text-red-800 dark:bg-red-950/50 dark:text-red-300",
           )}
         >
           {option.answer === "True" ? (

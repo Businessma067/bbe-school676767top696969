@@ -107,7 +107,7 @@ function Stat({
       <div className="text-[10px] font-semibold uppercase tracking-widest text-taupe">{label}</div>
       <div
         className={`mt-1 font-display text-2xl font-bold tabular-nums ${
-          warn ? "text-orange-600" : accent ? "text-caramel-deep" : ""
+          warn ? "text-orange-600 dark:text-orange-300" : accent ? "text-caramel-deep" : ""
         }`}
       >
         {value}
@@ -138,7 +138,7 @@ function JumpList({
             onClick={() => onJump(q.index - 1)}
             className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-sm font-semibold transition-colors hover:bg-secondary"
           >
-            {flagged && <Flag className="h-3 w-3 text-orange-600" aria-hidden />}
+            {flagged && <Flag className="h-3 w-3 text-orange-600 dark:text-orange-300" aria-hidden />}
             Q{q.index}
           </button>
         ))}

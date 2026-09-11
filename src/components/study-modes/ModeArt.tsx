@@ -2,14 +2,14 @@ import type { ReactNode } from "react";
 import type { FlashcardSubjectId } from "@/data/flashcards";
 
 const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
-  economics: "#f3e6d4",
-  math: "#dceee6",
-  english: "#d9e8f2",
+  economics: "var(--art-economics)",
+  math: "var(--art-math)",
+  english: "var(--art-english)",
 };
 
 /** Fixed square card — same size on every subject (matches English proportions). */
 const PREVIEW_CARD_SQUARE =
-  "flex h-[7rem] w-[7rem] shrink-0 flex-col items-center justify-center rounded-2xl border-[1.5px] border-foreground/35 bg-card px-2.5 sm:h-[7.5rem] sm:w-[7.5rem]";
+  "flex h-[7rem] w-[7rem] shrink-0 flex-col items-center justify-center rounded-2xl border border-border bg-card px-2.5 sm:h-[7.5rem] sm:w-[7.5rem]";
 
 const PREVIEW_TEXT_SLOT =
   "mt-2.5 flex h-9 w-full items-center justify-center text-center font-display text-xs font-bold leading-tight text-foreground sm:text-sm";
@@ -194,7 +194,7 @@ function MiniCard({
   sample: string;
 }) {
   return (
-    <div className="flex h-[4.75rem] w-[3.85rem] flex-col items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-card px-1 py-2 sm:h-[5.25rem] sm:w-[3.85rem]">
+    <div className="flex h-[4.75rem] w-[3.85rem] flex-col items-center justify-center rounded-lg border border-border bg-card px-1 py-2 sm:h-[5.25rem] sm:w-[3.85rem]">
       <SubjectGlyph subject={subject} className="h-5 w-5 shrink-0 text-foreground" />
       <span className="mt-1.5 line-clamp-2 flex h-7 w-full items-center justify-center px-0.5 text-center text-[7px] font-semibold leading-tight text-foreground">
         {sample}
@@ -257,7 +257,7 @@ function MatchingPairs({
     <div className={"flex min-w-0 flex-col gap-1 " + PREVIEW_PAIRS_WIDTH}>
       {pairs.map(([left, right]) => (
         <div key={left} className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-1">
-          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border-[1.5px] border-foreground/30 bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
+          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border border-border bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
             <span className="truncate">{left}</span>
           </span>
           <span
@@ -267,7 +267,7 @@ function MatchingPairs({
           >
             →
           </span>
-          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border-[1.5px] border-foreground/30 bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
+          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border border-border bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
             <span className="truncate">{right}</span>
           </span>
         </div>
@@ -321,7 +321,7 @@ function TutorRobot({
       <span className="mb-0.5 h-1.5 w-px bg-foreground/80" />
       <div
         className={
-          "flex flex-col items-center justify-center rounded-xl border-[1.5px] border-foreground/35 bg-card " +
+          "flex flex-col items-center justify-center rounded-xl border border-border bg-card " +
           head
         }
       >
@@ -333,7 +333,7 @@ function TutorRobot({
       </div>
       <div
         className={
-          "mt-0.5 flex items-center justify-center rounded-lg border-[1.5px] border-foreground/35 bg-card " +
+          "mt-0.5 flex items-center justify-center rounded-lg border border-border bg-card " +
           body
         }
       >
@@ -360,9 +360,9 @@ function TutorQuizPreview({
   return (
     <div className={"flex items-center gap-2.5 " + PREVIEW_PAIRS_WIDTH}>
       <TutorRobot accent={accent} compact />
-      <div className="relative min-w-0 flex-1 rounded-xl border-[1.5px] border-foreground/30 bg-card px-2.5 py-2">
+      <div className="relative min-w-0 flex-1 rounded-xl border border-border bg-card px-2.5 py-2">
         <span
-          className="absolute -left-1 top-4 h-2.5 w-2.5 rotate-45 border-b border-l border-foreground/30 bg-card"
+          className="absolute -left-1 top-4 h-2.5 w-2.5 rotate-45 border-b border-l border-border bg-card"
           aria-hidden
         />
         <p className="line-clamp-2 font-display text-[10px] font-bold leading-snug text-foreground sm:text-[11px]">
@@ -376,7 +376,7 @@ function TutorQuizPreview({
                 "flex min-h-[1.125rem] min-w-0 items-center overflow-hidden rounded-md border-[1.5px] px-1.5 py-0.5 text-[8px] font-semibold leading-none sm:text-[9px] " +
                 (i === correct
                   ? "border-transparent text-white"
-                  : "border-foreground/25 bg-card text-foreground")
+                  : "border-border bg-card text-foreground")
               }
               style={i === correct ? { backgroundColor: accent } : undefined}
             >
@@ -407,9 +407,9 @@ export function TutorModeArt({
       }
     >
       <TutorRobot accent={accent} />
-      <div className="relative min-w-0 max-w-[11rem] flex-1 rounded-xl border-[1.5px] border-foreground/30 bg-card px-3 py-2">
+      <div className="relative min-w-0 max-w-[11rem] flex-1 rounded-xl border border-border bg-card px-3 py-2">
         <span
-          className="absolute -left-1.5 top-5 h-3 w-3 rotate-45 border-b border-l border-foreground/30 bg-card"
+          className="absolute -left-1.5 top-5 h-3 w-3 rotate-45 border-b border-l border-border bg-card"
           aria-hidden
         />
         <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">

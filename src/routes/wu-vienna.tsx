@@ -46,9 +46,9 @@ const IMAGES = {
 } as const;
 
 const CHART = {
-  ink: "#161616",
-  muted: "#5A584F",
-  border: "#D8D6CE",
+  ink: "var(--foreground)",
+  muted: "var(--muted-foreground)",
+  border: "var(--border)",
   red: "#B3392A",
   amber: "#D97706",
   slate: "#3F3F46",
@@ -450,7 +450,7 @@ export function WuViennaOverviewPage() {
                     <th scope="row" className="px-4 py-3 align-top font-medium text-foreground">
                       {row.ranking}
                     </th>
-                    <td className="px-4 py-3 align-top text-neutral-800">{row.result}</td>
+                    <td className="px-4 py-3 align-top text-foreground">{row.result}</td>
                   </tr>
                 ))}
               </tbody>
@@ -486,7 +486,7 @@ export function WuViennaOverviewPage() {
                         {program.language}
                       </span>
                     </div>
-                    <p className="mt-2 text-[0.98rem] leading-relaxed text-neutral-800">{program.note}</p>
+                    <p className="mt-2 text-[0.98rem] leading-relaxed text-foreground">{program.note}</p>
                   </li>
                 ))}
               </ul>
@@ -519,7 +519,7 @@ export function WuViennaOverviewPage() {
                 </PieChart>
                 <ul className="space-y-2 text-sm">
                   {PROGRAM_MIX.map((slice) => (
-                    <li key={slice.name} className="flex items-center gap-2 text-neutral-800">
+                    <li key={slice.name} className="flex items-center gap-2 text-foreground">
                       <span
                         className="h-2.5 w-2.5 shrink-0 rounded-full"
                         style={{ backgroundColor: slice.fill }}
@@ -564,7 +564,7 @@ export function WuViennaOverviewPage() {
               {MASTER_HIGHLIGHTS.map((name) => (
                 <li
                   key={name}
-                  className="rounded-full border border-border bg-card px-3 py-1.5 text-sm text-neutral-800 shadow-sm"
+                  className="rounded-full border border-border bg-card px-3 py-1.5 text-sm text-foreground shadow-sm"
                 >
                   {name}
                 </li>
@@ -633,7 +633,7 @@ export function WuViennaOverviewPage() {
             ].map((card) => (
               <div key={card.title} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
                 <h3 className="font-display text-lg font-bold text-foreground">{card.title}</h3>
-                <p className="mt-2 text-[0.98rem] leading-relaxed text-neutral-800">{card.body}</p>
+                <p className="mt-2 text-[0.98rem] leading-relaxed text-foreground">{card.body}</p>
               </div>
             ))}
           </div>
@@ -681,7 +681,7 @@ export function WuViennaOverviewPage() {
 }
 
 const tooltipStyle = {
-  background: "#fff",
+  background: "var(--popover)",
   border: `1px solid ${CHART.border}`,
   borderRadius: 12,
   color: CHART.ink,

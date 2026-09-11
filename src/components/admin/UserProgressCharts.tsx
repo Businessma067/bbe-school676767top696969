@@ -15,10 +15,10 @@ import {
 } from "recharts";
 import type { AdminUserDetail } from "@/lib/admin-types";
 
-const INK = "#111111";
-const MUTED = "#737373";
-const GRID = "#E5E5E5";
-const FILL = "rgba(17,17,17,0.12)";
+const INK = "var(--foreground)";
+const MUTED = "var(--muted-foreground)";
+const GRID = "var(--border)";
+const FILL = "color-mix(in oklab, var(--foreground) 12%, transparent)";
 
 type DayPoint = {
   day: string;
@@ -147,12 +147,12 @@ function EmptyChart({ label }: { label: string }) {
 
 function tipStyle(): CSSProperties {
   return {
-    background: "#FFFFFF",
-    border: "1px solid #E5E5E5",
+    background: "var(--popover)",
+    border: "1px solid var(--border)",
     borderRadius: 12,
     fontSize: 12,
     color: INK,
-    boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+    boxShadow: "0 8px 24px color-mix(in oklab, var(--foreground) 12%, transparent)",
   };
 }
 
