@@ -45,6 +45,8 @@ export async function createMonoInvoice(input: {
   redirectUrl: string;
   webHookUrl?: string;
   basketName?: string;
+  /** Public HTTPS URL for the cart-item thumbnail on pay.monobank.ua. */
+  basketIconUrl?: string;
 }): Promise<{ invoiceId: string; pageUrl: string }> {
   const ccy = input.ccy ?? 978;
   const res = await fetch(`${MONO_API}/invoice/create`, {
@@ -65,6 +67,7 @@ export async function createMonoInvoice(input: {
             qty: 1,
             sum: input.amountMinor,
             unit: "шт.",
+            ...(input.basketIconUrl ? { icon: input.basketIconUrl } : {}),
           },
         ],
       },

@@ -87,6 +87,8 @@ export const createCheckout = createServerFn({ method: "POST" })
       const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
       const reference = `${slug}:${context.userId}:${Date.now()}`;
+      // Square black BBE logo reads cleanly in Monobank's small cart thumbnail
+      // (course banners are landscape and get cropped badly there).
       const { invoiceId, pageUrl } = await createMonoInvoice({
         amountMinor,
         ccy: MONOBANK_CURRENCY_EUR,
@@ -94,6 +96,9 @@ export const createCheckout = createServerFn({ method: "POST" })
         reference,
         redirectUrl: `${origin}/payment-result`,
         webHookUrl: `${origin}/api/public/payment/webhook`,
+        basketName: product.name,
+        // Prefer the production host so Monobank can fetch the icon even from previews.
+        basketIconUrl: "https://bbe-school.com/logo.png",
       });
 
       const email = typeof context.claims.email === "string" ? context.claims.email : null;
