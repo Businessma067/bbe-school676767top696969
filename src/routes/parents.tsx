@@ -250,7 +250,7 @@ export function ParentsPage() {
             </div>
           </div>
 
-          <div className="mt-10 rounded-2xl border border-[#C2643A]/30 bg-gradient-to-br from-[#fff7f0] to-[#ffe9d6] p-6 shadow-sm sm:p-8">
+          <div className="mt-10 rounded-2xl border border-[#C2643A]/30 bg-gradient-to-br from-[#fff7f0] to-[#ffe9d6] p-6 shadow-sm dark:from-[#2c2218] dark:to-[#241c14] sm:p-8">
             <p className="text-sm font-semibold uppercase tracking-widest text-[#C2643A]">
               The bottom line
             </p>

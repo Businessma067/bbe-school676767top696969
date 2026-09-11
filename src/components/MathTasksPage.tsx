@@ -1465,7 +1465,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
   return (
     <div
       className={cn(
-        "font-expl text-[15px] leading-[1.6] text-[#1f1f1f] sm:text-[15.5px]",
+        "font-expl text-[15px] leading-[1.6] text-foreground sm:text-[15.5px]",
         "[&_.katex]:text-[1.12em]",
         className,
       )}
@@ -1475,7 +1475,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
           return (
             <h4
               key={idx}
-              className="mb-3 mt-9 text-[16.5px] font-bold leading-snug tracking-tight text-[#111] first:mt-0 sm:text-[17.5px]"
+              className="mb-3 mt-9 text-[16.5px] font-bold leading-snug tracking-tight text-foreground first:mt-0 sm:text-[17.5px]"
             >
               {chunk.title}
             </h4>
@@ -1485,7 +1485,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
         if (chunk.kind === "sectionLead") {
           return (
             <div key={idx} className="mb-5 mt-6 first:mt-0">
-              <p className="mb-1 font-bold leading-snug text-[#111]">
+              <p className="mb-1 font-bold leading-snug text-foreground">
                 <RichMathLine text={chunk.title} />
               </p>
               <p className="m-0 leading-[1.65]">
@@ -1499,7 +1499,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
           return (
             <aside
               key={idx}
-              className="my-6 border-l-[3px] border-[#c4c4c4] py-1.5 pl-4 text-[14.5px] font-semibold italic leading-[1.6] text-[#2a2a2a]"
+              className="my-6 border-l-[3px] border-border py-1.5 pl-4 text-[14.5px] font-semibold italic leading-[1.6] text-foreground/90"
             >
               <span className="font-bold">Note: </span>
               <RichMathLine text={chunk.body} />
@@ -1510,7 +1510,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
         if (chunk.kind === "bullet") {
           return (
             <div key={idx} className="mb-1.5 flex gap-2.5 leading-[1.65]">
-              <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#1f1f1f]" />
+              <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground" />
               <p className="m-0 min-w-0 flex-1">
                 <RichMathLine text={chunk.body} />
               </p>
@@ -1522,7 +1522,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
           return (
             <p
               key={idx}
-              className="mb-3 mt-10 text-[15.5px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[16.5px]"
+              className="mb-3 mt-10 text-[15.5px] font-bold leading-snug text-foreground first:mt-0 sm:text-[16.5px]"
             >
               <RichMathLine text={chunk.text} />
             </p>
@@ -1535,7 +1535,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
               key={idx}
               className="mb-2.5 flex gap-2 leading-[1.65] last:mb-0"
             >
-              <span className="shrink-0 font-bold text-[#111]">
+              <span className="shrink-0 font-bold text-foreground">
                 {chunk.number})
               </span>
               <p className="m-0 min-w-0 flex-1 leading-[1.65]">
@@ -1547,7 +1547,7 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
 
         if (chunk.kind === "conclusion") {
           return (
-            <p key={idx} className="mb-7 mt-3 font-bold leading-[1.6] text-[#111]">
+            <p key={idx} className="mb-7 mt-3 font-bold leading-[1.6] text-foreground">
               <span>Conclusion: </span>
               <RichMathLine text={chunk.body} />
             </p>
@@ -1793,34 +1793,34 @@ function RichMathLine({ text }: { text: string }) {
           const kind = classifyBoldLabel(value);
           if (kind === "section") {
             return (
-              <strong key={idx} className="font-bold text-[#111]">
+              <strong key={idx} className="font-bold text-foreground">
                 {value.replace(/[.!:]+$/, "")}.{" "}
               </strong>
             );
           }
           if (kind === "step") {
             return (
-              <strong key={idx} className="font-bold text-[#111]">
+              <strong key={idx} className="font-bold text-foreground">
                 <FlashcardMath text={value} />
               </strong>
             );
           }
           if (kind === "note") {
             return (
-              <strong key={idx} className="font-bold text-[#111]">
+              <strong key={idx} className="font-bold text-foreground">
                 Note:{" "}
               </strong>
             );
           }
           return (
-            <strong key={idx} className="font-bold text-[#111]">
+            <strong key={idx} className="font-bold text-foreground">
               <FlashcardMath text={value} />
             </strong>
           );
         }
         if (p.kind === "italic") {
           return (
-            <em key={idx} className="italic text-[#444]">
+            <em key={idx} className="italic text-muted-foreground">
               <FlashcardMath text={value} />
             </em>
           );
@@ -1911,7 +1911,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
         <MathAnswerKeyTable answerKey={task.answer_key} />
         <MathProse text={body} />
       </div>
@@ -2169,7 +2169,7 @@ const MathTaskCard = memo(function MathTaskCard({
             src={task.figure}
             alt="Task figure"
             wrapperClassName="mx-auto mt-3 w-full max-w-lg"
-            className="max-h-80 w-full rounded-xl border border-border bg-white object-contain p-2"
+            className="max-h-80 w-full rounded-xl border border-border bg-card object-contain p-2"
           />
         ) : null}
         {task.tables_markdown ? (

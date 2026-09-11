@@ -28,19 +28,19 @@ const TONE_STYLES: Record<
   { shell: string; iconWell: string; text: string }
 > = {
   info: {
-    shell: "border-[#e8dfc8] bg-[#fffaf0]",
-    iconWell: "bg-[#f3ead7] text-[#5c4f3a]",
-    text: "text-[#2f2920]",
+    shell: "border-[#e8dfc8] bg-[#fffaf0] dark:border-[#4a4336] dark:bg-[#2a261c]",
+    iconWell: "bg-[#f3ead7] text-[#5c4f3a] dark:bg-[#3d3628] dark:text-[#d4c4a0]",
+    text: "text-[#2f2920] dark:text-[#ece6d8]",
   },
   warn: {
-    shell: "border-[#f0d9a8] bg-[#fff8e8]",
-    iconWell: "bg-[#f6e6c4] text-[#8a6a28]",
-    text: "text-[#3d3018]",
+    shell: "border-[#f0d9a8] bg-[#fff8e8] dark:border-[#5c4a28] dark:bg-[#2c2414]",
+    iconWell: "bg-[#f6e6c4] text-[#8a6a28] dark:bg-[#4a3a1c] dark:text-[#e6c87a]",
+    text: "text-[#3d3018] dark:text-[#f0e2c4]",
   },
   critical: {
-    shell: "border-[#f0c4b0] bg-[#fff1ea]",
-    iconWell: "bg-[#f8d9cc] text-[#a04528]",
-    text: "text-[#4a2010]",
+    shell: "border-[#f0c4b0] bg-[#fff1ea] dark:border-[#6a3a2c] dark:bg-[#2c1814]",
+    iconWell: "bg-[#f8d9cc] text-[#a04528] dark:bg-[#4a2a20] dark:text-[#f0a890]",
+    text: "text-[#4a2010] dark:text-[#f2d4c8]",
   },
 };
 

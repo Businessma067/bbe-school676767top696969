@@ -1111,7 +1111,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
         <EconAnswerKeyTable answerKey={task.answer_key} />
         <div className="mb-6 flex flex-wrap gap-2">
           {task.statements.map((_, i) => (
@@ -1363,8 +1363,8 @@ function ExplanationPanels({
       </div>
 
       {/* Panel C: Textbook Canvas */}
-      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
-        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-paper shadow-sm">
+        <div className="flex items-center justify-between border-b border-border/60 bg-card/60 px-4 py-2">
           <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
             Textbook Canvas
           </span>
@@ -1372,7 +1372,7 @@ function ExplanationPanels({
             BBE School Textbook
           </span>
         </div>
-        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-paper-foreground">
           {state.loading && (
             <div className="flex items-center gap-2 text-xs text-muted-foreground">
               <Loader2 className="h-3.5 w-3.5 animate-spin" /> Fetching the page…

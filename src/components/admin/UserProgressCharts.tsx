@@ -127,7 +127,7 @@ function ChartCard({
   children: ReactNode;
 }) {
   return (
-    <section className="rounded-2xl border border-border bg-white p-4 shadow-sm">
+    <section className="rounded-2xl border border-border bg-card p-4 shadow-sm">
       <div className="mb-3">
         <h3 className="font-display text-base font-semibold tracking-tight text-foreground">{title}</h3>
         {hint ? <p className="mt-0.5 text-xs text-muted-foreground">{hint}</p> : null}
@@ -167,7 +167,7 @@ export function UserProgressCharts({ detail }: { detail: AdminUserDetail }) {
 
   if (series.length === 0) {
     return (
-      <div className="rounded-2xl border border-border bg-white p-8 text-center text-sm text-muted-foreground">
+      <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
         Пока мало данных для графиков — пусть пользователь решит задания.
       </div>
     );

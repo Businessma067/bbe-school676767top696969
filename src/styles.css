@@ -55,6 +55,9 @@
   --color-exam-red: var(--exam-red);
   --color-why-us-bg: var(--why-us-bg);
   --color-why-us-card: var(--why-us-card);
+  --color-why-us-fg: var(--why-us-fg);
+  --color-paper: var(--paper);
+  --color-paper-foreground: var(--paper-foreground);
 
 
   --color-chart-1: var(--chart-1);
@@ -104,9 +107,9 @@
   --taupe: #5a584f;
   --why-us-bg: #0d0d0d;
   --why-us-card: #161616;
-
-
-
+  --why-us-fg: #f2f1ed;
+  --paper: #fdf9f0;
+  --paper-foreground: #3a2e1f;
 
   --chart-1: oklch(0.62 0.19 42);   /* ember  */
   --chart-2: oklch(0.65 0.17 250);  /* blue   */
@@ -121,6 +124,58 @@
   --sidebar-accent-foreground: oklch(0.15 0 0);
   --sidebar-border: oklch(0.15 0 0 / 12%);
   --sidebar-ring: oklch(0.15 0 0);
+
+  color-scheme: light;
+}
+
+.dark {
+  --background: #131210;
+  --foreground: #ecebe6;
+  --card: #1c1b18;
+  --card-foreground: #ecebe6;
+  --popover: #22211d;
+  --popover-foreground: #ecebe6;
+  --primary: #ecebe6;
+  --primary-foreground: #131210;
+  --secondary: #26251f;
+  --secondary-foreground: #ecebe6;
+  --muted: #26251f;
+  --muted-foreground: #a9a69c;
+  --accent: #ecebe6;
+  --accent-foreground: #131210;
+  --destructive: #d45a4c;
+  --destructive-foreground: #ffffff;
+  --border: #3a3832;
+  --input: #3a3832;
+  --ring: #ecebe6;
+
+  --ivory: #131210;
+  --exam-red: #c94a3a;
+  --caramel: #3a3832;
+  --caramel-deep: #c94a3a;
+  --espresso: #ecebe6;
+  --taupe: #a9a69c;
+  --why-us-bg: #0c0c0b;
+  --why-us-card: #1a1916;
+  --why-us-fg: #f2f1ed;
+  --paper: #1c1b16;
+  --paper-foreground: #e6dfd2;
+
+  --chart-1: oklch(0.72 0.17 42);
+  --chart-2: oklch(0.7 0.15 250);
+  --chart-3: oklch(0.74 0.13 175);
+  --chart-4: oklch(0.76 0.14 55);
+  --chart-5: oklch(0.65 0.18 300);
+  --sidebar: oklch(0.18 0.01 80);
+  --sidebar-foreground: oklch(0.93 0.01 80);
+  --sidebar-primary: oklch(0.93 0.01 80);
+  --sidebar-primary-foreground: oklch(0.16 0.01 80);
+  --sidebar-accent: oklch(0.24 0.01 80);
+  --sidebar-accent-foreground: oklch(0.93 0.01 80);
+  --sidebar-border: oklch(0.93 0.01 80 / 12%);
+  --sidebar-ring: oklch(0.93 0.01 80);
+
+  color-scheme: dark;
 }
 
 @layer base {
@@ -131,6 +186,10 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--foreground) 18%, transparent);
   }
 
   body {
@@ -214,6 +273,27 @@
 .passage-ai-highlight.done {
   background-color: #dbeafe;
   border-color: #93c5fd;
+}
+
+@keyframes passage-ai-fade-dark {
+  0% { background-color: transparent; border-color: transparent; }
+  100% { background-color: #1e3a5f; border-color: #3b6ea8; }
+}
+
+.dark .passage-ai-highlight {
+  background-color: #1e3a5f;
+  border-color: #3b6ea8;
+  color: #dbeafe;
+  animation-name: passage-ai-fade-dark;
+}
+
+.dark .passage-ai-highlight.done {
+  background-color: #1e3a5f;
+  border-color: #3b6ea8;
+}
+
+.dark .katex {
+  color: inherit;
 }
 
 /* Neon highlighter sweep for the AI textbook canvas. */

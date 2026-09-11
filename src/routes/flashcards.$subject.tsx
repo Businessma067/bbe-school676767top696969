@@ -629,7 +629,7 @@ function FlashcardSubjectPage() {
                   aria-hidden
                 >
                   {Math.abs(dragX) > 24 && (
-                    <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
+                    <span className="rounded-full bg-card/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-foreground shadow-sm">
                       {swipeHint}
                     </span>
                   )}

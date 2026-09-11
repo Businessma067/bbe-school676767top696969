@@ -71,7 +71,7 @@ export function ExplanationProse({
   return (
     <div
       className={cn(
-        "font-expl text-[15px] leading-[1.6] text-[#1f1f1f] sm:text-[15.5px]",
+        "font-expl text-[15px] leading-[1.6] text-foreground sm:text-[15.5px]",
         "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-3.5",
         className,
       )}
@@ -81,7 +81,7 @@ export function ExplanationProse({
           return (
             <h4
               key={idx}
-              className="mb-3 mt-9 text-[16.5px] font-bold leading-snug tracking-tight text-[#111] first:mt-0 sm:text-[17.5px]"
+              className="mb-3 mt-9 text-[16.5px] font-bold leading-snug tracking-tight text-foreground first:mt-0 sm:text-[17.5px]"
             >
               {chunk.title}
             </h4>
@@ -91,7 +91,7 @@ export function ExplanationProse({
           return (
             <p
               key={idx}
-              className="mb-3 mt-10 text-[15.5px] font-bold leading-snug text-[#111] first:mt-0 sm:text-[16.5px]"
+              className="mb-3 mt-10 text-[15.5px] font-bold leading-snug text-foreground first:mt-0 sm:text-[16.5px]"
             >
               <InlineMarks text={chunk.text} />
             </p>
@@ -102,7 +102,7 @@ export function ExplanationProse({
           return (
             <aside
               key={idx}
-              className="my-6 border-l-[3px] border-[#c4c4c4] py-1.5 pl-4 text-[14.5px] font-semibold italic leading-[1.6] text-[#2a2a2a]"
+              className="my-6 border-l-[3px] border-border py-1.5 pl-4 text-[14.5px] font-semibold italic leading-[1.6] text-foreground/90"
             >
               <span className="font-bold not-italic">{label}: </span>
               <InlineMarks text={rest.join(":").trim()} />
@@ -128,7 +128,7 @@ export function ExplanationProse({
         }
         if (chunk.kind === "close") {
           return (
-            <p key={idx} className="mb-4 mt-3 font-semibold leading-[1.6] text-[#111]">
+            <p key={idx} className="mb-4 mt-3 font-semibold leading-[1.6] text-foreground">
               <InlineMarks text={chunk.text} />
             </p>
           );
@@ -162,7 +162,7 @@ function InlineMarks({ text }: { text: string }) {
     <span>
       {parts.map((p, i) =>
         p.kind === "bold" ? (
-          <strong key={i} className="font-bold text-[#111]">
+          <strong key={i} className="font-bold text-foreground">
             {p.value.includes("$") ? <FlashcardMath text={p.value} /> : p.value}
           </strong>
         ) : p.kind === "italic" ? (

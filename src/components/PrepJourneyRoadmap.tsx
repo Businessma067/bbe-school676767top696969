@@ -64,7 +64,7 @@ function MilestoneIcon({
             width="14"
             height="15"
             rx="1.5"
-            className="fill-[color-mix(in_oklab,var(--ivory)_92%,white)]"
+            className="fill-card"
             stroke="currentColor"
             strokeWidth="1.7"
           />
@@ -94,7 +94,7 @@ function MilestoneIcon({
             width="12"
             height="14"
             rx="1.4"
-            className="fill-[color-mix(in_oklab,var(--ivory)_92%,white)]"
+            className="fill-card"
             stroke="currentColor"
             strokeWidth="1.6"
           />
@@ -245,10 +245,10 @@ function SpreadDesktopRoadmap() {
         </defs>
         <path
           id="prepRoadmapPath"
-          className="prep-roadmap-path"
+          className="prep-roadmap-path text-foreground"
           d={pathD}
           fill="none"
-          stroke="#161616"
+          stroke="currentColor"
           strokeOpacity="0.28"
           strokeWidth="1.6"
           strokeLinecap="round"

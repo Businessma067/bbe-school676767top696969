@@ -5,6 +5,7 @@ import type { User } from "@supabase/supabase-js";
 import { cn } from "@/lib/utils";
 import { isAdminEmail } from "@/lib/admin-access";
 import { AuthNav } from "@/components/AuthNav";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Loader2, ChevronLeft, Check } from "lucide-react";
 
 export const Route = createFileRoute("/admin/economics")({
@@ -72,6 +73,7 @@ function Shell({ children }: { children: React.ReactNode }) {
           </Link>
           <div className="flex items-center gap-3">
             <span className="font-display text-sm font-bold tracking-tight">Admin · Economics</span>
+            <ThemeToggle />
             <AuthNav />
           </div>
         </div>

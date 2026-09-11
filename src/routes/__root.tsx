@@ -18,6 +18,7 @@ import { ActivityTracker } from "../components/ActivityTracker";
 import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 import { LanguageProvider } from "../lib/i18n/context";
+import { THEME_INIT_SCRIPT } from "../lib/theme";
 import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
@@ -162,9 +163,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body>
         {children}

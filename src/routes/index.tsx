@@ -82,8 +82,7 @@ export function Index() {
               >
                 <LocalizedLink
                   to="/demo-practice"
-                  className="inline-flex flex-col items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#9c3125] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-                  style={{ backgroundColor: "#B3392A" }}
+                  className="inline-flex flex-col items-center justify-center rounded-sm bg-exam-red px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-exam-red/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                 >
                   <span>Try demo-practice</span>
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">
@@ -93,11 +92,10 @@ export function Index() {
                 <LocalizedLink
                   to="/products"
                   id="explore-courses"
-                  className="inline-flex flex-col items-center justify-center rounded-sm border border-[#161616] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#2a2a2a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                  style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
+                  className="inline-flex flex-col items-center justify-center rounded-sm border border-primary bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
                 >
                   <span>Explore Courses</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-[#F2F1ED]/70">
+                  <span className="mt-0.5 text-[11px] font-medium text-primary-foreground/70">
                     See all BBE School products
                   </span>
                 </LocalizedLink>
@@ -151,10 +149,10 @@ export function Index() {
         <section className="relative overflow-hidden bg-why-us-bg px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
           <div className="relative mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-primary-foreground sm:text-4xl lg:text-5xl">
+              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
                 Why Choose US
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
                 The standards at WU Vienna are exceptionally high. Let's be honest: entry
                 competition is brutal, and no software can ever guarantee your admission. Success
                 requires hard, disciplined work. But our data proves how we shift the odds in your
@@ -172,8 +170,7 @@ export function Index() {
           <div className="mx-auto flex max-w-6xl justify-center">
             <LocalizedLink
               to="/products"
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-8 py-4 text-sm font-semibold transition-colors hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-              style={{ backgroundColor: "#F2F1ED", color: "#161616" }}
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#F2F1ED] px-8 py-4 text-sm font-semibold text-[#161616] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
             >
               View Preparation Products
             </LocalizedLink>
@@ -220,8 +217,7 @@ export function Index() {
               <div className="relative z-10 flex justify-center py-4">
                 <LocalizedLink
                   to="/parents"
-                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#2a2a2a]"
-                  style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
+                  className="group inline-flex flex-col items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
                 >
                   <span>Read the full letter</span>
                   <svg
@@ -284,10 +280,7 @@ export function Index() {
         <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-3">
-              <span
-                className="inline-flex h-2.5 w-2.5 rounded-full"
-                style={{ backgroundColor: "#161616" }}
-              />
+              <span className="inline-flex h-2.5 w-2.5 rounded-full bg-foreground" />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
                 BBE School
               </span>
@@ -321,7 +314,7 @@ export function Index() {
 function ReviewCard({ report }: { report: (typeof reports)[0] }) {
   const [expanded, setExpanded] = useState(false);
   return (
-    <article className="flex flex-col justify-between border-t pt-8" style={{ borderColor: "#D8D6CE" }}>
+    <article className="flex flex-col justify-between border-t border-border pt-8">
       <div>
         <p className={cn("leading-relaxed text-muted-foreground", !expanded && "line-clamp-3")}>
           &ldquo;{report.quote}&rdquo;
@@ -337,18 +330,13 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
       <div className="mt-8">
         <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
         <div
-          className="mt-3 inline-flex items-center gap-1.5 rounded-sm border px-3 py-1"
-          style={{ borderColor: "#D8D6CE" }}
+          className="mt-3 inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1"
         >
-          <span className="text-xs font-semibold tracking-wide" style={{ color: "#161616" }}>
+          <span className="text-xs font-semibold tracking-wide text-foreground">
             {report.badge}
           </span>
           {report.fire && (
-            <Flame
-              className="h-3.5 w-3.5"
-              style={{ fill: "#B3392A", color: "#B3392A" }}
-              aria-hidden
-            />
+            <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />
           )}
         </div>
       </div>
@@ -475,15 +463,15 @@ function RingMetric({
               "font-display font-bold tabular-nums tracking-tight leading-none",
               // scale so long values like "41.3%" fit inside the inner circle
               displayValue.length >= 5 ? "text-2xl sm:text-3xl" : "text-3xl sm:text-4xl",
-              isAccent ? "text-caramel-deep" : "text-primary-foreground/60",
+              isAccent ? "text-caramel-deep" : "text-why-us-fg/60",
             )}
           >
             {displayValue}
           </span>
         </div>
       </div>
-      <h3 className="mt-6 font-display text-lg font-semibold text-primary-foreground">{label}</h3>
-      <p className="mt-1 text-sm text-primary-foreground/60">{sublabel}</p>
+      <h3 className="mt-6 font-display text-lg font-semibold text-why-us-fg">{label}</h3>
+      <p className="mt-1 text-sm text-why-us-fg/60">{sublabel}</p>
     </div>
   );
 }
@@ -523,7 +511,7 @@ function WhyUsSlider() {
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:left-6 sm:h-12 sm:w-12"
+        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:left-6 sm:h-12 sm:w-12"
       >
         <ChevronLeft size={24} />
       </button>
@@ -531,7 +519,7 @@ function WhyUsSlider() {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:right-6 sm:h-12 sm:w-12"
+        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:right-6 sm:h-12 sm:w-12"
       >
         <ChevronRight size={24} />
       </button>
@@ -604,7 +592,7 @@ function WhyUsSlider() {
                 glow
               />
             </div>
-            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground sm:text-xl">
+            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-why-us-fg sm:text-xl">
               Our students achieve a success rate{" "}
               <span className="text-caramel-deep">nearly 6 times higher</span> than the general
               applicant pool.
@@ -614,9 +602,9 @@ function WhyUsSlider() {
           {/* Slide 02 — Capital Preservation */}
           <WhySlide title="Capital Preservation">
             <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-              <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+              <p className="text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
                 Private tutors in Vienna charge{" "}
-                <span className="text-primary-foreground">€50 to €100 per hour</span> just to read
+                <span className="text-why-us-fg">€50 to €100 per hour</span> just to read
                 textbook slides with you — that is a financial black hole. Furthermore, top-tier
                 university education at WU Vienna costs literally{" "}
                 <span className="text-caramel-deep">10 times less</span> in tuition than comparable
@@ -624,7 +612,7 @@ function WhyUsSlider() {
                 future. A single one-time investment in our platform saves you thousands of euros in
                 useless prep costs, protecting your path to an incredibly affordable, world-class
                 degree. Failing the exam means losing a{" "}
-                <span className="font-semibold text-primary-foreground">
+                <span className="font-semibold text-why-us-fg">
                   €100,000 financial advantage
                 </span>
                 .
@@ -635,7 +623,7 @@ function WhyUsSlider() {
 
           {/* Slide 03 — Top-Tier Career Outcomes */}
           <WhySlide title="Top-Tier Career Outcomes">
-            <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
+            <p className="max-w-3xl text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
               WU Vienna is a premier target university for the world's elite firms, but only for the{" "}
               <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just
               the first filter. By training your brain to handle brutal exam pressure now, you build
@@ -656,7 +644,7 @@ function WhySlide({ title, children }: { title: string; children: ReactNode }) {
     <section className="relative flex w-full min-w-full flex-none items-center justify-center px-4 py-8 sm:px-10 sm:py-10 lg:px-16">
       <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-5 sm:p-10 lg:p-12">
         <div className="mb-6 border-b border-white/12 pb-4 sm:mb-8 sm:pb-5">
-          <h3 className="font-display text-xl font-semibold text-primary-foreground sm:text-3xl">
+          <h3 className="font-display text-xl font-semibold text-why-us-fg sm:text-3xl">
             {title}
           </h3>
         </div>
@@ -701,13 +689,13 @@ function CapitalBars() {
 
   return (
     <div ref={ref} className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8">
-      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/50">
+      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-why-us-fg/50">
         Total tuition · 3 years
       </p>
       <div className="flex items-end justify-around gap-6" style={{ height: maxH + 20 }}>
         <div className="flex h-full flex-1 flex-col items-center justify-end">
           <span
-            className="mb-2 font-display text-sm font-semibold text-primary-foreground/85"
+            className="mb-2 font-display text-sm font-semibold text-why-us-fg/85"
             style={{ opacity: progress }}
           >
             €60k – €120k
@@ -719,13 +707,13 @@ function CapitalBars() {
               transition: "background-color 0.3s",
             }}
           />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-primary-foreground/55">
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-why-us-fg/55">
             UK / US Target Schools
           </span>
         </div>
         <div className="flex h-full flex-1 flex-col items-center justify-end">
           <span
-            className="mb-2 font-display text-sm font-semibold text-primary-foreground"
+            className="mb-2 font-display text-sm font-semibold text-why-us-fg"
             style={{ opacity: progress }}
           >
             ~€2,200
@@ -737,13 +725,13 @@ function CapitalBars() {
               backgroundColor: "#B3392A",
             }}
           />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-primary-foreground/70">
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-why-us-fg/70">
             WU Vienna · 3-Year Total
           </span>
         </div>
       </div>
-      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-primary-foreground/55">
-        Same degree tier. <span className="text-primary-foreground/85">~50× tuition delta.</span>
+      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-why-us-fg/55">
+        Same degree tier. <span className="text-why-us-fg/85">~50× tuition delta.</span>
       </p>
     </div>
   );
@@ -783,7 +771,7 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
 function PlacementsTicker() {
   return (
     <div className="mt-8 rounded-xl border border-white/12 bg-black/40 px-4 py-6 sm:px-8 sm:py-8">
-      <p className="mb-6 text-center text-sm font-medium text-primary-foreground/55">
+      <p className="mb-6 text-center text-sm font-medium text-why-us-fg/55">
         Where alumni land
       </p>
       <div className="grid grid-cols-3 items-stretch justify-items-stretch gap-3 sm:grid-cols-6 sm:gap-4">
@@ -791,7 +779,7 @@ function PlacementsTicker() {
           <PlacementLogo key={p.name} {...p} />
         ))}
       </div>
-      <p className="mt-6 border-t border-white/12 pt-4 text-center text-xs text-primary-foreground/55">
+      <p className="mt-6 border-t border-white/12 pt-4 text-center text-xs text-why-us-fg/55">
         Global tier-1 finance, consulting & tech.
       </p>
     </div>

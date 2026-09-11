@@ -51,7 +51,7 @@ export function ExamQuestionBody({
               src={q.figure}
               alt="Question figure"
               wrapperClassName="mx-auto mt-3 w-full max-w-lg"
-              className="max-h-80 w-full rounded-xl border border-border bg-white object-contain p-2"
+              className="max-h-80 w-full rounded-xl border border-border bg-card object-contain p-2"
             />
           ) : null}
           {q.tablesMarkdown ? (

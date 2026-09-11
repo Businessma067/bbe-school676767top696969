@@ -1465,7 +1465,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
         <AnswerKeyTable answerKey={task.answer_key} />
         {task.solution_overview?.trim() && (
           <div className="mb-8 border-b border-border/60 pb-6">
@@ -1623,13 +1623,13 @@ function ReadingPanel({
         </>
       )}
 
-      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
-        <div className="flex shrink-0 items-center justify-between border-b border-border/60 bg-white/60 px-4 py-1.5">
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-border bg-paper shadow-sm">
+        <div className="flex shrink-0 items-center justify-between border-b border-border/60 bg-card/60 px-4 py-1.5">
           <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
             Reading Text
           </span>
         </div>
-        <div className="min-h-0 flex-1 overflow-hidden px-5 pb-4 pt-3 font-serif text-[16px] leading-relaxed text-[#3a2e1f] sm:text-[17px] sm:leading-[1.7]">
+        <div className="min-h-0 flex-1 overflow-hidden px-5 pb-4 pt-3 font-serif text-[16px] leading-relaxed text-paper-foreground sm:text-[17px] sm:leading-[1.7]">
           <AnnotatablePassage
             passage={passage}
             storageKey={storageKey}
@@ -1701,7 +1701,7 @@ function GrammarExplanationPanel({
             </span>
           </div>
 
-          <div className="rounded-xl border border-border bg-[#fdf9f0] p-3 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+          <div className="rounded-xl border border-border bg-paper p-3 font-serif text-[13px] leading-relaxed text-paper-foreground">
             <SentenceWithHighlight
               text={explanation.statementText}
               highlight={explanation.highlight}

@@ -243,7 +243,7 @@ export function HowItWorksSection() {
               className={cn(
                 "min-h-10 rounded-sm border px-3.5 py-2 text-xs font-semibold tracking-wide transition-colors sm:px-5 sm:text-sm",
                 active
-                  ? "border-[#161616] bg-[#161616] text-[#F2F1ED]"
+                  ? "border-primary bg-primary text-primary-foreground"
                   : "border-border bg-card text-muted-foreground hover:border-foreground/30 hover:text-foreground",
               )}
             >
@@ -277,7 +277,7 @@ export function HowItWorksSection() {
 
           <div className="grid items-stretch gap-5 px-8 sm:px-0 lg:grid-cols-[minmax(0,3.2fr)_minmax(13rem,0.55fr)] lg:gap-6">
             <div className="min-w-0">
-              <div className="overflow-hidden rounded-xl border border-border bg-[#eceae4]">
+              <div className="overflow-hidden rounded-xl border border-border bg-muted">
                 <div className="relative w-full" style={{ aspectRatio: slide.aspect }}>
                   <video
                     key={slide.key}
@@ -295,7 +295,7 @@ export function HowItWorksSection() {
                     type="button"
                     onClick={openZoom}
                     aria-label="Zoom in"
-                    className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-[#161616]/95 px-3 py-2 text-xs font-semibold text-[#F2F1ED] shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-[#161616] sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
+                    className="absolute bottom-2 right-2 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/40 bg-black/95 px-3 py-2 text-xs font-semibold text-white shadow-lg [text-shadow:0_1px_2px_rgba(0,0,0,0.4)] backdrop-blur-sm transition hover:bg-black sm:bottom-3 sm:right-3 sm:gap-2 sm:px-5 sm:py-3 sm:text-base"
                   >
                     <ZoomIn className="h-4 w-4 sm:h-6 sm:w-6" />
                     Zoom in
@@ -319,7 +319,7 @@ export function HowItWorksSection() {
                       className={cn(
                         "rounded-sm border px-3 py-1.5 text-[11px] font-semibold transition-colors sm:text-xs",
                         active
-                          ? "border-[#161616] bg-[#161616] text-[#F2F1ED]"
+                          ? "border-primary bg-primary text-primary-foreground"
                           : "border-border bg-background text-muted-foreground hover:border-foreground/30 hover:text-foreground",
                       )}
                     >
@@ -336,7 +336,7 @@ export function HowItWorksSection() {
               </p>
               <LocalizedLink
                 to={slide.href}
-                className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-sm bg-[#161616] px-5 py-2.5 text-sm font-semibold text-[#F2F1ED] transition hover:bg-[#2a2a2a] sm:w-fit"
+                className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90 sm:w-fit"
               >
                 {slide.cta}
                 <ChevronRight className="h-4 w-4" />
@@ -406,17 +406,17 @@ export function HowItWorksSection() {
                   />
                 </div>
 
-                <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-[#161616]/92 p-1.5 shadow-lg backdrop-blur-sm">
+                <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/25 bg-black/92 p-1.5 shadow-lg backdrop-blur-sm">
                   <button
                     type="button"
                     onClick={() => nudgeLightboxZoom(-1)}
                     disabled={lightboxScale <= MIN_ZOOM}
                     aria-label="Zoom out"
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[#F2F1ED] transition hover:bg-white/10 disabled:opacity-40"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
                   >
                     <ZoomOut className="h-5 w-5" />
                   </button>
-                  <span className="min-w-[3.25rem] text-center text-sm font-semibold tabular-nums text-[#F2F1ED]">
+                  <span className="min-w-[3.25rem] text-center text-sm font-semibold tabular-nums text-white">
                     {Math.round(lightboxScale * 100)}%
                   </span>
                   <button
@@ -424,7 +424,7 @@ export function HowItWorksSection() {
                     onClick={() => nudgeLightboxZoom(1)}
                     disabled={lightboxScale >= MAX_ZOOM}
                     aria-label="Zoom in"
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[#F2F1ED] transition hover:bg-white/10 disabled:opacity-40"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white transition hover:bg-white/10 disabled:opacity-40"
                   >
                     <ZoomIn className="h-5 w-5" />
                   </button>
@@ -434,7 +434,7 @@ export function HowItWorksSection() {
                   type="button"
                   onClick={closeZoom}
                   aria-label="Close zoom"
-                  className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-[#161616]/92 text-[#F2F1ED] shadow-md backdrop-blur-sm transition hover:bg-[#161616]"
+                  className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-black/92 text-white shadow-md backdrop-blur-sm transition hover:bg-black"
                 >
                   <X className="h-5 w-5" />
                 </button>

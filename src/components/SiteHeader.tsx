@@ -5,6 +5,7 @@ import { DesktopNav } from "@/components/DesktopNav";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { MobileNav } from "@/components/MobileNav";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { navItemsForAccess, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
@@ -110,6 +111,7 @@ export function SiteHeader({
           ))}
         <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1 sm:gap-2.5">
           {actions}
+          <ThemeToggle />
           <LanguageSwitcher />
           <AuthNav />
           {mobileVisible ? (

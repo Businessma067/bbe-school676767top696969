@@ -209,12 +209,12 @@ const MdBlock = memo(function MdBlock({
           </blockquote>
         ),
         table: ({ children }) => (
-          <div className="my-5 w-full overflow-x-auto rounded-xl border border-border bg-white shadow-sm [-webkit-overflow-scrolling:touch]">
+          <div className="my-5 w-full overflow-x-auto rounded-xl border border-border bg-card shadow-sm [-webkit-overflow-scrolling:touch]">
             <table className="w-full min-w-[18rem] border-collapse text-[12px] sm:min-w-[20rem] sm:text-sm">{children}</table>
           </div>
         ),
         thead: ({ children }) => <thead className="bg-primary text-primary-foreground">{children}</thead>,
-        tbody: ({ children }) => <tbody className="bg-white">{children}</tbody>,
+        tbody: ({ children }) => <tbody className="bg-card">{children}</tbody>,
         tr: ({ children }) => <tr className="border-b border-border/80 last:border-0">{children}</tr>,
         th: ({ children }) => (
           <th className="px-2 py-2 text-left align-bottom font-semibold sm:whitespace-nowrap sm:px-3 sm:py-2.5">
@@ -238,7 +238,7 @@ const MdBlock = memo(function MdBlock({
           );
         },
         pre: ({ children }) => (
-          <pre className="my-5 overflow-x-auto rounded-xl border border-border bg-white px-4 py-3.5 font-mono text-[13px] leading-6 text-foreground shadow-sm">
+          <pre className="my-5 overflow-x-auto rounded-xl border border-border bg-card px-4 py-3.5 font-mono text-[13px] leading-6 text-foreground shadow-sm">
             {children}
           </pre>
         ),
@@ -671,7 +671,7 @@ export function TheoryReader({
         ref={scrollRef}
         onScroll={onScroll}
         className={cn(
-          "relative flex-1 overflow-y-auto overscroll-y-contain bg-white [-webkit-overflow-scrolling:touch]",
+          "relative flex-1 overflow-y-auto overscroll-y-contain bg-card [-webkit-overflow-scrolling:touch]",
           readerMode ? "min-h-0" : "max-h-[calc(100dvh-10rem)] sm:max-h-[calc(100vh-11rem)]",
         )}
       >

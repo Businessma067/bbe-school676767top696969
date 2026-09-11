@@ -33,6 +33,7 @@ import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/pract
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
 import { CourseLockedView } from "@/components/CourseLockedView";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { ExamQuestionBody, ExamStatementText } from "@/components/mock-exam/ExamQuestionContent";
 import {
   Sheet,
@@ -519,6 +520,7 @@ function TakeExamPage() {
             >
               {usesAnswerSheet ? "Review" : "Finish exam"}
             </button>
+            <ThemeToggle />
             <AuthNav />
           </div>
         </div>
