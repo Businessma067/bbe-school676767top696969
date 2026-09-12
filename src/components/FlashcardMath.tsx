@@ -499,7 +499,18 @@ function coalesceDenseShortDisplays(parts: Part[]): Part[] {
     }
 
     if (bodies.length >= DENSE_SHORT_DISPLAY_MIN) {
-      out.push({ type: "display", value: formatGatherBlock(bodies) });
+      // Assignment / ratio stacks need `aligned` so `=` columns line up.
+      // `gather*` centers each row separately and looks uneven (CA=/CL= chains).
+      const assignmentLike = bodies.filter((b) =>
+        /(?:^|[^\\])(?:=|\\approx\b|\\leq\b|\\geq\b|\\le\b|\\ge\b|>|<)/.test(b),
+      ).length;
+      out.push({
+        type: "display",
+        value:
+          assignmentLike >= Math.ceil(bodies.length * 0.6)
+            ? formatAlignedContinuationChain(bodies)
+            : formatGatherBlock(bodies),
+      });
       i = end;
     } else {
       // Keep originals (with any blank text parts between) when the run is short.
