@@ -55,7 +55,6 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     soon: "bald",
 
     // Home hero
-    "Built by top 1% of the hall": "Erstellt von den besten 1 % des Prüfungssaals",
     "Step by step preparation for your 2027 WU BBE exam":
       "Schritt-für-Schritt-Vorbereitung auf deine WU-BBE-Prüfung 2027",
     "Master every detail and tactic of the actual exam.":
@@ -226,7 +225,6 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     soon: "скоро",
 
     // Home hero
-    "Built by top 1% of the hall": "Створено найкращим 1% залу",
     "Step by step preparation for your 2027 WU BBE exam":
       "Покрокова підготовка до іспиту WU BBE 2027",
     "Master every detail and tactic of the actual exam.":

@@ -9,6 +9,7 @@ import {
   clearSession,
   createFreshSession,
   formatExamTime,
+  formatQuestionTime,
   isQuestionAnswered,
   loadSession,
   saveSession,
@@ -29,7 +30,7 @@ import {
   seedFiredTimerWarnings,
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
-import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
 import { CourseLockedView } from "@/components/CourseLockedView";
@@ -66,6 +67,7 @@ export { answersStorageKey };
 
 type Phase = "exam" | "review";
 type RightPanel = "sheet" | "notes" | "calc" | null;
+type DeskTool = "notes" | "calc" | "sheet";
 
 function mergeSessions(
   local: MockExamSession | null,
@@ -98,6 +100,7 @@ function TakeExamPage() {
   const [phase, setPhase] = useState<Phase>("exam");
   const [annotationMode, setAnnotationMode] = useState(false);
   const [rightPanel, setRightPanel] = useState<RightPanel>(null);
+  const [deskTool, setDeskTool] = useState<DeskTool>("notes");
   const [saveError, setSaveError] = useState<string | null>(null);
   const submitted = useRef(false);
   const remoteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -184,6 +187,7 @@ function TakeExamPage() {
       const merged = mergeSessions(localOk, remote, fresh);
       merged.answers = { ...fresh.answers, ...merged.answers };
       merged.answerSheet = answerSheet;
+      merged.timeByQuestion = { ...fresh.timeByQuestion, ...(merged.timeByQuestion ?? {}) };
       if (!merged.visited.includes(questions[merged.currentIndex]?.id ?? "")) {
         const id = questions[merged.currentIndex]?.id;
         if (id) merged.visited = [...new Set([...merged.visited, id])];
@@ -235,18 +239,29 @@ function TakeExamPage() {
   }, [session, hydrated, examId, exam?.title]);
 
   useEffect(() => {
-    if (!hydrated || !session?.timed || phase !== "exam") return;
+    if (!hydrated || phase !== "exam") return;
     const id = setInterval(() => {
+      if (typeof document !== "undefined" && document.visibilityState !== "visible") return;
       setSession((prev) => {
-        if (!prev || prev.secondsLeft == null) return prev;
-        if (prev.secondsLeft <= 1) {
-          return { ...prev, secondsLeft: 0 };
+        if (!prev) return prev;
+        const qid = questions[prev.currentIndex]?.id;
+        const timeByQuestion = qid
+          ? {
+              ...(prev.timeByQuestion ?? {}),
+              [qid]: (prev.timeByQuestion?.[qid] ?? 0) + 1,
+            }
+          : (prev.timeByQuestion ?? {});
+        if (prev.timed && prev.secondsLeft != null) {
+          if (prev.secondsLeft <= 1) {
+            return { ...prev, secondsLeft: 0, timeByQuestion };
+          }
+          return { ...prev, secondsLeft: prev.secondsLeft - 1, timeByQuestion };
         }
-        return { ...prev, secondsLeft: prev.secondsLeft - 1 };
+        return { ...prev, timeByQuestion };
       });
     }, 1000);
     return () => clearInterval(id);
-  }, [hydrated, session?.timed, phase]);
+  }, [hydrated, phase, questions]);
 
   const submit = useCallback(
     (elapsed?: number) => {
@@ -264,6 +279,8 @@ function TakeExamPage() {
             answers: s.answers,
             timed: s.timed,
             secondsTaken,
+            timeByQuestion: s.timeByQuestion ?? {},
+            flagged: s.flagged,
           }),
         );
       } catch {
@@ -469,6 +486,9 @@ function TakeExamPage() {
   const answered = isQuestionAnswered(session.answers[q.id]);
   const usesAnswerSheet = sessionUsesAnswerSheet(session);
   const currentMarks = session.answers[q.id] ?? [false, false, false, false, false];
+  const questionSeconds = session.timeByQuestion?.[q.id] ?? 0;
+  const activeDeskTool: DeskTool =
+    deskTool === "sheet" && !usesAnswerSheet ? "notes" : deskTool;
 
   return (
     <div className={`flex flex-col ${PRACTICE_PAGE}`}>
@@ -543,18 +563,16 @@ function TakeExamPage() {
         )}
       </header>
 
-      <div className={cn(PRACTICE_BODY, "pb-24 lg:pb-4")}>
-        <aside className="hidden w-[200px] shrink-0 space-y-4 xl:block xl:w-[240px] 2xl:w-[260px]">
+      <div className={cn(PRACTICE_BODY_STACK, "flex-1 pb-24 lg:items-start lg:pb-8")}>
+        <aside className="hidden w-72 shrink-0 space-y-4 lg:sticky lg:top-[4.5rem] lg:block 2xl:w-80">
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-            <div className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Question
-            </div>
-            <div className="mt-1 font-display text-2xl font-bold tabular-nums">{q.index}</div>
-            <div
-              className={`mt-2 inline-flex rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${meta.badgeClass}`}
-            >
-              {meta.label}
-            </div>
+            <p className="font-display text-2xl font-semibold tabular-nums tracking-tight">
+              {q.index}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">{meta.label}</p>
+            <p className="mt-3 text-xs tabular-nums text-muted-foreground">
+              This question · {formatQuestionTime(questionSeconds)}
+            </p>
             <button
               type="button"
               onClick={toggleFlag}
@@ -577,9 +595,7 @@ function TakeExamPage() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-            <h2 className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Question palette
-            </h2>
+            <h2 className="mb-3 font-display text-sm font-semibold">Questions</h2>
             <QuestionPalette
               questions={questions}
               currentIndex={session.currentIndex}
@@ -593,10 +609,10 @@ function TakeExamPage() {
         </aside>
 
         <main className="relative min-w-0 flex-1">
-          <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm xl:hidden">
+          <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm lg:hidden">
             <div className="mb-2 flex items-center justify-between gap-2">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-                Q{q.index} · {meta.label}
+              <span className="text-sm font-medium text-muted-foreground">
+                Q{q.index} · {meta.label} · {formatQuestionTime(questionSeconds)}
               </span>
               <button
                 type="button"
@@ -637,90 +653,54 @@ function TakeExamPage() {
           >
             <div className="relative p-5 sm:p-8 lg:p-10">
               {q.subtopicTag ? (
-                <p className="mb-3 text-xs font-medium tracking-wide text-muted-foreground/70">
-                  {q.subtopicTag}
-                </p>
+                <p className="mb-3 text-xs font-medium text-muted-foreground">{q.subtopicTag}</p>
               ) : null}
               <ExamQuestionBody q={q} emphasized />
 
-              <div className="mt-6 overflow-hidden rounded-xl border border-border">
-                <div
-                  className={cn(
-                    "border-b border-border bg-secondary/50 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-taupe",
-                    !usesAnswerSheet && "flex items-center gap-3",
-                  )}
-                >
-                  {usesAnswerSheet ? (
-                    "Statements"
-                  ) : (
-                    <>
-                      <span className="w-6">#</span>
-                      <span className="flex-1">Statement</span>
-                      <span className="w-11 text-center lg:w-14">True</span>
-                    </>
-                  )}
-                </div>
+              <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+                <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
+                  <span className="w-6 text-center">#</span>
+                  <span className="flex-1">Statement</span>
+                  <span className="w-11 text-center lg:w-14">True</span>
+                </li>
                 {q.statements.map((s, i) => {
                   const marked = currentMarks[i] === true;
                   return (
-                    <div
-                      key={s.id}
-                      className={cn(
-                        "border-b border-border px-3 py-4 last:border-b-0 sm:px-5",
-                        !usesAnswerSheet && "flex items-start gap-2 sm:items-center sm:gap-3",
-                      )}
-                    >
-                      {usesAnswerSheet ? (
-                        <p className="text-sm leading-relaxed sm:text-[15px] lg:text-base">
-                          <span className="mr-2 font-semibold text-taupe">
-                            {String.fromCharCode(65 + i)}.
-                          </span>
+                    <li key={s.id} className="px-3 py-3 sm:px-4">
+                      <div className="flex items-start gap-2 sm:items-center sm:gap-3">
+                        <span className="mt-2 w-6 shrink-0 text-center text-xs font-bold text-muted-foreground sm:mt-0">
+                          {String.fromCharCode(65 + i)}.
+                        </span>
+                        <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground sm:text-[15px]">
                           <ExamStatementText q={q} text={s.text} />
                         </p>
-                      ) : (
-                        <>
-                          <span className="mt-2 w-6 shrink-0 text-center text-xs font-bold text-muted-foreground sm:mt-0">
-                            {String.fromCharCode(65 + i)}.
-                          </span>
-                          <p className="min-w-0 flex-1 text-sm leading-relaxed sm:text-[15px] lg:text-base">
-                            <ExamStatementText q={q} text={s.text} />
-                          </p>
-                          <div className="flex w-11 shrink-0 justify-center lg:w-14">
-                            <button
-                              type="button"
-                              role="checkbox"
-                              aria-checked={marked}
-                              aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
-                              onClick={() => toggleMark(q.index, i)}
-                              className={cn(
-                                "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all lg:h-6 lg:w-6 lg:rounded",
-                                marked
-                                  ? "border-primary bg-primary text-primary-foreground"
-                                  : "border-border bg-background hover:border-primary/60",
-                              )}
-                            >
-                              {marked && <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} />}
-                            </button>
-                          </div>
-                        </>
-                      )}
-                    </div>
+                        <div className="flex w-11 shrink-0 justify-center lg:w-14">
+                          <button
+                            type="button"
+                            role="checkbox"
+                            aria-checked={marked}
+                            aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
+                            onClick={() => toggleMark(q.index, i)}
+                            className={cn(
+                              "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all lg:h-6 lg:w-6 lg:rounded",
+                              marked
+                                ? "border-primary bg-primary text-primary-foreground"
+                                : "border-border bg-background hover:border-primary/60",
+                            )}
+                          >
+                            {marked && <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} />}
+                          </button>
+                        </div>
+                      </div>
+                    </li>
                   );
                 })}
-              </div>
+              </ol>
 
               <p className="mt-4 text-xs text-muted-foreground">
-                {usesAnswerSheet ? (
-                  <>
-                    Use <strong>Answer Sheet</strong> on the right to mark True.{" "}
-                    {answered ? "This question has marks on the sheet." : "No marks yet."}
-                  </>
-                ) : (
-                  <>
-                    Mark True next to each statement. Answers stay hidden until you finish the exam.
-                    {answered ? " This question has marks saved." : " No marks yet."}
-                  </>
-                )}
+                Mark True next to each statement. Answers stay hidden until you finish.
+                {usesAnswerSheet ? " The optical sheet on the right keeps the same marks." : ""}
+                {answered ? " This question has marks saved." : " No marks yet."}
               </p>
             </div>
 
@@ -747,7 +727,7 @@ function TakeExamPage() {
                 onClick={() => setPhase("review")}
                 className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
               >
-                {usesAnswerSheet ? "Review & submit" : "Finish exam"}
+                Finish exam
               </button>
             ) : (
               <button
@@ -761,46 +741,105 @@ function TakeExamPage() {
           </nav>
         </main>
 
-        <aside className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:top-[4.5rem] lg:inset-auto lg:bottom-auto lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
-          {usesAnswerSheet && (
-            <ToolRailButton
-              label="Answer Sheet"
-              short="Sheet"
-              active={rightPanel === "sheet"}
-              badge={answered}
-              onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
-            >
-              <FileSpreadsheet className="h-5 w-5" />
-            </ToolRailButton>
-          )}
-          <ToolRailButton
-            label="Calculator"
-            short="Calc"
-            active={rightPanel === "calc"}
-            onClick={() => (rightPanel === "calc" ? setRightPanel(null) : openPanel("calc"))}
-          >
-            <Calculator className="h-5 w-5" />
-          </ToolRailButton>
-          <ToolRailButton
-            label="Notes"
-            short="Notes"
-            active={rightPanel === "notes"}
-            badge={hasNotes}
-            onClick={() => (rightPanel === "notes" ? setRightPanel(null) : openPanel("notes"))}
-          >
-            <StickyNote className="h-5 w-5" />
-          </ToolRailButton>
-          <ToolRailButton
-            label="Draw"
-            short="Draw"
-            active={annotationMode}
-            badge={hasInk}
-            onClick={toggleDraw}
-          >
-            <PenLine className="h-5 w-5" />
-          </ToolRailButton>
+        <aside className="hidden min-h-0 w-full shrink-0 lg:sticky lg:top-[4.5rem] lg:flex lg:w-[min(100%,22rem)] lg:flex-col xl:w-[26rem]">
+          <div className="flex max-h-[calc(100vh-6rem)] min-h-[28rem] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+            <div className="flex shrink-0 gap-1 border-b border-border p-2">
+              {usesAnswerSheet && (
+                <DeskToolTab
+                  active={activeDeskTool === "sheet"}
+                  onClick={() => setDeskTool("sheet")}
+                  badge={answered}
+                >
+                  Sheet
+                </DeskToolTab>
+              )}
+              <DeskToolTab active={activeDeskTool === "notes"} onClick={() => setDeskTool("notes")} badge={hasNotes}>
+                Notes
+              </DeskToolTab>
+              <DeskToolTab active={activeDeskTool === "calc"} onClick={() => setDeskTool("calc")}>
+                Calculator
+              </DeskToolTab>
+              <button
+                type="button"
+                onClick={toggleDraw}
+                aria-pressed={annotationMode}
+                className={cn(
+                  "relative ml-auto rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors",
+                  annotationMode
+                    ? "bg-caramel-deep text-white"
+                    : "text-muted-foreground hover:bg-secondary hover:text-foreground",
+                )}
+              >
+                Draw
+                {hasInk && !annotationMode ? (
+                  <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-caramel-deep" aria-hidden />
+                ) : null}
+              </button>
+            </div>
+            <div className="min-h-0 flex-1 overflow-y-auto p-4">
+              {activeDeskTool === "sheet" && usesAnswerSheet ? (
+                <ExamAnswerSheet
+                  marksByNumber={marksByNumber}
+                  questionCount={questions.length}
+                  currentQuestion={q.index}
+                  flaggedNumbers={flaggedNumbers}
+                  onToggle={toggleMark}
+                  onNavigate={(n) => goTo(n - 1)}
+                />
+              ) : activeDeskTool === "calc" ? (
+                <Ti30MathPrint className="w-full" />
+              ) : (
+                <ExamNotesPanel
+                  value={session.notes[q.id] ?? ""}
+                  onChange={setNotes}
+                  questionLabel={`Question ${q.index}`}
+                  className="min-h-[320px]"
+                />
+              )}
+            </div>
+          </div>
         </aside>
       </div>
+
+      <aside className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:hidden">
+        {usesAnswerSheet && (
+          <ToolRailButton
+            label="Answer Sheet"
+            short="Sheet"
+            active={rightPanel === "sheet"}
+            badge={answered}
+            onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
+          >
+            <FileSpreadsheet className="h-5 w-5" />
+          </ToolRailButton>
+        )}
+        <ToolRailButton
+          label="Calculator"
+          short="Calc"
+          active={rightPanel === "calc"}
+          onClick={() => (rightPanel === "calc" ? setRightPanel(null) : openPanel("calc"))}
+        >
+          <Calculator className="h-5 w-5" />
+        </ToolRailButton>
+        <ToolRailButton
+          label="Notes"
+          short="Notes"
+          active={rightPanel === "notes"}
+          badge={hasNotes}
+          onClick={() => (rightPanel === "notes" ? setRightPanel(null) : openPanel("notes"))}
+        >
+          <StickyNote className="h-5 w-5" />
+        </ToolRailButton>
+        <ToolRailButton
+          label="Draw"
+          short="Draw"
+          active={annotationMode}
+          badge={hasInk}
+          onClick={toggleDraw}
+        >
+          <PenLine className="h-5 w-5" />
+        </ToolRailButton>
+      </aside>
 
       {usesAnswerSheet && (
         <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
@@ -808,7 +847,7 @@ function TakeExamPage() {
             <SheetHeader className="pr-8 text-left">
               <SheetTitle className="font-display">Answer Sheet</SheetTitle>
               <SheetDescription>
-                Mark ✕ for True. This is the only place answers are recorded.
+                Mark ✕ for True. Same marks as the True checkboxes on the question.
               </SheetDescription>
             </SheetHeader>
             <div className="mt-4 flex min-h-0 flex-1 flex-col pb-6">
@@ -870,6 +909,34 @@ function TakeExamPage() {
         </SheetContent>
       </Sheet>
     </div>
+  );
+}
+
+function DeskToolTab({
+  children,
+  active,
+  badge,
+  onClick,
+}: {
+  children: React.ReactNode;
+  active?: boolean;
+  badge?: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={cn(
+        "relative rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors",
+        active ? "bg-foreground text-background" : "text-muted-foreground hover:bg-secondary hover:text-foreground",
+      )}
+    >
+      {children}
+      {badge && !active ? (
+        <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-caramel-deep" aria-hidden />
+      ) : null}
+    </button>
   );
 }
 

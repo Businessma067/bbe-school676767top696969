@@ -32,6 +32,8 @@ export type MockExamSession = {
   notes: Record<string, string>;
   /** Per-question ink strokes */
   annotations: Record<string, AnnotationStroke[]>;
+  /** Seconds spent focused on each question (paused when the tab is hidden). */
+  timeByQuestion: Record<string, number>;
   updatedAt: number;
 };
 
@@ -77,6 +79,7 @@ export function createFreshSession(
     visited: questionIds[0] ? [questionIds[0]] : [],
     notes: {},
     annotations: {},
+    timeByQuestion: {},
     updatedAt: now,
   };
 }
@@ -88,7 +91,11 @@ export function loadSession(examId: string): MockExamSession | null {
     if (!raw) return null;
     const parsed = JSON.parse(raw) as MockExamSession;
     if (parsed?.version !== 1 || parsed.examId !== examId) return null;
-    return { ...parsed, answerSheet: sessionUsesAnswerSheet(parsed) };
+    return {
+      ...parsed,
+      answerSheet: sessionUsesAnswerSheet(parsed),
+      timeByQuestion: parsed.timeByQuestion ?? {},
+    };
   } catch {
     return null;
   }
@@ -122,4 +129,27 @@ export function formatExamTime(total: number) {
   const m = Math.floor((total % 3600) / 60);
   const s = total % 60;
   return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
+/** Compact clock for a single question (m:ss, or h:mm:ss if long). */
+export function formatQuestionTime(total: number) {
+  const sec = Math.max(0, Math.round(total));
+  const h = Math.floor(sec / 3600);
+  const m = Math.floor((sec % 3600) / 60);
+  const s = sec % 60;
+  if (h > 0) return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+export function formatCompactDuration(total: number) {
+  const sec = Math.max(0, Math.round(total));
+  if (sec < 60) return `${sec}s`;
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  const h = Math.floor(m / 60);
+  if (h > 0) {
+    const rem = m % 60;
+    return rem > 0 ? `${h}h ${rem}m` : `${h}h`;
+  }
+  return s > 0 ? `${m}m ${s}s` : `${m}m`;
 }
