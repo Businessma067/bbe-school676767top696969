@@ -30,7 +30,7 @@ import {
   seedFiredTimerWarnings,
   TimerWarningPlaque,
 } from "@/components/mock-exam/TimerWarningPlaque";
-import { PRACTICE_BODY_STACK, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY, PRACTICE_HEADER_INNER, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { Ti30MathPrint } from "@/components/calculator/Ti30MathPrint";
 import { AuthNav } from "@/components/AuthNav";
 import { CourseLockedView } from "@/components/CourseLockedView";
@@ -67,7 +67,6 @@ export { answersStorageKey };
 
 type Phase = "exam" | "review";
 type RightPanel = "sheet" | "notes" | "calc" | null;
-type DeskTool = "notes" | "calc" | "sheet";
 
 function mergeSessions(
   local: MockExamSession | null,
@@ -100,7 +99,6 @@ function TakeExamPage() {
   const [phase, setPhase] = useState<Phase>("exam");
   const [annotationMode, setAnnotationMode] = useState(false);
   const [rightPanel, setRightPanel] = useState<RightPanel>(null);
-  const [deskTool, setDeskTool] = useState<DeskTool>("notes");
   const [saveError, setSaveError] = useState<string | null>(null);
   const submitted = useRef(false);
   const remoteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -487,8 +485,6 @@ function TakeExamPage() {
   const usesAnswerSheet = sessionUsesAnswerSheet(session);
   const currentMarks = session.answers[q.id] ?? [false, false, false, false, false];
   const questionSeconds = session.timeByQuestion?.[q.id] ?? 0;
-  const activeDeskTool: DeskTool =
-    deskTool === "sheet" && !usesAnswerSheet ? "notes" : deskTool;
 
   return (
     <div className={`flex flex-col ${PRACTICE_PAGE}`}>
@@ -563,7 +559,7 @@ function TakeExamPage() {
         )}
       </header>
 
-      <div className={cn(PRACTICE_BODY_STACK, "flex-1 pb-24 lg:items-start lg:pb-8")}>
+      <div className={cn(PRACTICE_BODY, "pb-24 lg:pb-4")}>
         <aside className="hidden w-72 shrink-0 space-y-4 lg:sticky lg:top-[4.5rem] lg:block 2xl:w-80">
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
             <p className="font-display text-2xl font-semibold tabular-nums tracking-tight">
@@ -741,105 +737,46 @@ function TakeExamPage() {
           </nav>
         </main>
 
-        <aside className="hidden min-h-0 w-full shrink-0 lg:sticky lg:top-[4.5rem] lg:flex lg:w-[min(100%,22rem)] lg:flex-col xl:w-[26rem]">
-          <div className="flex max-h-[calc(100vh-6rem)] min-h-[28rem] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-            <div className="flex shrink-0 gap-1 border-b border-border p-2">
-              {usesAnswerSheet && (
-                <DeskToolTab
-                  active={activeDeskTool === "sheet"}
-                  onClick={() => setDeskTool("sheet")}
-                  badge={answered}
-                >
-                  Sheet
-                </DeskToolTab>
-              )}
-              <DeskToolTab active={activeDeskTool === "notes"} onClick={() => setDeskTool("notes")} badge={hasNotes}>
-                Notes
-              </DeskToolTab>
-              <DeskToolTab active={activeDeskTool === "calc"} onClick={() => setDeskTool("calc")}>
-                Calculator
-              </DeskToolTab>
-              <button
-                type="button"
-                onClick={toggleDraw}
-                aria-pressed={annotationMode}
-                className={cn(
-                  "relative ml-auto rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors",
-                  annotationMode
-                    ? "bg-caramel-deep text-white"
-                    : "text-muted-foreground hover:bg-secondary hover:text-foreground",
-                )}
-              >
-                Draw
-                {hasInk && !annotationMode ? (
-                  <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-caramel-deep" aria-hidden />
-                ) : null}
-              </button>
-            </div>
-            <div className="min-h-0 flex-1 overflow-y-auto p-4">
-              {activeDeskTool === "sheet" && usesAnswerSheet ? (
-                <ExamAnswerSheet
-                  marksByNumber={marksByNumber}
-                  questionCount={questions.length}
-                  currentQuestion={q.index}
-                  flaggedNumbers={flaggedNumbers}
-                  onToggle={toggleMark}
-                  onNavigate={(n) => goTo(n - 1)}
-                />
-              ) : activeDeskTool === "calc" ? (
-                <Ti30MathPrint className="w-full" />
-              ) : (
-                <ExamNotesPanel
-                  value={session.notes[q.id] ?? ""}
-                  onChange={setNotes}
-                  questionLabel={`Question ${q.index}`}
-                  className="min-h-[320px]"
-                />
-              )}
-            </div>
-          </div>
+        <aside className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:top-[4.5rem] lg:inset-auto lg:bottom-auto lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
+          {usesAnswerSheet && (
+            <ToolRailButton
+              label="Answer Sheet"
+              short="Sheet"
+              active={rightPanel === "sheet"}
+              badge={answered}
+              onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
+            >
+              <FileSpreadsheet className="h-5 w-5" />
+            </ToolRailButton>
+          )}
+          <ToolRailButton
+            label="Calculator"
+            short="Calc"
+            active={rightPanel === "calc"}
+            onClick={() => (rightPanel === "calc" ? setRightPanel(null) : openPanel("calc"))}
+          >
+            <Calculator className="h-5 w-5" />
+          </ToolRailButton>
+          <ToolRailButton
+            label="Notes"
+            short="Notes"
+            active={rightPanel === "notes"}
+            badge={hasNotes}
+            onClick={() => (rightPanel === "notes" ? setRightPanel(null) : openPanel("notes"))}
+          >
+            <StickyNote className="h-5 w-5" />
+          </ToolRailButton>
+          <ToolRailButton
+            label="Draw"
+            short="Draw"
+            active={annotationMode}
+            badge={hasInk}
+            onClick={toggleDraw}
+          >
+            <PenLine className="h-5 w-5" />
+          </ToolRailButton>
         </aside>
       </div>
-
-      <aside className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:hidden">
-        {usesAnswerSheet && (
-          <ToolRailButton
-            label="Answer Sheet"
-            short="Sheet"
-            active={rightPanel === "sheet"}
-            badge={answered}
-            onClick={() => (rightPanel === "sheet" ? setRightPanel(null) : openPanel("sheet"))}
-          >
-            <FileSpreadsheet className="h-5 w-5" />
-          </ToolRailButton>
-        )}
-        <ToolRailButton
-          label="Calculator"
-          short="Calc"
-          active={rightPanel === "calc"}
-          onClick={() => (rightPanel === "calc" ? setRightPanel(null) : openPanel("calc"))}
-        >
-          <Calculator className="h-5 w-5" />
-        </ToolRailButton>
-        <ToolRailButton
-          label="Notes"
-          short="Notes"
-          active={rightPanel === "notes"}
-          badge={hasNotes}
-          onClick={() => (rightPanel === "notes" ? setRightPanel(null) : openPanel("notes"))}
-        >
-          <StickyNote className="h-5 w-5" />
-        </ToolRailButton>
-        <ToolRailButton
-          label="Draw"
-          short="Draw"
-          active={annotationMode}
-          badge={hasInk}
-          onClick={toggleDraw}
-        >
-          <PenLine className="h-5 w-5" />
-        </ToolRailButton>
-      </aside>
 
       {usesAnswerSheet && (
         <Sheet open={rightPanel === "sheet"} onOpenChange={(o) => setRightPanel(o ? "sheet" : null)}>
@@ -909,34 +846,6 @@ function TakeExamPage() {
         </SheetContent>
       </Sheet>
     </div>
-  );
-}
-
-function DeskToolTab({
-  children,
-  active,
-  badge,
-  onClick,
-}: {
-  children: React.ReactNode;
-  active?: boolean;
-  badge?: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={cn(
-        "relative rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors",
-        active ? "bg-foreground text-background" : "text-muted-foreground hover:bg-secondary hover:text-foreground",
-      )}
-    >
-      {children}
-      {badge && !active ? (
-        <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-caramel-deep" aria-hidden />
-      ) : null}
-    </button>
   );
 }
 

@@ -200,20 +200,7 @@ function ReviewExamPage() {
         {!showTaskReview ? (
           <ExamResultOverview
             examTitle={exam?.title ?? "Mock Exam"}
-            pct={analytics.pct}
-            total={analytics.total}
-            pointsTotal={analytics.pointsTotal}
-            statementPct={analytics.statementPct}
-            statementCorrect={analytics.statementCorrect}
-            statementCount={analytics.statementCount}
-            secondsTaken={analytics.secondsTaken}
-            timed={analytics.timed}
-            answeredTasks={analytics.answeredTasks}
-            taskCount={analytics.tasks.length}
-            sections={analytics.sections}
-            topics={analytics.topics}
-            hasTopicBreakdown={analytics.hasTopicBreakdown}
-            tasks={analytics.tasks}
+            analytics={analytics}
             onOpenTask={(index) => {
               setCurrentIndex(index);
               setShowTaskReview(true);

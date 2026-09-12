@@ -1,4 +1,5 @@
 import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
+import { findCustomMockSubtopic, getCustomMockChapters } from "@/data/custom-mock-catalog";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import {
   calculateExamScore,
@@ -37,6 +38,8 @@ export type TaskAnalyticsRow = {
   judgments: StatementJudgment[];
   topicKey: string;
   topicLabel: string;
+  chapterKey: string | null;
+  chapterLabel: string | null;
 };
 
 export type GroupAnalytics = {
@@ -55,6 +58,8 @@ export type GroupAnalytics = {
 
 const EMPTY_MARKS = [false, false, false, false, false];
 const SUBJECT_ORDER: SubjectKey[] = ["economics", "english", "math"];
+const REVIEW_BELOW = 70;
+const STRONG_AT = 85;
 
 export function parseMockAttemptHandoff(raw: unknown): MockAttemptHandoff | null {
   if (!raw || typeof raw !== "object") return null;
@@ -84,6 +89,50 @@ export function topicOf(q: ExamQuestion): { key: string; label: string } {
     return { key: tag, label: tag.replace(/^#\s*/, "") };
   }
   return { key: `subject:${q.subject}`, label: SUBJECT_META[q.subject].label };
+}
+
+function parseSubtopicId(tag: string): string | null {
+  return tag.trim().match(/^#\s*([A-Za-z0-9.]+)/)?.[1] ?? null;
+}
+
+export function chapterOf(q: ExamQuestion): { key: string; label: string } | null {
+  const tag = q.subtopicTag?.trim();
+  if (!tag) return null;
+  const id = parseSubtopicId(tag);
+  if (!id) return null;
+  const meta = findCustomMockSubtopic(q.subject, id);
+  const chapters = getCustomMockChapters(q.subject);
+  const ch = meta ? chapters.find((c) => c.num === meta.chapter) : undefined;
+  if (ch) {
+    const heading =
+      ch.heading.startsWith("Chapter ") && ch.title ? `${ch.num} ${ch.title}` : ch.heading;
+    return {
+      key: `${q.subject}:${ch.num}`,
+      label: `${SUBJECT_META[q.subject].label} · ${heading}`,
+    };
+  }
+  const num = id.match(/^(\d+)/)?.[1];
+  if (!num) return null;
+  return {
+    key: `${q.subject}:${num}`,
+    label: `${SUBJECT_META[q.subject].label} · ${num}`,
+  };
+}
+
+export function medianNumber(values: number[]): number {
+  if (values.length === 0) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 === 1 ? (sorted[mid] ?? 0) : ((sorted[mid - 1] ?? 0) + (sorted[mid] ?? 0)) / 2;
+}
+
+export function splitFocus(rows: GroupAnalytics[]) {
+  const sorted = [...rows].sort((a, b) => a.accuracyPct - b.accuracyPct || a.label.localeCompare(b.label));
+  return {
+    toReview: sorted.filter((r) => r.accuracyPct < REVIEW_BELOW),
+    watch: sorted.filter((r) => r.accuracyPct >= REVIEW_BELOW && r.accuracyPct < STRONG_AT),
+    holdingWell: [...sorted.filter((r) => r.accuracyPct >= STRONG_AT)].reverse(),
+  };
 }
 
 function groupRows(
@@ -161,6 +210,7 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
     const statementCorrect = judgments.filter((j) => j.judgedOk).length;
     const statementCount = judgments.length;
     const topic = topicOf(m.question);
+    const chapter = chapterOf(m.question);
     return {
       question: m.question,
       statements: m.statements,
@@ -174,6 +224,8 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
       judgments,
       topicKey: topic.key,
       topicLabel: topic.label,
+      chapterKey: chapter?.key ?? null,
+      chapterLabel: chapter?.label ?? null,
     };
   });
 
@@ -203,6 +255,19 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
       )
     : [];
 
+  const chapterTasks = tasks.filter((t) => t.chapterKey && t.chapterLabel);
+  const chapters = chapterTasks.length
+    ? groupRows(
+        chapterTasks,
+        (t) => t.chapterKey!,
+        (t) => t.chapterLabel!,
+        (t) => SUBJECT_META[t.question.subject].color,
+      )
+    : [];
+
+  const times = tasks.map((t) => t.seconds);
+  const focus = splitFocus(hasTopicBreakdown ? topics : sections);
+
   return {
     tasks,
     taskScores,
@@ -214,9 +279,15 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
     statementPct: statementCount ? Math.round((statementCorrect / statementCount) * 100) : 0,
     sections,
     topics,
+    chapters,
     hasTopicBreakdown,
     secondsTaken: attempt?.secondsTaken ?? null,
     timed: attempt?.timed ?? false,
     answeredTasks: tasks.filter((t) => t.statements.some((s) => s.userMarked)).length,
+    medianSeconds: medianNumber(times),
+    meanSeconds: times.length ? Math.round(times.reduce((a, b) => a + b, 0) / times.length) : 0,
+    toReview: focus.toReview,
+    watch: focus.watch,
+    holdingWell: focus.holdingWell,
   };
 }

@@ -1,12 +1,52 @@
+import { useMemo, type CSSProperties, type ReactNode } from "react";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Pie,
+  PieChart,
+  ReferenceLine,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { SUBJECT_META } from "@/config/scoring-config";
 import type { GroupAnalytics, TaskAnalyticsRow } from "@/lib/mock-exam-analytics";
+import { buildExamAnalytics } from "@/lib/mock-exam-analytics";
 import { formatCompactDuration, formatQuestionTime } from "@/lib/mock-exam-session";
 import { cn } from "@/lib/utils";
+
+type Analytics = ReturnType<typeof buildExamAnalytics>;
+
+const INK = "var(--foreground)";
+const MUTED = "var(--muted-foreground)";
+const GRID = "var(--border)";
+const axisTick = { fill: MUTED, fontSize: 11 };
+
+function tipStyle(): CSSProperties {
+  return {
+    background: "var(--popover)",
+    border: "1px solid var(--border)",
+    borderRadius: 12,
+    fontSize: 12,
+    color: INK,
+    boxShadow: "0 8px 24px color-mix(in oklab, var(--foreground) 12%, transparent)",
+  };
+}
 
 function formatDelta(n: number) {
   if (n > 0) return `+${n.toFixed(1)}`;
   if (n < 0) return n.toFixed(1);
   return "0";
+}
+
+function formatAxisSeconds(value: number) {
+  const sec = Math.max(0, Math.round(value));
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${m}:${String(s).padStart(2, "0")}`;
 }
 
 function Stat({
@@ -40,23 +80,36 @@ function Meter({ pct, color }: { pct: number; color: string }) {
   );
 }
 
+function ChartFrame({
+  title,
+  hint,
+  children,
+  tall,
+}: {
+  title: string;
+  hint?: string;
+  children: ReactNode;
+  tall?: boolean;
+}) {
+  return (
+    <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+      <div className="border-b border-border px-5 py-4 sm:px-6">
+        <h2 className="font-display text-xl font-semibold tracking-tight">{title}</h2>
+        {hint ? <p className="mt-1 text-sm text-muted-foreground">{hint}</p> : null}
+      </div>
+      <div className={cn("w-full px-2 pb-4 pt-3 sm:px-4", tall ? "h-72" : "h-64")}>{children}</div>
+    </section>
+  );
+}
+
 function GroupTable({
   title,
   rows,
-  empty,
 }: {
   title: string;
   rows: GroupAnalytics[];
-  empty?: string;
 }) {
-  if (rows.length === 0) {
-    return empty ? (
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <h2 className="font-display text-xl font-semibold tracking-tight">{title}</h2>
-        <p className="mt-2 text-sm text-muted-foreground">{empty}</p>
-      </section>
-    ) : null;
-  }
+  if (rows.length === 0) return null;
 
   return (
     <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
@@ -92,7 +145,7 @@ function GroupTable({
                     </div>
                   </div>
                   <div className="mt-2 max-w-xs">
-                    <Meter pct={row.scorePct} color={row.color} />
+                    <Meter pct={row.accuracyPct} color={row.color} />
                   </div>
                 </td>
                 <td className="px-3 py-4 text-right tabular-nums">
@@ -134,50 +187,144 @@ function StatementCells({ task }: { task: TaskAnalyticsRow }) {
           )}
         >
           {j.letter}
-          <span className="sr-only">
-            {j.judgedOk ? "correct" : "incorrect"}
-          </span>
+          <span className="sr-only">{j.judgedOk ? "correct" : "incorrect"}</span>
         </span>
       ))}
     </div>
   );
 }
 
+function FocusList({
+  title,
+  hint,
+  rows,
+  empty,
+}: {
+  title: string;
+  hint: string;
+  rows: GroupAnalytics[];
+  empty: string;
+}) {
+  return (
+    <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+      <h3 className="font-display text-lg font-semibold tracking-tight">{title}</h3>
+      <p className="mt-1 text-sm text-muted-foreground">{hint}</p>
+      {rows.length === 0 ? (
+        <p className="mt-5 text-sm text-muted-foreground">{empty}</p>
+      ) : (
+        <ul className="mt-5 space-y-4">
+          {rows.map((row) => (
+            <li key={row.key}>
+              <div className="mb-1.5 flex items-baseline justify-between gap-3">
+                <p className="min-w-0 truncate text-sm font-medium">{row.label}</p>
+                <p className="shrink-0 tabular-nums text-sm font-semibold">{row.accuracyPct}%</p>
+              </div>
+              <Meter pct={row.accuracyPct} color={row.color} />
+              <p className="mt-1 text-xs text-muted-foreground">
+                {row.statementCorrect}/{row.statementCount} statements · {row.scorePct}% of points
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+function TimeTooltip({
+  active,
+  payload,
+}: {
+  active?: boolean;
+  payload?: Array<{ payload: { q: number; seconds: number; subject: string; accuracy: number } }>;
+}) {
+  if (!active || !payload?.[0]) return null;
+  const row = payload[0].payload;
+  return (
+    <div className="rounded-xl border border-border bg-popover px-3 py-2 text-xs shadow-md">
+      <p className="font-medium">Question {row.q}</p>
+      <p className="mt-0.5 text-muted-foreground">
+        {row.subject} · {formatQuestionTime(row.seconds)} · {row.accuracy}%
+      </p>
+    </div>
+  );
+}
+
 export function ExamResultOverview({
   examTitle,
-  pct,
-  total,
-  pointsTotal,
-  statementPct,
-  statementCorrect,
-  statementCount,
-  secondsTaken,
-  timed,
-  answeredTasks,
-  taskCount,
-  sections,
-  topics,
-  hasTopicBreakdown,
-  tasks,
+  analytics,
   onOpenTask,
 }: {
   examTitle: string;
-  pct: number;
-  total: number;
-  pointsTotal: number;
-  statementPct: number;
-  statementCorrect: number;
-  statementCount: number;
-  secondsTaken: number | null;
-  timed: boolean;
-  answeredTasks: number;
-  taskCount: number;
-  sections: GroupAnalytics[];
-  topics: GroupAnalytics[];
-  hasTopicBreakdown: boolean;
-  tasks: TaskAnalyticsRow[];
+  analytics: Analytics;
   onOpenTask: (index: number) => void;
 }) {
+  const {
+    pct,
+    total,
+    pointsTotal,
+    statementPct,
+    statementCorrect,
+    statementCount,
+    secondsTaken,
+    timed,
+    answeredTasks,
+    tasks,
+    sections,
+    topics,
+    chapters,
+    hasTopicBreakdown,
+    medianSeconds,
+    meanSeconds,
+    toReview,
+    watch,
+    holdingWell,
+  } = analytics;
+
+  const timeSeries = useMemo(
+    () =>
+      tasks.map((t) => ({
+        q: t.question.index,
+        seconds: t.seconds,
+        subject: SUBJECT_META[t.question.subject].label,
+        color: SUBJECT_META[t.question.subject].color,
+        accuracy: t.accuracyPct,
+      })),
+    [tasks],
+  );
+
+  const slowest = useMemo(() => {
+    const withTime = tasks.filter((t) => t.seconds > 0);
+    return [...withTime].sort((a, b) => b.seconds - a.seconds)[0] ?? null;
+  }, [tasks]);
+
+  const subjectPie = useMemo(
+    () =>
+      sections.map((s) => ({
+        name: s.label,
+        value: Math.max(s.accuracyPct, 0.01),
+        accuracy: s.accuracyPct,
+        color: s.color,
+        earned: s.earned,
+        max: s.max,
+      })),
+    [sections],
+  );
+
+  const chapterBars = useMemo(
+    () =>
+      [...chapters]
+        .sort((a, b) => a.accuracyPct - b.accuracyPct)
+        .map((c) => ({
+          name: c.label,
+          accuracy: c.accuracyPct,
+          color: c.color,
+        })),
+    [chapters],
+  );
+
+  const tickEvery = tasks.length > 20 ? 4 : tasks.length > 12 ? 2 : 1;
+
   return (
     <div className="space-y-8">
       <header>
@@ -185,7 +332,7 @@ export function ExamResultOverview({
           {examTitle}
         </h1>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-          wi2 scoring across every statement. Green letters were judged correctly; red were not.
+          Time, accuracy, and wi2 points from the first question to the last.
         </p>
       </header>
 
@@ -207,18 +354,203 @@ export function ExamResultOverview({
             hint={timed ? "Timed sitting" : "Untimed sitting"}
           />
           <Stat
-            value={`${answeredTasks}/${taskCount}`}
-            label="Tasks with a mark"
-            hint={`${taskCount - answeredTasks} left blank`}
+            value={formatQuestionTime(medianSeconds)}
+            label="Median per question"
+            hint={`Average ${formatQuestionTime(meanSeconds)} · ${answeredTasks}/${tasks.length} marked`}
+          />
+        </div>
+      </section>
+
+      <ChartFrame
+        title="Time per question"
+        hint={
+          slowest
+            ? `Q1 → Q${tasks.at(-1)?.question.index ?? tasks.length}. Median ${formatQuestionTime(medianSeconds)}. Longest: Q${slowest.question.index} (${formatQuestionTime(slowest.seconds)}).`
+            : "Seconds spent on each question, in exam order."
+        }
+        tall
+      >
+        {timeSeries.every((d) => d.seconds === 0) ? (
+          <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+            Time per question was not recorded for this sitting.
+          </div>
+        ) : (
+          <ResponsiveContainer width="100%" height="100%" debounce={80}>
+            <BarChart data={timeSeries} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+              <CartesianGrid stroke={GRID} vertical={false} />
+              <XAxis
+                dataKey="q"
+                tick={axisTick}
+                axisLine={false}
+                tickLine={false}
+                interval={tickEvery - 1}
+              />
+              <YAxis
+                tick={axisTick}
+                axisLine={false}
+                tickLine={false}
+                width={40}
+                tickFormatter={formatAxisSeconds}
+              />
+              <Tooltip content={<TimeTooltip />} cursor={{ fill: "color-mix(in oklab, var(--foreground) 6%, transparent)" }} />
+              {medianSeconds > 0 ? (
+                <ReferenceLine
+                  y={medianSeconds}
+                  stroke={MUTED}
+                  strokeDasharray="4 4"
+                />
+              ) : null}
+              <Bar dataKey="seconds" radius={[3, 3, 0, 0]} maxBarSize={28} isAnimationActive={false}>
+                {timeSeries.map((row) => (
+                  <Cell key={row.q} fill={row.color} />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        )}
+      </ChartFrame>
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        <ChartFrame title="Accuracy by subject" hint="Share of statements judged correctly in each section.">
+          {subjectPie.length === 0 ? (
+            <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+              No section data.
+            </div>
+          ) : (
+            <div className="flex h-full flex-col items-center gap-4 sm:flex-row sm:items-center">
+              <div className="mx-auto shrink-0" style={{ width: 196, height: 196 }}>
+                <PieChart width={196} height={196}>
+                  <Pie
+                    data={subjectPie}
+                    dataKey="value"
+                    nameKey="name"
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={58}
+                    outerRadius={88}
+                    paddingAngle={2}
+                    stroke="var(--card)"
+                    strokeWidth={2}
+                    isAnimationActive={false}
+                  >
+                    {subjectPie.map((row) => (
+                      <Cell key={row.name} fill={row.color} />
+                    ))}
+                  </Pie>
+                  <Tooltip
+                    contentStyle={tipStyle()}
+                    formatter={(_value, name, item) => {
+                      const row = item?.payload as { accuracy: number; earned: number; max: number } | undefined;
+                      return row
+                        ? [`${row.accuracy}% · ${row.earned.toFixed(1)} / ${row.max.toFixed(1)} pts`, String(name)]
+                        : ["", String(name)];
+                    }}
+                  />
+                </PieChart>
+              </div>
+              <ul className="w-full min-w-0 flex-1 space-y-3 px-2">
+                {subjectPie.map((row) => (
+                  <li key={row.name}>
+                    <div className="mb-1 flex items-baseline justify-between gap-3 text-sm">
+                      <span className="flex min-w-0 items-center gap-2">
+                        <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: row.color }} />
+                        <span className="truncate font-medium">{row.name}</span>
+                      </span>
+                      <span className="tabular-nums font-semibold">{row.accuracy}%</span>
+                    </div>
+                    <Meter pct={row.accuracy} color={row.color} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </ChartFrame>
+
+        <ChartFrame
+          title="Accuracy by chapter"
+          hint={
+            chapterBars.length
+              ? "Chapters ordered from weakest to strongest."
+              : "Chapter tags appear on Custom Mock Builder exams."
+          }
+        >
+          {chapterBars.length === 0 ? (
+            <div className="flex h-full items-center justify-center px-6 text-center text-sm text-muted-foreground">
+              This sitting has no chapter labels, so the breakdown stays at subject level.
+            </div>
+          ) : (
+            <ResponsiveContainer width="100%" height="100%" debounce={80}>
+              <BarChart
+                data={chapterBars}
+                layout="vertical"
+                margin={{ top: 4, right: 16, left: 8, bottom: 4 }}
+              >
+                <CartesianGrid stroke={GRID} horizontal={false} />
+                <XAxis
+                  type="number"
+                  domain={[0, 100]}
+                  tick={axisTick}
+                  axisLine={false}
+                  tickLine={false}
+                  tickFormatter={(v) => `${v}%`}
+                />
+                <YAxis
+                  type="category"
+                  dataKey="name"
+                  width={128}
+                  tick={axisTick}
+                  axisLine={false}
+                  tickLine={false}
+                />
+                <Tooltip
+                  contentStyle={tipStyle()}
+                  formatter={(value) => [`${value}%`, "Accuracy"]}
+                />
+                <Bar dataKey="accuracy" radius={[0, 4, 4, 0]} maxBarSize={18} isAnimationActive={false}>
+                  {chapterBars.map((row) => (
+                    <Cell key={row.name} fill={row.color} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          )}
+        </ChartFrame>
+      </div>
+
+      <section>
+        <div className="mb-4">
+          <h2 className="font-display text-xl font-semibold tracking-tight">What to study next</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {hasTopicBreakdown
+              ? "Topics below 70% need another pass. 85% and above are holding."
+              : "Sections below 70% need another pass. 85% and above are holding."}
+          </p>
+        </div>
+        <div className="grid gap-6 lg:grid-cols-3">
+          <FocusList
+            title="Review"
+            hint="Under 70% of statements judged correctly."
+            rows={toReview}
+            empty="Nothing in this band."
+          />
+          <FocusList
+            title="Watch"
+            hint="70–84%. Solid enough, still leaky."
+            rows={watch}
+            empty="Nothing in this band."
+          />
+          <FocusList
+            title="Holding well"
+            hint="85% and above."
+            rows={holdingWell}
+            empty="Nothing reached 85% yet."
           />
         </div>
       </section>
 
       <GroupTable title="Sections" rows={sections} />
-
-      {hasTopicBreakdown ? (
-        <GroupTable title="Topics" rows={topics} />
-      ) : null}
+      {hasTopicBreakdown ? <GroupTable title="Topics" rows={topics} /> : null}
+      {chapters.length > 0 ? <GroupTable title="Chapters" rows={chapters} /> : null}
 
       <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border px-5 py-4 sm:px-6">
