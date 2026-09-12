@@ -123,8 +123,11 @@ def remaining(path: Path) -> dict[str, int]:
 
 
 def main() -> None:
-    paths = sorted(ROOT.glob("math-*.ts")) + sorted(ROOT.glob("math-*.json"))
-    # also nested math-cases etc. already covered by math-*
+    paths = (
+        sorted(ROOT.glob("math-*.ts"))
+        + sorted(ROOT.glob("math-*.json"))
+        + sorted((ROOT / "math-theory").glob("*.md"))
+    )
     before = {str(p): remaining(p) for p in paths}
     changed_files: list[str] = []
     total_unwrapped = 0
@@ -136,6 +139,7 @@ def main() -> None:
         if path.suffix == ".json":
             n = process_json(path)
         else:
+            # .ts template sources and .md theory pages share source-level escapes
             n = process_ts(path)
         total_unwrapped += n
         if n:
