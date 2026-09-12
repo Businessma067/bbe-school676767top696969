@@ -616,7 +616,7 @@ function GamesTab({ locked = false }: { locked?: boolean }) {
         {cards.map((card) => {
           const body = (
             <>
-              <div className="flex h-[6.75rem] w-full items-center justify-center overflow-hidden bg-secondary">
+              <div className="h-32 w-full overflow-hidden bg-secondary">
                 {card.art}
               </div>
               <div className="p-5">

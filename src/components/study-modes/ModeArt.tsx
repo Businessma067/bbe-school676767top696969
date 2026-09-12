@@ -194,9 +194,9 @@ function MiniCard({
   sample: string;
 }) {
   return (
-    <div className="flex h-[4.75rem] w-[3.85rem] flex-col items-center justify-center rounded-lg border border-border bg-card px-1 py-2 sm:h-[5.25rem] sm:w-[3.85rem]">
-      <SubjectGlyph subject={subject} className="h-5 w-5 shrink-0 text-foreground" />
-      <span className="mt-1.5 line-clamp-2 flex h-7 w-full items-center justify-center px-0.5 text-center text-[7px] font-semibold leading-tight text-foreground">
+    <div className="flex h-full w-[4.35rem] flex-col items-center justify-center rounded-xl border border-border bg-card px-1.5 sm:w-[4.65rem]">
+      <SubjectGlyph subject={subject} className="h-6 w-6 shrink-0 text-foreground" />
+      <span className="mt-2 line-clamp-2 flex min-h-8 w-full items-center justify-center px-0.5 text-center text-[8px] font-semibold leading-tight text-foreground">
         {sample}
       </span>
       <span className="mt-1 w-full text-center text-[7px] font-semibold uppercase tracking-wider text-taupe">
@@ -211,11 +211,11 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
   return (
     <div
       className={
-        "box-border flex h-full w-full items-center justify-center overflow-hidden bg-transparent px-3 " +
+        "box-border flex h-full w-full items-stretch justify-center overflow-hidden px-4 py-3 " +
         className
       }
     >
-      <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
+      <div className="flex h-full items-stretch justify-center gap-2.5">
         <MiniCard subject="economics" label="Econ" sample="Inflation" />
         <MiniCard subject="math" label="Math" sample="Discriminant" />
         <MiniCard subject="english" label="Eng" sample="Arbitrage" />
@@ -246,15 +246,34 @@ export function FlashcardsSubjectArt({
 function MatchingPairs({
   pairs,
   accent,
+  fill = false,
 }: {
   pairs: Pair[];
   accent: string;
+  fill?: boolean;
 }) {
   return (
-    <div className={"flex min-w-0 flex-col gap-1 " + PREVIEW_PAIRS_WIDTH}>
+    <div
+      className={
+        "flex min-w-0 flex-col " +
+        PREVIEW_PAIRS_WIDTH +
+        (fill ? " h-full justify-center gap-2" : " gap-1")
+      }
+    >
       {pairs.map(([left, right]) => (
-        <div key={left} className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-1">
-          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border border-border bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
+        <div
+          key={left}
+          className={
+            "grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-1 " +
+            (fill ? "flex-1" : "")
+          }
+        >
+          <span
+            className={
+              "flex min-w-0 items-center justify-center overflow-hidden rounded-md border border-border bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground " +
+              (fill ? "h-full min-h-[2.25rem]" : "min-h-[1.5rem]")
+            }
+          >
             <span className="truncate">{left}</span>
           </span>
           <span
@@ -264,7 +283,12 @@ function MatchingPairs({
           >
             →
           </span>
-          <span className="flex min-h-[1.5rem] min-w-0 items-center justify-center overflow-hidden rounded-md border border-border bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground">
+          <span
+            className={
+              "flex min-w-0 items-center justify-center overflow-hidden rounded-md border border-border bg-card px-1 py-1 text-center text-[9px] font-semibold leading-none text-foreground " +
+              (fill ? "h-full min-h-[2.25rem]" : "min-h-[1.5rem]")
+            }
+          >
             <span className="truncate">{right}</span>
           </span>
         </div>
@@ -284,11 +308,12 @@ export function MatchingModeArt({
   return (
     <div
       className={
-        "flex h-full w-full items-center justify-center bg-transparent px-4 " +
+        "flex h-full w-full items-stretch justify-center px-5 py-3 " +
         className
       }
     >
       <MatchingPairs
+        fill
         accent={accent}
         pairs={DASHBOARD_MODE_PREVIEW.matching}
       />
@@ -391,7 +416,7 @@ export function TutorModeArt({
   return (
     <div
       className={
-        "flex h-full w-full items-center justify-center gap-3 bg-transparent px-4 " +
+        "flex h-full w-full items-center justify-center gap-3 px-5 py-3 " +
         className
       }
     >
