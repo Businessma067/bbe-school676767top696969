@@ -11,13 +11,13 @@ export const Route = createFileRoute("/matching/")({
       {
         name: "description",
         content:
-          "Connect BBE Economics, Math, and English concepts to their meanings — an interactive matching game for the WU entrance exam.",
+          "Connect BBE Economics, Math, and English concepts to their meanings. An interactive matching drill for the WU entrance exam.",
       },
       { property: "og:title", content: "Matching — BBE School" },
       {
         property: "og:description",
         content:
-          "Connect BBE Economics, Math, and English concepts to their meanings — an interactive matching game for the WU entrance exam.",
+          "Connect BBE Economics, Math, and English concepts to their meanings. An interactive matching drill for the WU entrance exam.",
       },
     ],
   }),
@@ -36,7 +36,7 @@ function MatchingIndexPage() {
               Matching
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Connect each concept to the right meaning. Same study bank as flashcards — different drill.
+              Connect each concept to the right meaning. Same study bank as flashcards, different drill.
             </p>
           </div>
 

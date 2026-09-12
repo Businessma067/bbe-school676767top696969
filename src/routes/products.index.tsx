@@ -118,7 +118,7 @@ const products: Product[] = [
     title: "Demo-Practice Package",
     image: DEMO_COURSE_IMAGE,
     description:
-      "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.",
+      "A free trial with 50+ starter cases across all three subjects, with step by step explanations of the exam format.",
     cta: "Visit for free",
     to: "/products/demo-practice",
   },
@@ -126,7 +126,7 @@ const products: Product[] = [
     title: "Full BBE Course",
     image: FULL_COURSE_IMAGE,
     description:
-      "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.",
+      "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.",
     cta: "Buy course · €449",
     to: FULL_COURSE_PRODUCT_HREF,
     ownedCta: "Go to course",
@@ -137,7 +137,7 @@ const products: Product[] = [
     title: "Lite BBE Course",
     image: LITE_COURSE_IMAGE,
     description:
-      "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.",
+      "A 950+ question database with step by step logic under every statement. For self paced preparation.",
     cta: "Coming soon",
     disabled: true,
   },

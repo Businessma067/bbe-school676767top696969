@@ -8,7 +8,6 @@ import {
   Cell,
   Pie,
   PieChart,
-  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -22,7 +21,7 @@ import { cn } from "@/lib/utils";
 
 type Analytics = ReturnType<typeof buildExamAnalytics>;
 
-const INK = "var(--foreground)";
+const STROKE = "var(--color-caramel-deep)";
 const MUTED = "var(--muted-foreground)";
 const GRID = "var(--border)";
 const axisTick = { fill: MUTED, fontSize: 11 };
@@ -33,7 +32,7 @@ function tipStyle(): CSSProperties {
     border: "1px solid var(--border)",
     borderRadius: 12,
     fontSize: 12,
-    color: INK,
+    color: "var(--foreground)",
     boxShadow: "0 8px 24px color-mix(in oklab, var(--foreground) 12%, transparent)",
   };
 }
@@ -367,7 +366,7 @@ export function ExamResultOverview({
         title="Time per question"
         hint={
           slowest
-            ? `Q1 → Q${tasks.at(-1)?.question.index ?? tasks.length}. Median ${formatQuestionTime(medianSeconds)}. Longest: Q${slowest.question.index} (${formatQuestionTime(slowest.seconds)}).`
+            ? `Q1 to Q${tasks.at(-1)?.question.index ?? tasks.length}. Longest: Q${slowest.question.index} (${formatQuestionTime(slowest.seconds)}).`
             : "Seconds spent on each question, in exam order."
         }
         tall
@@ -381,8 +380,8 @@ export function ExamResultOverview({
             <AreaChart data={timeSeries} margin={{ top: 10, right: 12, left: 0, bottom: 0 }}>
               <defs>
                 <linearGradient id="mockExamTimeFill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor={INK} stopOpacity={0.22} />
-                  <stop offset="100%" stopColor={INK} stopOpacity={0} />
+                  <stop offset="0%" stopColor={STROKE} stopOpacity={0.22} />
+                  <stop offset="100%" stopColor={STROKE} stopOpacity={0} />
                 </linearGradient>
               </defs>
               <CartesianGrid stroke={GRID} vertical={false} />
@@ -405,17 +404,14 @@ export function ExamResultOverview({
                 content={<TimeTooltip />}
                 cursor={{ stroke: GRID, strokeWidth: 1 }}
               />
-              {medianSeconds > 0 ? (
-                <ReferenceLine y={medianSeconds} stroke={MUTED} strokeDasharray="4 4" />
-              ) : null}
               <Area
                 type="monotone"
                 dataKey="seconds"
-                stroke={INK}
+                stroke={STROKE}
                 strokeWidth={2}
                 fill="url(#mockExamTimeFill)"
-                dot={{ r: 3, strokeWidth: 0, fill: INK }}
-                activeDot={{ r: 5, strokeWidth: 0, fill: INK }}
+                dot={{ r: 3, strokeWidth: 0, fill: STROKE }}
+                activeDot={{ r: 5, strokeWidth: 0, fill: STROKE }}
                 isAnimationActive={false}
               />
             </AreaChart>

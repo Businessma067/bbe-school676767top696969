@@ -211,13 +211,10 @@ export function FlashcardsModeArt({ className = "" }: { className?: string }) {
   return (
     <div
       className={
-        "box-border flex h-full w-full flex-col items-center justify-center gap-2 overflow-hidden bg-secondary px-4 py-2 " +
+        "box-border flex h-full w-full items-center justify-center overflow-hidden bg-transparent px-3 " +
         className
       }
     >
-      <p className="shrink-0 text-center text-[10px] font-semibold uppercase leading-none tracking-widest text-caramel-deep">
-        Tap to flip
-      </p>
       <div className="flex shrink-0 items-center justify-center gap-2 sm:gap-2.5">
         <MiniCard subject="economics" label="Econ" sample="Inflation" />
         <MiniCard subject="math" label="Math" sample="Discriminant" />
@@ -287,13 +284,10 @@ export function MatchingModeArt({
   return (
     <div
       className={
-        "flex h-full w-full flex-col items-center justify-center gap-2 bg-secondary px-4 py-3 " +
+        "flex h-full w-full items-center justify-center bg-transparent px-4 " +
         className
       }
     >
-      <p className="text-[10px] font-semibold uppercase leading-none tracking-widest text-caramel-deep">
-        Concept ↔ Meaning
-      </p>
       <MatchingPairs
         accent={accent}
         pairs={DASHBOARD_MODE_PREVIEW.matching}
@@ -314,11 +308,6 @@ function TutorRobot({
 
   return (
     <div className="flex shrink-0 flex-col items-center" aria-hidden>
-      <span
-        className="mb-0.5 h-1.5 w-1.5 rounded-full"
-        style={{ backgroundColor: accent }}
-      />
-      <span className="mb-0.5 h-1.5 w-px bg-foreground/80" />
       <div
         className={
           "flex flex-col items-center justify-center rounded-xl border border-border bg-card " +
@@ -402,7 +391,7 @@ export function TutorModeArt({
   return (
     <div
       className={
-        "flex h-full w-full items-center justify-center gap-3 bg-secondary px-4 py-3 " +
+        "flex h-full w-full items-center justify-center gap-3 bg-transparent px-4 " +
         className
       }
     >
@@ -412,9 +401,6 @@ export function TutorModeArt({
           className="absolute -left-1.5 top-5 h-3 w-3 rotate-45 border-b border-l border-border bg-card"
           aria-hidden
         />
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-          Tutor Bot
-        </p>
         <p className="line-clamp-2 font-display text-xs font-bold leading-snug text-foreground">
           {preview.question}
         </p>

@@ -39,13 +39,13 @@ export const Route = createFileRoute("/products/full-course")({
       {
         name: "description",
         content:
-          "The complete WU BBE entrance exam preparation system: 2000+ tasks, full mock exams, AI explanations, and direct human support.",
+          "The complete WU BBE entrance exam preparation system: 2000+ tasks, full mock exams, explanations, and direct human support.",
       },
       { property: "og:title", content: "Full BBE Course — Unlock Full Access" },
       {
         property: "og:description",
         content:
-          "2000+ practice tasks, mock exams, AI assistance, and direct support built for the real WU BBE exam.",
+          "2000+ practice tasks, mock exams, explanations, and direct support for the real WU BBE exam.",
       },
       { name: "twitter:card", content: "summary_large_image" },
       ...socialImageMetaForPath("/products/full-course"),
@@ -66,7 +66,7 @@ const features = [
   {
     icon: BookOpen,
     title: "3 Subjects",
-    text: "Math, English, and Business & Economics — fully covered.",
+    text: "Math, English, and Business & Economics, fully covered.",
     accent: false,
   },
   {
@@ -83,8 +83,8 @@ const features = [
   },
   {
     icon: Sparkles,
-    title: "AI Assistance",
-    text: "Personalized explanations, on demand, for every question.",
+    title: "Explanations",
+    text: "A written explanation for every question.",
     accent: true,
   },
   {
@@ -113,7 +113,7 @@ const fullCourseFaqs = [
   {
     question: "What is included in the Full Course?",
     answer:
-      "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.",
+      "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, explanations, Mock Exams, the text highlighter tool, all speed simulators, and the digital answer sheet simulator.",
   },
   {
     question: "Is this a subscription or a one-time payment?",
@@ -121,9 +121,9 @@ const fullCourseFaqs = [
       "It is a strict one-time payment of €449. There are no monthly fees, no hidden subscriptions, and no upsells. You pay once and get full access until the entire 2026/2027 exam cycle is over.",
   },
   {
-    question: "How does the AI Study Companion work?",
+    question: "How do explanations work?",
     answer:
-      "When you request a breakdown for any task, the system instantly scans the official exam literature. It returns a direct explanation written in simple language and applies an animated neon highlight to pin the exact proof sentence inside the source text viewport.",
+      "When you request a breakdown for any task, the platform returns a direct explanation and highlights the relevant sentence in the source text.",
   },
   {
     question: "Are the questions identical to the real WU Vienna entrance exam?",
@@ -153,7 +153,7 @@ const fullCourseFaqs = [
   {
     question: "Can I study using my mobile phone?",
     answer:
-      "Yes. The entire software is fully cloud-optimized and ultra-responsive. You can train your speed drills, review flashcards, solve tasks, and read AI explanations seamlessly on any smartphone, tablet, laptop, or desktop computer.",
+      "Yes. The platform works on a smartphone, tablet, laptop, or desktop. You can run drills, review flashcards, solve tasks, and read explanations.",
   },
   {
     question: "Can two students share one account?",

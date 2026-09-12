@@ -32,9 +32,6 @@ export function StudyProgressSection({ tasks, mocks, sessionAnswers }: Props) {
           <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">
             Study Progress
           </h2>
-          <p className="mt-1 max-w-xl text-sm text-muted-foreground">
-            Daily accuracy from every True/False statement you answer — practice, quizzes, and mocks.
-          </p>
         </div>
         <HeatmapLegend />
       </div>

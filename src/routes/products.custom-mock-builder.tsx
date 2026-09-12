@@ -289,7 +289,7 @@ function CustomMockBuilderPage() {
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
               Pick topics and subtopics, choose how many questions, and build a mock from the Full
-              Course — up to {CUSTOM_MOCK_MAX_QUESTIONS}.
+              Course. Up to {CUSTOM_MOCK_MAX_QUESTIONS} questions.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">

@@ -11,13 +11,13 @@ export const Route = createFileRoute("/tutor-exam/")({
       {
         name: "description",
         content:
-          "A tutor robot runs a random theoretical exam on BBE Economics, Math, and English — a new question set every time.",
+          "A tutor robot runs a random theoretical exam on BBE Economics, Math, and English. A new question set every time.",
       },
       { property: "og:title", content: "Tutor Exam — BBE School" },
       {
         property: "og:description",
         content:
-          "A tutor robot runs a random theoretical exam on BBE Economics, Math, and English — a new question set every time.",
+          "A tutor robot runs a random theoretical exam on BBE Economics, Math, and English. A new question set every time.",
       },
     ],
   }),
@@ -36,7 +36,7 @@ function TutorExamIndexPage() {
               Tutor Exam
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              A study robot quizzes you on theory — fully random questions each
+              A study robot quizzes you on theory. Fully random questions each
               run, per subject.
             </p>
           </div>

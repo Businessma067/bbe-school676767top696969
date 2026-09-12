@@ -75,9 +75,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Kurs",
     "Mock exams": "Probeprüfungen",
-    "Statement explanations with AI beside them": "Aussagen-Erklärungen mit KI daneben",
-    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.":
-      "Öffne einen Leitfaden, wähle eine Aufgabe, reiche ein und öffne die volle Lösung. Bei jeder Aussage tippst du auf KI-Erklärung und liest die taktische Analyse und den KI-Pass nebeneinander — ohne die Lösung zu verlassen.",
+    "Statement explanations beside the solution": "Aussagen-Erklärungen neben der Lösung",
+    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap Explanation to read the write-up next to the solution, without leaving the panel.":
+      "Öffne einen Leitfaden, wähle eine Aufgabe, reiche ein und öffne die volle Lösung. Bei jeder Aussage tippst du auf Erklärung und liest den Text neben der Lösung, ohne das Panel zu verlassen.",
     "Explore Economics": "Wirtschaft entdecken",
     "Timed drills with the exam calculator": "Timed Mode mit dem Prüfungsrechner",
     "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
@@ -101,12 +101,12 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Übe Wirtschaftsdefinitionen, Mathematikformeln und Englisch-Vokabeln. Drehe jede Karte, bewerte dein Wissen und baue Abruf vor der Prüfung auf.",
     "Open Flashcards": "Karteikarten öffnen",
     "Connect concepts to the right meaning": "Begriffe mit der richtigen Bedeutung verbinden",
-    "Pair each term with its definition in a timed matching board. Same decks as the flashcards — a different way to lock the links in.":
-      "Ordne jeden Begriff seiner Definition auf einem timed Matching-Board zu. Dieselben Decks wie die Karteikarten — ein anderer Weg, die Verbindungen zu festigen.",
+    "Pair each term with its definition in a timed matching board. Same decks as the flashcards, a different drill.":
+      "Ordne jeden Begriff seiner Definition auf einem timed Matching-Board zu. Dieselben Decks wie die Karteikarten, ein anderes Drill.",
     "Open Matching": "Matching öffnen",
     "A random theoretical quiz with a tutor": "Ein zufälliges Theorie-Quiz mit Tutor",
-    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.":
-      "Der Tutor-Roboter wählt bei jedem Durchlauf neue Fragen. Antworte, erhalte sofort Feedback und übe Theorie, bis sie automatisch sitzt.",
+    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory.":
+      "Der Tutor-Roboter wählt bei jedem Durchlauf neue Fragen. Antworte, erhalte sofort Feedback und übe Theorie.",
     "Open Tutor Exam": "Tutor-Prüfung öffnen",
     "Zoom in": "Vergrößern",
     "Zoom out": "Verkleinern",
@@ -114,16 +114,16 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
     // Products
     "Demo-Practice Package": "Demo-Übungspaket",
-    "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.":
-      "Ein kostenloser Test mit 50+ Einstiegsaufgaben in allen drei Fächern samt Schritt-für-Schritt-Erklärungen – so erlebst du die echte Prüfung, bevor du dich festlegst.",
+    "A free trial with 50+ starter cases across all three subjects, with step by step explanations of the exam format.":
+      "Ein kostenloser Test mit 50+ Einstiegsaufgaben in allen drei Fächern samt Schritt-für-Schritt-Erklärungen zum Prüfungsformat.",
     "Visit for free": "Kostenlos ansehen",
     "Full BBE Course": "BBE-Vollkurs",
-    "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.":
-      "Das komplette Vorbereitungssystem: 1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen. Alles, was du am Prüfungstag brauchst.",
+    "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
+      "1500+ Übungsfälle in allen drei Fächern, Zeit- und Stressmodule, vollständige Probeprüfungen, ein Lernassistent und detaillierte Aufgabenanalysen.",
     "Buy course · €449": "Kurs kaufen · 449 €",
     "Lite BBE Course": "BBE-Kurs Lite",
-    "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.":
-      "Zugang zu einer kuratierten Datenbank mit 950+ Fragen und klarer Schritt-für-Schritt-Logik unter jeder Aussage. Für ruhige Vorbereitung im eigenen Tempo.",
+    "A 950+ question database with step by step logic under every statement. For self paced preparation.":
+      "Eine Datenbank mit 950+ Fragen und Schritt-für-Schritt-Logik unter jeder Aussage. Für Vorbereitung im eigenen Tempo.",
     "Coming soon": "Demnächst",
     "Unlock full access": "Vollzugang freischalten",
     "Unlock lite access": "Lite-Zugang freischalten",
@@ -132,17 +132,15 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
     // Full course feature grid
     "3 Subjects": "3 Fächer",
-    "Math, English, and Business & Economics — fully covered.":
-      "Mathematik, Englisch sowie Wirtschaft & Business – vollständig abgedeckt.",
+    "Math, English, and Business & Economics, fully covered.":
+      "Mathematik, Englisch sowie Wirtschaft & Business, vollständig abgedeckt.",
     "2000+ Practice Tasks": "2000+ Übungsaufgaben",
     "A constantly growing question bank across every chapter.":
       "Eine ständig wachsende Fragendatenbank für jedes Kapitel.",
     "Direct Support": "Direkter Support",
     "Real answers from real people, not a bot ticket queue.":
       "Echte Antworten von echten Menschen, keine Bot-Warteschlange.",
-    "AI Assistance": "KI-Unterstützung",
-    "Personalized explanations, on demand, for every question.":
-      "Personalisierte Erklärungen auf Abruf für jede Frage.",
+    "A written explanation for every question.": "Eine schriftliche Erklärung zu jeder Frage.",
     "Full-length simulations under real exam conditions and timing.":
       "Vollständige Simulationen unter echten Prüfungsbedingungen und Zeitvorgaben.",
     "Special Features": "Besondere Funktionen",
@@ -150,24 +148,24 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Exklusive Tools, die kein anderer Vorbereitungskurs bietet.",
 
     // Lite course
-    "AI-powered explanations": "KI-gestützte Erklärungen",
-    "For every question you attempt, get a clear breakdown that teaches the reasoning behind the answer.":
-      "Zu jeder bearbeiteten Frage erhältst du eine klare Analyse, die die Logik hinter der Antwort erklärt.",
+    "AI-powered explanations": "Erklärungen",
+    "For every question you attempt, a breakdown of the reasoning behind the answer.":
+      "Zu jeder bearbeiteten Frage eine Analyse der Logik hinter der Antwort.",
     "2 full-length timed mock exams": "2 vollständige Probeprüfungen auf Zeit",
     "Test yourself under real conditions and discover where you stand before the real exam.":
       "Teste dich unter echten Bedingungen und finde vor der Prüfung heraus, wo du stehst.",
     "500+ exam-style practice tasks": "500+ prüfungsnahe Übungsaufgaben",
-    "Across Math, English, and Business & Economics — enough to build genuine intuition.":
-      "In Mathematik, Englisch und Wirtschaft – genug, um echte Intuition aufzubauen.",
+    "Math, English, and Business & Economics, covering the exam chapters.":
+      "In Mathematik, Englisch und Wirtschaft, über die Prüfungskapitel.",
     "Community support": "Community-Support",
-    "Connect with other applicants working through the same material and share the journey.":
+    "Connect with other applicants working through the same material.":
       "Vernetze dich mit anderen Bewerbern, die dasselbe Material durcharbeiten.",
     "Core theory coverage": "Kerntheorie abgedeckt",
     "All three subjects covered with focused theory that supports the practice, not overwhelms it.":
       "Alle drei Fächer mit fokussierter Theorie, die die Praxis unterstützt statt überfordert.",
     "Curated working set": "Kuratiertes Aufgabenset",
-    "A genuinely solid foundation pulled from our full question bank, designed for early-stage prep.":
-      "Eine solide Grundlage aus unserer vollständigen Fragendatenbank für die frühe Vorbereitungsphase.",
+    "A working set taken from the full question bank for early prep.":
+      "Ein Aufgabenset aus unserer vollständigen Fragendatenbank für die frühe Vorbereitung.",
 
     // Demo package blocks
     "What You Will Master": "Was du meistern wirst",
@@ -245,9 +243,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Курс",
     "Mock exams": "Пробні іспити",
-    "Statement explanations with AI beside them": "Пояснення тверджень із ШІ поруч",
-    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.":
-      "Відкрий гайд, обери завдання, надішли відповідь і відкрий повний розбір. Для будь-якого твердження натисни ШІ-пояснення — тактичний розбір і ШІ стоять поруч, без виходу з панелі розв’язку.",
+    "Statement explanations beside the solution": "Пояснення тверджень поруч із розв’язком",
+    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap Explanation to read the write-up next to the solution, without leaving the panel.":
+      "Відкрий гайд, обери завдання, надішли відповідь і відкрий повний розбір. Для будь-якого твердження натисни Пояснення і читай текст поруч із розв’язком, не виходячи з панелі.",
     "Explore Economics": "До економіки",
     "Timed drills with the exam calculator": "Режим таймера з калькулятором іспиту",
     "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
@@ -271,12 +269,12 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Тренуй визначення з економіки, формули з математики та англійську лексику. Перевертай картку, оцінюй знання й зміцнюй пригадування до іспиту.",
     "Open Flashcards": "Відкрити картки",
     "Connect concepts to the right meaning": "З’єднай поняття з правильним значенням",
-    "Pair each term with its definition in a timed matching board. Same decks as the flashcards — a different way to lock the links in.":
-      "Зістав кожен термін із визначенням на timed matching-дошці. Ті самі колоди, що й у картках — інший спосіб закріпити зв’язки.",
+    "Pair each term with its definition in a timed matching board. Same decks as the flashcards, a different drill.":
+      "Зістав кожен термін із визначенням на timed matching-дошці. Ті самі колоди, що й у картках, інший формат.",
     "Open Matching": "Відкрити Matching",
     "A random theoretical quiz with a tutor": "Випадковий теоретичний квіз із тьютором",
-    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory until it feels automatic.":
-      "Робот-тьютор щоразу обирає нові питання. Відповідай, отримуй миттєвий фідбек і тренуй теорію, доки вона не стане автоматичною.",
+    "The tutor robot picks fresh questions every run. Answer, get instant feedback, and keep drilling theory.":
+      "Робот-тьютор щоразу обирає нові питання. Відповідай, отримуй миттєвий фідбек і тренуй теорію.",
     "Open Tutor Exam": "Відкрити Tutor Exam",
     "Zoom in": "Збільшити",
     "Zoom out": "Зменшити",
@@ -284,16 +282,16 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
     // Products
     "Demo-Practice Package": "Пакет демо-практики",
-    "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.":
-      "Безкоштовна проба: 50+ стартових завдань із трьох предметів і покрокові пояснення, щоб відчути справжній іспит до будь-яких зобов’язань.",
+    "A free trial with 50+ starter cases across all three subjects, with step by step explanations of the exam format.":
+      "Безкоштовна проба: 50+ стартових завдань із трьох предметів і покрокові пояснення формату іспиту.",
     "Visit for free": "Відкрити безкоштовно",
     "Full BBE Course": "Повний курс BBE",
-    "The complete prep system: 1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns. Everything you actually need on exam day.":
-      "Повна система підготовки: 1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори. Усе, що потрібно в день іспиту.",
+    "1500+ practice cases across all three subjects, timing and stress modules, full mock exams, a study assistant, and detailed task breakdowns.":
+      "1500+ завдань із трьох предметів, модулі часу та стресу, повні пробні іспити, навчальний асистент і детальні розбори.",
     "Buy course · €449": "Купити курс · €449",
     "Lite BBE Course": "Курс BBE Lite",
-    "Access to a curated 950+ question database with clear step by step logic under every statement. Built for steady, self paced preparation when you still have time on your side.":
-      "Доступ до бази з 950+ добірних питань із чіткою покроковою логікою під кожним твердженням. Для спокійної підготовки у власному темпі.",
+    "A 950+ question database with step by step logic under every statement. For self paced preparation.":
+      "База з 950+ питань із покроковою логікою під кожним твердженням. Для підготовки у власному темпі.",
     "Coming soon": "Незабаром",
     "Unlock full access": "Відкрити повний доступ",
     "Unlock lite access": "Відкрити доступ Lite",
@@ -302,17 +300,15 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
     // Full course feature grid
     "3 Subjects": "3 предмети",
-    "Math, English, and Business & Economics — fully covered.":
-      "Математика, англійська та бізнес і економіка — повністю покриті.",
+    "Math, English, and Business & Economics, fully covered.":
+      "Математика, англійська та бізнес і економіка, повністю покриті.",
     "2000+ Practice Tasks": "2000+ практичних завдань",
     "A constantly growing question bank across every chapter.":
       "База питань, що постійно зростає, з кожного розділу.",
     "Direct Support": "Пряма підтримка",
     "Real answers from real people, not a bot ticket queue.":
       "Справжні відповіді від людей, а не черга ботів.",
-    "AI Assistance": "Допомога ШІ",
-    "Personalized explanations, on demand, for every question.":
-      "Персональні пояснення на вимогу до кожного питання.",
+    "A written explanation for every question.": "Письмове пояснення до кожного питання.",
     "Full-length simulations under real exam conditions and timing.":
       "Повноформатні симуляції у справжніх умовах і з таймінгом іспиту.",
     "Special Features": "Особливі можливості",
@@ -320,24 +316,24 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
       "Ексклюзивні інструменти, яких немає в інших курсах.",
 
     // Lite course
-    "AI-powered explanations": "Пояснення на основі ШІ",
-    "For every question you attempt, get a clear breakdown that teaches the reasoning behind the answer.":
-      "До кожного питання — чіткий розбір, який пояснює логіку відповіді.",
+    "AI-powered explanations": "Пояснення",
+    "For every question you attempt, a breakdown of the reasoning behind the answer.":
+      "До кожного питання розбір логіки відповіді.",
     "2 full-length timed mock exams": "2 повні пробні іспити на час",
     "Test yourself under real conditions and discover where you stand before the real exam.":
       "Перевір себе у реальних умовах і дізнайся свій рівень до іспиту.",
     "500+ exam-style practice tasks": "500+ завдань у форматі іспиту",
-    "Across Math, English, and Business & Economics — enough to build genuine intuition.":
-      "З математики, англійської та економіки — достатньо, щоб виробити справжню інтуїцію.",
+    "Math, English, and Business & Economics, covering the exam chapters.":
+      "Математика, англійська та економіка, за розділами іспиту.",
     "Community support": "Підтримка спільноти",
-    "Connect with other applicants working through the same material and share the journey.":
+    "Connect with other applicants working through the same material.":
       "Спілкуйся з іншими вступниками, які проходять той самий матеріал.",
     "Core theory coverage": "Базова теорія",
     "All three subjects covered with focused theory that supports the practice, not overwhelms it.":
       "Усі три предмети з чіткою теорією, що підтримує практику, а не перевантажує.",
     "Curated working set": "Добірний робочий набір",
-    "A genuinely solid foundation pulled from our full question bank, designed for early-stage prep.":
-      "Міцна основа з нашої повної бази питань для ранньої підготовки.",
+    "A working set taken from the full question bank for early prep.":
+      "Робочий набір із повної бази питань для ранньої підготовки.",
 
     // Demo package blocks
     "What You Will Master": "Що ти опануєш",

@@ -23,6 +23,7 @@ import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-
 import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
 import { fetchSessionAnswerStats, type SessionAnswerStat } from "@/lib/study-progress";
 import { StudyProgressSection } from "@/components/StudyProgressSection";
+import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
 import {
   FlashcardsModeArt,
   MatchingModeArt,
@@ -426,7 +427,7 @@ function CoursesTab({
       {stats.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center">
           <p className="text-sm text-muted-foreground">
-            No practice recorded yet. Your progress is 0% — start a chapter and your statistics will
+            No practice recorded yet. Your progress is 0%. Start a chapter and your statistics will
             appear here automatically.
           </p>
         </div>
@@ -589,7 +590,7 @@ function GamesTab({ locked = false }: { locked?: boolean }) {
       feature: "matching" as const,
       to: "/matching" as const,
       title: "Matching",
-      blurb: "Connect each concept to the right definition — same decks, different interaction.",
+      blurb: "Connect each concept to the right definition. Same decks, different interaction.",
       cta: "Open matching →",
       art: <MatchingModeArt />,
     },
@@ -597,7 +598,7 @@ function GamesTab({ locked = false }: { locked?: boolean }) {
       feature: "tutor-exam" as const,
       to: "/tutor-exam" as const,
       title: "Tutor Exam",
-      blurb: "A tutor robot runs a random theoretical quiz — new questions every time.",
+      blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
       cta: "Open tutor exam →",
       art: <TutorModeArt />,
     },
@@ -615,7 +616,9 @@ function GamesTab({ locked = false }: { locked?: boolean }) {
         {cards.map((card) => {
           const body = (
             <>
-              <div className="h-32 w-full overflow-hidden">{card.art}</div>
+              <div className="flex h-[6.75rem] w-full items-center justify-center overflow-hidden bg-secondary">
+                {card.art}
+              </div>
               <div className="p-5">
                 <h3 className="font-display text-lg font-bold">{card.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{card.blurb}</p>
@@ -681,7 +684,7 @@ function CustomMocksTab({
         <Wand2 className="mx-auto mb-3 h-6 w-6 text-taupe" />
         <p className="text-sm text-muted-foreground">
           No custom mocks yet. Generate Economics, Math, or English mocks from Full Course material
-          by topic — they appear here with scores after you finish.
+          by topic. They appear here with scores after you finish.
         </p>
         <Link
           to="/products/custom-mock-builder"
@@ -734,13 +737,17 @@ function CustomMocksTab({
         </div>
       )}
 
+      {sortedAttempts.length > 0 && (
+        <MockScoreTrend attempts={sortedAttempts} />
+      )}
+
       <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
         <h3 className="mb-3 px-3 pt-2 font-display text-lg font-bold tracking-tight">
           Built mocks
         </h3>
         {customMocks.length === 0 ? (
           <p className="px-3 pb-3 text-sm text-muted-foreground">
-            No saved blueprints yet — generate one in the builder.
+            No saved blueprints yet. Generate one in the builder.
           </p>
         ) : (
           <div className="-mx-1 overflow-x-auto overscroll-x-contain rounded-xl sm:mx-0">
@@ -794,12 +801,24 @@ function CustomMocksTab({
                       </td>
                       <td className="px-3 py-3 text-muted-foreground">{examAttempts.length}</td>
                       <td className="px-3 py-3 text-right">
-                        <Link
-                          to="/products/custom-mock-builder"
-                          className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
-                        >
-                          Open
-                        </Link>
+                        {examAttempts.length > 0 ? (
+                          <Link
+                            to="/mock-exams/$examId/review"
+                            params={{ examId: mock.examId }}
+                            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+                          >
+                            Open
+                          </Link>
+                        ) : (
+                          <Link
+                            to="/mock-exams/$examId/take"
+                            params={{ examId: mock.examId }}
+                            search={{ timed: false, answerSheet: true }}
+                            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+                          >
+                            Open
+                          </Link>
+                        )}
                       </td>
                     </tr>
                   );
@@ -847,7 +866,7 @@ function CustomMocksTab({
                         params={{ examId: m.exam_id }}
                         className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
                       >
-                        Review
+                        Open
                       </Link>
                     </td>
                   </tr>
@@ -866,7 +885,10 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
     () => [...mocks].sort((a, b) => b.completed_at.localeCompare(a.completed_at)),
     [mocks],
   );
-  const chronological = useMemo(() => [...sorted].reverse(), [sorted]);
+  const chronological = useMemo(
+    () => [...mocks].sort((a, b) => a.completed_at.localeCompare(b.completed_at)),
+    [mocks],
+  );
 
   if (mocks.length === 0) {
     return (
@@ -909,13 +931,7 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
         />
       </div>
 
-      <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-        <div className="mb-4 flex items-center gap-2">
-          <TrendingUp className="h-4 w-4 text-caramel-deep" />
-          <h3 className="font-display text-lg font-bold tracking-tight">Score trend</h3>
-        </div>
-        <TrendChart mocks={chronological} />
-      </section>
+      <MockScoreTrend attempts={chronological} />
 
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">
         <h3 className="font-display text-lg font-bold tracking-tight">
@@ -980,7 +996,7 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
                       params={{ examId: m.exam_id }}
                       className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
                     >
-                      Review
+                      Open
                     </Link>
                   </td>
                 </tr>
@@ -1048,102 +1064,12 @@ function SubjectAvg({
   );
 }
 
-function TrendChart({ mocks }: { mocks: MockAttempt[] }) {
-  const W = 640;
-  const H = 200;
-  const PAD_L = 32;
-  const PAD_R = 12;
-  const PAD_T = 12;
-  const PAD_B = 28;
-  const iw = W - PAD_L - PAD_R;
-  const ih = H - PAD_T - PAD_B;
-
-  const points = mocks.map((m, i) => {
-    const score = (m.points_earned / m.points_total) * 100;
-    const x = PAD_L + (mocks.length === 1 ? iw / 2 : (i * iw) / (mocks.length - 1));
-    const y = PAD_T + ih - (score / 100) * ih;
-    return { x, y, m };
-  });
-
-  const path = points
-    .map((p, i) => `${i === 0 ? "M" : "L"}${p.x.toFixed(1)},${p.y.toFixed(1)}`)
-    .join(" ");
-  const area =
-    points.length > 0
-      ? `${path} L${points[points.length - 1].x},${PAD_T + ih} L${points[0].x},${PAD_T + ih} Z`
-      : "";
-  const yTicks = [0, 25, 50, 75, 100];
-
-  return (
-    <div className="w-full overflow-x-auto">
-      <svg
-        viewBox={`0 0 ${W} ${H}`}
-        className="w-full min-w-[560px]"
-        role="img"
-        aria-label="Mock score trend"
-      >
-        {yTicks.map((t) => {
-          const y = PAD_T + ih - (t / 100) * ih;
-          return (
-            <g key={t}>
-              <line
-                x1={PAD_L}
-                y1={y}
-                x2={W - PAD_R}
-                y2={y}
-                stroke="currentColor"
-                className="text-border"
-                strokeDasharray="2 4"
-              />
-              <text
-                x={PAD_L - 6}
-                y={y + 3}
-                textAnchor="end"
-                className="fill-muted-foreground"
-                fontSize="10"
-              >
-                {t}
-              </text>
-            </g>
-          );
-        })}
-        {area && <path d={area} fill="#c8763a" opacity="0.12" />}
-        <path
-          d={path}
-          fill="none"
-          stroke="#c8763a"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        {points.map((p) => (
-          <g key={p.m.id}>
-            <circle cx={p.x} cy={p.y} r={4} fill="#c8763a" />
-            <text
-              x={p.x}
-              y={H - 10}
-              textAnchor="middle"
-              className="fill-muted-foreground"
-              fontSize="10"
-            >
-              {shortDate(p.m.completed_at)}
-            </text>
-          </g>
-        ))}
-      </svg>
-    </div>
-  );
-}
-
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, {
     year: "numeric",
     month: "short",
     day: "numeric",
   });
-}
-function shortDate(iso: string) {
-  return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
 /* -------------------- SHELL -------------------- */

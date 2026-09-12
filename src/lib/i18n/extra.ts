@@ -58,14 +58,14 @@ export const extraDe: Record<string, string> = {
     "Amtlicher Lichtbildausweis im Original, ausgedruckte Prüfungseinladung, blauer/schwarzer Kugelschreiber, ein Taschenrechner von der WU-Liste; Snack/Getränk optional.",
 
   // ---------- Lite course FAQs ----------
-  "Light gives you a curated 500+ task set, 2 mock exams, and community support: a genuinely solid starting foundation. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and special features like the Duel Grid and achievement system.":
-    "Light bietet dir ein kuratiertes Set aus 500+ Aufgaben, 2 Probeprüfungen und Community-Support: ein wirklich solides Fundament. Full Access schaltet die komplette Datenbank mit 1200+ Aufgaben, unbegrenzte Probeprüfungen, direkten 1:1-Support und Extras wie das Duel Grid und das Achievement-System frei.",
+  "Light gives you a 500+ task set, 2 mock exams, and community support. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and extra tools such as the Duel Grid and achievement system.":
+    "Light bietet dir ein Set aus 500+ Aufgaben, 2 Probeprüfungen und Community-Support. Full Access schaltet die komplette Datenbank mit 1200+ Aufgaben, unbegrenzte Probeprüfungen, direkten 1:1-Support und Extras wie das Duel Grid und das Achievement-System frei.",
   "Light is designed as a strong foundation builder, especially if you're starting your prep early. If you're within 6 to 8 weeks of your exam date, or want the full question bank and unlimited mock exams, Full Access is the better fit for complete exam day readiness.":
     "Light ist als starkes Fundament gedacht, besonders wenn du früh mit der Vorbereitung beginnst. Wenn dein Prüfungstermin in 6 bis 8 Wochen ist oder du die komplette Fragendatenbank und unbegrenzte Probeprüfungen willst, passt Full Access besser.",
   "Yes, you can upgrade anytime and pay only the price difference between Light and Full Access.":
     "Ja, du kannst jederzeit upgraden und zahlst nur die Preisdifferenz zwischen Light und Full Access.",
-  "It's a curated working set covering every chapter and subject, chosen to give you a genuinely representative foundation rather than a random slice.":
-    "Es ist ein kuratiertes Arbeitsset über alle Kapitel und Fächer, ausgewählt für ein wirklich repräsentatives Fundament statt eines zufälligen Ausschnitts.",
+  "A working set covering every chapter and subject, chosen to represent the exam rather than a random slice.":
+    "Es ist ein Arbeitsset über alle Kapitel und Fächer, ausgewählt als Ausschnitt der Prüfung statt eines zufälligen Schnitts.",
   "Forever. It's a single one time payment, with no subscription and no expiration on your access.":
     "Für immer. Es ist eine einmalige Zahlung, ohne Abo und ohne Ablaufdatum.",
   "A single one time payment of €279, no recurring charges, no subscription.":
@@ -248,14 +248,14 @@ export const extraUk: Record<string, string> = {
     "Оригінал документа з фото, роздрукований запрошувальний лист, синя/чорна кулькова ручка, калькулятор із переліку WU; перекус і напій — за бажанням.",
 
   // ---------- Lite course FAQs ----------
-  "Light gives you a curated 500+ task set, 2 mock exams, and community support: a genuinely solid starting foundation. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and special features like the Duel Grid and achievement system.":
-    "Light дає добірку з 500+ завдань, 2 пробні іспити та підтримку спільноти — справді міцний старт. Full Access відкриває повну базу з 1200+ завдань, необмежені пробні іспити, персональну підтримку 1:1 та спецфункції на кшталт Duel Grid і системи досягнень.",
+  "Light gives you a 500+ task set, 2 mock exams, and community support. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and extra tools such as the Duel Grid and achievement system.":
+    "Light дає набір із 500+ завдань, 2 пробні іспити та підтримку спільноти. Full Access відкриває повну базу з 1200+ завдань, необмежені пробні іспити, персональну підтримку 1:1 та інструменти на кшталт Duel Grid і системи досягнень.",
   "Light is designed as a strong foundation builder, especially if you're starting your prep early. If you're within 6 to 8 weeks of your exam date, or want the full question bank and unlimited mock exams, Full Access is the better fit for complete exam day readiness.":
     "Light створений як міцний фундамент, особливо якщо ти починаєш готуватися заздалегідь. Якщо до іспиту 6–8 тижнів або потрібна повна база й необмежені пробні іспити, краще підійде Full Access.",
   "Yes, you can upgrade anytime and pay only the price difference between Light and Full Access.":
     "Так, оновитися можна будь-коли, доплативши лише різницю між Light і Full Access.",
-  "It's a curated working set covering every chapter and subject, chosen to give you a genuinely representative foundation rather than a random slice.":
-    "Це відібраний робочий набір за всіма розділами й предметами, який дає справді репрезентативну базу, а не випадковий шматок.",
+  "A working set covering every chapter and subject, chosen to represent the exam rather than a random slice.":
+    "Це робочий набір за всіма розділами й предметами, підібраний під іспит, а не випадковий шматок.",
   "Forever. It's a single one time payment, with no subscription and no expiration on your access.":
     "Назавжди. Це разова оплата без підписки й без обмеження терміну доступу.",
   "A single one time payment of €279, no recurring charges, no subscription.":

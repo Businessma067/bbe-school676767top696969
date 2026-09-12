@@ -25,13 +25,13 @@ export const Route = createFileRoute("/products/lite-bbe-course")({
       {
         name: "description",
         content:
-          "A focused starting point for WU BBE prep: 950+ tasks, 2 mock exams, AI-powered explanations, and community support across all three subjects.",
+          "A focused starting point for WU BBE prep: 950+ tasks, 2 mock exams, explanations, and community support across all three subjects.",
       },
       { property: "og:title", content: "Light BBE Course — BBE School" },
       {
         property: "og:description",
         content:
-          "950+ practice tasks, 2 mock exams, and AI explanations for early-stage WU BBE preparation.",
+          "950+ practice tasks, 2 mock exams, and explanations for early-stage WU BBE preparation.",
       },
       { name: "twitter:card", content: "summary_large_image" },
       ...socialImageMetaForPath("/products/lite-bbe-course"),
@@ -51,8 +51,8 @@ const stats = [
 const includes = [
   {
     icon: Lightbulb,
-    title: "AI-powered explanations",
-    text: "For every question you attempt, get a clear breakdown that teaches the reasoning behind the answer.",
+    title: "Explanations",
+    text: "For every question you attempt, a breakdown of the reasoning behind the answer.",
   },
   {
     icon: Clock,
@@ -62,12 +62,12 @@ const includes = [
   {
     icon: ListChecks,
     title: "500+ exam-style practice tasks",
-    text: "Across Math, English, and Business & Economics — enough to build genuine intuition.",
+    text: "Math, English, and Business & Economics, covering the exam chapters.",
   },
   {
     icon: Users,
     title: "Community support",
-    text: "Connect with other applicants working through the same material and share the journey.",
+    text: "Connect with other applicants working through the same material.",
   },
   {
     icon: BookOpen,
@@ -77,7 +77,7 @@ const includes = [
   {
     icon: Check,
     title: "Curated working set",
-    text: "A genuinely solid foundation pulled from our full question bank, designed for early-stage prep.",
+    text: "A working set taken from the full question bank for early prep.",
   },
 ];
 
@@ -85,7 +85,7 @@ const liteFaqs = [
   {
     question: "What's the difference between Light and Full Access?",
     answer:
-      "Light gives you a curated 500+ task set, 2 mock exams, and community support: a genuinely solid starting foundation. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and special features like the Duel Grid and achievement system.",
+      "Light gives you a 500+ task set, 2 mock exams, and community support. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and extra tools such as the Duel Grid and achievement system.",
   },
   {
     question: "Is Light enough to actually pass the exam?",
@@ -100,7 +100,7 @@ const liteFaqs = [
   {
     question: "Which 500+ tasks are included, is it random or selected?",
     answer:
-      "It's a curated working set covering every chapter and subject, chosen to give you a genuinely representative foundation rather than a random slice.",
+      "A working set covering every chapter and subject, chosen to represent the exam rather than a random slice.",
   },
   {
     question: "How long do I have access after purchasing?",

@@ -9,9 +9,11 @@ import {
 } from "@/components/ui/dialog";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SCORING_CONFIG } from "@/config/scoring-config";
+import { MockScoreTrend } from "@/components/mock-exam/MockScoreTrend";
 import {
   MOCK_EXAMS,
   getExamsForTier,
+  isCustomExamId,
   type MockExamSummary,
   type ProductTier,
 } from "@/lib/mock-exams";
@@ -80,7 +82,7 @@ function MockExamsPage() {
   }, []);
 
   const exams = tier === "full" || tier === "lite" ? getExamsForTier(tier) : [];
-  const completed = attempts ?? [];
+  const completed = (attempts ?? []).filter((a) => !isCustomExamId(a.exam_id));
   const bestByExam = new Map<string, MockAttempt>();
   for (const a of completed) {
     const prev = bestByExam.get(a.exam_id);
@@ -212,7 +214,9 @@ function MockExamsPage() {
               </p>
             </div>
           ) : (
-            <div className="space-y-3">
+            <div className="space-y-6">
+              <MockScoreTrend attempts={completed} />
+              <div className="space-y-3">
               {completed.map((c) => {
                 const pct = Math.round((c.points_earned / c.points_total) * 100);
                 return (
@@ -243,12 +247,13 @@ function MockExamsPage() {
                         params={{ examId: c.exam_id }}
                         className="rounded-md border border-border bg-secondary px-4 py-2 text-sm font-semibold transition-all hover:bg-secondary/70"
                       >
-                        Review Exam
+                        Open
                       </Link>
                     </div>
                   </div>
                 );
               })}
+              </div>
             </div>
           )}
         </section>

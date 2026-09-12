@@ -11,13 +11,13 @@ export const Route = createFileRoute("/flashcards/")({
       {
         name: "description",
         content:
-          "Study BBE Economics, Math, and English flashcards — terms, formulas, and concepts for the WU entrance exam.",
+          "Study BBE Economics, Math, and English flashcards: terms, formulas, and concepts for the WU entrance exam.",
       },
       { property: "og:title", content: "Flashcards — BBE School" },
       {
         property: "og:description",
         content:
-          "Study BBE Economics, Math, and English flashcards — terms, formulas, and concepts for the WU entrance exam.",
+          "Study BBE Economics, Math, and English flashcards: terms, formulas, and concepts for the WU entrance exam.",
       },
     ],
   }),
