@@ -1561,8 +1561,8 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
             <div
               key={idx}
               className={cn(
-                prevMath || nextMath ? "my-1" : "my-3",
-                prevMath && "mt-0.5",
+                prevMath || nextMath ? "my-1.5" : "my-3.5",
+                prevMath && "mt-1",
                 nextMath && "mb-1",
               )}
             >
@@ -1593,9 +1593,9 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
                     <div
                       key={j}
                       className={cn(
-                        prevMath || nextMath ? "my-1" : "my-3",
-                        prevMath && "mt-0.5",
-                        nextMath && "mb-0.5",
+                        prevMath || nextMath ? "my-1.5" : "my-3.5",
+                        prevMath && "mt-1",
+                        nextMath && "mb-1",
                       )}
                     >
                       <FlashcardMath text={para} displayPrefer />

@@ -72,7 +72,7 @@ export function ExplanationProse({
     <div
       className={cn(
         "font-expl text-[15px] leading-[1.6] text-foreground sm:text-[15.5px]",
-        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-0.5",
+        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-1",
         className,
       )}
     >
@@ -112,14 +112,14 @@ export function ExplanationProse({
         if (chunk.kind === "math") {
           const prevMath = idx > 0 && chunks[idx - 1]?.kind === "math";
           const nextMath = idx < chunks.length - 1 && chunks[idx + 1]?.kind === "math";
-          // Old formula style: tight gaps between consecutive centered $$ steps.
+          // Old formula style: small gaps between consecutive centered $$ steps.
           return (
             <div
               key={idx}
               className={cn(
-                prevMath || nextMath ? "my-1" : "my-2.5",
-                prevMath && "mt-0.5",
-                nextMath && "mb-0.5",
+                prevMath || nextMath ? "my-1.5" : "my-3",
+                prevMath && "mt-1",
+                nextMath && "mb-1",
               )}
             >
               <FlashcardMath text={chunk.text} displayPrefer />
