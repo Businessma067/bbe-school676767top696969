@@ -184,6 +184,9 @@ function FlashcardPreviewCard({
   );
 }
 
+const DASH_ART_FRAME =
+  "box-border flex h-full w-full items-stretch justify-center overflow-hidden px-4 py-3 ";
+
 function MiniCard({
   subject,
   label,
@@ -194,12 +197,12 @@ function MiniCard({
   sample: string;
 }) {
   return (
-    <div className="flex h-full w-[4.35rem] flex-col items-center justify-center rounded-xl border border-border bg-card px-1.5 sm:w-[4.65rem]">
+    <div className="grid h-full w-[4.35rem] grid-rows-[1.5rem_1fr_0.85rem] items-center justify-items-center rounded-xl border border-border bg-card px-1.5 py-2 sm:w-[4.65rem]">
       <SubjectGlyph subject={subject} className="h-6 w-6 shrink-0 text-foreground" />
-      <span className="mt-2 line-clamp-2 flex min-h-8 w-full items-center justify-center px-0.5 text-center text-[8px] font-semibold leading-tight text-foreground">
+      <span className="line-clamp-2 flex h-full w-full items-center justify-center px-0.5 text-center text-[8px] font-semibold leading-tight text-foreground">
         {sample}
       </span>
-      <span className="mt-1 w-full text-center text-[7px] font-semibold uppercase tracking-wider text-taupe">
+      <span className="w-full self-end text-center text-[7px] font-semibold uppercase tracking-wider text-taupe">
         {label}
       </span>
     </div>
@@ -209,12 +212,7 @@ function MiniCard({
 /** Dashboard / tile banner for Flashcards. */
 export function FlashcardsModeArt({ className = "" }: { className?: string }) {
   return (
-    <div
-      className={
-        "box-border flex h-full w-full items-stretch justify-center overflow-hidden px-4 py-3 " +
-        className
-      }
-    >
+    <div className={DASH_ART_FRAME + className}>
       <div className="flex h-full items-stretch justify-center gap-2.5">
         <MiniCard subject="economics" label="Econ" sample="Inflation" />
         <MiniCard subject="math" label="Math" sample="Discriminant" />
@@ -257,7 +255,7 @@ function MatchingPairs({
       className={
         "flex min-w-0 flex-col " +
         PREVIEW_PAIRS_WIDTH +
-        (fill ? " h-full justify-center gap-2" : " gap-1")
+        (fill ? " h-full justify-stretch gap-2" : " gap-1")
       }
     >
       {pairs.map(([left, right]) => (
@@ -306,12 +304,7 @@ export function MatchingModeArt({
   className?: string;
 }) {
   return (
-    <div
-      className={
-        "flex h-full w-full items-stretch justify-center px-5 py-3 " +
-        className
-      }
-    >
+    <div className={DASH_ART_FRAME + className}>
       <MatchingPairs
         fill
         accent={accent}
@@ -324,15 +317,20 @@ export function MatchingModeArt({
 function TutorRobot({
   accent,
   compact = false,
+  fill = false,
 }: {
   accent: string;
   compact?: boolean;
+  fill?: boolean;
 }) {
-  const head = compact ? "h-9 w-9" : "h-12 w-12";
-  const body = compact ? "h-7 w-8" : "h-9 w-10";
+  const head = compact ? "h-9 w-9" : fill ? "h-[4.25rem] w-[4.25rem]" : "h-12 w-12";
+  const body = compact ? "h-7 w-8" : fill ? "h-10 w-11" : "h-9 w-10";
 
   return (
-    <div className="flex shrink-0 flex-col items-center" aria-hidden>
+    <div
+      className={fill ? "flex h-full shrink-0 flex-col items-center justify-center" : "flex shrink-0 flex-col items-center"}
+      aria-hidden
+    >
       <div
         className={
           "flex flex-col items-center justify-center rounded-xl border border-border bg-card " +
@@ -414,14 +412,9 @@ export function TutorModeArt({
   const preview = DASHBOARD_MODE_PREVIEW.tutor;
 
   return (
-    <div
-      className={
-        "flex h-full w-full items-center justify-center gap-3 px-5 py-3 " +
-        className
-      }
-    >
-      <TutorRobot accent={accent} />
-      <div className="relative min-w-0 max-w-[11rem] flex-1 rounded-xl border border-border bg-card px-3 py-2">
+    <div className={DASH_ART_FRAME + "gap-3 " + className}>
+      <TutorRobot accent={accent} fill />
+      <div className="relative flex h-full min-w-0 max-w-[11rem] flex-1 flex-col justify-center rounded-xl border border-border bg-card px-3 py-2">
         <span
           className="absolute -left-1.5 top-5 h-3 w-3 rotate-45 border-b border-l border-border bg-card"
           aria-hidden
