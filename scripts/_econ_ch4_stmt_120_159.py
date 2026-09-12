@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 PATH = Path("/workspace/src/data/economics-cases-ch4-subtopics.json")
@@ -71,8 +70,8 @@ BODIES['CASE 4.4.15'] = [
 BODIES['CASE 4.4.16'] = [
     """Several partners can co-own a firm without incorporating into a company. Partnerships remain unincorporated businesses despite having more than one owner.""",
     """A sole trader is typically one owner who also manages daily work at the counter or site. That single-person pattern is the usual unincorporated starting point before partnerships or companies appear.""",
-    """Owner headcount alone never proves incorporation: partnerships already show multiple owners without legal personality. Shareholder labels usually signal a company, but classification still turns on whether a separate legal person exists. Taking a multi-shareholder count as if it automatically placed the firm among unincorporated shells is the stance this letter requires, keeping attention on counting contributors instead of checking registration as a legal person.""",
-    """Corporation status rests on incorporation and legal personality, which can hold with few shareholders or many. A blanket 'regardless of how many shareholders' line overstates how particular rules may set membership floors. On that absolute wording the letter marks the claim overstated rather than cleanly correct for every statute.""",
+    """Owner headcount alone never proves incorporation: partnerships already show multiple owners without legal personality. Shareholder labels usually signal a company, but classification still turns on whether a separate legal person exists. Counting multi-shareholder heads as if that tally itself proved an unincorporated shell follows the trap built into this item.""",
+    """Corporation status rests on incorporation and legal personality, which can hold with few shareholders or many. A blanket 'regardless of how many shareholders' line overstates how particular rules may set membership floors. On that absolute wording the claim is marked overstated rather than cleanly correct for every statute.""",
     """Even with several partners, an unincorporated firm is not a legal entity of its own. Contracts and liabilities stay with the partners as natural persons rather than with a company shell.""",
 ]
 
@@ -287,7 +286,7 @@ BODIES['CASE 4.6.10'] = [
 BODIES['CASE 4.6.11'] = [
     """Financial funds for capital expenditures require long-term finance because the assets will be used over years. Repayment should track that multi-year service life rather than a short invoice cycle.""",
     """Costs comprise interest on loans and administration costs of issuing shares or bonds. Both pieces belong in the cost criterion when several sources are compared.""",
-    """Headline-rate shopping can still leave managers talking about use and gearing in the same meeting. The absolute claim that choosing on interest alone always ignores those factors overstates how decisions are described. On that stretched wording the letter rejects the sentence even though interest-only choice is a poor habit. The safer teaching point remains that costs, intended use, and financial situation should be weighed together.""",
+    """Headline-rate shopping can still leave managers talking about use and gearing in the same meeting. The absolute claim that choosing on interest alone always ignores those factors overstates how decisions are described. Costs, intended use, and financial situation should still be weighed together even when a rate looks attractive first.""",
     """Bonds still require interest and principal repayment, so swapping a bank loan for bonds does not eliminate repayment risk. A highly geared issuer remains exposed to creditor claims whichever long-term debt instrument is used.""",
     """Revenue expenditure on production inputs should not always be paired with twenty-year bond finance. Short-term sources usually match short-cycle materials better than ultra-long bond maturity.""",
 ]
