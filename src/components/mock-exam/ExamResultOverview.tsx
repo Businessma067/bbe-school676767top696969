@@ -1,5 +1,7 @@
 import { useMemo, type CSSProperties, type ReactNode } from "react";
 import {
+  Area,
+  AreaChart,
   Bar,
   BarChart,
   CartesianGrid,
@@ -376,7 +378,13 @@ export function ExamResultOverview({
           </div>
         ) : (
           <ResponsiveContainer width="100%" height="100%" debounce={80}>
-            <BarChart data={timeSeries} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+            <AreaChart data={timeSeries} margin={{ top: 10, right: 12, left: 0, bottom: 0 }}>
+              <defs>
+                <linearGradient id="mockExamTimeFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor={INK} stopOpacity={0.22} />
+                  <stop offset="100%" stopColor={INK} stopOpacity={0} />
+                </linearGradient>
+              </defs>
               <CartesianGrid stroke={GRID} vertical={false} />
               <XAxis
                 dataKey="q"
@@ -391,21 +399,26 @@ export function ExamResultOverview({
                 tickLine={false}
                 width={40}
                 tickFormatter={formatAxisSeconds}
+                domain={[0, (max: number) => Math.max(max * 1.08, 8)]}
               />
-              <Tooltip content={<TimeTooltip />} cursor={{ fill: "color-mix(in oklab, var(--foreground) 6%, transparent)" }} />
+              <Tooltip
+                content={<TimeTooltip />}
+                cursor={{ stroke: GRID, strokeWidth: 1 }}
+              />
               {medianSeconds > 0 ? (
-                <ReferenceLine
-                  y={medianSeconds}
-                  stroke={MUTED}
-                  strokeDasharray="4 4"
-                />
+                <ReferenceLine y={medianSeconds} stroke={MUTED} strokeDasharray="4 4" />
               ) : null}
-              <Bar dataKey="seconds" radius={[3, 3, 0, 0]} maxBarSize={28} isAnimationActive={false}>
-                {timeSeries.map((row) => (
-                  <Cell key={row.q} fill={row.color} />
-                ))}
-              </Bar>
-            </BarChart>
+              <Area
+                type="monotone"
+                dataKey="seconds"
+                stroke={INK}
+                strokeWidth={2}
+                fill="url(#mockExamTimeFill)"
+                dot={{ r: 3, strokeWidth: 0, fill: INK }}
+                activeDot={{ r: 5, strokeWidth: 0, fill: INK }}
+                isAnimationActive={false}
+              />
+            </AreaChart>
           </ResponsiveContainer>
         )}
       </ChartFrame>
