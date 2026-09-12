@@ -430,7 +430,7 @@ function coalesceContinuationDisplays(parts: Part[]): Part[] {
 
 /**
  * Keep each display as its own centered KaTeX block (old formula style).
- * Do not merge `= 164` into gather*/aligned — that shifts short rows off-center.
+ * Do not merge `= 164` into gather-star / aligned — that shifts short rows off-center.
  */
 function coalesceRelationContinuationDisplays(parts: Part[]): Part[] {
   return parts;
