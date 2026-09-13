@@ -1,0 +1,729 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.2.04",
+      "title": "Misunderstanding opportunity cost",
+      "subsection": "2.2",
+      "chapter": 2,
+      "context": "Consider robin claims opportunity cost is the sum of every rejected option's price. Sara chooses a 500-euro washer or 700-euro laptop. Evaluate the following economic assertions:",
+      "statements": [
+        "If Sara buys the laptop, opportunity cost is the washer's benefit forgone, not all rejected purchases combined.",
+        "Robin's sum-of-all-rejected definition matches the standard economic definition exactly.",
+        "Choosing between only two items involves no scarcity because scarcity requires many options.",
+        "If Sara buys the washer, opportunity cost is 1,200 euros, the combined price of both items.",
+        "Opportunity cost refers to the alternative forgone, not the price of the item actually purchased."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nIf Sara buys the laptop, she forgoes the washer's benefit, the next-best use of that money. Opportunity cost is not the sum of every other rejected catalogue item. One leading alternative defines the cost.\n\nSo the statement is True.",
+        "**B.** → False\n\nAdding every rejected option's value invents a bloated total that is not the economic definition. Robin's sum-of-all-rejected rule mismatches the standard next-best-alternative idea.\n\nSo the statement is False.",
+        "**C.** → False\n\nTwo options are enough for scarcity: the same euros cannot buy both the laptop and the washer. Scarcity does not require a long menu. Binary choice already forces ranking of limited means. Claiming scarcity appears only with many options would erase most textbook examples. Sara's two-item decision is scarce-resource allocation in full.\n\nSo the statement is False.",
+        "**D.** → False\n\nIf she buys the washer, opportunity cost is the laptop's benefit forgone, not 1,200 euros as a combined price of both. Combining prices double-counts and misstates the forgone alternative.\n\nSo the statement is False.",
+        "**E.** → True\n\nOpportunity cost names the alternative forgone, not the cash price of what you actually buy. Purchase price is what you pay; opportunity cost is what you give up instead.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 3.4.02",
+      "title": "Micro turnover edge case",
+      "subsection": "3.4",
+      "chapter": 3,
+      "context": "Consider a neighbourhood bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
+      "statements": [
+        "Turnover above €10m can push a firm out of the small category even when staff remain below fifty.",
+        "Micro status allows either turnover up to €2m or a balance sheet total up to €2m alongside the staff limit.",
+        "Exceeding the €2m turnover cap can disqualify a firm from micro status even when staff are below ten.",
+        "Small status also requires turnover not exceeding €10m.",
+        "A small enterprise may employ fewer than fifty people under EU definitions."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA firm can stay under fifty staff and still leave the small category if turnover rises above €10m. The financial breach alone is enough to push it out.\n\nSo the statement is True.",
+        "**B.** → True\n\nMicro status pairs fewer than ten staff with a financial OR: turnover up to €2m or a balance sheet total up to €2m. Passing one of those financial caps alongside the staff limit can keep the firm micro.\n\nThe bakery with six staff and €2.1m turnover may still qualify if its balance sheet stays within €2m. That OR structure is what the statement records.\n\nSo the statement is True.",
+        "**C.** → True\n\nEven with fewer than ten employees, turnover above €2m can remove micro status when the balance sheet also fails its €2m cap. Crossing the turnover ceiling is a real disqualification path.\n\nSo the statement is True.",
+        "**D.** → True\n\nSmall status requires turnover not exceeding €10m (or the parallel balance-sheet route) together with the staff limit. The €10m turnover ceiling is part of that package.\n\nSo the statement is True.",
+        "**E.** → True\n\nEU small-enterprise rules allow fewer than fifty people on the payroll. That staff band is the employment side of the official small definition.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.42",
+      "title": "Nuanced IPO and Capital Accounting",
+      "subsection": "4.3",
+      "chapter": 4,
+      "context": "Analyze accounting for equity when shares move from primary issue to secondary trading. Evaluate the following economic assertions:",
+      "statements": [
+        "The full amount investors pay on the exchange after the IPO is credited to the corporation's share capital account.",
+        "Secondary-market buyers pay share capital directly to the issuer unless the board approves a private sale.",
+        "Market premiums above issue price during secondary trading increase the corporation's permanent equity base.",
+        "Only proceeds from shares bought at initial issue from the corporation typically increase its share capital.",
+        "Redemption of share capital is required whenever secondary-market prices fall below the IPO price."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe full amount investors pay on the exchange after the IPO is not credited to the corporation's share capital account; those payments go to the selling shareholders.\n\nSo the statement is False.",
+        "**B.** → False\n\nSecondary-market buyers pay the seller of the stock. They do not pay share capital directly to the issuer unless a new primary placement is arranged separately.\n\nSo the statement is False.",
+        "**C.** → False\n\nMarket premiums above issue price during secondary trading change what investors pay each other. Those premiums do not by themselves enlarge the issuer's permanent equity base.\n\nPermanent equity rises when the corporation issues stock or books other equity events, not when two investors reprice an already outstanding share between themselves.\n\nSo the statement is False.",
+        "**D.** → True\n\nOnly proceeds from shares bought at initial issue from the corporation typically increase its share capital as primary equity funding on the books.\n\nSo the statement is True.",
+        "**E.** → False\n\nRedemption of share capital is not required whenever secondary-market prices fall below the IPO price; market dips do not trigger automatic buybacks by the issuer.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.7.113",
+      "title": "Canvas Kiln Contribution and Break-Even",
+      "subsection": "5.7",
+      "chapter": 5,
+      "context": "Canvas & Kiln sells a glaze kit at €720 with variable cost €480 and fixed costs €130,000, echoing the book’s arithmetic. Evaluate the following economic assertions:",
+      "statements": [
+        "Contribution per item equals selling price minus variable cost, here €240.",
+        "Break-even units are fixed costs divided by contribution per item, about 542 items before profit in the simplified model.",
+        "Fixed costs are independent of output in the short-run story, like rent or insurance.",
+        "Variable costs increase directly as output rises.",
+        "Any price below variable cost still maximises long-run survival because contribution can be negative forever."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nContribution per item equals selling price minus variable cost. With the book's figures that contribution is 240 euros. The arithmetic matches the definition.\n\nSo the statement is True.",
+        "**B.** → True\n\nBreak-even units equal fixed costs divided by contribution per item, about 542 items in the simplified model before profit. Fixed costs need that many contributions to be covered. The statement reports that break-even reading correctly.\n\nSo the statement is True.",
+        "**C.** → True\n\nFixed costs such as rent or insurance stay independent of output in the short-run story used here. They do not rise automatically with each extra unit. That independence is why contribution per item is needed to cover them. The statement names fixed-cost behaviour correctly for that simplified classroom pricing setting.\n\nSo the statement is True.",
+        "**D.** → True\n\nVariable costs rise directly as output rises. More units mean more variable outlays in the short-run story. That direct link is the variable-cost definition used in the chapter.\n\nSo the statement is True.",
+        "**E.** → False\n\nPrices below variable cost produce negative contribution and cannot maximise long-run survival forever. Negative contribution forever is not a survival strategy.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 5.7.158",
+      "title": "Contribution Accept/Reject for BlueCompass Apps",
+      "subsection": "5.7",
+      "chapter": 5,
+      "context": "BlueCompass Apps applies marketing-mix tools from the Fuhrmann chapter. Evaluate the following economic assertions:",
+      "statements": [
+        "Variable costs represent the absolute lower limit for price in the book’s short-run discussion in BlueCompass Apps’s planning.",
+        "Amount by which price exceeds variable cost contributes to covering fixed costs in BlueCompass Apps’s planning.",
+        "Distribution pricing adds a markup to variable costs in competitive settings and bidding in BlueCompass Apps’s planning.",
+        "A contribution-positive bulk offer can be rational if higher-priced alternative sales are not assured in BlueCompass Apps’s planning.",
+        "Fixed costs vary one-for-one with each extra unit in the basic short-run diagram in BlueCompass Apps’s planning."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nBlueCompass Apps treats variable costs as the short-run absolute floor for price in the book's discussion. Going under that floor deepens losses per licence. Variable cost as lower price limit is correct.\n\nSo the statement is True.",
+        "**B.** → True\n\nPrice minus variable cost at BlueCompass is contribution that helps cover fixed costs such as platform overhead. Each paid licence chips at those fixed costs. Excess over variable cost as contribution is right.\n\nSo the statement is True.",
+        "**C.** → True\n\nIn competitive or bid-like settings, BlueCompass distribution pricing may add a markup onto variable costs. Cost-plus-variable logic guides the quote. Markup on variable costs matches the statement.\n\nSo the statement is True.",
+        "**D.** → True\n\nAccepting a contribution-positive bulk BlueCompass deal can be sensible if richer sales are not locked in. Partial cover of fixed costs beats zero contribution. Rational bulk acceptance when alternatives are unsure is true. BlueCompass likewise takes contribution-positive enterprise bundles when higher list seats are not contractually assured.\n\nSo the statement is True.",
+        "**E.** → False\n\nFixed costs in the basic short-run diagram do not tick up with every extra BlueCompass seat sold. They stay fixed between steps. One-for-one fixed-cost variation with each unit is false.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.1.001",
+      "title": "The Balance Sheet Equation",
+      "subsection": "6.1",
+      "chapter": 6,
+      "context": "Analyze how the balance sheet equation requires total assets to equal the sum of total liabilities and total equity. Evaluate the following economic assertions:\n",
+      "statements": [
+        "A pallet loader used by an operating business is classified as inventory because inventory can include any physical equipment a business owns.",
+        "A pallet loader held by a dealer for resale to customers is classified as a non-current asset because the dealer is a business rather than a household.",
+        "A pallet loader kept in service by an operating business for more than one year is classified as a non-current tangible asset.",
+        "The same pallet loader must always be classified identically on every balance sheet regardless of how it is held.",
+        "The same pallet loader may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nPhysical form alone does not make a pallet loader inventory. Inventory is held for sale or for cycle consumption, not every machine the firm owns. Operating use beyond a year puts pallet loader among non-current tangibles. Counterexample: a forklift in the firm’s own warehouse is plant, not stock. Use-versus-resale is the split that matters.\n\nSo the statement is False.",
+        "**B.** → False\n\nA dealer’s pallet loader held for customers is merchandise. Resale intent keeps it in inventory (current), even though the dealer is a firm. A resale reading of the extract breaks this claim.\n\nSo the statement is False.",
+        "**C.** → True\n\nMulti-year operating use of a pallet loader fits the non-current tangible test. Useful life beyond the period plus own use, not resale, drive that line. Tangible means physical substance; non-current means long-term benefit. Operators and dealers can report the same pallet loader on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe same pallet loader need not share one balance-sheet line everywhere. Each reporter classifies by how it holds the object. Operator → non-current tangible; dealer → inventory. Physical identity does not freeze the category. How pallet loader is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for pallet loader. Operators and dealers can report the same pallet loader on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is False.",
+        "**E.** → True\n\nIntended use decides the line for the same physical object. An operator records a non-current tangible; a dealer records inventory. A dealer’s pallet loader stays inventory until sold.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.5.069",
+      "title": "Return and Cash Flow Extract 69",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 501 |\n| Machinery | 187 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 88 |\n| Inventory | 84 |\n| Trade receivables | 121 |\n| Cash and cash equivalents | 85 |\n| Total assets | **1139** |\n| **EQUITY** | |\n| Share capital | 230 |\n| Retained earnings | 273 |\n| Total equity | **503** |\n| **LIABILITIES** | |\n| Long-term bank loan | 302 |\n| Bonds payable | 67 |\n| Trade payables | 198 |\n| Bank overdraft | 69 |\n| Total liabilities | **636** |\n| Total equity and liabilities | **1139** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 184 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 208 |\n| Cash flow from investing activities | (243) |\n| Cash flow from financing activities | 50 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 13.3%.",
+        "Return on equity, the operating result taken as a percentage of total equity, exceeds 39.5%.",
+        "Cash flow from operating activities amounts to less than 103.3% of the operating result, indicating profit is only partly backed by cash.",
+        "Inventory make up more than 14.2% of total assets.",
+        "The equity ratio exceeds 35.4%."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nROCE relates operating result to capital employed: equity plus non-current liabilities.\n\n$$\n\\text{Capital employed} = 503 + 302 + 67,\\quad \\text{Capital employed} = 872\n$$\n\n$$\n\\frac{184}{872} \\approx 0.2110 \\approx 21.1\\%\n$$\n\nROCE = operating result ÷ (equity + non-current liabilities). 184872 = 21.1%. Check the extract’s labels once more against the stem’s threshold. Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct.\n\nSo the statement is True.",
+        "**B.** → False\n\nOwners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect. A concrete fix: put borrowings under liabilities and owner claims under equity. The threshold in the sentence is compared directly to the computed percentage.\n\nSo the statement is False.",
+        "**C.** → False\n\nAssign the cash line to operating, investing, or financing before judging the claim. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False.",
+        "**D.** → False\n\nFrom the extract, Inventory = 84 and total assets = 1,139.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{84}{1{,}139}\n$$\n\n$$\n\\text{Share} = 7.4\\%\n$$\n\nInventory / total assets ≈ 84 ÷ 1,139 = 7.4%. More than 14.2% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it.\n\nSo the statement is False.",
+        "**E.** → True\n\nEquity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 503,\\quad \\text{Total assets} = 1{,}139\n$$\n\n$$\n\\frac{503}{1{,}139} \\approx 0.4416 \\approx 44.2\\%\n$$\n\n$$\n44.2\\% > 35.4\\%\n$$\n\nThe equity ratio is 44.2%, above the 35.4% benchmark. Equity ratio ≈ 503 ÷ 1,139 = 44.2%.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.039",
+      "title": "Asset and Inventory Turnover 39",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1,177 |\n| Cost of sales | 793 |\n| Total assets at the beginning of the year | 761 |\n| Total assets at the end of the year | 1015 |\n| Inventory at the beginning of the year | 128 |\n| Inventory at the end of the year | 160 |\n| Trade receivables at the beginning of the year | 134 |\n| Trade receivables at the end of the year | 110 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Asset turnover, revenue taken relative to average total assets, is above 1.19.",
+        "Inventory turnover, cost of sales taken relative to average inventory, is below 7.42 times per year.",
+        "Average inventory make up less than 16.3% of average total assets.",
+        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.99 times per year.",
+        "With inventory turnover of about 5.5 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAsset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{761 + 1{,}015}{2} \\approx 888\n$$\n\n$$\n\\frac{1{,}177}{888} \\approx 1.3255\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 888. Asset turnover = 1,177 ÷ 888 ≈ 1.3255 Claimed above 1.19. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is True.",
+        "**B.** → True\n\nStock figures at a date and period flows must not be swapped. With that split the claim is fine. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
+        "**C.** → True\n\nAverage inventory and average assets are midpoints of the beginning and ending balances on the extract.\n\n$$\n\\frac{128 + 160}{2} \\approx 144\n$$\n\n$$\n\\frac{761 + 1{,}015}{2} \\approx 888\n$$\n\n$$\n\\frac{144}{888} \\approx 0.1622 \\approx 16.2\\%\n$$\n\nAverage inventory and average assets are midpoints of beginning and ending balances.\n\nSo the statement is True.",
+        "**D.** → False\n\nReceivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{134 + 110}{2} \\approx 122\n$$\n\n$$\n\\frac{1{,}177}{122} \\approx 9.6475\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,177122 = 9.6475 Threshold exceeds 10.99. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is wrong. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
+        "**E.** → True\n\nInventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{128 + 160}{2} \\approx 144\n$$\n\n$$\n\\frac{793}{144} \\approx 5.51\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 793144 = 5.51 That interpretation matches the definition. A dealer’s the item stays inventory until sold. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.3.035",
+      "title": "Return and Cash Flow Extract 35",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 329 |\n| Machinery | 237 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 273 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1253** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 464 |\n| Total equity | **626** |\n| **LIABILITIES** | |\n| Long-term bank loan | 419 |\n| Bonds payable | 55 |\n| Trade payables | 126 |\n| Bank overdraft | 27 |\n| Total liabilities | **627** |\n| Total equity and liabilities | **1253** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 201 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 199 |\n| Cash flow from investing activities | (276) |\n| Cash flow from financing activities | 46 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Return on equity, the operating result taken as a percentage of total equity, exceeds 41.4%.",
+        "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.3%.",
+        "The equity ratio exceeds 47%.",
+        "Cash flow from operating activities amounts to less than 87% of the operating result, indicating profit is only partly backed by cash.",
+        "Inventory make up more than 27.6% of total assets."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nCreditors come first; equity is the residual ownership claim. Dividends and share issues are financing events, not operating sales. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False.",
+        "**B.** → False\n\nROCE relates operating result to capital employed: equity plus non-current liabilities.\n\n$$\n\\text{Capital employed} = 626 + 419 + 55,\\quad \\text{Capital employed} = 1{,}100\n$$\n\n$$\n\\frac{201}{1{,}100} \\approx 0.1827 \\approx 18.3\\%\n$$\n\nROCE = operating result ÷ (equity + non-current liabilities). 2011,100 = 18.3%. Check the extract’s labels once more against the stem’s threshold. Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect.\n\nSo the statement is False.",
+        "**C.** → True\n\nEquity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 626,\\quad \\text{Total assets} = 1{,}253\n$$\n\n$$\n\\frac{626}{1{,}253} \\approx 0.4996 \\approx 50.0\\%\n$$\n\n$$\n50.0\\% > 47\\%\n$$\n\nThe equity ratio is 50.0%, above the 47% benchmark. Equity ratio ≈ 626 ÷ 1,253 = 50.0%.\n\nSo the statement is True.",
+        "**D.** → False\n\nAssign the cash line to operating, investing, or financing before judging the claim. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
+        "**E.** → False\n\nFrom the extract, Inventory = 273 and total assets = 1,253.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{273}{1{,}253}\n$$\n\n$$\n\\text{Share} = 21.8\\%\n$$\n\nInventory / total assets ≈ 273 ÷ 1,253 = 21.8%. More than 27.6% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.045",
+      "title": "Liquidity From the Balance Sheet 45",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 401 |\n| Machinery | 210 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 55 |\n| Inventory | 111 |\n| Trade receivables | 80 |\n| Cash and cash equivalents | 36 |\n| Total assets | **969** |\n| **EQUITY** | |\n| Share capital | 134 |\n| Retained earnings | 283 |\n| Total equity | **417** |\n| **LIABILITIES** | |\n| Long-term bank loan | 216 |\n| Bonds payable | 49 |\n| Trade payables | 212 |\n| Bank overdraft | 75 |\n| Total liabilities | **552** |\n| Total equity and liabilities | **969** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Trade receivables make up less than 46% of current assets.",
+        "Inventory of €111 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
+        "The equity ratio exceeds 34%.",
+        "Total assets of €969 thousand equal total equity plus total liabilities.",
+        "On a balance sheet with total assets of €969 thousand, the acid-test ratio is more conservative than the current ratio because it leaves inventory out of current assets."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFrom the extract, Trade receivables = 80 and current assets = 227.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{80}{227}\n$$\n\n$$\n\\text{Share} = 35.2\\%\n$$\n\nTrade receivables / current assets ≈ 80 ÷ 227 = 35.2%. Less than 46% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
+        "**B.** → True\n\nInventory is held for sale or cycle use, so it is current. It is neither an intangible nor a long-term operating asset. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
+        "**C.** → True\n\nEquity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 417,\\quad \\text{Total assets} = 969\n$$\n\n$$\n\\frac{417}{969} \\approx 0.4303 \\approx 43.0\\%\n$$\n\n$$\n43.0\\% > 34\\%\n$$\n\nThe equity ratio is 43.0%, above the 34% benchmark. Equity ratio ≈ 417 ÷ 969 = 43.0%.\n\nSo the statement is True.",
+        "**D.** → True\n\nCreditors come first; equity is the residual ownership claim. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A thousand reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
+        "**E.** → True\n\nWhat the object looks like does not pick the heading. On the chapter test the wording is accepted. The threshold in the sentence is compared directly to the computed percentage. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) The three-sector model, credited to economists Allan Fisher, Colin Clark, and Jean Fourastié working independently between the 1930s and 1940s, describes economies as typically progressing from primarysector dominance, through secondary-sector expansion, toward eventual tertiary-sector dominance as development proceeds, a trajectory the model's originators framed as a near-universal consequence of rising income and shifting consumer demand rather than a mere historical coincidence. South Korea illustrates this trajectory sharply: primary-sector employment fell from around 50% of the workforce in 1970 to under 5% by 2020, while tertiary-sector employment rose from roughly 30% to over 70% across the same period, a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish.\n\n(2) A related but conceptually distinct phenomenon, deindustrialization, has drawn particular scrutiny among economists studying already-developed economies, precisely because it appears to unfold even where manufacturing itself remains robust rather than genuinely contracting. In the United States, manufacturing's share of total employment fell from around 24% in 1970 to under 9% by 2020, even as manufacturing output, adjusted for inflation, roughly tripled over the same period — a divergence economists attribute mainly to rising labour productivity through automation, rather than to any straightforward decline in the underlying scale of production itself, a distinction frequently lost in popular commentary that conflates falling factory employment with a supposedly hollowed-out industrial base.\n\n(3) Dissatisfied with grouping all services together under a single undifferentiated tertiary label, some economists propose a separate \"quaternary sector\" covering information-intensive activities such as software development, financial analysis, and scientific research, arguing these differ fundamentally from routine tertiary services like retail or hospitality in their heavy reliance on specialised, codified knowledge rather than repeated, standardised service delivery requiring comparatively little formal expertise, a distinction proponents consider analytically indispensable for understanding where genuine value creation increasingly concentrates within modern economies.\n\n(4) A further proposed category, the \"quinary sector,\" would encompass top-level decision-making roles and human-development services such as healthcare, education, and cultural production. Its boundaries remain genuinely contested and are applied inconsistently across national statistical agencies, some of which fold quinary activities directly back into broader tertiary or quaternary categories rather than tracking them separately, meaning cross-country comparisons built uncritically on this particular framework should be treated with considerable methodological caution.\n\n(5) The employment-output divergence observed in the United States is by no means unique to it, nor is it merely an artefact of one country's particular statistical conventions. A 2018 study spanning 42 economies found manufacturing employment share declining in 38 of them, while manufacturing value added, calculated in real terms adjusted for inflation, nonetheless grew in 33 of those same 38 economies — a pattern the study's authors interpreted as further corroborating evidence favouring automation-driven productivity gains over any simplistic narrative of uniformly contracting industrial production.\n\n(6) Developing economies frequently display a markedly different structural imbalance, one that inverts rather than mirrors the pattern observed in wealthier nations. In several Sub-Saharan African countries, agriculture accounts for over 50% of total employment while contributing under 20% of GDP, a substantial gap economists attribute to considerably lower output per worker in primary-sector activities relative to other parts of these same economies, reflecting persistent underinvestment in agricultural technology, infrastructure, and access to capital rather than any inherent limitation of the sector itself.\n\n(7) Economist Dani Rodrik has termed a related pattern \"premature deindustrialization\": manufacturing employment shares in many developing countries now appear to peak and subsequently decline at considerably lower levels of per-capita income than occurred historically in earlier-industrialising nations, raising genuine concern among development economists that some countries may transition toward services before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised, potentially foreclosing a developmental pathway that proved historically decisive elsewhere.\n\n(8) Compounding this classificatory difficulty still further, many manufacturing firms increasingly derive substantial revenue from bundled services — maintenance contracts, embedded software subscriptions, predictive data analytics — sold alongside their physical products rather than as an afterthought, a practice researchers term \"servitization.\" This practice progressively blurs the boundary the three-sector model treats as clean and self-evident, since a single firm's revenue may now straddle categories the framework implicitly assumes remain analytically distinct.\n\n(9) Whether the traditional sector framework, in its three-, four-, or five-category forms, still usefully captures structural economic change in an era of blurred manufacturing-service boundaries and rapidly automating production, or whether it requires fundamental conceptual revision to remain analytically meaningful at all, remains an actively debated question among economists studying long-run structural transformation.",
+    "passageTitle": "The Shifting Anatomy of Economic Sectors",
+    "tasks": [
+      {
+        "id": "en-t-15-06",
+        "case_id": "ENG T.15.06",
+        "title": "Task 6",
+        "exam_title": "Grammar Rules I",
+        "context": "Decide if each sentence is grammatically correct.",
+        "kind": "text",
+        "statements": [
+          "\"Had automation not advanced so rapidly, manufacturing employment might have declined considerably less sharply.\"",
+          "\"The committee recommended that the agency reassesses its sector classifications annually.\"",
+          "\"The number of countries adopting quaternary categories continue to expand steadily.\"",
+          "\"Neither the methodology nor the underlying boundaries were fully standardised across agencies.\"",
+          "\"Having reclassified several firms, the statistical agency subsequently revised its historical data.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A.** → True\n\n**A) \"Had automation not advanced so rapidly, manufacturing employment might have declined considerably less sharply.\"**\n\nThis is inverted third-conditional form: Had + past participle in the if-clause, with a modal perfect/conditional result. \"Might have declined\" correctly marks the unreal past consequence of a different automation path. Fronting Had drops \"if\" but keeps the past-perfect meaning of an unreal past condition. Pair that clause with a modal + have + past participle in the result, and the counterfactual about employment decline stays grammatical.\n\n**Tip:** Fronted Had + past participle = if + past perfect without writing \"if.\"\n\nThe conditional pattern is well formed, so the sentence stands.\n\nSo the statement is True.",
+          "**B.** → False\n\n**B) \"The committee recommended that the agency reassesses its sector classifications annually.\"**\n\nAfter recommend + that, English wants the mandative subjunctive: base form reassess, not present indicative reassesses. The third-person -s breaks the pattern. The same base-form rule applies after insist, require, demand, and similar verbs when a that-clause follows. Hearing everyday present tense after recommend is common in speech, but the exam form still wants the bare verb.\n\n**Trap:** Everyday present tense sneaks in after recommend/insist/require + that.\n\nThe wording fails; the sound line is \"The committee recommended that the agency reassess its sector classifications annually.\"\n\nSo the statement is False.",
+          "**C.** → False\n\n**C) \"The number of countries adopting quaternary categories continue to expand steadily.\"**\n\nThe head noun is number (singular), so the verb must be continues, not plural continue. \"Of countries…\" is a prepositional phrase and does not control agreement. Contrast \"a number of countries continue\" (plural sense) with \"the number of countries continues\" (singular head). Here the article the locks number as the grammatical subject, so plural continue is the error.\n\n**Trap:** The plural noun nearest the verb is a classic distractor after \"the number of.\"\n\nAgreement breaks, so this doesn't hold — \"The number of countries adopting quaternary categories continues to expand steadily.\"\n\nSo the statement is False.",
+          "**D.** → True\n\n**D) \"Neither the methodology nor the underlying boundaries were fully standardised across agencies.\"**\n\nWith neither…nor, the verb agrees with the nearer subject. Here that subject is plural boundaries, so were is correct. If the nearer noun had been singular methodology, was would be required instead — proximity, not the first noun, decides. Keep the neither…nor pair intact and check only the noun sitting closest to the verb before you choose was/were.\n\nProximity agreement with boundaries makes the line sound, so the sentence stands.\n\nSo the statement is True.",
+          "**E.** → True\n\n**E) \"Having reclassified several firms, the statistical agency subsequently revised its historical data.\"**\n\nThe participle Having reclassified attaches to the statistical agency — the same actor that then revised the data — so there is no dangling modifier. Perfect participle Having + past participle marks the reclassification as complete before the revision that follows. If a different noun opened the main clause, the opener would dangle; here agency performs both actions in sequence.\n\nThe agent of both actions is clear, so the wording holds.\n\nSo the statement is True."
+        ],
+        "highlights": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "difficulty_level": "4/5",
+        "sort_order": 6,
+        "subsection": "t.15"
+      },
+      {
+        "id": "en-t-15-07",
+        "case_id": "ENG T.15.07",
+        "title": "Task 7",
+        "exam_title": "Grammar Rules II",
+        "context": "Decide if each sentence is grammatically correct.",
+        "kind": "text",
+        "statements": [
+          "\"No sooner had the classification changed than analysts began revising their entire models.\"",
+          "\"The framework, along with several proposed subcategories, were debated extensively.\"",
+          "\"Each of the surveyed economies have shown a broadly similar structural pattern.\"",
+          "\"By the time the dataset is finalised, several classifications will have already changed.\"",
+          "\"The figures, which were compiled across several decades, indicate a remarkably consistent shift.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A.** → True\n\n**A) \"No sooner had the classification changed than analysts began revising their entire models.\"**\n\nNo sooner…than takes inversion in the first clause (had + subject + past participle) and than — not when — for the follow-up. Both pieces are in place here. The inverted had the classification changed is required after No sooner; a non-inverted \"No sooner the classification had changed\" would break the frame. Watch especially for when sneaking in where than belongs — that swap is a frequent correlative trap.\n\n**Tip:** Remember the paired frame: No sooner had… than…\n\nThe inversion correlative is correctly built, so the sentence stands.\n\nSo the statement is True.",
+          "**B.** → False\n\n**B) \"The framework, along with several proposed subcategories, were debated extensively.\"**\n\nAlong with… is parenthetical; the true subject is singular framework, which needs was debated, not were. The plural noun inside the aside should not steal agreement. As well as and together with work the same way: they add information without creating a plural compound subject. Strip the along with phrase mentally and test agreement with framework alone — was is the only fit.\n\n**Trap:** Material after along with / as well as / together with is not a compound subject.\n\nThe line fails — \"The framework, along with several proposed subcategories, was debated extensively.\"\n\nSo the statement is False.",
+          "**C.** → False\n\n**C) \"Each of the surveyed economies have shown a broadly similar structural pattern.\"**\n\nEach of takes a singular verb: has shown, not have. Economies is the object of of and does not license a plural verb. Every, either, and neither as heads follow the same singular-verb pattern even when a plural noun follows of. Ignore the nearest plural and lock the verb to each — has shown is the corrected form.\n\n**Trap:** The plural after of is the usual agreement bait after each / every / either.\n\nNumber agreement breaks, so this doesn't hold — \"Each of the surveyed economies has shown a broadly similar structural pattern.\"\n\nSo the statement is False.",
+          "**D.** → True\n\n**D) \"By the time the dataset is finalised, several classifications will have already changed.\"**\n\nBy the time + present marks a future reference point; will have changed (future perfect) correctly places the classifications' change as complete before that point. Present is finalised is normal in time clauses referring to the future; you do not need will be finalised there. Future perfect in the main clause is what signals \"already done by then,\" which matches the by-phrase's deadline sense.\n\nThe future-perfect timing fits the by-phrase, so the sentence is sound.\n\nSo the statement is True.",
+          "**E.** → True\n\n**E) \"The figures, which were compiled across several decades, indicate a remarkably consistent shift.\"**\n\nPlural figures correctly takes were in the relative clause and indicate in the main clause; the non-restrictive which-clause sits cleanly between commas. The commas mark extra information about the figures rather than a restrictive that-clause needed to identify them. Keep both verbs plural to match figures — were compiled and indicate — so number agreement holds inside and outside the aside.\n\nSubject–verb number and relative-clause form both work, so the wording stands.\n\nSo the statement is True."
+        ],
+        "highlights": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 7,
+        "subsection": "t.15"
+      },
+      {
+        "id": "en-t-15-08",
+        "case_id": "ENG T.15.08",
+        "title": "Task 8",
+        "exam_title": "Vocabulary Precision",
+        "context": "Decide if the given meaning matches the word's actual use in the passage.",
+        "kind": "text",
+        "statements": [
+          "In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.",
+          "In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.",
+          "In Paragraph 3, \"codified\" means formally organised and systematically documented.",
+          "In Paragraph 2, \"conflates\" means carefully distinguishes between two separate things.",
+          "In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim."
+        ],
+        "answer_key": [
+          false,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A.** → False\n\n**A) In Paragraph 6, \"inverts\" means mirrors or replicates exactly, without reversing direction.**\n\nParagraph 6 says developing economies show an imbalance \"that inverts rather than mirrors the pattern observed in wealthier nations.\" Inverts is set against mirrors — it means reverses direction, not copies exactly. The \"rather than\" contrast is the definition clue: invert ≠ mirror in this sentence. Wealthier nations' pattern is the reference; the developing-economy imbalance is presented as its reverse, not its replica.\n\n**Trap:** Treating invert as a fancy synonym of mirror ignores the \"rather than.\"\n\nThe claimed meaning is the opposite of the passage contrast, so the statement fails.\n\nSo the statement is False.",
+          "**B.** → False\n\n**B) In Paragraph 8, \"foreclosing\" means opening up or actively creating a new opportunity.**\n\nIn Paragraph 7 the text warns of \"potentially foreclosing a developmental pathway\" — shutting off or blocking that route, not opening a new one. \"Opening up\" reverses the verb's force (and the word is not even in Paragraph 8). A pathway that is foreclosed is ruled out or prevented, which matches the worry about missing manufacturing-driven gains. Correct the paragraph citation and the gloss together: blocking a route is the opposite of creating opportunity.\n\nForeclosing is blocking, not creating opportunity, so the meaning claim is false.\n\nSo the statement is False.",
+          "**C.** → True\n\n**C) In Paragraph 3, \"codified\" means formally organised and systematically documented.**\n\nParagraph 3 contrasts quaternary work's \"specialised, codified knowledge\" with routine service delivery needing little formal expertise. Codified here means knowledge organised into systematic, documentable form — matching the given gloss. The foil is \"repeated, standardised service delivery\" with little formal expertise, which sharpens why codified knowledge is the quaternary marker. Keep specialised and codified together: the proposal's distinction rests on that organised-knowledge criterion.\n\nThe passage sense fits the stated meaning, so the claim holds.\n\nSo the statement is True.",
+          "**D.** → False\n\n**D) In Paragraph 2, \"conflates\" means carefully distinguishes between two separate things.**\n\nParagraph 2 criticises commentary that \"conflates falling factory employment with a supposedly hollowed-out industrial base\" — merging two different ideas into one muddle. That is the opposite of carefully distinguishing them. Employment share can fall while real output rises; conflating those facts with a hollowed-out base is the popular error the paragraph names. Distinguish keeps the ideas apart; conflate fuses them — the gloss has the wrong pole.\n\n**Trap:** Conflate ≈ confuse/merge; distinguish ≈ keep apart.\n\nThe gloss flips the verb, so the statement fails.\n\nSo the statement is False.",
+          "**E.** → True\n\n**E) In Paragraph 5, \"corroborating\" means providing supporting confirmation for a claim.**\n\nParagraph 5 calls the multi-country pattern \"further corroborating evidence favouring automation-driven productivity gains\" — evidence that backs the automation reading. Supporting confirmation is exactly that role. \"Further\" signals additional backing for an explanation already on the table, not a brand-new rival mechanism. If a gloss said \"contradicting\" or \"replacing,\" it would fight the passage's favouring / corroborating frame.\n\nThe passage use matches the gloss, so the claim is true.\n\nSo the statement is True."
+        ],
+        "highlights": [
+          "inverts rather than mirrors the pattern observed in wealthier nations",
+          "potentially foreclosing a developmental pathway",
+          "specialised, codified knowledge rather than repeated, standardised service delivery",
+          "conflates falling factory employment with a supposedly hollowed-out industrial base",
+          "further corroborating evidence favouring automation-driven productivity gains"
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 8,
+        "subsection": "t.15"
+      },
+      {
+        "id": "en-t-15-09",
+        "case_id": "ENG T.15.09",
+        "title": "Task 9",
+        "exam_title": "Vocabulary Precision II",
+        "context": "Decide if the given meaning matches the word's actual use in the passage.",
+        "kind": "text",
+        "statements": [
+          "In Paragraph 1, \"compression\" (of structural transformation) means the process took noticeably longer than usual.",
+          "In Paragraph 4, \"contested\" means widely agreed upon without any dispute.",
+          "In Paragraph 7, \"foreclosing\" (a pathway) means permanently ruling out or preventing it.",
+          "In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.",
+          "In Paragraph 2, \"hollowed-out\" implies a robust, thriving industrial base still fully intact."
+        ],
+        "answer_key": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A.** → False\n\n**A) In Paragraph 1, \"compression\" (of structural transformation) means the process took noticeably longer than usual.**\n\nParagraph 1 praises Korea's \"compression of structural transformation\" versus European paths that took \"well over a century.\" Compression shortens the timeline; \"noticeably longer\" reverses that sense. The century-plus European span is the long comparison case; Korea is the compressed, faster trajectory. Any gloss that turns compression into delay fights both the word and the Europe-versus-Korea contrast.\n\n**Trap:** Compression ≠ elongation — the European comparison already signals speed-up.\n\nThe claimed meaning contradicts the compression contrast, so it fails.\n\nSo the statement is False.",
+          "**B.** → False\n\n**B) In Paragraph 4, \"contested\" means widely agreed upon without any dispute.**\n\nParagraph 4 says quinary boundaries \"remain genuinely contested\" and are applied inconsistently. Contested means disputed, not \"widely agreed upon without any dispute.\" Inconsistent application across agencies is the practical symptom of that dispute. A no-dispute gloss would also clash with the paragraph's warning to treat cross-country quinary comparisons with methodological caution.\n\nThe gloss is the opposite of the paragraph, so the statement is false.\n\nSo the statement is False.",
+          "**C.** → True\n\n**C) In Paragraph 7, \"foreclosing\" (a pathway) means permanently ruling out or preventing it.**\n\nRodrik's worry about \"potentially foreclosing a developmental pathway\" is about shutting that route off before manufacturing benefits arrive. Ruling out / preventing matches that use. The pathway is the historically decisive manufacturing route — productivity, wages, mass employment — that may be blocked if services come too early. Soft \"potentially\" does not change the verb's core force: foreclosure is prevention, not mild delay.\n\nThe passage sense fits the gloss, so the claim holds.\n\nSo the statement is True.",
+          "**D.** → True\n\n**D) In Paragraph 9, \"conceptual\" means relating to abstract ideas or frameworks, not physical objects.**\n\nParagraph 9 asks whether the sector model needs \"fundamental conceptual revision\" to stay analytically meaningful — revision of ideas and frameworks, not of physical machinery. The abstract-framework gloss is right. The debate is whether three-, four-, or five-category forms still capture structural change as analytical tools. Nothing in the closing sentence is about rewriting factory equipment; the target is the model's concepts.\n\nThe word's passage use supports the stated meaning, so the claim is true.\n\nSo the statement is True.",
+          "**E.** → False\n\n**E) In Paragraph 2, \"hollowed-out\" implies a robust, thriving industrial base still fully intact.**\n\nParagraph 2 mentions popular commentary that links job loss with \"a supposedly hollowed-out industrial base\" — a depleted, emptied-out image, not a robust base still intact. The gloss flips the implication. The adverb \"supposedly\" already marks that hollowed-out picture as a contested popular reading, not the economists' productivity account. Hollowed-out signals emptiness or depletion; thriving intactness is the opposite pole.\n\nHollowed-out signals weakness, not thriving intactness, so the statement fails.\n\nSo the statement is False."
+        ],
+        "highlights": [
+          "a compression of structural transformation that took many earlier-industrialising European economies well over a century to accomplish",
+          "Its boundaries remain genuinely contested and are applied inconsistently",
+          "potentially foreclosing a developmental pathway that proved historically decisive elsewhere",
+          "fundamental conceptual revision to remain analytically meaningful",
+          "conflates falling factory employment with a supposedly hollowed-out industrial base"
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 9,
+        "subsection": "t.15"
+      },
+      {
+        "id": "en-t-15-10",
+        "case_id": "ENG T.15.10",
+        "title": "Task 10",
+        "exam_title": "Sneaky Paraphrase Detection",
+        "context": "One sentence from the passage, followed by five short paraphrases. Decide if each preserves its meaning. Original: \"…raising genuine concern among development economists that some countries may transition toward services before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised.\"",
+        "kind": "text",
+        "statements": [
+          "This raises real worry that some countries could shift to services before manufacturing has generated its full range of economic benefits.",
+          "This confirms that all developing countries deliberately bypass manufacturing entirely before building any service sector.",
+          "This raises concern that manufacturing's productivity, wage, and employment gains might arrive only after a premature shift toward services.",
+          "This shows manufacturing-driven benefits are always fully achieved before any service-sector growth ever begins.",
+          "This raises concern that some countries transition toward services only once manufacturing's benefits are already fully secured."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A.** → True\n\n**A) This raises real worry that some countries could shift to services before manufacturing has generated its full range of economic benefits.**\n\nThe original warns of concern that countries \"may transition toward services before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised.\" \"Real worry,\" \"could shift,\" and \"full range of economic benefits\" keep the caution and the before-gains sequence. Soft modality (may / could / some) stays soft, and the benefits bundle still maps onto productivity, wages, and employment. A faithful paraphrase may compress the triad into \"economic benefits\" without changing the before timing.\n\nThe paraphrase preserves meaning and tone, so it holds.\n\nSo the statement is True.",
+          "**B.** → False\n\n**B) This confirms that all developing countries deliberately bypass manufacturing entirely before building any service sector.**\n\nThe original uses may / some / concern — not confirms, all, deliberately, or entirely. Those absolute and intentional words invent certainty and strategy the passage never asserts. \"Confirms\" hardens a worry into a proven law; \"deliberately…entirely\" adds intent and totality absent from the sentence. Match modality and scope first: soft, partial concern cannot become a universal deliberate bypass.\n\n**Trap:** Soft modality (may, some) must not harden into confirms / all / deliberately.\n\nThe paraphrase overstates and invents intent, so it fails.\n\nSo the statement is False.",
+          "**C.** → True\n\n**C) This raises concern that manufacturing's productivity, wage, and employment gains might arrive only after a premature shift toward services.**\n\n\"Might arrive only after\" restates the same before/after risk: services first, manufacturing-driven gains still unrealised. Productivity, wage, and employment map onto the original triad. \"Premature\" echoes the Rodrik label without adding a new mechanism, and \"might\" keeps the cautionary tone. As long as services precede full realisation of those gains, the paraphrase stays aligned with Paragraph 7.\n\nThe sequencing and content stay faithful, so the claim is true.\n\nSo the statement is True.",
+          "**D.** → False\n\n**D) This shows manufacturing-driven benefits are always fully achieved before any service-sector growth ever begins.**\n\nThe original fears the opposite order — services before benefits are realised — and never guarantees benefits are \"always fully achieved\" first. \"Shows…always…ever\" reverses and absolutises the concern. Replacing concern with \"shows\" invents proof; \"always…before any…ever\" invents a universal timetable. The faithful reading keeps unrealised benefits as a risk after an early services shift, not a guaranteed manufacturing-first sequence.\n\nThe paraphrase flips the timeline into a false guarantee, so it fails.\n\nSo the statement is False.",
+          "**E.** → False\n\n**E) This raises concern that some countries transition toward services only once manufacturing's benefits are already fully secured.**\n\n\"Only once…already fully secured\" places services after benefits are locked in; the original places the transition before those benefits are fully realised. The sequence is reversed. Keeping \"raises concern\" and \"some countries\" does not save a paraphrase that inverts the before/after hinge. Check the timing words against \"before…have been fully realised\" — secured-first wording fails that test.\n\n**Trap:** \"Before\" vs \"only once…secured\" is a clean chronology flip.\n\nBecause the paraphrase inverts the timing, the statement is false.\n\nSo the statement is False."
+        ],
+        "highlights": [
+          "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+          "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+          "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+          "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised",
+          "before manufacturing-driven productivity gains, wage growth, and mass employment opportunities have been fully realised"
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 10,
+        "subsection": "t.15"
+      },
+      {
+        "id": "en-g-1-20",
+        "case_id": "ENG G.1.20",
+        "title": "Task 20",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "Hardly I had sat down when my phone buzzed.",
+          "Hardly had I sat down when my phone buzzed.",
+          "She has been wanting a pottery wheel for months.",
+          "I’m thinking that the gallery closes too early on Mondays.",
+          "In two hours’ time, the tide will have turned and the rock pools will be underwater."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A.** → False\n\n**A) Hardly I had sat down when my phone buzzed.**\n\n\"Hardly\" needs inversion with past perfect: had before the subject. Without fronted had, the formal immediate-sequence pattern collapses. Repair to \"Hardly had I sat down when my phone buzzed.\"\n\n**Trap:** Ordinary order after \"hardly\" is the twin of the broken \"no sooner\" line.\n\nHardly needs inverted had before the subject: \"Hardly had I sat down when my phone buzzed.\"\n\nSo the statement is False.",
+          "**B.** → True\n\n**B) Hardly had I sat down when my phone buzzed.**\n\nCorrect inverted past perfect \"Hardly had I sat down\" marks sitting as complete just before the buzz. Match hardly … when with had + V3 after the fronted adverb — the repaired A-line.\n\n**Tip:** Hardly / scarcely + had + subject + V3 + when…\n\nInverted hardly had … when … correctly places sitting just before the buzz, so the wording is **true**.\n\nSo the statement is True.",
+          "**C.** → True\n\n**C) She has been wanting a pottery wheel for months.**\n\n\"Has been wanting\" is accepted in modern exam-tolerant English for a desire lasting for months up to now. The continuous stresses the ongoing stretch of that wish rather than a one-off decision.\n\n**Tip:** Have been wanting = desire lasting up to now.\n\nA months-long desire up to now allows has been wanting, so the sentence is **true**.\n\nSo the statement is True.",
+          "**D.** → False\n\n**D) I’m thinking that the gallery closes too early on Mondays.**\n\nOpinion \"think\" (= believe) is stative, so \"I’m thinking that…\" is wrong here. Continuous \"thinking\" is for mental process (\"I’m thinking about a title\"), not for stating a belief. Repair to \"I think that the gallery closes too early on Mondays.\"\n\n**Trap:** \"I’m thinking that…\" is common in speech for soft opinion, but exams keep belief \"think\" simple.\n\nBelief think stays simple; continuous is for considering, so this is **false** — \"I think that the gallery closes too early on Mondays.\"\n\nSo the statement is False.",
+          "**E.** → True\n\n**E) In two hours’ time, the tide will have turned and the rock pools will be underwater.**\n\nFuture perfect \"will have turned\" correctly places the tide’s turn before the two-hour mark, with rock pools underwater as the clear present-result consequence. Nature timing with \"in … time\" pairs well with will have for prior completion.\n\nTide turned before the two-hour mark is prior completion with will have, so the line is **true**.\n\nSo the statement is True."
+        ],
+        "highlights": [
+          "Hardly I had",
+          "Hardly had I",
+          "has been wanting",
+          "I’m thinking that",
+          "will have turned"
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 20,
+        "subsection": "g.1",
+        "solution_overview": "Close with inversion after \"hardly,\" accept long-running \"has been wanting,\" reject opinion continuous \"I'm thinking that,\" and keep future perfect for the tide.\n\n**Part 1: What to watch for.**\n\n\"Hardly\" needs inversion: Hardly had + subject + V3 + when. \"Want\" can take present perfect continuous for a long-standing desire. Opinion \"think\" (= believe) stays simple; continuous \"thinking\" is for considering. Tide turning \"in two hours' time\" wants future perfect for prior completion.\n\n**Part 2: How to decide.**\n\nTreat A/B as the inversion pair, keep C and E, and fail D when \"think\" is pure opinion.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=FALSE, E=TRUE",
+        "kind": "grammar"
+      },
+      {
+        "id": "en-g-2-20",
+        "case_id": "ENG G.2.20",
+        "title": "Task 20",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "It's high time we booked the campsite.",
+          "If you come to the hike, bring a reusable bottle.",
+          "I'll come cycling with you on Sunday provided the weather holds.",
+          "I'll come cycling with you on Sunday provided the weather will hold.",
+          "No sooner had we sat down than the fire alarm would go off."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A.** → True\n\n**A) It's high time we booked the campsite.**\n\nIt's high time + past simple correctly marks present urgency with the same backshift as wish / it's time. Booked means we should book now. The past form does not claim that the campsite is already booked.\n\nIt’s high time + past marks present booking pressure without claiming the campsite is already booked, so the wording is **true**.\n\nSo the statement is True.",
+          "**B.** → True\n\n**B) If you come to the hike, bring a reusable bottle.**\n\nClear first-conditional imperative result: if + present, imperative bring… Instructions work fine as first-conditional results. Come is present; bring is the real-instruction outcome.\n\nIf + present with an imperative result is a valid instruction pattern, so bring the bottle is **true**.\n\nSo the statement is True.",
+          "**C.** → True\n\n**C) I'll come cycling with you on Sunday provided the weather holds.**\n\nProvided + present (holds) correctly sets a real weather condition for a future plan with will come. Holds stays present in the proviso. Provided / providing take present, not will, just like if / as long as.\n\nProvided takes present holds while will come carries the Sunday plan, so the weather proviso is **true**.\n\nSo the statement is True.",
+          "**D.** → False\n\n**D) I'll come cycling with you on Sunday provided the weather will hold.**\n\nProvided the weather will hold wrongly inserts will into the condition. Same rule as if / as long as: no will in the proviso clause. Keep will come in the main clause and strip will from the weather proviso.\n\n**Trap:** provided the weather will hold doubles future will and breaks the connector pattern.\n\nWill inside the provided clause doubles future marking, so will hold is **false** — \"I’ll come cycling with you on Sunday provided the weather is **true**.\"\n\nSo the statement is False.",
+          "**E.** → False\n\n**E) No sooner had we sat down than the fire alarm would go off.**\n\nNo sooner… than needs a simple past result (went off), not conditional would go off. No sooner is past sequencing, not a conditional frame. Leave would out of this narrative pattern.\n\n**Trap:** would go off sneaks conditional mood into a past-sequencing idiom that wants went off.\n\nNo sooner… than sequences past events, so would go off doesn’t belong: \"No sooner had we sat down than the fire alarm went off.\"\n\nSo the statement is False."
+        ],
+        "highlights": [
+          "It's high time we booked",
+          "If you come to the hike, bring",
+          "provided the weather holds",
+          "provided the weather will",
+          "would go off"
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 20,
+        "subsection": "g.2",
+        "solution_overview": "Campsite booking, hike bottles, Sunday cycling, and a fire alarm — it's high time, imperative first conditionals, provided + present, and a no sooner false friend.\n\n**Part 1: What to watch for.**\n\nIt's high time + past marks present urgency. First conditionals may use an imperative result (bring…). Provided takes present, not will. No sooner… than is past sequencing with simple past (went off), not conditional would go off.\n\n**Part 2: How to decide.**\n\nAccept booked / bring / holds as clean backshift, imperative, and proviso patterns. Reject will after provided. Do not force would onto a no sooner narrative.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=FALSE",
+        "kind": "grammar"
+      },
+      {
+        "id": "en-g-3-20",
+        "case_id": "ENG G.3.20",
+        "title": "Task 20",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "Neither the nominee captain nor the shadow captains have disclosed their interests.",
+          "The number of days between practices has improved after the fitness drive.",
+          "There appear to be fewer exceptions in this month's checklist.",
+          "Every parcel that exceeds the weight limit requires a second label.",
+          "The head teacher, along with the independent governors, have tabled a dissenting note."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A.** → True\n\n**A) Neither the nominee captain nor the shadow captains have disclosed their interests.**\n\nNearer plural \"shadow captains\" correctly takes \"have disclosed.\" Doublets after nor still obey proximity. Interest disclosures do not change number.\n\nNearer plural \"shadow captains\" after nor take \"have disclosed,\" so this pairing is **true**.\n\nSo the statement is True.",
+          "**B.** → True\n\n**B) The number of days between practices has improved after the fitness drive.**\n\n\"The number of days between practices\" correctly takes singular \"has improved.\" Of-phrases do not pluralise the number. Fitness-drive timing is irrelevant to agreement.\n\nThe subject is singular \"the number,\" so \"has improved\" fits and the wording is **true**.\n\nSo the statement is True.",
+          "**C.** → True\n\n**C) There appear to be fewer exceptions in this month's checklist.**\n\nPlural \"fewer exceptions\" correctly takes \"there appear to be.\" Fewer is a plural cue; match appear accordingly. Checklist content does not affect number.\n\n**Tip:** There appear to be + fewer… → plural.\n\nFewer exceptions after there are plural, so \"appear\" is the right match and the line is **true**.\n\nSo the statement is True.",
+          "**D.** → True\n\n**D) Every parcel that exceeds the weight limit requires a second label.**\n\n\"Every parcel that exceeds the weight limit\" correctly takes singular \"requires.\" Relative clauses after every keep the verb singular. Second-label content is the object only.\n\n\"Every parcel\" stays singular through the relative clause, so \"requires\" keeps this intact.\n\nSo the statement is True.",
+          "**E.** → False\n\n**E) The head teacher, along with the independent governors, have tabled a dissenting note.**\n\nSingular head teacher plus along with the independent governors needs a singular verb. Governors in the insert never join the subject. Dissenting-note content does not pluralise the head.\n\n**Trap:** Along with independent governors is the last plural distractor — strip it and the head stays singular.\n\nAlong-with governors stay outside the subject, so plural \"have\" is **false** — \"The head teacher, along with the independent governors, has tabled a dissenting note.\"\n\nSo the statement is False."
+        ],
+        "highlights": [
+          "have disclosed",
+          "has improved",
+          "There appear to be fewer",
+          "requires",
+          "have tabled"
+        ],
+        "difficulty_level": "5/5",
+        "sort_order": 20,
+        "subsection": "g.3",
+        "solution_overview": "Close on a mixed set recycling neither…nor, the number, there appear, every, and along with — around captains' interests, practice gaps, checklist exceptions, heavy parcels, and a dissenting governors' note. One parenthetical plural distractor remains.\n\n**Part 1: What to watch for.**\n\nFour clean lines and one along-with failure on \"head teacher … have tabled.\" Fewer after there is a plural cue that correctly takes appear. Every with a relative clause stays singular. The number of days stays singular.\n\n**Part 2: How to decide.**\n\nWork through each construction in order: proximity after nor, singular the number, plural there appear + fewer, singular every + relative clause, then strip along with on the last line. Once the governors sit only in the insert, \"has tabled\" is obvious.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=FALSE",
+        "kind": "grammar"
+      },
+      {
+        "id": "en-v-1-30",
+        "case_id": "ENG V.1.30",
+        "title": "Task 30",
+        "context": "A final set of five judgements about confusable pairs in academic and public writing. Decide whether each judgement is right.",
+        "statements": [
+          "\"Cohort\" names a group sharing a defining characteristic such as year of birth, so a study following everyone born in 1958 tracks a \"cohort\", while a \"coterie\" is a small exclusive circle.",
+          "\"Paradigm\" means a perfect example of a quality, so a scholar praised as a model of patience is a \"paradigm\" of that virtue in the strict sense.",
+          "\"Gamut\" is an opening move made to gain an advantage, so a negotiator who concedes a small point early has played a \"gamut\".",
+          "\"Mettle\" is spirit and resilience under pressure, so a crew tested by three days of storm has shown its \"mettle\".",
+          "A \"nostrum\" is a quack remedy or a simplistic cure-all and a \"rostrum\" is a speaking platform, so a slogan promising to fix a complex crisis overnight is a \"nostrum\"."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A.** → True\n\n**A) \"Cohort\" names a group sharing a defining characteristic such as year of birth, so a study following everyone born in 1958 tracks a \"cohort\", while a \"coterie\" is a small exclusive circle.**\n\n\"Cohort\" is the standard term in epidemiology and demography for a set of people who share a characteristic and are followed over time, as in a birth cohort study. \"Coterie\" names a tight, socially exclusive group united by taste or influence, as in a literary coterie. A whole birth year is defined by a shared attribute, not by acquaintance.\n\n**Tip:** The word cohort has drifted towards meaning associates, but research writing keeps the technical sense.\n\nThe design described follows a defined population, so the term is correctly applied.\n\nSo the statement is True.",
+          "**B.** → False\n\n**B) \"Paradigm\" means a perfect example of a quality, so a scholar praised as a model of patience is a \"paradigm\" of that virtue in the strict sense.**\n\n\"Paragon\" is the word for a perfect example of a quality, as in a paragon of patience or a paragon of virtue. \"Paradigm\" means a pattern, model or framework of assumptions, which is why we speak of a grammatical paradigm and of a paradigm shift in a discipline. Praise for a person's exemplary patience calls for the first.\n\n**Tip:** A paradigm shows how something works; a paragon shows how good it can be.\n\nThe example praises a person as an ideal, so the noun offered is the wrong one — that scholar is a \"paragon\" of patience.\n\nSo the statement is False.",
+          "**C.** → False\n\n**C) \"Gamut\" is an opening move made to gain an advantage, so a negotiator who concedes a small point early has played a \"gamut\".**\n\n\"Gambit\" comes from chess and names an opening move, often one that gives something up to gain position, which is exactly the negotiator's concession. \"Gamut\" comes from the medieval musical scale and names a complete range, as in running the gamut of emotions. An early concession is a move, not a range.\n\n**Tip:** A gamut is measured end to end; a gambit is played.\n\nThe example describes a tactical opening, so the label is wrong — the negotiator has played a \"gambit\".\n\nSo the statement is False.",
+          "**D.** → True\n\n**D) \"Mettle\" is spirit and resilience under pressure, so a crew tested by three days of storm has shown its \"mettle\".**\n\n\"Mettle\" is an old variant spelling of metal that specialised into the sense of temperament and courage, preserved in test someone's mettle and on one's mettle. \"Metal\" kept the physical sense of the material itself. A crew that holds up through a long storm has demonstrated character rather than composition.\n\n**Tip:** If the phrase is about proving yourself, the spelling doubles the t.\n\nEndurance under strain is what the sentence reports, so the word chosen is correct.\n\nSo the statement is True.",
+          "**E.** → True\n\n**E) A \"nostrum\" is a quack remedy or a simplistic cure-all and a \"rostrum\" is a speaking platform, so a slogan promising to fix a complex crisis overnight is a \"nostrum\".**\n\n\"Nostrum\" originally named a patent medicine of the seller's own devising and now names any glib remedy offered for a difficult problem, usually with a sneer. \"Rostrum\" names the raised platform a speaker stands on, from the ships' beaks that decorated the Roman speaking place. A slogan promising an instant fix is a false remedy.\n\n**Tip:** Nostrums are peddled; rostra are mounted.\n\nThe example describes an easy cure for a hard problem, so the term fits it exactly.\n\nSo the statement is True."
+        ],
+        "highlights": [
+          "cohort",
+          "paradigm",
+          "gamut",
+          "mettle",
+          "nostrum"
+        ],
+        "solution_overview": "Two of these words come from research design and two from criticism, and in each pair one member has a precise technical job that the other cannot do: a defined group against a private circle, a model against a paragon, an opening move against a full range. Check what the example is counting, praising or measuring before accepting the definition. The remaining line rests on a spelling that survives only in a fixed phrase about courage.",
+        "difficulty_level": "5/5",
+        "sort_order": 30,
+        "subsection": "v.1",
+        "kind": "vocabulary"
+      },
+      {
+        "id": "en-v-2-30",
+        "case_id": "ENG V.2.30",
+        "title": "Task 30",
+        "context": "A closing set of five lines from different fields. Decide whether each quoted term is used in the sense the surrounding sentence requires.",
+        "statements": [
+          "The rise in recorded cases was called \"exponential\", adding the same fixed number of new patients every week for a year.",
+          "Wages had risen in \"nominal\" terms only, buying noticeably less at the end of the decade than at the beginning.",
+          "The 1908 edition is \"canonical\", the text later scholars cite by default and against which variant readings are measured.",
+          "Whether the treaty still bound the island became \"moot\" once the state that had signed it ceased to exist.",
+          "The claim was treated as \"axiomatic\", accepted only after three separate laboratories had confirmed it experimentally."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A.** → False\n\n**A) The rise in recorded cases was called \"exponential\", adding the same fixed number of new patients every week for a year.**\n\n\"Exponential\" growth multiplies by a constant factor in each period, so the absolute increase itself grows and doubling times can be quoted. A fixed number of new cases each week is a constant absolute increase, which is linear growth however large the weekly figure happens to be.\n\n**Trap:** Exponential is borrowed constantly to mean merely fast; the test is whether the increase itself keeps growing, not whether the total is alarming.\n\nThe same increment every week describes a straight line rather than a curve, so the term misstates the shape of this rise.\n\nSo the statement is False.",
+          "**B.** → True\n\n**B) Wages had risen in \"nominal\" terms only, buying noticeably less at the end of the decade than at the beginning.**\n\nA \"nominal\" figure is stated at the prices of the day, with no adjustment for inflation, which is why nominal growth can coexist with falling purchasing power. The sentence reports precisely that combination, since the number went up while what it bought went down. Real terms is the counterpart, and it is the adjusted measure that answers questions about living standards.\n\nAn unadjusted increase that leaves workers able to buy less is exactly what the qualifier warns of, so the wording is correct.\n\nSo the statement is True.",
+          "**C.** → True\n\n**C) The 1908 edition is \"canonical\", the text later scholars cite by default and against which variant readings are measured.**\n\nA \"canonical\" text is the accepted standard version within a field, the one that other versions are compared against rather than merely one among many. The appositive supplies both marks of that status: default citation, and use as the reference point for variants. Definitive would claim finality, whereas canonical describes the position a text holds in scholarly practice.\n\nBeing the reference against which other readings are judged is what confers canonical status, so the term is used correctly.\n\nSo the statement is True.",
+          "**D.** → True\n\n**D) Whether the treaty still bound the island became \"moot\" once the state that had signed it ceased to exist.**\n\nA question is \"moot\" when it no longer has any practical consequence, so that deciding it would settle nothing for anyone. The disappearance of the signatory state removes the party the obligation ran to, which is the standard way a live legal question becomes academic. The word says nothing about how interesting the question remains to historians.\n\nA question with no remaining practical effect is moot in the established sense, so the sentence uses it properly.\n\nSo the statement is True.",
+          "**E.** → False\n\n**E) The claim was treated as \"axiomatic\", accepted only after three separate laboratories had confirmed it experimentally.**\n\nSomething \"axiomatic\" is taken as self-evident and assumed at the outset, which is exactly why axioms are not derived from evidence within the system that rests on them. A claim accepted only after three laboratories confirmed it has been established empirically, which is the opposite route to acceptance. Well-corroborated or firmly established is the description the evidence supports.\n\nA proposition earned through repeated experiment is demonstrated rather than assumed, so the word misdescribes how this claim came to be accepted.\n\nSo the statement is False."
+        ],
+        "highlights": [
+          "exponential",
+          "nominal",
+          "canonical",
+          "moot",
+          "axiomatic"
+        ],
+        "solution_overview": "These last items come from separate disciplines but reward the same reflex: take the word to its technical definition, then read the clause that reports the growth pattern, the price adjustment, the textual authority, the practical consequence or the status of the claim. One of them turns on how a proposition is held, assumed at the outset or earned through evidence, and that distinction decides the item. Where the surrounding detail belongs to the neighbouring term, that neighbour is the word the sentence needed.",
+        "difficulty_level": "5/5",
+        "sort_order": 30,
+        "subsection": "v.2",
+        "kind": "vocabulary"
+      },
+      {
+        "id": "en-v-3-30",
+        "case_id": "ENG V.3.30",
+        "title": "Task 30",
+        "context": "Five lines from specialist notes on market microstructure, clearing and settlement. Decide whether each phrase matches that technical register.",
+        "statements": [
+          "Market makers widened spreads to harvest adverse selection when informed flow arrived.",
+          "Netting at the CCP evaporated exposures before members posted default-fund contributions.",
+          "A failed trade was resolved through buy-in procedures after the settlement fail persisted.",
+          "Dark-pool prints were said to reveal only the tip of the iceberg of block-size institutional demand.",
+          "Herstatt risk was cited whenever payment legs cleared in non-overlapping time zones."
+        ],
+        "answer_key": [
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A.** → False\n\n**A) Market makers widened spreads to harvest adverse selection when informed flow arrived.**\n\nMarket makers widen spreads to protect against adverse selection, or to compensate for it; they do not harvest adverse selection, which is the loss they suffer when better-informed traders hit their quotes. Harvesting would celebrate the very cost the wider spread is meant to offset.\n\n**Trap:** Compensate for / protect against adverse selection; never harvest it.\n\nInformed flow correctly triggers wider spreads, so the line should read \"to protect against adverse selection when informed flow arrived.\"\n\nSo the statement is False.",
+          "**B.** → False\n\n**B) Netting at the CCP evaporated exposures before members posted default-fund contributions.**\n\nNetting compresses, reduces or nets exposures; evaporate belongs to liquidity and funding that vanishes in a run — wholesale funding evaporates — not to the multilateral offsetting a CCP performs. Default-fund contributions are a separate membership resource, so the funding metaphor is doubly out of place.\n\n**Tip:** Funding evaporates; exposures are netted or compressed.\n\nThe post-trade fact needs \"netting at the CCP compressed exposures.\"\n\nSo the statement is False.",
+          "**C.** → True\n\n**C) A failed trade was resolved through buy-in procedures after the settlement fail persisted.**\n\nPersistent settlement fails are cured through buy-in procedures, in which the failing party is bought in at market to complete delivery. The collocation is standard in CSDR-style settlement discipline.\n\nThe fail, the persistence and the buy-in remedy match as operations manuals join them, so this line holds.\n\nSo the statement is True.",
+          "**D.** → True\n\n**D) Dark-pool prints were said to reveal only the tip of the iceberg of block-size institutional demand.**\n\n\"Tip of the iceberg\" is the fixed metaphor for the visible fraction of a much larger mass, and dark-pool prints are routinely described that way relative to unseen block demand. The of-phrase correctly names what lies beneath.\n\nThe iceberg metaphor and the block-size context are exactly how microstructure commentary reads sparse dark prints, so the wording stands.\n\nSo the statement is True.",
+          "**E.** → True\n\n**E) Herstatt risk was cited whenever payment legs cleared in non-overlapping time zones.**\n\nHerstatt risk names principal risk in foreign-exchange settlement when payment legs fall in different time zones, after the Herstatt Bank failure. Citing it for non-overlapping clearing hours is the textbook modern use of the historical label.\n\nThe risk name and the time-zone mechanism belong together as settlement literature keeps them, so this line is exact.\n\nSo the statement is True."
+        ],
+        "highlights": [
+          "harvest adverse selection",
+          "evaporated exposures",
+          "buy-in procedures",
+          "tip of the iceberg",
+          "Herstatt risk was cited"
+        ],
+        "solution_overview": "Microstructure and post-trade English is precise about spreads, CCP netting, buy-ins, dark pools and Herstatt risk. Ask what market makers do when informed flow arrives, what netting does to exposures, and which historic risk name still labels cross-currency settlement gaps. Two traps misuse a metaphor that belongs to funding stress or celebrate the very cost a wider spread is meant to offset.",
+        "difficulty_level": "5/5",
+        "sort_order": 30,
+        "subsection": "v.3",
+        "kind": "vocabulary"
+      }
+    ]
+  }
+}

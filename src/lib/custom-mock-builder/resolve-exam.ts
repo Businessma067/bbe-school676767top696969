@@ -52,11 +52,15 @@ export async function resolveExam(examId: string): Promise<ResolvedExam | null> 
 
   const summary = getExamById(examId);
   if (!summary) return null;
+  const questions = buildExamQuestions(examId);
+  const pointsTotal =
+    summary.pointsTotal ??
+    questions.reduce((sum, q) => sum + q.maxPoints, 0);
   return {
     summary,
-    questions: buildExamQuestions(examId),
+    questions,
     durationSeconds: EXAM_SECONDS,
-    pointsTotal: 160,
+    pointsTotal,
     isCustom: false,
   };
 }
