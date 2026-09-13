@@ -1,19 +1,18 @@
 /**
- * Curated Mock Exam 1 content:
- * - Economics: 10 bank cases (ch 2–4 one each; marketing + accounting calc/theory)
- * - English: one passage × 5 text tasks + 3 grammar + 3 vocabulary
- * - Math: 13 original hard exam-format tasks (one per chapter) with bank-style solutions
+ * Curated Mock Exam 1 content (existing bank tasks only):
+ * - Economics: 10 cases; calc/accounting claims without formula coaching in statements
+ * - English: one passage × 5 text + 3 grammar + 3 vocabulary
+ * - Math: hardest existing 5/5 task from each chapter 1–13
  */
 
 import sourced from "@/data/mock-exam-1-sourced.json";
-import { MOCK_EXAM_1_MATH } from "@/data/mock-exam-1-math";
 import {
   ENGLISH_POINTS_BY_TYPE,
   MATH_POINTS_PER_TASK,
   SCORING_CONFIG,
 } from "@/config/scoring-config";
 import { scrubStatementHints } from "@/lib/case-context";
-import type { ExamQuestion } from "@/lib/mock-exams"; // type-only: avoid circular runtime import
+import type { ExamQuestion } from "@/lib/mock-exams";
 
 type SourcedTask = {
   case_id?: string;
@@ -26,6 +25,10 @@ type SourcedTask = {
   answer_key?: boolean[];
   tactical_explanations?: string[];
   kind?: string;
+  difficulty_level?: string;
+  solution_overview?: string;
+  figure?: string;
+  tables_markdown?: string;
 };
 
 type SourcedBundle = {
@@ -35,9 +38,25 @@ type SourcedBundle = {
     passageTitle?: string;
     tasks: SourcedTask[];
   };
+  math: SourcedTask[];
 };
 
 const bundle = sourced as SourcedBundle;
+
+/** Strip formula coaching left in claim text (student must know the ratios). */
+function scrubEconClaim(text: string): string {
+  return scrubStatementHints(text)
+    .replace(
+      /\s*,\s*(?:the|which is|i\.e\.|that is)[^,.]*?(?:divided by|relative to|taken as|taken relative|equals?|defined as|calculated as)[^.]*/gi,
+      "",
+    )
+    .replace(
+      /\s*\((?:operating result|revenue|cost of sales|equity|assets|liabilities)[^)]*\)/gi,
+      "",
+    )
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
 
 /** English points for mock-1 mix: 5 texts + 3 grammar + 3 vocabulary. */
 export const MOCK_EXAM_1_ENGLISH_POINTS = [
@@ -54,11 +73,11 @@ export const MOCK_EXAM_1_ENGLISH_POINTS = [
   ENGLISH_POINTS_BY_TYPE.vocabulary,
 ] as const;
 
-/** Math: one task per chapter → first 13 published maxima. */
+/** Math: one existing hard task per chapter → first 13 published maxima. */
 export const MOCK_EXAM_1_MATH_POINTS = MATH_POINTS_PER_TASK.slice(0, 13);
 
 export const MOCK_EXAM_1_QUESTION_COUNT =
-  bundle.economics.length + bundle.english.tasks.length + MOCK_EXAM_1_MATH.length;
+  bundle.economics.length + bundle.english.tasks.length + bundle.math.length;
 
 export const MOCK_EXAM_1_POINTS_TOTAL =
   bundle.economics.length * SCORING_CONFIG.economics.defaultMaxPerTask +
@@ -80,11 +99,12 @@ function fromBankTask(opts: {
   statements: string[];
   answerKey: boolean[];
   explanations: string[];
-  scrub: boolean;
+  scrub: "econ" | "soft" | "none";
   subtopicTag?: string;
   passage?: string;
   tablesMarkdown?: string;
   solutionOverview?: string;
+  figure?: string;
 }): ExamQuestion {
   const statements = padFive(opts.statements, "—");
   const keys = padFive(opts.answerKey, false);
@@ -99,14 +119,20 @@ function fromBankTask(opts: {
     passage: opts.passage,
     tablesMarkdown: opts.tablesMarkdown,
     solutionOverview: opts.solutionOverview,
-    statements: statements.map((text, j) => ({
-      id: `${opts.examId}-q${opts.index}-s${j + 1}`,
-      text: opts.scrub ? scrubStatementHints(text) : text,
-      isTrue: Boolean(keys[j]),
-      explanation:
-        expl[j] ||
-        (keys[j] ? "So the statement is True." : "So the statement is False."),
-    })),
+    figure: opts.figure,
+    statements: statements.map((text, j) => {
+      let cleaned = text;
+      if (opts.scrub === "econ") cleaned = scrubEconClaim(text);
+      else if (opts.scrub === "soft") cleaned = scrubStatementHints(text);
+      return {
+        id: `${opts.examId}-q${opts.index}-s${j + 1}`,
+        text: cleaned,
+        isTrue: Boolean(keys[j]),
+        explanation:
+          expl[j] ||
+          (keys[j] ? "So the statement is True." : "So the statement is False."),
+      };
+    }),
   };
 }
 
@@ -126,11 +152,11 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
         index,
         subject: "economics",
         maxPoints: SCORING_CONFIG.economics.defaultMaxPerTask,
-        stem: (task.context ?? "").trim() || task.title || `Task ${index}`,
+        stem: scrubStatementHints((task.context ?? "").trim() || task.title || `Task ${index}`),
         statements: task.statements ?? [],
         answerKey: task.answer_key ?? [],
         explanations: task.tactical_explanations ?? [],
-        scrub: true,
+        scrub: "econ",
         subtopicTag: tag,
       }),
     );
@@ -152,15 +178,15 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
         statements: task.statements ?? [],
         answerKey: task.answer_key ?? [],
         explanations: task.tactical_explanations ?? [],
-        scrub: true,
+        scrub: "soft",
         subtopicTag: task.case_id ?? task.subsection,
         passage: isText ? passage : undefined,
       }),
     );
   }
 
-  for (let i = 0; i < MOCK_EXAM_1_MATH.length; i++) {
-    const task = MOCK_EXAM_1_MATH[i]!;
+  for (let i = 0; i < bundle.math.length; i++) {
+    const task = bundle.math[i]!;
     index += 1;
     questions.push(
       fromBankTask({
@@ -168,14 +194,15 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
         index,
         subject: "math",
         maxPoints: MOCK_EXAM_1_MATH_POINTS[i] ?? 5,
-        stem: task.stem,
-        statements: task.statements.map((s) => s.text),
-        answerKey: task.statements.map((s) => s.isTrue),
-        explanations: task.statements.map((s) => s.explanation),
-        scrub: false,
-        subtopicTag: `#${task.chapter} - ${task.topic}`,
-        tablesMarkdown: task.tablesMarkdown,
-        solutionOverview: task.solutionOverview,
+        stem: (task.context ?? "").trim() || task.title || `Task ${index}`,
+        statements: task.statements ?? [],
+        answerKey: task.answer_key ?? [],
+        explanations: task.tactical_explanations ?? [],
+        scrub: "none",
+        subtopicTag: `#${task.chapter}${task.subsection ? `.${task.subsection}` : ""} - ${task.title || task.case_id}`,
+        tablesMarkdown: task.tables_markdown,
+        solutionOverview: task.solution_overview,
+        figure: task.figure,
       }),
     );
   }
