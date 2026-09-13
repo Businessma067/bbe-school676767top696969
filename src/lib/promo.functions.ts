@@ -194,16 +194,7 @@ export async function lookupDiscountPromo(input: {
           return { ok: false, error: "Could not verify promocode. Try again." };
         }
         if ((count ?? 0) >= data.max_uses) {
-          // Allow the user who already claimed this one-time code to finish checkout
-          // even before payment writes a promo_usages row.
-          const claimedByCaller =
-            isOneTimeFifteenDiscount(pct) &&
-            !!data.used_at &&
-            !!input.userId &&
-            data.used_by === input.userId;
-          if (!claimedByCaller) {
-            return { ok: false, error: "This promocode has reached its use limit." };
-          }
+          return { ok: false, error: "This promocode has reached its use limit." };
         }
       }
       const applies =
