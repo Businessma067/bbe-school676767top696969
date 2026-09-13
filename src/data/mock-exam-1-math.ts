@@ -25,15 +25,17 @@ export const MOCK_EXAM_1_MATH: MockMathDraft[] = [
         isTrue: true,
         explanation: `**A.** → True
 
-List the even elements of $U$:
+List even elements of $U$ and intersect with $A$.
 
 $$B=\\{2,4,6,8\\}$$
 
-Intersect with $A=\\{2,3,5,7\\}$:
+$$A=\\{2,3,5,7\\}$$
 
 $$A\\cap B=\\{2\\}$$
 
-Count and roster both show a single element.
+$$|A\\cap B|=1$$
+
+The roster and cardinality both match the claim.
 
 So the statement is True.`,
       },
@@ -42,13 +44,21 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**B.** → False
 
-Test $x=2$ (the only element in $A\\cap B$):
+Universal truth of $Q(x)$ requires checking every $x\\in U$; test the overlap of $A$ and $B$.
+
+$$A\\cap B=\\{2\\}$$
 
 $$2\\in A$$
 
 $$2\\in B$$
 
-For an implication “if $x\\in A$ then $x\\notin B$”, a true antecedent with a false consequent makes the whole statement false.
+For $Q(x)$ meaning $x\\in A\\Rightarrow x\\notin B$, at $x=2$ the antecedent and consequent are both true for “$x\\notin B$” failing:
+
+$$Q(2)\\equiv (2\\in A)\\Rightarrow (2\\notin B)$$
+
+$$Q(2)\\equiv \\text{True}\\Rightarrow \\text{False}\\equiv \\text{False}$$
+
+So $Q(x)$ does not hold for every $x\\in U$.
 
 So the statement is False.`,
       },
@@ -57,13 +67,21 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Write $Q(x)$ as $x\\in A \\Rightarrow x\\notin B$.
+Rewrite $Q(x)$ as an implication and negate it using the standard logic rule.
 
-The negation of an implication $P\\Rightarrow R$ is $P\\land \\neg R$:
+$$Q(x)\\equiv (x\\in A)\\Rightarrow (x\\notin B)$$
+
+$$\\neg(P\\Rightarrow R)\\equiv P\\land \\neg R$$
 
 $$\\neg Q(x)\\equiv (x\\in A)\\land (x\\in B)$$
 
-That is exactly membership in $A\\cap B$.
+Membership in both sets is intersection:
+
+$$ (x\\in A)\\land (x\\in B)\\equiv x\\in A\\cap B$$
+
+$$A\\cap B=\\{2\\}$$
+
+The negated predicate matches “$x\\in A\\cap B$” pointwise.
 
 So the statement is True.`,
       },
@@ -72,15 +90,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**D.** → True
 
-Form the union inside $U$:
+Form $A\\cup C$ inside $U$, then list elements of $U$ omitted from that union.
 
-$$A\\cup C=\\{2,3,5,7\\}\\cup\\{5,6,7,8\\}=\\{2,3,5,6,7,8\\}$$
+$$A=\\{2,3,5,7\\}$$
 
-Elements of $U$ not in that set:
+$$C=\\{5,6,7,8\\}$$
 
-$$(A\\cup C)^c=\\{1,4\\}$$
+$$A\\cup C=\\{2,3,5,6,7,8\\}$$
 
-The claimed complement matches.
+$$U=\\{1,2,3,4,5,6,7,8\\}$$
+
+$$(A\\cup C)^c=U\\setminus(A\\cup C)=\\{1,4\\}$$
+
+The computed complement equals $\\{1,4\\}$.
 
 So the statement is True.`,
       },
@@ -89,11 +111,15 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**E.** → False
 
-From before:
+Compare the roster of $A\\cap B$ with the set $C$.
 
 $$A\\cap B=\\{2\\}$$
 
-Every element of $C$ exceeds $4$, while $2\\notin C$.
+$$C=\\{5,6,7,8\\}$$
+
+$$2\\notin C$$
+
+$$A\\cap B\\cap C=\\varnothing$$
 
 No element of $C$ can lie in $A\\cap B$.
 
@@ -114,19 +140,21 @@ when $a>0$ and $b>0$. For a batch with $a=3$ and $b=2$, evaluate each claim.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Expand the numerator:
+Expand each powered factor in the numerator, multiply, then divide by the denominator.
 
-$$\\bigl(3a^{2}b^{-3}\\bigr)^{2}=9a^{4}b^{-6}$$
+$$\\bigl(3a^{2}b^{-3}\\bigr)^{2}=3^{2}a^{4}b^{-6}=9a^{4}b^{-6}$$
 
 $$\\bigl(a^{-1}b^{2}\\bigr)^{3}=a^{-3}b^{6}$$
 
-Multiply:
+$$9a^{4}b^{-6}\\cdot a^{-3}b^{6}=9a^{4-3}b^{-6+6}$$
 
-$$9a^{4}b^{-6}\\cdot a^{-3}b^{6}=9a\\,b^{0}=9a$$
+$$9a^{4-3}b^{0}=9a$$
 
-Divide by $a^{3}b^{-1}$:
+$$K=\\frac{9a}{a^{3}b^{-1}}=9a\\cdot a^{-3}\\cdot b^{1}$$
 
-$$K=\\frac{9a}{a^{3}b^{-1}}=9a\\cdot a^{-3}\\cdot b=\\frac{9b}{a^{2}}$$
+$$K=9a^{1-3}b=\\frac{9b}{a^{2}}$$
+
+The simplified form matches the claim.
 
 So the statement is True.`,
       },
@@ -135,11 +163,23 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-Use the simplified form:
+Substitute $a=3$ and $b=2$ into the simplified index.
 
-$$K=\\frac{9b}{a^{2}}=\\frac{9\\cdot 2}{3^{2}}$$
+$$K=\\frac{9b}{a^{2}}$$
 
-$$K=\\frac{18}{9}=2$$
+$$a=3,\\quad b=2$$
+
+$$3^{2}=9$$
+
+$$K=\\frac{9\\cdot 2}{9}$$
+
+$$9\\cdot 2=18$$
+
+$$K=\\frac{18}{9}$$
+
+$$K=2$$
+
+The numeric value equals $2$ as claimed.
 
 So the statement is True.`,
       },
@@ -148,13 +188,21 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**C.** → False
 
-With fixed $b$, write $K=c/a^{2}$ where $c=9b$.
+With fixed $b$, the simplified index is proportional to $a^{-2}$.
 
-Replacing $a$ by $2a$:
+$$K=\\frac{9b}{a^{2}}$$
 
-$$K_{\\text{new}}=\\frac{c}{(2a)^{2}}=\\frac{c}{4a^{2}}=\\frac{K}{4}$$
+Replace $a$ by $2a$:
 
-The index is divided by $4$, not multiplied.
+$$K_{\\text{new}}=\\frac{9b}{(2a)^{2}}$$
+
+$$(2a)^{2}=4a^{2}$$
+
+$$K_{\\text{new}}=\\frac{9b}{4a^{2}}=\\frac{1}{4}\\cdot\\frac{9b}{a^{2}}$$
+
+$$K_{\\text{new}}=\\frac{K}{4}$$
+
+Doubling $a$ divides $K$ by $4$, it does not multiply by $4$.
 
 So the statement is False.`,
       },
@@ -163,9 +211,19 @@ So the statement is False.`,
         isTrue: false,
         explanation: `**D.** → False
 
-Both parameters are positive, so every power in the original fraction is defined and the denominator $a^{3}b^{-1}$ is non-zero.
+Positive $a$ and $b$ keep every power defined and make the denominator non-zero.
 
-The numeric value $K=2$ is finite.
+$$a=3>0,\\quad b=2>0$$
+
+$$a^{3}b^{-1}=3^{3}\\cdot 2^{-1}=27\\cdot\\frac{1}{2}$$
+
+$$a^{3}b^{-1}=\\frac{27}{2}\\neq 0$$
+
+Evaluate the simplified index:
+
+$$K=\\frac{9b}{a^{2}}=\\frac{9\\cdot 2}{3^{2}}=2$$
+
+The value is a finite number, so the expression is defined.
 
 So the statement is False.`,
       },
@@ -174,11 +232,19 @@ So the statement is False.`,
         isTrue: false,
         explanation: `**E.** → False
 
-With $a=3$, the simplified index is
+Fix $a=3$ in the simplified form and track how $K$ scales with $b$.
+
+$$K=\\frac{9b}{a^{2}}=\\frac{9b}{3^{2}}$$
+
+$$3^{2}=9$$
 
 $$K=\\frac{9b}{9}=b$$
 
-Doubling $b$ doubles $K$, not quadruples it.
+If $b$ doubles to $2b$:
+
+$$K_{\\text{new}}=2b=2K$$
+
+That is a factor of $2$, not $4$.
 
 So the statement is False.`,
       },
@@ -195,11 +261,17 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Nominal rate with four quarters per year:
+Split the nominal annual rate into four equal quarterly periods.
 
-$$i=\\frac{0.06}{4}=0.015$$
+$$\\text{nominal}=0.06=6.00\\%$$
 
-$$i=1.50\\%$$
+$$i=\\frac{0.06}{4}$$
+
+$$i=0.015$$
+
+$$0.015\\times 100\\%=1.50\\%$$
+
+The quarterly periodic rate is $1.50\\%$.
 
 So the statement is True.`,
       },
@@ -208,17 +280,23 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-Compound four quarters:
+The effective annual rate compounds each quarter once.
 
-$$\\text{EAR}=(1.015)^{4}-1$$
+$$\\text{EAR}=(1+i)^{4}-1$$
+
+$$i=0.015$$
 
 $$(1.015)^{2}=1.030225$$
 
+$$(1.015)^{4}=1.030225^{2}$$
+
 $$(1.015)^{4}=1.061363550625$$
+
+$$\\text{EAR}=1.061363550625-1$$
 
 $$\\text{EAR}\\approx 0.06136=6.14\\%$$
 
-That lies between $6.00\\%$ and $6.20\\%$.
+That lies strictly between $6.00\\%$ and $6.20\\%$.
 
 So the statement is True.`,
       },
@@ -227,15 +305,17 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Balance after four quarters:
+Apply four quarterly factors to the principal.
 
 $$B_{1}=9200(1.015)^{4}$$
 
-Using $(1.015)^{4}\\approx 1.0613635506$:
+$$(1.015)^{4}\\approx 1.0613635506$$
 
-$$B_{1}=9200\\times 1.0613635506$$
+$$9200\\times 1.0613635506=9764.54486552$$
 
 $$B_{1}\\approx 9764.54$$
+
+Rounded to cents, the balance matches €\\,9\\,764.54$.
 
 So the statement is True.`,
       },
@@ -244,13 +324,17 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-Annual compounding once:
+Compare one-year balances under annual versus quarterly compounding at the same nominal $6.0\\%$.
 
-$$B_{\\text{annual}}=9200(1.06)=9752.00$$
+$$B_{\\text{annual}}=9200(1.06)$$
 
-Quarterly compounding gave about €\\,9764.54$, which is larger.
+$$9200\\times 1.06=9752.00$$
 
-Fewer compounding dates per year lowers the effective rate here.
+$$B_{\\text{quarterly}}=9200(1.015)^{4}\\approx 9764.54$$
+
+$$9752.00<9764.54$$
+
+Annual compounding yields the lower balance, not the higher one.
 
 So the statement is False.`,
       },
@@ -259,13 +343,19 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-Eight quarters:
+Eight quarters multiply the one-year growth factor.
 
 $$B_{2}=9200(1.015)^{8}$$
 
-$$(1.015)^{8}=(1.061363550625)^{2}\\approx 1.1264910201$$
+$$(1.015)^{4}\\approx 1.061363550625$$
 
-$$B_{2}\\approx 9200\\times 1.1264910201\\approx 10363.72$$
+$$(1.015)^{8}=(1.061363550625)^{2}$$
+
+$$(1.015)^{8}\\approx 1.1264910201$$
+
+$$B_{2}=9200\\times 1.1264910201$$
+
+$$B_{2}\\approx 10363.72$$
 
 That exceeds €\\,10\\,400$.
 
@@ -284,25 +374,21 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Set up total time:
+Write total travel time as sum of leg times and clear denominators.
 
 $$\\frac{24}{v}+\\frac{24}{v+8}=2.5$$
 
-Multiply by $2v(v+8)$:
+$$48(v+8)+48v=2.5\\cdot 2v(v+8)$$
 
-$$48(v+8)+48v=5v(v+8)$$
-
-$$96v+384=5v^{2}+40v$$
+$$96v+384=5v(v+8)$$
 
 $$5v^{2}-56v-384=0$$
 
-Discriminant:
-
-$$56^{2}+4\\cdot 5\\cdot 384=3136+7680=10816=104^{2}$$
-
-Positive root:
+$$\\Delta=56^{2}+4\\cdot 5\\cdot 384=10816=104^{2}$$
 
 $$v=\\frac{56+104}{10}=16$$
+
+The positive speed root is $16$ km/h.
 
 So the statement is True.`,
       },
@@ -311,9 +397,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-With $v=16$, the return speed is $v+8=24$ km/h:
+Use the return speed rule with $v=16$ km/h.
 
-$$t_{\\text{return}}=\\frac{24}{24}=1\\text{ h}$$
+$$v=16$$
+
+$$v+8=16+8$$
+
+$$v+8=24\\text{ km/h}$$
+
+$$t_{\\text{return}}=\\frac{24\\text{ km}}{24\\text{ km/h}}$$
+
+$$t_{\\text{return}}=1\\text{ h}$$
+
+The return leg lasts exactly one hour.
 
 So the statement is True.`,
       },
@@ -322,9 +418,17 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Outbound speed $16$ km/h over $24$ km:
+Outbound distance $24$ km at speed $16$ km/h gives time $d/v$.
 
-$$t_{\\text{out}}=\\frac{24}{16}=1.5\\text{ h}$$
+$$v=16\\text{ km/h}$$
+
+$$t_{\\text{out}}=\\frac{24}{16}$$
+
+$$\\frac{24}{16}=\\frac{3}{2}$$
+
+$$t_{\\text{out}}=1.5\\text{ h}$$
+
+The outbound leg takes $1.5$ hours as claimed.
 
 So the statement is True.`,
       },
@@ -333,11 +437,19 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-For $v=12$, return speed is $20$ km/h:
+Substitute $v=12$ and apply the same return-speed rule.
 
-$$t=\\frac{24}{12}+\\frac{24}{20}=2+1.2=3.2\\text{ h}$$
+$$v=12\\Rightarrow v+8=20$$
 
-That exceeds $2.5$ hours.
+$$t_{\\text{out}}=\\frac{24}{12}=2$$
+
+$$t_{\\text{return}}=\\frac{24}{20}=1.2$$
+
+$$t_{\\text{total}}=2+1.2=3.2$$
+
+$$3.2\\neq 2.5$$
+
+The round trip would not last $2.5$ hours.
 
 So the statement is False.`,
       },
@@ -346,9 +458,19 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-Total distance $48$ km in $2.5$ h:
+Average speed is total distance divided by total time on the $48$ km loop.
 
-$$v_{\\text{avg}}=\\frac{48}{2.5}=19.2\\text{ km/h}$$
+$$d_{\\text{total}}=24+24=48\\text{ km}$$
+
+$$t_{\\text{total}}=2.5\\text{ h}$$
+
+$$v_{\\text{avg}}=\\frac{48}{2.5}$$
+
+$$\\frac{48}{2.5}=19.2$$
+
+$$v_{\\text{avg}}=19.2\\text{ km/h}$$
+
+That matches the claim.
 
 So the statement is True.`,
       },
@@ -365,11 +487,17 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Add the individual rates:
+Add individual fill rates (tanks per hour) and invert for joint time.
 
-$$\\frac{1}{T}=\\frac{1}{5}+\\frac{1}{8}=\\frac{13}{40}$$
+$$r_{\\alpha}=\\frac{1}{5},\\quad r_{\\beta}=\\frac{1}{8}$$
+
+$$\\frac{1}{T}=\\frac{1}{5}+\\frac{1}{8}$$
+
+$$\\frac{1}{T}=\\frac{8+5}{40}=\\frac{13}{40}$$
 
 $$T=\\frac{40}{13}\\text{ h}$$
+
+The exact joint fill time is $\\dfrac{40}{13}$ hours.
 
 So the statement is True.`,
       },
@@ -378,11 +506,17 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**B.** → False
 
-Joint fill in $2$ h:
+Multiply the combined rate by $2$ hours to get the filled fraction.
 
-$$\\frac{13}{40}\\cdot 2=\\frac{13}{20}=0.65$$
+$$r_{\\text{joint}}=\\frac{13}{40}$$
 
-That is $65\\%$, not above $70\\%$.
+$$\\text{filled}=\\frac{13}{40}\\cdot 2=\\frac{13}{20}$$
+
+$$\\frac{13}{20}=0.65$$
+
+$$0.65=65\\%$$
+
+That is not above $70\\%$.
 
 So the statement is False.`,
       },
@@ -391,9 +525,15 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**C.** → True
 
-If Beta alone needs $8$ h for one tank, its rate is one tank over eight hours:
+One full tank in $8$ hours means rate one tank per eight hours.
+
+$$\\text{time for one tank}=8\\text{ h}$$
+
+$$r_{\\beta}=\\frac{1\\text{ tank}}{8\\text{ h}}$$
 
 $$r_{\\beta}=\\frac{1}{8}\\text{ tank/h}$$
+
+That is $\\dfrac{1}{8}$ of the tank per hour.
 
 So the statement is True.`,
       },
@@ -402,7 +542,13 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-Alpha alone requires the full $5$ h, which is not less than $4.5$ h.
+Alpha alone requires its full rated time to fill one tank.
+
+$$T_{\\alpha}=5\\text{ h}$$
+
+$$5\\not< 4.5$$
+
+The tank is full only after $5$ hours, not in less than $4.5$ hours.
 
 So the statement is False.`,
       },
@@ -411,11 +557,19 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-Filled fraction after $2$ h is $13/20$, so empty fraction is
+After $2$ h the empty fraction is one minus the filled fraction.
 
-$$1-\\frac{13}{20}=\\frac{7}{20}=0.35$$
+$$\\text{filled}=\\frac{13}{20}$$
 
-Since $\\dfrac{1}{3}\\approx 0.333$ and $0.35>0.333$, more than one third remains empty.
+$$\\text{empty}=1-\\frac{13}{20}=\\frac{7}{20}$$
+
+$$\\frac{7}{20}=0.35$$
+
+$$\\frac{1}{3}\\approx 0.3333$$
+
+$$0.35>0.3333$$
+
+More than one third of the tank remains empty.
 
 So the statement is True.`,
       },
@@ -432,17 +586,21 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Rewrite the absolute value bound:
+Rewrite the absolute value inequality as a compound linear bound.
+
+$$|2x-7|\\le 5$$
 
 $$-5\\le 2x-7\\le 5$$
 
-Add $7$:
+Add $7$ throughout:
 
 $$2\\le 2x\\le 12$$
 
 Divide by $2$:
 
 $$1\\le x\\le 6$$
+
+The solution set is $[1,6]$.
 
 So the statement is True.`,
       },
@@ -451,15 +609,25 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-The quadratic factor changes sign at $x=2$ and $x=6$. Test intervals:
+The product $(x-2)(x-6)$ changes sign only at the zeros $x=2$ and $x=6$.
 
-At $x=0$: $(-2)(-6)>0$.
+$$(x-2)(x-6)<0$$
 
-At $x=3$: $(1)(-3)<0$.
+At $x=0$:
 
-At $x=7$: $(5)(1)>0$.
+$$(0-2)(0-6)=(-2)(-6)=12>0$$
 
-Negative only on $(2,6)$.
+At $x=3$:
+
+$$(3-2)(3-6)=(1)(-3)=-3<0$$
+
+At $x=7$:
+
+$$(7-2)(7-6)=(5)(1)=5>0$$
+
+Negative on the open interval between the roots:
+
+$$2<x<6$$
 
 So the statement is True.`,
       },
@@ -468,7 +636,15 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**C.** → False
 
-At $x=1$, $|2-7|\\le 5$ holds but $(1-2)(1-6)>0$, so the product condition fails.
+Check a point in $[1,6]$ that violates the strict product inequality.
+
+$$x=1$$
+
+$$|2(1)-7|=|-5|=5\\le 5$$
+
+$$(1-2)(1-6)=(-1)(-5)=5>0$$
+
+The absolute bound holds but $(x-2)(x-6)<0$ fails at $x=1$.
 
 So the statement is False.`,
       },
@@ -477,9 +653,15 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**D.** → True
 
-Intersect $[1,6]$ with $(2,6)$:
+Feasible points must satisfy both constraints simultaneously.
 
-$$(2,6)$$
+$$|2x-7|\\le 5\\Rightarrow x\\in[1,6]$$
+
+$$(x-2)(x-6)<0\\Rightarrow x\\in(2,6)$$
+
+$$[1,6]\\cap(2,6)=(2,6)$$
+
+The combined feasible set is $(2,6)$.
 
 So the statement is True.`,
       },
@@ -488,7 +670,15 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**E.** → False
 
-At $x=6$, $|12-7|\\le 5$ is true, but $(4)(0)=0$, and the strict inequality $(x-2)(x-6)<0$ excludes $x=6$.
+Test the endpoint $x=6$ in each constraint.
+
+$$|2(6)-7|=|5|=5\\le 5$$
+
+$$(6-2)(6-6)=4\\cdot 0=0$$
+
+$$(x-2)(x-6)<0\\text{ requires }0<0\\text{, false}$$
+
+So $x=6$ is not in the combined feasible set.
 
 So the statement is False.`,
       },
@@ -511,15 +701,21 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Set supply equal to demand:
+Set supply equal to demand and solve for equilibrium price.
 
 $$6p-12=60-3p$$
+
+$$6p+3p=60+12$$
 
 $$9p=72$$
 
 $$p=8$$
 
-Then $q=6\\cdot 8-12=36$.
+$$q=6(8)-12$$
+
+$$q=48-12=36$$
+
+Equilibrium is $p=8$, $q=36$.
 
 So the statement is True.`,
       },
@@ -528,11 +724,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-From the table (or formulas):
+Evaluate both schedules at $p=10$ (from the table or formulas).
 
-$$q^{S}=48,\\quad q^{D}=30$$
+$$q^{S}=6(10)-12$$
 
-Supply is larger.
+$$q^{S}=60-12=48$$
+
+$$q^{D}=60-3(10)$$
+
+$$q^{D}=60-30=30$$
+
+$$48>30$$
+
+Supply exceeds demand at $p=10$.
 
 So the statement is True.`,
       },
@@ -541,13 +745,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Expand:
+Revenue is $R(p)=p\\cdot q^{D}(p)$; locate the vertex of the quadratic.
+
+$$R(p)=p(60-3p)$$
 
 $$R(p)=60p-3p^{2}$$
 
-This is a downward parabola; vertex at
+For $R(p)=ap^{2}+bp+c$ with $a=-3$, $b=60$:
 
-$$p=-\\frac{60}{2(-3)}=10$$
+$$p^{*}=-\\frac{b}{2a}=-\\frac{60}{2(-3)}$$
+
+$$p^{*}=10$$
+
+Revenue is maximized at $p=10$.
 
 So the statement is True.`,
       },
@@ -556,11 +766,19 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-Substitute $p=6$ into demand:
+Substitute $p=6$ into the demand equation.
 
-$$q^{D}=60-18=42$$
+$$q^{D}=60-3p$$
 
-Not $36$.
+$$p=6$$
+
+$$3p=18$$
+
+$$q^{D}=60-18$$
+
+$$q^{D}=42$$
+
+That is not $36$ units.
 
 So the statement is False.`,
       },
@@ -569,9 +787,17 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-At $p=10$:
+Evaluate revenue at the maximizing price $p=10$.
 
-$$R(10)=10(60-30)=10\\cdot 30=300$$
+$$R(10)=10(60-3\\cdot 10)$$
+
+$$60-30=30$$
+
+$$R(10)=10\\cdot 30$$
+
+$$R(10)=300$$
+
+Maximum revenue equals €\\,300$.
 
 So the statement is True.`,
       },
@@ -588,11 +814,19 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**A.** → False
 
-Scale $k\\mapsto 2k$:
+Compare outputs when $k$ is scaled by $2$ using the power law.
 
-$$\\frac{E(2k)}{E(k)}=\\frac{4.5(2k)^{0.6}}{4.5k^{0.6}}=2^{0.6}\\approx 1.516$$
+$$E(k)=4.5k^{0.6}$$
 
-That is not a factor of $2$.
+$$\\frac{E(2k)}{E(k)}=\\frac{4.5(2k)^{0.6}}{4.5k^{0.6}}$$
+
+$$\\frac{E(2k)}{E(k)}=\\frac{2^{0.6}k^{0.6}}{k^{0.6}}$$
+
+$$\\frac{E(2k)}{E(k)}=2^{0.6}$$
+
+$$2^{0.6}\\approx 1.5157$$
+
+That factor is not exactly $2$.
 
 So the statement is False.`,
       },
@@ -601,13 +835,19 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**B.** → True
 
-Compute:
+Evaluate $E(100)=4.5\\cdot 100^{0.6}$.
 
-$$100^{0.6}=10^{1.2}\\approx 31.622$$
+$$100^{0.6}=(10^{2})^{0.6}=10^{1.2}$$
 
-$$E(100)=4.5\\cdot 31.622\\approx 142.3$$
+$$10^{1.2}\\approx 15.8489$$
 
-That exceeds $140$.
+$$100^{0.6}\\approx 31.6228$$
+
+$$E(100)=4.5\\cdot 31.6228$$
+
+$$E(100)\\approx 142.30$$
+
+That exceeds $140$ MWh.
 
 So the statement is True.`,
       },
@@ -616,13 +856,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Differentiate the power law:
+Differentiate the power function and form the elasticity-style ratio.
+
+$$E(k)=4.5k^{0.6}$$
 
 $$E'(k)=4.5\\cdot 0.6\\,k^{-0.4}$$
 
-Form the ratio:
+$$kE'(k)=4.5\\cdot 0.6\\,k^{0.6}$$
 
-$$\\frac{kE'(k)}{E(k)}=\\frac{k\\cdot 4.5\\cdot 0.6\\,k^{-0.4}}{4.5k^{0.6}}=0.6$$
+$$\\frac{kE'(k)}{E(k)}=\\frac{4.5\\cdot 0.6\\,k^{0.6}}{4.5k^{0.6}}$$
+
+$$\\frac{kE'(k)}{E(k)}=0.6$$
+
+The ratio equals $0.6$ for all $k>0$.
 
 So the statement is True.`,
       },
@@ -631,11 +877,17 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-Compare using exponents:
+Use the ratio of power-function values at two $k$ levels.
 
-$$\\frac{E(25)}{E(100)}=\\left(\\frac{25}{100}\\right)^{0.6}=0.25^{0.6}\\approx 0.435$$
+$$\\frac{E(25)}{E(100)}=\\frac{4.5\\cdot 25^{0.6}}{4.5\\cdot 100^{0.6}}$$
 
-Not one half.
+$$\\frac{E(25)}{E(100)}=\\left(\\frac{25}{100}\\right)^{0.6}$$
+
+$$\\frac{25}{100}=0.25$$
+
+$$0.25^{0.6}\\approx 0.435$$
+
+That is not $\\dfrac{1}{2}$.
 
 So the statement is False.`,
       },
@@ -644,11 +896,13 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-Average output per panel:
+Average output per panel is $E(k)/k$.
+
+$$\\frac{E(k)}{k}=\\frac{4.5k^{0.6}}{k}$$
 
 $$\\frac{E(k)}{k}=4.5k^{-0.4}$$
 
-The exponent $-0.4$ is negative, so the average falls when $k$ rises.
+The exponent $-0.4$ is negative, so increasing $k$ decreases $4.5k^{-0.4}$.
 
 So the statement is True.`,
       },
@@ -666,11 +920,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Differentiate:
+Locate critical points from the derivative and classify with a sign chart.
 
-$$C'(x)=3x^{2}-18x+24=3(x-2)(x-4)$$
+$$C(x)=x^{3}-9x^{2}+24x-14$$
 
-The derivative changes from positive to negative at $x=2$.
+$$C'(x)=3x^{2}-18x+24$$
+
+$$C'(x)=3(x^{2}-6x+8)$$
+
+$$C'(x)=3(x-2)(x-4)$$
+
+For $x$ slightly below $2$, $C'>0$; slightly above $2$, $C'<0$.
+
+So $x=2$ is a local maximum.
 
 So the statement is True.`,
       },
@@ -679,7 +941,21 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-$$C(4)=64-144+96-14=2$$
+Substitute $x=4$ into the cost polynomial term by term.
+
+$$C(4)=4^{3}-9\\cdot 4^{2}+24\\cdot 4-14$$
+
+$$4^{3}=64$$
+
+$$9\\cdot 4^{2}=9\\cdot 16=144$$
+
+$$24\\cdot 4=96$$
+
+$$C(4)=64-144+96-14$$
+
+$$C(4)=2$$
+
+So $C(4)=2$ thousand €.
 
 So the statement is True.`,
       },
@@ -688,9 +964,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-$$C(0)=-14,\\quad C(2)=6,\\quad C(4)=2,\\quad C(6)=22$$
+Compare endpoint and critical values on $[0,6]$.
 
-The smallest value is $-14$ at $x=0$.
+$$C(0)=-14$$
+
+$$C(2)=8-36+48-14=6$$
+
+$$C(4)=2$$
+
+$$C(6)=216-324+144-14=22$$
+
+$$\\min\\{C(0),C(2),C(4),C(6)\\}=-14$$
+
+The global minimum on $[0,6]$ occurs at $x=0$.
 
 So the statement is True.`,
       },
@@ -699,7 +985,21 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-$$C(6)=216-324+144-14=22$$
+Evaluate $C(6)$ with the same term-by-term arithmetic.
+
+$$C(6)=6^{3}-9\\cdot 6^{2}+24\\cdot 6-14$$
+
+$$6^{3}=216$$
+
+$$9\\cdot 6^{2}=9\\cdot 36=324$$
+
+$$24\\cdot 6=144$$
+
+$$C(6)=216-324+144-14$$
+
+$$C(6)=22$$
+
+That is not $20$.
 
 So the statement is False.`,
       },
@@ -708,9 +1008,15 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
+Solve $C'(x)=0$ on the domain and count distinct roots.
+
 $$C'(x)=3(x-2)(x-4)$$
 
-Roots $x=2$ and $x=4$ lie in $[0,6]$.
+$$C'(x)=0\\Rightarrow x=2\\text{ or }x=4$$
+
+$$2\\in[0,6],\\quad 4\\in[0,6]$$
+
+There are exactly two distinct roots in $[0,6]$.
 
 So the statement is True.`,
       },
@@ -727,7 +1033,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-$$N(10)=800e^{0.5}\\approx 800\\cdot 1.6487\\approx 1319$$
+Evaluate the culture count at $t=10$ days.
+
+$$N(10)=800e^{0.05\\cdot 10}$$
+
+$$0.05\\cdot 10=0.5$$
+
+$$N(10)=800e^{0.5}$$
+
+$$e^{0.5}\\approx 1.6487212707$$
+
+$$800\\cdot 1.6487212707\\approx 1318.98$$
+
+That exceeds $1300$ million.
 
 So the statement is True.`,
       },
@@ -736,7 +1054,19 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**B.** → False
 
-$$800e^{0.05t}=1600\\Rightarrow t=\\frac{\\ln 2}{0.05}\\approx 13.86$$
+Doubling time solves $N(t)=2N(0)$ with $N(0)=800$.
+
+$$800e^{0.05t}=1600$$
+
+$$e^{0.05t}=2$$
+
+$$0.05t=\\ln 2$$
+
+$$t=\\frac{\\ln 2}{0.05}$$
+
+$$t\\approx 13.86\\text{ days}$$
+
+That is not exactly $10$ days.
 
 So the statement is False.`,
       },
@@ -745,7 +1075,17 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Logarithm of $N(t)=800e^{0.05t}$ gives the claimed affine relation in $t$.
+Apply the logarithm product rule to $N(t)=800e^{0.05t}$.
+
+$$\\ln N(t)=\\ln(800e^{0.05t})$$
+
+$$\\ln N(t)=\\ln 800+\\ln(e^{0.05t})$$
+
+$$\\ln(e^{0.05t})=0.05t$$
+
+$$\\ln N(t)=\\ln 800+0.05t$$
+
+The identity matches the claim.
 
 So the statement is True.`,
       },
@@ -754,7 +1094,21 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-$$N(14)=800e^{0.7}\\approx 1611>1600$$
+Compute the count at $t=14$ and compare with $1600$.
+
+$$N(14)=800e^{0.05\\cdot 14}$$
+
+$$0.05\\cdot 14=0.7$$
+
+$$N(14)=800e^{0.7}$$
+
+$$e^{0.7}\\approx 2.013752707$$
+
+$$N(14)\\approx 800\\cdot 2.013752707\\approx 1611.0$$
+
+$$1611>1600$$
+
+The count is not below $1600$ million.
 
 So the statement is False.`,
       },
@@ -763,7 +1117,13 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-The exponent $0.05t$ identifies rate $0.05$ in continuous form.
+In continuous exponential form $N(t)=N(0)e^{rt}$, read $r$ from the exponent.
+
+$$N(t)=800e^{0.05t}$$
+
+$$N(t)=N(0)e^{rt}\\Rightarrow r=0.05$$
+
+The per-day continuous growth parameter is $0.05$.
 
 So the statement is True.`,
       },
@@ -780,13 +1140,19 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Differentiate position:
+Differentiate position to get velocity, then evaluate at $t=2$.
 
-$$v(t)=3t^{2}-12t+9$$
+$$s(t)=t^{3}-6t^{2}+9t$$
 
-At $t=2$:
+$$v(t)=s'(t)=3t^{2}-12t+9$$
 
-$$v(2)=12-24+9=-3$$
+$$v(2)=3(2)^{2}-12(2)+9$$
+
+$$3(4)-24+9=12-24+9$$
+
+$$v(2)=-3$$
+
+So $v(2)=-3$ m/s.
 
 So the statement is True.`,
       },
@@ -795,13 +1161,17 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-Factor velocity:
+Factor velocity and test the claimed rest time.
+
+$$v(t)=3t^{2}-12t+9=3(t^{2}-4t+3)$$
 
 $$v(t)=3(t-1)(t-3)$$
 
-Substitute $t=3$:
+$$v(3)=3(3-1)(3-3)$$
 
-$$v(3)=0$$
+$$v(3)=3\\cdot 2\\cdot 0=0$$
+
+The particle is instantaneously at rest at $t=3$ s.
 
 So the statement is True.`,
       },
@@ -810,11 +1180,15 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Acceleration:
+Differentiate velocity to get acceleration.
 
-$$a(t)=6t-12$$
+$$a(t)=v'(t)=6t-12$$
+
+$$a(2)=6(2)-12$$
 
 $$a(2)=12-12=0$$
+
+So $a(2)=0$ m/s$^{2}$.
 
 So the statement is True.`,
       },
@@ -823,9 +1197,17 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-On $(1,3)$ the factor $(t-3)<0$ while $(t-1)>0$, so $v(t)<0$.
+Use the factored sign of $v(t)=3(t-1)(t-3)$ on $(1,3)$.
 
-Example: $v(2)=-3$.
+$$1<t<3\\Rightarrow (t-1)>0$$
+
+$$1<t<3\\Rightarrow (t-3)<0$$
+
+$$v(t)=3(t-1)(t-3)<0$$
+
+$$v(2)=-3<0$$
+
+Velocity is not strictly positive for all $t>1$.
 
 So the statement is False.`,
       },
@@ -834,9 +1216,19 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-Factor position as $s(t)=t(t-3)^{2}$:
+Factor position and evaluate at $t=3$.
 
-$$s(3)=3\\cdot 0^{2}=0$$
+$$s(t)=t^{3}-6t^{2}+9t=t(t^{2}-6t+9)$$
+
+$$t^{2}-6t+9=(t-3)^{2}$$
+
+$$s(t)=t(t-3)^{2}$$
+
+$$s(3)=3(3-3)^{2}$$
+
+$$s(3)=3\\cdot 0=0$$
+
+So $s(3)=0$ m.
 
 So the statement is True.`,
       },
@@ -853,7 +1245,15 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-Three favorable sequences out of eight equally likely outcomes.
+Count length-$3$ head/tail sequences with exactly two heads.
+
+$$\\text{total outcomes}=2^{3}=8$$
+
+Favorable patterns: HHT, HTH, THH:
+
+$$\\text{favorable}=3$$
+
+$$P(\\text{exactly two heads})=\\frac{3}{8}$$
 
 So the statement is True.`,
       },
@@ -862,7 +1262,15 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-$$1-P(\\text{HHH})=1-\\frac{1}{8}=\\frac{7}{8}$$
+Use the complement of three heads in three fair tosses.
+
+$$P(\\text{HHH})=\\left(\\frac{1}{2}\\right)^{3}$$
+
+$$P(\\text{HHH})=\\frac{1}{8}$$
+
+$$P(\\text{at least one tail})=1-P(\\text{HHH})$$
+
+$$1-\\frac{1}{8}=\\frac{7}{8}$$
 
 So the statement is True.`,
       },
@@ -871,7 +1279,17 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**C.** → False
 
-$$P(A\\cap B)=0.35\\cdot 0.40=0.14$$
+Independent events multiply probabilities for the intersection.
+
+$$P(A)=0.35,\\quad P(B)=0.40$$
+
+$$P(A\\cap B)=P(A)P(B)$$
+
+$$P(A\\cap B)=0.35\\cdot 0.40$$
+
+$$0.35\\cdot 0.40=0.14$$
+
+That is not $0.20$.
 
 So the statement is False.`,
       },
@@ -880,7 +1298,17 @@ So the statement is False.`,
         isTrue: false,
         explanation: `**D.** → False
 
-$$P(A\\cup B)=0.35+0.40-0.14=0.61$$
+Apply the union rule with the correct intersection.
+
+$$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$$
+
+$$P(A\\cup B)=0.35+0.40-0.14$$
+
+$$0.35+0.40=0.75$$
+
+$$0.75-0.14=0.61$$
+
+That is not $0.75$.
 
 So the statement is False.`,
       },
@@ -889,7 +1317,15 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-Each specific length-$3$ sequence has probability $1/8$.
+Each specific three-toss sequence has equal probability.
+
+$$P(\\text{HHH})=\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}$$
+
+$$P(\\text{TTT})=\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}$$
+
+$$P(\\text{HHH})=P(\\text{TTT})$$
+
+Exactly three heads and zero heads are equally likely.
 
 So the statement is True.`,
       },
@@ -906,7 +1342,17 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**A.** → True
 
-$$E(X)=np=10\\cdot 0.30=3$$
+Expected value of a binomial count is $np$.
+
+$$n=10,\\quad p=0.30$$
+
+$$E(X)=np$$
+
+$$E(X)=10\\cdot 0.30$$
+
+$$10\\cdot 0.30=3$$
+
+So $E(X)=3$.
 
 So the statement is True.`,
       },
@@ -915,7 +1361,13 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**B.** → True
 
-This is the binomial pmf at $k=3$.
+The binomial pmf at $k=3$ failures is the stated product.
+
+$$P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}$$
+
+$$P(X=3)=\\binom{10}{3}(0.30)^{3}(0.70)^{7}$$
+
+That matches the displayed formula.
 
 So the statement is True.`,
       },
@@ -924,7 +1376,21 @@ So the statement is True.`,
         isTrue: true,
         explanation: `**C.** → True
 
-Numerical evaluation gives about $0.267$.
+Evaluate the pmf numerically at $k=3$.
+
+$$P(X=3)=\\binom{10}{3}(0.30)^{3}(0.70)^{7}$$
+
+$$\\binom{10}{3}=120$$
+
+$$(0.30)^{3}=0.027$$
+
+$$(0.70)^{7}\\approx 0.0823543$$
+
+$$P(X=3)\\approx 120\\cdot 0.027\\cdot 0.0823543$$
+
+$$P(X=3)\\approx 0.267$$
+
+To three decimals, $P(X=3)\\approx 0.267$.
 
 So the statement is True.`,
       },
@@ -933,7 +1399,15 @@ So the statement is True.`,
         isTrue: false,
         explanation: `**D.** → False
 
-$$P(X\\ge 2)\\approx 0.851$$
+Compute the tail probability $P(X\\ge 2)$ for $X\\sim\\mathrm{Bin}(10,0.30)$.
+
+$$P(X\\ge 2)=1-P(X=0)-P(X=1)$$
+
+$$P(X\\ge 2)\\approx 0.8507$$
+
+$$0.8507>0.80$$
+
+So $P(X\\ge 2)$ is not less than $0.80$.
 
 So the statement is False.`,
       },
@@ -942,7 +1416,19 @@ So the statement is False.`,
         isTrue: true,
         explanation: `**E.** → True
 
-$P(X=3)$ exceeds neighboring masses $P(X=2)$ and $P(X=4)$.
+Compare binomial masses at neighboring counts; the mode is where $P(X=k)$ is largest.
+
+$$P(X=2)\\approx 0.233$$
+
+$$P(X=3)\\approx 0.267$$
+
+$$P(X=4)\\approx 0.200$$
+
+$$P(X=3)>P(X=2)$$
+
+$$P(X=3)>P(X=4)$$
+
+The most likely single failure count is $k=3$.
 
 So the statement is True.`,
       },
