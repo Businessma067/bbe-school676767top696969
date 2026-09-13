@@ -117,7 +117,16 @@ function TakeExamPage() {
     warningsSeeded.current = false;
     submitted.current = false;
     (async () => {
-      const resolved = await resolveExam(examId);
+      let resolved;
+      try {
+        resolved = await resolveExam(examId);
+      } catch (err) {
+        console.error("[mock-exams/take] resolveExam failed", examId, err);
+        if (cancelled) return;
+        setLoadError("This exam could not be loaded. Please try again.");
+        setContentReady(true);
+        return;
+      }
       if (cancelled) return;
       if (!resolved) {
         setLoadError("This exam could not be loaded. It may have been deleted.");
