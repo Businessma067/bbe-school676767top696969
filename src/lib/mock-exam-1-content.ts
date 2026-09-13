@@ -41,7 +41,24 @@ type SourcedBundle = {
   math: SourcedTask[];
 };
 
-const bundle = sourced as SourcedBundle;
+/** Vite/Nitro may expose JSON as the module itself or under `.default`. */
+function unwrapSourced(mod: unknown): SourcedBundle {
+  const root = mod as SourcedBundle & { default?: SourcedBundle };
+  const candidate =
+    root && Array.isArray(root.economics) ? root : root?.default;
+  if (
+    !candidate ||
+    !Array.isArray(candidate.economics) ||
+    !Array.isArray(candidate.math) ||
+    !candidate.english ||
+    !Array.isArray(candidate.english.tasks)
+  ) {
+    throw new Error("Mock Exam 1 sourced bank failed to load.");
+  }
+  return candidate;
+}
+
+const bundle = unwrapSourced(sourced);
 
 /** Strip formula coaching left in claim text (student must know the ratios). */
 function scrubEconClaim(text: string): string {
