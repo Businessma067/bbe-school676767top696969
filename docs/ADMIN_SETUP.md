@@ -44,3 +44,10 @@ Run after the base promocodes migration:
 `supabase/migrations/20260907180000_discount_promocodes.sql`
 
 Adds ten unlimited `BBE-15-*` codes (15% off Lite + Full, expire 2026-12-06) and usage tracking.
+
+Discount codes are counted as used only after a successful payment (`promo_usages`).
+Applying a code at checkout does not consume it. Unlock (`BBE-FREE-*`) codes remain one-time.
+
+If discount codes were muted by an older claim-on-apply bug, run:
+
+`supabase/migrations/20260913210000_restore_unlimited_discount_promocodes.sql`
