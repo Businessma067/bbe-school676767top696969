@@ -9,6 +9,11 @@ import {
   parseCustomMockId,
 } from "@/config/custom-mock-builder";
 import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
+import {
+  MOCK_EXAM_1_POINTS_TOTAL,
+  MOCK_EXAM_1_QUESTION_COUNT,
+  buildMockExam1Questions,
+} from "@/lib/mock-exam-1-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -62,9 +67,16 @@ const FULL_EXAM_QUESTION_COUNT =
   SCORING_CONFIG.english.taskCount +
   SCORING_CONFIG.math.taskCount;
 
-/** Available exams. Placeholder content until real questions are added. */
+/** Available exams. Mock 1 uses curated real content; others stay placeholders for now. */
 export const MOCK_EXAMS: MockExamSummary[] = [
-  { id: "mock-1", title: "Mock Exam 1", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
+  {
+    id: "mock-1",
+    title: "Mock Exam 1",
+    questionCount: MOCK_EXAM_1_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "lite",
+    pointsTotal: MOCK_EXAM_1_POINTS_TOTAL,
+  },
   { id: "mock-2", title: "Mock Exam 2", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
   { id: "mock-3", title: "Mock Exam 3", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
   { id: "mock-4", title: "Mock Exam 4", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
@@ -112,10 +124,14 @@ function makeRandom(seed: string) {
 const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
 /**
- * Placeholder question set (full exam task counts, 5 statements each).
- * Real content will replace this; the shape stays identical.
+ * Exam question set. Mock 1 is curated real content; other ids stay placeholders
+ * until their banks are authored (same ExamQuestion shape either way).
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
+  if (examId === "mock-1") {
+    return buildMockExam1Questions(examId);
+  }
+
   const rand = makeRandom(examId);
   const questions: ExamQuestion[] = [];
   let index = 0;
