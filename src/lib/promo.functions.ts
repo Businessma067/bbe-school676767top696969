@@ -234,71 +234,9 @@ export async function lookupDiscountPromo(input: {
   return { ok: false, error: "This promocode is invalid or has already been used." };
 }
 
-/**
- * Mark a discount promocode used as soon as it is entered/applied.
- * The same user may still check out with it; everyone else is blocked.
- */
-async function claimDiscountPromoOnApply(input: {
-  code: string;
-  userId: string;
-  userEmail: string | null;
-}): Promise<{ ok: true } | { ok: false; error: string }> {
-  const code = normalizeCode(input.code);
-  if (!code) return { ok: false, error: "Enter a promocode." };
+// Discount promocodes are multi-use and are never claimed at apply time.
+// Actual usage is recorded in `promo_usages` after a successful payment.
 
-  try {
-    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-    const usedAt = new Date().toISOString();
-
-    const { data: claimed, error } = await supabaseAdmin
-      .from("promocodes")
-      .update({
-        used_at: usedAt,
-        used_by: input.userId,
-        used_by_email: input.userEmail,
-      })
-      .eq("code", code)
-      .eq("kind", "discount")
-      .is("used_at", null)
-      .select("id")
-      .maybeSingle();
-
-    if (error) {
-      if (isMissingRelationError(error)) {
-        // No table yet — nothing to mute.
-        return { ok: true };
-      }
-      console.error("claimDiscountPromoOnApply", error);
-      return { ok: false, error: "Could not apply promocode. Try again." };
-    }
-
-    if (claimed) return { ok: true };
-
-    const { data: existing, error: existingError } = await supabaseAdmin
-      .from("promocodes")
-      .select("id, used_by, kind")
-      .eq("code", code)
-      .maybeSingle();
-
-    if (existingError) {
-      if (isMissingRelationError(existingError)) return { ok: true };
-      console.error("claimDiscountPromoOnApply existing", existingError);
-      return { ok: false, error: "Could not apply promocode. Try again." };
-    }
-
-    if (!existing || existing.kind !== "discount") {
-      // Hardcoded-only code (not in DB) — cannot mute; still allow apply.
-      return { ok: true };
-    }
-
-    if (existing.used_by === input.userId) return { ok: true };
-
-    return { ok: false, error: "This promocode has already been used." };
-  } catch (err) {
-    console.error("claimDiscountPromoOnApply", err);
-    return { ok: false, error: "Could not apply promocode. Try again." };
-  }
-}
 
 export async function recordPromoUsage(input: {
   code: string;
