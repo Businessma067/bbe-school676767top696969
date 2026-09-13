@@ -270,9 +270,7 @@ export function PaymentModal({
         <DialogContent
           className={cn(
             "max-h-[90vh]",
-            payPageUrl
-              ? "overflow-hidden max-w-[640px]"
-              : "overflow-y-auto sm:max-w-md",
+            payPageUrl ? "overflow-hidden max-w-[640px]" : "overflow-y-auto sm:max-w-md",
           )}
         >
           <DialogHeader>
@@ -392,8 +390,8 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPrice} instead of
-                      €{catalogEur}
+                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPrice} instead of €
+                      {catalogEur}
                     </p>
                   )}
 

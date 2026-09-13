@@ -128,7 +128,6 @@ function PaymentResultPage() {
             </p>
           </>
         )}
-
       </div>
     </div>
   );

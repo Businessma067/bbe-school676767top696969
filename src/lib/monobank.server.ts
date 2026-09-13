@@ -10,13 +10,7 @@
 const MONO_API = "https://api.monobank.ua/api/merchant";
 
 export type MonoInvoiceStatus =
-  | "created"
-  | "processing"
-  | "hold"
-  | "success"
-  | "failure"
-  | "reversed"
-  | "expired";
+  "created" | "processing" | "hold" | "success" | "failure" | "reversed" | "expired";
 
 export type MonoStatusResponse = {
   invoiceId: string;
@@ -95,10 +89,9 @@ export async function createMonoInvoice(input: {
 }
 
 export async function fetchMonoInvoiceStatus(invoiceId: string): Promise<MonoStatusResponse> {
-  const res = await fetch(
-    `${MONO_API}/invoice/status?invoiceId=${encodeURIComponent(invoiceId)}`,
-    { headers: { "X-Token": monoToken() } },
-  );
+  const res = await fetch(`${MONO_API}/invoice/status?invoiceId=${encodeURIComponent(invoiceId)}`, {
+    headers: { "X-Token": monoToken() },
+  });
   const text = await res.text();
   if (!res.ok) {
     console.error("monobank invoice/status failed", res.status, text);

@@ -40,7 +40,10 @@ function safeStartHref(href: string | undefined, productSlug: string | undefined
 export const Route = createFileRoute("/payment/success")({
   validateSearch: (search: Record<string, unknown>): SuccessSearch => parseSuccessSearch(search),
   head: () => ({
-    links: [...hreflangLinks("/payment/success"), { rel: "canonical", href: "https://bbe-school.com/payment/success" }],
+    links: [
+      ...hreflangLinks("/payment/success"),
+      { rel: "canonical", href: "https://bbe-school.com/payment/success" },
+    ],
     meta: [
       { name: "robots", content: "noindex, nofollow" },
       { title: "Purchase confirmed — BBE School" },
