@@ -155,9 +155,9 @@ export async function lookupDiscountPromo(input: {
       if (data.kind !== "discount") {
         return { ok: false, error: "This promocode unlocks access — redeem it in the Promo tab." };
       }
-      if (data.used_at && data.used_by !== input.userId) {
-        return { ok: false, error: "This promocode has already been used." };
-      }
+      // Discount codes are multi-use: `used_at` is not a block, only
+      // `max_uses` (counted from actual paid usages) limits them.
+
       if (isExpired(data.expires_at)) {
         return { ok: false, error: "This promocode has expired." };
       }
