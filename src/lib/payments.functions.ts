@@ -8,7 +8,7 @@ import {
   isPaidProductSlug,
   minorToEur,
 } from "@/lib/checkout-catalog";
-import { lookupDiscountPromo } from "@/lib/promo.functions";
+import { claimDiscountForUser, getUserDiscountClaim, lookupDiscountPromo } from "@/lib/promo.functions";
 
 export type CheckoutResult =
   | { ok: true; pageUrl: string; invoiceId: string; amountEur: number }
@@ -61,9 +61,13 @@ export const createCheckout = createServerFn({ method: "POST" })
       let discountPct = 0;
       let appliedPromoCode: string | null = null;
       const rawPromo = (data.promoCode ?? "").trim();
+      const email = typeof context.claims.email === "string" ? context.claims.email : null;
       if (rawPromo) {
-        const promo = await lookupDiscountPromo({
+        // Apply/confirm sticky discount on this account (marked used for this user).
+        const promo = await claimDiscountForUser({
           code: rawPromo,
+          userId: context.userId,
+          userEmail: email,
           productSlug: slug,
         });
         if (!promo.ok) {
@@ -71,6 +75,19 @@ export const createCheckout = createServerFn({ method: "POST" })
         }
         discountPct = Math.max(0, Math.min(100, Number(promo.discountPct) || 0));
         appliedPromoCode = promo.code;
+      } else {
+        // Forever sticky price: reuse the discount this account already applied.
+        const claim = await getUserDiscountClaim(context.userId);
+        if (claim.ok) {
+          const promo = await lookupDiscountPromo({
+            code: claim.code,
+            productSlug: slug,
+          });
+          if (promo.ok) {
+            discountPct = Math.max(0, Math.min(100, Number(promo.discountPct) || 0));
+            appliedPromoCode = promo.code;
+          }
+        }
       }
 
       // Charge catalog EUR (± promocode %) in minor units — same math as the checkout UI.
@@ -98,7 +115,6 @@ export const createCheckout = createServerFn({ method: "POST" })
         basketIconUrl: "https://bbe-school.com/logo.png",
       });
 
-      const email = typeof context.claims.email === "string" ? context.claims.email : null;
       const { error } = await supabaseAdmin.from("payments").insert({
         user_id: context.userId,
         user_email: email,

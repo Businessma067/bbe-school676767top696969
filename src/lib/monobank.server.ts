@@ -159,7 +159,7 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
         ? (payment as { promo_code: string }).promo_code
         : null;
     if (promoCode) {
-      // Count the discount code as used only after payment success.
+      // Attach payment_id to the Apply-time usage row (code already marked used for this user).
       const { recordPromoUsage } = await import("@/lib/promo.functions");
       await recordPromoUsage({
         code: promoCode,

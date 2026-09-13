@@ -556,6 +556,38 @@ export type Database = {
           },
         ]
       }
+      user_discount_claims: {
+        Row: {
+          user_id: string
+          promocode_id: string | null
+          code: string
+          discount_pct: number
+          claimed_at: string
+        }
+        Insert: {
+          user_id: string
+          promocode_id?: string | null
+          code: string
+          discount_pct: number
+          claimed_at?: string
+        }
+        Update: {
+          user_id?: string
+          promocode_id?: string | null
+          code?: string
+          discount_pct?: number
+          claimed_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_discount_claims_promocode_id_fkey"
+            columns: ["promocode_id"]
+            isOneToOne: false
+            referencedRelation: "promocodes"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       promocodes: {
         Row: {
           code: string

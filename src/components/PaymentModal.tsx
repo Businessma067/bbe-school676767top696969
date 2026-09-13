@@ -11,7 +11,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
-import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
+import { getMyDiscountClaim, redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
 import {
   PAID_PRODUCTS,
@@ -68,12 +68,24 @@ export function PaymentModal({
     setPromoUnlocked(false);
     setAuthOpen(false);
 
-    // Buying requires an account first.
+    // Buying requires an account first. If this account already applied a
+    // discount code, restore the sticky discounted price forever.
     void (async () => {
       const { data } = await supabase.auth.getSession();
       if (!data.session) {
         onOpenChange(false);
         setAuthOpen(true);
+        return;
+      }
+      try {
+        const claim = await getMyDiscountClaim();
+        if (claim.ok) {
+          setAppliedPromoCode(claim.code);
+          setDiscountPct(claim.discountPct);
+          setPromoCode(claim.code);
+        }
+      } catch {
+        // Non-fatal — user can still apply a code manually.
       }
     })();
   }, [open, onOpenChange]);
@@ -334,7 +346,7 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPriceLabel} instead of
+                      {discountPct}% off locked on this account ({appliedPromoCode}) — forever €{eurPriceLabel} instead of
                       €{catalogPriceLabel}
                     </p>
                   )}

@@ -45,7 +45,7 @@ Run after the base promocodes migration:
 
 Adds ten unlimited `BBE-15-*` codes (15% off Lite + Full, expire 2026-12-06) and usage tracking.
 
-Discount codes are counted as used only after a successful payment (`promo_usages`).
+Discount codes: on Apply, the account forever gets the discounted price and the code is marked used for that user (other accounts can still use multi-use 15% codes). Payment attaches to the existing usage row. (`promo_usages`).
 Applying a code at checkout does not consume it. Unlock (`BBE-FREE-*`) codes remain one-time.
 
 If discount codes were muted by an older claim-on-apply bug, run:

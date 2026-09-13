@@ -100,6 +100,7 @@ function isMissingRelationError(error: { message?: string; code?: string; detail
     blob.includes("promocodes") ||
     blob.includes("promo_redeem_attempts") ||
     blob.includes("promo_usages") ||
+    blob.includes("user_discount_claims") ||
     blob.includes("pgrst205") ||
     blob.includes("does not exist") ||
     blob.includes("schema cache")
@@ -242,9 +243,121 @@ export async function lookupDiscountPromo(input: {
   return { ok: false, error: "This promocode is invalid or has already been used." };
 }
 
-// Discount promocodes are multi-use and are never claimed at apply time.
-// Actual usage is recorded in `promo_usages` only after a successful payment.
+// On Apply: bind a sticky discount to the account forever and mark the code
+// used for that user. 15% codes stay reusable by other accounts (max_uses NULL).
 
+export type MyDiscountClaimResult =
+  | { ok: true; code: string; discountPct: number }
+  | { ok: false };
+
+async function resolvePromoRowForClaim(code: string): Promise<{
+  id: string | null;
+  code: string;
+  discountPct: number;
+} | null> {
+  const normalized = normalizeCode(code);
+  const looked = await lookupDiscountPromo({ code: normalized });
+  if (!looked.ok) return null;
+
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { data } = await supabaseAdmin
+      .from("promocodes")
+      .select("id")
+      .eq("code", looked.code)
+      .eq("kind", "discount")
+      .maybeSingle();
+    return { id: data?.id ?? null, code: looked.code, discountPct: looked.discountPct };
+  } catch {
+    return { id: null, code: looked.code, discountPct: looked.discountPct };
+  }
+}
+
+/** Persist sticky discount for this user and mark the code used on this account. */
+export async function claimDiscountForUser(input: {
+  code: string;
+  userId: string;
+  userEmail: string | null;
+  productSlug?: string;
+}): Promise<DiscountValidateResult> {
+  const validated = await lookupDiscountPromo({
+    code: input.code,
+    productSlug: input.productSlug,
+  });
+  if (!validated.ok) return validated;
+
+  const row = await resolvePromoRowForClaim(validated.code);
+  if (!row) return validated;
+
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+
+    // Sticky forever price on this account (one claim per user).
+    const { error: claimError } = await supabaseAdmin.from("user_discount_claims").upsert(
+      {
+        user_id: input.userId,
+        promocode_id: row.id,
+        code: row.code,
+        discount_pct: row.discountPct,
+        claimed_at: new Date().toISOString(),
+      },
+      { onConflict: "user_id" },
+    );
+    if (claimError && !isMissingRelationError(claimError)) {
+      console.error("claimDiscountForUser claim", claimError);
+      return { ok: false, error: "Could not apply promocode. Try again." };
+    }
+
+    // Mark used for this account (admin usages). Do not set promocodes.used_at —
+    // discount codes remain reusable by other users.
+    if (row.id) {
+      const { data: existingUsage } = await supabaseAdmin
+        .from("promo_usages")
+        .select("id, payment_id")
+        .eq("user_id", input.userId)
+        .eq("code", row.code)
+        .maybeSingle();
+
+      if (!existingUsage) {
+        const { error: usageError } = await supabaseAdmin.from("promo_usages").insert({
+          promocode_id: row.id,
+          code: row.code,
+          user_id: input.userId,
+          user_email: input.userEmail,
+          product_slug: input.productSlug ?? "any-paid",
+          payment_id: null,
+        });
+        if (usageError && !/duplicate|unique/i.test(usageError.message ?? "")) {
+          console.error("claimDiscountForUser usage", usageError);
+        }
+      }
+    }
+  } catch (err) {
+    console.error("claimDiscountForUser", err);
+  }
+
+  return validated;
+}
+
+export async function getUserDiscountClaim(userId: string): Promise<MyDiscountClaimResult> {
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { data, error } = await supabaseAdmin
+      .from("user_discount_claims")
+      .select("code, discount_pct")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (error) {
+      if (!isMissingRelationError(error)) console.error("getUserDiscountClaim", error);
+      return { ok: false };
+    }
+    if (!data?.code || !data.discount_pct) return { ok: false };
+    return { ok: true, code: data.code, discountPct: data.discount_pct };
+  } catch (err) {
+    console.error("getUserDiscountClaim", err);
+    return { ok: false };
+  }
+}
 
 export async function recordPromoUsage(input: {
   code: string;
@@ -253,8 +366,7 @@ export async function recordPromoUsage(input: {
   productSlug: string;
   paymentId: string;
 }): Promise<void> {
-  // Call only after Monobank confirms payment success. Applying a code at
-  // checkout must not count as a use.
+  // Attach payment_id to the Apply-time usage row, or insert if missing.
   const code = normalizeCode(input.code);
   if (!code) return;
 
@@ -268,12 +380,30 @@ export async function recordPromoUsage(input: {
 
     if (!promo || promo.kind !== "discount") return;
 
-    const { data: existing } = await supabaseAdmin
+    const { data: byPayment } = await supabaseAdmin
       .from("promo_usages")
       .select("id")
       .eq("payment_id", input.paymentId)
       .maybeSingle();
-    if (existing) return;
+    if (byPayment) return;
+
+    const { data: byUser } = await supabaseAdmin
+      .from("promo_usages")
+      .select("id, payment_id")
+      .eq("user_id", input.userId)
+      .eq("code", code)
+      .maybeSingle();
+
+    if (byUser && !byUser.payment_id) {
+      const { error } = await supabaseAdmin
+        .from("promo_usages")
+        .update({ payment_id: input.paymentId, product_slug: input.productSlug })
+        .eq("id", byUser.id);
+      if (error) console.error("recordPromoUsage update", error);
+      return;
+    }
+
+    if (byUser?.payment_id) return;
 
     const { error } = await supabaseAdmin.from("promo_usages").insert({
       promocode_id: promo.id,
@@ -286,14 +416,6 @@ export async function recordPromoUsage(input: {
     if (error && !/duplicate|unique/i.test(error.message ?? "")) {
       console.error("recordPromoUsage", error);
     }
-
-    // Clear any stale used_at left by the old claim-on-apply path so the code
-    // stays reusable (unlimited when max_uses is NULL).
-    await supabaseAdmin
-      .from("promocodes")
-      .update({ used_at: null, used_by: null, used_by_email: null })
-      .eq("id", promo.id)
-      .not("used_at", "is", null);
   } catch (err) {
     console.error("recordPromoUsage", err);
   }
@@ -302,13 +424,22 @@ export async function recordPromoUsage(input: {
 export const validateDiscountCode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => DiscountInput.parse(d))
-  .handler(async ({ data }): Promise<DiscountValidateResult> => {
-    // Validate only — never mark a discount code used here.
-    // Usage is written to promo_usages after Monobank reports payment success.
-    return await lookupDiscountPromo({
+  .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
+    // Apply = sticky new price on this account forever + mark used for this user.
+    const email =
+      typeof context.claims.email === "string" ? context.claims.email : null;
+    return await claimDiscountForUser({
       code: data.code,
+      userId: context.userId,
+      userEmail: email,
       productSlug: data.productSlug,
     });
+  });
+
+export const getMyDiscountClaim = createServerFn({ method: "GET" })
+  .middleware([requireSupabaseAuth])
+  .handler(async ({ context }): Promise<MyDiscountClaimResult> => {
+    return await getUserDiscountClaim(context.userId);
   });
 
 
