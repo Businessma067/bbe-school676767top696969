@@ -98,8 +98,10 @@ export const uiExtraDe: Record<string, string> = {
     "Dein Promocode hat funktioniert. Du wirst zum Kurs weitergeleitet…",
   Card: "Karte",
   Promo: "Promo",
-  "Pay securely by card through Monobank. You will be taken to the bank's checkout page and returned here right after the payment.":
-    "Zahle sicher per Karte über Monobank. Du wirst zur Kasse der Bank weitergeleitet und kehrst direkt nach der Zahlung hierher zurück.",
+  "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.":
+    "Zahle sicher per Karte über Monobank. Das Zahlungsformular öffnet sich hier; nach der Zahlung kommst du automatisch zurück.",
+  "Pay by card. You will return here after the payment.":
+    "Zahle per Karte. Nach der Zahlung kommst du hierher zurück.",
   "15% discount applied": "15 % Rabatt angewendet",
   "Proceed to payment · ": "Zur Zahlung · ",
   "One-time payment · No subscription · Secured by Monobank":
@@ -291,8 +293,10 @@ export const uiExtraUk: Record<string, string> = {
     "Промокод спрацював. Перенаправляємо до курсу…",
   Card: "Картка",
   Promo: "Промо",
-  "Pay securely by card through Monobank. You will be taken to the bank's checkout page and returned here right after the payment.":
-    "Оплатіть безпечно карткою через Monobank. Вас перенаправить на сторінку банку, а після оплати — назад сюди.",
+  "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.":
+    "Оплатіть безпечно карткою через Monobank. Форма оплати відкриється тут; після оплати ви автоматично повернетесь.",
+  "Pay by card. You will return here after the payment.":
+    "Оплатіть карткою. Після оплати ви повернетесь сюди.",
   "15% discount applied": "Знижку 15% застосовано",
   "Proceed to payment · ": "До оплати · ",
   "One-time payment · No subscription · Secured by Monobank":
