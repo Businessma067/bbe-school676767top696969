@@ -286,26 +286,14 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => DiscountInput.parse(d))
   .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
     const userId = context.userId;
-    const userEmail =
-      typeof context.claims.email === "string" ? context.claims.email : null;
 
-    const result = await lookupDiscountPromo({
+    return await lookupDiscountPromo({
       code: data.code,
       productSlug: data.productSlug,
       userId,
     });
-    if (!result.ok) return result;
-
-    // Mute the code as soon as it is entered/applied so nobody else can reuse it.
-    const claimed = await claimDiscountPromoOnApply({
-      code: result.code,
-      userId,
-      userEmail,
-    });
-    if (!claimed.ok) return claimed;
-
-    return result;
   });
+
 
 export const redeemPromocode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
