@@ -13,7 +13,13 @@ import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
-import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
+import {
+  PAID_PRODUCTS,
+  discountedAmountMinor,
+  formatEurAmount,
+  minorToEur,
+  type PaidProductSlug,
+} from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
 
@@ -44,9 +50,11 @@ export function PaymentModal({
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
-  const priceFactor = discountApplied ? 1 - discountPct / 100 : 1;
   const catalogEur = product.priceEur;
-  const eurPrice = Math.round(catalogEur * priceFactor);
+  const amountMinor = discountedAmountMinor(catalogEur, discountApplied ? discountPct : 0);
+  const eurPrice = minorToEur(amountMinor);
+  const eurPriceLabel = formatEurAmount(eurPrice);
+  const catalogPriceLabel = formatEurAmount(catalogEur);
   const showDiscountedTotal = method !== "promo" || discountApplied;
 
   useEffect(() => {
@@ -236,7 +244,7 @@ export function PaymentModal({
               </p>
               {showDiscountedTotal && (
                 <p className="mt-0.5 text-xs text-muted-foreground">
-                  Charged as €{eurPrice}
+                  Charged as €{eurPriceLabel}
                   {discountApplied ? ` (−${discountPct}%)` : ""}
                 </p>
               )}
@@ -247,9 +255,9 @@ export function PaymentModal({
               ) : (
                 <>
                   {discountApplied && (
-                    <p className="text-sm text-muted-foreground line-through">€{catalogEur}</p>
+                    <p className="text-sm text-muted-foreground line-through">€{catalogPriceLabel}</p>
                   )}
-                  <p className="font-display text-2xl font-bold text-foreground">€{eurPrice}</p>
+                  <p className="font-display text-2xl font-bold text-foreground">€{eurPriceLabel}</p>
                 </>
               )}
             </div>
@@ -326,8 +334,8 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPrice} instead of
-                      €{catalogEur}
+                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPriceLabel} instead of
+                      €{catalogPriceLabel}
                     </p>
                   )}
 
@@ -349,7 +357,7 @@ export function PaymentModal({
                     ) : (
                       <>
                         <Lock className="h-4 w-4" />
-                        Proceed to payment · €{eurPrice}
+                        Proceed to payment · €{eurPriceLabel}
                       </>
                     )}
                   </button>

@@ -126,8 +126,6 @@ function isExpired(expiresAt: string | null | undefined): boolean {
 export async function lookupDiscountPromo(input: {
   code: string;
   productSlug?: string;
-  /** When set, a code already claimed by this user still validates (checkout after apply). */
-  userId?: string;
 }): Promise<DiscountValidateResult> {
   const code = normalizeCode(input.code);
   if (!code) return { ok: false, error: "Enter a promocode." };
@@ -140,7 +138,7 @@ export async function lookupDiscountPromo(input: {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data, error } = await supabaseAdmin
       .from("promocodes")
-      .select("id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at, used_by")
+      .select("id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at")
       .eq("code", code)
       .maybeSingle();
 
@@ -155,8 +153,18 @@ export async function lookupDiscountPromo(input: {
       if (data.kind !== "discount") {
         return { ok: false, error: "This promocode unlocks access — redeem it in the Promo tab." };
       }
-      // Discount codes are multi-use: `used_at` is not a block, only
-      // `max_uses` (counted from actual paid usages) limits them.
+      // Discount codes are multi-use (max_uses NULL = unlimited).
+      // `used_at` is ignored — usage is tracked in promo_usages after payment.
+      // Clear any leftover used_at from the old claim-on-apply bug.
+      if (data.used_at) {
+        void supabaseAdmin
+          .from("promocodes")
+          .update({ used_at: null, used_by: null, used_by_email: null })
+          .eq("id", data.id)
+          .then(({ error: clearError }) => {
+            if (clearError) console.error("lookupDiscountPromo clear used_at", clearError);
+          });
+      }
 
       if (isExpired(data.expires_at)) {
         return { ok: false, error: "This promocode has expired." };
@@ -235,7 +243,7 @@ export async function lookupDiscountPromo(input: {
 }
 
 // Discount promocodes are multi-use and are never claimed at apply time.
-// Actual usage is recorded in `promo_usages` after a successful payment.
+// Actual usage is recorded in `promo_usages` only after a successful payment.
 
 
 export async function recordPromoUsage(input: {
@@ -245,6 +253,8 @@ export async function recordPromoUsage(input: {
   productSlug: string;
   paymentId: string;
 }): Promise<void> {
+  // Call only after Monobank confirms payment success. Applying a code at
+  // checkout must not count as a use.
   const code = normalizeCode(input.code);
   if (!code) return;
 
@@ -276,6 +286,14 @@ export async function recordPromoUsage(input: {
     if (error && !/duplicate|unique/i.test(error.message ?? "")) {
       console.error("recordPromoUsage", error);
     }
+
+    // Clear any stale used_at left by the old claim-on-apply path so the code
+    // stays reusable (unlimited when max_uses is NULL).
+    await supabaseAdmin
+      .from("promocodes")
+      .update({ used_at: null, used_by: null, used_by_email: null })
+      .eq("id", promo.id)
+      .not("used_at", "is", null);
   } catch (err) {
     console.error("recordPromoUsage", err);
   }
@@ -284,13 +302,12 @@ export async function recordPromoUsage(input: {
 export const validateDiscountCode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => DiscountInput.parse(d))
-  .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
-    const userId = context.userId;
-
+  .handler(async ({ data }): Promise<DiscountValidateResult> => {
+    // Validate only — never mark a discount code used here.
+    // Usage is written to promo_usages after Monobank reports payment success.
     return await lookupDiscountPromo({
       code: data.code,
       productSlug: data.productSlug,
-      userId,
     });
   });
 
@@ -538,27 +555,23 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
 
       let status: AdminPromocodeRow["status"];
       if (kind === "discount") {
-        if (row.used_at) status = "used";
-        else if (isExpired(row.expires_at)) status = "expired";
+        // Discount codes: unlimited unless max_uses is set. Ignore legacy used_at
+        // (a prior bug claimed codes on apply before payment).
+        if (isExpired(row.expires_at)) status = "expired";
         else if (row.max_uses != null && usages.length >= row.max_uses) status = "used";
         else status = "active";
       } else {
         status = row.used_at ? "used" : "available";
       }
 
-      // Surface one-time unlock redeemers / discount claimers in the usages shape.
-      if (row.used_at) {
-        const already =
-          kind === "discount" &&
-          usages.some((u) => u.userId === row.used_by && u.createdAt === row.used_at);
-        if (kind === "unlock" || !already) {
-          usages.push({
-            userId: row.used_by,
-            userEmail: row.used_by_email,
-            productSlug: row.product_slug,
-            createdAt: row.used_at,
-          });
-        }
+      // Surface one-time unlock redeemers in the usages shape.
+      if (kind === "unlock" && row.used_at) {
+        usages.push({
+          userId: row.used_by,
+          userEmail: row.used_by_email,
+          productSlug: row.product_slug,
+          createdAt: row.used_at,
+        });
       }
 
       return {

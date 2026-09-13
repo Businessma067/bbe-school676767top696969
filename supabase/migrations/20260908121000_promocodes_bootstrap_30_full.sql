@@ -115,3 +115,21 @@ VALUES
   ('BBE-30-0B49A5', 'full-course', 'discount', 30, NULL, '2026-12-06T23:59:59+00:00', 'BBE 30% Full · 0B49A5'),
   ('BBE-30-04FAFE', 'full-course', 'discount', 30, NULL, '2026-12-06T23:59:59+00:00', 'BBE 30% Full · 04FAFE')
 ON CONFLICT (code) DO NOTHING;
+
+-- Restore unlimited discount codes if an older claim-on-apply path muted them.
+UPDATE public.promocodes
+SET
+  used_at = NULL,
+  used_by = NULL,
+  used_by_email = NULL
+WHERE kind = 'discount'
+  AND used_at IS NOT NULL;
+
+UPDATE public.promocodes
+SET max_uses = NULL
+WHERE kind = 'discount'
+  AND (
+    code LIKE 'BBE-15-%'
+    OR code LIKE 'BBE-30-%'
+    OR upper(code) = 'BBE-JFKDJT15'
+  );

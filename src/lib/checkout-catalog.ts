@@ -95,3 +95,30 @@ export const HARDCODED_DISCOUNT_PROMOS: HardcodedDiscountPromo[] = [
 export function isPaidProductSlug(value: string): value is PaidProductSlug {
   return value in PAID_PRODUCTS;
 }
+
+/** Catalog price → minor units (cents). */
+export function priceEurToMinor(priceEur: number): number {
+  return Math.round(priceEur * 100);
+}
+
+/**
+ * Apply a percent discount to a catalog EUR price.
+ * Matches the Monobank invoice amount (minor units / cents).
+ * Example: €449 at 15% → 38165 (€381.65).
+ */
+export function discountedAmountMinor(priceEur: number, discountPct: number): number {
+  const pct = Math.max(0, Math.min(100, Number(discountPct) || 0));
+  const baseMinor = priceEurToMinor(priceEur);
+  if (pct <= 0) return Math.max(1, baseMinor);
+  return Math.max(1, Math.round(baseMinor * (1 - pct / 100)));
+}
+
+export function minorToEur(amountMinor: number): number {
+  return amountMinor / 100;
+}
+
+/** Display helper: whole euros without decimals, otherwise two decimal places. */
+export function formatEurAmount(amountEur: number): string {
+  const rounded = Math.round(amountEur * 100) / 100;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(2);
+}

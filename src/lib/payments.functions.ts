@@ -4,7 +4,9 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import {
   MONOBANK_CURRENCY_EUR,
   PAID_PRODUCTS,
+  discountedAmountMinor,
   isPaidProductSlug,
+  minorToEur,
 } from "@/lib/checkout-catalog";
 import { lookupDiscountPromo } from "@/lib/promo.functions";
 
@@ -63,7 +65,6 @@ export const createCheckout = createServerFn({ method: "POST" })
         const promo = await lookupDiscountPromo({
           code: rawPromo,
           productSlug: slug,
-          userId: context.userId,
         });
         if (!promo.ok) {
           return { ok: false, error: promo.error };
@@ -72,12 +73,8 @@ export const createCheckout = createServerFn({ method: "POST" })
         appliedPromoCode = promo.code;
       }
 
-      // Charge the catalog EUR price in minor units (cents). Promocode % still applies.
-      const baseMinor = Math.round(product.priceEur * 100);
-      const amountMinor = Math.max(
-        1,
-        Math.round(baseMinor * (1 - discountPct / 100)),
-      );
+      // Charge catalog EUR (± promocode %) in minor units — same math as the checkout UI.
+      const amountMinor = discountedAmountMinor(product.priceEur, discountPct);
 
       const { getRequest } = await import("@tanstack/react-start/server");
       const request = getRequest();
@@ -120,7 +117,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         return { ok: false, error: "Could not start the payment. Try again." };
       }
 
-      return { ok: true, pageUrl, invoiceId, amountEur: amountMinor / 100 };
+      return { ok: true, pageUrl, invoiceId, amountEur: minorToEur(amountMinor) };
     } catch (err) {
       console.error("createCheckout", err);
       const message = err instanceof Error ? err.message : "Could not start the payment.";
