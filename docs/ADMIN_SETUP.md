@@ -22,7 +22,7 @@ Run this migration once in **Supabase → SQL Editor** (safe to re-run):
 
 `supabase/migrations/20260829210000_promocodes.sql`
 
-It creates `promocodes` + `promo_redeem_attempts` and seeds the ten `BBE-FREE-*` codes.
+It creates `promocodes` + `promo_redeem_attempts`. Free unlock (`BBE-FREE-*`) codes are retired — run `20260913230000_single_use_discounts_remove_unlocks.sql` to delete them and make 15% codes single-use.
 
 ## Revoke Full Course enrollments
 
@@ -35,7 +35,7 @@ To clear existing Full Course access for everyone and block self-enroll into pai
 - `/admin` — redirects to Users
 - `/admin/users` — searchable user list
 - `/admin/users/{id}` — per-user detail (shows phone from signup metadata when present)
-- `/admin/promocodes` — unlock codes + 15% discount codes (usages, courses, expiry)
+- `/admin/promocodes` — single-use 15% discount codes (usages, courses, expiry)
 
 ## Discount promocodes
 
@@ -43,11 +43,8 @@ Run after the base promocodes migration:
 
 `supabase/migrations/20260907180000_discount_promocodes.sql`
 
-Adds ten unlimited `BBE-15-*` codes (15% off Lite + Full, expire 2026-12-06) and usage tracking.
+Adds `BBE-15-*` codes (15% off Lite + Full). They are **single-use**: on Apply the code is consumed, that account forever keeps the discounted price, and other accounts cannot reuse it.
 
-Discount codes: on Apply, the account forever gets the discounted price and the code is marked used for that user (other accounts can still use multi-use 15% codes). Payment attaches to the existing usage row. (`promo_usages`).
-Applying a code at checkout does not consume it. Unlock (`BBE-FREE-*`) codes remain one-time.
+Unlock / free full-course codes (`BBE-FREE-*`) and 30% full-only codes are removed. Run:
 
-If discount codes were muted by an older claim-on-apply bug, run:
-
-`supabase/migrations/20260913210000_restore_unlimited_discount_promocodes.sql`
+`supabase/migrations/20260913230000_single_use_discounts_remove_unlocks.sql`

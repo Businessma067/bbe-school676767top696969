@@ -47,7 +47,7 @@ export type HardcodedDiscountPromo = {
 
 const DISCOUNT_15_EXPIRES = "2026-12-06T23:59:59+00:00";
 
-/** 15% multi-use codes (also seeded in supabase/migrations/20260907180000_discount_promocodes.sql). */
+/** 15% single-use codes (also seeded in supabase/migrations/20260907180000_discount_promocodes.sql). */
 const BBE_15_CODES = [
   "BBE-15-7A3DCE",
   "BBE-15-D4ED00",
@@ -75,21 +75,7 @@ export const HARDCODED_DISCOUNT_PROMOS: HardcodedDiscountPromo[] = [
     productSlug: "any-paid" as const,
     name: `BBE 15% · ${code.slice(-6)}`,
     expiresAt: DISCOUNT_15_EXPIRES,
-  })),
-  {
-    code: "BBE-30-0B49A5",
-    discountPct: 30,
-    productSlug: "full-course",
-    name: "BBE 30% Full · 0B49A5",
-    expiresAt: DISCOUNT_15_EXPIRES,
-  },
-  {
-    code: "BBE-30-04FAFE",
-    discountPct: 30,
-    productSlug: "full-course",
-    name: "BBE 30% Full · 04FAFE",
-    expiresAt: DISCOUNT_15_EXPIRES,
-  },
+  }))
 ];
 
 export function isPaidProductSlug(value: string): value is PaidProductSlug {
