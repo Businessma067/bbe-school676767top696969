@@ -75,6 +75,9 @@ export async function createMonoInvoice(input: {
       ...(input.webHookUrl ? { webHookUrl: input.webHookUrl } : {}),
       validity: 3600,
       paymentType: "debit",
+      // Card widget only — the hosted pay.monobank.ua page otherwise shows a
+      // Monobank-app QR on desktop, which we do not want on checkout.
+      displayType: "iframe",
     }),
   });
 

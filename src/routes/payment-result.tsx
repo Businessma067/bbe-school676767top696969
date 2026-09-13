@@ -1,7 +1,8 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { getPaymentStatus, listMyPayments } from "@/lib/payments.functions";
+import { breakOutOfIframe } from "@/lib/break-out-of-iframe";
 
 export const Route = createFileRoute("/payment-result")({
   head: () => ({
@@ -33,6 +34,10 @@ function PaymentResultPage() {
   const navigate = useNavigate();
   const [view, setView] = useState<View>({ state: "checking" });
   const tries = useRef(0);
+
+  useLayoutEffect(() => {
+    breakOutOfIframe();
+  }, []);
 
   useEffect(() => {
     let cancelled = false;

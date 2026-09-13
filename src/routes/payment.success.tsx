@@ -1,9 +1,11 @@
 import { createFileRoute, useRouterState } from "@tanstack/react-router";
+import { useLayoutEffect } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
+import { breakOutOfIframe } from "@/lib/break-out-of-iframe";
 
 type SuccessSearch = {
   product?: string;
@@ -66,6 +68,9 @@ export function PaymentSuccessPage() {
   const { product, href, promo } = useRouterState({
     select: (s) => parseSuccessSearch(s.location.search as Record<string, unknown>),
   });
+  useLayoutEffect(() => {
+    breakOutOfIframe();
+  }, []);
   const productSlug =
     typeof product === "string" && isPaidProductSlug(product) ? product : undefined;
   const startHref = safeStartHref(href, productSlug);
