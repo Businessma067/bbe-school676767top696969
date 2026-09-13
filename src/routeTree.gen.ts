@@ -80,6 +80,8 @@ import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$ex
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
 import { Route as ApiPublicMonobankWebhookRouteImport } from './routes/api/public/monobank-webhook'
 import { Route as AdminUsersUserIdRouteImport } from './routes/admin.users.$userId'
+import { Route as LovableEmailAuthWebhookRouteImport } from './routes/lovable/email/auth/webhook'
+import { Route as LovableEmailAuthPreviewRouteImport } from './routes/lovable/email/auth/preview'
 import { Route as ApiPublicPaymentWebhookRouteImport } from './routes/api/public/payment.webhook'
 
 const WuViennaRoute = WuViennaRouteImport.update({
@@ -445,6 +447,16 @@ const AdminUsersUserIdRoute = AdminUsersUserIdRouteImport.update({
   path: '/$userId',
   getParentRoute: () => AdminUsersRoute,
 } as any)
+const LovableEmailAuthWebhookRoute = LovableEmailAuthWebhookRouteImport.update({
+  id: '/lovable/email/auth/webhook',
+  path: '/lovable/email/auth/webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LovableEmailAuthPreviewRoute = LovableEmailAuthPreviewRouteImport.update({
+  id: '/lovable/email/auth/preview',
+  path: '/lovable/email/auth/preview',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicPaymentWebhookRoute = ApiPublicPaymentWebhookRouteImport.update({
   id: '/api/public/payment/webhook',
   path: '/api/public/payment/webhook',
@@ -524,6 +536,8 @@ export interface FileRoutesByFullPath {
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users/': typeof AdminUsersIndexRoute
   '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
+  '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
+  '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -589,6 +603,8 @@ export interface FileRoutesByTo {
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users': typeof AdminUsersIndexRoute
   '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
+  '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
+  '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -664,6 +680,8 @@ export interface FileRoutesById {
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users/': typeof AdminUsersIndexRoute
   '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
+  '/lovable/email/auth/preview': typeof LovableEmailAuthPreviewRoute
+  '/lovable/email/auth/webhook': typeof LovableEmailAuthWebhookRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -740,6 +758,8 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/take'
     | '/admin/users/'
     | '/api/public/payment/webhook'
+    | '/lovable/email/auth/preview'
+    | '/lovable/email/auth/webhook'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -805,6 +825,8 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/take'
     | '/admin/users'
     | '/api/public/payment/webhook'
+    | '/lovable/email/auth/preview'
+    | '/lovable/email/auth/webhook'
   id:
     | '__root__'
     | '/'
@@ -879,6 +901,8 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/take'
     | '/admin/users/'
     | '/api/public/payment/webhook'
+    | '/lovable/email/auth/preview'
+    | '/lovable/email/auth/webhook'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -921,6 +945,8 @@ export interface RootRouteChildren {
   PaymentSuccessRoute: typeof PaymentSuccessRoute
   ApiPublicMonobankWebhookRoute: typeof ApiPublicMonobankWebhookRoute
   ApiPublicPaymentWebhookRoute: typeof ApiPublicPaymentWebhookRoute
+  LovableEmailAuthPreviewRoute: typeof LovableEmailAuthPreviewRoute
+  LovableEmailAuthWebhookRoute: typeof LovableEmailAuthWebhookRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1422,6 +1448,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminUsersUserIdRouteImport
       parentRoute: typeof AdminUsersRoute
     }
+    '/lovable/email/auth/webhook': {
+      id: '/lovable/email/auth/webhook'
+      path: '/lovable/email/auth/webhook'
+      fullPath: '/lovable/email/auth/webhook'
+      preLoaderRoute: typeof LovableEmailAuthWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lovable/email/auth/preview': {
+      id: '/lovable/email/auth/preview'
+      path: '/lovable/email/auth/preview'
+      fullPath: '/lovable/email/auth/preview'
+      preLoaderRoute: typeof LovableEmailAuthPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/payment/webhook': {
       id: '/api/public/payment/webhook'
       path: '/api/public/payment/webhook'
@@ -1624,6 +1664,8 @@ const rootRouteChildren: RootRouteChildren = {
   PaymentSuccessRoute: PaymentSuccessRoute,
   ApiPublicMonobankWebhookRoute: ApiPublicMonobankWebhookRoute,
   ApiPublicPaymentWebhookRoute: ApiPublicPaymentWebhookRoute,
+  LovableEmailAuthPreviewRoute: LovableEmailAuthPreviewRoute,
+  LovableEmailAuthWebhookRoute: LovableEmailAuthWebhookRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
