@@ -154,11 +154,7 @@ export async function lookupDiscountPromo(input: {
       }
     } else if (data) {
       if (data.kind !== "discount") {
-        return { ok: false, error: "Unlock promocodes are no longer supported. Use a 15% discount code at checkout." };
-      }
-      // 15% discount codes are single-use: used_at means another account already claimed it.
-      if (data.used_at && data.used_by !== input.userId) {
-        return { ok: false, error: "This promocode has already been used." };
+        return { ok: false, error: "This promocode unlocks Full Course — redeem it in the Promo tab." };
       }
 
       if (isExpired(data.expires_at)) {
@@ -168,19 +164,26 @@ export async function lookupDiscountPromo(input: {
       if (!pct || pct <= 0) {
         return { ok: false, error: "This promocode is invalid." };
       }
-      // Single-use by default (max_uses null → 1). Same claiming user is allowed above via used_by.
-      const maxUses = data.max_uses == null ? 1 : data.max_uses;
-      if (maxUses > 0 && !(data.used_at && data.used_by === input.userId)) {
-        const { count, error: countError } = await supabaseAdmin
-          .from("promo_usages")
-          .select("id", { count: "exact", head: true })
-          .eq("promocode_id", data.id);
-        if (countError) {
-          console.error("lookupDiscountPromo count", countError);
-          return { ok: false, error: "Could not verify promocode. Try again." };
-        }
-        if ((count ?? 0) >= maxUses) {
+
+      // max_uses NULL = unlimited. max_uses = 1 = single-use.
+      // Single-use codes set used_at on Apply; same claiming user may keep sticky price.
+      const isUnlimited = data.max_uses == null;
+      if (!isUnlimited) {
+        if (data.used_at && data.used_by !== input.userId) {
           return { ok: false, error: "This promocode has already been used." };
+        }
+        if (!(data.used_at && data.used_by === input.userId)) {
+          const { count, error: countError } = await supabaseAdmin
+            .from("promo_usages")
+            .select("id", { count: "exact", head: true })
+            .eq("promocode_id", data.id);
+          if (countError) {
+            console.error("lookupDiscountPromo count", countError);
+            return { ok: false, error: "Could not verify promocode. Try again." };
+          }
+          if ((count ?? 0) >= (data.max_uses ?? 1)) {
+            return { ok: false, error: "This promocode has already been used." };
+          }
         }
       }
       const applies =
@@ -239,8 +242,8 @@ export async function lookupDiscountPromo(input: {
   return { ok: false, error: "This promocode is invalid or has already been used." };
 }
 
-// On Apply: bind sticky discount forever on this account and consume the code
-// globally (15% codes are single-use). Unlock/full-course free codes are removed.
+// On Apply: bind sticky discount forever on this account.
+// Single-use codes (max_uses=1) are consumed globally; unlimited codes (max_uses NULL) stay reusable.
 
 export type MyDiscountClaimResult =
   | { ok: true; code: string; discountPct: number }
@@ -250,6 +253,7 @@ async function resolvePromoRowForClaim(code: string): Promise<{
   id: string | null;
   code: string;
   discountPct: number;
+  maxUses: number | null;
 } | null> {
   const normalized = normalizeCode(code);
   const looked = await lookupDiscountPromo({ code: normalized });
@@ -259,13 +263,18 @@ async function resolvePromoRowForClaim(code: string): Promise<{
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data } = await supabaseAdmin
       .from("promocodes")
-      .select("id")
+      .select("id, max_uses")
       .eq("code", looked.code)
       .eq("kind", "discount")
       .maybeSingle();
-    return { id: data?.id ?? null, code: looked.code, discountPct: looked.discountPct };
+    return {
+      id: data?.id ?? null,
+      code: looked.code,
+      discountPct: looked.discountPct,
+      maxUses: data?.max_uses ?? null,
+    };
   } catch {
-    return { id: null, code: looked.code, discountPct: looked.discountPct };
+    return { id: null, code: looked.code, discountPct: looked.discountPct, maxUses: null };
   }
 }
 
@@ -290,8 +299,10 @@ export async function claimDiscountForUser(input: {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const usedAt = new Date().toISOString();
 
-    // Consume the code globally (single-use). Same user may re-apply their own claim.
-    if (row.id) {
+    // Single-use codes (max_uses = 1): consume globally via used_at.
+    // Unlimited codes (max_uses NULL): never set used_at — reusable by everyone.
+    const isSingleUse = row.maxUses != null && row.maxUses <= 1;
+    if (row.id && isSingleUse) {
       const { data: consumed, error: consumeError } = await supabaseAdmin
         .from("promocodes")
         .update({
@@ -531,7 +542,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
       return { ok: false, error: "Enter a promocode." };
     }
 
-    // Unlock / free full-course codes are removed. Only 15% checkout discounts remain.
+    // Discount codes are applied at checkout, not as free unlocks.
     const discount = await lookupDiscountPromo({ code, userId });
     if (discount.ok) {
       return {
@@ -540,11 +551,94 @@ export const redeemPromocode = createServerFn({ method: "POST" })
       };
     }
 
-    return {
-      ok: false,
-      error: "Unlock promocodes are no longer available. Use a 15% discount code at checkout.",
-    };
+    const usedAt = new Date().toISOString();
+    const { data: claimed, error: claimError } = await supabaseAdmin
+      .from("promocodes")
+      .update({
+        used_at: usedAt,
+        used_by: userId,
+        used_by_email: email,
+      })
+      .eq("code", code)
+      .eq("kind", "unlock")
+      .is("used_at", null)
+      .select("id, code, product_slug")
+      .maybeSingle();
+
+    if (claimError) {
+      console.error("promo claim", claimError);
+      if (isMissingRelationError(claimError)) {
+        return { ok: false, error: MIGRATION_HINT };
+      }
+      // Pre-migration schemas have no `kind` column — retry without kind filter.
+      const { data: claimedLegacy, error: legacyError } = await supabaseAdmin
+        .from("promocodes")
+        .update({
+          used_at: usedAt,
+          used_by: userId,
+          used_by_email: email,
+        })
+        .eq("code", code)
+        .is("used_at", null)
+        .select("id, code, product_slug")
+        .maybeSingle();
+      if (legacyError) {
+        return { ok: false, error: "Could not verify promocode. Try again." };
+      }
+      if (!claimedLegacy) {
+        return {
+          ok: false,
+          error: "This promocode is invalid or has already been used.",
+        };
+      }
+      return await enrollFromClaim(supabaseAdmin, claimedLegacy, userId, attemptRow.id);
+    }
+
+    if (!claimed) {
+      return {
+        ok: false,
+        error: "This promocode is invalid or has already been used.",
+      };
+    }
+
+    return await enrollFromClaim(supabaseAdmin, claimed, userId, attemptRow.id);
   });
+
+async function enrollFromClaim(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  supabaseAdmin: any,
+  claimed: { id: string; code: string; product_slug: string },
+  userId: string,
+  attemptId: string,
+): Promise<PromoRedeemResult> {
+  const { slug, meta } = resolveCatalog(claimed.product_slug);
+
+  const { error: enrollError } = await supabaseAdmin.from("enrollments").upsert(
+    {
+      user_id: userId,
+      product_slug: slug,
+      product_name: meta.name,
+      tier: meta.tier,
+    },
+    { onConflict: "user_id,product_slug" },
+  );
+
+  if (enrollError) {
+    console.error("promo enroll", enrollError);
+    await supabaseAdmin
+      .from("promocodes")
+      .update({ used_at: null, used_by: null, used_by_email: null })
+      .eq("id", claimed.id);
+    return { ok: false, error: "Could not unlock access. Try again." };
+  }
+
+  await supabaseAdmin
+    .from("promo_redeem_attempts")
+    .update({ success: true })
+    .eq("id", attemptId);
+
+  return { ok: true, href: meta.href };
+}
 
 export const adminListPromocodes = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
@@ -631,10 +725,11 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
 
       let status: AdminPromocodeRow["status"];
       if (kind === "discount") {
-        // 15% codes are single-use: used_at or usage count marks them used.
-        const maxUses = row.max_uses == null ? 1 : row.max_uses;
-        if (row.used_at || usages.length >= maxUses) status = "used";
-        else if (isExpired(row.expires_at)) status = "expired";
+        // NULL max_uses = unlimited (active while not expired).
+        // max_uses = 1 = single-use (used_at / usage count).
+        if (isExpired(row.expires_at)) status = "expired";
+        else if (row.max_uses == null) status = "active";
+        else if (row.used_at || usages.length >= row.max_uses) status = "used";
         else status = "active";
       } else {
         status = row.used_at ? "used" : "available";
@@ -681,10 +776,8 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
       return a.code.localeCompare(b.code);
     });
 
-    // Unlock/full-course free codes are retired — only show discount codes.
-    const discountCodes = codes.filter((c) => c.kind === "discount");
-    const used = discountCodes.filter((c) => c.status === "used").length;
-    const available = discountCodes.filter((c) => c.status === "active").length;
-    const activeDiscounts = available;
-    return { ok: true, codes: discountCodes, available, used, activeDiscounts };
+    const used = codes.filter((c) => c.kind === "unlock" && c.status === "used").length;
+    const available = codes.filter((c) => c.kind === "unlock" && c.status === "available").length;
+    const activeDiscounts = codes.filter((c) => c.kind === "discount" && c.status === "active").length;
+    return { ok: true, codes, available, used, activeDiscounts };
   });

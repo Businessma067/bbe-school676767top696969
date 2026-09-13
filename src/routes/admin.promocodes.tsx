@@ -80,12 +80,12 @@ function AdminPromocodesPage() {
 
       <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Total codes" value={codes.length || "—"} />
-        <StatCard label="Discounts available" value={loading ? "…" : available} hint="Single-use 15% codes left" />
-        <StatCard label="Discounts used" value={loading ? "…" : used} hint="Already redeemed" />
+        <StatCard label="Unlock available" value={loading ? "…" : available} hint="One-time free Full Course unlocks" />
+        <StatCard label="Unlock used" value={loading ? "…" : used} hint="Already claimed" />
         <StatCard
           label="Active discounts"
           value={loading ? "…" : activeDiscounts}
-          hint="Active single-use 15% codes"
+          hint="Active 15% codes (∞ or once)"
         />
       </div>
 
@@ -113,7 +113,7 @@ function AdminPromocodesPage() {
                   {c.discountPct ?? 15}% off · {courseLabel(c.productSlug)}
                 </span>
               ) : (
-                <span className="text-xs font-semibold">Retired unlock · {courseLabel(c.productSlug)}</span>
+                <span className="text-xs font-semibold">Unlock · {courseLabel(c.productSlug)}</span>
               ),
             status: <StatusBadge status={c.status} />,
             uses:

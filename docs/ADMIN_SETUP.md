@@ -43,8 +43,12 @@ Run after the base promocodes migration:
 
 `supabase/migrations/20260907180000_discount_promocodes.sql`
 
-Adds `BBE-15-*` codes (15% off Lite + Full). They are **single-use**: on Apply the code is consumed, that account forever keeps the discounted price, and other accounts cannot reuse it.
+Run also:
 
-Unlock / free full-course codes (`BBE-FREE-*`) and 30% full-only codes are removed. Run:
+`supabase/migrations/20260913240000_seed_15pct_infinite_and_single_plus_unlocks.sql`
 
-`supabase/migrations/20260913230000_single_use_discounts_remove_unlocks.sql`
+Seeds **5 unlimited** 15% codes (`BBE-15U-*`), **20 single-use** 15% codes (`BBE-15S-*`), and restores **Full Course unlock** codes (`BBE-FREE-*`).
+
+- Unlimited 15%: reusable by many accounts; each account locks the discounted price after Apply.
+- Single-use 15%: first Apply consumes the code globally.
+- Unlock: one-time free Full Course enrollment via the Promo tab.

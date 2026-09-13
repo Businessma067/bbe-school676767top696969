@@ -47,18 +47,37 @@ export type HardcodedDiscountPromo = {
 
 const DISCOUNT_15_EXPIRES = "2026-12-06T23:59:59+00:00";
 
-/** 15% single-use codes (also seeded in supabase/migrations/20260907180000_discount_promocodes.sql). */
-const BBE_15_CODES = [
-  "BBE-15-7A3DCE",
-  "BBE-15-D4ED00",
-  "BBE-15-BDFD7A",
-  "BBE-15-365CF4",
-  "BBE-15-C0D548",
-  "BBE-15-CA5B41",
-  "BBE-15-A3466D",
-  "BBE-15-0D260B",
-  "BBE-15-10C6E9",
-  "BBE-15-CA3022",
+/** Unlimited 15% codes (max_uses NULL in DB). */
+const BBE_15_UNLIMITED_CODES = [
+  "BBE-15U-A7K2M9",
+  "BBE-15U-B3N8Q1",
+  "BBE-15U-C5P4R6",
+  "BBE-15U-D9T2W4",
+  "BBE-15U-E1X7Y3",
+] as const;
+
+/** Single-use 15% codes (max_uses = 1 in DB). */
+const BBE_15_SINGLE_CODES = [
+  "BBE-15S-F2H8J4",
+  "BBE-15S-G6K1L9",
+  "BBE-15S-H3M5N7",
+  "BBE-15S-J8P2Q6",
+  "BBE-15S-K4R9T1",
+  "BBE-15S-L7V3W5",
+  "BBE-15S-M1X6Y8",
+  "BBE-15S-N9A2B4",
+  "BBE-15S-P5C8D3",
+  "BBE-15S-Q2E7F9",
+  "BBE-15S-R6G1H4",
+  "BBE-15S-S3J8K2",
+  "BBE-15S-T9L4M7",
+  "BBE-15S-V1N5P8",
+  "BBE-15S-W4Q6R2",
+  "BBE-15S-X8S1T5",
+  "BBE-15S-Y2U7V9",
+  "BBE-15S-Z5W3X6",
+  "BBE-15S-A8Y1B7",
+  "BBE-15S-C3D9E2",
 ] as const;
 
 export const HARDCODED_DISCOUNT_PROMOS: HardcodedDiscountPromo[] = [
@@ -69,14 +88,22 @@ export const HARDCODED_DISCOUNT_PROMOS: HardcodedDiscountPromo[] = [
     name: "BBE 15% · Legacy",
     expiresAt: null,
   },
-  ...BBE_15_CODES.map((code) => ({
+  ...BBE_15_UNLIMITED_CODES.map((code) => ({
     code,
     discountPct: 15,
     productSlug: "any-paid" as const,
-    name: `BBE 15% · ${code.slice(-6)}`,
+    name: `BBE 15% unlimited · ${code.slice(-6)}`,
     expiresAt: DISCOUNT_15_EXPIRES,
-  }))
+  })),
+  ...BBE_15_SINGLE_CODES.map((code) => ({
+    code,
+    discountPct: 15,
+    productSlug: "any-paid" as const,
+    name: `BBE 15% once · ${code.slice(-6)}`,
+    expiresAt: DISCOUNT_15_EXPIRES,
+  })),
 ];
+
 
 export function isPaidProductSlug(value: string): value is PaidProductSlug {
   return value in PAID_PRODUCTS;
