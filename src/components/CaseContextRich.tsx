@@ -1,4 +1,4 @@
-import { memo, useMemo } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import {
@@ -11,7 +11,6 @@ import {
   LineChart,
   Pie,
   PieChart,
-  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
@@ -22,6 +21,22 @@ import {
   segmentCaseContext,
   type CaseChartSpec,
 } from "@/lib/case-context";
+
+/** Measure parent width so Recharts never mounts at width 0 (common with overflow parents). */
+function useElementWidth<T extends HTMLElement>() {
+  const ref = useRef<T | null>(null);
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const update = () => setWidth(Math.max(0, Math.floor(el.getBoundingClientRect().width)));
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  return { ref, width };
+}
 
 type CaseContextRichProps = {
   content: string;
@@ -121,14 +136,14 @@ function CaseTable({ rows }: { rows: string[][] }) {
   const colCount = Math.max(...rows.map((r) => r.length));
 
   return (
-    <div className="my-4 w-full overflow-x-auto rounded-lg border border-border">
-      <table className="w-full min-w-[28rem] border-collapse text-[13px]">
+    <div className="relative z-0 my-4 w-full max-w-full isolate overflow-x-auto rounded-lg border border-border">
+      <table className="w-full min-w-[20rem] border-collapse text-[13px]">
         <thead className="bg-secondary/70">
           <tr>
             {Array.from({ length: colCount }, (_, i) => (
               <th
                 key={`h-${i}`}
-                className="border-b border-border px-3 py-2 text-left font-semibold text-foreground"
+                className="border-b border-border px-3 py-2 text-left font-semibold text-foreground [overflow-wrap:anywhere] break-words"
               >
                 {cleanCell(header[i] ?? "")}
               </th>
@@ -163,8 +178,8 @@ function CaseTable({ rows }: { rows: string[][] }) {
                   <td
                     key={`c-${ri}-${ci}`}
                     className={cn(
-                      "border-t border-border px-3 py-2 align-top text-foreground/90",
-                      ci > 0 && "tabular-nums",
+                      "max-w-[18rem] border-t border-border px-3 py-2 align-top text-foreground/90 [overflow-wrap:anywhere] break-words whitespace-normal",
+                      ci > 0 && "max-w-[10rem] tabular-nums",
                       totalish && "font-semibold text-foreground",
                     )}
                   >
@@ -182,22 +197,29 @@ function CaseTable({ rows }: { rows: string[][] }) {
 
 const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
   const title = chart.title?.trim();
+  const { ref, width } = useElementWidth<HTMLDivElement>();
 
   if (chart.type === "pie") {
     return <CasePieChart title={title} data={chart.data} />;
   }
 
   const height = 260;
+  const chartWidth = Math.max(width, 280);
 
   return (
-    <div className="my-4 w-full rounded-lg border border-border bg-card/40 p-3 sm:p-4">
+    <div className="relative z-0 my-4 w-full max-w-full isolate rounded-lg border border-border bg-card/40 p-3 sm:p-4">
       {title ? (
         <p className="mb-3 text-sm font-semibold text-foreground">{title}</p>
       ) : null}
-      <div className="w-full" style={{ height }}>
-        <ResponsiveContainer width="100%" height="100%" debounce={80}>
-          {chart.type === "line" ? (
-            <LineChart data={chart.data} margin={{ top: 8, right: 12, left: 0, bottom: 4 }}>
+      <div ref={ref} className="w-full min-w-0 overflow-x-auto" style={{ minHeight: height }}>
+        {width > 0 ? (
+          chart.type === "line" ? (
+            <LineChart
+              width={chartWidth}
+              height={height}
+              data={chart.data}
+              margin={{ top: 8, right: 12, left: 0, bottom: 4 }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="#e8e0d4" />
               <XAxis dataKey="name" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
@@ -216,7 +238,12 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
               ))}
             </LineChart>
           ) : (
-            <BarChart data={chart.data} margin={{ top: 8, right: 12, left: 0, bottom: 4 }}>
+            <BarChart
+              width={chartWidth}
+              height={height}
+              data={chart.data}
+              margin={{ top: 8, right: 12, left: 0, bottom: 4 }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="#e8e0d4" />
               <XAxis dataKey="name" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
@@ -232,8 +259,10 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
                 />
               ))}
             </BarChart>
-          )}
-        </ResponsiveContainer>
+          )
+        ) : (
+          <div style={{ height }} aria-hidden />
+        )}
       </div>
     </div>
   );
@@ -248,7 +277,7 @@ export function CaseContextRich({ content, className, emphasized }: CaseContextR
   return (
     <div
       className={cn(
-        "case-context-rich max-w-full break-words text-sm leading-relaxed text-muted-foreground",
+        "case-context-rich max-w-full space-y-1 break-words text-sm leading-relaxed text-muted-foreground [overflow-wrap:anywhere]",
         "[&_p]:mb-3 [&_p:last-child]:mb-0",
         "[&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5",
         "[&_ol]:my-2 [&_ol]:list-decimal [&_ol]:pl-5",

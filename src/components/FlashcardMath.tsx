@@ -91,8 +91,8 @@ const MathChunk = memo(function MathChunk({
               key={j}
               className={
                 displayMode
-                  ? "flashcard-math-display my-0 block h-auto w-full overflow-x-auto overflow-y-hidden py-1.5 text-center [scrollbar-gutter:auto] [&_.katex]:whitespace-nowrap [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:py-1"
-                  : "mx-0.5 inline-block align-baseline"
+                  ? "flashcard-math-display my-2 block h-auto w-full overflow-x-auto overflow-y-visible py-1.5 text-center [scrollbar-gutter:auto] [&_.katex]:whitespace-nowrap [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-visible [&_.katex-display]:py-1"
+                  : "mx-0.5 inline-block max-w-full align-baseline [overflow-wrap:anywhere]"
               }
               dangerouslySetInnerHTML={{ __html: html }}
             />

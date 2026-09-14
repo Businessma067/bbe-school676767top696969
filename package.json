@@ -104,9 +104,14 @@
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.16"
   },
+  "overrides": {
+    "@react-email/render": {
+      "entities": "4.5.0"
+    }
+  },
   "pnpm": {
     "overrides": {
-      "entities": "4.5.0"
+      "@react-email/render>entities": "4.5.0"
     }
   }
 }
