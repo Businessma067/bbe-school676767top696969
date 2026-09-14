@@ -1,7 +1,6 @@
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
-import { ExplanationText } from "@/components/ExplanationText";
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { MathMarkdownTable } from "@/components/mock-exam/MathMarkdownTable";
 import { scrubStatementHints } from "@/lib/case-context";
@@ -95,10 +94,9 @@ export function ExamExplanationText({
     );
   }
   const cleaned = cleanExplanation(text);
-  if (q.subject === "english") {
-    return <ExplanationProse text={cleaned} className={className} />;
-  }
-  return <ExplanationText text={cleaned} className={className} />;
+  // Economics explanations use $$…$$ KaTeX (ratios, EPS, P/E, …). ExplanationText
+  // is plain prose and left raw $$ visible — always go through ExplanationProse.
+  return <ExplanationProse text={cleaned} className={className} />;
 }
 
 export function ExamSolutionOverview({

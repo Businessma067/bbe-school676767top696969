@@ -435,10 +435,9 @@ export function segmentCaseContext(raw: string): CaseContextSegment[] {
       const chart = parseChartBody(open.type, body);
       chart.title = open.title;
       if (chart.data.length > 0) {
+        // Chart only — do not auto-inject a Month/Price table (stock tasks keep
+        // their separate key-figure table in the stem).
         segments.push({ kind: "chart", chart });
-        // Always pair line/bar charts with a readable data table (stock prices etc.).
-        const companion = chartToTableRows(chart);
-        if (companion) pushTable(companion);
       } else if (body.length > 0) {
         // Chart failed to parse — fall back so students still see the numbers.
         buf.push(...body);

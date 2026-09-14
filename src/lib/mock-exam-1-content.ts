@@ -104,7 +104,7 @@ export const MOCK_EXAM_1_POINTS_TOTAL =
   MOCK_EXAM_1_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 /** Bump when Mock 1 bank content changes — shown in UI so Lovable preview sync can be verified. */
-export const MOCK_EXAM_1_CONTENT_REV = "2026-09-14i · 34q · Voyager · wider share swings";
+export const MOCK_EXAM_1_CONTENT_REV = "2026-09-14j · 34q · Voyager · katex+no-price-table";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
