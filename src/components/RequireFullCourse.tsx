@@ -65,7 +65,7 @@ export function RequireFullCourse({
           // unmount the current route match while React is still rendering it.
           requestAnimationFrame(() => {
             requestAnimationFrame(() => {
-              void navigate;
+              navigate({ to: "/login", replace: true });
             });
           });
         }
