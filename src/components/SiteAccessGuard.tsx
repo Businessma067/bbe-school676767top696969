@@ -4,6 +4,7 @@ import { fetchAccessState } from "@/lib/entitlements";
 import { requiredTierForPath } from "@/lib/site-access";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
+import { requestLoginRedirect } from "@/lib/auth-redirect";
 
 /**
  * Belt-and-suspenders guard for paid study paths.
@@ -25,11 +26,7 @@ export function SiteAccessGuard() {
       const state = await fetchAccessState();
       if (cancelled) return;
       if (!state.signedIn) {
-        // Defer past hydration: navigating while the router is still building
-        // its match tree tears down the current match mid-render.
-        setTimeout(() => {
-          console.log("GUARD_SAG_REDIRECT");
-        }, 0);
+        requestLoginRedirect(navigate);
       }
     })();
 

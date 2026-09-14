@@ -11,6 +11,7 @@ import {
   type AccessTier,
 } from "@/lib/entitlements";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { requestLoginRedirect } from "@/lib/auth-redirect";
 
 function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, signedIn: boolean) {
   if (!signedIn) return false;
@@ -59,16 +60,7 @@ export function RequireFullCourse({
 
       if (!state.signedIn) {
         setStatus("login");
-        if (!redirectedRef.current) {
-          redirectedRef.current = true;
-          // Defer out of the effect commit: navigating synchronously here can
-          // unmount the current route match while React is still rendering it.
-          requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-              console.log("GUARD_RFC_REDIRECT");
-            });
-          });
-        }
+        requestLoginRedirect(navigate);
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
