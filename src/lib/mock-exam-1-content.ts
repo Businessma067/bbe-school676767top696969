@@ -12,7 +12,7 @@ import {
   MATH_POINTS_PER_TASK,
   SCORING_CONFIG,
 } from "@/config/scoring-config";
-import { scrubStatementHints } from "@/lib/case-context";
+import { normalizeCaseContext, scrubStatementHints } from "@/lib/case-context";
 import type { ExamQuestion } from "@/lib/mock-exams";
 
 type SourcedTask = {
@@ -104,7 +104,7 @@ export const MOCK_EXAM_1_POINTS_TOTAL =
   MOCK_EXAM_1_MATH_POINTS.reduce((a, b) => a + b, 0);
 
 /** Bump when Mock 1 bank content changes — shown in UI so Lovable preview sync can be verified. */
-export const MOCK_EXAM_1_CONTENT_REV = "2026-09-14e · 34q · Voyager · CF+stock · fmt";
+export const MOCK_EXAM_1_CONTENT_REV = "2026-09-14f · 34q · Voyager · tables+chart";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
@@ -174,7 +174,9 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
         index,
         subject: "economics",
         maxPoints: SCORING_CONFIG.economics.defaultMaxPerTask,
-        stem: scrubStatementHints((task.context ?? "").trim() || task.title || `Task ${index}`),
+        // normalizeCaseContext keeps table/chart structure; never scrub the whole blob
+        // with whitespace collapse or [[CHART]] / pipe tables get smashed into one line.
+        stem: normalizeCaseContext((task.context ?? "").trim() || task.title || `Task ${index}`),
         statements: task.statements ?? [],
         answerKey: task.answer_key ?? [],
         explanations: task.tactical_explanations ?? [],

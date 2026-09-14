@@ -35,8 +35,10 @@ export function scrubStatementHints(text: string): string {
     .replace(/\bEBITDA\b/g, "operating result before depreciation and amortisation")
     .replace(/\bROCE\b/g, "return on capital employed")
     .replace(/\bROE\b/g, "return on equity")
-    .replace(/\s{2,}/g, " ")
-    .replace(/\s+([.,;:])/g, "$1")
+    // Preserve newlines — collapsing \s would smash [[CHART]] blocks and markdown tables.
+    .replace(/[^\S\n]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .replace(/[^\S\n]+([.,;:])/g, "$1")
     .trim();
 }
 
@@ -111,6 +113,7 @@ function isSeparatorRow(cells: string[]): boolean {
 
 function isTableLine(line: string): boolean {
   const t = line.trim();
+  // Require a leading pipe so chart rows like `Jan | Price=16.50` stay out of tables.
   return t.startsWith("|") && t.includes("|", 1);
 }
 

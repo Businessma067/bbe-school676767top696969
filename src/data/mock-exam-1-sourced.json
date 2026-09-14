@@ -5,7 +5,7 @@
       "title": "Misunderstanding opportunity cost",
       "subsection": "2.2",
       "chapter": 2,
-      "context": "Robin claims that opportunity cost is the sum of every rejected option's price. Sara chooses between a €500 washing machine and a €700 laptop. Evaluate the following economic assertions:",
+      "context": "Robin claims that opportunity cost is the sum of every rejected option's price. Sara chooses between a €500 washing machine and a €700 laptop. Evaluate the following economic assertions:\n",
       "statements": [
         "If Sara buys the laptop, opportunity cost is the washer's benefit forgone, not all rejected purchases combined.",
         "Robin's sum-of-all-rejected definition matches the standard economic definition exactly.",
@@ -34,7 +34,7 @@
       "title": "Prices of Substitute Goods",
       "subsection": "2.6",
       "chapter": 2,
-      "context": "Analyze how the price of substitute goods shifts demand for a related product. Evaluate the following economic assertions:",
+      "context": "Analyze how the price of substitute goods shifts demand for a related product. Evaluate the following economic assertions:\n",
       "statements": [
         "Firms monitor substitute pricing because cross-price shifts alter their equilibrium sales.",
         "Substitute price changes shift demand rather than causing movement along the demand curve.",
@@ -63,7 +63,7 @@
       "title": "Secondary Manufacturing",
       "subsection": "3.2",
       "chapter": 3,
-      "context": "Review what counts as secondary-sector manufacturing. Evaluate the following economic assertions:",
+      "context": "Review what counts as secondary-sector manufacturing. Evaluate the following economic assertions:\n",
       "statements": [
         "Retail sale of finished jackets is tertiary distribution or trade.",
         "Warehousing steel before welding is a tertiary logistics service.",
@@ -92,7 +92,7 @@
       "title": "Partnership Financial Resources",
       "subsection": "4.2",
       "chapter": 4,
-      "context": "Analyze how the financial aspects of partnerships compare with those of sole proprietors when raising funds and offering collateral. Evaluate the following economic assertions:",
+      "context": "Analyze how the financial aspects of partnerships compare with those of sole proprietors when raising funds and offering collateral. Evaluate the following economic assertions:\n",
       "statements": [
         "All partners in a limited partnership share equal unlimited liability because the firm remains unincorporated.",
         "In difficult situations partners can exchange ideas and perhaps make better decisions.",
@@ -121,7 +121,7 @@
       "title": "Interaction of Price and Promotion",
       "subsection": "5.7",
       "chapter": 5,
-      "context": "Review product-mix decisions and portfolio labels for consumer brands. Evaluate the following economic assertions:",
+      "context": "Review product-mix decisions and portfolio labels for consumer brands. Evaluate the following economic assertions:\n",
       "statements": [
         "Refreshing skincare creams packaging colours without changing the core formula is a relaunch within product-mix alteration.",
         "Removing an underperforming skincare creams variant from the range reflects contraction in the product-mix strategy.",
@@ -150,7 +150,7 @@
       "title": "Liquidity From the Balance Sheet 30",
       "subsection": "6.1",
       "chapter": 6,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | 977 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | 339 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | 638 |\n\nEvaluate the following economic assertions:",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | 977 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | 339 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | 638 |\n\nEvaluate the following economic assertions:\n",
       "statements": [
         "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
         "The current ratio exceeds 1.31.",
@@ -179,7 +179,7 @@
       "title": "Return and Cash Flow Extract 3",
       "subsection": "6.3",
       "chapter": 6,
-      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 461 |\n| Machinery | 162 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 84 |\n| Inventory | 223 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 119 |\n| Total assets | 1235 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 166 |\n| Retained earnings | 570 |\n| Total equity | 736 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 227 |\n| Bonds payable | 79 |\n| Trade payables | 145 |\n| Bank overdraft | 48 |\n| Total liabilities | 499 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 176 |\n| Cash flow from investing activities | (267) |\n| Cash flow from financing activities | 61 |\n\nEvaluate the following economic assertions:",
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 461 |\n| Machinery | 162 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 84 |\n| Inventory | 223 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 119 |\n| Total assets | 1235 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 166 |\n| Retained earnings | 570 |\n| Total equity | 736 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 227 |\n| Bonds payable | 79 |\n| Trade payables | 145 |\n| Bank overdraft | 48 |\n| Total liabilities | 499 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 176 |\n| Cash flow from investing activities | (267) |\n| Cash flow from financing activities | 61 |\n\nEvaluate the following economic assertions:\n",
       "statements": [
         "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
         "Return on equity exceeds 35.1%.",
@@ -208,7 +208,7 @@
       "title": "Short-Term Borrowing and Working Capital in Practice",
       "subsection": "6.5",
       "chapter": 6,
-      "context": "Review how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:",
+      "context": "Review how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:\n",
       "statements": [
         "The equity ratio for a supermarket chain expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
         "If a supermarket chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
@@ -237,7 +237,7 @@
       "title": "Cash Flow Mix Over Two Years 45",
       "subsection": "6.2",
       "chapter": 6,
-      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:",
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:\n",
       "statements": [
         "Cash flow from operating activities grew by more than 19.1% from Year 1 to Year 2.",
         "Buying plant, machinery or another long-term asset for cash is classified as cash flow from investing activities.",
@@ -266,7 +266,7 @@
       "title": "Share Price Chart — Market Cap, P/E and Turnover",
       "subsection": "6.5",
       "chapter": 6,
-      "context": "NordPeak AG is listed on the Vienna Stock Exchange. At the latest closing price the company has 12 million shares outstanding. Earnings for the last financial year were €18.0 million, and 4.8 million shares changed hands on the exchange over the same year.\n\n[[CHART type=\"line\" title=\"NordPeak AG closing share price (€)\"]]\nJan | Price=16.50\nFeb | Price=17.20\nMar | Price=18.40\nApr | Price=17.80\nMay | Price=19.10\nJun | Price=20.40\nJul | Price=21.00\nAug | Price=22.50\nSep | Price=21.80\nOct | Price=23.20\nNov | Price=24.00\nDec | Price=24.50\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Closing share price (Dec) | €24.50 |\n| Shares outstanding | 12,000,000 |\n| Annual earnings | €18,000,000 |\n| Annual shares traded | 4,800,000 |\n\nEvaluate the following economic assertions:",
+      "context": "NordPeak AG is listed on the Vienna Stock Exchange. At the latest closing price the company has 12 million shares outstanding. Earnings for the last financial year were €18.0 million, and 4.8 million shares changed hands on the exchange over the same year.\n\n[[CHART type=\"line\" title=\"NordPeak AG closing share price (€)\"]]\nJan | Price=16.50\nFeb | Price=17.20\nMar | Price=18.40\nApr | Price=17.80\nMay | Price=19.10\nJun | Price=20.40\nJul | Price=21.00\nAug | Price=22.50\nSep | Price=21.80\nOct | Price=23.20\nNov | Price=24.00\nDec | Price=24.50\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Closing share price (Dec) | €24.50 |\n| Shares outstanding | 12,000,000 |\n| Annual earnings | €18,000,000 |\n| Annual shares traded | 4,800,000 |\n\nEvaluate the following economic assertions:\n",
       "statements": [
         "At the December close, NordPeak's market capitalisation exceeds €290 million.",
         "Earnings per share for the year are less than €1.40.",
