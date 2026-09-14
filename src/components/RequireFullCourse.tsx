@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { useRouterState } from "@tanstack/react-router";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import {
   CourseLockedView,
   courseLockFeatureForPath,
@@ -10,8 +11,7 @@ import {
   tierAtLeast,
   type AccessTier,
 } from "@/lib/entitlements";
-import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
-import { requestLoginRedirect } from "@/lib/auth-redirect";
+import { registerLoginGate } from "@/lib/auth-redirect";
 
 function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, signedIn: boolean) {
   if (!signedIn) return false;
@@ -38,7 +38,6 @@ export function RequireFullCourse({
   /** "none" = any signed-in user, "lite" = Lite or Full, "full" = Full only. */
   minTier?: AccessTier;
 }) {
-  const navigate = useLocalizedNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const cached = peekAccessState();
   const [status, setStatus] = useState<GateStatus>(() => {
@@ -50,6 +49,10 @@ export function RequireFullCourse({
     return isAllowedForTier(cached.tier, minTier, cached.signedIn) ? "allowed" : "checking";
   });
 
+  // While this gate is mounted the global guard must not navigate: we render
+  // the sign-in prompt in place instead of yanking the router mid-render.
+  useEffect(() => registerLoginGate(), []);
+
   useEffect(() => {
     let cancelled = false;
 
@@ -59,7 +62,6 @@ export function RequireFullCourse({
 
       if (!state.signedIn) {
         setStatus("login");
-        requestLoginRedirect(navigate);
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
@@ -72,10 +74,31 @@ export function RequireFullCourse({
     return () => {
       cancelled = true;
     };
-  }, [navigate, minTier, pathname]);
+  }, [minTier, pathname]);
 
   if (status === "allowed") {
     return <>{children}</>;
+  }
+
+  if (status === "login") {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-6">
+        <div className="max-w-sm text-center">
+          <h1 className="text-xl font-semibold tracking-tight text-foreground">
+            Sign in to continue
+          </h1>
+          <p className="mt-2 text-sm text-muted-foreground">
+            This part of the course is available to signed-in students.
+          </p>
+          <LocalizedLink
+            to="/login"
+            className="mt-6 inline-flex rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
+          >
+            Sign in
+          </LocalizedLink>
+        </div>
+      </div>
+    );
   }
 
   if (status === "locked") {
