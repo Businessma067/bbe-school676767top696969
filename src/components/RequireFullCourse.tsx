@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import {
   CourseLockedView,
@@ -39,7 +39,6 @@ export function RequireFullCourse({
   minTier?: AccessTier;
 }) {
   const navigate = useLocalizedNavigate();
-  const redirectedRef = useRef(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const cached = peekAccessState();
   const [status, setStatus] = useState<GateStatus>(() => {
