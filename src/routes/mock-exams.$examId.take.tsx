@@ -652,22 +652,14 @@ function TakeExamPage() {
 
           <div
             className={cn(
-              "relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm",
+              "relative overflow-x-auto overflow-y-visible rounded-2xl border border-border bg-card shadow-sm",
               annotationMode && "select-none ring-2 ring-caramel-deep/40",
             )}
           >
-            <div className="relative p-5 sm:p-8 lg:p-10">
-              {q.subtopicTag ? (
-                <p className="mb-3 text-xs font-medium text-muted-foreground">{q.subtopicTag}</p>
-              ) : null}
+            <div className="relative isolate z-0 min-w-0 p-5 sm:p-8 lg:p-10">
               <ExamQuestionBody q={q} emphasized />
 
               <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-                <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
-                  <span className="w-6 text-center">#</span>
-                  <span className="flex-1">Statement</span>
-                  <span className="w-11 text-center lg:w-14">True</span>
-                </li>
                 {q.statements.map((s, i) => {
                   const marked = currentMarks[i] === true;
                   return (
@@ -701,12 +693,6 @@ function TakeExamPage() {
                   );
                 })}
               </ol>
-
-              <p className="mt-4 text-xs text-muted-foreground">
-                Mark True next to each statement. Answers stay hidden until you finish.
-                {usesAnswerSheet ? " The optical sheet on the right keeps the same marks." : ""}
-                {answered ? " This question has marks saved." : " No marks yet."}
-              </p>
             </div>
 
             <AnnotationLayer

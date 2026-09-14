@@ -150,7 +150,7 @@
       "title": "Liquidity From the Balance Sheet 30",
       "subsection": "6.1",
       "chapter": 6,
-      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | 977 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | 339 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | 638 |\n\nEvaluate the following economic assertions:\n",
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 389 |\n| Machinery | 221 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 27 |\n| Inventory | 152 |\n| Trade receivables | 68 |\n| Cash and cash equivalents | 44 |\n| Total assets | 977 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 212 |\n| Retained earnings | 127 |\n| Total equity | 339 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 448 |\n| Bonds payable | 43 |\n| Trade payables | 120 |\n| Bank overdraft | 27 |\n| Total liabilities | 638 |\n\nEvaluate the following economic assertions:",
       "statements": [
         "The same physical item can be inventory for a dealer that holds it for sale and a non-current asset for a business that uses it in operations.",
         "The current ratio exceeds 1.31.",
@@ -179,7 +179,7 @@
       "title": "Return and Cash Flow Extract 3",
       "subsection": "6.3",
       "chapter": 6,
-      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 461 |\n| Machinery | 162 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 84 |\n| Inventory | 223 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 119 |\n| Total assets | 1235 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 166 |\n| Retained earnings | 570 |\n| Total equity | 736 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 227 |\n| Bonds payable | 79 |\n| Trade payables | 145 |\n| Bank overdraft | 48 |\n| Total liabilities | 499 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 176 |\n| Cash flow from investing activities | (267) |\n| Cash flow from financing activities | 61 |\n\nEvaluate the following economic assertions:\n",
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 461 |\n| Machinery | 162 |\n| Office equipment | 73 |\n| Patents, trademarks and licences | 84 |\n| Inventory | 223 |\n| Trade receivables | 113 |\n| Cash and cash equivalents | 119 |\n| Total assets | 1235 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 166 |\n| Retained earnings | 570 |\n| Total equity | 736 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 227 |\n| Bonds payable | 79 |\n| Trade payables | 145 |\n| Bank overdraft | 48 |\n| Total liabilities | 499 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 192 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 176 |\n| Cash flow from investing activities | (267) |\n| Cash flow from financing activities | 61 |\n\nEvaluate the following economic assertions:",
       "statements": [
         "Buying software with cash always increases total assets because a new asset is added without reducing any other asset.",
         "Return on equity exceeds 35.1%.",
@@ -208,7 +208,7 @@
       "title": "Short-Term Borrowing and Working Capital in Practice",
       "subsection": "6.5",
       "chapter": 6,
-      "context": "Review how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:\n",
+      "context": "Review how return on equity relates profit before interest and tax to the equity that owners have invested in the business. Evaluate the following economic assertions:",
       "statements": [
         "The equity ratio for a supermarket chain expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
         "If a supermarket chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
@@ -237,7 +237,7 @@
       "title": "Cash Flow Mix Over Two Years 45",
       "subsection": "6.2",
       "chapter": 6,
-      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:\n",
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 305 | 354 |\n| Cash flow from investing activities | (346) | (392) |\n| Dividends paid | (58) | (82) |\n| Proceeds from new borrowing | 68 | 32 |\n| Cash flow from financing activities | 10 | (50) |\n\nEvaluate the following economic assertions:",
       "statements": [
         "Cash flow from operating activities grew by more than 19.1% from Year 1 to Year 2.",
         "Buying plant, machinery or another long-term asset for cash is classified as cash flow from investing activities.",
@@ -855,7 +855,7 @@
       ],
       "difficulty_level": "5/5",
       "solution_overview": "The desk sheet prints only five prices and the corresponding revenues, so treat the table as a list of pairs and, behind the scenes, rebuild the hidden quadratic $R(p)=p(8-p)$ that generated them.\n\n$$(1,7),\\;(2,12),\\;(3,15),\\;(4,16),\\;(5,15)$$\n\nNeighbouring gaps of the revenue row are not constant, so the model is not a line; they decrease by $2$ each step, the second-difference signature of a downward parabola.\n\n$$\\mathrm{fir}:\\ 5,\\ 3,\\ 1,\\ -1\\qquad \\mathrm{sec}:\\ -2,\\ -2,\\ -2$$\n\nFor unit spacing that second-difference constant equals $2a$, hence $a=-1$. Matching $R(1)=7$ recovers the factored revenue rule.\n\n$$\nR(p) = p(8-p) = -p^{2}+8p\n$$\n\nA downward parabola has its largest listed value at the vertex, which sits at the midpoint of the roots $0$ and $8$.\n\n$$\n\\mathrm{ver} = \\left(4,16\\right),\\qquad R(3) = R(5) = 15,\\qquad R(2) = 12\n$$\n\nFrom $p=4$ to $p=5$ the listed revenue drops from $16$ to $15$. Revenue therefore does not increase at every step from $1$ to $5$.",
-      "tables_markdown": "| $p$ | 1 | 2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- |\n| $R$ | 7 | 12 | 15 | 16 | 15 |"
+      "tables_markdown": "| $p$ | $R$ |\n| ---: | ---: |\n| 1 | 7 |\n| 2 | 12 |\n| 3 | 15 |\n| 4 | 16 |\n| 5 | 15 |"
     },
     {
       "case_id": "MATH 8.81",
@@ -894,7 +894,7 @@
       "title": "Bicycle Speed: Another Cubic and a Table",
       "chapter": 9,
       "subsection": "9",
-      "context": "A rider's speed in m/s is $$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$ A second rider's distances from the start are tabulated. The second rider finishes $90$ s after the start at $900$ m. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A rider's speed in m/s is\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nA second rider's distances from the start are tabulated. The second rider finishes $90$ s after the start at $900$ m. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The first rider is decelerating at $t=60$.",
         "The second rider's average speed is $36$ km/h.",
@@ -918,7 +918,7 @@
       ],
       "difficulty_level": "4/5",
       "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferentiate $v$; convert the second rider's $900/90$ into km/h.",
-      "tables_markdown": "| Time $t$ in seconds | $0$ | $15$ | $30$ | $45$ | $60$ | $75$ | $90$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Distance in metres | $0$ | $90$ | $210$ | $360$ | $540$ | $750$ | $900$ |"
+      "tables_markdown": "| Time $t$ (s) | Distance (m) |\n| ---: | ---: |\n| 0 | 0 |\n| 15 | 90 |\n| 30 | 210 |\n| 45 | 360 |\n| 60 | 540 |\n| 75 | 750 |\n| 90 | 900 |"
     },
     {
       "case_id": "MATH 10.MOCK.EXP",

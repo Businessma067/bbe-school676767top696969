@@ -285,7 +285,7 @@ function TaskReviewWorkspace({
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
             <span className="font-display text-lg font-semibold tabular-nums">Q{q.index}</span>
             <span className="text-muted-foreground">{sm.label}</span>
-            {q.subtopicTag ? (
+            {current.topicLabel ? (
               <span className="text-muted-foreground">{current.topicLabel}</span>
             ) : null}
             <span className="tabular-nums text-muted-foreground">

@@ -7,6 +7,7 @@
 import { loadEnv } from "vite";
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { sitemapPlugin } from "./vite-plugin-sitemap";
+import { entitiesCompatPlugin } from "./vite-plugin-entities-compat";
 
 // Server routes (email webhooks) need non-VITE_ env vars in process.env.
 const serverEnv = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
@@ -19,7 +20,7 @@ export default defineConfig({
     server: { entry: "server" },
   },
   vite: {
-    plugins: [sitemapPlugin()],
+    plugins: [sitemapPlugin(), entitiesCompatPlugin()],
     build: {
       rollupOptions: {
         output: {
