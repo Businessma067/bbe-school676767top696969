@@ -18,8 +18,7 @@ export function requestLoginRedirect(navigate: NavigateFn) {
   if (window.location.pathname.endsWith("/login")) return;
   pending = true;
 
-  // Defer past the current render/hydration commit.
-  setTimeout(() => {
+  const run = () => {
     try {
       navigate({ to: "/login", replace: true });
     } finally {
@@ -27,5 +26,11 @@ export function requestLoginRedirect(navigate: NavigateFn) {
         pending = false;
       }, 500);
     }
-  }, 0);
+  };
+
+  // Wait for hydration to settle: navigating while React is still hydrating
+  // the initial match tree throws inside the router's MatchView.
+  const schedule = () => setTimeout(run, 0);
+  if (document.readyState === "complete") schedule();
+  else window.addEventListener("load", schedule, { once: true });
 }
