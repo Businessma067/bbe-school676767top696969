@@ -1,6 +1,5 @@
 import { memo, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import {
   Bar,
   BarChart,
@@ -23,13 +22,19 @@ import {
 } from "@/lib/case-context";
 
 /** Measure parent width so Recharts never mounts at width 0 (common with overflow parents). */
+const FALLBACK_CHART_WIDTH = 560;
+
 function useElementWidth<T extends HTMLElement>() {
   const ref = useRef<T | null>(null);
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(FALLBACK_CHART_WIDTH);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const update = () => setWidth(Math.max(0, Math.floor(el.getBoundingClientRect().width)));
+    const update = () => {
+      const measured = Math.floor(el.getBoundingClientRect().width);
+      // Never leave the chart at 0 — collapsed parents used to hide stock charts entirely.
+      setWidth(measured > 0 ? measured : FALLBACK_CHART_WIDTH);
+    };
     update();
     const ro = new ResizeObserver(update);
     ro.observe(el);
@@ -204,7 +209,7 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
   }
 
   const height = 260;
-  const chartWidth = Math.max(width, 280);
+  const chartWidth = Math.max(width || FALLBACK_CHART_WIDTH, 280);
 
   return (
     <div className="relative z-0 my-4 w-full max-w-full isolate rounded-lg border border-border bg-card/40 p-3 sm:p-4">
@@ -212,8 +217,7 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
         <p className="mb-3 text-sm font-semibold text-foreground">{title}</p>
       ) : null}
       <div ref={ref} className="w-full min-w-0 overflow-x-auto" style={{ minHeight: height }}>
-        {width > 0 ? (
-          chart.type === "line" ? (
+        {chart.type === "line" ? (
             <LineChart
               width={chartWidth}
               height={height}
@@ -260,9 +264,7 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
               ))}
             </BarChart>
           )
-        ) : (
-          <div style={{ height }} aria-hidden />
-        )}
+        }
       </div>
     </div>
   );
@@ -299,7 +301,7 @@ export function CaseContextRich({ content, className, emphasized }: CaseContextR
           return <CaseChart key={key} chart={c} />;
         }
         return (
-          <ReactMarkdown key={`m-${idx}`} remarkPlugins={[remarkGfm]}>
+          <ReactMarkdown key={`m-${idx}`}>
             {seg.text}
           </ReactMarkdown>
         );
