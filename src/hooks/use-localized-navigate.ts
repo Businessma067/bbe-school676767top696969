@@ -26,7 +26,6 @@ export function useLocalizedNavigate() {
   return useCallback(
     ({ to, search, replace, hash }: NavigateOpts) => {
       const pathWithHash = hash ? `${to}#${hash}` : to;
-      console.log("LOCNAV", to, new Error().stack);
       const link = getLocaleLinkProps(pathWithHash, effective);
       return navigate({
         to: link.to as never,

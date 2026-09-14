@@ -11,7 +11,6 @@ import {
   tierAtLeast,
   type AccessTier,
 } from "@/lib/entitlements";
-import { registerLoginGate } from "@/lib/auth-redirect";
 
 function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, signedIn: boolean) {
   if (!signedIn) return false;
@@ -48,10 +47,6 @@ export function RequireFullCourse({
     }
     return isAllowedForTier(cached.tier, minTier, cached.signedIn) ? "allowed" : "checking";
   });
-
-  // While this gate is mounted the global guard must not navigate: we render
-  // the sign-in prompt in place instead of yanking the router mid-render.
-  useEffect(() => registerLoginGate(), []);
 
   useEffect(() => {
     let cancelled = false;
