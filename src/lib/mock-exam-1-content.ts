@@ -1,8 +1,9 @@
 /**
- * Curated Mock Exam 1 content (existing bank tasks only):
- * - Economics: 10 cases; calc/accounting claims without formula coaching in statements
- * - English: one passage × 5 text + 3 grammar + 3 vocabulary
- * - Math: hardest existing 5/5 task from each chapter 1–13
+ * Curated Mock Exam 1 content (specified bank + generated tasks):
+ * - Economics → English (Voyager) → Math, in that order
+ * - Economics: chapter-indexed bank cases + one generated share-chart case
+ * - English: Voyager T.16 reading/vocab with passage, then grammar/vocab without
+ * - Math: specified exam-style IDs; ch5 work-rates and ch10 exp/log generated
  */
 
 import sourced from "@/data/mock-exam-1-sourced.json";
@@ -25,6 +26,7 @@ type SourcedTask = {
   answer_key?: boolean[];
   tactical_explanations?: string[];
   kind?: string;
+  with_passage?: boolean;
   difficulty_level?: string;
   solution_overview?: string;
   figure?: string;
@@ -75,19 +77,19 @@ function scrubEconClaim(text: string): string {
     .trim();
 }
 
-/** English points for mock-1 mix: 5 texts + 3 grammar + 3 vocabulary. */
+/** English points: 5 reading + 2 in-passage vocab + 2 grammar + 1 paraphrase vocab + 1 grammar. */
 export const MOCK_EXAM_1_ENGLISH_POINTS = [
   ENGLISH_POINTS_BY_TYPE.text,
   ENGLISH_POINTS_BY_TYPE.text,
   ENGLISH_POINTS_BY_TYPE.text,
   ENGLISH_POINTS_BY_TYPE.text,
   ENGLISH_POINTS_BY_TYPE.text,
-  ENGLISH_POINTS_BY_TYPE.grammar,
+  ENGLISH_POINTS_BY_TYPE.vocabulary,
+  ENGLISH_POINTS_BY_TYPE.vocabulary,
   ENGLISH_POINTS_BY_TYPE.grammar,
   ENGLISH_POINTS_BY_TYPE.grammar,
   ENGLISH_POINTS_BY_TYPE.vocabulary,
-  ENGLISH_POINTS_BY_TYPE.vocabulary,
-  ENGLISH_POINTS_BY_TYPE.vocabulary,
+  ENGLISH_POINTS_BY_TYPE.grammar,
 ] as const;
 
 /** Math: one existing hard task per chapter → first 13 published maxima. */
@@ -184,6 +186,7 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
     const task = bundle.english.tasks[i]!;
     index += 1;
     const kind = task.kind ?? "text";
+    const showPassage = task.with_passage === true || (task.with_passage !== false && kind === "text");
     questions.push(
       fromBankTask({
         examId,
@@ -196,8 +199,8 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
         explanations: task.tactical_explanations ?? [],
         scrub: "soft",
         subtopicTag: task.case_id ?? task.subsection,
-        // Only reading items share the T.15 passage; grammar/vocab are standalone.
-        passage: kind === "text" ? passage : undefined,
+        // Voyager passage only on T.16.01–05 and T.16.08–09.
+        passage: showPassage ? passage : undefined,
       }),
     );
   }
