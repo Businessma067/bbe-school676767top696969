@@ -28,7 +28,7 @@ export function SiteAccessGuard() {
         // Defer past hydration: navigating while the router is still building
         // its match tree tears down the current match mid-render.
         setTimeout(() => {
-          void navigate;
+          console.log("GUARD_SAG_REDIRECT");
         }, 0);
       }
     })();
