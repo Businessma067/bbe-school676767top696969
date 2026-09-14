@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import {
   CourseLockedView,
@@ -38,6 +38,7 @@ export function RequireFullCourse({
   minTier?: AccessTier;
 }) {
   const navigate = useLocalizedNavigate();
+  const redirectedRef = useRef(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const cached = peekAccessState();
   const [status, setStatus] = useState<GateStatus>(() => {
@@ -58,7 +59,14 @@ export function RequireFullCourse({
 
       if (!state.signedIn) {
         setStatus("login");
-        navigate({ to: "/login", replace: true });
+        if (!redirectedRef.current) {
+          redirectedRef.current = true;
+          // Defer out of the effect commit: navigating synchronously here can
+          // unmount the current route match while React is still rendering it.
+          setTimeout(() => {
+            navigate({ to: "/login", replace: true });
+          }, 0);
+        }
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
