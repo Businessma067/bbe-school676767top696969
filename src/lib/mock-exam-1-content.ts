@@ -184,7 +184,6 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
     const task = bundle.english.tasks[i]!;
     index += 1;
     const kind = task.kind ?? "text";
-    const isText = kind === "text";
     questions.push(
       fromBankTask({
         examId,
@@ -197,7 +196,8 @@ export function buildMockExam1Questions(examId = "mock-1"): ExamQuestion[] {
         explanations: task.tactical_explanations ?? [],
         scrub: "soft",
         subtopicTag: task.case_id ?? task.subsection,
-        passage: isText ? passage : undefined,
+        // Only reading items share the T.15 passage; grammar/vocab are standalone.
+        passage: kind === "text" ? passage : undefined,
       }),
     );
   }
