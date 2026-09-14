@@ -23,6 +23,7 @@ export function registerLoginGate() {
 
 export function requestLoginRedirect(navigate: NavigateFn) {
   if (typeof window === "undefined") return;
+  console.log("REDIRECT_REQ gates=", gates);
   if (gates > 0) return;
   if (pending) return;
   if (window.location.pathname.endsWith("/login")) return;
