@@ -197,8 +197,8 @@
       "tactical_explanations": [
         "**A.** → False\n\nPaying cash for software replaces one asset with another when the licence is capitalised, so total assets do not rise. If the outlay is expensed, cash falls and equity falls through profit — assets still do not increase.\n\nSo the statement is False.",
         "**B.** → False\n\n$$\\mathrm{ROE}=\\dfrac{192}{736}\\approx 0.261=26.1\\%$$\n\n$$26.1\\%<35.1\\%$$\n\nSo the statement is False.",
-        "**C.** → False\n\n$$\\dfrac{176}{192}\\approx 0.917=91.7\\%$$\n\n$$91.7\\%\\not< 78.6\\%$$\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\\dfrac{223}{1235}\\approx 0.181=18.1\\%$$\n\n$$18.1\\%\\not> 25.7\\%$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\dfrac{176}{192}\\approx 0.917=91.7\\%$$\n\n$$91.7\\%\\nless 78.6\\%$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$\\dfrac{223}{1235}\\approx 0.181=18.1\\%$$\n\n$$18.1\\%\\ngtr 25.7\\%$$\n\nSo the statement is False.",
         "**E.** → True\n\nNon-current liabilities $=227+79=306$.\n\nCapital employed $=736+306=1042$.\n\n$$\\mathrm{ROCE}=\\dfrac{192}{1042}\\approx 0.184=18.4\\%$$\n\n$$18.4\\%>15.5\\%$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5"
@@ -253,7 +253,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\\dfrac{354-305}{305}=\\dfrac{49}{305}\\approx 0.1607=16.07\\%$$\n\n$$16.07\\%\\not> 19.1\\%$$\n\nSo the statement is False.",
+        "**A.** → False\n\n$$\\dfrac{354-305}{305}=\\dfrac{49}{305}\\approx 0.1607=16.07\\%$$\n\n$$16.07\\%\\ngtr 19.1\\%$$\n\nSo the statement is False.",
         "**B.** → True\n\nCash spent on long-term productive assets is an investing outflow. Plant and machinery purchases sit in cash flow from investing activities.\n\nSo the statement is True.",
         "**C.** → True\n\nThe income statement reports profit and the balance sheet absorbs it in retained earnings. The cash flow statement tracks cash movements, not the accounting profit line itself.\n\nSo the statement is True.",
         "**D.** → True\n\nDistributions to owners are financing outflows. Dividends paid are recorded in cash flow from financing activities.\n\nSo the statement is True.",
@@ -283,9 +283,9 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$\\text{Market capitalisation}=24.50\\times 12{,}000{,}000=294{,}000{,}000$$\n\n$$294\\ \\text{million}>290\\ \\text{million}$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$\\text{EPS}=\\dfrac{18{,}000{,}000}{12{,}000{,}000}=1.50$$\n\n$$1.50\\not< 1.40$$\n\nSo the statement is False.",
-        "**C.** → False\n\n$$\\text{P/E}=\\dfrac{24.50}{1.50}\\approx 16.33$$\n\n$$16.33\\not> 18$$\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\\text{Share turnover}=\\dfrac{4{,}800{,}000}{12{,}000{,}000}=0.40=40\\%$$\n\n$$40\\%\\not< 35\\%$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$\\text{EPS}=\\dfrac{18{,}000{,}000}{12{,}000{,}000}=1.50$$\n\n$$1.50\\nless 1.40$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\text{P/E}=\\dfrac{24.50}{1.50}\\approx 16.33$$\n\n$$16.33\\ngtr 18$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$\\text{Share turnover}=\\dfrac{4{,}800{,}000}{12{,}000{,}000}=0.40=40\\%$$\n\n$$40\\%\\nless 35\\%$$\n\nSo the statement is False.",
         "**E.** → True\n\n$$\\text{Market capitalisation (Jan)}=16.50\\times 12{,}000{,}000=198{,}000{,}000$$\n\n$$198\\ \\text{million}<200\\ \\text{million}$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5"
