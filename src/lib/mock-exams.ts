@@ -15,6 +15,12 @@ import {
   MOCK_EXAM_1_QUESTION_COUNT,
   buildMockExam1Questions,
 } from "@/lib/mock-exam-1-content";
+import {
+  MOCK_EXAM_2_CONTENT_REV,
+  MOCK_EXAM_2_POINTS_TOTAL,
+  MOCK_EXAM_2_QUESTION_COUNT,
+  buildMockExam2Questions,
+} from "@/lib/mock-exam-2-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -81,7 +87,15 @@ export const MOCK_EXAMS: MockExamSummary[] = [
     pointsTotal: MOCK_EXAM_1_POINTS_TOTAL,
     contentRev: MOCK_EXAM_1_CONTENT_REV,
   },
-  { id: "mock-2", title: "Mock Exam 2", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
+  {
+    id: "mock-2",
+    title: "Mock Exam 2",
+    questionCount: MOCK_EXAM_2_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "lite",
+    pointsTotal: MOCK_EXAM_2_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_2_CONTENT_REV,
+  },
   { id: "mock-3", title: "Mock Exam 3", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
   { id: "mock-4", title: "Mock Exam 4", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
   { id: "mock-5", title: "Mock Exam 5", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
@@ -134,6 +148,9 @@ const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 export function buildExamQuestions(examId: string): ExamQuestion[] {
   if (examId === "mock-1") {
     return buildMockExam1Questions(examId);
+  }
+  if (examId === "mock-2") {
+    return buildMockExam2Questions(examId);
   }
 
   const rand = makeRandom(examId);
