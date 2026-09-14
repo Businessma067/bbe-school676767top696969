@@ -10,6 +10,7 @@ import {
 } from "@/config/custom-mock-builder";
 import type { CustomMockRow } from "@/lib/custom-mock-builder/types";
 import {
+  MOCK_EXAM_1_CONTENT_REV,
   MOCK_EXAM_1_POINTS_TOTAL,
   MOCK_EXAM_1_QUESTION_COUNT,
   buildMockExam1Questions,
@@ -25,6 +26,8 @@ export interface MockExamSummary {
   tier: ProductTier;
   /** Present for Custom Mock Builder exams — used for progress sync only. */
   pointsTotal?: number;
+  /** Optional content stamp (Mock 1) to verify Lovable/Git sync. */
+  contentRev?: string;
 }
 
 export interface CompletedExam {
@@ -76,6 +79,7 @@ export const MOCK_EXAMS: MockExamSummary[] = [
     durationMinutes: 120,
     tier: "lite",
     pointsTotal: MOCK_EXAM_1_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_1_CONTENT_REV,
   },
   { id: "mock-2", title: "Mock Exam 2", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "lite" },
   { id: "mock-3", title: "Mock Exam 3", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
