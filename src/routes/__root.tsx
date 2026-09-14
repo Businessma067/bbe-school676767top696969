@@ -16,7 +16,6 @@ import { HashScrollOnLoad } from "../components/HashScrollOnLoad";
 import { Breadcrumbs } from "../components/Breadcrumbs";
 import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
-import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 import { LanguageProvider } from "../lib/i18n/context";
 import { THEME_INIT_SCRIPT } from "../lib/theme";
