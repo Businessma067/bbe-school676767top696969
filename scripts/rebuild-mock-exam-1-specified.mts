@@ -152,6 +152,36 @@ function mapEcon(t: Record<string, unknown>, patch?: Partial<Record<string, unkn
 }
 
 /** Generated stock-chart case (ch6 style): PE, market cap, turnover. */
+
+/** Two-year cash-flow table case from bank, scrubbed statements + newest explanation style. */
+function buildCashFlowCase() {
+  const bank = loadEcon(6).find((t) => t.case_id === "CASE 6.2.045");
+  if (!bank) throw new Error("CASE 6.2.045 missing");
+  return {
+    case_id: "CASE 6.2.045",
+    title: bank.title,
+    subsection: bank.subsection,
+    chapter: 6,
+    context: String(bank.context ?? "").trim() + "\n",
+    statements: [
+      "Cash flow from operating activities grew by more than 19.1% from Year 1 to Year 2.",
+      "Buying plant, machinery or another long-term asset for cash is classified as cash flow from investing activities.",
+      "Profit for the year appears in the income statement and raises retained earnings, but it is not shown as its own line in the cash flow statement.",
+      "Dividends paid to shareholders are recorded within cash flow from financing activities.",
+      "Paying dividends is classified as an investing cash outflow.",
+    ],
+    answer_key: [false, true, true, true, false],
+    tactical_explanations: [
+      "**A.** → False\n\n$$\\dfrac{354-305}{305}=\\dfrac{49}{305}\\approx 0.1607=16.07\\%$$\n\n$$16.07\\%\\not> 19.1\\%$$\n\nSo the statement is False.",
+      "**B.** → True\n\nCash spent on long-term productive assets is an investing outflow. Plant and machinery purchases sit in cash flow from investing activities.\n\nSo the statement is True.",
+      "**C.** → True\n\nThe income statement reports profit and the balance sheet absorbs it in retained earnings. The cash flow statement tracks cash movements, not the accounting profit line itself.\n\nSo the statement is True.",
+      "**D.** → True\n\nDistributions to owners are financing outflows. Dividends paid are recorded in cash flow from financing activities.\n\nSo the statement is True.",
+      "**E.** → False\n\nDividends are a financing outflow to shareholders, not an investing outflow. Investing covers long-term asset deals, not owner distributions.\n\nSo the statement is False.",
+    ],
+    difficulty_level: "5/5",
+  };
+}
+
 function buildStockChartCase() {
   const context = `NordPeak AG is listed on the Vienna Stock Exchange. At the latest closing price the company has 12 million shares outstanding. Earnings for the last financial year were €18.0 million, and 4.8 million shares changed hands on the exchange over the same year.
 
@@ -452,6 +482,7 @@ const economics = [
   mapEcon(byIndex(6, 30)),
   mapEcon(byIndex(6, 83)),
   mapEcon(byIndex(6, 175)),
+  buildCashFlowCase(),
   buildStockChartCase(),
 ];
 
