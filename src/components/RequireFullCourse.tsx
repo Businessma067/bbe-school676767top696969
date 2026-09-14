@@ -63,9 +63,11 @@ export function RequireFullCourse({
           redirectedRef.current = true;
           // Defer out of the effect commit: navigating synchronously here can
           // unmount the current route match while React is still rendering it.
-          setTimeout(() => {
-            navigate({ to: "/login", replace: true });
-          }, 0);
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              navigate({ to: "/login", replace: true });
+            });
+          });
         }
         return;
       }
