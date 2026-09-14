@@ -21,20 +21,6 @@ export default defineConfig({
   },
   vite: {
     plugins: [sitemapPlugin()],
-    resolve: {
-      alias: {
-        // @react-email/render still imports entities v5 paths; entities v6 dropped lib/.
-        "entities/lib/decode.js": path.resolve(
-          process.cwd(),
-          "node_modules/entities/dist/esm/decode.js",
-        ),
-        "entities/lib/encode.js": path.resolve(
-          process.cwd(),
-          "node_modules/entities/dist/esm/encode.js",
-        ),
-        entities: path.resolve(process.cwd(), "node_modules/entities"),
-      },
-    },
     build: {
       rollupOptions: {
         output: {
