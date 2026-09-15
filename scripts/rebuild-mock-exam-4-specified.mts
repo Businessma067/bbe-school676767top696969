@@ -364,9 +364,7 @@ ${truthTable}`,
 
 /** Ch2 ALGEBRA — exam-style identities / abs / binomial / completing-the-square (NOT nested-slot template). */
 function buildMathCh2Idents() {
-  const context = `Each letter is an independent elementary-algebra identity or equation claim in exam style.
-
-Factorisation and cubic identities, absolute-value equations, completing the square, binomial coefficients, and reciprocal identities appear in turn.
+  const context = `Five short algebra checks in classic exam-identity style: a cubic-sum identity under $a+b+c=0$, a two-branch absolute-value equation, completing the square for a quadratic minimum, one binomial coefficient, and a reciprocal difference-of-squares identity.
 
 Decide whether each statement is true or false.`;
 
@@ -489,7 +487,7 @@ So the statement is True.`,
 
 /** Ch4 EQUATIONS — five different families (NOT ages/frame/trip/log/coins). */
 function buildMathCh4MixEq() {
-  const context = `Each letter is an independent equation word problem, but the five families are deliberately different: a two-pipe fill with an interruption, a two-digit number, successive percentage changes, a rectangle with Pythagoras, and an exponential equation.
+  const context = `Five standalone equation problems appear below, each from a different modelling family: an interrupted two-pipe tank fill, a two-digit number reconstruction, successive percentage price changes, a rectangle with a Pythagorean diagonal, and an exponential equation with matching bases.
 
 Decide whether each statement is true or false.`;
 
@@ -746,7 +744,7 @@ So the statement is True.`,
 
 /** Ch6 INEQ — rational / 1/x / exponential / abs-vs-quadratic / rational again (NOT M3 order). */
 function buildMathCh6Signs() {
-  const context = `Each letter is an independent hard inequality. The toolkit is deliberately reordered: a rational inequality (sign chart), a quadratic-in-$1/x$ claim, an exponential inequality, an absolute-value-versus-quadratic comparison, and a second rational inequality with a vertical asymptote.
+  const context = `Five inequality claims follow in a fixed but nonstandard order. Work a rational inequality with a sign chart, then a quadratic-in-$1/x$ bound, an exponential inequality, an absolute-value-versus-quadratic comparison, and a second rational inequality that collapses to a single critical point.
 
 Decide whether each statement is true or false.`;
 

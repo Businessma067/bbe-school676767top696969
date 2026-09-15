@@ -640,66 +640,66 @@
   },
   "math": [
     {
-      "case_id": "MATH 1.MOCK.CREW",
-      "id": "MATH 1.MOCK.CREW",
-      "title": "Night-ferry bridge crew — six sailors and seven rules",
+      "case_id": "MATH 1.MOCK.LIARS",
+      "id": "MATH 1.MOCK.LIARS",
+      "title": "Three analysts — truth-tellers, liars, and nested claims",
       "chapter": 1,
       "subsection": "1.4",
-      "context": "Six sailors — Kai, Lea, Mo, Noa, Oli, and Paz — are considered for a night-ferry bridge crew.\n\nKai is assigned if and only if Lea is assigned.\n\nIf Mo is assigned, then Noa is assigned.\n\nExactly one of Noa or Oli is assigned (never both, never neither).\n\nIf Oli is assigned, then Paz is not assigned.\n\nAt least one of Paz or Kai is assigned.\n\nLea is assigned only if Mo is not assigned.\n\nAt least three of the six sailors are assigned.",
+      "context": "Three analysts — Quinn, Remy, and Sage — each make one statement about the group. Every analyst is either a truth-teller (every sentence true) or a liar (every sentence false). Exactly one of those two types applies to each person.\n\nQuinn says: “Remy is a liar.”\n\nRemy says: “Exactly two of us are truth-tellers.”\n\nSage says: “Quinn is a truth-teller if and only if I am a liar.”\n\nDecide whether each claim about the possible type-assignments is true or false.",
       "statements": [
-        "Kai must appear on every crew that obeys all seven rules.",
-        "It is possible to build a valid crew that includes both Mo and Oli.",
-        "If Lea is assigned, then Mo cannot be assigned.",
-        "There is exactly one valid crew of size three that does not include Kai.",
-        "It is possible for all six sailors to be assigned at once."
+        "Quinn must be a truth-teller in every consistent type-assignment.",
+        "In every consistent type-assignment, Remy and Sage are the same type.",
+        "It is possible that all three analysts are liars.",
+        "If Sage is a truth-teller, then Quinn is a liar.",
+        "There are exactly two consistent type-assignments for the trio."
       ],
       "answer_key": [
         false,
+        true,
         false,
         true,
-        true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe claim says Kai is on every valid crew. Try to build a valid crew with Kai out.\n\nAssume $K=0$. Rule (1) forces Lea out as well:\n\n$$\nK=0\\qquad\\Rightarrow\\qquad L=0\n$$\n\nRule (5) is $P\\lor K$. With Kai out, Paz must enter:\n\n$$\nP=1\n$$\n\nRule (6) is idle because Lea is out. Rule (3) forces exactly one of Noa or Oli.\n\n**Case Noa in, Oli out** ($N=1$, $O=0$). Rule (4) is idle. Rule (2) allows Mo in. Taking $M=1$ gives\n\n$$\n\\{M,N,P\\}\n$$\n\nSize $3$, so rule (7) holds. Every rule is satisfied, and Kai is absent.\n\n**Case Oli in, Noa out** ($N=0$, $O=1$). Rule (4) forces $P=0$, which contradicts $P=1$ already required by rule (5). This branch dies.\n\nSo Kai-out is possible via $\\{M,N,P\\}$. That roster is a concrete counter-example.\n\nSo the statement is False.",
-        "**B.** → False\n\nForce $M=1$ and $O=1$ together and chase the consequences.\n\nRule (2) is $M\\Rightarrow N$, so Noa must enter:\n\n$$\nM=1\\qquad\\Rightarrow\\qquad N=1\n$$\n\nRule (3) is the exclusive-or on Noa and Oli. Putting both $N=1$ and $O=1$ immediately breaks that exclusive-or.\n\nNo repair of the other bits can save the row. A valid crew cannot contain both Mo and Oli.\n\nSo the statement is False.",
-        "**C.** → True\n\nThe stem says “Lea is assigned only if Mo is not assigned.” In symbols that is\n\n$$\nL\\Rightarrow\\neg M\n$$\n\nwhich is exactly the claim: if Lea is assigned, then Mo cannot be assigned.\n\nCheck against the valid crews from the overview. Every crew with Lea ($\\{K,L,N\\}$, $\\{K,L,N,P\\}$, $\\{K,L,O\\}$) has $M=0$. The remaining valid crew $\\{M,N,P\\}$ has $L=0$, so the implication is idle there. No valid row ever has $L=M=1$ together.\n\nSo the statement is True.",
-        "**D.** → True\n\nFrom the overview there are four valid crews:\n\n$$\n\\{K,L,N\\}\\ (\\text{size }3),\\quad \\{K,L,N,P\\}\\ (\\text{size }4),\\quad \\{K,L,O\\}\\ (\\text{size }3),\\quad \\{M,N,P\\}\\ (\\text{size }3)\n$$\n\nAmong the size-three crews, only $\\{M,N,P\\}$ excludes Kai. The other two size-three survivors both contain Kai. Therefore there is exactly one valid size-three crew without Kai.\n\nSo the statement is True.",
-        "**E.** → False\n\nA crew of all six would require\n\n$$\nK=L=M=N=O=P=1\n$$\n\nRule (3) says exactly one of Noa or Oli is assigned. Putting both $N=1$ and $O=1$ breaks that exclusive-or at once.\n\nEven dropping one person cannot rescue a six-person roster. The overview’s largest valid size is $4$. Size six never appears.\n\nSo the statement is False."
+        "**A.** → False\n\nAssume Quinn is a liar and check whether a full consistent world still exists.\n\nIf Quinn is a liar, the sentence “Remy is a liar” is false, so Remy is a truth-teller. Remy’s sentence “exactly two truth-tellers” is therefore true, so the trio has exactly two truth-tellers. Sage’s biconditional “Quinn is a truth-teller $\\Leftrightarrow$ Sage is a liar” must then be false (because Sage must be the other truth-teller to reach exactly two). A false biconditional with Quinn a liar forces Sage to be a truth-teller:\n\n$$\nQ=\\mathrm{L},\\quad R=\\mathrm{T},\\quad S=\\mathrm{T}\n$$\n\nCount of truth-tellers: $2$. Quinn’s false sentence, Remy’s true sentence, and Sage’s false biconditional all match their types. So a Quinn-liar world exists, and the claim fails.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe overview’s two survivors are $(T,L,L)$ and $(L,T,T)$. In the first, Remy and Sage are both liars; in the second, both are truth-tellers. No consistent row separates them.\n\nSo the statement is True.",
+        "**C.** → False\n\nIf all three are liars, Remy’s sentence “exactly two truth-tellers” is false, which matches Remy being a liar, but Quinn’s sentence “Remy is a liar” would be true — contradicting Quinn being a liar. The all-liar row is already excluded in the overview table.\n\nSo the statement is False.",
+        "**D.** → True\n\nSage is a truth-teller only in the second survivor $(L,T,T)$. There Quinn is a liar, so the implication holds in every world where its hypothesis is true. In the other survivor Sage is a liar, so the implication is idle.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe overview lists exactly two survivors: $(T,L,L)$ and $(L,T,T)$. Exhausting the eight type triples leaves no third consistent row.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "**Part 1: Setup.**\n\nWrite $K,L,M,N,O,P$ for Kai, Lea, Mo, Noa, Oli, Paz. The stem is\n\n$$\n(1)\\ K\\Leftrightarrow L,\\qquad (2)\\ M\\Rightarrow N,\\qquad (3)\\ (N\\land\\neg O)\\lor(\\neg N\\land O),\n$$\n\n$$\n(4)\\ O\\Rightarrow\\neg P,\\qquad (5)\\ P\\lor K,\\qquad (6)\\ L\\Rightarrow\\neg M,\n$$\n\nand (7) size at least three.\n\n\"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Shared forcing (used by every letter).**\n\nApply the biconditional and exclusive-or first, then the implications, then the size filter.\n\n- If Kai is in, Lea is in and Mo is out; the exclusive-or then splits into Noa-in / Oli-out (Paz free) or Oli-in / Noa-out (Paz out). Survivors include $\\{K,L,N\\}$, $\\{K,L,N,P\\}$, and $\\{K,L,O\\}$.\n- If Kai is out, Lea is out and Paz is in; Mo-in with Noa-in / Oli-out gives the fourth survivor $\\{M,N,P\\}$.\n- Mo-in with Oli-in always collapses on the exclusive-or (see letter B).\n\nOnly four rows survive.\n\n**Truth table of valid night-ferry crews.**\n\nWrite $K,L,M,N,O,P$ for Kai, Lea, Mo, Noa, Oli, Paz. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $K+L+M+N+O+P$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $K\\Leftrightarrow L$ (Kai and Lea must match).\n2. Enforce $M\\Rightarrow N$ and the exclusive-or on $(N,O)$.\n3. Enforce $O\\Rightarrow\\neg P$, $P\\lor K$, and $L\\Rightarrow\\neg M$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid crews.\n\n| $K$ | $L$ | $M$ | $N$ | $O$ | $P$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 0 | 1 | 0 | 0 | 3 | yes |\n| 1 | 1 | 0 | 1 | 0 | 1 | 4 | yes |\n| 1 | 1 | 0 | 0 | 1 | 0 | 3 | yes |\n| 0 | 0 | 1 | 1 | 0 | 1 | 3 | yes |\n| 1 | 1 | 1 | 1 | 0 | 0 | — | no ($L\\Rightarrow\\neg M$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 0 | 0 | 1 | 1 | — | no ($O\\Rightarrow\\neg P$ fails) |\n| 1 | 1 | 0 | 1 | 1 | 0 | — | no (exclusive-or on $N,O$ fails) |\n\nExactly four valid crews appear: $\\{K,L,N\\}$, $\\{K,L,N,P\\}$, $\\{K,L,O\\}$, and $\\{M,N,P\\}$."
+      "solution_overview": "**Part 1: Setup.**\n\nWrite $Q,R,S$ for the types of Quinn, Remy, Sage. The spoken claims are\n\n$$\n(1)\\ \\neg R,\\qquad (2)\\ \\#\\{T\\}=2,\\qquad (3)\\ Q\\Leftrightarrow\\neg S.\n$$\n\nA truth-teller’s claim must evaluate true; a liar’s claim must evaluate false.\n\n**Part 2: Shared forcing.**\n\nCase Quinn truth-teller: Remy is a liar, so “exactly two truth-tellers” is false. Sage’s biconditional is true and forces Sage to be a liar. The unique completion is $(T,L,L)$.\n\nCase Quinn liar: Remy is a truth-teller and “exactly two truth-tellers” holds, so Sage is the other truth-teller. The unique completion is $(L,T,T)$.\n\n**Consistent type-assignments (truth-teller = T, liar = L).**\n\nWrite $Q,R,S$ for Quinn, Remy, Sage. Encode the three spoken claims, then keep only the $0/1$ type rows that make every speaker’s sentence evaluate correctly under that speaker’s type.\n\nHow the table is built:\n\n1. Treat “truth-teller” as bit $1$ and “liar” as bit $0$.\n2. Quinn’s sentence is true precisely when Remy is a liar.\n3. Remy’s sentence is true precisely when the number of truth-tellers equals $2$.\n4. Sage’s sentence is the biconditional “Quinn is a truth-teller $\\Leftrightarrow$ Sage is a liar.”\n5. A row survives only if each speaker’s sentence truth-value matches that speaker’s type.\n\n| $Q$ | $R$ | $S$ | Quinn’s sentence | Remy’s sentence | Sage’s sentence | Valid? |\n| --- | --- | --- | --- | --- | --- | --- |\n| T | L | L | true | false | true | yes |\n| L | T | T | false | true | false | yes |\n| T | T | L | false | false | false | no |\n| L | L | T | true | false | true | no |\n| T | L | T | true | false | false | no |\n| L | T | L | false | false | true | no |\n\nExactly two consistent worlds survive: $(Q,R,S)=(T,L,L)$ and $(L,T,T)$."
     },
     {
-      "case_id": "MATH 2.MOCK.THRESH",
-      "id": "MATH 2.MOCK.THRESH",
-      "title": "Multi-step elementary algebra with threshold claims",
+      "case_id": "MATH 2.MOCK.IDENTS",
+      "id": "MATH 2.MOCK.IDENTS",
+      "title": "Exam-style algebra identities and absolute-value claims",
       "chapter": 2,
-      "subsection": "2.4",
-      "context": "Each claim below is an independent elementary-algebra check.\n\nNested fractions, a $2\\times 2$ linear system, a polynomial product, a rational equation, and a radical equation appear in turn.\n\nDecide whether each statement is true or false. The claims give thresholds, not boxed final values.",
+      "subsection": "2.3",
+      "context": "Five short algebra checks in classic exam-identity style: a cubic-sum identity under $a+b+c=0$, a two-branch absolute-value equation, completing the square for a quadratic minimum, one binomial coefficient, and a reciprocal difference-of-squares identity.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "For $x=3$, the nested quotient $\\dfrac{\\frac{4}{x}-\\frac{1}{x-1}}{\\frac{2}{x}+\\frac{1}{x-1}}$ is strictly smaller than $0.5$.",
-        "The unique solution of the system $4a+3b=10$, $5a-2b=7$ satisfies $a+b>2$.",
-        "The value of $\\dfrac{(x^{3}-2x+4)(2x+1)}{x^{2}+x-2}$ at $x=2$ is strictly larger than $10$.",
-        "Over the reals with $x\\ne\\pm 1$, every solution of $\\dfrac{2}{x-1}-\\dfrac{1}{x+1}=\\dfrac{3}{x^{2}-1}$ is strictly smaller than $0$.",
-        "The positive solution of $\\sqrt{3x+1}-\\sqrt{x}=1$ is strictly larger than $3$."
+        "If $a,b,c$ are nonzero reals with $a+b+c=0$, then $a^{3}+b^{3}+c^{3}=3abc$.",
+        "The equation $|2x-1|=|x+4|$ has a unique real solution, and that solution is strictly greater than $2$.",
+        "For every real $x$, the value of $x^{2}-6x+13$ is at least $4$.",
+        "In the expansion of $(1+2x)^{5}$, the coefficient of $x^{3}$ is strictly larger than $70$.",
+        "For every real $t\\neq 0$, $\\left(t+\\dfrac{1}{t}\\right)^{2}-\\left(t-\\dfrac{1}{t}\\right)^{2}=4$."
       ],
       "answer_key": [
-        false,
         true,
         false,
-        false,
-        false
+        true,
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSubstitute $x=3$.\n\nNumerator:\n\n$$\n\\dfrac{4}{3}-\\dfrac{1}{2}=\\dfrac{8-3}{6}=\\dfrac{5}{6}\n$$\n\nDenominator:\n\n$$\n\\dfrac{2}{3}+\\dfrac{1}{2}=\\dfrac{4+3}{6}=\\dfrac{7}{6}\n$$\n\nQuotient:\n\n$$\n\\dfrac{5/6}{7/6}=\\dfrac{5}{7}\\approx 0.714\n$$\n\n$$\n0.714\\nless 0.5\n$$\n\nSo the statement is False.",
-        "**B.** → True\n\nFrom $5a-2b=7$,\n\n$$\nb=\\dfrac{5a-7}{2}\n$$\n\nSubstitute into $4a+3b=10$:\n\n$$\n4a+3\\cdot\\dfrac{5a-7}{2}=10\n$$\n\nMultiply through by $2$:\n\n$$\n8a+3(5a-7)=20\\qquad\\Rightarrow\\qquad 8a+15a-21=20\\qquad\\Rightarrow\\qquad 23a=41\n$$\n\n$$\na=\\dfrac{41}{23},\\qquad b=\\dfrac{5\\cdot\\frac{41}{23}-7}{2}=\\dfrac{\\frac{205-161}{23}}{2}=\\dfrac{44}{46}=\\dfrac{22}{23}\n$$\n\nSum:\n\n$$\na+b=\\dfrac{63}{23}\\approx 2.739>2\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nAt $x=2$:\n\n$$\nx^{3}-2x+4=8-4+4=8,\\qquad 2x+1=5\n$$\n\nNumerator product $8\\cdot 5=40$. Denominator:\n\n$$\nx^{2}+x-2=4+2-2=4\n$$\n\n$$\n\\dfrac{40}{4}=10\n$$\n\nThe claim asks for a value strictly larger than $10$:\n\n$$\n10\\ngtr 10\n$$\n\nSo the statement is False.",
-        "**D.** → False\n\nCombine the left-hand side over $x^{2}-1$:\n\n$$\n\\dfrac{2}{x-1}-\\dfrac{1}{x+1}=\\dfrac{2(x+1)-(x-1)}{x^{2}-1}=\\dfrac{x+3}{x^{2}-1}\n$$\n\nThe equation becomes\n\n$$\n\\dfrac{x+3}{x^{2}-1}=\\dfrac{3}{x^{2}-1}\\qquad(x\\ne\\pm 1)\n$$\n\n$$\nx+3=3\\qquad\\Rightarrow\\qquad x=0\n$$\n\nThe unique admissible root is $x=0$, which is not strictly smaller than $0$.\n\nSo the statement is False.",
-        "**E.** → False\n\nIsolate one radical:\n\n$$\n\\sqrt{3x+1}=1+\\sqrt{x}\n$$\n\nBoth sides are nonnegative for $x\\ge 0$. Square:\n\n$$\n3x+1=1+2\\sqrt{x}+x\n$$\n\n$$\n2x=2\\sqrt{x}\\qquad\\Rightarrow\\qquad x=\\sqrt{x}\n$$\n\nLet $u=\\sqrt{x}\\ge 0$. Then $u^{2}=u$, so $u=0$ or $u=1$, hence $x=0$ or $x=1$. The positive solution is $x=1$. Check:\n\n$$\n\\sqrt{4}-\\sqrt{1}=2-1=1\n$$\n\n$$\n1\\ngtr 3\n$$\n\nSo the statement is False."
+        "**A.** → True\n\nThe cubic sum identity factors as\n\n$$\na^{3}+b^{3}+c^{3}-3abc=(a+b+c)(a^{2}+b^{2}+c^{2}-ab-bc-ca)\n$$\n\nUnder the hypothesis $a+b+c=0$, the right-hand factor is multiplied by zero, so\n\n$$\na^{3}+b^{3}+c^{3}-3abc=0\n$$\n\nHence $a^{3}+b^{3}+c^{3}=3abc$ whenever $a+b+c=0$ (the nonzero hypothesis only excludes division pathologies elsewhere; it is not needed for this identity).\n\nSo the statement is True.",
+        "**B.** → False\n\nDrop the absolute values by cases:\n\n$$\n2x-1=x+4\\quad\\text{or}\\quad 2x-1=-(x+4)\n$$\n\nThe first branch gives $x=5$. The second gives $3x=-3$, so $x=-1$. Both satisfy the original absolute-value equation, so there are two real solutions. The claim’s “unique real solution” already fails (even though $5>2$).\n\nSo the statement is False.",
+        "**C.** → True\n\nComplete the square:\n\n$$\nx^{2}-6x+13=(x-3)^{2}+4\n$$\n\nSince $(x-3)^{2}\\ge 0$ for every real $x$,\n\n$$\n(x-3)^{2}+4\\ge 4\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nThe binomial theorem gives\n\n$$\n(1+2x)^{5}=\\sum_{k=0}^{5}\\binom{5}{k}1^{5-k}(2x)^{k}\n$$\n\nThe $x^{3}$ term is the $k=3$ summand:\n\n$$\n\\binom{5}{3}\\cdot 2^{3}=10\\cdot 8=80\n$$\n\n$$\n80>70\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\nSet $u=t+\\dfrac{1}{t}$ and $v=t-\\dfrac{1}{t}$. Then\n\n$$\nu^{2}-v^{2}=(u-v)(u+v)\n$$\n\n$$\nu-v=\\dfrac{2}{t},\\qquad u+v=2t\n$$\n\n$$\n(u-v)(u+v)=\\dfrac{2}{t}\\cdot 2t=4\n$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Compute each nested/system/radical value fully, then accept or reject a threshold — the statements never reveal the finished number."
+      "solution_overview": "Treat each letter as its own short algebra check: cubic sum identity, two-branch absolute values, completing the square, one binomial coefficient, and a reciprocal difference of squares."
     },
     {
       "case_id": "MATH 11.112",
@@ -733,111 +733,111 @@
       "solution_overview": "A hospital system is choosing among three payment schedules for an imaging center. Schedule I: USD 850,000 cash immediately. Schedule II: USD 140,000 per year for $9$ years, first instalment immediate. Schedule III: USD 300,000 cash immediately plus USD 80,000 per year for $11$ years, first of these instalments one year later. Compare present values at $8\\%$ and at $12\\%$.\n\n**Part 1: Setup.**\n\n$$\na_{\\mathrm{II}} = 140,000,\n$$\n\n$$\nn_{\\mathrm{II}} = 9\n$$\n\n$$\na_{\\mathrm{III}} = 80,000,\n$$\n\n$$\nn_{\\mathrm{III}} = 11\n$$\n\nThe rates are $r=0.08$ and $r=0.12$. Schedule I is USD 850,000 today.\n\n**Part 2: Solve.**\n\nSchedule II is an annuity due:\n\nSchedule III is cash plus an ordinary annuity:\n\nAt $8\\%$,\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.08}\\bigl[1-(1.08)^{-8}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{II}} \\approx 944,529.45\n$$\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.08}\\bigl[1-(1.08)^{-11}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{III}} \\approx 871,117.14\n$$\n\nAt $12\\%$,\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.12}\\bigl[1-(1.12)^{-8}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{II}} \\approx 835,470\n$$\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.12}\\bigl[1-(1.12)^{-11}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{III}} \\approx 775,015.93\n$$"
     },
     {
-      "case_id": "MATH 4.MOCK.WORD",
-      "id": "MATH 4.MOCK.WORD",
-      "title": "Hard equation word problems — ages, frame, motion, log, coins",
+      "case_id": "MATH 4.MOCK.MIXEQ",
+      "id": "MATH 4.MOCK.MIXEQ",
+      "title": "Mixed equation families — pipes, digits, percentages, rectangle, exponential",
       "chapter": 4,
-      "subsection": "4.5",
-      "context": "Each letter is an independent equation word problem from a different family.\n\nAges, a framed print, a two-leg trip, a logarithmic equation, and a coin till appear in turn.\n\nDecide whether each statement is true or false.",
+      "subsection": "4.2",
+      "context": "Five standalone equation problems appear below, each from a different modelling family: an interrupted two-pipe tank fill, a two-digit number reconstruction, successive percentage price changes, a rectangle with a Pythagorean diagonal, and an exponential equation with matching bases.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "A mentor is $18$ years older than an apprentice. In $4$ years the mentor will be three times as old as the apprentice will be then. A planner concludes that the apprentice is now $7$ years old.",
-        "A $24\\ \\mathrm{cm}$ by $16\\ \\mathrm{cm}$ print is mounted with a uniform frame so that the framed outer area is four times the print area. The frame width is then strictly less than $8\\ \\mathrm{cm}$.",
-        "A cyclist covers $15\\ \\mathrm{km}$ at $10\\ \\mathrm{km/h}$ and then $20\\ \\mathrm{km}$ at $15\\ \\mathrm{km/h}$. The whole trip therefore takes strictly less than $3$ hours.",
-        "Over $x>1$, the equation $\\log(x+2)+\\log(x-1)=\\log(3x+5)$ has a solution strictly smaller than $4$.",
-        "A till holds only $3$-euro and $7$-euro coins. There are $17$ coins worth $79$ euros in total. Then there are strictly more than eight coins of $7$ euros."
+        "Pipe A alone fills a tank in $8$ hours and pipe B alone fills it in $24$ hours. They run together for $3$ hours, then A is shut off and B finishes alone. The total elapsed time from the start until the tank is full is strictly less than $14$ hours.",
+        "A two-digit number has digit sum $12$, and the number exceeds its reverse by $18$. The number itself is strictly greater than $80$.",
+        "A catalogue price is raised by $25\\%$ and later reduced by $20\\%$ of the new price. The final price equals the original catalogue price.",
+        "A rectangle has perimeter $40$ and area $96$. Its diagonal is strictly greater than $15$.",
+        "Every real solution of $5^{x}=25^{x-1}$ is strictly greater than $1$."
       ],
       "answer_key": [
         false,
         false,
         true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA’s rate is $\\dfrac{1}{8}$ tank per hour and B’s rate is $\\dfrac{1}{24}$, so together\n\n$$\n\\dfrac{1}{8}+\\dfrac{1}{24}=\\dfrac{3+1}{24}=\\dfrac{1}{6}\n$$\n\nIn the first $3$ hours they fill\n\n$$\n3\\cdot\\dfrac{1}{6}=\\dfrac{1}{2}\n$$\n\nof the tank. The remaining half is finished by B alone:\n\n$$\nt=\\dfrac{1/2}{1/24}=12\n$$\n\nhours. Total elapsed time:\n\n$$\n3+12=15\n$$\n\nThe claim says the total is strictly less than $14$, but $15\\nless 14$.\n\nSo the statement is False.",
+        "**B.** → False\n\nWrite the number as $10a+b$ with digits $a,b$. The stem gives\n\n$$\na+b=12,\\qquad (10a+b)-(10b+a)=18\n$$\n\nThe second equation simplifies to\n\n$$\n9(a-b)=18\\qquad\\Rightarrow\\qquad a-b=2\n$$\n\nSolving with $a+b=12$ yields $a=7$, $b=5$, so the number is $75$. The claim says it is strictly greater than $80$, but $75\\ngtr 80$.\n\nSo the statement is False.",
+        "**C.** → True\n\nStart from catalogue price $P$. After a $25\\%$ rise the price is $1.25P$. A subsequent $20\\%$ reduction of the new price multiplies by $0.8$:\n\n$$\n1.25P\\cdot 0.8=P\n$$\n\nThe final price equals the original catalogue price.\n\nSo the statement is True.",
+        "**D.** → False\n\nPerimeter $40$ means $2(L+W)=40$, so $L+W=20$. With area $LW=96$, the side lengths are the roots of\n\n$$\nt^{2}-20t+96=0\\qquad\\Rightarrow\\qquad (t-12)(t-8)=0\n$$\n\nSo the sides are $12$ and $8$. The diagonal is\n\n$$\n\\sqrt{12^{2}+8^{2}}=\\sqrt{144+64}=\\sqrt{208}=4\\sqrt{13}\n$$\n\nSince $15^{2}=225$ and $208<225$, one has $4\\sqrt{13}<15$. The claim “strictly greater than $15$” fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nRewrite $25=5^{2}$:\n\n$$\n5^{x}=(5^{2})^{x-1}=5^{2x-2}\n$$\n\nEquating exponents (base $5>1$):\n\n$$\nx=2x-2\\qquad\\Rightarrow\\qquad x=2\n$$\n\nThe unique real solution is $x=2$, and $2>1$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Five independent equation checks: interrupted two-pipe fill, two-digit linear system, successive percent factors, rectangle diagonal via Pythagoras, and an exponential with matching bases."
+    },
+    {
+      "case_id": "MATH 5.MOCK.RATES",
+      "id": "MATH 5.MOCK.RATES",
+      "title": "Three-ingredient nutrition targets — linear system",
+      "chapter": 5,
+      "subsection": "5.3",
+      "context": "A canteen prepares one lunch mix from three ingredients — rice ($r$ portions), beans ($b$ portions), and tofu ($t$ portions). The mix must hit three nutrient targets exactly:\n\n$$\n\\begin{aligned}\n3r+b+2t&=14\\quad\\text{(protein units)}\\\\\nr+4b+t&=13\\quad\\text{(carbohydrate units)}\\\\\n2r+b+3t&=15\\quad\\text{(fat units)}\n\\end{aligned}\n$$\n\nPortions are real numbers (not necessarily integers in intermediate algebra, though the unique solution happens to be integral). Decide whether each statement is true or false.",
+      "statements": [
+        "The unique solution satisfies $r=2$, $b=2$, and $t=3$.",
+        "In the unique solution, the tofu portion is strictly larger than the rice portion.",
+        "If the protein target were raised from $14$ to $15$ while the other two targets stayed fixed, the rice portion in the new unique solution would be strictly smaller than $2$.",
+        "Doubling every coefficient and every right-hand side leaves the unique solution $(r,b,t)$ unchanged.",
+        "The sum $r+b+t$ in the unique solution is strictly less than $8$."
+      ],
+      "answer_key": [
         true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nSubstitute $(r,b,t)=(2,2,3)$ into all three equations:\n\n$$\n3\\cdot 2+2+2\\cdot 3=6+2+6=14\n$$\n\n$$\n2+4\\cdot 2+3=2+8+3=13\n$$\n\n$$\n2\\cdot 2+2+3\\cdot 3=4+2+9=15\n$$\n\nAll three targets hold. The coefficient matrix is invertible (its determinant is nonzero), so the solution is unique.\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom A, $t=3$ and $r=2$, so\n\n$$\nt-r=1>0\n$$\n\nTofu is strictly larger than rice.\n\nSo the statement is True.",
+        "**C.** → False\n\nRaise only the protein right-hand side to $15$ and re-solve the same coefficient matrix. Elimination yields the unique new solution\n\n$$\n(r,b,t)=\\left(\\dfrac{47}{18},\\dfrac{35}{18},\\dfrac{47}{18}\\right)\n$$\n\nIn particular\n\n$$\nr=\\dfrac{47}{18}\\approx 2.61>2\n$$\n\nso rice rises, not falls. The claim “strictly smaller than $2$” fails.\n\nSo the statement is False.",
+        "**D.** → True\n\nMultiplying every equation by $2$ produces an equivalent linear system: the same triples $(r,b,t)$ satisfy it, and uniqueness is preserved. Scaling an invertible system’s rows does not change its solution set.\n\nSo the statement is True.",
+        "**E.** → True\n\nFrom A,\n\n$$\nr+b+t=2+2+3=7\n$$\n\n$$\n7<8\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solve the $3\\times 3$ nutrient system once to get $(r,b,t)=(2,2,3)$. Letters A/B/E read off that solution; C perturbs one right-hand side; D notes row-scaling equivalence."
+    },
+    {
+      "case_id": "MATH 6.MOCK.SIGNS",
+      "id": "MATH 6.MOCK.SIGNS",
+      "title": "Sign-chart inequalities — rational, reciprocal, exponential, abs-vs-quadratic",
+      "chapter": 6,
+      "subsection": "6.4",
+      "context": "Five inequality claims follow in a fixed but nonstandard order. Work a rational inequality with a sign chart, then a quadratic-in-$1/x$ bound, an exponential inequality, an absolute-value-versus-quadratic comparison, and a second rational inequality that collapses to a single critical point.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Every real solution of $\\dfrac{x-2}{x+1}\\ge 0$ satisfies $x\\ge 2$.",
+        "For every real $x>0$, one has $x+\\dfrac{1}{x}\\ge 2$.",
+        "The solution set of $2^{x+1}\\le 16$ is exactly $(-\\infty,3]$.",
+        "Every real $x$ satisfying $|x-3|<x^{2}-5x+6$ also satisfies $x>4$.",
+        "The inequality $\\dfrac{x+2}{x-3}>1$ holds for every $x\\in(-\\infty,-2)$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet $a$ be the apprentice’s present age in years. Then the mentor is now $a+18$.\n\nIn $4$ years the apprentice will be $a+4$ and the mentor will be $a+22$. The future-age claim becomes\n\n$$\na+22=3(a+4)\n$$\n\n$$\na+22=3a+12\n$$\n\n$$\n22-12=3a-a\\qquad\\Rightarrow\\qquad 10=2a\\qquad\\Rightarrow\\qquad a=5\n$$\n\nThe apprentice is now $5$ years old, not $7$. The planner’s conclusion is wrong.\n\nSo the statement is False.",
-        "**B.** → False\n\nLet $w>0$ be the uniform frame width in centimetres. The outer rectangle measures $(24+2w)$ by $(16+2w)$. Its area is four times the print area $24\\cdot 16=384$:\n\n$$\n(24+2w)(16+2w)=4\\cdot 384=1536\n$$\n\nExpand:\n\n$$\n384+48w+32w+4w^{2}=1536\n$$\n\n$$\n4w^{2}+80w+384=1536\n$$\n\n$$\n4w^{2}+80w=1152\\qquad\\Rightarrow\\qquad w^{2}+20w-288=0\n$$\n\nDiscriminant:\n\n$$\n\\Delta=20^{2}+4\\cdot 288=400+1152=1552=4\\cdot 388\n$$\n\n$$\nw=\\dfrac{-20\\pm\\sqrt{1552}}{2}=-10\\pm\\sqrt{388}\n$$\n\nThe positive root is $w=-10+\\sqrt{388}$. Since $\\sqrt{361}=19$ and $\\sqrt{400}=20$, one has $\\sqrt{388}\\approx 19.70$, so\n\n$$\nw\\approx -10+19.70=9.70\n$$\n\nThe claim says the width is strictly less than $8\\ \\mathrm{cm}$. But $9.70\\nless 8$.\n\nSo the statement is False.",
-        "**C.** → True\n\nTime equals distance divided by speed. First leg:\n\n$$\nt_{1}=\\dfrac{15}{10}=\\dfrac{3}{2}\\ \\mathrm{h}\n$$\n\nSecond leg:\n\n$$\nt_{2}=\\dfrac{20}{15}=\\dfrac{4}{3}\\ \\mathrm{h}\n$$\n\nTotal:\n\n$$\nt=\\dfrac{3}{2}+\\dfrac{4}{3}=\\dfrac{9}{6}+\\dfrac{8}{6}=\\dfrac{17}{6}\\approx 2.833\\ \\mathrm{h}\n$$\n\n$$\n\\dfrac{17}{6}<3=\\dfrac{18}{6}\n$$\n\nbecause $17<18$. The whole trip really does take strictly less than $3$ hours.\n\nSo the statement is True.",
-        "**D.** → True\n\nDomain: every log argument positive, together with $x>1$, forces $x>1$. On that domain\n\n$$\n\\log\\bigl((x+2)(x-1)\\bigr)=\\log(3x+5)\n$$\n\n$$\n(x+2)(x-1)=3x+5\n$$\n\n$$\nx^{2}+x-2=3x+5\\qquad\\Rightarrow\\qquad x^{2}-2x-7=0\n$$\n\n$$\nx=\\dfrac{2\\pm\\sqrt{4+28}}{2}=1\\pm\\sqrt{8}=1\\pm 2\\sqrt{2}\n$$\n\nOnly the positive root can lie in $x>1$:\n\n$$\nx=1+2\\sqrt{2}\\approx 1+2\\cdot 1.414=3.828\n$$\n\n$$\n3.828<4\n$$\n\nSo the statement is True.",
-        "**E.** → False\n\nLet $a$ be the number of $3$-euro coins and $b$ the number of $7$-euro coins:\n\n$$\na+b=17,\\qquad 3a+7b=79\n$$\n\nSubstitute $a=17-b$:\n\n$$\n3(17-b)+7b=79\\qquad\\Rightarrow\\qquad 51+4b=79\\qquad\\Rightarrow\\qquad 4b=28\\qquad\\Rightarrow\\qquad b=7\n$$\n\nThere are exactly seven coins of $7$ euros. The claim asks for strictly more than eight:\n\n$$\n7\\ngtr 8\n$$\n\nSo the statement is False."
+        "**A.** → False\n\nCritical points $x=-1$ (vertical asymptote / undefined) and $x=2$ (zero). A sign chart on $(-\\infty,-1)$, $(-1,2)$, and $(2,\\infty)$ shows the quotient is nonnegative on\n\n$$\n(-\\infty,-1)\\cup[2,\\infty)\n$$\n\n(with $x=-1$ excluded). The point $x=-2$ is a solution but $-2\\ngeq 2$, so not every solution satisfies $x\\ge 2$.\n\nSo the statement is False.",
+        "**B.** → True\n\nFor $x>0$,\n\n$$\nx+\\dfrac{1}{x}-2=\\dfrac{x^{2}-2x+1}{x}=\\dfrac{(x-1)^{2}}{x}\\ge 0\n$$\n\nbecause the numerator is a square and the denominator is positive. Equality holds at $x=1$.\n\nSo the statement is True.",
+        "**C.** → True\n\nRewrite $16=2^{4}$:\n\n$$\n2^{x+1}\\le 2^{4}\n$$\n\nThe exponential base $2>1$ is increasing, so the inequality of exponents is\n\n$$\nx+1\\le 4\\qquad\\Rightarrow\\qquad x\\le 3\n$$\n\nThat is exactly $(-\\infty,3]$.\n\nSo the statement is True.",
+        "**D.** → False\n\nFactor the quadratic:\n\n$$\nx^{2}-5x+6=(x-2)(x-3)\n$$\n\nAt $x=0$ one finds\n\n$$\n|0-3|=3,\\qquad (0-2)(0-3)=6\n$$\n\nand $3<6$, so $x=0$ solves the strict inequality. But $0\\ngtr 4$, so the universal claim fails.\n\nSo the statement is False.",
+        "**E.** → False\n\nBring to one side:\n\n$$\n\\dfrac{x+2}{x-3}-1=\\dfrac{(x+2)-(x-3)}{x-3}=\\dfrac{5}{x-3}\n$$\n\nSo the inequality becomes $\\dfrac{5}{x-3}>0$, hence $x>3$. In particular it fails throughout $(-\\infty,-2)$ (for example at $x=-3$: $\\dfrac{-1}{-6}=\\dfrac{1}{6}\\nless 1$ wait — $\\dfrac{-1}{-6}=1/6\\ngtr 1$). Directly: at $x=-3$, $\\dfrac{-1}{-6}=\\dfrac{1}{6}\\ngtr 1$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Set up and solve five independent equation stories (linear ages, quadratic frame, motion times, log product, coin system), then accept or reject the claimed conclusion."
+      "solution_overview": "Five independent inequality checks with a new type order: rational sign chart, $x+1/x$, exponential with matched bases, absolute value versus a factored quadratic, and a rational inequality reducing to a single critical point."
     },
     {
-      "case_id": "MATH 5.MOCK.ALLOY",
-      "id": "MATH 5.MOCK.ALLOY",
-      "title": "Paint pigment blend and a break-even shift",
-      "chapter": 5,
-      "subsection": "5.5",
-      "context": "A studio blends pure pigment concentrate ($100\\%$ pigment) with a tinting base that is $20\\%$ pigment by mass.\n\nIt must produce exactly $80\\ \\mathrm{kg}$ of a mix that is $50\\%$ pigment.\n\nConcentrate costs EUR $12$ per kilogram and base costs EUR $3$ per kilogram.\n\nThe finished mix is sold at EUR $7.50$ per kilogram.\n\nSeparately, a workshop product has fixed costs EUR $4800$, variable cost EUR $8$ per unit, and selling price EUR $14$ per unit.",
-      "statements": [
-        "In the unique blend that meets the mass and pigment-content targets, more than $45\\ \\mathrm{kg}$ of tinting base must be used.",
-        "The total material cost of that $80\\ \\mathrm{kg}$ blend is less than EUR 500.",
-        "If the entire $80\\ \\mathrm{kg}$ blend is sold at the stated price, the profit on materials alone exceeds EUR 80.",
-        "The workshop product’s break-even output is fewer than $700$ units.",
-        "If fixed costs rise by $25\\%$ and the contribution margin per unit is unchanged, break-even output rises by exactly $25\\%$."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ be kilograms of concentrate and $y$ kilograms of base:\n\n$$\nx+y=80\n$$\n\nPigment balance ($50\\%$ of $80$ is $40$):\n\n$$\nx+0.2y=40\n$$\n\nSubstitute $x=80-y$:\n\n$$\n(80-y)+0.2y=40\\qquad\\Rightarrow\\qquad 80-0.8y=40\\qquad\\Rightarrow\\qquad y=50\n$$\n\nThen $x=30$. Base mass is $50\\ \\mathrm{kg}$:\n\n$$\n50>45\n$$\n\nSo the statement is True.",
-        "**B.** → False\n\nMaterial cost uses concentrate at EUR $12$ and base at EUR $3$:\n\n$$\n\\text{cost}=30\\cdot 12+50\\cdot 3=360+150=510\n$$\n\nThe claim says the cost is less than EUR $500$. But\n\n$$\n510\\nless 500\n$$\n\nSo the statement is False.",
-        "**C.** → True\n\nRevenue from selling all $80\\ \\mathrm{kg}$ at EUR $7.50$ per kg:\n\n$$\n\\text{revenue}=80\\cdot 7.50=600\n$$\n\nProfit on materials alone:\n\n$$\n600-510=90>80\n$$\n\nSo the statement is True.",
-        "**D.** → False\n\nContribution margin per unit:\n\n$$\n14-8=6\n$$\n\nBreak-even:\n\n$$\nQ_{\\mathrm{BE}}=\\dfrac{4800}{6}=800\n$$\n\nThe claim says fewer than $700$ units:\n\n$$\n800\\nless 700\n$$\n\nSo the statement is False.",
-        "**E.** → True\n\nWrite $Q=F/m$. After a $25\\%$ rise in fixed cost,\n\n$$\nQ'=\\dfrac{1.25F}{m}=1.25\\,Q\n$$\n\nThat is exactly a $25\\%$ increase. Numerically $Q'=1.25\\cdot 800=1000$.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Solve the pigment blend, price materials using euro amounts written outside math mode, then compare break-even before and after a proportional fixed-cost shock."
-    },
-    {
-      "case_id": "MATH 6.MOCK.HARDINEQ",
-      "id": "MATH 6.MOCK.HARDINEQ",
-      "title": "Hard inequalities — radical, double absolute, rational, mixed system",
-      "chapter": 6,
-      "subsection": "6.5",
-      "context": "Each letter is an independent hard inequality.\n\nA radical inequality, a two-absolute sum, a rational inequality with cancellation, a comparison of two absolute values, and a mixed absolute–radical system appear in turn.\n\nDecide whether each statement is true or false.",
-      "statements": [
-        "The solution set of $\\sqrt{2x-1}\\le x-2$ is exactly $[2,+\\infty)$.",
-        "The solution set of $|x-3|+|x+1|<8$ is exactly $(-3,5)$.",
-        "After cancelling a common factor, the inequality $\\dfrac{x^{2}-16}{x^{2}-x-12}\\le 0$ has solution set exactly $[-4,-3)$.",
-        "Every number in the open interval $(1,2)$ satisfies $|3x-1|\\ge |x+4|$.",
-        "The system $|x+2|\\le 4$ and $\\sqrt{x+3}\\ge 2$ has exactly two integer solutions."
-      ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nDomain of the square root:\n\n$$\n2x-1\\ge 0\\qquad\\Rightarrow\\qquad x\\ge \\dfrac{1}{2}\n$$\n\nA square root is $\\ge 0$, so the right-hand side must be nonnegative:\n\n$$\nx-2\\ge 0\\qquad\\Rightarrow\\qquad x\\ge 2\n$$\n\nOn $x\\ge 2$ squaring preserves the inequality:\n\n$$\n2x-1\\le (x-2)^{2}=x^{2}-4x+4\n$$\n\n$$\n0\\le x^{2}-6x+5=(x-1)(x-5)\n$$\n\nSo $x\\le 1$ or $x\\ge 5$. Intersect with $x\\ge 2$:\n\n$$\nx\\in[5,+\\infty)\n$$\n\nThe claim says $[2,+\\infty)$. Take $x=3\\ge 2$:\n\n$$\n\\sqrt{5}\\approx 2.24,\\qquad 3-2=1\n$$\n\n$$\n2.24\\nless 1\n$$\n\nso $x=3$ is not a solution. The claimed set is wrong.\n\nSo the statement is False.",
-        "**B.** → True\n\nThe kinks are at $x=-1$ and $x=3$. Split into three pieces.\n\n**Piece 1:** $x\\ge 3$. Then\n\n$$\n(x-3)+(x+1)=2x-2<8\\qquad\\Rightarrow\\qquad x<5\n$$\n\nso $x\\in[3,5)$.\n\n**Piece 2:** $-1\\le x\\le 3$. Then\n\n$$\n(3-x)+(x+1)=4<8\n$$\n\nalways, so the whole $[-1,3]$ survives.\n\n**Piece 3:** $x<-1$. Then\n\n$$\n(3-x)+(-x-1)=2-2x<8\\qquad\\Rightarrow\\qquad x>-3\n$$\n\nso $x\\in(-3,-1)$.\n\nUnite:\n\n$$\n(-3,-1)\\cup[-1,3]\\cup[3,5)=(-3,5)\n$$\n\nThat matches the claim exactly.\n\nSo the statement is True.",
-        "**C.** → True\n\nFactor:\n\n$$\n\\dfrac{x^{2}-16}{x^{2}-x-12}=\\dfrac{(x-4)(x+4)}{(x-4)(x+3)}\n$$\n\nCancel $x-4$ where $x\\ne 4$ (and note $x=-3$ is a pole). For $x\\ne 4$,\n\n$$\n\\dfrac{x+4}{x+3}\\le 0\n$$\n\nwhich holds on $[-4,-3)$. The excluded point $x=4$ is not in that interval, so the solution set is exactly $[-4,-3)$.\n\nSo the statement is True.",
-        "**D.** → False\n\nSquare both sides (both nonnegative):\n\n$$\n(3x-1)^{2}\\ge (x+4)^{2}\n$$\n\n$$\n9x^{2}-6x+1\\ge x^{2}+8x+16\n$$\n\n$$\n8x^{2}-14x-15\\ge 0\n$$\n\nRoots of $8x^{2}-14x-15=0$:\n\n$$\n\\Delta=196+480=676=26^{2},\\qquad x=\\dfrac{14\\pm 26}{16}\n$$\n\n$$\nx=\\dfrac{40}{16}=\\dfrac{5}{2},\\qquad x=\\dfrac{-12}{16}=-\\dfrac{3}{4}\n$$\n\nThe parabola opens upwards, so it is nonnegative outside the roots:\n\n$$\nx\\in\\Bigl(-\\infty,-\\dfrac{3}{4}\\Bigr]\\cup\\Bigl[\\dfrac{5}{2},+\\infty\\Bigr)\n$$\n\nThe interval $(1,2)$ lies strictly between those roots, so no point of $(1,2)$ satisfies the inequality.\n\nSo the statement is False.",
-        "**E.** → True\n\nFirst inequality:\n\n$$\n|x+2|\\le 4\\qquad\\Rightarrow\\qquad -6\\le x\\le 2\n$$\n\nSecond: $\\sqrt{x+3}\\ge 2$ with domain $x\\ge -3$ forces\n\n$$\nx+3\\ge 4\\qquad\\Rightarrow\\qquad x\\ge 1\n$$\n\nIntersect:\n\n$$\nx\\in[1,2]\n$$\n\nThe integers in that closed interval are exactly $1$ and $2$ — two of them.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "For each letter: fix domain, expand or square carefully, read a sign chart or piece-wise absolute formula, then compare the resulting set with the claim."
-    },
-    {
-      "case_id": "MATH 7.MOCK.PARA",
-      "id": "MATH 7.MOCK.PARA",
-      "title": "Numeric parabola with slope family — threshold claims",
+      "case_id": "MATH 7.MOCK.REVENUE",
+      "id": "MATH 7.MOCK.REVENUE",
+      "title": "Kiosk revenue — quadratic rebuild from second differences",
       "chapter": 7,
-      "subsection": "7.3",
-      "context": "A parabola is given by\n\n$$\ng(x)=2x^{2}-8x-10\n$$\n\nLines through its vertex form the family\n\n$$\nf_{m}(x)=m(x-2)-18\n$$\n\nDecide whether each statement is true or false.",
+      "subsection": "7.2",
+      "context": "A kiosk records revenue $R(q)$ (in euro) against packs sold $q$. Four observed pairs are:\n\n| $q$ (packs) | $R(q)$ (euro) |\n| ---: | ---: |\n| $1$ | $38$ |\n| $2$ | $72$ |\n| $3$ | $102$ |\n| $4$ | $128$ |\n\nFirst differences of $R$ fall by a constant second difference of $-4$, so $R$ is exactly quadratic on these integers. Extend that same quadratic model to nearby integers and to the vertex. Decide whether each statement is true or false.",
       "statements": [
-        "The product of the two roots of $g(x)=0$ is strictly smaller than $-4$.",
-        "Completing the square shows that the minimum value of $g$ is strictly less than $-15$.",
-        "When $m=6$, the second intersection (other than the vertex) lies strictly between $x=4$ and $x=6$.",
-        "There is more than one real slope $m$ for which $y=f_{m}$ meets $y=g$ at exactly one point.",
-        "When $m=-10$, the distance between the two intersection $x$-coordinates exceeds $4$."
+        "The unique quadratic with those four values is $R(q)=-2q^{2}+40q$.",
+        "Under that quadratic model, $R(5)$ is strictly greater than $145$.",
+        "The model’s vertex (maximum on the reals) occurs at $q=10$.",
+        "The maximal modelled revenue is strictly greater than $200$ euro.",
+        "The first differences $R(2)-R(1)$, $R(3)-R(2)$, $R(4)-R(3)$ form an arithmetic sequence with common difference $-4$."
       ],
       "answer_key": [
         true,
@@ -847,138 +847,138 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSolve $g(x)=0$:\n\n$$\n2x^{2}-8x-10=0\\qquad\\Rightarrow\\qquad x^{2}-4x-5=0\n$$\n\n$$\n(x-5)(x+1)=0\n$$\n\nThe roots are $x=5$ and $x=-1$. Their product is\n\n$$\n5\\cdot(-1)=-5<-4\n$$\n\n(Alternatively, by Vieta on $x^{2}-4x-5=0$ the product of roots is the constant term $-5$.)\n\nSo the statement is True.",
-        "**B.** → True\n\nComplete the square:\n\n$$\ng(x)=2\\bigl(x^{2}-4x\\bigr)-10=2\\bigl((x-2)^{2}-4\\bigr)-10\n$$\n\n$$\n=2(x-2)^{2}-8-10=2(x-2)^{2}-18\n$$\n\nThe square term is always $\\ge 0$, so the minimum value is $-18$, attained at $x=2$:\n\n$$\n-18<-15\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\nForm the difference:\n\n$$\ng(x)-f_{m}(x)=2(x-2)^{2}-18-\\bigl(m(x-2)-18\\bigr)\n$$\n\n$$\n=2(x-2)^{2}-m(x-2)=(x-2)\\bigl(2(x-2)-m\\bigr)\n$$\n\nThe intersection $x$-coordinates are therefore $x=2$ (the vertex) and\n\n$$\nx=2+\\dfrac{m}{2}\n$$\n\nFor $m=6$,\n\n$$\nx=2+3=5\n$$\n\nand $4<5<6$, so the second intersection lies strictly between $4$ and $6$.\n\nSo the statement is True.",
-        "**D.** → False\n\nFrom the factorisation in C, the intersection abscissae coincide precisely when\n\n$$\n\\dfrac{m}{2}=0\\qquad\\Rightarrow\\qquad m=0\n$$\n\nFor every other real slope the graphs meet at two points. Therefore there is exactly one real slope giving a single common point — namely $m=0$ — and not more than one.\n\nSo the statement is False.",
-        "**E.** → True\n\nWhen $m=-10$ the two intersection $x$-coordinates are the vertex $x=2$ and\n\n$$\nx=2+\\dfrac{-10}{2}=2-5=-3\n$$\n\nDistance:\n\n$$\n\\bigl|2-(-3)\\bigr|=5>4\n$$\n\nSo the statement is True."
+        "**A.** → True\n\nAssume $R(q)=aq^{2}+bq+c$. The four table values overdetermine a quadratic, but constant second differences of $-4$ force $2a=-4$, so $a=-2$. Matching $R(1)=38$ and $R(2)=72$:\n\n$$\n-2+b+c=38,\\qquad -8+2b+c=72\n$$\n\nSubtract: $-6+b=34$, so $b=40$, then $c=0$. Hence\n\n$$\nR(q)=-2q^{2}+40q\n$$\n\nand it reproduces $R(3)=102$, $R(4)=128$ as well.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nR(5)=-2\\cdot 25+40\\cdot 5=-50+200=150\n$$\n\n$$\n150>145\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nFor $R(q)=-2q^{2}+40q$ the vertex abscissa is\n\n$$\nq=-\\dfrac{b}{2a}=-\\dfrac{40}{2(-2)}=10\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nAt the vertex $q=10$,\n\n$$\nR(10)=-2\\cdot 100+40\\cdot 10=-200+400=200\n$$\n\nThe claim asks for a value strictly greater than $200$ euro, but the maximum equals $200$, so $200\\ngtr 200$.\n\nSo the statement is False.",
+        "**E.** → True\n\nRead the first differences from the table:\n\n$$\n72-38=34,\\qquad 102-72=30,\\qquad 128-102=26\n$$\n\nThen\n\n$$\n30-34=-4,\\qquad 26-30=-4\n$$\n\nso the first differences form an arithmetic sequence with common difference $-4$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Factor $g$, complete the square for the minimum, factor $g-f_m$ to read both intersections, then compare products, values, and distances with the claimed thresholds."
+      "solution_overview": "Constant second difference $-4$ forces $a=-2$; fit $b,c$ from the table to get $R(q)=-2q^{2}+40q$. Letters then evaluate $R(5)$, the vertex, and the first-difference pattern. Keep euro amounts in prose, not inside math."
     },
     {
-      "case_id": "MATH 8.MOCK.CAP",
-      "id": "MATH 8.MOCK.CAP",
-      "title": "Two-thirds power throughput — one known exponent, one calibration",
+      "case_id": "MATH 8.MOCK.SCALE",
+      "id": "MATH 8.MOCK.SCALE",
+      "title": "Two power-law shipping costs — scale factors and elasticity",
       "chapter": 8,
       "subsection": "8.3",
-      "context": "Warehouse throughput follows\n\n$$\nC(w)=A\\,w^{2/3}\\qquad(w>0)\n$$\n\nwith unknown $A>0$. Engineering fixes the two-thirds exponent; only the scale $A$ must be read from data.\n\nOne calibration run: at $w=8$ dock-hours the measured throughput is $24$.\n\nEach unit of throughput earns EUR $5$, and each dock-hour costs EUR $4$.\n\nProfit is $\\pi(w)=5\\,C(w)-4w$.",
+      "context": "Two shipping cost models (in euro) depend on package weight $w>0$:\n\n$$\nC_{A}(w)=A\\,w^{3/2},\\qquad C_{B}(w)=B\\,w^{1/2}\n$$\n\nwith unknown positive constants $A,B$. Calibration at weight $w=4$ gives $C_{A}(4)=64$ and $C_{B}(4)=20$. The elasticity of either model is the logarithmic derivative $\\dfrac{\\mathrm{d}(\\ln C)}{\\mathrm{d}(\\ln w)}$, which equals the power of $w$. Decide whether each statement is true or false.",
       "statements": [
-        "Doubling dock-hours multiplies throughput by more than $1.5$.",
-        "The profit-maximising dock-hour level exceeds $100$.",
-        "At that profit-maximising level, throughput already exceeds $160$.",
-        "At the interior profit maximum, marginal revenue from an extra dock-hour equals the EUR $4$ marginal cost.",
-        "Moving from the profit-maximising level to twice that many dock-hours cuts profit by more than half."
+        "The calibrated constants are $A=8$ and $B=10$.",
+        "At weight $w=9$, model A costs strictly more than $200$ euro.",
+        "If weight doubles from any $w>0$, model A’s cost is multiplied by exactly $2\\sqrt{2}$.",
+        "The elasticity of model B with respect to weight equals $\\dfrac{1}{2}$.",
+        "There exists a weight $w>0$ at which the two calibrated costs are equal and that weight is strictly less than $1$."
       ],
       "answer_key": [
         true,
         true,
-        false,
+        true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWrite throughput at $w$ and at $2w$:\n\n$$\nC(w)=A w^{2/3},\\qquad C(2w)=A(2w)^{2/3}=A\\,2^{2/3}\\,w^{2/3}\n$$\n\nThe multiplication factor is\n\n$$\n\\dfrac{C(2w)}{C(w)}=2^{2/3}\n$$\n\nThe unknown scale $A$ cancels. Numerically\n\n$$\n2^{2/3}\\approx 1.587>1.5\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\nRecover $A$ from $C(8)=24$:\n\n$$\nA\\cdot 8^{2/3}=24\\qquad\\Rightarrow\\qquad A\\cdot 4=24\\qquad\\Rightarrow\\qquad A=6\n$$\n\nThroughput is $C(w)=6\\,w^{2/3}$. Profit becomes\n\n$$\n\\pi(w)=5\\cdot 6\\,w^{2/3}-4w=30\\,w^{2/3}-4w\n$$\n\nDifferentiate:\n\n$$\n\\pi'(w)=30\\cdot\\dfrac{2}{3}w^{-1/3}-4=20\\,w^{-1/3}-4\n$$\n\nSet the derivative to zero:\n\n$$\n\\dfrac{20}{w^{1/3}}=4\\qquad\\Rightarrow\\qquad w^{1/3}=5\\qquad\\Rightarrow\\qquad w=125\n$$\n\nThe second derivative $\\pi''(w)=-\\dfrac{20}{3}w^{-4/3}<0$ for every $w>0$, so $w=125$ is a maximum:\n\n$$\n125>100\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nAt $w=125$ with $C(w)=6\\,w^{2/3}$:\n\n$$\nC(125)=6\\cdot 125^{2/3}=6\\cdot 25=150\n$$\n\n$$\n150\\ngtr 160\n$$\n\nSo the statement is False.",
-        "**D.** → True\n\nProfit is $\\pi(w)=5\\,C(w)-4w$, so\n\n$$\n\\pi'(w)=5\\,C'(w)-4\n$$\n\nHere $5\\,C'(w)$ is the marginal revenue earned by one extra dock-hour, and $4$ is the EUR $4$ marginal cost. An interior maximum requires $\\pi'(w)=0$, which rearranges to\n\n$$\n5\\,C'(w)=4\n$$\n\nThat is exactly the first-order condition used in B. At the maximiser, marginal revenue equals marginal cost.\n\nSo the statement is True.",
-        "**E.** → False\n\nEvaluate profit at the optimum and at twice that level:\n\n$$\n\\pi(125)=30\\cdot 25-4\\cdot 125=750-500=250\n$$\n\n$$\n\\pi(250)=30\\cdot 250^{2/3}-4\\cdot 250\n$$\n\nSince $250=125\\cdot 2$, one has $250^{2/3}=25\\cdot 2^{2/3}$, so\n\n$$\n\\pi(250)=30\\cdot 25\\cdot 2^{2/3}-1000=750\\cdot 2^{2/3}-1000\n$$\n\n$$\n\\approx 750\\cdot 1.587-1000\\approx 1190-1000=190\n$$\n\nRelative to $250$, profit falls to about $190/250=0.76$, a cut of roughly $24\\%$, not more than half.\n\nSo the statement is False."
+        "**A.** → True\n\nFrom $C_{A}(4)=64$:\n\n$$\nA\\cdot 4^{3/2}=A\\cdot (2^{2})^{3/2}=A\\cdot 2^{3}=8A=64\\qquad\\Rightarrow\\qquad A=8\n$$\n\nFrom $C_{B}(4)=20$:\n\n$$\nB\\cdot 4^{1/2}=2B=20\\qquad\\Rightarrow\\qquad B=10\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nC_{A}(9)=8\\cdot 9^{3/2}=8\\cdot (3^{2})^{3/2}=8\\cdot 3^{3}=8\\cdot 27=216\n$$\n\nKeep the currency in prose: $216$ euro is strictly more than $200$ euro.\n\nSo the statement is True.",
+        "**C.** → True\n\nReplacing $w$ by $2w$ multiplies $C_{A}$ by\n\n$$\n(2w)^{3/2}/w^{3/2}=2^{3/2}=2\\sqrt{2}\n$$\n\nindependent of $w$ and of $A$.\n\nSo the statement is True.",
+        "**D.** → True\n\nFor $C_{B}(w)=B w^{1/2}$,\n\n$$\n\\ln C_{B}=\\ln B+\\dfrac{1}{2}\\ln w\n$$\n\nso\n\n$$\n\\dfrac{\\mathrm{d}(\\ln C_{B})}{\\mathrm{d}(\\ln w)}=\\dfrac{1}{2}\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\nSet $8w^{3/2}=10w^{1/2}$ with $w>0$ and divide by $w^{1/2}$:\n\n$$\n8w=10\\qquad\\Rightarrow\\qquad w=\\dfrac{10}{8}=1.25\n$$\n\nThe crossing weight is $1.25$, which is not strictly less than $1$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Keep the two-thirds exponent fixed, recover $A$ from $C(8)=24$, form $\\pi(w)=30 w^{2/3}-4w$, solve $\\pi'=0$, then adjudicate ratio, throughput, FOC, and a counterfactual profit comparison."
+      "solution_overview": "Calibrate $A=8$, $B=10$ at $w=4$. Compare scale-up factors $2^{3/2}$ vs $2^{1/2}$, read elasticity as the exponent, and solve $C_A=C_B$ for the crossing weight."
     },
     {
-      "case_id": "MATH 9.MOCK.SHIFT",
-      "id": "MATH 9.MOCK.SHIFT",
-      "title": "Packing-line cubic — roots, critical values, multi-step checks",
+      "case_id": "MATH 9.MOCK.FACTORP",
+      "id": "MATH 9.MOCK.FACTORP",
+      "title": "Cubic from three roots — factor and remainder theorems",
       "chapter": 9,
-      "subsection": "9.3",
-      "context": "A packing line’s short-run output rate (units per hour) is\n\n$$\np(t)=t^{3}-7t^{2}+14t-8\n$$\n\nThe shift window is $0\\le t\\le 6$, with $t$ in hours.\n\nDecide whether each statement is true or false.",
+      "subsection": "9.2",
+      "context": "A cubic polynomial is built from three real roots,\n\n$$\np(x)=(x-1)(x-2)(x-4)=x^{3}-7x^{2}+14x-8\n$$\n\nUse the factor theorem and the remainder theorem. Decide whether each statement is true or false.",
       "statements": [
-        "The product of the three real roots of $p(t)=0$ (allowing roots outside the shift window) is strictly positive.",
-        "On the open interval between the two critical points, the output rate is strictly decreasing.",
-        "At $t=2$, the instantaneous slope $p'(2)$ is strictly less than $-1$.",
-        "The larger critical abscissa exceeds $3.1$, and the output rate there is strictly negative.",
-        "Over the closed shift $[0,6]$, the highest output rate exceeds $45$."
+        "The remainder when $p(x)$ is divided by $x-3$ is strictly less than $-1$.",
+        "The factor theorem guarantees that $x-2$ divides $p(x)$ exactly.",
+        "The sum of the roots of $p(x)=0$, counting multiplicity, equals $7$.",
+        "If $q(x)=p(x)+6$, then $q(1)=0$.",
+        "On the interval $[0,5]$, the equation $p(x)=0$ has exactly three solutions."
       ],
       "answer_key": [
         true,
         true,
         true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nLook for an obvious rational root of $p(t)=t^{3}-7t^{2}+14t-8$. Try $t=1$:\n\n$$\n1-7+14-8=0\n$$\n\nso $t-1$ is a factor. Polynomial division gives\n\n$$\np(t)=(t-1)(t^{2}-6t+8)=(t-1)(t-2)(t-4)\n$$\n\nThe three real roots are $1$, $2$, and $4$. Their product is\n\n$$\n1\\cdot 2\\cdot 4=8>0\n$$\n\nAlternatively, for a monic cubic $t^{3}+at^{2}+bt+c=0$ Vieta says the product of roots equals $-c$. Here $c=-8$, so the product is $8$.\n\nSo the statement is True.",
-        "**B.** → True\n\nDifferentiate:\n\n$$\np'(t)=3t^{2}-14t+14\n$$\n\nDiscriminant:\n\n$$\n\\Delta=(-14)^{2}-4\\cdot 3\\cdot 14=196-168=28=4\\cdot 7\n$$\n\nso there are two distinct real critical points\n\n$$\nt=\\dfrac{14\\pm\\sqrt{28}}{6}=\\dfrac{14\\pm 2\\sqrt{7}}{6}=\\dfrac{7\\pm\\sqrt{7}}{3}\n$$\n\nBecause the leading coefficient of $p'$ is positive, $p'(t)<0$ strictly between the two roots. Therefore on that open interval the output rate $p$ is strictly decreasing.\n\nSo the statement is True.",
-        "**C.** → True\n\nFrom B, $p'(t)=3t^{2}-14t+14$. At $t=2$:\n\n$$\np'(2)=3\\cdot 4-14\\cdot 2+14=12-28+14=-2\n$$\n\n$$\n-2<-1\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\nThe larger critical abscissa is\n\n$$\nt_{+}=\\dfrac{7+\\sqrt{7}}{3}\n$$\n\nSince $\\sqrt{7}\\approx 2.646$,\n\n$$\nt_{+}\\approx\\dfrac{7+2.646}{3}=\\dfrac{9.646}{3}\\approx 3.215>3.1\n$$\n\nThis critical point lies between the roots $2$ and $4$ of $p$. On $(2,4)$ the factorisation $p(t)=(t-1)(t-2)(t-4)$ has\n\n$$\nt-1>0,\\qquad t-2>0,\\qquad t-4<0\n$$\n\nso the product is negative. In particular $p(t_{+})<0$.\n\nSo the statement is True.",
-        "**E.** → False\n\nEvaluate the endpoints:\n\n$$\np(0)=-8,\\qquad p(6)=216-252+84-8=40\n$$\n\nThe local maximum on $(0,6)$ is at the smaller critical point\n\n$$\nt_{-}=\\dfrac{7-\\sqrt{7}}{3}\\approx\\dfrac{7-2.646}{3}\\approx 1.451\n$$\n\nNumerically $p(t_{-})\\approx 1.05$, well below the right endpoint. The local minimum at $t_{+}$ is negative. Therefore the highest output rate on $[0,6]$ is $p(6)=40$, which does not exceed $45$:\n\n$$\n40\\ngtr 45\n$$\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Factor or use Vieta, solve $p'=0$, evaluate slopes and local values, then compare the global maximum on $[0,6]$ with a threshold."
-    },
-    {
-      "case_id": "MATH 10.MOCK.FORCE",
-      "id": "MATH 10.MOCK.FORCE",
-      "title": "Population growth and continuous force of interest",
-      "chapter": 10,
-      "subsection": "10.3",
-      "context": "A city population grows continuously according to\n\n$$\nP(t)=P_{0}e^{kt}\n$$\n\nAt $t=0$ the population is $1200$, and at $t=4$ years it is $1800$.\n\nSeparately, a continuously compounded savings account follows\n\n$$\nA(t)=2000\\,e^{\\delta t}\n$$\n\nIt opens at EUR $2000$ and stands at EUR $3200$ after $8$ years.\n\nDecide whether each statement is true or false.",
-      "statements": [
-        "The continuous growth rate satisfies $k>0.095$.",
-        "The time needed for the population to double is strictly less than $7$ years.",
-        "After $8$ years the population is still strictly above $2700$.",
-        "The account’s continuous force of interest satisfies $\\delta>0.06$.",
-        "The account first reaches EUR $5000$ at some time $t>15$ years."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe growth law is $P(t)=P_{0}e^{kt}$ with $P_{0}=1200$. At $t=4$,\n\n$$\n1200\\,e^{4k}=1800\\qquad\\Rightarrow\\qquad e^{4k}=\\dfrac{3}{2}\n$$\n\n$$\n4k=\\ln\\dfrac{3}{2}\\qquad\\Rightarrow\\qquad k=\\dfrac{\\ln 1.5}{4}\n$$\n\nSince $\\ln 1.5\\approx 0.4055$,\n\n$$\nk\\approx\\dfrac{0.4055}{4}\\approx 0.1014>0.095\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\nDoubling time $T$ satisfies $e^{kT}=2$, so\n\n$$\nT=\\dfrac{\\ln 2}{k}\n$$\n\nUsing $k\\approx 0.1014$ and $\\ln 2\\approx 0.6931$,\n\n$$\nT\\approx\\dfrac{0.6931}{0.1014}\\approx 6.84\\ \\mathrm{years}<7\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nAfter $8=2\\cdot 4$ years the population multiplies twice by the four-year factor $3/2$:\n\n$$\nP(8)=1200\\left(\\dfrac{3}{2}\\right)^{2}=1200\\cdot\\dfrac{9}{4}=2700\n$$\n\nThe claim asks for a population strictly above $2700$:\n\n$$\n2700\\ngtr 2700\n$$\n\nSo the statement is False.",
-        "**D.** → False\n\nThe account satisfies $A(8)=2000\\,e^{8\\delta}=3200$. Divide by $2000$:\n\n$$\ne^{8\\delta}=\\dfrac{3200}{2000}=1.6\n$$\n\n$$\n\\delta=\\dfrac{\\ln 1.6}{8}\n$$\n\nSince $\\ln 1.6\\approx 0.4700$,\n\n$$\n\\delta\\approx\\dfrac{0.4700}{8}\\approx 0.0588\n$$\n\n$$\n0.0588\\ngtr 0.06\n$$\n\nSo the statement is False.",
-        "**E.** → True\n\nSolve $A(t)=5000$:\n\n$$\n2000\\,e^{\\delta t}=5000\\qquad\\Rightarrow\\qquad e^{\\delta t}=2.5\n$$\n\n$$\nt=\\dfrac{\\ln 2.5}{\\delta}\n$$\n\nUsing $\\delta\\approx 0.0588$ and $\\ln 2.5\\approx 0.9163$,\n\n$$\nt\\approx\\dfrac{0.9163}{0.0588}\\approx 15.58>15\n$$\n\nSo the account first reaches EUR $5000$ after more than $15$ years.\n\nSo the statement is True."
+        "**A.** → True\n\nThe remainder theorem says the remainder on division by $x-3$ is $p(3)$:\n\n$$\np(3)=27-63+42-8=-2\n$$\n\n$$\n-2<-1\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nBy construction $p(2)=(2-1)(2-2)(2-4)=0$. The factor theorem therefore yields an exact factor $x-2$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor a monic cubic $x^{3}+ax^{2}+bx+c$, the sum of roots is $-a$. Here $a=-7$, so the sum is $7$. Directly: $1+2+4=7$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\nq(1)=p(1)+6=0+6=6\\neq 0\n$$\n\nShifting the constant term by $+6$ destroys the root at $x=1$.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe three roots are $1$, $2$, and $4$, and each lies in $[0,5]$. A cubic has at most three roots unless identically zero, so there are exactly three solutions on that interval.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Read $P(0)=1200$, $P(4)=1800$ into $P(t)=P_0 e^{kt}$ and $A(0)=2000$, $A(8)=3200$ into $A(t)=2000 e^{\\delta t}$, then adjudicate the five thresholds."
+      "solution_overview": "Expand or keep $p(x)=(x-1)(x-2)(x-4)$. Letters apply the remainder theorem at $x=3$, the factor theorem at a known root, Vieta’s sum, a constant shift, and a root count on $[0,5]$."
     },
     {
-      "case_id": "MATH 11.MOCK.PRODLOG",
-      "id": "MATH 11.MOCK.PRODLOG",
-      "title": "Long log-product-exponential derivative — max/min without formula spoon-feed",
+      "case_id": "MATH 10.MOCK.COMPOUND",
+      "id": "MATH 10.MOCK.COMPOUND",
+      "title": "Discrete compound versus continuous force — comparison and log change-of-base",
+      "chapter": 10,
+      "subsection": "10.3",
+      "context": "An endowment of $P_{0}=1000$ euro is tracked under two interest conventions (currency kept in prose):\n\n- Discrete annual compounding at $5\\%$ per year: $D(t)=1000\\cdot(1.05)^{t}$ after $t$ years.\n- Continuous force of interest $\\delta=\\ln(1.05)$: $C(t)=1000\\,e^{\\delta t}$.\n\nA third experimental account uses continuous force $0.05$ exactly: $E(t)=1000\\,e^{0.05 t}$. Decide whether each statement is true or false.",
+      "statements": [
+        "For every $t\\ge 0$, the discrete account and the continuous account with force $\\delta=\\ln(1.05)$ give exactly the same balance.",
+        "After $10$ years, the experimental account $E(10)$ is strictly larger than the discrete account $D(10)$.",
+        "The continuous force $\\delta=\\ln(1.05)$ is strictly smaller than $0.05$.",
+        "Using the change-of-base formula, $\\log_{1.05}(2)=\\dfrac{\\ln 2}{\\ln 1.05}$ is strictly greater than $15$.",
+        "If the discrete rate switches from $5\\%$ to $3\\%$ after year $4$, the balance at $t=4$ is still exactly $1000\\cdot(1.05)^{4}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWith $\\delta=\\ln(1.05)$,\n\n$$\nC(t)=1000\\,e^{(\\ln 1.05)\\,t}=1000\\cdot(1.05)^{t}=D(t)\n$$\n\nfor every $t$. The two conventions are algebraically identical.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\dfrac{E(10)}{1000}=e^{0.5}\\approx 1.6487,\\qquad \\dfrac{D(10)}{1000}=(1.05)^{10}\\approx 1.6289\n$$\n\nso $E(10)>D(10)$.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe elementary inequality $e^{r}>1+r$ for $r=0.05>0$ rearranges to\n\n$$\ne^{0.05}>1.05\\qquad\\Rightarrow\\qquad 0.05>\\ln(1.05)\n$$\n\nSo $\\delta=\\ln(1.05)$ is strictly smaller than $0.05$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\n\\log_{1.05}(2)=\\dfrac{\\ln 2}{\\ln 1.05}\\approx\\dfrac{0.693147}{0.048790}\\approx 14.21\n$$\n\nNow $14.21\\ngtr 15$, so the claim fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nA rate switch that begins only after year $4$ does not change the path on $[0,4]$. At the instant $t=4$ one still has\n\n$$\n1000\\cdot(1.05)^{4}\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Identify $e^{(\\ln 1.05)t}=(1.05)^{t}$, compare $e^{0.05t}$ with discrete compounding, bound $\\ln(1.05)$, evaluate $\\log_{1.05}2$ via change of base, and note that a post-year-4 rate switch leaves the $t=4$ balance unchanged."
+    },
+    {
+      "case_id": "MATH 11.MOCK.QUOT",
+      "id": "MATH 11.MOCK.QUOT",
+      "title": "Payoff x²e^{-x} — critical point, log derivative, average vs marginal",
       "chapter": 11,
       "subsection": "11.4",
-      "context": "For $x>0$ define\n\n$$\nf(x)=(x^{2}+1)\\ln(x+2)\\,e^{-x}\n$$\n\nThe claims concern critical points and max/min behaviour.\n\nDecide whether each statement is true or false.",
+      "context": "For $x>0$ define the smooth payoff\n\n$$\nf(x)=x^{2}e^{-x}\n$$\n\nCritical points come from the product rule (equivalently from $\\dfrac{f'}{f}$). Decide whether each statement is true or false.",
       "statements": [
-        "The function $f$ has a critical point in the open interval $(0.5,2.5)$.",
-        "That critical point in $(0.5,2.5)$ is a local minimum of $f$.",
-        "The value $f(1)$ is strictly greater than $0.7$.",
-        "Just after $x=3$, the function $f$ is still decreasing.",
-        "On the whole half-line $(0,\\infty)$, $f$ is strictly increasing."
+        "On $(0,\\infty)$, the function $f$ has a unique critical point, and it lies at $x=2$.",
+        "The global maximum value of $f$ on $(0,\\infty)$ is strictly greater than $0.6$.",
+        "The logarithmic derivative satisfies $\\dfrac{f'(x)}{f(x)}=\\dfrac{2}{x}-1$ for every $x>0$.",
+        "For every $x>2$, the marginal payoff $f'(x)$ is negative.",
+        "The average payoff $\\dfrac{f(x)}{x}$ equals $xe^{-x}$, and this average is strictly decreasing on $(2,\\infty)$."
       ],
       "answer_key": [
         true,
         false,
         true,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWrite $f$ as a product of three positive factors on $x>0$:\n\n$$\nf(x)=(x^{2}+1)\\cdot\\ln(x+2)\\cdot e^{-x}\n$$\n\n(For $x>0$ one has $x+2>2$, so $\\ln(x+2)>0$.) Logarithmic differentiation gives\n\n$$\n\\dfrac{f'(x)}{f(x)}=\\dfrac{2x}{x^{2}+1}+\\dfrac{1}{(x+2)\\ln(x+2)}-1\n$$\n\nEvaluate at the endpoints of the claimed interval.\n\nAt $x=0.5$:\n\n$$\n\\dfrac{2\\cdot 0.5}{0.25+1}=\\dfrac{1}{1.25}=0.8\n$$\n\n$$\n\\dfrac{1}{2.5\\cdot\\ln 2.5},\\qquad \\ln 2.5\\approx 0.9163\\qquad\\Rightarrow\\qquad \\dfrac{1}{2.5\\cdot 0.9163}\\approx 0.437\n$$\n\n$$\n0.8+0.437-1\\approx 0.237>0\n$$\n\nAt $x=2.5$:\n\n$$\n\\dfrac{2\\cdot 2.5}{6.25+1}=\\dfrac{5}{7.25}\\approx 0.690\n$$\n\n$$\n\\dfrac{1}{4.5\\cdot\\ln 4.5},\\qquad \\ln 4.5\\approx 1.504\\qquad\\Rightarrow\\qquad \\dfrac{1}{4.5\\cdot 1.504}\\approx 0.148\n$$\n\n$$\n0.690+0.148-1\\approx -0.162<0\n$$\n\nSince $f>0$, the sign of $f'$ matches the sign of $f'/f$. By the intermediate-value theorem, $f'/f$ (hence $f'$) has a zero in $(0.5,2.5)$.\n\nSo the statement is True.",
-        "**B.** → False\n\nFrom A, the logarithmic derivative is positive at $x=0.5$ and negative at $x=2.5$. Crossing a simple zero of $f'$ from $+$ to $-$ means $f$ itself changes from increasing to decreasing. That is a local maximum, not a local minimum.\n\nSo the statement is False.",
-        "**C.** → True\n\nSubstitute $x=1$:\n\n$$\nf(1)=(1+1)\\ln 3\\,e^{-1}=\\dfrac{2\\ln 3}{e}\n$$\n\nUse $\\ln 3\\approx 1.0986$ and $e\\approx 2.7183$:\n\n$$\nf(1)\\approx\\dfrac{2\\cdot 1.0986}{2.7183}\\approx\\dfrac{2.197}{2.7183}\\approx 0.808>0.7\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\nEvaluate the logarithmic derivative from A at $x=3$:\n\n$$\n\\dfrac{2\\cdot 3}{9+1}=\\dfrac{6}{10}=0.6\n$$\n\n$$\n\\dfrac{1}{5\\cdot\\ln 5},\\qquad \\ln 5\\approx 1.6094\\qquad\\Rightarrow\\qquad \\dfrac{1}{5\\cdot 1.6094}\\approx 0.124\n$$\n\n$$\n0.6+0.124-1=-0.276<0\n$$\n\nAlso $f(3)=(9+1)\\ln 5\\,e^{-3}>0$. Therefore $f'(3)<0$, so just after $x=3$ the function is still decreasing.\n\nSo the statement is True.",
-        "**E.** → False\n\nA function that is strictly increasing on the whole half-line $(0,\\infty)$ cannot have an interior local maximum. But A–B show that $f$ has a local maximum in $(0.5,2.5)$. On the left of that point $f$ increases; on the right it decreases for a while (as confirmed at $x=3$ in D). Hence $f$ is not strictly increasing on all of $(0,\\infty)$.\n\nSo the statement is False."
+        "**A.** → True\n\nDifferentiate as a product $u=x^{2}$, $v=e^{-x}$:\n\n$$\nf'(x)=2xe^{-x}-x^{2}e^{-x}=xe^{-x}(2-x)\n$$\n\nOn $(0,\\infty)$ one has $x>0$ and $e^{-x}>0$, so $f'(x)=0$ precisely when $x=2$. That critical point is unique in the open interval.\n\nSo the statement is True.",
+        "**B.** → False\n\nAt the critical point,\n\n$$\nf(2)=4e^{-2}\\approx 4\\cdot 0.135335=0.541\n$$\n\nNow $0.541\\ngtr 0.6$, so the claimed lower bound on the maximum fails.\n\nSo the statement is False.",
+        "**C.** → True\n\nFrom A, for $x>0$,\n\n$$\n\\dfrac{f'(x)}{f(x)}=\\dfrac{xe^{-x}(2-x)}{x^{2}e^{-x}}=\\dfrac{2-x}{x}=\\dfrac{2}{x}-1\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nFor $x>2$, the factor $(2-x)$ is negative while $xe^{-x}>0$, hence $f'(x)<0$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\n\\dfrac{f(x)}{x}=xe^{-x}\n$$\n\nDifferentiate the average:\n\n$$\n\\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\bigl(xe^{-x}\\bigr)=e^{-x}(1-x)\n$$\n\nOn $(2,\\infty)$ one has $1-x<0$, so the average is strictly decreasing there.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Differentiate via $\\ln f$, classify the critical point, and adjudicate value/monotonicity thresholds without putting the finished $f'$ formula into the claim text."
+      "solution_overview": "Use $f'(x)=xe^{-x}(2-x)$ to locate the unique positive critical point at $x=2$, evaluate $4e^{-2}$, read $f'/f=2/x-1$, and compare the average $xe^{-x}$ on $(2,\\infty)$."
     },
     {
       "case_id": "MATH 12.25",
@@ -1012,35 +1012,35 @@
       "solution_overview": "This problem involves calculating probabilities related to 5-card poker hands dealt from a standard 52-card deck. Amanda is dealt a 5-card hand, and the selection is uniformly random, meaning every possible 5-card subset of the deck is equally likely. Since the order in which cards are received does not matter, we will use combinations to determine the number of distinct hands.\n\nLet $N_{\\text{total}}$ represent the total number of distinct 5-card hands possible. This is calculated using the combination formula for choosing 5 cards from 52:\n$$N_{\\text{total}} = \\binom{52}{5}$$\n$$N_{\\text{total}} = \\frac{52 \\times 51 \\times 50 \\times 49 \\times 48}{5 \\times 4 \\times 3 \\times 2 \\times 1}$$\n$$N_{\\text{total}} = 2,598,960$$\n\nThis value, $N_{\\text{total}} = 2,598,960$, will serve as the denominator for all probability calculations. To find the probability of a specific type of hand, $H$, we will count the number of ways to form that hand, $N_H$, and then divide by $N_{\\text{total}}$. When comparing probabilities of two hand types, say $H_1$ and $H_2$, we can simply compare their counts $N_{H_1}$ and $N_{H_2}$, as the total number of hands $N_{\\text{total}}$ is a constant denominator."
     },
     {
-      "case_id": "MATH 13.18",
-      "id": "math-13-18",
-      "title": "Sales-call binomial — strong-day thresholds",
+      "case_id": "MATH 13.52",
+      "id": "math-13-52",
+      "title": "Vaccine antibody classification — binomial certification thresholds",
       "chapter": 13,
       "subsection": "13",
-      "context": "Two sales reps each make $25$ independent calls in a day. Rep A is new (probability $0.30$ of converting a call into a sale). Rep B is experienced (probability $0.68$).\n\nA “strong day” means more than half of the $25$ calls convert — that is, at least $13$ sales. Calls are independent within and across reps.\n\nDecide whether each statement is true or false.",
+      "context": "A vaccine trial has lab technicians classify antibody responses across $35$ independent samples. Tech A is a first-year analyst (success probability $p=0.38$ of correctly classifying a sample). Tech B is a lead analyst ($p=0.94$).\n\nTo pass certification, a technician must correctly classify at least $30$ of the $35$ samples. Treat classifications as independent Bernoulli trials within and across technicians.\n\nDecide whether each binomial claim is true or false.",
       "statements": [
-        "Rep A's probability of converting all 25 calls is greater than 0.0000001%.",
-        "The probability that Rep A has a strong day is greater than the probability of exactly 13.",
-        "Rep B is more than 50 times as likely as Rep A to have a strong day.",
-        "Rep A's variance in number of conversions is greater than Rep B's variance.",
-        "The expected number of conversions for Rep B is more than double that of Rep A."
+        "Tech A's probability of correctly classifying all 35 samples is less than 0.0000000000002%.",
+        "Tech A's probability of between 22 and 27 correct classifications is greater than the probability of exactly 22.",
+        "Tech B is more than 150,000,000 times as likely as Tech A to pass certification.",
+        "Tech A is more than 3 times as likely as Tech B to land in the 22–27 range.",
+        "Tech A's standard deviation in number of correct classifications is more than double Tech B's standard deviation."
       ],
       "answer_key": [
+        true,
+        true,
         false,
-        true,
-        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nA perfect run means every one of the $n$ trials succeeds. Independence lets us multiply the success probability across all trials, which is the binomial PMF at $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFor side A, $p = 0.3$ and $n = 25$:\n\n$$\nP(X = 25)\n$$\n\n$$\n(0.3)^{25} = 0\n$$\n\n$$\n8.4729 \\times 10^{-12}\\%\n$$\n\nThe claim compares this with $1 \\times 10^{-7}\\%$. We got about $8.4729 \\times 10^{-12}\\%$, which is below the cutoff.\n\nSo the statement is False.\n",
-        "**B.** → True\n\nThe named event covers every admissible count from 13 through 25, not only the single count 13. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=13)$.\n\nSo the statement is True.\n",
-        "**C.** → True\n\nClearing the cutoff means at least 13 successes out of 25. That event is the union of the mutually exclusive outcomes $X = 13, 14, \\ldots, 25$, so we add the individual binomial probabilities:\n\n$$\nP(X \\ge 13) = \\sum_{x = 13}^{25} \\binom{25}{x} p^{x} (1-p)^{25-x}\n$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 25$, $p = 0.3$):\n\n$$\nP(X = 13) = \\binom{25}{13} (0.3)^{13} (0.7)^{12}\n$$\n\n$$\n\\binom{25}{13} = \\dfrac{25!}{13!(25-13)!}\n$$\n\n$$\n\\dfrac{25!}{13!(12)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17 \\cdot 16 \\cdot 15 \\cdot 14}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10 \\cdot 11 \\cdot 12}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n741354768000 \\cdot 16 = 11861676288000\n$$\n\n$$\n11861676288000 \\cdot 15 = 177925144320000\n$$\n\n$$\n177925144320000 \\cdot 14 = 2490952020480000\n$$\n\n$$\n\\dfrac{2490952020480000}{479001600} = 5200300\n$$\n\n$$\n\\binom{25}{13} = 5200300\n$$\n\n$$\n(0.3)^{13} = 1.594323 \\times 10^{-7}\n$$\n\n$$\n(0.7)^{12} = 0.013841287201\n$$\n\n$$\n5200300 \\times 1.594323 \\times 10^{-7} = 0.82909578969\n$$\n\n$$\n0.82909578969 \\times 0.013841287201 = 0.011475752942\n$$\n\n$$\nP(X = 13) = 0.011475752942\n$$\n\n$$\nP(X = 14) = \\binom{25}{14} (0.3)^{14} (0.7)^{11}\n$$\n\n$$\n\\binom{25}{14} = \\dfrac{25!}{14!(25-14)!}\n$$\n\n$$\n\\dfrac{25!}{14!(11)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17 \\cdot 16 \\cdot 15}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10 \\cdot 11}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n741354768000 \\cdot 16 = 11861676288000\n$$\n\n$$\n11861676288000 \\cdot 15 = 177925144320000\n$$\n\n$$\n\\dfrac{177925144320000}{39916800} = 4457400\n$$\n\n$$\n\\binom{25}{14} = 4457400\n$$\n\n$$\n(0.3)^{14} = 4.782969 \\times 10^{-8}\n$$\n\n$$\n(0.7)^{11} = 0.01977326743\n$$\n\n$$\n4457400 \\times 4.782969 \\times 10^{-8} = 0.213196060206\n$$\n\n$$\n0.213196060206 \\times 0.01977326743 = 0.004215582713\n$$\n\n$$\nP(X = 14) = 0.004215582713\n$$\n\n$$\nP(X = 15) = \\binom{25}{15} (0.3)^{15} (0.7)^{10}\n$$\n\n$$\n\\binom{25}{15} = \\dfrac{25!}{15!(25-15)!}\n$$\n\n$$\n\\dfrac{25!}{15!(10)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17 \\cdot 16}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9 \\cdot 10}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n741354768000 \\cdot 16 = 11861676288000\n$$\n\n$$\n\\dfrac{11861676288000}{3628800} = 3268760\n$$\n\n$$\n\\binom{25}{15} = 3268760\n$$\n\n$$\n(0.3)^{15} = 1.434891 \\times 10^{-8}\n$$\n\n$$\n(0.7)^{10}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n0.0823543 \\times 0.7 = 0.05764801\n$$\n\n$$\n0.05764801 \\times 0.7 = 0.040353607\n$$\n\n$$\n0.040353607 \\times 0.7 = 0.0282475249\n$$\n\n$$\n(0.7)^{10} = 0.0282475249\n$$\n\n$$\n3268760 \\times 1.434891 \\times 10^{-8} = 0.046903133245\n$$\n\n$$\n0.046903133245 \\times 0.0282475249 = 0.001324897424\n$$\n\n$$\nP(X = 15) = 0.001324897424\n$$\n\n$$\nP(X = 16) = \\binom{25}{16} (0.3)^{16} (0.7)^{9}\n$$\n\n$$\n\\binom{25}{16} = \\dfrac{25!}{16!(25-16)!}\n$$\n\n$$\n\\dfrac{25!}{16!(9)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18 \\cdot 17}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8 \\cdot 9}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n43609104000 \\cdot 17 = 741354768000\n$$\n\n$$\n\\dfrac{741354768000}{362880} = 2042975\n$$\n\n$$\n\\binom{25}{16} = 2042975\n$$\n\n$$\n(0.3)^{16} = 4.304672 \\times 10^{-9}\n$$\n\n$$\n(0.7)^{9}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n0.0823543 \\times 0.7 = 0.05764801\n$$\n\n$$\n0.05764801 \\times 0.7 = 0.040353607\n$$\n\n$$\n(0.7)^{9} = 0.040353607\n$$\n\n$$\n2042975 \\times 4.304672 \\times 10^{-9} = 0.008794337483\n$$\n\n$$\n0.008794337483 \\times 0.040353607 = 0.000354883239\n$$\n\n$$\nP(X = 16) = 0.000354883239\n$$\n\n$$\nP(X = 17) = \\binom{25}{17} (0.3)^{17} (0.7)^{8}\n$$\n\n$$\n\\binom{25}{17} = \\dfrac{25!}{17!(25-17)!}\n$$\n\n$$\n\\dfrac{25!}{17!(8)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19 \\cdot 18}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n2422728000 \\cdot 18 = 43609104000\n$$\n\n$$\n\\dfrac{43609104000}{40320} = 1081575\n$$\n\n$$\n\\binom{25}{17} = 1081575\n$$\n\n$$\n(0.3)^{17} = 1.291402 \\times 10^{-9}\n$$\n\n$$\n(0.7)^{8}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n0.0823543 \\times 0.7 = 0.05764801\n$$\n\n$$\n(0.7)^{8} = 0.05764801\n$$\n\n$$\n1081575 \\times 1.291402 \\times 10^{-9} = 0.001396747718\n$$\n\n$$\n0.001396747718 \\times 0.05764801 = 8.051973 \\times 10^{-5}\n$$\n\n$$\nP(X = 17) = 8.051973 \\times 10^{-5}\n$$\n\n$$\nP(X = 18) = \\binom{25}{18} (0.3)^{18} (0.7)^{7}\n$$\n\n$$\n\\binom{25}{18} = \\dfrac{25!}{18!(25-18)!}\n$$\n\n$$\n\\dfrac{25!}{18!(7)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20 \\cdot 19}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n127512000 \\cdot 19 = 2422728000\n$$\n\n$$\n\\dfrac{2422728000}{5040} = 480700\n$$\n\n$$\n\\binom{25}{18} = 480700\n$$\n\n$$\n(0.3)^{18} = 0\n$$\n\n$$\n(0.7)^{7}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n0.117649 \\times 0.7 = 0.0823543\n$$\n\n$$\n(0.7)^{7} = 0.0823543\n$$\n\n$$\n480700 \\times 0 = 0.000186233029\n$$\n\n$$\n0.000186233029 \\times 0.0823543 = 1.533709 \\times 10^{-5}\n$$\n\n$$\nP(X = 18) = 1.533709 \\times 10^{-5}\n$$\n\n$$\nP(X = 19) = \\binom{25}{19} (0.3)^{19} (0.7)^{6}\n$$\n\n$$\n\\binom{25}{19} = \\dfrac{25!}{19!(25-19)!}\n$$\n\n$$\n\\dfrac{25!}{19!(6)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21 \\cdot 20}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n6375600 \\cdot 20 = 127512000\n$$\n\n$$\n\\dfrac{127512000}{720} = 177100\n$$\n\n$$\n\\binom{25}{19} = 177100\n$$\n\n$$\n(0.3)^{19} = 0\n$$\n\n$$\n(0.7)^{6}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n0.16807 \\times 0.7 = 0.117649\n$$\n\n$$\n(0.7)^{6} = 0.117649\n$$\n\n$$\n177100 \\times 0 = 2.058365 \\times 10^{-5}\n$$\n\n$$\n2.058365 \\times 10^{-5} \\times 0.117649 = 2.421646 \\times 10^{-6}\n$$\n\n$$\nP(X = 19) = 2.421646 \\times 10^{-6}\n$$\n\n$$\nP(X = 20) = \\binom{25}{20} (0.3)^{20} (0.7)^{5}\n$$\n\n$$\n\\binom{25}{20} = \\dfrac{25!}{20!(25-20)!}\n$$\n\n$$\n\\dfrac{25!}{20!(5)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22 \\cdot 21}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n303600 \\cdot 21 = 6375600\n$$\n\n$$\n\\dfrac{6375600}{120} = 53130\n$$\n\n$$\n\\binom{25}{20} = 53130\n$$\n\n$$\n(0.3)^{20} = 0\n$$\n\n$$\n(0.7)^{5}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n0.2401 \\times 0.7 = 0.16807\n$$\n\n$$\n(0.7)^{5} = 0.16807\n$$\n\n$$\n53130 \\times 0 = 1.852529 \\times 10^{-6}\n$$\n\n$$\n1.852529 \\times 10^{-6} \\times 0.16807 = 3.113545 \\times 10^{-7}\n$$\n\n$$\nP(X = 20) = 3.113545 \\times 10^{-7}\n$$\n\n$$\nP(X = 21) = \\binom{25}{21} (0.3)^{21} (0.7)^{4}\n$$\n\n$$\n\\binom{25}{21} = \\dfrac{25!}{21!(25-21)!}\n$$\n\n$$\n\\dfrac{25!}{21!(4)!} = \\dfrac{25 \\cdot 24 \\cdot 23 \\cdot 22}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n13800 \\cdot 22 = 303600\n$$\n\n$$\n\\dfrac{303600}{24} = 12650\n$$\n\n$$\n\\binom{25}{21} = 12650\n$$\n\n$$\n(0.3)^{21} = 0\n$$\n\n$$\n(0.7)^{4}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n0.343 \\times 0.7 = 0.2401\n$$\n\n$$\n(0.7)^{4} = 0.2401\n$$\n\n$$\n12650 \\times 0 = 1.323235 \\times 10^{-7}\n$$\n\n$$\n1.323235 \\times 10^{-7} \\times 0.2401 = 3.177086 \\times 10^{-8}\n$$\n\n$$\nP(X = 21) = 3.177086 \\times 10^{-8}\n$$\n\n$$\nP(X = 22) = \\binom{25}{22} (0.3)^{22} (0.7)^{3}\n$$\n\n$$\n\\binom{25}{22} = \\dfrac{25!}{22!(25-22)!}\n$$\n\n$$\n\\dfrac{25!}{22!(3)!} = \\dfrac{25 \\cdot 24 \\cdot 23}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n600 \\cdot 23 = 13800\n$$\n\n$$\n\\dfrac{13800}{6} = 2300\n$$\n\n$$\n\\binom{25}{22} = 2300\n$$\n\n$$\n(0.3)^{22} = 0\n$$\n\n$$\n(0.7)^{3}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n0.49 \\times 0.7 = 0.343\n$$\n\n$$\n(0.7)^{3} = 0.343\n$$\n\n$$\n2300 \\times 0 = 7.217644 \\times 10^{-9}\n$$\n\n$$\n7.217644 \\times 10^{-9} \\times 0.343 = 2.475652 \\times 10^{-9}\n$$\n\n$$\nP(X = 22) = 2.475652 \\times 10^{-9}\n$$\n\n$$\nP(X = 23) = \\binom{25}{23} (0.3)^{23} (0.7)^{2}\n$$\n\n$$\n\\binom{25}{23} = \\dfrac{25!}{23!(25-23)!}\n$$\n\n$$\n\\dfrac{25!}{23!(2)!} = \\dfrac{25 \\cdot 24}{1 \\cdot 2}\n$$\n\n$$\n25 \\cdot 24 = 600\n$$\n\n$$\n\\dfrac{600}{2} = 300\n$$\n\n$$\n\\binom{25}{23} = 300\n$$\n\n$$\n(0.3)^{23} = 0\n$$\n\n$$\n(0.7)^{2}\n$$\n\n$$\n0.7 \\times 0.7 = 0.49\n$$\n\n$$\n(0.7)^{2} = 0.49\n$$\n\n$$\n300 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.49 = 0\n$$\n\n$$\nP(X = 23) = 0\n$$\n\n$$\nP(X = 24) = \\binom{25}{24} (0.3)^{24} (0.7)^{1}\n$$\n\n$$\n\\binom{25}{24} = \\dfrac{25!}{24!(25-24)!}\n$$\n\n$$\n\\binom{25}{24} = 25\n$$\n\n$$\n(0.3)^{24} = 0\n$$\n\n$$\n(0.7)^{1} = 0.7\n$$\n\n$$\n25 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.7 = 0\n$$\n\n$$\nP(X = 24) = 0\n$$\n\n$$\nP(X = 25) = \\binom{25}{25} (0.3)^{25} (0.7)^{0}\n$$\n\n$$\n\\binom{25}{25} = 1\n$$\n\n$$\n(0.3)^{25} = 0\n$$\n\n$$\n(0.7)^{0} = 1\n$$\n\n$$\n1 \\times 0 = 0\n$$\n\n$$\n0 \\times 1 = 0\n$$\n\n$$\nP(X = 25) = 0\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0115 + 0.0042 + 0.0013\n$$\n\n$$\n+ 0.0004 + 8.052 \\times 10^{-5} + 1.5337 \\times 10^{-5}\n$$\n\n$$\n+ 2.4216 \\times 10^{-6} + 3.1135 \\times 10^{-7} + 3.1771 \\times 10^{-8}\n$$\n\n$$\n+ 2.4757 \\times 10^{-9} + 1.3839 \\times 10^{-10} + 4.9425 \\times 10^{-12}\n$$\n\n$$\n+ 0\n$$\n\n$$\nP(X \\ge 13)\n$$\n\n$$\n0.0175\n$$\n\n$$\n1.75\\%\n$$\n\nSide B ($n = 25$, $p = 0.68$):\n\n$$\nP(X = 13) = \\binom{25}{13} (0.68)^{13} (0.32)^{12}\n$$\n\n$$\n(0.68)^{13} = 0.006646849802\n$$\n\n$$\n(0.32)^{12} = 1.152922 \\times 10^{-6}\n$$\n\n$$\n5200300 \\times 0.006646849802 = 34565.613024699538\n$$\n\n$$\n34565.613024699538 \\times 1.152922 \\times 10^{-6} = 0.039851438576\n$$\n\n$$\nP(X = 13) = 0.039851438576\n$$\n\n$$\nP(X = 14) = \\binom{25}{14} (0.68)^{14} (0.32)^{11}\n$$\n\n$$\n(0.68)^{14} = 0.004519857865\n$$\n\n$$\n(0.32)^{11} = 3.60288 \\times 10^{-6}\n$$\n\n$$\n4457400 \\times 0.004519857865 = 20146.81444868202\n$$\n\n$$\n20146.81444868202 \\times 3.60288 \\times 10^{-6} = 0.072586548835\n$$\n\n$$\nP(X = 14) = 0.072586548835\n$$\n\n$$\nP(X = 15) = \\binom{25}{15} (0.68)^{15} (0.32)^{10}\n$$\n\n$$\n(0.68)^{15} = 0.003073503348\n$$\n\n$$\n(0.32)^{10}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n0.000343597384 \\times 0.32 = 0.000109951163\n$$\n\n$$\n0.000109951163 \\times 0.32 = 3.518437 \\times 10^{-5}\n$$\n\n$$\n3.518437 \\times 10^{-5} \\times 0.32 = 1.1259 \\times 10^{-5}\n$$\n\n$$\n(0.32)^{10} = 1.1259 \\times 10^{-5}\n$$\n\n$$\n3268760 \\times 0.003073503348 = 10046.544805076102\n$$\n\n$$\n10046.544805076102 \\times 1.1259 \\times 10^{-5} = 0.113114038601\n$$\n\n$$\nP(X = 15) = 0.113114038601\n$$\n\n$$\nP(X = 16) = \\binom{25}{16} (0.68)^{16} (0.32)^{9}\n$$\n\n$$\n(0.68)^{16} = 0.002089982277\n$$\n\n$$\n(0.32)^{9}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n0.000343597384 \\times 0.32 = 0.000109951163\n$$\n\n$$\n(0.32)^{9} = 3.518437 \\times 10^{-5}\n$$\n\n$$\n2042975 \\times 0.002089982277 = 4269.781542157343\n$$\n\n$$\n4269.781542157343 \\times 3.518437 \\times 10^{-5} = 0.150229582517\n$$\n\n$$\nP(X = 16) = 0.150229582517\n$$\n\n$$\nP(X = 17) = \\binom{25}{17} (0.68)^{17} (0.32)^{8}\n$$\n\n$$\n(0.68)^{17} = 0.001421187948\n$$\n\n$$\n(0.32)^{8}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n0.000343597384 \\times 0.32 = 0.000109951163\n$$\n\n$$\n(0.32)^{8} = 0.000109951163\n$$\n\n$$\n1081575 \\times 0.001421187948 = 1537.121355176644\n$$\n\n$$\n1537.121355176644 \\times 0.000109951163 = 0.169008280332\n$$\n\n$$\nP(X = 17) = 0.169008280332\n$$\n\n$$\nP(X = 18) = \\binom{25}{18} (0.68)^{18} (0.32)^{7}\n$$\n\n$$\n(0.68)^{18} = 0.000966407805\n$$\n\n$$\n(0.32)^{7}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n0.001073741824 \\times 0.32 = 0.000343597384\n$$\n\n$$\n(0.32)^{7} = 0.000343597384\n$$\n\n$$\n480700 \\times 0.000966407805 = 464.552231786719\n$$\n\n$$\n464.552231786719 \\times 0.000343597384 = 0.159618931425\n$$\n\n$$\nP(X = 18) = 0.159618931425\n$$\n\n$$\nP(X = 19) = \\binom{25}{19} (0.68)^{19} (0.32)^{6}\n$$\n\n$$\n(0.68)^{19} = 0.000657157307\n$$\n\n$$\n(0.32)^{6}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n0.0033554432 \\times 0.32 = 0.001073741824\n$$\n\n$$\n(0.32)^{6} = 0.001073741824\n$$\n\n$$\n177100 \\times 0.000657157307 = 116.382559121304\n$$\n\n$$\n116.382559121304 \\times 0.001073741824 = 0.124964821313\n$$\n\n$$\nP(X = 19) = 0.124964821313\n$$\n\n$$\nP(X = 20) = \\binom{25}{20} (0.68)^{20} (0.32)^{5}\n$$\n\n$$\n(0.68)^{20} = 0.000446866969\n$$\n\n$$\n(0.32)^{5}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n0.01048576 \\times 0.32 = 0.0033554432\n$$\n\n$$\n(0.32)^{5} = 0.0033554432\n$$\n\n$$\n53130 \\times 0.000446866969 = 23.742042060746\n$$\n\n$$\n23.742042060746 \\times 0.0033554432 = 0.079665073587\n$$\n\n$$\nP(X = 20) = 0.079665073587\n$$\n\n$$\nP(X = 21) = \\binom{25}{21} (0.68)^{21} (0.32)^{4}\n$$\n\n$$\n(0.68)^{21} = 0.000303869539\n$$\n\n$$\n(0.32)^{4}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n0.032768 \\times 0.32 = 0.01048576\n$$\n\n$$\n(0.32)^{4} = 0.01048576\n$$\n\n$$\n12650 \\times 0.000303869539 = 3.843949666978\n$$\n\n$$\n3.843949666978 \\times 0.01048576 = 0.04030673366\n$$\n\n$$\nP(X = 21) = 0.04030673366\n$$\n\n$$\nP(X = 22) = \\binom{25}{22} (0.68)^{22} (0.32)^{3}\n$$\n\n$$\n(0.68)^{22} = 0.000206631286\n$$\n\n$$\n(0.32)^{3}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n0.1024 \\times 0.32 = 0.032768\n$$\n\n$$\n(0.32)^{3} = 0.032768\n$$\n\n$$\n2300 \\times 0.000206631286 = 0.475251958826\n$$\n\n$$\n0.475251958826 \\times 0.032768 = 0.015573056187\n$$\n\n$$\nP(X = 22) = 0.015573056187\n$$\n\n$$\nP(X = 23) = \\binom{25}{23} (0.68)^{23} (0.32)^{2}\n$$\n\n$$\n(0.68)^{23} = 0.000140509275\n$$\n\n$$\n(0.32)^{2}\n$$\n\n$$\n0.32 \\times 0.32 = 0.1024\n$$\n\n$$\n(0.32)^{2} = 0.1024\n$$\n\n$$\n300 \\times 0.000140509275 = 0.042152782435\n$$\n\n$$\n0.042152782435 \\times 0.1024 = 0.004316444921\n$$\n\n$$\nP(X = 23) = 0.004316444921\n$$\n\n$$\nP(X = 24) = \\binom{25}{24} (0.68)^{24} (0.32)^{1}\n$$\n\n$$\n(0.68)^{24} = 9.554631 \\times 10^{-5}\n$$\n\n$$\n(0.32)^{1} = 0.32\n$$\n\n$$\n25 \\times 9.554631 \\times 10^{-5} = 0.002388657671\n$$\n\n$$\n0.002388657671 \\times 0.32 = 0.000764370455\n$$\n\n$$\nP(X = 24) = 0.000764370455\n$$\n\n$$\nP(X = 25) = \\binom{25}{25} (0.68)^{25} (0.32)^{0}\n$$\n\n$$\n(0.68)^{25} = 6.497149 \\times 10^{-5}\n$$\n\n$$\n(0.32)^{0} = 1\n$$\n\n$$\n1 \\times 6.497149 \\times 10^{-5} = 6.497149 \\times 10^{-5}\n$$\n\n$$\n6.497149 \\times 10^{-5} \\times 1 = 6.497149 \\times 10^{-5}\n$$\n\n$$\nP(X = 25) = 6.497149 \\times 10^{-5}\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0399 + 0.0726 + 0.1131\n$$\n\n$$\n+ 0.1502 + 0.169 + 0.1596\n$$\n\n$$\n+ 0.125 + 0.0797 + 0.0403\n$$\n\n$$\n+ 0.0156 + 0.0043 + 0.0008\n$$\n\n$$\n+ 6.4971 \\times 10^{-5}\n$$\n\n$$\nP(X \\ge 13)\n$$\n\n$$\n0.9701\n$$\n\n$$\n97.01\\%\n$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\n\\frac{P_B(X \\ge 13)}{P_A(X \\ge 13)}\n$$\n\n$$\n\\frac{97.01\\%}{1.75\\%}\n$$\n\n$$\n55.53\n$$\n\nSince $55.53 > 50$.\n\nSo the statement is True.\n",
-        "**D.** → False\n\nFor a binomial count $X \\sim \\mathrm{Bin}(n,p)$, write $X$ as the sum of $n$ independent Bernoulli trials with success probability $p$. Each trial has variance $p(1-p)$, and variances of independent summands add, so\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nThis is largest when $p$ is closest to $\\frac{1}{2}$, not when $p$ itself is largest.\n\nSide A with $n_A = 25$, $p_A = 0.3$:\n\n$$\n\\mathrm{Var}(A) = 25 \\cdot 0.3 \\cdot 0.7\n$$\n\n$$\n25 \\times 0.3 = 7.5\n$$\n\n$$\n7.5 \\times 0.7 = 5.25\n$$\n\nSide B with $n_B = 25$, $p_B = 0.68$:\n\n$$\n\\mathrm{Var}(B) = 25 \\cdot 0.68 \\cdot 0.32\n$$\n\n$$\n25 \\times 0.68 = 17\n$$\n\n$$\n17 \\times 0.32 = 5.44\n$$\n\nSo $\\mathrm{Var}(A) = 5.25$ and $\\mathrm{Var}(B) = 5.44$.\n\nThe claim’s comparison is incorrect.\n\nSo the statement is False.\n",
-        "**E.** → True\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 25 \\cdot 0.3\n$$\n\n$$\n25 \\times 0.3 = 7.5\n$$\n\n$$\nE[B] = 25 \\cdot 0.68\n$$\n\n$$\n25 \\times 0.68 = 17\n$$\n\nThe mean ratio (B relative to A) is\n\n$$\n\\frac{E[B]}{E[A]} = \\frac{17}{7.5}\n$$\n\n$$\n2.2667\n$$\n\n(Double would mean a ratio of $2$.).\n\nSo the statement is True.\n"
+        "**A.** → True\n\nA perfect run means every one of the $n$ trials succeeds. Independence lets us multiply the success probability across all trials, which is the binomial PMF at $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFor side A, $p = 0.38$ and $n = 35$:\n\n$$\nP(X = 35)\n$$\n\n$$\n(0.38)^{35} = 0\n$$\n\n$$\n0\\%\n$$\n\nThe claim compares this with $0\\%$. We got about $0\\%$, which is below the cutoff.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nThe named event covers every admissible count from 22 through 27, not only the single count 22. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=22)$.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nClearing the cutoff means at least 30 successes out of 35. That event is the union of the mutually exclusive outcomes $X = 30, 31, \\ldots, 35$, so we add the individual binomial probabilities:\n\n$$\nP(X \\ge 30) = \\sum_{x = 30}^{35} \\binom{35}{x} p^{x} (1-p)^{35-x}\n$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 35$, $p = 0.38$):\n\n$$\nP(X = 30) = \\binom{35}{30} (0.38)^{30} (0.62)^{5}\n$$\n\n$$\n\\binom{35}{30} = \\dfrac{35!}{30!(35-30)!}\n$$\n\n$$\n\\dfrac{35!}{30!(5)!} = \\dfrac{35 \\cdot 34 \\cdot 33 \\cdot 32 \\cdot 31}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n1190 \\cdot 33 = 39270\n$$\n\n$$\n39270 \\cdot 32 = 1256640\n$$\n\n$$\n1256640 \\cdot 31 = 38955840\n$$\n\n$$\n\\dfrac{38955840}{120} = 324632\n$$\n\n$$\n\\binom{35}{30} = 324632\n$$\n\n$$\n(0.38)^{30} = 0\n$$\n\n$$\n(0.62)^{5}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n0.3844 \\times 0.62 = 0.238328\n$$\n\n$$\n0.238328 \\times 0.62 = 0.14776336\n$$\n\n$$\n0.14776336 \\times 0.62 = 0.0916132832\n$$\n\n$$\n(0.62)^{5} = 0.0916132832\n$$\n\n$$\n324632 \\times 0 = 8.033397 \\times 10^{-8}\n$$\n\n$$\n8.033397 \\times 10^{-8} \\times 0.0916132832 = 7.359659 \\times 10^{-9}\n$$\n\n$$\nP(X = 30) = 7.359659 \\times 10^{-9}\n$$\n\n$$\nP(X = 31) = \\binom{35}{31} (0.38)^{31} (0.62)^{4}\n$$\n\n$$\n\\binom{35}{31} = \\dfrac{35!}{31!(35-31)!}\n$$\n\n$$\n\\dfrac{35!}{31!(4)!} = \\dfrac{35 \\cdot 34 \\cdot 33 \\cdot 32}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n1190 \\cdot 33 = 39270\n$$\n\n$$\n39270 \\cdot 32 = 1256640\n$$\n\n$$\n\\dfrac{1256640}{24} = 52360\n$$\n\n$$\n\\binom{35}{31} = 52360\n$$\n\n$$\n(0.38)^{31} = 0\n$$\n\n$$\n(0.62)^{4}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n0.3844 \\times 0.62 = 0.238328\n$$\n\n$$\n0.238328 \\times 0.62 = 0.14776336\n$$\n\n$$\n(0.62)^{4} = 0.14776336\n$$\n\n$$\n52360 \\times 0 = 4.923695 \\times 10^{-9}\n$$\n\n$$\n4.923695 \\times 10^{-9} \\times 0.14776336 = 0\n$$\n\n$$\nP(X = 31) = 0\n$$\n\n$$\nP(X = 32) = \\binom{35}{32} (0.38)^{32} (0.62)^{3}\n$$\n\n$$\n\\binom{35}{32} = \\dfrac{35!}{32!(35-32)!}\n$$\n\n$$\n\\dfrac{35!}{32!(3)!} = \\dfrac{35 \\cdot 34 \\cdot 33}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n1190 \\cdot 33 = 39270\n$$\n\n$$\n\\dfrac{39270}{6} = 6545\n$$\n\n$$\n\\binom{35}{32} = 6545\n$$\n\n$$\n(0.38)^{32} = 0\n$$\n\n$$\n(0.62)^{3}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n0.3844 \\times 0.62 = 0.238328\n$$\n\n$$\n(0.62)^{3} = 0.238328\n$$\n\n$$\n6545 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.238328 = 0\n$$\n\n$$\nP(X = 32) = 0\n$$\n\n$$\nP(X = 33) = \\binom{35}{33} (0.38)^{33} (0.62)^{2}\n$$\n\n$$\n\\binom{35}{33} = \\dfrac{35!}{33!(35-33)!}\n$$\n\n$$\n\\dfrac{35!}{33!(2)!} = \\dfrac{35 \\cdot 34}{1 \\cdot 2}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n\\dfrac{1190}{2} = 595\n$$\n\n$$\n\\binom{35}{33} = 595\n$$\n\n$$\n(0.38)^{33} = 0\n$$\n\n$$\n(0.62)^{2}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n(0.62)^{2} = 0.3844\n$$\n\n$$\n595 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.3844 = 0\n$$\n\n$$\nP(X = 33) = 0\n$$\n\n$$\nP(X = 34) = \\binom{35}{34} (0.38)^{34} (0.62)^{1}\n$$\n\n$$\n\\binom{35}{34} = \\dfrac{35!}{34!(35-34)!}\n$$\n\n$$\n\\binom{35}{34} = 35\n$$\n\n$$\n(0.38)^{34} = 0\n$$\n\n$$\n(0.62)^{1} = 0.62\n$$\n\n$$\n35 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.62 = 0\n$$\n\n$$\nP(X = 34) = 0\n$$\n\n$$\nP(X = 35) = \\binom{35}{35} (0.38)^{35} (0.62)^{0}\n$$\n\n$$\n\\binom{35}{35} = 1\n$$\n\n$$\n(0.38)^{35} = 0\n$$\n\n$$\n(0.62)^{0} = 1\n$$\n\n$$\n1 \\times 0 = 0\n$$\n\n$$\n0 \\times 1 = 0\n$$\n\n$$\nP(X = 35) = 0\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n7.3597 \\times 10^{-9} + 7.2754 \\times 10^{-10} + 5.5739 \\times 10^{-11}\n$$\n\n$$\n+ 3.1057 \\times 10^{-12} + 0 + 0\n$$\n\n$$\nP(X \\ge 30)\n$$\n\n$$\n8.1462 \\times 10^{-9}\n$$\n\n$$\n8.1462 \\times 10^{-7}\\%\n$$\n\nSide B ($n = 35$, $p = 0.94$):\n\n$$\nP(X = 30) = \\binom{35}{30} (0.94)^{30} (0.06)^{5}\n$$\n\n$$\n(0.94)^{30} = 0.156255606167\n$$\n\n$$\n(0.06)^{5}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n0.0036 \\times 0.06 = 0.000216\n$$\n\n$$\n0.000216 \\times 0.06 = 1.296 \\times 10^{-5}\n$$\n\n$$\n1.296 \\times 10^{-5} \\times 0.06 = 7.776 \\times 10^{-7}\n$$\n\n$$\n(0.06)^{5} = 7.776 \\times 10^{-7}\n$$\n\n$$\n324632 \\times 0.156255606167 = 50725.569941096641\n$$\n\n$$\n50725.569941096641 \\times 7.776 \\times 10^{-7} = 0.039444203186\n$$\n\n$$\nP(X = 30) = 0.039444203186\n$$\n\n$$\nP(X = 31) = \\binom{35}{31} (0.94)^{31} (0.06)^{4}\n$$\n\n$$\n(0.94)^{31} = 0.146880269797\n$$\n\n$$\n(0.06)^{4}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n0.0036 \\times 0.06 = 0.000216\n$$\n\n$$\n0.000216 \\times 0.06 = 1.296 \\times 10^{-5}\n$$\n\n$$\n(0.06)^{4} = 1.296 \\times 10^{-5}\n$$\n\n$$\n52360 \\times 0.146880269797 = 7690.650926553361\n$$\n\n$$\n7690.650926553361 \\times 1.296 \\times 10^{-5} = 0.099670836008\n$$\n\n$$\nP(X = 31) = 0.099670836008\n$$\n\n$$\nP(X = 32) = \\binom{35}{32} (0.94)^{32} (0.06)^{3}\n$$\n\n$$\n(0.94)^{32} = 0.138067453609\n$$\n\n$$\n(0.06)^{3}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n0.0036 \\times 0.06 = 0.000216\n$$\n\n$$\n(0.06)^{3} = 0.000216\n$$\n\n$$\n6545 \\times 0.138067453609 = 903.65148387002\n$$\n\n$$\n903.65148387002 \\times 0.000216 = 0.195188720516\n$$\n\n$$\nP(X = 32) = 0.195188720516\n$$\n\n$$\nP(X = 33) = \\binom{35}{33} (0.94)^{33} (0.06)^{2}\n$$\n\n$$\n(0.94)^{33} = 0.129783406392\n$$\n\n$$\n(0.06)^{2}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n(0.06)^{2} = 0.0036\n$$\n\n$$\n595 \\times 0.129783406392 = 77.221126803438\n$$\n\n$$\n77.221126803438 \\times 0.0036 = 0.277996056492\n$$\n\n$$\nP(X = 33) = 0.277996056492\n$$\n\n$$\nP(X = 34) = \\binom{35}{34} (0.94)^{34} (0.06)^{1}\n$$\n\n$$\n(0.94)^{34} = 0.121996402009\n$$\n\n$$\n(0.06)^{1} = 0.06\n$$\n\n$$\n35 \\times 0.121996402009 = 4.269874070308\n$$\n\n$$\n4.269874070308 \\times 0.06 = 0.256192444218\n$$\n\n$$\nP(X = 34) = 0.256192444218\n$$\n\n$$\nP(X = 35) = \\binom{35}{35} (0.94)^{35} (0.06)^{0}\n$$\n\n$$\n(0.94)^{35} = 0.114676617888\n$$\n\n$$\n(0.06)^{0} = 1\n$$\n\n$$\n1 \\times 0.114676617888 = 0.114676617888\n$$\n\n$$\n0.114676617888 \\times 1 = 0.114676617888\n$$\n\n$$\nP(X = 35) = 0.114676617888\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0394 + 0.0997 + 0.1952\n$$\n\n$$\n+ 0.278 + 0.2562 + 0.1147\n$$\n\n$$\nP(X \\ge 30)\n$$\n\n$$\n0.9832\n$$\n\n$$\n98.32\\%\n$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\n\\frac{P_B(X \\ge 30)}{P_A(X \\ge 30)}\n$$\n\n$$\n\\frac{98.32\\%}{8.1462 \\times 10^{-7}\\%}\n$$\n\n$$\n120691097.19\n$$\n\nSince $120691097.19 \\le 150000000$.\n\nSo the statement is False.\n",
+        "**D.** → False\n\nLanding in the $22$–$27$ range means the count falls between $22$ and $27$ inclusive, so add those binomial point masses:\n\n$$\nP(22 \\le X \\le 27) = \\sum_{x=22}^{27} \\binom{35}{x} p^{x}(1-p)^{35-x}\n$$\n\nSide A ($n=35$, $p=0.38$):\n\n$$\nP_A(22 \\le X \\le 27) \\approx 0.00250329 \\approx 0.2503\\%\n$$\n\nSide B ($n=35$, $p=0.94$):\n\n$$\nP_B(22 \\le X \\le 27) \\approx 0.000913647 \\approx 0.0914\\%\n$$\n\nThe ratio in the claim's order (A relative to B):\n\n$$\n\\frac{P_A(22 \\le X \\le 27)}{P_B(22 \\le X \\le 27)} \\approx \\frac{0.2503\\%}{0.0914\\%} \\approx 2.74\n$$\n\nSince $2.74 \\le 3$, the claim fails.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nSide A ($n_A = 35$, $p_A = 0.38$):\n\n$$\n\\mathrm{Var}(A) = 8.246\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{8.246}\n$$\n\n$$\n2.872\n$$\n\nSide B ($n_B = 35$, $p_B = 0.94$):\n\n$$\n\\mathrm{Var}(B) = 1.974\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{1.974}\n$$\n\n$$\n1.405\n$$\n\n$$\n\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)}\n$$\n\n$$\n\\frac{2.872}{1.405}\n$$\n\n$$\n2.044\n$$\n\nAgainst the claim.\n\nSo the statement is True.\n"
       ],
       "difficulty_level": "4/5",
-      "solution_overview": "Two sales reps each make 25 calls in a day. Rep A is new (p = 0.30 of converting a call into a sale). Rep B is experienced (p = 0.68). A rep has a \"strong day\" if more than half of the 25 calls convert, i.e. at least 13 conversions.\n\nWe model each side as a binomial count with $n = 25$ independent trials: side A has success probability $p_A = 0.3$, side B has $p_B = 0.68$.\n\nThe scenario’s success cutoff is at least $k = 13$ successes out of $n = 25$."
+      "solution_overview": "A vaccine trial has lab technicians classify antibody responses across 35 samples. Tech A is a first-year analyst (p = 0.38 of correctly classifying a sample). Tech B is a lead analyst (p = 0.94). To pass certification, a technician must correctly classify at least 30 of the 35 samples. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.).\n\nWe model each side as a binomial count with $n = 35$ independent trials: side A has success probability $p_A = 0.38$, side B has $p_B = 0.94$.\n\nThe scenario’s success cutoff is at least $k = 30$ successes out of $n = 35$."
     }
   ]
 }
