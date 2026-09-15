@@ -1240,10 +1240,32 @@ function takeMath(caseId: string, chapter: number) {
   // Avoid \$… mixed with $…$ which breaks KaTeX inline parsing.
   if (caseId === "MATH 11.123") {
     const fix = (s: string) => s.replace(/\\\$/g, "USD ");
-    mapped.context = fix(String(mapped.context ?? ""));
+    mapped.context = `A renewable energy cooperative is comparing two designs for a community solar project.
+
+Design A is a two-year project: invest USD 120,000, with net returns of USD 54,000 at the end of Year 1 and USD 88,000 at the end of Year 2.
+
+Design B is a one-year project: invest USD 70,000, with a single net return of USD 81,200 at the end of Year 1.`;
     mapped.statements = (mapped.statements as string[]).map(fix);
     mapped.tactical_explanations = (mapped.tactical_explanations as string[]).map(fix);
     if (mapped.solution_overview) mapped.solution_overview = fix(String(mapped.solution_overview));
+  }
+  if (caseId === "MATH 12.186") {
+    mapped.context = `A wildlife tracker suspects one of three animals is active in an area: Coyote (50% prior), Fox (30%), or Bobcat (20%).
+
+Given the species, the probability of a large paw print is 70% for Coyote, 20% for Fox, and 55% for Bobcat.
+
+Independently, the probability that any scat found contains fur is 60% for Coyote, 80% for Fox, and 40% for Bobcat.
+
+At the site, the tracker finds both a large paw print and fur-containing scat (the two clues are independent given the species).`;
+  }
+  if (caseId === "MATH 13.36") {
+    mapped.context = `Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43.
+
+Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61.
+
+Factory A's batch passes if at least 87% of its units are defect-free.
+
+Factory B's batch passes if at least 79% of its units are defect-free.`;
   }
   return mapped;
 }
