@@ -62,7 +62,7 @@ export type HardcodedDiscountPromo = {
 
 const DISCOUNT_15_EXPIRES = "2026-12-06T23:59:59+00:00";
 
-/** 15% multi-use codes (also seeded in supabase/migrations/20260907180000_discount_promocodes.sql). */
+/** One-time 15% codes (also seeded in supabase/migrations; claimed on Apply). */
 const BBE_15_CODES = [
   "BBE-15-7A3DCE",
   "BBE-15-D4ED00",
