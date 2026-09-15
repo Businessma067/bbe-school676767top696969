@@ -2,9 +2,10 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
- * Creating an invoice returns a hosted `pageUrl` (pay.mbnk.biz). Redirect the
- * buyer there for card, Apple Pay, and Google Pay. The iframe widget
- * (`displayType: "iframe"`) is card-focused and often omits wallet buttons.
+ * Returns a hosted `pageUrl` (pay.mbnk.biz) that includes card, Apple Pay,
+ * and Google Pay when the merchant/device supports them. We intentionally
+ * omit `displayType: "iframe"` — that mode is a card-only widget and hides
+ * wallets. Embed the normal pageUrl in an iframe with `allow="payment *"`.
  *
  * Docs:
  *  - POST /api/merchant/invoice/create

@@ -98,6 +98,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      // Allow Monobank's embedded checkout to use Payment Request / wallets.
+      { httpEquiv: "Permissions-Policy", content: "payment=*, publickey-credentials-get=*" },
       { title: "BBE School | WU Vienna BBE Exam Prep" },
       { name: "description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
       { name: "author", content: "BBE School" },

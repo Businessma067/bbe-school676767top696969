@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { CreditCard, Lock, Loader2, Ticket } from "lucide-react";
+import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
@@ -16,6 +17,20 @@ import { createCheckout } from "@/lib/payments.functions";
 import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
+
+function isMonoPayOrigin(origin: string): boolean {
+  try {
+    const host = new URL(origin).hostname;
+    return (
+      host === "pay.mbnk.biz" ||
+      host.endsWith(".mbnk.biz") ||
+      host === "pay.monobank.ua" ||
+      host.endsWith(".monobank.ua")
+    );
+  } catch {
+    return false;
+  }
+}
 
 type PaymentModalProps = {
   open: boolean;
@@ -41,6 +56,7 @@ export function PaymentModal({
   const [error, setError] = useState<string | null>(null);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [payPageUrl, setPayPageUrl] = useState<string | null>(null);
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
@@ -59,6 +75,7 @@ export function PaymentModal({
     setError(null);
     setPromoUnlocked(false);
     setAuthOpen(false);
+    setPayPageUrl(null);
 
     // Buying requires an account first.
     void (async () => {
@@ -69,6 +86,36 @@ export function PaymentModal({
       }
     })();
   }, [open, onOpenChange]);
+
+  useEffect(() => {
+    if (!payPageUrl) return;
+
+    const onMessage = (event: MessageEvent) => {
+      if (!isMonoPayOrigin(event.origin)) return;
+      let payload: { message?: unknown; value?: unknown } | null = null;
+      try {
+        payload =
+          typeof event.data === "string"
+            ? (JSON.parse(event.data) as { message?: unknown; value?: unknown })
+            : (event.data as { message?: unknown; value?: unknown });
+      } catch {
+        return;
+      }
+      if (!payload || typeof payload.message !== "string") return;
+
+      if (payload.message === "close-button") {
+        setPayPageUrl(null);
+        setLoading(false);
+        return;
+      }
+      if (payload.message === "monopay-link" && typeof payload.value === "string") {
+        window.location.href = payload.value;
+      }
+    };
+
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, [payPageUrl]);
 
   const handlePay = async () => {
     setError(null);
@@ -91,9 +138,9 @@ export function PaymentModal({
         setError(result.error);
         return;
       }
-      // Full Monobank hosted checkout (card + Apple Pay + Google Pay). Wallets are
-      // unreliable inside our iframe widget; top-level pay.mbnk.biz is required.
-      window.location.href = result.pageUrl;
+      // Embed Monobank's full checkout (card + Apple Pay + Google Pay) in-site.
+      // Do not use displayType:iframe — that card-only widget omits wallets.
+      setPayPageUrl(result.pageUrl);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not start the payment.";
       setError(/unauthorized/i.test(message) ? "Sign in to continue to payment." : message);
@@ -218,16 +265,21 @@ export function PaymentModal({
     }
   };
 
-  void priceEuros;
-
   return (
     <>
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-md">
+        <DialogContent
+          className={cn(
+            "max-h-[90vh]",
+            payPageUrl ? "overflow-hidden max-w-[680px]" : "overflow-y-auto sm:max-w-md",
+          )}
+        >
           <DialogHeader>
             <DialogTitle className="font-display text-xl">Payment</DialogTitle>
             <DialogDescription>
-              Complete your one-time purchase of {productName}, or redeem a promocode.
+              {payPageUrl
+                ? "Pay by card, Apple Pay, or Google Pay. You will return here after the payment."
+                : `Complete your one-time purchase of ${productName}, or redeem a promocode.`}
             </DialogDescription>
           </DialogHeader>
 
@@ -258,7 +310,25 @@ export function PaymentModal({
             </div>
           </div>
 
-          {promoUnlocked ? (
+          {payPageUrl ? (
+            <div className="iframe-container flex min-h-[576px] w-full flex-col items-center justify-center gap-3">
+              <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-[11px] font-medium text-muted-foreground">
+                <span>Card</span>
+                <span aria-hidden="true">·</span>
+                <span>Apple Pay</span>
+                <span aria-hidden="true">·</span>
+                <span>Google Pay</span>
+              </p>
+              <iframe
+                id="payFrame"
+                title="monopay"
+                src={payPageUrl}
+                allow="payment *; publickey-credentials-get *"
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="h-[min(640px,72vh)] w-full min-h-[576px] rounded-3xl border-0 bg-background"
+              />
+            </div>
+          ) : promoUnlocked ? (
             <div
               className="rounded-xl border p-4 text-center"
               style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10` }}
@@ -292,8 +362,8 @@ export function PaymentModal({
               <TabsContent value="card" className="mt-4">
                 <div className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Continue to Monobank&apos;s secure payment page to pay by card, Apple Pay, or
-                    Google Pay. You return here right after the payment.
+                    Pay securely through Monobank. The payment form opens here with card, Apple Pay,
+                    and Google Pay; you return automatically after the payment.
                   </p>
 
                   <form onSubmit={handleApplyDiscountOnCard} className="space-y-2">
