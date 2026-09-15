@@ -133,7 +133,7 @@ export function ExplanationProse({
         }
         if (chunk.kind === "table") {
           return (
-            <div key={idx} className="my-5 overflow-x-auto">
+            <div key={idx} className="my-5 overflow-x-auto overflow-y-hidden [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
               <MathMarkdownTable markdown={chunk.text} />
             </div>
           );
