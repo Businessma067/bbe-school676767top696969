@@ -18,8 +18,6 @@ import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
 
-type PayMethod = "card" | "apple" | "google" | "promo";
-
 function isMonoPayOrigin(origin: string): boolean {
   try {
     const host = new URL(origin).hostname;
@@ -34,37 +32,6 @@ function isMonoPayOrigin(origin: string): boolean {
   }
 }
 
-function ApplePayMark({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-      <path d="M16.365 12.87c.03 3.22 2.83 4.3 2.86 4.31-.02.07-.447 1.53-1.47 3.03-.886 1.3-1.806 2.59-3.254 2.62-1.424.03-1.882-.84-3.512-.84-1.63 0-2.136.82-3.486.87-1.4.05-2.466-1.4-3.36-2.69C2.3 17.4.94 12.7 2.72 9.51c.885-1.59 2.465-2.6 4.18-2.63 1.305-.02 2.537.88 3.51.88.974 0 2.497-1.09 4.21-.93.718.03 2.735.29 4.03 2.19-.104.06-2.405 1.4-2.285 4.15zM13.94 5.48c.706-.86 1.182-2.05 1.052-3.24-1.017.04-2.246.68-2.974 1.53-.653.76-1.225 1.97-1.07 3.13 1.13.09 2.286-.57 2.992-1.42z" />
-    </svg>
-  );
-}
-
-function GooglePayMark({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
-      <path
-        fill="#4285F4"
-        d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9c-.3 1.4-1 2.5-2.1 3.3v2.7h3.4c2-1.8 3.3-4.5 3.3-8z"
-      />
-      <path
-        fill="#34A853"
-        d="M12 23c2.9 0 5.3-.9 7.1-2.6l-3.4-2.7c-1 .7-2.2 1.1-3.7 1.1-2.8 0-5.2-1.9-6.1-4.4H2.4v2.8C4.2 20.7 7.8 23 12 23z"
-      />
-      <path
-        fill="#FBBC05"
-        d="M5.9 14.4c-.2-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2V7.2H2.4C1.7 8.6 1.3 10.2 1.3 12s.4 3.4 1.1 4.8l3.5-2.4z"
-      />
-      <path
-        fill="#EA4335"
-        d="M12 5.4c1.6 0 3 .5 4.1 1.6l3.1-3.1C17.3 2.1 14.9 1 12 1 7.8 1 4.2 3.3 2.4 7.2l3.5 2.8c.9-2.5 3.3-4.6 6.1-4.6z"
-      />
-    </svg>
-  );
-}
-
 type PaymentModalProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -77,11 +44,11 @@ export function PaymentModal({
   open,
   onOpenChange,
   productName = "Full BBE Course",
-  priceEuros: _priceEuros = 449,
+  priceEuros = 449,
   productSlug = "full-course",
 }: PaymentModalProps) {
   const navigate = useNavigate();
-  const [method, setMethod] = useState<PayMethod>("card");
+  const [method, setMethod] = useState("card");
   const [promoCode, setPromoCode] = useState("");
   const [appliedPromoCode, setAppliedPromoCode] = useState<string | null>(null);
   const [discountPct, setDiscountPct] = useState(0);
@@ -90,7 +57,6 @@ export function PaymentModal({
   const [promoUnlocked, setPromoUnlocked] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
   const [payPageUrl, setPayPageUrl] = useState<string | null>(null);
-  const [applePayAvailable, setApplePayAvailable] = useState(false);
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
@@ -98,7 +64,6 @@ export function PaymentModal({
   const catalogEur = product.priceEur;
   const eurPrice = Math.round(catalogEur * priceFactor);
   const showDiscountedTotal = method !== "promo" || discountApplied;
-  const payTab = method === "promo" ? "promo" : "pay";
 
   useEffect(() => {
     if (!open) return;
@@ -111,17 +76,6 @@ export function PaymentModal({
     setPromoUnlocked(false);
     setAuthOpen(false);
     setPayPageUrl(null);
-
-    try {
-      const ApplePaySession = (
-        window as Window & {
-          ApplePaySession?: { canMakePayments?: () => boolean };
-        }
-      ).ApplePaySession;
-      setApplePayAvailable(Boolean(ApplePaySession?.canMakePayments?.()));
-    } catch {
-      setApplePayAvailable(false);
-    }
 
     // Buying requires an account first.
     void (async () => {
@@ -184,7 +138,7 @@ export function PaymentModal({
         setError(result.error);
         return;
       }
-      // Embed Monobank checkout (card / Apple Pay / Google Pay via acquiring widget).
+      // Embed Monobank's iframe widget (card + Apple Pay + Google Pay via allow="payment *").
       setPayPageUrl(result.pageUrl);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not start the payment.";
@@ -201,7 +155,7 @@ export function PaymentModal({
     if (discount.ok) {
       setAppliedPromoCode(discount.code);
       setDiscountPct(discount.discountPct);
-      if (method === "promo") setMethod("card");
+      setMethod("card");
       setError(null);
       return true;
     }
@@ -310,21 +264,6 @@ export function PaymentModal({
     }
   };
 
-  const methodCopy: Record<Exclude<PayMethod, "promo">, string> = {
-    card: "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.",
-    apple:
-      "Open Monobank checkout and choose Apple Pay. Confirm with Face ID, Touch ID, or your device passcode.",
-    google:
-      "Open Monobank checkout and choose Google Pay. Confirm with your Google account wallet.",
-  };
-
-  const checkoutDescription =
-    method === "apple"
-      ? "Pay with Apple Pay. You will return here after the payment."
-      : method === "google"
-        ? "Pay with Google Pay. You will return here after the payment."
-        : "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.";
-
   return (
     <>
       <Dialog open={open} onOpenChange={onOpenChange}>
@@ -338,7 +277,7 @@ export function PaymentModal({
             <DialogTitle className="font-display text-xl">Payment</DialogTitle>
             <DialogDescription>
               {payPageUrl
-                ? checkoutDescription
+                ? "Pay by card, Apple Pay, or Google Pay. You will return here after the payment."
                 : `Complete your one-time purchase of ${productName}, or redeem a promocode.`}
             </DialogDescription>
           </DialogHeader>
@@ -394,16 +333,16 @@ export function PaymentModal({
             </div>
           ) : (
             <Tabs
-              value={payTab}
+              value={method}
               onValueChange={(v) => {
-                setMethod(v === "promo" ? "promo" : "card");
+                setMethod(v);
                 setError(null);
               }}
             >
               <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="pay" className="gap-1.5">
+                <TabsTrigger value="card" className="gap-1.5">
                   <CreditCard className="h-3.5 w-3.5" />
-                  Pay
+                  Card
                 </TabsTrigger>
                 <TabsTrigger value="promo" className="gap-1.5">
                   <Ticket className="h-3.5 w-3.5" />
@@ -411,64 +350,11 @@ export function PaymentModal({
                 </TabsTrigger>
               </TabsList>
 
-              <TabsContent value="pay" className="mt-4">
+              <TabsContent value="card" className="mt-4">
                 <div className="space-y-4">
-                  <div className="grid grid-cols-3 gap-2">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setMethod("apple");
-                        setError(null);
-                      }}
-                      aria-pressed={method === "apple"}
-                      className={`flex flex-col items-center justify-center gap-1 rounded-xl border px-2 py-3 text-xs font-semibold transition-colors ${
-                        method === "apple"
-                          ? "border-foreground bg-foreground text-background"
-                          : "border-border bg-background text-foreground hover:bg-secondary"
-                      }`}
-                    >
-                      <ApplePayMark className="h-5 w-5" />
-                      Apple Pay
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setMethod("google");
-                        setError(null);
-                      }}
-                      aria-pressed={method === "google"}
-                      className={`flex flex-col items-center justify-center gap-1 rounded-xl border px-2 py-3 text-xs font-semibold transition-colors ${
-                        method === "google"
-                          ? "border-foreground bg-secondary text-foreground ring-1 ring-foreground/20"
-                          : "border-border bg-background text-foreground hover:bg-secondary"
-                      }`}
-                    >
-                      <GooglePayMark className="h-5 w-5" />
-                      Google Pay
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setMethod("card");
-                        setError(null);
-                      }}
-                      aria-pressed={method === "card"}
-                      className={`flex flex-col items-center justify-center gap-1 rounded-xl border px-2 py-3 text-xs font-semibold transition-colors ${
-                        method === "card"
-                          ? "border-foreground bg-secondary text-foreground ring-1 ring-foreground/20"
-                          : "border-border bg-background text-foreground hover:bg-secondary"
-                      }`}
-                    >
-                      <CreditCard className="h-5 w-5" />
-                      Card
-                    </button>
-                  </div>
-
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    {methodCopy[method === "promo" ? "card" : method]}
-                    {method === "apple" && !applePayAvailable
-                      ? " Apple Pay appears on supported Apple devices and browsers."
-                      : null}
+                    Pay securely through Monobank. The payment form opens here with card, Apple Pay,
+                    and Google Pay; you return automatically after the payment.
                   </p>
 
                   <form onSubmit={handleApplyDiscountOnCard} className="space-y-2">
@@ -515,56 +401,22 @@ export function PaymentModal({
                     </p>
                   )}
 
-                  {method === "apple" ? (
-                    <button
-                      type="button"
-                      onClick={handlePay}
-                      disabled={loading}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-black px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-neutral-900 disabled:opacity-70"
-                    >
-                      {loading ? (
-                        <Loader2 className="h-4 w-4 animate-spin" />
-                      ) : (
-                        <>
-                          <ApplePayMark className="h-5 w-5" />
-                          Pay with Apple Pay · €{eurPrice}
-                        </>
-                      )}
-                    </button>
-                  ) : method === "google" ? (
-                    <button
-                      type="button"
-                      onClick={handlePay}
-                      disabled={loading}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-white px-4 py-3 text-sm font-semibold text-neutral-900 shadow-sm transition-all hover:bg-neutral-50 disabled:opacity-70"
-                    >
-                      {loading ? (
-                        <Loader2 className="h-4 w-4 animate-spin" />
-                      ) : (
-                        <>
-                          <GooglePayMark className="h-5 w-5" />
-                          Pay with Google Pay · €{eurPrice}
-                        </>
-                      )}
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={handlePay}
-                      disabled={loading}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:opacity-70"
-                      style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
-                    >
-                      {loading ? (
-                        <Loader2 className="h-4 w-4 animate-spin" />
-                      ) : (
-                        <>
-                          <Lock className="h-4 w-4" />
-                          Proceed to payment · €{eurPrice}
-                        </>
-                      )}
-                    </button>
-                  )}
+                  <button
+                    type="button"
+                    onClick={handlePay}
+                    disabled={loading}
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:opacity-70"
+                    style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
+                  >
+                    {loading ? (
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                    ) : (
+                      <>
+                        <Lock className="h-4 w-4" />
+                        Proceed to payment · €{eurPrice}
+                      </>
+                    )}
+                  </button>
 
                   <p className="flex items-center justify-center gap-1.5 text-center text-[11px] text-muted-foreground">
                     <Lock className="h-3 w-3" />
