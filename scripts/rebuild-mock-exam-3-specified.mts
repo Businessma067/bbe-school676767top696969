@@ -1049,7 +1049,7 @@ Decide whether each statement is true or false. The claims give thresholds, not 
   const statements = [
     "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ is strictly smaller than $0.8$.",
     "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>3$.",
-    "The value of $\dfrac{(2x^{3}-5x+1)(3x-4)}{x^{2}-1}$ at $x=2$ is strictly larger than $4$.",
+    "The value of $\\dfrac{(2x^{3}-5x+1)(3x-4)}{x^{2}-1}$ at $x=2$ is strictly larger than $4$.",
     "Over the reals with $x\\ne\\pm 2$, every solution of $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ is strictly smaller than $2$.",
     "The positive solution of $\\sqrt{x+7}-\\sqrt{x-1}=2$ is strictly larger than $3$.",
   ];
@@ -2270,6 +2270,18 @@ function scrubKatexDeep(value: unknown): unknown {
       .replace(/\$€\s*([0-9]+)\{,\}([0-9]+)\$/g, "EUR $1,$2")
       .replace(/\$€([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
       .replace(/€(?=\s*\$)/g, "EUR")
+      // `$dfrac` from JS string eating `\d` — restore backslash before latex cmds.
+      .replace(
+        /\$((?:dfrac|tfrac|frac|sqrt|sum|prod|int|lim|ln|log|sin|cos|tan|det|max|min|inf|sup|cdot|times|div|pm|mp|neq|leq|geq|le|ge|ne|approx|equiv|sim|simeq|propto|infty|partial|nabla|forall|exists|in|notin|subset|supset|cup|cap|land|lor|neg|lnot|rightarrow|leftarrow|Rightarrow|Leftarrow|Leftrightarrow|leftrightarrow|mapsto|to|gets|quad|qquad|hspace|vspace|left|right|bigl|bigr|Bigl|Bigr|big|Big|text|mathrm|mathbf|mathit|mathsf|operatorname|overline|underline|hat|bar|vec|dot|ddot|tilde|widehat|widetilde|binom|dbinom|choose|begin|end|alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|pi|varpi|rho|varrho|sigma|varsigma|tau|upsilon|phi|varphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega))\b/g,
+        (_m, cmd: string) => `$\\${cmd}`,
+      )
+      // Euro / bare ≈ inside $$…$$ display blocks.
+      .replace(/\$\$([\s\S]*?)\$\$/g, (_m, body: string) => {
+        const fixed = String(body)
+          .replace(/€\s*/g, "EUR ")
+          .replace(/≈/g, "\\approx ");
+        return `$$${fixed}$$`;
+      })
       .replace(/\n{3,}/g, "\n\n")
       .replace(/[ \t]+\n/g, "\n")
       .trim();

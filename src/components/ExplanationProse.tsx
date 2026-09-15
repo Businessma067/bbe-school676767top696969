@@ -2,11 +2,28 @@ import {
   FlashcardMath,
   mergeContinuationDisplayParagraphs,
 } from "@/components/FlashcardMath";
+import { MathMarkdownTable, parsePipeTable } from "@/components/mock-exam/MathMarkdownTable";
 import { cn } from "@/lib/utils";
+
+/** Detect a GFM pipe table that lives in one blank-line paragraph. */
+function isMarkdownTablePara(block: string): boolean {
+  const lines = block
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  if (lines.length < 2) return false;
+  if (!lines.every((l) => l.includes("|"))) return false;
+  if (!lines.some((l) => /^\|?\s*:?-{3,}/.test(l) || /^(\|\s*:?-+:?\s*)+\|?$/.test(l))) {
+    // header + body without separator still ok if ≥2 pipe rows parse
+    return parsePipeTable(block).length >= 2;
+  }
+  return parsePipeTable(block).length >= 1;
+}
 
 /**
  * Tutorial prose (font-expl + Part/claim/Tip spacing).
  * Supports KaTeX via `$...$` / `$$...$$` (same as math explanations).
+ * Pipe truth tables render as real HTML tables (not crooked monospace).
  */
 export function ExplanationProse({
   text,
@@ -28,16 +45,21 @@ export function ExplanationProse({
     | { kind: "note"; body: string }
     | { kind: "close"; text: string }
     | { kind: "math"; text: string }
+    | { kind: "table"; text: string }
     | { kind: "para"; text: string };
 
   const chunks: Chunk[] = [];
   for (const p of paragraphs) {
+    if (isMarkdownTablePara(p)) {
+      chunks.push({ kind: "table", text: p });
+      continue;
+    }
     if (/^\$\$[\s\S]+\$\$$/.test(p) || /^\$\$[\s\S]+\$\$\s*$/.test(p)) {
       chunks.push({ kind: "math", text: p });
       continue;
     }
     const partOnly = p.match(/^\*\*([^*]+)\*\*\s*$/);
-    if (partOnly && /^(Part\b|Answer\b|Overview\b|Setup\b)/i.test(partOnly[1].trim())) {
+    if (partOnly && /^(Part\b|Answer\b|Overview\b|Setup\b|Truth table\b)/i.test(partOnly[1].trim())) {
       chunks.push({ kind: "part", title: partOnly[1].replace(/[.!:]+$/, "") });
       continue;
     }
@@ -61,7 +83,7 @@ export function ExplanationProse({
   // Final content paragraph is the natural verdict (after Tip/Trap notes / math).
   for (let i = chunks.length - 1; i >= 0; i--) {
     const c = chunks[i];
-    if (c.kind === "note" || c.kind === "math") continue;
+    if (c.kind === "note" || c.kind === "math" || c.kind === "table") continue;
     if (c.kind === "para") {
       chunks[i] = { kind: "close", text: c.text };
     }
@@ -107,6 +129,13 @@ export function ExplanationProse({
               <span className="font-bold not-italic">{label}: </span>
               <InlineMarks text={rest.join(":").trim()} />
             </aside>
+          );
+        }
+        if (chunk.kind === "table") {
+          return (
+            <div key={idx} className="my-5 overflow-x-auto">
+              <MathMarkdownTable markdown={chunk.text} />
+            </div>
           );
         }
         if (chunk.kind === "math") {
