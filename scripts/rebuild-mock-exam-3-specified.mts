@@ -275,57 +275,197 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → False
 
-Let $t$ be the trainee’s present age. Then
+Let $t$ be the trainee’s present age in years. Then the courier is now $t+27$.
+
+In $6$ years the trainee will be $t+6$ and the courier will be $t+27+6=t+33$. The claim about their future ages becomes the equation
 
 $$
-t+27+6=2(t+6)\\qquad\\Rightarrow\\qquad t+33=2t+12\\qquad\\Rightarrow\\qquad t=21
+t+33=2(t+6)
 $$
 
-The planner’s figure $15$ is wrong.
+Expand the right-hand side:
+
+$$
+t+33=2t+12
+$$
+
+Bring the $t$-terms to one side and the constants to the other:
+
+$$
+33-12=2t-t\\qquad\\Rightarrow\\qquad 21=t
+$$
+
+So the trainee is now $21$ years old, not $15$. The planner’s conclusion is wrong.
 
 So the statement is False.`,
 
     `**B.** → False
 
-Outer dimensions $(30+2w)$ by $(18+2w)$ give
+Let $w>0$ be the uniform frame width in centimetres. The outer rectangle measures $(30+2w)$ by $(18+2w)$. Its area is three times the print area $30\\cdot 18=540$:
 
 $$
-(30+2w)(18+2w)=3\\cdot 30\\cdot 18=1620
+(30+2w)(18+2w)=3\\cdot 540=1620
+$$
+
+Expand the left-hand side carefully:
+
+$$
+30\\cdot 18+30\\cdot 2w+2w\\cdot 18+2w\\cdot 2w=540+60w+36w+4w^{2}
 $$
 
 $$
-w^{2}+24w-270=0\\qquad\\Rightarrow\\qquad w=-12+\\sqrt{414}\\approx 8.35\\ngtr?\\quad\\text{not }<6
+4w^{2}+96w+540=1620
 $$
+
+Subtract $540$ from both sides:
+
+$$
+4w^{2}+96w=1080
+$$
+
+Divide by $4$:
+
+$$
+w^{2}+24w=270\\qquad\\Rightarrow\\qquad w^{2}+24w-270=0
+$$
+
+Discriminant:
+
+$$
+\\Delta=24^{2}-4\\cdot 1\\cdot(-270)=576+1080=1656=4\\cdot 414
+$$
+
+$$
+w=\\dfrac{-24\\pm\\sqrt{1656}}{2}=\\dfrac{-24\\pm 2\\sqrt{414}}{2}=-12\\pm\\sqrt{414}
+$$
+
+The positive root is
+
+$$
+w=-12+\\sqrt{414}
+$$
+
+Since $\\sqrt{400}=20$ and $\\sqrt{441}=21$, one has $\\sqrt{414}\\approx 20.35$, so
+
+$$
+w\\approx -12+20.35=8.35
+$$
+
+The claim says the width is strictly less than $6\\ \\mathrm{cm}$. But $8.35\\nless 6$.
 
 So the statement is False.`,
 
     `**C.** → True
 
+Time equals distance divided by speed. First leg:
+
 $$
-\\dfrac{12}{8}+\\dfrac{8}{12}=1.5+\\dfrac{2}{3}=\\dfrac{13}{6}\\approx 2.167<2.5
+t_{1}=\\dfrac{12\\ \\mathrm{km}}{8\\ \\mathrm{km/h}}=\\dfrac{12}{8}=\\dfrac{3}{2}=1.5\\ \\mathrm{h}
 $$
+
+Second leg:
+
+$$
+t_{2}=\\dfrac{8\\ \\mathrm{km}}{12\\ \\mathrm{km/h}}=\\dfrac{8}{12}=\\dfrac{2}{3}\\ \\mathrm{h}
+$$
+
+Total time:
+
+$$
+t=t_{1}+t_{2}=\\dfrac{3}{2}+\\dfrac{2}{3}=\\dfrac{9}{6}+\\dfrac{4}{6}=\\dfrac{13}{6}\\approx 2.167\\ \\mathrm{h}
+$$
+
+Compare with the threshold:
+
+$$
+\\dfrac{13}{6}<2.5=\\dfrac{15}{6}
+$$
+
+because $13<15$. The whole trip really does take strictly less than $2.5$ hours.
 
 So the statement is True.`,
 
     `**D.** → True
 
-Domain $x>1$. Then
+The logarithms are defined only when every argument is positive:
 
 $$
-(x-1)(x+3)=2x+14\\qquad\\Rightarrow\\qquad x^{2}=17\\qquad\\Rightarrow\\qquad x=\\sqrt{17}\\approx 4.123<5
+x-1>0,\\qquad x+3>0,\\qquad 2x+14>0
+$$
+
+Together with the stated restriction $x>1$, the domain is simply $x>1$.
+
+On that domain the sum-to-product rule for logs turns the equation into
+
+$$
+\\log\\bigl((x-1)(x+3)\\bigr)=\\log(2x+14)
+$$
+
+Injectivity of $\\log$ gives
+
+$$
+(x-1)(x+3)=2x+14
+$$
+
+$$
+x^{2}+2x-3=2x+14
+$$
+
+The $2x$ terms cancel:
+
+$$
+x^{2}-3=14\\qquad\\Rightarrow\\qquad x^{2}=17\\qquad\\Rightarrow\\qquad x=\\pm\\sqrt{17}
+$$
+
+Only the positive root can lie in $x>1$:
+
+$$
+x=\\sqrt{17}\\approx 4.123
+$$
+
+(Check: $\\sqrt{16}=4$, so $\\sqrt{17}$ is a little larger than $4$, hence still less than $5$.)
+
+$$
+4.123<5
 $$
 
 So the statement is True.`,
 
     `**E.** → False
 
-With $a$ coins of $2$ euros and $b$ of $5$ euros,
+Let $a$ be the number of $2$-euro coins and $b$ the number of $5$-euro coins. The two counting conditions are
 
 $$
-a+b=19,\\qquad 2a+5b=62\\qquad\\Rightarrow\\qquad b=8
+a+b=19
 $$
 
-Eight is not strictly more than eight.
+$$
+2a+5b=62
+$$
+
+From the first equation, $a=19-b$. Substitute into the second:
+
+$$
+2(19-b)+5b=62
+$$
+
+$$
+38-2b+5b=62
+$$
+
+$$
+38+3b=62
+$$
+
+$$
+3b=24\\qquad\\Rightarrow\\qquad b=8
+$$
+
+Then $a=19-8=11$. There are exactly eight coins of $5$ euros. The claim asks for strictly more than eight, which fails:
+
+$$
+8\\ngtr 8
+$$
 
 So the statement is False.`,
   ];
@@ -347,102 +487,242 @@ So the statement is False.`,
 }
 
 
-/** Diversified harder inequalities — not five copies of one rational sign chart. */
+/** Hard inequalities — radical, double absolute, rational, mixed — teacher-step explanations. */
 function buildMathCh6Diversified() {
-  const context = `Each letter is an independent inequality check from a different family.
+  const context = `Each letter is an independent hard inequality.
 
-Quadratic, rational, absolute-value, a linear system, and a feasible-region point appear in turn.
+A radical inequality, a two-absolute sum, a rational inequality with cancellation, a comparison of two absolute values, and a mixed absolute–radical system appear in turn.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The solution set of $x^{2}-4x-5\\ge 0$ contains the number $0$.",
-    "The solution set of $\\dfrac{x-2}{x+3}\\le 0$ is exactly $(-3,2]$.",
-    "The solution set of $|x-1|+|x+2|>5$ is $(-\\infty,-3]\\cup[2,\\infty)$.",
-    "The system $3x+2>2x+7$ and $\\dfrac{x}{2}\\le 5$ has exactly five integer solutions.",
-    "The point $(3,1)$ lies in the feasible region of $x+y\\ge 4$, $x-y\\le 2$, $x\\ge 0$, $y\\ge 0$.",
+    "The solution set of $\\sqrt{3x+1}\\le x-1$ is exactly $[1,+\\infty)$.",
+    "The solution set of $|x-4|+|x+2|<10$ is exactly $(-4,6)$.",
+    "After cancelling a common factor, the inequality $\\dfrac{x^{2}-9}{x^{2}-x-6}\\le 0$ has solution set exactly $(-3,-2]$.",
+    "Every number in the open interval $(0,1)$ satisfies $|2x+1|\\ge |x-5|$.",
+    "The system $|x-1|<3$ and $\\sqrt{x+2}\\ge 1$ has exactly five integer solutions.",
   ];
 
-  // A: (x-5)(x+1)>=0 → (-∞,-1]U[5,∞); 0 not in → False
-  // B: critical -3,2; sign ≤0 on (-3,2] → True
-  // C: actual (-∞,-3)U(2,∞) strict, not closed → False
-  // D: x>5 and x<=10 → (5,10]; integers 6,7,8,9,10 = five → True
-  // E: 3+1=4, 3-1=2, both ok → True
-
-  const answer_key = [false, true, false, true, true];
+  const answer_key = [false, true, true, false, true];
 
   const tactical_explanations = [
     `**A.** → False
 
+Start with the domain of the square root: the inside must be nonnegative.
+
 $$
-x^{2}-4x-5\\ge 0
+3x+1\\ge 0\\qquad\\Rightarrow\\qquad x\\ge -\\dfrac{1}{3}
+$$
+
+A square root is always $\\ge 0$, so if the right-hand side is negative the inequality cannot hold. Force
+
+$$
+x-1\\ge 0\\qquad\\Rightarrow\\qquad x\\ge 1
+$$
+
+On $x\\ge 1$ both sides are nonnegative, so squaring is allowed and preserves the inequality direction:
+
+$$
+3x+1\\le (x-1)^{2}
 $$
 
 $$
-(x-5)(x+1)\\ge 0
+3x+1\\le x^{2}-2x+1
 $$
 
-A sign chart gives
+Bring every term to one side:
 
 $$
-x\\in(-\\infty,-1]\\cup[5,\\infty)
+0\\le x^{2}-2x+1-3x-1
 $$
 
-The number $0$ lies strictly between $-1$ and $5$, so it is not a solution.
+$$
+0\\le x^{2}-5x
+$$
+
+$$
+0\\le x(x-5)
+$$
+
+A product is nonnegative when the factors have the same sign (or one is zero):
+
+$$
+x\\le 0\\quad\\text{or}\\quad x\\ge 5
+$$
+
+Intersect with the working region $x\\ge 1$:
+
+$$
+x\\in[5,+\\infty)
+$$
+
+The claim says $[1,+\\infty)$. That set is strictly larger. For a concrete counter-example take $x=2\\ge 1$:
+
+$$
+\\sqrt{3\\cdot 2+1}=\\sqrt{7}\\approx 2.65,\\qquad 2-1=1
+$$
+
+$$
+2.65\\nless 1
+$$
+
+so $x=2$ is not a solution. The claimed set is wrong.
 
 So the statement is False.`,
 
     `**B.** → True
 
-Critical points: numerator zero $x=2$ and pole $x=-3$ (excluded). On the three intervals determined by $-3$ and $2$, the quotient is negative or zero precisely on $(-3,2]$, and equals zero at $x=2$.
+The expression $|x-4|+|x+2|$ changes formula at the kinks $x=-2$ and $x=4$. Split into three pieces.
+
+**Piece 1:** $x\\ge 4$. Then both insides are nonnegative:
 
 $$
-\\dfrac{x-2}{x+3}\\le 0 \\quad\\Longleftrightarrow\\quad x\\in(-3,2]
+(x-4)+(x+2)=2x-2
 $$
+
+$$
+2x-2<10\\qquad\\Rightarrow\\qquad 2x<12\\qquad\\Rightarrow\\qquad x<6
+$$
+
+Intersect with $x\\ge 4$:
+
+$$
+x\\in[4,6)
+$$
+
+**Piece 2:** $-2\\le x\\le 4$. Then
+
+$$
+(4-x)+(x+2)=6
+$$
+
+$$
+6<10
+$$
+
+is always true on the whole piece, so the whole closed interval $[-2,4]$ survives.
+
+**Piece 3:** $x<-2$. Then both insides are negative:
+
+$$
+(4-x)+(-x-2)=2-2x
+$$
+
+$$
+2-2x<10\\qquad\\Rightarrow\\qquad -2x<8\\qquad\\Rightarrow\\qquad x>-4
+$$
+
+(dividing by $-2$ flips the inequality). Intersect with $x<-2$:
+
+$$
+x\\in(-4,-2)
+$$
+
+Unite the three pieces:
+
+$$
+(-4,-2)\\cup[-2,4]\\cup[4,6)=(-4,6)
+$$
+
+That matches the claim exactly (open at both ends because the inequality is strict).
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**C.** → True
 
-Piecewise:
-
-- If $x\\ge 1$: $(x-1)+(x+2)=2x+1>5\\Rightarrow x>2$.
-- If $-2\\le x\\le 1$: $(1-x)+(x+2)=3>5$ never.
-- If $x<-2$: $(1-x)+(-x-2)=-2x-1>5\\Rightarrow x<-3$.
-
-Hence
+Factor numerator and denominator:
 
 $$
-|x-1|+|x+2|>5 \\quad\\Longleftrightarrow\\quad x\\in(-\\infty,-3)\\cup(2,\\infty)
+\\dfrac{x^{2}-9}{x^{2}-x-6}=\\dfrac{(x-3)(x+3)}{(x-3)(x+2)}
 $$
 
-The claimed set uses closed ends at $-3$ and $2$, which fail the strict inequality.
+The common factor $x-3$ may be cancelled only where it is nonzero, so exclude the pole $x=3$ (and note $x=-2$ is also a pole of the original). For $x\\ne 3$,
+
+$$
+\\dfrac{x+3}{x+2}\\le 0
+$$
+
+A quotient of linear factors is nonpositive between the roots, including the numerator zero and excluding the denominator zero:
+
+$$
+x\\in(-3,-2]
+$$
+
+The excluded point $x=3$ does not lie in $(-3,-2]$, so nothing further is removed. The solution set is exactly $(-3,-2]$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+Both sides are absolute values, so squaring is valid and keeps the inequality direction:
+
+$$
+|2x+1|\\ge |x-5|
+$$
+
+$$
+(2x+1)^{2}\\ge (x-5)^{2}
+$$
+
+$$
+4x^{2}+4x+1\\ge x^{2}-10x+25
+$$
+
+$$
+3x^{2}+14x-24\\ge 0
+$$
+
+Solve the corresponding equation $3x^{2}+14x-24=0$:
+
+$$
+\\Delta=14^{2}-4\\cdot 3\\cdot(-24)=196+288=484=22^{2}
+$$
+
+$$
+x=\\dfrac{-14\\pm 22}{6}
+$$
+
+$$
+x=\\dfrac{8}{6}=\\dfrac{4}{3},\\qquad x=\\dfrac{-36}{6}=-6
+$$
+
+The parabola $3x^{2}+14x-24$ opens upwards, so it is nonnegative outside the roots:
+
+$$
+x\\in\\bigl(-\\infty,-6\\bigr]\\cup\\Bigl[\\dfrac{4}{3},+\\infty\\Bigr)
+$$
+
+The open interval $(0,1)$ lies entirely between $-6$ and $4/3$, so no point of $(0,1)$ satisfies the inequality. The claim is false.
 
 So the statement is False.`,
 
-    `**D.** → True
-
-$$
-3x+2>2x+7\\quad\\Rightarrow\\quad x>5
-$$
-
-$$
-\\dfrac{x}{2}\\le 5\\quad\\Rightarrow\\quad x\\le 10
-$$
-
-So $x\\in(5,10]$. The integers in that interval are $6,7,8,9,10$ — exactly five.
-
-So the statement is True.`,
-
     `**E.** → True
 
-Check $(3,1)$:
+First inequality:
 
 $$
-3+1=4\\ge 4,\\qquad 3-1=2\\le 2,\\qquad 3\\ge 0,\\qquad 1\\ge 0
+|x-1|<3\\qquad\\Rightarrow\\qquad -3<x-1<3\\qquad\\Rightarrow\\qquad -2<x<4
 $$
 
-Every constraint holds, so the point is feasible.
+Second inequality: a square root is at least $1$ precisely when its inside is at least $1$ (and already in the radical domain $x\\ge -2$):
+
+$$
+\\sqrt{x+2}\\ge 1\\qquad\\Rightarrow\\qquad x+2\\ge 1\\qquad\\Rightarrow\\qquad x\\ge -1
+$$
+
+Intersect $-2<x<4$ with $x\\ge -1$:
+
+$$
+x\\in[-1,4)
+$$
+
+The integers in that half-open interval are
+
+$$
+-1,\\ 0,\\ 1,\\ 2,\\ 3
+$$
+
+— exactly five. The endpoint $x=4$ is excluded by the strict absolute-value bound, so it is not counted.
 
 So the statement is True.`,
   ];
@@ -450,7 +730,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 6.MOCK.MIXINEQ",
     id: "MATH 6.MOCK.MIXINEQ",
-    title: "Mixed hard inequalities — quadratic, rational, absolute, compound, feasible region",
+    title: "Hard inequalities — radical, double absolute, rational, mixed system",
     chapter: 6,
     subsection: "6.5",
     context,
@@ -459,9 +739,10 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Do not reuse one sign chart five times: factor a quadratic, read a rational chart with a pole, expand a two-absolute expression by pieces, intersect a linear compound, then test a point in a linear region.",
+      "For each letter: fix domain, expand or square carefully, read a sign chart or piece-wise absolute formula, then compare the resulting set with the claim.",
   };
 }
+
 
 /** Hard mixture + break-even — euros kept outside KaTeX math. */
 function buildMathCh5Mixture() {
@@ -488,31 +769,123 @@ Separately, a workshop product has fixed costs EUR $3600$, variable cost EUR $5$
   const tactical_explanations = [
     `**A.** → True
 
-Mass and copper balance yield scrap mass $y=60>55$.
+Let $x$ be the mass of pure copper (kg) and $y$ the mass of scrap (kg). Mass balance for the finished alloy:
+
+$$
+x+y=120
+$$
+
+Copper balance: pure copper contributes $1\\cdot x$, scrap contributes $0.4\\,y$, and the blend must be $70\\%$ copper:
+
+$$
+x+0.4y=0.7\\cdot 120=84
+$$
+
+Subtract the second equation from the first after rewriting $x=120-y$:
+
+$$
+(120-y)+0.4y=84
+$$
+
+$$
+120-0.6y=84
+$$
+
+$$
+-0.6y=84-120=-36
+$$
+
+$$
+y=\\dfrac{36}{0.6}=60
+$$
+
+Then $x=120-60=60$. Scrap mass is $60\\ \\mathrm{kg}$. Compare with the threshold:
+
+$$
+60>55
+$$
+
+(The cheapest blend is uniquely determined by the two linear targets, so there is no cheaper alternative with less scrap.)
 
 So the statement is True.`,
 
     `**B.** → False
 
-Material cost is $60\\cdot 9+60\\cdot 4=780$, which is not less than $750$.
+From A the blend uses $60\\ \\mathrm{kg}$ of pure copper at EUR $9$ per kg and $60\\ \\mathrm{kg}$ of scrap at EUR $4$ per kg:
+
+$$
+\\text{cost}=60\\cdot 9+60\\cdot 4=540+240=780
+$$
+
+The claim says the material cost is less than EUR $750$. But
+
+$$
+780\\nless 750
+$$
 
 So the statement is False.`,
 
     `**C.** → True
 
-Revenue $120\\cdot 8.50=1020$ and cost $780$ give profit $240>220$.
+Revenue from selling the whole $120\\ \\mathrm{kg}$ at EUR $8.50$ per kg:
+
+$$
+\\text{revenue}=120\\cdot 8.50=120\\cdot\\dfrac{17}{2}=60\\cdot 17=1020
+$$
+
+Material cost from B is $780$, so profit on materials alone is
+
+$$
+1020-780=240
+$$
+
+Compare with the threshold:
+
+$$
+240>220
+$$
 
 So the statement is True.`,
 
     `**D.** → False
 
-Break-even is $3600/(11-5)=600$, which is not fewer than $550$.
+Contribution margin per unit is selling price minus variable cost:
+
+$$
+11-5=6
+$$
+
+Break-even output is fixed cost divided by contribution margin:
+
+$$
+Q_{\\mathrm{BE}}=\\dfrac{3600}{6}=600
+$$
+
+The claim says break-even is fewer than $550$ units. But
+
+$$
+600\\nless 550
+$$
 
 So the statement is False.`,
 
     `**E.** → True
 
-With a fixed contribution margin, break-even scales exactly with fixed cost, so a $20\\%$ rise in fixed cost raises break-even by exactly $20\\%$.
+Write the original break-even as $Q=F/m$, where $F$ is fixed cost and $m$ is the (unchanged) contribution margin per unit.
+
+After a $20\\%$ rise in fixed cost the new fixed cost is $1.2F$, so the new break-even is
+
+$$
+Q'=\\dfrac{1.2F}{m}=1.2\\cdot\\dfrac{F}{m}=1.2\\,Q
+$$
+
+That is exactly a $20\\%$ increase in break-even output. Numerically, with $Q=600$ from D,
+
+$$
+Q'=1.2\\cdot 600=720=600+120
+$$
+
+and $120/600=0.20=20\\%$.
 
 So the statement is True.`,
   ];
@@ -676,7 +1049,7 @@ Decide whether each statement is true or false. The claims give thresholds, not 
   const statements = [
     "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ is strictly smaller than $0.8$.",
     "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>3$.",
-    "At $x=2$, the product $(2x^{3}-5x+1)(3x-4)$ is strictly larger than $12$.",
+    "The value of $\dfrac{(2x^{3}-5x+1)(3x-4)}{x^{2}-1}$ at $x=2$ is strictly larger than $4$.",
     "Over the reals with $x\\ne\\pm 2$, every solution of $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ is strictly smaller than $2$.",
     "The positive solution of $\\sqrt{x+7}-\\sqrt{x-1}=2$ is strictly larger than $3$.",
   ];
@@ -686,36 +1059,176 @@ Decide whether each statement is true or false. The claims give thresholds, not 
   const tactical_explanations = [
     `**A.** → True
 
-At $x=2$ the nested quotient equals $5/7\\approx 0.714$, which is strictly smaller than $0.8$.
+Substitute $x=2$ into the nested quotient step by step.
+
+Numerator:
+
+$$
+\\dfrac{3}{2}-\\dfrac{2}{3}=\\dfrac{9-4}{6}=\\dfrac{5}{6}
+$$
+
+Denominator:
+
+$$
+\\dfrac{5}{3}-\\dfrac{1}{2}=\\dfrac{10-3}{6}=\\dfrac{7}{6}
+$$
+
+Quotient:
+
+$$
+\\dfrac{5/6}{7/6}=\\dfrac{5}{7}\\approx 0.714
+$$
+
+Compare with the threshold:
+
+$$
+0.714<0.8
+$$
 
 So the statement is True.`,
 
     `**B.** → False
 
-Eliminating $v$ yields $u=61/19$ and $v=-13/19$, so $u+v=48/19\\approx 2.53\\ngtr 3$.
+Solve the linear system carefully. From $2u+5v=3$,
+
+$$
+5v=3-2u\\qquad\\Rightarrow\\qquad v=\\dfrac{3-2u}{5}
+$$
+
+Substitute into $3u-2v=11$:
+
+$$
+3u-2\\cdot\\dfrac{3-2u}{5}=11
+$$
+
+Multiply through by $5$:
+
+$$
+15u-2(3-2u)=55
+$$
+
+$$
+15u-6+4u=55
+$$
+
+$$
+19u=61\\qquad\\Rightarrow\\qquad u=\\dfrac{61}{19}
+$$
+
+Then
+
+$$
+v=\\dfrac{3-2\\cdot\\frac{61}{19}}{5}=\\dfrac{\\frac{57-122}{19}}{5}=\\dfrac{-65}{95}=-\\dfrac{13}{19}
+$$
+
+Sum:
+
+$$
+u+v=\\dfrac{61-13}{19}=\\dfrac{48}{19}\\approx 2.526
+$$
+
+$$
+2.526\\ngtr 3
+$$
 
 So the statement is False.`,
 
     `**C.** → True
 
+At $x=2$ evaluate the cubic factor in the numerator first:
+
 $$
-(16-10+1)(6-4)=14>12
+2x^{3}-5x+1=2\\cdot 8-5\\cdot 2+1=16-10+1=7
+$$
+
+Then the linear factor:
+
+$$
+3x-4=3\\cdot 2-4=2
+$$
+
+So the numerator product is
+
+$$
+7\\cdot 2=14
+$$
+
+Denominator:
+
+$$
+x^{2}-1=4-1=3
+$$
+
+Quotient:
+
+$$
+\\dfrac{14}{3}=4+\\dfrac{2}{3}\\approx 4.667
+$$
+
+Compare with the threshold:
+
+$$
+\\dfrac{14}{3}>4
 $$
 
 So the statement is True.`,
 
     `**D.** → False
 
-Clearing the common denominator $x^{2}-4$ gives $2x=5$, hence $x=5/2$. That unique admissible root is not smaller than $2$.
+Combine the left-hand side over the common denominator $x^{2}-4$:
+
+$$
+\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{(x+2)+(x-2)}{x^{2}-4}=\\dfrac{2x}{x^{2}-4}
+$$
+
+The equation becomes
+
+$$
+\\dfrac{2x}{x^{2}-4}=\\dfrac{5}{x^{2}-4}\\qquad(x\\ne\\pm 2)
+$$
+
+Since the denominators match and are nonzero,
+
+$$
+2x=5\\qquad\\Rightarrow\\qquad x=\\dfrac{5}{2}=2.5
+$$
+
+The claim says every solution is strictly smaller than $2$. But $2.5\\ngtr?\\quad 2.5\\nless 2$. The unique admissible root fails the threshold.
 
 So the statement is False.`,
 
     `**E.** → False
 
-Isolating and squaring produces $x=2$, which fails the claim “larger than $3$”.
+Isolate one radical:
+
+$$
+\\sqrt{x+7}=2+\\sqrt{x-1}
+$$
+
+Both sides are nonnegative for $x\\ge 1$ in the domain. Square:
+
+$$
+x+7=4+4\\sqrt{x-1}+(x-1)
+$$
+
+$$
+x+7=x+3+4\\sqrt{x-1}
+$$
+
+$$
+4=4\\sqrt{x-1}\\qquad\\Rightarrow\\qquad 1=\\sqrt{x-1}\\qquad\\Rightarrow\\qquad x=2
+$$
+
+Check in the original:
+
+$$
+\\sqrt{9}-\\sqrt{1}=3-1=2
+$$
+
+The positive solution is $x=2$, which is not strictly larger than $3$.
 
 So the statement is False.`,
-  ];
+];
 
   return {
     case_id: "MATH 2.MOCK.CALC",
@@ -735,7 +1248,7 @@ So the statement is False.`,
 
 
 
-/** Numeric parabola — threshold claims, no spoon-fed vertex coords. */
+/** Numeric parabola — harder thresholds; teacher-step explanations. */
 function buildMathCh7Numeric() {
   const context = `A parabola is given by
 
@@ -752,11 +1265,11 @@ $$
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The axis of symmetry of $g$ lies strictly to the right of $x=2$.",
-    "At its vertex, $g$ takes a strictly negative value.",
+    "The product of the two roots of $g(x)=0$ is strictly larger than $4$.",
+    "Completing the square shows that the minimum value of $g$ is strictly less than $-7$.",
     "When $m=4$, the second intersection (other than the vertex) lies strictly between $x=4$ and $x=6$.",
     "There is more than one real slope $m$ for which $y=f_{m}$ meets $y=g$ at exactly one point.",
-    "When $m=-8$, the second intersection has $x$-coordinate strictly less than $-0.5$.",
+    "When $m=-8$, the distance between the two intersection $x$-coordinates exceeds $3.5$.",
   ];
 
   const answer_key = [true, true, true, false, true];
@@ -764,31 +1277,109 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Completing the square gives $g(x)=2(x-3)^{2}-8$, so the axis is $x=3>2$.
+Solve $g(x)=0$:
+
+$$
+2x^{2}-12x+10=0\\qquad\\Rightarrow\\qquad x^{2}-6x+5=0
+$$
+
+$$
+(x-1)(x-5)=0
+$$
+
+The roots are $x=1$ and $x=5$. Their product is
+
+$$
+1\\cdot 5=5>4
+$$
+
+(Alternatively, by Vieta on $x^{2}-6x+5=0$ the product of roots is the constant term $5$.)
 
 So the statement is True.`,
 
     `**B.** → True
 
-The vertex value is $g(3)=-8<0$.
+Complete the square:
+
+$$
+g(x)=2\\bigl(x^{2}-6x\\bigr)+10=2\\bigl((x-3)^{2}-9\\bigr)+10
+$$
+
+$$
+=2(x-3)^{2}-18+10=2(x-3)^{2}-8
+$$
+
+The square term is always $\\ge 0$, so the minimum value is $-8$, attained at $x=3$. Compare with the claim:
+
+$$
+-8<-7
+$$
 
 So the statement is True.`,
 
     `**C.** → True
 
-$g-f_{m}=(x-3)(2(x-3)-m)$, so the second root is $3+m/2$. For $m=4$ that is $5\\in(4,6)$.
+Form the difference:
+
+$$
+g(x)-f_{m}(x)=2x^{2}-12x+10-\\bigl(m(x-3)-8\\bigr)
+$$
+
+$$
+=2(x-3)^{2}-8-m(x-3)+8=2(x-3)^{2}-m(x-3)
+$$
+
+$$
+=(x-3)\\bigl(2(x-3)-m\\bigr)
+$$
+
+The intersection $x$-coordinates are therefore $x=3$ (the vertex) and
+
+$$
+x=3+\\dfrac{m}{2}
+$$
+
+For $m=4$,
+
+$$
+x=3+2=5
+$$
+
+and $4<5<6$, so the second intersection lies strictly between $4$ and $6$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-The second root coincides with the vertex only when $m=0$. Exactly one slope gives a single meeting point.
+From the factorisation in C, the intersection abscissae are $x=3$ and $x=3+m/2$. These coincide precisely when
+
+$$
+\\dfrac{m}{2}=0\\qquad\\Rightarrow\\qquad m=0
+$$
+
+For every other real slope $m\\ne 0$ the two roots are distinct, so the graphs meet at two points. Therefore there is exactly one real slope giving a single common point — namely $m=0$ — and not more than one.
 
 So the statement is False.`,
 
     `**E.** → True
 
-For $m=-8$ the second root is $3-4=-1<-0.5$.
+From C, when $m=-8$ the two intersection $x$-coordinates are the vertex $x=3$ and
+
+$$
+x=3+\\dfrac{m}{2}=3+\\dfrac{-8}{2}=3-4=-1
+$$
+
+The distance between them is the absolute difference
+
+$$
+\\bigl|3-(-1)\\bigr|=\\bigl|3+1\\bigr|=4
+$$
+
+Compare with the threshold:
+
+$$
+4>3.5
+$$
 
 So the statement is True.`,
   ];
@@ -805,33 +1396,34 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Recover the vertex by completing the square, factor $g-f_{m}$, and adjudicate thresholds without reading coordinates off the claim text.",
+      "Factor $g$, complete the square for the minimum, factor $g-f_m$ to read both intersections, then compare products, values, and distances with the claimed thresholds.",
   };
 }
 
 
-/** Power costs — calibrate unknowns; qualitative/threshold claims. */
+
+/** Power model — exponent known, one calibration for A; teacher-step explanations. */
 function buildMathCh8TwoUnknowns() {
-  const context = `Delivery capacity follows the power model
+  const context = `Delivery capacity follows
 
 $$
-C(v)=A v^{p}\\qquad(v>0)
+C(v)=A\\sqrt{v}\\qquad(v>0)
 $$
 
-with unknown $A>0$ and $p>0$.
+with unknown $A>0$. Engineering fixes the square-root exponent; only the scale $A$ must be read from data.
 
-Calibration runs give $C(3)=24$ and $C(6)=96$.
+One calibration run: at $v=9$ van-hours the measured capacity is $36$.
 
-Each van-hour costs EUR $12$, and each unit of capacity earns EUR $0.80$.
+Each unit of capacity earns EUR $2$, and each van-hour costs EUR $3$.
 
-Profit is $\\pi(v)=0.8\\,C(v)-12v$.`;
+Profit is $\\pi(v)=2\\,C(v)-3v$.`;
 
   const statements = [
-    "Doubling van-hours multiplies capacity by more than three.",
-    "At five van-hours, capacity already exceeds $65$.",
-    "A profit-maximising schedule requires strictly more than three van-hours.",
-    "At the interior profit maximum, marginal revenue from an extra van-hour equals the hourly van cost.",
-    "Running exactly four van-hours yields a strictly positive profit.",
+    "Tripling van-hours multiplies capacity by more than $1.7$.",
+    "The profit-maximising van-hour level exceeds $15$.",
+    "At that profit-maximising level, capacity already exceeds $50$.",
+    "At the interior profit maximum, marginal revenue from an extra van-hour equals the EUR $3$ marginal cost.",
+    "Moving from the profit-maximising level to twice that many van-hours cuts profit by more than half.",
   ];
 
   const answer_key = [true, true, false, true, false];
@@ -839,31 +1431,125 @@ Profit is $\\pi(v)=0.8\\,C(v)-12v$.`;
   const tactical_explanations = [
     `**A.** → True
 
-$96/24=4=(6/3)^{p}$ forces $p=2$, so doubling multiplies capacity by $4>3$.
+Write the capacity at $v$ and at $3v$:
+
+$$
+C(v)=A\\sqrt{v},\\qquad C(3v)=A\\sqrt{3v}=A\\sqrt{3}\\,\\sqrt{v}
+$$
+
+The multiplication factor is the ratio
+
+$$
+\\dfrac{C(3v)}{C(v)}=\\sqrt{3}
+$$
+
+The unknown scale $A$ cancels, so the calibration is not needed for this letter. Numerically
+
+$$
+\\sqrt{3}\\approx 1.732>1.7
+$$
 
 So the statement is True.`,
 
     `**B.** → True
 
-With $A=8/3$, capacity at $v=5$ is $200/3\\approx 66.67>65$.
+First recover $A$ from the single calibration $C(9)=36$:
+
+$$
+A\\sqrt{9}=36\\qquad\\Rightarrow\\qquad 3A=36\\qquad\\Rightarrow\\qquad A=12
+$$
+
+Capacity is therefore $C(v)=12\\sqrt{v}$. Profit becomes
+
+$$
+\\pi(v)=2\\cdot 12\\sqrt{v}-3v=24\\sqrt{v}-3v
+$$
+
+Differentiate with the chain rule on $\\sqrt{v}=v^{1/2}$:
+
+$$
+\\pi'(v)=24\\cdot\\dfrac{1}{2}v^{-1/2}-3=\\dfrac{12}{\\sqrt{v}}-3
+$$
+
+Set the derivative to zero for an interior stationary point:
+
+$$
+\\dfrac{12}{\\sqrt{v}}=3\\qquad\\Rightarrow\\qquad \\sqrt{v}=4\\qquad\\Rightarrow\\qquad v=16
+$$
+
+The second derivative
+
+$$
+\\pi''(v)=-\\dfrac{12}{2}v^{-3/2}=-6v^{-3/2}<0
+$$
+
+for every $v>0$, so $v=16$ is a maximum. Compare with the claim:
+
+$$
+16>15
+$$
 
 So the statement is True.`,
 
     `**C.** → False
 
-$\\pi(v)=(32/15)v^{2}-12v$ has critical point $v=45/16\\approx 2.81$, which is not greater than $3$.
+From B the profit-maximising van-hour level is $v=16$ and the calibrated capacity is $C(v)=12\\sqrt{v}$. Substitute:
+
+$$
+C(16)=12\\sqrt{16}=12\\cdot 4=48
+$$
+
+The claim says capacity already exceeds $50$:
+
+$$
+48\\ngtr 50
+$$
+
+So at the profit maximum the capacity is $48$, which does not clear the threshold.
 
 So the statement is False.`,
 
     `**D.** → True
 
-An interior maximum requires $\\pi'(v)=0$, i.e. marginal revenue equals the EUR 12 cost.
+Profit is $\\pi(v)=2\\,C(v)-3v$, so the derivative (marginal profit) is
+
+$$
+\\pi'(v)=2\\,C'(v)-3
+$$
+
+Here $2\\,C'(v)$ is the marginal revenue earned by one extra van-hour, and $3$ is the EUR $3$ marginal cost of that van-hour. An interior maximum requires $\\pi'(v)=0$, which rearranges to
+
+$$
+2\\,C'(v)=3
+$$
+
+That is exactly the first-order condition used in B (where $C'(v)=12/(2\\sqrt{v})=6/\\sqrt{v}$, so $2\\,C'(v)=12/\\sqrt{v}$). At the maximiser, marginal revenue equals marginal cost.
 
 So the statement is True.`,
 
     `**E.** → False
 
-$\\pi(4)=512/15-48<0$.
+Evaluate profit at the optimum and at twice that level:
+
+$$
+\\pi(16)=24\\sqrt{16}-3\\cdot 16=24\\cdot 4-48=96-48=48
+$$
+
+$$
+\\pi(32)=24\\sqrt{32}-3\\cdot 32=24\\cdot\\sqrt{16\\cdot 2}-96=24\\cdot 4\\sqrt{2}-96
+$$
+
+$$
+=96\\sqrt{2}-96=96(\\sqrt{2}-1)\\approx 96\\cdot 0.4142\\approx 39.76
+$$
+
+The new profit is about $39.76$. Relative to $48$,
+
+$$
+\\dfrac{39.76}{48}\\approx 0.83
+$$
+
+so profit falls by only about $17\\%$, not by more than half.
 
 So the statement is False.`,
   ];
@@ -871,7 +1557,7 @@ So the statement is False.`,
   return {
     case_id: "MATH 8.MOCK.POW2",
     id: "MATH 8.MOCK.POW2",
-    title: "Power capacity with two unknowns — qualitative profit claims",
+    title: "Square-root capacity — one known exponent, one calibration",
     chapter: 8,
     subsection: "8.3",
     context,
@@ -880,9 +1566,10 @@ So the statement is False.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Recover $(A,p)$ from calibration, then adjudicate doubling, capacity, and profit claims without naming $p=2$ in the statement text.",
+      "Keep the square-root exponent fixed, recover $A$ from $C(9)=36$, form $\\pi(v)=24\\sqrt{v}-3v$, solve $\\pi'=0$, then adjudicate ratio, capacity, FOC, and a counterfactual profit comparison.",
   };
 }
+
 
 
 /** Heavy-calc cubic — many derivative/evaluation steps. */
@@ -910,31 +1597,135 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-$p(t)=(t+1)(t-3)(t-4)$, so the product of roots is $-12<0$.
+Look for an obvious rational root of $p(t)=t^{3}-6t^{2}+5t+12$. Try $t=-1$:
+
+$$
+(-1)^{3}-6(-1)^{2}+5(-1)+12=-1-6-5+12=0
+$$
+
+so $t+1$ is a factor. Polynomial division (or undetermined coefficients) gives
+
+$$
+p(t)=(t+1)(t^{2}-7t+12)=(t+1)(t-3)(t-4)
+$$
+
+The three real roots are therefore $-1$, $3$, and $4$. Their product is
+
+$$
+(-1)\\cdot 3\\cdot 4=-12
+$$
+
+Alternatively, for a monic cubic $t^{3}+at^{2}+bt+c=0$ Vieta says the product of roots equals $-c$. Here $c=12$, so the product is $-12$.
+
+$$
+-12<0
+$$
 
 So the statement is True.`,
 
     `**B.** → True
 
-$p'(t)=3t^{2}-12t+5$ is negative between its two roots, so $p$ decreases there.
+Differentiate term by term:
+
+$$
+p'(t)=3t^{2}-12t+5
+$$
+
+This is a parabola opening upwards. Its discriminant is
+
+$$
+\\Delta=(-12)^{2}-4\\cdot 3\\cdot 5=144-60=84=4\\cdot 21
+$$
+
+so there are two distinct real critical points
+
+$$
+t=\\dfrac{12\\pm\\sqrt{84}}{6}=\\dfrac{12\\pm 2\\sqrt{21}}{6}=\\dfrac{6\\pm\\sqrt{21}}{3}
+$$
+
+Because the leading coefficient of $p'$ is positive, $p'(t)<0$ strictly between the two roots and $p'(t)>0$ outside them. Therefore on the open interval between the two critical points the output rate $p$ is strictly decreasing.
 
 So the statement is True.`,
 
     `**C.** → True
 
-$p'(1)=-4<-3$.
+From B the derivative is $p'(t)=3t^{2}-12t+5$. The instantaneous slope at $t=1$ is therefore
+
+$$
+p'(1)=3(1)^{2}-12(1)+5
+$$
+
+Compute each term:
+
+$$
+3(1)^{2}=3,\\qquad -12(1)=-12,\\qquad +5=5
+$$
+
+$$
+p'(1)=3-12+5=-4
+$$
+
+Compare with the claimed threshold:
+
+$$
+-4<-3
+$$
 
 So the statement is True.`,
 
     `**D.** → True
 
-The larger critical point is $(6+\\sqrt{21})/3\\approx 3.53>3.4$, and between the roots $3$ and $4$ one has $p<0$.
+The larger critical abscissa is
+
+$$
+t_{+}=\\dfrac{6+\\sqrt{21}}{3}
+$$
+
+Since $\\sqrt{16}=4$ and $\\sqrt{25}=5$, one has $\\sqrt{21}\\approx 4.583$, hence
+
+$$
+t_{+}\\approx\\dfrac{6+4.583}{3}=\\dfrac{10.583}{3}\\approx 3.528
+$$
+
+$$
+3.528>3.4
+$$
+
+This critical point lies between the roots $3$ and $4$ of $p$. On the open interval $(3,4)$ the factorisation $p(t)=(t+1)(t-3)(t-4)$ has
+
+$$
+t+1>0,\\qquad t-3>0,\\qquad t-4<0
+$$
+
+so the product is negative. In particular $p(t_{+})<0$.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Endpoints give $p(0)=p(5)=12$. The local maximum is about $13.13$, which does not exceed $14$.
+Evaluate the endpoints of the shift window:
+
+$$
+p(0)=12,\\qquad p(5)=125-150+25+12=12
+$$
+
+The only local maximum on $(0,5)$ is at the smaller critical point
+
+$$
+t_{-}=\\dfrac{6-\\sqrt{21}}{3}\\approx\\dfrac{6-4.583}{3}\\approx 0.472
+$$
+
+Compute $p(t_{-})$ step by step (or expand $(t+1)(t-3)(t-4)$). Numerically
+
+$$
+p(0.472)\\approx 0.105-1.340+2.362+12\\approx 13.13
+$$
+
+The local minimum at $t_{+}$ is negative, so it cannot be the global maximum. Therefore the highest output rate on $[0,5]$ is about $13.13$, which does not exceed $14$:
+
+$$
+13.13\\ngtr 14
+$$
 
 So the statement is False.`,
   ];
@@ -989,41 +1780,141 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
+The decay law is $N(t)=N_{0}e^{-\\lambda t}$ with $N_{0}=800$. At $t=6$,
+
 $$
-\\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}\\approx 0.0959>0.09
+N(6)=800\\,e^{-6\\lambda}=450
+$$
+
+Divide both sides by $800$:
+
+$$
+e^{-6\\lambda}=\\dfrac{450}{800}=\\dfrac{9}{16}
+$$
+
+Take the natural logarithm (which is strictly increasing, so the inequality direction will be preserved later):
+
+$$
+-6\\lambda=\\ln\\dfrac{9}{16}=\\ln 9-\\ln 16
+$$
+
+$$
+\\lambda=-\\dfrac{1}{6}\\ln\\dfrac{9}{16}=\\dfrac{1}{6}\\ln\\dfrac{16}{9}=\\dfrac{1}{6}\\ln\\dfrac{800}{450}
+$$
+
+Numerically $\\ln(800/450)=\\ln(16/9)\\approx\\ln 1.7778\\approx 0.5754$, so
+
+$$
+\\lambda\\approx\\dfrac{0.5754}{6}\\approx 0.0959
+$$
+
+Compare with the threshold:
+
+$$
+0.0959>0.09
 $$
 
 So the statement is True.`,
 
     `**B.** → False
 
+Half-life $t_{1/2}$ is defined by $N(t_{1/2})=\\tfrac{1}{2}N_{0}$, which forces
+
 $$
-t_{1/2}=\\dfrac{\\ln 2}{\\lambda}\\approx 7.23\\nless 7
+e^{-\\lambda t_{1/2}}=\\dfrac{1}{2}\\qquad\\Rightarrow\\qquad \\lambda t_{1/2}=\\ln 2\\qquad\\Rightarrow\\qquad t_{1/2}=\\dfrac{\\ln 2}{\\lambda}
+$$
+
+Using $\\lambda\\approx 0.0959$ from A and $\\ln 2\\approx 0.6931$,
+
+$$
+t_{1/2}\\approx\\dfrac{0.6931}{0.0959}\\approx 7.23\\ \\mathrm{years}
+$$
+
+The claim says the half-life is strictly less than $7$ years. But
+
+$$
+7.23\\nless 7
 $$
 
 So the statement is False.`,
 
     `**C.** → False
 
+After $12=2\\cdot 6$ years the exponential multiplies twice by the six-year factor $450/800$:
+
 $$
-N(12)=800\\left(\\dfrac{450}{800}\\right)^{2}=253.125\\ngtr 260
+N(12)=N_{0}\\,e^{-12\\lambda}=N_{0}\\bigl(e^{-6\\lambda}\\bigr)^{2}=800\\left(\\dfrac{450}{800}\\right)^{2}
 $$
+
+$$
+=800\\cdot\\left(\\dfrac{9}{16}\\right)^{2}=800\\cdot\\dfrac{81}{256}=\\dfrac{800\\cdot 81}{256}
+$$
+
+$$
+=\\dfrac{25\\cdot 81}{8}=\\dfrac{2025}{8}=253.125
+$$
+
+Compare with the threshold $260$:
+
+$$
+253.125\\ngtr 260
+$$
+
+So the remaining mass is not still above $260\\ \\mathrm{mg}$.
 
 So the statement is False.`,
 
     `**D.** → False
 
+The endowment satisfies $S(5)=5000\\,e^{5r}=6500$. Divide by $5000$:
+
 $$
-r=\\dfrac{1}{5}\\ln\\dfrac{6500}{5000}\\approx 0.0525\\ngtr 0.055
+e^{5r}=\\dfrac{6500}{5000}=1.3
+$$
+
+$$
+5r=\\ln 1.3\\qquad\\Rightarrow\\qquad r=\\dfrac{\\ln 1.3}{5}
+$$
+
+Since $\\ln 1.3\\approx 0.2624$,
+
+$$
+r\\approx\\dfrac{0.2624}{5}\\approx 0.0525
+$$
+
+The claim says $r>0.055$. But
+
+$$
+0.0525\\ngtr 0.055
 $$
 
 So the statement is False.`,
 
     `**E.** → True
 
+Solve $S(t)=9000$ for the first hitting time:
+
 $$
-5000\\,e^{rt}=9000\\qquad\\Rightarrow\\qquad t=\\dfrac{\\ln 1.8}{r}\\approx 11.20>11
+5000\\,e^{rt}=9000\\qquad\\Rightarrow\\qquad e^{rt}=\\dfrac{9000}{5000}=1.8
 $$
+
+$$
+rt=\\ln 1.8\\qquad\\Rightarrow\\qquad t=\\dfrac{\\ln 1.8}{r}
+$$
+
+Using $r\\approx 0.0525$ from D and $\\ln 1.8\\approx 0.5878$,
+
+$$
+t\\approx\\dfrac{0.5878}{0.0525}\\approx 11.20
+$$
+
+Compare with the threshold:
+
+$$
+11.20>11
+$$
+
+So the endowment first reaches EUR $9000$ after more than $11$ years.
 
 So the statement is True.`,
   ];
@@ -1071,37 +1962,117 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Logarithmic differentiation yields
+Write $f$ as a product of three positive factors on $x>0$:
 
 $$
-\\dfrac{f'}{f}=\\dfrac{2x}{x^{2}+4}+\\dfrac{2}{(2x+1)\\ln(2x+1)}-1
+f(x)=(x^{2}+4)\\cdot\\ln(2x+1)\\cdot e^{-x}
 $$
 
-which is positive at $x=0.5$ and negative at $x=1.5$, so $f'$ has a zero in $(0.5,1.5)$.
+(For $x>0$ one has $2x+1>1$, so $\\ln(2x+1)>0$.) Take the natural logarithm:
+
+$$
+\\ln f(x)=\\ln(x^{2}+4)+\\ln\\bigl(\\ln(2x+1)\\bigr)-x
+$$
+
+Differentiate with the chain rule:
+
+$$
+\\dfrac{f'(x)}{f(x)}=\\dfrac{2x}{x^{2}+4}+\\dfrac{1}{\\ln(2x+1)}\\cdot\\dfrac{2}{2x+1}-1
+$$
+
+$$
+=\\dfrac{2x}{x^{2}+4}+\\dfrac{2}{(2x+1)\\ln(2x+1)}-1
+$$
+
+Evaluate this logarithmic derivative at the endpoints of the claimed interval.
+
+At $x=0.5$:
+
+$$
+\\dfrac{2\\cdot 0.5}{0.25+4}=\\dfrac{1}{4.25}\\approx 0.235
+$$
+
+$$
+\\dfrac{2}{(2)\\ln 2}=\\dfrac{1}{\\ln 2}\\approx 1.443
+$$
+
+$$
+0.235+1.443-1\\approx 0.678>0
+$$
+
+At $x=1.5$:
+
+$$
+\\dfrac{2\\cdot 1.5}{2.25+4}=\\dfrac{3}{6.25}=0.48
+$$
+
+$$
+\\dfrac{2}{4\\cdot\\ln 4}=\\dfrac{2}{4\\ln 4}\\approx\\dfrac{2}{5.545}\\approx 0.361
+$$
+
+$$
+0.48+0.361-1\\approx -0.159<0
+$$
+
+Since $f>0$, the sign of $f'$ matches the sign of $f'/f$. By the intermediate-value theorem, $f'/f$ (hence $f'$) has a zero in $(0.5,1.5)$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Across that zero, $f'$ changes from $+$ to $-$, so the critical point is a local maximum.
+From A, the logarithmic derivative is positive at $x=0.5$ and negative at $x=1.5$. Crossing a simple zero of $f'$ from $+$ to $-$ means $f$ itself changes from increasing to decreasing. That is the definition of a local maximum, not a local minimum.
 
 So the statement is False.`,
 
     `**C.** → True
 
-$f(1)=5\\ln 3/e\\approx 2.021>2$.
+Substitute $x=1$ into the original formula:
+
+$$
+f(1)=(1^{2}+4)\\ln(2\\cdot 1+1)\\,e^{-1}=5\\cdot\\ln 3\\cdot\\dfrac{1}{e}=\\dfrac{5\\ln 3}{e}
+$$
+
+Use $\\ln 3\\approx 1.0986$ and $e\\approx 2.7183$:
+
+$$
+f(1)\\approx\\dfrac{5\\cdot 1.0986}{2.7183}\\approx\\dfrac{5.493}{2.7183}\\approx 2.021
+$$
+
+$$
+2.021>2
+$$
 
 So the statement is True.`,
 
     `**D.** → True
 
-At $x=2$ the logarithmic derivative is negative while $f(2)>0$, so $f'(2)<0$.
+Evaluate the logarithmic derivative from A at $x=2$:
+
+$$
+\\dfrac{2\\cdot 2}{4+4}=\\dfrac{4}{8}=0.5
+$$
+
+$$
+\\dfrac{2}{(5)\\ln 5},\\qquad \\ln 5\\approx 1.6094\\qquad\\Rightarrow\\qquad \\dfrac{2}{5\\cdot 1.6094}\\approx 0.249
+$$
+
+$$
+0.5+0.249-1=-0.251<0
+$$
+
+Also $f(2)=(4+4)\\ln 5\\,e^{-2}=8\\ln 5\\,e^{-2}>0$. Therefore
+
+$$
+f'(2)=f(2)\\cdot\\Bigl(\\dfrac{f'(2)}{f(2)}\\Bigr)<0
+$$
+
+Just after $x=2$ the function is still decreasing.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Because $f'$ changes sign from $+$ to $-$ near $x\\approx 1.01$, $f$ is not strictly increasing on all of $(0,\\infty)$.
+A function that is strictly increasing on the whole half-line $(0,\\infty)$ cannot have an interior local maximum. But A–B show that $f$ has a local maximum near $x\\approx 1$. On the left of that point $f$ increases; on the right it decreases for a while (as confirmed at $x=2$ in D). Hence $f$ is not strictly increasing on all of $(0,\\infty)$.
 
 So the statement is False.`,
   ];
