@@ -14,7 +14,11 @@ import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
-import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
+import {
+  MONOBANK_TEST_CHARGE,
+  PAID_PRODUCTS,
+  type PaidProductSlug,
+} from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
 
@@ -63,6 +67,9 @@ export function PaymentModal({
   const priceFactor = discountApplied ? 1 - discountPct / 100 : 1;
   const catalogEur = product.priceEur;
   const eurPrice = Math.round(catalogEur * priceFactor);
+  const chargeLabel = MONOBANK_TEST_CHARGE.enabled
+    ? MONOBANK_TEST_CHARGE.label
+    : `€${eurPrice}`;
   const showDiscountedTotal = method !== "promo" || discountApplied;
 
   useEffect(() => {
@@ -291,8 +298,9 @@ export function PaymentModal({
               </p>
               {showDiscountedTotal && (
                 <p className="mt-0.5 text-xs text-muted-foreground">
-                  Charged as €{eurPrice}
-                  {discountApplied ? ` (−${discountPct}%)` : ""}
+                  {MONOBANK_TEST_CHARGE.enabled
+                    ? `Test charge ${MONOBANK_TEST_CHARGE.label}`
+                    : `Charged as €${eurPrice}${discountApplied ? ` (−${discountPct}%)` : ""}`}
                 </p>
               )}
             </div>
@@ -301,10 +309,10 @@ export function PaymentModal({
                 <p className="font-display text-2xl font-bold text-foreground">Free</p>
               ) : (
                 <>
-                  {discountApplied && (
+                  {!MONOBANK_TEST_CHARGE.enabled && discountApplied && (
                     <p className="text-sm text-muted-foreground line-through">€{catalogEur}</p>
                   )}
-                  <p className="font-display text-2xl font-bold text-foreground">€{eurPrice}</p>
+                  <p className="font-display text-2xl font-bold text-foreground">{chargeLabel}</p>
                 </>
               )}
             </div>
@@ -399,8 +407,9 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {discountPct}% off applied ({appliedPromoCode}) — pay €{eurPrice} instead of €
-                      {catalogEur}
+                      {MONOBANK_TEST_CHARGE.enabled
+                        ? `Discount noted (${appliedPromoCode}) — test charge remains ${MONOBANK_TEST_CHARGE.label}`
+                        : `${discountPct}% off applied (${appliedPromoCode}) — pay €${eurPrice} instead of €${catalogEur}`}
                     </p>
                   )}
 
@@ -422,7 +431,7 @@ export function PaymentModal({
                     ) : (
                       <>
                         <Lock className="h-4 w-4" />
-                        Proceed to payment · €{eurPrice}
+                        Proceed to payment · {chargeLabel}
                       </>
                     )}
                   </button>
