@@ -622,144 +622,514 @@ So the statement is True.`,
   };
 }
 
-/**
- * Newton cooling + deposit doubling — different from population and radioactive.
- * Harder: must chain continuous cooling with discrete compounding and compare logs.
- */
-function buildMathCh10Cooling() {
-  // Coffee: T_env=20, T(0)=90, T(5)=60 → (60-20)/(90-20)=40/70=4/7 = e^{-5k} → k = -ln(4/7)/5
-  // Time to 35°C: (35-20)/(90-20)=15/70=3/14 = e^{-kt} → t = -ln(3/14)/k
-  // Deposit: 8000 grows at 4.5% annual discrete; doubling: (1.045)^n=2 → n=ln2/ln1.045
-  // Continuous force with same effective: e^δ=1.045 → δ=ln1.045
-  // Piecewise: first 3 years at 4.5%, then 3.0%; reach 11_000?
-
-  const context = `A cup of coffee cools in a room at $20^{\\circ}\\mathrm{C}$. At time $t=0$ the coffee is at $90^{\\circ}\\mathrm{C}$, and after $5$ minutes it is at $60^{\\circ}\\mathrm{C}$. Newton’s law of cooling says
-
-$$
-T(t)-20=\\bigl(T(0)-20\\bigr)e^{-kt}
-$$
-
-for some constant $k>0$.
-
-Separately, a savings balance of $€8{,}000$ is compounded once per year at $4.5\\%$ effective annual interest.`;
+/** Five independent logic claims — not one shared scenario. */
+function buildMathCh1Independent() {
+  const context = `Decide whether each statement is true or false. The five claims concern different logical principles and do not share a common scenario or a single shared hypothesis.`;
 
   const statements = [
-    "The cooling constant satisfies $k>0.11$.",
-    "The coffee first falls below $35^{\\circ}\\mathrm{C}$ at some time $t<18$ minutes.",
-    "Writing the annual growth as $e^{\\delta}$, the continuous force $\\delta$ is smaller than $0.044$.",
-    "At $4.5\\%$ effective annual interest the $€8{,}000$ balance doubles in fewer than $16$ years.",
-    "If the rate falls to $3\\%$ after $3$ years, the balance first exceeds $€11{,}000$ at some $t>7$ (years from the start).",
+    "The quantified claim $\\exists x\\,\\forall y\\,P(x,y)$ logically implies $\\forall y\\,\\exists x\\,P(x,y)$.",
+    "The negation $\\neg(P\\land Q)$ is logically equivalent to $\\neg P\\land \\neg Q$.",
+    "From the premises $P\\to Q$ and $\\neg Q$ one may validly conclude $\\neg P$.",
+    "The biconditional $P\\leftrightarrow Q$ is true whenever $P$ and $Q$ have opposite truth values.",
+    "The quantified implication $\\forall x\\,(P(x)\\to Q(x))$ is logically equivalent to $\\bigl(\\forall x\\,P(x)\\bigr)\\to\\bigl(\\forall x\\,Q(x)\\bigr)$.",
   ];
 
-  // k = -ln(4/7)/5 = -ln(0.571428)/5 ≈ 0.55962/5 ≈ 0.11192 > 0.11 → True
-  // t for 35: -ln(3/14)/k = -ln(0.214286)/k ≈ 1.5404/0.11192 ≈ 13.76 < 18 → True
-  // δ = ln(1.045) ≈ 0.04402, not < 0.044 → False (barely)
-  // Actually ln(1.045) = 0.0440168... > 0.044, so "smaller than 0.044" is False
-  // n = ln2/ln1.045 ≈ 0.693147/0.044017 ≈ 15.75 < 16 → True
-  // After 3y: 8000*1.045^3 ≈ 8000*1.141166 ≈ 9129.33
-  // Then 9129.33*1.03^m = 11000 → 1.03^m = 1.2049 → m = ln(1.2049)/ln(1.03) ≈ 0.1864/0.02956 ≈ 6.31
-  // t = 3+6.31 = 9.31 > 7 → True
-
-  // Mix: T T F T T — a bit many Trues. Flip B to harder threshold?
-  // Change B to t<12: 13.76 < 12? False. Good.
-  statements[1] =
-    "The coffee first falls below $35^{\\circ}\\mathrm{C}$ at some time $t<12$ minutes.";
-  // answer: T F F T T
-
-  const answer_key = [true, false, false, true, true];
+  const answer_key = [true, false, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-From $T(5)=60$,
+If a single $x_0$ works for every $y$, then for each fixed $y$ one may choose that same $x_0$. So $\\exists x\\,\\forall y\\,P$ forces $\\forall y\\,\\exists x\\,P$.
+
+So the statement is True.`,
+
+    `**B.** → False
+
+De Morgan’s law says
 
 $$
-\\dfrac{60-20}{90-20}=\\dfrac{40}{70}=\\dfrac{4}{7}=e^{-5k}
+\\neg(P\\land Q)\\equiv \\neg P\\lor \\neg Q
+$$
+
+not $\\neg P\\land \\neg Q$. The claimed equivalence is wrong.
+
+So the statement is False.`,
+
+    `**C.** → True
+
+This is modus tollens: $P\\to Q$ together with $\\neg Q$ yields $\\neg P$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+$P\\leftrightarrow Q$ is true precisely when $P$ and $Q$ have the same truth value. Opposite values make the biconditional false.
+
+So the statement is False.`,
+
+    `**E.** → False
+
+From $\\forall x\\,(P(x)\\to Q(x))$ and $\\forall x\\,P(x)$ one does get $\\forall x\\,Q(x)$, but the bare implication $\\bigl(\\forall x\\,P\\bigr)\\to\\bigl(\\forall x\\,Q\\bigr)$ can hold for other reasons and is not equivalent to the quantified implication. Counter-models exist where one side holds and the other fails.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 1.MOCK.INDEP",
+    id: "MATH 1.MOCK.INDEP",
+    title: "Independent logic claims — quantifiers, De Morgan, modus tollens, biconditional",
+    chapter: 1,
+    subsection: "1.4",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Treat each letter as a separate logic fact: quantifier order, De Morgan, modus tollens, biconditional truth table, and the gap between $\\forall(P\\to Q)$ and $(\\forall P)\\to(\\forall Q)$.",
+  };
+}
+
+/** Multi-step elementary algebra — no abbreviated-multiplication shortcuts. */
+function buildMathCh2HardCalc() {
+  const context = `Decide whether each statement is true or false. Each claim needs a multi-step calculation (nested fractions, a linear system, substitution, a rational equation, or nested radicals) — not a single abbreviated-multiplication identity.`;
+
+  const statements = [
+    "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ equals $\\dfrac{5}{7}$.",
+    "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>4$.",
+    "Substituting $x=2$ into $(2x^{3}-5x+1)(3x-4)$ yields the value $14$.",
+    "Over the reals with $x\\ne\\pm 2$, the equation $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ has solution $x=2$.",
+    "The equation $\\sqrt{x+7}-\\sqrt{x-1}=2$ has solution $x=2$.",
+  ];
+
+  const answer_key = [true, false, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+At $x=2$,
+
+$$
+\\dfrac{3}{2}-\\dfrac{2}{3}=\\dfrac{5}{6},\\qquad \\dfrac{5}{3}-\\dfrac{1}{2}=\\dfrac{7}{6}
 $$
 
 $$
-k=-\\dfrac{1}{5}\\ln\\dfrac{4}{7}=\\dfrac{1}{5}\\ln\\dfrac{7}{4}\\approx\\dfrac{1}{5}\\cdot 0.55962\\approx 0.11192
-$$
-
-$$
-0.11192>0.11
+\\dfrac{5/6}{7/6}=\\dfrac{5}{7}
 $$
 
 So the statement is True.`,
 
     `**B.** → False
 
-Require $T(t)=35$:
+Eliminate $v$: multiply the first equation by $5$ and the second by $2$,
 
 $$
-\\dfrac{35-20}{90-20}=\\dfrac{15}{70}=\\dfrac{3}{14}=e^{-kt}
-$$
-
-$$
-t=-\\dfrac{1}{k}\\ln\\dfrac{3}{14}\\approx\\dfrac{1.54045}{0.11192}\\approx 13.76
+15u-10v=55,\\qquad 4u+10v=6
 $$
 
 $$
-13.76\\nless  12
+19u=61\\qquad\\Rightarrow\\qquad u=\\dfrac{61}{19}
 $$
 
-So the statement is False.`,
-
-    `**C.** → False
+Then $v=-\\dfrac{13}{19}$, so
 
 $$
-e^{\\delta}=1.045\\qquad\\Rightarrow\\qquad \\delta=\\ln 1.045\\approx 0.044017
-$$
-
-$$
-0.044017\\nless  0.044
+u+v=\\dfrac{48}{19}\\approx 2.53\\ngtr 4
 $$
 
 So the statement is False.`,
 
-    `**D.** → True
-
-Doubling time at $4.5\\%$ annual compounding:
+    `**C.** → True
 
 $$
-(1.045)^{n}=2\\qquad\\Rightarrow\\qquad n=\\dfrac{\\ln 2}{\\ln 1.045}\\approx\\dfrac{0.693147}{0.044017}\\approx 15.75
-$$
-
-$$
-15.75<16
+\\bigl(2\\cdot 8-5\\cdot 2+1\\bigr)(6-4)=(16-10+1)\\cdot 2=14
 $$
 
 So the statement is True.`,
 
+    `**D.** → False
+
+Combine the left-hand side over $x^{2}-4$:
+
+$$
+\\dfrac{2x}{x^{2}-4}=\\dfrac{5}{x^{2}-4}\\qquad(x\\ne\\pm 2)
+$$
+
+$$
+2x=5\\qquad\\Rightarrow\\qquad x=\\dfrac{5}{2}
+$$
+
+The claimed root $x=2$ is excluded by the domain and is not the solution.
+
+So the statement is False.`,
+
     `**E.** → True
 
-After three years at $4.5\\%$:
+Isolate one radical and square:
 
 $$
-8{,}000\\cdot 1.045^{3}\\approx 8{,}000\\cdot 1.14117\\approx 9{,}129.3
-$$
-
-Then at $3\\%$:
-
-$$
-9{,}129.3\\cdot 1.03^{m}=11{,}000\\qquad\\Rightarrow\\qquad 1.03^{m}\\approx 1.2049
+\\sqrt{x+7}=2+\\sqrt{x-1}
 $$
 
 $$
-m=\\dfrac{\\ln 1.2049}{\\ln 1.03}\\approx 6.31
+x+7=4+4\\sqrt{x-1}+(x-1)
 $$
 
 $$
-t=3+6.31\\approx 9.31>7
+4=4\\sqrt{x-1}\\qquad\\Rightarrow\\qquad x=2
+$$
+
+Checking: $\\sqrt{9}-\\sqrt{1}=2$. The root is valid.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 2.MOCK.CALC",
+    id: "MATH 2.MOCK.CALC",
+    title: "Multi-step elementary algebra without abbreviated-multiplication shortcuts",
+    chapter: 2,
+    subsection: "2.4",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Simplify a nested fraction by hand, solve a $2\\times 2$ system, evaluate a product by substitution, clear a rational equation with domain, and isolate-and-square a radical equation.",
+  };
+}
+
+/** Numeric line–parabola geometry that forces casework on slope. */
+function buildMathCh7Numeric() {
+  const context = `Consider the parabola $g(x)=2x^{2}-12x+10$ and the family of lines through its vertex with slope $m$:
+
+$$
+f_{m}(x)=m(x-3)-8
+$$
+
+Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The vertex of $g$ is the point $(3,-8)$.",
+    "The equation $g(x)=0$ has discriminant $64$, hence two distinct real roots.",
+    "When $m=4$, the product of the $x$-coordinates of the intersection points of $y=g$ and $y=f_{m}$ equals $15$.",
+    "For every real slope $m$, the graphs of $g$ and $f_{m}$ are tangent at the vertex.",
+    "When $m=-8$, the second intersection point (other than the vertex) has a negative $x$-coordinate.",
+  ];
+
+  const answer_key = [true, true, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+Complete the square:
+
+$$
+g(x)=2\\bigl(x^{2}-6x\\bigr)+10=2\\bigl((x-3)^{2}-9\\bigr)+10=2(x-3)^{2}-8
+$$
+
+The vertex is $(3,-8)$.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+$$
+\\Delta=(-12)^{2}-4\\cdot 2\\cdot 10=144-80=64>0
+$$
+
+Two distinct real roots.
+
+So the statement is True.`,
+
+    `**C.** → True
+
+$$
+g(x)-f_{m}(x)=(x-3)\\bigl(2(x-3)-m\\bigr)
+$$
+
+The intersection $x$-coordinates are $3$ and $3+\\dfrac{m}{2}$. For $m=4$ they are $3$ and $5$, and $3\\cdot 5=15$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+The second intersection is $x=3+\\dfrac{m}{2}$. It coincides with the vertex if and only if $m=0$. For $m\\ne 0$ the graphs meet twice and are not tangent.
+
+So the statement is False.`,
+
+    `**E.** → True
+
+For $m=-8$,
+
+$$
+x=3+\\dfrac{-8}{2}=3-4=-1<0
 $$
 
 So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 10.MOCK.COOL",
-    id: "MATH 10.MOCK.COOL",
-    title: "Newton cooling chained with deposit doubling and a rate cut",
+    case_id: "MATH 7.MOCK.LINE",
+    id: "MATH 7.MOCK.LINE",
+    title: "Numeric parabola with a slope family through the vertex",
+    chapter: 7,
+    subsection: "7.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Complete the square for the vertex, read the discriminant, factor $g-f_{m}$ to locate both intersections, and see that tangency at the vertex forces $m=0$.",
+  };
+}
+
+/** Power model with two unknowns recovered from calibration, then profit calculus. */
+function buildMathCh8TwoUnknowns() {
+  const context = `A logistics firm models delivery capacity by the power law
+
+$$
+C(v)=A v^{p}\\qquad(v>0)
+$$
+
+with unknown constants $A>0$ and $p>0$. Calibration runs give $C(3)=24$ and $C(6)=96$. Each van-hour costs $€12$, and each unit of capacity earns $€0.80$ of revenue. Profit is $\\pi(v)=0.8\\,C(v)-12v$.
+
+Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The calibration forces the power to be $p=2$.",
+    "The calibration forces the prefactor to satisfy $A>3$.",
+    "At $v=5$, capacity already exceeds $65$.",
+    "Profit is maximised at some van-hour level $v>3$.",
+    "At the profit-maximising $v$, marginal revenue from an extra van-hour equals the $€12$ marginal cost.",
+  ];
+
+  const answer_key = [true, false, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+$$
+\\dfrac{C(6)}{C(3)}=\\dfrac{96}{24}=4=\\left(\\dfrac{6}{3}\\right)^{p}=2^{p}
+$$
+
+$$
+p=2
+$$
+
+So the statement is True.`,
+
+    `**B.** → False
+
+With $p=2$,
+
+$$
+A\\cdot 3^{2}=24\\qquad\\Rightarrow\\qquad A=\\dfrac{8}{3}\\approx 2.67\\ngtr 3
+$$
+
+So the statement is False.`,
+
+    `**C.** → True
+
+$$
+C(5)=\\dfrac{8}{3}\\cdot 25=\\dfrac{200}{3}\\approx 66.67>65
+$$
+
+So the statement is True.`,
+
+    `**D.** → False
+
+$$
+\\pi(v)=0.8\\cdot\\dfrac{8}{3}v^{2}-12v=\\dfrac{32}{15}v^{2}-12v
+$$
+
+$$
+\\pi'(v)=\\dfrac{64}{15}v-12=0\\qquad\\Rightarrow\\qquad v=\\dfrac{45}{16}=2.8125\\ngtr 3
+$$
+
+So the statement is False.`,
+
+    `**E.** → True
+
+An interior profit maximum requires $\\pi'(v)=0$, i.e. marginal revenue equals marginal cost $12$.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 8.MOCK.POW2",
+    id: "MATH 8.MOCK.POW2",
+    title: "Power capacity with two unknowns, then profit maximisation",
+    chapter: 8,
+    subsection: "8.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Recover $(A,p)$ from the ratio of two calibrations, evaluate capacity at a third point, then maximise the resulting quadratic profit and read the first-order condition.",
+  };
+}
+
+/** Hard numeric cubic with critical-point analysis. */
+function buildMathCh9HardPoly() {
+  const context = `Let
+
+$$
+p(x)=x^{3}-6x^{2}+5x+12
+$$
+
+Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The cubic $p$ has three distinct real roots.",
+    "The larger critical point of $p$ is strictly greater than $3$.",
+    "The derivative satisfies $p'(1)>0$.",
+    "On the interval $[-2,5]$, the absolute maximum value of $p$ is $0$.",
+    "Between its two critical points, $p$ is strictly decreasing.",
+  ];
+
+  const answer_key = [true, true, false, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+$$
+p(x)=(x+1)(x-3)(x-4)
+$$
+
+The roots $-1$, $3$, and $4$ are three distinct reals.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+$$
+p'(x)=3x^{2}-12x+5=0\\qquad\\Rightarrow\\qquad x=\\dfrac{6\\pm\\sqrt{21}}{3}
+$$
+
+The larger critical point is $\\dfrac{6+\\sqrt{21}}{3}\\approx 3.53>3$.
+
+So the statement is True.`,
+
+    `**C.** → False
+
+$$
+p'(1)=3-12+5=-4\\ngtr 0
+$$
+
+So the statement is False.`,
+
+    `**D.** → False
+
+$$
+p(0)=12,\\qquad p(5)=12
+$$
+
+The absolute maximum on $[-2,5]$ is $12$, not $0$.
+
+So the statement is False.`,
+
+    `**E.** → True
+
+The parabola $p'$ opens upwards, so $p'<0$ strictly between its two roots. Hence $p$ decreases on that interval.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 9.MOCK.CUBIC",
+    id: "MATH 9.MOCK.CUBIC",
+    title: "Hard numeric cubic — roots, critical points, max/min",
+    chapter: 9,
+    subsection: "9.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Factor the cubic, solve $p'=0$ with the quadratic formula, evaluate signs and endpoint values, and read monotonicity from the sign of $p'$ between critical points.",
+  };
+}
+
+/** Clean exp/log — decay + continuous compounding (no fragile degree KaTeX). */
+function buildMathCh10ExpLog() {
+  const context = `A sealed isotope sample decays according to
+
+$$
+N(t)=N_{0}e^{-\\lambda t}
+$$
+
+with $N(0)=800$ milligrams and $N(6)=450$ milligrams ($t$ in years). Separately, a continuously compounded fund follows
+
+$$
+S(t)=5000\\,e^{rt}
+$$
+
+with $S(5)=6500$.
+
+Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The decay constant satisfies $\\lambda>0.09$.",
+    "The half-life of the sample is strictly less than $7$ years.",
+    "After $12$ years the remaining mass is strictly less than $260$ milligrams.",
+    "The continuous force of interest satisfies $r>0.055$.",
+    "The fund first reaches $9000$ at some time $t>11$ years.",
+  ];
+
+  const answer_key = [true, false, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+$$
+\\dfrac{450}{800}=e^{-6\\lambda}\\qquad\\Rightarrow\\qquad \\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}=\\dfrac{1}{6}\\ln\\dfrac{16}{9}\\approx 0.09589>0.09
+$$
+
+So the statement is True.`,
+
+    `**B.** → False
+
+$$
+t_{1/2}=\\dfrac{\\ln 2}{\\lambda}\\approx\\dfrac{0.693147}{0.09589}\\approx 7.23\\nless 7
+$$
+
+So the statement is False.`,
+
+    `**C.** → True
+
+$$
+N(12)=800\\left(\\dfrac{450}{800}\\right)^{2}=800\\cdot(0.5625)^{2}=253.125<260
+$$
+
+So the statement is True.`,
+
+    `**D.** → False
+
+$$
+r=\\dfrac{1}{5}\\ln\\dfrac{6500}{5000}=\\dfrac{1}{5}\\ln 1.3\\approx 0.05247\\ngtr 0.055
+$$
+
+So the statement is False.`,
+
+    `**E.** → True
+
+$$
+5000\\,e^{rt}=9000\\qquad\\Rightarrow\\qquad t=\\dfrac{\\ln 1.8}{r}\\approx\\dfrac{0.5878}{0.05247}\\approx 11.20>11
+$$
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 10.MOCK.DECAY",
+    id: "MATH 10.MOCK.DECAY",
+    title: "Isotope decay chained with continuous compounding",
     chapter: 10,
     subsection: "10.3",
     context,
@@ -768,9 +1138,98 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Recover $k$ from one cooling observation, solve later temperatures with logarithms, convert the effective annual rate to a continuous force via $\\ln(1+i)$, and for the piecewise deposit solve the second stage after compounding the first three years.",
+      "Recover $\\lambda$ from one decay observation, compute half-life and a doubled-time mass, then recover the continuous force $r$ from the fund and solve for a later target balance.",
   };
 }
+
+/** Long logarithmic product derivative with max/min properties. */
+function buildMathCh11LogDeriv() {
+  const context = `For $x>0$ define
+
+$$
+f(x)=(x^{2}+4)\\ln(2x+1)\\,e^{-x}
+$$
+
+Decide whether each statement is true or false. The claims concern a long product/logarithmic derivative and max/min behaviour.`;
+
+  const statements = [
+    "Logarithmic differentiation yields $\\dfrac{f'(x)}{f(x)}=\\dfrac{2x}{x^{2}+4}+\\dfrac{2}{(2x+1)\\ln(2x+1)}-1$.",
+    "The equation $f'(x)=0$ has a root in the open interval $(0.5,1.5)$.",
+    "At that critical point in $(0.5,1.5)$, $f$ has a local minimum.",
+    "The value $f(1)$ is strictly greater than $2$.",
+    "The derivative satisfies $f'(2)<0$, so just after $x=2$ the function is still falling.",
+  ];
+
+  const answer_key = [true, true, false, true, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+Because $f>0$ on $(0,\\infty)$,
+
+$$
+\\ln f(x)=\\ln(x^{2}+4)+\\ln\\bigl(\\ln(2x+1)\\bigr)-x
+$$
+
+Differentiate term by term:
+
+$$
+\\dfrac{f'}{f}=\\dfrac{2x}{x^{2}+4}+\\dfrac{1}{\\ln(2x+1)}\\cdot\\dfrac{2}{2x+1}-1
+$$
+
+which is exactly the displayed formula.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+The continuous map $x\\mapsto f'(x)/f(x)$ is positive at $x=0.5$ and negative at $x=1.5$. By the intermediate-value theorem, $f'$ has a zero in $(0.5,1.5)$ (approximately $x\\approx 1.01$).
+
+So the statement is True.`,
+
+    `**C.** → False
+
+Across that root the sign of $f'$ changes from positive to negative, so the critical point is a local maximum, not a local minimum.
+
+So the statement is False.`,
+
+    `**D.** → True
+
+$$
+f(1)=(1+4)\\ln 3\\cdot e^{-1}=\\dfrac{5\\ln 3}{e}\\approx\\dfrac{5\\cdot 1.0986}{2.71828}\\approx 2.021>2
+$$
+
+So the statement is True.`,
+
+    `**E.** → True
+
+At $x=2$,
+
+$$
+\\dfrac{f'(2)}{f(2)}=\\dfrac{4}{8}+\\dfrac{2}{5\\ln 5}-1\\approx 0.5+0.249-1=-0.251<0
+$$
+
+Since $f(2)>0$, one has $f'(2)<0$, so $f$ is falling there.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 11.MOCK.LOGDER",
+    id: "MATH 11.MOCK.LOGDER",
+    title: "Long product-logarithm-exponential derivative with max/min claims",
+    chapter: 11,
+    subsection: "11.4",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Differentiate $f=(x^{2}+4)\\ln(2x+1)e^{-x}$ via $\\ln f$, locate the sign-change of $f'$ in $(0.5,1.5)$, classify it as a local maximum, and evaluate $f(1)$ and $f'(2)$.",
+  };
+}
+
 
 function mapMath(chapter: number, t: Record<string, unknown>) {
   return {
@@ -897,17 +1356,17 @@ function takeMath(caseId: string, chapter: number) {
 }
 
 const math = [
-  takeMath("MATH 1.82", 1),
-  takeMath("MATH 2.60", 2),
+  buildMathCh1Independent(),
+  buildMathCh2HardCalc(),
   takeMath("MATH 11.123", 3),
   buildMathCh4Diversified(),
   buildMathCh5Mixture(),
   buildMathCh6Diversified(),
-  takeMath("MATH 7.89", 7),
-  takeMath("MATH 8.44", 8),
-  takeMath("MATH 9.E11", 9),
-  buildMathCh10Cooling(),
-  takeMath("MATH 11.156", 11),
+  buildMathCh7Numeric(),
+  buildMathCh8TwoUnknowns(),
+  buildMathCh9HardPoly(),
+  buildMathCh10ExpLog(),
+  buildMathCh11LogDeriv(),
   takeMath("MATH 12.186", 12),
   takeMath("MATH 13.36", 13),
 ];
