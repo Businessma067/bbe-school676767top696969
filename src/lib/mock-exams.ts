@@ -27,6 +27,12 @@ import {
   MOCK_EXAM_3_QUESTION_COUNT,
   buildMockExam3Questions,
 } from "@/lib/mock-exam-3-content";
+import {
+  MOCK_EXAM_4_CONTENT_REV,
+  MOCK_EXAM_4_POINTS_TOTAL,
+  MOCK_EXAM_4_QUESTION_COUNT,
+  buildMockExam4Questions,
+} from "@/lib/mock-exam-4-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -111,7 +117,15 @@ export const MOCK_EXAMS: MockExamSummary[] = [
     pointsTotal: MOCK_EXAM_3_POINTS_TOTAL,
     contentRev: MOCK_EXAM_3_CONTENT_REV,
   },
-  { id: "mock-4", title: "Mock Exam 4", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
+  {
+    id: "mock-4",
+    title: "Mock Exam 4",
+    questionCount: MOCK_EXAM_4_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_4_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_4_CONTENT_REV,
+  },
   { id: "mock-5", title: "Mock Exam 5", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
 ];
 
@@ -168,6 +182,9 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   }
   if (examId === "mock-3") {
     return buildMockExam3Questions(examId);
+  }
+  if (examId === "mock-4") {
+    return buildMockExam4Questions(examId);
   }
 
   const rand = makeRandom(examId);
