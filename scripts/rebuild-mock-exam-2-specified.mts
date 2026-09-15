@@ -484,15 +484,29 @@ So the statement is False.`,
 
     `**C.** → False
 
-Eighteen hours is exactly three half-lives:
+Eighteen hours is exactly three half-lives of $6$ hours each:
 
 $$
-A(18)=A_{0}\\cdot \\left(\\dfrac{1}{2}\\right)^{18/6}=2.4\\cdot 10^{6}\\cdot \\dfrac{1}{8}=3.0\\cdot 10^{5}.
+\\dfrac{18}{6}=3
+$$
+
+Each half-life multiplies activity by $\\tfrac{1}{2}$, so three half-lives multiply by $\\tfrac{1}{8}$:
+
+$$
+A(18)=A_{0}\\cdot \\left(\\dfrac{1}{2}\\right)^{18/6}=2.4\\cdot 10^{6}\\cdot \\dfrac{1}{8}
 $$
 
 $$
-3.0\\cdot 10^{5} \\not> 4.0\\cdot 10^{5}.
+=0.3\\cdot 10^{6}=3.0\\cdot 10^{5}
 $$
+
+The claim says activity still exceeds $4\\cdot 10^{5}$:
+
+$$
+3.0\\cdot 10^{5}\\ngtr 4.0\\cdot 10^{5}
+$$
+
+So after $18$ hours the tracer is already below the claimed threshold.
 
 So the statement is False.`,
 
@@ -597,18 +611,12 @@ Exactly four valid rosters appear. Xavier never competes; six competitors never 
 function expandMath1108(task: Record<string, unknown>) {
   const expl = [...((task.tactical_explanations as string[]) ?? [])];
   const overview = String(task.solution_overview ?? "");
-  // Append truth table without removing original explanation text.
-  const patchedExpl = expl.map((e, i) => {
-    if (i === 3) {
-      // D: exactly one valid roster — reinforce with table count
-      return `${e}\n\nThe truth table below lists four valid rows, so uniqueness fails.${TRUTH_TABLE_APPENDIX}`;
-    }
-    if (i === 4) {
-      return `${e}\n\nThe truth table shows maximum valid size $5$, never $6$.${TRUTH_TABLE_APPENDIX}`;
-    }
-    return `${e}`;
+  // Keep the truth table only in the overview — never repeat it under each letter.
+  const patchedExpl = expl.map((e) => {
+    const cut = e.split(/\n\n(?=The truth table (?:below|shows)|\*\*Truth table)/)[0] ?? e;
+    const m = cut.match(/([\s\S]*So the statement is (?:True|False)\.)/);
+    return (m ? m[1] : cut).trim();
   });
-  // Put the table once on overview as well
   return {
     ...task,
     solution_overview: overview.includes("Truth table of valid rosters")
@@ -809,6 +817,119 @@ const math = [
   takeMath("MATH 13.78", 13),
 ];
 
+/** Teacher-step patches for bank tasks with thin letter explanations. */
+{
+  const calc = math.find((t) => t.case_id === "MATH 2.137");
+  if (calc && Array.isArray(calc.tactical_explanations)) {
+    (calc.tactical_explanations as string[])[3] = `**D.** → True
+
+Substitute the given numbers $x=-2$ and $y=3$ into both absolute-value expressions.
+
+Product first, then absolute value:
+
+$$
+xy=(-2)\\cdot 3=-6
+$$
+
+$$
+|xy|=|-6|=6
+$$
+
+Absolute values first, then product:
+
+$$
+|x|=|-2|=2,\\qquad |y|=|3|=3
+$$
+
+$$
+|x|\\,|y|=2\\cdot 3=6
+$$
+
+Both sides equal $6$, which is exactly the claimed common value. (In general $|xy|=|x||y|$ for every real $x,y$; this letter is the concrete numerical check.)
+
+So the statement is True.`;
+  }
+
+  const fin = math.find((t) => t.case_id === "MATH 11.60");
+  if (fin) {
+    fin.tactical_explanations = [
+      `**A.** → True
+
+Continuous discounting at force $r=0.08$ for $t_1=5$ years uses the factor $e^{-rt}$:
+
+$$
+e^{-0.08\\cdot 5}=e^{-0.4}
+$$
+
+Numerically $e^{-0.4}\\approx 0.670320$, which rounds to the claimed $0.6703$.
+
+So the statement is True.`,
+      `**B.** → True
+
+The ten-year horizon is $t_2=10=2\\cdot 5$, so
+
+$$
+e^{-0.08\\cdot 10}=e^{-0.8}=(e^{-0.4})^{2}
+$$
+
+With $e^{-0.4}\\approx 0.6703$,
+
+$$
+(0.6703)^{2}\\approx 0.4493
+$$
+
+which matches the claim. Directly, $e^{-0.8}\\approx 0.449329$.
+
+So the statement is True.`,
+      `**C.** → False
+
+Present value of the first payment:
+
+$$
+\\mathrm{PV}_{1}=30{,}000\\cdot e^{-0.4}\\approx 30{,}000\\cdot 0.67032=20{,}109.60
+$$
+
+The claim says approximately $21{,}500$. But
+
+$$
+20{,}109.60\\ne 21{,}500
+$$
+
+So the statement is False.`,
+      `**D.** → False
+
+Present value of the second payment:
+
+$$
+\\mathrm{PV}_{2}=55{,}000\\cdot e^{-0.8}\\approx 55{,}000\\cdot 0.449329=24{,}713.09
+$$
+
+The claim says approximately $26{,}000$. But
+
+$$
+24{,}713.09\\ne 26{,}000
+$$
+
+So the statement is False.`,
+      `**E.** → False
+
+Add the two present values from C and D:
+
+$$
+\\mathrm{PDV}=\\mathrm{PV}_{1}+\\mathrm{PV}_{2}\\approx 20{,}109.60+24{,}713.09=44{,}822.69
+$$
+
+The claim says approximately $47{,}500$. But
+
+$$
+44{,}822.69\\ne 47{,}500
+$$
+
+So the statement is False.`,
+    ];
+  }
+}
+
 function audit(label: string, tasks: Array<Record<string, unknown>>) {
   for (const t of tasks) {
     const s = (t.statements as string[]) || [];
@@ -828,7 +949,38 @@ audit("econ", economics);
 audit("eng", english.tasks);
 audit("math", math);
 
-const bundle = { economics, english, math };
+
+function scrubKatexDeep(value: unknown): unknown {
+  if (typeof value === "string") {
+    return value
+      .replace(/\\not</g, "\\nless ")
+      .replace(/\\not>/g, "\\ngtr ")
+      .replace(/\\not\\le/g, "\\nleq ")
+      .replace(/\\not\\ge/g, "\\ngeq ")
+      .replace(/\\Y_/g, "Y_")
+      .replace(/\$€\s*([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
+      .replace(/\$€([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
+      .replace(/\$\$([\s\S]*?)\$\$/g, (_m, body: string) => {
+        const fixed = String(body).replace(/€\s*/g, "EUR ").replace(/≈/g, "\\approx ");
+        return `$$${fixed}$$`;
+      })
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+  }
+  if (Array.isArray(value)) return value.map(scrubKatexDeep);
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value as Record<string, unknown>)) out[k] = scrubKatexDeep(v);
+    return out;
+  }
+  return value;
+}
+
+const bundle = scrubKatexDeep({ economics, english, math }) as {
+  economics: typeof economics;
+  english: typeof english;
+  math: typeof math;
+};
 fs.writeFileSync(outPath, JSON.stringify(bundle, null, 2) + "\n");
 console.log(
   "Wrote",
