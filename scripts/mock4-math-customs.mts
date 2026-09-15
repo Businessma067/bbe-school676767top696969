@@ -1,6 +1,6 @@
 /**
  * Mock Exam 4 — deep custom math (Q22,23,25,26,28,30–33).
- * Truth tables live only in solution_overview. Claims use thresholds / no spoilers.
+ * Truth tables live only in solution_overview. Teacher-step explanations.
  */
 
 /** Q22 — knights/knaves (NOT roster / implication-assignment type). */
@@ -42,7 +42,7 @@ Decide whether each statement is true or false.`;
 
 Start from Remy. Remy says “Quinn is a knave.”
 
-**Case Remy is a knight.** Then Quinn really is a knave. Quinn’s claim is therefore false, so it is not true that exactly one of Remy and Sage is a knight. Remy is already a knight, so the only way “exactly one” fails is if Sage is also a knight (two knights). Sage says “Remy is a knight,” which is true — consistent with Sage being a knight.
+**Case Remy is a knight.** Then Quinn really is a knave. Quinn’s claim is therefore false, so it is not true that exactly one of Remy and Sage is a knight. Remy is already a knight, so the only way “exactly one” fails is if Sage is also a knight (two knights among Remy and Sage). Sage says “Remy is a knight,” which is true — consistent with Sage being a knight.
 
 **Case Remy is a knave.** Then Remy’s claim is false, so Quinn is a knight. Quinn’s true claim forces exactly one of Remy and Sage to be a knight. Remy is a knave, so Sage must be a knight. But Sage (a knight) would then say “Remy is a knight,” which is false — contradiction.
 
@@ -70,7 +70,7 @@ So the statement is False.`,
 
     `**E.** → True
 
-Remy asserts “Quinn is a knave.” If that assertion were false, Quinn would not be a knave, hence Quinn would be a knight. That is exactly the claim (it follows from the meaning of Remy’s sentence, independent of which typing is actual).
+Remy asserts “Quinn is a knave.” If that assertion were false, Quinn would not be a knave, hence Quinn would be a knight. That follows from the meaning of Remy’s sentence alone (independent of which typing is actual).
 
 So the statement is True.`,
   ];
@@ -94,104 +94,200 @@ ${truthTable}`,
   };
 }
 
-/** Q23 — multi-step algebra; no free cancellation identity as the main trick. */
+/**
+ * Q23 — multi-step algebra; claims about root counts / number types
+ * (not “greater than 7 / less than 10” thresholds). Non-integer roots appear.
+ */
 export function buildMathQ23Thresh() {
-  const context = `Each claim is an independent multi-step algebra check.
-
-A nested rational at a fixed point, a $2\\times 2$ linear system, a polynomial evaluation, a rational equation, and a radical equation appear in turn.
-
-Decide whether each statement is true or false. The claims give thresholds only — they do not hand you a finished boxed value.`;
+  const context = `Decide whether each algebraic claim about the number and type of real solutions is true or false.`;
 
   const statements = [
-    "For $x=3$, the nested quotient $\\dfrac{\\dfrac{5}{x}-\\dfrac{1}{x+2}}{\\dfrac{3}{x+2}+\\dfrac{2}{x}}$ is strictly larger than $1.15$.",
-    "The unique solution of the system $5u-3v=7$, $2u+4v=18$ satisfies $u+v>7$.",
-    "The value of $\\dfrac{(x^{3}-2x+4)(2x-1)}{x+1}$ at $x=2$ is strictly larger than $7$.",
-    "Over the reals with $x\\ne\\pm 3$, every solution of $\\dfrac{4}{x-3}-\\dfrac{1}{x+3}=\\dfrac{7}{x^{2}-9}$ is strictly larger than $1$.",
-    "The positive solution of $\\sqrt{x+8}-\\sqrt{x-1}=1$ is strictly larger than $10$.",
+    "The equation $(2x-1)(x+3)=x(x-5)+11$ has exactly two distinct real roots, and neither root is an integer.",
+    "Over $x\\ne 0$ and $x\\ne -4$, the equation $\\dfrac{3}{x}+\\dfrac{2}{x+4}=1$ has exactly two distinct real solutions, and both of them are positive integers.",
+    "Over $x\\ne 0$ and $x\\ne -1$, the equation $\\dfrac{x}{x+1}+\\dfrac{x+1}{x}=\\dfrac{17}{4}$ has exactly two distinct real solutions, and both of them are integers.",
+    "The equation $\\sqrt{2x+5}=x-1$ has exactly two distinct real solutions, and both of them are irrational.",
+    "Over $x\\ne\\pm 2$, the equation $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{1}{3}$ has exactly two distinct real roots; their sum is an integer, but neither root is rational.",
   ];
 
-  const answer_key = [true, false, true, false, true];
+  // A T: x=-5±√39
+  // B F: roots 4 and -3; -3 not positive
+  // C F: roots 1/3 and -4/3; neither integer
+  // D F: only one real solution 2+2√2
+  // E T: x=3±√13; sum 6; irrational
+  const answer_key = [true, false, false, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-At $x=3$:
+Expand the left-hand side carefully:
 
 $$
-\\text{numerator}=\\dfrac{5}{3}-\\dfrac{1}{5}=\\dfrac{25-3}{15}=\\dfrac{22}{15}
+(2x-1)(x+3)=2x\\cdot x+2x\\cdot 3-1\\cdot x-1\\cdot 3=2x^{2}+6x-x-3=2x^{2}+5x-3
+$$
+
+Expand the right-hand side:
+
+$$
+x(x-5)+11=x^{2}-5x+11
+$$
+
+Bring everything to one side:
+
+$$
+2x^{2}+5x-3=x^{2}-5x+11
 $$
 
 $$
-\\text{denominator}=\\dfrac{3}{5}+\\dfrac{2}{3}=\\dfrac{9+10}{15}=\\dfrac{19}{15}
+2x^{2}+5x-3-x^{2}+5x-11=0
 $$
 
 $$
-\\dfrac{22/15}{19/15}=\\dfrac{22}{19}\\approx 1.1579>1.15
+x^{2}+10x-14=0
 $$
+
+The discriminant is
+
+$$
+\\Delta=10^{2}-4\\cdot 1\\cdot(-14)=100+56=156=4\\cdot 39
+$$
+
+so there are exactly two distinct real roots
+
+$$
+x=\\dfrac{-10\\pm\\sqrt{156}}{2}=\\dfrac{-10\\pm 2\\sqrt{39}}{2}=-5\\pm\\sqrt{39}.
+$$
+
+Since $\\sqrt{36}=6$ and $\\sqrt{49}=7$, one has $\\sqrt{39}\\approx 6.245$, so the roots are approximately $1.245$ and $-11.245$. Neither is an integer.
 
 So the statement is True.`,
 
     `**B.** → False
 
-From $2u+4v=18$ divide by $2$: $u+2v=9$, so $u=9-2v$. Substitute into $5u-3v=7$:
+Clear the denominators by multiplying through by $x(x+4)$ (valid on the stated domain):
 
 $$
-5(9-2v)-3v=7\\Rightarrow 45-10v-3v=7\\Rightarrow 13v=38\\Rightarrow v=\\dfrac{38}{13}
-$$
-
-$$
-u=9-\\dfrac{76}{13}=\\dfrac{41}{13},\\qquad u+v=\\dfrac{79}{13}\\approx 6.077
+3(x+4)+2x=x(x+4)
 $$
 
 $$
-6.077\\ngtr 7
+3x+12+2x=x^{2}+4x
 $$
+
+$$
+5x+12=x^{2}+4x
+$$
+
+$$
+0=x^{2}-x-12=(x-4)(x+3)
+$$
+
+The candidate solutions are $x=4$ and $x=-3$. Both lie in the domain ($x\\ne 0$, $x\\ne -4$), so there are exactly two distinct real solutions. However $-3$ is not a positive integer, so the claim that both solutions are positive integers fails.
 
 So the statement is False.`,
 
-    `**C.** → True
+    `**C.** → False
 
-At $x=2$:
-
-$$
-x^{3}-2x+4=8-4+4=8,\\qquad 2x-1=3,\\qquad x+1=3
-$$
+Combine the left-hand side over the common denominator $x(x+1)$:
 
 $$
-\\dfrac{8\\cdot 3}{3}=8>7
+\\dfrac{x^{2}+(x+1)^{2}}{x(x+1)}=\\dfrac{17}{4}
 $$
 
-So the statement is True.`,
+$$
+x^{2}+(x^{2}+2x+1)=2x^{2}+2x+1
+$$
+
+Cross-multiply (denominators nonzero on the domain):
+
+$$
+4(2x^{2}+2x+1)=17x(x+1)
+$$
+
+$$
+8x^{2}+8x+4=17x^{2}+17x
+$$
+
+$$
+0=9x^{2}+9x-4
+$$
+
+Discriminant:
+
+$$
+\\Delta=81+144=225=15^{2}
+$$
+
+$$
+x=\\dfrac{-9\\pm 15}{18}
+$$
+
+$$
+x=\\dfrac{6}{18}=\\dfrac{1}{3},\\qquad x=\\dfrac{-24}{18}=-\\dfrac{4}{3}
+$$
+
+Both lie in the domain. There are exactly two distinct real solutions, but neither $\\tfrac{1}{3}$ nor $-\\tfrac{4}{3}$ is an integer. The claim that both are integers is wrong.
+
+So the statement is False.`,
 
     `**D.** → False
 
-Combine over $x^{2}-9$:
+A square root is nonnegative, so the right-hand side forces the domain restriction
 
 $$
-\\dfrac{4(x+3)-(x-3)}{x^{2}-9}=\\dfrac{4x+12-x+3}{x^{2}-9}=\\dfrac{3x+15}{x^{2}-9}
+x-1\\ge 0\\qquad\\Rightarrow\\qquad x\\ge 1
 $$
 
-Equating to $\\dfrac{7}{x^{2}-9}$ (with $x\\ne\\pm 3$) gives $3x+15=7$, so $x=-\\dfrac{8}{3}$. That unique root is not strictly larger than $1$.
+(and also $2x+5\\ge 0$, which is weaker once $x\\ge 1$). Square both sides:
+
+$$
+2x+5=(x-1)^{2}=x^{2}-2x+1
+$$
+
+$$
+0=x^{2}-4x-4
+$$
+
+$$
+x=\\dfrac{4\\pm\\sqrt{16+16}}{2}=\\dfrac{4\\pm\\sqrt{32}}{2}=\\dfrac{4\\pm 4\\sqrt{2}}{2}=2\\pm 2\\sqrt{2}.
+$$
+
+Now check the domain $x\\ge 1$:
+
+$$
+2+2\\sqrt{2}\\approx 4.828\\ge 1\\qquad\\text{(keep)},
+$$
+
+$$
+2-2\\sqrt{2}\\approx -0.828\\ngeq 1\\qquad\\text{(discard)}.
+$$
+
+Verification for the kept root: $\\sqrt{2(2+2\\sqrt{2})+5}=\\sqrt{4+4\\sqrt{2}+5}=\\sqrt{9+4\\sqrt{2}}$ and $2+2\\sqrt{2}-1=1+2\\sqrt{2}$; these match after squaring back. So there is exactly one real solution (irrational), not two. The claim fails.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Set $s=\\sqrt{x-1}\\ge 0$. Then $\\sqrt{x+8}=1+s$. Square both sides (both nonnegative for $x\\ge 1$):
+Combine the left-hand side:
 
 $$
-x+8=1+2s+(x-1)=x+2s
-$$
-
-$$
-8=2s\\Rightarrow s=4\\Rightarrow x-1=16\\Rightarrow x=17
+\\dfrac{(x+2)+(x-2)}{(x-2)(x+2)}=\\dfrac{2x}{x^{2}-4}=\\dfrac{1}{3}
 $$
 
 $$
-17>10
+6x=x^{2}-4\\qquad\\Rightarrow\\qquad x^{2}-6x-4=0
 $$
 
-Verification: $\\sqrt{25}-\\sqrt{16}=5-4=1$.
+$$
+x=\\dfrac{6\\pm\\sqrt{36+16}}{2}=\\dfrac{6\\pm\\sqrt{52}}{2}=\\dfrac{6\\pm 2\\sqrt{13}}{2}=3\\pm\\sqrt{13}.
+$$
+
+Both roots avoid $\\pm 2$ (since $\\sqrt{13}\\approx 3.606$, the roots are about $6.606$ and $-0.606$). Their sum is
+
+$$
+(3+\\sqrt{13})+(3-\\sqrt{13})=6,
+$$
+
+an integer. Neither root is rational, because $\\sqrt{13}$ is irrational.
 
 So the statement is True.`,
   ];
@@ -199,7 +295,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 2.MOCK.THRESH",
     id: "MATH 2.MOCK.THRESH",
-    title: "Multi-step algebra with thresholds — no cancellation gift",
+    title: "Algebra — root counts and number types",
     chapter: 2,
     subsection: "2.4",
     context,
@@ -208,20 +304,13 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Evaluate each nested/system/radical fully before comparing with the threshold. Domain checks matter for the rational equation; squaring a radical equation requires a verification step.",
+      "Solve each equation fully (clear denominators, expand, or square with domain checks), then adjudicate the claimed root count and the integer/rational/irrational type of each root.",
   };
 }
 
-/**
- * Q25 — hard independent equations; claims are thresholds / conclusions only
- * (no intermediate quadratic or candidate roots printed in the statement text).
- */
+/** Q25 — hard equations; one-sentence stem; antifill claims. */
 export function buildMathQ25Antifill() {
-  const context = `Each letter is an independent equation problem from a different family.
-
-Ages, a framed print, a two-leg trip, an absolute-value equation, and a base-$2$ logarithm appear in turn.
-
-Decide whether each statement is true or false. Claims state conclusions or thresholds only — they do not hand you the intermediate algebra.`;
+  const context = `Decide whether each applied equation claim is true or false.`;
 
   const statements = [
     "A courier is $28$ years older than a trainee. In $4$ years the courier will be twice as old as the trainee will be then. A planner concludes that the trainee is now strictly younger than $20$.",
@@ -231,56 +320,104 @@ Decide whether each statement is true or false. Claims state conclusions or thre
     "Over $x>2$, the equation $\\log_{2}(x)+\\log_{2}(x-2)=3$ has a solution strictly smaller than $3.5$.",
   ];
 
-  // A: trainee = 24, not <20 → False
-  // B: w = -16+√616 ≈ 8.82 ≮ 5 → False
-  // C: t = 3 ≮ 2.8 → False
-  // D: solutions 9 and 1/3, both >0 → True
-  // E: x=4 ≮ 3.5 → False
-
   const answer_key = [false, false, false, true, false];
 
   const tactical_explanations = [
     `**A.** → False
 
-Let $t$ be the trainee’s present age. The courier is now $t+28$. In $4$ years:
+Let $t$ be the trainee’s present age in years. Then the courier is now $t+28$.
+
+In $4$ years the trainee will be $t+4$ and the courier will be $t+28+4=t+32$. The planner’s age relation becomes the equation
 
 $$
-t+28+4=2(t+4)\\qquad\\Rightarrow\\qquad t+32=2t+8\\qquad\\Rightarrow\\qquad t=24
+t+32=2(t+4)
 $$
 
-The trainee is $24$, which is not strictly younger than $20$.
+Expand the right-hand side:
+
+$$
+t+32=2t+8
+$$
+
+Bring the $t$-terms to one side and the constants to the other:
+
+$$
+32-8=2t-t\\qquad\\Rightarrow\\qquad 24=t
+$$
+
+So the trainee is now $24$ years old, which is not strictly younger than $20$. The planner’s conclusion is wrong.
 
 So the statement is False.`,
 
     `**B.** → False
 
-Let $w>0$ be the frame width. Outer area equals $2.5$ times the print area $40\\cdot 24=960$:
+Let $w>0$ be the uniform frame width in centimetres. The outer rectangle measures $(40+2w)$ by $(24+2w)$. Its area is $2.5$ times the print area $40\\cdot 24=960$:
 
 $$
 (40+2w)(24+2w)=2.5\\cdot 960=2400
 $$
 
+Expand the left-hand side:
+
 $$
-960+80w+48w+4w^{2}=2400\\qquad\\Rightarrow\\qquad 4w^{2}+128w-1440=0
+40\\cdot 24+40\\cdot 2w+2w\\cdot 24+2w\\cdot 2w=960+80w+48w+4w^{2}
 $$
 
 $$
-w^{2}+32w-360=0\\qquad\\Rightarrow\\qquad w=-16\\pm\\sqrt{256+360}=-16\\pm\\sqrt{616}
+4w^{2}+128w+960=2400
 $$
 
-The positive root is $w=-16+\\sqrt{616}$. Since $\\sqrt{576}=24$ and $\\sqrt{625}=25$, one has $\\sqrt{616}\\approx 24.82$, so
+$$
+4w^{2}+128w-1440=0
+$$
+
+Divide by $4$:
 
 $$
-w\\approx 8.82\\nless 5
+w^{2}+32w-360=0
+$$
+
+Discriminant:
+
+$$
+\\Delta=32^{2}+4\\cdot 360=1024+1440=2464=16\\cdot 154
+$$
+
+Alternatively keep $\\Delta=1024+1440=2464$ and note $w=-16\\pm\\sqrt{256+360}=-16\\pm\\sqrt{616}$ after completing the square form $w^{2}+32w=360$. The positive root is
+
+$$
+w=-16+\\sqrt{616}.
+$$
+
+Since $\\sqrt{576}=24$ and $\\sqrt{625}=25$, one has $\\sqrt{616}\\approx 24.82$, so
+
+$$
+w\\approx -16+24.82=8.82\\nless 5
 $$
 
 So the statement is False.`,
 
     `**C.** → False
 
+Time equals distance divided by speed. First leg:
+
 $$
-t=\\dfrac{18}{12}+\\dfrac{24}{16}=\\dfrac{3}{2}+\\dfrac{3}{2}=3
+t_{1}=\\dfrac{18\\ \\mathrm{km}}{12\\ \\mathrm{km/h}}=\\dfrac{18}{12}=\\dfrac{3}{2}=1.5\\ \\mathrm{h}
 $$
+
+Second leg:
+
+$$
+t_{2}=\\dfrac{24\\ \\mathrm{km}}{16\\ \\mathrm{km/h}}=\\dfrac{24}{16}=\\dfrac{3}{2}=1.5\\ \\mathrm{h}
+$$
+
+Total time:
+
+$$
+t=t_{1}+t_{2}=1.5+1.5=3\\ \\mathrm{h}
+$$
+
+Compare with the claimed threshold:
 
 $$
 3\\nless 2.8
@@ -290,22 +427,30 @@ So the statement is False.`,
 
     `**D.** → True
 
-Case $2x-5=x+4$ gives $x=9$. Case $2x-5=-(x+4)$ gives $3x=1$, so $x=\\dfrac{1}{3}$.
+Split into the two absolute-value cases.
 
-Both candidates satisfy the absolute-value equation (and $x+4\\ge 0$ holds for each). Every real solution is strictly larger than $0$.
+**Case** $2x-5=x+4$: then $x=9$. Check $x+4=13\\ge 0$ (needed if one thinks of $|A|=B$ with $B\\ge 0$); the candidate satisfies the original equation because $|18-5|=13$ and $9+4=13$.
+
+**Case** $2x-5=-(x+4)$: then $2x-5=-x-4$, so $3x=1$ and $x=\\dfrac{1}{3}$. Check: $\\bigl|\\tfrac{2}{3}-5\\bigr|=\\bigl|-\\tfrac{13}{3}\\bigr|=\\tfrac{13}{3}$ and $\\tfrac{1}{3}+4=\\tfrac{13}{3}$. Valid.
+
+Both real solutions satisfy $x>0$.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Domain $x>2$. Sum-to-product for base-$2$ logs:
+The logarithms are defined only when every argument is positive. Together with the stated restriction $x>2$, the domain is simply $x>2$.
+
+On that domain the sum-to-product rule for base-$2$ logs turns the equation into
 
 $$
-\\log_{2}\\bigl(x(x-2)\\bigr)=3\\qquad\\Rightarrow\\qquad x(x-2)=2^{3}=8
+\\log_{2}\\bigl(x(x-2)\\bigr)=3
 $$
 
+Injectivity of $\\log_{2}$ (or writing $2^{3}=8$) gives
+
 $$
-x^{2}-2x-8=0\\qquad\\Rightarrow\\qquad (x-4)(x+2)=0
+x(x-2)=8\\qquad\\Rightarrow\\qquad x^{2}-2x-8=0\\qquad\\Rightarrow\\qquad (x-4)(x+2)=0
 $$
 
 Only $x=4$ lies in $x>2$. Compare with the threshold:
@@ -333,7 +478,7 @@ So the statement is False.`,
   };
 }
 
-/** Q26 — harder blend system from scratch (not waste-invoice reconstruction). */
+/** Q26 — harder blend system from scratch. */
 export function buildMathQ26Blend() {
   const context = `A refinery blends light distillate ($90\\%$ octane index), mid-grade ($70\\%$), and naphtha ($40\\%$) into a finished fuel that must be exactly $200$ litres at $72\\%$ octane.
 
@@ -351,8 +496,6 @@ Decide whether each statement is true or false.`;
     "Under the original policy, mid-grade accounts for more than $55\\%$ of the finished blend by volume.",
   ];
 
-  // L=640/11≈58.18, M=1280/11≈116.36, N=280/11≈25.45; cost=4176/11≈379.64
-  // alt M=L: L=M=80, N=40
   const answer_key = [true, false, true, true, true];
 
   const tactical_explanations = [
@@ -379,8 +522,18 @@ $$
 $$
 
 $$
-0.9L+1.4L+80-1.2L=144\\qquad\\Rightarrow\\qquad 1.1L=64\\qquad\\Rightarrow\\qquad L=\\dfrac{64}{1.1}=\\dfrac{640}{11}\\approx 58.18
+0.9L+1.4L+80-1.2L=144
 $$
+
+$$
+(0.9+1.4-1.2)L+80=144
+$$
+
+$$
+1.1L=64\\qquad\\Rightarrow\\qquad L=\\dfrac{64}{1.1}=\\dfrac{640}{11}\\approx 58.18
+$$
+
+Compare with the threshold:
 
 $$
 58.18>55
@@ -390,7 +543,7 @@ So the statement is True.`,
 
     `**B.** → False
 
-From A, $N=200-3L=200-\\dfrac{1920}{11}=\\dfrac{280}{11}\\approx 25.45$.
+From A, $N=200-3L=200-\\dfrac{1920}{11}=\\dfrac{2200-1920}{11}=\\dfrac{280}{11}\\approx 25.45$.
 
 $$
 25.45\\nless 20
@@ -403,7 +556,11 @@ So the statement is False.`,
 With $L=\\dfrac{640}{11}$, $M=\\dfrac{1280}{11}$, $N=\\dfrac{280}{11}$:
 
 $$
-\\text{cost}=2.40L+1.80M+1.20N=\\dfrac{2.4\\cdot 640+1.8\\cdot 1280+1.2\\cdot 280}{11}=\\dfrac{4176}{11}\\approx 379.64
+\\text{cost}=2.40L+1.80M+1.20N=\\dfrac{2.4\\cdot 640+1.8\\cdot 1280+1.2\\cdot 280}{11}
+$$
+
+$$
+=\\dfrac{1536+2304+336}{11}=\\dfrac{4176}{11}\\approx 379.64
 $$
 
 $$
@@ -421,10 +578,20 @@ $$
 $$
 
 $$
-1.6L+0.4N=144\\qquad\\Rightarrow\\qquad 4L+N=360
+1.6L+0.4N=144
 $$
 
-Subtract $2L+N=200$: $2L=160$, so $L=80$, $N=40$, $M=80$.
+Multiply by $5$ to clear decimals: $8L+2N=720$, or divide the displayed equation by $0.4$:
+
+$$
+4L+N=360
+$$
+
+Subtract $2L+N=200$:
+
+$$
+2L=160\\qquad\\Rightarrow\\qquad L=80,\\quad N=40,\\quad M=80
+$$
 
 Original naphtha was $\\dfrac{280}{11}\\approx 25.45$; the new naphtha is $40$. Naphtha volume increases.
 
@@ -461,84 +628,149 @@ So the statement is True.`,
   };
 }
 
-/** Q28 — numeric parabola + slope family (formulas given; not graph-readable). */
+/**
+ * Q28 — reconstruct a parabola from two points + a horizontal-tangent condition
+ * (not a formula-fed slope family / figure task).
+ */
 export function buildMathQ28Numeric() {
-  const context = `A parabola is given by
+  const context = `A quadratic $g(x)=ax^{2}+bx+c$ passes through the two points $A(0,5)$ and $B(6,-7)$.
 
-$$
-g(x)=3x^{2}-24x+36
-$$
-
-Lines through its vertex form the family
-
-$$
-f_{m}(x)=m(x-4)-12
-$$
+At the abscissa $x=2$ the tangent to $y=g(x)$ is horizontal, i.e. $g'(2)=0$.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The product of the two roots of $g(x)=0$ is strictly larger than $10$.",
-    "Completing the square shows that the minimum value of $g$ is strictly less than $-11$.",
-    "When $m=6$, the second intersection (other than the vertex) lies strictly between $x=5$ and $x=7$.",
-    "There is more than one real slope $m$ for which $y=f_{m}$ meets $y=g$ at exactly one point.",
-    "When $m=-9$, the distance between the two intersection $x$-coordinates exceeds $2.5$.",
+    "After recovering $a$, $b$, and $c$, the product of the two roots of $g(x)=0$ is strictly less than $-4$.",
+    "The maximum value of $g$ on $\\mathbb{R}$ is strictly larger than $8$.",
+    "The value $g(3)$ is a strictly positive integer.",
+    "The abscissa at which the tangent is horizontal is strictly smaller than $1.5$.",
+    "The absolute value of the slope of the chord through $A$ and $B$ is strictly larger than $3$.",
   ];
 
-  const answer_key = [true, true, true, false, true];
+  // g(x)=-x^2+4x+5; roots -1,5 product -5; max g(2)=9; g(3)=8; tangent at 2; chord slope -2
+  const answer_key = [true, true, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
+Write $g(x)=ax^{2}+bx+c$. The point $A(0,5)$ forces
+
 $$
-g(x)=3(x^{2}-8x+12)=3(x-2)(x-6)
+g(0)=c=5.
 $$
 
-Roots $x=2$ and $x=6$; product $12>10$.
+Differentiate: $g'(x)=2ax+b$. The horizontal-tangent condition $g'(2)=0$ is
+
+$$
+4a+b=0\\qquad\\Rightarrow\\qquad b=-4a.
+$$
+
+The point $B(6,-7)$ gives
+
+$$
+g(6)=36a+6b+5=-7
+$$
+
+$$
+36a+6b=-12\\qquad\\Rightarrow\\qquad 6a+b=-2.
+$$
+
+Substitute $b=-4a$:
+
+$$
+6a-4a=-2\\qquad\\Rightarrow\\qquad 2a=-2\\qquad\\Rightarrow\\qquad a=-1.
+$$
+
+Then $b=-4(-1)=4$ and $c=5$, so
+
+$$
+g(x)=-x^{2}+4x+5.
+$$
+
+Solve $g(x)=0$:
+
+$$
+-x^{2}+4x+5=0\\qquad\\Rightarrow\\qquad x^{2}-4x-5=0\\qquad\\Rightarrow\\qquad (x-5)(x+1)=0.
+$$
+
+The roots are $x=5$ and $x=-1$. Their product is
+
+$$
+5\\cdot(-1)=-5<-4.
+$$
+
+(Alternatively, for $-x^{2}+4x+5=0$ divide by $-1$ and use Vieta on $x^{2}-4x-5=0$: product $=-5$.)
 
 So the statement is True.`,
 
     `**B.** → True
 
+From A the recovered quadratic is $g(x)=-x^{2}+4x+5$. Complete the square:
+
 $$
-g(x)=3\\bigl((x-4)^{2}-16\\bigr)+36=3(x-4)^{2}-48+36=3(x-4)^{2}-12
+g(x)=-\\bigl(x^{2}-4x\\bigr)+5=-\\bigl((x-2)^{2}-4\\bigr)+5=-(x-2)^{2}+4+5
 $$
 
-Minimum value $-12<-11$.
+$$
+=-(x-2)^{2}+9.
+$$
+
+The squared term is always $\\ge 0$, and it carries a minus sign in front, so $g(x)\\le 9$ for every real $x$, with equality only at $x=2$. The global maximum value is therefore $9$. Compare with the claim:
+
+$$
+9>8.
+$$
 
 So the statement is True.`,
 
     `**C.** → True
 
-$$
-g(x)-f_{m}(x)=3(x-4)^{2}-12-\\bigl(m(x-4)-12\\bigr)=(x-4)\\bigl(3(x-4)-m\\bigr)
-$$
-
-Intersections at $x=4$ and $x=4+\\dfrac{m}{3}$. For $m=6$:
+Substitute $x=3$ into the recovered formula from A:
 
 $$
-x=4+2=6,\\qquad 5<6<7
+g(3)=-(3)^{2}+4\\cdot 3+5=-9+12+5=8.
 $$
+
+The value $8$ is an integer, and $8>0$, so it is a strictly positive integer.
 
 So the statement is True.`,
 
     `**D.** → False
 
-The two abscissae coincide precisely when $\\dfrac{m}{3}=0$, i.e. $m=0$. Exactly one real slope gives a single meeting point — not more than one.
+The setup already states that the tangent is horizontal at $x=2$, and letter A recovered $g'(x)=-2x+4$ with $g'(2)=0$ consistently. The claim asks whether that abscissa is strictly smaller than $1.5$:
+
+$$
+2\\nless 1.5.
+$$
 
 So the statement is False.`,
 
-    `**E.** → True
+    `**E.** → False
 
-For $m=-9$ the intersections are $x=4$ and $x=4-3=1$. Distance $|4-1|=3>2.5$.
+The chord through the two given points $A(0,5)$ and $B(6,-7)$ has slope
 
-So the statement is True.`,
-  ];
+$$
+m_{AB}=\\dfrac{y_B-y_A}{x_B-x_A}=\\dfrac{-7-5}{6-0}=\\dfrac{-12}{6}=-2.
+$$
+
+Its absolute value is
+
+$$
+\\bigl|m_{AB}\\bigr|=\\lvert -2\\rvert=2.
+$$
+
+The claim asks whether this absolute value is strictly larger than $3$:
+
+$$
+2\\ngtr 3.
+$$
+
+So the statement is False.`,  ];
 
   return {
-    case_id: "MATH 7.MOCK.PARA",
-    id: "MATH 7.MOCK.PARA",
-    title: "Numeric parabola with slope family — threshold claims",
+    case_id: "MATH 7.MOCK.TWOPT",
+    id: "MATH 7.MOCK.TWOPT",
+    title: "Reconstruct a parabola from two points and a horizontal tangent",
     chapter: 7,
     subsection: "7.3",
     context,
@@ -547,11 +779,11 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Factor $g$, complete the square for the minimum, factor $g-f_m$ to read both intersections, then compare products, values, and distances with the claimed thresholds.",
+      "Recover $a,b,c$ from $g(0)=5$, $g(6)=-7$, and $g'(2)=0$, then adjudicate roots, vertex value, $g(3)$, the tangent abscissa, and the chord slope.",
   };
 }
 
-/** Q30 — harder cubic inventory polynomial (not a spoon-fed min-accel formula). */
+/** Q30 — harder cubic inventory polynomial. */
 export function buildMathQ30Cubic() {
   const context = `A warehouse inventory deviation (tonnes relative to target) is modelled by
 
@@ -571,23 +803,24 @@ Decide whether each statement is true or false.`;
     "Over the closed window $[0,10]$, the highest deviation value exceeds $140$.",
   ];
 
-  // Roots: three real by sign chart of p' and endpoint limits. Product via Vieta = 10.
-  // p'(1)=15 exactly → "strictly larger than 15" is False.
-  // Larger crit=6>5.5 and p(6)=-10<0 True.
-  // Max on [0,10] is p(10)=150>140 True.
-
   const answer_key = [true, true, false, true, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-Write $p(t)=t^{3}-12t^{2}+36t-10$. The derivative
+Write $p(t)=t^{3}-12t^{2}+36t-10$. Differentiate:
 
 $$
-p'(t)=3t^{2}-24t+36=3(t-2)(t-6)
+p'(t)=3t^{2}-24t+36=3(t^{2}-8t+12)=3(t-2)(t-6).
 $$
 
-has two real zeros, with $p(2)=22>0$ and $p(6)=-10<0$. Combined with $p(t)\\to-\\infty$ as $t\\to-\\infty$ and $p(t)\\to+\\infty$ as $t\\to+\\infty$, the cubic has three distinct real roots. For a monic cubic $t^{3}+At^{2}+Bt+C=0$ Vieta gives product of roots equal to $-C$. Here $C=-10$, so the product is $10>0$.
+There are two critical points $t=2$ and $t=6$, with
+
+$$
+p(2)=8-48+72-10=22>0,\\qquad p(6)=216-432+216-10=-10<0.
+$$
+
+Combined with $p(t)\\to-\\infty$ as $t\\to-\\infty$ and $p(t)\\to+\\infty$ as $t\\to+\\infty$, the cubic has three distinct real roots. For a monic cubic $t^{3}+At^{2}+Bt+C=0$ Vieta gives product of roots equal to $-C$. Here $C=-10$, so the product is $10>0$.
 
 So the statement is True.`,
 
@@ -600,7 +833,7 @@ So the statement is True.`,
     `**C.** → False
 
 $$
-p'(1)=3(1)^{2}-24(1)+36=3-24+36=15
+p'(1)=3(1)^{2}-24(1)+36=3-24+36=15.
 $$
 
 The claim asks for a slope strictly larger than $15$, but $15\\ngtr 15$.
@@ -609,11 +842,7 @@ So the statement is False.`,
 
     `**D.** → True
 
-The larger critical abscissa is $t=6>5.5$, and
-
-$$
-p(6)=216-432+216-10=-10<0
-$$
+The larger critical abscissa is $t=6>5.5$, and from A one has $p(6)=-10<0$.
 
 So the statement is True.`,
 
@@ -622,7 +851,7 @@ So the statement is True.`,
 Evaluate at the critical points and endpoints:
 
 $$
-p(0)=-10,\\qquad p(2)=22,\\qquad p(6)=-10,\\qquad p(10)=150
+p(0)=-10,\\qquad p(2)=22,\\qquad p(6)=-10,\\qquad p(10)=1000-1200+360-10=150.
 $$
 
 The highest value on $[0,10]$ is $150>140$.
@@ -647,108 +876,147 @@ So the statement is True.`,
 }
 
 /**
- * Q31 — Newton cooling + discrete compound (NOT % population with a figure).
- * No figure; trickier thresholds.
+ * Q31 — ONE continuous cooling model only (not two unrelated stories);
+ * long chained calculations.
  */
 export function buildMathQ31Cooling() {
-  const context = `A metal billet cools in a room held at $18^{\\circ}\\mathrm{C}$ according to Newton’s law
+  const context = `A metal billet cools in a room held at $15^{\\circ}\\mathrm{C}$ according to Newton’s law
 
 $$
-T(t)=18+82\\,e^{-kt}
+T(t)=15+85\\,e^{-kt}
 $$
 
-with $t$ in minutes. At $t=5$ the measured temperature is $T(5)=55^{\\circ}\\mathrm{C}$.
-
-Separately, a savings account opens at EUR $4000$ and grows by $4.5\\%$ at the end of each full year (ordinary discrete compound interest).
+with $t$ in minutes. At $t=3$ the measured temperature is $T(3)=72^{\\circ}\\mathrm{C}$.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The continuous cooling constant satisfies $k>0.14$.",
-    "The time at which the billet first reaches $40^{\\circ}\\mathrm{C}$ is strictly greater than $12$ minutes.",
-    "The time needed for the temperature excess over $18^{\\circ}\\mathrm{C}$ to halve is strictly less than $5$ minutes.",
-    "After $8$ full years the savings account balance already exceeds EUR $5700$.",
-    "The account first reaches at least EUR $6000$ only after more than $9$ full years.",
+    "The continuous cooling constant satisfies $k>0.12$.",
+    "The time needed for the temperature excess over $15^{\\circ}\\mathrm{C}$ to halve is strictly less than $5$ minutes.",
+    "After $9$ minutes the temperature is still strictly above $42^{\\circ}\\mathrm{C}$.",
+    "The billet first reaches $40^{\\circ}\\mathrm{C}$ at some time strictly larger than $9$ minutes.",
+    "The temperature at $t=6$ lies strictly between $52^{\\circ}\\mathrm{C}$ and $54^{\\circ}\\mathrm{C}$.",
   ];
 
-  // k=(1/5)ln(82/37)≈0.15916>0.14 True
-  // t40=ln(82/22)/k≈8.27 ≯ 12 False
-  // half=ln2/k≈4.355<5 True
-  // S8=4000*(1.045)^8≈5688.40 ≯ 5700 False
-  // n=log(1.5)/log(1.045)≈9.21>9 True
-
-  const answer_key = [true, false, true, false, true];
+  // k=ln(85/57)/3≈0.1332; half≈5.20; T9≈40.63; t40≈9.19; T6≈53.22
+  const answer_key = [true, false, false, true, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-$$
-18+82e^{-5k}=55\\qquad\\Rightarrow\\qquad e^{-5k}=\\dfrac{37}{82}\\qquad\\Rightarrow\\qquad k=\\dfrac{1}{5}\\ln\\dfrac{82}{37}
-$$
-
-Numerically $\\ln(82/37)\\approx\\ln 2.216\\approx 0.7958$, so
+Substitute the calibration $T(3)=72$ into the cooling law:
 
 $$
-k\\approx\\dfrac{0.7958}{5}\\approx 0.1592>0.14
+15+85\\,e^{-3k}=72
+$$
+
+$$
+85\\,e^{-3k}=57\\qquad\\Rightarrow\\qquad e^{-3k}=\\dfrac{57}{85}
+$$
+
+Take the natural logarithm (and multiply by $-1/3$):
+
+$$
+k=\\dfrac{1}{3}\\ln\\dfrac{85}{57}.
+$$
+
+Numerically $85/57\\approx 1.4912$ and $\\ln 1.4912\\approx 0.3996$, so
+
+$$
+k\\approx\\dfrac{0.3996}{3}\\approx 0.1332>0.12.
 $$
 
 So the statement is True.`,
 
     `**B.** → False
 
-Solve $18+82e^{-kt}=40$:
+The temperature excess over $15^{\\circ}\\mathrm{C}$ is $85\\,e^{-kt}$. It halves when $e^{-kt}=\\tfrac{1}{2}$, i.e.
 
 $$
-e^{-kt}=\\dfrac{22}{82}=\\dfrac{11}{41}\\qquad\\Rightarrow\\qquad t=\\dfrac{1}{k}\\ln\\dfrac{82}{22}
+t_{1/2}=\\dfrac{\\ln 2}{k}.
 $$
 
-With $k\\approx 0.1592$ and $\\ln(82/22)\\approx\\ln 3.727\\approx 1.315$,
+Using $k\\approx 0.1332$ from A and $\\ln 2\\approx 0.6931$,
 
 $$
-t\\approx\\dfrac{1.315}{0.1592}\\approx 8.26
+t_{1/2}\\approx\\dfrac{0.6931}{0.1332}\\approx 5.20.
 $$
 
+The claim says this time is strictly less than $5$ minutes, but
+
 $$
-8.26\\ngtr 12
+5.20\\nless 5.
 $$
 
 So the statement is False.`,
 
-    `**C.** → True
+    `**C.** → False
 
-Excess over $18^{\\circ}\\mathrm{C}$ halves when $e^{-kt}=\\tfrac{1}{2}$, so
+After $9=3\\cdot 3$ minutes the exponential factor is the cube of the three-minute factor $57/85$:
 
 $$
-t_{1/2}=\\dfrac{\\ln 2}{k}\\approx\\dfrac{0.6931}{0.1592}\\approx 4.35<5
+T(9)=15+85\\,e^{-9k}=15+85\\left(e^{-3k}\\right)^{3}=15+85\\left(\\dfrac{57}{85}\\right)^{3}.
+$$
+
+Compute the power:
+
+$$
+\\left(\\dfrac{57}{85}\\right)^{2}=\\dfrac{3249}{7225},\\qquad \\left(\\dfrac{57}{85}\\right)^{3}=\\dfrac{3249\\cdot 57}{7225\\cdot 85}=\\dfrac{185193}{614125}.
+$$
+
+Then
+
+$$
+85\\left(\\dfrac{57}{85}\\right)^{3}=\\dfrac{185193}{7225}\\approx 25.632,
+$$
+
+so
+
+$$
+T(9)\\approx 15+25.632=40.632.
+$$
+
+Compare with the threshold $42$:
+
+$$
+40.632\\ngtr 42.
+$$
+
+So the statement is False.`,
+
+    `**D.** → True
+
+Solve $T(t)=40$:
+
+$$
+15+85\\,e^{-kt}=40\\qquad\\Rightarrow\\qquad e^{-kt}=\\dfrac{25}{85}=\\dfrac{5}{17}
+$$
+
+$$
+t=\\dfrac{1}{k}\\ln\\dfrac{17}{5}.
+$$
+
+With $\\ln(17/5)=\\ln 3.4\\approx 1.2238$ and $k\\approx 0.1332$,
+
+$$
+t\\approx\\dfrac{1.2238}{0.1332}\\approx 9.19>9.
 $$
 
 So the statement is True.`,
 
-    `**D.** → False
-
-After $8$ years:
-
-$$
-S_{8}=4000\\cdot(1.045)^{8}
-$$
-
-Since $(1.045)^{8}\\approx 1.4221$,
-
-$$
-S_{8}\\approx 4000\\cdot 1.4221=5688.40\\ngtr 5700
-$$
-
-So the statement is False.`,
-
     `**E.** → True
 
-Need $4000\\cdot(1.045)^{n}\\ge 6000$, i.e. $(1.045)^{n}\\ge 1.5$:
+At $t=6=2\\cdot 3$ the exponential factor is the square of $57/85$:
 
 $$
-n\\ge\\dfrac{\\ln 1.5}{\\ln 1.045}\\approx\\dfrac{0.4055}{0.04402}\\approx 9.21
+T(6)=15+85\\left(\\dfrac{57}{85}\\right)^{2}=15+85\\cdot\\dfrac{3249}{7225}=15+\\dfrac{3249}{85}.
 $$
 
-The first integer year count with balance at least EUR $6000$ is therefore after more than $9$ full years.
+$$
+\\dfrac{3249}{85}=38.2235\\ldots\\qquad\\Rightarrow\\qquad T(6)\\approx 15+38.2235=53.2235.
+$$
+
+This lies strictly between $52$ and $54$.
 
 So the statement is True.`,
   ];
@@ -756,7 +1024,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 10.MOCK.COOL",
     id: "MATH 10.MOCK.COOL",
-    title: "Newton cooling and discrete compound savings",
+    title: "Newton cooling — one model, long chained calculations",
     chapter: 10,
     subsection: "10.3",
     context,
@@ -765,93 +1033,134 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Recover $k$ from $T(5)=55$, adjudicate cooling-time thresholds, then handle the discrete $4.5\\%$ account with logarithms — no figure is used.",
+      "Recover $k$ from the single calibration $T(3)=72$, then chain half-excess time, $T(9)$, the hitting time of $40^{\\circ}\\mathrm{C}$, and $T(6)$ from the same exponential factor $57/85$.",
   };
 }
 
-/** Q32 — explicit cubic with f' and f'' (not figure-readable). */
+/**
+ * Q32 — two intertwined functions: product/chain for f, quotient for g=f/(·),
+ * with ln and exp throughout.
+ */
 export function buildMathQ32Deriv() {
-  const context = `For all real $x$ define
+  const context = `For $x>-\\tfrac{1}{2}$ define the intertwined pair
 
 $$
-f(x)=x^{3}-6x^{2}+9x+4
+f(x)=\\ln(2x+1)\\,e^{-x},\\qquad g(x)=\\dfrac{f(x)}{x^{2}+4}=\\dfrac{\\ln(2x+1)\\,e^{-x}}{x^{2}+4}.
 $$
 
-Decide whether each statement is true or false using only the formula above.`;
+Decide whether each statement is true or false.`;
 
   const statements = [
-    "The function $f$ has a local maximum at $x=1$ and a local minimum at $x=3$.",
-    "The second derivative $f''$ changes sign at $x=2$, and $x=2$ is an inflection point of $f$.",
-    "On the open interval where $f''$ is negative, the first derivative $f'$ is strictly decreasing.",
-    "The critical point at which $f'$ is largest in value is also a local maximum of $f$ itself.",
-    "At the inflection abscissa $x=2$, the function $f$ attains its global maximum on $\\mathbb{R}$.",
+    "The function $f$ has a critical point in the open interval $(0.5,0.8)$.",
+    "That critical point of $f$ in $(0.5,0.8)$ is a local maximum of $f$.",
+    "The value $g(1)$ is strictly larger than $0.09$.",
+    "The derivative $g'(0)$ is strictly positive.",
+    "At every critical point of $f$, the function $g$ is automatically stationary as well (i.e. $g'=0$ wherever $f'=0$).",
   ];
 
-  // f'=3(x-1)(x-3); local max at 1 (f=8), local min at 3 (f=4)
-  // f''=6x-12; sign change at 2; f(2)=6
-  // f''<0 on (-∞,2) so f' decreasing there True
-  // f' largest? f' is parabola opening up, vertex at x=2, f'(2)=3(2-1)(2-3)=-3 — actually MINIMUM of f' at x=2.
-  // "critical point at which f' is largest" — f' has no maximum (→∞ as |x|→∞). Misread?
-  // Rephrase D to be the classic trap: "The highest point of f' is a local maximum of f" — but without graph.
-  // Better D: "The point where f' has a critical point (i.e. f''=0) is a local maximum of f." → at x=2, f is neither max nor min (inflection, still increasing since f'(2)=-3? Wait f'(2)=3(1)(-1)=-3<0, so decreasing through inflection.
-  // Actually local max of f is at x=1, not where f''=0.
-
-  // Let me fix statement D to be clearly False:
-  // "Where f''=0, the function f has a local maximum."
-  // False — inflection, and f'(2)<0.
-
-  // E: global max on R? cubic with positive leading coeff → no global max. False.
-
-  const answer_key = [true, true, true, false, false];
-
-  // Update statements[3]:
-  statements[3] =
-    "At the unique root of $f''(x)=0$, the function $f$ itself has a local maximum.";
+  // crit ≈0.673 in (0.5,0.8); local max; g(1)≈0.0808; g'(0)=0.5; g' not auto 0 when f'=0
+  const answer_key = [true, true, false, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
+Differentiate $f$ with the product rule and the chain rule on $\\ln(2x+1)$:
+
 $$
-f'(x)=3x^{2}-12x+9=3(x-1)(x-3)
+f'(x)=\\left(\\dfrac{2}{2x+1}\\right)e^{-x}+\\ln(2x+1)\\cdot\\bigl(-e^{-x}\\bigr)
 $$
 
-Critical points $x=1$ and $x=3$. Sign of $f'$: positive on $(-\\infty,1)$, negative on $(1,3)$, positive on $(3,\\infty)$. So $x=1$ is a local maximum and $x=3$ is a local minimum.
+$$
+=e^{-x}\\left(\\dfrac{2}{2x+1}-\\ln(2x+1)\\right).
+$$
+
+Since $e^{-x}>0$ always, the sign of $f'$ matches the sign of $\\dfrac{2}{2x+1}-\\ln(2x+1)$.
+
+Evaluate at the endpoints of the claimed interval.
+
+At $x=0.5$:
+
+$$
+\\dfrac{2}{2\\cdot 0.5+1}-\\ln(2\\cdot 0.5+1)=\\dfrac{2}{2}-\\ln 2=1-\\ln 2\\approx 1-0.693=0.307>0.
+$$
+
+At $x=0.8$:
+
+$$
+\\dfrac{2}{2\\cdot 0.8+1}-\\ln(2\\cdot 0.8+1)=\\dfrac{2}{2.6}-\\ln 2.6\\approx 0.769-0.956=-0.187<0.
+$$
+
+By the intermediate-value theorem the continuous expression $\\dfrac{2}{2x+1}-\\ln(2x+1)$ has a zero in $(0.5,0.8)$, hence so does $f'$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-$$
-f''(x)=6x-12=6(x-2)
-$$
+From A, the factor $\\dfrac{2}{2x+1}-\\ln(2x+1)$ (and therefore $f'$) is positive at $x=0.5$ and negative at $x=0.8$. So as $x$ increases through the unique zero in $(0.5,0.8)$, $f'$ changes from $+$ to $-$. That means $f$ itself changes from increasing to decreasing, which is the definition of a local maximum.
 
-$f''$ changes from negative to positive at $x=2$, so concavity of $f$ changes there: $x=2$ is an inflection point.
+(Equivalently: for small $h>0$ one has $f'(x_{0}-h)>0$ and $f'(x_{0}+h)<0$ at the critical point $x_{0}$, so $f(x_{0})$ is larger than the nearby values on both sides.)
 
 So the statement is True.`,
 
-    `**C.** → True
+    `**C.** → False
 
-$f''(x)<0$ precisely on $(-\\infty,2)$. But $f''=(f')'$, so $f'$ is strictly decreasing wherever $f''<0$.
+Substitute $x=1$ into $g$:
 
-So the statement is True.`,
+$$
+g(1)=\\dfrac{\\ln(2\\cdot 1+1)\\,e^{-1}}{1^{2}+4}=\\dfrac{\\ln 3}{5e}.
+$$
 
-    `**D.** → False
+Use $\\ln 3\\approx 1.0986$ and $e\\approx 2.7183$:
 
-The unique root of $f''=0$ is $x=2$. There $f'(2)=3(2-1)(2-3)=-3\\ne 0$, so $x=2$ is not even a critical point of $f$. It is an inflection point (letter B), not a local maximum.
+$$
+g(1)\\approx\\dfrac{1.0986}{5\\cdot 2.7183}=\\dfrac{1.0986}{13.5915}\\approx 0.0808.
+$$
+
+Compare with the threshold:
+
+$$
+0.0808\\ngtr 0.09.
+$$
 
 So the statement is False.`,
 
+    `**D.** → True
+
+Differentiate $g$ with the quotient rule. Write $g=f/h$ with $h(x)=x^{2}+4$, so $h'=2x$:
+
+$$
+g'(x)=\\dfrac{f'(x)\\,h(x)-f(x)\\,h'(x)}{\\bigl(h(x)\\bigr)^{2}}=\\dfrac{f'(x)(x^{2}+4)-f(x)\\cdot 2x}{(x^{2}+4)^{2}}.
+$$
+
+At $x=0$:
+
+$$
+f(0)=\\ln 1\\cdot e^{0}=0,\\qquad f'(0)=e^{0}\\left(\\dfrac{2}{1}-\\ln 1\\right)=2,
+$$
+
+$$
+g'(0)=\\dfrac{2\\cdot(0+4)-0\\cdot 0}{(0+4)^{2}}=\\dfrac{8}{16}=\\dfrac{1}{2}>0.
+$$
+
+So the statement is True.`,
+
     `**E.** → False
 
-A cubic with positive leading coefficient satisfies $f(x)\\to+\\infty$ as $x\\to+\\infty$, so $f$ has no global maximum on $\\mathbb{R}$. In particular it cannot attain one at $x=2$ (where $f(2)=8-24+18+4=6$).
+Suppose $f'(x_{0})=0$ with $f(x_{0})\\ne 0$ (as at the interior maximum from A–B, where $\\ln(2x_{0}+1)>0$). The quotient formula from D collapses to
+
+$$
+g'(x_{0})=\\dfrac{0\\cdot(x_{0}^{2}+4)-f(x_{0})\\cdot 2x_{0}}{(x_{0}^{2}+4)^{2}}=\\dfrac{-2x_{0}\\,f(x_{0})}{(x_{0}^{2}+4)^{2}}.
+$$
+
+For $x_{0}\\in(0.5,0.8)$ one has $x_{0}\\ne 0$ and $f(x_{0})>0$, so $g'(x_{0})\\ne 0$. Thus a critical point of $f$ need not be a critical point of $g$.
 
 So the statement is False.`,
   ];
 
   return {
-    case_id: "MATH 11.MOCK.CUBIC",
-    id: "MATH 11.MOCK.CUBIC",
-    title: "Explicit cubic — first and second derivatives without a figure",
+    case_id: "MATH 11.MOCK.CHAIN",
+    id: "MATH 11.MOCK.CHAIN",
+    title: "Intertwined ln–exp pair — product, chain, and quotient",
     chapter: 11,
     subsection: "11.4",
     context,
@@ -860,11 +1169,11 @@ So the statement is False.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Differentiate $f$ twice by hand, classify critical and inflection points from sign charts, and reject global-max / fake-max claims that a figure might have suggested.",
+      "Differentiate $f$ by product+chain and $g=f/(x^{2}+4)$ by the quotient rule; locate the sign-change critical point of $f$, evaluate $g(1)$ and $g'(0)$, and show $f'=0$ does not force $g'=0$.",
   };
 }
 
-/** Q33 — poker probabilities with hand-rank definitions written into the claims. */
+/** Q33 — poker probabilities with hand-rank definitions in the claims. */
 export function buildMathQ33Poker() {
   const context = `At a friend’s poker night, the host shuffles a standard, well-mixed $52$-card deck and deals a $5$-card poker hand uniformly at random (order within the hand does not matter).
 
@@ -878,19 +1187,13 @@ Decide whether each probability claim is true or false.`;
     "A straight is five consecutive ranks that are not all the same suit (straight flushes excluded). Three of a kind is exactly three cards of one rank, with the other two cards of different ranks (not a full house). The probability of a straight is greater than the probability of three of a kind.",
   ];
 
-  // hands 2598960 > 2.5e6 True
-  // FH 3744, FK 624, ratio 6 ≯ 10 False
-  // flush 5108 / 2598960 ≈ 0.001965 < 0.002 True
-  // 1 - 1302540/2598960 ≈ 0.4988 ≯ 0.5 False
-  // straight 10200 < three kind 54912 False
-
   const answer_key = [true, false, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
 $$
-\\binom{52}{5}=\\dfrac{52\\cdot 51\\cdot 50\\cdot 49\\cdot 48}{5!}=2{,}598{,}960>2{,}500{,}000
+\\binom{52}{5}=\\dfrac{52\\cdot 51\\cdot 50\\cdot 49\\cdot 48}{5!}=2{,}598{,}960>2{,}500{,}000.
 $$
 
 So the statement is True.`,
@@ -900,64 +1203,59 @@ So the statement is True.`,
 Full-house count: choose the triple rank ($13$), choose $3$ of its $4$ suits ($\\binom{4}{3}$), choose the pair rank ($12$), choose $2$ of its $4$ suits ($\\binom{4}{2}$):
 
 $$
-13\\cdot\\binom{4}{3}\\cdot 12\\cdot\\binom{4}{2}=3744
+13\\cdot\\binom{4}{3}\\cdot 12\\cdot\\binom{4}{2}=13\\cdot 4\\cdot 12\\cdot 6=3744.
 $$
 
 Four-of-a-kind count: $13$ choices for the quad rank, times $48$ choices for the kicker:
 
 $$
-13\\cdot 48=624
+13\\cdot 48=624.
 $$
 
 Ratio of probabilities equals ratio of counts:
 
 $$
-\\dfrac{3744}{624}=6\\ngtr 10
+\\dfrac{3744}{624}=6\\ngtr 10.
 $$
 
 So the statement is False.`,
 
-    `**C.** → False
+    `**C.** → True
 
-Wait — flush count excluding straight flushes is $4\\binom{13}{5}-40=5108$. Probability:
+Flush count excluding straight flushes:
 
 $$
-\\dfrac{5108}{2{,}598{,}960}\\approx 0.001965<\\dfrac{1}{500}=0.002
+4\\binom{13}{5}-40=4\\cdot 1287-40=5148-40=5108.
 $$
 
-Actually True. Fix key — answer is True.`,
+$$
+\\dfrac{5108}{2{,}598{,}960}\\approx 0.001965<\\dfrac{1}{500}=0.002.
+$$
+
+So the statement is True.`,
 
     `**D.** → False
 
 The number of nothing / high-card hands is $1{,}302{,}540$. Hence
 
 $$
-P(\\text{at least a pair or better})=1-\\dfrac{1{,}302{,}540}{2{,}598{,}960}\\approx 0.4988\\ngtr 0.5
+P(\\text{at least a pair or better})=1-\\dfrac{1{,}302{,}540}{2{,}598{,}960}\\approx 0.4988\\ngtr 0.5.
 $$
 
 So the statement is False.`,
 
     `**E.** → False
 
-Straight count (excluding straight flushes) is $10{,}200$. Three-of-a-kind count is $54{,}912$. Since $10{,}200<54{,}912$, the straight probability is smaller, not greater.
+Straight count (excluding straight flushes) is $10{,}200$. Three-of-a-kind count is
+
+$$
+13\\cdot\\binom{4}{3}\\cdot\\binom{12}{2}\\cdot 4\\cdot 4=13\\cdot 4\\cdot 66\\cdot 16=54{,}912.
+$$
+
+Since $10{,}200<54{,}912$, the straight probability is smaller, not greater.
 
 So the statement is False.`,
   ];
-
-  // Fix the botched C explanation (had "False" header leftover)
-  tactical_explanations[2] = `**C.** → True
-
-Flush count excluding straight flushes:
-
-$$
-4\\binom{13}{5}-40=4\\cdot 1287-40=5108
-$$
-
-$$
-\\dfrac{5108}{2{,}598{,}960}\\approx 0.001965<\\dfrac{1}{500}=0.002
-$$
-
-So the statement is True.`;
 
   return {
     case_id: "MATH 12.MOCK.POKER",

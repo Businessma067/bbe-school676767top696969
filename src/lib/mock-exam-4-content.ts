@@ -106,7 +106,7 @@ export const MOCK_EXAM_4_POINTS_TOTAL =
 
 /** Bump when Mock 4 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_4_CONTENT_REV =
-  "2026-09-15i · 34q · Glacier · deep custom math Q22–33";
+  "2026-09-15j · 34q · Glacier · Q23/25/28/31/32 deep rewrite";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
