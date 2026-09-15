@@ -2,13 +2,14 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
- * Creating an invoice returns a hosted `pageUrl` where the buyer can pay by
- * card, Apple Pay, or Google Pay (device/browser dependent). Do not set
- * `displayType: "iframe"` — that card-only widget hides the wallet options.
+ * Creating an invoice with `displayType: "iframe"` returns an embeddable
+ * widget URL. Embed it with `allow="payment *"` so the buyer can pay by
+ * card, Apple Pay, or Google Pay without leaving the site.
  *
  * Docs:
  *  - POST /api/merchant/invoice/create
  *  - GET  /api/merchant/invoice/status?invoiceId=...
+ *  - https://monobank.ua/api-docs/acquiring/methods/ia/docs--widget-frame
  */
 
 const MONO_API = "https://api.monobank.ua/api/merchant";
@@ -73,6 +74,9 @@ export async function createMonoInvoice(input: {
       ...(input.webHookUrl ? { webHookUrl: input.webHookUrl } : {}),
       validity: 3600,
       paymentType: "debit",
+      // Embeddable checkout widget (card + Apple Pay + Google Pay). Requires
+      // the host iframe to set allow="payment *".
+      displayType: "iframe",
     }),
   });
 

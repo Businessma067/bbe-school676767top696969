@@ -100,10 +100,14 @@ export const uiExtraDe: Record<string, string> = {
   Promo: "Promo",
   "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.":
     "Zahle sicher per Karte über Monobank. Das Zahlungsformular öffnet sich hier; nach der Zahlung kommst du automatisch zurück.",
+  "Pay securely through Monobank. The payment form opens here with card, Apple Pay, and Google Pay; you return automatically after the payment.":
+    "Zahle sicher über Monobank. Das Zahlungsformular öffnet sich hier mit Karte, Apple Pay und Google Pay; nach der Zahlung kommst du automatisch zurück.",
   "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
     "Weiter zur sicheren Monobank-Zahlungsseite — dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Danach kommst du hierher zurück.",
   "Pay by card. You will return here after the payment.":
     "Zahle per Karte. Nach der Zahlung kommst du hierher zurück.",
+  "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
+    "Zahle per Karte, Apple Pay oder Google Pay. Nach der Zahlung kommst du hierher zurück.",
   "15% discount applied": "15 % Rabatt angewendet",
   "Proceed to payment · ": "Zur Zahlung · ",
   "One-time payment · No subscription · Secured by Monobank":
@@ -299,10 +303,14 @@ export const uiExtraUk: Record<string, string> = {
   Promo: "Промо",
   "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.":
     "Оплатіть безпечно карткою через Monobank. Форма оплати відкриється тут; після оплати ви автоматично повернетесь.",
+  "Pay securely through Monobank. The payment form opens here with card, Apple Pay, and Google Pay; you return automatically after the payment.":
+    "Оплатіть безпечно через Monobank. Форма оплати відкриється тут із карткою, Apple Pay і Google Pay; після оплати ви автоматично повернетесь.",
   "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
     "Перейдіть на захищену сторінку Monobank, щоб сплатити карткою, Apple Pay або Google Pay. Після оплати ви повернетесь сюди.",
   "Pay by card. You will return here after the payment.":
     "Оплатіть карткою. Після оплати ви повернетесь сюди.",
+  "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
+    "Оплатіть карткою, Apple Pay або Google Pay. Після оплати ви повернетесь сюди.",
   "15% discount applied": "Знижку 15% застосовано",
   "Proceed to payment · ": "До оплати · ",
   "One-time payment · No subscription · Secured by Monobank":
