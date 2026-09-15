@@ -175,7 +175,7 @@ $$
 $$
 
 $$
-22.80\\not< 22.50
+22.80\\nless 22.50
 $$
 
 So the statement is False.`,
@@ -208,7 +208,7 @@ $$
 $$
 
 $$
-40\\%\\not> 45\\%
+40\\%\\ngtr  45\\%
 $$
 
 So the statement is False.`,
@@ -248,6 +248,250 @@ So the statement is True.`,
 }
 
 /** Hard mixture + break-even linear systems (different engine from rates / utility). */
+/** Diversified harder equations — not five logs on one base. */
+function buildMathCh4Diversified() {
+  const context = `Decide whether each statement about equations is true or false. The five claims use different equation types.`;
+
+  const statements = [
+    "The quadratic $x^{2}-(k+1)x+k=0$ has two distinct positive roots when $k=2$.",
+    "The rational equation $\\dfrac{x+5}{x-1}=3$ has a solution smaller than $3$.",
+    "The solution set of $|3x-6|<9$ is an open interval whose length exceeds $5$.",
+    "The exponential equation $3^{2x}=27^{x-1}$ has a solution smaller than $2$.",
+    "Over the reals with $x>1$, the equation $\\log(x-1)+\\log(x+1)=\\log 8$ has a solution smaller than $4$.",
+  ];
+
+  // A: k=2 → x^2-3x+2=(x-1)(x-2)=0 → 1,2 distinct positive → True
+  // B: x+5=3(x-1)=3x-3 → 8=2x → x=4, not < 3 → False
+  // C: |3x-6|<9 → -1<x<5 length 6 > 5 → True
+  // D: 3^{2x}=3^{3(x-1)} → 2x=3x-3 → x=3, not < 2 → False
+  // E: (x-1)(x+1)=8 → x^2=9 → x=3 (x=-3 invalid) → 3<4 → True
+
+  const answer_key = [true, false, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+For $k=2$ the equation is
+
+$$
+x^{2}-3x+2=0
+$$
+
+$$
+(x-1)(x-2)=0
+$$
+
+The roots are $x=1$ and $x=2$: two distinct positive numbers.
+
+So the statement is True.`,
+
+    `**B.** → False
+
+$$
+\\dfrac{x+5}{x-1}=3\\qquad(x\\ne 1)
+$$
+
+$$
+x+5=3(x-1)=3x-3
+$$
+
+$$
+8=2x\\qquad\\Rightarrow\\qquad x=4
+$$
+
+$$
+4\\nless 3
+$$
+
+So the statement is False.`,
+
+    `**C.** → True
+
+$$
+|3x-6|<9
+$$
+
+$$
+-9<3x-6<9
+$$
+
+$$
+-3<3x<15
+$$
+
+$$
+-1<x<5
+$$
+
+The open interval $(-1,5)$ has length $6$, which exceeds $5$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+$$
+3^{2x}=27^{x-1}=(3^{3})^{x-1}=3^{3x-3}
+$$
+
+$$
+2x=3x-3\\qquad\\Rightarrow\\qquad x=3
+$$
+
+$$
+3\\nless 2
+$$
+
+So the statement is False.`,
+
+    `**E.** → True
+
+Domain requires $x>1$. Then
+
+$$
+\\log\\bigl((x-1)(x+1)\\bigr)=\\log 8
+$$
+
+$$
+x^{2}-1=8\\qquad\\Rightarrow\\qquad x^{2}=9
+$$
+
+$$
+x=3
+$$
+
+(the root $x=-3$ is outside the domain). Since $3<4$, the claim holds.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 4.MOCK.EQ",
+    id: "MATH 4.MOCK.EQ",
+    title: "Mixed hard equations — quadratic, rational, absolute, exponential, log",
+    chapter: 4,
+    subsection: "4.5",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Each letter is a different equation family: factor a parameter quadratic, clear a rational, expand an absolute-value inequality, match exponential bases, then apply log product with domain.",
+  };
+}
+
+/** Diversified harder inequalities — not five copies of one rational sign chart. */
+function buildMathCh6Diversified() {
+  const context = `Decide whether each statement about inequalities is true or false. The five claims use different inequality types.`;
+
+  const statements = [
+    "The solution set of $x^{2}-4x-5\\ge 0$ contains the number $0$.",
+    "The solution set of $\\dfrac{x-2}{x+3}\\le 0$ is exactly $(-3,2]$.",
+    "The solution set of $|x-1|+|x+2|>5$ is $(-\\infty,-3]\\cup[2,\\infty)$.",
+    "The system $3x+2>2x+7$ and $\\dfrac{x}{2}\\le 5$ has exactly five integer solutions.",
+    "The point $(3,1)$ lies in the feasible region of $x+y\\ge 4$, $x-y\\le 2$, $x\\ge 0$, $y\\ge 0$.",
+  ];
+
+  // A: (x-5)(x+1)>=0 → (-∞,-1]U[5,∞); 0 not in → False
+  // B: critical -3,2; sign ≤0 on (-3,2] → True
+  // C: actual (-∞,-3)U(2,∞) strict, not closed → False
+  // D: x>5 and x<=10 → (5,10]; integers 6,7,8,9,10 = five → True
+  // E: 3+1=4, 3-1=2, both ok → True
+
+  const answer_key = [false, true, false, true, true];
+
+  const tactical_explanations = [
+    `**A.** → False
+
+$$
+x^{2}-4x-5\\ge 0
+$$
+
+$$
+(x-5)(x+1)\\ge 0
+$$
+
+A sign chart gives
+
+$$
+x\\in(-\\infty,-1]\\cup[5,\\infty)
+$$
+
+The number $0$ lies strictly between $-1$ and $5$, so it is not a solution.
+
+So the statement is False.`,
+
+    `**B.** → True
+
+Critical points: numerator zero $x=2$ and pole $x=-3$ (excluded). On the three intervals determined by $-3$ and $2$, the quotient is negative or zero precisely on $(-3,2]$, and equals zero at $x=2$.
+
+$$
+\\dfrac{x-2}{x+3}\\le 0 \\quad\\Longleftrightarrow\\quad x\\in(-3,2]
+$$
+
+So the statement is True.`,
+
+    `**C.** → False
+
+Piecewise:
+
+- If $x\\ge 1$: $(x-1)+(x+2)=2x+1>5\\Rightarrow x>2$.
+- If $-2\\le x\\le 1$: $(1-x)+(x+2)=3>5$ never.
+- If $x<-2$: $(1-x)+(-x-2)=-2x-1>5\\Rightarrow x<-3$.
+
+Hence
+
+$$
+|x-1|+|x+2|>5 \\quad\\Longleftrightarrow\\quad x\\in(-\\infty,-3)\\cup(2,\\infty)
+$$
+
+The claimed set uses closed ends at $-3$ and $2$, which fail the strict inequality.
+
+So the statement is False.`,
+
+    `**D.** → True
+
+$$
+3x+2>2x+7\\quad\\Rightarrow\\quad x>5
+$$
+
+$$
+\\dfrac{x}{2}\\le 5\\quad\\Rightarrow\\quad x\\le 10
+$$
+
+So $x\\in(5,10]$. The integers in that interval are $6,7,8,9,10$ — exactly five.
+
+So the statement is True.`,
+
+    `**E.** → True
+
+Check $(3,1)$:
+
+$$
+3+1=4\\ge 4,\\qquad 3-1=2\\le 2,\\qquad 3\\ge 0,\\qquad 1\\ge 0
+$$
+
+Every constraint holds, so the point is feasible.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 6.MOCK.MIXINEQ",
+    id: "MATH 6.MOCK.MIXINEQ",
+    title: "Mixed hard inequalities — quadratic, rational, absolute, compound, feasible region",
+    chapter: 6,
+    subsection: "6.5",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Do not reuse one sign chart five times: factor a quadratic, read a rational chart with a pole, expand a two-absolute expression by pieces, intersect a linear compound, then test a point in a linear region.",
+  };
+}
+
 function buildMathCh5Mixture() {
   // Alloy: pure copper + 40%-copper scrap → 70% copper mix of 120 kg
   // Let x = kg pure (100%), y = kg scrap (40%)
@@ -318,7 +562,7 @@ $$
 $$
 
 $$
-780\\not< 750
+780\\nless  750
 $$
 
 So the statement is False.`,
@@ -344,7 +588,7 @@ Q_{\\mathrm{BE}}=\\dfrac{3{,}600}{11-5}=\\dfrac{3{,}600}{6}=600
 $$
 
 $$
-600\\not< 550
+600\\nless  550
 $$
 
 So the statement is False.`,
@@ -456,7 +700,7 @@ t=-\\dfrac{1}{k}\\ln\\dfrac{3}{14}\\approx\\dfrac{1.54045}{0.11192}\\approx 13.7
 $$
 
 $$
-13.76\\not< 12
+13.76\\nless  12
 $$
 
 So the statement is False.`,
@@ -468,7 +712,7 @@ e^{\\delta}=1.045\\qquad\\Rightarrow\\qquad \\delta=\\ln 1.045\\approx 0.044017
 $$
 
 $$
-0.044017\\not< 0.044
+0.044017\\nless  0.044
 $$
 
 So the statement is False.`,
@@ -640,16 +884,25 @@ function takeMath(caseId: string, chapter: number) {
   if (!chapterBank) throw new Error(`Missing math chapter ${chapter}`);
   const t = chapterBank.tasks.find((x) => x.case_id === caseId);
   if (!t) throw new Error(`Missing math ${caseId} in chapter ${chapter}`);
-  return mapMath(chapter, t as unknown as Record<string, unknown>);
+  const mapped = mapMath(chapter, t as unknown as Record<string, unknown>);
+  // Avoid \$… mixed with $…$ which breaks KaTeX inline parsing.
+  if (caseId === "MATH 11.123") {
+    const fix = (s: string) => s.replace(/\\\$/g, "USD ");
+    mapped.context = fix(String(mapped.context ?? ""));
+    mapped.statements = (mapped.statements as string[]).map(fix);
+    mapped.tactical_explanations = (mapped.tactical_explanations as string[]).map(fix);
+    if (mapped.solution_overview) mapped.solution_overview = fix(String(mapped.solution_overview));
+  }
+  return mapped;
 }
 
 const math = [
   takeMath("MATH 1.82", 1),
   takeMath("MATH 2.60", 2),
   takeMath("MATH 11.123", 3),
-  takeMath("MATH 4.191", 4),
+  buildMathCh4Diversified(),
   buildMathCh5Mixture(),
-  takeMath("MATH 6.15", 6),
+  buildMathCh6Diversified(),
   takeMath("MATH 7.89", 7),
   takeMath("MATH 8.44", 8),
   takeMath("MATH 9.E11", 9),
@@ -658,6 +911,29 @@ const math = [
   takeMath("MATH 12.186", 12),
   takeMath("MATH 13.36", 13),
 ];
+
+/** Fix common KaTeX / formatting issues across the assembled bank. */
+function scrubKatexDeep(value: unknown): unknown {
+  if (typeof value === "string") {
+    return value
+      .replace(/\\not</g, "\\nless ")
+      .replace(/\\not>/g, "\\ngtr ")
+      .replace(/\\not\\le/g, "\\nleq ")
+      .replace(/\\not\\ge/g, "\\ngeq ")
+      .replace(/\n{3,}/g, "\n\n")
+      .replace(/[ \t]+\n/g, "\n")
+      .trim();
+  }
+  if (Array.isArray(value)) return value.map(scrubKatexDeep);
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value as Record<string, unknown>)) {
+      out[k] = scrubKatexDeep(v);
+    }
+    return out;
+  }
+  return value;
+}
 
 function audit(label: string, tasks: Array<Record<string, unknown>>) {
   for (const t of tasks) {
@@ -678,7 +954,11 @@ audit("econ", economics);
 audit("eng", english.tasks);
 audit("math", math);
 
-const bundle = { economics, english, math };
+const bundle = scrubKatexDeep({ economics, english, math }) as {
+  economics: typeof economics;
+  english: typeof english;
+  math: typeof math;
+};
 fs.writeFileSync(outPath, JSON.stringify(bundle, null, 2) + "\n");
 console.log(
   "Wrote",
