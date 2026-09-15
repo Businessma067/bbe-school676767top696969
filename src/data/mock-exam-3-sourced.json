@@ -645,7 +645,7 @@
       "title": "Weekend on-call roster — six interns and seven rules",
       "chapter": 1,
       "subsection": "1.4",
-      "context": "Six interns — Ava, Ben, Cara, Drew, Eve, and Finn — are being considered for a weekend on-call roster. The staffing rules are:\n\n1. Ava is rostered if and only if Ben is rostered.\n2. If Ben is rostered, then Cara is rostered.\n3. Exactly one of Cara or Drew is rostered (never both, never neither).\n4. If Drew is rostered, then Eve is not rostered.\n5. At least one of Eve or Finn is rostered.\n6. Finn is rostered only if Ava is not rostered.\n7. At least three of the six interns are rostered.\n\nDecide whether each statement is true or false.",
+      "context": "Six interns — Ava, Ben, Cara, Drew, Eve, and Finn — are considered for a weekend on-call roster.\n\nAva is rostered if and only if Ben is rostered.\n\nIf Ben is rostered, then Cara is rostered.\n\nExactly one of Cara or Drew is rostered (never both, never neither).\n\nIf Drew is rostered, then Eve is not rostered.\n\nAt least one of Eve or Finn is rostered.\n\nFinn is rostered only if Ava is not rostered.\n\nAt least three of the six interns are rostered.",
       "statements": [
         "Ben must appear on every roster that obeys all seven rules.",
         "It is possible to build a valid roster that includes Drew.",
@@ -661,14 +661,14 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nWithout Ben (and therefore without Ava), the roster $\\{C,E,F\\}$ satisfies Cara-xor-Drew, Eve-or-Finn, Finn’s restriction, and the size rule. So Ben is not forced onto every valid roster.\n\nSo the statement is False.",
-        "**B.** → False\n\nDrew forces Cara off the roster. But Ben forces Cara on, so Drew cannot appear with Ben. Without Ben, Drew also forces Eve off, so Finn must be on; the only candidates left cannot reach size three. No valid roster contains Drew.\n\nSo the statement is False.",
-        "**C.** → True\n\nRule 6 says Finn is rostered only if Ava is not. Contrapositively, if Ava is rostered then Finn is not.\n\nSo the statement is True.",
-        "**D.** → True\n\nEvery Ben-based roster needs Ava, Ben, Cara, and Eve (Finn is blocked), hence size at least $4$. The only size-three roster is $\\{C,E,F\\}$.\n\nSo the statement is True.",
-        "**E.** → False\n\nRostering everyone would put both Cara and Drew on call, contradicting the exclusive-or rule.\n\nSo the statement is False."
+        "**A.** → False\n\nThe truth table contains a valid row with $B=0$, namely $\\{C,E,F\\}$. Ben is therefore not forced onto every valid roster.\n\nSo the statement is False.\n\n**Truth table of valid rosters.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).\n2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.\n3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid rosters.\n\n| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |\n| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |\n| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |\n| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |\n\nExactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears.",
+        "**B.** → False\n\nNo valid row has $D=1$. Drew forces $C=0$ and $E=0$, so $F=1$, but then size stays below $3$. Drew never appears in a valid roster.\n\nSo the statement is False.\n\n**Truth table of valid rosters.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).\n2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.\n3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid rosters.\n\n| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |\n| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |\n| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |\n| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |\n\nExactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears.",
+        "**C.** → True\n\nThe rule “Finn only if Ava is not rostered” is $F\\Rightarrow\\neg A$. Contrapositively, $A\\Rightarrow\\neg F$. Every valid row with $A=1$ has $F=0$.\n\nSo the statement is True.\n\n**Truth table of valid rosters.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).\n2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.\n3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid rosters.\n\n| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |\n| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |\n| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |\n| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |\n\nExactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears.",
+        "**D.** → True\n\nThe only size-three valid row is $\\{C,E,F\\}$. The Ben-based roster $\\{A,B,C,E\\}$ already has size $4$.\n\nSo the statement is True.\n\n**Truth table of valid rosters.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).\n2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.\n3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid rosters.\n\n| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |\n| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |\n| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |\n| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |\n\nExactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears.",
+        "**E.** → False\n\nA six-person roster would require $C=D=1$, which breaks the exclusive-or. The truth table’s largest valid size is $4$.\n\nSo the statement is False.\n\n**Truth table of valid rosters.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).\n2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.\n3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid rosters.\n\n| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |\n| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |\n| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |\n| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |\n\nExactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Chain the English rules (biconditional, implication, exclusive or, only-if, size) to decide forced membership, possibility, and uniqueness — without treating the letters as abstract De Morgan drills."
+      "solution_overview": "**Part 1: Setup.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. The stem is\n\n$$\n(1)\\ A\\Leftrightarrow B,\\qquad (2)\\ B\\Rightarrow C,\\qquad (3)\\ (C\\land\\neg D)\\lor(\\neg C\\land D),\n$$\n\n$$\n(4)\\ D\\Rightarrow\\neg E,\\qquad (5)\\ E\\lor F,\\qquad (6)\\ F\\Rightarrow\\neg A,\n$$\n\nand (7) size at least three.\n\n\"$P$ only if $Q$\" is $P\\Rightarrow Q$.\n\n**Part 2: Building the truth table.**\n\nApply the biconditional and exclusive-or first, then the implications, then the size filter. Only two rows survive: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$.\n\n**Truth table of valid rosters.**\n\nWrite $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.\n\nHow the table is built:\n\n1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).\n2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.\n3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.\n4. Drop any row whose size is strictly less than $3$.\n5. Keep only the surviving rows — those are the valid rosters.\n\n| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |\n| --- | --- | --- | --- | --- | --- | ---: | --- |\n| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |\n| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |\n| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |\n| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |\n| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |\n| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |\n\nExactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears."
     },
     {
       "case_id": "MATH 2.MOCK.CALC",
@@ -676,11 +676,11 @@
       "title": "Multi-step elementary algebra with threshold claims",
       "chapter": 2,
       "subsection": "2.4",
-      "context": "Decide whether each statement is true or false. Each claim needs a multi-step calculation; the statements give thresholds or qualitative conclusions, not the finished boxed value.",
+      "context": "Each claim below is an independent elementary-algebra check.\n\nNested fractions, a $2\\times 2$ linear system, a polynomial product, a rational equation, and a radical equation appear in turn.\n\nDecide whether each statement is true or false. The claims give thresholds, not boxed final values.",
       "statements": [
         "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ is strictly smaller than $0.8$.",
         "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>3$.",
-        "Substituting $x=2$ into $(2x^{3}-5x+1)(3x-4)$ yields a value strictly larger than $12$.",
+        "At $x=2$, the product $(2x^{3}-5x+1)(3x-4)$ is strictly larger than $12$.",
         "Over the reals with $x\\ne\\pm 2$, every solution of $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ is strictly smaller than $2$.",
         "The positive solution of $\\sqrt{x+7}-\\sqrt{x-1}=2$ is strictly larger than $3$."
       ],
@@ -738,7 +738,7 @@
       "title": "Hard equation word problems — ages, frame, motion, log, coins",
       "chapter": 4,
       "subsection": "4.5",
-      "context": "Decide whether each statement about equations is true or false. Each letter is an independent word problem from a different equation family.",
+      "context": "Each letter is an independent equation word problem from a different family.\n\nAges, a framed print, a two-leg trip, a logarithmic equation, and a coin till appear in turn.\n\nDecide whether each statement is true or false.",
       "statements": [
         "A courier is $27$ years older than a trainee. In $6$ years the courier will be twice as old as the trainee will be then. A planner concludes that the trainee is now $15$ years old.",
         "A $30\\ \\mathrm{cm}$ by $18\\ \\mathrm{cm}$ print is mounted with a uniform frame so that the framed outer area is three times the print area. The frame width is then strictly less than $6\\ \\mathrm{cm}$.",
@@ -769,7 +769,7 @@
       "title": "Copper–scrap alloy blend and a break-even shift",
       "chapter": 5,
       "subsection": "5.5",
-      "context": "A foundry blends pure copper (100% Cu) with scrap that is 40% copper by mass. It must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is 70% copper. Pure copper costs EUR 9 per kilogram and scrap costs EUR 4 per kilogram. The finished alloy is sold at EUR 8.50 per kilogram.\n\nSeparately, a workshop product has fixed costs EUR 3600, variable cost EUR 5 per unit and selling price EUR 11 per unit.",
+      "context": "A foundry blends pure copper ($100\\%$ Cu) with scrap that is $40\\%$ copper by mass.\n\nIt must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is $70\\%$ copper.\n\nPure copper costs EUR $9$ per kilogram and scrap costs EUR $4$ per kilogram.\n\nThe finished alloy is sold at EUR $8.50$ per kilogram.\n\nSeparately, a workshop product has fixed costs EUR $3600$, variable cost EUR $5$ per unit, and selling price EUR $11$ per unit.",
       "statements": [
         "In the cheapest blend that meets the mass and copper-content targets, more than $55\\ \\mathrm{kg}$ of scrap must be used.",
         "The total material cost of that $120\\ \\mathrm{kg}$ blend is less than EUR 750.",
@@ -800,7 +800,7 @@
       "title": "Mixed hard inequalities — quadratic, rational, absolute, compound, feasible region",
       "chapter": 6,
       "subsection": "6.5",
-      "context": "Decide whether each statement about inequalities is true or false. The five claims use different inequality types.",
+      "context": "Each letter is an independent inequality check from a different family.\n\nQuadratic, rational, absolute-value, a linear system, and a feasible-region point appear in turn.\n\nDecide whether each statement is true or false.",
       "statements": [
         "The solution set of $x^{2}-4x-5\\ge 0$ contains the number $0$.",
         "The solution set of $\\dfrac{x-2}{x+3}\\le 0$ is exactly $(-3,2]$.",
@@ -831,7 +831,7 @@
       "title": "Numeric parabola with slope family — threshold claims",
       "chapter": 7,
       "subsection": "7.3",
-      "context": "Consider the parabola $g(x)=2x^{2}-12x+10$ and the family of lines through its vertex with slope $m$:\n\n$$\nf_{m}(x)=m(x-3)-8\n$$\n\nDecide whether each statement is true or false.",
+      "context": "A parabola is given by\n\n$$\ng(x)=2x^{2}-12x+10\n$$\n\nLines through its vertex form the family\n\n$$\nf_{m}(x)=m(x-3)-8\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
         "The axis of symmetry of $g$ lies strictly to the right of $x=2$.",
         "At its vertex, $g$ takes a strictly negative value.",
@@ -862,7 +862,7 @@
       "title": "Power capacity with two unknowns — qualitative profit claims",
       "chapter": 8,
       "subsection": "8.3",
-      "context": "A logistics firm models delivery capacity by $C(v)=A v^{p}$ for $v>0$, with unknown $A>0$ and $p>0$. Calibration: $C(3)=24$ and $C(6)=96$. Each van-hour costs EUR 12, and each unit of capacity earns EUR 0.80. Profit is $\\pi(v)=0.8\\,C(v)-12v$.\n\nDecide whether each statement is true or false.",
+      "context": "Delivery capacity follows the power model\n\n$$\nC(v)=A v^{p}\\qquad(v>0)\n$$\n\nwith unknown $A>0$ and $p>0$.\n\nCalibration runs give $C(3)=24$ and $C(6)=96$.\n\nEach van-hour costs EUR $12$, and each unit of capacity earns EUR $0.80$.\n\nProfit is $\\pi(v)=0.8\\,C(v)-12v$.",
       "statements": [
         "Doubling van-hours multiplies capacity by more than three.",
         "At five van-hours, capacity already exceeds $65$.",
@@ -893,7 +893,7 @@
       "title": "Shift-output cubic — roots, critical values, multi-step checks",
       "chapter": 9,
       "subsection": "9.3",
-      "context": "A machine’s short-run output rate (units per hour) is modelled by\n\n$$\np(t)=t^{3}-6t^{2}+5t+12\\qquad(0\\le t\\le 5)\n$$\n\nwhere $t$ is hours into the shift. Decide whether each statement is true or false.",
+      "context": "A machine's short-run output rate (units per hour) is\n\n$$\np(t)=t^{3}-6t^{2}+5t+12\n$$\n\nThe shift window is $0\\le t\\le 5$, with $t$ in hours.\n\nDecide whether each statement is true or false.",
       "statements": [
         "The product of the three real roots of $p(t)=0$ (allowing roots outside the shift window) is strictly negative.",
         "On the open interval between the two critical points, the output rate is strictly decreasing.",
@@ -921,16 +921,16 @@
     {
       "case_id": "MATH 10.MOCK.DECAY",
       "id": "MATH 10.MOCK.DECAY",
-      "title": "Lab note decay and endowment — parse prose into exp/log models",
+      "title": "Isotope decay and continuous endowment",
       "chapter": 10,
       "subsection": "10.3",
-      "context": "A laboratory note records two separate processes.\n\nFirst, a sealed isotope sample is tracked by mass. At the opening of the study the sample weighs eight hundred milligrams. Six years later the same sample weighs four hundred fifty milligrams. Staff treat the loss as continuous exponential decay: the mass at time $t$ years is the opening mass times $e$ raised to a constant negative rate times $t$.\n\nSecond, and independently, a continuously compounded endowment opens at five thousand euros. Five years later the endowment stands at six thousand five hundred euros. The same continuous-force model is used for the endowment’s growth.\n\nDecide whether each statement is true or false.",
+      "context": "An isotope sample decays continuously according to\n\n$$\nN(t)=N_{0}e^{-\\lambda t}\n$$\n\nAt $t=0$ the mass is $800\\ \\mathrm{mg}$, and at $t=6$ years it is $450\\ \\mathrm{mg}$.\n\nSeparately, a continuously compounded endowment follows\n\n$$\nS(t)=5000\\,e^{rt}\n$$\n\nIt opens at EUR $5000$ and stands at EUR $6500$ after $5$ years.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The isotope’s continuous decay rate (in absolute value) exceeds $0.09$ per year.",
-        "The isotope’s half-life is strictly shorter than seven years.",
-        "Twelve years after the opening weigh-in, the remaining isotope mass is still above two hundred sixty milligrams.",
-        "The endowment’s continuous force of interest exceeds $5.5\\%$ per year.",
-        "Starting from the opening balance, the endowment first reaches nine thousand euros at some time later than eleven years."
+        "The isotope’s continuous decay rate satisfies $\\lambda>0.09$.",
+        "The isotope’s half-life is strictly less than $7$ years.",
+        "After $12$ years the remaining mass is still above $260\\ \\mathrm{mg}$.",
+        "The endowment’s continuous force satisfies $r>0.055$.",
+        "The endowment first reaches EUR $9000$ at some time $t>11$ years."
       ],
       "answer_key": [
         true,
@@ -940,14 +940,14 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nParse as $N(t)=800 e^{-\\lambda t}$ with $N(6)=450$:\n\n$$\n\\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}\\approx 0.0959>0.09\n$$\n\nSo the statement is True.",
-        "**B.** → False\n\nHalf-life $\\ln 2/\\lambda\\approx 7.23$ is not shorter than $7$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$N(12)=800(450/800)^{2}=253.125$, which is not above $260$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$r=\\frac15\\ln(6500/5000)\\approx 0.0525$, which does not exceed $0.055$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$5000 e^{rt}=9000$ gives $t=\\ln 1.8/r\\approx 11.20>11$.\n\nSo the statement is True."
+        "**A.** → True\n\n$$\n\\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}\\approx 0.0959>0.09\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\nt_{1/2}=\\dfrac{\\ln 2}{\\lambda}\\approx 7.23\\nless 7\n$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\nN(12)=800\\left(\\dfrac{450}{800}\\right)^{2}=253.125\\ngtr 260\n$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$\nr=\\dfrac{1}{5}\\ln\\dfrac{6500}{5000}\\approx 0.0525\\ngtr 0.055\n$$\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\n5000\\,e^{rt}=9000\\qquad\\Rightarrow\\qquad t=\\dfrac{\\ln 1.8}{r}\\approx 11.20>11\n$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Translate the prose weigh-ins and endowment balances into exponential models, then adjudicate rate, half-life, and crossing-time thresholds."
+      "solution_overview": "Read $N(0)=800$, $N(6)=450$ into $N(t)=N_0 e^{-\\lambda t}$ and $S(0)=5000$, $S(5)=6500$ into $S(t)=5000 e^{rt}$, then adjudicate the five thresholds."
     },
     {
       "case_id": "MATH 11.MOCK.LOGDER",
@@ -955,7 +955,7 @@
       "title": "Long log-product-exponential derivative — max/min without formula spoon-feed",
       "chapter": 11,
       "subsection": "11.4",
-      "context": "For $x>0$ define\n\n$$\nf(x)=(x^{2}+4)\\ln(2x+1)\\,e^{-x}\n$$\n\nDecide whether each statement is true or false. The claims concern critical points and max/min behaviour; they do not hand you a finished derivative formula to tick.",
+      "context": "For $x>0$ define\n\n$$\nf(x)=(x^{2}+4)\\ln(2x+1)\\,e^{-x}\n$$\n\nThe claims concern critical points and max/min behaviour.\n\nDecide whether each statement is true or false.",
       "statements": [
         "The function $f$ has a critical point in the open interval $(0.5,1.5)$.",
         "That critical point in $(0.5,1.5)$ is a local minimum of $f$.",
