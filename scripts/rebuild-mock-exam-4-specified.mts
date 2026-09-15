@@ -1,7 +1,7 @@
 /**
- * Rebuild Mock Exam 4 — CVP econ + Glacier English + M3-style NEW math tasks.
+ * Rebuild Mock Exam 4 — CVP econ + Glacier English + NON-ISOMORPHIC math vs M1–M3.
  * Order: economics → english (Doomsday Glacier T.12) → math.
- * Math scenarios/numbers must differ from Mock 1/2/3 (do not rename M3 twins).
+ * Keep economics (CVP + bank) and English Glacier T.12 unchanged.
  *
  * Run: node scripts/run-rebuild-mock-4.mjs
  */
@@ -246,675 +246,95 @@ So the statement is False.`,
   };
 }
 
+/** Ch1 LOGIC — three knights/knaves with nested claims (NOT roster/XOR/size≥3). */
+function buildMathCh1Liars() {
+  const truthTable = `**Consistent type-assignments (truth-teller = T, liar = L).**
 
-/** Hard equation word problems — ages, frame, trip, log, coins (new numbers). */
-function buildMathCh4Word() {
-  const context = `Each letter is an independent equation word problem from a different family.
+Write $Q,R,S$ for Quinn, Remy, Sage. Encode the three spoken claims, then keep only the $0/1$ type rows that make every speaker’s sentence evaluate correctly under that speaker’s type.
 
-Ages, a framed print, a two-leg trip, a logarithmic equation, and a coin till appear in turn.
+How the table is built:
 
-Decide whether each statement is true or false.`;
+1. Treat “truth-teller” as bit $1$ and “liar” as bit $0$.
+2. Quinn’s sentence is true precisely when Remy is a liar.
+3. Remy’s sentence is true precisely when the number of truth-tellers equals $2$.
+4. Sage’s sentence is the biconditional “Quinn is a truth-teller $\\Leftrightarrow$ Sage is a liar.”
+5. A row survives only if each speaker’s sentence truth-value matches that speaker’s type.
+
+| $Q$ | $R$ | $S$ | Quinn’s sentence | Remy’s sentence | Sage’s sentence | Valid? |
+| --- | --- | --- | --- | --- | --- | --- |
+| T | L | L | true | false | true | yes |
+| L | T | T | false | true | false | yes |
+| T | T | L | false | false | false | no |
+| L | L | T | true | false | true | no |
+| T | L | T | true | false | false | no |
+| L | T | L | false | false | true | no |
+
+Exactly two consistent worlds survive: $(Q,R,S)=(T,L,L)$ and $(L,T,T)$.`;
+
+  const context = `Three analysts — Quinn, Remy, and Sage — each make one statement about the group. Every analyst is either a truth-teller (every sentence true) or a liar (every sentence false). Exactly one of those two types applies to each person.
+
+Quinn says: “Remy is a liar.”
+
+Remy says: “Exactly two of us are truth-tellers.”
+
+Sage says: “Quinn is a truth-teller if and only if I am a liar.”
+
+Decide whether each claim about the possible type-assignments is true or false.`;
 
   const statements = [
-    "A mentor is $18$ years older than an apprentice. In $4$ years the mentor will be three times as old as the apprentice will be then. A planner concludes that the apprentice is now $7$ years old.",
-    "A $24\\ \\mathrm{cm}$ by $16\\ \\mathrm{cm}$ print is mounted with a uniform frame so that the framed outer area is four times the print area. The frame width is then strictly less than $8\\ \\mathrm{cm}$.",
-    "A cyclist covers $15\\ \\mathrm{km}$ at $10\\ \\mathrm{km/h}$ and then $20\\ \\mathrm{km}$ at $15\\ \\mathrm{km/h}$. The whole trip therefore takes strictly less than $3$ hours.",
-    "Over $x>1$, the equation $\\log(x+2)+\\log(x-1)=\\log(3x+5)$ has a solution strictly smaller than $4$.",
-    "A till holds only $3$-euro and $7$-euro coins. There are $17$ coins worth $79$ euros in total. Then there are strictly more than eight coins of $7$ euros.",
+    "Quinn must be a truth-teller in every consistent type-assignment.",
+    "In every consistent type-assignment, Remy and Sage are the same type.",
+    "It is possible that all three analysts are liars.",
+    "If Sage is a truth-teller, then Quinn is a liar.",
+    "There are exactly two consistent type-assignments for the trio.",
   ];
 
-  // A: t+22=3(t+4) → t=5, not 7 → False
-  // B: (24+2w)(16+2w)=1536 → w=-10+√388 ≈ 9.70 > 8 → False
-  // C: 15/10+20/15=17/6≈2.833 < 3 → True
-  // D: (x+2)(x-1)=3x+5 → x²-2x-7=0 → x=1+2√2≈3.828 < 4 → True
-  // E: 3a+7b=79, a+b=17 → b=7, not >8 → False
-
-  const answer_key = [false, false, true, true, false];
+  const answer_key = [false, true, false, true, true];
 
   const tactical_explanations = [
     `**A.** → False
 
-Let $a$ be the apprentice’s present age in years. Then the mentor is now $a+18$.
+Assume Quinn is a liar and check whether a full consistent world still exists.
 
-In $4$ years the apprentice will be $a+4$ and the mentor will be $a+22$. The future-age claim becomes
-
-$$
-a+22=3(a+4)
-$$
+If Quinn is a liar, the sentence “Remy is a liar” is false, so Remy is a truth-teller. Remy’s sentence “exactly two truth-tellers” is therefore true, so the trio has exactly two truth-tellers. Sage’s biconditional “Quinn is a truth-teller $\\Leftrightarrow$ Sage is a liar” must then be false (because Sage must be the other truth-teller to reach exactly two). A false biconditional with Quinn a liar forces Sage to be a truth-teller:
 
 $$
-a+22=3a+12
+Q=\\mathrm{L},\\quad R=\\mathrm{T},\\quad S=\\mathrm{T}
 $$
 
-$$
-22-12=3a-a\\qquad\\Rightarrow\\qquad 10=2a\\qquad\\Rightarrow\\qquad a=5
-$$
-
-The apprentice is now $5$ years old, not $7$. The planner’s conclusion is wrong.
-
-So the statement is False.`,
-
-    `**B.** → False
-
-Let $w>0$ be the uniform frame width in centimetres. The outer rectangle measures $(24+2w)$ by $(16+2w)$. Its area is four times the print area $24\\cdot 16=384$:
-
-$$
-(24+2w)(16+2w)=4\\cdot 384=1536
-$$
-
-Expand:
-
-$$
-384+48w+32w+4w^{2}=1536
-$$
-
-$$
-4w^{2}+80w+384=1536
-$$
-
-$$
-4w^{2}+80w=1152\\qquad\\Rightarrow\\qquad w^{2}+20w-288=0
-$$
-
-Discriminant:
-
-$$
-\\Delta=20^{2}+4\\cdot 288=400+1152=1552=4\\cdot 388
-$$
-
-$$
-w=\\dfrac{-20\\pm\\sqrt{1552}}{2}=-10\\pm\\sqrt{388}
-$$
-
-The positive root is $w=-10+\\sqrt{388}$. Since $\\sqrt{361}=19$ and $\\sqrt{400}=20$, one has $\\sqrt{388}\\approx 19.70$, so
-
-$$
-w\\approx -10+19.70=9.70
-$$
-
-The claim says the width is strictly less than $8\\ \\mathrm{cm}$. But $9.70\\nless 8$.
-
-So the statement is False.`,
-
-    `**C.** → True
-
-Time equals distance divided by speed. First leg:
-
-$$
-t_{1}=\\dfrac{15}{10}=\\dfrac{3}{2}\\ \\mathrm{h}
-$$
-
-Second leg:
-
-$$
-t_{2}=\\dfrac{20}{15}=\\dfrac{4}{3}\\ \\mathrm{h}
-$$
-
-Total:
-
-$$
-t=\\dfrac{3}{2}+\\dfrac{4}{3}=\\dfrac{9}{6}+\\dfrac{8}{6}=\\dfrac{17}{6}\\approx 2.833\\ \\mathrm{h}
-$$
-
-$$
-\\dfrac{17}{6}<3=\\dfrac{18}{6}
-$$
-
-because $17<18$. The whole trip really does take strictly less than $3$ hours.
-
-So the statement is True.`,
-
-    `**D.** → True
-
-Domain: every log argument positive, together with $x>1$, forces $x>1$. On that domain
-
-$$
-\\log\\bigl((x+2)(x-1)\\bigr)=\\log(3x+5)
-$$
-
-$$
-(x+2)(x-1)=3x+5
-$$
-
-$$
-x^{2}+x-2=3x+5\\qquad\\Rightarrow\\qquad x^{2}-2x-7=0
-$$
-
-$$
-x=\\dfrac{2\\pm\\sqrt{4+28}}{2}=1\\pm\\sqrt{8}=1\\pm 2\\sqrt{2}
-$$
-
-Only the positive root can lie in $x>1$:
-
-$$
-x=1+2\\sqrt{2}\\approx 1+2\\cdot 1.414=3.828
-$$
-
-$$
-3.828<4
-$$
-
-So the statement is True.`,
-
-    `**E.** → False
-
-Let $a$ be the number of $3$-euro coins and $b$ the number of $7$-euro coins:
-
-$$
-a+b=17,\\qquad 3a+7b=79
-$$
-
-Substitute $a=17-b$:
-
-$$
-3(17-b)+7b=79\\qquad\\Rightarrow\\qquad 51+4b=79\\qquad\\Rightarrow\\qquad 4b=28\\qquad\\Rightarrow\\qquad b=7
-$$
-
-There are exactly seven coins of $7$ euros. The claim asks for strictly more than eight:
-
-$$
-7\\ngtr 8
-$$
-
-So the statement is False.`,
-  ];
-
-  return {
-    case_id: "MATH 4.MOCK.WORD",
-    id: "MATH 4.MOCK.WORD",
-    title: "Hard equation word problems — ages, frame, motion, log, coins",
-    chapter: 4,
-    subsection: "4.5",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview:
-      "Set up and solve five independent equation stories (linear ages, quadratic frame, motion times, log product, coin system), then accept or reject the claimed conclusion.",
-  };
-}
-
-
-/** Hard inequalities — radical, double absolute, rational, mixed — teacher-step explanations. */
-function buildMathCh6HardIneq() {
-  const context = `Each letter is an independent hard inequality.
-
-A radical inequality, a two-absolute sum, a rational inequality with cancellation, a comparison of two absolute values, and a mixed absolute–radical system appear in turn.
-
-Decide whether each statement is true or false.`;
-
-  const statements = [
-    "The solution set of $\\sqrt{2x-1}\\le x-2$ is exactly $[2,+\\infty)$.",
-    "The solution set of $|x-3|+|x+1|<8$ is exactly $(-3,5)$.",
-    "After cancelling a common factor, the inequality $\\dfrac{x^{2}-16}{x^{2}-x-12}\\le 0$ has solution set exactly $[-4,-3)$.",
-    "Every number in the open interval $(1,2)$ satisfies $|3x-1|\\ge |x+4|$.",
-    "The system $|x+2|\\le 4$ and $\\sqrt{x+3}\\ge 2$ has exactly two integer solutions.",
-  ];
-
-  const answer_key = [false, true, true, false, true];
-
-  const tactical_explanations = [
-    `**A.** → False
-
-Domain of the square root:
-
-$$
-2x-1\\ge 0\\qquad\\Rightarrow\\qquad x\\ge \\dfrac{1}{2}
-$$
-
-A square root is $\\ge 0$, so the right-hand side must be nonnegative:
-
-$$
-x-2\\ge 0\\qquad\\Rightarrow\\qquad x\\ge 2
-$$
-
-On $x\\ge 2$ squaring preserves the inequality:
-
-$$
-2x-1\\le (x-2)^{2}=x^{2}-4x+4
-$$
-
-$$
-0\\le x^{2}-6x+5=(x-1)(x-5)
-$$
-
-So $x\\le 1$ or $x\\ge 5$. Intersect with $x\\ge 2$:
-
-$$
-x\\in[5,+\\infty)
-$$
-
-The claim says $[2,+\\infty)$. Take $x=3\\ge 2$:
-
-$$
-\\sqrt{5}\\approx 2.24,\\qquad 3-2=1
-$$
-
-$$
-2.24\\nless 1
-$$
-
-so $x=3$ is not a solution. The claimed set is wrong.
+Count of truth-tellers: $2$. Quinn’s false sentence, Remy’s true sentence, and Sage’s false biconditional all match their types. So a Quinn-liar world exists, and the claim fails.
 
 So the statement is False.`,
 
     `**B.** → True
 
-The kinks are at $x=-1$ and $x=3$. Split into three pieces.
-
-**Piece 1:** $x\\ge 3$. Then
-
-$$
-(x-3)+(x+1)=2x-2<8\\qquad\\Rightarrow\\qquad x<5
-$$
-
-so $x\\in[3,5)$.
-
-**Piece 2:** $-1\\le x\\le 3$. Then
-
-$$
-(3-x)+(x+1)=4<8
-$$
-
-always, so the whole $[-1,3]$ survives.
-
-**Piece 3:** $x<-1$. Then
-
-$$
-(3-x)+(-x-1)=2-2x<8\\qquad\\Rightarrow\\qquad x>-3
-$$
-
-so $x\\in(-3,-1)$.
-
-Unite:
-
-$$
-(-3,-1)\\cup[-1,3]\\cup[3,5)=(-3,5)
-$$
-
-That matches the claim exactly.
+The overview’s two survivors are $(T,L,L)$ and $(L,T,T)$. In the first, Remy and Sage are both liars; in the second, both are truth-tellers. No consistent row separates them.
 
 So the statement is True.`,
 
-    `**C.** → True
+    `**C.** → False
 
-Factor:
-
-$$
-\\dfrac{x^{2}-16}{x^{2}-x-12}=\\dfrac{(x-4)(x+4)}{(x-4)(x+3)}
-$$
-
-Cancel $x-4$ where $x\\ne 4$ (and note $x=-3$ is a pole). For $x\\ne 4$,
-
-$$
-\\dfrac{x+4}{x+3}\\le 0
-$$
-
-which holds on $[-4,-3)$. The excluded point $x=4$ is not in that interval, so the solution set is exactly $[-4,-3)$.
-
-So the statement is True.`,
-
-    `**D.** → False
-
-Square both sides (both nonnegative):
-
-$$
-(3x-1)^{2}\\ge (x+4)^{2}
-$$
-
-$$
-9x^{2}-6x+1\\ge x^{2}+8x+16
-$$
-
-$$
-8x^{2}-14x-15\\ge 0
-$$
-
-Roots of $8x^{2}-14x-15=0$:
-
-$$
-\\Delta=196+480=676=26^{2},\\qquad x=\\dfrac{14\\pm 26}{16}
-$$
-
-$$
-x=\\dfrac{40}{16}=\\dfrac{5}{2},\\qquad x=\\dfrac{-12}{16}=-\\dfrac{3}{4}
-$$
-
-The parabola opens upwards, so it is nonnegative outside the roots:
-
-$$
-x\\in\\Bigl(-\\infty,-\\dfrac{3}{4}\\Bigr]\\cup\\Bigl[\\dfrac{5}{2},+\\infty\\Bigr)
-$$
-
-The interval $(1,2)$ lies strictly between those roots, so no point of $(1,2)$ satisfies the inequality.
+If all three are liars, Remy’s sentence “exactly two truth-tellers” is false, which matches Remy being a liar, but Quinn’s sentence “Remy is a liar” would be true — contradicting Quinn being a liar. The all-liar row is already excluded in the overview table.
 
 So the statement is False.`,
-
-    `**E.** → True
-
-First inequality:
-
-$$
-|x+2|\\le 4\\qquad\\Rightarrow\\qquad -6\\le x\\le 2
-$$
-
-Second: $\\sqrt{x+3}\\ge 2$ with domain $x\\ge -3$ forces
-
-$$
-x+3\\ge 4\\qquad\\Rightarrow\\qquad x\\ge 1
-$$
-
-Intersect:
-
-$$
-x\\in[1,2]
-$$
-
-The integers in that closed interval are exactly $1$ and $2$ — two of them.
-
-So the statement is True.`,
-  ];
-
-  return {
-    case_id: "MATH 6.MOCK.HARDINEQ",
-    id: "MATH 6.MOCK.HARDINEQ",
-    title: "Hard inequalities — radical, double absolute, rational, mixed system",
-    chapter: 6,
-    subsection: "6.5",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview:
-      "For each letter: fix domain, expand or square carefully, read a sign chart or piece-wise absolute formula, then compare the resulting set with the claim.",
-  };
-}
-
-
-/** Hard paint mixture + break-even — euros kept outside KaTeX math. */
-function buildMathCh5Alloy() {
-  const context = `A studio blends pure pigment concentrate ($100\\%$ pigment) with a tinting base that is $20\\%$ pigment by mass.
-
-It must produce exactly $80\\ \\mathrm{kg}$ of a mix that is $50\\%$ pigment.
-
-Concentrate costs EUR $12$ per kilogram and base costs EUR $3$ per kilogram.
-
-The finished mix is sold at EUR $7.50$ per kilogram.
-
-Separately, a workshop product has fixed costs EUR $4800$, variable cost EUR $8$ per unit, and selling price EUR $14$ per unit.`;
-
-  const statements = [
-    "In the unique blend that meets the mass and pigment-content targets, more than $45\\ \\mathrm{kg}$ of tinting base must be used.",
-    "The total material cost of that $80\\ \\mathrm{kg}$ blend is less than EUR 500.",
-    "If the entire $80\\ \\mathrm{kg}$ blend is sold at the stated price, the profit on materials alone exceeds EUR 80.",
-    "The workshop product’s break-even output is fewer than $700$ units.",
-    "If fixed costs rise by $25\\%$ and the contribution margin per unit is unchanged, break-even output rises by exactly $25\\%$.",
-  ];
-
-  const answer_key = [true, false, true, false, true];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-Let $x$ be kilograms of concentrate and $y$ kilograms of base:
-
-$$
-x+y=80
-$$
-
-Pigment balance ($50\\%$ of $80$ is $40$):
-
-$$
-x+0.2y=40
-$$
-
-Substitute $x=80-y$:
-
-$$
-(80-y)+0.2y=40\\qquad\\Rightarrow\\qquad 80-0.8y=40\\qquad\\Rightarrow\\qquad y=50
-$$
-
-Then $x=30$. Base mass is $50\\ \\mathrm{kg}$:
-
-$$
-50>45
-$$
-
-So the statement is True.`,
-
-    `**B.** → False
-
-Material cost uses concentrate at EUR $12$ and base at EUR $3$:
-
-$$
-\\text{cost}=30\\cdot 12+50\\cdot 3=360+150=510
-$$
-
-The claim says the cost is less than EUR $500$. But
-
-$$
-510\\nless 500
-$$
-
-So the statement is False.`,
-
-    `**C.** → True
-
-Revenue from selling all $80\\ \\mathrm{kg}$ at EUR $7.50$ per kg:
-
-$$
-\\text{revenue}=80\\cdot 7.50=600
-$$
-
-Profit on materials alone:
-
-$$
-600-510=90>80
-$$
-
-So the statement is True.`,
-
-    `**D.** → False
-
-Contribution margin per unit:
-
-$$
-14-8=6
-$$
-
-Break-even:
-
-$$
-Q_{\\mathrm{BE}}=\\dfrac{4800}{6}=800
-$$
-
-The claim says fewer than $700$ units:
-
-$$
-800\\nless 700
-$$
-
-So the statement is False.`,
-
-    `**E.** → True
-
-Write $Q=F/m$. After a $25\\%$ rise in fixed cost,
-
-$$
-Q'=\\dfrac{1.25F}{m}=1.25\\,Q
-$$
-
-That is exactly a $25\\%$ increase. Numerically $Q'=1.25\\cdot 800=1000$.
-
-So the statement is True.`,
-  ];
-
-  return {
-    case_id: "MATH 5.MOCK.ALLOY",
-    id: "MATH 5.MOCK.ALLOY",
-    title: "Paint pigment blend and a break-even shift",
-    chapter: 5,
-    subsection: "5.5",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview:
-      "Solve the pigment blend, price materials using euro amounts written outside math mode, then compare break-even before and after a proportional fixed-cost shock.",
-  };
-}
-
-
-/** Real-case logic — overview owns the truth table; each letter has its own teacher solve. */
-function buildMathCh1Crew() {
-  const truthTable = `**Truth table of valid night-ferry crews.**
-
-Write $K,L,M,N,O,P$ for Kai, Lea, Mo, Noa, Oli, Paz. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $K+L+M+N+O+P$.
-
-How the table is built:
-
-1. Start from candidate bits and apply $K\\Leftrightarrow L$ (Kai and Lea must match).
-2. Enforce $M\\Rightarrow N$ and the exclusive-or on $(N,O)$.
-3. Enforce $O\\Rightarrow\\neg P$, $P\\lor K$, and $L\\Rightarrow\\neg M$.
-4. Drop any row whose size is strictly less than $3$.
-5. Keep only the surviving rows — those are the valid crews.
-
-| $K$ | $L$ | $M$ | $N$ | $O$ | $P$ | Size | Valid? |
-| --- | --- | --- | --- | --- | --- | ---: | --- |
-| 1 | 1 | 0 | 1 | 0 | 0 | 3 | yes |
-| 1 | 1 | 0 | 1 | 0 | 1 | 4 | yes |
-| 1 | 1 | 0 | 0 | 1 | 0 | 3 | yes |
-| 0 | 0 | 1 | 1 | 0 | 1 | 3 | yes |
-| 1 | 1 | 1 | 1 | 0 | 0 | — | no ($L\\Rightarrow\\neg M$ fails) |
-| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |
-| 0 | 0 | 0 | 0 | 1 | 1 | — | no ($O\\Rightarrow\\neg P$ fails) |
-| 1 | 1 | 0 | 1 | 1 | 0 | — | no (exclusive-or on $N,O$ fails) |
-
-Exactly four valid crews appear: $\\{K,L,N\\}$, $\\{K,L,N,P\\}$, $\\{K,L,O\\}$, and $\\{M,N,P\\}$.`;
-
-  const context = `Six sailors — Kai, Lea, Mo, Noa, Oli, and Paz — are considered for a night-ferry bridge crew.
-
-Kai is assigned if and only if Lea is assigned.
-
-If Mo is assigned, then Noa is assigned.
-
-Exactly one of Noa or Oli is assigned (never both, never neither).
-
-If Oli is assigned, then Paz is not assigned.
-
-At least one of Paz or Kai is assigned.
-
-Lea is assigned only if Mo is not assigned.
-
-At least three of the six sailors are assigned.`;
-
-  const statements = [
-    "Kai must appear on every crew that obeys all seven rules.",
-    "It is possible to build a valid crew that includes both Mo and Oli.",
-    "If Lea is assigned, then Mo cannot be assigned.",
-    "There is exactly one valid crew of size three that does not include Kai.",
-    "It is possible for all six sailors to be assigned at once.",
-  ];
-
-  const answer_key = [false, false, true, true, false];
-
-  const tactical_explanations = [
-    `**A.** → False
-
-The claim says Kai is on every valid crew. Try to build a valid crew with Kai out.
-
-Assume $K=0$. Rule (1) forces Lea out as well:
-
-$$
-K=0\\qquad\\Rightarrow\\qquad L=0
-$$
-
-Rule (5) is $P\\lor K$. With Kai out, Paz must enter:
-
-$$
-P=1
-$$
-
-Rule (6) is idle because Lea is out. Rule (3) forces exactly one of Noa or Oli.
-
-**Case Noa in, Oli out** ($N=1$, $O=0$). Rule (4) is idle. Rule (2) allows Mo in. Taking $M=1$ gives
-
-$$
-\\{M,N,P\\}
-$$
-
-Size $3$, so rule (7) holds. Every rule is satisfied, and Kai is absent.
-
-**Case Oli in, Noa out** ($N=0$, $O=1$). Rule (4) forces $P=0$, which contradicts $P=1$ already required by rule (5). This branch dies.
-
-So Kai-out is possible via $\\{M,N,P\\}$. That roster is a concrete counter-example.
-
-So the statement is False.`,
-
-    `**B.** → False
-
-Force $M=1$ and $O=1$ together and chase the consequences.
-
-Rule (2) is $M\\Rightarrow N$, so Noa must enter:
-
-$$
-M=1\\qquad\\Rightarrow\\qquad N=1
-$$
-
-Rule (3) is the exclusive-or on Noa and Oli. Putting both $N=1$ and $O=1$ immediately breaks that exclusive-or.
-
-No repair of the other bits can save the row. A valid crew cannot contain both Mo and Oli.
-
-So the statement is False.`,
-
-    `**C.** → True
-
-The stem says “Lea is assigned only if Mo is not assigned.” In symbols that is
-
-$$
-L\\Rightarrow\\neg M
-$$
-
-which is exactly the claim: if Lea is assigned, then Mo cannot be assigned.
-
-Check against the valid crews from the overview. Every crew with Lea ($\\{K,L,N\\}$, $\\{K,L,N,P\\}$, $\\{K,L,O\\}$) has $M=0$. The remaining valid crew $\\{M,N,P\\}$ has $L=0$, so the implication is idle there. No valid row ever has $L=M=1$ together.
-
-So the statement is True.`,
 
     `**D.** → True
 
-From the overview there are four valid crews:
-
-$$
-\\{K,L,N\\}\\ (\\text{size }3),\\quad \\{K,L,N,P\\}\\ (\\text{size }4),\\quad \\{K,L,O\\}\\ (\\text{size }3),\\quad \\{M,N,P\\}\\ (\\text{size }3)
-$$
-
-Among the size-three crews, only $\\{M,N,P\\}$ excludes Kai. The other two size-three survivors both contain Kai. Therefore there is exactly one valid size-three crew without Kai.
+Sage is a truth-teller only in the second survivor $(L,T,T)$. There Quinn is a liar, so the implication holds in every world where its hypothesis is true. In the other survivor Sage is a liar, so the implication is idle.
 
 So the statement is True.`,
 
-    `**E.** → False
+    `**E.** → True
 
-A crew of all six would require
+The overview lists exactly two survivors: $(T,L,L)$ and $(L,T,T)$. Exhausting the eight type triples leaves no third consistent row.
 
-$$
-K=L=M=N=O=P=1
-$$
-
-Rule (3) says exactly one of Noa or Oli is assigned. Putting both $N=1$ and $O=1$ breaks that exclusive-or at once.
-
-Even dropping one person cannot rescue a six-person roster. The overview’s largest valid size is $4$. Size six never appears.
-
-So the statement is False.`,
+So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 1.MOCK.CREW",
-    id: "MATH 1.MOCK.CREW",
-    title: "Night-ferry bridge crew — six sailors and seven rules",
+    case_id: "MATH 1.MOCK.LIARS",
+    id: "MATH 1.MOCK.LIARS",
+    title: "Three analysts — truth-tellers, liars, and nested claims",
     chapter: 1,
     subsection: "1.4",
     context,
@@ -924,499 +344,742 @@ So the statement is False.`,
     difficulty_level: "5/5",
     solution_overview: `**Part 1: Setup.**
 
-Write $K,L,M,N,O,P$ for Kai, Lea, Mo, Noa, Oli, Paz. The stem is
+Write $Q,R,S$ for the types of Quinn, Remy, Sage. The spoken claims are
 
 $$
-(1)\\ K\\Leftrightarrow L,\\qquad (2)\\ M\\Rightarrow N,\\qquad (3)\\ (N\\land\\neg O)\\lor(\\neg N\\land O),
+(1)\\ \\neg R,\\qquad (2)\\ \\#\\{T\\}=2,\\qquad (3)\\ Q\\Leftrightarrow\\neg S.
 $$
 
-$$
-(4)\\ O\\Rightarrow\\neg P,\\qquad (5)\\ P\\lor K,\\qquad (6)\\ L\\Rightarrow\\neg M,
-$$
+A truth-teller’s claim must evaluate true; a liar’s claim must evaluate false.
 
-and (7) size at least three.
+**Part 2: Shared forcing.**
 
-"$P$ only if $Q$" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.
+Case Quinn truth-teller: Remy is a liar, so “exactly two truth-tellers” is false. Sage’s biconditional is true and forces Sage to be a liar. The unique completion is $(T,L,L)$.
 
-**Part 2: Shared forcing (used by every letter).**
-
-Apply the biconditional and exclusive-or first, then the implications, then the size filter.
-
-- If Kai is in, Lea is in and Mo is out; the exclusive-or then splits into Noa-in / Oli-out (Paz free) or Oli-in / Noa-out (Paz out). Survivors include $\\{K,L,N\\}$, $\\{K,L,N,P\\}$, and $\\{K,L,O\\}$.
-- If Kai is out, Lea is out and Paz is in; Mo-in with Noa-in / Oli-out gives the fourth survivor $\\{M,N,P\\}$.
-- Mo-in with Oli-in always collapses on the exclusive-or (see letter B).
-
-Only four rows survive.
+Case Quinn liar: Remy is a truth-teller and “exactly two truth-tellers” holds, so Sage is the other truth-teller. The unique completion is $(L,T,T)$.
 
 ${truthTable}`,
   };
 }
 
+/** Ch2 ALGEBRA — exam-style identities / abs / binomial / completing-the-square (NOT nested-slot template). */
+function buildMathCh2Idents() {
+  const context = `Each letter is an independent elementary-algebra identity or equation claim in exam style.
 
-/** Multi-step algebra — threshold claims; structured stem. */
-function buildMathCh2Thresh() {
-  const context = `Each claim below is an independent elementary-algebra check.
+Factorisation and cubic identities, absolute-value equations, completing the square, binomial coefficients, and reciprocal identities appear in turn.
 
-Nested fractions, a $2\\times 2$ linear system, a polynomial product, a rational equation, and a radical equation appear in turn.
-
-Decide whether each statement is true or false. The claims give thresholds, not boxed final values.`;
+Decide whether each statement is true or false.`;
 
   const statements = [
-    "For $x=3$, the nested quotient $\\dfrac{\\frac{4}{x}-\\frac{1}{x-1}}{\\frac{2}{x}+\\frac{1}{x-1}}$ is strictly smaller than $0.5$.",
-    "The unique solution of the system $4a+3b=10$, $5a-2b=7$ satisfies $a+b>2$.",
-    "The value of $\\dfrac{(x^{3}-2x+4)(2x+1)}{x^{2}+x-2}$ at $x=2$ is strictly larger than $10$.",
-    "Over the reals with $x\\ne\\pm 1$, every solution of $\\dfrac{2}{x-1}-\\dfrac{1}{x+1}=\\dfrac{3}{x^{2}-1}$ is strictly smaller than $0$.",
-    "The positive solution of $\\sqrt{3x+1}-\\sqrt{x}=1$ is strictly larger than $3$.",
+    "If $a,b,c$ are nonzero reals with $a+b+c=0$, then $a^{3}+b^{3}+c^{3}=3abc$.",
+    "The equation $|2x-1|=|x+4|$ has a unique real solution, and that solution is strictly greater than $2$.",
+    "For every real $x$, the value of $x^{2}-6x+13$ is at least $4$.",
+    "In the expansion of $(1+2x)^{5}$, the coefficient of $x^{3}$ is strictly larger than $70$.",
+    "For every real $t\\neq 0$, $\\left(t+\\dfrac{1}{t}\\right)^{2}-\\left(t-\\dfrac{1}{t}\\right)^{2}=4$.",
   ];
 
-  const answer_key = [false, true, false, false, false];
+  // A: classic identity when a+b+c=0 → True
+  // B: solutions x=5 and x=-1; not unique → False
+  // C: (x-3)^2+4 ≥ 4 → True
+  // D: C(5,3)*2^3 = 10*8 = 80 > 70 → True
+  // E: difference of squares = 4*(t)(1/t)*... wait: (u^2-v^2)=(u-v)(u+v) with u=t+1/t, v=t-1/t → (u-v)=2/t, (u+v)=2t → product 4. True
+  const answer_key = [true, false, true, true, true];
 
   const tactical_explanations = [
-    `**A.** → False
+    `**A.** → True
 
-Substitute $x=3$.
-
-Numerator:
+The cubic sum identity factors as
 
 $$
-\\dfrac{4}{3}-\\dfrac{1}{2}=\\dfrac{8-3}{6}=\\dfrac{5}{6}
+a^{3}+b^{3}+c^{3}-3abc=(a+b+c)(a^{2}+b^{2}+c^{2}-ab-bc-ca)
 $$
 
-Denominator:
+Under the hypothesis $a+b+c=0$, the right-hand factor is multiplied by zero, so
 
 $$
-\\dfrac{2}{3}+\\dfrac{1}{2}=\\dfrac{4+3}{6}=\\dfrac{7}{6}
+a^{3}+b^{3}+c^{3}-3abc=0
 $$
 
-Quotient:
+Hence $a^{3}+b^{3}+c^{3}=3abc$ whenever $a+b+c=0$ (the nonzero hypothesis only excludes division pathologies elsewhere; it is not needed for this identity).
+
+So the statement is True.`,
+
+    `**B.** → False
+
+Drop the absolute values by cases:
 
 $$
-\\dfrac{5/6}{7/6}=\\dfrac{5}{7}\\approx 0.714
+2x-1=x+4\\quad\\text{or}\\quad 2x-1=-(x+4)
 $$
 
-$$
-0.714\\nless 0.5
-$$
+The first branch gives $x=5$. The second gives $3x=-3$, so $x=-1$. Both satisfy the original absolute-value equation, so there are two real solutions. The claim’s “unique real solution” already fails (even though $5>2$).
 
 So the statement is False.`,
 
-    `**B.** → True
+    `**C.** → True
 
-From $5a-2b=7$,
-
-$$
-b=\\dfrac{5a-7}{2}
-$$
-
-Substitute into $4a+3b=10$:
+Complete the square:
 
 $$
-4a+3\\cdot\\dfrac{5a-7}{2}=10
+x^{2}-6x+13=(x-3)^{2}+4
 $$
 
-Multiply through by $2$:
+Since $(x-3)^{2}\\ge 0$ for every real $x$,
 
 $$
-8a+3(5a-7)=20\\qquad\\Rightarrow\\qquad 8a+15a-21=20\\qquad\\Rightarrow\\qquad 23a=41
-$$
-
-$$
-a=\\dfrac{41}{23},\\qquad b=\\dfrac{5\\cdot\\frac{41}{23}-7}{2}=\\dfrac{\\frac{205-161}{23}}{2}=\\dfrac{44}{46}=\\dfrac{22}{23}
-$$
-
-Sum:
-
-$$
-a+b=\\dfrac{63}{23}\\approx 2.739>2
+(x-3)^{2}+4\\ge 4
 $$
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**D.** → True
 
-At $x=2$:
-
-$$
-x^{3}-2x+4=8-4+4=8,\\qquad 2x+1=5
-$$
-
-Numerator product $8\\cdot 5=40$. Denominator:
+The binomial theorem gives
 
 $$
-x^{2}+x-2=4+2-2=4
+(1+2x)^{5}=\\sum_{k=0}^{5}\\binom{5}{k}1^{5-k}(2x)^{k}
 $$
 
-$$
-\\dfrac{40}{4}=10
-$$
-
-The claim asks for a value strictly larger than $10$:
+The $x^{3}$ term is the $k=3$ summand:
 
 $$
-10\\ngtr 10
-$$
-
-So the statement is False.`,
-
-    `**D.** → False
-
-Combine the left-hand side over $x^{2}-1$:
-
-$$
-\\dfrac{2}{x-1}-\\dfrac{1}{x+1}=\\dfrac{2(x+1)-(x-1)}{x^{2}-1}=\\dfrac{x+3}{x^{2}-1}
-$$
-
-The equation becomes
-
-$$
-\\dfrac{x+3}{x^{2}-1}=\\dfrac{3}{x^{2}-1}\\qquad(x\\ne\\pm 1)
+\\binom{5}{3}\\cdot 2^{3}=10\\cdot 8=80
 $$
 
 $$
-x+3=3\\qquad\\Rightarrow\\qquad x=0
+80>70
 $$
 
-The unique admissible root is $x=0$, which is not strictly smaller than $0$.
+So the statement is True.`,
 
-So the statement is False.`,
+    `**E.** → True
 
-    `**E.** → False
-
-Isolate one radical:
+Set $u=t+\\dfrac{1}{t}$ and $v=t-\\dfrac{1}{t}$. Then
 
 $$
-\\sqrt{3x+1}=1+\\sqrt{x}
-$$
-
-Both sides are nonnegative for $x\\ge 0$. Square:
-
-$$
-3x+1=1+2\\sqrt{x}+x
+u^{2}-v^{2}=(u-v)(u+v)
 $$
 
 $$
-2x=2\\sqrt{x}\\qquad\\Rightarrow\\qquad x=\\sqrt{x}
-$$
-
-Let $u=\\sqrt{x}\\ge 0$. Then $u^{2}=u$, so $u=0$ or $u=1$, hence $x=0$ or $x=1$. The positive solution is $x=1$. Check:
-
-$$
-\\sqrt{4}-\\sqrt{1}=2-1=1
+u-v=\\dfrac{2}{t},\\qquad u+v=2t
 $$
 
 $$
-1\\ngtr 3
+(u-v)(u+v)=\\dfrac{2}{t}\\cdot 2t=4
 $$
 
-So the statement is False.`,
+So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 2.MOCK.THRESH",
-    id: "MATH 2.MOCK.THRESH",
-    title: "Multi-step elementary algebra with threshold claims",
+    case_id: "MATH 2.MOCK.IDENTS",
+    id: "MATH 2.MOCK.IDENTS",
+    title: "Exam-style algebra identities and absolute-value claims",
     chapter: 2,
-    subsection: "2.4",
+    subsection: "2.3",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Compute each nested/system/radical value fully, then accept or reject a threshold — the statements never reveal the finished number.",
+      "Treat each letter as its own short algebra check: cubic sum identity, two-branch absolute values, completing the square, one binomial coefficient, and a reciprocal difference of squares.",
   };
 }
 
-
-/** Numeric parabola — harder thresholds; teacher-step explanations. */
-function buildMathCh7Para() {
-  const context = `A parabola is given by
-
-$$
-g(x)=2x^{2}-8x-10
-$$
-
-Lines through its vertex form the family
-
-$$
-f_{m}(x)=m(x-2)-18
-$$
+/** Ch4 EQUATIONS — five different families (NOT ages/frame/trip/log/coins). */
+function buildMathCh4MixEq() {
+  const context = `Each letter is an independent equation word problem, but the five families are deliberately different: a two-pipe fill with an interruption, a two-digit number, successive percentage changes, a rectangle with Pythagoras, and an exponential equation.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The product of the two roots of $g(x)=0$ is strictly smaller than $-4$.",
-    "Completing the square shows that the minimum value of $g$ is strictly less than $-15$.",
-    "When $m=6$, the second intersection (other than the vertex) lies strictly between $x=4$ and $x=6$.",
-    "There is more than one real slope $m$ for which $y=f_{m}$ meets $y=g$ at exactly one point.",
-    "When $m=-10$, the distance between the two intersection $x$-coordinates exceeds $4$.",
+    "Pipe A alone fills a tank in $8$ hours and pipe B alone fills it in $24$ hours. They run together for $3$ hours, then A is shut off and B finishes alone. The total elapsed time from the start until the tank is full is strictly less than $14$ hours.",
+    "A two-digit number has digit sum $12$, and the number exceeds its reverse by $27$. The number itself is strictly greater than $80$.",
+    "A catalogue price is raised by $25\\%$ and later reduced by $20\\%$ of the new price. The final price equals the original catalogue price.",
+    "A rectangle has perimeter $40$ and area $96$. Its diagonal is strictly greater than $15$.",
+    "Every real solution of $5^{x}=25^{x-1}$ is strictly greater than $1$.",
   ];
+
+  // A: rates 1/8+1/24=1/6; 3h → 1/2; B alone 12h; total 15 ≱ 14 → False (claim <14)
+  // B: a+b=12, 9(a-b)=27 → a-b=3 → a=7.5 impossible? 9(a-b)=27 → a-b=3, a+b=12 → a=7.5 not digit.
+  // Wait: number - reverse = 9(a-b)=27 → a-b=3. a+b=12 → a=7.5 — not integer!
+  // Fix: digit sum 11, difference 27: a-b=3, a+b=11 → a=7,b=4. Number 74. Claim >80 → False.
+  // Or digit sum 12, difference 18: a-b=2, a=7,b=5 → 75. Claim >80 False.
+  // User-facing statement says sum 12 and exceeds by 27 — that's impossible for digits. Change to exceeds by 18.
+
+  statements[1] =
+    "A two-digit number has digit sum $12$, and the number exceeds its reverse by $18$. The number itself is strictly greater than $80$.";
+
+  // C: 1.25*0.8=1 → True (exactly recovers)
+  // D: L+W=20, LW=96 → 12 and 8; diag sqrt(144+64)=sqrt(208)≈14.42 ≯ 15 → False
+  // E: 5^x = 5^{2(x-1)} → x=2(x-1) → x=2 >1 → True (unique)
+
+  const answer_key = [false, false, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → False
+
+A’s rate is $\\dfrac{1}{8}$ tank per hour and B’s rate is $\\dfrac{1}{24}$, so together
+
+$$
+\\dfrac{1}{8}+\\dfrac{1}{24}=\\dfrac{3+1}{24}=\\dfrac{1}{6}
+$$
+
+In the first $3$ hours they fill
+
+$$
+3\\cdot\\dfrac{1}{6}=\\dfrac{1}{2}
+$$
+
+of the tank. The remaining half is finished by B alone:
+
+$$
+t=\\dfrac{1/2}{1/24}=12
+$$
+
+hours. Total elapsed time:
+
+$$
+3+12=15
+$$
+
+The claim says the total is strictly less than $14$, but $15\\nless 14$.
+
+So the statement is False.`,
+
+    `**B.** → False
+
+Write the number as $10a+b$ with digits $a,b$. The stem gives
+
+$$
+a+b=12,\\qquad (10a+b)-(10b+a)=18
+$$
+
+The second equation simplifies to
+
+$$
+9(a-b)=18\\qquad\\Rightarrow\\qquad a-b=2
+$$
+
+Solving with $a+b=12$ yields $a=7$, $b=5$, so the number is $75$. The claim says it is strictly greater than $80$, but $75\\ngtr 80$.
+
+So the statement is False.`,
+
+    `**C.** → True
+
+Start from catalogue price $P$. After a $25\\%$ rise the price is $1.25P$. A subsequent $20\\%$ reduction of the new price multiplies by $0.8$:
+
+$$
+1.25P\\cdot 0.8=P
+$$
+
+The final price equals the original catalogue price.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+Perimeter $40$ means $2(L+W)=40$, so $L+W=20$. With area $LW=96$, the side lengths are the roots of
+
+$$
+t^{2}-20t+96=0\\qquad\\Rightarrow\\qquad (t-12)(t-8)=0
+$$
+
+So the sides are $12$ and $8$. The diagonal is
+
+$$
+\\sqrt{12^{2}+8^{2}}=\\sqrt{144+64}=\\sqrt{208}=4\\sqrt{13}
+$$
+
+Since $15^{2}=225$ and $208<225$, one has $4\\sqrt{13}<15$. The claim “strictly greater than $15$” fails.
+
+So the statement is False.`,
+
+    `**E.** → True
+
+Rewrite $25=5^{2}$:
+
+$$
+5^{x}=(5^{2})^{x-1}=5^{2x-2}
+$$
+
+Equating exponents (base $5>1$):
+
+$$
+x=2x-2\\qquad\\Rightarrow\\qquad x=2
+$$
+
+The unique real solution is $x=2$, and $2>1$.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 4.MOCK.MIXEQ",
+    id: "MATH 4.MOCK.MIXEQ",
+    title: "Mixed equation families — pipes, digits, percentages, rectangle, exponential",
+    chapter: 4,
+    subsection: "4.2",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Five independent equation checks: interrupted two-pipe fill, two-digit linear system, successive percent factors, rectangle diagonal via Pythagoras, and an exponential with matching bases.",
+  };
+}
+
+/** Ch5 — 3-equation nutrition mix (NOT pigment/copper blend + break-even twin; NOT Mira/Leo). */
+function buildMathCh5Rates() {
+  const context = `A canteen prepares one lunch mix from three ingredients — rice ($r$ portions), beans ($b$ portions), and tofu ($t$ portions). The mix must hit three nutrient targets exactly:
+
+$$
+\\begin{aligned}
+3r+b+2t&=14\\quad\\text{(protein units)}\\\\
+r+4b+t&=13\\quad\\text{(carbohydrate units)}\\\\
+2r+b+3t&=15\\quad\\text{(fat units)}
+\\end{aligned}
+$$
+
+Portions are real numbers (not necessarily integers in intermediate algebra, though the unique solution happens to be integral). Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The unique solution satisfies $r=2$, $b=2$, and $t=3$.",
+    "In the unique solution, the tofu portion is strictly larger than the rice portion.",
+    "If the protein target were raised from $14$ to $15$ while the other two targets stayed fixed, the rice portion in the new unique solution would be strictly smaller than $2$.",
+    "Doubling every coefficient and every right-hand side leaves the unique solution $(r,b,t)$ unchanged.",
+    "The sum $r+b+t$ in the unique solution is strictly less than $8$.",
+  ];
+
+  // Solution (2,2,3). Protein RHS→15 yields (47/18, 35/18, 47/18).
+  const answer_key = [true, true, false, true, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+Substitute $(r,b,t)=(2,2,3)$ into all three equations:
+
+$$
+3\\cdot 2+2+2\\cdot 3=6+2+6=14
+$$
+
+$$
+2+4\\cdot 2+3=2+8+3=13
+$$
+
+$$
+2\\cdot 2+2+3\\cdot 3=4+2+9=15
+$$
+
+All three targets hold. The coefficient matrix is invertible (its determinant is nonzero), so the solution is unique.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+From A, $t=3$ and $r=2$, so
+
+$$
+t-r=1>0
+$$
+
+Tofu is strictly larger than rice.
+
+So the statement is True.`,
+
+    `**C.** → False
+
+Raise only the protein right-hand side to $15$ and re-solve the same coefficient matrix. Elimination yields the unique new solution
+
+$$
+(r,b,t)=\\left(\\dfrac{47}{18},\\dfrac{35}{18},\\dfrac{47}{18}\\right)
+$$
+
+In particular
+
+$$
+r=\\dfrac{47}{18}\\approx 2.61>2
+$$
+
+so rice rises, not falls. The claim “strictly smaller than $2$” fails.
+
+So the statement is False.`,
+
+    `**D.** → True
+
+Multiplying every equation by $2$ produces an equivalent linear system: the same triples $(r,b,t)$ satisfy it, and uniqueness is preserved. Scaling an invertible system’s rows does not change its solution set.
+
+So the statement is True.`,
+
+    `**E.** → True
+
+From A,
+
+$$
+r+b+t=2+2+3=7
+$$
+
+$$
+7<8
+$$
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 5.MOCK.RATES",
+    id: "MATH 5.MOCK.RATES",
+    title: "Three-ingredient nutrition targets — linear system",
+    chapter: 5,
+    subsection: "5.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Solve the $3\\times 3$ nutrient system once to get $(r,b,t)=(2,2,3)$. Letters A/B/E read off that solution; C perturbs one right-hand side; D notes row-scaling equivalence.",
+  };
+}
+
+/** Ch6 INEQ — rational / 1/x / exponential / abs-vs-quadratic / rational again (NOT M3 order). */
+function buildMathCh6Signs() {
+  const context = `Each letter is an independent hard inequality. The toolkit is deliberately reordered: a rational inequality (sign chart), a quadratic-in-$1/x$ claim, an exponential inequality, an absolute-value-versus-quadratic comparison, and a second rational inequality with a vertical asymptote.
+
+Decide whether each statement is true or false.`;
+
+  const statements = [
+    "Every real solution of $\\dfrac{x-2}{x+1}\\ge 0$ satisfies $x\\ge 2$.",
+    "For every real $x>0$, one has $x+\\dfrac{1}{x}\\ge 2$.",
+    "The solution set of $2^{x+1}\\le 16$ is exactly $(-\\infty,3]$.",
+    "Every real $x$ satisfying $|x-3|<x^{2}-5x+6$ also satisfies $x>4$.",
+    "The inequality $\\dfrac{x+2}{x-3}>1$ holds for every $x\\in(-\\infty,-2)$.",
+  ];
+
+  // A: solution (-∞,-1)∪[2,∞). Not every solution has x≥2 (e.g. -2). False
+  // B: AM-GM / (√x-1/√x)^2≥0 → True
+  // C: 2^{x+1}≤2^4 → x+1≤4 → x≤3. Domain all reals. True
+  // D: x^2-5x+6=(x-2)(x-3). |x-3|<(x-2)(x-3). 
+  //    Need careful: for x>3, x-3 < (x-2)(x-3) → 1 < x-2 if x≠3 → x>3. So (3,∞)? 
+  //    For x>3: divide by (x-3)>0: 1 < x-2 → x>3. So all x>3 work.
+  //    For 2<x<3: (x-2)>0, (x-3)<0 so RHS negative, |x-3|>0 cannot be < negative. Empty.
+  //    For x=2: RHS=0, |2-3|=1≮0.
+  //    For x<2: both factors of RHS — if x<2 and looking...
+  //    Actually for x<2, (x-2)<0. If also x>3 impossible. If x<3, (x-3)<0 so RHS>0.
+  //    |x-3| < (x-2)(x-3). For x<2: let me check x=0: |0-3|=3, RHS=6>3? 0-0+6=6, 3<6 true. x=0 works but 0≯4.
+  //    So claim "every solution satisfies x>4" is False.
+  // E: (x+2)/(x-3)>1 → (x+2)-(x-3))/(x-3)>0 → 5/(x-3)>0 → x>3.
+  //    So NOT for all x in (-∞,-2). False.
+
+  const answer_key = [false, true, true, false, false];
+
+  const tactical_explanations = [
+    `**A.** → False
+
+Critical points $x=-1$ (vertical asymptote / undefined) and $x=2$ (zero). A sign chart on $(-\\infty,-1)$, $(-1,2)$, and $(2,\\infty)$ shows the quotient is nonnegative on
+
+$$
+(-\\infty,-1)\\cup[2,\\infty)
+$$
+
+(with $x=-1$ excluded). The point $x=-2$ is a solution but $-2\\ngeq 2$, so not every solution satisfies $x\\ge 2$.
+
+So the statement is False.`,
+
+    `**B.** → True
+
+For $x>0$,
+
+$$
+x+\\dfrac{1}{x}-2=\\dfrac{x^{2}-2x+1}{x}=\\dfrac{(x-1)^{2}}{x}\\ge 0
+$$
+
+because the numerator is a square and the denominator is positive. Equality holds at $x=1$.
+
+So the statement is True.`,
+
+    `**C.** → True
+
+Rewrite $16=2^{4}$:
+
+$$
+2^{x+1}\\le 2^{4}
+$$
+
+The exponential base $2>1$ is increasing, so the inequality of exponents is
+
+$$
+x+1\\le 4\\qquad\\Rightarrow\\qquad x\\le 3
+$$
+
+That is exactly $(-\\infty,3]$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+Factor the quadratic:
+
+$$
+x^{2}-5x+6=(x-2)(x-3)
+$$
+
+At $x=0$ one finds
+
+$$
+|0-3|=3,\\qquad (0-2)(0-3)=6
+$$
+
+and $3<6$, so $x=0$ solves the strict inequality. But $0\\ngtr 4$, so the universal claim fails.
+
+So the statement is False.`,
+
+    `**E.** → False
+
+Bring to one side:
+
+$$
+\\dfrac{x+2}{x-3}-1=\\dfrac{(x+2)-(x-3)}{x-3}=\\dfrac{5}{x-3}
+$$
+
+So the inequality becomes $\\dfrac{5}{x-3}>0$, hence $x>3$. In particular it fails throughout $(-\\infty,-2)$ (for example at $x=-3$: $\\dfrac{-1}{-6}=\\dfrac{1}{6}\\nless 1$ wait — $\\dfrac{-1}{-6}=1/6\\not>1$). Directly: at $x=-3$, $\\dfrac{-1}{-6}=\\dfrac{1}{6}\\ngtr 1$.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 6.MOCK.SIGNS",
+    id: "MATH 6.MOCK.SIGNS",
+    title: "Sign-chart inequalities — rational, reciprocal, exponential, abs-vs-quadratic",
+    chapter: 6,
+    subsection: "6.4",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview:
+      "Five independent inequality checks with a new type order: rational sign chart, $x+1/x$, exponential with matched bases, absolute value versus a factored quadratic, and a rational inequality reducing to a single critical point.",
+  };
+}
+
+/** Ch7 — revenue table rebuilt from constant second differences (NOT parabola+lines-through-vertex). */
+function buildMathCh7Revenue() {
+  const context = `A kiosk records revenue $R(q)$ (in euro) against packs sold $q$. Four observed pairs are:
+
+| $q$ (packs) | $R(q)$ (euro) |
+| ---: | ---: |
+| $1$ | $38$ |
+| $2$ | $72$ |
+| $3$ | $102$ |
+| $4$ | $128$ |
+
+First differences of $R$ fall by a constant second difference of $-4$, so $R$ is exactly quadratic on these integers. Extend that same quadratic model to nearby integers and to the vertex. Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The unique quadratic with those four values is $R(q)=-2q^{2}+40q$.",
+    "Under that quadratic model, $R(5)$ is strictly greater than $145$.",
+    "The model’s vertex (maximum on the reals) occurs at $q=10$.",
+    "The maximal modelled revenue is strictly greater than $200$ euro.",
+    "The first differences $R(2)-R(1)$, $R(3)-R(2)$, $R(4)-R(3)$ form an arithmetic sequence with common difference $-4$.",
+  ];
+
+  // R=-2q^2+40q: 38,72,102,128 yes. A True
+  // R(5)=-50+200=150 >145 True
+  // vertex at q=-b/2a= -40/(2*(-2))=10 True
+  // R(10)=-200+400=200, claim >200 → False
+  // diffs 34,30,26 common difference -4 True
 
   const answer_key = [true, true, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-Solve $g(x)=0$:
+Assume $R(q)=aq^{2}+bq+c$. The four table values overdetermine a quadratic, but constant second differences of $-4$ force $2a=-4$, so $a=-2$. Matching $R(1)=38$ and $R(2)=72$:
 
 $$
-2x^{2}-8x-10=0\\qquad\\Rightarrow\\qquad x^{2}-4x-5=0
+-2+b+c=38,\\qquad -8+2b+c=72
 $$
 
-$$
-(x-5)(x+1)=0
-$$
-
-The roots are $x=5$ and $x=-1$. Their product is
+Subtract: $-6+b=34$, so $b=40$, then $c=0$. Hence
 
 $$
-5\\cdot(-1)=-5<-4
+R(q)=-2q^{2}+40q
 $$
 
-(Alternatively, by Vieta on $x^{2}-4x-5=0$ the product of roots is the constant term $-5$.)
+and it reproduces $R(3)=102$, $R(4)=128$ as well.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Complete the square:
-
 $$
-g(x)=2\\bigl(x^{2}-4x\\bigr)-10=2\\bigl((x-2)^{2}-4\\bigr)-10
+R(5)=-2\\cdot 25+40\\cdot 5=-50+200=150
 $$
 
 $$
-=2(x-2)^{2}-8-10=2(x-2)^{2}-18
-$$
-
-The square term is always $\\ge 0$, so the minimum value is $-18$, attained at $x=2$:
-
-$$
--18<-15
+150>145
 $$
 
 So the statement is True.`,
 
     `**C.** → True
 
-Form the difference:
+For $R(q)=-2q^{2}+40q$ the vertex abscissa is
 
 $$
-g(x)-f_{m}(x)=2(x-2)^{2}-18-\\bigl(m(x-2)-18\\bigr)
+q=-\\dfrac{b}{2a}=-\\dfrac{40}{2(-2)}=10
 $$
-
-$$
-=2(x-2)^{2}-m(x-2)=(x-2)\\bigl(2(x-2)-m\\bigr)
-$$
-
-The intersection $x$-coordinates are therefore $x=2$ (the vertex) and
-
-$$
-x=2+\\dfrac{m}{2}
-$$
-
-For $m=6$,
-
-$$
-x=2+3=5
-$$
-
-and $4<5<6$, so the second intersection lies strictly between $4$ and $6$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-From the factorisation in C, the intersection abscissae coincide precisely when
+At the vertex $q=10$,
 
 $$
-\\dfrac{m}{2}=0\\qquad\\Rightarrow\\qquad m=0
+R(10)=-2\\cdot 100+40\\cdot 10=-200+400=200
 $$
 
-For every other real slope the graphs meet at two points. Therefore there is exactly one real slope giving a single common point — namely $m=0$ — and not more than one.
+The claim asks for a value strictly greater than $200$ euro, but the maximum equals $200$, so $200\\ngtr 200$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-When $m=-10$ the two intersection $x$-coordinates are the vertex $x=2$ and
+Read the first differences from the table:
 
 $$
-x=2+\\dfrac{-10}{2}=2-5=-3
+72-38=34,\\qquad 102-72=30,\\qquad 128-102=26
 $$
 
-Distance:
+Then
 
 $$
-\\bigl|2-(-3)\\bigr|=5>4
+30-34=-4,\\qquad 26-30=-4
 $$
+
+so the first differences form an arithmetic sequence with common difference $-4$.
 
 So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 7.MOCK.PARA",
-    id: "MATH 7.MOCK.PARA",
-    title: "Numeric parabola with slope family — threshold claims",
+    case_id: "MATH 7.MOCK.REVENUE",
+    id: "MATH 7.MOCK.REVENUE",
+    title: "Kiosk revenue — quadratic rebuild from second differences",
     chapter: 7,
-    subsection: "7.3",
+    subsection: "7.2",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Factor $g$, complete the square for the minimum, factor $g-f_m$ to read both intersections, then compare products, values, and distances with the claimed thresholds.",
+      "Constant second difference $-4$ forces $a=-2$; fit $b,c$ from the table to get $R(q)=-2q^{2}+40q$. Letters then evaluate $R(5)$, the vertex, and the first-difference pattern. Keep euro amounts in prose, not inside math.",
   };
 }
 
-
-/** Power model — exponent known, one calibration for A; teacher-step explanations. */
-function buildMathCh8Cap() {
-  const context = `Warehouse throughput follows
+/** Ch8 — compare two power laws with known exponents (NOT single C=A w^p calibration). */
+function buildMathCh8Scale() {
+  const context = `Two shipping cost models (in euro) depend on package weight $w>0$:
 
 $$
-C(w)=A\\,w^{2/3}\\qquad(w>0)
+C_{A}(w)=A\\,w^{3/2},\\qquad C_{B}(w)=B\\,w^{1/2}
 $$
 
-with unknown $A>0$. Engineering fixes the two-thirds exponent; only the scale $A$ must be read from data.
-
-One calibration run: at $w=8$ dock-hours the measured throughput is $24$.
-
-Each unit of throughput earns EUR $5$, and each dock-hour costs EUR $4$.
-
-Profit is $\\pi(w)=5\\,C(w)-4w$.`;
+with unknown positive constants $A,B$. Calibration at weight $w=4$ gives $C_{A}(4)=64$ and $C_{B}(4)=20$. The elasticity of either model is the logarithmic derivative $\\dfrac{\\mathrm{d}(\\ln C)}{\\mathrm{d}(\\ln w)}$, which equals the power of $w$. Decide whether each statement is true or false.`;
 
   const statements = [
-    "Doubling dock-hours multiplies throughput by more than $1.5$.",
-    "The profit-maximising dock-hour level exceeds $100$.",
-    "At that profit-maximising level, throughput already exceeds $160$.",
-    "At the interior profit maximum, marginal revenue from an extra dock-hour equals the EUR $4$ marginal cost.",
-    "Moving from the profit-maximising level to twice that many dock-hours cuts profit by more than half.",
+    "The calibrated constants are $A=8$ and $B=10$.",
+    "At weight $w=9$, model A costs strictly more than $200$ euro.",
+    "If weight doubles from any $w>0$, model A’s cost is multiplied by exactly $2\\sqrt{2}$.",
+    "The elasticity of model B with respect to weight equals $\\dfrac{1}{2}$.",
+    "There exists a weight $w>0$ at which the two calibrated costs are equal and that weight is strictly less than $1$.",
   ];
 
-  const answer_key = [true, true, false, true, false];
+  // A: A*4^{3/2}=A*8=64 → A=8; B*2=20 → B=10 True
+  // B: C_A(9)=8*27=216>200 True
+  // C: 2^{3/2}=2√2 True
+  // D: True
+  // E: 8 w^{3/2} = 10 w^{1/2} → 8w = 10 → w=10/8=1.25 ≮ 1 → False
+
+  const answer_key = [true, true, true, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-Write throughput at $w$ and at $2w$:
+From $C_{A}(4)=64$:
 
 $$
-C(w)=A w^{2/3},\\qquad C(2w)=A(2w)^{2/3}=A\\,2^{2/3}\\,w^{2/3}
+A\\cdot 4^{3/2}=A\\cdot (2^{2})^{3/2}=A\\cdot 2^{3}=8A=64\\qquad\\Rightarrow\\qquad A=8
 $$
 
-The multiplication factor is
+From $C_{B}(4)=20$:
 
 $$
-\\dfrac{C(2w)}{C(w)}=2^{2/3}
-$$
-
-The unknown scale $A$ cancels. Numerically
-
-$$
-2^{2/3}\\approx 1.587>1.5
+B\\cdot 4^{1/2}=2B=20\\qquad\\Rightarrow\\qquad B=10
 $$
 
 So the statement is True.`,
 
     `**B.** → True
 
-Recover $A$ from $C(8)=24$:
-
 $$
-A\\cdot 8^{2/3}=24\\qquad\\Rightarrow\\qquad A\\cdot 4=24\\qquad\\Rightarrow\\qquad A=6
+C_{A}(9)=8\\cdot 9^{3/2}=8\\cdot (3^{2})^{3/2}=8\\cdot 3^{3}=8\\cdot 27=216
 $$
 
-Throughput is $C(w)=6\\,w^{2/3}$. Profit becomes
-
-$$
-\\pi(w)=5\\cdot 6\\,w^{2/3}-4w=30\\,w^{2/3}-4w
-$$
-
-Differentiate:
-
-$$
-\\pi'(w)=30\\cdot\\dfrac{2}{3}w^{-1/3}-4=20\\,w^{-1/3}-4
-$$
-
-Set the derivative to zero:
-
-$$
-\\dfrac{20}{w^{1/3}}=4\\qquad\\Rightarrow\\qquad w^{1/3}=5\\qquad\\Rightarrow\\qquad w=125
-$$
-
-The second derivative $\\pi''(w)=-\\dfrac{20}{3}w^{-4/3}<0$ for every $w>0$, so $w=125$ is a maximum:
-
-$$
-125>100
-$$
+Keep the currency in prose: $216$ euro is strictly more than $200$ euro.
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**C.** → True
 
-At $w=125$ with $C(w)=6\\,w^{2/3}$:
-
-$$
-C(125)=6\\cdot 125^{2/3}=6\\cdot 25=150
-$$
+Replacing $w$ by $2w$ multiplies $C_{A}$ by
 
 $$
-150\\ngtr 160
+(2w)^{3/2}/w^{3/2}=2^{3/2}=2\\sqrt{2}
 $$
 
-So the statement is False.`,
+independent of $w$ and of $A$.
+
+So the statement is True.`,
 
     `**D.** → True
 
-Profit is $\\pi(w)=5\\,C(w)-4w$, so
+For $C_{B}(w)=B w^{1/2}$,
 
 $$
-\\pi'(w)=5\\,C'(w)-4
+\\ln C_{B}=\\ln B+\\dfrac{1}{2}\\ln w
 $$
 
-Here $5\\,C'(w)$ is the marginal revenue earned by one extra dock-hour, and $4$ is the EUR $4$ marginal cost. An interior maximum requires $\\pi'(w)=0$, which rearranges to
+so
 
 $$
-5\\,C'(w)=4
+\\dfrac{\\mathrm{d}(\\ln C_{B})}{\\mathrm{d}(\\ln w)}=\\dfrac{1}{2}
 $$
-
-That is exactly the first-order condition used in B. At the maximiser, marginal revenue equals marginal cost.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Evaluate profit at the optimum and at twice that level:
+Set $8w^{3/2}=10w^{1/2}$ with $w>0$ and divide by $w^{1/2}$:
 
 $$
-\\pi(125)=30\\cdot 25-4\\cdot 125=750-500=250
+8w=10\\qquad\\Rightarrow\\qquad w=\\dfrac{10}{8}=1.25
 $$
 
-$$
-\\pi(250)=30\\cdot 250^{2/3}-4\\cdot 250
-$$
-
-Since $250=125\\cdot 2$, one has $250^{2/3}=25\\cdot 2^{2/3}$, so
-
-$$
-\\pi(250)=30\\cdot 25\\cdot 2^{2/3}-1000=750\\cdot 2^{2/3}-1000
-$$
-
-$$
-\\approx 750\\cdot 1.587-1000\\approx 1190-1000=190
-$$
-
-Relative to $250$, profit falls to about $190/250=0.76$, a cut of roughly $24\\%$, not more than half.
+The crossing weight is $1.25$, which is not strictly less than $1$.
 
 So the statement is False.`,
   ];
 
   return {
-    case_id: "MATH 8.MOCK.CAP",
-    id: "MATH 8.MOCK.CAP",
-    title: "Two-thirds power throughput — one known exponent, one calibration",
+    case_id: "MATH 8.MOCK.SCALE",
+    id: "MATH 8.MOCK.SCALE",
+    title: "Two power-law shipping costs — scale factors and elasticity",
     chapter: 8,
     subsection: "8.3",
     context,
@@ -1425,88 +1088,43 @@ So the statement is False.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Keep the two-thirds exponent fixed, recover $A$ from $C(8)=24$, form $\\pi(w)=30 w^{2/3}-4w$, solve $\\pi'=0$, then adjudicate ratio, throughput, FOC, and a counterfactual profit comparison.",
+      "Calibrate $A=8$, $B=10$ at $w=4$. Compare scale-up factors $2^{3/2}$ vs $2^{1/2}$, read elasticity as the exponent, and solve $C_A=C_B$ for the crossing weight.",
   };
 }
 
-
-/** Heavy-calc cubic — many derivative/evaluation steps. */
-function buildMathCh9Shift() {
-  const context = `A packing line’s short-run output rate (units per hour) is
+/** Ch9 — factor/remainder theorem with a three-root cubic (NOT short-run p(t)=t^3-… rate). */
+function buildMathCh9FactorP() {
+  const context = `A cubic polynomial is built from three real roots,
 
 $$
-p(t)=t^{3}-7t^{2}+14t-8
+p(x)=(x-1)(x-2)(x-4)=x^{3}-7x^{2}+14x-8
 $$
 
-The shift window is $0\\le t\\le 6$, with $t$ in hours.
-
-Decide whether each statement is true or false.`;
+Use the factor theorem and the remainder theorem. Decide whether each statement is true or false.`;
 
   const statements = [
-    "The product of the three real roots of $p(t)=0$ (allowing roots outside the shift window) is strictly positive.",
-    "On the open interval between the two critical points, the output rate is strictly decreasing.",
-    "At $t=2$, the instantaneous slope $p'(2)$ is strictly less than $-1$.",
-    "The larger critical abscissa exceeds $3.1$, and the output rate there is strictly negative.",
-    "Over the closed shift $[0,6]$, the highest output rate exceeds $45$.",
+    "The remainder when $p(x)$ is divided by $x-3$ is strictly less than $-1$.",
+    "The factor theorem guarantees that $x-2$ divides $p(x)$ exactly.",
+    "The sum of the roots of $p(x)=0$, counting multiplicity, equals $7$.",
+    "If $q(x)=p(x)+6$, then $q(1)=0$.",
+    "On the interval $[0,5]$, the equation $p(x)=0$ has exactly three solutions.",
   ];
 
-  const answer_key = [true, true, true, true, false];
+  // A: p(3)=27-63+42-8=-2 < -1 True
+  // B: p(2)=0 True
+  // C: 1+2+4=7 True
+  // D: q(1)=p(1)+6=6≠0 False
+  // E: roots 1,2,4 all in [0,5] → three solutions True
+
+  const answer_key = [true, true, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-Look for an obvious rational root of $p(t)=t^{3}-7t^{2}+14t-8$. Try $t=1$:
+The remainder theorem says the remainder on division by $x-3$ is $p(3)$:
 
 $$
-1-7+14-8=0
-$$
-
-so $t-1$ is a factor. Polynomial division gives
-
-$$
-p(t)=(t-1)(t^{2}-6t+8)=(t-1)(t-2)(t-4)
-$$
-
-The three real roots are $1$, $2$, and $4$. Their product is
-
-$$
-1\\cdot 2\\cdot 4=8>0
-$$
-
-Alternatively, for a monic cubic $t^{3}+at^{2}+bt+c=0$ Vieta says the product of roots equals $-c$. Here $c=-8$, so the product is $8$.
-
-So the statement is True.`,
-
-    `**B.** → True
-
-Differentiate:
-
-$$
-p'(t)=3t^{2}-14t+14
-$$
-
-Discriminant:
-
-$$
-\\Delta=(-14)^{2}-4\\cdot 3\\cdot 14=196-168=28=4\\cdot 7
-$$
-
-so there are two distinct real critical points
-
-$$
-t=\\dfrac{14\\pm\\sqrt{28}}{6}=\\dfrac{14\\pm 2\\sqrt{7}}{6}=\\dfrac{7\\pm\\sqrt{7}}{3}
-$$
-
-Because the leading coefficient of $p'$ is positive, $p'(t)<0$ strictly between the two roots. Therefore on that open interval the output rate $p$ is strictly decreasing.
-
-So the statement is True.`,
-
-    `**C.** → True
-
-From B, $p'(t)=3t^{2}-14t+14$. At $t=2$:
-
-$$
-p'(2)=3\\cdot 4-14\\cdot 2+14=12-28+14=-2
+p(3)=27-63+42-8=-2
 $$
 
 $$
@@ -1515,204 +1133,130 @@ $$
 
 So the statement is True.`,
 
-    `**D.** → True
+    `**B.** → True
 
-The larger critical abscissa is
-
-$$
-t_{+}=\\dfrac{7+\\sqrt{7}}{3}
-$$
-
-Since $\\sqrt{7}\\approx 2.646$,
-
-$$
-t_{+}\\approx\\dfrac{7+2.646}{3}=\\dfrac{9.646}{3}\\approx 3.215>3.1
-$$
-
-This critical point lies between the roots $2$ and $4$ of $p$. On $(2,4)$ the factorisation $p(t)=(t-1)(t-2)(t-4)$ has
-
-$$
-t-1>0,\\qquad t-2>0,\\qquad t-4<0
-$$
-
-so the product is negative. In particular $p(t_{+})<0$.
+By construction $p(2)=(2-1)(2-2)(2-4)=0$. The factor theorem therefore yields an exact factor $x-2$.
 
 So the statement is True.`,
 
-    `**E.** → False
+    `**C.** → True
 
-Evaluate the endpoints:
+For a monic cubic $x^{3}+ax^{2}+bx+c$, the sum of roots is $-a$. Here $a=-7$, so the sum is $7$. Directly: $1+2+4=7$.
 
-$$
-p(0)=-8,\\qquad p(6)=216-252+84-8=40
-$$
+So the statement is True.`,
 
-The local maximum on $(0,6)$ is at the smaller critical point
+    `**D.** → False
 
 $$
-t_{-}=\\dfrac{7-\\sqrt{7}}{3}\\approx\\dfrac{7-2.646}{3}\\approx 1.451
+q(1)=p(1)+6=0+6=6\\neq 0
 $$
 
-Numerically $p(t_{-})\\approx 1.05$, well below the right endpoint. The local minimum at $t_{+}$ is negative. Therefore the highest output rate on $[0,6]$ is $p(6)=40$, which does not exceed $45$:
-
-$$
-40\\ngtr 45
-$$
+Shifting the constant term by $+6$ destroys the root at $x=1$.
 
 So the statement is False.`,
+
+    `**E.** → True
+
+The three roots are $1$, $2$, and $4$, and each lies in $[0,5]$. A cubic has at most three roots unless identically zero, so there are exactly three solutions on that interval.
+
+So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 9.MOCK.SHIFT",
-    id: "MATH 9.MOCK.SHIFT",
-    title: "Packing-line cubic — roots, critical values, multi-step checks",
+    case_id: "MATH 9.MOCK.FACTORP",
+    id: "MATH 9.MOCK.FACTORP",
+    title: "Cubic from three roots — factor and remainder theorems",
     chapter: 9,
-    subsection: "9.3",
+    subsection: "9.2",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Factor or use Vieta, solve $p'=0$, evaluate slopes and local values, then compare the global maximum on $[0,6]$ with a threshold.",
+      "Expand or keep $p(x)=(x-1)(x-2)(x-4)$. Letters apply the remainder theorem at $x=3$, the factor theorem at a known root, Vieta’s sum, a constant shift, and a root count on $[0,5]$.",
   };
 }
 
+/** Ch10 — discrete compound vs continuous force (NOT P0 e^{kt} endowment twin). */
+function buildMathCh10Compound() {
+  const context = `An endowment of $P_{0}=1000$ euro is tracked under two interest conventions (currency kept in prose):
 
-/** Exp/log — population growth and force of interest (not isotope decay). */
-function buildMathCh10Force() {
-  const context = `A city population grows continuously according to
+- Discrete annual compounding at $5\\%$ per year: $D(t)=1000\\cdot(1.05)^{t}$ after $t$ years.
+- Continuous force of interest $\\delta=\\ln(1.05)$: $C(t)=1000\\,e^{\\delta t}$.
 
-$$
-P(t)=P_{0}e^{kt}
-$$
-
-At $t=0$ the population is $1200$, and at $t=4$ years it is $1800$.
-
-Separately, a continuously compounded savings account follows
-
-$$
-A(t)=2000\\,e^{\\delta t}
-$$
-
-It opens at EUR $2000$ and stands at EUR $3200$ after $8$ years.
-
-Decide whether each statement is true or false.`;
+A third experimental account uses continuous force $0.05$ exactly: $E(t)=1000\\,e^{0.05 t}$. Decide whether each statement is true or false.`;
 
   const statements = [
-    "The continuous growth rate satisfies $k>0.095$.",
-    "The time needed for the population to double is strictly less than $7$ years.",
-    "After $8$ years the population is still strictly above $2700$.",
-    "The account’s continuous force of interest satisfies $\\delta>0.06$.",
-    "The account first reaches EUR $5000$ at some time $t>15$ years.",
+    "For every $t\\ge 0$, the discrete account and the continuous account with force $\\delta=\\ln(1.05)$ give exactly the same balance.",
+    "After $10$ years, the experimental account $E(10)$ is strictly larger than the discrete account $D(10)$.",
+    "The continuous force $\\delta=\\ln(1.05)$ is strictly smaller than $0.05$.",
+    "Using the change-of-base formula, $\\log_{1.05}(2)=\\dfrac{\\ln 2}{\\ln 1.05}$ is strictly greater than $15$.",
+    "If the discrete rate switches from $5\\%$ to $3\\%$ after year $4$, the balance at $t=4$ is still exactly $1000\\cdot(1.05)^{4}$.",
   ];
 
-  const answer_key = [true, true, false, false, true];
+  const answer_key = [true, true, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-The growth law is $P(t)=P_{0}e^{kt}$ with $P_{0}=1200$. At $t=4$,
+With $\\delta=\\ln(1.05)$,
 
 $$
-1200\\,e^{4k}=1800\\qquad\\Rightarrow\\qquad e^{4k}=\\dfrac{3}{2}
+C(t)=1000\\,e^{(\\ln 1.05)\\,t}=1000\\cdot(1.05)^{t}=D(t)
 $$
 
-$$
-4k=\\ln\\dfrac{3}{2}\\qquad\\Rightarrow\\qquad k=\\dfrac{\\ln 1.5}{4}
-$$
-
-Since $\\ln 1.5\\approx 0.4055$,
-
-$$
-k\\approx\\dfrac{0.4055}{4}\\approx 0.1014>0.095
-$$
+for every $t$. The two conventions are algebraically identical.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Doubling time $T$ satisfies $e^{kT}=2$, so
-
 $$
-T=\\dfrac{\\ln 2}{k}
+\\dfrac{E(10)}{1000}=e^{0.5}\\approx 1.6487,\\qquad \\dfrac{D(10)}{1000}=(1.05)^{10}\\approx 1.6289
 $$
 
-Using $k\\approx 0.1014$ and $\\ln 2\\approx 0.6931$,
-
-$$
-T\\approx\\dfrac{0.6931}{0.1014}\\approx 6.84\\ \\mathrm{years}<7
-$$
+so $E(10)>D(10)$.
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**C.** → True
 
-After $8=2\\cdot 4$ years the population multiplies twice by the four-year factor $3/2$:
-
-$$
-P(8)=1200\\left(\\dfrac{3}{2}\\right)^{2}=1200\\cdot\\dfrac{9}{4}=2700
-$$
-
-The claim asks for a population strictly above $2700$:
+The elementary inequality $e^{r}>1+r$ for $r=0.05>0$ rearranges to
 
 $$
-2700\\ngtr 2700
+e^{0.05}>1.05\\qquad\\Rightarrow\\qquad 0.05>\\ln(1.05)
 $$
 
-So the statement is False.`,
+So $\\delta=\\ln(1.05)$ is strictly smaller than $0.05$.
+
+So the statement is True.`,
 
     `**D.** → False
 
-The account satisfies $A(8)=2000\\,e^{8\\delta}=3200$. Divide by $2000$:
-
 $$
-e^{8\\delta}=\\dfrac{3200}{2000}=1.6
+\\log_{1.05}(2)=\\dfrac{\\ln 2}{\\ln 1.05}\\approx\\dfrac{0.693147}{0.048790}\\approx 14.21
 $$
 
-$$
-\\delta=\\dfrac{\\ln 1.6}{8}
-$$
-
-Since $\\ln 1.6\\approx 0.4700$,
-
-$$
-\\delta\\approx\\dfrac{0.4700}{8}\\approx 0.0588
-$$
-
-$$
-0.0588\\ngtr 0.06
-$$
+Now $14.21\\ngtr 15$, so the claim fails.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Solve $A(t)=5000$:
+A rate switch that begins only after year $4$ does not change the path on $[0,4]$. At the instant $t=4$ one still has
 
 $$
-2000\\,e^{\\delta t}=5000\\qquad\\Rightarrow\\qquad e^{\\delta t}=2.5
+1000\\cdot(1.05)^{4}
 $$
-
-$$
-t=\\dfrac{\\ln 2.5}{\\delta}
-$$
-
-Using $\\delta\\approx 0.0588$ and $\\ln 2.5\\approx 0.9163$,
-
-$$
-t\\approx\\dfrac{0.9163}{0.0588}\\approx 15.58>15
-$$
-
-So the account first reaches EUR $5000$ after more than $15$ years.
 
 So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 10.MOCK.FORCE",
-    id: "MATH 10.MOCK.FORCE",
-    title: "Population growth and continuous force of interest",
+    case_id: "MATH 10.MOCK.COMPOUND",
+    id: "MATH 10.MOCK.COMPOUND",
+    title: "Discrete compound versus continuous force — comparison and log change-of-base",
     chapter: 10,
     subsection: "10.3",
     context,
@@ -1721,135 +1265,99 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Read $P(0)=1200$, $P(4)=1800$ into $P(t)=P_0 e^{kt}$ and $A(0)=2000$, $A(8)=3200$ into $A(t)=2000 e^{\\delta t}$, then adjudicate the five thresholds.",
+      "Identify $e^{(\\ln 1.05)t}=(1.05)^{t}$, compare $e^{0.05t}$ with discrete compounding, bound $\\ln(1.05)$, evaluate $\\log_{1.05}2$ via change of base, and note that a post-year-4 rate switch leaves the $t=4$ balance unchanged.",
   };
 }
 
-
-/** Long log-product derivative — max/min without spoon-feeding f'. */
-function buildMathCh11ProdLog() {
-  const context = `For $x>0$ define
+/** Ch11 — product/quotient style f(x)=x^2 e^{-x} (NOT (x^2+c)ln(·)e^{-x} twin). */
+function buildMathCh11Quot() {
+  const context = `For $x>0$ define the smooth payoff
 
 $$
-f(x)=(x^{2}+1)\\ln(x+2)\\,e^{-x}
+f(x)=x^{2}e^{-x}
 $$
 
-The claims concern critical points and max/min behaviour.
-
-Decide whether each statement is true or false.`;
+Critical points come from the product rule (equivalently from $\\dfrac{f'}{f}$). Decide whether each statement is true or false.`;
 
   const statements = [
-    "The function $f$ has a critical point in the open interval $(0.5,2.5)$.",
-    "That critical point in $(0.5,2.5)$ is a local minimum of $f$.",
-    "The value $f(1)$ is strictly greater than $0.7$.",
-    "Just after $x=3$, the function $f$ is still decreasing.",
-    "On the whole half-line $(0,\\infty)$, $f$ is strictly increasing.",
+    "On $(0,\\infty)$, the function $f$ has a unique critical point, and it lies at $x=2$.",
+    "The global maximum value of $f$ on $(0,\\infty)$ is strictly greater than $0.6$.",
+    "The logarithmic derivative satisfies $\\dfrac{f'(x)}{f(x)}=\\dfrac{2}{x}-1$ for every $x>0$.",
+    "For every $x>2$, the marginal payoff $f'(x)$ is negative.",
+    "The average payoff $\\dfrac{f(x)}{x}$ equals $xe^{-x}$, and this average is strictly decreasing on $(2,\\infty)$.",
   ];
 
-  const answer_key = [true, false, true, true, false];
+  // f'=e^{-x}(2x-x^2)=x e^{-x}(2-x). Crit at x=2 (x=0 not in (0,∞)). A True
+  // f(2)=4/e≈1.471>0.6? 4*e^{-2}≈0.541 ≯ 0.6 → False for >0.6
+  // B False
+  // C: f'/f = 2/x - 1 True
+  // D: for x>2, (2-x)<0 so f'<0 True
+  // E: f/x = x e^{-x}. Derivative: e^{-x}(1-x)<0 for x>1, hence on (2,∞) True
+
+  const answer_key = [true, false, true, true, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-Write $f$ as a product of three positive factors on $x>0$:
+Differentiate as a product $u=x^{2}$, $v=e^{-x}$:
 
 $$
-f(x)=(x^{2}+1)\\cdot\\ln(x+2)\\cdot e^{-x}
+f'(x)=2xe^{-x}-x^{2}e^{-x}=xe^{-x}(2-x)
 $$
 
-(For $x>0$ one has $x+2>2$, so $\\ln(x+2)>0$.) Logarithmic differentiation gives
-
-$$
-\\dfrac{f'(x)}{f(x)}=\\dfrac{2x}{x^{2}+1}+\\dfrac{1}{(x+2)\\ln(x+2)}-1
-$$
-
-Evaluate at the endpoints of the claimed interval.
-
-At $x=0.5$:
-
-$$
-\\dfrac{2\\cdot 0.5}{0.25+1}=\\dfrac{1}{1.25}=0.8
-$$
-
-$$
-\\dfrac{1}{2.5\\cdot\\ln 2.5},\\qquad \\ln 2.5\\approx 0.9163\\qquad\\Rightarrow\\qquad \\dfrac{1}{2.5\\cdot 0.9163}\\approx 0.437
-$$
-
-$$
-0.8+0.437-1\\approx 0.237>0
-$$
-
-At $x=2.5$:
-
-$$
-\\dfrac{2\\cdot 2.5}{6.25+1}=\\dfrac{5}{7.25}\\approx 0.690
-$$
-
-$$
-\\dfrac{1}{4.5\\cdot\\ln 4.5},\\qquad \\ln 4.5\\approx 1.504\\qquad\\Rightarrow\\qquad \\dfrac{1}{4.5\\cdot 1.504}\\approx 0.148
-$$
-
-$$
-0.690+0.148-1\\approx -0.162<0
-$$
-
-Since $f>0$, the sign of $f'$ matches the sign of $f'/f$. By the intermediate-value theorem, $f'/f$ (hence $f'$) has a zero in $(0.5,2.5)$.
+On $(0,\\infty)$ one has $x>0$ and $e^{-x}>0$, so $f'(x)=0$ precisely when $x=2$. That critical point is unique in the open interval.
 
 So the statement is True.`,
 
     `**B.** → False
 
-From A, the logarithmic derivative is positive at $x=0.5$ and negative at $x=2.5$. Crossing a simple zero of $f'$ from $+$ to $-$ means $f$ itself changes from increasing to decreasing. That is a local maximum, not a local minimum.
+At the critical point,
+
+$$
+f(2)=4e^{-2}\\approx 4\\cdot 0.135335=0.541
+$$
+
+Now $0.541\\ngtr 0.6$, so the claimed lower bound on the maximum fails.
 
 So the statement is False.`,
 
     `**C.** → True
 
-Substitute $x=1$:
+From A, for $x>0$,
 
 $$
-f(1)=(1+1)\\ln 3\\,e^{-1}=\\dfrac{2\\ln 3}{e}
-$$
-
-Use $\\ln 3\\approx 1.0986$ and $e\\approx 2.7183$:
-
-$$
-f(1)\\approx\\dfrac{2\\cdot 1.0986}{2.7183}\\approx\\dfrac{2.197}{2.7183}\\approx 0.808>0.7
+\\dfrac{f'(x)}{f(x)}=\\dfrac{xe^{-x}(2-x)}{x^{2}e^{-x}}=\\dfrac{2-x}{x}=\\dfrac{2}{x}-1
 $$
 
 So the statement is True.`,
 
     `**D.** → True
 
-Evaluate the logarithmic derivative from A at $x=3$:
-
-$$
-\\dfrac{2\\cdot 3}{9+1}=\\dfrac{6}{10}=0.6
-$$
-
-$$
-\\dfrac{1}{5\\cdot\\ln 5},\\qquad \\ln 5\\approx 1.6094\\qquad\\Rightarrow\\qquad \\dfrac{1}{5\\cdot 1.6094}\\approx 0.124
-$$
-
-$$
-0.6+0.124-1=-0.276<0
-$$
-
-Also $f(3)=(9+1)\\ln 5\\,e^{-3}>0$. Therefore $f'(3)<0$, so just after $x=3$ the function is still decreasing.
+For $x>2$, the factor $(2-x)$ is negative while $xe^{-x}>0$, hence $f'(x)<0$.
 
 So the statement is True.`,
 
-    `**E.** → False
+    `**E.** → True
 
-A function that is strictly increasing on the whole half-line $(0,\\infty)$ cannot have an interior local maximum. But A–B show that $f$ has a local maximum in $(0.5,2.5)$. On the left of that point $f$ increases; on the right it decreases for a while (as confirmed at $x=3$ in D). Hence $f$ is not strictly increasing on all of $(0,\\infty)$.
+$$
+\\dfrac{f(x)}{x}=xe^{-x}
+$$
 
-So the statement is False.`,
+Differentiate the average:
+
+$$
+\\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\bigl(xe^{-x}\\bigr)=e^{-x}(1-x)
+$$
+
+On $(2,\\infty)$ one has $1-x<0$, so the average is strictly decreasing there.
+
+So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 11.MOCK.PRODLOG",
-    id: "MATH 11.MOCK.PRODLOG",
-    title: "Long log-product-exponential derivative — max/min without formula spoon-feed",
+    case_id: "MATH 11.MOCK.QUOT",
+    id: "MATH 11.MOCK.QUOT",
+    title: "Payoff x²e^{-x} — critical point, log derivative, average vs marginal",
     chapter: 11,
     subsection: "11.4",
     context,
@@ -1858,10 +1366,9 @@ So the statement is False.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Differentiate via $\\ln f$, classify the critical point, and adjudicate value/monotonicity thresholds without putting the finished $f'$ formula into the claim text.",
+      "Use $f'(x)=xe^{-x}(2-x)$ to locate the unique positive critical point at $x=2$, evaluate $4e^{-2}$, read $f'/f=2/x-1$, and compare the average $xe^{-x}$ on $(2,\\infty)$.",
   };
 }
-
 
 function mapMath(chapter: number, t: Record<string, unknown>) {
   return {
@@ -2003,31 +1510,31 @@ Decide whether each statement is true or false.`;
 Decide whether each probability claim is true or false.`;
     mapped.title = "Poker hand probabilities from a shuffled deck";
   }
-  if (caseId === "MATH 13.18") {
-    mapped.context = `Two sales reps each make $25$ independent calls in a day. Rep A is new (probability $0.30$ of converting a call into a sale). Rep B is experienced (probability $0.68$).
+  if (caseId === "MATH 13.52") {
+    mapped.context = `A vaccine trial has lab technicians classify antibody responses across $35$ independent samples. Tech A is a first-year analyst (success probability $p=0.38$ of correctly classifying a sample). Tech B is a lead analyst ($p=0.94$).
 
-A “strong day” means more than half of the $25$ calls convert — that is, at least $13$ sales. Calls are independent within and across reps.
+To pass certification, a technician must correctly classify at least $30$ of the $35$ samples. Treat classifications as independent Bernoulli trials within and across technicians.
 
-Decide whether each statement is true or false.`;
-    mapped.title = "Sales-call binomial — strong-day thresholds";
+Decide whether each binomial claim is true or false.`;
+    mapped.title = "Vaccine antibody classification — binomial certification thresholds";
   }
   return mapped;
 }
 
 const math = [
-  buildMathCh1Crew(),
-  buildMathCh2Thresh(),
+  buildMathCh1Liars(),
+  buildMathCh2Idents(),
   takeMath("MATH 11.112", 3),
-  buildMathCh4Word(),
-  buildMathCh5Alloy(),
-  buildMathCh6HardIneq(),
-  buildMathCh7Para(),
-  buildMathCh8Cap(),
-  buildMathCh9Shift(),
-  buildMathCh10Force(),
-  buildMathCh11ProdLog(),
+  buildMathCh4MixEq(),
+  buildMathCh5Rates(),
+  buildMathCh6Signs(),
+  buildMathCh7Revenue(),
+  buildMathCh8Scale(),
+  buildMathCh9FactorP(),
+  buildMathCh10Compound(),
+  buildMathCh11Quot(),
   takeMath("MATH 12.25", 12),
-  takeMath("MATH 13.18", 13),
+  takeMath("MATH 13.52", 13),
 ];
 
 function audit(label: string, tasks: Array<Record<string, unknown>>) {
@@ -2071,3 +1578,4 @@ console.log(
   english.tasks.map((t) => `${t.case_id}${t.with_passage ? "+P" : ""}`).join(", "),
 );
 console.log("math ids", math.map((t) => t.case_id).join(", "));
+
