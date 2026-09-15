@@ -3,7 +3,7 @@
  * - Economics → English (Doomsday Glacier) → Math, in that order
  * - Economics: unused hard bank cases + CVP chart MOCK
  * - English: T.12 Glacier + G.12.19
- * - Math: hardest unused full-course bank tasks (one per chapter)
+ * - Math: hard applied unused bank tasks, polished to Mock 3 bar
  */
 
 import sourced from "@/data/mock-exam-4-sourced.json";
@@ -106,7 +106,7 @@ export const MOCK_EXAM_4_POINTS_TOTAL =
 
 /** Bump when Mock 4 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_4_CONTENT_REV =
-  "2026-09-15g · 34q · Glacier · hardest full-course math bank";
+  "2026-09-15h · 34q · Glacier · hard applied bank math";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
