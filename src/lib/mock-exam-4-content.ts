@@ -1,9 +1,9 @@
 /**
  * Curated Mock Exam 4 content (specified bank + generated tasks):
  * - Economics → English (Doomsday Glacier) → Math, in that order
- * - Economics: chapter bank cases + generated working-capital / ROCE chart case
+ * - Economics: chapter bank cases + generated CVP break-even chart case
  * - English: T.12 reading/vocab with passage, then grammar/vocab without + G.12.19
- * - Math: diversified MOCK engines + unused bank picks; EUR / USD outside KaTeX
+ * - Math: M3-style NEW math tasks (custom MOCK engines; EUR / USD outside KaTeX)
  */
 
 import sourced from "@/data/mock-exam-4-sourced.json";
@@ -106,7 +106,7 @@ export const MOCK_EXAM_4_POINTS_TOTAL =
 
 /** Bump when Mock 4 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_4_CONTENT_REV =
-  "2026-09-15c · 34q · Glacier · CVP econ + hard exam math";
+  "2026-09-15e · 34q · Glacier · M3-style NEW math tasks";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
