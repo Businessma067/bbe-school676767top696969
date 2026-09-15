@@ -640,74 +640,74 @@
   },
   "math": [
     {
-      "case_id": "MATH 1.MOCK.LIARS",
-      "id": "MATH 1.MOCK.LIARS",
-      "title": "Three analysts — truth-tellers, liars, and nested claims",
+      "case_id": "MATH 1.107",
+      "id": "math-1-107",
+      "title": "Assigning Paper Reviewers",
       "chapter": 1,
       "subsection": "1.4",
-      "context": "Three analysts — Quinn, Remy, and Sage — each make one statement about the group. Every analyst is either a truth-teller (every sentence true) or a liar (every sentence false). Exactly one of those two types applies to each person.\n\nQuinn says: “Remy is a liar.”\n\nRemy says: “Exactly two of us are truth-tellers.”\n\nSage says: “Quinn is a truth-teller if and only if I am a liar.”\n\nDecide whether each claim about the possible type-assignments is true or false.",
+      "context": "Five researchers - Petra, Quinn, Ravi, Sana, and Theo - are being assigned to review a paper. The assignment follows these rules:\n\n1. If Petra reviews, then Quinn does not review.\n\n2. Ravi reviews unless Sana reviews.\n\n3. If Quinn does not review, then Theo reviews.\n\n4. At least one of Petra or Sana reviews.\n\n5. If Theo reviews, then Ravi does not review.\n\n6. Sana reviews only if Petra reviews.",
       "statements": [
-        "Quinn must be a truth-teller in every consistent type-assignment.",
-        "In every consistent type-assignment, Remy and Sage are the same type.",
-        "It is possible that all three analysts are liars.",
-        "If Sage is a truth-teller, then Quinn is a liar.",
-        "There are exactly two consistent type-assignments for the trio."
+        "Petra must review the paper in every valid assignment.",
+        "If Quinn reviews, then Petra does not review.",
+        "It is possible for Ravi to review the paper in some valid assignment.",
+        "In the (unique) valid assignment, both Theo and Sana review the paper.",
+        "There are multiple different valid ways to assign reviewers consistent with all six rules."
       ],
       "answer_key": [
-        false,
+        true,
         true,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAssume Quinn is a liar and check whether a full consistent world still exists.\n\nIf Quinn is a liar, the sentence “Remy is a liar” is false, so Remy is a truth-teller. Remy’s sentence “exactly two truth-tellers” is therefore true, so the trio has exactly two truth-tellers. Sage’s biconditional “Quinn is a truth-teller $\\Leftrightarrow$ Sage is a liar” must then be false (because Sage must be the other truth-teller to reach exactly two). A false biconditional with Quinn a liar forces Sage to be a truth-teller:\n\n$$\nQ=\\mathrm{L},\\quad R=\\mathrm{T},\\quad S=\\mathrm{T}\n$$\n\nCount of truth-tellers: $2$. Quinn’s false sentence, Remy’s true sentence, and Sage’s false biconditional all match their types. So a Quinn-liar world exists, and the claim fails.\n\nSo the statement is False.",
-        "**B.** → True\n\nThe overview’s two survivors are $(T,L,L)$ and $(L,T,T)$. In the first, Remy and Sage are both liars; in the second, both are truth-tellers. No consistent row separates them.\n\nSo the statement is True.",
-        "**C.** → False\n\nIf all three are liars, Remy’s sentence “exactly two truth-tellers” is false, which matches Remy being a liar, but Quinn’s sentence “Remy is a liar” would be true — contradicting Quinn being a liar. The all-liar row is already excluded in the overview table.\n\nSo the statement is False.",
-        "**D.** → True\n\nSage is a truth-teller only in the second survivor $(L,T,T)$. There Quinn is a liar, so the implication holds in every world where its hypothesis is true. In the other survivor Sage is a liar, so the implication is idle.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe overview lists exactly two survivors: $(T,L,L)$ and $(L,T,T)$. Exhausting the eight type triples leaves no third consistent row.\n\nSo the statement is True."
+        "**A.** → True\n\nThe claim says Petra reviews in every valid assignment. Test the opposite by assuming $\\neg P$. Rule (6) is $S\\Rightarrow P$, so its contrapositive gives\n\n$$\\neg P\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg S.$$\n\nRule (4) requires at least one of Petra or Sana:\n\n$$(4)$$\n\n$$P\\lor S.$$\n\nUnder the assumption, both disjuncts are false. Thus Petra's absence makes rule (4) impossible to satisfy, so Petra is forced to review.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe claim asks what follows if Quinn reviews. Rule (1) says\n\n$$(1)$$\n\n$$P\\Rightarrow\\neg Q.$$\n\nTaking the contrapositive reverses and negates both sides:\n\n$$\\neg(\\neg Q)\\Rightarrow\\neg P,$$\n\nso\n\n$$Q\\Rightarrow\\neg P.$$\n\nTherefore Quinn's presence forces Petra's absence, exactly as claimed.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe claim needs at least one valid assignment with Ravi. Petra is already forced in by rule (4) together with rule (6). Rule (1) then forces Quinn out, and rule (3) forces Theo in:\n\n$$P\\overset{(1)}{\\Rightarrow}\\neg Q \\overset{(3)}{\\Rightarrow}T.$$\n\nRule (5) now applies:\n\n$$T\\overset{(5)}{\\Rightarrow}\\neg R.$$\n\nThus every valid assignment forces Ravi out. Assuming Ravi in would collide with the forced $\\neg R$.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe claim says the unique assignment includes both Theo and Sana. Begin with Petra, who is forced in. Rules (1) and (3) then force Quinn out and Theo in:\n\n$$P\\overset{(1)}{\\Rightarrow}\\neg Q \\overset{(3)}{\\Rightarrow}T.$$\n\nRule (5) forces Ravi out. Rule (2) requires $R\\lor S$, so Ravi's absence forces Sana in:\n\n$$T\\overset{(5)}{\\Rightarrow}\\neg R,$$\n\n$$\\neg R\\land(R\\lor S)\\overset{(2)}{\\Rightarrow}S.$$\n\nThe forced assignment is $\\{P,S,T\\}$, which contains Theo and Sana.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe claim requires at least two different valid assignments. Instead, each reviewer's status is forced in sequence.\n\nRule (4) together with rule (6) forces $P$. Then (1) gives $\\neg Q$, (3) gives $T$, and (5) gives $\\neg R$. Finally, rule (2), $R\\lor S$, gives $S$:\n\n$$P\\Rightarrow\\neg Q\\Rightarrow T\\Rightarrow\\neg R\\Rightarrow S.$$\n\nSo every valid assignment has exactly\n\n$$\nP = S = T = 1,\n$$\n\n$$\nQ = R = 0.\n$$\n\nThis assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "**Part 1: Setup.**\n\nWrite $Q,R,S$ for the types of Quinn, Remy, Sage. The spoken claims are\n\n$$\n(1)\\ \\neg R,\\qquad (2)\\ \\#\\{T\\}=2,\\qquad (3)\\ Q\\Leftrightarrow\\neg S.\n$$\n\nA truth-teller’s claim must evaluate true; a liar’s claim must evaluate false.\n\n**Part 2: Shared forcing.**\n\nCase Quinn truth-teller: Remy is a liar, so “exactly two truth-tellers” is false. Sage’s biconditional is true and forces Sage to be a liar. The unique completion is $(T,L,L)$.\n\nCase Quinn liar: Remy is a truth-teller and “exactly two truth-tellers” holds, so Sage is the other truth-teller. The unique completion is $(L,T,T)$.\n\n**Consistent type-assignments (truth-teller = T, liar = L).**\n\nWrite $Q,R,S$ for Quinn, Remy, Sage. Encode the three spoken claims, then keep only the $0/1$ type rows that make every speaker’s sentence evaluate correctly under that speaker’s type.\n\nHow the table is built:\n\n1. Treat “truth-teller” as bit $1$ and “liar” as bit $0$.\n2. Quinn’s sentence is true precisely when Remy is a liar.\n3. Remy’s sentence is true precisely when the number of truth-tellers equals $2$.\n4. Sage’s sentence is the biconditional “Quinn is a truth-teller $\\Leftrightarrow$ Sage is a liar.”\n5. A row survives only if each speaker’s sentence truth-value matches that speaker’s type.\n\n| $Q$ | $R$ | $S$ | Quinn’s sentence | Remy’s sentence | Sage’s sentence | Valid? |\n| --- | --- | --- | --- | --- | --- | --- |\n| T | L | L | true | false | true | yes |\n| L | T | T | false | true | false | yes |\n| T | T | L | false | false | false | no |\n| L | L | T | true | false | true | no |\n| T | L | T | true | false | false | no |\n| L | T | L | false | false | true | no |\n\nExactly two consistent worlds survive: $(Q,R,S)=(T,L,L)$ and $(L,T,T)$."
+      "solution_overview": "**Part 1: Setup.**\n\nWrite $P,Q,R,S,T$ for Petra, Quinn, Ravi, Sana, Theo reviewing. The stem is\n\n$$(1)\\ P\\Rightarrow\\neg Q,\\qquad (2)\\ R\\lor S,\\qquad (3)\\ \\neg Q\\Rightarrow T,$$\n\n$$(4)\\ P\\lor S,\\qquad (5)\\ T\\Rightarrow\\neg R,\\qquad (6)\\ S\\Rightarrow P.$$\n\n\"$P$ unless $Q$\" is $\\neg Q\\Rightarrow P$, so rule (2) is the inclusive or $R\\lor S$. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Part 2: Solve.**\n\nIf $\\neg P$ holds, the contrapose of (6) gives $\\neg S$, and then (4) fails. So $P$ is forced.\n\nThen (1) gives $\\neg Q$, (3) gives $T$, (5) gives $\\neg R$, and (2) with Ravi out forces $S$. Rule (6) holds because Petra already reviews.\n\nThe unique assignment is $\\{P,S,T\\}$.\n\n**Truth table of valid assignments.**\n\nWrite $P,Q,R,S,T$ for Petra, Quinn, Ravi, Sana, Theo.\n\n| $P$ | $Q$ | $R$ | $S$ | $T$ | Valid? |\n| --- | --- | --- | --- | --- | --- |\n| 1 | 0 | 0 | 1 | 1 | yes |\n| 0 | * | * | * | * | no (rules force $P$) |\n| 1 | 1 | * | * | * | no ($P\\Rightarrow\\neg Q$ fails) |\n| 1 | 0 | 1 | * | 1 | no ($T\\Rightarrow\\neg R$ fails) |\n| 1 | 0 | 0 | 0 | 1 | no ($R\\lor S$ fails) |\n\nExactly one valid assignment survives: Petra, Sana, and Theo review; Quinn and Ravi do not."
     },
     {
-      "case_id": "MATH 2.MOCK.IDENTS",
-      "id": "MATH 2.MOCK.IDENTS",
-      "title": "Exam-style algebra identities and absolute-value claims",
+      "case_id": "MATH 2.147",
+      "id": "math-2-147",
+      "title": "Exam-style tasks - 11",
       "chapter": 2,
-      "subsection": "2.3",
-      "context": "Five short algebra checks in classic exam-identity style: a cubic-sum identity under $a+b+c=0$, a two-branch absolute-value equation, completing the square for a quadratic minimum, one binomial coefficient, and a reciprocal difference-of-squares identity.\n\nDecide whether each statement is true or false.",
+      "subsection": "2.5",
+      "context": "An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=10$ and $ab=21$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$. No decimal approximation is used in the audit.",
       "statements": [
-        "If $a,b,c$ are nonzero reals with $a+b+c=0$, then $a^{3}+b^{3}+c^{3}=3abc$.",
-        "The equation $|2x-1|=|x+4|$ has a unique real solution, and that solution is strictly greater than $2$.",
-        "For every real $x$, the value of $x^{2}-6x+13$ is at least $4$.",
-        "In the expansion of $(1+2x)^{5}$, the coefficient of $x^{3}$ is strictly larger than $70$.",
-        "For every real $t\\neq 0$, $\\left(t+\\dfrac{1}{t}\\right)^{2}-\\left(t-\\dfrac{1}{t}\\right)^{2}=4$."
+        "$a^2+b^2=58$.",
+        "$(a-b)^2=16$.",
+        "$a^3+b^3=371$.",
+        "$\\{a,b\\}=\\{3,7\\}$.",
+        "$\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}$."
       ],
       "answer_key": [
         true,
+        true,
         false,
         true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe cubic sum identity factors as\n\n$$\na^{3}+b^{3}+c^{3}-3abc=(a+b+c)(a^{2}+b^{2}+c^{2}-ab-bc-ca)\n$$\n\nUnder the hypothesis $a+b+c=0$, the right-hand factor is multiplied by zero, so\n\n$$\na^{3}+b^{3}+c^{3}-3abc=0\n$$\n\nHence $a^{3}+b^{3}+c^{3}=3abc$ whenever $a+b+c=0$ (the nonzero hypothesis only excludes division pathologies elsewhere; it is not needed for this identity).\n\nSo the statement is True.",
-        "**B.** → False\n\nDrop the absolute values by cases:\n\n$$\n2x-1=x+4\\quad\\text{or}\\quad 2x-1=-(x+4)\n$$\n\nThe first branch gives $x=5$. The second gives $3x=-3$, so $x=-1$. Both satisfy the original absolute-value equation, so there are two real solutions. The claim’s “unique real solution” already fails (even though $5>2$).\n\nSo the statement is False.",
-        "**C.** → True\n\nComplete the square:\n\n$$\nx^{2}-6x+13=(x-3)^{2}+4\n$$\n\nSince $(x-3)^{2}\\ge 0$ for every real $x$,\n\n$$\n(x-3)^{2}+4\\ge 4\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\nThe binomial theorem gives\n\n$$\n(1+2x)^{5}=\\sum_{k=0}^{5}\\binom{5}{k}1^{5-k}(2x)^{k}\n$$\n\nThe $x^{3}$ term is the $k=3$ summand:\n\n$$\n\\binom{5}{3}\\cdot 2^{3}=10\\cdot 8=80\n$$\n\n$$\n80>70\n$$\n\nSo the statement is True.",
-        "**E.** → True\n\nSet $u=t+\\dfrac{1}{t}$ and $v=t-\\dfrac{1}{t}$. Then\n\n$$\nu^{2}-v^{2}=(u-v)(u+v)\n$$\n\n$$\nu-v=\\dfrac{2}{t},\\qquad u+v=2t\n$$\n\n$$\n(u-v)(u+v)=\\dfrac{2}{t}\\cdot 2t=4\n$$\n\nSo the statement is True."
+        "**A.** → True\n\nSum of squares follows from the square of the sum after the mixed product is peeled off.\n\nStart from the square of the recorded sum:\n\n$$\n(a+b)^2=a^2+2ab+b^2\n$$\n\nRearrange to isolate the sum of squares:\n\n$$\na^2+b^2=(a+b)^2-2ab\n$$\n\nSubstitute $a+b=10$ and $ab=21$:\n\n$$\na^2+b^2=10^2-2\\cdot21\n$$\n\n$$\na^2+b^2=100-42\n$$\n\n$$\na^2+b^2=58\n$$\n\nThe claim asserts the same value $58$.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nThe squared gap $(a-b)^{2}$ is another elementary identity in $a+b$ and $ab$.\n\nExpand $(a-b)^{2}$ and rewrite in elementary symmetric form:\n\n$$\n(a-b)^2=a^2-2ab+b^2\n$$\n\n$$\n(a-b)^2=(a+b)^2-4ab\n$$\n\nSubstitute the archive values:\n\n$$\n(a-b)^2=10^2-4\\cdot21\n$$\n\n$$\n(a-b)^2=100-84\n$$\n\n$$\n(a-b)^2=16\n$$\n\nThe claim is $(a-b)^2=16$.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nCubes expand through the same sum and product; the middle term is $3ab(a+b)$.\n\nThe cube-sum identity reads\n\n$$\na^3+b^3=(a+b)^3-3ab(a+b)\n$$\n\nSubstitute $a+b=10$ and $ab=21$:\n\n$$\na^3+b^3=10^3-3\\cdot21\\cdot10\n$$\n\n$$\na^3+b^3=1000-630\n$$\n\n$$\na^3+b^3=370\n$$\n\nThe claim asserts $371$, but the identity produces $370$.\n\nSince $370\\ne371$, the claim does not hold.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nThe unordered pair $\\{a,b\\}$ is exactly the root set of the monic quadratic with those coefficients.\n\nForm the monic quadratic with sum $a+b$ and product $ab$:\n\n$$\nt^2-(a+b)t+ab=0\n$$\n\n$$\nt^2-10t+21=0\n$$\n\nFactor the left-hand side:\n\n$$\nt^2-10t+21=(t-3)(t-7)\n$$\n\nThe roots are therefore $t=3$ and $t=7$, so\n\n$$\n\\{a,b\\}=\\{3,7\\}\n$$\n\nThat matches the claimed unordered pair.\n\nSo the statement is True.\n",
+        "**E.** → False\n\nSum of reciprocals is the elementary quotient of sum by product.\n\n$$\n\\dfrac1a+\\dfrac1b\n$$\n\n$$\n\\dfrac1a+\\dfrac1b=\\dfrac{21}{10}\n$$\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}\n$$\n\nSubstitute $a+b=10$ and $ab=21$:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}\n$$\n\nThe claim asserts $\\dfrac{21}{10}$. Since $\\dfrac{10}{21}\\neq\\dfrac{21}{10}$, the claim does not hold.\n\nSo the statement is False.\n"
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Treat each letter as its own short algebra check: cubic sum identity, two-branch absolute values, completing the square, one binomial coefficient, and a reciprocal difference of squares."
+      "solution_overview": "Only the elementary symmetric data $a+b=10$ and $ab=21$ are recorded. Every claim must follow from those two numbers (or from the monic quadratic $t^{2}-10t+21=0$ whose roots are $a$ and $b$).\n\nThe standing identities are\n\n$$a^{2}+b^{2}=(a+b)^{2}-2ab$$\n\n$$(a-b)^{2}=(a+b)^{2}-4ab$$\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}$$\n\nSubstituting the archive values recovers $a^{2}+b^{2}=58$, $(a-b)^{2}=16$, $a^{3}+b^{3}=370$, and $\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{10}{21}$. Factoring $t^{2}-10t+21=(t-3)(t-7)$ shows $\\{a,b\\}=\\{3,7\\}$."
     },
     {
       "case_id": "MATH 11.112",
       "id": "math-11-112",
-      "title": "Hospital imaging schedules — present-value comparisons",
+      "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center",
       "chapter": 3,
       "subsection": "3.6",
-      "context": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules.\n\nSchedule I: pay USD 850,000 in cash immediately.\n\nSchedule II: pay USD 140,000 per year for 9 years, with the first instalment paid immediately.\n\nSchedule III: pay USD 300,000 in cash immediately, plus USD 80,000 per year for 11 years, with the first of these instalments paid one year later.\n\nThe hospital wants to know which schedule is cheapest in present-value terms at the stated annual discount rates.\n\nDecide whether each statement is true or false.",
+      "context": "A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules.\n\nSchedule I: pay USD 850,000 in cash immediately.\n\nSchedule II: pay USD 140,000 per year for 9 years, with the first instalment paid immediately.\n\nSchedule III: pay USD 300,000 in cash immediately, plus USD 80,000 per year for 11 years, with the first of these instalments paid one year later.\n\nThe hospital wants to know which schedule is cheapest in present-value terms at the stated annual discount rates.",
       "statements": [
         "At an 8% annual rate, the present value of Schedule II is approximately USD 944,529.45.",
         "At an 8% annual rate, the present value of Schedule III is approximately USD 871,117.14.",
@@ -733,142 +733,111 @@
       "solution_overview": "A hospital system is choosing among three payment schedules for an imaging center. Schedule I: USD 850,000 cash immediately. Schedule II: USD 140,000 per year for $9$ years, first instalment immediate. Schedule III: USD 300,000 cash immediately plus USD 80,000 per year for $11$ years, first of these instalments one year later. Compare present values at $8\\%$ and at $12\\%$.\n\n**Part 1: Setup.**\n\n$$\na_{\\mathrm{II}} = 140,000,\n$$\n\n$$\nn_{\\mathrm{II}} = 9\n$$\n\n$$\na_{\\mathrm{III}} = 80,000,\n$$\n\n$$\nn_{\\mathrm{III}} = 11\n$$\n\nThe rates are $r=0.08$ and $r=0.12$. Schedule I is USD 850,000 today.\n\n**Part 2: Solve.**\n\nSchedule II is an annuity due:\n\nSchedule III is cash plus an ordinary annuity:\n\nAt $8\\%$,\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.08}\\bigl[1-(1.08)^{-8}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{II}} \\approx 944,529.45\n$$\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.08}\\bigl[1-(1.08)^{-11}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{III}} \\approx 871,117.14\n$$\n\nAt $12\\%$,\n\n$$\nPV_{\\mathrm{II}} = 140,000 + \\frac{140,000}{0.12}\\bigl[1-(1.12)^{-8}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{II}} \\approx 835,470\n$$\n\n$$\nPV_{\\mathrm{III}} = 300,000 + \\frac{80,000}{0.12}\\bigl[1-(1.12)^{-11}\\bigr]\n$$\n\n$$\nPV_{\\mathrm{III}} \\approx 775,015.93\n$$"
     },
     {
-      "case_id": "MATH 4.MOCK.MIXEQ",
-      "id": "MATH 4.MOCK.MIXEQ",
-      "title": "Mixed equation families — pipes, digits, percentages, rectangle, exponential",
+      "case_id": "MATH 4.158",
+      "id": "math-4-158",
+      "title": "Flow Rate Regulation in Coolant Networks",
       "chapter": 4,
-      "subsection": "4.2",
-      "context": "Five standalone equation problems appear below, each from a different modelling family: an interrupted two-pipe tank fill, a two-digit number reconstruction, successive percentage price changes, a rectangle with a Pythagorean diagonal, and an exponential equation with matching bases.\n\nDecide whether each statement is true or false.",
+      "subsection": "4.3",
+      "context": "A chemical production facility operates a closed-loop coolant network where volumetric flow rates are regulated by setting an operational parameter $x \\in \\mathbb{R}$. Fluid dynamicists model different sections of this piping network using five specialized rate-of-flow equations:\n\n1. The main return line equation:\n$$\\frac{2x}{x-1} - \\frac{3}{x+2} = \\frac{6}{x^2+x-2} + 1$$\n\n2. The alternative bypass line equation:\n$$\\frac{x}{x-3} - \\frac{2}{x+3} = \\frac{18}{x^2-9} + 1$$\n\n3. The pressurized suction line equation:\n$$\\sqrt{2x+7} - x = 2$$\n\n4. The directional regulator valve equation:\n$$|3x - 2| = 2x - 5$$\n\n5. The harmonic booster pump cycle equation:\n$$(x^2 - 2x)^2 - 11(x^2 - 2x) + 24 = 0$$",
       "statements": [
-        "Pipe A alone fills a tank in $8$ hours and pipe B alone fills it in $24$ hours. They run together for $3$ hours, then A is shut off and B finishes alone. The total elapsed time from the start until the tank is full is strictly less than $14$ hours.",
-        "A two-digit number has digit sum $12$, and the number exceeds its reverse by $18$. The number itself is strictly greater than $80$.",
-        "A catalogue price is raised by $25\\%$ and later reduced by $20\\%$ of the new price. The final price equals the original catalogue price.",
-        "A rectangle has perimeter $40$ and area $96$. Its diagonal is strictly greater than $15$.",
-        "Every real solution of $5^{x}=25^{x-1}$ is strictly greater than $1$."
+        "Clearing denominators in the main return line equation yields the quadratic relation $x^2 - 1 = 0$, but the candidate $x = 1$ is an extraneous root excluded by the domain restriction $x \\notin \\{-2, 1\\}$, leaving $x = -1$ as the unique valid solution.",
+        "The alternative bypass line equation admits exactly one real solution within its operational domain.",
+        "Squaring both sides of the isolated radical equation $\\sqrt{2x+7} = x+2$ produces the candidate roots $x = -3$ and $x = 1$, of which $x = -3$ is an extraneous root.",
+        "The directional regulator valve equation $|3x - 2| = 2x - 5$ admits two distinct real solutions whose sum is strictly positive.",
+        "Substituting $u = x^2 - 2x$ into the harmonic booster pump cycle equation generates two quadratic equations in $x$, yielding a total of four distinct real solutions whose sum equals 4."
       ],
       "answer_key": [
-        false,
+        true,
         false,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nA’s rate is $\\dfrac{1}{8}$ tank per hour and B’s rate is $\\dfrac{1}{24}$, so together\n\n$$\n\\dfrac{1}{8}+\\dfrac{1}{24}=\\dfrac{3+1}{24}=\\dfrac{1}{6}\n$$\n\nIn the first $3$ hours they fill\n\n$$\n3\\cdot\\dfrac{1}{6}=\\dfrac{1}{2}\n$$\n\nof the tank. The remaining half is finished by B alone:\n\n$$\nt=\\dfrac{1/2}{1/24}=12\n$$\n\nhours. Total elapsed time:\n\n$$\n3+12=15\n$$\n\nThe claim says the total is strictly less than $14$, but $15\\nless 14$.\n\nSo the statement is False.",
-        "**B.** → False\n\nWrite the number as $10a+b$ with digits $a,b$. The stem gives\n\n$$\na+b=12,\\qquad (10a+b)-(10b+a)=18\n$$\n\nThe second equation simplifies to\n\n$$\n9(a-b)=18\\qquad\\Rightarrow\\qquad a-b=2\n$$\n\nSolving with $a+b=12$ yields $a=7$, $b=5$, so the number is $75$. The claim says it is strictly greater than $80$, but $75\\ngtr 80$.\n\nSo the statement is False.",
-        "**C.** → True\n\nStart from catalogue price $P$. After a $25\\%$ rise the price is $1.25P$. A subsequent $20\\%$ reduction of the new price multiplies by $0.8$:\n\n$$\n1.25P\\cdot 0.8=P\n$$\n\nThe final price equals the original catalogue price.\n\nSo the statement is True.",
-        "**D.** → False\n\nPerimeter $40$ means $2(L+W)=40$, so $L+W=20$. With area $LW=96$, the side lengths are the roots of\n\n$$\nt^{2}-20t+96=0\\qquad\\Rightarrow\\qquad (t-12)(t-8)=0\n$$\n\nSo the sides are $12$ and $8$. The diagonal is\n\n$$\n\\sqrt{12^{2}+8^{2}}=\\sqrt{144+64}=\\sqrt{208}=4\\sqrt{13}\n$$\n\nSince $15^{2}=225$ and $208<225$, one has $4\\sqrt{13}<15$. The claim “strictly greater than $15$” fails.\n\nSo the statement is False.",
-        "**E.** → True\n\nRewrite $25=5^{2}$:\n\n$$\n5^{x}=(5^{2})^{x-1}=5^{2x-2}\n$$\n\nEquating exponents (base $5>1$):\n\n$$\nx=2x-2\\qquad\\Rightarrow\\qquad x=2\n$$\n\nThe unique real solution is $x=2$, and $2>1$.\n\nSo the statement is True."
+        "**A.** → True\n\nTo solve a rational equation, one must first identify domain restrictions where denominators equal zero and then check for extraneous solutions created by clearing fractions.\n\nThe factorized denominators of the main return line equation are $x-1$, $x+2$, and $(x-1)(x+2)$. The domain restriction is:\n\n$$x \\in \\mathbb{R} \\setminus \\{-2, 1\\}$$\n\nClearing denominators leads to:\n\n$$x^2 - 1 = 0$$\n\n$$\nx = 1 \\quad \\text{or} \\quad x = -1\n$$\n\nBecause $x = 1$ makes the denominator $x-1$ zero, it is an extraneous root and must be rejected. The only admissible solution is $x = -1$.\n\nSo the statement is True.",
+        "**B.** → False\n\nA solution to a rational equation is admissible only if it belongs to the domain of all rational expressions in the original equation.\n\nFor the bypass line equation, the denominators are $x-3$, $x+3$, and $x^2 - 9$. The domain restriction is:\n\n$$x \\in \\mathbb{R} \\setminus \\{-3, 3\\}$$\n\nClearing the common denominator $x^2 - 9$ yields:\n\n$$x^2 + x + 6 = x^2 + 9$$\n\n$$x = 3$$\n\nThe only algebraic candidate is $x = 3$, which makes the denominators $x-3$ and $x^2-9$ zero. Consequently, $x = 3$ is extraneous, and the equation has zero real solutions in its operational domain.\n\nSo the statement is False.",
+        "**C.** → True\n\nSquaring both sides of a radical equation is not an equivalence transformation and can introduce extraneous roots where the non-radical side was negative.\n\nIsolating the radical gives $\\sqrt{2x+7} = x+2$. Squaring both sides yields:\n\n$$2x + 7 = (x+2)^2$$\n\n$$2x + 7 = x^2 + 4x + 4$$\n\n$$x^2 + 2x - 3 = 0$$\n\n$$(x+3)(x-1) = 0$$\n\nThe algebraic candidates are $x = -3$ and $x = 1$. Substituting $x = -3$ into the isolated equation gives:\n\n$$\n\\sqrt{2(-3)+7} = \\sqrt{1} = 1 \\neq -3 + 2 = -1\n$$\n\nSubstituting $x = 1$ gives:\n\n$$\n\\sqrt{2(1)+7} = \\sqrt{9} = 3 = 1 + 2\n$$\n\nThus $x = -3$ is extraneous while $x = 1$ is valid.\n\nSo the statement is True.",
+        "**D.** → False\n\nAn equation of the form $|A| = B$ requires $B \\ge 0$ and splits into the two cases $A = B$ and $A = -B$.\n\nFor $|3x - 2| = 2x - 5$, the right-hand side requires:\n\n$$2x - 5 \\ge 0 \\iff x \\ge \\frac{5}{2}$$\n\nAnalyzing the first case where $3x - 2 \\ge 0$ gives:\n\n$$\n3x - 2 = 2x - 5 \\iff x = -3\n$$\n\nThis candidate contradicts $x \\ge \\frac{5}{2}$. Analyzing the second case where $3x - 2 < 0$ gives:\n\n$$\n-(3x - 2) = 2x - 5 \\iff 5x = 7 \\iff x = \\frac{7}{5}\n$$\n\nThis candidate also contradicts $x \\ge \\frac{5}{2}$. The equation has no real solutions.\n\nSo the statement is False.",
+        "**E.** → True\n\nAn equation of degree four containing terms of the form $(g(x))^2$ and $g(x)$ can be solved by setting $u = g(x)$.\n\nLetting $u = x^2 - 2x$ transforms the equation into:\n\n$$u^2 - 11u + 24 = 0$$\n\n$$(u-3)(u-8) = 0$$\n\nThis yields two intermediate values, $u = 3$ and $u = 8$. For $u = 3$, we solve:\n\n$$\nx^2 - 2x - 3 = 0 \\iff (x-3)(x+1) = 0 \\iff x \\in \\{-1, 3\\}\n$$\n\nFor $u = 8$, we solve:\n\n$$\nx^2 - 2x - 8 = 0 \\iff (x-4)(x+2) = 0 \\iff x \\in \\{-2, 4\\}\n$$\n\nThe four distinct real solutions are $-2, -1, 3, 4$. Their sum is:\n\n$$\n(-2) + (-1) + 3 + 4 = 4\n$$\n\nThis matches the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Five independent equation checks: interrupted two-pipe fill, two-digit linear system, successive percent factors, rectangle diagonal via Pythagoras, and an exponential with matching bases."
+      "solution_overview": "The five flow-rate equations describe distinct algebraic structures across rational, radical, absolute-value, and quadratic-substitution models.\n\nFor the main return line, factoring the denominator gives $x^2 + x - 2 = (x-1)(x+2)$, which establishes the domain $D_1 = \\mathbb{R} \\setminus \\{-2, 1\\}$. Multiplying both sides by the common denominator $(x-1)(x+2)$ yields:\n\n$$2x(x+2) - 3(x-1) = 6 + (x-1)(x+2)$$\n\n$$2x^2 + x + 3 = x^2 + x + 4$$\n\n$$x^2 - 1 = 0$$\n\nFor the alternative bypass line, the common denominator is $(x-3)(x+3) = x^2 - 9$, imposing the domain $D_2 = \\mathbb{R} \\setminus \\{-3, 3\\}$. Multiplying through by $x^2 - 9$ produces:\n\n$$x(x+3) - 2(x-3) = 18 + (x^2 - 9)$$\n\n$$x^2 + x + 6 = x^2 + 9$$\n\n$$x = 3$$\n\nFor the suction line, isolating the radical gives $\\sqrt{2x+7} = x+2$. Squaring both sides under the requirement $x+2 \\ge 0$ leads to:\n\n$$2x + 7 = x^2 + 4x + 4$$\n\n$$x^2 + 2x - 3 = 0$$\n\nFor the regulator valve, the absolute-value equation $|3x-2| = 2x-5$ requires $2x - 5 \\ge 0$ because the absolute value cannot be negative.\n\nFor the booster pump, the substitution $u = x^2 - 2x$ transforms the fourth-degree polynomial into a quadratic in $u$:\n\n$$u^2 - 11u + 24 = 0$$"
     },
     {
-      "case_id": "MATH 5.MOCK.RATES",
-      "id": "MATH 5.MOCK.RATES",
-      "title": "Three-ingredient nutrition targets — linear system",
+      "case_id": "MATH 5.68",
+      "id": "math-5-68",
+      "title": "Exam-style tasks - 8",
       "chapter": 5,
-      "subsection": "5.3",
-      "context": "A canteen prepares one lunch mix from three ingredients — rice ($r$ portions), beans ($b$ portions), and tofu ($t$ portions). The mix must hit three nutrient targets exactly:\n\n$$\n\\begin{aligned}\n3r+b+2t&=14\\quad\\text{(protein units)}\\\\\nr+4b+t&=13\\quad\\text{(carbohydrate units)}\\\\\n2r+b+3t&=15\\quad\\text{(fat units)}\n\\end{aligned}\n$$\n\nPortions are real numbers (not necessarily integers in intermediate algebra, though the unique solution happens to be integral). Decide whether each statement is true or false.",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The unique solution satisfies $r=2$, $b=2$, and $t=3$.",
-        "In the unique solution, the tofu portion is strictly larger than the rice portion.",
-        "If the protein target were raised from $14$ to $15$ while the other two targets stayed fixed, the rice portion in the new unique solution would be strictly smaller than $2$.",
-        "Doubling every coefficient and every right-hand side leaves the unique solution $(r,b,t)$ unchanged.",
-        "The sum $r+b+t$ in the unique solution is strictly less than $8$."
+        "A parent is $27$ years older than a child. After nine years, the parent's age will be $\\frac52$ times the child's age then. The child's current age is $9$ years.",
+        "Two couriers start $24$ km apart and ride toward each other, meeting after $0.2$ hour. The faster courier travels $20$ km/h faster, so the slower courier rides at $45$ km/h.",
+        "A hospital staffs registered nurses and aides on one shift. Headcount gives $x+y=52$ and credential units give $3x+y=100$. The shift uses $24$ registered nurses.",
+        "A sleeper train booked 64 berths at USD 120 and coach seats at USD 68, collecting USD 5{,}704 from those 64 travelers. Solving the two booking counts gives $22$ sleeper berths.",
+        "A feed mill uses $16\\%$ and $28\\%$ protein meals to make $90$ tons at $22\\%$ protein. The high-protein meal must supply $45$ tons."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute $(r,b,t)=(2,2,3)$ into all three equations:\n\n$$\n3\\cdot 2+2+2\\cdot 3=6+2+6=14\n$$\n\n$$\n2+4\\cdot 2+3=2+8+3=13\n$$\n\n$$\n2\\cdot 2+2+3\\cdot 3=4+2+9=15\n$$\n\nAll three targets hold. The coefficient matrix is invertible (its determinant is nonzero), so the solution is unique.\n\nSo the statement is True.",
-        "**B.** → True\n\nFrom A, $t=3$ and $r=2$, so\n\n$$\nt-r=1>0\n$$\n\nTofu is strictly larger than rice.\n\nSo the statement is True.",
-        "**C.** → False\n\nRaise only the protein right-hand side to $15$ and re-solve the same coefficient matrix. Elimination yields the unique new solution\n\n$$\n(r,b,t)=\\left(\\dfrac{47}{18},\\dfrac{35}{18},\\dfrac{47}{18}\\right)\n$$\n\nIn particular\n\n$$\nr=\\dfrac{47}{18}\\approx 2.61>2\n$$\n\nso rice rises, not falls. The claim “strictly smaller than $2$” fails.\n\nSo the statement is False.",
-        "**D.** → True\n\nMultiplying every equation by $2$ produces an equivalent linear system: the same triples $(r,b,t)$ satisfy it, and uniqueness is preserved. Scaling an invertible system’s rows does not change its solution set.\n\nSo the statement is True.",
-        "**E.** → True\n\nFrom A,\n\n$$\nr+b+t=2+2+3=7\n$$\n\n$$\n7<8\n$$\n\nSo the statement is True."
+        "**A.** → True\n\nWrite both stem conditions as linear equations in the two unknowns, then solve the system for the quantity named in the claim.\n\n$$1x-1y=27$$\n\n$$2x-5y=27$$\n\n$$1\\cdot (-5) = -5$$\n\n$$(-1)\\cdot 2 = -2$$\n\n$$\\Delta = -5 - (-2)$$\n\n$$\\Delta = -3$$\n\n$$27\\cdot (-5) = -135$$\n\n$$(-1)\\cdot 27 = -27$$\n\n$$-135 - (-27) = -108$$\n\n$$x = \\frac{-108}{-3}$$\n\n$$x = 36$$\n\n$$1\\cdot 27 = 27$$\n\n$$27\\cdot 2 = 54$$\n\n$$27 - 54 = -27$$\n\n$$y = \\frac{-27}{-3}$$\n\n$$y = 9$$\n\nThe system gives $9$ years for child's present age, exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nLabel the unknowns from the stem, form the coefficient matrix, and read off the claimed component of the solution.\n\n$$0.2x+0.2y=24$$\n\n$$1x-1y=20$$\n\n$$0.2\\cdot (-1) = -0.2$$\n\n$$0.2\\cdot 1 = 0.2$$\n\n$$\\Delta = -0.2 - 0.2$$\n\n$$\\Delta = -0.4$$\n\n$$24\\cdot (-1) = -24$$\n\n$$0.2\\cdot 20 = 4$$\n\n$$-24 - 4 = -28$$\n\n$$x = \\frac{-28}{-0.4}$$\n\n$$x = 70$$\n\n$$0.2\\cdot 20 = 4$$\n\n$$24\\cdot 1 = 24$$\n\n$$4 - 24 = -20$$\n\n$$y = \\frac{-20}{-0.4}$$\n\n$$y = 50$$\n\nThe system gives $50$ km/h for slower courier speed, not $45$ km/h.\n\nSo the statement is False.",
+        "**C.** → True\n\nClear the story into a $2\\times 2$ model first; only then test the numerical claim against the recovered values.\n\n$$1x+1y=52$$\n\n$$3x+1y=100$$\n\n$$1\\cdot 1 = 1$$\n\n$$1\\cdot 3 = 3$$\n\n$$\\Delta = 1 - 3$$\n\n$$\\Delta = -2$$\n\n$$52\\cdot 1 = 52$$\n\n$$1\\cdot 100 = 100$$\n\n$$52 - 100 = -48$$\n\n$$x = \\frac{-48}{-2}$$\n\n$$x = 24$$\n\n$$1\\cdot 100 = 100$$\n\n$$52\\cdot 3 = 156$$\n\n$$100 - 156 = -56$$\n\n$$y = \\frac{-56}{-2}$$\n\n$$y = 28$$\n\nThe system gives $24$ for registered nurses, exactly as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nTranslate each reported total into an equation, eliminate one variable, and compare the remaining unknown with the claim.\n\nBuild the $2\\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=64$$\n\n$$120x+68y=5704$$\n\n$$1\\cdot 68 = 68$$\n\n$$1\\cdot 120 = 120$$\n\n$$\\Delta = 68 - 120$$\n\n$$\\Delta = -52$$\n\n$$64\\cdot 68 = 4352$$\n\n$$1\\cdot 5704 = 5704$$\n\n$$4352 - 5704 = -1352$$\n\n$$x = \\frac{-1352}{-52}$$\n\n$$x = 26$$\n\n$$1\\cdot 5704 = 5704$$\n\n$$64\\cdot 120 = 7680$$\n\n$$5704 - 7680 = -1976$$\n\n$$y = \\frac{-1976}{-52}$$\n\n$$y = 38$$\n\nThe system gives $26$ for sleeper berths, not $22$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet up the mix from the stem as a linear system and check whether the claimed figure matches the solved value.\n\n$$1x+1y=90$$\n\n$$28x+16y=1980$$\n\n$$1\\cdot 16 = 16$$\n\n$$1\\cdot 28 = 28$$\n\n$$\\Delta = 16 - 28$$\n\n$$\\Delta = -12$$\n\n$$90\\cdot 16 = 1440$$\n\n$$1\\cdot 1980 = 1980$$\n\n$$1440 - 1980 = -540$$\n\n$$x = \\frac{-540}{-12}$$\n\n$$x = 45$$\n\n$$1\\cdot 1980 = 1980$$\n\n$$90\\cdot 28 = 2520$$\n\n$$1980 - 2520 = -540$$\n\n$$y = \\frac{-540}{-12}$$\n\n$$y = 45$$\n\nThe system gives $45$ tons for tons of high-protein meal, exactly as claimed.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Solve the $3\\times 3$ nutrient system once to get $(r,b,t)=(2,2,3)$. Letters A/B/E read off that solution; C perturbs one right-hand side; D notes row-scaling equivalence."
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: ages_digits, rates_work, systems, tickets, mixture\n\nA. solve a parent-child age system with a future ratio.\nB. solve courier speeds from meeting time.\nC. recover hospital staffing counts.\nD. separate sleeper and coach bookings.\nE. formulate animal feed at a target protein rate."
     },
     {
-      "case_id": "MATH 6.MOCK.SIGNS",
-      "id": "MATH 6.MOCK.SIGNS",
-      "title": "Sign-chart inequalities — rational, reciprocal, exponential, abs-vs-quadratic",
+      "case_id": "MATH 6.15",
+      "id": "math-6-15",
+      "title": "Rational Inequalities — 15",
       "chapter": 6,
-      "subsection": "6.4",
-      "context": "Five inequality claims follow in a fixed but nonstandard order. Work a rational inequality with a sign chart, then a quadratic-in-$1/x$ bound, an exponential inequality, an absolute-value-versus-quadratic comparison, and a second rational inequality that collapses to a single critical point.\n\nDecide whether each statement is true or false.",
+      "subsection": "6.1",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Every real solution of $\\dfrac{x-2}{x+1}\\ge 0$ satisfies $x\\ge 2$.",
-        "For every real $x>0$, one has $x+\\dfrac{1}{x}\\ge 2$.",
-        "The solution set of $2^{x+1}\\le 16$ is exactly $(-\\infty,3]$.",
-        "Every real $x$ satisfying $|x-3|<x^{2}-5x+6$ also satisfies $x>4$.",
-        "The inequality $\\dfrac{x+2}{x-3}>1$ holds for every $x\\in(-\\infty,-2)$."
+        "The solution set of the inequality $\\dfrac{(x + 1)(x - 2)}{x + 4} > 0$ is $(-4, -1) \\cup (2, \\infty)$.",
+        "The solution set of the inequality $\\dfrac{x + 1}{x^{2} - 4} < 0$ is $(-\\infty, -2) \\cup (-1, 2)$.",
+        "The inequality $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ holds exactly for $x > 4$.",
+        "The solution set of the inequality $\\dfrac{x + 1}{x^{2} - 4} < 0$ is $(-\\infty, -2) \\cup (-1, 2)$.",
+        "The inequality $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ holds exactly for $x > 4$."
       ],
       "answer_key": [
-        false,
         true,
         true,
         false,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCritical points $x=-1$ (vertical asymptote / undefined) and $x=2$ (zero). A sign chart on $(-\\infty,-1)$, $(-1,2)$, and $(2,\\infty)$ shows the quotient is nonnegative on\n\n$$\n(-\\infty,-1)\\cup[2,\\infty)\n$$\n\n(with $x=-1$ excluded). The point $x=-2$ is a solution but $-2\\ngeq 2$, so not every solution satisfies $x\\ge 2$.\n\nSo the statement is False.",
-        "**B.** → True\n\nFor $x>0$,\n\n$$\nx+\\dfrac{1}{x}-2=\\dfrac{x^{2}-2x+1}{x}=\\dfrac{(x-1)^{2}}{x}\\ge 0\n$$\n\nbecause the numerator is a square and the denominator is positive. Equality holds at $x=1$.\n\nSo the statement is True.",
-        "**C.** → True\n\nRewrite $16=2^{4}$:\n\n$$\n2^{x+1}\\le 2^{4}\n$$\n\nThe exponential base $2>1$ is increasing, so the inequality of exponents is\n\n$$\nx+1\\le 4\\qquad\\Rightarrow\\qquad x\\le 3\n$$\n\nThat is exactly $(-\\infty,3]$.\n\nSo the statement is True.",
-        "**D.** → False\n\nFactor the quadratic:\n\n$$\nx^{2}-5x+6=(x-2)(x-3)\n$$\n\nAt $x=0$ one finds\n\n$$\n|0-3|=3,\\qquad (0-2)(0-3)=6\n$$\n\nand $3<6$, so $x=0$ solves the strict inequality. But $0\\ngtr 4$, so the universal claim fails.\n\nSo the statement is False.",
-        "**E.** → False\n\nBring to one side:\n\n$$\n\\dfrac{x+2}{x-3}-1=\\dfrac{(x+2)-(x-3)}{x-3}=\\dfrac{5}{x-3}\n$$\n\nSo the inequality becomes $\\dfrac{5}{x-3}>0$, hence $x>3$. In particular it fails throughout $(-\\infty,-2)$ (for example at $x=-3$: $\\dfrac{-1}{-6}=\\dfrac{1}{6}\\nless 1$ wait — $\\dfrac{-1}{-6}=1/6\\ngtr 1$). Directly: at $x=-3$, $\\dfrac{-1}{-6}=\\dfrac{1}{6}\\ngtr 1$.\n\nSo the statement is False."
+        "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{(x - 2) (x + 1)}{x + 4}>0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n(x^{2} - x) - 2=0\n$$\n\n$$\n(x - 2) (x + 1)=0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n$$\nx + 4=0\\Rightarrow x=-4\n$$\n\n(the pole $x=-4$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{(x - 2) (x + 1)}{x + 4}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-4, -1) \\cup (2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**B.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{x + 1}{x^{2} - 4}<0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\nx + 1=0\\Rightarrow x=-1\n$$\n\n$$\nx^{2} - 4=0\n$$\n\n$$\n(x - 2) (x + 2)=0\n$$\n\n$$\nx=-2\n$$\n\n(the pole $x=-2$ is never allowed).\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n(the pole $x=2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x + 1}{x^{2} - 4}$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, -2) \\cup (-1, 2)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**C.** → False\n\nStart from the claimed inequality.\n\n$$\n\\frac{(x + 1)^{2}}{x - 4}\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n(x^{2} + 2 x) + 1=0\n$$\n\n$$\n(x + 1)^{2}=0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(the pole $x=4$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{(x + 1)^{2}}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n\\{-1\\} \\cup (4, \\infty)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{x + 1}{x^{2} - 4}<0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\nx + 1=0\\Rightarrow x=-1\n$$\n\n$$\nx^{2} - 4=0\\Rightarrow x=-2\n$$\n\n(the pole $x=-2$ is never allowed).\n\n$$\nx^{2} - 4=0\\Rightarrow x=2\n$$\n\n(the pole $x=2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x + 1}{x^{2} - 4}$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, -2) \\cup (-1, 2)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**E.** → False\n\nTest the claim that $\\frac{(x + 1)^{2}}{x - 4}\\ge 0$ holds exactly on $x > 4$.\n\n$$\n\\frac{(x + 1)^{2}}{x - 4}\\ge 0\n$$\n\nNumerator zero and pole:\n\n$$\n(x + 1)^{2}=0\\Rightarrow x=-1\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(the pole $x=4$ is excluded).\n\nBecause the numerator is a square, it is nonnegative everywhere and zero only at $x=-1$.\n\n| Interval | Sign of $\\frac{(x + 1)^{2}}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAt $x=-1$ the fraction equals $0$, so the non-strict inequality holds there as well. The full solution is therefore\n\n$$\n\\{-1\\}\\cup(4,\\infty)\n$$\n\nThe claim keeps only $(4,\\infty)$ and drops the isolated root $x=-1$, so it is incomplete.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Five independent inequality checks with a new type order: rational sign chart, $x+1/x$, exponential with matched bases, absolute value versus a factored quadratic, and a rational inequality reducing to a single critical point."
+      "solution_overview": "Evaluate each statement. Mark it TRUE or FALSE.\n\nFind the zeros of the numerator and the excluded zeros of the denominator, then read the sign of the expression on each open interval. Include a critical point only when it comes from the numerator and the inequality is non-strict. A denominator zero is never a solution.\n\nTypes in this set: Rational inequality (two linear factors over one); Rational inequality (linear over quadratic); Rational inequality (squared numerator)."
     },
     {
-      "case_id": "MATH 7.MOCK.REVENUE",
-      "id": "MATH 7.MOCK.REVENUE",
-      "title": "Kiosk revenue — quadratic rebuild from second differences",
+      "case_id": "MATH 7.E30",
+      "id": "math-7-e30",
+      "title": "Arch crown versus a falling trolley chord",
       "chapter": 7,
-      "subsection": "7.2",
-      "context": "A kiosk records revenue $R(q)$ (in euro) against packs sold $q$. Four observed pairs are:\n\n| $q$ (packs) | $R(q)$ (euro) |\n| ---: | ---: |\n| $1$ | $38$ |\n| $2$ | $72$ |\n| $3$ | $102$ |\n| $4$ | $128$ |\n\nFirst differences of $R$ fall by a constant second difference of $-4$, so $R$ is exactly quadratic on these integers. Extend that same quadratic model to nearby integers and to the vertex. Decide whether each statement is true or false.",
+      "subsection": "7.5",
+      "context": "A bridge arch is the part of $g(x)=4-(x-2)^{2}$ above the road $y=0$. A maintenance trolley follows the chord $f(x)=2-\\frac{1}{2}x$ on the same interval. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The unique quadratic with those four values is $R(q)=-2q^{2}+40q$.",
-        "Under that quadratic model, $R(5)$ is strictly greater than $145$.",
-        "The model’s vertex (maximum on the reals) occurs at $q=10$.",
-        "The maximal modelled revenue is strictly greater than $200$ euro.",
-        "The first differences $R(2)-R(1)$, $R(3)-R(2)$, $R(4)-R(3)$ form an arithmetic sequence with common difference $-4$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nAssume $R(q)=aq^{2}+bq+c$. The four table values overdetermine a quadratic, but constant second differences of $-4$ force $2a=-4$, so $a=-2$. Matching $R(1)=38$ and $R(2)=72$:\n\n$$\n-2+b+c=38,\\qquad -8+2b+c=72\n$$\n\nSubtract: $-6+b=34$, so $b=40$, then $c=0$. Hence\n\n$$\nR(q)=-2q^{2}+40q\n$$\n\nand it reproduces $R(3)=102$, $R(4)=128$ as well.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nR(5)=-2\\cdot 25+40\\cdot 5=-50+200=150\n$$\n\n$$\n150>145\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\nFor $R(q)=-2q^{2}+40q$ the vertex abscissa is\n\n$$\nq=-\\dfrac{b}{2a}=-\\dfrac{40}{2(-2)}=10\n$$\n\nSo the statement is True.",
-        "**D.** → False\n\nAt the vertex $q=10$,\n\n$$\nR(10)=-2\\cdot 100+40\\cdot 10=-200+400=200\n$$\n\nThe claim asks for a value strictly greater than $200$ euro, but the maximum equals $200$, so $200\\ngtr 200$.\n\nSo the statement is False.",
-        "**E.** → True\n\nRead the first differences from the table:\n\n$$\n72-38=34,\\qquad 102-72=30,\\qquad 128-102=26\n$$\n\nThen\n\n$$\n30-34=-4,\\qquad 26-30=-4\n$$\n\nso the first differences form an arithmetic sequence with common difference $-4$.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Constant second difference $-4$ forces $a=-2$; fit $b,c$ from the table to get $R(q)=-2q^{2}+40q$. Letters then evaluate $R(5)$, the vertex, and the first-difference pattern. Keep euro amounts in prose, not inside math."
-    },
-    {
-      "case_id": "MATH 8.MOCK.SCALE",
-      "id": "MATH 8.MOCK.SCALE",
-      "title": "Two power-law shipping costs — scale factors and elasticity",
-      "chapter": 8,
-      "subsection": "8.3",
-      "context": "Two shipping cost models (in euro) depend on package weight $w>0$:\n\n$$\nC_{A}(w)=A\\,w^{3/2},\\qquad C_{B}(w)=B\\,w^{1/2}\n$$\n\nwith unknown positive constants $A,B$. Calibration at weight $w=4$ gives $C_{A}(4)=64$ and $C_{B}(4)=20$. The elasticity of either model is the logarithmic derivative $\\dfrac{\\mathrm{d}(\\ln C)}{\\mathrm{d}(\\ln w)}$, which equals the power of $w$. Decide whether each statement is true or false.",
-      "statements": [
-        "The calibrated constants are $A=8$ and $B=10$.",
-        "At weight $w=9$, model A costs strictly more than $200$ euro.",
-        "If weight doubles from any $w>0$, model A’s cost is multiplied by exactly $2\\sqrt{2}$.",
-        "The elasticity of model B with respect to weight equals $\\dfrac{1}{2}$.",
-        "There exists a weight $w>0$ at which the two calibrated costs are equal and that weight is strictly less than $1$."
+        "The arch meets the road at $x=0$ and $x=4$, and the crown is the midpoint $(2,4)$.",
+        "The trolley path has slope $-\\frac{1}{2}$, and at the crown abscissa the trolley sits at height $1$, three units below the crown.",
+        "The difference $g-f$ has discriminant $\\frac{49}{4}>0$, so the arch and the trolley meet twice.",
+        "At $x=2$ the trolley height $1$ lies strictly below the arch height $4$.",
+        "The trolley path lies above the arch at $x=2$, so the chord overshoots the crown."
       ],
       "answer_key": [
         true,
@@ -878,112 +847,144 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom $C_{A}(4)=64$:\n\n$$\nA\\cdot 4^{3/2}=A\\cdot (2^{2})^{3/2}=A\\cdot 2^{3}=8A=64\\qquad\\Rightarrow\\qquad A=8\n$$\n\nFrom $C_{B}(4)=20$:\n\n$$\nB\\cdot 4^{1/2}=2B=20\\qquad\\Rightarrow\\qquad B=10\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nC_{A}(9)=8\\cdot 9^{3/2}=8\\cdot (3^{2})^{3/2}=8\\cdot 3^{3}=8\\cdot 27=216\n$$\n\nKeep the currency in prose: $216$ euro is strictly more than $200$ euro.\n\nSo the statement is True.",
-        "**C.** → True\n\nReplacing $w$ by $2w$ multiplies $C_{A}$ by\n\n$$\n(2w)^{3/2}/w^{3/2}=2^{3/2}=2\\sqrt{2}\n$$\n\nindependent of $w$ and of $A$.\n\nSo the statement is True.",
-        "**D.** → True\n\nFor $C_{B}(w)=B w^{1/2}$,\n\n$$\n\\ln C_{B}=\\ln B+\\dfrac{1}{2}\\ln w\n$$\n\nso\n\n$$\n\\dfrac{\\mathrm{d}(\\ln C_{B})}{\\mathrm{d}(\\ln w)}=\\dfrac{1}{2}\n$$\n\nSo the statement is True.",
-        "**E.** → False\n\nSet $8w^{3/2}=10w^{1/2}$ with $w>0$ and divide by $w^{1/2}$:\n\n$$\n8w=10\\qquad\\Rightarrow\\qquad w=\\dfrac{10}{8}=1.25\n$$\n\nThe crossing weight is $1.25$, which is not strictly less than $1$.\n\nSo the statement is False."
+        "**A.** → True\n\nThe arch meets the road where the completed square equals $4$. Solving names the two abutments, whose midpoint is the crown.\n\n$$4-(x-2)^{2}=0$$\n\n$$x-2=\\pm 2$$\n\n$$x=0$$\n\n$$x=4\\qquad\\text{crown }(2,4)$$\n\nRoad meetings $0$ and $4$, and crown $(2,4)$, both match. The axis of the downward parabola is that same midpoint $x=2$.\n\nThe axis of $4-(x-2)^{2}$ is the unmoved line $x=2$, which is also the midpoint of the two road meetings $0$ and $4$.\n\n$$x=\\frac{0+4}{2}$$\n\n$$x=\\frac{4}{2}$$\n\n$$x=2$$\n\nThe arch meets the road at $x=0$ and $x=4$, and the crown is the midpoint $(2,4)$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe coefficient of $x$ in the trolley rule is the slope. Evaluate at the crown abscissa $x=2$ and compare with the crown height $4$.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$m=-\\frac{1}{2}$$\n\n$$f(2)=2^{2}-1$$\n\n$$2^{2}=4$$\n\n$$f(2)=2-1$$\n\n$$\nf(2)=1,\\qquad 4-1 = 3\n$$\n\nSlope $-\\frac{1}{2}$, and the trolley sits three units below the crown. The chord is falling, as a negative slope requires.\n\nThe trolley path has slope $-\\frac{1}{2}$, and at the crown abscissa the trolley sits three units below the crown.\n\nSo the statement is True.",
+        "**C.** → True\n\nExpand $g$ and subtract the trolley. Meetings are the real zeros of that quadratic difference.\n\n$$g(x)=4-(x-2)^{2}$$\n\n$$g(x)=-x^{2}+4x$$\n\n$$g-f=-x^{2}+\\frac{9}{2}x-2$$\n\n$$\\Delta=\\frac{81}{4}-8$$\n\n$$\\Delta=\\frac{49}{4}$$\n\n$$\\frac{49}{4}>0$$\n\nA positive discriminant means two distinct real meetings. The arch and the trolley therefore meet twice.\n\nA quadratic difference with positive discriminant cannot fail to have two real zeros, so two meetings are forced.\n\nThe difference $g-f$ has discriminant $\\frac{49}{4}>0$, so the arch and the trolley meet twice.\n\nSo the statement is True.",
+        "**D.** → True\n\nCompare the two heights at the crown abscissa $x=2$. The arch is at its highest point there; the trolley is the chord value.\n\n$$g(2)=4$$\n\n$$f(2)=1$$\n\n$$1<4$$\n\nThe trolley lies strictly below the arch at $x=2$. A meeting at the crown would have required $f(2)=4$, which the chord does not achieve.\n\nThe crown is the unique highest point of a downward arch, so any chord through two road-level points sits strictly below that crown.\n\n$$g(2)-f(2)=3$$\n\n$$3>0$$\n\nAt $x=2$ the trolley height $1$ lies strictly below the arch height $4$.\n\nSo the statement is True.",
+        "**E.** → False\n\nCompare the two heights at the crown abscissa $x=2$. The chord value is $1$, while the arch peaks at $4$.\n\n$$f(2)=1$$\n\n$$1<4$$\n\n$$f(2)=g(2)$$\n\nThe trolley lies below the arch at $x=2$, not above it. A chord joining points of the arch cannot overshoot the crown of a downward parabola.\n\n$$f(x)=2-\\frac{1}{2}x$$\n\n$$g(x)=4-(x-2)^{2}$$\n\nOvershooting the crown would require the chord to sit above every point of the arch near $x=2$. The comparison $1<4$ already forbids that.\n\nThe trolley path lies below the arch at $x=2$, not above it.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Calibrate $A=8$, $B=10$ at $w=4$. Compare scale-up factors $2^{3/2}$ vs $2^{1/2}$, read elasticity as the exponent, and solve $C_A=C_B$ for the crossing weight."
+      "solution_overview": "The arch is already written in completed-square form, and the trolley path is a line. Write both rules and the quantities every letter will need: the road meetings, the crown, and the trolley height at the same abscissa.\n\n$$\ng(x) = 4-(x-2)^{2},\\qquad f(x) = 2-\\frac{1}{2}x\n$$\n\nThe arch meets the road $y=0$ where the completed square equals $4$, i.e. where $|x-2|=2$. Those two roots are $x=0$ and $x=4$, so the span of the bridge is $4$ units and the axis is the midline $x=2$.\n\n$$\ng(x) = 0,\\qquad x = 0,\\qquad x = 4\n$$\n\nThe crown is the vertex of the downward parabola: height $4$ at $x=2$. The leading coefficient of the expanded form $-x^{2}+4x$ is negative, matching an arch.\n\n$$\ng(x) = -x^{2}+4x,\\qquad \\mathrm{ver} = \\left(2,4\\right),\\qquad a = -1<0\n$$\n\nThe trolley path is already in slope-intercept form: slope $-\\frac{1}{2}$ and intercept $2$. At the crown abscissa the trolley sits at height $1$, three units below the arch, so the chord lies below the arch there, not above it.\n\n$$\nm = -\\frac{1}{2},\\qquad f(2) = 1<4 = g(2)\n$$\n\nThe height gap at $x=2$ already settles the last claim without a further intersection count.\n\n$$g(2)-f(2)=3$$"
     },
     {
-      "case_id": "MATH 9.MOCK.FACTORP",
-      "id": "MATH 9.MOCK.FACTORP",
-      "title": "Cubic from three roots — factor and remainder theorems",
-      "chapter": 9,
-      "subsection": "9.2",
-      "context": "A cubic polynomial is built from three real roots,\n\n$$\np(x)=(x-1)(x-2)(x-4)=x^{3}-7x^{2}+14x-8\n$$\n\nUse the factor theorem and the remainder theorem. Decide whether each statement is true or false.",
+      "case_id": "MATH 8.83",
+      "id": "math-8-83",
+      "title": "Oxygen Demand and Gill Area in a Hatchery",
+      "chapter": 8,
+      "subsection": "8",
+      "context": "A hatchery models a fish's oxygen demand as $D(m)=A m^{\\frac{3}{4}}$ millilitres per hour and its gill surface area as $G(m)=B m^{\\frac{2}{3}}$ square centimetres, where $m>0$ is body mass in grams. Neither coefficient is published. An $81$ g fish demands exactly $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. A tank's total demand is the sum of its fish's individual demands. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The remainder when $p(x)$ is divided by $x-3$ is strictly less than $-1$.",
-        "The factor theorem guarantees that $x-2$ divides $p(x)$ exactly.",
-        "The sum of the roots of $p(x)=0$, counting multiplicity, equals $7$.",
-        "If $q(x)=p(x)+6$, then $q(1)=0$.",
-        "On the interval $[0,5]$, the equation $p(x)=0$ has exactly three solutions."
+        "Oxygen demand grows more slowly than body mass.",
+        "Oxygen demand per square centimetre of gill falls as the fish grows.",
+        "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
+        "A $256$ g fish already demands more than $300$ millilitres per hour.",
+        "$16$ fish of $16$ g together still demand under $600$ millilitres per hour."
       ],
       "answer_key": [
         true,
+        false,
+        false,
         true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe overview recovered demand exponent\n\n$$\\frac{3}{4}$$\n\n. Demand lags mass when that exponent sits below $1$.\n\n$$\\frac{3}{4}<1$$\n\nA proportional law would have carried exponent $1$.\n\nThe leftover exponent is\n\n.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nForm the ratio so the unknown positive coefficient cancels.\n\nOxygen demand per square centimetre of gill is the ratio of the two recovered laws:\n\n$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}}$$\n\nThe leftover exponent\n\n$$\\frac{1}{12}$$\n\n is positive, so intensity rises as the fish grows, rather than falling.\n\nDemand per unit gill area climbs.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe overview recovered\n\n$$G(m)=3m^{\\frac{2}{3}}$$\n\n Two $16$ g fish have total gill area\n\n$$2G(16)=6\\cdot 16^{\\frac{2}{3}}$$\n\n$$2G(16)=96^{\\frac{2}{3}}$$\n\n$$2G(16)=24\\cdot 2^{\\frac{2}{3}}$$\n\nOne $32$ g fish has\n\n$$G(32)=3\\cdot 32^{\\frac{2}{3}}$$\n\n$$G(32)=96^{\\frac{2}{3}}$$\n\n$$G(32)=24\\cdot 2^{\\frac{1}{3}}$$\n\nBecause\n\n$$2^{\\frac{2}{3}}\\neq 2^{\\frac{1}{3}}$$\n\n, the two totals are not equal. The exponent\n\n$$\\frac{2}{3}<1$$\n\n makes splitting mass raise total area.\n\nTwo $16$ g fish out-area one $32$ g fish.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe overview recovered\n\n$$D(m)=5m^{\\frac{3}{4}}$$\n\nAt $256$ g:\n\n$$D(256)=5\\cdot 256^{\\frac{3}{4}}$$\n\n$$256^{\\frac{3}{4}}=\\bigl(256^{\\frac{1}{4}}\\bigr)^{3}$$\n\n$$256^{\\frac{1}{4}}=4$$\n\n$$4^{3}=64$$\n\n$$D(256)=5\\cdot 64$$\n\n$$D(256)=320$$\n\n$$D(256)=1280^{\\frac{3}{4}}$$\n\n$$256^{\\frac{1}{4}}=\\bigl(256^{\\frac{1}{4}}\\bigr)^{1}$$\n\n$$4^{1}=4$$\n\nThe claim is that this already sits above $300$. We have $320>300$.\n\nSo the statement is True.",
+        "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nA tank total adds individual demands. Sixteen fish of $16$ g each demand\n\n$$16\\cdot D(16)=16\\cdot 5\\cdot 16^{\\frac{3}{4}}$$\n\n$$16^{\\frac{3}{4}}=\\bigl(16^{\\frac{1}{4}}\\bigr)^{3}$$\n\n$$16^{\\frac{1}{4}}=2$$\n\n$$2^{3}=8$$\n\n$$16\\cdot D(16)=16\\cdot 5\\cdot 8$$\n\n$$16\\cdot D(16)=80\\cdot 16^{\\frac{3}{4}}$$\n\n$$16\\cdot D(16)=1280^{\\frac{3}{4}}$$\n\n$$16^{\\frac{1}{4}}=\\bigl(16^{\\frac{1}{4}}\\bigr)^{1}$$\n\n$$2^{1}=2$$\n\n$$16\\cdot D(16)=80\\cdot 8$$\n\n$$16\\cdot D(16)=640$$\n\n$$16\\cdot D(16)=16\\cdot 40$$\n\nThe claim is that this still sits under $600$. We have $640>600$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Oxygen demand follows $D(m)=Am^{\\frac{3}{4}}$ millilitres per hour and gill area follows $G(m)=Bm^{\\frac{2}{3}}$ square centimetres, for body mass $m>0$ grams. An $81$ g fish demands $95$ millilitres per hour more than a $16$ g fish, and a $64$ g fish carries $48$ square centimetres of gill. Tank totals add individual demands.\n\n**Part 1: Building the model.**\n\nLet $m$ = body mass in grams, $D$ = oxygen demand, and $G$ = gill area. Both exponents are given, so each law needs one record: a difference for demand and a level for gill area.\n\n**1. Translate: the demand gap.**\n\n$$A\\bigl(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\bigr)=95 \\tag{1}$$\n\n**2. Translate: the gill record.**\n\n$$B\\cdot 64^{\\frac{2}{3}}=48 \\tag{2}$$\n\n**Part 2: Solve.**\n\nThe shape factors are exact:\n\n$$81^{\\frac{3}{4}}=27, \\qquad 16^{\\frac{3}{4}}=8$$\n\nso $(1)$ is $19A=95$ and $A=5$. Likewise\n\n$$64^{\\frac{2}{3}}=16$$\n\nso $(2)$ is $16B=48$ and $B=3$.\n\nThe recovered laws are $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$.\n\n**Answer.** $A=5$ | $B=3$ | $D(m)=5m^{\\frac{3}{4}}$ | $G(m)=3m^{\\frac{2}{3}}$"
+    },
+    {
+      "case_id": "MATH 9.64",
+      "id": "math-9-64",
+      "title": "Parameter k: How Many Real Zeros?",
+      "chapter": 9,
+      "subsection": "9",
+      "context": "Let $g_k(x)=x^3-kx$ with real $k$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $k>0$, then $g_k$ has three distinct real zeros.",
+        "If $k=0$, then $g_k$ has three distinct real zeros.",
+        "If $k<0$, then $g_k$ has only one real zero.",
+        "The leading coefficient of $g_k$ depends on $k$.",
+        "$g_k$ is odd for every real $k$."
+      ],
+      "answer_key": [
+        true,
+        false,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe remainder theorem says the remainder on division by $x-3$ is $p(3)$:\n\n$$\np(3)=27-63+42-8=-2\n$$\n\n$$\n-2<-1\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\nBy construction $p(2)=(2-1)(2-2)(2-4)=0$. The factor theorem therefore yields an exact factor $x-2$.\n\nSo the statement is True.",
-        "**C.** → True\n\nFor a monic cubic $x^{3}+ax^{2}+bx+c$, the sum of roots is $-a$. Here $a=-7$, so the sum is $7$. Directly: $1+2+4=7$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$\nq(1)=p(1)+6=0+6=6\\neq 0\n$$\n\nShifting the constant term by $+6$ destroys the root at $x=1$.\n\nSo the statement is False.",
-        "**E.** → True\n\nThe three roots are $1$, $2$, and $4$, and each lies in $[0,5]$. A cubic has at most three roots unless identically zero, so there are exactly three solutions on that interval.\n\nSo the statement is True."
+        "**A.** → True\n\nFactor out the obvious linear piece and read the remaining quadratic from the sign of $k$.\n\n$$g_k(x)=x^3-kx$$\n\n$$g_{k}(x)=x(x^{2}-k)$$\n\nIf $k>0$ then $x^{2}=k$ has two real solutions $\\pm\\sqrt{k}$, distinct from each other and from $0$. The three zeros $-\\sqrt{k}$, $0$, $\\sqrt{k}$ are distinct.\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nFor the sample $k=4$ the zeros are $-2$, $0$ and $2$, three distinct reals, and $g_{4}(x)=x(x-2)(x+2)$.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe parameter value $k=0$ collapses the quadratic factor onto a repeated origin.\n\n$$g_k(x)=x^3-kx$$\n\n$$g_{0}(x)=x^{3}$$\n\nThe only real zero is $x=0$, now of multiplicity three. Distinct zeros are counted without multiplicity, so there is one, not three.\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nA root of multiplicity three is still a single distinct number. The graph of $x^{3}$ flattens at the origin but meets the axis only there.\n\nSo the statement is False.",
+        "**C.** → True\n\nIf $k<0$ then $x^{2}-k=x^{2}+|k|$ is always positive, so it contributes no real root.\n\n$$g_k(x)=x^3-kx$$\n\n$$g_{k}(x)=x(x^{2}-k)$$\n\nThe only real solution of $g_{k}(x)=0$ is $x=0$. One real zero (simple) is exactly the count claimed.\n\nFor $k=-4$ one has\n\n$$g(x)=x^{3}+4x$$\n\n$$g(x)=x(x^{2}+4)$$\n\n, and $x^{2}+4=0$ has no real solution. The graph crosses the axis only at the origin, a single simple root.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe leading term is $x^{3}$ for every real $k$. The parameter multiplies only the linear term.\n\n$$g_k(x)=x^3-kx$$\n\n$$g_{k}(x)=x^{3}-kx$$\n\nThe coefficient of $x^{3}$ is $1$, independent of $k$. Changing $k$ moves the roots but never the lead.\n\nRead the highest written power whose coefficient is nonzero.\n\nComparing $g_{1}(x)=x^{3}-x$ with $g_{2}(x)=x^{3}-2x$, both still open with $x^{3}$. Only the linear coefficient moved.\n\nSo the statement is False.",
+        "**E.** → True\n\nOddness is the identity $g_{k}(-x)=-g_{k}(x)$. Every term of the family carries an odd power of $x$.\n\n$$g_{k}(-x)=(-x)^{3}-k(-x)$$\n\n$$(-x)^{3}-k(-x)=-x^{3}+kx$$\n\n$$g_{k}(-x)=-(x^{3}-kx)$$\n\n$$-(x^{3}-kx)=-g_{k}(x)$$\n\nThe parameter $k$ rides along untouched, including the case $k=0$ where $g_{0}(x)=x^{3}$. The identity holds for every real $k$.\n\nChecking a point:\n\n$$g_{2}(-1)=-1+2$$\n\n$$g_{2}(-1)=1$$\n\n and\n\n$$-g_{2}(1)=- (1-2)$$\n\n$$-g_{2}(1)=1$$\n\n. The two sides match, as oddness requires.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Expand or keep $p(x)=(x-1)(x-2)(x-4)$. Letters apply the remainder theorem at $x=3$, the factor theorem at a known root, Vieta’s sum, a constant shift, and a root count on $[0,5]$."
+      "solution_overview": "The family is given explicitly, with the parameter sitting on a lower term, so the leading term never sees it.\n\n$$g_k(x)=x^3-kx$$\n\n$$g(x)=x \\left(- k + x^{2}\\right)$$\n\nFactor $x(x^{2}-k)$ to read the root count from the sign of $k$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map."
     },
     {
-      "case_id": "MATH 10.MOCK.COMPOUND",
-      "id": "MATH 10.MOCK.COMPOUND",
-      "title": "Discrete compound versus continuous force — comparison and log change-of-base",
+      "case_id": "MATH 10.3.31",
+      "id": "ch10-103-031",
+      "title": "Applied letters — discrete population, GDP per capita, and a continuous neighbour",
       "chapter": 10,
       "subsection": "10.3",
-      "context": "An endowment of $P_{0}=1000$ euro is tracked under two interest conventions (currency kept in prose):\n\n- Discrete annual compounding at $5\\%$ per year: $D(t)=1000\\cdot(1.05)^{t}$ after $t$ years.\n- Continuous force of interest $\\delta=\\ln(1.05)$: $C(t)=1000\\,e^{\\delta t}$.\n\nA third experimental account uses continuous force $0.05$ exactly: $E(t)=1000\\,e^{0.05 t}$. Decide whether each statement is true or false.",
+      "context": "Denote by $f(t)$ the population of a country (in millions of inhabitants) after $t$ years, where $f(0)$ is the current population. The current population is $12$ millions and it is assumed that it grows by $1.8\\%$ per year. After $6$ years the annual growth rate slows to $1\\%$ per year.\n\nA neighbouring country follows a continuous model stated in the figure / accompanying notes.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "For every $t\\ge 0$, the discrete account and the continuous account with force $\\delta=\\ln(1.05)$ give exactly the same balance.",
-        "After $10$ years, the experimental account $E(10)$ is strictly larger than the discrete account $D(10)$.",
-        "The continuous force $\\delta=\\ln(1.05)$ is strictly smaller than $0.05$.",
-        "Using the change-of-base formula, $\\log_{1.05}(2)=\\dfrac{\\ln 2}{\\ln 1.05}$ is strictly greater than $15$.",
-        "If the discrete rate switches from $5\\%$ to $3\\%$ after year $4$, the balance at $t=4$ is still exactly $1000\\cdot(1.05)^{4}$."
+        "It holds that $f(t)=12\\cdot 1.018^{t}$ for $0\\le t\\le 6$.",
+        "After $20$ years of uninterrupted $1.8\\%$ growth, the population will have grown by more than $45\\%$.",
+        "The head economist predicts that GDP grows by $4\\%$ per year. Then GDP per capita grows by more than $3\\%$ per year.",
+        "Under the slowdown to $1\\%$ after year $6$, the population of $15$ millions is attained at $t>16$.",
+        "The neighbouring country's continuous model has a growth rate strictly smaller than $1.5\\%$ per year."
       ],
       "answer_key": [
         true,
-        true,
-        true,
         false,
-        true
+        false,
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWith $\\delta=\\ln(1.05)$,\n\n$$\nC(t)=1000\\,e^{(\\ln 1.05)\\,t}=1000\\cdot(1.05)^{t}=D(t)\n$$\n\nfor every $t$. The two conventions are algebraically identical.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\n\\dfrac{E(10)}{1000}=e^{0.5}\\approx 1.6487,\\qquad \\dfrac{D(10)}{1000}=(1.05)^{10}\\approx 1.6289\n$$\n\nso $E(10)>D(10)$.\n\nSo the statement is True.",
-        "**C.** → True\n\nThe elementary inequality $e^{r}>1+r$ for $r=0.05>0$ rearranges to\n\n$$\ne^{0.05}>1.05\\qquad\\Rightarrow\\qquad 0.05>\\ln(1.05)\n$$\n\nSo $\\delta=\\ln(1.05)$ is strictly smaller than $0.05$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$\n\\log_{1.05}(2)=\\dfrac{\\ln 2}{\\ln 1.05}\\approx\\dfrac{0.693147}{0.048790}\\approx 14.21\n$$\n\nNow $14.21\\ngtr 15$, so the claim fails.\n\nSo the statement is False.",
-        "**E.** → True\n\nA rate switch that begins only after year $4$ does not change the path on $[0,4]$. At the instant $t=4$ one still has\n\n$$\n1000\\cdot(1.05)^{4}\n$$\n\nSo the statement is True."
+        "**A.** → True\n\nAnnual growth of $1.8\\%$ multiplies the population by the fixed factor $1.018$ each year. Starting from the present level of $12$ million, the closed form is therefore\n\n$$f(t) = 12\\cdot 1.018^{t}$$\n\nAt $t=0$ this recovers the stated initial population:\n\n$$f(0)=12\\cdot 1.018^{0}$$\n\n$$f(0)=12\\cdot 1.1$$\n\n$$12\\cdot \\frac{11}{10}=\\frac{66}{5}$$\n\n$$\nf(0)=\\frac{66}{5} = 12\n$$\n\nand each additional year multiplies by one more factor of $1.018$. The displayed formula is exactly the discrete exponential growth model for this country.\n\nSo the statement is True.\n",
+        "**B.** → False\n\nUnder uninterrupted $1.8\\%$ annual growth the population after twenty years is\n\n$$f(20)=12\\cdot 1.018^{20}$$\n\n$$f(20)=12\\cdot 1.12748236216396078174437376$$\n\n$$12\\cdot \\frac{107525097099681928801}{95367431640625000000}=\\frac{322575291299045786403}{23841857910156250000}$$\n\n$$f(20)=\\frac{322575291299045786403}{23841857910156250000}$$\n\nThe multiplicative factor and the relative growth are\n\n$$1.018^{20}\\approx1.428748\\qquad \\frac{f(20)-f(0)}{f(0)}=1.018^{20}-1$$\n\n$$1.018^{20}\\approx1.428748\\qquad \\frac{f(20)-f(0)}{f(0)}=1.12748236216396078174437376-1$$\n\n$$\\approx 0.428748$$\n\nConverting to a percentage,\n\n$$0.428748\\times 100\\%\\approx42.87\\%$$\n\nCompare with the claimed threshold of $45\\%$:\n\n$$42.87\\% < 45\\%$$\n\nTwenty years of $1.8\\%$ compounding produce roughly $42.87\\%$ net growth, which fails to clear $45\\%$.\n\nSo the statement is False.\n",
+        "**C.** → False\n\nGDP per capita is the ratio of aggregate GDP to population. If GDP multiplies by $1.04$ each year while population multiplies by $1.018$, the per-capita annual growth factor is the quotient of those bases:\n\n$$\\frac{1.04}{1.018}\\approx 1.021611$$\n\nHence the exact annual growth rate of GDP per capita is\n\n$$\\frac{1.04}{1.018}-1\\approx0.021611\\approx2.16\\%$$\n\nA linear approximation $0.04-0.018=0.022$ already suggests about $2.2\\%$, well below $3\\%$. The exact comparison against the claimed bound is\n\n$$0.021611<0.03$$\n\nGDP per capita therefore grows by roughly $2.16\\%$ per year, not by more than $3\\%$.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nFor the first six years the population follows $f(t)=12\\cdot 1.018^{t}$. At the switch,\n\n$$f(6)=12\\cdot 1.018^{6}$$\n\n$$f(6)=12\\cdot 1.34012224$$\n\n$$12\\cdot \\frac{2093941}{1562500}=\\frac{6281823}{390625}$$\n\n$$f(6)=\\frac{6281823}{390625}$$\n\n$$\\approx 13.355739$$\n\nThereafter the annual base is $1.01$, so for $t>6$\n\n$$f(t) = f(6)\\cdot 1.01^{t-6}$$\n\n$$\\approx 13.355739\\cdot 1.01^{t-6}$$\n\nReach $15$ million by solving $f(t)=15$:\n\n$$13.355739\\cdot 1.01^{t-6} = 15$$\n\n$$1.01^{t-6} = \\frac{15}{13.355739}$$\n\n$$\\approx 1.123113$$\n\nTake natural logs and isolate $t$:\n\n$$t-6 = \\frac{\\ln(1.123113)}{\\ln 1.01}$$\n\n$$\\approx 11.668360$$\n\n$$t_{\\mathrm{hit}}\\approx17.668360$$\n\nCompare with sixteen years:\n\n$$17.668360>16$$\n\nThe $15$-million level is therefore attained strictly after $t=16$, which is the same as $t>16$.\n\nSo the statement is True.\n",
+        "**E.** → False\n\nThe neighbouring population is written in continuous form\n\n$$N(t)=9\\cdot 10^{6}\\,e^{0.015 t}$$\n\n$$N(t)=9\\cdot 1000000\\,e^{0.015 t}$$\n\nThe coefficient of $t$ in the exponent is the continuous force of growth:\n\n$$\nk = 0.015 = 1.5\\%\n$$\n\nThat force is equal to $1.5\\%$ per year, not strictly smaller. The corresponding effective annual rate is even larger:\n\n$$e^{0.015}-1\\approx0.015113\\approx1.511\\%$$\n\n$$0.015113>0.015$$\n\nWhether one reads the continuous force or the effective annual rate, the growth is not smaller than $1.5\\%$ per year.\n\nSo the statement is False.\n"
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Identify $e^{(\\ln 1.05)t}=(1.05)^{t}$, compare $e^{0.05t}$ with discrete compounding, bound $\\ln(1.05)$, evaluate $\\log_{1.05}2$ via change of base, and note that a post-year-4 rate switch leaves the $t=4$ balance unchanged."
+      "solution_overview": "Annual compounding at $1.8\\%$ starts from $12$ million inhabitants:\n\n$$f(t)=12\\cdot 1.018^{t}\\qquad(0\\le t\\le 6)$$\n\nAfter the kink the base drops to $1.01$. At the switch one has $f(6)\\approx13.3557$, and the $15$-million hit finishes at $t_{\\mathrm{hit}}\\approx17.6684$. Over twenty years of uninterrupted $1.8\\%$ growth the multiplicative factor is $1.018^{20}\\approx1.4287$ (about $42.87\\%$ net growth). Exact GDP-per-capita growth is $1.04/1.018-1\\approx0.0216$, while a continuous neighbour with force $0.015$ has effective annual rate $e^{0.015}-1\\approx0.01511$.",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22720%22%20height%3D%22420%22%20viewBox%3D%220%200%20720%20420%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f7f3ea%22%2F%3E%3Ctext%20x%3D%22360.0%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-size%3D%2217%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3EPiecewise%20population%20%28millions%29%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%2248%22%20x2%3D%2276%22%20y2%3D%22368%22%20stroke%3D%22%23333%22%20stroke-width%3D%221.5%22%2F%3E%3Cline%20x1%3D%2276%22%20y1%3D%22368%22%20x2%3D%22692%22%20y2%3D%22368%22%20stroke%3D%22%23333%22%20stroke-width%3D%221.5%22%2F%3E%3Cline%20x1%3D%2276.0%22%20y1%3D%22368%22%20x2%3D%2276.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2276.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22230.0%22%20y1%3D%22368%22%20x2%3D%22230.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22230.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cline%20x1%3D%22384.0%22%20y1%3D%22368%22%20x2%3D%22384.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22384.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E10%3C%2Ftext%3E%3Cline%20x1%3D%22538.0%22%20y1%3D%22368%22%20x2%3D%22538.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22538.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E15%3C%2Ftext%3E%3Cline%20x1%3D%22692.0%22%20y1%3D%22368%22%20x2%3D%22692.0%22%20y2%3D%22374%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22692.0%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E20%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22345.9%22%20x2%3D%22692%22%20y2%3D%22345.9%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22345.9%22%20x2%3D%2276%22%20y2%3D%22345.9%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22345.9%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E12%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22263.6%22%20x2%3D%22692%22%20y2%3D%22263.6%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22263.6%22%20x2%3D%2276%22%20y2%3D%22263.6%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22263.6%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E13%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%22181.3%22%20x2%3D%22692%22%20y2%3D%22181.3%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%22181.3%22%20x2%3D%2276%22%20y2%3D%22181.3%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%22181.3%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E14%3C%2Ftext%3E%3Cline%20x1%3D%2276%22%20y1%3D%2299.0%22%20x2%3D%22692%22%20y2%3D%2299.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2270%22%20y1%3D%2299.0%22%20x2%3D%2276%22%20y2%3D%2299.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2266%22%20y%3D%2299.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E15%3C%2Ftext%3E%3Cline%20x1%3D%22260.8%22%20y1%3D%2248%22%20x2%3D%22260.8%22%20y2%3D%22368%22%20stroke%3D%22%23888%22%20stroke-dasharray%3D%224%204%22%2F%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.5%22%20points%3D%2276.0%2C345.9%2077.9%2C344.8%2079.8%2C343.7%2081.8%2C342.6%2083.7%2C341.5%2085.6%2C340.4%2087.5%2C339.3%2089.5%2C338.2%2091.4%2C337.1%2093.3%2C336.0%2095.2%2C334.9%2097.2%2C333.7%2099.1%2C332.6%20101.0%2C331.5%20103.0%2C330.4%20104.9%2C329.3%20106.8%2C328.2%20108.7%2C327.0%20110.7%2C325.9%20112.6%2C324.8%20114.5%2C323.7%20116.4%2C322.5%20118.3%2C321.4%20120.3%2C320.3%20122.2%2C319.1%20124.1%2C318.0%20126.1%2C316.9%20128.0%2C315.7%20129.9%2C314.6%20131.8%2C313.5%20133.8%2C312.3%20135.7%2C311.2%20137.6%2C310.1%20139.5%2C308.9%20141.4%2C307.8%20143.4%2C306.6%20145.3%2C305.5%20147.2%2C304.3%20149.1%2C303.2%20151.1%2C302.0%20153.0%2C300.9%20154.9%2C299.7%20156.9%2C298.6%20158.8%2C297.4%20160.7%2C296.3%20162.6%2C295.1%20164.6%2C294.0%20166.5%2C292.8%20168.4%2C291.6%20170.3%2C290.5%20172.2%2C289.3%20174.2%2C288.1%20176.1%2C287.0%20178.0%2C285.8%20179.9%2C284.6%20181.9%2C283.5%20183.8%2C282.3%20185.7%2C281.1%20187.6%2C280.0%20189.6%2C278.8%20191.5%2C277.6%20193.4%2C276.4%20195.4%2C275.2%20197.3%2C274.1%20199.2%2C272.9%20201.1%2C271.7%20203.1%2C270.5%20205.0%2C269.3%20206.9%2C268.1%20208.8%2C267.0%20210.8%2C265.8%20212.7%2C264.6%20214.6%2C263.4%20216.5%2C262.2%20218.5%2C261.0%20220.4%2C259.8%20222.3%2C258.6%20224.2%2C257.4%20226.2%2C256.2%20228.1%2C255.0%20230.0%2C253.8%20231.9%2C252.6%20233.8%2C251.4%20235.8%2C250.2%20237.7%2C249.0%20239.6%2C247.8%20241.5%2C246.5%20243.5%2C245.3%20245.4%2C244.1%20247.3%2C242.9%20249.2%2C241.7%20251.2%2C240.5%20253.1%2C239.3%20255.0%2C238.0%20257.0%2C236.8%20258.9%2C235.6%20260.8%2C234.4%20262.7%2C233.7%20264.6%2C233.0%20266.6%2C232.3%20268.5%2C231.6%20270.4%2C230.9%20272.4%2C230.3%20274.3%2C229.6%20276.2%2C228.9%20278.1%2C228.2%20280.0%2C227.5%20282.0%2C226.8%20283.9%2C226.1%20285.8%2C225.4%20287.8%2C224.7%20289.7%2C224.1%20291.6%2C223.4%20293.5%2C222.7%20295.5%2C222.0%20297.4%2C221.3%20299.3%2C220.6%20301.2%2C219.9%20303.1%2C219.2%20305.1%2C218.5%20307.0%2C217.8%20308.9%2C217.1%20310.9%2C216.4%20312.8%2C215.7%20314.7%2C215.1%20316.6%2C214.4%20318.5%2C213.7%20320.5%2C213.0%20322.4%2C212.3%20324.3%2C211.6%20326.2%2C210.9%20328.2%2C210.2%20330.1%2C209.5%20332.0%2C208.8%20333.9%2C208.1%20335.9%2C207.4%20337.8%2C206.7%20339.7%2C206.0%20341.7%2C205.3%20343.6%2C204.6%20345.5%2C203.9%20347.4%2C203.2%20349.3%2C202.5%20351.3%2C201.8%20353.2%2C201.1%20355.1%2C200.4%20357.1%2C199.6%20359.0%2C198.9%20360.9%2C198.2%20362.8%2C197.5%20364.8%2C196.8%20366.7%2C196.1%20368.6%2C195.4%20370.5%2C194.7%20372.4%2C194.0%20374.4%2C193.3%20376.3%2C192.6%20378.2%2C191.9%20380.2%2C191.2%20382.1%2C190.4%20384.0%2C189.7%20385.9%2C189.0%20387.8%2C188.3%20389.8%2C187.6%20391.7%2C186.9%20393.6%2C186.2%20395.6%2C185.5%20397.5%2C184.7%20399.4%2C184.0%20401.3%2C183.3%20403.2%2C182.6%20405.2%2C181.9%20407.1%2C181.2%20409.0%2C180.4%20410.9%2C179.7%20412.9%2C179.0%20414.8%2C178.3%20416.7%2C177.6%20418.7%2C176.9%20420.6%2C176.1%20422.5%2C175.4%20424.4%2C174.7%20426.3%2C174.0%20428.3%2C173.3%20430.2%2C172.5%20432.1%2C171.8%20434.1%2C171.1%20436.0%2C170.4%20437.9%2C169.6%20439.8%2C168.9%20441.8%2C168.2%20443.7%2C167.5%20445.6%2C166.7%20447.5%2C166.0%20449.4%2C165.3%20451.4%2C164.6%20453.3%2C163.8%20455.2%2C163.1%20457.2%2C162.4%20459.1%2C161.7%20461.0%2C160.9%20462.9%2C160.2%20464.8%2C159.5%20466.8%2C158.7%20468.7%2C158.0%20470.6%2C157.3%20472.6%2C156.5%20474.5%2C155.8%20476.4%2C155.1%20478.3%2C154.3%20480.2%2C153.6%20482.2%2C152.9%20484.1%2C152.1%20486.0%2C151.4%20487.9%2C150.7%20489.9%2C149.9%20491.8%2C149.2%20493.7%2C148.5%20495.7%2C147.7%20497.6%2C147.0%20499.5%2C146.2%20501.4%2C145.5%20503.3%2C144.8%20505.3%2C144.0%20507.2%2C143.3%20509.1%2C142.5%20511.1%2C141.8%20513.0%2C141.1%20514.9%2C140.3%20516.8%2C139.6%20518.8%2C138.8%20520.7%2C138.1%20522.6%2C137.4%20524.5%2C136.6%20526.5%2C135.9%20528.4%2C135.1%20530.3%2C134.4%20532.2%2C133.6%20534.2%2C132.9%20536.1%2C132.1%20538.0%2C131.4%20539.9%2C130.6%20541.8%2C129.9%20543.8%2C129.1%20545.7%2C128.4%20547.6%2C127.6%20549.5%2C126.9%20551.5%2C126.1%20553.4%2C125.4%20555.3%2C124.6%20557.2%2C123.9%20559.2%2C123.1%20561.1%2C122.4%20563.0%2C121.6%20565.0%2C120.9%20566.9%2C120.1%20568.8%2C119.4%20570.7%2C118.6%20572.7%2C117.9%20574.6%2C117.1%20576.5%2C116.3%20578.4%2C115.6%20580.3%2C114.8%20582.3%2C114.1%20584.2%2C113.3%20586.1%2C112.6%20588.1%2C111.8%20590.0%2C111.0%20591.9%2C110.3%20593.8%2C109.5%20595.8%2C108.7%20597.7%2C108.0%20599.6%2C107.2%20601.5%2C106.5%20603.4%2C105.7%20605.4%2C104.9%20607.3%2C104.2%20609.2%2C103.4%20611.1%2C102.6%20613.1%2C101.9%20615.0%2C101.1%20616.9%2C100.3%20618.9%2C99.6%20620.8%2C98.8%20622.7%2C98.0%20624.6%2C97.3%20626.6%2C96.5%20628.5%2C95.7%20630.4%2C95.0%20632.3%2C94.2%20634.2%2C93.4%20636.2%2C92.7%20638.1%2C91.9%20640.0%2C91.1%20641.9%2C90.3%20643.9%2C89.6%20645.8%2C88.8%20647.7%2C88.0%20649.6%2C87.2%20651.6%2C86.5%20653.5%2C85.7%20655.4%2C84.9%20657.4%2C84.1%20659.3%2C83.4%20661.2%2C82.6%20663.1%2C81.8%20665.1%2C81.0%20667.0%2C80.2%20668.9%2C79.5%20670.8%2C78.7%20672.8%2C77.9%20674.7%2C77.1%20676.6%2C76.3%20678.5%2C75.6%20680.4%2C74.8%20682.4%2C74.0%20684.3%2C73.2%20686.2%2C72.4%20688.1%2C71.6%20690.1%2C70.9%20692.0%2C70.1%22%2F%3E%3Ccircle%20cx%3D%22260.8%22%20cy%3D%22234.4%22%20r%3D%224.5%22%20fill%3D%22%231a1a1a%22%2F%3E%3Ctext%20x%3D%22268.8%22%20y%3D%22226.4%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Eswitch%3C%2Ftext%3E%3Ccircle%20cx%3D%22692.0%22%20cy%3D%2270.1%22%20r%3D%224.5%22%20fill%3D%22%231a1a1a%22%2F%3E%3Ctext%20x%3D%22360.0%22%20y%3D%22408%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Et%3C%2Ftext%3E%3Ctext%20x%3D%2218%22%20y%3D%22208%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%20transform%3D%22rotate%28-90%2018%20208%29%22%3Elevel%3C%2Ftext%3E%3C%2Fsvg%3E"
     },
     {
-      "case_id": "MATH 11.MOCK.QUOT",
-      "id": "MATH 11.MOCK.QUOT",
-      "title": "Payoff x²e^{-x} — critical point, log derivative, average vs marginal",
+      "case_id": "MATH 11.64",
+      "id": "math-11-64",
+      "title": "Two cinemas: price versus extra ticket revenue",
       "chapter": 11,
-      "subsection": "11.4",
-      "context": "For $x>0$ define the smooth payoff\n\n$$\nf(x)=x^{2}e^{-x}\n$$\n\nCritical points come from the product rule (equivalently from $\\dfrac{f'}{f}$). Decide whether each statement is true or false.",
+      "subsection": "11.2",
+      "context": "Two city cinemas are deciding whether to sell one more ticket tonight. Cinema A currently charges $p_A=12$ euros per ticket, but because a lower price is needed to fill an extra seat, the extra revenue from that seat is only $R_A'(Q_A)=7$ euros. Cinema B currently charges $p_B=10$ euros and reports that the extra ticket would add the full $R_B'(Q_B)=10$ euros of revenue. Both cinemas face the same marginal cost $C'(Q)=8$ euros for one more viewer. Which of the following hold?",
       "statements": [
-        "On $(0,\\infty)$, the function $f$ has a unique critical point, and it lies at $x=2$.",
-        "The global maximum value of $f$ on $(0,\\infty)$ is strictly greater than $0.6$.",
-        "The logarithmic derivative satisfies $\\dfrac{f'(x)}{f(x)}=\\dfrac{2}{x}-1$ for every $x>0$.",
-        "For every $x>2$, the marginal payoff $f'(x)$ is negative.",
-        "The average payoff $\\dfrac{f(x)}{x}$ equals $xe^{-x}$, and this average is strictly decreasing on $(2,\\infty)$."
+        "At cinema A, the extra revenue from one more ticket is about $7$ euros, not $12$.",
+        "Cinema B's numbers are consistent with a price that does not have to be cut to sell one more ticket.",
+        "Cinema A should expand a little, because its price $12$ exceeds marginal cost $8$.",
+        "Cinema B should expand a little, because $R_B'(Q_B)>C_B'(Q_B)$.",
+        "The comparison $p_A>p_B$ already decides which cinema has the larger marginal profit."
       ],
       "answer_key": [
         true,
+        true,
         false,
         true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDifferentiate as a product $u=x^{2}$, $v=e^{-x}$:\n\n$$\nf'(x)=2xe^{-x}-x^{2}e^{-x}=xe^{-x}(2-x)\n$$\n\nOn $(0,\\infty)$ one has $x>0$ and $e^{-x}>0$, so $f'(x)=0$ precisely when $x=2$. That critical point is unique in the open interval.\n\nSo the statement is True.",
-        "**B.** → False\n\nAt the critical point,\n\n$$\nf(2)=4e^{-2}\\approx 4\\cdot 0.135335=0.541\n$$\n\nNow $0.541\\ngtr 0.6$, so the claimed lower bound on the maximum fails.\n\nSo the statement is False.",
-        "**C.** → True\n\nFrom A, for $x>0$,\n\n$$\n\\dfrac{f'(x)}{f(x)}=\\dfrac{xe^{-x}(2-x)}{x^{2}e^{-x}}=\\dfrac{2-x}{x}=\\dfrac{2}{x}-1\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\nFor $x>2$, the factor $(2-x)$ is negative while $xe^{-x}>0$, hence $f'(x)<0$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\n\\dfrac{f(x)}{x}=xe^{-x}\n$$\n\nDifferentiate the average:\n\n$$\n\\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\bigl(xe^{-x}\\bigr)=e^{-x}(1-x)\n$$\n\nOn $(2,\\infty)$ one has $1-x<0$, so the average is strictly decreasing there.\n\nSo the statement is True."
+        "**A.** → True\n\nThe economic question \"how many extra euros does one more ticket bring in?\" is answered by marginal revenue $R_A^{\\prime}(Q_A)$, not by the sticker price $p_A$.\n\nCinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$ euros of revenue even though the current price is $12$\n\nThe $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats.\n\n$$\nR_A^{\\prime}(Q_A) = 7\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nWhen price need not fall to sell a little more, the product-rule penalty $Q\\,p^{\\prime}(Q)$ is zero and $R^{\\prime}(Q)=p(Q)$.\n\nCinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation\n\nIn the product rule, $R^{\\prime}=p$ when $p^{\\prime}=0$; B's reports match that flat-price reading.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\n$$\nR^{\\prime}(Q) = p(Q)\n$$\n\n$$\nR_B^{\\prime}(Q_B) = 10 = p_B\n$$\n\n$$\nR^{\\prime} = p\n$$\n\n$$\np^{\\prime} = 0\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nA's expansion test compares extra revenue with extra cost:\n\n$$\nP_A^{\\prime}(Q_A) = R_A^{\\prime}(Q_A)-C^{\\prime}\n$$\n\n$$\nP_A^{\\prime}(Q_A) = 7-8\n$$\n\n$$\n7 - 8 = -1\n$$\n\n$$\nP_A^{\\prime}(Q_A) = -1 = -1\n$$\n\n$$\nP_A^{\\prime}(Q_A) = -1<0\n$$\n\nThe tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit\n\nComparing sticker price with marginal cost is the wrong test whenever MR lies below price — A's trap in this stem.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False.",
+        "**D.** → True\n\nFor cinema B,\n\n$$\nP_B^{\\prime}(Q_B) = R_B^{\\prime}(Q_B)-C^{\\prime}\n$$\n\n$$\nP_B^{\\prime}(Q_B) = 10-8\n$$\n\n$$\n10 - 8 = 2\n$$\n\n$$\nP_B^{\\prime}(Q_B) = 2 = 2\n$$\n\n$$\nP_B^{\\prime}(Q_B) = 2>0\n$$\n\nHence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's profit\n\nB's expand-or-not comparison uses the true extra revenue $10$ against cost $8$, and the inequality favours expansion.\n\nMatching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is True.",
+        "**E.** → False\n\nMarginal profit is $R^{\\prime}(Q)-C^{\\prime}(Q)$, not a ranking of sticker prices. Here\n\n$$\nP_A^{\\prime}(Q_A) = 7-8\n$$\n\n$$\n7 - 8 = -1\n$$\n\n$$\nP_A^{\\prime}(Q_A) = -1 = -1\n$$\n\n$$\nP_A^{\\prime}(Q_A) = -1\n$$\n\n$$\nP_B^{\\prime}(Q_B) = 10-8\n$$\n\n$$\n10 - 8 = 2\n$$\n\n$$\nP_B^{\\prime}(Q_B) = 2 = 2\n$$\n\n$$\nP_B^{\\prime}(Q_B) = 2\n$$\n\nA has the higher price but the lower (in fact negative) marginal profit, and $p_A>p_B$ does not decide the expansion ranking\n\nA has the higher price but the lower marginal profit ($-1$ versus $+2$); price rankings do not decide $P^{\\prime}$ rankings.\n\nMatching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Use $f'(x)=xe^{-x}(2-x)$ to locate the unique positive critical point at $x=2$, evaluate $4e^{-2}$, read $f'/f=2/x-1$, and compare the average $xe^{-x}$ on $(2,\\infty)$."
+      "difficulty_level": "4/5",
+      "solution_overview": "Both cinemas face $C^{\\prime}=8$, but their extra-ticket revenues differ from their posted prices. Cinema A has\n$$p_A=12,\\qquad R_A^{\\prime}=7,$$\nso the expand test uses $7$, not $12$:\n$$P_A^{\\prime}=7-8=-1<0.$$\nCinema B has\n$$p_B=10,\\qquad R_B^{\\prime}=10,$$\nconsistent with a price that need not be cut for one more seat, and\n$$P_B^{\\prime}=10-8=2>0.$$\nSo B should expand a little while A should not. Comparing posted prices $p_A>p_B$ does not decide which cinema has the larger marginal profit. Expand on $R^{\\prime}$ vs $C^{\\prime}=8$: A has $7-8<0$, B has $10-8>0$. Do not compare sticker prices to cost or to each other for the expansion test."
     },
     {
       "case_id": "MATH 12.25",
       "id": "math-12-25",
-      "title": "Poker hand probabilities from a shuffled deck",
+      "title": "Poker Night",
       "chapter": 12,
       "subsection": "12.1",
       "context": "At a friend's poker night, the host shuffles a standard, well-mixed 52-card deck and deals a 5-card poker hand uniformly at random (order within the hand does not matter).\n\nDecide whether each probability claim is true or false.",
@@ -1012,35 +1013,35 @@
       "solution_overview": "This problem involves calculating probabilities related to 5-card poker hands dealt from a standard 52-card deck. Amanda is dealt a 5-card hand, and the selection is uniformly random, meaning every possible 5-card subset of the deck is equally likely. Since the order in which cards are received does not matter, we will use combinations to determine the number of distinct hands.\n\nLet $N_{\\text{total}}$ represent the total number of distinct 5-card hands possible. This is calculated using the combination formula for choosing 5 cards from 52:\n$$N_{\\text{total}} = \\binom{52}{5}$$\n$$N_{\\text{total}} = \\frac{52 \\times 51 \\times 50 \\times 49 \\times 48}{5 \\times 4 \\times 3 \\times 2 \\times 1}$$\n$$N_{\\text{total}} = 2,598,960$$\n\nThis value, $N_{\\text{total}} = 2,598,960$, will serve as the denominator for all probability calculations. To find the probability of a specific type of hand, $H$, we will count the number of ways to form that hand, $N_H$, and then divide by $N_{\\text{total}}$. When comparing probabilities of two hand types, say $H_1$ and $H_2$, we can simply compare their counts $N_{H_1}$ and $N_{H_2}$, as the total number of hands $N_{\\text{total}}$ is a constant denominator."
     },
     {
-      "case_id": "MATH 13.52",
-      "id": "math-13-52",
-      "title": "Vaccine antibody classification — binomial certification thresholds",
+      "case_id": "MATH 13.79",
+      "id": "math-13-79",
+      "title": "Night Courier Audit",
       "chapter": 13,
-      "subsection": "13",
-      "context": "A vaccine trial has lab technicians classify antibody responses across $35$ independent samples. Tech A is a first-year analyst (success probability $p=0.38$ of correctly classifying a sample). Tech B is a lead analyst ($p=0.94$).\n\nTo pass certification, a technician must correctly classify at least $30$ of the $35$ samples. Treat classifications as independent Bernoulli trials within and across technicians.\n\nDecide whether each binomial claim is true or false.",
+      "subsection": "13.5",
+      "context": "A courier completed an audit of $50$ independent evening deliveries. The expected number of on-time deliveries was $42$, and the variance of that count is also known from the binomial model.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "Tech A's probability of correctly classifying all 35 samples is less than 0.0000000000002%.",
-        "Tech A's probability of between 22 and 27 correct classifications is greater than the probability of exactly 22.",
-        "Tech B is more than 150,000,000 times as likely as Tech A to pass certification.",
-        "Tech A is more than 3 times as likely as Tech B to land in the 22–27 range.",
-        "Tech A's standard deviation in number of correct classifications is more than double Tech B's standard deviation."
+        "The next delivery arrives late with probability 0.16.",
+        "In a run of 15 deliveries, the expected number of on-time deliveries exceeds 13.",
+        "For 25 deliveries, the variance of the number of on-time deliveries is 3.36.",
+        "The chance that each of the next 3 deliveries yields an on-time delivery is less than 0.55.",
+        "The chance of at most 5 on-time deliveries in the next 8 deliveries is more than 0.20."
       ],
       "answer_key": [
         true,
+        false,
         true,
         false,
-        false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA perfect run means every one of the $n$ trials succeeds. Independence lets us multiply the success probability across all trials, which is the binomial PMF at $k = n$:\n\n$$\nP(X = n) = p^{n}\n$$\n\nFor side A, $p = 0.38$ and $n = 35$:\n\n$$\nP(X = 35)\n$$\n\n$$\n(0.38)^{35} = 0\n$$\n\n$$\n0\\%\n$$\n\nThe claim compares this with $0\\%$. We got about $0\\%$, which is below the cutoff.\n\nSo the statement is True.\n",
-        "**B.** → True\n\nThe named event covers every admissible count from 22 through 27, not only the single count 22. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=22)$.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nClearing the cutoff means at least 30 successes out of 35. That event is the union of the mutually exclusive outcomes $X = 30, 31, \\ldots, 35$, so we add the individual binomial probabilities:\n\n$$\nP(X \\ge 30) = \\sum_{x = 30}^{35} \\binom{35}{x} p^{x} (1-p)^{35-x}\n$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 35$, $p = 0.38$):\n\n$$\nP(X = 30) = \\binom{35}{30} (0.38)^{30} (0.62)^{5}\n$$\n\n$$\n\\binom{35}{30} = \\dfrac{35!}{30!(35-30)!}\n$$\n\n$$\n\\dfrac{35!}{30!(5)!} = \\dfrac{35 \\cdot 34 \\cdot 33 \\cdot 32 \\cdot 31}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n1190 \\cdot 33 = 39270\n$$\n\n$$\n39270 \\cdot 32 = 1256640\n$$\n\n$$\n1256640 \\cdot 31 = 38955840\n$$\n\n$$\n\\dfrac{38955840}{120} = 324632\n$$\n\n$$\n\\binom{35}{30} = 324632\n$$\n\n$$\n(0.38)^{30} = 0\n$$\n\n$$\n(0.62)^{5}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n0.3844 \\times 0.62 = 0.238328\n$$\n\n$$\n0.238328 \\times 0.62 = 0.14776336\n$$\n\n$$\n0.14776336 \\times 0.62 = 0.0916132832\n$$\n\n$$\n(0.62)^{5} = 0.0916132832\n$$\n\n$$\n324632 \\times 0 = 8.033397 \\times 10^{-8}\n$$\n\n$$\n8.033397 \\times 10^{-8} \\times 0.0916132832 = 7.359659 \\times 10^{-9}\n$$\n\n$$\nP(X = 30) = 7.359659 \\times 10^{-9}\n$$\n\n$$\nP(X = 31) = \\binom{35}{31} (0.38)^{31} (0.62)^{4}\n$$\n\n$$\n\\binom{35}{31} = \\dfrac{35!}{31!(35-31)!}\n$$\n\n$$\n\\dfrac{35!}{31!(4)!} = \\dfrac{35 \\cdot 34 \\cdot 33 \\cdot 32}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n1190 \\cdot 33 = 39270\n$$\n\n$$\n39270 \\cdot 32 = 1256640\n$$\n\n$$\n\\dfrac{1256640}{24} = 52360\n$$\n\n$$\n\\binom{35}{31} = 52360\n$$\n\n$$\n(0.38)^{31} = 0\n$$\n\n$$\n(0.62)^{4}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n0.3844 \\times 0.62 = 0.238328\n$$\n\n$$\n0.238328 \\times 0.62 = 0.14776336\n$$\n\n$$\n(0.62)^{4} = 0.14776336\n$$\n\n$$\n52360 \\times 0 = 4.923695 \\times 10^{-9}\n$$\n\n$$\n4.923695 \\times 10^{-9} \\times 0.14776336 = 0\n$$\n\n$$\nP(X = 31) = 0\n$$\n\n$$\nP(X = 32) = \\binom{35}{32} (0.38)^{32} (0.62)^{3}\n$$\n\n$$\n\\binom{35}{32} = \\dfrac{35!}{32!(35-32)!}\n$$\n\n$$\n\\dfrac{35!}{32!(3)!} = \\dfrac{35 \\cdot 34 \\cdot 33}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n1190 \\cdot 33 = 39270\n$$\n\n$$\n\\dfrac{39270}{6} = 6545\n$$\n\n$$\n\\binom{35}{32} = 6545\n$$\n\n$$\n(0.38)^{32} = 0\n$$\n\n$$\n(0.62)^{3}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n0.3844 \\times 0.62 = 0.238328\n$$\n\n$$\n(0.62)^{3} = 0.238328\n$$\n\n$$\n6545 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.238328 = 0\n$$\n\n$$\nP(X = 32) = 0\n$$\n\n$$\nP(X = 33) = \\binom{35}{33} (0.38)^{33} (0.62)^{2}\n$$\n\n$$\n\\binom{35}{33} = \\dfrac{35!}{33!(35-33)!}\n$$\n\n$$\n\\dfrac{35!}{33!(2)!} = \\dfrac{35 \\cdot 34}{1 \\cdot 2}\n$$\n\n$$\n35 \\cdot 34 = 1190\n$$\n\n$$\n\\dfrac{1190}{2} = 595\n$$\n\n$$\n\\binom{35}{33} = 595\n$$\n\n$$\n(0.38)^{33} = 0\n$$\n\n$$\n(0.62)^{2}\n$$\n\n$$\n0.62 \\times 0.62 = 0.3844\n$$\n\n$$\n(0.62)^{2} = 0.3844\n$$\n\n$$\n595 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.3844 = 0\n$$\n\n$$\nP(X = 33) = 0\n$$\n\n$$\nP(X = 34) = \\binom{35}{34} (0.38)^{34} (0.62)^{1}\n$$\n\n$$\n\\binom{35}{34} = \\dfrac{35!}{34!(35-34)!}\n$$\n\n$$\n\\binom{35}{34} = 35\n$$\n\n$$\n(0.38)^{34} = 0\n$$\n\n$$\n(0.62)^{1} = 0.62\n$$\n\n$$\n35 \\times 0 = 0\n$$\n\n$$\n0 \\times 0.62 = 0\n$$\n\n$$\nP(X = 34) = 0\n$$\n\n$$\nP(X = 35) = \\binom{35}{35} (0.38)^{35} (0.62)^{0}\n$$\n\n$$\n\\binom{35}{35} = 1\n$$\n\n$$\n(0.38)^{35} = 0\n$$\n\n$$\n(0.62)^{0} = 1\n$$\n\n$$\n1 \\times 0 = 0\n$$\n\n$$\n0 \\times 1 = 0\n$$\n\n$$\nP(X = 35) = 0\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n7.3597 \\times 10^{-9} + 7.2754 \\times 10^{-10} + 5.5739 \\times 10^{-11}\n$$\n\n$$\n+ 3.1057 \\times 10^{-12} + 0 + 0\n$$\n\n$$\nP(X \\ge 30)\n$$\n\n$$\n8.1462 \\times 10^{-9}\n$$\n\n$$\n8.1462 \\times 10^{-7}\\%\n$$\n\nSide B ($n = 35$, $p = 0.94$):\n\n$$\nP(X = 30) = \\binom{35}{30} (0.94)^{30} (0.06)^{5}\n$$\n\n$$\n(0.94)^{30} = 0.156255606167\n$$\n\n$$\n(0.06)^{5}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n0.0036 \\times 0.06 = 0.000216\n$$\n\n$$\n0.000216 \\times 0.06 = 1.296 \\times 10^{-5}\n$$\n\n$$\n1.296 \\times 10^{-5} \\times 0.06 = 7.776 \\times 10^{-7}\n$$\n\n$$\n(0.06)^{5} = 7.776 \\times 10^{-7}\n$$\n\n$$\n324632 \\times 0.156255606167 = 50725.569941096641\n$$\n\n$$\n50725.569941096641 \\times 7.776 \\times 10^{-7} = 0.039444203186\n$$\n\n$$\nP(X = 30) = 0.039444203186\n$$\n\n$$\nP(X = 31) = \\binom{35}{31} (0.94)^{31} (0.06)^{4}\n$$\n\n$$\n(0.94)^{31} = 0.146880269797\n$$\n\n$$\n(0.06)^{4}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n0.0036 \\times 0.06 = 0.000216\n$$\n\n$$\n0.000216 \\times 0.06 = 1.296 \\times 10^{-5}\n$$\n\n$$\n(0.06)^{4} = 1.296 \\times 10^{-5}\n$$\n\n$$\n52360 \\times 0.146880269797 = 7690.650926553361\n$$\n\n$$\n7690.650926553361 \\times 1.296 \\times 10^{-5} = 0.099670836008\n$$\n\n$$\nP(X = 31) = 0.099670836008\n$$\n\n$$\nP(X = 32) = \\binom{35}{32} (0.94)^{32} (0.06)^{3}\n$$\n\n$$\n(0.94)^{32} = 0.138067453609\n$$\n\n$$\n(0.06)^{3}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n0.0036 \\times 0.06 = 0.000216\n$$\n\n$$\n(0.06)^{3} = 0.000216\n$$\n\n$$\n6545 \\times 0.138067453609 = 903.65148387002\n$$\n\n$$\n903.65148387002 \\times 0.000216 = 0.195188720516\n$$\n\n$$\nP(X = 32) = 0.195188720516\n$$\n\n$$\nP(X = 33) = \\binom{35}{33} (0.94)^{33} (0.06)^{2}\n$$\n\n$$\n(0.94)^{33} = 0.129783406392\n$$\n\n$$\n(0.06)^{2}\n$$\n\n$$\n0.06 \\times 0.06 = 0.0036\n$$\n\n$$\n(0.06)^{2} = 0.0036\n$$\n\n$$\n595 \\times 0.129783406392 = 77.221126803438\n$$\n\n$$\n77.221126803438 \\times 0.0036 = 0.277996056492\n$$\n\n$$\nP(X = 33) = 0.277996056492\n$$\n\n$$\nP(X = 34) = \\binom{35}{34} (0.94)^{34} (0.06)^{1}\n$$\n\n$$\n(0.94)^{34} = 0.121996402009\n$$\n\n$$\n(0.06)^{1} = 0.06\n$$\n\n$$\n35 \\times 0.121996402009 = 4.269874070308\n$$\n\n$$\n4.269874070308 \\times 0.06 = 0.256192444218\n$$\n\n$$\nP(X = 34) = 0.256192444218\n$$\n\n$$\nP(X = 35) = \\binom{35}{35} (0.94)^{35} (0.06)^{0}\n$$\n\n$$\n(0.94)^{35} = 0.114676617888\n$$\n\n$$\n(0.06)^{0} = 1\n$$\n\n$$\n1 \\times 0.114676617888 = 0.114676617888\n$$\n\n$$\n0.114676617888 \\times 1 = 0.114676617888\n$$\n\n$$\nP(X = 35) = 0.114676617888\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0394 + 0.0997 + 0.1952\n$$\n\n$$\n+ 0.278 + 0.2562 + 0.1147\n$$\n\n$$\nP(X \\ge 30)\n$$\n\n$$\n0.9832\n$$\n\n$$\n98.32\\%\n$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\n\\frac{P_B(X \\ge 30)}{P_A(X \\ge 30)}\n$$\n\n$$\n\\frac{98.32\\%}{8.1462 \\times 10^{-7}\\%}\n$$\n\n$$\n120691097.19\n$$\n\nSince $120691097.19 \\le 150000000$.\n\nSo the statement is False.\n",
-        "**D.** → False\n\nLanding in the $22$–$27$ range means the count falls between $22$ and $27$ inclusive, so add those binomial point masses:\n\n$$\nP(22 \\le X \\le 27) = \\sum_{x=22}^{27} \\binom{35}{x} p^{x}(1-p)^{35-x}\n$$\n\nSide A ($n=35$, $p=0.38$):\n\n$$\nP_A(22 \\le X \\le 27) \\approx 0.00250329 \\approx 0.2503\\%\n$$\n\nSide B ($n=35$, $p=0.94$):\n\n$$\nP_B(22 \\le X \\le 27) \\approx 0.000913647 \\approx 0.0914\\%\n$$\n\nThe ratio in the claim's order (A relative to B):\n\n$$\n\\frac{P_A(22 \\le X \\le 27)}{P_B(22 \\le X \\le 27)} \\approx \\frac{0.2503\\%}{0.0914\\%} \\approx 2.74\n$$\n\nSince $2.74 \\le 3$, the claim fails.\n\nSo the statement is False.\n",
-        "**E.** → True\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nSide A ($n_A = 35$, $p_A = 0.38$):\n\n$$\n\\mathrm{Var}(A) = 8.246\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{8.246}\n$$\n\n$$\n2.872\n$$\n\nSide B ($n_B = 35$, $p_B = 0.94$):\n\n$$\n\\mathrm{Var}(B) = 1.974\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{1.974}\n$$\n\n$$\n1.405\n$$\n\n$$\n\\frac{\\mathrm{SD}(A)}{\\mathrm{SD}(B)}\n$$\n\n$$\n\\frac{2.872}{1.405}\n$$\n\n$$\n2.044\n$$\n\nAgainst the claim.\n\nSo the statement is True.\n"
+        "**A.** → True\n\nFrom the stem quantities, recover the common success probability step by step.\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{42}{50} = 0.84\n$$\n\nEach independent trial either succeeds or fails, so the failure probability is the complement\n\n$$\n1-p\n$$\n\nSubstituting the recovered value,\n\n$$\n1-p = 1-0.84\n$$\n\n$$\n1 - 0.84 = 0.16\n$$\n\nThis agrees with the probability stated in the claim.\n\nSo the statement is True.\n",
+        "**B.** → False\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$,\n\n$$\nE[X] = np\n$$\n\nWith $n=15$ and $p=0.84$,\n\n$$\nE[X] = 15\\cdot 0.84\n$$\n\n$$\n15 \\times 0.84 = 12.6\n$$\n\nCompared with the threshold $13$, we have $12.6 \\le 13$, so the mean does not exceed the claimed cutoff.\n\nSo the statement is False.\n",
+        "**C.** → True\n\nFor $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nInsert $n=25$, $p=0.84$, and $1-p=0.16$:\n\n$$\n\\mathrm{Var}(X) = 25\\cdot 0.84\\cdot 0.16\n$$\n\n$$\n25 \\times 0.84 = 21\n$$\n\n$$\n21 \\times 0.16 = 3.36\n$$\n\nThis matches the variance stated in the claim.\n\nSo the statement is True.\n",
+        "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$\nP(\\text{3 successes in a row}) = p^{3}\n$$\n\nWith the recovered $p=0.84$,\n\n$$\np^{3} = (0.84)^{3}\n$$\n\n$$\n\\approx 0.5927\n$$\n\nCompare with the claimed cutoff $0.55$:\n\n$$\n0.5927\n$$\n\n$$\n0.5927 \\ge 0.55\n$$\n\nThe inequality in the claim therefore fails.\n\nSo the statement is False.\n",
+        "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.84)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$\nP(X\\le 5) = \\sum_{x = 0}^{5} \\binom{8}{x}p^{x}(1-p)^{8-x}\n$$\n\nEvaluating each mass separately:\n\n$$\nP(X = 0) = \\binom{8}{0}(0.84)^{0}(0.16)^{8}\\approx 4.2950e-7\n$$\n\n$$\n\\binom{8}{0} = 1\n$$\n\n$$\nP(X = 1) = \\binom{8}{1}(0.84)^{1}(0.16)^{7}\\approx 1.8039e-5\n$$\n\n$$\n\\binom{8}{1} = \\dfrac{8!}{1!(8-1)!}\n$$\n\n$$\n\\binom{8}{1} = 8\n$$\n\n$$\nP(X = 2) = \\binom{8}{2}(0.84)^{2}(0.16)^{6}\\approx 0.0003\n$$\n\n$$\n\\binom{8}{2} = \\dfrac{8!}{2!(8-2)!}\n$$\n\n$$\n\\dfrac{8!}{2!(6)!} = \\dfrac{8 \\cdot 7}{1 \\cdot 2}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n\\dfrac{56}{2} = 28\n$$\n\n$$\n\\binom{8}{2} = 28\n$$\n\n$$\nP(X = 3) = \\binom{8}{3}(0.84)^{3}(0.16)^{5}\\approx 0.0035\n$$\n\n$$\n\\binom{8}{3} = \\dfrac{8!}{3!(8-3)!}\n$$\n\n$$\n\\dfrac{8!}{3!(5)!} = \\dfrac{8 \\cdot 7 \\cdot 6}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n56 \\cdot 6 = 336\n$$\n\n$$\n\\dfrac{336}{6} = 56\n$$\n\n$$\n\\binom{8}{3} = 56\n$$\n\n$$\nP(X = 4) = \\binom{8}{4}(0.84)^{4}(0.16)^{4}\\approx 0.0228\n$$\n\n$$\n\\binom{8}{4} = \\dfrac{8!}{4!(8-4)!}\n$$\n\n$$\n\\dfrac{8!}{4!(4)!} = \\dfrac{8 \\cdot 7 \\cdot 6 \\cdot 5}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n8 \\cdot 7 = 56\n$$\n\n$$\n336 \\cdot 5 = 1680\n$$\n\n$$\n\\dfrac{1680}{24} = 70\n$$\n\n$$\n\\binom{8}{4} = 70\n$$\n\n$$\nP(X = 5) = \\binom{8}{5}(0.84)^{5}(0.16)^{3}\\approx 0.0959\n$$\n\nAdding these contributions,\n\n$$\nP(X\\le 5)\n$$\n\n$$\n0.1226\n$$\n\nCompared with $0.2$, we obtain $0.1226 \\le 0.2$. The claim's inequality does not hold.\n\nSo the statement is False.\n"
       ],
-      "difficulty_level": "4/5",
-      "solution_overview": "A vaccine trial has lab technicians classify antibody responses across 35 samples. Tech A is a first-year analyst (p = 0.38 of correctly classifying a sample). Tech B is a lead analyst (p = 0.94). To pass certification, a technician must correctly classify at least 30 of the 35 samples. (Scoring scheme used in statement F: +5 points for each correct call, −2 points for each miss.).\n\nWe model each side as a binomial count with $n = 35$ independent trials: side A has success probability $p_A = 0.38$, side B has $p_B = 0.94$.\n\nThe scenario’s success cutoff is at least $k = 30$ successes out of $n = 35$."
+      "difficulty_level": "5/5",
+      "solution_overview": "A courier completed an audit of 50 independent evening deliveries. The expected number of on-time deliveries was 42, and the variance of that count was 6.72.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{42}{50} = 0.84\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.84)$, so $1-p=0.16$ and $\\mathrm{Var}(X)=np(1-p)$."
     }
   ]
 }
