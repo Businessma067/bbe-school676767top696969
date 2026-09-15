@@ -907,7 +907,7 @@ So the statement is True.`,
 }
 
 
-/** Real-case logic — structured paragraphs + truth-table solution (M2 style). */
+/** Real-case logic — overview owns the truth table; each letter has its own teacher solve. */
 function buildMathCh1Independent() {
   const truthTable = `**Truth table of valid rosters.**
 
@@ -962,43 +962,127 @@ At least three of the six interns are rostered.`;
   const tactical_explanations = [
     `**A.** → False
 
-The truth table contains a valid row with $B=0$, namely $\\{C,E,F\\}$. Ben is therefore not forced onto every valid roster.
+The claim says Ben is on every valid roster. To test that, try to build a valid roster with Ben out and see whether the other rules still allow it.
 
-So the statement is False.
+Assume $B=0$. Rule (1) is the biconditional $A\\Leftrightarrow B$, so Ava is out as well:
 
-${truthTable}`,
+$$
+B=0\\qquad\\Rightarrow\\qquad A=0
+$$
+
+Rule (2) is $B\\Rightarrow C$. With Ben already out the hypothesis is false, so the implication is idle: Cara is free so far.
+
+Rule (3) forces exactly one of Cara or Drew. Two cases remain.
+
+**Case Cara in, Drew out** ($C=1$, $D=0$). Rule (4) is idle because Drew is out. Rule (5) needs $E\\lor F$. Rule (6) is $F\\Rightarrow\\neg A$; Ava is already out, so Finn may enter. One legal choice is $E=1$, $F=1$:
+
+$$
+\\{C,E,F\\}
+$$
+
+Size $3$, so rule (7) holds. Every rule is satisfied, and Ben is absent.
+
+**Case Drew in, Cara out** ($C=0$, $D=1$). Rule (4) forces $E=0$. Rule (5) then forces $F=1$. With Ava out, rule (6) allows Finn. The roster is at most $\\{D,F\\}$ (size $2$), which breaks rule (7).
+
+So Ben-out is possible in the first case. The roster $\\{C,E,F\\}$ is a concrete counter-example to “Ben on every valid roster.”
+
+So the statement is False.`,
 
     `**B.** → False
 
-No valid row has $D=1$. Drew forces $C=0$ and $E=0$, so $F=1$, but then size stays below $3$. Drew never appears in a valid roster.
+The claim says some valid roster includes Drew. Force $D=1$ and chase the consequences.
 
-So the statement is False.
+Rule (3) is the exclusive-or on Cara and Drew, so Cara is out:
 
-${truthTable}`,
+$$
+D=1\\qquad\\Rightarrow\\qquad C=0
+$$
+
+Rule (4) is $D\\Rightarrow\\neg E$, so Eve is out:
+
+$$
+D=1\\qquad\\Rightarrow\\qquad E=0
+$$
+
+Rule (5) needs $E\\lor F$. With Eve gone, Finn must enter:
+
+$$
+F=1
+$$
+
+Rule (6) is $F\\Rightarrow\\neg A$, so Ava is out, and then rule (1) forces Ben out as well:
+
+$$
+F=1\\qquad\\Rightarrow\\qquad A=0\\qquad\\Rightarrow\\qquad B=0
+$$
+
+The only people still on the roster are Drew and Finn:
+
+$$
+\\{D,F\\}
+$$
+
+Size $2$, which is strictly less than $3$, so rule (7) fails. Every branch with Drew in dies. No valid roster contains Drew.
+
+So the statement is False.`,
 
     `**C.** → True
 
-The rule “Finn only if Ava is not rostered” is $F\\Rightarrow\\neg A$. Contrapositively, $A\\Rightarrow\\neg F$. Every valid row with $A=1$ has $F=0$.
+The stem says “Finn is rostered only if Ava is not rostered.” In symbols that is
 
-So the statement is True.
+$$
+F\\Rightarrow\\neg A
+$$
 
-${truthTable}`,
+The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$. Here $P=F$ and $Q=\\neg A$, so
+
+$$
+\\neg(\\neg A)\\Rightarrow\\neg F
+$$
+
+$$
+A\\Rightarrow\\neg F
+$$
+
+That is exactly the claim: if Ava is rostered, then Finn cannot be rostered.
+
+Check against the two valid rosters from the overview. The Ben-based roster $\\{A,B,C,E\\}$ has $A=1$ and $F=0$. The other valid roster $\\{C,E,F\\}$ has $A=0$, so the implication is idle there. No valid row ever has $A=F=1$ together (that row is rejected in the overview table by rule (6)).
+
+So the statement is True.`,
 
     `**D.** → True
 
-The only size-three valid row is $\\{C,E,F\\}$. The Ben-based roster $\\{A,B,C,E\\}$ already has size $4$.
+Rule (7) asks for size at least three; the claim asks whether exactly one valid roster has size exactly three.
 
-So the statement is True.
+From the overview solve there are only two valid rosters:
 
-${truthTable}`,
+$$
+\\{A,B,C,E\\}\\qquad\\text{(size }4\\text{)}
+$$
+
+$$
+\\{C,E,F\\}\\qquad\\text{(size }3\\text{)}
+$$
+
+The Ben-based roster already has four people, so it is not a size-three example. The only size-three survivor is $\\{C,E,F\\}$.
+
+Any other attempt at size three either breaks the exclusive-or, breaks $F\\Rightarrow\\neg A$, or falls below size three once Drew is forced in (as in letter B). Therefore there is exactly one valid roster of size three.
+
+So the statement is True.`,
 
     `**E.** → False
 
-A six-person roster would require $C=D=1$, which breaks the exclusive-or. The truth table’s largest valid size is $4$.
+A roster of all six interns would require
 
-So the statement is False.
+$$
+A=B=C=D=E=F=1
+$$
 
-${truthTable}`,
+Rule (3) says exactly one of Cara or Drew is rostered. Putting both $C=1$ and $D=1$ immediately breaks that exclusive-or, before any other rule is checked.
+
+Even if one tried to keep five people by dropping only Drew, rule (6) still forbids $A=F=1$ together. The overview table’s largest valid size is $4$ (the roster $\\{A,B,C,E\\}$); the other valid roster has size $3$. Size six never appears.
+
+So the statement is False.`,
   ];
 
   return {
@@ -1026,11 +1110,17 @@ $$
 
 and (7) size at least three.
 
-"$P$ only if $Q$" is $P\\Rightarrow Q$.
+"$P$ only if $Q$" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.
 
-**Part 2: Building the truth table.**
+**Part 2: Shared forcing (used by every letter).**
 
-Apply the biconditional and exclusive-or first, then the implications, then the size filter. Only two rows survive: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$.
+Apply the biconditional and exclusive-or first, then the implications, then the size filter.
+
+- If Ben is in, Ava is in and Cara is in; the exclusive-or then forces Drew out, so Eve is free and Finn is blocked by rule (6). One survivor is $\\{A,B,C,E\\}$.
+- If Ben is out, Ava is out; Cara-in / Drew-out with Eve and Finn in gives the second survivor $\\{C,E,F\\}$.
+- Drew-in always collapses to size $<3$ (see letter B).
+
+Only two rows survive.
 
 ${truthTable}`,
   };
