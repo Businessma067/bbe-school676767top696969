@@ -41,11 +41,19 @@ export function ExamQuestionBody({
         >
           <div
             className={cn(
-              "min-w-0",
+              "min-w-0 space-y-3",
               emphasized && "font-display text-lg font-semibold sm:text-xl",
             )}
           >
-            <MathText text={q.stem} />
+            {q.stem
+              .split(/\n\n+/)
+              .map((para) => para.trim())
+              .filter(Boolean)
+              .map((para, i) => (
+                <div key={i} className="min-w-0">
+                  <MathText text={para} />
+                </div>
+              ))}
           </div>
           {q.figure ? (
             <ZoomableImage
