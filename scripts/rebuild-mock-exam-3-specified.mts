@@ -248,59 +248,49 @@ So the statement is True.`,
 }
 
 /** Hard mixture + break-even linear systems (different engine from rates / utility). */
-/** Diversified harder equations — not five logs on one base. */
+/** Hard multi-topic equation word problems (M1 4.215 / M2 4.165 style). */
 function buildMathCh4Diversified() {
-  const context = `Decide whether each statement about equations is true or false. The five claims use different equation types.`;
+  const context = `Decide whether each statement about equations is true or false. Each letter is an independent word problem from a different equation family.`;
 
   const statements = [
-    "The quadratic $x^{2}-(k+1)x+k=0$ has two distinct positive roots when $k=2$.",
-    "The rational equation $\\dfrac{x+5}{x-1}=3$ has a solution smaller than $3$.",
-    "The solution set of $|3x-6|<9$ is an open interval whose length exceeds $5$.",
-    "The exponential equation $3^{2x}=27^{x-1}$ has a solution smaller than $2$.",
-    "Over the reals with $x>1$, the equation $\\log(x-1)+\\log(x+1)=\\log 8$ has a solution smaller than $4$.",
+    "A courier is $27$ years older than a trainee. In $6$ years the courier will be twice as old as the trainee will be then. A planner concludes that the trainee is now $15$ years old.",
+    "A $30\\ \\mathrm{cm}$ by $18\\ \\mathrm{cm}$ print is mounted with a uniform frame so that the framed outer area is three times the print area. The frame width is then strictly less than $6\\ \\mathrm{cm}$.",
+    "A driver covers $12\\ \\mathrm{km}$ at $8\\ \\mathrm{km/h}$ and then $8\\ \\mathrm{km}$ at $12\\ \\mathrm{km/h}$. The whole trip therefore takes strictly less than $2.5$ hours.",
+    "Over $x>1$, the equation $\\log(x-1)+\\log(x+3)=\\log(2x+14)$ has a solution strictly smaller than $5$.",
+    "A till holds only $2$-euro and $5$-euro coins. There are $19$ coins worth $62$ euros in total. Then there are strictly more than eight coins of $5$ euros.",
   ];
 
-  // A: k=2 → x^2-3x+2=(x-1)(x-2)=0 → 1,2 distinct positive → True
-  // B: x+5=3(x-1)=3x-3 → 8=2x → x=4, not < 3 → False
-  // C: |3x-6|<9 → -1<x<5 length 6 > 5 → True
-  // D: 3^{2x}=3^{3(x-1)} → 2x=3x-3 → x=3, not < 2 → False
-  // E: (x-1)(x+1)=8 → x^2=9 → x=3 (x=-3 invalid) → 3<4 → True
+  // A: true age 21, claim 15 → False
+  // B: (30+2w)(18+2w)=3*30*18=1620; 540+60w+36w+4w^2=1620; 4w^2+96w-1080=0; w^2+24w-270=0; w=-12±√(144+270)=-12±√414; positive ≈ -12+20.35=8.35 > 6, so "less than 6" False
+  // C: t=12/8+8/12=1.5+2/3=2.166... < 2.5 True
+  // D: (x-1)(x+3)=2x+14 → x^2+2x-3=2x+14 → x^2=17 → x=√17≈4.123 <5 (x>-3 and x>1) True
+  // E: 2a+5b=62, a+b=19 → a=19-b; 38-2b+5b=62 → 3b=24 → b=8, not >8 → False
 
-  const answer_key = [true, false, true, false, true];
+  const answer_key = [false, false, true, true, false];
 
   const tactical_explanations = [
-    `**A.** → True
+    `**A.** → False
 
-For $k=2$ the equation is
-
-$$
-x^{2}-3x+2=0
-$$
+Let $t$ be the trainee’s present age. Then
 
 $$
-(x-1)(x-2)=0
+t+27+6=2(t+6)\\qquad\\Rightarrow\\qquad t+33=2t+12\\qquad\\Rightarrow\\qquad t=21
 $$
 
-The roots are $x=1$ and $x=2$: two distinct positive numbers.
+The planner’s figure $15$ is wrong.
 
-So the statement is True.`,
+So the statement is False.`,
 
     `**B.** → False
 
+Outer dimensions $(30+2w)$ by $(18+2w)$ give
+
 $$
-\\dfrac{x+5}{x-1}=3\\qquad(x\\ne 1)
+(30+2w)(18+2w)=3\\cdot 30\\cdot 18=1620
 $$
 
 $$
-x+5=3(x-1)=3x-3
-$$
-
-$$
-8=2x\\qquad\\Rightarrow\\qquad x=4
-$$
-
-$$
-4\\nless 3
+w^{2}+24w-270=0\\qquad\\Rightarrow\\qquad w=-12+\\sqrt{414}\\approx 8.35\\ngtr?\\quad\\text{not }<6
 $$
 
 So the statement is False.`,
@@ -308,66 +298,38 @@ So the statement is False.`,
     `**C.** → True
 
 $$
-|3x-6|<9
+\\dfrac{12}{8}+\\dfrac{8}{12}=1.5+\\dfrac{2}{3}=\\dfrac{13}{6}\\approx 2.167<2.5
 $$
-
-$$
--9<3x-6<9
-$$
-
-$$
--3<3x<15
-$$
-
-$$
--1<x<5
-$$
-
-The open interval $(-1,5)$ has length $6$, which exceeds $5$.
 
 So the statement is True.`,
 
-    `**D.** → False
+    `**D.** → True
+
+Domain $x>1$. Then
 
 $$
-3^{2x}=27^{x-1}=(3^{3})^{x-1}=3^{3x-3}
+(x-1)(x+3)=2x+14\\qquad\\Rightarrow\\qquad x^{2}=17\\qquad\\Rightarrow\\qquad x=\\sqrt{17}\\approx 4.123<5
 $$
 
-$$
-2x=3x-3\\qquad\\Rightarrow\\qquad x=3
-$$
+So the statement is True.`,
+
+    `**E.** → False
+
+With $a$ coins of $2$ euros and $b$ of $5$ euros,
 
 $$
-3\\nless 2
+a+b=19,\\qquad 2a+5b=62\\qquad\\Rightarrow\\qquad b=8
 $$
+
+Eight is not strictly more than eight.
 
 So the statement is False.`,
-
-    `**E.** → True
-
-Domain requires $x>1$. Then
-
-$$
-\\log\\bigl((x-1)(x+1)\\bigr)=\\log 8
-$$
-
-$$
-x^{2}-1=8\\qquad\\Rightarrow\\qquad x^{2}=9
-$$
-
-$$
-x=3
-$$
-
-(the root $x=-3$ is outside the domain). Since $3<4$, the claim holds.
-
-So the statement is True.`,
   ];
 
   return {
     case_id: "MATH 4.MOCK.EQ",
     id: "MATH 4.MOCK.EQ",
-    title: "Mixed hard equations — quadratic, rational, absolute, exponential, log",
+    title: "Hard equation word problems — ages, frame, motion, log, coins",
     chapter: 4,
     subsection: "4.5",
     context,
@@ -376,9 +338,10 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Each letter is a different equation family: factor a parameter quadratic, clear a rational, expand an absolute-value inequality, match exponential bases, then apply log product with domain.",
+      "Set up and solve five independent equation stories (linear ages, quadratic frame, motion times, log product, coin system), then accept or reject the claimed conclusion.",
   };
 }
+
 
 /** Diversified harder inequalities — not five copies of one rational sign chart. */
 function buildMathCh6Diversified() {
@@ -492,116 +455,50 @@ So the statement is True.`,
   };
 }
 
+/** Hard mixture + break-even — euros kept outside KaTeX math. */
 function buildMathCh5Mixture() {
-  // Alloy: pure copper + 40%-copper scrap → 70% copper mix of 120 kg
-  // Let x = kg pure (100%), y = kg scrap (40%)
-  // x+y=120, x+0.4y=0.7*120=84 → x+0.4y=84 with x=120-y → 120-y+0.4y=84 → 120-0.6y=84 → 0.6y=36 → y=60, x=60
-  // Cost: pure €9/kg, scrap €4/kg → cost = 60*9+60*4=540+240=780
-  // Selling at €8.50/kg → revenue 120*8.5=1020; profit 240
-  // Second product: break-even FC=3600, VC=5, P=11 → Q=3600/(11-5)=600
+  const context = `A foundry blends pure copper (100% Cu) with scrap that is 40% copper by mass. It must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is 70% copper. Pure copper costs EUR 9 per kilogram and scrap costs EUR 4 per kilogram. The finished alloy is sold at EUR 8.50 per kilogram.
 
-  const context = `A foundry blends pure copper (100% Cu) with scrap that is 40% copper by mass. It must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is 70% copper. Pure copper costs $€9$ per kilogram and scrap costs $€4$ per kilogram. The finished alloy is sold at $€8.50$ per kilogram.
-
-Separately, a workshop product has fixed costs $€3{,}600$, variable cost $€5$ per unit and selling price $€11$ per unit.`;
+Separately, a workshop product has fixed costs EUR 3600, variable cost EUR 5 per unit and selling price EUR 11 per unit.`;
 
   const statements = [
     "In the cheapest blend that meets the mass and copper-content targets, more than $55\\ \\mathrm{kg}$ of scrap must be used.",
-    "The total material cost of that $120\\ \\mathrm{kg}$ blend is less than $€750$.",
-    "If the entire $120\\ \\mathrm{kg}$ blend is sold at $€8.50$ per kilogram, the profit on materials alone exceeds $€220$.",
+    "The total material cost of that $120\\ \\mathrm{kg}$ blend is less than EUR 750.",
+    "If the entire $120\\ \\mathrm{kg}$ blend is sold at the stated price, the profit on materials alone exceeds EUR 220.",
     "The workshop product’s break-even output is fewer than $550$ units.",
     "If fixed costs rise by $20\\%$ and the contribution margin per unit is unchanged, break-even output rises by exactly $20\\%$.",
   ];
-
-  // A: scrap y=60 > 55 → True
-  // B: cost 780 not < 750 → False
-  // C: profit 1020-780=240 > 220 → True
-  // D: BE=600 not < 550 → False
-  // E: Q' = 1.2 FC / CM = 1.2 Q → exactly 20% → True
 
   const answer_key = [true, false, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-Let $x$ be kilograms of pure copper and $y$ kilograms of scrap. Mass and copper balance give
-
-$$
-x+y=120
-$$
-
-$$
-1\\cdot x+0.4\\,y=0.70\\cdot 120=84
-$$
-
-Substitute $x=120-y$:
-
-$$
-120-y+0.4y=84
-$$
-
-$$
-120-0.6y=84
-$$
-
-$$
-0.6y=36\\qquad\\Rightarrow\\qquad y=60
-$$
-
-$$
-60>55
-$$
+Mass and copper balance yield scrap mass $y=60>55$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-With $x=60$ and $y=60$,
-
-$$
-\\text{Cost}=60\\cdot 9+60\\cdot 4=540+240=780
-$$
-
-$$
-780\\nless  750
-$$
+Material cost is $60\\cdot 9+60\\cdot 4=780$, which is not less than $750$.
 
 So the statement is False.`,
 
     `**C.** → True
 
-$$
-\\text{Revenue}=120\\cdot 8.50=1{,}020
-$$
-
-$$
-\\text{Profit}=1{,}020-780=240>220
-$$
+Revenue $120\\cdot 8.50=1020$ and cost $780$ give profit $240>220$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Break-even quantity:
-
-$$
-Q_{\\mathrm{BE}}=\\dfrac{3{,}600}{11-5}=\\dfrac{3{,}600}{6}=600
-$$
-
-$$
-600\\nless  550
-$$
+Break-even is $3600/(11-5)=600$, which is not fewer than $550$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Contribution margin per unit is unchanged, so break-even scales with fixed cost:
-
-$$
-Q_{\\mathrm{BE}}'=\\dfrac{1.2\\cdot \\mathrm{FC}}{\\mathrm{CM}}=1.2\\,Q_{\\mathrm{BE}}
-$$
-
-That is an exact $20\\%$ rise in break-even output.
+With a fixed contribution margin, break-even scales exactly with fixed cost, so a $20\\%$ rise in fixed cost raises break-even by exactly $20\\%$.
 
 So the statement is True.`,
   ];
@@ -618,58 +515,77 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Solve the two-equation copper blend for the scrap mass, price the bill of materials, then compare contribution-margin break-even before and after a proportional fixed-cost shock.",
+      "Solve the copper blend, price materials using euro amounts written outside math mode, then compare break-even before and after a proportional fixed-cost shock.",
   };
 }
 
-/** Five independent logic claims — not one shared scenario. */
+
+/** Real-case logic — named people and rules (M2 tournament style, different cast). */
 function buildMathCh1Independent() {
-  const context = `Decide whether each statement is true or false. The five claims concern different logical principles and do not share a common scenario or a single shared hypothesis.`;
+  const context = `Six interns — Ava, Ben, Cara, Drew, Eve, and Finn — are being considered for a weekend on-call roster. The staffing rules are:
+
+1. Ava is rostered if and only if Ben is rostered.
+2. If Ben is rostered, then Cara is rostered.
+3. Exactly one of Cara or Drew is rostered (never both, never neither).
+4. If Drew is rostered, then Eve is not rostered.
+5. At least one of Eve or Finn is rostered.
+6. Finn is rostered only if Ava is not rostered.
+7. At least three of the six interns are rostered.
+
+Decide whether each statement is true or false.`;
 
   const statements = [
-    "The quantified claim $\\exists x\\,\\forall y\\,P(x,y)$ logically implies $\\forall y\\,\\exists x\\,P(x,y)$.",
-    "The negation $\\neg(P\\land Q)$ is logically equivalent to $\\neg P\\land \\neg Q$.",
-    "From the premises $P\\to Q$ and $\\neg Q$ one may validly conclude $\\neg P$.",
-    "The biconditional $P\\leftrightarrow Q$ is true whenever $P$ and $Q$ have opposite truth values.",
-    "The quantified implication $\\forall x\\,(P(x)\\to Q(x))$ is logically equivalent to $\\bigl(\\forall x\\,P(x)\\bigr)\\to\\bigl(\\forall x\\,Q(x)\\bigr)$.",
+    "Ben must appear on every roster that obeys all seven rules.",
+    "It is possible to build a valid roster that includes Drew.",
+    "If Ava is rostered, then Finn cannot be rostered.",
+    "There is exactly one roster of size three that obeys all seven rules.",
+    "It is possible for all six interns to be rostered at once.",
   ];
 
-  const answer_key = [true, false, true, false, false];
+  // From rules: A↔B, B→C, Cara XOR Drew, Drew→¬Eve, Eve∨Finn, Finn→¬Ava, |S|≥3
+  // If Ben: then Ava, Cara; not Drew (XOR); Eve∨Finn; Finn→¬Ava but Ava is on → ¬Finn → Eve. Roster {A,B,C,E} size 4. Valid.
+  // Must Ben always? Suppose ¬Ben → ¬Ava. Cara XOR Drew.
+  // Case Drew: ¬Cara, ¬Eve (from Drew→¬Eve), so Finn (Eve∨Finn). Finn→¬Ava OK. Roster {D,F} size 2 < 3 — need one more: only E blocked, A/B blocked, C blocked. Cannot add. So Drew without Ben fails size.
+  // Case Cara, ¬Drew, ¬Ben, ¬Ava: Eve∨Finn, Finn→¬Ava OK. {C,E}, {C,F}, {C,E,F} — size ≥3 only {C,E,F}. Valid without Ben!
+  // So A "Ben must appear on every" is FALSE.
+  // B: Drew possible? Need Ben path: Ben→Ava,Cara so ¬Drew. Drew conflicts with Cara when Ben. Without Ben Drew fails size. So Drew impossible → False.
+  // Wait reconsider Drew with Ben: Ben→Cara, XOR forbids Drew. So Drew never with Ben. Without Ben Drew fails. Drew impossible. B False.
+  // C: Ava→Ben→Cara, Finn→¬Ava so Ava→¬Finn. True (also from rule 6 contrapose).
+  // D: size-3 valid rosters: {C,E,F} works. Is there another?
+  // With Ben: {A,B,C,E} is size 4; can we drop E? Need Eve∨Finn; Finn forbidden with Ava; so E required → min size 4 with Ben.
+  // Without Ben: {C,E,F} only size-3. {C,E}? size 2. {C,F}? size 2. So exactly one size-3 → True.
+  // E: all six: need A,B,C,D,E,F — Cara and Drew both → violates XOR. False.
+
+  const answer_key = [false, false, true, true, false];
 
   const tactical_explanations = [
-    `**A.** → True
+    `**A.** → False
 
-If a single $x_0$ works for every $y$, then for each fixed $y$ one may choose that same $x_0$. So $\\exists x\\,\\forall y\\,P$ forces $\\forall y\\,\\exists x\\,P$.
+Without Ben (and therefore without Ava), the roster $\\{C,E,F\\}$ satisfies Cara-xor-Drew, Eve-or-Finn, Finn’s restriction, and the size rule. So Ben is not forced onto every valid roster.
 
-So the statement is True.`,
+So the statement is False.`,
 
     `**B.** → False
 
-De Morgan’s law says
-
-$$
-\\neg(P\\land Q)\\equiv \\neg P\\lor \\neg Q
-$$
-
-not $\\neg P\\land \\neg Q$. The claimed equivalence is wrong.
+Drew forces Cara off the roster. But Ben forces Cara on, so Drew cannot appear with Ben. Without Ben, Drew also forces Eve off, so Finn must be on; the only candidates left cannot reach size three. No valid roster contains Drew.
 
 So the statement is False.`,
 
     `**C.** → True
 
-This is modus tollens: $P\\to Q$ together with $\\neg Q$ yields $\\neg P$.
+Rule 6 says Finn is rostered only if Ava is not. Contrapositively, if Ava is rostered then Finn is not.
 
 So the statement is True.`,
 
-    `**D.** → False
+    `**D.** → True
 
-$P\\leftrightarrow Q$ is true precisely when $P$ and $Q$ have the same truth value. Opposite values make the biconditional false.
+Every Ben-based roster needs Ava, Ben, Cara, and Eve (Finn is blocked), hence size at least $4$. The only size-three roster is $\\{C,E,F\\}$.
 
-So the statement is False.`,
+So the statement is True.`,
 
     `**E.** → False
 
-From $\\forall x\\,(P(x)\\to Q(x))$ and $\\forall x\\,P(x)$ one does get $\\forall x\\,Q(x)$, but the bare implication $\\bigl(\\forall x\\,P\\bigr)\\to\\bigl(\\forall x\\,Q\\bigr)$ can hold for other reasons and is not equivalent to the quantified implication. Counter-models exist where one side holds and the other fails.
+Rostering everyone would put both Cara and Drew on call, contradicting the exclusive-or rule.
 
 So the statement is False.`,
   ];
@@ -677,7 +593,7 @@ So the statement is False.`,
   return {
     case_id: "MATH 1.MOCK.INDEP",
     id: "MATH 1.MOCK.INDEP",
-    title: "Independent logic claims — quantifiers, De Morgan, modus tollens, biconditional",
+    title: "Weekend on-call roster — six interns and seven rules",
     chapter: 1,
     subsection: "1.4",
     context,
@@ -686,108 +602,69 @@ So the statement is False.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Treat each letter as a separate logic fact: quantifier order, De Morgan, modus tollens, biconditional truth table, and the gap between $\\forall(P\\to Q)$ and $(\\forall P)\\to(\\forall Q)$.",
+      "Chain the English rules (biconditional, implication, exclusive or, only-if, size) to decide forced membership, possibility, and uniqueness — without treating the letters as abstract De Morgan drills.",
   };
 }
 
-/** Multi-step elementary algebra — no abbreviated-multiplication shortcuts. */
+
+/** Multi-step algebra — threshold claims, not “equals the boxed number”. */
 function buildMathCh2HardCalc() {
-  const context = `Decide whether each statement is true or false. Each claim needs a multi-step calculation (nested fractions, a linear system, substitution, a rational equation, or nested radicals) — not a single abbreviated-multiplication identity.`;
+  const context = `Decide whether each statement is true or false. Each claim needs a multi-step calculation; the statements give thresholds or qualitative conclusions, not the finished boxed value.`;
 
   const statements = [
-    "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ equals $\\dfrac{5}{7}$.",
-    "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>4$.",
-    "Substituting $x=2$ into $(2x^{3}-5x+1)(3x-4)$ yields the value $14$.",
-    "Over the reals with $x\\ne\\pm 2$, the equation $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ has solution $x=2$.",
-    "The equation $\\sqrt{x+7}-\\sqrt{x-1}=2$ has solution $x=2$.",
+    "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ is strictly smaller than $0.8$.",
+    "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>3$.",
+    "Substituting $x=2$ into $(2x^{3}-5x+1)(3x-4)$ yields a value strictly larger than $12$.",
+    "Over the reals with $x\\ne\\pm 2$, every solution of $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ is strictly smaller than $2$.",
+    "The positive solution of $\\sqrt{x+7}-\\sqrt{x-1}=2$ is strictly larger than $3$.",
   ];
 
-  const answer_key = [true, false, true, false, true];
+  // A: 5/7≈0.714 < 0.8 True
+  // B: 48/19≈2.53 ≯ 3 False
+  // C: 14 > 12 True
+  // D: x=5/2=2.5 which is NOT < 2; also "every solution" — the only solution is 2.5 ≮ 2 → False
+  // E: x=2 ≯ 3 False
+
+  const answer_key = [true, false, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-At $x=2$,
-
-$$
-\\dfrac{3}{2}-\\dfrac{2}{3}=\\dfrac{5}{6},\\qquad \\dfrac{5}{3}-\\dfrac{1}{2}=\\dfrac{7}{6}
-$$
-
-$$
-\\dfrac{5/6}{7/6}=\\dfrac{5}{7}
-$$
+At $x=2$ the nested quotient equals $5/7\\approx 0.714$, which is strictly smaller than $0.8$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Eliminate $v$: multiply the first equation by $5$ and the second by $2$,
-
-$$
-15u-10v=55,\\qquad 4u+10v=6
-$$
-
-$$
-19u=61\\qquad\\Rightarrow\\qquad u=\\dfrac{61}{19}
-$$
-
-Then $v=-\\dfrac{13}{19}$, so
-
-$$
-u+v=\\dfrac{48}{19}\\approx 2.53\\ngtr 4
-$$
+Eliminating $v$ yields $u=61/19$ and $v=-13/19$, so $u+v=48/19\\approx 2.53\\ngtr 3$.
 
 So the statement is False.`,
 
     `**C.** → True
 
 $$
-\\bigl(2\\cdot 8-5\\cdot 2+1\\bigr)(6-4)=(16-10+1)\\cdot 2=14
+(16-10+1)(6-4)=14>12
 $$
 
 So the statement is True.`,
 
     `**D.** → False
 
-Combine the left-hand side over $x^{2}-4$:
-
-$$
-\\dfrac{2x}{x^{2}-4}=\\dfrac{5}{x^{2}-4}\\qquad(x\\ne\\pm 2)
-$$
-
-$$
-2x=5\\qquad\\Rightarrow\\qquad x=\\dfrac{5}{2}
-$$
-
-The claimed root $x=2$ is excluded by the domain and is not the solution.
+Clearing the common denominator $x^{2}-4$ gives $2x=5$, hence $x=5/2$. That unique admissible root is not smaller than $2$.
 
 So the statement is False.`,
 
-    `**E.** → True
+    `**E.** → False
 
-Isolate one radical and square:
+Isolating and squaring produces $x=2$, which fails the claim “larger than $3$”.
 
-$$
-\\sqrt{x+7}=2+\\sqrt{x-1}
-$$
-
-$$
-x+7=4+4\\sqrt{x-1}+(x-1)
-$$
-
-$$
-4=4\\sqrt{x-1}\\qquad\\Rightarrow\\qquad x=2
-$$
-
-Checking: $\\sqrt{9}-\\sqrt{1}=2$. The root is valid.
-
-So the statement is True.`,
+So the statement is False.`,
   ];
 
   return {
     case_id: "MATH 2.MOCK.CALC",
     id: "MATH 2.MOCK.CALC",
-    title: "Multi-step elementary algebra without abbreviated-multiplication shortcuts",
+    title: "Multi-step elementary algebra with threshold claims",
     chapter: 2,
     subsection: "2.4",
     context,
@@ -796,11 +673,12 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Simplify a nested fraction by hand, solve a $2\\times 2$ system, evaluate a product by substitution, clear a rational equation with domain, and isolate-and-square a radical equation.",
+      "Compute each nested/system/radical value fully, then accept or reject a threshold — the statements never reveal the finished number.",
   };
 }
 
-/** Numeric line–parabola geometry that forces casework on slope. */
+
+/** Numeric parabola — threshold claims, no spoon-fed vertex coords. */
 function buildMathCh7Numeric() {
   const context = `Consider the parabola $g(x)=2x^{2}-12x+10$ and the family of lines through its vertex with slope $m$:
 
@@ -811,11 +689,11 @@ $$
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The vertex of $g$ is the point $(3,-8)$.",
-    "The equation $g(x)=0$ has discriminant $64$, hence two distinct real roots.",
-    "When $m=4$, the product of the $x$-coordinates of the intersection points of $y=g$ and $y=f_{m}$ equals $15$.",
-    "For every real slope $m$, the graphs of $g$ and $f_{m}$ are tangent at the vertex.",
-    "When $m=-8$, the second intersection point (other than the vertex) has a negative $x$-coordinate.",
+    "The axis of symmetry of $g$ lies strictly to the right of $x=2$.",
+    "At its vertex, $g$ takes a strictly negative value.",
+    "When $m=4$, the second intersection (other than the vertex) lies strictly between $x=4$ and $x=6$.",
+    "There is more than one real slope $m$ for which $y=f_{m}$ meets $y=g$ at exactly one point.",
+    "When $m=-8$, the second intersection has $x$-coordinate strictly less than $-0.5$.",
   ];
 
   const answer_key = [true, true, true, false, true];
@@ -823,49 +701,31 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Complete the square:
-
-$$
-g(x)=2\\bigl(x^{2}-6x\\bigr)+10=2\\bigl((x-3)^{2}-9\\bigr)+10=2(x-3)^{2}-8
-$$
-
-The vertex is $(3,-8)$.
+Completing the square gives $g(x)=2(x-3)^{2}-8$, so the axis is $x=3>2$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-$$
-\\Delta=(-12)^{2}-4\\cdot 2\\cdot 10=144-80=64>0
-$$
-
-Two distinct real roots.
+The vertex value is $g(3)=-8<0$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-$$
-g(x)-f_{m}(x)=(x-3)\\bigl(2(x-3)-m\\bigr)
-$$
-
-The intersection $x$-coordinates are $3$ and $3+\\dfrac{m}{2}$. For $m=4$ they are $3$ and $5$, and $3\\cdot 5=15$.
+$g-f_{m}=(x-3)(2(x-3)-m)$, so the second root is $3+m/2$. For $m=4$ that is $5\\in(4,6)$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-The second intersection is $x=3+\\dfrac{m}{2}$. It coincides with the vertex if and only if $m=0$. For $m\\ne 0$ the graphs meet twice and are not tangent.
+The second root coincides with the vertex only when $m=0$. Exactly one slope gives a single meeting point.
 
 So the statement is False.`,
 
     `**E.** → True
 
-For $m=-8$,
-
-$$
-x=3+\\dfrac{-8}{2}=3-4=-1<0
-$$
+For $m=-8$ the second root is $3-4=-1<-0.5$.
 
 So the statement is True.`,
   ];
@@ -873,7 +733,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 7.MOCK.LINE",
     id: "MATH 7.MOCK.LINE",
-    title: "Numeric parabola with a slope family through the vertex",
+    title: "Numeric parabola with slope family — threshold claims",
     chapter: 7,
     subsection: "7.3",
     context,
@@ -882,86 +742,63 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Complete the square for the vertex, read the discriminant, factor $g-f_{m}$ to locate both intersections, and see that tangency at the vertex forces $m=0$.",
+      "Recover the vertex by completing the square, factor $g-f_{m}$, and adjudicate thresholds without reading coordinates off the claim text.",
   };
 }
 
-/** Power model with two unknowns recovered from calibration, then profit calculus. */
+
+/** Power costs — calibrate unknowns; qualitative/threshold claims. */
 function buildMathCh8TwoUnknowns() {
-  const context = `A logistics firm models delivery capacity by the power law
-
-$$
-C(v)=A v^{p}\\qquad(v>0)
-$$
-
-with unknown constants $A>0$ and $p>0$. Calibration runs give $C(3)=24$ and $C(6)=96$. Each van-hour costs $€12$, and each unit of capacity earns $€0.80$ of revenue. Profit is $\\pi(v)=0.8\\,C(v)-12v$.
+  const context = `A logistics firm models delivery capacity by $C(v)=A v^{p}$ for $v>0$, with unknown $A>0$ and $p>0$. Calibration: $C(3)=24$ and $C(6)=96$. Each van-hour costs EUR 12, and each unit of capacity earns EUR 0.80. Profit is $\\pi(v)=0.8\\,C(v)-12v$.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The calibration forces the power to be $p=2$.",
-    "The calibration forces the prefactor to satisfy $A>3$.",
-    "At $v=5$, capacity already exceeds $65$.",
-    "Profit is maximised at some van-hour level $v>3$.",
-    "At the profit-maximising $v$, marginal revenue from an extra van-hour equals the $€12$ marginal cost.",
+    "Doubling van-hours multiplies capacity by more than three.",
+    "At five van-hours, capacity already exceeds $65$.",
+    "A profit-maximising schedule requires strictly more than three van-hours.",
+    "At the interior profit maximum, marginal revenue from an extra van-hour equals the hourly van cost.",
+    "Running exactly four van-hours yields a strictly positive profit.",
   ];
 
-  const answer_key = [true, false, true, false, true];
+  const answer_key = [true, true, false, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-$$
-\\dfrac{C(6)}{C(3)}=\\dfrac{96}{24}=4=\\left(\\dfrac{6}{3}\\right)^{p}=2^{p}
-$$
-
-$$
-p=2
-$$
+$96/24=4=(6/3)^{p}$ forces $p=2$, so doubling multiplies capacity by $4>3$.
 
 So the statement is True.`,
 
-    `**B.** → False
+    `**B.** → True
 
-With $p=2$,
+With $A=8/3$, capacity at $v=5$ is $200/3\\approx 66.67>65$.
 
-$$
-A\\cdot 3^{2}=24\\qquad\\Rightarrow\\qquad A=\\dfrac{8}{3}\\approx 2.67\\ngtr 3
-$$
+So the statement is True.`,
+
+    `**C.** → False
+
+$\\pi(v)=(32/15)v^{2}-12v$ has critical point $v=45/16\\approx 2.81$, which is not greater than $3$.
 
 So the statement is False.`,
 
-    `**C.** → True
+    `**D.** → True
 
-$$
-C(5)=\\dfrac{8}{3}\\cdot 25=\\dfrac{200}{3}\\approx 66.67>65
-$$
+An interior maximum requires $\\pi'(v)=0$, i.e. marginal revenue equals the EUR 12 cost.
 
 So the statement is True.`,
 
-    `**D.** → False
+    `**E.** → False
 
-$$
-\\pi(v)=0.8\\cdot\\dfrac{8}{3}v^{2}-12v=\\dfrac{32}{15}v^{2}-12v
-$$
-
-$$
-\\pi'(v)=\\dfrac{64}{15}v-12=0\\qquad\\Rightarrow\\qquad v=\\dfrac{45}{16}=2.8125\\ngtr 3
-$$
+$\\pi(4)=512/15-48<0$.
 
 So the statement is False.`,
-
-    `**E.** → True
-
-An interior profit maximum requires $\\pi'(v)=0$, i.e. marginal revenue equals marginal cost $12$.
-
-So the statement is True.`,
   ];
 
   return {
     case_id: "MATH 8.MOCK.POW2",
     id: "MATH 8.MOCK.POW2",
-    title: "Power capacity with two unknowns, then profit maximisation",
+    title: "Power capacity with two unknowns — qualitative profit claims",
     chapter: 8,
     subsection: "8.3",
     context,
@@ -970,80 +807,67 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Recover $(A,p)$ from the ratio of two calibrations, evaluate capacity at a third point, then maximise the resulting quadratic profit and read the first-order condition.",
+      "Recover $(A,p)$ from calibration, then adjudicate doubling, capacity, and profit claims without naming $p=2$ in the statement text.",
   };
 }
 
-/** Hard numeric cubic with critical-point analysis. */
+
+/** Heavy-calc cubic — many derivative/evaluation steps. */
 function buildMathCh9HardPoly() {
-  const context = `Let
+  const context = `A machine’s short-run output rate (units per hour) is modelled by
 
 $$
-p(x)=x^{3}-6x^{2}+5x+12
+p(t)=t^{3}-6t^{2}+5t+12\\qquad(0\\le t\\le 5)
 $$
 
-Decide whether each statement is true or false.`;
+where $t$ is hours into the shift. Decide whether each statement is true or false.`;
 
   const statements = [
-    "The cubic $p$ has three distinct real roots.",
-    "The larger critical point of $p$ is strictly greater than $3$.",
-    "The derivative satisfies $p'(1)>0$.",
-    "On the interval $[-2,5]$, the absolute maximum value of $p$ is $0$.",
-    "Between its two critical points, $p$ is strictly decreasing.",
+    "The product of the three real roots of $p(t)=0$ (allowing roots outside the shift window) is strictly negative.",
+    "On the open interval between the two critical points, the output rate is strictly decreasing.",
+    "At $t=1$, the instantaneous slope $p'(1)$ is strictly less than $-3$.",
+    "The larger critical abscissa exceeds $3.4$, and the output rate there is strictly negative.",
+    "Over the closed shift $[0,5]$, the highest output rate exceeds $14$.",
   ];
 
-  const answer_key = [true, true, false, false, true];
+  const answer_key = [true, true, true, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-$$
-p(x)=(x+1)(x-3)(x-4)
-$$
-
-The roots $-1$, $3$, and $4$ are three distinct reals.
+$p(t)=(t+1)(t-3)(t-4)$, so the product of roots is $-12<0$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-$$
-p'(x)=3x^{2}-12x+5=0\\qquad\\Rightarrow\\qquad x=\\dfrac{6\\pm\\sqrt{21}}{3}
-$$
-
-The larger critical point is $\\dfrac{6+\\sqrt{21}}{3}\\approx 3.53>3$.
+$p'(t)=3t^{2}-12t+5$ is negative between its two roots, so $p$ decreases there.
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**C.** → True
 
-$$
-p'(1)=3-12+5=-4\\ngtr 0
-$$
-
-So the statement is False.`,
-
-    `**D.** → False
-
-$$
-p(0)=12,\\qquad p(5)=12
-$$
-
-The absolute maximum on $[-2,5]$ is $12$, not $0$.
-
-So the statement is False.`,
-
-    `**E.** → True
-
-The parabola $p'$ opens upwards, so $p'<0$ strictly between its two roots. Hence $p$ decreases on that interval.
+$p'(1)=-4<-3$.
 
 So the statement is True.`,
+
+    `**D.** → True
+
+The larger critical point is $(6+\\sqrt{21})/3\\approx 3.53>3.4$, and between the roots $3$ and $4$ one has $p<0$.
+
+So the statement is True.`,
+
+    `**E.** → False
+
+Endpoints give $p(0)=p(5)=12$. The local maximum is about $13.13$, which does not exceed $14$.
+
+So the statement is False.`,
   ];
 
   return {
     case_id: "MATH 9.MOCK.CUBIC",
     id: "MATH 9.MOCK.CUBIC",
-    title: "Hard numeric cubic — roots, critical points, max/min",
+    title: "Shift-output cubic — roots, critical values, multi-step checks",
     chapter: 9,
     subsection: "9.3",
     context,
@@ -1052,76 +876,63 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Factor the cubic, solve $p'=0$ with the quadratic formula, evaluate signs and endpoint values, and read monotonicity from the sign of $p'$ between critical points.",
+      "Factor or use Vieta, solve $p'=0$, evaluate slopes and local values, then compare the global maximum on $[0,5]$ with a threshold.",
   };
 }
 
-/** Clean exp/log — decay + continuous compounding (no fragile degree KaTeX). */
+
+/** Exp/log — dense prose that must be parsed into symbols. */
 function buildMathCh10ExpLog() {
-  const context = `A sealed isotope sample decays according to
+  const context = `A laboratory note records two separate processes.
 
-$$
-N(t)=N_{0}e^{-\\lambda t}
-$$
+First, a sealed isotope sample is tracked by mass. At the opening of the study the sample weighs eight hundred milligrams. Six years later the same sample weighs four hundred fifty milligrams. Staff treat the loss as continuous exponential decay: the mass at time $t$ years is the opening mass times $e$ raised to a constant negative rate times $t$.
 
-with $N(0)=800$ milligrams and $N(6)=450$ milligrams ($t$ in years). Separately, a continuously compounded fund follows
-
-$$
-S(t)=5000\\,e^{rt}
-$$
-
-with $S(5)=6500$.
+Second, and independently, a continuously compounded endowment opens at five thousand euros. Five years later the endowment stands at six thousand five hundred euros. The same continuous-force model is used for the endowment’s growth.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The decay constant satisfies $\\lambda>0.09$.",
-    "The half-life of the sample is strictly less than $7$ years.",
-    "After $12$ years the remaining mass is strictly less than $260$ milligrams.",
-    "The continuous force of interest satisfies $r>0.055$.",
-    "The fund first reaches $9000$ at some time $t>11$ years.",
+    "The isotope’s continuous decay rate (in absolute value) exceeds $0.09$ per year.",
+    "The isotope’s half-life is strictly shorter than seven years.",
+    "Twelve years after the opening weigh-in, the remaining isotope mass is still above two hundred sixty milligrams.",
+    "The endowment’s continuous force of interest exceeds $5.5\\%$ per year.",
+    "Starting from the opening balance, the endowment first reaches nine thousand euros at some time later than eleven years.",
   ];
 
-  const answer_key = [true, false, true, false, true];
+  const answer_key = [true, false, false, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
+Parse as $N(t)=800 e^{-\\lambda t}$ with $N(6)=450$:
+
 $$
-\\dfrac{450}{800}=e^{-6\\lambda}\\qquad\\Rightarrow\\qquad \\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}=\\dfrac{1}{6}\\ln\\dfrac{16}{9}\\approx 0.09589>0.09
+\\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}\\approx 0.0959>0.09
 $$
 
 So the statement is True.`,
 
     `**B.** → False
 
-$$
-t_{1/2}=\\dfrac{\\ln 2}{\\lambda}\\approx\\dfrac{0.693147}{0.09589}\\approx 7.23\\nless 7
-$$
+Half-life $\\ln 2/\\lambda\\approx 7.23$ is not shorter than $7$.
 
 So the statement is False.`,
 
-    `**C.** → True
+    `**C.** → False
 
-$$
-N(12)=800\\left(\\dfrac{450}{800}\\right)^{2}=800\\cdot(0.5625)^{2}=253.125<260
-$$
+$N(12)=800(450/800)^{2}=253.125$, which is not above $260$.
 
-So the statement is True.`,
+So the statement is False.`,
 
     `**D.** → False
 
-$$
-r=\\dfrac{1}{5}\\ln\\dfrac{6500}{5000}=\\dfrac{1}{5}\\ln 1.3\\approx 0.05247\\ngtr 0.055
-$$
+$r=\\frac15\\ln(6500/5000)\\approx 0.0525$, which does not exceed $0.055$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-$$
-5000\\,e^{rt}=9000\\qquad\\Rightarrow\\qquad t=\\dfrac{\\ln 1.8}{r}\\approx\\dfrac{0.5878}{0.05247}\\approx 11.20>11
-$$
+$5000 e^{rt}=9000$ gives $t=\\ln 1.8/r\\approx 11.20>11$.
 
 So the statement is True.`,
   ];
@@ -1129,7 +940,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 10.MOCK.DECAY",
     id: "MATH 10.MOCK.DECAY",
-    title: "Isotope decay chained with continuous compounding",
+    title: "Lab note decay and endowment — parse prose into exp/log models",
     chapter: 10,
     subsection: "10.3",
     context,
@@ -1138,11 +949,12 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Recover $\\lambda$ from one decay observation, compute half-life and a doubled-time mass, then recover the continuous force $r$ from the fund and solve for a later target balance.",
+      "Translate the prose weigh-ins and endowment balances into exponential models, then adjudicate rate, half-life, and crossing-time thresholds.",
   };
 }
 
-/** Long logarithmic product derivative with max/min properties. */
+
+/** Long log-product derivative — max/min without spoon-feeding f'. */
 function buildMathCh11LogDeriv() {
   const context = `For $x>0$ define
 
@@ -1150,74 +962,60 @@ $$
 f(x)=(x^{2}+4)\\ln(2x+1)\\,e^{-x}
 $$
 
-Decide whether each statement is true or false. The claims concern a long product/logarithmic derivative and max/min behaviour.`;
+Decide whether each statement is true or false. The claims concern critical points and max/min behaviour; they do not hand you a finished derivative formula to tick.`;
 
   const statements = [
-    "Logarithmic differentiation yields $\\dfrac{f'(x)}{f(x)}=\\dfrac{2x}{x^{2}+4}+\\dfrac{2}{(2x+1)\\ln(2x+1)}-1$.",
-    "The equation $f'(x)=0$ has a root in the open interval $(0.5,1.5)$.",
-    "At that critical point in $(0.5,1.5)$, $f$ has a local minimum.",
+    "The function $f$ has a critical point in the open interval $(0.5,1.5)$.",
+    "That critical point in $(0.5,1.5)$ is a local minimum of $f$.",
     "The value $f(1)$ is strictly greater than $2$.",
-    "The derivative satisfies $f'(2)<0$, so just after $x=2$ the function is still falling.",
+    "Just after $x=2$, the function $f$ is still decreasing.",
+    "On the whole half-line $(0,\\infty)$, $f$ is strictly increasing.",
   ];
 
-  const answer_key = [true, true, false, true, true];
+  const answer_key = [true, false, true, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-Because $f>0$ on $(0,\\infty)$,
+Logarithmic differentiation yields
 
 $$
-\\ln f(x)=\\ln(x^{2}+4)+\\ln\\bigl(\\ln(2x+1)\\bigr)-x
+\\dfrac{f'}{f}=\\dfrac{2x}{x^{2}+4}+\\dfrac{2}{(2x+1)\\ln(2x+1)}-1
 $$
 
-Differentiate term by term:
-
-$$
-\\dfrac{f'}{f}=\\dfrac{2x}{x^{2}+4}+\\dfrac{1}{\\ln(2x+1)}\\cdot\\dfrac{2}{2x+1}-1
-$$
-
-which is exactly the displayed formula.
+which is positive at $x=0.5$ and negative at $x=1.5$, so $f'$ has a zero in $(0.5,1.5)$.
 
 So the statement is True.`,
 
-    `**B.** → True
+    `**B.** → False
 
-The continuous map $x\\mapsto f'(x)/f(x)$ is positive at $x=0.5$ and negative at $x=1.5$. By the intermediate-value theorem, $f'$ has a zero in $(0.5,1.5)$ (approximately $x\\approx 1.01$).
-
-So the statement is True.`,
-
-    `**C.** → False
-
-Across that root the sign of $f'$ changes from positive to negative, so the critical point is a local maximum, not a local minimum.
+Across that zero, $f'$ changes from $+$ to $-$, so the critical point is a local maximum.
 
 So the statement is False.`,
 
+    `**C.** → True
+
+$f(1)=5\\ln 3/e\\approx 2.021>2$.
+
+So the statement is True.`,
+
     `**D.** → True
 
-$$
-f(1)=(1+4)\\ln 3\\cdot e^{-1}=\\dfrac{5\\ln 3}{e}\\approx\\dfrac{5\\cdot 1.0986}{2.71828}\\approx 2.021>2
-$$
+At $x=2$ the logarithmic derivative is negative while $f(2)>0$, so $f'(2)<0$.
 
 So the statement is True.`,
 
-    `**E.** → True
+    `**E.** → False
 
-At $x=2$,
+Because $f'$ changes sign from $+$ to $-$ near $x\\approx 1.01$, $f$ is not strictly increasing on all of $(0,\\infty)$.
 
-$$
-\\dfrac{f'(2)}{f(2)}=\\dfrac{4}{8}+\\dfrac{2}{5\\ln 5}-1\\approx 0.5+0.249-1=-0.251<0
-$$
-
-Since $f(2)>0$, one has $f'(2)<0$, so $f$ is falling there.
-
-So the statement is True.`,
+So the statement is False.`,
   ];
 
   return {
     case_id: "MATH 11.MOCK.LOGDER",
     id: "MATH 11.MOCK.LOGDER",
-    title: "Long product-logarithm-exponential derivative with max/min claims",
+    title: "Long log-product-exponential derivative — max/min without formula spoon-feed",
     chapter: 11,
     subsection: "11.4",
     context,
@@ -1226,9 +1024,10 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Differentiate $f=(x^{2}+4)\\ln(2x+1)e^{-x}$ via $\\ln f$, locate the sign-change of $f'$ in $(0.5,1.5)$, classify it as a local maximum, and evaluate $f(1)$ and $f'(2)$.",
+      "Differentiate via $\\ln f$, classify the critical point, and adjudicate value/monotonicity thresholds without putting the finished $f'$ formula into the claim text.",
   };
 }
+
 
 
 function mapMath(chapter: number, t: Record<string, unknown>) {
@@ -1379,6 +1178,11 @@ function scrubKatexDeep(value: unknown): unknown {
       .replace(/\\not>/g, "\\ngtr ")
       .replace(/\\not\\le/g, "\\nleq ")
       .replace(/\\not\\ge/g, "\\ngeq ")
+      // Euro inside math mode breaks KaTeX — pull currency out.
+      .replace(/\$€\s*([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
+      .replace(/\$€\s*([0-9]+)\{,\}([0-9]+)\$/g, "EUR $1,$2")
+      .replace(/\$€([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
+      .replace(/€(?=\s*\$)/g, "EUR")
       .replace(/\n{3,}/g, "\n\n")
       .replace(/[ \t]+\n/g, "\n")
       .trim();

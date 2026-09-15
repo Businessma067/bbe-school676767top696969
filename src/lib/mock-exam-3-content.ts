@@ -3,7 +3,7 @@
  * - Economics → English (Silicon Chokepoint) → Math, in that order
  * - Economics: chapter bank cases + generated rights-issue / dividend / real-return chart case
  * - English: T.11 reading/vocab with passage, then grammar/vocab without + G.3.19
- * - Math: hard generated logic/algebra/lines/power/poly/exp + long log-derivative
+ * - Math: anti-plug math: real logic case, word equations, prose exp/log, EUR outside KaTeX
  */
 
 import sourced from "@/data/mock-exam-3-sourced.json";
@@ -105,7 +105,7 @@ export const MOCK_EXAM_3_POINTS_TOTAL =
 
 /** Bump when Mock 3 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_3_CONTENT_REV =
-  "2026-09-15c · 34q · Silicon · hard math rewrite · log-deriv";
+  "2026-09-15d · 34q · Silicon · anti-plug · prose exp · EUR katex";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
