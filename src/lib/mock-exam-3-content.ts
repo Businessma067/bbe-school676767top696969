@@ -13,6 +13,7 @@ import {
   SCORING_CONFIG,
 } from "@/config/scoring-config";
 import { normalizeCaseContext, scrubStatementHints } from "@/lib/case-context";
+import { scrubKatexContent } from "@/lib/scrub-katex";
 import type { ExamQuestion } from "@/lib/mock-exams";
 
 type SourcedTask = {
@@ -105,7 +106,7 @@ export const MOCK_EXAM_3_POINTS_TOTAL =
 
 /** Bump when Mock 3 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_3_CONTENT_REV =
-  "2026-09-15h · 34q · Silicon · teacher-step math explanations";
+  "2026-09-15i · 34q · Silicon · katex scrub + review UI";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
@@ -136,12 +137,14 @@ function fromBankTask(opts: {
     id: `${opts.examId}-q${opts.index}`,
     index: opts.index,
     subject: opts.subject,
-    stem: opts.stem,
+    stem: scrubKatexContent(opts.stem),
     maxPoints: opts.maxPoints,
     subtopicTag: opts.subtopicTag,
     passage: opts.passage,
     tablesMarkdown: opts.tablesMarkdown,
-    solutionOverview: opts.solutionOverview,
+    solutionOverview: opts.solutionOverview
+      ? scrubKatexContent(opts.solutionOverview)
+      : opts.solutionOverview,
     figure: opts.figure,
     statements: statements.map((text, j) => {
       let cleaned = text;
@@ -149,11 +152,12 @@ function fromBankTask(opts: {
       else if (opts.scrub === "soft") cleaned = scrubStatementHints(text);
       return {
         id: `${opts.examId}-q${opts.index}-s${j + 1}`,
-        text: cleaned,
+        text: scrubKatexContent(cleaned),
         isTrue: Boolean(keys[j]),
-        explanation:
+        explanation: scrubKatexContent(
           expl[j] ||
-          (keys[j] ? "So the statement is True." : "So the statement is False."),
+            (keys[j] ? "So the statement is True." : "So the statement is False."),
+        ),
       };
     }),
   };

@@ -94,16 +94,8 @@ export function ExamExplanationText({
   text: string;
   className?: string;
 }) {
-  if (q.subject === "math") {
-    return (
-      <p className={cn("min-w-0 whitespace-pre-wrap leading-relaxed [overflow-wrap:anywhere]", className)}>
-        <MathText text={text} />
-      </p>
-    );
-  }
-  const cleaned = cleanExplanation(text);
-  // Economics explanations use $$…$$ KaTeX (ratios, EPS, P/E, …). ExplanationText
-  // is plain prose and left raw $$ visible — always go through ExplanationProse.
+  // Math keeps **Part / **A.** markers for ExplanationProse structure + truth tables.
+  const cleaned = q.subject === "math" ? text : cleanExplanation(text);
   return <ExplanationProse text={cleaned} className={className} />;
 }
 
@@ -117,15 +109,9 @@ export function ExamSolutionOverview({
   className?: string;
 }) {
   if (!text.trim()) return null;
-  if (subject === "math") {
-    return (
-      <div className={cn("rounded-lg border border-border bg-secondary/30 p-3 text-sm", className)}>
-        <MathText text={text} />
-      </div>
-    );
-  }
+  void subject;
   return (
-    <div className={cn("rounded-lg border border-border bg-secondary/30 p-3 text-sm", className)}>
+    <div className={cn("rounded-lg border border-border bg-secondary/30 p-4 text-sm sm:p-5", className)}>
       <ExplanationProse text={text} />
     </div>
   );

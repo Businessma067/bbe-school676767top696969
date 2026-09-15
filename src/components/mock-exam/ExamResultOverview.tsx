@@ -183,8 +183,8 @@ function StatementCells({ task }: { task: TaskAnalyticsRow }) {
           className={cn(
             "grid h-7 w-7 place-items-center rounded-md text-[11px] font-semibold",
             j.judgedOk
-              ? "bg-emerald-500/12 text-emerald-800 dark:text-emerald-300"
-              : "bg-red-500/12 text-red-800 dark:text-red-300",
+              ? "bg-caramel-deep/12 text-caramel-deep"
+              : "bg-secondary text-muted-foreground",
           )}
         >
           {j.letter}

@@ -262,12 +262,13 @@ function TaskReviewWorkspace({
                 aria-current={isCurrent ? "true" : undefined}
                 className={cn(
                   "relative flex h-8 w-8 items-center justify-center rounded-md border text-xs font-semibold transition-colors",
-                  isCurrent && "ring-2 ring-foreground/30 ring-offset-2 ring-offset-card",
-                  allCorrect && !isCurrent && "border-emerald-500/50 bg-emerald-500/15 text-emerald-800 dark:text-emerald-300",
-                  anyWrong && !allCorrect && !isCurrent && "border-red-500/40 bg-red-500/10 text-red-800 dark:text-red-300",
-                  isCurrent && allCorrect && "border-emerald-700 bg-emerald-600 text-white",
-                  isCurrent && anyWrong && !allCorrect && "border-red-700 bg-red-600 text-white",
+                  isCurrent && "ring-2 ring-caramel-deep/40 ring-offset-2 ring-offset-card",
+                  allCorrect && !isCurrent && "border-border bg-secondary/60 text-foreground",
+                  anyWrong && !allCorrect && !isCurrent && "border-border bg-card text-muted-foreground",
+                  isCurrent && allCorrect && "border-caramel-deep bg-caramel-deep text-white",
+                  isCurrent && anyWrong && !allCorrect && "border-caramel-deep bg-caramel-deep/90 text-white",
                   isCurrent && !allCorrect && !anyWrong && "border-foreground bg-foreground text-background",
+                  !isCurrent && !allCorrect && !anyWrong && "border-border bg-card text-muted-foreground",
                 )}
               >
                 {m.question.index}
@@ -276,7 +277,7 @@ function TaskReviewWorkspace({
           })}
         </div>
         <p className="mt-3 text-[11px] leading-snug text-muted-foreground">
-          Green = all five judged correctly. Red = at least one mistake.
+          Filled = all five judged correctly. Quiet = at least one mistake. Accent marks the open task.
         </p>
       </aside>
 
@@ -336,15 +337,15 @@ function TaskReviewWorkspace({
                   className={cn(
                     "flex items-start gap-2 border-b border-border px-3 py-3.5 last:border-b-0 sm:items-center sm:gap-3 sm:px-4",
                     judgedOk
-                      ? "bg-emerald-500/10 shadow-[inset_3px_0_0_0_rgb(16,185,129)]"
-                      : "bg-red-500/10 shadow-[inset_3px_0_0_0_rgb(239,68,68)]",
+                      ? "bg-secondary/25 shadow-[inset_3px_0_0_0_var(--caramel-deep)]"
+                      : "bg-card",
                   )}
                 >
                   <span className="mt-0.5 flex w-6 shrink-0 items-center justify-center sm:mt-0">
                     {judgedOk ? (
-                      <Check className="h-4 w-4 text-emerald-600" aria-label="Correct judgment" />
+                      <Check className="h-4 w-4 text-caramel-deep" aria-label="Correct judgment" />
                     ) : (
-                      <X className="h-4 w-4 text-red-600" aria-label="Incorrect judgment" />
+                      <X className="h-4 w-4 text-taupe" aria-label="Incorrect judgment" />
                     )}
                   </span>
                   <p className="min-w-0 flex-1 text-sm leading-relaxed">
@@ -367,9 +368,7 @@ function TaskReviewWorkspace({
                   <span
                     className={cn(
                       "w-16 shrink-0 text-right font-mono text-sm font-bold tabular-nums sm:w-20",
-                      delta > 0 && "text-emerald-700 dark:text-emerald-400",
-                      delta < 0 && "text-red-700 dark:text-red-400",
-                      delta === 0 && "text-muted-foreground",
+                      delta !== 0 ? "text-caramel-deep" : "text-muted-foreground",
                     )}
                   >
                     {formatDelta(delta)}
@@ -381,40 +380,34 @@ function TaskReviewWorkspace({
         </div>
       </div>
 
-      <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,22rem)] xl:w-[26rem]">
-        <div className="flex h-full max-h-[min(70vh,44rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm lg:max-h-[calc(100vh-6rem)]">
-          <div className="border-b border-border px-4 py-3">
+      <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,28rem)] xl:w-[34rem] 2xl:w-[38rem]">
+        <div className="flex h-full max-h-[min(78vh,52rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm lg:max-h-[calc(100vh-5rem)]">
+          <div className="border-b border-border px-5 py-3.5">
             <p className="font-display text-sm font-semibold">Explanations · Task {q.index}</p>
             <p className="mt-0.5 text-xs tabular-nums text-muted-foreground">
               {current.statementCorrect}/{current.statementCount} correct · {formatQuestionTime(current.seconds)}
             </p>
           </div>
-          <div className="min-h-0 flex-1 space-y-4 overflow-y-auto px-4 py-4">
+          <div className="min-h-0 flex-1 space-y-5 overflow-y-auto px-5 py-5 sm:px-7 sm:py-6">
             {q.solutionOverview ? (
               <ExamSolutionOverview text={q.solutionOverview} subject={q.subject} />
             ) : null}
             {q.statements.map((s, si) => {
               const result = current.statements[si]!;
-              const judgedOk = result.userMarked === result.isTrue;
               const delta = deltas[si] ?? 0;
               return (
                 <div
                   key={s.id}
-                  className={cn(
-                    "rounded-xl border p-3",
-                    judgedOk ? "border-emerald-500/25 bg-emerald-500/5" : "border-red-500/25 bg-red-500/5",
-                  )}
+                  className="rounded-xl border border-border bg-secondary/20 p-4 sm:p-5"
                 >
-                  <div className="mb-1.5 flex items-center justify-between gap-2">
-                    <span className="text-xs font-semibold text-muted-foreground">
+                  <div className="mb-2 flex items-center justify-between gap-2">
+                    <span className="text-xs font-semibold uppercase tracking-wide text-taupe">
                       {String.fromCharCode(65 + si)} · {result.isTrue ? "True" : "False"}
                     </span>
                     <span
                       className={cn(
                         "font-mono text-xs font-bold tabular-nums",
-                        delta > 0 && "text-emerald-700 dark:text-emerald-400",
-                        delta < 0 && "text-red-700 dark:text-red-400",
-                        delta === 0 && "text-muted-foreground",
+                        delta !== 0 ? "text-caramel-deep" : "text-muted-foreground",
                       )}
                     >
                       {formatDelta(delta)} pts
@@ -423,7 +416,7 @@ function TaskReviewWorkspace({
                   <ExamExplanationText
                     q={q}
                     text={s.explanation}
-                    className="text-sm text-muted-foreground"
+                    className="text-sm text-foreground"
                   />
                 </div>
               );
