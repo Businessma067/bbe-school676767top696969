@@ -296,11 +296,103 @@ function buildMathCh5() {
   const answer_key = [true, false, true, false, false];
 
   const tactical_explanations = [
-    "**A.** → True\n\nCombined rate:\n\n$$\\dfrac{1}{8}$$\n\nAfter $4$ hours together, half the order is done, so Leo finishes the remaining half in $6$ hours:\n\n$$\\text{Leo's rate}=\\dfrac{1/2}{6}=\\dfrac{1}{12}$$\n\n$$\\text{Mira's rate}=\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{1}{24}$$\n\nOver a full joint run of $8$ hours Mira completes\n\n$$\\dfrac{1}{24}\\cdot 8=\\dfrac{1}{3}$$\n\nof the order.\n\nSo the statement is True.",
-    "**B.** → False\n\nA doubled order means Leo's rate is $\\dfrac{1}{24}$ of the enlarged job per hour. After the same $4$ joint hours only one quarter of the enlarged job is done, so $\\dfrac{3}{4}$ remains:\n\n$$t=\\dfrac{3/4}{1/24}=18$$\n\nhours, not $12$.\n\nSo the statement is False.",
-    "**C.** → True\n\nMira's rate is $\\dfrac{1}{24}$ of the order per hour, so alone she needs $24$ hours.\n\nSo the statement is True.",
-    "**D.** → False\n\nTime per box:\n\n$$\\text{Mira: }\\dfrac{24}{120}=0.2\\text{ h}=12\\text{ min}$$\n\n$$\\text{Leo: }\\dfrac{12}{120}=0.1\\text{ h}=6\\text{ min}$$\n\n$$12-6=6\\text{ min}\\not> 7\\text{ min}$$\n\nSo the statement is False.",
-    "**E.** → False\n\nAfter $4$ joint hours half the order remains. Mira alone finishes it in\n\n$$\\dfrac{1/2}{1/24}=12$$\n\nhours, which is not more than $14$.\n\nSo the statement is False.",
+    `**A.** → True
+
+The joint completion time is $8$ hours, so the combined work rate is
+
+$$
+\\dfrac{1}{8}\\quad\\text{(orders per hour)}
+$$
+
+In the first $4$ hours they finish
+
+$$
+4\\cdot\\dfrac{1}{8}=\\dfrac{1}{2}
+$$
+
+of the order. Leo then finishes the remaining half alone in $6$ hours, so Leo’s rate is
+
+$$
+\\dfrac{1/2}{6}=\\dfrac{1}{12}
+$$
+
+Mira’s rate is the difference of the combined rate and Leo’s rate:
+
+$$
+\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{3-2}{24}=\\dfrac{1}{24}
+$$
+
+Over a full joint run of $8$ hours Mira therefore completes
+
+$$
+\\dfrac{1}{24}\\cdot 8=\\dfrac{1}{3}
+$$
+
+of the order — exactly one third.
+
+So the statement is True.`,
+
+    `**B.** → False
+
+Measure work in units of the enlarged (doubled) order. Leo’s original rate $\\dfrac{1}{12}$ of the old order per hour is only
+
+$$
+\\dfrac{1}{24}
+$$
+
+of the doubled order per hour. After the same $4$ joint hours they have completed $\\dfrac{1}{2}$ of the original order, which is only $\\dfrac{1}{4}$ of the doubled order. So $\\dfrac{3}{4}$ of the doubled order remains for Leo:
+
+$$
+t=\\dfrac{3/4}{1/24}=18
+$$
+
+hours. The claim says $12$ hours; $18\\ne 12$.
+
+So the statement is False.`,
+
+    `**C.** → True
+
+From A, Mira’s rate is $\\dfrac{1}{24}$ of the order per hour. Working alone she therefore needs
+
+$$
+T=\\dfrac{1}{1/24}=24
+$$
+
+hours to finish the whole order. That is exactly the claimed figure.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+With $120$ boxes, time per box is total solo time divided by $120$. Mira needs $24$ hours for the order, Leo needs $12$ hours (rate $\\dfrac{1}{12}$):
+
+$$
+\\text{Mira: }\\dfrac{24}{120}=0.2\\text{ h}=12\\text{ min per box}
+$$
+
+$$
+\\text{Leo: }\\dfrac{12}{120}=0.1\\text{ h}=6\\text{ min per box}
+$$
+
+$$
+12-6=6\\text{ min}
+$$
+
+The claim says the difference is more than $7$ minutes. But $6\\ngtr 7$.
+
+So the statement is False.`,
+
+    `**E.** → False
+
+After $4$ joint hours half the order is done, so half remains. If Leo leaves and Mira finishes alone at rate $\\dfrac{1}{24}$,
+
+$$
+t=\\dfrac{1/2}{1/24}=12
+$$
+
+hours. The claim says more than $14$ hours. But $12\\ngtr 14$.
+
+So the statement is False.`,
   ];
 
   return {
@@ -360,11 +452,125 @@ function buildMathCh10() {
   const answer_key = [false, false, false, false, true];
 
   const tactical_explanations = [
-    "**A.** → False\n\n$P(t)$ counts inhabitants and $P(0)=15{,}000{,}000$. The model with annual growth $2.4\\%$ is\n\n$$P(t)=15{,}000{,}000\\cdot 1.024^{t}$$\n\n(or $15\\cdot 10^{6}\\cdot 1.024^{t}$). Writing $15\\cdot 1.024^{t}$ understates the level by a factor of one million.\n\nSo the statement is False.",
-    "**B.** → False\n\nContinuous force $0.028$ gives effective annual growth\n\n$$e^{0.028}-1\\approx 0.02839=2.839\\%$$\n\nwhich is larger than $2.8\\%$, not smaller.\n\nSo the statement is False.",
-    "**C.** → False\n\n$$1.024^{25}=e^{25\\ln 1.024}\\approx e^{25\\cdot 0.02372}\\approx e^{0.593}\\approx 1.809$$\n\nGrowth factor $\\approx 1.809$ means about $+80.9\\%$, which is not more than $85\\%$.\n\nSo the statement is False.",
-    "**D.** → False\n\n$$\\dfrac{1.052}{1.024}\\approx 1.0273$$\n\nso real GDP per capita grows by about $2.73\\%$ per year, which is not more than $3\\%$.\n\nSo the statement is False.",
-    "**E.** → True\n\nAfter $8$ years:\n\n$$P(8)=15{,}000{,}000\\cdot 1.024^{8}\\approx 15{,}000{,}000\\cdot 1.209\\approx 18{,}135{,}000$$\n\nFrom then on at $1.5\\%$:\n\n$$18{,}135{,}000\\cdot 1.015^{n}=22{,}000{,}000$$\n\n$$1.015^{n}=\\dfrac{22}{18.135}\\approx 1.213$$\n\n$$n=\\dfrac{\\ln 1.213}{\\ln 1.015}\\approx 12.98$$\n\n$$t=8+12.98\\approx 20.98>20$$\n\nSo the statement is True.",
+    `**A.** → False
+
+The function $P(t)$ counts inhabitants, and the stem fixes
+
+$$
+P(0)=15{,}000{,}000
+$$
+
+With discrete annual growth $2.4\\%$ the correct model is
+
+$$
+P(t)=15{,}000{,}000\\cdot 1.024^{t}
+$$
+
+(equivalently $15\\cdot 10^{6}\\cdot 1.024^{t}$). The claimed formula $P(t)=15\\cdot 1.024^{t}$ treats the initial level as $15$ instead of fifteen million, understating every future population by a factor of one million.
+
+So the statement is False.`,
+
+    `**B.** → False
+
+A continuous model $9\\cdot 10^{6}e^{0.028t}$ has force of growth $k=0.028$. The effective annual growth rate is
+
+$$
+e^{k}-1=e^{0.028}-1
+$$
+
+Since $e^{0.028}\\approx 1.02839$,
+
+$$
+e^{0.028}-1\\approx 0.02839=2.839\\%
+$$
+
+Compare with the claim “smaller than $2.8\\%$”:
+
+$$
+2.839\\%\\ngtr?\\quad 2.839\\%\\nless 2.8\\%
+$$
+
+The effective rate is larger than $2.8\\%$, not smaller.
+
+So the statement is False.`,
+
+    `**C.** → False
+
+After $25$ years the growth factor is
+
+$$
+1.024^{25}=e^{25\\ln 1.024}
+$$
+
+With $\\ln 1.024\\approx 0.023717$,
+
+$$
+25\\cdot 0.023717\\approx 0.5929,\\qquad e^{0.5929}\\approx 1.809
+$$
+
+So the population multiplies by about $1.809$, a relative increase of about $80.9\\%$. The claim asks for more than $85\\%$:
+
+$$
+80.9\\%\\ngtr 85\\%
+$$
+
+So the statement is False.`,
+
+    `**D.** → False
+
+Real GDP grows by the factor $1.052$ each year while population grows by $1.024$. Real GDP per capita therefore grows by the quotient
+
+$$
+\\dfrac{1.052}{1.024}\\approx 1.02734
+$$
+
+which is about $2.734\\%$ per year. The claim says more than $3\\%$:
+
+$$
+2.734\\%\\ngtr 3\\%
+$$
+
+(The crude subtraction $5.2\\%-2.4\\%=2.8\\%$ is only an approximation and still fails the $3\\%$ threshold.)
+
+So the statement is False.`,
+
+    `**E.** → True
+
+First stage, eight years at $2.4\\%$:
+
+$$
+P(8)=15{,}000{,}000\\cdot 1.024^{8}
+$$
+
+Since $1.024^{8}\\approx 1.20913$,
+
+$$
+P(8)\\approx 15{,}000{,}000\\cdot 1.20913\\approx 18{,}136{,}950
+$$
+
+Second stage at $1.5\\%$ until $22$ million:
+
+$$
+18{,}136{,}950\\cdot 1.015^{n}=22{,}000{,}000
+$$
+
+$$
+1.015^{n}=\\dfrac{22{,}000{,}000}{18{,}136{,}950}\\approx 1.21299
+$$
+
+$$
+n=\\dfrac{\\ln 1.21299}{\\ln 1.015}\\approx\\dfrac{0.19315}{0.014889}\\approx 12.97
+$$
+
+Total time:
+
+$$
+t=8+12.97\\approx 20.97>20
+$$
+
+So the population of $22$ million is first attained after more than $20$ years.
+
+So the statement is True.`,
   ];
 
   return {
@@ -513,6 +719,112 @@ const math = [
   takeMath("MATH 13.46", 13),
 ];
 
+/** Teacher-step Venn explanations for MATH 1.120 (bank originals are calc-only). */
+{
+  const venn = math.find((t) => t.case_id === "MATH 1.120");
+  if (venn) {
+    venn.tactical_explanations = [
+      `**A.** → True
+
+Use the three-set inclusion–exclusion formula for the union of analytics ($A$), budgeting ($B$), and compliance ($C$):
+
+$$
+|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|
+$$
+
+Substitute the given sizes:
+
+$$
+|A|+|B|+|C|=105+92+80=277
+$$
+
+$$
+|A\\cap B|+|A\\cap C|+|B\\cap C|=48+41+36=125
+$$
+
+$$
+|A\\cup B\\cup C|=277-125+20=172
+$$
+
+Everyone not in the union is outside all three courses:
+
+$$
+180-172=8
+$$
+
+So exactly $8$ participants take none of the three courses.
+
+So the statement is True.`,
+      `**B.** → False
+
+“Only analytics” means in $A$ but not in $B$ and not in $C$:
+
+$$
+|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|
+$$
+
+$$
+105-48-41+20=36
+$$
+
+The claim asserts $56$, which is not equal to $36$.
+
+So the statement is False.`,
+      `**C.** → True
+
+Exactly two courses means the three pairwise-only regions (each pair minus the triple):
+
+$$
+|A\\cap B|-|A\\cap B\\cap C|=48-20=28
+$$
+
+$$
+|A\\cap C|-|A\\cap B\\cap C|=41-20=21
+$$
+
+$$
+|B\\cap C|-|A\\cap B\\cap C|=36-20=16
+$$
+
+Add them:
+
+$$
+28+21+16=65
+$$
+
+So exactly $65$ participants take exactly two courses.
+
+So the statement is True.`,
+      `**D.** → False
+
+“At least two courses” counts everyone in exactly two plus everyone in all three:
+
+$$
+65+20=85
+$$
+
+(using the exactly-two count from letter C). The claim asserts $65$, which is only the exactly-two layer and omits the $20$ who take all three.
+
+So the statement is False.`,
+      `**E.** → True
+
+“Only compliance” is in $C$ but not in $A$ and not in $B$:
+
+$$
+|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|
+$$
+
+$$
+80-41-36+20=23
+$$
+
+Compute step by step: $80-41=39$, then $39-36=3$, then $3+20=23$. That matches the claim exactly.
+
+So the statement is True.`,
+    ];
+  }
+}
+
 // Audit lengths
 function audit(label: string, tasks: Array<Record<string, unknown>>) {
   for (const t of tasks) {
@@ -532,7 +844,38 @@ audit("econ", economics);
 audit("eng", english.tasks);
 audit("math", math);
 
-const bundle = { economics, english, math };
+
+function scrubKatexDeep(value: unknown): unknown {
+  if (typeof value === "string") {
+    return value
+      .replace(/\\not</g, "\\nless ")
+      .replace(/\\not>/g, "\\ngtr ")
+      .replace(/\\not\\le/g, "\\nleq ")
+      .replace(/\\not\\ge/g, "\\ngeq ")
+      .replace(/\\Y_/g, "Y_")
+      .replace(/\$€\s*([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
+      .replace(/\$€([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
+      .replace(/\$\$([\s\S]*?)\$\$/g, (_m, body: string) => {
+        const fixed = String(body).replace(/€\s*/g, "EUR ").replace(/≈/g, "\\approx ");
+        return `$$${fixed}$$`;
+      })
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+  }
+  if (Array.isArray(value)) return value.map(scrubKatexDeep);
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value as Record<string, unknown>)) out[k] = scrubKatexDeep(v);
+    return out;
+  }
+  return value;
+}
+
+const bundle = scrubKatexDeep({ economics, english, math }) as {
+  economics: typeof economics;
+  english: typeof english;
+  math: typeof math;
+};
 fs.writeFileSync(outPath, JSON.stringify(bundle, null, 2) + "\n");
 console.log(
   "Wrote",

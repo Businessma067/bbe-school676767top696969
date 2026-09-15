@@ -14,6 +14,8 @@ export function scrubKatexContent(input: string): string {
     .replace(/\\not>/g, "\\ngtr ")
     .replace(/\\not\\le/g, "\\nleq ")
     .replace(/\\not\\ge/g, "\\ngeq ")
+    // Accidental `\,Y_2` / `\Y_2` from JSON (undefined control sequence \Y).
+    .replace(/\\Y_/g, "Y_")
     // `$€ 21$` / `$€21$` → prose EUR
     .replace(/\$€\s*([0-9]+(?:[.,][0-9]+)?)\$/g, "EUR $1")
     .replace(/\$€\s*([0-9]+)\{,\}([0-9]+)\$/g, "EUR $1,$2")
