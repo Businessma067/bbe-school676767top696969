@@ -1,0 +1,1048 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.1.01",
+      "title": "Scarcity and economising",
+      "subsection": "2.1",
+      "chapter": 2,
+      "context": "Analyze scarcity, economising, and who participates in economic decision-making. Evaluate the following economic assertions:",
+      "statements": [
+        "Scarcity disappears once a household earns a steady salary because income removes all limits.",
+        "Economising means making careful use of limited resources rather than treating them as if they were unlimited.",
+        "Nobody can fully opt out of economic decisions, because even inaction is a choice about scarce time or money.",
+        "Only registered businesses face scarcity; households with regular income never need to economise on their spending.",
+        "Exchange requires that at least one party is an entrepreneur; households can never participate directly in exchange."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "A steady salary changes how a household budgets, but it does not erase scarcity. Food, rent, transport, and leisure still compete for the same euros after payday. Income rearranges limits; it does not abolish them. The claim that scarcity disappears once wages arrive is therefore wrong.\n\nSo the statement is False.",
+        "Economising is careful ranking of limited means against competing uses. Treating time, money, or materials as if they were unlimited is the opposite of that discipline. Households cut discretionary spending when cash is tight; firms delay purchases when stock is low. The statement names that careful use correctly, so it fits the chapter idea of economising.\n\nSo the statement is True.",
+        "Refusing to choose is still a choice about scarce means. Sitting out a purchase leaves money for later and frees time that could have been spent shopping or working. Even \"doing nothing\" allocates hours that cannot be reused. Households decide whether to save or spend; workers decide whether to take overtime; students decide whether to study or rest. In each case limited time and money force an allocation, including the allocation called inaction. Nobody steps outside that logic by opting out of markets or businesses. The statement is right that economic decisions follow people into everyday life, not only into registered firms.\n\nSo the statement is True.",
+        "Households with regular income still face rent, food, energy, and transport bills that compete for one budget. Scarcity is not reserved for registered businesses. A salaried family that skips a holiday to cover heating is economising in the same sense as a shop managing stock. Restricting scarcity to firms alone misreads who faces limited means.\n\nSo the statement is False.",
+        "Households buy bread, pay for repairs, and sell used goods without becoming entrepreneurs. Exchange is any agreed swap of goods or services, including ordinary consumer purchases. Requiring an entrepreneur on at least one side invents a rule the chapter does not use.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 2.7.03",
+      "title": "Mobile Carrier Oligopoly",
+      "subsection": "2.7",
+      "chapter": 2,
+      "context": "Analyze how market structure is classified when a handful of firms dominate subscription services. Evaluate the following economic assertions:",
+      "statements": [
+        "Firms in oligopoly may consider rivals' reactions when setting prices or service plans.",
+        "Voluntary identical pricing meetings among rivals are lawful cartels whenever participants sign public minutes.",
+        "Three national carriers serving most subscribers represent perfect competition because phones are physical goods.",
+        "Mutual dependence disappears in oligopoly once firms publish list prices on their websites.",
+        "Oligopoly means exactly two firms globally by mathematical definition with no other cases permitted."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "In an oligopoly of a few mobile carriers, each firm knows rivals will notice and may match plan changes.\n\nPricing and promotion choices therefore weigh likely reactions, not only own-cost and own-demand schedules. That strategic interdependence is the hallmark that separates oligopoly from many-seller competition where one firm's plan tweak is invisible to the market price. Mutual awareness shows up in matched data allowances, handset deals, and copycat tariffs after a leader moves.\n\nSo the statement is True.",
+        "Secret or coordinated identical pricing among rivals to suppress competition is cartel conduct, typically unlawful.\n\nPublishing signed minutes does not turn collusion into a lawful cartel.\n\nSo the statement is False.",
+        "Three national carriers serving most subscribers is concentrated oligopoly, not perfect competition.\n\nPhones being physical objects does not create many price-taking sellers or homogeneous service plans.\n\nSo the statement is False.",
+        "Publishing list prices on websites does not dissolve mutual dependence among few carriers.\n\nRivals still observe each other's posted plans and can respond within days. Transparency of list prices can even sharpen strategic interaction. Oligopoly interdependence is about recognising rivals' reactions, not about whether prices are hidden. Open websites are compatible with intense oligopolistic rivalry or with collusion; they do not redefine the market as many-seller competition.\n\nSo the statement is False.",
+        "Oligopoly means few sellers, not a mathematical rule of exactly two firms worldwide.\n\nDuopoly is one special case; three or four carriers also fit.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 3.6.46",
+      "title": "Customer boycott power",
+      "subsection": "3.6",
+      "chapter": 3,
+      "context": "Consider customers may switch suppliers if quality falls. Evaluate the following economic assertions:",
+      "statements": [
+        "Customers cannot influence firms because switching suppliers is impossible in all markets.",
+        "Falling quality gives customers power to switch suppliers and reduce firm revenue.",
+        "Customers may switch if quality falls, exercising stakeholder influence on revenue.",
+        "Customer boycotts after poor service show stakeholder power over firm revenue.",
+        "Buyers at a bakery have no power because they purchase small quantities each visit."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "In most markets buyers can walk to another shop or brand when service fails. Claiming switching is impossible everywhere invents a universal lock-in that ordinary retail does not show.\n\nSo the statement is False.",
+        "Quality slips do not automatically hand every buyer decisive leverage in every setting. Habit, distance, and thin local alternatives can keep people buying even when the loaf is worse for a while, so revenue need not fall on cue. Treating a quality dip as a guaranteed gift of switching power overstates how quickly influence shows up. Where alternatives are weak, buyers may stay despite poorer quality. The blanket causal wording therefore fails as an always-true rule for this letter.\n\nSo the statement is False.",
+        "When quality falls and alternatives exist, customers can leave and take their spending with them. That exit is stakeholder influence working through revenue. A bakery that lets standards slip watches regulars try the shop across the street. Firms feel that pressure as lost sales, which is why customer power appears in stakeholder analysis. The statement correctly links quality decline, switching, and revenue effects without claiming miracles in every market structure.\n\nSo the statement is True.",
+        "Organised boycotts after poor service cut sales until practice changes at the counter. That episode shows customer stakeholder power over firm revenue in a public, organised form.\n\nSo the statement is True.",
+        "Small daily purchases still add up across many regulars, and buyers can simply stop coming. Quantity per visit does not erase customer power at a neighbourhood bakery.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 4.1.02",
+      "title": "Establishment Requirements and Liability Exposure",
+      "subsection": "4.1",
+      "chapter": 4,
+      "context": "Consider a neighbourhood bakery operated as a sole proprietorship with one owner-manager and a small team of assistants. Evaluate the following economic assertions:",
+      "statements": [
+        "Sole proprietorships are easy to establish, especially for small businesses, because there are no financial requirements to start this kind of business.",
+        "Limited liability protects the sole proprietor's private assets so creditors may claim only assets formally recorded as business property.",
+        "Unlimited liability means creditors may reach the proprietor's personal property when business debts must be repaid.",
+        "Incorporating as a sole proprietorship grants the owner limited liability equal to the capital originally invested.",
+        "Trade credit from suppliers eliminates the sole proprietor's liability for those purchase obligations."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Starting as a sole trader typically needs no minimum share capital or formal company registration package. That low barrier is why the form is described as easy to establish for small shops and freelancers.\n\nSo the statement is True.",
+        "Limited liability would fence private assets once business assets run out. Sole proprietors do not get that fence: creditors can reach the home, car, or savings when firm cash falls short.\n\nSo the statement is False.",
+        "Unlimited liability means business debts are personal debts of the owner. A supplier unpaid after stock fails, or a bank loan left after a bad season, can be enforced against private property, not only against shelves labelled \"business.\"\n\nThat reach into personal assets is the practical meaning of unlimited liability for a sole trader. Labelling assets as business property does not create a legal wall that stops creditors.\n\nSo the statement is True.",
+        "Incorporating as a company can create limited liability tied to invested capital. Simply calling the business a sole proprietorship does the opposite: liability stays unlimited. There is no incorporation trick that turns a sole trader into a capped-liability company while keeping that label.\n\nSo the statement is False.",
+        "Buying stock on thirty-day terms still leaves an invoice to pay. Trade credit defers payment; it does not cancel the proprietor's obligation to the supplier.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.5.01",
+      "title": "Equity Finance and Debt Finance Overview",
+      "subsection": "4.5",
+      "chapter": 4,
+      "context": "Review the overview of sources of finance as classified into equity finance and debt finance. Evaluate the following economic assertions:",
+      "statements": [
+        "Share capital provided by outside investors is an external equity source of finance for the corporation.",
+        "Retained earnings that remain in the business count as internal equity finance under the standard overview.",
+        "Funds provided by investors are classified as external equity finance in the sources-of-finance framework.",
+        "Bank overdrafts and trade credit are commonly listed examples of short-term debt finance.",
+        "Long-term bank loans and bonds issued to investors are forms of long-term external debt finance."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Outside investors who subscribe for shares provide equity from beyond the firm's own surplus. That share capital is external equity finance for the corporation in the sources overview.\n\nSo the statement is True.",
+        "Profit kept in the business instead of being paid out becomes retained earnings. Those funds are internal equity because they arise inside the firm rather than from a new outside subscription. No fresh creditor is created when managers simply leave surplus undistributed.\n\nSo the statement is True.",
+        "When investors inject ownership funds, the source is external equity in the sources-of-finance framework. The investors stand outside retained trading surplus and take ownership claims rather than creditor claims. Dividends may follow later, yet the initial classification is equity, not a bank loan. That placement matches how the overview sorts investor funds beside retained earnings and debt lines.\n\nSo the statement is True.",
+        "An overdraft lets the firm draw beyond its credit balance for short periods; trade credit postpones paying suppliers. Both are standard short-term debt examples in the finance tables rather than equity injections.\n\nSo the statement is True.",
+        "A multi-year bank loan and a bond issue both create long-term repayment duties to outside creditors. They sit under long-term external debt finance rather than under share capital or retained earnings.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.5.28",
+      "title": "Confusing Market Size and Share",
+      "subsection": "5.5",
+      "chapter": 5,
+      "context": "Analyze how distribution-channel weaknesses may appear through where-customer analysis. Evaluate the following economic assertions:",
+      "statements": [
+        "Influencers must always be the same person who completes payment for the product.",
+        "Relative market share adds competitive context that absolute share figures do not provide on their own.",
+        "A business-to-business market is one where the firm advertises on social media to the general public.",
+        "Market potential can exceed market volume when potential customers in the market have not yet been converted to buyers.",
+        "Secondary research requires the firm to conduct personal interviews with every customer in the market."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Influencers shape preferences or specifications without necessarily paying. Parents, technical advisers, and users can steer a choice while someone else settles the invoice. Forcing influencer and payer to be identical invents a rule customer analysis does not use.\n\nSo the statement is False.",
+        "Absolute share reports only the firm's own percentage of market sales. Relative share places that figure against the leader, which reveals whether the firm trails, matches, or outpaces the strongest rival. That competitive framing is information absolute share cannot deliver alone.\n\nSo the statement is True.",
+        "A business-to-business market sells to other firms: components to assemblers, adhesives to factories, fleets to logistics operators. Advertising on social media to the general public describes a consumer-facing channel, not the B2B buyer type. Mixing the communication medium with the customer classification invents a false definition. B2B is about who buys, not about which ad platform is used.\n\nSo the statement is False.",
+        "Market volume counts sales already made by firms active today. Market potential adds room from people or firms who could buy but have not yet. When that unused demand exists, potential sits above volume. The statement names that gap correctly.\n\nSo the statement is True.",
+        "Secondary research reuses existing sources such as published statistics or trade reports. Personal interviews with every customer would be primary fieldwork, and secondary work does not require that exhaustive interviewing.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.1.005",
+      "title": "Two-Year Balance Sheet Review 5",
+      "subsection": "6.1",
+      "chapter": 6,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 381 | 403 |\n| Machinery | 266 | 298 |\n| Office equipment | 59 | 61 |\n| Patents, trademarks and licences | 34 | 34 |\n| Inventory | 254 | 288 |\n| Trade receivables | 84 | 86 |\n| Cash and cash equivalents | 103 | 109 |\n| Total assets | **1181** | **1279** |\n| **EQUITY** | | |\n| Share capital | 212 | 212 |\n| Retained earnings | 549 | 627 |\n| Total equity | **761** | **839** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 209 | 220 |\n| Bonds payable | 58 | 63 |\n| Trade payables | 99 | 101 |\n| Bank overdraft | 54 | 56 |\n| Total liabilities | **420** | **440** |\n| Total equity and liabilities | **1181** | **1279** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.",
+        "Non-current liabilities amount to less than 56.8% of total equity in Year 2.",
+        "The combined total of equity and non-current liabilities exceeds non-current assets by more than 7.3% in Year 1.",
+        "Total equity grew by more than 24.5% between Year 1 and Year 2.",
+        "Total assets grew by more than 10% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Non-current assets are held for use beyond one accounting period. Useful life beyond a year plus operating intent define the category. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
+        "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 220 + 63,\\quad \\text{NCL} = 283,\\quad \\text{Equity} = 839\n$$\n\n$$\n\\frac{283}{839} \\approx 0.3373 \\approx 33.7\\%\n$$\n\n$$\n33.7\\% < 56.8\\%\n$$\n\nYear-2 NCL/equity is 33.7%, below the 56.8% claim.\n\nSo the statement is True.",
+        "Long-term financing surplus = (equity + non-current liabilities) ÷ non-current assets − 1.\n\n$$\n\\text{Surplus} = \\frac{\\text{equity} + \\text{NCL}}{\\text{NCA}} - 1\n$$\n\n$$\n\\text{Equity} + \\text{NCL} = 761 + 267 = 1{,}028\n$$\n\n$$\n\\text{NCA} = 740\n$$\n\n$$\n\\frac{1{,}028}{740} \\approx 1.3892\n$$\n\n$$\n\\frac{1{,}028}{740} - 1 \\approx 0.3892 \\approx 38.9\\%\n$$\n\n$$\n38.9\\% > 7.3\\%\n$$\n\nYear-2 NCL/equity is 38.9%, above the 7.3% claim.\n\nSo the statement is True.",
+        "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 761, \\Y_2 = 839\n$$\n\n$$\nY_2 - Y_1 = 839 - 761 = 78\n$$\n\n$$\n\\frac{78}{761} \\approx 0.1025 \\approx 10.2\\%\n$$\n\n$$\n10.2\\% \\le 24.5\\%\n$$\n\nTotal equity changed by 10.2%, at or below the 24.5% threshold claimed. Total equity runs 761 → 839 across the two years. Percentage change ≈ 10.2%, while the claim wants growth above 24.5%. 10.2% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1.\n\nSo the statement is False.",
+        "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}181, \\Y_2 = 1{,}279\n$$\n\n$$\nY_2 - Y_1 = 1{,}279 - 1{,}181 = 98\n$$\n\n$$\n\\frac{98}{1{,}181} \\approx 0.0830 \\approx 8.3\\%\n$$\n\n$$\n8.3\\% \\le 10\\%\n$$\n\nTotal assets changed by 8.3%, at or below the 10% threshold claimed.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.3.037",
+      "title": "Gearing From Comparative Figures 37",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 471 | 504 |\n| Machinery | 255 | 304 |\n| Office equipment | 80 | 90 |\n| Patents, trademarks and licences | 64 | 64 |\n| Inventory | 229 | 239 |\n| Trade receivables | 114 | 122 |\n| Cash and cash equivalents | 36 | 40 |\n| Total assets | **1249** | **1363** |\n| **EQUITY** | | |\n| Share capital | 131 | 131 |\n| Retained earnings | 765 | 829 |\n| Total equity | **896** | **960** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 206 | 230 |\n| Bonds payable | 42 | 48 |\n| Trade payables | 64 | 76 |\n| Bank overdraft | 41 | 49 |\n| Total liabilities | **353** | **403** |\n| Total equity and liabilities | **1249** | **1363** |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Total equity grew by more than 16.5% between Year 1 and Year 2.",
+        "Non-current liabilities amount to less than 105.9% of total equity in Year 2.",
+        "Non-current assets make up more than 60.3% of total assets in Year 2.",
+        "Trade payables of €76 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year.",
+        "Total assets grew by more than 22.8% between Year 1 and Year 2."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 896, \\Y_2 = 960\n$$\n\n$$\nY_2 - Y_1 = 960 - 896 = 64\n$$\n\n$$\n\\frac{64}{896} \\approx 0.0714 \\approx 7.1\\%\n$$\n\n$$\n7.1\\% \\le 16.5\\%\n$$\n\nTotal equity changed by 7.1%, at or below the 16.5% threshold claimed. Total equity runs 896 → 960 across the two years. Percentage change ≈ 7.1%, while the claim wants growth above 16.5%. 7.1% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1. Always read the extract’s own line labels before comparing the threshold. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
+        "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 230 + 48,\\quad \\text{NCL} = 278,\\quad \\text{Equity} = 960\n$$\n\n$$\n\\frac{278}{960} \\approx 0.2896 \\approx 29.0\\%\n$$\n\n$$\n29.0\\% < 105.9\\%\n$$\n\nYear-2 NCL/equity is 29.0%, below the 105.9% claim.\n\nSo the statement is True.",
+        "From the extract, Non-current assets = 962 and total assets in Year 2 = 1,363.\n\n$$\n\\text{Share} = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\n\\text{Share} = \\frac{962}{1{,}363}\n$$\n\n$$\n\\text{Share} = 70.6\\%\n$$\n\nNon-current assets / total assets in Year 2 ≈ 962 ÷ 1,363 = 70.6%. More than 60.3% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True.",
+        "Obligations due within a year sit among current liabilities. Trade payables to suppliers normally meet that timing test. The euro size does not override settlement timing. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is True.",
+        "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}249, \\Y_2 = 1{,}363\n$$\n\n$$\nY_2 - Y_1 = 1{,}363 - 1{,}249 = 114\n$$\n\n$$\n\\frac{114}{1{,}249} \\approx 0.0913 \\approx 9.1\\%\n$$\n\n$$\n9.1\\% \\le 22.8\\%\n$$\n\nTotal assets changed by 9.1%, at or below the 22.8% threshold claimed.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.2.044",
+      "title": "Depreciation Schedule Review 44",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "A business depreciates the following fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A – Machinery | €122,000 purchase price, 11-year useful life, no residual value |\n| Asset B – Delivery truck | €48,000 purchase price, 6-year useful life, €7,000 residual value |\n| Asset C – Computer equipment | €21,000 purchase price, 3-year useful life, no residual value |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.",
+        "After three years, the delivery truck's carrying value is €27,500.",
+        "After three years, the computer equipment, originally costing €21,000, is fully written down to nil.",
+        "After three years, the combined carrying value of all three assets exceeds €101,344.",
+        "Without recording depreciation on the €122,000 machinery, non-current assets on the balance sheet would be overstated."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "An income-statement line is a flow across the period, not a balance-sheet stock. With that split the claim is fine. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True.",
+        "Carrying value after three years subtracts three annual charges from cost.\n\n$$\n48{,}000 - 7{,}000 = 41{,}000\n$$\n\n$$\n\\frac{41{,}000}{6} \\approx 6{,}833\n$$\n\n$$\nBV_{3} = 48{,}000 - 3 \\times 6{,}833 = 27{,}500\n$$\n\nCarrying value ≈ 48,000 − 3 × 6,833 = 27,500. Claimed €27,500 is right. Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
+        "With nil residual, the asset is fully written down once elapsed years reach useful life.\n\n$$\n\\text{Cost} = €21{,}000, \\quad \\text{Life} = 3\\text{ years}, \\quad \\text{Residual} = €0\n$$\n\nComputer: cost €21,000, life 3y, residual €0. After three years it is at nil. Read the claim against the chapter rule: After three years, the computer equipment, originally costing €21,000, is fully written down to nil.\n\nSo the statement is True.",
+        "Sum each asset's carrying value after three years (floored at residual once fully depreciated).\n\n$$\n\\text{Asset A - Machinery}\\ BV_{3} = 88{,}727\n$$\n\n$$\n\\text{Asset B - Delivery truck}\\ BV_{3} = 27{,}500\n$$\n\n$$\n\\text{Asset C - Computer equipment}\\ BV_{3} = 0\n$$\n\n$$\n\\text{Combined BV} \\approx €116{,}227\n$$\n\n$$\nCombined carrying value ≈ €116{,}227.\n$$\n\nSo the statement is True.",
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. Land is usually kept at cost without an annual write-down. Depreciation matches past spending on the asset, not a fresh cash bill. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.RIGHTS",
+      "title": "Share Chart — Rights Issue, Dividend Yield and Real Return",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "NordGlass AG is listed on the Vienna Stock Exchange. Before a planned capital increase the company has 5.0 million shares outstanding. Earnings for the last financial year were €12.0 million, and the board paid a cash dividend of €0.96 per share. Over the same year the consumer-price index rose by 5.0%.\n\nThe board now announces a rights issue: existing shareholders may buy 1 new share for every 4 shares they already hold, at a subscription price of €18.00. Assume earnings stay at €12.0 million after the issue.\n\n[[CHART type=\"line\" title=\"NordGlass AG closing share price (€)\"]]\nJan | Price=20.00\nFeb | Price=20.80\nMar | Price=21.40\nApr | Price=21.10\nMay | Price=22.00\nJun | Price=22.60\nJul | Price=23.20\nAug | Price=22.90\nSep | Price=23.50\nOct | Price=23.80\nNov | Price=24.20\nDec | Price=24.00\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Closing share price (Dec, cum-rights) | €24.00 |\n| Shares outstanding (pre-issue) | 5,000,000 |\n| Annual earnings | €12,000,000 |\n| Cash dividend per share | €0.96 |\n| Rights terms | 1 new for 4 old @ €18.00 |\n| CPI inflation over the year | 5.0% |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "At the December cum-rights price, NordGlass’s dividend yield exceeds 3.5%.",
+        "The theoretical ex-rights price (TERP) after the announced 1-for-4 issue at €18 is less than €22.50.",
+        "If earnings remain €12 million after the issue, earnings per share fall by more than 15% relative to the pre-issue EPS.",
+        "The payout ratio (dividend per share divided by pre-issue EPS) is greater than 45%.",
+        "An investor who bought the share in January at €20 and sold at the December close earned a real (inflation-adjusted) return of more than 12%."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Dividend yield compares the cash dividend to the current share price:\n\n$$\n\\text{Dividend yield}=\\dfrac{0.96}{24.00}=0.04=4\\%\n$$\n\n$$\n4\\%>3.5\\%\n$$\n\nSo the statement is True.",
+        "With a 1-for-4 rights issue the theoretical ex-rights price pools four cum-rights shares and one new share:\n\n$$\n\\mathrm{TERP}=\\dfrac{4\\cdot 24.00+18.00}{5}=\\dfrac{114}{5}=22.80\n$$\n\n$$\n22.80\\not< 22.50\n$$\n\nSo the statement is False.",
+        "Pre-issue EPS and post-issue EPS (earnings unchanged, shares rise by $5/4$):\n\n$$\n\\mathrm{EPS}_{\\text{pre}}=\\dfrac{12{,}000{,}000}{5{,}000{,}000}=2.40\n$$\n\n$$\n\\text{New shares}=\\dfrac{5{,}000{,}000}{4}=1{,}250{,}000,\\qquad\n\\text{Shares after}=6{,}250{,}000\n$$\n\n$$\n\\mathrm{EPS}_{\\text{post}}=\\dfrac{12{,}000{,}000}{6{,}250{,}000}=1.92\n$$\n\n$$\n\\dfrac{2.40-1.92}{2.40}=\\dfrac{0.48}{2.40}=0.20=20\\%>15\\%\n$$\n\nSo the statement is True.",
+        "Payout uses the dividend against pre-issue earnings per share:\n\n$$\n\\text{Payout}=\\dfrac{0.96}{2.40}=0.40=40\\%\n$$\n\n$$\n40\\%\\not> 45\\%\n$$\n\nSo the statement is False.",
+        "Nominal share return from January to December:\n\n$$\n\\dfrac{24.00}{20.00}-1=0.20=20\\%\n$$\n\nInflation was $5\\%$, so the real return is\n\n$$\n\\dfrac{1.20}{1.05}-1\\approx 0.1429=14.29\\%\n$$\n\n$$\n14.29\\%>12\\%\n$$\n\n(Equivalently $20\\%-5\\%=15\\%$ is only a rough additive approximation; the exact ratio still clears $12\\%$.)\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) Almost every modern electronic device, from smartphones to fighter jets to washing machines, depends on semiconductor chips whose manufacture is concentrated in a strikingly small number of facilities worldwide. A single company, Taiwan Semiconductor Manufacturing Company (TSMC), produces more than 90% of the world's most advanced logic chips, those built using process technologies at or below 7 nanometres, creating a level of geographic concentration that would be considered reckless in almost any other critical industry.\n\n(2) This concentration did not emerge by accident. Constructing a single leading-edge fabrication plant, or \"fab,\" now costs upward of $20 billion and requires equipment so precise that a single deep ultraviolet lithography machine, essential for etching circuit patterns onto silicon wafers, can cost more than $150 million and weighs as much as a small aircraft. Only one company in the world, the Dutch firm ASML, currently manufactures the most advanced version of this equipment, creating a second, narrower chokepoint layered on top of the first.\n\n(3) The economics driving this concentration follow a pattern chip industry veterans call \"Moore's Second Law\": while the number of transistors on a chip has historically doubled roughly every two years, the capital cost of the factories needed to manufacture those increasingly dense chips has risen even faster, making it progressively harder for new entrants to compete at the cutting edge without government-scale financial backing.\n\n(4) The 2020–2021 global chip shortage exposed just how disruptive this concentration could become. A production slowdown affecting a relatively narrow category of automotive-grade chips, worth a small fraction of the overall semiconductor market, nonetheless forced automakers worldwide to idle assembly lines, ultimately reducing global vehicle production by an estimated 11.3 million units and costing the industry tens of billions of dollars in lost revenue.\n\n(5) Governments have responded with unusually direct industrial intervention. Beyond the United States' CHIPS Act, discussed in relation to reshoring elsewhere, South Korea announced a $450 billion publicprivate investment programme in 2021 aimed at expanding domestic chip manufacturing capacity, while Japan, once the dominant force in global chip production during the 1980s before losing significant market share to competitors, has similarly begun subsidising new fabrication facilities in an explicit attempt to rebuild capability it had allowed to atrophy.\n\n(6) Taiwan's outsized role carries geopolitical weight extending well beyond ordinary trade considerations. Some analysts have described TSMC's dominance as a form of \"silicon shield,\" theorising that the island's indispensability to global electronics supply chains gives other nations a powerful incentive to help ensure its continued security, though critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\n\n(7) Meanwhile, China has invested heavily in developing an independent domestic chip industry, partly in response to export restrictions imposed by the United States on advanced chipmaking equipment. Despite billions of dollars in state investment, Chinese manufacturers as of the early 2020s remained several process-technology generations behind the industry's absolute cutting edge, illustrating how difficult it is to close this particular technological gap through capital investment alone, without also replicating decades of accumulated engineering expertise.\n\n(8) Even chips considered technologically unremarkable by industry standards, so-called legacy chips manufactured using older process nodes, remain critical to everyday products such as cars, appliances, and medical devices, meaning that supply disruptions need not involve cutting-edge technology at all to produce outsized economic consequences.\n\n(9) Whether current efforts to geographically diversify chip production will meaningfully reduce the industry's concentrated vulnerabilities within a reasonable timeframe, or whether the underlying economics of chipmaking will continue to favour concentration regardless of policy intervention, remains an open question actively debated among industry analysts and policymakers.",
+    "passageTitle": "The Silicon Chokepoint — How a Few Factories Reshaped Global Power",
+    "tasks": [
+      {
+        "case_id": "ENG T.11.01",
+        "id": "en-t-11-01",
+        "title": "Task 1",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "TSMC produces more than 90% of the world's most advanced logic chips, defined as those built at or below 7 nanometres.",
+          "A leading-edge fabrication plant now costs upward of $20 billion to construct.",
+          "Multiple companies worldwide currently manufacture the most advanced deep ultraviolet lithography machines, ensuring no single chokepoint exists for this equipment.",
+          "The rising capital cost of advanced fabs is described as making it easier for new companies to enter cutting-edge chip manufacturing.",
+          "A single deep ultraviolet lithography machine can cost more than $150 million."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) TSMC produces more than 90% of the world's most advanced logic chips, defined as those built at or below 7 nanometres.**\n\nParagraph 1 names TSMC as producing more than 90% of the world's most advanced logic chips and defines that class as chips built at or below 7 nanometres. The statement restates both the share and the process cutoff without adding or dropping a detail. Notice that the passage attaches the definition directly to the share with an appositive — \"those built using process technologies at or below 7 nanometres\" — so the 90% figure is scoped to that narrow class rather than to chips in general. A statement that kept the number but widened the category to all chips would fail even though the digits matched.\n\n**Tip:** When a quantity and a definition travel together, both must match the passage.\n\nThe claim lines up with Paragraph 1's figure and definition, so it stands.",
+          "**B) A leading-edge fabrication plant now costs upward of $20 billion to construct.**\n\nParagraph 2 states that constructing a single leading-edge fab now costs upward of $20 billion. The statement only shortens that construction-cost claim; the number and direction (\"upward of\") are unchanged. \"Upward of\" sets a floor rather than a ceiling, so the statement's plain \"costs upward of $20 billion\" preserves the same open-ended direction the passage gives. Watch for versions of this line that convert the floor into a cap, such as \"at most $20 billion,\" because that single preposition swap would break the match.\n\nThe $20 billion construction floor in Paragraph 2 confirms the line.",
+          "**C) Multiple companies worldwide currently manufacture the most advanced deep ultraviolet lithography machines, ensuring no single chokepoint exists for this equipment.**\n\nParagraph 2 says the opposite: only one company in the world, ASML, currently manufactures the most advanced version of this equipment, creating a second, narrower chokepoint. \"Multiple companies\" and \"no single chokepoint\" invert that monopoly. The passage is deliberate about scope: the monopoly claim covers \"the most advanced version\" of the equipment, which is exactly the tier the statement addresses, so there is no room to argue the two sentences describe different markets. Both halves of the statement — the supplier count and the reassuring conclusion drawn from it — contradict the text at once.\n\n**Trap:** A true second-chokepoint fact is flipped into a diversified-supply claim.\n\nThe statement fails because Paragraph 2 limits advanced DUV lithography manufacture to ASML alone: \"Only one company in the world, the Dutch firm ASML, currently manufactures the most advanced version of this equipment.\"",
+          "**D) The rising capital cost of advanced fabs is described as making it easier for new companies to enter cutting-edge chip manufacturing.**\n\nParagraph 3 ties rising factory capital costs to Moore's Second Law and says those costs make it \"progressively harder for new entrants to compete at the cutting edge.\" \"Easier\" reverses the directional verb. The comparative adverb \"progressively\" matters too: the passage describes a barrier that keeps growing over time, which is the opposite of a market opening up to newcomers. Everything else in the statement — capital cost, new companies, cutting-edge manufacturing — is copied faithfully, which is precisely what makes the single reversed word easy to skim past.\n\n**Trap:** Harder → easier is a classic polarity flip on cost barriers.\n\nThe claim fails; the passage says rising costs make entry \"progressively harder,\" not easier.",
+          "**E) A single deep ultraviolet lithography machine can cost more than $150 million.**\n\nParagraph 2 states that a single deep ultraviolet lithography machine can cost more than $150 million. The statement copies that price ceiling without changing the equipment type or the figure. The modal \"can cost\" is preserved as well, so the claim reports a possible price point rather than asserting that every machine carries that tag. Keep this figure separate from the $20 billion fab total in the same paragraph, since the two numbers sit close together and are easy to swap under time pressure.\n\nThe $150 million machine-cost detail in Paragraph 2 matches the statement."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.11.02",
+        "id": "en-t-11-02",
+        "title": "Task 2",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The 2020–2021 chip shortage is attributed partly to a slowdown in a relatively narrow category of automotive-grade chips.",
+          "This shortage is estimated to have reduced global vehicle production by roughly 11.3 million units.",
+          "South Korea's 2021 investment programme is described as being funded exclusively by private companies without any public involvement.",
+          "Japan is described as having been the dominant force in global chip production during the 1980s before losing significant market share.",
+          "The affected automotive-grade chip category is described as representing a large majority of the overall semiconductor market by value."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The 2020–2021 chip shortage is attributed partly to a slowdown in a relatively narrow category of automotive-grade chips.**\n\nParagraph 4 opens the shortage discussion with \"a production slowdown affecting a relatively narrow category of automotive-grade chips.\" The statement keeps that causal framing — a narrow automotive-grade category, not the whole market. The hedge \"partly\" is doing useful work here, because the passage presents the automotive slowdown as one exposed pressure point rather than the sole cause of everything that followed. Since the statement claims no more than the text does about scope or cause, nothing is overstated.\n\nParagraph 4's slowdown description supports the claim.",
+          "**B) This shortage is estimated to have reduced global vehicle production by roughly 11.3 million units.**\n\nParagraph 4 says the disruption ultimately reduced global vehicle production by an estimated 11.3 million units. \"Roughly\" is a fair hedge around \"estimated\"; the figure itself is unchanged. Softening an estimate with a word like \"roughly\" is safe, whereas hardening it into \"exactly 11.3 million\" would claim a precision the passage explicitly declines to give. Also check the unit: the passage counts vehicles, not chips or dollars, and the statement keeps that measure intact.\n\nThe 11.3 million-unit estimate in Paragraph 4 matches the statement.",
+          "**C) South Korea's 2021 investment programme is described as being funded exclusively by private companies without any public involvement.**\n\nParagraph 5 calls South Korea's 2021 programme a \"$450 billion publicprivate investment programme.\" \"Exclusively… private\" and \"without any public involvement\" erase the public half of that label. The whole paragraph is framed as governments responding with \"unusually direct industrial intervention,\" so a purely private reading also fights the surrounding context, not just the one compound adjective. Absolute words like \"exclusively\" and \"without any\" are worth flagging on sight, since they leave no room for the mixed arrangement the text describes.\n\n**Trap:** Public–private becomes private-only — watch the funding mix.\n\nThe claim fails; Paragraph 5 marks the programme as public-private, not private-only: \"a $450 billion publicprivate investment programme.\"",
+          "**D) Japan is described as having been the dominant force in global chip production during the 1980s before losing significant market share.**\n\nParagraph 5 says Japan was \"once the dominant force in global chip production during the 1980s before losing significant market share to competitors.\" The statement restates that rise-and-loss arc without inventing a new ranking today. The word \"once\" anchors the dominance firmly in the past, and the statement's past-perfect phrasing \"having been\" respects that timeline instead of implying present leadership. Both halves of the arc must survive the paraphrase: peak in the 1980s, then significant loss of share.\n\nThe 1980s-dominance-then-loss wording in Paragraph 5 confirms the line.",
+          "**E) The affected automotive-grade chip category is described as representing a large majority of the overall semiconductor market by value.**\n\nParagraph 4 says those automotive-grade chips were \"worth a small fraction of the overall semiconductor market.\" \"Large majority\" is the inverse of \"small fraction.\" The small share is the entire point of the paragraph, because the contrast between a minor market slice and a massive production loss is what makes the disruption striking. Reading the category as a majority would dissolve that contrast and leave the paragraph's \"nonetheless\" with nothing to push against.\n\n**Trap:** Small market share ↔ large majority is a quantity swap.\n\nThe statement fails; the passage calls the category \"worth a small fraction of the overall semiconductor market,\" not a large majority."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.11.03",
+        "id": "en-t-11-03",
+        "title": "Task 3",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The \"silicon shield\" theory suggests Taiwan's indispensability gives other nations incentive to help ensure its security.",
+          "Critics of the silicon shield theory argue it could make Taiwan a uniquely tempting target rather than a uniquely protected one.",
+          "Chinese chipmakers, as of the early 2020s, are described as having fully closed the technological gap with the industry's cutting edge.",
+          "Legacy chips are described as irrelevant to critical everyday products such as cars and medical devices.",
+          "The passage concludes by presenting the industry's future concentration as a settled matter with a clear, agreed-upon outcome."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The \"silicon shield\" theory suggests Taiwan's indispensability gives other nations incentive to help ensure its security.**\n\nParagraph 6 explains the \"silicon shield\" idea as theorising that Taiwan's indispensability to global electronics supply chains gives other nations a powerful incentive to help ensure its continued security. The statement strips hedging words but keeps the same protective logic. Crucially, it also keeps the attribution: the claim is what the theory suggests, not what the passage asserts as fact, which is why the softer verb \"suggests\" is acceptable. The causal chain also survives intact — indispensability produces the incentive, and the incentive points toward security.\n\nThe shield theory in Paragraph 6 matches the claim.",
+          "**B) Critics of the silicon shield theory argue it could make Taiwan a uniquely tempting target rather than a uniquely protected one.**\n\nParagraph 6 immediately counters that the same dynamic \"could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\" The statement is that counterargument almost verbatim. It preserves the modal \"could\" as well as the \"rather than\" contrast, so the critics' position stays a possible reading instead of hardening into a prediction. Attribution is correct too: the target reading belongs to the critics, not to the analysts who proposed the shield.\n\nThe critics' target-vs-protected contrast in Paragraph 6 confirms the line.",
+          "**C) Chinese chipmakers, as of the early 2020s, are described as having fully closed the technological gap with the industry's cutting edge.**\n\nParagraph 7 says Chinese manufacturers as of the early 2020s \"remained several process-technology generations behind the industry's absolute cutting edge.\" \"Fully closed\" contradicts \"several… generations behind.\" The verb \"remained\" signals a gap that persisted through the stated time window, so the timeframe in the statement is no escape hatch. The passage's whole point in that paragraph is how hard the gap is to close, which the statement inverts into an accomplished catch-up.\n\n**Trap:** Lag in the text becomes catch-up in the statement.\n\nThe claim fails; Paragraph 7 reports Chinese makers \"remained several process-technology generations behind,\" not caught up.",
+          "**D) Legacy chips are described as irrelevant to critical everyday products such as cars and medical devices.**\n\nParagraph 8 says legacy chips \"remain critical to everyday products such as cars, appliances, and medical devices.\" \"Irrelevant\" flips \"critical.\" The examples in the statement are drawn straight from the passage's own list, which makes the surrounding wording feel familiar and disguises the single reversed adjective. Remember that the paragraph exists precisely to argue that unglamorous older chips still matter, so \"irrelevant\" contradicts its purpose as well as its wording.\n\nThe statement fails; the passage says legacy chips \"remain critical\" to those products, not irrelevant.",
+          "**E) The passage concludes by presenting the industry's future concentration as a settled matter with a clear, agreed-upon outcome.**\n\nParagraph 9 ends by calling whether diversification will reduce concentration — or economics will keep favouring it — \"an open question actively debated among industry analysts and policymakers.\" \"Settled\" and \"agreed-upon\" erase that open debate. The closing sentence is built as a two-sided \"whether… or whether…\" structure, which by design leaves both futures on the table rather than choosing one. Naming the debaters — analysts and policymakers — reinforces that disagreement is ongoing rather than resolved.\n\n**Trap:** An \"open question\" is dressed up as a closed conclusion.\n\nThe claim fails; Paragraph 9 frames the outcome as \"an open question actively debated,\" not a settled consensus."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.11.04",
+        "id": "en-t-11-04",
+        "title": "Task 4",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Since ASML is the sole manufacturer of the most advanced lithography machines, it can be inferred that any country lacking access to ASML's equipment would face significant obstacles reaching the industry's cutting edge.",
+          "Because rising fab costs have outpaced transistor-density gains under \"Moore's Second Law,\" it can be inferred that entering cutting-edge manufacturing has become relatively more, not less, difficult over time.",
+          "Because the chip shortage's automotive impact was disproportionate to that category's market share, it can be inferred that even a narrow, low-value disruption can produce outsized economic consequences.",
+          "Since China has invested billions in domestic chip production, it can be inferred that state investment alone is sufficient to fully replicate decades of accumulated engineering expertise.",
+          "Because Japan is subsidising new fabrication facilities, it can be inferred that Japan currently holds the largest share of global advanced chip manufacturing."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Since ASML is the sole manufacturer of the most advanced lithography machines, it can be inferred that any country lacking access to ASML's equipment would face significant obstacles reaching the industry's cutting edge.**\n\nParagraph 2 calls ASML's monopoly a second, narrower chokepoint layered on TSMC concentration, and the machines are described as essential for etching advanced patterns. If the only maker is ASML, denied access logically blocks the path to the cutting edge. The inference stays modest in its wording — \"significant obstacles,\" not total impossibility — which keeps it inside what a single-supplier bottleneck can support. Paragraph 7 quietly reinforces the same logic by noting that export restrictions on advanced chipmaking equipment left China several generations behind.\n\n**Tip:** A named sole supplier of \"essential\" gear supports a real barrier inference — stay inside that logic, don't invent extra firms.\n\nThe inference follows from ASML's sole-maker chokepoint in Paragraph 2, so the statement holds.",
+          "**B) Because rising fab costs have outpaced transistor-density gains under \"Moore's Second Law,\" it can be inferred that entering cutting-edge manufacturing has become relatively more, not less, difficult over time.**\n\nParagraph 3 says capital costs have risen even faster than transistor doubling, \"making it progressively harder for new entrants to compete at the cutting edge.\" \"More, not less, difficult\" is exactly that progressive-hardening claim. The comparison is relative by design: costs rising \"even faster\" than density gains is what turns a technical trend into a widening financial barrier. The inference also respects the passage's escape clause, since the text allows entry with \"government-scale financial backing\" and the statement never claims entry is impossible.\n\nMoore's Second Law in Paragraph 3 supports the inference that entry has gotten harder over time.",
+          "**C) Because the chip shortage's automotive impact was disproportionate to that category's market share, it can be inferred that even a narrow, low-value disruption can produce outsized economic consequences.**\n\nParagraph 4 stresses a relatively narrow, small-fraction automotive category that still idled lines and cut about 11.3 million vehicles. The mismatch between small market share and huge production damage is the disproportion the statement names. Paragraph 8 later states this lesson outright, noting that disruptions \"need not involve cutting-edge technology at all to produce outsized economic consequences.\" An inference that simply generalises a pattern the passage itself draws twice is safe territory.\n\nThe narrow-category / outsized-impact pairing in Paragraph 4 backs the inference.",
+          "**D) Since China has invested billions in domestic chip production, it can be inferred that state investment alone is sufficient to fully replicate decades of accumulated engineering expertise.**\n\nParagraph 7 says that despite billions in state investment, China still lagged several generations behind, \"illustrating how difficult it is to close this particular technological gap through capital investment alone, without also replicating decades of accumulated engineering expertise.\" \"Sufficient alone\" contradicts \"not… alone.\" The passage uses the concessive \"despite\" precisely to signal that the money did not deliver the outcome, so the spending detail is evidence against the inference rather than for it. The word \"alone\" appears in both the text and the statement but points in opposite directions, which is what makes the trap convincing.\n\n**Trap:** Heavy spending in the text is twisted into proof that money is enough.\n\nThe inference fails; Paragraph 7 denies that capital alone can replace \"decades of accumulated engineering expertise.\"",
+          "**E) Because Japan is subsidising new fabrication facilities, it can be inferred that Japan currently holds the largest share of global advanced chip manufacturing.**\n\nParagraph 5 says Japan is subsidising new fabs to rebuild capability it allowed to atrophy after losing 1980s dominance. Paragraph 1 already assigns more than 90% of the most advanced logic chips to TSMC in Taiwan — not to Japan. Subsidies for recovery do not equal today's lead. The verb \"rebuild\" presupposes a capability that was lost, which is the opposite of the leading position the inference asserts. Two separate paragraphs therefore block this reading: one places Japan's dominance in the past, the other places today's share with TSMC.\n\n**Trap:** Policy effort today is mistaken for current market leadership.\n\nThe inference fails; leadership sits with TSMC's \"more than 90%\" share, while Japan is described as rebuilding lost ground."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.11.05",
+        "id": "en-t-11-05",
+        "title": "Task 5",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The extreme cost and complexity described early in the passage help explain why so few countries or companies can realistically compete at the industry's cutting edge.",
+          "The chip shortage's disproportionate impact on vehicle production is consistent with the later point that even legacy, technologically unremarkable chips can cause significant disruption.",
+          "Because South Korea and Japan are both investing in domestic capacity, the passage implies these efforts have already fully resolved the industry's underlying geographic concentration.",
+          "The \"silicon shield\" theory and the critics' counterargument together illustrate that Taiwan's chip dominance carries genuinely contested strategic implications, not a single agreed-upon interpretation.",
+          "Because China remains several generations behind despite heavy investment, this is consistent with the earlier point that capital cost alone does not guarantee competitive success at the cutting edge."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) The extreme cost and complexity described early in the passage help explain why so few countries or companies can realistically compete at the industry's cutting edge.**\n\nParagraphs 2–3 stack $20 billion fabs, $150 million lithography tools, a single ASML supplier, and Moore's Second Law capital barriers. Those early obstacles are precisely why new entrants struggle at the cutting edge without government-scale backing. Paragraph 2 also opens by insisting the concentration \"did not emerge by accident,\" which signals that the cost details are offered as explanation rather than as background colour. The synthesis simply follows that explanatory arrow from causes in the early paragraphs to the scarcity of competitors.\n\nThe early cost-and-complexity stack explains the scarcity of cutting-edge competitors, so the synthesis holds.",
+          "**B) The chip shortage's disproportionate impact on vehicle production is consistent with the later point that even legacy, technologically unremarkable chips can cause significant disruption.**\n\nParagraph 4's automotive shortage hit hard despite a small market slice; Paragraph 8 then notes that even legacy chips remain critical and that disruptions need not involve cutting-edge tech to produce outsized consequences. Both scenes show modest-looking chip classes punching above their technological or market profile. Cars appear in both places — as the industry idled in Paragraph 4 and as an example product in Paragraph 8 — which makes the two passages describe the same vulnerability from two angles. The statement claims only consistency between them, which is exactly the relationship the text sets up.\n\nLinking Paragraph 4's outsized hit to Paragraph 8's legacy-chip warning is a fair cross-section read.",
+          "**C) Because South Korea and Japan are both investing in domestic capacity, the passage implies these efforts have already fully resolved the industry's underlying geographic concentration.**\n\nParagraph 5 reports the investment moves, but Paragraph 9 still leaves whether diversification will reduce concentrated vulnerabilities an \"open question actively debated.\" \"Already fully resolved\" jumps past that undecided ending. The closing paragraph even asks whether the economics of chipmaking will keep favouring concentration \"regardless of policy intervention,\" which directly anticipates and rejects this reading. Announcements of spending describe intent, not completed structural change, and the passage never reports an outcome for either programme.\n\n**Trap:** Announced policy is treated as a finished fix.\n\nThe synthesis fails; Paragraph 9 keeps the outcome an open question, not a resolved one.",
+          "**D) The \"silicon shield\" theory and the critics' counterargument together illustrate that Taiwan's chip dominance carries genuinely contested strategic implications, not a single agreed-upon interpretation.**\n\nParagraph 6 presents both the protective \"silicon shield\" reading and the critics' \"tempting target\" counter. Setting theory and rebuttal side by side signals contested meaning, not consensus. The hedged verbs across the paragraph — \"some analysts have described,\" \"theorising,\" \"critics counter\" — keep both readings as positions held by people rather than settled findings. That is exactly the contested-implications picture the statement describes.\n\nThe paired theory-and-critique in Paragraph 6 supports a contested-implications reading.",
+          "**E) Because China remains several generations behind despite heavy investment, this is consistent with the earlier point that capital cost alone does not guarantee competitive success at the cutting edge.**\n\nParagraph 3 says rising capital costs make cutting-edge entry progressively harder without government-scale backing and, by implication, more than money. Paragraph 7 shows China still generations behind despite billions, needing decades of engineering expertise too. The later lag illustrates the earlier capital-is-not-enough barrier. China's case is effectively the test that the earlier principle predicted: government-scale money was present, yet the gap persisted. Reading the two paragraphs together turns an economic claim into a documented example rather than a contradiction.\n\nChina's lag under heavy spending lines up with the earlier capital-barrier logic, so the synthesis holds."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.11.08",
+        "id": "en-t-11-08",
+        "title": "Task 8",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "As used in Paragraph 1, \"reckless\" means carefully considered and prudent, rather than dangerously risky.",
+          "As used in Paragraph 2, \"chokepoint\" means a critical point of vulnerability where disruption could severely restrict an entire system.",
+          "As used in Paragraph 5, \"atrophy\" means to strengthen and grow steadily over time.",
+          "As used in Paragraph 6, \"indispensability\" means the quality of being easily replaced or unnecessary.",
+          "As used in Paragraph 8, \"outsized\" means smaller than would normally be expected."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) As used in Paragraph 1, \"reckless\" means carefully considered and prudent, rather than dangerously risky.**\n\nParagraph 1 says such geographic concentration \"would be considered reckless in almost any other critical industry.\" There reckless means dangerously unwise or unduly risky — the opposite of carefully considered and prudent. The surrounding sentence is a criticism of how narrowly production is clustered, so a complimentary gloss would clash with the judgement the paragraph is making. The conditional framing \"would be considered… in almost any other industry\" reinforces that the word carries disapproval.\n\n**Trap:** A negative evaluative word is glossed as its positive antonym.\n\nThe gloss fails; in Paragraph 1 reckless means dangerously risky, not prudent.",
+          "**B) As used in Paragraph 2, \"chokepoint\" means a critical point of vulnerability where disruption could severely restrict an entire system.**\n\nParagraph 2 calls ASML's monopoly \"a second, narrower chokepoint layered on top of the first,\" after describing essential lithography gear only one firm can make. That usage matches a critical vulnerability node whose disruption can bottleneck a whole supply chain. The modifiers do the defining work here: \"narrower\" and \"layered on top of\" describe a passage that can be squeezed, which is the metaphor the word carries. Reading the surrounding sentence about a single supplier of essential equipment confirms the bottleneck sense.\n\nThe Paragraph 2 sense of chokepoint matches the offered meaning, so the identification holds.",
+          "**C) As used in Paragraph 5, \"atrophy\" means to strengthen and grow steadily over time.**\n\nParagraph 5 says Japan is trying to rebuild capability \"it had allowed to atrophy.\" Allowed to atrophy means allowed to wither or weaken from disuse — not strengthen and grow. The verb rebuild in the same clause is decisive, since nothing that had been strengthening would need rebuilding. The word also fits the paragraph's earlier note that Japan lost significant market share after its 1980s peak.\n\nThe gloss reverses the verb; atrophy here means weaken from neglect, so the meaning claim fails.",
+          "**D) As used in Paragraph 6, \"indispensability\" means the quality of being easily replaced or unnecessary.**\n\nParagraph 6 speaks of \"the island's indispensability to global electronics supply chains\" as the basis of a silicon-shield theory. Indispensability means being essential / hard to do without — the opposite of easily replaced or unnecessary. The theory only works because the quality is essentialness: nations would have no incentive to protect a supplier they could swap out at will. The prefix in- plus dispensable literally marks something that cannot be dispensed with.\n\nThe antonym gloss collapses; indispensability here means essentialness, not replaceability.",
+          "**E) As used in Paragraph 8, \"outsized\" means smaller than would normally be expected.**\n\nParagraph 8 says disruptions need not involve cutting-edge tech \"to produce outsized economic consequences.\" Outsized means disproportionately large, not smaller than expected. The sentence is built on a contrast between unremarkable technology and the scale of the damage it can cause, which only lands if the consequences are oversized. Paragraph 4's earlier example — a small market slice costing 11.3 million vehicles — shows the same word doing the same work.\n\n**Trap:** Out- as a size prefix is misread as undersized.\n\nThe meaning claim fails; outsized here means larger than normal, not smaller."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.11.09",
+        "id": "en-t-11-09",
+        "title": "Task 9",
+        "subsection": "t.11",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "As used in Paragraph 3, \"cutting-edge\" means outdated or technologically behind current standards.",
+          "As used in Paragraph 4, \"idle\" (as in \"idle assembly lines\") means to keep running continuously at full capacity.",
+          "As used in Paragraph 7, \"replicating\" means copying or reproducing something that already exists elsewhere.",
+          "As used in Paragraph 8, \"unremarkable\" means ordinary or unexceptional, not attracting special notice.",
+          "As used in Paragraph 9, \"concentration\" (in this economic sense) means being spread evenly and widely across many locations."
+        ],
+        "answer_key": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) As used in Paragraph 3, \"cutting-edge\" means outdated or technologically behind current standards.**\n\nParagraph 3 talks about competing \"at the cutting edge\" of chip manufacturing after describing denser, more expensive fabs. Cutting-edge means at the technological forefront — the opposite of outdated or behind. Paragraph 7 makes the same sense visible from the other side, describing Chinese makers as generations behind \"the industry's absolute cutting edge,\" which only reads sensibly if the cutting edge is the front. Paragraph 8's contrast between legacy nodes and cutting-edge technology points the same way.\n\nThe gloss fails; cutting-edge here means leading-tech, not behind the curve.",
+          "**B) As used in Paragraph 4, \"idle\" (as in \"idle assembly lines\") means to keep running continuously at full capacity.**\n\nParagraph 4 says the shortage \"forced automakers worldwide to idle assembly lines,\" then cut vehicle output by millions. Idle here means shut down or leave unused — not run at full capacity. The consequence clause settles it: production fell by an estimated 11.3 million units, which cannot follow from lines running flat out. Note also that idle is used as a transitive verb here, meaning to render idle, not to describe an engine ticking over.\n\n**Trap:** Everyday \"idle\" as \"not working\" is flipped into continuous full production.\n\nThe claimed meaning reverses the verb; idle here means stop or pause the lines, so the identification fails.",
+          "**C) As used in Paragraph 7, \"replicating\" means copying or reproducing something that already exists elsewhere.**\n\nParagraph 7 says closing the gap needs more than capital, \"without also replicating decades of accumulated engineering expertise.\" Replicating there means copying / reproducing that expertise — matching the offered gloss. The object of the verb is expertise built up elsewhere over decades, so the sense is reproducing an existing achievement rather than inventing something new. That is precisely why the paragraph treats it as so hard to do quickly.\n\nThe Paragraph 7 use of replicating matches \"copying or reproducing,\" so the meaning holds.",
+          "**D) As used in Paragraph 8, \"unremarkable\" means ordinary or unexceptional, not attracting special notice.**\n\nParagraph 8 calls older-node chips \"technologically unremarkable by industry standards\" — ordinary relative to the cutting edge, not specially impressive. That is ordinary / unexceptional. The qualifier \"by industry standards\" limits the judgement to technical novelty, which is why the same chips can be unremarkable and critical in the very same sentence. Ordinary, in this context, is a comment on sophistication rather than on importance.\n\nUnremarkable in Paragraph 8 means ordinary, so the identification stands.",
+          "**E) As used in Paragraph 9, \"concentration\" (in this economic sense) means being spread evenly and widely across many locations.**\n\nParagraph 9 asks whether economics will \"continue to favour concentration\" versus geographic diversification. Concentration here means clustering production narrowly — the opposite of even, wide distribution. The sentence sets concentration directly against efforts \"to geographically diversify chip production,\" and that contrast fixes the meaning. Paragraph 1 established the same sense from the start, describing manufacture confined to a strikingly small number of facilities.\n\nThe gloss fails; concentration means gathering in few places, not spreading evenly."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.11.06",
+        "id": "en-t-11-06",
+        "title": "Task 6",
+        "subsection": "t.11",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had the shortage not disrupted automotive supply chains, vehicle production would have remained substantially higher.\"",
+          "\"Regulators recommended that the company diversifies its supplier base to reduce risk.\"",
+          "\"The number of countries subsidising domestic fabs continue to increase each year.\"",
+          "\"Neither the equipment nor the expertise required were easily replicated by new entrants.\"",
+          "\"Having invested heavily in domestic capacity, the government sought greater supply chain independence.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Had the shortage not disrupted automotive supply chains, vehicle production would have remained substantially higher.\"**\n\nThis is a third conditional with subject–auxiliary inversion: Had + past participle replaces If… had. The result clause correctly uses would have + past participle (would have remained). The negation sits on the inverted had-clause without breaking the pattern. Note that the inverted form takes no if at all — writing \"If had the shortage not disrupted…\" would double the marker and spoil the structure. Both clauses also point at the same unreal past, which is what the third conditional is built to express.\n\n**Tip:** Inverted Had… not… pairs with would have + V3 — same timeline as If… had not…\n\nThe conditional architecture is sound, so the sentence stands.",
+          "**B) \"Regulators recommended that the company diversifies its supplier base to reduce risk.\"**\n\nAfter recommend that, formal English wants the mandative subjunctive — base form diversify, not present-tense diversifies. The -s ending treats the verb as an ordinary present instead of a subjunctive. The subjunctive form stays the same no matter what tense the reporting verb carries, so \"recommended\" in the past does not pull the that-clause into agreement with it. The same rule governs verbs such as suggest, insist, demand, and propose, which is worth memorising as a family.\n\n**Trap:** Recommend that + indicative -s is a frequent near-miss.\n\nThe line fails; the repaired wording is \"Regulators recommended that the company diversify its supplier base to reduce risk.\"",
+          "**C) \"The number of countries subsidising domestic fabs continue to increase each year.\"**\n\nThe number of is grammatically singular, so the verb must be continues, not plural continue. The plural countries after of does not control agreement. The head noun is number, and the of-phrase together with the participial modifier subsidising domestic fabs only describes it. Contrast this with a number of, which is idiomatically plural and would take continue — the article alone decides the verb.\n\n**Trap:** A plural noun after of does not make \"the number of\" plural.\n\nAgreement breaks here; the sound version is \"The number of countries subsidising domestic fabs continues to increase each year.\"",
+          "**D) \"Neither the equipment nor the expertise required were easily replicated by new entrants.\"**\n\nWith neither… nor, the verb agrees with the nearer subject. Here that subject is the expertise required — singular uncountable expertise — so the verb should be was, not were. The past participle required is a reduced relative modifying expertise, so it adds no plural noun that could take over agreement. If the order were reversed to \"Neither the expertise nor the equipment…,\" the nearer noun would still be uncountable and the verb would stay singular.\n\n**Trap:** Two nouns before the verb tempt a plural even when the nearer head is singular.\n\nProximity agreement fails, so the sentence doesn’t hold — \"Neither the equipment nor the expertise required was easily replicated by new entrants.\"",
+          "**E) \"Having invested heavily in domestic capacity, the government sought greater supply chain independence.\"**\n\nThe perfect participle Having invested modifies the government, the same agent that sought independence afterward. No dangling or mismatched subject — the investor and the seeker are one. The perfect form also fixes the order of events, marking the investment as complete before the search for independence. A participial opener is only safe when the noun immediately after the comma is its true subject, and that condition is met here.\n\nThe participle attaches cleanly to the government, so the wording is sound."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.11.07",
+        "id": "en-t-11-07",
+        "title": "Task 7",
+        "subsection": "t.11",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had the shortage begun than automakers started idling assembly lines.\"",
+          "\"The programme, along with several related subsidies, were announced the same year.\"",
+          "\"Each of the surveyed manufacturers have reported ongoing supply constraints.\"",
+          "\"By the time the new fab opens, competitors will have already expanded their own capacity.\"",
+          "\"The figures, which were compiled across several fiscal years, indicate a persistent cost increase.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had the shortage begun than automakers started idling assembly lines.\"**\n\nNo sooner… than correctly triggers inversion (had the shortage begun) with past perfect in the first clause and simple past (started) in the second. The correlative pair is than, not when. Because No sooner is a negative adverbial placed at the front, the inversion is required rather than optional — \"No sooner the shortage had begun\" would be wrong. The tense split also carries meaning, marking the first event as just barely complete when the second followed.\n\n**Tip:** No sooner + inversion wants than, and past perfect before the simple-past follow-on.\n\nThe No sooner… than pattern is well formed, so the sentence stands.",
+          "**B) \"The programme, along with several related subsidies, were announced the same year.\"**\n\nAlong with several related subsidies is a parenthetical add-on; the real subject is singular the programme, so the verb must be was announced, not were. The plural noun inside the aside does not take over agreement. The paired commas are the giveaway: material fenced off that way can be lifted out, leaving \"The programme … was announced the same year.\" Phrases such as together with, as well as, and in addition to behave identically and never convert a singular subject into a plural one.\n\n**Trap:** Along with + plural looks like a plural subject, but the head noun still governs the verb.\n\nAgreement fails; repair to \"The programme, along with several related subsidies, was announced the same year.\"",
+          "**C) \"Each of the surveyed manufacturers have reported ongoing supply constraints.\"**\n\nEach of takes a singular verb even when the of-phrase is plural. Have reported should be has reported. The pronoun Each picks out members one at a time, which is why the grammar stays singular even though the group described is plural. The same singular rule covers every one of, either of, and neither of, so treat this whole family as singular by default.\n\n**Trap:** Manufacturers after of invites plural have, but Each keeps the verb singular.\n\nThe plural verb after Each is wrong — \"Each of the surveyed manufacturers has reported ongoing supply constraints.\"",
+          "**D) \"By the time the new fab opens, competitors will have already expanded their own capacity.\"**\n\nBy the time + present (opens) sets a future reference point; will have expanded is future perfect for completion before that point. Already sits naturally inside the perfect. English deliberately uses the present tense after time conjunctions such as by the time, when, and until, so \"By the time the new fab will open\" would be the error to watch for. The two clauses therefore divide the labour cleanly: one fixes the deadline, the other reports what is finished by then.\n\nFuture perfect before a future By the time marker is the right tense pairing, so the line holds.",
+          "**E) \"The figures, which were compiled across several fiscal years, indicate a persistent cost increase.\"**\n\nPlural figures takes were compiled in the non-restrictive which-clause and plural indicate in the main clause. Relative and main verbs both track the same plural head. The commas around the which-clause correctly mark it as extra information, and which is the right relative pronoun for that non-restrictive use. Removing the clause leaves \"The figures indicate a persistent cost increase,\" which confirms the main-clause agreement on its own.\n\nPlural subject and plural verbs align throughout, so the sentence is sound."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.11.10",
+        "id": "en-t-11-10",
+        "title": "Task 10",
+        "subsection": "t.11",
+        "context": "Consider this sentence from the passage: \"Critics counter that this dynamic could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "Critics argue the same situation might instead make Taiwan especially attractive to attack, not especially safe from it.",
+          "Critics agree that this dynamic clearly makes Taiwan the most protected location in the region, with no plausible alternative interpretation.",
+          "Critics suggest this dynamic could be interpreted either way, making Taiwan both unusually vulnerable and unusually secure at the same time.",
+          "According to critics, the same circumstances might just as easily mark Taiwan out as a prime target as they might mark it out as being shielded.",
+          "Critics dismiss the idea that Taiwan's situation carries any strategic risk or protection whatsoever."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Critics argue the same situation might instead make Taiwan especially attractive to attack, not especially safe from it.**\n\nThe original says critics counter that the silicon-shield dynamic \"could equally be read as making Taiwan a uniquely tempting target rather than a uniquely protected one.\" \"Attractive to attack\" ↔ \"tempting target\" and \"not especially safe\" ↔ \"rather than… protected\" preserve that reversal. The modal \"might\" carries the same tentative force as \"could,\" so the paraphrase never upgrades a possible reading into a prediction. Attribution stays with the critics as well, which is the other half of what a faithful restatement has to keep.\n\nThe paraphrase keeps the critics' target-not-shielded flip, so it stands.",
+          "**B) Critics agree that this dynamic clearly makes Taiwan the most protected location in the region, with no plausible alternative interpretation.**\n\nCritics do not agree with the protective reading; they counter it. \"Clearly… most protected\" and \"no plausible alternative\" erase both the countering stance and the \"could equally be read\" hedge. The verb counter is explicitly adversarial, so recasting it as agreement reverses the speakers' role, not just their emphasis. Ranking Taiwan as \"the most protected location in the region\" also introduces a comparison the original never makes.\n\n**Trap:** Critics' challenge is rewritten as endorsement of the shield.\n\nThe paraphrase fails; the original is an alternative reading (tempting target), not critics affirming unique protection.",
+          "**C) Critics suggest this dynamic could be interpreted either way, making Taiwan both unusually vulnerable and unusually secure at the same time.**\n\n\"Could equally be read as… rather than…\" presents the target reading as a rival that displaces the protected reading, not as critics holding both vulnerability and security simultaneously. \"Both… at the same time\" invents a both/and stance the sentence does not claim. The word equally measures how plausible the rival reading is, not how much of each condition Taiwan experiences at once. This option is the hardest of the set because it borrows the original's hedge while quietly changing what is being hedged.\n\n**Trap:** Rather than (replacement) is misheard as both/and.\n\nThe paraphrase fails; critics offer an alternative target reading, not simultaneous dual endorsement.",
+          "**D) According to critics, the same circumstances might just as easily mark Taiwan out as a prime target as they might mark it out as being shielded.**\n\n\"Might just as easily… as…\" restates \"could equally be read as… rather than…\": same hedge, same target-versus-shielded contrast, without adding certainty or dropping the critics' frame. The paired \"as… as\" construction carries the force of equally, keeping the two readings level rather than declaring a winner. \"Prime target\" also matches \"uniquely tempting target\" in strength, so nothing is inflated or watered down.\n\nThe equal-possibility target-vs-shielded wording matches the original, so the paraphrase holds.",
+          "**E) Critics dismiss the idea that Taiwan's situation carries any strategic risk or protection whatsoever.**\n\nCritics do not dismiss strategy altogether; they argue the silicon-shield story can be read as greater temptation, not that risk and protection are nonexistent. Total dismissal invents a claim the sentence never makes. The absolute words \"any\" and \"whatsoever\" are the tell, since the original only redirects the interpretation rather than emptying it. Disputing which strategic consequence follows is a very different move from denying that strategic consequences exist.\n\nThe paraphrase fails; critics reframe the dynamic as a tempting target, they do not deny strategic stakes entirely."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.3.19",
+        "id": "en-g-3-19",
+        "title": "Task 19",
+        "subsection": "g.3",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "A number of material safety clauses was triggered overnight.",
+          "Neither the organiser nor the other stewards in the group was prepared to waive the rule.",
+          "There is, when one examines the schedules carefully, more than two conflicting dates.",
+          "The lead reviewer, as well as the marking team, were responsible for the opinion.",
+          "The data that the model relies on have been restated twice this year."
+        ],
+        "answer_key": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) A number of material safety clauses was triggered overnight.**\n\n\"A number of material safety clauses\" needs a plural verb. Dense noun phrases still follow the a-number-of plural rule. Overnight timing does not singularise the clauses.\n\n**Trap:** A long technical noun phrase makes singular \"was triggered\" look almost technical — it is not.\n\n\"A number of … clauses\" means several, so singular \"was\" is **false** — \"A number of material safety clauses were triggered overnight.\"\n",
+          "**B) Neither the organiser nor the other stewards in the group was prepared to waive the rule.**\n\nNearer plural \"stewards\" needs a plural verb after neither…nor. Extra modifiers after the nearer noun (\"in the group\") do not make it singular. Waiving the rule is content only.\n\n**Trap:** Modifiers after the nearer noun invite a **false** singular after nor.\n\nNearer plural \"stewards\" should control the verb, so the wording is **false**; repair to \"Neither the organiser nor the other stewards in the group were prepared to waive the rule.\"\n",
+          "**C) There is, when one examines the schedules carefully, more than two conflicting dates.**\n\n\"More than two conflicting dates\" is plural, so write \"there are,\" not \"there is.\" Quantity phrases greater than one take plural after there. The long when-clause is only an interruption.\n\n**Trap:** A long when-clause after there is designed to hide a plural quantity phrase.\n\nMore than two dates after there are plural, so \"there is\" is **false**: \"There are, when one examines the schedules carefully, more than two conflicting dates.\"\n",
+          "**D) The lead reviewer, as well as the marking team, were responsible for the opinion.**\n\nSingular lead reviewer plus as well as the marking team needs a singular verb. Marking team after as well as is not a co-subject. Opinion content does not affect number.\n\n**Trap:** As well as the marking team looks like a plural co-subject — agreement still follows the head.\n\nAs-well-as the marking team never joins the subject, so plural \"were\" is **false** — \"The lead reviewer, as well as the marking team, was responsible for the opinion.\"\n",
+          "**E) The data that the model relies on have been restated twice this year.**\n\nFormal plural data correctly takes \"have been restated.\" Prefer plural agreement with data on formal exams unless the paper allows informal singular data. The model-relies-on clause does not singularise data.\n\nFormal plural \"data\" takes \"have been restated,\" so the sentence is **true**.\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.82",
+      "id": "math-1-82",
+      "title": "Quantifier order: exam scores",
+      "chapter": 1,
+      "subsection": "1.4",
+      "context": "Compare two statements about a class of students and several exams: Statement 1: “There exists a student who scored above 90 on every exam.” Statement 2: “For every exam, there exists a student who scored above 90.”",
+      "statements": [
+        "Statement 1 logically implies Statement 2.",
+        "Statement 2 logically implies Statement 1.",
+        "The two statements are logically equivalent.",
+        "If the top scorer is different for each exam (no single student tops every exam), Statement 2 can be true while Statement 1 is false.",
+        "If there is only one exam, the two statements become logically equivalent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nStatement 1 supplies an existential witness $s_0$ before any exam is chosen:\n\n$$\\exists s\\,\\forall e\\,G(s,e) \\quad\\Longrightarrow\\quad \\forall e\\,G(s_0,e)$$\n\nFor each exam $e$, choose that same $s_0$ as the witness to $\\exists s\\,G(s,e)$. Therefore\n\n$$\\exists s\\,\\forall e\\,G(s,e) \\quad\\Longrightarrow\\quad \\forall e\\,\\exists s\\,G(s,e)$$\n\nStatement 1 implies Statement 2.\n\nSo the statement is True.",
+        "**B.** → False\n\nDisprove the implication with a quantifier countermodel. Use students $X,Y$ and exams $e_1,e_2$, with\n\n$$\nG(X,e_1) = \\mathrm{T},\\quad G(X,e_2) = \\mathrm{F},\n$$\n\n$$\nG(Y,e_1) = \\mathrm{F},\\quad G(Y,e_2) = \\mathrm{T}\n$$\n\nEvery exam has a witness—$X$ for $e_1$ and $Y$ for $e_2$—so $\\forall e\\,\\exists s\\,G(s,e)$ is true. Neither student clears both exams, so $\\exists s\\,\\forall e\\,G(s,e)$ is false. The reverse implication has a true premise and false conclusion in this model.\n\nSo the statement is False.",
+        "**C.** → False\n\nLogical equivalence requires both implications. The forward direction holds by reusing Statement 1’s witness:\n\n$$\\exists s\\,\\forall e\\,G(s,e) \\quad\\Longrightarrow\\quad \\forall e\\,\\exists s\\,G(s,e)$$\n\nFor the reverse direction, let $X$ clear only $e_1$ and $Y$ clear only $e_2$. Then\n\n$$\\forall e\\,\\exists s\\,G(s,e) = \\mathrm{T},$$\n\n$$\n\\exists s\\,\\forall e\\,G(s,e) = \\mathrm{F}\n$$\n\nOne direction fails in this concrete model, so the formulas are not equivalent.\n\nSo the statement is False.",
+        "**D.** → True\n\nThis is an existence claim, so one class is enough. Take two exams and two students: $X$ scores above $90$ only on $e_1$, while $Y$ scores above $90$ only on $e_2$. Then\n\n$$\\underbrace{G(X,e_1)}_{X\\text{ witnesses }e_1},$$\n\n$$\\underbrace{G(Y,e_2)}_{Y\\text{ witnesses }e_2}$$\n\nThus every exam has some high scorer. But $X$ fails $e_2$ and $Y$ fails $e_1$, so no single student is a witness for every exam. This class realizes Statement 2 without Statement 1.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the exam domain be the singleton $\\{e_1\\}$. A universal over that one value has only one case, so Statement 1 becomes\n\n$$\\exists s\\,\\forall e\\in\\{e_1\\}\\,G(s,e) \\equiv \\exists s\\,G(s,e_1)$$\n\nStatement 2 becomes\n\n$$\\forall e\\in\\{e_1\\}\\,\\exists s\\,G(s,e) \\equiv \\exists s\\,G(s,e_1)$$\n\nBoth quantifier orders reduce to the same formula.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "solution_overview": "Write $G(s,e)$ for student $s$ scoring above $90$ on exam $e$.\n\nStatement 1 picks the student first:\n\n$$\\exists s\\,\\forall e\\, G(s,e)$$\n\nStatement 2 picks the exam first:\n\n$$\\forall e\\,\\exists s\\, G(s,e)$$\n\nIn Statement 1 one student must clear every exam. In Statement 2 a different student may cover each exam."
+    },
+    {
+      "case_id": "MATH 2.60",
+      "id": "math-2-60",
+      "title": "Three unit fractions with a false linear numerator",
+      "chapter": 2,
+      "subsection": "2.2",
+      "context": "Let $x$ and $y$ be nonzero real numbers. Which of the following statements is/are correct?",
+      "statements": [
+        "For $a,b\\neq 0$ with $a\\neq -b$, it holds that $\\dfrac{\\frac1a-\\frac1b}{\\frac1a+\\frac1b}=\\dfrac{b-a}{b+a}$.",
+        "A script writes $\\dfrac{1}{u}+\\dfrac{1}{v}+\\dfrac{1}{w}=\\dfrac{u+v+w}{uvw}$ whenever $uvw\\neq 0$.",
+        "The stacked quotient $\\dfrac{\\dfrac{8x^2b}{4x^2-16}}{\\dfrac{4xb}{2x+4}}$ simplifies to $\\dfrac{x}{x+2}$ for $x\\neq\\pm 2$ and $x,b\\neq 0$.",
+        "The rational expression whose numerator is $7$ and whose denominator is the difference of the square of $x$ and one decomposes as the difference of $\\dfrac{7}{2}$ over $x-1$ and $\\dfrac{7}{2}$ over $x+1$.",
+        "On $h\\neq \\pm k$, someone writes $\\dfrac{3h-3k}{h^2-k^2}=\\dfrac{3}{h-k}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nClear every reciprocal by multiplying numerator and denominator by $ab$.\n\n$$\na,b\\neq 0\n$$\n\n$$\na\\neq -b\n$$\n\n$$\n\\left(\\dfrac{1}{a}-\\dfrac{1}{b}\\right)\\div\\left(\\dfrac{1}{a}+\\dfrac{1}{b}\\right)=\\dfrac{b-a}{ab}\\cdot\\dfrac{ab}{b+a}=\\dfrac{b-a}{b+a}\n$$\n\nNumerator:\n\n$$\n\\frac{1}{a}-\\frac{1}{b}=\\frac{b-a}{ab}\n$$\n\nDenominator:\n\n$$\n\\frac{1}{a}+\\frac{1}{b}=\\frac{b+a}{ab}\n$$\n\nQuotient:\n\n$$\n\\frac{b-a}{b+a}\n$$\n\nThe reduced ratio matches the claim.\n\nSo the statement is True.\n",
+        "**B.** → False\n\nClear the sum of unit fractions over the product denominator $vw$, not a sum of letters.\n\n$$\n\\dfrac{1}{u}+\\dfrac{1}{v}+\\dfrac{1}{w}\n$$\n\n$$\n\\dfrac{1}{u}+\\dfrac{1}{v}+\\dfrac{1}{w}=\\dfrac{u+v+w}{uvw}\n$$\n\n$$\nuvw\\neq 0\n$$\n\nLCD:\n\n$$\nv\\cdot w=vw\n$$\n\nCombine:\n\n$$\n\\frac{1}{v}+\\frac{1}{w}=\\frac{w}{vw}+\\frac{v}{vw}\n$$\n\n$$\n\\frac{w+v}{vw}\n$$\n\nThe true sum is $\\frac{w+v}{vw}$, while the claim writes $\\frac{u+v+w}{uvw}$\n\nSo the statement is False.\n",
+        "**C.** → False\n\nFactor every polynomial piece before cancelling any $(x\\pm 2)$ factor.\n\nDifference of squares:\n\n$$\n4x^2-16=4(x-2)(x+2)\n$$\n\nLinear factor:\n\n$$\n2x+4=2(x+2)\n$$\n\nRewrite the division:\n\n$$\n\\frac{8x^2b}{4(x-2)(x+2)}\\cdot\\frac{2(x+2)}{4xb}\n$$\n\nReduced form:\n\n$$\n\\frac{x}{x-2}\n$$\n\nCancelling $(x+2)$ leaves $(x-2)$ in the denominator; the printed $(x+2)$ is the cancelled factor, not the remainder\n\nSo the statement is False.\n",
+        "**D.** → True\n\nPartial fractions over $x^2-1=(x-1)(x+1)$ put the same halved numerator on each linear factor.\n\n$$\n7\n$$\n\n$$\nx\n$$\n\n$$\n\\dfrac{7}{2}\n$$\n\n$$\nx-1\n$$\n\n$$\n\\dfrac{7}{2}\n$$\n\n$$\nx+1\n$$\n\nIdentity:\n\n$$\n\\frac{7}{x^2-1}=\\frac{7/2}{x-1}-\\frac{7/2}{x+1}\n$$\n\nCheck:\n\n$$\n\\frac{7/2}{x-1}-\\frac{7/2}{x+1}=\\frac{7/2\\cdot(x+1)-7/2\\cdot(x-1)}{(x-1)(x+1)}\n$$\n\n$$\n\\frac{7}{x^2-1}\n$$\n\nThe halved coefficients match the claimed decomposition\n\nSo the statement is True.\n",
+        "**E.** → False\n\nApply the matching rational-expression rule on the stated domain ($h\\neq \\pm k$).\n\n$$\nh\\neq \\pm k\n$$\n\n$$\n\\dfrac{3h-3k}{h^2-k^2}\n$$\n\n$$\n\\dfrac{3h-3k}{h^2-k^2}=\\dfrac{3}{h-k}\n$$\n\nLeft-hand side:\n\n$$\n\\frac{3h-3k}{h^2-k^2}\n$$\n\nClaimed right-hand side:\n\n$$\n\\frac{3}{h-k}\n$$\n\nClear denominators or cancel shared factors; a coefficient mismatch shows the sides disagree\n\nSo the statement is False.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": ""
+    },
+    {
+      "case_id": "MATH 11.123",
+      "id": "math-11-123",
+      "title": "Two Solar Project Designs Compared by Internal Rate of Return and NPV",
+      "chapter": 3,
+      "subsection": "3.7",
+      "context": "A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest \\$120,000, with net returns of \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B, a simpler one-year project: invest \\$70,000, with a single net return of \\$81,200 at the end of Year 1.",
+      "statements": [
+        "The internal rate of return of Design A is approximately 11.04%.",
+        "The internal rate of return of Design B is exactly 16%.",
+        "Based on the internal rate of return criterion, Design B should be preferred over Design A.",
+        "At a discount rate of 13%, Design A has negative net present value while Design B still has positive net present value.",
+        "If Design A's Year 1 return were \\$10,000 lower, with Year 2 unchanged at \\$88,000, its internal rate of return would still exceed Design B's 16%."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nApply the financial identity that produces the quantity named in the claim:\n\n$$r_A = \\frac{1}{0.90057} - 1$$\n\n$$\\approx 0.1104$$\n\n$$\\approx 11.04\\%$$\n\nThe computed value is approximately 11.04%, which matches the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nApply the financial identity that produces the quantity named in the claim:\n\n$$\nr_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%\n$$\n\nThe computed value is approximately 16%, which matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe internal-rate criterion ranks the designs by the recovered rates. The overview recovered $r_A \\approx 11.04\\%$ and $r_B = 16\\%$.\n\nSubstitute the recovered stem inputs:\n\n$$a_0 = -120,000,$$\n\n$$a_1 = 54,000,$$\n\n$$a_2 = 88,000$$\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$\n\n$$88,000 s^2 + 54,000 s - 120,000 = 0$$\n\n$$44s^2 + 27s - 60 = 0$$\n\n$$\n27^2 + 4 \\cdot 44 \\cdot 60 = 729 + 10,560\n$$\n\n$$\n27^2 + 4 \\cdot 44 \\cdot 60 = 11,289\n$$\n\n$$16\\% > 11.04\\%$$\n\nDesign B has the higher internal rate.\n\nSo the statement is True.",
+        "**D.** → True\n\nNet present value discounts each design's cash flows at $13\\%$. For Design A:\n\n$$\n(1.13)^2 = 1.2769\n$$\n\n$$\nNPV_A = -120,000 + \\frac{54,000}{1.13} + \\frac{88,000}{1.2769} = -120,000 + 47,787.61 + 68,916.91 = -3,295.48\n$$\n\nFor Design B:\n\n$$\nNPV_B = -70,000 + \\frac{81,200}{1.13} = -70,000 + 71,858.41 = 1,858.41\n$$\n\nThe claim needs $NPV_A < 0$ and $NPV_B > 0$. We have $-3,295.48 < 0$ and $1,858.41 > 0$.\n\nSo the statement is True.",
+        "**E.** → False\n\nCutting Design A's Year 1 return to \\$44,000 leaves a new two-year project. After substituting $s=(1+r)^{-1}$ and dividing by $4,000$:\n\n$$22s^2 + 11s - 30 = 0$$\n\nThe discriminant is\n\n$$\n11^2 + 4 \\cdot 22 \\cdot 30 = 121 + 2,640 = 2,761\n$$\n\n$$\\sqrt{2,761} \\approx 52.545$$\n\n$$s = \\frac{-11 + 52.545}{44}$$\n\n$$\\approx 0.9442$$\n\n$$r = \\frac{1}{0.9442} - 1$$\n\n$$\\approx 0.0591$$\n\n$$\\approx 5.91\\%$$\n\nThe overview recovered Design B's rate $r_B = 16\\%$. Since $5.91\\% < 16\\%$, the cut-return rate does not exceed $16\\%$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "A renewable energy cooperative compares two solar designs. Design A invests \\$120,000 and receives \\$54,000 at the end of Year 1 and \\$88,000 at the end of Year 2. Design B invests \\$70,000 and receives a single \\$81,200 at the end of Year 1.\n\n**Part 1: Setup.**\n\nDesign A has cash flows\n\n$$\na_0 = -120,000,\n$$\n\n$$\na_1 = 54,000,\n$$\n\n$$\na_2 = 88,000\n$$\n\nIts internal rate satisfies\n\n$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$\n\nSubstitute $s=(1+r)^{-1}$.\n\nDesign B is a one-year project with outlay $a=70,000$ and return $b=81,200$:\n\n**Part 2: Solve.**\n\nDesign A's quadratic is\n\n$$88,000 s^2 + 54,000 s - 120,000 = 0$$\n\nDivide by $2,000$:\n\n$$44s^2 + 27s - 60 = 0$$\n\nThe discriminant is\n\n$$\n27^2 + 4 \\cdot 44 \\cdot 60 = 729 + 10,560\n$$\n\n$$\n27^2 + 4 \\cdot 44 \\cdot 60 = 11,289\n$$\n\n$$\\sqrt{11,289} \\approx 106.250$$\n\n$$\ns = \\frac{-27 + 106.250}{88}\n$$\n\n$$\ns \\approx 0.90057\n$$\n\n$$\nr_A = \\frac{1}{0.90057} - 1\n$$\n\n$$\nr_A \\approx 0.1104\n$$\n\n$$\nr_A \\approx 11.04\\%\n$$\n\nDesign B:\n\n$$\nr_B = \\frac{81,200}{70,000} - 1\n$$\n\n$$\nr_B = 0.16\n$$\n\n$$\nr_B = 16\\%\n$$"
+    },
+    {
+      "case_id": "MATH 4.191",
+      "id": "math-4-191",
+      "title": "Composite decadic equations under pressure",
+      "chapter": 4,
+      "subsection": "4.4",
+      "context": "Throughout, $\\log$ denotes the decadic logarithm of $x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The solution of $\\log\\sqrt[3]{x} + \\log x^{3} - \\log x + \\frac{4}{3} = \\dfrac{\\log x^{6}}{1 + \\log 100}$ is smaller than $1$.",
+        "The solution of $\\log x^{5} - \\log\\sqrt{x} + \\frac{1}{2}\\log x = 10$ is greater than $50$.",
+        "The equation $\\dfrac{\\log x^{2}}{1 + \\log 10} = \\log x - 1$ has exactly one solution.",
+        "The two solutions of $(\\log x)^{2} - 3\\log x + 2 = 0$ differ by a factor of ten.",
+        "The equation $\\log(x^{2}) = (\\log x)^{2}$ has a solution larger than $10$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nTo solve the given equation, we apply the power rule to simplify each logarithmic term for $x > 0$.\n\nThe left-hand side expands to:\n\n$$\n\\log\\sqrt[3]{x} + \\log x^{3} - \\log x + \\frac{4}{3} = \\frac{1}{3}\\log x + 3\\log x - \\log x + \\frac{4}{3} = \\frac{7}{3}\\log x + \\frac{4}{3}\n$$\n\nEvaluating the denominator of the right-hand side yields\n\n$$\n1 + \\log 100 = 1 + 2\n$$\n\n$$\n1 + 2 = 3\n$$\n\n, so the right-hand side becomes:\n\n$$\n\\frac{\\log x^{6}}{1 + \\log 100} = \\frac{6\\log x}{3} = 2\\log x\n$$\n\nEquating both sides gives:\n\n$$\\frac{7}{3}\\log x + \\frac{4}{3} = 2\\log x$$\n\nSubtracting $2\\log x$ and $\\frac{4}{3}$ yields:\n\n$$\\frac{1}{3}\\log x = -\\frac{4}{3}$$\n\nMultiplying by $3$ gives $\\log x = -4$, which leads to:\n\n$$\nx = 10^{-4} = 0.0001\n$$\n\nSince $0.0001 < 1$, the solution is indeed smaller than $1$.\n\nSo the statement is True.",
+        "**B.** → True\n\nWe express each term in terms of $\\log x$ using the exponent rule $\\log(x^{k}) = k\\log x$.\n\nRewriting the left-hand side gives:\n\n$$\\log x^{5} - \\log\\sqrt{x} + \\frac{1}{2}\\log x = 5\\log x - \\frac{1}{2}\\log x + \\frac{1}{2}\\log x$$\n\nThe fractional terms cancel, leaving:\n\n$$5\\log x = 10$$\n\nDividing both sides by $5$ results in:\n\n$$\\log x = 2$$\n\nExponentiating with base ten yields:\n\n$$\nx = 10^{2} = 100\n$$\n\nSince $100 > 50$, the solution is greater than $50$.\n\nSo the statement is True.",
+        "**C.** → False\n\nWe simplify the fraction on the left-hand side using $\\log 10 = 1$ and $\\log(x^{2}) = 2\\log x$ for $x > 0$.\n\nThis gives:\n\n$$\n\\frac{\\log x^{2}}{1 + \\log 10} = \\frac{2\\log x}{1 + 1} = \\frac{2\\log x}{2} = \\log x\n$$\n\nSubstituting this result back into the original equation produces:\n\n$$\\log x = \\log x - 1$$\n\nSubtracting $\\log x$ from both sides results in the contradiction:\n\n$$0 = -1$$\n\nBecause this contradiction has no solutions, the equation possesses zero solutions rather than exactly one solution.\n\nSo the statement is False.",
+        "**D.** → True\n\nWe substitute $u = \\log x$ into the given equation to form a standard quadratic equation:\n\n$$u^{2} - 3u + 2 = 0$$\n\nFactoring the quadratic yields:\n\n$$(u - 1)(u - 2) = 0$$\n\nThis gives the two solutions for $u$:\n\n$$\nu_{1} = 1, \\quad u_{2} = 2\n$$\n\nTranslating back to $x$ by exponentiating with base ten gives:\n\n$$\nx_{1} = 10^{1} = 10, \\quad x_{2} = 10^{2} = 100\n$$\n\nTaking their ratio gives\n\n$$\n\\frac{x_{2}}{x_{1}} = \\frac{100}{10} = 10\n$$\n\n, meaning the two roots differ by a factor of ten.\n\nSo the statement is True.",
+        "**E.** → True\n\nUsing the power rule, the left-hand side simplifies to $\\log(x^{2}) = 2\\log x$.\n\nSetting this equal to the right-hand side gives:\n\n$$2\\log x = (\\log x)^{2}$$\n\nRearranging all terms to one side yields:\n\n$$(\\log x)^{2} - 2\\log x = 0$$\n\nFactoring out $\\log x$ produces:\n\n$$\\log x(\\log x - 2) = 0$$\n\nThis yields two possible values for $\\log x$, namely $\\log x = 0$ or $\\log x = 2$. Exponentiating gives the two solutions:\n\n$$\nx_{1} = 10^{0} = 1, \\quad x_{2} = 10^{2} = 100\n$$\n\nBecause $x_{2} = 100$ is strictly larger than $10$, the equation possesses a solution larger than $10$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Every statement concerns logarithmic equations involving the decadic base ten logarithm $\\log x = \\log_{10} x$. For all real expressions involving logarithms of powers of $x$, the domain of admissible real values is $x > 0$.\n\nWe systematically use the power property of logarithms:\n\n$$\\log(x^{k}) = k \\cdot \\log x$$\n\ntogether with the exact values of integer powers of ten:\n\n$$\\log 10^{k} = k$$\n\nApplying these reduction rules simplifies each logarithmic expression to a linear or quadratic equation in terms of the variable $u = \\log x$. Once $u$ is determined, the corresponding value of $x$ is obtained through the inverse exponential function:\n\n$$x = 10^{u}$$"
+    },
+    {
+      "case_id": "MATH 5.MOCK.MIX",
+      "id": "MATH 5.MOCK.MIX",
+      "title": "Copper–scrap alloy blend and a break-even shift",
+      "chapter": 5,
+      "subsection": "5.5",
+      "context": "A foundry blends pure copper (100% Cu) with scrap that is 40% copper by mass. It must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is 70% copper. Pure copper costs $€9$ per kilogram and scrap costs $€4$ per kilogram. The finished alloy is sold at $€8.50$ per kilogram.\n\nSeparately, a workshop product has fixed costs $€3{,}600$, variable cost $€5$ per unit and selling price $€11$ per unit.",
+      "statements": [
+        "In the cheapest blend that meets the mass and copper-content targets, more than $55\\ \\mathrm{kg}$ of scrap must be used.",
+        "The total material cost of that $120\\ \\mathrm{kg}$ blend is less than $€750$.",
+        "If the entire $120\\ \\mathrm{kg}$ blend is sold at $€8.50$ per kilogram, the profit on materials alone exceeds $€220$.",
+        "The workshop product’s break-even output is fewer than $550$ units.",
+        "If fixed costs rise by $20\\%$ and the contribution margin per unit is unchanged, break-even output rises by exactly $20\\%$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ be kilograms of pure copper and $y$ kilograms of scrap. Mass and copper balance give\n\n$$\nx+y=120\n$$\n\n$$\n1\\cdot x+0.4\\,y=0.70\\cdot 120=84\n$$\n\nSubstitute $x=120-y$:\n\n$$\n120-y+0.4y=84\n$$\n\n$$\n120-0.6y=84\n$$\n\n$$\n0.6y=36\\qquad\\Rightarrow\\qquad y=60\n$$\n\n$$\n60>55\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nWith $x=60$ and $y=60$,\n\n$$\n\\text{Cost}=60\\cdot 9+60\\cdot 4=540+240=780\n$$\n\n$$\n780\\not< 750\n$$\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\n\\text{Revenue}=120\\cdot 8.50=1{,}020\n$$\n\n$$\n\\text{Profit}=1{,}020-780=240>220\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nBreak-even quantity:\n\n$$\nQ_{\\mathrm{BE}}=\\dfrac{3{,}600}{11-5}=\\dfrac{3{,}600}{6}=600\n$$\n\n$$\n600\\not< 550\n$$\n\nSo the statement is False.",
+        "**E.** → True\n\nContribution margin per unit is unchanged, so break-even scales with fixed cost:\n\n$$\nQ_{\\mathrm{BE}}'=\\dfrac{1.2\\cdot \\mathrm{FC}}{\\mathrm{CM}}=1.2\\,Q_{\\mathrm{BE}}\n$$\n\nThat is an exact $20\\%$ rise in break-even output.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solve the two-equation copper blend for the scrap mass, price the bill of materials, then compare contribution-margin break-even before and after a proportional fixed-cost shock."
+    },
+    {
+      "case_id": "MATH 6.15",
+      "id": "math-6-15",
+      "title": "Rational Inequalities — 15",
+      "chapter": 6,
+      "subsection": "6.1",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The solution set of the inequality $\\dfrac{(x + 1)(x - 2)}{x + 4} > 0$ is $(-4, -1) \\cup (2, \\infty)$.",
+        "The solution set of the inequality $\\dfrac{x + 1}{x^{2} - 4} < 0$ is $(-\\infty, -2) \\cup (-1, 2)$.",
+        "The inequality $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ holds exactly for $x > 4$.",
+        "The solution set of the inequality $\\dfrac{x + 1}{x^{2} - 4} < 0$ is $(-\\infty, -2) \\cup (-1, 2)$.",
+        "The inequality $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ holds exactly for $x > 4$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{(x - 2) (x + 1)}{x + 4}>0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n(x^{2} - x) - 2=0\n$$\n\n$$\n(x - 2) (x + 1)=0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n$$\nx + 4=0\\Rightarrow x=-4\n$$\n\n(the pole $x=-4$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{(x - 2) (x + 1)}{x + 4}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-4, -1) \\cup (2, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**B.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{x + 1}{x^{2} - 4}<0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\nx + 1=0\\Rightarrow x=-1\n$$\n\n$$\nx^{2} - 4=0\n$$\n\n$$\n(x - 2) (x + 2)=0\n$$\n\n$$\nx=-2\n$$\n\n(the pole $x=-2$ is never allowed).\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n(the pole $x=2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x + 1}{x^{2} - 4}$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, -2) \\cup (-1, 2)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**C.** → False\n\nStart from the claimed inequality.\n\n$$\n\\frac{(x + 1)^{2}}{x - 4}\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n(x^{2} + 2 x) + 1=0\n$$\n\n$$\n(x + 1)^{2}=0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(the pole $x=4$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{(x + 1)^{2}}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n\\{-1\\} \\cup (4, \\infty)\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nStart from the claimed inequality.\n\n$$\n\\frac{x + 1}{x^{2} - 4}<0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\nx + 1=0\\Rightarrow x=-1\n$$\n\n$$\nx^{2} - 4=0\\Rightarrow x=-2\n$$\n\n(the pole $x=-2$ is never allowed).\n\n$$\nx^{2} - 4=0\\Rightarrow x=2\n$$\n\n(the pole $x=2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x + 1}{x^{2} - 4}$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $-$ |\n| $(-2,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n(-\\infty, -2) \\cup (-1, 2)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.",
+        "**E.** → False\n\nTest the claim that $\\frac{(x + 1)^{2}}{x - 4}\\ge 0$ holds exactly on $x > 4$.\n\n$$\n\\frac{(x + 1)^{2}}{x - 4}\\ge 0\n$$\n\nNumerator zero and pole:\n\n$$\n(x + 1)^{2}=0\\Rightarrow x=-1\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(the pole $x=4$ is excluded).\n\nBecause the numerator is a square, it is nonnegative everywhere and zero only at $x=-1$.\n\n| Interval | Sign of $\\frac{(x + 1)^{2}}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $-$ |\n| $(-1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nAt $x=-1$ the fraction equals $0$, so the non-strict inequality holds there as well. The full solution is therefore\n\n$$\n\\{-1\\}\\cup(4,\\infty)\n$$\n\nThe claim keeps only $(4,\\infty)$ and drops the isolated root $x=-1$, so it is incomplete.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Evaluate each statement. Mark it TRUE or FALSE.\n\nFind the zeros of the numerator and the excluded zeros of the denominator, then read the sign of the expression on each open interval. Include a critical point only when it comes from the numerator and the inequality is non-strict. A denominator zero is never a solution.\n\nTypes in this set: Rational inequality (two linear factors over one); Rational inequality (linear over quadratic); Rational inequality (squared numerator)."
+    },
+    {
+      "case_id": "MATH 7.89",
+      "id": "math-7-89",
+      "title": "Lines Through the Vertex",
+      "chapter": 7,
+      "subsection": "7",
+      "context": "A parabola $g$ has vertex $V$ and nonzero leading coefficient $a$. A line $f$ of slope $m$ is drawn through that same vertex. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $m$ vanishes, then $V$ is the only common point of the two graphs.",
+        "If $m$ is nonzero, then the graphs have a second common point different from $V$.",
+        "Whatever $m$ is, the two graphs are tangent at $V$.",
+        "The two graphs always have at least one common point.",
+        "When a second common point exists, it lies to the right of the axis of $g$ exactly when $m$ and $a$ have the same sign."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPut the parabola in vertex form around $V=(h,k)$; a line of slope zero through $V$ is simply the horizontal line at that height.\n\n$$g(x)=a(x-h)^{2}+k$$\n\n$$f(x)=k$$\n\nThe difference is then a pure square, so the meeting condition has a repeated solution and no other.\n\n$$g(x)-f(x)=a(x-h)^{2}$$\n\n$$g(x)-f(x)= 0$$\n\n$$x$$\n\n$$g(x)-f(x)=h$$\n\nAway from $x=h$ the square is strictly positive and $a\\neq 0$, so the difference never returns to zero.\n\nThe vertex is the one and only common point in that case.\n\nSo the statement is True.",
+        "**B.** → True\n\nA line through the vertex can be written using the same shifted variable, and then the difference factors by hand.\n\n$$f(x)=m(x-h)+k$$\n\n$$g(x)-f(x)=a(x-h)^{2}-m(x-h)$$\n\n$$g(x)-f(x)=(x-h)\\bigl(a(x-h)-m\\bigr)$$\n\nThe first factor gives back the vertex; the second one vanishes at an abscissa obtained by dividing the slope by the leading coefficient.\n\n$$a(x-h) = m$$\n\n$$x$$\n\n$$g(x)-f(x)=h+\\frac{m}{a}$$\n\nBecause $m\\neq 0$ and $a\\neq 0$ the shift $m/a$ is non-zero, so this second abscissa really is different from $h$.\n\nA second common point appears as soon as the line is tilted.\n\nSo the statement is True.",
+        "**C.** → False\n\nTangency would mean the factored difference has a repeated root at the vertex, so look at the factorisation once more.\n\n$$g(x)-f(x)=(x-h)\\bigl(a(x-h)-m\\bigr)$$\n\nFor $m\\neq 0$ the factor $x-h$ occurs only once, so the difference changes sign at $x=h$ and the graphs cross there instead of touching.\n\n$$g(x)=x^{2},\\ f(x)$$\n\n$$g(x)= x$$\n\n$$g(x)=g(x)-f(x)$$\n\n$$g(x)=x(x-1)$$\n\nIn this example the line through the vertex $(0,0)$ cuts the parabola again at $x=1$, and near the origin the difference is negative on one side and positive on the other.\n\nOnly the horizontal choice $m=0$ produces a genuine tangency.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe line is required to pass through the vertex, so one common point is handed over by the hypothesis itself.\n\n$$f(h)=k$$\n\n$$f(h)=g(h)$$\n\nBoth graphs therefore contain the point $V=(h,k)$, whatever the slope $m$ and the leading coefficient $a$ happen to be.\n\n$$g(x)-f(x)=(x-h)\\bigl(a(x-h)-m\\bigr)$$\n\nAlgebraically the factor $x-h$ is always present in the difference, so the meeting can never be lost.\n\nAt least the vertex is always shared.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe second meeting was located exactly, so its position relative to the axis $x=h$ is a matter of one sign.\n\n$$x_{2}=h+\\frac{m}{a}$$\n\nThe point lies to the right of the axis precisely when the added shift is positive, and a quotient of two non-zero numbers is positive exactly when they share a sign.\n\n$$x_{2}>h$$\n\n$$\\frac{m}{a}>0$$\n\n$$m\\text{ and }a\\text{ have the same sign}$$\n\nOpposite signs push the second meeting to the left instead, at the mirrored distance from the axis.\n\nThe criterion is exactly the agreement of the two signs.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Everything is stated for a general parabola, so the reasoning runs on the structure of $ax^{2}+bx+c$ instead of on numbers.\n\n$$\nx = -\\frac{b}{2a},\\qquad \\Delta = b^{2}-4ac\n$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.\n\nThe line is pinned to the vertex $V$, so one common point is there before any computation starts."
+    },
+    {
+      "case_id": "MATH 8.44",
+      "id": "math-8-44",
+      "title": "A Benefit and a Cost With Different Exponents",
+      "chapter": 8,
+      "subsection": "8",
+      "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=A x^{\\frac{1}{2}}$ and the cost $C(x)=K x^{\\frac{3}{2}}$, both in millions. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Benefit and cost meet at exactly one positive scale.",
+        "At scale $16$, cost is already above $30$ million.",
+        "The cost exponent is smaller than the benefit exponent, so cost can never overtake benefit.",
+        "At scale $9$, net benefit exceeds $42$ million.",
+        "Benefit per million of cost is the same at every scale."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nBenefit and cost meet where\n\n$$B(x)=C(x)$$\n\n. The overview recovered\n\n$$B(x)=18 x^{\\frac{1}{2}}$$\n\n and\n\n$$C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n.\n\n$$18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n$$36=x$$\n\nThe only positive solution is\n\n$$x=36$$\n\n.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level of cost at scale $16$. The overview recovered\n\n$$C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n$$C(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}$$\n\n$$16^{\\frac{3}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{3}$$\n\n$$16^{\\frac{1}{2}}=4$$\n\n$$4^{3}=64$$\n\n$$C(16)=\\frac{1}{2}\\cdot 64$$\n\n$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$4^{1}=4$$\n\n$$16^{\\frac{3}{2}}$$\n\n$$C(16)=64$$\n\n$$C(16)=32$$\n\nThirty-two sits above $30$.\n\nThe computed figure agrees with the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nRead the exponent from the overview before comparing growth rates.\n\nThe claim compares the two exponents the wrong way round. The overview recovered benefit exponent\n\n$$\\frac{1}{2}$$\n\n and cost exponent\n\n$$\\frac{3}{2}$$\n\n.\n\n$$\\frac{3}{2}>\\frac{1}{2}$$\n\nCost has the larger exponent, so it overtakes benefit past the unique meeting and stays ahead. At\n\n$$x=64$$\n\n$$B(64)=144$$\n\n$$C(64)=256$$\n\nCost has overtaken.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nThis is a level of net benefit at scale $9$. The overview recovered\n\n$$B(x)=18 x^{\\frac{1}{2}}$$\n\n and\n\n$$C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n.\n\n$$B(9)=18\\cdot 3$$\n\n$$B(9)=54$$\n\n$$C(9)=\\frac{1}{2}\\cdot 27$$\n\n$$C(9)=13.5$$\n\n$$B(9)-C(9)=40.5$$\n\nForty point five does not exceed $42$.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
+        "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nBenefit per million of cost is the ratio of the two recovered curves:\n\n$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$\n\n$$\\frac{B(x)}{C(x)}=\\frac{36}{x}$$\n\nThat leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:\n\n$$\\frac{B(4)}{C(4)}=9\n$$\n\n$$\\frac{B(16)}{C(16)}=2.25\n$$\n\n$$\\frac{B(36)}{C(36)}=1$$\n\nThree different ratios.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Benefit is $B(x)=A x^{\\frac{1}{2}}$ and cost is $C(x)=K x^{\\frac{3}{2}}$, both in millions, for scale $x>0$. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$.\n\n**Part 1: Translate.**\n\nEach curve has a known exponent and one trial:\n\n$$A\\cdot 16^{\\frac{1}{2}}=72$$\n\n$$4A=72$$\n\n$$K\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8K=4$$\n\n**Part 2: Solve.**\n\n$$A=18, \\qquad K=\\frac{1}{2}$$\n\nThe recovered curves are\n\n$$B(x)=18 x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2} x^{\\frac{3}{2}}.$$"
+    },
+    {
+      "case_id": "MATH 9.E11",
+      "id": "math-9-e11",
+      "title": "Odd cubic against a dashed line",
+      "chapter": 9,
+      "subsection": "9.5",
+      "context": "The figure shows a polynomial (solid) together with a dashed companion. No algebraic formula is printed. Read the ticks for end behaviour, distinct axis meetings, intercept, origin symmetry, and solid–dashed meetings. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The solid graph meets the horizontal axis at exactly three distinct points in the window.",
+        "The solid graph is that of an odd function.",
+        "As $x\\to+\\infty$ the solid graph tends to $+\\infty$, and as $x\\to-\\infty$ it tends to $-\\infty$.",
+        "The solid curve meets the dashed companion at exactly three distinct points in the plotted window.",
+        "Exactly three turning points are visible on the solid curve in the window."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAn axis meeting is a distinct abscissa of height zero. The ticks show three simple crossings, aligned with $-2$, $0$ and $2$.\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(-2)=p(0)$$\n\n$$p(-2)=p(2)$$\n\n$$p(-2)=0$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nEach factor is to the first power, so each crossing is a distinct meeting. Nothing else in the window returns to height $0$. Three distinct axis meetings are visible.\n\nSo the statement is True.",
+        "**B.** → True\n\nOddness is a half-turn about the origin. The figure is carried onto itself by that half-turn, and the intercept is $0$.\n\n$$p(x)=x^{3}-4x$$\n\n$$p(-x)=-p(x)$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nRead the intercept as the value at the origin.\n\n$$p(0)$$\n\nOnly odd powers appear. That is the algebraic form of the visible symmetry. The solid graph is odd.\n\nSo the statement is True.",
+        "**C.** → True\n\nEnd behaviour of a polynomial is the behaviour of its highest-power term. Rebuild from the ticks and read that term.\n\n$$p(x)=x^{3}-4x$$\n\n$$\\lim_{x\\to+\\infty}p(x)=+\\infty$$\n\n$$\\lim_{x\\to-\\infty}p(x)=-\\infty$$\n\nA monic cubic keeps the sign of $x$ at infinity.\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nA monic cubic keeps the sign of $x$ at infinity: the right end rises and the left end falls. Both arrows in the claim are the correct ones.\n\nSo the statement is True.",
+        "**D.** → True\n\nSolid–dashed meetings solve $p(x)=x$. Bring every term to one side and factor.\n\n$$p(x)-x=x^{3}-5x$$\n\n$$x^{3}-5x=x(x^{2}-5)$$\n\n$$\nx=0,\\qquad x = \\pm\\sqrt{5}\n$$\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nThe factor test succeeds only when that substitution returns zero.\n\nThree real solutions appear: $x=0$ and $x=\\pm\\sqrt{5}$, all inside the window. Three distinct meetings with the dashed companion occur.\n\nSo the statement is True.",
+        "**E.** → False\n\nTurning points are peaks and troughs, not crossings. They solve $p'(x)=0$.\n\n$$p'(x)=3x^{2}-4$$\n\n$$x=\\pm\\frac{2}{\\sqrt{3}}$$\n\nAn odd cubic of this shape has two turns, not three — $p'$ is only quadratic.\n\n$$p(x)=x(x-2)(x+2)$$\n\n$$p(x)=x^{3}-4x$$\n\nCompare the expanded formula at $-x$ with the negative of the original.\n\n$$p(-x)\\stackrel{?}{=}-p(x)$$\n\nExactly two real stationary abscissas appear, near $\\pm 1.15$. An odd cubic of this shape has two turns, not three. The claim overcounts the turns.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "No formula is printed. Three simple crossings at $-2$, $0$ and $2$, together with a half-turn about the origin, force the monic odd cubic\n\n$$\np(x) = x(x-2)(x+2) = x^{3}-4x\n$$\n\nThe dashed companion is the line $y=x$. Turning points solve $p'(x)=0$ and are not the same as axis meetings.",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20720%20420%22%20width%3D%22720%22%20height%3D%22420%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22720%22%20height%3D%22420%22%20rx%3D%2212%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22360%22%20y%3D%2228%22%20text-anchor%3D%22middle%22%20font-size%3D%2217%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3ESolid%20polynomial%3B%20dashed%20companion%3C%2Ftext%3E%0A%3Cline%20x1%3D%2272%22%20y1%3D%2244%22%20x2%3D%2272%22%20y2%3D%22364%22%20stroke%3D%22%235a534a%22%20stroke-width%3D%222%22%2F%3E%0A%3Cline%20x1%3D%2272%22%20y1%3D%22364%22%20x2%3D%22692%22%20y2%3D%22364%22%20stroke%3D%22%235a534a%22%20stroke-width%3D%222%22%2F%3E%0A%3Cline%20x1%3D%2272%22%20y1%3D%22204.0%22%20x2%3D%22692%22%20y2%3D%22204.0%22%20stroke%3D%22%238a8074%22%20stroke-width%3D%221.6%22%2F%3E%3Cline%20x1%3D%22382.0%22%20y1%3D%2244%22%20x2%3D%22382.0%22%20y2%3D%22364%22%20stroke%3D%22%238a8074%22%20stroke-width%3D%221.6%22%2F%3E%0A%0A%0A%3Cline%20x1%3D%22175.3%22%20y1%3D%22364.0%22%20x2%3D%22175.3%22%20y2%3D%22370.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22175.3%22%20y%3D%22384.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%22382.0%22%20y1%3D%22364.0%22%20x2%3D%22382.0%22%20y2%3D%22370.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22382.0%22%20y%3D%22384.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22588.7%22%20y1%3D%22364.0%22%20x2%3D%22588.7%22%20y2%3D%22370.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%22588.7%22%20y%3D%22384.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2272.0%22%20y1%3D%22310.0%22%20x2%3D%22692.0%22%20y2%3D%22310.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2266.0%22%20y1%3D%22310.0%22%20x2%3D%2272.0%22%20y2%3D%22310.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2262.0%22%20y%3D%22310.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E-10%3C%2Ftext%3E%3Cline%20x1%3D%2272.0%22%20y1%3D%22210.0%22%20x2%3D%22692.0%22%20y2%3D%22210.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2266.0%22%20y1%3D%22210.0%22%20x2%3D%2272.0%22%20y2%3D%22210.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2262.0%22%20y%3D%22210.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2272.0%22%20y1%3D%22110.0%22%20x2%3D%22692.0%22%20y2%3D%22110.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2266.0%22%20y1%3D%22110.0%22%20x2%3D%2272.0%22%20y2%3D%22110.0%22%20stroke%3D%22%235a534a%22%2F%3E%3Ctext%20x%3D%2262.0%22%20y%3D%22110.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2218%22%20font-weight%3D%22700%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3E10%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.8%22%20points%3D%2272.0%2C354.0%2073.7%2C350.2%2075.4%2C346.4%2077.2%2C342.7%2078.9%2C339.1%2080.6%2C335.5%2082.3%2C331.9%2084.1%2C328.4%2085.8%2C324.9%2087.5%2C321.5%2089.2%2C318.1%2090.9%2C314.8%2092.7%2C311.5%2094.4%2C308.3%2096.1%2C305.1%2097.8%2C302.0%2099.6%2C298.9%20101.3%2C295.8%20103.0%2C292.8%20104.7%2C289.9%20106.4%2C287.0%20108.2%2C284.1%20109.9%2C281.3%20111.6%2C278.5%20113.3%2C275.8%20115.1%2C273.1%20116.8%2C270.4%20118.5%2C267.8%20120.2%2C265.3%20121.9%2C262.7%20123.7%2C260.2%20125.4%2C257.8%20127.1%2C255.4%20128.8%2C253.1%20130.6%2C250.7%20132.3%2C248.5%20134.0%2C246.2%20135.7%2C244.0%20137.4%2C241.9%20139.2%2C239.8%20140.9%2C237.7%20142.6%2C235.7%20144.3%2C233.7%20146.1%2C231.7%20147.8%2C229.8%20149.5%2C227.9%20151.2%2C226.1%20152.9%2C224.3%20154.7%2C222.5%20156.4%2C220.7%20158.1%2C219.0%20159.8%2C217.4%20161.6%2C215.8%20163.3%2C214.2%20165.0%2C212.6%20166.7%2C211.1%20168.4%2C209.6%20170.2%2C208.2%20171.9%2C206.7%20173.6%2C205.4%20175.3%2C204.0%20177.1%2C202.7%20178.8%2C201.4%20180.5%2C200.1%20182.2%2C198.9%20183.9%2C197.7%20185.7%2C196.6%20187.4%2C195.5%20189.1%2C194.4%20190.8%2C193.3%20192.6%2C192.3%20194.3%2C191.3%20196.0%2C190.3%20197.7%2C189.4%20199.4%2C188.5%20201.2%2C187.6%20202.9%2C186.7%20204.6%2C185.9%20206.3%2C185.1%20208.1%2C184.4%20209.8%2C183.6%20211.5%2C182.9%20213.2%2C182.2%20214.9%2C181.6%20216.7%2C181.0%20218.4%2C180.4%20220.1%2C179.8%20221.8%2C179.2%20223.6%2C178.7%20225.3%2C178.2%20227.0%2C177.8%20228.7%2C177.3%20230.4%2C176.9%20232.2%2C176.5%20233.9%2C176.1%20235.6%2C175.8%20237.3%2C175.4%20239.1%2C175.1%20240.8%2C174.9%20242.5%2C174.6%20244.2%2C174.4%20245.9%2C174.2%20247.7%2C174.0%20249.4%2C173.8%20251.1%2C173.7%20252.8%2C173.5%20254.6%2C173.4%20256.3%2C173.3%20258.0%2C173.3%20259.7%2C173.2%20261.4%2C173.2%20263.2%2C173.2%20264.9%2C173.2%20266.6%2C173.3%20268.3%2C173.3%20270.1%2C173.4%20271.8%2C173.5%20273.5%2C173.6%20275.2%2C173.7%20276.9%2C173.8%20278.7%2C174.0%20280.4%2C174.2%20282.1%2C174.4%20283.8%2C174.6%20285.6%2C174.8%20287.3%2C175.0%20289.0%2C175.3%20290.7%2C175.6%20292.4%2C175.8%20294.2%2C176.1%20295.9%2C176.5%20297.6%2C176.8%20299.3%2C177.1%20301.1%2C177.5%20302.8%2C177.8%20304.5%2C178.2%20306.2%2C178.6%20307.9%2C179.0%20309.7%2C179.4%20311.4%2C179.9%20313.1%2C180.3%20314.8%2C180.7%20316.6%2C181.2%20318.3%2C181.7%20320.0%2C182.2%20321.7%2C182.7%20323.4%2C183.2%20325.2%2C183.7%20326.9%2C184.2%20328.6%2C184.7%20330.3%2C185.2%20332.1%2C185.8%20333.8%2C186.3%20335.5%2C186.9%20337.2%2C187.5%20338.9%2C188.1%20340.7%2C188.6%20342.4%2C189.2%20344.1%2C189.8%20345.8%2C190.4%20347.6%2C191.0%20349.3%2C191.7%20351.0%2C192.3%20352.7%2C192.9%20354.4%2C193.5%20356.2%2C194.2%20357.9%2C194.8%20359.6%2C195.4%20361.3%2C196.1%20363.1%2C196.7%20364.8%2C197.4%20366.5%2C198.0%20368.2%2C198.7%20369.9%2C199.3%20371.7%2C200.0%20373.4%2C200.7%20375.1%2C201.3%20376.8%2C202.0%20378.6%2C202.7%20380.3%2C203.3%20382.0%2C204.0%20383.7%2C204.7%20385.4%2C205.3%20387.2%2C206.0%20388.9%2C206.7%20390.6%2C207.3%20392.3%2C208.0%20394.1%2C208.7%20395.8%2C209.3%20397.5%2C210.0%20399.2%2C210.6%20400.9%2C211.3%20402.7%2C211.9%20404.4%2C212.6%20406.1%2C213.2%20407.8%2C213.8%20409.6%2C214.5%20411.3%2C215.1%20413.0%2C215.7%20414.7%2C216.3%20416.4%2C217.0%20418.2%2C217.6%20419.9%2C218.2%20421.6%2C218.8%20423.3%2C219.4%20425.1%2C219.9%20426.8%2C220.5%20428.5%2C221.1%20430.2%2C221.7%20431.9%2C222.2%20433.7%2C222.8%20435.4%2C223.3%20437.1%2C223.8%20438.8%2C224.3%20440.6%2C224.8%20442.3%2C225.3%20444.0%2C225.8%20445.7%2C226.3%20447.4%2C226.8%20449.2%2C227.3%20450.9%2C227.7%20452.6%2C228.1%20454.3%2C228.6%20456.1%2C229.0%20457.8%2C229.4%20459.5%2C229.8%20461.2%2C230.2%20462.9%2C230.5%20464.7%2C230.9%20466.4%2C231.2%20468.1%2C231.5%20469.8%2C231.9%20471.6%2C232.2%20473.3%2C232.4%20475.0%2C232.7%20476.7%2C233.0%20478.4%2C233.2%20480.2%2C233.4%20481.9%2C233.6%20483.6%2C233.8%20485.3%2C234.0%20487.1%2C234.2%20488.8%2C234.3%20490.5%2C234.4%20492.2%2C234.5%20493.9%2C234.6%20495.7%2C234.7%20497.4%2C234.7%20499.1%2C234.8%20500.8%2C234.8%20502.6%2C234.8%20504.3%2C234.8%20506.0%2C234.7%20507.7%2C234.7%20509.4%2C234.6%20511.2%2C234.5%20512.9%2C234.3%20514.6%2C234.2%20516.3%2C234.0%20518.1%2C233.8%20519.8%2C233.6%20521.5%2C233.4%20523.2%2C233.1%20524.9%2C232.9%20526.7%2C232.6%20528.4%2C232.2%20530.1%2C231.9%20531.8%2C231.5%20533.6%2C231.1%20535.3%2C230.7%20537.0%2C230.2%20538.7%2C229.8%20540.4%2C229.3%20542.2%2C228.8%20543.9%2C228.2%20545.6%2C227.6%20547.3%2C227.0%20549.1%2C226.4%20550.8%2C225.8%20552.5%2C225.1%20554.2%2C224.4%20555.9%2C223.6%20557.7%2C222.9%20559.4%2C222.1%20561.1%2C221.3%20562.8%2C220.4%20564.6%2C219.5%20566.3%2C218.6%20568.0%2C217.7%20569.7%2C216.7%20571.4%2C215.7%20573.2%2C214.7%20574.9%2C213.6%20576.6%2C212.5%20578.3%2C211.4%20580.1%2C210.3%20581.8%2C209.1%20583.5%2C207.9%20585.2%2C206.6%20586.9%2C205.3%20588.7%2C204.0%20590.4%2C202.6%20592.1%2C201.3%20593.8%2C199.8%20595.6%2C198.4%20597.3%2C196.9%20599.0%2C195.4%20600.7%2C193.8%20602.4%2C192.2%20604.2%2C190.6%20605.9%2C189.0%20607.6%2C187.3%20609.3%2C185.5%20611.1%2C183.7%20612.8%2C181.9%20614.5%2C180.1%20616.2%2C178.2%20617.9%2C176.3%20619.7%2C174.3%20621.4%2C172.3%20623.1%2C170.3%20624.8%2C168.2%20626.6%2C166.1%20628.3%2C164.0%20630.0%2C161.8%20631.7%2C159.5%20633.4%2C157.3%20635.2%2C154.9%20636.9%2C152.6%20638.6%2C150.2%20640.3%2C147.8%20642.1%2C145.3%20643.8%2C142.7%20645.5%2C140.2%20647.2%2C137.6%20648.9%2C134.9%20650.7%2C132.2%20652.4%2C129.5%20654.1%2C126.7%20655.8%2C123.9%20657.6%2C121.0%20659.3%2C118.1%20661.0%2C115.2%20662.7%2C112.2%20664.4%2C109.1%20666.2%2C106.0%20667.9%2C102.9%20669.6%2C99.7%20671.3%2C96.5%20673.1%2C93.2%20674.8%2C89.9%20676.5%2C86.5%20678.2%2C83.1%20679.9%2C79.6%20681.7%2C76.1%20683.4%2C72.5%20685.1%2C68.9%20686.8%2C65.3%20688.6%2C61.6%20690.3%2C57.8%20692.0%2C54.0%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%20stroke-dasharray%3D%227%205%22%20points%3D%2272.0%2C234.0%2073.7%2C233.8%2075.4%2C233.7%2077.2%2C233.5%2078.9%2C233.3%2080.6%2C233.2%2082.3%2C233.0%2084.1%2C232.8%2085.8%2C232.7%2087.5%2C232.5%2089.2%2C232.3%2090.9%2C232.2%2092.7%2C232.0%2094.4%2C231.8%2096.1%2C231.7%2097.8%2C231.5%2099.6%2C231.3%20101.3%2C231.2%20103.0%2C231.0%20104.7%2C230.8%20106.4%2C230.7%20108.2%2C230.5%20109.9%2C230.3%20111.6%2C230.2%20113.3%2C230.0%20115.1%2C229.8%20116.8%2C229.7%20118.5%2C229.5%20120.2%2C229.3%20121.9%2C229.2%20123.7%2C229.0%20125.4%2C228.8%20127.1%2C228.7%20128.8%2C228.5%20130.6%2C228.3%20132.3%2C228.2%20134.0%2C228.0%20135.7%2C227.8%20137.4%2C227.7%20139.2%2C227.5%20140.9%2C227.3%20142.6%2C227.2%20144.3%2C227.0%20146.1%2C226.8%20147.8%2C226.7%20149.5%2C226.5%20151.2%2C226.3%20152.9%2C226.2%20154.7%2C226.0%20156.4%2C225.8%20158.1%2C225.7%20159.8%2C225.5%20161.6%2C225.3%20163.3%2C225.2%20165.0%2C225.0%20166.7%2C224.8%20168.4%2C224.7%20170.2%2C224.5%20171.9%2C224.3%20173.6%2C224.2%20175.3%2C224.0%20177.1%2C223.8%20178.8%2C223.7%20180.5%2C223.5%20182.2%2C223.3%20183.9%2C223.2%20185.7%2C223.0%20187.4%2C222.8%20189.1%2C222.7%20190.8%2C222.5%20192.6%2C222.3%20194.3%2C222.2%20196.0%2C222.0%20197.7%2C221.8%20199.4%2C221.7%20201.2%2C221.5%20202.9%2C221.3%20204.6%2C221.2%20206.3%2C221.0%20208.1%2C220.8%20209.8%2C220.7%20211.5%2C220.5%20213.2%2C220.3%20214.9%2C220.2%20216.7%2C220.0%20218.4%2C219.8%20220.1%2C219.7%20221.8%2C219.5%20223.6%2C219.3%20225.3%2C219.2%20227.0%2C219.0%20228.7%2C218.8%20230.4%2C218.7%20232.2%2C218.5%20233.9%2C218.3%20235.6%2C218.2%20237.3%2C218.0%20239.1%2C217.8%20240.8%2C217.7%20242.5%2C217.5%20244.2%2C217.3%20245.9%2C217.2%20247.7%2C217.0%20249.4%2C216.8%20251.1%2C216.7%20252.8%2C216.5%20254.6%2C216.3%20256.3%2C216.2%20258.0%2C216.0%20259.7%2C215.8%20261.4%2C215.7%20263.2%2C215.5%20264.9%2C215.3%20266.6%2C215.2%20268.3%2C215.0%20270.1%2C214.8%20271.8%2C214.7%20273.5%2C214.5%20275.2%2C214.3%20276.9%2C214.2%20278.7%2C214.0%20280.4%2C213.8%20282.1%2C213.7%20283.8%2C213.5%20285.6%2C213.3%20287.3%2C213.2%20289.0%2C213.0%20290.7%2C212.8%20292.4%2C212.7%20294.2%2C212.5%20295.9%2C212.3%20297.6%2C212.2%20299.3%2C212.0%20301.1%2C211.8%20302.8%2C211.7%20304.5%2C211.5%20306.2%2C211.3%20307.9%2C211.2%20309.7%2C211.0%20311.4%2C210.8%20313.1%2C210.7%20314.8%2C210.5%20316.6%2C210.3%20318.3%2C210.2%20320.0%2C210.0%20321.7%2C209.8%20323.4%2C209.7%20325.2%2C209.5%20326.9%2C209.3%20328.6%2C209.2%20330.3%2C209.0%20332.1%2C208.8%20333.8%2C208.7%20335.5%2C208.5%20337.2%2C208.3%20338.9%2C208.2%20340.7%2C208.0%20342.4%2C207.8%20344.1%2C207.7%20345.8%2C207.5%20347.6%2C207.3%20349.3%2C207.2%20351.0%2C207.0%20352.7%2C206.8%20354.4%2C206.7%20356.2%2C206.5%20357.9%2C206.3%20359.6%2C206.2%20361.3%2C206.0%20363.1%2C205.8%20364.8%2C205.7%20366.5%2C205.5%20368.2%2C205.3%20369.9%2C205.2%20371.7%2C205.0%20373.4%2C204.8%20375.1%2C204.7%20376.8%2C204.5%20378.6%2C204.3%20380.3%2C204.2%20382.0%2C204.0%20383.7%2C203.8%20385.4%2C203.7%20387.2%2C203.5%20388.9%2C203.3%20390.6%2C203.2%20392.3%2C203.0%20394.1%2C202.8%20395.8%2C202.7%20397.5%2C202.5%20399.2%2C202.3%20400.9%2C202.2%20402.7%2C202.0%20404.4%2C201.8%20406.1%2C201.7%20407.8%2C201.5%20409.6%2C201.3%20411.3%2C201.2%20413.0%2C201.0%20414.7%2C200.8%20416.4%2C200.7%20418.2%2C200.5%20419.9%2C200.3%20421.6%2C200.2%20423.3%2C200.0%20425.1%2C199.8%20426.8%2C199.7%20428.5%2C199.5%20430.2%2C199.3%20431.9%2C199.2%20433.7%2C199.0%20435.4%2C198.8%20437.1%2C198.7%20438.8%2C198.5%20440.6%2C198.3%20442.3%2C198.2%20444.0%2C198.0%20445.7%2C197.8%20447.4%2C197.7%20449.2%2C197.5%20450.9%2C197.3%20452.6%2C197.2%20454.3%2C197.0%20456.1%2C196.8%20457.8%2C196.7%20459.5%2C196.5%20461.2%2C196.3%20462.9%2C196.2%20464.7%2C196.0%20466.4%2C195.8%20468.1%2C195.7%20469.8%2C195.5%20471.6%2C195.3%20473.3%2C195.2%20475.0%2C195.0%20476.7%2C194.8%20478.4%2C194.7%20480.2%2C194.5%20481.9%2C194.3%20483.6%2C194.2%20485.3%2C194.0%20487.1%2C193.8%20488.8%2C193.7%20490.5%2C193.5%20492.2%2C193.3%20493.9%2C193.2%20495.7%2C193.0%20497.4%2C192.8%20499.1%2C192.7%20500.8%2C192.5%20502.6%2C192.3%20504.3%2C192.2%20506.0%2C192.0%20507.7%2C191.8%20509.4%2C191.7%20511.2%2C191.5%20512.9%2C191.3%20514.6%2C191.2%20516.3%2C191.0%20518.1%2C190.8%20519.8%2C190.7%20521.5%2C190.5%20523.2%2C190.3%20524.9%2C190.2%20526.7%2C190.0%20528.4%2C189.8%20530.1%2C189.7%20531.8%2C189.5%20533.6%2C189.3%20535.3%2C189.2%20537.0%2C189.0%20538.7%2C188.8%20540.4%2C188.7%20542.2%2C188.5%20543.9%2C188.3%20545.6%2C188.2%20547.3%2C188.0%20549.1%2C187.8%20550.8%2C187.7%20552.5%2C187.5%20554.2%2C187.3%20555.9%2C187.2%20557.7%2C187.0%20559.4%2C186.8%20561.1%2C186.7%20562.8%2C186.5%20564.6%2C186.3%20566.3%2C186.2%20568.0%2C186.0%20569.7%2C185.8%20571.4%2C185.7%20573.2%2C185.5%20574.9%2C185.3%20576.6%2C185.2%20578.3%2C185.0%20580.1%2C184.8%20581.8%2C184.7%20583.5%2C184.5%20585.2%2C184.3%20586.9%2C184.2%20588.7%2C184.0%20590.4%2C183.8%20592.1%2C183.7%20593.8%2C183.5%20595.6%2C183.3%20597.3%2C183.2%20599.0%2C183.0%20600.7%2C182.8%20602.4%2C182.7%20604.2%2C182.5%20605.9%2C182.3%20607.6%2C182.2%20609.3%2C182.0%20611.1%2C181.8%20612.8%2C181.7%20614.5%2C181.5%20616.2%2C181.3%20617.9%2C181.2%20619.7%2C181.0%20621.4%2C180.8%20623.1%2C180.7%20624.8%2C180.5%20626.6%2C180.3%20628.3%2C180.2%20630.0%2C180.0%20631.7%2C179.8%20633.4%2C179.7%20635.2%2C179.5%20636.9%2C179.3%20638.6%2C179.2%20640.3%2C179.0%20642.1%2C178.8%20643.8%2C178.7%20645.5%2C178.5%20647.2%2C178.3%20648.9%2C178.2%20650.7%2C178.0%20652.4%2C177.8%20654.1%2C177.7%20655.8%2C177.5%20657.6%2C177.3%20659.3%2C177.2%20661.0%2C177.0%20662.7%2C176.8%20664.4%2C176.7%20666.2%2C176.5%20667.9%2C176.3%20669.6%2C176.2%20671.3%2C176.0%20673.1%2C175.8%20674.8%2C175.7%20676.5%2C175.5%20678.2%2C175.3%20679.9%2C175.2%20681.7%2C175.0%20683.4%2C174.8%20685.1%2C174.7%20686.8%2C174.5%20688.6%2C174.3%20690.3%2C174.2%20692.0%2C174.0%22%2F%3E%0A%3Ccircle%20cx%3D%22175.3%22%20cy%3D%22204.0%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22382.0%22%20cy%3D%22204.0%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22588.7%22%20cy%3D%22204.0%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22262.7%22%20cy%3D%22173.2%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%22501.3%22%20cy%3D%22234.8%22%20r%3D%225.5%22%20fill%3D%22%238B5A2B%22%20stroke%3D%22%23fff6ea%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Ctext%20x%3D%22360%22%20y%3D%22408%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2218%22%20y%3D%22204%22%20text-anchor%3D%22middle%22%20font-size%3D%2215%22%20font-weight%3D%22600%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%231a1a1a%22%20transform%3D%22rotate%28-90%2018%20204%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "case_id": "MATH 10.MOCK.COOL",
+      "id": "MATH 10.MOCK.COOL",
+      "title": "Newton cooling chained with deposit doubling and a rate cut",
+      "chapter": 10,
+      "subsection": "10.3",
+      "context": "A cup of coffee cools in a room at $20^{\\circ}\\mathrm{C}$. At time $t=0$ the coffee is at $90^{\\circ}\\mathrm{C}$, and after $5$ minutes it is at $60^{\\circ}\\mathrm{C}$. Newton’s law of cooling says\n\n$$\nT(t)-20=\\bigl(T(0)-20\\bigr)e^{-kt}\n$$\n\nfor some constant $k>0$.\n\nSeparately, a savings balance of $€8{,}000$ is compounded once per year at $4.5\\%$ effective annual interest.",
+      "statements": [
+        "The cooling constant satisfies $k>0.11$.",
+        "The coffee first falls below $35^{\\circ}\\mathrm{C}$ at some time $t<12$ minutes.",
+        "Writing the annual growth as $e^{\\delta}$, the continuous force $\\delta$ is smaller than $0.044$.",
+        "At $4.5\\%$ effective annual interest the $€8{,}000$ balance doubles in fewer than $16$ years.",
+        "If the rate falls to $3\\%$ after $3$ years, the balance first exceeds $€11{,}000$ at some $t>7$ (years from the start)."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFrom $T(5)=60$,\n\n$$\n\\dfrac{60-20}{90-20}=\\dfrac{40}{70}=\\dfrac{4}{7}=e^{-5k}\n$$\n\n$$\nk=-\\dfrac{1}{5}\\ln\\dfrac{4}{7}=\\dfrac{1}{5}\\ln\\dfrac{7}{4}\\approx\\dfrac{1}{5}\\cdot 0.55962\\approx 0.11192\n$$\n\n$$\n0.11192>0.11\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nRequire $T(t)=35$:\n\n$$\n\\dfrac{35-20}{90-20}=\\dfrac{15}{70}=\\dfrac{3}{14}=e^{-kt}\n$$\n\n$$\nt=-\\dfrac{1}{k}\\ln\\dfrac{3}{14}\\approx\\dfrac{1.54045}{0.11192}\\approx 13.76\n$$\n\n$$\n13.76\\not< 12\n$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\ne^{\\delta}=1.045\\qquad\\Rightarrow\\qquad \\delta=\\ln 1.045\\approx 0.044017\n$$\n\n$$\n0.044017\\not< 0.044\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nDoubling time at $4.5\\%$ annual compounding:\n\n$$\n(1.045)^{n}=2\\qquad\\Rightarrow\\qquad n=\\dfrac{\\ln 2}{\\ln 1.045}\\approx\\dfrac{0.693147}{0.044017}\\approx 15.75\n$$\n\n$$\n15.75<16\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\nAfter three years at $4.5\\%$:\n\n$$\n8{,}000\\cdot 1.045^{3}\\approx 8{,}000\\cdot 1.14117\\approx 9{,}129.3\n$$\n\nThen at $3\\%$:\n\n$$\n9{,}129.3\\cdot 1.03^{m}=11{,}000\\qquad\\Rightarrow\\qquad 1.03^{m}\\approx 1.2049\n$$\n\n$$\nm=\\dfrac{\\ln 1.2049}{\\ln 1.03}\\approx 6.31\n$$\n\n$$\nt=3+6.31\\approx 9.31>7\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Recover $k$ from one cooling observation, solve later temperatures with logarithms, convert the effective annual rate to a continuous force via $\\ln(1+i)$, and for the piecewise deposit solve the second stage after compounding the first three years."
+    },
+    {
+      "case_id": "MATH 11.156",
+      "id": "math-11-156",
+      "title": "Three firms' marginal profits: signs, peaks, and advice",
+      "chapter": 11,
+      "subsection": "11.4",
+      "context": "Brown, green, and purple are three firms' marginal profits on shared axes. Decide TRUE or FALSE.",
+      "statements": [
+        "At $x=3$, brown and purple are above the axis while green is below it.",
+        "Firm A (brown) has a local profit peak near $x=5$.",
+        "At $x=0$, brown is already positive.",
+        "Purple crosses from positive to negative somewhere in $(4,5)$.",
+        "All three firms have the same expand/contract recommendation at every $x$ in $(0,6)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nBrown, green, and purple are three firms' marginal profits. At $x=3$, brown and purple sit above the axis while green sits below it.\n\n$$\nP_{\\text{brown}}'(3)>0\n$$\n\n$$\nP_{\\text{purple}}'(3)>0\n$$\n\n$$\nP_{\\text{green}}'(3)<0\n$$\n\nso the sign reading matches the claim, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+        "**B.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nFirm A (brown) has a local profit peak where its marginal profit changes from $+$ to $-$. On the figure that crossing occurs near $x=5$:\n\n$$\nP_{\\text{brown}}'\\text{ changes }+\\to-\\text{ near }x = 5\n$$\n\nso firm A has a local profit peak near $x=5$, and the statement is True.\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\n$$\nx = 5\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nAt $x=0$ the brown curve starts at or below the axis, not already positive. Reading the left edge, brown is not above the axis at the start.\n\n$$\nP_{\\text{brown}}'(0)\\not>0\n$$\n\nso the claim that brown is already positive at $x=0$ is wrong, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 0\n$$\n\nwhich does not match the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nOn the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.\n\nThe purple curve sits above the axis in the mid-window and then crosses below it somewhere in $(4,5)$:\n\n$$\nP_{\\text{purple}}'\\text{ changes }+\\to-\\text{ in }(4,5)\n$$\n\nThat crossing is visible on the figure\n\nPutting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.\n\nSo the statement is True.",
+        "**E.** → False\n\nMarginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.\n\nExpand/contract advice is the sign of each firm's marginal profit. At $x=3$, brown and purple are positive while green is negative:\n\n$$\n\\text{signs disagree at }x = 3\n$$\n\nso the three firms do not share the same recommendation on $(0,6)$, and the statement is False.\n\nOnce that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.\n\n$$\nx = 3\n$$\n\nwhich does not match the claim.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Brown, green, and purple are three firms' marginal profits on shared axes. At $x=3$ brown and purple sit above the axis while green sits below — opposite expand/contract advice. Brown starts below the axis at $x=0$ and only becomes positive after $x=1$; it later crosses from $+$ to $-$ near $x=5$, so firm A has a local profit peak there. Purple crosses from positive to negative somewhere in $(4,5)$. Because signs disagree at even one $x$ (e.g. $x=3$), the three firms do not share one expand/contract recommendation on the whole of $(0,6)$.",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThree%20marginal-profit%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-3806376%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22228.0%22%20x2%3D%22506.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22228.0%22%20x2%3D%2252.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2278.0%22%20x2%3D%22506.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2278.0%22%20x2%3D%2252.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2278.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C374.0%2053.4%2C370.6%2054.8%2C367.3%2056.3%2C364.0%2057.7%2C360.7%2059.1%2C357.4%2060.5%2C354.1%2061.9%2C350.9%2063.4%2C347.7%2064.8%2C344.5%2066.2%2C341.3%2067.6%2C338.2%2069.0%2C335.0%2070.4%2C331.9%2071.9%2C328.8%2073.3%2C325.7%2074.7%2C322.7%2076.1%2C319.7%2077.5%2C316.7%2079.0%2C313.7%2080.4%2C310.7%2081.8%2C307.8%2083.2%2C304.9%2084.6%2C302.0%2086.0%2C299.1%2087.5%2C296.2%2088.9%2C293.4%2090.3%2C290.6%2091.7%2C287.8%2093.1%2C285.0%2094.6%2C282.2%2096.0%2C279.5%2097.4%2C276.8%2098.8%2C274.1%20100.2%2C271.4%20101.7%2C268.8%20103.1%2C266.2%20104.5%2C263.6%20105.9%2C261.0%20107.3%2C258.4%20108.8%2C255.9%20110.2%2C253.4%20111.6%2C250.9%20113.0%2C248.4%20114.4%2C245.9%20115.8%2C243.5%20117.3%2C241.1%20118.7%2C238.7%20120.1%2C236.3%20121.5%2C233.9%20122.9%2C231.6%20124.4%2C229.3%20125.8%2C227.0%20127.2%2C224.8%20128.6%2C222.5%20130.0%2C220.3%20131.4%2C218.1%20132.9%2C215.9%20134.3%2C213.7%20135.7%2C211.6%20137.1%2C209.5%20138.5%2C207.4%20140.0%2C205.3%20141.4%2C203.2%20142.8%2C201.2%20144.2%2C199.2%20145.6%2C197.2%20147.1%2C195.2%20148.5%2C193.3%20149.9%2C191.3%20151.3%2C189.4%20152.7%2C187.5%20154.2%2C185.7%20155.6%2C183.8%20157.0%2C182.0%20158.4%2C180.2%20159.8%2C178.4%20161.2%2C176.7%20162.7%2C174.9%20164.1%2C173.2%20165.5%2C171.5%20166.9%2C169.8%20168.3%2C168.2%20169.8%2C166.5%20171.2%2C164.9%20172.6%2C163.3%20174.0%2C161.8%20175.4%2C160.2%20176.8%2C158.7%20178.3%2C157.2%20179.7%2C155.7%20181.1%2C154.2%20182.5%2C152.8%20183.9%2C151.3%20185.4%2C149.9%20186.8%2C148.6%20188.2%2C147.2%20189.6%2C145.9%20191.0%2C144.5%20192.5%2C143.2%20193.9%2C142.0%20195.3%2C140.7%20196.7%2C139.5%20198.1%2C138.3%20199.6%2C137.1%20201.0%2C135.9%20202.4%2C134.8%20203.8%2C133.6%20205.2%2C132.5%20206.6%2C131.4%20208.1%2C130.4%20209.5%2C129.3%20210.9%2C128.3%20212.3%2C127.3%20213.7%2C126.3%20215.2%2C125.4%20216.6%2C124.4%20218.0%2C123.5%20219.4%2C122.6%20220.8%2C121.7%20222.2%2C120.9%20223.7%2C120.0%20225.1%2C119.2%20226.5%2C118.4%20227.9%2C117.7%20229.3%2C116.9%20230.8%2C116.2%20232.2%2C115.5%20233.6%2C114.8%20235.0%2C114.1%20236.4%2C113.5%20237.9%2C112.9%20239.3%2C112.3%20240.7%2C111.7%20242.1%2C111.1%20243.5%2C110.6%20244.9%2C110.1%20246.4%2C109.6%20247.8%2C109.1%20249.2%2C108.7%20250.6%2C108.2%20252.0%2C107.8%20253.5%2C107.4%20254.9%2C107.0%20256.3%2C106.7%20257.7%2C106.4%20259.1%2C106.1%20260.6%2C105.8%20262.0%2C105.5%20263.4%2C105.3%20264.8%2C105.1%20266.2%2C104.9%20267.6%2C104.7%20269.1%2C104.5%20270.5%2C104.4%20271.9%2C104.3%20273.3%2C104.2%20274.7%2C104.1%20276.2%2C104.0%20277.6%2C104.0%20279.0%2C104.0%20280.4%2C104.0%20281.8%2C104.0%20283.3%2C104.1%20284.7%2C104.2%20286.1%2C104.3%20287.5%2C104.4%20288.9%2C104.5%20290.4%2C104.7%20291.8%2C104.9%20293.2%2C105.1%20294.6%2C105.3%20296.0%2C105.5%20297.4%2C105.8%20298.9%2C106.1%20300.3%2C106.4%20301.7%2C106.7%20303.1%2C107.0%20304.5%2C107.4%20306.0%2C107.8%20307.4%2C108.2%20308.8%2C108.7%20310.2%2C109.1%20311.6%2C109.6%20313.1%2C110.1%20314.5%2C110.6%20315.9%2C111.1%20317.3%2C111.7%20318.7%2C112.3%20320.1%2C112.9%20321.6%2C113.5%20323.0%2C114.1%20324.4%2C114.8%20325.8%2C115.5%20327.2%2C116.2%20328.7%2C116.9%20330.1%2C117.7%20331.5%2C118.4%20332.9%2C119.2%20334.3%2C120.0%20335.8%2C120.9%20337.2%2C121.7%20338.6%2C122.6%20340.0%2C123.5%20341.4%2C124.4%20342.8%2C125.4%20344.3%2C126.3%20345.7%2C127.3%20347.1%2C128.3%20348.5%2C129.3%20349.9%2C130.4%20351.4%2C131.4%20352.8%2C132.5%20354.2%2C133.6%20355.6%2C134.8%20357.0%2C135.9%20358.4%2C137.1%20359.9%2C138.3%20361.3%2C139.5%20362.7%2C140.7%20364.1%2C142.0%20365.5%2C143.2%20367.0%2C144.5%20368.4%2C145.9%20369.8%2C147.2%20371.2%2C148.6%20372.6%2C149.9%20374.1%2C151.3%20375.5%2C152.8%20376.9%2C154.2%20378.3%2C155.7%20379.7%2C157.2%20381.1%2C158.7%20382.6%2C160.2%20384.0%2C161.8%20385.4%2C163.3%20386.8%2C164.9%20388.2%2C166.5%20389.7%2C168.2%20391.1%2C169.8%20392.5%2C171.5%20393.9%2C173.2%20395.3%2C174.9%20396.8%2C176.7%20398.2%2C178.4%20399.6%2C180.2%20401.0%2C182.0%20402.4%2C183.8%20403.9%2C185.7%20405.3%2C187.5%20406.7%2C189.4%20408.1%2C191.3%20409.5%2C193.3%20410.9%2C195.2%20412.4%2C197.2%20413.8%2C199.2%20415.2%2C201.2%20416.6%2C203.2%20418.0%2C205.3%20419.5%2C207.4%20420.9%2C209.5%20422.3%2C211.6%20423.7%2C213.7%20425.1%2C215.9%20426.6%2C218.1%20428.0%2C220.3%20429.4%2C222.5%20430.8%2C224.8%20432.2%2C227.0%20433.6%2C229.3%20435.1%2C231.6%20436.5%2C233.9%20437.9%2C236.3%20439.3%2C238.7%20440.7%2C241.1%20442.2%2C243.5%20443.6%2C245.9%20445.0%2C248.4%20446.4%2C250.9%20447.8%2C253.4%20449.2%2C255.9%20450.7%2C258.4%20452.1%2C261.0%20453.5%2C263.6%20454.9%2C266.2%20456.3%2C268.8%20457.8%2C271.4%20459.2%2C274.1%20460.6%2C276.8%20462.0%2C279.5%20463.4%2C282.2%20464.9%2C285.0%20466.3%2C287.8%20467.7%2C290.6%20469.1%2C293.4%20470.5%2C296.2%20471.9%2C299.1%20473.4%2C302.0%20474.8%2C304.9%20476.2%2C307.8%20477.6%2C310.7%20479.0%2C313.7%20480.5%2C316.7%20481.9%2C319.7%20483.3%2C322.7%20484.7%2C325.7%20486.1%2C328.8%20487.6%2C331.9%20489.0%2C335.0%20490.4%2C338.2%20491.8%2C341.3%20493.2%2C344.5%20494.6%2C347.7%20496.1%2C350.9%20497.5%2C354.1%20498.9%2C357.4%20500.3%2C360.7%20501.7%2C364.0%20503.2%2C367.3%20504.6%2C370.6%20506.0%2C374.0%22%20clip-path%3D%22url%28%23clip-3806376%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-16.0%2053.4%2C-12.6%2054.8%2C-9.3%2056.3%2C-6.0%2057.7%2C-2.7%2059.1%2C0.6%2060.5%2C3.9%2061.9%2C7.1%2063.4%2C10.3%2064.8%2C13.5%2066.2%2C16.7%2067.6%2C19.8%2069.0%2C23.0%2070.4%2C26.1%2071.9%2C29.2%2073.3%2C32.3%2074.7%2C35.3%2076.1%2C38.3%2077.5%2C41.3%2079.0%2C44.3%2080.4%2C47.3%2081.8%2C50.2%2083.2%2C53.1%2084.6%2C56.0%2086.0%2C58.9%2087.5%2C61.8%2088.9%2C64.6%2090.3%2C67.4%2091.7%2C70.2%2093.1%2C73.0%2094.6%2C75.8%2096.0%2C78.5%2097.4%2C81.2%2098.8%2C83.9%20100.2%2C86.6%20101.7%2C89.2%20103.1%2C91.8%20104.5%2C94.4%20105.9%2C97.0%20107.3%2C99.6%20108.8%2C102.1%20110.2%2C104.6%20111.6%2C107.1%20113.0%2C109.6%20114.4%2C112.1%20115.8%2C114.5%20117.3%2C116.9%20118.7%2C119.3%20120.1%2C121.7%20121.5%2C124.1%20122.9%2C126.4%20124.4%2C128.7%20125.8%2C131.0%20127.2%2C133.2%20128.6%2C135.5%20130.0%2C137.7%20131.4%2C139.9%20132.9%2C142.1%20134.3%2C144.3%20135.7%2C146.4%20137.1%2C148.5%20138.5%2C150.6%20140.0%2C152.7%20141.4%2C154.8%20142.8%2C156.8%20144.2%2C158.8%20145.6%2C160.8%20147.1%2C162.8%20148.5%2C164.7%20149.9%2C166.7%20151.3%2C168.6%20152.7%2C170.5%20154.2%2C172.3%20155.6%2C174.2%20157.0%2C176.0%20158.4%2C177.8%20159.8%2C179.6%20161.2%2C181.3%20162.7%2C183.1%20164.1%2C184.8%20165.5%2C186.5%20166.9%2C188.2%20168.3%2C189.8%20169.8%2C191.5%20171.2%2C193.1%20172.6%2C194.7%20174.0%2C196.2%20175.4%2C197.8%20176.8%2C199.3%20178.3%2C200.8%20179.7%2C202.3%20181.1%2C203.8%20182.5%2C205.2%20183.9%2C206.7%20185.4%2C208.1%20186.8%2C209.4%20188.2%2C210.8%20189.6%2C212.1%20191.0%2C213.5%20192.5%2C214.8%20193.9%2C216.0%20195.3%2C217.3%20196.7%2C218.5%20198.1%2C219.7%20199.6%2C220.9%20201.0%2C222.1%20202.4%2C223.2%20203.8%2C224.4%20205.2%2C225.5%20206.6%2C226.6%20208.1%2C227.6%20209.5%2C228.7%20210.9%2C229.7%20212.3%2C230.7%20213.7%2C231.7%20215.2%2C232.6%20216.6%2C233.6%20218.0%2C234.5%20219.4%2C235.4%20220.8%2C236.3%20222.2%2C237.1%20223.7%2C238.0%20225.1%2C238.8%20226.5%2C239.6%20227.9%2C240.3%20229.3%2C241.1%20230.8%2C241.8%20232.2%2C242.5%20233.6%2C243.2%20235.0%2C243.9%20236.4%2C244.5%20237.9%2C245.1%20239.3%2C245.7%20240.7%2C246.3%20242.1%2C246.9%20243.5%2C247.4%20244.9%2C247.9%20246.4%2C248.4%20247.8%2C248.9%20249.2%2C249.3%20250.6%2C249.8%20252.0%2C250.2%20253.5%2C250.6%20254.9%2C251.0%20256.3%2C251.3%20257.7%2C251.6%20259.1%2C251.9%20260.6%2C252.2%20262.0%2C252.5%20263.4%2C252.7%20264.8%2C252.9%20266.2%2C253.1%20267.6%2C253.3%20269.1%2C253.5%20270.5%2C253.6%20271.9%2C253.7%20273.3%2C253.8%20274.7%2C253.9%20276.2%2C254.0%20277.6%2C254.0%20279.0%2C254.0%20280.4%2C254.0%20281.8%2C254.0%20283.3%2C253.9%20284.7%2C253.8%20286.1%2C253.7%20287.5%2C253.6%20288.9%2C253.5%20290.4%2C253.3%20291.8%2C253.1%20293.2%2C252.9%20294.6%2C252.7%20296.0%2C252.5%20297.4%2C252.2%20298.9%2C251.9%20300.3%2C251.6%20301.7%2C251.3%20303.1%2C251.0%20304.5%2C250.6%20306.0%2C250.2%20307.4%2C249.8%20308.8%2C249.3%20310.2%2C248.9%20311.6%2C248.4%20313.1%2C247.9%20314.5%2C247.4%20315.9%2C246.9%20317.3%2C246.3%20318.7%2C245.7%20320.1%2C245.1%20321.6%2C244.5%20323.0%2C243.9%20324.4%2C243.2%20325.8%2C242.5%20327.2%2C241.8%20328.7%2C241.1%20330.1%2C240.3%20331.5%2C239.6%20332.9%2C238.8%20334.3%2C238.0%20335.8%2C237.1%20337.2%2C236.3%20338.6%2C235.4%20340.0%2C234.5%20341.4%2C233.6%20342.8%2C232.6%20344.3%2C231.7%20345.7%2C230.7%20347.1%2C229.7%20348.5%2C228.7%20349.9%2C227.6%20351.4%2C226.6%20352.8%2C225.5%20354.2%2C224.4%20355.6%2C223.2%20357.0%2C222.1%20358.4%2C220.9%20359.9%2C219.7%20361.3%2C218.5%20362.7%2C217.3%20364.1%2C216.0%20365.5%2C214.8%20367.0%2C213.5%20368.4%2C212.1%20369.8%2C210.8%20371.2%2C209.4%20372.6%2C208.1%20374.1%2C206.7%20375.5%2C205.2%20376.9%2C203.8%20378.3%2C202.3%20379.7%2C200.8%20381.1%2C199.3%20382.6%2C197.8%20384.0%2C196.2%20385.4%2C194.7%20386.8%2C193.1%20388.2%2C191.5%20389.7%2C189.8%20391.1%2C188.2%20392.5%2C186.5%20393.9%2C184.8%20395.3%2C183.1%20396.8%2C181.3%20398.2%2C179.6%20399.6%2C177.8%20401.0%2C176.0%20402.4%2C174.2%20403.9%2C172.3%20405.3%2C170.5%20406.7%2C168.6%20408.1%2C166.7%20409.5%2C164.7%20410.9%2C162.8%20412.4%2C160.8%20413.8%2C158.8%20415.2%2C156.8%20416.6%2C154.8%20418.0%2C152.7%20419.5%2C150.6%20420.9%2C148.5%20422.3%2C146.4%20423.7%2C144.3%20425.1%2C142.1%20426.6%2C139.9%20428.0%2C137.7%20429.4%2C135.5%20430.8%2C133.2%20432.2%2C131.0%20433.6%2C128.7%20435.1%2C126.4%20436.5%2C124.1%20437.9%2C121.7%20439.3%2C119.3%20440.7%2C116.9%20442.2%2C114.5%20443.6%2C112.1%20445.0%2C109.6%20446.4%2C107.1%20447.8%2C104.6%20449.2%2C102.1%20450.7%2C99.6%20452.1%2C97.0%20453.5%2C94.4%20454.9%2C91.8%20456.3%2C89.2%20457.8%2C86.6%20459.2%2C83.9%20460.6%2C81.2%20462.0%2C78.5%20463.4%2C75.8%20464.9%2C73.0%20466.3%2C70.2%20467.7%2C67.4%20469.1%2C64.6%20470.5%2C61.8%20471.9%2C58.9%20473.4%2C56.0%20474.8%2C53.1%20476.2%2C50.2%20477.6%2C47.3%20479.0%2C44.3%20480.5%2C41.3%20481.9%2C38.3%20483.3%2C35.3%20484.7%2C32.3%20486.1%2C29.2%20487.6%2C26.1%20489.0%2C23.0%20490.4%2C19.8%20491.8%2C16.7%20493.2%2C13.5%20494.6%2C10.3%20496.1%2C7.1%20497.5%2C3.9%20498.9%2C0.6%20500.3%2C-2.7%20501.7%2C-6.0%20503.2%2C-9.3%20504.6%2C-12.6%20506.0%2C-16.0%22%20clip-path%3D%22url%28%23clip-3806376%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C149.0%2053.4%2C149.3%2054.8%2C149.7%2056.3%2C150.0%2057.7%2C150.3%2059.1%2C150.7%2060.5%2C151.0%2061.9%2C151.4%2063.4%2C151.7%2064.8%2C152.0%2066.2%2C152.4%2067.6%2C152.7%2069.0%2C153.1%2070.4%2C153.4%2071.9%2C153.7%2073.3%2C154.1%2074.7%2C154.4%2076.1%2C154.7%2077.5%2C155.1%2079.0%2C155.4%2080.4%2C155.8%2081.8%2C156.1%2083.2%2C156.4%2084.6%2C156.8%2086.0%2C157.1%2087.5%2C157.4%2088.9%2C157.8%2090.3%2C158.1%2091.7%2C158.4%2093.1%2C158.8%2094.6%2C159.1%2096.0%2C159.5%2097.4%2C159.8%2098.8%2C160.1%20100.2%2C160.5%20101.7%2C160.8%20103.1%2C161.2%20104.5%2C161.5%20105.9%2C161.8%20107.3%2C162.2%20108.8%2C162.5%20110.2%2C162.8%20111.6%2C163.2%20113.0%2C163.5%20114.4%2C163.9%20115.8%2C164.2%20117.3%2C164.5%20118.7%2C164.9%20120.1%2C165.2%20121.5%2C165.5%20122.9%2C165.9%20124.4%2C166.2%20125.8%2C166.6%20127.2%2C166.9%20128.6%2C167.2%20130.0%2C167.6%20131.4%2C167.9%20132.9%2C168.2%20134.3%2C168.6%20135.7%2C168.9%20137.1%2C169.2%20138.5%2C169.6%20140.0%2C169.9%20141.4%2C170.3%20142.8%2C170.6%20144.2%2C170.9%20145.6%2C171.3%20147.1%2C171.6%20148.5%2C171.9%20149.9%2C172.3%20151.3%2C172.6%20152.7%2C173.0%20154.2%2C173.3%20155.6%2C173.6%20157.0%2C174.0%20158.4%2C174.3%20159.8%2C174.7%20161.2%2C175.0%20162.7%2C175.3%20164.1%2C175.7%20165.5%2C176.0%20166.9%2C176.3%20168.3%2C176.7%20169.8%2C177.0%20171.2%2C177.3%20172.6%2C177.7%20174.0%2C178.0%20175.4%2C178.4%20176.8%2C178.7%20178.3%2C179.0%20179.7%2C179.4%20181.1%2C179.7%20182.5%2C180.1%20183.9%2C180.4%20185.4%2C180.7%20186.8%2C181.1%20188.2%2C181.4%20189.6%2C181.7%20191.0%2C182.1%20192.5%2C182.4%20193.9%2C182.8%20195.3%2C183.1%20196.7%2C183.4%20198.1%2C183.8%20199.6%2C184.1%20201.0%2C184.4%20202.4%2C184.8%20203.8%2C185.1%20205.2%2C185.4%20206.6%2C185.8%20208.1%2C186.1%20209.5%2C186.5%20210.9%2C186.8%20212.3%2C187.1%20213.7%2C187.5%20215.2%2C187.8%20216.6%2C188.2%20218.0%2C188.5%20219.4%2C188.8%20220.8%2C189.2%20222.2%2C189.5%20223.7%2C189.8%20225.1%2C190.2%20226.5%2C190.5%20227.9%2C190.8%20229.3%2C191.2%20230.8%2C191.5%20232.2%2C191.9%20233.6%2C192.2%20235.0%2C192.5%20236.4%2C192.9%20237.9%2C193.2%20239.3%2C193.6%20240.7%2C193.9%20242.1%2C194.2%20243.5%2C194.6%20244.9%2C194.9%20246.4%2C195.2%20247.8%2C195.6%20249.2%2C195.9%20250.6%2C196.3%20252.0%2C196.6%20253.5%2C196.9%20254.9%2C197.3%20256.3%2C197.6%20257.7%2C197.9%20259.1%2C198.3%20260.6%2C198.6%20262.0%2C198.9%20263.4%2C199.3%20264.8%2C199.6%20266.2%2C200.0%20267.6%2C200.3%20269.1%2C200.6%20270.5%2C201.0%20271.9%2C201.3%20273.3%2C201.6%20274.7%2C202.0%20276.2%2C202.3%20277.6%2C202.7%20279.0%2C203.0%20280.4%2C203.3%20281.8%2C203.7%20283.3%2C204.0%20284.7%2C204.3%20286.1%2C204.7%20287.5%2C205.0%20288.9%2C205.4%20290.4%2C205.7%20291.8%2C206.0%20293.2%2C206.4%20294.6%2C206.7%20296.0%2C207.1%20297.4%2C207.4%20298.9%2C207.7%20300.3%2C208.1%20301.7%2C208.4%20303.1%2C208.7%20304.5%2C209.1%20306.0%2C209.4%20307.4%2C209.8%20308.8%2C210.1%20310.2%2C210.4%20311.6%2C210.8%20313.1%2C211.1%20314.5%2C211.4%20315.9%2C211.8%20317.3%2C212.1%20318.7%2C212.4%20320.1%2C212.8%20321.6%2C213.1%20323.0%2C213.5%20324.4%2C213.8%20325.8%2C214.1%20327.2%2C214.5%20328.7%2C214.8%20330.1%2C215.2%20331.5%2C215.5%20332.9%2C215.8%20334.3%2C216.2%20335.8%2C216.5%20337.2%2C216.8%20338.6%2C217.2%20340.0%2C217.5%20341.4%2C217.8%20342.8%2C218.2%20344.3%2C218.5%20345.7%2C218.9%20347.1%2C219.2%20348.5%2C219.5%20349.9%2C219.9%20351.4%2C220.2%20352.8%2C220.6%20354.2%2C220.9%20355.6%2C221.2%20357.0%2C221.6%20358.4%2C221.9%20359.9%2C222.2%20361.3%2C222.6%20362.7%2C222.9%20364.1%2C223.2%20365.5%2C223.6%20367.0%2C223.9%20368.4%2C224.3%20369.8%2C224.6%20371.2%2C224.9%20372.6%2C225.3%20374.1%2C225.6%20375.5%2C225.9%20376.9%2C226.3%20378.3%2C226.6%20379.7%2C227.0%20381.1%2C227.3%20382.6%2C227.6%20384.0%2C228.0%20385.4%2C228.3%20386.8%2C228.6%20388.2%2C229.0%20389.7%2C229.3%20391.1%2C229.7%20392.5%2C230.0%20393.9%2C230.3%20395.3%2C230.7%20396.8%2C231.0%20398.2%2C231.4%20399.6%2C231.7%20401.0%2C232.0%20402.4%2C232.4%20403.9%2C232.7%20405.3%2C233.0%20406.7%2C233.4%20408.1%2C233.7%20409.5%2C234.0%20410.9%2C234.4%20412.4%2C234.7%20413.8%2C235.1%20415.2%2C235.4%20416.6%2C235.7%20418.0%2C236.1%20419.5%2C236.4%20420.9%2C236.8%20422.3%2C237.1%20423.7%2C237.4%20425.1%2C237.8%20426.6%2C238.1%20428.0%2C238.4%20429.4%2C238.8%20430.8%2C239.1%20432.2%2C239.5%20433.6%2C239.8%20435.1%2C240.1%20436.5%2C240.5%20437.9%2C240.8%20439.3%2C241.1%20440.7%2C241.5%20442.2%2C241.8%20443.6%2C242.2%20445.0%2C242.5%20446.4%2C242.8%20447.8%2C243.2%20449.2%2C243.5%20450.7%2C243.8%20452.1%2C244.2%20453.5%2C244.5%20454.9%2C244.8%20456.3%2C245.2%20457.8%2C245.5%20459.2%2C245.9%20460.6%2C246.2%20462.0%2C246.5%20463.4%2C246.9%20464.9%2C247.2%20466.3%2C247.6%20467.7%2C247.9%20469.1%2C248.2%20470.5%2C248.6%20471.9%2C248.9%20473.4%2C249.2%20474.8%2C249.6%20476.2%2C249.9%20477.6%2C250.2%20479.0%2C250.6%20480.5%2C250.9%20481.9%2C251.3%20483.3%2C251.6%20484.7%2C251.9%20486.1%2C252.3%20487.6%2C252.6%20489.0%2C252.9%20490.4%2C253.3%20491.8%2C253.6%20493.2%2C254.0%20494.6%2C254.3%20496.1%2C254.6%20497.5%2C255.0%20498.9%2C255.3%20500.3%2C255.7%20501.7%2C256.0%20503.2%2C256.3%20504.6%2C256.7%20506.0%2C257.0%22%20clip-path%3D%22url%28%23clip-3806376%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2_A%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2_B%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2_C%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "case_id": "MATH 12.186",
+      "id": "math-12-186",
+      "title": "Two Clues and Three Suspects",
+      "chapter": 12,
+      "subsection": "12.5",
+      "context": "A wildlife tracker suspects one of three animals is active in an area: Coyote (50% prior probability), Fox (30%), or Bobcat (20%). Given the species, the probability of leaving a large paw print is 70% for Coyote, 20% for Fox, and 55% for Bobcat; independently, the probability that any scat found contains fur is 60% for Coyote, 80% for Fox, and 40% for Bobcat. At the site, the tracker finds BOTH a large paw print AND fur-containing scat (assume these two clues are independent of each other once you know the species).",
+      "statements": [
+        "The probability that both clues are found, overall is greater than 25%.",
+        "The probability that the species is Coyote AND both clues are found equals 21%.",
+        "The probability that the species is Coyote, given both clues are found is greater than 75%.",
+        "The probability that at least one of the two clues is absent equals 1 minus the probability that both clues are found.",
+        "The probability that the species is Fox, given both clues are found is greater than the probability that the species is Bobcat, given both clues are found."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe probability of finding both clues, $P(P \\cap S)$, is calculated using the Law of Total Probability over the three species. The overall probability of observing both clues is:\n\n$$\nP(P \\cap S) = 0.302\n$$\n\n.\n\nSo the statement is True.\n",
+        "**B.** → True\n\nThe probability that the species is Coyote AND both clues are found is a joint probability, $P(C \\cap P \\cap S)$. This is found by multiplying the prior probability of Coyote by the conditional probability of finding both clues given that it's a Coyote.\n\n$$\nP(C \\cap P \\cap S) = P(C) \\cdot P(P \\cap S \\mid C)\n$$\n\n$$\nP(C \\cap P \\cap S) = (0.50)(0.42)\n$$\n\n$$\nP(C \\cap P \\cap S) = 0.21\n$$\n\n.\n\nSo the statement is True.\n",
+        "**C.** → False\n\nThe probability that the species is Coyote, given that both clues are found, is a posterior probability $P(C \\mid P \\cap S)$. We use Bayes' Theorem to calculate this:\n\n$$\nP(C \\mid P \\cap S) = \\frac{P(C \\cap P \\cap S)}{P(P \\cap S)}\n$$\n\nThe joint probability $P(C \\cap P \\cap S)$ is $0.21$, and the overall probability of both clues $P(P \\cap S)$ is $0.302$.\n\n$$\nP(C \\mid P \\cap S) = \\frac{0.21}{0.302}\n$$\n\n$$\nP(C \\mid P \\cap S) \\approx 0.69536\n$$\n\n.\n\nSo the statement is False.\n",
+        "**D.** → True\n\nThe event \"at least one of the two clues is absent\" describes the complement of the event \"both clues are found\". If $A$ is the event that both clues are found, then $A^c$ is the event that at least one clue is absent. The sum of probabilities for an event and its complement is $1$.\n\n$$\nP(A^c) = 1 - P(A)\n$$\n\nTherefore, $P(\\text{at least one clue is absent}) = 1 - P(\\text{both clues are found})$.\n\nSo the statement is True.\n",
+        "**E.** → True\n\nTo compare $P(F \\mid P \\cap S)$ and $P(B \\mid P \\cap S)$, we use Bayes' Theorem for each. The denominator $P(P \\cap S) = 0.302$ is the same for both calculations.\n\nFor the probability that the species is Fox, given both clues:\n\n$$\nP(F \\mid P \\cap S) = \\frac{P(F \\cap P \\cap S)}{P(P \\cap S)}\n$$\n\nThe joint probability for Fox is $P(F \\cap P \\cap S) = P(F) \\cdot P(P \\cap S \\mid F) = (0.30)(0.16) = 0.048$.\n\n$$\nP(F \\mid P \\cap S) = \\frac{0.048}{0.302}\n$$\n\n$$\nP(F \\mid P \\cap S) \\approx 0.15894\n$$\n\nFor the probability that the species is Bobcat, given both clues:\n\n$$\nP(B \\mid P \\cap S) = \\frac{P(B \\cap P \\cap S)}{P(P \\cap S)}\n$$\n\nThe joint probability for Bobcat is $P(B \\cap P \\cap S) = P(B) \\cdot P(P \\cap S \\mid B) = (0.20)(0.22) = 0.044$.\n\n$$\nP(B \\mid P \\cap S) = \\frac{0.044}{0.302}\n$$\n\n$$\nP(B \\mid P \\cap S) \\approx 0.14569\n$$\n\nComparing the two posterior probabilities, $P(F \\mid P \\cap S) \\approx 0.15894$ and $P(B \\mid P \\cap S) \\approx 0.14569$.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "A wildlife tracker considers three possible species: Coyote ($C$), Fox ($F$), or Bobcat ($B$). The tracker has prior probabilities for each species. Two clues are observed: a large paw print ($P$) and fur-containing scat ($S$). The probabilities of observing each clue are conditional on the species, and the problem states that these two clues are independent given the species. This is a Bayesian inference problem where we update our beliefs about the species based on the observed evidence.\n\nFirst, we establish the prior probabilities for each species:\n$$P(C) = 0.50$$\n$$P(F) = 0.30$$\n$$P(B) = 0.20$$\nThe sum of these prior probabilities is $0.50 + 0.30 + 0.20 = 1.00$.\n\nNext, we define the conditional probabilities for each clue given the species:\n$P(P \\mid C) = 0.70$\n$P(P \\mid F) = 0.20$\n$P(P \\mid B) = 0.55$\n\n$P(S \\mid C) = 0.60$\n$P(S \\mid F) = 0.80$\n$P(S \\mid B) = 0.40$\n\nThe independence of the clues given the species means that $P(P \\cap S \\mid \\text{species}) = P(P \\mid \\text{species}) \\cdot P(S \\mid \\text{species})$. We calculate this combined conditional probability for each species:\n$$\nP(P \\cap S \\mid C) = P(P \\mid C) \\cdot P(S \\mid C) = 0.70 \\cdot 0.60 = 0.42\n$$\n$$\nP(P \\cap S \\mid F) = P(P \\mid F) \\cdot P(S \\mid F) = 0.20 \\cdot 0.80 = 0.16\n$$\n$$\nP(P \\cap S \\mid B) = P(P \\mid B) \\cdot P(S \\mid B) = 0.55 \\cdot 0.40 = 0.22\n$$\n\nTo find the overall probability of finding both clues, $P(P \\cap S)$, we use the Law of Total Probability. This involves summing the joint probabilities for each species and the observed clues, $P(\\text{species} \\cap P \\cap S) = P(\\text{species}) \\cdot P(P \\cap S \\mid \\text{species})$.\n\n$$P(P \\cap S) = P(C) P(P \\cap S \\mid C) + P(F) P(P \\cap S \\mid F) + P(B) P(P \\cap S \\mid B)$$\n$$P(P \\cap S) = (0.50)(0.42) + (0.30)(0.16) + (0.20)(0.22)$$\n$$P(P \\cap S) = 0.21 + 0.048 + 0.044$$\n$$P(P \\cap S) = 0.302$$"
+    },
+    {
+      "case_id": "MATH 13.36",
+      "id": "math-13-36",
+      "title": "Low-Yield Factory Batches",
+      "chapter": 13,
+      "subsection": "13",
+      "context": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43. Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61. Factory A's batch passes if at least 87% of its units are defect-free. Factory B's batch passes if at least 79% of its units are defect-free. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Factory A's batch passes with at least 14 defect-free units.",
+        "The probability that Factory A's batch passes is greater than the probability of exactly 15.",
+        "Factory B is more than 150 times as likely as Factory A to have its batch pass.",
+        "Factory A's expected number of defect-free units is greater than 8.",
+        "Factory B's standard deviation in number of defect-free units is higher than Factory A's."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA percentage threshold must be turned into a whole-number count. $87\\%$ of $n = 17$ is\n\n$$\n87\\% \\times 17 = 14.79.\n$$\n\n“At least 87%” means the success count $X$ must be at least $14.79$. Because $X$ is an integer, that is $X \\ge \\lceil 14.79 \\rceil = 15$.\n\nThe statement uses “at least 14”, but the correct integer cutoff is $15$ (ceiling, not truncation of 14.79 to 14 when a fractional unit would still fall short of the percentage).\n\nSo the statement is False.\n",
+        "**B.** → True\n\nThe named event covers every admissible count at least 15, not only the single count 15. Those extra counts have positive probability when $0<p<1$, so the event probability is strictly larger than $P(X=15)$.\n\nSo the statement is True.\n",
+        "**C.** → True\n\nEach side has its own $(n,k)$ pair. Side A needs $X_A \\ge 15$ out of $n_A = 17$; side B needs $X_B \\ge 23$ out of $n_B = 29$. (If the scenario gave a percentage, those $k$ values are the integer ceilings/floors — not the percentage number itself.)\n\n$$\nP(X_A \\ge 15) = \\sum_{x = 15}^{17} \\binom{17}{x} p_A^{x} (1-p_A)^{17-x}\n$$\n\n$$\nP(X_B \\ge 23) = \\sum_{x = 23}^{29} \\binom{29}{x} p_B^{x} (1-p_B)^{29-x}\n$$\n\nA single term $P(X = k)$ would only count “exactly $k$” and would miss the rest of the tail, so it understates the chance of meeting the cutoff. We need the full upper tail for each side, then the ratio of those two probabilities — not the ratio of the two success probabilities $p$.\n\nSide A ($n = 17$, $p = 0.43$):\n\n$$\nP(X = 15) = \\binom{17}{15} (0.43)^{15} (0.57)^{2}\n$$\n\n$$\n\\binom{17}{15} = \\dfrac{17!}{15!(17-15)!}\n$$\n\n$$\n\\dfrac{17!}{15!(2)!} = \\dfrac{17 \\cdot 16}{1 \\cdot 2}\n$$\n\n$$\n17 \\cdot 16 = 272\n$$\n\n$$\n\\dfrac{272}{2} = 136\n$$\n\n$$\n\\binom{17}{15} = 136\n$$\n\n$$\n(0.43)^{15} = 3.17707 \\times 10^{-6}\n$$\n\n$$\n(0.57)^{2}\n$$\n\n$$\n0.57 \\times 0.57 = 0.3249\n$$\n\n$$\n(0.57)^{2} = 0.3249\n$$\n\n$$\n136 \\times 3.17707 \\times 10^{-6} = 0.00043208157\n$$\n\n$$\n0.00043208157 \\times 0.3249 = 0.000140383302\n$$\n\n$$\nP(X = 15) = 0.000140383302\n$$\n\n$$\nP(X = 16) = \\binom{17}{16} (0.43)^{16} (0.57)^{1}\n$$\n\n$$\n\\binom{17}{16} = \\dfrac{17!}{16!(17-16)!}\n$$\n\n$$\n\\binom{17}{16} = 17\n$$\n\n$$\n(0.43)^{16} = 1.36614 \\times 10^{-6}\n$$\n\n$$\n(0.57)^{1} = 0.57\n$$\n\n$$\n17 \\times 1.36614 \\times 10^{-6} = 2.322438 \\times 10^{-5}\n$$\n\n$$\n2.322438 \\times 10^{-5} \\times 0.57 = 1.32379 \\times 10^{-5}\n$$\n\n$$\nP(X = 16) = 1.32379 \\times 10^{-5}\n$$\n\n$$\nP(X = 17) = \\binom{17}{17} (0.43)^{17} (0.57)^{0}\n$$\n\n$$\n\\binom{17}{17} = 1\n$$\n\n$$\n(0.43)^{17} = 5.874403 \\times 10^{-7}\n$$\n\n$$\n(0.57)^{0} = 1\n$$\n\n$$\n1 \\times 5.874403 \\times 10^{-7} = 5.874403 \\times 10^{-7}\n$$\n\n$$\n5.874403 \\times 10^{-7} \\times 1 = 5.874403 \\times 10^{-7}\n$$\n\n$$\nP(X = 17) = 5.874403 \\times 10^{-7}\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0001 + 1.3238 \\times 10^{-5} + 5.8744 \\times 10^{-7}\n$$\n\n$$\nP(X \\ge 15)\n$$\n\n$$\n0.0002\n$$\n\n$$\n0.02\\%\n$$\n\nSide B ($n = 29$, $p = 0.61$):\n\n$$\nP(X = 23) = \\binom{29}{23} (0.61)^{23} (0.39)^{6}\n$$\n\n$$\n\\binom{29}{23} = \\dfrac{29!}{23!(29-23)!}\n$$\n\n$$\n\\dfrac{29!}{23!(6)!} = \\dfrac{29 \\cdot 28 \\cdot 27 \\cdot 26 \\cdot 25 \\cdot 24}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6}\n$$\n\n$$\n29 \\cdot 28 = 812\n$$\n\n$$\n812 \\cdot 27 = 21924\n$$\n\n$$\n21924 \\cdot 26 = 570024\n$$\n\n$$\n570024 \\cdot 25 = 14250600\n$$\n\n$$\n14250600 \\cdot 24 = 342014400\n$$\n\n$$\n\\dfrac{342014400}{720} = 475020\n$$\n\n$$\n\\binom{29}{23} = 475020\n$$\n\n$$\n(0.61)^{23} = 1.155011 \\times 10^{-5}\n$$\n\n$$\n(0.39)^{6}\n$$\n\n$$\n0.39 \\times 0.39 = 0.1521\n$$\n\n$$\n0.1521 \\times 0.39 = 0.059319\n$$\n\n$$\n0.059319 \\times 0.39 = 0.02313441\n$$\n\n$$\n0.02313441 \\times 0.39 = 0.0090224199\n$$\n\n$$\n0.0090224199 \\times 0.39 = 0.003518743761\n$$\n\n$$\n(0.39)^{6} = 0.003518743761\n$$\n\n$$\n475020 \\times 1.155011 \\times 10^{-5} = 5.486534324775\n$$\n\n$$\n5.486534324775 \\times 0.003518743761 = 0.019305708425\n$$\n\n$$\nP(X = 23) = 0.019305708425\n$$\n\n$$\nP(X = 24) = \\binom{29}{24} (0.61)^{24} (0.39)^{5}\n$$\n\n$$\n\\binom{29}{24} = \\dfrac{29!}{24!(29-24)!}\n$$\n\n$$\n\\dfrac{29!}{24!(5)!} = \\dfrac{29 \\cdot 28 \\cdot 27 \\cdot 26 \\cdot 25}{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5}\n$$\n\n$$\n29 \\cdot 28 = 812\n$$\n\n$$\n812 \\cdot 27 = 21924\n$$\n\n$$\n21924 \\cdot 26 = 570024\n$$\n\n$$\n570024 \\cdot 25 = 14250600\n$$\n\n$$\n\\dfrac{14250600}{120} = 118755\n$$\n\n$$\n\\binom{29}{24} = 118755\n$$\n\n$$\n(0.61)^{24} = 7.045568 \\times 10^{-6}\n$$\n\n$$\n(0.39)^{5}\n$$\n\n$$\n0.39 \\times 0.39 = 0.1521\n$$\n\n$$\n0.1521 \\times 0.39 = 0.059319\n$$\n\n$$\n0.059319 \\times 0.39 = 0.02313441\n$$\n\n$$\n0.02313441 \\times 0.39 = 0.0090224199\n$$\n\n$$\n(0.39)^{5} = 0.0090224199\n$$\n\n$$\n118755 \\times 7.045568 \\times 10^{-6} = 0.836696484528\n$$\n\n$$\n0.836696484528 \\times 0.0090224199 = 0.007549027012\n$$\n\n$$\nP(X = 24) = 0.007549027012\n$$\n\n$$\nP(X = 25) = \\binom{29}{25} (0.61)^{25} (0.39)^{4}\n$$\n\n$$\n\\binom{29}{25} = \\dfrac{29!}{25!(29-25)!}\n$$\n\n$$\n\\dfrac{29!}{25!(4)!} = \\dfrac{29 \\cdot 28 \\cdot 27 \\cdot 26}{1 \\cdot 2 \\cdot 3 \\cdot 4}\n$$\n\n$$\n29 \\cdot 28 = 812\n$$\n\n$$\n812 \\cdot 27 = 21924\n$$\n\n$$\n21924 \\cdot 26 = 570024\n$$\n\n$$\n\\dfrac{570024}{24} = 23751\n$$\n\n$$\n\\binom{29}{25} = 23751\n$$\n\n$$\n(0.61)^{25} = 4.297797 \\times 10^{-6}\n$$\n\n$$\n(0.39)^{4}\n$$\n\n$$\n0.39 \\times 0.39 = 0.1521\n$$\n\n$$\n0.1521 \\times 0.39 = 0.059319\n$$\n\n$$\n0.059319 \\times 0.39 = 0.02313441\n$$\n\n$$\n(0.39)^{4} = 0.02313441\n$$\n\n$$\n23751 \\times 4.297797 \\times 10^{-6} = 0.102076971112\n$$\n\n$$\n0.102076971112 \\times 0.02313441 = 0.002361490501\n$$\n\n$$\nP(X = 25) = 0.002361490501\n$$\n\n$$\nP(X = 26) = \\binom{29}{26} (0.61)^{26} (0.39)^{3}\n$$\n\n$$\n\\binom{29}{26} = \\dfrac{29!}{26!(29-26)!}\n$$\n\n$$\n\\dfrac{29!}{26!(3)!} = \\dfrac{29 \\cdot 28 \\cdot 27}{1 \\cdot 2 \\cdot 3}\n$$\n\n$$\n29 \\cdot 28 = 812\n$$\n\n$$\n812 \\cdot 27 = 21924\n$$\n\n$$\n\\dfrac{21924}{6} = 3654\n$$\n\n$$\n\\binom{29}{26} = 3654\n$$\n\n$$\n(0.61)^{26} = 2.621656 \\times 10^{-6}\n$$\n\n$$\n(0.39)^{3}\n$$\n\n$$\n0.39 \\times 0.39 = 0.1521\n$$\n\n$$\n0.1521 \\times 0.39 = 0.059319\n$$\n\n$$\n(0.39)^{3} = 0.059319\n$$\n\n$$\n3654 \\times 2.621656 \\times 10^{-6} = 0.009579531135\n$$\n\n$$\n0.009579531135 \\times 0.059319 = 0.000568248207\n$$\n\n$$\nP(X = 26) = 0.000568248207\n$$\n\n$$\nP(X = 27) = \\binom{29}{27} (0.61)^{27} (0.39)^{2}\n$$\n\n$$\n\\binom{29}{27} = \\dfrac{29!}{27!(29-27)!}\n$$\n\n$$\n\\dfrac{29!}{27!(2)!} = \\dfrac{29 \\cdot 28}{1 \\cdot 2}\n$$\n\n$$\n29 \\cdot 28 = 812\n$$\n\n$$\n\\dfrac{812}{2} = 406\n$$\n\n$$\n\\binom{29}{27} = 406\n$$\n\n$$\n(0.61)^{27} = 1.59921 \\times 10^{-6}\n$$\n\n$$\n(0.39)^{2}\n$$\n\n$$\n0.39 \\times 0.39 = 0.1521\n$$\n\n$$\n(0.39)^{2} = 0.1521\n$$\n\n$$\n406 \\times 1.59921 \\times 10^{-6} = 0.000649279332\n$$\n\n$$\n0.000649279332 \\times 0.1521 = 9.875539 \\times 10^{-5}\n$$\n\n$$\nP(X = 27) = 9.875539 \\times 10^{-5}\n$$\n\n$$\nP(X = 28) = \\binom{29}{28} (0.61)^{28} (0.39)^{1}\n$$\n\n$$\n\\binom{29}{28} = \\dfrac{29!}{28!(29-28)!}\n$$\n\n$$\n\\binom{29}{28} = 29\n$$\n\n$$\n(0.61)^{28} = 9.755182 \\times 10^{-7}\n$$\n\n$$\n(0.39)^{1} = 0.39\n$$\n\n$$\n29 \\times 9.755182 \\times 10^{-7} = 2.829003 \\times 10^{-5}\n$$\n\n$$\n2.829003 \\times 10^{-5} \\times 0.39 = 1.103311 \\times 10^{-5}\n$$\n\n$$\nP(X = 28) = 1.103311 \\times 10^{-5}\n$$\n\n$$\nP(X = 29) = \\binom{29}{29} (0.61)^{29} (0.39)^{0}\n$$\n\n$$\n\\binom{29}{29} = 1\n$$\n\n$$\n(0.61)^{29} = 5.950661 \\times 10^{-7}\n$$\n\n$$\n(0.39)^{0} = 1\n$$\n\n$$\n1 \\times 5.950661 \\times 10^{-7} = 5.950661 \\times 10^{-7}\n$$\n\n$$\n5.950661 \\times 10^{-7} \\times 1 = 5.950661 \\times 10^{-7}\n$$\n\n$$\nP(X = 29) = 5.950661 \\times 10^{-7}\n$$\n\nAdding the mutually exclusive pieces:\n\n$$\n0.0193 + 0.0075 + 0.0024\n$$\n\n$$\n+ 0.0006 + 9.8755 \\times 10^{-5} + 1.1033 \\times 10^{-5}\n$$\n\n$$\n+ 5.9507 \\times 10^{-7}\n$$\n\n$$\nP(X \\ge 23)\n$$\n\n$$\n0.0299\n$$\n\n$$\n2.99\\%\n$$\n\nThe ratio in the claim’s order (B relative to A):\n\n$$\n\\frac{P_B(X \\ge 23)}{P_A(X \\ge 15)}\n$$\n\n$$\n\\frac{2.99\\%}{0.02\\%}\n$$\n\n$$\n193.86\n$$\n\nSince $193.86 > 150$.\n\nSo the statement is True.\n",
+        "**D.** → False\n\nThe mean of a binomial count is the number of trials times the success probability, because $X$ is the sum of $n$ independent Bernoulli trials each with mean $p$:\n\n$$\nE[X] = np\n$$\n\n$$\nE[A] = 17 \\cdot 0.43\n$$\n\n$$\n17 \\times 0.43 = 7.31\n$$\n\nThe claim compares this mean with $8$. $E[A] = 7.31$ is not greater than $8$.\n\nSo the statement is False.\n",
+        "**E.** → True\n\nThe standard deviation is the positive square root of the variance. For $X \\sim \\mathrm{Bin}(n,p)$,\n\n$$\n\\mathrm{SD}(X) = \\sqrt{np(1-p)}\n$$\n\nSide A ($n_A = 17$, $p_A = 0.43$):\n\n$$\n\\mathrm{Var}(A) = 4.1667\n$$\n\n$$\n\\mathrm{SD}(A) = \\sqrt{4.1667}\n$$\n\n$$\n2.041\n$$\n\nSide B ($n_B = 29$, $p_B = 0.61$):\n\n$$\n\\mathrm{Var}(B) = 6.8991\n$$\n\n$$\n\\mathrm{SD}(B) = \\sqrt{6.8991}\n$$\n\n$$\n2.627\n$$\n\nComparing $\\mathrm{SD}(A) \\approx 2.041$ with $\\mathrm{SD}(B) \\approx 2.627$.\n\nSo the statement is True.\n"
+      ],
+      "difficulty_level": "4/5",
+      "solution_overview": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43. Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61. Factory A's batch passes if at least 87% of its units are defect-free. Factory B's batch passes if at least 79% of its units are defect-free.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 17$, $p_A = 0.43$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 29$, $p_B = 0.61$.\n\nEach factory has its own percentage cutoff, converted to an integer count with a ceiling (you cannot keep a fraction of a unit).\n\nSide A: $87\\%\\times 17 = 14.79$\n\n$$\nk_A = \\lceil 14.79 \\rceil = 15\n$$\n\nSide B: $79\\%\\times 29 = 22.91$\n\n$$\nk_B = \\lceil 22.91 \\rceil = 23\n$$"
+    }
+  ]
+}
