@@ -2,6 +2,10 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
+ * Creating an invoice with displayType iframe returns a widget `pageUrl`
+ * (embedded in checkout) where the buyer can pay by card, Apple Pay, or
+ * Google Pay. Wallet buttons appear based on device/browser.
+ *
  * Docs:
  *  - POST /api/merchant/invoice/create
  *  - GET  /api/merchant/invoice/status?invoiceId=...
