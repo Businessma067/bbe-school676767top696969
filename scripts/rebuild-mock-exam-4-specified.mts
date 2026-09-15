@@ -1,6 +1,7 @@
 /**
- * Rebuild Mock Exam 4 — CVP econ + Glacier English + hard applied full-course math bank.
- * Math picks are polished unused bank tasks (no kindergarten / duplicate-ineq junk).
+ * Rebuild Mock Exam 4 — CVP econ + Glacier English + deep custom / bank math.
+ * Custom: Q22 liars, Q23 thresh algebra, Q25 antifill, Q26 blend, Q28/Q32 numeric,
+ * Q30 cubic, Q31 cooling, Q33 poker defs. Bank kept for Q24,27,29,34.
  * Order: economics → english (Doomsday Glacier T.12) → math.
  *
  * Run: node scripts/run-rebuild-mock-4.mjs
@@ -9,6 +10,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { loadAllMathChapterTasks } from "../src/data/math-chapters.ts";
 import { scrubKatexDeep } from "../src/lib/scrub-katex.ts";
+import {
+  buildMathQ22Liars,
+  buildMathQ23Thresh,
+  buildMathQ25Antifill,
+  buildMathQ26Blend,
+  buildMathQ28Numeric,
+  buildMathQ30Cubic,
+  buildMathQ31Cooling,
+  buildMathQ32Deriv,
+  buildMathQ33Poker,
+} from "./mock4-math-customs.mts";
 
 const ROOT = path.resolve("src/data");
 const outPath = path.join(ROOT, "mock-exam-4-sourced.json");
@@ -365,38 +377,6 @@ function takeMath(caseId: string, chapter: number) {
   const mapped = mapMath(chapter, t as unknown as Record<string, unknown>);
   const usd = (s: string) => s.replace(/\\\$/g, "USD ");
 
-  if (caseId === "MATH 1.107") {
-    const table = `**Truth table of valid assignments.**
-
-Write $P,Q,R,S,T$ for Petra, Quinn, Ravi, Sana, Theo.
-
-| $P$ | $Q$ | $R$ | $S$ | $T$ | Valid? |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 0 | 1 | 1 | yes |
-| 0 | * | * | * | * | no (rules force $P$) |
-| 1 | 1 | * | * | * | no ($P\\Rightarrow\\neg Q$ fails) |
-| 1 | 0 | 1 | * | 1 | no ($T\\Rightarrow\\neg R$ fails) |
-| 1 | 0 | 0 | 0 | 1 | no ($R\\lor S$ fails) |
-
-Exactly one valid assignment survives: Petra, Sana, and Theo review; Quinn and Ravi do not.`;
-    const ov = String(mapped.solution_overview || "").trim();
-    if (!ov.includes("| $P$ |")) {
-      mapped.solution_overview = `${ov}\n\n${table}`.trim();
-    }
-  }
-
-  if (caseId === "MATH 2.156") {
-    mapped.context = `A symbolic calculator studies
-
-$$
-R(x)=\\dfrac{x^{2}-16}{x-4}\\qquad\\text{and}\\qquad S(x)=\\dfrac{1}{x-4}+\\dfrac{1}{x+4}.
-$$
-
-$R$ is defined for $x\\ne 4$; $S$ also excludes $x=-4$. Simplifications must keep these domain restrictions even after factors cancel.
-
-Decide whether each statement is true or false.`;
-  }
-
   if (caseId === "MATH 11.112") {
     mapped.context = `A hospital system is negotiating the purchase of a new imaging center and equipment package, and is choosing among three payment schedules.
 
@@ -412,51 +392,8 @@ The hospital wants to know which schedule is cheapest in present-value terms at 
     if (mapped.solution_overview) mapped.solution_overview = usd(String(mapped.solution_overview));
   }
 
-  if (caseId === "MATH 5.53") {
-    mapped.context = usd(String(mapped.context || ""));
-    mapped.statements = (mapped.statements as string[]).map(usd);
-    mapped.tactical_explanations = (mapped.tactical_explanations as string[]).map(usd);
-    if (mapped.solution_overview) mapped.solution_overview = usd(String(mapped.solution_overview));
-  }
-
   if (caseId === "MATH 6.55") {
     mapped.context = `Decide whether each inequality claim is true or false. Claims state full solution sets — check every boundary point and every compound piece carefully (absolute values, radicals, and quadratic sandwiches).`;
-  }
-
-  if (caseId === "MATH 7.E01") {
-    mapped.context = `The figure shows a solid brown parabola $g$ and a dashed green line $f$. No formulas are printed. Reason only from the ticks, crossings, and relative heights.
-
-Decide whether each statement is true or false.`;
-  }
-
-  if (caseId === "MATH 9.46") {
-    mapped.context = `A train's speed is modelled by
-
-$$
-v_{b}(t)=0.00002t^{3}-b t^{2}+0.4t\\qquad(b>0),\\quad 0\\le t\\le 120.
-$$
-
-Acceleration is $a(t)=v_{b}'(t)$. Decide whether each statement is true or false.`;
-  }
-
-  if (caseId === "MATH 10.3.31") {
-    mapped.context = `Denote by $f(t)$ the population of a country (in millions of inhabitants) after $t$ years. The current population is $12$ million and grows by $1.8\\%$ per year. After $6$ years the annual growth rate slows to $1\\%$ per year.
-
-A neighbouring country follows a continuous model given with the figure.
-
-Decide whether each statement is true or false.`;
-  }
-
-  if (caseId === "MATH 11.184") {
-    mapped.context = `A clinic tracks a throughput index $f$ (brown), its derivative $f'$ (green), and its second derivative $f''$ (purple) on one shared figure. Throughput is measured against staffing intensity $x$.
-
-Decide whether each statement is true or false from the figure.`;
-  }
-
-  if (caseId === "MATH 12.25") {
-    mapped.context = `At a friend's poker night, the host shuffles a standard, well-mixed 52-card deck and deals a 5-card poker hand uniformly at random (order within the hand does not matter).
-
-Decide whether each probability claim is true or false.`;
   }
 
   if (caseId === "MATH 13.18") {
@@ -471,22 +408,21 @@ Decide whether each statement is true or false.`;
 }
 
 /**
- * Hard applied full-course bank (unused in Mock 1–3).
- * Replaces kindergarten / broken picks (duplicate ineq, a+b=ab toys, “is odd / leading coeff”).
+ * Deep custom math for the user-flagged slots; bank kept for PV / ineq / powers / binomial.
  */
 const math = [
-  takeMath("MATH 1.107", 1),
-  takeMath("MATH 2.156", 2),
+  buildMathQ22Liars(),
+  buildMathQ23Thresh(),
   takeMath("MATH 11.112", 3),
-  takeMath("MATH 4.158", 4),
-  takeMath("MATH 5.53", 5),
+  buildMathQ25Antifill(),
+  buildMathQ26Blend(),
   takeMath("MATH 6.55", 6),
-  takeMath("MATH 7.E01", 7),
+  buildMathQ28Numeric(),
   takeMath("MATH 8.83", 8),
-  takeMath("MATH 9.46", 9),
-  takeMath("MATH 10.3.31", 10),
-  takeMath("MATH 11.184", 11),
-  takeMath("MATH 12.25", 12),
+  buildMathQ30Cubic(),
+  buildMathQ31Cooling(),
+  buildMathQ32Deriv(),
+  buildMathQ33Poker(),
   takeMath("MATH 13.18", 13),
 ];
 
