@@ -5,6 +5,21 @@ export type PaidProductSlug = "full-course" | "lite-bbe-course";
 /** ISO 4217 numeric code for EUR (Monobank `ccy`). */
 export const MONOBANK_CURRENCY_EUR = 978;
 
+/** ISO 4217 numeric code for UAH (Monobank `ccy`). */
+export const MONOBANK_CURRENCY_UAH = 980;
+
+/**
+ * Temporary test charge: every Monobank invoice is 100.00 UAH.
+ * Set `enabled` to false before production go-live.
+ */
+export const MONOBANK_TEST_CHARGE = {
+  enabled: true,
+  /** 100.00 UAH in kopiyky. */
+  amountMinor: 100_00,
+  ccy: MONOBANK_CURRENCY_UAH,
+  label: "₴100",
+} as const;
+
 export type PaidProduct = {
   slug: PaidProductSlug;
   name: string;

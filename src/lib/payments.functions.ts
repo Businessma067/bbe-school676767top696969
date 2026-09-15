@@ -3,6 +3,7 @@ import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import {
   MONOBANK_CURRENCY_EUR,
+  MONOBANK_TEST_CHARGE,
   PAID_PRODUCTS,
   isPaidProductSlug,
 } from "@/lib/checkout-catalog";
@@ -73,11 +74,18 @@ export const createCheckout = createServerFn({ method: "POST" })
       }
 
       // Charge the catalog EUR price in minor units (cents). Promocode % still applies.
+      // Temporary test override: fixed 100 UAH invoice for Monobank acquiring tests.
       const baseMinor = Math.round(product.priceEur * 100);
-      const amountMinor = Math.max(
+      const discountedMinor = Math.max(
         1,
         Math.round(baseMinor * (1 - discountPct / 100)),
       );
+      const amountMinor = MONOBANK_TEST_CHARGE.enabled
+        ? MONOBANK_TEST_CHARGE.amountMinor
+        : discountedMinor;
+      const currencyCode = MONOBANK_TEST_CHARGE.enabled
+        ? MONOBANK_TEST_CHARGE.ccy
+        : MONOBANK_CURRENCY_EUR;
 
       const { getRequest } = await import("@tanstack/react-start/server");
       const request = getRequest();
@@ -91,7 +99,7 @@ export const createCheckout = createServerFn({ method: "POST" })
       // (course banners are landscape and get cropped badly there).
       const { invoiceId, pageUrl } = await createMonoInvoice({
         amountMinor,
-        ccy: MONOBANK_CURRENCY_EUR,
+        ccy: currencyCode,
         destination: product.name,
         reference,
         redirectUrl: `${origin}/payment-result`,
@@ -110,7 +118,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         tier: product.tier,
         invoice_id: invoiceId,
         amount_minor: amountMinor,
-        currency_code: MONOBANK_CURRENCY_EUR,
+        currency_code: currencyCode,
         status: "created",
         page_url: pageUrl,
         ...(appliedPromoCode ? { promo_code: appliedPromoCode } : {}),
@@ -120,7 +128,14 @@ export const createCheckout = createServerFn({ method: "POST" })
         return { ok: false, error: "Could not start the payment. Try again." };
       }
 
-      return { ok: true, pageUrl, invoiceId, amountEur: amountMinor / 100 };
+      return {
+        ok: true,
+        pageUrl,
+        invoiceId,
+        amountEur: MONOBANK_TEST_CHARGE.enabled
+          ? MONOBANK_TEST_CHARGE.amountMinor / 100
+          : amountMinor / 100,
+      };
     } catch (err) {
       console.error("createCheckout", err);
       const message = err instanceof Error ? err.message : "Could not start the payment.";
