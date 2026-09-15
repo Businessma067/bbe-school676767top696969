@@ -1,5 +1,5 @@
 /**
- * Rebuild Mock Exam 4 — CVP econ + Glacier English + M3-style NEW math tasks.
+ * Rebuild Mock Exam 4 — CVP econ + Glacier English + M3-style math twins.
  * Order: economics → english (Doomsday Glacier T.12) → math.
  * Math scenarios/numbers must differ from Mock 1/2/3 (do not rename M3 twins).
  *
