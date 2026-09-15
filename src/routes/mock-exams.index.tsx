@@ -141,11 +141,6 @@ function MockExamsPage() {
                 </div>
                 <p className="flex-1 text-sm text-muted-foreground">
                   {exam.questionCount} questions · {exam.durationMinutes / 60} hours
-                  {exam.contentRev ? (
-                    <span className="mt-1 block font-mono text-[10px] tracking-wide text-muted-foreground/70">
-                      rev {exam.contentRev}
-                    </span>
-                  ) : null}
                 </p>
                 {bestByExam.has(exam.id) && (
                   <p className="mt-2 text-xs font-semibold text-caramel-deep">
