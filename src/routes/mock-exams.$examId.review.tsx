@@ -388,7 +388,7 @@ function TaskReviewWorkspace({
               {current.statementCorrect}/{current.statementCount} correct · {formatQuestionTime(current.seconds)}
             </p>
           </div>
-          <div className="min-h-0 flex-1 space-y-5 overflow-y-auto px-5 py-5 sm:px-7 sm:py-6">
+          <div className="min-h-0 flex-1 space-y-5 overflow-y-auto px-5 py-5 sm:px-7 sm:py-6 [scrollbar-width:thin] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
             {q.solutionOverview ? (
               <ExamSolutionOverview text={q.solutionOverview} subject={q.subject} />
             ) : null}
