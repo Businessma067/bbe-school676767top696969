@@ -707,7 +707,7 @@
       "title": "Two Solar Project Designs Compared by Internal Rate of Return and NPV",
       "chapter": 3,
       "subsection": "3.7",
-      "context": "A renewable energy cooperative is comparing two designs for a community solar project. Design A, a two-year project: invest USD 120,000, with net returns of USD 54,000 at the end of Year 1 and USD 88,000 at the end of Year 2. Design B, a simpler one-year project: invest USD 70,000, with a single net return of USD 81,200 at the end of Year 1.",
+      "context": "A renewable energy cooperative is comparing two designs for a community solar project.\n\nDesign A is a two-year project: invest USD 120,000, with net returns of USD 54,000 at the end of Year 1 and USD 88,000 at the end of Year 2.\n\nDesign B is a one-year project: invest USD 70,000, with a single net return of USD 81,200 at the end of Year 1.",
       "statements": [
         "The internal rate of return of Design A is approximately 11.04%.",
         "The internal rate of return of Design B is exactly 16%.",
@@ -986,7 +986,7 @@
       "title": "Two Clues and Three Suspects",
       "chapter": 12,
       "subsection": "12.5",
-      "context": "A wildlife tracker suspects one of three animals is active in an area: Coyote (50% prior probability), Fox (30%), or Bobcat (20%). Given the species, the probability of leaving a large paw print is 70% for Coyote, 20% for Fox, and 55% for Bobcat; independently, the probability that any scat found contains fur is 60% for Coyote, 80% for Fox, and 40% for Bobcat. At the site, the tracker finds BOTH a large paw print AND fur-containing scat (assume these two clues are independent of each other once you know the species).",
+      "context": "A wildlife tracker suspects one of three animals is active in an area: Coyote (50% prior), Fox (30%), or Bobcat (20%).\n\nGiven the species, the probability of a large paw print is 70% for Coyote, 20% for Fox, and 55% for Bobcat.\n\nIndependently, the probability that any scat found contains fur is 60% for Coyote, 80% for Fox, and 40% for Bobcat.\n\nAt the site, the tracker finds both a large paw print and fur-containing scat (the two clues are independent given the species).",
       "statements": [
         "The probability that both clues are found, overall is greater than 25%.",
         "The probability that the species is Coyote AND both clues are found equals 21%.",
@@ -1017,7 +1017,7 @@
       "title": "Low-Yield Factory Batches",
       "chapter": 13,
       "subsection": "13",
-      "context": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43. Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61. Factory A's batch passes if at least 87% of its units are defect-free. Factory B's batch passes if at least 79% of its units are defect-free. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43.\n\nFactory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61.\n\nFactory A's batch passes if at least 87% of its units are defect-free.\n\nFactory B's batch passes if at least 79% of its units are defect-free.",
       "statements": [
         "Factory A's batch passes with at least 14 defect-free units.",
         "The probability that Factory A's batch passes is greater than the probability of exactly 15.",
