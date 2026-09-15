@@ -2,15 +2,14 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
- * Returns a hosted `pageUrl` (pay.mbnk.biz) that includes card, Apple Pay,
- * and Google Pay when the merchant/device supports them. We intentionally
- * omit `displayType: "iframe"` — that mode is a card-only widget and hides
- * wallets. Embed the normal pageUrl in an iframe with `allow="payment *"`.
+ * Returns a hosted `pageUrl` (pay.mbnk.biz / pay.monobank.ua). Open it as a
+ * top-level navigation — not in an iframe. Apple Pay fails immediately inside
+ * a cross-origin iframe because the site origin is not the Apple Pay merchant
+ * domain; a full-page checkout also scrolls normally on mobile.
  *
  * Docs:
  *  - POST /api/merchant/invoice/create
  *  - GET  /api/merchant/invoice/status?invoiceId=...
- *  - https://monobank.ua/api-docs/acquiring/methods/ia/docs--widget-frame
  */
 
 const MONO_API = "https://api.monobank.ua/api/merchant";

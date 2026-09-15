@@ -104,6 +104,8 @@ export const uiExtraDe: Record<string, string> = {
     "Zahle sicher über Monobank. Das Zahlungsformular öffnet sich hier mit Karte, Apple Pay und Google Pay; nach der Zahlung kommst du automatisch zurück.",
   "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
     "Weiter zur sicheren Monobank-Zahlungsseite — dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Danach kommst du hierher zurück.",
+  "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. That page scrolls on phones so every option stays reachable.":
+    "Weiter zur sicheren Monobank-Zahlungsseite — dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Die Seite lässt sich auf dem Handy scrollen, damit alle Optionen erreichbar bleiben.",
   "Pay by card. You will return here after the payment.":
     "Zahle per Karte. Nach der Zahlung kommst du hierher zurück.",
   "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
@@ -114,6 +116,9 @@ export const uiExtraDe: Record<string, string> = {
     "Einmalige Zahlung · Kein Abo · Gesichert durch Monobank",
   "Card · Apple Pay · Google Pay · Secured by Monobank":
     "Karte · Apple Pay · Google Pay · Gesichert durch Monobank",
+  "Test charge ": "Testbetrag ",
+  "Discount noted (": "Rabatt vermerkt (",
+  ") — test charge remains ": ") — Testbetrag bleibt ",
   "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly — no payment needed.":
     "Hast du einen Einmal-Promocode? Löse ihn angemeldet ein, um sofort vollen Kurszugang freizuschalten — ohne Zahlung.",
   Promocode: "Promocode",
@@ -307,6 +312,8 @@ export const uiExtraUk: Record<string, string> = {
     "Оплатіть безпечно через Monobank. Форма оплати відкриється тут із карткою, Apple Pay і Google Pay; після оплати ви автоматично повернетесь.",
   "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
     "Перейдіть на захищену сторінку Monobank, щоб сплатити карткою, Apple Pay або Google Pay. Після оплати ви повернетесь сюди.",
+  "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. That page scrolls on phones so every option stays reachable.":
+    "Перейдіть на захищену сторінку Monobank, щоб сплатити карткою, Apple Pay або Google Pay. На телефоні сторінка прокручується, тож усі варіанти доступні.",
   "Pay by card. You will return here after the payment.":
     "Оплатіть карткою. Після оплати ви повернетесь сюди.",
   "Pay by card, Apple Pay, or Google Pay. You will return here after the payment.":
@@ -317,6 +324,9 @@ export const uiExtraUk: Record<string, string> = {
     "Одноразова оплата · Без підписки · Захищено Monobank",
   "Card · Apple Pay · Google Pay · Secured by Monobank":
     "Картка · Apple Pay · Google Pay · Захищено Monobank",
+  "Test charge ": "Тестова сума ",
+  "Discount noted (": "Знижку зазначено (",
+  ") — test charge remains ": ") — тестова сума лишається ",
   "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly — no payment needed.":
     "Маєте одноразовий промокод? Активуйте його під час входу, щоб миттєво відкрити повний доступ — без оплати.",
   Promocode: "Промокод",
