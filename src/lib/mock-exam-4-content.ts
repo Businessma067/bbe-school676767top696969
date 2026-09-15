@@ -106,7 +106,7 @@ export const MOCK_EXAM_4_POINTS_TOTAL =
 
 /** Bump when Mock 4 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_4_CONTENT_REV =
-  "2026-09-15k · 34q · Glacier · katex syntax audit OK";
+  "2026-09-15L · 34q · Glacier · preview-sync";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
