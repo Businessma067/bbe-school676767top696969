@@ -2,14 +2,17 @@
  * Monobank acquiring helpers. Server-only: the merchant token never leaves
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
- * Returns a hosted `pageUrl` (pay.mbnk.biz / pay.monobank.ua). Open it as a
- * top-level navigation — not in an iframe. Apple Pay fails immediately inside
- * a cross-origin iframe because the site origin is not the Apple Pay merchant
- * domain; a full-page checkout also scrolls normally on mobile.
+ * Card checkout: POST invoice/create → hosted `pageUrl` (open top-level, not
+ * iframe — Apple Pay fails in cross-origin iframes).
+ *
+ * Native Apple / Google Pay: POST wallet/payment with aToken / gToken from the
+ * browser Payment Request / wallet SDKs.
  *
  * Docs:
  *  - POST /api/merchant/invoice/create
  *  - GET  /api/merchant/invoice/status?invoiceId=...
+ *  - GET  /api/merchant/details
+ *  - POST /api/merchant/wallet/payment
  */
 
 const MONO_API = "https://api.monobank.ua/api/merchant";
@@ -27,12 +30,158 @@ export type MonoStatusResponse = {
   modifiedDate?: string;
 };
 
+export type MonoMerchantDetails = {
+  merchantId: string;
+  merchantName: string;
+};
+
+export type MonoWalletPaymentResult = {
+  invoiceId: string;
+  status: MonoInvoiceStatus | string;
+  tdsUrl?: string;
+  failureReason?: string;
+};
+
 function monoToken(): string {
   const token = process.env["MONOBANK_TOKEN"]?.trim();
   if (!token) {
     throw new Error("MONOBANK_TOKEN is not configured on the server.");
   }
   return token;
+}
+
+export async function fetchMonoMerchantDetails(): Promise<MonoMerchantDetails> {
+  const res = await fetch(`${MONO_API}/details`, {
+    headers: { "X-Token": monoToken() },
+  });
+  const text = await res.text();
+  if (!res.ok) {
+    console.error("monobank merchant/details failed", res.status, text);
+    throw new Error("Could not load Monobank merchant details.");
+  }
+  const json = JSON.parse(text) as { merchantId?: string; merchantName?: string };
+  if (!json.merchantId) {
+    throw new Error("Monobank merchant details are incomplete.");
+  }
+  return {
+    merchantId: json.merchantId,
+    merchantName: json.merchantName?.trim() || "BBE School",
+  };
+}
+
+/**
+ * Google Pay `gatewayMerchantId` for gateway:"monobank". Prefer the explicit
+ * secret from the merchant cabinet; fall back to Monobank merchantId.
+ */
+export async function resolveGoogleGatewayMerchantId(): Promise<{
+  gatewayMerchantId: string;
+  merchantName: string;
+}> {
+  const fromEnv = process.env["MONOBANK_GOOGLE_GATEWAY_MERCHANT_ID"]?.trim();
+  const details = await fetchMonoMerchantDetails();
+  return {
+    gatewayMerchantId: fromEnv || details.merchantId,
+    merchantName: details.merchantName,
+  };
+}
+
+/** Charge with an Apple Pay (aToken) or Google Pay (gToken) crypto container. */
+export async function createMonoWalletPayment(input: {
+  amountMinor: number;
+  ccy: number;
+  destination: string;
+  reference: string;
+  redirectUrl: string;
+  webHookUrl?: string;
+  /** Apple Pay payment token JSON (payment.token or full payment). */
+  aToken?: string;
+  /** Google Pay tokenizationData.token, JSON-stringified for the API. */
+  gToken?: string;
+}): Promise<MonoWalletPaymentResult> {
+  const hasApple = !!input.aToken?.trim();
+  const hasGoogle = !!input.gToken?.trim();
+  if (hasApple === hasGoogle) {
+    throw new Error("Provide exactly one of aToken or gToken.");
+  }
+
+  const body: Record<string, unknown> = {
+    amount: input.amountMinor,
+    ccy: input.ccy,
+    redirectUrl: input.redirectUrl,
+    initiationKind: "client",
+    paymentType: "debit",
+    merchantPaymInfo: {
+      reference: input.reference,
+      destination: input.destination,
+      basketOrder: [
+        {
+          name: input.destination,
+          qty: 1,
+          sum: input.amountMinor,
+          unit: "шт.",
+        },
+      ],
+    },
+    ...(input.webHookUrl ? { webHookUrl: input.webHookUrl } : {}),
+  };
+
+  if (hasApple) {
+    body.aToken = input.aToken!.trim();
+  } else {
+    // Monobank expects the Google token as a JSON string (stringified object).
+    const raw = input.gToken!.trim();
+    body.gToken = jsonStringifyGoogleToken(raw);
+  }
+
+  const res = await fetch(`${MONO_API}/wallet/payment`, {
+    method: "POST",
+    headers: {
+      "X-Token": monoToken(),
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+
+  const text = await res.text();
+  if (!res.ok) {
+    console.error("monobank wallet/payment failed", res.status, text);
+    throw new Error("Monobank rejected the wallet payment.");
+  }
+
+  const json = JSON.parse(text) as {
+    invoiceId?: string;
+    status?: string;
+    tdsUrl?: string;
+    failureReason?: string;
+  };
+  if (!json.invoiceId) {
+    throw new Error("Monobank returned an unexpected wallet response.");
+  }
+  return {
+    invoiceId: json.invoiceId,
+    status: json.status ?? "created",
+    ...(json.tdsUrl ? { tdsUrl: json.tdsUrl } : {}),
+    ...(json.failureReason ? { failureReason: json.failureReason } : {}),
+  };
+}
+
+/** Ensure gToken is a JSON-encoded string as Monobank’s Google Pay docs require. */
+function jsonStringifyGoogleToken(raw: string): string {
+  const trimmed = raw.trim();
+  try {
+    const parsed = JSON.parse(trimmed) as unknown;
+    // Already an object → stringify once for the API field.
+    if (parsed && typeof parsed === "object") {
+      return JSON.stringify(parsed);
+    }
+    // Already a JSON string of the token object → keep as API string value.
+    if (typeof parsed === "string") {
+      return JSON.stringify(parsed);
+    }
+  } catch {
+    // Not JSON — wrap as a JSON string.
+  }
+  return JSON.stringify(trimmed);
 }
 
 export async function createMonoInvoice(input: {
