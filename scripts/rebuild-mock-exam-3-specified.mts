@@ -250,7 +250,11 @@ So the statement is True.`,
 /** Hard mixture + break-even linear systems (different engine from rates / utility). */
 /** Hard multi-topic equation word problems (M1 4.215 / M2 4.165 style). */
 function buildMathCh4Diversified() {
-  const context = `Decide whether each statement about equations is true or false. Each letter is an independent word problem from a different equation family.`;
+  const context = `Each letter is an independent equation word problem from a different family.
+
+Ages, a framed print, a two-leg trip, a logarithmic equation, and a coin till appear in turn.
+
+Decide whether each statement is true or false.`;
 
   const statements = [
     "A courier is $27$ years older than a trainee. In $6$ years the courier will be twice as old as the trainee will be then. A planner concludes that the trainee is now $15$ years old.",
@@ -345,7 +349,11 @@ So the statement is False.`,
 
 /** Diversified harder inequalities — not five copies of one rational sign chart. */
 function buildMathCh6Diversified() {
-  const context = `Decide whether each statement about inequalities is true or false. The five claims use different inequality types.`;
+  const context = `Each letter is an independent inequality check from a different family.
+
+Quadratic, rational, absolute-value, a linear system, and a feasible-region point appear in turn.
+
+Decide whether each statement is true or false.`;
 
   const statements = [
     "The solution set of $x^{2}-4x-5\\ge 0$ contains the number $0$.",
@@ -457,9 +465,15 @@ So the statement is True.`,
 
 /** Hard mixture + break-even — euros kept outside KaTeX math. */
 function buildMathCh5Mixture() {
-  const context = `A foundry blends pure copper (100% Cu) with scrap that is 40% copper by mass. It must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is 70% copper. Pure copper costs EUR 9 per kilogram and scrap costs EUR 4 per kilogram. The finished alloy is sold at EUR 8.50 per kilogram.
+  const context = `A foundry blends pure copper ($100\\%$ Cu) with scrap that is $40\\%$ copper by mass.
 
-Separately, a workshop product has fixed costs EUR 3600, variable cost EUR 5 per unit and selling price EUR 11 per unit.`;
+It must produce exactly $120\\ \\mathrm{kg}$ of an alloy that is $70\\%$ copper.
+
+Pure copper costs EUR $9$ per kilogram and scrap costs EUR $4$ per kilogram.
+
+The finished alloy is sold at EUR $8.50$ per kilogram.
+
+Separately, a workshop product has fixed costs EUR $3600$, variable cost EUR $5$ per unit, and selling price EUR $11$ per unit.`;
 
   const statements = [
     "In the cheapest blend that meets the mass and copper-content targets, more than $55\\ \\mathrm{kg}$ of scrap must be used.",
@@ -520,19 +534,47 @@ So the statement is True.`,
 }
 
 
-/** Real-case logic — named people and rules (M2 tournament style, different cast). */
+/** Real-case logic — structured paragraphs + truth-table solution (M2 style). */
 function buildMathCh1Independent() {
-  const context = `Six interns — Ava, Ben, Cara, Drew, Eve, and Finn — are being considered for a weekend on-call roster. The staffing rules are:
+  const truthTable = `**Truth table of valid rosters.**
 
-1. Ava is rostered if and only if Ben is rostered.
-2. If Ben is rostered, then Cara is rostered.
-3. Exactly one of Cara or Drew is rostered (never both, never neither).
-4. If Drew is rostered, then Eve is not rostered.
-5. At least one of Eve or Finn is rostered.
-6. Finn is rostered only if Ava is not rostered.
-7. At least three of the six interns are rostered.
+Write $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. Encode each rule, then list every $0/1$ assignment that survives all seven constraints. Size is $A+B+C+D+E+F$.
 
-Decide whether each statement is true or false.`;
+How the table is built:
+
+1. Start from candidate bits and apply $A\\Leftrightarrow B$ (Ava and Ben must match).
+2. Enforce $B\\Rightarrow C$ and the exclusive-or on $(C,D)$.
+3. Enforce $D\\Rightarrow\\neg E$, $E\\lor F$, and $F\\Rightarrow\\neg A$.
+4. Drop any row whose size is strictly less than $3$.
+5. Keep only the surviving rows — those are the valid rosters.
+
+| $A$ | $B$ | $C$ | $D$ | $E$ | $F$ | Size | Valid? |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| 1 | 1 | 1 | 0 | 1 | 0 | 4 | yes |
+| 0 | 0 | 1 | 0 | 1 | 1 | 3 | yes |
+| 1 | 1 | 1 | 0 | 1 | 1 | — | no ($F\\Rightarrow\\neg A$ fails) |
+| 1 | 1 | 1 | 1 | * | * | — | no (exclusive-or on $C,D$ fails) |
+| 0 | 0 | 0 | 1 | 0 | 1 | 2 | no (size $<3$) |
+| 0 | 0 | 1 | 0 | 0 | 1 | 2 | no (size $<3$) |
+| 0 | 0 | 1 | 0 | 1 | 0 | 2 | no (size $<3$) |
+
+Exactly two valid rosters appear: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$. Drew never appears; a full six-person roster never appears.`;
+
+  const context = `Six interns — Ava, Ben, Cara, Drew, Eve, and Finn — are considered for a weekend on-call roster.
+
+Ava is rostered if and only if Ben is rostered.
+
+If Ben is rostered, then Cara is rostered.
+
+Exactly one of Cara or Drew is rostered (never both, never neither).
+
+If Drew is rostered, then Eve is not rostered.
+
+At least one of Eve or Finn is rostered.
+
+Finn is rostered only if Ava is not rostered.
+
+At least three of the six interns are rostered.`;
 
   const statements = [
     "Ben must appear on every roster that obeys all seven rules.",
@@ -542,52 +584,48 @@ Decide whether each statement is true or false.`;
     "It is possible for all six interns to be rostered at once.",
   ];
 
-  // From rules: A↔B, B→C, Cara XOR Drew, Drew→¬Eve, Eve∨Finn, Finn→¬Ava, |S|≥3
-  // If Ben: then Ava, Cara; not Drew (XOR); Eve∨Finn; Finn→¬Ava but Ava is on → ¬Finn → Eve. Roster {A,B,C,E} size 4. Valid.
-  // Must Ben always? Suppose ¬Ben → ¬Ava. Cara XOR Drew.
-  // Case Drew: ¬Cara, ¬Eve (from Drew→¬Eve), so Finn (Eve∨Finn). Finn→¬Ava OK. Roster {D,F} size 2 < 3 — need one more: only E blocked, A/B blocked, C blocked. Cannot add. So Drew without Ben fails size.
-  // Case Cara, ¬Drew, ¬Ben, ¬Ava: Eve∨Finn, Finn→¬Ava OK. {C,E}, {C,F}, {C,E,F} — size ≥3 only {C,E,F}. Valid without Ben!
-  // So A "Ben must appear on every" is FALSE.
-  // B: Drew possible? Need Ben path: Ben→Ava,Cara so ¬Drew. Drew conflicts with Cara when Ben. Without Ben Drew fails size. So Drew impossible → False.
-  // Wait reconsider Drew with Ben: Ben→Cara, XOR forbids Drew. So Drew never with Ben. Without Ben Drew fails. Drew impossible. B False.
-  // C: Ava→Ben→Cara, Finn→¬Ava so Ava→¬Finn. True (also from rule 6 contrapose).
-  // D: size-3 valid rosters: {C,E,F} works. Is there another?
-  // With Ben: {A,B,C,E} is size 4; can we drop E? Need Eve∨Finn; Finn forbidden with Ava; so E required → min size 4 with Ben.
-  // Without Ben: {C,E,F} only size-3. {C,E}? size 2. {C,F}? size 2. So exactly one size-3 → True.
-  // E: all six: need A,B,C,D,E,F — Cara and Drew both → violates XOR. False.
-
   const answer_key = [false, false, true, true, false];
 
   const tactical_explanations = [
     `**A.** → False
 
-Without Ben (and therefore without Ava), the roster $\\{C,E,F\\}$ satisfies Cara-xor-Drew, Eve-or-Finn, Finn’s restriction, and the size rule. So Ben is not forced onto every valid roster.
+The truth table contains a valid row with $B=0$, namely $\\{C,E,F\\}$. Ben is therefore not forced onto every valid roster.
 
-So the statement is False.`,
+So the statement is False.
+
+${truthTable}`,
 
     `**B.** → False
 
-Drew forces Cara off the roster. But Ben forces Cara on, so Drew cannot appear with Ben. Without Ben, Drew also forces Eve off, so Finn must be on; the only candidates left cannot reach size three. No valid roster contains Drew.
+No valid row has $D=1$. Drew forces $C=0$ and $E=0$, so $F=1$, but then size stays below $3$. Drew never appears in a valid roster.
 
-So the statement is False.`,
+So the statement is False.
+
+${truthTable}`,
 
     `**C.** → True
 
-Rule 6 says Finn is rostered only if Ava is not. Contrapositively, if Ava is rostered then Finn is not.
+The rule “Finn only if Ava is not rostered” is $F\\Rightarrow\\neg A$. Contrapositively, $A\\Rightarrow\\neg F$. Every valid row with $A=1$ has $F=0$.
 
-So the statement is True.`,
+So the statement is True.
+
+${truthTable}`,
 
     `**D.** → True
 
-Every Ben-based roster needs Ava, Ben, Cara, and Eve (Finn is blocked), hence size at least $4$. The only size-three roster is $\\{C,E,F\\}$.
+The only size-three valid row is $\\{C,E,F\\}$. The Ben-based roster $\\{A,B,C,E\\}$ already has size $4$.
 
-So the statement is True.`,
+So the statement is True.
+
+${truthTable}`,
 
     `**E.** → False
 
-Rostering everyone would put both Cara and Drew on call, contradicting the exclusive-or rule.
+A six-person roster would require $C=D=1$, which breaks the exclusive-or. The truth table’s largest valid size is $4$.
 
-So the statement is False.`,
+So the statement is False.
+
+${truthTable}`,
   ];
 
   return {
@@ -601,29 +639,47 @@ So the statement is False.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview:
-      "Chain the English rules (biconditional, implication, exclusive or, only-if, size) to decide forced membership, possibility, and uniqueness — without treating the letters as abstract De Morgan drills.",
+    solution_overview: `**Part 1: Setup.**
+
+Write $A,B,C,D,E,F$ for Ava, Ben, Cara, Drew, Eve, Finn. The stem is
+
+$$
+(1)\\ A\\Leftrightarrow B,\\qquad (2)\\ B\\Rightarrow C,\\qquad (3)\\ (C\\land\\neg D)\\lor(\\neg C\\land D),
+$$
+
+$$
+(4)\\ D\\Rightarrow\\neg E,\\qquad (5)\\ E\\lor F,\\qquad (6)\\ F\\Rightarrow\\neg A,
+$$
+
+and (7) size at least three.
+
+"$P$ only if $Q$" is $P\\Rightarrow Q$.
+
+**Part 2: Building the truth table.**
+
+Apply the biconditional and exclusive-or first, then the implications, then the size filter. Only two rows survive: $\\{A,B,C,E\\}$ and $\\{C,E,F\\}$.
+
+${truthTable}`,
   };
 }
 
 
-/** Multi-step algebra — threshold claims, not “equals the boxed number”. */
+
+/** Multi-step algebra — threshold claims; structured stem. */
 function buildMathCh2HardCalc() {
-  const context = `Decide whether each statement is true or false. Each claim needs a multi-step calculation; the statements give thresholds or qualitative conclusions, not the finished boxed value.`;
+  const context = `Each claim below is an independent elementary-algebra check.
+
+Nested fractions, a $2\\times 2$ linear system, a polynomial product, a rational equation, and a radical equation appear in turn.
+
+Decide whether each statement is true or false. The claims give thresholds, not boxed final values.`;
 
   const statements = [
     "For $x=2$, the nested quotient $\\dfrac{\\frac{3}{x}-\\frac{2}{x+1}}{\\frac{5}{x+1}-\\frac{1}{x}}$ is strictly smaller than $0.8$.",
     "The unique solution of the system $3u-2v=11$, $2u+5v=3$ satisfies $u+v>3$.",
-    "Substituting $x=2$ into $(2x^{3}-5x+1)(3x-4)$ yields a value strictly larger than $12$.",
+    "At $x=2$, the product $(2x^{3}-5x+1)(3x-4)$ is strictly larger than $12$.",
     "Over the reals with $x\\ne\\pm 2$, every solution of $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{5}{x^{2}-4}$ is strictly smaller than $2$.",
     "The positive solution of $\\sqrt{x+7}-\\sqrt{x-1}=2$ is strictly larger than $3$.",
   ];
-
-  // A: 5/7≈0.714 < 0.8 True
-  // B: 48/19≈2.53 ≯ 3 False
-  // C: 14 > 12 True
-  // D: x=5/2=2.5 which is NOT < 2; also "every solution" — the only solution is 2.5 ≮ 2 → False
-  // E: x=2 ≯ 3 False
 
   const answer_key = [true, false, true, false, false];
 
@@ -678,9 +734,16 @@ So the statement is False.`,
 }
 
 
+
 /** Numeric parabola — threshold claims, no spoon-fed vertex coords. */
 function buildMathCh7Numeric() {
-  const context = `Consider the parabola $g(x)=2x^{2}-12x+10$ and the family of lines through its vertex with slope $m$:
+  const context = `A parabola is given by
+
+$$
+g(x)=2x^{2}-12x+10
+$$
+
+Lines through its vertex form the family
 
 $$
 f_{m}(x)=m(x-3)-8
@@ -749,9 +812,19 @@ So the statement is True.`,
 
 /** Power costs — calibrate unknowns; qualitative/threshold claims. */
 function buildMathCh8TwoUnknowns() {
-  const context = `A logistics firm models delivery capacity by $C(v)=A v^{p}$ for $v>0$, with unknown $A>0$ and $p>0$. Calibration: $C(3)=24$ and $C(6)=96$. Each van-hour costs EUR 12, and each unit of capacity earns EUR 0.80. Profit is $\\pi(v)=0.8\\,C(v)-12v$.
+  const context = `Delivery capacity follows the power model
 
-Decide whether each statement is true or false.`;
+$$
+C(v)=A v^{p}\\qquad(v>0)
+$$
+
+with unknown $A>0$ and $p>0$.
+
+Calibration runs give $C(3)=24$ and $C(6)=96$.
+
+Each van-hour costs EUR $12$, and each unit of capacity earns EUR $0.80$.
+
+Profit is $\\pi(v)=0.8\\,C(v)-12v$.`;
 
   const statements = [
     "Doubling van-hours multiplies capacity by more than three.",
@@ -814,13 +887,15 @@ So the statement is False.`,
 
 /** Heavy-calc cubic — many derivative/evaluation steps. */
 function buildMathCh9HardPoly() {
-  const context = `A machine’s short-run output rate (units per hour) is modelled by
+  const context = `A machine's short-run output rate (units per hour) is
 
 $$
-p(t)=t^{3}-6t^{2}+5t+12\\qquad(0\\le t\\le 5)
+p(t)=t^{3}-6t^{2}+5t+12
 $$
 
-where $t$ is hours into the shift. Decide whether each statement is true or false.`;
+The shift window is $0\\le t\\le 5$, with $t$ in hours.
+
+Decide whether each statement is true or false.`;
 
   const statements = [
     "The product of the three real roots of $p(t)=0$ (allowing roots outside the shift window) is strictly negative.",
@@ -881,30 +956,38 @@ So the statement is False.`,
 }
 
 
-/** Exp/log — dense prose that must be parsed into symbols. */
+/** Exp/log — numbers kept numeric; short interpret only. */
 function buildMathCh10ExpLog() {
-  const context = `A laboratory note records two separate processes.
+  const context = `An isotope sample decays continuously according to
 
-First, a sealed isotope sample is tracked by mass. At the opening of the study the sample weighs eight hundred milligrams. Six years later the same sample weighs four hundred fifty milligrams. Staff treat the loss as continuous exponential decay: the mass at time $t$ years is the opening mass times $e$ raised to a constant negative rate times $t$.
+$$
+N(t)=N_{0}e^{-\\lambda t}
+$$
 
-Second, and independently, a continuously compounded endowment opens at five thousand euros. Five years later the endowment stands at six thousand five hundred euros. The same continuous-force model is used for the endowment’s growth.
+At $t=0$ the mass is $800\\ \\mathrm{mg}$, and at $t=6$ years it is $450\\ \\mathrm{mg}$.
+
+Separately, a continuously compounded endowment follows
+
+$$
+S(t)=5000\\,e^{rt}
+$$
+
+It opens at EUR $5000$ and stands at EUR $6500$ after $5$ years.
 
 Decide whether each statement is true or false.`;
 
   const statements = [
-    "The isotope’s continuous decay rate (in absolute value) exceeds $0.09$ per year.",
-    "The isotope’s half-life is strictly shorter than seven years.",
-    "Twelve years after the opening weigh-in, the remaining isotope mass is still above two hundred sixty milligrams.",
-    "The endowment’s continuous force of interest exceeds $5.5\\%$ per year.",
-    "Starting from the opening balance, the endowment first reaches nine thousand euros at some time later than eleven years.",
+    "The isotope’s continuous decay rate satisfies $\\lambda>0.09$.",
+    "The isotope’s half-life is strictly less than $7$ years.",
+    "After $12$ years the remaining mass is still above $260\\ \\mathrm{mg}$.",
+    "The endowment’s continuous force satisfies $r>0.055$.",
+    "The endowment first reaches EUR $9000$ at some time $t>11$ years.",
   ];
 
   const answer_key = [true, false, false, false, true];
 
   const tactical_explanations = [
     `**A.** → True
-
-Parse as $N(t)=800 e^{-\\lambda t}$ with $N(6)=450$:
 
 $$
 \\lambda=\\dfrac{1}{6}\\ln\\dfrac{800}{450}\\approx 0.0959>0.09
@@ -914,25 +997,33 @@ So the statement is True.`,
 
     `**B.** → False
 
-Half-life $\\ln 2/\\lambda\\approx 7.23$ is not shorter than $7$.
+$$
+t_{1/2}=\\dfrac{\\ln 2}{\\lambda}\\approx 7.23\\nless 7
+$$
 
 So the statement is False.`,
 
     `**C.** → False
 
-$N(12)=800(450/800)^{2}=253.125$, which is not above $260$.
+$$
+N(12)=800\\left(\\dfrac{450}{800}\\right)^{2}=253.125\\ngtr 260
+$$
 
 So the statement is False.`,
 
     `**D.** → False
 
-$r=\\frac15\\ln(6500/5000)\\approx 0.0525$, which does not exceed $0.055$.
+$$
+r=\\dfrac{1}{5}\\ln\\dfrac{6500}{5000}\\approx 0.0525\\ngtr 0.055
+$$
 
 So the statement is False.`,
 
     `**E.** → True
 
-$5000 e^{rt}=9000$ gives $t=\\ln 1.8/r\\approx 11.20>11$.
+$$
+5000\\,e^{rt}=9000\\qquad\\Rightarrow\\qquad t=\\dfrac{\\ln 1.8}{r}\\approx 11.20>11
+$$
 
 So the statement is True.`,
   ];
@@ -940,7 +1031,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 10.MOCK.DECAY",
     id: "MATH 10.MOCK.DECAY",
-    title: "Lab note decay and endowment — parse prose into exp/log models",
+    title: "Isotope decay and continuous endowment",
     chapter: 10,
     subsection: "10.3",
     context,
@@ -949,9 +1040,10 @@ So the statement is True.`,
     tactical_explanations,
     difficulty_level: "5/5",
     solution_overview:
-      "Translate the prose weigh-ins and endowment balances into exponential models, then adjudicate rate, half-life, and crossing-time thresholds.",
+      "Read $N(0)=800$, $N(6)=450$ into $N(t)=N_0 e^{-\\lambda t}$ and $S(0)=5000$, $S(5)=6500$ into $S(t)=5000 e^{rt}$, then adjudicate the five thresholds.",
   };
 }
+
 
 
 /** Long log-product derivative — max/min without spoon-feeding f'. */
@@ -962,7 +1054,9 @@ $$
 f(x)=(x^{2}+4)\\ln(2x+1)\\,e^{-x}
 $$
 
-Decide whether each statement is true or false. The claims concern critical points and max/min behaviour; they do not hand you a finished derivative formula to tick.`;
+The claims concern critical points and max/min behaviour.
+
+Decide whether each statement is true or false.`;
 
   const statements = [
     "The function $f$ has a critical point in the open interval $(0.5,1.5)$.",

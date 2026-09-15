@@ -105,7 +105,7 @@ export const MOCK_EXAM_3_POINTS_TOTAL =
 
 /** Bump when Mock 3 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_3_CONTENT_REV =
-  "2026-09-15d · 34q · Silicon · anti-plug · prose exp · EUR katex";
+  "2026-09-15e · 34q · Silicon · logic truth-table · structured stems";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
