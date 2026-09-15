@@ -100,12 +100,16 @@ export const uiExtraDe: Record<string, string> = {
   Promo: "Promo",
   "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.":
     "Zahle sicher per Karte über Monobank. Das Zahlungsformular öffnet sich hier; nach der Zahlung kommst du automatisch zurück.",
+  "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
+    "Weiter zur sicheren Monobank-Zahlungsseite — dort kannst du per Karte, Apple Pay oder Google Pay zahlen. Danach kommst du hierher zurück.",
   "Pay by card. You will return here after the payment.":
     "Zahle per Karte. Nach der Zahlung kommst du hierher zurück.",
   "15% discount applied": "15 % Rabatt angewendet",
   "Proceed to payment · ": "Zur Zahlung · ",
   "One-time payment · No subscription · Secured by Monobank":
     "Einmalige Zahlung · Kein Abo · Gesichert durch Monobank",
+  "Card · Apple Pay · Google Pay · Secured by Monobank":
+    "Karte · Apple Pay · Google Pay · Gesichert durch Monobank",
   "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly — no payment needed.":
     "Hast du einen Einmal-Promocode? Löse ihn angemeldet ein, um sofort vollen Kurszugang freizuschalten — ohne Zahlung.",
   Promocode: "Promocode",
@@ -295,12 +299,16 @@ export const uiExtraUk: Record<string, string> = {
   Promo: "Промо",
   "Pay securely by card through Monobank. The payment form opens here; you return automatically after the payment.":
     "Оплатіть безпечно карткою через Monobank. Форма оплати відкриється тут; після оплати ви автоматично повернетесь.",
+  "Continue to Monobank's secure payment page to pay by card, Apple Pay, or Google Pay. You return here right after the payment.":
+    "Перейдіть на захищену сторінку Monobank, щоб сплатити карткою, Apple Pay або Google Pay. Після оплати ви повернетесь сюди.",
   "Pay by card. You will return here after the payment.":
     "Оплатіть карткою. Після оплати ви повернетесь сюди.",
   "15% discount applied": "Знижку 15% застосовано",
   "Proceed to payment · ": "До оплати · ",
   "One-time payment · No subscription · Secured by Monobank":
     "Одноразова оплата · Без підписки · Захищено Monobank",
+  "Card · Apple Pay · Google Pay · Secured by Monobank":
+    "Картка · Apple Pay · Google Pay · Захищено Monobank",
   "Have a one-time promocode? Redeem it while signed in to unlock full course access instantly — no payment needed.":
     "Маєте одноразовий промокод? Активуйте його під час входу, щоб миттєво відкрити повний доступ — без оплати.",
   Promocode: "Промокод",
