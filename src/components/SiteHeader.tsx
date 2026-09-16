@@ -102,7 +102,7 @@ export function SiteHeader({
 
         <div className="ml-auto flex min-w-0 max-w-full flex-wrap items-center justify-end gap-1.5 sm:gap-2.5 lg:ml-0 lg:justify-self-end">
           {actions ? (
-            <div className="order-last flex max-w-full basis-full flex-wrap items-center justify-end gap-1.5 sm:order-none sm:basis-auto sm:gap-2">
+            <div className="flex max-w-full flex-wrap items-center justify-end gap-1.5 sm:gap-2">
               {actions}
             </div>
           ) : null}
