@@ -3,9 +3,9 @@
  * this module (read from the MONOBANK_TOKEN secret inside each call).
  *
  * Creating an invoice with `displayType: "iframe"` returns an embeddable
- * widget URL (card + Apple Pay + Google Pay when the merchant/device supports
- * them). Embed it with `allow="payment *"` so checkout stays on our site —
- * do not top-level redirect to pay.mbnk.biz.
+ * widget URL. Embed it with `allow="payment *"` so buyers can pay by card,
+ * Apple Pay, or Google Pay on our site without a top-level redirect to
+ * pay.mbnk.biz.
  *
  * Docs:
  *  - POST /api/merchant/invoice/create
@@ -75,8 +75,8 @@ export async function createMonoInvoice(input: {
       ...(input.webHookUrl ? { webHookUrl: input.webHookUrl } : {}),
       validity: 3600,
       paymentType: "debit",
-      // Embeddable checkout widget (card + Apple Pay + Google Pay). Host iframe
-      // must set allow="payment *" per Monobank widget docs.
+      // Official embeddable widget (card + Apple Pay + Google Pay). Host iframe
+      // must set allow="payment *" per Monobank docs.
       displayType: "iframe",
     }),
   });
