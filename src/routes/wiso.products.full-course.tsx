@@ -12,7 +12,7 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PATH = "/wiso/products/full-course" as const;
-const TEAL = "#0F766E";
+const INDIGO = "#3730A3";
 
 export const Route = createFileRoute("/wiso/products/full-course")({
   head: () => ({
@@ -60,7 +60,7 @@ export function WisoFullCourseProduct() {
       <SiteHeader
         actions={
           <LocalizedLink
-            to="/wiso/products"
+            to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
           >
             ← Products
@@ -69,16 +69,16 @@ export function WisoFullCourseProduct() {
       />
 
       <main>
-        <section className="relative overflow-hidden bg-gradient-to-br from-teal-950 via-teal-900 to-teal-800 px-6 py-16 text-white lg:px-8 lg:py-24">
+        <section className="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-indigo-900 to-indigo-800 px-6 py-16 text-white lg:px-8 lg:py-24">
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-200/90">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-200/90">
                 WiSo track · German-taught
               </p>
               <h1 className="mt-3 font-display text-4xl font-bold leading-tight sm:text-5xl">
                 Full WiSo Course
               </h1>
-              <p className="mt-4 text-lg text-teal-50/90">
+              <p className="mt-4 text-lg text-indigo-50/90">
                 Complete preparation for the WU Vienna WiSo Aufnahmeprüfung — visually and
                 structurally distinct from the Full BBE Course.
               </p>
@@ -88,7 +88,7 @@ export function WisoFullCourseProduct() {
                 </span>
                 <LocalizedLink
                   to="/wiso/demo-practice"
-                  className="inline-flex items-center rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-teal-900 hover:bg-teal-50"
+                  className="inline-flex items-center rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-indigo-900 hover:bg-indigo-50"
                 >
                   Preview WiSo demo URL
                 </LocalizedLink>
@@ -101,7 +101,7 @@ export function WisoFullCourseProduct() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(45,212,191,0.35),transparent_55%),radial-gradient(circle_at_80%_80%,rgba(15,118,110,0.5),transparent_50%)]" />
               <div className="absolute inset-0 flex flex-col justify-end p-6">
                 <p className="font-display text-2xl font-bold">WiSo · 2,703 places</p>
-                <p className="mt-1 text-sm text-teal-100/90">
+                <p className="mt-1 text-sm text-indigo-100/90">
                   Economics · Math · German comprehension
                 </p>
               </div>
@@ -114,12 +114,12 @@ export function WisoFullCourseProduct() {
             {features.map((f) => (
               <div
                 key={f.title}
-                className="rounded-2xl border border-teal-200/70 bg-card p-6 dark:border-teal-800/40"
+                className="rounded-2xl border border-indigo-200/70 bg-card p-6 dark:border-indigo-800/40"
               >
                 <div className="flex items-center gap-3">
                   <div
                     className="grid h-10 w-10 place-items-center rounded-lg text-white"
-                    style={{ backgroundColor: TEAL }}
+                    style={{ backgroundColor: INDIGO }}
                   >
                     <f.icon className="h-5 w-5" />
                   </div>
@@ -140,7 +140,7 @@ export function WisoFullCourseProduct() {
                 "WiSo mocks & mock builder URLs",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-teal-700" />
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-indigo-700" />
                   {item}
                 </li>
               ))}

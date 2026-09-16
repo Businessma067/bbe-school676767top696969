@@ -1,6 +1,10 @@
 /**
  * Shared config for the WiSo Exam knowledge hub pages.
  * Facts aligned with official WU WiSo materials (see wiso-exam-reference).
+ *
+ * Mark claims carefully:
+ * - [WU] = official FAQ / PDFs
+ * - [3rd party — verify] = prep sites / recent-cycle descriptions not confirmed in WU FAQ
  */
 
 export const WISO_EXAM_HUB_PATH = "/wiso/entrance-exam" as const;
@@ -46,15 +50,30 @@ export const WISO_PRACTICE_ROUTES = {
   home: "/wiso",
 } as const;
 
+export const WISO_OFFICIAL_LINKS = {
+  faq: "https://www.wu.ac.at/studium/bachelor/wirtschafts-und-sozialwissenschaften/ueberblick/aufnahmeverfahren/faqs-aufnahmeverfahren",
+  economicsPdf:
+    "https://www.wu.ac.at/fileadmin/wu/h/programs/bachelor/Wirtschaft_verstehen_Aufnahmepr%C3%BCfung_2026.pdf",
+  scoringPdf:
+    "https://www.wu.ac.at/fileadmin/wu/h/programs/bachelor/wiso/Teilpunktesystem_WISO.pdf",
+  prepLanding: "https://short.wu.ac.at/av-wiso",
+} as const;
+
 export const WISO_EXAM_FORMAT = {
-  questionCount: 34,
   durationHours: 2,
+  /**
+   * [3rd party — verify] Recent prep/cycle descriptions often cite ~34 questions.
+   * WU FAQ confirms entirely MCQ but does not publish an exact official count.
+   * Prefer WISO_FORMAT_NOTE whenever this number is shown to readers.
+   */
+  questionCount: 34,
   /** Three content areas per WU FAQ — not English. */
   areas: {
     economics: "Economics (wirtschaftliche Grundkenntnisse)",
     german: "German reading comprehension (deutsches Sprachverständnis)",
     mathematics: "Mathematics",
   },
+  /** [WU] 2026/27 places */
   places: 2703,
   location: "VIECON, Vienna Congress and Convention Center (Messe Wien)",
   cycle: {
@@ -67,41 +86,98 @@ export const WISO_EXAM_FORMAT = {
   },
 } as const;
 
+/**
+ * Format note used across hub pages.
+ * Do not hard-claim BBE’s 34×5 true/false layout as official WiSo format.
+ */
 export const WISO_FORMAT_NOTE =
-  "The WiSo entrance exam is a 2-hour, in-person multiple-choice test with 34 questions (each with five true/false statements in recent cycles). WU may adjust details by year — always confirm on the official WU website.";
+  "WU confirms a 2-hour, in-person, entirely multiple-choice Aufnahmeprüfung at VIECON. The exact per-question layout (single-correct vs multi-select vs five true/false statements under one stem) is not spelled out in the public FAQ. Some recent prep and cycle descriptions mention roughly 34 questions with five statements each — treat that as unverified until WU publishes detail. Always confirm the current cycle on wu.ac.at.";
 
-/** Official economics study guide chapters (Wirtschaft verstehen, 2026/27). */
+/** Official economics study guide chapters (Wirtschaft verstehen, 2026/27). [WU] */
 export const WISO_ECONOMICS_CHAPTERS = [
   {
     id: "ch1",
     title: "Warum wir wirtschaften und was Wirtschaften bedeutet",
     topics:
-      "Circular flow, opportunity cost, supply/demand, GDP/GNP, market types, money, interest, inflation (CPI, ECB 2% target)",
+      "Circular flow of the economy, opportunity cost, supply and demand, GDP/GNP, market types, money, interest, inflation (CPI), ECB 2% price-stability target",
+    bullets: [
+      "Why societies organise production and exchange",
+      "Circular flow of income and spending",
+      "Opportunity cost and scarcity",
+      "Supply, demand, and market equilibrium",
+      "GDP, GNP, and measuring economic activity",
+      "Market types and competitive structures",
+      "Money, interest, inflation, CPI, and the ECB’s 2% target",
+    ],
   },
   {
     id: "ch2",
     title: "Wirtschaft als Teil der Gesellschaft und Umwelt",
     topics:
-      "Sustainability, planetary boundaries, decoupling, wellbeing economics (SWB, Doughnut model) — WiSo-specific",
+      "Sustainability, planetary boundaries, decoupling, wellbeing economics (SWB, Doughnut model) — WiSo-specific relative to BBE’s Fuhrmann text",
+    bullets: [
+      "Economy embedded in society and the natural environment",
+      "Sustainability concepts and planetary boundaries",
+      "Decoupling growth from environmental pressure",
+      "Wellbeing and subjective wellbeing (SWB)",
+      "Doughnut economics as a framing model",
+    ],
   },
   {
     id: "ch3",
     title: "Was Wirtschaften für Unternehmen bedeutet",
     topics:
       "Company types, legal forms, financing, accounting basics (balance sheet, P&L, cash flow), marketing",
+    bullets: [
+      "Types of enterprises and legal forms",
+      "Ownership and organisational structure",
+      "Sources of financing",
+      "Accounting basics: balance sheet, profit & loss, cash flow",
+      "Marketing fundamentals and short business scenarios",
+    ],
   },
   {
     id: "ch4",
     title: "Digitalisierung und Vernetzung von Wirtschaft und Gesellschaft",
     topics:
       "Digital transformation, new business models, internet platforms, Wirtschaftsinformatik — WiSo-specific",
+    bullets: [
+      "Digital transformation of firms and markets",
+      "Platforms and networked business models",
+      "Information systems / Wirtschaftsinformatik basics",
+      "How digitalisation reshapes work, competition, and society",
+    ],
   },
 ] as const;
 
+/**
+ * Math topic areas. No official WU math skriptum — [3rd party — verify],
+ * framed similarly to secondary-school business math under time pressure.
+ */
 export const WISO_MATH_TOPICS = [
-  "Algebra",
-  "Statistics",
-  "Calculus (Kalkül)",
-  "Logical reasoning",
-  "Formula and equation fluency under time pressure",
+  {
+    id: "algebra",
+    title: "Algebra & equations",
+    body: "Rearranging formulas, linear and quadratic equations, inequalities, and fluent algebraic manipulation in German word problems.",
+  },
+  {
+    id: "statistics",
+    title: "Statistics & probability",
+    body: "Descriptive statistics, elementary probability, and interpreting data statements under exam time pressure.",
+  },
+  {
+    id: "calculus",
+    title: "Calculus (Kalkül)",
+    body: "Functions, differentiation ideas, and single-variable optimisation at secondary-school business depth.",
+  },
+  {
+    id: "logic",
+    title: "Logical reasoning",
+    body: "Evaluating claims carefully, spotting when a statement does not follow from the stem, and avoiding informal traps.",
+  },
+  {
+    id: "fluency",
+    title: "Formula fluency under time pressure",
+    body: "Recognising which method applies quickly, without translating every stem into English first.",
+  },
 ] as const;

@@ -52,7 +52,7 @@ export function WisoExamShell({
             {badges.map((badge) => (
               <span
                 key={badge}
-                className="inline-flex max-w-full items-center rounded-full border border-teal-300/40 bg-teal-950/40 px-3 py-1 text-[11px] font-medium leading-snug text-white backdrop-blur-sm [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
+                className="inline-flex max-w-full items-center rounded-full border border-indigo-300/40 bg-indigo-950/40 px-3 py-1 text-[11px] font-medium leading-snug text-white backdrop-blur-sm [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]"
               >
                 {badge}
               </span>
@@ -117,7 +117,7 @@ export function WisoStatGrid({
       {items.map((item) => (
         <div
           key={item.label}
-          className="rounded-2xl border border-teal-200/60 bg-card px-4 py-4 shadow-sm dark:border-teal-800/40"
+          className="rounded-2xl border border-indigo-200/60 bg-card px-4 py-4 shadow-sm dark:border-indigo-800/40"
         >
           <p className="text-xs font-medium text-muted-foreground">{item.label}</p>
           <p className="mt-2 font-display text-xl font-bold tracking-tight text-foreground">

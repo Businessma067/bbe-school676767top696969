@@ -17,7 +17,6 @@ import { Route as WisoEconomicsGermanRoute } from "@/routes/wiso.economics-germa
 import { Route as WisoExamPreparationRoute } from "@/routes/wiso.exam-preparation";
 import { Route as WisoAdmissionRoute } from "@/routes/wiso.admission";
 import { Route as WisoWuViennaRoute } from "@/routes/wiso.wu-vienna";
-import { Route as WisoProductsRoute } from "@/routes/wiso.products.index";
 import { Route as WisoFullCourseRoute } from "@/routes/wiso.products.full-course";
 import { Route as WisoDemoPracticeRoute } from "@/routes/wiso.demo-practice";
 import { Route as WisoMockExamsRoute } from "@/routes/wiso.mock-exams";
@@ -75,7 +74,7 @@ const ENGLISH_HEAD_BY_PATH: Partial<Record<LocalizablePath, () => HeadFnResult |
   "/wiso/exam-preparation": () => headFrom(WisoExamPreparationRoute),
   "/wiso/admission": () => headFrom(WisoAdmissionRoute),
   "/wiso/wu-vienna": () => headFrom(WisoWuViennaRoute),
-  "/wiso/products": () => headFrom(WisoProductsRoute),
+  "/wiso/products": () => headFrom(ProductsRoute),
   "/wiso/products/full-course": () => headFrom(WisoFullCourseRoute),
   "/wiso/demo-practice": () => headFrom(WisoDemoPracticeRoute),
   "/wiso/mock-exams": () => headFrom(WisoMockExamsRoute),

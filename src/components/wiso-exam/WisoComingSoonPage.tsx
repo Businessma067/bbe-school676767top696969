@@ -12,7 +12,7 @@ export function WisoComingSoonPage({ title, description }: Props) {
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader />
       <main className="mx-auto max-w-2xl px-6 py-20 text-center lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-400">
+        <p className="text-xs font-semibold uppercase tracking-widest text-indigo-700 dark:text-indigo-400">
           WiSo track
         </p>
         <h1 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
@@ -20,7 +20,7 @@ export function WisoComingSoonPage({ title, description }: Props) {
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <LocalizedLink
             to={WISO_PRACTICE_ROUTES.home}
-            className="inline-flex rounded-md bg-teal-700 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-800"
+            className="inline-flex rounded-md bg-indigo-700 px-5 py-3 text-sm font-semibold text-white hover:bg-indigo-800"
           >
             Back to WiSo home
           </LocalizedLink>

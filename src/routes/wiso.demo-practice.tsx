@@ -26,7 +26,7 @@ export function WisoDemoPracticePlaceholder() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <main className="mx-auto max-w-2xl px-6 py-20 text-center">
-        <p className="text-xs font-semibold uppercase tracking-wide text-teal-800 dark:text-teal-300">
+        <p className="text-xs font-semibold uppercase tracking-wide text-indigo-800 dark:text-indigo-300">
           WiSo · Coming next
         </p>
         <h1 className="mt-3 font-display text-3xl font-bold">WiSo Demo Practice</h1>
@@ -36,7 +36,7 @@ export function WisoDemoPracticePlaceholder() {
         </p>
         <LocalizedLink
           to="/wiso"
-          className="mt-8 inline-flex rounded-md bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-800"
+          className="mt-8 inline-flex rounded-md bg-indigo-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800"
         >
           WiSo home
         </LocalizedLink>

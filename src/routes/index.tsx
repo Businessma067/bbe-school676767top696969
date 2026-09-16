@@ -173,34 +173,49 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-2 md:gap-6">
+            <div className="mx-auto mt-10 grid max-w-5xl items-stretch gap-4 md:grid-cols-2 md:gap-6">
               {EXAM_OPTIONS.map((exam) => {
                 const isWiso = exam.id === "wiso";
                 return (
                   <article
                     key={exam.id}
                     className={cn(
-                      "flex flex-col rounded-2xl border p-6 sm:p-8",
+                      "flex h-full flex-col rounded-2xl border p-6 sm:p-8",
                       isWiso
-                        ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
+                        ? "border-indigo-200/80 bg-indigo-50/40 dark:border-indigo-800/40 dark:bg-indigo-950/20"
                         : "border-border bg-card",
                     )}
                   >
-                    <p
-                      className={cn(
-                        "text-xs font-semibold uppercase tracking-wide",
-                        isWiso ? "text-teal-800 dark:text-teal-300" : "text-primary",
-                      )}
-                    >
-                      {exam.label}
-                    </p>
-                    <h2 className="mt-2 font-display text-xl font-semibold text-foreground sm:text-2xl">
+                    <div className="flex items-center gap-3">
+                      <div
+                        className={cn(
+                          "grid h-11 w-11 shrink-0 place-items-center rounded-xl shadow-md ring-1",
+                          isWiso
+                            ? "bg-gradient-to-br from-indigo-700 via-indigo-600 to-indigo-800 ring-indigo-500/30"
+                            : "bg-gradient-to-br from-primary via-accent to-primary ring-primary/30",
+                        )}
+                        aria-hidden
+                      >
+                        <span className="font-display text-xs font-bold tracking-tight text-primary-foreground">
+                          {exam.label}
+                        </span>
+                      </div>
+                      <p
+                        className={cn(
+                          "text-xs font-semibold uppercase tracking-wide",
+                          isWiso ? "text-indigo-800 dark:text-indigo-300" : "text-primary",
+                        )}
+                      >
+                        {exam.label}
+                      </p>
+                    </div>
+                    <h2 className="mt-4 font-display text-xl font-semibold text-foreground sm:text-2xl">
                       {exam.title}
                     </h2>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
                       {exam.description}
                     </p>
-                    <ul className="mt-5 space-y-2">
+                    <ul className="mt-5 flex-1 space-y-2">
                       {exam.differences.map((item) => (
                         <li
                           key={item}
@@ -209,7 +224,7 @@ export function Index() {
                           <span
                             className={cn(
                               "mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full",
-                              isWiso ? "bg-teal-700" : "bg-primary",
+                              isWiso ? "bg-indigo-700" : "bg-primary",
                             )}
                           />
                           {item}
@@ -220,10 +235,10 @@ export function Index() {
                       to={exam.to}
                       onClick={() => storeExamTrack(exam.id)}
                       className={cn(
-                        "mt-auto inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+                        "mt-8 inline-flex w-full items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
                         isWiso
-                          ? "mt-6 bg-teal-700 hover:bg-teal-800 focus:ring-teal-700"
-                          : "mt-6 bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                          ? "bg-indigo-700 hover:bg-indigo-800 focus:ring-indigo-700"
+                          : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
                       )}
                     >
                       {exam.cta}

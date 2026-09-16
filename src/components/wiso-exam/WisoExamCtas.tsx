@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 const PRIMARY_BTN =
   "inline-flex items-center justify-center gap-1.5 rounded-md px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110";
 const PRIMARY_STYLE = {
-  background: "linear-gradient(135deg, #0F766E 0%, #0D9488 100%)",
-  boxShadow: "0 8px 20px -8px rgba(15,118,110,0.55)",
+  background: "linear-gradient(135deg, #3730A3 0%, #4F46E5 100%)",
+  boxShadow: "0 8px 20px -8px rgba(55,48,163,0.55)",
 } as const;
 
 const GHOST_BTN =
@@ -91,7 +91,7 @@ export function WisoTextLink({
       to={to}
       params={params}
       className={cn(
-        "inline-flex items-center gap-1 text-sm font-semibold text-teal-800 underline-offset-4 hover:underline dark:text-teal-300",
+        "inline-flex items-center gap-1 text-sm font-semibold text-indigo-800 underline-offset-4 hover:underline dark:text-indigo-300",
         className,
       )}
     >
@@ -114,7 +114,7 @@ export function WisoInfoCallout({
       className={cn(
         "rounded-2xl border px-5 py-4",
         tone === "official"
-          ? "border-teal-300/70 bg-teal-50/60 dark:border-teal-800/50 dark:bg-teal-950/30"
+          ? "border-indigo-300/70 bg-indigo-50/60 dark:border-indigo-800/50 dark:bg-indigo-950/30"
           : "border-border bg-secondary/40",
       )}
     >
@@ -124,22 +124,30 @@ export function WisoInfoCallout({
   );
 }
 
-export function WisoDemoCta({ className }: { className?: string }) {
+export function WisoDemoCta({
+  className,
+  title = "Try WiSo prep on dedicated URLs",
+  body = "Demo practice, mocks, and flashcards for WiSo live under /wiso/... so you stay off the BBE English track.",
+  cta = "Open WiSo demo",
+}: {
+  className?: string;
+  title?: string;
+  body?: string;
+  cta?: string;
+}) {
   return (
     <div
       className={cn(
-        "flex flex-col items-start justify-between gap-4 rounded-2xl border border-teal-200/70 bg-gradient-to-br from-teal-50/80 to-card p-6 sm:flex-row sm:items-center dark:border-teal-800/40 dark:from-teal-950/40",
+        "flex flex-col items-start justify-between gap-4 rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-indigo-50/80 to-card p-6 sm:flex-row sm:items-center dark:border-indigo-800/40 dark:from-indigo-950/40",
         className,
       )}
     >
       <div>
-        <p className="font-display text-lg font-bold text-foreground">Try WiSo prep when it opens</p>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Demo practice, mocks, and flashcards for WiSo are on dedicated URLs — coming next.
-        </p>
+        <p className="font-display text-lg font-bold text-foreground">{title}</p>
+        <p className="mt-1 text-sm text-muted-foreground">{body}</p>
       </div>
       <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>
-        Open WiSo demo
+        {cta}
         <ArrowRight className="h-4 w-4" />
       </WisoPrimaryButton>
     </div>

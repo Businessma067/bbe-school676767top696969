@@ -7,7 +7,7 @@ import {
 } from "@/components/wiso-exam/WisoExamCtas";
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { WisoExamShell, WisoSection } from "@/components/wiso-exam/WisoExamShell";
-import { WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
+import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -22,12 +22,13 @@ export const Route = createFileRoute("/wiso/exam-preparation")({
       {
         name: "description",
         content:
-          "A practical WiSo preparation sequence: Wirtschaft verstehen, German reading, math fluency, scoring awareness, then timed mocks.",
+          "How to prepare for the WU Vienna WiSo entrance exam: format, Wirtschaft verstehen, German reading, math fluency, Teilpunktesystem, timed mocks, and example timelines.",
       },
       { property: "og:title", content: "How to Prepare for the WU WiSo Entrance Exam" },
       {
         property: "og:description",
-        content: "Step-by-step WiSo prep plan without mixing up BBE English content.",
+        content:
+          "A practical WiSo study plan from diagnostics through mocks — without mixing up BBE English content.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -39,9 +40,108 @@ export const Route = createFileRoute("/wiso/exam-preparation")({
 
 const faqs = [
   {
+    question: "How long should I prepare for WiSo?",
+    answer:
+      "Many applicants use several months to cover Wirtschaft verstehen, German reading stamina, and math fluency. With less calendar time, increase weekly intensity. The example 4/8/12-week plans below assume focused weekly hours.",
+  },
+  {
     question: "Can I reuse BBE prep for WiSo?",
     answer:
       "Math and some economics concepts overlap. German reading and WiSo-specific economics chapters (sustainability, digitalisation) do not. Never study BBE English as a substitute for WiSo German.",
+  },
+  {
+    question: "Should I start with a diagnostic?",
+    answer:
+      "Yes. An early timed set shows whether you leak points on language, definitions, calculation, or scoring behaviour — so your schedule is evidence-based.",
+  },
+  {
+    question: "When should I take full mock exams?",
+    answer:
+      "After you can handle topic-level and mixed practice with decent accuracy. Use mocks to train pacing and Teilpunktesystem behaviour, not as your first exposure to the format.",
+  },
+  {
+    question: "What order should I study subjects?",
+    answer:
+      "Lock scoring and format early; build math fundamentals in parallel with Wirtschaft verstehen chapters 1 and 3; schedule explicit weeks for chapters 2 and 4; keep German reading as a weekly habit from day one.",
+  },
+];
+
+const steps = [
+  {
+    id: "understand",
+    title: "Understand the exam first",
+    body: "Learn the two-stage process, three content areas (no English), and gemischtes Teilpunktesystem before you grind volume. Format mistakes are expensive.",
+    link: { to: "/wiso/entrance-exam", label: "WiSo Entrance Exam Guide →" },
+  },
+  {
+    id: "scoring",
+    title: "Internalise scoring",
+    body: "Practice max/r and max/f mentally. Know when leaving an option unmarked protects points versus when you should mark confidently.",
+    link: { to: "/wiso/exam-scoring", label: "Scoring explained →" },
+  },
+  {
+    id: "diagnostic",
+    title: "Take a diagnostic",
+    body: "Sit an early timed mixed set on WiSo URLs to see how you handle economics, German, and math under real stem pressure.",
+    link: { to: WISO_PRACTICE_ROUTES.mockExams, label: "Open WiSo mocks →" },
+  },
+  {
+    id: "econ",
+    title: "Cover Wirtschaft verstehen",
+    body: "Work all four chapters. Flag WiSo-only chapters 2 and 4 so they are not skipped because “BBE economics felt familiar.”",
+    link: { to: "/wiso/economics-german", label: "Economics & German guide →" },
+  },
+  {
+    id: "german",
+    title: "Build German reading stamina",
+    body: "Daily academic German passages with statement-style questions. Fluency applicants still lose points on scope and implication traps.",
+    link: { to: "/wiso/economics-german", label: "German section notes →" },
+  },
+  {
+    id: "math",
+    title: "Lock math fluency",
+    body: "Algebra first, then statistics/calculus/logic under time. Train German word-problem vocabulary early.",
+    link: { to: "/wiso/mathematics", label: "Mathematics guide →" },
+  },
+  {
+    id: "mocks",
+    title: "Full mocks and builder",
+    body: "Finish with full timed mocks and custom sets on /wiso URLs so you never teleport into BBE English drills by accident.",
+    link: { to: WISO_PRACTICE_ROUTES.mockBuilder, label: "Mock builder →" },
+  },
+];
+
+const timelines = [
+  {
+    title: "12-week plan",
+    hours: "~10–12 h / week",
+    bullets: [
+      "Weeks 1–2: format, scoring, diagnostic, algebra rebuild",
+      "Weeks 3–6: Wirtschaft verstehen ch.1–3 + weekly German",
+      "Weeks 7–8: ch.2 & ch.4 deep dive + math mixed sets",
+      "Weeks 9–10: full section mixes under partial timing",
+      "Weeks 11–12: full mocks, error logs, light review",
+    ],
+  },
+  {
+    title: "8-week plan",
+    hours: "~12–15 h / week",
+    bullets: [
+      "Week 1: format + scoring + diagnostic",
+      "Weeks 2–4: econ ch.1–3 + math fundamentals + German daily",
+      "Weeks 5–6: WiSo-only chapters + timed mixed stems",
+      "Weeks 7–8: mocks and weak-spot builder sets",
+    ],
+  },
+  {
+    title: "4-week sprint",
+    hours: "~15–20 h / week",
+    bullets: [
+      "Only viable if foundations already exist",
+      "Prioritise scoring behaviour, German timing, and math speed",
+      "Skim Wirtschaft verstehen with heavy practice, not passive reading",
+      "At least two full mocks before exam week",
+    ],
   },
 ];
 
@@ -51,27 +151,95 @@ export function WisoExamPreparationPage() {
       h1="How to Prepare for the WU WiSo Entrance Exam"
       lead="A high-leverage sequence: learn the format and Teilpunktesystem, cover Wirtschaft verstehen, build German reading speed, lock math fluency, then add timed mocks on WiSo URLs."
       heroActions={
-        <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.products}>See WiSo products</WisoPrimaryButton>
+        <>
+          <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>Start WiSo demo</WisoPrimaryButton>
+          <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.products}>See products</WisoPrimaryButton>
+        </>
       }
     >
       <div className="space-y-14">
+        <WisoSection id="introduction" title="Introduction">
+          <p>
+            WiSo prep fails in predictable ways: treating it like BBE with German labels, skipping
+            Wirtschaft verstehen chapters 2 and 4, ignoring Teilpunktesystem strategy, or never timing
+            German reading. This page is a practical sequence you can adapt to your calendar before{" "}
+            {WISO_EXAM_FORMAT.cycle.examDate}.
+          </p>
+        </WisoSection>
+
         <WisoInfoCallout label="Stay on the WiSo track" tone="note">
-          Demo practice, mocks, mock builder, and flashcards for WiSo live under /wiso/... so you do
-          not accidentally jump into BBE English drills.
+          Demo practice, mocks, mock builder, and flashcards for WiSo live under /wiso/... so you do not
+          accidentally jump into BBE English drills. Products for both tracks are listed together on{" "}
+          <WisoTextLink to="/products" className="inline-flex">
+            /products
+          </WisoTextLink>
+          .
         </WisoInfoCallout>
 
         <WisoSection id="sequence" title="Recommended sequence">
-          <ol className="list-decimal space-y-3 pl-5">
-            <li>Read the exam overview and scoring pages so partial credit feels intuitive.</li>
-            <li>Work through Wirtschaft verstehen chapter by chapter; flag WiSo-only chapters 2 and 4.</li>
-            <li>Add daily German academic reading with statement-style questions.</li>
-            <li>Drill math for speed — formulas first, then mixed timed sets.</li>
-            <li>Finish with full mocks and the mock builder on WiSo URLs.</li>
-          </ol>
-          <div className="flex flex-wrap gap-4">
-            <WisoTextLink to="/wiso/entrance-exam">Exam overview →</WisoTextLink>
-            <WisoTextLink to="/wiso/economics-german">Economics & German →</WisoTextLink>
-            <WisoTextLink to={WISO_PRACTICE_ROUTES.mockExams}>WiSo mocks →</WisoTextLink>
+          <div className="space-y-4">
+            {steps.map((step, i) => (
+              <div key={step.id} className="rounded-2xl border border-border bg-card p-5">
+                <p className="text-xs font-semibold uppercase tracking-wide text-indigo-800 dark:text-indigo-300">
+                  Step {i + 1}
+                </p>
+                <h3 className="mt-1 font-display text-lg font-bold text-foreground">{step.title}</h3>
+                <p className="mt-2 text-[0.98rem] leading-relaxed text-muted-foreground">{step.body}</p>
+                <div className="mt-3">
+                  <WisoTextLink to={step.link.to}>{step.link.label}</WisoTextLink>
+                </div>
+              </div>
+            ))}
+          </div>
+        </WisoSection>
+
+        <WisoSection id="timelines" title="Example timelines">
+          <p>
+            These are intensity examples, not guarantees. Adjust for your starting level and whether you
+            are also preparing BBE in parallel.
+          </p>
+          <div className="mt-4 grid gap-4 lg:grid-cols-3">
+            {timelines.map((plan) => (
+              <div key={plan.title} className="rounded-2xl border border-border bg-card p-5">
+                <h3 className="font-display text-lg font-bold">{plan.title}</h3>
+                <p className="mt-1 text-sm font-medium text-indigo-800 dark:text-indigo-300">
+                  {plan.hours}
+                </p>
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-foreground">
+                  {plan.bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </WisoSection>
+
+        <WisoSection id="weekly" title="What a strong week looks like">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>2–3 math blocks (fundamentals + timed mixed stems)</li>
+            <li>2 Wirtschaft verstehen sessions with statement practice</li>
+            <li>German reading on most days (short beats rare and long)</li>
+            <li>One scoring-aware review: replay misses with “mark / leave blank” decisions</li>
+            <li>Optional: flashcards for definitions and formula triggers</li>
+          </ul>
+        </WisoSection>
+
+        <WisoSection id="mistakes" title="Prep mistakes to avoid">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Using only BBE English packs because “math is the same.”</li>
+            <li>Reading Wirtschaft verstehen passively without statement drills.</li>
+            <li>Skipping sustainability and digitalisation chapters.</li>
+            <li>First full mock the week of the exam.</li>
+            <li>Ignoring admission logistics until after content prep (OSA deadlines still bind).</li>
+          </ul>
+          <WisoTextLink to="/wiso/admission">Admission timeline →</WisoTextLink>
+        </WisoSection>
+
+        <WisoSection id="next" title="Start practicing">
+          <div className="flex flex-wrap gap-3">
+            <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>WiSo demo</WisoPrimaryButton>
+            <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.fullCourse}>Full WiSo Course</WisoPrimaryButton>
           </div>
         </WisoSection>
 
