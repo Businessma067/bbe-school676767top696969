@@ -17,8 +17,8 @@ import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
-/** Shared poster art; WiSo stands out via indigo frame + badge (no blur wash). */
-const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
+/** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
+const FULL_COURSE_IMAGE = "/full-wiso-course-product-v2.png";
 
 const PATH = "/wiso/products/full-course" as const;
 const INDIGO = "#3730A3";
@@ -179,17 +179,6 @@ export function WisoFullCourseProduct() {
               className="absolute inset-0 h-full w-full object-cover object-center"
               draggable={false}
             />
-            <div
-              className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset"
-              style={{ boxShadow: `inset 0 0 0 3px ${INDIGO}` }}
-              aria-hidden
-            />
-            <span
-              className="absolute left-4 top-4 rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-md"
-              style={{ backgroundColor: INDIGO }}
-            >
-              WiSo track
-            </span>
           </div>
 
           <div className="mt-5 flex items-center gap-3">
