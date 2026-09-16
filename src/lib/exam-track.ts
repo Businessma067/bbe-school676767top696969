@@ -11,8 +11,9 @@ export const TRACK_STORAGE_KEY = "bbe-school-exam-track";
 const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso"]);
 
 /**
- * Canonical path pairs for the header BBE ↔ WiSo toggle.
- * Keys are locale-stripped pathnames.
+ * Canonical path pairs for optional parallel-page mapping.
+ * Keys are locale-stripped pathnames. Do not map multiple BBE paths onto the
+ * same WiSo URL — reverse lookup would be ambiguous.
  */
 const BBE_TO_WISO: Record<string, string> = {
   [BBE_HOME]: WISO_HOME,
@@ -24,15 +25,13 @@ const BBE_TO_WISO: Record<string, string> = {
   "/bbe-exam-preparation": "/wiso/exam-preparation",
   "/bbe-admission": "/wiso/admission",
   "/wu-vienna": "/wiso/wu-vienna",
-  "/products": "/wiso/products",
+  "/products": "/products",
   "/products/full-course": "/wiso/products/full-course",
   "/products/demo-practice": "/wiso/demo-practice",
   "/demo-practice": "/wiso/demo-practice",
   "/mock-exams": "/wiso/mock-exams",
   "/products/custom-mock-builder": "/wiso/mock-builder",
   "/flashcards": "/wiso/flashcards",
-  "/important-features": "/wiso",
-  "/parents": "/wiso",
 };
 
 const WISO_TO_BBE: Record<string, string> = Object.fromEntries(
@@ -90,8 +89,16 @@ export function trackHome(track: ExamTrack): string {
   return track === "wiso" ? WISO_HOME : BBE_HOME;
 }
 
-/** Map a locale-stripped path onto the other track (or that track's home). */
-export function pathForTrack(pathname: string, target: ExamTrack): string {
+/**
+ * Header track toggle always lands on that track's landing page.
+ * Parallel-page mapping is available via `counterpartPath` when needed.
+ */
+export function pathForTrack(_pathname: string, target: ExamTrack): string {
+  return trackHome(target);
+}
+
+/** Map a locale-stripped path onto the other track when a counterpart exists. */
+export function counterpartPath(pathname: string, target: ExamTrack): string {
   const path = stripLocalePrefix(pathname);
 
   if (path === "/" || path === "/bbe-vs-wiso") {

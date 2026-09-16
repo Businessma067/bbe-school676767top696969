@@ -55,20 +55,19 @@ function examInfoItem(track: ExamTrack): NavItem {
       };
 }
 
-function productsItem(track: ExamTrack): NavItem {
-  return track === "wiso"
-    ? {
-        label: "Products",
-        href: "/wiso/products",
-        isRoute: true,
-        activeExact: ["/wiso/products", "/wiso/products/full-course"],
-      }
-    : {
-        label: "Products",
-        href: "/products",
-        isRoute: true,
-        activeExact: ["/products", "/products/lite-bbe-course", "/products/full-course"],
-      };
+function productsItem(_track: ExamTrack): NavItem {
+  return {
+    label: "Products",
+    href: "/products",
+    isRoute: true,
+    activeExact: [
+      "/products",
+      "/products/lite-bbe-course",
+      "/products/full-course",
+      "/wiso/products",
+      "/wiso/products/full-course",
+    ],
+  };
 }
 
 function demoPracticeItem(track: ExamTrack): NavItem {

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/wiso/wu-vienna")({
       {
         name: "description",
         content:
-          "Why WU Vienna matters for WiSo applicants: triple accreditation, German-taught bachelor scale, and how the entrance exam fits the university.",
+          "Why WU Vienna matters for WiSo applicants: triple accreditation, German-taught bachelor scale, places, and how the entrance exam fits the university.",
       },
       { property: "og:title", content: "WU Vienna for WiSo Applicants" },
       {
@@ -58,17 +58,46 @@ export function WisoWuViennaPage() {
         />
 
         <WisoInfoCallout label="Independent guide" tone="official">
-          BBE School is not affiliated with WU Vienna. Use official WU pages for binding rules,
-          fees, and dates.
+          BBE School is not affiliated with WU Vienna. Use official WU pages for binding rules, fees,
+          and dates.
         </WisoInfoCallout>
 
         <WisoSection id="why" title="Why applicants choose WiSo at WU">
           <p>
             Triple-accredited WU education at a tuition level far below many UK/US peers, with a
-            German-taught curriculum and more places than BBE. The filter is still a timed
-            multiple-choice exam with partial-credit scoring.
+            German-taught curriculum and far more places than BBE (~{WISO_EXAM_FORMAT.places} vs ~240).
+            The filter is still a timed multiple-choice exam with gemischtes Teilpunktesystem scoring —
+            held in person at VIECON when demand exceeds supply.
           </p>
-          <WisoTextLink to={WISO_PRACTICE_ROUTES.home}>Back to WiSo home →</WisoTextLink>
+          <p>
+            WiSo also allows winter or summer program start after a successful procedure, unlike BBE’s
+            winter-only start. That flexibility matters for planning, but it does not change the need to
+            finish registration and the OSA on time.
+          </p>
+        </WisoSection>
+
+        <WisoSection id="exam-fit" title="How the entrance exam fits">
+          <p>
+            The Aufnahmeprüfung tests wirtschaftliche Grundkenntnisse (Wirtschaft verstehen), Mathematik,
+            and deutsches Sprachverständnis. Same campus reputation as BBE applicants aim for — different
+            language pillar and economics guide. Scoring mechanism matches BBE’s partial-credit engine.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <WisoTextLink to="/wiso/admission">Admission pipeline →</WisoTextLink>
+            <WisoTextLink to="/bbe-vs-wiso">BBE vs WiSo →</WisoTextLink>
+          </div>
+        </WisoSection>
+
+        <WisoSection id="prep" title="Preparing on this site">
+          <p>
+            Stay on the WiSo track for demos, mocks, and tools. Products for both tracks are listed
+            together on /products so you can compare Full BBE and Full WiSo side by side.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>WiSo demo</WisoPrimaryButton>
+            <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.products}>Products</WisoPrimaryButton>
+            <WisoTextLink to={WISO_PRACTICE_ROUTES.home}>Back to WiSo home →</WisoTextLink>
+          </div>
         </WisoSection>
       </div>
     </WisoExamShell>

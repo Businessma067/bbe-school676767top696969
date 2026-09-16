@@ -75,16 +75,17 @@ export const Route = createFileRoute("/products/")({
   head: () => ({
     links: [...hreflangLinks("/products"), { rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
-      { title: "Products — BBE School" },
+      { title: "Products — BBE & WiSo | BBE School" },
       {
         name: "description",
         content:
-          "Explore BBE School products: free Demo-Practice Package and the Full BBE Course for WU Vienna entrance exam prep.",
+          "Explore BBE School products for both WU tracks: Demo-Practice, Full BBE Course, and Full WiSo Course.",
       },
-      { property: "og:title", content: "Products — BBE School" },
+      { property: "og:title", content: "Products — BBE & WiSo | BBE School" },
       {
         property: "og:description",
-        content: "Explore BBE School products: free Demo-Practice Package and the Full BBE Course.",
+        content:
+          "BBE and WiSo prep products on one page: Demo-Practice, Full BBE Course, and Full WiSo Course.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -99,7 +100,7 @@ export const Route = createFileRoute("/products/")({
 });
 
 const ORANGE = "#C2643A";
-const TEAL = "#0F766E";
+const INDIGO = "#3730A3";
 
 type Product = {
   title: string;
@@ -190,7 +191,7 @@ export function ProductsPage() {
               const owned = isFullBbe && ownsFullCourse;
               const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
-              const accentColor = p.accent === "wiso" ? TEAL : ORANGE;
+              const accentColor = p.accent === "wiso" ? INDIGO : ORANGE;
               const isWiso = p.accent === "wiso";
 
               return (
@@ -221,7 +222,7 @@ export function ProductsPage() {
                   <div
                     className={`relative aspect-[4/3] w-full overflow-hidden bg-secondary ${
                       p.badge ? "rounded-t-[14px]" : "rounded-t-2xl"
-                    } ${isWiso ? "bg-gradient-to-br from-teal-800 to-teal-950" : ""}`}
+                    } ${isWiso ? "bg-gradient-to-br from-indigo-800 to-indigo-950" : ""}`}
                   >
                     <img
                       src={p.image}
@@ -232,7 +233,7 @@ export function ProductsPage() {
                       }`}
                     />
                     {isWiso ? (
-                      <div className="absolute inset-0 bg-gradient-to-t from-teal-950/85 to-teal-900/20" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/85 to-indigo-900/20" />
                     ) : null}
                   </div>
                   <div className="flex flex-1 flex-col p-6">

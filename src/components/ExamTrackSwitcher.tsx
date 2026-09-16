@@ -58,7 +58,7 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
         className={cn(
           "rounded px-2 py-1 transition-colors sm:px-2.5",
           track === "wiso"
-            ? "bg-teal-700 text-white dark:bg-teal-600"
+            ? "bg-indigo-700 text-white dark:bg-indigo-600"
             : "text-muted-foreground hover:text-foreground",
         )}
         aria-pressed={track === "wiso"}
@@ -89,7 +89,7 @@ export function TrackBrandMark({ compact = false }: { compact?: boolean }) {
           "relative grid shrink-0 place-items-center overflow-hidden rounded-xl shadow-md ring-1 transition-transform group-hover:scale-105",
           compact ? "h-9 w-9" : "h-10 w-10",
           track === "wiso"
-            ? "bg-gradient-to-br from-teal-700 via-teal-600 to-teal-800 ring-teal-500/30"
+            ? "bg-gradient-to-br from-indigo-700 via-indigo-600 to-indigo-800 ring-indigo-500/30"
             : "bg-gradient-to-br from-primary via-accent to-primary ring-primary/30",
         )}
       >
