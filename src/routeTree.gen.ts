@@ -82,6 +82,7 @@ import { Route as PaymentFailedRouteImport } from './routes/payment.failed'
 import { Route as MatchingSubjectRouteImport } from './routes/matching.$subject'
 import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
 import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
+import { Route as DevMock5CaseAuditRouteImport } from './routes/dev.mock5-case-audit'
 import { Route as DevMock4CaseAuditRouteImport } from './routes/dev.mock4-case-audit'
 import { Route as DevMock2CaseAuditRouteImport } from './routes/dev.mock2-case-audit'
 import { Route as DevMock1CaseAuditRouteImport } from './routes/dev.mock1-case-audit'
@@ -476,6 +477,11 @@ const FeaturesAnswerSheetRoute = FeaturesAnswerSheetRouteImport.update({
   path: '/features/answer-sheet',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DevMock5CaseAuditRoute = DevMock5CaseAuditRouteImport.update({
+  id: '/dev/mock5-case-audit',
+  path: '/dev/mock5-case-audit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DevMock4CaseAuditRoute = DevMock4CaseAuditRouteImport.update({
   id: '/dev/mock4-case-audit',
   path: '/dev/mock4-case-audit',
@@ -630,6 +636,7 @@ export interface FileRoutesByFullPath {
   '/dev/mock1-case-audit': typeof DevMock1CaseAuditRoute
   '/dev/mock2-case-audit': typeof DevMock2CaseAuditRoute
   '/dev/mock4-case-audit': typeof DevMock4CaseAuditRoute
+  '/dev/mock5-case-audit': typeof DevMock5CaseAuditRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
@@ -716,6 +723,7 @@ export interface FileRoutesByTo {
   '/dev/mock1-case-audit': typeof DevMock1CaseAuditRoute
   '/dev/mock2-case-audit': typeof DevMock2CaseAuditRoute
   '/dev/mock4-case-audit': typeof DevMock4CaseAuditRoute
+  '/dev/mock5-case-audit': typeof DevMock5CaseAuditRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
@@ -812,6 +820,7 @@ export interface FileRoutesById {
   '/dev/mock1-case-audit': typeof DevMock1CaseAuditRoute
   '/dev/mock2-case-audit': typeof DevMock2CaseAuditRoute
   '/dev/mock4-case-audit': typeof DevMock4CaseAuditRoute
+  '/dev/mock5-case-audit': typeof DevMock5CaseAuditRoute
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
@@ -910,6 +919,7 @@ export interface FileRouteTypes {
     | '/dev/mock1-case-audit'
     | '/dev/mock2-case-audit'
     | '/dev/mock4-case-audit'
+    | '/dev/mock5-case-audit'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
@@ -996,6 +1006,7 @@ export interface FileRouteTypes {
     | '/dev/mock1-case-audit'
     | '/dev/mock2-case-audit'
     | '/dev/mock4-case-audit'
+    | '/dev/mock5-case-audit'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
@@ -1091,6 +1102,7 @@ export interface FileRouteTypes {
     | '/dev/mock1-case-audit'
     | '/dev/mock2-case-audit'
     | '/dev/mock4-case-audit'
+    | '/dev/mock5-case-audit'
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
@@ -1181,6 +1193,7 @@ export interface RootRouteChildren {
   DevMock1CaseAuditRoute: typeof DevMock1CaseAuditRoute
   DevMock2CaseAuditRoute: typeof DevMock2CaseAuditRoute
   DevMock4CaseAuditRoute: typeof DevMock4CaseAuditRoute
+  DevMock5CaseAuditRoute: typeof DevMock5CaseAuditRoute
   FeaturesAnswerSheetRoute: typeof FeaturesAnswerSheetRoute
   PaymentFailedRoute: typeof PaymentFailedRoute
   PaymentSuccessRoute: typeof PaymentSuccessRoute
@@ -1703,6 +1716,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FeaturesAnswerSheetRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dev/mock5-case-audit': {
+      id: '/dev/mock5-case-audit'
+      path: '/dev/mock5-case-audit'
+      fullPath: '/dev/mock5-case-audit'
+      preLoaderRoute: typeof DevMock5CaseAuditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/dev/mock4-case-audit': {
       id: '/dev/mock4-case-audit'
       path: '/dev/mock4-case-audit'
@@ -2093,6 +2113,7 @@ const rootRouteChildren: RootRouteChildren = {
   DevMock1CaseAuditRoute: DevMock1CaseAuditRoute,
   DevMock2CaseAuditRoute: DevMock2CaseAuditRoute,
   DevMock4CaseAuditRoute: DevMock4CaseAuditRoute,
+  DevMock5CaseAuditRoute: DevMock5CaseAuditRoute,
   FeaturesAnswerSheetRoute: FeaturesAnswerSheetRoute,
   PaymentFailedRoute: PaymentFailedRoute,
   PaymentSuccessRoute: PaymentSuccessRoute,

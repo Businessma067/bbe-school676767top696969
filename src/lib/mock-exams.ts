@@ -33,6 +33,12 @@ import {
   MOCK_EXAM_4_QUESTION_COUNT,
   buildMockExam4Questions,
 } from "@/lib/mock-exam-4-content";
+import {
+  MOCK_EXAM_5_CONTENT_REV,
+  MOCK_EXAM_5_POINTS_TOTAL,
+  MOCK_EXAM_5_QUESTION_COUNT,
+  buildMockExam5Questions,
+} from "@/lib/mock-exam-5-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -83,12 +89,7 @@ export interface ExamQuestion {
   solutionOverview?: string;
 }
 
-const FULL_EXAM_QUESTION_COUNT =
-  SCORING_CONFIG.economics.taskCount +
-  SCORING_CONFIG.english.taskCount +
-  SCORING_CONFIG.math.taskCount;
-
-/** Available exams. Mock 1 uses curated real content; others stay placeholders for now. */
+/** Available exams. Mocks 1–5 use curated banks; Custom Mock Builder exams are separate. */
 export const MOCK_EXAMS: MockExamSummary[] = [
   {
     id: "mock-1",
@@ -126,7 +127,15 @@ export const MOCK_EXAMS: MockExamSummary[] = [
     pointsTotal: MOCK_EXAM_4_POINTS_TOTAL,
     contentRev: MOCK_EXAM_4_CONTENT_REV,
   },
-  { id: "mock-5", title: "Mock Exam 5", questionCount: FULL_EXAM_QUESTION_COUNT, durationMinutes: 120, tier: "full" },
+  {
+    id: "mock-5",
+    title: "Mock Exam 5",
+    questionCount: MOCK_EXAM_5_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_5_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_5_CONTENT_REV,
+  },
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
@@ -170,8 +179,8 @@ function makeRandom(seed: string) {
 const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
 /**
- * Exam question set. Mock 1 is curated real content; other ids stay placeholders
- * until their banks are authored (same ExamQuestion shape either way).
+ * Exam question set. Mocks 1–5 are curated real content; unknown ids stay
+ * placeholders until their banks are authored (same ExamQuestion shape either way).
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
   if (examId === "mock-1") {
@@ -185,6 +194,9 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   }
   if (examId === "mock-4") {
     return buildMockExam4Questions(examId);
+  }
+  if (examId === "mock-5") {
+    return buildMockExam5Questions(examId);
   }
 
   const rand = makeRandom(examId);

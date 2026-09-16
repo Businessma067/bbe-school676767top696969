@@ -1,0 +1,1046 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.6.23",
+      "title": "Plant Capacity Expansion",
+      "subsection": "2.6",
+      "chapter": 2,
+      "context": "Consider a manufacturing plant adding a production line that raises monthly output without raising unit prices. Evaluate the following economic assertions:",
+      "statements": [
+        "If demand stays fixed while supply shifts right, equilibrium price may fall.",
+        "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
+        "Higher raw-material input prices could partially offset the expansion by shifting supply leftward.",
+        "Customers ordering the product face lower shortage risk after a successful supply expansion.",
+        "Adding capacity that lowers unit cost can shift supply rightward for the manufactured good."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Extra capacity that shifts supply rightward, with demand fixed, moves equilibrium down the demand curve: price may fall while quantity rises. Expansion without demand growth softens the clearing price.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Plant Capacity Expansion, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nSo the statement is True.",
+        "The new intersection after a rightward supply shift typically shows a larger equilibrium quantity if demand is unchanged. More is traded at the new lower or equal clearing price.\n\nAt the intersection used in Plant Capacity Expansion, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nSo the statement is True.",
+        "Dearer raw materials shift supply leftward and can partly offset the expansion’s rightward push. Net supply depends on both the new line and the input-cost shock.\n\nSo the statement is True.",
+        "Successful supply expansion raises available output at given prices, so customers face less risk of shortage at the old posted price. Scarcity pressure eases when capacity arrives.\n\nBuyers who still want the good at the low price compete with time, contacts, or willingness to pay more later. That pressure is exactly what pushes a competitive price upward.\n\nCeiling rules or sticky posted prices can freeze the shortage in place. Until the legal or listed price can move, quantity demanded stays above quantity supplied.\n\nIn Plant Capacity Expansion, that excess demand shows up as queues, waitlists, or vanishing stock at the posted ticket. Price has not yet risen enough to ration the scarce units or invite more supply.\n\nSo the statement is True.",
+        "Adding a line that lowers unit cost is a supply-side improvement: more output is profitable at each price, shifting supply rightward for the manufactured good.\n\nCost, technology, capacity, or seller numbers change how much firms offer at each price in Plant Capacity Expansion. Those events shift supply rather than merely changing the good’s own price.\n\nA rightward supply move typically lowers equilibrium price when demand is unchanged; a leftward move does the opposite. Quantity adjusts at the new intersection.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 2.5.15",
+      "title": "Planned steel quota surplus",
+      "subsection": "2.5",
+      "chapter": 2,
+      "context": "Central plan targets steel output above what machinery factories can absorb. Evaluate the following economic assertions:",
+      "statements": [
+        "Overplanned output creates surpluses when downstream demand is not coordinated through prices.",
+        "Market systems use price declines to signal excess supply and reduce production profitably.",
+        "Profit motive encourages firms to economise and respond to paying customers in competitive markets.",
+        "Transformation introduces market feedback to reduce persistent mismatch of intersectoral output.",
+        "Scarcity still applies under planning; producing too much steel wastes scarce inputs."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "When the plan pushes steel beyond what machinery plants can absorb, unsold metal piles up. Overplanned output creates surplus because downstream demand was not coordinated through flexible prices linking sectors.\n\nDownward price pressure continues while excess stock sits on shelves or in warehouses. Sellers who refuse to cut prices simply wait longer with idle goods.\n\nA rightward supply jump without matching demand often creates the surplus at yesterday’s price. Equilibrium then rebuilds at a lower price and higher traded quantity.\n\nUnsold inventory in Planned steel quota surplus is the mirror image of shortage: at the current price, sellers offered more than buyers took. Discounting and slower restocking are the usual responses.\n\nSo the statement is True.",
+        "In markets, excess steel would tend to lower prices, squeeze margins, and lead firms to cut production. Price declines are the signal that excess supply should shrink profitably rather than keep meeting an inflated tonnage target.\n\nIn Planned steel quota surplus, the statement’s nouns line up with how prices, ownership, or quantities actually operate in the chapter’s models.\n\nThe mechanism is concrete: someone gains revenue, faces a cost, or meets a constraint named in the claim. That is enough to carry the verdict.\n\nSo the statement is True.",
+        "Profit motive pushes firms to economise on inputs and chase paying customers. Competitive markets reward cutting wasteful steel output that nobody will buy, unlike quota fulfilment that can treat excess as success on paper.\n\nSo the statement is True.",
+        "Transformation introduces market feedback so intersectoral mismatch shows up in inventories and prices instead of only in plan reports. That feedback helps reduce persistent surplus in one industry and shortage in another.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Planned steel quota surplus, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nSo the statement is True.",
+        "Scarcity still binds under planning: labour and energy used on unwanted steel cannot make consumer goods. Producing too much steel wastes scarce inputs even when the plan calls the tonnage a victory.\n\nIn Planned steel quota surplus, the statement’s nouns line up with how prices, ownership, or quantities actually operate in the chapter’s models.\n\nThe mechanism is concrete: someone gains revenue, faces a cost, or meets a constraint named in the claim. That is enough to carry the verdict.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "3/5"
+    },
+    {
+      "case_id": "CASE 3.5.07",
+      "title": "Undercapitalisation risk",
+      "subsection": "3.5",
+      "chapter": 3,
+      "context": "Consider undercapitalisation as a challenge linked to smaller geographic scope. Evaluate the following economic assertions:",
+      "statements": [
+        "Importing finished goods for domestic resale makes a firm a manufacturer in two countries.",
+        "Multiple legal systems apply when a firm conducts business in several countries.",
+        "Language differences matter for customer contact in international markets.",
+        "Globalisation excludes service firms and applies only to factories.",
+        "A longer supply chain is typical when sourcing and selling nationally rather than locally."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Importing finished goods for domestic resale makes a firm a trader or retailer, not automatically a manufacturer in two countries. Manufacturing requires producing goods, not merely bringing them in for shop shelves.\n\nSo the statement is False.",
+        "Doing business in several countries brings several legal systems into play: contracts, product rules, and tax regimes differ by jurisdiction. Firms must cope with that patchwork rather than assuming one home statute travels everywhere. Multiple systems are a defining international complication.\n\nSo the statement is True.",
+        "Language differences shape how international firms talk to customers, write manuals, train staff, and negotiate. Misread terms can lose sales or create liability even when the product itself is sound. A subsidiary team that cannot brief local buyers in their language undercuts market entry. That is why language sits beside culture and currency as a standard international friction, not a soft optional skill. Customer contact across borders therefore depends on linguistic capacity as much as on price lists.\n\nSo the statement is True.",
+        "Globalisation covers service firms as well as factories. Banks, consultancies, airlines, and software houses operate across borders under the same broad process. Limiting globalisation to manufacturing plants alone is too narrow.\n\nSo the statement is False.",
+        "Sourcing and selling nationally usually lengthens the supply chain relative to a purely local producer. More regions, depots, and carriers enter the route when the home country is the market.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 3.5.15",
+      "title": "Currency exposure abroad",
+      "subsection": "3.5",
+      "chapter": 3,
+      "context": "Analyze an exporter invoices in euros and dollars across borders. Evaluate the following economic assertions:",
+      "statements": [
+        "National scale operations extend supply chains across the home country.",
+        "Policy support for regional firms often targets limited-area operators.",
+        "Importing for domestic resale alone does not by itself make a firm a multinational manufacturer.",
+        "Local scope means both limited operating area and chiefly nearby customers.",
+        "Operating in two countries eliminates exposure to different currencies."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "National-scale operations stretch supply chains across the home country through regional depots, carriers, and suppliers. Domestic breadth still lengthens logistics relative to a single-district producer.\n\nSo the statement is True.",
+        "Policy support for regional firms often targets operators confined to limited areas: grants, advice, or infrastructure aimed at provincial and county-scale businesses. That focus matches the regional geographic problem set rather than multinational factory building abroad.\n\nSo the statement is True.",
+        "Importing finished goods for domestic resale does not by itself create a multinational manufacturer. The firm may be a national wholesaler or retailer with foreign sourcing upstream, yet without foreign production of its own or foreign sales footprint it is not automatically a multi-country manufacturer. Manufacturing in two countries, or selling across several, is a different pattern from bringing stock home to sell. The importer label and the multinational-manufacturer label therefore part company when production stays elsewhere and shelves stay domestic.\n\nSo the statement is True.",
+        "Local scope pairs a limited operating area with chiefly nearby customers. Both geography of operations and geography of buyers matter. A district bakery with walk-ins satisfies both sides of that definition.\n\nSo the statement is True.",
+        "Operating in two countries increases exposure to different currencies rather than eliminating it. Dual-currency invoicing is a risk source, not a vaccine against exchange-rate moves.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 4.5.13",
+      "title": "Trade Credit and Overdraft Traps",
+      "subsection": "4.5",
+      "chapter": 4,
+      "context": "Consider a catering business that covers weekly purchases with supplier credit, reinvests surplus profit internally, and maintains a long-term loan from its owners. Evaluate the following economic assertions:",
+      "statements": [
+        "Retained earnings are external equity because they arise from revenue paid by outside customers.",
+        "Bank overdrafts are short-term debt finance even when used repeatedly throughout the trading year.",
+        "Bank overdrafts are equity finance when the account holder is also a major shareholder of the bank.",
+        "A loan provided by owners is equity finance because the lenders share in the ownership of the business.",
+        "Long-term bank loans are long-term external debt finance with scheduled repayment over extended periods."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Revenue from outside customers can create profit, but retained earnings are internal once kept in the firm. Customer location does not make retained profit external equity for the catering business.\n\nSo the statement is False.",
+        "Repeated use across a trading year does not redefine an overdraft as long-term debt finance. Each drawing remains short-term debt on the current account even when the habit is continuous.\n\nSo the statement is True.",
+        "Even if the account holder also owns major shares in the bank, an overdraft is still bank credit. Shareholder status at the bank does not convert the overdraft into equity finance for the caterer. The business still owes the drawn amount under credit terms rather than holding a residual ownership claim on itself via that line. Equity for the caterer would be share capital or retained earnings, not the bank facility.\n\nSo the statement is False.",
+        "Owners who lend create a creditor relationship alongside any shares they already hold. The loan is debt finance, not equity, because repayment is owed on the lending terms.\n\nSo the statement is False.",
+        "Long-term bank loans schedule repayment over extended periods and count as long-term external debt. They differ from overdrafts and supplier credit used for weekly food purchases.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.6.01",
+      "title": "Matching Finance Term to Asset Life",
+      "subsection": "4.6",
+      "chapter": 4,
+      "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
+      "statements": [
+        "Capital expenditures on assets used over many years should normally be matched with long-term finance.",
+        "The only relevant criterion when choosing a source of finance is the absolute interest rate, so matching term to asset life and gearing risk can be ignored.",
+        "Interest is the sole cost element businesses must consider when comparing loans with share issues.",
+        "High gearing automatically disqualifies a firm from using any form of short-term trade credit for materials.",
+        "Capital expenditure on a warehouse extension should be funded from weekly supplier credit without regard to asset life."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Assets that serve for many years should be funded with finance that is also long-term. Matching repayment to the asset's life keeps capital spending from relying on credit that falls due in weeks.\n\nSo the statement is True.",
+        "Interest rates matter, yet they are not the only relevant criterion when choosing finance. Matching term to asset life and watching gearing risk still shape the decision beside the headline rate.\n\nSo the statement is False.",
+        "Interest is one cost element, not the sole cost businesses must weigh when comparing loans with share issues. Issuance and administration expenses, advisory fees, and ongoing compliance can add material cost to a share or bond issue. Gearing already on the books also changes how risky further debt looks compared with equity. Treating interest alone as the complete cost comparison therefore understates what the chapter asks firms to consider.\n\nSo the statement is False.",
+        "High gearing warns that further borrowing is harder, but it does not ban every short-term trade-credit purchase of materials. Routine supplier credit for inputs can still fit revenue spending even when long-term loan capital is already heavy.\n\nSo the statement is False.",
+        "A warehouse extension binds capital for years; weekly supplier credit falls due far sooner. Funding that capital expenditure from rolling short trade credit mismatches term to asset life.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 5.4.02",
+      "title": "Overconsumption and Budget Limits",
+      "subsection": "5.4",
+      "chapter": 5,
+      "context": "Consider a fashion label that advertises seasonal collections aggressively while some shoppers prefer durable garments they can pass on to friends after years of wear. Evaluate the following economic assertions:",
+      "statements": [
+        "Some purchases are used only for a very short period before being discarded, illustrating overconsumption of short-lived goods.",
+        "Greater awareness of sustainable production and consumption is considered desirable for both businesses and consumers in the marketing responsibility discussion.",
+        "Consuming too much carries potential risks that responsible businesses and consumers should recognise when making production and purchasing decisions.",
+        "Businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
+        "All advertising is automatically ethical whenever it increases sales and informs customers about product features."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Short-lived goods discarded after brief use show overconsumption in action. Cheap seasonal fashion worn a few times then thrown away is a clear case. The statement's illustration matches that pattern.\n\nSo the statement is True.",
+        "Marketing responsibility discussions treat greater awareness of sustainable production and consumption as desirable for firms and households alike. Both sides are asked to take the topic seriously.\n\nSo the statement is True.",
+        "Consuming too much can strain household budgets, fill storage with unused items, and raise environmental costs from production and disposal. Responsible businesses and consumers are expected to recognise those risks when they plan production and purchases. Awareness is presented as a shared duty, not a niche hobby. Ignoring the risks leaves volume-driven habits unchallenged. The statement correctly frames potential risks as something both sides should see.\n\nSo the statement is True.",
+        "Businesses also influence wishes through new products and advertising; they do not only respond to fixed existing needs. Continuous launches and campaigns create demand. The \"never influence\" claim is false.\n\nSo the statement is False.",
+        "Higher sales and feature information do not automatically make advertising ethical. Manipulation can raise sales while remaining unfair. Ethics depends on how persuasion is done, not only on whether volume rises.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.2.028",
+      "title": "Cash Flow Statement Over Two Years 28",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 388 | 437 |\n| Cash flow from investing activities | (330) | (402) |\n| Dividends paid | (49) | (62) |\n| Proceeds from new borrowing | 87 | 74 |\n| Cash flow from financing activities | 38 | 12 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Cash flow from operating activities grew by more than 28% from Year 1 to Year 2.",
+        "Gross profit shows earnings after deducting the direct costs of producing the goods, before operating expenses are deducted.",
+        "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities.",
+        "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated.",
+        "A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Percentage growth for Cash flow from operating activities is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 388, Y_2 = 437\n$$\n\n$$\nY_2 - Y_1 = 437 - 388 = 49\n$$\n\n$$\n\\frac{49}{388} \\approx 0.1263 \\approx 12.6\\%\n$$\n\n$$\n12.6\\% \\le 28\\%\n$$\n\nCash flow from operating activities changed by 12.6%, at or below the 28% threshold claimed.\n\nSo the statement is False.",
+        "A year's revenue is a flow; cash on the balance sheet is a stock at one date. With that split the claim is fine. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Cost of sales gathers direct production costs tied to units sold.\n\nSo the statement is True.",
+        "Dividends paid belong in financing activities. They return cash to equity providers, not to the trading cycle. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. Land is usually kept at cost without an annual write-down. Depreciation matches past spending on the asset, not a fresh cash bill. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
+        "Investing outflows often mean the business invested in long-term assets. That pattern can be healthy growth, not distress. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A investing reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.3.009",
+      "title": "Liquidity From the Balance Sheet 9",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 320 |\n| Machinery | 167 |\n| Office equipment | 55 |\n| Patents, trademarks and licences | 33 |\n| Inventory | 265 |\n| Trade receivables | 71 |\n| Cash and cash equivalents | 93 |\n| Total assets | 1004 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 279 |\n| Retained earnings | 94 |\n| Total equity | 373 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 292 |\n| Bonds payable | 76 |\n| Trade payables | 225 |\n| Bank overdraft | 38 |\n| Total liabilities | 631 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The current ratio is below 1.22.",
+        "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+        "The current ratio exceeds 1.57.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 0.71 times over.",
+        "Inventory make up more than 52.1% of current assets."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "CA ÷ CL is the current-ratio identity used below.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 265 + 71 + 93,\\quad \\text{CA} = 429,\\quad \\text{CL} = 225 + 38\n$$\n\n$$\n\\text{CL} = 263\n$$\n\n$$\n\\frac{429}{263} \\approx 1.6312 > 1.22\n$$\n\nCurrent ratio = 429 ÷ 263 ≈ 1.63.\n\nSo the statement is False.",
+        "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+        "Current ratio = 429 ÷ 263 ≈ 1.63.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 265 + 71 + 93,\\quad \\text{CA} = 429,\\quad \\text{CL} = 225 + 38\n$$\n\n$$\n\\text{CL} = 263\n$$\n\n$$\n\\frac{429}{263} \\approx 1.6312 > 1.57\n$$\n\nCurrent ratio = 429 ÷ 263 ≈ 1.63. The claim says the ratio exceeds 1.57. 1.63 agrees with that wording. Current assets over current liabilities is the standard short-term cover test. Pull both totals from the extract before comparing the threshold. Physical appearance alone does not choose the line.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 429,\\quad \\text{Inventory} = 265,\\quad \\text{CL} = 263\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 429 - 265 = 164\n$$\n\n$$\n\\frac{164}{263} \\approx 0.6236 \\le 0.71\n$$\n\nSo the statement is False.",
+        "From the extract, Inventory = 265 and current assets = 429.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{265}{429}\n$$\n\n$$\n\\text{Share} = 61.8\\%\n$$\n\nInventory / current assets ≈ 265 ÷ 429 = 61.8%. More than 52.1% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.DCF",
+      "title": "Project cash flows — payback and NPV from a chart",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at $t=0$. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).\n\n[[CHART type=\"bar\" title=\"HarborLink upgrade — year-end cash inflows (EUR thousands)\"]]\nYear 1 | Inflow=25\nYear 2 | Inflow=30\nYear 3 | Inflow=35\nYear 4 | Inflow=40\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Initial outlay at $t=0$ | EUR 100,000 |\n| Discount rate (for NPV) | 10% per year |\n\nTreat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and so on). Evaluate the following economic assertions:",
+      "statements": [
+        "The four chart inflows sum to more than EUR 120,000.",
+        "Undiscounted payback occurs strictly before the end of Year 3.",
+        "Undiscounted payback is strictly between 3 and 3.5 years.",
+        "At a 10% discount rate, project NPV is positive.",
+        "Discounting every inflow at 10% leaves a present-value total of inflows strictly below the EUR 100,000 outlay."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nSum the chart inflows (thousands):\n\n$$\n25+30+35+40=130\n$$\n\nIn euros that is EUR 130,000, which exceeds EUR 120,000.\n\nSo the statement is True.",
+        "**B.** → False\n\nCumulative undiscounted inflows:\n\n$$\n25,\\quad 25+30=55,\\quad 55+35=90,\\quad 90+40=130\n$$\n\nAfter Year 3 the project has recovered only EUR 90,000 of the EUR 100,000 outlay, so payback has not yet occurred by the end of Year 3.\n\nSo the statement is False.",
+        "**C.** → True\n\nAfter Year 3 one still needs EUR 10,000. Year 4 contributes EUR 40,000, so the fractional year is\n\n$$\n\\dfrac{10}{40}=0.25\n$$\n\nPayback time:\n\n$$\n3+0.25=3.25\\in(3,\\,3.5)\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nNPV at 10% (working in thousands of euros):\n\n$$\n-100+\\dfrac{25}{1.1}+\\dfrac{30}{1.1^{2}}+\\dfrac{35}{1.1^{3}}+\\dfrac{40}{1.1^{4}}\n$$\n\n$$\n\\approx -100+22.727+24.793+26.296+27.321=+1.137>0\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe present value of the four inflows is about EUR 101,137, which is **above** the EUR 100,000 outlay (that is why NPV is positive).\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) Octopuses possess roughly 500 million neurons, a number comparable to that of some small mammals, yet their nervous system is organised in a way strikingly unlike anything found among vertebrates. Rather than concentrating computational power inside a single centralised brain, approximately two-thirds of an octopus's neurons reside within its eight arms themselves, allowing each arm to process sensory information and initiate movement with a surprising degree of independence from the central brain.\n\n(2) This distributed arrangement raises a genuinely strange possibility: an amputated octopus arm, still connected to its own local neural cluster, can continue reaching toward and grasping food for a brief period after separation from the body, suggesting that at least some forms of goal-directed behaviour do not strictly require centralised, brain-level control at all.\n\n(3) Equally remarkable is the octopus's capacity for rapid camouflage. Specialised skin cells called chromatophores, controlled directly by the nervous system rather than through slower hormonal signalling, allow an octopus to shift its skin colour and pattern within roughly 200 milliseconds, faster than the blink of a human eye.\n\n(4) Beneath these chromatophores lie additional layers called iridophores and leucophores, which manipulate light reflection and scattering to produce effects chromatophore pigment alone cannot achieve, including a convincing imitation of coarse, rocky texture despite the animal's actual skin remaining physically smooth throughout the transformation.\n\n(5) Because octopuses are colour-blind, possessing only a single type of photoreceptor rather than the multiple types most colour-sighted animals rely on, researchers have long debated how they achieve camouflage so precisely matched to their surroundings' actual colouration. One influential hypothesis, still not conclusively confirmed, proposes that specialised photoreceptors distributed across the animal's own skin allow it to sense colour indirectly through the skin itself, entirely independent of its eyes.\n\n(6) Laboratory studies have documented additional cognitive feats difficult to reconcile with a simple, reflexive nervous system. Several octopuses have been recorded unscrewing jar lids to reach food sealed inside, navigating multi-chambered mazes successfully, and, in at least one widely cited case, deliberately squirting water at laboratory lighting fixtures repeatedly until an irritated researcher finally disconnected the offending light entirely.\n\n(7) Such capabilities appear especially puzzling given that most octopus species live for only one to two years, an unusually short lifespan for an animal displaying this degree of behavioural sophistication. Females typically die shortly after their eggs hatch, having stopped eating entirely during a prolonged brooding period that can last several months depending on species and water temperature.\n\n(8) Evolutionarily, octopuses diverged from the lineage leading to vertebrates roughly 500 million years ago, making their sophisticated nervous system a product of convergent evolution entirely independent from the evolutionary pathway that produced vertebrate brains, rather than a shared inherited trait refined separately over time.\n\n(9) Whether studying octopus cognition will meaningfully illuminate general principles of how intelligence can arise through fundamentally different neural architectures, or whether their abilities remain too alien in structure to generalise usefully to other forms of intelligence, remains a question actively debated among neuroscientists and comparative psychologists alike.",
+    "passageTitle": "The Alien Mind — Cognition and Camouflage in Octopuses",
+    "tasks": [
+      {
+        "case_id": "ENG T.14.01",
+        "id": "en-t-14-01",
+        "title": "Task 1",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Octopuses possess roughly 500 million neurons total.",
+          "Most neurons are concentrated inside the central brain.",
+          "About two-thirds of neurons reside within the arms.",
+          "A severed arm can briefly continue grasping food.",
+          "Arm behaviour always requires central brain control."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Octopuses possess roughly 500 million neurons total.**\n\nParagraph (1) opens with the exact scale of octopus neural hardware: roughly 500 million neurons, a count compared to that of some small mammals. The statement simply restates that total figure; nothing in the sentence invents a different number or a different animal. The mammal comparison only supplies a scale cue — it does not change whose neurons are being counted. Match the claim to the opening quantity rather than to the vertebrate analogy that follows it.\n\n**Tip:** When a claim recycles a named quantity from the first sentence of a paragraph, the matching span is almost always the proof.\n\nThe neuron total matches the passage figure, so the claim is true.",
+          "**B) Most neurons are concentrated inside the central brain.**\n\nParagraph (1) contrasts octopus organisation with vertebrates: rather than concentrating computational power in a single centralised brain, about two-thirds of the neurons sit in the arms. Saying \"most\" live in the central brain flips that architecture. \"Most\" would mean a majority in the brain, but the text places the majority in the arms and only implies a smaller share elsewhere. The rejection of a single centralised brain is the structural point of the sentence, so a brain-majority reading cannot stand.\n\n**Trap:** \"Comparable to mammals\" can tempt you toward a mammal-style brain story; the text rejects that layout.\n\nThe claim reverses the passage's distributed layout, so it fails.",
+          "**C) About two-thirds of neurons reside within the arms.**\n\nThe same opening paragraph states that approximately two-thirds of an octopus's neurons reside within its eight arms, which is exactly what \"about two-thirds… within the arms\" paraphrases. The wording is faithful to both the proportion and the location. \"Approximately\" and \"about\" are interchangeable hedges here; neither upgrades nor downgrades the fraction. Location stays \"within the arms,\" so no extra organs are smuggled into the claim.\n\nThat proportion is stated outright in paragraph (1), so the statement holds.",
+          "**D) A severed arm can briefly continue grasping food.**\n\nParagraph (2) describes an amputated arm that, still linked to its local neural cluster, can keep reaching toward and grasping food for a brief period after separation. \"Severed\" and \"amputated\" name the same event; \"briefly\" mirrors \"for a brief period.\" The local neural cluster explains how the behaviour can persist without the body, but the claim only needs the behaviour itself. Do not invent permanence — the text limits the episode to a short window after separation.\n\nThe severed-arm behaviour is described in those terms, so the claim matches the passage.",
+          "**E) Arm behaviour always requires central brain control.**\n\nParagraph (2) draws the opposite lesson: the amputated-arm episode suggests that at least some goal-directed behaviour does not strictly require centralised, brain-level control. The absolute \"always\" collapses that nuance into a universal rule the text denies. One counterexample of post-separation grasping is enough to break a rule that claims every arm action needs the central brain. Stay with \"at least some\" and \"do not strictly require\" rather than upgrading the lesson into a total ban on brain involvement.\n\n**Trap:** Extreme words like always / never often fail when the text offers even one counterexample.\n\nThe passage says some arm behaviour need not depend on the central brain, so the absolute claim fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.14.02",
+        "id": "en-t-14-02",
+        "title": "Task 2",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Chromatophores are controlled via slow hormonal signalling.",
+          "Colour shifts can occur within roughly 200 milliseconds.",
+          "Iridophores help produce effects pigment alone cannot.",
+          "Octopus skin becomes physically rough during texture mimicry.",
+          "Octopuses possess multiple types of colour photoreceptors."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Chromatophores are controlled via slow hormonal signalling.**\n\nParagraph (3) says specialised skin cells called chromatophores are controlled directly by the nervous system rather than through slower hormonal signalling. The statement swaps the actual control route for the slower pathway the text explicitly rejects. The words \"rather than\" mark hormonal signalling as the discarded alternative, not the mechanism in use. Fast colour change is explained by direct neural control; hormonal signalling is named only to be set aside.\n\n**Trap:** The phrase \"slower hormonal signalling\" appears in the text as a contrast, not as the mechanism in use.\n\nNervous-system control, not hormonal signalling, is what the passage names, so the claim fails.",
+          "**B) Colour shifts can occur within roughly 200 milliseconds.**\n\nThe same camouflage paragraph states that an octopus can shift its skin colour and pattern within roughly 200 milliseconds — faster than a human blink. The statement lifts that timing figure without exaggeration. The blink comparison only dramatises speed; it does not replace the numeric window. Colour and pattern both shift in that interval, so a claim limited to colour still stays inside the given timing.\n\nThe 200-millisecond figure is stated directly, so the claim is true.",
+          "**C) Iridophores help produce effects pigment alone cannot.**\n\nParagraph (4) places iridophores and leucophores beneath the chromatophores and says they manipulate light reflection and scattering to produce effects chromatophore pigment alone cannot achieve. Credit to iridophores for those extra optical effects follows the text. Reflection and scattering are the tools; the point is that pigment layers are not enough on their own. Naming iridophores among those deeper layers is enough support even though leucophores share the job.\n\nIridophores are named for precisely that role, so the statement holds.",
+          "**D) Octopus skin becomes physically rough during texture mimicry.**\n\nParagraph (4) stresses that the animal can imitate coarse, rocky texture while its actual skin remains physically smooth throughout the transformation. Physical roughness of the skin is exactly what the passage rules out. Optical mimicry of rock texture is achieved by light effects, not by wrinkling or rasping the surface. Keep \"looks rough\" separate from \"is rough\" when the text insists the skin stays smooth.\n\n**Trap:** Visual texture mimicry is not the same as a change in skin surface geometry.\n\nThe skin stays smooth, so the roughness claim fails.",
+          "**E) Octopuses possess multiple types of colour photoreceptors.**\n\nParagraph (5) opens by calling octopuses colour-blind and stating they possess only a single type of photoreceptor, unlike colour-sighted animals that rely on multiple types. \"Multiple types\" is the vertebrate contrast, not the octopus fact. Colour-blindness here is grounded in that single photoreceptor type, so inventing multiple types undoes the premise of the puzzle. Do not borrow the comparison animals' hardware and assign it to the octopus.\n\nOnly one photoreceptor type is attributed to octopuses, so the claim fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.14.03",
+        "id": "en-t-14-03",
+        "title": "Task 3",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Octopuses have unscrewed jar lids for food.",
+          "Most octopus species live for several decades.",
+          "Females typically die shortly after eggs hatch.",
+          "Octopuses diverged from vertebrates roughly 500 million years ago.",
+          "Their nervous system shares direct inherited vertebrate ancestry."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Octopuses have unscrewed jar lids for food.**\n\nParagraph (6) lists laboratory feats that include several octopuses recorded unscrewing jar lids to reach food sealed inside. The statement is a clean paraphrase of that documented behaviour. The lab setting and the food motive stay intact; nothing upgrades the record into a wild-only claim or drops the goal. \"Recorded\" means observed cases exist, which is all the statement needs.\n\nJar-lid opening for food is explicitly recorded, so the claim matches the passage.",
+          "**B) Most octopus species live for several decades.**\n\nParagraph (7) says most octopus species live for only one to two years — an unusually short lifespan. \"Several decades\" stretches that window by orders of magnitude and contradicts the stated range. The text even flags the short life as unusual for such behavioural sophistication, so a decades-long reading fights both the number and the tone. Keep the one-to-two-year span and reject any paraphrase that multiplies it into decades.\n\n**Trap:** Impressive cognition can make a long lifespan feel \"natural\"; the numbers say otherwise.\n\nOne-to-two-year lives overturn the decades claim, so it fails.",
+          "**C) Females typically die shortly after eggs hatch.**\n\nThe same lifespan paragraph states that females typically die shortly after their eggs hatch, after stopping eating during a prolonged brooding period. The statement tracks that typical pattern. \"Typically\" matches the passage's hedging, so you need not claim every female in every species. Brooding and fasting explain the sequence, but the claim itself only requires the post-hatching death pattern.\n\nFemale mortality after hatching is stated directly, so the claim holds.",
+          "**D) Octopuses diverged from vertebrates roughly 500 million years ago.**\n\nParagraph (8) places the evolutionary split: octopuses diverged from the lineage leading to vertebrates roughly 500 million years ago. The quantity and the comparator lineage are both intact in the paraphrase. \"Lineage leading to vertebrates\" is what \"from vertebrates\" compresses; the date stays the same. Do not confuse this deep split with the later claim about convergent, independent brain evolution.\n\nThe half-billion-year divergence figure is in the text, so the statement is true.",
+          "**E) Their nervous system shares direct inherited vertebrate ancestry.**\n\nParagraph (8) calls the octopus nervous system a product of convergent evolution entirely independent from the vertebrate brain pathway, \"rather than a shared inherited trait.\" Claiming direct inherited vertebrate ancestry is the model the text rejects. Independence is the key word: similar sophistication arose on a separate track, not by refining a common inherited brain plan. Treat \"convergent\" as the opposite of shared ancestry here, not as soft evidence for it.\n\nIndependence via convergent evolution overturns shared ancestry, so the claim fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.14.04",
+        "id": "en-t-14-04",
+        "title": "Task 4",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Distributed neurons imply arms can act somewhat independently.",
+          "If arms hold two-thirds of neurons, one-third remains elsewhere.",
+          "Colour-blindness implies precise camouflage cannot possibly occur.",
+          "Short lifespan implies cognitive sophistication requires long-term learning.",
+          "Convergent evolution implies similar traits arose separately, not shared."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Distributed neurons imply arms can act somewhat independently.**\n\nParagraph (1) explains that putting roughly two-thirds of the neurons in the arms lets each arm process sensory information and initiate movement with a surprising degree of independence from the central brain. Paragraph (2) then shows severed-arm grasping that does not require brain-level control. The inference follows those facts rather than leaping past them. \"Somewhat independently\" mirrors the text's \"surprising degree of independence\" without claiming the arms never consult the central brain. Local processing plus the amputated-arm example are enough warrant for that modest inference.\n\nArm-level independence is the direct implication of the distributed layout, so the claim holds.",
+          "**B) If arms hold two-thirds of neurons, one-third remains elsewhere.**\n\nParagraph (1) assigns approximately two-thirds of the neurons to the arms. Arithmetic closes the rest: the remaining one-third must sit outside the arms — chiefly in the central nervous system the paragraph contrasts with. The inference adds no new biological claim beyond that split. You are not inventing a new organ count; you are completing the fraction the text already gave. Nothing in the paragraph relocates that leftover third back into the arms.\n\n**Tip:** When the text gives a clean fraction, the complementary fraction is usually fair game if nothing else relocates those neurons.\n\nTwo-thirds in the arms leaves one-third elsewhere, so the statement is sound.",
+          "**C) Colour-blindness implies precise camouflage cannot possibly occur.**\n\nParagraph (5) acknowledges colour-blindness and then discusses how octopuses still achieve camouflage precisely matched to surrounding colouration, including a skin-photoreceptor hypothesis. Colour-blindness raises a puzzle; it does not license the absolute \"cannot possibly occur.\" The debate assumes the matching is real and asks how it works, so impossibility is the wrong inference. \"Cannot possibly\" is stronger than anything the researchers' open question supports.\n\n**Trap:** A genuine research puzzle is not proof of impossibility.\n\nPrecise camouflage is described as real despite colour-blindness, so the impossibility claim fails.",
+          "**D) Short lifespan implies cognitive sophistication requires long-term learning.**\n\nParagraph (7) finds sophisticated behaviour especially puzzling given one-to-two-year lives — the short span is a tension with sophistication, not evidence that sophistication must rest on long-term learning. The \"requires\" leap is the reader's invention. The text never says complex behaviour depends on decades of practice; it only notes that short life makes such feats surprising. Puzzle language is not a causal rule about how intelligence must be acquired.\n\nShort lifespan makes sophistication surprising rather than dependent on long learning, so the inference fails.",
+          "**E) Convergent evolution implies similar traits arose separately, not shared.**\n\nParagraph (8) defines the octopus case as convergent evolution entirely independent of the vertebrate pathway, not a shared inherited trait refined separately. That is exactly what \"arose separately, not shared\" means in this context. The \"rather than a shared inherited trait\" clause is the passage's own gloss of the term. Stay inside that contrast; do not redefine convergent as \"coming together from one ancestor.\"\n\nThe passage's own contrast equates convergent evolution with separate origin, so the claim holds."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.14.05",
+        "id": "en-t-14-05",
+        "title": "Task 5",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Distributed neurons help explain arm-level independent behaviour.",
+          "Colour-blindness and skin photoreceptors together suggest indirect colour sensing.",
+          "Short lifespan makes complex jar-opening behaviour easier to expect.",
+          "Convergent evolution helps explain why the nervous system differs from vertebrates.",
+          "Chromatophore speed and camouflage precision are entirely unrelated topics."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Distributed neurons help explain arm-level independent behaviour.**\n\nLink paragraph (1)'s arm-resident neurons and local processing with paragraph (2)'s amputated-arm grasping: the distributed architecture is offered precisely as the reason arms can act with surprising independence. The synthesis stays inside what those sections supply. Paragraph (1) supplies the mechanism; paragraph (2) supplies a vivid consequence that does not need central control. You are joining those two stated pieces, not inventing a third theory of mind.\n\nDistributed neurons are the mechanism the text uses for arm independence, so the claim holds.",
+          "**B) Colour-blindness and skin photoreceptors together suggest indirect colour sensing.**\n\nParagraph (5) pairs colour-blindness (one photoreceptor type) with the still-unconfirmed idea that specialised skin photoreceptors let the animal sense colour indirectly through the skin, independent of the eyes. Reading those two details together is how the hypothesis is framed. Eye-independent skin sensing is the proposed workaround for matching colour while colour-blind. Keep the claim at \"suggest\": the text never upgrades the hypothesis to proven fact.\n\n**Tip:** \"Suggest\" is the right verb here — the text calls the idea influential but not conclusively confirmed.\n\nColour-blindness plus skin photoreceptors underwrite the indirect-sensing hypothesis, so the statement is true.",
+          "**C) Short lifespan makes complex jar-opening behaviour easier to expect.**\n\nParagraph (6) presents jar-opening and related feats as cognitive achievements hard to square with a simple nervous system; paragraph (7) then calls such capabilities especially puzzling given the one-to-two-year lifespan. Short life makes the behaviour harder to expect, not easier. Crossing the lab feats with the lifespan note should increase surprise, not reduce it. Any synthesis that says short life makes jar-opening \"easier to expect\" reverses the evaluative force of \"puzzling.\"\n\n**Trap:** Do not reverse the evaluative force of \"puzzling.\"\n\nThe short lifespan deepens the puzzle rather than easing expectations, so the claim fails.",
+          "**D) Convergent evolution helps explain why the nervous system differs from vertebrates.**\n\nParagraph (1) establishes a layout \"strikingly unlike\" vertebrates; paragraph (8) explains that difference as convergent evolution on an independent pathway rather than shared inheritance. Convergent evolution is the evolutionary account of the structural difference. The early \"unlike\" description and the later independent-pathway story answer the same question from anatomy and from history. Shared inheritance is the rejected alternative, so convergence is what licenses the difference.\n\nIndependent convergent origins account for the unlike architecture, so the synthesis holds.",
+          "**E) Chromatophore speed and camouflage precision are entirely unrelated topics.**\n\nParagraphs (3)–(5) form one camouflage thread: rapid chromatophore shifts, deeper iridophore/leucophore effects, and the puzzle of precise colour matching despite colour-blindness. Speed and precision belong to the same capability story, not to disconnected chapters. Timing in (3) and matching accuracy in (5) are successive facets of how camouflage works. \"Entirely unrelated\" erases that continuous discussion and invents a split the passage never draws.\n\nThey sit inside one camouflage discussion, so \"entirely unrelated\" fails."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.14.08",
+        "id": "en-t-14-08",
+        "title": "Task 8",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 1, \"centralised\" means gathered into one main location.",
+          "In Paragraph 3, \"specialised\" means generic and unremarkable.",
+          "In Paragraph 5, \"indirectly\" means through a direct, immediate route.",
+          "In Paragraph 6, \"reflexive\" means automatic and unthinking.",
+          "In Paragraph 8, \"convergent\" means arising from a shared ancestor."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 1, \"centralised\" means gathered into one main location.**\n\nParagraph (1) contrasts concentrating computational power inside a single centralised brain with the octopus's distributed arm neurons. In that contrast, centralised means gathered into one main location rather than spread across the arms. \"Single…brain\" and \"concentrating…inside\" are the local synonyms that lock the sense. Distributed arm neurons are the opposite pole, so centralised cannot mean scattered.\n\nThe surrounding \"single…brain\" contrast supports that sense, so the meaning claim is true.",
+          "**B) In Paragraph 3, \"specialised\" means generic and unremarkable.**\n\nParagraph (3) calls chromatophores specialised skin cells devoted to rapid colour and pattern change. Specialised here means adapted for a particular function; \"generic and unremarkable\" is the opposite of that context. The cells are introduced as the dedicated tools of camouflage, not as ordinary skin. A gloss that erases that dedicated role fights every cue in the sentence.\n\n**Trap:** Do not invent a plain-English antonym when the cell name itself signals a dedicated role.\n\nThe word marks purpose-built cells, not bland ones, so the gloss fails.",
+          "**C) In Paragraph 5, \"indirectly\" means through a direct, immediate route.**\n\nParagraph (5) proposes that skin photoreceptors let the octopus sense colour indirectly through the skin, entirely independent of its eyes. Indirectly means through a non-eye, roundabout route — not a direct, immediate one. \"Independent of its eyes\" is the clarifying phrase: sensing bypasses the usual visual channel. A gloss that says \"direct, immediate\" simply flips the adverb.\n\nThe claimed gloss reverses the adverb, so the meaning claim fails.",
+          "**D) In Paragraph 6, \"reflexive\" means automatic and unthinking.**\n\nParagraph (6) says cognitive feats are difficult to reconcile with a simple, reflexive nervous system. Paired with simple, reflexive points to automatic, unthinking responses — the foil for jar-opening and maze skill. The feats are offered as too flexible and goal-directed for a purely reflexive account. That opposition fixes reflexive as automatic rather than as thoughtful or deliberative.\n\nThat contrast locks in the automatic sense, so the gloss holds.",
+          "**E) In Paragraph 8, \"convergent\" means arising from a shared ancestor.**\n\nParagraph (8) contrasts convergent evolution with \"a shared inherited trait\": the octopus pathway is independent of vertebrates. Convergent here means similar traits arising separately, not from a shared ancestor. The text's \"rather than\" clause is an on-page definition you can trust. Shared-ancestor wording belongs to the rejected model, not to convergent.\n\n**Trap:** \"Convergent\" sounds like \"coming together,\" but here it opposes shared ancestry.\n\nThe passage denies shared inheritance, so that gloss fails."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.14.09",
+        "id": "en-t-14-09",
+        "title": "Task 9",
+        "subsection": "t.14",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 2, \"amputated\" means surgically or accidentally removed.",
+          "In Paragraph 4, \"manipulate\" means to skilfully influence or control.",
+          "In Paragraph 6, \"reconcile\" means to make consistent or compatible.",
+          "In Paragraph 7, \"brooding\" means actively hunting for new prey.",
+          "In Paragraph 9, \"illuminate\" means to make clearer or better understood."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 2, \"amputated\" means surgically or accidentally removed.**\n\nParagraph (2) discusses an amputated octopus arm continuing to reach and grasp after separation from the body. In that scene, amputated means the arm has been removed — whether by surgery or accident is secondary to the detachment itself. \"Separation from the body\" restates the same loss of attachment. The gloss stays at removal; it does not need a hospital setting to be correct.\n\nRemoval/separation is exactly what the context requires, so the gloss is true.",
+          "**B) In Paragraph 4, \"manipulate\" means to skilfully influence or control.**\n\nIridophores and leucophores \"manipulate light reflection and scattering\" to create effects pigment alone cannot achieve. That is skilful optical control of light, not social trickery. The objects of manipulate are physical light behaviours, so the lab sense of handling or steering fits. Do not import the everyday sense of deceitful influence into an optics sentence.\n\nThe light-control reading fits the optical layering, so the meaning holds.",
+          "**C) In Paragraph 6, \"reconcile\" means to make consistent or compatible.**\n\nThe cognitive feats are \"difficult to reconcile with a simple, reflexive nervous system\" — hard to make those behaviours fit, or sit consistently with, a purely reflexive model. That is the \"make compatible\" sense. The difficulty is intellectual: the feats and the simple model clash. Nothing in the line is about reconciling people after a quarrel.\n\nCompatibility with a simple model is what the phrase questions, so the gloss is sound.",
+          "**D) In Paragraph 7, \"brooding\" means actively hunting for new prey.**\n\nParagraph (7) describes a prolonged brooding period during which females stop eating entirely until eggs hatch. Brooding here is egg-guarding, not hunting; the fasting undercuts any \"actively hunting\" reading. Months of not eating while eggs develop is care behaviour, the opposite of foraging. Hunting would require feeding, which the sentence explicitly suspends.\n\n**Trap:** Everyday \"brooding\" (moodiness) and biological brooding (egg care) are both unlike hunting.\n\nEgg-tending, not prey-hunting, is the sense in use, so the gloss fails.",
+          "**E) In Paragraph 9, \"illuminate\" means to make clearer or better understood.**\n\nParagraph (9) asks whether studying octopus cognition will \"meaningfully illuminate general principles\" of how intelligence can arise. Illuminate here is figurative clarification — making principles clearer — not physical lighting. The object is principles of intelligence, an abstract target that only the \"make clearer\" sense can take. Physical light fixtures belong to paragraph (6), not to this debate question.\n\nMaking general principles better understood matches the debate frame, so the claim holds."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.14.06",
+        "id": "en-t-14-06",
+        "title": "Task 6",
+        "subsection": "t.14",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had the arm not been severed, it would have remained attached.\"",
+          "\"Researchers recommended that the lab documents each behaviour.\"",
+          "\"The number of recorded cases continue to grow.\"",
+          "\"Neither the pigment nor the reflection were fully understood.\"",
+          "\"Having observed the pattern, scientists proposed a new theory.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Had the arm not been severed, it would have remained attached.\"**\n\nThis is a third-conditional counterfactual with inversion: Had + past participle opens the if-clause, and would have + past participle carries the unreal past result. The negative not been severed pairs cleanly with the hypothetical remaining attached. The line is equivalent to If the arm had not been severed, it would have remained attached, only with Had-fronting. Both halves stay in the unreal-past frame, so tense and meaning align.\n\n**Tip:** Inversion with Had is a formal stand-in for If the arm had not been severed…\n\nThe inverted third conditional is well formed, so the sentence stands.",
+          "**B) \"Researchers recommended that the lab documents each behaviour.\"**\n\nAfter recommend that, English expects the mandative subjunctive: a bare base verb. Documents is present indicative agreement with lab, so the line should read that the lab document each behaviour. Recommend, insist, and demand that all trigger this base-form pattern in formal English. The -s ending is the tell that the writer slipped back into ordinary present tense.\n\n**Trap:** Ordinary third-person -s feels natural after a singular subject, but recommend that blocks that pattern.\n\nThe subjunctive needs document, not documents, so the wording fails — \"Researchers recommended that the lab document each behaviour.\"",
+          "**C) \"The number of recorded cases continue to grow.\"**\n\nThe grammatical subject is the number, which is singular; of recorded cases is only a prepositional phrase. A singular subject needs continues, not the plural continue. Cases is plural and sits next to the verb, which is why the ear wants continue — but cases is not the head. Strip the of-phrase and the agreement choice becomes obvious: the number continues.\n\n**Tip:** Contrast the number of (singular verb) with a number of (usually plural verb).\n\nSingular the number cannot take continue, so the line fails — \"The number of recorded cases continues to grow.\"",
+          "**D) \"Neither the pigment nor the reflection were fully understood.\"**\n\nWith neither…nor, the verb typically agrees with the nearer subject. Reflection is singular, so were should be was: Neither the pigment nor the reflection was fully understood. Pigment and reflection are both singular, so even a \"both together\" reading would not justify plural were. Proximity agreement is the reliable rule here and points only to was.\n\nProximity agreement picks singular was after reflection, so the wording does not hold — \"Neither the pigment nor the reflection was fully understood.\"",
+          "**E) \"Having observed the pattern, scientists proposed a new theory.\"**\n\nThe participle Having observed the pattern correctly attaches to scientists, the subject who did the observing and then proposed the theory. There is no dangling modifier or subject mismatch. The observers and the proposers are the same group, so the -ing opener is licensed. If the subject were something that cannot observe, the line would dangle; here it does not.\n\nThe participial opener belongs to scientists, so the sentence is sound."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.14.07",
+        "id": "en-t-14-07",
+        "title": "Task 7",
+        "subsection": "t.14",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had the lid loosened than the octopus reached inside.\"",
+          "\"The study, along with related trials, were published together.\"",
+          "\"Each of the tested octopuses have solved the maze.\"",
+          "\"By the time results arrive, theories will have already shifted.\"",
+          "\"The samples, which were gathered carefully, reveal consistent behaviour.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had the lid loosened than the octopus reached inside.\"**\n\nNo sooner…than requires inversion in the first clause: No sooner had + subject + past participle, then than + the following event. Here had the lid loosened pairs correctly with than the octopus reached inside. The pattern marks the second event as immediate after the first, which fits lid then reach. Swapping than for when would break the fixed correlative pair.\n\n**Tip:** Prefer than (not when) after no sooner.\n\nThe No sooner…than inversion is correct, so the sentence stands.",
+          "**B) \"The study, along with related trials, were published together.\"**\n\nThe head noun is the study; along with related trials is a parenthetical add-on and does not make the subject plural. The verb must be was published, not were published. Commas around the along with phrase advertise that trials are extra information, not a second head. Mentally delete that phrase and the singular verb snaps into place.\n\n**Trap:** Material after along with / as well as / together with often tricks the ear into a plural verb.\n\nSingular study needs was, so the wording fails — \"The study, along with related trials, was published together.\"",
+          "**C) \"Each of the tested octopuses have solved the maze.\"**\n\nEach of takes a singular verb even when a plural noun follows of. Have solved should be has solved: Each of the tested octopuses has solved the maze. Octopuses looks plural and sits beside the verb, but each is the true subject and forces singular agreement. Replace each with all and plural have would fit — that contrast shows why have is wrong here.\n\nEach demands singular has, so the line does not hold — \"Each of the tested octopuses has solved the maze.\"",
+          "**D) \"By the time results arrive, theories will have already shifted.\"**\n\nBy the time + present-time clause points to a future milestone; will have shifted is future perfect, placing the theories' change before that arrival. The tense pairing matches the deadline logic. Arrive stays present because by the time clauses often use present for future time; the perfect marks completion before that point. Already reinforces that the shift is finished relative to the results' arrival.\n\nFuture perfect correctly finishes the change before the later point, so the sentence is sound.",
+          "**E) \"The samples, which were gathered carefully, reveal consistent behaviour.\"**\n\nSamples is plural, so the non-restrictive which clause rightly uses were, and the main verb reveal stays plural. Agreement is consistent from relative clause through the main clause. Which refers to samples, not to a singular study or behaviour, so plural were is required inside the commas. The main clause then keeps the same plural head for reveal.\n\nPlural samples are matched by were and reveal, so the wording holds."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.14.10",
+        "id": "en-t-14-10",
+        "title": "Task 10",
+        "subsection": "t.14",
+        "context": "Consider this sentence from the passage: \"An amputated octopus arm can continue reaching toward and grasping food.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "A severed arm can still reach for and grab food.",
+          "A severed arm immediately stops moving entirely.",
+          "A detached arm remains capable of grasping food briefly.",
+          "An intact, attached arm can reach toward food normally.",
+          "A removed arm continues performing food-directed movements."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) A severed arm can still reach for and grab food.**\n\nThe original says an amputated octopus arm can continue reaching toward and grasping food. Severed ≈ amputated, reach for ≈ reaching toward, and grab ≈ grasping; the paraphrase keeps the same actor and action. \"Still\" covers the continuation after separation without adding new timing claims. No intact-arm subject and no total stop are smuggled in.\n\nSame arm, same food-directed reaching, so the paraphrase preserves the meaning.",
+          "**B) A severed arm immediately stops moving entirely.**\n\nThe source claim is continued reaching and grasping after amputation, not total stillness. \"Immediately stops moving entirely\" reverses both the motion and the brief persistence of the behaviour. Every key verb in the original (continue, reaching, grasping) is negated by stop and entirely. That is a meaning flip, not a near miss.\n\n**Trap:** Absolute stop language is the near-miss false when the text stresses continuation.\n\nContinued grasping overturns total cessation, so this paraphrase fails.",
+          "**C) A detached arm remains capable of grasping food briefly.**\n\nDetached matches amputated/separated, grasping food matches the original action, and briefly reflects paragraph (2)'s \"for a brief period.\" The paraphrase stays faithful while importing that short-duration cue from the same sentence. Capability language (\"remains capable\") is a fair restatement of can continue, not an upgrade to permanent skill. Subject, action, and duration all track the source.\n\nCapability plus brief duration both track the passage, so the meaning holds.",
+          "**D) An intact, attached arm can reach toward food normally.**\n\nThe original is about an amputated arm after separation. Shifting to an intact, attached arm quietly changes the subject and drops the surprising post-separation behaviour the sentence exists to report. Normal reaching by an attached arm may be true in life, but it is not what this line says. Paraphrase checks subject identity first; here the subject has been swapped.\n\n**Trap:** A bland true-sounding fact about normal arms is still a wrong paraphrase of this line.\n\nThe intact-arm rewrite abandons the amputated subject, so it does not preserve the meaning.",
+          "**E) A removed arm continues performing food-directed movements.**\n\nRemoved restates amputated, and \"continues performing food-directed movements\" compresses \"continue reaching toward and grasping food\" without adding or contradicting content. Food-directed covers both reaching toward and grasping without inventing a new goal. The continuation after removal is preserved, so the paraphrase stays loyal to the original event.\n\nRemoval plus continued food-directed motion match the original, so the paraphrase stands."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.14.19",
+        "id": "en-g-14-19",
+        "title": "Task 19",
+        "subsection": "g.14",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "The board resolved that interim prizes not be declared this half.",
+          "It is essential that whoever chairs the panel has no prior conflict.",
+          "Organisers demanded that stage cues be tightened after the dress run.",
+          "The examiner insisted that each script is double-marked independently.",
+          "Guidance recommends that the risk register be reviewed after every incident."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) The board resolved that interim prizes not be declared this half.**\n\nNegated passive \"not be declared\" is correctly formed. Resolutions often negate with not be + participle. Interim prizes stay undeclared this half under that shape.\n\n**Tip:** Board resolutions often negate as not be + participle.\n\nResolved that interim prizes not be declared negates with not be correctly, so the wording is **true**.\n",
+          "**B) It is essential that whoever chairs the panel has no prior conflict.**\n\nAfter \"it is essential that,\" use have, not has, even after \"whoever.\" Free relatives still sit under the mandative rule. No -s on the that-clause verb — whoever chairs… have no prior conflict.\n\n**Trap:** Whoever… has looks like normal relative agreement; essential that still strips -s.\n\nEssential that whoever chairs … have forbids indicative has, so this is **false** — \"It is essential that whoever chairs the panel have no prior conflict.\"\n",
+          "**C) Organisers demanded that stage cues be tightened after the dress run.**\n\n\"Demanded that… be tightened\" is correct. Theatre and event language still uses demand that + be + participle. Stage cues after the dress run sit under that be.\n\nDemanded that stage cues be tightened already uses be after the dress run, so the sentence is **true**.\n",
+          "**D) The examiner insisted that each script is double-marked independently.**\n\nUse be double-marked, not is double-marked, after \"insisted that.\" Exam-administration passives are a favourite is trap. Swap to be before the participle.\n\n**Trap:** Insist that + is double-marked is a polished-looking indicative passive trap.\n\nInsisted that each script be double-marked needs be, so the line is **false**; repair to \"The examiner insisted that each script be double-marked independently.\"\n",
+          "**E) Guidance recommends that the risk register be reviewed after every incident.**\n\n\"Recommends that… be reviewed\" is correct. Safety and ops manuals recycle this frame constantly after incidents. The risk register takes be before reviewed.\n\nRecommends that the risk register be reviewed keeps be in ops English, so the wording is **true**.\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.MOCK.CHESTS",
+      "id": "MATH 1.MOCK.CHESTS",
+      "title": "Three inscribed chests — exactly one true label",
+      "chapter": 1,
+      "subsection": "1.4",
+      "context": "Three sealed chests sit in a vault. Exactly one chest contains the prize; the other two are empty. Each chest carries one inscription, and **exactly one** of the three inscriptions is true.\n\nChest A: “The prize is in this chest.”\n\nChest B: “The prize is in this chest.”\n\nChest C: “The prize is in chest A.”\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The prize is in chest B.",
+        "Chest A’s inscription is false.",
+        "The unique true inscription is on chest B.",
+        "The prize is in chest C.",
+        "If the prize were in chest A, then at least two inscriptions would be true."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nExactly one inscription is true.\n\nIf the prize were in A, then A’s claim would be true and C’s claim (“prize in A”) would also be true — two truths, which is forbidden.\n\nIf the prize were in C, then A and B are both false (each claims the prize is in itself) and C is also false (it claims A). That is zero truths — forbidden.\n\nTherefore the prize is in B.\n\nSo the statement is True.",
+        "**B.** → True\n\nWith the prize in B, A’s claim “the prize is in this chest” is false.\n\nSo the statement is True.",
+        "**C.** → True\n\nPrize in B makes B’s inscription true, while A and C are false. Exactly one truth, and it sits on B. No other location works (letter A).\n\nSo the statement is True.",
+        "**D.** → False\n\nThe prize is in B, not C.\n\nSo the statement is False.",
+        "**E.** → True\n\nIf the prize were in A, then A would be true and C (“prize in A”) would also be true — at least two truths.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "**Setup.** Exactly one chest has the prize; exactly one inscription is true.\n\n**Case A.** Prize in A ⇒ A and C both true → forbidden.\n\n**Case C.** Prize in C ⇒ A, B, C all false → forbidden.\n\n**Case B.** Prize in B ⇒ only B true → unique solution."
+    },
+    {
+      "case_id": "MATH 2.MOCK.RAD",
+      "id": "MATH 2.MOCK.RAD",
+      "title": "Radical equation — domain, squaring, and root selection",
+      "chapter": 2,
+      "subsection": "2.4",
+      "context": "Consider the real equation\n\n$$\n\\sqrt{2x+3}=x-1\n$$\n\nand the quadratic identity claims below. Decide whether each statement is true or false.",
+      "statements": [
+        "Every real solution of the equation must satisfy $x\\ge 1$.",
+        "Squaring both sides (on the admissible region) produces the quadratic $x^{2}-4x-2=0$.",
+        "The equation has exactly one real solution.",
+        "That real solution is strictly larger than $3$.",
+        "The product of the two roots of the squared quadratic $x^{2}-4x-2=0$ equals $-2$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe square root is defined for $2x+3\\ge 0$, i.e. $x\\ge -\\tfrac{3}{2}$. Because a principal square root is nonnegative, the right-hand side must satisfy $x-1\\ge 0$, hence $x\\ge 1$. Intersecting the two conditions leaves $x\\ge 1$.\n\nSo the statement is True.",
+        "**B.** → True\n\nOn $x\\ge 1$ square both sides:\n\n$$\n2x+3=(x-1)^{2}=x^{2}-2x+1\n$$\n\n$$\n0=x^{2}-4x-2\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nThe quadratic $x^{2}-4x-2=0$ has roots $2\\pm\\sqrt{6}$. Only $2+\\sqrt{6}$ lies in $x\\ge 1$ (since $2-\\sqrt{6}<1$). Checking it in the original equation confirms it works. Exactly one real solution.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\n2+\\sqrt{6}>2+\\sqrt{4}=2+2=4>3\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\nFor $x^{2}-4x-2=0$ the product of roots is $c/a=-2$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Domain forces $x\\ge 1$. Squaring yields $x^{2}-4x-2=0$ with roots $2\\pm\\sqrt{6}$; only $2+\\sqrt{6}$ survives. Product of quadratic roots is $-2$."
+    },
+    {
+      "case_id": "MATH 11.133",
+      "id": "math-11-133",
+      "title": "Exam-style tasks - 10",
+      "chapter": 3,
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Alumni pledge $10,000$ one year from now, $12,000$ three years from now, and $14,000$ four years from now. The scholarship office uses $5.0\\%$ and recognizes USD 31,202.70.",
+        "A warranty program expects $15,000$ of claims in its first year and $82\\%$ of the previous year's claims in each of the next seven years. The eight-year forecast totals USD 66,298.83.",
+        "A family office withdraws $10,000$ today and at every year-start forever. At $5\\%$, the perpetuity-due needs USD 207,000.00.",
+        "On a $150,000$ office loan with 120 payments at $0.58\\%$ monthly, USD 868.54 of payment 1 goes toward principal.",
+        "A mobile clinic outlay of USD 320,000 leads to benefits of $100,000$ in years 2 and 3 and $180,000$ in year 6. At $6.8\\%$, its NPV is -USD 30,193.87."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nEach dated cash flow requires its own discount exponent before the values can be added.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{10000.00}{(1+0.0500)^1}+\\frac{12000.00}{(1+0.0500)^3}+\\frac{14000.00}{(1+0.0500)^4}$$\n\n$$\nPV_1 = \\frac{10000.00}{(1+0.0500)^1} = 9523.809524\n$$\n\n$$\nPV_3 = \\frac{12000.00}{(1+0.0500)^3} = 10366.051182\n$$\n\n$$\nPV_4 = \\frac{14000.00}{(1+0.0500)^4} = 11517.834647\n$$\n\n$$PV=9523.809524+10366.051182+11517.834647$$\n\n$$PV=31407.695353$$\n\nThe computed present value is USD 31,407.70, not USD 31,202.70.\n\nSo the statement is False.",
+        "**B.** → True\n\nA constant percentage change makes the scheduled amounts a finite geometric progression.\n\n$$C_k=15000.00(0.82000)^{k-1}$$\n\n$$S_8 = \\sum_{k=1}^{8}15000.00(0.82000)^{k-1}$$\n\n$$S_8=15000.00\\frac{0.82000^{8}-1}{0.82000-1}$$\n\n$$S_8=66298.826178$$\n\nThe computed schedule total is USD 66,298.83, matching the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe infinite payment stream converges because its discount rate exceeds its growth rate.\n\n$$\nPV_1 = \\sum_{t = 1}^\\infty\\frac{10000.00(1+0.0000)^{t-1}}{(1+0.0500)^t}\n$$\n\n$$PV_1=\\frac{10000.00}{0.0500-0.0000}$$\n\n$$PV_1=200000.000000$$\n\n$$PV_{\\mathrm{due}}=(1+0.0500)PV_1$$\n\n$$PV_{\\mathrm{due}}=210000.000000$$\n\nThe computed perpetuity present value is USD 210,000.00, not USD 207,000.00.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe mortgage principal equals the present value of its level month-end payments.\n\n$$P=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PMT=150000.00\\frac{0.005800}{1-(1+0.005800)^{-120}}$$\n\n$$PMT=1738.536438$$\n\n$$\nI_1 = 150000.00(0.005800) = 870.000000\n$$\n\n$$\nPR_1 = PMT-I_1 = 1738.536438-870.000000\n$$\n\n$$\n1738.536438 - 870.000000 = 868.536438\n$$\n\n$$PR_1=868.536438$$\n\nThe computed first principal reduction is USD 868.54, matching the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nNet present value discounts every project cash flow to time zero and includes the initial cost with a negative sign.\n\n$$NPV=-320000.00+\\frac{100000.00}{(1+0.0680)^2}+\\frac{100000.00}{(1+0.0680)^3}+\\frac{180000.00}{(1+0.0680)^6}$$\n\n$$\nPV(C_2) = \\frac{100000.00}{(1+0.0680)^2} = 87671.309739\n$$\n\n$$\nPV(C_3) = \\frac{100000.00}{(1+0.0680)^3} = 82089.241329\n$$\n\n$$\nPV(C_6) = \\frac{180000.00}{(1+0.0680)^6} = 121295.583755\n$$\n\n$$NPV=-320000.00+87671.309739+82089.241329+121295.583755$$\n\n$$NPV=-28943.865177$$\n\nThe computed net present value is -USD 28,943.87, not -USD 30,193.87.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Each letter is an independent financial claim. Name the matching formula, substitute the stem numbers, and compare with the stated figure.\n\nTopics: 3.3, 3.4, 3.5, 3.6, 3.7\n\nA. value dated scholarship pledges.\nB. total a declining warranty-claim forecast.\nC. capitalize a perpetuity with its first payment now.\nD. measure first-month principal on a short office loan.\nE. value delayed mobile-clinic benefits."
+    },
+    {
+      "case_id": "MATH 4.MOCK.PIPES",
+      "id": "MATH 4.MOCK.PIPES",
+      "title": "Two inlets and a drain — rates and fill times",
+      "chapter": 4,
+      "subsection": "4.5",
+      "context": "Two inlet pipes and one drain serve a tank.\n\nPipe A alone fills the empty tank in $6$ hours.\nPipe B alone fills the empty tank in $4$ hours.\nThe drain alone empties a full tank in $12$ hours.\n\nAll three run together from empty. Decide whether each statement is true or false.",
+      "statements": [
+        "A’s fill rate is strictly greater than $\\tfrac{1}{5}$ tank per hour.",
+        "The combined net rate of A, B and the drain is exactly $\\tfrac{5}{12}$ tank per hour.",
+        "Starting from empty with all three open, the tank is full in strictly less than $3$ hours.",
+        "If only A and the drain run (B closed), the tank still fills, and the time needed exceeds $8$ hours.",
+        "B alone fills more of the tank in $1$ hour than A and the drain together add net in $1$ hour."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA’s rate is $\\dfrac{1}{6}$ tank per hour. Compare with $\\dfrac{1}{5}$:\n\n$$\n\\dfrac{1}{6}<\\dfrac{1}{5}\n$$\n\nSo the statement is False.",
+        "**B.** → False\n\nNet rate:\n\n$$\n\\dfrac{1}{6}+\\dfrac{1}{4}-\\dfrac{1}{12}=\\dfrac{2}{12}+\\dfrac{3}{12}-\\dfrac{1}{12}=\\dfrac{4}{12}=\\dfrac{1}{3}\n$$\n\n$$\n\\dfrac{1}{3}\\neq \\dfrac{5}{12}\n$$\n\nSo the statement is False.",
+        "**C.** → False\n\nTime from empty at net rate $\\dfrac{1}{3}$ is exactly $3$ hours, not strictly less.\n\nSo the statement is False.",
+        "**D.** → True\n\nA with drain only:\n\n$$\n\\dfrac{1}{6}-\\dfrac{1}{12}=\\dfrac{1}{12}\n$$\n\nTime to fill:\n\n$$\n12>8\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\nB’s hourly fill is $\\dfrac{1}{4}$. A with drain nets $\\dfrac{1}{12}$. Since $\\dfrac{1}{4}>\\dfrac{1}{12}$, B alone outpaces that net flow.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Rates: $A=\\tfrac{1}{6}$, $B=\\tfrac{1}{4}$, drain $=\\tfrac{1}{12}$. Net all three $=\\tfrac{1}{3}$ (time $3$). A+drain $=\\tfrac{1}{12}$ (time $12$)."
+    },
+    {
+      "case_id": "MATH 5.MOCK.TRAFFIC",
+      "id": "MATH 5.MOCK.TRAFFIC",
+      "title": "Two-route van allocation — linear system",
+      "chapter": 5,
+      "subsection": "5.1",
+      "context": "Two one-way routes leave a depot. Let $x$ be the number of vans on route North and $y$ the number on route East in a morning wave. The dispatcher records:\n\n$$\nx+y=50\n$$\n\n$$\n3x+2y=130\n$$\n\n(The second equation is total driver-hours if North takes $3$ hours and East takes $2$.)\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Exactly $30$ vans take the North route.",
+        "The East route carries strictly more vans than the North route.",
+        "If each North van costs EUR $40$ in fuel and each East van costs EUR $25$, total fuel for the wave exceeds EUR $1{,}600$.",
+        "Replacing the hour equation by $4x+y=140$ (same $x+y=50$) would raise the North count above $30$.",
+        "The unique solution $(x,y)$ of the original system lies in the open first quadrant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFrom $x+y=50$ get $y=50-x$. Substitute:\n\n$$\n3x+2(50-x)=130\n$$\n\n$$\n3x+100-2x=130\n$$\n\n$$\nx=30\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\ny=50-30=20\n$$\n\nEast has fewer vans than North, not more.\n\nSo the statement is False.",
+        "**C.** → True\n\nFuel cost (euros kept in prose):\n\n$$\n30\\cdot 40+20\\cdot 25=1{,}200+500=1{,}700>1{,}600\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nWith $x+y=50$ and $4x+y=140$:\n\n$$\n4x+(50-x)=140\\Rightarrow 3x=90\\Rightarrow x=30\n$$\n\nNorth stays at $30$, not above.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe unique solution is $(30,20)$ with both coordinates positive.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Solve $x+y=50$, $3x+2y=130$ to get $(30,20)$. Fuel $1700$. Alternate $4x+y=140$ still gives $x=30$."
+    },
+    {
+      "case_id": "MATH 6.MOCK.ABS5",
+      "id": "MATH 6.MOCK.ABS5",
+      "title": "Absolute, radical, and sign inequalities",
+      "chapter": 6,
+      "subsection": "6.3",
+      "context": "Decide whether each inequality claim is true or false. Check every boundary and every compound piece carefully.",
+      "statements": [
+        "The solution set of $|x-3|+|x+1|\\le 8$ is exactly $[-3,5]$.",
+        "The solution set of $\\sqrt{x+2}\\ge x$ is exactly $[0,2]$.",
+        "Every $x\\in(0,1)$ satisfies $\\dfrac{x-4}{x+1}<0$.",
+        "The inequality $x^{2}-5x+6>0$ holds on $(-\\infty,2)\\cup(3,+\\infty)$.",
+        "The system $|x|\\le 2$ and $x>0$ has exactly two integer solutions."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nCritical points $x=-1$ and $x=3$. Piecewise:\n\n- $x\\le -1$: $|x-3|+|x+1|=2-2x\\le 8\\Rightarrow x\\ge -3$, so $[-3,-1]$;\n- $-1\\le x\\le 3$: sum equals $4\\le 8$ throughout;\n- $x\\ge 3$: $2x-2\\le 8\\Rightarrow x\\le 5$.\n\nUnion: $[-3,5]$.\n\nSo the statement is True.",
+        "**B.** → False\n\nDomain $x\\ge -2$. For $x\\in[-2,0)$ the right-hand side is negative while the square root is nonnegative, so the inequality holds on all of $[-2,0)$. On $x\\ge 0$ squaring yields $x\\in[0,2]$. Full solution $[-2,2]$, not $[0,2]$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\n\\dfrac{x-4}{x+1}<0\n$$\n\non the open interval $(-1,4)$. Every point of $(0,1)$ lies in that set.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\nx^{2}-5x+6=(x-2)(x-3)>0\n$$\n\nprecisely on $(-\\infty,2)\\cup(3,+\\infty)$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$|x|\\le 2$ and $x>0$ give $(0,2]$. The integers there are $1$ and $2$ — exactly two.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Absolute sum → $[-3,5]$. Radical inequality → $[-2,2]$ (claim too small). Rational sign on $(-1,4)$. Quadratic sign as factored. $|x|\\le 2$, $x>0$ → integers $\\{1,2\\}$."
+    },
+    {
+      "case_id": "MATH 7.MOCK.THROW",
+      "id": "MATH 7.MOCK.THROW",
+      "title": "Vertical throw — vertex, height checks, landing time",
+      "chapter": 7,
+      "subsection": "7.3",
+      "context": "A ball is thrown vertically. Height in metres after $t$ seconds is\n\n$$\nh(t)=-5t^{2}+20t+2\\qquad(t\\ge 0)\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The maximum height occurs at $t=2$.",
+        "The maximum height is strictly greater than $20$ metres.",
+        "The ball is still above $10$ metres at $t=3$.",
+        "The positive landing time (when $h=0$) is strictly less than $4$.",
+        "Completing the square gives $h(t)=-5(t-2)^{2}+22$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFor $h(t)=-5t^{2}+20t+2$ the vertex is at\n\n$$\nt=-\\dfrac{b}{2a}=-\\dfrac{20}{2\\cdot(-5)}=2\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nh(2)=-5\\cdot 4+20\\cdot 2+2=-20+40+2=22>20\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\nh(3)=-5\\cdot 9+20\\cdot 3+2=-45+60+2=17>10\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nSolve $-5t^{2}+20t+2=0$, or $5t^{2}-20t-2=0$:\n\n$$\nt=\\dfrac{20\\pm\\sqrt{400+40}}{10}=\\dfrac{20\\pm\\sqrt{440}}{10}=2\\pm\\dfrac{\\sqrt{110}}{5}\n$$\n\nThe positive root is $2+\\sqrt{110}/5$. Since $\\sqrt{100}=10$ and $\\sqrt{121}=11$, one has $\\sqrt{110}\\approx 10.49$, so\n\n$$\nt\\approx 2+2.10=4.10\\nless 4\n$$\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\nh(t)=-5\\bigl(t^{2}-4t\\bigr)+2=-5\\bigl((t-2)^{2}-4\\bigr)+2=-5(t-2)^{2}+20+2=-5(t-2)^{2}+22\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Vertex at $t=2$, $h=22$. $h(3)=17$. Landing $2+\\sqrt{110}/5\\approx 4.10$. Completed square $-5(t-2)^{2}+22$."
+    },
+    {
+      "case_id": "MATH 8.102",
+      "id": "math-8-102",
+      "title": "Exam-style tasks - 5",
+      "chapter": 8,
+      "subsection": "8.5",
+      "context": "A power model $y=A x^{p}$ is calibrated from data. Decide whether each claim about exponents, scaling, and fitted values is true or false.",
+      "statements": [
+        "A balloon maker has volume proportional to $r^3$. Shrinking radius by $10\\%$ is said to reduce volume by $\\dfrac{271}{10}\\%$.",
+        "In a pharmacy trial, concentration follows $C(m)=18m^{-1/2}$. The sample labelled $m=9$ is claimed to have concentration $6$ mg/L.",
+        "A cooperative farm follows $H(L)=KL^{2/3}$ for harvest. The forecast says eight times the cultivated area produces $5$ times the crop.",
+        "A grain cooperative reaches its promised yield when $40L^{\\frac{2}{3}}=360$. The land allocation is stated as $L=27$.",
+        "A materials sensor passes data through $g(x)=4x^2$ and then $f(u)=3u^{1/2}$. The composed output for $x=6$ is listed as $24$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{9}{10}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}=(\\dfrac{9}{10})^{3}$$\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}=\\dfrac{729}{1000}$$\n\nTranslate the output multiplier back to a percentage decrease:\n\n$$\\left|\\dfrac{729}{1000}-1\\right|\\cdot100\\%=\\dfrac{271}{10}\\%$$\n\nThe direction follows from the multiplier being below $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}<1$$\n\nThe stem gives $\\dfrac{271}{10}\\%$, so the decisive comparison is\n\n$$\\dfrac{271}{10}\\%=\\dfrac{271}{10}\\%.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$C(9)=\\frac{18}{\\sqrt{9}}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$C(9)=\\frac{18}{3}$$\n\nHence the model output is\n\n$$C(9)=6$$\n\nThe stem's value is $6$, so the numerical comparison is\n\n$$6=6.$$\n\nSo the statement is True.",
+        "**C.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{H(8L)}{H(L)}=\\frac{K(8L)^{\\frac{2}{3}}}{KL^{\\frac{2}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{H(8L)}{H(L)}=(8)^{\\frac{2}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{2}{3}}$$\n\n$$\\frac{H(8L)}{H(L)}=4$$\n\nThe proposed multiplier is $5$, and therefore\n\n$$4\\ne5$$\n\nThe mathematical result does not agree with the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$40L^{\\frac{2}{3}}=360$$\n\nDivide by the coefficient:\n\n$$L^{\\frac{2}{3}}=9$$\n\nRaise both sides to the reciprocal exponent:\n\n$$L=(9)^{\\frac{3}{2}}$$\n\n$$L=27$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$27=27.$$\n\nSo the statement is True.",
+        "**E.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(6)=4(6)^2$$\n\n$$g(6)=144$$\n\nInsert that inner output into $f$:\n\n$$f(g(6))=3\\sqrt{144}$$\n\nComplete the power evaluation:\n\n$$3\\cdot12$$\n\n$$f(g(6))=36$$\n\nThe displayed claim is $24$, so\n\n$$36\\ne24$$\n\nThe mathematical result does not agree with the claim.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the C model at m=9.\nC: derive the scale multiplier for H.\nD: solve the positive power equation for L.\nE: evaluate the two maps in their stated order.\n\nLevels keep the scale factor $A$. Scale comparisons cancel $A$ and leave only the power of the input ratio. Recover $A$ and any unknown exponent once here; each letter only checks its extra claim."
+    },
+    {
+      "case_id": "MATH 9.MOCK.CUBIC5",
+      "id": "MATH 9.MOCK.CUBIC5",
+      "title": "Cubic deviation — critical points and values",
+      "chapter": 9,
+      "subsection": "9.3",
+      "context": "A production deviation is modelled by\n\n$$\nf(x)=x^{3}-6x^{2}+9x+1\\qquad(x\\in\\mathbb{R})\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The derivative factors as $f'(x)=3(x-1)(x-3)$.",
+        "There is a local maximum at $x=1$.",
+        "The local-minimum value of $f$ is strictly less than $0$.",
+        "Between the two critical points, $f$ is strictly decreasing.",
+        "$f(0)+f(4)=2$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\nf'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3)\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nf''(x)=6x-12,\\qquad f''(1)=-6<0\n$$\n\nso $x=1$ is a local maximum.\n\nSo the statement is True.",
+        "**C.** → False\n\nAt the local minimum $x=3$:\n\n$$\nf(3)=27-54+27+1=1\\nless 0\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nOn $(1,3)$ one has $f'(x)=3(x-1)(x-3)<0$, so $f$ is strictly decreasing between the critical points.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\nf(0)=1,\\qquad f(4)=64-96+36+1=5\n$$\n\n$$\nf(0)+f(4)=6\\neq 2\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$f'=3(x-1)(x-3)$; local max at $1$ ($f=5$), local min at $3$ ($f=1$). Decreasing on $(1,3)$. $f(0)+f(4)=6$."
+    },
+    {
+      "case_id": "MATH 10.MOCK.GROWTH",
+      "id": "MATH 10.MOCK.GROWTH",
+      "title": "Exponential biomass — doubling and window factors",
+      "chapter": 10,
+      "subsection": "10.1",
+      "context": "A culture’s biomass (in grams) follows\n\n$$\nB(t)=80\\,e^{0.2t}\\qquad(t\\ge 0\\text{ in hours})\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Initial biomass is exactly $80$ g.",
+        "Biomass doubles in strictly less than $4$ hours.",
+        "After $5$ hours, biomass already exceeds $200$ g.",
+        "The relative growth factor over any $5$-hour window is exactly $e$.",
+        "$B(10)/B(5)=e$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\nB(0)=80\\,e^{0}=80\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nDoubling means $80e^{0.2t}=160$, so $e^{0.2t}=2$, hence\n\n$$\nt=\\dfrac{\\ln 2}{0.2}=5\\ln 2\\approx 5\\cdot 0.693=3.465<4\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\nB(5)=80e^{1}=80e\\approx 80\\cdot 2.718=217.4>200\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nFor any $t$,\n\n$$\n\\dfrac{B(t+5)}{B(t)}=e^{0.2\\cdot 5}=e\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\n\\dfrac{B(10)}{B(5)}=\\dfrac{80e^{2}}{80e}=e\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$B(0)=80$. Doubling time $5\\ln 2\\approx 3.47$. Five-hour factor $e$. $B(5)=80e\\approx 217$."
+    },
+    {
+      "case_id": "MATH 11.MOCK.MRMC",
+      "id": "MATH 11.MOCK.MRMC",
+      "title": "Revenue and cost — marginals and a level check",
+      "chapter": 11,
+      "subsection": "11.2",
+      "context": "Weekly revenue and cost (in thousands of euros) for output $q>0$ are\n\n$$\nR(q)=30q-q^{2},\\qquad C(q)=q^{3}-6q^{2}+15q+8\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Marginal revenue is $R'(q)=30-2q$.",
+        "Marginal cost is $C'(q)=3q^{2}-12q+15$.",
+        "At $q=3$, marginal revenue strictly exceeds marginal cost.",
+        "Profit $\\pi=R-C$ has a critical point wherever $R'=C'$.",
+        "$R(4)=C(4)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDifferentiate $R(q)=30q-q^{2}$:\n\n$$\nR'(q)=30-2q\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nC'(q)=3q^{2}-12q+15\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $q=3$:\n\n$$\nR'(3)=30-6=24,\\qquad C'(3)=27-36+15=6\n$$\n\n$$\n24>6\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\n\\pi'(q)=R'(q)-C'(q)\n$$\n\nvanishes precisely when $R'=C'$.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\nR(4)=120-16=104,\\qquad C(4)=64-96+60+8=36\n$$\n\n$$\n104\\neq 36\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$R'=30-2q$, $C'=3q^{2}-12q+15$. At $q=3$, $MR=24>MC=6$. Critical profit iff $MR=MC$. $R(4)\\neq C(4)$."
+    },
+    {
+      "case_id": "MATH 12.MOCK.URNS",
+      "id": "MATH 12.MOCK.URNS",
+      "title": "Two draws without replacement — colour events",
+      "chapter": 12,
+      "subsection": "12.1",
+      "context": "An urn holds $5$ red, $4$ blue and $3$ green balls ($12$ balls total). Two balls are drawn **without replacement**, order irrelevant.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The number of equally likely two-ball hands is $\\binom{12}{2}=66$.",
+        "The probability both balls are red is strictly less than $\\tfrac{1}{5}$.",
+        "The probability of one red and one blue equals $\\dfrac{20}{66}$.",
+        "The probability both balls share a colour exceeds $\\tfrac{1}{3}$.",
+        "The probability of at least one green ball equals $\\dfrac{30}{66}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\binom{12}{2} = \\dfrac{12 \\cdot 11}{1 \\cdot 2} = 66\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nP(\\text{both red})=\\dfrac{\\binom{5}{2}}{66}=\\dfrac{10}{66}=\\dfrac{5}{33}\\approx 0.152<\\dfrac{1}{5}\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nCount mixed red-blue pairs: $5\\cdot 4=20$ (unordered pairs, one of each colour).\n\n$$\nP=\\dfrac{20}{66}\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\nP(\\text{same colour})=\\dfrac{\\binom{5}{2}+\\binom{4}{2}+\\binom{3}{2}}{66}=\\dfrac{10+6+3}{66}=\\dfrac{19}{66}\n$$\n\n$$\n\\dfrac{19}{66}\\approx 0.288\\ngtr \\dfrac{1}{3}\n$$\n\nSo the statement is False.",
+        "**E.** → True\n\nComplement: no green means both from the $9$ non-green balls.\n\n$$\nP(\\text{at least one green})=1-\\dfrac{\\binom{9}{2}}{66}=1-\\dfrac{36}{66}=\\dfrac{30}{66}\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Universe $\\binom{12}{2}=66$. Both red $10/66$. Red-blue $20/66$. Same colour $19/66$. At least one green $30/66$."
+    },
+    {
+      "case_id": "MATH 13.MOCK.QC",
+      "id": "MATH 13.MOCK.QC",
+      "title": "Binomial defectives — mean, variance, and a PMF term",
+      "chapter": 13,
+      "subsection": "13.1",
+      "context": "A machine produces items independently with defect probability $p=0.2$. A batch of $n=10$ items is inspected. Let $X$ be the number of defectives, so $X\\sim\\mathrm{Bin}(10,0.2)$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The mean number of defectives is exactly $2$.",
+        "The variance is strictly less than $2$.",
+        "$P(X=2)=\\binom{10}{2}(0.2)^{2}(0.8)^{8}$ and $\\binom{10}{2}=45$.",
+        "Using $(0.8)^{10}<0.12$, one has $P(X=0)<0.12$.",
+        "$P(X\\ge 1)>0.85$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\nE[X]=np=10\\cdot 0.2=2\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\mathrm{Var}(X)=np(1-p)=10\\cdot 0.2\\cdot 0.8=1.6<2\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nThe binomial PMF at $k=2$ is exactly that product form, and\n\n$$\n\\binom{10}{2} = \\dfrac{10 \\cdot 9}{1 \\cdot 2} = 45\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\nP(X=0)=(0.8)^{10}\n$$\n\nCompute the power directly:\n\n$$\n(0.8)^{2}=0.64,\\quad (0.8)^{4}=0.4096,\\quad (0.8)^{8}\\approx 0.1678\n$$\n\n$$\n(0.8)^{10}=(0.8)^{8}\\cdot(0.8)^{2}\\approx 0.1678\\cdot 0.64\\approx 0.1074<0.12\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\nP(X\\ge 1)=1-P(X=0)\\approx 1-0.1074=0.8926>0.85\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$E[X]=2$, $\\mathrm{Var}=1.6$. $\\binom{10}{2}=45$. $(0.8)^{10}\\approx 0.107$, so $P(X\\ge 1)\\approx 0.893$."
+    }
+  ]
+}
