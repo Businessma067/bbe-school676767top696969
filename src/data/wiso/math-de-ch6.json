@@ -1,1 +1,386 @@
-{}
+{
+  "MATH 6.01": {
+    "title": "Rational Inequalities — 1"
+  },
+  "MATH 6.02": {
+    "title": "Rational Inequalities — 2"
+  },
+  "MATH 6.03": {
+    "title": "Rational Inequalities — 3"
+  },
+  "MATH 6.04": {
+    "title": "Rational Inequalities — 4"
+  },
+  "MATH 6.05": {
+    "title": "Rational Inequalities — 5"
+  },
+  "MATH 6.06": {
+    "title": "Rational Inequalities — 6"
+  },
+  "MATH 6.07": {
+    "title": "Rational Inequalities — 7"
+  },
+  "MATH 6.08": {
+    "title": "Rational Inequalities — 8"
+  },
+  "MATH 6.09": {
+    "title": "Rational Inequalities — 9"
+  },
+  "MATH 6.10": {
+    "title": "Rational Inequalities — 10"
+  },
+  "MATH 6.11": {
+    "title": "Rational Inequalities — 11"
+  },
+  "MATH 6.12": {
+    "title": "Rational Inequalities — 12"
+  },
+  "MATH 6.13": {
+    "title": "Rational Inequalities — 13"
+  },
+  "MATH 6.14": {
+    "title": "Rational Inequalities — 14"
+  },
+  "MATH 6.15": {
+    "title": "Rational Inequalities — 15"
+  },
+  "MATH 6.16": {
+    "title": "Rational Inequalities — 16"
+  },
+  "MATH 6.17": {
+    "title": "Rational Inequalities — 17"
+  },
+  "MATH 6.18": {
+    "title": "Rational Inequalities — 18"
+  },
+  "MATH 6.19": {
+    "title": "Rational Inequalities — 19"
+  },
+  "MATH 6.20": {
+    "title": "Rational Inequalities — 20"
+  },
+  "MATH 6.21": {
+    "title": "Quadratic Sign Inequalities — 1"
+  },
+  "MATH 6.22": {
+    "title": "Quadratic Sign Inequalities — 2"
+  },
+  "MATH 6.23": {
+    "title": "Quadratic Sign Inequalities — 3"
+  },
+  "MATH 6.24": {
+    "title": "Quadratic Sign Inequalities — 4"
+  },
+  "MATH 6.25": {
+    "title": "Quadratic Sign Inequalities — 5"
+  },
+  "MATH 6.26": {
+    "title": "Quadratic Sign Inequalities — 6"
+  },
+  "MATH 6.27": {
+    "title": "Quadratic Sign Inequalities — 7"
+  },
+  "MATH 6.28": {
+    "title": "Quadratic Sign Inequalities — 8"
+  },
+  "MATH 6.29": {
+    "title": "Quadratic Sign Inequalities — 9"
+  },
+  "MATH 6.30": {
+    "title": "Quadratic Sign Inequalities — 10"
+  },
+  "MATH 6.31": {
+    "title": "Quadratic Sign Inequalities — 11"
+  },
+  "MATH 6.32": {
+    "title": "Quadratic Sign Inequalities — 12"
+  },
+  "MATH 6.33": {
+    "title": "Quadratic Sign Inequalities — 13"
+  },
+  "MATH 6.34": {
+    "title": "Quadratic Sign Inequalities — 14"
+  },
+  "MATH 6.35": {
+    "title": "Quadratic Sign Inequalities — 15"
+  },
+  "MATH 6.36": {
+    "title": "Quadratic Sign Inequalities — 16"
+  },
+  "MATH 6.37": {
+    "title": "Quadratic Sign Inequalities — 17"
+  },
+  "MATH 6.38": {
+    "title": "Compound & Special Inequalities — 1"
+  },
+  "MATH 6.39": {
+    "title": "Compound & Special Inequalities — 2"
+  },
+  "MATH 6.40": {
+    "title": "Compound & Special Inequalities — 3"
+  },
+  "MATH 6.41": {
+    "title": "Compound & Special Inequalities — 4"
+  },
+  "MATH 6.42": {
+    "title": "Compound & Special Inequalities — 5"
+  },
+  "MATH 6.43": {
+    "title": "Compound & Special Inequalities — 6"
+  },
+  "MATH 6.44": {
+    "title": "Compound & Special Inequalities — 7"
+  },
+  "MATH 6.45": {
+    "title": "Compound & Special Inequalities — 8"
+  },
+  "MATH 6.46": {
+    "title": "Compound & Special Inequalities — 9"
+  },
+  "MATH 6.47": {
+    "title": "Compound & Special Inequalities — 10"
+  },
+  "MATH 6.48": {
+    "title": "Compound & Special Inequalities — 11"
+  },
+  "MATH 6.49": {
+    "title": "Compound & Special Inequalities — 12"
+  },
+  "MATH 6.50": {
+    "title": "Compound & Special Inequalities — 13"
+  },
+  "MATH 6.51": {
+    "title": "Compound & Special Inequalities — 14"
+  },
+  "MATH 6.52": {
+    "title": "Compound & Special Inequalities — 15"
+  },
+  "MATH 6.53": {
+    "title": "Compound & Special Inequalities — 16"
+  },
+  "MATH 6.54": {
+    "title": "Compound & Special Inequalities — 17"
+  },
+  "MATH 6.55": {
+    "title": "Compound & Special Inequalities — 18"
+  },
+  "MATH 6.56": {
+    "title": "Compound & Special Inequalities — 19"
+  },
+  "MATH 6.57": {
+    "title": "Compound & Special Inequalities — 20"
+  },
+  "MATH 6.58": {
+    "title": "Compound & Special Inequalities — 21"
+  },
+  "MATH 6.59": {
+    "title": "Compound & Special Inequalities — 22"
+  },
+  "MATH 6.60": {
+    "title": "Compound & Special Inequalities — 23"
+  },
+  "MATH 6.61": {
+    "title": "Compound & Special Inequalities — 24"
+  },
+  "MATH 6.62": {
+    "title": "Compound & Special Inequalities — 25"
+  },
+  "MATH 6.63": {
+    "title": "Compound & Special Inequalities — 26"
+  },
+  "MATH 6.64": {
+    "title": "Loyalty Points Discount"
+  },
+  "MATH 6.65": {
+    "title": "Store Membership Savings"
+  },
+  "MATH 6.66": {
+    "title": "Greenhouse Temperature Safety"
+  },
+  "MATH 6.67": {
+    "title": "Paying Off a Loan"
+  },
+  "MATH 6.68": {
+    "title": "Restaurant Service Charge"
+  },
+  "MATH 6.69": {
+    "title": "Basketball Scoring Average"
+  },
+  "MATH 6.70": {
+    "title": "Manufacturing Quality Control"
+  },
+  "MATH 6.71": {
+    "title": "Rideshare Surge Pricing"
+  },
+  "MATH 6.72": {
+    "title": "Discount and Coupon Order"
+  },
+  "MATH 6.73": {
+    "title": "Average Cycling Speed"
+  },
+  "MATH 6.74": {
+    "title": "Wedding Catering Budget"
+  },
+  "MATH 6.75": {
+    "title": "Bulk Soil Purchase"
+  },
+  "MATH 6.76": {
+    "title": "Weighted Course Grade"
+  },
+  "MATH 6.77": {
+    "title": "Simple Interest Savings"
+  },
+  "MATH 6.78": {
+    "title": "Sales Tax Budget"
+  },
+  "MATH 6.79": {
+    "title": "Overtime Pay"
+  },
+  "MATH 6.80": {
+    "title": "Markup vs. Profit Margin"
+  },
+  "MATH 6.81": {
+    "title": "Currency Conversion Budget"
+  },
+  "MATH 6.82": {
+    "title": "Food Truck Break-Even"
+  },
+  "MATH 6.83": {
+    "title": "Manufacturing Tolerance Inspection"
+  },
+  "MATH 6.84": {
+    "title": "Tiered Shipping Rates"
+  },
+  "MATH 6.85": {
+    "title": "Support Cable Length"
+  },
+  "MATH 6.86": {
+    "title": "Comparing Three Internet Plans"
+  },
+  "MATH 6.87": {
+    "title": "College GPA with Credit-Hour Weights"
+  },
+  "MATH 6.88": {
+    "title": "Chained Discount, Tax, and Coupon"
+  },
+  "MATH 6.89": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 6.90": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 6.91": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 6.92": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 6.93": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 6.94": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 6.95": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 6.96": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 6.97": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 6.98": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 6.99": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 6.100": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 6.101": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 6.102": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 6.103": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 6.104": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 6.105": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 6.106": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 6.107": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 6.108": {
+    "title": "Exam-style tasks - 20"
+  },
+  "MATH 6.109": {
+    "title": "Exam-style tasks - 21"
+  },
+  "MATH 6.110": {
+    "title": "Exam-style tasks - 22"
+  },
+  "MATH 6.111": {
+    "title": "Exam-style tasks - 23"
+  },
+  "MATH 6.112": {
+    "title": "Exam-style tasks - 24"
+  },
+  "MATH 6.113": {
+    "title": "Exam-style tasks - 25"
+  },
+  "MATH 6.114": {
+    "title": "Exam-style tasks - 26"
+  },
+  "MATH 6.115": {
+    "title": "Exam-style tasks - 27"
+  },
+  "MATH 6.116": {
+    "title": "Exam-style tasks - 28"
+  },
+  "MATH 6.117": {
+    "title": "Exam-style tasks - 29"
+  },
+  "MATH 6.118": {
+    "title": "Exam-style tasks - 30"
+  },
+  "MATH 6.119": {
+    "title": "Exam-style tasks - 31"
+  },
+  "MATH 6.120": {
+    "title": "Exam-style tasks - 32"
+  },
+  "MATH 6.121": {
+    "title": "Exam-style tasks - 33"
+  },
+  "MATH 6.122": {
+    "title": "Exam-style tasks - 34"
+  },
+  "MATH 6.123": {
+    "title": "Exam-style tasks - 35"
+  },
+  "MATH 6.124": {
+    "title": "Exam-style tasks - 36"
+  },
+  "MATH 6.125": {
+    "title": "Exam-style tasks - 37"
+  },
+  "MATH 6.126": {
+    "title": "Exam-style tasks - 38"
+  },
+  "MATH 6.127": {
+    "title": "Exam-style tasks - 39"
+  },
+  "MATH 6.128": {
+    "title": "Exam-style tasks - 40"
+  }
+}

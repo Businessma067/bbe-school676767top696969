@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Translate one BBE math chapter into a WiSo German overlay JSON.
- * Protects KaTeX $...$ / $$...$$. Uses MyMemory (rate-limited).
+ * Protects KaTeX; skips strings that are almost entirely math.
  *
  *   npx tsx scripts/translate-wiso-math-chapter.mts <1-13>
  */
@@ -28,48 +28,52 @@ function protect(text: string) {
   const masked = String(text ?? "").replace(TOKEN_RE, (m) => {
     const i = tokens.length;
     tokens.push(m);
-    return `⟦K${i}⟧`;
+    return ` XXLAT${i}XX `;
   });
   return { masked, tokens };
 }
 
 function restore(text: string, tokens: string[]) {
-  return String(text ?? "").replace(/⟦K(\d+)⟧/g, (_, n) => tokens[Number(n)] ?? "");
+  return String(text ?? "")
+    .replace(/\s*XXLAT(\d+)XX\s*/gi, (_, n) => tokens[Number(n)] ?? "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function proseRatio(text: string): number {
+  const { masked } = protect(text);
+  const prose = masked.replace(/XXLAT\d+XX/gi, "").replace(/\s+/g, "");
+  const raw = String(text ?? "").replace(/\s+/g, "");
+  if (!raw.length) return 0;
+  return prose.length / raw.length;
 }
 
 async function translate(text: string): Promise<string> {
   if (!text?.trim()) return text;
-  const { masked, tokens } = protect(text);
-  const parts = masked.split(/(?<=\.)\s+/);
-  const chunks: string[] = [];
-  let buf = "";
-  for (const part of parts) {
-    if ((buf + " " + part).trim().length > 420) {
-      if (buf) chunks.push(buf);
-      buf = part;
-    } else {
-      buf = buf ? `${buf} ${part}` : part;
-    }
-  }
-  if (buf) chunks.push(buf);
+  // Keep formula-heavy stems exactly as BBE — MT destroys KaTeX.
+  if (proseRatio(text) < 0.35) return text;
 
-  const out: string[] = [];
-  for (const chunk of chunks) {
-    const url = new URL("https://api.mymemory.translated.net/get");
-    url.searchParams.set("q", chunk);
-    url.searchParams.set("langpair", "en|de");
-    const res = await fetch(url);
-    const data = (await res.json()) as {
-      quotaFinished?: boolean;
-      responseStatus?: number;
-      responseData?: { translatedText?: string };
-    };
-    if (data.quotaFinished) throw new Error("MyMemory quota finished");
-    const t = data.responseData?.translatedText;
-    out.push(t && data.responseStatus === 200 ? t : chunk);
-    await sleep(300);
-  }
-  return restore(out.join(" "), tokens);
+  const { masked, tokens } = protect(text);
+  const url = new URL("https://api.mymemory.translated.net/get");
+  // Keep chunks short; do not split mid-placeholder.
+  const chunk = masked.slice(0, 450);
+  url.searchParams.set("q", chunk);
+  url.searchParams.set("langpair", "en|de");
+  const res = await fetch(url);
+  const data = (await res.json()) as {
+    quotaFinished?: boolean;
+    responseStatus?: number;
+    responseData?: { translatedText?: string };
+  };
+  if (data.quotaFinished) throw new Error("MyMemory quota finished");
+  const t = data.responseData?.translatedText;
+  await sleep(250);
+  if (!t || data.responseStatus !== 200) return text;
+  // If translator ate placeholders, keep original.
+  const expected = (masked.match(/XXLAT\d+XX/gi) || []).length;
+  const got = (t.match(/XXLAT\d+XX/gi) || []).length;
+  if (expected > 0 && got < expected) return text;
+  return restore(t, tokens);
 }
 
 type Overlay = {
@@ -96,9 +100,8 @@ async function translateTask(task: MathTask): Promise<Overlay> {
 
 async function main() {
   const outPath = path.join(outDir, `math-de-ch${chapter}.json`);
-  const existing: Record<string, Overlay> = fs.existsSync(outPath)
-    ? JSON.parse(fs.readFileSync(outPath, "utf8"))
-    : {};
+  // Always rebuild this chapter cleanly.
+  const existing: Record<string, Overlay> = {};
   const tasks = await loadMathChapterTasks(chapter);
   console.log(`Chapter ${chapter}: ${tasks.length} tasks`);
 
@@ -106,20 +109,17 @@ async function main() {
   for (const task of tasks) {
     i += 1;
     const id = task.case_id || task.id;
-    if (existing[id]?.statements?.length) {
-      console.log(`skip ${id}`);
-      continue;
-    }
     console.log(`[${i}/${tasks.length}] ${id}`);
     try {
       existing[id] = await translateTask(task);
-      fs.writeFileSync(outPath, `${JSON.stringify(existing, null, 2)}\n`);
+      if (i % 5 === 0) fs.writeFileSync(outPath, `${JSON.stringify(existing, null, 2)}\n`);
     } catch (err) {
       console.error("stopped:", err instanceof Error ? err.message : err);
       fs.writeFileSync(outPath, `${JSON.stringify(existing, null, 2)}\n`);
       process.exit(2);
     }
   }
+  fs.writeFileSync(outPath, `${JSON.stringify(existing, null, 2)}\n`);
   console.log("wrote", outPath, Object.keys(existing).length);
 }
 

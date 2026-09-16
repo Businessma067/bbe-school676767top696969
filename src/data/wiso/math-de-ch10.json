@@ -1,1 +1,374 @@
-{}
+{
+  "MATH 10.1.1": {
+    "title": "Continuous force versus discrete compounding — letter rates"
+  },
+  "MATH 10.1.2": {
+    "title": "Recovering continuous force from an exact sample table"
+  },
+  "MATH 10.1.3": {
+    "title": "Doubling and half-life identities with letter force"
+  },
+  "MATH 10.1.4": {
+    "title": "Two continuous forces $\\alpha$ and $\\beta$ — parametric comparison"
+  },
+  "MATH 10.1.5": {
+    "title": "Rebuild $P(t)=P_0 e^{kt}$ from a doubling time"
+  },
+  "MATH 10.1.6": {
+    "title": "Nested exponential–log compositions with letters"
+  },
+  "MATH 10.1.7": {
+    "title": "Semi-log slope reads the letter force $k$"
+  },
+  "MATH 10.1.8": {
+    "title": "Tangled quantifiers on continuous exponential paths"
+  },
+  "MATH 10.1.9": {
+    "title": "Piecewise continuous force — switch at letter $T$"
+  },
+  "MATH 10.1.10": {
+    "title": "GDP per capita — force $g-p$ trap with letter rates"
+  },
+  "MATH 10.1.11": {
+    "title": "Competing populations with letter rates $k_A,k_B$"
+  },
+  "MATH 10.1.12": {
+    "title": "Diagnosing discrete versus continuous from a twin table"
+  },
+  "MATH 10.1.13": {
+    "title": "Newton cooling structure with ambient letter $T_a$"
+  },
+  "MATH 10.1.14": {
+    "title": "Matching discrete factor $(1+r)$ to continuous force $k$"
+  },
+  "MATH 10.1.15": {
+    "title": "Rebuild continuous force from two lettered observations"
+  },
+  "MATH 10.1.16": {
+    "title": "Rewriting $a^{t}$ as continuous force $\\ln a$"
+  },
+  "MATH 10.1.17": {
+    "title": "Hybrid — integer doubling table meets continuous force $\\ln 2$"
+  },
+  "MATH 10.1.18": {
+    "title": "‘For every’ and ‘precisely when’ in exponential claims"
+  },
+  "MATH 10.1.19": {
+    "title": "Piecewise growth then decay — letters $k_+,k_-$"
+  },
+  "MATH 10.1.20": {
+    "title": "Unit trap — letter $M$ millions versus raw counts"
+  },
+  "MATH 10.1.21": {
+    "title": "Reading a continuous growth graph in letters"
+  },
+  "MATH 10.1.22": {
+    "title": "Equal log-increments diagnose constant force $k$"
+  },
+  "MATH 10.1.23": {
+    "title": "Radioactive-style decay with letter rate $\\lambda$"
+  },
+  "MATH 10.1.24": {
+    "title": "Per capita with growth letters $\\alpha$ and population $\\beta$"
+  },
+  "MATH 10.1.25": {
+    "title": "Rebuild decay from a lettered half-life"
+  },
+  "MATH 10.1.26": {
+    "title": "Nested form $e^{k\\ln(P/Q)}$ as a relative power"
+  },
+  "MATH 10.1.27": {
+    "title": "Hybrid — equal starts, letter force gap $\\delta$"
+  },
+  "MATH 10.1.28": {
+    "title": "Compound claims linking discrete and continuous letters"
+  },
+  "MATH 10.1.29": {
+    "title": "Policy switch raising force after letter $T$"
+  },
+  "MATH 10.1.30": {
+    "title": "Applied Newton — ambient $T_a$ and force $k$ as letters"
+  },
+  "MATH 10.1.31": {
+    "title": "Graph comparison — force $k$ versus factor $1+r$"
+  },
+  "MATH 10.1.32": {
+    "title": "Recover discrete letter $r$ from a geometric table"
+  },
+  "MATH 10.1.33": {
+    "title": "Ordering continuous forces without numeric drills"
+  },
+  "MATH 10.1.34": {
+    "title": "Parametric family $P_\\lambda(t)=P_0 e^{\\lambda t}$"
+  },
+  "MATH 10.1.35": {
+    "title": "Rebuild from one point and a letter force"
+  },
+  "MATH 10.1.36": {
+    "title": "Nested $\\ln$ of a continuous path"
+  },
+  "MATH 10.1.37": {
+    "title": "Hybrid semi-log table — slope letter $k$"
+  },
+  "MATH 10.1.38": {
+    "title": "Precisely-when criteria for exponential structure"
+  },
+  "MATH 10.1.39": {
+    "title": "Average force across a piecewise exponential"
+  },
+  "MATH 10.1.40": {
+    "title": "Applied — when per capita force vanishes"
+  },
+  "MATH 10.1.41": {
+    "title": "Semi-log decay graph — reading negative letter force"
+  },
+  "MATH 10.1.42": {
+    "title": "Table that breaks pure exponential structure"
+  },
+  "MATH 10.1.43": {
+    "title": "Batch of continuous-exponential algebraic identities"
+  },
+  "MATH 10.1.44": {
+    "title": "Parametric mix — capital, labour, and per-worker output"
+  },
+  "MATH 10.2.1": {
+    "title": "Reading a base-two logarithm from its graph"
+  },
+  "MATH 10.2.2": {
+    "title": "Change-of-base identity in a verification table"
+  },
+  "MATH 10.2.3": {
+    "title": "Letter identities for product, quotient, and power laws"
+  },
+  "MATH 10.2.4": {
+    "title": "Parametric domain of a product-argument logarithm"
+  },
+  "MATH 10.2.5": {
+    "title": "Rebuild the base from intercept and unit point"
+  },
+  "MATH 10.2.6": {
+    "title": "Nested base-two logarithm: domain before evaluation"
+  },
+  "MATH 10.2.7": {
+    "title": "Inverse pair $2^{t}$ and $\\log_{2}$ on matching domains"
+  },
+  "MATH 10.2.8": {
+    "title": "Text-dense compound domain for a quotient argument"
+  },
+  "MATH 10.2.9": {
+    "title": "Tangled domain of a rational-argument logarithm"
+  },
+  "MATH 10.2.10": {
+    "title": "Symbolic price elasticity from a log-log demand"
+  },
+  "MATH 10.2.11": {
+    "title": "Comparing two logarithmic graphs that share an asymptote"
+  },
+  "MATH 10.2.12": {
+    "title": "Log-value table: exact base two versus natural logs"
+  },
+  "MATH 10.2.13": {
+    "title": "Change-of-base as a symbolic identity in letters"
+  },
+  "MATH 10.2.14": {
+    "title": "Parametric base: when $\\log_{b}$ is decreasing"
+  },
+  "MATH 10.2.15": {
+    "title": "Rebuild: which logarithm passes through $(e,1)$?"
+  },
+  "MATH 10.2.16": {
+    "title": "Triple nested logarithm: stacking domain conditions"
+  },
+  "MATH 10.2.17": {
+    "title": "Hybrid table: which lettered log identities survive?"
+  },
+  "MATH 10.2.18": {
+    "title": "Dense inverse package: identities that must hold for all domain points"
+  },
+  "MATH 10.2.19": {
+    "title": "Domain tangle: logarithm of a square root expression"
+  },
+  "MATH 10.2.20": {
+    "title": "Richter-style letter magnitudes and ratio reasoning"
+  },
+  "MATH 10.2.21": {
+    "title": "Graph growth: logarithm versus a ray through the origin"
+  },
+  "MATH 10.2.22": {
+    "title": "Elasticity sample table from a log-log regression"
+  },
+  "MATH 10.2.23": {
+    "title": "Symbolic false-friend identities among logarithms"
+  },
+  "MATH 10.2.24": {
+    "title": "Parametric quadratic after the substitution $u=\\log_{b}x$"
+  },
+  "MATH 10.2.25": {
+    "title": "Rebuild a horizontal shift from an asymptote"
+  },
+  "MATH 10.2.26": {
+    "title": "Nested logs with mixed bases"
+  },
+  "MATH 10.2.27": {
+    "title": "Hybrid: inverse pair with a base-three figure"
+  },
+  "MATH 10.2.28": {
+    "title": "Text-dense: multi-condition domain for $\\log(ax-b)$"
+  },
+  "MATH 10.2.29": {
+    "title": "Domain tangle with absolute values inside a log"
+  },
+  "MATH 10.2.30": {
+    "title": "pH-style letter ratios without numeric plug-and-chug"
+  },
+  "MATH 10.2.31": {
+    "title": "Reading $\\log_{5}$ from a marked unit point"
+  },
+  "MATH 10.2.32": {
+    "title": "Change-of-base check table with bases $e$ and $10$"
+  },
+  "MATH 10.2.33": {
+    "title": "Inverse identities written entirely with letters"
+  },
+  "MATH 10.2.34": {
+    "title": "Parametric argument $\\log(ax+b)$ with sign constraints"
+  },
+  "MATH 10.2.35": {
+    "title": "Rebuild base from two graph points"
+  },
+  "MATH 10.2.36": {
+    "title": "Nested evaluation structure without premature arithmetic"
+  },
+  "MATH 10.2.37": {
+    "title": "Hybrid elasticity sketch with a demand curve"
+  },
+  "MATH 10.2.38": {
+    "title": "Text-dense chain of log laws with letters $u,v,w$"
+  },
+  "MATH 10.2.39": {
+    "title": "Domain tangle for $\\log$ of a linear fractional transform"
+  },
+  "MATH 10.2.40": {
+    "title": "Applied letter model: recovering time from a log growth equation"
+  },
+  "MATH 10.2.41": {
+    "title": "Two bases on one canvas: $\\log_{2}$ versus $\\log_{10}$"
+  },
+  "MATH 10.2.42": {
+    "title": "Table of cob checks for symbolic pairs $(a,b)$"
+  },
+  "MATH 10.2.43": {
+    "title": "Symbolic substitution preparing a quadratic in $u=\\ln x$"
+  },
+  "MATH 10.2.44": {
+    "title": "Parametric family $f_{b}(x)=\\log_{b}(x)$ ranked by base"
+  },
+  "MATH 10.2.45": {
+    "title": "Rebuild argument form from a shifted asymptote and unit step"
+  },
+  "MATH 10.2.46": {
+    "title": "Nested domain inequality chain with a parameter"
+  },
+  "MATH 10.2.47": {
+    "title": "Hybrid figure plus table: reading $\\log_{3}$ values"
+  },
+  "MATH 10.2.48": {
+    "title": "Text-dense: proving and disproving a claimed log identity chain"
+  },
+  "MATH 10.2.49": {
+    "title": "Final tangle: domain of $\\log(b-x)+\\log(x-a)$ versus the product form"
+  },
+  "MATH 10.3.1": {
+    "title": "Hybrid — piecewise force, log hit, and a false constant-rate shortcut"
+  },
+  "MATH 10.3.2": {
+    "title": "Graph — crossing populations and the log meeting clock"
+  },
+  "MATH 10.3.3": {
+    "title": "Table — recover continuous force, then log comparisons"
+  },
+  "MATH 10.3.4": {
+    "title": "Symbolic — inverse log clock beside an exponential stock"
+  },
+  "MATH 10.3.5": {
+    "title": "Parametric — nested logs pinning an exponential stock"
+  },
+  "MATH 10.3.6": {
+    "title": "Piecewise — log hit before the kink, with a decaying tail"
+  },
+  "MATH 10.3.7": {
+    "title": "Nested — log constraints on an exponential hitting clock"
+  },
+  "MATH 10.3.8": {
+    "title": "Text-dense — five entangled exp/log micro-traps"
+  },
+  "MATH 10.3.9": {
+    "title": "Rebuild — force from two observations, then multiple hitting clocks"
+  },
+  "MATH 10.3.10": {
+    "title": "Applied letters — GDP per capita force via logs"
+  },
+  "MATH 10.3.11": {
+    "title": "Hybrid — continuous versus discrete log hitting times"
+  },
+  "MATH 10.3.12": {
+    "title": "Graph — radioactive half-lives beside an investment hitting clock"
+  },
+  "MATH 10.3.13": {
+    "title": "Table — elasticity schedule beside an exponential stock"
+  },
+  "MATH 10.3.14": {
+    "title": "Symbolic — change-of-base logarithm inside a power equation"
+  },
+  "MATH 10.3.15": {
+    "title": "Parametric — force family pinned by a log constraint"
+  },
+  "MATH 10.3.16": {
+    "title": "Piecewise — GDP force switch read through per-capita logs"
+  },
+  "MATH 10.3.17": {
+    "title": "Nested — log-pinned force and its inverse clock"
+  },
+  "MATH 10.3.18": {
+    "title": "Text-dense — half-life force tangled with an EAR claim"
+  },
+  "MATH 10.3.19": {
+    "title": "Rebuild — semi-log table forces and equal-ratio check"
+  },
+  "MATH 10.3.20": {
+    "title": "Applied letters — two funds, log crossing, and who leads after"
+  },
+  "MATH 10.3.21": {
+    "title": "Hybrid — piecewise stock force beside constant-elasticity demand"
+  },
+  "MATH 10.3.22": {
+    "title": "Graph — semi-log straightness and three tempting misreads"
+  },
+  "MATH 10.3.23": {
+    "title": "Table — continuous versus annual balances and log returns"
+  },
+  "MATH 10.3.24": {
+    "title": "Symbolic — which exp/log identities survive beside growth"
+  },
+  "MATH 10.3.25": {
+    "title": "Parametric — log domain side-conditions on an exponential stock"
+  },
+  "MATH 10.3.26": {
+    "title": "Piecewise — true log-average versus arithmetic mean of forces"
+  },
+  "MATH 10.3.27": {
+    "title": "Nested — double-log constraints pinning level and force"
+  },
+  "MATH 10.3.28": {
+    "title": "Text-dense — inverse clock traps beside exponential growth"
+  },
+  "MATH 10.3.29": {
+    "title": "Rebuild — two series, two forces, one future crossing"
+  },
+  "MATH 10.3.30": {
+    "title": "Applied letters — nested log link between GDP and population forces"
+  },
+  "MATH 10.3.31": {
+    "title": "Applied letters — discrete population, GDP per capita, and a continuous neighbour"
+  }
+}

@@ -1,1 +1,656 @@
-{}
+{
+  "MATH 12.01": {
+    "title": "A Committee Selection"
+  },
+  "MATH 12.02": {
+    "title": "A Poker Hand"
+  },
+  "MATH 12.03": {
+    "title": "Restricted Seating"
+  },
+  "MATH 12.04": {
+    "title": "Quality Control Sampling"
+  },
+  "MATH 12.05": {
+    "title": "Rolling the Dice"
+  },
+  "MATH 12.06": {
+    "title": "Find the Missing Value"
+  },
+  "MATH 12.07": {
+    "title": "Arranging BALLOON"
+  },
+  "MATH 12.08": {
+    "title": "A Lottery Draw"
+  },
+  "MATH 12.09": {
+    "title": "A Round Table"
+  },
+  "MATH 12.10": {
+    "title": "Chevalier de Méré's Dice Problem"
+  },
+  "MATH 12.11": {
+    "title": "A Bookshelf Restriction"
+  },
+  "MATH 12.12": {
+    "title": "Find the Missing Value (12)"
+  },
+  "MATH 12.13": {
+    "title": "A Poker Hand (13)"
+  },
+  "MATH 12.14": {
+    "title": "Choosing a Committee"
+  },
+  "MATH 12.15": {
+    "title": "Mismatched Gifts (Derangements)"
+  },
+  "MATH 12.16": {
+    "title": "A Birthday Coincidence"
+  },
+  "MATH 12.17": {
+    "title": "Distributing Candies (Stars and Bars)"
+  },
+  "MATH 12.18": {
+    "title": "Repeated Digits in a PIN"
+  },
+  "MATH 12.19": {
+    "title": "The Assessment Poster"
+  },
+  "MATH 12.20": {
+    "title": "The National Lottery"
+  },
+  "MATH 12.21": {
+    "title": "The Student Project Team"
+  },
+  "MATH 12.22": {
+    "title": "Tennis Club Pairings"
+  },
+  "MATH 12.23": {
+    "title": "The Gala Dinner"
+  },
+  "MATH 12.24": {
+    "title": "The Statistics Fair Banner"
+  },
+  "MATH 12.25": {
+    "title": "Poker Night"
+  },
+  "MATH 12.26": {
+    "title": "The Peer-Review Panel"
+  },
+  "MATH 12.27": {
+    "title": "Chess Club Pairings"
+  },
+  "MATH 12.28": {
+    "title": "The Wedding Photograph"
+  },
+  "MATH 12.29": {
+    "title": "The Office Retreat"
+  },
+  "MATH 12.30": {
+    "title": "The Summit LED Banner"
+  },
+  "MATH 12.31": {
+    "title": "The Harbour Charity Raffle"
+  },
+  "MATH 12.32": {
+    "title": "The Marathon Medical Tent"
+  },
+  "MATH 12.33": {
+    "title": "The Ballroom Waltz Workshop"
+  },
+  "MATH 12.34": {
+    "title": "The Conservatory Stage Apron"
+  },
+  "MATH 12.35": {
+    "title": "The Design Studio Secret Santa"
+  },
+  "MATH 12.36": {
+    "title": "The Ski-Chalet Shuttle Van"
+  },
+  "MATH 12.37": {
+    "title": "The Lab Contamination Screen"
+  },
+  "MATH 12.38": {
+    "title": "The Twin Freshmen Exam Row"
+  },
+  "MATH 12.39": {
+    "title": "The Regional Cup Exhibition"
+  },
+  "MATH 12.40": {
+    "title": "Combinatorial Probability 40"
+  },
+  "MATH 12.41": {
+    "title": "Combinatorial Probability 41"
+  },
+  "MATH 12.42": {
+    "title": "Combinatorial Probability 42"
+  },
+  "MATH 12.43": {
+    "title": "At a mid-size company, 65% of employees regularly use Software Tool A, and 45%"
+  },
+  "MATH 12.44": {
+    "title": "A market research firm found that 55% of surveyed households subscribe to Streaming Service X, and 40% subscribe to Streaming Service Y"
+  },
+  "MATH 12.45": {
+    "title": "A gym tracks member usage of three amenities"
+  },
+  "MATH 12.46": {
+    "title": "During a store-wide sale, 42% of transactions redeemed Coupon 1, and 38%"
+  },
+  "MATH 12.47": {
+    "title": "A university registrar's data shows that 40% of students take an Art elective"
+  },
+  "MATH 12.48": {
+    "title": "A security firm scanned a fleet of servers for three vulnerability types"
+  },
+  "MATH 12.49": {
+    "title": "A hospital reviewed patient charts for three risk factors"
+  },
+  "MATH 12.50": {
+    "title": "A retailer analyzed loyalty card ownership among its customers"
+  },
+  "MATH 12.51": {
+    "title": "A factory inspected finished units for three defect types"
+  },
+  "MATH 12.52": {
+    "title": "A survey asked respondents which of three social media platforms they use"
+  },
+  "MATH 12.53": {
+    "title": "An insurance agency reviewed its customers' policies"
+  },
+  "MATH 12.54": {
+    "title": "A university tracked pass rates across three exams"
+  },
+  "MATH 12.55": {
+    "title": "A restaurant surveyed diners about dietary restrictions"
+  },
+  "MATH 12.56": {
+    "title": "A car dealership reviewed optional features on its lot"
+  },
+  "MATH 12.57": {
+    "title": "An online retailer tracked customer behavior"
+  },
+  "MATH 12.58": {
+    "title": "Of 2,000 factory units, 700 had Defect A, 440 Defect B, and 360 Defect C"
+  },
+  "MATH 12.59": {
+    "title": "UI, Performance, and Security rates are 50%, 40%, and 30%"
+  },
+  "MATH 12.60": {
+    "title": "Product rates are P(A)=55%, P(B)=45%, and P(C)=35%"
+  },
+  "MATH 12.61": {
+    "title": "Of 1,500 servers, Memory, Disk, and Network fault counts were 525, 390, and 285"
+  },
+  "MATH 12.62": {
+    "title": "Of 3,000 health-club members, 1,800 attended Yoga, 1,500 Spin, and 1,200"
+  },
+  "MATH 12.63": {
+    "title": "Inclusion-Exclusion Principle"
+  },
+  "MATH 12.64": {
+    "title": "Among 200 employees, 90 use App A, 70 App B, and 60 App C"
+  },
+  "MATH 12.65": {
+    "title": "Among 250 students, 120 take Math, 100 Physics, and 90 Chemistry"
+  },
+  "MATH 12.66": {
+    "title": "Newspaper and TV news survey"
+  },
+  "MATH 12.67": {
+    "title": "Email, SMS, and push notification channels"
+  },
+  "MATH 12.68": {
+    "title": "Auto-save, dark mode, and cloud sync"
+  },
+  "MATH 12.69": {
+    "title": "Sci-fi, fantasy, and mystery readers"
+  },
+  "MATH 12.70": {
+    "title": "Health, dental, and vision benefits"
+  },
+  "MATH 12.71": {
+    "title": "Soccer, basketball, and tennis at a sports club"
+  },
+  "MATH 12.72": {
+    "title": "An electronics store tracks warranty claims by product category"
+  },
+  "MATH 12.73": {
+    "title": "A coffee shop tracks oat-milk add-ons by drink size"
+  },
+  "MATH 12.74": {
+    "title": "A delivery service tracks on-time performance by package type"
+  },
+  "MATH 12.75": {
+    "title": "An amusement park tracks wait times by ride category"
+  },
+  "MATH 12.76": {
+    "title": "A call center tracks first-call resolution by call reason"
+  },
+  "MATH 12.77": {
+    "title": "A movie theater tracks concession purchases by showtime"
+  },
+  "MATH 12.78": {
+    "title": "A car rental agency tracks late returns by vehicle class"
+  },
+  "MATH 12.79": {
+    "title": "A bookstore tracks returns by purchase channel"
+  },
+  "MATH 12.80": {
+    "title": "A gym tracks no-shows by class type"
+  },
+  "MATH 12.81": {
+    "title": "A pizza restaurant tracks order errors by order method"
+  },
+  "MATH 12.82": {
+    "title": "A grocery store tracks scanning errors by checkout method"
+  },
+  "MATH 12.83": {
+    "title": "A hotel tracks cancellations by booking channel"
+  },
+  "MATH 12.84": {
+    "title": "An auto repair shop tracks customer complaints by service type"
+  },
+  "MATH 12.85": {
+    "title": "A concert venue tracks no-shows by ticket type"
+  },
+  "MATH 12.86": {
+    "title": "A streaming service tracks first-year cancellations by subscription plan"
+  },
+  "MATH 12.87": {
+    "title": "During Q3, engineers at a software company logged every user session across two"
+  },
+  "MATH 12.88": {
+    "title": "A hospital pharmacy reviewed medication orders processed across two shifts last"
+  },
+  "MATH 12.89": {
+    "title": "An airline audited baggage handling across three flight categories over the past year"
+  },
+  "MATH 12.90": {
+    "title": "Two departments at a university submit final theses each spring"
+  },
+  "MATH 12.91": {
+    "title": "A manufacturing plant runs three shifts each day"
+  },
+  "MATH 12.92": {
+    "title": "A logistics company reviewed a month of shipments sent by two methods"
+  },
+  "MATH 12.93": {
+    "title": "A certification board compared pass rates between two exam formats offered last"
+  },
+  "MATH 12.94": {
+    "title": "A restaurant chain's health department compiled a year of inspection results"
+  },
+  "MATH 12.95": {
+    "title": "A mobile carrier sampled call quality across its two network types over a single day"
+  },
+  "MATH 12.96": {
+    "title": "A retailer compiled a quarter's worth of purchase and return data across three"
+  },
+  "MATH 12.97": {
+    "title": "An insurance company audited a year of claims across two policy types"
+  },
+  "MATH 12.98": {
+    "title": "A software team reviewed a backlog of bug reports filed under two priority"
+  },
+  "MATH 12.99": {
+    "title": "A university's admissions office reviewed a year of applications across three"
+  },
+  "MATH 12.100": {
+    "title": "An airline reviewed a month of flights across two route types"
+  },
+  "MATH 12.101": {
+    "title": "A manufacturer tracked a year of production and recalls across three plants"
+  },
+  "MATH 12.102": {
+    "title": "Two fair six-sided dice are rolled once"
+  },
+  "MATH 12.103": {
+    "title": "Two fair six-sided dice are rolled once"
+  },
+  "MATH 12.104": {
+    "title": "Two fair six-sided dice are rolled once"
+  },
+  "MATH 12.105": {
+    "title": "200 people take a diagnostic test for a disease"
+  },
+  "MATH 12.106": {
+    "title": "A factory quality-control process depends on a chain of three stages"
+  },
+  "MATH 12.107": {
+    "title": "A bank reviewed a year of loan applications filed at two types of branches"
+  },
+  "MATH 12.108": {
+    "title": "A gym chain reviewed a year of membership records across two tiers"
+  },
+  "MATH 12.109": {
+    "title": "A city transit authority reviewed a month of on-time performance across three"
+  },
+  "MATH 12.110": {
+    "title": "An online marketplace reviewed a quarter of transactions split across two"
+  },
+  "MATH 12.111": {
+    "title": "A hospital tracked 30-day readmissions across three discharge units over the past year"
+  },
+  "MATH 12.112": {
+    "title": "Discrete Probability Table"
+  },
+  "MATH 12.113": {
+    "title": "Dice Combinatorics"
+  },
+  "MATH 12.114": {
+    "title": "Startup Profit Scenario"
+  },
+  "MATH 12.115": {
+    "title": "Carnival Spinner with a Processing Fee"
+  },
+  "MATH 12.116": {
+    "title": "Manufacturing Defect Counts"
+  },
+  "MATH 12.117": {
+    "title": "A Vending Machine"
+  },
+  "MATH 12.118": {
+    "title": "A Call Center"
+  },
+  "MATH 12.119": {
+    "title": "Company Profit"
+  },
+  "MATH 12.120": {
+    "title": "An Investment Portfolio"
+  },
+  "MATH 12.121": {
+    "title": "Standardized Exam Scores"
+  },
+  "MATH 12.122": {
+    "title": "Find the Missing Value"
+  },
+  "MATH 12.123": {
+    "title": "A Fair Six-Sided Die"
+  },
+  "MATH 12.124": {
+    "title": "Heads in Three Coin Flips"
+  },
+  "MATH 12.125": {
+    "title": "A Charity Raffle"
+  },
+  "MATH 12.126": {
+    "title": "Quality Inspection"
+  },
+  "MATH 12.127": {
+    "title": "Customer Star Ratings"
+  },
+  "MATH 12.128": {
+    "title": "A Lottery Ticket"
+  },
+  "MATH 12.129": {
+    "title": "A Game Show Wheel"
+  },
+  "MATH 12.130": {
+    "title": "Coffee Shop Arrivals"
+  },
+  "MATH 12.131": {
+    "title": "A Vending Machine"
+  },
+  "MATH 12.132": {
+    "title": "A Free-Throw Contest"
+  },
+  "MATH 12.133": {
+    "title": "A Delivery App Rating"
+  },
+  "MATH 12.134": {
+    "title": "An Insurance Policy"
+  },
+  "MATH 12.135": {
+    "title": "A Charity Raffle"
+  },
+  "MATH 12.136": {
+    "title": "An Ice Cream Shop"
+  },
+  "MATH 12.137": {
+    "title": "A Parking Garage"
+  },
+  "MATH 12.138": {
+    "title": "A Trivia Quiz"
+  },
+  "MATH 12.139": {
+    "title": "A Podcast Episode Rating"
+  },
+  "MATH 12.140": {
+    "title": "An Extended Warranty"
+  },
+  "MATH 12.141": {
+    "title": "A Two-Machine Production Line"
+  },
+  "MATH 12.142": {
+    "title": "A Hedged Investment Pair"
+  },
+  "MATH 12.143": {
+    "title": "Chebyshev's Inequality"
+  },
+  "MATH 12.144": {
+    "title": "The Vending Machine Puzzle"
+  },
+  "MATH 12.145": {
+    "title": "A Regional Manager's Rounds"
+  },
+  "MATH 12.146": {
+    "title": "Assembly Line Processing Time"
+  },
+  "MATH 12.147": {
+    "title": "A Charity Raffle (Unknown Probabilities)"
+  },
+  "MATH 12.148": {
+    "title": "An Ice Cream Shop (Two Independent Customers)"
+  },
+  "MATH 12.149": {
+    "title": "A Parking Garage (A Nonlinear Bonus)"
+  },
+  "MATH 12.150": {
+    "title": "A Trivia Quiz (Comparing Two Formats)"
+  },
+  "MATH 12.151": {
+    "title": "A Streaming Royalty (Setting a Break-Even Fee)"
+  },
+  "MATH 12.152": {
+    "title": "An Extended Warranty (Two Independent Policies)"
+  },
+  "MATH 12.153": {
+    "title": "Late Computer Deliveries"
+  },
+  "MATH 12.154": {
+    "title": "Contaminated Drug Batches"
+  },
+  "MATH 12.155": {
+    "title": "Escalated Support Calls"
+  },
+  "MATH 12.156": {
+    "title": "Defective Batteries by Factory"
+  },
+  "MATH 12.157": {
+    "title": "Flagged Insurance Claims"
+  },
+  "MATH 12.158": {
+    "title": "Delayed Flights by Carrier"
+  },
+  "MATH 12.159": {
+    "title": "Faulty Brake Pads by Supplier"
+  },
+  "MATH 12.160": {
+    "title": "Production Bugs by Team"
+  },
+  "MATH 12.161": {
+    "title": "Burnt Loaves by Oven"
+  },
+  "MATH 12.162": {
+    "title": "Grade Appeals by Professor"
+  },
+  "MATH 12.163": {
+    "title": "Priority Letters in Four Bins"
+  },
+  "MATH 12.164": {
+    "title": "Tagged Fish in Four Lakes"
+  },
+  "MATH 12.165": {
+    "title": "Golden Gumballs by Machine"
+  },
+  "MATH 12.166": {
+    "title": "Damaged Packages by Warehouse"
+  },
+  "MATH 12.167": {
+    "title": "Scholarships by Admissions Office"
+  },
+  "MATH 12.168": {
+    "title": "Abnormal Results by Test Machine"
+  },
+  "MATH 12.169": {
+    "title": "Mechanical Issues by Car Lot"
+  },
+  "MATH 12.170": {
+    "title": "Failed Room Inspections by Dorm"
+  },
+  "MATH 12.171": {
+    "title": "Lost Packages by Warehouse"
+  },
+  "MATH 12.172": {
+    "title": "Health Violations by Restaurant"
+  },
+  "MATH 12.173": {
+    "title": "Prescription Errors by Pharmacy"
+  },
+  "MATH 12.174": {
+    "title": "Complaints by Call-Centre Team"
+  },
+  "MATH 12.175": {
+    "title": "Injuries by Gym Location"
+  },
+  "MATH 12.176": {
+    "title": "Misprints by Printer"
+  },
+  "MATH 12.177": {
+    "title": "Theft Reports by Parking Garage"
+  },
+  "MATH 12.178": {
+    "title": "Trail Closures and the Weather"
+  },
+  "MATH 12.179": {
+    "title": "Fungus Across Three Tree Species"
+  },
+  "MATH 12.180": {
+    "title": "Tagged Fish in a Lake"
+  },
+  "MATH 12.181": {
+    "title": "A Commuter Running Late"
+  },
+  "MATH 12.182": {
+    "title": "Meteors Spotted Under Cloud Cover"
+  },
+  "MATH 12.183": {
+    "title": "Two Days Without a Crane Sighting"
+  },
+  "MATH 12.184": {
+    "title": "Coral Bleaching Across Four Reefs"
+  },
+  "MATH 12.185": {
+    "title": "A Failed Night at the Observatory"
+  },
+  "MATH 12.186": {
+    "title": "Two Clues and Three Suspects"
+  },
+  "MATH 12.187": {
+    "title": "A Positive Test in a Deer Population"
+  },
+  "MATH 12.188": {
+    "title": "Wildfires That Escaped Containment"
+  },
+  "MATH 12.189": {
+    "title": "Tagged Whales in Three Feeding Grounds"
+  },
+  "MATH 12.190": {
+    "title": "A Genuine Meteorite in Three Search Areas"
+  },
+  "MATH 12.191": {
+    "title": "A Lake Trout Across Three Ice-Fishing Zones"
+  },
+  "MATH 12.192": {
+    "title": "Mildew Across Four Vineyard Blocks"
+  },
+  "MATH 12.193": {
+    "title": "Irregular Blankets from Two Makers"
+  },
+  "MATH 12.194": {
+    "title": "Defective Phones from Two Suppliers"
+  },
+  "MATH 12.195": {
+    "title": "Face Masks That Failed the Filtration Test"
+  },
+  "MATH 12.196": {
+    "title": "Underweight Flour Sacks from Two Mills"
+  },
+  "MATH 12.197": {
+    "title": "Aircraft Repairs Across Two Fleets"
+  },
+  "MATH 12.198": {
+    "title": "Defective Sheets from Two Paper Vendors"
+  },
+  "MATH 12.199": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 12.200": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 12.201": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 12.202": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 12.203": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 12.204": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 12.205": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 12.206": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 12.207": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 12.208": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 12.209": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 12.210": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 12.211": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 12.212": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 12.213": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 12.214": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 12.215": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 12.216": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 12.217": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 12.218": {
+    "title": "Exam-style tasks - 20"
+  }
+}

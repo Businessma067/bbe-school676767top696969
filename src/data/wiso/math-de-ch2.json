@@ -1,1 +1,470 @@
-{}
+{
+  "MATH 2.01": {
+    "title": "Warm-up: square of a sum"
+  },
+  "MATH 2.02": {
+    "title": "Warm-up: difference of two squares"
+  },
+  "MATH 2.03": {
+    "title": "Warm-up: elementary sum and product data"
+  },
+  "MATH 2.04": {
+    "title": "Warm-up: cube sum under a vanishing triple sum"
+  },
+  "MATH 2.05": {
+    "title": "Binomial identities — set 1"
+  },
+  "MATH 2.06": {
+    "title": "Binomial identities — set 2"
+  },
+  "MATH 2.07": {
+    "title": "Binomial identities — set 3"
+  },
+  "MATH 2.08": {
+    "title": "Perfect squares that miss the constant by one"
+  },
+  "MATH 2.09": {
+    "title": "Grouping a linear sum inside a square difference"
+  },
+  "MATH 2.10": {
+    "title": "Signs that flip only the cross term"
+  },
+  "MATH 2.11": {
+    "title": "A doubled middle that refuses to be halved"
+  },
+  "MATH 2.12": {
+    "title": "Three-term squares with a dropped factor two"
+  },
+  "MATH 2.13": {
+    "title": "Cubes whose odd-powered terms survive"
+  },
+  "MATH 2.14": {
+    "title": "Elementary cubes evaluated from two symmetric values"
+  },
+  "MATH 2.15": {
+    "title": "A hidden square inside a biquadratic difference"
+  },
+  "MATH 2.16": {
+    "title": "Reciprocal squares built from a linear sum"
+  },
+  "MATH 2.17": {
+    "title": "Four terms that group into a difference of squares"
+  },
+  "MATH 2.18": {
+    "title": "Half the sum of three squared gaps"
+  },
+  "MATH 2.19": {
+    "title": "A cyclic product of three linear binomials"
+  },
+  "MATH 2.20": {
+    "title": "Mixed signs inside a three-letter square"
+  },
+  "MATH 2.21": {
+    "title": "Newton sums built from a pair of elementary data"
+  },
+  "MATH 2.22": {
+    "title": "A square of a difference of two squares"
+  },
+  "MATH 2.23": {
+    "title": "Four letters and the six doubled pairwise products"
+  },
+  "MATH 2.24": {
+    "title": "Mirror quadratics whose odd powers cancel"
+  },
+  "MATH 2.25": {
+    "title": "Three cubes after a vanishing linear sum"
+  },
+  "MATH 2.26": {
+    "title": "Brahmagupta’s product against a cubed trinomial"
+  },
+  "MATH 2.27": {
+    "title": "Brahmagupta’s product of two sums of squares"
+  },
+  "MATH 2.28": {
+    "title": "Completing the square under a leading coefficient two"
+  },
+  "MATH 2.29": {
+    "title": "Factoring a biquadratic after a completed square"
+  },
+  "MATH 2.30": {
+    "title": "A cubic leftover after a cubed binomial is subtracted"
+  },
+  "MATH 2.31": {
+    "title": "Binomial identities — set 27"
+  },
+  "MATH 2.32": {
+    "title": "Hunting one mixed product in a shifted trinomial square"
+  },
+  "MATH 2.33": {
+    "title": "A biquadratic that is already a completed square"
+  },
+  "MATH 2.34": {
+    "title": "Walking around three squared differences"
+  },
+  "MATH 2.35": {
+    "title": "Warm-up: adding two fractions"
+  },
+  "MATH 2.36": {
+    "title": "Warm-up: cancelling a common factor"
+  },
+  "MATH 2.37": {
+    "title": "Warm-up: product of simple fractions"
+  },
+  "MATH 2.38": {
+    "title": "Warm-up: partial fraction split on $x^2-1$"
+  },
+  "MATH 2.39": {
+    "title": "Cancelled factor kept as the remainder"
+  },
+  "MATH 2.40": {
+    "title": "LCD taken as a sum of denominators"
+  },
+  "MATH 2.41": {
+    "title": "A letter struck from only one term"
+  },
+  "MATH 2.42": {
+    "title": "Nested unit fraction with a swapped report"
+  },
+  "MATH 2.43": {
+    "title": "Test point after a difference-of-squares cancel"
+  },
+  "MATH 2.44": {
+    "title": "Binomial square missing the doubled cross term"
+  },
+  "MATH 2.45": {
+    "title": "Simple reciprocal sums and differences"
+  },
+  "MATH 2.46": {
+    "title": "Cubic remainder checked at a vanishing test point"
+  },
+  "MATH 2.47": {
+    "title": "Difference of reciprocals over reciprocal squares"
+  },
+  "MATH 2.48": {
+    "title": "Compound fraction whose simplified ratio is flipped"
+  },
+  "MATH 2.49": {
+    "title": "Three poles sharing a product LCD"
+  },
+  "MATH 2.50": {
+    "title": "Continued nest that lands on a linear remainder"
+  },
+  "MATH 2.51": {
+    "title": "Stacked negative powers missing a leftover factor"
+  },
+  "MATH 2.52": {
+    "title": "Cancel two pieces then add a leftover ratio"
+  },
+  "MATH 2.53": {
+    "title": "A product of reciprocal rational pieces"
+  },
+  "MATH 2.54": {
+    "title": "Constant from a difference of expanded squares"
+  },
+  "MATH 2.55": {
+    "title": "Quadratic over quadratic with the wrong leftover"
+  },
+  "MATH 2.56": {
+    "title": "Sum of squares treated as a square of a sum"
+  },
+  "MATH 2.57": {
+    "title": "Swapped two-letter ratios in a stacked quotient"
+  },
+  "MATH 2.58": {
+    "title": "Squared minus sign in a monomial denominator"
+  },
+  "MATH 2.59": {
+    "title": "Harmonic-looking product over a two-letter sum"
+  },
+  "MATH 2.60": {
+    "title": "Three unit fractions with a false linear numerator"
+  },
+  "MATH 2.61": {
+    "title": "Cancelled linear factor kept in the denominator"
+  },
+  "MATH 2.62": {
+    "title": "Opposite linear factors that differ by a minus"
+  },
+  "MATH 2.63": {
+    "title": "Cubic LCD of three neighbouring linears"
+  },
+  "MATH 2.64": {
+    "title": "Square of a swapped-ratio sum beside a cubic"
+  },
+  "MATH 2.65": {
+    "title": "Outer reciprocal of a two-storey $x$-nest"
+  },
+  "MATH 2.66": {
+    "title": "Quartic cancel mixed with reciprocal squares"
+  },
+  "MATH 2.67": {
+    "title": "Two candidate rewritings of a compound stack"
+  },
+  "MATH 2.68": {
+    "title": "Exam mix of leftover cancellation traps"
+  },
+  "MATH 2.69": {
+    "title": "Warm-up: product and quotient of powers"
+  },
+  "MATH 2.70": {
+    "title": "Warm-up: power of a power"
+  },
+  "MATH 2.71": {
+    "title": "Warm-up: negative and zero exponents"
+  },
+  "MATH 2.72": {
+    "title": "Warm-up: fractional exponents and roots"
+  },
+  "MATH 2.73": {
+    "title": "A stacked power compared with a product after a rewrite"
+  },
+  "MATH 2.74": {
+    "title": "A minus in the denominator that has to be flipped twice"
+  },
+  "MATH 2.75": {
+    "title": "Products of roots versus roots of sums"
+  },
+  "MATH 2.76": {
+    "title": "Zero exponents mixed with a cancelled stack"
+  },
+  "MATH 2.77": {
+    "title": "Integer values of short fractional powers"
+  },
+  "MATH 2.78": {
+    "title": "Like surds collected after extracting squares"
+  },
+  "MATH 2.79": {
+    "title": "A negative exponent swapping a quotient"
+  },
+  "MATH 2.80": {
+    "title": "Cube roots split over products only"
+  },
+  "MATH 2.81": {
+    "title": "Several fractional exponents on one letter"
+  },
+  "MATH 2.82": {
+    "title": "Denesting a nested radical by the wrong conjugate"
+  },
+  "MATH 2.83": {
+    "title": "Rationalising by the conjugate of the other binomial"
+  },
+  "MATH 2.84": {
+    "title": "A binomial square of a root and its reciprocal"
+  },
+  "MATH 2.85": {
+    "title": "Rewriting a new base from a given power"
+  },
+  "MATH 2.86": {
+    "title": "Distributing an outer exponent across two letters"
+  },
+  "MATH 2.87": {
+    "title": "Fractional powers of twelve, twenty-seven, and thirty-two"
+  },
+  "MATH 2.88": {
+    "title": "Rewriting four, eight, and thirty-two as powers of two"
+  },
+  "MATH 2.89": {
+    "title": "Fourth roots of even powers"
+  },
+  "MATH 2.90": {
+    "title": "A minus sign stranded in a denominator"
+  },
+  "MATH 2.91": {
+    "title": "Stacked roots multiplying reciprocal exponents"
+  },
+  "MATH 2.92": {
+    "title": "Conjugate surds multiplying to a difference of radicands"
+  },
+  "MATH 2.93": {
+    "title": "A sixth power in the numerator against a squared denominator"
+  },
+  "MATH 2.94": {
+    "title": "Independent traps from nested roots to given powers"
+  },
+  "MATH 2.95": {
+    "title": "A powered monomial quotient in two letters"
+  },
+  "MATH 2.96": {
+    "title": "Nested radicals rewritten as a single rational power"
+  },
+  "MATH 2.97": {
+    "title": "Cancelling one conjugate factor, not two"
+  },
+  "MATH 2.98": {
+    "title": "Multiplying, stacking, and dividing exponents on one base"
+  },
+  "MATH 2.99": {
+    "title": "A mixed sheet of roots, conjugates, and a missing two"
+  },
+  "MATH 2.100": {
+    "title": "Adding reciprocal powers is not multiplying them"
+  },
+  "MATH 2.101": {
+    "title": "Changing bases inside a stacked fractional power"
+  },
+  "MATH 2.102": {
+    "title": "Exam leftover traps from powers and nested roots"
+  },
+  "MATH 2.103": {
+    "title": "Warm-up: definition of absolute value"
+  },
+  "MATH 2.104": {
+    "title": "Warm-up: absolute value of a product"
+  },
+  "MATH 2.105": {
+    "title": "Warm-up: piecewise distance on an interval"
+  },
+  "MATH 2.106": {
+    "title": "Warm-up: quadratic under absolute value bars"
+  },
+  "MATH 2.107": {
+    "title": "Piecewise rewrite then a leftover constant"
+  },
+  "MATH 2.108": {
+    "title": "Principal roots versus dropped bars"
+  },
+  "MATH 2.109": {
+    "title": "Sign of a letter over its modulus"
+  },
+  "MATH 2.110": {
+    "title": "Scaling a letter is not adding a constant"
+  },
+  "MATH 2.111": {
+    "title": "Nested bars collapse, a minus does not"
+  },
+  "MATH 2.112": {
+    "title": "Copying a nonnegative inside then a vanishing difference"
+  },
+  "MATH 2.113": {
+    "title": "Distance to five different marks"
+  },
+  "MATH 2.114": {
+    "title": "Products and quotients of bars, never a sum"
+  },
+  "MATH 2.115": {
+    "title": "Opposite linear factors, five different pairs"
+  },
+  "MATH 2.116": {
+    "title": "Two distances on five different segments"
+  },
+  "MATH 2.117": {
+    "title": "Root of a squared linear form, five insides"
+  },
+  "MATH 2.118": {
+    "title": "Adding the letter after the root of its square"
+  },
+  "MATH 2.119": {
+    "title": "Triangle inequality as a comparison"
+  },
+  "MATH 2.120": {
+    "title": "Linear pieces of a scaled inside then a leftover"
+  },
+  "MATH 2.121": {
+    "title": "A quadratic already a square, and neighbours"
+  },
+  "MATH 2.122": {
+    "title": "Cubes inside bars versus cubes of bars"
+  },
+  "MATH 2.123": {
+    "title": "Reversed insides split by five breakpoints"
+  },
+  "MATH 2.124": {
+    "title": "Homogeneity pulled out of bars"
+  },
+  "MATH 2.125": {
+    "title": "Root of a squared binomial in two letters"
+  },
+  "MATH 2.126": {
+    "title": "Folding a segment then leaving it"
+  },
+  "MATH 2.127": {
+    "title": "Completing the square then deciding whether bars drop"
+  },
+  "MATH 2.128": {
+    "title": "Equality cases of the triangle inequality"
+  },
+  "MATH 2.129": {
+    "title": "A completed square that dips below zero"
+  },
+  "MATH 2.130": {
+    "title": "Reverse triangle comparison of sizes"
+  },
+  "MATH 2.131": {
+    "title": "Nested bars around a translated letter"
+  },
+  "MATH 2.132": {
+    "title": "Quotient of opposite linears then a false global constant"
+  },
+  "MATH 2.133": {
+    "title": "Two quadratics, only one a square"
+  },
+  "MATH 2.134": {
+    "title": "Wrong piece chosen then a leftover constant"
+  },
+  "MATH 2.135": {
+    "title": "Root of a square after completing versus dropping bars"
+  },
+  "MATH 2.136": {
+    "title": "Mixed slogans that look like product rules"
+  },
+  "MATH 2.137": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 2.138": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 2.139": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 2.140": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 2.141": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 2.142": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 2.143": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 2.144": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 2.145": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 2.146": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 2.147": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 2.148": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 2.149": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 2.150": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 2.151": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 2.152": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 2.153": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 2.154": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 2.155": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 2.156": {
+    "title": "Exam-style tasks - 20"
+  }
+}
