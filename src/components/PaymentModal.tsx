@@ -24,12 +24,7 @@ import {
   PAID_PRODUCTS,
   type PaidProductSlug,
 } from "@/lib/checkout-catalog";
-import {
-  canUseApplePay,
-  mountGooglePayButton,
-  startApplePaySession,
-  type WalletPayConfig,
-} from "@/lib/wallet-pay.client";
+import type { WalletPayConfig } from "@/lib/wallet-pay.client";
 
 const ORANGE = "#C2643A";
 
@@ -256,6 +251,7 @@ export function PaymentModal({
       });
       if (!result.ok) {
         setError(result.error);
+        setLoading(false);
         return;
       }
       // Top-level Monobank checkout for card (and any wallets Monobank enables there).
