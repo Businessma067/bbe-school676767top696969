@@ -23,12 +23,12 @@ function Mock5CaseAuditPage() {
     <div className="min-h-screen bg-background px-4 py-8 text-foreground sm:px-8">
       <div className="mx-auto max-w-3xl space-y-10">
         <header className="space-y-1 border-b border-border pb-4">
-          <h1 className="font-display text-2xl font-semibold">Mock Exam 4 — case + KaTeX audit</h1>
+          <h1 className="font-display text-2xl font-semibold">Mock Exam 5 — case + KaTeX audit</h1>
           <p className="text-sm text-muted-foreground">rev {MOCK_EXAM_5_CONTENT_REV}</p>
           <p className="text-sm text-muted-foreground">
             If this page still shows an older rev after GitHub sync, Lovable preview is stale.
             After a successful update the stamp must include <code>Octopus</code>. Custom
-            math Q22–33 must render KaTeX, not raw <code>$$…$$</code>.
+            math Q22–34 must render KaTeX, not raw <code>$$…$$</code>.
           </p>
         </header>
         {questions.map((q) => (
