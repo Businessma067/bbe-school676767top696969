@@ -1,0 +1,383 @@
+{
+  "MATH 7.01": {
+    "title": "Vertex, Linear Rewrite, and Crossings of a Line and a Parabola"
+  },
+  "MATH 7.02": {
+    "title": "Slope and Opening at a Glance"
+  },
+  "MATH 7.03": {
+    "title": "Axis from Coefficients"
+  },
+  "MATH 7.04": {
+    "title": "A Taxi Fare That Grows With the Distance"
+  },
+  "MATH 7.05": {
+    "title": "Intercept Checklist"
+  },
+  "MATH 7.06": {
+    "title": "Simple Vertex Read"
+  },
+  "MATH 7.07": {
+    "title": "Leading Coefficient Sign"
+  },
+  "MATH 7.08": {
+    "title": "Two Easy Meetings"
+  },
+  "MATH 7.09": {
+    "title": "A Ball Thrown Straight Upwards"
+  },
+  "MATH 7.10": {
+    "title": "Factor Roots Quickly"
+  },
+  "MATH 7.11": {
+    "title": "A Falling Line and Its Two Axis Crossings"
+  },
+  "MATH 7.12": {
+    "title": "Vieta Against a Line"
+  },
+  "MATH 7.13": {
+    "title": "Vertex Versus Intercept"
+  },
+  "MATH 7.14": {
+    "title": "Count the Meetings"
+  },
+  "MATH 7.15": {
+    "title": "Completing the Square, Easy"
+  },
+  "MATH 7.16": {
+    "title": "A Line Written as a Single Fraction"
+  },
+  "MATH 7.17": {
+    "title": "Scaled Parabola Roots"
+  },
+  "MATH 7.18": {
+    "title": "Falling Line Twin Roots"
+  },
+  "MATH 7.19": {
+    "title": "Even Parabola Check"
+  },
+  "MATH 7.20": {
+    "title": "A Table That Climbs at a Steady Rate"
+  },
+  "MATH 7.21": {
+    "title": "Rewrite Exists at Level Two"
+  },
+  "MATH 7.22": {
+    "title": "Discriminant Logic for Quadratics"
+  },
+  "MATH 7.23": {
+    "title": "Even Quadratic Symmetry"
+  },
+  "MATH 7.24": {
+    "title": "Tangent Line Probe"
+  },
+  "MATH 7.25": {
+    "title": "Nested Evaluation Chain"
+  },
+  "MATH 7.26": {
+    "title": "Complete Square and Meetings"
+  },
+  "MATH 7.27": {
+    "title": "Rebuild from Roots and Slope"
+  },
+  "MATH 7.28": {
+    "title": "Vertex on the Line?"
+  },
+  "MATH 7.29": {
+    "title": "Horizontal Gap at the Axis"
+  },
+  "MATH 7.30": {
+    "title": "No Real Roots Versus Line"
+  },
+  "MATH 7.31": {
+    "title": "Writing a Parabola Using a Line"
+  },
+  "MATH 7.32": {
+    "title": "Vertex Form Uniqueness"
+  },
+  "MATH 7.33": {
+    "title": "Line Meets Parabola: Structural Bound"
+  },
+  "MATH 7.34": {
+    "title": "Range of a Quadratic, Symbolically"
+  },
+  "MATH 7.35": {
+    "title": "Difference $f-g$ and Intercept Traps"
+  },
+  "MATH 7.36": {
+    "title": "Family of Lines Seeking Tangency"
+  },
+  "MATH 7.37": {
+    "title": "Composition Trap with Explicit Maps"
+  },
+  "MATH 7.38": {
+    "title": "Wrong Completed Square Sign"
+  },
+  "MATH 7.39": {
+    "title": "Three Maps: Line, Square, Difference"
+  },
+  "MATH 7.40": {
+    "title": "Parameter Constraint on Opening"
+  },
+  "MATH 7.41": {
+    "title": "Axis, Vieta, and the Half-Sum Trap"
+  },
+  "MATH 7.42": {
+    "title": "Nested Functions Without Numbers"
+  },
+  "MATH 7.43": {
+    "title": "Monotonicity: Line Versus Parabola"
+  },
+  "MATH 7.44": {
+    "title": "Parameter Tangency Criterion"
+  },
+  "MATH 7.45": {
+    "title": "Shifts and Scalings of a Parabola"
+  },
+  "MATH 7.46": {
+    "title": "Double Composition and Leading Match"
+  },
+  "MATH 7.47": {
+    "title": "Parameter Window for Two Meetings"
+  },
+  "MATH 7.48": {
+    "title": "Scaled Roots and Nested Order"
+  },
+  "MATH 7.49": {
+    "title": "Average Rate Versus Instantaneous Slope"
+  },
+  "MATH 7.50": {
+    "title": "When Does Vertical Shift Kill Meetings?"
+  },
+  "MATH 7.51": {
+    "title": "Slope, Constant Term, Axis"
+  },
+  "MATH 7.52": {
+    "title": "Reading a Parabola Straight From Its Coefficients"
+  },
+  "MATH 7.53": {
+    "title": "A Parabola That Turns Downwards"
+  },
+  "MATH 7.54": {
+    "title": "Vertex Form Read at a Glance"
+  },
+  "MATH 7.55": {
+    "title": "Zeros Straight From a Product of Factors"
+  },
+  "MATH 7.56": {
+    "title": "A Water Tank Draining at a Steady Rate"
+  },
+  "MATH 7.57": {
+    "title": "Where a Rising Line Crosses the Axes"
+  },
+  "MATH 7.58": {
+    "title": "Locating the Peak of a Downward Parabola"
+  },
+  "MATH 7.59": {
+    "title": "A Gentle Slope in Fraction Form"
+  },
+  "MATH 7.60": {
+    "title": "Constant Second Differences in a Table"
+  },
+  "MATH 7.61": {
+    "title": "A Stretched Parabola and Its Turning Point"
+  },
+  "MATH 7.62": {
+    "title": "Ticket Price Against Weekly Revenue"
+  },
+  "MATH 7.63": {
+    "title": "Completing the Square With a Negative Constant"
+  },
+  "MATH 7.64": {
+    "title": "Which Model Fits the Measurements?"
+  },
+  "MATH 7.65": {
+    "title": "A Negative Stretch Keeps the Zeros"
+  },
+  "MATH 7.66": {
+    "title": "A Parabola With the $y$-Axis as Its Mirror"
+  },
+  "MATH 7.67": {
+    "title": "Rebuilding a Parabola From Its Zeros"
+  },
+  "MATH 7.68": {
+    "title": "A Line Fixed by a Slope and One Point"
+  },
+  "MATH 7.69": {
+    "title": "Who Wins Far to the Right?"
+  },
+  "MATH 7.70": {
+    "title": "When Is the Difference Still Curved?"
+  },
+  "MATH 7.71": {
+    "title": "Touching at the Vertex"
+  },
+  "MATH 7.72": {
+    "title": "The Quadratic Hidden Behind a Data Table"
+  },
+  "MATH 7.73": {
+    "title": "Turning Point, Zeros and a Horizontal Probe"
+  },
+  "MATH 7.74": {
+    "title": "Fuel Use Against Cruising Speed"
+  },
+  "MATH 7.75": {
+    "title": "A Parabola Pinned by Its Vertex and One Point"
+  },
+  "MATH 7.76": {
+    "title": "A Profit Curve With Two Break-Even Points"
+  },
+  "MATH 7.77": {
+    "title": "Half-Scaled Factors and the Values a Parabola Reaches"
+  },
+  "MATH 7.78": {
+    "title": "Heights of a Stone Recorded Every Second"
+  },
+  "MATH 7.79": {
+    "title": "Undoing a Line Around a Parabola"
+  },
+  "MATH 7.80": {
+    "title": "Mirroring a Line and a Parabola"
+  },
+  "MATH 7.81": {
+    "title": "How Many Points Pin Down a Curve?"
+  },
+  "MATH 7.82": {
+    "title": "Where the Difference Reaches Its Extreme"
+  },
+  "MATH 7.83": {
+    "title": "Signs of the Roots from Sum and Product"
+  },
+  "MATH 7.84": {
+    "title": "Sliding a Line Until It Touches"
+  },
+  "MATH 7.85": {
+    "title": "Choosing the Leading Coefficient"
+  },
+  "MATH 7.86": {
+    "title": "Coefficient Match Against a Composition"
+  },
+  "MATH 7.87": {
+    "title": "Root Spacing Against the Axis of a Parabola"
+  },
+  "MATH 7.88": {
+    "title": "A Translation Cannot Flatten a Parabola"
+  },
+  "MATH 7.89": {
+    "title": "Lines Through the Vertex"
+  },
+  "MATH 7.90": {
+    "title": "Composing a Parabola With Itself"
+  },
+  "MATH 7.91": {
+    "title": "Can a Line Trap a Parabola?"
+  },
+  "MATH 7.92": {
+    "title": "Reading Roots Through a Linear Substitution"
+  },
+  "MATH 7.93": {
+    "title": "Equal Values and the Axis"
+  },
+  "MATH 7.94": {
+    "title": "A Pencil of Lines and Two Tangents"
+  },
+  "MATH 7.95": {
+    "title": "Sliding the Parabola Sideways"
+  },
+  "MATH 7.96": {
+    "title": "Rebuild from a Vertex and a Point"
+  },
+  "MATH 7.97": {
+    "title": "Axis Gap, Vieta, and Nested Order"
+  },
+  "MATH 7.E01": {
+    "title": "Clearance plot — meetings and a chord"
+  },
+  "MATH 7.E02": {
+    "title": "Sampled heights — interpolating parabola"
+  },
+  "MATH 7.E03": {
+    "title": "Ticket desk — rebuilt revenue"
+  },
+  "MATH 7.E04": {
+    "title": "Meetings, vertex, and a rewrite in $f$"
+  },
+  "MATH 7.E05": {
+    "title": "Sliding slope family — when tangency happens"
+  },
+  "MATH 7.E06": {
+    "title": "Rebuild from vertex and a point"
+  },
+  "MATH 7.E07": {
+    "title": "Line inside a square — axis of the other order"
+  },
+  "MATH 7.E08": {
+    "title": "Scaled product — Vieta with a leading $2$"
+  },
+  "MATH 7.E09": {
+    "title": "Parabola figure, line table — a combined reading"
+  },
+  "MATH 7.E10": {
+    "title": "Dock crane — stretch from a named vertex"
+  },
+  "MATH 7.E11": {
+    "title": "Trough touching a level line"
+  },
+  "MATH 7.E12": {
+    "title": "Arithmetic samples — why a square cannot fit"
+  },
+  "MATH 7.E13": {
+    "title": "Ball toss — peak as midpoint of the ground times"
+  },
+  "MATH 7.E14": {
+    "title": "Completing the square — signs and a shift trap"
+  },
+  "MATH 7.E15": {
+    "title": "Vertical shift family — root count by vertex height"
+  },
+  "MATH 7.E16": {
+    "title": "Two intercepts — midpoint check and a height trap"
+  },
+  "MATH 7.E17": {
+    "title": "Two nestings — missing linear term, shifted axis"
+  },
+  "MATH 7.E18": {
+    "title": "Opposite roots — evenness and the trough sign"
+  },
+  "MATH 7.E19": {
+    "title": "Peak above a level, falling table"
+  },
+  "MATH 7.E20": {
+    "title": "Revenue peak is not the profit peak"
+  },
+  "MATH 7.E21": {
+    "title": "Trough below a secant level"
+  },
+  "MATH 7.E22": {
+    "title": "Quadratic samples — false second-gap $4$"
+  },
+  "MATH 7.E23": {
+    "title": "Workshop cost trough in a table"
+  },
+  "MATH 7.E24": {
+    "title": "Factor the difference, then the vertex of $g$"
+  },
+  "MATH 7.E25": {
+    "title": "Shared intercept, sliding second meeting"
+  },
+  "MATH 7.E26": {
+    "title": "Monic parabola from two roots — sign traps"
+  },
+  "MATH 7.E27": {
+    "title": "Parabola after an inverse shift"
+  },
+  "MATH 7.E28": {
+    "title": "A double root sitting on the axis"
+  },
+  "MATH 7.E29": {
+    "title": "Table versus two candidate formulas"
+  },
+  "MATH 7.E30": {
+    "title": "Arch crown versus a falling trolley chord"
+  }
+}

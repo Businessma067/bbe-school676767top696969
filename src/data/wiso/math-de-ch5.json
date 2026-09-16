@@ -1,0 +1,242 @@
+{
+  "MATH 5.01": {
+    "title": "Balancing Crate Counts Between Two Depots"
+  },
+  "MATH 5.02": {
+    "title": "Reading Unit Prices Off Two Supplier Invoices"
+  },
+  "MATH 5.03": {
+    "title": "Pricing Adult and Child Tickets From a Box-Office Summary"
+  },
+  "MATH 5.04": {
+    "title": "Stripping Out a Delivery Fee Before Pricing a Deli's Menu"
+  },
+  "MATH 5.05": {
+    "title": "Splitting Savings Between Two Interest-Bearing Accounts"
+  },
+  "MATH 5.06": {
+    "title": "Pricing Two Chair Grades From a Price Gap and a Shipment Value"
+  },
+  "MATH 5.07": {
+    "title": "Extracting a Hidden Rate Structure From a Mobile Ad"
+  },
+  "MATH 5.08": {
+    "title": "Finding Weekly Output From a Production Report"
+  },
+  "MATH 5.09": {
+    "title": "Recovering Furniture Prices From Two Branches' Net Sales"
+  },
+  "MATH 5.10": {
+    "title": "Comparing a Print Shop's Own Rates Against a Rival's Flat Quote"
+  },
+  "MATH 5.11": {
+    "title": "Del Sol Food Truck"
+  },
+  "MATH 5.12": {
+    "title": "Northgate Books Monthly Sales Report"
+  },
+  "MATH 5.13": {
+    "title": "SkyLink Mobile Promotional Flyer"
+  },
+  "MATH 5.14": {
+    "title": "Lakeview Inn Booking Confirmations"
+  },
+  "MATH 5.15": {
+    "title": "Crestwood Distribution Centre, Inventory Valuation"
+  },
+  "MATH 5.16": {
+    "title": "Sunrise Staffing, Overtime Contract Check"
+  },
+  "MATH 5.17": {
+    "title": "Riverside Water Utility, Billing Dispute"
+  },
+  "MATH 5.18": {
+    "title": "CityCab vs. MetroX Fare Comparison"
+  },
+  "MATH 5.19": {
+    "title": "Bramble & Co., Vendor Quotation Comparison"
+  },
+  "MATH 5.20": {
+    "title": "Alpha & Beta Holdings, Quarterly Dashboard"
+  },
+  "MATH 5.21": {
+    "title": "FitZone Gym  -  Checking the Advertised Rates"
+  },
+  "MATH 5.22": {
+    "title": "StreamPlus  -  Household Billing Comparison"
+  },
+  "MATH 5.23": {
+    "title": "Willow Market  -  Grocery Receipts"
+  },
+  "MATH 5.24": {
+    "title": "BrightHome Energy  -  Monthly Utility Bills"
+  },
+  "MATH 5.25": {
+    "title": "Trattoria Bella  -  Off-Peak vs. Peak Bills"
+  },
+  "MATH 5.26": {
+    "title": "Meridian Distribution  -  Warehouse Inventory Summary"
+  },
+  "MATH 5.27": {
+    "title": "Green Horizons Landscaping  -  Job Quotation"
+  },
+  "MATH 5.28": {
+    "title": "Horizon Consulting  -  Travel Reimbursement Memo"
+  },
+  "MATH 5.29": {
+    "title": "Cedarline Manufacturing  -  Weekly Production Log"
+  },
+  "MATH 5.30": {
+    "title": "Sterling Distributors  -  Regional Sales Dashboard"
+  },
+  "MATH 5.31": {
+    "title": "Riverside Hardware Supply  -  Two Fastener Invoices"
+  },
+  "MATH 5.32": {
+    "title": "Swift Cargo Co. vs. a Flat-Rate Competitor"
+  },
+  "MATH 5.33": {
+    "title": "Café Lumière  -  Two Till Receipts"
+  },
+  "MATH 5.34": {
+    "title": "Northgate Bakery Wholesale  -  Order Confirmation Emails"
+  },
+  "MATH 5.35": {
+    "title": "Meridian Textiles  -  Quarterly Margin Verification"
+  },
+  "MATH 5.36": {
+    "title": "Continental Gas Supply  -  Reconstructing Cylinder Prices"
+  },
+  "MATH 5.37": {
+    "title": "Ferro Machine Shop  -  Two Technicians, Two Sessions"
+  },
+  "MATH 5.38": {
+    "title": "Vantage Apparel  -  A Water-Damaged Production Report"
+  },
+  "MATH 5.39": {
+    "title": "Continental Freight Co.  -  Cross-Unit Billing Audit"
+  },
+  "MATH 5.40": {
+    "title": "Vantage Cloud Services  -  A Doubled Invoice That Doesn't Double"
+  },
+  "MATH 5.41": {
+    "title": "Sterling Family Trust  -  Two-Fund Return Reconstruction"
+  },
+  "MATH 5.42": {
+    "title": "Solventis Labs  -  Ratio-Blended Batch Reconstruction"
+  },
+  "MATH 5.43": {
+    "title": "Union Mills Manufacturing  -  Fractional-Hour Overtime Reconstruction"
+  },
+  "MATH 5.44": {
+    "title": "Greenfield Landscaping  -  Redundant Project Reconciliation"
+  },
+  "MATH 5.45": {
+    "title": "Meridian Rail  -  Two-Route Speed Reconstruction"
+  },
+  "MATH 5.46": {
+    "title": "Meridian Textiles  -  Three-Season Profit Reconstruction"
+  },
+  "MATH 5.47": {
+    "title": "Bramwell & Co.  -  Double-Condition Age Reconstruction"
+  },
+  "MATH 5.48": {
+    "title": "Crestline Retail Group  -  Decimal Markup Reconstruction"
+  },
+  "MATH 5.49": {
+    "title": "Fairview Amateur League  -  Cross-Team Points Reconstruction"
+  },
+  "MATH 5.50": {
+    "title": "Meridian Alloys  -  Decimal Density Reconstruction and Audit"
+  },
+  "MATH 5.51": {
+    "title": "Halcyon Ventures  -  Fee Structure Reconstruction from Client Differentials"
+  },
+  "MATH 5.52": {
+    "title": "Solventis Labs  -  Multi-Unit Suspension Concentration Reconstruction"
+  },
+  "MATH 5.53": {
+    "title": "Ridgeline Construction  -  Waste-Adjusted Material Cost Reconstruction"
+  },
+  "MATH 5.54": {
+    "title": "Precision Dynamics  -  Sensor Calibration Curve Reconstruction"
+  },
+  "MATH 5.55": {
+    "title": "Meridian Commodities  -  Blended Shipment Price Reconstruction"
+  },
+  "MATH 5.56": {
+    "title": "Continental Freight  -  Fleet Fuel Rate Reconstruction"
+  },
+  "MATH 5.57": {
+    "title": "Whitmore Scholarship Fund  -  Blended-Return Rate Reconstruction"
+  },
+  "MATH 5.58": {
+    "title": "Ashford Mutual Insurance  -  Premium Structure Reconstruction"
+  },
+  "MATH 5.59": {
+    "title": "Cedar Hollow Reserve  -  Linear Population Growth Reconstruction"
+  },
+  "MATH 5.60": {
+    "title": "Continental Power Grid  -  Plant Output Rate Reconstruction"
+  },
+  "MATH 5.61": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 5.62": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 5.63": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 5.64": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 5.65": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 5.66": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 5.67": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 5.68": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 5.69": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 5.70": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 5.71": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 5.72": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 5.73": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 5.74": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 5.75": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 5.76": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 5.77": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 5.78": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 5.79": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 5.80": {
+    "title": "Exam-style tasks - 20"
+  }
+}

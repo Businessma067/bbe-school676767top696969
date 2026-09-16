@@ -28,7 +28,7 @@ export const Route = createFileRoute("/wiso/")({
       {
         name: "description",
         content:
-          "Prepare for the WU Vienna WiSo (Wirtschafts- und Sozialwissenschaften) entrance exam: economics, mathematics, and German reading comprehension.",
+          "Prepare for the WU Vienna WiSo (Wirtschafts- und Sozialwissenschaften) entrance exam: Wirtschaft verstehen economics, mathematics, and German reading comprehension.",
       },
       { property: "og:title", content: "WU Vienna WiSo Exam Prep | BBE School" },
       {
@@ -38,11 +38,31 @@ export const Route = createFileRoute("/wiso/")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:locale:alternate", content: "de_AT" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "keywords", content: "WiSo Aufnahmeprüfung, WU Wien, Wirtschaft verstehen, WiSo Vorbereitung, WU entrance exam German" },
       ...socialImageMetaForPath(PATH),
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(homepageFaqs)) },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "WU Vienna WiSo Exam Prep",
+          url: "https://bbe-school.com/wiso",
+          description:
+            "Independent preparation for the WU Vienna WiSo Aufnahmeprüfung: economics, mathematics, and German reading.",
+          isPartOf: { "@type": "WebSite", name: "BBE School", url: "https://bbe-school.com" },
+          about: {
+            "@type": "EducationalOccupationalProgram",
+            name: "Wirtschafts- und Sozialwissenschaften (WiSo)",
+            provider: { "@type": "CollegeOrUniversity", name: "WU Vienna" },
+          },
+        }),
+      },
     ],
   }),
   component: WisoLandingPage,

@@ -1,0 +1,353 @@
+{
+  "MATH 8.01": {
+    "title": "Rebuilding a Resin Block Mass Table from the Cube Rule"
+  },
+  "MATH 8.02": {
+    "title": "Two Gauge Formulas and the Readings They Refuse"
+  },
+  "MATH 8.03": {
+    "title": "A Fading Beacon and a Rising Count at the Two Ends of the Scale"
+  },
+  "MATH 8.04": {
+    "title": "Spread Overheads Against Finishing Hours on One Order Book"
+  },
+  "MATH 8.05": {
+    "title": "One Bottling Line Reading and the Coefficient It Fixes"
+  },
+  "MATH 8.06": {
+    "title": "Two Maintenance Indices That Meet at Two Machines"
+  },
+  "MATH 8.07": {
+    "title": "Three Root Transforms on One Calibration Sheet"
+  },
+  "MATH 8.08": {
+    "title": "A Filter Bank Pressure Drop That Never Reaches Zero"
+  },
+  "MATH 8.09": {
+    "title": "Primer for Circular Panels from a Single Recorded Job"
+  },
+  "MATH 8.10": {
+    "title": "A Braking Energy Index and the Ten Percent Trap"
+  },
+  "MATH 8.11": {
+    "title": "Marina's Vegetable Plot"
+  },
+  "MATH 8.12": {
+    "title": "A Helpdesk Wait That Falls With the Team"
+  },
+  "MATH 8.13": {
+    "title": "Leah's Well and Omar's Well"
+  },
+  "MATH 8.14": {
+    "title": "Nora's Print Shop"
+  },
+  "MATH 8.15": {
+    "title": "A Refinery Against a Linear Quote"
+  },
+  "MATH 8.16": {
+    "title": "Server Peak Load Between a Doubling Rule and an Alarm"
+  },
+  "MATH 8.17": {
+    "title": "Survey Reach Against a Fieldwork Budget Cap"
+  },
+  "MATH 8.18": {
+    "title": "Quadratic and Linear Inspection Costs That Meet Once"
+  },
+  "MATH 8.19": {
+    "title": "Warehouse Throughput With a Contractual Ceiling"
+  },
+  "MATH 8.20": {
+    "title": "Response Time Recovered from a Server Upgrade"
+  },
+  "MATH 8.21": {
+    "title": "Isoelastic Subscription Demand and Its Revenue"
+  },
+  "MATH 8.22": {
+    "title": "Audit Fees With a Fixed Charge on Top of a Power Term"
+  },
+  "MATH 8.23": {
+    "title": "Fleet Growth Combined With Falling Emission Intensity"
+  },
+  "MATH 8.24": {
+    "title": "Pipeline Capacity, Inversion, and a Change of Units"
+  },
+  "MATH 8.25": {
+    "title": "From Radius Growth to the Area a Service Covers"
+  },
+  "MATH 8.26": {
+    "title": "Two Support Contracts, One Crossing and One Cap"
+  },
+  "MATH 8.27": {
+    "title": "An Eighty Percent Learning Curve Meeting a Materials Floor"
+  },
+  "MATH 8.28": {
+    "title": "Advertising Revenue Against a Proportional Platform Fee"
+  },
+  "MATH 8.29": {
+    "title": "Calibrating a Two-Stage Production Chain"
+  },
+  "MATH 8.30": {
+    "title": "Calibrated Demand, Derived Revenue, and a Fixed Charge"
+  },
+  "MATH 8.31": {
+    "title": "Packing Output Recovered From a Shift Extension"
+  },
+  "MATH 8.32": {
+    "title": "Drag and Absorbed Power on a Wind-Tunnel Rig"
+  },
+  "MATH 8.33": {
+    "title": "Inelastic Demand and Where Revenue Goes"
+  },
+  "MATH 8.34": {
+    "title": "Kiln Output Under a Licensed Ceiling"
+  },
+  "MATH 8.35": {
+    "title": "A Pair of Power Functions That Undo Each Other"
+  },
+  "MATH 8.36": {
+    "title": "Two Ranking Algorithms That Swap Places"
+  },
+  "MATH 8.37": {
+    "title": "Server Fleet Capacity Beneath a Contracted Ceiling"
+  },
+  "MATH 8.38": {
+    "title": "Hiring Against a Square-Root Revenue Curve"
+  },
+  "MATH 8.39": {
+    "title": "Splitting an Order Between Two Quadratic-Cost Plants"
+  },
+  "MATH 8.40": {
+    "title": "Testing Whether Field Data Fit One Power Law"
+  },
+  "MATH 8.41": {
+    "title": "Turning a Negative-Power Demand Curve Around"
+  },
+  "MATH 8.42": {
+    "title": "Average Product of a Square-Root Technology"
+  },
+  "MATH 8.43": {
+    "title": "Two Break-Even Points Around a Fixed Charge"
+  },
+  "MATH 8.44": {
+    "title": "A Benefit and a Cost With Different Exponents"
+  },
+  "MATH 8.45": {
+    "title": "Furnace Throughput Calibrated From Two Runs"
+  },
+  "MATH 8.46": {
+    "title": "Rainwater Basin Storage Under a Square Law"
+  },
+  "MATH 8.47": {
+    "title": "A Braking-Energy Index Recovered From a Speed Change"
+  },
+  "MATH 8.48": {
+    "title": "Geometrically Similar Silos: Steel Against Capacity"
+  },
+  "MATH 8.49": {
+    "title": "Inspection Hours Across Growing Shipment Volumes"
+  },
+  "MATH 8.50": {
+    "title": "Illuminance Down the Length of a Gallery"
+  },
+  "MATH 8.51": {
+    "title": "Audit Cost With Economies of Scale"
+  },
+  "MATH 8.52": {
+    "title": "Airborne Particle Concentration Downwind"
+  },
+  "MATH 8.53": {
+    "title": "Storm Surge Feeding a Cubic Loss Index"
+  },
+  "MATH 8.54": {
+    "title": "Market Impact of a Block Trade"
+  },
+  "MATH 8.55": {
+    "title": "Allometric Energy Use Across Livestock Weights"
+  },
+  "MATH 8.56": {
+    "title": "Retail Catchment Under a Distance-Decay Law"
+  },
+  "MATH 8.57": {
+    "title": "Rooftop Solar Output Across Two Installed Arrays"
+  },
+  "MATH 8.58": {
+    "title": "Battery Cell Costs Down a Learning Curve"
+  },
+  "MATH 8.59": {
+    "title": "Sediment Transport Driven by Channel Discharge"
+  },
+  "MATH 8.60": {
+    "title": "Highly Elastic Demand Under a Price Indexation"
+  },
+  "MATH 8.61": {
+    "title": "Weld Strength Recovered From Two Spot Checks"
+  },
+  "MATH 8.62": {
+    "title": "Mooring Holding Power Across Kilograms and Tonnes"
+  },
+  "MATH 8.63": {
+    "title": "Mesh Throughput Against an Inverse-Square Floor"
+  },
+  "MATH 8.64": {
+    "title": "Allometric Gill Area Across Body Masses"
+  },
+  "MATH 8.65": {
+    "title": "Curing Strength From a Timed Gap Between Samples"
+  },
+  "MATH 8.66": {
+    "title": "Cantilever Deflection Checked Against a Third Span"
+  },
+  "MATH 8.67": {
+    "title": "Mast Steel Mass Under a Finite Percentage Scale-Up"
+  },
+  "MATH 8.68": {
+    "title": "Cooling Fan Noise Against a Night-Time Cap"
+  },
+  "MATH 8.69": {
+    "title": "Pump Head Composed Through a Square Flow Law"
+  },
+  "MATH 8.70": {
+    "title": "Warehouse Forklift Throughput Under a Staffing Cap"
+  },
+  "MATH 8.71": {
+    "title": "Subscriber Demand and Revenue for a Streaming Tier"
+  },
+  "MATH 8.72": {
+    "title": "Fixed Retainer Plus a Square-Root Monitoring Fee"
+  },
+  "MATH 8.73": {
+    "title": "Ordering Cost Against Holding Cost at a Spare-Parts Depot"
+  },
+  "MATH 8.74": {
+    "title": "Average Product on a Bottling Line"
+  },
+  "MATH 8.75": {
+    "title": "Learning Curve With an Irreducible Assembly Floor"
+  },
+  "MATH 8.76": {
+    "title": "Break-Even for a Fish Farm With Diminishing Harvest Returns"
+  },
+  "MATH 8.77": {
+    "title": "Calibrating a Handling-Cost Law From a Cost Difference"
+  },
+  "MATH 8.78": {
+    "title": "Inverting a Wastewater Load Model Against a Permit Ceiling"
+  },
+  "MATH 8.79": {
+    "title": "Elasticity Shortcut Against the Exact Change in Parking Demand"
+  },
+  "MATH 8.80": {
+    "title": "Geometrically Similar Bells Cast From One Pattern"
+  },
+  "MATH 8.81": {
+    "title": "Drag and Sustained Power on a Velodrome"
+  },
+  "MATH 8.82": {
+    "title": "Signal Attenuation From a Buried Cable Locator"
+  },
+  "MATH 8.83": {
+    "title": "Oxygen Demand and Gill Area in a Hatchery"
+  },
+  "MATH 8.84": {
+    "title": "Micro-Irrigation Flow Under a Fourth-Power Law"
+  },
+  "MATH 8.85": {
+    "title": "Barrier Distance for a Radiography Source"
+  },
+  "MATH 8.86": {
+    "title": "A Dye Plume Spreading Across a Shallow Lake"
+  },
+  "MATH 8.87": {
+    "title": "A Weir Rating Curve Rewritten in New Units"
+  },
+  "MATH 8.88": {
+    "title": "A Grain Dryer Calibrated From Two Recorded Ratios"
+  },
+  "MATH 8.89": {
+    "title": "Kiln Flue Mass Flow into a Particulate Index"
+  },
+  "MATH 8.90": {
+    "title": "Two Shuttle Fare Timers Under a Wait Cap"
+  },
+  "MATH 8.91": {
+    "title": "Wetland Evaporation Across Three Humidity Readings"
+  },
+  "MATH 8.92": {
+    "title": "Shade-Tree Cooling Benefit Against Upkeep Cost"
+  },
+  "MATH 8.93": {
+    "title": "Trail-Map Kiosk Demand Inverted from Price"
+  },
+  "MATH 8.94": {
+    "title": "Bike-Share Passes Under a Subsidy Price Index"
+  },
+  "MATH 8.95": {
+    "title": "Overnight Loaves Split Across Two Oven Lines"
+  },
+  "MATH 8.96": {
+    "title": "Museum Tickets: Point Elasticity Versus a Finite Rise"
+  },
+  "MATH 8.97": {
+    "title": "Annealing Lehr Throughput Under a Mis-Scaled Coefficient"
+  },
+  "MATH 8.98": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 8.99": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 8.100": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 8.101": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 8.102": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 8.103": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 8.104": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 8.105": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 8.106": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 8.107": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 8.108": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 8.109": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 8.110": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 8.111": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 8.112": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 8.113": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 8.114": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 8.115": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 8.116": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 8.117": {
+    "title": "Exam-style tasks - 20"
+  }
+}

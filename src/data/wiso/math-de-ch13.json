@@ -1,0 +1,287 @@
+{
+  "MATH 13.01": {
+    "title": "Multiple-Choice Guessing"
+  },
+  "MATH 13.02": {
+    "title": "Free Throws — Rookie vs All-Star"
+  },
+  "MATH 13.03": {
+    "title": "Factory Batch Certification"
+  },
+  "MATH 13.04": {
+    "title": "First-Contact Resolutions"
+  },
+  "MATH 13.05": {
+    "title": "Seed Germination Trays"
+  },
+  "MATH 13.06": {
+    "title": "Airport Security Audit"
+  },
+  "MATH 13.07": {
+    "title": "Archery Medal Round"
+  },
+  "MATH 13.08": {
+    "title": "Restaurant Satisfaction Survey"
+  },
+  "MATH 13.09": {
+    "title": "Phishing Awareness Test"
+  },
+  "MATH 13.10": {
+    "title": "Forecast Accuracy Award"
+  },
+  "MATH 13.11": {
+    "title": "Manufacturing Unit Audit"
+  },
+  "MATH 13.12": {
+    "title": "Recorded Call Review"
+  },
+  "MATH 13.13": {
+    "title": "Typing Accuracy Test"
+  },
+  "MATH 13.14": {
+    "title": "Cybersecurity Attack Drill"
+  },
+  "MATH 13.15": {
+    "title": "Eight Free Throws Contest"
+  },
+  "MATH 13.16": {
+    "title": "Diagnostic Kit Certification"
+  },
+  "MATH 13.17": {
+    "title": "Production Line Batches"
+  },
+  "MATH 13.18": {
+    "title": "Sales Call Conversions"
+  },
+  "MATH 13.19": {
+    "title": "Practice Exam Scores"
+  },
+  "MATH 13.20": {
+    "title": "Surgical Success Rates"
+  },
+  "MATH 13.21": {
+    "title": "Defect-Free Factory Batches"
+  },
+  "MATH 13.22": {
+    "title": "Dual Quality Checks"
+  },
+  "MATH 13.23": {
+    "title": "Calibration Line Acceptables"
+  },
+  "MATH 13.24": {
+    "title": "Team Trial Successes"
+  },
+  "MATH 13.25": {
+    "title": "Auditor Compliance Threshold"
+  },
+  "MATH 13.26": {
+    "title": "Advanced Factory Inspection"
+  },
+  "MATH 13.27": {
+    "title": "Dual Inspection Flags"
+  },
+  "MATH 13.28": {
+    "title": "Production Acceptable Rates"
+  },
+  "MATH 13.29": {
+    "title": "Extended Team Trials"
+  },
+  "MATH 13.30": {
+    "title": "Large Audit Compliance"
+  },
+  "MATH 13.31": {
+    "title": "Support Queue Tickets"
+  },
+  "MATH 13.32": {
+    "title": "Screening Test Samples"
+  },
+  "MATH 13.33": {
+    "title": "Thirty Free Throws"
+  },
+  "MATH 13.34": {
+    "title": "Hourly Production Units"
+  },
+  "MATH 13.35": {
+    "title": "Auditor C Compliance"
+  },
+  "MATH 13.36": {
+    "title": "Low-Yield Factory Batches"
+  },
+  "MATH 13.37": {
+    "title": "Component Flag Checks"
+  },
+  "MATH 13.38": {
+    "title": "Line A vs Line B Batches"
+  },
+  "MATH 13.39": {
+    "title": "Twenty-Three Trial Teams"
+  },
+  "MATH 13.40": {
+    "title": "Auditor E Threshold"
+  },
+  "MATH 13.41": {
+    "title": "Rare Component Failures"
+  },
+  "MATH 13.42": {
+    "title": "Mutation Type Rates"
+  },
+  "MATH 13.43": {
+    "title": "Server Error Requests"
+  },
+  "MATH 13.44": {
+    "title": "Three-Component Device"
+  },
+  "MATH 13.45": {
+    "title": "Factory Defectives Count"
+  },
+  "MATH 13.46": {
+    "title": "Bakery Quality Control"
+  },
+  "MATH 13.47": {
+    "title": "Automated Test Cases"
+  },
+  "MATH 13.48": {
+    "title": "Ten-Arrow Archery Contest"
+  },
+  "MATH 13.49": {
+    "title": "Customer Email Resolutions"
+  },
+  "MATH 13.50": {
+    "title": "Diagnostic Scan Review"
+  },
+  "MATH 13.51": {
+    "title": "Airport Shift Screening"
+  },
+  "MATH 13.52": {
+    "title": "Vaccine Antibody Classification"
+  },
+  "MATH 13.53": {
+    "title": "Assembly Line Defect Inspection"
+  },
+  "MATH 13.54": {
+    "title": "Essay Grading Accuracy"
+  },
+  "MATH 13.55": {
+    "title": "Air Traffic Control Simulator"
+  },
+  "MATH 13.76": {
+    "title": "Regional Tennis Circuit"
+  },
+  "MATH 13.77": {
+    "title": "Festival Food Stall"
+  },
+  "MATH 13.78": {
+    "title": "Community Clinic Screening"
+  },
+  "MATH 13.79": {
+    "title": "Night Courier Audit"
+  },
+  "MATH 13.80": {
+    "title": "Coding Contest Auto-Grader"
+  },
+  "MATH 13.81": {
+    "title": "Warehouse Picker Accuracy"
+  },
+  "MATH 13.82": {
+    "title": "Language Lab Listening Test"
+  },
+  "MATH 13.83": {
+    "title": "Bike-Share Dock Sensors"
+  },
+  "MATH 13.84": {
+    "title": "Hotel Booking Confirmations"
+  },
+  "MATH 13.85": {
+    "title": "Pharmacy Prescription Checks"
+  },
+  "MATH 13.86": {
+    "title": "Museum Audio Guide Returns"
+  },
+  "MATH 13.87": {
+    "title": "Startup Demo Conversions"
+  },
+  "MATH 13.88": {
+    "title": "Campus Bus On-Time Arrivals"
+  },
+  "MATH 13.89": {
+    "title": "Escape-Room Puzzle Solves"
+  },
+  "MATH 13.90": {
+    "title": "Wildlife Camera Triggers"
+  },
+  "MATH 13.91": {
+    "title": "Theatre Ticket Upsells"
+  },
+  "MATH 13.92": {
+    "title": "Lab Pipette Calibration Passes"
+  },
+  "MATH 13.93": {
+    "title": "Online Quiz Instant Feedback"
+  },
+  "MATH 13.94": {
+    "title": "Airport Lounge Wi-Fi Sessions"
+  },
+  "MATH 13.95": {
+    "title": "Charity Door-to-Door Pledges"
+  },
+  "MATH 13.96": {
+    "title": "Bakery Morning Batch QC"
+  },
+  "MATH 13.97": {
+    "title": "Swim-Meet Legal Starts"
+  },
+  "MATH 13.98": {
+    "title": "Library Reserve Hold Pickups"
+  },
+  "MATH 13.99": {
+    "title": "App Push Notification Opens"
+  },
+  "MATH 13.100": {
+    "title": "Robot Vacuum Room Completions"
+  },
+  "MATH 13.101": {
+    "title": "Debate Tournament Coin Tosses"
+  },
+  "MATH 13.102": {
+    "title": "Farm Soil Moisture Alerts"
+  },
+  "MATH 13.103": {
+    "title": "Cinema Loyalty Card Scans"
+  },
+  "MATH 13.104": {
+    "title": "Ski-Lift Gate Passes"
+  },
+  "MATH 13.105": {
+    "title": "Podcast Ad Click-Throughs"
+  },
+  "MATH 13.106": {
+    "title": "Campus Printer Job Success"
+  },
+  "MATH 13.107": {
+    "title": "Board-Game Critical Hits"
+  },
+  "MATH 13.108": {
+    "title": "Harbor Foghorn Tests"
+  },
+  "MATH 13.109": {
+    "title": "Blood-Donation Appointment Shows"
+  },
+  "MATH 13.110": {
+    "title": "Drone Delivery Drop Accuracy"
+  },
+  "MATH 13.111": {
+    "title": "Music Festival Wristband Scans"
+  },
+  "MATH 13.112": {
+    "title": "Tutoring Session Homework Done"
+  },
+  "MATH 13.113": {
+    "title": "Ice-Cream Machine Self-Cleans"
+  },
+  "MATH 13.114": {
+    "title": "Archaeology Dig Artifact Finds"
+  },
+  "MATH 13.115": {
+    "title": "Satellite Packet Acknowledgements"
+  }
+}

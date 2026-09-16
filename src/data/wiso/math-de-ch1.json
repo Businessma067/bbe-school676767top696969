@@ -1,0 +1,386 @@
+{
+  "MATH 1.01": {
+    "title": "Basic operations on explicit sets"
+  },
+  "MATH 1.02": {
+    "title": "Set-builder notation and equality of sets"
+  },
+  "MATH 1.03": {
+    "title": "Subsets, elements, and the power set"
+  },
+  "MATH 1.04": {
+    "title": "Membership vs. Subset for a Three-Element Set"
+  },
+  "MATH 1.05": {
+    "title": "Set Difference Between Two Overlapping Lists"
+  },
+  "MATH 1.06": {
+    "title": "Intersections, Union Size, and a Difference Trap"
+  },
+  "MATH 1.07": {
+    "title": "Two-Course Enrollment via Inclusion-Exclusion"
+  },
+  "MATH 1.08": {
+    "title": "Pairwise Disjoint Blocks and a Partition of U"
+  },
+  "MATH 1.09": {
+    "title": "Complements of Overlapping Skill Sets"
+  },
+  "MATH 1.10": {
+    "title": "Union and Intersection Complements for Two Overlapping Sets"
+  },
+  "MATH 1.11": {
+    "title": "Partitions of a set"
+  },
+  "MATH 1.12": {
+    "title": "Counting subsets"
+  },
+  "MATH 1.13": {
+    "title": "Interval Notation: Half-Open Intersections and a Universal Claim"
+  },
+  "MATH 1.14": {
+    "title": "Three-Way Museum Visits and Inclusion-Exclusion"
+  },
+  "MATH 1.15": {
+    "title": "Infinite sets and cardinality"
+  },
+  "MATH 1.16": {
+    "title": "Elements vs. Subsets of an Even-Number Set"
+  },
+  "MATH 1.17": {
+    "title": "Set-Builder Notation from a Quadratic Condition"
+  },
+  "MATH 1.18": {
+    "title": "Counting the Power Set of a Four-Letter Set"
+  },
+  "MATH 1.19": {
+    "title": "Subset, Proper Subset, and Self-Containment"
+  },
+  "MATH 1.20": {
+    "title": "Testing Whether a Collection Partitions a Set"
+  },
+  "MATH 1.21": {
+    "title": "Even Numbers Inside the Naturals: A Cardinality Trap"
+  },
+  "MATH 1.22": {
+    "title": "An Object and Its Singleton in the Same Set"
+  },
+  "MATH 1.23": {
+    "title": "De Morgan's laws with a universal set"
+  },
+  "MATH 1.24": {
+    "title": "Cartesian products"
+  },
+  "MATH 1.25": {
+    "title": "Sets defined by inequalities"
+  },
+  "MATH 1.26": {
+    "title": "Symmetric difference"
+  },
+  "MATH 1.27": {
+    "title": "Sales rep to client account coverage"
+  },
+  "MATH 1.28": {
+    "title": "Frost protection and irrigation"
+  },
+  "MATH 1.29": {
+    "title": "Customer survey overlap"
+  },
+  "MATH 1.30": {
+    "title": "Union, Intersection, and Difference of Three Sets"
+  },
+  "MATH 1.31": {
+    "title": "Set Operations on Multiples of Ten"
+  },
+  "MATH 1.32": {
+    "title": "Set Operations with Letters"
+  },
+  "MATH 1.33": {
+    "title": "De Morgan's Laws with a Ten-Element Universe"
+  },
+  "MATH 1.34": {
+    "title": "Complements of Disjoint Odd and Even Sets"
+  },
+  "MATH 1.35": {
+    "title": "De Morgan's Laws with Letter Sets"
+  },
+  "MATH 1.36": {
+    "title": "Cartesian Products and Ordered Pairs"
+  },
+  "MATH 1.37": {
+    "title": "Cartesian Product Size vs. Pair Membership"
+  },
+  "MATH 1.38": {
+    "title": "Symmetric Difference of Two Odd-Number Sets"
+  },
+  "MATH 1.39": {
+    "title": "Symmetric Difference of Disjoint Sets"
+  },
+  "MATH 1.40": {
+    "title": "Chess and Checkers Club Overlap"
+  },
+  "MATH 1.41": {
+    "title": "Two Language Courses in One Cohort"
+  },
+  "MATH 1.42": {
+    "title": "Gym Members Using Two Facilities"
+  },
+  "MATH 1.43": {
+    "title": "Three Overlapping Hobby Clubs"
+  },
+  "MATH 1.44": {
+    "title": "Prime and even properties of the number 7"
+  },
+  "MATH 1.45": {
+    "title": "Primes greater than 2"
+  },
+  "MATH 1.46": {
+    "title": "University prerequisite chain"
+  },
+  "MATH 1.47": {
+    "title": "Primes and Even Numbers Below Fifteen"
+  },
+  "MATH 1.48": {
+    "title": "Comparing the conditions x > 10 and x > 5"
+  },
+  "MATH 1.49": {
+    "title": "Loan approval"
+  },
+  "MATH 1.50": {
+    "title": "The universe of discourse is the set of real numbers, ℝ"
+  },
+  "MATH 1.51": {
+    "title": "A medical diagnostic criterion"
+  },
+  "MATH 1.52": {
+    "title": "Existential and Universal Claims Over Integers 1 to 20"
+  },
+  "MATH 1.53": {
+    "title": "A club membership rule"
+  },
+  "MATH 1.54": {
+    "title": "One Counterexample Against \"All Primes Are Odd\""
+  },
+  "MATH 1.55": {
+    "title": "An event organizer's rule is : \"If it rains, the picnic is cancelled.\""
+  },
+  "MATH 1.56": {
+    "title": "Inclusive Or in a Two-Product Purchase Survey"
+  },
+  "MATH 1.57": {
+    "title": "Passing a course: attendance and the final exam"
+  },
+  "MATH 1.58": {
+    "title": "Online store filter (De Morgan)"
+  },
+  "MATH 1.59": {
+    "title": "Inflation and central-bank interest rates"
+  },
+  "MATH 1.60": {
+    "title": "A chain of biconditionals"
+  },
+  "MATH 1.61": {
+    "title": "Cancelling a concert"
+  },
+  "MATH 1.62": {
+    "title": "A senior transit discount rule"
+  },
+  "MATH 1.63": {
+    "title": "Proving the Triangular-Number Formula by Induction"
+  },
+  "MATH 1.64": {
+    "title": "Logical Equivalents of an Inflation-Unemployment Claim"
+  },
+  "MATH 1.65": {
+    "title": "Airline delay chain"
+  },
+  "MATH 1.66": {
+    "title": "Negation, Converse, and Contrapositive of a Study-Hours Rule"
+  },
+  "MATH 1.67": {
+    "title": "A contract penalty clause"
+  },
+  "MATH 1.68": {
+    "title": "A scholarship eligibility rule with a waiver"
+  },
+  "MATH 1.69": {
+    "title": "Travel insurance payout"
+  },
+  "MATH 1.70": {
+    "title": "Contrapositive Reasoning in a Citizenship Voting Law"
+  },
+  "MATH 1.71": {
+    "title": "A business memo's reasoning"
+  },
+  "MATH 1.72": {
+    "title": "A Counterexample to \"The Sum of Two Irrationals Is Irrational\""
+  },
+  "MATH 1.73": {
+    "title": "Converse and Contrapositive of a Fish-Habitat Rule"
+  },
+  "MATH 1.74": {
+    "title": "Negating a Store's Early-Payment Discount Policy"
+  },
+  "MATH 1.75": {
+    "title": "Negating a Revenue-Based Audit Regulation"
+  },
+  "MATH 1.76": {
+    "title": "Commercial pilot license"
+  },
+  "MATH 1.77": {
+    "title": "Bank loan approval"
+  },
+  "MATH 1.78": {
+    "title": "Sam's Loyalty Point and the Converse of a Dessert Rule"
+  },
+  "MATH 1.79": {
+    "title": "Nested quantifiers with a product equation"
+  },
+  "MATH 1.80": {
+    "title": "A theft investigation"
+  },
+  "MATH 1.81": {
+    "title": "An island of truth-tellers and liars"
+  },
+  "MATH 1.82": {
+    "title": "Quantifier order: exam scores"
+  },
+  "MATH 1.83": {
+    "title": "A hiring committee's voting rule"
+  },
+  "MATH 1.84": {
+    "title": "A warranty voiding clause"
+  },
+  "MATH 1.85": {
+    "title": "Five Independent Checks on Proof and Negation Technique"
+  },
+  "MATH 1.86": {
+    "title": "Validity versus soundness"
+  },
+  "MATH 1.87": {
+    "title": "One Losing Game as a Counterexample to a Scoring Rule"
+  },
+  "MATH 1.88": {
+    "title": "A grading curve rule"
+  },
+  "MATH 1.89": {
+    "title": "Gear teeth and coprimality"
+  },
+  "MATH 1.90": {
+    "title": "A subscription renewal and refund policy"
+  },
+  "MATH 1.91": {
+    "title": "Negation and Violation of a Fever-Antibiotics Guideline"
+  },
+  "MATH 1.92": {
+    "title": "A Weak Password That Meets a Length-Only Security Rule"
+  },
+  "MATH 1.93": {
+    "title": "Factory batch inspection"
+  },
+  "MATH 1.94": {
+    "title": "Divisibility by Six Versus Divisibility by Three"
+  },
+  "MATH 1.95": {
+    "title": "ID number verification rule"
+  },
+  "MATH 1.96": {
+    "title": "Negating Thales' Theorem About Right Angles in a Semicircle"
+  },
+  "MATH 1.97": {
+    "title": "A number-theory theorem states: \"If a number is a perfect square, then it has an odd number of positive divisors.\""
+  },
+  "MATH 1.98": {
+    "title": "Four friends and their jobs"
+  },
+  "MATH 1.99": {
+    "title": "A real-analysis theorem states: \"If a sequence converges, then it is bounded.\""
+  },
+  "MATH 1.100": {
+    "title": "Three inhabitants of the island"
+  },
+  "MATH 1.101": {
+    "title": "Conference attendance rules"
+  },
+  "MATH 1.102": {
+    "title": "A Study Group's Attendance"
+  },
+  "MATH 1.103": {
+    "title": "Board Game Night"
+  },
+  "MATH 1.104": {
+    "title": "Splitting the Cooking Duty"
+  },
+  "MATH 1.105": {
+    "title": "A Five-Person Day Trip"
+  },
+  "MATH 1.106": {
+    "title": "Six Interns and the Conference Talk"
+  },
+  "MATH 1.107": {
+    "title": "Assigning Paper Reviewers"
+  },
+  "MATH 1.108": {
+    "title": "Seven Finalists and the Tournament Roster"
+  },
+  "MATH 1.109": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 1.110": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 1.111": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 1.112": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 1.113": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 1.114": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 1.115": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 1.116": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 1.117": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 1.118": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 1.119": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 1.120": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 1.121": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 1.122": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 1.123": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 1.124": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 1.125": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 1.126": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 1.127": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 1.128": {
+    "title": "Exam-style tasks - 20"
+  }
+}

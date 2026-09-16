@@ -1,0 +1,437 @@
+{
+  "MATH 9.01": {
+    "title": "Two Lines Between A and B: Cubic Speed and a Distance Table"
+  },
+  "MATH 9.02": {
+    "title": "Reading a Cubic at Three Abscissas"
+  },
+  "MATH 9.03": {
+    "title": "Degree and Leading Coefficient on Sight"
+  },
+  "MATH 9.04": {
+    "title": "Roots from a Factored Cubic"
+  },
+  "MATH 9.05": {
+    "title": "A Line Times a Square"
+  },
+  "MATH 9.06": {
+    "title": "Adding Two Cubics"
+  },
+  "MATH 9.07": {
+    "title": "Odd Cubic on Sight"
+  },
+  "MATH 9.08": {
+    "title": "End Behaviour of a Downward Cubic"
+  },
+  "MATH 9.09": {
+    "title": "A Short Value Table for a Cubic"
+  },
+  "MATH 9.10": {
+    "title": "Constant Term Versus Leading Term"
+  },
+  "MATH 9.11": {
+    "title": "A Horizontal Line Against a Cubic"
+  },
+  "MATH 9.12": {
+    "title": "Product of a Line and a Cubic"
+  },
+  "MATH 9.13": {
+    "title": "First Differences Hint at the Degree"
+  },
+  "MATH 9.14": {
+    "title": "Warehouse Cost as a Cubic"
+  },
+  "MATH 9.15": {
+    "title": "Turning-Point Budget of a Cubic"
+  },
+  "MATH 9.16": {
+    "title": "Factor Theorem at a Named Point"
+  },
+  "MATH 9.17": {
+    "title": "Shift of a Cubic"
+  },
+  "MATH 9.18": {
+    "title": "Cooling Chamber: Cubic Temperature"
+  },
+  "MATH 9.19": {
+    "title": "Meetings of a Cubic and a Line"
+  },
+  "MATH 9.20": {
+    "title": "Revenue Cubic and a Break-Even Read"
+  },
+  "MATH 9.21": {
+    "title": "Even Quartic from a Square"
+  },
+  "MATH 9.22": {
+    "title": "Delivery Van: Cubic Speed Against a Short Table"
+  },
+  "MATH 9.23": {
+    "title": "Graph of a Cubic with Two Turns"
+  },
+  "MATH 9.24": {
+    "title": "Production: Cubic Cost and a Piece Table"
+  },
+  "MATH 9.25": {
+    "title": "How Many Real Roots Can a Cubic Have?"
+  },
+  "MATH 9.26": {
+    "title": "Leading Coefficient and the Far Right"
+  },
+  "MATH 9.27": {
+    "title": "Nested Polynomials Without Cancelling the Top Power"
+  },
+  "MATH 9.28": {
+    "title": "Finite Differences of a Quartic Sample"
+  },
+  "MATH 9.29": {
+    "title": "Canal Lock: Height as a Cubic in Time"
+  },
+  "MATH 9.30": {
+    "title": "Rebuild a Monic Cubic from Three Roots"
+  },
+  "MATH 9.31": {
+    "title": "Degree of a Sum, Symbolically"
+  },
+  "MATH 9.32": {
+    "title": "When Leading Terms Cancel"
+  },
+  "MATH 9.33": {
+    "title": "Even and Odd Parts of a Polynomial"
+  },
+  "MATH 9.34": {
+    "title": "Composition Multiplies the Highest Powers"
+  },
+  "MATH 9.35": {
+    "title": "A Vertical Shift Cannot Create Extra Roots Beyond the Degree"
+  },
+  "MATH 9.36": {
+    "title": "Family $p_a(x)=x^{3}-3x+a$"
+  },
+  "MATH 9.37": {
+    "title": "Bicycle Speed: Another Cubic and a Table"
+  },
+  "MATH 9.38": {
+    "title": "Graph: Which Cubic Matches the Turns?"
+  },
+  "MATH 9.39": {
+    "title": "Quartic End Behaviour Against a Cubic"
+  },
+  "MATH 9.40": {
+    "title": "Parameter Window for Three Real Roots"
+  },
+  "MATH 9.41": {
+    "title": "How Many Times Can Two Polynomials Meet?"
+  },
+  "MATH 9.42": {
+    "title": "Multiple Roots and the Derivative"
+  },
+  "MATH 9.43": {
+    "title": "Bounds on Turning Points"
+  },
+  "MATH 9.44": {
+    "title": "Palindromic Coefficients"
+  },
+  "MATH 9.45": {
+    "title": "Integer Coefficients and Integer Roots"
+  },
+  "MATH 9.46": {
+    "title": "Min Acceleration of a Family of Cubics"
+  },
+  "MATH 9.47": {
+    "title": "Workshop Output: Cubic Versus Recorded Totals"
+  },
+  "MATH 9.48": {
+    "title": "Rebuild from a Double Root and a Simple Root"
+  },
+  "MATH 9.49": {
+    "title": "Crossing a Quartic and a Line Three Times"
+  },
+  "MATH 9.50": {
+    "title": "Graph of $x^{3}-x$ Versus a Raised Copy"
+  },
+  "MATH 9.51": {
+    "title": "Freight Train: Cubic Speed and a Distance Ledger"
+  },
+  "MATH 9.52": {
+    "title": "Sketch Reading: Three Crossings and a Turn Between Them"
+  },
+  "MATH 9.53": {
+    "title": "Double Root at One, Simple Root at Negative Two"
+  },
+  "MATH 9.54": {
+    "title": "Sampling a Quartic: Are Fourth Differences Constant?"
+  },
+  "MATH 9.55": {
+    "title": "Universal Facts About Real Cubics"
+  },
+  "MATH 9.56": {
+    "title": "Canal Gate: Water Height as a Cubic in Minutes"
+  },
+  "MATH 9.57": {
+    "title": "Rebuild a Monic Cubic from Three Given Zeros"
+  },
+  "MATH 9.58": {
+    "title": "Far-End Behaviour Without a Formula"
+  },
+  "MATH 9.59": {
+    "title": "Workshop Output Cost and a Recorded Total Table"
+  },
+  "MATH 9.60": {
+    "title": "Touching the Axis at Two, Crossing at Negative One"
+  },
+  "MATH 9.61": {
+    "title": "Graph Clues: Three Crossings and a Turn Between the Last Pair"
+  },
+  "MATH 9.62": {
+    "title": "Degree of a Sum When $n>m$ (Set 1)"
+  },
+  "MATH 9.63": {
+    "title": "When Equal Leading Terms Cancel in a Sum (Set 1)"
+  },
+  "MATH 9.64": {
+    "title": "Parameter k: How Many Real Zeros?"
+  },
+  "MATH 9.65": {
+    "title": "Inverted Cubic with Three Zeros"
+  },
+  "MATH 9.66": {
+    "title": "Cubic Meets a Line: Count the Crossings"
+  },
+  "MATH 9.67": {
+    "title": "W: Warehouse Throughput"
+  },
+  "MATH 9.68": {
+    "title": "Finite Differences Diagnose the Degree (Set 1)"
+  },
+  "MATH 9.69": {
+    "title": "Rebuild from a Double Root and a Simple Root (Set 1)"
+  },
+  "MATH 9.70": {
+    "title": "Square of a Quadratic Minus Itself (Set 1)"
+  },
+  "MATH 9.71": {
+    "title": "Even Quartic: Factor Then Read the Shape (Set 1)"
+  },
+  "MATH 9.72": {
+    "title": "Raising a Cubic: Crossings After a Vertical Shift (Set 1)"
+  },
+  "MATH 9.73": {
+    "title": "Degree of a Sum When $n>m$ (Set 2)"
+  },
+  "MATH 9.74": {
+    "title": "Parameter m: How Many Real Zeros?"
+  },
+  "MATH 9.75": {
+    "title": "Downward Cubic Through the Origin"
+  },
+  "MATH 9.76": {
+    "title": "Odd Cubic Against a Parabola"
+  },
+  "MATH 9.77": {
+    "title": "R: Stall Revenue Model"
+  },
+  "MATH 9.78": {
+    "title": "Finite Differences Diagnose the Degree (Set 2)"
+  },
+  "MATH 9.79": {
+    "title": "Rebuild from a Double Root and a Simple Root (Set 2)"
+  },
+  "MATH 9.80": {
+    "title": "Square of a Quadratic Minus Itself (Set 2)"
+  },
+  "MATH 9.81": {
+    "title": "Even Quartic: Factor Then Read the Shape (Set 2)"
+  },
+  "MATH 9.82": {
+    "title": "Raising a Cubic: Crossings After a Vertical Shift (Set 2)"
+  },
+  "MATH 9.83": {
+    "title": "Degree of a Sum When $n>m$ (Set 3)"
+  },
+  "MATH 9.84": {
+    "title": "When Equal Leading Terms Cancel in a Sum (Set 2)"
+  },
+  "MATH 9.85": {
+    "title": "Parameter t: How Many Real Zeros?"
+  },
+  "MATH 9.86": {
+    "title": "Negative Leading Coefficient Cubic"
+  },
+  "MATH 9.87": {
+    "title": "Quartic Minus a Parabola"
+  },
+  "MATH 9.88": {
+    "title": "H: Tank Height"
+  },
+  "MATH 9.89": {
+    "title": "Finite Differences Diagnose the Degree (Set 3)"
+  },
+  "MATH 9.90": {
+    "title": "Parameter α1: How Many Real Zeros?"
+  },
+  "MATH 9.91": {
+    "title": "Parameter α2: How Many Real Zeros?"
+  },
+  "MATH 9.92": {
+    "title": "Parameter α3: How Many Real Zeros?"
+  },
+  "MATH 9.93": {
+    "title": "Parameter α4: How Many Real Zeros?"
+  },
+  "MATH 9.94": {
+    "title": "Parameter α5: How Many Real Zeros?"
+  },
+  "MATH 9.95": {
+    "title": "Parameter α6: How Many Real Zeros?"
+  },
+  "MATH 9.96": {
+    "title": "Hard Graph Read: Roots (-3, -1, 2)"
+  },
+  "MATH 9.97": {
+    "title": "Hard Graph Read: Roots (-2, 1, 4)"
+  },
+  "MATH 9.98": {
+    "title": "Hard Graph Read: Roots (0, 1, 5)"
+  },
+  "MATH 9.99": {
+    "title": "Hard Graph Read: Roots (-1, 2, 3)"
+  },
+  "MATH 9.100": {
+    "title": "Hard Graph Read: Roots (1, 2, 4)"
+  },
+  "MATH 9.101": {
+    "title": "Hard Graph Read: Roots (0, 2, 3)"
+  },
+  "MATH 9.102": {
+    "title": "Hard Graph Read: Roots (-2, 0, 2)"
+  },
+  "MATH 9.103": {
+    "title": "Hard Graph Read: Roots (1, 3, 5)"
+  },
+  "MATH 9.104": {
+    "title": "Quartic Meets a Parabola Four Times"
+  },
+  "MATH 9.105": {
+    "title": "Cubic Meets a Parabola: Count Carefully"
+  },
+  "MATH 9.106": {
+    "title": "Cubic Minus a Line: Three Meetings?"
+  },
+  "MATH 9.107": {
+    "title": "Biquadratic Minus a Line"
+  },
+  "MATH 9.108": {
+    "title": "Rebuild from a Double Root and a Simple Root (Set 1) (variant 57)"
+  },
+  "MATH 9.109": {
+    "title": "Square of a Quadratic Minus Itself (Set 1) (variant 58)"
+  },
+  "MATH 9.110": {
+    "title": "Even Quartic: Factor Then Read the Shape (Set 1) (variant 59)"
+  },
+  "MATH 9.111": {
+    "title": "Rebuild from a Double Root and a Simple Root (Set 2) (variant 60)"
+  },
+  "MATH 9.112": {
+    "title": "Square of a Quadratic Minus Itself (Set 2) (variant 61)"
+  },
+  "MATH 9.113": {
+    "title": "Even Quartic: Factor Then Read the Shape (Set 2) (variant 62)"
+  },
+  "MATH 9.114": {
+    "title": "Rebuild from a Double Root and a Simple Root (Set 3)"
+  },
+  "MATH 9.115": {
+    "title": "Square of a Quadratic Minus Itself (Set 3)"
+  },
+  "MATH 9.E01": {
+    "title": "Touch, ends, and a dashed mark from ticks"
+  },
+  "MATH 9.E02": {
+    "title": "Degree and factors from raw samples"
+  },
+  "MATH 9.E03": {
+    "title": "Lock imbalance from the hourly ledger"
+  },
+  "MATH 9.E04": {
+    "title": "Shared roots, parity, and nested degree"
+  },
+  "MATH 9.E05": {
+    "title": "The cubic family with a sliding gap"
+  },
+  "MATH 9.E06": {
+    "title": "Rebuild a touch-and-cross monic cubic"
+  },
+  "MATH 9.E07": {
+    "title": "Affine outer map around a difference of squares"
+  },
+  "MATH 9.E08": {
+    "title": "A squared factor and the derivative"
+  },
+  "MATH 9.E09": {
+    "title": "Solid cubic, dashed line, and a value table"
+  },
+  "MATH 9.E10": {
+    "title": "Five independent small-integer traps"
+  },
+  "MATH 9.E11": {
+    "title": "Odd cubic against a dashed line"
+  },
+  "MATH 9.E12": {
+    "title": "Cubic samples with three visible factors"
+  },
+  "MATH 9.E13": {
+    "title": "Beam camber against a design mark"
+  },
+  "MATH 9.E14": {
+    "title": "Remainders, mixed parity, nested power"
+  },
+  "MATH 9.E15": {
+    "title": "A double root with a sliding companion"
+  },
+  "MATH 9.E16": {
+    "title": "Double at 2 and simple at −1"
+  },
+  "MATH 9.E17": {
+    "title": "Two even maps nested both ways"
+  },
+  "MATH 9.E18": {
+    "title": "Three simple linear factors"
+  },
+  "MATH 9.E19": {
+    "title": "Touch cubic on axes plus raw samples"
+  },
+  "MATH 9.E20": {
+    "title": "Parity, shift, Vieta, and linear factors"
+  },
+  "MATH 9.E21": {
+    "title": "Even quartic read from the axes"
+  },
+  "MATH 9.E22": {
+    "title": "Quartic samples: differences and factors"
+  },
+  "MATH 9.E23": {
+    "title": "Warehouse deviation from daily closes"
+  },
+  "MATH 9.E24": {
+    "title": "An odd cubic: factors, Vieta, nesting"
+  },
+  "MATH 9.E25": {
+    "title": "A double root fixed at the origin"
+  },
+  "MATH 9.E26": {
+    "title": "Three simple zeros force a monic cubic"
+  },
+  "MATH 9.E27": {
+    "title": "A cubic around a shift: factors of the nest"
+  },
+  "MATH 9.E28": {
+    "title": "Simple at 0, double at 2"
+  },
+  "MATH 9.E29": {
+    "title": "Three crossings, a dashed mark, and table factors"
+  },
+  "MATH 9.E30": {
+    "title": "Meetings, interpolation, and far-field sign"
+  }
+}

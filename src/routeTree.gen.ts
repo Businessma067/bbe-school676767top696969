@@ -96,6 +96,9 @@ import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as LangSplatRouteImport } from './routes/$lang.$'
 import { Route as WisoProductsIndexRouteImport } from './routes/wiso.products.index'
 import { Route as AdminUsersIndexRouteImport } from './routes/admin.users.index'
+import { Route as WisoProductsFullCourseSubjectsRouteImport } from './routes/wiso.products.full-course-subjects'
+import { Route as WisoProductsFullCourseMathRouteImport } from './routes/wiso.products.full-course-math'
+import { Route as WisoProductsFullCourseEconomicsRouteImport } from './routes/wiso.products.full-course-economics'
 import { Route as WisoProductsFullCourseRouteImport } from './routes/wiso.products.full-course'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
@@ -547,6 +550,24 @@ const AdminUsersIndexRoute = AdminUsersIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AdminUsersRoute,
 } as any)
+const WisoProductsFullCourseSubjectsRoute =
+  WisoProductsFullCourseSubjectsRouteImport.update({
+    id: '/full-course-subjects',
+    path: '/full-course-subjects',
+    getParentRoute: () => WisoProductsRoute,
+  } as any)
+const WisoProductsFullCourseMathRoute =
+  WisoProductsFullCourseMathRouteImport.update({
+    id: '/full-course-math',
+    path: '/full-course-math',
+    getParentRoute: () => WisoProductsRoute,
+  } as any)
+const WisoProductsFullCourseEconomicsRoute =
+  WisoProductsFullCourseEconomicsRouteImport.update({
+    id: '/full-course-economics',
+    path: '/full-course-economics',
+    getParentRoute: () => WisoProductsRoute,
+  } as any)
 const WisoProductsFullCourseRoute = WisoProductsFullCourseRouteImport.update({
   id: '/full-course',
   path: '/full-course',
@@ -680,6 +701,9 @@ export interface FileRoutesByFullPath {
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/wiso/products/full-course': typeof WisoProductsFullCourseRoute
+  '/wiso/products/full-course-economics': typeof WisoProductsFullCourseEconomicsRoute
+  '/wiso/products/full-course-math': typeof WisoProductsFullCourseMathRoute
+  '/wiso/products/full-course-subjects': typeof WisoProductsFullCourseSubjectsRoute
   '/admin/users/': typeof AdminUsersIndexRoute
   '/wiso/products/': typeof WisoProductsIndexRoute
   '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
@@ -766,6 +790,9 @@ export interface FileRoutesByTo {
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/wiso/products/full-course': typeof WisoProductsFullCourseRoute
+  '/wiso/products/full-course-economics': typeof WisoProductsFullCourseEconomicsRoute
+  '/wiso/products/full-course-math': typeof WisoProductsFullCourseMathRoute
+  '/wiso/products/full-course-subjects': typeof WisoProductsFullCourseSubjectsRoute
   '/admin/users': typeof AdminUsersIndexRoute
   '/wiso/products': typeof WisoProductsIndexRoute
   '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
@@ -864,6 +891,9 @@ export interface FileRoutesById {
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/wiso/products/full-course': typeof WisoProductsFullCourseRoute
+  '/wiso/products/full-course-economics': typeof WisoProductsFullCourseEconomicsRoute
+  '/wiso/products/full-course-math': typeof WisoProductsFullCourseMathRoute
+  '/wiso/products/full-course-subjects': typeof WisoProductsFullCourseSubjectsRoute
   '/admin/users/': typeof AdminUsersIndexRoute
   '/wiso/products/': typeof WisoProductsIndexRoute
   '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
@@ -963,6 +993,9 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/wiso/products/full-course'
+    | '/wiso/products/full-course-economics'
+    | '/wiso/products/full-course-math'
+    | '/wiso/products/full-course-subjects'
     | '/admin/users/'
     | '/wiso/products/'
     | '/api/public/payment/webhook'
@@ -1049,6 +1082,9 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/wiso/products/full-course'
+    | '/wiso/products/full-course-economics'
+    | '/wiso/products/full-course-math'
+    | '/wiso/products/full-course-subjects'
     | '/admin/users'
     | '/wiso/products'
     | '/api/public/payment/webhook'
@@ -1146,6 +1182,9 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/wiso/products/full-course'
+    | '/wiso/products/full-course-economics'
+    | '/wiso/products/full-course-math'
+    | '/wiso/products/full-course-subjects'
     | '/admin/users/'
     | '/wiso/products/'
     | '/api/public/payment/webhook'
@@ -1814,6 +1853,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminUsersIndexRouteImport
       parentRoute: typeof AdminUsersRoute
     }
+    '/wiso/products/full-course-subjects': {
+      id: '/wiso/products/full-course-subjects'
+      path: '/full-course-subjects'
+      fullPath: '/wiso/products/full-course-subjects'
+      preLoaderRoute: typeof WisoProductsFullCourseSubjectsRouteImport
+      parentRoute: typeof WisoProductsRoute
+    }
+    '/wiso/products/full-course-math': {
+      id: '/wiso/products/full-course-math'
+      path: '/full-course-math'
+      fullPath: '/wiso/products/full-course-math'
+      preLoaderRoute: typeof WisoProductsFullCourseMathRouteImport
+      parentRoute: typeof WisoProductsRoute
+    }
+    '/wiso/products/full-course-economics': {
+      id: '/wiso/products/full-course-economics'
+      path: '/full-course-economics'
+      fullPath: '/wiso/products/full-course-economics'
+      preLoaderRoute: typeof WisoProductsFullCourseEconomicsRouteImport
+      parentRoute: typeof WisoProductsRoute
+    }
     '/wiso/products/full-course': {
       id: '/wiso/products/full-course'
       path: '/full-course'
@@ -2027,11 +2087,17 @@ const TutorExamRouteWithChildren = TutorExamRoute._addFileChildren(
 
 interface WisoProductsRouteChildren {
   WisoProductsFullCourseRoute: typeof WisoProductsFullCourseRoute
+  WisoProductsFullCourseEconomicsRoute: typeof WisoProductsFullCourseEconomicsRoute
+  WisoProductsFullCourseMathRoute: typeof WisoProductsFullCourseMathRoute
+  WisoProductsFullCourseSubjectsRoute: typeof WisoProductsFullCourseSubjectsRoute
   WisoProductsIndexRoute: typeof WisoProductsIndexRoute
 }
 
 const WisoProductsRouteChildren: WisoProductsRouteChildren = {
   WisoProductsFullCourseRoute: WisoProductsFullCourseRoute,
+  WisoProductsFullCourseEconomicsRoute: WisoProductsFullCourseEconomicsRoute,
+  WisoProductsFullCourseMathRoute: WisoProductsFullCourseMathRoute,
+  WisoProductsFullCourseSubjectsRoute: WisoProductsFullCourseSubjectsRoute,
   WisoProductsIndexRoute: WisoProductsIndexRoute,
 }
 

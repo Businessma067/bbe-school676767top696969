@@ -1,0 +1,614 @@
+{
+  "MATH 11.01": {
+    "title": "Tangent line from a workshop profit curve"
+  },
+  "MATH 11.02": {
+    "title": "Marginal cost from a factory cost schedule"
+  },
+  "MATH 11.03": {
+    "title": "Power rule inside a production function"
+  },
+  "MATH 11.04": {
+    "title": "Revenue from a linear price schedule"
+  },
+  "MATH 11.05": {
+    "title": "Average cost as a quotient"
+  },
+  "MATH 11.06": {
+    "title": "Waiting time with a reciprocal staffing rule"
+  },
+  "MATH 11.07": {
+    "title": "Product rule on a response index"
+  },
+  "MATH 11.08": {
+    "title": "Square-root demand and its second derivative"
+  },
+  "MATH 11.09": {
+    "title": "Revenue from a nested demand rule"
+  },
+  "MATH 11.10": {
+    "title": "Maintenance time per effective unit"
+  },
+  "MATH 11.11": {
+    "title": "Log utility with a linear time cost"
+  },
+  "MATH 11.12": {
+    "title": "A learning-curve cost per unit"
+  },
+  "MATH 11.13": {
+    "title": "Tangent line on a revenue curve"
+  },
+  "MATH 11.14": {
+    "title": "Nested chain rule on a reliability score"
+  },
+  "MATH 11.15": {
+    "title": "Second derivative on a cost curve"
+  },
+  "MATH 11.16": {
+    "title": "A quotient-rule complaint index"
+  },
+  "MATH 11.17": {
+    "title": "Deep chain rule on a packaging safety score"
+  },
+  "MATH 11.18": {
+    "title": "Hard product of a polynomial and a logarithm"
+  },
+  "MATH 11.19": {
+    "title": "A hard ratio with a square root in the denominator"
+  },
+  "MATH 11.20": {
+    "title": "A hard mixed composition on a performance index"
+  },
+  "MATH 11.21": {
+    "title": "A short cubic profit check"
+  },
+  "MATH 11.22": {
+    "title": "Straight-line shipping cost"
+  },
+  "MATH 11.23": {
+    "title": "Labour with a five-halves power"
+  },
+  "MATH 11.24": {
+    "title": "Ticket revenue under a linear fare"
+  },
+  "MATH 11.25": {
+    "title": "Call-centre delay and its curvature"
+  },
+  "MATH 11.26": {
+    "title": "Decaying response with a linear factor"
+  },
+  "MATH 11.27": {
+    "title": "Square-root reach of a campaign"
+  },
+  "MATH 11.28": {
+    "title": "Study utility with a log and a linear penalty"
+  },
+  "MATH 11.29": {
+    "title": "Nested fifth power on a quality index"
+  },
+  "MATH 11.30": {
+    "title": "Product of a square and a nested root"
+  },
+  "MATH 11.31": {
+    "title": "Cubed numerator over a linear denominator"
+  },
+  "MATH 11.32": {
+    "title": "Logarithm of a quadratic argument"
+  },
+  "MATH 11.33": {
+    "title": "Three-halves power of a quadratic"
+  },
+  "MATH 11.34": {
+    "title": "Exponential times a quadratic"
+  },
+  "MATH 11.35": {
+    "title": "Square root of a linear ratio"
+  },
+  "MATH 11.36": {
+    "title": "Normalised linear over a root"
+  },
+  "MATH 11.37": {
+    "title": "Cubic cost with an inflection check"
+  },
+  "MATH 11.38": {
+    "title": "Product of two nested powers"
+  },
+  "MATH 11.39": {
+    "title": "Log of a quotient of linear terms"
+  },
+  "MATH 11.40": {
+    "title": "Square times a nested logarithm"
+  },
+  "MATH 11.41": {
+    "title": "Which cost curve is marginal cost?"
+  },
+  "MATH 11.42": {
+    "title": "Reading C'(50)=3 in words"
+  },
+  "MATH 11.43": {
+    "title": "Price, revenue, or profit?"
+  },
+  "MATH 11.44": {
+    "title": "When does an extra unit raise profit?"
+  },
+  "MATH 11.45": {
+    "title": "Zero marginal profit is not zero profit"
+  },
+  "MATH 11.46": {
+    "title": "Marginal utility in plain language"
+  },
+  "MATH 11.47": {
+    "title": "Average cost is not marginal cost"
+  },
+  "MATH 11.48": {
+    "title": "One more unit versus the derivative"
+  },
+  "MATH 11.49": {
+    "title": "Revenue when price depends on quantity"
+  },
+  "MATH 11.50": {
+    "title": "A consultant picks the wrong function"
+  },
+  "MATH 11.51": {
+    "title": "Marginal tax rate versus average tax"
+  },
+  "MATH 11.52": {
+    "title": "Marginal propensity to save"
+  },
+  "MATH 11.53": {
+    "title": "Slope of the cost curve on a graph"
+  },
+  "MATH 11.54": {
+    "title": "Profit maximum is not revenue maximum"
+  },
+  "MATH 11.55": {
+    "title": "Oil left in the well"
+  },
+  "MATH 11.56": {
+    "title": "What marginal revenue does not say"
+  },
+  "MATH 11.57": {
+    "title": "Two ways to write the same profit test"
+  },
+  "MATH 11.58": {
+    "title": "Utility average versus marginal utility"
+  },
+  "MATH 11.59": {
+    "title": "Cost alone cannot give marginal revenue"
+  },
+  "MATH 11.60": {
+    "title": "A story with three labelled derivatives"
+  },
+  "MATH 11.61": {
+    "title": "Two bakeries, same output, opposite advice"
+  },
+  "MATH 11.62": {
+    "title": "Overtime cost after fifty units"
+  },
+  "MATH 11.63": {
+    "title": "Only marginal profit and marginal cost are posted"
+  },
+  "MATH 11.64": {
+    "title": "Two cinemas: price versus extra ticket revenue"
+  },
+  "MATH 11.65": {
+    "title": "Happy-hour revenue after twenty drinks"
+  },
+  "MATH 11.66": {
+    "title": "What an expansion recommendation already contains"
+  },
+  "MATH 11.67": {
+    "title": "Two plants, one market price for the extra unit"
+  },
+  "MATH 11.68": {
+    "title": "A two-bracket income tax"
+  },
+  "MATH 11.69": {
+    "title": "Falling average cost plus a reported R'"
+  },
+  "MATH 11.70": {
+    "title": "North posts formulas, South posts only P'"
+  },
+  "MATH 11.71": {
+    "title": "Leisure utility that flattens after eight hours"
+  },
+  "MATH 11.72": {
+    "title": "Revenue slope and profit slope, cost missing"
+  },
+  "MATH 11.73": {
+    "title": "The same firm before and after a per-unit tax"
+  },
+  "MATH 11.74": {
+    "title": "Price follows one rule, then another"
+  },
+  "MATH 11.75": {
+    "title": "Cheaper on average is not cheaper at the margin"
+  },
+  "MATH 11.76": {
+    "title": "Zero profit versus zero extra profit"
+  },
+  "MATH 11.77": {
+    "title": "Weekday cost versus weekend cost"
+  },
+  "MATH 11.78": {
+    "title": "Extra revenue smaller than extra cost: two shops"
+  },
+  "MATH 11.79": {
+    "title": "Profit itself is piecewise at capacity"
+  },
+  "MATH 11.80": {
+    "title": "Same output, same R', missing different pieces"
+  },
+  "MATH 11.81": {
+    "title": "Workshop lamps: find the daily profit peak"
+  },
+  "MATH 11.82": {
+    "title": "Café lunch boxes: build profit from revenue and cost"
+  },
+  "MATH 11.83": {
+    "title": "Courier vans: minimise daily operating cost"
+  },
+  "MATH 11.84": {
+    "title": "Two promo scores: flat slope and flat bend at zero"
+  },
+  "MATH 11.85": {
+    "title": "Two cafés: same flat output, opposite profit bends"
+  },
+  "MATH 11.86": {
+    "title": "Festival tickets: local peak versus endpoint global max"
+  },
+  "MATH 11.87": {
+    "title": "Pop-up stall: rising profit forces an endpoint maximum"
+  },
+  "MATH 11.88": {
+    "title": "App studio: local peak and trough, no global max on $[0,\\infty)$"
+  },
+  "MATH 11.89": {
+    "title": "Bakery ovens: local trough, local peak, global max at zero"
+  },
+  "MATH 11.90": {
+    "title": "Print shop: match marginal revenue to marginal cost"
+  },
+  "MATH 11.91": {
+    "title": "Two bakeries: shared flat output, opposite profit bends"
+  },
+  "MATH 11.92": {
+    "title": "Loyalty index: bend test fails but a global peak remains"
+  },
+  "MATH 11.93": {
+    "title": "Workshop firm: cost trough and profit peak at different outputs"
+  },
+  "MATH 11.94": {
+    "title": "Two hikers: same flat hour, opposite utility bends"
+  },
+  "MATH 11.95": {
+    "title": "Warehouse staffing: two troughs and one local peak"
+  },
+  "MATH 11.96": {
+    "title": "Clinic hours: a flat-slope cost trough is not a cost peak"
+  },
+  "MATH 11.97": {
+    "title": "Two cinemas: a profit peak versus a flat inflection"
+  },
+  "MATH 11.98": {
+    "title": "Exam trap: listing flat slopes does not finish maximisation"
+  },
+  "MATH 11.99": {
+    "title": "Bike rental: prove a local profit peak from derivatives"
+  },
+  "MATH 11.100": {
+    "title": "Two plants: different flat outputs, different extremum labels"
+  },
+  "MATH 11.101": {
+    "title": "Farm shop: quadratic profit peak by differentiation"
+  },
+  "MATH 11.102": {
+    "title": "Market stall: form P from R and C, then optimise"
+  },
+  "MATH 11.103": {
+    "title": "Two food trucks: compare profit peaks side by side"
+  },
+  "MATH 11.104": {
+    "title": "Workshop cost: cubic cost with a local trough"
+  },
+  "MATH 11.105": {
+    "title": "Delivery shifts: cost min on a closed interval"
+  },
+  "MATH 11.106": {
+    "title": "Community garden: stretch 40 m of fence as far as possible"
+  },
+  "MATH 11.107": {
+    "title": "Poster margins: minimise paper for a fixed printed area"
+  },
+  "MATH 11.108": {
+    "title": "Wire into square and circle: minimise total enclosed area"
+  },
+  "MATH 11.109": {
+    "title": "Budget line: maximise U=xy without a pre-built substitute"
+  },
+  "MATH 11.110": {
+    "title": "Two inputs on x+y=10: maximise output Q=xy"
+  },
+  "MATH 11.111": {
+    "title": "City bike hire: when does a price rise help revenue?"
+  },
+  "MATH 11.112": {
+    "title": "Theatre tickets: match the revenue peak to unit elasticity"
+  },
+  "MATH 11.113": {
+    "title": "Online shop: two ways to read marginal revenue at one price"
+  },
+  "MATH 11.114": {
+    "title": "Two coffee carts: which market is more price-sensitive?"
+  },
+  "MATH 11.115": {
+    "title": "Two products, one resource: reduce then maximise profit"
+  },
+  "MATH 11.116": {
+    "title": "River paddock: three-sided fence maximises area"
+  },
+  "MATH 11.117": {
+    "title": "Fixed output xy=16: minimise cost by substitution"
+  },
+  "MATH 11.118": {
+    "title": "Ferry tickets: story of revenue and demand sensitivity"
+  },
+  "MATH 11.119": {
+    "title": "Open box from a sheet: reduce volume then prove the peak"
+  },
+  "MATH 11.121": {
+    "title": "Classic downward f′: signs on (1,5)"
+  },
+  "MATH 11.122": {
+    "title": "Upward f′: local max then local min of f"
+  },
+  "MATH 11.123": {
+    "title": "Easy reading of f: rise between x=1 and x=5"
+  },
+  "MATH 11.124": {
+    "title": "Linear P′: expand left of the zero"
+  },
+  "MATH 11.125": {
+    "title": "Straight f′: one critical point at x=3"
+  },
+  "MATH 11.126": {
+    "title": "Graph of f: local min at the origin and rising sides"
+  },
+  "MATH 11.127": {
+    "title": "Graph of f: turning points at x=1, 2.5, 5"
+  },
+  "MATH 11.128": {
+    "title": "Positive bump for f′: two zeros around a hill"
+  },
+  "MATH 11.129": {
+    "title": "f′ starts at 0, stays non-negative, then flattens"
+  },
+  "MATH 11.130": {
+    "title": "Double zero at x=1: does f change monotonicity?"
+  },
+  "MATH 11.131": {
+    "title": "Always-positive rising C′"
+  },
+  "MATH 11.132": {
+    "title": "Cubic f′: read zeros and signs from coordinates"
+  },
+  "MATH 11.133": {
+    "title": "Skewed f′: peak height and zero at x=4"
+  },
+  "MATH 11.134": {
+    "title": "Odd f′: values at x=±1 and the zero at the origin"
+  },
+  "MATH 11.135": {
+    "title": "Product-form f′ with zeros at −2, 1, and 2"
+  },
+  "MATH 11.136": {
+    "title": "Odd f′ with even f″ on one plane"
+  },
+  "MATH 11.137": {
+    "title": "f and f′ together: check consistency at x=0 and x=1"
+  },
+  "MATH 11.138": {
+    "title": "P′ versus Q′: compare at x=2 and x=5"
+  },
+  "MATH 11.139": {
+    "title": "Exam-style f′ with its linear f″ on one plane"
+  },
+  "MATH 11.140": {
+    "title": "Bump f′ with f″: concavity flip at the peak"
+  },
+  "MATH 11.141": {
+    "title": "xe^(−x/2) family: where f′ peaks"
+  },
+  "MATH 11.142": {
+    "title": "Compare P′ and C′ heights at x=1 and x=5"
+  },
+  "MATH 11.143": {
+    "title": "Two first derivatives: opposite advice at x=0"
+  },
+  "MATH 11.144": {
+    "title": "Four zeros of f′: count extrema of f from the figure"
+  },
+  "MATH 11.145": {
+    "title": "Two zeros of f′ with a decaying envelope"
+  },
+  "MATH 11.146": {
+    "title": "f′ and f″ together: signs and a concrete x=3"
+  },
+  "MATH 11.147": {
+    "title": "Skewed pair on one plane: zero of f′ at x=4"
+  },
+  "MATH 11.148": {
+    "title": "Two marginal-profit curves on one plane"
+  },
+  "MATH 11.149": {
+    "title": "Four-zero f′ with f″ on shared axes"
+  },
+  "MATH 11.150": {
+    "title": "Three firms’ P′ on one shared plane"
+  },
+  "MATH 11.151": {
+    "title": "Compare f′ and g′ at numbered x-values"
+  },
+  "MATH 11.152": {
+    "title": "Three curves on one plane: values at x=0 and x=3"
+  },
+  "MATH 11.153": {
+    "title": "Three named curves: signs, heights, and A vs A′"
+  },
+  "MATH 11.154": {
+    "title": "Compute signs and a value f′(−1) from the figure"
+  },
+  "MATH 11.155": {
+    "title": "f′, f″, and a vertical shift of f′"
+  },
+  "MATH 11.156": {
+    "title": "Three firms' marginal profits: signs, peaks, and advice"
+  },
+  "MATH 11.157": {
+    "title": "Hard consistency: f versus f′ on one plane"
+  },
+  "MATH 11.158": {
+    "title": "Double zero of f′: read f″ nearby"
+  },
+  "MATH 11.159": {
+    "title": "Revenue, cost, and profit slopes together"
+  },
+  "MATH 11.160": {
+    "title": "f′, f″, and a lifted companion h′"
+  },
+  "MATH 11.161": {
+    "title": "Carpentry workshop: revenue, cost, and build time"
+  },
+  "MATH 11.162": {
+    "title": "Harbour café: drinks, cost, and staffing hours"
+  },
+  "MATH 11.163": {
+    "title": "Print shop: price, demand, and elasticity"
+  },
+  "MATH 11.164": {
+    "title": "Market garden: labour, output, and wage"
+  },
+  "MATH 11.165": {
+    "title": "Courier fleet: routes, cost, and a threshold"
+  },
+  "MATH 11.166": {
+    "title": "Gift-tube producer: volume, tax, and rival revenue"
+  },
+  "MATH 11.167": {
+    "title": "Bakery chain: demand, tax, and average cost"
+  },
+  "MATH 11.168": {
+    "title": "Data studio: labour, output, and marginal value"
+  },
+  "MATH 11.169": {
+    "title": "Furniture factory: a smooth production threshold"
+  },
+  "MATH 11.170": {
+    "title": "Ride platform: fare, commission, and profit"
+  },
+  "MATH 11.171": {
+    "title": "Greenhouse: two inputs and labour value"
+  },
+  "MATH 11.172": {
+    "title": "Solar maintenance: output and a smooth service rule"
+  },
+  "MATH 11.173": {
+    "title": "Retail launch: price elasticity and a tax"
+  },
+  "MATH 11.174": {
+    "title": "Shipping line: capacity, cost, and a smooth loading rule"
+  },
+  "MATH 11.175": {
+    "title": "Festival stalls: demand, levy, and setup time"
+  },
+  "MATH 11.176": {
+    "title": "Podcast studio: advertising spend and listeners"
+  },
+  "MATH 11.177": {
+    "title": "Riverside market: three-sided stall enclosure"
+  },
+  "MATH 11.178": {
+    "title": "Pharmacy warehouse: order quantity and holding cost"
+  },
+  "MATH 11.179": {
+    "title": "Artisan soap: inverse demand and revenue"
+  },
+  "MATH 11.180": {
+    "title": "Founder's wealth utility: risk attitude"
+  },
+  "MATH 11.181": {
+    "title": "Design duo: two inputs under a budget"
+  },
+  "MATH 11.182": {
+    "title": "Bike workshop: cubic P′ and a per-unit levy"
+  },
+  "MATH 11.183": {
+    "title": "Candle maker: curved MC against MR, with AC* trap"
+  },
+  "MATH 11.184": {
+    "title": "Clinic throughput: f, f′ and f″ on one plane"
+  },
+  "MATH 11.185": {
+    "title": "Ceramic kiln: cost inflection and marginal cost"
+  },
+  "MATH 11.186": {
+    "title": "Pop-up shop: Newton quotient for weekend profit"
+  },
+  "MATH 11.187": {
+    "title": "App studio: square-root learning cost"
+  },
+  "MATH 11.188": {
+    "title": "Summer festival: campaign weeks and ticket profit"
+  },
+  "MATH 11.189": {
+    "title": "Coffee subscription: MU against a constant opportunity cost"
+  },
+  "MATH 11.190": {
+    "title": "Cold-chain: spoilage index over delivery hours"
+  },
+  "MATH 11.191": {
+    "title": "Two workshops: compare P′ graphs and levels"
+  },
+  "MATH 11.192": {
+    "title": "Print kiosk: demand figure plus quadratic cost"
+  },
+  "MATH 11.193": {
+    "title": "Spice importer: per-unit tax shifts MC on the figure"
+  },
+  "MATH 11.194": {
+    "title": "Herb box: inverse demand inside a fencing budget"
+  },
+  "MATH 11.195": {
+    "title": "App studio: learning curve AC/MC figure plus formula check"
+  },
+  "MATH 11.196": {
+    "title": "Pop-up gallery: Newton quotient, tax, and elasticity stub"
+  },
+  "MATH 11.197": {
+    "title": "Foundry: MC and MC′ figure for inflection of total cost"
+  },
+  "MATH 11.198": {
+    "title": "Design duo: budget reduction then read U′ from the figure"
+  },
+  "MATH 11.199": {
+    "title": "Warehouse: EOQ with a spoilage penalty overlay"
+  },
+  "MATH 11.200": {
+    "title": "Brewery: read P′ and P″, infer P without drawing P"
+  },
+  "MATH 11.201": {
+    "title": "Podcast ads: chain-rule revenue versus linear spend"
+  },
+  "MATH 11.202": {
+    "title": "Club: inverse-demand figure, membership fee, and MC"
+  },
+  "MATH 11.203": {
+    "title": "Mill: average-cost drift and a rival's marginal revenue"
+  },
+  "MATH 11.204": {
+    "title": "Theatre: price and MR figure with constant MC"
+  },
+  "MATH 11.205": {
+    "title": "Distillery: quadratic cost, linear demand, and a unit tax"
+  }
+}

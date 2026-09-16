@@ -1,0 +1,431 @@
+{
+  "MATH 11.01": {
+    "title": "Nominal Rate vs. Effective Rate on a Business Account"
+  },
+  "MATH 11.02": {
+    "title": "Multi-Year Growth Under Quarterly Compounding"
+  },
+  "MATH 11.03": {
+    "title": "Which Savings Offer Is Better?"
+  },
+  "MATH 11.04": {
+    "title": "Credit Card Interest - Monthly Rate to Effective Annual Rate"
+  },
+  "MATH 11.05": {
+    "title": "Quarterly Compounding on a Business Deposit"
+  },
+  "MATH 11.06": {
+    "title": "How Long to Double at 7.2% Compounded Monthly?"
+  },
+  "MATH 11.07": {
+    "title": "Comparing Compounding Frequencies at a Fixed Nominal Rate"
+  },
+  "MATH 11.08": {
+    "title": "A Ten-Year Deposit Under Monthly Compounding"
+  },
+  "MATH 11.09": {
+    "title": "What Rate Is Needed to Grow \\$50,000 to \\$80,000 in 8 Years?"
+  },
+  "MATH 11.10": {
+    "title": "Which Terms Are Better for a Borrower?"
+  },
+  "MATH 11.11": {
+    "title": "How Much Was Deposited 6 Years Ago?"
+  },
+  "MATH 11.12": {
+    "title": "How Long to Grow £4,000 to £6,000?"
+  },
+  "MATH 11.13": {
+    "title": "Daily Compounding on a Money-Market Deposit"
+  },
+  "MATH 11.14": {
+    "title": "A Store Card's True Annual Cost"
+  },
+  "MATH 11.15": {
+    "title": "Effective Rates for a 10% Nominal Rate Under Three Frequencies"
+  },
+  "MATH 11.16": {
+    "title": "What Growth Rate Would Multiply GDP by 50 in 80 Years?"
+  },
+  "MATH 11.17": {
+    "title": "Saving for a \\$25,000 Tuition Bill in 7 Years"
+  },
+  "MATH 11.18": {
+    "title": "How Much Was Invested 9 Years Ago?"
+  },
+  "MATH 11.19": {
+    "title": "Three CDs That Are Closer Than They Look"
+  },
+  "MATH 11.20": {
+    "title": "Which Account Reaches \\$22,000 First?"
+  },
+  "MATH 11.21": {
+    "title": "Continuous Compounding on a Bakery's Business Account"
+  },
+  "MATH 11.22": {
+    "title": "Multi-Year Continuous Compounding for a Coffee Roasting Company"
+  },
+  "MATH 11.23": {
+    "title": "Effective Annual Rate on a Continuously-Compounded Bond Fund"
+  },
+  "MATH 11.24": {
+    "title": "Comparing Growth Factors on an Equipment Leasing Contract"
+  },
+  "MATH 11.25": {
+    "title": "Year-Over-Year Growth by a Fixed Factor in a College Endowment Sub-Fund"
+  },
+  "MATH 11.26": {
+    "title": "Continuous Depreciation of a Courier Company's Van Fleet"
+  },
+  "MATH 11.27": {
+    "title": "Doubling Time for a REIT's Continuously-Compounded Reserve Account"
+  },
+  "MATH 11.28": {
+    "title": "Time for a Stamping Press to Lose Value Under Continuous Depreciation"
+  },
+  "MATH 11.29": {
+    "title": "How the Continuous-vs-Annual Gap Widens With Rate and Time at a Regional Bank"
+  },
+  "MATH 11.30": {
+    "title": "Continuous Compounding as the Ceiling on a Fund's Return at an Investment Advisory Firm"
+  },
+  "MATH 11.31": {
+    "title": "Reverse-Engineering the Implied Rate of a Boutique Winery's Futures Fund"
+  },
+  "MATH 11.32": {
+    "title": "A Corporate Treasurer's Three-Bank Comparison With Differing Nominal Rates"
+  },
+  "MATH 11.33": {
+    "title": "Net Growth Rate of a Hedge Fund After a Continuous Management Fee Drag"
+  },
+  "MATH 11.34": {
+    "title": "Crossover Point Between a Growing Equity Stake and Shrinking Factory Equipment"
+  },
+  "MATH 11.35": {
+    "title": "Verifying the Compounding-Frequency Ceiling Across Four Schedules for a Municipal Reserve"
+  },
+  "MATH 11.36": {
+    "title": "Reverse-Engineering the Upfront Deposit Needed for a Tuition Lock"
+  },
+  "MATH 11.37": {
+    "title": "A Logistics Company's Two-Phase Continuous Growth: Expansion Then Maturity"
+  },
+  "MATH 11.38": {
+    "title": "Reverse-Engineering a Crane's Implied Depreciation Rate for a Construction Equipment Reseller"
+  },
+  "MATH 11.39": {
+    "title": "Doubling, Tripling, and Quadrupling Times for an Impact Investing Fund"
+  },
+  "MATH 11.40": {
+    "title": "Capstone: A Three-Asset Family Office Portfolio Under Continuous Growth and Decay"
+  },
+  "MATH 11.41": {
+    "title": "Present Value of a Client Bonus Payment"
+  },
+  "MATH 11.42": {
+    "title": "Continuous Compounding on a Consulting Milestone Payment"
+  },
+  "MATH 11.43": {
+    "title": "Escrowed Sale Proceeds for a Landlord"
+  },
+  "MATH 11.44": {
+    "title": "Funding a Future Equipment Purchase"
+  },
+  "MATH 11.45": {
+    "title": "Implied Maturity of a Discounted Promissory Note"
+  },
+  "MATH 11.46": {
+    "title": "Implied Continuous Discount Rate on a Collectible Painting"
+  },
+  "MATH 11.47": {
+    "title": "Combined Present Value of Two Software Milestone Payments"
+  },
+  "MATH 11.48": {
+    "title": "Comparing an Immediate Payment to a Deferred Payment"
+  },
+  "MATH 11.49": {
+    "title": "Optimal Harvest Timing for a Timber Stand"
+  },
+  "MATH 11.50": {
+    "title": "Settling Two Supplier Obligations with a Single Lump Sum"
+  },
+  "MATH 11.51": {
+    "title": "Finding an Equivalent Annual Rate for a Continuously Discounted Trust Payment"
+  },
+  "MATH 11.52": {
+    "title": "Meeting a Loan Covenant with a Second Receivable"
+  },
+  "MATH 11.53": {
+    "title": "Finding the Indifference Payment for a Consulting Firm"
+  },
+  "MATH 11.54": {
+    "title": "A Corner Solution in Aging Wine Valuation"
+  },
+  "MATH 11.55": {
+    "title": "Comparative Statics for a Forestry Cooperative's Harvest Timing"
+  },
+  "MATH 11.56": {
+    "title": "Full Harvest-Timing Analysis for an Orchard's Timber"
+  },
+  "MATH 11.57": {
+    "title": "Combining a Private-Equity Exit Payment with a Short-Dated Side Payment"
+  },
+  "MATH 11.58": {
+    "title": "Implied Rate on a Biotech Milestone-Contingent Investment"
+  },
+  "MATH 11.59": {
+    "title": "General Harvest-Timing Formula for a Forestry Consultancy"
+  },
+  "MATH 11.60": {
+    "title": "Pricing Two Franchise Payments Related by a Common Time Horizon"
+  },
+  "MATH 11.61": {
+    "title": "Startup Revenue Growth Over Five Years"
+  },
+  "MATH 11.62": {
+    "title": "Perpetual Profit Stream from a Subscription Box Line"
+  },
+  "MATH 11.63": {
+    "title": "Declining Annual Deposits into a Sinking Fund"
+  },
+  "MATH 11.64": {
+    "title": "Lithium Reserve Depletion for a Mining Company"
+  },
+  "MATH 11.65": {
+    "title": "Coal Reserves and Declining Output"
+  },
+  "MATH 11.66": {
+    "title": "Alternating Correction Payments in a Trading Model"
+  },
+  "MATH 11.67": {
+    "title": "Equal vs. Growing Pension Contributions"
+  },
+  "MATH 11.68": {
+    "title": "Structured Settlement: Finite Payments vs. Perpetual Value"
+  },
+  "MATH 11.69": {
+    "title": "Growing Franchise Royalties Over 12 Years"
+  },
+  "MATH 11.70": {
+    "title": "Tech Company Valuation: Finite Growth Plus Terminal Perpetuity"
+  },
+  "MATH 11.71": {
+    "title": "Reverse-Engineering a Retailer's First-Month Restocking Cost"
+  },
+  "MATH 11.72": {
+    "title": "University Endowment: Sustainable Declining Payout"
+  },
+  "MATH 11.73": {
+    "title": "Marketing Budget: Solving for the Break-Point Year"
+  },
+  "MATH 11.74": {
+    "title": "Charitable Trust: A Deferred, Declining Grant Stream"
+  },
+  "MATH 11.75": {
+    "title": "Vineyard Yield: A Quarterly Decline Unit-Conversion Trap"
+  },
+  "MATH 11.76": {
+    "title": "Comparing Two Franchise Territories Over 8 Years"
+  },
+  "MATH 11.77": {
+    "title": "Diminishing Marginal Returns from Advertising Spend"
+  },
+  "MATH 11.78": {
+    "title": "Solar Farm: Revenue Growth vs. Rising Maintenance Costs"
+  },
+  "MATH 11.79": {
+    "title": "Private Equity Fund: Recession vs. Recovery Cash-Flow Scenarios"
+  },
+  "MATH 11.80": {
+    "title": "Capstone: A Three-Tranche Loan Portfolio and a Convergence Trap"
+  },
+  "MATH 11.81": {
+    "title": "Present Value of a Single Future Payment for a Bakery Equipment Fund"
+  },
+  "MATH 11.82": {
+    "title": "Future Value of a Freelancer's Present Deposit"
+  },
+  "MATH 11.83": {
+    "title": "Future Value of an Ordinary Annuity for a Dental Clinic's Equipment Fund"
+  },
+  "MATH 11.84": {
+    "title": "Future Value of an Ordinary Annuity for a Logistics Company's Fleet Fund"
+  },
+  "MATH 11.85": {
+    "title": "Present Value of an Ordinary Annuity for a Retiree's Withdrawal Plan"
+  },
+  "MATH 11.86": {
+    "title": "Present Value of an Ordinary Annuity vs. a Perpetuity for a Nonprofit Scholarship"
+  },
+  "MATH 11.87": {
+    "title": "Comparing Payment Streams via Present Value for a Machinery Purchase"
+  },
+  "MATH 11.88": {
+    "title": "Comparing Savings Strategies via Future Value for a Construction Firm"
+  },
+  "MATH 11.89": {
+    "title": "Future Value of an Annuity Due for a Gym's Equipment Upgrade Fund"
+  },
+  "MATH 11.90": {
+    "title": "Present Value of an Annuity Due for a Commercial Lease"
+  },
+  "MATH 11.91": {
+    "title": "A Deferred Perpetuity for a Philanthropist's Endowed Fund"
+  },
+  "MATH 11.92": {
+    "title": "Reverse-Engineering a Perpetual Preferred Stock's Fair Value"
+  },
+  "MATH 11.93": {
+    "title": "Combined Renovation Cost and Perpetual Maintenance Fund for a City Park"
+  },
+  "MATH 11.94": {
+    "title": "Growing Perpetuity Valuation of a Rental Property's Escalating Cash Flows"
+  },
+  "MATH 11.95": {
+    "title": "The Gordon Growth Model for a Pension Fund's Stock Valuation"
+  },
+  "MATH 11.96": {
+    "title": "Comparing Level vs. Growing Royalty-Stream Purchase Deals for a Musician"
+  },
+  "MATH 11.97": {
+    "title": "Present Value Under Continuous Compounding for a Bond Retirement Fund"
+  },
+  "MATH 11.98": {
+    "title": "Continuous-Compounding Lump Sum vs. Discrete Annuity for a Biotech Milestone"
+  },
+  "MATH 11.99": {
+    "title": "Mixed Financial Planning: Annuity Due, Continuous Compounding & Perpetuity"
+  },
+  "MATH 11.100": {
+    "title": "Capstone: A Family Office's Four-Component Windfall Allocation"
+  },
+  "MATH 11.101": {
+    "title": "Equipment Loan: Finding the Equal Annual Payment"
+  },
+  "MATH 11.102": {
+    "title": "Auto Dealership Financing with Monthly Compounding"
+  },
+  "MATH 11.103": {
+    "title": "Restaurant Renovation Loan: Tracking the Amortization Schedule"
+  },
+  "MATH 11.104": {
+    "title": "Franchise Buy-In Paid as an Annuity Due"
+  },
+  "MATH 11.105": {
+    "title": "Fixed Annual Payment on a Working-Capital Loan"
+  },
+  "MATH 11.106": {
+    "title": "Comparing Cash vs. Instalment Purchase of a Delivery Fleet"
+  },
+  "MATH 11.107": {
+    "title": "Quarterly Savings Deposits with Annual Compounding"
+  },
+  "MATH 11.108": {
+    "title": "Home Mortgage: Outstanding Balance Partway Through the Term"
+  },
+  "MATH 11.109": {
+    "title": "Fixed Repayment Schedule on a Large Equipment Loan"
+  },
+  "MATH 11.110": {
+    "title": "Capstone: Equipment Loan Paid as an Annuity Due, Plus a Separate Reserve Fund"
+  },
+  "MATH 11.111": {
+    "title": "Capstone: Comparing Three Payment Schedules for a Building Site"
+  },
+  "MATH 11.112": {
+    "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center"
+  },
+  "MATH 11.113": {
+    "title": "Capstone: Comparing Three Payment Schedules for a Cargo Vessel"
+  },
+  "MATH 11.114": {
+    "title": "A small bakery invests \\$8,000 in a new commercial oven"
+  },
+  "MATH 11.115": {
+    "title": "A logistics company spends \\$12,000 upgrading a delivery vehicle"
+  },
+  "MATH 11.116": {
+    "title": "A boutique invests \\$20,000 in inventory and point-of-sale equipment"
+  },
+  "MATH 11.117": {
+    "title": "A retailer is choosing between two one-year uses of surplus cash"
+  },
+  "MATH 11.118": {
+    "title": "A manufacturing upgrade has an initial outlay of \\$45,000"
+  },
+  "MATH 11.119": {
+    "title": "A cafe chain invests \\$34,000 in a new espresso machine line"
+  },
+  "MATH 11.120": {
+    "title": "A logistics firm spends \\$40,000 automating a warehouse process"
+  },
+  "MATH 11.121": {
+    "title": "A property developer invests \\$65,000 renovating a rental unit"
+  },
+  "MATH 11.122": {
+    "title": "Perpetuity Versus a Two-Year Stub: Comparing Internal Rates of Return"
+  },
+  "MATH 11.123": {
+    "title": "Two Solar Project Designs Compared by Internal Rate of Return and NPV"
+  },
+  "MATH 11.124": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 11.125": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 11.126": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 11.127": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 11.128": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 11.129": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 11.130": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 11.131": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 11.132": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 11.133": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 11.134": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 11.135": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 11.136": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 11.137": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 11.138": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 11.139": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 11.140": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 11.141": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 11.142": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 11.143": {
+    "title": "Exam-style tasks - 20"
+  }
+}

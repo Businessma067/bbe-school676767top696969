@@ -73,10 +73,10 @@ type Progress = {
 
 const STORAGE_KEY = "bbe.math.progress.v1";
 
-function loadProgress(): Progress {
+function loadProgress(storageKey: string = STORAGE_KEY): Progress {
   if (typeof window === "undefined") return { passed: [], revision: [] };
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return { passed: [], revision: [] };
     const p = JSON.parse(raw) as Progress;
     return { passed: p.passed ?? [], revision: p.revision ?? [] };
@@ -85,9 +85,9 @@ function loadProgress(): Progress {
   }
 }
 
-function saveProgress(p: Progress) {
+function saveProgress(p: Progress, storageKey: string = STORAGE_KEY) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  localStorage.setItem(storageKey, JSON.stringify(p));
 }
 
 function phantomCountFor(tier: MathTasksTier): number {
@@ -139,12 +139,20 @@ function prevUnlockedIdx(
 
 type Props = {
   tier: MathTasksTier;
-  backTo: string;
+  backTo?: string;
   backLabel?: string;
+  chapters?: MathChapter[];
+  loadChapterTasks?: (num: number) => Promise<MathTask[]>;
+  storageKey?: string;
 };
 
-export function MathTasksPage({ tier }: Props) {
-  const chapters = MATH_CHAPTERS;
+export function MathTasksPage({
+  tier,
+  chapters: chaptersProp,
+  loadChapterTasks = loadMathChapterTasks,
+  storageKey = STORAGE_KEY,
+}: Props) {
+  const chapters = chaptersProp ?? MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
@@ -165,8 +173,8 @@ export function MathTasksPage({ tier }: Props) {
   };
 
   useEffect(() => {
-    setProgress(loadProgress());
-  }, []);
+    setProgress(loadProgress(storageKey));
+  }, [storageKey]);
 
   /** Prefetch banks gradually so the first paint stays light. */
   useEffect(() => {
@@ -176,7 +184,7 @@ export function MathTasksPage({ tier }: Props) {
       for (const num of nums) {
         if (cancelled) return;
         try {
-          const tasks = await loadMathChapterTasks(num);
+          const tasks = await loadChapterTasks(num);
           if (cancelled) return;
           setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
         } catch {
@@ -196,7 +204,7 @@ export function MathTasksPage({ tier }: Props) {
     if (loadedTasksRef.current[num]) return;
     setLoadingChapters((prev) => (prev[num] ? prev : { ...prev, [num]: true }));
     try {
-      const tasks = await loadMathChapterTasks(num);
+      const tasks = await loadChapterTasks(num);
       setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
     } finally {
       setLoadingChapters((prev) => {
@@ -284,7 +292,7 @@ export function MathTasksPage({ tier }: Props) {
       };
       if (result.allCorrect) next.passed = [...next.passed, current.id];
       else next.revision = [...next.revision, current.id];
-      saveProgress(next);
+      saveProgress(next, storageKey);
       return next;
     });
     const chLabel =
@@ -414,7 +422,7 @@ export function MathTasksPage({ tier }: Props) {
         passed: prev.passed.filter((x) => !idSet.has(x)),
         revision: prev.revision.filter((x) => !idSet.has(x)),
       };
-      saveProgress(next);
+      saveProgress(next, storageKey);
       return next;
     });
   };

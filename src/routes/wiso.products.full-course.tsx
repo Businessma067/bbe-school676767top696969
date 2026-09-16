@@ -213,16 +213,16 @@ export function WisoFullCourseProduct() {
             <div>
               <div className="text-sm text-muted-foreground">WiSo track · German-taught</div>
               <div className="mt-1 flex items-baseline gap-2">
-                <span className="font-display text-2xl font-bold text-foreground">Coming soon</span>
+                <span className="font-display text-2xl font-bold text-foreground">Practice live</span>
                 <span className="text-sm text-muted-foreground">checkout next</span>
               </div>
             </div>
             <LocalizedLink
-              to="/wiso/demo-practice"
+              to="/wiso/products/full-course-subjects"
               className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 sm:w-auto"
               style={{ backgroundColor: INDIGO, boxShadow: `0 10px 28px -8px ${INDIGO}90` }}
             >
-              Preview WiSo demo →
+              Open WiSo subjects →
             </LocalizedLink>
           </div>
 

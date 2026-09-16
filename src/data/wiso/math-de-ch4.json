@@ -1,0 +1,704 @@
+{
+  "MATH 4.01": {
+    "title": "Five short linear claims, each a full sentence"
+  },
+  "MATH 4.02": {
+    "title": "What each inverse step leaves"
+  },
+  "MATH 4.03": {
+    "title": "A number, said in words"
+  },
+  "MATH 4.04": {
+    "title": "Brackets before isolating"
+  },
+  "MATH 4.05": {
+    "title": "Fractions that clear in one move"
+  },
+  "MATH 4.06": {
+    "title": "Short stories that close on a number"
+  },
+  "MATH 4.07": {
+    "title": "Unknowns on both sides"
+  },
+  "MATH 4.08": {
+    "title": "Two fractions, one unknown"
+  },
+  "MATH 4.09": {
+    "title": "Five closed stories"
+  },
+  "MATH 4.10": {
+    "title": "One solution, none, or every $x$"
+  },
+  "MATH 4.11": {
+    "title": "Ages, coins, and a tank that is not yet full"
+  },
+  "MATH 4.12": {
+    "title": "Runners, printers, and a train past a pole"
+  },
+  "MATH 4.13": {
+    "title": "Wire around a garden, angles in a triangle"
+  },
+  "MATH 4.14": {
+    "title": "Five separate shopping bills"
+  },
+  "MATH 4.15": {
+    "title": "Five separate percentage and dilution stories"
+  },
+  "MATH 4.16": {
+    "title": "Five separate motion and current stories"
+  },
+  "MATH 4.17": {
+    "title": "A rod, a recipe, and two-fifths of a number"
+  },
+  "MATH 4.18": {
+    "title": "Five separate fractional linear equations"
+  },
+  "MATH 4.19": {
+    "title": "Five separate wage, parts, and overtime bills"
+  },
+  "MATH 4.20": {
+    "title": "Five separate clock and time-gain stories"
+  },
+  "MATH 4.21": {
+    "title": "Five separate age and consecutive-number stories"
+  },
+  "MATH 4.22": {
+    "title": "Five separate train-passing and unit-conversion stories"
+  },
+  "MATH 4.23": {
+    "title": "Five separate mixing and alloy stories"
+  },
+  "MATH 4.24": {
+    "title": "Five separate path, average-speed, and prize stories"
+  },
+  "MATH 4.25": {
+    "title": "Five separate work-rate and leftover-work stories"
+  },
+  "MATH 4.26": {
+    "title": "Five separate two-speed journey stories"
+  },
+  "MATH 4.27": {
+    "title": "Five separate race-handicap and garrison stories"
+  },
+  "MATH 4.28": {
+    "title": "Five separate nested linear word equations"
+  },
+  "MATH 4.29": {
+    "title": "Nested remainders, reversed digits, and a delayed leak"
+  },
+  "MATH 4.30": {
+    "title": "A platform, overlapping hands, and a faster leftover fill"
+  },
+  "MATH 4.31": {
+    "title": "A reverse that is $9$ more, a current, and a geometric prize"
+  },
+  "MATH 4.32": {
+    "title": "Evaporation then a richer stock, a delayed meeting, and successive percentages"
+  },
+  "MATH 4.33": {
+    "title": "Four nested remainders, a late third pipe, and a $90\\%$ stock"
+  },
+  "MATH 4.34": {
+    "title": "Parametric Equilibrium Volume"
+  },
+  "MATH 4.35": {
+    "title": "Joint Venture Balance Price Equation"
+  },
+  "MATH 4.36": {
+    "title": "Acid Solution Mixture Optimization"
+  },
+  "MATH 4.37": {
+    "title": "Joint Audit Report Production Rates"
+  },
+  "MATH 4.38": {
+    "title": "Successive Discount Structures and Price Parity"
+  },
+  "MATH 4.39": {
+    "title": "Parameter-Dependent Linear Equation with Fractional Coefficients"
+  },
+  "MATH 4.40": {
+    "title": "Parameterized Two-Leg Transport Schedule"
+  },
+  "MATH 4.41": {
+    "title": "Parameter-Dependent Linear Systems and Solution Sets"
+  },
+  "MATH 4.42": {
+    "title": "Parametric Break-Even Equation"
+  },
+  "MATH 4.43": {
+    "title": "Parametric Linear Equation with Nested Expressions"
+  },
+  "MATH 4.44": {
+    "title": "Corporate Discretionary Budget Allocation"
+  },
+  "MATH 4.45": {
+    "title": "Sensor Calibration via Baseline Average"
+  },
+  "MATH 4.46": {
+    "title": "Linear Scale Conversion for Vendor Ratings"
+  },
+  "MATH 4.47": {
+    "title": "Break-Even Modeling Under Regulatory Shifts"
+  },
+  "MATH 4.48": {
+    "title": "Parametric Fractional Linear Equation"
+  },
+  "MATH 4.49": {
+    "title": "Reconstruction of Initial Capital via Reverse Operations"
+  },
+  "MATH 4.50": {
+    "title": "Parametric Linear Equation with Integer Solutions"
+  },
+  "MATH 4.51": {
+    "title": "Parametric Linear Capacity Model"
+  },
+  "MATH 4.52": {
+    "title": "Executive Compensation Adjustment Model"
+  },
+  "MATH 4.53": {
+    "title": "Liquid Level Equalization in Coupled Reservoirs"
+  },
+  "MATH 4.54": {
+    "title": "Parametric Linear Equation with Decimals"
+  },
+  "MATH 4.55": {
+    "title": "Regional Logistics Hub Balancing"
+  },
+  "MATH 4.56": {
+    "title": "Corporate Budget Allocation with Remainder and Policy Parameter"
+  },
+  "MATH 4.57": {
+    "title": "Perimeter Equivalence of Partitioned Storage Plots"
+  },
+  "MATH 4.58": {
+    "title": "Parametric Linear Equilibrium Model"
+  },
+  "MATH 4.59": {
+    "title": "A square of area $49$, and both signs of a square root"
+  },
+  "MATH 4.60": {
+    "title": "When a product is zero, a factor is zero"
+  },
+  "MATH 4.61": {
+    "title": "Five separate square and consecutive-integer stories"
+  },
+  "MATH 4.62": {
+    "title": "A repeated root and a discriminant of zero"
+  },
+  "MATH 4.63": {
+    "title": "Five separate Vieta claims from different quadratics"
+  },
+  "MATH 4.64": {
+    "title": "Five separate quadratic root and discriminant claims"
+  },
+  "MATH 4.65": {
+    "title": "Five separate rectangle and consecutive-integer stories"
+  },
+  "MATH 4.66": {
+    "title": "Two consecutive integers whose product is $56$"
+  },
+  "MATH 4.67": {
+    "title": "A $5$ by $12$ rectangle from area $60$"
+  },
+  "MATH 4.68": {
+    "title": "Five separate Pythagoras and factoring stories"
+  },
+  "MATH 4.69": {
+    "title": "Five separate discriminant and root-count claims"
+  },
+  "MATH 4.70": {
+    "title": "Five separate Vieta sum-and-product stories"
+  },
+  "MATH 4.71": {
+    "title": "Five separate completing-the-square and factoring claims"
+  },
+  "MATH 4.72": {
+    "title": "Five separate frame and rectangle-area stories"
+  },
+  "MATH 4.73": {
+    "title": "Five separate integer-pair product stories"
+  },
+  "MATH 4.74": {
+    "title": "Five separate rectangle-side stories"
+  },
+  "MATH 4.75": {
+    "title": "Five separate projectile and $t^{2}$ motion stories"
+  },
+  "MATH 4.76": {
+    "title": "Five separate Vieta sum-and-product stories"
+  },
+  "MATH 4.77": {
+    "title": "Five separate Pythagoras-quadratic stories"
+  },
+  "MATH 4.78": {
+    "title": "Five separate perimeter-and-area rectangle stories"
+  },
+  "MATH 4.79": {
+    "title": "Five separate age-product stories"
+  },
+  "MATH 4.80": {
+    "title": "Five separate ladder and Pythagoras stories"
+  },
+  "MATH 4.81": {
+    "title": "Five separate reciprocal-sum claims"
+  },
+  "MATH 4.82": {
+    "title": "Five separate biquadratic claims"
+  },
+  "MATH 4.83": {
+    "title": "Five separate long-rectangle stories"
+  },
+  "MATH 4.84": {
+    "title": "Five separate together-and-alone work stories"
+  },
+  "MATH 4.85": {
+    "title": "Five separate reciprocal quadratic stories"
+  },
+  "MATH 4.86": {
+    "title": "Five separate hard quadratics from different stories"
+  },
+  "MATH 4.87": {
+    "title": "An inner path, a projectile at $40$ m, and consecutive odds"
+  },
+  "MATH 4.88": {
+    "title": "A $10$-$24$-$26$ ladder, a slip, and a vertex"
+  },
+  "MATH 4.89": {
+    "title": "A $7$ hour gap, a $5$-$12$-$13$ rectangle, and the last $3$ seconds"
+  },
+  "MATH 4.90": {
+    "title": "Legs differing by $4$, a $12$-$16$-$20$ area, and an inner $24$ by $16$"
+  },
+  "MATH 4.91": {
+    "title": "Sum $15$ product $54$, a walkway, and three consecutives"
+  },
+  "MATH 4.92": {
+    "title": "Parameter-Dependent Quadratic Equation and Nature of Roots"
+  },
+  "MATH 4.93": {
+    "title": "Break-Even Quantities and Vieta Relations"
+  },
+  "MATH 4.94": {
+    "title": "Parameter Conditions for Root Signs in a Break-Even Model"
+  },
+  "MATH 4.95": {
+    "title": "Parameterized Quadratic Equation and Root Properties"
+  },
+  "MATH 4.96": {
+    "title": "Macroeconomic Parameter Model"
+  },
+  "MATH 4.97": {
+    "title": "Roots of a Parametric Biquadratic Equation"
+  },
+  "MATH 4.98": {
+    "title": "Vertex Form and Parametric Analysis of Operating Profit"
+  },
+  "MATH 4.99": {
+    "title": "Warehouse Buffer Expansion Model"
+  },
+  "MATH 4.100": {
+    "title": "Perimeter and Area of a Rectangular Depot"
+  },
+  "MATH 4.101": {
+    "title": "Parameterized Quadratic Family and Root Separation"
+  },
+  "MATH 4.102": {
+    "title": "Roots and Reciprocals of a Parameterized Quadratic Equation"
+  },
+  "MATH 4.103": {
+    "title": "Break-Even Analysis with Irrational Roots"
+  },
+  "MATH 4.104": {
+    "title": "Parametric Quadratic Family and Root Shifts"
+  },
+  "MATH 4.105": {
+    "title": "Vertical Flight Model of a Test Drone"
+  },
+  "MATH 4.106": {
+    "title": "Price-Demand Revenue Models and Quadratic Structure"
+  },
+  "MATH 4.107": {
+    "title": "Parametric Quadratic Profit Model"
+  },
+  "MATH 4.108": {
+    "title": "Reduction of a Fourth-Degree Polynomial to Quadratic Form"
+  },
+  "MATH 4.109": {
+    "title": "Reconstructing Monic Quadratics and Root Transformations"
+  },
+  "MATH 4.110": {
+    "title": "Comparing Parametric Quadratic Equations"
+  },
+  "MATH 4.111": {
+    "title": "Break-Even Output and Factorable Higher-Degree Forms"
+  },
+  "MATH 4.112": {
+    "title": "Break-Even Output and Quadratic Parameters"
+  },
+  "MATH 4.113": {
+    "title": "Consecutive Integer Stage Allocation and Quadratic Models"
+  },
+  "MATH 4.114": {
+    "title": "Parametric Analysis of a Substituted Quadratic Form"
+  },
+  "MATH 4.115": {
+    "title": "Parameterized Quadratic Equation and Root Properties"
+  },
+  "MATH 4.116": {
+    "title": "Compound Area Border Model"
+  },
+  "MATH 4.117": {
+    "title": "Five separate rational equations with a hole"
+  },
+  "MATH 4.118": {
+    "title": "Five separate rational proportions"
+  },
+  "MATH 4.119": {
+    "title": "Five separate rational hole and no-solution equations"
+  },
+  "MATH 4.120": {
+    "title": "Five separate radical stories from squares"
+  },
+  "MATH 4.121": {
+    "title": "Five independent absolute-value distance equations"
+  },
+  "MATH 4.122": {
+    "title": "Five separate packing and reciprocal stories"
+  },
+  "MATH 4.123": {
+    "title": "Five independent radical equations from square roots"
+  },
+  "MATH 4.124": {
+    "title": "Five independent square-root equations"
+  },
+  "MATH 4.125": {
+    "title": "Five separate absolute-value readings"
+  },
+  "MATH 4.126": {
+    "title": "Five separate rational equations, each with a hole"
+  },
+  "MATH 4.127": {
+    "title": "Five separate radical equations, including extras after squaring"
+  },
+  "MATH 4.128": {
+    "title": "Five separate absolute-value readings"
+  },
+  "MATH 4.129": {
+    "title": "Five radical equations with extraneous-root checks"
+  },
+  "MATH 4.130": {
+    "title": "Five distance-on-a-line claims"
+  },
+  "MATH 4.131": {
+    "title": "Five independent rational proportion equations"
+  },
+  "MATH 4.132": {
+    "title": "Five independent reciprocal equations"
+  },
+  "MATH 4.133": {
+    "title": "Five independent radical isolation equations"
+  },
+  "MATH 4.134": {
+    "title": "Five independent radical difference equations"
+  },
+  "MATH 4.135": {
+    "title": "Five further radical isolations"
+  },
+  "MATH 4.136": {
+    "title": "Five independent absolute-value equations"
+  },
+  "MATH 4.137": {
+    "title": "A reciprocal difference, a radical extra, and three more"
+  },
+  "MATH 4.138": {
+    "title": "Five independent rational difference equations"
+  },
+  "MATH 4.139": {
+    "title": "A $2$ m isolate-and-square gap, posts $1$ and $7$, and a radical extra"
+  },
+  "MATH 4.140": {
+    "title": "A sum of two roots equal to $9$, three regions, and a $1$ m gap"
+  },
+  "MATH 4.141": {
+    "title": "A $1$ m radical gap, a two-modulus sum, and a cancelled hole"
+  },
+  "MATH 4.142": {
+    "title": "A sum of roots equal to $7$, equal abs-values, and a two-fraction mix"
+  },
+  "MATH 4.143": {
+    "title": "A $2$ m gap recovering $25$, posts adding to $12$, and $\\sqrt{5x + 1}$"
+  },
+  "MATH 4.144": {
+    "title": "Solvability of a Rational Equation"
+  },
+  "MATH 4.145": {
+    "title": "Rational Equation with Denominator Clearing"
+  },
+  "MATH 4.146": {
+    "title": "Radical Equilibrium Equation and Extraneous Roots"
+  },
+  "MATH 4.147": {
+    "title": "Radical Equation with Extraneous Roots"
+  },
+  "MATH 4.148": {
+    "title": "Absolute-Value Equation with Case Analysis"
+  },
+  "MATH 4.149": {
+    "title": "Absolute Value Equation with a Linear Right-Hand Side"
+  },
+  "MATH 4.150": {
+    "title": "Analysis of a Nested Absolute Value Equation"
+  },
+  "MATH 4.151": {
+    "title": "Parametric Rational Equation Reducible to Linear"
+  },
+  "MATH 4.152": {
+    "title": "Radical Equation via Quadratic Substitution"
+  },
+  "MATH 4.153": {
+    "title": "Parametric Rational Equation and Extraneous Roots"
+  },
+  "MATH 4.154": {
+    "title": "Cube-Root Radical Equation Analysis"
+  },
+  "MATH 4.155": {
+    "title": "Solvability and Extraneous Roots of a Radical Equation"
+  },
+  "MATH 4.156": {
+    "title": "Solvability of a Multi-Absolute-Value Equation"
+  },
+  "MATH 4.157": {
+    "title": "Data Pipeline Work-Rate and Equation Models"
+  },
+  "MATH 4.158": {
+    "title": "Flow Rate Regulation in Coolant Networks"
+  },
+  "MATH 4.159": {
+    "title": "Rational Equation with Squared Denominator and Absolute Value"
+  },
+  "MATH 4.160": {
+    "title": "Rational Equation with Factorisable Denominators"
+  },
+  "MATH 4.161": {
+    "title": "Rational Equation with Absolute Value"
+  },
+  "MATH 4.162": {
+    "title": "Cost-Recovery Radical Equation"
+  },
+  "MATH 4.163": {
+    "title": "Solvability and Domain Restrictions of an Algebraic Equation"
+  },
+  "MATH 4.164": {
+    "title": "Rational Equation and Structural Variations"
+  },
+  "MATH 4.165": {
+    "title": "Round-Trip Average Speed and Algebraic Equation Forms"
+  },
+  "MATH 4.166": {
+    "title": "Radical Break-Even Equation"
+  },
+  "MATH 4.167": {
+    "title": "Symmetric Solutions of an Absolute-Value Equation"
+  },
+  "MATH 4.168": {
+    "title": "Solvability and Extraneous Roots of a Radical Equation"
+  },
+  "MATH 4.169": {
+    "title": "A quadratic hidden behind base three"
+  },
+  "MATH 4.170": {
+    "title": "A quadratic in the logarithm itself"
+  },
+  "MATH 4.171": {
+    "title": "Different bases on the two sides"
+  },
+  "MATH 4.172": {
+    "title": "An exponential term and its reciprocal"
+  },
+  "MATH 4.173": {
+    "title": "Domain decides the answer"
+  },
+  "MATH 4.174": {
+    "title": "A sum of logarithms with an extraneous candidate"
+  },
+  "MATH 4.175": {
+    "title": "Doubling a capital at a fixed rate"
+  },
+  "MATH 4.176": {
+    "title": "A substance losing five percent a year"
+  },
+  "MATH 4.177": {
+    "title": "A culture that triples every four hours"
+  },
+  "MATH 4.178": {
+    "title": "A quadratic hidden behind base two"
+  },
+  "MATH 4.179": {
+    "title": "A quadratic hidden behind base three"
+  },
+  "MATH 4.180": {
+    "title": "An extraneous candidate in a logarithmic equation"
+  },
+  "MATH 4.181": {
+    "title": "Two logarithms with related bases"
+  },
+  "MATH 4.182": {
+    "title": "A rational equation with a factored denominator"
+  },
+  "MATH 4.183": {
+    "title": "A small exponential system"
+  },
+  "MATH 4.184": {
+    "title": "Bounds on solutions of composite logarithmic equations"
+  },
+  "MATH 4.185": {
+    "title": "A radical equation and its hidden condition"
+  },
+  "MATH 4.186": {
+    "title": "An absolute value on one side of the equation"
+  },
+  "MATH 4.187": {
+    "title": "When does the smaller fund overtake the bigger one"
+  },
+  "MATH 4.188": {
+    "title": "A logarithmic equation with a parameter"
+  },
+  "MATH 4.189": {
+    "title": "A linear equation controlled by a parameter"
+  },
+  "MATH 4.190": {
+    "title": "Discriminant and root relations with a parameter"
+  },
+  "MATH 4.191": {
+    "title": "Composite decadic equations under pressure"
+  },
+  "MATH 4.192": {
+    "title": "When an exponential equation has no solution at all"
+  },
+  "MATH 4.193": {
+    "title": "A logarithm of a quadratic expression"
+  },
+  "MATH 4.194": {
+    "title": "Exam-style tasks - 1"
+  },
+  "MATH 4.195": {
+    "title": "Exam-style tasks - 2"
+  },
+  "MATH 4.196": {
+    "title": "Exam-style tasks - 3"
+  },
+  "MATH 4.197": {
+    "title": "Exam-style tasks - 4"
+  },
+  "MATH 4.198": {
+    "title": "Exam-style tasks - 5"
+  },
+  "MATH 4.199": {
+    "title": "Exam-style tasks - 6"
+  },
+  "MATH 4.200": {
+    "title": "Exam-style tasks - 7"
+  },
+  "MATH 4.201": {
+    "title": "Exam-style tasks - 8"
+  },
+  "MATH 4.202": {
+    "title": "Exam-style tasks - 9"
+  },
+  "MATH 4.203": {
+    "title": "Exam-style tasks - 10"
+  },
+  "MATH 4.204": {
+    "title": "Exam-style tasks - 11"
+  },
+  "MATH 4.205": {
+    "title": "Exam-style tasks - 12"
+  },
+  "MATH 4.206": {
+    "title": "Exam-style tasks - 13"
+  },
+  "MATH 4.207": {
+    "title": "Exam-style tasks - 14"
+  },
+  "MATH 4.208": {
+    "title": "Exam-style tasks - 15"
+  },
+  "MATH 4.209": {
+    "title": "Exam-style tasks - 16"
+  },
+  "MATH 4.210": {
+    "title": "Exam-style tasks - 17"
+  },
+  "MATH 4.211": {
+    "title": "Exam-style tasks - 18"
+  },
+  "MATH 4.212": {
+    "title": "Exam-style tasks - 19"
+  },
+  "MATH 4.213": {
+    "title": "Exam-style tasks - 20"
+  },
+  "MATH 4.214": {
+    "title": "Exam-style tasks - 21"
+  },
+  "MATH 4.215": {
+    "title": "Exam-style tasks - 22"
+  },
+  "MATH 4.216": {
+    "title": "Exam-style tasks - 23"
+  },
+  "MATH 4.217": {
+    "title": "Exam-style tasks - 24"
+  },
+  "MATH 4.218": {
+    "title": "Exam-style tasks - 25"
+  },
+  "MATH 4.219": {
+    "title": "Exam-style tasks - 26"
+  },
+  "MATH 4.220": {
+    "title": "Exam-style tasks - 27"
+  },
+  "MATH 4.221": {
+    "title": "Exam-style tasks - 28"
+  },
+  "MATH 4.222": {
+    "title": "Exam-style tasks - 29"
+  },
+  "MATH 4.223": {
+    "title": "Exam-style tasks - 30"
+  },
+  "MATH 4.224": {
+    "title": "Exam-style tasks - 31"
+  },
+  "MATH 4.225": {
+    "title": "Exam-style tasks - 32"
+  },
+  "MATH 4.226": {
+    "title": "Exam-style tasks - 33"
+  },
+  "MATH 4.227": {
+    "title": "Exam-style tasks - 34"
+  },
+  "MATH 4.228": {
+    "title": "Exam-style tasks - 35"
+  },
+  "MATH 4.229": {
+    "title": "Exam-style tasks - 36"
+  },
+  "MATH 4.230": {
+    "title": "Exam-style tasks - 37"
+  },
+  "MATH 4.231": {
+    "title": "Exam-style tasks - 38"
+  },
+  "MATH 4.232": {
+    "title": "Exam-style tasks - 39"
+  },
+  "MATH 4.233": {
+    "title": "Exam-style tasks - 40"
+  },
+  "MATH 4.234": {
+    "title": "Exam-style tasks - 41"
+  }
+}
