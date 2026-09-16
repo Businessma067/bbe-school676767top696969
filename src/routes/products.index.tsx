@@ -9,7 +9,7 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Local remakes served from public/ (avoids stale Lovable CDN assets). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
-const WISO_COURSE_IMAGE = "/full-wiso-course-product-v2.png";
+const WISO_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const LITE_COURSE_IMAGE = "/lite-bbe-course-v2.png";
 const DEMO_COURSE_IMAGE = "/demo-practice-product-v2.png";
 
