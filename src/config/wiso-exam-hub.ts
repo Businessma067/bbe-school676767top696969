@@ -47,6 +47,9 @@ export const WISO_PRACTICE_ROUTES = {
   flashcards: "/wiso/flashcards",
   products: "/wiso/products",
   fullCourse: "/wiso/products/full-course",
+  subjects: "/wiso/products/full-course-subjects",
+  math: "/wiso/products/full-course-math",
+  economics: "/wiso/products/full-course-economics",
   home: "/wiso",
 } as const;
 

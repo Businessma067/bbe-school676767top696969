@@ -6,6 +6,7 @@ import { SITE_ORIGIN } from "@/lib/i18n/locale-path";
 
 /** Product hero remakes in public/ — prefer over Lovable CDN asset URLs. */
 const FULL_COURSE_PRODUCT_IMAGE = "/full-course-product-v2.png";
+const WISO_COURSE_PRODUCT_IMAGE = "/full-wiso-course-product-v2.png";
 const LITE_COURSE_PRODUCT_IMAGE = "/lite-bbe-course-v2.png";
 const DEMO_COURSE_PRODUCT_IMAGE = "/demo-practice-product-v2.png";
 
@@ -56,6 +57,18 @@ export const PAGE_SOCIAL_IMAGES: Record<string, string> = {
   "/demo-practice/economics": absoluteMediaUrl(economicsAsset.url),
   "/demo-practice/math": absoluteMediaUrl("/how-it-works/math-poster.jpg"),
   "/demo-practice/english": absoluteMediaUrl("/how-it-works/english-poster.jpg"),
+  // WiSo marketing / hub share images
+  "/wiso": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/entrance-exam": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/exam-scoring": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/mathematics": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/economics-german": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/exam-preparation": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/admission": WU_CAMPUS_SOCIAL_IMAGE,
+  "/wiso/wu-vienna": absoluteMediaUrl("/wu-vienna/campus-plaza.jpg"),
+  "/wiso/products": absoluteMediaUrl(WISO_COURSE_PRODUCT_IMAGE),
+  "/wiso/products/full-course": absoluteMediaUrl(WISO_COURSE_PRODUCT_IMAGE),
+  "/wiso/demo-practice": absoluteMediaUrl(WISO_COURSE_PRODUCT_IMAGE),
 };
 
 export function socialImageMetaForPath(pathname: string) {
