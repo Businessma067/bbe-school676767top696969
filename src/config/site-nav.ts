@@ -189,6 +189,19 @@ function gamesItem(track: ExamTrack): NavItem {
       };
 }
 
+/** Chooser homepage (`/`) — short header set pointing at shared pages. */
+export function homepageNavItems(): NavItem[] {
+  return [
+    {
+      label: "WiSo oder BBE",
+      href: "/bbe-vs-wiso",
+      isRoute: true,
+      activePrefixes: ["/bbe-vs-wiso"],
+    },
+    productsItem("bbe"),
+  ];
+}
+
 export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {
   return [
     examInfoItem(track),
