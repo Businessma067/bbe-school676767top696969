@@ -9,6 +9,7 @@ import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Local remakes served from public/ (avoids stale Lovable CDN assets). */
 const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
+const WISO_COURSE_IMAGE = "/full-wiso-course-product-v2.png";
 const LITE_COURSE_IMAGE = "/lite-bbe-course-v2.png";
 const DEMO_COURSE_IMAGE = "/demo-practice-product-v2.png";
 
@@ -139,7 +140,7 @@ const products: Product[] = [
   },
   {
     title: "Full WiSo Course",
-    image: FULL_COURSE_IMAGE,
+    image: WISO_COURSE_IMAGE,
     description:
       "WiSo-track prep: Wirtschaft verstehen economics, mathematics, and German reading comprehension — on dedicated /wiso URLs, visually distinct from BBE.",
     cta: "View WiSo course",
@@ -192,7 +193,6 @@ export function ProductsPage() {
               const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
               const accentColor = p.accent === "wiso" ? INDIGO : ORANGE;
-              const isWiso = p.accent === "wiso";
 
               return (
                 <div
@@ -222,19 +222,14 @@ export function ProductsPage() {
                   <div
                     className={`relative aspect-[4/3] w-full overflow-hidden bg-secondary ${
                       p.badge ? "rounded-t-[14px]" : "rounded-t-2xl"
-                    } ${isWiso ? "bg-gradient-to-br from-indigo-800 to-indigo-950" : ""}`}
+                    }`}
                   >
                     <img
                       src={p.image}
                       alt={p.title}
                       loading="lazy"
-                      className={`absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03] ${
-                        isWiso ? "opacity-75 mix-blend-luminosity" : ""
-                      }`}
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                     />
-                    {isWiso ? (
-                      <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/85 to-indigo-900/20" />
-                    ) : null}
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h2 className="font-display text-xl font-semibold text-foreground">{p.title}</h2>

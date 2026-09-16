@@ -167,67 +167,6 @@ export function BbeLandingPage() {
           </div>
         </section>
 
-        {/* PARENTS — a frank audit teaser */}
-        <section className="relative bg-background px-6 py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-3xl">
-            <div className="text-center">
-              <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-                A Frank Audit for Parents:
-                <br />
-                <span className="text-muted-foreground">The Real Cost of WU Vienna Admission</span>
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Before choosing a preparation strategy, look at what your child is actually walking
-                into at WU Vienna, and what a wrong plan costs the family in real euros.
-              </p>
-            </div>
-
-            <div className="relative mt-8">
-              <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
-                <p>
-                  The mandatory in-person BBE entrance exam at WU Vienna is not a regular school
-                  test. It is a filtering conveyor. A massive convention hall, more than 3000
-                  applicants from around the world, echoing announcements, and exactly 240 seats on
-                  the other side of the door. That is over 12 candidates competing for a single
-                  desk.
-                </p>
-                <p>
-                  The volume of competitors is not even the hardest part. The real difficulty is
-                  buried in the structural rules the university uses to break the field. Your child
-                  gets less than a minute per statement to scan a dense English passage or work
-                  through a data-sufficiency style problem entirely in their head. And at WU Vienna
-                  a wrong answer does not just score zero. The computer actively subtracts points
-                  from what the student got right elsewhere.
-                </p>
-              </div>
-
-              {/* Fading overlay starting at the second paragraph */}
-              <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-background/85 to-background" />
-
-              <div className="relative z-10 flex justify-center py-4">
-                <LocalizedLink
-                  to="/parents"
-                  className="group inline-flex flex-col items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
-                  <span>Read the full letter</span>
-                  <svg
-                    className="h-4 w-4 animate-bounce"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </LocalizedLink>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* PARALLAX BAND #2 */}
         <section
           className="relative bg-scroll"
