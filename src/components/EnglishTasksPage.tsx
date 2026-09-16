@@ -48,12 +48,12 @@ import {
 
 type Progress = { passed: string[]; revision: string[] };
 
-const STORAGE_KEY = "bbe.english.course.progress.v1";
+const DEFAULT_STORAGE_KEY = "bbe.english.course.progress.v1";
 
-function loadProgress(): Progress {
+function loadProgress(storageKey: string): Progress {
   if (typeof window === "undefined") return { passed: [], revision: [] };
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return { passed: [], revision: [] };
     const p = JSON.parse(raw) as Progress;
     return { passed: p.passed ?? [], revision: p.revision ?? [] };
@@ -62,9 +62,9 @@ function loadProgress(): Progress {
   }
 }
 
-function saveProgress(p: Progress) {
+function saveProgress(storageKey: string, p: Progress) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  localStorage.setItem(storageKey, JSON.stringify(p));
 }
 
 function freeLimitOf(tier: EnglishTasksTier): number {
@@ -80,6 +80,12 @@ type Props = {
   tier: EnglishTasksTier;
   backTo: string;
   backLabel?: string;
+  /** Override chapter bank (e.g. WiSo German texts). Defaults to BBE English. */
+  chapters?: EnglishChapter[];
+  storageKey?: string;
+  /** Shown in practice-case labels, e.g. "English" or "Deutsch". */
+  subjectLabel?: string;
+  emptyHint?: ReactNode;
 };
 
 type ExplanationState = {
@@ -91,14 +97,28 @@ type ExplanationState = {
   highlight: string;
 };
 
-export function EnglishTasksPage({ tier }: Props) {
-  const chapters = useMemo(() => englishChaptersForTier(tier), [tier]);
+export function EnglishTasksPage({
+  tier,
+  chapters: chaptersProp,
+  storageKey = DEFAULT_STORAGE_KEY,
+  subjectLabel = "English",
+  emptyHint = (
+    <>
+      Tap <span className="font-semibold text-foreground">Chapters</span> above to browse English
+      tasks for the WU BBE exam.
+    </>
+  ),
+}: Props) {
+  const chapters = useMemo(
+    () => chaptersProp ?? englishChaptersForTier(tier),
+    [chaptersProp, tier],
+  );
   const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
     null,
   );
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
-  const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const [progress, setProgress] = useState<Progress>(() => loadProgress(storageKey));
   const [expanded, setExpanded] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(chapters.map((c) => [c.key, false])),
   );
@@ -210,7 +230,7 @@ export function EnglishTasksPage({ tier }: Props) {
       setPracticeCase({
         subject: "english",
         chapterLabel:
-          activeChapter === "revision" ? "Revision" : `English · ${chapterTitle}`,
+          activeChapter === "revision" ? "Revision" : `${subjectLabel} · ${chapterTitle}`,
         taskId: activeCase.id,
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: stem || activeCase.context,
@@ -228,6 +248,7 @@ export function EnglishTasksPage({ tier }: Props) {
     activeIdx,
     activePassage,
     chapters,
+    subjectLabel,
     tier,
     setPracticeCase,
   ]);
@@ -240,7 +261,7 @@ export function EnglishTasksPage({ tier }: Props) {
         passed: prev.passed.filter((x) => !idSet.has(x)),
         revision: prev.revision.filter((x) => !idSet.has(x)),
       };
-      saveProgress(next);
+      saveProgress(storageKey, next);
       return next;
     });
   };
@@ -262,7 +283,7 @@ export function EnglishTasksPage({ tier }: Props) {
         passed.delete(id);
       }
       const next = { passed: [...passed], revision: [...revision] };
-      saveProgress(next);
+      saveProgress(storageKey, next);
       return next;
     });
   };
@@ -698,8 +719,7 @@ export function EnglishTasksPage({ tier }: Props) {
                 </div>
                 <h2 className="font-display text-xl font-bold">Pick a chapter</h2>
                 <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                  Tap <span className="font-semibold text-foreground">Chapters</span> above to browse
-                  English tasks for the WU BBE exam.
+                  {emptyHint}
                 </p>
               </div>
             )}

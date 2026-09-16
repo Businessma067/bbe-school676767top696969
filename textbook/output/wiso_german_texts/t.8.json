@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.8",
+    "title": "Fachkräftemangel, Zuwanderung und der deutsche Arbeitsmarkt",
+    "passage": "(1) Kaum ein wirtschaftspolitisches Schlagwort hat in Deutschland zuletzt so viel Aufmerksamkeit erhalten wie der Fachkräftemangel. Handwerksbetriebe berichten von unbesetzten Lehrstellen, Kliniken von geschlossenen Stationen, Kommunen von fehlenden Erzieherinnen und Erziehern. Die Bundesagentur für Arbeit führt regelmäßig eine Engpassanalyse durch, die Berufe identifiziert, in denen Stellen deutlich länger unbesetzt bleiben als im Durchschnitt; Pflege, Bauhandwerk, Elektrotechnik und Informatik stehen dort seit Jahren.\n\n(2) Der Kern des Problems ist demografisch. Die geburtenstarken Jahrgänge der 1950er- und 1960er-Jahre erreichen das Rentenalter, während die nachrückenden Kohorten deutlich kleiner sind. Berechnungen des Instituts für Arbeitsmarkt- und Berufsforschung gehen davon aus, dass das Erwerbspersonenpotenzial ohne Zuwanderung bis 2035 um mehrere Millionen Menschen schrumpfen würde. Zugleich steigt die Zahl der Pflegebedürftigen, also gerade jene Nachfrage, die besonders personalintensiv ist.\n\n(3) Zuwanderung gilt deshalb vielen als naheliegende Antwort. Deutschland reformierte 2023 sein Fachkräfteeinwanderungsgesetz und führte unter anderem eine sogenannte Chancenkarte nach Punkten ein, die Qualifikation, Sprachkenntnisse, Berufserfahrung und Alter gewichtet. Erklärtes Ziel war es, jährlich rund vierhunderttausend Zuwanderende zu gewinnen, eine Größenordnung, die in der öffentlichen Debatte häufig als Maßstab genannt wird.\n\n(4) Ob Gesetze reichen, ist umstritten. Kritikerinnen und Kritiker verweisen auf die Verfahren: Die Anerkennung ausländischer Abschlüsse dauert in vielen Bundesländern Monate, Zuständigkeiten sind auf Kammern, Landesbehörden und Auslandsvertretungen verteilt, und Termine in den Konsulaten sind knapp. Eine Reform, die auf dem Papier öffnet, in der Verwaltung aber bremst, verändert die tatsächliche Zuwanderung wenig.\n\n(5) Hinzu kommt der internationale Wettbewerb um dieselben Menschen. Kanada und Australien werben seit Jahrzehnten mit transparenten Punktesystemen, zügigen Verfahren und einer klaren Perspektive auf dauerhaften Aufenthalt. Deutschland konkurriert mit einer Sprache, die außerhalb Europas selten gelernt wird, und mit dem Ruf besonderer bürokratischer Komplexität. Umfragen unter internationalen Fachkräften nennen regelmäßig Bürokratie, Wohnungsmarkt und Erfahrungen mit Diskriminierung als Gründe, das Land wieder zu verlassen.\n\n(6) Andere Stimmen bestreiten die Diagnose in ihrer üblichen Form. Wenn Arbeitskräfte tatsächlich knapp wären, müssten die Löhne in den betroffenen Berufen kräftig steigen; in Teilen der Pflege und der Gastronomie geschah das lange nur begrenzt. Aus dieser Sicht geht es weniger um einen Mangel an Menschen als um einen Mangel an attraktiven Arbeitsbedingungen. Verwiesen wird auf die hohe Zahl von Teilzeitbeschäftigten in der Pflege und auf Ausgebildete, die den Beruf nach wenigen Jahren verlassen.\n\n(7) Ein weiterer Einwand betrifft die Binnenreserven. Die Erwerbsbeteiligung von Frauen ist in Deutschland hoch, gemessen in geleisteten Stunden jedoch deutlich niedriger als etwa in Schweden, was auf Betreuungsangebote und Steuerregeln zurückgeführt wird. Auch die Beschäftigungsquote Älterer und die Qualifizierung von Geringqualifizierten gelten als unausgeschöpft. Befürworterinnen der Zuwanderung halten dem entgegen, dass diese Reserven zwar real, aber zu klein und zu langsam aktivierbar seien, um die demografische Lücke allein zu schließen.\n\n(8) Schließlich stellt sich die Verteilungsfrage. Zuwanderung entlastet Betriebe und Sozialkassen, belastet aber Wohnungsmärkte, Schulen und Kitas, wenn der Ausbau nicht mitgeplant wird. Die Erfahrung mit der Aufnahme großer Gruppen seit 2015 zeigt beides: Die Beschäftigungsquote der damals Geflüchteten stieg über die Jahre deutlich, während Integration in angespannten Ballungsräumen sichtbar schwerer gelang als in Regionen mit freien Kapazitäten.\n\n(9) Der Fachkräftemangel ist damit kein einzelnes Problem, sondern ein Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur. Wer ihn allein über Einwanderungsrecht lösen will, unterschätzt die Verfahren und die Konkurrenz; wer allein auf bessere Löhne setzt, unterschätzt die Demografie. Welche Mischung politisch mehrheitsfähig ist und ob sie schnell genug kommt, bevor die geburtenstarken Jahrgänge vollständig ausgeschieden sind, bleibt offen.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-8-01",
+      "case_id": "DE T.8.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das Verständnis der Ausgangsdiagnose, der demografischen Lage und der gesetzlichen Reform.",
+      "kind": "reading",
+      "statements": [
+        "Die Engpassanalyse identifiziert Berufe, in denen Stellen deutlich länger unbesetzt bleiben als im Durchschnitt.",
+        "Laut Text sind die nachrückenden Kohorten größer als die geburtenstarken Jahrgänge der 1950er- und 1960er-Jahre.",
+        "Ohne Zuwanderung würde das Erwerbspersonenpotenzial laut den zitierten Berechnungen bis 2035 um mehrere Millionen Menschen schrumpfen.",
+        "Deutschland reformierte sein Fachkräfteeinwanderungsgesetz dem Text zufolge im Jahr 2023.",
+        "Die Chancenkarte wird laut Text unabhängig von Qualifikation und Sprachkenntnissen vergeben."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Engpassanalyse identifiziert Berufe, in denen Stellen deutlich länger unbesetzt bleiben als im Durchschnitt.**\n\nAbsatz 1 beschreibt die Analyse der Bundesagentur genau so, nämlich als Suche nach Berufen, „in denen Stellen deutlich länger unbesetzt bleiben als im Durchschnitt“.\n\nDie Aussage übernimmt diese Definition, ohne sie zu erweitern.\n\nDie Aussage trifft den Text.",
+        "**B) Laut Text sind die nachrückenden Kohorten größer als die geburtenstarken Jahrgänge der 1950er- und 1960er-Jahre.**\n\nAbsatz 2 sagt das Gegenteil: Die Älteren erreichen das Rentenalter, „während die nachrückenden Kohorten deutlich kleiner sind“.\n\nGenau dieses Größenverhältnis erzeugt im Text überhaupt erst die demografische Lücke.\n\nDie Aussage scheitert an der umgekehrten Relation.",
+        "**C) Ohne Zuwanderung würde das Erwerbspersonenpotenzial laut den zitierten Berechnungen bis 2035 um mehrere Millionen Menschen schrumpfen.**\n\nAbsatz 2 gibt die Berechnungen des Instituts für Arbeitsmarkt- und Berufsforschung mit genau dieser Größenordnung wieder.\n\nDie Aussage behält die Bedingung „ohne Zuwanderung“ bei und macht daraus keine Prognose für jeden Fall.\n\nDie Aussage entspricht dem Text.",
+        "**D) Deutschland reformierte sein Fachkräfteeinwanderungsgesetz dem Text zufolge im Jahr 2023.**\n\nAbsatz 3 datiert die Reform ausdrücklich: „Deutschland reformierte 2023 sein Fachkräfteeinwanderungsgesetz“.\n\nDie Aussage gibt das Jahr korrekt wieder.\n\nDie Aussage trifft den Text.",
+        "**E) Die Chancenkarte wird laut Text unabhängig von Qualifikation und Sprachkenntnissen vergeben.**\n\nAbsatz 3 beschreibt sie als Punktesystem, „die Qualifikation, Sprachkenntnisse, Berufserfahrung und Alter gewichtet“.\n\nDie Aussage streicht damit genau die Kriterien, die das Instrument ausmachen.\n\n**Falle:** „Nach Punkten“ heißt nicht voraussetzungslos, sondern nach gewichteten Merkmalen.\n\nDie Aussage scheitert an der Beschreibung in Absatz 3."
+      ],
+      "highlights": [
+        "in denen Stellen deutlich länger unbesetzt bleiben als im Durchschnitt",
+        "während die nachrückenden Kohorten deutlich kleiner sind",
+        "dass das Erwerbspersonenpotenzial ohne Zuwanderung bis 2035 um mehrere Millionen Menschen schrumpfen würde",
+        "Deutschland reformierte 2023 sein Fachkräfteeinwanderungsgesetz",
+        "die Qualifikation, Sprachkenntnisse, Berufserfahrung und Alter gewichtet"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-02",
+      "case_id": "DE T.8.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen die Kritik an Verfahren, den internationalen Wettbewerb und die Gegenthese zur Diagnose.",
+      "kind": "reading",
+      "statements": [
+        "Kritikerinnen und Kritiker bemängeln, dass die Anerkennung ausländischer Abschlüsse in vielen Bundesländern Monate dauert.",
+        "Der Text hält es für unerheblich, ob eine Reform in der Verwaltung tatsächlich umgesetzt wird.",
+        "Kanada und Australien werben laut Text seit Jahrzehnten mit transparenten Punktesystemen.",
+        "Wer die Diagnose bestreitet, argumentiert, bei echter Knappheit müssten die Löhne in den betroffenen Berufen kräftig steigen.",
+        "Der Text berichtet, in Teilen der Pflege und der Gastronomie seien die Löhne lange kräftig gestiegen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Kritikerinnen und Kritiker bemängeln, dass die Anerkennung ausländischer Abschlüsse in vielen Bundesländern Monate dauert.**\n\nAbsatz 4 führt genau diesen Punkt als erstes Verfahrensproblem an: „Die Anerkennung ausländischer Abschlüsse dauert in vielen Bundesländern Monate“.\n\nDie Aussage gibt Urheber und Inhalt der Kritik korrekt wieder.\n\nDie Aussage trifft den Text.",
+        "**B) Der Text hält es für unerheblich, ob eine Reform in der Verwaltung tatsächlich umgesetzt wird.**\n\nAbsatz 4 endet mit dem Gegenteil: „Eine Reform, die auf dem Papier öffnet, in der Verwaltung aber bremst“, verändert die tatsächliche Zuwanderung wenig.\n\nDie Umsetzung ist damit im Text der entscheidende Punkt, nicht eine Nebensache.\n\nDie Aussage scheitert.",
+        "**C) Kanada und Australien werben laut Text seit Jahrzehnten mit transparenten Punktesystemen.**\n\nAbsatz 5 nennt beide Länder mit Punktesystemen, zügigen Verfahren und einer Perspektive auf dauerhaften Aufenthalt.\n\nDie Aussage übernimmt diese Angabe unverändert.\n\nDie Aussage entspricht dem Text.",
+        "**D) Wer die Diagnose bestreitet, argumentiert, bei echter Knappheit müssten die Löhne in den betroffenen Berufen kräftig steigen.**\n\nAbsatz 6 formuliert genau dieses Preisargument: Bei tatsächlicher Knappheit „müssten die Löhne in den betroffenen Berufen kräftig steigen“.\n\nDie Aussage ordnet das Argument der richtigen Seite zu.\n\nDie Aussage trifft den Text.",
+        "**E) Der Text berichtet, in Teilen der Pflege und der Gastronomie seien die Löhne lange kräftig gestiegen.**\n\nAbsatz 6 sagt, dort „geschah das lange nur begrenzt“, und zieht daraus die Gegenthese.\n\nEin kräftiger Anstieg würde das Argument des Absatzes aufheben statt stützen.\n\nDie Aussage scheitert an dieser Umkehrung."
+      ],
+      "highlights": [
+        "Die Anerkennung ausländischer Abschlüsse dauert in vielen Bundesländern Monate",
+        "Eine Reform, die auf dem Papier öffnet, in der Verwaltung aber bremst",
+        "Kanada und Australien werben seit Jahrzehnten mit transparenten Punktesystemen",
+        "müssten die Löhne in den betroffenen Berufen kräftig steigen",
+        "geschah das lange nur begrenzt"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 2,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-03",
+      "case_id": "DE T.8.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen die Debatte um Binnenreserven, die Verteilungsfrage und den offenen Schluss.",
+      "kind": "reading",
+      "statements": [
+        "Die Erwerbsbeteiligung von Frauen ist in Deutschland laut Text hoch, in geleisteten Stunden aber niedriger als etwa in Schweden.",
+        "Befürworterinnen der Zuwanderung bestreiten laut Text, dass es überhaupt Binnenreserven gibt.",
+        "Die Integration gelang laut Text in angespannten Ballungsräumen schwerer als in Regionen mit freien Kapazitäten.",
+        "Der Schlussabsatz benennt das Einwanderungsrecht als allein ausreichendes Instrument.",
+        "Der Text beschreibt den Fachkräftemangel als Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Die Erwerbsbeteiligung von Frauen ist in Deutschland laut Text hoch, in geleisteten Stunden aber niedriger als etwa in Schweden.**\n\nAbsatz 7 unterscheidet genau diese beiden Messgrößen: hohe Beteiligung, „gemessen in geleisteten Stunden jedoch deutlich niedriger als etwa in Schweden“.\n\nDie Aussage behält beide Hälften der Unterscheidung bei.\n\nDie Aussage trifft den Text.",
+        "**B) Befürworterinnen der Zuwanderung bestreiten laut Text, dass es überhaupt Binnenreserven gibt.**\n\nAbsatz 7 lässt sie ausdrücklich einräumen, „dass diese Reserven zwar real, aber zu klein und zu langsam aktivierbar seien“.\n\nDie Aussage macht aus einem Einräumen ein Bestreiten und verschärft die Position.\n\n**Tipp:** Achte auf Konstruktionen mit „zwar … aber“; dort wird eine Position eingeräumt, nicht verworfen.\n\nDie Aussage scheitert an dieser Zuspitzung.",
+        "**C) Die Integration gelang laut Text in angespannten Ballungsräumen schwerer als in Regionen mit freien Kapazitäten.**\n\nAbsatz 8 formuliert diesen Unterschied wörtlich als Teil der Erfahrung seit 2015.\n\nDie Aussage gibt die Richtung des Vergleichs korrekt wieder.\n\nDie Aussage entspricht dem Text.",
+        "**D) Der Schlussabsatz benennt das Einwanderungsrecht als allein ausreichendes Instrument.**\n\nAbsatz 9 sagt das Gegenteil: „Wer ihn allein über Einwanderungsrecht lösen will, unterschätzt die Verfahren und die Konkurrenz.“\n\nDie Aussage macht aus einer Warnung vor Einseitigkeit eine Empfehlung dafür.\n\nDie Aussage scheitert.",
+        "**E) Der Text beschreibt den Fachkräftemangel als Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur.**\n\nAbsatz 9 fasst genau diese vier Ebenen zusammen: „kein einzelnes Problem, sondern ein Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur“.\n\nDie Aussage zitiert diese Bündelung sinngemäß.\n\nDie Aussage trifft den Text."
+      ],
+      "highlights": [
+        "gemessen in geleisteten Stunden jedoch deutlich niedriger als etwa in Schweden",
+        "dass diese Reserven zwar real, aber zu klein und zu langsam aktivierbar seien",
+        "in angespannten Ballungsräumen sichtbar schwerer gelang als in Regionen mit freien Kapazitäten",
+        "Wer ihn allein über Einwanderungsrecht lösen will, unterschätzt die Verfahren und die Konkurrenz",
+        "kein einzelnes Problem, sondern ein Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-04",
+      "case_id": "DE T.8.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen verlangen Inferenzen und die Deutung zentraler Formulierungen im Kontext.",
+      "kind": "reading",
+      "statements": [
+        "„Binnenreserven“ meint im Kontext bereits im Land vorhandenes, aber nicht voll genutztes Arbeitskräftepotenzial.",
+        "Aus dem Lohnargument in Absatz 6 folgt, dass sich echte Knappheit normalerweise in steigenden Löhnen zeigen müsste.",
+        "Die Wendung, eine Reform öffne auf dem Papier und bremse in der Verwaltung, meint das Auseinanderfallen von Rechtslage und Wirkung.",
+        "Weil die Beschäftigungsquote der 2015 Geflüchteten stieg, schließt der Text Integrationsprobleme aus.",
+        "Der Text legt nahe, dass das Zuwanderungsziel schon deshalb erreicht wird, weil das Gesetz reformiert wurde."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) „Binnenreserven“ meint im Kontext bereits im Land vorhandenes, aber nicht voll genutztes Arbeitskräftepotenzial.**\n\nAbsatz 7 führt den Begriff ein und füllt ihn mit Beispielen: Frauenerwerbsstunden, Ältere und Geringqualifizierte, denn „Auch die Beschäftigungsquote Älterer und die Qualifizierung von Geringqualifizierten gelten als unausgeschöpft“.\n\nGemeint ist also Potenzial im Inland, nicht zusätzliche Zuwanderung.\n\nDie Aussage trifft die Kontextbedeutung.",
+        "**B) Aus dem Lohnargument in Absatz 6 folgt, dass sich echte Knappheit normalerweise in steigenden Löhnen zeigen müsste.**\n\nAbsatz 6 stützt die Gegenthese genau darauf, bei Knappheit „müssten die Löhne in den betroffenen Berufen kräftig steigen“.\n\nDie Aussage zieht diese Schlussfolgerung, ohne über den Text hinauszugehen.\n\nDie Aussage folgt dem Text korrekt.",
+        "**C) Die Wendung, eine Reform öffne auf dem Papier und bremse in der Verwaltung, meint das Auseinanderfallen von Rechtslage und Wirkung.**\n\nAbsatz 4 verwendet das Bild, um zu erklären, warum eine rechtliche Öffnung die tatsächliche Zuwanderung wenig verändert.\n\nDie Aussage deutet die Metapher genau in diesem Sinn.\n\nDie Aussage entspricht dem Text.",
+        "**D) Weil die Beschäftigungsquote der 2015 Geflüchteten stieg, schließt der Text Integrationsprobleme aus.**\n\nAbsatz 8 sagt ausdrücklich, die Erfahrung zeige beides, denn Integration gelang „in angespannten Ballungsräumen sichtbar schwerer gelang als in Regionen mit freien Kapazitäten“.\n\nDie Aussage nimmt nur die positive Hälfte des Befunds und verwirft die andere.\n\nDie Aussage scheitert an dieser einseitigen Inferenz.",
+        "**E) Der Text legt nahe, dass das Zuwanderungsziel schon deshalb erreicht wird, weil das Gesetz reformiert wurde.**\n\nAbsatz 4 beginnt mit der Gegenfrage: „Ob Gesetze reichen, ist umstritten.“\n\nDie Aussage überspringt genau den Zweifel, den der Text an dieser Stelle aufmacht.\n\nDie Aussage scheitert."
+      ],
+      "highlights": [
+        "Auch die Beschäftigungsquote Älterer und die Qualifizierung von Geringqualifizierten gelten als unausgeschöpft",
+        "müssten die Löhne in den betroffenen Berufen kräftig steigen",
+        "Eine Reform, die auf dem Papier öffnet, in der Verwaltung aber bremst",
+        "in angespannten Ballungsräumen sichtbar schwerer gelang als in Regionen mit freien Kapazitäten",
+        "Ob Gesetze reichen, ist umstritten"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 4,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-05",
+      "case_id": "DE T.8.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen den Aufbau der Argumentation über mehrere Absätze hinweg.",
+      "kind": "reading",
+      "statements": [
+        "Der Text präsentiert Zuwanderung als einzige diskutierte Antwort auf den Fachkräftemangel.",
+        "Auf die Diagnose folgen im Text Gegenpositionen, die entweder die Umsetzung oder die Diagnose selbst in Frage stellen.",
+        "Absatz 5 ergänzt die Verwaltungskritik um eine internationale Vergleichsperspektive.",
+        "Der Schluss weist beiden einseitigen Positionen jeweils eine eigene Schwäche zu.",
+        "Konkrete Berufsfelder werden im Text nicht genannt."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text präsentiert Zuwanderung als einzige diskutierte Antwort auf den Fachkräftemangel.**\n\nAbsatz 6 stellt bessere Arbeitsbedingungen dagegen, und Absatz 7 beginnt mit „Ein weiterer Einwand betrifft die Binnenreserven“.\n\nMindestens drei Lösungswege stehen damit nebeneinander.\n\nDie Aussage scheitert an der Vielzahl der behandelten Ansätze.",
+        "**B) Auf die Diagnose folgen im Text Gegenpositionen, die entweder die Umsetzung oder die Diagnose selbst in Frage stellen.**\n\nAbsatz 4 zweifelt an der Umsetzung, Absatz 6 beginnt mit „Andere Stimmen bestreiten die Diagnose in ihrer üblichen Form“.\n\nDie Aussage unterscheidet diese beiden Kritikebenen korrekt.\n\nDie Aussage trifft den Textaufbau.",
+        "**C) Absatz 5 ergänzt die Verwaltungskritik um eine internationale Vergleichsperspektive.**\n\nDer Absatz beginnt mit „Hinzu kommt der internationale Wettbewerb um dieselben Menschen“ und stellt Kanada und Australien daneben.\n\nEr baut damit direkt auf dem Verfahrensargument des vorigen Absatzes auf.\n\nDie Aussage beschreibt diese Funktion korrekt.",
+        "**D) Der Schluss weist beiden einseitigen Positionen jeweils eine eigene Schwäche zu.**\n\nAbsatz 9 verteilt die Kritik symmetrisch: „wer allein auf bessere Löhne setzt, unterschätzt die Demografie“, und wer allein auf Recht setzt, unterschätzt Verfahren und Konkurrenz.\n\nDie Aussage gibt diese Symmetrie korrekt wieder.\n\nDie Aussage entspricht dem Text.",
+        "**E) Konkrete Berufsfelder werden im Text nicht genannt.**\n\nAbsatz 1 nennt ausdrücklich: „Pflege, Bauhandwerk, Elektrotechnik und Informatik stehen dort seit Jahren“.\n\nEine einzige Stelle genügt, um die Aussage zu widerlegen.\n\nDie Aussage scheitert am Textbefund."
+      ],
+      "highlights": [
+        "Ein weiterer Einwand betrifft die Binnenreserven",
+        "Andere Stimmen bestreiten die Diagnose in ihrer üblichen Form",
+        "Hinzu kommt der internationale Wettbewerb um dieselben Menschen",
+        "wer allein auf bessere Löhne setzt, unterschätzt die Demografie",
+        "Pflege, Bauhandwerk, Elektrotechnik und Informatik stehen dort seit Jahren"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 5,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-06",
+      "case_id": "DE T.8.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen Jahreszahlen, Zielgrößen und benannte Details des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text nennt als erklärtes Ziel, jährlich rund vierhunderttausend Zuwanderende zu gewinnen.",
+        "Die Reform des Fachkräfteeinwanderungsgesetzes datiert der Text auf das Jahr 2035.",
+        "Als Engpassberufe nennt der Text unter anderem Pflege, Bauhandwerk, Elektrotechnik und Informatik.",
+        "Die geburtenstarken Jahrgänge stammen laut Text aus den 1950er- und 1960er-Jahren.",
+        "Der Text beziffert die Dauer der Anerkennung ausländischer Abschlüsse auf wenige Tage."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text nennt als erklärtes Ziel, jährlich rund vierhunderttausend Zuwanderende zu gewinnen.**\n\nAbsatz 3 gibt diese Zielgröße wörtlich an und bezeichnet sie als häufig genannten Maßstab der Debatte.\n\nDie Aussage übernimmt Zahl und Bezug unverändert.\n\nDie Aussage trifft den Text.",
+        "**B) Die Reform des Fachkräfteeinwanderungsgesetzes datiert der Text auf das Jahr 2035.**\n\nAbsatz 3 nennt 2023 als Reformjahr; 2035 ist in Absatz 2 der Horizont der demografischen Berechnung.\n\nDie Aussage vertauscht zwei Jahreszahlen mit völlig verschiedenen Funktionen.\n\n**Falle:** Prognosehorizont und Reformdatum werden gern verwechselt.\n\nDie Aussage scheitert an der Datierung.",
+        "**C) Als Engpassberufe nennt der Text unter anderem Pflege, Bauhandwerk, Elektrotechnik und Informatik.**\n\nAbsatz 1 führt genau diese vier Felder als seit Jahren betroffene Bereiche an.\n\nDie Aussage gibt die Aufzählung korrekt wieder.\n\nDie Aussage entspricht dem Text.",
+        "**D) Die geburtenstarken Jahrgänge stammen laut Text aus den 1950er- und 1960er-Jahren.**\n\nAbsatz 2 nennt genau diese beiden Jahrzehnte und verbindet sie mit dem Erreichen des Rentenalters.\n\nDie Aussage übernimmt die Angabe unverändert.\n\nDie Aussage trifft den Text.",
+        "**E) Der Text beziffert die Dauer der Anerkennung ausländischer Abschlüsse auf wenige Tage.**\n\nAbsatz 4 spricht von Monaten in vielen Bundesländern, nicht von Tagen.\n\nDie Aussage verkleinert die Größenordnung so stark, dass das Verfahrensargument verschwindet.\n\nDie Aussage scheitert."
+      ],
+      "highlights": [
+        "jährlich rund vierhunderttausend Zuwanderende zu gewinnen",
+        "Deutschland reformierte 2023 sein Fachkräfteeinwanderungsgesetz",
+        "Pflege, Bauhandwerk, Elektrotechnik und Informatik stehen dort seit Jahren",
+        "Die geburtenstarken Jahrgänge der 1950er- und 1960er-Jahre erreichen das Rentenalter",
+        "Die Anerkennung ausländischer Abschlüsse dauert in vielen Bundesländern Monate"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-07",
+      "case_id": "DE T.8.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen Ursache-Wirkungs-Beziehungen zwischen Demografie, Verwaltung und Arbeitsmarkt.",
+      "kind": "reading",
+      "statements": [
+        "Der Anstieg der Zahl der Pflegebedürftigen verschärft laut Text den Personalbedarf zusätzlich.",
+        "Laut Text führt eine Gesetzesreform automatisch zu höherer tatsächlicher Zuwanderung.",
+        "Bürokratie, Wohnungsmarkt und Diskriminierungserfahrungen werden als Gründe genannt, das Land wieder zu verlassen.",
+        "Betreuungsangebote und Steuerregeln werden im Text als Gründe für die niedrigere Stundenzahl angeführt.",
+        "Zuwanderung entlastet laut Text alle Bereiche gleichermaßen und belastet keinen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Anstieg der Zahl der Pflegebedürftigen verschärft laut Text den Personalbedarf zusätzlich.**\n\nAbsatz 2 stellt beides nebeneinander: „Zugleich steigt die Zahl der Pflegebedürftigen“, und zwar in einem besonders personalintensiven Bereich.\n\nDie Aussage gibt diese Verstärkung korrekt wieder.\n\nDie Aussage trifft den Text.",
+        "**B) Laut Text führt eine Gesetzesreform automatisch zu höherer tatsächlicher Zuwanderung.**\n\nAbsatz 4 verneint genau diesen Automatismus: Eine Reform, die in der Verwaltung bremst, „verändert die tatsächliche Zuwanderung wenig“.\n\nDie Aussage setzt Rechtslage mit Wirkung gleich, was der Text ausdrücklich bestreitet.\n\nDie Aussage scheitert.",
+        "**C) Bürokratie, Wohnungsmarkt und Diskriminierungserfahrungen werden als Gründe genannt, das Land wieder zu verlassen.**\n\nAbsatz 5 nennt genau diese drei Punkte aus Umfragen unter internationalen Fachkräften.\n\nDie Aussage gibt die Aufzählung vollständig und unverändert wieder.\n\nDie Aussage entspricht dem Text.",
+        "**D) Betreuungsangebote und Steuerregeln werden im Text als Gründe für die niedrigere Stundenzahl angeführt.**\n\nAbsatz 7 führt den Unterschied zu Schweden ausdrücklich auf beides zurück.\n\nDie Aussage bleibt bei den im Text genannten Ursachen.\n\nDie Aussage trifft den Text.",
+        "**E) Zuwanderung entlastet laut Text alle Bereiche gleichermaßen und belastet keinen.**\n\nAbsatz 8 formuliert die Verteilungsfrage zweiseitig: Zuwanderung entlastet Betriebe und Sozialkassen, „belastet aber Wohnungsmärkte, Schulen und Kitas, wenn der Ausbau nicht mitgeplant wird“.\n\nDie Aussage löscht die zweite Hälfte dieser Bilanz.\n\nDie Aussage scheitert."
+      ],
+      "highlights": [
+        "Zugleich steigt die Zahl der Pflegebedürftigen",
+        "verändert die tatsächliche Zuwanderung wenig",
+        "Bürokratie, Wohnungsmarkt und Erfahrungen mit Diskriminierung als Gründe, das Land wieder zu verlassen",
+        "was auf Betreuungsangebote und Steuerregeln zurückgeführt wird",
+        "belastet aber Wohnungsmärkte, Schulen und Kitas, wenn der Ausbau nicht mitgeplant wird"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-08",
+      "case_id": "DE T.8.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen, wie der Text seine Argumente gewichtet und welche Haltung er einnimmt.",
+      "kind": "reading",
+      "statements": [
+        "Der Text behandelt die Gegenthese, es fehle eher an guten Arbeitsbedingungen, als ernstzunehmende Position.",
+        "Der Text erklärt die Debatte um Zuwanderung für abgeschlossen.",
+        "Der Text gewichtet die Demografie als Kern des Problems, ohne andere Faktoren auszublenden.",
+        "Die Erfahrungen seit 2015 werden im Text ausschließlich negativ dargestellt.",
+        "Der Schluss vermeidet eine einseitige Empfehlung und benennt die Schwächen beider Lager."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text behandelt die Gegenthese, es fehle eher an guten Arbeitsbedingungen, als ernstzunehmende Position.**\n\nAbsatz 6 entwickelt sie mit eigenem Argument und Belegen: Es gehe „weniger um einen Mangel an Menschen als um einen Mangel an attraktiven Arbeitsbedingungen“.\n\nDie Position bekommt damit einen eigenen Absatz statt einer Randbemerkung.\n\nDie Aussage trifft die Gewichtung.",
+        "**B) Der Text erklärt die Debatte um Zuwanderung für abgeschlossen.**\n\nAbsatz 9 endet ausdrücklich damit, dass die politische Mischung und ihr Tempo offen sind; die Schlussformel lautet „bleibt offen“.\n\nDie Aussage unterstellt eine Entscheidung, die der Text vermeidet.\n\nDie Aussage scheitert.",
+        "**C) Der Text gewichtet die Demografie als Kern des Problems, ohne andere Faktoren auszublenden.**\n\nAbsatz 2 beginnt mit „Der Kern des Problems ist demografisch“, doch die Absätze 4 bis 8 behandeln Verwaltung, Löhne, Reserven und Infrastruktur.\n\nDie Aussage gibt diese Doppelung korrekt wieder.\n\nDie Aussage entspricht dem Text.",
+        "**D) Die Erfahrungen seit 2015 werden im Text ausschließlich negativ dargestellt.**\n\nAbsatz 8 nennt ausdrücklich beides und hält fest: „Die Beschäftigungsquote der damals Geflüchteten stieg über die Jahre deutlich.“\n\nDie Aussage unterschlägt diese positive Hälfte.\n\nDie Aussage scheitert.",
+        "**E) Der Schluss vermeidet eine einseitige Empfehlung und benennt die Schwächen beider Lager.**\n\nAbsatz 9 kritisiert beide Einseitigkeiten, etwa: „Wer ihn allein über Einwanderungsrecht lösen will, unterschätzt die Verfahren und die Konkurrenz.“\n\nDie Aussage beschreibt diese ausgewogene Haltung korrekt.\n\nDie Aussage trifft den Text."
+      ],
+      "highlights": [
+        "weniger um einen Mangel an Menschen als um einen Mangel an attraktiven Arbeitsbedingungen",
+        "bleibt offen",
+        "Der Kern des Problems ist demografisch",
+        "Die Beschäftigungsquote der damals Geflüchteten stieg über die Jahre deutlich",
+        "Wer ihn allein über Einwanderungsrecht lösen will, unterschätzt die Verfahren und die Konkurrenz"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 8,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-09",
+      "case_id": "DE T.8.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen zeitliche Abfolgen und Vergleiche zwischen Ländern und Regionen.",
+      "kind": "reading",
+      "statements": [
+        "Die Punktesysteme Kanadas und Australiens bestehen laut Text länger als die deutsche Chancenkarte.",
+        "Im Vergleich mit Schweden leisten Frauen in Deutschland laut Text mehr Erwerbsstunden.",
+        "Die Aufnahme großer Gruppen seit 2015 liegt zeitlich vor der Reform des Fachkräfteeinwanderungsgesetzes.",
+        "Angespannte Ballungsräume und Regionen mit freien Kapazitäten schnitten bei der Integration laut Text gleich ab.",
+        "Das Ausscheiden der geburtenstarken Jahrgänge ist laut Text noch nicht abgeschlossen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Die Punktesysteme Kanadas und Australiens bestehen laut Text länger als die deutsche Chancenkarte.**\n\nAbsatz 5 sagt, beide Länder werben „seit Jahrzehnten mit transparenten Punktesystemen“, während die Chancenkarte laut Absatz 3 erst 2023 eingeführt wurde.\n\nDie Aussage zieht den zeitlichen Vergleich korrekt.\n\nDie Aussage trifft den Text.",
+        "**B) Im Vergleich mit Schweden leisten Frauen in Deutschland laut Text mehr Erwerbsstunden.**\n\nAbsatz 7 stellt fest, die Stundenzahl sei „gemessen in geleisteten Stunden jedoch deutlich niedriger als etwa in Schweden“.\n\nDie Aussage dreht die Vergleichsrichtung um; die hohe Beteiligungsquote ändert daran nichts.\n\n**Falle:** Beteiligungsquote und geleistete Stunden sind im Text zwei verschiedene Maße.\n\nDie Aussage scheitert.",
+        "**C) Die Aufnahme großer Gruppen seit 2015 liegt zeitlich vor der Reform des Fachkräfteeinwanderungsgesetzes.**\n\nAbsatz 8 spricht von der Erfahrung „mit der Aufnahme großer Gruppen seit 2015“, Absatz 3 datiert die Reform auf 2023.\n\nDie Reihenfolge der Aussage stimmt mit beiden Angaben überein.\n\nDie Aussage entspricht dem Text.",
+        "**D) Angespannte Ballungsräume und Regionen mit freien Kapazitäten schnitten bei der Integration laut Text gleich ab.**\n\nAbsatz 8 nennt den Unterschied ausdrücklich, weil Integration in Ballungsräumen sichtbar schwerer gelang.\n\nDie Aussage löscht genau diesen Kontrast.\n\nDie Aussage scheitert am Regionenvergleich.",
+        "**E) Das Ausscheiden der geburtenstarken Jahrgänge ist laut Text noch nicht abgeschlossen.**\n\nAbsatz 9 formuliert die Zeitfrage danach, ob die Politik wirkt, „bevor die geburtenstarken Jahrgänge vollständig ausgeschieden sind“.\n\nDas Wort „bevor“ setzt voraus, dass dieser Punkt noch bevorsteht.\n\nDie Aussage trifft den Text."
+      ],
+      "highlights": [
+        "Kanada und Australien werben seit Jahrzehnten mit transparenten Punktesystemen",
+        "gemessen in geleisteten Stunden jedoch deutlich niedriger als etwa in Schweden",
+        "Die Erfahrung mit der Aufnahme großer Gruppen seit 2015 zeigt beides",
+        "in angespannten Ballungsräumen sichtbar schwerer gelang als in Regionen mit freien Kapazitäten",
+        "bevor die geburtenstarken Jahrgänge vollständig ausgeschieden sind"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 9,
+      "subsection": "t.8"
+    },
+    {
+      "id": "de-t-8-10",
+      "case_id": "DE T.8.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen den Gesamtschluss und die offen bleibenden Fragen des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text lässt offen, welche Mischung politischer Maßnahmen mehrheitsfähig ist.",
+        "Als offene Frage bleibt laut Schluss auch das Tempo der Umsetzung.",
+        "Der Text kommt zu dem Schluss, dass bessere Löhne allein das Problem lösen.",
+        "Eine zentrale Spannung bleibt zwischen dem Bedarf an Zuwanderung und den Kapazitätsgrenzen von Wohnraum und Betreuung.",
+        "Der Text bezeichnet den Fachkräftemangel abschließend als ein einzelnes, klar abgrenzbares Problem."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text lässt offen, welche Mischung politischer Maßnahmen mehrheitsfähig ist.**\n\nAbsatz 9 stellt genau diese Frage: „Welche Mischung politisch mehrheitsfähig ist“, und beantwortet sie nicht.\n\nDie Aussage gibt die Offenheit wieder, ohne eine Richtung zu behaupten.\n\nDie Aussage trifft den Gesamtschluss.",
+        "**B) Als offene Frage bleibt laut Schluss auch das Tempo der Umsetzung.**\n\nAbsatz 9 fragt zusätzlich, „ob sie schnell genug kommt“, bevor die geburtenstarken Jahrgänge ausgeschieden sind.\n\nDie Aussage benennt diese zweite offene Frage korrekt.\n\nDie Aussage entspricht dem Text.",
+        "**C) Der Text kommt zu dem Schluss, dass bessere Löhne allein das Problem lösen.**\n\nAbsatz 9 warnt ausdrücklich: „wer allein auf bessere Löhne setzt, unterschätzt die Demografie“.\n\nDie Aussage macht aus einer kritisierten Einseitigkeit die Position des Textes.\n\nDie Aussage scheitert.",
+        "**D) Eine zentrale Spannung bleibt zwischen dem Bedarf an Zuwanderung und den Kapazitätsgrenzen von Wohnraum und Betreuung.**\n\nAbsatz 8 hält fest, dass Zuwanderung „belastet aber Wohnungsmärkte, Schulen und Kitas, wenn der Ausbau nicht mitgeplant wird“, während Absatz 2 den Bedarf begründet.\n\nDer Text löst diesen Gegensatz nicht auf, sondern trägt ihn in den Schluss.\n\nDie Aussage benennt die offene Konfliktlage korrekt.",
+        "**E) Der Text bezeichnet den Fachkräftemangel abschließend als ein einzelnes, klar abgrenzbares Problem.**\n\nAbsatz 9 sagt das Gegenteil: „kein einzelnes Problem, sondern ein Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur“.\n\nDie Aussage kehrt die Schlussthese um.\n\nDie Aussage scheitert."
+      ],
+      "highlights": [
+        "Welche Mischung politisch mehrheitsfähig ist",
+        "ob sie schnell genug kommt",
+        "wer allein auf bessere Löhne setzt, unterschätzt die Demografie",
+        "belastet aber Wohnungsmärkte, Schulen und Kitas, wenn der Ausbau nicht mitgeplant wird",
+        "kein einzelnes Problem, sondern ein Bündel aus Demografie, Arbeitsbedingungen, Verwaltung und Infrastruktur"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.8"
+    }
+  ]
+}
