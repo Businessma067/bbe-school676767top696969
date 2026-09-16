@@ -101,55 +101,47 @@ export const WISO_FORMAT_NOTE =
 export const WISO_ECONOMICS_CHAPTERS = [
   {
     id: "ch1",
-    title: "Warum wir wirtschaften und was Wirtschaften bedeutet",
+    title: "Grundlagen der Wirtschaft",
     topics:
-      "Circular flow of the economy, opportunity cost, supply and demand, GDP/GNP, market types, money, interest, inflation (CPI), ECB 2% price-stability target",
+      "Wirtschaftskreislauf, Knappheit und Opportunitätskosten, Arbeitsteilung und Spezialisierung, Geld, Zinsen und Inflation",
     bullets: [
-      "Why societies organise production and exchange",
-      "Circular flow of income and spending",
-      "Opportunity cost and scarcity",
-      "Supply, demand, and market equilibrium",
-      "GDP, GNP, and measuring economic activity",
-      "Market types and competitive structures",
-      "Money, interest, inflation, CPI, and the ECB’s 2% target",
+      "Wirtschaftskreislauf",
+      "Knappheit und Opportunitätskosten",
+      "Arbeitsteilung und Spezialisierung",
+      "Geld, Zinsen und Inflation",
     ],
   },
   {
     id: "ch2",
-    title: "Wirtschaft als Teil der Gesellschaft und Umwelt",
+    title: "Wirtschaft, Gesellschaft und Umwelt",
     topics:
-      "Sustainability, planetary boundaries, decoupling, wellbeing economics (SWB, Doughnut model) — WiSo-specific relative to BBE’s Fuhrmann text",
+      "Nachhaltigkeit, planetare Grenzen, Entkopplung, Wohlfahrtsökonomie — WiSo-spezifisch gegenüber dem BBE-Fuhrmann-Text",
     bullets: [
-      "Economy embedded in society and the natural environment",
-      "Sustainability concepts and planetary boundaries",
-      "Decoupling growth from environmental pressure",
-      "Wellbeing and subjective wellbeing (SWB)",
-      "Doughnut economics as a framing model",
+      "Einbettung der Wirtschaft in Gesellschaft und Umwelt",
+      "Nachhaltigkeit und planetare Grenzen",
+      "Entkopplung von Wachstum und Umweltschäden",
+      "Wohlfahrtsökonomie",
     ],
   },
   {
     id: "ch3",
-    title: "Was Wirtschaften für Unternehmen bedeutet",
-    topics:
-      "Company types, legal forms, financing, accounting basics (balance sheet, P&L, cash flow), marketing",
+    title: "Unternehmensgrundlagen",
+    topics: "Unternehmensarten und Rechtsformen, Eigentum und Finanzierungsquellen, Rechnungswesen",
     bullets: [
-      "Types of enterprises and legal forms",
-      "Ownership and organisational structure",
-      "Sources of financing",
-      "Accounting basics: balance sheet, profit & loss, cash flow",
-      "Marketing fundamentals and short business scenarios",
+      "Unternehmensarten und Rechtsformen",
+      "Eigentum und Finanzierungsquellen",
+      "Rechnungswesen",
     ],
   },
   {
     id: "ch4",
-    title: "Digitalisierung und Vernetzung von Wirtschaft und Gesellschaft",
+    title: "Digitalisierung",
     topics:
-      "Digital transformation, new business models, internet platforms, Wirtschaftsinformatik — WiSo-specific",
+      "Digitale Transformation und Geschäftsmodelle, Internetplattformen, Wirtschaftsinformatik — WiSo-spezifisch",
     bullets: [
-      "Digital transformation of firms and markets",
-      "Platforms and networked business models",
-      "Information systems / Wirtschaftsinformatik basics",
-      "How digitalisation reshapes work, competition, and society",
+      "Digitale Transformation und Geschäftsmodelle",
+      "Internetplattformen",
+      "Wirtschaftsinformatik",
     ],
   },
 ] as const;
