@@ -13,8 +13,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
-import { createCheckout } from "@/lib/payments.functions";
+import { createCheckout, getPaymentStatus } from "@/lib/payments.functions";
 import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
+import { navigateTopWindow } from "@/lib/break-out-of-iframe";
 
 const ORANGE = "#C2643A";
 
@@ -57,6 +58,7 @@ export function PaymentModal({
   const [promoUnlocked, setPromoUnlocked] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
   const [payPageUrl, setPayPageUrl] = useState<string | null>(null);
+  const [activeInvoiceId, setActiveInvoiceId] = useState<string | null>(null);
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
@@ -65,6 +67,17 @@ export function PaymentModal({
   const eurPrice = Math.round(catalogEur * priceFactor);
   const chargeLabel = MONOBANK_TEST_CHARGE.enabled ? MONOBANK_TEST_CHARGE.label : `€${eurPrice}`;
   const showDiscountedTotal = method !== "promo" || discountApplied;
+
+  const goPaymentSuccess = (opts?: { productName?: string | null; href?: string | null }) => {
+    const label = opts?.productName?.trim() || productName;
+    const href = opts?.href?.trim() || product.href;
+    onOpenChange(false);
+    const params = new URLSearchParams();
+    if (label) params.set("product", label);
+    if (href) params.set("href", href);
+    const qs = params.toString();
+    navigateTopWindow(`/payment/success${qs ? `?${qs}` : ""}`);
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -77,6 +90,7 @@ export function PaymentModal({
     setPromoUnlocked(false);
     setAuthOpen(false);
     setPayPageUrl(null);
+    setActiveInvoiceId(null);
 
     // Buying requires an account first.
     void (async () => {
@@ -87,6 +101,48 @@ export function PaymentModal({
       }
     })();
   }, [open, onOpenChange]);
+
+  // While the Monobank iframe is open, poll status and send paid buyers to
+  // /payment/success (same page as classic BBE checkout after /payment-result).
+  useEffect(() => {
+    if (!payPageUrl || !activeInvoiceId) return;
+
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
+    const check = async () => {
+      try {
+        const result = await getPaymentStatus({ data: { invoiceId: activeInvoiceId } });
+        if (cancelled) return;
+        if (result.ok && result.paid) {
+          const { clearAccessStateCache } = await import("@/lib/entitlements");
+          clearAccessStateCache();
+          goPaymentSuccess({
+            productName: result.productName,
+            href: result.href,
+          });
+          return;
+        }
+        if (result.ok && ["failure", "reversed", "expired"].includes(result.status)) {
+          onOpenChange(false);
+          const reason = result.failureReason ?? "The payment was not completed.";
+          navigateTopWindow(`/payment/failed?reason=${encodeURIComponent(reason)}`);
+          return;
+        }
+      } catch {
+        // Keep polling — transient network / auth blips should not kill checkout.
+      }
+      if (!cancelled) timer = setTimeout(check, 2500);
+    };
+
+    timer = setTimeout(check, 2000);
+    return () => {
+      cancelled = true;
+      if (timer) clearTimeout(timer);
+    };
+    // goPaymentSuccess closes over stable product fields for this open session.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [payPageUrl, activeInvoiceId, onOpenChange]);
 
   useEffect(() => {
     if (!payPageUrl) return;
@@ -105,6 +161,30 @@ export function PaymentModal({
       if (!payload || typeof payload.message !== "string") return;
 
       if (payload.message === "close-button") {
+        // User dismissed the widget — if they already paid, still go to success.
+        const invoiceId = activeInvoiceId;
+        if (invoiceId) {
+          void (async () => {
+            try {
+              const result = await getPaymentStatus({ data: { invoiceId } });
+              if (result.ok && result.paid) {
+                const { clearAccessStateCache } = await import("@/lib/entitlements");
+                clearAccessStateCache();
+                goPaymentSuccess({
+                  productName: result.productName,
+                  href: result.href,
+                });
+                return;
+              }
+            } catch {
+              // fall through to dismiss
+            }
+            setPayPageUrl(null);
+            setActiveInvoiceId(null);
+            setLoading(false);
+          })();
+          return;
+        }
         setPayPageUrl(null);
         setLoading(false);
         return;
@@ -117,7 +197,8 @@ export function PaymentModal({
 
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-  }, [payPageUrl]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [payPageUrl, activeInvoiceId]);
 
   const handlePay = async () => {
     setError(null);
@@ -142,6 +223,7 @@ export function PaymentModal({
       }
       // Stay on our page: embed Monobank’s iframe widget (card + Apple Pay +
       // Google Pay). Requires displayType:"iframe" on create + allow="payment *".
+      setActiveInvoiceId(result.invoiceId);
       setPayPageUrl(result.pageUrl);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not start the payment.";

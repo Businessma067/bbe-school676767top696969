@@ -33,13 +33,36 @@ const CheckoutInput = z.object({
 
 const StatusInput = z.object({ invoiceId: z.string().min(1).max(128) });
 
-function siteOrigin(request: Request): string {
+function stripTrailingSlash(url: string): string {
+  return url.replace(/\/$/, "");
+}
+
+/** Prefer the browser Origin so post-pay redirect returns to the same host the user is on. */
+function browserOrigin(request: Request): string {
+  const origin = request.headers.get("origin")?.trim();
+  if (origin) return stripTrailingSlash(origin);
+  const referer = request.headers.get("referer")?.trim();
+  if (referer) {
+    try {
+      return stripTrailingSlash(new URL(referer).origin);
+    } catch {
+      // ignore
+    }
+  }
+  return publicSiteOrigin(request);
+}
+
+/**
+ * Stable public origin for Monobank webhooks (must be reachable from Monobank).
+ * Falls back to the browser origin when PUBLIC_SITE_URL is unset.
+ */
+function publicSiteOrigin(request: Request): string {
   const envOrigin = process.env["PUBLIC_SITE_URL"]?.trim();
-  if (envOrigin) return envOrigin.replace(/\/$/, "");
-  const origin = request.headers.get("origin");
-  if (origin) return origin.replace(/\/$/, "");
+  if (envOrigin) return stripTrailingSlash(envOrigin);
+  const origin = request.headers.get("origin")?.trim();
+  if (origin) return stripTrailingSlash(origin);
   try {
-    return new URL(request.url).origin;
+    return stripTrailingSlash(new URL(request.url).origin);
   } catch {
     return "https://bbe-school.com";
   }
@@ -86,7 +109,9 @@ export const createCheckout = createServerFn({ method: "POST" })
 
       const { getRequest } = await import("@tanstack/react-start/server");
       const request = getRequest();
-      const origin = siteOrigin(request);
+      // Return the buyer to the host they paid on; webhooks use a stable public URL.
+      const returnOrigin = browserOrigin(request);
+      const webhookOrigin = publicSiteOrigin(request);
 
       const { createMonoInvoice } = await import("@/lib/monobank.server");
       const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
@@ -99,8 +124,10 @@ export const createCheckout = createServerFn({ method: "POST" })
         ccy: currencyCode,
         destination: product.name,
         reference,
-        redirectUrl: `${origin}/payment-result`,
-        webHookUrl: `${origin}/api/public/payment/webhook`,
+        // Intermediate result page verifies status then sends users to /payment/success
+        // (same as classic BBE checkout), including when the pay widget is iframed.
+        redirectUrl: `${returnOrigin}/payment-result`,
+        webHookUrl: `${webhookOrigin}/api/public/payment/webhook`,
         basketName: product.name,
         // Prefer the production host so Monobank can fetch the icon even from previews.
         basketIconUrl: "https://bbe-school.com/logo.png",
