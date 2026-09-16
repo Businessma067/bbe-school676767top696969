@@ -33,7 +33,7 @@ export const Route = createFileRoute("/wiso/products/full-course-subjects")({
   }),
   component: function WisoFullCourseSubjectsRoute() {
     return (
-      <RequireFullCourse minTier="full">
+      <RequireFullCourse minTier="full" productSlug="wiso-full-course">
         <WisoFullCourseSubjects />
       </RequireFullCourse>
     );

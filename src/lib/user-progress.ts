@@ -4,7 +4,11 @@ import type { MockExamSession } from "@/lib/mock-exam-session";
 
 /* ----------------------------- types ----------------------------- */
 
-export type CourseSlug = "demo-practice" | "lite-bbe-course" | "full-course";
+export type CourseSlug =
+  | "demo-practice"
+  | "lite-bbe-course"
+  | "full-course"
+  | "wiso-full-course";
 
 export type Enrollment = {
   id: string;
@@ -13,6 +17,11 @@ export type Enrollment = {
   tier: string;
   created_at: string;
 };
+
+/** BBE-track paid enrollments (WiSo is a separate SKU). */
+export const BBE_PAID_PRODUCT_SLUGS = ["full-course", "lite-bbe-course"] as const;
+
+export const WISO_FULL_COURSE_SLUG = "wiso-full-course" as const;
 
 export type StatementResult = { statement_index: number; correct: boolean };
 
@@ -70,6 +79,11 @@ export const COURSE_CATALOG: Record<
   "demo-practice": { name: "Demo Practice Package", tier: "demo", href: "/demo-practice" },
   "lite-bbe-course": { name: "Lite BBE Course", tier: "lite", href: "/products/lite-bbe-course-subjects" },
   "full-course": { name: "Full BBE Course", tier: "full", href: "/products/full-course-subjects" },
+  "wiso-full-course": {
+    name: "Full WiSo Course",
+    tier: "full",
+    href: "/wiso/products/full-course-subjects",
+  },
 };
 
 /* --------------------------- enrollments -------------------------- */
@@ -118,12 +132,25 @@ export async function fetchEnrollments(): Promise<Enrollment[]> {
   return (data ?? []) as Enrollment[];
 }
 
-/** Highest tier the user owns; used for exam access. */
+export function ownsProductSlug(enrollments: Enrollment[], slug: string): boolean {
+  return enrollments.some((e) => e.product_slug === slug);
+}
+
+/** Highest tier across every enrollment (incl. WiSo). Prefer track-scoped helpers for gates. */
 export function highestTier(enrollments: Enrollment[]): "none" | "demo" | "lite" | "full" {
   if (enrollments.some((e) => e.tier === "full")) return "full";
   if (enrollments.some((e) => e.tier === "lite")) return "lite";
   if (enrollments.length > 0) return "demo";
   return "none";
+}
+
+/** Highest BBE-track tier — WiSo Full does not unlock BBE tools. */
+export function highestBbeTier(enrollments: Enrollment[]): "none" | "demo" | "lite" | "full" {
+  const bbe = enrollments.filter((e) =>
+    (BBE_PAID_PRODUCT_SLUGS as readonly string[]).includes(e.product_slug) ||
+    e.product_slug === "demo-practice",
+  );
+  return highestTier(bbe);
 }
 
 /* -------------------------- task attempts ------------------------- */

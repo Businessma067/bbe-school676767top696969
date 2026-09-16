@@ -8,6 +8,7 @@ import {
   DISCOUNT_PCT,
   HARDCODED_DISCOUNT_PROMOS,
   isPaidProductSlug,
+  promoAppliesToProduct,
 } from "@/lib/checkout-catalog";
 
 const MAX_ATTEMPTS_PER_IP = 10;
@@ -178,12 +179,7 @@ export async function lookupDiscountPromo(input: {
           return { ok: false, error: "This promocode has reached its use limit." };
         }
       }
-      const applies =
-        !data.product_slug ||
-        data.product_slug === "any-paid" ||
-        !input.productSlug ||
-        data.product_slug === input.productSlug;
-      if (!applies) {
+      if (!promoAppliesToProduct(data.product_slug, input.productSlug)) {
         return { ok: false, error: "This promocode does not apply to this course." };
       }
       return {
@@ -204,11 +200,7 @@ export async function lookupDiscountPromo(input: {
     if (isExpired(hardcoded.expiresAt)) {
       return { ok: false, error: "This promocode has expired." };
     }
-    const applies =
-      hardcoded.productSlug === "any-paid" ||
-      !input.productSlug ||
-      hardcoded.productSlug === input.productSlug;
-    if (!applies) {
+    if (!promoAppliesToProduct(hardcoded.productSlug, input.productSlug)) {
       return { ok: false, error: "This promocode does not apply to this course." };
     }
     return {

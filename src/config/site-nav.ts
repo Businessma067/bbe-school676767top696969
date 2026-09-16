@@ -12,6 +12,8 @@ export type NavItem = {
 export type AccountNavAccess = {
   hasLite: boolean;
   hasFull: boolean;
+  /** Full WiSo Course enrollment (separate SKU from BBE Full). */
+  hasWisoFull: boolean;
 };
 
 export type AccountNavTier = "guest" | "lite" | "full";
@@ -115,6 +117,17 @@ const fullCourseItem: NavItem = {
   ],
 };
 
+const wisoFullCourseItem: NavItem = {
+  label: "Full Course",
+  href: "/wiso/products/full-course-subjects",
+  isRoute: true,
+  activePrefixes: [
+    "/wiso/products/full-course-subjects",
+    "/wiso/products/full-course-math",
+    "/wiso/products/full-course-economics",
+  ],
+};
+
 const lightCourseItem: NavItem = {
   label: "Light course",
   href: "/products/lite-bbe-course-subjects",
@@ -209,18 +222,20 @@ export function navItemsForAccess(
   access: AccountNavAccess,
   track: ExamTrack = "bbe",
 ): NavItem[] {
-  if (!access.hasLite && !access.hasFull) return guestNavItems(track);
-
   if (track === "wiso") {
+    if (!access.hasWisoFull) return guestNavItems(track);
     return [
       examInfoItem(track),
       productsItem(track),
       demoCourseItem(track),
+      wisoFullCourseItem,
       mockExamsItem(track),
       mockBuilderItem(track),
       gamesItem(track),
     ];
   }
+
+  if (!access.hasLite && !access.hasFull) return guestNavItems(track);
 
   const items: NavItem[] = [examInfoItem(track), productsItem(track), demoCourseItem(track)];
   if (access.hasLite) items.push(lightCourseItem);
@@ -233,6 +248,7 @@ export function navItemsForTier(tier: AccountNavTier): NavItem[] {
   return navItemsForAccess({
     hasLite: tier === "lite",
     hasFull: tier === "full",
+    hasWisoFull: false,
   });
 }
 

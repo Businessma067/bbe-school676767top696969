@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import {
   BookOpen,
   ListChecks,
@@ -14,11 +15,16 @@ import {
 import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { PaymentModal } from "@/components/PaymentModal";
+import { AuthModal } from "@/components/AuthModal";
+import { useFullCourseAccess } from "@/hooks/use-full-course-access";
+import { WISO_FULL_COURSE_HREF } from "@/lib/full-course-access";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
 const FULL_COURSE_IMAGE = "/full-wiso-course-product-v2.png";
+const FULL_COURSE_PRICE = 449;
 
 const PATH = "/wiso/products/full-course" as const;
 const INDIGO = "#3730A3";
@@ -109,14 +115,14 @@ const wisoCourseFaqs = [
       "Practice aligned to Wirtschaft verstehen, mathematics, and German reading comprehension, plus timed mocks and study tools on dedicated /wiso URLs — separate from the BBE track.",
   },
   {
-    question: "Is checkout available now?",
+    question: "How much does it cost?",
     answer:
-      "The WiSo course page and demo URLs are live so you can explore the track. Paid checkout for Full WiSo Course is next; until then you can preview the WiSo demo and compare with Full BBE Course.",
+      "Full WiSo Course is a one-time payment of €449. The same promocodes that work on Full BBE Course also apply at WiSo checkout.",
   },
   {
     question: "How is this different from the Full BBE Course?",
     answer:
-      "BBE is English-taught with English reading and a smaller intake. WiSo is German-taught: economics wording, math, and deutsches Sprachverständnis — no English section. Content and URLs stay on the WiSo track.",
+      "BBE is English-taught with English reading and a smaller intake. WiSo is German-taught: economics wording, math, and deutsches Sprachverständnis — no English section. Content and URLs stay on the WiSo track. Buying one does not unlock the other.",
   },
   {
     question: "Does it cover the Teilpunktesystem?",
@@ -151,7 +157,32 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
   );
 }
 
+function CtaButton({ onClick, label }: { onClick: () => void; label: string }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background sm:w-auto"
+      style={{ backgroundColor: INDIGO, boxShadow: `0 10px 28px -8px ${INDIGO}90` }}
+    >
+      {label} →
+    </button>
+  );
+}
+
 export function WisoFullCourseProduct() {
+  const { ready, signedIn, ownsWisoFullCourse } = useFullCourseAccess();
+  const [paymentOpen, setPaymentOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
+
+  const openBuy = () => {
+    if (!signedIn) {
+      setAuthOpen(true);
+      return;
+    }
+    setPaymentOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
@@ -211,19 +242,35 @@ export function WisoFullCourseProduct() {
 
           <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
             <div>
-              <div className="text-sm text-muted-foreground">WiSo track · German-taught</div>
+              <div className="text-sm text-muted-foreground">
+                {ownsWisoFullCourse ? "Your access" : "One-time payment"}
+              </div>
               <div className="mt-1 flex items-baseline gap-2">
-                <span className="font-display text-2xl font-bold text-foreground">Practice live</span>
-                <span className="text-sm text-muted-foreground">checkout next</span>
+                {ownsWisoFullCourse ? (
+                  <span className="font-display text-2xl font-bold text-foreground">Unlocked</span>
+                ) : (
+                  <>
+                    <span className="font-display text-4xl font-bold text-foreground">
+                      €{FULL_COURSE_PRICE}
+                    </span>
+                    <span className="text-sm text-muted-foreground">full access</span>
+                  </>
+                )}
               </div>
             </div>
-            <LocalizedLink
-              to="/wiso/products/full-course-subjects"
-              className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 sm:w-auto"
-              style={{ backgroundColor: INDIGO, boxShadow: `0 10px 28px -8px ${INDIGO}90` }}
-            >
-              Open WiSo subjects →
-            </LocalizedLink>
+            {!ready ? (
+              <div className="h-12 w-40 animate-pulse rounded-xl bg-secondary" />
+            ) : ownsWisoFullCourse ? (
+              <Link
+                to={WISO_FULL_COURSE_HREF}
+                className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 sm:w-auto"
+                style={{ backgroundColor: INDIGO, boxShadow: `0 10px 28px -8px ${INDIGO}90` }}
+              >
+                Go to course →
+              </Link>
+            ) : (
+              <CtaButton onClick={openBuy} label="Buy course" />
+            )}
           </div>
 
           <section className="mt-12">
@@ -330,8 +377,13 @@ export function WisoFullCourseProduct() {
                 Train the WiSo format — not a different exam&apos;s language section.
               </p>
               <p className="mt-2 text-xs text-muted-foreground">
-                Demo URLs live now · Full WiSo checkout coming next
+                One-time payment · €{FULL_COURSE_PRICE} · Instant full access
               </p>
+              {!ownsWisoFullCourse ? (
+                <div className="mt-4">
+                  <CtaButton onClick={openBuy} label="Buy course" />
+                </div>
+              ) : null}
             </div>
           </section>
 
@@ -383,6 +435,23 @@ export function WisoFullCourseProduct() {
           </section>
         </div>
       </main>
+
+      <PaymentModal
+        open={paymentOpen}
+        onOpenChange={setPaymentOpen}
+        productName="Full WiSo Course"
+        priceEuros={FULL_COURSE_PRICE}
+        productSlug="wiso-full-course"
+      />
+      <AuthModal
+        open={authOpen}
+        onOpenChange={setAuthOpen}
+        defaultMode="signin"
+        onSignedIn={() => {
+          setAuthOpen(false);
+          setPaymentOpen(true);
+        }}
+      />
     </div>
   );
 }

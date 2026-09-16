@@ -9,6 +9,7 @@ import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { storeExamTrack } from "@/lib/exam-track";
 import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
@@ -69,6 +70,8 @@ export const Route = createFileRoute("/wiso/")({
 });
 
 export function WisoLandingPage() {
+  const { hasWisoFull } = useAccountNavTier();
+
   useEffect(() => {
     storeExamTrack("wiso");
   }, []);
@@ -242,20 +245,49 @@ export function WisoLandingPage() {
             <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
               BBE School · WiSo
             </span>
-            <nav className="flex flex-wrap items-center justify-center gap-4 text-xs">
-              <LocalizedLink to="/bbe-vs-wiso" className="text-muted-foreground hover:underline">
-                BBE vs WiSo
-              </LocalizedLink>
-              <LocalizedLink to="/terms" className="text-muted-foreground hover:underline">
-                Terms
-              </LocalizedLink>
-              <LocalizedLink to="/privacy" className="text-muted-foreground hover:underline">
-                Privacy
-              </LocalizedLink>
-              <LocalizedLink to="/" className="text-muted-foreground hover:underline">
-                All exams
-              </LocalizedLink>
-            </nav>
+            {hasWisoFull ? (
+              <nav className="flex flex-wrap items-center justify-center gap-4 text-xs">
+                <LocalizedLink
+                  to="/wiso/products/full-course-subjects"
+                  className="text-muted-foreground hover:underline"
+                >
+                  Full Course
+                </LocalizedLink>
+                <LocalizedLink to="/wiso/mock-exams" className="text-muted-foreground hover:underline">
+                  Mock Exams
+                </LocalizedLink>
+                <LocalizedLink to="/wiso/mock-builder" className="text-muted-foreground hover:underline">
+                  Mock Builder
+                </LocalizedLink>
+                <LocalizedLink to="/wiso/flashcards" className="text-muted-foreground hover:underline">
+                  Study tools
+                </LocalizedLink>
+                <LocalizedLink to="/wiso/demo-practice" className="text-muted-foreground hover:underline">
+                  Demo-course
+                </LocalizedLink>
+                <LocalizedLink to="/terms" className="text-muted-foreground hover:underline">
+                  Terms
+                </LocalizedLink>
+                <LocalizedLink to="/privacy" className="text-muted-foreground hover:underline">
+                  Privacy
+                </LocalizedLink>
+              </nav>
+            ) : (
+              <nav className="flex flex-wrap items-center justify-center gap-4 text-xs">
+                <LocalizedLink to="/bbe-vs-wiso" className="text-muted-foreground hover:underline">
+                  BBE vs WiSo
+                </LocalizedLink>
+                <LocalizedLink to="/terms" className="text-muted-foreground hover:underline">
+                  Terms
+                </LocalizedLink>
+                <LocalizedLink to="/privacy" className="text-muted-foreground hover:underline">
+                  Privacy
+                </LocalizedLink>
+                <LocalizedLink to="/" className="text-muted-foreground hover:underline">
+                  All exams
+                </LocalizedLink>
+              </nav>
+            )}
           </div>
         </footer>
       </main>

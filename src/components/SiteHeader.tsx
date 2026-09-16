@@ -43,8 +43,8 @@ export function SiteHeader({
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const pathForNav = stripLocalePrefix(pathname);
   const track = resolveExamTrack(pathname);
-  const { hasLite, hasFull } = useAccountNavTier();
-  const navItems = navItemsForAccess({ hasLite, hasFull }, track);
+  const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
+  const navItems = navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 
