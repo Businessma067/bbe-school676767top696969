@@ -2,6 +2,7 @@ import type { ComponentType } from "react";
 import type { LocalizablePath } from "./locale-path";
 
 import { Index } from "@/routes/index";
+import { BbeLandingPage } from "@/routes/bbe";
 import { BbeEntranceExamHubPage } from "@/routes/bbe-entrance-exam";
 import { BbeExamScoringPage } from "@/routes/bbe-exam-scoring";
 import { BbeMathematicsPage } from "@/routes/bbe-mathematics";
@@ -10,6 +11,20 @@ import { BbeExamPreparationPage } from "@/routes/bbe-exam-preparation";
 import { BbeAdmissionPage } from "@/routes/bbe-admission";
 import { BbeVsWisoPage } from "@/routes/bbe-vs-wiso";
 import { WuViennaOverviewPage } from "@/routes/wu-vienna";
+import { WisoLandingPage } from "@/routes/wiso.index";
+import { WisoEntranceExamPage } from "@/routes/wiso.entrance-exam";
+import { WisoExamScoringPage } from "@/routes/wiso.exam-scoring";
+import { WisoMathematicsPage } from "@/routes/wiso.mathematics";
+import { WisoEconomicsGermanPage } from "@/routes/wiso.economics-german";
+import { WisoExamPreparationPage } from "@/routes/wiso.exam-preparation";
+import { WisoAdmissionPage } from "@/routes/wiso.admission";
+import { WisoWuViennaPage } from "@/routes/wiso.wu-vienna";
+import { WisoProductsPage } from "@/routes/wiso.products.index";
+import { WisoFullCourseProduct } from "@/routes/wiso.products.full-course";
+import { WisoDemoPracticePlaceholder } from "@/routes/wiso.demo-practice";
+import { WisoMockExamsPlaceholder } from "@/routes/wiso.mock-exams";
+import { WisoMockBuilderPlaceholder } from "@/routes/wiso.mock-builder";
+import { WisoFlashcardsPlaceholder } from "@/routes/wiso.flashcards";
 import { ParentsPage } from "@/routes/parents";
 import { ImportantFeaturesPage } from "@/routes/important-features";
 import { AnswerSheetFeaturePage } from "@/routes/features.answer-sheet";
@@ -28,12 +43,9 @@ import { DashboardRoutePage } from "@/routes/dashboard";
 import { PaymentSuccessPage } from "@/routes/payment.success";
 import { PaymentFailedPage } from "@/routes/payment.failed";
 
-/**
- * Shared page components for English and locale-prefixed routes.
- * Keep this map in sync with LOCALIZABLE_PATHS.
- */
 export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> = {
   "/": Index,
+  "/bbe": BbeLandingPage,
   "/bbe-entrance-exam": BbeEntranceExamHubPage,
   "/bbe-exam-scoring": BbeExamScoringPage,
   "/bbe-mathematics": BbeMathematicsPage,
@@ -42,6 +54,20 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/bbe-admission": BbeAdmissionPage,
   "/bbe-vs-wiso": BbeVsWisoPage,
   "/wu-vienna": WuViennaOverviewPage,
+  "/wiso": WisoLandingPage,
+  "/wiso/entrance-exam": WisoEntranceExamPage,
+  "/wiso/exam-scoring": WisoExamScoringPage,
+  "/wiso/mathematics": WisoMathematicsPage,
+  "/wiso/economics-german": WisoEconomicsGermanPage,
+  "/wiso/exam-preparation": WisoExamPreparationPage,
+  "/wiso/admission": WisoAdmissionPage,
+  "/wiso/wu-vienna": WisoWuViennaPage,
+  "/wiso/products": WisoProductsPage,
+  "/wiso/products/full-course": WisoFullCourseProduct,
+  "/wiso/demo-practice": WisoDemoPracticePlaceholder,
+  "/wiso/mock-exams": WisoMockExamsPlaceholder,
+  "/wiso/mock-builder": WisoMockBuilderPlaceholder,
+  "/wiso/flashcards": WisoFlashcardsPlaceholder,
   "/parents": ParentsPage,
   "/important-features": ImportantFeaturesPage,
   "/features/answer-sheet": AnswerSheetFeaturePage,

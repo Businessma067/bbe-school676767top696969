@@ -2,69 +2,29 @@ import { useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
+import { ExamTrackSwitcher, TrackBrandMark } from "@/components/ExamTrackSwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { LocalizedLink } from "@/components/LocalizedLink";
 import { MobileNav } from "@/components/MobileNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { navItemsForAccess, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
+import { resolveExamTrack } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
 type SiteHeaderProps = {
-  /** Content shown to the left of AuthNav (e.g. back link). */
   actions?: ReactNode;
-  /** Replace the default BBE brand mark on the left. */
   left?: ReactNode;
-  /** Optional middle content (defaults to DesktopNav when showNav is true). */
   center?: ReactNode;
   showNav?: boolean;
   showMobileNav?: boolean;
-  /**
-   * @deprecated Header chrome is full-width on every page so nav never
-   * compresses into a horizontal scroll. Kept for call-site compatibility.
-   */
   maxWidthClassName?: string;
   className?: string;
   innerClassName?: string;
   sticky?: boolean;
   compact?: boolean;
+  hideTrackSwitcher?: boolean;
 };
-
-function BrandMark({ compact = false }: { compact?: boolean }) {
-  return (
-    <LocalizedLink
-      to="/"
-      aria-label="BBE School home"
-      className="group flex shrink-0 items-center gap-2 sm:gap-3"
-    >
-      <div
-        className={cn(
-          "relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105",
-          compact ? "h-9 w-9" : "h-10 w-10",
-        )}
-      >
-        <span
-          className={cn(
-            "font-display font-bold leading-none tracking-tight text-primary-foreground",
-            compact ? "text-xs" : "text-sm",
-          )}
-        >
-          BBE
-        </span>
-      </div>
-      {/* Full name only from sm up — keeps the phone header from crowding. */}
-      <span
-        className={cn(
-          "hidden font-display font-bold tracking-tight text-foreground sm:inline",
-          compact ? "text-sm" : "text-sm sm:text-base",
-        )}
-      >
-        BBE School
-      </span>
-    </LocalizedLink>
-  );
-}
 
 export function SiteHeader({
   actions,
@@ -77,12 +37,14 @@ export function SiteHeader({
   innerClassName,
   sticky = true,
   compact = true,
+  hideTrackSwitcher = false,
 }: SiteHeaderProps) {
   void _maxWidthClassName;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const pathForNav = stripLocalePrefix(pathname);
+  const track = resolveExamTrack(pathname);
   const { hasLite, hasFull } = useAccountNavTier();
-  const navItems = navItemsForAccess({ hasLite, hasFull });
+  const navItems = navItemsForAccess({ hasLite, hasFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 
@@ -102,7 +64,7 @@ export function SiteHeader({
           innerClassName,
         )}
       >
-        {left ?? <BrandMark compact={compact} />}
+        {left ?? <TrackBrandMark compact={compact} />}
         {center ??
           (navVisible ? (
             <DesktopNav items={navItems} />
@@ -111,6 +73,7 @@ export function SiteHeader({
           ))}
         <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1 sm:gap-2.5">
           {actions}
+          {!hideTrackSwitcher ? <ExamTrackSwitcher /> : null}
           <ThemeToggle />
           <LanguageSwitcher />
           <AuthNav />

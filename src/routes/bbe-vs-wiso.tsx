@@ -180,12 +180,8 @@ export function BbeVsWisoPage() {
       lead="Choosing between WU Vienna’s BBE and WISO programmes starts with the entrance exams behind them. This independent guide compares language, subjects, places, selectivity, and preparation — so you can decide which path fits you."
       heroActions={
         <>
-          <BbePrimaryButton to={BBE_PRACTICE_ROUTES.demo}>
-            Try the free BBE demo course
-          </BbePrimaryButton>
-          <BbeGhostButton to={BBE_PRACTICE_ROUTES.mockExams}>
-            Take a diagnostic test
-          </BbeGhostButton>
+          <BbePrimaryButton to="/bbe">Enter BBE preparation</BbePrimaryButton>
+          <BbeGhostButton to="/wiso">Enter WiSo preparation</BbeGhostButton>
         </>
       }
     >
@@ -199,6 +195,14 @@ export function BbeVsWisoPage() {
             applicants are language of study, the language section on the exam, how many seats exist,
             and when you can start.
           </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <BbePrimaryButton to="/bbe">Go to BBE home →</BbePrimaryButton>
+            <BbeGhostButton to="/wiso">Go to WiSo home →</BbeGhostButton>
+          </div>
+          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
+            <BbeTextLink to="/bbe-entrance-exam">BBE exam overview →</BbeTextLink>
+            <BbeTextLink to="/wiso/entrance-exam">WiSo exam overview →</BbeTextLink>
+          </div>
           <BbeStatGrid
             items={[
               { label: "BBE places", value: String(BBE_PLACES) },
@@ -208,9 +212,9 @@ export function BbeVsWisoPage() {
             ]}
           />
           <BbeInfoCallout label="Independent guide" tone="official">
-            BBE School prepares applicants for the BBE entrance exam. Figures below summarise recent
-            public WU cycle information and can change. Always confirm dates, fees, and rules on the
-            official WU Vienna website.
+            BBE School now offers separate BBE and WiSo tracks on this site. Figures below summarise
+            recent public WU cycle information and can change. Always confirm dates, fees, and rules
+            on the official WU Vienna website.
           </BbeInfoCallout>
         </BbeSection>
 
@@ -219,7 +223,10 @@ export function BbeVsWisoPage() {
             Use this table as a decision snapshot. For BBE exam format details, see the BBE Entrance
             Exam Overview linked below.
           </p>
-          <BbeTextLink to="/bbe-entrance-exam">BBE Entrance Exam Guide →</BbeTextLink>
+          <div className="flex flex-wrap gap-4">
+            <BbeTextLink to="/bbe-entrance-exam">BBE Entrance Exam Guide →</BbeTextLink>
+            <BbeTextLink to="/wiso/entrance-exam">WiSo Entrance Exam Guide →</BbeTextLink>
+          </div>
           <div className="overflow-x-auto rounded-2xl border border-border">
             <table className="w-full min-w-[36rem] border-collapse text-left text-[0.95rem]">
               <thead>
