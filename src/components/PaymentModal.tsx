@@ -24,12 +24,7 @@ import {
   PAID_PRODUCTS,
   type PaidProductSlug,
 } from "@/lib/checkout-catalog";
-import {
-  canUseApplePay,
-  mountGooglePayButton,
-  startApplePaySession,
-  type WalletPayConfig,
-} from "@/lib/wallet-pay.client";
+import type { WalletPayConfig } from "@/lib/wallet-pay.client";
 
 const ORANGE = "#C2643A";
 
@@ -179,27 +174,38 @@ export function PaymentModal({
     const el = googleButtonRef.current;
     if (!el) return;
 
-    return mountGooglePayButton({
-      container: el,
-      config: walletConfig,
-      onToken: async (token) => {
-        setError(null);
-        setLoading(true);
-        try {
-          await finishWallet("google", token);
-        } finally {
-          setLoading(false);
-        }
-      },
-      onError: (message) => {
-        // Ignore mount-time noise; click errors still surface.
-        if (/unavailable|script failed/i.test(message)) return;
-        setError(message);
-      },
+    let cancelled = false;
+    let cleanup: (() => void) | null = null;
+
+    void import("@/lib/wallet-pay.client").then(({ mountGooglePayButton }) => {
+      if (cancelled) return;
+      cleanup = mountGooglePayButton({
+        container: el,
+        config: walletConfig,
+        onToken: async (token: string) => {
+          setError(null);
+          setLoading(true);
+          try {
+            await finishWallet("google", token);
+          } finally {
+            setLoading(false);
+          }
+        },
+        onError: (message: string) => {
+          // Ignore mount-time noise; click errors still surface.
+          if (/unavailable|script failed/i.test(message)) return;
+          setError(message);
+        },
+      });
     });
+
+    return () => {
+      cancelled = true;
+      cleanup?.();
+    };
   }, [open, method, walletConfig, finishWallet]);
 
-  const handleApplePay = () => {
+  const handleApplePay = async () => {
     setError(null);
     if (!walletConfig?.appleMerchantId) {
       setError(
@@ -207,6 +213,7 @@ export function PaymentModal({
       );
       return;
     }
+    const { canUseApplePay, startApplePaySession } = await import("@/lib/wallet-pay.client");
     if (!canUseApplePay()) {
       setError("Apple Pay is not available in this browser. Try Safari on iPhone/Mac, or pay by card.");
       return;
@@ -221,15 +228,15 @@ export function PaymentModal({
     setLoading(true);
     startApplePaySession({
       config: walletConfig,
-      validateMerchant: async (validationURL) => {
+      validateMerchant: async (validationURL: string) => {
         const result = await validateApplePayMerchantSession({ data: { validationURL } });
         if (!result.ok) throw new Error(result.error);
         return JSON.parse(result.sessionJson) as object;
       },
-      onToken: async (tokenJson) => {
+      onToken: async (tokenJson: string) => {
         await finishWallet("apple", tokenJson);
       },
-      onError: (message) => {
+      onError: (message: string) => {
         setError(message);
         setLoading(false);
       },
@@ -256,6 +263,7 @@ export function PaymentModal({
       });
       if (!result.ok) {
         setError(result.error);
+        setLoading(false);
         return;
       }
       // Top-level Monobank checkout for card (and any wallets Monobank enables there).

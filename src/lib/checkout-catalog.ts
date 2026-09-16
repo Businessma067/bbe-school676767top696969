@@ -13,7 +13,7 @@ export const MONOBANK_CURRENCY_UAH = 980;
  * Set `enabled` to false before production go-live.
  */
 export const MONOBANK_TEST_CHARGE = {
-  enabled: true,
+  enabled: false,
   /** 100.00 UAH in kopiyky. */
   amountMinor: 100_00,
   ccy: MONOBANK_CURRENCY_UAH,
