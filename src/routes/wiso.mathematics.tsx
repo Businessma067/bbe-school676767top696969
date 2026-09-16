@@ -34,7 +34,7 @@ export const Route = createFileRoute("/wiso/mathematics")({
       {
         property: "og:description",
         content:
-          "How WiSo mathematics works when WU publishes no official math skriptum — and how to prepare for accuracy and speed.",
+          "How WiSo mathematics works when WU publishes no official math skriptum, and how to prepare for accuracy and speed.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -75,7 +75,7 @@ const faqs = [
 const topicBlocks: { title: string; body: string; bullets: string[] }[] = [
   {
     title: "Algebra & equations",
-    body: "Rearranging formulas, linear and quadratic equations, systems, and inequalities — fast enough that German word problems do not become translation bottlenecks.",
+    body: "Rearranging formulas, linear and quadratic equations, systems, and inequalities. You need to be fast enough that German word problems do not become translation bottlenecks.",
     bullets: [
       "Solve for a variable in multi-step business formulas",
       "Interpret inequalities in “at least / at most” wording",
@@ -93,7 +93,7 @@ const topicBlocks: { title: string; body: string; bullets: string[] }[] = [
   },
   {
     title: "Statistics & probability",
-    body: "Descriptive stats, elementary probability, and conditional reasoning under partial-credit scoring — where one wrong tick can erase hard-won calculation credit.",
+    body: "Descriptive stats, elementary probability, and conditional reasoning under partial-credit scoring. One wrong tick can erase hard-won calculation credit.",
     bullets: [
       "Means, shares, and percentage-point language",
       "Independent vs dependent events",
@@ -102,7 +102,7 @@ const topicBlocks: { title: string; body: string; bullets: string[] }[] = [
   },
   {
     title: "Logical reasoning",
-    body: "WiSo math is not only computation. Many options test whether a conclusion is forced by the stem — including carefully worded German quantifiers.",
+    body: "WiSo math is not only computation. Many options test whether a conclusion is forced by the stem, including carefully worded German quantifiers.",
     bullets: [
       "Necessary vs sufficient conditions",
       "“Always / never / can be” traps",
@@ -117,15 +117,15 @@ const mistakes = [
   "Spending too long on one hard option and starving easier credit elsewhere.",
   "Guessing on close calls without checking whether the penalty is worth it.",
   "Memorising formulas without knowing when they apply.",
-  "Never timing mixed sets — untimed accuracy does not transfer to a 2-hour paper.",
-  "Ignoring review: repeating the same algebra slip across multiple practice sessions.",
+  "Never timing mixed sets. Untimed accuracy does not transfer to a 2-hour paper.",
+  "Ignoring review and repeating the same algebra slip across multiple practice sessions.",
 ];
 
 export function WisoMathematicsPage() {
   return (
     <WisoExamShell
       h1="WU Vienna WiSo Mathematics: Topics, Syllabus & Practice"
-      lead="Mathematics is typically the most time-pressured WiSo section. There is no official WU math skriptum — treat it as secondary-school business math with formula fluency under the clock, in German."
+      lead="Mathematics is one of the three WiSo entrance exam sections. Here is what tends to be tested, why the section usually runs long, and how to practise for accuracy and speed in German."
       heroActions={
         <>
           <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.demo}>Open WiSo practice</WisoPrimaryButton>
@@ -139,12 +139,14 @@ export function WisoMathematicsPage() {
             WU’s WiSo FAQ lists Mathematik as one of three content areas alongside wirtschaftliche
             Grundkenntnisse and deutsches Sprachverständnis. Unlike economics, WU does not publish an
             official math Lernunterlage equivalent to Wirtschaft verstehen. That means your syllabus has
-            to be built from secondary-school business math depth — the same framing BBE applicants use —
+            to be built from secondary-school business math depth, the same framing BBE applicants use,
             with language adapted to German.
           </p>
           <p>
-            {WISO_FORMAT_NOTE}
+            The section is not necessarily hard because the concepts are unusually advanced. More often,
+            the challenge is the amount of work each question demands and the time you have to do it.
           </p>
+          <p>{WISO_FORMAT_NOTE}</p>
         </WisoSection>
 
         <WisoInfoCallout label="Source note" tone="official">
@@ -199,7 +201,7 @@ export function WisoMathematicsPage() {
         <WisoSection id="vs-bbe" title="WiSo math vs BBE math">
           <p>
             Conceptually, much of the calculation toolkit overlaps with BBE mathematics. The differences
-            that matter in prep are language and exam-track isolation: train on German stems so exam day
+            that matter in prep are language and exam-track isolation. Train on German stems so exam day
             is not your first time parsing “mindestens”, “höchstens”, or conditional clauses under the
             clock. Do not use BBE English math packs as your only WiSo practice.
           </p>
@@ -209,7 +211,7 @@ export function WisoMathematicsPage() {
         <WisoSection id="scoring" title="How math interacts with Teilpunktesystem">
           <p>
             Because each stem can hide several independent judgments, a single calculation error can
-            cascade across options — and an incorrect tick can erase correct credit via max/f penalties.
+            cascade across options, and an incorrect tick can erase correct credit via max/f penalties.
             Learn the{" "}
             <WisoTextLink to="/wiso/exam-scoring" className="inline-flex">
               scoring rules
@@ -221,7 +223,7 @@ export function WisoMathematicsPage() {
         <WisoSection id="approach" title="How to practice">
           <ol className="list-decimal space-y-3 pl-5">
             <li>Rebuild weak fundamentals (algebra first) with short daily drills.</li>
-            <li>Add German word-problem vocabulary deliberately — not only symbols.</li>
+            <li>Add German word-problem vocabulary deliberately, not only symbols.</li>
             <li>Move to multi-option stems and mark/unmark strategically.</li>
             <li>Time mixed sets that include easier and harder options under one stem.</li>
             <li>Review every miss: was it calculation, language, or scoring behaviour?</li>

@@ -38,7 +38,7 @@ export const Route = createFileRoute("/wiso/exam-scoring")({
       {
         property: "og:description",
         content:
-          "Official WiSo Teilpunktesystem in plain language — the same partial-credit engine as BBE, with German content.",
+          "Official WiSo Teilpunktesystem in plain language: the same partial-credit engine as BBE, with German content.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "Is WiSo scoring different from BBE?",
     answer:
-      "No — not in mechanism. WU’s Teilpunktesystem WISO PDF describes the same gemischtes Teilpunktesystem / wi2-style rules: credit for correctly marked options, penalties for incorrectly marked ones, and a floor at zero per question. Only the language and content differ.",
+      "No, not in mechanism. WU’s Teilpunktesystem WISO PDF describes the same gemischtes Teilpunktesystem / wi2-style rules: credit for correctly marked options, penalties for incorrectly marked ones, and a floor at zero per question. Only the language and content differ.",
   },
   {
     question: "What do max, r, and f mean?",
@@ -103,7 +103,7 @@ const workedExamples: ScoringExample[] = [
   {
     title: "Partial credit with one miss",
     pattern: [true, true, false, false, false],
-    note: "You mark two correct options and skip the third. Missed credit only — no false-option penalties.",
+    note: "You mark two correct options and skip the third. Missed credit only, no false-option penalties.",
   },
   {
     title: "Correct marks plus one wrong tick",
@@ -130,7 +130,7 @@ export function WisoExamScoringPage() {
   return (
     <WisoExamShell
       h1="WU Vienna WiSo Exam Scoring: Teilpunktesystem Explained"
-      lead="WU publishes an official Teilpunktesystem for WiSo. Mechanically it matches BBE’s partial-credit engine — credit for correct marks, penalties for incorrect ones, floor at zero. This page walks through the rules with worked examples."
+      lead="WiSo exam points are not simply right or wrong. This page explains WU’s Teilpunktesystem, how selections are scored, and what common ticking mistakes cost you."
       heroActions={
         <>
           <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.mockExams}>
@@ -143,14 +143,15 @@ export function WisoExamScoringPage() {
       <div className="space-y-14">
         <WisoSection id="introduction" title="Introduction">
           <p>
-            Applicants often search for “WiSo scoring” because the Aufnahmeprüfung is not a classic
-            single-answer paper. Under each stem you judge several options, and credit and penalties
-            interact. Understanding that logic is part of preparing well — especially under German
-            wording where a single qualifier can flip an option.
+            Applicants often search for “WiSo scoring” because the Aufnahmeprüfung does not behave like a
+            classic single-answer multiple-choice paper. Under each stem you judge several options, and
+            credit and penalties interact. Understanding that logic is part of preparing well, especially
+            under German wording where a single qualifier can flip an option.
           </p>
           <p>
             WU’s official PDF is titled Teilpunktesystem WISO and describes the{" "}
-            <em>gemischtes Teilpunktesystem</em>. For the broader exam format, see the{" "}
+            <em>gemischtes Teilpunktesystem</em>. Mechanically it matches BBE’s partial-credit engine.
+            For the broader exam format, see the{" "}
             <WisoTextLink to="/wiso/entrance-exam" className="inline-flex">
               WiSo Entrance Exam Guide →
             </WisoTextLink>
@@ -200,7 +201,7 @@ export function WisoExamScoringPage() {
             correct one drops the question to zero.
           </p>
           <p>
-            WU confirms the exam is entirely multiple choice; the mix of single- vs multi-correct stems
+            WU confirms the exam is entirely multiple choice. The mix of single- vs multi-correct stems
             can vary by cycle. Train both behaviours so you do not over-generalise from BBE’s five
             true/false statement pattern.
           </p>
@@ -244,7 +245,7 @@ export function WisoExamScoringPage() {
             BBE School’s WiSo-cycle comparison total is{" "}
             <strong>{SCORING_CONFIG.wisoExamTotalPoints} points</strong> for the written exam (versus{" "}
             {SCORING_CONFIG.examTotalPoints} for BBE mocks in the same tooling). Use mocks to see how
-            mixed ticking patterns convert into scores — not only whether individual options feel “right.”
+            mixed ticking patterns convert into scores, not only whether individual options feel “right.”
           </p>
           <WisoInfoCallout label="BBE School practice scoring" tone="note">
             Point allocations in mocks are chosen so practice feels comparable to recent cycles. Always
