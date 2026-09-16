@@ -45,7 +45,7 @@ function siteOrigin(request: Request): string {
   }
 }
 
-/** Creates a Monobank invoice and returns the hosted payment page URL. */
+/** Creates a Monobank iframe invoice and returns the embeddable payment page URL. */
 export const createCheckout = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => CheckoutInput.parse(d))

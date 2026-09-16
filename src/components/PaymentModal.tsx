@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { CreditCard, Lock, Loader2, Ticket } from "lucide-react";
+import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
@@ -20,6 +21,20 @@ import {
 } from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
+
+function isMonoPayOrigin(origin: string): boolean {
+  try {
+    const host = new URL(origin).hostname;
+    return (
+      host === "pay.mbnk.biz" ||
+      host.endsWith(".mbnk.biz") ||
+      host === "pay.monobank.ua" ||
+      host.endsWith(".monobank.ua")
+    );
+  } catch {
+    return false;
+  }
+}
 
 type PaymentModalProps = {
   open: boolean;
@@ -45,6 +60,7 @@ export function PaymentModal({
   const [error, setError] = useState<string | null>(null);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [payPageUrl, setPayPageUrl] = useState<string | null>(null);
 
   const product = PAID_PRODUCTS[productSlug];
   const discountApplied = discountPct > 0 && !!appliedPromoCode;
@@ -66,6 +82,7 @@ export function PaymentModal({
     setError(null);
     setPromoUnlocked(false);
     setAuthOpen(false);
+    setPayPageUrl(null);
 
     // Buying requires an account first.
     void (async () => {
@@ -76,6 +93,37 @@ export function PaymentModal({
       }
     })();
   }, [open, onOpenChange]);
+
+  useEffect(() => {
+    if (!payPageUrl) return;
+
+    const onMessage = (event: MessageEvent) => {
+      if (!isMonoPayOrigin(event.origin)) return;
+      let payload: { message?: unknown; value?: unknown } | null = null;
+      try {
+        payload =
+          typeof event.data === "string"
+            ? (JSON.parse(event.data) as { message?: unknown; value?: unknown })
+            : (event.data as { message?: unknown; value?: unknown });
+      } catch {
+        return;
+      }
+      if (!payload || typeof payload.message !== "string") return;
+
+      if (payload.message === "close-button") {
+        setPayPageUrl(null);
+        setLoading(false);
+        return;
+      }
+      // Mono app deep link on mobile — open outside the iframe.
+      if (payload.message === "monopay-link" && typeof payload.value === "string") {
+        window.location.href = payload.value;
+      }
+    };
+
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, [payPageUrl]);
 
   const handlePay = async () => {
     setError(null);
@@ -98,13 +146,13 @@ export function PaymentModal({
         setError(result.error);
         return;
       }
-      // Top-level Monobank checkout (not an iframe). Apple Pay requires a
-      // top-level page; embedded checkouts fail instantly with "not completed".
-      // Full-page checkout also scrolls normally on phones so card is reachable.
-      window.location.assign(result.pageUrl);
+      // Stay on our page: embed Monobank’s iframe widget (card + Apple Pay +
+      // Google Pay). Requires displayType:"iframe" on create + allow="payment *".
+      setPayPageUrl(result.pageUrl);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not start the payment.";
       setError(/unauthorized/i.test(message) ? "Sign in to continue to payment." : message);
+    } finally {
       setLoading(false);
     }
   };
@@ -229,12 +277,25 @@ export function PaymentModal({
 
   return (
     <>
-      <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-h-[90vh] overflow-y-auto overscroll-contain sm:max-w-md">
+      <Dialog
+        open={open}
+        onOpenChange={(next) => {
+          if (!next) setPayPageUrl(null);
+          onOpenChange(next);
+        }}
+      >
+        <DialogContent
+          className={cn(
+            "max-h-[95vh] overflow-y-auto overscroll-contain",
+            payPageUrl ? "w-[min(100vw-1rem,680px)] max-w-[680px]" : "sm:max-w-md",
+          )}
+        >
           <DialogHeader>
             <DialogTitle className="font-display text-xl">Payment</DialogTitle>
             <DialogDescription>
-              Complete your one-time purchase of {productName}, or redeem a promocode.
+              {payPageUrl
+                ? "Pay by card, Apple Pay, or Google Pay. You will return here after the payment."
+                : `Complete your one-time purchase of ${productName}, or redeem a promocode.`}
             </DialogDescription>
           </DialogHeader>
 
@@ -266,7 +327,25 @@ export function PaymentModal({
             </div>
           </div>
 
-          {promoUnlocked ? (
+          {payPageUrl ? (
+            <div className="iframe-container flex min-h-[576px] w-full flex-col items-center justify-center gap-3">
+              <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-[11px] font-medium text-muted-foreground">
+                <span>Card</span>
+                <span aria-hidden="true">·</span>
+                <span>Apple Pay</span>
+                <span aria-hidden="true">·</span>
+                <span>Google Pay</span>
+              </p>
+              <iframe
+                id="payFrame"
+                title="monopay"
+                src={payPageUrl}
+                allow="payment *; publickey-credentials-get *"
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="h-[min(640px,72vh)] w-full min-h-[576px] rounded-3xl border-0 bg-background"
+              />
+            </div>
+          ) : promoUnlocked ? (
             <div
               className="rounded-xl border p-4 text-center"
               style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10` }}
@@ -300,8 +379,8 @@ export function PaymentModal({
               <TabsContent value="card" className="mt-4">
                 <div className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Continue to Monobank&apos;s payment page to pay by card, Apple Pay, or Google
-                    Pay. Wallet options appear on that page (Safari / supported browsers).
+                    Pay securely through Monobank. The payment form opens here with card, Apple Pay,
+                    and Google Pay; you return automatically after the payment.
                   </p>
 
                   <form onSubmit={handleApplyDiscountOnCard} className="space-y-2">
