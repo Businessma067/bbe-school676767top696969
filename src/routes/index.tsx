@@ -51,18 +51,17 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-type ExamTab = "bbe" | "wiso";
-type FeatureTab = "questions" | "mocks" | "builder" | "tools";
-
-const EXAM_TABS: {
-  id: ExamTab;
+type ExamOption = {
+  id: "bbe" | "wiso";
   label: string;
   title: string;
   description: string;
   differences: string[];
   cta: string;
   to: string;
-}[] = [
+};
+
+const EXAM_OPTIONS: ExamOption[] = [
   {
     id: "bbe",
     label: "BBE",
@@ -95,16 +94,14 @@ const EXAM_TABS: {
   },
 ];
 
-const FEATURE_TABS: {
-  id: FeatureTab;
-  label: string;
+const FEATURE_CARDS: {
+  id: string;
   title: string;
   description: string;
   icon: typeof BookOpen;
 }[] = [
   {
     id: "questions",
-    label: "3000+ questions",
     title: "3,000+ practice questions",
     description:
       "A growing bank of exam-style cases across every content area — with step-by-step explanations under each statement so you learn the logic, not just the answer.",
@@ -112,7 +109,6 @@ const FEATURE_TABS: {
   },
   {
     id: "mocks",
-    label: "Mock exams",
     title: "Full timed mock exams",
     description:
       "Sit complete simulations with real pacing pressure, partial-credit scoring, and review that shows exactly where points were won or lost.",
@@ -120,7 +116,6 @@ const FEATURE_TABS: {
   },
   {
     id: "builder",
-    label: "Mock builder",
     title: "Custom mock builder",
     description:
       "Build your own timed sets by topic and difficulty to close weak spots without wasting hours on material you already know.",
@@ -128,7 +123,6 @@ const FEATURE_TABS: {
   },
   {
     id: "tools",
-    label: "Study tools",
     title: "Flashcards, matching & drills",
     description:
       "Lightweight study tools for definitions, formulas, and rapid recall — designed to fit between full practice sessions.",
@@ -137,12 +131,6 @@ const FEATURE_TABS: {
 ];
 
 export function Index() {
-  const [examTab, setExamTab] = useState<ExamTab>("bbe");
-  const [featureTab, setFeatureTab] = useState<FeatureTab>("questions");
-  const activeExam = EXAM_TABS.find((t) => t.id === examTab)!;
-  const activeFeature = FEATURE_TABS.find((t) => t.id === featureTab)!;
-  const FeatureIcon = activeFeature.icon;
-
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
@@ -185,88 +173,75 @@ export function Index() {
               </p>
             </div>
 
-            <div className="mx-auto mt-10 max-w-4xl">
-              <div
-                className="flex rounded-lg border border-border bg-card p-1"
-                role="tablist"
-                aria-label="Choose exam"
-              >
-                {EXAM_TABS.map((tab) => (
-                  <button
-                    key={tab.id}
-                    type="button"
-                    role="tab"
-                    aria-selected={examTab === tab.id}
-                    onClick={() => setExamTab(tab.id)}
+            <div className="mx-auto mt-10 grid max-w-5xl gap-4 md:grid-cols-2 md:gap-6">
+              {EXAM_OPTIONS.map((exam) => {
+                const isWiso = exam.id === "wiso";
+                return (
+                  <article
+                    key={exam.id}
                     className={cn(
-                      "flex-1 rounded-md px-4 py-3 text-sm font-semibold transition-colors sm:text-base",
-                      examTab === tab.id
-                        ? tab.id === "wiso"
-                          ? "bg-teal-700 text-white"
-                          : "bg-primary text-primary-foreground"
-                        : "text-muted-foreground hover:text-foreground",
+                      "flex flex-col rounded-2xl border p-6 sm:p-8",
+                      isWiso
+                        ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
+                        : "border-border bg-card",
                     )}
                   >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-
-              <div
-                role="tabpanel"
-                className={cn(
-                  "mt-4 rounded-2xl border p-6 sm:p-8",
-                  examTab === "wiso"
-                    ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
-                    : "border-border bg-card",
-                )}
-              >
-                <h2 className="font-display text-2xl font-semibold text-foreground sm:text-3xl">
-                  {activeExam.title}
-                </h2>
-                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                  {activeExam.description}
-                </p>
-                <ul className="mt-5 grid gap-2 sm:grid-cols-2">
-                  {activeExam.differences.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-sm text-foreground sm:text-[0.95rem]"
+                    <p
+                      className={cn(
+                        "text-xs font-semibold uppercase tracking-wide",
+                        isWiso ? "text-teal-800 dark:text-teal-300" : "text-primary",
+                      )}
                     >
-                      <span
-                        className={cn(
-                          "mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full",
-                          examTab === "wiso" ? "bg-teal-700" : "bg-primary",
-                        )}
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <LocalizedLink
-                  to={activeExam.to}
-                  onClick={() => storeExamTrack(examTab)}
-                  className={cn(
-                    "mt-6 inline-flex items-center gap-2 rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
-                    examTab === "wiso"
-                      ? "bg-teal-700 hover:bg-teal-800 focus:ring-teal-700"
-                      : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
-                  )}
-                >
-                  {activeExam.cta}
-                  <ArrowRight className="h-4 w-4" />
-                </LocalizedLink>
-              </div>
+                      {exam.label}
+                    </p>
+                    <h2 className="mt-2 font-display text-xl font-semibold text-foreground sm:text-2xl">
+                      {exam.title}
+                    </h2>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                      {exam.description}
+                    </p>
+                    <ul className="mt-5 space-y-2">
+                      {exam.differences.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2 text-sm text-foreground sm:text-[0.95rem]"
+                        >
+                          <span
+                            className={cn(
+                              "mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full",
+                              isWiso ? "bg-teal-700" : "bg-primary",
+                            )}
+                          />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <LocalizedLink
+                      to={exam.to}
+                      onClick={() => storeExamTrack(exam.id)}
+                      className={cn(
+                        "mt-auto inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+                        isWiso
+                          ? "mt-6 bg-teal-700 hover:bg-teal-800 focus:ring-teal-700"
+                          : "mt-6 bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                      )}
+                    >
+                      {exam.cta}
+                      <ArrowRight className="h-4 w-4" />
+                    </LocalizedLink>
+                  </article>
+                );
+              })}
+            </div>
 
-              <div className="mt-6 text-center">
-                <LocalizedLink
-                  to="/bbe-vs-wiso"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
-                >
-                  Learn more about the difference between the exams
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </LocalizedLink>
-              </div>
+            <div className="mt-6 text-center">
+              <LocalizedLink
+                to="/bbe-vs-wiso"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
+              >
+                Learn more about the difference between the exams
+                <ArrowRight className="h-3.5 w-3.5" />
+              </LocalizedLink>
             </div>
           </div>
         </section>
@@ -283,47 +258,26 @@ export function Index() {
               </p>
             </div>
 
-            <div
-              className="mt-8 flex flex-wrap justify-center gap-2"
-              role="tablist"
-              aria-label="Features"
-            >
-              {FEATURE_TABS.map((tab) => (
-                <button
-                  key={tab.id}
-                  type="button"
-                  role="tab"
-                  aria-selected={featureTab === tab.id}
-                  onClick={() => setFeatureTab(tab.id)}
-                  className={cn(
-                    "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
-                    featureTab === tab.id
-                      ? "bg-[#F2F1ED] text-[#161616]"
-                      : "bg-white/10 text-why-us-fg/75 hover:bg-white/15 hover:text-why-us-fg",
-                  )}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-
-            <div
-              role="tabpanel"
-              className="mt-8 rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10"
-            >
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-caramel-deep/20 text-caramel-deep">
-                  <FeatureIcon className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-display text-xl font-semibold text-why-us-fg sm:text-2xl">
-                    {activeFeature.title}
-                  </h3>
-                  <p className="mt-3 text-base leading-relaxed text-why-us-fg/75 sm:text-lg">
-                    {activeFeature.description}
-                  </p>
-                </div>
-              </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 sm:gap-5">
+              {FEATURE_CARDS.map((feature) => {
+                const Icon = feature.icon;
+                return (
+                  <article
+                    key={feature.id}
+                    className="rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-7"
+                  >
+                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-caramel-deep/20 text-caramel-deep">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="mt-4 font-display text-lg font-semibold text-why-us-fg sm:text-xl">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">
+                      {feature.description}
+                    </p>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
