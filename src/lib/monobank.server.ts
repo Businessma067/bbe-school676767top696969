@@ -28,10 +28,17 @@ export type MonoStatusResponse = {
   modifiedDate?: string;
 };
 
-function monoToken(): string {
-  const token = process.env["MONOBANK_TOKEN"]?.trim();
+function monoTokenSyncFallback(): string | undefined {
+  return process.env["MONOBANK_TOKEN"]?.trim() || undefined;
+}
+
+async function monoToken(): Promise<string> {
+  const { getServerSecret } = await import("@/lib/server-secret.server");
+  const token = (await getServerSecret("MONOBANK_TOKEN")) ?? monoTokenSyncFallback();
   if (!token) {
-    throw new Error("MONOBANK_TOKEN is not configured on the server.");
+    throw new Error(
+      "MONOBANK_TOKEN is not configured on the server. Add a Cloud secret named exactly MONOBANK_TOKEN in Lovable (More → Cloud → Secrets), then republish/update the preview. This is required for both on-site checkout and Monobank redirect.",
+    );
   }
   return token;
 }
@@ -49,10 +56,11 @@ export async function createMonoInvoice(input: {
   basketIconUrl?: string;
 }): Promise<{ invoiceId: string; pageUrl: string }> {
   const ccy = input.ccy ?? 978;
+  const token = await monoToken();
   const res = await fetch(`${MONO_API}/invoice/create`, {
     method: "POST",
     headers: {
-      "X-Token": monoToken(),
+      "X-Token": token,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
@@ -95,8 +103,9 @@ export async function createMonoInvoice(input: {
 }
 
 export async function fetchMonoInvoiceStatus(invoiceId: string): Promise<MonoStatusResponse> {
+  const token = await monoToken();
   const res = await fetch(`${MONO_API}/invoice/status?invoiceId=${encodeURIComponent(invoiceId)}`, {
-    headers: { "X-Token": monoToken() },
+    headers: { "X-Token": token },
   });
   const text = await res.text();
   if (!res.ok) {
