@@ -26,7 +26,8 @@ function Mock4CaseAuditPage() {
           <h1 className="font-display text-2xl font-semibold">Mock Exam 4 — case + KaTeX audit</h1>
           <p className="text-sm text-muted-foreground">rev {MOCK_EXAM_4_CONTENT_REV}</p>
           <p className="text-sm text-muted-foreground">
-            If this page still shows an older rev after GitHub sync, Lovable preview is stale. Custom
+            If this page still shows an older rev after GitHub sync, Lovable preview is stale.
+            After a successful update the stamp must include <code>ff-push sync</code>. Custom
             math Q22–33 must render KaTeX, not raw <code>$$…$$</code>.
           </p>
         </header>
