@@ -6,7 +6,11 @@ import { ExamTrackSwitcher, TrackBrandMark } from "@/components/ExamTrackSwitche
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileNav } from "@/components/MobileNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { navItemsForAccess, shouldShowSiteNav } from "@/config/site-nav";
+import {
+  navItemsForAccess,
+  shouldShowSiteNav,
+  type NavItem,
+} from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { resolveExamTrack } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
@@ -16,6 +20,8 @@ type SiteHeaderProps = {
   actions?: ReactNode;
   left?: ReactNode;
   center?: ReactNode;
+  /** Override default access/track-based nav items (e.g. homepage chooser links). */
+  navItems?: NavItem[];
   showNav?: boolean;
   showMobileNav?: boolean;
   maxWidthClassName?: string;
@@ -30,6 +36,7 @@ export function SiteHeader({
   actions,
   left,
   center,
+  navItems: navItemsProp,
   showNav,
   showMobileNav,
   maxWidthClassName: _maxWidthClassName,
@@ -44,7 +51,8 @@ export function SiteHeader({
   const pathForNav = stripLocalePrefix(pathname);
   const track = resolveExamTrack(pathname);
   const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
-  const navItems = navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
+  const navItems =
+    navItemsProp ?? navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 
@@ -58,23 +66,26 @@ export function SiteHeader({
     >
       <div
         className={cn(
-          "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3 lg:flex-nowrap lg:gap-x-4 lg:px-8",
+          "mx-auto grid w-full max-w-none grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3 lg:gap-x-4 lg:px-8",
           "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
           !compact && "sm:py-4",
           innerClassName,
         )}
       >
-        {left ?? <TrackBrandMark compact={compact} />}
+        {/* Left cluster: brand + track/theme so the center nav can sit visually centered */}
+        <div className="flex min-w-0 items-center justify-self-start gap-1.5 sm:gap-2.5">
+          {left ?? <TrackBrandMark compact={compact} />}
+          {!hideTrackSwitcher ? <ExamTrackSwitcher /> : null}
+          <ThemeToggle />
+        </div>
         {center ??
           (navVisible ? (
             <DesktopNav items={navItems} />
           ) : (
-            <div className="min-w-0 flex-1" aria-hidden="true" />
+            <div className="min-w-0" aria-hidden="true" />
           ))}
-        <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1 sm:gap-2.5">
+        <div className="flex min-w-0 items-center justify-self-end gap-1 sm:gap-2.5">
           {actions}
-          {!hideTrackSwitcher ? <ExamTrackSwitcher /> : null}
-          <ThemeToggle />
           <LanguageSwitcher />
           <AuthNav />
           {mobileVisible ? (

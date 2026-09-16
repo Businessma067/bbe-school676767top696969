@@ -15,6 +15,7 @@ import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { homepageNavItems } from "@/config/site-nav";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
@@ -149,9 +150,10 @@ export function Index() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
-        showNav={false}
-        showMobileNav={false}
+        showNav
+        showMobileNav
         hideTrackSwitcher
+        navItems={homepageNavItems()}
         left={
           <LocalizedLink
             to="/"
