@@ -35,7 +35,7 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
   }),
   component: function WisoEconomicsTasksRoute() {
     return (
-      <RequireFullCourse minTier="full">
+      <RequireFullCourse minTier="full" productSlug="wiso-full-course">
         <EconomicsTasksPage
           chapters={CHAPTERS}
           loadAllChapters={loadAllWisoEconomicsChapterTasks}

@@ -6,6 +6,7 @@ import {
   courseLockFeatureForPath,
 } from "@/components/CourseLockedView";
 import {
+  accessOwnsProduct,
   fetchAccessState,
   peekAccessState,
   tierAtLeast,
@@ -28,20 +29,29 @@ type GateStatus = "checking" | "allowed" | "locked" | "login";
  *
  * Uses a short-lived in-memory entitlement cache so navigating between
  * flashcards / matching / tutor does not blank the page on every click.
+ *
+ * Pass `productSlug` for track-specific SKUs (e.g. `wiso-full-course`) so BBE
+ * Full does not unlock WiSo and vice versa.
  */
 export function RequireFullCourse({
   children,
   minTier = "lite",
+  productSlug,
 }: {
   children: ReactNode;
   /** "none" = any signed-in user, "lite" = Lite or Full, "full" = Full only. */
   minTier?: AccessTier;
+  /** When set, require enrollment in this product (admins still pass). */
+  productSlug?: string;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const cached = peekAccessState();
   const [status, setStatus] = useState<GateStatus>(() => {
     if (!cached) return "checking";
     if (!cached.signedIn) return "login";
+    if (productSlug) {
+      return accessOwnsProduct(cached, productSlug) ? "allowed" : "locked";
+    }
     if (minTier !== "none" && !isAllowedForTier(cached.tier, minTier, cached.signedIn)) {
       return "locked";
     }
@@ -59,6 +69,10 @@ export function RequireFullCourse({
         setStatus("login");
         return;
       }
+      if (productSlug) {
+        setStatus(accessOwnsProduct(state, productSlug) ? "allowed" : "locked");
+        return;
+      }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
         setStatus("locked");
         return;
@@ -69,7 +83,7 @@ export function RequireFullCourse({
     return () => {
       cancelled = true;
     };
-  }, [minTier, pathname]);
+  }, [minTier, pathname, productSlug]);
 
   if (status === "allowed") {
     return <>{children}</>;
@@ -101,6 +115,7 @@ export function RequireFullCourse({
       <CourseLockedView
         feature={courseLockFeatureForPath(pathname)}
         minTier={minTier}
+        productSlug={productSlug}
       />
     );
   }

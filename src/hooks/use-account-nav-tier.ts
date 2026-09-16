@@ -2,19 +2,21 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { AccountNavAccess } from "@/config/site-nav";
 import { isAdminEmail } from "@/lib/admin-access";
-import { fetchEnrollments } from "@/lib/user-progress";
+import { fetchEnrollments, WISO_FULL_COURSE_SLUG } from "@/lib/user-progress";
 
 export type AccountNavState = AccountNavAccess & { ready: boolean };
 
 /**
- * Header chrome depends only on whether the account owns Lite and/or Full.
+ * Header chrome depends on which SKUs the account owns.
  * Demo / signed-out / unpaid accounts keep the guest marketing nav on every page.
+ * BBE Lite/Full and WiSo Full are tracked separately so one track does not unlock the other.
  */
 export function useAccountNavTier(): AccountNavState {
   const [ready, setReady] = useState(false);
   const [access, setAccess] = useState<AccountNavAccess>({
     hasLite: false,
     hasFull: false,
+    hasWisoFull: false,
   });
 
   useEffect(() => {
@@ -25,7 +27,7 @@ export function useAccountNavTier(): AccountNavState {
       const session = data.session;
       if (!session) {
         if (!cancelled) {
-          setAccess({ hasLite: false, hasFull: false });
+          setAccess({ hasLite: false, hasFull: false, hasWisoFull: false });
           setReady(true);
         }
         return;
@@ -34,19 +36,22 @@ export function useAccountNavTier(): AccountNavState {
       const email = session.user?.email ?? null;
       const admin = isAdminEmail(email);
 
-      let hasLite = false;
+      let hasLite = admin;
       let hasFull = admin;
+      let hasWisoFull = admin;
 
       try {
         const enrollments = await fetchEnrollments();
-        hasLite = enrollments.some((e) => e.tier === "lite");
-        hasFull = hasFull || enrollments.some((e) => e.tier === "full");
+        hasLite = hasLite || enrollments.some((e) => e.product_slug === "lite-bbe-course");
+        hasFull = hasFull || enrollments.some((e) => e.product_slug === "full-course");
+        hasWisoFull =
+          hasWisoFull || enrollments.some((e) => e.product_slug === WISO_FULL_COURSE_SLUG);
       } catch {
         /* keep admin flag / defaults */
       }
 
       if (cancelled) return;
-      setAccess({ hasLite, hasFull });
+      setAccess({ hasLite, hasFull, hasWisoFull });
       setReady(true);
     };
 

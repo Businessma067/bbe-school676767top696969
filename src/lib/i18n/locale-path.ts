@@ -29,7 +29,6 @@ export const LOCALIZABLE_PATHS = [
   "/wiso/wu-vienna",
   "/wiso/products",
   "/wiso/products/full-course",
-  "/wiso/products/full-course-subjects",
   "/wiso/demo-practice",
   "/wiso/mock-exams",
   "/wiso/mock-builder",

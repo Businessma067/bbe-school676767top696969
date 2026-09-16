@@ -35,7 +35,7 @@ export const Route = createFileRoute("/wiso/products/full-course-math")({
 
 function WisoFullCourseMathTasks() {
   return (
-    <RequireFullCourse minTier="full">
+    <RequireFullCourse minTier="full" productSlug="wiso-full-course">
       <MathTasksPage
         tier="full"
         backTo="/wiso/products/full-course-subjects"

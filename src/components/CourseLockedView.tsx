@@ -20,15 +20,18 @@ export type CourseLockFeature =
 
 export function courseLockFeatureForPath(pathname: string): CourseLockFeature {
   const path = stripLocalePrefix(pathname);
-  if (path.startsWith("/mock-exams")) return "mock-exams";
-  if (path.startsWith("/flashcards")) return "flashcards";
+  if (path.startsWith("/mock-exams") || path.startsWith("/wiso/mock-exams")) return "mock-exams";
+  if (path.startsWith("/flashcards") || path.startsWith("/wiso/flashcards")) return "flashcards";
   if (path.startsWith("/matching")) return "matching";
   if (path.startsWith("/tutor-exam")) return "tutor-exam";
-  if (path.startsWith("/products/custom-mock-builder")) return "mock-builder";
+  if (path.startsWith("/products/custom-mock-builder") || path.startsWith("/wiso/mock-builder")) {
+    return "mock-builder";
+  }
   if (path.startsWith("/practice")) return "practice";
   if (
     path.startsWith("/products/full-course-") ||
-    path.startsWith("/products/lite-bbe-course-")
+    path.startsWith("/products/lite-bbe-course-") ||
+    path.startsWith("/wiso/products/full-course-")
   ) {
     return "course";
   }
@@ -46,33 +49,42 @@ const FEATURE_LABEL: Record<CourseLockFeature, string> = {
   course: "Course content",
 };
 
-export function courseLockCopy(feature: CourseLockFeature, minTier: AccessTier) {
+export function courseLockCopy(
+  feature: CourseLockFeature,
+  minTier: AccessTier,
+  productSlug?: string,
+) {
   const label = FEATURE_LABEL[feature];
   const verb = feature === "course" || feature === "practice" ? "is" : "are";
-  if (minTier === "full") {
+  const isWiso = productSlug === "wiso-full-course";
+  if (isWiso || minTier === "full") {
     return {
-      message: `${label} ${verb} part of the Full Course`,
-      ctaLabel: "Unlock Full Course",
-      ctaTo: "/products/full-course" as const,
+      message: isWiso
+        ? `${label} ${verb} part of the Full WiSo Course`
+        : `${label} ${verb} part of the Full Course`,
+      ctaLabel: isWiso ? "Unlock Full WiSo Course" : "Unlock Full Course",
+      ctaTo: isWiso ? "/wiso/products/full-course" : "/products/full-course",
     };
   }
   return {
     message: `${label} ${verb} part of the Full Course`,
     ctaLabel: "See Pricing",
-    ctaTo: "/products" as const,
+    ctaTo: "/products",
   };
 }
 
 function LockCallout({
   feature,
   minTier,
+  productSlug,
   compact = false,
 }: {
   feature: CourseLockFeature;
   minTier: AccessTier;
+  productSlug?: string;
   compact?: boolean;
 }) {
-  const { message, ctaLabel, ctaTo } = courseLockCopy(feature, minTier);
+  const { message, ctaLabel, ctaTo } = courseLockCopy(feature, minTier, productSlug);
   return (
     <div className="mx-auto flex w-full max-w-md flex-col items-center px-3 text-center">
       <div
@@ -184,12 +196,18 @@ export function LockedFeaturePanel({
 export function CourseLockedView({
   feature,
   minTier = "lite",
+  productSlug,
 }: {
   feature?: CourseLockFeature;
   minTier?: AccessTier;
+  productSlug?: string;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const resolved = feature ?? courseLockFeatureForPath(pathname);
+  const path = stripLocalePrefix(pathname);
+  const resolvedSlug =
+    productSlug ??
+    (path.startsWith("/wiso/products/full-course") ? "wiso-full-course" : undefined);
 
   return (
     <div className="relative min-h-dvh bg-background font-sans text-foreground antialiased">
@@ -204,7 +222,7 @@ export function CourseLockedView({
       </div>
 
       <div className="absolute inset-0 z-40 flex items-center justify-center bg-background/55 px-4 backdrop-blur-[2px]">
-        <LockCallout feature={resolved} minTier={minTier} />
+        <LockCallout feature={resolved} minTier={minTier} productSlug={resolvedSlug} />
       </div>
     </div>
   );

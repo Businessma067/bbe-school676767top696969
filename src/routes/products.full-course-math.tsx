@@ -19,7 +19,7 @@ export const Route = createFileRoute("/products/full-course-math")({
 
 function FullCourseMathTasks() {
   return (
-    <RequireFullCourse minTier="full">
+    <RequireFullCourse minTier="full" productSlug="full-course">
       <MathTasksPage tier="full" backTo="/products/full-course-subjects" />
     </RequireFullCourse>
   );

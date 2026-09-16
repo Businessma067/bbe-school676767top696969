@@ -143,8 +143,10 @@ const products: Product[] = [
     image: WISO_COURSE_IMAGE,
     description:
       "WiSo-track prep: Wirtschaft verstehen economics, mathematics, and German reading comprehension — on dedicated /wiso URLs, visually distinct from BBE.",
-    cta: "View WiSo course",
+    cta: "Buy course · €449",
     to: "/wiso/products/full-course",
+    ownedCta: "Go to course",
+    ownedTo: "/wiso/products/full-course-subjects",
     badge: "WiSo track",
     accent: "wiso",
   },
@@ -160,7 +162,7 @@ const products: Product[] = [
 ];
 
 export function ProductsPage() {
-  const { ready, ownsFullCourse } = useFullCourseAccess();
+  const { ready, ownsFullCourse, ownsWisoFullCourse } = useFullCourseAccess();
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -189,7 +191,9 @@ export function ProductsPage() {
           <div className="grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">
             {products.map((p) => {
               const isFullBbe = p.title === "Full BBE Course";
-              const owned = isFullBbe && ownsFullCourse;
+              const isFullWiso = p.title === "Full WiSo Course";
+              const owned =
+                (isFullBbe && ownsFullCourse) || (isFullWiso && ownsWisoFullCourse);
               const cta = owned && p.ownedCta ? p.ownedCta : p.cta;
               const to = owned && p.ownedTo ? p.ownedTo : p.to;
               const accentColor = p.accent === "wiso" ? INDIGO : ORANGE;
