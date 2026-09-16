@@ -140,7 +140,7 @@ export const WISO_ECONOMICS_CHAPTERS = [
     id: "ch4",
     title: "Digitalisierung und Vernetzung von Wirtschaft und Gesellschaft",
     topics:
-      "Digital transformation, new business models, internet platforms, Wirtschaftsinformatik — WiSo-specific",
+      "Digital transformation, new business models, internet platforms, Wirtschaftsinformatik. WiSo-specific",
     bullets: [
       "Digital transformation of firms and markets",
       "Platforms and networked business models",
