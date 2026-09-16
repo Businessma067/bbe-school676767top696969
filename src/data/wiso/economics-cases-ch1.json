@@ -6,7 +6,7 @@
     "context": "Eine Küstenstadt finanziert einen Leuchtturm über allgemeine Besteuerung statt über individuelle Mautgebühren. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
       "Die Wertaufbewahrungsfunktion des Geldes wird gestärkt, wenn die Inflation sehr hoch und unvorhersehbar ist.",
-      "Trittlinge würden vom Lichtstrahl profitieren, ohne zu zahlen, wenn die Finanzierung ausschließlich auf freiwilligen Spenden beruhte.",
+      "Trittbrettfahrer würden vom Lichtstrahl profitieren, ohne zu zahlen, wenn die Finanzierung ausschließlich auf freiwilligen Spenden beruhte.",
       "Steuerfinanzierung kann Trittellprobleme überwinden, indem sie Beiträge von den Begünstigten in breiter Form erzwingt.",
       "Weil Schiffe private Unternehmen sind, können Leuchtturmdienste per Definition keine öffentlichen Güter sein.",
       "Öffentliche Güter müssen immer kostenlos bereitgestellt werden, ohne dass Steuerzahler irgendwelche Kosten tragen."
@@ -21,7 +21,7 @@
     "tactical_explanations": [
       "Sehr hohe, unvorhersehbare Inflation untergräbt die Verlässlichkeit des Geldes als Wertaufbewahrung: Bargeld, das heute gehalten wird, kauft morgen deutlich weniger. Die Wertaufbewahrungsfunktion wird unter diesen Bedingungen geschwächt, nicht gestärkt. Die Leuchtturmgeschichte ändert an dieser monetären Tatsache nichts.\n\nDie Aussage ist falsch.",
       "Würde der Strahl nur durch freiwillige Spenden finanziert, könnten Schiffe dennoch mit Hilfe des Lichts navigieren, ohne zu zahlen. Diese Nutzung ohne Bezahlung ist das Trittellproblem, das die Aussage benennt.\n\nDie Aussage ist wahr.",
-      "Zwanghafte Steuerbeiträge ziehen Mittel von einer breiten Basis aus Begünstigten und Anwohnern, sodass der Leuchtturm nicht auf freiwillige Spenden angewiesen sein muss, die Trittlinge auslassen würden. Steuerfinanzierung ist ein üblicher Weg, das Unterversorgungsrisiko bei nicht ausschließbaren Leistungen zu mindern.\n\nDie Wahl der Küstenstadt – allgemeine Besteuerung statt individueller Maut – passt zu dieser Logik: Der Strahl schützt viele Schiffe gleichzeitig, und Nichtzahler vom Licht auszuschließen ist praktisch unmöglich.\n\nDie Aussage ist wahr.",
+      "Zwanghafte Steuerbeiträge ziehen Mittel von einer breiten Basis aus Begünstigten und Anwohnern, sodass der Leuchtturm nicht auf freiwillige Spenden angewiesen sein muss, die Trittbrettfahrer auslassen würden. Steuerfinanzierung ist ein üblicher Weg, das Unterversorgungsrisiko bei nicht ausschließbaren Leistungen zu mindern.\n\nDie Wahl der Küstenstadt – allgemeine Besteuerung statt individueller Maut – passt zu dieser Logik: Der Strahl schützt viele Schiffe gleichzeitig, und Nichtzahler vom Licht auszuschließen ist praktisch unmöglich.\n\nDie Aussage ist wahr.",
       "Ob etwas ein öffentliches Gut ist, hängt von Nicht-Ausschließbarkeit und Nicht-Rivalität der Leistung ab, nicht davon, ob die profitierenden Schiffe private Unternehmen sind. Ein Leuchtturmstrahl kann weiterhin ein öffentliches Gut sein, während private Schiffe ihn nutzen. Das Argument „private Schiffe“ definiert das Gut nicht neu.\n\nDie Aussage ist falsch.",
       "Öffentliche Güter werden oft steuerfinanziert; Steuerzahler tragen durchaus Kosten. „Kostenlos bei Nutzung“ ist nicht dasselbe wie „null Kosten für jeden Steuerzahler“. Die absolute Behauptung scheitert.\n\nDie Aussage ist falsch."
     ],
@@ -194,7 +194,7 @@
       "Anwohner, die sauberere Wege ohne Zahlung genießen, veranschaulichen das Trittellproblem.",
       "Öffentlich-gut-ähnliche Vorteile können unterversorgt sein, wenn die Finanzierung allein von freiwilligen Beiträgen abhängt.",
       "Steuerfinanzierung könnte Tritteln entgegenwirken, indem sie Beiträge von Begünstigten in breiter Form verlangt.",
-      "Trittlinge existieren nur, wenn Geld als Tauschmittel funktioniert, nie bei öffentlichen Dienstleistungen.",
+      "Trittbrettfahrer existieren nur, wenn Geld als Tauschmittel funktioniert, nie bei öffentlichen Dienstleistungen.",
       "Freiwillige Finanzierung liefert immer optimale Niveaus öffentlicher Güter ohne jede Unterdeckung."
     ],
     "answer_key": [
@@ -208,8 +208,8 @@
       "Anwohner, die sauberere Wege ohne Beitrag genießen, illustrieren Tritteln: Nutzen ohne Zahlung, wenn die Bereitstellung von Beiträgen anderer abhängt.\n\nDie Aussage ist wahr.",
       "Ruht die Finanzierung nur auf freiwilligen Spenden, können Menschen, die saubere Wege schätzen, dennoch nicht zahlen und hoffen, dass Nachbarn zahlen. Öffentlich-gut-ähnliche Vorteile werden dann unter dem Niveau bereitgestellt, das kollektive Finanzierung tragen könnte.\n\nDie Aussage ist wahr.",
       "Steuerfinanzierung verlangt Beiträge von einer breiten Menge an Begünstigten und Anwohnern und verkleinert den Spielraum, die Wege zu nutzen und nichts zu zahlen. Das ist ein Standardmittel gegen Unterversorgung durch Tritteln.\n\nFreiwillige Kampagnen können helfen, aber Zwang über Steuern ist der Weg, wie viele gemeinsame lokale Einrichtungen stabil finanziert werden. Diese Schlussfolgerung bleibt in den Begriffen dieser Aussage und übernimmt keine andere Definition aus einer anderen Aussage.\n\nDie Aussage ist wahr.",
-      "Trittlinge treten bei öffentlichen Dienstleistungen auf, unabhängig davon, ob die Diskussion Geld als Tauschmittel erwähnt. Wegreinigung, Beleuchtung und ähnliche Leistungen erzeugen das Problem für sich. Die Beschränkung „nur wenn Geld Tauschmittel ist“ ist falsch.\n\nDie Aussage ist falsch.",
-      "Freiwillige Finanzierung bleibt oft hinter dem Ziel zurück, weil Trittlinge nicht zahlen. Sie liefert nicht immer optimale Niveaus öffentlicher Güter. Diese Lesart folgt direkt aus den knappen Mitteln der Aussage, nicht aus einem anderen Kapitelthema.\n\nDie Aussage ist falsch."
+      "Trittbrettfahrer treten bei öffentlichen Dienstleistungen auf, unabhängig davon, ob die Diskussion Geld als Tauschmittel erwähnt. Wegreinigung, Beleuchtung und ähnliche Leistungen erzeugen das Problem für sich. Die Beschränkung „nur wenn Geld Tauschmittel ist“ ist falsch.\n\nDie Aussage ist falsch.",
+      "Freiwillige Finanzierung bleibt oft hinter dem Ziel zurück, weil Trittbrettfahrer nicht zahlen. Sie liefert nicht immer optimale Niveaus öffentlicher Güter. Diese Lesart folgt direkt aus den knappen Mitteln der Aussage, nicht aus einem anderen Kapitelthema.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
@@ -250,7 +250,7 @@
   {
     "subsection": "1.1",
     "case_id": "CASE 2.4.20",
-    "title": "Öffentliche Güter und Trittlinge",
+    "title": "Öffentliche Güter und Trittbrettfahrer",
     "context": "Beurteilen Sie öffentliche Güter, Besteuerung und Trittellprobleme: Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
       "Spezialisierung beseitigt jedes Risiko für ein Unternehmen, wenn es für immer ein enges Produkt beherrscht.",
@@ -374,10 +374,10 @@
   {
     "subsection": "1.1",
     "case_id": "CASE 2.4.27",
-    "title": "Trittlinge beim Straßenkonzert",
+    "title": "Trittbrettfahrer beim Straßenkonzert",
     "context": "Ein kostenloses Open-Air-Konzert wird von Sponsoren finanziert; Passanten hören zu, ohne zu zahlen. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "Zuhörer, die Musik ohne Beitrag genießen, ähneln Trittlingen, wenn die Finanzierung freiwillig ist.",
+      "Zuhörer, die Musik ohne Beitrag genießen, ähneln Trittbrettfahrern, wenn die Finanzierung freiwillig ist.",
       "Reine öffentliche-Güter-Logik gilt vollständig nur, wenn das Konzert für alle Zuhörer nicht ausschließbar und nicht rival ist.",
       "Steuerfinanzierte öffentliche Veranstaltungen könnten Tritteln im Vergleich zu rein freiwilligen Sponsorenmodellen verringern.",
       "Trittellprobleme entstehen nur, wenn Inflation die Kaufkraft von Tickets untergräbt.",
@@ -391,7 +391,7 @@
       false
     ],
     "tactical_explanations": [
-      "Passanten, die das Open-Air-Konzert ohne Zahlung genießen, während Sponsoren finanzieren, ähneln Trittlingen unter freiwilliger Finanzierung. Diese Lesart folgt direkt aus den knappen Mitteln der Aussage, nicht aus einem anderen Kapitelthema.\n\nDie Aussage ist wahr.",
+      "Passanten, die das Open-Air-Konzert ohne Zahlung genießen, während Sponsoren finanzieren, ähneln Trittbrettfahrern unter freiwilliger Finanzierung. Diese Lesart folgt direkt aus den knappen Mitteln der Aussage, nicht aus einem anderen Kapitelthema.\n\nDie Aussage ist wahr.",
       "Volle reine-öffentliche-Güter-Logik braucht Nicht-Ausschließbarkeit und Nicht-Rivalität für Zuhörer. Ein kostenloses Open-Air kann das annähern, wenn keine Zäune da sind und ein weiterer Zuhörer anderen den Klang nicht verdrängt; die „nur wenn“-Vorsicht der Aussage trifft zu.\n\nDie Aussage ist wahr.",
       "Steuerfinanzierte öffentliche Veranstaltungen können Beiträge von einer breiten Basis erzwingen, die Abhängigkeit allein von Sponsoren verringern und Tritteln gegenüber einem rein freiwilligen Modell eindämmen.\n\nStädte mischen manchmal Sponsoring mit öffentlichen Mitteln deshalb: freiwilliges Geld hilft, aber Steuerfinanzierung stabilisiert die Bereitstellung, wenn offener Zugang Nichtzahlung einlädt.\n\nDie Aussage ist wahr.",
       "Trittellprobleme betreffen Menschen, die einen gemeinsamen Dienst ohne Zahlung nutzen. Sie entstehen nicht nur durch Inflation, die Ticketwerte mindert. Das Konzertbeispiel braucht keine Inflationsgeschichte für Tritteln.\n\nDie Aussage ist falsch.",
@@ -409,7 +409,7 @@
     "context": "Beurteilen Sie kombinierte Konzepte aus Wirtschaftskreislauf, Geld, öffentlichen Gütern und Spezialisierung: Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
       "Geld wirkt in der monetären Wirtschaft als Tauschmittel, Recheneinheit und Wertaufbewahrung.",
-      "Besteuerung kann öffentliche Güter und Transfers finanzieren, wenn Trittlinge freiwillige Bereitstellung unterfinanzieren würden.",
+      "Besteuerung kann öffentliche Güter und Transfers finanzieren, wenn Trittbrettfahrer freiwillige Bereitstellung unterfinanzieren würden.",
       "Inflation mindert die Kaufkraft; die EZB strebt Stabilität knapp unter 2 % an.",
       "Arbeitsteilung steigert die Produktivität, kann aber Monotonie und Abhängigkeitsnachteile mit sich bringen.",
       "Erweiterte Wirtschaftskreislaufmodelle verknüpfen Haushalte, Unternehmen und Staat über Einkommen, Ausgaben und Steuern."
@@ -423,7 +423,7 @@
     ],
     "tactical_explanations": [
       "In einer monetären Wirtschaft dient Geld als Tauschmittel, Recheneinheit und Wertaufbewahrung. Die Drei-Funktionen-Liste in der Aussage ist der übliche Kern.\n\nDie Aussage ist wahr.",
-      "Wenn Trittlinge freiwillige Bereitstellung unterfinanzieren würden, kann Besteuerung öffentliche Güter und Transfers finanzieren, sodass gemeinsame Leistungen und Umverteilung dennoch stattfinden. Diese fiskalische Rolle ist eine zentrale Lektion der Finanzwissenschaft.\n\nDie Aussage ist wahr.",
+      "Wenn Trittbrettfahrer freiwillige Bereitstellung unterfinanzieren würden, kann Besteuerung öffentliche Güter und Transfers finanzieren, sodass gemeinsame Leistungen und Umverteilung dennoch stattfinden. Diese fiskalische Rolle ist eine zentrale Lektion der Finanzwissenschaft.\n\nDie Aussage ist wahr.",
       "Inflation mindert, was Geldbestände kaufen; ein EZB-Ziel knapp unter 2 % strebt niedrige, stabile Inflation statt Preischaos an. Kaufkraftverlässlichkeit ist der praktische Gewinn dieses Ziels.\n\nHaushalte mit Bargeld und Unternehmen mit Verträgen profitieren, wenn das allgemeine Preisniveau nicht wild schwankt. Diese Schlussfolgerung bleibt in den Begriffen dieser Aussage und übernimmt keine andere Definition aus einer anderen Aussage.\n\nDie Aussage ist wahr.",
       "Arbeitsteilung steigert den Output pro Arbeiter durch Fokus und Wiederholung, kann aber Monotonie und enge Abhängigkeit zwischen Stufen mit sich bringen. Sowohl der Gewinn als auch die Nachteile gehören in eine vollständige Wiederholung.\n\nDie Aussage ist wahr.",
       "Erweiterte Wirtschaftskreislaufmodelle verbinden Haushalte, Unternehmen und Staat über Einkommen, Ausgaben, Steuern und öffentliche Ausgaben. Die Aussage fasst diese Drei-Akteure-Verknüpfung richtig zusammen.\n\nDie Aussage ist wahr."
