@@ -2,17 +2,9 @@
  * Browser helpers for native Apple Pay + Google Pay (Monobank acquiring).
  */
 
-export type WalletPayConfig = {
-  amountMinor: number;
-  totalPrice: string;
-  currencyCode: "UAH" | "EUR";
-  countryCode: string;
-  merchantName: string;
-  googleGatewayMerchantId: string;
-  appleMerchantId: string | null;
-  applePayReady: boolean;
-  label: string;
-};
+import type { WalletPayConfig } from "@/lib/wallet-pay.types";
+
+export type { WalletPayConfig } from "@/lib/wallet-pay.types";
 
 type GooglePaymentsClient = {
   isReadyToPay: (request: object) => Promise<{ result: boolean }>;

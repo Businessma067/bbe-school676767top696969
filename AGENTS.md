@@ -16,4 +16,8 @@
 > 4. Do **not** use `git merge --no-ff` into `main` — merge diamonds fight
 >    Lovable’s own `Changes` commits and break “Update to latest preview”.
 > 5. Never force-push `main`.
+> 6. Do not import `*.client.ts` / `*.client.tsx` from isomorphic components
+>    (e.g. `PaymentModal`) — TanStack Start import-protection fails the
+>    production/Lovable preview build. Put shared types in a normal module and
+>    keep browser helpers in a non-`.client` file (or a true client-only island).
 <!-- LOVABLE:END -->

@@ -24,7 +24,7 @@ import {
   PAID_PRODUCTS,
   type PaidProductSlug,
 } from "@/lib/checkout-catalog";
-import type { WalletPayConfig } from "@/lib/wallet-pay.client";
+import type { WalletPayConfig } from "@/lib/wallet-pay.types";
 
 const ORANGE = "#C2643A";
 
@@ -177,7 +177,7 @@ export function PaymentModal({
     let cancelled = false;
     let cleanup: (() => void) | null = null;
 
-    void import("@/lib/wallet-pay.client").then(({ mountGooglePayButton }) => {
+    void import("@/lib/wallet-pay-browser").then(({ mountGooglePayButton }) => {
       if (cancelled) return;
       cleanup = mountGooglePayButton({
         container: el,
@@ -213,7 +213,7 @@ export function PaymentModal({
       );
       return;
     }
-    const { canUseApplePay, startApplePaySession } = await import("@/lib/wallet-pay.client");
+    const { canUseApplePay, startApplePaySession } = await import("@/lib/wallet-pay-browser");
     if (!canUseApplePay()) {
       setError("Apple Pay is not available in this browser. Try Safari on iPhone/Mac, or pay by card.");
       return;
