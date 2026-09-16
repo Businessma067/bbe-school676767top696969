@@ -55,7 +55,10 @@ export function SiteHeader({
     navItemsProp ?? navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
-  /** On phones the hamburger owns track/theme so the top bar stays one clean row. */
+  /**
+   * Below lg the hamburger owns secondary chrome (track, theme, language, guest
+   * auth) so the top bar never packs enough controls to overlap.
+   */
   const chromeInMenu = mobileVisible;
 
   return (
@@ -97,20 +100,26 @@ export function SiteHeader({
             ))}
         </div>
 
-        <div className="ml-auto flex min-w-0 max-w-full flex-wrap items-center justify-end gap-1 sm:gap-2.5 lg:ml-0 lg:justify-self-end">
+        <div className="ml-auto flex min-w-0 max-w-full flex-wrap items-center justify-end gap-1.5 sm:gap-2.5 lg:ml-0 lg:justify-self-end">
           {actions ? (
-            <div className="order-last flex max-w-full basis-full flex-wrap items-center justify-end gap-1 sm:order-none sm:basis-auto sm:gap-2">
+            <div className="order-last flex max-w-full basis-full flex-wrap items-center justify-end gap-1.5 sm:order-none sm:basis-auto sm:gap-2">
               {actions}
             </div>
           ) : null}
-          <LanguageSwitcher />
-          <AuthNav />
+          <LanguageSwitcher
+            className={cn(chromeInMenu && "hidden lg:inline-flex")}
+          />
+          <AuthNav hideGuestLinks={chromeInMenu} />
           {mobileVisible ? (
-            <MobileNav
-              items={navItems}
-              showTrackSwitcher={!hideTrackSwitcher}
-              showThemeToggle
-            />
+            <div className="lg:hidden">
+              <MobileNav
+                items={navItems}
+                showTrackSwitcher={!hideTrackSwitcher}
+                showThemeToggle
+                showLanguageSwitcher
+                showGuestAuth
+              />
+            </div>
           ) : null}
         </div>
       </div>

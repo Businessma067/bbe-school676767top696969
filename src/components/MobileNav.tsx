@@ -1,10 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import type { NavItem } from "@/config/site-nav";
 import { ExamTrackSwitcher } from "@/components/ExamTrackSwitcher";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
+import { supabase } from "@/integrations/supabase/client";
 import { NavItemLink } from "./NavItemLink";
 
 import {
@@ -17,18 +21,49 @@ import {
 
 type MobileNavProps = {
   items: NavItem[];
-  /** Mirror SiteHeader: track switcher lives in the sheet on small screens. */
+  /** Mirror SiteHeader: these controls live in the sheet on small screens. */
   showTrackSwitcher?: boolean;
   showThemeToggle?: boolean;
+  showLanguageSwitcher?: boolean;
+  showGuestAuth?: boolean;
 };
 
 export function MobileNav({
   items,
   showTrackSwitcher = false,
   showThemeToggle = false,
+  showLanguageSwitcher = false,
+  showGuestAuth = false,
 }: MobileNavProps) {
   const [open, setOpen] = useState(false);
-  const showChrome = showTrackSwitcher || showThemeToggle;
+  const [auth, setAuth] = useState<AuthState | null>(null);
+  const [authReady, setAuthReady] = useState(false);
+  const showChrome =
+    showTrackSwitcher || showThemeToggle || showLanguageSwitcher;
+
+  useEffect(() => {
+    if (!showGuestAuth) return;
+    let cancelled = false;
+    const refresh = async () => {
+      const next = await getCurrentAuthState();
+      if (!cancelled) {
+        setAuth(next);
+        setAuthReady(true);
+      }
+    };
+    void refresh();
+    const { data } = supabase.auth.onAuthStateChange((event) => {
+      if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") {
+        void refresh();
+      }
+    });
+    return () => {
+      cancelled = true;
+      data.subscription.unsubscribe();
+    };
+  }, [showGuestAuth]);
+
+  const guestAuthVisible = showGuestAuth && authReady && !auth;
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -62,10 +97,11 @@ export function MobileNav({
             <div className="flex flex-wrap items-center gap-2 border-b border-border px-4 py-3 sm:px-6 lg:hidden">
               {showTrackSwitcher ? <ExamTrackSwitcher /> : null}
               {showThemeToggle ? <ThemeToggle /> : null}
+              {showLanguageSwitcher ? <LanguageSwitcher /> : null}
             </div>
           ) : null}
 
-          <nav className="overflow-y-auto px-4 py-4 sm:px-6">
+          <nav className="flex-1 overflow-y-auto px-4 py-4 sm:px-6">
             <ul className="flex flex-col gap-1">
               {items.map((item) => (
                 <li key={item.label}>
@@ -78,6 +114,25 @@ export function MobileNav({
               ))}
             </ul>
           </nav>
+
+          {guestAuthVisible ? (
+            <div className="flex flex-col gap-2 border-t border-border px-4 py-4 sm:px-6 lg:hidden">
+              <LocalizedLink
+                to="/login"
+                onClick={() => setOpen(false)}
+                className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold hover:bg-secondary"
+              >
+                Sign in
+              </LocalizedLink>
+              <LocalizedLink
+                to="/signup"
+                onClick={() => setOpen(false)}
+                className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90"
+              >
+                Sign up
+              </LocalizedLink>
+            </div>
+          ) : null}
         </div>
       </SheetContent>
     </Sheet>

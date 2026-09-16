@@ -5,7 +5,12 @@ import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { ChevronDown } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 
-export function AuthNav() {
+type AuthNavProps = {
+  /** When true, hide Sign in / Sign up (they live in the mobile menu instead). */
+  hideGuestLinks?: boolean;
+};
+
+export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   const [auth, setAuth] = useState<AuthState | null>(null);
   const [ready, setReady] = useState(false);
   const [open, setOpen] = useState(false);
@@ -44,12 +49,32 @@ export function AuthNav() {
     return () => document.removeEventListener("mousedown", handle);
   }, [open]);
 
-  if (!ready)
+  if (!ready) {
+    if (hideGuestLinks) return null;
     return (
       <div className="h-9 w-16 rounded-md border border-border bg-card sm:w-28" aria-hidden="true" />
     );
+  }
 
   if (!auth) {
+    if (hideGuestLinks) {
+      return (
+        <div className="hidden shrink-0 items-center gap-2 lg:flex">
+          <LocalizedLink
+            to="/login"
+            className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+          >
+            Sign in
+          </LocalizedLink>
+          <LocalizedLink
+            to="/signup"
+            className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
+          >
+            Sign up
+          </LocalizedLink>
+        </div>
+      );
+    }
     return (
       <div className="flex shrink-0 items-center gap-1 sm:gap-2">
         <LocalizedLink
