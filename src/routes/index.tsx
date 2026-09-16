@@ -99,6 +99,7 @@ const FEATURE_CARDS: {
   title: string;
   description: string;
   icon: typeof BookOpen;
+  tools?: { name: string; blurb: string }[];
 }[] = [
   {
     id: "questions",
@@ -123,10 +124,24 @@ const FEATURE_CARDS: {
   },
   {
     id: "tools",
-    title: "Flashcards, matching & drills",
+    title: "Study tools",
     description:
-      "Lightweight study tools for definitions, formulas, and rapid recall — designed to fit between full practice sessions.",
+      "Quick drills between full practice sessions — flip flash cards for definitions and formulas, race through matching boards, or take a tutor exam for a random theory quiz with instant feedback.",
     icon: Puzzle,
+    tools: [
+      {
+        name: "Flash cards",
+        blurb: "Flip through definitions, formulas, and vocab until recall feels automatic.",
+      },
+      {
+        name: "Matching",
+        blurb: "Pair each term with its meaning on a timed board — same decks, different drill.",
+      },
+      {
+        name: "Tutor exam",
+        blurb: "A short random theory quiz with instant feedback from the tutor robot.",
+      },
+    ],
   },
 ];
 
@@ -290,6 +305,16 @@ export function Index() {
                     <p className="mt-2 text-sm leading-relaxed text-why-us-fg/75 sm:text-base">
                       {feature.description}
                     </p>
+                    {feature.tools ? (
+                      <ul className="mt-4 space-y-2.5">
+                        {feature.tools.map((tool) => (
+                          <li key={tool.name} className="text-sm leading-relaxed text-why-us-fg/75">
+                            <span className="font-semibold text-why-us-fg">{tool.name}.</span>{" "}
+                            {tool.blurb}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
                   </article>
                 );
               })}
@@ -349,6 +374,67 @@ export function Index() {
                 cycles.
               </p>
               <PlacementsTicker />
+            </div>
+          </div>
+        </section>
+
+        {/* PARENTS — frank audit teaser (shared for BBE & WiSo) */}
+        <section className="relative bg-background px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-3xl">
+            <div className="text-center">
+              <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
+                A Frank Audit for Parents:
+                <br />
+                <span className="text-muted-foreground">The Real Cost of WU Vienna Admission</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Before choosing a preparation strategy for BBE or WiSo, look at what your child is
+                actually walking into at WU Vienna — and what a wrong plan costs the family in real
+                euros.
+              </p>
+            </div>
+
+            <div className="relative mt-8">
+              <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
+                <p>
+                  The WU Vienna entrance exams are not regular school tests. They are filtering
+                  conveyors. A massive hall, thousands of applicants, echoing announcements — and a
+                  fixed number of seats on the other side. BBE offers about 240 places; WiSo offers
+                  far more, but both still sort a crowded field under the same kind of pressure.
+                </p>
+                <p>
+                  The volume of competitors is not even the hardest part. The real difficulty is
+                  buried in the structural rules the university uses to break the field. Your child
+                  gets less than a minute per statement — whether that means a dense English passage
+                  (BBE) or German reading and economics wording (WiSo) — or a data-sufficiency style
+                  problem worked entirely in their head. And at WU Vienna a wrong answer does not
+                  just score zero. The computer actively subtracts points from what the student got
+                  right elsewhere.
+                </p>
+              </div>
+
+              <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-background/85 to-background" />
+
+              <div className="relative z-10 flex justify-center py-4">
+                <LocalizedLink
+                  to="/parents"
+                  className="group inline-flex flex-col items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                >
+                  <span>Read the full letter</span>
+                  <svg
+                    className="h-4 w-4 animate-bounce"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </LocalizedLink>
+              </div>
             </div>
           </div>
         </section>

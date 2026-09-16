@@ -222,18 +222,28 @@ export function ProductsPage() {
                   <div
                     className={`relative aspect-[4/3] w-full overflow-hidden bg-secondary ${
                       p.badge ? "rounded-t-[14px]" : "rounded-t-2xl"
-                    } ${isWiso ? "bg-gradient-to-br from-indigo-800 to-indigo-950" : ""}`}
+                    }`}
                   >
                     <img
                       src={p.image}
                       alt={p.title}
                       loading="lazy"
-                      className={`absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03] ${
-                        isWiso ? "opacity-75 mix-blend-luminosity" : ""
-                      }`}
+                      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                     />
                     {isWiso ? (
-                      <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/85 to-indigo-900/20" />
+                      <>
+                        <div
+                          className="pointer-events-none absolute inset-0 ring-1 ring-inset"
+                          style={{ boxShadow: `inset 0 0 0 3px ${INDIGO}` }}
+                          aria-hidden
+                        />
+                        <span
+                          className="absolute left-3 top-3 rounded-md px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-md"
+                          style={{ backgroundColor: INDIGO }}
+                        >
+                          WiSo
+                        </span>
+                      </>
                     ) : null}
                   </div>
                   <div className="flex flex-1 flex-col p-6">

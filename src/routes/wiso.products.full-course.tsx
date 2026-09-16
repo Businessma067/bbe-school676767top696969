@@ -2,20 +2,32 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   BookOpen,
   ListChecks,
-  Languages,
+  Sparkles,
   ClipboardCheck,
+  Gem,
   Check,
+  AlertTriangle,
+  Clock,
+  Quote,
+  Languages,
 } from "lucide-react";
+import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+
+/** Shared poster art; WiSo stands out via indigo frame + badge (no blur wash). */
+const FULL_COURSE_IMAGE = "/full-course-product-v2.png";
 
 const PATH = "/wiso/products/full-course" as const;
 const INDIGO = "#3730A3";
 
 export const Route = createFileRoute("/wiso/products/full-course")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(wisoCourseFaqs)) },
+    ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
       { title: "Full WiSo Course — WU Aufnahmeprüfung Prep | BBE School" },
@@ -25,134 +37,362 @@ export const Route = createFileRoute("/wiso/products/full-course")({
           "Full WiSo Course: Wirtschaft verstehen economics, mathematics, German reading, mocks and study tools for the WU Vienna WiSo exam.",
       },
       { property: "og:title", content: "Full WiSo Course — Unlock WiSo Prep" },
+      {
+        property: "og:description",
+        content:
+          "WiSo-track prep for WU Vienna: economics, math, German comprehension, timed mocks, and explanations.",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
       ...socialImageMetaForPath(PATH),
     ],
   }),
   component: WisoFullCourseProduct,
 });
 
+const fullStats = [
+  { value: "3", label: "Pillars" },
+  { value: "2,703", label: "Places", sub: "WiSo intake" },
+  { value: "Mocks", label: "On /wiso URLs", sub: "Track-native" },
+];
+
 const features = [
   {
     icon: BookOpen,
     title: "3 WiSo pillars",
     text: "Economics (Wirtschaft verstehen), Mathematics, and German reading comprehension.",
+    accent: false,
   },
   {
     icon: ListChecks,
     title: "Exam-format practice",
     text: "Statement-style cases with Teilpunktesystem scoring — not BBE English drills.",
+    accent: false,
   },
   {
     icon: Languages,
     title: "German-first design",
     text: "Built around deutsches Sprachverständnis and German economics wording.",
+    accent: true,
+  },
+  {
+    icon: Sparkles,
+    title: "Explanations",
+    text: "Written breakdowns so you learn the logic, not just the answer mark.",
+    accent: true,
   },
   {
     icon: ClipboardCheck,
     title: "Mocks on /wiso URLs",
     text: "Timed mocks and builder stay on the WiSo track so you never teleport into BBE.",
+    accent: true,
+  },
+  {
+    icon: Gem,
+    title: "Study tools",
+    text: "Flash cards, matching, and tutor exam drills between full practice sessions.",
+    accent: true,
   },
 ];
+
+const failureReasons = [
+  "They study BBE-style English materials for a German-taught exam, so Sprachverständnis still feels unfamiliar on exam day.",
+  "They memorize Wirtschaft verstehen chapters without practicing statement traps, so plausible-sounding false claims catch them out.",
+  "They never train the Teilpunktesystem, so they answer too aggressively and lose points they already earned.",
+  "They run out of time switching between economics, math, and German reading without mixed timed sets.",
+  "They study alone with no way to check whether their reading of a dense German passage is actually correct.",
+];
+
+const wisoCourseFaqs = [
+  {
+    question: "What is included in the Full WiSo Course?",
+    answer:
+      "Practice aligned to Wirtschaft verstehen, mathematics, and German reading comprehension, plus timed mocks and study tools on dedicated /wiso URLs — separate from the BBE track.",
+  },
+  {
+    question: "Is checkout available now?",
+    answer:
+      "The WiSo course page and demo URLs are live so you can explore the track. Paid checkout for Full WiSo Course is next; until then you can preview the WiSo demo and compare with Full BBE Course.",
+  },
+  {
+    question: "How is this different from the Full BBE Course?",
+    answer:
+      "BBE is English-taught with English reading and a smaller intake. WiSo is German-taught: economics wording, math, and deutsches Sprachverständnis — no English section. Content and URLs stay on the WiSo track.",
+  },
+  {
+    question: "Does it cover the Teilpunktesystem?",
+    answer:
+      "Yes. Practice and mocks are built around partial-credit scoring so you learn when answering is worth the risk and when skipping protects your score.",
+  },
+  {
+    question: "Can I switch from BBE prep later?",
+    answer:
+      "You can explore both tracks from the products page. Choose the exam you will actually sit — mixing tracks usually wastes time on the wrong language section.",
+  },
+];
+
+function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
+  const id = `ws-${Math.random().toString(36).slice(2, 9)}`;
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+      <defs>
+        <linearGradient id={id}>
+          <stop offset="87%" stopColor={INDIGO} />
+          <stop offset="87%" stopColor="transparent" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M12 2.5l2.94 6.36 6.96.66-5.25 4.7 1.56 6.82L12 17.75l-6.21 3.29 1.56-6.82L2.1 9.52l6.96-.66L12 2.5z"
+        fill={fill === "full" ? INDIGO : fill === "almost" ? `url(#${id})` : "transparent"}
+        stroke={INDIGO}
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export function WisoFullCourseProduct() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
+        maxWidthClassName="max-w-7xl"
         actions={
           <LocalizedLink
             to="/products"
-            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
           </LocalizedLink>
         }
       />
 
-      <main>
-        <section className="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-indigo-900 to-indigo-800 px-6 py-16 text-white lg:px-8 lg:py-24">
-          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-200/90">
-                WiSo track · German-taught
-              </p>
-              <h1 className="mt-3 font-display text-4xl font-bold leading-tight sm:text-5xl">
-                Full WiSo Course
-              </h1>
-              <p className="mt-4 text-lg text-indigo-50/90">
-                Complete preparation for the WU Vienna WiSo Aufnahmeprüfung — visually and
-                structurally distinct from the Full BBE Course.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <span className="rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-semibold">
-                  Coming soon · checkout next
-                </span>
-                <LocalizedLink
-                  to="/wiso/demo-practice"
-                  className="inline-flex items-center rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-indigo-900 hover:bg-indigo-50"
-                >
-                  Preview WiSo demo URL
-                </LocalizedLink>
-              </div>
-            </div>
+      <main className="px-6 py-10 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-4xl">
+          <h1 className="mb-6 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            Full WiSo Course
+          </h1>
+
+          <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-secondary shadow-sm">
+            <img
+              src={FULL_COURSE_IMAGE}
+              alt="Full WiSo Course"
+              className="absolute inset-0 h-full w-full object-cover object-center"
+              draggable={false}
+            />
             <div
-              className="relative aspect-[4/3] overflow-hidden rounded-2xl border-2 shadow-2xl"
-              style={{ borderColor: "rgba(255,255,255,0.25)" }}
+              className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset"
+              style={{ boxShadow: `inset 0 0 0 3px ${INDIGO}` }}
+              aria-hidden
+            />
+            <span
+              className="absolute left-4 top-4 rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-md"
+              style={{ backgroundColor: INDIGO }}
             >
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(45,212,191,0.35),transparent_55%),radial-gradient(circle_at_80%_80%,rgba(15,118,110,0.5),transparent_50%)]" />
-              <div className="absolute inset-0 flex flex-col justify-end p-6">
-                <p className="font-display text-2xl font-bold">WiSo · 2,703 places</p>
-                <p className="mt-1 text-sm text-indigo-100/90">
-                  Economics · Math · German comprehension
-                </p>
-              </div>
+              WiSo track
+            </span>
+          </div>
+
+          <div className="mt-5 flex items-center gap-3">
+            <div className="flex items-center gap-0.5">
+              <Star fill="full" />
+              <Star fill="full" />
+              <Star fill="full" />
+              <Star fill="full" />
+              <Star fill="almost" />
+            </div>
+            <span className="font-display text-lg font-semibold text-foreground">4.8</span>
+            <span className="text-sm text-muted-foreground">Early WiSo prep feedback</span>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-border/60 bg-card/60 p-5 shadow-sm backdrop-blur">
+            <div className="grid grid-cols-3 divide-x divide-border/60 text-center">
+              {fullStats.map((s) => (
+                <div key={s.label} className="flex flex-col items-center">
+                  <span className="font-display text-2xl font-bold text-foreground">{s.value}</span>
+                  <span className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</span>
+                  {s.sub ? (
+                    <span className="mt-0.5 text-[10px] font-medium text-muted-foreground/60">
+                      {s.sub}
+                    </span>
+                  ) : null}
+                </div>
+              ))}
             </div>
           </div>
-        </section>
 
-        <section className="px-6 py-16 lg:px-8">
-          <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2">
-            {features.map((f) => (
-              <div
-                key={f.title}
-                className="rounded-2xl border border-indigo-200/70 bg-card p-6 dark:border-indigo-800/40"
-              >
-                <div className="flex items-center gap-3">
-                  <div
-                    className="grid h-10 w-10 place-items-center rounded-lg text-white"
-                    style={{ backgroundColor: INDIGO }}
-                  >
-                    <f.icon className="h-5 w-5" />
-                  </div>
-                  <h2 className="font-display text-lg font-semibold">{f.title}</h2>
-                </div>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.text}</p>
+          <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:flex-row sm:items-center">
+            <div>
+              <div className="text-sm text-muted-foreground">WiSo track · German-taught</div>
+              <div className="mt-1 flex items-baseline gap-2">
+                <span className="font-display text-2xl font-bold text-foreground">Coming soon</span>
+                <span className="text-sm text-muted-foreground">checkout next</span>
               </div>
-            ))}
+            </div>
+            <LocalizedLink
+              to="/wiso/demo-practice"
+              className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 sm:w-auto"
+              style={{ backgroundColor: INDIGO, boxShadow: `0 10px 28px -8px ${INDIGO}90` }}
+            >
+              Preview WiSo demo →
+            </LocalizedLink>
           </div>
 
-          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-border bg-secondary/30 p-6">
-            <h2 className="font-display text-xl font-semibold">Included when live</h2>
-            <ul className="mt-4 space-y-2">
-              {[
-                "Practice aligned to Wirtschaft verstehen",
-                "German reading drills",
-                "Math timed sets",
-                "WiSo mocks & mock builder URLs",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-indigo-700" />
-                  {item}
+          <section className="mt-12">
+            <h2 className="mb-6 text-center font-display text-2xl font-bold tracking-tight text-foreground">
+              Everything included
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {features.map((f) => (
+                <div
+                  key={f.title}
+                  className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                >
+                  <div className="flex items-start gap-4">
+                    <div
+                      className="relative grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl"
+                      style={{
+                        backgroundColor: `${INDIGO}18`,
+                        boxShadow: `inset 0 0 0 1px ${INDIGO}40`,
+                      }}
+                    >
+                      <f.icon className="h-5 w-5" style={{ color: INDIGO }} />
+                      {f.accent ? (
+                        <span
+                          className="absolute -right-1 -top-1 grid h-4 w-4 place-items-center rounded-full text-white"
+                          style={{ backgroundColor: INDIGO }}
+                        >
+                          <Check className="h-3 w-3" strokeWidth={3} />
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="font-display text-base font-semibold text-foreground">
+                        {f.title}
+                      </h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{f.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="mt-16">
+            <h2 className="mb-6 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
+              Why WiSo applicants still struggle — and how this course is built
+            </h2>
+
+            <p className="text-base leading-relaxed text-muted-foreground">
+              More places than BBE does not mean an easy day. The WiSo Aufnahmeprüfung still filters
+              thousands of applicants with dense German reading, statement traps in economics, and
+              math under the same partial-credit pressure.
+            </p>
+
+            <h3 className="mt-8 font-display text-lg font-semibold text-foreground">
+              The most common reasons students underperform:
+            </h3>
+            <ul className="mt-4 space-y-4">
+              {failureReasons.map((r, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span
+                    className="mt-0.5 grid h-6 w-6 flex-shrink-0 place-items-center rounded-full"
+                    style={{ backgroundColor: "#dc262620" }}
+                  >
+                    <AlertTriangle className="h-3.5 w-3.5" style={{ color: "#dc2626" }} />
+                  </span>
+                  <span className="text-sm leading-relaxed text-muted-foreground">{r}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-sm text-muted-foreground">
-              Need BBE instead?{" "}
-              <LocalizedLink to="/products/full-course" className="font-semibold text-primary hover:underline">
-                Full BBE Course
-              </LocalizedLink>
+
+            <h3 className="mt-10 font-display text-2xl font-bold tracking-tight text-foreground">
+              What this course is really about
+            </h3>
+
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              WiSo prep only works when the language of practice matches the exam. This course stays
+              on German economics wording, German reading, and math — on /wiso URLs — so you never
+              waste weeks on BBE English passages you will not see.
             </p>
-          </div>
-        </section>
+
+            <blockquote className="relative my-8 rounded-2xl border-l-4 p-6"
+              style={{ borderColor: INDIGO, backgroundColor: `${INDIGO}10` }}
+            >
+              <Quote className="absolute left-4 top-4 h-5 w-5 opacity-40" style={{ color: INDIGO }} aria-hidden="true" />
+              <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
+                &ldquo;The WiSo exam is not hard because you lack places. It is hard because the
+                format rewards precise reading under time pressure — in German.&rdquo;
+              </p>
+            </blockquote>
+
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Every practice block is meant to feel like the real hall: statement logic, scoring
+              risk, and the discipline to skip when a wrong mark would cost more than silence.
+            </p>
+
+            <div
+              className="mt-10 rounded-2xl border p-6 text-center"
+              style={{
+                borderColor: `${INDIGO}55`,
+                backgroundColor: `${INDIGO}10`,
+              }}
+            >
+              <p className="font-display text-lg font-semibold text-foreground sm:text-xl">
+                Train the WiSo format — not a different exam&apos;s language section.
+              </p>
+              <p className="mt-2 text-xs text-muted-foreground">
+                Demo URLs live now · Full WiSo checkout coming next
+              </p>
+            </div>
+          </section>
+
+          <section className="mt-16 rounded-2xl border border-border bg-gradient-to-br from-secondary to-background p-6 sm:p-8">
+            <div className="flex flex-col items-center gap-4 text-center">
+              <div
+                className="grid h-14 w-14 place-items-center rounded-2xl"
+                style={{ backgroundColor: `${INDIGO}18`, boxShadow: `inset 0 0 0 1px ${INDIGO}40` }}
+              >
+                <Clock className="h-7 w-7" style={{ color: INDIGO }} />
+              </div>
+              <div>
+                <h2 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  How much time it takes
+                </h2>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
+                  Start early, and even one focused hour a day is enough to make the format feel
+                  normal. No cramming — steady German reading, economics statements, and math that
+                  compounds by exam day.
+                </p>
+              </div>
+              <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-background px-5 py-3">
+                <span className="font-display text-3xl font-bold" style={{ color: INDIGO }}>
+                  1
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  hour / day on steady days when you start in advance
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-16 rounded-2xl border border-border bg-card p-6 sm:p-8">
+            <div className="mx-auto max-w-3xl">
+              <h2 className="text-center font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                Frequently asked questions
+              </h2>
+              <SeoFaq className="mt-8" items={wisoCourseFaqs} />
+              <p className="mt-8 text-center text-sm text-muted-foreground">
+                Need BBE instead?{" "}
+                <LocalizedLink
+                  to="/products/full-course"
+                  className="font-semibold text-primary hover:underline"
+                >
+                  Full BBE Course
+                </LocalizedLink>
+              </p>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   );

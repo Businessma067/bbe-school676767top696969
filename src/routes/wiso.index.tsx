@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
+import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
@@ -182,6 +183,36 @@ export function WisoLandingPage() {
           </div>
         </section>
 
+        <section
+          className="relative bg-scroll"
+          style={{
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.86), rgba(0,0,0,0.78)), url(${wuAsset.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+          }}
+        >
+          <div className="mx-auto max-w-5xl px-4 py-12 text-center sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+            <h2 className="font-display text-[1.65rem] font-semibold leading-tight text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.55)] sm:text-4xl">
+              Voices from the WiSo exam floor.
+            </h2>
+          </div>
+        </section>
+
+        <section id="reviews" className="px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-10 max-w-3xl">
+              <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
+                What students said after the WiSo Aufnahmeprüfung.
+              </h2>
+            </div>
+            <div className="grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+              {wisoReports.map((report) => (
+                <ReviewCard key={report.id} report={report} />
+              ))}
+            </div>
+          </div>
+        </section>
+
         <div id="faq">
           <FaqAccordion />
         </div>
@@ -209,5 +240,77 @@ export function WisoLandingPage() {
         </footer>
       </main>
     </div>
+  );
+}
+
+const wisoReports = [
+  {
+    id: 1,
+    name: "Nina, Linz",
+    quote:
+      "I kept underestimating Sprachverständnis. The practice passages finally made me slow down and mark carefully instead of racing. Math was fine once I stopped second-guessing every statement.",
+    badge: "WiSo · accepted",
+  },
+  {
+    id: 2,
+    name: "Jonas, Vienna",
+    quote:
+      "Wirtschaft verstehen felt endless until I drilled statement-style cases. Seeing the Teilpunktesystem in mocks changed how I guessed — I skipped more, and my score went up.",
+    badge: "WiSo · accepted",
+  },
+  {
+    id: 3,
+    name: "Elena, Salzburg",
+    quote:
+      "Honestly I almost switched to BBE because of English. Staying on WiSo was the right call for me. German reading still ate time, but timed sets made the length feel normal by exam day.",
+    badge: "WiSo · accepted",
+  },
+  {
+    id: 4,
+    name: "Matej, Brno",
+    quote:
+      "I’m not a native speaker, so the German section scared me most. Short daily drills helped more than rereading textbooks. Not flashy — just consistent practice that stuck.",
+    badge: "WiSo · accepted",
+  },
+  {
+    id: 5,
+    name: "Lea, Graz",
+    quote:
+      "I didn’t need another lecture series. I needed the format. Once the mocks matched the real pacing, I stopped panicking when a block looked unfamiliar.",
+    badge: "WiSo · accepted",
+  },
+  {
+    id: 6,
+    name: "David, Innsbruck",
+    quote:
+      "My weak spot was jumping between subjects too fast. Building shorter mixed sets fixed that. The exam still felt hard — just not surprising.",
+    badge: "WiSo · accepted",
+  },
+];
+
+function ReviewCard({ report }: { report: (typeof wisoReports)[0] }) {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    <article className="flex flex-col justify-between border-t border-border pt-8">
+      <div>
+        <p className={cn("leading-relaxed text-muted-foreground", !expanded && "line-clamp-3")}>
+          &ldquo;{report.quote}&rdquo;
+        </p>
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-3 text-xs font-semibold text-indigo-700 hover:underline focus:outline-none dark:text-indigo-300"
+          aria-label={expanded ? "Show less" : "Show more"}
+        >
+          {expanded ? "Show less" : "Show more"}
+        </button>
+      </div>
+      <div className="mt-8">
+        <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
+        <div className="mt-3 inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1">
+          <span className="text-xs font-semibold tracking-wide text-foreground">{report.badge}</span>
+        </div>
+      </div>
+    </article>
   );
 }
