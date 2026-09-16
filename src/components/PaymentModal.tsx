@@ -14,11 +14,7 @@ import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
-import {
-  MONOBANK_TEST_CHARGE,
-  PAID_PRODUCTS,
-  type PaidProductSlug,
-} from "@/lib/checkout-catalog";
+import { MONOBANK_TEST_CHARGE, PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
 
@@ -67,9 +63,7 @@ export function PaymentModal({
   const priceFactor = discountApplied ? 1 - discountPct / 100 : 1;
   const catalogEur = product.priceEur;
   const eurPrice = Math.round(catalogEur * priceFactor);
-  const chargeLabel = MONOBANK_TEST_CHARGE.enabled
-    ? MONOBANK_TEST_CHARGE.label
-    : `€${eurPrice}`;
+  const chargeLabel = MONOBANK_TEST_CHARGE.enabled ? MONOBANK_TEST_CHARGE.label : `€${eurPrice}`;
   const showDiscountedTotal = method !== "promo" || discountApplied;
 
   useEffect(() => {
