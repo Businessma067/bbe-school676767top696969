@@ -9,12 +9,12 @@ import {
 const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
 
 /**
- * Auth, account, payment, and other non-indexable prefixes.
+ * Auth, account, payment, gated study tools, and other non-indexable prefixes.
  * New public pages in LOCALIZABLE_PATHS are included automatically unless they
- * match one of these prefixes.
+ * match one of these prefixes (or an exact private path below).
  *
- * Study hubs (/flashcards, /matching, /tutor-exam, /mock-exams) are public
- * landing pages and stay in the sitemap; paid task URLs under products/ are not.
+ * WiSo exam-info pages stay public. Paywalled course study, the WiSo full-course
+ * sales/study surfaces, mock builder, and unfinished WiSo tool placeholders stay out.
  */
 const PRIVATE_PATH_PREFIXES = [
   "/admin",
@@ -35,15 +35,22 @@ const PRIVATE_PATH_PREFIXES = [
   "/products/full-course-math",
   "/products/full-course-english",
   "/products/full-course-economics",
-  "/wiso/products/full-course-subjects",
-  "/wiso/products/full-course-math",
-  "/wiso/products/full-course-economics",
+  "/wiso/products/full-course",
+  "/wiso/demo-practice",
+  "/wiso/mock-exams",
+  "/wiso/mock-builder",
+  "/wiso/flashcards",
   "/products/custom-mock-builder",
   "/products/lite-bbe-course-subjects",
   "/products/lite-bbe-course-math",
   "/products/lite-bbe-course-english",
   "/products/lite-bbe-course-economics",
 ] as const;
+
+/** Exact paths that redirect or must not be indexed (prefix rules would over-match). */
+const PRIVATE_PATHS_EXACT = new Set<string>([
+  "/wiso/products", // redirects to shared /products
+]);
 
 /** Free, no-login English-only pages. Anything behind a course purchase or a
  *  sign-in wall (flashcards, matching, tutor exam, mock exams, course subjects)
@@ -65,6 +72,7 @@ function matchesPrefix(path: string, prefix: string): boolean {
 }
 
 export function isSitemapIndexablePath(pathname: string): boolean {
+  if (PRIVATE_PATHS_EXACT.has(pathname)) return false;
   return !PRIVATE_PATH_PREFIXES.some((prefix) => matchesPrefix(pathname, prefix));
 }
 
@@ -151,7 +159,7 @@ export function renderSitemapXml(): string {
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated from src/lib/sitemap.ts on 2026-09-05. -->
+<!-- Generated from src/lib/sitemap.ts on 2026-09-16. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls}
 </urlset>
