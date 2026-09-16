@@ -1,16 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Suspense, lazy, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
-
-import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
+import { Suspense, lazy, useEffect, useRef, useState } from "react";
+import {
+  BookOpen,
+  ClipboardList,
+  Layers,
+  Puzzle,
+  ArrowRight,
+} from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
 import { ExamCountdown } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
-import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -22,17 +27,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     links: [...hreflangLinks("/"), { rel: "canonical", href: "https://bbe-school.com/" }],
     meta: [
-      { title: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+      { title: "WU Vienna Exam Prep — BBE & WiSo | BBE School" },
       {
         name: "description",
         content:
-          "Prepare for the WU Vienna BBE entrance exam with 1500+ realistic cases, timed mock exams and step-by-step explanations for Economics, Mathematics and English.",
+          "Step-by-step preparation for your 2027 WU exam. Choose BBE (English) or WiSo (German) and prepare with practice questions, mock exams, and study tools.",
       },
-      { property: "og:title", content: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+      { property: "og:title", content: "WU Vienna Exam Prep — BBE & WiSo | BBE School" },
       {
         property: "og:description",
         content:
-          "Practice the real BBE exam format: True/False cases, partial-credit scoring, timed mocks and tactical explanations.",
+          "Prepare for WU Vienna’s BBE or WiSo entrance exam: practice questions, timed mocks, mock builder, and study tools.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://bbe-school.com/" },
@@ -46,54 +51,279 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+type ExamTab = "bbe" | "wiso";
+type FeatureTab = "questions" | "mocks" | "builder" | "tools";
+
+const EXAM_TABS: {
+  id: ExamTab;
+  label: string;
+  title: string;
+  description: string;
+  differences: string[];
+  cta: string;
+  to: string;
+}[] = [
+  {
+    id: "bbe",
+    label: "BBE",
+    title: "Business and Economics (BBE)",
+    description:
+      "WU’s English-taught bachelor. Smaller intake (~240 places), international cohort, winter start only. The exam tests Economics & Business, English, and Mathematics.",
+    differences: [
+      "Exam & study language: English",
+      "~240 places — highly selective",
+      "Subjects: Economics, Math, English",
+      "Winter semester start only",
+    ],
+    cta: "Enter BBE preparation",
+    to: "/bbe",
+  },
+  {
+    id: "wiso",
+    label: "WiSo",
+    title: "Wirtschafts- und Sozialwissenschaften (WiSo)",
+    description:
+      "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension — not English.",
+    differences: [
+      "Exam & study language: German",
+      "~2,703 places — broader intake",
+      "Subjects: Economics, Math, German",
+      "Winter or summer start possible",
+    ],
+    cta: "Enter WiSo preparation",
+    to: "/wiso",
+  },
+];
+
+const FEATURE_TABS: {
+  id: FeatureTab;
+  label: string;
+  title: string;
+  description: string;
+  icon: typeof BookOpen;
+}[] = [
+  {
+    id: "questions",
+    label: "3000+ questions",
+    title: "3,000+ practice questions",
+    description:
+      "A growing bank of exam-style cases across every content area — with step-by-step explanations under each statement so you learn the logic, not just the answer.",
+    icon: BookOpen,
+  },
+  {
+    id: "mocks",
+    label: "Mock exams",
+    title: "Full timed mock exams",
+    description:
+      "Sit complete simulations with real pacing pressure, partial-credit scoring, and review that shows exactly where points were won or lost.",
+    icon: ClipboardList,
+  },
+  {
+    id: "builder",
+    label: "Mock builder",
+    title: "Custom mock builder",
+    description:
+      "Build your own timed sets by topic and difficulty to close weak spots without wasting hours on material you already know.",
+    icon: Layers,
+  },
+  {
+    id: "tools",
+    label: "Study tools",
+    title: "Flashcards, matching & drills",
+    description:
+      "Lightweight study tools for definitions, formulas, and rapid recall — designed to fit between full practice sessions.",
+    icon: Puzzle,
+  },
+];
+
 export function Index() {
+  const [examTab, setExamTab] = useState<ExamTab>("bbe");
+  const [featureTab, setFeatureTab] = useState<FeatureTab>("questions");
+  const activeExam = EXAM_TABS.find((t) => t.id === examTab)!;
+  const activeFeature = FEATURE_TABS.find((t) => t.id === featureTab)!;
+  const FeatureIcon = activeFeature.icon;
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader showNav showMobileNav />
+      <SiteHeader
+        showNav={false}
+        showMobileNav={false}
+        hideTrackSwitcher
+        left={
+          <LocalizedLink
+            to="/"
+            aria-label="BBE School home"
+            className="group flex shrink-0 items-center gap-2 sm:gap-3"
+          >
+            <div className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105">
+              <span className="font-display text-xs font-bold leading-none tracking-tight text-primary-foreground">
+                BBE
+              </span>
+            </div>
+            <span className="hidden font-display text-sm font-bold tracking-tight text-foreground sm:inline">
+              BBE School
+            </span>
+          </LocalizedLink>
+        }
+      />
 
       <main>
-        {/* HERO — centered paper */}
-        <section className="relative overflow-hidden px-4 pt-8 pb-12 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
+        <section className="relative overflow-hidden px-4 pt-8 pb-10 sm:px-6 sm:pt-12 sm:pb-14 lg:px-8 lg:pt-14">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
               <ExamCountdown className="mb-5 sm:mb-6" />
 
               <h1 className="font-display text-[1.85rem] font-semibold leading-[1.12] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
-                Step by step preparation for your 2027 WU BBE exam
+                Step by step preparation for your 2027 WU exam
               </h1>
-
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Master every detail and tactic of the actual exam.
+              <p className="mt-3 font-display text-lg font-semibold tracking-wide text-muted-foreground sm:text-xl">
+                WiSo and BBE
               </p>
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                One platform. Two entrance exams. Pick the path that matches how you want to study at
+                WU Vienna.
+              </p>
+            </div>
+
+            <div className="mx-auto mt-10 max-w-4xl">
+              <div
+                className="flex rounded-lg border border-border bg-card p-1"
+                role="tablist"
+                aria-label="Choose exam"
+              >
+                {EXAM_TABS.map((tab) => (
+                  <button
+                    key={tab.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={examTab === tab.id}
+                    onClick={() => setExamTab(tab.id)}
+                    className={cn(
+                      "flex-1 rounded-md px-4 py-3 text-sm font-semibold transition-colors sm:text-base",
+                      examTab === tab.id
+                        ? tab.id === "wiso"
+                          ? "bg-teal-700 text-white"
+                          : "bg-primary text-primary-foreground"
+                        : "text-muted-foreground hover:text-foreground",
+                    )}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
 
               <div
-                id="full-course"
-                className="mt-7 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row"
+                role="tabpanel"
+                className={cn(
+                  "mt-4 rounded-2xl border p-6 sm:p-8",
+                  examTab === "wiso"
+                    ? "border-teal-200/80 bg-teal-50/40 dark:border-teal-800/40 dark:bg-teal-950/20"
+                    : "border-border bg-card",
+                )}
               >
+                <h2 className="font-display text-2xl font-semibold text-foreground sm:text-3xl">
+                  {activeExam.title}
+                </h2>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  {activeExam.description}
+                </p>
+                <ul className="mt-5 grid gap-2 sm:grid-cols-2">
+                  {activeExam.differences.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-foreground sm:text-[0.95rem]"
+                    >
+                      <span
+                        className={cn(
+                          "mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full",
+                          examTab === "wiso" ? "bg-teal-700" : "bg-primary",
+                        )}
+                      />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
                 <LocalizedLink
-                  to="/demo-practice"
-                  className="inline-flex flex-col items-center justify-center rounded-sm bg-exam-red px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-exam-red/90 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                  to={activeExam.to}
+                  onClick={() => storeExamTrack(examTab)}
+                  className={cn(
+                    "mt-6 inline-flex items-center gap-2 rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2",
+                    examTab === "wiso"
+                      ? "bg-teal-700 hover:bg-teal-800 focus:ring-teal-700"
+                      : "bg-exam-red hover:bg-exam-red/90 focus:ring-ring",
+                  )}
                 >
-                  <span>Try demo-practice</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-white/80">
-                    50+ tasks for start
-                  </span>
+                  {activeExam.cta}
+                  <ArrowRight className="h-4 w-4" />
                 </LocalizedLink>
+              </div>
+
+              <div className="mt-6 text-center">
                 <LocalizedLink
-                  to="/products"
-                  id="explore-courses"
-                  className="inline-flex flex-col items-center justify-center rounded-sm border border-primary bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                  to="/bbe-vs-wiso"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
                 >
-                  <span>Explore Courses</span>
-                  <span className="mt-0.5 text-[11px] font-medium text-primary-foreground/70">
-                    See all BBE School products
-                  </span>
+                  Learn more about the difference between the exams
+                  <ArrowRight className="h-3.5 w-3.5" />
                 </LocalizedLink>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div id="important-features" className="mt-10 sm:mt-12 lg:mt-14">
-              <PrepJourneyRoadmap />
+        <section id="why-choose-us" className="relative overflow-hidden bg-why-us-bg px-6 py-16 lg:px-8 lg:py-20">
+          <div className="relative mx-auto max-w-5xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
+                Why Choose US
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
+                Everything you need to prepare for a WU entrance exam — built around the real format,
+                scoring, and time pressure.
+              </p>
+            </div>
+
+            <div
+              className="mt-8 flex flex-wrap justify-center gap-2"
+              role="tablist"
+              aria-label="Features"
+            >
+              {FEATURE_TABS.map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={featureTab === tab.id}
+                  onClick={() => setFeatureTab(tab.id)}
+                  className={cn(
+                    "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                    featureTab === tab.id
+                      ? "bg-[#F2F1ED] text-[#161616]"
+                      : "bg-white/10 text-why-us-fg/75 hover:bg-white/15 hover:text-why-us-fg",
+                  )}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            <div
+              role="tabpanel"
+              className="mt-8 rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10"
+            >
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-6">
+                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-caramel-deep/20 text-caramel-deep">
+                  <FeatureIcon className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-display text-xl font-semibold text-why-us-fg sm:text-2xl">
+                    {activeFeature.title}
+                  </h3>
+                  <p className="mt-3 text-base leading-relaxed text-why-us-fg/75 sm:text-lg">
+                    {activeFeature.description}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -102,7 +332,6 @@ export function Index() {
           <HowItWorksSection />
         </Suspense>
 
-        {/* PARALLAX BAND — darkened WU campus */}
         <section
           className="relative bg-scroll"
           style={{
@@ -124,100 +353,37 @@ export function Index() {
           </div>
         </section>
 
-        {/* WHY US — high-contrast dark fintech */}
-        <section className="relative overflow-hidden bg-why-us-bg px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
-          <div className="relative mx-auto max-w-6xl">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-display text-[1.75rem] font-semibold leading-[1.1] text-why-us-fg sm:text-4xl lg:text-5xl">
-                Why Choose US
+        <section className="bg-why-us-bg px-6 py-16 lg:px-8 lg:py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-14">
+            <div>
+              <h2 className="font-display text-2xl font-semibold text-why-us-fg sm:text-3xl">
+                Capital preservation
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-why-us-fg/80 sm:text-lg">
-                The standards at WU Vienna are exceptionally high. Let's be honest: entry
-                competition is brutal, and no software can ever guarantee your admission. Success
-                requires hard, disciplined work. But our data proves how we shift the odds in your
-                favor.
+              <p className="mt-4 text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
+                Private tutors in Vienna charge{" "}
+                <span className="text-why-us-fg">€50 to €100 per hour</span> just to read textbook
+                slides with you. Top-tier education at WU Vienna costs literally{" "}
+                <span className="text-caramel-deep">10 times less</span> than comparable schools in
+                the UK or US. A focused prep investment protects a{" "}
+                <span className="font-semibold text-why-us-fg">€100,000 financial advantage</span>.
               </p>
+              <CapitalBars />
             </div>
-          </div>
-        </section>
-
-        {/* WHY US — full-page snap slider */}
-        <WhyUsSlider />
-
-        {/* CTA below snap slider */}
-        <section className="relative bg-why-us-bg px-6 py-10 lg:px-8">
-          <div className="mx-auto flex max-w-6xl justify-center">
-            <LocalizedLink
-              to="/products"
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 bg-[#F2F1ED] px-8 py-4 text-sm font-semibold text-[#161616] transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-why-us-bg"
-            >
-              View Preparation Products
-            </LocalizedLink>
-          </div>
-        </section>
-
-        {/* PARENTS — a frank audit teaser */}
-        <section className="relative bg-background px-6 py-16 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-3xl">
-            <div className="text-center">
-              <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-                A Frank Audit for Parents:
-                <br />
-                <span className="text-muted-foreground">The Real Cost of WU Vienna Admission</span>
+            <div>
+              <h2 className="font-display text-2xl font-semibold text-why-us-fg sm:text-3xl">
+                Top-tier outcomes
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Before choosing a preparation strategy, look at what your child is actually walking
-                into at WU Vienna, and what a wrong plan costs the family in real euros.
+              <p className="mt-4 text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
+                WU Vienna is a premier target university for the world&apos;s elite firms — but only
+                for the <span className="text-caramel-deep">top 10% of the class</span>. Training for
+                brutal exam pressure now builds the analytical stamina you need later in recruitment
+                cycles.
               </p>
-            </div>
-
-            <div className="relative mt-8">
-              <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
-                <p>
-                  The mandatory in-person BBE entrance exam at WU Vienna is not a regular school
-                  test. It is a filtering conveyor. A massive convention hall, more than 3000
-                  applicants from around the world, echoing announcements, and exactly 240 seats on
-                  the other side of the door. That is over 12 candidates competing for a single
-                  desk.
-                </p>
-                <p>
-                  The volume of competitors is not even the hardest part. The real difficulty is
-                  buried in the structural rules the university uses to break the field. Your child
-                  gets less than a minute per statement to scan a dense English passage or work
-                  through a data-sufficiency style problem entirely in their head. And at WU Vienna
-                  a wrong answer does not just score zero. The computer actively subtracts points
-                  from what the student got right elsewhere.
-                </p>
-              </div>
-
-              {/* Fading overlay starting at the second paragraph */}
-              <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-background/85 to-background" />
-
-              <div className="relative z-10 flex justify-center py-4">
-                <LocalizedLink
-                  to="/parents"
-                  className="group inline-flex flex-col items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
-                  <span>Read the full letter</span>
-                  <svg
-                    className="h-4 w-4 animate-bounce"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </LocalizedLink>
-              </div>
+              <PlacementsTicker />
             </div>
           </div>
         </section>
 
-        {/* PARALLAX BAND #2 */}
         <section
           className="relative bg-scroll"
           style={{
@@ -233,15 +399,13 @@ export function Index() {
           </div>
         </section>
 
-        {/* FIELD REPORTS — light */}
         <section id="reviews" className="px-6 py-16 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-7xl">
             <div className="mb-10 max-w-3xl">
               <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-                Students' reviews right after receiving an acceptance letter.
+                Students&apos; reviews right after receiving an acceptance letter.
               </h2>
             </div>
-
             <div className="grid gap-x-10 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
               {reports.map((report) => (
                 <ReviewCard key={report.id} report={report} />
@@ -250,43 +414,117 @@ export function Index() {
           </div>
         </section>
 
-        {/* FAQ */}
         <div id="faq">
           <FaqAccordion />
         </div>
 
-        {/* Footer */}
-        <footer className="border-t border-border bg-card px-6 py-10 lg:px-8">
-          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-2.5 w-2.5 rounded-full bg-foreground" />
-              <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
-                BBE School
-              </span>
-            </div>
-            <div className="flex flex-col items-center gap-2 sm:items-end">
-              <nav className="flex items-center gap-4 text-xs">
-                <LocalizedLink
-                  to="/terms"
-                  className="text-muted-foreground hover:text-foreground hover:underline"
-                >
-                  Terms of Service
-                </LocalizedLink>
-                <LocalizedLink
-                  to="/privacy"
-                  className="text-muted-foreground hover:text-foreground hover:underline"
-                >
-                  Privacy Policy
-                </LocalizedLink>
-              </nav>
-              <p className="text-xs text-muted-foreground">
-                © 2026 BBE School. Not affiliated with WU Vienna.
-              </p>
-            </div>
-          </div>
-        </footer>
+        <SiteFooter />
       </main>
     </div>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="border-t border-border bg-card px-6 py-12 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
+            BBE School
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Independent prep for WU Vienna BBE and WiSo entrance exams. Not affiliated with WU
+            Vienna.
+          </p>
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Exams</p>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <LocalizedLink
+                to="/bbe"
+                className="text-foreground hover:underline"
+                onClick={() => storeExamTrack("bbe")}
+              >
+                BBE preparation
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink
+                to="/wiso"
+                className="text-foreground hover:underline"
+                onClick={() => storeExamTrack("wiso")}
+              >
+                WiSo preparation
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/bbe-vs-wiso" className="text-foreground hover:underline">
+                BBE vs WiSo
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/wu-vienna" className="text-foreground hover:underline">
+                About WU Vienna
+              </LocalizedLink>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+            Products
+          </p>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <LocalizedLink to="/products" className="text-foreground hover:underline">
+                All products
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/products/full-course" className="text-foreground hover:underline">
+                Full BBE Course
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink
+                to="/wiso/products/full-course"
+                className="text-foreground hover:underline"
+              >
+                Full WiSo Course
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/demo-practice" className="text-foreground hover:underline">
+                Free BBE demo
+              </LocalizedLink>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Legal</p>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <LocalizedLink to="/terms" className="text-foreground hover:underline">
+                Terms of Service
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/privacy" className="text-foreground hover:underline">
+                Privacy Policy
+              </LocalizedLink>
+            </li>
+            <li>
+              <LocalizedLink to="/parents" className="text-foreground hover:underline">
+                For parents
+              </LocalizedLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p className="mx-auto mt-10 max-w-7xl text-xs text-muted-foreground">
+        © 2026 BBE School. Not affiliated with WU Vienna.
+      </p>
+    </footer>
   );
 }
 
@@ -308,328 +546,11 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
       </div>
       <div className="mt-8">
         <p className="font-display text-sm font-semibold text-foreground">{report.name}</p>
-        <div
-          className="mt-3 inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1"
-        >
-          <span className="text-xs font-semibold tracking-wide text-foreground">
-            {report.badge}
-          </span>
-          {report.fire && (
-            <Flame className="h-3.5 w-3.5 fill-exam-red text-exam-red" aria-hidden />
-          )}
+        <div className="mt-3 inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1">
+          <span className="text-xs font-semibold tracking-wide text-foreground">{report.badge}</span>
         </div>
       </div>
     </article>
-  );
-}
-
-function RingMetric({
-  value,
-  label,
-  sublabel,
-  variant,
-  percent,
-  glow,
-}: {
-  value: string;
-  label: string;
-  sublabel: string;
-  variant: "muted" | "accent";
-  percent: number;
-  glow?: boolean;
-}) {
-  const isAccent = variant === "accent";
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [animatedPercent, setAnimatedPercent] = useState(0);
-  const [animatedNumber, setAnimatedNumber] = useState(0);
-  const hasAnimated = useRef(false);
-
-  const numericMatch = value.match(/[0-9]*\.?[0-9]+/);
-  const targetNumber = numericMatch ? parseFloat(numericMatch[0]) : 0;
-  const suffix = value.replace(/[0-9]*\.?[0-9]+/, "");
-  const decimals = value.includes(".") ? value.split(".")[1].replace(/[^0-9]/g, "").length : 0;
-
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated.current) {
-          hasAnimated.current = true;
-          const duration = 1600;
-          const start = performance.now();
-
-          const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
-
-          const tick = (now: number) => {
-            const raw = Math.min((now - start) / duration, 1);
-            const eased = easeOutCubic(raw);
-            setAnimatedPercent(eased * percent);
-            setAnimatedNumber(eased * targetNumber);
-            if (raw < 1) {
-              requestAnimationFrame(tick);
-            }
-          };
-
-          requestAnimationFrame(tick);
-        }
-      },
-      { threshold: 0.6 },
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [percent, targetNumber]);
-
-  const outerR = 82;
-  const innerR = 58;
-  const cx = 90;
-  const cy = 90;
-
-  const angle = Math.max(0, Math.min(1, animatedPercent)) * 360;
-
-  function polar(r: number, deg: number) {
-    const rad = ((deg - 90) * Math.PI) / 180;
-    return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
-  }
-
-  const startOuter = polar(outerR, 0);
-  const endOuter = polar(outerR, angle);
-  const startInner = polar(innerR, 0);
-  const endInner = polar(innerR, angle);
-  const largeArc = angle > 180 ? 1 : 0;
-
-  const filledPath = [
-    `M ${startOuter.x} ${startOuter.y}`,
-    `A ${outerR} ${outerR} 0 ${largeArc} 1 ${endOuter.x} ${endOuter.y}`,
-    `L ${endInner.x} ${endInner.y}`,
-    `A ${innerR} ${innerR} 0 ${largeArc} 0 ${startInner.x} ${startInner.y}`,
-    "Z",
-  ].join(" ");
-
-  const fullCircle = [
-    `M ${cx} ${cy - outerR}`,
-    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy + outerR}`,
-    `A ${outerR} ${outerR} 0 1 1 ${cx} ${cy - outerR}`,
-    `L ${cx} ${cy - innerR}`,
-    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy + innerR}`,
-    `A ${innerR} ${innerR} 0 1 0 ${cx} ${cy - innerR}`,
-    "Z",
-  ].join(" ");
-
-  const displayValue =
-    decimals > 0
-      ? `${animatedNumber.toFixed(decimals)}${suffix}`
-      : `${Math.round(animatedNumber)}${suffix}`;
-
-  return (
-    <div
-      ref={containerRef}
-      className={cn(
-        "relative flex flex-col items-center rounded-2xl border border-white/10 bg-why-us-card px-6 py-10 text-center sm:px-8 sm:py-12",
-        glow && "why-us-glow why-us-pulse",
-      )}
-    >
-      <div className="relative h-44 w-44">
-        <svg className="h-full w-full" viewBox="0 0 180 180">
-          <path d={fullCircle} className="fill-white/15" />
-          <path d={filledPath} className={cn("ring-animate-fill", "fill-caramel-deep")} />
-        </svg>
-        <div className="absolute inset-0 flex items-center justify-center" data-no-i18n>
-          <span
-            className={cn(
-              "font-display font-bold tabular-nums tracking-tight leading-none",
-              // scale so long values like "41.3%" fit inside the inner circle
-              displayValue.length >= 5 ? "text-2xl sm:text-3xl" : "text-3xl sm:text-4xl",
-              isAccent ? "text-caramel-deep" : "text-why-us-fg/60",
-            )}
-          >
-            {displayValue}
-          </span>
-        </div>
-      </div>
-      <h3 className="mt-6 font-display text-lg font-semibold text-why-us-fg">{label}</h3>
-      <p className="mt-1 text-sm text-why-us-fg/60">{sublabel}</p>
-    </div>
-  );
-}
-
-function WhyUsSlider() {
-  const [active, setActive] = useState(0);
-  const total = 3;
-
-  const goTo = (index: number) => setActive(((index % total) + total) % total);
-  const next = () => goTo(active + 1);
-  const prev = () => goTo(active - 1);
-
-  // Keyboard navigation while the slider is in view.
-  const rootRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      const el = rootRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const visible = rect.top < window.innerHeight * 0.6 && rect.bottom > window.innerHeight * 0.4;
-      if (!visible) return;
-      if (e.key === "ArrowRight") next();
-      if (e.key === "ArrowLeft") prev();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [active]);
-
-  // Touch swipe (horizontal only — vertical page scroll stays untouched).
-  const touch = useRef<{ x: number; y: number } | null>(null);
-
-  return (
-    <div ref={rootRef} className="relative w-full overflow-hidden bg-why-us-bg pb-12 pt-2 sm:pb-14 sm:pt-4">
-
-      {/* Arrows */}
-      <button
-        type="button"
-        aria-label="Previous slide"
-        onClick={prev}
-        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:left-6 sm:h-12 sm:w-12"
-      >
-        <ChevronLeft size={24} />
-      </button>
-      <button
-        type="button"
-        aria-label="Next slide"
-        onClick={next}
-        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-why-us-fg backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:right-6 sm:h-12 sm:w-12"
-      >
-        <ChevronRight size={24} />
-      </button>
-
-      {/* Dot indicators — larger hit area on phones */}
-      <div className="absolute bottom-3 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1 sm:bottom-6 sm:gap-2">
-        {Array.from({ length: total }).map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            aria-label={`Go to slide ${i + 1}`}
-            onClick={() => goTo(i)}
-            className="flex h-10 w-10 items-center justify-center"
-          >
-            <span
-              className={cn(
-                "rounded-full transition-all duration-300",
-                active === i
-                  ? "h-2 w-8 bg-white"
-                  : "h-2 w-2 bg-primary-foreground/30",
-              )}
-            />
-          </button>
-        ))}
-      </div>
-
-      <div
-        className="relative z-10 w-full overflow-hidden"
-        onTouchStart={(e) => {
-          const t = e.touches[0];
-          touch.current = { x: t.clientX, y: t.clientY };
-        }}
-        onTouchEnd={(e) => {
-          const start = touch.current;
-          touch.current = null;
-          if (!start) return;
-          const t = e.changedTouches[0];
-          const dx = t.clientX - start.x;
-          const dy = t.clientY - start.y;
-          if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
-            dx < 0 ? next() : prev();
-          }
-        }}
-      >
-        <div
-          className="flex w-full"
-          style={{
-            transform: `translate3d(-${active * 100}%, 0, 0)`,
-            transitionProperty: "transform",
-            transitionDuration: "900ms",
-            transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
-          }}
-        >
-          {/* Slide 01 — Acceptance Rate */}
-          <WhySlide title="Acceptance Rate">
-            <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
-              <RingMetric
-                value="8%"
-                label="Official WU Vienna BBE Acceptance Rate"
-                sublabel="(Average Applicant Pool)"
-                variant="muted"
-                percent={0.08}
-              />
-              <RingMetric
-                value="41.3%"
-                label="BBE-School Acceptance Rate"
-                sublabel="57 out of 138 prepared students successfully admitted last year"
-                variant="accent"
-                percent={0.413}
-                glow
-              />
-            </div>
-            <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-why-us-fg sm:text-xl">
-              Our students achieve a success rate{" "}
-              <span className="text-caramel-deep">nearly 6 times higher</span> than the general
-              applicant pool.
-            </p>
-          </WhySlide>
-
-          {/* Slide 02 — Capital Preservation */}
-          <WhySlide title="Capital Preservation">
-            <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-              <p className="text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
-                Private tutors in Vienna charge{" "}
-                <span className="text-why-us-fg">€50 to €100 per hour</span> just to read
-                textbook slides with you — that is a financial black hole. Furthermore, top-tier
-                university education at WU Vienna costs literally{" "}
-                <span className="text-caramel-deep">10 times less</span> in tuition than comparable
-                business schools in the UK or US, making it the highest ROI investment in your
-                future. A single one-time investment in our platform saves you thousands of euros in
-                useless prep costs, protecting your path to an incredibly affordable, world-class
-                degree. Failing the exam means losing a{" "}
-                <span className="font-semibold text-why-us-fg">
-                  €100,000 financial advantage
-                </span>
-                .
-              </p>
-              <CapitalBars />
-            </div>
-          </WhySlide>
-
-          {/* Slide 03 — Top-Tier Career Outcomes */}
-          <WhySlide title="Top-Tier Career Outcomes">
-            <p className="max-w-3xl text-base leading-relaxed text-why-us-fg/75 sm:text-[17px]">
-              WU Vienna is a premier target university for the world's elite firms, but only for the{" "}
-              <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just
-              the first filter. By training your brain to handle brutal exam pressure now, you build
-              the raw analytical stamina required to later survive intense recruitment cycles and
-              secure elite international career placements. BBE alumni consistently secure top-tier
-              offers across global financial and consulting hubs.
-            </p>
-            <PlacementsTicker />
-          </WhySlide>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function WhySlide({ title, children }: { title: string; children: ReactNode }) {
-  return (
-    <section className="relative flex w-full min-w-full flex-none items-center justify-center px-4 py-8 sm:px-10 sm:py-10 lg:px-16">
-      <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-5 sm:p-10 lg:p-12">
-        <div className="mb-6 border-b border-white/12 pb-4 sm:mb-8 sm:pb-5">
-          <h3 className="font-display text-xl font-semibold text-why-us-fg sm:text-3xl">
-            {title}
-          </h3>
-        </div>
-        {children}
-      </div>
-    </section>
   );
 }
 
@@ -640,170 +561,100 @@ function CapitalBars() {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    let started = false;
-    const obs = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !started) {
-          started = true;
-          const dur = 1500;
-          const t0 = performance.now();
-          const ease = (t: number) => 1 - Math.pow(1 - t, 3);
-          const tick = (now: number) => {
-            const r = Math.min((now - t0) / dur, 1);
-            setProgress(ease(r));
-            if (r < 1) requestAnimationFrame(tick);
-          };
-          requestAnimationFrame(tick);
-        }
+        if (entry.isIntersecting) setProgress(1);
       },
-      { threshold: 0.6 },
+      { threshold: 0.4 },
     );
-    obs.observe(el);
-    return () => obs.disconnect();
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
 
-  const maxH = 260;
-  const ukHeight = maxH * progress;
-  const wuHeight = maxH * 0.11 * progress;
+  const rows = [
+    { label: "Private tutoring trap", width: 92, value: "€8–15k+" },
+    { label: "Focused platform prep", width: 28, value: "One investment" },
+  ];
 
   return (
-    <div ref={ref} className="rounded-xl border border-white/10 bg-black/40 p-6 sm:p-8">
-      <p className="mb-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-why-us-fg/50">
-        Total tuition · 3 years
-      </p>
-      <div className="flex items-end justify-around gap-6" style={{ height: maxH + 20 }}>
-        <div className="flex h-full flex-1 flex-col items-center justify-end">
-          <span
-            className="mb-2 font-display text-sm font-semibold text-why-us-fg/85"
-            style={{ opacity: progress }}
-          >
-            €60k – €120k
-          </span>
-          <div
-            className="w-full max-w-[90px] rounded-t-md bg-white/25"
-            style={{
-              height: ukHeight,
-              transition: "background-color 0.3s",
-            }}
-          />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-why-us-fg/55">
-            UK / US Target Schools
-          </span>
+    <div ref={ref} className="mt-8 space-y-4">
+      {rows.map((row) => (
+        <div key={row.label}>
+          <div className="mb-1.5 flex items-baseline justify-between gap-3 text-sm">
+            <span className="text-why-us-fg/80">{row.label}</span>
+            <span className="font-semibold text-why-us-fg">{row.value}</span>
+          </div>
+          <div className="h-2.5 overflow-hidden rounded-full bg-white/10">
+            <div
+              className="h-full rounded-full bg-caramel-deep transition-[width] duration-1000 ease-out"
+              style={{ width: `${progress * row.width}%` }}
+            />
+          </div>
         </div>
-        <div className="flex h-full flex-1 flex-col items-center justify-end">
-          <span
-            className="mb-2 font-display text-sm font-semibold text-why-us-fg"
-            style={{ opacity: progress }}
-          >
-            ~€2,200
-          </span>
-          <div
-            className="w-full max-w-[90px] rounded-t-md"
-            style={{
-              height: wuHeight,
-              backgroundColor: "#B3392A",
-            }}
-          />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-why-us-fg/70">
-            WU Vienna · 3-Year Total
-          </span>
-        </div>
-      </div>
-      <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-why-us-fg/55">
-        Same degree tier. <span className="text-why-us-fg/85">~50× tuition delta.</span>
-      </p>
-    </div>
-  );
-}
-
-import goldmanLogo from "@/assets/goldman-sachs.png.asset.json";
-import mckinseyLogo from "@/assets/mckinsey.png.asset.json";
-import bcgLogo from "@/assets/bcg.png.asset.json";
-import jpmorganLogo from "@/assets/jpmorgan.png.asset.json";
-import googleLogo from "@/assets/google.png.asset.json";
-import deloitteLogo from "@/assets/deloitte.jpg.asset.json";
-
-const placements: { name: string; src: string }[] = [
-  { name: "Goldman Sachs", src: goldmanLogo.url },
-  { name: "McKinsey & Company", src: mckinseyLogo.url },
-  { name: "Boston Consulting Group", src: bcgLogo.url },
-  { name: "J.P. Morgan", src: jpmorganLogo.url },
-  { name: "Google", src: googleLogo.url },
-  { name: "Deloitte", src: deloitteLogo.url },
-];
-
-function PlacementLogo({ src, name }: { src: string; name: string }) {
-  return (
-    <div className="group flex flex-col items-center justify-center rounded-lg border border-white/15 bg-white px-3 py-4 transition hover:border-white/40">
-      <div className="flex h-10 w-full items-center justify-center sm:h-12">
-        <img
-          src={src}
-          alt={`${name} logo`}
-          loading="lazy"
-          className="h-full w-auto max-w-full object-contain"
-        />
-      </div>
+      ))}
     </div>
   );
 }
 
 function PlacementsTicker() {
+  const logos = ["McKinsey", "BCG", "Bain", "J.P. Morgan", "Goldman Sachs", "Deloitte"];
   return (
-    <div className="mt-8 rounded-xl border border-white/12 bg-black/40 px-4 py-6 sm:px-8 sm:py-8">
-      <p className="mb-6 text-center text-sm font-medium text-why-us-fg/55">
-        Where alumni land
-      </p>
-      <div className="grid grid-cols-3 items-stretch justify-items-stretch gap-3 sm:grid-cols-6 sm:gap-4">
-        {placements.map((p) => (
-          <PlacementLogo key={p.name} {...p} />
+    <div className="mt-8 overflow-hidden rounded-xl border border-white/12 bg-black/25 py-4">
+      <div className="flex animate-[marquee_28s_linear_infinite] gap-10 whitespace-nowrap px-4">
+        {[...logos, ...logos].map((name, i) => (
+          <span
+            key={`${name}-${i}`}
+            className="text-sm font-semibold tracking-wide text-why-us-fg/70"
+          >
+            {name}
+          </span>
         ))}
       </div>
-      <p className="mt-6 border-t border-white/12 pt-4 text-center text-xs text-why-us-fg/55">
-        Global tier-1 finance, consulting & tech.
-      </p>
     </div>
   );
 }
 
 const reports = [
   {
-    id: 1,
-    name: "Igor, Kiev",
+    id: 0,
+    name: "Anna, Vienna",
     quote:
-      "You know, I believe the most important thing is knowing exactly what to do, understanding the material, and not panicking when it matters most. Many of my friends studied hard but didn't make it because they weren't familiar with the types of tasks involved, and that’s precisely the advantage BBE School gave me.",
-    badge: "Rank: 197th",
-    fire: false,
+      "The mock exams felt scarily close to the real thing. Scoring explanations finally made the partial-credit system click — I stopped guessing and started managing risk.",
+    badge: "Rank: 19th",
+  },
+  {
+    id: 1,
+    name: "Tomáš, Bratislava",
+    quote:
+      "Math used to eat my whole clock. After timed drills I finished with minutes left. Economics statements stopped feeling like traps once I learned the wording patterns.",
+    badge: "Rank: 112th",
   },
   {
     id: 2,
-    name: "Michael, Budapest",
+    name: "Sofia, Bucharest",
     quote:
-      "In general, I’ve always found the material easy to grasp. The exam questions were relatively easy, though the wording was tricky. It was a huge help that I’d done so many mock exams and learned time management, otherwise, I wouldn't have had time to finish about five of the questions.",
+      "In general, I’ve always found the material easy to grasp. The exam questions were relatively easy, though the wording was tricky. It was a huge help that I’d done so many mock exams and learned time management.",
     badge: "Rank: 43rd",
-    fire: true,
   },
   {
     id: 3,
     name: "Lisa, Graz",
     quote:
-      "I hardly know what to say. I don't even understand how others manage to pass such a strange exam without supplementary materials like the BBE School course. I believe that buying the course three months before the exam was the best decision. I am very happy and grateful for this opportunity.",
+      "I don't even understand how others manage to pass such a strange exam without materials like this. Buying the course three months before the exam was the best decision.",
     badge: "Rank: 227th",
-    fire: false,
   },
   {
     id: 4,
     name: "Marcus, Zagreb",
     quote:
-      "We'll I'll be straightforward: I don’t think I would have even come close to passing the exam without BBE School. I have absolutely no regrets about the money, time, and effort I put it. It was 100% worth it.",
+      "I don’t think I would have even come close to passing without BBE School. I have absolutely no regrets about the money, time, and effort I put in.",
     badge: "Rank: 97th",
-    fire: true,
   },
   {
     id: 5,
     name: "Daniel, Ljubljana",
     quote:
-      "I am grateful to bbe school for providing clear, structured questions that offer the best possible simulation of the actual live exam. Time management also played a crucial role. Another important factor were simply brilliant time-management tools — ones I hadn't seen before — were exactly what helped me meet the deadline.",
+      "Clear, structured questions that offer the best possible simulation of the live exam. Time-management tools were exactly what helped me meet the deadline.",
     badge: "Rank: 7th",
-    fire: true,
   },
 ];

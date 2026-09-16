@@ -12,17 +12,17 @@ export const Route = createFileRoute("/$lang/")({
     if (!isLocalePrefix(params.lang)) return {};
     return buildLocaleHead(params.lang, "/", {
       meta: [
-        { title: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+        { title: "WU Vienna Exam Prep — BBE & WiSo | BBE School" },
         {
           name: "description",
           content:
-            "Prepare for the WU Vienna BBE entrance exam with 1500+ realistic cases, timed mock exams and step-by-step explanations for Economics, Mathematics and English.",
+            "Step-by-step preparation for your 2027 WU exam. Choose BBE (English) or WiSo (German) and prepare with practice questions, mock exams, and study tools.",
         },
-        { property: "og:title", content: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+        { property: "og:title", content: "WU Vienna Exam Prep — BBE & WiSo | BBE School" },
         {
           property: "og:description",
           content:
-            "Practice the real BBE exam format: True/False cases, partial-credit scoring, timed mocks and tactical explanations.",
+            "Prepare for WU Vienna’s BBE or WiSo entrance exam: practice questions, timed mocks, mock builder, and study tools.",
         },
         { property: "og:type", content: "website" },
         ...socialImageMetaForPath("/"),

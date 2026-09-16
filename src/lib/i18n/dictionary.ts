@@ -57,6 +57,28 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // Home hero
     "Step by step preparation for your 2027 WU BBE exam":
       "Schritt-für-Schritt-Vorbereitung auf deine WU-BBE-Prüfung 2027",
+    "Step by step preparation for your 2027 WU exam":
+      "Schritt-für-Schritt-Vorbereitung auf deine WU-Prüfung 2027",
+    "Step by step preparation for your 2027 WU WiSo exam":
+      "Schritt-für-Schritt-Vorbereitung auf deine WU-WiSo-Prüfung 2027",
+    "WiSo and BBE": "WiSo und BBE",
+    "One platform. Two entrance exams. Pick the path that matches how you want to study at WU Vienna.":
+      "Eine Plattform. Zwei Aufnahmeprüfungen. Wähle den Weg, der zu deinem Studium an der WU Wien passt.",
+    "Enter BBE preparation": "Zur BBE-Vorbereitung",
+    "Enter WiSo preparation": "Zur WiSo-Vorbereitung",
+    "Learn more about the difference between the exams":
+      "Mehr über die Unterschiede zwischen den Prüfungen erfahren",
+    "Why Choose US": "Warum wir",
+    "3,000+ practice questions": "3.000+ Übungsfragen",
+    "3000+ questions": "3000+ Fragen",
+    "Mock builder": "Prüfungs-Builder",
+    "Full timed mock exams": "Vollständige timed Probeprüfungen",
+    "Custom mock builder": "Eigener Prüfungs-Builder",
+    "Flashcards, matching & drills": "Karteikarten, Matching & Drills",
+    "Capital preservation": "Kapitalerhalt",
+    "Top-tier outcomes": "Top-Karrierewege",
+    "BBE preparation": "BBE-Vorbereitung",
+    "WiSo preparation": "WiSo-Vorbereitung",
     "Master every detail and tactic of the actual exam.":
       "Beherrsche jedes Detail und jede Taktik der echten Prüfung.",
     "Try demo-practice": "Demo-Übung testen",
@@ -225,6 +247,28 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // Home hero
     "Step by step preparation for your 2027 WU BBE exam":
       "Покрокова підготовка до іспиту WU BBE 2027",
+    "Step by step preparation for your 2027 WU exam":
+      "Покрокова підготовка до іспиту WU 2027",
+    "Step by step preparation for your 2027 WU WiSo exam":
+      "Покрокова підготовка до іспиту WU WiSo 2027",
+    "WiSo and BBE": "WiSo та BBE",
+    "One platform. Two entrance exams. Pick the path that matches how you want to study at WU Vienna.":
+      "Одна платформа. Два вступні іспити. Обери шлях, який відповідає тому, як ти хочеш навчатися у WU Vienna.",
+    "Enter BBE preparation": "Перейти до підготовки BBE",
+    "Enter WiSo preparation": "Перейти до підготовки WiSo",
+    "Learn more about the difference between the exams":
+      "Дізнатися більше про різницю між іспитами",
+    "Why Choose US": "Чому ми",
+    "3,000+ practice questions": "3 000+ практичних питань",
+    "3000+ questions": "3000+ питань",
+    "Mock builder": "Конструктор іспитів",
+    "Full timed mock exams": "Повні пробні іспити на час",
+    "Custom mock builder": "Власний конструктор іспитів",
+    "Flashcards, matching & drills": "Картки, matching і тренування",
+    "Capital preservation": "Збереження капіталу",
+    "Top-tier outcomes": "Топ-кар’єрні результати",
+    "BBE preparation": "Підготовка BBE",
+    "WiSo preparation": "Підготовка WiSo",
     "Master every detail and tactic of the actual exam.":
       "Опануй кожну деталь і тактику справжнього іспиту.",
     "Try demo-practice": "Спробувати демо-практику",
