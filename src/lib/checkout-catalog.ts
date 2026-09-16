@@ -9,15 +9,15 @@ export const MONOBANK_CURRENCY_EUR = 978;
 export const MONOBANK_CURRENCY_UAH = 980;
 
 /**
- * Temporary test charge: every Monobank invoice is 100.00 UAH.
+ * Temporary test charge: every Monobank invoice is €1.00.
  * Set `enabled` to false before production go-live.
  */
 export const MONOBANK_TEST_CHARGE = {
   enabled: true,
-  /** 100.00 UAH in kopiyky. */
-  amountMinor: 100_00,
-  ccy: MONOBANK_CURRENCY_UAH,
-  label: "₴100",
+  /** 1.00 EUR in cents. */
+  amountMinor: 100,
+  ccy: MONOBANK_CURRENCY_EUR,
+  label: "€1",
 } as const;
 
 export type PaidProduct = {
