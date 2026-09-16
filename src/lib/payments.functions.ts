@@ -97,7 +97,7 @@ export const createCheckout = createServerFn({ method: "POST" })
       }
 
       // Charge the catalog EUR price in minor units (cents). Promocode % still applies.
-      // Temporary test override: fixed €1 invoice for Monobank acquiring tests.
+      // MONOBANK_TEST_CHARGE can force a fixed amount for acquiring tests when enabled.
       const baseMinor = Math.round(product.priceEur * 100);
       const discountedMinor = Math.max(1, Math.round(baseMinor * (1 - discountPct / 100)));
       const amountMinor = MONOBANK_TEST_CHARGE.enabled

@@ -9,12 +9,12 @@ export const MONOBANK_CURRENCY_EUR = 978;
 export const MONOBANK_CURRENCY_UAH = 980;
 
 /**
- * Temporary test charge: every Monobank invoice is €1.00.
- * Set `enabled` to false before production go-live.
+ * Optional test charge override for Monobank acquiring tests.
+ * When enabled, every invoice is forced to this amount instead of the catalog price.
  */
 export const MONOBANK_TEST_CHARGE = {
-  enabled: true,
-  /** 1.00 EUR in cents. */
+  enabled: false,
+  /** 1.00 EUR in cents (only used when `enabled` is true). */
   amountMinor: 100,
   ccy: MONOBANK_CURRENCY_EUR,
   label: "€1",
