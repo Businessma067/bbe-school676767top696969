@@ -49,7 +49,7 @@ const subjects = [
     accent: INDIGO,
     tag: "Economics",
     description:
-      "Cases remapped onto the official Wirtschaft verstehen chapters — scarcity, circular flow, firms, accounting and marketing.",
+      "Cases remapped onto Wirtschaft verstehen — Grundlagen der Wirtschaft and Unternehmensgrundlagen (Kapitel 2 und 4 folgen).",
     to: "/wiso/products/full-course-economics",
     ready: true,
   },

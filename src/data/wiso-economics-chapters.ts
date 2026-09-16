@@ -1,6 +1,6 @@
 /**
  * WiSo Full Course economics banks (Wirtschaft verstehen chapters 1–4).
- * Cases remapped from BBE Fuhrmann banks — content kept identical.
+ * Cases remapped from BBE Fuhrmann banks; German text lives in the JSON banks.
  * Chapters 2 and 4 intentionally empty until WiSo-native content exists.
  */
 

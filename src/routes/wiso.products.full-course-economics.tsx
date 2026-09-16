@@ -18,7 +18,7 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
       {
         name: "description",
         content:
-          "WiSo economics practice mapped to Wirtschaft verstehen: scarcity, circular flow, firms, legal forms, accounting and marketing for the WU Aufnahmeprüfung.",
+          "WiSo economics practice mapped to Wirtschaft verstehen: Grundlagen der Wirtschaft and Unternehmensgrundlagen for the WU Aufnahmeprüfung.",
       },
       { property: "og:title", content: "Wirtschaft verstehen — Full WiSo Course" },
       {

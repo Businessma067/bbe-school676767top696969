@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Remap BBE Fuhrmann economics cases into Wirtschaft verstehen subsections.
- * Keeps title/context/statements/answers/explanations byte-identical to BBE.
  * Leaves WiSo chapters 2 and 4 empty (no BBE counterpart).
+ * Excludes BBE marketing (5.x). Reclassifies money/inflation into 1.4.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -14,58 +14,101 @@ const dataDir = path.join(root, "src/data");
 const outDir = path.join(dataDir, "wiso");
 
 const BBE_TO_WISO = {
-  "2.1": "1.1",
-  "2.2": "1.3",
-  "2.3": "1.3",
-  "2.4": "1.4",
-  "2.5": "1.4",
-  "2.6": "1.4",
-  "2.7": "1.4",
+  "2.1": "1.2",
+  "2.2": "1.2",
+  "2.3": "1.2",
+  "2.4": "1.1",
+  "2.5": "1.1",
+  "2.6": "1.1",
+  "2.7": "1.1",
   "3.1": "3.1",
   "3.2": "3.1",
   "3.3": "3.1",
   "3.4": "3.1",
   "3.5": "3.1",
   "3.6": "3.1",
-  "4.1": "3.2",
-  "4.2": "3.2",
-  "4.3": "3.2",
-  "4.4": "3.2",
-  "4.5": "3.3",
-  "4.6": "3.3",
-  "5.1": "3.5",
-  "5.2": "3.5",
-  "5.3": "3.5",
-  "5.4": "3.5",
-  "5.5": "3.5",
-  "5.6": "3.5",
-  "5.7": "3.5",
-  "6.1": "3.4",
-  "6.2": "3.4",
-  "6.3": "3.4",
-  "6.4": "3.4",
-  "6.5": "3.4",
+  "4.1": "3.1",
+  "4.2": "3.1",
+  "4.3": "3.1",
+  "4.4": "3.1",
+  "4.5": "3.2",
+  "4.6": "3.2",
+  "6.1": "3.3",
+  "6.2": "3.3",
+  "6.3": "3.3",
+  "6.4": "3.3",
+  "6.5": "3.3",
 };
 
-const KW_1_2 = [
+const KW_1_3 = [
   "division of labour",
   "division of labor",
   "specialisation",
   "specialization",
-  "specialise",
-  "specialize",
+  "arbeitsteilung",
+  "spezialisierung",
+];
+
+/** Prefer title hits; body needs a strong noun phrase, not verb "specialise" alone. */
+const KW_1_3_TITLE = [
+  "division of labour",
+  "division of labor",
+  "specialisation",
+  "specialization",
+  "task split",
+  "assembly line",
+];
+
+/** Title-only cues for Geld / Zinsen / Inflation (avoid incidental euro mentions). */
+const KW_1_4_TITLE = [
+  "inflation",
+  "hyperinflation",
+  "deflation",
+  "purchasing power",
+  "price level",
+  "interest rate",
+  "interest rates",
+  "monetary policy",
+  "central bank",
+  "ecb",
+  "money's three",
+  "three functions",
+  "functions of money",
+  "medium of exchange",
+  "unit of account",
+  "store of value",
+  "too much money",
+  "note-issuance",
+  "note issuance",
+  "mortgage rate",
+  "rate rise",
+  "barter",
 ];
 
 function blob(row) {
   return [row.title, row.context, ...(row.statements || [])].join("\n").toLowerCase();
 }
 
+function titleBlob(row) {
+  return String(row.title || "").toLowerCase();
+}
+
+function hasAny(text, keywords) {
+  return keywords.some((k) => text.includes(k));
+}
+
 function mapSubsection(row) {
   const src = row.subsection;
-  if (src === "2.4") {
-    const text = blob(row);
-    if (KW_1_2.some((k) => text.includes(k))) return "1.2";
+  const text = blob(row);
+  const title = titleBlob(row);
+
+  // Money / interest / inflation — title match only, so circular-flow cases stay in 1.1.
+  if (String(src).startsWith("2.") && hasAny(title, KW_1_4_TITLE)) {
+    return "1.4";
   }
+
+  if (src === "2.4" && (hasAny(title, KW_1_3_TITLE) || hasAny(title, KW_1_3))) return "1.3";
+
   return BBE_TO_WISO[src] ?? null;
 }
 
@@ -78,7 +121,7 @@ fs.mkdirSync(outDir, { recursive: true });
 const byChapter = { 1: [], 2: [], 3: [], 4: [] };
 const counts = {};
 
-for (const ch of [2, 3, 4, 5, 6]) {
+for (const ch of [2, 3, 4, 6]) {
   const file = path.join(dataDir, `economics-cases-ch${ch}-subtopics.json`);
   const rows = JSON.parse(fs.readFileSync(file, "utf8"));
   for (const row of rows) {
