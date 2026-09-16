@@ -14,7 +14,7 @@ export const Route = createFileRoute("/dev/mock4-case-audit")({
 });
 
 /** Focus customs that must appear after Lovable Git sync. */
-const FOCUS_INDEXES = [22, 23, 25, 26, 28, 30, 31, 32, 33];
+const FOCUS_INDEXES = [22, 23, 25, 26, 28, 30, 31, 32, 33, 34];
 
 function Mock4CaseAuditPage() {
   const questions = buildMockExam4Questions().filter((q) => FOCUS_INDEXES.includes(q.index));
