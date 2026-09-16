@@ -1,0 +1,340 @@
+{
+  "subsection": {
+    "id": "t.3",
+    "title": "Der klassische Goldstandard und sein Zusammenbruch",
+    "passage": "(1) Zwischen 1870 und 1914 banden die meisten Industriestaaten ihre Währungen an eine fest definierte Goldmenge. Für die Zeitgenossen war der klassische Goldstandard kaum eine politische Entscheidung, sondern eher eine Selbstverständlichkeit des Wirtschaftens. Großbritannien hatte das Pfund bereits 1821 gesetzlich an Gold gebunden, das Deutsche Reich folgte 1873, und bis zur Jahrhundertwende schlossen sich unter anderem Frankreich, Japan und die Vereinigten Staaten an. Wer eine Banknote hielt, konnte sie bei der Notenbank zu einem gesetzlich festgelegten Kurs in Metall eintauschen; der Wechselkurs zweier Goldwährungen ergab sich damit rechnerisch aus dem Verhältnis ihrer Goldgewichte und schwankte nur innerhalb schmaler Grenzen, die durch die Transportkosten des Goldes bestimmt waren.\n\n(2) Die theoretische Begründung lieferte der bereits im 18. Jahrhundert von David Hume beschriebene Preis-Geldmengen-Mechanismus. Ein Land mit Handelsdefizit verlor Gold, seine Geldmenge schrumpfte, das Preisniveau sank, die eigenen Waren wurden im Ausland billiger, und der Außenhandel kam von selbst wieder ins Gleichgewicht. Im Überschussland lief der Vorgang spiegelbildlich ab. Der Goldstandard erschien deshalb als ein System, das sich ohne Eingriffe der Politik selbst reguliert.\n\n(3) Die historische Forschung zeichnet ein weniger mechanisches Bild. Tatsächlich reagierten die Notenbanken vor allem über den Diskontsatz: Erhöhte die Bank of England ihren Zins, zogen kurzfristige Kapitalanlagen aus aller Welt nach London, noch bevor größere Goldmengen das Land verlassen hatten. London war zugleich Zentrum des internationalen Kreditgeschäfts, sodass ein erheblicher Teil des Welthandels in Pfund fakturiert und finanziert wurde. Viele kleinere Notenbanken hielten überdies nicht nur Gold, sondern auch verzinsliche Guthaben in Pfund oder Franc, was das System bereits vor 1914 zu einem teilweisen Gold-Devisen-Standard machte.\n\n(4) Die Bilanz der Vorkriegsjahre fällt in mehreren Punkten günstig aus. Über vier Jahrzehnte blieb das Preisniveau in den Kernländern im Durchschnitt nahezu unverändert, langfristige Anleihen wurden zu Zinssätzen von häufig unter vier Prozent platziert, und Kapital floss in großem Umfang von Europa nach Nord- und Südamerika, nach Russland und in die Kolonien. Diese erste Globalisierung war jedoch nicht mit Preisstabilität von Jahr zu Jahr gleichzusetzen: Von 1873 bis etwa 1896 durchlief die Weltwirtschaft eine ausgedehnte Phase fallender Preise, ehe neue Goldfunde in Südafrika und am Klondike die Geldmenge ausweiteten und das Preisniveau wieder steigen ließen.\n\n(5) Der Preis dieser Ordnung lag in der Innenpolitik. Wer den Wechselkurs unbedingt hält, kann die Geldpolitik nicht mehr an der Beschäftigung ausrichten; die Anpassung an Krisen erfolgte deshalb über sinkende Löhne und steigende Arbeitslosigkeit. Der Wirtschaftshistoriker Barry Eichengreen hat daraus die einflussreiche These entwickelt, die Glaubwürdigkeit des Vorkriegssystems habe wesentlich darauf beruht, dass Gewerkschaften schwach und das Wahlrecht vielerorts noch beschränkt war. Eine Regierung, die um Mehrheiten fürchten musste, hätte den Vorrang des Goldkurses politisch kaum durchhalten können.\n\n(6) Der Erste Weltkrieg beendete das System praktisch über Nacht: Goldausfuhren wurden untersagt, die Kriegskosten über Kredite und Notenpresse finanziert, das Preisniveau stieg in allen beteiligten Staaten. Nach 1918 galt die Rückkehr zum Gold dennoch als Zeichen finanzieller Solidität. Großbritannien kehrte 1925 unter Schatzkanzler Winston Churchill zur Vorkriegsparität zurück – eine Entscheidung, die John Maynard Keynes in einer bekannten Streitschrift scharf angriff, weil das überbewertete Pfund die Exportindustrie und besonders den Kohlebergbau unter Anpassungsdruck setzte; der Generalstreik von 1926 gilt vielen als Folge dieser Politik.\n\n(7) Der Zwischenkriegs-Goldstandard funktionierte zudem asymmetrisch. Gold konzentrierte sich in den Vereinigten Staaten und in Frankreich, doch die Überschussländer ließen die Zuflüsse nicht auf ihre Geldmenge durchwirken, sondern neutralisierten sie. Damit trugen die Defizitländer die gesamte Anpassungslast und mussten Löhne und Preise senken, während in den Überschussländern die entlastende Preissteigerung ausblieb. Aus dem Ausgleichsmechanismus der Theorie wurde so ein deflationärer Zwang.\n\n(8) Der Zusammenbruch verlief in Etappen. Im Mai 1931 geriet die Wiener Creditanstalt in Not, im Juli folgte die deutsche Danat-Bank; im September 1931 gab Großbritannien die Goldbindung auf, 1933 löste Präsident Franklin D. Roosevelt den Dollar vom Gold, und der von Frankreich geführte Goldblock zerfiel erst 1936. Eine vielzitierte Untersuchung von Barry Eichengreen und Jeffrey Sachs zeigt, dass die Länder, die früh ausstiegen, im Durchschnitt früher zu Produktionswachstum zurückfanden, weil sie Zinsen senken und die Geldmenge ausweiten konnten.\n\n(9) Wie dieser Befund zu bewerten ist, bleibt umstritten. Anhänger fester Regeln verweisen darauf, dass die Goldbindung Regierungen zu Haushaltsdisziplin zwang und dem Welthandel über Jahrzehnte verlässliche Kurse bot. Kritiker halten dagegen, ein starrer Anker sei in einer Demokratie mit Massenarbeitslosigkeit nicht durchsetzbar. Das System von Bretton Woods versuchte ab 1944 einen Mittelweg aus festen, aber anpassbaren Kursen und endete 1971; ob die Eurozone die alten Anpassungsprobleme in neuer Form wiederholt, wird bis heute diskutiert.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-3-01",
+      "case_id": "DE T.3.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das genaue Leseverständnis der einleitenden Absätze zu Entstehung, Theorie und tatsächlicher Funktionsweise des Goldstandards.",
+      "kind": "reading",
+      "statements": [
+        "Großbritannien band das Pfund laut Text erst 1873 gesetzlich an Gold, also im selben Jahr wie das Deutsche Reich.",
+        "Der Wechselkurs zweier Goldwährungen ließ sich rechnerisch aus dem Verhältnis ihrer Goldgewichte ableiten.",
+        "Nach dem Preis-Geldmengen-Mechanismus verlor ein Land mit Handelsdefizit Gold, worauf sein Preisniveau sank.",
+        "Laut Text reagierten die Notenbanken in der Praxis vor allem mit direkten staatlichen Preiskontrollen.",
+        "Vor 1914 hielten die kleineren Notenbanken dem Text zufolge ausschließlich Gold und keine Fremdwährungsguthaben."
+      ],
+      "answer_key": [false, true, true, false, false],
+      "tactical_explanations": [
+        "**A) Großbritannien band das Pfund laut Text erst 1873 gesetzlich an Gold, also im selben Jahr wie das Deutsche Reich.**\n\nAbsatz 1 nennt zwei verschiedene Jahre: Großbritannien band das Pfund „bereits 1821 gesetzlich an Gold\", während „das Deutsche Reich folgte 1873\". Die Aussage schiebt die britische Bindung um mehr als fünfzig Jahre nach hinten und macht aus einem Vorläufer einen Gleichzeitigen.\n\n**Falle:** Das Wort „bereits\" ist im Text das Signal für einen zeitlichen Vorsprung; wer es überliest, verwechselt die beiden Daten leicht.\n\nDa der Text die Reihenfolge ausdrücklich mit „folgte\" markiert, widerspricht die Behauptung der Chronologie des Absatzes.",
+        "**B) Der Wechselkurs zweier Goldwährungen ließ sich rechnerisch aus dem Verhältnis ihrer Goldgewichte ableiten.**\n\nAbsatz 1 formuliert genau das: „der Wechselkurs zweier Goldwährungen ergab sich damit rechnerisch aus dem Verhältnis ihrer Goldgewichte\". Der Text ergänzt lediglich, dass die Schwankung durch die Transportkosten des Goldes begrenzt war.\n\nDie Aussage ist eine getreue Umformulierung ohne zusätzliche Behauptung. Sie trifft zu, weil sie den im Absatz beschriebenen Rechenzusammenhang unverändert wiedergibt.",
+        "**C) Nach dem Preis-Geldmengen-Mechanismus verlor ein Land mit Handelsdefizit Gold, worauf sein Preisniveau sank.**\n\nAbsatz 2 beschreibt die Kette wörtlich: „Ein Land mit Handelsdefizit verlor Gold, seine Geldmenge schrumpfte, das Preisniveau sank\". Erst daraus folgt im Text die Verbilligung der eigenen Waren und der Ausgleich der Handelsbilanz.\n\n**Tipp:** Bei Mechanismus-Aussagen die Reihenfolge der Glieder prüfen – hier stimmt sie mit dem Text überein.\n\nDie Aussage gibt die ersten Glieder der Wirkungskette korrekt wieder und ist damit zutreffend.",
+        "**D) Laut Text reagierten die Notenbanken in der Praxis vor allem mit direkten staatlichen Preiskontrollen.**\n\nAbsatz 3 nennt ein anderes Instrument: „Tatsächlich reagierten die Notenbanken vor allem über den Diskontsatz\". Preiskontrollen kommen im gesamten Text nicht vor.\n\nDie Aussage ersetzt ein zinspolitisches Instrument durch ein administratives und verschiebt damit den Akteur von der Notenbank zum preissetzenden Staat.\n\nSie ist falsch, weil der Text die praktische Steuerung ausdrücklich am Diskontsatz und den daran hängenden Kapitalströmen festmacht.",
+        "**E) Vor 1914 hielten die kleineren Notenbanken dem Text zufolge ausschließlich Gold und keine Fremdwährungsguthaben.**\n\nAbsatz 3 sagt das Gegenteil: Viele kleinere Notenbanken „hielten überdies nicht nur Gold, sondern auch verzinsliche Guthaben in Pfund oder Franc\". Genau deshalb spricht der Text von einem teilweisen Gold-Devisen-Standard schon vor dem Krieg.\n\n**Falle:** Absolutwörter wie „ausschließlich\" kippen eine Aussage oft, obwohl alle übrigen Angaben stimmen.\n\nDie Behauptung scheitert an der ausdrücklichen Doppelung von Gold und Devisen in der Reservehaltung."
+      ],
+      "highlights": [
+        "Großbritannien hatte das Pfund bereits 1821 gesetzlich an Gold gebunden, das Deutsche Reich folgte 1873",
+        "der Wechselkurs zweier Goldwährungen ergab sich damit rechnerisch aus dem Verhältnis ihrer Goldgewichte",
+        "Ein Land mit Handelsdefizit verlor Gold, seine Geldmenge schrumpfte, das Preisniveau sank",
+        "Tatsächlich reagierten die Notenbanken vor allem über den Diskontsatz",
+        "hielten überdies nicht nur Gold, sondern auch verzinsliche Guthaben in Pfund oder Franc"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-02",
+      "case_id": "DE T.3.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen das genaue Leseverständnis der Bilanz der Vorkriegsjahre, der innenpolitischen Kosten und der Rückkehr zum Gold nach 1918.",
+      "kind": "reading",
+      "statements": [
+        "Zwischen 1873 und etwa 1896 stiegen die Preise in der Weltwirtschaft laut Text kräftig an.",
+        "Neue Goldfunde in Südafrika und am Klondike weiteten dem Text zufolge die Geldmenge aus.",
+        "Eichengreen führt die Glaubwürdigkeit des Vorkriegssystems unter anderem auf schwache Gewerkschaften und ein beschränktes Wahlrecht zurück.",
+        "Großbritannien kehrte 1925 zu einem deutlich niedrigeren Goldkurs als vor dem Krieg zurück.",
+        "Keynes begrüßte laut Text die britische Rückkehr zur Vorkriegsparität."
+      ],
+      "answer_key": [false, true, true, false, false],
+      "tactical_explanations": [
+        "**A) Zwischen 1873 und etwa 1896 stiegen die Preise in der Weltwirtschaft laut Text kräftig an.**\n\nAbsatz 4 datiert für diesen Zeitraum das Gegenteil: Die Weltwirtschaft „durchlief eine ausgedehnte Phase fallender Preise\". Der Preisanstieg setzt im Text erst danach ein, ausgelöst durch neue Goldfunde.\n\n**Falle:** Richtige Jahreszahlen mit umgedrehter Richtung sind eine der häufigsten Verdrehungen.\n\nDie Aussage ist falsch, weil sie die Deflationsphase des Textes in eine Inflationsphase verkehrt.",
+        "**B) Neue Goldfunde in Südafrika und am Klondike weiteten dem Text zufolge die Geldmenge aus.**\n\nAbsatz 4 nennt beide Fundorte und ihre Wirkung: „ehe neue Goldfunde in Südafrika und am Klondike die Geldmenge ausweiteten\" und das Preisniveau wieder steigen ließen.\n\nDie Aussage übernimmt Ursache und Wirkung unverändert und fügt nichts hinzu.\n\nSie trifft zu, weil der Text den Geldmengeneffekt der Goldfunde ausdrücklich benennt.",
+        "**C) Eichengreen führt die Glaubwürdigkeit des Vorkriegssystems unter anderem auf schwache Gewerkschaften und ein beschränktes Wahlrecht zurück.**\n\nAbsatz 5 schreibt genau diese These dem Wirtschaftshistoriker zu: Die Glaubwürdigkeit habe darauf beruht, „dass Gewerkschaften schwach und das Wahlrecht vielerorts noch beschränkt war\".\n\n**Tipp:** Achte darauf, wem eine These zugeordnet wird – hier ist die Zuordnung an eine namentlich genannte Person korrekt wiedergegeben.\n\nDie Aussage ist zutreffend, weil sie sowohl den Inhalt der These als auch ihren Urheber richtig benennt.",
+        "**D) Großbritannien kehrte 1925 zu einem deutlich niedrigeren Goldkurs als vor dem Krieg zurück.**\n\nAbsatz 6 hält fest, dass Großbritannien 1925 „zur Vorkriegsparität zurück\"kehrte, also zum alten und nicht zu einem abgesenkten Kurs. Der Text betont sogar die Folge: ein „überbewertete[s] Pfund\" unter Anpassungsdruck.\n\nEin niedrigerer Kurs hätte die Exportindustrie entlastet – genau das Gegenteil der im Text beschriebenen Wirkung.\n\nDie Behauptung ist falsch, weil Parität hier Rückkehr zum unveränderten Vorkriegsverhältnis bedeutet.",
+        "**E) Keynes begrüßte laut Text die britische Rückkehr zur Vorkriegsparität.**\n\nAbsatz 6 beschreibt eine Gegnerschaft: Es war eine Entscheidung, „die John Maynard Keynes in einer bekannten Streitschrift scharf angriff\". Von Zustimmung ist keine Rede.\n\n**Falle:** Namen werden häufig korrekt genannt, aber die Haltung der Person umgedreht.\n\nDie Aussage ist falsch, weil das Verb „angriff\" eine Ablehnung und keine Befürwortung ausdrückt."
+      ],
+      "highlights": [
+        "durchlief die Weltwirtschaft eine ausgedehnte Phase fallender Preise",
+        "ehe neue Goldfunde in Südafrika und am Klondike die Geldmenge ausweiteten",
+        "dass Gewerkschaften schwach und das Wahlrecht vielerorts noch beschränkt war",
+        "Großbritannien kehrte 1925 unter Schatzkanzler Winston Churchill zur Vorkriegsparität zurück",
+        "die John Maynard Keynes in einer bekannten Streitschrift scharf angriff"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 2,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-03",
+      "case_id": "DE T.3.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen das genaue Leseverständnis der Asymmetrie des Zwischenkriegssystems, der Etappen des Zusammenbruchs und der abschließenden Bewertung.",
+      "kind": "reading",
+      "statements": [
+        "Im Zwischenkriegssystem ließen die Überschussländer die Goldzuflüsse laut Text voll auf ihre Geldmenge durchwirken.",
+        "Die Anpassungslast lag im Zwischenkriegssystem dem Text zufolge bei den Defizitländern.",
+        "Der von Frankreich geführte Goldblock zerfiel laut Text bereits 1931.",
+        "Eichengreen und Sachs kommen zu dem Ergebnis, dass früh ausgestiegene Länder im Durchschnitt früher zu Produktionswachstum zurückfanden.",
+        "Der Text stellt fest, dass die Bewertung des Goldstandards in der Forschung inzwischen abgeschlossen ist."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Im Zwischenkriegssystem ließen die Überschussländer die Goldzuflüsse laut Text voll auf ihre Geldmenge durchwirken.**\n\nAbsatz 7 sagt ausdrücklich das Gegenteil: Die Überschussländer ließen die Zuflüsse „nicht auf ihre Geldmenge durchwirken, sondern neutralisierten sie\". Gerade dieses Verhalten erzeugt die im Absatz beschriebene Asymmetrie.\n\nHätten die Zuflüsse gewirkt, wäre der Ausgleich über steigende Preise im Überschussland zustande gekommen.\n\nDie Aussage ist falsch, weil sie die Neutralisierung – den Kern der Argumentation – gerade streicht.",
+        "**B) Die Anpassungslast lag im Zwischenkriegssystem dem Text zufolge bei den Defizitländern.**\n\nAbsatz 7 formuliert die Folge der Neutralisierung so: „Damit trugen die Defizitländer die gesamte Anpassungslast\" und mussten Löhne und Preise senken.\n\n**Tipp:** Achte auf Verknüpfungswörter wie „damit\" – sie zeigen, welche Aussage aus welcher folgt.\n\nDie Aussage trifft zu, weil der Text die Last einseitig den Defizitländern zuweist.",
+        "**C) Der von Frankreich geführte Goldblock zerfiel laut Text bereits 1931.**\n\nAbsatz 8 nennt ein späteres Datum: Der Goldblock „zerfiel erst 1936\". 1931 stehen im Text andere Ereignisse, nämlich die Krise der Wiener Creditanstalt und der britische Ausstieg.\n\n**Falle:** In einer Datumsreihe wird oft ein Jahr auf das falsche Ereignis übertragen.\n\nDie Aussage ist falsch, weil das Wort „erst\" den zeitlichen Abstand zu 1931 ausdrücklich betont.",
+        "**D) Eichengreen und Sachs kommen zu dem Ergebnis, dass früh ausgestiegene Länder im Durchschnitt früher zu Produktionswachstum zurückfanden.**\n\nAbsatz 8 gibt genau diesen Befund wieder: „dass die Länder, die früh ausstiegen, im Durchschnitt früher zu Produktionswachstum zurückfanden\". Als Begründung nennt der Text die wiedergewonnene Möglichkeit, Zinsen zu senken und die Geldmenge auszuweiten.\n\nDie Aussage bewahrt die Einschränkung „im Durchschnitt\" und behauptet keine Ausnahmslosigkeit.\n\nSie ist zutreffend, weil sie den referierten Studienbefund inhaltlich unverändert wiedergibt.",
+        "**E) Der Text stellt fest, dass die Bewertung des Goldstandards in der Forschung inzwischen abgeschlossen ist.**\n\nAbsatz 9 beginnt mit dem Gegenteil: „Wie dieser Befund zu bewerten ist, bleibt umstritten\". Anschließend stellt der Text Anhänger fester Regeln und Kritiker einander gegenüber.\n\n**Falle:** Ein offener Schluss wird gern zu einem Ergebnis umgedeutet.\n\nDie Aussage ist falsch, weil der Text die Debatte ausdrücklich als weiterhin strittig kennzeichnet."
+      ],
+      "highlights": [
+        "doch die Überschussländer ließen die Zuflüsse nicht auf ihre Geldmenge durchwirken, sondern neutralisierten sie",
+        "Damit trugen die Defizitländer die gesamte Anpassungslast",
+        "der von Frankreich geführte Goldblock zerfiel erst 1936",
+        "dass die Länder, die früh ausstiegen, im Durchschnitt früher zu Produktionswachstum zurückfanden",
+        "Wie dieser Befund zu bewerten ist, bleibt umstritten"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-04",
+      "case_id": "DE T.3.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen prüfen Schlussfolgerungen aus dem gesamten Text sowie die Bedeutung einzelner Fachausdrücke in ihrem jeweiligen Zusammenhang.",
+      "kind": "reading",
+      "statements": [
+        "Der Ausdruck „neutralisierten\" bedeutet in Absatz 7, dass die Wirkung der Goldzuflüsse auf die Geldmenge unterbunden wurde.",
+        "„Vorkriegsparität\" bezeichnet in Absatz 6 das vor dem Krieg geltende Umtauschverhältnis des Pfundes zu Gold.",
+        "Aus Absatz 5 folgt, dass die Geldpolitik unter dem Goldstandard Wechselkurs und Beschäftigung gleichzeitig steuern konnte.",
+        "„fakturiert\" bedeutet in Absatz 3 im Zusammenhang, dass Handelsgeschäfte in Pfund in Rechnung gestellt wurden.",
+        "Die Formulierung „deflationärer Zwang\" in Absatz 7 verweist auf einen Druck zu allgemein steigenden Preisen."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Der Ausdruck „neutralisierten\" bedeutet in Absatz 7, dass die Wirkung der Goldzuflüsse auf die Geldmenge unterbunden wurde.**\n\nDas Wort steht in Absatz 7 unmittelbar als Gegenstück zum Durchwirken: „sondern neutralisierten sie\". Die Satzstruktur mit „nicht … sondern\" legt die Bedeutung selbst fest.\n\n**Tipp:** Gegensatzkonstruktionen sind die zuverlässigste Quelle für Wortbedeutungen im Kontext.\n\nDie Deutung ist zutreffend, weil der Text „neutralisieren\" ausdrücklich als Aufhebung des Geldmengeneffekts einführt.",
+        "**B) „Vorkriegsparität\" bezeichnet in Absatz 6 das vor dem Krieg geltende Umtauschverhältnis des Pfundes zu Gold.**\n\nAbsatz 6 verwendet den Begriff für die Rückkehr auf den alten Kurs: Großbritannien kehrte „zur Vorkriegsparität zurück\". Dass es sich um ein Verhältnis zu Gold handelt, ergibt sich aus dem Thema des gesamten Textes.\n\nDie unmittelbare Folge – ein überbewertetes Pfund – bestätigt, dass es um einen im Vergleich zur Wirtschaftslage zu hoch angesetzten alten Kurs geht.\n\nDie Deutung trifft zu, weil „Parität\" hier das wiederhergestellte Vorkriegsverhältnis bezeichnet.",
+        "**C) Aus Absatz 5 folgt, dass die Geldpolitik unter dem Goldstandard Wechselkurs und Beschäftigung gleichzeitig steuern konnte.**\n\nAbsatz 5 formuliert einen Zielkonflikt, keine Doppelsteuerung: „Wer den Wechselkurs unbedingt hält, kann die Geldpolitik nicht mehr an der Beschäftigung ausrichten\". Die Anpassung erfolgte deshalb über Löhne und Arbeitslosigkeit.\n\n**Falle:** Aus einem beschriebenen Konflikt wird gern eine Vereinbarkeit gemacht.\n\nDie Schlussfolgerung ist falsch, weil der Text den Verzicht auf beschäftigungsorientierte Geldpolitik als Preis der Kursbindung darstellt.",
+        "**D) „fakturiert\" bedeutet in Absatz 3 im Zusammenhang, dass Handelsgeschäfte in Pfund in Rechnung gestellt wurden.**\n\nAbsatz 3 verbindet das Wort mit dem Kreditgeschäft: „sodass ein erheblicher Teil des Welthandels in Pfund fakturiert und finanziert wurde\". Die Nachbarschaft zu „finanziert\" und die Angabe einer Währung stützen die Lesart „in Rechnung gestellt\".\n\n**Tipp:** Bei Fremdwörtern hilft das direkt angeschlossene Partnerwort, hier „finanziert\".\n\nDie Deutung ist zutreffend, weil Fakturierung im Text die Währung der Rechnungsstellung im Welthandel bezeichnet.",
+        "**E) Die Formulierung „deflationärer Zwang\" in Absatz 7 verweist auf einen Druck zu allgemein steigenden Preisen.**\n\nAbsatz 7 beschreibt das Umgekehrte: Die Defizitländer „mussten Löhne und Preise senken\", und daraus wird der Satz „Aus dem Ausgleichsmechanismus der Theorie wurde so ein deflationärer Zwang\".\n\nDeflation bezeichnet fallende, nicht steigende Preise; der Absatz nennt außerdem, dass die entlastende Preissteigerung in den Überschussländern ausblieb.\n\nDie Deutung ist falsch, weil der Zwang im Text auf Senkung und nicht auf Anhebung des Preisniveaus zielt."
+      ],
+      "highlights": [
+        "sondern neutralisierten sie",
+        "zur Vorkriegsparität zurück",
+        "Wer den Wechselkurs unbedingt hält, kann die Geldpolitik nicht mehr an der Beschäftigung ausrichten",
+        "sodass ein erheblicher Teil des Welthandels in Pfund fakturiert und finanziert wurde",
+        "Aus dem Ausgleichsmechanismus der Theorie wurde so ein deflationärer Zwang"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 4,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-05",
+      "case_id": "DE T.3.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen, ob der Aufbau der Argumentation über mehrere Absätze hinweg richtig nachvollzogen wird.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt der theoretischen Automatik aus Absatz 2 in Absatz 3 ein weniger mechanisches Bild der Forschung gegenüber.",
+        "Absatz 4 und Absatz 5 behandeln Vorzüge und Kosten desselben Systems.",
+        "Die These zur Glaubwürdigkeit des Vorkriegssystems wird im Text einem namentlich genannten Wirtschaftshistoriker zugeschrieben.",
+        "Der Text bezeichnet die Rückkehr zum Gold nach 1918 als eine damals allgemein abgelehnte Politik.",
+        "Der Schluss des Textes entscheidet sich klar für die Position der Kritiker fester Regeln."
+      ],
+      "answer_key": [true, true, true, false, false],
+      "tactical_explanations": [
+        "**A) Der Text stellt der theoretischen Automatik aus Absatz 2 in Absatz 3 ein weniger mechanisches Bild der Forschung gegenüber.**\n\nAbsatz 2 endet mit dem Bild eines sich selbst regulierenden Systems, Absatz 3 setzt dagegen: „Die historische Forschung zeichnet ein weniger mechanisches Bild\".\n\n**Tipp:** Erste Sätze eines Absatzes markieren häufig den Wechsel der Argumentationsebene.\n\nDie Aussage trifft zu, weil der Text den Übergang von Theorie zu historischem Befund ausdrücklich vollzieht.",
+        "**B) Absatz 4 und Absatz 5 behandeln Vorzüge und Kosten desselben Systems.**\n\nAbsatz 4 nennt eine günstige Bilanz mit stabilen Preisen, niedrigen Zinsen und Kapitalexport; Absatz 5 beginnt mit „Der Preis dieser Ordnung lag in der Innenpolitik\".\n\nDie beiden Absätze bilden damit ein Nutzen-Kosten-Paar, das sich auf dieselbe Vorkriegsordnung bezieht.\n\nDie Aussage ist zutreffend, weil das Wort „Preis\" den Übergang von den Vorzügen zu den Lasten explizit macht.",
+        "**C) Die These zur Glaubwürdigkeit des Vorkriegssystems wird im Text einem namentlich genannten Wirtschaftshistoriker zugeschrieben.**\n\nAbsatz 5 nennt den Urheber ausdrücklich: „Der Wirtschaftshistoriker Barry Eichengreen hat daraus die einflussreiche These entwickelt\".\n\n**Tipp:** Namentliche Zuschreibungen unterscheiden fremde Positionen vom Urteil des Textes selbst.\n\nDie Aussage trifft zu, weil der Text die These nicht anonym referiert, sondern klar zuordnet.",
+        "**D) Der Text bezeichnet die Rückkehr zum Gold nach 1918 als eine damals allgemein abgelehnte Politik.**\n\nAbsatz 6 hält das Gegenteil fest: „Nach 1918 galt die Rückkehr zum Gold dennoch als Zeichen finanzieller Solidität\". Kritik kommt im Text nur von einzelnen Stimmen wie Keynes.\n\n**Falle:** Die Kritik einer prominenten Person wird leicht zur allgemeinen Ablehnung verallgemeinert.\n\nDie Aussage ist falsch, weil der Text die Rückkehr als damals angesehenes Solidaritätszeichen der Finanzpolitik beschreibt.",
+        "**E) Der Schluss des Textes entscheidet sich klar für die Position der Kritiker fester Regeln.**\n\nAbsatz 9 stellt beide Seiten nebeneinander und endet ohne Urteil: Die Frage nach der Eurozone „wird bis heute diskutiert\".\n\nWeder die Anhänger fester Regeln noch die Kritiker erhalten das letzte Wort; der Text nennt für beide Seiten Argumente.\n\nDie Aussage ist falsch, weil der Schluss die Debatte offen hält, anstatt eine Position zu bestätigen."
+      ],
+      "highlights": [
+        "Die historische Forschung zeichnet ein weniger mechanisches Bild",
+        "Der Preis dieser Ordnung lag in der Innenpolitik",
+        "Der Wirtschaftshistoriker Barry Eichengreen hat daraus die einflussreiche These entwickelt",
+        "Nach 1918 galt die Rückkehr zum Gold dennoch als Zeichen finanzieller Solidität",
+        "wird bis heute diskutiert"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 5,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-06",
+      "case_id": "DE T.3.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen die genaue Wiedergabe von Jahreszahlen, Größenangaben und Einzelheiten aus dem Text.",
+      "kind": "reading",
+      "statements": [
+        "Der Text datiert den klassischen Goldstandard auf die Jahre zwischen 1870 und 1914.",
+        "Das Deutsche Reich band seine Währung laut Text im Jahr 1873 an Gold.",
+        "Langfristige Anleihen wurden laut Absatz 4 meist zu Zinssätzen von über sechs Prozent platziert.",
+        "Die Wiener Creditanstalt geriet dem Text zufolge im Mai 1931 in Not.",
+        "Großbritannien gab die Goldbindung laut Text im September 1933 auf."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Der Text datiert den klassischen Goldstandard auf die Jahre zwischen 1870 und 1914.**\n\nAbsatz 1 setzt diesen Rahmen im ersten Satz: „Zwischen 1870 und 1914 banden die meisten Industriestaaten ihre Währungen an eine fest definierte Goldmenge\".\n\nEinzelne Länderdaten wie 1821 oder 1873 betreffen Beitritte, nicht die Periodisierung des Systems.\n\nDie Aussage ist zutreffend, weil sie die im Text genannte Epochengrenze unverändert übernimmt.",
+        "**B) Das Deutsche Reich band seine Währung laut Text im Jahr 1873 an Gold.**\n\nAbsatz 1 nennt dieses Jahr ausdrücklich: „das Deutsche Reich folgte 1873\". Die Angabe steht in der Reihe der Beitritte zwischen Großbritannien und den späteren Staaten.\n\n**Tipp:** Bei Datumsreihen jedes Jahr seinem Land zuordnen, bevor man antwortet.\n\nDie Aussage trifft zu, weil Jahr und Akteur genau so im Text zusammengehören.",
+        "**C) Langfristige Anleihen wurden laut Absatz 4 meist zu Zinssätzen von über sechs Prozent platziert.**\n\nAbsatz 4 gibt ein deutlich niedrigeres Niveau an: „langfristige Anleihen wurden zu Zinssätzen von häufig unter vier Prozent platziert\".\n\n**Falle:** Zahlenangaben werden oft mit umgekehrter Vergleichsrichtung wiederholt – „unter vier\" wird zu „über sechs\".\n\nDie Aussage ist falsch, weil sie die Zinsangabe des Textes nach oben verschiebt und damit dem niedrigen Zinsniveau widerspricht.",
+        "**D) Die Wiener Creditanstalt geriet dem Text zufolge im Mai 1931 in Not.**\n\nAbsatz 8 beginnt die Chronologie des Zusammenbruchs genau hier: „Im Mai 1931 geriet die Wiener Creditanstalt in Not\", gefolgt von der Danat-Bank im Juli.\n\nDie Aussage übernimmt Monat, Jahr und Institution korrekt.\n\nSie trifft zu, weil sie den ersten Schritt der im Text genannten Etappenfolge richtig wiedergibt.",
+        "**E) Großbritannien gab die Goldbindung laut Text im September 1933 auf.**\n\nAbsatz 8 nennt den September 1931: „im September 1931 gab Großbritannien die Goldbindung auf\". Das Jahr 1933 gehört im Text zu Roosevelt und der Loslösung des Dollars.\n\n**Falle:** Zwei Ausstiege in derselben Aufzählung werden leicht vertauscht.\n\nDie Aussage ist falsch, weil sie den britischen Monat mit dem amerikanischen Jahr kombiniert."
+      ],
+      "highlights": [
+        "Zwischen 1870 und 1914 banden die meisten Industriestaaten ihre Währungen an eine fest definierte Goldmenge",
+        "das Deutsche Reich folgte 1873",
+        "langfristige Anleihen wurden zu Zinssätzen von häufig unter vier Prozent platziert",
+        "Im Mai 1931 geriet die Wiener Creditanstalt in Not",
+        "im September 1931 gab Großbritannien die Goldbindung auf"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 6,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-07",
+      "case_id": "DE T.3.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen, ob die im Text beschriebenen Wirkungsketten in der richtigen Richtung erfasst werden.",
+      "kind": "reading",
+      "statements": [
+        "Laut Absatz 3 zog eine Zinserhöhung der Bank of England kurzfristiges Kapital nach London.",
+        "Nach Absatz 5 führte die unbedingte Bindung an den Goldkurs dazu, dass Krisen über Löhne und Arbeitslosigkeit ausgeglichen wurden.",
+        "Der Text nennt den Generalstreik von 1926 als Ursache der Rückkehr zur Vorkriegsparität.",
+        "Nach Absatz 8 konnten Länder nach dem Ausstieg aus der Goldbindung Zinsen senken und die Geldmenge ausweiten.",
+        "Der Erste Weltkrieg führte laut Text in den beteiligten Staaten zu sinkenden Preisniveaus."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Laut Absatz 3 zog eine Zinserhöhung der Bank of England kurzfristiges Kapital nach London.**\n\nAbsatz 3 beschreibt diesen Zusammenhang wörtlich: „Erhöhte die Bank of England ihren Zins, zogen kurzfristige Kapitalanlagen aus aller Welt nach London\" – und zwar noch bevor Gold das Land verließ.\n\nDamit erklärt der Text, warum die Anpassung schneller ablief als es der reine Goldfluss erlaubt hätte.\n\nDie Aussage ist zutreffend, weil Ursache (Zinserhöhung) und Wirkung (Kapitalzufluss) genau so verknüpft sind.",
+        "**B) Nach Absatz 5 führte die unbedingte Bindung an den Goldkurs dazu, dass Krisen über Löhne und Arbeitslosigkeit ausgeglichen wurden.**\n\nAbsatz 5 nennt diese Folge ausdrücklich: „die Anpassung an Krisen erfolgte deshalb über sinkende Löhne und steigende Arbeitslosigkeit\".\n\n**Tipp:** Das Wort „deshalb\" markiert im Text die Ursache-Wirkung-Brücke; hier steht davor der Verzicht auf beschäftigungsorientierte Geldpolitik.\n\nDie Aussage trifft zu, weil sie die im Absatz genannte Anpassungsform korrekt an die Kursbindung zurückbindet.",
+        "**C) Der Text nennt den Generalstreik von 1926 als Ursache der Rückkehr zur Vorkriegsparität.**\n\nAbsatz 6 dreht die Richtung um: „der Generalstreik von 1926 gilt vielen als Folge dieser Politik\". Die Rückkehr zur Parität von 1925 liegt zeitlich davor.\n\n**Falle:** Bei Ursache-Wirkung-Aussagen kann die Chronologie selbst die Prüfung liefern – ein Ereignis von 1926 kann eine Entscheidung von 1925 nicht verursachen.\n\nDie Aussage ist falsch, weil sie Ursache und Folge vertauscht.",
+        "**D) Nach Absatz 8 konnten Länder nach dem Ausstieg aus der Goldbindung Zinsen senken und die Geldmenge ausweiten.**\n\nAbsatz 8 nennt genau diese Begründung für die früher einsetzende Erholung: „weil sie Zinsen senken und die Geldmenge ausweiten konnten\".\n\nDer wiedergewonnene geldpolitische Spielraum ist im Text das Bindeglied zwischen Ausstieg und Produktionswachstum.\n\nDie Aussage trifft zu, weil sie diesen Mechanismus unverändert wiedergibt.",
+        "**E) Der Erste Weltkrieg führte laut Text in den beteiligten Staaten zu sinkenden Preisniveaus.**\n\nAbsatz 6 berichtet das Gegenteil: „das Preisniveau stieg in allen beteiligten Staaten\", weil Kriegskosten über Kredite und Notenpresse finanziert wurden.\n\n**Falle:** Der Finanzierungsweg über die Notenpresse ist im Text der Hinweis auf Inflation, nicht auf Deflation.\n\nDie Aussage ist falsch, weil der Text für die Kriegszeit ausdrücklich steigende Preise nennt."
+      ],
+      "highlights": [
+        "Erhöhte die Bank of England ihren Zins, zogen kurzfristige Kapitalanlagen aus aller Welt nach London",
+        "die Anpassung an Krisen erfolgte deshalb über sinkende Löhne und steigende Arbeitslosigkeit",
+        "der Generalstreik von 1926 gilt vielen als Folge dieser Politik",
+        "weil sie Zinsen senken und die Geldmenge ausweiten konnten",
+        "das Preisniveau stieg in allen beteiligten Staaten"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-08",
+      "case_id": "DE T.3.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen, wie stark der Text einzelne Positionen gewichtet und ob er sie als eigenes Urteil oder als fremde Ansicht darstellt.",
+      "kind": "reading",
+      "statements": [
+        "Der Text präsentiert die Selbstregulierung des Goldstandards als gesicherte Tatsache und nicht als theoretische Erwartung.",
+        "Der Text schränkt das Lob der Preisstabilität ausdrücklich ein, indem er sie von Stabilität von Jahr zu Jahr unterscheidet.",
+        "Die Kritik am überbewerteten Pfund wird im Text als Position von Keynes dargestellt und nicht als eigenes Urteil.",
+        "Der Text bewertet den Goldstandard insgesamt als eindeutig überlegen gegenüber flexiblen Wechselkursen.",
+        "Mit der Wendung „vielzitierte Untersuchung\" ordnet der Text die Studie als in der Forschung breit beachtet ein."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "**A) Der Text präsentiert die Selbstregulierung des Goldstandards als gesicherte Tatsache und nicht als theoretische Erwartung.**\n\nAbsatz 2 wählt eine vorsichtige Formulierung: „Der Goldstandard erschien deshalb als ein System, das sich ohne Eingriffe der Politik selbst reguliert\". Absatz 3 relativiert dieses Bild anschließend mit dem Befund der Forschung.\n\n**Tipp:** Verben wie „erschien\" oder „galt als\" kennzeichnen eine damalige Wahrnehmung, keine Feststellung des Textes.\n\nDie Aussage ist falsch, weil der Text die Automatik der Theorie zuschreibt und sie nicht als Tatsache behauptet.",
+        "**B) Der Text schränkt das Lob der Preisstabilität ausdrücklich ein, indem er sie von Stabilität von Jahr zu Jahr unterscheidet.**\n\nAbsatz 4 formuliert diese Einschränkung offen: „Diese erste Globalisierung war jedoch nicht mit Preisstabilität von Jahr zu Jahr gleichzusetzen\". Als Belege folgen die Deflationsphase und der spätere Preisanstieg.\n\nDamit trennt der Text langfristige Konstanz vom kurzfristigen Auf und Ab.\n\nDie Aussage trifft zu, weil die Relativierung wörtlich im Absatz steht.",
+        "**C) Die Kritik am überbewerteten Pfund wird im Text als Position von Keynes dargestellt und nicht als eigenes Urteil.**\n\nAbsatz 6 ordnet die Kritik der Streitschrift zu und nennt deren Begründung: „weil das überbewertete Pfund die Exportindustrie und besonders den Kohlebergbau unter Anpassungsdruck setzte\".\n\nDer Text referiert damit ein Argument, statt selbst ein Urteil über die Parität zu fällen.\n\nDie Aussage ist zutreffend, weil die Zuschreibung an Keynes im Satzbau erhalten bleibt.",
+        "**D) Der Text bewertet den Goldstandard insgesamt als eindeutig überlegen gegenüber flexiblen Wechselkursen.**\n\nAbsatz 9 verteilt die Argumente auf zwei Seiten: „Anhänger fester Regeln verweisen darauf\", während Kritiker die Durchsetzbarkeit in Demokratien bestreiten.\n\n**Falle:** Das Referieren einer Pro-Position ist keine Zustimmung des Textes.\n\nDie Aussage ist falsch, weil der Text keine Überlegenheit feststellt, sondern gegensätzliche Bewertungen nebeneinanderstellt.",
+        "**E) Mit der Wendung „vielzitierte Untersuchung\" ordnet der Text die Studie als in der Forschung breit beachtet ein.**\n\nAbsatz 8 leitet den Befund mit „Eine vielzitierte Untersuchung von Barry Eichengreen und Jeffrey Sachs\" ein. Das Attribut sagt etwas über die Rezeption der Studie aus.\n\n**Tipp:** Bewertende Beiwörter zeigen, welches Gewicht der Text einer Quelle gibt.\n\nDie Aussage trifft zu, weil „vielzitiert\" die breite Beachtung in der Forschung markiert."
+      ],
+      "highlights": [
+        "Der Goldstandard erschien deshalb als ein System, das sich ohne Eingriffe der Politik selbst reguliert",
+        "Diese erste Globalisierung war jedoch nicht mit Preisstabilität von Jahr zu Jahr gleichzusetzen",
+        "weil das überbewertete Pfund die Exportindustrie und besonders den Kohlebergbau unter Anpassungsdruck setzte",
+        "Anhänger fester Regeln verweisen darauf",
+        "Eine vielzitierte Untersuchung von Barry Eichengreen und Jeffrey Sachs"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 8,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-09",
+      "case_id": "DE T.3.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen die zeitliche Reihenfolge der Ereignisse und die im Text angelegten Vergleiche zwischen den Systemphasen.",
+      "kind": "reading",
+      "statements": [
+        "Die gesetzliche Goldbindung des Pfundes liegt laut Text zeitlich vor dem Beitritt des Deutschen Reiches.",
+        "Die Deflationsphase von 1873 bis etwa 1896 folgte dem Text zufolge auf die Goldfunde in Südafrika.",
+        "Der Ausstieg der Vereinigten Staaten aus der Goldbindung erfolgte laut Text nach dem britischen Ausstieg.",
+        "Bretton Woods wird im Text als System beschrieben, das dem klassischen Goldstandard zeitlich vorausging.",
+        "Der Zwischenkriegs-Goldstandard funktionierte laut Text asymmetrischer als das Vorkriegssystem."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "**A) Die gesetzliche Goldbindung des Pfundes liegt laut Text zeitlich vor dem Beitritt des Deutschen Reiches.**\n\nAbsatz 1 nennt für Großbritannien das Jahr 1821: „Großbritannien hatte das Pfund bereits 1821 gesetzlich an Gold gebunden\", für das Deutsche Reich 1873.\n\n**Tipp:** Bei Reihenfolgefragen die genannten Jahre direkt vergleichen, statt sich auf die Satzstellung zu verlassen.\n\nDie Aussage trifft zu, weil 1821 mehr als fünf Jahrzehnte vor 1873 liegt.",
+        "**B) Die Deflationsphase von 1873 bis etwa 1896 folgte dem Text zufolge auf die Goldfunde in Südafrika.**\n\nAbsatz 4 ordnet es umgekehrt: „Von 1873 bis etwa 1896 durchlief die Weltwirtschaft eine ausgedehnte Phase fallender Preise\", und erst danach weiteten die Goldfunde die Geldmenge aus.\n\nDas Wort „ehe\" im Text markiert diese Reihenfolge unmissverständlich.\n\nDie Aussage ist falsch, weil die Goldfunde im Text das Ende und nicht den Anfang der Deflationsphase markieren.",
+        "**C) Der Ausstieg der Vereinigten Staaten aus der Goldbindung erfolgte laut Text nach dem britischen Ausstieg.**\n\nAbsatz 8 nennt für Großbritannien September 1931 und danach: „1933 löste Präsident Franklin D. Roosevelt den Dollar vom Gold\".\n\nDie Etappenfolge des Absatzes ist chronologisch geordnet und stützt die Aussage direkt.\n\nSie trifft zu, weil 1933 nach 1931 liegt.",
+        "**D) Bretton Woods wird im Text als System beschrieben, das dem klassischen Goldstandard zeitlich vorausging.**\n\nAbsatz 9 datiert es später: „Das System von Bretton Woods versuchte ab 1944 einen Mittelweg aus festen, aber anpassbaren Kursen und endete 1971\".\n\n**Falle:** Ein am Textende genanntes System wird leicht in die Vorgeschichte verschoben.\n\nDie Aussage ist falsch, weil Bretton Woods dem klassischen Goldstandard von 1870 bis 1914 nachfolgt.",
+        "**E) Der Zwischenkriegs-Goldstandard funktionierte laut Text asymmetrischer als das Vorkriegssystem.**\n\nAbsatz 7 stellt genau diesen Vergleich her: „Der Zwischenkriegs-Goldstandard funktionierte zudem asymmetrisch\", weil Überschussländer ihre Zuflüsse neutralisierten und die Defizitländer die Last trugen.\n\nFür die Vorkriegszeit beschreibt der Text hingegen einen funktionierenden Zinsmechanismus über London.\n\nDie Aussage trifft zu, weil der Text die Asymmetrie ausdrücklich der Zwischenkriegszeit zuschreibt."
+      ],
+      "highlights": [
+        "Großbritannien hatte das Pfund bereits 1821 gesetzlich an Gold gebunden",
+        "Von 1873 bis etwa 1896 durchlief die Weltwirtschaft eine ausgedehnte Phase fallender Preise",
+        "1933 löste Präsident Franklin D. Roosevelt den Dollar vom Gold",
+        "Das System von Bretton Woods versuchte ab 1944 einen Mittelweg aus festen, aber anpassbaren Kursen und endete 1971",
+        "Der Zwischenkriegs-Goldstandard funktionierte zudem asymmetrisch"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "t.3"
+    },
+    {
+      "id": "de-t-3-10",
+      "case_id": "DE T.3.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen das Verständnis des Schlussabsatzes und der darin ausdrücklich offen gelassenen Fragen.",
+      "kind": "reading",
+      "statements": [
+        "Der Text lässt offen, ob die Eurozone die alten Anpassungsprobleme in neuer Form wiederholt.",
+        "Nach Ansicht ihrer Anhänger zwang die Goldbindung Regierungen laut Text zu Haushaltsdisziplin.",
+        "Der Text behauptet, ein starrer Wechselkursanker sei in Demokratien mit Massenarbeitslosigkeit problemlos durchsetzbar.",
+        "Bretton Woods wird im Text als reine Wiederherstellung des klassischen Goldstandards beschrieben.",
+        "Der Text endet mit einer offenen Streitfrage statt mit einem abschließenden Urteil."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "**A) Der Text lässt offen, ob die Eurozone die alten Anpassungsprobleme in neuer Form wiederholt.**\n\nAbsatz 9 formuliert die Frage ausdrücklich als offene: „ob die Eurozone die alten Anpassungsprobleme in neuer Form wiederholt\", wird bis heute diskutiert.\n\nEine Antwort gibt der Text nicht; er benennt nur den Gegenstand der Debatte.\n\nDie Aussage trifft zu, weil sie die offene Frage des Schlussabsatzes korrekt wiedergibt.",
+        "**B) Nach Ansicht ihrer Anhänger zwang die Goldbindung Regierungen laut Text zu Haushaltsdisziplin.**\n\nAbsatz 9 schreibt dieses Argument den Befürwortern zu: Sie verweisen darauf, „dass die Goldbindung Regierungen zu Haushaltsdisziplin zwang\" und dem Welthandel verlässliche Kurse bot.\n\n**Tipp:** Die Aussage bleibt richtig, weil sie die Zuschreibung „nach Ansicht ihrer Anhänger\" mitführt und das Argument nicht dem Text selbst zuschreibt.\n\nSie ist zutreffend, weil Inhalt und Urheber des Arguments übereinstimmen.",
+        "**C) Der Text behauptet, ein starrer Wechselkursanker sei in Demokratien mit Massenarbeitslosigkeit problemlos durchsetzbar.**\n\nAbsatz 9 gibt die entgegengesetzte Kritikerposition wieder: „ein starrer Anker sei in einer Demokratie mit Massenarbeitslosigkeit nicht durchsetzbar\".\n\n**Falle:** Ein eingefügtes „problemlos\" verwandelt eine Warnung in eine Bestätigung.\n\nDie Aussage ist falsch, weil sie die Negation im Originalsatz aufhebt.",
+        "**D) Bretton Woods wird im Text als reine Wiederherstellung des klassischen Goldstandards beschrieben.**\n\nAbsatz 9 beschreibt es als Kompromiss: „einen Mittelweg aus festen, aber anpassbaren Kursen\". Die Anpassbarkeit ist gerade der Unterschied zum starren Vorkriegssystem.\n\nEine reine Wiederherstellung hätte die Möglichkeit der Kursanpassung ausgeschlossen.\n\nDie Aussage ist falsch, weil der Text Bretton Woods ausdrücklich als Mittelweg und nicht als Kopie einordnet.",
+        "**E) Der Text endet mit einer offenen Streitfrage statt mit einem abschließenden Urteil.**\n\nDer letzte Halbsatz von Absatz 9 lautet: „wird bis heute diskutiert\". Zuvor stehen Argumente beider Seiten unbewertet nebeneinander.\n\n**Tipp:** Achte auf Schlusswendungen wie „bleibt umstritten\" oder „wird diskutiert\" – sie kennzeichnen ein offenes Ende.\n\nDie Aussage trifft zu, weil der Text die Bewertung ausdrücklich der laufenden Debatte überlässt."
+      ],
+      "highlights": [
+        "ob die Eurozone die alten Anpassungsprobleme in neuer Form wiederholt",
+        "dass die Goldbindung Regierungen zu Haushaltsdisziplin zwang",
+        "ein starrer Anker sei in einer Demokratie mit Massenarbeitslosigkeit nicht durchsetzbar",
+        "einen Mittelweg aus festen, aber anpassbaren Kursen",
+        "wird bis heute diskutiert"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.3"
+    }
+  ]
+}

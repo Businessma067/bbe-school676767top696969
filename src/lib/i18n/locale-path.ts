@@ -101,6 +101,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/wiso/products/full-course-subjects",
   "/wiso/products/full-course-math",
   "/wiso/products/full-course-economics",
+  "/wiso/products/full-course-german",
   "/products/lite-bbe-course-subjects",
   "/products/lite-bbe-course-math",
   "/products/lite-bbe-course-english",

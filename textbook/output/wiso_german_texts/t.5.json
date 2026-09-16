@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.5",
+    "title": "Der Marshallplan und die Politik der wirtschaftlichen Erholung",
+    "passage": "(1) Am 5. Juni 1947 hielt der amerikanische Außenminister George Marshall in Harvard eine Rede, in der er den europäischen Staaten umfassende Hilfe anbot, sofern sie ihren Bedarf gemeinsam ermittelten. Aus dieser Ankündigung entstand das Europäische Wiederaufbauprogramm, das zwischen 1948 und 1952 Leistungen im Umfang von etwa dreizehn Milliarden Dollar an sechzehn Empfängerstaaten übertrug. Kaum ein wirtschaftspolitisches Vorhaben des zwanzigsten Jahrhunderts ist seither so häufig als Vorbild angerufen worden.\n\n(2) Die Lage, auf die das Programm antwortete, war ernst, aber nicht in jeder Hinsicht so, wie es die spätere Erzählung nahelegt. Zerstörte Verkehrswege, ein außergewöhnlich harter Winter 1946/47 und schwache Ernten hatten die Versorgung an vielen Orten an den Rand des Zusammenbruchs gebracht. Das eigentliche Nadelöhr war jedoch die sogenannte Dollarlücke: Europa benötigte Kohle, Getreide, Baumwolle und Maschinen aus den Vereinigten Staaten, verfügte aber nicht über die Devisen, um sie zu bezahlen.\n\n(3) Die Ausgestaltung des Programms unterschied sich deutlich von üblichen Krediten. Der weitaus größte Teil der Mittel wurde als Zuschuss und nicht als rückzahlbares Darlehen vergeben, während die Empfängerländer den Gegenwert der gelieferten Güter in eigener Währung auf Sonderkonten einzahlten und diese Gegenwertmittel nur im Einvernehmen mit der amerikanischen Seite für Investitionen verwenden durften. Zugleich zwang die Auflage gemeinsamer Planung die Regierungen 1948 in eine neue Organisation für europäische wirtschaftliche Zusammenarbeit, aus der 1950 die Europäische Zahlungsunion hervorging.\n\n(4) Das Angebot richtete sich formal auch an die Sowjetunion und die Staaten Ostmitteleuropas. Moskau lehnte die Teilnahme ab, weil es die Offenlegung von Wirtschaftsdaten und die Koordination mit Washington als Eingriff in die eigene Einflusszone verstand, und veranlasste die Tschechoslowakei und Polen, bereits erklärte Beitrittsabsichten zurückzuziehen. Der Plan trug damit wesentlich dazu bei, die Teilung des Kontinents zu verfestigen, die er rhetorisch zu überwinden versprach.\n\n(5) Wirtschaftshistorische Untersuchungen haben die ökonomische Wirkung seit den siebziger Jahren deutlich relativiert. Gemessen am Sozialprodukt der Empfängerländer entsprachen die Zahlungen im Jahresdurchschnitt nur etwa zwei bis drei Prozent, was die hohen Wachstumsraten der folgenden Jahre nicht erklären kann. Alan Milward wies zudem nach, dass die Industrieproduktion in mehreren Ländern bereits 1947 wieder zu steigen begann, also vor dem Anlaufen der Hilfe.\n\n(6) Verteidiger des Programms bestreiten diese Zahlen nicht, ziehen daraus aber einen anderen Schluss. Entscheidend sei nicht der Umfang der Mittel gewesen, sondern die Stelle, an der sie wirkten: Sie lösten genau jene Devisenbeschränkung, die Investitionen sonst in eine Zahlungsbilanzkrise geführt hätte. Ein kleiner Betrag an der richtigen Engstelle, so das Argument, kann mehr bewirken als eine große Summe an einer beliebigen.\n\n(7) Eine dritte Deutung betont die politische Funktion des Programms. Indem die Hilfe Verteilungskonflikte entschärfte, machte sie eine Wirtschaftspolitik möglich, die auf wachsende Erträge statt auf den Streit um bestehende Anteile setzte; Gewerkschaften, Unternehmerverbände und Regierungen konnten sich auf Produktivitätssteigerung als gemeinsames Ziel verständigen. Stabilisierung, nicht Kapitalzufuhr, wäre in dieser Lesart die eigentliche Leistung gewesen.\n\n(8) Der Name des Programms hat seine Zeit weit überdauert. Nach 1989 wurde ein Marshallplan für Osteuropa gefordert, später für den Balkan, für Afrika, für die Ukraine und für den Klimaschutz. Historikerinnen und Historiker warnen jedoch vor der Übertragung: Das Europa von 1947 verfügte über ausgebildete Arbeitskräfte, funktionierende Verwaltungen und industrielle Erfahrung und litt vor allem an fehlendem Kapital; wo diese Voraussetzungen fehlen, lässt sich der Erfolg nicht durch Geld allein wiederholen.\n\n(9) Ob der Marshallplan vor allem ein ökonomisches oder ein politisches Instrument war, bleibt umstritten, und die Antwort hängt davon ab, welche Wirkung man misst. Unstrittig ist allein, dass er als Begriff überlebt hat: als Kürzel für die Hoffnung, ein gut entworfenes Programm könne eine Gesellschaft aus einer Lage befreien, die ihr ausweglos erscheint.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-5-01",
+      "case_id": "DE T.5.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen Entstehung, Ausgangslage und Ausgestaltung des Programms in den ersten drei Absätzen.",
+      "kind": "reading",
+      "statements": [
+        "Marshall kündigte die Hilfe 1947 in einer Rede in Harvard an.",
+        "Das Programm übertrug zwischen 1948 und 1952 etwa dreizehn Milliarden Dollar an sechzehn Empfängerstaaten.",
+        "Der weitaus größte Teil der Mittel wurde laut Text als rückzahlbares Darlehen vergeben.",
+        "Das eigentliche Nadelöhr der europäischen Lage war laut Text ein Mangel an Arbeitskräften.",
+        "Aus der 1948 gegründeten Organisation ging laut Text im Jahr 1950 die Europäische Zahlungsunion hervor."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Marshall kündigte die Hilfe 1947 in einer Rede in Harvard an.**\n\nAbsatz 1 nennt Datum, Person, Ort und Bedingung der gemeinsamen Bedarfsermittlung.\n\nDie Aussage greift Jahr und Ort korrekt heraus.\n\nDie Aussage trifft Absatz 1.",
+        "**B) Das Programm übertrug zwischen 1948 und 1952 etwa dreizehn Milliarden Dollar an sechzehn Empfängerstaaten.**\n\nAbsatz 1 nennt Laufzeit, Summe und Zahl der Empfängerstaaten in genau dieser Kombination.\n\nDie Aussage behält die Einschränkung „etwa“ bei.\n\nDie Aussage entspricht Absatz 1.",
+        "**C) Der weitaus größte Teil der Mittel wurde laut Text als rückzahlbares Darlehen vergeben.**\n\nAbsatz 3 sagt ausdrücklich das Gegenteil: überwiegend Zuschüsse, gerade nicht rückzahlbare Darlehen.\n\nDarin liegt der Unterschied zu üblichen Krediten, den der Absatz betont.\n\n**Falle:** Hilfsprogramme werden reflexhaft als Kredite gelesen.\n\nDie Aussage scheitert an Absatz 3.",
+        "**D) Das eigentliche Nadelöhr der europäischen Lage war laut Text ein Mangel an Arbeitskräften.**\n\nAbsatz 2 benennt als Nadelöhr die Dollarlücke, also fehlende Devisen für notwendige Importe.\n\nAbsatz 8 hält zudem fest, dass Europa 1947 über ausgebildete Arbeitskräfte verfügte.\n\nDie Aussage scheitert, weil sie den Engpass falsch bestimmt.",
+        "**E) Aus der 1948 gegründeten Organisation ging laut Text im Jahr 1950 die Europäische Zahlungsunion hervor.**\n\nAbsatz 3 stellt diese Entwicklung als Folge der Auflage gemeinsamer Planung dar.\n\nDie Aussage gibt beide Jahreszahlen und die Reihenfolge korrekt wieder.\n\nDie Aussage trifft den Text."
+      ],
+      "highlights": [
+        "Am 5. Juni 1947 hielt der amerikanische Außenminister George Marshall in Harvard eine Rede",
+        "zwischen 1948 und 1952 Leistungen im Umfang von etwa dreizehn Milliarden Dollar an sechzehn Empfängerstaaten übertrug",
+        "Der weitaus größte Teil der Mittel wurde als Zuschuss und nicht als rückzahlbares Darlehen vergeben",
+        "Das eigentliche Nadelöhr war jedoch die sogenannte Dollarlücke",
+        "aus der 1950 die Europäische Zahlungsunion hervorging"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-02",
+      "case_id": "DE T.5.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen die politische Dimension, die quantitative Kritik und die Erwiderung der Verteidiger.",
+      "kind": "reading",
+      "statements": [
+        "Das Angebot richtete sich formal auch an die Sowjetunion und die Staaten Ostmitteleuropas.",
+        "Die Tschechoslowakei und Polen traten dem Programm laut Text trotz sowjetischen Drucks bei.",
+        "Gemessen am Sozialprodukt entsprachen die Zahlungen laut Text im Jahresdurchschnitt etwa zwei bis drei Prozent.",
+        "Die Verteidiger des Programms halten die niedrigen Wirkungszahlen laut Text für falsch berechnet.",
+        "Laut Verteidigung lösten die Mittel jene Devisenbeschränkung, die Investitionen sonst in eine Zahlungsbilanzkrise geführt hätte."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Das Angebot richtete sich formal auch an die Sowjetunion und die Staaten Ostmitteleuropas.**\n\nAbsatz 4 beginnt genau mit dieser Feststellung und betont das Wort „formal“.\n\nDie Aussage übernimmt diese Einschränkung und behauptet keine tatsächliche Teilnahme.\n\nDie Aussage trifft Absatz 4.",
+        "**B) Die Tschechoslowakei und Polen traten dem Programm laut Text trotz sowjetischen Drucks bei.**\n\nAbsatz 4 berichtet, dass Moskau beide Staaten veranlasste, bereits erklärte Beitrittsabsichten zurückzuziehen.\n\nAus einer erzwungenen Absage macht die Aussage einen erfolgten Beitritt.\n\nDie Aussage scheitert an Absatz 4.",
+        "**C) Gemessen am Sozialprodukt entsprachen die Zahlungen laut Text im Jahresdurchschnitt etwa zwei bis drei Prozent.**\n\nAbsatz 5 nennt diese Größenordnung als Grundlage der quantitativen Relativierung.\n\nDie Aussage gibt Bezugsgröße und Wert korrekt wieder.\n\nDie Aussage entspricht Absatz 5.",
+        "**D) Die Verteidiger des Programms halten die niedrigen Wirkungszahlen laut Text für falsch berechnet.**\n\nAbsatz 6 stellt ausdrücklich fest, dass die Zahlen nicht bestritten werden; strittig ist ihre Deutung.\n\nDie Aussage verschiebt einen Interpretationsstreit in einen Rechenstreit.\n\n**Tipp:** Achten Sie darauf, ob eine Gegenseite die Daten oder deren Bedeutung angreift.\n\nDie Aussage scheitert an Absatz 6.",
+        "**E) Laut Verteidigung lösten die Mittel jene Devisenbeschränkung, die Investitionen sonst in eine Zahlungsbilanzkrise geführt hätte.**\n\nAbsatz 6 formuliert genau dieses Engpassargument als Kern der Erwiderung.\n\nDie Aussage behält die Zuschreibung an die Verteidigerseite bei.\n\nDie Aussage trifft Absatz 6."
+      ],
+      "highlights": [
+        "Das Angebot richtete sich formal auch an die Sowjetunion und die Staaten Ostmitteleuropas",
+        "veranlasste die Tschechoslowakei und Polen, bereits erklärte Beitrittsabsichten zurückzuziehen",
+        "im Jahresdurchschnitt nur etwa zwei bis drei Prozent",
+        "Verteidiger des Programms bestreiten diese Zahlen nicht",
+        "Sie lösten genau jene Devisenbeschränkung, die Investitionen sonst in eine Zahlungsbilanzkrise geführt hätte"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 2,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-03",
+      "case_id": "DE T.5.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen die politische Deutung, die spätere Verwendung des Begriffs und den offenen Schluss.",
+      "kind": "reading",
+      "statements": [
+        "Eine dritte Deutung sieht die eigentliche Leistung in der Stabilisierung und nicht in der Kapitalzufuhr.",
+        "Nach 1989 wurde laut Text ein Marshallplan für Osteuropa gefordert.",
+        "Historikerinnen und Historiker halten die Übertragung des Modells auf andere Regionen laut Text für unproblematisch.",
+        "Der Text stellt abschließend fest, der Marshallplan sei eindeutig ein rein ökonomisches Instrument gewesen.",
+        "Laut Text hängt die Antwort auf die Deutungsfrage davon ab, welche Wirkung gemessen wird."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Eine dritte Deutung sieht die eigentliche Leistung in der Stabilisierung und nicht in der Kapitalzufuhr.**\n\nAbsatz 7 fasst diese Lesart wörtlich in diesem Gegensatz zusammen.\n\nDie Aussage gibt die Pointe des Absatzes korrekt wieder.\n\nDie Aussage trifft Absatz 7.",
+        "**B) Nach 1989 wurde laut Text ein Marshallplan für Osteuropa gefordert.**\n\nAbsatz 8 nennt diese Forderung als erstes Beispiel für das Weiterleben des Begriffs.\n\nDie Aussage übernimmt Zeitpunkt und Gegenstand unverändert.\n\nDie Aussage entspricht Absatz 8.",
+        "**C) Historikerinnen und Historiker halten die Übertragung des Modells auf andere Regionen laut Text für unproblematisch.**\n\nAbsatz 8 formuliert eine ausdrückliche Warnung vor der Übertragung und begründet sie mit den besonderen Voraussetzungen Europas von 1947.\n\nDie Aussage kehrt diese Warnung in eine Unbedenklichkeitserklärung um.\n\nDie Aussage scheitert an Absatz 8.",
+        "**D) Der Text stellt abschließend fest, der Marshallplan sei eindeutig ein rein ökonomisches Instrument gewesen.**\n\nAbsatz 9 erklärt diese Frage ausdrücklich für umstritten und macht die Antwort vom gewählten Wirkungsmaß abhängig.\n\nEine eindeutige Festlegung findet nicht statt.\n\nDie Aussage scheitert am offenen Schluss.",
+        "**E) Laut Text hängt die Antwort auf die Deutungsfrage davon ab, welche Wirkung gemessen wird.**\n\nAbsatz 9 nennt genau diese Abhängigkeit als Grund für die anhaltende Kontroverse.\n\nDie Aussage bleibt eng an dieser Formulierung.\n\nDie Aussage trifft den Text."
+      ],
+      "highlights": [
+        "Stabilisierung, nicht Kapitalzufuhr, wäre in dieser Lesart die eigentliche Leistung gewesen",
+        "Nach 1989 wurde ein Marshallplan für Osteuropa gefordert",
+        "warnen jedoch vor der Übertragung",
+        "bleibt umstritten",
+        "die Antwort hängt davon ab, welche Wirkung man misst"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-04",
+      "case_id": "DE T.5.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen verlangen Inferenzen und die Deutung zentraler Begriffe und Bilder im Kontext.",
+      "kind": "reading",
+      "statements": [
+        "Mit Dollarlücke ist im Kontext gemeint, dass Europa notwendige Importe benötigte, aber keine Devisen zu ihrer Bezahlung besaß.",
+        "Mit Gegenwertmitteln sind laut Text Beträge in eigener Währung gemeint, die die Empfängerländer auf Sonderkonten einzahlten.",
+        "Aus Milwards Befund folgt, dass die Hilfe die einzige Ursache des Produktionsanstiegs gewesen sein muss.",
+        "Das Bild der Engstelle in Absatz 6 besagt, dass ein kleiner Betrag am richtigen Punkt große Wirkung entfalten kann.",
+        "Aus Absatz 8 folgt, dass Geld allein den Erfolg auch dort wiederholen kann, wo Verwaltungen und Fachkräfte fehlen."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Mit Dollarlücke ist im Kontext gemeint, dass Europa notwendige Importe benötigte, aber keine Devisen zu ihrer Bezahlung besaß.**\n\nAbsatz 2 liefert die Erklärung direkt mit: Kohle, Getreide, Baumwolle und Maschinen waren nötig, die Devisen dafür fehlten.\n\nDie Aussage gibt diese Kontextbedeutung ohne Zusatz wieder.\n\nDie Aussage trifft die Begriffsbestimmung in Absatz 2.",
+        "**B) Mit Gegenwertmitteln sind laut Text Beträge in eigener Währung gemeint, die die Empfängerländer auf Sonderkonten einzahlten.**\n\nAbsatz 3 beschreibt genau dieses Verfahren und die Bindung der Verwendung an das Einvernehmen mit der amerikanischen Seite.\n\nDie Aussage trifft die technische Bedeutung des Begriffs im Kontext.\n\nDie Aussage entspricht Absatz 3.",
+        "**C) Aus Milwards Befund folgt, dass die Hilfe die einzige Ursache des Produktionsanstiegs gewesen sein muss.**\n\nAbsatz 5 führt den Befund gerade in die Gegenrichtung: Die Produktion stieg in mehreren Ländern schon vor dem Anlaufen der Hilfe.\n\nEine Ursache, die später einsetzt als die Wirkung, kann diese nicht allein erklären.\n\nDie Aussage scheitert an der zeitlichen Logik des Befunds.",
+        "**D) Das Bild der Engstelle in Absatz 6 besagt, dass ein kleiner Betrag am richtigen Punkt große Wirkung entfalten kann.**\n\nAbsatz 6 formuliert genau diesen Gedanken und stellt ihm die große Summe an beliebiger Stelle gegenüber.\n\nDie Aussage gibt die Bildbedeutung korrekt wieder.\n\nDie Aussage trifft den Text.",
+        "**E) Aus Absatz 8 folgt, dass Geld allein den Erfolg auch dort wiederholen kann, wo Verwaltungen und Fachkräfte fehlen.**\n\nAbsatz 8 sagt ausdrücklich das Gegenteil und knüpft den Erfolg an Voraussetzungen, die 1947 in Europa vorlagen.\n\nDie Aussage streicht genau diese Bedingung.\n\nDie Aussage scheitert an der Warnung des Absatzes."
+      ],
+      "highlights": [
+        "verfügte aber nicht über die Devisen, um sie zu bezahlen",
+        "den Gegenwert der gelieferten Güter in eigener Währung auf Sonderkonten einzahlten",
+        "dass die Industrieproduktion in mehreren Ländern bereits 1947 wieder zu steigen begann",
+        "Ein kleiner Betrag an der richtigen Engstelle",
+        "lässt sich der Erfolg nicht durch Geld allein wiederholen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 4,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-05",
+      "case_id": "DE T.5.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen die Anlage der Argumentation über den gesamten Text hinweg.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt drei konkurrierende Deutungen nebeneinander: die quantitative Relativierung, das Engpassargument und die politische Funktion.",
+        "Der Text übernimmt die verbreitete Erzählung vom Marshallplan ohne eigene Prüfung.",
+        "Der Text verbindet die wirtschaftliche Darstellung mit der politischen Blockbildung in Europa.",
+        "Die Kritik an den Wirkungszahlen wird im Text durch eine Gegenposition ergänzt und nicht einfach übernommen.",
+        "Der Text endet mit einem eindeutigen Urteil über Erfolg oder Misserfolg des Programms."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text stellt drei konkurrierende Deutungen nebeneinander: die quantitative Relativierung, das Engpassargument und die politische Funktion.**\n\nAbsatz 5 liefert die Relativierung, Absatz 6 das Engpassargument, Absatz 7 die politische Deutung, die dort ausdrücklich als dritte eingeführt wird.\n\nDie Aussage beschreibt diese Dreiteilung korrekt.\n\nDie Aussage trifft die Argumentstruktur.",
+        "**B) Der Text übernimmt die verbreitete Erzählung vom Marshallplan ohne eigene Prüfung.**\n\nAbsatz 2 distanziert sich schon früh von der späteren Erzählung, Absatz 5 relativiert die ökonomische Wirkung.\n\nDie Aussage ignoriert diese durchgehende Prüfhaltung.\n\nDie Aussage scheitert an der Anlage des Textes.",
+        "**C) Der Text verbindet die wirtschaftliche Darstellung mit der politischen Blockbildung in Europa.**\n\nAbsatz 4 schildert die sowjetische Ablehnung und hält fest, dass der Plan die Teilung des Kontinents verfestigte.\n\nDamit steht die politische Wirkung gleichrangig neben der ökonomischen.\n\nDie Aussage entspricht dem Text.",
+        "**D) Die Kritik an den Wirkungszahlen wird im Text durch eine Gegenposition ergänzt und nicht einfach übernommen.**\n\nAbsatz 6 beginnt ausdrücklich damit, dass die Zahlen nicht bestritten, aber anders gedeutet werden.\n\nDie Aussage beschreibt diesen Aufbau von These und Erwiderung korrekt.\n\nDie Aussage trifft den Text.",
+        "**E) Der Text endet mit einem eindeutigen Urteil über Erfolg oder Misserfolg des Programms.**\n\nAbsatz 9 hält die Deutungsfrage für umstritten und verweist auf die Abhängigkeit vom gewählten Wirkungsmaß.\n\nEin abschließendes Urteil fehlt bewusst.\n\nDie Aussage scheitert am offenen Ende."
+      ],
+      "highlights": [
+        "Eine dritte Deutung betont die politische Funktion",
+        "aber nicht in jeder Hinsicht so, wie es die spätere Erzählung nahelegt",
+        "die Teilung des Kontinents zu verfestigen, die er rhetorisch zu überwinden versprach",
+        "Verteidiger des Programms bestreiten diese Zahlen nicht",
+        "bleibt umstritten"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 5,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-06",
+      "case_id": "DE T.5.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen Jahreszahlen, Summen und Größenordnungen des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text nennt für das Programm einen Umfang von etwa dreizehn Milliarden Dollar.",
+        "Die Laufzeit des Programms wird im Text mit 1948 bis 1952 angegeben.",
+        "Der Text spricht von einem außergewöhnlich harten Winter 1946/47.",
+        "Die Hilfe entsprach laut Text im Jahresdurchschnitt etwa fünfzehn Prozent des Sozialprodukts der Empfängerländer.",
+        "Die Europäische Zahlungsunion entstand laut Text bereits im Jahr 1947."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text nennt für das Programm einen Umfang von etwa dreizehn Milliarden Dollar.**\n\nAbsatz 1 gibt diese Summe für die gesamte Laufzeit an.\n\nDie Aussage übernimmt die Zahl samt Einschränkung „etwa“.\n\nDie Aussage trifft den Text.",
+        "**B) Die Laufzeit des Programms wird im Text mit 1948 bis 1952 angegeben.**\n\nAbsatz 1 nennt genau diesen Zeitraum für die Übertragung der Leistungen.\n\nDie Aussage gibt die Datierung korrekt wieder.\n\nDie Aussage entspricht Absatz 1.",
+        "**C) Der Text spricht von einem außergewöhnlich harten Winter 1946/47.**\n\nAbsatz 2 führt diesen Winter neben zerstörten Verkehrswegen und schwachen Ernten als Belastung an.\n\nDie Aussage wiederholt die Angabe unverändert.\n\nDie Aussage trifft Absatz 2.",
+        "**D) Die Hilfe entsprach laut Text im Jahresdurchschnitt etwa fünfzehn Prozent des Sozialprodukts der Empfängerländer.**\n\nAbsatz 5 nennt nur etwa zwei bis drei Prozent, und gerade diese geringe Größe trägt die Relativierung.\n\nEin Wert von fünfzehn Prozent würde die Argumentation des Absatzes auflösen.\n\nDie Aussage scheitert an der Größenordnung.",
+        "**E) Die Europäische Zahlungsunion entstand laut Text bereits im Jahr 1947.**\n\nAbsatz 3 datiert die Organisation auf 1948 und die Zahlungsunion auf 1950.\n\n**Falle:** Der Text enthält dicht beieinanderliegende Jahreszahlen (1947, 1948, 1950, 1952), die leicht verrutschen.\n\nDie Aussage scheitert an dieser Datierung."
+      ],
+      "highlights": [
+        "Leistungen im Umfang von etwa dreizehn Milliarden Dollar",
+        "zwischen 1948 und 1952",
+        "ein außergewöhnlich harter Winter 1946/47",
+        "im Jahresdurchschnitt nur etwa zwei bis drei Prozent",
+        "aus der 1950 die Europäische Zahlungsunion hervorging"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 6,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-07",
+      "case_id": "DE T.5.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen Ursache-Wirkungs-Beziehungen, die der Text ausdrücklich oder klar implizit herstellt.",
+      "kind": "reading",
+      "statements": [
+        "Weil Europa Devisen fehlten, konnte es laut Text notwendige Importe aus den Vereinigten Staaten nicht bezahlen.",
+        "Die Auflage gemeinsamer Planung führte laut Text 1948 zur Gründung einer neuen Organisation europäischer Zusammenarbeit.",
+        "Die sowjetische Ablehnung trug laut Text dazu bei, die Teilung des Kontinents zu verfestigen.",
+        "Laut Text erklären die überwiesenen Beträge die hohen Wachstumsraten der Folgejahre vollständig.",
+        "Laut der politischen Deutung verschärfte die Hilfe die Verteilungskonflikte zwischen Gewerkschaften und Unternehmerverbänden."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Weil Europa Devisen fehlten, konnte es laut Text notwendige Importe aus den Vereinigten Staaten nicht bezahlen.**\n\nAbsatz 2 stellt genau diese Kausalität als Kern der Dollarlücke dar.\n\nDie Aussage gibt Ursache und Folge in der richtigen Richtung wieder.\n\nDie Aussage trifft Absatz 2.",
+        "**B) Die Auflage gemeinsamer Planung führte laut Text 1948 zur Gründung einer neuen Organisation europäischer Zusammenarbeit.**\n\nAbsatz 3 beschreibt diesen Zwang zur Koordination als unmittelbare Folge der Programmbedingungen.\n\nDie Aussage übernimmt Jahr und Wirkung korrekt.\n\nDie Aussage entspricht Absatz 3.",
+        "**C) Die sowjetische Ablehnung trug laut Text dazu bei, die Teilung des Kontinents zu verfestigen.**\n\nAbsatz 4 zieht diesen Schluss selbst und stellt ihn in Spannung zum rhetorischen Anspruch des Plans.\n\nDie Aussage gibt diese Wirkung ohne Übertreibung wieder.\n\nDie Aussage trifft Absatz 4.",
+        "**D) Laut Text erklären die überwiesenen Beträge die hohen Wachstumsraten der Folgejahre vollständig.**\n\nAbsatz 5 hält ausdrücklich fest, dass die geringe Größenordnung diese Wachstumsraten nicht erklären kann.\n\nDie Aussage behauptet eine Erklärungskraft, die der Text bestreitet.\n\nDie Aussage scheitert an Absatz 5.",
+        "**E) Laut der politischen Deutung verschärfte die Hilfe die Verteilungskonflikte zwischen Gewerkschaften und Unternehmerverbänden.**\n\nAbsatz 7 sagt das Gegenteil: Die Hilfe entschärfte Verteilungskonflikte und ermöglichte eine Verständigung auf Produktivitätssteigerung.\n\nDie Aussage kehrt die Wirkungsrichtung um.\n\nDie Aussage scheitert an Absatz 7."
+      ],
+      "highlights": [
+        "verfügte aber nicht über die Devisen, um sie zu bezahlen",
+        "zwang die Auflage gemeinsamer Planung die Regierungen 1948 in eine neue Organisation",
+        "die Teilung des Kontinents zu verfestigen, die er rhetorisch zu überwinden versprach",
+        "was die hohen Wachstumsraten der folgenden Jahre nicht erklären kann",
+        "auf wachsende Erträge statt auf den Streit um bestehende Anteile setzte"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-08",
+      "case_id": "DE T.5.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen, wie der Text die Deutungen gewichtet und welche Distanz er zum Gegenstand hält.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt den Marshallplan als unbestrittene Erfolgsgeschichte dar.",
+        "Der Text nimmt die quantitative Kritik ernst und räumt ihr einen eigenen Absatz ein.",
+        "Der Text betrachtet die spätere Verwendung des Begriffs distanziert und weist auf die Grenzen der Analogie hin.",
+        "Der Text bewertet die politische Deutung als unseriös und verwirft sie.",
+        "Der Schlussabsatz vermeidet ein endgültiges Urteil über den Charakter des Programms."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text stellt den Marshallplan als unbestrittene Erfolgsgeschichte dar.**\n\nAbsatz 5 hält fest, dass wirtschaftshistorische Untersuchungen die ökonomische Wirkung seit den siebziger Jahren deutlich relativiert haben.\n\nAuch Absatz 4 benennt eine politisch problematische Folge des Plans.\n\nDie Aussage scheitert, weil der Text die Erfolgserzählung ausdrücklich prüft.",
+        "**B) Der Text nimmt die quantitative Kritik ernst und räumt ihr einen eigenen Absatz ein.**\n\nAbsatz 5 entfaltet Größenordnung und Zeitpunkt der Erholung als Argument gegen eine starke Wirkungsthese.\n\nDie Aussage beschreibt diese Gewichtung korrekt.\n\nDie Aussage entspricht dem Text.",
+        "**C) Der Text betrachtet die spätere Verwendung des Begriffs distanziert und weist auf die Grenzen der Analogie hin.**\n\nAbsatz 8 listet zwar die vielen Forderungen nach einem neuen Marshallplan auf, folgt ihnen aber nicht, sondern warnt vor der Übertragung.\n\nDie Aussage trifft diese Haltung.\n\nDie Aussage entspricht Absatz 8.",
+        "**D) Der Text bewertet die politische Deutung als unseriös und verwirft sie.**\n\nAbsatz 7 stellt sie als dritte Deutung gleichberechtigt neben die beiden ökonomischen Lesarten und führt sie in eigener Ausführlichkeit aus.\n\nEine Abwertung findet nicht statt.\n\nDie Aussage scheitert an der ausgewogenen Darstellung.",
+        "**E) Der Schlussabsatz vermeidet ein endgültiges Urteil über den Charakter des Programms.**\n\nAbsatz 9 erklärt die Frage für umstritten und bindet die Antwort an das gewählte Wirkungsmaß.\n\nNur das Überleben des Begriffs gilt als unstrittig.\n\nDie Aussage trifft die Haltung des Schlusses."
+      ],
+      "highlights": [
+        "haben die ökonomische Wirkung seit den siebziger Jahren deutlich relativiert",
+        "im Jahresdurchschnitt nur etwa zwei bis drei Prozent",
+        "warnen jedoch vor der Übertragung",
+        "Eine dritte Deutung betont die politische Funktion",
+        "bleibt umstritten"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 8,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-09",
+      "case_id": "DE T.5.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen zeitliche Abfolgen und Vergleiche zwischen Epochen und Regionen.",
+      "kind": "reading",
+      "statements": [
+        "Die Rede Marshalls liegt im Text zeitlich vor dem Beginn der Auszahlungen.",
+        "Der Anstieg der Industrieproduktion setzte laut Milward in mehreren Ländern vor dem Anlaufen der Hilfe ein.",
+        "Die Europäische Zahlungsunion entstand laut Text vor der Organisation für europäische wirtschaftliche Zusammenarbeit.",
+        "Im Vergleich zu Regionen ohne ausgebildete Arbeitskräfte und funktionierende Verwaltungen fehlte Europa 1947 laut Text vor allem Kapital.",
+        "Forderungen nach einem Marshallplan für Osteuropa datiert der Text auf die Zeit vor 1948."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Rede Marshalls liegt im Text zeitlich vor dem Beginn der Auszahlungen.**\n\nAbsatz 1 datiert die Rede auf Juni 1947 und die Leistungen auf 1948 bis 1952.\n\nDie Reihenfolge Ankündigung, Programm, Auszahlung ist damit eindeutig.\n\nDie Aussage trifft die Chronologie.",
+        "**B) Der Anstieg der Industrieproduktion setzte laut Milward in mehreren Ländern vor dem Anlaufen der Hilfe ein.**\n\nAbsatz 5 nennt 1947 als Beginn des Wiederanstiegs und stellt ausdrücklich fest, dass dies vor dem Anlaufen der Hilfe lag.\n\nDie Aussage gibt diesen zeitlichen Vergleich korrekt wieder.\n\nDie Aussage entspricht Absatz 5.",
+        "**C) Die Europäische Zahlungsunion entstand laut Text vor der Organisation für europäische wirtschaftliche Zusammenarbeit.**\n\nAbsatz 3 beschreibt die Zahlungsunion von 1950 als Hervorgang aus der 1948 gegründeten Organisation.\n\nDie Aussage dreht diese Abfolge um.\n\nDie Aussage scheitert an den Jahreszahlen.",
+        "**D) Im Vergleich zu Regionen ohne ausgebildete Arbeitskräfte und funktionierende Verwaltungen fehlte Europa 1947 laut Text vor allem Kapital.**\n\nAbsatz 8 nennt genau diese Ausstattung Europas und bestimmt den Kapitalmangel als eigentlichen Engpass.\n\nDie Aussage stützt sich auf den vom Text selbst gezogenen Vergleich.\n\nDie Aussage trifft Absatz 8.",
+        "**E) Forderungen nach einem Marshallplan für Osteuropa datiert der Text auf die Zeit vor 1948.**\n\nAbsatz 8 verortet diese Forderungen ausdrücklich nach 1989.\n\nDie Aussage verschiebt sie um vier Jahrzehnte.\n\nDie Aussage scheitert an der Datierung."
+      ],
+      "highlights": [
+        "Am 5. Juni 1947 hielt der amerikanische Außenminister George Marshall in Harvard eine Rede",
+        "also vor dem Anlaufen der Hilfe",
+        "aus der 1950 die Europäische Zahlungsunion hervorging",
+        "litt vor allem an fehlendem Kapital",
+        "Nach 1989 wurde ein Marshallplan für Osteuropa gefordert"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "t.5"
+    },
+    {
+      "id": "de-t-5-10",
+      "case_id": "DE T.5.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen den Gesamtschluss und die bewusst offen gehaltenen Fragen des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Der Text lässt offen, ob der Marshallplan vor allem ein ökonomisches oder ein politisches Instrument war.",
+        "Laut Schluss hängt die Antwort davon ab, welche Wirkung gemessen wird.",
+        "Unstrittig ist laut Text allein, dass der Begriff als politisches Kürzel überlebt hat.",
+        "Der Text behauptet, spätere Programme könnten den Erfolg der Jahre 1948 bis 1952 durch ausreichende Geldmittel sicher wiederholen.",
+        "Der Text erklärt die Frage nach der ökonomischen Wirkung für endgültig zugunsten der Kritik entschieden."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Text lässt offen, ob der Marshallplan vor allem ein ökonomisches oder ein politisches Instrument war.**\n\nAbsatz 9 stellt genau diese Alternative auf und bezeichnet sie als umstritten.\n\nDie Aussage übernimmt beide Pole und die Offenheit selbst.\n\nDie Aussage trifft den Gesamtschluss.",
+        "**B) Laut Schluss hängt die Antwort davon ab, welche Wirkung gemessen wird.**\n\nAbsatz 9 nennt diese Abhängigkeit als Grund dafür, dass die Debatte nicht entschieden ist.\n\nDie Aussage bleibt eng an der Formulierung des Textes.\n\nDie Aussage entspricht Absatz 9.",
+        "**C) Unstrittig ist laut Text allein, dass der Begriff als politisches Kürzel überlebt hat.**\n\nAbsatz 9 markiert genau diesen Punkt als das einzig Unstrittige und beschreibt den Begriff als Kürzel für eine Hoffnung.\n\nDie Aussage hält diese Begrenzung ein.\n\nDie Aussage trifft den Schluss.",
+        "**D) Der Text behauptet, spätere Programme könnten den Erfolg der Jahre 1948 bis 1952 durch ausreichende Geldmittel sicher wiederholen.**\n\nAbsatz 8 verneint dies ausdrücklich für Regionen ohne die entsprechenden Voraussetzungen.\n\nDie Aussage macht aus einer Warnung ein Versprechen.\n\nDie Aussage scheitert an Absatz 8.",
+        "**E) Der Text erklärt die Frage nach der ökonomischen Wirkung für endgültig zugunsten der Kritik entschieden.**\n\nAbsatz 6 stellt der Relativierung das Engpassargument entgegen, ohne es zu verwerfen; Absatz 9 hält die Gesamtfrage offen.\n\nDie Aussage erklärt eine laufende Debatte für beendet.\n\nDie Aussage scheitert am offenen Ende des Textes."
+      ],
+      "highlights": [
+        "bleibt umstritten",
+        "die Antwort hängt davon ab, welche Wirkung man misst",
+        "als Kürzel für die Hoffnung",
+        "lässt sich der Erfolg nicht durch Geld allein wiederholen",
+        "Verteidiger des Programms bestreiten diese Zahlen nicht"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.5"
+    }
+  ]
+}

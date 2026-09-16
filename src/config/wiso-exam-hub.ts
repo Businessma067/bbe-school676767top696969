@@ -50,6 +50,7 @@ export const WISO_PRACTICE_ROUTES = {
   subjects: "/wiso/products/full-course-subjects",
   math: "/wiso/products/full-course-math",
   economics: "/wiso/products/full-course-economics",
+  german: "/wiso/products/full-course-german",
   home: "/wiso",
 } as const;
 

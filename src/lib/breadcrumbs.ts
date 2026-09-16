@@ -32,6 +32,7 @@ const SEGMENT_LABELS: Record<string, string> = {
   "full-course-economics": "Economics",
   "full-course-math": "Math",
   "full-course-english": "English",
+  "full-course-german": "Deutsch",
   "lite-bbe-course": "Lite BBE Course",
   "lite-bbe-course-subjects": "Lite Course Subjects",
   "lite-bbe-course-math": "Lite Math",

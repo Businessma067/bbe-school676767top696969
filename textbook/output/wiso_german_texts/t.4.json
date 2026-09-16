@@ -1,0 +1,340 @@
+{
+  "subsection": {
+    "id": "t.4",
+    "title": "Reshoring, Nearshoring und die Neuordnung globaler Lieferketten",
+    "passage": "(1) Über vier Jahrzehnte folgte die Organisation industrieller Produktion einer einfachen Logik: Jeder Fertigungsschritt wanderte dorthin, wo er am günstigsten erledigt werden konnte. Sinkende Zölle, die Containerschifffahrt und billige Telekommunikation erlaubten es, die Herstellung eines Autos oder eines Mobiltelefons in Hunderte Einzelschritte über Dutzende Länder zu zerlegen. Lagerbestände galten in dieser Ordnung als vermeidbare Kosten; das aus der japanischen Automobilindustrie übernommene Prinzip der Just-in-time-Fertigung sollte Kapital freisetzen, das in Lagerhallen ungenutzt gebunden war.\n\n(2) Die Pandemie ab 2020 machte die Kehrseite dieser Effizienz sichtbar. Als Werke in Ostasien vorübergehend schlossen und die Nachfrage sich von Dienstleistungen auf Güter verlagerte, fehlten Vorprodukte an vielen Stellen gleichzeitig. Besonders deutlich wurde dies bei Halbleitern: Weil Autohersteller ihre Chipbestellungen im Frühjahr 2020 stornierten, verloren sie ihre Plätze in den Fertigungsplänen der Auftragsfabriken und mussten 2021 Bänder anhalten, obwohl die Nachfrage nach Fahrzeugen längst zurückgekehrt war. Die Frachtrate für einen Standardcontainer von Shanghai nach Nordeuropa stieg 2021 auf ein Mehrfaches des Vorkrisenniveaus, und die sechstägige Blockade des Suezkanals im März 2021 zeigte, wie stark ein einzelner Engpass den Welthandel treffen kann.\n\n(3) Seither zirkulieren drei Begriffe. Reshoring meint die Rückverlagerung von Produktion in das Heimatland des Unternehmens, Nearshoring die Verlagerung in geografisch nahe Länder – für die Vereinigten Staaten vor allem Mexiko, für die Europäische Union Polen, Rumänien, die Türkei oder Marokko –, Friendshoring schließlich die Bevorzugung politisch verbündeter Staaten. Gemeinsam ist allen drei Strategien nicht der Rückzug aus dem Welthandel, sondern die Streuung von Risiken; in der Praxis firmiert sie häufig als „China plus eins\", also als Aufbau eines zweiten Standorts neben dem chinesischen.\n\n(4) Die Politik hat diese Bewegung mit Geld unterlegt. Die Vereinigten Staaten verabschiedeten 2022 den CHIPS and Science Act, der rund 52 Milliarden Dollar für Halbleiterfertigung und Forschung bereitstellt, sowie den Inflation Reduction Act, dessen Steuergutschriften an Produktionsstandorte in Nordamerika gebunden sind. Die Europäische Union antwortete mit einem eigenen Chip-Gesetz und mit einer Verordnung zu kritischen Rohstoffen, die Zielwerte für Förderung und Recycling innerhalb der Union festlegt. Neue Werke in Arizona, Ohio und im Raum Dresden wurden als Belege dafür präsentiert, dass Industriepolitik zurück ist.\n\n(5) Die Datenlage bleibt allerdings ernüchternd. Handels- und Investitionsstatistiken zeigen bisher weniger eine Rückverlagerung als eine Umleitung: Der Anteil Mexikos und Vietnams an den US-Importen wuchs, während chinesische Vorprodukte häufig über diese Drittländer weiterhin in dieselben Endprodukte gelangen. Mehrere Untersuchungen deuten deshalb darauf hin, dass viele Lieferketten länger und undurchsichtiger geworden sind statt kürzer, weil ein zusätzliches Land zwischengeschaltet wird. Ökonomen sprechen von „Verbindungsländern\", deren Importe aus China ungefähr im gleichen Maß steigen wie ihre Exporte in die Vereinigten Staaten.\n\n(6) Befürworter halten die Kosten dieser Umstellung für gerechtfertigt. Sie verweisen auf Lieferengpässe bei Arzneimitteln, Halbleitern und seltenen Erden, bei denen ein einziger Anbieterstaat einen großen Teil der Weltproduktion kontrolliert, und auf die politische Erpressbarkeit, die daraus folgt. Zudem seien kürzere Transportwege leichter zu überwachen, was sowohl der Einhaltung von Sorgfaltspflichten in der Lieferkette als auch der Reaktionsgeschwindigkeit bei Nachfrageschwankungen zugutekomme.\n\n(7) Kritiker bestreiten weniger das Ziel als die Rechnung. Fabriken in Hochlohnländern erfordern höhere Bau- und Betriebskosten, Fachkräfte fehlen, und Genehmigungsverfahren dauern; eine moderne Halbleiterfabrik braucht von der Entscheidung bis zur Serienproduktion mehrere Jahre. Sie warnen zudem vor einem Subventionswettlauf, in dem Staaten dieselben Investitionen gegeneinander überbieten, und sie erinnern daran, dass geografische Nähe kein Synonym für Sicherheit ist: Auch ein Nachbarland kann von Erdbeben, Wasserknappheit, Streiks oder organisierter Kriminalität getroffen werden.\n\n(8) Auf Unternehmensebene fällt die Antwort nüchterner aus als in politischen Reden. Verbreitet sind zweite Bezugsquellen für kritische Teile, größere Sicherheitsbestände, regionale Fertigung für regionale Märkte sowie der Versuch, Zulieferer der zweiten und dritten Stufe überhaupt erst zu kennen. Umfragen unter Einkaufsleitern zeigen jedoch regelmäßig, dass die Zahl der angekündigten Verlagerungen die Zahl der tatsächlich abgeschlossenen deutlich übersteigt, weil jede Verlagerung Qualifizierung, Zertifizierung und Anlaufkosten verursacht.\n\n(9) Offen bleibt daher, wie weit die Neuordnung reicht. Sie könnte in einer dauerhaften Verschiebung der Gewichte von Effizienz zu Sicherheit münden, sich aber auch als teure Zwischenphase erweisen, wenn Automatisierung die Lohnkosten als Standortfaktor entwertet und Handelskonflikte abkühlen. Welche der beiden Entwicklungen sich durchsetzt, wird weniger von Ankündigungen abhängen als von den Kosten, die Unternehmen und Wähler dauerhaft zu tragen bereit sind.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-4-01",
+      "case_id": "DE T.4.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das genaue Leseverständnis der einleitenden Absätze zur Effizienzlogik, zu den Störungen der Pandemie und zu den drei Grundbegriffen.",
+      "kind": "reading",
+      "statements": [
+        "Lagerbestände galten in der eingangs beschriebenen Ordnung als vermeidbare Kosten.",
+        "Das Prinzip der Just-in-time-Fertigung stammt laut Text ursprünglich aus der US-amerikanischen Elektronikindustrie.",
+        "Autohersteller stornierten dem Text zufolge ihre Chipbestellungen im Frühjahr 2020.",
+        "Die Blockade des Suezkanals im März 2021 dauerte laut Text mehrere Wochen.",
+        "Nearshoring bezeichnet nach dem Text die Rückverlagerung von Produktion in das Heimatland des Unternehmens."
+      ],
+      "answer_key": [true, false, true, false, false],
+      "tactical_explanations": [
+        "**A) Lagerbestände galten in der eingangs beschriebenen Ordnung als vermeidbare Kosten.**\n\nAbsatz 1 formuliert es wörtlich so: „Lagerbestände galten in dieser Ordnung als vermeidbare Kosten\". Genau daraus leitet der Text die Attraktivität der Just-in-time-Fertigung ab.\n\nDie Aussage übernimmt die Bewertung ohne Zusatz und verschiebt weder Zeitraum noch Akteur.\n\nSie trifft zu, weil sie die im ersten Absatz genannte Sicht auf Lagerhaltung unverändert wiedergibt.",
+        "**B) Das Prinzip der Just-in-time-Fertigung stammt laut Text ursprünglich aus der US-amerikanischen Elektronikindustrie.**\n\nAbsatz 1 nennt eine andere Herkunft: „das aus der japanischen Automobilindustrie übernommene Prinzip der Just-in-time-Fertigung\".\n\n**Falle:** Herkunftsangaben werden gern durch eine plausibel klingende, aber nicht genannte Branche ersetzt.\n\nDie Aussage ist falsch, weil der Text sowohl das Land als auch die Branche eindeutig anders bestimmt.",
+        "**C) Autohersteller stornierten dem Text zufolge ihre Chipbestellungen im Frühjahr 2020.**\n\nAbsatz 2 beschreibt genau diesen Schritt: „Weil Autohersteller ihre Chipbestellungen im Frühjahr 2020 stornierten\", verloren sie ihre Plätze in den Fertigungsplänen.\n\nDie Stornierung ist im Text der Ausgangspunkt der späteren Bandstillstände von 2021.\n\nDie Aussage trifft zu, weil Zeitpunkt und Handlung mit dem Absatz übereinstimmen.",
+        "**D) Die Blockade des Suezkanals im März 2021 dauerte laut Text mehrere Wochen.**\n\nAbsatz 2 gibt eine kurze Dauer an: „die sechstägige Blockade des Suezkanals im März 2021\". Sechs Tage sind weniger als eine Woche.\n\n**Tipp:** Zusammengesetzte Zeitangaben wie „sechstägig\" enthalten die Zahl direkt im Wort; sie zu übersehen führt fast immer zu einer falschen Dauer.\n\nDie Aussage ist falsch, weil sie die Blockade um ein Mehrfaches verlängert.",
+        "**E) Nearshoring bezeichnet nach dem Text die Rückverlagerung von Produktion in das Heimatland des Unternehmens.**\n\nAbsatz 3 weist diese Bedeutung einem anderen Begriff zu: „Reshoring meint die Rückverlagerung von Produktion in das Heimatland des Unternehmens\". Nearshoring ist dort die Verlagerung in geografisch nahe Länder.\n\n**Falle:** Bei Begriffsreihen werden Definitionen häufig um eine Position verschoben.\n\nDie Aussage ist falsch, weil sie die Definition von Reshoring auf Nearshoring überträgt."
+      ],
+      "highlights": [
+        "Lagerbestände galten in dieser Ordnung als vermeidbare Kosten",
+        "das aus der japanischen Automobilindustrie übernommene Prinzip der Just-in-time-Fertigung",
+        "Weil Autohersteller ihre Chipbestellungen im Frühjahr 2020 stornierten",
+        "die sechstägige Blockade des Suezkanals im März 2021",
+        "Reshoring meint die Rückverlagerung von Produktion in das Heimatland des Unternehmens"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-02",
+      "case_id": "DE T.4.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen das genaue Leseverständnis der politischen Programme, der empirischen Befunde und der Argumente der Befürworter.",
+      "kind": "reading",
+      "statements": [
+        "Der CHIPS and Science Act stellt laut Text rund 52 Milliarden Dollar bereit.",
+        "Die Steuergutschriften des Inflation Reduction Act sind dem Text zufolge an Produktionsstandorte in Nordamerika gebunden.",
+        "Die Europäische Union reagierte laut Text ausschließlich mit höheren Zöllen.",
+        "Die Handels- und Investitionsstatistiken zeigen laut Text vor allem eine breite Rückverlagerung von Produktion.",
+        "Befürworter verweisen nach Absatz 6 auf Lieferengpässe bei Arzneimitteln, Halbleitern und seltenen Erden."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "**A) Der CHIPS and Science Act stellt laut Text rund 52 Milliarden Dollar bereit.**\n\nAbsatz 4 nennt diese Summe ausdrücklich: „der rund 52 Milliarden Dollar für Halbleiterfertigung und Forschung bereitstellt\".\n\nDie Aussage übernimmt Betrag und Programm korrekt und behauptet keine darüber hinausgehende Verwendung.\n\nSie trifft zu, weil Zahl und Zuordnung mit dem Absatz übereinstimmen.",
+        "**B) Die Steuergutschriften des Inflation Reduction Act sind dem Text zufolge an Produktionsstandorte in Nordamerika gebunden.**\n\nAbsatz 4 beschreibt genau diese Bedingung: „dessen Steuergutschriften an Produktionsstandorte in Nordamerika gebunden sind\".\n\n**Tipp:** Achte darauf, welches der beiden Gesetze welche Eigenschaft trägt – der Text ordnet die Summe dem einen, die Standortbindung dem anderen zu.\n\nDie Aussage ist zutreffend, weil sie diese Zuordnung nicht vertauscht.",
+        "**C) Die Europäische Union reagierte laut Text ausschließlich mit höheren Zöllen.**\n\nAbsatz 4 nennt zwei andere Instrumente: „Die Europäische Union antwortete mit einem eigenen Chip-Gesetz und mit einer Verordnung zu kritischen Rohstoffen\", die Zielwerte für Förderung und Recycling festlegt.\n\nVon Zöllen ist an dieser Stelle des Textes nicht die Rede.\n\nDie Aussage ist falsch, weil sie sowohl das Instrument austauscht als auch mit „ausschließlich\" eine unzulässige Verengung einführt.",
+        "**D) Die Handels- und Investitionsstatistiken zeigen laut Text vor allem eine breite Rückverlagerung von Produktion.**\n\nAbsatz 5 kommt zum gegenteiligen Befund: Die Statistiken „zeigen bisher weniger eine Rückverlagerung als eine Umleitung\".\n\n**Falle:** Politische Absicht und statistischer Befund werden im Text bewusst getrennt; wer beides gleichsetzt, übernimmt die Ankündigung als Ergebnis.\n\nDie Aussage ist falsch, weil der Text die Umleitung von Handelsströmen und nicht die Rückverlagerung als dominantes Muster beschreibt.",
+        "**E) Befürworter verweisen nach Absatz 6 auf Lieferengpässe bei Arzneimitteln, Halbleitern und seltenen Erden.**\n\nAbsatz 6 nennt genau diese drei Bereiche: „Sie verweisen auf Lieferengpässe bei Arzneimitteln, Halbleitern und seltenen Erden\", bei denen ein einziger Anbieterstaat einen großen Teil der Weltproduktion kontrolliert.\n\nDie Aussage bewahrt außerdem die Zuschreibung an die Befürworter.\n\nSie trifft zu, weil Inhalt und Urheber der Argumentation korrekt wiedergegeben sind."
+      ],
+      "highlights": [
+        "der rund 52 Milliarden Dollar für Halbleiterfertigung und Forschung bereitstellt",
+        "dessen Steuergutschriften an Produktionsstandorte in Nordamerika gebunden sind",
+        "Die Europäische Union antwortete mit einem eigenen Chip-Gesetz und mit einer Verordnung zu kritischen Rohstoffen",
+        "zeigen bisher weniger eine Rückverlagerung als eine Umleitung",
+        "Sie verweisen auf Lieferengpässe bei Arzneimitteln, Halbleitern und seltenen Erden"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 2,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-03",
+      "case_id": "DE T.4.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen das genaue Leseverständnis der Kritikerposition, der betrieblichen Praxis und des offenen Schlusses.",
+      "kind": "reading",
+      "statements": [
+        "Kritiker bestreiten laut Text vor allem das Ziel der Versorgungssicherheit und nicht die Kostenrechnung.",
+        "Eine moderne Halbleiterfabrik benötigt dem Text zufolge von der Entscheidung bis zur Serienproduktion mehrere Jahre.",
+        "Der Text argumentiert, geografische Nähe sei gleichbedeutend mit Versorgungssicherheit.",
+        "Umfragen unter Einkaufsleitern zeigen laut Text, dass angekündigte Verlagerungen die tatsächlich abgeschlossenen deutlich übersteigen.",
+        "Der Text schließt mit der Feststellung, dass die Neuordnung der Lieferketten unumkehrbar ist."
+      ],
+      "answer_key": [false, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Kritiker bestreiten laut Text vor allem das Ziel der Versorgungssicherheit und nicht die Kostenrechnung.**\n\nAbsatz 7 setzt die Gewichte umgekehrt: „Kritiker bestreiten weniger das Ziel als die Rechnung\". Anschließend folgen Kosten-, Fachkräfte- und Zeitargumente.\n\n**Tipp:** Die Konstruktion „weniger … als …\" zeigt, welcher Punkt im Text der eigentliche Streitgegenstand ist.\n\nDie Aussage ist falsch, weil sie Ziel und Rechnung in ihrer Bedeutung tauscht.",
+        "**B) Eine moderne Halbleiterfabrik benötigt dem Text zufolge von der Entscheidung bis zur Serienproduktion mehrere Jahre.**\n\nAbsatz 7 nennt diese Dauer ausdrücklich: „eine moderne Halbleiterfabrik braucht von der Entscheidung bis zur Serienproduktion mehrere Jahre\".\n\nDie Angabe steht dort als Beispiel für die Trägheit von Verlagerungsprojekten.\n\nDie Aussage trifft zu, weil sie die Zeitangabe unverändert übernimmt.",
+        "**C) Der Text argumentiert, geografische Nähe sei gleichbedeutend mit Versorgungssicherheit.**\n\nAbsatz 7 formuliert das Gegenteil: „dass geografische Nähe kein Synonym für Sicherheit ist\". Als Belege nennt der Text Erdbeben, Wasserknappheit, Streiks und organisierte Kriminalität in Nachbarländern.\n\n**Falle:** Die Aussage klingt wie die Begründung von Nearshoring, wird im Text aber ausdrücklich zurückgewiesen.\n\nSie ist falsch, weil der Text Nähe und Sicherheit bewusst voneinander trennt.",
+        "**D) Umfragen unter Einkaufsleitern zeigen laut Text, dass angekündigte Verlagerungen die tatsächlich abgeschlossenen deutlich übersteigen.**\n\nAbsatz 8 gibt diesen Befund wieder: „dass die Zahl der angekündigten Verlagerungen die Zahl der tatsächlich abgeschlossenen deutlich übersteigt\", weil Qualifizierung, Zertifizierung und Anlaufkosten anfallen.\n\nDie Aussage bewahrt die Quelle (Umfragen unter Einkaufsleitern) und die Richtung des Vergleichs.\n\nSie trifft zu, weil beide Elemente mit dem Absatz übereinstimmen.",
+        "**E) Der Text schließt mit der Feststellung, dass die Neuordnung der Lieferketten unumkehrbar ist.**\n\nAbsatz 9 beginnt mit einer offenen Frage: „Offen bleibt daher, wie weit die Neuordnung reicht\". Der Text nennt danach zwei mögliche Entwicklungen, darunter eine teure Zwischenphase.\n\n**Falle:** Ein Schluss, der Szenarien aufzählt, wird leicht als Prognose gelesen.\n\nDie Aussage ist falsch, weil der Text die Reichweite der Neuordnung ausdrücklich unentschieden lässt."
+      ],
+      "highlights": [
+        "Kritiker bestreiten weniger das Ziel als die Rechnung",
+        "eine moderne Halbleiterfabrik braucht von der Entscheidung bis zur Serienproduktion mehrere Jahre",
+        "dass geografische Nähe kein Synonym für Sicherheit ist",
+        "dass die Zahl der angekündigten Verlagerungen die Zahl der tatsächlich abgeschlossenen deutlich übersteigt",
+        "Offen bleibt daher, wie weit die Neuordnung reicht"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-04",
+      "case_id": "DE T.4.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen prüfen Schlussfolgerungen aus dem gesamten Text sowie die Bedeutung zentraler Begriffe in ihrem jeweiligen Zusammenhang.",
+      "kind": "reading",
+      "statements": [
+        "„Umleitung\" bezeichnet in Absatz 5 die Verschiebung von Handelsströmen über Drittländer und nicht deren Verkürzung.",
+        "Der Ausdruck „China plus eins\" beschreibt laut Absatz 3 den vollständigen Ausstieg aus dem chinesischen Markt.",
+        "„Verbindungsländer\" sind nach Absatz 5 Staaten, deren Importe aus China ungefähr im gleichen Maß steigen wie ihre Exporte in die Vereinigten Staaten.",
+        "Aus Absatz 8 folgt, dass jede Verlagerung zusätzliche Qualifizierungs-, Zertifizierungs- und Anlaufkosten verursacht.",
+        "„Subventionswettlauf\" bezeichnet in Absatz 7 die gemeinsame Finanzierung neuer Werke durch mehrere Staaten."
+      ],
+      "answer_key": [true, false, true, true, false],
+      "tactical_explanations": [
+        "**A) „Umleitung\" bezeichnet in Absatz 5 die Verschiebung von Handelsströmen über Drittländer und nicht deren Verkürzung.**\n\nAbsatz 5 erläutert den Begriff selbst: Chinesische Vorprodukte gelangen über Mexiko und Vietnam in dieselben Endprodukte, und die Ketten werden länger, „weil ein zusätzliches Land zwischengeschaltet wird\".\n\n**Tipp:** Wenn ein Begriff im nächsten Satz erläutert wird, ist diese Erläuterung die verlässlichste Bedeutungsquelle.\n\nDie Deutung trifft zu, weil Umleitung im Text gerade die Verlängerung über eine Zwischenstation meint.",
+        "**B) Der Ausdruck „China plus eins\" beschreibt laut Absatz 3 den vollständigen Ausstieg aus dem chinesischen Markt.**\n\nAbsatz 3 definiert die Wendung anders, nämlich „als Aufbau eines zweiten Standorts neben dem chinesischen\". Das Wort „neben\" schließt einen Ausstieg aus.\n\nDer Absatz betont außerdem, dass es allen drei Strategien nicht um Rückzug, sondern um Risikostreuung geht.\n\nDie Deutung ist falsch, weil „plus eins\" eine Ergänzung und keinen Ersatz bezeichnet.",
+        "**C) „Verbindungsländer\" sind nach Absatz 5 Staaten, deren Importe aus China ungefähr im gleichen Maß steigen wie ihre Exporte in die Vereinigten Staaten.**\n\nAbsatz 5 gibt genau diese Definition: Ökonomen sprechen von Verbindungsländern, „deren Importe aus China ungefähr im gleichen Maß steigen wie ihre Exporte in die Vereinigten Staaten\".\n\nDie Parallelität der beiden Ströme ist im Text das entscheidende Merkmal des Begriffs.\n\nDie Deutung trifft zu, weil sie beide Richtungen und ihre Gleichläufigkeit erhält.",
+        "**D) Aus Absatz 8 folgt, dass jede Verlagerung zusätzliche Qualifizierungs-, Zertifizierungs- und Anlaufkosten verursacht.**\n\nAbsatz 8 nennt diese Kosten als Grund für die Lücke zwischen Ankündigung und Umsetzung: „weil jede Verlagerung Qualifizierung, Zertifizierung und Anlaufkosten verursacht\".\n\nDie Schlussfolgerung bleibt damit innerhalb der Begründung des Absatzes.\n\nSie ist zutreffend, weil der Text die drei Kostenarten ausdrücklich jeder Verlagerung zuordnet.",
+        "**E) „Subventionswettlauf\" bezeichnet in Absatz 7 die gemeinsame Finanzierung neuer Werke durch mehrere Staaten.**\n\nAbsatz 7 beschreibt Konkurrenz statt Kooperation: einen Wettlauf, „in dem Staaten dieselben Investitionen gegeneinander überbieten\".\n\n**Falle:** „Gegeneinander\" wird leicht zu „miteinander\" gelesen, wodurch aus einem Warnargument eine Gemeinschaftsleistung wird.\n\nDie Deutung ist falsch, weil der Text ein Überbieten im Wettbewerb und keine gemeinsame Finanzierung meint."
+      ],
+      "highlights": [
+        "weil ein zusätzliches Land zwischengeschaltet wird",
+        "also als Aufbau eines zweiten Standorts neben dem chinesischen",
+        "deren Importe aus China ungefähr im gleichen Maß steigen wie ihre Exporte in die Vereinigten Staaten",
+        "weil jede Verlagerung Qualifizierung, Zertifizierung und Anlaufkosten verursacht",
+        "in dem Staaten dieselben Investitionen gegeneinander überbieten"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 4,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-05",
+      "case_id": "DE T.4.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen, ob der Aufbau der Argumentation über mehrere Absätze hinweg richtig nachvollzogen wird.",
+      "kind": "reading",
+      "statements": [
+        "Der Text stellt der Effizienzlogik aus Absatz 1 die Störungserfahrungen aus Absatz 2 gegenüber.",
+        "Absatz 6 und Absatz 7 bilden ein Paar aus Befürworter- und Kritikerpositionen.",
+        "Der Text präsentiert die politischen Programme aus Absatz 4 als bereits nachgewiesenen Erfolg.",
+        "Absatz 8 verschiebt die Perspektive von der Politik auf betriebliche Entscheidungen.",
+        "Der Schluss des Textes trifft eine klare Prognose zugunsten einer dauerhaften Regionalisierung."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Der Text stellt der Effizienzlogik aus Absatz 1 die Störungserfahrungen aus Absatz 2 gegenüber.**\n\nAbsatz 1 beschreibt die Kostenlogik der Arbeitsteilung, Absatz 2 setzt dagegen: „Die Pandemie ab 2020 machte die Kehrseite dieser Effizienz sichtbar\".\n\n**Tipp:** Das Wort „Kehrseite\" ist hier das Gelenk zwischen den beiden Absätzen.\n\nDie Aussage trifft zu, weil der Text den Übergang von Vorteil zu Anfälligkeit ausdrücklich vollzieht.",
+        "**B) Absatz 6 und Absatz 7 bilden ein Paar aus Befürworter- und Kritikerpositionen.**\n\nAbsatz 6 beginnt mit „Befürworter halten die Kosten dieser Umstellung für gerechtfertigt\", Absatz 7 mit der Gegenposition der Kritiker zur Kostenrechnung.\n\nDie beiden Absätze behandeln damit dieselbe Streitfrage aus entgegengesetzter Richtung.\n\nDie Aussage ist zutreffend, weil der Text die Argumente bewusst als Pro und Contra anordnet.",
+        "**C) Der Text präsentiert die politischen Programme aus Absatz 4 als bereits nachgewiesenen Erfolg.**\n\nAbsatz 5 folgt unmittelbar mit einer Relativierung: „Die Datenlage bleibt allerdings ernüchternd\". Die Statistiken zeigen dort Umleitung statt Rückverlagerung.\n\n**Falle:** Die in Absatz 4 genannten Werke sind als Belege präsentierte Ankündigungen, nicht als geprüftes Ergebnis des Textes.\n\nDie Aussage ist falsch, weil der Text die Wirksamkeit der Programme sofort einschränkt.",
+        "**D) Absatz 8 verschiebt die Perspektive von der Politik auf betriebliche Entscheidungen.**\n\nAbsatz 8 setzt mit dem Wechsel ein: „Auf Unternehmensebene fällt die Antwort nüchterner aus als in politischen Reden\". Danach folgen Bezugsquellen, Sicherheitsbestände und Zuliefererkenntnis.\n\nDer Absatz wechselt damit von Programmen zu konkreten Beschaffungsentscheidungen.\n\nDie Aussage trifft zu, weil dieser Perspektivwechsel im ersten Satz benannt wird.",
+        "**E) Der Schluss des Textes trifft eine klare Prognose zugunsten einer dauerhaften Regionalisierung.**\n\nAbsatz 9 stellt zwei Szenarien nebeneinander und schiebt die Entscheidung weiter: „Welche der beiden Entwicklungen sich durchsetzt, wird weniger von Ankündigungen abhängen\" als von den tragbaren Kosten.\n\nEine der Möglichkeiten ist ausdrücklich eine teure Zwischenphase, also das Gegenteil einer Dauerlösung.\n\nDie Aussage ist falsch, weil der Schluss keine Richtung festlegt, sondern die Bedingungen für beide Wege nennt."
+      ],
+      "highlights": [
+        "Die Pandemie ab 2020 machte die Kehrseite dieser Effizienz sichtbar",
+        "Befürworter halten die Kosten dieser Umstellung für gerechtfertigt",
+        "Die Datenlage bleibt allerdings ernüchternd",
+        "Auf Unternehmensebene fällt die Antwort nüchterner aus als in politischen Reden",
+        "Welche der beiden Entwicklungen sich durchsetzt, wird weniger von Ankündigungen abhängen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 5,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-06",
+      "case_id": "DE T.4.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen die genaue Wiedergabe von Jahreszahlen, Beträgen, Ländernamen und Standorten aus dem Text.",
+      "kind": "reading",
+      "statements": [
+        "Der Text nennt für die Verabschiedung des CHIPS and Science Act das Jahr 2022.",
+        "Die Frachtrate für einen Standardcontainer von Shanghai nach Nordeuropa stieg laut Text 2021 auf ein Mehrfaches des Vorkrisenniveaus.",
+        "Als Nearshoring-Ziele der Europäischen Union nennt der Text unter anderem Polen, Rumänien, die Türkei und Marokko.",
+        "Der Text nennt Arizona, Ohio und den Raum München als Standorte neuer Werke.",
+        "Laut Text sank der Anteil Mexikos und Vietnams an den US-Importen."
+      ],
+      "answer_key": [true, true, true, false, false],
+      "tactical_explanations": [
+        "**A) Der Text nennt für die Verabschiedung des CHIPS and Science Act das Jahr 2022.**\n\nAbsatz 4 datiert das Programm eindeutig: „Die Vereinigten Staaten verabschiedeten 2022 den CHIPS and Science Act\".\n\nDas gleiche Jahr gilt im Absatz auch für den Inflation Reduction Act.\n\nDie Aussage trifft zu, weil Jahr und Gesetz genau so verbunden sind.",
+        "**B) Die Frachtrate für einen Standardcontainer von Shanghai nach Nordeuropa stieg laut Text 2021 auf ein Mehrfaches des Vorkrisenniveaus.**\n\nAbsatz 2 formuliert es so: Die Frachtrate „stieg 2021 auf ein Mehrfaches des Vorkrisenniveaus\".\n\n**Tipp:** „Ein Mehrfaches\" ist eine unbestimmte, aber deutliche Größenangabe; sie darf nicht in eine konkrete Prozentzahl umgedeutet werden.\n\nDie Aussage ist zutreffend, weil sie Jahr, Route und Größenordnung unverändert übernimmt.",
+        "**C) Als Nearshoring-Ziele der Europäischen Union nennt der Text unter anderem Polen, Rumänien, die Türkei und Marokko.**\n\nAbsatz 3 listet genau diese Länder: „für die Europäische Union Polen, Rumänien, die Türkei oder Marokko\", während für die Vereinigten Staaten vor allem Mexiko genannt wird.\n\nDie Aussage hält die Zuordnung der Länder zur EU korrekt.\n\nSie trifft zu, weil alle vier genannten Staaten im Absatz vorkommen.",
+        "**D) Der Text nennt Arizona, Ohio und den Raum München als Standorte neuer Werke.**\n\nAbsatz 4 nennt einen anderen deutschen Standort: „Neue Werke in Arizona, Ohio und im Raum Dresden\".\n\n**Falle:** Zwei von drei Angaben stimmen; die dritte kippt die gesamte Aussage.\n\nSie ist falsch, weil der Text Dresden und nicht München als Standort führt.",
+        "**E) Laut Text sank der Anteil Mexikos und Vietnams an den US-Importen.**\n\nAbsatz 5 beschreibt eine Zunahme: „Der Anteil Mexikos und Vietnams an den US-Importen wuchs\", während chinesische Vorprodukte über diese Drittländer weiterlaufen.\n\nGerade dieses Wachstum ist im Text der Beleg für Umleitung statt Rückverlagerung.\n\nDie Aussage ist falsch, weil sie die Richtung der Entwicklung umkehrt."
+      ],
+      "highlights": [
+        "Die Vereinigten Staaten verabschiedeten 2022 den CHIPS and Science Act",
+        "stieg 2021 auf ein Mehrfaches des Vorkrisenniveaus",
+        "für die Europäische Union Polen, Rumänien, die Türkei oder Marokko",
+        "Neue Werke in Arizona, Ohio und im Raum Dresden",
+        "Der Anteil Mexikos und Vietnams an den US-Importen wuchs"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 6,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-07",
+      "case_id": "DE T.4.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen, ob die im Text beschriebenen Wirkungsketten in der richtigen Richtung erfasst werden.",
+      "kind": "reading",
+      "statements": [
+        "Die Stornierung der Chipbestellungen führte laut Text dazu, dass Autohersteller ihre Plätze in den Fertigungsplänen verloren.",
+        "Der Text nennt als Ursache der Engpässe unter anderem die Verlagerung der Nachfrage von Dienstleistungen auf Güter.",
+        "Nach Absatz 7 senken Fabriken in Hochlohnländern die Bau- und Betriebskosten.",
+        "Laut Absatz 9 könnte Automatisierung die Lohnkosten als Standortfaktor entwerten.",
+        "Der Text führt die längeren Lieferketten darauf zurück, dass China vollständig aus den Ketten ausgeschieden ist."
+      ],
+      "answer_key": [true, true, false, true, false],
+      "tactical_explanations": [
+        "**A) Die Stornierung der Chipbestellungen führte laut Text dazu, dass Autohersteller ihre Plätze in den Fertigungsplänen verloren.**\n\nAbsatz 2 verbindet beides ursächlich: Weil die Hersteller stornierten, „verloren sie ihre Plätze in den Fertigungsplänen der Auftragsfabriken\" und mussten 2021 Bänder anhalten.\n\n**Tipp:** Der Absatz baut eine dreigliedrige Kette – Stornierung, Platzverlust, Bandstillstand; die Aussage prüft nur die ersten zwei Glieder.\n\nSie trifft zu, weil Ursache und Wirkung genau in dieser Reihenfolge im Text stehen.",
+        "**B) Der Text nennt als Ursache der Engpässe unter anderem die Verlagerung der Nachfrage von Dienstleistungen auf Güter.**\n\nAbsatz 2 nennt zwei gleichzeitige Auslöser: Werke in Ostasien schlossen, und „die Nachfrage sich von Dienstleistungen auf Güter verlagerte\", worauf Vorprodukte an vielen Stellen fehlten.\n\nDie Nachfrageverschiebung steht damit im Text neben dem Produktionsausfall als eigenständige Ursache.\n\nDie Aussage ist zutreffend, weil sie einen der beiden genannten Gründe korrekt wiedergibt.",
+        "**C) Nach Absatz 7 senken Fabriken in Hochlohnländern die Bau- und Betriebskosten.**\n\nAbsatz 7 sagt das Gegenteil: „Fabriken in Hochlohnländern erfordern höhere Bau- und Betriebskosten\", zudem fehlen Fachkräfte und Genehmigungen dauern.\n\n**Falle:** Genau diese Kostensteigerung ist das zentrale Kritikerargument; wer sie umdreht, macht aus dem Einwand ein Argument der Befürworter.\n\nDie Aussage ist falsch, weil der Text höhere und nicht niedrigere Kosten nennt.",
+        "**D) Laut Absatz 9 könnte Automatisierung die Lohnkosten als Standortfaktor entwerten.**\n\nAbsatz 9 nennt diese Möglichkeit ausdrücklich als Bedingung für das zweite Szenario: „wenn Automatisierung die Lohnkosten als Standortfaktor entwertet\" und Handelskonflikte abkühlen.\n\nDie Aussage bewahrt den Möglichkeitscharakter mit „könnte\" und behauptet keine Gewissheit.\n\nSie trifft zu, weil sie die im Schlussabsatz genannte Bedingung korrekt wiedergibt.",
+        "**E) Der Text führt die längeren Lieferketten darauf zurück, dass China vollständig aus den Ketten ausgeschieden ist.**\n\nAbsatz 5 begründet es umgekehrt: Die Ketten werden länger, weil chinesische Vorprodukte „häufig über diese Drittländer weiterhin in dieselben Endprodukte gelangen\" und ein Land zwischengeschaltet wird.\n\n**Falle:** Ein Ausscheiden Chinas würde die Ketten nicht verlängern, sondern die im Text beschriebene Zwischenstation überflüssig machen.\n\nDie Aussage ist falsch, weil der Text die fortdauernde chinesische Beteiligung als Grund für die Verlängerung nennt."
+      ],
+      "highlights": [
+        "verloren sie ihre Plätze in den Fertigungsplänen der Auftragsfabriken",
+        "die Nachfrage sich von Dienstleistungen auf Güter verlagerte",
+        "Fabriken in Hochlohnländern erfordern höhere Bau- und Betriebskosten",
+        "wenn Automatisierung die Lohnkosten als Standortfaktor entwertet",
+        "während chinesische Vorprodukte häufig über diese Drittländer weiterhin in dieselben Endprodukte gelangen"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 7,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-08",
+      "case_id": "DE T.4.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen, wie stark der Text einzelne Positionen gewichtet und ob er sie als eigenes Urteil oder als fremde Ansicht darstellt.",
+      "kind": "reading",
+      "statements": [
+        "Der Text übernimmt die Erfolgsmeldungen der Industriepolitik als eigenes Urteil.",
+        "Der Text gewichtet die empirische Datenlage höher als politische Ankündigungen.",
+        "Die Argumente in Absatz 6 werden ausdrücklich den Befürwortern zugeschrieben.",
+        "Der Text bewertet Nearshoring als eine eindeutig risikofreie Lösung.",
+        "Die Wendung „nüchterner als in politischen Reden\" signalisiert eine Distanz des Textes zur politischen Rhetorik."
+      ],
+      "answer_key": [false, true, true, false, true],
+      "tactical_explanations": [
+        "**A) Der Text übernimmt die Erfolgsmeldungen der Industriepolitik als eigenes Urteil.**\n\nAbsatz 4 markiert die Zuschreibung sprachlich: Die neuen Werke „wurden als Belege dafür präsentiert, dass Industriepolitik zurück ist\".\n\n**Tipp:** Passivkonstruktionen wie „wurden präsentiert\" zeigen, dass eine Deutung berichtet und nicht geteilt wird.\n\nDie Aussage ist falsch, weil der Text die Erfolgsdeutung anderen zuschreibt und in Absatz 5 sogar relativiert.",
+        "**B) Der Text gewichtet die empirische Datenlage höher als politische Ankündigungen.**\n\nAbsatz 5 stellt den Befund der Forschung gegen die Programme: „Mehrere Untersuchungen deuten deshalb darauf hin\", dass Lieferketten länger statt kürzer geworden sind.\n\nAuch der Schlussabsatz misst Ankündigungen ausdrücklich weniger Gewicht bei als tatsächlichen Kosten.\n\nDie Aussage trifft zu, weil der Text an mehreren Stellen Daten über Absichtserklärungen stellt.",
+        "**C) Die Argumente in Absatz 6 werden ausdrücklich den Befürwortern zugeschrieben.**\n\nAbsatz 6 beginnt mit der Zuschreibung: „Befürworter halten die Kosten dieser Umstellung für gerechtfertigt\", und setzt mit „Sie verweisen…\" fort.\n\nDer Text spricht damit durchgehend über eine Position, nicht in eigener Stimme.\n\nDie Aussage ist zutreffend, weil die Zuschreibung im ersten Satz des Absatzes steht.",
+        "**D) Der Text bewertet Nearshoring als eine eindeutig risikofreie Lösung.**\n\nAbsatz 7 warnt genau vor dieser Annahme: „Auch ein Nachbarland kann von Erdbeben, Wasserknappheit, Streiks oder organisierter Kriminalität getroffen werden\".\n\n**Falle:** Nähe wird im Text als Verkürzung des Weges, nicht als Beseitigung des Risikos beschrieben.\n\nDie Aussage ist falsch, weil der Text ausdrücklich Restrisiken auch bei Nachbarländern nennt.",
+        "**E) Die Wendung „nüchterner als in politischen Reden\" signalisiert eine Distanz des Textes zur politischen Rhetorik.**\n\nAbsatz 8 stellt betriebliche Praxis und politische Sprache gegenüber: Auf Unternehmensebene „fällt die Antwort nüchterner aus als in politischen Reden\".\n\nDer Vergleich wertet die Reden implizit als weniger sachlich als die Beschaffungspraxis.\n\nDie Aussage trifft zu, weil der Text mit diesem Vergleich Abstand zur politischen Darstellung markiert."
+      ],
+      "highlights": [
+        "wurden als Belege dafür präsentiert, dass Industriepolitik zurück ist",
+        "Mehrere Untersuchungen deuten deshalb darauf hin",
+        "Befürworter halten die Kosten dieser Umstellung für gerechtfertigt",
+        "Auch ein Nachbarland kann von Erdbeben, Wasserknappheit, Streiks oder organisierter Kriminalität getroffen werden",
+        "fällt die Antwort nüchterner aus als in politischen Reden"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 8,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-09",
+      "case_id": "DE T.4.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen die zeitliche Einordnung der Ereignisse und die im Text angelegten Vergleiche zwischen den Strategien.",
+      "kind": "reading",
+      "statements": [
+        "Die Blockade des Suezkanals wird im Text auf einen Zeitpunkt nach dem Beginn der Pandemie datiert.",
+        "Die politischen Programme aus Absatz 4 wurden laut Text bereits vor der Pandemie beschlossen.",
+        "Der Text vergleicht Reshoring, Nearshoring und Friendshoring als drei Varianten derselben Grundstrategie.",
+        "Laut Text sind die Lieferketten nach der Umstellung im Vergleich zu vorher durchweg kürzer geworden.",
+        "Der Text ordnet die Just-in-time-Logik der Zeit vor der Pandemie zu."
+      ],
+      "answer_key": [true, false, true, false, true],
+      "tactical_explanations": [
+        "**A) Die Blockade des Suezkanals wird im Text auf einen Zeitpunkt nach dem Beginn der Pandemie datiert.**\n\nAbsatz 2 beginnt mit der Pandemie „ab 2020\" und nennt anschließend: „die sechstägige Blockade des Suezkanals im März 2021 zeigte\", wie stark ein Engpass wirkt.\n\n**Tipp:** Der Absatz ist chronologisch geordnet; die Jahreszahlen 2020 und 2021 geben die Reihenfolge direkt vor.\n\nDie Aussage trifft zu, weil März 2021 nach dem Pandemiebeginn liegt.",
+        "**B) Die politischen Programme aus Absatz 4 wurden laut Text bereits vor der Pandemie beschlossen.**\n\nAbsatz 4 nennt ein späteres Jahr: „Die Vereinigten Staaten verabschiedeten 2022 den CHIPS and Science Act\". Die Pandemie setzt der Text auf 2020 an.\n\nDie Programme erscheinen im Text als Reaktion auf die beschriebenen Störungen, nicht als deren Vorgeschichte.\n\nDie Aussage ist falsch, weil 2022 nach dem Beginn der Pandemie liegt.",
+        "**C) Der Text vergleicht Reshoring, Nearshoring und Friendshoring als drei Varianten derselben Grundstrategie.**\n\nAbsatz 3 fasst sie ausdrücklich zusammen: „Gemeinsam ist allen drei Strategien nicht der Rückzug aus dem Welthandel, sondern die Streuung von Risiken\".\n\nDie Unterschiede betreffen im Text nur das Ziel der Verlagerung, nicht den Zweck.\n\nDie Aussage trifft zu, weil der Absatz eine gemeinsame Grundlogik benennt.",
+        "**D) Laut Text sind die Lieferketten nach der Umstellung im Vergleich zu vorher durchweg kürzer geworden.**\n\nAbsatz 5 berichtet den gegenteiligen Befund: „dass viele Lieferketten länger und undurchsichtiger geworden sind statt kürzer\".\n\n**Falle:** Die Absicht der Strategien wird leicht mit ihrem messbaren Ergebnis verwechselt.\n\nDie Aussage ist falsch, weil der Text die Verlängerung der Ketten als empirischen Befund festhält.",
+        "**E) Der Text ordnet die Just-in-time-Logik der Zeit vor der Pandemie zu.**\n\nAbsatz 1 beschreibt sie als Merkmal der Vorgeschichte: „Über vier Jahrzehnte folgte die Organisation industrieller Produktion einer einfachen Logik\", zu der die Just-in-time-Fertigung gehört. Erst Absatz 2 setzt mit der Pandemie ein.\n\nDie zeitliche Trennung zwischen beiden Absätzen ist im Text die Grundlage der ganzen Argumentation.\n\nDie Aussage trifft zu, weil die Just-in-time-Logik der Phase vor 2020 zugeordnet wird."
+      ],
+      "highlights": [
+        "die sechstägige Blockade des Suezkanals im März 2021 zeigte",
+        "Die Vereinigten Staaten verabschiedeten 2022 den CHIPS and Science Act",
+        "Gemeinsam ist allen drei Strategien nicht der Rückzug aus dem Welthandel, sondern die Streuung von Risiken",
+        "dass viele Lieferketten länger und undurchsichtiger geworden sind statt kürzer",
+        "Über vier Jahrzehnte folgte die Organisation industrieller Produktion einer einfachen Logik"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "t.4"
+    },
+    {
+      "id": "de-t-4-10",
+      "case_id": "DE T.4.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen das Verständnis des Schlussabsatzes und der darin offen gelassenen Fragen.",
+      "kind": "reading",
+      "statements": [
+        "Der Text hält es für möglich, dass sich die Neuordnung als teure Zwischenphase erweist.",
+        "Der Schluss macht die weitere Entwicklung von den Kosten abhängig, die Unternehmen und Wähler dauerhaft zu tragen bereit sind.",
+        "Der Text erklärt die Frage nach dem Verhältnis von Effizienz und Sicherheit für abschließend geklärt.",
+        "Laut Text hängt der Ausgang vor allem von der Zahl der politischen Ankündigungen ab.",
+        "Der Text lässt offen, ob die Handelskonflikte abkühlen."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "**A) Der Text hält es für möglich, dass sich die Neuordnung als teure Zwischenphase erweist.**\n\nAbsatz 9 nennt dieses Szenario ausdrücklich als eine von zwei Möglichkeiten: Die Neuordnung könnte sich „aber auch als teure Zwischenphase erweisen\".\n\nDie Aussage bewahrt den Möglichkeitscharakter und behauptet nicht, dass es so kommt.\n\nSie trifft zu, weil der Text diese Entwicklung als offene Option führt.",
+        "**B) Der Schluss macht die weitere Entwicklung von den Kosten abhängig, die Unternehmen und Wähler dauerhaft zu tragen bereit sind.**\n\nAbsatz 9 endet genau mit diesem Kriterium: Der Ausgang hänge weniger von Ankündigungen ab „als von den Kosten, die Unternehmen und Wähler dauerhaft zu tragen bereit sind\".\n\n**Tipp:** Der Text nennt zwei Träger dieser Kosten – Unternehmen und Wähler; beide gehören zur richtigen Wiedergabe.\n\nDie Aussage ist zutreffend, weil sie das Entscheidungskriterium des Schlusssatzes vollständig übernimmt.",
+        "**C) Der Text erklärt die Frage nach dem Verhältnis von Effizienz und Sicherheit für abschließend geklärt.**\n\nAbsatz 9 formuliert die Verschiebung nur als Möglichkeit: Die Neuordnung könnte „in einer dauerhaften Verschiebung der Gewichte von Effizienz zu Sicherheit münden\" – oder eben nicht.\n\n**Falle:** Ein genannter Endzustand ist nicht schon ein festgestelltes Ergebnis.\n\nDie Aussage ist falsch, weil der Text das Verhältnis der beiden Ziele ausdrücklich offen lässt.",
+        "**D) Laut Text hängt der Ausgang vor allem von der Zahl der politischen Ankündigungen ab.**\n\nAbsatz 9 spricht Ankündigungen gerade das Gewicht ab: Die Entwicklung „wird weniger von Ankündigungen abhängen\" als von den tragbaren Kosten.\n\nAuch Absatz 8 hatte die Lücke zwischen Ankündigung und Umsetzung betont.\n\nDie Aussage ist falsch, weil der Text Ankündigungen ausdrücklich als schwächeren Faktor einordnet.",
+        "**E) Der Text lässt offen, ob die Handelskonflikte abkühlen.**\n\nAbsatz 9 nennt das Abkühlen als Bedingung eines Szenarios: „und Handelskonflikte abkühlen\" steht in einem mit „wenn\" eingeleiteten Nebensatz.\n\nEine Bedingung ist keine Feststellung; der Text sagt nicht, dass es dazu kommt.\n\nDie Aussage trifft zu, weil die Entspannung der Handelskonflikte im Text hypothetisch bleibt."
+      ],
+      "highlights": [
+        "aber auch als teure Zwischenphase erweisen",
+        "als von den Kosten, die Unternehmen und Wähler dauerhaft zu tragen bereit sind",
+        "in einer dauerhaften Verschiebung der Gewichte von Effizienz zu Sicherheit münden",
+        "wird weniger von Ankündigungen abhängen",
+        "und Handelskonflikte abkühlen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.4"
+    }
+  ]
+}
