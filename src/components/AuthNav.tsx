@@ -51,17 +51,17 @@ export function AuthNav() {
 
   if (!auth) {
     return (
-      <div className="flex items-center gap-1 sm:gap-2">
+      <div className="flex shrink-0 items-center gap-1 sm:gap-2">
         <LocalizedLink
           to="/login"
-          className="inline-flex min-h-9 items-center justify-center rounded-md border border-border bg-card px-2.5 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
+          className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md border border-border bg-card px-2.5 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
         >
           <span className="sm:hidden">In</span>
           <span className="hidden sm:inline">Sign in</span>
         </LocalizedLink>
         <LocalizedLink
           to="/signup"
-          className="inline-flex min-h-9 items-center justify-center rounded-md bg-primary px-2.5 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 sm:px-4 sm:py-2"
+          className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md bg-primary px-2.5 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 sm:px-4 sm:py-2"
         >
           <span className="sm:hidden">Join</span>
           <span className="hidden sm:inline">Sign up</span>

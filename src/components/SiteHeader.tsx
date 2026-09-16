@@ -55,6 +55,8 @@ export function SiteHeader({
     navItemsProp ?? navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
+  /** On phones the hamburger owns track/theme so the top bar stays one clean row. */
+  const chromeInMenu = mobileVisible;
 
   return (
     <header
@@ -66,32 +68,49 @@ export function SiteHeader({
     >
       <div
         className={cn(
-          "mx-auto grid w-full max-w-none grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3 lg:gap-x-4 lg:px-8",
+          // Mobile: flex + wrap so page actions can drop to a second row instead of overlapping.
+          // lg+: 3-column grid keeps desktop nav visually centered between left/right clusters.
+          "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3",
           "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
+          "lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:flex-nowrap lg:gap-x-4 lg:px-8",
           !compact && "sm:py-4",
           innerClassName,
         )}
       >
-        {/* Left cluster: brand + track/theme so the center nav can sit visually centered */}
-        <div className="flex min-w-0 items-center justify-self-start gap-1.5 sm:gap-2.5">
+        <div className="flex min-w-0 items-center gap-1.5 sm:gap-2.5 lg:justify-self-start">
           {left ?? <TrackBrandMark compact={compact} />}
-          {!hideTrackSwitcher ? <ExamTrackSwitcher /> : null}
-          <ThemeToggle />
+          {!hideTrackSwitcher ? (
+            <ExamTrackSwitcher
+              className={cn(chromeInMenu && "hidden lg:inline-flex")}
+            />
+          ) : null}
+          <ThemeToggle className={cn(chromeInMenu && "hidden lg:inline-flex")} />
         </div>
-        {center ??
-          (navVisible ? (
-            <DesktopNav items={navItems} />
-          ) : (
-            <div className="min-w-0" aria-hidden="true" />
-          ))}
-        <div className="flex min-w-0 items-center justify-self-end gap-1 sm:gap-2.5">
-          {actions}
+
+        {/* Keep a real grid cell on lg+ even when DesktopNav is display:none below lg. */}
+        <div className="hidden min-w-0 justify-self-center lg:block">
+          {center ??
+            (navVisible ? (
+              <DesktopNav items={navItems} />
+            ) : (
+              <div className="min-w-0" aria-hidden="true" />
+            ))}
+        </div>
+
+        <div className="ml-auto flex min-w-0 max-w-full flex-wrap items-center justify-end gap-1 sm:gap-2.5 lg:ml-0 lg:justify-self-end">
+          {actions ? (
+            <div className="order-last flex max-w-full basis-full flex-wrap items-center justify-end gap-1 sm:order-none sm:basis-auto sm:gap-2">
+              {actions}
+            </div>
+          ) : null}
           <LanguageSwitcher />
           <AuthNav />
           {mobileVisible ? (
-            <div className="lg:hidden">
-              <MobileNav items={navItems} />
-            </div>
+            <MobileNav
+              items={navItems}
+              showTrackSwitcher={!hideTrackSwitcher}
+              showThemeToggle
+            />
           ) : null}
         </div>
       </div>

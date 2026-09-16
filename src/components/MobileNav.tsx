@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import type { NavItem } from "@/config/site-nav";
+import { ExamTrackSwitcher } from "@/components/ExamTrackSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { NavItemLink } from "./NavItemLink";
 
 import {
@@ -13,8 +15,20 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-export function MobileNav({ items }: { items: NavItem[] }) {
+type MobileNavProps = {
+  items: NavItem[];
+  /** Mirror SiteHeader: track switcher lives in the sheet on small screens. */
+  showTrackSwitcher?: boolean;
+  showThemeToggle?: boolean;
+};
+
+export function MobileNav({
+  items,
+  showTrackSwitcher = false,
+  showThemeToggle = false,
+}: MobileNavProps) {
   const [open, setOpen] = useState(false);
+  const showChrome = showTrackSwitcher || showThemeToggle;
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -22,7 +36,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
         <button
           type="button"
           aria-label="Open menu"
-          className="touch-target inline-flex h-11 w-11 items-center justify-center rounded-md border border-border bg-card text-foreground transition-all hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+          className="touch-target inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-border bg-card text-foreground transition-all hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
         >
           <Menu className="h-5 w-5" />
         </button>
@@ -43,6 +57,13 @@ export function MobileNav({ items }: { items: NavItem[] }) {
             </button>
           </div>
           <SheetDescription className="sr-only">Navigation menu</SheetDescription>
+
+          {showChrome ? (
+            <div className="flex flex-wrap items-center gap-2 border-b border-border px-4 py-3 sm:px-6 lg:hidden">
+              {showTrackSwitcher ? <ExamTrackSwitcher /> : null}
+              {showThemeToggle ? <ThemeToggle /> : null}
+            </div>
+          ) : null}
 
           <nav className="overflow-y-auto px-4 py-4 sm:px-6">
             <ul className="flex flex-col gap-1">
