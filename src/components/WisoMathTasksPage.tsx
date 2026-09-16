@@ -3,6 +3,7 @@ import { Languages } from "lucide-react";
 import { MathTasksPage } from "@/components/MathTasksPage";
 import { supabase } from "@/integrations/supabase/client";
 import { isAdminEmail } from "@/lib/admin-access";
+import { MATH_CHAPTERS } from "@/data/math-chapters";
 import {
   WISO_MATH_CHAPTERS,
   loadWisoMathChapterTasks,
@@ -63,6 +64,8 @@ export function WisoMathTasksPage() {
     }
   }, []);
 
+  const chapters = lang === "en" ? MATH_CHAPTERS : WISO_MATH_CHAPTERS;
+
   const loadChapterTasks = useMemo(
     () => (num: number) => loadWisoMathChapterTasks(num, lang),
     [lang],
@@ -118,7 +121,7 @@ export function WisoMathTasksPage() {
         key={`wiso-math-${lang}`}
         tier="full"
         backTo="/wiso/products/full-course-subjects"
-        chapters={WISO_MATH_CHAPTERS}
+        chapters={chapters}
         loadChapterTasks={loadChapterTasks}
         storageKey="wiso.math.progress.v1"
       />
