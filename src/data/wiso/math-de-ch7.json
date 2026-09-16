@@ -154,7 +154,7 @@
   "MATH 7.09": {
     "title": "R I weck,",
     "context": "Ein Ball wird gerade aus dem Boden geworfen und seine Höhe in Metern nach $x$ Sekunden ist $H(x)=-5x^{2}+20x$. auch zu jedem einzelnen Menge zu Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Es ist europäischer, die auf einem auf einem zweidee-e eint auf eine $$H(x)=-5x^{2}+20x$$ Die Achse $x=-b/(2a)$ ordnet den höchsten Punkt und das Faktorisieren $H$ ordnet die zwei Male, wenn die Höhe Null ist. So, so ist dies mit der Verst. Verst. Verst. mit der Verst. Verst. mit der Verst. Eine beanspruchte Höhe zu einer bestimmten Sekunde ist eine Substitution, nicht der Scheitelpunktwert.",
+    "solution_overview": "The height of the ball is one downward parabola.\n\n$$H(x)=-5x^{2}+20x$$\n\nThe axis $x=-b/(2a)$ locates the highest point, and factoring $H$ locates the two times when the height is zero. Between those two roots the leading coefficient is negative, so the height stays positive. A claimed height at a particular second is a substitution, not the vertex value.",
     "statements": [
       "Die Höhe ist am größten bei $x=2$.",
       "Die größte mögliche Höhe entspricht $20$ Meter.",
@@ -912,7 +912,7 @@
     ]
   },
   "MATH 7.49": {
-    "title": "NUMM NUMM NUMM",
+    "title": "Average Rate Versus Instantaneous Slope",
     "context": "Die kunde $g(x)=x^{2}-6x+5$ ist mit der linie $f(x)=4x-8$ gepaart. Jedwe und Aufspringen auf der Straße",
     "solution_overview": "The average rate of $g$ on an interval is a difference quotient, not the slope of a neighbouring line.\n\n$$\ng(x) = x^{2}-6x+5,\\qquad f(x) = 4x-8\n$$\n\nThe mean-value theorem still produces a point of $(0,2)$ where $g'$ equals that average. Vieta’s sum is $-b/a$, and a nested evaluation $f(g(0))$ is two substitutions. Completing the square uses the axis $x=3$ as the shift.",
     "statements": [

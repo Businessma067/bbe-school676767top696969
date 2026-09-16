@@ -726,7 +726,7 @@
     "context": "A firm must produce $60$ units and can split them between two plants. Plant 1's cost is $C_1(q)=A q^{2}$: a run of $20$ units there cost $200$. Plant 2's cost is $C_2(q)=k q^{2}$: a run of $40$ units there cost $400$. Evaluate each statement. Mark it TRUE or FALSE.",
     "solution_overview": "Plant 1 costs $C_1(q)=A q^{2}$ with $C_1(20)=200$. Plant 2 costs $C_2(q)=k q^{2}$ with $C_2(40)=400$. The firm must produce $60$ units.\n\n**Part 1: Translate.**\n\nEach recorded run fixes one coefficient:\n\n$$A\\cdot 20^{2}=200 \\tag{1}$$\n\n$$k\\cdot 40^{2}=400 \\tag{2}$$\n\n**Part 2: Solve.**\n\n$$A=\\frac{1}{2}, \\qquad k=\\frac{1}{4}$$\n\nThe recovered plant costs are\n\n$$C_1(q)=\\frac{1}{2} q^{2}, \\qquad C_2(q)=\\frac{1}{4} q^{2}$$",
     "statements": [
-      "Die wirm dann dann dann auf den der an- oder dann dann dann um denre-",
+      "The cheapest way to fill the order is to send every unit to one plant.",
       "Unabhängig davon, welche Aufteilung gewählt wird, folgen die beiden Pflanzen zusammen immer noch einer einzigen Potenz der $60$ -Einheitenordnung.",
       "Plant 2's cost per unit rises as it produces more.",
       "Konsumm Tisch alle $60$ Einheiten in der billigeren Anlage kostet immer noch mehr als $800$.",
@@ -821,7 +821,7 @@
     "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=A x^{\\frac{1}{2}}$ and the cost $C(x)=K x^{\\frac{3}{2}}$, both in millions. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$. Evaluate each statement. Mark it TRUE or FALSE.",
     "solution_overview": "Benefit is $B(x)=A x^{\\frac{1}{2}}$ and cost is $C(x)=K x^{\\frac{3}{2}}$, both in millions, for scale $x>0$. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$.\n\n**Part 1: Translate.**\n\nEach curve has a known exponent and one trial:\n\n$$A\\cdot 16^{\\frac{1}{2}}=72$$\n\n$$4A=72$$\n\n$$K\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8K=4$$\n\n**Part 2: Solve.**\n\n$$A=18, \\qquad K=\\frac{1}{2}$$\n\nThe recovered curves are\n\n$$B(x)=18 x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2} x^{\\frac{3}{2}}.$$",
     "statements": [
-      "Benefit und cost meet at exactly one positive scale.",
+      "Benefit and cost meet at exactly one positive scale.",
       "At scale $16$, cost is already above $30$ million.",
       "Der Kosten-Exponent ist kleiner als der Nutzen-Exponent, so dass die Kosten den Nutzen niemals überholen können.",
       "At scale $9$, net benefit exceeds $42$ million.",
@@ -832,7 +832,7 @@
       "**B.** → Wahr\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level of cost at scale $16$. The overview recovered\n\n$$C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n$$C(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}$$\n\n$$16^{\\frac{3}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{3}$$\n\n$$16^{\\frac{1}{2}}=4$$\n\n$$4^{3}=64$$\n\n$$C(16)=\\frac{1}{2}\\cdot 64$$\n\n$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$4^{1}=4$$\n\n$$16^{\\frac{3}{2}}$$\n\n$$C(16)=64$$\n\n$$C(16)=32$$\n\nThirty-two sits above $30$.\n\nThe computed figure agrees with the claim.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nLesen Sie den Exponenten aus der Übersicht, bevor Sie die Wachstumsraten vergleichen.\n\nDas Ins Hinweis darauf, dass das Intrans-Empfänger-Gebäude das Irrhaus ist Der Exponent des rückgeforderten Vorteils $$\\frac{1}{2}$$ und cost exponent $$\\frac{3}{2}$$. $$\\frac{3}{2}>\\frac{1}{2}$$ Cost hat den größeren Exponenten, so überholt den Vorteil hinter dem einzigartigen Meeting und bleibt vorne. At $$x=64$$ $$B(64)=144$$ $$C(64)=256$$ Cost has overtaken.\n\nDie berechnete Zahl widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nStart from the calibrated closed form in the overview.\n\nThis is a level of net benefit at scale $9$. The overview recovered\n\n$$B(x)=18 x^{\\frac{1}{2}}$$\n\n and\n\n$$C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$$\n\n.\n\n$$B(9)=18\\cdot 3$$\n\n$$B(9)=54$$\n\n$$C(9)=\\frac{1}{2}\\cdot 27$$\n\n$$C(9)=13.5$$\n\n$$B(9)-C(9)=40.5$$\n\nForty point five does not exceed $42$.\n\nThe computed figure disagrees with the claim.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nDie auf den „Angestimmten „Angepasst\n\nDer Nutzen pro Million Kosten ist das Verhältnis der beiden wiederhergestellten Kurven: $$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$ $$\\frac{B(x)}{C(x)}=\\frac{36}{x}$$ Diese übrig gebliebene Potenz von $x$ ist nicht konstant. Bei der Kostenprüfung, der Nutzenprüfung und der Sitzung: $$\\frac{B(4)}{C(4)}=9\n$$ $$\\frac{B(16)}{C(16)}=2.25\n$$ $$\\frac{B(36)}{C(36)}=1$$ Drei unterschiedliche Verhältnisse.\n\npunkt und punkt punkt punkt.\n\nDie Aussage ist falsch."
+      "**E.** → False\n\nKeep the stated domain in force while you evaluate the model.\n\nBenefit per million of cost is the ratio of the two recovered curves:\n\n$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$\n\n$$\\frac{B(x)}{C(x)}=\\frac{36}{x}$$\n\nThat leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:\n\n$$\\frac{B(4)}{C(4)}=9\n$$\n\n$$\\frac{B(16)}{C(16)}=2.25\n$$\n\n$$\\frac{B(36)}{C(36)}=1$$\n\nThree different ratios.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False."
     ]
   },
   "MATH 8.45": {
@@ -1191,7 +1191,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine Nicht-Leistung in einer anderen. Der Überblick erholt $$T=\\frac{800}{d^{2}}$$ Isolating distance gives $$d=\\sqrt{800}\\, T^{-\\frac{1}{2}}$$ Die für einen bestimmten Durchsatz benötigten Hop-Distanz ist weiterhin eine Leistung dieses Durchstands.\n\nDie komproduzierte figur stimmtn mit der.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThe reliability floor $T\\ge 8$ is inverted from the recovered law. Because the exponent is negative, that floor is a maximum hop:\n\n$$\\frac{800}{d^{2}}=8$$\n\n$$d^{2}=100$$\n\n$$d=10$$\n\nThe farthest reliable hop is $10$ m, which is already under $12$ m.\n\nThe computed figure agrees with the claim.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nNachbarnenmöglichkeit, die in der EU und in der EU in der EU in Bezug auf\n\nbaumesge ungleichen wett, ss ens, ressse, stee en stees, stee en stee emn Kommentarense, stee, stee stee reien. $$2^{-2}$$, nicht von $$\\frac{1}{2}$$ $$\\frac{T(2d)}{T(d)}=2^{-2}$$ $$\\frac{T(2d)}{T(d)}=\\frac{1}{4}$$ Doubling a hop quarters throughput.\n\nUnentschieden von den Unentschieden\n\nDie Aussage ist falsch.",
+      "**C.** → False\n\nRead the exponent from the overview before comparing growth rates.\n\nDoubling the hop multiplies throughput by\n\n$$2^{-2}$$\n\n, not by\n\n$$\\frac{1}{2}$$\n\n$$\\frac{T(2d)}{T(d)}=2^{-2}$$\n\n$$\\frac{T(2d)}{T(d)}=\\frac{1}{4}$$\n\nDoubling a hop quarters throughput.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
       "**D.** → Falsch\n\nStart from the calibrated closed form in the overview.\n\nWhether $11$ m still clears $8$ Mbps is a level of the recovered law:\n\n$$T(11)=\\frac{800}{11^{2}}$$\n\n$$1^{2}=1$$\n\n$$T(11)=\\frac{800}{11}$$\n\n$$T(11)=\\frac{800}{121}\\approx 6.61$$\n\nThe claim needs $T(11)\\ge 8$. We have $6.61<8$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nKeep the stated domain in force while you evaluate the model.\n\nAn extra metre is the derivative of the recovered law\n\n$$T(d)=800d^{-2}$$\n\n$$T'(d)=-1600\\, d^{-3}$$\n\nAt $4$ m:\n\n$$|T'(4)|=\\frac{1600}{64}$$\n\n$$|T'(4)|=25$$\n\nAt $8$ m:\n\n$$|T'(8)|=\\frac{1600}{512}$$\n\n$$|T'(8)|=3.125$$\n\nThe claim needs a larger cut at $8$ m than at $4$ m. We have $3.125<25$.\n\nDie Aussage ist falsch."
     ]
@@ -1513,7 +1513,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDer angegebene Exponent ist $3$. Masse wächst schneller als Höhe, wenn dieser Exponent größer als eins ist: $$3>1$$ Haltenschwingungs- unde.. nur die beanspruchten Eingangswerte ändern sich.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDas Verhältnis, mit dem der der, der derweck ist, ist mit dem Vergleichs Rechner.\n\nDies ist eine Höhe $1.5$ m. Der Überblick erholte sich $$M(h)=240h^{3}$$, so $$(1.5)^{3}=\\frac{27}{8}$$ $$(1.5)^{3}=3.375$$ $$M(1.5)=240\\cdot 3.375$$ $$M(1.5)=720.375$$ $$M(1.5)=810$$ Die Behauptung erfordert mehr als $700$ kg. We have $810>700$.\n\nDie Aussage ist wahr.",
+      "**B.** → True\n\nForm the ratio so the unknown positive coefficient cancels.\n\nThis is a level at height $1.5$ m. The overview recovered\n\n$$M(h)=240h^{3}$$\n\n, so\n\n$$(1.5)^{3}=\\frac{27}{8}$$\n\n$$(1.5)^{3}=3.375$$\n\n$$M(1.5)=240\\cdot 3.375$$\n\n$$M(1.5)=720.375$$\n\n$$M(1.5)=810$$\n\nThe claim needs more than $700$ kg. We have $810>700$.\n\nSo the statement is True.",
       "**C.** → Falsch\n\nRead the exponent from the overview before comparing growth rates.\n\nDoubling height multiplies mass by $2$ only if the exponent is $1$. The given exponent is $3$, so\n\n$$\\frac{M(2h)}{M(h)}=2^{3}$$\n\n$$\\frac{M(2h)}{M(h)}=8$$\n\n$$2^{3}=8$$\n\nDoubling a bell's height multiplies its mass by $8$, not by $2$.\n\nThe computed figure disagrees with the claim.\n\nDie Aussage ist falsch.",
       "**D.** → False\n\nStart from the calibrated closed form in the overview.\n\nMass per metre of height is the recovered law divided by $h$:\n\n$$\\frac{M(h)}{h}=240h^{2}$$\n\nThat quantity still depends on $h$. It is not the same at every height.\n\nThe computed figure disagrees with the claim.\n\nSo the statement is False.",
       "**E.** → Wahr\n\nHalten Sie die angegebene Domain in Kraft, während Sie das Modell bewerten.\n\nDies ist ein Niveau in Höhe $1$ m. ist der nicht mehr zu Übersetzungen $$M(h)=240h^{3}$$, so $$M(1)=240$$ Die Behauptung erfordert mehr als $200$ kg. We have $240>200$.\n\nDie Aussage ist wahr."
@@ -1657,7 +1657,7 @@
     "context": "Fuel use in a grain dryer follows $F(x)=A x^{r}$ litres per batch, where $x>0$ is the batch mass in tonnes. Neither constant is published. Doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds exactly $96$ litres. Evaluate each statement. Mark it TRUE or FALSE.",
     "solution_overview": "Fuel use follows $F(x)=Ax^{r}$ litres per batch for batch mass $x>0$ tonnes. Doubling the batch mass raises fuel use by $300\\%$, and moving from a $2$-tonne batch to a $6$-tonne batch adds $96$ litres.\n\n**Part 1: Building the model.**\n\nLet $x$ = batch mass in tonnes and $F$ = fuel use in litres. A $300\\%$ rise is a factor of $4$, so the doubling record isolates the exponent. The logged increase is then a difference of two levels, which pins the coefficient.\n\n**1. Translate: the doubling rule.**\n\n$$2^{r}=4 \\tag{1}$$\n\n**2. Translate: the logged increase.**\n\n$$A\\bigl(6^{r}-2^{r}\\bigr)=96 \\tag{2}$$\n\n**Part 2: Solve.**\n\nFrom $(1)$,\n\n$$4=2^{2}$$\n\n$$r=2$$\n\nThen $(2)$ becomes\n\n$$A(36-4)=96$$\n\n$$32A=96$$\n\n$$A=3$$\n\nThe recovered law is $F(x)=3x^{2}$.\n\n**Answer.** $r=2$ | $A=3$ | $F(x)=3x^{2}$",
     "statements": [
-      "Aussenscharen, Aussen-, Aussen-, Aus-, Aussen-, Aussen-, Aussen-, Aussenscharen.",
+      "Fuel use grows faster than batch mass.",
       "Durch die aneinander angesetzten Arten der sich aneinander anlagern.",
       "Der Kraftstoffverbrauch pro Tonne ist, als die Menge wächst.",
       "Ein $10$ -Tonnenansatz verwendet bereits mehr als $250$ Liter.",
@@ -2084,7 +2084,7 @@
     "tactical_explanations": [
       "**A.** → True\n\nStart from the controller equation and isolate the power:\n\n$$4x^{3/2}=108$$\n\nDivide both sides by the coefficient $4$:\n\n$$\\frac{4x^{3/2}}{4}=\\frac{108}{4}$$\n\n$$x^{3/2}=27$$\n\nThe isolated power matches the claim.\n\nSo the statement is True.",
       "**B.** → Wahr\n\nDer Überblick bereits isoliert $$x^{3/2}=27$$. Heben Sie beide Seiten auf den reziproken Exponenten $\\dfrac{2}{3}$: $$x=\\bigl(x^{3/2}\\bigr)^{2/3}$$ $$x=27^{2/3}$$ $$27^{1/3}$$ $$x=3$$ $$27^{2/3}=(27^{1/3})^{2}$$ $$27^{2/3}$$ $$27^{2/3}=3^{2}$$ $$3^{2}=9$$ $$27^{2/3}=9$$ Die einzigartige positive Lösung ist $$x=9$$.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nDienichte ist das, über das. $$x>0$$.. s... $$x\\mapsto x^{3/2}$$ wird aus dem positiven Quadrat Wurzel aufgebaut, also ein negativer Kandidat wie $$x=-9$$ den in den auch in den auch in den auch in den auch in den auch in den in den auch in den noch in den auch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in den noch in noch in den noch in den noch in den noch in den noch in noch im noch im auch in den noch in im noch in die in auch in meter folgenden auch auch auch in den noch in den noch in den noch in den noch in den noch in den noch auchges im noch in den noch in den noch in den noch in den noch in den noch in den noch im auch im auch auch noch im auch in den noch im noch im\n\nDie Aussage ist falsch.",
+      "**C.** → False\n\nThe stem restricts the setting to the positive reals:\n\n$$x>0$$\n\nThe real map\n\n$$x\\mapsto x^{3/2}$$\n\n is built from the positive square root, so a negative candidate such as\n\n$$x=-9$$\n\n is outside the allowed domain and is not an accepted solution.\n\nSo the statement is False.",
       "**D.** → Wahr\n\nDie positive Wurzel ist $$x=9$$.\n\nNimm die positive Quadratoptik dieser Wurzel: $$x^{1/2}=\\sqrt{9}$$ $$\\sqrt{9}=3$$ $$x^{1/2}=3$$ Diese quadratischemut bewiesene Identität stimmt mit der Behauptung\n\nlosigkeitsgerecht, wobei die jeweils gebündelten,\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nAuf $x>0$ die Karte $$x\\mapsto x^{3/2}$$ is strictly increasing. Nach der Verhalt $$x^{3/2}=27$$ Eine stetige, streng ansteigende Karte erfüllt jeden positiven Zielwert genau einmal. Die positive Wurzel ist $$x=9$$ Es gibt also nicht zwei positive Lösungen.\n\nDie Aussage ist falsch."
     ]
@@ -2098,7 +2098,7 @@
       "$g(f(x))=x$ for every real $x$.",
       "$f(g(4))=4$.",
       "$g(1)=2$.",
-      "$f$ und $g$ are inverse functions."
+      "$f$ und $g$ sind inverse functions."
     ],
     "tactical_explanations": [
       "**A.** → True\n\nCompose $f$ after $g$ and simplify with the real cube root:\n\n$$f(g(x))=\\frac12\\bigl(8x^{3}\\bigr)^{1/3}$$\n\n$$(8x^{3})^{1/3}=8^{1/3}\\cdot x$$\n\n$$8^{1/3}$$\n\n$$(8x^{3})^{1/3}=2$$\n\n$$f(g(x))=\\frac12\\cdot 2\\cdot x$$\n\n$$f(g(x))=x$$\n\nThe outer-then-inner composition returns every real input.\n\nSo the statement is True.",
@@ -2193,7 +2193,7 @@
       "$g(f(x))=x$ for every real $x$.",
       "$f(g(4))=4$.",
       "$g(1)=3$.",
-      "$f$ und $g$ are inverse functions."
+      "$f$ und $g$ sind inverse functions."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nKomponieren Sie $f$ nach $g$ und vereinfachen Sie mit dem echten Würfel Wurzel: $$f(g(x))=\\frac13\\bigl(27x^{3}\\bigr)^{1/3}$$ $$(27x^{3})^{1/3}=27^{1/3}\\cdot x$$ $$27^{1/3}$$ $$(27x^{3})^{1/3}=3$$ $$f(g(x))=\\frac13\\cdot 3\\cdot x$$ $$f(g(x))=x$$ Dersuch wird auf unterschiedlichen\n\nDie Aussage ist wahr.",

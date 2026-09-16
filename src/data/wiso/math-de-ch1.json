@@ -8,7 +8,7 @@
       "$A \\cup C = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$.",
       "$(A \\cap B) \\cap C = \\{5\\}$.",
       "$A \\setminus C = \\{1, 2, 3\\}$.",
-      "B und C are disjunkt Mengen."
+      "B und C sind disjunkte Mengen."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Schnittmenge enthält nur Elemente, die in sowohl $A$ als auch $B$ liegen. $$A=\\{1,2,3,4,5\\}$$ $$B=\\{3,4,5,6,7\\}$$ Prüfe jedes Element von $A$: $$1\\in A$$ $$1\\notin B$$ $$2\\in A$$ $$2\\notin B$$ $$3\\in A$$ $$3\\in B$$ $$4\\in A$$ $$4\\in B$$ $$5\\in A$$ $$5\\in B$$ Die verbleibenden Elemente sammeln: $$A\\cap B=\\{3,4,5\\}$$ Die beanspruchte Liste ist $$\\{3,4,5\\}$$ Die berechnete Menge stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -122,7 +122,7 @@
       "Die Zahl der Studenten, die weder Mathematik noch Wirtschaft studieren, beträgt 7",
       "$M \\setminus E$ hat 18 Studenten (die nur Mathematik nehmen)",
       "$E \\subseteq M$",
-      "M und E are disjunkt Mengen"
+      "M und E sind disjunkte Mengen"
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nIndien, dass in der Nähe und in der nahen und nahen und nahen. $$|M|=30$$ $$|E|=25$$ $$|M\\cap E|=12$$ $$|M\\cup E|=|M|+|E|-|M\\cap E|$$ $$|M|+|E|=30+25$$ $$30+25=55$$ $$|M\\cup E|=55-12$$ $$|M\\cup E|=43$$ Die Aussage ist wahr.",
@@ -137,15 +137,15 @@
     "context": "Es ist $U = \\{1, 2..., 9\\}$ und lassen Sie $A = \\{1, 2, 3\\}$, $B = \\{4, 5, 6\\}$, $C = \\{7, 8, 9\\}$.",
     "solution_overview": "Die Blöcke sitzen in den einzelnen Dritteln des $U=\\{1,2,\\ldots,9\\}$: $$A=\\{1,2,3\\},\\quad B=\\{4,5,6\\},\\quad C=\\{7,8,9\\}.$$ Paarweise Uneinigkeit bedeutet, dass jedes Paar Blöcke nichts teilt. Eine Partition von $U$ benötigt nichtleere Blöcke, paarweise Disjunktur und Vereinigung gleich $U$. Differenz $A\\setminus B$ enthält Elemente von $A$, die nicht in $B$ liegen. Eine leere Schnittmenge zwingt keinen der beiden Faktoren, leer zu sein.",
     "statements": [
-      "A, B und C are pairwise disjunkt",
+      "A, B, and C are pairwise disjoint",
       "$\\{A, B, C\\}$ bildet eine Partition von U, da $A \\cup B \\cup C = U$ und die Mengen paarweise disjunkt sind",
       "$A \\cap B \\cap C = \\emptyset$",
       "$A \\setminus B = \\emptyset$",
       "Since $A \\cap B = \\emptyset$, it follows that $A = \\emptyset$ or $B = \\emptyset$"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nPairwise disjointness means every pairwise Schnittmenge is empty. $$A=\\{1,2,3\\}$$ $$B=\\{4,5,6\\}$$ $$C=\\{7,8,9\\}$$ $$A\\cap B=\\emptyset$$ $$A\\cap C=\\emptyset$$ $$B\\cap C=\\emptyset$$ Alle drei paarweisen Kreuzungen sind leer.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nA partition needs pairwise disjunkt nonempty blocks whose Vereinigung is $U$. An dem der den vorhergehenden verkehrt, die anfaserig sind. Their Vereinigung is $$A\\cup B=\\{1,2,3,4,5,6\\}$$ $$A\\cup B\\cup C=\\{1,2,3,4,5,6,7,8,9\\}$$ $$U=\\{1,2,\\ldots,9\\}$$ $$A\\cup B\\cup C=U$$ Jeder Block ist nicht leer, also $\\{A,B,C\\}$ Partitionen $U$.\n\nDie Aussage ist wahr.",
+      "**A.** → True\n\nPairwise disjointness means every pairwise intersection is empty.\n\n$$A=\\{1,2,3\\}$$\n\n$$B=\\{4,5,6\\}$$\n\n$$C=\\{7,8,9\\}$$\n\n$$A\\cap B=\\emptyset$$\n\n$$A\\cap C=\\emptyset$$\n\n$$B\\cap C=\\emptyset$$\n\nAll three pairwise intersections are empty.\n\nSo the statement is True.",
+      "**B.** → True\n\nA partition needs pairwise disjoint nonempty blocks whose union is $U$. From the previous letter the three sets are pairwise disjoint. Their union is\n\n$$A\\cup B=\\{1,2,3,4,5,6\\}$$\n\n$$A\\cup B\\cup C=\\{1,2,3,4,5,6,7,8,9\\}$$\n\n$$U=\\{1,2,\\ldots,9\\}$$\n\n$$A\\cup B\\cup C=U$$\n\nEach block is nonempty, so $\\{A,B,C\\}$ partitions $U$.\n\nSo the statement is True.",
       "**C.** → Wahr\n\nDie dreifache Schnittmenge sitzt in jeder der zweifachen Schnittmenge: $$A\\cap B\\cap C\\subseteq A\\cap B$$ But $$A\\cap B=\\emptyset$$ so $$A\\cap B\\cap C=\\emptyset$$ Die Aussage ist wahr.",
       "**D.** → Falsch\n\nDifferenz $A\\setminus B$ enthält Elemente von $A$ die nicht in $B$: $$A=\\{1,2,3\\}$$ $$B=\\{4,5,6\\}$$ $$1\\in A$$ $$1\\notin B$$ $$2\\in A$$ $$2\\notin B$$ $$3\\in A$$ $$3\\notin B$$ $$A\\setminus B=\\{1,2,3\\}$$ $$A\\setminus B\\neq\\emptyset$$ Die Aussage ist falsch.",
       "**E.** → False\n\nAn empty intersection does not force either factor to be empty. Here\n\n$$A\\cap B=\\emptyset$$\n\nbut\n\n$$A=\\{1,2,3\\}$$\n\n$$A\\neq\\emptyset$$\n\n$$B=\\{4,5,6\\}$$\n\n$$B\\neq\\emptyset$$\n\nso the claimed implication fails.\n\nSo the statement is False."
@@ -201,7 +201,7 @@
       "A set with $n \\ge 2$ elements always has more than one possible partition."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nÜberprüfen Sie die drei Partitions-Axiome für $$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$ on $A=\\{1,2,3,4,5,6\\}$. Nonempty blocks: $$\\{1,2\\}\\neq\\emptyset$$ $$\\{3,4\\}\\neq\\emptyset$$ $$\\{5,6\\}\\neq\\emptyset$$ Pairwise disjunkt: $$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$ $$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$ $$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$ Vereinigung covers $A$: $$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$ $$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$ $$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=A$$ Alle drei Axiome gelten.\n\nDie Aussage ist wahr.",
+      "**A.** → True\n\nCheck the three partition axioms for\n\n$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$\n\non $A=\\{1,2,3,4,5,6\\}$. Nonempty blocks:\n\n$$\\{1,2\\}\\neq\\emptyset$$\n\n$$\\{3,4\\}\\neq\\emptyset$$\n\n$$\\{5,6\\}\\neq\\emptyset$$\n\nPairwise disjoint:\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\nUnion covers $A$:\n\n$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$\n\n$$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=A$$\n\nAll three axioms hold.\n\nSo the statement is True.",
       "**B.** → Falsch\n\nThe claim says every partition must have exactly $n$ blocks when $|A|=n$. But the partition\n\n$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$\n\nof a $6$-element set has only $3$ blocks. Another valid partition is the single-block collection\n\n$$\\{A\\}$$\n\nwhich has $1$ block, not $6$. So the number of blocks need not equal $|A|$.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nFür $$Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$$; bei verwandelten Anzumieenden: $$\\{1,2,3\\}\\cap\\{3,4,5,6\\}=\\{3\\}$$ $$\\{3\\}\\neq\\emptyset$$ Die Blöcke sind $3$, also ist $Q$ keine Partition mit.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nfür $$R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$$ Die Vereinigung ist $$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$ $$\\{1,2,3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}$$ But $$A=\\{1,2,3,4,5,6\\}$$ $$6\\notin\\{1,2,3,4,5\\}$$ Die Vereinigung vermisst also $6$ und $R$ ist keine Partition.\n\nDie Aussage ist falsch.",
@@ -260,8 +260,8 @@
     "tactical_explanations": [
       "**A.** → Falsch\n\nThree-set inclusion-exclusion:\n\n$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|B\\cap C|-|A\\cap C|+|A\\cap B\\cap C|$$\n\nPlug in the survey counts one term at a time:\n\n$$|A|=80$$\n\n$$|B|=70$$\n\n$$|C|=60$$\n\n$$|A|+|B|=80+70$$\n\n$$80+70=150$$\n\n$$150+|C|=150+60$$\n\n$$150+60=210$$\n\n$$|A\\cap B|=30$$\n\n$$210-30=180$$\n\n$$|B\\cap C|=25$$\n\n$$180-25=155$$\n\n$$|A\\cap C|=20$$\n\n$$155-20=135$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$135+10=145$$\n\n$$|A\\cup B\\cup C|=145$$\n\nThe claim says $155$, which is not the computed value.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nweckt, wie die $$|A\\cup B\\cup C|=145$$ Touristen außerhalb aller drei Museen: $$150-|A\\cup B\\cup C|=150-145$$ $$150-145=5$$ Die Aussage ist wahr.",
-      "**C.** → Falsch\n\nExactly $A$ and $B$ but not $C$ is the pairwise overlap minus the triple:\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$|A\\cap B|=30$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$30-10=20$$\n\nThe claim says $30$, which forgets to remove the triple overlap.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nOnly Museum A excludes visitors who also saw $B$ or $C$. The correct count is\n\n$$|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|$$\n\nbecause the triple was subtracted twice in the two pairwise terms:\n\n$$|A|=80$$\n\n$$|A\\cap B|=30$$\n\n$$80-30=50$$\n\n$$|A\\cap C|=20$$\n\n$$50-20=30$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$30+10=40$$\n\nThe claim’s arithmetic $80-30-20=30$ omits the $+$ triple correction, so it is wrong.\n\nDie Aussage ist falsch.",
+      "**C.** → False\n\nExactly $A$ and $B$ but not $C$ is the pairwise overlap minus the triple:\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$|A\\cap B|=30$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$30-10=20$$\n\nThe claim says $30$, which forgets to remove the triple overlap.\n\nSo the statement is False.",
+      "**D.** → False\n\nOnly Museum A excludes visitors who also saw $B$ or $C$. The correct count is\n\n$$|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|$$\n\nbecause the triple was subtracted twice in the two pairwise terms:\n\n$$|A|=80$$\n\n$$|A\\cap B|=30$$\n\n$$80-30=50$$\n\n$$|A\\cap C|=20$$\n\n$$50-20=30$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$30+10=40$$\n\nThe claim’s arithmetic $80-30-20=30$ omits the $+$ triple correction, so it is wrong.\n\nSo the statement is False.",
       "**E.** → Falsch\n\nBei mindestens zwei Museen handelt es sich um die drei „zwei Regionen sowie die drei. Genau zwei Punkte: $$|A\\cap B\\setminus C|=30-10$$ $$30-10=20$$ $$|B\\cap C\\setminus A|=25-10$$ $$25-10=15$$ $$|A\\cap C\\setminus B|=20-10$$ $$20-10=10$$ $$|A\\cap B\\cap C|=10$$ Sum: $$20+15=35$$ $$35+10=45$$ $$45+10=55$$ Die Behauptung sagt $65$, die zu.\n\nDie Aussage ist falsch."
     ]
   },
@@ -372,10 +372,10 @@
       "Ersetzen $\\{5, 6\\}$ mit $\\{5, 6, 7\\}$ würde immer noch eine Partition von G."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDie Blöcke sind $\\{1,2\\}$, $\\{3,4\\}$ und $\\{5,6\\}$. Pairwise intersections: $$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$ $$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$ $$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$ Alle drei sind leer, so dass die Blöcke paarweise disjunkt.\n\nDie Aussage ist wahr.",
+      "**A.** → True\n\nThe blocks are $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$. Pairwise intersections:\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\nAll three are empty, so the blocks are pairwise disjoint.\n\nSo the statement is True.",
       "**B.** → Wahr\n\nVereinigen Sie Schritt für Schritt: $$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$ $$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$ $$G=\\{1,2,3,4,5,6\\}$$ $$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$ Die Aussage ist wahr.",
-      "**C.** → Wahr\n\nA partition needs nonempty pairwise-disjoint blocks whose union is the ground set. Check each axiom for $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$:\n\n$$\\{1,2\\}\\neq\\emptyset$$\n\n$$\\{3,4\\}\\neq\\emptyset$$\n\n$$\\{5,6\\}\\neq\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$\n\nAll three axioms hold, so $\\mathcal{S}$ is a partition of $G$.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nFor $\\mathcal{S}'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ check the first two blocks:\n\n$$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}$$\n\n$$\\{2\\}\\neq\\emptyset$$\n\nThe blocks are not pairwise disjoint, so $\\mathcal{S}'$ is not a partition.\n\nDie Aussage ist falsch.",
+      "**C.** → True\n\nA partition needs nonempty pairwise-disjoint blocks whose union is the ground set. Check each axiom for $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$:\n\n$$\\{1,2\\}\\neq\\emptyset$$\n\n$$\\{3,4\\}\\neq\\emptyset$$\n\n$$\\{5,6\\}\\neq\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$\n\nAll three axioms hold, so $\\mathcal{S}$ is a partition of $G$.\n\nSo the statement is True.",
+      "**D.** → False\n\nFor $\\mathcal{S}'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ check the first two blocks:\n\n$$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}$$\n\n$$\\{2\\}\\neq\\emptyset$$\n\nThe blocks are not pairwise disjoint, so $\\mathcal{S}'$ is not a partition.\n\nSo the statement is False.",
       "**E.** → Falsch\n\nReplacing $\\{5,6\\}$ by $\\{5,6,7\\}$ produces a block containing $7$. But\n\n$$G=\\{1,2,3,4,5,6\\}$$\n\n$$7\\notin G$$\n\nA partition of $G$ cannot contain an element outside $G$. The modified collection is not a partition of $G$.\n\nDie Aussage ist falsch."
     ]
   },
@@ -559,7 +559,7 @@
       "$A \\cap B = \\{3, 4\\}$.",
       "$A \\setminus B = \\{1, 2\\}$.",
       "$B \\setminus A = A \\setminus B$.",
-      "A und C are disjunkt Mengen."
+      "A und C sind disjunkte Mengen."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nUnite $A$ und $B$: $$A=\\{1,2,3,4\\}$$ $$B=\\{3,4,5,6\\}$$ $$1\\in A\\cup B$$ $$2\\in A\\cup B$$ $$3\\in A\\cup B$$ $$4\\in A\\cup B$$ $$5\\in A\\cup B$$ $$6\\in A\\cup B$$ $$A\\cup B=\\{1,2,3,4,5,6\\}$$ Die Aussage ist wahr.",
@@ -578,7 +578,7 @@
       "$A \\cap B = \\{30, 40, 50\\}$.",
       "$A \\setminus B = \\{10, 20\\}$.",
       "$B \\setminus A = A \\setminus B$.",
-      "A und C are disjunkt Mengen."
+      "A und C sind disjunkte Mengen."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nVereinigen Sie die beiden Listen. $$A={10,20,30,40,50}$$ $$B={30,40,50,60}$$ $$10\\in A\\cup B$$ $$20\\in A\\cup B$$ $$30\\in A\\cup B$$ $$40\\in A\\cup B$$ $$50\\in A\\cup B$$ $$60\\in A\\cup B$$ $$A\\cup B={10,20,30,40,50,60}$$ Die Aussage ist wahr.",
@@ -597,7 +597,7 @@
       "$A \\cap B = \\{c, d\\}$.",
       "$A \\setminus B = \\{a, b\\}$.",
       "$B \\setminus A = A \\setminus B$.",
-      "A und C are disjunkt Mengen."
+      "A und C sind disjunkte Mengen."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nVereinigen Sie die wechselt auf beiden Seiten. $$A={a,b,c,d}$$ $$B={c,d,e}$$ $$a\\in A\\cup B$$ $$b\\in A\\cup B$$ $$c\\in A\\cup B$$ $$d\\in A\\cup B$$ $$e\\in A\\cup B$$ $$A\\cup B={a,b,c,d,e}$$ Die Aussage ist wahr.",
@@ -893,7 +893,7 @@
     ]
   },
   "MATH 1.48": {
-    "title": "Dass das machen ihr zuscs tut zu tun merken, dass zu tun zu tun tun tun zu tun tun tun zu tun tun",
+    "title": "Comparing the conditions x > 10 and x > 5",
     "context": "Es sei x eine reelle Zahl. Vergleichen Sie die Bedingungen $x>10$ und $x>5$.",
     "solution_overview": "Two conditions on a real number: $P$ says $x>10$ and $Q$ says $x>5$.\n\n\"$P$ is sufficient for $Q$\" is the arrow $P\\Rightarrow Q$. \"$Q$ is necessary for $P$\" is the same arrow read from the other end. Equivalence $P\\Leftrightarrow Q$ needs both arrows. A counterexample to $Q\\Rightarrow P$ is a number that satisfies $Q$ and fails $P$.\n\nIf $x>10$, then $x>5$ automatically because $10>5$, so $P\\Rightarrow Q$ holds.",
     "statements": [
@@ -2361,7 +2361,7 @@
     "solution_overview": "Topics: 1.3.\n\nShared solution:\n1. Write the shipping rule as $S=p\\wedge(q\\vee r)$.\n2. Shipping requires matching inventory.\n3. For $p=T$, shipping needs at least one of $q,r$ true.\n4. Thus three assignments satisfy $S$.\n5. Write the hold rule as $H=p\\wedge\\neg q\\wedge\\neg r$.\n6. Only $(T,F,F)$ satisfies $H$.\n7. That assignment makes $q\\vee r$ false.\n8. Therefore $S$ and $H$ cannot both hold.\n9. Write rejection as $J=\\neg p$.\n10. Four assignments satisfy $J$.\n11. Every rejected assignment has $p=F$.\n12. Every held assignment has $p=T$.\n13. Therefore holding and rejection are also disjoint.",
     "statements": [
       "$(p,q,r)=(T,F,T)$ macht die Bestellung Schiff.",
-      "Shipping und holding are mutually exclusive.",
+      "Shipping and holding are mutually exclusive.",
       "$(F,T,T)$ macht die Bestellung Schiff.",
       "Auf diese für sie mich Wir, auf,",
       "Eine gehaltene Ordnung erfüllt auch die Ablehnungsregel."

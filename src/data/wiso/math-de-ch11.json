@@ -1645,7 +1645,7 @@
       "Der maximale Gewinn auf dem Intervall ist $36.6$ Euro."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDifferenzieren Sie die Gewinnregel des Stalls Begriff für Begriff. von $$\nP(Q) = 5Q-\\dfrac{Q^{2}}{10}+3,\n$$ die Ableitung des quadratischen Begriffs ist $-\\dfrac{2Q}{10}=-\\dfrac{Q}{5}$, also $$\nP'(Q) = 5-\\dfrac{Q}{5}.\n$$ Ich m ichs ichm ich ich ich m m...mm ich mich zumm mt $$\nP'(Q) = 5-\\dfrac{Q}{5}\n$$ was mit der Behauptung übereinstimmt.\n\nDie Aussage ist wahr.",
+      "**A.** → True\n\nDifferentiate the stall's profit rule term by term. From\n\n$$\nP(Q) = 5Q-\\dfrac{Q^{2}}{10}+3,\n$$\n\nthe derivative of the quadratic term is $-\\dfrac{2Q}{10}=-\\dfrac{Q}{5}$, so\n\n$$\nP'(Q) = 5-\\dfrac{Q}{5}.\n$$\n\nThat slope matches the claim exactly\n\n$$\nP'(Q) = 5-\\dfrac{Q}{5}\n$$\n\nwhich matches the claim.\n\nSo the statement is True.",
       "**B.** → Wahr\n\nInside $(0,8)$ check whether the slope can hit zero. Solving $5-\\dfrac{Q}{5}=0$ would give $Q=25$, which lies far outside $[0,8]$. At the right endpoint itself\n\n$$\nP'(8) = 5-\\dfrac{8}{5}\n$$\n\n$$\nP'(8) = \\dfrac{17}{5}\n$$\n\n$$\nP'(8) = 3.4>0,\n$$\n\nand for every smaller positive $Q$ the slope is even larger. So there is no interior root of $P'(Q)=0$ on $(0,8)$.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nDa $P'(Q)>0$ im gesamten $[0,8]$, der Gewinn steigt streng auf das Intervall. Eine streng ansteigende stetige Funktion in einem geschlossenen begrenzten Intervall erreicht am rechten Endpunkt $Q=8$ ihr Maximum und am linken Endpunkt $Q=0$ ihr Minimum. Für diese Schlussfolgerung ist kein innerer kritischer Punkt erforderlich. $$\nQ = 8\n$$ $$\nQ = 0\n$$ Die Aussage ist wahr.",
       "**D.** → Falsch\n\nFlat Steigung findet einen Kandidaten; die Biegung (oder ein Zeichendiagramm) klassifiziert dann Peak versus Trog. Halten Sie diese beiden Schritte getrennt.\n\nDie Zeit ist, um die Zeit, um die Zeit, um die Zeit, um die Zeit, der, Hier die Domäne enthält nur an acht Einheiten, während der Aufstieg ist immer noch positiv: $$\nP'(8) = 5-\\dfrac{8}{5}\n$$ $$\nP'(8) = \\dfrac{17}{5}>0.\n$$ Das Maximum sitzt an der Grenze, weil die realisierbare Menge endet, nicht weil die Ein äußerlicher (senkrechter) Überstand am höchsten Punkt ist falsch.\n\nDie Aussage ist falsch.",
@@ -1775,7 +1775,7 @@
       ".",
       "Nach fünf Stunden biegt sich die Nutzkurve von B nach oben, so dass die Zufriedenheit von B lokal minimiert wird.",
       "A's peak utility is $25$, while B's utility at five hours is $5$.",
-      "Denn \" nur greift, es ist vor allem vorsorglich, vorsorglich, vorsorglich."
+      "Because both solve for a flat slope at the same hour, both are maximising satisfaction there."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDifferentiate each hiker's utility and evaluate at five hours:\n\n$$\nU_A'(t) = -2t+10\n$$\n\n$$\nU_B'(t) = 2t-10\n$$\n\n$$\nU_A'(5) = -10+10\n$$\n\n$$\n-10 + 10 = 0\n$$\n\n$$\nU_A'(5) = 0 = 0\n$$\n\n$$\nU_B'(5) = 10-10\n$$\n\n$$\n10 - 10 = 0\n$$\n\n$$\nU_B'(5) = 0 = 0\n$$\n\n$$\n10 - 10 = 0 = 0.\n$$\n\nBoth slopes are flat at $t=5$. Sharing a critical hour is only the first step — bends still decide peak versus trough — but the flat-slope claim itself holds.\n\nDie Aussage ist wahr.",
@@ -1980,9 +1980,9 @@
     "context": "A courier can schedule any number of daily shifts in the closed interval $0\\le Q\\le 8$. Daily operating cost is $C(Q)=Q^{2}-10Q+40$. Management wants the cost-minimising schedule on that interval. Decide TRUE or FALSE for each claim.",
     "solution_overview": "Delivery cost on the closed shift interval $[0,8]$ is\n\n$$C(Q)=Q^{2}-10Q+40.$$\n\nDifferentiate twice:\n\n$$C'(Q)=2Q-10,\\qquad C''(Q)=2>0.$$\n\nThe only interior flat-slope schedule is $Q=5$, and the upward bend marks a local cost trough with $C(5)=15$. Endpoint costs are $C(0)=40$ and $C(8)=24$. Comparing all three candidates, the global cost minimum on $[0,8]$ is the interior trough at five shifts, not the endpoint at eight. On a closed interval one must always compare critical values with endpoint values.",
     "statements": [
-      "Diesfahrten, dies ist das Jahr, in dem das Jahr, in dem das Jahr, in dem das Jahr, das Jahr, das Jahr, das Jahr, das Jahr, das Jahr, das Jahr, das Jahr, das Jahr, der Tag, der Tag, der das",
+      "The only interior flat-slope schedule is five shifts.",
       "Es ist an",
-      "Endpoint costs are $40$ at zero shifts und $24$ at eight shifts, while cost at five shifts is $15$.",
+      "Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$.",
       "Auf $[0,8]$ befindet sich das globale Kostenminimum am Endpunkt von acht Schichten.",
       "On $[0,8]$, the global cost minimum is at the interior trough of five shifts."
     ],
@@ -2300,7 +2300,7 @@
   },
   "MATH 11.123": {
     "title": "Über: der, der als Über-",
-    "context": "Die Abbildung zeigt $f$. EURen EURen EURen",
+    "context": "The figure shows $f$. Decide TRUE or FALSE from the shape alone.",
     "solution_overview": "Here the figure shows the level curve $f$ itself, not its derivative. Reading turning points and slopes directly from the shape:\n\n- near $x=1$ the graph bottoms out (a local minimum);\n- near $x=5$ it reaches a local highest point (a local maximum);\n- between those turning points the curve climbs steadily;\n- midway on that climb, near $x=3$, the tangent looks steepest upward in the window.\n\nAn axis crossing of $f$ near $x=0$ is only a root $f=0$. That is a different geometric fact from a critical point $f'=0$, so the crossing alone does not force a horizontal tangent.",
     "statements": [
       "The graph has a local minimum near $x=1$.",
@@ -2626,7 +2626,7 @@
     "context": "Brown is $f'$ und green is $f''$. Entscheiden Sie sich für Wahrheit oder Lüge.",
     "solution_overview": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $f''$. At $x=2$ brown is near its maximum while green is about $0$ — a peak of $f'$ aligned with a zero of $f''$. Sign chart for green:\n\n$$f''>0\\text{ on }(0,2),\\qquad f''<0\\text{ on }(2,5)$$\n\nso brown rises on $(0,2)$ and falls on $(2,5)$. Wherever brown is positive, $f$ is increasing. A zero of green at $x=2$ is about an extremum of $f'$, not a critical point of $f$; critical points of $f$ are zeros of brown.",
     "statements": [
-      "At $x=2$, brown is near its maximum und green is about $0$.",
+      "At $x=2$, brown is near its maximum and green is about $0$.",
       "On $(0,2)$, green is positive, so brown is rising.",
       "On $(2,5)$, green is negative, so brown is falling.",
       "Wherever brown is positive, $f$ is increasing.",
@@ -2778,7 +2778,7 @@
     "context": "Brown ist der marginale Gewinn $P_A'$ und grün ist der marginale Gewinn $P_B'$ von Firma B, auf den gleichen Achsen aufgetragen. zuständigen Sie für Sie oder Sie im lt.",
     "solution_overview": "Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$ on the same axes. Axis crossings:\n\n$$P_A'\\text{ zeros near }x=1,3;\\qquad P_B'\\text{ zeros near }x=2,5$$\n\nNear $x=0$ both curves are positive, with green starting higher than brown. At $x=1.5$ brown is already negative while green is still positive (opposite expand/contract advice). At $x=4$ both are negative, so both profits decrease in output there. Having two zeros each only matches critical-point counts — it does not equate the firms' maximal profit levels, which are heights of $P$ itself (not plotted).",
     "statements": [
-      "Firm A's zeros are near $x=1$ und $x=3$, while firm B's zeros are near $x=2$ und $x=5$.",
+      "Firm A's zeros are near $x=1$ and $x=3$, while firm B's zeros are near $x=2$ and $x=5$.",
       "Bei $x=1.5$ ist Braun negativ, während Grün immer noch positiv ist, also will A kontrahieren und B will expandieren.",
       "Bei $x=4$ sind beide Kurven negativ, so dass die Gewinne beider Unternehmen dort sinken.",
       "Nahe $x=0$ sind beide Kurven positiv und grün beginnt höher als braun.",
@@ -2816,7 +2816,7 @@
     "context": "Drei Randgewinnkurven $P_1'$, $P_2'$, $P_3'$ sind auf den ** gleichen Achsen besseres Es ist dies für ein Gefallen für die Liebe für erlittenoure Gesang zwischen den Gesang und den Gesang der Gesne auf der Ge Schönheitsteste.",
     "solution_overview": "Three marginal-profit curves $P_1'$ (brown), $P_2'$ (green), and $P_3'$ (purple) share one pair of axes. At $x=0$:\n\n$$\\text{brown}>0,\\quad\\text{purple}>0,\\quad\\text{green}\\approx -1<0$$\n\nso firm 2 starts with negative marginal profit. Brown crosses near $x=4$ and is negative afterward, including at $x=5$. Different zero locations mean the first firm to hit a zero when moving right from $x=0$ need not be firm 1. If at some $x$ one curve sits above another and both are positive, that firm has the larger instantaneous profit gain per unit.",
     "statements": [
-      "At $x=0$, brown und purple are positive while green is negative.",
+      "At $x=0$, brown and purple are positive while green is negative.",
       "At $x=0$, the green curve $P_2'$ is positive.",
       "At $x=5$, brown is negative, so firm 1's profit is decreasing in output at $x=5$.",
       "Die erste Firma, die eine Null des marginalen Gewinns trifft, wenn sie sich direkt von $x=0$ bewegt, ist nicht unbedingt Firma 1.",
@@ -2835,10 +2835,10 @@
     "context": "Brown is $f'$ und green is $g'$ on one plane. Entscheiden Sie sich für die Wahrheit oder falsch.",
     "solution_overview": "Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.\n\nBrown is $f'$ and green is $g'$ on one plane. Zero locations:\n\n$$f'\\text{ zeros at }x=1,3;\\qquad g'\\text{ zeros at }x=2,5$$\n\nAt $x=0$ both are positive with $g'(0)>f'(0)$. At $x=2.5$ both sit below the axis (brown in $(1,3)$, green in $(2,5)$). On $(3,5)$ brown is positive while green is still negative, so $f$ increases and $g$ decreases there. Equal numbers of zeros do not equate $\\max f$ with $\\max g$ — critical-point counts are not function values.",
     "statements": [
-      "Brown has zeros at $x=1$ und $x=3$; green has zeros at $x=2$ und $x=5$.",
+      "Brown has zeros at $x=1$ and $x=3$; green has zeros at $x=2$ and $x=5$.",
       "At $x=0$, both $f'(0)$ and $g'(0)$ are positive, and $g'(0)>f'(0)$.",
       "At $x=2.5$, brown is negative while green is also negative.",
-      "On $(3,5)$, brown is positive while green is negative: $f$ increases und $g$ decreases there.",
+      "On $(3,5)$, brown is positive while green is negative: $f$ increases and $g$ decreases there.",
       "Gleiche Zahlen von Nullen bedeuten $\\max f = \\max g$."
     ],
     "tactical_explanations": [
@@ -3462,11 +3462,11 @@
     "context": "A clinic tracks a throughput index $f$ (brown), its Ableitung $f^{\\prime}$ (green) und its second Ableitung $f^{\\prime\\prime}$ (purple) on one shared figure. Throughput is measured against a staffing intensity $x$. Welche der folgenden Aussagen ist/sind korrekt?",
     "solution_overview": "The figure stacks three related curves against staffing intensity $x$: brown is the throughput level $f$, green is its slope $f^{\\prime}$, and purple is $f^{\\prime\\prime}$.\n\nLocal extrema of brown sit where green crosses the axis and changes sign: near $x=1$ green flips $-$ to $+$, so brown has a local minimum; near $x=5$ green flips $+$ to $-$, so brown has a local maximum.\n\nAn inflection of brown is a zero of purple with a sign change. Purple crosses through zero near $x=3$ (from $+$ to $-$), so $f$ changes from concave up to concave down there.\n\nBy definition $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$, so wherever purple is negative (right of $x=3$), green must be decreasing. The peak of green is only the steepest climb of brown — not a turning point of brown — and at the inflection $x=3$ green is still positive, so throughput is still rising toward its maximum near $x=5$.",
     "statements": [
-      "Brown has a local minimum near $x=1$ und a local maximum near $x=5$.",
+      "Brown has a local minimum near $x=1$ and a local maximum near $x=5$.",
       "Purple crosses zero near $x=3$, and that is an inflection of brown: concavity of $f$ changes there.",
       "Where purple is negative (right of $x=3$), green is decreasing — matching $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$.",
       "Der höchste Punkt von Grün ist ein lokales Maximum von Braun.",
-      "At $x=3$, brown is climbing, green is positive und purple is near zero — so staffing intensity $3$ maximises throughput itself."
+      "At $x=3$, brown is climbing, green is positive, and purple is near zero — so staffing intensity $3$ maximises throughput itself."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nBrown is the throughput level $f$, and green is its slope $f^{\\prime}$. Local extrema of brown therefore sit where green crosses the axis and changes sign — not where green merely peaks.\n\nNear $x=1$, green passes from negative to positive, so the slope of throughput flips from downhill to uphill: brown bottoms out there — a local minimum.\n\nNear $x=5$, green passes from positive to negative, so the climb of brown turns into a descent: brown peaks there — a local maximum.\n\nThose two turning points are exactly the ones named in the claim.\n\n$$\nx = 1\n$$\n\n$$\nx = 5\n$$\n\nDie Aussage ist wahr.\n",
@@ -3660,7 +3660,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEliminate the parallel side from the fencing budget and write planted area in the free length $x$.\n\n$$\ny = 60-2x\n$$\n\n$$\nA(x) = x\\cdot y = x(60-2x) = 60x-2x^{2}\n$$\n\nThe factor $2$ in $2x$ comes from the two equal sides perpendicular to the river; the river itself supplies the fourth side for free.\n\nThe open fencing interval requires $y>0$ and $x>0$, so $0<x<30$, exactly as claimed. Matching the reduced area rule to the claim.\n\nDie Aussage ist wahr.\n",
-      "**B.** → Wahr\n\nmit wir wir wir mit mit aus, und mit dem mit dem mit und mit dem aus und mit mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit dem aus und mit mit dem aus und mit dem aus. $$\nA^{\\prime}(x) = 60-4x = 0 \\implies x = 15\n$$ $$\nA^{\\prime\\prime}(x) = -4<0\n$$ At $x=15$ one has $$\ny = 60-30\n$$ $$\n60 - 30 = 30\n$$ $$\ny = 30\n$$ und planted area $$\nA = 15\\cdot 30\n$$ $$\n15\\times 30 = 450\n$$ $$\nA = 450\n$$, das größte Rechteck, das der Zaunhaushalt einschließen kann.\n\nIn der Tat werden nur indä, es ist, und daß,s,se, und‟e, ihr., das rechnungs.s..\n\nSo area alone is maximised at $x=15$.\n\nDie Aussage ist wahr.",
+      "**B.** → True\n\nMaximise the concave quadratic area on that open interval, ignoring price response for this letter.\n\n$$\nA^{\\prime}(x) = 60-4x = 0 \\implies x = 15\n$$\n\n$$\nA^{\\prime\\prime}(x) = -4<0\n$$\n\nAt $x=15$ one has\n\n$$\ny = 60-30\n$$\n\n$$\n60 - 30 = 30\n$$\n\n$$\ny = 30\n$$\n\n and planted area\n\n$$\nA = 15\\cdot 30\n$$\n\n$$\n15\\times 30 = 450\n$$\n\n$$\nA = 450\n$$\n\n, the largest rectangle the fence budget can enclose.\n\nThis letter maximises physical area alone; price response and revenue enter only in later letters.\n\nSo area alone is maximised at $x=15$.\n\nSo the statement is True.\n",
       "**C.** → Wahr\n\nRevenue as a function of planted area is the quadratic coming from inverse demand $p=24-\\dfrac{1}{2}A$.\n\n$$\nR(A) = pA = \\left(24-\\dfrac{1}{2}A\\right)A = 24A-\\dfrac{1}{2}A^{2}\n$$\n\n$$\nR^{\\prime}(A) = 24-A = 0 \\implies A = 24\n$$\n\nThis is a pure revenue calculation treating $A$ as the quantity index; the fencing constraint is set aside until one asks whether $A=24$ is feasible (it is).\n\nAnd $R^{\\prime\\prime}=-1<0$, so revenue peaks at $A=24$.\n\nDie Aussage ist wahr.\n",
       "**D.** → Falsch\n\nThe area-maximising layout gives a huge planted area:\n\n$$\nA(15) = 60\\cdot 15-2\\cdot 15^{2} = 900-450 = 450\n$$\n\nFeasibility is not the issue — $A=450$ is attainable — but revenue at $A=450$ is dragged down by the low price\n\n$$\np = 24-\\frac12\\cdot 450\n$$\n\n$$\np = -201\n$$\n\n, which is economically absurd on this demand line.\n\nRevenue, however, peaks at $A=24$, far below $450$. Flooding the market with area drives price down along the inverse-demand line; maximising physical area is not the same as maximising revenue.\n\nDie Aussage ist falsch.\n",
       "**E.** → True\n\nInvert the demand rule to express quantity in terms of price, then evaluate elasticity at the revenue-maximising area.\n\n$$\np = 24-\\dfrac{1}{2}A\n$$\n\n$$\nA = 48-2p\n$$\n\nAt $A=24$ one has $p=12$, so\n\n$$\n\\varepsilon = \\dfrac{-2p}{48-2p} = \\dfrac{-2\\cdot 12}{48-24} = \\dfrac{-24}{24} = -1\n$$\n\nFor linear inverse demand, unit elasticity always marks the revenue peak:\n\n$$\nR^{\\prime}(A) = 24-A = 0\n$$\n\n at the same $A=24$ where $\\varepsilon=-1$.\n\nUnit elasticity at the revenue peak is exactly what the claim asserts.\n\nSo the statement is True.\n"
@@ -3712,7 +3712,7 @@
       "Die Gesamtkosten haben eine Einbiegung in der Nähe von $Q=4$, wo grüne Kreuze Null und Braun ihr Minimum haben.",
       "On $(0,4)$, green is negative, so marginal cost is decreasing und total cost is concave down.",
       "Die durchschnittlichen Kosten sind auf ein Minimum genau in der Lage, dietwegen sie in der Lage sind, zu minimieren.",
-      "At $Q=8$, green is positive und about height $4$, matching a rising MC.",
+      "At $Q=8$, green is positive and about height $4$, matching a rising MC.",
       "Da Braun am Fenster positiv bleibt, steigen die Gesamtkosten durchweg."
     ],
     "tactical_explanations": [

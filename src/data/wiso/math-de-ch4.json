@@ -255,7 +255,7 @@
       "Notebooks kosten $4$ je EUR und Stifte kosten $2$ je EUR. Ein Student kauft $5$ mehr Stifte als Notebooks und zahlt $22$ EUR insgesamt. Dann kaufte der Student $2$ Notizbücher.",
       "Tea is $5$ EUR per kilogram und sugar is $2$ EUR per kilogram. A shopper takes twice as much tea as sugar und pays $24$ EUR. Dann machte der Tee allein $20$ EUR der Rechnung aus.",
       "Wenn ein Kunde $5$ kg Äpfel zu $2$ EUR pro Kilogramm und $2$ mit $3$ EUR pro Kilogramm kauft, ist die Rechnung $16$ EUR.",
-      "Bread costs $2$ EUR a loaf und milk costs $1.5$ EUR a carton. Vier Brote und zwei Kartons kommen auf $11$ EUR, so dass Milch weniger als ein Drittel dieser Rechnung ausmachte."
+      "Bread costs $2$ EUR a loaf and milk costs $1.5$ EUR a carton. Four loaves and two cartons come to $11$ EUR, so milk made up less than one-third of that bill."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nApples cost $2$ EUR per kilogram and pears $3$ EUR per kilogram. Let pears be $x$ kg. Then apples are $x + 3$ kg, and the bill is $21$ EUR:\n\n$$2(x + 3) + 3x = 21$$\n\n$$2x + 6 + 3x = 21$$\n\n$$5x + 6 = 21$$\n\n$$5x = 21 - 6$$\n\n$$\n21 - 6 = 15\n$$\n\n$$5x = 15$$\n\n$$x = \\frac{15}{5}$$\n\n$$x = 3$$\n\nThe customer bought $3$ kg of pears, matching the claim.\n\nDie Aussage ist wahr.",
@@ -289,7 +289,7 @@
     "context": "Gut, jeder Menge. Und es ist noch noch nicht.",
     "solution_overview": "Five independent motion Behauptungen. Abgeschiedene Ein Strom ist die Hälfte der Downstream-Upstream-Lücke; eine Rundreise addiert die beiden Einweg-Zeiten..\n\nIsoliere die Unbekannte durch Umkehroperationen: zuerst Addition oder Subtraktion rückgängig machen, dann durch einen von null verschiedenen Koeffizienten dividieren.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; eine Wurzel aus einem anderen Buchstaben nicht wiederverwenden.",
     "statements": [
-      "Towns $X$ und $Y$ are $132$ km apart. At noon a car leaves $X$ toward $Y$ at $48$ km/h. Thirty minutes later a second car leaves $Y$ toward $X$ at $72$ km/h. Sie treffen sich $54$ Minuten nach dem Mittag.",
+      "Towns $X$ und $Y$ sind $132$ km apart. At noon a car leaves $X$ toward $Y$ at $48$ km/h. Thirty minutes later a second car leaves $Y$ toward $X$ at $72$ km/h. Sie treffen sich $54$ Minuten nach dem Mittag.",
       "Ein späteres Auto startet bei $12{:}30$ und die beiden entgegenkommenden Autos treffen sich $54$ Minuten nach Mittag. Ein Passagier behauptet, das spätere Auto sei dann sei eine volle Stunde gefahren.",
       "A boat goes $24$ km downstream in $2$ hours and returns the same $24$ km upstream in $3$ hours. The boat's speed in still water is then $12$ km/h.",
       "A cyclist rides to town at $15$ km/h and back at $10$ km/h. If the one-way distance is $30$ km, the round trip takes $4$ hours, because each leg is supposedly two hours if you average the two times.",
