@@ -74,10 +74,12 @@ export function SiteHeader({
           // Mobile: flex + wrap so page actions can drop to a second row instead of overlapping.
           // lg+: three equal flex-1 lanes keep the text nav page-centered; min-w-0 + wrap
           // keep left/center/right from growing into each other.
+          // min-h keeps the bar from visibly jumping while async chrome settles on remount.
           "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3",
+          "min-h-[3.25rem] sm:min-h-[3.5rem]",
           "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
           "lg:flex-nowrap lg:items-center lg:gap-x-4 lg:px-8 xl:gap-x-6",
-          !compact && "sm:py-4",
+          !compact && "sm:min-h-[3.75rem] sm:py-4",
           innerClassName,
         )}
       >
