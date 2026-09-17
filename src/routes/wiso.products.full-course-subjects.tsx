@@ -7,9 +7,11 @@ import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
+import { WISO_COURSE_SUBJECTS_UI } from "@/lib/wiso-study-ui";
 
 const PATH = "/wiso/products/full-course-subjects" as const;
 const INDIGO = "#3730A3";
+const ui = WISO_COURSE_SUBJECTS_UI;
 
 export const Route = createFileRoute("/wiso/products/full-course-subjects")({
   head: () => ({
@@ -19,13 +21,13 @@ export const Route = createFileRoute("/wiso/products/full-course-subjects")({
       {
         name: "description",
         content:
-          "Open WiSo Full Course subjects: Wirtschaft verstehen, Mathematik, and Deutsches Sprachverständnis for the WU Vienna Aufnahmeprüfung.",
+          "Öffne WiSo Full Course Fächer: Wirtschaft verstehen, Mathematik und Deutsches Sprachverständnis für die WU Wien Aufnahmeprüfung.",
       },
-      { property: "og:title", content: "Full WiSo Course — Choose a subject" },
+      { property: "og:title", content: "Full WiSo Course — Fächer wählen" },
       {
         property: "og:description",
         content:
-          "Economics, Mathematics, and German reading practice on dedicated /wiso URLs for the WiSo entrance exam.",
+          "Wirtschaft, Mathematik und deutsches Leseverständnis auf eigenen /wiso-URLs für die WiSo-Aufnahmeprüfung.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -49,9 +51,8 @@ const subjects = [
     title: "Wirtschaft verstehen",
     image: economicsAsset.url,
     accent: INDIGO,
-    tag: "Economics",
-    description:
-      "Cases remapped onto Wirtschaft verstehen — Grundlagen der Wirtschaft and Unternehmensgrundlagen (Kapitel 2 und 4 folgen).",
+    tag: ui.econTag,
+    description: ui.econDescription,
     to: "/wiso/products/full-course-economics",
     ready: true,
   },
@@ -60,9 +61,8 @@ const subjects = [
     title: "Mathematik",
     image: mathAsset.url,
     accent: "#4338CA",
-    tag: "Quantitative",
-    description:
-      "Full Course mathematics with German syllabus labels — algebra, functions, finance math, probability and more.",
+    tag: ui.mathTag,
+    description: ui.mathDescription,
     to: "/wiso/products/full-course-math",
     ready: true,
   },
@@ -71,9 +71,8 @@ const subjects = [
     title: "Deutsches Sprachverständnis",
     image: economicsAsset.url,
     accent: "#6366F1",
-    tag: "Language",
-    description:
-      "Zehn Lesetexte mit je zehn Aufgaben — akademisches Sprachverständnis für die WiSo-Aufnahmeprüfung.",
+    tag: ui.germanTag,
+    description: ui.germanDescription,
     to: "/wiso/products/full-course-german",
     ready: true,
   },
@@ -82,27 +81,30 @@ const subjects = [
 const studyTools = [
   {
     id: "flashcards",
-    title: "WiSo Flashcards",
-    blurb: "Flip cards for Economics (English), Mathematik (German), and Deutsch vocabulary.",
+    title: ui.flashcardsTitle,
+    blurb: ui.flashcardsBlurb,
     to: "/wiso/flashcards" as const,
     accent: INDIGO,
     icon: Layers,
+    cta: ui.openFlashcards,
   },
   {
     id: "matching",
-    title: "WiSo Matching",
-    blurb: "Connect each term to the right definition from the same WiSo decks.",
+    title: ui.matchingTitle,
+    blurb: ui.matchingBlurb,
     to: "/wiso/matching" as const,
     accent: "#4338CA",
     icon: Shuffle,
+    cta: ui.openMatching,
   },
   {
     id: "tutor",
-    title: "WiSo Tutor Exam",
-    blurb: "A random theory quiz that reshuffles every time you start.",
+    title: ui.tutorTitle,
+    blurb: ui.tutorBlurb,
     to: "/wiso/tutor-exam" as const,
     accent: "#6366F1",
     icon: Sparkles,
+    cta: ui.openTutor,
   },
 ] as const;
 
@@ -116,7 +118,7 @@ function WisoFullCourseSubjects() {
             to="/wiso/products/full-course"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Back
+            {ui.back}
           </Link>
         }
       />
@@ -125,12 +127,12 @@ function WisoFullCourseSubjects() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700 dark:text-indigo-300">
-              WiSo track
+              {ui.trackEyebrow}
             </p>
             <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Full WiSo Course
+              {ui.pageTitle}
             </h1>
-            <p className="mt-4 text-lg text-muted-foreground">Choose a subject to begin.</p>
+            <p className="mt-4 text-lg text-muted-foreground">{ui.chooseSubject}</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -143,7 +145,7 @@ function WisoFullCourseSubjects() {
                 <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                   <img
                     src={s.image}
-                    alt={`${s.title} practice`}
+                    alt={`${s.title}`}
                     width={768}
                     height={576}
                     loading="lazy"
@@ -170,7 +172,7 @@ function WisoFullCourseSubjects() {
                         boxShadow: `0 4px 14px -4px ${s.accent}80`,
                       }}
                     >
-                      Go to tasks →
+                      {ui.goToTasks}
                     </Link>
                   ) : (
                     <button
@@ -179,7 +181,7 @@ function WisoFullCourseSubjects() {
                       className="mt-5 inline-flex cursor-not-allowed items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white opacity-80"
                       style={{ backgroundColor: s.accent }}
                     >
-                      Coming next
+                      {ui.comingNext}
                     </button>
                   )}
                 </div>
@@ -190,13 +192,13 @@ function WisoFullCourseSubjects() {
           <section className="mt-14">
             <div className="mb-6 text-center sm:text-left">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700 dark:text-indigo-300">
-                Study tools
+                {ui.studyEyebrow}
               </p>
               <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                WiSo flashcards, matching & tutor exam
+                {ui.studyTitle}
               </h2>
               <p className="mt-2 max-w-2xl text-sm text-muted-foreground sm:text-base">
-                Separate from BBE study tools — open these for your WiSo course decks.
+                {ui.studyBlurb}
               </p>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
@@ -219,7 +221,7 @@ function WisoFullCourseSubjects() {
                     <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
                     <p className="mt-2 flex-1 text-sm text-muted-foreground">{tool.blurb}</p>
                     <span className="mt-4 text-xs font-semibold" style={{ color: tool.accent }}>
-                      Open {tool.id === "tutor" ? "tutor exam" : tool.id} →
+                      {tool.cta}
                     </span>
                   </Link>
                 );

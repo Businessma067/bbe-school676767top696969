@@ -35,6 +35,10 @@ import {
   ThumbsDown,
   ThumbsUp,
 } from "lucide-react";
+import {
+  WISO_FLASHCARD_UI,
+  type StudyUiLocale,
+} from "@/lib/wiso-study-ui";
 
 type DeckCard = Flashcard & { sectionId: string; sectionTitle: string; key: string };
 
@@ -88,6 +92,7 @@ type FlashcardSubjectViewProps = {
   subjectsHref: string;
   /** Treat like BBE English (mode tabs, no "all") */
   vocabularyModes?: boolean;
+  locale?: StudyUiLocale;
 };
 
 export function FlashcardSubjectView({
@@ -96,9 +101,12 @@ export function FlashcardSubjectView({
   progressSubjectId,
   subjectsHref,
   vocabularyModes = false,
+  locale = "en",
 }: FlashcardSubjectViewProps) {
   const progressKey = progressSubjectId ?? subjectId;
   const total = countCards(subject.sections);
+  const de = locale === "de";
+  const ui = de ? WISO_FLASHCARD_UI : null;
 
   const [sectionId, setSectionId] = useState<string | "all">(() =>
     vocabularyModes ? (subject.sections[0]?.id ?? "all") : "all",
@@ -182,13 +190,16 @@ export function FlashcardSubjectView({
             label: `${s.title} (${s.cards.length})`,
           }))
         : [
-            { id: "all" as const, label: `All topics (${total})` },
+            {
+              id: "all" as const,
+              label: de ? WISO_FLASHCARD_UI.allTopics(total) : `All topics (${total})`,
+            },
             ...subject.sections.map((s) => ({
               id: s.id,
               label: `${s.title} (${s.cards.length})`,
             })),
           ],
-    [subject.sections, subjectId, total],
+    [subject.sections, subjectId, total, de],
   );
 
   // English: default into Synonyms mode (no "all").
@@ -421,8 +432,17 @@ export function FlashcardSubjectView({
     if (!moved) setFlipped((f) => !f);
   };
 
-  const swipeHint =
-    dragX > 16 ? "Know →" : dragX < -16 ? "← Don't know" : "Swipe right = know · left = don't know";
+  const swipeHint = ui
+    ? dragX > 16
+      ? ui.swipeHintKnow
+      : dragX < -16
+        ? ui.swipeHintDont
+        : ui.swipeHintIdle
+    : dragX > 16
+      ? "Know →"
+      : dragX < -16
+        ? "← Don't know"
+        : "Swipe right = know · left = don't know";
 
   let transform: string | undefined;
   if (exitDir) {
@@ -436,16 +456,24 @@ export function FlashcardSubjectView({
   const overlayOpacity = Math.min(0.55, Math.abs(dragX) / 70);
   const busy = !!exitDir || !!enterFrom;
 
-  const frontLabel =
-    vocabularyModes
+  const frontLabel = ui
+    ? vocabularyModes
+      ? ui.word
+      : subjectId === "math"
+        ? ui.termFormula
+        : ui.term
+    : vocabularyModes
       ? "Word"
       : subjectId === "german"
         ? "Wort"
         : subjectId === "math"
           ? "Term / Formula"
           : "Term";
-  const backLabel =
-    vocabularyModes
+  const backLabel = ui
+    ? vocabularyModes
+      ? "Bedeutung"
+      : ui.explanation
+    : vocabularyModes
       ? sectionId === "eng-synonyms"
         ? "Synonyms"
         : sectionId === "eng-antonyms"
@@ -465,7 +493,7 @@ export function FlashcardSubjectView({
             to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Subjects
+            {ui?.subjectsBack ?? "← Subjects"}
           </Link>
         }
       />
@@ -492,9 +520,13 @@ export function FlashcardSubjectView({
           </div>
 
           <div className="mb-4 grid grid-cols-3 gap-2 sm:gap-3">
-            <StatChip label="Known" value={stats.known} tone="known" />
-            <StatChip label="Don't know" value={stats.unknown} tone="unknown" />
-            <StatChip label="New" value={stats.unset} tone="new" />
+            <StatChip label={ui?.known ?? "Known"} value={stats.known} tone="known" />
+            <StatChip
+              label={ui?.dontKnow ?? "Don't know"}
+              value={stats.unknown}
+              tone="unknown"
+            />
+            <StatChip label={ui?.neu ?? "New"} value={stats.unset} tone="new" />
           </div>
 
           <div className="mb-6 flex flex-wrap items-center gap-3">
@@ -532,7 +564,7 @@ export function FlashcardSubjectView({
             ) : (
               <>
                 <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Topic
+                  {ui?.topic ?? "Topic"}
                 </label>
                 <select
                   value={sectionId}
@@ -558,7 +590,7 @@ export function FlashcardSubjectView({
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
             >
               <Shuffle className="h-3.5 w-3.5" />
-              Shuffle
+              {ui?.shuffle ?? "Shuffle"}
             </button>
             <button
               type="button"
@@ -575,18 +607,22 @@ export function FlashcardSubjectView({
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
             >
               <RotateCcw className="h-3.5 w-3.5" />
-              Reset progress
+              {ui?.resetProgress ?? "Reset progress"}
             </button>
           </div>
 
           <p className="mb-3 text-center text-xs font-semibold text-muted-foreground">
             {card ? card.sectionTitle : "—"}
             {knowledge === "known"
-              ? " · marked known (rare)"
+              ? ui?.markedKnown ?? " · marked known (rare)"
               : knowledge === "unknown"
-                ? " · marked don't know (frequent)"
+                ? ui?.markedDontKnow ?? " · marked don't know (frequent)"
                 : ""}
-            {seen > 0 ? ` · ${seen} reviewed` : ""}
+            {seen > 0
+              ? ui
+                ? ui.reviewed(seen)
+                : ` · ${seen} reviewed`
+              : ""}
           </p>
 
           {card ? (
@@ -613,7 +649,9 @@ export function FlashcardSubjectView({
                 role="button"
                 tabIndex={0}
                 aria-label={
-                  flipped ? "Flashcard explanation — tap to flip" : "Flashcard term — tap to flip"
+                  flipped
+                    ? ui?.ariaFlipBack ?? "Flashcard explanation — tap to flip"
+                    : ui?.ariaFlipFront ?? "Flashcard term — tap to flip"
                 }
               >
                 <div
@@ -649,7 +687,7 @@ export function FlashcardSubjectView({
                         />
                       </div>
                       <p className="mt-2 text-center text-xs text-muted-foreground">
-                        Tap to flip · swipe to sort
+                        {ui?.tapToFlip ?? "Tap to flip · swipe to sort"}
                       </p>
                     </div>
                     <div className="flashcard-face flashcard-back rounded-2xl border border-border bg-card p-8 shadow-sm">
@@ -664,7 +702,7 @@ export function FlashcardSubjectView({
                         />
                       </div>
                       <p className="mt-2 text-center text-xs text-muted-foreground">
-                        Tap to flip · press-and-drag to sort
+                        {ui?.tapToFlipBack ?? "Tap to flip · press-and-drag to sort"}
                       </p>
                     </div>
                   </div>
@@ -673,7 +711,7 @@ export function FlashcardSubjectView({
             </div>
           ) : (
             <div className="rounded-2xl border border-dashed border-border bg-card/50 p-10 text-center text-sm text-muted-foreground">
-              No cards in this topic.
+              {ui?.emptyTopic ?? "No cards in this topic."}
             </div>
           )}
 
@@ -685,7 +723,7 @@ export function FlashcardSubjectView({
               className="inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-red-500/30 bg-red-500/10 px-4 py-2.5 text-sm font-semibold text-red-700 hover:bg-red-500/15 disabled:opacity-40 dark:text-red-300 sm:flex-none"
             >
               <ThumbsDown className="h-4 w-4" />
-              Don't know
+              {ui?.dontKnow ?? "Don't know"}
             </button>
             <button
               type="button"
@@ -696,7 +734,7 @@ export function FlashcardSubjectView({
               className="rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:brightness-110 disabled:opacity-40"
               style={{ backgroundColor: subject.accent }}
             >
-              Flip
+              {ui?.flip ?? "Flip"}
             </button>
             <button
               type="button"
@@ -705,7 +743,7 @@ export function FlashcardSubjectView({
               className="inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-emerald-500/30 bg-emerald-500/10 px-4 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-500/15 disabled:opacity-40 dark:text-emerald-300 sm:flex-none"
             >
               <ThumbsUp className="h-4 w-4" />
-              Know
+              {ui?.known ?? "Know"}
             </button>
           </div>
 
@@ -717,7 +755,7 @@ export function FlashcardSubjectView({
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary disabled:opacity-40"
             >
               <ChevronLeft className="h-3.5 w-3.5" />
-              Prev
+              {ui?.prev ?? "Prev"}
             </button>
             <button
               type="button"
@@ -725,7 +763,7 @@ export function FlashcardSubjectView({
               disabled={!deck.length || busy}
               className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary disabled:opacity-40"
             >
-              Skip / next (weighted)
+              {ui?.skipNext ?? "Skip / next (weighted)"}
               <ChevronRight className="h-3.5 w-3.5" />
             </button>
           </div>

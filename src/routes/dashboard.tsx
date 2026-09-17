@@ -51,6 +51,7 @@ import {
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { tierAtLeast } from "@/lib/entitlements";
+import { WISO_DASHBOARD_STUDY } from "@/lib/wiso-study-ui";
 
 export type DashboardTab = "courses" | "mocks" | "custom" | "games";
 
@@ -391,7 +392,7 @@ function CoursesTab({
                         onClick={() => storeExamTrack("wiso")}
                         className="inline-flex rounded-md border border-indigo-700/30 bg-indigo-50 px-4 py-2 text-xs font-semibold text-indigo-900 hover:bg-indigo-100 dark:bg-indigo-950/40 dark:text-indigo-200 dark:hover:bg-indigo-950/70"
                       >
-                        Open WiSo flashcards →
+                        {WISO_DASHBOARD_STUDY.flashcardsCta}
                       </Link>
                     ) : null}
                     {!isWiso && hasBbePaid && e.product_slug !== "demo-practice" ? (
@@ -628,26 +629,26 @@ function wisoToolCards(): StudyToolCard[] {
     {
       feature: "flashcards",
       to: "/wiso/flashcards",
-      title: "Flashcards",
-      blurb: "Drill Economics terms, Math formulas, and German vocabulary with flip cards.",
-      cta: "Open WiSo flashcards →",
-      art: <FlashcardsModeArt />,
+      title: WISO_DASHBOARD_STUDY.flashcardsTitle,
+      blurb: WISO_DASHBOARD_STUDY.flashcardsBlurb,
+      cta: WISO_DASHBOARD_STUDY.flashcardsCta,
+      art: <FlashcardsModeArt locale="de" />,
     },
     {
       feature: "matching",
       to: "/wiso/matching",
-      title: "Matching",
-      blurb: "Connect each concept to the right definition. Same decks, different interaction.",
-      cta: "Open WiSo matching →",
-      art: <MatchingModeArt />,
+      title: WISO_DASHBOARD_STUDY.matchingTitle,
+      blurb: WISO_DASHBOARD_STUDY.matchingBlurb,
+      cta: WISO_DASHBOARD_STUDY.matchingCta,
+      art: <MatchingModeArt locale="de" />,
     },
     {
       feature: "tutor-exam",
       to: "/wiso/tutor-exam",
-      title: "Tutor Exam",
-      blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
-      cta: "Open WiSo tutor exam →",
-      art: <TutorModeArt />,
+      title: WISO_DASHBOARD_STUDY.tutorTitle,
+      blurb: WISO_DASHBOARD_STUDY.tutorBlurb,
+      cta: WISO_DASHBOARD_STUDY.tutorCta,
+      art: <TutorModeArt locale="de" />,
     },
   ];
 }
@@ -712,7 +713,7 @@ function StudyToolSection({
             (isWiso ? "text-indigo-700 dark:text-indigo-300" : "text-caramel-deep")
           }
         >
-          {isWiso ? "WiSo course" : "BBE course"}
+          {isWiso ? WISO_DASHBOARD_STUDY.sectionEyebrow : "BBE course"}
         </p>
         <h2 className="font-display text-xl font-bold tracking-tight">{title}</h2>
         <p className="mt-1 text-sm text-muted-foreground">{blurb}</p>
@@ -787,8 +788,8 @@ function GamesTab({
         </div>
         <StudyToolSection
           track="wiso"
-          title="WiSo study tools"
-          blurb="Economics, Math, and German for the WiSo Aufnahmeprüfung."
+          title="WiSo-Lernwerkzeuge"
+          blurb="Wirtschaft, Mathematik und Deutsch für die WiSo-Aufnahmeprüfung."
           cards={wisoToolCards()}
           locked
         />
@@ -806,12 +807,16 @@ function GamesTab({
   return (
     <div className="space-y-10">
       <div>
-        <h2 className="font-display text-xl font-bold tracking-tight">Study tools</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">
+          {showWiso && !showBbe
+            ? WISO_DASHBOARD_STUDY.studyToolsHeading
+            : "Study tools"}
+        </h2>
         <p className="mt-1 text-sm text-muted-foreground">
           {showBoth
-            ? "You have both courses — pick WiSo or BBE tools below. Each set opens its own flashcards, matching, and tutor exam."
+            ? WISO_DASHBOARD_STUDY.introBoth
             : showWiso
-              ? "Practice tools for your Full WiSo Course — Economics, Math, and German."
+              ? WISO_DASHBOARD_STUDY.introWisoOnly
               : "Practice tools for your BBE course — Economics, Math, and English."}
         </p>
       </div>
@@ -819,8 +824,12 @@ function GamesTab({
       {showWiso ? (
         <StudyToolSection
           track="wiso"
-          title={showBoth ? "WiSo study tools" : "Study tools"}
-          blurb="Open WiSo flashcards, matching, and tutor exam for Wirtschaft verstehen, Mathematik, and Deutsch."
+          title={
+            showBoth
+              ? WISO_DASHBOARD_STUDY.sectionTitle
+              : WISO_DASHBOARD_STUDY.sectionTitleSolo
+          }
+          blurb={WISO_DASHBOARD_STUDY.sectionBlurb}
           cards={wisoToolCards()}
           locked={false}
         />

@@ -98,8 +98,29 @@ function buildChoices(
   };
 }
 
-function makeQuestion(card: TutorExamCard, pool: TutorExamCard[]): TutorExamQuestion {
+export type TutorExamLocale = "en" | "de";
+
+const TUTOR_PROMPTS: Record<
+  TutorExamLocale,
+  { define: string; identify: string }
+> = {
+  en: {
+    define: "What does this concept mean?",
+    identify: "Which concept matches this meaning?",
+  },
+  de: {
+    define: "Was bedeutet dieser Begriff?",
+    identify: "Welcher Begriff passt zu dieser Erklärung?",
+  },
+};
+
+function makeQuestion(
+  card: TutorExamCard,
+  pool: TutorExamCard[],
+  locale: TutorExamLocale = "en",
+): TutorExamQuestion {
   const mode: TutorExamMode = Math.random() < 0.5 ? "define" : "identify";
+  const prompts = TUTOR_PROMPTS[locale];
 
   if (mode === "define") {
     const distractors = shuffleCopy(
@@ -113,7 +134,7 @@ function makeQuestion(card: TutorExamCard, pool: TutorExamCard[]): TutorExamQues
     return {
       id: `q-define-${card.id}-${Math.random().toString(36).slice(2, 8)}`,
       mode,
-      prompt: "What does this concept mean?",
+      prompt: prompts.define,
       stem: card.term,
       choices,
       correctChoiceId,
@@ -132,7 +153,7 @@ function makeQuestion(card: TutorExamCard, pool: TutorExamCard[]): TutorExamQues
   return {
     id: `q-identify-${card.id}-${Math.random().toString(36).slice(2, 8)}`,
     mode,
-    prompt: "Which concept matches this meaning?",
+    prompt: prompts.identify,
     stem: card.explanation,
     choices,
     correctChoiceId,
@@ -147,12 +168,13 @@ export function buildTutorExam(
   sections: FlashcardSection[],
   sectionId: string | "all" = "all",
   size = TUTOR_EXAM_SIZE,
+  locale: TutorExamLocale = "en",
 ): TutorExamQuestion[] {
   const pool = poolFromSections(sections, sectionId);
   if (pool.length === 0) return [];
 
   const picked = shuffleCopy(pool).slice(0, Math.min(size, pool.length));
-  return picked.map((card) => makeQuestion(card, pool));
+  return picked.map((card) => makeQuestion(card, pool, locale));
 }
 
 export const TUTOR_GREETINGS = [

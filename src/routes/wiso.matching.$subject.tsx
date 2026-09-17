@@ -38,6 +38,7 @@ function WisoMatchingSubjectPage() {
       subjectId={subjectId}
       subject={subject}
       subjectsHref="/wiso/matching"
+      locale="de"
     />
   );
 }

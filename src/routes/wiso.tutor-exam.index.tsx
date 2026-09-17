@@ -6,11 +6,11 @@ export const Route = createFileRoute("/wiso/tutor-exam/")({
   head: () => ({
     links: [{ rel: "canonical", href: "https://bbe-school.com/wiso/tutor-exam" }],
     meta: [
-      { title: "WiSo Tutor Exam — BBE School" },
+      { title: "WiSo-Tutor-Prüfung — BBE School" },
       {
         name: "description",
         content:
-          "A tutor robot runs a random theoretical exam on WiSo Economics, Math, and German.",
+          "Ein Tutor-Roboter stellt eine zufällige Theorieprüfung zu WiSo-Wirtschaft, Mathematik und Deutsch.",
       },
     ],
   }),
@@ -21,6 +21,7 @@ function WisoTutorExamIndexPage() {
   return (
     <StudyToolsSubjectIndex
       kind="tutor-exam"
+      locale="de"
       subjectPath="/wiso/tutor-exam/$subject"
       subjects={WISO_FLASHCARD_SUBJECTS.map((s) => ({
         ...s,
