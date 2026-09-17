@@ -7,19 +7,21 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { loadAllMathChapterTasks } from "../src/data/math-chapters.ts";
 import { scrubKatexDeep } from "../src/lib/scrub-katex.ts";
 import {
-  buildMathQ22Chests,
-  buildMathQ23Radical,
+  buildMathQ22Sets,
+  buildMathQ23Grind,
+  buildMathQ24Finance,
   buildMathQ25Pipes,
-  buildMathQ26Traffic,
-  buildMathQ28Throw,
-  buildMathQ30Cubic,
-  buildMathQ31Growth,
-  buildMathQ32Marginal,
-  buildMathQ33Urns,
-  buildMathQ34QC,
+  buildMathQ26BreakEven,
+  buildMathQ27Ineq,
+  buildMathQ28Piecewise,
+  buildMathQ29Limits,
+  buildMathQ30Param,
+  buildMathQ31LogDeriv,
+  buildMathQ32Engagement,
+  buildMathQ33Coins,
+  buildMathQ34Binomial,
 } from "./mock5-math-customs.mts";
 
 const ROOT = path.resolve("src/data");
@@ -227,27 +229,6 @@ So the statement is False.`,
   };
 }
 
-function mapMath(chapter: number, t: Record<string, unknown>) {
-  return {
-    case_id: t.case_id,
-    id: t.id ?? t.case_id,
-    title: t.title ?? t.case_id,
-    chapter,
-    subsection: t.subsection ?? String(chapter),
-    context: String(t.context ?? "")
-      .replace(/\n?\s*[●•]\s*\([a-e]\)\s*Find[\s\S]*$/i, "")
-      .replace(/\n?\s*\([a-e]\)\s*Find[\s\S]*$/i, "")
-      .trim(),
-    statements: t.statements ?? [],
-    answer_key: t.answer_key ?? [],
-    tactical_explanations: t.tactical_explanations ?? [],
-    difficulty_level: t.difficulty_level ?? "",
-    solution_overview: t.solution_overview ?? "",
-    figure: t.figure || undefined,
-    tables_markdown: t.tables_markdown || undefined,
-  };
-}
-
 function buildEnglish() {
   const texts = JSON.parse(fs.readFileSync(path.join(ROOT, "english/texts.json"), "utf8"));
   const grammar = JSON.parse(fs.readFileSync(path.join(ROOT, "english/grammar.json"), "utf8"));
@@ -317,88 +298,6 @@ function buildEnglish() {
   };
 }
 
-/** Hard absolute / radical inequalities — custom (not mock3/4 ineq banks). */
-function buildMathQ27Ineq() {
-  const context = `Decide whether each inequality claim is true or false. Check every boundary and every compound piece carefully.`;
-
-  const statements = [
-    "The solution set of $|x-3|+|x+1|\\le 8$ is exactly $[-3,5]$.",
-    "The solution set of $\\sqrt{x+2}\\ge x$ is exactly $[0,2]$.",
-    "Every $x\\in(0,1)$ satisfies $\\dfrac{x-4}{x+1}<0$.",
-    "The inequality $x^{2}-5x+6>0$ holds on $(-\\infty,2)\\cup(3,+\\infty)$.",
-    "The system $|x|\\le 2$ and $x>0$ has exactly two integer solutions.",
-  ];
-
-  // A: critical -1,3. On (-∞,-1): -(x-3)-(x+1)= -x+3-x-1=2-2x ≤8 always for x≤-1? Wait
-  // |x-3|+|x+1|: for x≤-1: (3-x)+(-1-x)=2-2x; =8 ⇒ 2-2x=8 ⇒ -2x=6 ⇒ x=-3. On [-1,3]: (3-x)+(x+1)=4 ≤8 always. On x≥3: (x-3)+(x+1)=2x-2=8 ⇒ x=5. So [-3,5] True.
-  // B: domain x≥-2; square on x≥0: x+2≥x^2 ⇒ x^2-x-2≤0 ⇒ (x-2)(x+1)≤0 ⇒ x∈[-1,2], intersect x≥0 → [0,2]. Also need check (-2,0): √(x+2)≥x always since RHS negative. So solution is [-2,2], NOT [0,2]. False.
-  // C: (x-4)/(x+1)<0 → roots -1,4; negative on (-1,4). (0,1) subset → True
-  // D: (x-2)(x-3)>0 → (-∞,2)∪(3,∞) True
-  // E: |x|≤2 and x>0 → (0,2]; integers 1,2 — exactly two True
-
-  const answer_key = [true, false, true, true, true];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-Critical points $x=-1$ and $x=3$. Piecewise:
-
-- $x\\le -1$: $|x-3|+|x+1|=2-2x\\le 8\\Rightarrow x\\ge -3$, so $[-3,-1]$;
-- $-1\\le x\\le 3$: sum equals $4\\le 8$ throughout;
-- $x\\ge 3$: $2x-2\\le 8\\Rightarrow x\\le 5$.
-
-Union: $[-3,5]$.
-
-So the statement is True.`,
-
-    `**B.** → False
-
-Domain $x\\ge -2$. For $x\\in[-2,0)$ the right-hand side is negative while the square root is nonnegative, so the inequality holds on all of $[-2,0)$. On $x\\ge 0$ squaring yields $x\\in[0,2]$. Full solution $[-2,2]$, not $[0,2]$.
-
-So the statement is False.`,
-
-    `**C.** → True
-
-$$
-\\dfrac{x-4}{x+1}<0
-$$
-
-on the open interval $(-1,4)$. Every point of $(0,1)$ lies in that set.
-
-So the statement is True.`,
-
-    `**D.** → True
-
-$$
-x^{2}-5x+6=(x-2)(x-3)>0
-$$
-
-precisely on $(-\\infty,2)\\cup(3,+\\infty)$.
-
-So the statement is True.`,
-
-    `**E.** → True
-
-$|x|\\le 2$ and $x>0$ give $(0,2]$. The integers there are $1$ and $2$ — exactly two.
-
-So the statement is True.`,
-  ];
-
-  return {
-    case_id: "MATH 6.MOCK.ABS5",
-    id: "MATH 6.MOCK.ABS5",
-    title: "Absolute, radical, and sign inequalities",
-    chapter: 6,
-    subsection: "6.3",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `Absolute sum → $[-3,5]$. Radical inequality → $[-2,2]$ (claim too small). Rational sign on $(-1,4)$. Quadratic sign as factored. $|x|\\le 2$, $x>0$ → integers $\\{1,2\\}$.`,
-  };
-}
-
 // ---- assemble ----
 const economics = [
   mapEcon(byId(2, "CASE 2.6.23")),
@@ -415,44 +314,20 @@ const economics = [
 
 const english = buildEnglish();
 
-const allMath = await loadAllMathChapterTasks();
-
-function takeMath(caseId: string, chapter: number) {
-  const chapterBank = allMath.find((c) => c.num === chapter);
-  if (!chapterBank) throw new Error(`Missing math chapter ${chapter}`);
-  const t = chapterBank.tasks.find((x) => x.case_id === caseId);
-  if (!t) throw new Error(`Missing math ${caseId} in chapter ${chapter}`);
-  const mapped = mapMath(chapter, t as unknown as Record<string, unknown>);
-  const usd = (s: string) => s.replace(/\\\$/g, "USD ");
-
-  if (caseId === "MATH 11.133") {
-    mapped.context = usd(String(mapped.context || ""));
-    mapped.statements = (mapped.statements as string[]).map(usd);
-    mapped.tactical_explanations = (mapped.tactical_explanations as string[]).map(usd);
-    if (mapped.solution_overview) mapped.solution_overview = usd(String(mapped.solution_overview));
-  }
-
-  if (caseId === "MATH 8.102") {
-    mapped.context = `A power model $y=A x^{p}$ is calibrated from data. Decide whether each claim about exponents, scaling, and fitted values is true or false.`;
-  }
-
-  return mapped;
-}
-
 const math = [
-  buildMathQ22Chests(),
-  buildMathQ23Radical(),
-  takeMath("MATH 11.133", 3),
+  buildMathQ22Sets(),
+  buildMathQ23Grind(),
+  buildMathQ24Finance(),
   buildMathQ25Pipes(),
-  buildMathQ26Traffic(),
+  buildMathQ26BreakEven(),
   buildMathQ27Ineq(),
-  buildMathQ28Throw(),
-  takeMath("MATH 8.102", 8),
-  buildMathQ30Cubic(),
-  buildMathQ31Growth(),
-  buildMathQ32Marginal(),
-  buildMathQ33Urns(),
-  buildMathQ34QC(),
+  buildMathQ28Piecewise(),
+  buildMathQ29Limits(),
+  buildMathQ30Param(),
+  buildMathQ31LogDeriv(),
+  buildMathQ32Engagement(),
+  buildMathQ33Coins(),
+  buildMathQ34Binomial(),
 ];
 
 function audit(label: string, tasks: Array<Record<string, unknown>>) {
