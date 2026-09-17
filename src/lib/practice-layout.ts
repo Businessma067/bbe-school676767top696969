@@ -18,3 +18,13 @@ export const PRACTICE_BODY_STACK =
 
 /** Min tap target for True/False and similar practice controls (~44px). */
 export const PRACTICE_TAP_TARGET = "min-h-11 min-w-11";
+
+/**
+ * Right-rail explanation / calculator slot.
+ * On phones the panel grows with content so the page can scroll through the
+ * full write-up. From lg up it is a sticky fixed-height rail with inner scroll.
+ * Do not put max-height + overflow-hidden on small screens — percentage
+ * heights will not resolve and the explanation gets clipped with no scroll.
+ */
+export const PRACTICE_EXPLAIN_ASIDE =
+  "mt-4 w-full min-h-0 lg:sticky lg:top-20 lg:mt-0 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 lg:overflow-hidden xl:w-[32rem] 2xl:w-[36rem]";
