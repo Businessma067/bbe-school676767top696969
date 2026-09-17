@@ -128,7 +128,7 @@ Wenn $A$ endlich ist, schreiben Sie $n(A)$ (oder $|A|$ ) für die Anzahl verschi
 
 ---
 
-## 1.2 Menge Operationen, Ergänzungen & Zählen
+## 1.2 Mengenoperationen, Komplemente & Abzählen
 
 ### Vereinigung, Schnittmenge und Differenz
 
@@ -533,7 +533,7 @@ Einseitige Implikationen verengen die Kandidaten. Nur eine Äquivalenz oder eine
 
 Abschnitt 1.3 baute einzelne Pfeile. Dieser Abschnitt baut längere Argumente auf: wie Mengen bewiesen werden, wie "für jeden" und "gibt es" interagieren und wann eine Schlussfolgerung wirklich aus gegebenen Prämissen folgt.
 
-### Satzs as implications
+### Sätze als Implikationen
 
 Ein mathematischer Menge kann geschrieben werden
 
