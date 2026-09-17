@@ -33,25 +33,21 @@ $$
 A=\\{1,2,3,4\\},\\qquad B=\\{3,4,5\\},\\qquad C=\\{1,5,6\\}.
 $$
 
-Work only with set operations (union, intersection, complement, difference). Decide whether each statement is true or false.`;
-
-  // A∩B = {3,4}
-  // A∪C = {1,2,3,4,5,6}=U
-  // A\\B = {1,2}
-  // B∩C = {5}
-  // (A∪B)^c = {6} since A∪B={1,2,3,4,5}
-  // AΔB = (A\\B)∪(B\\A) = {1,2}∪{5} = {1,2,5}
-  // |(A∩B)∪(B∩C)| = |{3,4}∪{5}| = 3
-  // C ⊆ A∪B ? C={1,5,6}, A∪B={1,2,3,4,5}, 6∉ → False
-  // (A∩C)^c ∩ B = ... A∩C={1}, complement in U = {2,3,4,5,6}, ∩B = {3,4,5}
+Decide whether each statement is true or false.`;
 
   const statements = [
-    "$A\\cup C=U$ and $(A\\cup B)^{c}=\\{6\\}$.",
-    "$A\\triangle B=\\{1,2,5\\}$ (symmetric difference).",
-    "$|(A\\cap B)\\cup(B\\cap C)|=4$.",
-    "$C\\subseteq A\\cup B$.",
-    "$(A\\cap C)^{c}\\cap B=\\{3,4,5\\}$.",
+    "The union $A\\cup C$ equals the whole universe $U$, and the complement of $A\\cup B$ has exactly one element.",
+    "The symmetric difference $A\\triangle B$ has exactly three elements.",
+    "The set $(A\\cap B)\\cup(B\\cap C)$ has exactly four elements.",
+    "Every element of $C$ also belongs to $A\\cup B$.",
+    "The set $(A\\cap C)^{c}\\cap B$ equals the set $B$.",
   ];
+
+  // A True (both parts)
+  // B True |{1,2,5}|=3
+  // C False |{3,4,5}|=3≠4
+  // D False (6 missing)
+  // E True
 
   const answer_key = [true, true, false, false, true];
 
@@ -66,7 +62,7 @@ $$
 A\\cup B=\\{1,2,3,4,5\\},\\qquad (A\\cup B)^{c}=U\\setminus(A\\cup B)=\\{6\\}
 $$
 
-Both parts hold.
+Both parts hold: the union is $U$, and the complement has exactly one element.
 
 So the statement is True.`,
 
@@ -79,6 +75,8 @@ $$
 $$
 A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)=\\{1,2,5\\}
 $$
+
+That set has three elements.
 
 So the statement is True.`,
 
@@ -113,7 +111,7 @@ A\\cap C=\\{1\\},\\qquad (A\\cap C)^{c}=\\{2,3,4,5,6\\}
 $$
 
 $$
-(A\\cap C)^{c}\\cap B=\\{2,3,4,5,6\\}\\cap\\{3,4,5\\}=\\{3,4,5\\}
+(A\\cap C)^{c}\\cap B=\\{2,3,4,5,6\\}\\cap\\{3,4,5\\}=\\{3,4,5\\}=B
 $$
 
 So the statement is True.`,
@@ -130,7 +128,7 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Compute $A\\cup C=U$, $(A\\cup B)^{c}=\\{6\\}$, $A\\triangle B=\\{1,2,5\\}$, $|(A\\cap B)\\cup(B\\cap C)|=3$, $C\\nsubseteq A\\cup B$, $(A\\cap C)^{c}\\cap B=\\{3,4,5\\}$.`,
+    solution_overview: `Compute $A\\cup C=U$, $(A\\cup B)^{c}=\\{6\\}$, $A\\triangle B=\\{1,2,5\\}$, $|(A\\cap B)\\cup(B\\cap C)|=3$, $C\\nsubseteq A\\cup B$, $(A\\cap C)^{c}\\cap B=B$.`,
   };
 }
 
@@ -139,20 +137,14 @@ So the statement is True.`,
  * Pure expansion / clearing / checking — logic of “which claim survives calculation”.
  */
 export function buildMathQ23Grind() {
-  const context = `Five independent algebraic claims are listed. For each claim, expand or clear denominators step by step — do not rely on memorised shortcut identities. Decide whether each claim is true or false.`;
-
-  // A: (2x-1)(x+3)=2x^2+6x-x-3=2x^2+5x-3. Claim says 2x^2+5x-3. True
-  // B: 1/(x-1) - 1/(x+1) = 2/(x^2-1). True
-  // C: √(x+3)=x-1 with x≥1: square → x+3=x^2-2x+1 → x^2-3x-2=0 → (3±√17)/2; only (3+√17)/2 works. Claim "exactly two real solutions" False
-  // D: |2x-5|=3 → 2x-5=3 or 2x-5=-3 → x=4 or x=1. Claim solution set {1,4} True
-  // E: expand (x+2)^3 = x^3+6x^2+12x+8. Claim says x^3+6x^2+12x+6 False (constant wrong)
+  const context = `Five independent algebraic claims are listed. Decide whether each claim is true or false.`;
 
   const statements = [
-    "Expanding without collecting like terms early still yields $(2x-1)(x+3)=2x^{2}+5x-3$.",
-    "For every $x$ with $|x|\\neq 1$, one has $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}=\\dfrac{2}{x^{2}-1}$.",
+    "In the expanded polynomial $(2x-1)(x+3)$, the coefficient of $x$ equals $5$.",
+    "At $x=2$, the value of $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}$ equals $\\dfrac{2}{3}$.",
     "The equation $\\sqrt{x+3}=x-1$ has exactly two distinct real solutions.",
-    "The solution set of $|2x-5|=3$ is exactly $\\{1,4\\}$.",
-    "Expanding term by term gives $(x+2)^{3}=x^{3}+6x^{2}+12x+6$.",
+    "The equation $|2x-5|=3$ has exactly two distinct real solutions.",
+    "In the expansion of $(x+2)^{3}$, the constant term equals $6$.",
   ];
 
   const answer_key = [true, true, false, true, false];
@@ -160,68 +152,50 @@ export function buildMathQ23Grind() {
   const tactical_explanations = [
     `**A.** → True
 
-Distribute carefully:
-
 $$
-(2x-1)(x+3)=2x\\cdot x+2x\\cdot 3+(-1)\\cdot x+(-1)\\cdot 3=2x^{2}+6x-x-3
+(2x-1)(x+3)=2x^{2}+6x-x-3=2x^{2}+5x-3
 $$
 
-$$
-2x^{2}+6x-x-3=2x^{2}+5x-3
-$$
+The coefficient of $x$ is $5$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Common denominator $(x-1)(x+1)=x^{2}-1$:
+At $x=2$:
 
 $$
-\\dfrac{1}{x-1}-\\dfrac{1}{x+1}=\\dfrac{(x+1)-(x-1)}{x^{2}-1}=\\dfrac{x+1-x+1}{x^{2}-1}=\\dfrac{2}{x^{2}-1}
+\\dfrac{1}{2-1}-\\dfrac{1}{2+1}=1-\\dfrac{1}{3}=\\dfrac{2}{3}
 $$
 
 So the statement is True.`,
 
     `**C.** → False
 
-Domain of the radical: $x\\ge -3$. Nonnegativity of the right-hand side forces $x\\ge 1$. Squaring on that region:
+Domain forces $x\\ge 1$. Squaring:
 
 $$
-x+3=(x-1)^{2}=x^{2}-2x+1\\Rightarrow x^{2}-3x-2=0
+x+3=(x-1)^{2}\\Rightarrow x^{2}-3x-2=0\\Rightarrow x=\\dfrac{3\\pm\\sqrt{17}}{2}
 $$
 
-$$
-x=\\dfrac{3\\pm\\sqrt{9+8}}{2}=\\dfrac{3\\pm\\sqrt{17}}{2}
-$$
-
-Only $\\dfrac{3+\\sqrt{17}}{2}\\approx 3.56$ lies in $x\\ge 1$. The other root is negative, so it is extraneous for the original equation. Exactly one real solution.
+Only $\\dfrac{3+\\sqrt{17}}{2}$ is admissible. Exactly one real solution.
 
 So the statement is False.`,
 
     `**D.** → True
 
 $$
-|2x-5|=3\\Rightarrow 2x-5=3\\ \\text{or}\\ 2x-5=-3
+|2x-5|=3\\Rightarrow x=4\\ \\text{or}\\ x=1
 $$
 
-$$
-x=4\\quad\\text{or}\\quad x=1
-$$
-
-Solution set $\\{1,4\\}$.
+Exactly two distinct real solutions.
 
 So the statement is True.`,
 
     `**E.** → False
 
 $$
-(x+2)^{3}=(x+2)(x+2)(x+2)
-$$
-
-First $(x+2)^{2}=x^{2}+4x+4$, then
-
-$$
-(x^{2}+4x+4)(x+2)=x^{3}+2x^{2}+4x^{2}+8x+4x+8=x^{3}+6x^{2}+12x+8
+(x+2)^{3}=x^{3}+6x^{2}+12x+8
 $$
 
 The constant term is $8$, not $6$.
@@ -240,28 +214,17 @@ So the statement is False.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `A/B expand or clear correctly. Radical equation has one admissible root. Absolute equation $\\{1,4\\}$. Cube expansion ends in $+8$, not $+6$.`,
+    solution_overview: `Coeff of $x$ is $5$. At $x=2$ the difference is $2/3$. Radical equation has one root. Absolute equation has two roots. Cube constant is $8$.`,
   };
 }
 
 /** Q24 — financial PV with consistent number formatting everywhere. */
 export function buildMathQ24Finance() {
-  const context = `All money amounts below are written the same way in claims and in workings: as plain integers in math mode (for example $10000$), and the currency word EUR sits outside math.
-
-A scholarship fund will receive three gifts: $10000$ after $1$ year, $12000$ after $3$ years, and $14000$ after $4$ years. The annual effective discount rate is $5\\%$.
+  const context = `A scholarship fund will receive three gifts: $10000$ after $1$ year, $12000$ after $3$ years, and $14000$ after $4$ years. The annual effective discount rate is $5\\%$.
 
 A second programme is a level perpetuity-due of $10000$ paid at the start of every year (including today), also at $5\\%$.
 
 Decide whether each statement is true or false.`;
-
-  // PV gifts: 10000/1.05 + 12000/1.05^3 + 14000/1.05^4
-  // = 9523.81 + 10366.05 + 11517.83 = 31407.69
-  // Claim A: PV of the three gifts exceeds 32000 → False
-  // Claim B: PV of first gift alone is 10000/1.05 = 9523.81... strictly less than 9600 → True
-  // Perpetuity-due: 10000 * (1.05)/0.05 = 10000*21 = 210000
-  // Claim C: perpetuity-due PV equals 210000 → True
-  // Claim D: if gifts were all paid one year earlier (0,2,3), PV would fall → False (should rise)
-  // Claim E: 12000/1.05^3 > 14000/1.05^4 ? 10366 vs 11518 → False
 
   const statements = [
     "The present value of the three gifts exceeds $32000$.",
@@ -449,25 +412,15 @@ and requires the plan to sit exactly at break-even (total contribution equals fi
 
 Decide whether each statement is true or false.`;
 
-  // 4x+5y+6z = 4800, x=2z, y=3z
-  // 4(2z)+5(3z)+6z = 8z+15z+6z = 29z = 4800 → z=4800/29 ≈ 165.517
-  // x=2z≈331.03, y=3z≈496.55
-  // Total units x+y+z=6z=28800/29≈993.1
-
   const statements = [
-    "At break-even under the stated mix, $29z=4800$.",
+    "At break-even under the stated mix, the volume of product $Z$ is strictly greater than $160$.",
     "The break-even volume of $Z$ is an integer number of units.",
     "Under the mix, break-even total unit volume $x+y+z$ is strictly less than $1000$.",
     "If fixed costs rose to EUR $5800$ with the same mix ratios, the required $z$ would exceed $200$.",
     "Dropping product $Y$ (set $y=0$) while keeping $x=2z$ and the original EUR $4800$ fixed costs would force a strictly larger break-even $z$ than in the three-product plan.",
   ];
 
-  // A True
-  // B: 4800/29 not integer False
-  // C: 6*4800/29 = 28800/29 ≈ 993.1 < 1000 True
-  // D: 29z=5800 → z=5800/29≈200.0 exactly 200, not exceed → False (strictly greater fails)
-  // E: 4(2z)+6z=14z=4800 → z=4800/14≈342.9 > 165.5 True
-
+  // z=4800/29≈165.52>160 True; not integer False; total≈993<1000 True; at 5800 z=200 not > False; without Y larger True
   const answer_key = [true, false, true, false, true];
 
   const tactical_explanations = [
@@ -482,7 +435,7 @@ $$
 Substitute $x=2z$ and $y=3z$:
 
 $$
-4(2z)+5(3z)+6z=8z+15z+6z=29z=4800
+8z+15z+6z=29z=4800\\Rightarrow z=\\dfrac{4800}{29}\\approx 165.52>160
 $$
 
 So the statement is True.`,
@@ -500,7 +453,7 @@ So the statement is False.`,
     `**C.** → True
 
 $$
-x+y+z=2z+3z+z=6z=\\dfrac{28800}{29}\\approx 993.10<1000
+x+y+z=6z=\\dfrac{28800}{29}\\approx 993.10<1000
 $$
 
 So the statement is True.`,
@@ -541,13 +494,13 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Mix $x=2z$, $y=3z$ ⇒ $29z=4800$. $z$ non-integer; total units $6z\\approx 993$. At EUR $5800$, $z=200$ exactly. Dropping $Y$ raises $z$ to $4800/14$.`,
+    solution_overview: `Mix $x=2z$, $y=3z$ ⇒ $29z=4800$, $z\\approx 165.5$. Total units $\\approx 993$. At EUR $5800$, $z=200$ exactly. Dropping $Y$ raises $z$.`,
   };
 }
 
 /** Q27 — much harder inequalities with traps. */
 export function buildMathQ27Ineq() {
-  const context = `Decide whether each inequality claim is true or false. Watch domains, absolute-value corners, and extraneous roots after squaring.`;
+  const context = `Decide whether each inequality claim is true or false.`;
 
   // A: |x-1|+|x-4| ≥ 3 for all real x? Distance interpretation: |x-1|+|x-4| ≥ |4-1|=3 always. Equality on [1,4]. Claim "≥ 3 for all x with equality only at x=2.5" — equality on whole [1,4], not only midpoint. False if claim says only at 2.5.
   // Statement A: solution of |x-1|+|x-4|≤3 is exactly [1,4]. True (equals 3 on [1,4], >3 outside)
@@ -651,18 +604,12 @@ $$
 
 Decide whether each statement is true or false.`;
 
-  // continuous at 1? left: 2(1)+1=3; right: 1-2+4=3. Yes continuous.
-  // f'(from left)=2; from right at 1+: 2x-2 → 0. Not differentiable at 1.
-  // On [1,∞) min of x^2-2x+4 at x=1 (vertex of parabola at x=1), value 3. For x<1, 2x+1 → as x→-∞ goes to -∞ so unbounded below.
-  // f(0)=1; f(2)=4-4+4=4
-  // f(x)≥3 for all x? No, f(0)=1.
-
   const statements = [
     "$f$ is continuous at $x=1$.",
     "$f$ is differentiable at $x=1$.",
     "For every $x\\ge 1$ one has $f(x)\\ge 3$, with equality at $x=1$.",
     "The global minimum value of $f$ on $\\mathbb{R}$ is $3$.",
-    "If $x<1$ and $f(x)=0$, then $x=-\\tfrac{1}{2}$.",
+    "On the region $x<1$, the equation $f(x)=0$ has a negative root.",
   ];
 
   const answer_key = [true, false, true, false, true];
@@ -694,7 +641,7 @@ So the statement is False.`,
 
     `**E.** → True
 
-If $x<1$ and $f(x)=0$, then $2x+1=0$, so $x=-\\tfrac{1}{2}$, which indeed satisfies $x<1$.
+If $x<1$ and $f(x)=0$, then $2x+1=0$, so $x=-\\tfrac{1}{2}<0$.
 
 So the statement is True.`,
   ];
@@ -722,21 +669,15 @@ $$
 f(x)=A x^{p}\\qquad(x>0).
 $$
 
-Decide whether each statement is true or false. Work symbolically — do not plug in specific numbers for $A$ or $p$.`;
+Decide whether each statement is true or false.`;
 
   const statements = [
     "If $p>0$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)=0$.",
     "If $p<0$, then $\\displaystyle\\lim_{x\\to +\\infty}f(x)=0$.",
-    "If $p=0$, then $f$ is the constant function $A$ on $(0,+\\infty)$.",
-    "$\\displaystyle\\lim_{x\\to +\\infty}\\dfrac{f(2x)}{f(x)}=2^{p}$ for every real $p$.",
+    "If $p=0$, then $f$ is constant on $(0,+\\infty)$.",
+    "For every real $p$, the ratio $f(2x)/f(x)$ does not depend on $x$.",
     "If $p=-1$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)$ is a finite positive number.",
   ];
-
-  // A True (A>0, x^p→0)
-  // B True
-  // C True (x^0=1)
-  // D: f(2x)/f(x)=A(2x)^p/(A x^p)=2^p True for all p
-  // E: p=-1 → A/x → +∞ as x→0+, not finite False
 
   const answer_key = [true, true, true, true, false];
 
@@ -755,7 +696,7 @@ So the statement is True.`,
 
     `**C.** → True
 
-If $p=0$, then $x^{0}=1$ for all $x>0$, so $f(x)=A$.
+If $p=0$, then $x^{0}=1$ for all $x>0$, so $f(x)=A$, a constant.
 
 So the statement is True.`,
 
@@ -765,7 +706,7 @@ $$
 \\dfrac{f(2x)}{f(x)}=\\dfrac{A(2x)^{p}}{A x^{p}}=2^{p}
 $$
 
-for every real $p$ (and $x>0$).
+which depends only on $p$, not on $x$.
 
 So the statement is True.`,
 
@@ -787,7 +728,7 @@ So the statement is False.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Sign of $p$ controls $0^{+}$ and $+\\infty$ limits. $p=0$ ⇒ constant $A$. Ratio $f(2x)/f(x)=2^{p}$. For $p=-1$, $A/x$ blows up at $0^{+}$.`,
+    solution_overview: `Sign of $p$ controls $0^{+}$ and $+\\infty$ limits. $p=0$ ⇒ constant $A$. Ratio $f(2x)/f(x)=2^{p}$ independent of $x$. For $p=-1$, $A/x$ blows up at $0^{+}$.`,
   };
 }
 
@@ -799,10 +740,7 @@ $$
 x^{3}-3x^{2}+(k+2)x-k=0.
 $$
 
-It is known that this factors as $(x-1)(x^{2}-2x+k)=0$. Decide whether each statement is true or false.`;
-
-  // Roots: x=1 always; and 1±√(1-k) when k≤1
-  // k=1 → triple root; k=0 → {0,1,2}; k=2 → one real root; Vieta sum 3
+Decide whether each statement is true or false.`;
 
   const statements = [
     "$x=1$ is a real root for every real $k$.",
@@ -817,25 +755,25 @@ It is known that this factors as $(x-1)(x^{2}-2x+k)=0$. Decide whether each stat
   const tactical_explanations = [
     `**A.** → True
 
-The factorisation $(x-1)(x^{2}-2x+k)=0$ shows $x=1$ is always a root.
+Factor by grouping / testing $x=1$:
+
+$$
+1-3+(k+2)-k=0
+$$
+
+so $x=1$ is always a root. Dividing gives $(x-1)(x^{2}-2x+k)=0$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-For $k=1$,
-
-$$
-x^{2}-2x+1=(x-1)^{2}
-$$
-
-so the cubic is $(x-1)^{3}=0$: a single distinct real root $x=1$ of multiplicity three — not two distinct roots.
+For $k=1$, $x^{2}-2x+1=(x-1)^{2}$, so the cubic is $(x-1)^{3}=0$: one distinct real root of multiplicity three.
 
 So the statement is False.`,
 
     `**C.** → True
 
-For $k=0$ the quadratic is $x^{2}-2x=x(x-2)$. Roots $0$, $1$, and $2$ — three distinct reals.
+For $k=0$ the quadratic factor is $x(x-2)$. Roots $0$, $1$, and $2$ — three distinct reals.
 
 So the statement is True.`,
 
@@ -847,7 +785,7 @@ So the statement is True.`,
 
     `**E.** → True
 
-When $k\\le 1$ there are three real roots counting multiplicity (the quadratic contributes two real roots, possibly repeated). By Vieta the sum of roots of $x^{3}-3x^{2}+\\cdots$ is $3$.
+When $k\\le 1$ there are three real roots counting multiplicity. By Vieta the sum of roots of $x^{3}-3x^{2}+\\cdots$ is $3$.
 
 So the statement is True.`,
   ];
@@ -863,7 +801,7 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Always factor $(x-1)(x^{2}-2x+k)$. Root $x=1$ always. $k=1$ → triple root. $k=0$ → $\\{0,1,2\\}$. $k=2$ → one real root. Vieta sum $3$ when three real roots.`,
+    solution_overview: `Factor $(x-1)(x^{2}-2x+k)$. Root $x=1$ always. $k=1$ → triple root. $k=0$ → $\\{0,1,2\\}$. $k=2$ → one real root. Vieta sum $3$.`,
   };
 }
 
@@ -875,26 +813,14 @@ $$
 f(x)=\\ln(x^{2}+1)\\cdot e^{-x}\\qquad(x\\in\\mathbb{R}).
 $$
 
-Decide whether each statement is true or false. Do not evaluate $f$ or $f'$ at a specific numeric point — work with the symbolic derivative.`;
-
-  // f' = (2x/(x^2+1)) e^{-x} + ln(x^2+1)(-e^{-x})
-  // = e^{-x} [ 2x/(x^2+1) - ln(x^2+1) ]
-  // Critical points when 2x/(x^2+1) = ln(x^2+1)
-  // f'(0)= e^0 [0 - ln1]=0. So x=0 is critical.
-  // For x>0, ln(x^2+1)>0 and 2x/(x^2+1)>0; for x<0, 2x/(x^2+1)<0 while ln>0 for x≠0 so f'<0 on (-∞,0) except... at 0 f'=0.
-  // Actually for x<0: 2x/(x^2+1)<0, ln(x^2+1)≥0, so bracket negative, e^{-x}>0 ⇒ f'<0 on (-∞,0).
-  // A: f'(x)=e^{-x}(2x/(x^2+1)-ln(x^2+1)) True
-  // B: f'(0)=0 True
-  // C: f'(x)<0 for every x<0 True
-  // D: f has no critical points False (has x=0)
-  // E: the factor e^{-x} never changes the sign of f' True (always >0)
+Decide whether each statement is true or false.`;
 
   const statements = [
-    "$f'(x)=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right)$ for all real $x$.",
+    "Every term in an expression for $f'$ contains the factor $e^{-x}$.",
     "$x=0$ is a critical point of $f$.",
     "$f'(x)<0$ for every $x<0$.",
     "$f$ has no critical points on $\\mathbb{R}$.",
-    "Because $e^{-x}>0$ always, the sign of $f'$ coincides with the sign of $\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)$.",
+    "The factor $e^{-x}$ never changes the sign of $f'$.",
   ];
 
   const answer_key = [true, true, true, false, true];
@@ -902,33 +828,29 @@ Decide whether each statement is true or false. Do not evaluate $f$ or $f'$ at a
   const tactical_explanations = [
     `**A.** → True
 
-Product rule and chain rule:
+Product rule:
 
 $$
-f'(x)=\\dfrac{2x}{x^{2}+1}\\,e^{-x}+\\ln(x^{2}+1)\\cdot\\bigl(-e^{-x}\\bigr)
+f'(x)=\\dfrac{2x}{x^{2}+1}\\,e^{-x}+\\ln(x^{2}+1)\\cdot(-e^{-x})
 $$
 
-$$
-=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right)
-$$
+Both terms contain $e^{-x}$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-At $x=0$:
-
 $$
-\\dfrac{2\\cdot 0}{0+1}-\\ln 1=0
+f'(x)=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right)
 $$
 
-so $f'(0)=e^{0}\\cdot 0=0$. Hence $x=0$ is critical.
+At $x=0$ the bracket is $0-\\ln 1=0$, so $f'(0)=0$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-For $x<0$ one has $\\dfrac{2x}{x^{2}+1}<0$ while $\\ln(x^{2}+1)>0$, so the bracket is strictly negative. Multiplying by $e^{-x}>0$ keeps $f'(x)<0$.
+For $x<0$ one has $\\dfrac{2x}{x^{2}+1}<0$ while $\\ln(x^{2}+1)>0$, so the bracket is negative. Multiplying by $e^{-x}>0$ keeps $f'(x)<0$.
 
 So the statement is True.`,
 
@@ -940,7 +862,7 @@ So the statement is False.`,
 
     `**E.** → True
 
-The exponential factor never vanishes and never changes sign, so it does not alter the sign of the bracket.
+The exponential factor never vanishes and never changes sign, so it does not alter the sign of $f'$.
 
 So the statement is True.`,
   ];
@@ -973,24 +895,12 @@ $$
 
 Decide whether each statement is true or false.`;
 
-  // Use product of three: u=t^2, v=e^{-t}, w=ln(2t+1)
-  // Z' = u'vw + uv'w + uvw'
-  // u'=2t, v'=-e^{-t}, w'=2/(2t+1)
-  // Z' = 2t e^{-t} ln(2t+1) + t^2 (-e^{-t}) ln(2t+1) + t^2 e^{-t} * 2/(2t+1)
-  // = e^{-t} [ 2t ln(2t+1) - t^2 ln(2t+1) + 2t^2/(2t+1) ]
-
-  // At t=1: e^{-1} [ 2ln3 - 1·ln3 + 2/(3) ] = e^{-1}(ln3 + 2/3)
-  // Claim A: formula for Z' True
-  // Claim B: Z'(1)=e^{-1}(ln3 + 2/3) True
-  // Claim C: Z'(1)=e^{-1}(2ln3 + 2/3) False (would forget the -t^2 term partially)
-  // Claim D: the factor e^{-t} may be ignored when comparing the sign of Z' to the bracket True
-  // Claim E: Z(t)>0 for all t>0 True (all factors positive for t>0)
-
+  // At t=1: Z'=e^{-1}(ln3+2/3) with ln3+2/3≈1.766 ∈ (1,2)
   const statements = [
-    "$Z'(t)=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)$ for all $t>0$.",
-    "$Z'(1)=e^{-1}\\left(\\ln 3+\\dfrac{2}{3}\\right)$.",
-    "$Z'(1)=e^{-1}\\left(2\\ln 3+\\dfrac{2}{3}\\right)$.",
-    "For $t>0$, the sign of $Z'(t)$ coincides with the sign of $2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$.",
+    "At $t=1$, one has $Z'(1)>0$.",
+    "$Z'(1)$ is strictly greater than $e^{-1}$.",
+    "$Z'(1)$ is strictly greater than $2e^{-1}$.",
+    "For $t>0$, the factor $e^{-t}$ does not change the sign of $Z'$.",
     "$Z(t)>0$ for every $t>0$.",
   ];
 
@@ -999,57 +909,43 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Write $Z=u\\,v\\,w$ with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$. Then
+Three-factor product with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$:
 
 $$
-u'=2t,\\qquad v'=-e^{-t},\\qquad w'=\\dfrac{2}{2t+1}
+Z'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
 $$
 
-$$
-Z'=u'vw+uv'w+uvw'
-$$
-
-$$
-=2t\\,e^{-t}\\ln(2t+1)+t^{2}(-e^{-t})\\ln(2t+1)+t^{2}e^{-t}\\cdot\\dfrac{2}{2t+1}
-$$
-
-$$
-=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
-$$
+At $t=1$ the bracket is $2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}>0$, and $e^{-1}>0$, so $Z'(1)>0$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-At $t=1$ the bracket is
+From letter A, $Z'(1)=e^{-1}\\bigl(\\ln 3+\\tfrac{2}{3}\\bigr)$ and
 
 $$
-2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}
+\\ln 3+\\dfrac{2}{3}\\approx 1.099+0.667=1.766>1
 $$
 
-so
-
-$$
-Z'(1)=e^{-1}\\left(\\ln 3+\\dfrac{2}{3}\\right)
-$$
+so $Z'(1)>e^{-1}$.
 
 So the statement is True.`,
 
     `**C.** → False
 
-Letter B already gives $e^{-1}(\\ln 3+2/3)$, not $e^{-1}(2\\ln 3+2/3)$. The false form forgets the $-t^{2}\\ln(2t+1)$ contribution at $t=1$.
+The same bracket is about $1.766<2$, so $Z'(1)<2e^{-1}$.
 
 So the statement is False.`,
 
     `**D.** → True
 
-The factor $e^{-t}$ is always positive, so it does not change the sign of the bracket.
+The factor $e^{-t}$ is always positive for real $t$, so it does not change the sign of $Z'$.
 
 So the statement is True.`,
 
     `**E.** → True
 
-For $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>\\ln 1=0$, so the product $Z(t)$ is positive.
+For $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.
 
 So the statement is True.`,
   ];
@@ -1065,7 +961,7 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Three-factor product rule yields the stated $Z'$. At $t=1$, bracket $\\ln3+2/3$. Sign of $Z'$ follows the bracket; $Z>0$ on $(0,\\infty)$.`,
+    solution_overview: `At $t=1$, bracket $\\ln3+2/3\\approx 1.766\\in(1,2)$ so $Z'>0$, $Z'>e^{-1}$, but not $>2e^{-1}$. Sign of $Z'$ follows the bracket; $Z>0$ on $(0,\\infty)$.`,
   };
 }
 
@@ -1169,23 +1065,12 @@ Let $\\hat{p}=X/50$ be the evening’s sales rate (a sample proportion).
 
 Decide whether each statement is true or false.`;
 
-  // E[X]=20, Var(X)=50*0.4*0.6=12, SD(X)=√12=2√3≈3.464
-  // E[hat p]=0.4, Var(hat p)=pq/n=0.24/50=0.0048, SD(hat p)=√0.0048≈0.0693
-  // Trap: Var(X)=np=20 False
-  // Trap: SD(X)=Var(X) False
-  // Trap: Var(hat p)=Var(X) False
-  // Claim: SD(X) strictly between 3 and 4 True
-  // Claim: Var(hat p)=0.0048 True
-  // Claim: E[X]=20 True
-  // Claim: Var(X)=np(1-p)=12 True
-  // Claim: SD(hat p) = SD(X)/50 True (yes √(Var X / n^2)=SD(X)/n)
-
   const statements = [
-    "$E[X]=20$ and $\\mathrm{Var}(X)=12$.",
+    "The mean of $X$ is $20$ and the variance of $X$ is $12$.",
     "The standard deviation of $X$ is strictly between $3$ and $4$.",
-    "$\\mathrm{Var}(X)=np=20$.",
-    "$\\mathrm{Var}(\\hat{p})=\\dfrac{p(1-p)}{n}=0.0048$.",
-    "$\\mathrm{SD}(\\hat{p})=\\dfrac{\\mathrm{SD}(X)}{50}$.",
+    "The variance of $X$ equals $20$.",
+    "The variance of the sales rate $\\hat{p}$ equals $0.0048$.",
+    "The standard deviation of $\\hat{p}$ is strictly less than $0.1$.",
   ];
 
   const answer_key = [true, true, false, true, true];
@@ -1209,19 +1094,17 @@ $$
 \\mathrm{SD}(X)=\\sqrt{12}=2\\sqrt{3}
 $$
 
-Since $\\sqrt{9}=3$ and $\\sqrt{16}=4$, and $9<12<16$, one has $3<2\\sqrt{3}<4$.
+Since $9<12<16$, one has $3<2\\sqrt{3}<4$.
 
 So the statement is True.`,
 
     `**C.** → False
 
-The identity $\\mathrm{Var}(X)=np$ forgets the factor $(1-p)$. The correct variance is $np(1-p)=12$, not $20$.
+The variance is $np(1-p)=12$, not $20$. The figure $20$ is the mean, not the variance.
 
 So the statement is False.`,
 
     `**D.** → True
-
-For the sample proportion $\\hat{p}=X/n$,
 
 $$
 \\mathrm{Var}(\\hat{p})=\\dfrac{p(1-p)}{n}=\\dfrac{0.4\\cdot 0.6}{50}=\\dfrac{0.24}{50}=0.0048
@@ -1232,7 +1115,7 @@ So the statement is True.`,
     `**E.** → True
 
 $$
-\\mathrm{Var}(\\hat{p})=\\dfrac{\\mathrm{Var}(X)}{n^{2}}\\Rightarrow \\mathrm{SD}(\\hat{p})=\\dfrac{\\mathrm{SD}(X)}{n}=\\dfrac{\\mathrm{SD}(X)}{50}
+\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}\\approx 0.0693<0.1
 $$
 
 So the statement is True.`,
@@ -1249,6 +1132,7 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `$E[X]=20$, $\\mathrm{Var}(X)=12$, $\\mathrm{SD}(X)=2\\sqrt{3}\\in(3,4)$. Trap $\\mathrm{Var}=np$ fails. $\\mathrm{Var}(\\hat{p})=0.0048$, $\\mathrm{SD}(\\hat{p})=\\mathrm{SD}(X)/50$.`,
+    solution_overview: `$E[X]=20$, $\\mathrm{Var}(X)=12$, $\\mathrm{SD}(X)=2\\sqrt{3}\\in(3,4)$. Variance is not $20$. $\\mathrm{Var}(\\hat{p})=0.0048$, $\\mathrm{SD}(\\hat{p})\\approx 0.069$.`,
   };
 }
+
