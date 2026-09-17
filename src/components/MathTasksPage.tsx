@@ -45,7 +45,10 @@ import {
   type MathChapter,
   type MathTask,
 } from "@/data/math-chapters";
-import { mathChapterHasTheory } from "@/data/math-course-theory";
+import {
+  getMathCourseTheory,
+  type MathCourseTheoryChapter,
+} from "@/data/math-course-theory";
 import {
   Check,
   X,
@@ -144,6 +147,8 @@ type Props = {
   chapters?: MathChapter[];
   loadChapterTasks?: (num: number) => Promise<MathTask[]>;
   storageKey?: string;
+  /** Optional theory provider (WiSo German guides). Defaults to BBE English theory. */
+  getTheory?: (chapter: number) => MathCourseTheoryChapter | undefined;
 };
 
 export function MathTasksPage({
@@ -151,7 +156,9 @@ export function MathTasksPage({
   chapters: chaptersProp,
   loadChapterTasks = loadMathChapterTasks,
   storageKey = STORAGE_KEY,
+  getTheory = getMathCourseTheory,
 }: Props) {
+  const mathChapterHasTheory = (num: number) => getTheory(num) != null;
   const chapters = chaptersProp ?? MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
@@ -968,6 +975,7 @@ export function MathTasksPage({
               subject="math"
               chapter={theoryChapter}
               title={chapters.find((c) => c.num === theoryChapter)?.title ?? ""}
+              theoryChapter={getTheory(theoryChapter)}
               onGoToPractice={() => {
                 setTheoryChapter(null);
                 setActiveChapter(theoryChapter);
