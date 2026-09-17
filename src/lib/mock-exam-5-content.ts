@@ -106,7 +106,7 @@ export const MOCK_EXAM_5_POINTS_TOTAL =
 
 /** Bump when Mock 4 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_5_CONTENT_REV =
-  "2026-09-17c · 34q · Octopus · scrub formula hints · ff-push sync";
+  "2026-09-17d · 34q · Octopus · Q32 one-deriv + scrub np · ff-push sync";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

@@ -957,28 +957,28 @@
       "subsection": "11.1",
       "context": "An engagement score is modelled by\n\n$$\nZ(t)=t^{2}\\,e^{-t}\\ln(2t+1)\\qquad(t>0).\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
-        "At $t=1$, one has $Z'(1)>0$.",
-        "$Z'(1)$ is strictly greater than $e^{-1}$.",
-        "$Z'(1)$ is strictly greater than $2e^{-1}$.",
+        "$Z'(t)=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)$ for all $t>0$.",
+        "$Z(t)>0$ for every $t>0$.",
         "For $t>0$, the factor $e^{-t}$ does not change the sign of $Z'$.",
-        "$Z(t)>0$ for every $t>0$."
+        "$Z$ is strictly decreasing on $(0,+\\infty)$.",
+        "$\\displaystyle\\lim_{t\\to +\\infty}Z(t)=0$."
       ],
       "answer_key": [
         true,
         true,
-        false,
         true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThree-factor product with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$:\n\n$$\nZ'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)\n$$\n\nAt $t=1$ the bracket is $2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}>0$, and $e^{-1}>0$, so $Z'(1)>0$.\n\nSo the statement is True.",
-        "**B.** → True\n\nFrom letter A, $Z'(1)=e^{-1}\\bigl(\\ln 3+\\tfrac{2}{3}\\bigr)$ and\n\n$$\n\\ln 3+\\dfrac{2}{3}\\approx 1.099+0.667=1.766>1\n$$\n\nso $Z'(1)>e^{-1}$.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe same bracket is about $1.766<2$, so $Z'(1)<2e^{-1}$.\n\nSo the statement is False.",
-        "**D.** → True\n\nThe factor $e^{-t}$ is always positive for real $t$, so it does not change the sign of $Z'$.\n\nSo the statement is True.",
-        "**E.** → True\n\nFor $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.\n\nSo the statement is True."
+        "**A.** → True\n\nThree-factor product with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$:\n\n$$\nu'=2t,\\qquad v'=-e^{-t},\\qquad w'=\\dfrac{2}{2t+1}\n$$\n\n$$\nZ'=u'vw+uv'w+uvw'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe factor $e^{-t}$ is always positive for real $t$, so it does not change the sign of $Z'$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $t=1$ the bracket in letter A is $\\ln 3+\\tfrac{2}{3}>0$, so $Z'(1)>0$. Hence $Z$ is increasing at $t=1$ and cannot be strictly decreasing on the whole $(0,+\\infty)$.\n\nSo the statement is False.",
+        "**E.** → True\n\nAs $t\\to+\\infty$, the factor $e^{-t}$ decays faster than any polynomial growth of $t^{2}\\ln(2t+1)$, so $Z(t)\\to 0$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "At $t=1$, bracket $\\ln3+2/3\\approx 1.766\\in(1,2)$ so $Z'>0$, $Z'>e^{-1}$, but not $>2e^{-1}$. Sign of $Z'$ follows the bracket; $Z>0$ on $(0,\\infty)$."
+      "solution_overview": "One derivative check matches the three-factor product rule. $Z>0$ on $(0,\\infty)$; $e^{-t}$ preserves sign of $Z'$; not monotone (since $Z'(1)>0$); $Z(t)\\to 0$ as $t\\to+\\infty$."
     },
     {
       "case_id": "MATH 12.MOCK.BEST3",

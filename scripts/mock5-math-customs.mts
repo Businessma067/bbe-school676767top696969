@@ -883,8 +883,7 @@ So the statement is True.`,
 }
 
 /**
- * Q32 — like course “square × nested log” but ~2× harder product/chain,
- * diverse claims (not only “is this the derivative”).
+ * Q32 — one derivative-check claim, then example properties and traps.
  */
 export function buildMathQ32Engagement() {
   const context = `An engagement score is modelled by
@@ -895,16 +894,16 @@ $$
 
 Decide whether each statement is true or false.`;
 
-  // At t=1: Z'=e^{-1}(ln3+2/3) with ln3+2/3≈1.766 ∈ (1,2)
+  // Z'=e^{-t}(2t ln(2t+1)-t^2 ln(2t+1)+2t^2/(2t+1)); at t=1 bracket ln3+2/3>0
   const statements = [
-    "At $t=1$, one has $Z'(1)>0$.",
-    "$Z'(1)$ is strictly greater than $e^{-1}$.",
-    "$Z'(1)$ is strictly greater than $2e^{-1}$.",
-    "For $t>0$, the factor $e^{-t}$ does not change the sign of $Z'$.",
+    "$Z'(t)=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)$ for all $t>0$.",
     "$Z(t)>0$ for every $t>0$.",
+    "For $t>0$, the factor $e^{-t}$ does not change the sign of $Z'$.",
+    "$Z$ is strictly decreasing on $(0,+\\infty)$.",
+    "$\\displaystyle\\lim_{t\\to +\\infty}Z(t)=0$.",
   ];
 
-  const answer_key = [true, true, false, true, true];
+  const answer_key = [true, true, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
@@ -912,40 +911,36 @@ Decide whether each statement is true or false.`;
 Three-factor product with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$:
 
 $$
-Z'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
+u'=2t,\\qquad v'=-e^{-t},\\qquad w'=\\dfrac{2}{2t+1}
 $$
 
-At $t=1$ the bracket is $2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}>0$, and $e^{-1}>0$, so $Z'(1)>0$.
+$$
+Z'=u'vw+uv'w+uvw'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
+$$
 
 So the statement is True.`,
 
     `**B.** → True
 
-From letter A, $Z'(1)=e^{-1}\\bigl(\\ln 3+\\tfrac{2}{3}\\bigr)$ and
-
-$$
-\\ln 3+\\dfrac{2}{3}\\approx 1.099+0.667=1.766>1
-$$
-
-so $Z'(1)>e^{-1}$.
+For $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.
 
 So the statement is True.`,
 
-    `**C.** → False
-
-The same bracket is about $1.766<2$, so $Z'(1)<2e^{-1}$.
-
-So the statement is False.`,
-
-    `**D.** → True
+    `**C.** → True
 
 The factor $e^{-t}$ is always positive for real $t$, so it does not change the sign of $Z'$.
 
 So the statement is True.`,
 
+    `**D.** → False
+
+At $t=1$ the bracket in letter A is $\\ln 3+\\tfrac{2}{3}>0$, so $Z'(1)>0$. Hence $Z$ is increasing at $t=1$ and cannot be strictly decreasing on the whole $(0,+\\infty)$.
+
+So the statement is False.`,
+
     `**E.** → True
 
-For $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.
+As $t\\to+\\infty$, the factor $e^{-t}$ decays faster than any polynomial growth of $t^{2}\\ln(2t+1)$, so $Z(t)\\to 0$.
 
 So the statement is True.`,
   ];
@@ -961,7 +956,7 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `At $t=1$, bracket $\\ln3+2/3\\approx 1.766\\in(1,2)$ so $Z'>0$, $Z'>e^{-1}$, but not $>2e^{-1}$. Sign of $Z'$ follows the bracket; $Z>0$ on $(0,\\infty)$.`,
+    solution_overview: `One derivative check matches the three-factor product rule. $Z>0$ on $(0,\\infty)$; $e^{-t}$ preserves sign of $Z'$; not monotone (since $Z'(1)>0$); $Z(t)\\to 0$ as $t\\to+\\infty$.`,
   };
 }
 
