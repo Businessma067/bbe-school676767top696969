@@ -421,7 +421,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - x) - 6<0\n$$\n\nFactor.\n\n$$\n(x - 3) (x + 2)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-2\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x - 1) - 6$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-2, 3)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 4 x) + 13>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 4 x + 13>0\n$$\n\nDer Diskriminierende ist $-36$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 4 x + 13$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 4 x) + 13>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 4 x + 13>0\n$$\n\nDie Diskriminante ist $-36$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 4 x + 13$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 3 x) - 4\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 3 x - 4\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 4) (x + 1)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-1\n$$\n\n$$\nx=4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 3 x - 4$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -1] \\cup [4, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 6 x) + 9\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 3)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 6) + 9$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nDer Klassb der Jahre Die Behauptung beginnt mit\n\n$$\nx^{2} - 4x - 5 \\le 0\n$$\n\nsetzt versehen :\n\n$$\nx^{2} - 4x - 5 = (x - 5)(x + 1)\n$$\n\nDie kritischen Punkte sind die Wurzeln des Quadratischen:\n\n$$\nx = -1,\\quad x = 5\n$$\n\nLesen Sie das Zeichendiagramm gegen das Ungleichheitssymbol: Halten Sie die nicht-positive Region, einschließlich\n\n$$\n[-1, 5]\n$$\n\nAuf den tropischen UM ?\n\nInterval | Zeichen | Zeichen\n| --- | --- |\n| $(-\\infty, -1)$ | $+$ |\n| $(-1, 5)$ | $-$ |\n| $(5, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 0$: 0 - 0 - 5 = -5 $\\le$ 0, confirming it belongs.\n\nDie Aussage ist wahr."
@@ -430,22 +430,22 @@
   },
   "MATH 6.24": {
     "title": "Quadratische Vorzeichenungleichungen — 4",
-    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
     "statements": [
-      "Die Ungleichung $x^{2} - 2x + 5 < 0$ hat unendlich viele Lösungen, da die Parabel unter die x-Achse zwischen ihren beiden Wurzeln einbricht.",
-      "Die Ungleichung $x^{2} - 10x + 21 > 0$ hat die Lösungsmenge $x < 3$ or $x > 7$.",
-      "Die Ungleichung $x^{2} + 8x + 16 \\ge 0$ für: auf: $x = 4$ und in bezogen und $x = -4$.",
+      "Die Ungleichung $x^{2} - 2x + 5 < 0$ hat unendlich viele Lösungen, da die Parabel zwischen ihren beiden Wurzeln unter die $x$-Achse taucht.",
+      "Die Ungleichung $x^{2} - 10x + 21 > 0$ hat die Lösungsmenge $x < 3$ oder $x > 7$.",
+      "Die Ungleichung $x^{2} + 8x + 16 \\ge 0$ gilt für alle reellen $x$, mit Gleichheit sowohl bei $x = 4$ als auch bei $x = -4$.",
       "Die Ungleichung $x^{2} + 2x - 15 < 0$ hat die Lösungsmenge $(-5, 3)$.",
-      "Die Ungleichung $x^{2} - 2x + 10 > 0$ gilt für alle echten x."
+      "Die Ungleichung $x^{2} - 2x + 10 > 0$ gilt für alle reellen $x$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 5<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 5<0\n$$\n\nDer Diskriminierende ist $-16$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\emptyset\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 10 x) + 21>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 10 x + 21>0\n$$\n\nFactor.\n\n$$\n(x - 7) (x - 3)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\n$$\nx=7\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 10 x + 21$ |\n| --- | --- |\n| $(-\\infty,3)$ | $+$ |\n| $(3,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 3) \\cup (7, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 8 x) + 16\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 4)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 8) + 16$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 2 x) - 15<0\n$$\n\nFactor.\n\n$$\n(x - 3) (x + 5)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 2) - 15$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-5, 3)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 10>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 10>0\n$$\n\nDer Diskriminierende ist $-36$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x + 10$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 5<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 5<0\n$$\n\nDie Diskriminante ist $-16$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\emptyset\n$$\n\nund stimmt nicht mit der Behauptung überein.\n\nDie Aussage ist falsch.",
+      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 10 x) + 21>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 10 x + 21>0\n$$\n\nFaktorisiere.\n\n$$\n(x - 7) (x - 3)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\n$$\nx=7\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 10 x + 21$ |\n| --- | --- |\n| $(-\\infty,3)$ | $+$ |\n| $(3,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 3) \\cup (7, \\infty)\n$$\n\nund stimmt mit der behaupteten Menge überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 8 x) + 16\\ge 0\n$$\n\nFaktorisiere.\n\n$$\n(x + 4)^{2}\\ge 0\n$$\n\nDie Wurzel ist der kritische Punkt.\n\n$$\nx=-4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $(x + 4)^{2}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nGleichheit gilt nur bei $x=-4$, nicht bei $x=4$ und $x=-4$. Die Behauptung stimmt daher nicht.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 2 x) - 15<0\n$$\n\nFaktorisiere.\n\n$$\n(x - 3) (x + 5)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $(x - 3)(x + 5)$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-5, 3)\n$$\n\nund stimmt mit der behaupteten Menge überein.\n\nDie Aussage ist wahr.",
+      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 10>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 10>0\n$$\n\nDie Diskriminante ist $-36$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x + 10$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nund stimmt mit der behaupteten Menge überein.\n\nDie Aussage ist wahr."
     ],
-    "solution_overview": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nmehr als in diesem.:---rollen------------------:.---------------"
+    "solution_overview": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nTypen in diesem Satz: Quadratische Vorzeichenungleichung (Diskriminantentest); Quadratische Vorzeichenungleichung; Quadratische Ungleichung (vollständiges Quadrat)."
   },
   "MATH 6.25": {
     "title": "Quadratische Vorzeichenungleichungen — 5",
@@ -461,29 +461,29 @@
       "**A.** → Wahr\n\nDer Klassb der Jahre Die Behauptung beginnt mit\n\n$$\nx^{2} - 5x - 6 < 0\n$$\n\nsetzt versehen :\n\n$$\nx^{2} - 5x - 6 = (x - 6)(x + 1)\n$$\n\nDie kritischen Punkte sind die Wurzeln des Quadratischen:\n\n$$\nx = -1,\\quad x = 6\n$$\n\nämten.$<$: für beides:\n\n$$\n(-1, 6)\n$$\n\nAuf den tropischen UM ?\n\nInterval | Zeichen | Zeichen\n| --- | --- |\n| $(-\\infty, -1)$ | $+$ |\n| $(-1, 6)$ | $-$ |\n| $(6, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 0$: 0 - 0 - 6 = -6 < 0, confirming it belongs.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 10 x) + 25\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 5)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 10) + 25$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - x) - 2>0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 1)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-1\n$$\n\n$$\nx=2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x - 1) - 2$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -1) \\cup (2, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 10>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 10>0\n$$\n\nDer Diskriminierende ist $-4$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 10$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 10>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 10>0\n$$\n\nDie Diskriminante ist $-4$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 10$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) - 16\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x - 16\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 8) (x + 2)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-2\n$$\n\n$$\nx=8\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x - 16$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,8)$ | $-$ |\n| $(8,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -2] \\cup [8, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nTypen in diesem Satz: Quadratische Zeichenungleichheit; Quadratische Ungleichheit (perfektes Quadrat); Quadratische Zeichenungleichheit (Diskriminanztest)"
   },
   "MATH 6.26": {
     "title": "Quadratische Vorzeichenungleichungen — 6",
-    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
     "statements": [
-      "Die Ungleichung $x^{2} - 2x + 2 \\ge 0$ Auf die Wosse der IWG auf die IG auf die IG auf die IG auf die IG.",
-      "Die Ungleichung $x^{2} + 5x - 14 > 0$ hat die Lösungsmenge $x < -7$ or $x > 2$.",
-      "Die Ungleichung $x^{2} - 4x + 5 > 0$ gilt für alle echten x.",
+      "Die Ungleichung $x^{2} - 2x + 2 \\ge 0$ gilt für alle reellen $x$ und ist niemals gleich $0$.",
+      "Die Ungleichung $x^{2} + 5x - 14 > 0$ hat die Lösungsmenge $x < -7$ oder $x > 2$.",
+      "Die Ungleichung $x^{2} - 4x + 5 > 0$ gilt für alle reellen $x$.",
       "Die Ungleichung $x^{2} - 11x + 30 < 0$ hat die Lösungsmenge $(5, 6)$.",
-      "Die Ungleichung $x^{2} + 14x + 49 \\ge 0$ für: auf: $x = 7$ und in bezogen und $x = -7$."
+      "Die Ungleichung $x^{2} + 14x + 49 \\ge 0$ gilt für alle reellen $x$, mit Gleichheit sowohl bei $x = 7$ als auch bei $x = -7$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 2\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 2\\ge 0\n$$\n\nDer Diskriminierende ist $-4$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 5 x) - 14>0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 7)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-7\n$$\n\n$$\nx=2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 5) - 14$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -7) \\cup (2, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 4 x) + 5>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 4 x + 5>0\n$$\n\nDer Diskriminierende ist $-4$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 4 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nDer Klassb der Jahre Die Behauptung beginnt mit\n\n$$\nx^{2} - 11x + 30 < 0\n$$\n\nsetzt versehen :\n\n$$\nx^{2} - 11x + 30 = (x - 5)(x - 6)\n$$\n\nDie kritischen Punkte sind die Wurzeln des Quadratischen:\n\n$$\nx = 5,\\quad x = 6\n$$\n\nämten.$<$: für beides:\n\n$$\n(5, 6)\n$$\n\nAuf den tropischen UM ?\n\nInterval | Zeichen | Zeichen\n| --- | --- |\n| $(-\\infty, 5)$ | $+$ |\n| $(5, 6)$ | $-$ |\n| $(6, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 5.5$: 30.25 - 60.5 + 30 = -0.25 < 0, confirming it belongs.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 14 x) + 49\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 7)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-7\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 14) + 49$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 2\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 2\\ge 0\n$$\n\nDie Diskriminante ist $-4$, also gibt es keine reellen Wurzeln. Die nach oben geöffnete Parabel bleibt stets positiv und trifft die Achse nie; Gleichheit tritt nie ein.\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen von $x^{2} - 2 x + 2$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist $(-\\infty, \\infty)$, und die Ungleichung ist niemals Gleichheit.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 5 x) - 14>0\n$$\n\nFaktorisiere.\n\n$$\n(x - 2) (x + 7)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte $x=-7$ und $x=2$.\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist $(-\\infty, -7) \\cup (2, \\infty)$ und stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{2} - 4 x + 5>0\n$$\n\nDie Diskriminante ist $-4$, also gibt es keine reellen Wurzeln. Die Parabel liegt stets oberhalb der Achse.\n\nDie Lösungsmenge ist $(-\\infty, \\infty)$.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nFaktorisiere die Quadratische, markiere die Wurzeln und prüfe das Vorzeichen.\n\n$$\nx^{2} - 11x + 30 < 0\n$$\n\n$$\nx^{2} - 11x + 30 = (x - 5)(x - 6)\n$$\n\nDie kritischen Punkte sind $x = 5$ und $x = 6$. Die Ungleichung ist streng ($<$), also bleibt das mittlere Gebiet ohne Endpunkte:\n\n$$\n(5, 6)\n$$\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty, 5)$ | $+$ |\n| $(5, 6)$ | $-$ |\n| $(6, \\infty)$ | $+$ |\n\nProbe bei $x = 5{,}5$: $30{,}25 - 60{,}5 + 30 = -0{,}25 < 0$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 14 x) + 49\\ge 0\n$$\n\nFaktorisiere.\n\n$$\n(x + 7)^{2}\\ge 0\n$$\n\nGleichheit gilt nur bei $x=-7$, nicht zugleich bei $x=7$ und $x=-7$. Die Lösungsmenge ist $(-\\infty, \\infty)$, aber die Gleichheitsbehauptung ist falsch.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nmehr als in diesem.:---rollen------------------:.---------------"
+    "solution_overview": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nTypen in diesem Satz: Quadratische Vorzeichenungleichung (Diskriminantentest); Quadratische Vorzeichenungleichung; Quadratische Ungleichung (vollständiges Quadrat)."
   },
   "MATH 6.27": {
     "title": "Quadratische Vorzeichenungleichungen — 7",
@@ -497,7 +497,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 3 x) - 28<0\n$$\n\nFactor.\n\n$$\n(x - 4) (x + 7)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-7\n$$\n\n$$\nx=4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 3) - 28$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-7, 4)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 15>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 15>0\n$$\n\nDer Diskriminierende ist $-24$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 15$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 15>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 15>0\n$$\n\nDie Diskriminante ist $-24$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 15$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 16 x) + 63\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 16 x + 63\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 9) (x - 7)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=7\n$$\n\n$$\nx=9\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 16 x + 63$ |\n| --- | --- |\n| $(-\\infty,7)$ | $+$ |\n| $(7,9)$ | $-$ |\n| $(9,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 7] \\cup [9, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 16 x) + 64\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 8)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-8\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 16) + 64$ |\n| --- | --- |\n| $(-\\infty,-8)$ | $+$ |\n| $(-8,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 4 x) - 45>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 4 x - 45>0\n$$\n\nFactor.\n\n$$\n(x - 9) (x + 5)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=9\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 4 x - 45$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,9)$ | $-$ |\n| $(9,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -5) \\cup (9, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
@@ -515,11 +515,11 @@
       "Die Ungleichung $x^{2} - 16x + 70 > 0$ gilt für alle echten x."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 12 x) + 40>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 12 x + 40>0\n$$\n\nDer Diskriminierende ist $-16$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 12 x + 40$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 12 x) + 40>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 12 x + 40>0\n$$\n\nDie Diskriminante ist $-16$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 12 x + 40$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nDer Klassb der Jahre Die Behauptung beginnt mit\n\n$$\nx^{2} + 9x - 10 < 0\n$$\n\nsetzt versehen :\n\n$$\nx^{2} + 9x - 10 = (x + 10)(x - 1)\n$$\n\nDie kritischen Punkte sind die Wurzeln des Quadratischen:\n\n$$\nx = -10,\\quad x = 1\n$$\n\nämten.$<$: für beides:\n\n$$\n(-10, 1)\n$$\n\nAuf den tropischen UM ?\n\nInterval | Zeichen | Zeichen\n| --- | --- |\n| $(-\\infty, -10)$ | $+$ |\n| $(-10, 1)$ | $-$ |\n| $(1, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 0$: 0 + 0 - 10 = -10 < 0, confirming it belongs.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 4 x) + 13>0\n$$\n\nFactor.\n\n$$\nx^{2} + 4 x + 13>0\n$$\n\nVor gutgabt\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 4) + 13$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 7 x) - 60>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 7 x - 60>0\n$$\n\nFactor.\n\n$$\n(x - 12) (x + 5)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=12\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 7 x - 60$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,12)$ | $-$ |\n| $(12,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -5) \\cup (12, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 16 x) + 70>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 16 x + 70>0\n$$\n\nDer Diskriminierende ist $-24$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 16 x + 70$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 16 x) + 70>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 16 x + 70>0\n$$\n\nDie Diskriminante ist $-24$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 16 x + 70$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\n; . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
   },
@@ -555,7 +555,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 18 x) + 81\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 9)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-9\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 18) + 81$ |\n| --- | --- |\n| $(-\\infty,-9)$ | $+$ |\n| $(-9,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 2 x) - 35<0\n$$\n\nFactor.\n\n$$\n(x - 5) (x + 7)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-7\n$$\n\n$$\nx=5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 2) - 35$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-7, 5)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 8 x) + 20>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 8 x + 20>0\n$$\n\nDer Diskriminierende ist $-16$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 8 x + 20$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 8 x) + 20>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 8 x + 20>0\n$$\n\nDie Diskriminante ist $-16$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 8 x + 20$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 18 x) + 80\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 18 x + 80\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 10) (x - 8)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=8\n$$\n\n$$\nx=10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 18 x + 80$ |\n| --- | --- |\n| $(-\\infty,8)$ | $+$ |\n| $(8,10)$ | $-$ |\n| $(10,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 8] \\cup [10, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 20 x) + 100\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 10)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 20) + 100$ |\n| --- | --- |\n| $(-\\infty,-10)$ | $+$ |\n| $(-10,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch."
     ],
@@ -573,7 +573,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 5 x) - 50>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 5 x - 50>0\n$$\n\nFactor.\n\n$$\n(x - 10) (x + 5)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 5 x - 50$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,10)$ | $-$ |\n| $(10,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -5) \\cup (10, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 10 x) + 27>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 10 x + 27>0\n$$\n\nDer Diskriminierende ist $-8$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 10 x + 27$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 10 x) + 27>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 10 x + 27>0\n$$\n\nDie Diskriminante ist $-8$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 10 x + 27$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nDer Klassb der Jahre Die Behauptung beginnt mit\n\n$$\nx^{2} + 11x - 12 < 0\n$$\n\nsetzt versehen :\n\n$$\nx^{2} + 11x - 12 = (x + 12)(x - 1)\n$$\n\nDie kritischen Punkte sind die Wurzeln des Quadratischen:\n\n$$\nx = -12,\\quad x = 1\n$$\n\nämten.$<$: für beides:\n\n$$\n(-12, 1)\n$$\n\nAuf den tropischen UM ?\n\nInterval | Zeichen | Zeichen\n| --- | --- |\n| $(-\\infty, -12)$ | $+$ |\n| $(-12, 1)$ | $-$ |\n| $(1, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 0$: 0 + 0 - 12 = -12 < 0, confirming it belongs.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 6 x) + 15>0\n$$\n\nFactor.\n\n$$\nx^{2} + 6 x + 15>0\n$$\n\nVor gutgabt\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 6) + 15$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 9 x) - 70>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 9 x - 70>0\n$$\n\nFactor.\n\n$$\n(x - 14) (x + 5)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=14\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 9 x - 70$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,14)$ | $-$ |\n| $(14,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -5) \\cup (14, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
@@ -591,7 +591,7 @@
       "Die Ungleichung $x^{2} + 4x + 5 > 0$ gilt für jede reelle Zahl x."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 18 x) + 90>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 18 x + 90>0\n$$\n\nDer Diskriminierende ist $-36$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 18 x + 90$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 18 x) + 90>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 18 x + 90>0\n$$\n\nDie Diskriminante ist $-36$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 18 x + 90$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 3 x) - 10\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 5)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 3) - 10$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -5] \\cup [2, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{2} - 9<0\n$$\n\nFactor.\n\n$$\n(x - 3) (x + 3)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-3\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 9$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-3, 3)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 5 x) + 6>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 5 x + 6>0\n$$\n\nFactor.\n\n$$\n(x - 3) (x - 2)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=2\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 5 x + 6$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 2) \\cup (3, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -612,7 +612,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 9\\le 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 9\\le 0\n$$\n\nFactor.\n\n$$\n(x - 3)^{2}\\le 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 9$ |\n| --- | --- |\n| $(-\\infty,3)$ | $+$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\{3\\}\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 2 x) + 1\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 1)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-1\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 2) + 1$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 4 x) + 5<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 4 x + 5<0\n$$\n\nDer Diskriminierende ist $-4$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 4 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\emptyset\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 4 x) + 5<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 4 x + 5<0\n$$\n\nDie Diskriminante ist $-4$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 4 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\emptyset\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - x) - 6\\le 0\n$$\n\nFactor.\n\n$$\n(x - 3) (x + 2)\\le 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-2\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x - 1) - 6$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n[-2, 3]\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 5 x) + 6\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 2) (x + 3)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-3\n$$\n\n$$\nx=-2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 5) + 6$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-2)$ | $-$ |\n| $(-2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -3] \\cup [-2, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch."
     ],
@@ -630,10 +630,10 @@
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + x) - 12\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 3) (x + 4)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-4\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 1) - 12$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -4] \\cup [3, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**B.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 11<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 11<0\n$$\n\nDer Diskriminierende ist $-8$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 11$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\emptyset\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 6 x) + 11<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 6 x + 11<0\n$$\n\nDie Diskriminante ist $-8$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 11$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n\\emptyset\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 6 x) + 9\\ge 0\n$$\n\nFactor.\n\n$$\n(x + 3)^{2}\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 6) + 9$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 2 x) - 8\\ge 0\n$$\n\nFactor.\n\n$$\n(x - 2) (x + 4)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-4\n$$\n\n$$\nx=2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 2) - 8$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -4] \\cup [2, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 5>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 5>0\n$$\n\nDer Diskriminierende ist $-16$Um den, den wir , den , den , den , den , den , den , .\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 2 x) + 5>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 2 x + 5>0\n$$\n\nDie Diskriminante ist $-16$, also gibt es keine reellen Wurzeln.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x + 5$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.\n\nFaktorisiere die Quadratische (oder lies die Diskriminante), markiere die Wurzeln und prüfe das Vorzeichen auf jedem Intervall. Eine nicht strenge Ungleichung behält die Wurzeln; eine strenge lässt sie weg. Eine nach oben geöffnete Parabel ist außerhalb ihrer Wurzeln nichtnegativ und zwischen ihnen nichtpositiv.\n\nTypen in diesem Satz: Quadratische Vorzeichenungleichheit; Quadratische Vorzeichen-Ungleichheit (diskriferiver Test); Quadratische Ungleichheit (perfektes Quadrat)."
   },
@@ -1178,79 +1178,79 @@
   },
   "MATH 6.64": {
     "title": "Treuepunkte-Rabatt",
-    "context": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0.50. Es sei $x$ die Anzahl der eingelösten Punkte. A customer möchte their bill to be \\$250 or weniger.",
+    "context": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0{,}50. Es sei $x$ die Anzahl der eingelösten Punkte. Ein Kunde möchte, dass die Rechnung höchstens \\$250 beträgt.",
     "statements": [
-      "Redeeming 300 points brings the bill to exactly \\$250.",
-      "Redeeming 250 points brings the bill to \\$250 or weniger.",
-      "Redeeming 350 points brings the bill below \\$250.",
-      "Die minimale Anzahl einzulösender Punkte beträgt 300.",
-      "Solving the inequality ${400 - 0.5x \\le 250}$ by dividing beide Seiten by -0.5 gives $x \\le 300$."
+      "Das Einlösen von $300$ Punkten bringt die Rechnung genau auf \\$250.",
+      "Das Einlösen von $250$ Punkten bringt die Rechnung auf höchstens \\$250.",
+      "Das Einlösen von $350$ Punkten bringt die Rechnung unter \\$250.",
+      "Die minimale Anzahl einzulösender Punkte beträgt $300$.",
+      "Löst man die Ungleichung ${400 - 0{,}5x \\le 250}$ durch Division beider Seiten durch $-0{,}5$, so erhält man $x \\le 300$."
     ],
+    "solution_overview": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0{,}50. Es sei $x$ die Anzahl der eingelösten Punkte. Ein Kunde möchte, dass die Rechnung höchstens \\$250 beträgt.\n\nDie maßgebende Ungleichung lautet $400 - 0{,}5x \\le 250$, also $x \\ge 300$. Beim Dividieren durch eine negative Zahl dreht sich das Ungleichheitszeichen um.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n400 - 0.5x \\le 250\n$$\n\n$$\n-0.5x \\le -150\n$$\n\n$$\nx \\ge 300\n$$\n\n$$\nx=300\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.5\\cdot250=125\n$$\n\n$$\n400-125=275\n$$\n\n$$\nx=250\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.5\\cdot350=175\n$$\n\n$$\n400-175=225\n$$\n\n$$\nx=350\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n400-0.5x\\le 250\n$$\n\n$$\n-0.5x\\le -150\n$$\n\n$$\nx\\ge 300\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n400 - 0.5 x\\le 250\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n150 - 0.5 x\\le 0\n$$\n\nFactor.\n\n$$\n- 150.0 (0.00333333333333333 x - 1.0)\\le 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=300.0\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Interval | Sign of $150 - 0.5 x$ |\n| --- | --- |\n| $(-\\infty,300.0)$ | $+$ |\n| $(300.0,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n[300.0, \\infty)\n$$\n\nwas nicht mit der Behauptung übereinstimmt.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Die monatliche Rechnung eines Mobilfunkanbieters beträgt \\$400, aber jeder eingelöste Treuepunkt senkt die Rechnung um \\$0.50. Es sei $x$ die Anzahl der eingelösten Punkte. A customer möchte their bill to be \\$250 or weniger."
+    ]
   },
   "MATH 6.65": {
-    "title": "Ladenmitgliedschaft-Ersparnis",
-    "context": "Eine Ladenmitgliedschaft kostet \\$40 per year. Mitglieder erhalten einen pauschalen Rabatt von 20 % auf alle Einkäufe. Es sei $s$ der gesamte Listenpreis (Nichtmitgliedspreis) der Einkäufe eines Kunden über ein Jahr. The shopper möchte to know when membership actually saves money — that is, when (membership fee + discounted total) is weniger als paying the sticker price mit no membership.",
+    "title": "Ersparnis durch Ladenmitgliedschaft",
+    "context": "Eine Ladenmitgliedschaft kostet \\$40 pro Jahr. Mitglieder erhalten einen pauschalen Rabatt von $20\\%$ auf alle Einkäufe. Es sei $s$ der gesamte Listenpreis (Nichtmitgliederpreis) der Einkäufe eines Käufers über ein Jahr. Der Käufer möchte wissen, wann die Mitgliedschaft tatsächlich Geld spart — also wann (Mitgliedsgebühr + rabattierter Gesamtbetrag) kleiner ist als der Listenpreis ohne Mitgliedschaft.",
     "statements": [
-      "If a shopper spends \\$250 (sticker price) in a year, membership saves them money.",
-      "If a shopper spends \\$150, membership saves them money.",
-      "At exactly \\$200 spent, membership kostet the same as not joining.",
-      "The minimale amount a shopper muss spend für membership to be worthwhile is mehr als \\$200.",
-      "Die Ungleichung that models “membership saves money” is correctly written as ${40 + 0.8s > s}$."
+      "Wenn ein Käufer in einem Jahr \\$250 (Listenpreis) ausgibt, spart ihm die Mitgliedschaft Geld.",
+      "Wenn ein Käufer \\$150 ausgibt, spart ihm die Mitgliedschaft Geld.",
+      "Bei genau \\$200 Ausgaben kostet die Mitgliedschaft dasselbe wie ohne Beitritt.",
+      "Der Mindestbetrag, den ein Käufer ausgeben muss, damit die Mitgliedschaft lohnt, liegt über \\$200.",
+      "Die Ungleichung, die „Mitgliedschaft spart Geld“ modelliert, lautet korrekt ${40 + 0{,}8s > s}$."
     ],
+    "solution_overview": "Mitgliedschaft kostet \\$40; Mitglieder zahlen $0{,}8s$. Sparen heißt $40 + 0{,}8s < s$, also $40 < 0{,}2s$, also $s > 200$. Bei $s=200$ sind die Kosten gleich. Die Ungleichung ${40 + 0{,}8s > s}$ hat die falsche Richtung.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n40+0.8s<s\n$$\n\n$$\n0.8\\cdot250=200\n$$\n\n$$\n40+200=240\n$$\n\n$$\ns=250\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.8\\cdot150=120\n$$\n\n$$\n40+120=160\n$$\n\n$$\ns=150\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.8\\cdot200=160\n$$\n\n$$\n40+160=200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n40+0.8s<s\n$$\n\n$$\n40<0.2s\n$$\n\n$$\ns>200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n0.8 s + 40>s\n$$\n\n$$\n40 - 0.2 s>0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{40 + 0.8s > s}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Eine Ladenmitgliedschaft kostet \\$40 per year. Mitglieder erhalten einen pauschalen Rabatt von 20 % auf alle Einkäufe. Es sei $s$ der gesamte Listenpreis (Nichtmitgliedspreis) der Einkäufe eines Kunden über ein Jahr. The shopper möchte to know when membership actually saves money — that is, when (membership fee + discounted total) is weniger als paying the sticker price mit no membership."
+    ]
   },
   "MATH 6.66": {
-    "title": "Gewächshaustemperatur-Sicherheit",
-    "context": "Das automatische Kühlsystem eines Gewächshauses überwacht die Temperatur in Fahrenheit $(F)$, umgerechnet in Celsius mit $C = \\frac{5}{9}(F - 32)$. For plant safety, the Celsius reading muss bleiben at or below 30°C.",
+    "title": "Sicherheitstemperatur im Gewächshaus",
+    "context": "Die automatische Kühlung eines Gewächshauses überwacht die Temperatur in Fahrenheit $(F)$, umgerechnet in Celsius mit $C = \\frac{5}{9}(F - 32)$. Zur Pflanzensicherheit muss der Celsiuswert bei höchstens $30^{\\circ}\\mathrm{C}$ bleiben.",
     "statements": [
-      "Ein Wert von 86°F hält das Gewächshaus bei genau 30°C.",
-      "A reading of 90°F is within the safe range.",
-      "A reading of 80°F is within the safe range.",
-      "The maximum safe Fahrenheit reading is 86°F.",
-      "Da die Sicherheitsgrenze 30°C beträgt, ist die äquivalente Fahrenheit-Sicherheitsgrenze ebenfalls 30°F."
+      "Ein Messwert von $86^{\\circ}\\mathrm{F}$ hält das Gewächshaus genau bei $30^{\\circ}\\mathrm{C}$.",
+      "Ein Messwert von $90^{\\circ}\\mathrm{F}$ liegt im sicheren Bereich.",
+      "Ein Messwert von $80^{\\circ}\\mathrm{F}$ liegt im sicheren Bereich.",
+      "Der maximal sichere Fahrenheit-Messwert beträgt $86^{\\circ}\\mathrm{F}$.",
+      "Weil die Sicherheitsgrenze $30^{\\circ}\\mathrm{C}$ beträgt, ist die äquivalente Fahrenheit-Grenze ebenfalls $30^{\\circ}\\mathrm{F}$."
     ],
+    "solution_overview": "Aus $C=\\frac{5}{9}(F-32)\\le 30$ folgt $F-32\\le 54$, also $F\\le 86$. Celsius und Fahrenheit sind nicht zahlenmäßig austauschbar.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nC=\\frac{5}{9}(86-32)\n$$\n\n$$\nC=30\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nC=\\frac{5}{9}(90-32)\n$$\n\n$$\nC\\approx 32.2\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nC=\\frac{5}{9}(80-32)\n$$\n\n$$\nC\\approx 26.7\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{5}{9}(F-32)\\le 30\n$$\n\n$$\nF-32\\le 54\n$$\n\n$$\nF\\le 86\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n30=\\frac{5}{9}(F-32)\n$$\n\n$$\n54=F-32\n$$\n\n$$\nF=86\n$$\n\n$$\nC = \\frac{5}{9}(F - 32)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Das automatische Kühlsystem eines Gewächshauses überwacht die Temperatur in Fahrenheit $(F)$, umgerechnet in Celsius mit $C = \\frac{5}{9}(F - 32)$. For plant safety, the Celsius reading muss bleiben at or below 30°C."
+    ]
   },
   "MATH 6.67": {
-    "title": "Einen Kredit abbezahlen",
-    "context": "Jordan hat \\$2,400 zinsfrei geliehen. Er hat bereits eine erste Zahlung von \\$300, geleistet und plant nun, \\$150 pro Monat zu zahlen. Es sei m bezeichne the number of additional monthly payments he makes. He möchte to know when the remaining balance reaches \\$0 or weniger (fully paid off).",
+    "title": "Tilgung eines Darlehens",
+    "context": "Jordan hat \\$2{,}400 zinsfrei geliehen. Er hat bereits eine Anfangszahlung von \\$300 geleistet und plant nun, \\$150 pro Monat zu zahlen. Es sei $m$ die Anzahl zusätzlicher Monatszahlungen. Er möchte wissen, wann der Restsaldo \\$0 oder weniger erreicht (vollständig getilgt).",
     "statements": [
-      "After 14 additional monthly payments, the loan is fully paid off.",
-      "After 13 additional monthly payments, the loan is fully paid off.",
-      "After 15 additional monthly payments, Jordan will have overpaid (the balance is negative).",
-      "The minimale number of additional months benötigte is 14.",
-      "Solving the inequality 2100 - 150m $\\le$ 0 by dividing beide Seiten by -150 gives m $\\le$ 14."
+      "Nach $14$ zusätzlichen Monatszahlungen ist das Darlehen vollständig getilgt.",
+      "Nach $13$ zusätzlichen Monatszahlungen ist das Darlehen vollständig getilgt.",
+      "Nach $15$ zusätzlichen Monatszahlungen hat Jordan überzahlt (der Saldo ist negativ).",
+      "Die minimale Anzahl zusätzlicher Monate beträgt $14$.",
+      "Löst man die Ungleichung $2100 - 150m \\le 0$ durch Division beider Seiten durch $-150$, so erhält man $m \\le 14$."
     ],
+    "solution_overview": "Restschuld $2100 - 150m \\le 0$ liefert $m \\ge 14$. Division durch eine negative Zahl dreht das Ungleichheitszeichen um; $m \\le 14$ wäre falsch.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\n$$\nm=14\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n150\\cdot13=1950\n$$\n\n$$\n2100-1950=150\n$$\n\n$$\n150\\le 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n150\\cdot15=2250\n$$\n\n$$\n2100-2250=-150\n$$\n\n$$\n2250\\le 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2100-150m\\le 0\n$$\n\n$$\n-150m\\le -2100\n$$\n\n$$\nm\\ge 14\n$$\n\n$$\nm\\le 14\n$$\n\n$$\n\\le\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Jordan hat \\$2,400 zinsfrei geliehen. Er hat bereits eine erste Zahlung von \\$300, geleistet und plant nun, \\$150 pro Monat zu zahlen. Es sei m bezeichne the number of additional monthly payments he makes. He möchte to know when the remaining balance reaches \\$0 or weniger (fully paid off)."
+    ]
   },
   "MATH 6.68": {
     "title": "Restaurant-Servicegebühr",
@@ -1273,60 +1273,60 @@
   },
   "MATH 6.69": {
     "title": "Basketball-Punktedurchschnitt",
-    "context": "Eine Basketballspielerin möchte über ihre ersten 5 Spiele einen Saisondurchschnitt von mindestens 20 Punkten pro Spiel. Ihre Punktzahlen in den ersten 4 Spielen waren 18, 22, 19 und 17. Es sei $x$ ihre Punktzahl im 5. Spiel.",
+    "context": "Eine Basketballspielerin möchte über ihre ersten $5$ Spiele einen Saisondurchschnitt von mindestens $20$ Punkten pro Spiel. Ihre Punktzahlen in den ersten $4$ Spielen waren $18$, $22$, $19$ und $17$. Es sei $x$ ihre Punktzahl im $5$. Spiel.",
     "statements": [
-      "Scoring 24 points in the 5th game erreicht the average goal exactly.",
-      "Scoring 23 points in the 5th game erreicht the average goal.",
-      "The minimale Punktzahl she needs in the 5th game is 20 points.",
-      "Scoring 30 points in the 5th game would raise her average above 20.",
-      "Clearing the fraction in $\\dfrac{18+22+19+17+x}{5} \\ge 20$ gives ${76 + x \\ge 100}$."
+      "Mit $24$ Punkten im $5$. Spiel erreicht sie das Durchschnittsziel genau.",
+      "Mit $23$ Punkten im $5$. Spiel erreicht sie das Durchschnittsziel.",
+      "Die minimale Punktzahl, die sie im $5$. Spiel braucht, beträgt $20$ Punkte.",
+      "Mit $30$ Punkten im $5$. Spiel läge ihr Durchschnitt über $20$.",
+      "Das Freimachen des Bruchs in $\\dfrac{18+22+19+17+x}{5} \\ge 20$ liefert ${76 + x \\ge 100}$."
     ],
+    "solution_overview": "Aus $\\dfrac{76+x}{5}\\ge 20$ folgt $76+x\\ge 100$, also $x\\ge 24$. Das Minimum ist $24$, nicht $20$.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{18+22+19+17+x}{5}\\ge 20\n$$\n\n$$\n18+22+19+17+x\\ge 100\n$$\n\n$$\n76+x\\ge 100\n$$\n\n$$\nx\\ge 24\n$$\n\n$$\nx=24\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\frac{76+23}{5}=19.8\n$$\n\n$$\n19.8\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{76+x}{5}\\ge 20\n$$\n\n$$\n76+x\\ge 100\n$$\n\n$$\nx\\ge 24\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\frac{76+30}{5}=21.2\n$$\n\n$$\n21.2\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nStart from the claimed inequality und move the constant to the left side.\n\n$$\n\\frac{x + (17 + (19 + (18 + 22)))}{5}\\ge 20\n$$\n\n$$\n\\frac{x + (17 + (19 + (18 + 22)))}{5}-20\\ge 0\n$$\n\n$$\n\\frac{x}{5} - \\frac{24}{5}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n\\frac{x}{5} - \\frac{24}{5}=0\\Rightarrow x=24\n$$\n\nThere is no excluded pole.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Interval | Sign of $\\frac{x - 24}{5}$ |\n| --- | --- |\n| $(-\\infty,24)$ | $-$ |\n| $(24,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n[24, \\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Eine Basketballspielerin möchte über ihre ersten 5 Spiele einen Saisondurchschnitt von mindestens 20 Punkten pro Spiel. Ihre Punktzahlen in den ersten 4 Spielen waren 18, 22, 19 und 17. Es sei $x$ ihre Punktzahl im 5. Spiel."
+      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung und multipliziere mit dem positiven Nenner $5$:\n\n$$\n\\dfrac{18+22+19+17+x}{5} \\ge 20\n$$\n\n$$\n18+22+19+17+x \\ge 100\n$$\n\n$$\n76 + x \\ge 100\n$$\n\nDas ist genau die freigemachte Form aus der Behauptung.\n\nDie Aussage ist wahr."
+    ]
   },
   "MATH 6.70": {
-    "title": "Fertigungsqualitätskontrolle",
-    "context": "Eine Getreidefabrik muss eine Charge von 6 Packungen mit einem Durchschnittsgewicht von mindestens 350 Gramm abpacken, um die Vorschriften zu erfüllen. Die Gewichte der ersten 5 Packungen waren ${340g}$, ${355g}$, ${345g}$, ${360g}$, und ${338g}$. Es sei x bezeichne the weight of the 6th box.",
+    "title": "Fertigungsqualität – Durchschnittsgewicht",
+    "context": "Eine Getreidefabrik muss eine Charge von $6$ Packungen mit einem Durchschnittsgewicht von mindestens $350$ Gramm abpacken, um Vorschriften zu erfüllen. Die Gewichte der ersten $5$ Packungen waren ${340g}$, ${355g}$, ${345g}$, ${360g}$ und ${338g}$. Es sei $x$ das Gewicht der $6$. Packung.",
     "statements": [
-      "A 6th box weighing ${362g}$ erreicht the regulation exactly.",
-      "A 6th box weighing ${360g}$ erreicht the regulation.",
-      "The minimale weight benötigte für the 6th box is ${350g}$.",
-      "A 6th box weighing ${400g}$ ergibt a batch average above ${350g}$.",
-      "Multiplying beide Seiten of $\\dfrac{1738+x}{6} \\ge 350$ by 6 gives ${1738 + x \\ge 2100}$."
+      "Eine $6$. Packung mit ${362g}$ erfüllt die Vorschrift genau.",
+      "Eine $6$. Packung mit ${360g}$ erfüllt die Vorschrift.",
+      "Das Mindestgewicht für die $6$. Packung beträgt ${350g}$.",
+      "Eine $6$. Packung mit ${400g}$ ergibt einen Chargendurchschnitt über ${350g}$.",
+      "Multipliziert man beide Seiten von $\\dfrac{1738+x}{6} \\ge 350$ mit $6$, so erhält man ${1738 + x \\ge 2100}$."
     ],
+    "solution_overview": "Summe der ersten fünf: $1738$. Aus $\\dfrac{1738+x}{6}\\ge 350$ folgt $x\\ge 362$. Das Minimum ist $362$ g, nicht $350$ g.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1738+360=2098\n$$\n\n$$\n\\frac{2098}{6}\n$$\n\n$$\n\\approx 349.67\n$$\n\n$$\n349.67<350\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1738+400=2138\n$$\n\n$$\n\\frac{2138}{6}\n$$\n\n$$\n\\approx 356.33\n$$\n\n$$\n356.33>350\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nStart from the claimed inequality und move the constant to the left side.\n\n$$\n\\frac{x + 1738}{6}\\ge 350\n$$\n\n$$\n\\frac{x + 1738}{6}-350\\ge 0\n$$\n\n$$\n\\frac{x}{6} - \\frac{181}{3}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n\\frac{x}{6} - \\frac{181}{3}=0\\Rightarrow x=362\n$$\n\nThere is no excluded pole.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Interval | Sign of $\\frac{x - 362}{6}$ |\n| --- | --- |\n| $(-\\infty,362)$ | $-$ |\n| $(362,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n[362, \\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Eine Getreidefabrik muss eine Charge von 6 Packungen mit einem Durchschnittsgewicht von mindestens 350 Gramm abpacken, um die Vorschriften zu erfüllen. Die Gewichte der ersten 5 Packungen waren ${340g}$, ${355g}$, ${345g}$, ${360g}$, und ${338g}$. Es sei x bezeichne the weight of the 6th box."
+      "**E.** → Wahr\n\nMultipliziere beide Seiten der Ungleichung mit dem positiven Faktor $6$:\n\n$$\n\\dfrac{1738+x}{6} \\ge 350\n$$\n\n$$\n1738 + x \\ge 2100\n$$\n\nDas stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
+    ]
   },
   "MATH 6.71": {
-    "title": "Rideshare-Stoßzeitpreise",
-    "context": "Eine Rideshare-App berechnet normalerweise eine \\$2.50 Grundgebühr plus \\$1.75 pro Meile. Während der Stoßzeit wird der gesamte Fahrpreis (Grundgebühr plus Meilenpreis) mit 1,5 multipliziert. Es sei $m$ die Anzahl der Meilen. A rider möchte a surge-priced trip to cost no mehr als \\$30.",
+    "title": "Fahrdienst mit Surge-Preis",
+    "context": "Eine Fahrdienst-App berechnet normalerweise \\$2{,}50 Grundgebühr plus \\$1{,}75 pro Meile. Während der Surge-Preisbildung wird der gesamte Fahrpreis (Grundgebühr plus Kilometerpreis) mit $1{,}5$ multipliziert. Es sei $m$ die Anzahl der Meilen. Ein Fahrgast möchte, dass eine Surge-Fahrt höchstens \\$30 kostet.",
     "statements": [
-      "A 10-mile trip during surge pricing kostet exactly \\$30.",
-      "A 12-mile trip during surge pricing stays within the \\$30 limit.",
-      "Die maximale Meilenzahl, die eine Stoßzeitfahrt bei höchstens \\$30 hält, beträgt 10 Meilen.",
-      "Distributing the 1.5 multiplier across the parentheses first gives 3.75 + 2.625m $\\le$ 30.",
-      "Nur die Grundgebühr von \\$2.50 mit 1,5 zu multiplizieren (und den Meilenpreis von \\$1.75 unmultipliziert zu lassen) liefert ebenfalls die korrekte maximale Meilenzahl."
+      "Eine $10$-Meilen-Fahrt während der Surge-Preisbildung kostet genau \\$30.",
+      "Eine $12$-Meilen-Fahrt während der Surge-Preisbildung bleibt innerhalb der Grenze von \\$30.",
+      "Die maximale Meilenzahl, die eine Surge-Fahrt bei höchstens \\$30 hält, beträgt $10$ Meilen.",
+      "Das Ausmultiplizieren des Faktors $1{,}5$ über die Klammern liefert zuerst $3{,}75 + 2{,}625m \\le 30$.",
+      "Nur die Grundgebühr von \\$2{,}50 mit $1{,}5$ zu multiplizieren (und den Meilenpreis \\$1{,}75 unmultipliziert zu lassen) liefert ebenfalls die korrekte maximale Meilenzahl."
     ],
+    "solution_overview": "Surge-Preis: $1{,}5(2{,}50 + 1{,}75m)\\le 30$. Ausmultiplizieren: $3{,}75 + 2{,}625m \\le 30$, also $m\\le 10$. Beide Tarifteile müssen multipliziert werden.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\n$$\nm=10\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1.5\\bigl(2.5+1.75\\cdot 12\\bigr)\n$$\n\n$$\n1.75\\cdot 12=21\n$$\n\n$$\n2.5+21=23.5\n$$\n\n$$\n1.5\\cdot 23.5=35.25\n$$\n\n$$\n35.25>30\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n\\le\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n3.75+1.75m\\le 30\n$$\n\n$$\n1.75m\\le 26.25\n$$\n\n$$\nm\\le 15\n$$\n\n$$\nm\\le 10\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Eine Rideshare-App berechnet normalerweise eine \\$2.50 Grundgebühr plus \\$1.75 pro Meile. Während der Stoßzeit wird der gesamte Fahrpreis (Grundgebühr plus Meilenpreis) mit 1,5 multipliziert. Es sei $m$ die Anzahl der Meilen. A rider möchte a surge-priced trip to cost no mehr als \\$30."
+    ]
   },
   "MATH 6.72": {
     "title": "Reihenfolge von Rabatt und Coupon",
@@ -1348,61 +1348,61 @@
     "solution_overview": "Ein Geschäft wendet einen Rabatt von 25 % auf den ursprünglichen Preis an und zieht danach zusätzlich einen pauschalen \\$15-Coupon ab. Es sei $p$ der ursprüngliche Preis. The final price is ${0.75p - 15}$. A customer möchte the final price to be \\$60 or weniger."
   },
   "MATH 6.73": {
-    "title": "Durchschnittliche Radfahrgeschwindigkeit",
-    "context": "Eine Radfahrerin möchte über eine 2-Stunden-Tour eine Durchschnittsgeschwindigkeit von mindestens 15 mph erreichen; in jedem 1-Stunden-Abschnitt fährt sie mit konstanter Geschwindigkeit. In der ersten Stunde fuhr sie 12 mph. Es sei x bezeichne her speed, in mph, during the second hour.",
+    "title": "Durchschnittliche Radgeschwindigkeit",
+    "context": "Eine Radfahrerin möchte über eine $2$-Stunden-Tour eine Durchschnittsgeschwindigkeit von mindestens $15$ mph erreichen, wobei sie in jeder $1$-Stunden-Etappe mit konstanter Geschwindigkeit fährt. In der ersten Stunde fuhr sie $12$ mph. Es sei $x$ ihre Geschwindigkeit in mph in der zweiten Stunde.",
     "statements": [
-      "Riding at 18 mph in the second hour erreicht the average goal exactly.",
-      "Riding at 17 mph in the second hour erreicht the average goal.",
-      "The minimale speed she needs in the second hour is 15 mph.",
-      "Riding at 20 mph in the second hour ergibt an average above 15 mph.",
-      "Die Ungleichung $\\dfrac{12+x}{2} \\ge 15$ correctly models the average-speed requirement."
+      "Mit $18$ mph in der zweiten Stunde erreicht sie das Durchschnittsziel genau.",
+      "Mit $17$ mph in der zweiten Stunde erreicht sie das Durchschnittsziel.",
+      "Die minimale Geschwindigkeit, die sie in der zweiten Stunde braucht, beträgt $15$ mph.",
+      "Mit $20$ mph in der zweiten Stunde liegt der Durchschnitt über $15$ mph.",
+      "Die Ungleichung $\\dfrac{12+x}{2} \\ge 15$ modelliert die Durchschnittsgeschwindigkeits-Anforderung korrekt."
     ],
+    "solution_overview": "Aus $\\dfrac{12+x}{2}\\ge 15$ folgt $x\\ge 18$. Das Minimum ist $18$ mph, nicht $15$ mph.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{12+x}{2}\\ge 15\n$$\n\n$$\n12+x\\ge 30\n$$\n\n$$\nx\\ge 18\n$$\n\n$$\nx=18\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n14.5\\le 15\n$$\n\n$$\n\\frac{12+17}{2}=14.5\n$$\n\n$$\n14.5\\le 15\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{12+x}{2}\\ge 15\n$$\n\n$$\n12+x\\ge 30\n$$\n\n$$\nx\\ge 18\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n16\\le 15\n$$\n\n$$\n\\frac{12+20}{2}=16\n$$\n\n$$\n16\\le 15\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nStart from the claimed inequality und move the constant to the left side.\n\n$$\n\\frac{x + 12}{2}\\ge 15\n$$\n\n$$\n\\frac{x + 12}{2}-15\\ge 0\n$$\n\n$$\n\\frac{x}{2} - 9\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n\\frac{x}{2} - 9=0\\Rightarrow x=18\n$$\n\nThere is no excluded pole.\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Interval | Sign of $\\frac{x - 18}{2}$ |\n| --- | --- |\n| $(-\\infty,18)$ | $-$ |\n| $(18,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n[18, \\infty)\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Eine Radfahrerin möchte über eine 2-Stunden-Tour eine Durchschnittsgeschwindigkeit von mindestens 15 mph erreichen; in jedem 1-Stunden-Abschnitt fährt sie mit konstanter Geschwindigkeit. In der ersten Stunde fuhr sie 12 mph. Es sei x bezeichne her speed, in mph, during the second hour."
+      "**E.** → Wahr\n\nDer Durchschnitt über zwei gleich lange Stundenabschnitte ist das arithmetische Mittel der beiden Geschwindigkeiten:\n\n$$\n\\dfrac{12+x}{2} \\ge 15\n$$\n\nDas ist genau das korrekte Modell der Anforderung.\n\nDie Aussage ist wahr."
+    ]
   },
   "MATH 6.74": {
-    "title": "Hochzeitscatering-Budget",
-    "context": "Ein Paar möchte, dass die Cateringkosten mindestens \\$3{,}000, aber höchstens \\$4{,}500 betragen. Catering kostet eine Einrichtungsgebühr von \\$500 plus \\$75 pro Gast. Es sei $g$ die Anzahl der Gäste (eine ganze Zahl).",
+    "title": "Catering-Budget für eine Hochzeit",
+    "context": "Ein Paar möchte, dass die Catering-Kosten mindestens \\$3{,}000, aber höchstens \\$4{,}500 betragen. Das Catering kostet \\$500 Aufbaugebühr plus \\$75 pro Gast. Es sei $g$ die Anzahl der Gäste (eine ganze Zahl).",
     "statements": [
-      "34 guests satisfies both budget requirements.",
-      "33 guests satisfies both budget requirements.",
-      "53 guests satisfies both budget requirements.",
-      "54 guests satisfies both budget requirements.",
-      "Die Ungleichung modeling this situation is correctly written as ${3000 \\le 500 + 75g \\le 4500}$."
+      "$34$ Gäste erfüllen beide Budgetanforderungen.",
+      "$33$ Gäste erfüllen beide Budgetanforderungen.",
+      "$53$ Gäste erfüllen beide Budgetanforderungen.",
+      "$54$ Gäste erfüllen beide Budgetanforderungen.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt ${3000 \\le 500 + 75g \\le 4500}$."
     ],
+    "solution_overview": "Aus $3000 \\le 500 + 75g \\le 4500$ folgt $2500 \\le 75g \\le 4000$, also $\\dfrac{100}{3}\\le g \\le \\dfrac{160}{3}$, für ganze $g$ also $34\\le g\\le 53$.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n3050\\le 3\n$$\n\n$$\n75\\cdot34=2550\n$$\n\n$$\n500+2550=3050\n$$\n\n$$\n3050\\le 3\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2975\\le 3\n$$\n\n$$\n75\\cdot33=2475\n$$\n\n$$\n500+2475=2975\n$$\n\n$$\n2975\\le 3\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n4475\\le 3\n$$\n\n$$\n75\\cdot53=3975\n$$\n\n$$\n500+3975=4475\n$$\n\n$$\n4475\\le 3\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n4550\\le 3\n$$\n\n$$\n75\\cdot54=4050\n$$\n\n$$\n500+4050=4550\n$$\n\n$$\n4550\\le 3\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n3000\\le 75 g + 500\\le 4500\n$$\n\n**Linkes Teilstück.**\n\n$$\n3000\\le 75 g + 500\n$$\n\n$$\n75 g - 2500\\ge 0\n$$\n\n$$\n25 (3 g - 100)\\ge 0\n$$\n\nDas linke Teilstück liefert\n\n$$\n\\emptyset\n$$\n\n**Rechtes Teilstück.**\n\n$$\n75 g + 500\\le 4500\n$$\n\n$$\n75 g - 4000\\le 0\n$$\n\n$$\n25 (3 g - 160)\\le 0\n$$\n\nDas rechte Teilstück liefert\n\n$$\n\\emptyset\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Ein Paar möchte, dass die Cateringkosten mindestens \\$3{,}000, aber höchstens \\$4{,}500 betragen. Catering kostet eine Einrichtungsgebühr von \\$500 plus \\$75 pro Gast. Es sei $g$ die Anzahl der Gäste (eine ganze Zahl)."
+    ]
   },
   "MATH 6.75": {
-    "title": "Erdeinkauf in großen Mengen",
-    "context": "Ein Gärtner braucht mindestens 47 kg Erde für ein Projekt. Erde wird nur in 5-kg-Säcken verkauft. Es sei $n$ die Anzahl der gekauften Säcke (eine ganze Zahl).",
+    "title": "Erde im Großgebinde",
+    "context": "Ein Gärtner braucht mindestens $47$ kg Erde für ein Projekt. Erde wird nur in Säcken zu $5$ kg verkauft. Es sei $n$ die Anzahl gekaufter Säcke (eine ganze Zahl).",
     "statements": [
-      "Buying 9 bags provides enough soil.",
-      "Buying 10 bags provides enough soil.",
-      "The minimale number of whole bags benötigte is 9.",
-      "Buying 10 bags ergibt 3 kg of leftover soil beyond what's benötigte.",
-      "Aus ${5n \\ge 47}$ folgt $n \\ge 9{,}4$; da $n$ eine ganze Zahl sein muss, erhält man das korrekte Minimum durch Aufrunden auf 10, nicht durch Abrunden auf 9."
+      "Der Kauf von $9$ Säcken liefert genug Erde.",
+      "Der Kauf von $10$ Säcken liefert genug Erde.",
+      "Die minimale Anzahl ganzer Säcke beträgt $9$.",
+      "Der Kauf von $10$ Säcken ergibt $3$ kg überschüssige Erde über dem Bedarf.",
+      "Aus ${5n \\ge 47}$ folgt $n \\ge 9{,}4$; weil $n$ ganzzahlig sein muss, findet man das korrekte Minimum durch Aufrunden auf $10$, nicht durch Abrunden auf $9$."
     ],
+    "solution_overview": "Aus $5n\\ge 47$ folgt $n\\ge 9{,}4$. Als ganze Zahl muss $n$ auf $10$ aufgerundet werden. Mit $10$ Säcken: $50-47=3$ kg Überschuss.",
     "tactical_explanations": [
       "**A.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n45\\le 47\n$$\n\n$$\n5\\cdot 9=45\n$$\n\n$$\n45\\le 47\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n50\\le 47\n$$\n\n$$\n5\\cdot 10=50\n$$\n\n$$\n50\\le 47\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n5n\\ge 47\n$$\n\n$$\nn\\ge 9.4\n$$\n\n$$\nn=10\n$$\n\n$$\nn=9\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n3\\le 47\n$$\n\n$$\n5(10)-47=3\n$$\n\n$$\n3\\le 47\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n5n\\ge 47\n$$\n\n$$\nn\\ge 9.4\n$$\n\n$$\n{5n \\ge 47}\n$$\n\n$$\nn \\ge 9.4\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Ein Gärtner braucht mindestens 47 kg Erde für ein Projekt. Erde wird nur in 5-kg-Säcken verkauft. Es sei $n$ die Anzahl der gekauften Säcke (eine ganze Zahl)."
+    ]
   },
   "MATH 6.76": {
     "title": "Gewichtete Kursnote",
@@ -1424,175 +1424,175 @@
     "solution_overview": "Die Studiennote wird gewichtet: Hausaufgaben zählen 20 %, die Zwischenprüfung 30 % und die Abschlussprüfung 50 %. Sie hat in den Hausaufgaben 85 und in der Zwischenprüfung 78 erreicht. Sie möchte insgesamt mindestens 80 haben. Es sei $x$ ihre Punktzahl in der Abschlussprüfung."
   },
   "MATH 6.77": {
-    "title": "Einfache Zinsen auf Ersparnisse",
-    "context": "Emma investiert \\$2,000 auf einem Konto mit 4 % einfachem Jahreszins, sodass der Kontostand nach $t$ Jahren ${2000 + 80t}$. Sie möchte, dass der Kontostand \\$2,600.",
+    "title": "Einfache Zinsen auf dem Sparkonto",
+    "context": "Emma legt \\$2{,}000 auf ein Konto mit $4\\%$ einfachem Jahreszins an, sodass der Saldo nach $t$ Jahren ${2000 + 80t}$ beträgt. Sie möchte, dass der Saldo \\$2{,}600 übersteigt.",
     "statements": [
-      "After 7.5 years, the balance is exactly \\$2,600.",
-      "After 7 full years, the balance exceeds \\$2,600.",
-      "After 8 full years, the balance exceeds \\$2,600.",
-      "Since interest is credited once per full year, the minimale number of full years benötigte für the balance to übersteigen \\$2,600 is 8 years.",
-      "Die Ungleichung modeling this situation is correctly written as ${2000 + 80t > 2600}$."
+      "Nach $7{,}5$ Jahren beträgt der Saldo genau \\$2{,}600.",
+      "Nach $7$ vollen Jahren übersteigt der Saldo \\$2{,}600.",
+      "Nach $8$ vollen Jahren übersteigt der Saldo \\$2{,}600.",
+      "Weil Zinsen einmal pro vollem Jahr gutgeschrieben werden, beträgt die minimale Anzahl voller Jahre, damit der Saldo \\$2{,}600 übersteigt, $8$ Jahre.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt ${2000 + 80t > 2600}$."
     ],
+    "solution_overview": "Aus $2000 + 80t > 2600$ folgt $t > 7{,}5$. Bei jährlicher Gutschrift sind $8$ volle Jahre nötig.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n80\\cdot7.5=600\n$$\n\n$$\n2000+600=2600\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n80\\cdot7=560\n$$\n\n$$\n2000+560=2560\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n80\\cdot8=640\n$$\n\n$$\n2000+640=2640\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2000+80t>2600\n$$\n\n$$\n80t>600\n$$\n\n$$\nt>7.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n80 t + 2000>2600\n$$\n\n$$\n80 t - 600>0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{2000 + 80t > 2600}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Emma investiert \\$2,000 auf einem Konto mit 4 % einfachem Jahreszins, sodass der Kontostand nach $t$ Jahren ${2000 + 80t}$. Sie möchte, dass der Kontostand \\$2,600."
+    ]
   },
   "MATH 6.78": {
-    "title": "Umsatzsteuer-Budget",
-    "context": "Der Bundesstaat einer Käuferin erhebt 8 % Umsatzsteuer auf den Listenpreis. Sie hat insgesamt \\$54 zum Ausgeben, inklusive Steuer. Es sei $p$ der Listenpreis vor Steuer der Artikel, die sie kauft.",
+    "title": "Umsatzsteuer und Budget",
+    "context": "Der Bundesstaat einer Käuferin erhebt $8\\%$ Umsatzsteuer auf den Listenpreis. Sie hat insgesamt \\$54 zum Ausgeben, einschließlich Steuer. Es sei $p$ der Vorsteuer-Listenpreis der gekauften Artikel.",
     "statements": [
-      "A pre-tax total of \\$50 keeps her within budget after tax.",
-      "A pre-tax total of \\$52 keeps her within budget after tax.",
-      "The maximum pre-tax amount she can spend is \\$50.",
-      "If the tax rate were 10% instead of 8%, the maximum pre-tax amount she could spend would be lower als \\$50.",
-      "Die Ungleichung modeling this situation is correctly written as $p + 0.08 \\le 54$."
+      "Ein Vorsteuerbetrag von \\$50 hält sie nach Steuer im Budget.",
+      "Ein Vorsteuerbetrag von \\$52 hält sie nach Steuer im Budget.",
+      "Der maximale Vorsteuerbetrag, den sie ausgeben kann, beträgt \\$50.",
+      "Wäre der Steuersatz $10\\%$ statt $8\\%$, läge der maximale Vorsteuerbetrag unter \\$50.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt $p + 0{,}08 \\le 54$."
     ],
+    "solution_overview": "Korrekt ist $1{,}08p \\le 54$, also $p \\le 50$. Die Form $p + 0{,}08 \\le 54$ addiert fälschlich $0{,}08$ statt $0{,}08p$.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n54\\le 55\n$$\n\n$$\n1.08\\cdot 50 =54\n$$\n\n$$\n54\\le 55\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n56.16>55\n$$\n\n$$\n1.08\\cdot 52 =56.16\n$$\n\n$$\n56.16>55\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.08p\\le 54\n$$\n\n$$\np\\le 50\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.10p\\le 54\n$$\n\n$$\np\\le 49.09\\ldots\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\np + 0.08\\le 54\n$$\n\n$$\np - 53.92\\le 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\np + 0.08 \\le 54\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Der Bundesstaat einer Käuferin erhebt 8 % Umsatzsteuer auf den Listenpreis. Sie hat insgesamt \\$54 zum Ausgeben, inklusive Steuer. Es sei $p$ der Listenpreis vor Steuer der Artikel, die sie kauft."
+    ]
   },
   "MATH 6.79": {
     "title": "Überstundenlohn",
-    "context": "Ein Arbeitnehmer verdient \\$18/hour für die ersten 40 Wochenstunden und anderthalbfachen Lohn (\\$27/hour) für jede Stunde über 40. Es sei $h$ die Gesamtzahl der gearbeiteten Stunden in einer Woche $(h > 40)$. She möchte her weekly pay to be mindestens \\$850.",
+    "context": "Eine Angestellte verdient \\$18/Stunde für die ersten $40$ Stunden einer Woche und anderthalb (\\$27/Stunde) für jede Stunde darüber hinaus. Es sei $h$ die Gesamtstundenzahl in einer Woche $(h > 40)$. Sie möchte einen Wochenlohn von mindestens \\$850.",
     "statements": [
-      "Working 45 hours ergibt pay of mindestens \\$850.",
-      "Working 44 hours ergibt pay of mindestens \\$850.",
-      "Die minimale Anzahl ganzer Stunden, um mindestens \\$850 zu verdienen, beträgt 44.",
-      "Working 50 hours ergibt pay of mehr als \\$900.",
-      "Calculating pay für 45 hours as simply 18 $\\times$ 45 (ignoring the higher overtime rate für hours beyond 40) gives the same total as the correct formula."
+      "Bei $45$ Stunden beträgt der Lohn mindestens \\$850.",
+      "Bei $44$ Stunden beträgt der Lohn mindestens \\$850.",
+      "Die minimale Anzahl ganzer Stunden für mindestens \\$850 beträgt $44$.",
+      "Bei $50$ Stunden beträgt der Lohn mehr als \\$900.",
+      "Den Lohn für $45$ Stunden einfach als $18 \\times 45$ zu berechnen (ohne den höheren Überstundensatz für Stunden über $40$) liefert denselben Gesamtbetrag wie die korrekte Formel."
     ],
+    "solution_overview": "Lohn: $40\\cdot 18 + (h-40)\\cdot 27 = 720 + 27(h-40)$. Aus $\\ge 850$ folgt $h\\ge 44{,}\\overline{8}$, also mindestens $45$ ganze Stunden.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n(h > 40)\n$$\n\n$$\n45-40=5\n$$\n\n$$\n27\\cdot5=135\n$$\n\n$$\n720+135=855\n$$\n\n$$\n(h > 40)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n(h > 40)\n$$\n\n$$\n44-40=4\n$$\n\n$$\n27\\cdot4=108\n$$\n\n$$\n720+108=828\n$$\n\n$$\n(h > 40)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh\\ge 44.81\\ldots\n$$\n\n$$\n27h-360\\ge 850\n$$\n\n$$\n27h\\ge 1210\n$$\n\n$$\nh\\ge 44.81\\ldots\n$$\n\n$$\nh>40\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n(h > 40)\n$$\n\n$$\n50-40=10\n$$\n\n$$\n27\\cdot10=270\n$$\n\n$$\n720+270=990\n$$\n\n$$\n(h > 40)\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n18\\cdot45=810\n$$\n\n$$\n45-40=5\n$$\n\n$$\n27\\cdot5=135\n$$\n\n$$\n720+135=855\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Ein Arbeitnehmer verdient \\$18/hour für die ersten 40 Wochenstunden und anderthalbfachen Lohn (\\$27/hour) für jede Stunde über 40. Es sei $h$ die Gesamtzahl der gearbeiteten Stunden in einer Woche $(h > 40)$. She möchte her weekly pay to be mindestens \\$850."
+    ]
   },
   "MATH 6.80": {
-    "title": "Aufschlag vs. Gewinnmarge",
-    "context": "Ein Händler kauft einen Artikel für \\$40 (seine Kosten) und möchte ihn so bepreisen, dass die Gewinnmarge — Gewinn als Prozentsatz des Verkaufspreises, $(s - 40)/s$ — mindestens 20 % beträgt. Es sei $s$ der Verkaufspreis.",
+    "title": "Aufschlag versus Gewinnmarge",
+    "context": "Ein Händler kauft einen Artikel für \\$40 (seine Kosten) und möchte ihn so auszeichnen, dass die Gewinnmarge — Gewinn als Prozentsatz des Verkaufspreises, $(s - 40)/s$ — mindestens $20\\%$ beträgt. Es sei $s$ der Verkaufspreis.",
     "statements": [
-      "Selling at \\$50 gives exactly a 20% margin.",
-      "Selling at \\$45 gives mindestens a 20% margin.",
-      "Pricing the item mit a 20% markup on cost (\\$40 $\\times$ 1.20 = \\$48) also satisfies the 20% margin requirement.",
-      "Selling at \\$60 gives a margin above 20%.",
-      "The minimale selling price benötigte is \\$50."
+      "Ein Verkauf zu \\$50 ergibt genau eine Marge von $20\\%$.",
+      "Ein Verkauf zu \\$45 ergibt mindestens eine Marge von $20\\%$.",
+      "Eine Auszeichnung mit $20\\%$ Aufschlag auf die Kosten (\\$40 $\\times$ $1{,}20$ = \\$48) erfüllt ebenfalls die $20\\%$-Margenanforderung.",
+      "Ein Verkauf zu \\$60 ergibt eine Marge über $20\\%$.",
+      "Der minimale Verkaufspreis beträgt \\$50."
     ],
+    "solution_overview": "Aus $\\dfrac{s-40}{s}\\ge 0{,}2$ folgt $s-40\\ge 0{,}2s$, also $0{,}8s\\ge 40$, also $s\\ge 50$. Aufschlag auf Kosten und Marge auf Verkaufspreis sind nicht dasselbe.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n0.20\\le 20\n$$\n\n$$\n50-40=10\n$$\n\n$$\n\\frac{10}{50}=0.20\n$$\n\n$$\n0.20\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n0.111\\le 20\n$$\n\n$$\n45-40=5\n$$\n\n$$\n\\frac{5}{45}=0.111\n$$\n\n$$\n0.111\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n40\\cdot 1.20=48\n$$\n\n$$\n48-40=8\n$$\n\n$$\n\\frac{8}{48}=0.167\n$$\n\n$$\n1.20 = \\\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n0.333\\le 20\n$$\n\n$$\n60-40=20\n$$\n\n$$\n\\frac{20}{60}=0.333\n$$\n\n$$\n0.333\\le 20\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{s-40}{s}\\ge 0.20\n$$\n\n$$\ns-40\\ge 0.20s\n$$\n\n$$\n0.80s\\ge 40\n$$\n\n$$\ns\\ge 50\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Ein Händler kauft einen Artikel für \\$40 (seine Kosten) und möchte ihn so bepreisen, dass die Gewinnmarge — Gewinn als Prozentsatz des Verkaufspreises, $(s - 40)/s$ — mindestens 20 % beträgt. Es sei $s$ der Verkaufspreis."
+    ]
   },
   "MATH 6.81": {
-    "title": "Währungsumrechnungs-Budget",
-    "context": "Ein Reisender tauscht Euro in US-Dollar zum Kurs von \\$1.08 pro €1, mit einer pauschalen Umtauschgebühr von \\$15 nach dem Wechsel. Es sei $E$ die Anzahl der umgetauschten Euro (a whole number). She möchte to receive mindestens \\$500 USD.",
+    "title": "Währungsumtausch und Budget",
+    "context": "Eine Reisende tauscht Euro in US-Dollar zum Kurs \\$1{,}08 je €$1$ um, mit einer pauschalen Umtauschgebühr von \\$15, die nach dem Wechsel abgezogen wird. Es sei $E$ die Anzahl umgetauschter Euro (eine ganze Zahl). Sie möchte mindestens \\$500 USD erhalten.",
     "statements": [
-      "Converting 477 euros ergibt mindestens \\$500 USD.",
-      "Converting 476 euros ergibt mindestens \\$500 USD.",
-      "The minimale whole number of euros benötigte is 476.",
-      "Converting 500 euros ergibt mehr als \\$520 USD.",
-      "Die Ungleichung modeling this situation is correctly written as ${1.08E - 15 \\ge 500}$."
+      "Der Umtausch von $477$ Euro ergibt mindestens \\$500 USD.",
+      "Der Umtausch von $476$ Euro ergibt mindestens \\$500 USD.",
+      "Die minimale ganze Anzahl benötigter Euro beträgt $476$.",
+      "Der Umtausch von $500$ Euro ergibt mehr als \\$520 USD.",
+      "Die Ungleichung, die diese Situation modelliert, lautet korrekt ${1{,}08E - 15 \\ge 500}$."
     ],
+    "solution_overview": "Aus $1{,}08E - 15 \\ge 500$ folgt $E \\ge \\dfrac{515}{1{,}08}\\approx 476{,}85$, also mindestens $477$ ganze Euro.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n500.16\\le 500\n$$\n\n$$\n1.08(477)-15=500.16\n$$\n\n$$\n500.16\\le 500\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n499.08\\le 500\n$$\n\n$$\n1.08(476)-15=499.08\n$$\n\n$$\n499.08\\le 500\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nE\\ge 476.85\\ldots\n$$\n\n$$\n1.08E-15\\ge 500\n$$\n\n$$\n1.08E\\ge 515\n$$\n\n$$\nE\\ge 476.85\\ldots\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n525\\le 500\n$$\n\n$$\n1.08(500)-15=525\n$$\n\n$$\n525\\le 500\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n1.08 E - 15\\ge 500\n$$\n\n$$\n1.08 E - 515\\ge 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\n{1.08E - 15 \\ge 500}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Ein Reisender tauscht Euro in US-Dollar zum Kurs von \\$1.08 pro €1, mit einer pauschalen Umtauschgebühr von \\$15 nach dem Wechsel. Es sei $E$ die Anzahl der umgetauschten Euro (a whole number). She möchte to receive mindestens \\$500 USD."
+    ]
   },
   "MATH 6.82": {
-    "title": "Foodtruck-Break-even",
-    "context": "Ein Foodtruck hat tägliche Fixkosten von \\$150. Jeder verkaufte Artikel kostet \\$3 an Zutaten und wird für \\$8 verkauft. Es sei $x$ die Anzahl der an einem Tag verkauften Artikel. The owner möchte a daily profit of mindestens \\$200.",
+    "title": "Foodtruck – Gewinnziel",
+    "context": "Ein Foodtruck hat fixe Tageskosten von \\$150. Jeder verkaufte Artikel kostet \\$3 an Zutaten und wird für \\$8 verkauft. Es sei $x$ die Anzahl verkaufter Artikel an einem Tag. Der Betreiber möchte einen Tagesgewinn von mindestens \\$200.",
     "statements": [
-      "Selling 70 items ergibt a profit of exactly \\$200.",
-      "Selling 65 items ergibt a profit of mindestens \\$200.",
-      "The break-even point (profit = \\$0) occurs at mehr items sold als the \\$200 profit target.",
-      "Selling 100 items ergibt a profit greater als \\$300.",
-      "Die minimale Artikelzahl, um das Gewinnziel zu erreichen, beträgt 70."
+      "Der Verkauf von $70$ Artikeln ergibt einen Gewinn von genau \\$200.",
+      "Der Verkauf von $65$ Artikeln ergibt einen Gewinn von mindestens \\$200.",
+      "Der Break-even-Punkt (Gewinn = \\$0) liegt bei mehr verkauften Artikeln als das Gewinnziel von \\$200.",
+      "Der Verkauf von $100$ Artikeln ergibt einen Gewinn über \\$300.",
+      "Die minimale Artikelzahl für das Gewinnziel beträgt $70$."
     ],
+    "solution_overview": "Gewinn: $(8-3)x - 150 = 5x - 150$. Aus $5x - 150 \\ge 200$ folgt $x \\ge 70$. Break-even bei $x=30$ liegt unter dem Gewinnziel.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\nP=8x-(150+3x)\n$$\n\n$$\nP=5x-150\n$$\n\n$$\nP = 5(70)-150 = 200\n$$\n\n$$\nx=70\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n175\\le 200\n$$\n\n$$\n5(65)-150=175\n$$\n\n$$\n175\\le 200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n5x-150=0\n$$\n\n$$\n5x=150\n$$\n\n$$\nx=30\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n350\\le 200\n$$\n\n$$\n5(100)-150=350\n$$\n\n$$\n350\\le 200\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n5x-150\\ge 200\n$$\n\n$$\n5x\\ge 350\n$$\n\n$$\nx\\ge 70\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Ein Foodtruck hat tägliche Fixkosten von \\$150. Jeder verkaufte Artikel kostet \\$3 an Zutaten und wird für \\$8 verkauft. Es sei $x$ die Anzahl der an einem Tag verkauften Artikel. The owner möchte a daily profit of mindestens \\$200."
+    ]
   },
   "MATH 6.83": {
     "title": "Fertigungstoleranz-Prüfung",
-    "context": "Ein Metallstab besteht die Prüfung nur, wenn beide Bedingungen gleichzeitig gelten: sein Durchmesser $d$ (mm) muss $|d - 12| \\le 0.3$, erfüllen, und sein Gewicht $w$ (Gramm) muss streng kleiner sein als ${50g}$.",
+    "context": "Ein Metallstab besteht die Prüfung nur, wenn beide Bedingungen zugleich gelten: sein Durchmesser $d$ (mm) muss $|d - 12| \\le 0{,}3$ erfüllen, und sein Gewicht $w$ (Gramm) muss streng kleiner als $50$ g sein.",
     "statements": [
-      "A rod mit d = 12.2mm und w = ${45g}$ passes inspection.",
-      "A rod mit d = 12.4mm und w = ${40g}$ passes inspection.",
-      "A rod mit d = 11.7mm und w = ${52g}$ passes inspection.",
-      "A rod mit d = 12.3mm und w = ${30g}$ passes inspection.",
-      "A rod mit d = 12.3mm und w = ${50g}$ passes inspection."
+      "Ein Stab mit $d=12{,}2$ mm und $w=45$ g besteht die Prüfung.",
+      "Ein Stab mit $d=12{,}4$ mm und $w=40$ g besteht die Prüfung.",
+      "Ein Stab mit $d=11{,}7$ mm und $w=52$ g besteht die Prüfung.",
+      "Ein Stab mit $d=12{,}3$ mm und $w=30$ g besteht die Prüfung.",
+      "Ein Stab mit $d=12{,}3$ mm und $w=50$ g besteht die Prüfung."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ und $w<50$.\n\nFor $d=12.2$:\n\n$$|d-12|=|12.2-12|=0.2$$\n\n$$0.2\\le0.3$$\n\nSo the diameter condition is met.\n\n$$45<50$$\n\nSo the weight condition is met.\n\nBoth muss hold, therefore the rod passes inspection.\n\nDie Aussage ist wahr.\n",
-      "**B.** → Falsch\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ und $w<50$.\n\nFor $d=12.4$:\n\n$$|d-12|=|12.4-12|=0.4$$\n\n$$0.4>0.3$$\n\nSo the diameter condition is failed.\n\n$$40<50$$\n\nSo the weight condition is met.\n\nBoth muss hold, therefore the rod does not pass inspection.\n\nDie Aussage ist falsch.\n",
-      "**C.** → Falsch\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ und $w<50$.\n\nFor $d=11.7$:\n\n$$|d-12|=|11.7-12|=0.3$$\n\n$$0.3\\le0.3$$\n\nSo the diameter condition is met.\n\n$$52<50$$ is false since $52>50$.\n\nSo the weight condition is failed.\n\nBoth muss hold, therefore the rod does not pass inspection.\n\nDie Aussage ist falsch.\n",
-      "**D.** → Wahr\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ und $w<50$.\n\nFor $d=12.3$:\n\n$$|d-12|=|12.3-12|=0.3$$\n\n$$0.3\\le0.3$$\n\nSo the diameter condition is met.\n\n$$30<50$$\n\nSo the weight condition is met.\n\nBoth muss hold, therefore the rod passes inspection.\n\nDie Aussage ist wahr.\n",
-      "**E.** → Falsch\n\nInspection needs both checks at once: $|d-12|\\le 0.3$ und $w<50$.\n\nFor $d=12.3$:\n\n$$|d-12|=|12.3-12|=0.3$$\n\n$$0.3\\le0.3$$\n\nSo the diameter condition is met.\n\nThe rule demands a strict inequality $w<50$. Here $w=50$, so\n\n$$50\\nless 50$$\n\nSo the weight condition is failed.\n\nBoth muss hold, therefore the rod does not pass inspection.\n\nDie Aussage ist falsch.\n"
+      "**A.** → Wahr\n\nDie Prüfung verlangt beide Bedingungen zugleich: $|d-12|\\le 0{,}3$ und $w<50$.\n\nFür $d=12{,}2$:\n\n$$|d-12|=|12{,}2-12|=0{,}2$$\n\n$$0{,}2\\le0{,}3$$\n\nDie Durchmesserbedingung ist erfüllt.\n\n$$45<50$$\n\nDie Gewichtsbedingung ist erfüllt. Beide gelten, also besteht der Stab die Prüfung.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nFür $d=12{,}4$:\n\n$$|d-12|=|12{,}4-12|=0{,}4$$\n\n$$0{,}4>0{,}3$$\n\nDie Durchmesserbedingung scheitert. Obwohl $40<50$ gilt, müssen beide Bedingungen gelten.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nFür $d=11{,}7$:\n\n$$|d-12|=|11{,}7-12|=0{,}3\\le0{,}3$$\n\nDer Durchmesser passt, aber $52<50$ ist falsch. Die Gewichtsbedingung scheitert.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nFür $d=12{,}3$:\n\n$$|d-12|=0{,}3\\le0{,}3$$\n\nund $30<50$. Beide Bedingungen gelten.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nFür $d=12{,}3$ gilt $|d-12|=0{,}3\\le0{,}3$. Die Regel verlangt aber die strenge Ungleichung $w<50$. Hier ist $w=50$, also gilt $50\\nless 50$. Die Gewichtsbedingung scheitert.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Ein Metallstab besteht die Prüfung nur, wenn beide Bedingungen gleichzeitig gelten: sein Durchmesser $d$ (mm) muss $|d - 12| \\le 0.3$, erfüllen, und sein Gewicht $w$ (Gramm) muss streng kleiner sein als ${50g}$."
+    "solution_overview": "Ein Metallstab besteht die Prüfung nur, wenn beide Bedingungen zugleich gelten: sein Durchmesser $d$ (mm) muss $|d - 12| \\le 0{,}3$ erfüllen, und sein Gewicht $w$ (Gramm) muss streng kleiner als $50$ g sein. Beide Bedingungen müssen gleichzeitig wahr sein."
   },
   "MATH 6.84": {
     "title": "Gestaffelte Versandtarife",
-    "context": "Ein Versandunternehmen berechnet pauschal \\$8 für Pakete mit höchstens 10 kg. Für Pakete über 10 kg (bis 20 kg) berechnet es \\$8 plus \\$0.50 pro kg über 10. Es sei $w$ das Paketgewicht in kg. Ein Kunde möchte, dass die Versandkosten höchstens \\$12 betragen.",
+    "context": "Ein Versandunternehmen berechnet pauschal \\$8 für Pakete bis einschließlich $10$ kg. Für Pakete über $10$ kg (bis $20$ kg) berechnet es \\$8 plus \\$0{,}50 je kg über $10$. Es sei $w$ das Paketgewicht in kg. Ein Kunde möchte, dass die Versandkosten höchstens \\$12 betragen.",
     "statements": [
-      "A package weighing 5kg kostet \\$8, which is within the \\$12 budget.",
-      "A package weighing 15kg stays within the \\$12 budget.",
-      "A package weighing 18kg kostet exactly \\$12.",
-      "A package weighing 19kg stays within the \\$12 budget.",
-      "Wendet man die Formel der zweiten Staffel, ${8 + 0.5(w - 10)}$, auf ein 5-kg-Paket an, ergibt sich derselbe Preis von \\$8 wie bei korrekter Nutzung der Pauschalstaffel."
+      "Ein Paket mit $5$ kg kostet \\$8 und liegt damit im Budget von \\$12.",
+      "Ein Paket mit $15$ kg bleibt im Budget von \\$12.",
+      "Ein Paket mit $18$ kg kostet genau \\$12.",
+      "Ein Paket mit $19$ kg bleibt im Budget von \\$12.",
+      "Wendet man die Formel der zweiten Stufe, ${8 + 0{,}5(w - 10)}$, auf ein $5$-kg-Paket an, so erhält man denselben Preis \\$8 wie bei korrekter Nutzung der Pauschalstufe."
     ],
+    "solution_overview": "Bis $10$ kg: Kosten $8$. Darüber: $8 + 0{,}5(w-10)\\le 12$ liefert $w\\le 18$. Die Zweitstufenformel darf nicht auf die Pauschalstufe angewendet werden.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n8\\le 12\n$$\n\n$$\nC(5)=8\n$$\n\n$$\n8\\le 12\n$$\n\n$$\n8, which is within the \\\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n15-10=5\n$$\n\n$$\n0.5\\cdot5=2.5\n$$\n\n$$\n8+2.5=10.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n18-10=8\n$$\n\n$$\n0.5\\cdot8=4\n$$\n\n$$\n8+4=12\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n19-10=9\n$$\n\n$$\n0.5\\cdot9=4.5\n$$\n\n$$\n8+4.5=12.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n5-10=-5\n$$\n\n$$\n0.5\\cdot-5=-2.5\n$$\n\n$$\n8+-2.5=5.5\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Ein Versandunternehmen berechnet pauschal \\$8 für Pakete mit höchstens 10 kg. Für Pakete über 10 kg (bis 20 kg) berechnet es \\$8 plus \\$0.50 pro kg über 10. Es sei $w$ das Paketgewicht in kg. Ein Kunde möchte, dass die Versandkosten höchstens \\$12 betragen."
+    ]
   },
   "MATH 6.85": {
     "title": "Länge eines Stützkabels",
-    "context": "Ein Stützkabel verläuft von einem festen Punkt am Boden, 20 Meter horizontal vom Fuß eines Masts, bis zu einem Befestigungspunkt in der Höhe $h$ Meter am Mast. Die Kabellänge beträgt $L = \\sqrt{h^{2} + 20^{2}}$. Engineers require the cable length to be höchstens 25 meters, mit $h \\ge 0$.",
+    "context": "Ein Stützkabel verläuft von einem festen Punkt am Boden, $20$ Meter horizontal vom Fuß eines Masts, bis zu einem Befestigungspunkt in der Höhe $h$ Meter am Mast. Die Kabellänge beträgt $L = \\sqrt{h^{2} + 20^{2}}$. Ingenieure verlangen eine Kabellänge von höchstens $25$ Metern, mit $h \\ge 0$.",
     "statements": [
-      "A height of 15m ergibt a cable length of exactly 25m.",
-      "A height of 10m ergibt a cable length under 25m.",
-      "A height of 16m keeps the cable length at or under 25m.",
+      "Eine Höhe von $15$ m ergibt eine Kabellänge von genau $25$ m.",
+      "Eine Höhe von $10$ m ergibt eine Kabellänge unter $25$ m.",
+      "Eine Höhe von $16$ m hält die Kabellänge bei höchstens $25$ m.",
       "Beide Seiten von $\\sqrt{h^{2}+400} \\le 25$ zu quadrieren, sodass $h^{2}+400 \\le 625$ entsteht, ist hier gültig, weil beide Seiten der ursprünglichen Ungleichung garantiert nichtnegativ sind.",
-      "Weil in dieser Ungleichung eine Quadratwurzel vorkommt, ist das Quadrieren beider Seiten immer ein sicherer Schritt — unabhängig von Vorzeichen und ohne zusätzliche Prüfung."
+      "Weil in dieser Ungleichung eine Quadratwurzel vorkommt, ist das Quadrieren beider Seiten immer ein sicherer Schritt — unabhängig von Vorzeichen und ohne jede zusätzliche Prüfung."
     ],
+    "solution_overview": "Aus $\\sqrt{h^{2}+400}\\le 25$ mit $h\\ge 0$ folgt nach Quadrieren $h\\le 15$. Quadrieren ist hier erlaubt, weil beide Seiten nichtnegativ sind; allgemein ist das nicht immer sicher.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{15^2+20^2}\n$$\n\n$$\nL=\\sqrt{625}\n$$\n\n$$\nL=25\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{10^2+20^2}\n$$\n\n$$\nL=\\sqrt{500}\\approx 22.36\n$$\n\n$$\nh=10\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nh \\ge 0\n$$\n\n$$\nL=\\sqrt{16^2+20^2}\n$$\n\n$$\nL=\\sqrt{656}\\approx 25.61\n$$\n\n$$\nh=16\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{h^{2} + 400}\\le 25\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nh^{2} + 400\\ge 0\n$$\n\n$$\nx\\in \\emptyset\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nIf the right side is negative, a nonnegative square root cannot lie strictly below it; only the boundary $0$ can matter für non-strict inequalities.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nh^{2} + 400\\le 625\n$$\n\n$$\nh^{2} - 225\\le 0\n$$\n\n$$\n(h - 15) (h + 15)\\le 0\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\n| Interval | Sign of $h^{2} - 225$ |\n| --- | --- |\n| $(-\\infty,\\infty)$ | $?$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n\\emptyset\n$$\n\nwas mit der behaupteten Menge übereinstimmt.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{h^{2} + 400}\\le 25\n$$\n\nBeide Seiten sind nichtnegativ: die Quadratwurzel definitionsgemäß, und $25>0$. Daher ist Quadrieren äquivalent:\n\n$$\nh^{2}+400 \\le 625\n$$\n\nDas ist genau der gültige Schritt aus der Behauptung.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\sqrt{h^2+400}\\le -25\n$$\n\n$$\nh^2+400\\le 625\n$$\n\n$$\nL = \\sqrt{h^{2} + 20^{2}}\n$$\n\n$$\nh \\ge 0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch."
-    ],
-    "solution_overview": "Ein Stützkabel verläuft von einem festen Punkt am Boden, 20 Meter horizontal vom Fuß eines Masts, bis zu einem Befestigungspunkt in der Höhe $h$ Meter am Mast. Die Kabellänge beträgt $L = \\sqrt{h^{2} + 20^{2}}$. Engineers require the cable length to be höchstens 25 meters, mit $h \\ge 0$."
+    ]
   },
   "MATH 6.86": {
     "title": "Drei Internettarife vergleichen",
@@ -1614,42 +1614,42 @@
     "solution_overview": "Es gibt drei Internettarife. Tarif A: \\$30/Monat pauschal. Tarif B: \\$10/Monat plus \\$0.05 pro verbrauchtem GB. Tarif C: \\$20/Monat plus \\$0.02 pro verbrauchtem GB. Es sei $g$ der monatliche Verbrauch in GB."
   },
   "MATH 6.87": {
-    "title": "College-GPA mit Credit-Stunden-Gewichten",
-    "context": "Der GPA eines Studenten ist ein mit Credit-Stunden gewichteter Durchschnitt der Notenpunkte. Sie hat einen 3-Credit-Kurs (3,0 Notenpunkte) und einen 4-Credit-Kurs (2,7 Notenpunkte) abgeschlossen. She is now taking a 3-credit course und möchte her overall GPA across all 10 credits to be mindestens 3.0. Es sei x bezeichne the grade points she earns in the new course (maximum possible is 4.0).",
+    "title": "Notendurchschnitt mit Credit-Stunden-Gewichten",
+    "context": "Der Notendurchschnitt einer Studentin ist ein gewichtetes Mittel der Kursnotenpunkte, gewichtet nach Credit-Stunden. Sie hat einen $3$-Credit-Kurs ($3{,}0$ Notenpunkte) und einen $4$-Credit-Kurs ($2{,}7$ Notenpunkte) abgeschlossen. Sie belegt nun einen $3$-Credit-Kurs und möchte einen Gesamtdurchschnitt über alle $10$ Credits von mindestens $3{,}0$. Es sei $x$ die Notenpunktzahl im neuen Kurs (Maximum $4{,}0$).",
     "statements": [
-      "Earning 3.4 grade points in the new course erreicht her GPA goal exactly.",
-      "Earning 3.2 grade points in the new course erreicht her GPA goal.",
-      "The minimale grade points she needs in the new course is 3.0.",
-      "Da die maximal möglichen Notenpunkte in einem einzelnen Kurs 4,0 betragen, ist es möglich, dass sie ihr GPA-Ziel erreicht.",
-      "Dieses Problem verwendet Credit-Stunden als Gewichte — strukturell ähnlich zu den Prozentgewichten für Hausaufgaben/Zwischenprüfung/Abschluss in Aufgabe 16, nur dass hier die Gewichte die Credit-Anzahl jedes Kurses sind."
+      "Mit $3{,}4$ Notenpunkten im neuen Kurs erreicht sie das Durchschnittsziel genau.",
+      "Mit $3{,}2$ Notenpunkten im neuen Kurs erreicht sie das Durchschnittsziel.",
+      "Die minimale Notenpunktzahl, die sie im neuen Kurs braucht, beträgt $3{,}0$.",
+      "Weil die maximale Notenpunktzahl in einem einzelnen Kurs $4{,}0$ beträgt, ist es möglich, dass sie ihr Durchschnittsziel erreicht.",
+      "Diese Aufgabe verwendet Credit-Stunden als Gewichte — strukturell ähnlich wie Prozentgewichte für Hausaufgaben/Zwischenprüfung/Abschluss —, nur dass die Gewichte hier die Credit-Anzahl jedes Kurses sind."
     ],
+    "solution_overview": "Aus $\\dfrac{3\\cdot 3{,}0 + 4\\cdot 2{,}7 + 3x}{10}\\ge 3{,}0$ folgt $9 + 10{,}8 + 3x \\ge 30$, also $3x\\ge 10{,}2$, also $x\\ge 3{,}4$.",
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{10}\\ge 3.0\n$$\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx=3.4\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n2.94\\le 3.0\n$$\n\n$$\n\\frac{19.8+3(3.2)}{10}=2.94\n$$\n\n$$\n2.94\\le 3.0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\n3x\\ge 10.2\n$$\n\n$$\nx\\ge 3.4\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStarte von der maßgebenden Ungleichung für dieses Szenario.\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx\\le 4.0\n$$\n\n$$\n3.4\\le x\\le 4.0\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{3+4+3}\n$$\n\n$$\n3\\cdot 3.0=9\n$$\n\n$$\n4\\cdot 2.7=10.8\n$$\n\n$$\n\\frac{9+10.8+3x}{10}\n$$\n\n$$\n\\frac{19.8+3x}{10}\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt Übereinstimmung.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Der GPA eines Studenten ist ein mit Credit-Stunden gewichteter Durchschnitt der Notenpunkte. Sie hat einen 3-Credit-Kurs (3,0 Notenpunkte) und einen 4-Credit-Kurs (2,7 Notenpunkte) abgeschlossen. She is now taking a 3-credit course und möchte her overall GPA across all 10 credits to be mindestens 3.0. Es sei x bezeichne the grade points she earns in the new course (maximum possible is 4.0)."
+    ]
   },
   "MATH 6.88": {
     "title": "Verketteter Rabatt, Steuer und Coupon",
-    "context": "Ein Geschäft wendet einen Rabatt von 20 % auf den ursprünglichen Preis $p$ an, schlägt dann 8 % Umsatzsteuer auf den reduzierten Preis auf und zieht ganz am Ende einen pauschalen \\$5-Treuecoupon ab. The final price is ${0.8p \\times 1.08 - 5 = 0.864p - 5}$. A customer möchte the final price to be \\$70 or weniger.",
+    "context": "Ein Geschäft wendet einen Rabatt von $20\\%$ auf den ursprünglichen Preis $p$ an, schlägt dann $8\\%$ Umsatzsteuer auf den reduzierten Preis auf und zieht ganz am Ende einen pauschalen \\$5-Treuecoupon ab. Der Endpreis lautet ${0{,}8p \\times 1{,}08 - 5 = 0{,}864p - 5}$. Ein Kunde möchte einen Endpreis von höchstens \\$70.",
     "statements": [
-      "An ursprüngliche Preis of \\$86 keeps the final price at or under \\$70.",
-      "An ursprüngliche Preis of \\$87 keeps the final price at or under \\$70.",
+      "Ein ursprünglicher Preis von \\$86 hält den Endpreis bei höchstens \\$70.",
+      "Ein ursprünglicher Preis von \\$87 hält den Endpreis bei höchstens \\$70.",
       "Der maximale ursprüngliche Preis, auf den nächsten ganzen Dollar, der den Endpreis bei höchstens \\$70 hält, beträgt \\$86.",
-      "Subtrahiereing the \\$5 coupon before applying the discount und tax — that is, $(p - 5) \\times 0.8 \\times 1.08$ — would produce the same final price für a given ursprüngliche Preis.",
-      "Die korrekt kombinierte Formel für „Rabatt, dann Steuer, dann Coupon“ ist ${0.8p \\times 1.08 - 5}$, was sich zu ${0.864p - 5}$ vereinfacht."
+      "Den \\$5-Coupon vor Rabatt und Steuer abzuziehen — also $(p - 5) \\times 0{,}8 \\times 1{,}08$ — würde für einen gegebenen ursprünglichen Preis denselben Endpreis liefern.",
+      "Die korrekt kombinierte Formel für „Rabatt, dann Steuer, dann Coupon“ ist ${0{,}8p \\times 1{,}08 - 5}$, was sich zu ${0{,}864p - 5}$ vereinfacht."
     ],
+    "solution_overview": "Aus $0{,}864p - 5 \\le 70$ folgt $p \\le \\dfrac{75}{0{,}864}\\approx 86{,}81$, also höchstens \\$86 als ganzer Dollar. Die Reihenfolge der Operationen ändert den Endpreis.",
     "tactical_explanations": [
-      "**A.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nThe final-price model is\n\n$$\n0.864p-5\n$$\n\nSubstitute $p=86$.\n\n$$\n0.864(86)-5=69.304\n$$\n\n$$\n69.304\\le 70\n$$\n\nso an ursprüngliche Preis of 86 keeps the final price at or under 70.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nThe final-price model is\n\n$$\n0.864p-5\n$$\n\nSubstitute $p=87$.\n\n$$\n0.864(87)-5=70.168\n$$\n\n$$\n70.168\\le 70\n$$\n\nis false, so 87 does not keep the final price at or under 70.\n\nDie Aussage ist falsch.",
-      "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nStart from the governing inequality.\n\n$$\n0.864p-5\\le 70\n$$\n\n$$\n0.864p\\le 75\n$$\n\n$$\np\\le \\frac{75}{0.864}=86.805\\ldots\n$$\n\nThe largest whole-dollar ursprüngliche Preis is therefore 86.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n0.8p(1.08)-5=0.864p-5\n$$\n\n$$\n(p-5)(0.8)(1.08)=0.864p-4.32\n$$\n\nJede Substitution und Umformung oben steht in einer eigenen Darstellungszeile.\n\nDer Vergleich des numerischen bzw. Ungleichungsergebnisses mit der Behauptung zeigt einen Widerspruch.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nApply discount, then tax, then the flat coupon.\n\n$$\n0.8p\\times 1.08-5\n$$\n\n$$\n0.864p-5\n$$\n\nwhich is exactly the claimed combined formula.\n\nDie Aussage ist wahr."
-    ],
-    "solution_overview": "Ein Geschäft wendet einen Rabatt von 20 % auf den ursprünglichen Preis $p$ an, schlägt dann 8 % Umsatzsteuer auf den reduzierten Preis auf und zieht ganz am Ende einen pauschalen \\$5-Treuecoupon ab. The final price is ${0.8p \\times 1.08 - 5 = 0.864p - 5}$. A customer möchte the final price to be \\$70 or weniger."
+      "**A.** → Wahr\n\nDas Endpreismodell lautet\n\n$$\n0{,}864p-5\n$$\n\nEinsetzen von $p=86$:\n\n$$\n0{,}864(86)-5=69{,}304\\le 70\n$$\n\nEin ursprünglicher Preis von $86$ hält den Endpreis im Limit.\n\nDie Aussage ist wahr.",
+      "**B.** → Falsch\n\nEinsetzen von $p=87$:\n\n$$\n0{,}864(87)-5=70{,}168\n$$\n\n$$\n70{,}168\\le 70\n$$\n\nist falsch. Der Endpreis liegt über \\$70.\n\nDie Aussage ist falsch.",
+      "**C.** → Wahr\n\nStarte von der maßgebenden Ungleichung.\n\n$$\n0{,}864p-5\\le 70\n$$\n\n$$\n0{,}864p\\le 75\n$$\n\n$$\np\\le \\frac{75}{0{,}864}\\approx 86{,}81\n$$\n\nDer größte ganze Dollar-Preis ist daher $86$.\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nCoupon zuerst: $(p-5)\\times 0{,}8\\times 1{,}08 = 0{,}864(p-5) = 0{,}864p - 4{,}32$.\n\nDas korrekte Modell ist $0{,}864p - 5$. Die Differenz $-4{,}32$ versus $-5$ zeigt, dass die Reihenfolge den Endpreis ändert.\n\nDie Aussage ist falsch.",
+      "**E.** → Wahr\n\nZuerst Rabatt, dann Steuer, dann pauschaler Coupon:\n\n$$\n0{,}8p\\times 1{,}08-5 = 0{,}864p-5\n$$\n\nDas ist genau die behauptete kombinierte Formel.\n\nDie Aussage ist wahr."
+    ]
   },
   "MATH 6.89": {
     "title": "Klausuraufgaben – 1",
@@ -1672,22 +1672,22 @@
   },
   "MATH 6.90": {
     "title": "Klausuraufgaben – 2",
-    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
     "statements": [
-      "Die biquadratische Ungleichheit $x^4-10x^2+9<0$ hat die Lösungsmenge $(-3,-1)\\cup(1,3)$.",
-      "Die Bedingung $\\max\\{x-1,\\,3-x\\}<2$ entspricht dem offenen Intervall $1<x<3$.",
-      "Ein Angebotsspanner-Gas-Gle vorzustellen, der sich auf 14 EUR/Gas-G.Gas-G auf-Gase :Gas-Gas-Gas-Gas-Gater-Gas-Gas-Gas-Gas-Gas-Gas-Gas-Gas-Gas-Gas. Das Budget deckt maximal $29$ units.",
-      "Der Vergleich $\\dfrac{2x+1}{x-4}\\le1$ ist gleich wie $-5\\le x<4$.",
-      "- was ist war: $q(x)=-2(x-5)^2+18$erllen ers zum F Panzer zumras beim um einfach Begegnunguter forF F FFFFFFFFFFFFFFFFFFFFFFFFF Nachbar beim FtiereFFtausch marktFFFFswerte fürFF fu F giltF überallthislauf verwandelt FFF SchönheitFF per ZeugeweckFFF SchönheitFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFICHswerteFFFFFF\"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFradFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF $q(x)\\ge10$ genau erfüllt für $3\\le x\\le7$."
+      "Die biquadratische Ungleichung $x^4-10x^2+9<0$ hat die Lösungsmenge $(-3,-1)\\cup(1,3)$.",
+      "Die Bedingung $\\max\\{x-1,\\,3-x\\}<2$ ist äquivalent zum offenen Intervall $1<x<3$.",
+      "Ein Dienst berechnet $14$ EUR plus $6$ EUR pro Einheit bei einem Budget von $176$ EUR. Das Budget deckt höchstens $29$ Einheiten.",
+      "Der Vergleich $\\dfrac{2x+1}{x-4}\\le1$ ist äquivalent zu $-5\\le x<4$.",
+      "Ein Qualitätsscore lautet $q(x)=-2(x-5)^2+18$. Die Anforderung $q(x)\\ge10$ ist genau für $3\\le x\\le7$ erfüllt."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{4} - 10 x^{2}) + 9<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{4} - 10 x^{2} + 9<0\n$$\n\nFactor.\n\n$$\n(x - 3) (x - 1) (x + 1) (x + 3)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-3\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=1\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{4} - 10 x^{2} + 9$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-1)$ | $-$ |\n| $(-1,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-3, -1) \\cup (1, 3)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nStarts von der maximalen Ungleichheit.\n\n$$\n\\max\\{x-1,\\,3-x\\}<2\n$$\n\nDas Maximum von zwei Ausdrücken ist unterhalb eine Grenze, wenn und nur wenn beide Ausdrücke sind.\n\n$$\nx-1<2\n$$\n\n$$\nx<3\n$$\n\n$$\n3-x<2\n$$\n\n$$\n-x<-1\n$$\n\n$$\nx>1\n$$\n\nSchneiden Sie beide Bedingungen.\n\n$$\n1<x<3\n$$\n\ndie mit dem beanspruchten offenen Intervall übereinstimmt.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n14+6u\\le 176\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nSie: ja:::: re:: re: re: re: re: re: re: re: Subtrahiere die Fixgebühr. Dividiere durch den positiven Satz . Ausshangen ist der Auss ist der .\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nBeginne vons stärkeres Maß nach der ders von den weiter damit.\n\n$$\n\\frac{2 x + 1}{x - 4}\\le 1\n$$\n\n$$\n\\frac{2 x + 1}{x - 4}-1\\le 0\n$$\n\nAuf dierist-,\n\n$$\n1=\\frac{x - 4}{x - 4}\n$$\n\n$$\n\\frac{2 x + 1}{x - 4}-\\frac{x - 4}{x - 4}\\le 0\n$$\n\nKombinieren Sie die Zähler.\n\n$$\n\\frac{2 x + 1-x - 4}{x - 4}\\le 0\n$$\n\n$$\n\\frac{x + 5}{x - 4}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$x + 5=0$$\n\n$$x=-5$$\n\n$$x - 4=0$$\n\n$$x=4$$\n\n(die Polstelle $x=4$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x + 5}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n[-5, 4)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n18 - 2 (x - 5)^{2}\\ge 10\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- 2 x^{2} + 20 x - 42\\ge 0\n$$\n\nFactor.\n\n$$\n- 2 (x - 7) (x - 3)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\n$$\nx=7\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $2 (- x^{2} + 10 x - 21)$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,7)$ | $+$ |\n| $(7,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n[3, 7]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\nx^{4} - 10 x^{2} + 9<0\n$$\n\nFaktorisiere.\n\n$$\n(x - 3) (x - 1) (x + 1) (x + 3)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte $x=-3,-1,1,3$.\n\nVorzeichendiagramm:\n\n| Intervall | Vorzeichen |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-1)$ | $-$ |\n| $(-1,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist $(-3, -1) \\cup (1, 3)$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nDas Maximum zweier Ausdrücke liegt unter einer Schranke genau dann, wenn beide Ausdrücke darunter liegen.\n\n$$\nx-1<2 \\Rightarrow x<3\n$$\n\n$$\n3-x<2 \\Rightarrow x>1\n$$\n\nSchnitt: $1<x<3$.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$\n14+6u\\le 176\n$$\n\n$$\n6u\\le 162\n$$\n\n$$\nu\\le 27\n$$\n\nDie größte zulässige ganze Anzahl ist $27$, nicht $29$.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\n$$\n\\frac{2 x + 1}{x - 4}\\le 1\n$$\n\n$$\n\\frac{2 x + 1}{x - 4}-1\\le 0\n$$\n\n$$\n\\frac{x + 5}{x - 4}\\le 0\n$$\n\nKritische Punkte: $x=-5$ (Zählernull) und $x=4$ (Pol, ausgeschlossen).\n\nVorzeichendiagramm liefert $[-5, 4)$.\n\nDie Aussage ist wahr.",
+      "**E.** → Wahr\n\n$$\n-2(x-5)^{2}+18\\ge 10\n$$\n\n$$\n-2(x-5)^{2}\\ge -8\n$$\n\n$$\n(x-5)^{2}\\le 4\n$$\n\n$$\n|x-5|\\le 2\n$$\n\n$$\n3\\le x\\le 7\n$$\n\nDie Aussage ist wahr."
     ],
-    "solution_overview": "Themen: 6.2, 6.3, 6.4, 6.1, 6.2 Karte: A testet die Substitution biquadratischer Intervalle; B testet maximal zwei affine Ausdrücke; C testiert eine kon.rist deren alle praktischen sieden. „D-Mist-Ver-sNer- oder „S-K-Mstes-Dens---S echtes. Die en Umstands E"
+    "solution_overview": "Themen: biquadratische Intervalle, Maximum zweier linearer Ausdrücke, kontextuelle Budgetungleichung, rationale Ungleichung gegen eine Konstante, Qualitätsscore in Scheitelpunktform. Jeder Buchstabe wird unabhängig gelöst; kein Ergebnis wird zwischen Aussagen geteilt."
   },
   "MATH 6.91": {
     "title": "Klausuraufgaben – 3",
@@ -1862,22 +1862,22 @@
   },
   "MATH 6.100": {
     "title": "Klausuraufgaben – 12",
-    "context": "- was ist war: $Q(x)=-(x-3)(x-9)$B i.M. p - (M. des Tiers $Q(x)\\ge0$ und gibt seine höchste Punktzahl auf der Achse der Symmetrie. Die Wurzeln, Endpunktinklusion und Maximum müssen alle von diesem gleichen sich nach unten öffnenden Quadrat gelesen werden.",
+    "context": "Ein Qualitätsscore lautet $Q(x)=-(x-3)(x-9)$. Der Prozess akzeptiert Einstellungen mit $Q(x)\\ge0$ und erreicht seinen höchsten Score auf der Symmetrieachse. Wurzeln, Endpunktinklusion und Maximum müssen alle aus derselben nach unten geöffneten Quadratischen gelesen werden.",
     "statements": [
-      "Die ann und ansinnen sind $[3,9]$.",
+      "Die akzeptierten Einstellungen sind $[3,9]$.",
       "$Q(6)=9$.",
-      "Das Maximum erreichte am $x=6$.",
-      "$Q(x)>0$ includes $x=3$.",
-      "$Q(x)<0$ für $x<3$ or $x>9$."
+      "Das Maximum liegt bei $x=6$.",
+      "$Q(x)>0$ schließt $x=3$ ein.",
+      "$Q(x)<0$ für $x<3$ oder $x>9$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 9) (x - 3)\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 12 x - 27\\ge 0\n$$\n\nFactor.\n\n$$\n- (x - 9) (x - 3)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\n$$\nx=9\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 12 x - 27$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,9)$ | $+$ |\n| $(9,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n[3, 9]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDer Stamm gibt\n\n$$Q(x)=-(x-3)(x-9)$$\n\nSubstitute $x=6$:\n\n$$Q(6)=-( 6-3 )( 6-9 )$$\n\n$$Q(6)=(-(3))(-3)$$\n\n$$Q(6)=9$$\n\ndie Behauptung $Q(6)=9$ holds.\n\nDie Aussage ist wahr.\n",
-      "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nDer Quality Score ist\n\n$$Q(x) = -(x-3)(x-9)$$\n\n$$-(x-3)(x-9) = -x^{2}+12x-27$$\n\nEs handelt sich um eine nach unten öffnende Parabel. Der Scheitelpunkt (Maximum) liegt auf halbem Weg zwischen den Wurzeln.\n\n$$x = \\frac{3+9}{2}$$\n\n$$\\frac{3+9}{2} = 6$$\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 9) (x - 3)>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 12 x - 27>0\n$$\n\nFactor.\n\n$$\n- (x - 9) (x - 3)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\n$$\nx=9\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 12 x - 27$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,9)$ | $+$ |\n| $(9,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(3, 9)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 9) (x - 3)<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 12 x - 27<0\n$$\n\nFactor.\n\n$$\n- (x - 9) (x - 3)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=3\n$$\n\n$$\nx=9\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 12 x - 27$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,9)$ | $+$ |\n| $(9,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 3) \\cup (9, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**A.** → Wahr\n\nDie nach unten geöffnete faktorisierte Form $Q(x)=-(x-3)(x-9)$ ist zwischen den Wurzeln nichtnegativ, einschließlich der Wurzeln selbst bei $\\ge$. Also gilt $Q(x)\\ge0$ genau auf $[3,9]$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nSetze den Mittelpunkt $x=6$ ein:\n\n$$\nQ(6)=(-(6-3))((6-9))=-(6-3)(6-9)\n$$\n\n$$\n6-3=3,\\qquad 6-9=-3\n$$\n\n$$\nQ(6)=-(3)\\cdot(-3)=(3)(3)=9\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nBei einer nach unten geöffneten Parabel liegt das Maximum auf der Symmetrieachse, dem Mittelpunkt der Wurzeln:\n\n$$\nx=\\dfrac{3+9}{2}=6\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAn der Wurzel $x=3$ gilt $Q(3)=0$. Die strenge Ungleichung $Q(x)>0$ schließt die Wurzeln aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Wahr\n\nAußerhalb der Wurzeln ist das Produkt $(x-3)(x-9)$ positiv, und mit dem führenden Minuszeichen wird $Q(x)$ negativ. Also gilt $Q(x)<0$ für $x<3$ oder $x>9$.\n\nDie Aussage ist wahr."
     ],
-    "solution_overview": "Gemeinsames Kontextthema 6.2.\n\nGemeinsame Lösung:\n1. Verwende den einzigen gemeinsamen Aufgabentext für Thema 6.2; lies keine Aussage als neues Szenario.\n2. Ordne die gegebenen Daten, bevor du Behauptungen prüfst. Ein gemeinsames quadratisches Vorzeichenmodell liefert Intervall- und Scheitelinformationen.\n3. Halte jede angegebene Definitionsmenge, jeden Endpunkt, jede Abtastregel und jede physikalische Einschränkung ein.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(6)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True."
+    "solution_overview": "Gemeinsames Kontextthema: Qualitätsscore $Q(x)=-(x-3)(x-9)$.\n\nEine nach unten geöffnete faktorisierte Quadratische ist zwischen den Wurzeln nichtnegativ und außerhalb negativ. Das Maximum liegt auf der Symmetrieachse $x=6$ mit $Q(6)=9$. Strenge Positivität schließt die Wurzeln aus; nichtstrenge Nichtnegativität schließt sie ein.\n\nA wahr, B wahr, C wahr, D falsch, E wahr."
   },
   "MATH 6.101": {
     "title": "Klausuraufgaben – 13",
@@ -1938,22 +1938,22 @@
   },
   "MATH 6.104": {
     "title": "Klausuraufgaben – 16",
-    "context": "- was ist war: $Q(x)=-(x-4)(x-10)$B i.M. p - (M. des Tiers $Q(x)\\ge0$ und gibt seine höchste Punktzahl auf der Achse der Symmetrie. Die Wurzeln, Endpunktinklusion und Maximum müssen alle von diesem gleichen sich nach unten öffnenden Quadrat gelesen werden.",
+    "context": "Ein Qualitätsscore lautet $Q(x)=-(x-4)(x-10)$. Der Prozess akzeptiert Einstellungen mit $Q(x)\\ge0$ und erreicht seinen höchsten Score auf der Symmetrieachse. Wurzeln, Endpunktinklusion und Maximum müssen alle aus derselben nach unten geöffneten Quadratischen gelesen werden.",
     "statements": [
-      "Die ann und ansinnen sind $[4,10]$.",
+      "Die akzeptierten Einstellungen sind $[4,10]$.",
       "$Q(7)=9$.",
-      "Das Maximum erreichte am $x=7$.",
-      "$Q(x)>0$ includes $x=4$.",
-      "$Q(x)<0$ für $x<4$ or $x>10$."
+      "Das Maximum liegt bei $x=7$.",
+      "$Q(x)>0$ schließt $x=4$ ein.",
+      "$Q(x)<0$ für $x<4$ oder $x>10$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 10) (x - 4)\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 14 x - 40\\ge 0\n$$\n\nFactor.\n\n$$\n- (x - 10) (x - 4)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=4\n$$\n\n$$\nx=10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 14 x - 40$ |\n| --- | --- |\n| $(-\\infty,4)$ | $-$ |\n| $(4,10)$ | $+$ |\n| $(10,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n[4, 10]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDer Stamm gibt\n\n$$Q(x)=-(x-4)(x-10)$$\n\nSubstitute $x=7$:\n\n$$Q(7)=-( 7-4 )( 7-10 )$$\n\n$$Q(7)=(-(3))(-3)$$\n\n$$Q(7)=9$$\n\ndie Behauptung $Q(7)=9$ holds.\n\nDie Aussage ist wahr.\n",
-      "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$Q(x) = -(x-4)(x-10)$$\n\n$$-(x-4)(x-10) = -x^{2}+14x-40$$\n\n$$x = \\dfrac{4+10}{2}$$\n\n$$\\dfrac{4+10}{2} = 7$$\n\nDie nach Maßgabe der Verordnung (EU) Nr. 1380/2013 ermittelten Werte\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 10) (x - 4)>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 14 x - 40>0\n$$\n\nFactor.\n\n$$\n- (x - 10) (x - 4)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=4\n$$\n\n$$\nx=10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 14 x - 40$ |\n| --- | --- |\n| $(-\\infty,4)$ | $-$ |\n| $(4,10)$ | $+$ |\n| $(10,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(4, 10)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 10) (x - 4)<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 14 x - 40<0\n$$\n\nFactor.\n\n$$\n- (x - 10) (x - 4)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=4\n$$\n\n$$\nx=10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 14 x - 40$ |\n| --- | --- |\n| $(-\\infty,4)$ | $-$ |\n| $(4,10)$ | $+$ |\n| $(10,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 4) \\cup (10, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**A.** → Wahr\n\nDie nach unten geöffnete faktorisierte Form $Q(x)=-(x-4)(x-10)$ ist zwischen den Wurzeln nichtnegativ, einschließlich der Wurzeln selbst bei $\\ge$. Also gilt $Q(x)\\ge0$ genau auf $[4,10]$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nSetze den Mittelpunkt $x=7$ ein:\n\n$$\nQ(7)=(-(7-4))((7-10))=-(7-4)(7-10)\n$$\n\n$$\n7-4=3,\\qquad 7-10=-3\n$$\n\n$$\nQ(7)=-(3)\\cdot(-3)=(3)(3)=9\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nBei einer nach unten geöffneten Parabel liegt das Maximum auf der Symmetrieachse, dem Mittelpunkt der Wurzeln:\n\n$$\nx=\\dfrac{4+10}{2}=7\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAn der Wurzel $x=4$ gilt $Q(4)=0$. Die strenge Ungleichung $Q(x)>0$ schließt die Wurzeln aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Wahr\n\nAußerhalb der Wurzeln ist das Produkt $(x-4)(x-10)$ positiv, und mit dem führenden Minuszeichen wird $Q(x)$ negativ. Also gilt $Q(x)<0$ für $x<4$ oder $x>10$.\n\nDie Aussage ist wahr."
     ],
-    "solution_overview": "Gemeinsames Kontextthema 6.2.\n\nGemeinsame Lösung:\n1. Verwende den einzigen gemeinsamen Aufgabentext für Thema 6.2; lies keine Aussage als neues Szenario.\n2. Ordne die gegebenen Daten, bevor du Behauptungen prüfst. Ein gemeinsames quadratisches Vorzeichenmodell liefert Intervall- und Scheitelinformationen.\n3. Halte jede angegebene Definitionsmenge, jeden Endpunkt, jede Abtastregel und jede physikalische Einschränkung ein.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(7)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True."
+    "solution_overview": "Gemeinsames Kontextthema: Qualitätsscore $Q(x)=-(x-4)(x-10)$.\n\nEine nach unten geöffnete faktorisierte Quadratische ist zwischen den Wurzeln nichtnegativ und außerhalb negativ. Das Maximum liegt auf der Symmetrieachse $x=7$ mit $Q(7)=9$. Strenge Positivität schließt die Wurzeln aus; nichtstrenge Nichtnegativität schließt sie ein.\n\nA wahr, B wahr, C wahr, D falsch, E wahr."
   },
   "MATH 6.105": {
     "title": "Klausuraufgaben – 17",
@@ -2014,22 +2014,22 @@
   },
   "MATH 6.108": {
     "title": "Klausuraufgaben – 20",
-    "context": "- was ist war: $Q(x)=-(x-5)(x-11)$B i.M. p - (M. des Tiers $Q(x)\\ge0$ und gibt seine höchste Punktzahl auf der Achse der Symmetrie. Die Wurzeln, Endpunktinklusion und Maximum müssen alle von diesem gleichen sich nach unten öffnenden Quadrat gelesen werden.",
+    "context": "Ein Qualitätsscore lautet $Q(x)=-(x-5)(x-11)$. Der Prozess akzeptiert Einstellungen mit $Q(x)\\ge0$ und erreicht seinen höchsten Score auf der Symmetrieachse. Wurzeln, Endpunktinklusion und Maximum müssen alle aus derselben nach unten geöffneten Quadratischen gelesen werden.",
     "statements": [
-      "Die ann und ansinnen sind $[5,11]$.",
+      "Die akzeptierten Einstellungen sind $[5,11]$.",
       "$Q(8)=9$.",
-      "Das Maximum erreichte am $x=8$.",
-      "$Q(x)>0$ includes $x=5$.",
-      "$Q(x)<0$ für $x<5$ or $x>11$."
+      "Das Maximum liegt bei $x=8$.",
+      "$Q(x)>0$ schließt $x=5$ ein.",
+      "$Q(x)<0$ für $x<5$ oder $x>11$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 11) (x - 5)\\ge 0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 16 x - 55\\ge 0\n$$\n\nFactor.\n\n$$\n- (x - 11) (x - 5)\\ge 0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=5\n$$\n\n$$\nx=11\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 16 x - 55$ |\n| --- | --- |\n| $(-\\infty,5)$ | $-$ |\n| $(5,11)$ | $+$ |\n| $(11,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n[5, 11]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDer Stamm gibt\n\n$$Q(x)=-(x-5)(x-11)$$\n\nSubstitute $x=8$:\n\n$$Q(8)=-( 8-5 )( 8-11 )$$\n\n$$Q(8)=(-(3))(-3)$$\n\n$$Q(8)=9$$\n\ndie Behauptung $Q(8)=9$ holds.\n\nDie Aussage ist wahr.\n",
-      "**C.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$Q(x) = -(x-5)(x-11)$$\n\n$$-(x-5)(x-11) = -x^{2}+16x-55$$\n\n$$x = \\dfrac{5+11}{2}$$\n\n$$\\dfrac{5+11}{2} = 8$$\n\nDie nach Maßgabe der Verordnung (EU) Nr. 1380/2013 ermittelten Werte\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 11) (x - 5)>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 16 x - 55>0\n$$\n\nFactor.\n\n$$\n- (x - 11) (x - 5)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=5\n$$\n\n$$\nx=11\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 16 x - 55$ |\n| --- | --- |\n| $(-\\infty,5)$ | $-$ |\n| $(5,11)$ | $+$ |\n| $(11,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(5, 11)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n- (x - 11) (x - 5)<0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\n- x^{2} + 16 x - 55<0\n$$\n\nFactor.\n\n$$\n- (x - 11) (x - 5)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=5\n$$\n\n$$\nx=11\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 16 x - 55$ |\n| --- | --- |\n| $(-\\infty,5)$ | $-$ |\n| $(5,11)$ | $+$ |\n| $(11,\\infty)$ | $-$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, 5) \\cup (11, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr."
+      "**A.** → Wahr\n\nDie nach unten geöffnete faktorisierte Form $Q(x)=-(x-5)(x-11)$ ist zwischen den Wurzeln nichtnegativ, einschließlich der Wurzeln selbst bei $\\ge$. Also gilt $Q(x)\\ge0$ genau auf $[5,11]$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nSetze den Mittelpunkt $x=8$ ein:\n\n$$\nQ(8)=(-(8-5))((8-11))=-(8-5)(8-11)\n$$\n\n$$\n8-5=3,\\qquad 8-11=-3\n$$\n\n$$\nQ(8)=-(3)\\cdot(-3)=(3)(3)=9\n$$\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nBei einer nach unten geöffneten Parabel liegt das Maximum auf der Symmetrieachse, dem Mittelpunkt der Wurzeln:\n\n$$\nx=\\dfrac{5+11}{2}=8\n$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nAn der Wurzel $x=5$ gilt $Q(5)=0$. Die strenge Ungleichung $Q(x)>0$ schließt die Wurzeln aus.\n\nDie Aussage ist falsch.",
+      "**E.** → Wahr\n\nAußerhalb der Wurzeln ist das Produkt $(x-5)(x-11)$ positiv, und mit dem führenden Minuszeichen wird $Q(x)$ negativ. Also gilt $Q(x)<0$ für $x<5$ oder $x>11$.\n\nDie Aussage ist wahr."
     ],
-    "solution_overview": "Gemeinsames Kontextthema 6.2.\n\nGemeinsame Lösung:\n1. Verwende den einzigen gemeinsamen Aufgabentext für Thema 6.2; lies keine Aussage als neues Szenario.\n2. Ordne die gegebenen Daten, bevor du Behauptungen prüfst. Ein gemeinsames quadratisches Vorzeichenmodell liefert Intervall- und Scheitelinformationen.\n3. Halte jede angegebene Definitionsmenge, jeden Endpunkt, jede Abtastregel und jede physikalische Einschränkung ein.\n4. A: A downward-opening factored quadratic is nonnegative between its roots.\n5. A: The computed result makes this claim True.\n6. B: $Q(8)=-(3)(-3)=9$.\n7. B: The computed result makes this claim True.\n8. C: The axis is the midpoint of the two roots.\n9. C: The computed result makes this claim True.\n10. D: At the root the score is zero, so strict positivity excludes it.\n11. D: The computed result makes this claim False.\n12. E: The quadratic is negative outside its roots.\n13. E: The computed result makes this claim True."
+    "solution_overview": "Gemeinsames Kontextthema: Qualitätsscore $Q(x)=-(x-5)(x-11)$.\n\nEine nach unten geöffnete faktorisierte Quadratische ist zwischen den Wurzeln nichtnegativ und außerhalb negativ. Das Maximum liegt auf der Symmetrieachse $x=8$ mit $Q(8)=9$. Strenge Positivität schließt die Wurzeln aus; nichtstrenge Nichtnegativität schließt sie ein.\n\nA wahr, B wahr, C wahr, D falsch, E wahr."
   },
   "MATH 6.109": {
     "title": "Klausuraufgaben – 21",
@@ -2052,22 +2052,22 @@
   },
   "MATH 6.110": {
     "title": "Klausuraufgaben – 22",
-    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
     "statements": [
-      "Eine Theaterkasse verkauft Stehplätze für 28 EUR und Sitzplätze für 45 EUR. Sitzplätze müssen Stehplätze im genauen Verhältnis $2:1$ übertreffen, insgesamt dürfen höchstens 40 Tickets verkauft werden, und der Umsatz muss mindestens 1 200 EUR betragen. Dann sind die einzigen möglichen ganzen Anzahlen von Stehplätzen 12 und 13.",
-      "Die Temperatur in einem Ofen nach $x$ Minuten sind $T(x)=-x^{2}+20x+80$ Grad Celsius. Der Ofen ist heißer als $176^{\\circ}\\mathrm{C}$ zwischen 8 und 6 und",
-      "Ein co-swertemit einem 8-%-Basis-Quirk-umpf, bezogen auf den Anteil von 0,35 % pro Kilometer und mit der Folge der ausreichenden Masse des Flairs, so dass dies auch für den gesamten Flugkörper gilt. Mit einem Budget von 40 EUR ist jede Fahrt von maximal 80 km fair.",
-      "Ire ;wiesen; $0.5$ auf. $0.2$ kg Zucker zu 3 EUR/kg, 3 Eier zu jeweils 0,40 EUR verteilt und 1,50 EUR Energie. Sourur eigener/-Auresnlei-hur-Aur Produktion-a-Aur-Aur-Aur--\"------------------------------ur-------------------------------------------------------------------------------------------------------------------------------------------------------------ur-----------------------------------",
-      "Die Ungleichung $\\sqrt{3x-2}\\le|x-4|$ Nach $x\\le 2$ or $x\\ge 9$."
+      "Eine Theaterkasse verkauft Stehplätze für $28$ EUR und Sitzplätze für $45$ EUR. Sitzplätze müssen Stehplätze im genauen Verhältnis $2:1$ übertreffen, insgesamt dürfen höchstens $40$ Tickets verkauft werden, und der Umsatz muss mindestens $1{,}200$ EUR betragen. Dann sind die einzig möglichen ganzen Anzahlen von Stehplätzen $12$ und $13$.",
+      "Die Temperatur in einem Ofen nach $x$ Minuten beträgt $T(x)=-x^{2}+20x+80$ Grad Celsius. Der Ofen ist heißer als $176^{\\circ}\\mathrm{C}$ zwischen $8$ und $12$ Minuten.",
+      "Ein Kurier berechnet $8$ EUR Grundpreis plus $0{,}35$ EUR pro Kilometer und schlägt dann eine pauschale Kraftstoffzulage von $15\\%$ auf den gesamten Fahrpreis auf. Bei einem Budget von $40$ EUR ist jede Fahrt von höchstens $80$ km bezahlbar.",
+      "Eine Bäckerei backt Kuchen, die je $0{,}5$ kg Mehl zu $2$ EUR/kg, $0{,}2$ kg Zucker zu $3$ EUR/kg, $3$ Eier zu je $0{,}40$ EUR und $1{,}50$ EUR Energie benötigen. Bei einem Budget von $600$ EUR und Kühlkapazität für höchstens $200$ Eier ist die maximale Anzahl produzierbarer Kuchen kleiner als $70$.",
+      "Die Ungleichung $\\sqrt{3x-2}\\le|x-4|$ gilt genau dann, wenn $x\\le 2$ oder $x\\ge 9$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n3s\\le 40\n$$\n\n$$\ns\\le 13.\n$$\n\n$$28s+45\\cdot(2s) = 118s$$\n\n$$118s\\ge 1200$$\n\n$$\ns\\ge\\dfrac{1200}{118}\\approx 10.17.\n$$\n\n$$\ns=11\n$$\n\n$$\n1298\\ge 1200\n$$\n\nSie Sie an einmal ( nun auch, ) Dann gibt es sitzende Tickets und Tickets insgesamt. **Kapazität ** ** So . Der Aussage tritt aus, der bereits geschützt ist.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n-x^{2}+20x+80>176\n$$\n\n$$\n-x^{2}+20x-96>0\n$$\n\n$$\nx^{2}-20x+96<0\n$$\n\n$$\n(x-8)(x-12)<0\n$$\n\n$$\n8<x<12.\n$$\n\n$$T(8) = T(12)$$\n\n$$T(12) = 176$$\n\n\"Hotter than\" ist eine strenge Ungleichung, so dass das offene Intervall \"zwischen 8 und 12 Minuten\" übereinstimmt. An den Endpunkten, die nicht heißer sind.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n1.15\\bigl(8+0.35d\\bigr)\\le 40\n$$\n\n$$\n8+0.35d\\le\\dfrac{40}{1.15}=\\dfrac{800}{23}\n$$\n\n$$\n0.35d\\le\\dfrac{800}{23}-8=\\dfrac{616}{23}\n$$\n\n$$\nd\\le\\dfrac{616}{23\\cdot 0.35}=\\dfrac{1760}{23}\\approx 76.52.\n$$\n\nLass die Entfernung in Kilometern sein. Tadeln werden mit dem Stamme des Stammes und mit der zu den durchs mitdegangses.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$0.5\\cdot 2 = 1$$\n\n$$0.2\\cdot 3 = 0.6$$\n\n$$3\\cdot 0.40 = 1.2$$\n\n$$1 + 0.6 = 1.6$$\n\n$$1.6 + 1.2 = 2.8$$\n\n$$2.8 + 1.5 = 4.3$$\n\n$$\n4.3n\\le 600\n$$\n\n$$\nn\\le\\dfrac{600}{4.3}\\approx 139.5\n$$\n\n$$\n3n\\le 200\n$$\n\n$$\nn\\le 66.\\overline{6}\n$$\n\n$$\nn\\le 66\n$$\n\nDas Lesen der Arithmetik gegen den Aussage bestätigt den Wahrheitswert.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\n$$\n3x-2\\le(x-4)^{2}=x^{2}-8x+16\n$$\n\n$$\n0\\le x^{2}-11x+18=(x-2)(x-9).\n$$\n\n$$3x-2\\ge 0$$\n\n$$x\\ge\\dfrac{2}{3}$$\n\n$$\nx\\ge 4\n$$\n\n$$\n\\sqrt{3x-2}\\le x-4\n$$\n\n$$\nx\\ge 9\n$$\n\n$$\n\\dfrac{2}{3}\\le x<4\n$$\n\n$$\n\\sqrt{3x-2}\\le 4-x\n$$\n\n$$\n(x-2)(x-9)\\ge 0\n$$\n\n$$\nx\\le 2\n$$\n\n$$\n\\dfrac{2}{3}\\le x\\le 2\n$$\n\n$$\n\\sqrt{3x-2}\\le|x-4|\n$$\n\nBereich: . . . . . . . ... Quadrat: auf diese Kräfte. . . . . . . ... Die Quadratur ergibt wieder , daher auf dieser halben Linie. Zusammen mit der Domain: . Die vollständige Lösung ist . Der Aussage oder fälschlicherweise beinhaltet.\n\nDie Aussage ist falsch."
+      "**A.** → Falsch\n\nEs sei $s$ die Anzahl der Stehplätze (nichtnegative ganze Zahl). Dann gibt es $2s$ Sitzplätze und insgesamt $3s$ Tickets.\n\nKapazität:\n\n$$\n3s\\le 40 \\Rightarrow s\\le 13\n$$\n\nUmsatz:\n\n$$\n28s+45\\cdot(2s)=118s\\ge 1200 \\Rightarrow s\\ge\\dfrac{1200}{118}\\approx 10{,}17\n$$\n\nAlso kommen $s=11,12,13$ in Frage. Bei $s=11$ ist der Umsatz $1298\\ge 1200$. Die Behauptung lässt $11$ weg.\n\nDie Aussage ist falsch.",
+      "**B.** → Wahr\n\n$$\n-x^{2}+20x+80>176\n$$\n\n$$\n-x^{2}+20x-96>0\n$$\n\n$$\nx^{2}-20x+96<0\n$$\n\n$$\n(x-8)(x-12)<0\n$$\n\n$$\n8<x<12\n$$\n\n„Heißer als“ ist streng; an den Endpunkten gilt $T(8)=T(12)=176$, also nicht heißer. Das offene Intervall passt.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$\n1{,}15\\bigl(8+0{,}35d\\bigr)\\le 40\n$$\n\n$$\n8+0{,}35d\\le\\dfrac{40}{1{,}15}=\\dfrac{800}{23}\n$$\n\n$$\nd\\le\\dfrac{1760}{23}\\approx 76{,}52\n$$\n\nFahrten von $80$ km überschreiten das Budget.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nKosten pro Kuchen:\n\n$$\n0{,}5\\cdot 2 + 0{,}2\\cdot 3 + 3\\cdot 0{,}40 + 1{,}50 = 4{,}3\n$$\n\nBudget: $4{,}3n\\le 600 \\Rightarrow n\\le\\dfrac{600}{4{,}3}\\approx 139{,}5$.\n\nEier: $3n\\le 200 \\Rightarrow n\\le 66.\\overline{6}$, also $n\\le 66$.\n\nDas Maximum $66$ ist kleiner als $70$.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDefinitionsmenge: $3x-2\\ge 0$, also $x\\ge\\dfrac{2}{3}$.\n\n**Fall $x\\ge 4$:** Dann $\\sqrt{3x-2}\\le x-4$. Quadrieren liefert $(x-2)(x-9)\\ge 0$, zusammen mit $x\\ge 4$ also $x\\ge 9$.\n\n**Fall $\\dfrac{2}{3}\\le x<4$:** Dann $\\sqrt{3x-2}\\le 4-x$. Quadrieren liefert ebenfalls $(x-2)(x-9)\\ge 0$, zusammen mit diesem Intervall also $\\dfrac{2}{3}\\le x\\le 2$.\n\nDie vollständige Lösungsmenge ist $\\bigl[\\tfrac{2}{3},2\\bigr]\\cup[9,\\infty)$. Die Behauptung $x\\le 2$ oder $x\\ge 9$ schließt fälschlich Werte unter $\\tfrac{2}{3}$ ein.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Unabhängige Prüfungsansprüche: ein 2:1 Ticket-Mix-Erlösproblem mit einer ganzzahligen Kapazitätsobergrenze, einem quadratischen Ofentemperaturfenster, einem Kuriertarif mit einem prozentualen Zuschlag, einer durch Budget- und Eierlagerung begrenzten Bäckerei und einer Quadratwurzel-gegen-Absolutwertungleichheit, die Fallaufteilungen erfordert. Jede Aussage steht für sich; Domain-Restriktionen und Ganzzahl-Cutoffs entscheiden über mehrere falsche Aussagen."
+    "solution_overview": "Unabhängige Klausurbehauptungen: ein Ticket-Mix im Verhältnis $2:1$ mit ganzzahliger Kapazitätsgrenze, ein quadratisches Ofentemperaturfenster, ein Kuriertarif mit prozentualem Zuschlag, eine durch Budget und Eierlagerung begrenzte Bäckerei sowie eine Ungleichung Quadratwurzel gegen Absolutbetrag mit Fallunterscheidung. Jede Aussage steht für sich; Definitionsmengen und Ganzzahlschranken entscheiden über mehrere falsche Behauptungen."
   },
   "MATH 6.111": {
     "title": "Klausuraufgaben – 23",
