@@ -39,30 +39,82 @@ type AdminDb = Awaited<
   typeof import("@/integrations/supabase/client.server")
 >["supabaseAdmin"];
 
-async function listAllAuthUsers(db: AdminDb) {
-  const users: { id: string; email: string; created_at: string }[] = [];
-  let page = 1;
-  const perPage = 200;
-  for (;;) {
-    const { data, error } = await db.auth.admin.listUsers({ page, perPage });
-    if (error) throw error;
-    for (const u of data.users) {
-      if (u.email) {
-        users.push({ id: u.id, email: u.email, created_at: u.created_at });
+type AuthUserMeta = { id: string; email: string; created_at: string; phone?: string | null };
+
+const RPC_MISSING_HINT =
+  "В Supabase нет функции admin_list_users. Выполните SQL из supabase/migrations/20260825010000_admin_emails_and_list_users.sql в SQL Editor, либо добавьте SUPABASE_SERVICE_ROLE_KEY в Lovable Cloud / .env.";
+
+async function listAllAuthUsers(db: AdminDb, useServiceRole: boolean): Promise<AuthUserMeta[]> {
+  if (useServiceRole) {
+    const users: AuthUserMeta[] = [];
+    let page = 1;
+    const perPage = 200;
+    for (;;) {
+      const { data, error } = await db.auth.admin.listUsers({ page, perPage });
+      if (error) throw error;
+      for (const u of data.users) {
+        if (!u.email) continue;
+        const meta = u.user_metadata ?? {};
+        const phone =
+          typeof meta.phone === "string" && meta.phone.trim() ? meta.phone.trim() : null;
+        users.push({ id: u.id, email: u.email, created_at: u.created_at, phone });
       }
+      if (data.users.length < perPage) break;
+      page += 1;
+      if (page > 50) break;
     }
-    if (data.users.length < perPage) break;
-    page += 1;
-    if (page > 50) break;
+    return users;
   }
-  return users;
+
+  const { data, error } = await db.rpc("admin_list_users");
+  if (error) {
+    const message = error.message ?? "admin_list_users failed";
+    if (/admin_list_users|could not find|schema cache|does not exist/i.test(message)) {
+      throw new Error(RPC_MISSING_HINT);
+    }
+    throw new Error(message);
+  }
+
+  return (data ?? [])
+    .filter((u): u is typeof u & { email: string } => Boolean(u.email))
+    .map((u) => ({
+      id: u.user_id,
+      email: u.email,
+      created_at: u.registered_at,
+      phone: null,
+    }));
+}
+
+async function resolveAuthUser(
+  db: AdminDb,
+  userId: string,
+  useServiceRole: boolean,
+): Promise<AuthUserMeta> {
+  if (useServiceRole) {
+    const { data: authUser, error } = await db.auth.admin.getUserById(userId);
+    if (error || !authUser.user?.email) throw new Error("User not found");
+    const meta = authUser.user.user_metadata ?? {};
+    const phone =
+      typeof meta.phone === "string" && meta.phone.trim() ? meta.phone.trim() : null;
+    return {
+      id: authUser.user.id,
+      email: authUser.user.email,
+      created_at: authUser.user.created_at,
+      phone,
+    };
+  }
+
+  const users = await listAllAuthUsers(db, false);
+  const match = users.find((u) => u.id === userId);
+  if (!match) throw new Error("User not found");
+  return match;
 }
 
 export const adminGetCohortStats = createServerFn({ method: "GET" })
   .middleware([requireAdmin])
   .handler(async ({ context }): Promise<AdminCohortStats> => {
     const db = context.supabaseAdmin;
-    const authUsers = await listAllAuthUsers(db);
+    const authUsers = await listAllAuthUsers(db, Boolean(context.adminUsesServiceRole));
 
     const now = Date.now();
     const day = 86_400_000;
@@ -131,7 +183,21 @@ export const adminListUsers = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => ListUsersInput.parse(d))
   .handler(async ({ context, data }): Promise<AdminListUsersResult> => {
     const db = context.supabaseAdmin;
-    const authUsers = await listAllAuthUsers(db);
+    let authUsers: AuthUserMeta[];
+    try {
+      authUsers = await listAllAuthUsers(db, Boolean(context.adminUsesServiceRole));
+    } catch (err) {
+      const hint = err instanceof Error ? err.message : String(err);
+      return {
+        users: [],
+        total: 0,
+        page: data.page,
+        pageSize: data.pageSize,
+        source: "empty",
+        hint,
+      };
+    }
+
     const profilesRes = await db.from("profiles").select("user_id, display_name");
     const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
 
@@ -177,7 +243,17 @@ export const adminListUsers = createServerFn({ method: "POST" })
     const start = (data.page - 1) * data.pageSize;
     const users = rows.slice(start, start + data.pageSize);
 
-    return { users, total, page: data.page, pageSize: data.pageSize, source: "supabase_live" };
+    return {
+      users,
+      total,
+      page: data.page,
+      pageSize: data.pageSize,
+      source: total > 0 ? "supabase_live" : "empty",
+      hint:
+        total === 0 && !context.adminUsesServiceRole
+          ? "Нет аккаунтов (или нет доступа к admin_list_users). Проверьте миграцию admin_emails_and_list_users.sql."
+          : undefined,
+    };
   });
 
 export const adminGetUserDetail = createServerFn({ method: "POST" })
@@ -185,12 +261,14 @@ export const adminGetUserDetail = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => UserIdInput.parse(d))
   .handler(async ({ context, data }): Promise<AdminUserDetail> => {
     const db = context.supabaseAdmin;
-    const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
-    if (error || !authUser.user?.email) throw new Error("User not found");
-    const meta = authUser.user.user_metadata ?? {};
-    const phone =
-      typeof meta.phone === "string" && meta.phone.trim() ? meta.phone.trim() : null;
-    return fetchUserBundle(db, data.userId, authUser.user.email, authUser.user.created_at, phone);
+    const authUser = await resolveAuthUser(db, data.userId, Boolean(context.adminUsesServiceRole));
+    return fetchUserBundle(
+      db,
+      data.userId,
+      authUser.email,
+      authUser.created_at,
+      authUser.phone ?? null,
+    );
   });
 
 export const adminGetUserTimeline = createServerFn({ method: "POST" })
@@ -241,19 +319,16 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => z.object({ userId: z.string().uuid().optional() }).parse(d))
   .handler(async ({ context, data }): Promise<{ csv: string }> => {
     const db = context.supabaseAdmin;
+    const useServiceRole = Boolean(context.adminUsesServiceRole);
 
     if (data.userId) {
-      const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
-      if (error || !authUser.user?.email) throw new Error("User not found");
-      const meta = authUser.user.user_metadata ?? {};
-      const phone =
-        typeof meta.phone === "string" && meta.phone.trim() ? meta.phone.trim() : null;
+      const authUser = await resolveAuthUser(db, data.userId, useServiceRole);
       const detail = await fetchUserBundle(
         db,
         data.userId,
-        authUser.user.email,
-        authUser.user.created_at,
-        phone,
+        authUser.email,
+        authUser.created_at,
+        authUser.phone ?? null,
       );
 
       const lines = [
@@ -273,7 +348,7 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
       return { csv: lines.join("\n") };
     }
 
-    const authUsers = await listAllAuthUsers(db);
+    const authUsers = await listAllAuthUsers(db, useServiceRole);
     const profilesRes = await db.from("profiles").select("user_id, display_name");
     const profileMap = new Map((profilesRes.data ?? []).map((p) => [p.user_id, p.display_name]));
 
