@@ -153,12 +153,31 @@ export async function readUserRecord(userId: string): Promise<UserRecord | null>
 }
 
 export async function writeUserRecord(userId: string, record: UserRecord): Promise<void> {
-  await mkdir(USERS_DIR, { recursive: true });
   const file = userFile(userId);
   const tmp = file + ".tmp";
-  await writeFile(tmp, JSON.stringify(record, null, 2), "utf8");
-  await rename(tmp, file);
-  await registerUserId(userId);
+  const json = JSON.stringify(record, null, 2);
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      await mkdir(USERS_DIR, { recursive: true });
+      await writeFile(tmp, json, "utf8");
+      await rename(tmp, file);
+      await registerUserId(userId);
+      return;
+    } catch (error) {
+      const code = (error as NodeJS.ErrnoException)?.code;
+      // The store directory can vanish between mkdir and rename on ephemeral filesystems.
+      if (code !== "ENOENT" || attempt === 1) {
+        if (code === "ENOENT") {
+          await mkdir(USERS_DIR, { recursive: true });
+          await writeFile(file, json, "utf8");
+          await registerUserId(userId);
+          return;
+        }
+        throw error;
+      }
+    }
+  }
 }
 
 export async function withUserRecord<T>(
