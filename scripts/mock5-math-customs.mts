@@ -117,95 +117,81 @@ So the statement is True.`,
 }
 
 /**
- * Q23 — five independent hard algebra checks (thresholds, domains, traps).
+ * Q23 — three-number symmetric archive (Vieta style, harder than two-variable bank).
  */
 export function buildMathQ23Grind() {
-  const context = `Five independent algebraic checks are listed. Each claim is about a threshold, a count of solutions, or a structural feature — not a boxed final answer. Watch domains, extraneous roots after squaring, and absolute-value corners. Decide whether each claim is true or false.`;
+  const context = `An algebra archive stores three real numbers $a$, $b$ and $c$ only through the records
 
-  // A: (x+1)/(x-2)-(x-1)/(x+2)=4/(x^2-4) → 6x/(x^2-4)=4/(x^2-4) → x=2/3; domain x≠±2. One root. True
-  // B: at t=3, 1/(t(t+1))+1/((t+1)(t+2))=1/12+1/20=5/60+3/60=8/60=2/15; 2/(t(t+2))=2/15. Equal. True
-  // C: √(3x+1)=x-1 → one real root x=5>3. True
-  // D: |3x-4|≤|x+2| → [1/2,3], not [-1,3]. False
-  // E: (x-2)(x+3)(x-1)=x^3-7x+6, coeff of x^2 is 0 ≠ -1. False
+$$
+a+b+c=12,\\qquad ab+bc+ca=47,\\qquad abc=60.
+$$
+
+The original order was not recorded, so every conclusion must follow from symmetric identities or from the cubic having roots $a$, $b$ and $c$. No decimal approximation is used in the audit.
+
+Decide whether each statement is true or false.`;
+
+  // a²+b²+c² = 144 - 2·47 = 50
+  // (a-b)²+(b-c)²+(c-a)² = 2(50-47) = 6
+  // a³+b³+c³-3abc = (a+b+c)(a²+b²+c²-ab-bc-ca) = 12·3 = 36 ⇒ a³+b³+c³ = 36+180 = 216
+  // roots of t³-12t²+47t-60 = (t-3)(t-4)(t-5) ⇒ {3,4,5}
+  // 1/a+1/b+1/c = 47/60
 
   const statements = [
-    "After the left-hand side of $\\dfrac{x+1}{x-2}-\\dfrac{x-1}{x+2}=\\dfrac{4}{x^{2}-4}$ is written over a common denominator, the equation has exactly one real root in its natural domain.",
-    "At $t=3$, the sum $\\dfrac{1}{t(t+1)}+\\dfrac{1}{(t+1)(t+2)}$ equals $\\dfrac{2}{t(t+2)}$.",
-    "The equation $\\sqrt{3x+1}=x-1$ has exactly one real solution, and that solution is strictly larger than $3$.",
-    "The solution set of $|3x-4|\\le|x+2|$ is exactly the closed interval $[-1,3]$.",
-    "In the expanded form of $(x-2)(x+3)(x-1)$, the coefficient of $x^{2}$ equals $-1$.",
+    "$a^{2}+b^{2}+c^{2}=50$.",
+    "$(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=6$.",
+    "$a^{3}+b^{3}+c^{3}=220$.",
+    "$\\{a,b,c\\}=\\{3,4,5\\}$.",
+    "$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{60}{47}$.",
   ];
 
-  const answer_key = [true, true, true, false, false];
+  const answer_key = [true, true, false, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-Domain: $x\\neq\\pm 2$. Common denominator $x^{2}-4$:
-
 $$
-\\dfrac{(x+1)(x+2)-(x-1)(x-2)}{x^{2}-4}=\\dfrac{6x}{x^{2}-4}
+a^{2}+b^{2}+c^{2}=(a+b+c)^{2}-2(ab+bc+ca)=144-94=50
 $$
-
-The equation becomes $6x=4$, so $x=\\tfrac{2}{3}$, which lies in the domain. Exactly one real root.
 
 So the statement is True.`,
 
     `**B.** → True
 
-At $t=3$:
-
 $$
-\\dfrac{1}{3\\cdot 4}+\\dfrac{1}{4\\cdot 5}=\\dfrac{1}{12}+\\dfrac{1}{20}=\\dfrac{5+3}{60}=\\dfrac{8}{60}=\\dfrac{2}{15}
+(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=2\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)=2(50-47)=6
 $$
-
-$$
-\\dfrac{2}{3\\cdot 5}=\\dfrac{2}{15}
-$$
-
-The two sides match.
 
 So the statement is True.`,
 
-    `**C.** → True
-
-Need $x\\ge 1$ (radical domain and nonnegative right-hand side). Squaring:
+    `**C.** → False
 
 $$
-3x+1=(x-1)^{2}\\Rightarrow x^{2}-5x=0\\Rightarrow x(x-5)=0
-$$
-
-Only $x=5$ is admissible, and $5>3$.
-
-So the statement is True.`,
-
-    `**D.** → False
-
-Squaring both sides (valid for absolute values):
-
-$$
-(3x-4)^{2}\\le(x+2)^{2}\\Rightarrow 8x^{2}-28x+12\\le 0\\Rightarrow 2x^{2}-7x+3\\le 0
+a^{3}+b^{3}+c^{3}-3abc=(a+b+c)\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)=12\\cdot 3=36
 $$
 
 $$
-(2x-1)(x-3)\\le 0\\Rightarrow x\\in\\bigl[\\tfrac{1}{2},3\\bigr]
+a^{3}+b^{3}+c^{3}=36+3\\cdot 60=36+180=216\\neq 220
 $$
-
-That is not $[-1,3]$.
 
 So the statement is False.`,
+
+    `**D.** → True
+
+The numbers are the roots of
+
+$$
+t^{3}-12t^{2}+47t-60=0
+$$
+
+Testing shows $t=3$ is a root; dividing gives $(t-3)(t^{2}-9t+20)=(t-3)(t-4)(t-5)$. The unordered triple is $\\{3,4,5\\}$.
+
+So the statement is True.`,
 
     `**E.** → False
 
 $$
-(x-2)(x+3)=x^{2}+x-6
+\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{ab+bc+ca}{abc}=\\dfrac{47}{60}\\neq\\dfrac{60}{47}
 $$
-
-$$
-(x^{2}+x-6)(x-1)=x^{3}-x^{2}+x^{2}-x-6x+6=x^{3}-7x+6
-$$
-
-The coefficient of $x^{2}$ is $0$, not $-1$.
 
 So the statement is False.`,
   ];
@@ -213,7 +199,7 @@ So the statement is False.`,
   return {
     case_id: "MATH 2.MOCK.GRIND",
     id: "MATH 2.MOCK.GRIND",
-    title: "Five hard algebraic checks — domains, thresholds, traps",
+    title: "Three-number archive — symmetric identities and Vieta",
     chapter: 2,
     subsection: "2.5",
     context,
@@ -221,7 +207,7 @@ So the statement is False.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Rational equation: one root $2/3$. Partial-sum check at $t=3$ matches. Radical: only $x=5$. Absolute inequality is $[1/2,3]$, not $[-1,3]$. Cubic $x^{2}$-coeff is $0$.`,
+    solution_overview: `Squares sum to $50$; pairwise squared gaps sum to $6$; cubes sum to $216$ not $220$; roots $\\{3,4,5\\}$; reciprocal sum is $47/60$, not flipped.`,
   };
 }
 
