@@ -7,8 +7,8 @@ export const BBE_HOME = "/bbe" as const;
 export const WISO_HOME = "/wiso" as const;
 export const TRACK_STORAGE_KEY = "bbe-school-exam-track";
 
-/** Paths that belong to neither track (chooser / shared compare). */
-const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso"]);
+/** Paths that belong to neither track (chooser / shared compare / account chrome). */
+const NEUTRAL_PATHS = new Set(["/", "/bbe-vs-wiso", "/dashboard", "/account"]);
 
 /**
  * Canonical path pairs for optional parallel-page mapping.
@@ -82,7 +82,7 @@ export function storeExamTrack(track: ExamTrack): void {
 
 /**
  * Active exam track for chrome (logo, nav, toggle).
- * URL wins when unambiguous; otherwise session, then BBE.
+ * Track-owned URLs win; shared pages (/dashboard, /account, …) use session, then BBE.
  */
 export function resolveExamTrack(pathname: string): ExamTrack {
   const fromPath = getExamTrackFromPath(pathname);
@@ -95,10 +95,35 @@ export function trackHome(track: ExamTrack): string {
 }
 
 /**
- * Header track toggle always lands on that track's landing page.
- * Parallel-page mapping is available via `counterpartPath` when needed.
+ * Header / dashboard track when the URL is shared (`/dashboard`, `/account`).
+ * Prefer the only course the account owns; for dual enrollments keep session.
  */
-export function pathForTrack(_pathname: string, target: ExamTrack): string {
+export function resolveNavTrack(
+  pathname: string,
+  access: { hasLite?: boolean; hasFull?: boolean; hasWisoFull?: boolean },
+): ExamTrack {
+  const fromPath = getExamTrackFromPath(pathname);
+  if (fromPath) return fromPath;
+
+  const hasBbe = !!(access.hasLite || access.hasFull);
+  const hasWiso = !!access.hasWisoFull;
+  if (hasWiso && !hasBbe) return "wiso";
+  if (hasBbe && !hasWiso) return "bbe";
+  return readStoredExamTrack() ?? "bbe";
+}
+
+/**
+ * Prefer staying on the dashboard when the header track toggle flips, so Study
+ * tools / courses keep working without bouncing to the landing page.
+ */
+export function pathForTrack(pathname: string, target: ExamTrack): string {
+  const path = stripLocalePrefix(pathname);
+  if (path === "/dashboard" || path.startsWith("/dashboard/")) {
+    return "/dashboard";
+  }
+  if (path === "/account" || path.startsWith("/account/")) {
+    return "/account";
+  }
   return trackHome(target);
 }
 

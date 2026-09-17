@@ -1,8 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
+import { Layers, Shuffle, Sparkles } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
+import { storeExamTrack } from "@/lib/exam-track";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -75,7 +77,34 @@ const subjects = [
     to: "/wiso/products/full-course-german",
     ready: true,
   },
-];
+] as const;
+
+const studyTools = [
+  {
+    id: "flashcards",
+    title: "WiSo Flashcards",
+    blurb: "Flip cards for Economics (English), Mathematik (German), and Deutsch vocabulary.",
+    to: "/wiso/flashcards" as const,
+    accent: INDIGO,
+    icon: Layers,
+  },
+  {
+    id: "matching",
+    title: "WiSo Matching",
+    blurb: "Connect each term to the right definition from the same WiSo decks.",
+    to: "/wiso/matching" as const,
+    accent: "#4338CA",
+    icon: Shuffle,
+  },
+  {
+    id: "tutor",
+    title: "WiSo Tutor Exam",
+    blurb: "A random theory quiz that reshuffles every time you start.",
+    to: "/wiso/tutor-exam" as const,
+    accent: "#6366F1",
+    icon: Sparkles,
+  },
+] as const;
 
 function WisoFullCourseSubjects() {
   return (
@@ -157,6 +186,46 @@ function WisoFullCourseSubjects() {
               </div>
             ))}
           </div>
+
+          <section className="mt-14">
+            <div className="mb-6 text-center sm:text-left">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700 dark:text-indigo-300">
+                Study tools
+              </p>
+              <h2 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                WiSo flashcards, matching & tutor exam
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm text-muted-foreground sm:text-base">
+                Separate from BBE study tools — open these for your WiSo course decks.
+              </p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {studyTools.map((tool) => {
+                const Icon = tool.icon;
+                return (
+                  <Link
+                    key={tool.id}
+                    to={tool.to}
+                    onClick={() => storeExamTrack("wiso")}
+                    className="group flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                    style={{ borderTop: `4px solid ${tool.accent}` }}
+                  >
+                    <span
+                      className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg text-white"
+                      style={{ backgroundColor: tool.accent }}
+                    >
+                      <Icon className="h-4 w-4" />
+                    </span>
+                    <h3 className="font-display text-lg font-semibold">{tool.title}</h3>
+                    <p className="mt-2 flex-1 text-sm text-muted-foreground">{tool.blurb}</p>
+                    <span className="mt-4 text-xs font-semibold" style={{ color: tool.accent }}>
+                      Open {tool.id === "tutor" ? "tutor exam" : tool.id} →
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
         </div>
       </main>
     </div>

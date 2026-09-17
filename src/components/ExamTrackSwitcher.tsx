@@ -2,29 +2,56 @@ import { useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import {
+  getExamTrackFromPath,
   pathForTrack,
-  resolveExamTrack,
+  resolveNavTrack,
   storeExamTrack,
   type ExamTrack,
 } from "@/lib/exam-track";
+import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { cn } from "@/lib/utils";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
 export function ExamTrackSwitcher({ className }: { className?: string }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const search = useRouterState({ select: (s) => s.location.search });
   const navigate = useLocalizedNavigate();
-  const [track, setTrack] = useState<ExamTrack>(() => resolveExamTrack(pathname));
+  const { hasLite, hasFull, hasWisoFull, ready } = useAccountNavTier();
+  const [track, setTrack] = useState<ExamTrack>(() =>
+    resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull }),
+  );
 
   useEffect(() => {
-    const next = resolveExamTrack(pathname);
+    const fromPath = getExamTrackFromPath(pathname);
+    if (fromPath) {
+      setTrack(fromPath);
+      storeExamTrack(fromPath);
+      return;
+    }
+    if (!ready) return;
+    const next = resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
     setTrack(next);
     storeExamTrack(next);
-  }, [pathname]);
+  }, [pathname, hasLite, hasFull, hasWisoFull, ready]);
 
   const switchTo = (next: ExamTrack) => {
     if (next === track) return;
     storeExamTrack(next);
     setTrack(next);
+    const path = stripLocalePrefix(pathname);
+    if (path === "/dashboard" || path.startsWith("/dashboard/")) {
+      const tab = (search as { tab?: string } | undefined)?.tab;
+      void navigate({
+        to: "/dashboard",
+        search: tab ? { tab } : {},
+        replace: true,
+      });
+      return;
+    }
+    if (path === "/account" || path.startsWith("/account/")) {
+      return;
+    }
     const target = pathForTrack(pathname, next);
     void navigate({ to: target });
   };
@@ -72,7 +99,8 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
 /** Logo / brand that always returns to the active track landing. */
 export function TrackBrandMark({ compact = false }: { compact?: boolean }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const track = resolveExamTrack(pathname);
+  const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
+  const track = resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
   const home = track === "wiso" ? "/wiso" : "/bbe";
   const label = track === "wiso" ? "WiSo · BBE School" : "BBE School";
   const mark = track === "wiso" ? "WiSo" : "BBE";
