@@ -1,7 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardsSubjectArt } from "@/components/study-modes/ModeArt";
-import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
+import { createFileRoute } from "@tanstack/react-router";
+import { StudyToolsSubjectIndex } from "@/components/study-modes/StudyToolsSubjectIndex";
+import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
 
 export const Route = createFileRoute("/flashcards/")({
   head: () => ({
@@ -26,91 +25,13 @@ export const Route = createFileRoute("/flashcards/")({
 
 function FlashcardsIndexPage() {
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader compact maxWidthClassName="max-w-7xl" />
-
-      <main className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              Flashcards
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Choose a subject to drill terms and formulas.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {FLASHCARD_SUBJECTS.map((s) => {
-              const n = countCards(s.sections);
-              const cardInner = (
-                <>
-                  <FlashcardsSubjectArt subject={s.id} accent={s.accent} />
-                  <div className="flex flex-1 flex-col p-6">
-                    <h2 className="font-display text-xl font-semibold text-foreground">
-                      <span
-                        className="mr-2 inline-block h-2 w-2 rounded-full align-middle"
-                        style={{ backgroundColor: s.accent }}
-                      />
-                      {s.title}
-                    </h2>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                      {s.description}
-                    </p>
-                    <p className="mt-3 text-xs font-semibold text-muted-foreground">
-                      {s.comingSoon
-                        ? "Coming soon"
-                        : s.id === "english"
-                          ? `${n} cards · 3 modes`
-                          : `${n} cards · ${s.sections.length} topics`}
-                    </p>
-                    <span
-                      className={
-                        "mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm " +
-                        (s.comingSoon
-                          ? "cursor-not-allowed opacity-70"
-                          : "transition-all group-hover:brightness-110")
-                      }
-                      style={{
-                        backgroundColor: s.accent,
-                        boxShadow: s.comingSoon
-                          ? undefined
-                          : `0 4px 14px -4px ${s.accent}80`,
-                      }}
-                    >
-                      {s.comingSoon ? "Coming soon" : "Study flashcards →"}
-                    </span>
-                  </div>
-                </>
-              );
-
-              if (s.comingSoon) {
-                return (
-                  <div
-                    key={s.id}
-                    className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
-                    style={{ borderTop: `4px solid ${s.accent}` }}
-                  >
-                    {cardInner}
-                  </div>
-                );
-              }
-
-              return (
-                <Link
-                  key={s.id}
-                  to="/flashcards/$subject"
-                  params={{ subject: s.id }}
-                  className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-                  style={{ borderTop: `4px solid ${s.accent}` }}
-                >
-                  {cardInner}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </main>
-    </div>
+    <StudyToolsSubjectIndex
+      kind="flashcards"
+      subjectPath="/flashcards/$subject"
+      subjects={FLASHCARD_SUBJECTS.map((s) => ({
+        ...s,
+        artSubject: s.id,
+      }))}
+    />
   );
 }

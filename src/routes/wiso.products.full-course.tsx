@@ -23,7 +23,7 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 /** Dedicated WiSo poster — sharp art with indigo branding (no blue blur wash). */
-const FULL_COURSE_IMAGE = "/full-wiso-course-product-v2.png";
+const FULL_COURSE_IMAGE = "/full-wiso-course-product-v3.png";
 const FULL_COURSE_PRICE = 449;
 
 const PATH = "/wiso/products/full-course" as const;

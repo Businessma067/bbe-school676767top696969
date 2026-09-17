@@ -176,9 +176,10 @@ function gamesItem(track: ExamTrack): NavItem {
   return track === "wiso"
     ? {
         label: "Study tools",
-        href: "/wiso/flashcards",
+        href: "/dashboard",
         isRoute: true,
-        activePrefixes: ["/wiso/flashcards"],
+        search: { tab: "games" },
+        activePrefixes: ["/wiso/flashcards", "/wiso/matching", "/wiso/tutor-exam", "/dashboard"],
       }
     : {
         label: "Study tools",
@@ -187,6 +188,19 @@ function gamesItem(track: ExamTrack): NavItem {
         search: { tab: "games" },
         activePrefixes: ["/flashcards", "/matching", "/tutor-exam"],
       };
+}
+
+/** Chooser homepage (`/`) — short header set pointing at shared pages. */
+export function homepageNavItems(): NavItem[] {
+  return [
+    {
+      label: "WiSo oder BBE",
+      href: "/bbe-vs-wiso",
+      isRoute: true,
+      activePrefixes: ["/bbe-vs-wiso"],
+    },
+    productsItem("bbe"),
+  ];
 }
 
 export function guestNavItems(track: ExamTrack = "bbe"): NavItem[] {

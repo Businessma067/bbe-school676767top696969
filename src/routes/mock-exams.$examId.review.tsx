@@ -381,14 +381,14 @@ function TaskReviewWorkspace({
       </div>
 
       <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,28rem)] xl:w-[34rem] 2xl:w-[38rem]">
-        <div className="flex h-full max-h-[min(78vh,52rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm lg:max-h-[calc(100vh-5rem)]">
+        <div className="flex flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:max-h-[calc(100vh-5rem)] lg:overflow-hidden">
           <div className="border-b border-border px-5 py-3.5">
             <p className="font-display text-sm font-semibold">Explanations · Task {q.index}</p>
             <p className="mt-0.5 text-xs tabular-nums text-muted-foreground">
               {current.statementCorrect}/{current.statementCount} correct · {formatQuestionTime(current.seconds)}
             </p>
           </div>
-          <div className="min-h-0 flex-1 space-y-5 overflow-y-auto px-5 py-5 sm:px-7 sm:py-6 [scrollbar-width:thin] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
+          <div className="min-h-0 flex-1 space-y-5 px-5 py-5 sm:px-7 sm:py-6 lg:overflow-y-auto lg:[scrollbar-width:thin] lg:[&::-webkit-scrollbar]:w-1.5 lg:[&::-webkit-scrollbar-thumb]:rounded-full lg:[&::-webkit-scrollbar-thumb]:bg-border">
             {q.solutionOverview ? (
               <ExamSolutionOverview text={q.solutionOverview} subject={q.subject} />
             ) : null}

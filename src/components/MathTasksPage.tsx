@@ -23,7 +23,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
 import {
@@ -1857,7 +1857,7 @@ function MathPracticeAside({
   const calc = usePracticeCalcOptional();
   if (!showExplanations && !calc?.open) return null;
   return (
-    <PracticeRightSlot className="mt-4 w-full max-h-[min(70vh,32rem)] overflow-hidden lg:sticky lg:top-20 lg:mt-0 lg:block lg:h-[calc(100vh-6rem)] lg:max-h-none lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+    <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
       {children}
     </PracticeRightSlot>
   );
@@ -1909,7 +1909,7 @@ function AllExplanationsPanel({
     .trim();
 
   return (
-    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
+    <div className="practice-fade-in flex h-auto min-h-0 flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:overflow-hidden" data-practice-surface>
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
@@ -1927,7 +1927,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 bg-card px-7 py-7 sm:px-9 sm:py-8 lg:overflow-y-auto">
         <MathAnswerKeyTable answerKey={task.answer_key} />
         <MathProse text={body} />
       </div>

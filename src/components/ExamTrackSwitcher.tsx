@@ -105,7 +105,9 @@ export function TrackBrandMark({ compact = false }: { compact?: boolean }) {
       </div>
       <span
         className={cn(
-          "hidden font-display font-bold tracking-tight text-foreground sm:inline",
+          // Hide the long wordmark until xl so lg header chrome (nav + utilities)
+          // keeps breathing room and never overlaps the centered text links.
+          "hidden font-display font-bold tracking-tight text-foreground xl:inline",
           compact ? "text-sm" : "text-sm sm:text-base",
         )}
       >

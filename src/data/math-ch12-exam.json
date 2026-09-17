@@ -193,38 +193,6 @@
       "placeholder": false
     },
     {
-      "id": "math-12-205",
-      "case_id": "MATH 12.205",
-      "title": "Exam-style tasks - 7",
-      "subsection": "12.6",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "A language school has 150 learners: 63 study Spanish, 57 French, and 18 both. Exactly $49$ learners study neither language.",
-        "Two independent fair coins are tossed. Given a head on the first toss, the probability of a head on the second is greater than $49\\%$.",
-        "An arcade challenge pays $10$ credits with probability $\\frac3{10}$ and loses $4$ credits otherwise. The mean payoff is greater than $0.3$ credits.",
-        "A condition has prevalence $5\\%$. A test always detects the condition but falsely tests positive for $10\\%$ of healthy people. After a positive result, the probability of the condition is greater than $34\\%$.",
-        "A laboratory jar contains ten white and ten black capsules. Three capsules are sampled without replacement. The probability that all three are white is greater than $10\\%$."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nThis claim asks how many learners study neither Spanish nor French. First recover the union of the two language groups by inclusion-exclusion:\n\n$$\nN(S\\cup F) = 63+57-18\n$$\n\n$$\n63 + 57 = 120\n$$\n\n$$\n120 - 18 = 102\n$$\n\nAmong the $150$ learners, the complement is\n\n$$\nN(\\text{neither}) = 150-102\n$$\n\n$$\n150 - 102 = 48\n$$\n\nExactly $48$ study neither language. The claim states that the count is $49$.\n\nSo the statement is False.\n",
-        "**B.** → True\n\nThis claim asks for the probability of a head on the second toss given a head on the first. The coins are independent and fair, so the first outcome does not change the second:\n\n$$\nP(H_2\\mid H_1) = P(H_2) = \\frac{1}{2} = 0.5\n$$\n\nExpressed as a percentage, this is $50\\%$. The claim states that this probability is greater than $49\\%$.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nThis claim asks for the mean arcade payoff. With probability $\\frac{3}{10}$ the payoff is $10$ and otherwise it is $-4$:\n\n$$\nE(X) = 10\\cdot\\frac{3}{10}+(-4)\\cdot\\frac{7}{10} = 3-\\frac{28}{10} = \\frac{1}{5} = 0.2\n$$\n\nThe mean is $0.2$ credits. The claim states that it is greater than $0.3$.\n\nSo the statement is False.\n",
-        "**D.** → True\n\nLet $C$ be the condition and $+$ a positive test. Then $P(+\\mid C)=1$, $P(+\\mid C^c)=0.10$, $P(C)=0.05$:\n\n$$\nP(C\\mid +) = \\frac{1\\cdot 0.05}{1\\cdot 0.05+0.10\\cdot 0.95} = \\frac{0.05}{0.145} = \\frac{10}{29}\n$$\n\n$$\n\\approx 0.344828\n$$\n\nExpressed as a percentage, this is approximately $34.483\\%$. The claim states that this probability is greater than $34\\%$.\n\nSo the statement is True.\n",
-        "**E.** → True\n\nUnordered triples from twenty capsules give\n\n$$\nP(\\text{all white}) = \\frac{\\binom{10}{3}}{\\binom{20}{3}} = \\frac{120}{1140} = \\frac{2}{19}\n$$\n\n$$\n\\approx 0.105263\n$$\n\nExpressed as a percentage, this is approximately $10.526\\%$. The claim states that this probability is greater than $10\\%$.\n\nSo the statement is True.\n"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 205,
-      "solution_overview": "Five separate checks. Letter A recovers a neither-language count. Letter B uses independence of successive coin tosses. Letter C computes an arcade mean payoff. Letter D applies Bayes' theorem after a positive medical test. Letter E counts all-white triple draws without replacement.",
-      "placeholder": false
-    },
-    {
       "id": "math-12-206",
       "case_id": "MATH 12.206",
       "title": "Exam-style tasks - 8",

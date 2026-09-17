@@ -12,7 +12,7 @@ import {
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { useAuthGate } from "@/hooks/use-auth-gate";
-import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
 import {
@@ -48,12 +48,12 @@ import {
 
 type Progress = { passed: string[]; revision: string[] };
 
-const STORAGE_KEY = "bbe.english.course.progress.v1";
+const DEFAULT_STORAGE_KEY = "bbe.english.course.progress.v1";
 
-function loadProgress(): Progress {
+function loadProgress(storageKey: string): Progress {
   if (typeof window === "undefined") return { passed: [], revision: [] };
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return { passed: [], revision: [] };
     const p = JSON.parse(raw) as Progress;
     return { passed: p.passed ?? [], revision: p.revision ?? [] };
@@ -62,9 +62,9 @@ function loadProgress(): Progress {
   }
 }
 
-function saveProgress(p: Progress) {
+function saveProgress(storageKey: string, p: Progress) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  localStorage.setItem(storageKey, JSON.stringify(p));
 }
 
 function freeLimitOf(tier: EnglishTasksTier): number {
@@ -80,6 +80,12 @@ type Props = {
   tier: EnglishTasksTier;
   backTo: string;
   backLabel?: string;
+  /** Override chapter bank (e.g. WiSo German texts). Defaults to BBE English. */
+  chapters?: EnglishChapter[];
+  storageKey?: string;
+  /** Shown in practice-case labels, e.g. "English" or "Deutsch". */
+  subjectLabel?: string;
+  emptyHint?: ReactNode;
 };
 
 type ExplanationState = {
@@ -91,14 +97,28 @@ type ExplanationState = {
   highlight: string;
 };
 
-export function EnglishTasksPage({ tier }: Props) {
-  const chapters = useMemo(() => englishChaptersForTier(tier), [tier]);
+export function EnglishTasksPage({
+  tier,
+  chapters: chaptersProp,
+  storageKey = DEFAULT_STORAGE_KEY,
+  subjectLabel = "English",
+  emptyHint = (
+    <>
+      Tap <span className="font-semibold text-foreground">Chapters</span> above to browse English
+      tasks for the WU BBE exam.
+    </>
+  ),
+}: Props) {
+  const chapters = useMemo(
+    () => chaptersProp ?? englishChaptersForTier(tier),
+    [chaptersProp, tier],
+  );
   const [activeChapter, setActiveChapter] = useState<EnglishChapter["key"] | "revision" | null>(
     null,
   );
   const [activeIdx, setActiveIdx] = useState(0);
   const skipNextIdxResetRef = useRef(false);
-  const [progress, setProgress] = useState<Progress>(() => loadProgress());
+  const [progress, setProgress] = useState<Progress>(() => loadProgress(storageKey));
   const [expanded, setExpanded] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(chapters.map((c) => [c.key, false])),
   );
@@ -210,7 +230,7 @@ export function EnglishTasksPage({ tier }: Props) {
       setPracticeCase({
         subject: "english",
         chapterLabel:
-          activeChapter === "revision" ? "Revision" : `English · ${chapterTitle}`,
+          activeChapter === "revision" ? "Revision" : `${subjectLabel} · ${chapterTitle}`,
         taskId: activeCase.id,
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: stem || activeCase.context,
@@ -228,6 +248,7 @@ export function EnglishTasksPage({ tier }: Props) {
     activeIdx,
     activePassage,
     chapters,
+    subjectLabel,
     tier,
     setPracticeCase,
   ]);
@@ -240,7 +261,7 @@ export function EnglishTasksPage({ tier }: Props) {
         passed: prev.passed.filter((x) => !idSet.has(x)),
         revision: prev.revision.filter((x) => !idSet.has(x)),
       };
-      saveProgress(next);
+      saveProgress(storageKey, next);
       return next;
     });
   };
@@ -262,7 +283,7 @@ export function EnglishTasksPage({ tier }: Props) {
         passed.delete(id);
       }
       const next = { passed: [...passed], revision: [...revision] };
-      saveProgress(next);
+      saveProgress(storageKey, next);
       return next;
     });
   };
@@ -698,8 +719,7 @@ export function EnglishTasksPage({ tier }: Props) {
                 </div>
                 <h2 className="font-display text-xl font-bold">Pick a chapter</h2>
                 <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                  Tap <span className="font-semibold text-foreground">Chapters</span> above to browse
-                  English tasks for the WU BBE exam.
+                  {emptyHint}
                 </p>
               </div>
             )}
@@ -795,8 +815,8 @@ export function EnglishTasksPage({ tier }: Props) {
                     lockPageScroll={typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches}
                   />
                 </div>
-                <div className="flex min-h-0 w-full flex-col overflow-hidden lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]">
-                  <div className="practice-scroll flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain pr-1">
+                <div className="flex min-h-0 w-full flex-col lg:w-[min(42rem,46vw)] lg:shrink-0 lg:overflow-hidden xl:w-[min(44rem,42vw)]">
+                  <div className="practice-scroll flex min-h-0 flex-1 flex-col gap-3 pr-1 lg:overflow-y-auto lg:overscroll-contain">
                     <CaseCard
                       key={activeCase.id}
                       data={activeCase}
@@ -1009,7 +1029,7 @@ function EnglishPracticeAside({
   const calc = usePracticeCalcOptional();
   if (!showExplanations && !calc?.open) return null;
   return (
-    <PracticeRightSlot className="mt-4 w-full max-h-[min(70vh,32rem)] overflow-hidden lg:sticky lg:top-20 lg:mt-0 lg:block lg:h-[calc(100vh-6rem)] lg:max-h-none lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+    <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>
       {children}
     </PracticeRightSlot>
   );
@@ -1447,7 +1467,7 @@ function AllExplanationsPanel({
 
   return (
     <div
-      className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+      className="practice-fade-in flex h-auto min-h-0 flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:overflow-hidden"
       data-practice-surface
     >
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
@@ -1465,7 +1485,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 bg-card px-7 py-7 sm:px-9 sm:py-8 lg:overflow-y-auto">
         <AnswerKeyTable answerKey={task.answer_key} />
         {task.solution_overview?.trim() && (
           <div className="mb-8 border-b border-border/60 pb-6">

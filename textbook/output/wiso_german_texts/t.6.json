@@ -1,0 +1,400 @@
+{
+  "subsection": {
+    "id": "t.6",
+    "title": "Nudging und die Grenzen verhaltensökonomischer Politik",
+    "passage": "(1) Seit den 1970er-Jahren hat die Verhaltensökonomie das Bild des durchgängig rational rechnenden Menschen in Frage gestellt. Experimente von Daniel Kahneman und Amos Tversky zeigten, dass Entscheidungen systematisch davon abhängen, wie eine Option dargestellt wird, welche Alternative voreingestellt ist und wie viel Aufwand ihre Wahl verlangt. Aus diesen Befunden entwickelten Richard Thaler und Cass Sunstein 2008 das Konzept des Nudging: Eingriffe, die das Verhalten in eine bestimmte Richtung lenken, ohne Optionen zu verbieten oder wirtschaftliche Anreize spürbar zu verändern.\n\n(2) Zentral ist dabei der Begriff der Entscheidungsarchitektur. Weil jede Formularseite, jede Menükarte und jede Voreinstellung das Verhalten beeinflusst, gibt es nach Auffassung der Befürworter keine neutrale Gestaltung; die Frage sei nur, ob sie bewusst oder zufällig erfolge. Das meistzitierte Beispiel ist die Organspende: In Staaten, in denen jede Person als Spender gilt, solange sie nicht widerspricht, liegen die Zustimmungsquoten bei über neunzig Prozent, während sie in vergleichbaren Staaten mit ausdrücklicher Zustimmungsregelung teils unter zwanzig Prozent bleiben.\n\n(3) Von der Forschung fand die Idee rasch den Weg in die Verwaltung. 2010 richtete die britische Regierung mit dem Behavioural Insights Team die erste staatliche Einheit dieser Art ein; inzwischen bestehen weltweit über zweihundert vergleichbare Stellen. Bekannt wurde ein Feldversuch, in dem säumige Steuerpflichtige einen Brief mit dem Hinweis erhielten, dass die überwiegende Mehrheit ihrer Nachbarn die Steuer fristgerecht zahle. Die Zahlungsquote stieg um einige Prozentpunkte — bei Kosten, die kaum über dem Porto lagen.\n\n(4) Genau dieses Verhältnis von Aufwand und Wirkung führen Befürworter als stärkstes Argument an. Ein Nudge verbiete nichts, koste wenig und lasse denjenigen unberührt, der ohnehin anders entscheiden möchte; Thaler und Sunstein nannten das \"libertären Paternalismus\". In der Altersvorsorge etwa erhöhte die automatische Einschreibung in betriebliche Sparpläne die Teilnahmequoten drastisch, ohne dass jemand zum Sparen gezwungen wurde. Pro eingesetztem Euro, so eine verbreitete Rechnung, bewirkten solche Maßnahmen mehr als manche Steuervergünstigung.\n\n(5) Seit einigen Jahren mehren sich jedoch Zweifel an der Größe dieser Effekte. Eine vielbeachtete Auswertung verglich die in wissenschaftlichen Zeitschriften berichteten Ergebnisse mit den Daten staatlicher Nudge-Einheiten, die alle ihre Versuche dokumentieren, auch die erfolglosen. Während der durchschnittliche Effekt in den publizierten Studien bei rund acht Prozentpunkten lag, betrug er in den Verwaltungsdaten nur etwa anderthalb Prozentpunkte. Die Differenz erklären die Autoren vor allem mit dem Publikationsbias: Auffällige Ergebnisse werden häufiger veröffentlicht als unauffällige.\n\n(6) Ein zweiter Einwand ist normativer Art. Wenn eine Behörde Voreinstellungen so setzt, dass die von ihr bevorzugte Option gewählt wird, nutzt sie kognitive Schwächen aus, statt Argumente vorzulegen. Kritiker sprechen von Manipulation und fragen, wer festlege, was im wohlverstandenen Interesse der Bürgerinnen und Bürger liege. Verteidiger entgegnen, ein Nudge sei legitim, solange er offengelegt werde und leicht zu umgehen sei; Studien deuten darauf hin, dass Transparenz die Wirkung nicht wesentlich schmälert.\n\n(7) Der politisch folgenreichste Einwand betrifft die Verdrängung stärkerer Instrumente. In der Klimapolitik senken Stromrechnungen mit einem Vergleich zum Nachbarschaftsverbrauch den Konsum messbar, aber nur im niedrigen einstelligen Prozentbereich — weit weniger als eine wirksame Bepreisung von Emissionen. Befragungen zeigen zudem, dass Bürgerinnen und Bürger regulatorische Maßnahmen weniger unterstützen, wenn ihnen zuvor ein Nudge als Lösung präsentiert wurde. Nudges könnten damit als bequeme Ersatzhandlung dienen, die den Eindruck von Handlungsfähigkeit erzeugt.\n\n(8) Die Forschung reagiert auf diese Kritik mit neuen Ansätzen. Unter dem Stichwort \"Boosting\" wird versucht, Kompetenzen zu stärken, statt Entscheidungen zu lenken, etwa durch einfache Faustregeln zur Einschätzung von Risiken. Parallel dazu haben sich sogenannte Sludge-Audits verbreitet: Sie prüfen, wo Verwaltungsverfahren unnötige Hürden enthalten, die Berechtigte von Leistungen abhalten. Der Abbau solcher Reibung gilt inzwischen als wirksamer als das Hinzufügen neuer Anstupser.\n\n(9) Damit verschiebt sich die Debatte. Nicht mehr die Frage, ob Nudges wirken, steht im Zentrum, sondern wie groß ihr Beitrag im Vergleich zu Regeln, Preisen und Investitionen ausfällt und unter welchen Bedingungen sie diese ergänzen statt ersetzen. Ob die Verhaltensökonomie damit zu einem bescheideneren, aber verlässlicheren Werkzeug der Politik wird oder ob sie ihren Anspruch grundsätzlich überdehnt hat, ist bislang nicht entschieden.",
+    "paragraph_count": 9
+  },
+  "tasks": [
+    {
+      "id": "de-t-6-01",
+      "case_id": "DE T.6.01",
+      "title": "Aufgabe 1",
+      "exam_title": "Absätze 1–3",
+      "context": "Die Aussagen prüfen das genaue Verständnis der Definition des Nudging, der Entscheidungsarchitektur und der ersten Anwendungen in der Verwaltung.",
+      "kind": "reading",
+      "statements": [
+        "Nudges verändern dem Text zufolge weder die zulässigen Optionen noch die wirtschaftlichen Anreize spürbar.",
+        "Nach Auffassung der Befürworter gibt es eine neutrale Entscheidungsarchitektur, die das Verhalten nicht beeinflusst.",
+        "In Staaten mit Widerspruchsregelung liegen die Zustimmungsquoten zur Organspende laut Text bei über neunzig Prozent.",
+        "Das Behavioural Insights Team wurde dem Text zufolge 2008 in den Vereinigten Staaten gegründet.",
+        "Im beschriebenen Steuer-Feldversuch wurde den säumigen Zahlern mitgeteilt, dass die meisten ihrer Nachbarn fristgerecht zahlen."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Nudges verändern dem Text zufolge weder die zulässigen Optionen noch die wirtschaftlichen Anreize spürbar.**\n\nAbsatz 1 definiert Nudging über genau diese doppelte Grenze: Eingriffe, die das Verhalten lenken, \"ohne Optionen zu verbieten oder wirtschaftliche Anreize spürbar zu verändern\". Beide Bedingungen stehen im Text nebeneinander, und die Aussage führt beide mit.\n\nWichtig ist das Wort \"spürbar\". Der Text schließt nicht jede Veränderung aus, sondern nur eine merkliche — sonst wäre schon das Porto des Steuerbriefs aus Absatz 3 ein Verstoß gegen die eigene Definition.\n\n**Tipp:** Definitionssätze prüfen Sie am besten gliedweise: Wird ein Merkmal weggelassen oder verschärft, stimmt die Aussage nicht mehr.\n\nSie trifft zu, weil sie die Definition vollständig und samt ihrer eigenen Abschwächung wiedergibt.",
+        "**B) Nach Auffassung der Befürworter gibt es eine neutrale Entscheidungsarchitektur, die das Verhalten nicht beeinflusst.**\n\nAbsatz 2 behauptet das Gegenteil: Weil jede Formularseite, jede Menükarte und jede Voreinstellung wirkt, \"gibt es nach Auffassung der Befürworter keine neutrale Gestaltung; die Frage sei nur, ob sie bewusst oder zufällig erfolge\".\n\nDie Aussage übernimmt Zuschreibung und Begriff korrekt und streicht allein die Verneinung. Damit fällt die Rechtfertigungsbasis des ganzen Ansatzes: Nur wenn keine Gestaltung neutral ist, lässt sich bewusstes Gestalten als unvermeidlich darstellen.\n\n**Falle:** Ein eingeschobenes \"keine\" ist schnell überlesen, kehrt hier aber die Position der Befürworter in ihr Gegenteil.\n\nSie scheitert, weil der Text eine neutrale Entscheidungsarchitektur ausdrücklich für unmöglich erklärt.",
+        "**C) In Staaten mit Widerspruchsregelung liegen die Zustimmungsquoten zur Organspende laut Text bei über neunzig Prozent.**\n\nAbsatz 2 beschreibt die Regelung, ohne das Fachwort zu benutzen: In Staaten, \"in denen jede Person als Spender gilt, solange sie nicht widerspricht\", liegen die Zustimmungsquoten \"bei über neunzig Prozent\". Genau das ist die Widerspruchsregelung.\n\nDie Aussage verlangt also einen kleinen Übersetzungsschritt vom beschriebenen Verfahren zum Begriff — und ordnet die Zahl dabei der richtigen Seite zu. Das Gegenstück, die ausdrückliche Zustimmungsregelung, bleibt im Text teils unter zwanzig Prozent.\n\nSie trifft zu, weil Regelungstyp und Quote im Text im selben Satz miteinander verknüpft sind.",
+        "**D) Das Behavioural Insights Team wurde dem Text zufolge 2008 in den Vereinigten Staaten gegründet.**\n\nAbsatz 3 nennt zwei andere Angaben: \"2010 richtete die britische Regierung mit dem Behavioural Insights Team die erste staatliche Einheit dieser Art ein\". Die Aussage irrt damit doppelt, im Jahr und im Staat.\n\n2008 gehört im Text an eine andere Stelle: Es ist das Jahr, in dem Thaler und Sunstein das Konzept des Nudging entwickelten (Absatz 1). Die Aussage zieht also die Konzeptjahreszahl zur Gründung herüber.\n\n**Falle:** Nennt ein Text zwei Daten in kurzem Abstand, prüfen Sie für jedes gesondert, welches Ereignis daran hängt.\n\nSie scheitert, weil Gründungsjahr und Gründungsland beide von der Angabe in Absatz 3 abweichen.",
+        "**E) Im beschriebenen Steuer-Feldversuch wurde den säumigen Zahlern mitgeteilt, dass die meisten ihrer Nachbarn fristgerecht zahlen.**\n\nAbsatz 3 beschreibt genau diesen Brief: Säumige Steuerpflichtige erhielten den Hinweis, \"dass die überwiegende Mehrheit ihrer Nachbarn die Steuer fristgerecht zahle\". Der Nudge besteht hier in einer sozialen Vergleichsinformation, nicht in einer Drohung.\n\nDie Aussage ersetzt \"überwiegende Mehrheit\" durch \"die meisten\" — eine zulässige Paraphrase, weil beide Ausdrücke dieselbe Mengenangabe treffen und keine Zahl verschärfen.\n\nSie trifft zu, weil Adressaten und Inhalt des Schreibens dem Absatz sinngleich entsprechen und der Text die Wirkung des Briefs im Anschluss selbst beziffert."
+      ],
+      "highlights": [
+        "ohne Optionen zu verbieten oder wirtschaftliche Anreize spürbar zu verändern",
+        "gibt es nach Auffassung der Befürworter keine neutrale Gestaltung",
+        "liegen die Zustimmungsquoten bei über neunzig Prozent",
+        "2010 richtete die britische Regierung mit dem Behavioural Insights Team die erste staatliche Einheit",
+        "dass die überwiegende Mehrheit ihrer Nachbarn die Steuer fristgerecht zahle"
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 1,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-02",
+      "case_id": "DE T.6.02",
+      "title": "Aufgabe 2",
+      "exam_title": "Absätze 4–6",
+      "context": "Die Aussagen prüfen das Verständnis der Befürworterargumente, der Effektgrößen-Debatte und des normativen Einwands.",
+      "kind": "reading",
+      "statements": [
+        "Thaler und Sunstein bezeichneten ihren Ansatz als \"libertären Paternalismus\".",
+        "Die automatische Einschreibung in betriebliche Sparpläne erhöhte die Teilnahmequoten, ohne jemanden zum Sparen zu zwingen.",
+        "In den Verwaltungsdaten staatlicher Nudge-Einheiten fiel der durchschnittliche Effekt größer aus als in den publizierten Studien.",
+        "Als Hauptgrund für die Differenz zwischen beiden Datenquellen nennt der Text den Publikationsbias.",
+        "Laut Text schmälert Transparenz die Wirkung von Nudges erheblich."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Thaler und Sunstein bezeichneten ihren Ansatz als \"libertären Paternalismus\".**\n\nAbsatz 4 schreibt den Ausdruck ausdrücklich diesen beiden Autoren zu: Thaler und Sunstein nannten ihren Ansatz \"libertären Paternalismus\". Die Aussage ordnet Begriff und Urheber damit korrekt zu.\n\nDer Absatz erklärt den Doppelnamen auch: libertär, weil ein Nudge nichts verbietet und denjenigen unberührt lässt, \"der ohnehin anders entscheiden möchte\"; paternalistisch, weil er dennoch in eine bestimmte Richtung lenkt.\n\nSie trifft zu, weil der Text die Bezeichnung wörtlich nennt und sie keiner anderen Seite der Debatte in den Mund legt.",
+        "**B) Die automatische Einschreibung in betriebliche Sparpläne erhöhte die Teilnahmequoten, ohne jemanden zum Sparen zu zwingen.**\n\nAbsatz 4 nennt beide Hälften in einem Satz: In der Altersvorsorge \"erhöhte die automatische Einschreibung in betriebliche Sparpläne die Teilnahmequoten drastisch, ohne dass jemand zum Sparen gezwungen wurde\".\n\nDas Beispiel belegt im Absatz nicht eine große Wirkung an sich, sondern das Verhältnis von Aufwand und Wirkung — es soll zeigen, dass Freiwilligkeit und Verhaltensänderung zusammengehen.\n\nDie Aussage schwächt \"drastisch\" zu einem einfachen Anstieg ab und bleibt damit unterhalb der Textbehauptung. Sie ist zutreffend, weil Wirkung und Zwangsfreiheit im Text gemeinsam ausgewiesen werden.",
+        "**C) In den Verwaltungsdaten staatlicher Nudge-Einheiten fiel der durchschnittliche Effekt größer aus als in den publizierten Studien.**\n\nAbsatz 5 stellt die Werte klar gegenüber: rund acht Prozentpunkte in den publizierten Studien, \"nur etwa anderthalb Prozentpunkte\" in den Verwaltungsdaten. Die Aussage vertauscht die Zuordnung, ohne die Zahlen selbst anzutasten.\n\nDamit verschwindet der Grund des Vergleichs. Der Absatz erklärt die Differenz mit dem Publikationsbias, weil auffällige Ergebnisse häufiger veröffentlicht werden. Lägen die Verwaltungswerte höher, ergäbe diese Erklärung keinen Sinn.\n\n**Falle:** Stehen zwei Zahlen in einem Satz, wird meist die Zuordnung getauscht und nicht der Wert verändert.\n\nSie scheitert, weil der Verwaltungswert im Text deutlich unter dem Publikationswert liegt.",
+        "**D) Als Hauptgrund für die Differenz zwischen beiden Datenquellen nennt der Text den Publikationsbias.**\n\nAbsatz 5 benennt die Ursache und definiert sie gleich mit: \"Die Differenz erklären die Autoren vor allem mit dem Publikationsbias: Auffällige Ergebnisse werden häufiger veröffentlicht als unauffällige.\"\n\nDie Aussage übernimmt auch die Rangmarkierung. Das \"vor allem\" im Text und der \"Hauptgrund\" in der Aussage sagen dasselbe: Es ist die wichtigste, nicht die einzige Erklärung.\n\nDazu passt die Bauart des Vergleichs: Die Nudge-Einheiten dokumentieren \"alle ihre Versuche, auch die erfolglosen\", während Zeitschriften auswählen — genau darin liegt die Verzerrung.\n\nSie trifft zu, weil der Text den Publikationsbias ausdrücklich als vorrangige Ursache führt.",
+        "**E) Laut Text schmälert Transparenz die Wirkung von Nudges erheblich.**\n\nAbsatz 6 sagt das Gegenteil: \"Studien deuten darauf hin, dass Transparenz die Wirkung nicht wesentlich schmälert.\" Die Aussage streicht die Verneinung und dreht damit den Befund um.\n\nEntscheidend ist, wem dieser Satz dient: Die Verteidiger stützen darauf ihre Position, ein Nudge sei legitim, \"solange er offengelegt werde und leicht zu umgehen sei\". Würde Transparenz die Wirkung zerstören, wäre diese Verteidigung wertlos.\n\n**Falle:** Die Verneinung steckt mitten im Nebensatz und fällt beim schnellen Lesen leicht aus.\n\nSie scheitert, weil der Text Offenlegung und Wirksamkeit gerade für vereinbar hält."
+      ],
+      "highlights": [
+        "libertären Paternalismus",
+        "erhöhte die automatische Einschreibung in betriebliche Sparpläne die Teilnahmequoten drastisch",
+        "betrug er in den Verwaltungsdaten nur etwa anderthalb Prozentpunkte",
+        "Die Differenz erklären die Autoren vor allem mit dem Publikationsbias",
+        "dass Transparenz die Wirkung nicht wesentlich schmälert"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 2,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-03",
+      "case_id": "DE T.6.03",
+      "title": "Aufgabe 3",
+      "exam_title": "Absätze 7–9",
+      "context": "Die Aussagen prüfen das Verständnis des Verdrängungseinwands, der neueren Ansätze und der offenen Schlussfrage.",
+      "kind": "reading",
+      "statements": [
+        "Der Nachbarschaftsvergleich auf Stromrechnungen senkt den Verbrauch dem Text zufolge um zweistellige Prozentsätze.",
+        "Befragungen zeigen laut Text, dass die Unterstützung für regulatorische Maßnahmen sinkt, wenn zuvor ein Nudge als Lösung präsentiert wurde.",
+        "\"Boosting\" zielt dem Text zufolge darauf, Entscheidungen zu lenken, statt Kompetenzen zu stärken.",
+        "Sludge-Audits prüfen, wo Verwaltungsverfahren unnötige Hürden enthalten.",
+        "Der Schlussabsatz erklärt die Frage nach dem Anspruch der Verhaltensökonomie für abschließend beantwortet."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Der Nachbarschaftsvergleich auf Stromrechnungen senkt den Verbrauch dem Text zufolge um zweistellige Prozentsätze.**\n\nAbsatz 7 beziffert die Wirkung ausdrücklich klein: Solche Rechnungen senken den Konsum \"messbar, aber nur im niedrigen einstelligen Prozentbereich\". Die Aussage macht daraus zweistellige Werte und überdehnt den Befund um eine Größenordnung.\n\nDer Absatz braucht diese Kleinheit für sein Argument. Nur weil der Effekt \"weit weniger als eine wirksame Bepreisung von Emissionen\" leistet, lässt sich von der Verdrängung stärkerer Instrumente sprechen.\n\n**Falle:** \"Messbar\" heißt nicht \"groß\"; der Text räumt den Effekt ein und begrenzt ihn im selben Satz.\n\nSie scheitert, weil die genannte Spanne einstellig ist und der Text sie zusätzlich als niedrig kennzeichnet.",
+        "**B) Befragungen zeigen laut Text, dass die Unterstützung für regulatorische Maßnahmen sinkt, wenn zuvor ein Nudge als Lösung präsentiert wurde.**\n\nAbsatz 7 berichtet genau diesen Befund: Bürgerinnen und Bürger unterstützen regulatorische Maßnahmen \"weniger, wenn ihnen zuvor ein Nudge als Lösung präsentiert wurde\". Bedingung und Folge stehen in der Aussage in derselben Richtung.\n\nIm Absatz trägt der Befund die Verdrängungsthese: Der Schaden liegt nicht in der Wirkung des Nudges selbst, sondern in seiner politischen Nebenwirkung — er nimmt dem stärkeren Instrument den Rückhalt.\n\nSie trifft zu, weil der Text den Zusammenhang als Befragungsergebnis ausweist und die Aussage ihn genau als solches zitiert.",
+        "**C) \"Boosting\" zielt dem Text zufolge darauf, Entscheidungen zu lenken, statt Kompetenzen zu stärken.**\n\nAbsatz 8 formuliert die Zielrichtung umgekehrt: Unter dem Stichwort Boosting wird versucht, \"Kompetenzen zu stärken, statt Entscheidungen zu lenken\", etwa durch einfache Faustregeln zur Einschätzung von Risiken.\n\nDie Aussage tauscht die beiden Glieder und macht Boosting damit zu dem, wovon es sich abgrenzt — das Lenken von Entscheidungen ist die Aufgabe des Nudges. Die Faustregeln zeigen die andere Logik: Sie befähigen, statt vorzusortieren.\n\n**Falle:** Bei \"A statt B\"-Konstruktionen genügt ein Vertauschen der Pole, um die Bedeutung vollständig zu kippen.\n\nSie scheitert, weil Boosting im Text auf Kompetenz und nicht auf Steuerung setzt.",
+        "**D) Sludge-Audits prüfen, wo Verwaltungsverfahren unnötige Hürden enthalten.**\n\nAbsatz 8 definiert sie genau so: Sludge-Audits \"prüfen, wo Verwaltungsverfahren unnötige Hürden enthalten, die Berechtigte von Leistungen abhalten\". Die Aussage gibt diesen Kern wieder und lässt nur die Folgeangabe weg.\n\nFür die Richtung der Aussage ist das unerheblich, doch der Zusatz erklärt, warum der Text den Ansatz so hoch bewertet: Es geht um Menschen, die einen Anspruch hätten und am Verfahren scheitern. Deshalb gilt der Abbau solcher Reibung inzwischen als \"wirksamer als das Hinzufügen neuer Anstupser\".\n\nSie trifft zu, weil sie die Prüffunktion so benennt, wie der Absatz sie einführt.",
+        "**E) Der Schlussabsatz erklärt die Frage nach dem Anspruch der Verhaltensökonomie für abschließend beantwortet.**\n\nAbsatz 9 stellt zwei Ausgänge nebeneinander — ein \"bescheideneres, aber verlässlicheres Werkzeug der Politik\" oder einen grundsätzlich überdehnten Anspruch — und schließt mit den Worten, dies sei \"bislang nicht entschieden\".\n\nDie Aussage verwandelt diese Alternative in ein Ergebnis. Schon die Satzform spricht dagegen: Ein \"Ob … oder ob …\" ohne Auflösung hält die Frage offen, statt sie zu beantworten.\n\n**Tipp:** Achten Sie am Textende auf Wörter wie \"bislang\" — sie datieren den Stand der Debatte und verweigern das letzte Wort.\n\nSie scheitert, weil der Absatz die Entscheidung ausdrücklich aufschiebt."
+      ],
+      "highlights": [
+        "aber nur im niedrigen einstelligen Prozentbereich",
+        "regulatorische Maßnahmen weniger unterstützen, wenn ihnen zuvor ein Nudge als Lösung präsentiert wurde",
+        "Kompetenzen zu stärken, statt Entscheidungen zu lenken",
+        "Sie prüfen, wo Verwaltungsverfahren unnötige Hürden enthalten",
+        "ist bislang nicht entschieden"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 3,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-04",
+      "case_id": "DE T.6.04",
+      "title": "Aufgabe 4",
+      "exam_title": "Schlussfolgerungen & Wortbedeutung im Kontext",
+      "context": "Die Aussagen prüfen, ob die Fachbegriffe des Textes im Kontext richtig gedeutet und daraus zulässige Schlüsse gezogen werden.",
+      "kind": "reading",
+      "statements": [
+        "\"Entscheidungsarchitektur\" bezeichnet im Text die Gestaltung des Umfelds, in dem eine Wahl getroffen wird.",
+        "\"Publikationsbias\" meint hier, dass auffällige Ergebnisse häufiger veröffentlicht werden als unauffällige.",
+        "\"Sludge\" steht im Text für zusätzliche Anstupser, die das Verhalten in eine gewünschte Richtung lenken.",
+        "Aus Absatz 7 folgt, dass der Text Nudges in der Klimapolitik für ein ausreichendes Instrument hält.",
+        "Der Ausdruck \"bequeme Ersatzhandlung\" beschreibt, dass Nudges den Eindruck von Handlungsfähigkeit erzeugen können."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Entscheidungsarchitektur\" bezeichnet im Text die Gestaltung des Umfelds, in dem eine Wahl getroffen wird.**\n\nAbsatz 2 führt den Begriff nicht über eine Definition ein, sondern über Beispiele: \"jede Formularseite, jede Menükarte und jede Voreinstellung\" beeinflusst das Verhalten. Was diese drei gemeinsam haben, ist genau das Umfeld der Entscheidung.\n\nDie Aussage leistet damit die Verallgemeinerung, die der Text nahelegt: Nicht die Wahl selbst ist gemeint, sondern ihr Rahmen. Auch die Folgerung des Absatzes passt dazu — weil der Rahmen immer wirkt, kann es keine neutrale Gestaltung geben.\n\nSie trifft zu, weil die Beispielreihe des Textes genau in dieser Bestimmung aufgeht.",
+        "**B) \"Publikationsbias\" meint hier, dass auffällige Ergebnisse häufiger veröffentlicht werden als unauffällige.**\n\nAbsatz 5 löst den Begriff selbst auf, unmittelbar nach dem Doppelpunkt: \"Auffällige Ergebnisse werden häufiger veröffentlicht als unauffällige.\" Die Aussage übernimmt diese Erklärung ohne Abweichung.\n\nIm Absatz hat der Begriff eine bestimmte Aufgabe: Er erklärt, warum die Zeitschriftenwerte bei rund acht Prozentpunkten liegen, die Verwaltungsdaten aber nur bei etwa anderthalb. Dort werden \"alle ihre Versuche\" dokumentiert, \"auch die erfolglosen\".\n\nSie trifft zu, weil der Text die Kontextbedeutung ausdrücklich mitliefert und die Aussage nicht darüber hinausgeht.",
+        "**C) \"Sludge\" steht im Text für zusätzliche Anstupser, die das Verhalten in eine gewünschte Richtung lenken.**\n\nAbsatz 8 verwendet das Wort für das Gegenteil: Sludge-Audits suchen \"unnötige Hürden\" in Verwaltungsverfahren, und deren Abbau gilt als \"wirksamer als das Hinzufügen neuer Anstupser\". Sludge ist also die Reibung, nicht der Anstoß.\n\nDie Aussage setzt damit die Bestimmung des Nudges an die Stelle des Sludge und hebt die Unterscheidung auf, um die es dem Absatz gerade geht: hinzufügen oder wegräumen.\n\n**Falle:** Beide Begriffe stammen aus derselben Forschungsrichtung, bezeichnen aber entgegengesetzte Eingriffe.\n\nSie scheitert, weil Sludge im Text Hemmnisse meint, die Berechtigte von Leistungen abhalten.",
+        "**D) Aus Absatz 7 folgt, dass der Text Nudges in der Klimapolitik für ein ausreichendes Instrument hält.**\n\nAbsatz 7 misst den Stromspareffekt unmittelbar an einem Vergleichsinstrument und findet ihn \"weit weniger als eine wirksame Bepreisung von Emissionen\". Das ist ein Urteil über Unzulänglichkeit, nicht über Genügen.\n\nDer Absatz geht sogar weiter: Nudges könnten \"als bequeme Ersatzhandlung dienen\" und die Unterstützung für Regulierung verringern. Vor den Nebenwirkungen eines ausreichenden Instruments müsste man nicht warnen.\n\nSie scheitert, weil der Absatz die klimapolitische Wirkung ausdrücklich als zu klein für die Aufgabe darstellt.",
+        "**E) Der Ausdruck \"bequeme Ersatzhandlung\" beschreibt, dass Nudges den Eindruck von Handlungsfähigkeit erzeugen können.**\n\nAbsatz 7 stellt die Deutung gleich neben den Ausdruck: Nudges könnten als bequeme Ersatzhandlung dienen, \"die den Eindruck von Handlungsfähigkeit erzeugt\". Ersatz heißt hier: Es wird etwas sichtbar getan, während das stärkere Mittel ausbleibt.\n\nDie Aussage gibt diese Bedeutung wieder und übernimmt auch die Vorsicht des Textes — sie sagt \"können\" statt \"tun\", denn der Absatz formuliert im Konjunktiv.\n\nSie trifft zu, weil der Text den Ausdruck unmittelbar mit dem erzeugten Eindruck verbindet und ihn nicht weiter auflädt."
+      ],
+      "highlights": [
+        "Weil jede Formularseite, jede Menükarte und jede Voreinstellung das Verhalten beeinflusst",
+        "Auffällige Ergebnisse werden häufiger veröffentlicht als unauffällige.",
+        "wo Verwaltungsverfahren unnötige Hürden enthalten, die Berechtigte von Leistungen abhalten",
+        "weit weniger als eine wirksame Bepreisung von Emissionen",
+        "die den Eindruck von Handlungsfähigkeit erzeugt"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 4,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-05",
+      "case_id": "DE T.6.05",
+      "title": "Aufgabe 5",
+      "exam_title": "Querschnitt & Argumentstruktur",
+      "context": "Die Aussagen prüfen, ob der Aufbau der Einwände und die Abfolge der Argumente über den ganzen Text hinweg erfasst werden.",
+      "kind": "reading",
+      "statements": [
+        "Der Text ordnet die Einwände gegen Nudging: zuerst Zweifel an der Effektgröße, dann normative Bedenken, dann den politischen Verdrängungseinwand.",
+        "Absatz 6 lässt ausschließlich die Kritik am Nudging zu Wort kommen.",
+        "Absatz 8 stellt Reaktionen der Forschung auf die zuvor genannten Einwände dar.",
+        "Der Text behauptet, die Verhaltensökonomie habe ihren Anspruch nachweislich überdehnt.",
+        "Der Schlussabsatz formuliert die Leitfrage neu: nicht ob Nudges wirken, sondern wie groß ihr Beitrag im Vergleich ausfällt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text ordnet die Einwände gegen Nudging: zuerst Zweifel an der Effektgröße, dann normative Bedenken, dann den politischen Verdrängungseinwand.**\n\nDer Text nummeriert selbst: Absatz 5 beginnt mit Zweifeln \"an der Größe dieser Effekte\", Absatz 6 setzt ein mit \"Ein zweiter Einwand ist normativer Art\", Absatz 7 mit dem \"politisch folgenreichsten Einwand\".\n\nDie Aussage folgt dieser Gliederung Schritt für Schritt. Sie behauptet dabei keine Rangfolge nach Stärke — die nimmt der Text mit dem Superlativ selbst vor.\n\nSie trifft zu, weil die drei Einwände im Text in genau dieser Reihenfolge eingeführt und durch eigene Ordnungsformeln markiert sind.",
+        "**B) Absatz 6 lässt ausschließlich die Kritik am Nudging zu Wort kommen.**\n\nAbsatz 6 beginnt kritisch — von Manipulation ist die Rede und von der Frage, wer festlege, was im wohlverstandenen Interesse der Bürgerinnen und Bürger liege. Er endet aber mit der Gegenrede: \"Verteidiger entgegnen, ein Nudge sei legitim, solange er offengelegt werde\" und leicht zu umgehen sei.\n\nDazu kommt der Studienhinweis, dass Transparenz die Wirkung nicht wesentlich schmälert. Am zweiten Teil des Absatzes scheitert also das Wort \"ausschließlich\".\n\n**Falle:** Wer nur den Anfang eines Absatzes liest, hält Gegenüberstellungen leicht für einseitige Abrechnungen.\n\nSie scheitert, weil Kritik und Verteidigung hier im selben Absatz stehen.",
+        "**C) Absatz 8 stellt Reaktionen der Forschung auf die zuvor genannten Einwände dar.**\n\nAbsatz 8 sagt das im ersten Satz: \"Die Forschung reagiert auf diese Kritik mit neuen Ansätzen.\" Danach folgen die beiden Beispiele, Boosting und die Sludge-Audits.\n\nBeide antworten erkennbar auf zuvor Genanntes: Boosting umgeht den normativen Vorwurf aus Absatz 6, weil es Kompetenzen stärkt, statt kognitive Schwächen auszunutzen; die Sludge-Audits antworten auf die Effektgrößendebatte, denn der Abbau von Reibung gilt inzwischen als wirksamer.\n\nDie Aussage beschreibt die Funktion des Absatzes im Argumentationsgang deshalb zutreffend.",
+        "**D) Der Text behauptet, die Verhaltensökonomie habe ihren Anspruch nachweislich überdehnt.**\n\nAbsatz 9 nennt die Überdehnung nur als eine von zwei Möglichkeiten: Ob die Verhaltensökonomie zu einem bescheideneren, aber verlässlicheren Werkzeug wird \"oder ob sie ihren Anspruch grundsätzlich überdehnt hat, ist bislang nicht entschieden\".\n\nDie Aussage macht aus dem zweiten Zweig dieser Alternative ein Urteil und fügt mit \"nachweislich\" eine Beweislage hinzu, die der Absatz gerade verneint.\n\n**Falle:** Eine im Text erwogene Möglichkeit ist keine Behauptung des Textes — prüfen Sie, ob der Satz sie noch offenhält.\n\nSie scheitert, weil der Schluss die Frage unentschieden lässt, statt sie zuzuspitzen.",
+        "**E) Der Schlussabsatz formuliert die Leitfrage neu: nicht ob Nudges wirken, sondern wie groß ihr Beitrag im Vergleich ausfällt.**\n\nAbsatz 9 nimmt diese Verschiebung wörtlich vor: \"Nicht mehr die Frage, ob Nudges wirken, steht im Zentrum, sondern wie groß ihr Beitrag im Vergleich zu Regeln, Preisen und Investitionen ausfällt.\"\n\nDie Aussage gibt beide Seiten der Umstellung wieder. Dass sie die drei Vergleichsinstrumente nur andeutet, ändert daran nichts — der Vergleich als solcher ist der Punkt.\n\nVorbereitet ist die Neuformulierung durch Absatz 5, der Wirkungen nicht bestreitet, sondern verkleinert, und durch Absatz 7, der sie an stärkeren Instrumenten misst. Die Aussage trifft zu, weil der Text seine Leitfrage ausdrücklich in dieser Richtung umstellt."
+      ],
+      "highlights": [
+        "Ein zweiter Einwand ist normativer Art.",
+        "Verteidiger entgegnen, ein Nudge sei legitim, solange er offengelegt werde",
+        "Die Forschung reagiert auf diese Kritik mit neuen Ansätzen.",
+        "ihren Anspruch grundsätzlich überdehnt hat, ist bislang nicht entschieden",
+        "Nicht mehr die Frage, ob Nudges wirken, steht im Zentrum"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 5,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-06",
+      "case_id": "DE T.6.06",
+      "title": "Aufgabe 6",
+      "exam_title": "Zahlen, Fakten & Details",
+      "context": "Die Aussagen prüfen die genaue Wiedergabe der Jahreszahlen, Quoten und Effektgrößen des Textes.",
+      "kind": "reading",
+      "statements": [
+        "Weltweit bestehen laut Text über zweihundert Stellen, die dem Behavioural Insights Team vergleichbar sind.",
+        "Der durchschnittliche Effekt in den publizierten Studien lag bei rund acht Prozentpunkten.",
+        "Die Kosten des beschriebenen Steuerbrief-Versuchs lagen dem Text zufolge weit über dem Porto.",
+        "In vergleichbaren Staaten mit ausdrücklicher Zustimmungsregelung bleiben die Spenderquoten teils unter zwanzig Prozent.",
+        "Thaler und Sunstein entwickelten ihr Konzept dem Text zufolge bereits in den 1970er-Jahren."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Weltweit bestehen laut Text über zweihundert Stellen, die dem Behavioural Insights Team vergleichbar sind.**\n\nAbsatz 3 nennt die Zahl direkt nach der britischen Gründung von 2010: \"inzwischen bestehen weltweit über zweihundert vergleichbare Stellen\". Die Aussage übernimmt Wert und Vergleichsbezug unverändert.\n\nDie Zahl steht im Absatz für Verbreitung, nicht für Wirkung. Sie belegt, wie schnell die Idee \"den Weg in die Verwaltung\" fand — über die Größe der Effekte sagt sie nichts, das übernimmt erst Absatz 5.\n\nSie trifft zu, weil die Angabe im Text so beziffert ist und die Aussage sie nicht zu einem Erfolgsnachweis umdeutet.",
+        "**B) Der durchschnittliche Effekt in den publizierten Studien lag bei rund acht Prozentpunkten.**\n\nAbsatz 5 nennt diesen Wert für die eine Seite des Vergleichs: Während der durchschnittliche Effekt \"in den publizierten Studien bei rund acht Prozentpunkten lag\", betrug er in den Verwaltungsdaten nur etwa anderthalb.\n\nDie Aussage ordnet die Zahl der richtigen Quelle zu, und darauf kommt es hier an — beide Werte stehen im selben Satz und lassen sich leicht verwechseln.\n\n**Tipp:** Notieren Sie bei Doppelzahlen jeweils Wert und Herkunft als Paar; geprüft wird meist die Zuordnung, nicht die Ziffer.\n\nSie trifft zu, weil Größe und Datenquelle dem Absatz genau entsprechen.",
+        "**C) Die Kosten des beschriebenen Steuerbrief-Versuchs lagen dem Text zufolge weit über dem Porto.**\n\nAbsatz 3 sagt das Gegenteil: Die Zahlungsquote stieg um einige Prozentpunkte — \"bei Kosten, die kaum über dem Porto lagen\". Die Aussage ersetzt \"kaum\" durch \"weit\" und kippt damit den ganzen Punkt.\n\nDenn dieses Verhältnis ist das Argument. Absatz 4 knüpft daran an: \"Pro eingesetztem Euro\" bewirkten solche Maßnahmen mehr als manche Steuervergünstigung. Wären die Kosten hoch, fiele diese Rechnung weg.\n\n**Falle:** \"Kaum über\" und \"weit über\" unterscheiden sich in einem Wort und in der gesamten Aussagerichtung.\n\nSie scheitert, weil der Text den Aufwand des Versuchs ausdrücklich als minimal beschreibt.",
+        "**D) In vergleichbaren Staaten mit ausdrücklicher Zustimmungsregelung bleiben die Spenderquoten teils unter zwanzig Prozent.**\n\nAbsatz 2 führt diesen Wert als Gegenstück ein: In vergleichbaren Staaten mit ausdrücklicher Zustimmungsregelung bleiben die Quoten \"teils unter zwanzig Prozent\", während sie bei der Widerspruchslösung über neunzig Prozent erreichen.\n\nDie Aussage übernimmt beides korrekt, Regelungstyp und Quote, und bewahrt auch die Einschränkung \"teils\" — der Text behauptet keinen einheitlichen Wert für alle diese Staaten.\n\nSie trifft zu, weil Zahl und Zuordnung dem Vergleich des Absatzes genau folgen und die Aussage die Spanne nicht verallgemeinert.",
+        "**E) Thaler und Sunstein entwickelten ihr Konzept dem Text zufolge bereits in den 1970er-Jahren.**\n\nAbsatz 1 trennt zwei Zeitangaben, die die Aussage vermischt. Die 1970er-Jahre stehen für den Beginn der verhaltensökonomischen Forschung; das Konzept selbst entstand später: \"entwickelten Richard Thaler und Cass Sunstein 2008 das Konzept des Nudging\".\n\nDer Absatz baut zwischen beiden eine Ableitung — \"aus diesen Befunden\" entstand das Konzept. Es kann also nicht mit ihnen zusammenfallen.\n\n**Falle:** Wo eine frühe und eine spätere Jahreszahl im selben Absatz stehen, wird gern die frühere auf das spätere Ereignis bezogen.\n\nSie scheitert, weil Forschungsbeginn und Konzeptjahr im Text um mehr als drei Jahrzehnte auseinanderliegen."
+      ],
+      "highlights": [
+        "inzwischen bestehen weltweit über zweihundert vergleichbare Stellen",
+        "in den publizierten Studien bei rund acht Prozentpunkten lag",
+        "bei Kosten, die kaum über dem Porto lagen",
+        "teils unter zwanzig Prozent bleiben",
+        "entwickelten Richard Thaler und Cass Sunstein 2008 das Konzept des Nudging"
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 6,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-07",
+      "case_id": "DE T.6.07",
+      "title": "Aufgabe 7",
+      "exam_title": "Ursache und Wirkung",
+      "context": "Die Aussagen prüfen, ob die im Text behaupteten Wirkungsmechanismen richtig zugeordnet werden.",
+      "kind": "reading",
+      "statements": [
+        "Voreinstellungen wirken laut Text unter anderem deshalb, weil die Wahl einer Alternative Aufwand verlangt.",
+        "Der Text führt die Differenz zwischen den beiden Effektgrößen darauf zurück, dass die Studien in unterschiedlichen Ländern durchgeführt wurden.",
+        "Werden Nudges als Lösung präsentiert, kann dies laut Text die Unterstützung für Regulierung verringern.",
+        "Nach Darstellung des Textes bringt der Abbau von Verfahrenshürden geringere Wirkungen als das Hinzufügen neuer Anstupser.",
+        "Die Daten staatlicher Nudge-Einheiten gelten dem Text zufolge als weniger verzerrt, weil dort auch erfolglose Versuche dokumentiert werden."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Voreinstellungen wirken laut Text unter anderem deshalb, weil die Wahl einer Alternative Aufwand verlangt.**\n\nAbsatz 1 nennt die Wirkfaktoren in einer Reihe: Entscheidungen hängen davon ab, wie eine Option dargestellt wird, \"welche Alternative voreingestellt ist und wie viel Aufwand ihre Wahl verlangt\". Voreinstellung und Aufwand stehen dort unmittelbar beieinander.\n\nDie Aussage verbindet beide zu einem Mechanismus und sichert sich mit \"unter anderem\" ab, nennt also keinen alleinigen Grund. Absatz 2 stützt das mit der Organspende, wo allein die Voreinstellung die Quoten um Dutzende Prozentpunkte verschiebt.\n\nSie trifft zu, weil der Text beide Größen als Bedingungen desselben Effekts führt.",
+        "**B) Der Text führt die Differenz zwischen den beiden Effektgrößen darauf zurück, dass die Studien in unterschiedlichen Ländern durchgeführt wurden.**\n\nAbsatz 5 gibt eine andere Erklärung: \"Die Differenz erklären die Autoren vor allem mit dem Publikationsbias.\" Von Ländern ist an dieser Stelle überhaupt nicht die Rede; verglichen werden Zeitschriftenbefunde mit Verwaltungsdaten, nicht Regionen.\n\nDie Aussage setzt damit eine Ursache ein, die plausibel klingt, im Text aber keine Grundlage hat — ein häufiges Muster bei Ursachenfragen.\n\n**Tipp:** Prüfen Sie bei Begründungen stets, ob der genannte Grund im Text steht, nicht nur, ob er einleuchtet.\n\nSie scheitert, weil der Text die Veröffentlichungspraxis und nicht die Geografie verantwortlich macht.",
+        "**C) Werden Nudges als Lösung präsentiert, kann dies laut Text die Unterstützung für Regulierung verringern.**\n\nAbsatz 7 stützt sich dafür auf Befragungen: Bürgerinnen und Bürger unterstützen regulatorische Maßnahmen \"weniger, wenn ihnen zuvor ein Nudge als Lösung präsentiert wurde\". Bedingung und Folge stehen in der Aussage richtig.\n\nDie Modalform \"kann\" passt zur Vorsicht des Absatzes, der aus dem Befund keine Regel macht, sondern eine Gefahr ableitet: Nudges könnten als bequeme Ersatzhandlung dienen.\n\nSie trifft zu, weil der Text diesen Zusammenhang ausdrücklich als Befragungsergebnis ausweist und die Aussage ihn nicht über diese Stufe hinaus verstärkt.",
+        "**D) Nach Darstellung des Textes bringt der Abbau von Verfahrenshürden geringere Wirkungen als das Hinzufügen neuer Anstupser.**\n\nAbsatz 8 setzt die Rangfolge umgekehrt: \"Der Abbau solcher Reibung gilt inzwischen als wirksamer als das Hinzufügen neuer Anstupser.\" Die Aussage vertauscht die beiden Seiten des Vergleichs.\n\nDas ist nicht bloß ein Detail, sondern die Pointe des Absatzes. Die Forschung reagiert auf die Kritik, indem sie vom Hinzufügen zum Wegräumen übergeht — mit der Aussage gäbe es für diese Wende keinen Grund.\n\n**Falle:** Vergleichssätze mit \"wirksamer als\" lassen sich durch bloßes Tauschen der Pole entwerten, ohne dass ein einziges Wort falsch klingt.\n\nSie scheitert, weil der Text den Abbau von Hürden höher bewertet als neue Anstöße.",
+        "**E) Die Daten staatlicher Nudge-Einheiten gelten dem Text zufolge als weniger verzerrt, weil dort auch erfolglose Versuche dokumentiert werden.**\n\nAbsatz 5 hebt dieses Merkmal ausdrücklich hervor: Es sind Einheiten, \"die alle ihre Versuche dokumentieren, auch die erfolglosen\". Genau deshalb taugen sie als Prüfmaßstab für die Zeitschriftenbefunde.\n\nDie Begründung der Aussage trifft den Mechanismus: Wo nichts ausgesiebt wird, kann der Publikationsbias nicht greifen — und der Durchschnitt sinkt auf etwa anderthalb Prozentpunkte.\n\nSie trifft zu, weil der Text die lückenlose Dokumentation als das Unterscheidungsmerkmal dieser Datenquelle nennt."
+      ],
+      "highlights": [
+        "welche Alternative voreingestellt ist und wie viel Aufwand ihre Wahl verlangt",
+        "Die Differenz erklären die Autoren vor allem mit dem Publikationsbias",
+        "weniger unterstützen, wenn ihnen zuvor ein Nudge als Lösung präsentiert wurde",
+        "Der Abbau solcher Reibung gilt inzwischen als wirksamer als das Hinzufügen neuer Anstupser.",
+        "die alle ihre Versuche dokumentieren, auch die erfolglosen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 7,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-08",
+      "case_id": "DE T.6.08",
+      "title": "Aufgabe 8",
+      "exam_title": "Gewichtung & Haltung im Text",
+      "context": "Die Aussagen prüfen, wie sicher der Text seine Befunde formuliert und welche Positionen er referiert statt zu vertreten.",
+      "kind": "reading",
+      "statements": [
+        "Der Text bewertet Nudging insgesamt als wirkungslos.",
+        "Die Wendung \"so eine verbreitete Rechnung\" kennzeichnet eine zugeschriebene Behauptung und kein eigenes Urteil des Textes.",
+        "Der Text bezeichnet den Einwand der Verdrängung stärkerer Instrumente als politisch folgenreichsten.",
+        "Die Wendung \"Studien deuten darauf hin\" signalisiert im Text einen abschließenden Beweis.",
+        "Mit \"könnten damit als bequeme Ersatzhandlung dienen\" formuliert der Text eine Möglichkeit und keine feststehende Tatsache."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text bewertet Nudging insgesamt als wirkungslos.**\n\nDer Text räumt Wirkungen an mehreren Stellen ein: Die Zahlungsquote im Steuerversuch stieg \"um einige Prozentpunkte\" (Absatz 3), die automatische Einschreibung erhöhte die Teilnahme an Sparplänen drastisch (Absatz 4), und selbst in der Klimapolitik sinkt der Stromverbrauch \"messbar\" (Absatz 7).\n\nBestritten wird also nicht die Existenz der Effekte, sondern ihr Ausmaß: In den Verwaltungsdaten bleiben etwa anderthalb Prozentpunkte übrig (Absatz 5). Absatz 9 verschiebt die Frage ausdrücklich vom Ob auf das Wie groß.\n\n**Falle:** Aus \"kleiner als behauptet\" wird beim Lesen leicht \"gar nicht vorhanden\".\n\nSie scheitert, weil der Text von begrenzten und nicht von fehlenden Wirkungen spricht.",
+        "**B) Die Wendung \"so eine verbreitete Rechnung\" kennzeichnet eine zugeschriebene Behauptung und kein eigenes Urteil des Textes.**\n\nAbsatz 4 schiebt die Formel mitten in den Satz: \"Pro eingesetztem Euro, so eine verbreitete Rechnung, bewirkten solche Maßnahmen mehr als manche Steuervergünstigung.\" Der Einschub ordnet die Behauptung anderen zu.\n\nDass der Text sie nicht teilt, zeigt die Fortsetzung: Absatz 5 relativiert die Effektgrößen und nennt den Publikationsbias — die günstige Kosten-Nutzen-Rechnung steht damit selbst unter Vorbehalt.\n\n**Tipp:** Einschübe wie \"so heißt es\" oder \"nach Auffassung der Befürworter\" markieren Distanz; sie sagen, wer hier redet.\n\nSie trifft zu, weil der Text die Rechnung referiert, statt sie sich zu eigen zu machen.",
+        "**C) Der Text bezeichnet den Einwand der Verdrängung stärkerer Instrumente als politisch folgenreichsten.**\n\nAbsatz 7 eröffnet mit genau dieser Gewichtung: \"Der politisch folgenreichste Einwand betrifft die Verdrängung stärkerer Instrumente.\" Die Superlativform stellt ihn über die beiden zuvor behandelten Einwände.\n\nDie Aussage referiert diese Rangordnung, ohne sie selbst zu bewerten — sie behauptet nicht, der Einwand sei der stärkste, sondern dass der Text ihn so einordnet. Die Begründung liefert der Absatz mit dem Vergleich zur Emissionsbepreisung und den Befragungsdaten.\n\nSie trifft zu, weil die Gewichtung im Text wörtlich so vorgenommen wird.",
+        "**D) Die Wendung \"Studien deuten darauf hin\" signalisiert im Text einen abschließenden Beweis.**\n\nAbsatz 6 wählt hier bewusst die schwächste Stufe: \"Studien deuten darauf hin, dass Transparenz die Wirkung nicht wesentlich schmälert.\" Ein Hinweis ist kein Nachweis, und der Text beansprucht auch keinen.\n\nDie Aussage überhöht damit den Geltungsanspruch. Das fällt besonders auf, weil derselbe Absatz eine offene Streitfrage behandelt — wer festlege, was im wohlverstandenen Interesse der Bürgerinnen und Bürger liege.\n\n**Tipp:** Die Abstufung von \"deuten hin\" über \"zeigen\" bis \"belegen\" markiert unterschiedliche Sicherheitsgrade; achten Sie auf das gewählte Verb.\n\nSie scheitert, weil der Text an dieser Stelle nur eine Tendenz benennt.",
+        "**E) Mit \"könnten damit als bequeme Ersatzhandlung dienen\" formuliert der Text eine Möglichkeit und keine feststehende Tatsache.**\n\nAbsatz 7 schließt im Konjunktiv: \"Nudges könnten damit als bequeme Ersatzhandlung dienen, die den Eindruck von Handlungsfähigkeit erzeugt.\" Die Modalform hält die Behauptung eine Stufe unterhalb der Tatsachenaussage.\n\nDas passt zur Beweislage des Absatzes: Der kleine Stromspareffekt und die Befragungsergebnisse machen die Deutung plausibel, belegen sie aber nicht. Der Text deutet die Folgerung an, ohne sie festzuschreiben.\n\nSie trifft zu, weil das \"könnten\" den Geltungsanspruch abschwächt und die Aussage genau diese Abschwächung benennt."
+      ],
+      "highlights": [
+        "senken Stromrechnungen mit einem Vergleich zum Nachbarschaftsverbrauch den Konsum messbar",
+        "so eine verbreitete Rechnung",
+        "Der politisch folgenreichste Einwand betrifft die Verdrängung stärkerer Instrumente.",
+        "Studien deuten darauf hin, dass Transparenz die Wirkung nicht wesentlich schmälert",
+        "Nudges könnten damit als bequeme Ersatzhandlung dienen"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 8,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-09",
+      "case_id": "DE T.6.09",
+      "title": "Aufgabe 9",
+      "exam_title": "Chronologie & Vergleiche",
+      "context": "Die Aussagen prüfen die zeitliche Abfolge der genannten Entwicklungen und die im Text angestellten Vergleiche.",
+      "kind": "reading",
+      "statements": [
+        "Die Experimente von Kahneman und Tversky gingen dem Konzept von Thaler und Sunstein zeitlich voraus.",
+        "Die erste staatliche Nudge-Einheit entstand dem Text zufolge vor der Veröffentlichung des Konzepts im Jahr 2008.",
+        "Der Text vergleicht Effektgrößen aus wissenschaftlichen Zeitschriften mit jenen aus Verwaltungsdaten.",
+        "Der Text stellt die Wirkung von Nudges jener einer Bepreisung von Emissionen gegenüber.",
+        "Boosting und Sludge-Audits werden im Text als ältere Vorläufer des Nudging dargestellt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Die Experimente von Kahneman und Tversky gingen dem Konzept von Thaler und Sunstein zeitlich voraus.**\n\nAbsatz 1 stellt die Reihenfolge über eine Ableitung her: Zuerst stehen die Experimente von Kahneman und Tversky, dann heißt es, \"aus diesen Befunden entwickelten Richard Thaler und Cass Sunstein 2008 das Konzept des Nudging\".\n\nDie Rahmenangabe stützt das zusätzlich: Die Verhaltensökonomie arbeitet \"seit den 1970er-Jahren\" an diesem Bild des Menschen, das Konzept datiert auf 2008.\n\n**Tipp:** Formulierungen wie \"aus diesen Befunden\" enthalten eine Chronologie, auch wenn für den früheren Schritt kein eigenes Datum steht.\n\nSie trifft zu, weil der Text die Experimente als Voraussetzung des späteren Konzepts darstellt.",
+        "**B) Die erste staatliche Nudge-Einheit entstand dem Text zufolge vor der Veröffentlichung des Konzepts im Jahr 2008.**\n\nAbsatz 3 datiert die Gründung auf 2010: \"2010 richtete die britische Regierung mit dem Behavioural Insights Team die erste staatliche Einheit dieser Art ein.\" Das Konzept stammt laut Absatz 1 aus dem Jahr 2008, liegt also davor.\n\nDie Aussage dreht diese Folge um. Auch die Erzählung des Absatzes spricht dagegen: \"Von der Forschung fand die Idee rasch den Weg in die Verwaltung\" — die Verwaltung folgt hier der Forschung.\n\n**Falle:** \"Rasch\" verkürzt den Abstand, hebt ihn aber nicht auf; zwei Jahre später bleibt später.\n\nSie scheitert, weil die Gründung der Veröffentlichung im Text nachfolgt.",
+        "**C) Der Text vergleicht Effektgrößen aus wissenschaftlichen Zeitschriften mit jenen aus Verwaltungsdaten.**\n\nAbsatz 5 beschreibt genau diese Anlage: Eine vielbeachtete Auswertung \"verglich die in wissenschaftlichen Zeitschriften berichteten Ergebnisse mit den Daten staatlicher Nudge-Einheiten\". Für beide Seiten nennt der Absatz einen Wert, rund acht gegen etwa anderthalb Prozentpunkte.\n\nDie Aussage benennt allein die Vergleichsachse und behauptet nichts über das Ergebnis — zur Prüfung genügt deshalb der erste Satz des Absatzes.\n\nSie trifft zu, weil die beiden Datenquellen im Text ausdrücklich gegenübergestellt werden.",
+        "**D) Der Text stellt die Wirkung von Nudges jener einer Bepreisung von Emissionen gegenüber.**\n\nAbsatz 7 zieht diesen Vergleich direkt: Der Nachbarschaftsvergleich auf Stromrechnungen senkt den Konsum nur im niedrigen einstelligen Prozentbereich — \"weit weniger als eine wirksame Bepreisung von Emissionen\".\n\nDie Aussage beschreibt lediglich, dass der Text die beiden Instrumente nebeneinanderstellt, und trifft damit eine leicht prüfbare Behauptung. Welche Seite besser abschneidet, lässt sie offen; der Absatz sagt es deutlich.\n\nSie trifft zu, weil die Bepreisung im Text genau als Maßstab für die Wirkung des Nudges dient.",
+        "**E) Boosting und Sludge-Audits werden im Text als ältere Vorläufer des Nudging dargestellt.**\n\nAbsatz 8 führt beide als Antwort ein, nicht als Vorgeschichte: \"Die Forschung reagiert auf diese Kritik mit neuen Ansätzen\" — danach folgen Boosting und die Sludge-Audits. Eine Reaktion setzt voraus, dass Kritik und Nudging schon da waren.\n\nAuch die Zeitwörter sprechen dagegen: Die Audits haben sich \"inzwischen\" verbreitet, und der Abbau von Reibung gilt \"inzwischen\" als wirksamer.\n\n**Falle:** Fachbegriffe derselben Forschungsschule wirken gleich alt; hier trennt sie der Argumentationsgang.\n\nSie scheitert, weil es sich um spätere Weiterentwicklungen und nicht um Vorläufer handelt."
+      ],
+      "highlights": [
+        "Seit den 1970er-Jahren hat die Verhaltensökonomie das Bild des durchgängig rational rechnenden Menschen",
+        "2010 richtete die britische Regierung mit dem Behavioural Insights Team die erste staatliche Einheit",
+        "verglich die in wissenschaftlichen Zeitschriften berichteten Ergebnisse mit den Daten staatlicher Nudge-Einheiten",
+        "weit weniger als eine wirksame Bepreisung von Emissionen",
+        "Die Forschung reagiert auf diese Kritik mit neuen Ansätzen."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 9,
+      "subsection": "t.6"
+    },
+    {
+      "id": "de-t-6-10",
+      "case_id": "DE T.6.10",
+      "title": "Aufgabe 10",
+      "exam_title": "Gesamtschluss & offene Fragen",
+      "context": "Die Aussagen prüfen, welche Gesamtbilanz der Text zieht und welche Fragen er ausdrücklich offenlässt.",
+      "kind": "reading",
+      "statements": [
+        "Der Text lässt offen, ob die Verhaltensökonomie zu einem bescheideneren, aber verlässlicheren Werkzeug der Politik wird.",
+        "Der Text fordert, Nudges künftig vollständig durch Regulierung zu ersetzen.",
+        "Als offene Frage benennt der Text das Verhältnis der Nudges zu Regeln, Preisen und Investitionen.",
+        "Nach dem Text ist die Wirksamkeit von Nudges inzwischen überhaupt nicht mehr umstritten.",
+        "Der Text legt nahe, dass die Bewertung von Nudges von den Bedingungen ihres Einsatzes abhängt."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Der Text lässt offen, ob die Verhaltensökonomie zu einem bescheideneren, aber verlässlicheren Werkzeug der Politik wird.**\n\nAbsatz 9 nennt diese Möglichkeit und stellt ihr sofort die Gegenannahme entgegen: entweder ein \"bescheideneres, aber verlässlicheres Werkzeug der Politik\" oder ein grundsätzlich überdehnter Anspruch. Entschieden ist \"bislang\" keine der beiden Varianten.\n\nDie Aussage gibt genau diese Offenheit wieder, statt eine Seite zu wählen. Sie behauptet auch nicht, der Text halte die bescheidenere Lesart für wahrscheinlicher.\n\nSie trifft zu, weil der Schlusssatz beide Ausgänge nebeneinander stehen lässt und die Entscheidung ausdrücklich vertagt.",
+        "**B) Der Text fordert, Nudges künftig vollständig durch Regulierung zu ersetzen.**\n\nAbsatz 9 fragt ausdrücklich, \"unter welchen Bedingungen sie diese ergänzen statt ersetzen\" — der Text sucht also ein Nebeneinander von Nudges, Regeln, Preisen und Investitionen, keine Abschaffung.\n\nDie Aussage überdehnt damit den Einwand aus Absatz 7. Dieser richtet sich gegen Nudges, die stärkere Instrumente verdrängen, nicht gegen Nudges überhaupt; Absatz 8 arbeitet sogar an besseren verhaltensbezogenen Werkzeugen.\n\n**Falle:** Aus \"nicht als Ersatz\" wird leicht \"selbst zu ersetzen\" — die Richtung der Verdrängung kippt dabei unbemerkt.\n\nSie scheitert, weil der Text ein Miteinander der Instrumente und keine Ablösung erwägt.",
+        "**C) Als offene Frage benennt der Text das Verhältnis der Nudges zu Regeln, Preisen und Investitionen.**\n\nAbsatz 9 rückt genau dieses Verhältnis ins Zentrum: Zu klären sei, \"wie groß ihr Beitrag im Vergleich zu Regeln, Preisen und Investitionen ausfällt\". Die Aussage zählt dieselben drei Instrumente auf wie der Text.\n\nDass die Frage offen ist, sagt der Absatz zweifach: durch das Vertagen der Gesamtbilanz und durch die zweite, noch unbeantwortete Teilfrage nach den Bedingungen des Ergänzens.\n\nSie trifft zu, weil der Text dieses Verhältnis ausdrücklich als neue Leitfrage und nicht als erledigten Punkt behandelt.\n\nPrüfe Subjekt, Zeitangabe und Quantor getrennt: Wenn alle drei mit dem Text übereinstimmen und kein Absolutwort die Aussage überzieht, ist sie tragfähig.\n\n**Tipp:** Bei treuen Paraphrasen genügt oft, das Schlüsseldetail im Absatz zu finden und zu prüfen, dass nichts hinzugedichtet wurde.\n\nDie Aussage deckt sich mit dem Befund in Absatz 9, deshalb ist sie richtig.",
+        "**D) Nach dem Text ist die Wirksamkeit von Nudges inzwischen überhaupt nicht mehr umstritten.**\n\nAbsatz 5 hält das Gegenteil fest: \"Seit einigen Jahren mehren sich jedoch Zweifel an der Größe dieser Effekte\", und die Verwaltungsdaten liefern mit etwa anderthalb Prozentpunkten den Anlass dazu.\n\nNahe liegt die Aussage allenfalls über Absatz 9, der die Frage vom Ob auf das Wie groß verschiebt. Das ist aber eine Präzisierung des Streits und keine Entwarnung: Die Gesamtbilanz nennt derselbe Absatz \"bislang nicht entschieden\".\n\n**Falle:** Eine neu formulierte Leitfrage wirkt wie ein beendeter Streit, verlegt ihn tatsächlich aber nur.\n\nSie scheitert, weil der Streit über das Ausmaß der Wirkung im Text fortbesteht.",
+        "**E) Der Text legt nahe, dass die Bewertung von Nudges von den Bedingungen ihres Einsatzes abhängt.**\n\nAbsatz 9 macht Beitrag und Bedingungen zum Maßstab: Zu fragen sei, wie groß der Beitrag im Vergleich ausfällt \"und unter welchen Bedingungen sie diese ergänzen statt ersetzen\".\n\nDer Text hat das zuvor vorgeführt. Dieselbe Technik wirkt bei der Organspende gewaltig (Absatz 2), im Steuerversuch um einige Prozentpunkte (Absatz 3) und in der Klimapolitik nur im niedrigen einstelligen Bereich (Absatz 7); Offenlegung, Datenlage und Vergleichsinstrumente verändern das Urteil jeweils.\n\nSie trifft zu, weil der Text seine Bewertung durchgehend an solche Einsatzbedingungen bindet — ein Schluss, den er selbst vorbereitet."
+      ],
+      "highlights": [
+        "zu einem bescheideneren, aber verlässlicheren Werkzeug der Politik wird",
+        "unter welchen Bedingungen sie diese ergänzen statt ersetzen",
+        "wie groß ihr Beitrag im Vergleich zu Regeln, Preisen und Investitionen ausfällt",
+        "Seit einigen Jahren mehren sich jedoch Zweifel an der Größe dieser Effekte.",
+        "steht im Zentrum, sondern wie groß ihr Beitrag im Vergleich"
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 10,
+      "subsection": "t.6"
+    }
+  ]
+}

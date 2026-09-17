@@ -17,12 +17,13 @@ export const Route = createFileRoute("/wiso/products/full-course-subjects")({
       {
         name: "description",
         content:
-          "Open WiSo Full Course subjects: Wirtschaft verstehen economics and Mathematik for the WU Vienna Aufnahmeprüfung. German reading coming next.",
+          "Open WiSo Full Course subjects: Wirtschaft verstehen, Mathematik, and Deutsches Sprachverständnis for the WU Vienna Aufnahmeprüfung.",
       },
       { property: "og:title", content: "Full WiSo Course — Choose a subject" },
       {
         property: "og:description",
-        content: "Economics and Mathematics practice on dedicated /wiso URLs for the WiSo entrance exam.",
+        content:
+          "Economics, Mathematics, and German reading practice on dedicated /wiso URLs for the WiSo entrance exam.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -48,7 +49,7 @@ const subjects = [
     accent: INDIGO,
     tag: "Economics",
     description:
-      "Cases remapped onto the official Wirtschaft verstehen chapters — scarcity, circular flow, firms, accounting and marketing.",
+      "Cases remapped onto Wirtschaft verstehen — Grundlagen der Wirtschaft and Unternehmensgrundlagen (Kapitel 2 und 4 folgen).",
     to: "/wiso/products/full-course-economics",
     ready: true,
   },
@@ -70,9 +71,9 @@ const subjects = [
     accent: "#6366F1",
     tag: "Language",
     description:
-      "German reading comprehension for the WiSo Aufnahmeprüfung — practice sets will land on this track next.",
-    to: "/wiso/products/full-course-subjects",
-    ready: false,
+      "Zehn Lesetexte mit je zehn Aufgaben — akademisches Sprachverständnis für die WiSo-Aufnahmeprüfung.",
+    to: "/wiso/products/full-course-german",
+    ready: true,
   },
 ];
 

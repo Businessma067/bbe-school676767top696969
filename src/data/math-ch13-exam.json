@@ -65,38 +65,6 @@
       "placeholder": false
     },
     {
-      "id": "math-13-78",
-      "case_id": "MATH 13.78",
-      "title": "Community Clinic Screening",
-      "subsection": "13.5",
-      "context": "On a screening day with 80 independent patients, positives and negatives are expected in the ratio 3 : 17. The standard deviation of the number of positives that day is $\\sqrt{10.2}$. Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "A given patient screens negative with probability 0.85.",
-        "Among the next 20 patients, the expected number of positive screens is 4.",
-        "For 40 patients, the variance of the number of positive screens is 5.1.",
-        "The probability of 3 consecutive positive screens is less than 0.005.",
-        "The probability of at most 1 positive screen among the next 8 patients is more than 0.7."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nFrom the stem quantities, recover the common success probability step by step.\n\n$$\np = \\dfrac{3}{3+17} = 0.15\n$$\n\nEach independent trial either succeeds or fails, so the failure probability is the complement\n\n$$\n1-p\n$$\n\nSubstituting the recovered value,\n\n$$\n1-p = 1-0.15\n$$\n\n$$\n1 - 0.15 = 0.85\n$$\n\nThis agrees with the probability stated in the claim.\n\nSo the statement is True.\n",
-        "**B.** → False\n\nFor a binomial count $X\\sim\\mathrm{Bin}(n,p)$, the mean is the product of the number of trials and the success probability:\n\n$$\nE[X] = np\n$$\n\nUsing $n=20$ and the recovered $p=0.15$,\n\n$$\nE[X] = 20\\cdot 0.15\n$$\n\n$$\n20 \\times 0.15 = 3\n$$\n\nThe claim reports $4$, which is not equal to the computed mean $3$.\n\nSo the statement is False.\n",
-        "**C.** → True\n\nFor $X\\sim\\mathrm{Bin}(n,p)$, the variance formula is\n\n$$\n\\mathrm{Var}(X) = np(1-p)\n$$\n\nInsert $n=40$, $p=0.15$, and $1-p=0.85$:\n\n$$\n\\mathrm{Var}(X) = 40\\cdot 0.15\\cdot 0.85\n$$\n\n$$\n40 \\times 0.15 = 6\n$$\n\n$$\n6 \\times 0.85 = 5.1\n$$\n\nThis matches the variance stated in the claim.\n\nSo the statement is True.\n",
-        "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$\nP(\\text{3 successes in a row}) = p^{3}\n$$\n\nWith the recovered $p=0.15$,\n\n$$\np^{3} = (0.15)^{3}\n$$\n\n$$\n0.0034\n$$\n\nCompare with the claimed cutoff $0.005$:\n\n$$\n0.0034 < 0.005\n$$\n\nThe inequality in the claim therefore holds.\n\nSo the statement is True.\n",
-        "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.15)$. The event “at most $1$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,1$, so\n\n$$\nP(X\\le 1) = \\sum_{x = 0}^{1} \\binom{8}{x}p^{x}(1-p)^{8-x}\n$$\n\nEvaluating each mass separately:\n\n$$\nP(X = 0) = \\binom{8}{0}(0.15)^{0}(0.85)^{8}\\approx 0.2725\n$$\n\n$$\n\\binom{8}{0} = 1\n$$\n\n$$\nP(X = 1) = \\binom{8}{1}(0.15)^{1}(0.85)^{7}\\approx 0.3847\n$$\n\nAdding these contributions,\n\n$$\nP(X\\le 1)\n$$\n\n$$\n0.6572\n$$\n\nCompared with $0.7$, we obtain $0.6572 \\le 0.7$. The claim's inequality does not hold.\n\nSo the statement is False.\n"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 78,
-      "solution_overview": "On a screening day with 80 independent patients, positives and negatives are expected in the ratio 3 : 17. The standard deviation of the number of positives that day is $\\sqrt{10.2}$.\n\nSuccesses and failures are expected in the ratio $3:17$, so\n\n$$\np = \\dfrac{3}{3+17} = 0.15\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.15)$.",
-      "placeholder": false
-    },
-    {
       "id": "math-13-79",
       "case_id": "MATH 13.79",
       "title": "Night Courier Audit",

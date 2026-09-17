@@ -259,7 +259,12 @@ export function WisoLandingPage() {
                 <LocalizedLink to="/wiso/mock-builder" className="text-muted-foreground hover:underline">
                   Mock Builder
                 </LocalizedLink>
-                <LocalizedLink to="/wiso/flashcards" className="text-muted-foreground hover:underline">
+                <LocalizedLink
+                  to="/dashboard"
+                  // @ts-expect-error dashboard search validated on the route
+                  search={{ tab: "games" }}
+                  className="text-muted-foreground hover:underline"
+                >
                   Study tools
                 </LocalizedLink>
                 <LocalizedLink to="/wiso/demo-practice" className="text-muted-foreground hover:underline">

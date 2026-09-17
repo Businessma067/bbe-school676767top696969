@@ -707,13 +707,13 @@
       "title": "Pricing Two Franchise Payments Related by a Common Time Horizon",
       "chapter": 3,
       "subsection": "3.3",
-      "context": "A franchise agreement promises an investor two payments from a franchisee: \\$30,000 in exactly 5 years and \\$55,000 in exactly 10 years (twice the first horizon). Value is discounted continuously at 8% per year. Because the second payment date is exactly double the first, its discount factor is the square of the first payment's discount factor, so this task uses $K_1 = \\$30,000$ at $t_1 = 5$, $K_2 = \\$55,000$ at $t_2 = 10$, and r = 0.08.",
+      "context": "A franchise agreement promises an investor two payments from a franchisee: USD 30,000 in exactly 5 years and USD 55,000 in exactly 10 years (twice the first horizon). Value is discounted continuously at 8% per year. Because the second payment date is exactly double the first, its discount factor is the square of the first payment's discount factor, so this task uses $K_1 = 30000$ at $t_1 = 5$, $K_2 = 55000$ at $t_2 = 10$, and $r = 0.08$.",
       "statements": [
         "The discount factor for the 5-year payment is approximately 0.6703.",
         "The discount factor for the 10-year payment is approximately 0.4493.",
-        "The present value of the \\$30,000 payment is approximately \\$21,500.00.",
-        "The present value of the \\$55,000 payment is approximately \\$26,000.00.",
-        "The combined present value the investor should pay today for both payments is approximately \\$47,500.00."
+        "The present value of the USD 30,000 payment is approximately USD 21,500.00.",
+        "The present value of the USD 55,000 payment is approximately USD 26,000.00.",
+        "The combined present value the investor should pay today for both payments is approximately USD 47,500.00."
       ],
       "answer_key": [
         true,
@@ -730,7 +730,7 @@
         "**E.** → False\n\nAdd the two present values from C and D:\n\n$$\n\\mathrm{PDV}=\\mathrm{PV}_{1}+\\mathrm{PV}_{2}\\approx 20{,}109.60+24{,}713.09=44{,}822.69\n$$\n\nThe claim says approximately $47{,}500$. But\n\n$$\n44{,}822.69\\ne 47{,}500\n$$\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "A franchise agreement pays \\$30,000 in 5 years and \\$55,000 in 10 years. Value is discounted continuously at 8% per year. The second horizon is twice the first, so its discount factor is the square of the first factor.\n\n**Part 1: Setup.**\n\n$$\nK_1 = 30,000,\n$$\n\n$$\nt_1 = 5\n$$\n\n$$\nK_2 = 55,000,\n$$\n\n$$\nt_2 = 10,\n$$\n\n$$\nr = 0.08\n$$\n\nEach payment discounts through $\\mathrm{PDV}=Ke^{-rt}$, and\n\n**Part 2: Solve.**\n\n$$\ne^{-0.08\\times 5} = e^{-0.4}\n$$\n\n$$\ne^{-0.08\\times 5} \\approx 0.6703\n$$\n\n$$\ne^{-0.08\\times 10} = e^{-0.8}\n$$\n\n$$\ne^{-0.08\\times 10} \\approx 0.4493\n$$\n\n$$(0.6703)^{2}\\approx 0.4493$$\n\n$$\n\\mathrm{PV}_1 = 30,000e^{-0.4}\n$$\n\n$$\n\\mathrm{PV}_1 \\approx 20,109.60\n$$\n\n$$\n\\mathrm{PV}_2 = 55,000e^{-0.8}\n$$\n\n$$\n\\mathrm{PV}_2 \\approx 24,713.09\n$$\n\n$$\n\\mathrm{PDV} = 20,109.60+24,713.09\n$$\n\n$$\n\\mathrm{PDV} \\approx 44,822.69\n$$"
+      "solution_overview": "A franchise agreement pays USD 30,000 in 5 years and USD 55,000 in 10 years. Value is discounted continuously at 8% per year. The second horizon is twice the first, so its discount factor is the square of the first factor.\n\n**Part 1: Setup.**\n\n$$\nK_1 = 30,000,\n$$\n\n$$\nt_1 = 5\n$$\n\n$$\nK_2 = 55,000,\n$$\n\n$$\nt_2 = 10,\n$$\n\n$$\nr = 0.08\n$$\n\nEach payment discounts through $\\mathrm{PDV}=Ke^{-rt}$, and\n\n**Part 2: Solve.**\n\n$$\ne^{-0.08\\times 5} = e^{-0.4}\n$$\n\n$$\ne^{-0.08\\times 5} \\approx 0.6703\n$$\n\n$$\ne^{-0.08\\times 10} = e^{-0.8}\n$$\n\n$$\ne^{-0.08\\times 10} \\approx 0.4493\n$$\n\n$$(0.6703)^{2}\\approx 0.4493$$\n\n$$\n\\mathrm{PV}_1 = 30,000e^{-0.4}\n$$\n\n$$\n\\mathrm{PV}_1 \\approx 20,109.60\n$$\n\n$$\n\\mathrm{PV}_2 = 55,000e^{-0.8}\n$$\n\n$$\n\\mathrm{PV}_2 \\approx 24,713.09\n$$\n\n$$\n\\mathrm{PDV} = 20,109.60+24,713.09\n$$\n\n$$\n\\mathrm{PDV} \\approx 44,822.69\n$$"
     },
     {
       "case_id": "MATH 4.165",
@@ -769,13 +769,13 @@
       "title": "Riverside Water Utility, Billing Dispute",
       "chapter": 5,
       "subsection": "5",
-      "context": "A customer contacted Riverside Water to query two consecutive bills. She used 18 m³ in May and was billed \\$56.10  -  but May's bill also carried a 10% late penalty applied to the entire bill. In June she used 25 m³ with no penalty, billed \\$65.00. The billing office insists its fixed charge is \\$18.00 and its rate is \\$1.85 per m³.",
+      "context": "A customer contacted Riverside Water to query two consecutive bills. She used 18 m³ in May and was billed USD 56.10  -  but May's bill also carried a 10% late penalty applied to the entire bill. In June she used 25 m³ with no penalty, billed USD 65.00. The billing office insists its fixed charge is USD 18.00 and its rate is USD 1.85 per m³.",
       "statements": [
-        "The billing office's claim of an \\$18.00 fixed monthly charge is correct.",
-        "The rate charged is \\$2.00 per cubic metre.",
-        "After removing the late penalty, May's actual water charge was \\$51.00.",
-        "A customer using 40 m³ in a month would be billed \\$85.00.",
-        "Had the same 10% late penalty been applied to June's \\$65.00 bill, the total would have been \\$71.50."
+        "The billing office's claim of a USD 18.00 fixed monthly charge is correct.",
+        "The rate charged is USD 2.00 per cubic metre.",
+        "After removing the late penalty, May's actual water charge was USD 51.00.",
+        "A customer using 40 m³ in a month would be billed USD 85.00.",
+        "Had the same 10% late penalty been applied to June's USD 65.00 bill, the total would have been USD 71.50."
       ],
       "answer_key": [
         false,
@@ -789,10 +789,10 @@
         "**B.** → True\n\nRead the recovered unknown from the shared solve, then compare it with the figure printed on the card.\n\nFrom the overview solve, read the rate per cubic metre:\n\n$$\ny=2\n$$\n\nThat figure matches the claim.\n\nSo the statement is True.",
         "**C.** → True\n\nA transfer shifts one recovered holding into the other by the stated amount:\n\n$$\nx' = x - t,\\quad y' = y + t\n$$\n\nSubstitute the stem numbers recovered in the overview:\n\n$$\ny = 51\n$$\n\nThat computed value matches the claim.\n\nThe shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.\n\nSo the statement is True.",
         "**D.** → False\n\nAn extended bill adds the recovered per-unit charge on top of the recovered fee:\n\n$$\nB = f + t\\cdot r\n$$\n\nUsing the recovered solution values $x=15$ and $y=2$ as inputs for this claim:\n\nForty cubic metres would be billed\n\n$$\n40 \\times 2 = 80\n$$\n\n$$\n15 + 80 = 95\n$$\n\nThe claim asserts\n\n$$85.00$$\n\nThe computed figure does not match the claim.\n\nSo the statement is False.",
-        "**E.** → True\n\nUse the recovered values from the overview for this claim-specific check.\n\nJune's printed bill is \\$65.00. A 10% late penalty on that total is\n\n$$\n65 \\times 1.10 = 71.50\n$$\n\nThe claim asserts\n\n$$71.50$$\n\n.\n\nSo the statement is True."
+        "**E.** → True\n\nUse the recovered values from the overview for this claim-specific check.\n\nJune's printed bill is USD 65.00. A 10% late penalty on that total is\n\n$$\n65 \\times 1.10 = 71.50\n$$\n\nThe claim asserts\n\n$$71.50$$\n\n.\n\nSo the statement is True."
       ],
       "difficulty_level": "\\frac{2}{5}",
-      "solution_overview": "May used 18 m$^3$ and was billed \\$56.10 after a 10% late penalty on the whole bill. June used 25 m$^3$ with no penalty and was billed \\$65.00. The office claims a \\$18.00 fixed charge and \\$1.85 per m$^3$.\n\n**Part 1: Building the system.**\n\nLet $x$ = fixed monthly charge and $y$ = rate per cubic metre. Undo May's 10% penalty before writing the equation.\n\nMay without penalty:\n\n$$\\frac{56.10}{1.10} = 51$$\n\n$$x + 18y = 51 \\tag{1}$$\n\nJune:\n\n$$x + 25y = 65 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtract (1) from (2):\n\n$$(x + 25y) - (x + 18y) = 65 - 51$$\n\n$$7y = 14$$\n\n$$y = 2$$\n\nSubstitute into (1):\n\n$$x + 18(2) = 51$$\n\n$$x + 36 = 51$$\n\n$$x = 15$$\n\n**Answer.** Fixed charge = \\$15.00 | Rate = \\$2.00/m$^3$"
+      "solution_overview": "May used 18 m$^3$ and was billed USD 56.10 after a 10% late penalty on the whole bill. June used 25 m$^3$ with no penalty and was billed USD 65.00. The office claims a USD 18.00 fixed charge and USD 1.85 per m$^3$.\n\n**Part 1: Building the system.**\n\nLet $x$ = fixed monthly charge and $y$ = rate per cubic metre. Undo May's 10% penalty before writing the equation.\n\nMay without penalty:\n\n$$\\frac{56.10}{1.10} = 51$$\n\n$$x + 18y = 51 \\tag{1}$$\n\nJune:\n\n$$x + 25y = 65 \\tag{2}$$\n\n**Part 2: Solve.**\n\nSubtract (1) from (2):\n\n$$(x + 25y) - (x + 18y) = 65 - 51$$\n\n$$7y = 14$$\n\n$$y = 2$$\n\nSubstitute into (1):\n\n$$x + 18(2) = 51$$\n\n$$x + 36 = 51$$\n\n$$x = 15$$\n\n**Answer.** Fixed charge = USD 15.00 | Rate = USD 2.00/m$^3$"
     },
     {
       "case_id": "MATH 6.MOCK.INEQ",

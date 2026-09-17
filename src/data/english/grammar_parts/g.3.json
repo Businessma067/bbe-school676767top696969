@@ -687,44 +687,6 @@
       "solution_overview": "Five correct formal-register models: timetable acceptance, disclosure clearance, rules still in force, stepped fines, and school ranking data. Internalise how inserts still leave a single grammatical subject in charge.\n\n**Part 1: What to watch for.**\n\nNeither…nor with a plural nearer noun, together with, there remain with legalistic padding, each of, and formal plural data with a past participle. Dual adviser references and \"for the avoidance of doubt\" asides look heavy but change nothing about number.\n\n**Part 2: How to decide.**\n\nConfirm proximity, strip together-with inserts, ignore padding between there and the subject, keep each singular, and keep data plural. These lines are what correct formal agreement looks like under exam conditions.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
-      "id": "en-g-3-19",
-      "case_id": "ENG G.3.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "A number of material safety clauses was triggered overnight.",
-        "Neither the organiser nor the other stewards in the group was prepared to waive the rule.",
-        "There is, when one examines the schedules carefully, more than two conflicting dates.",
-        "The lead reviewer, as well as the marking team, were responsible for the opinion.",
-        "The data that the model relies on have been restated twice this year."
-      ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) A number of material safety clauses was triggered overnight.**\n\n\"A number of material safety clauses\" needs a plural verb. Dense noun phrases still follow the a-number-of plural rule. Overnight timing does not singularise the clauses.\n\n**Trap:** A long technical noun phrase makes singular \"was triggered\" look almost technical — it is not.\n\n\"A number of … clauses\" means several, so singular \"was\" is **false** — \"A number of material safety clauses were triggered overnight.\"\n",
-        "**B) Neither the organiser nor the other stewards in the group was prepared to waive the rule.**\n\nNearer plural \"stewards\" needs a plural verb after neither…nor. Extra modifiers after the nearer noun (\"in the group\") do not make it singular. Waiving the rule is content only.\n\n**Trap:** Modifiers after the nearer noun invite a **false** singular after nor.\n\nNearer plural \"stewards\" should control the verb, so the wording is **false**; repair to \"Neither the organiser nor the other stewards in the group were prepared to waive the rule.\"\n",
-        "**C) There is, when one examines the schedules carefully, more than two conflicting dates.**\n\n\"More than two conflicting dates\" is plural, so write \"there are,\" not \"there is.\" Quantity phrases greater than one take plural after there. The long when-clause is only an interruption.\n\n**Trap:** A long when-clause after there is designed to hide a plural quantity phrase.\n\nMore than two dates after there are plural, so \"there is\" is **false**: \"There are, when one examines the schedules carefully, more than two conflicting dates.\"\n",
-        "**D) The lead reviewer, as well as the marking team, were responsible for the opinion.**\n\nSingular lead reviewer plus as well as the marking team needs a singular verb. Marking team after as well as is not a co-subject. Opinion content does not affect number.\n\n**Trap:** As well as the marking team looks like a plural co-subject — agreement still follows the head.\n\nAs-well-as the marking team never joins the subject, so plural \"were\" is **false** — \"The lead reviewer, as well as the marking team, was responsible for the opinion.\"\n",
-        "**E) The data that the model relies on have been restated twice this year.**\n\nFormal plural data correctly takes \"have been restated.\" Prefer plural agreement with data on formal exams unless the paper allows informal singular data. The model-relies-on clause does not singularise data.\n\nFormal plural \"data\" takes \"have been restated,\" so the sentence is **true**.\n"
-      ],
-      "highlights": [
-        "was triggered",
-        "was prepared",
-        "There is, when",
-        "were responsible",
-        "have been restated"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.3",
-      "solution_overview": "Four agreement failures surround one clean formal-data line: overnight safety clauses, steward waivers, conflicting dates, a reviewer's opinion, and restated model data. Strip inserts before you judge.\n\n**Part 1: What to watch for.**\n\nA number of, neither…nor with extra modifiers, there is with a long when-clause, as well as with a false plural, and plural data with a present perfect passive. Quantity phrases greater than one take plural after there. As well as still never makes a co-subject of the marking team.\n\n**Part 2: How to decide.**\n\nTreat plural data as the safe exam default on the last line. For the false lines, delete modifiers and asides, then re-apply a number, proximity, there is/are, and as well as. \"More than two\" is a plural cue after there.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
-    },
-    {
       "id": "en-g-3-20",
       "case_id": "ENG G.3.20",
       "title": "Task 20",

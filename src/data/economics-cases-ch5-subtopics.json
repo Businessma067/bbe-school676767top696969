@@ -1422,35 +1422,6 @@
   },
   {
     "subsection": "5.4",
-    "case_id": "CASE 5.4.02",
-    "title": "Overconsumption and Budget Limits",
-    "context": "Consider a fashion label that advertises seasonal collections aggressively while some shoppers prefer durable garments they can pass on to friends after years of wear. Evaluate the following economic assertions:",
-    "statements": [
-      "Some purchases are used only for a very short period before being discarded, illustrating overconsumption of short-lived goods.",
-      "Greater awareness of sustainable production and consumption is considered desirable for both businesses and consumers in the marketing responsibility discussion.",
-      "Consuming too much carries potential risks that responsible businesses and consumers should recognise when making production and purchasing decisions.",
-      "Businesses only respond to existing customer needs and never influence wishes through new products or advertising activity.",
-      "All advertising is automatically ethical whenever it increases sales and informs customers about product features."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Short-lived goods discarded after brief use show overconsumption in action. Cheap seasonal fashion worn a few times then thrown away is a clear case. The statement's illustration matches that pattern.\n\nSo the statement is True.",
-      "Marketing responsibility discussions treat greater awareness of sustainable production and consumption as desirable for firms and households alike. Both sides are asked to take the topic seriously.\n\nSo the statement is True.",
-      "Consuming too much can strain household budgets, fill storage with unused items, and raise environmental costs from production and disposal. Responsible businesses and consumers are expected to recognise those risks when they plan production and purchases. Awareness is presented as a shared duty, not a niche hobby. Ignoring the risks leaves volume-driven habits unchallenged. The statement correctly frames potential risks as something both sides should see.\n\nSo the statement is True.",
-      "Businesses also influence wishes through new products and advertising; they do not only respond to fixed existing needs. Continuous launches and campaigns create demand. The \"never influence\" claim is false.\n\nSo the statement is False.",
-      "Higher sales and feature information do not automatically make advertising ethical. Manipulation can raise sales while remaining unfair. Ethics depends on how persuasion is done, not only on whether volume rises.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.4",
     "case_id": "CASE 5.4.03",
     "title": "Unnecessary Purchases and Short Use",
     "context": "Review the claim that people often buy goods they do not really need and will not use for long. Evaluate the following economic assertions:",
@@ -1766,35 +1737,6 @@
       "Borrowing a high-quality dress or tool for a short need avoids a full purchase that would sit unused afterward. Temporary rental therefore supports lighter, more sustainable consumption patterns without forcing ownership for rare occasions.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.4",
-    "case_id": "CASE 5.4.14",
-    "title": "Repair Reuse and Longer Product Life",
-    "context": "Consider an event-styling firm offering premium garment rental so clients avoid buying single-use outfits for occasional occasions. Evaluate the following economic assertions:",
-    "statements": [
-      "Marketing responsibility includes recognising that promotional activity may encourage purchases beyond strict necessity.",
-      "Throwaway fashion is sustainable when garments are cheap because low price offsets short useful life.",
-      "Consumers who repair rather than replace functional goods reduce pressure on resources needed for new manufacturing.",
-      "Durable apparel that survives many seasons can circulate among several users before fibres are exhausted.",
-      "Budget plans are often exceeded when shoppers add non-essential items after exposure to targeted advertisements."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Promotions can nudge people past planned baskets into impulse extras. Marketing teams that ignore that effect treat budgets as someone else's problem. Recognising the risk of unnecessary purchases is part of responsible promotional practice, exactly as the statement says.\n\nSo the statement is True.",
-      "Cheap throwaway fashion still burns materials, logistics, and landfill space after a few wears. A low shelf price does not cancel short useful life. Calling that pattern sustainable because garments are inexpensive confuses price with resource impact.\n\nSo the statement is False.",
-      "Fixing a working coat zipper or resoleing boots keeps fabric and hardware in use instead of sending the item to disposal. New manufacturing then faces less replacement demand for the same wardrobe function. Resource pressure falls when repair displaces fresh production runs. Consumers who choose that path reduce the materials and energy that would have gone into another unit. The statement links repair to lower manufacturing pressure correctly.\n\nSo the statement is True.",
-      "A well-made jacket that lasts several seasons can be worn by one person, then passed or rented to others before fibres fail. Circulation multiplies wear per unit of cloth. Durability is what makes that multi-user path realistic.\n\nSo the statement is True.",
-      "Targeted ads often surface non-essential add-ons after the planned items are chosen. Shoppers then overrun the budget they set before entering the store or site. That pattern matches everyday impulse overspend under promotion.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2636,35 +2578,6 @@
       "Fifteen divided by thirty equals one half. With those absolute percentages, relative market share is therefore 0.5. The arithmetic matches the chapter's relative-share definition.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.5",
-    "case_id": "CASE 5.5.28",
-    "title": "Confusing Market Size and Share",
-    "context": "Analyze how distribution-channel weaknesses may appear through where-customer analysis. Evaluate the following economic assertions:",
-    "statements": [
-      "Influencers must always be the same person who completes payment for the product.",
-      "Relative market share adds competitive context that absolute share figures do not provide on their own.",
-      "A business-to-business market is one where the firm advertises on social media to the general public.",
-      "Market potential can exceed market volume when potential customers in the market have not yet been converted to buyers.",
-      "Secondary research requires the firm to conduct personal interviews with every customer in the market."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Influencers shape preferences or specifications without necessarily paying. Parents, technical advisers, and users can steer a choice while someone else settles the invoice. Forcing influencer and payer to be identical invents a rule customer analysis does not use.\n\nSo the statement is False.",
-      "Absolute share reports only the firm's own percentage of market sales. Relative share places that figure against the leader, which reveals whether the firm trails, matches, or outpaces the strongest rival. That competitive framing is information absolute share cannot deliver alone.\n\nSo the statement is True.",
-      "A business-to-business market sells to other firms: components to assemblers, adhesives to factories, fleets to logistics operators. Advertising on social media to the general public describes a consumer-facing channel, not the B2B buyer type. Mixing the communication medium with the customer classification invents a false definition. B2B is about who buys, not about which ad platform is used.\n\nSo the statement is False.",
-      "Market volume counts sales already made by firms active today. Market potential adds room from people or firms who could buy but have not yet. When that unused demand exists, potential sits above volume. The statement names that gap correctly.\n\nSo the statement is True.",
-      "Secondary research reuses existing sources such as published statistics or trade reports. Personal interviews with every customer would be primary fieldwork, and secondary work does not require that exhaustive interviewing.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -6178,35 +6091,6 @@
   },
   {
     "subsection": "5.7",
-    "case_id": "CASE 5.7.55",
-    "title": "Interaction of Price and Promotion",
-    "context": "Review how promotional messages should align with the targeted segment's needs identified in research. Evaluate the following economic assertions:",
-    "statements": [
-      "Refreshing skincare creams packaging colours without changing the core formula is a relaunch within product-mix alteration.",
-      "Removing an underperforming skincare creams variant from the range reflects contraction in the product-mix strategy.",
-      "Removing an outdated travel backpacks model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
-      "A travel backpacks product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
-      "Promoting travel backpacks through social-media posts is a place decision because it chooses the warehouse where stock is stored."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Updating skincare creams pack colours while keeping the recipe fixed is the textbook relaunch move. Alteration refreshes appearance without inventing a separate product line. Recognition stays with the familiar offer, yet the shelf look feels current. Spelling out the category, the counterexample, and the mix element together keeps the verdict tied to this wording rather than to a neighbouring idea.\n\nSo the statement is True.",
-      "When a weak skincare creams variant is deleted after poor results, managers are contracting the mix rather than extending it. Contraction eliminates items whose relaunch prospects look poor. The statement correctly names that removal as contraction strategy, not expansion by another name.\n\nSo the statement is True.",
-      "Mix extension widens the portfolio. Deleting a failed travel backpacks model narrows it. Expansion wording therefore misstates the removal after failed relaunch.\n\nSo the statement is False.",
-      "A travel backpacks product dominating a stagnant market is typically milked as a cash cow. Question-mark treatment would assume low share and high growth. Both conditions fail in the statement's setup.\n\nSo the statement is False.",
-      "Place answers where customers can obtain travel backpacks. Social-media promotion answers how the firm talks to them. Treating posts as warehouse selection invents a false place test.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
     "case_id": "CASE 5.7.56",
     "title": "Place Convenience for Customers",
     "context": "Consider a book publisher selling through bookshops, online platforms, and direct school supply contracts. Evaluate the following economic assertions:",
@@ -6348,35 +6232,6 @@
       "Adding a whole new bicycle accessories product line next to current ranges increases mix width. Managers call that move mix extension. The description matches the strategy map.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
-    "case_id": "CASE 5.7.61",
-    "title": "Decline Stage Low Growth Pattern",
-    "context": "Review how cash cows generate high revenues with lower investment as market growth slows. Evaluate the following economic assertions:",
-    "statements": [
-      "Selling frozen pizzas exclusively through wholesalers means the business uses direct distribution with no intermediaries.",
-      "Setting a low introductory price for new frozen pizzas is an example of price skimming aimed only at early luxury buyers.",
-      "Refreshing bicycle accessories packaging colours without changing the core formula is a relaunch within product-mix alteration.",
-      "Removing an outdated frozen pizzas model after failed relaunch attempts is an example of product-mix expansion through mix extension.",
-      "A frozen pizzas product with high market share in a no-growth market is a question mark requiring maximum market-growth investment."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Direct distribution skips wholesalers; exclusive wholesale selling of frozen pizzas depends on them. The statement's direct claim should be rejected.\n\nSo the statement is False.",
-      "A low launch price for new frozen pizzas is penetration pricing, not skimming. Skimming starts high to harvest early luxury willingness to pay, then eases down. Cheap entry aimed at volume reverses that path.\n\nSo the statement is False.",
-      "Updating bicycle accessories pack colours while keeping the recipe fixed is the textbook relaunch move. Alteration refreshes appearance without inventing a separate product line. Recognition stays with the familiar offer, yet the shelf look feels current.\n\nSo the statement is True.",
-      "Taking an outdated frozen pizzas model off the range after relaunch attempts fail is pruning, not growing. Mix extension introduces an entirely new line beside existing ones; removal does the opposite. Calling elimination \"product-mix expansion through mix extension\" invents growth language for a cut. Contraction is the fitting strategy label here.\n\nSo the statement is False.",
-      "No-growth plus high share points to a cash cow for frozen pizzas, not a question mark. Question marks live in growing markets with weak share. The statement's BCG tag is wrong.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -8086,35 +7941,6 @@
       "Posting current deals on a website can support Place by showing how to obtain the machines and Promotion by advertising the offer. One digital surface can carry both availability and persuasion. The mix elements overlap usefully there. The statement correctly allows website deals to serve place and promotion together in this shop setting.\n\nSo the statement is True.",
       "In this shop context, stock means inventory of machines, not share capital from the finance chapter. Vocabulary shifts with the marketing setting. The book's note on that meaning is what the statement reports.\n\nSo the statement is True.",
       "Delivery alone does not replace promotion; buyers still need to learn the offer exists. Telepathy is not a channel. Place without communication leaves demand uninformed.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
-    "case_id": "CASE 5.7.121",
-    "title": "Product Heart Still Rules at North Harbor Clocks",
-    "context": "North Harbor Clocks applies marketing-mix tools from the Fuhrmann chapter. Evaluate the following economic assertions:",
-    "statements": [
-      "Product sits at the heart of marketing and is the most important decision of a business.",
-      "Most businesses offer a range of products rather than only one item.",
-      "Brands distinguish a product or business from others.",
-      "Price alone replaces the need for any product decision.",
-      "Packaging changes can be part of a relaunch when kept minor."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Product sits at the heart of marketing and is treated as the most important business decision. Without a suitable offer the other Ps have little to carry. That central ranking matches the chapter.\n\nSo the statement is True.",
-      "Most businesses offer a range of products rather than a single item. Assortments and lines are normal in practice. The statement describes that multi-product pattern correctly.\n\nSo the statement is True.",
-      "Brands distinguish a product or business from rivals through names, words, symbols, or signs. Differentiation and recognition depend on that identity work. Without brand cues, offers blur together in crowded markets. The statement correctly places distinction as a core brand job for buyers comparing close alternatives.\n\nSo the statement is True.",
-      "Price cannot replace product decisions. A fee with nothing worthwhile to sell still fails the customer. Product choices remain necessary beside any price strategy.\n\nSo the statement is False.",
-      "Minor packaging changes can form part of a relaunch when the refresh stays small. The product continues while presentation updates. Packaging tweaks fit that relaunch reading.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"

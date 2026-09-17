@@ -1,35 +1,6 @@
 [
   {
     "subsection": "2.1",
-    "case_id": "CASE 2.1.01",
-    "title": "Scarcity and economising",
-    "context": "Analyze scarcity, economising, and who participates in economic decision-making. Evaluate the following economic assertions:",
-    "statements": [
-      "Scarcity disappears once a household earns a steady salary because income removes all limits.",
-      "Economising means making careful use of limited resources rather than treating them as if they were unlimited.",
-      "Nobody can fully opt out of economic decisions, because even inaction is a choice about scarce time or money.",
-      "Only registered businesses face scarcity; households with regular income never need to economise on their spending.",
-      "Exchange requires that at least one party is an entrepreneur; households can never participate directly in exchange."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "A steady salary changes how a household budgets, but it does not erase scarcity. Food, rent, transport, and leisure still compete for the same euros after payday. Income rearranges limits; it does not abolish them. The claim that scarcity disappears once wages arrive is therefore wrong.\n\nSo the statement is False.",
-      "Economising is careful ranking of limited means against competing uses. Treating time, money, or materials as if they were unlimited is the opposite of that discipline. Households cut discretionary spending when cash is tight; firms delay purchases when stock is low. The statement names that careful use correctly, so it fits the chapter idea of economising.\n\nSo the statement is True.",
-      "Refusing to choose is still a choice about scarce means. Sitting out a purchase leaves money for later and frees time that could have been spent shopping or working. Even \"doing nothing\" allocates hours that cannot be reused. Households decide whether to save or spend; workers decide whether to take overtime; students decide whether to study or rest. In each case limited time and money force an allocation, including the allocation called inaction. Nobody steps outside that logic by opting out of markets or businesses. The statement is right that economic decisions follow people into everyday life, not only into registered firms.\n\nSo the statement is True.",
-      "Households with regular income still face rent, food, energy, and transport bills that compete for one budget. Scarcity is not reserved for registered businesses. A salaried family that skips a holiday to cover heating is economising in the same sense as a shop managing stock. Restricting scarcity to firms alone misreads who faces limited means.\n\nSo the statement is False.",
-      "Households buy bread, pay for repairs, and sell used goods without becoming entrepreneurs. Exchange is any agreed swap of goods or services, including ordinary consumer purchases. Requiring an entrepreneur on at least one side invents a rule the chapter does not use.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.1",
     "case_id": "CASE 2.1.02",
     "title": "Goods, services, needs, and wants",
     "context": "Analyze the distinction between goods, services, needs, and wants. Evaluate the following economic assertions:",
@@ -548,35 +519,6 @@
       "Study hours on Saturday replace paid work hours. Forgone wage income is the opportunity cost of studying. Teenagers illustrate the same logic at small scale.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.2",
-    "case_id": "CASE 2.2.04",
-    "title": "Misunderstanding opportunity cost",
-    "context": "Robin claims that opportunity cost is the sum of every rejected option's price. Sara chooses between a €500 washing machine and a €700 laptop. Evaluate the following economic assertions:",
-    "statements": [
-      "If Sara buys the laptop, opportunity cost is the washer's benefit forgone, not all rejected purchases combined.",
-      "Robin's sum-of-all-rejected definition matches the standard economic definition exactly.",
-      "Choosing between only two items involves no scarcity because scarcity requires many options.",
-      "If Sara buys the washer, opportunity cost is 1,200 euros, the combined price of both items.",
-      "Opportunity cost refers to the alternative forgone, not the price of the item actually purchased."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "If Sara buys the laptop, she forgoes the washer's benefit, the next-best use of that money. Opportunity cost is not the sum of every other rejected catalogue item. One leading alternative defines the cost.\n\nSo the statement is True.",
-      "Adding every rejected option's value invents a bloated total that is not the economic definition. Robin's sum-of-all-rejected rule mismatches the standard next-best-alternative idea.\n\nSo the statement is False.",
-      "Two options are enough for scarcity: the same euros cannot buy both the laptop and the washer. Scarcity does not require a long menu. Binary choice already forces ranking of limited means. Claiming scarcity appears only with many options would erase most textbook examples. Sara's two-item decision is scarce-resource allocation in full.\n\nSo the statement is False.",
-      "If she buys the washer, opportunity cost is the laptop's benefit forgone, not 1,200 euros as a combined price of both. Combining prices double-counts and misstates the forgone alternative.\n\nSo the statement is False.",
-      "Opportunity cost names the alternative forgone, not the cash price of what you actually buy. Purchase price is what you pay; opportunity cost is what you give up instead.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1215,35 +1157,6 @@
       "Governments are not the only price setters. Platforms, shops, and landlords set prices every day, and economics studies those markets. Claiming individual market pricing never falls within economics is simply wrong.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.3",
-    "case_id": "CASE 2.3.11",
-    "title": "Competition authority case",
-    "context": "Consider regulators investigate whether three mobile carriers colluded on text-message pricing nationally. Evaluate the following economic assertions:",
-    "statements": [
-      "Investigating pricing across an entire national mobile market can involve macro-style market-wide analysis.",
-      "One subscriber choosing a cheaper text plan for her own phone is microeconomics.",
-      "Economics builds theories to explain firm behaviour and market outcomes including competition issues.",
-      "Microeconomics studies individual firm pricing strategies when one carrier alone is analysed.",
-      "Economics excludes market competition because only government budgets matter."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "A national probe into whether three mobile carriers colluded on text pricing looks across an entire industry market. That market-wide frame can borrow the language of broad, system-level analysis even though the product is still messaging rather than GDP. The letter's careful wording (\"can involve macro-style market-wide analysis\") fits that scale of inquiry.\n\nSo the statement is True.",
-      "A single subscriber switching to a cheaper text plan is a household-level choice inside one product market. That is ordinary microeconomics of consumer choice among plans.\n\nThe case also mentions a national collusion probe among operators, which is a different market-structure question. Treating the personal plan switch as if it answered the whole phone-market probe overreaches, so the letter does not stand as written.\n\nSo the statement is False.",
-      "Competition cases are standard territory for economic theory: how firms set prices, whether parallel pricing looks like collusion, and how market structure shapes outcomes. Building those explanations and predictions is what the discipline does.\n\nNothing in the mobile probe sits outside economics merely because regulators are involved. Firm behaviour and market outcomes, including competition issues, are core content rather than a side topic reserved for lawyers alone.\n\nSo the statement is True.",
-      "When the analyst isolates one carrier's pricing strategy on its own, the unit is a single firm. Microeconomics is the branch that studies that firm's incentives, costs, and prices without requiring a simultaneous model of national GDP.\n\nSo the statement is True.",
-      "Market competition is central to economics, not excluded from it. Government budgets matter in public finance, but they do not crowd firms, prices, and rivalry out of the subject. The absolute exclusion fails immediately.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2060,35 +1973,6 @@
   },
   {
     "subsection": "2.4",
-    "case_id": "CASE 2.4.24",
-    "title": "Unit of account role",
-    "context": "Prices in a supermarket are all labelled in euros. Evaluate money's unit-of-account function:. Evaluate the following economic assertions:",
-    "statements": [
-      "Without money, modern exchange is usually easier than with money.",
-      "Unit of account means money serves as common measure for quoting prices and recording debts.",
-      "Unit of account requires barter because prices cannot be listed without trading goods directly.",
-      "Without a unit of account, comparing bread and cinema ticket values becomes harder.",
-      "Medium of exchange and unit of account are identical functions with no distinction."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Money lowers transaction costs relative to barter. Modern exchange is usually harder, not easier, without money. That reading follows directly from the scarce means named in the statement, not from a different chapter topic.\n\nSo the statement is False.",
-      "Unit of account means quoting prices and recording debts in a common measure such as euros. Supermarket shelf labels in euros are that function on display: every item speaks the same measuring language.\n\nSo the statement is True.",
-      "Unit of account does not require barter. Prices are listed in money precisely so traders need not swap goods directly to express value. That reading follows directly from the scarce means named in the statement, not from a different chapter topic.\n\nSo the statement is False.",
-      "Comparing a loaf and a cinema ticket is easy when both carry euro prices. Without a shared unit, traders fall back on awkward pairwise barter ratios that multiply quickly as the number of goods grows.\n\nThe supermarket's single currency labels exist to avoid that comparison fog. That conclusion stays inside this statement's own nouns and does not borrow a different definition from another letter.\n\nSo the statement is True.",
-      "Medium of exchange is about what you hand over to complete a trade; unit of account is about how you measure and quote value. They are related but distinct functions, not identical ones.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.4",
     "case_id": "CASE 2.4.25",
     "title": "Municipal snow clearing",
     "context": "City clears snow from all residential streets using general taxation. Evaluate the following economic assertions:",
@@ -2727,35 +2611,6 @@
   },
   {
     "subsection": "2.5",
-    "case_id": "CASE 2.5.15",
-    "title": "Planned steel quota surplus",
-    "context": "Central plan targets steel output above what machinery factories can absorb. Evaluate the following economic assertions:",
-    "statements": [
-      "Overplanned output creates surpluses when downstream demand is not coordinated through prices.",
-      "Market systems use price declines to signal excess supply and reduce production profitably.",
-      "Profit motive encourages firms to economise and respond to paying customers in competitive markets.",
-      "Transformation introduces market feedback to reduce persistent mismatch of intersectoral output.",
-      "Scarcity still applies under planning; producing too much steel wastes scarce inputs."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "When the plan pushes steel beyond what machinery plants can absorb, unsold metal piles up. Overplanned output creates surplus because downstream demand was not coordinated through flexible prices linking sectors.\n\nDownward price pressure continues while excess stock sits on shelves or in warehouses. Sellers who refuse to cut prices simply wait longer with idle goods.\n\nA rightward supply jump without matching demand often creates the surplus at yesterday’s price. Equilibrium then rebuilds at a lower price and higher traded quantity.\n\nUnsold inventory in Planned steel quota surplus is the mirror image of shortage: at the current price, sellers offered more than buyers took. Discounting and slower restocking are the usual responses.\n\nSo the statement is True.",
-      "In markets, excess steel would tend to lower prices, squeeze margins, and lead firms to cut production. Price declines are the signal that excess supply should shrink profitably rather than keep meeting an inflated tonnage target.\n\nIn Planned steel quota surplus, the statement’s nouns line up with how prices, ownership, or quantities actually operate in the chapter’s models.\n\nThe mechanism is concrete: someone gains revenue, faces a cost, or meets a constraint named in the claim. That is enough to carry the verdict.\n\nSo the statement is True.",
-      "Profit motive pushes firms to economise on inputs and chase paying customers. Competitive markets reward cutting wasteful steel output that nobody will buy, unlike quota fulfilment that can treat excess as success on paper.\n\nSo the statement is True.",
-      "Transformation introduces market feedback so intersectoral mismatch shows up in inventories and prices instead of only in plan reports. That feedback helps reduce persistent surplus in one industry and shortage in another.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Planned steel quota surplus, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nSo the statement is True.",
-      "Scarcity still binds under planning: labour and energy used on unwanted steel cannot make consumer goods. Producing too much steel wastes scarce inputs even when the plan calls the tonnage a victory.\n\nIn Planned steel quota surplus, the statement’s nouns line up with how prices, ownership, or quantities actually operate in the chapter’s models.\n\nThe mechanism is concrete: someone gains revenue, faces a cost, or meets a constraint named in the claim. That is enough to carry the verdict.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.5",
     "case_id": "CASE 2.5.16",
     "title": "Eco-social housing standard",
     "context": "Government sets energy-efficiency rules while builders compete on design and price. Evaluate the following economic assertions:",
@@ -3162,35 +3017,6 @@
   },
   {
     "subsection": "2.6",
-    "case_id": "CASE 2.6.14",
-    "title": "Salzburg Festival Ticket Queue",
-    "context": "Consider Salzburg festival-goers queuing overnight when discounted early-bird tickets sell out within minutes. Evaluate the following economic assertions:",
-    "statements": [
-      "Minutes-long sell-outs at the posted price suggest quantity demanded exceeds quantity supplied.",
-      "Overnight queues form when buyers expect shortage at the official price.",
-      "Persistent shortage forces resellers to cut prices below the sold-out official rate.",
-      "Adding extra performances shifts demand leftward because audiences dislike additional shows.",
-      "Raising the official ticket price increases shortage because fewer buyers withdraw."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Early-bird tickets vanishing in minutes at the posted price means quantity demanded exceeds quantity supplied at that price. Sell-out speed is shortage evidence.\n\nBuyers who still want the good at the low price compete with time, contacts, or willingness to pay more later. That pressure is exactly what pushes a competitive price upward.\n\nCeiling rules or sticky posted prices can freeze the shortage in place. Until the legal or listed price can move, quantity demanded stays above quantity supplied.\n\nIn Salzburg Festival Ticket Queue, that excess demand shows up as queues, waitlists, or vanishing stock at the posted ticket. Price has not yet risen enough to ration the scarce units or invite more supply.\n\nSo the statement is True.",
-      "Overnight queues form when buyers expect that official allocation will not cover everyone at the printed rate. Queuing is rationing by waiting under shortage expectations.\n\nIn Salzburg Festival Ticket Queue, that excess demand shows up as queues, waitlists, or vanishing stock at the posted ticket. Price has not yet risen enough to ration the scarce units or invite more supply.\n\nBuyers who still want the good at the low price compete with time, contacts, or willingness to pay more later. That pressure is exactly what pushes a competitive price upward.\n\nSo the statement is True.",
-      "Persistent shortage at the official rate typically pushes resale prices above, not below, the sold-out face value. Resellers cut below official only if surplus pressure exists, which is not the festival queue story.\n\nSo the statement is False.",
-      "Extra performances expand supply of seats; they do not shift demand leftward because audiences dislike more shows. More supply eases shortage rather than reducing willingness to attend.\n\nThe because-clause overreaches. Even if one fragment sounds familiar, the causal link or always/never stretch does not hold.\n\nPut the actors back in the correct category and the statement collapses without needing a new chapter of theory.\n\nA concrete counterexample from Salzburg Festival Ticket Queue is enough: the absolute wording fails as soon as an ordinary case sits on the other side.\n\nFor letter D, keep Adding, extra, performances in the foreground; those words already decide whether the mechanism holds.\n\nSo the statement is False.",
-      "Raising the official ticket price lowers quantity demanded and can shrink shortage; it does not increase shortage by making fewer buyers withdraw. Withdrawal of marginal buyers is how higher prices ease excess demand.\n\nIf quantity supplied exceeds quantity demanded, the right label is surplus, not shortage. Empty-shelf stories do not fit a glut at the posted price.\n\nRaising price usually eases shortage by cutting quantity demanded and inviting supply. Claiming the opposite reverses the adjustment logic.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
     "case_id": "CASE 2.6.15",
     "title": "Income as a Demand Shifter",
     "context": "Analyze how changes in consumer income shift demand for normal and inferior goods. Evaluate the following economic assertions:",
@@ -3272,35 +3098,6 @@
       "If demand shifts right while tasting capacity stays tight, the new equilibrium fee is typically higher. Constrained supply plus stronger demand raises the clearing price.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Styrian Wine Tasting Boom, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nSo the statement is True.",
       "Raising tasting fees moves buyers up along the demand curve, cutting quantity demanded and easing shortage without needing an immediate capacity jump.\n\nCeteris paribus is doing real work: if income or tastes jump at the same time, you are no longer tracing the pure own-price effect along one curve.\n\nQuantity demanded is a single point on that curve. Talking about demand for the whole schedule keeps the vocabulary clean.\n\nSo the statement is True.",
       "Expanded visiting hours increase effective supply of tour slots; they do not shift demand leftward because tourists dislike longer schedules. More hours relieve scarcity rather than reduce interest.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
-    "case_id": "CASE 2.6.18",
-    "title": "Prices of Substitute Goods",
-    "context": "Analyze how the price of substitute goods shifts demand for a related product. Evaluate the following economic assertions:",
-    "statements": [
-      "Firms monitor substitute pricing because cross-price shifts alter their equilibrium sales.",
-      "Substitute price changes shift demand rather than causing movement along the demand curve.",
-      "Cheaper streaming subscriptions may shift demand leftward for cinema tickets.",
-      "Coffee shops see lower demand when nearby tea prices increase because beverages are complements.",
-      "A rise in petrol prices shifts demand leftward for public transport because travel becomes undesirable."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Substitute price moves change rival demand through cross-price effects, so firms watch those prices because their own equilibrium sales can shift when rivals reprice.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Prices of Substitute Goods, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nSo the statement is True.",
-      "A substitute’s price change shifts the demand curve for the related good; it is not a movement along that good’s demand curve caused by its own price. Cross-price events are shifters.\n\nSo the statement is True.",
-      "Cheaper streaming makes staying home more attractive relative to cinema, so demand for tickets can shift leftward. Lower substitute prices pull buyers away from the theatre.\n\nIncome, tastes, or related-goods prices rewrite willingness to buy at every own-price in Prices of Substitute Goods. That is a curve shift, not a slide along a fixed demand schedule.\n\nAfter the shift, the old equilibrium is generally wrong: a new intersection with supply sets both price and quantity. Comparative statics follow from which way the curve moved.\n\nOwn-price still governs movement along the new curve. Confusing a shifter with a movement along demand is the main geometry mistake to avoid here.\n\nSo the statement is True.",
-      "Tea and coffee are typically substitutes: higher nearby tea prices tend to raise coffee-shop demand, not lower it. Treating them as complements reverses the cross-price logic.\n\nSo the statement is False.",
-      "Higher petrol prices make driving costlier and often raise demand for public transport as a substitute, rather than shifting transport demand left because travel becomes undesirable overall. The relative-price channel points the other way.\n\nThe because-clause overreaches. Even if one fragment sounds familiar, the causal link or always/never stretch does not hold.\n\nPut the actors back in the correct category and the statement collapses without needing a new chapter of theory.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3419,35 +3216,6 @@
       "Rightward supply shifts with unchanged demand lower equilibrium price and raise quantity; they do not raise price. The statement reverses the standard comparative-statics result.\n\nIn Technology and Productivity, persistent imbalance means the posted price is not the clearing one. Absolute claims that deny adjustment misread the diagram.\n\nPricing above equilibrium slows sales and builds surplus; it does not clear stock faster through prestige alone.\n\nHeavy buyer competition raises equilibrium price pressure, rather than always cutting rents or fares through fear alone.\n\nCompared with neighbouring letters in Technology and Productivity, this one turns on Rightward, supply, shifts rather than on a generic system slogan.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
-    "case_id": "CASE 2.6.23",
-    "title": "Plant Capacity Expansion",
-    "context": "Consider a manufacturing plant adding a production line that raises monthly output without raising unit prices. Evaluate the following economic assertions:",
-    "statements": [
-      "If demand stays fixed while supply shifts right, equilibrium price may fall.",
-      "At the new equilibrium, quantity traded may exceed the old equilibrium if demand is unchanged.",
-      "Higher raw-material input prices could partially offset the expansion by shifting supply leftward.",
-      "Customers ordering the product face lower shortage risk after a successful supply expansion.",
-      "Adding capacity that lowers unit cost can shift supply rightward for the manufactured good."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Extra capacity that shifts supply rightward, with demand fixed, moves equilibrium down the demand curve: price may fall while quantity rises. Expansion without demand growth softens the clearing price.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nEquilibrium quantity is simply the amount traded at that clearing price. It is not a separate policy target floating free of supply and demand.\n\nAt the intersection used in Plant Capacity Expansion, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nSo the statement is True.",
-      "The new intersection after a rightward supply shift typically shows a larger equilibrium quantity if demand is unchanged. More is traded at the new lower or equal clearing price.\n\nAt the intersection used in Plant Capacity Expansion, quantity demanded equals quantity supplied, so neither surplus nor shortage keeps forcing price to move.\n\nAway from that point, one side of the market is frustrated and bids price back. Competitive adjustment is the path from imbalance toward balance.\n\nSo the statement is True.",
-      "Dearer raw materials shift supply leftward and can partly offset the expansion’s rightward push. Net supply depends on both the new line and the input-cost shock.\n\nSo the statement is True.",
-      "Successful supply expansion raises available output at given prices, so customers face less risk of shortage at the old posted price. Scarcity pressure eases when capacity arrives.\n\nBuyers who still want the good at the low price compete with time, contacts, or willingness to pay more later. That pressure is exactly what pushes a competitive price upward.\n\nCeiling rules or sticky posted prices can freeze the shortage in place. Until the legal or listed price can move, quantity demanded stays above quantity supplied.\n\nIn Plant Capacity Expansion, that excess demand shows up as queues, waitlists, or vanishing stock at the posted ticket. Price has not yet risen enough to ration the scarce units or invite more supply.\n\nSo the statement is True.",
-      "Adding a line that lowers unit cost is a supply-side improvement: more output is profitable at each price, shifting supply rightward for the manufactured good.\n\nCost, technology, capacity, or seller numbers change how much firms offer at each price in Plant Capacity Expansion. Those events shift supply rather than merely changing the good’s own price.\n\nA rightward supply move typically lowers equilibrium price when demand is unchanged; a leftward move does the opposite. Quantity adjusts at the new intersection.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -4231,35 +3999,6 @@
       "A licence that grants exclusive supply rights does not force the monopolist to charge exactly marginal cost.\n\nWithout regulation, monopoly pricing can exceed marginal cost; regulation may impose caps, but the licence alone does not.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.7",
-    "case_id": "CASE 2.7.03",
-    "title": "Mobile Carrier Oligopoly",
-    "context": "Analyze how market structure is classified when a handful of firms dominate subscription services. Evaluate the following economic assertions:",
-    "statements": [
-      "Firms in oligopoly may consider rivals' reactions when setting prices or service plans.",
-      "Voluntary identical pricing meetings among rivals are lawful cartels whenever participants sign public minutes.",
-      "Three national carriers serving most subscribers represent perfect competition because phones are physical goods.",
-      "Mutual dependence disappears in oligopoly once firms publish list prices on their websites.",
-      "Oligopoly means exactly two firms globally by mathematical definition with no other cases permitted."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "In an oligopoly of a few mobile carriers, each firm knows rivals will notice and may match plan changes.\n\nPricing and promotion choices therefore weigh likely reactions, not only own-cost and own-demand schedules. That strategic interdependence is the hallmark that separates oligopoly from many-seller competition where one firm's plan tweak is invisible to the market price. Mutual awareness shows up in matched data allowances, handset deals, and copycat tariffs after a leader moves.\n\nSo the statement is True.",
-      "Secret or coordinated identical pricing among rivals to suppress competition is cartel conduct, typically unlawful.\n\nPublishing signed minutes does not turn collusion into a lawful cartel.\n\nSo the statement is False.",
-      "Three national carriers serving most subscribers is concentrated oligopoly, not perfect competition.\n\nPhones being physical objects does not create many price-taking sellers or homogeneous service plans.\n\nSo the statement is False.",
-      "Publishing list prices on websites does not dissolve mutual dependence among few carriers.\n\nRivals still observe each other's posted plans and can respond within days. Transparency of list prices can even sharpen strategic interaction. Oligopoly interdependence is about recognising rivals' reactions, not about whether prices are hidden. Open websites are compatible with intense oligopolistic rivalry or with collusion; they do not redefine the market as many-seller competition.\n\nSo the statement is False.",
-      "Oligopoly means few sellers, not a mathematical rule of exactly two firms worldwide.\n\nDuopoly is one special case; three or four carriers also fit.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "3/5",
     "tier": "full"
   },
   {

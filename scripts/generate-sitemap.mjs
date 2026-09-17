@@ -1,15 +1,19 @@
 /**
  * Zero-dependency sitemap writer. Keep path lists in sync with src/lib/sitemap.ts
- * and src/lib/i18n/locale-path.ts (LOCALIZABLE_PATHS public entries).
+ * (PRIVATE_PATH_PREFIXES / PRIVATE_PATHS_EXACT) and public LOCALIZABLE_PATHS.
+ *
+ * Excludes gated study surfaces and unfinished WiSo tool placeholders
+ * (full-course subjects, mock builder, mock exams, flashcards, demo-practice).
  */
 import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
+import { resolve } from "node:path";
 
 const SITE = "https://bbe-school.com";
 const LOCALES = ["de", "uk"];
 
 const PUBLIC_LOCALIZABLE = [
   "/",
+  "/bbe",
   "/bbe-entrance-exam",
   "/bbe-exam-scoring",
   "/bbe-mathematics",
@@ -18,6 +22,14 @@ const PUBLIC_LOCALIZABLE = [
   "/bbe-admission",
   "/bbe-vs-wiso",
   "/wu-vienna",
+  "/wiso",
+  "/wiso/entrance-exam",
+  "/wiso/exam-scoring",
+  "/wiso/mathematics",
+  "/wiso/economics-german",
+  "/wiso/exam-preparation",
+  "/wiso/admission",
+  "/wiso/wu-vienna",
   "/parents",
   "/important-features",
   "/features/answer-sheet",
@@ -48,16 +60,10 @@ function localize(path, lang) {
 function priorityFor(path) {
   if (path === "/") return "1.0";
   if (path === "/products") return "0.9";
-  if (path === "/terms") return "0.3";
+  if (path === "/terms" || path === "/privacy") return "0.3";
   if (path === "/important-features" || path === "/features/answer-sheet") return "0.6";
   if (path === "/parents") return "0.7";
   if (path.startsWith("/demo-practice/")) return "0.7";
-  if (path === "/mock-exams" || path === "/flashcards" || path === "/matching" || path === "/tutor-exam") {
-    return "0.6";
-  }
-  if (path.startsWith("/flashcards/") || path.startsWith("/matching/") || path.startsWith("/tutor-exam/")) {
-    return "0.5";
-  }
   return "0.8";
 }
 
@@ -101,7 +107,7 @@ function render() {
     }
   }
   return `<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated from src/lib/sitemap.ts on 2026-09-05. -->
+<!-- Generated from src/lib/sitemap.ts on 2026-09-16. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${blocks.join("\n")}
 </urlset>

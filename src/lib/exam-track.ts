@@ -35,6 +35,8 @@ const BBE_TO_WISO: Record<string, string> = {
   "/mock-exams": "/wiso/mock-exams",
   "/products/custom-mock-builder": "/wiso/mock-builder",
   "/flashcards": "/wiso/flashcards",
+  "/matching": "/wiso/matching",
+  "/tutor-exam": "/wiso/tutor-exam",
 };
 
 const WISO_TO_BBE: Record<string, string> = Object.fromEntries(

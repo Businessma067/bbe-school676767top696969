@@ -13,7 +13,7 @@ import type { EconomicsTask } from "@/data/economics-chapters";
 import { useTimedSession } from "@/lib/timed-practice";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { SiteHeader } from "@/components/SiteHeader";
-import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
   practiceInlineAiButtonClass,
@@ -1101,7 +1101,7 @@ function AllExplanationsPanel({
     .trim();
 
   return (
-    <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
+    <div className="practice-fade-in flex h-auto min-h-0 flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:overflow-hidden" data-practice-surface>
       <div className="flex items-start justify-between gap-2 border-b border-border px-4 py-3">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
@@ -1117,7 +1117,7 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-card px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 bg-card px-7 py-7 sm:px-9 sm:py-8 lg:overflow-y-auto">
         <EconAnswerKeyTable answerKey={task.answer_key} />
         <div className="mb-6 flex flex-wrap gap-2">
           {task.statements.map((_, i) => (
@@ -1294,7 +1294,7 @@ function EconomicsPracticeAside({
 }) {
   const calc = usePracticeCalcOptional();
   if (!hasExplanation && !calc?.open) return null;
-  return <PracticeRightSlot>{children}</PracticeRightSlot>;
+  return <PracticeRightSlot className={PRACTICE_EXPLAIN_ASIDE}>{children}</PracticeRightSlot>;
 }
 
 function ExplanationPanels({

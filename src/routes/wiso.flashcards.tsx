@@ -1,45 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { SiteHeader } from "@/components/SiteHeader";
-import { LocalizedLink } from "@/components/LocalizedLink";
-import { hreflangLinks } from "@/lib/i18n/locale-path";
-import { socialImageMetaForPath } from "@/lib/seo/social-image";
-
-const PATH = "/wiso/flashcards" as const;
+import { createFileRoute, Outlet } from "@tanstack/react-router";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 
 export const Route = createFileRoute("/wiso/flashcards")({
-  head: () => ({
-    links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
-    meta: [
-      { title: "WiSo Flashcards | BBE School" },
-      {
-        name: "description",
-        content: "WiSo flashcards will live on this URL, separate from BBE study tools.",
-      },
-      ...socialImageMetaForPath(PATH),
-    ],
-  }),
-  component: WisoFlashcardsPlaceholder,
+  component: () => (
+    <RequireFullCourse productSlug="wiso-full-course">
+      <Outlet />
+    </RequireFullCourse>
+  ),
 });
-
-export function WisoFlashcardsPlaceholder() {
-  return (
-    <div className="min-h-screen bg-background">
-      <SiteHeader />
-      <main className="mx-auto max-w-2xl px-6 py-20 text-center">
-        <p className="text-xs font-semibold uppercase tracking-wide text-indigo-800 dark:text-indigo-300">
-          WiSo · Coming next
-        </p>
-        <h1 className="mt-3 font-display text-3xl font-bold">WiSo Flashcards</h1>
-        <p className="mt-4 text-muted-foreground">
-          WiSo flashcards and study tools will be added on this dedicated URL.
-        </p>
-        <LocalizedLink
-          to="/wiso"
-          className="mt-8 inline-flex rounded-md bg-indigo-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-800"
-        >
-          WiSo home
-        </LocalizedLink>
-      </main>
-    </div>
-  );
-}

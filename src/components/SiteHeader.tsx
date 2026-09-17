@@ -6,7 +6,11 @@ import { ExamTrackSwitcher, TrackBrandMark } from "@/components/ExamTrackSwitche
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileNav } from "@/components/MobileNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { navItemsForAccess, shouldShowSiteNav } from "@/config/site-nav";
+import {
+  navItemsForAccess,
+  shouldShowSiteNav,
+  type NavItem,
+} from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { resolveExamTrack } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
@@ -16,6 +20,8 @@ type SiteHeaderProps = {
   actions?: ReactNode;
   left?: ReactNode;
   center?: ReactNode;
+  /** Override default access/track-based nav items (e.g. homepage chooser links). */
+  navItems?: NavItem[];
   showNav?: boolean;
   showMobileNav?: boolean;
   maxWidthClassName?: string;
@@ -30,6 +36,7 @@ export function SiteHeader({
   actions,
   left,
   center,
+  navItems: navItemsProp,
   showNav,
   showMobileNav,
   maxWidthClassName: _maxWidthClassName,
@@ -44,9 +51,15 @@ export function SiteHeader({
   const pathForNav = stripLocalePrefix(pathname);
   const track = resolveExamTrack(pathname);
   const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
-  const navItems = navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
+  const navItems =
+    navItemsProp ?? navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
+  /**
+   * Below lg the hamburger owns secondary chrome (track, theme, language, guest
+   * auth) so the top bar never packs enough controls to overlap.
+   */
+  const chromeInMenu = mobileVisible;
 
   return (
     <header
@@ -58,28 +71,56 @@ export function SiteHeader({
     >
       <div
         className={cn(
-          "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3 lg:flex-nowrap lg:gap-x-4 lg:px-8",
+          // Mobile: flex + wrap so page actions can drop to a second row instead of overlapping.
+          // lg+: auto | 1fr | auto — side clusters keep natural width so they never collide
+          // with the centered text nav; the middle column absorbs leftover space.
+          "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3",
           "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
+          "lg:grid lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:flex-nowrap lg:items-center lg:gap-x-6 lg:px-8",
           !compact && "sm:py-4",
           innerClassName,
         )}
       >
-        {left ?? <TrackBrandMark compact={compact} />}
-        {center ??
-          (navVisible ? (
-            <DesktopNav items={navItems} />
-          ) : (
-            <div className="min-w-0 flex-1" aria-hidden="true" />
-          ))}
-        <div className="ml-auto flex min-w-0 shrink-0 items-center gap-1 sm:gap-2.5">
-          {actions}
-          {!hideTrackSwitcher ? <ExamTrackSwitcher /> : null}
-          <ThemeToggle />
-          <LanguageSwitcher />
-          <AuthNav />
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2.5 lg:justify-self-start">
+          {left ?? <TrackBrandMark compact={compact} />}
+          {!hideTrackSwitcher ? (
+            <ExamTrackSwitcher
+              className={cn(chromeInMenu && "hidden lg:inline-flex")}
+            />
+          ) : null}
+        </div>
+
+        {/* Keep a real grid cell on lg+ even when DesktopNav is display:none below lg. */}
+        <div className="hidden min-w-0 justify-self-stretch lg:flex lg:justify-center lg:px-2">
+          {center ??
+            (navVisible ? (
+              <DesktopNav items={navItems} />
+            ) : (
+              <div className="min-w-0" aria-hidden="true" />
+            ))}
+        </div>
+
+        <div className="ml-auto flex shrink-0 flex-wrap items-center justify-end gap-1.5 sm:gap-2.5 lg:ml-0 lg:justify-self-end">
+          {actions ? (
+            <div className="flex max-w-full flex-wrap items-center justify-end gap-1.5 sm:gap-2">
+              {actions}
+            </div>
+          ) : null}
+          {/* Theme lives with the other utility controls so it cannot crowd the centered nav. */}
+          <ThemeToggle className={cn(chromeInMenu && "hidden lg:inline-flex")} />
+          <LanguageSwitcher
+            className={cn(chromeInMenu && "hidden lg:inline-flex")}
+          />
+          <AuthNav hideGuestLinks={chromeInMenu} />
           {mobileVisible ? (
             <div className="lg:hidden">
-              <MobileNav items={navItems} />
+              <MobileNav
+                items={navItems}
+                showTrackSwitcher={!hideTrackSwitcher}
+                showThemeToggle
+                showLanguageSwitcher
+                showGuestAuth
+              />
             </div>
           ) : null}
         </div>

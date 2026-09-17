@@ -1,10 +1,14 @@
 import type { ReactNode } from "react";
 import type { FlashcardSubjectId } from "@/data/flashcards";
 
-const SUBJECT_BG: Record<FlashcardSubjectId, string> = {
+/** Art keys for BBE + WiSo subjects (german reuses english book glyph). */
+export type StudyArtSubjectId = FlashcardSubjectId | "german";
+
+const SUBJECT_BG: Record<StudyArtSubjectId, string> = {
   economics: "var(--art-economics)",
   math: "var(--art-math)",
   english: "var(--art-english)",
+  german: "var(--art-english)",
 };
 
 /** Fixed square card — same size on every subject (matches English proportions). */
@@ -22,7 +26,7 @@ type Pair = [string, string];
 
 /** Per mode, per subject — short labels only, no repeats across modes. */
 const SUBJECT_PREVIEW: Record<
-  FlashcardSubjectId,
+  StudyArtSubjectId,
   {
     flashcard: string;
     matching: Pair[];
@@ -65,6 +69,18 @@ const SUBJECT_PREVIEW: Record<
       correct: 0,
     },
   },
+  german: {
+    flashcard: "Knappheit",
+    matching: [
+      ["Angebot", "Supply"],
+      ["Nachfrage", "Demand"],
+    ],
+    tutor: {
+      question: "Was sind Opportunitätskosten?",
+      options: ["Entgangener Nutzen", "Buchhalterische Kosten"],
+      correct: 0,
+    },
+  },
 };
 
 /** Dashboard mode tiles — one subject each, all different terms. */
@@ -78,7 +94,7 @@ function SubjectPreviewShell({
   subject,
   children,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   children: ReactNode;
 }) {
   return (
@@ -97,7 +113,7 @@ function SubjectGlyph({
   subject,
   className = "h-7 w-7",
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   className?: string;
 }) {
   if (subject === "economics") {
@@ -169,7 +185,7 @@ function FlashcardPreviewCard({
   accent,
   term,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
   term: string;
 }) {
@@ -192,7 +208,7 @@ function MiniCard({
   label,
   sample,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   label: string;
   sample: string;
 }) {
@@ -227,7 +243,7 @@ export function FlashcardsSubjectArt({
   subject,
   accent,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
 }) {
   return (
@@ -438,7 +454,7 @@ export function MatchingSubjectArt({
   subject,
   accent,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
 }) {
   return (
@@ -453,7 +469,7 @@ export function TutorSubjectArt({
   subject,
   accent,
 }: {
-  subject: FlashcardSubjectId;
+  subject: StudyArtSubjectId;
   accent: string;
 }) {
   const preview = SUBJECT_PREVIEW[subject].tutor;

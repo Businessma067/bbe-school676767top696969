@@ -266,7 +266,7 @@
       "title": "Project cash flows — payback and NPV from a chart",
       "subsection": "6.5",
       "chapter": 6,
-      "context": "HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at $t=0$. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).\n\n[[CHART type=\"bar\" title=\"HarborLink upgrade — year-end cash inflows (EUR thousands)\"]]\nYear 1 | Inflow=25\nYear 2 | Inflow=30\nYear 3 | Inflow=35\nYear 4 | Inflow=40\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Initial outlay at $t=0$ | EUR 100,000 |\n| Discount rate (for NPV) | 10% per year |\n\nTreat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and so on). Evaluate the following economic assertions:",
+      "context": "HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at time zero. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).\n\n[[CHART type=\"bar\" title=\"HarborLink upgrade — year-end cash inflows (EUR thousands)\"]]\nYear 1 | Inflow=25\nYear 2 | Inflow=30\nYear 3 | Inflow=35\nYear 4 | Inflow=40\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Initial outlay at time zero | EUR 100,000 |\n| Discount rate (for NPV) | 10% per year |\n\nTreat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and so on). Evaluate the following economic assertions:",
       "statements": [
         "The four chart inflows sum to more than EUR 120,000.",
         "Undiscounted payback occurs strictly before the end of Year 3.",
@@ -640,97 +640,97 @@
   },
   "math": [
     {
-      "case_id": "MATH 1.MOCK.CHESTS",
-      "id": "MATH 1.MOCK.CHESTS",
-      "title": "Three inscribed chests — exactly one true label",
+      "case_id": "MATH 1.MOCK.SETS5",
+      "id": "MATH 1.MOCK.SETS5",
+      "title": "Three compliance modules — verbal inclusion–exclusion",
       "chapter": 1,
-      "subsection": "1.4",
-      "context": "Three sealed chests sit in a vault. Exactly one chest contains the prize; the other two are empty. Each chest carries one inscription, and **exactly one** of the three inscriptions is true.\n\nChest A: “The prize is in this chest.”\n\nChest B: “The prize is in this chest.”\n\nChest C: “The prize is in chest A.”\n\nDecide whether each statement is true or false.",
+      "subsection": "1.2",
+      "context": "A mid-size firm unlocks client-data access only for staff who finish three compliance modules: Privacy, Security, and Audit. Of the $200$ staff in the access programme, $120$ finished Privacy, $95$ finished Security, and $80$ finished Audit. The pairwise overlaps are $48$ for Privacy and Security, $40$ for Privacy and Audit, and $35$ for Security and Audit; $18$ finished all three. Staff who finished none of the three remain blocked from client data.",
       "statements": [
-        "The prize is in chest B.",
-        "Chest A’s inscription is false.",
-        "The unique true inscription is on chest B.",
-        "The prize is in chest C.",
-        "If the prize were in chest A, then at least two inscriptions would be true."
+        "Exactly $10$ staff finished none of the three modules.",
+        "Strictly more staff finished every module than finished Audit and nothing else.",
+        "The staff who finished Privacy but neither of the other two outnumber those who finished Security but neither of the other two.",
+        "Finishing Audit without also finishing Privacy is impossible under these counts.",
+        "The staff who finished at least one of Privacy or Security number strictly more than $160$."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nExactly one inscription is true.\n\nIf the prize were in A, then A’s claim would be true and C’s claim (“prize in A”) would also be true — two truths, which is forbidden.\n\nIf the prize were in C, then A and B are both false (each claims the prize is in itself) and C is also false (it claims A). That is zero truths — forbidden.\n\nTherefore the prize is in B.\n\nSo the statement is True.",
-        "**B.** → True\n\nWith the prize in B, A’s claim “the prize is in this chest” is false.\n\nSo the statement is True.",
-        "**C.** → True\n\nPrize in B makes B’s inscription true, while A and C are false. Exactly one truth, and it sits on B. No other location works (letter A).\n\nSo the statement is True.",
-        "**D.** → False\n\nThe prize is in B, not C.\n\nSo the statement is False.",
-        "**E.** → True\n\nIf the prize were in A, then A would be true and C (“prize in A”) would also be true — at least two truths.\n\nSo the statement is True."
+        "**A.** → True\n\n$$\n|P\\cup S\\cup A|=120+95+80-48-40-35+18=190\n$$\n\n$$\n200-190=10\n$$\n\nExactly $10$ finished none.\n\nSo the statement is True.",
+        "**B.** → False\n\nAll three: $18$. Only Audit:\n\n$$\n80-40-35+18=23\n$$\n\n$18$ is not strictly greater than $23$.\n\nSo the statement is False.",
+        "**C.** → True\n\nOnly Privacy: $120-48-40+18=50$. Only Security: $95-48-35+18=30$. Since $50>30$, the claim holds.\n\nSo the statement is True.",
+        "**D.** → False\n\nOnly Audit equals $23>0$, so finishing Audit without Privacy is possible.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\n|P\\cup S|=120+95-48=167>160\n$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "**Setup.** Exactly one chest has the prize; exactly one inscription is true.\n\n**Case A.** Prize in A ⇒ A and C both true → forbidden.\n\n**Case C.** Prize in C ⇒ A, B, C all false → forbidden.\n\n**Case B.** Prize in B ⇒ only B true → unique solution."
+      "solution_overview": "Union $190$, none $10$. Only Audit $23>18$ (all three). Only Privacy $50>$ only Security $30$. Audit without Privacy possible. $|P\\cup S|=167>160$."
     },
     {
-      "case_id": "MATH 2.MOCK.RAD",
-      "id": "MATH 2.MOCK.RAD",
-      "title": "Radical equation — domain, squaring, and root selection",
+      "case_id": "MATH 2.MOCK.GRIND",
+      "id": "MATH 2.MOCK.GRIND",
+      "title": "Three-number archive — symmetric identities and Vieta",
       "chapter": 2,
-      "subsection": "2.4",
-      "context": "Consider the real equation\n\n$$\n\\sqrt{2x+3}=x-1\n$$\n\nand the quadratic identity claims below. Decide whether each statement is true or false.",
+      "subsection": "2.5",
+      "context": "An algebra archive stores three real numbers $a$, $b$ and $c$ only through the records\n\n$$\na+b+c=12,\\qquad ab+bc+ca=47,\\qquad abc=60.\n$$\n\nThe original order was not recorded, so every conclusion must follow from symmetric identities or from the cubic having roots $a$, $b$ and $c$. No decimal approximation is used in the audit.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "Every real solution of the equation must satisfy $x\\ge 1$.",
-        "Squaring both sides (on the admissible region) produces the quadratic $x^{2}-4x-2=0$.",
-        "The equation has exactly one real solution.",
-        "That real solution is strictly larger than $3$.",
-        "The product of the two roots of the squared quadratic $x^{2}-4x-2=0$ equals $-2$."
+        "$a^{2}+b^{2}+c^{2}=50$.",
+        "$(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=6$.",
+        "$a^{3}+b^{3}+c^{3}=220$.",
+        "$\\{a,b,c\\}=\\{3,4,5\\}$.",
+        "$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{60}{47}$."
       ],
       "answer_key": [
         true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nThe square root is defined for $2x+3\\ge 0$, i.e. $x\\ge -\\tfrac{3}{2}$. Because a principal square root is nonnegative, the right-hand side must satisfy $x-1\\ge 0$, hence $x\\ge 1$. Intersecting the two conditions leaves $x\\ge 1$.\n\nSo the statement is True.",
-        "**B.** → True\n\nOn $x\\ge 1$ square both sides:\n\n$$\n2x+3=(x-1)^{2}=x^{2}-2x+1\n$$\n\n$$\n0=x^{2}-4x-2\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\nThe quadratic $x^{2}-4x-2=0$ has roots $2\\pm\\sqrt{6}$. Only $2+\\sqrt{6}$ lies in $x\\ge 1$ (since $2-\\sqrt{6}<1$). Checking it in the original equation confirms it works. Exactly one real solution.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\n2+\\sqrt{6}>2+\\sqrt{4}=2+2=4>3\n$$\n\nSo the statement is True.",
-        "**E.** → True\n\nFor $x^{2}-4x-2=0$ the product of roots is $c/a=-2$.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Domain forces $x\\ge 1$. Squaring yields $x^{2}-4x-2=0$ with roots $2\\pm\\sqrt{6}$; only $2+\\sqrt{6}$ survives. Product of quadratic roots is $-2$."
-    },
-    {
-      "case_id": "MATH 11.133",
-      "id": "math-11-133",
-      "title": "Exam-style tasks - 10",
-      "chapter": 3,
-      "subsection": "3.8",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Alumni pledge $10,000$ one year from now, $12,000$ three years from now, and $14,000$ four years from now. The scholarship office uses $5.0\\%$ and recognizes USD 31,202.70.",
-        "A warranty program expects $15,000$ of claims in its first year and $82\\%$ of the previous year's claims in each of the next seven years. The eight-year forecast totals USD 66,298.83.",
-        "A family office withdraws $10,000$ today and at every year-start forever. At $5\\%$, the perpetuity-due needs USD 207,000.00.",
-        "On a $150,000$ office loan with 120 payments at $0.58\\%$ monthly, USD 868.54 of payment 1 goes toward principal.",
-        "A mobile clinic outlay of USD 320,000 leads to benefits of $100,000$ in years 2 and 3 and $180,000$ in year 6. At $6.8\\%$, its NPV is -USD 30,193.87."
-      ],
-      "answer_key": [
-        false,
         true,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nEach dated cash flow requires its own discount exponent before the values can be added.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{10000.00}{(1+0.0500)^1}+\\frac{12000.00}{(1+0.0500)^3}+\\frac{14000.00}{(1+0.0500)^4}$$\n\n$$\nPV_1 = \\frac{10000.00}{(1+0.0500)^1} = 9523.809524\n$$\n\n$$\nPV_3 = \\frac{12000.00}{(1+0.0500)^3} = 10366.051182\n$$\n\n$$\nPV_4 = \\frac{14000.00}{(1+0.0500)^4} = 11517.834647\n$$\n\n$$PV=9523.809524+10366.051182+11517.834647$$\n\n$$PV=31407.695353$$\n\nThe computed present value is USD 31,407.70, not USD 31,202.70.\n\nSo the statement is False.",
-        "**B.** → True\n\nA constant percentage change makes the scheduled amounts a finite geometric progression.\n\n$$C_k=15000.00(0.82000)^{k-1}$$\n\n$$S_8 = \\sum_{k=1}^{8}15000.00(0.82000)^{k-1}$$\n\n$$S_8=15000.00\\frac{0.82000^{8}-1}{0.82000-1}$$\n\n$$S_8=66298.826178$$\n\nThe computed schedule total is USD 66,298.83, matching the claim.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe infinite payment stream converges because its discount rate exceeds its growth rate.\n\n$$\nPV_1 = \\sum_{t = 1}^\\infty\\frac{10000.00(1+0.0000)^{t-1}}{(1+0.0500)^t}\n$$\n\n$$PV_1=\\frac{10000.00}{0.0500-0.0000}$$\n\n$$PV_1=200000.000000$$\n\n$$PV_{\\mathrm{due}}=(1+0.0500)PV_1$$\n\n$$PV_{\\mathrm{due}}=210000.000000$$\n\nThe computed perpetuity present value is USD 210,000.00, not USD 207,000.00.\n\nSo the statement is False.",
-        "**D.** → True\n\nThe mortgage principal equals the present value of its level month-end payments.\n\n$$P=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PMT=150000.00\\frac{0.005800}{1-(1+0.005800)^{-120}}$$\n\n$$PMT=1738.536438$$\n\n$$\nI_1 = 150000.00(0.005800) = 870.000000\n$$\n\n$$\nPR_1 = PMT-I_1 = 1738.536438-870.000000\n$$\n\n$$\n1738.536438 - 870.000000 = 868.536438\n$$\n\n$$PR_1=868.536438$$\n\nThe computed first principal reduction is USD 868.54, matching the claim.\n\nSo the statement is True.",
-        "**E.** → False\n\nNet present value discounts every project cash flow to time zero and includes the initial cost with a negative sign.\n\n$$NPV=-320000.00+\\frac{100000.00}{(1+0.0680)^2}+\\frac{100000.00}{(1+0.0680)^3}+\\frac{180000.00}{(1+0.0680)^6}$$\n\n$$\nPV(C_2) = \\frac{100000.00}{(1+0.0680)^2} = 87671.309739\n$$\n\n$$\nPV(C_3) = \\frac{100000.00}{(1+0.0680)^3} = 82089.241329\n$$\n\n$$\nPV(C_6) = \\frac{180000.00}{(1+0.0680)^6} = 121295.583755\n$$\n\n$$NPV=-320000.00+87671.309739+82089.241329+121295.583755$$\n\n$$NPV=-28943.865177$$\n\nThe computed net present value is -USD 28,943.87, not -USD 30,193.87.\n\nSo the statement is False."
+        "**A.** → True\n\n$$\na^{2}+b^{2}+c^{2}=(a+b+c)^{2}-2(ab+bc+ca)=144-94=50\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=2\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)=2(50-47)=6\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\na^{3}+b^{3}+c^{3}-3abc=(a+b+c)\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)=12\\cdot 3=36\n$$\n\n$$\na^{3}+b^{3}+c^{3}=36+3\\cdot 60=36+180=216\\neq 220\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nThe numbers are the roots of\n\n$$\nt^{3}-12t^{2}+47t-60=0\n$$\n\nTesting shows $t=3$ is a root; dividing gives $(t-3)(t^{2}-9t+20)=(t-3)(t-4)(t-5)$. The unordered triple is $\\{3,4,5\\}$.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{ab+bc+ca}{abc}=\\dfrac{47}{60}\\neq\\dfrac{60}{47}\n$$\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Each letter is an independent financial claim. Name the matching formula, substitute the stem numbers, and compare with the stated figure.\n\nTopics: 3.3, 3.4, 3.5, 3.6, 3.7\n\nA. value dated scholarship pledges.\nB. total a declining warranty-claim forecast.\nC. capitalize a perpetuity with its first payment now.\nD. measure first-month principal on a short office loan.\nE. value delayed mobile-clinic benefits."
+      "solution_overview": "Squares sum to $50$; pairwise squared gaps sum to $6$; cubes sum to $216$ not $220$; roots $\\{3,4,5\\}$; reciprocal sum is $47/60$, not flipped."
+    },
+    {
+      "case_id": "MATH 3.MOCK.PVFMT",
+      "id": "MATH 3.MOCK.PVFMT",
+      "title": "Gifts and perpetuity-due — consistent cash formatting",
+      "chapter": 3,
+      "subsection": "3.3",
+      "context": "A scholarship fund will receive three gifts: $10000$ after $1$ year, $12000$ after $3$ years, and $14000$ after $4$ years. The annual effective discount rate is $5\\%$.\n\nA second programme is a level perpetuity-due of $10000$ paid at the start of every year (including today), also at $5\\%$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The present value of the three gifts exceeds $32000$.",
+        "The present value of the single gift $10000$ due in one year is strictly less than $9600$.",
+        "At $5\\%$, the perpetuity-due of $10000$ per year has present value exactly $210000$.",
+        "Moving every gift one year earlier would strictly decrease the present value of the three-gift package.",
+        "The present value of the $12000$ gift (year $3$) exceeds the present value of the $14000$ gift (year $4$)."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\mathrm{PV}=\\dfrac{10000}{1.05}+\\dfrac{12000}{1.05^{3}}+\\dfrac{14000}{1.05^{4}}\n$$\n\n$$\n\\dfrac{10000}{1.05}\\approx 9523.81,\\quad \\dfrac{12000}{1.05^{3}}\\approx 10366.05,\\quad \\dfrac{14000}{1.05^{4}}\\approx 11517.83\n$$\n\n$$\n\\mathrm{PV}\\approx 9523.81+10366.05+11517.83=31407.69\\ngtr 32000\n$$\n\nSo the statement is False.",
+        "**B.** → True\n\n$$\n\\dfrac{10000}{1.05}\\approx 9523.81<9600\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nA perpetuity-due of $10000$ at rate $i=0.05$ has present value\n\n$$\n10000\\cdot\\dfrac{1+i}{i}=10000\\cdot\\dfrac{1.05}{0.05}=10000\\cdot 21=210000\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nPaying each cash flow one year earlier shortens every discount exponent, so each term’s present value rises and the package present value rises — it does not decrease.\n\nSo the statement is False.",
+        "**E.** → False\n\nFrom letter A:\n\n$$\n\\dfrac{12000}{1.05^{3}}\\approx 10366.05,\\qquad \\dfrac{14000}{1.05^{4}}\\approx 11517.83\n$$\n\nThe year-$3$ gift has the smaller present value.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Three-gift PV ≈ $31408<32000$. One-year $10000$ discounts to ≈ $9524$. Perpetuity-due $=210000$. Earlier payment raises PV. Year-$4$ gift has larger PV than year-$3$."
     },
     {
       "case_id": "MATH 4.MOCK.PIPES",
@@ -764,18 +764,18 @@
       "solution_overview": "Rates: $A=\\tfrac{1}{6}$, $B=\\tfrac{1}{4}$, drain $=\\tfrac{1}{12}$. Net all three $=\\tfrac{1}{3}$ (time $3$). A+drain $=\\tfrac{1}{12}$ (time $12$)."
     },
     {
-      "case_id": "MATH 5.MOCK.TRAFFIC",
-      "id": "MATH 5.MOCK.TRAFFIC",
-      "title": "Two-route van allocation — linear system",
+      "case_id": "MATH 5.MOCK.BE3",
+      "id": "MATH 5.MOCK.BE3",
+      "title": "Three-product mix — break-even linear system",
       "chapter": 5,
       "subsection": "5.1",
-      "context": "Two one-way routes leave a depot. Let $x$ be the number of vans on route North and $y$ the number on route East in a morning wave. The dispatcher records:\n\n$$\nx+y=50\n$$\n\n$$\n3x+2y=130\n$$\n\n(The second equation is total driver-hours if North takes $3$ hours and East takes $2$.)\n\nDecide whether each statement is true or false.",
+      "context": "A workshop sells three products $X$, $Y$, $Z$ with unit contributions (price minus variable cost)\n\n$$\nc_X=4,\\qquad c_Y=5,\\qquad c_Z=6\n$$\n\n(in EUR per unit; keep EUR in prose). Monthly fixed costs are EUR $4800$. Let $x,y,z$ be the monthly unit volumes. A sales plan forces the mix ratios\n\n$$\nx=2z,\\qquad y=3z\n$$\n\nand requires the plan to sit exactly at break-even (total contribution equals fixed costs).\n\nDecide whether each statement is true or false.",
       "statements": [
-        "Exactly $30$ vans take the North route.",
-        "The East route carries strictly more vans than the North route.",
-        "If each North van costs EUR $40$ in fuel and each East van costs EUR $25$, total fuel for the wave exceeds EUR $1{,}600$.",
-        "Replacing the hour equation by $4x+y=140$ (same $x+y=50$) would raise the North count above $30$.",
-        "The unique solution $(x,y)$ of the original system lies in the open first quadrant."
+        "At break-even under the stated mix, the volume of product $Z$ is strictly greater than $160$.",
+        "The break-even volume of $Z$ is an integer number of units.",
+        "Under the mix, break-even total unit volume $x+y+z$ is strictly less than $1000$.",
+        "If fixed costs rose to EUR $5800$ with the same mix ratios, the required $z$ would exceed $200$.",
+        "Dropping product $Y$ (set $y=0$) while keeping $x=2z$ and the original EUR $4800$ fixed costs would force a strictly larger break-even $z$ than in the three-product plan."
       ],
       "answer_key": [
         true,
@@ -785,214 +785,152 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom $x+y=50$ get $y=50-x$. Substitute:\n\n$$\n3x+2(50-x)=130\n$$\n\n$$\n3x+100-2x=130\n$$\n\n$$\nx=30\n$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$\ny=50-30=20\n$$\n\nEast has fewer vans than North, not more.\n\nSo the statement is False.",
-        "**C.** → True\n\nFuel cost (euros kept in prose):\n\n$$\n30\\cdot 40+20\\cdot 25=1{,}200+500=1{,}700>1{,}600\n$$\n\nSo the statement is True.",
-        "**D.** → False\n\nWith $x+y=50$ and $4x+y=140$:\n\n$$\n4x+(50-x)=140\\Rightarrow 3x=90\\Rightarrow x=30\n$$\n\nNorth stays at $30$, not above.\n\nSo the statement is False.",
-        "**E.** → True\n\nThe unique solution is $(30,20)$ with both coordinates positive.\n\nSo the statement is True."
+        "**A.** → True\n\nBreak-even:\n\n$$\n4x+5y+6z=4800\n$$\n\nSubstitute $x=2z$ and $y=3z$:\n\n$$\n8z+15z+6z=29z=4800\\Rightarrow z=\\dfrac{4800}{29}\\approx 165.52>160\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\nz=\\dfrac{4800}{29}\n$$\n\nSince $29\\cdot 165=4785$ and $4800-4785=15\\neq 0$, $z$ is not an integer.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\nx+y+z=6z=\\dfrac{28800}{29}\\approx 993.10<1000\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\nWith fixed costs EUR $5800$:\n\n$$\n29z=5800\\Rightarrow z=\\dfrac{5800}{29}=200\n$$\n\nexactly, so $z$ does not exceed $200$.\n\nSo the statement is False.",
+        "**E.** → True\n\nWithout $Y$: $4(2z)+6z=14z=4800$, so\n\n$$\nz=\\dfrac{4800}{14}\\approx 342.86>\\dfrac{4800}{29}\\approx 165.52\n$$\n\nThe required $z$ is strictly larger.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Solve $x+y=50$, $3x+2y=130$ to get $(30,20)$. Fuel $1700$. Alternate $4x+y=140$ still gives $x=30$."
+      "solution_overview": "Mix $x=2z$, $y=3z$ ⇒ $29z=4800$, $z\\approx 165.5$. Total units $\\approx 993$. At EUR $5800$, $z=200$ exactly. Dropping $Y$ raises $z$."
     },
     {
-      "case_id": "MATH 6.MOCK.ABS5",
-      "id": "MATH 6.MOCK.ABS5",
-      "title": "Absolute, radical, and sign inequalities",
+      "case_id": "MATH 6.MOCK.TRAP",
+      "id": "MATH 6.MOCK.TRAP",
+      "title": "Hard inequalities — absolute, radical, rational traps",
       "chapter": 6,
       "subsection": "6.3",
-      "context": "Decide whether each inequality claim is true or false. Check every boundary and every compound piece carefully.",
+      "context": "Decide whether each inequality claim is true or false.",
       "statements": [
-        "The solution set of $|x-3|+|x+1|\\le 8$ is exactly $[-3,5]$.",
-        "The solution set of $\\sqrt{x+2}\\ge x$ is exactly $[0,2]$.",
-        "Every $x\\in(0,1)$ satisfies $\\dfrac{x-4}{x+1}<0$.",
-        "The inequality $x^{2}-5x+6>0$ holds on $(-\\infty,2)\\cup(3,+\\infty)$.",
-        "The system $|x|\\le 2$ and $x>0$ has exactly two integer solutions."
+        "The solution set of $|x-1|+|x-4|\\le 3$ is exactly $[1,4]$.",
+        "The solution set of $\\sqrt{2x-1}<x-2$ is exactly $(2,+\\infty)$.",
+        "The solution set of $\\dfrac{x-2}{x+1}\\le 0$ is exactly $[-1,2]$.",
+        "The solution set of $x^{2}-|x|-2<0$ is exactly $(-2,2)$.",
+        "The solution set of $|2x+1|>|x-3|$ is exactly $(-\\infty,-4)\\cup\\bigl(\\tfrac{2}{3},+\\infty\\bigr)$."
       ],
       "answer_key": [
         true,
         false,
-        true,
+        false,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCritical points $x=-1$ and $x=3$. Piecewise:\n\n- $x\\le -1$: $|x-3|+|x+1|=2-2x\\le 8\\Rightarrow x\\ge -3$, so $[-3,-1]$;\n- $-1\\le x\\le 3$: sum equals $4\\le 8$ throughout;\n- $x\\ge 3$: $2x-2\\le 8\\Rightarrow x\\le 5$.\n\nUnion: $[-3,5]$.\n\nSo the statement is True.",
-        "**B.** → False\n\nDomain $x\\ge -2$. For $x\\in[-2,0)$ the right-hand side is negative while the square root is nonnegative, so the inequality holds on all of $[-2,0)$. On $x\\ge 0$ squaring yields $x\\in[0,2]$. Full solution $[-2,2]$, not $[0,2]$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\n\\dfrac{x-4}{x+1}<0\n$$\n\non the open interval $(-1,4)$. Every point of $(0,1)$ lies in that set.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\nx^{2}-5x+6=(x-2)(x-3)>0\n$$\n\nprecisely on $(-\\infty,2)\\cup(3,+\\infty)$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$|x|\\le 2$ and $x>0$ give $(0,2]$. The integers there are $1$ and $2$ — exactly two.\n\nSo the statement is True."
+        "**A.** → True\n\nFor any real $x$,\n\n$$\n|x-1|+|x-4|\\ge |(4)-(1)|=3\n$$\n\nwith equality precisely when $x$ lies between $1$ and $4$. Hence $|x-1|+|x-4|\\le 3$ forces equality, i.e. $x\\in[1,4]$.\n\nSo the statement is True.",
+        "**B.** → False\n\nDomain: $2x-1\\ge 0\\Rightarrow x\\ge \\tfrac{1}{2}$. Also $x-2>0\\Rightarrow x>2$ (else a nonnegative square root cannot be $<$ a nonpositive number). Squaring on $x>2$:\n\n$$\n2x-1<(x-2)^{2}=x^{2}-4x+4\\Rightarrow 0<x^{2}-6x+5=(x-1)(x-5)\n$$\n\nOn $x>2$ this holds for $x>5$. Solution $(5,+\\infty)$, not $(2,+\\infty)$.\n\nSo the statement is False.",
+        "**C.** → False\n\nCritical points $x=-1$ (undefined) and $x=2$. The quotient is negative or zero on $(-1,2]$, never at $x=-1$. The closed interval $[-1,2]$ wrongly includes the asymptote.\n\nSo the statement is False.",
+        "**D.** → True\n\nPut $u=|x|\\ge 0$:\n\n$$\nu^{2}-u-2<0\\Rightarrow (u-2)(u+1)<0\\Rightarrow 0\\le u<2\n$$\n\nso $|x|<2$, i.e. $x\\in(-2,2)$.\n\nSo the statement is True.",
+        "**E.** → True\n\nBoth sides nonnegative, so squaring is valid:\n\n$$\n(2x+1)^{2}>(x-3)^{2}\\Rightarrow 3x^{2}+10x-8>0\\Rightarrow (3x-2)(x+4)>0\n$$\n\nRoots $-4$ and $\\tfrac{2}{3}$, so $x<-4$ or $x>\\tfrac{2}{3}$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Absolute sum → $[-3,5]$. Radical inequality → $[-2,2]$ (claim too small). Rational sign on $(-1,4)$. Quadratic sign as factored. $|x|\\le 2$, $x>0$ → integers $\\{1,2\\}$."
+      "solution_overview": "$|x-1|+|x-4|\\le 3\\Leftrightarrow[1,4]$. Radical inequality → $(5,\\infty)$. Rational ≤0 → $(-1,2]$. $x^{2}-|x|-2<0\\Leftrightarrow(-2,2)$. Absolute comparison → $(-\\infty,-4)\\cup(2/3,\\infty)$."
     },
     {
-      "case_id": "MATH 7.MOCK.THROW",
-      "id": "MATH 7.MOCK.THROW",
-      "title": "Vertical throw — vertex, height checks, landing time",
+      "case_id": "MATH 7.MOCK.PIECE",
+      "id": "MATH 7.MOCK.PIECE",
+      "title": "Piecewise linear–quadratic — continuity and traps",
       "chapter": 7,
-      "subsection": "7.3",
-      "context": "A ball is thrown vertically. Height in metres after $t$ seconds is\n\n$$\nh(t)=-5t^{2}+20t+2\\qquad(t\\ge 0)\n$$\n\nDecide whether each statement is true or false.",
+      "subsection": "7.2",
+      "context": "Define\n\n$$\nf(x)=\n\\begin{cases}\n2x+1 & \\text{if }x<1,\\\\\nx^{2}-2x+4 & \\text{if }x\\ge 1.\n\\end{cases}\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The maximum height occurs at $t=2$.",
-        "The maximum height is strictly greater than $20$ metres.",
-        "The ball is still above $10$ metres at $t=3$.",
-        "The positive landing time (when $h=0$) is strictly less than $4$.",
-        "Completing the square gives $h(t)=-5(t-2)^{2}+22$."
+        "$f$ is continuous at $x=1$.",
+        "$f$ is differentiable at $x=1$.",
+        "For every $x\\ge 1$ one has $f(x)\\ge 3$, with equality at $x=1$.",
+        "The global minimum value of $f$ on $\\mathbb{R}$ is $3$.",
+        "On the region $x<1$, the equation $f(x)=0$ has a negative root."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor $h(t)=-5t^{2}+20t+2$ the vertex is at\n\n$$\nt=-\\dfrac{b}{2a}=-\\dfrac{20}{2\\cdot(-5)}=2\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nh(2)=-5\\cdot 4+20\\cdot 2+2=-20+40+2=22>20\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\nh(3)=-5\\cdot 9+20\\cdot 3+2=-45+60+2=17>10\n$$\n\nSo the statement is True.",
-        "**D.** → False\n\nSolve $-5t^{2}+20t+2=0$, or $5t^{2}-20t-2=0$:\n\n$$\nt=\\dfrac{20\\pm\\sqrt{400+40}}{10}=\\dfrac{20\\pm\\sqrt{440}}{10}=2\\pm\\dfrac{\\sqrt{110}}{5}\n$$\n\nThe positive root is $2+\\sqrt{110}/5$. Since $\\sqrt{100}=10$ and $\\sqrt{121}=11$, one has $\\sqrt{110}\\approx 10.49$, so\n\n$$\nt\\approx 2+2.10=4.10\\nless 4\n$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\nh(t)=-5\\bigl(t^{2}-4t\\bigr)+2=-5\\bigl((t-2)^{2}-4\\bigr)+2=-5(t-2)^{2}+20+2=-5(t-2)^{2}+22\n$$\n\nSo the statement is True."
+        "**A.** → True\n\nLeft limit: $2\\cdot 1+1=3$. Right-hand value: $1^{2}-2\\cdot 1+4=3$. Limits and value agree, so $f$ is continuous at $x=1$.\n\nSo the statement is True.",
+        "**B.** → False\n\nLeft-hand derivative is $2$. Right-hand derivative of $x^{2}-2x+4$ is $2x-2$, equal to $0$ at $x=1$. Since $2\\neq 0$, $f$ is not differentiable at $x=1$.\n\nSo the statement is False.",
+        "**C.** → True\n\nFor $x\\ge 1$, $f(x)=x^{2}-2x+4=(x-1)^{2}+3\\ge 3$, with equality exactly at $x=1$.\n\nSo the statement is True.",
+        "**D.** → False\n\nOn $x<1$, $f(x)=2x+1$ becomes arbitrarily negative as $x\\to-\\infty$, so no global minimum value $3$ exists on $\\mathbb{R}$.\n\nSo the statement is False.",
+        "**E.** → True\n\nIf $x<1$ and $f(x)=0$, then $2x+1=0$, so $x=-\\tfrac{1}{2}<0$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Vertex at $t=2$, $h=22$. $h(3)=17$. Landing $2+\\sqrt{110}/5\\approx 4.10$. Completed square $-5(t-2)^{2}+22$."
+      "solution_overview": "Continuous at $1$, not differentiable there. On $[1,\\infty)$ minimum $3$ at $x=1$, but no global min on $\\mathbb{R}$. Left piece zero at $x=-1/2$."
     },
     {
-      "case_id": "MATH 8.102",
-      "id": "math-8-102",
-      "title": "Exam-style tasks - 5",
+      "case_id": "MATH 8.MOCK.LIM",
+      "id": "MATH 8.MOCK.LIM",
+      "title": "Power model $Ax^{p}$ — limits in letters only",
       "chapter": 8,
-      "subsection": "8.5",
-      "context": "A power model $y=A x^{p}$ is calibrated from data. Decide whether each claim about exponents, scaling, and fitted values is true or false.",
+      "subsection": "8.1",
+      "context": "Let $A>0$ and $p\\in\\mathbb{R}$ be parameters. Consider\n\n$$\nf(x)=A x^{p}\\qquad(x>0).\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
-        "A balloon maker has volume proportional to $r^3$. Shrinking radius by $10\\%$ is said to reduce volume by $\\dfrac{271}{10}\\%$.",
-        "In a pharmacy trial, concentration follows $C(m)=18m^{-1/2}$. The sample labelled $m=9$ is claimed to have concentration $6$ mg/L.",
-        "A cooperative farm follows $H(L)=KL^{2/3}$ for harvest. The forecast says eight times the cultivated area produces $5$ times the crop.",
-        "A grain cooperative reaches its promised yield when $40L^{\\frac{2}{3}}=360$. The land allocation is stated as $L=27$.",
-        "A materials sensor passes data through $g(x)=4x^2$ and then $f(u)=3u^{1/2}$. The composed output for $x=6$ is listed as $24$."
+        "If $p>0$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)=0$.",
+        "If $p<0$, then $\\displaystyle\\lim_{x\\to +\\infty}f(x)=0$.",
+        "If $p=0$, then $f$ is constant on $(0,+\\infty)$.",
+        "For every real $p$, the ratio $f(2x)/f(x)$ does not depend on $x$.",
+        "If $p=-1$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)$ is a finite positive number."
       ],
       "answer_key": [
         true,
         true,
-        false,
+        true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{9}{10}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}=(\\dfrac{9}{10})^{3}$$\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}=\\dfrac{729}{1000}$$\n\nTranslate the output multiplier back to a percentage decrease:\n\n$$\\left|\\dfrac{729}{1000}-1\\right|\\cdot100\\%=\\dfrac{271}{10}\\%$$\n\nThe direction follows from the multiplier being below $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}<1$$\n\nThe stem gives $\\dfrac{271}{10}\\%$, so the decisive comparison is\n\n$$\\dfrac{271}{10}\\%=\\dfrac{271}{10}\\%.$$\n\nSo the statement is True.",
-        "**B.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$C(9)=\\frac{18}{\\sqrt{9}}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$C(9)=\\frac{18}{3}$$\n\nHence the model output is\n\n$$C(9)=6$$\n\nThe stem's value is $6$, so the numerical comparison is\n\n$$6=6.$$\n\nSo the statement is True.",
-        "**C.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{H(8L)}{H(L)}=\\frac{K(8L)^{\\frac{2}{3}}}{KL^{\\frac{2}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{H(8L)}{H(L)}=(8)^{\\frac{2}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{2}{3}}$$\n\n$$\\frac{H(8L)}{H(L)}=4$$\n\nThe proposed multiplier is $5$, and therefore\n\n$$4\\ne5$$\n\nThe mathematical result does not agree with the claim.\n\nSo the statement is False.",
-        "**D.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$40L^{\\frac{2}{3}}=360$$\n\nDivide by the coefficient:\n\n$$L^{\\frac{2}{3}}=9$$\n\nRaise both sides to the reciprocal exponent:\n\n$$L=(9)^{\\frac{3}{2}}$$\n\n$$L=27$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$27=27.$$\n\nSo the statement is True.",
-        "**E.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(6)=4(6)^2$$\n\n$$g(6)=144$$\n\nInsert that inner output into $f$:\n\n$$f(g(6))=3\\sqrt{144}$$\n\nComplete the power evaluation:\n\n$$3\\cdot12$$\n\n$$f(g(6))=36$$\n\nThe displayed claim is $24$, so\n\n$$36\\ne24$$\n\nThe mathematical result does not agree with the claim.\n\nSo the statement is False."
+        "**A.** → True\n\nFor $p>0$ and $A>0$, $x^{p}\\to 0$ as $x\\to 0^{+}$, so $A x^{p}\\to 0$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $p<0$ write $p=-q$ with $q>0$. Then $x^{p}=1/x^{q}\\to 0$ as $x\\to+\\infty$, hence $f(x)\\to 0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nIf $p=0$, then $x^{0}=1$ for all $x>0$, so $f(x)=A$, a constant.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\n\\dfrac{f(2x)}{f(x)}=\\dfrac{A(2x)^{p}}{A x^{p}}=2^{p}\n$$\n\nwhich depends only on $p$, not on $x$.\n\nSo the statement is True.",
+        "**E.** → False\n\nIf $p=-1$, then $f(x)=A/x\\to+\\infty$ as $x\\to 0^{+}$, which is not a finite limit.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the C model at m=9.\nC: derive the scale multiplier for H.\nD: solve the positive power equation for L.\nE: evaluate the two maps in their stated order.\n\nLevels keep the scale factor $A$. Scale comparisons cancel $A$ and leave only the power of the input ratio. Recover $A$ and any unknown exponent once here; each letter only checks its extra claim."
+      "solution_overview": "Sign of $p$ controls $0^{+}$ and $+\\infty$ limits. $p=0$ ⇒ constant $A$. Ratio $f(2x)/f(x)=2^{p}$ independent of $x$. For $p=-1$, $A/x$ blows up at $0^{+}$."
     },
     {
-      "case_id": "MATH 9.MOCK.CUBIC5",
-      "id": "MATH 9.MOCK.CUBIC5",
-      "title": "Cubic deviation — critical points and values",
+      "case_id": "MATH 9.MOCK.PARAM",
+      "id": "MATH 9.MOCK.PARAM",
+      "title": "Parametric cubic — factorisation and root counts",
       "chapter": 9,
-      "subsection": "9.3",
-      "context": "A production deviation is modelled by\n\n$$\nf(x)=x^{3}-6x^{2}+9x+1\\qquad(x\\in\\mathbb{R})\n$$\n\nDecide whether each statement is true or false.",
+      "subsection": "9.2",
+      "context": "For a real parameter $k$, consider\n\n$$\nx^{3}-3x^{2}+(k+2)x-k=0.\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The derivative factors as $f'(x)=3(x-1)(x-3)$.",
-        "There is a local maximum at $x=1$.",
-        "The local-minimum value of $f$ is strictly less than $0$.",
-        "Between the two critical points, $f$ is strictly decreasing.",
-        "$f(0)+f(4)=2$."
+        "$x=1$ is a real root for every real $k$.",
+        "When $k=1$, the equation has exactly two distinct real roots.",
+        "When $k=0$, the equation has three distinct real roots.",
+        "When $k=2$, the equation has exactly one real root.",
+        "Whenever $k\\le 1$, the sum of all real roots counted with multiplicity equals $3$."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
-        false
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\nf'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3)\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nf''(x)=6x-12,\\qquad f''(1)=-6<0\n$$\n\nso $x=1$ is a local maximum.\n\nSo the statement is True.",
-        "**C.** → False\n\nAt the local minimum $x=3$:\n\n$$\nf(3)=27-54+27+1=1\\nless 0\n$$\n\nSo the statement is False.",
-        "**D.** → True\n\nOn $(1,3)$ one has $f'(x)=3(x-1)(x-3)<0$, so $f$ is strictly decreasing between the critical points.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\nf(0)=1,\\qquad f(4)=64-96+36+1=5\n$$\n\n$$\nf(0)+f(4)=6\\neq 2\n$$\n\nSo the statement is False."
+        "**A.** → True\n\nFactor by grouping / testing $x=1$:\n\n$$\n1-3+(k+2)-k=0\n$$\n\nso $x=1$ is always a root. Dividing gives $(x-1)(x^{2}-2x+k)=0$.\n\nSo the statement is True.",
+        "**B.** → False\n\nFor $k=1$, $x^{2}-2x+1=(x-1)^{2}$, so the cubic is $(x-1)^{3}=0$: one distinct real root of multiplicity three.\n\nSo the statement is False.",
+        "**C.** → True\n\nFor $k=0$ the quadratic factor is $x(x-2)$. Roots $0$, $1$, and $2$ — three distinct reals.\n\nSo the statement is True.",
+        "**D.** → True\n\nFor $k=2$ the discriminant of $x^{2}-2x+2$ is $4-8=-4<0$, so only the real root $x=1$ remains.\n\nSo the statement is True.",
+        "**E.** → True\n\nWhen $k\\le 1$ there are three real roots counting multiplicity. By Vieta the sum of roots of $x^{3}-3x^{2}+\\cdots$ is $3$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "$f'=3(x-1)(x-3)$; local max at $1$ ($f=5$), local min at $3$ ($f=1$). Decreasing on $(1,3)$. $f(0)+f(4)=6$."
+      "solution_overview": "Factor $(x-1)(x^{2}-2x+k)$. Root $x=1$ always. $k=1$ → triple root. $k=0$ → $\\{0,1,2\\}$. $k=2$ → one real root. Vieta sum $3$."
     },
     {
-      "case_id": "MATH 10.MOCK.GROWTH",
-      "id": "MATH 10.MOCK.GROWTH",
-      "title": "Exponential biomass — doubling and window factors",
+      "case_id": "MATH 10.MOCK.LOGD",
+      "id": "MATH 10.MOCK.LOGD",
+      "title": "Log–exponential product — symbolic derivative claims",
       "chapter": 10,
-      "subsection": "10.1",
-      "context": "A culture’s biomass (in grams) follows\n\n$$\nB(t)=80\\,e^{0.2t}\\qquad(t\\ge 0\\text{ in hours})\n$$\n\nDecide whether each statement is true or false.",
+      "subsection": "10.2",
+      "context": "Let\n\n$$\nf(x)=\\ln(x^{2}+1)\\cdot e^{-x}\\qquad(x\\in\\mathbb{R}).\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
-        "Initial biomass is exactly $80$ g.",
-        "Biomass doubles in strictly less than $4$ hours.",
-        "After $5$ hours, biomass already exceeds $200$ g.",
-        "The relative growth factor over any $5$-hour window is exactly $e$.",
-        "$B(10)/B(5)=e$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$$\nB(0)=80\\,e^{0}=80\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\nDoubling means $80e^{0.2t}=160$, so $e^{0.2t}=2$, hence\n\n$$\nt=\\dfrac{\\ln 2}{0.2}=5\\ln 2\\approx 5\\cdot 0.693=3.465<4\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\nB(5)=80e^{1}=80e\\approx 80\\cdot 2.718=217.4>200\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\nFor any $t$,\n\n$$\n\\dfrac{B(t+5)}{B(t)}=e^{0.2\\cdot 5}=e\n$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\n\\dfrac{B(10)}{B(5)}=\\dfrac{80e^{2}}{80e}=e\n$$\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "$B(0)=80$. Doubling time $5\\ln 2\\approx 3.47$. Five-hour factor $e$. $B(5)=80e\\approx 217$."
-    },
-    {
-      "case_id": "MATH 11.MOCK.MRMC",
-      "id": "MATH 11.MOCK.MRMC",
-      "title": "Revenue and cost — marginals and a level check",
-      "chapter": 11,
-      "subsection": "11.2",
-      "context": "Weekly revenue and cost (in thousands of euros) for output $q>0$ are\n\n$$\nR(q)=30q-q^{2},\\qquad C(q)=q^{3}-6q^{2}+15q+8\n$$\n\nDecide whether each statement is true or false.",
-      "statements": [
-        "Marginal revenue is $R'(q)=30-2q$.",
-        "Marginal cost is $C'(q)=3q^{2}-12q+15$.",
-        "At $q=3$, marginal revenue strictly exceeds marginal cost.",
-        "Profit $\\pi=R-C$ has a critical point wherever $R'=C'$.",
-        "$R(4)=C(4)$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nDifferentiate $R(q)=30q-q^{2}$:\n\n$$\nR'(q)=30-2q\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nC'(q)=3q^{2}-12q+15\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\nAt $q=3$:\n\n$$\nR'(3)=30-6=24,\\qquad C'(3)=27-36+15=6\n$$\n\n$$\n24>6\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\n\\pi'(q)=R'(q)-C'(q)\n$$\n\nvanishes precisely when $R'=C'$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\nR(4)=120-16=104,\\qquad C(4)=64-96+60+8=36\n$$\n\n$$\n104\\neq 36\n$$\n\nSo the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "solution_overview": "$R'=30-2q$, $C'=3q^{2}-12q+15$. At $q=3$, $MR=24>MC=6$. Critical profit iff $MR=MC$. $R(4)\\neq C(4)$."
-    },
-    {
-      "case_id": "MATH 12.MOCK.URNS",
-      "id": "MATH 12.MOCK.URNS",
-      "title": "Two draws without replacement — colour events",
-      "chapter": 12,
-      "subsection": "12.1",
-      "context": "An urn holds $5$ red, $4$ blue and $3$ green balls ($12$ balls total). Two balls are drawn **without replacement**, order irrelevant.\n\nDecide whether each statement is true or false.",
-      "statements": [
-        "The number of equally likely two-ball hands is $\\binom{12}{2}=66$.",
-        "The probability both balls are red is strictly less than $\\tfrac{1}{5}$.",
-        "The probability of one red and one blue equals $\\dfrac{20}{66}$.",
-        "The probability both balls share a colour exceeds $\\tfrac{1}{3}$.",
-        "The probability of at least one green ball equals $\\dfrac{30}{66}$."
+        "Every term in an expression for $f'$ contains the factor $e^{-x}$.",
+        "$x=0$ is a critical point of $f$.",
+        "$f'(x)<0$ for every $x<0$.",
+        "$f$ has no critical points on $\\mathbb{R}$.",
+        "The factor $e^{-x}$ never changes the sign of $f'$."
       ],
       "answer_key": [
         true,
@@ -1002,45 +940,107 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\binom{12}{2} = \\dfrac{12 \\cdot 11}{1 \\cdot 2} = 66\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nP(\\text{both red})=\\dfrac{\\binom{5}{2}}{66}=\\dfrac{10}{66}=\\dfrac{5}{33}\\approx 0.152<\\dfrac{1}{5}\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\nCount mixed red-blue pairs: $5\\cdot 4=20$ (unordered pairs, one of each colour).\n\n$$\nP=\\dfrac{20}{66}\n$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$\nP(\\text{same colour})=\\dfrac{\\binom{5}{2}+\\binom{4}{2}+\\binom{3}{2}}{66}=\\dfrac{10+6+3}{66}=\\dfrac{19}{66}\n$$\n\n$$\n\\dfrac{19}{66}\\approx 0.288\\ngtr \\dfrac{1}{3}\n$$\n\nSo the statement is False.",
-        "**E.** → True\n\nComplement: no green means both from the $9$ non-green balls.\n\n$$\nP(\\text{at least one green})=1-\\dfrac{\\binom{9}{2}}{66}=1-\\dfrac{36}{66}=\\dfrac{30}{66}\n$$\n\nSo the statement is True."
+        "**A.** → True\n\nProduct rule:\n\n$$\nf'(x)=\\dfrac{2x}{x^{2}+1}\\,e^{-x}+\\ln(x^{2}+1)\\cdot(-e^{-x})\n$$\n\nBoth terms contain $e^{-x}$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nf'(x)=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right)\n$$\n\nAt $x=0$ the bracket is $0-\\ln 1=0$, so $f'(0)=0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor $x<0$ one has $\\dfrac{2x}{x^{2}+1}<0$ while $\\ln(x^{2}+1)>0$, so the bracket is negative. Multiplying by $e^{-x}>0$ keeps $f'(x)<0$.\n\nSo the statement is True.",
+        "**D.** → False\n\nLetter B already produces a critical point at $x=0$.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe exponential factor never vanishes and never changes sign, so it does not alter the sign of $f'$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Universe $\\binom{12}{2}=66$. Both red $10/66$. Red-blue $20/66$. Same colour $19/66$. At least one green $30/66$."
+      "solution_overview": "$f'=e^{-x}(2x/(x^{2}+1)-\\ln(x^{2}+1))$. Critical at $0$; $f'<0$ on $(-\\infty,0)$; exponential factor preserves sign."
     },
     {
-      "case_id": "MATH 13.MOCK.QC",
-      "id": "MATH 13.MOCK.QC",
-      "title": "Binomial defectives — mean, variance, and a PMF term",
+      "case_id": "MATH 11.MOCK.ZLOG",
+      "id": "MATH 11.MOCK.ZLOG",
+      "title": "Engagement score $t^{2}e^{-t}\\ln(2t+1)$ — product of three",
+      "chapter": 11,
+      "subsection": "11.1",
+      "context": "An engagement score is modelled by\n\n$$\nZ(t)=t^{2}\\,e^{-t}\\ln(2t+1)\\qquad(t>0).\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$Z'(t)=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)$ for all $t>0$.",
+        "$Z(t)>0$ for every $t>0$.",
+        "For $t>0$, the factor $e^{-t}$ does not change the sign of $Z'$.",
+        "$Z$ is strictly decreasing on $(0,+\\infty)$.",
+        "$\\displaystyle\\lim_{t\\to +\\infty}Z(t)=0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThree-factor product with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$:\n\n$$\nu'=2t,\\qquad v'=-e^{-t},\\qquad w'=\\dfrac{2}{2t+1}\n$$\n\n$$\nZ'=u'vw+uv'w+uvw'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe factor $e^{-t}$ is always positive for real $t$, so it does not change the sign of $Z'$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $t=1$ the bracket in letter A is $\\ln 3+\\tfrac{2}{3}>0$, so $Z'(1)>0$. Hence $Z$ is increasing at $t=1$ and cannot be strictly decreasing on the whole $(0,+\\infty)$.\n\nSo the statement is False.",
+        "**E.** → True\n\nAs $t\\to+\\infty$, the factor $e^{-t}$ decays faster than any polynomial growth of $t^{2}\\ln(2t+1)$, so $Z(t)\\to 0$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "One derivative check matches the three-factor product rule. $Z>0$ on $(0,\\infty)$; $e^{-t}$ preserves sign of $Z'$; not monotone (since $Z'(1)>0$); $Z(t)\\to 0$ as $t\\to+\\infty$."
+    },
+    {
+      "case_id": "MATH 12.MOCK.BEST3",
+      "id": "MATH 12.MOCK.BEST3",
+      "title": "Best-of-three unfair coin match — length and winner traps",
+      "chapter": 12,
+      "subsection": "12.3",
+      "context": "Ana and Ben play a best-of-three coin contest (first to two wins takes the match). Each game is independent. Ana wins a single game with probability $p=\\tfrac{2}{3}$; Ben wins with probability $q=\\tfrac{1}{3}$.\n\nThey always play until one player has two wins (so the match ends in two or three games).\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The probability Ana wins the match in exactly two games is $\\dfrac{4}{9}$.",
+        "The probability the match lasts exactly three games is $\\dfrac{4}{9}$.",
+        "The probability Ana wins the match (in two or three games) equals $\\dfrac{2}{3}$.",
+        "Conditional on the match lasting three games, the probability Ana wins the match is $\\dfrac{2}{3}$.",
+        "The probability the match ends in exactly two games is $\\dfrac{5}{9}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAna sweeps $2$–$0$ with probability\n\n$$\np^{2}=\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{4}{9}\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nA third game occurs precisely when the first two games are split:\n\n$$\n2pq=2\\cdot\\dfrac{2}{3}\\cdot\\dfrac{1}{3}=\\dfrac{4}{9}\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAna’s match-win probability is\n\n$$\np^{2}+2p^{2}q=p^{2}(1+2q)=\\dfrac{4}{9}\\left(1+\\dfrac{2}{3}\\right)=\\dfrac{4}{9}\\cdot\\dfrac{5}{3}=\\dfrac{20}{27}\n$$\n\nwhich is not $\\dfrac{2}{3}=\\dfrac{18}{27}$. The value $\\dfrac{2}{3}$ is only Ana’s per-game win probability.\n\nSo the statement is False.",
+        "**D.** → True\n\nGiven a $1$–$1$ split after two games, the third game decides the match, and Ana wins that game with probability $p=\\dfrac{2}{3}$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\nP(\\text{ends in two})=p^{2}+q^{2}=\\dfrac{4}{9}+\\dfrac{1}{9}=\\dfrac{5}{9}\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Ana $2$–$0$: $4/9$. Three games: $4/9$. Ana match win $20/27\\neq 2/3$. Given three games, Ana wins with $p=2/3$. Two-game match: $5/9$."
+    },
+    {
+      "case_id": "MATH 13.MOCK.CALLS",
+      "id": "MATH 13.MOCK.CALLS",
+      "title": "Call-centre sales — binomial mean, variance, and proportion traps",
       "chapter": 13,
       "subsection": "13.1",
-      "context": "A machine produces items independently with defect probability $p=0.2$. A batch of $n=10$ items is inspected. Let $X$ be the number of defectives, so $X\\sim\\mathrm{Bin}(10,0.2)$.\n\nDecide whether each statement is true or false.",
+      "context": "A call centre handles $n=50$ independent outbound calls in an evening. Each call is a “sale” with probability $p=0.4$, independently of the others. Let $X$ be the number of sales that evening, so $X\\sim\\mathrm{Bin}(50,0.4)$.\n\nLet $\\hat{p}=X/50$ be the evening’s sales rate (a sample proportion).\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The mean number of defectives is exactly $2$.",
-        "The variance is strictly less than $2$.",
-        "$P(X=2)=\\binom{10}{2}(0.2)^{2}(0.8)^{8}$ and $\\binom{10}{2}=45$.",
-        "Using $(0.8)^{10}<0.12$, one has $P(X=0)<0.12$.",
-        "$P(X\\ge 1)>0.85$."
+        "The mean of $X$ is $20$ and the variance of $X$ is $12$.",
+        "The standard deviation of $X$ is strictly between $3$ and $4$.",
+        "The variance of $X$ equals $20$.",
+        "The variance of the sales rate $\\hat{p}$ equals $0.0048$.",
+        "The standard deviation of $\\hat{p}$ is strictly less than $0.1$."
       ],
       "answer_key": [
         true,
         true,
-        true,
+        false,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\nE[X]=np=10\\cdot 0.2=2\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\n\\mathrm{Var}(X)=np(1-p)=10\\cdot 0.2\\cdot 0.8=1.6<2\n$$\n\nSo the statement is True.",
-        "**C.** → True\n\nThe binomial PMF at $k=2$ is exactly that product form, and\n\n$$\n\\binom{10}{2} = \\dfrac{10 \\cdot 9}{1 \\cdot 2} = 45\n$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\nP(X=0)=(0.8)^{10}\n$$\n\nCompute the power directly:\n\n$$\n(0.8)^{2}=0.64,\\quad (0.8)^{4}=0.4096,\\quad (0.8)^{8}\\approx 0.1678\n$$\n\n$$\n(0.8)^{10}=(0.8)^{8}\\cdot(0.8)^{2}\\approx 0.1678\\cdot 0.64\\approx 0.1074<0.12\n$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\nP(X\\ge 1)=1-P(X=0)\\approx 1-0.1074=0.8926>0.85\n$$\n\nSo the statement is True."
+        "**A.** → True\n\n$$\nE[X]=np=50\\cdot 0.4=20\n$$\n\n$$\n\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.4\\cdot 0.6=12\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\mathrm{SD}(X)=\\sqrt{12}=2\\sqrt{3}\n$$\n\nSince $9<12<16$, one has $3<2\\sqrt{3}<4$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe variance is $np(1-p)=12$, not $20$. The figure $20$ is the mean, not the variance.\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\n\\mathrm{Var}(\\hat{p})=\\dfrac{p(1-p)}{n}=\\dfrac{0.4\\cdot 0.6}{50}=\\dfrac{0.24}{50}=0.0048\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\n\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}\\approx 0.0693<0.1\n$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "$E[X]=2$, $\\mathrm{Var}=1.6$. $\\binom{10}{2}=45$. $(0.8)^{10}\\approx 0.107$, so $P(X\\ge 1)\\approx 0.893$."
+      "solution_overview": "$E[X]=20$, $\\mathrm{Var}(X)=12$, $\\mathrm{SD}(X)=2\\sqrt{3}\\in(3,4)$. Variance is not $20$. $\\mathrm{Var}(\\hat{p})=0.0048$, $\\mathrm{SD}(\\hat{p})\\approx 0.069$."
     }
   ]
 }

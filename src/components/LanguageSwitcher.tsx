@@ -57,14 +57,14 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   };
 
   return (
-    <div ref={ref} className={cn("relative", className)} data-no-i18n>
+    <div ref={ref} className={cn("relative shrink-0", className)} data-no-i18n>
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Change language"
-        className="touch-target inline-flex h-9 min-w-9 items-center justify-center gap-1 rounded-md border border-border bg-card px-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring sm:h-auto sm:min-w-0 sm:gap-1.5 sm:px-2.5 sm:py-1.5"
+        className="touch-target inline-flex h-9 min-w-9 shrink-0 items-center justify-center gap-1 rounded-md border border-border bg-card px-2 text-xs font-semibold text-foreground transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring sm:h-auto sm:min-w-0 sm:gap-1.5 sm:px-2.5 sm:py-1.5"
       >
         <Globe className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
         {active.short}

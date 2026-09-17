@@ -18,13 +18,13 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
       {
         name: "description",
         content:
-          "WiSo economics practice mapped to Wirtschaft verstehen: scarcity, circular flow, firms, legal forms, accounting and marketing for the WU Aufnahmeprüfung.",
+          "WiSo economics practice mapped to Wirtschaft verstehen: Grundlagen der Wirtschaft and Unternehmensgrundlagen for the WU Aufnahmeprüfung.",
       },
       { property: "og:title", content: "Wirtschaft verstehen — Full WiSo Course" },
       {
         property: "og:description",
         content:
-          "Practice cases aligned to the official WiSo economics skriptum chapters — remapped from the BBE Full Course bank.",
+          "Practice cases aligned to Grundlagen der Wirtschaft and Unternehmensgrundlagen — remapped from the BBE Full Course bank, in German.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },

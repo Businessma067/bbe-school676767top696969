@@ -1845,7 +1845,7 @@ $$
 N(t)=N_{0}e^{-\\lambda t}
 $$
 
-At $t=0$ the mass is $800\\ \\mathrm{mg}$, and at $t=6$ years it is $450\\ \\mathrm{mg}$.
+At time zero the mass is $800\\ \\mathrm{mg}$, and at $t=6$ years it is $450\\ \\mathrm{mg}$.
 
 Separately, a continuously compounded endowment follows
 

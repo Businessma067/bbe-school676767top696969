@@ -30,35 +30,6 @@
   },
   {
     "subsection": "4.1",
-    "case_id": "CASE 4.1.02",
-    "title": "Establishment Requirements and Liability Exposure",
-    "context": "Consider a neighbourhood bakery operated as a sole proprietorship with one owner-manager and a small team of assistants. Evaluate the following economic assertions:",
-    "statements": [
-      "Sole proprietorships are easy to establish, especially for small businesses, because there are no financial requirements to start this kind of business.",
-      "Limited liability protects the sole proprietor's private assets so creditors may claim only assets formally recorded as business property.",
-      "Unlimited liability means creditors may reach the proprietor's personal property when business debts must be repaid.",
-      "Incorporating as a sole proprietorship grants the owner limited liability equal to the capital originally invested.",
-      "Trade credit from suppliers eliminates the sole proprietor's liability for those purchase obligations."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Starting as a sole trader typically needs no minimum share capital or formal company registration package. That low barrier is why the form is described as easy to establish for small shops and freelancers.\n\nSo the statement is True.",
-      "Limited liability would fence private assets once business assets run out. Sole proprietors do not get that fence: creditors can reach the home, car, or savings when firm cash falls short.\n\nSo the statement is False.",
-      "Unlimited liability means business debts are personal debts of the owner. A supplier unpaid after stock fails, or a bank loan left after a bad season, can be enforced against private property, not only against shelves labelled \"business.\"\n\nThat reach into personal assets is the practical meaning of unlimited liability for a sole trader. Labelling assets as business property does not create a legal wall that stops creditors.\n\nSo the statement is True.",
-      "Incorporating as a company can create limited liability tied to invested capital. Simply calling the business a sole proprietorship does the opposite: liability stays unlimited. There is no incorporation trick that turns a sole trader into a capped-liability company while keeping that label.\n\nSo the statement is False.",
-      "Buying stock on thirty-day terms still leaves an invoice to pay. Trade credit defers payment; it does not cancel the proprietor's obligation to the supplier.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.1",
     "case_id": "CASE 4.1.03",
     "title": "Legal Status and Tax Treatment",
     "context": "Review the legal and fiscal position of a sole proprietorship compared with incorporated business forms. Evaluate the following economic assertions:",
@@ -577,35 +548,6 @@
       "Decision-making rules and dispute-resolution methods are among the details partners record in the partnership agreement alongside ownership and profit terms.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.2",
-    "case_id": "CASE 4.2.05",
-    "title": "Partnership Financial Resources",
-    "context": "Analyze how the financial aspects of partnerships compare with those of sole proprietors when raising funds and offering collateral. Evaluate the following economic assertions:",
-    "statements": [
-      "All partners in a limited partnership share equal unlimited liability because the firm remains unincorporated.",
-      "In difficult situations partners can exchange ideas and perhaps make better decisions.",
-      "Managing partners in a limited partnership remain subject to unlimited liability for all firm debts.",
-      "Recording unequal ownership percentages in the agreement does not by itself cap each general partner's liability at that share of debt.",
-      "A partnership agreement that assigns sixty percent ownership to one partner caps that partner's liability at sixty percent of debts."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Limited partnerships distinguish managing partners with unlimited liability from limited partners capped at their contribution. Not everyone shares equal unlimited exposure.\n\nA silent capital partner who stays out of management is the counterexample: that partner's loss is normally limited to money put in. Claiming all partners share equal unlimited liability ignores the limited-partner role.\n\nSo the statement is False.",
-      "Partners can exchange ideas in tough situations and may reach better decisions than one person deciding alone under pressure without other viewpoints.\n\nSo the statement is True.",
-      "Managing partners in a limited partnership keep unlimited liability for firm debts. The limited-liability privilege belongs to the non-managing limited partner, not to those who run operations.\n\nSo the statement is True.",
-      "Unequal ownership percentages rearrange profit shares; they do not by themselves cap each general partner's liability at that debt fraction. Unlimited liability still allows full pursuit of a general partner.\n\nSo the statement is True.",
-      "Sixty percent ownership does not cap that partner's liability at sixty percent of debts. Unlimited liability can still reach the full shortfall against one partner.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1418,35 +1360,6 @@
       "Secondary sales among investors on a listing do not oblige the issuer to buy back every share that changes hands whenever a holder wants to exit.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
-    "case_id": "CASE 4.3.18",
-    "title": "Corporate Bonds Versus Bank Loans",
-    "context": "Analyze debt funding choices available to corporations beyond equity raised through share issues. Evaluate the following economic assertions:",
-    "statements": [
-      "Corporations may raise financial funds through loans and credit in addition to share capital.",
-      "Bonds are securities that can be traded on a stock exchange alongside shares.",
-      "Issuing bonds may finance large projects at an interest rate often lower than a comparable bank loan.",
-      "Bond interest is classified as share capital because bondholders become co-owners of the corporation.",
-      "A stock exchange is regulated by the authorities and facilitates trading in shares and other securities such as bonds."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Besides equity from share issues, corporations routinely tap loans and other credit facilities when they need additional financial funds for investment or working capital.\n\nSo the statement is True.",
-      "Bonds are tradable securities in their own right and can change hands on a stock exchange in the same regulated venue where shares are bought and sold.\n\nSo the statement is True.",
-      "Large projects sometimes favour a bond issue because the coupon can undercut the interest a bank would charge on a comparable loan, stretching scarce cash further across the investment.\n\nThat cost comparison is exactly why bond finance appears beside bank borrowing in corporate funding menus. Lower interest is not guaranteed every time, yet it is often the stated attraction.\n\nSo the statement is True.",
-      "Bond interest is a debt cost paid to creditors. Bondholders remain lenders rather than co-owners, so interest is not share capital and does not make them equity partners in the firm.\n\nSo the statement is False.",
-      "Authorities regulate the stock exchange as a financial market, and that venue facilitates trading in shares and in other securities such as corporate bonds.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2321,35 +2234,6 @@
   },
   {
     "subsection": "4.3",
-    "case_id": "CASE 4.3.49",
-    "title": "Voting Rights and Share Classes",
-    "context": "Analyze how common and preferred stock divide control and income rights among shareholders. Evaluate the following economic assertions:",
-    "statements": [
-      "At the annual stockholders' meeting, common stockholders ordinarily exercise voting rights on major resolutions.",
-      "Preferred shareholders always hold superior voting power over common shareholders at every meeting.",
-      "Preferred shares often trade voting rights for priority in dividend payments.",
-      "Investors may purchase shares partly to influence corporate decisions through those voting rights.",
-      "Dividend priority for preferred stock does not eliminate the discretionary nature of overall dividend policy."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Common stockholders ordinarily cast votes at the annual meeting on major resolutions such as electing directors or approving structural changes. That voting role is the ordinary control channel attached to common equity, not a rare exception.\n\nSo the statement is True.",
-      "Preferred shares typically weaken or remove voting power in exchange for dividend priority. They do not always dominate common votes at every meeting. Treating preferred holders as perpetual vote superiors reverses the usual package: income preference often comes with less say, not more.\n\nSo the statement is False.",
-      "Preferred equity is frequently designed as a bargain: holders accept thinner voting rights and receive earlier claim on dividends when profits are distributed. Corporations sell that package to investors who want steadier income more than boardroom influence. Common stock keeps the primary AGM voice; preferred stock often sits closer to hybrid income paper. The trade is intentional, not accidental wording. When a firm needs capital without diluting control as sharply, preferred classes can raise money while voting remains concentrated among common shares. The statement correctly names that exchange of voice for dividend priority.\n\nSo the statement is True.",
-      "Buying shares can be partly about control. Voting rights let investors support or challenge board slates and major corporate acts, so some purchases are deliberate influence plays rather than pure portfolio bets.\n\nSo the statement is True.",
-      "Preferred dividend priority ranks claims when dividends are declared; it does not turn dividends into a legal certainty every year. Boards still decide whether and how much to distribute overall, so discretionary dividend policy survives the preferred preference rule.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
     "case_id": "CASE 4.3.50",
     "title": "Construction Corporation Capital Structure",
     "context": "Consider a construction corporation combining share capital from investors with a long-term bank loan for equipment. Evaluate the following economic assertions:",
@@ -2576,35 +2460,6 @@
       "Not every corporation is listed. Firms must apply and satisfy disclosure, size, and governance hurdles before shares trade on a regulated exchange. Many AGs remain unlisted; private limited companies usually keep shares off public boards entirely. Automatic listing without application would erase those gatekeeping rules. Glacier Soft’s wish to list underscores that listing is a deliberate step, not a birthright of incorporation.\n\nSo the statement is False.",
       "Well-known venues include the New York Stock Exchange, Nasdaq, and major European markets such as Deutsche Börse. The chapter cites those names as examples of regulated exchanges where securities trade.\n\nSo the statement is True.",
       "Once markets admit the issuer’s securities, bonds as well as shares can trade as exchange-traded instruments. Listing culture covers debt securities alongside equity when the firm and exchange allow.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
-    "case_id": "CASE 4.3.58",
-    "title": "IPO Cash Versus Later Trades at CanvasWorks",
-    "context": "CanvasWorks AG completes an IPO at €25 per share, then watches the price drift to €33 as investors trade among themselves. Evaluate the following economic assertions:",
-    "statements": [
-      "At the IPO, CanvasWorks introduces shares on the exchange at a certain issue price and raises share capital from buyers of the newly issued stock.",
-      "After the IPO, secondary prices are determined by demand and supply among investors.",
-      "When demand for CanvasWorks shares is high, prices usually go up according to the laws of supply and demand.",
-      "The rise from €25 to €33 after issue automatically remits €8 per share of extra financing to CanvasWorks’ treasury.",
-      "Share capital raised at issue is long-term or even permanent capital and is usually not redeemed like a loan."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "At IPO, CanvasWorks places new shares at an issue price and raises share capital from buyers of that newly issued stock. Primary flotation is the moment equity cash enters the issuer.\n\nSo the statement is True.",
-      "After the IPO, secondary prices form from investor demand and supply. Later quotes at €33 reflect trading among holders, not a fresh capital call by CanvasWorks.\n\nSo the statement is True.",
-      "High demand usually lifts share prices under ordinary supply-and-demand logic. When more investors chase CanvasWorks stock than sellers offer at prior quotes, the clearing price tends to rise.\n\nSo the statement is True.",
-      "A move from €25 to €33 after issue does not remit €8 per share into CanvasWorks’ treasury. Secondary buyers pay secondary sellers. The issuer already booked issue proceeds at the IPO; later markups are investor-to-investor transfers. Treating every euro of post-IPO appreciation as automatic corporate financing invents a cash flow that never hits the company account. Expansion finance still requires new issues, retained earnings, or debt rather than relying on the secondary print alone.\n\nSo the statement is False.",
-      "Share capital raised at issue is long-term or even permanent capital and is usually not redeemed like a loan on a fixed timetable. Equity stays as ownership funding rather than scheduled principal repayment.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -3684,64 +3539,6 @@
   },
   {
     "subsection": "4.5",
-    "case_id": "CASE 4.5.01",
-    "title": "Equity Finance and Debt Finance Overview",
-    "context": "Review the overview of sources of finance as classified into equity finance and debt finance. Evaluate the following economic assertions:",
-    "statements": [
-      "Share capital provided by outside investors is an external equity source of finance for the corporation.",
-      "Retained earnings that remain in the business count as internal equity finance under the standard overview.",
-      "Funds provided by investors are classified as external equity finance in the sources-of-finance framework.",
-      "Bank overdrafts and trade credit are commonly listed examples of short-term debt finance.",
-      "Long-term bank loans and bonds issued to investors are forms of long-term external debt finance."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Outside investors who subscribe for shares provide equity from beyond the firm's own surplus. That share capital is external equity finance for the corporation in the sources overview.\n\nSo the statement is True.",
-      "Profit kept in the business instead of being paid out becomes retained earnings. Those funds are internal equity because they arise inside the firm rather than from a new outside subscription. No fresh creditor is created when managers simply leave surplus undistributed.\n\nSo the statement is True.",
-      "When investors inject ownership funds, the source is external equity in the sources-of-finance framework. The investors stand outside retained trading surplus and take ownership claims rather than creditor claims. Dividends may follow later, yet the initial classification is equity, not a bank loan. That placement matches how the overview sorts investor funds beside retained earnings and debt lines.\n\nSo the statement is True.",
-      "An overdraft lets the firm draw beyond its credit balance for short periods; trade credit postpones paying suppliers. Both are standard short-term debt examples in the finance tables rather than equity injections.\n\nSo the statement is True.",
-      "A multi-year bank loan and a bond issue both create long-term repayment duties to outside creditors. They sit under long-term external debt finance rather than under share capital or retained earnings.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.5",
-    "case_id": "CASE 4.5.02",
-    "title": "Internal and External Finance Classification",
-    "context": "Consider a manufacturing corporation that combines share capital from outside investors, retained profits, and a multi-year bank loan to expand production capacity. Evaluate the following economic assertions:",
-    "statements": [
-      "Equity finance encompasses both internal sources such as retained earnings and external sources such as share capital.",
-      "Short-term bank loans used to cover working capital are classified as short-term debt finance.",
-      "Debt finance is always external because borrowed funds create obligations to outside creditors.",
-      "The balance sheet reveals the sources of finance that a business has used in building its assets.",
-      "Large businesses are obliged to draw up a balance sheet showing how operations have been funded."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Equity finance is not only new share issues from the market. Retained earnings supply internal equity while share capital supplies external equity under one equity heading.\n\nSo the statement is True.",
-      "Borrowing for a few months to bridge payroll or inventory is short-term debt finance. Working-capital loans of that kind do not become equity merely because production capacity expands afterward.\n\nSo the statement is True.",
-      "Borrowed money creates repayment obligations to creditors, so debt finance is treated as external in the overview. Even an owner loan is still debt owed outward from the entity's point of view when classed as credit. The manufacturing corporation's multi-year bank loan therefore sits with external debt beside share capital and retained profit. Internal equity and external equity remain separate from that borrowed slice.\n\nSo the statement is True.",
-      "Assets on one side of the balance sheet are funded by equity and liabilities on the other. Reading that statement of sources shows how the business has financed the plant and working capital it owns.\n\nSo the statement is True.",
-      "Large firms are required to present a balance sheet that discloses funding structure to readers. That obligation is why sources of finance appear in published statements rather than only in informal notes.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.5",
     "case_id": "CASE 4.5.03",
     "title": "Misclassifying Retained Earnings",
     "context": "Review how short-term credit and long-term credit fit within external debt finance. Evaluate the following economic assertions:",
@@ -4032,35 +3829,6 @@
   },
   {
     "subsection": "4.5",
-    "case_id": "CASE 4.5.13",
-    "title": "Trade Credit and Overdraft Traps",
-    "context": "Consider a catering business that covers weekly purchases with supplier credit, reinvests surplus profit internally, and maintains a long-term loan from its owners. Evaluate the following economic assertions:",
-    "statements": [
-      "Retained earnings are external equity because they arise from revenue paid by outside customers.",
-      "Bank overdrafts are short-term debt finance even when used repeatedly throughout the trading year.",
-      "Bank overdrafts are equity finance when the account holder is also a major shareholder of the bank.",
-      "A loan provided by owners is equity finance because the lenders share in the ownership of the business.",
-      "Long-term bank loans are long-term external debt finance with scheduled repayment over extended periods."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Revenue from outside customers can create profit, but retained earnings are internal once kept in the firm. Customer location does not make retained profit external equity for the catering business.\n\nSo the statement is False.",
-      "Repeated use across a trading year does not redefine an overdraft as long-term debt finance. Each drawing remains short-term debt on the current account even when the habit is continuous.\n\nSo the statement is True.",
-      "Even if the account holder also owns major shares in the bank, an overdraft is still bank credit. Shareholder status at the bank does not convert the overdraft into equity finance for the caterer. The business still owes the drawn amount under credit terms rather than holding a residual ownership claim on itself via that line. Equity for the caterer would be share capital or retained earnings, not the bank facility.\n\nSo the statement is False.",
-      "Owners who lend create a creditor relationship alongside any shares they already hold. The loan is debt finance, not equity, because repayment is owed on the lending terms.\n\nSo the statement is False.",
-      "Long-term bank loans schedule repayment over extended periods and count as long-term external debt. They differ from overdrafts and supplier credit used for weekly food purchases.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.5",
     "case_id": "CASE 4.5.14",
     "title": "Investor Funds Classification",
     "context": "Analyze how funds provided by investors are classified relative to internal retained earnings. Evaluate the following economic assertions:",
@@ -4144,35 +3912,6 @@
       "Debt finance is external and includes short-term credit such as overdrafts and trade credit. Those tools sit beside longer loans on the borrowed-funds side of the finance map.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.6",
-    "case_id": "CASE 4.6.01",
-    "title": "Matching Finance Term to Asset Life",
-    "context": "Consider a manufacturer that already carries a high proportion of loan capital and must choose how to fund a multi-year production plant versus routine materials purchases. Evaluate the following economic assertions:",
-    "statements": [
-      "Capital expenditures on assets used over many years should normally be matched with long-term finance.",
-      "The only relevant criterion when choosing a source of finance is the absolute interest rate, so matching term to asset life and gearing risk can be ignored.",
-      "Interest is the sole cost element businesses must consider when comparing loans with share issues.",
-      "High gearing automatically disqualifies a firm from using any form of short-term trade credit for materials.",
-      "Capital expenditure on a warehouse extension should be funded from weekly supplier credit without regard to asset life."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Assets that serve for many years should be funded with finance that is also long-term. Matching repayment to the asset's life keeps capital spending from relying on credit that falls due in weeks.\n\nSo the statement is True.",
-      "Interest rates matter, yet they are not the only relevant criterion when choosing finance. Matching term to asset life and watching gearing risk still shape the decision beside the headline rate.\n\nSo the statement is False.",
-      "Interest is one cost element, not the sole cost businesses must weigh when comparing loans with share issues. Issuance and administration expenses, advisory fees, and ongoing compliance can add material cost to a share or bond issue. Gearing already on the books also changes how risky further debt looks compared with equity. Treating interest alone as the complete cost comparison therefore understates what the chapter asks firms to consider.\n\nSo the statement is False.",
-      "High gearing warns that further borrowing is harder, but it does not ban every short-term trade-credit purchase of materials. Routine supplier credit for inputs can still fit revenue spending even when long-term loan capital is already heavy.\n\nSo the statement is False.",
-      "A warehouse extension binds capital for years; weekly supplier credit falls due far sooner. Funding that capital expenditure from rolling short trade credit mismatches term to asset life.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {

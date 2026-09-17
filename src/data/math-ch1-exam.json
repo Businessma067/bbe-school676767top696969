@@ -353,38 +353,6 @@
       "placeholder": false
     },
     {
-      "id": "math-1-120",
-      "case_id": "MATH 1.120",
-      "title": "Exam-style tasks - 12",
-      "subsection": "1.5",
-      "context": "A training center has 180 participants. Analytics has 105, budgeting has 92, and compliance has 80. The pairwise overlaps are 48 for analytics and budgeting, 41 for analytics and compliance, and 36 for budgeting and compliance; 20 participants take all three. Every participant is counted once in the center total, including those in none.",
-      "statements": [
-        "Exactly 8 participants take none of the three courses.",
-        "Exactly 56 take only analytics.",
-        "Exactly 65 take exactly two courses.",
-        "Exactly 65 take at least two courses.",
-        "Exactly 23 take only compliance."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$$105+92=197$$\n\n$$197+80=277$$\n\n$$277-48=229$$\n\n$$229-41=188$$\n\n$$188-36=152$$\n\n$$152+20=172$$\n\n$$180-172=8$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$105-48=57$$\n\n$$57-41=16$$\n\n$$16+20=36$$\n\nThe claim asserts $56$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$48-20=28$$\n\n$$41-20=21$$\n\n$$36-20=16$$\n\n$$28+21=49$$\n\n$$49+16=65$$\n\nSo the statement is True.",
-        "**D.** → False\n\nAt least two courses counts exactly-two plus the triple:\n\n$$65+20=85$$\n\nThe claim asserts $65$, which omits the all-three participants.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$80-41=39$$\n\n$$39-36=3$$\n\n$$3+20=23$$\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 120,
-      "solution_overview": "Topics: 1.2.\n\nShared solution:\n1. Let the course sets be $A$, $B$, and $C$.\n2. Use $|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$.\n3. Substitute $105+92+80-48-41-36+20$.\n4. The union contains $172$ participants.\n5. Therefore the none region is $180-172=8$.\n6. Analytics only is $105-48-41+20=36$.\n7. Budgeting only is $92-48-36+20=28$.\n8. Compliance only is $80-41-36+20=23$.\n9. Analytics-budgeting only is $48-20=28$.\n10. Analytics-compliance only is $41-20=21$.\n11. Budgeting-compliance only is $36-20=16$.\n12. Exactly two courses total $28+21+16=65$.\n13. At least two courses total $65+20=85$.",
-      "placeholder": false
-    },
-    {
       "id": "math-1-121",
       "case_id": "MATH 1.121",
       "title": "Exam-style tasks - 13",
