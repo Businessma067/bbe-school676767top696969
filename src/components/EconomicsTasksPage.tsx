@@ -1200,63 +1200,6 @@ function TFButton({
   );
 }
 
-function StatsOverview({
-  cases, progress, byChapter,
-}: {
-  cases: Case[];
-  progress: Progress;
-  byChapter: Map<number, Case[]>;
-}) {
-  const total = cases.length;
-  const passed = progress.passed.length;
-  const rev = progress.revision.length;
-  const attempted = passed + rev;
-  const accuracy = attempted > 0 ? Math.round((passed / attempted) * 100) : 0;
-
-  return (
-    <section className="mb-6 rounded-2xl border border-border bg-card p-5 shadow-sm">
-      <div className="mb-4 flex items-center justify-between">
-        <h2 className="font-display text-sm font-bold uppercase tracking-widest text-muted-foreground">
-          Your progress
-        </h2>
-        <span className="text-[10px] font-semibold text-muted-foreground">
-          {passed}/{total} tasks passed
-        </span>
-      </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <StatTile label="Attempted" value={attempted} />
-        <StatTile label="Passed" value={passed} tone="pass" />
-        <StatTile label="In revision" value={rev} tone="rev" />
-        <StatTile label="Accuracy" value={`${accuracy}%`} />
-      </div>
-      <ul className="mt-5 space-y-2">
-        {CHAPTERS.map((ch) => {
-          const list = byChapter.get(ch.num) ?? [];
-          const done = list.filter((c) => progress.passed.includes(c.id)).length;
-          const pct = list.length ? Math.round((done / list.length) * 100) : 0;
-          return (
-            <li key={ch.num} className="flex items-center gap-3">
-              <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">Ch.{ch.num}</span>
-              <span className="flex-1 truncate text-xs text-foreground">
-                {ch.title}
-              </span>
-              <div className="h-1.5 w-32 overflow-hidden rounded-full bg-secondary">
-                <div
-                  className={cn("h-full rounded-full", pct === 100 ? "bg-emerald-500" : "bg-primary")}
-                  style={{ width: `${pct}%` }}
-                />
-              </div>
-              <span className="w-14 shrink-0 text-right text-[11px] font-semibold text-muted-foreground">
-                {done}/{list.length}
-              </span>
-            </li>
-          );
-        })}
-      </ul>
-    </section>
-  );
-}
-
 function StatTile({ label, value, tone }: { label: string; value: number | string; tone?: "pass" | "rev" }) {
   return (
     <div
