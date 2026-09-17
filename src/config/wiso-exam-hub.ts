@@ -45,6 +45,8 @@ export const WISO_PRACTICE_ROUTES = {
   mockExams: "/wiso/mock-exams",
   mockBuilder: "/wiso/mock-builder",
   flashcards: "/wiso/flashcards",
+  matching: "/wiso/matching",
+  tutorExam: "/wiso/tutor-exam",
   products: "/wiso/products",
   fullCourse: "/wiso/products/full-course",
   subjects: "/wiso/products/full-course-subjects",

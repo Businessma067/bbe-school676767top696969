@@ -5,6 +5,7 @@ import {
   BBE_EXAM_HUB_SEGMENTS,
 } from "@/config/bbe-exam-hub";
 import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
+import { WISO_FLASHCARD_SUBJECTS } from "@/data/wiso-flashcards";
 import type { Lang } from "@/lib/i18n/dictionary";
 import {
   getLocaleFromPath,
@@ -69,9 +70,11 @@ const SEGMENT_LABELS: Record<string, string> = {
   review: "Review",
 };
 
-const SUBJECT_TITLE: Record<string, string> = Object.fromEntries(
-  FLASHCARD_SUBJECTS.map((s) => [s.id, s.title]),
-);
+const SUBJECT_TITLE: Record<string, string> = Object.fromEntries([
+  ...FLASHCARD_SUBJECTS.map((s) => [s.id, s.title] as const),
+  ...WISO_FLASHCARD_SUBJECTS.map((s) => [s.id, s.title] as const),
+  ["german", "Deutsch"],
+]);
 
 export type BreadcrumbCrumb = {
   label: string;

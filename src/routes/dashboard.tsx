@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
@@ -10,13 +10,16 @@ import {
   fetchMockAttempts,
   fetchTaskAttempts,
   highestTier,
+  ownsProductSlug,
   summarizeTaskAttempts,
+  WISO_FULL_COURSE_SLUG,
   type CourseSlug,
   type Enrollment,
   type MockAttempt,
   type SubjectStats,
   type TaskAttempt,
 } from "@/lib/user-progress";
+import { resolveExamTrack, type ExamTrack } from "@/lib/exam-track";
 import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
@@ -98,6 +101,8 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigateHome = useLocalizedNavigate();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const examTrack = resolveExamTrack(pathname);
   const { tab: searchTab } = Route.useSearch();
   // Keep the last explicit tab while TanStack briefly clears search during
   // outbound navigations (Open flashcards / matching / tutor), so the main
@@ -165,7 +170,11 @@ function DashboardPage() {
   // (Mock Exams, Custom Mocks, Study tools) — not only after navigating away.
   const rawTier = !loading ? highestTier(enrollments!) : "none";
   const accountTier = rawTier === "none" ? "demo" : rawTier;
+  const hasWisoFull =
+    !loading &&
+    (auth.role === "admin" || ownsProductSlug(enrollments!, WISO_FULL_COURSE_SLUG));
   const paidToolsLocked = !loading && auth.role !== "admin" && !tierAtLeast(accountTier, "lite");
+  const studyToolsLocked = examTrack === "wiso" ? !hasWisoFull : paidToolsLocked;
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -287,7 +296,7 @@ function DashboardPage() {
                 />
               )
             ) : (
-              <GamesTab locked={paidToolsLocked} />
+              <GamesTab locked={studyToolsLocked} track={examTrack} />
             )}
           </div>
         </main>
@@ -568,48 +577,92 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 
 /* -------------------- STUDY MODES TAB -------------------- */
 
-function GamesTab({ locked = false }: { locked?: boolean }) {
+function GamesTab({
+  locked = false,
+  track = "bbe",
+}: {
+  locked?: boolean;
+  track?: ExamTrack;
+}) {
   const navigate = useLocalizedNavigate();
+  const isWiso = track === "wiso";
 
-  const openTool = (to: "/flashcards" | "/matching" | "/tutor-exam") => {
+  const openTool = (
+    to:
+      | "/flashcards"
+      | "/matching"
+      | "/tutor-exam"
+      | "/wiso/flashcards"
+      | "/wiso/matching"
+      | "/wiso/tutor-exam",
+  ) => {
     if (locked) return;
     // Explicit empty search so tab=games is not stripped on /dashboard first.
     void navigate({ to, search: {} });
   };
 
-  const cards = [
-    {
-      feature: "flashcards" as const,
-      to: "/flashcards" as const,
-      title: "Flashcards",
-      blurb: "Drill Economics terms, Math formulas, and English vocabulary with flip cards.",
-      cta: "Open flashcards →",
-      art: <FlashcardsModeArt />,
-    },
-    {
-      feature: "matching" as const,
-      to: "/matching" as const,
-      title: "Matching",
-      blurb: "Connect each concept to the right definition. Same decks, different interaction.",
-      cta: "Open matching →",
-      art: <MatchingModeArt />,
-    },
-    {
-      feature: "tutor-exam" as const,
-      to: "/tutor-exam" as const,
-      title: "Tutor Exam",
-      blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
-      cta: "Open tutor exam →",
-      art: <TutorModeArt />,
-    },
-  ];
+  const cards = isWiso
+    ? [
+        {
+          feature: "flashcards" as const,
+          to: "/wiso/flashcards" as const,
+          title: "Flashcards",
+          blurb: "Drill Economics terms, Math formulas, and German vocabulary with flip cards.",
+          cta: "Open flashcards →",
+          art: <FlashcardsModeArt />,
+        },
+        {
+          feature: "matching" as const,
+          to: "/wiso/matching" as const,
+          title: "Matching",
+          blurb: "Connect each concept to the right definition. Same decks, different interaction.",
+          cta: "Open matching →",
+          art: <MatchingModeArt />,
+        },
+        {
+          feature: "tutor-exam" as const,
+          to: "/wiso/tutor-exam" as const,
+          title: "Tutor Exam",
+          blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
+          cta: "Open tutor exam →",
+          art: <TutorModeArt />,
+        },
+      ]
+    : [
+        {
+          feature: "flashcards" as const,
+          to: "/flashcards" as const,
+          title: "Flashcards",
+          blurb: "Drill Economics terms, Math formulas, and English vocabulary with flip cards.",
+          cta: "Open flashcards →",
+          art: <FlashcardsModeArt />,
+        },
+        {
+          feature: "matching" as const,
+          to: "/matching" as const,
+          title: "Matching",
+          blurb: "Connect each concept to the right definition. Same decks, different interaction.",
+          cta: "Open matching →",
+          art: <MatchingModeArt />,
+        },
+        {
+          feature: "tutor-exam" as const,
+          to: "/tutor-exam" as const,
+          title: "Tutor Exam",
+          blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
+          cta: "Open tutor exam →",
+          art: <TutorModeArt />,
+        },
+      ];
 
   return (
     <div className="space-y-6">
       <div>
         <h2 className="font-display text-xl font-bold tracking-tight">Study tools</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Practice tools to reinforce Economics, Math, and English for the BBE exam.
+          {isWiso
+            ? "Practice tools to reinforce Economics, Math, and German for the WiSo exam."
+            : "Practice tools to reinforce Economics, Math, and English for the BBE exam."}
         </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -629,7 +682,11 @@ function GamesTab({ locked = false }: { locked?: boolean }) {
 
           if (locked) {
             return (
-              <LockedToolCard key={card.feature} feature={card.feature}>
+              <LockedToolCard
+                key={card.feature}
+                feature={card.feature}
+                productSlug={isWiso ? "wiso-full-course" : undefined}
+              >
                 {body}
               </LockedToolCard>
             );

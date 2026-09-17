@@ -40,6 +40,8 @@ const PRIVATE_PATH_PREFIXES = [
   "/wiso/mock-exams",
   "/wiso/mock-builder",
   "/wiso/flashcards",
+  "/wiso/matching",
+  "/wiso/tutor-exam",
   "/products/custom-mock-builder",
   "/products/lite-bbe-course-subjects",
   "/products/lite-bbe-course-math",
