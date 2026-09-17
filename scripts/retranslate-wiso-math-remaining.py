@@ -124,6 +124,40 @@ def is_broken(text: str, tokens: list[str]) -> bool:
     return False
 
 
+def mt_block(step: str) -> str:
+    """One Argos pass per block; split only when the block is very long."""
+    if not tr.needs_mt(step):
+        return step
+    if len(step) <= 1800:
+        return tr.translate_fragment(step)
+    # Long explanations: paragraph first, then ~900-char slices.
+    paragraphs = re.split(r"(\n\s*\n)", step)
+    out: list[str] = []
+    for part in paragraphs:
+        if not part or part.isspace() or re.fullmatch(r"\n\s*\n", part or ""):
+            out.append(part)
+            continue
+        if not tr.needs_mt(part):
+            out.append(part)
+            continue
+        if len(part) <= 1800:
+            out.append(tr.translate_fragment(part))
+            continue
+        # Slice on sentence boundaries approximately every 900 chars
+        buf = ""
+        pieces: list[str] = []
+        for sent in re.split(r"(?<=[.!?])\s+", part):
+            if len(buf) + len(sent) > 900 and buf:
+                pieces.append(tr.translate_fragment(buf.strip()))
+                buf = sent
+            else:
+                buf = f"{buf} {sent}".strip() if buf else sent
+        if buf:
+            pieces.append(tr.translate_fragment(buf.strip()))
+        out.append(" ".join(pieces))
+    return "".join(out)
+
+
 def translate_piece(text: str) -> str:
     """Translate one prose chunk; never return English source on failure."""
     original = text
@@ -136,27 +170,8 @@ def translate_piece(text: str) -> str:
     step = re.sub(r",\s*and\s+", " und ", step, flags=re.I)
     step = re.sub(r"\sand\s+", " und ", step, flags=re.I)
     step = tr.apply_words(step)
-
-    if tr.needs_mt(step):
-        # Sentence / line chunks keep Argos stable on long explanations.
-        chunks = re.split(r"(?<=[.!?])\s+|\n+", step)
-        seps = re.findall(r"(?<=[.!?])\s+|\n+", step)
-        rebuilt: list[str] = []
-        for i, chunk in enumerate(chunks):
-            piece = chunk
-            if tr.needs_mt(piece):
-                piece = tr.translate_fragment(piece)
-                # Second pass for stubborn leftover English markers
-                if tr.needs_mt(piece) and len(piece) < 400:
-                    piece2 = tr.translate_fragment(piece)
-                    if piece2 and not PLACEHOLDER_RE.search(piece2):
-                        piece = piece2
-            rebuilt.append(piece)
-            if i < len(seps):
-                rebuilt.append(seps[i])
-        step = "".join(rebuilt)
-        step = tr.apply_words(step)
-
+    step = mt_block(step)
+    step = tr.apply_words(step)
     step = tr.apply_post_fixes(step)
     step = re.sub(r"^Lass\b", "Es seien", step)
     step = re.sub(r"\bLass\b", "Es seien", step)
@@ -173,8 +188,7 @@ def translate_piece(text: str) -> str:
             m2, tok2 = protect_all(part)
             p = tr.apply_phrases(tr.rewrite_let_be(m2))
             p = tr.apply_words(p)
-            if tr.needs_mt(p):
-                p = tr.translate_fragment(p)
+            p = mt_block(p)
             p = tr.apply_post_fixes(tr.apply_words(p))
             r = restore_all(p, tok2)
             out.append(r if not PLACEHOLDER_RE.search(r) else part)
@@ -236,8 +250,9 @@ def process_chapter(ch: int) -> dict:
             row[f] = new_arr
 
         de[tid] = row
-        if updated and updated % 25 == 0:
+        if updated and updated % 10 == 0:
             path.write_text(json.dumps(de, ensure_ascii=False, indent=2) + "\n")
+            print(f"  checkpoint {tid}: updated={updated}", flush=True)
 
     path.write_text(json.dumps(de, ensure_ascii=False, indent=2) + "\n")
     return {"chapter": ch, "updated": updated, "scanned": scanned, "tasks": len(en_rows)}
