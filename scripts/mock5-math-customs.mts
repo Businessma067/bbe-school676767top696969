@@ -27,27 +27,17 @@ $$`;
 
 /** Q22 — hard verbal three-set counting (inclusion–exclusion traps). */
 export function buildMathQ22Sets() {
-  const context = `A mid-size firm will unlock client-data access only for staff who finish three compliance modules: Privacy, Security, and Audit.
-
-Of the $200$ staff in the access programme:
-
-- $120$ finished Privacy, $95$ finished Security, and $80$ finished Audit;
-- $48$ finished both Privacy and Security, $40$ finished both Privacy and Audit, and $35$ finished both Security and Audit;
-- $18$ finished all three modules.
-
-Staff who finished none of the three remain blocked from client data. Completing a module means finishing it; “only Audit” means Audit and neither of the other two.
-
-Decide whether each statement is true or false.`;
+  const context = `A mid-size firm unlocks client-data access only for staff who finish three compliance modules: Privacy, Security, and Audit. Of the $200$ staff in the access programme, $120$ finished Privacy, $95$ finished Security, and $80$ finished Audit. The pairwise overlaps are $48$ for Privacy and Security, $40$ for Privacy and Audit, and $35$ for Security and Audit; $18$ finished all three. Staff who finished none of the three remain blocked from client data.`;
 
   // |P∪S∪A|=120+95+80-48-40-35+18=190; none=10
   // only P=120-48-40+18=50; only S=95-48-35+18=30; only A=80-40-35+18=23
   // |P∪S|=120+95-48=167
 
   const statements = [
-    "Exactly $10$ staff in the programme finished none of the three modules and therefore remain blocked from client data.",
+    "Exactly $10$ staff finished none of the three modules.",
     "Strictly more staff finished every module than finished Audit and nothing else.",
     "The staff who finished Privacy but neither of the other two outnumber those who finished Security but neither of the other two.",
-    "Under these counts, finishing Audit without also finishing Privacy is impossible.",
+    "Finishing Audit without also finishing Privacy is impossible under these counts.",
     "The staff who finished at least one of Privacy or Security number strictly more than $160$.",
   ];
 
