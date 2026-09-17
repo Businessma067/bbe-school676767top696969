@@ -176,9 +176,10 @@ function gamesItem(track: ExamTrack): NavItem {
   return track === "wiso"
     ? {
         label: "Study tools",
-        href: "/wiso/flashcards",
+        href: "/dashboard",
         isRoute: true,
-        activePrefixes: ["/wiso/flashcards"],
+        search: { tab: "games" },
+        activePrefixes: ["/wiso/flashcards", "/wiso/matching", "/wiso/tutor-exam", "/dashboard"],
       }
     : {
         label: "Study tools",

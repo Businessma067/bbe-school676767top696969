@@ -3,8 +3,10 @@ import type { ReactNode } from "react";
 import { Clock, FileText, Layers, Lock, Shuffle, Sparkles } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
+import { WISO_FLASHCARD_SUBJECTS } from "@/data/wiso-flashcards";
 import type { AccessTier } from "@/lib/entitlements";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
+import { isWisoPath } from "@/lib/exam-track";
 import { MOCK_EXAMS } from "@/lib/mock-exams";
 import { cn } from "@/lib/utils";
 
@@ -22,8 +24,8 @@ export function courseLockFeatureForPath(pathname: string): CourseLockFeature {
   const path = stripLocalePrefix(pathname);
   if (path.startsWith("/mock-exams") || path.startsWith("/wiso/mock-exams")) return "mock-exams";
   if (path.startsWith("/flashcards") || path.startsWith("/wiso/flashcards")) return "flashcards";
-  if (path.startsWith("/matching")) return "matching";
-  if (path.startsWith("/tutor-exam")) return "tutor-exam";
+  if (path.startsWith("/matching") || path.startsWith("/wiso/matching")) return "matching";
+  if (path.startsWith("/tutor-exam") || path.startsWith("/wiso/tutor-exam")) return "tutor-exam";
   if (path.startsWith("/products/custom-mock-builder") || path.startsWith("/wiso/mock-builder")) {
     return "mock-builder";
   }
@@ -126,11 +128,13 @@ function LockCallout({
 export function LockedToolCard({
   feature,
   minTier = "lite",
+  productSlug,
   children,
   className,
 }: {
   feature: CourseLockFeature;
   minTier?: AccessTier;
+  productSlug?: string;
   children: ReactNode;
   className?: string;
 }) {
@@ -148,7 +152,7 @@ export function LockedToolCard({
         <div className="blur-[1.5px]">{children}</div>
       </div>
       <div className="absolute inset-0 z-10 flex items-center justify-center bg-background/50 p-3 backdrop-blur-[1.5px]">
-        <LockCallout feature={feature} minTier={minTier} compact />
+        <LockCallout feature={feature} minTier={minTier} productSlug={productSlug} compact />
       </div>
     </div>
   );
@@ -207,7 +211,7 @@ export function CourseLockedView({
   const path = stripLocalePrefix(pathname);
   const resolvedSlug =
     productSlug ??
-    (path.startsWith("/wiso/products/full-course") ? "wiso-full-course" : undefined);
+    (path.startsWith("/wiso/") ? "wiso-full-course" : undefined);
 
   return (
     <div className="relative min-h-dvh bg-background font-sans text-foreground antialiased">
@@ -304,6 +308,8 @@ function SubjectsShell({
   icon: typeof Layers;
   compact?: boolean;
 }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const subjects = isWisoPath(pathname) ? WISO_FLASHCARD_SUBJECTS : FLASHCARD_SUBJECTS;
   return (
     <div className={cn(compact ? "p-5 sm:p-6" : "px-4 py-12 sm:px-6 sm:py-16 lg:px-8")}>
       <div className={cn(compact ? "mb-5" : "mx-auto mb-12 max-w-6xl text-center")}>
@@ -320,7 +326,7 @@ function SubjectsShell({
         </p>
       </div>
       <div className={cn("grid gap-6 md:grid-cols-3", !compact && "mx-auto max-w-6xl")}>
-        {FLASHCARD_SUBJECTS.map((s) => (
+        {subjects.map((s) => (
           <div
             key={s.id}
             className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
