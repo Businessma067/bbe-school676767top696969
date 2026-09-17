@@ -10,11 +10,11 @@ export const Route = createFileRoute("/wiso/flashcards/")({
   head: () => ({
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "WiSo Flashcards — BBE School" },
+      { title: "WiSo-Karteikarten — BBE School" },
       {
         name: "description",
         content:
-          "Study WiSo Economics, Math, and German flashcards for the WU WiSo entrance exam.",
+          "Übe WiSo-Wirtschaft, Mathematik und Deutsch mit Karteikarten für die WU-Aufnahmeprüfung.",
       },
       ...socialImageMetaForPath(PATH),
     ],
@@ -26,6 +26,7 @@ export function WisoFlashcardsIndexPage() {
   return (
     <StudyToolsSubjectIndex
       kind="flashcards"
+      locale="de"
       subjectPath="/wiso/flashcards/$subject"
       subjects={WISO_FLASHCARD_SUBJECTS.map((s) => ({
         ...s,

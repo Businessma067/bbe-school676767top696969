@@ -5,7 +5,6 @@ import {
   BBE_EXAM_HUB_SEGMENTS,
 } from "@/config/bbe-exam-hub";
 import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
-import { WISO_FLASHCARD_SUBJECTS } from "@/data/wiso-flashcards";
 import type { Lang } from "@/lib/i18n/dictionary";
 import {
   getLocaleFromPath,
@@ -70,10 +69,32 @@ const SEGMENT_LABELS: Record<string, string> = {
   review: "Review",
 };
 
+/** German labels for WiSo course URL segments. */
+const WISO_SEGMENT_LABELS: Record<string, string> = {
+  products: "Produkte",
+  "full-course": "Full WiSo Course",
+  "full-course-subjects": "Fächer",
+  "full-course-economics": "Wirtschaft verstehen",
+  "full-course-math": "Mathematik",
+  "full-course-german": "Deutsch",
+  flashcards: "Karteikarten",
+  matching: "Zuordnung",
+  "tutor-exam": "Tutor-Prüfung",
+  "mock-exams": "Probeprüfungen",
+  "mock-builder": "Mock-Builder",
+  economics: "Wirtschaft",
+  math: "Mathematik",
+  german: "Deutsch",
+  "exam-scoring": "Bewertung",
+  "exam-preparation": "Vorbereitung",
+  admission: "Zulassung",
+  "entrance-exam": "Überblick",
+  mathematics: "Mathematik",
+  "economics-german": "Wirtschaft & Deutsch",
+};
+
 const SUBJECT_TITLE: Record<string, string> = Object.fromEntries([
   ...FLASHCARD_SUBJECTS.map((s) => [s.id, s.title] as const),
-  ...WISO_FLASHCARD_SUBJECTS.map((s) => [s.id, s.title] as const),
-  ["german", "Deutsch"],
 ]);
 
 export type BreadcrumbCrumb = {
@@ -92,8 +113,9 @@ export function normalizePathname(pathname: string): string {
   return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
 }
 
-function prettifySegment(segment: string): string {
+function prettifySegment(segment: string, wiso = false): string {
   const decoded = decodeURIComponent(segment);
+  if (wiso && WISO_SEGMENT_LABELS[decoded]) return WISO_SEGMENT_LABELS[decoded];
   if (SEGMENT_LABELS[decoded]) return SEGMENT_LABELS[decoded];
   if (SUBJECT_TITLE[decoded]) return SUBJECT_TITLE[decoded];
   if (isCustomExamId(decoded)) return "Custom Mock";
@@ -110,14 +132,14 @@ function withLastFlags(crumbs: Omit<BreadcrumbCrumb, "isLast">[]): BreadcrumbCru
   }));
 }
 
-function labelForSegment(segment: string, ctx: BreadcrumbContext): string {
+function labelForSegment(segment: string, ctx: BreadcrumbContext, wiso = false): string {
   const decoded = decodeURIComponent(segment);
   if (isCustomExamId(decoded)) {
     return ctx.customMockTitle ?? "Custom Mock";
   }
   const exam = getExamById(decoded);
   if (exam) return exam.title;
-  return prettifySegment(decoded);
+  return prettifySegment(decoded, wiso);
 }
 
 function withLocale(to: string | null, locale: LocalePrefix | null): string | null {
@@ -173,6 +195,7 @@ export function buildBreadcrumbs(
   }
 
   const segments = path.split("/").filter(Boolean);
+  const isWiso = segments[0] === "wiso";
 
   // Flat BBE Exam hub URLs → Home / BBE Exam / Page
   if (segments.length === 1 && BBE_EXAM_HUB_SEGMENTS.has(segments[0]!)) {
@@ -186,7 +209,7 @@ export function buildBreadcrumbs(
 
   return withLastFlags(
     segments.map((seg, i) => ({
-      label: labelForSegment(seg, ctx),
+      label: labelForSegment(seg, ctx, isWiso),
       to:
         i === segments.length - 1
           ? null

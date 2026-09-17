@@ -6,11 +6,11 @@ export const Route = createFileRoute("/wiso/matching/")({
   head: () => ({
     links: [{ rel: "canonical", href: "https://bbe-school.com/wiso/matching" }],
     meta: [
-      { title: "WiSo Matching — BBE School" },
+      { title: "WiSo-Zuordnung — BBE School" },
       {
         name: "description",
         content:
-          "Connect WiSo Economics, Math, and German concepts to their meanings for the WU entrance exam.",
+          "Verbinde WiSo-Begriffe aus Wirtschaft, Mathematik und Deutsch mit ihren Bedeutungen.",
       },
     ],
   }),
@@ -21,6 +21,7 @@ function WisoMatchingIndexPage() {
   return (
     <StudyToolsSubjectIndex
       kind="matching"
+      locale="de"
       subjectPath="/wiso/matching/$subject"
       subjects={WISO_FLASHCARD_SUBJECTS.map((s) => ({
         ...s,
