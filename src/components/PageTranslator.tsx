@@ -51,6 +51,10 @@ export function PageTranslator() {
       while (el) {
         if (SKIP_TAGS.has(el.tagName)) return true;
         if (el.hasAttribute("data-no-i18n")) return true;
+        // KaTeX emits spans (not <math>); never rewrite math glyphs like variable "a".
+        if (el.classList?.contains("katex") || el.classList?.contains("katex-display")) {
+          return true;
+        }
         el = el.parentElement;
       }
       return false;

@@ -111,6 +111,9 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/flashcards",
   "/matching",
   "/tutor-exam",
+  "/wiso/flashcards",
+  "/wiso/matching",
+  "/wiso/tutor-exam",
   "/practice",
   "/demo-practice",
 ] as const;
