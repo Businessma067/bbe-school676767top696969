@@ -2434,7 +2434,7 @@ Design A kann die erforderliche $13\%$ nicht verdienen, während Design B sie no
 
 ---
 
-## Zusammenfassung reference
+## Referenz-Zusammenfassung
 
 | Aufgabe | Methode |
 | --- | ---

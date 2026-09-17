@@ -19,7 +19,7 @@ Verneinen Sie Aussagen mit $\forall$ und $\exists$ und respektieren Sie die Reih
 
 ## 1.1 Mengen: Elemente, Teilmengen & Potenzmengen
 
-### Was für eine Menge ist
+### Was eine Menge ist
 
 In gewöhnlicher Sprache gruppieren wir immer ähnliche Objekte: das akademische Personal einer Universität, die Pflanzen in einem Garten, alle schottischen Unternehmen mit mehr als 300 Mitarbeitern oder alle deutschen Steuerzahler, die in einem bestimmten Jahr zwischen 50 000 und 100 000 Euro verdient haben. In der Mathematik wird eine solche Sammlung als **Menge** bezeichnet, und die Objekte, die dazu gehören, sind ihre **Elemente** (oder Elemente).
 
@@ -37,7 +37,7 @@ $$
 
 Die Menge ohne Elemente wird $\emptyset$ geschrieben und heißt **leere Menge**. Es gibt nur eine leere Menge: Eine Menge wird vollständig durch ihre Elemente bestimmt, so dass es nicht zwei verschiedene Sammlungen geben kann, die beide nichts enthalten.
 
-### Specifying a property
+### Eine Eigenschaft angeben
 
 Nicht jede Menge kann aufgelistet werden. Viele wirtschaftliche Mengen sind unendlich. Ein Standard-Beispiel ist ein **Budgetbetrag**. Angenommen, zwei Waren haben Mengen $x$ und $y$ , Preise $p$ und $q$ , und der Verbraucher hat Geld $m$ . Wenn der Verbraucher zu wenig ausgeben kann und Mengen nicht negativ sein müssen, ist der Budgetbetrag
 
@@ -63,7 +63,7 @@ $$
 
 Löse zuerst $x^2 = 9$ : $x = 3$ oder $x = -3$ . Beide sind ganze Zahlen, also $A = \{-3,3\}$ . Wenn das Universum die natürlichen Zahlen anstelle der ganzen Zahlen wäre, würde $-3$ fallen gelassen und nur $\{3\}$ würde bleiben. Beobachten Sie immer, welches Universum der Menge-Builder verwendet.
 
-### Membership
+### Mitgliedschaft
 
 Write
 
@@ -167,7 +167,7 @@ $$
 A \cap B = \emptyset.
 $$
 
-### Universelle Menge und Ergänzung
+### Universelle Menge und Komplement
 
 Wenn Sie mit mehreren Mengen gleichzeitig arbeiten, hilft es oft, sie alle als Teilmengen einer festen **universellen Menge $U$ anzusehen. Wenn $A \subseteq U$ , ist das **Komplement** von $A$ in $U$
 
@@ -192,7 +192,7 @@ $$
 M \setminus (B \cap T) = (M \setminus B) \cup (M \setminus T).
 $$
 
-### Venn diagrams
+### Venn-Diagramme
 
 Zeichne jede Menge als Region in der Ebene. Overlaps zeigen geteilte Elemente. Für zwei Mengen hat das übliche Bild vier Regionen: nur $A$ , nur $B$ , beide und keine. Für drei Mengen $A$ , $B$ , $C$ muss ein korrektes Diagramm Raum für alle acht Kombinationen lassen:
 
@@ -209,7 +209,7 @@ Zeichne jede Menge als Region in der Ebene. Overlaps zeigen geteilte Elemente. F
 
 Mit vier oder mehr Mengen wird das Bild unkontrollierbar ( $2^n$ Regionen für $n$ Mengen), also benutze stattdessen Algebra.
 
-### Identitäten, die immer
+### Identitäten, die immer gelten
 
 Aus den Definitionen oder durch das Schattieren von Venn-Regionen erhalten Sie Identitäten, die für jede Auswahl von Mengen wahr sind. Zwei wichtige Verteilungsgesetze sind
 
@@ -293,7 +293,7 @@ Um herauszufinden, wie viele $C$ lesen, aber weder $A$ noch $B$ , beginnen Sie m
 
 In diesem Abschnitt geht es darum, alltägliche Regeln so zu lesen, wie eine Prüfung sie liest: als präzise Pfeile, Ands und Ors. Banken, Universitäten, Geschäfte und Verträge sprechen alle in "wenn / nur wenn / wenn und nur wenn". Die Mathematik ist in jedem Fall gleich. Der schwierige Teil ist zu hören, welcher Pfeil tatsächlich versprochen wurde.
 
-### Why careful logic matters
+### Warum sorgfältige Logik wichtig ist
 
 Routinealgebra ohne Logik kann Unsinn erzeugen. Berücksichtigung
 
@@ -303,7 +303,7 @@ $$
 
 Quadratur, Erweiterung und Aufhebung kann ausspucken $x = -5$ . Das Ersetzen des Zurücks schlägt fehl: Die linke Seite ist $-3$ , während $\sqrt{9} = 3$ . Einige algebraische Schritte waren nur einseitig. Ein Wert, der am Ende einer Kette von Implikationen erscheint, muss die ursprüngliche Gleichung nicht lösen. Überprüfen Sie Kandidaten immer in der Originalaussage. Der Rest dieses Abschnitts erklärt die logische Form dieses Fehlers und der formulierten Regeln, die Sie in der Wirtschaft treffen.
 
-### A reminder about square roots
+### Zur Erinnerung an Quadratwurzeln
 
 Für $a \ge 0$ bedeutet das Symbol $\sqrt{a}$ die eindeutige **nicht negative ** Zahl $x$ mit $x^2 = a$ . Wenn beide Zeichen gewünscht sind, schreiben Sie $\pm\sqrt{a}$ . Wenn $a < 0$ , gibt es keine echte quadratische Wurzel.
 
@@ -347,7 +347,7 @@ Eine Implikation mit einem falschen "wenn" -Teil ist also automatisch wahr, was 
 
 (Here Paris means Paris, France.)
 
-### Converse, inverse, contrapositive
+### Umkehrung, Negation und Kontraposition
 
 Aus einer Implikation $P \Rightarrow Q$ werden ständig drei Verwandte bei Prüfungen benannt:
 
@@ -385,7 +385,7 @@ $$
 
 Zum Picknick: "Es regnet ** und ** das Picknick wird nicht abgesagt."
 
-### Equivalence
+### Äquivalenz
 
 Wenn beide $P \Rightarrow Q$ und $Q \Rightarrow P$ halten, schreiben Sie
 
@@ -543,7 +543,7 @@ $$
 
 wobei $P$ die **Prämissen** und $Q$ die **Schlussfolgerungen** sammelt. Drei Standard-Beweis-Formen erscheinen immer wieder.
 
-### Direct Beweis
+### Direkter Beweis
 
 Nehmen Sie $P$ an und leiten Sie $Q$ durch gültige Schritte ab.
 
@@ -551,7 +551,7 @@ Nehmen Sie $P$ an und leiten Sie $Q$ durch gültige Schritte ab.
 
 Nehmen wir die linke Ungleichheit an. Füge $x^2 + 4$ zu beiden Seiten hinzu: $5x > x^2 + 4$ . Da $x^2 + 4 \ge 4$ für jedes reelle $x$ , erhält man $5x > 4$ , also $x > 4/5$ , und insbesondere $x > 0$ .
 
-### Contrapositive Beweis
+### Kontrapositionsbeweis
 
 Beweisen Sie stattdessen $\neg Q \Rightarrow \neg P$ . Äquivalenz mit dem Original gibt $P \Rightarrow Q$ kostenlos.
 
@@ -559,19 +559,19 @@ Nehmen Sie im gleichen Beispiel $x \le 0$ an. Dann $5x \le 0$ , also $-x^2 + 5x 
 
 **Beispiel 2 (ganzzahlig).** Wenn $x$ und $y$ ganze Zahlen sind und $xy$ ungerade ist, dann sind beide $x$ und $y$ ungerade. Kontrapositiv: Wenn mindestens einer von $x,y$ gerade ist, dann ist $xy$ gerade. Das ist sofort, weil ein gerader Faktor ein gerades Produkt erzwingt.
 
-### Beweis by contradiction
+### Beweis durch Widerspruch
 
 Nehmen Sie $P$ zusammen mit $\neg Q$ an und leiten Sie etwas Unmögliches ab. Dann können $P$ und $\neg Q$ nicht beide halten, also $P \Rightarrow Q$ .
 
 Angenommen $-x^2 + 5x - 4 > 0$ und $x \le 0$ erzwingen gleichzeitig $5x > x^2 + 4$ und $5x \le 0$ , daher $0 > x^2 + 4$ , was absurd ist.
 
-### Deductive versus inductive reasoning
+### Deduktives versus induktives Schließen
 
 ** Deduktive ** Argumentation folgt logischen Regeln von Prämissen zu Schlussfolgerungen. Mathematische Beweise sind deduktiv.
 
 **Induktives Denken in der alltäglichen Wissenschaft zieht eine allgemeine Behauptung aus Beobachtungen: "Das Preisniveau stieg für jedes der letzten Jahre, also wird es nächstes Jahr steigen." Empirisch nützlich, niemals ein mathematischer Beweis. Winkel in tausend Dreiecken zu messen und immer $180^\circ$ zu finden, ist ein starker Beweis, kein Beweis für jedes Dreieck. Die seit zwanzig Jahren steigenden Gewinne eines Unternehmens beweisen nicht, dass sie in diesem Jahr steigen.
 
-### Mathematical induction
+### Vollständige Induktion
 
 **Mathematische Induktion** ist eine vollständig logische Methode zum Nachweis von $P(n)$ für jede natürliche Zahl $n$ . Es ist nicht dasselbe wie alltägliches induktives Denken.
 
@@ -645,7 +645,7 @@ Eine Ausnahme ist ein Fall, in dem das "wenn" gilt und das "dann" fehlschlägt.
 
 **Beispiel 7 (restricted domain).** Lasst $P = \{2,3,5,7,11,13\}$ und $E = \{2,4,6,8,10,12,14\}$ dann $P \cap E = \{2\}$ und $P \setminus E = \{3,5,7,11,13\}$ . Die Behauptung " $\forall x \in P$ , $x$ ist ungerade" schlägt bei $2$ fehl. Die eingeschränkte Behauptung „für jeden $x \in P$ mit $x \ne 2$ , $x$ ist ungerade gilt. Subsethood $P \subseteq E$ schlägt bei $3$ fehl.
 
-### Quantifier order
+### Reihenfolge der Quantoren
 
 Wer zuerst gewählt wird, verändert die Bedeutung.
 
@@ -706,7 +706,7 @@ Clue (3) ist eine flache Behauptung, keine Implikation: Dan ist schuldig. Mit "g
 
 Fall x lügner: dann wäre y ein wahrheitserzähler, also wäre ys satz wahr und zwingt y, ein lügner zu sein. Widerspruch. Fall X Wahrheitserzähler: dann ist Y ein Lügner, und Ys Konjunktion "beide Lügner" ist falsch, weil X kein Lügner ist. Konsequent. X sagt die Wahrheit und Y lügt. Die Methode ist Beweis durch Fälle plus Widerspruch auf dem unmöglichen Fall.
 
-### Putting a deduction together
+### Einen Schluss zusammensetzen
 
 1. Schreibe jeden Menge als $\Rightarrow$ , $\Leftrightarrow$ , $\land$ , $\lor$ , $\forall$ oder $\exists$ um.
 2. Trennen Sie "nur wenn" (notwendig) von "wenn / wann immer" (ausreichend) und von "wenn und nur wenn" (beide Wege).
@@ -717,7 +717,7 @@ Fall x lügner: dann wäre y ein wahrheitserzähler, also wäre ys satz wahr und
 
 ---
 
-## Zusammenfassung reference
+## Referenz-Zusammenfassung
 
 .
 | --- | ---
