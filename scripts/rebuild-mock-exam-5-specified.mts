@@ -122,7 +122,7 @@ function buildDcfPaybackCase() {
   // = -100 + 22.727 + 24.793 + 26.296 + 27.320 = 1.136 > 0
   // Sum of inflows = 130 > 100
 
-  const context = `HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at $t=0$. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).
+  const context = `HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at time zero. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).
 
 [[CHART type="bar" title="HarborLink upgrade — year-end cash inflows (EUR thousands)"]]
 Year 1 | Inflow=25
@@ -133,7 +133,7 @@ Year 4 | Inflow=40
 
 | Key figure | Value |
 | --- | ---: |
-| Initial outlay at $t=0$ | EUR 100,000 |
+| Initial outlay at time zero | EUR 100,000 |
 | Discount rate (for NPV) | 10% per year |
 
 Treat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and so on). Evaluate the following economic assertions:`;

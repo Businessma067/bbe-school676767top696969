@@ -266,7 +266,7 @@
       "title": "Project cash flows — payback and NPV from a chart",
       "subsection": "6.5",
       "chapter": 6,
-      "context": "HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at $t=0$. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).\n\n[[CHART type=\"bar\" title=\"HarborLink upgrade — year-end cash inflows (EUR thousands)\"]]\nYear 1 | Inflow=25\nYear 2 | Inflow=30\nYear 3 | Inflow=35\nYear 4 | Inflow=40\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Initial outlay at $t=0$ | EUR 100,000 |\n| Discount rate (for NPV) | 10% per year |\n\nTreat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and so on). Evaluate the following economic assertions:",
+      "context": "HarborLink AG is evaluating a four-year logistics upgrade. The project requires an immediate cash outlay of EUR 100,000 at time zero. Operating cash inflows arrive at each year-end as shown in the chart (figures already in thousands of euros).\n\n[[CHART type=\"bar\" title=\"HarborLink upgrade — year-end cash inflows (EUR thousands)\"]]\nYear 1 | Inflow=25\nYear 2 | Inflow=30\nYear 3 | Inflow=35\nYear 4 | Inflow=40\n[[/CHART]]\n\n| Key figure | Value |\n| --- | ---: |\n| Initial outlay at time zero | EUR 100,000 |\n| Discount rate (for NPV) | 10% per year |\n\nTreat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and so on). Evaluate the following economic assertions:",
       "statements": [
         "The four chart inflows sum to more than EUR 120,000.",
         "Undiscounted payback occurs strictly before the end of Year 3.",
