@@ -12,7 +12,7 @@ import {
   type NavItem,
 } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
-import { resolveExamTrack } from "@/lib/exam-track";
+import { resolveNavTrack } from "@/lib/exam-track";
 import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
@@ -49,8 +49,8 @@ export function SiteHeader({
   void _maxWidthClassName;
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const pathForNav = stripLocalePrefix(pathname);
-  const track = resolveExamTrack(pathname);
   const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
+  const track = resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
   const navItems =
     navItemsProp ?? navItemsForAccess({ hasLite, hasFull, hasWisoFull }, track);
   const navVisible = shouldShowSiteNav(pathForNav, showNav);

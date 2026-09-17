@@ -260,9 +260,7 @@ export function WisoLandingPage() {
                   Mock Builder
                 </LocalizedLink>
                 <LocalizedLink
-                  to="/dashboard"
-                  // @ts-expect-error dashboard search validated on the route
-                  search={{ tab: "games" }}
+                  to="/wiso/flashcards"
                   className="text-muted-foreground hover:underline"
                 >
                   Study tools
