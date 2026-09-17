@@ -421,38 +421,6 @@
       "placeholder": false
     },
     {
-      "id": "math-11-174",
-      "case_id": "MATH 11.174",
-      "title": "Shipping line: capacity, cost, and a smooth loading rule",
-      "subsection": "11.5",
-      "context": "A shipping line carries $x>0$ container loads per voyage. Revenue is $R(x)=150x-3x^{2}$ and cost is $C(x)=0.5x^{3}-9x^{2}+24x+500$. Loading-hours are\n$$L(x)=\\begin{cases}x^{2}+5x&\\text{if }x<20\\\\45x-400&\\text{if }x\\ge20.\\end{cases}$$\nExecutives are comparing an output that maximises profit with an output that maximises revenue, plus a subcontractor's marginal-revenue statement. Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Profit is maximised at $x=14$ loads.",
-        "Revenue is maximised at an output above $20$ loads.",
-        "Average cost is rising at $x=10$.",
-        "The loading-hours rule has a derivative jump at $x=20$.",
-        "If a subcontractor starts with the same revenue at $x=10$ but has lower marginal revenue through $x=18$, it has lower revenue at $x=18$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nForm profit $P=R-C$, differentiate, and factor the quadratic $P^{\\prime}$. The positive critical point needs $P^{\\prime\\prime}<0$ to be a maximum.\n\nProfit $P=R-C$ has derivative\n\n$$\nP^{\\prime}(x) = 126+12x-1.5x^{2}\n$$\n\n$$\nP^{\\prime}(x) = -1.5(x-14)(x+6)\n$$\n\nAt $x=14$,\n\n$$\nP^{\\prime\\prime}(x) = 12-3x = 12-42 = -30<0\n$$\n\nSo $x=14$ maximises profit.\n\nSo the statement is True.\n",
-        "**B.** → True\n\nRevenue peaks where $R^{\\prime}=0$ and $R^{\\prime\\prime}<0$. Solve that critical load count and compare it with the threshold $20$.\n\nMarginal revenue is\n\n$$\nR^{\\prime}(x) = 150-6x = 0 \\implies x = 25\n$$\n\nAlso $R^{\\prime\\prime}=-6<0$, and $25>20$, so revenue peaks above twenty loads.\n\nCarry the derivative comparison all the way to the claimed number before deciding.\n\nSo the statement is True.\n",
-        "**C.** → False\n\nAverage cost rises only where $AC^{\\prime}>0$. Evaluate $AC^{\\prime}(10)$ — a negative value means $AC$ is still falling, contrary to the claim.\n\nAverage cost is\n\n$$\nAC(x) = 0.5x^{2}-9x+24+\\dfrac{500}{x}\n$$\n\n$$\nAC^{\\prime}(x) = x-9-\\dfrac{500}{x^{2}}\n$$\n\n$$\nAC^{\\prime}(10) = 10-9-5\n$$\n\n$$\n10 - 9 = 1\n$$\n\n$$\n1 - 5 = -4\n$$\n\n$$\nAC^{\\prime}(10) = -4\n$$\n\nThe derivative is negative, so average cost is falling at $x=10$, not rising. The intermediate algebra above contradicts the claim.\n\nSo the statement is False.\n",
-        "**D.** → False\n\nA derivative jump requires unequal one-sided slopes. Check both the common level and the left/right derivatives of loading hours at $x=20$.\n\nBoth loading-hour formulas give level $500$ at $x=20$. The one-sided slopes are\n\n$$\nL^{\\prime}_{-}(20) = 2\\cdot 20+5 = 45\n$$\n\n$$\nL^{\\prime}_{+}(20) = 45\n$$\n\nThe slopes agree, so there is no derivative jump at the threshold. The intermediate algebra above contradicts the claim.\n\nSo the statement is False.\n",
-        "**E.** → True\n\nLower subcontractor marginal revenue accumulates a smaller gain. Equal revenue at $x=10$ then forces lower subcontractor revenue at $x=18$.\n\nA subcontractor with lower marginal revenue from $10$ to $18$ accumulates a smaller revenue gain.\n\n$$\nR_{s}(18)-R_{s}(10)<R(18)-R(10)\n$$\n\nEqual starting revenues at $10$ therefore leave the subcontractor strictly lower at $18$.\n\n$$\nx = 10\n$$\n\n$$\nx = 18\n$$\n\nwhich matches the claim.\n\nSo the statement is True.\n"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 174,
-      "solution_overview": "Revenue is $R(x)=150x-3x^{2}$ and cost is $C(x)=0.5x^{3}-9x^{2}+24x+500$. Profit has\n\n$$\nP^{\\prime}(x) = 126+12x-1.5x^{2} = -1.5(x-14)(x+6)\n$$\n\nso $x=14$ is a critical point with $P^{\\prime\\prime}(14)=-30<0$. Revenue peaks where $R^{\\prime}=150-6x=0$, namely at $x=25>20$. Average cost satisfies\n\n$$AC^{\\prime}(x)=x-9-\\dfrac{500}{x^{2}}$$\n\nand $AC^{\\prime}(10)=1-5=-4<0$, so average cost is still falling at $x=10$. Loading hours: $L(20^{-})=20^{2}+5\\cdot 20=500$ and $L(20^{+})=45\\cdot 20-400=500$; slopes $L^{\\prime}_{-}=2x+5$ giving $45$ at $20$, and $L^{\\prime}_{+}=45$, so no derivative jump. Integrating a strictly smaller subcontractor marginal revenue from a matched endpoint forces lower subcontractor revenue at the far end.",
-      "placeholder": false
-    },
-    {
       "id": "math-11-175",
       "case_id": "MATH 11.175",
       "title": "Festival stalls: demand, levy, and setup time",

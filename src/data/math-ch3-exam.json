@@ -257,38 +257,6 @@
       "placeholder": false
     },
     {
-      "id": "math-11-132",
-      "case_id": "MATH 11.132",
-      "title": "Exam-style tasks - 9",
-      "subsection": "3.8",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "An endowment rose from $50,000$ to $63,500$ in six years under continuous compounding. Its force of interest was 3.98\\%.",
-        "An acquisition earnout delivers $25,000$ after two years and $40,000$ after five years. With capital priced at $8.2\\%$, the buyer books a liability of \\$48,746.96.",
-        "A cooperative saves $2,500$ after its first harvest and lets deposits grow $8\\%$ annually while the account yields $4.5\\%$. Just after the seventh deposit, the cooperative has \\$25,211.60.",
-        "A film cooperative invests $1,200$ at each quarter-end for 20 quarters. Its quarterly yield is $1.1\\%$, giving \\$26,876.55 at quarter 20.",
-        "A farm's $360,000$ mortgage uses 288 payments and a $0.46\\%$ monthly rate. Immediately after installment 96, its balance is \\$287,526.80."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nUse both observed values to solve for the force of interest in the exponential model.\n\n$$63500.00=50000.00e^{r(6)}$$\n\n$$\ne^{6r} = \\frac{63500.00}{50000.00} = 1.27000000\n$$\n\n$$6r=\\ln(1.27000000)$$\n\n$$\nr = \\frac{\\ln(1.27000000)}{6} = 0.03983615\n$$\n\n$$100r=3.9836\\%$$\n\nThe computed continuous annual rate is 3.98\\%, matching the claim.\n\nSo the statement is True.",
-        "**B.** → False\n\nEach dated cash flow requires its own discount exponent before the values can be added.\n\n$$PV=\\sum_{t}\\frac{C_t}{(1+i)^t}$$\n\n$$PV=\\frac{25000.00}{(1+0.0820)^2}+\\frac{40000.00}{(1+0.0820)^5}$$\n\n$$\nPV_2 = \\frac{25000.00}{(1+0.0820)^2} = 21354.307249\n$$\n\n$$\nPV_5 = \\frac{40000.00}{(1+0.0820)^5} = 26972.654379\n$$\n\n$$PV=21354.307249+26972.654379$$\n\n$$\n21354.307249 + 26972.654379 = 48326.961628\n$$\n\n$$PV=48326.961628$$\n\nThe computed present value is \\$48,326.96, not \\$48,746.96.\n\nSo the statement is False.",
-        "**C.** → True\n\nAt the final deposit date, each growing contribution has earned a different number of interest periods.\n\n$$\nFV = \\sum_{k=0}^{6}2500.00(1+0.0800)^k(1+0.0450)^{6-k}\n$$\n\n$$\nFV = 2500.00(1+0.0450)^{6}\\sum_{k=0}^{6}\\left(\\frac{1+0.0800}{1+0.0450}\\right)^k\n$$\n\n$$FV=2500.00(1+0.0450)^{6}\\frac{1-1.03349282^7}{1-1.03349282}$$\n\n$$FV=25211.602737$$\n\nThe computed accumulated balance is \\$25,211.60, matching the claim.\n\nSo the statement is True.",
-        "**D.** → False\n\nAn ordinary annuity accumulates every end-of-period payment to the date of the last payment.\n\n$$s_{\\overline{20}|}=\\frac{(1+0.01100)^20-1}{0.01100}$$\n\n$$FV=1200.00s_{\\overline{20}|}$$\n\n$$FV=1200.00\\frac{(1+0.01100)^20-1}{0.01100}$$\n\n$$FV=26681.546485$$\n\nThe computed annuity future value is \\$26,681.55, not \\$26,876.55.\n\nSo the statement is False.",
-        "**E.** → True\n\nThe mortgage principal equals the present value of its level month-end payments.\n\n$$P=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PMT=360000.00\\frac{0.004600}{1-(1+0.004600)^{-288}}$$\n\n$$PMT=2258.176536$$\n\n$$\nn_{\\mathrm{remaining}} = 288-96\n$$\n\n$$\n288 - 96 = 192\n$$\n\n$$B_96=PMT\\frac{1-(1+i)^{-192}}{i}$$\n\n$$B_96=287526.799220$$\n\nThe computed balance after payment 96 is \\$287,526.80, matching the claim.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 132,
-      "solution_overview": "Each letter is an independent financial claim. Name the matching formula, substitute the stem numbers, and compare with the stated figure.\n\nTopics: 3.2, 3.3, 3.4, 3.5, 3.6\n\nA. solve a continuous rate from two endowment balances.\nB. measure the present liability of an acquisition earnout.\nC. accumulate harvest deposits growing faster than interest.\nD. accumulate quarterly film-cooperative contributions.\nE. value the remaining farm-loan installments.",
-      "placeholder": false
-    },
-    {
       "id": "math-11-133",
       "case_id": "MATH 11.133",
       "title": "Exam-style tasks - 10",

@@ -723,44 +723,6 @@
       "sort_order": 19,
       "subsection": "g.15",
       "solution_overview": "Two lines forget to invert after only after and never. The others show not until, barely, and on no account in full working order - gym closing, vet results, campsite booking, kitchen rules, and dawn unlocks.\n\n**Part 1: What to watch for.**\n\nOnly after + clause → invert the main clause. Not until… did…. Barely had… when… (including passive past perfect). On no account + should. Never + past perfect → Never had + subject.\n\n**Part 2: How to decide.**\n\nJump to the main clause after only after / not until and demand the auxiliary first. After never + past perfect, demand had before the subject. Match the three correct templates to the two repairs.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
-    },
-    {
-      "id": "en-g-15-20",
-      "case_id": "ENG G.15.20",
-      "title": "Task 20",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Nowhere in the hiking leaflet does it mention the Monday trail closure.",
-        "Not only did the hostel refill the kettle, but it also left fresh towels.",
-        "Hardly had the blackout ended when the street lights flickered back on.",
-        "Under no circumstances the landlord will enter without written notice.",
-        "No sooner had the suitcases been labelled than the taxi pulled up."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) Nowhere in the hiking leaflet does it mention the Monday trail closure.**\n\nNowhere in the hiking leaflet does it mention correctly inverts after a negative place adverbial. Does follows the nowhere phrase and precedes the subject. Nowhere / no place at the front always demand that auxiliary swap.\n\nNowhere… does + subject is already in question-style order, so the leaflet line is **true**.\n",
-        "**B) Not only did the hostel refill the kettle, but it also left fresh towels.**\n\nNot only did the hostel refill the kettle already invents did after the front. But it also left fresh towels keeps the second half parallel. Match verb forms across both halves of not only / but also — and both halves do.\n\nNot only did… but also… is inverted and parallel, so the hostel wording is **true**.\n",
-        "**C) Hardly had the blackout ended when the street lights flickered back on.**\n\nHardly had the blackout ended when the street lights flickered back on is standard. Had before the subject and when afterward are both required and both present. Do not borrow than from the no-sooner pair.\n\nHardly had… when… is correctly linked (not than), so the blackout line is **true**.\n",
-        "**D) Under no circumstances the landlord will enter without written notice.**\n\nUnder no circumstances opens the landlord notice, so will should come next. The landlord will still keeps subject before the modal. Final checklist on this opener: modal, then subject — \"Under no circumstances will the landlord enter without written notice.\"\n\nTrap: legal-sounding under no circumstances… will enter can still fail if the subject sits before will.\n\nUnder no circumstances needs will before the landlord, so this is **false** — \"Under no circumstances will the landlord enter without written notice.\"\n",
-        "**E) No sooner had the suitcases been labelled than the taxi pulled up.**\n\nNo sooner had the suitcases been labelled than the taxi pulled up closes the set cleanly. Passive past perfect still inverts had before the subject. Than after no sooner seals the correlative.\n\nNo sooner had… than… is complete, including passive past perfect, so this line is **true**.\n"
-      ],
-      "highlights": [
-        "Nowhere in the hiking leaflet does",
-        "Not only did",
-        "Hardly had",
-        "the landlord will",
-        "No sooner had"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 20,
-      "subsection": "g.15",
-      "solution_overview": "Four model inversions and one classic miss: under no circumstances without modal-subject swap. Hiking leaflets, hostel service, blackouts, landlord notice, and labelled suitcases wrap the final checklist.\n\n**Part 1: What to watch for.**\n\nNowhere… does…. Not only did… but also…. Hardly had… when…. Under no circumstances → will before the subject. No sooner had… than….\n\n**Part 2: How to decide.**\n\nIf you catch the under-no-circumstances pattern every time - modal before subject - this topic is exam-ready. Use the four true lines as production models and fix the one order miss the same way.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     }
   ]
 }

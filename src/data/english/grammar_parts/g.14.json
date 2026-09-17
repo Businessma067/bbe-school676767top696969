@@ -687,44 +687,6 @@
       "solution_overview": "Reporting shells (\"it was insisted,\" \"the protocol states that it is vital\") bury the real trigger. Unwrap to the innermost that-clause before you judge the verb.\n\n**Part 1: What to watch for.**\n\nOfficer titles after require, advise that + be + participle, and nested vital-clauses still need bare forms. Indicative starts and is raised are the traps.\n\n**Part 2: How to decide.**\n\nAccept keep, be reopened, and reach. Reject starts after it was insisted and is raised after proposed that.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
-      "id": "en-g-14-19",
-      "case_id": "ENG G.14.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "The board resolved that interim prizes not be declared this half.",
-        "It is essential that whoever chairs the panel has no prior conflict.",
-        "Organisers demanded that stage cues be tightened after the dress run.",
-        "The examiner insisted that each script is double-marked independently.",
-        "Guidance recommends that the risk register be reviewed after every incident."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) The board resolved that interim prizes not be declared this half.**\n\nNegated passive \"not be declared\" is correctly formed. Resolutions often negate with not be + participle. Interim prizes stay undeclared this half under that shape.\n\n**Tip:** Board resolutions often negate as not be + participle.\n\nResolved that interim prizes not be declared negates with not be correctly, so the wording is **true**.\n",
-        "**B) It is essential that whoever chairs the panel has no prior conflict.**\n\nAfter \"it is essential that,\" use have, not has, even after \"whoever.\" Free relatives still sit under the mandative rule. No -s on the that-clause verb — whoever chairs… have no prior conflict.\n\n**Trap:** Whoever… has looks like normal relative agreement; essential that still strips -s.\n\nEssential that whoever chairs … have forbids indicative has, so this is **false** — \"It is essential that whoever chairs the panel have no prior conflict.\"\n",
-        "**C) Organisers demanded that stage cues be tightened after the dress run.**\n\n\"Demanded that… be tightened\" is correct. Theatre and event language still uses demand that + be + participle. Stage cues after the dress run sit under that be.\n\nDemanded that stage cues be tightened already uses be after the dress run, so the sentence is **true**.\n",
-        "**D) The examiner insisted that each script is double-marked independently.**\n\nUse be double-marked, not is double-marked, after \"insisted that.\" Exam-administration passives are a favourite is trap. Swap to be before the participle.\n\n**Trap:** Insist that + is double-marked is a polished-looking indicative passive trap.\n\nInsisted that each script be double-marked needs be, so the line is **false**; repair to \"The examiner insisted that each script be double-marked independently.\"\n",
-        "**E) Guidance recommends that the risk register be reviewed after every incident.**\n\n\"Recommends that… be reviewed\" is correct. Safety and ops manuals recycle this frame constantly after incidents. The risk register takes be before reviewed.\n\nRecommends that the risk register be reviewed keeps be in ops English, so the wording is **true**.\n"
-      ],
-      "highlights": [
-        "not be declared",
-        "has",
-        "be tightened",
-        "is double-marked",
-        "be reviewed"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.14",
-      "solution_overview": "The sharpest trap is \"whoever… has\": the free relative does not cancel the mandative. Resolutions, stage cues, scripts, and risk registers complete the set.\n\n**Part 1: What to watch for.**\n\nStrip -s / swap is for be wherever essential, insist, or recommend governs the clause. Negated passive \"not be\" + participle is fine in board resolutions.\n\n**Part 2: How to decide.**\n\nAccept not be declared, be tightened, and be reviewed. Reject has after whoever and is double-marked after insist.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
-    },
-    {
       "id": "en-g-14-20",
       "case_id": "ENG G.14.20",
       "title": "Task 20",

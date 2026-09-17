@@ -69,40 +69,6 @@
       "tables_markdown": "| $n$ | 0 | 1 | 2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- | --- |\n| $s_n$ | 3 | 0 | -1 | 0 | 3 | 8 |"
     },
     {
-      "id": "math-7-e3",
-      "case_id": "MATH 7.E03",
-      "title": "Ticket desk — rebuilt revenue",
-      "subsection": "7.5",
-      "context": "A club sells tickets at price $p$ euros. The table records total revenue $R$ (in euros) observed at five prices. No formula is printed on the desk sheet. Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Among the listed prices, the unique maximum occurs at the midpoint of the two prices where revenue equals $15$.",
-        "Rebuilding a quadratic from the constant second difference recovers leading coefficient $-1$.",
-        "Revenue increases at every listed step from $p=1$ to $p=5$.",
-        "The interpolating parabola has roots $0$ and $8$, so its axis is $p=4$.",
-        "Raising the price from $4$ to $5$ decreases the listed revenue by $1$ euro."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nRead the five revenues in price order and note where the value $15$ appears.\n\n$$R:\\ 7,\\ 12,\\ 15,\\ 16,\\ 15$$\n\n$$R(3)=15$$\n\n$$R(5)=15$$\n\nThose two prices sit equally far from $p=4$, and $R(4)=16$ is the unique listed maximum. The midpoint of the two $15$s is therefore the listed peak.\n\n$$x=\\frac{3+5}{2}$$\n\n$$x=\\frac{8}{2}$$\n\n$$x=4$$\n\nA downward interpolating parabola is symmetric about its axis, so equal revenues $15$ must sit equally far from the listed peak.\n\nThe unique maximum sits at that midpoint.\n\nSo the statement is True.",
-        "**B.** → True\n\nNeighbouring gaps of the revenue row are not constant; their own gaps are. Form the two difference layers from the listed heights $7,12,15,16,15$.\n\n$$\\Delta_{1}:\\ 5,\\ 3,\\ 1,\\ -1$$\n\n$$\\Delta_{2}:\\ -2,\\ -2,\\ -2$$\n\nFor unit spacing the second-difference constant equals $2a$, so the leading coefficient of the interpolating parabola is $-1$.\n\n$$2a=-2$$\n\n$$a=-1$$\n\nThe rebuilt leading coefficient is $-1$.\n\nSo the statement is True.",
-        "**C.** → False\n\nAn always-increasing sequence would have every first difference strictly positive. The last listed gap is not.\n\n$$R:\\ 7,\\ 12,\\ 15,\\ 16,\\ 15$$\n\n$$R(5)-R(4)=15-16$$\n\n$$R(5)-R(4)=-1$$\n\n$$-1<0$$\n\nRevenue rises through $p=4$ and then falls on the last listed step. A single negative gap already kills a claim of increase at every step.\n\nThe first-difference row $5,3,1,-1$ already changes sign, which is the discrete form of a peak at $p=4$.\n\nRevenue falls on the last listed step.\n\nSo the statement is False.",
-        "**D.** → True\n\nSecond differences of the revenue row are constantly $-2$, so $2a=-2$ and $a=-1$. Matching $R(1)=7$ and $R(2)=12$ then fixes the remaining coefficients.\n\n$$R(p)=-p^{2}+8p$$\n\n$$R(p)=p(8-p)$$\n\nThe roots of that interpolant are $0$ and $8$, so the axis is their midpoint $p=4$, which is also the listed peak.\n\n$$p=\\frac{0+8}{2}$$\n\n$$p=\\frac{8}{2}$$\n\n$$p=4$$\n\nVieta's midpoint of the roots $0$ and $8$ is the same axis formula $p=-b/(2a)$ applied to $-p^{2}+8p$.\n\nThe interpolating parabola has those roots and that axis.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe last gap of the first-difference row is exactly the change from price $4$ to price $5$. Those two heights are listed as $16$ and $15$.\n\n$$R(4)=16$$\n\n$$R(5)=15$$\n\n$$h=15-16$$\n\n$$h=-1$$\n\nListed revenue therefore falls by $1$ euro on that step. The same drop is visible as the last first-difference of the table.\n\nOn a downward parabola past the axis, each extra unit of price lowers revenue; here that drop is the listed $1$ euro.\n\nRaising the price from $4$ to $5$ decreases the listed revenue by $1$ euro.\n\nSo the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 103,
-      "solution_overview": "The desk sheet prints only five prices and the corresponding revenues, so treat the table as a list of pairs and, behind the scenes, rebuild the hidden quadratic $R(p)=p(8-p)$ that generated them.\n\n$$(1,7),\\;(2,12),\\;(3,15),\\;(4,16),\\;(5,15)$$\n\nNeighbouring gaps of the revenue row are not constant, so the model is not a line; they decrease by $2$ each step, the second-difference signature of a downward parabola.\n\n$$\\mathrm{fir}:\\ 5,\\ 3,\\ 1,\\ -1\\qquad \\mathrm{sec}:\\ -2,\\ -2,\\ -2$$\n\nFor unit spacing that second-difference constant equals $2a$, hence $a=-1$. Matching $R(1)=7$ recovers the factored revenue rule.\n\n$$\nR(p) = p(8-p) = -p^{2}+8p\n$$\n\nA downward parabola has its largest listed value at the vertex, which sits at the midpoint of the roots $0$ and $8$.\n\n$$\n\\mathrm{ver} = \\left(4,16\\right),\\qquad R(3) = R(5) = 15,\\qquad R(2) = 12\n$$\n\nFrom $p=4$ to $p=5$ the listed revenue drops from $16$ to $15$. Revenue therefore does not increase at every step from $1$ to $5$.",
-      "placeholder": false,
-      "stem_kind": "applied",
-      "tables_markdown": "| $p$ | 1 | 2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- |\n| $R$ | 7 | 12 | 15 | 16 | 15 |"
-    },
-    {
       "id": "math-7-e4",
       "case_id": "MATH 7.E04",
       "title": "Meetings, vertex, and a rewrite in $f$",

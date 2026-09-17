@@ -552,35 +552,6 @@
   },
   {
     "subsection": "3.2",
-    "case_id": "CASE 3.2.04",
-    "title": "Secondary Manufacturing",
-    "context": "Review what counts as secondary-sector manufacturing. Evaluate the following economic assertions:",
-    "statements": [
-      "Retail sale of finished jackets is tertiary distribution or trade.",
-      "Warehousing steel before welding is a tertiary logistics service.",
-      "A car plant assembling vehicles operates in the tertiary sector because it serves customers.",
-      "A fashion label sewing jackets performs tertiary retail because jackets are sold later.",
-      "Smelters shaping metal remain primary because ore originates underground."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Selling finished jackets in a shop is retail trade, a tertiary service of distribution rather than the sewing stage that produced the garments.\n\nSo the statement is True.",
-      "Warehousing steel before it is welded is a logistics service. Holding and moving materials for others sits in the tertiary sector, separate from the welding itself.\n\nSo the statement is True.",
-      "A car plant that assembles vehicles transforms parts into finished cars. That manufacturing process is secondary, even though customers eventually drive the cars.\n\n\"Serving customers\" does not pull assembly into the tertiary sector. Almost every producer serves buyers; the sector test is the nature of the activity, not the existence of a customer.\n\nSo the statement is False.",
-      "Sewing jackets is manufacturing and therefore secondary. Later retail sale may be tertiary, but the sewing stage itself is not retail trade.\n\nSo the statement is False.",
-      "Smelters that shape metal perform secondary transformation of materials. Ore's underground origin does not keep the smelting stage in the primary sector.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.2",
     "case_id": "CASE 3.2.05",
     "title": "Flood Rebuild and GDP",
     "context": "Consider how, after floods a municipality rebuilds bridges and the spending enters national accounts. Evaluate the following economic assertions:",
@@ -749,35 +720,6 @@
       "Gross domestic product adds the monetary value of final goods and services produced within a country's borders. Money values make unlike products addable; \"final\" avoids counting the same value twice through the supply chain.\n\nBorders define the geographic scope: output made inside the country counts, whether sold at home or abroad as exports. That is the standard textbook definition restated cleanly.\n\nSo the statement is True.",
       "Domestic production counts regardless of whether the firm is locally or foreign-owned. Territory of production, not passport of the owner, sets the GDP boundary.\n\nSo the statement is True.",
       "Insurance and other final services produced domestically enter GDP totals just as final goods do. Services are not excluded from the national production measure.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.2",
-    "case_id": "CASE 3.2.11",
-    "title": "EU Services at Seventy-four Percent",
-    "context": "Consider a GDP report for an EU member state shows services at seventy-four percent of total output. Evaluate the following economic assertions:",
-    "statements": [
-      "Service share alone does not prove every component of GDP is environmentally sustainable.",
-      "Seventy-four percent services indicates tertiary dominance rather than primary leadership.",
-      "Such a share is typical for economically advanced EU countries.",
-      "Seventy-four percent service share fits a highly developed EU economy pattern.",
-      "That pattern reflects rising relative importance of tertiary activity with development."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "A high service share says nothing by itself about environmental sustainability of every GDP component. Composition and green impact are separate questions.\n\nSo the statement is True.",
-      "Seventy-four percent services means the tertiary sector leads output, not the primary sector. Primary leadership would require extraction and farming to dominate the total.\n\nSo the statement is True.",
-      "Service shares around three-quarters of output are typical for economically advanced EU countries. The reported seventy-four percent therefore fits the developed-economy pattern rather than an emerging primary-heavy structure.\n\nStudents should read that percentage as a development marker in the three-sector story, not as proof that industry or farming disappeared. Relative tertiary weight is what the figure signals.\n\nSo the statement is True.",
-      "Seventy-four percent services aligns with a highly developed EU economy pattern in the chapter's stylised facts. It is the expected ballpark for advanced members.\n\nSo the statement is True.",
-      "Rising relative importance of tertiary activity with development is exactly what a seventy-four percent service share illustrates in the sector model.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1451,35 +1393,6 @@
   },
   {
     "subsection": "3.4",
-    "case_id": "CASE 3.4.03",
-    "title": "Micro balance sheet OR test",
-    "context": "Consider a design studio that reports eight staff, €2.4m turnover, and a €1.7m balance sheet. Evaluate the following economic assertions:",
-    "statements": [
-      "A firm fails the medium test because both financial figures must be below their respective caps.",
-      "Medium enterprises employ fewer than two hundred and fifty people under EU definitions.",
-      "Because turnover is within €50m, balance sheet size is irrelevant for medium classification.",
-      "Two hundred and forty employees exceed the medium staff ceiling.",
-      "Thirty-eight staff alone keeps a firm in the small category despite turnover above €10m."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Medium classification uses an OR on the financial side: turnover up to €50m or balance sheet up to €43m, plus fewer than 250 staff. Both financial figures need not sit under their caps at once.\n\nA firm can miss one financial ceiling and still pass medium if the other financial measure and staff tests hold. Demanding both financial figures below their caps invents an AND rule the definition does not use.\n\nSo the statement is False.",
-      "EU medium enterprises employ fewer than two hundred and fifty people. That staff ceiling is the employment half of the medium size tests used with the financial caps.\n\nSo the statement is True.",
-      "Turnover within €50m does not make balance sheet size irrelevant. A balance sheet above €43m can still fail medium status when that route is the one being relied on and the other financial test also fails.\n\nSo the statement is False.",
-      "Two hundred and forty employees sit under the medium staff ceiling of fewer than 250. That headcount clears rather than exceeds the official limit.\n\nSo the statement is False.",
-      "Thirty-eight staff fit the small employee band, yet turnover above €10m can knock the firm out of small status. Staff alone cannot keep the small label once financial caps break.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
     "case_id": "CASE 3.4.04",
     "title": "Small dual thresholds",
     "context": "Analyze EU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",
@@ -1505,35 +1418,6 @@
       "Medium status allows turnover up to €50m or a balance sheet up to €43m together with the staff cap under EU rules. That pairing is the financial half of the definition.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
-    "case_id": "CASE 3.4.05",
-    "title": "Small turnover breach",
-    "context": "Consider a wholesaler that has thirty-eight staff but €10.4m turnover. Evaluate the following economic assertions:",
-    "statements": [
-      "A workforce of about ten thousand places a components manufacturer outside EU medium enterprise limits.",
-      "Approximately ninety-nine percent of businesses in the EU are SMEs.",
-      "Accounting requirements are identical for micro firms and large multinationals under EU practice.",
-      "Two hundred employees fall within the medium staff threshold.",
-      "Seven staff and a €1.9m balance sheet guarantee micro status despite turnover above €2m."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "About ten thousand employees far exceeds the medium staff ceiling of fewer than 250. A components manufacturer at that scale sits outside EU medium limits.\n\nSo the statement is True.",
-      "Roughly ninety-nine percent of EU businesses are classed as SMEs by number. That prevalence statistic is a standard chapter fact about the business population.\n\nSo the statement is True.",
-      "Accounting and disclosure duties typically lighten for smaller size bands and tighten for large multinationals. Treating micro firms and large groups as identical reporters contradicts that graduated practice.\n\nSimplified regimes exist precisely because size categories differ. Identical requirements would erase the point of the tiers.\n\nSo the statement is False.",
-      "Two hundred employees fall under the medium threshold of fewer than 250. That headcount remains inside the medium staff band if financial tests also pass.\n\nSo the statement is True.",
-      "Seven staff and a €1.9m balance sheet cannot guarantee micro status if turnover sits above €2m and the OR financial test therefore fails. Turnover breach can still disqualify.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2031,35 +1915,6 @@
   },
   {
     "subsection": "3.5",
-    "case_id": "CASE 3.5.07",
-    "title": "Undercapitalisation risk",
-    "context": "Consider undercapitalisation as a challenge linked to smaller geographic scope. Evaluate the following economic assertions:",
-    "statements": [
-      "Importing finished goods for domestic resale makes a firm a manufacturer in two countries.",
-      "Multiple legal systems apply when a firm conducts business in several countries.",
-      "Language differences matter for customer contact in international markets.",
-      "Globalisation excludes service firms and applies only to factories.",
-      "A longer supply chain is typical when sourcing and selling nationally rather than locally."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Importing finished goods for domestic resale makes a firm a trader or retailer, not automatically a manufacturer in two countries. Manufacturing requires producing goods, not merely bringing them in for shop shelves.\n\nSo the statement is False.",
-      "Doing business in several countries brings several legal systems into play: contracts, product rules, and tax regimes differ by jurisdiction. Firms must cope with that patchwork rather than assuming one home statute travels everywhere. Multiple systems are a defining international complication.\n\nSo the statement is True.",
-      "Language differences shape how international firms talk to customers, write manuals, train staff, and negotiate. Misread terms can lose sales or create liability even when the product itself is sound. A subsidiary team that cannot brief local buyers in their language undercuts market entry. That is why language sits beside culture and currency as a standard international friction, not a soft optional skill. Customer contact across borders therefore depends on linguistic capacity as much as on price lists.\n\nSo the statement is True.",
-      "Globalisation covers service firms as well as factories. Banks, consultancies, airlines, and software houses operate across borders under the same broad process. Limiting globalisation to manufacturing plants alone is too narrow.\n\nSo the statement is False.",
-      "Sourcing and selling nationally usually lengthens the supply chain relative to a purely local producer. More regions, depots, and carriers enter the route when the home country is the market.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.5",
     "case_id": "CASE 3.5.08",
     "title": "National supply chain length",
     "context": "Analyze supply chain length for a national manufacturer versus a local workshop. Evaluate the following economic assertions:",
@@ -2259,35 +2114,6 @@
       "Local market saturation arrives when most nearby customers are already served, so extra local capacity wins little new demand. That ceiling is a classic limited-area constraint.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.5",
-    "case_id": "CASE 3.5.15",
-    "title": "Currency exposure abroad",
-    "context": "Analyze an exporter invoices in euros and dollars across borders. Evaluate the following economic assertions:",
-    "statements": [
-      "National scale operations extend supply chains across the home country.",
-      "Policy support for regional firms often targets limited-area operators.",
-      "Importing for domestic resale alone does not by itself make a firm a multinational manufacturer.",
-      "Local scope means both limited operating area and chiefly nearby customers.",
-      "Operating in two countries eliminates exposure to different currencies."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "National-scale operations stretch supply chains across the home country through regional depots, carriers, and suppliers. Domestic breadth still lengthens logistics relative to a single-district producer.\n\nSo the statement is True.",
-      "Policy support for regional firms often targets operators confined to limited areas: grants, advice, or infrastructure aimed at provincial and county-scale businesses. That focus matches the regional geographic problem set rather than multinational factory building abroad.\n\nSo the statement is True.",
-      "Importing finished goods for domestic resale does not by itself create a multinational manufacturer. The firm may be a national wholesaler or retailer with foreign sourcing upstream, yet without foreign production of its own or foreign sales footprint it is not automatically a multi-country manufacturer. Manufacturing in two countries, or selling across several, is a different pattern from bringing stock home to sell. The importer label and the multinational-manufacturer label therefore part company when production stays elsewhere and shelves stay domestic.\n\nSo the statement is True.",
-      "Local scope pairs a limited operating area with chiefly nearby customers. Both geography of operations and geography of buyers matter. A district bakery with walk-ins satisfies both sides of that definition.\n\nSo the statement is True.",
-      "Operating in two countries increases exposure to different currencies rather than eliminating it. Dual-currency invoicing is a risk source, not a vaccine against exchange-rate moves.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3620,35 +3446,6 @@
       "Choosing dividends versus ploughing profit back changes how much capital stays inside to fund future growth. That weighing alters the long-term value path owners care about. A bakery paying every euro out as cash may please short-term pockets while starving equipment upgrades. Reinvestment can reverse that trade-off. The statement correctly connects the dividend-reinvestment choice to long-term owner value.\n\nSo the statement is True.",
       "Retained profit can fund capacity and brand that raise what the business is worth later on sale. Keeping earnings in can build long-term owner value rather than only today's cash.\n\nSo the statement is True.",
       "Reinvestment decisions change owner wealth prospects through future capacity and earnings power. They are not an accountants-only curiosity sealed away from stakeholder interests.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.6",
-    "case_id": "CASE 3.6.46",
-    "title": "Customer boycott power",
-    "context": "Consider customers may switch suppliers if quality falls. Evaluate the following economic assertions:",
-    "statements": [
-      "Customers cannot influence firms because switching suppliers is impossible in all markets.",
-      "Falling quality gives customers power to switch suppliers and reduce firm revenue.",
-      "Customers may switch if quality falls, exercising stakeholder influence on revenue.",
-      "Customer boycotts after poor service show stakeholder power over firm revenue.",
-      "Buyers at a bakery have no power because they purchase small quantities each visit."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "In most markets buyers can walk to another shop or brand when service fails. Claiming switching is impossible everywhere invents a universal lock-in that ordinary retail does not show.\n\nSo the statement is False.",
-      "Quality slips do not automatically hand every buyer decisive leverage in every setting. Habit, distance, and thin local alternatives can keep people buying even when the loaf is worse for a while, so revenue need not fall on cue. Treating a quality dip as a guaranteed gift of switching power overstates how quickly influence shows up. Where alternatives are weak, buyers may stay despite poorer quality. The blanket causal wording therefore fails as an always-true rule for this letter.\n\nSo the statement is False.",
-      "When quality falls and alternatives exist, customers can leave and take their spending with them. That exit is stakeholder influence working through revenue. A bakery that lets standards slip watches regulars try the shop across the street. Firms feel that pressure as lost sales, which is why customer power appears in stakeholder analysis. The statement correctly links quality decline, switching, and revenue effects without claiming miracles in every market structure.\n\nSo the statement is True.",
-      "Organised boycotts after poor service cut sales until practice changes at the counter. That episode shows customer stakeholder power over firm revenue in a public, organised form.\n\nSo the statement is True.",
-      "Small daily purchases still add up across many regulars, and buyers can simply stop coming. Quantity per visit does not erase customer power at a neighbourhood bakery.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
     "tier": "full"

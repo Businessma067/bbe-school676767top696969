@@ -4354,38 +4354,6 @@
       "placeholder": false
     },
     {
-      "id": "math-2-137",
-      "case_id": "MATH 2.137",
-      "title": "Exam-style tasks - 1",
-      "subsection": "2.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "For all real $x$, $y$, $z$, it holds that $x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$.",
-        "At $t=2$, both $\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}$ and $\\dfrac{t+1}{2t+1}$ equal $\\dfrac{3}{5}$.",
-        "For $u>0$ and $v>0$ with $u\\neq v$, it holds that $\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$.",
-        "At $x=-2$, $y=3$, both $|xy|$ and $|x|\\,|y|$ equal $6$.",
-        "If $p>q$, then $p^2>q^2$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nThe algebraic identity expands the right-hand side into the same quadratic form as the left.\n\nExpand each squared difference:\n\n$$\n(x-y)^2=x^2-2xy+y^2\n$$\n\n$$\n(y-z)^2=y^2-2yz+z^2\n$$\n\n$$\n(z-x)^2=z^2-2zx+x^2\n$$\n\nAdd and divide by $2$:\n\n$$\n\\tfrac12\\bigl[(x-y)^2+(y-z)^2+(z-x)^2\\bigr]=x^2+y^2+z^2-xy-yz-zx\n$$\n\nThe two sides match identically for every real $x$, $y$, $z$.\n\nSo the statement is True.\n",
-        "**B.** → True\n\nSimplify the continued fraction from the innermost layer outward, with $t\\neq0$, $t\\neq-1$, and $t\\neq-\\tfrac12$.\n\nInnermost sum:\n\n$$\n1+\\frac{1}{t}=\\frac{t+1}{t}\n$$\n\nFirst reciprocal:\n\n$$\n\\frac{1}{1+\\frac{1}{t}}=\\frac{t}{t+1}\n$$\n\nOuter sum:\n\n$$\n1+\\frac{t}{t+1}=\\frac{2t+1}{t+1}\n$$\n\nOuter reciprocal:\n\n$$\n\\dfrac{1}{1+\\dfrac{1}{1+\\frac{1}{t}}}=\\dfrac{t+1}{2t+1}\n$$\n\nThat is exactly the claimed value.\n\nConcrete check for the rewritten claim. Both sides equal $3/5$.\n\nSo the statement is True.\n",
-        "**C.** → True\n\nClear the roots in the denominator by multiplying by the conjugate of that denominator.\n\n$$\nu>0\n$$\n\n$$\nv>0\n$$\n\n$$\nu\\neq v\n$$\n\n$$\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}\n$$\n\n$$\n\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}\n$$\n\nMultiply numerator and denominator by $\\sqrt{u}-\\sqrt{v}$:\n\n$$\n\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{(\\sqrt{u}-\\sqrt{v})^2}{u-v}\n$$\n\nExpand the squared numerator:\n\n$$\n(\\sqrt{u}-\\sqrt{v})^2=u-2\\sqrt{uv}+v\n$$\n\nSo\n\n$$\n\\dfrac{\\sqrt{u}-\\sqrt{v}}{\\sqrt{u}+\\sqrt{v}}=\\dfrac{u+v-2\\sqrt{uv}}{u-v}\n$$\n\nwhich is the claimed rationalized form.\n\nSo the statement is True.\n",
-        "**D.** → True\n\nSubstitute $x=-2$ into both sides and compare the values.\n\n$$\nx=-2\n$$\n\n$$\n|xy|\n$$\n\n$$\n|x|\\,|y|\n$$\n\n$$\n\\text{claimed value }6\n$$\n\nBoth sides agree with the claimed value.\n\nSo the statement is True.\n",
-        "**E.** → False\n\nSquaring is not order-preserving on the whole real line.\n\n$$\np>q\n$$\n\n$$\np^2>q^2\n$$\n\nFactor the difference of squares:\n\n$$\np^2-q^2=(p-q)(p+q)\n$$\n\nIf $p>q$, then $p-q>0$, but $p+q$ may still be negative.\n\nCounterexample: $p=-1$, $q=-3$ gives $p>q$ yet\n\n$$\np^2=1<9\n$$\n\n$$\nq^2\n$$\n\nSo $p>q$ does not force $p^{2}>q^{2}$.\n\nSo the statement is False.\n"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 137,
-      "solution_overview": "",
-      "placeholder": false
-    },
-    {
       "id": "math-2-138",
       "case_id": "MATH 2.138",
       "title": "Exam-style tasks - 2",
@@ -4510,38 +4478,6 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 141,
-      "solution_overview": "",
-      "placeholder": false
-    },
-    {
-      "id": "math-2-142",
-      "case_id": "MATH 2.142",
-      "title": "Exam-style tasks - 6",
-      "subsection": "2.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "If $abc\\neq0$ and $ab+bc+ca=0$, then $\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
-        "For $s>0$, it holds that $\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
-        "At $v=0$, $|v-1|=1<2$ and $0\\in(-1,3)$; at $v=4$, $|4-1|=3\\not<2$.",
-        "If $s+t=u$, then $s^3+t^3+3stu=u^3$.",
-        "For $z>1$, it holds that $\\dfrac{z+1}{z-1}>1$."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nWrite the sum of reciprocals over the common denominator $abc$, then use $ab+bc+ca=0$.\n\nCombine:\n\n$$\n\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}\n$$\n\nThe numerator is exactly $ab+bc+ca$, which vanishes by hypothesis, and $abc\\ne0$.\n\nHence the sum of reciprocals is $0$.\n\n$$\nabc\\neq0\n$$\n\n$$\nab+bc+ca=0\n$$\n\n$$\n\\dfrac1a+\\dfrac1b+\\dfrac1c=0\n$$\n\nSo the statement is True.\n",
-        "**B.** → False\n\nRewrite the radicand as a square, then compare with the claimed right-hand side.\n\nFor $s>0$:\n\n$$\ns+\\dfrac{1}{s}-2=\\left(\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right)^2\n$$\n\n$$\n\\sqrt{s+\\dfrac{1}{s}-2}=\\left|\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right|\n$$\n\nThe claim writes $\\sqrt{s}+\\dfrac{1}{\\sqrt{s}}$, which is strictly larger whenever $s\\neq1$. At $s=4$:\n\n$$\n\\left|2-\\tfrac12\\right|=\\tfrac32\\neq2+\\tfrac12\n$$\n\n$$\n\\tfrac52\n$$\n\nSo the statement is False.\n",
-        "**C.** → True\n\nA strict absolute-value inequality $|v-c|<r$ describes the open interval of radius $r$ about $c$.\n\n$$\nv\n$$\n\n$$\nv=0\n$$\n\n$$\n|v-1|\n$$\n\n$$\n|v-1|=1<2\n$$\n\n$$\n0\\in(-1,3)\n$$\n\n$$\nv\n$$\n\n$$\nv=4\n$$\n\n$$\n|4-1|\n$$\n\n$$\n|4-1|=3\\not<2\n$$\n\nUnfold about the center $1$:\n\n$$\n|v-1|<2\\Longleftrightarrow-2<v-1<2\n$$\n\nAdd $1$ through the chain:\n\n$$\n-1<v<3\n$$\n\nThat matches the claimed open interval exactly. Numeric check: at $v=0$, $|0-1|=1<2$; at $v=4$, $|4-1|=3\\nless2$.\n\nConcrete check for the rewritten claim. Solution set is $(-1,3)$.\n\nSo the statement is True.\n",
-        "**D.** → True\n\nExpand $(s+t)^{3}$ and identify the sum with the third letter $u$.\n\nCube the sum:\n\n$$\n(s+t)^{3}=s^{3}+3s^{2}t+3st^{2}+t^{3}\n$$\n\n$$\n(s+t)^{3}=s^{3}+t^{3}+3st(s+t)\n$$\n\nReplace $s+t$ by $u$:\n\n$$\nu^{3}=s^{3}+t^{3}+3stu\n$$\n\nRearrange:\n\n$$\ns^{3}+t^{3}+3stu=u^{3}.\n$$\n\nSo the statement is True.\n",
-        "**E.** → True\n\nCompare the fraction with $1$ by subtracting on the domain $z>1$.\n\n$$\nz>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}>1\n$$\n\n$$\n\\dfrac{z+1}{z-1}-1=\\dfrac{(z+1)-(z-1)}{z-1}\n$$\n\n$$\n\\dfrac{2}{z-1}\n$$\n\nFor $z>1$ the denominator is positive, so $\\dfrac{2}{z-1}>0$, hence $\\dfrac{z+1}{z-1}>1$.\n\nSo the statement is True.\n"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 142,
       "solution_overview": "",
       "placeholder": false
     },
