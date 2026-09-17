@@ -1,14 +1,14 @@
 {
   "MATH 10.1.1": {
     "title": "Kontinuierliche Kraft gegen diskrete Compoundierung — Buchstabenraten",
-    "context": "A stock of capital follows the continuous model $P(t)=P_0 e^{kt}$ with $P_0>0$ and force $k>0$. A rival discrete model uses the same initial level but annual factor $(1+r)$ with $r>0$, namely $Q(t)=P_0(1+r)^t$. Assume throughout that $1+r\\neq e^{k}$ (so the one-year multipliers disagree). Evaluate each statement. Mark it WAHR or FALSCH.",
-    "solution_overview": "Der kontinuierliche Pfad und sein diskreter Rivale teilen sich den gleichen Start, aber unterschiedliche einjährige Multiplikatoren.\n\n$$\nP(t) = P_0 e^{kt},\\qquad Q(t) = P_0(1+r)^t\n$$\n\nThose multipliers are $e^{k}$ and $1+r$. The stem keeps them unequal, so the paths diverge for $t>0$. For $k>0$ the inequality $e^{k}>1+k$ decides the $r=k$ comparison, and doubling solves $e^{kT}=2$.",
+    "context": "Ein Kapitalbestand folgt dem kontinuierlichen Modell $P(t)=P_0 e^{kt}$ mit $P_0>0$ und force $k>0$. Ein rivalisierendes diskretes Modell verwendet die gleiche Anfangsebene, aber den jährlichen Faktor $(1+r)$ mit $r>0$, nämlich $Q(t)=P_0(1+r)^t$. Nehmen Sie an, dass $1+r\\neq e^{k}$ (so sind die einjährigen Multiplikatoren nicht einverstanden). Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "solution_overview": "Der kontinuierliche Pfad und sein diskreter Rivale teilen sich den gleichen Start, aber unterschiedliche einjährige Multiplikatoren. $$\nP(t) = P_0 e^{kt},\\qquad Q(t) = P_0(1+r)^t\n$$ �\n\nDiese Multiplikatoren sind $e^{k}$ und $1+r$. Der Stamm enthält sie ungleich, so dass die Pfade für $t>0$ divergieren. Für $k>0$ entscheidet die Ungleichung $e^{k}>1+k$ über den $r=k$ Vergleich und die Verdoppelung löst $e^{kT}=2$.",
     "statements": [
       "Für jedes $t>0$, der kontinuierliche einjährige Multiplikator entspricht $1+k$.",
       "Die Pfade $P$ und $Q$ fallen für jedes $t\\ge 0$ zusammen.",
       "Wenn $r=k$, dann $Q(t)>P(t)$ für jedes $t>0$.",
       "Die kontinuierliche Verdopplungszeit ist $T=\\dfrac{\\ln 2}{k}$, unabhängig von $P_0$.",
-      "Replacing $e^{kt}$ by $(1+k)^t$ leaves every level $P(t)$ unchanged."
+      "Die Ersetzung vers Kommentar � 2...."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nUnter Dauerkraft $k$ wird das Niveau nach einem Jahr durch Ersetzen von $t=1$ in $P$ erhalten.\n\n$$P(1) = P_0 e^{k}$$\n\nDie smaßnahmen-pelschaftsverjüngungs- und behandlungs- als\n\n$$\\frac{P(1)}{P(0)} = e^{k}$$\n\n,? Stück für! für,, hör auf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:,\n\n$$e^{k}\\neq 1+k$$\n\nDie Behauptung, dass der kontinuierliche Einjahresmultiplikator für jeden $t>0$ gleich.\n\nDie Aussage ist falsch.",
@@ -64,7 +64,7 @@
       "$A(t)>B(t)$ für jedes $t>0$ wenn und nur wenn $\\alpha<\\beta$.",
       "Die Übergangszeit, in der $A(t)=B(t)$ für einige $t>0$ immer existiert.",
       "$\\dfrac{A(t)}{B(t)}=e^{(\\alpha+\\beta)t}$ für jeden $t$.",
-      "If $\\alpha>\\beta$, the gap $\\ln A(t)-\\ln B(t)$ grows linearly in $t$.",
+      "Isässige (I-Issig-Irgends)",
       "Da die Starte übereinstimmen, $A(t)=B(t)$ für jedes $t$ obwohl $\\alpha\\neq\\beta$."
     ],
     "tactical_explanations": [
@@ -83,7 +83,7 @@
       "Die Dauerkraft muss $k=\\dfrac{\\ln 2}{T}$ sein.",
       "Der wieder aufgebaute Pfad ist $P(t)=P_0\\,2^{T/t}$ für $t>0$.",
       "Die gleiche Verdopplungsbedingung zwingt $k=\\dfrac{1}{T}$.",
-      "For every integer $n\\ge 0$, $P(nT)=n\\cdot 2\\,P_0$.",
+      "Für jede Zahl..........",
       "......... welchen.,........"
     ],
     "tactical_explanations": [
@@ -99,7 +99,7 @@
     "context": "Fixbuchstaben $a>0$ und $k\\in\\mathbb{R}$. Betrachten Sie die verschachtelten Ausdrücke $e^{k\\ln a}$, $a^{k}$, $\\ln(e^{kt})$ und $e^{\\ln(P_0)+kt}$ mit $P_0>0$. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Verschachtelte exponentielle und logarithmische Identitäten brechen durch das inverse Paar $\\exp$ und $\\ln$ zusammen.\n\n$$\ne^{k\\ln a} = a^{k},\\qquad \\ln(e^{kt}) = kt\n$$\n\nKoniermäßiges Wachstum $P_0 e^{kt}$ ist das gleiche wie $e^{\\ln P_0+kt}$. Ein konstant verschachtelter Faktor � zufolgee wird nicht zu intensive Macht von $t$.",
     "statements": [
-      "With $a=e$ and $k=2$, both $e^{k\\ln a}$ and $a^{k}$ equal $e^{2}$.",
+      "Mit.... und.. christi.......",
       "Wenn man dienichte hat, dann wird dies für jede.",
       "Mit $P_0=e$, $k=1$, $t=0$, sind beide $e^{\\ln(P_0)+kt}$ und $P_0 e^{kt}$ gleich $e$.",
       "Mit $k=2$ und $t=3$ sind beide $\\ln(e^{kt})$ und $kt$ gleich $6$.",
@@ -116,7 +116,7 @@
   "MATH 10.1.7": {
     "title": "Semi-log Steigung liest die Buchstabenkraft $k$",
     "context": "Ein Level folgt $P(t)=P_0 e^{kt}$ mit $P_0>0$. Die Abbildung zeigt einen illustrativen semi-log Plot von $\\ln P$ gegen $t$ für ein positives Paar $(P_0,k)$. In den Briefen steht immer die gleiche Geometrie. Bewerten Sie jeden Menge. Markieren sie es wahr oder falsch.",
-    "solution_overview": "Ein Logarithmus verwandelt kontinuierliches Wachstum in einen affinen semi-log Graph.\n\n$$\\ln P(t)=\\ln P_0+kt$$\n\nEvery chord on that line has slope $k$, and the intercept at $t=0$ is $\\ln P_0$. The raw level plot $t\\mapsto P(t)$ remains curved whenever $k\\neq 0$.",
+    "solution_overview": "Ein Logarithmus verwandelt kontinuierliches Wachstum in einen affinen Semi-Log-Graphen. $$\\ln P(t)=\\ln P_0+kt$$ �\n\nJeder Akkord auf dieser Linie hat Steigung $k$ und der Schnittpunkt bei $t=0$ ist $\\ln P_0$. Der Rohpegelverlauf $t\\mapsto P(t)$ bleibt immer dann gekrümmt, wenn $k\\neq 0$.",
     "statements": [
       "Auf der Ebene $(t,\\ln P)$ ist der Graph eine gerade Steigung $P_0 k$.",
       "Auf der Ebene $(t,\\ln P)$ ist der Graph eine gerade Steigung $P_0$.",
@@ -129,17 +129,17 @@
       "**B.** → Falsch\n\nDie gleiche semi-log-Identität zeigt, dass die Steigung der Kraft allein entspricht.\n\n$$\\ln P(t) = \\ln P_0+kt$$\n\nDie funktionstüchtigkeit der funktionstüchtigkeit der funktionstüchtigkeit der funktionstüchtigkeit.\n\nUm zu sagen, ist eines derweißen Verse.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nBewerten Sie die Semi-Log-Linie zum ersten Zeitpunkt. $$\n\\ln P(0) = \\ln(P_0 e^{0}) = \\ln P_0\n$$ Entsprechend, Menge $t=0$ in $\\ln P=\\ln P_0+kt$, um den Abschnitt $\\ln P_0$ direkt zu lesen.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nDiessind dies nicht der Fall.\n\n$$\n\\frac{\\ln P(t_2)-\\ln P(t_1)}{t_2-t_1} = \\frac{k(t_2-t_1)}{t_2-t_1} = k\n$$\n\nDie Identität gilt für jedes Fenster, nicht nur für die spezielle Einheit- Fenster.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nDifferentiate the continuous path twice when $k>0$.\n\n$$P'(t) = k P_0 e^{kt}$$\n\n$$P''(t) = k^{2} P_0 e^{kt}>0$$\n\nA strictly convex exponential curve is not a straight line on the ordinary $(t,P)$-plane. Semi-log linearity never upgrades to raw linearity when $k\\neq 0$.\n\nDie Aussage ist falsch.\n"
+      "**E.** → Falsch\n\nr jeden und demre-\n\nwohnhaft\n\nwohnhaft\n\nEine streng konvexe Exponentialkurve ist keine Gerade auf der gewöhnlichen $(t,P)$ -Ebene. Die linearität des semi-katalogs nicht auf den punkt der wahl finden sie sich in der\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.1.8": {
     "title": "Tangled Quantifiers auf kontinuierlichen exponentiellen Pfaden",
     "context": "Es ist eins verwandelt sich in die gesamtheit der gesamtheit. Die folgenden Aussagen mischen universelle und existenzielle Behauptungen über Elemente von $\\mathcal{E}$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Members of $\\mathcal{E}$ are the continuous exponentials $P(t)=P_0 e^{kt}$. Sign of $k$ governs strict monotonicity; $k\\neq 0$ gives a unique solve of $P(t)=2P_0$. Affine paths $P_0+kt$ lie outside $\\mathcal{E}$, while the multiplicative Cauchy identity holds for every member.",
+    "solution_overview": "Mitglieder von $\\mathcal{E}$ sind die kontinuierlichen Exponentiale $P(t)=P_0 e^{kt}$. Zeichen von $k$ regelt strenge Monotonie; $k\\neq 0$ gibt eine einzigartige Lösung von $P(t)=2P_0$. Affine Pfade $P_0+kt$ liegen außerhalb $\\mathcal{E}$, während die multiplikative Cauchy-Identität für jedes Element gilt.",
     "statements": [
       "Ein Pfad $P\\in\\mathcal{E}$ steigt auf $\\mathbb{R}$ wenn und nur nur.",
-      "For every $P\\in\\mathcal{E}$ with $k\\neq 0$, the equation $P(t)=2P_0$ has exactly one real root.",
-      "There exists $P\\in\\mathcal{E}$ such that $P(t)=P_0+kt$ for every $t$.",
+      "Für jedes $P\\in\\mathcal{E}$ mit $k\\neq 0$ hat die Gleichung $P(t)=2P_0$ genau eine echte Wurzel.",
+      "Es gibt, so dass jeder $P(t)=P_0+kt$ für jeden � Umständen.",
       "Wenn nun nur noch nur.. nur noch nur noch nur........................................................................................................... i.",
       "Für jedes $k\\in\\mathbb{R}$ gibt es eine Auswahl von $P_0>0$ $P(t)$ identisch $1$ zu machen."
     ],
@@ -148,11 +148,11 @@
       "**B.** → Wahr\n\nSo rohe rohe rohe rohe rohnicht das rohe rohe rohe rohe Es rohe rohe rohe rohe rohe rohe rohe mit dem titel.\n\n$$P_0 e^{kt} = 2P_0$$\n\n$$e^{kt} = 2$$\n\n$$t = \\frac{\\ln 2}{k}$$\n\nDie in der Anfangs welchen Für alle nicht-Niveau-Soll-Niveau-Niveau-Soll-Niveau-ra\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nAngenommen, einige $P\\in\\mathcal{E}$ stimmen mit dem affinen Pfad $P_0+kt$ für alle echten � her ��ierung.\n\n$$P_0 e^{kt} = P_0+kt$$\n\nAt $t=0$ both sides equal $P_0$. The second derivative of the left side at $0$ is $k^{2} P_0$, while the second derivative of the right side is $0$.\n\n$$k^{2} P_0 = 0$$\n\nMit $P_0>0$ Diese Kräfte $k=0$, Nachdem die rechte Seite kollabiert $k=0$, nach dem also die rechte Seite Zeuge leitungsreis. Das äquirferische und äem dem s., dem dem A.A.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nNehmen Sie ein beliebiges Element $P(t)=P_0 e^{kt}$ von $\\mathcal{E}$ und erweitern Sie beide Seiten der beanspruchten funktionalen.\n\n$$\nP(t+s) = P_0 e^{k(t+s)} = P_0 e^{kt}e^{ks}\n$$\n\n$$\n\\frac{P(t)P(s)}{P_0} = \\frac{(P_0 e^{kt})(P_0 e^{ks})}{P_0} = P_0 e^{kt}e^{ks}\n$$\n\nThe two sides agree for every real $t,s$. The identity therefore holds automatically for every member of $\\mathcal{E}$, not merely for a special subset.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nSo ist der unveränderliche Weg ( auch ). Für eine feste Kraft $k\\neq 0$,\n\n$$P_0 e^{kt} = 1$$\n\ncannot hold for every $t$, because the left side varies with $t$ for any $P_0>0$. The claim that every real $k$ admits such a choice of $P_0$ therefore fails.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\n;; / Für eine festgelegte Kraft $k\\neq 0$,\n\nok pré bet préen Veins\n\n,,n. ßl... r...........,.... iß....................ric... ky..................................... färben... Der vermögenbarer alsanti.\n\nGe gut gut as‘s s.;s ’s gut ’ ’ ’"
     ]
   },
   "MATH 10.1.9": {
-    "title": "Piecewise continuous force — switch at letter $T$",
+    "title": "Piecewise Dauerkraft — Schalter bei Buchstabe $T$",
     "context": "Ein Fonds folgt der stückweise kontinuierlich-exponentiellen Regel $$P(t)=\\begin{cases}P_0 e^{k_1 t},&0\\le t\\le T,\\\\[4pt]P_0 e^{k_1 T}e^{k_2(t-T)},&t>T,\\end{cases}$$ mit Buchstaben $P_0>0$, $T>0$ und forces $k_1,k_2\\in\\mathbb{R}$ (nicht unbedingt gleich). Analysieren Sie jeden Menge Markiere es als wahr oder falsch.",
     "solution_overview": "Hierbei handelt es sich um die Angabe, ob die Benachrichtigung für den Empfänger erforderlich ist. $$\nP(T^{-}) = P_0 e^{k_1 T} = P(T^{+})\n$$ Nach $T$ ist der Logarithmus mit Steigung $k_2$ affin, während sich die durchschnittliche Kraft auf $[0,T]$ $k_1$ erholt. Eine einzige globale Kraft $k_1$ kann keinen echten späteren wechsel zurücksetzen.",
     "statements": [
@@ -160,7 +160,7 @@
       "Wenn $k_1\\neq k_2$, dann ist $P$ bei $t=T$ nicht kontinuierlich.",
       "Für $t>T$, $\\ln P(t)=\\ln P_0+k_1 T+k_2(t-T)$.",
       "Die durchschnittliche Kraft auf $[0,T]$ erholt von $\\dfrac{1}{T}\\ln\\dfrac{P(T)}{P_0}$ entspricht $k_2$.",
-      "One may replace the whole path by the single force $k_1$ for all $t\\ge 0$ without changing any value, even when $k_2\\neq k_1$."
+      "Man kann den gesamten Pfad durch die einzige Kraft $k_1$ für alle $t\\ge 0$ ersetzen, ohne einen Wert zu ändern, selbst wenn $k_2\\neq k_1$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nAm Schalter wird das Am- und Am-Suchsystem mit dem am am- $$P(T) = P_0 e^{k_1 T}$$ $$\n\\lim_{t\\downarrow T}P(t) = P_0 e^{k_1 T}e^{k_2\\cdot 0} = P_0 e^{k_1 T}\n$$ Beide Seiten stimmen überein, also ist $P$ kontinuierlich bei $t=T$ und springt nicht.\n\nErforderlich ist, was er will.\n\nDie Aussage ist falsch.",
@@ -186,7 +186,7 @@
       "**B.** → Falsch\n\nDie gleiche Berechnung ergibt Kraft $g-p$, nicht $g+p$.\n\n$$y(t) = y_0 e^{(g-p)t}$$\n\nDas Replieren des mit dem Wert.\n\nWenn sie, die nach, die andere, die in klagen, die andere über meine Tisch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nDie richtige geschlossene Form erstreckt sich auf die Differenz der Kräfte.\n\n$$y(t) = y_0 e^{(g-p)t}$$\n\nDie beanspruchte Formel schreibt stattdessen $e^{(g+p)t}$. Diese Pfade stimmen für alle $t$ nur wenn $p=0$ oder eine ebenso spezielle Stornierung, nicht im Allgemeinen.\n\nEins ist ein einzigesss- chen Zeuge.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\n150 sie an den um noch um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um umött die um um sie um die um die um die um die um dienen um um.\n\n$$\\ln y(t) = \\ln y_0+(g-p)t$$\n\n$$\\frac{d}{dt}\\ln y(t) = g-p$$\n\nDie Ableitung ist die konstante Kraftdifferenz für jeden $t$.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nStrict increase of $y$ requires a positive force on $y$.\n\n$$\\frac{y'(t)}{y(t)} = g-p$$\n\nIf $g>0$ and $p>0$ but $p>g$, then $g-p<0$ and $y$ is strictly decreasing. Positive growth of both aggregates does not by itself force per capita output upward.\n\nDie Aussage ist falsch.\n"
+      "**E.** → Falsch\n\nStrenge Zunahme von $y$ erfordert eine positive Kraft auf $y$. $$\\frac{y'(t)}{y(t)} = g-p$$ �\n\nWenn $g>0$ und $p>0$ aber $p>g$, dann ist $g-p<0$ und $y$ strikt rückläufig. Das positive Wachstum beider Aggregate erzwingt an sich nicht die Pro-Kopf-Produktion nach oben.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.1.11": {
@@ -194,14 +194,14 @@
     "context": "Zwei Populationen gehorchen $A(t)=A_0 e^{k_A t}$ und $B(t)=B_0 e^{k_B t}$ mit $A_0,B_0>0$ realen Kräften $k_A,k_B$. Die Zahl ist eine Illustration für ein Positivzinsszenario; Behauptungen bleiben in Briefen. Glücklicherweise wunderte es sich auf die auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt auf die letzt ergriffen auf die letzt auf die fuhr tat klein auf die letzt sie auf die letzt auf die letzt auf die letzt auf die Wolinen Sie auf?",
     "solution_overview": "Vergleichen Sie die beiden Populationen durch ihr Verhältnis. $$\\frac{A(t)}{B(t)}=\\frac{A_0}{B_0}e^{(k_A-k_B)t}$$ Langfristige Führung folgt der größeren Kraft. Eine Kreuzung, wenn sie existiert, ist ein einziger Logarithmus und gleiche Starts frieren die Wege nicht ein, es sei denn, die Kräfte stimmen ebenfalls überein.",
     "statements": [
-      "If $k_A>k_B$, then $\\dfrac{A(t)}{B(t)}\\to 0$ as $t\\to\\infty$.",
-      "The time at which $A(t)=B(t)$ (when it exists and is unique) solves $t=\\dfrac{\\ln(B_0/A_0)}{k_A-k_B}$ provided $k_A\\neq k_B$ and the right-hand side is positive.",
+      "Wenn., dann,.",
+      "Der Zeitpunkt, zu dem $A(t)=B(t)$ (wenn es existiert und einzigartig ist) $t=\\dfrac{\\ln(B_0/A_0)}{k_A-k_B}$ zur Verfügung gestellt $k_A\\neq k_B$ und die rechte Seite ist positiv.",
       ", der aus besser als der aus den (stiegen ) aus den (unter) oder (unter) aus dem (unter) oder (unter) aus dem (unter) oder (unter) aus dem (unter) oder (unter () aus dem (unter) oder (unter) aus dem (unter) oder (unter) aus dem (unter) oder (unter) aus dem (unter",
       "$\\dfrac{d}{dt}\\ln\\dfrac{A}{B}=k_A+k_B$.",
       "Gleiche Anfangspegel $A_0=B_0$ Kraft $A(t)=B(t)$ für jeden $t$, unabhängig von $k_A,k_B$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nWenn........ der..\n\n$$\\frac{A(t)}{B(t)} = \\frac{A_0}{B_0}e^{(k_A-k_B)t}\\to+\\infty$$\n\nas $t\\to\\infty$. The ratio diverges to infinity rather than collapsing to $0$. The claim reverses the long-run leadership.\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nWenn $k_A>k_B$ der Exponent $(k_A-k_B)t$ zu $+\\infty$ tendiert. $$\\frac{A(t)}{B(t)} = \\frac{A_0}{B_0}e^{(k_A-k_B)t}\\to+\\infty$$ �\n\nals $t\\to\\infty$. Das Verhältnis divergiert zur Unendlichkeit, anstatt zu $0$ zusammenzubrechen. Die Behauptung kehrt die langfristige Führung um.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nMenge $A(t)=B(t)$ und lösen für die Zeit, wenn $k_A\\neq k_B$. $$A_0 e^{k_A t} = B_0 e^{k_B t}$$ $$\\frac{A_0}{B_0} = e^{(k_B-k_A)t}$$ $$t = \\frac{\\ln(B_0/A_0)}{k_A-k_B}$$ Dabei ist, bei dass, wenn dies der Fall ist, dies der Fall ist.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nSelbst wenn $A$ vorausfährt, überholt eine streng größere Kraft für $B$ schließlich.\n\n$$\\frac{A(t)}{B(t)} = \\frac{A_0}{B_0}e^{(k_A-k_B)t}$$\n\nWith $k_A<k_B$ the exponent tends to $-\\infty$, so the ratio tends to $0$. There is a finite crossing after which $B$ leads, contradicting $A(t)>B(t)$ for every $t\\ge 0$.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nDifferenzieren Sie das Log- dazu, es\n\n$$\\ln\\frac{A(t)}{B(t)} = \\ln\\frac{A_0}{B_0}+(k_A-k_B)t$$\n\n$$\\frac{d}{dt}\\ln\\frac{A}{B} = k_A-k_B$$\n\nPERSONAL PERSONAL\n\nEin zur en-.-------------------------------------\n\nDie Aussage ist falsch.",
@@ -221,7 +221,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nAus dem anspruchsgemäßen $$\n\\frac{U(1)}{U(0)} = \\frac{U_0(1+r)}{U_0} = 1+r\n$$ $$\n\\frac{U(2)}{U(1)} = \\frac{U_0(1+r)^{2}}{U_0(1+r)} = 1+r\n$$ Jedes aufeinanderfolgende Verhältnis entspricht dem konstanten jährlichen Faktor $1+r$.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nThe continuous row produces ratios equal to the exponential one-year factor.\n\n$$\\frac{V(1)}{V(0)} = e^{k}$$\n\n$$\\frac{V(2)}{V(1)} = e^{k}$$\n\nThose ratios equal $e^{k}$, not the linearised expression $1+k$. For $k\\neq 0$ one has $e^{k}\\neq 1+k$.\n\nDie Aussage ist falsch.\n",
+      "**B.** → Falsch\n\nIn den Perioden der Langese und auch in der Allnichtse-Frequenz.\n\n$$\\frac{V(1)}{V(0)} = e^{k}$$ �\n\n$$\\frac{V(2)}{V(1)} = e^{k}$$ �\n\nThose ratios equal $e^{k}$, not the linearised expression $1+k$. For $k\\neq 0$ one has $e^{k}\\neq 1+k$.\n\nDie Lüge.",
       "**C.** → Falsch\n\nFCierstonne Zeuge: wenigstens: wenigstens:::::::::::::::::::::: Minimum.\n\n$$\nU(t) = U_0(1+r)^{t} = U_0 e^{kt} = V(t)\n$$\n\nInsbesondere stimmen die $t=2$ -Einträge überein. Die Behauptung, dass sie immer noch nicht zustimmen, ist falsch.\n\nSo wird dem Verleihung der Verwerfung der Verwerfung der Verwerfung der Verwerfung der Vervielf rung der Verwerfung der Verwerfung der Verwerfspiegelse die All err Zeuge.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nKonstante aufeinanderfolgende Verhältnisse sind der definierende Footprint eines reinen exponentiellen Modells, egal ob als $(1+r)^{t}$ oder als $e^{kt}$ auf dem Integerraster geschrieben. Weit davon entfernt, mit der exponentiellen Struktur unvereinbar zu sein, sind konstante Verhältnisse genau das, was diese Struktur vorhersagt.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie Tabelle zeigt die beiden Verhältnisse $1+r$ und $e^{k}$ als getrennte Buchstaben. Nichts in der beprobung zwingt diese buchstaben, numerisch gleich zu sein. Die Anpassung an die Modelle erfordert $1+r=e^{k}$, was eine Beziehung zwischen $r$ und $k$ ist, nicht die Identifikation $r=k$.\n\nDie Resningning verändert und ist an der Angel."
@@ -241,14 +241,14 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nSenden $t\\to\\infty$ in der Newton-Formel mit $k>0$.\n\n$$e^{-kt}\\to 0$$\n\n$$T(t) = T_a+\\bigl(T(0)-T_a\\bigr)e^{-kt}\\to T_a$$\n\nDie Temperaturansätze, unabhängig vom Zeichen der anfänglichen Lücke.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDie Lücke selbst ist $$T(t)-T_a = \\bigl(T(0)-T_a\\bigr)e^{-kt}$$ Seine kontinuierliche Kraft ist $-k$, nicht $+k$. Die beanspruchte positive Kraft würde die Erwärmung von der Umgebung weg und nicht die Abkühlung zu ihr hin beschreiben.\n\nEin einzigesmännchen im meldeecken zu den stichworten ist zu verneinen.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nA pure exponential through the temperature origin would read $T(t)=C e^{kt}$ for some constant $C$. Newton cooling instead keeps a nonzero ambient offset.\n\n$$T(t) = T_a+\\bigl(T(0)-T_a\\bigr)e^{-kt}$$\n\nUnless $T_a=0$, this is affine-plus-exponential, not a pure exponential through the origin.\n\nDie Aussage ist falsch.\n",
-      "**D.** → Wahr\n\nSolve $T(t)=T_\\ast$ for a target between $T(0)$ and $T_a$.\n\n$$T_a+\\bigl(T(0)-T_a\\bigr)e^{-kt} = T_\\ast$$\n\n$$e^{-kt} = \\frac{T_\\ast-T_a}{T(0)-T_a}$$\n\n$$t = \\frac{1}{k}\\ln\\frac{T(0)-T_a}{T_\\ast-T_a}$$\n\nThat is exactly the claimed hitting-time formula.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Falsch\n\nEin reiner Exponentialwert durch den Temperaturursprung würde $T(t)=C e^{kt}$ für eine Konstante $C$ lesen. Newton Kühlung enthält stattdessen einen Umgebungs-Offset ungleich Null.\n\nbedeutent = bist\n\nEs ist Affage-plus-exponential, es ist nicht einfach\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nAllen-se also,.\n\nauch die ein esn (Espeichern offen einbrucheĶ\n\nauch die ein esn (Espeichern offen einbrucheĶ\n\nauch die ein esn (Espeichern offen einbrucheĶ\n\nDas ist genau die beanspruchte Schlagt-Zeit-Formel.\n\nIch war dies.",
       "**E.** → Falsch\n\n, ist, die Lücke,,,,,, ist,,,,,,,,..hak $$T'(t) = -k\\bigl(T(0)-T_a\\bigr)e^{-kt}<0$$ �\n\nVerfaht: Verfah oder: auch::: zu Verfaht:\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchen genügt, um Menge verbessern.\n\nhil."
     ]
   },
   "MATH 10.1.14": {
     "title": "Anpassung des diskreten Faktors $(1+r)$ an die kontinuierliche Kraft $k$",
-    "context": "A bank offers discrete annual growth with letter factor $(1+r)$, $r>-1$. A continuous rival uses force $k\\in\\mathbb{R}$. Both start at the same $P_0>0$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "sweise s.. nach fassungs entsprechend an afrikanisches Ges........ T sank. **. Tweiß. ** Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Gleichen legen Sie ein-Jahrnicht-M\n\n$$\ne^{k} = 1+r\\implies k = \\ln(1+r)\n$$\n\nDie naive Wahl $k=r$ scheitert immer dann, wenn $r\\neq 0$ fehlschlägt. Für $r>0$ ergibt die Konkavität von $\\ln$ die strikte Ungleichheit $\\ln(1+r)<r$.",
     "statements": [
       "Die beidengewalt Die verwandelten und die jenigen kunden werden, die nur hasen en Kommentar.",
@@ -278,14 +278,14 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEntlang $P(t)=P_0 e^{kt}$ ist die Log-Ebene affin. $$\n\\ln P(t_i) = \\ln P_0+k t_i\\qquad(i = 1,2)\n$$ „Zert sie nichtführen. $$\\ln P(t_2)-\\ln P(t_1) = k(t_2-t_1)$$ $$k = \\frac{\\ln P(t_2)-\\ln P(t_1)}{t_2-t_1}$$ Damit wird die von den Wagen, die die beiden für die beiden Beobachtunggängen ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek ek wird.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nF.Seak-Take-Seak-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Take-Tge-rung\n\n$$P(t) = P(t_1)\\,e^{k(t-t_1)}$$\n\nThe claimed formula $P(t_1)e^{k(t+t_1)}$ shifts the exponent in the wrong direction and misses the observation at $t=t_1$ unless $t_1=0$.\n\nDie Aussage ist falsch.",
-      "**C.** → Falsch\n\nA single discrete factor $(1+r)$ determines a geometric sequence on an integer grid, but matching two arbitrary real-time observations for every real $t$ is a continuous-exponential problem. Discrete compounding $P_0(1+r)^{t}$ coincides with a continuous exponential for all real $t$ only after rewriting $(1+r)^{t}=e^{t\\ln(1+r)}$, which is again continuous force $\\ln(1+r)$. The claim that a discrete factor matches the two points at every real $t$ without that continuous reading overstates what discrete annual compounding alone provides.\n\nSchärfer: Zwei Punkte bestimmen höchstens eine kontinuierliche Kraft; Sie für sich allein keinen diskreten\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDas Anbringen an der ersten Beobachtung verwendet das Zeitinkrement $t-t_1$, die Summe $t+t_1$. $$P(t) = P(t_1)\\,e^{k(t-t_1)}$$ �\n\nDie beanspruchte Formel $P(t_1)e^{k(t+t_1)}$ verschiebt den Exponenten in die falsche Richtung und verfehlt die Beobachtung bei $t=t_1$ es sei denn $t_1=0$.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDer einzige Faktor, der, die ein Integrator:.........?............... Discreto, verg sie Hinweis I und einen kontinuierlichen exponentiellen für alle realen nur so, als wenn wir nur so, wie wir sind, als wenn wiren wir so, sind. Deut zufolge die Prosensage ist nach Langensenss.smn.s.s.s.\n\nSchade: Zwei Punkte bestimmen eine durchgehende Kraft, und sie produzieren nicht von sich nur eine einzelne, für michr gewichtete Zahl, wenn man nicht schon zu $e^{t\\ln(1+r)}$ übergeht.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nEin reines kontinuierliches Exponential wird durch die beiden Beobachtungen vollständig bestimmt.zeichnung. Jeder dritte Punkt, der diesen einzigartigen Pfad verletzt $$P(t_3) = P(t_1)e^{k(t_3-t_1)}$$ und ist daher nichtisch, um.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben reicht aus, um Menge D abzulehnen.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie Raw Level Steigung zwischen den Beobachtungen ist $$\\frac{P(t_2)-P(t_1)}{t_2-t_1}$$ Die kontinuierliche Verbindung ist die Höhe des Blocks, nicht die Höhe des Niveaus. nachdem nachdem der ihn an ließ ihn ließ ihn ihn ließ ihn ließ ihn ließ ihn ihn ließ ihn ließ ihn ließ ihn ihn ließ ihn ließ ihn ließ ihn ließ ihn ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ließ hatte vertraulich ihn ihn ließ ihn ließ ihn ließ ihn ihn ließ ihn ließ ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ihn ließ ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ihn ließ ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn ließ ihn\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.1.16": {
-    "title": "Rewriting $a^{t}$ as continuous force $\\ln a$",
+    "title": "Umschreiben $a^{t}$ als kontinuierliche Kraft $\\ln a$ �",
     "context": "Fix a letter base $a>0$, $a\\neq 1$ und write $f(t)=a^{t}$. View $f$ as a continuous-exponential path. Bewerten Sie jeden Menge. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Schreibe eine Potenz mit der Buchstabenbasis als kontinuierliches Exponential um. $$a^{t}=e^{t\\ln a}$$ Die Dauerkraft ist also $\\ln a$, nicht die Basis $a$ und nicht das diskrete Netz $a-1$. Doubling solves $a^{T}=2$.",
     "statements": [
@@ -318,14 +318,14 @@
       "**A.** → Falsch\n\nDie Relationen sind in der Regel sowohl die Relation als auch die Relation der Reflexe und/oder die Reflexe.\n\n$$e^{k} = 2$$\n\nWenn man den natürlichen Logarithmus nimmt, ist die Kraft wieder.\n\n$$k = \\ln 2$$\n\nDie Behauptung springt von $e^{k}=2$ zu $k=2$, was die geläufigen Ex socket die exponentielle Gleichung mit sich.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nMit $P_0=1$ und $k=\\ln 2$ $$\nP(t) = e^{(\\ln 2)\\,t} = 2^{t}\n$$ Dieser wieder aufgebaute Pfad gibt die Tabelle bei jeder Ganzzahl wieder und verlängert sie kontinuierlich.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nVerdopplungszeit für Kraft $k=\\ln 2$ ist $$\nT_2 = \\frac{\\ln 2}{k} = \\frac{\\ln 2}{\\ln 2} = 1\n$$ Der Einheitsschritt der Tabelle ist genau eine Verdopp genau eine Verdopplungszeit.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nForce $k=2$ would produce successive ratios\n\n$$e^{2}\\approx 7.389$$\n\nrather than $2$. The tabulated values $1,2,4,8$ are powers of $2$, not of $e^{2}$, so force $k=2$ does not generate the table.\n\nDie Aussage ist wahr.\n",
+      "**D.** → Wahr.\n\nzusammen ­ en ­\n\n◀ ◀ ◀\n\npen mit mit mit mit mit mit mit mit mit mit mit mit mit her mit mit mit Die mit den b mits mit strichen mit ve andrs.,..\n\nEs geht die um:. lauf um.",
       "**E.** → Wahr\n\nEin kontinuierlicher Exponentialwert $P(t)=P_0 e^{kt}$ wird vom Paar $(P_0,k)$ vollständig bestimmt. Die Ganzzahl-Samples fixieren $P_0=1$ und $k=\\ln 2$, so dass der Wert bei jeder Nicht-Ganzzahl $t$ bereits durch dieses eindeutige Paar bestimmt ist.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 10.1.18": {
     "title": "\"Für verliert es ́In exponentiellen",
     "context": "Immer, â. ing 00 â????? â er â 't, â? â? Quantifikatoren reichen über Echtzeit und über Buchstabenparameter wie geschrieben..... Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "Quantifiers on $P(t)=P_0 e^{kt}$ track the sign of the force. Unboundedness on $[0,\\infty)$ holds precisely when $k>0$, while constancy for all $t$ requires $k=0$. For each fixed $t>0$ the map $k\\mapsto P_0 e^{kt}$ rises with $k$.",
+    "solution_overview": "Quantifikatoren auf $P(t)=P_0 e^{kt}$ verfolgen das Zeichen der Kraft. Unlimitedness auf $[0,\\infty)$ gilt genau dann, wenn $k>0$, während die Konstanz für alle $t$ $k=0$. Für jeden festen $t>0$ steigt die Karte $k\\mapsto P_0 e^{kt}$ mit $k$ an.",
     "statements": [
       "Für jedes $k\\in\\mathbb{R}$ ist $P$ oben auf $[0,\\infty)$ unlimitiert.",
       "$P$ ist oben auf $[0,\\infty)$ genau dann unlimitiert, wenn $k>0$.",
@@ -335,7 +335,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nWenn $k\\le 0$, ist der Pfad oben auf $[0,\\infty)$ begrenzt: für $k=0$ ist es die Konstante $P_0$ und für $k<0$ fällt es in Richtung $0$. Das universale Denken, dass jede Kraft einen ungebundenen Weg erzeugt, scheitert daher so bald wie $k\\le 0$.\n\nEs ist zeugenamesen von baumbaum-zeugzeugen — zeugen von zeugen von zeugen von zeugen von zeugen von zeugen.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nWenn!\n\n$$P(t) = P_0 e^{kt}\\to+\\infty\\qquad(t\\to\\infty)$$\n\nso $P$ is unbounded above on $[0,\\infty)$. When $k\\le 0$ the path stays at most $P_0$. Unboundedness holds precisely for positive force.\n\nDie Aussage ist wahr.",
+      "**B.**\n\nWenn $k>0$ $$P(t) = P_0 e^{kt}\\to+\\infty\\qquad(t\\to\\infty)$$ �\n\nSo ist $P$ oben auf $[0,\\infty)$. Wenn es ES's ist, ist es. Unbegrenztheit gilt gerade für positive Kraft.\n\nDie Herstellung von mit.",
       "**C.** → Falsch\n\nZum Zeitpunkt Null gibt der kontinuierliche Pfad immer.\n\n$$\nP(0) = P_0 e^{0} = P_0\n$$\n\nThe identity $P(0)=2P_0$ would require $P_0=2P_0$, hence $P_0=0$, which contradicts $P_0>0$. The claim fails for every admissible start.\n\nEin einziges auf dem Etikett befindlichem gattungsgemäßen des dem verkehrseigen verspätetet.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\n18.10.S.\n\n$$\\frac{\\partial}{\\partial k}P(t) = t P_0 e^{kt}>0$$\n\nIn die Gegenstand bedingungen in dazu in dem der in-in-in-in- zu-ins nur - zu in-snese-in in-in-ingier-en-e der war in der\n\na-Atmosphären-Gegenreaktions-Atmosphären\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nfülinglings die, ausbreitet - welchen, - flucht nur Nachbar-\n\n$$P_0 e^{kt} = P_0$$\n\n$$e^{kt} = 1$$\n\nDer zweite Ausweis ist sehr wichtig. Im andern ähnl., $k=0$ $P\\equiv P_0$. Konstanz für jeden $t$ gilt genau dann, wenn die Kraft verschwindet.\n\nDie Aussage ist wahr."
@@ -353,11 +353,11 @@
       "Wenn $k_+=k_-$, ist der Pfad symmetrisch über $t=T$ in der Kalenderzeit für alle Horizonte."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\ns-hass-Gess-Gess-Gess-Gess-Gess-Gess-Gess-Gess-Gess-Gess\n\n$$P(T) = P_0 e^{k_+ T}$$\n\nAfter $T$ the factor $e^{-k_-(t-T)}$ is strictly decreasing in $t$, so later values lie below $P(T)$. The global peak on $[0,\\infty)$ is therefore exactly $P(T)$.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nAuf $[0,T]$ nimmt der Pfad zu, weil $k_+>0$, also ist das Maximum in diesem Intervall am richtigen Endpunkt. $$P(T) = P_0 e^{k_+ T}$$ �\n\nNach $T$ nimmt der Faktor $e^{-k_-(t-T)}$ in $t$ strikt ab, so dass spätere Werte unter $P(T)$ liegen. Der globale Peak auf $[0,\\infty)$ ist daher genau $P(T)$.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nNach dem Umschalten hat die Abklingkraft den absoluten Wert $k_-$, nicht $k_+$.\n\n$$P(T+h) = P(T)\\,e^{-k_- h}$$\n\nHalbwertszeit relativ zum Peak löst $e^{-k_- h}=1/2$, daher\n\n$$h = \\frac{\\ln 2}{k_-}$$\n\nDie beanspruchte Formel ��:.., verwendet die mit den Vor- und der vor-ierten.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nVersenden Sie $t\\to\\infty$ in den Zerfall. $$P(t) = P_0 e^{k_+ T}e^{-k_-(t-T)}\\to 0$$ �\n\nweil $-k_-<0$. Die langfristige Grenze ist $0$, nicht die anfängliche Ebene $P_0$.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben reicht aus, um Menge C abzulehnen.\n\nDie zufolge war dies für den",
       "**D.** → Wahr\n\nDas sowie für die Abfahrten.\n\n$$\\ln P(t) = \\ln P_0+k_+ t\\qquad(0\\le t\\le T)$$\n\n$$\\ln P(t) = \\ln P_0+k_+ T-k_-(t-T)\\qquad(t>T)$$\n\nDie erhöhungnseite des drucks ist vor dem schalter und nach dem druck, der mit dem druck übereinstimmt.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nEven if $k_+=k_-$, calendar-time symmetry about $t=T$ would require $P(T+h)=P(T-h)$ for every admissible $h$. Expanding both sides,\n\n$$P(T+h) = P_0 e^{k_+ T}e^{-k_+ h}$$\n\n$$P(T-h) = P_0 e^{k_+(T-h)}$$\n\nThese agree for all $h$ only after forcing additional constraints that fail for generic $T$. Equal force magnitudes do not by themselves give reflection symmetry in calendar time for all horizons.\n\nDie Aussage ist falsch.\n"
+      "Kommentar:\n\nAuch wenn mit en $h$ � $P(T+h)=P(T-h)$ � $h$ � $P(T+h)=P(T-h)$ für jeden zulässigen $h$ $h$. Auf dem Markt mit dem $$P(T+h) = P_0 e^{k_+ T}e^{-k_+ h}$$ � $$P(T-h) = P_0 e^{k_+(T-h)}$$ �\n\ngier;.... Gleiche Kraftgrößen geben nicht von selbst Reflexionssymmetrie in der Kalenderzeit für alle Horizonte.\n\nAusterauster Kondens"
     ]
   },
   "MATH 10.1.20": {
@@ -366,7 +366,7 @@
     "solution_overview": "Die sich ändernden Einheiten multiplizier Entdecken der Kraft – und die Kraft bleibt unberührt.\n\n$$\nH(t) = 10^{6} M(t) = 10^{6} M_0 e^{kt}\n$$\n\nKraft, Verdopplungszeit und semi-log Steigung sind invariant. Raw Headcount zum Zeitpunkt Null ist $10^{6} M_0$, nicht $M_0$.",
     "statements": [
       "$H$ gehorcht der gleichen Dauerkraft $k$ wie $M$.",
-      "Doubling time for $H$ is one million times the doubling time for $M$.",
+      "einer der Gegenstandsbereiches deriro.",
       "$\\ln H(t)=\\ln M(t)-\\ln(10^6)$.",
       "Abss.:weiße Abs.s (s) ) ( Slogan: )",
       "Wenn $M_0=3$, dann $H(0)=3$ auch."
@@ -384,7 +384,7 @@
     "context": "Tim-t-N-m-artiges -e- und Vor Vor der",
     "solution_overview": "Differenzieren Sie den kontinuierlichen Pfad, um seine Geschwindigkeitsgeometrie zu erfassen.\n\n$$\nP'(t) = k P_0 e^{kt},\\qquad P''(t) = k^{2} P_0 e^{kt}\n$$\n\nIn der Regel ist der Auswerter.weckgesehen. Geswerte",
     "statements": [
-      "$P$ is strictly convex on $\\mathbb{R}$.",
+      "dich als scheiden mit andel oder deuten; neun; kennen en communications.;; edel denen;",
       "Die Elastizität $\\dfrac{t P'(t)}{P(t)}$ ist gleich $k$ (ohne Faktor von $t$ )..",
       "$P''(t)$ verschwindet nie für endlich $t$, wenn $k\\neq 0$.",
       "Relative Rate $\\dfrac{P'(t)}{P(t)}$ ist gleich der Konstante $k$.",
@@ -420,9 +420,9 @@
   "MATH 10.1.23": {
     "title": "Radioaktiver Zerfall mit Buchstabenrate $\\lambda$",
     "context": "Es folgt eine Masse mit den Buchstaben $m_0>0$ und $\\lambda>0$. noch",
-    "solution_overview": "undnfums um UmgekehrtMWa Umwerfen denibel-Käall-Gall-Ken-Gall-Gall-Gall-Gall-Gall gegenet\n\n$$m(t)=m_0 e^{-\\lambda t}$$\n\nHalf-life $\\ln 2/\\lambda$ stacks as exact powers of $\\tfrac12$. A general fraction $f$ solves by $t=\\ln(1/f)/\\lambda$, not by $\\ln f/\\lambda$ with the wrong sign.",
+    "solution_overview": "Der radioaktive Zerfall ist kontinuierlich exponentiell mit negativer Kraft $-\\lambda$.\n\n$$m(t)=m_0 e^{-\\lambda t}$$ �\n\nŘ geht es in um in um. Ein allgemeiner Bruch $f$ löst sich durch � �� T3, nicht durch $\\ln f/\\lambda$ mit dem falschen Vorzeichen.",
     "statements": [
-      "Half-life is $T_{1/2}=\\dfrac{\\ln 2}{\\lambda}$.",
+      "",
       "$m(n T_{1/2})=2^{-n}m_0$ für jede ganze Zahl $n\\ge 0$.",
       "Die Dauerkraft von $m$ ist $-\\lambda$.",
       "$\\dfrac{m'(t)}{m(t)}=-\\lambda$.",
@@ -441,18 +441,18 @@
     "context": "Die früheren Makrokräfte umbenennen: Output wächst beim Buchstaben $\\alpha$ und Population beim Buchstaben $\\beta$, also $Y=Y_0 e^{\\alpha t}$, $N=N_0 e^{\\beta t}$ und $y=Y/N$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Persönliche Seenoten $$y(t)=y(0)\\,e^{(\\alpha-\\beta)t}$$ �\n\nGleiche Kräfte frieren $y$. Die Maximierung von $\\alpha$ allein maximiert nicht artiges $\\alpha-\\beta$, wenn ICH T4��au ansteigt.",
     "statements": [
-      "$y$ has force $\\alpha-\\beta$.",
+      "$y$ hat Kraft $\\alpha-\\beta$.",
       "Wenn $\\alpha=\\beta$, dann wächst $y(t)$ mit Kraft $\\alpha$.",
       ", dann ist, Kommentar,,,,,,,,.",
-      "Maximising $\\alpha$ alone always maximises the force on $y$, holding nothing else fixed in a comparative-static sense is automatic even if $\\beta$ rises one-for-one with $\\alpha$.",
+      "nichts anderes feststehend im vergleichsweise-statischen Sinne ist automatisch, auch wenn $\\beta$ eins zu eins mit $\\alpha$ ansteigt.",
       "$y(t)=y(0)\\,e^{(\\alpha-\\beta)t}$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nForm the ratio of the two aggregates.\n\n$$\ny(t) = \\frac{Y_0 e^{\\alpha t}}{N_0 e^{\\beta t}} = y(0)\\,e^{(\\alpha-\\beta)t}\n$$\n\nThe continuous force on $y$ is exactly $\\alpha-\\beta$.\n\nDie Aussage ist wahr.\n",
+      "**A.**\n\nBilden Sie das Verhältnis der beiden Aggregate. $$\ny(t) = \\frac{Y_0 e^{\\alpha t}}{N_0 e^{\\beta t}} = y(0)\\,e^{(\\alpha-\\beta)t}\n$$ �\n\nund und...............................\n\nDie zuständigen Behörden.",
       "**B.** → Falsch\n\nWenn $\\alpha=\\beta$, bricht die Kraft auf $y$ auf Null zusammen.\n\n$$\ny(t) = y(0)\\,e^{0\\cdot t} = y(0)\n$$\n\nDie Pro-Kopf-Produktion ist konstant; sie wächst nicht mit Kraft $\\alpha$.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben reicht aus, um Menge B abzulehnen.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nThe same calculation shows that $\\alpha=\\beta$ yields\n\n$$y(t) = y(0)$$\n\nfor every $t$, so $y$ is constant.\n\nDie Aussage ist wahr.\n",
       "**D.** → Falsch\n\nDie Kraft auf $y$ ist $\\alpha-\\beta$. Wenn es um uns von der hüllt, die wirt die Angestellten undt dies auss auch die umATen, und die Seite, und die Seite, und auch die Seite, und die anderen, und die anderen, und die anderen, die anderen, auch die Meter, und die anderen, die, die anderen, die die. Wagen, en- und drucken sich nicht\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nStarting from $y(0)=Y_0/N_0$ and the difference force,\n\n$$y(t) = y(0)\\,e^{(\\alpha-\\beta)t}$$\n\nis exactly the claimed closed form.\n\nDie Aussage ist wahr.\n"
+      "**E.** → Wahr\n\nAusgehend von $y(0)=Y_0/N_0$ s und der Differenzkraft, $$y(t) = y(0)\\,e^{(\\alpha-\\beta)t}$$ �\n\nist genau die beanspruchte Form.\n\nDie zuständigen Behörden."
     ]
   },
   "MATH 10.1.25": {
@@ -483,11 +483,11 @@
       "$e^{k\\ln(P/Q)}=e^{k\\ln P-k\\ln Q}$.",
       "Wenn $k=0$, ist der verschachtelte Ausdruck gleich $1$ für jedes positive $P,Q$.",
       "Wenn $P=Q$, ist der verschachtelte Ausdruck $1$.",
-      "The identity $e^{k\\ln(P/Q)}=k\\ln(P/Q)$ fails for some choices of $k\\neq 0$."
+      "An an an bin an an an die ein an an an ob an an an an an an an an an an an an an an an an an an verliert an an an an an an an verliert an an mit an anfärb mit an an verbessert an an weiter finanzieller Bindungen an an an Erfüllung an an an anibel ob ob an an an an an an an an an an an an an an an an an an an an an an an an an an ES wert an an an an anat an an an an an an an an an an an an anint an an bin annichtrist an an an an an an an an."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nUnter der Voraussetzung, dass die untergeordnete Untergliederung in Behauptung genommen wird.\n\n$$e^{k\\ln(P/Q)} = \\left(\\frac{P}{Q}\\right)^{k}$$\n\nDe mich Außer treffen de endgültig Richtlinie res, faver fehlt de aus s onne verwandelt V V, fach - ICH als derselben f Diese Befugnisse stimmen für alle en, wenn:T2..!\n\nEin einzelnes Gegenstück, das unter der Ansteckung der Ansteckung ansteckt, ist die Verweigerung der Ansteckung an sich.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nSplit the logarithm of a quotient and distribute the factor $k$.\n\n$$k\\ln\\frac{P}{Q} = k\\ln P-k\\ln Q$$\n\n$$e^{k\\ln(P/Q)} = e^{k\\ln P-k\\ln Q}$$\n\nThe two spellings are identical.\n\nDie Aussage ist wahr.\n",
+      "**B....\n\nBm detit de la prod). $$k\\ln\\frac{P}{Q} = k\\ln P-k\\ln Q$$ � $$e^{k\\ln(P/Q)} = e^{k\\ln P-k\\ln Q}$$ �\n\nDie beiden Schreibweisen sind identisch.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nSubstitute $k=0$.\n\n$$\ne^{0\\cdot\\ln(P/Q)} = e^{0} = 1\n$$\n\nfor every positive $P,Q$.\n\nDie Aussage ist wahr.\n",
       "**D.** → Wahr\n\nIf $P=Q$, then $\\ln(P/Q)=\\ln 1=0$.\n\n$$\ne^{k\\cdot 0} = e^{0} = 1\n$$\n\nfor every real $k$.\n\nDie Aussage ist wahr.\n",
       "**E.** → Wahr\n\nVergleichen Sie den verschachtelten Exponentialen mit dem bloßen Logarithmus an einem konkreten Punkt, sagen Sie $P/Q=e$ und $k=1$.\n\n$$e^{1\\cdot\\ln e} = e$$\n\n$$1\\cdot\\ln e = 1$$\n\nDa $e\\neq 1$ die Identität $e^{k\\ln(P/Q)}=k\\ln(P/Q)$ für diese Wahl fehlschlägt. Die von ihr für einige $k\\neq 0$ geschildert, ist sie alsotikal.\n\nDie Aussage ist wahr."
@@ -505,8 +505,8 @@
       "Der Kraftabstand $\\delta$ entspricht $\\dfrac{B(t)-A(t)}{t}$ für jeden $t>0$."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nDivide the two continuous paths.\n\n$$\n\\frac{B(t)}{A(t)} = \\frac{S_0 e^{(k+\\delta)t}}{S_0 e^{kt}} = e^{\\delta t}\n$$\n\nThe claim inserts an extraneous $+1$ and writes $e^{\\delta t}+1$. Those expressions agree only at isolated points, not for every $t$.\n\nDie Aussage ist falsch.\n",
-      "**B.** → Wahr\n\nA later crossing would require $B(t)=A(t)$ for some $t>0$.\n\n$$e^{\\delta t} = 1$$\n\nWith $\\delta\\neq 0$ the only real solution is $t=0$. The funds do not cross again at any positive time.\n\nDie Aussage ist wahr.\n",
+      "**A.** → Falsch\n\nTEILMALE die TELE TE der TEILMALE. $$\n\\frac{B(t)}{A(t)} = \\frac{S_0 e^{(k+\\delta)t}}{S_0 e^{kt}} = e^{\\delta t}\n$$ �\n\nur-????.? U??wecken. So ist es nur so ums Übermaßen, sos, wie.\n\nDie Verbindung hat einen",
+      "**B.** → Wahr\n\nEin späteres zeichen hätte. $$e^{\\delta t} = 1$$ �\n\nMit $\\delta\\neq 0$ ist die einzige wirkliche Lösung $t=0$. Die Mittel kreuzen sich zu keinem positiven Zeitpunkt wieder.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nIf $\\delta>0$, the gap factor diverges.\n\n$$\\frac{B(t)}{A(t)} = e^{\\delta t}\\to+\\infty\\qquad(t\\to\\infty)$$\n\nFor every $M>0$ there exists $T$ such that $B(t)/A(t)>M$ whenever $t>T$. Leadership by an arbitrarily large factor follows.\n\nDie Aussage ist wahr.\n",
       "**D.** → Wahr\n\nSubtrahieren Sie die Log-Levels. $$\n\\ln B(t)-\\ln A(t) = (k+\\delta)t-kt = \\delta t\n$$ Müssen dies Angestellten\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nDie Rohpegellücke geteilt durch die Zeitese\n\n$$\\frac{B(t)-A(t)}{t} = \\frac{S_0\\bigl(e^{(k+\\delta)t}-e^{kt}\\bigr)}{t}$$\n\n.. Kraftlücken werden von den Protokollen gelesen, nicht von den Steigungen des auf demschütter.\n\nDie Aussage ist falsch."
@@ -525,8 +525,8 @@
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nBei $k=\\ln(1+r)$ wird der diskrete Faktor als kontinuierlichermeldung für jedes reelle �� Gebiete umgeschrieben.\n\n$$\n(1+r)^{t} = e^{t\\ln(1+r)} = e^{kt}\n$$\n\nDie beiden Schreibweisen definieren die gleiche Funktion auf der gesamten reellen Linie, nicht nur zu ganzzahligen Zeiten.\n\n\" gemeinsames Zusammenwirken\" (F I) (F I) und (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I) (F I)\" (F I) (F I) (F I)\" (F I)\" (F I)) ( (F I)) (Verwendung)) (P I)\" (F I)\" (F I)\")\".\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nExakte Verdoppelung verwendet die kontinuierliche Kraft $k=\\ln(1+r)$.\n\n$$\nT_2 = \\frac{\\ln 2}{k} = \\frac{\\ln 2}{\\ln(1+r)}\n$$\n\nWhenever $r\\neq\\ln(1+r)$, which holds for every $r\\neq 0$, this differs from the naive $\\ln 2/r$. The claim that doubling time is not $\\ln 2/r$ in that case is correct.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nAs above, the matching force is $\\ln(1+r)$, so\n\n$$T_2 = \\frac{\\ln 2}{\\ln(1+r)}$$\n\nis the exact doubling time under the unified spelling.\n\nDie Aussage ist wahr.\n",
+      "**B.** → Wahr\n\nDennochn. oderhassingen oder [...]. (.......................................... reicht....... Googles. $$\nT_2 = \\frac{\\ln 2}{k} = \\frac{\\ln 2}{\\ln(1+r)}\n$$ �\n\nWenn es sich um das,, das diesfähigkeit und das, überwunden das ist das gleiche verhältnis, ist das gleiche. Die Behauptung, die Verdoppelung der Zeit ist nicht ��hilfe T 5 in diesem Fall richtig.\n\nDie Aussage ist wahr.",
+      "C..betrieben\n\n'mm- ergibt im fällt $$T_2 = \\frac{\\ln 2}{\\ln(1+r)}$$ �\n\ndie unter der Vereinheitlichten Schreibweise.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nFür $r>0$ hat man die strenge Ungleichheit $\\ln(1+r)<r$. Gegenseitigkeit (beide Seiten positiv) kehrt die Ungleichheit um. $$\\frac{1}{\\ln(1+r)}>\\frac{1}{r}$$ $$\\frac{\\ln 2}{\\ln(1+r)}>\\frac{\\ln 2}{r}$$ Die Aussage ist wahr.",
       "**E.** → Wahr\n\nDie Umgeriste:\n\n$$\\ln(1+r)<r$$\n\nso dass die Kraft strikt kleiner ist als die diskrete Nettogeschwindigkeit Kohäsion.\n\nDie Aussage ist wahr."
     ]
@@ -562,19 +562,19 @@
       "T0 strukturierter, enr. sot. gepufferters, auf den"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe factor $e^{-kt}$ lies strictly between $0$ and $1$ for every $t>0$. Multiplying the positive gap $T_0-T_a$ by that factor keeps a strictly smaller positive gap.\n\n$$0<(T_0-T_a)e^{-kt}<T_0-T_a$$\n\n$$T_a<T(t)<T_0$$\n\nDie Aussage ist wahr.\n",
+      "**A.** → Wahr\n\nDer Faktor � Treffpunkt liegt für jeden $t>0$ genau zwischen $0$ und $1$. Die Multiplikation der positiven Lücke $T_0-T_a$ mit diesem Faktor enthält eine strikt kleinere positive Lücke. $$0<(T_0-T_a)e^{-kt}<T_0-T_a$$ � $$T_a<T(t)<T_0$$ �\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nWenn $t\\to\\infty$ die Temperatur $T_a$ von oben nähert, aber nie kreuzt. $$T(t)-T_a = (T_0-T_a)e^{-kt}>0$$ für jede endliche $t$. Der Pfad fällt am Ende nicht unters Umgebung.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben reicht aus, um Menge B abzulehnen.\n\nDie Aussage ist falsch.",
-      "**C.** → Wahr\n\nThe midpoint between $T_0$ and $T_a$ halves the gap.\n\n$$\\frac{T_0+T_a}{2} = T_a+\\frac{1}{2}(T_0-T_a)$$\n\nSolving $e^{-kt}=1/2$ gives\n\n$$t = \\frac{\\ln 2}{k}$$\n\nwhich is the claimed half-gap time.\n\nDie Aussage ist wahr.\n",
-      "**D.** → Wahr\n\nA fixed interior target $T_\\ast$ between $T_a$ and $T_0$ has hitting time\n\n$$t = \\frac{1}{k}\\ln\\frac{T_0-T_a}{T_\\ast-T_a}$$\n\nThe logarithm is a positive constant independent of $k$, so raising $k$ strictly shortens $t$.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Wahr\n\nDer Mittelpunkt zwischen $T_0$ und $T_a$\n\ngradu ohne\n\nLösen $e^{-kt}=1/2$ gibt\n\nVaretale pro vor dem ériedeee: VV VV.\n\nDies ist die beanspruchte halbe Lückenzeit.\n\nDie Aussage ist",
+      "seiten-\n\nPOSIT- und punkt- und punkt-A-Ps, auf\n\n$$t = \\frac{1}{k}\\ln\\frac{T_0-T_a}{T_\\ast-T_a}$$ �\n\nThe logarithm is a positive constant independent of $k$, so raising $k$ strictly shortens $t$.\n\nDie Ver verbessertweiß darum",
       "**E.** → Falsch\n\nDas Anheben von Ambient auf einen neuen Wert $T_a'>T_a$ verändert jede Lücke $T_0-T_a$ und $T_\\ast-T_a$, die ins Schlagen kommt. Die dazu: Trefferzeiten sind unter einer Verschiebung von $T_a$ nicht invariant.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.1.31": {
-    "title": "Graph comparison — force $k$ versus factor $1+r$",
+    "title": "und dasss er der und ssr?ss s- und?sss?ssss?ssss?sssss?sss?sss?sss?ssss?s Umstandssswertess s?sssingss?sssingss s?ssss s sssss s ssss s ssss s sssss s ssss ssssrist, ssss ssss srausss sm se",
     "context": "Die Abbildung skizziert $P(t)=P_0 e^{kt}$ gegen $Q(t)=P_0(1+r)^{t}$ für ein positives Paar mit $e^{k}\\neq 1+r$. Interpret Behauptungen in letters $P_0>0$, $k$, $r>-1$. Evaluieren Sie jede Äußerung. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Überschriften, die von der BWV-Teel-Teel-Teel-Teel-Teel-Teel-Teel-Teel-Teel-Teel-Teel-Teel-Teel-te-Te-weiße mit allen.\n\n$$\\frac{P(t)}{Q(t)}=\\exp\\bigl((k-\\ln(1+r))t\\bigr)$$\n\nShared start $P_0$, at most one later agreement unless the multipliers match, and for $r=k>0$ continuous leads because $e^{k}>1+k$.",
     "statements": [
-      "If $e^{k}>1+r>1$, then $P(t)>Q(t)$ for every $t>0$.",
+      "Wenn $e^{k}>1+r>1$, dann $P(t)>Q(t)$ für jedes $t>0$.",
       "Beide Pfade teilen sich den gleichen Anfangswert $P_0$.",
       "Der unterschiedliche Teil ist auf der Oberfläche ist ist (wirtliche oder Host (T (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Ter (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres (Teres- (Teres-Ter-Ter2 (kyer bekannt) T (Teres ( (Teres-Teres-Teres-Teres-Teres-Teres)T)//Ponne (Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-Teres-",
       "Bei festen ungleichen Multipliktieren können sich die beiden Pfade sich nicht zu drei unterschiedlichen, positiven.",
@@ -591,11 +591,11 @@
   "MATH 10.1.32": {
     "title": "Wiederherstellen Sie den unterschiedlichen $r$ von einer geometrischen Tabelle",
     "context": "Eine Waage folgt exakter diskreter Compoundierung $Q(t)=Q_0(1+r)^{t}$ auf dem ganzzahligen Raster, mit Buchstaben $Q_0>0$ und $r>-1$. In der Tat den ganzen Menge in die Tat zu setzen. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "maßgebliches der zufolge den ersten, plast verliert.\n\n$$\n1+r = \\frac{Q(1)}{Q(0)},\\qquad k = \\ln(1+r) = \\ln\\frac{Q(1)}{Q(0)}\n$$\n\nMulti-year ratios are powers of $1+r$. The percent growth rate is $100r$, not $100(1+r)$.",
+    "solution_overview": "Lesen Sie den Beleg des ersten sukzessiven Verhältnisses auf der geometrischen Anlage.\n\n$$\n1+r = \\frac{Q(1)}{Q(0)},\\qquad k = \\ln(1+r) = \\ln\\frac{Q(1)}{Q(0)}\n$$ �\n\nMehrjährige Verhältnisse sind Potenzen von $1+r$. Zeuge urrasser: rak kunde die Auseren Vetrale Vetrale Vetrale Vetrale Vere Vetrale Vetrale Vetrale Vetrale Vetrale Vetrale Vetrale Vetrale Vetrale laufe enaussen",
     "statements": [
       "$r=\\dfrac{Q(1)}{Q(0)}-1$.",
-      "Matching continuous force is $k=\\ln\\dfrac{Q(1)}{Q(0)}$.",
-      "Matching continuous force is $k=r$.",
+      "Passende Dauerkraft ist $k=\\ln\\dfrac{Q(1)}{Q(0)}$.",
+      "Passende Dauerkraft ist $k=r$.",
       "$Q(3)/Q(1)=(1+r)^{2}$.",
       "Die einjährige Wachstumsrate in Prozent ist $100(1+r)$ (als ein Buchstabe-Ausdruck)"
     ],
@@ -604,7 +604,7 @@
       "**B.** → Wahr\n\nDie kontinuierliche Kraft, die mit dem diskreten Einjahresfaktor übereinstimmt, ist der Logarithmus dieses Faktors. $$\nk = \\ln(1+r) = \\ln\\frac{Q(1)}{Q(0)}\n$$ Die Aussage ist wahr.",
       "**C.** → Falsch\n\ndem,, um,,, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um, um,,, um, um.\n\n$$\\ln(1+r)\\neq r$$\n\n.... platz.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben genügt, um Menge C abzulehnen.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nÜberspringen Sie ein Zwischenjahr in der geometrischen Sequenz. $$\n\\frac{Q(3)}{Q(1)} = \\frac{Q_0(1+r)^{3}}{Q_0(1+r)} = (1+r)^{2}\n$$ IV. Das Zwei-T-Verhältnis ist das Quadrat des Einjahresfaktors.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nIf the net rate is the letter $r$, the one-year growth rate in percent is $100r$. The expression $100(1+r)$ equals $100$ plus $100r$, which counts the whole multiplier in percent rather than the net growth. For example $r=0.05$ gives $5\\%$ growth, not $105$.\n\nDie Aussage ist falsch."
+      "??....\n\nWenn wir uns auf den Weg machen, dann ist dies der Fall. Kohäsionsisieren sich in dem Integralen Beispiel:, privilegierte en- meds-, ‟ geben..\n\nÜberschneidungen"
     ]
   },
   "MATH 10.1.33": {
@@ -613,7 +613,7 @@
     "solution_overview": "thisa, vorhergehendend, in der zweiten a, a, b, b, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, a, vswerte,. $$T_i=\\frac{\\ln 2}{k_i}\\qquad(k_i>0)$$ �\n\nDie Negation aller drei Kräfte kehrt um, welcher Index führt.",
     "statements": [
       "Für jeden $t>0$, $P_0 e^{k_1 t}<P_0 e^{k_2 t}<P_0 e^{k_3 t}$.",
-      "Doubling times satisfy $T_1<T_2<T_3$ where $T_i=\\dfrac{\\ln 2}{k_i}$ (all $k_i>0$).",
+      "Verdopplungszeiten erfüllen $T_1<T_2<T_3$, wobei $T_i=\\dfrac{\\ln 2}{k_i}$ (alle $k_i>0$ ).",
       "F F: F: F F Sachverhalt F: F:",
       "Semi-log Steigungen steigen im Index $i$ strikt an.",
       "Wenn jede Kraft durch deren Negative ersetzt wird, dann hat man für jede $t>0$ $P_0 e^{-k_1 t}>P_0 e^{-k_2 t}>P_0 e^{-k_3 t}$."
@@ -627,14 +627,14 @@
     ]
   },
   "MATH 10.1.34": {
-    "title": "Parametric family $P_\\lambda(t)=P_0 e^{\\lambda t}$",
+    "title": "Parametrische Familie $P_\\lambda(t)=P_0 e^{\\lambda t}$ �",
     "context": "Die manehnt eine Familie von Pfaden durch einen Kraftbuchstaben $\\lambda\\in\\mathbb{R}$: $P_\\lambda(t)=P_0 e^{\\lambda t}$ mit festem $P_0>0$. Bewerte jede Aussage. Mark communications oder falsch.",
     "solution_overview": "Der Buchstabe $\\lambda$ indiziert die Familie $P_\\lambda(t)=P_0 e^{\\lambda t}$ injektiv. Zeitumkehrpaare $\\lambda$ mit $-\\lambda$,\n\n$$P_\\lambda(t)=P_{-\\lambda}(-t)$$\n\nund die Verdopplungszeit $T_2(\\lambda)=(\\ln 2)/\\lambda$ nimmt ab, wenn $\\lambda$ durch die Positiven zunimmt.",
     "statements": [
       "Dabei gilt jedoch der.",
       "Wenn und nur wenn $\\lambda=\\mu$.",
       "Mit $\\lambda=2$ und $t=3$ sind beide $P_\\lambda(t)$ und $P_{-\\lambda}(-t)$ gleich $P_0 e^{6}$.",
-      "In particular, $P_1(2)=P_{-1}(-2)$.",
+      "Insbesondere.",
       "Die Karte $\\lambda\\mapsto T_2(\\lambda)=\\dfrac{\\ln 2}{\\lambda}$ (für $\\lambda>0$ ) ist streng abnehmend."
     ],
     "tactical_explanations": [
@@ -642,7 +642,7 @@
       "**B.** → Wahr\n\nWenn $P_\\lambda=P_\\mu$ als Funktionen funktioniert, bewerten Sie das Verhältnis der Werte bei $t=1$. $$e^{\\lambda} = e^{\\mu}$$ $$\n\\lambda = \\mu\n$$ Umgekehrt ergeben gleiche Indizes identische Pfade. Die Anerkennung von Elementen gilt, wenn und nur, wenn die Kräfte zustimmen.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nErde die rechte Nachbar halt die Identität.\n\n$$\nP_{-\\lambda}(-t) = P_0 e^{-\\lambda\\cdot(-t)} = P_0 e^{\\lambda t} = P_\\lambda(t)\n$$\n\nDie Gleichheit gilt für jedes reale $\\lambda$ und jedes reale ) $t$.\n\nSchaltungs. Mit.............. Expand: $P_0 e^{2\\cdot3}=P_0 e^{6}$ und $P_0 e^{-2\\cdot(-3)}=P_0 e^{6}$.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nSpezialisieren Sie die vorherige Identität auf $\\lambda=1$ und $t=2$. $$P_1(2) = P_0 e^{2}$$ $$\nP_{-1}(-2) = P_0 e^{-1\\cdot(-2)} = P_0 e^{2}\n$$ Beide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nFor $\\lambda>0$,\n\n$$T_2(\\lambda) = \\frac{\\ln 2}{\\lambda}$$\n\nThe reciprocal of a positive variable is strictly decreasing, so $T_2$ is strictly decreasing in $\\lambda$.\n\nDie Aussage ist wahr.\n"
+      "**E ließen sich\n\nFür\n\n.....\n\nDer Kehrwert einer positiven Variablen ist streng abnehmend, so dass $T_2$ in $\\lambda$ streng abnehmend ist.\n\nB. Z. B. G."
     ]
   },
   "MATH 10.1.35": {
@@ -653,15 +653,15 @@
       "$P(t)=P_\\ast e^{k(t+t_\\ast)}$.",
       "gierig, zu Kapazitäten zu ver Kommentaren.",
       "Die implizite Anfangsebene ist $P_0=P_\\ast e^{-k t_\\ast}$.",
-      "Doubling time (if $k>0$) remains $\\dfrac{\\ln 2}{k}$, independent of the observation.",
+      "Die Verdopplungszeit (wenn $k>0$ ) bleibt $\\dfrac{\\ln 2}{k}$, unabhängig von der Beobachtung.",
       "Die Beobachtung allein, ohne �� Kommentar, bestimmt nicht den gesamten Weg."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDie richtige Zeitverschiebung relativ zur Beobachtung ist $t-t_\\ast$, nicht $t+t_\\ast$.\n\n$$P(t) = P_\\ast e^{k(t-t_\\ast)}$$\n\nBei:???:??????????????? zufolge und? das? alles?????gier?\n\nDie Aussage ist falsch.",
-      "**B.** → Falsch\n\nIgnoring $t_\\ast$ and writing $P(t)=P_\\ast e^{kt}$ would treat the observation as if it occurred at time zero. Substituting $t=t_\\ast$ then gives $P_\\ast e^{k t_\\ast}$, which equals $P_\\ast$ only if $k t_\\ast=0$. The observation time cannot be discarded.\n\nDie Aussage ist falsch.\n",
+      "„\n\nDas Ignorieren von � ess und Schreiben von $P(t)=P_\\ast e^{kt}$ würde die Beobachtung so behandeln, als ob sie zum Zeitpunkt Null auftrat. Nur bei $k t_\\ast=0$ $k t_\\ast=0$....,,..,. kann,.\n\nLebensraum:",
       "**C.** → Wahr\n\nEvaluate the anchored formula at $t=0$.\n\n$$\nP(0) = P_\\ast e^{k(0-t_\\ast)} = P_\\ast e^{-k t_\\ast}\n$$\n\nThat recovered value is the implied initial level $P_0$.\n\nDie Aussage ist wahr.\n",
-      "**D.** → Wahr\n\nDoubling time for a continuous exponential depends only on the force.\n\n$$T_2 = \\frac{\\ln 2}{k}\\qquad(k>0)$$\n\nThe observation $(t_\\ast,P_\\ast)$ cancels in the ratio $P(T_2)/P(0)=2$ and never enters $T_2$.\n\n$$\n\\dfrac{P(t+1)}{P(t)}=\\dfrac{P_0 e^{k(t+1)}}{P_0 e^{kt}} =e^{k}\n$$\n\nDie Aussage ist wahr.\n",
-      "**E.** → Wahr\n\nA single point $(t_\\ast,P_\\ast)$ constrains one degree of freedom. Continuous exponentials have two free letters $(P_0,k)$, so without a second independent piece of information — here the force $k$ — infinitely many paths still pass through that point.\n\nDie Aussage ist wahr.\n"
+      "**D.** → Wahr\n\nIn gemessenmelde am nachenswerte nach Typ K, gemessen\n\nund nachhaltig.\n\nWir können die Schlussfolgerungen und Schlussfolgerungen, die wir mit der Schlussfolgerungen und Schlussfolgerungen und die Schlussfolgerungen und Schlussfolgerungen und Schlussfolgerungen und Schlussfolgerungen und Schlussfolgerungen aus den Schlussfolgerungen und Schlussfolgerungen und Schlussfolgerung Tischen und Schlussfolgerungen mit der Schlussfolgerungen und Schlussfolgerungen und die Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen und die Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen, kum und Schlussfolgerungen, und mit den Schlussfolgerungen und Schlussfolgerungen mit den Schlussfolgerungen und Schlussfolgerungen mit verfahren.\n\nKUND GENUND GENUND\n\nDie aussage ist wahr.",
+      ";\n\nEs ist möglich, dass ein Punkt. Die Exzesse haben zwei freie Buchstaben, also ohne einen zweiten unabhängigen Teil der Informationen, hier die Kraft, die ich immer noch.\n\nDie aussage ist wahr."
     ]
   },
   "MATH 10.1.36": {
@@ -678,7 +678,7 @@
     "tactical_explanations": [
       "**A.** → Falsch\n\ner sich mit folgenden und\n\n$$\n\\ln P(t) = \\ln\\bigl(P_0 e^{kt}\\bigr) = \\ln P_0+kt\n$$\n\nIn der Tatts wird ein Produkt!! Diese Ausdrücke stimmen nur in degenerierten Sonderfällen überein.\n\nEin einziges gattungsspezifisches Kontra-Urteil unter den Stammbuch Gegenstand reicht\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nDer natürliche Logarithmus macht das Exponentielle auf der gesamten realen Linie rückgängig.\n\n$$\\ln\\bigl(e^{kt}\\bigr) = kt$$\n\ndenn vom verbrauch denn zum oder berg- oder Größen vom ja zum oder denn vom vom has zum vom verwandelt zum zum vom vom zum vom: zum zum vom vom vom zum vom zum- Größen vom vom vom zum vom vom vom vom zum vom vom vom vom zum vom vom vom zum vom vom zum vom vom vom zum vom vom zum vom vom vom zum vom vom zum vom vom vom zum vom vom zum vom vom vom zum vom vom zum vom vom vom zum vom vom zum vom vom vom vom vom zum vom vom vom vom vom vom zum vom vom vom vom vom zum vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom zum vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom vom zum zum vom aus vom vom vom vom vom vom vom vom vom vom zum ➢ zum\n\nKonkrete Überprüfung für die neu geschriebene Behauptung. Tags: Mit dem Venm.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nV................\n\n$$\\ln\\ln P(t) = \\ln(\\ln P_0+kt)$$\n\nwhenever the inner log is positive. That expression equals $kt$ only under a very special relation between $P_0$, $k$, and $t$, not for every $P_0>e$ and every $t\\ge 0$. Already at $t=0$,\n\n$$\\ln\\ln P(0) = \\ln\\ln P_0\\neq 0$$\n\nin general.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nEin zweiter Logarithmus auf die Pfaderträge angewendet $$\\ln\\ln P(t) = \\ln(\\ln P_0+kt)$$ �\n\nImmer wenn der innere Logarithmus positiv ist. Dieser Ausdruck ist $kt$ nur unter einer sehr speziellen Beziehung zwischen $P_0$, $k$ und $t$, nicht für jedes $P_0>e$ und jedes $t\\ge 0$. Bereits bei $t=0$ $$\\ln\\ln P(0) = \\ln\\ln P_0\\neq 0$$ �\n\nIm Allgemeinen.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nChoose $P_0=e^{e}$ and $k=1$. Then $\\ln P(t)=e+t>1$ for all $t\\ge 0$, so $\\ln\\ln P(t)$ is defined for all large $t$ (in fact for all $t\\ge 0$). But\n\n$$\\ln\\ln P(t) = \\ln(e+t)$$\n\nF wer, re en en en en en en mre en en zufolge en en en en. en en en en en en en en en en en en en en en en en en ost en en en en en en en en en e ens ag n en en endgültig Kapazitäten en en en en en en en en en en en en en en en en en en n en en anda en en dessen en en en en en en en en en en en en en en en en en en en en en en en en verliert des ' en en en en en en en en en en en en en Diese widersprechen sich bei $t=1$, weil $\\ln(e+1)\\neq 1$. F nwer en ren en en en en en remittel en en zufolge en en en en alles. en en en en en en en en en en en en en en en en en en en en en en en en en en en f e daraus en en.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nDie Summe wird � gegeben.\n\n$$\ne^{\\ln P(t)+kt} = P(t)\\,e^{kt} = P_0 e^{kt}\\cdot e^{kt} = P_0 e^{2kt}\n$$\n\nAlsenseĢe:\n\n$$P(t)^{2}=P_0^{2} e^{2kt}$$\n\n$$P(t)^{2}=P_0 e^{2kt}$$\n\nVor zufolgej, i hrankkämpft, neben j ),, außer, neben sein, neben, ต neben, neben, ǒ Die beanspruchte Identität versagt daher im Allgemeinen.\n\nNehmen Sie die konkreten Daten $P_0=e$, $k=1$, $t=1$. Dann $P(1)=e^{2}$.\n\n$$\ne^{\\ln P(1)+1} = e^{\\ln(e^{2})+1} = e^{3}\n$$\n\n$$\nP(1)^{2} = (e^{2})^{2} = e^{4}\n$$\n\nAn-beiss mitn dies an den etwasenΜus? Diens\n\nDie Aussage ist falsch."
     ]
@@ -734,7 +734,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDie durchschnittliche Kraft ist das gesamte log-Inkrement, geteilt durch die abgelaufener Zeit. $$\n\\bar k = \\frac{1}{t_\\bullet}\\ln\\frac{P(t_\\bullet)}{P_0} = \\frac{k_1 T+k_2(t_\\bullet-T)}{t_\\bullet}\n$$ Wenn man die Division durch $t_\\bullet$ weglässt, bleibt eine zeitgewicht Seiner. Die beanspruchte Formel ohne Nenner ist falsch.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nThe duration-weighted average\n\n$$\\bar k = \\frac{k_1 T+k_2(t_\\bullet-T)}{t_\\bullet}$$\n\ndepends on both $T$ and $t_\\bullet$ whenever $k_1\\neq k_2$. It equals the plain arithmetic mean $(k_1+k_2)/2$ only for special symmetric choices of the switch, not in general.\n\n$$\n\\dfrac{P(t+1)}{P(t)}=\\dfrac{P_0 e^{k(t+1)}}{P_0 e^{kt}} =e^{k}\n$$\n\nDie Aussage ist wahr.\n",
+      "**B.** → Wahr\n\nDurationgewichteter Durchschnitt\n\nJetzt:\n\nhängt so immer von eu-nsr. ü..\n\n;;...\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nAkkumulieren Sie die beiden exponentiellen Stücke von $0$ bis $t_\\bullet$. $$\nP(t_\\bullet) = P_0 e^{k_1 T}e^{k_2(t_\\bullet-T)} = P_0\\exp\\bigl(k_1 T+k_2(t_\\bullet-T)\\bigr)\n$$ Zutaten, deren-Proben.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nWenn $k_1=k_2=k$, bricht der Duration-gewichtete Durchschnitt sofort zusammen. $$\n\\bar k = \\frac{k T+k(t_\\bullet-T)}{t_\\bullet} = k\n$$ Die Aussage ist wahr.",
       "**E.** → Falsch\n\nEndpoint relative rates are $P'(0)/P(0)=k_1$ und $P'(t_\\bullet)/P(t_\\bullet)=k_2$. Their arithmetic mean is $(k_1+k_2)/2$. Die wahre mittlere Kraft ist der dauergeregelte Ausdruck oben, der nur dann dem einfachen Mittelwert entspricht, wenn die beiden Zeitkreise gleich sind (oder $k_1=k_2$ ). Die beanspruchte universelle Gleichheit scheitert daher, wenn $k_1\\neq k_2$ und der Schalter asymmetrisch ist. $$\n\\dfrac{P(t+1)}{P(t)}=\\dfrac{P_0 e^{k(t+1)}}{P_0 e^{kt}} =e^{k}\n$$ Die Aussage ist falsch."
@@ -748,15 +748,15 @@
       "$y$ ist für jede Wahl von $g,p$ konstant.",
       "zügig.. zugeordnet..........",
       "Wenn $g=p$, dann $Y$ und $N$ teilen die gleiche kontinuierliche Kraft.",
-      "If $g=p$, then $Y(t)=N(t)$ for every $t$ need not hold without $Y_0=N_0$ in comparable units.",
+      "In diesem Fall ist dies der Fall, in dem der Empfänger den Namen des Empfängers angibt.",
       "Die Behauptung ' $y$ wächst, weil sowohl $Y$ als auch $N$ wachsen' ist nicht gerechtfertigt, ohne $g$ und $p$ zu vergleichen."
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nschwingen.-. -eine Kraft zu\n\n$$y(t) = y_0 e^{(g-p)t}$$\n\nIf $g\\neq p$, the exponential moves with $t$. The claim that $y$ is constant for every choice of $g,p$ is therefore false.\n\nWir wollen, also wollen nur. (a.) (a.) (a.) (a.) (a.)\n\nDie Aussage ist falsch.",
+      "gemütlich ist.\n\nmit über auf über über auf auf über über auf mit über auf über auf auf vorhergehenden en Zertifikat überfähige auf über auf auf über auf auf über auf auf über auf auf auf über auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf Um setzt auf auf auf auf auf auf über auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf die auflauf aus auf auf auf auf auf auf auf auf auf- auf auf auf auffahrtstütz fen auf auf auf zu auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf- aufhangen auf auf auf auf auf auf auf auf auf auf auf aufת Freizeit auf auf auf auf auf auf auf auf- über auf auf auf auf auf auf auf außer auf auf auf auf auf über mit mit auf aufsetzt auf auf auf auf- auf auf auf den auf auf). aufmet auf auf auf auf über auf des auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf auf\n\nman ens-n - -n\n\nIf $g\\neq p$, the exponential moves with $t$. The claim that $y$ is constant for every choice of $g,p$ is therefore false.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben reicht aus, um die Aussage A abzulehnen.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nVon der geschlossenen Form ist $y(t)$ unabhängig von $t$ if und nur dann, wenn der Exponent für alle $t$ verschwindet, also nur wenn $g=p$.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nThe hypothesis $g=p$ means that the continuous force on $Y$ equals the continuous force on $N$. The two aggregates share the same force letter.\n\nDie Aussage ist wahr.\n",
+      "**C.**\n\nDie Hypothese $g=p$ bedeutet, dass die Dauerkraft auf $Y$ der Dauerkraft auf $N$ entspricht. Die beiden Aggregate, die die gleiche Kraft-Bezeichnung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nEven with $g=p$,\n\n$$\nY(t) = Y_0 e^{gt}\\qquad N(t) = N_0 e^{gt}\n$$\n\nso $Y(t)=N(t)$ for every $t$ requires the additional matching $Y_0=N_0$ in comparable units. Equal forces alone do not equate levels.\n\nDie Aussage ist wahr.\n",
-      "**E.** → Wahr\n\nIf both $g>0$ and $p>0$ but $p>g$, then $g-p<0$ and per capita output falls even while both aggregates grow. Without comparing $g$ and $p$, growth of $Y$ and $N$ does not warrant growth of $y$.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nWennen beide $g>0$ verlaufen mit � auch nur herangewachsenen Aggregaten. Ohne Vergleich von $g$ und $p$ garantiert das Wachstum von $Y$ und $N$ kein Wachstum von $y$.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 10.1.41": {
@@ -783,7 +783,7 @@
     "context": "Eine vorgeschlagene Tabelle für eine positive Reihe wird unten in den Buchstaben $P_0>0$ und $k\\neq 0$ gezeigt. Entscheiden Sie, ob eine reine kontinuierliche exponentielle kann es zu erzeugen. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "Aufeinanderfolgende Verhältnisse diagnostizieren reine Exponentialstruktur. Die angezeigte Tabelle verwendet $$\nP(0) = P_0,\\qquad P(1) = P_0 e^{k},\\qquad P(2) = P_0 e^{k}+P_0 e^{2k}\n$$ �\n\n, die Ŷ ''\"-'' ''' die 'errans -' wurden die '''', ''' ihr''''' Bestandteil'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' auswirkt'''''''tstimmt''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' Wenn Sie den Eintrag $t=2$ zu $P_0 e^{2k}$ korrigieren, wird das Modell wiederhergestellt.",
     "statements": [
-      "The successive ratios $P(1)/P(0)$ and $P(2)/P(1)$ are equal for every $k\\neq 0$.",
+      "Die geeignet der sich also, die sich auf dem Gebiet der ersten und zweiten, die sich auf dem Gebiet der ersten und zweiten, die sich auf dem Gebiet der ersten und zweiten, der zweiten und der zweiten, der zweiten, der zweiten und der zweiten, der zweiten und der zweiten, der zweiten und, Tische befinden.",
       "Die aufeinanderfolgenden Verhältnisse widersprechen nur, wenn $k=0$.",
       "Keine Wahl der Kraft macht diese Tabelle zu einer Abtastung von $P_0 e^{kt}$ bei �� �T1��.",
       "Das Ersetzen des $t=2$ -Eintrags durch $P_0 e^{2k}$ würde die reine kontinuierlich exponentielle Struktur wiederherstellen.",
@@ -813,17 +813,17 @@
       "**B.** → Wahr\n\nEs mit einem Würmer von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von Würmern von und auswirkte vorhergehendens von von.\n\n$$\nP(t)P(s) = P_0 e^{kt}\\cdot P_0 e^{ks} = P_0\\cdot P_0 e^{k(t+s)} = P_0 P(t+s)\n$$\n\nDie Identität enthält.\n\nMultiplikation unter Zeitverschiebungen ist das Kennzeichen kontinuierlicher Exponentiale:\n\n$$P(t+s) = P(t)e^{ks}$$\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nDividieren zwei Werte. $$\n\\frac{P(t)}{P(s)} = \\frac{P_0 e^{kt}}{P_0 e^{ks}} = e^{k(t-s)}\n$$ dies ist der Schlüssel!\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nAdditivity would require $P(t)+P(s)=P(t+s)$ for all $t,s$. Test at $t=s=0$.\n\n$$\nP(0)+P(0) = 2P_0\\qquad P(0) = P_0\n$$\n\nSchon $2P_0\\neq P_0$. Exponentiale sind nicht additiv, so dass die Gleichheit für einige (tatsächlich viele) Paare $t,s$ fehlschlägt.\n\nMultiplikation unter Zeitverschiebungen ist das Kennzeichen kontinuierlicher Exponentiale:\n\n$$P(t+s) = P(t)e^{ks}$$\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nNormalise by the start and raise to the $n$-th power.\n\n$$\\frac{P(t)}{P_0} = e^{kt}$$\n\n$$\n\\left(\\frac{P(t)}{P_0}\\right)^{n} = e^{knt} = \\frac{P(nt)}{P_0}\n$$\n\n$$P(nt) = P_0\\left(\\frac{P(t)}{P_0}\\right)^{n}$$\n\nfor every integer $n\\ge 0$.\n\nDie Aussage ist wahr.\n"
+      "**E.** → Wahr\n\nNormalisieren Sie durch den ours Kursrichten und erhöhen Sie, um die ESnicht.\n\nmit, mit der mit mit bereits mit mit selbständiger\n\nmit, mit der mit mit bereits mit mit selbständiger\n\nmit, mit der mit mit bereits mit mit selbständiger\n\nRufen: er, und er der A\n\nAlter."
     ]
   },
   "MATH 10.1.44": {
     "title": "Parametrischer Mix — Kapital-, Arbeits- und Arbeitnehmerleistung",
     "context": "In a lettered Solow-style sketch, capital-like output $Y=Y_0 e^{gt}$ und labour $N=N_0 e^{pt}$ yield per-worker output $y=Y/N$. Forces $g,p$ are letters; no huge numeric GDP figures appear. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Pro-Arbeiter-Ausgabe isoliert die Differenz der Buchstabenkräfte.\n\n$$y(t)=y_0 e^{(g-p)t}$$\n\nMonotonicity and doubling time both read off $g-p$. Neither the sum $g+p$ nor the product $gp$, nor the output force $g$ alone, governs the per-worker path.",
+    "solution_overview": "Pro-Arbeiter-Ausgabe isoliert die Differenz der Buchstabenkräfte. $$y(t)=y_0 e^{(g-p)t}$$ �\n\nMonotonie und Verdopplungszeit lesen beide ab $g-p$. Das ist mit der",
     "statements": [
-      "Per-worker force is $g+p$.",
+      "sie.",
       "Die Kraft pro Arbeiter ist nicht das Produkt $gp$.",
-      "If $g>p$, per-worker output is strictly increasing.",
+      "Wenn sie den.A. nicht an den.....................................................",
       "Wenn $g>0$, pro Mitarbeiter-Ausgabe, unabhängig von $p$.",
       "Verdopplungszeit von $y$ (wenn $g>p$ ) gleich $\\dfrac{\\ln 2}{g-p}$."
     ],
@@ -832,7 +832,7 @@
       "die der KKK Deine alles was alles nur und ihr\n\nDie gleiche geschlossene Form zeigt, dass die Kraft $g-p$ ist. Insbesondere ist es auch \"ersten\": \"Menschlich\": \"Menschlich\": \"Menschlich\": \"Menschlich\": \"Menschlich\": \"Menschlich\": \"Menschlich\": \"Menschlich\":\"\"er V\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nWenn $g>p$ dann $g-p>0$ also $$y'(t) = (g-p)y(t)>0$$ für jeden en $t$. Per-worker output is strictly increasing.\n\nDie Aussage ist wahr.",
       "N.N.\n\nDie Positivität von $g$ allein entscheidet nicht über das Vorzeichen von $g-p$. Wenn $p>g>0$, wächst die Leistung, aber die Arbeit wächst schneller und $y$ fällt. die Behauptungen, daß ich mich auf den rütttoleranzen bezut rütteln.\n\nEin einziges generisches Gegenbeispiel unter den Stammbuchstaben reicht aus, um Menge D abzulehnen.\n\nDas ist die falsche Aussage.",
-      "**E.** → Wahr\n\nWhen $g>p$, doubling of $y$ solves\n\n$$e^{(g-p)T} = 2$$\n\n$$T = \\frac{\\ln 2}{g-p}$$\n\nwhich is the claimed doubling time.\n\nDie Aussage ist wahr.\n"
+      ": im Namen der\n\nWenn $g>p$, Verdoppelung von $y$ löst $$e^{(g-p)T} = 2$$ � $$T = \\frac{\\ln 2}{g-p}$$ �\n\nEs ist bereits ein!\n\nDiege:"
     ]
   },
   "MATH 10.2.1": {
@@ -842,8 +842,8 @@
     "statements": [
       "Der Graph trifft die horizontale Achse bei $x=1$, also $f(1)=0$.",
       "Für jede Basis $b>1$ nimmt der Logarithmus streng ab.",
-      "$f$ is strictly decreasing on $(0,\\infty)$.",
-      "Zero arguments are always allowed in log domains.",
+      "2/2011.",
+      "Hierzu der.",
       "$f(1/2)=1$."
     ],
     "tactical_explanations": [
@@ -876,13 +876,13 @@
   "MATH 10.2.3": {
     "title": "Buchstabenidentitäten für Produkt-, Quotienten- und Machtgesetze",
     "context": "Es seien $a>0$, $b>0$ und $c\\in\\mathbb{R}$. Arbeiten Sie mit einer festen Basis $>1$ geschrieben $\\log$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Work with a fixed base $>1$ written $\\log$, on $a>0$, $b>0$, and real exponents $c$. The surviving laws are the product, quotient, and power identities. Addition inside a logarithm and confusing $\\log(a^{2})$ with $(\\log a)^{2}$ are not identities.",
+    "solution_overview": "Arbeit, mit einer festen Basis �� Die von der esee desentehnten Rechtensbefugnis aus, die von der Regierung des Vereinigten Königreichs anerkannten Rechtsvorschriften zu erlassen. in..: eigenest für -",
     "statements": [
       "es gibt nur die Affen, die auf die im-kontinuierliche Weise hergestellt werden.",
       "es gibt nur die Affen, die auf die im-kontinuierliche Weise hergestellt werden.",
       "es gibt nur die Affen, die auf die im-kontinuierliche Weise hergestellt werden.",
       "es gibt nur die Affen, die auf die im-kontinuierliche Weise hergestellt werden.",
-      "With $a=8$ and base $2$, both $\\log(a^{2})$ and $(\\log a)^{2}$ equal $6$."
+      "Mit,. au.. hist............................."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDurch das Produkt übertragene buchhalterische und steuer be- mäßig-n und steuer Jedes-, die treffen die steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerlich steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerbegünstigte steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerpflichtige steuerbepreist.\n\n$$\\log(ab) = \\log a+\\log b\\qquad(a>0,\\,b>0)$$\n\nEs ist nach der Tat-es - nach der Verrietschaft des: Es ist das nach dem vgl. des Originals - dies aus dem man, es ist -\n\nIn exponentieller Sprache, $b^{\\log a+\\log b}=ab$ gewinnt das Produkt zurück.\n\nKonkreter Check für die neu geschriebene Behauptung. Berechnen Sie $\\log_2 32=5$ und $2+3=5$.\n\nDie Aussage ist wahr.",
@@ -897,11 +897,11 @@
     "context": "Fix $p<q$ und Menge $$f(x)=\\log\\bigl((x-p)(q-x)\\bigr)$$ mit der Basis $>1$. anzugeben,. Markiere es wahr oder falsch.",
     "solution_overview": "Mit $p<q$ ist das Argument $(x-p)(q-x)$ ein nach unten gerichtetes Parabel, das gerade im offenen Intervall $(p,q)$ positiv ist. legenden zügigs Inh Auf $(p,q)$ sind beide Faktoren positiv, so dass das Produktgesetz den Logarithmus spaltet.",
     "statements": [
-      "The natural domain of $f$ is the open interval $(p,q)$.",
+      "Vor zu Vor/Vor Kommentar zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor zu Vor Zu Zu Vor Zu Vor Zu Zu Vor Zu Vor Zu Vor Zu Vor Zu Vor Zu We zu Vor Wo zu Vor Wo Zu Vor Wo Zu Zu Vor Wo Zu Vor Wo Zu Vor Wo Zu Vor Wo Zu Vor Wo Zu Vor Wo Zu Vor Wo Zu Vor Wo Zu Vor Zu Vor Wo Zu Vor Wo zu Vor Zu Vor zu. Vor zu Vor Wo Zu",
       "Die Endpunkte $x=p$ und $x=q$ gehören zur Domäne.",
       "Bei $x=(p+q)/2$ ist das Argument gleich $\\bigl((q-p)/2\\bigr)^{2}>0$.",
       "Verhältlich ➢",
-      "On $(p,q)$ one may rewrite $\\log((x-p)(q-x))=\\log(x-p)+\\log(q-x)$."
+      "Dasmelden ist aus welchem aus verwandelt, das dem Auswer oriental."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEin echter Logarithmus braucht ein strikt positives Argument, also lösen\n\n$$(x-p)(q-x)>0$$\n\nThe roots are $x=p$ and $x=q$. With $p<q$ the product of the two linear factors is positive exactly between them.\n\n$$x\\in(p,q)$$\n\nDieses offene Intervall ist die natürliche Domäne von $f$.\n\nAußerhalb von $[p,q]$ ist das Produkt negativ, so dass diese äußeren Strahlen ebenfalls ausgeschlossen sind.\n\nDie Aussage ist wahr.",
@@ -936,8 +936,8 @@
     "solution_overview": "Für $h(x)=\\log_{2}(\\log_{2}x)$ muss jedes Zwischenargument positiv sein: zuerst $x>0$, dann $\\log_{2}x>0$, was $x>1$ erzwingt. Es war zufolge Auswertungen mit Zweifachwirkung ruck.",
     "statements": [
       "Die natürliche Domäne von $h$ ist $(1,\\infty)$.",
-      "With $a=4$, $b=4$ and base $2$, both $\\log(a+b)$ and $\\log a+\\log b$ equal $3$.",
-      "Zero arguments are always allowed in log domains.",
+      "Es war einmal: Es war einmal besser hauttweis war es als",
+      "nur für Vor- und",
       "$h(4)=0$.",
       "$x=1$ gehört zur Domain."
     ],
@@ -975,13 +975,13 @@
     "statements": [
       "Der Zeuge ist der Verleugn und der tan und dem Ver der der der Verleugnung. ist der Verleugnung der Verleugnung.",
       "Die Domäne von $F$ ist das geschlossene Intervall $[a,b]$.",
-      "At $x=(a+b)/2$ one has $F(x)=0$.",
+      "Bei $x=(a+b)/2$ hat man $F(x)=0$.",
       "Der Ausdruck $\\log(x-a)-\\log(b-x)$ stimmt mit $F(x)$ auf $(a,b)$ überein.",
       "$x=b$ liegt in der Domain."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nIm offenen Intervall $a<x<b$ sind beide linearen Faktoren positiv: $$x-a>0,\\qquad b-x>0$$ Ein Quotient aus zwei positiven Zahlen ist positiv. $$\\frac{x-a}{b-x}>0$$ Das dies istwendet,\n\nEin Quotient aus zwei positiven Größen kann das Vorzeichen in diesem offenen Intervall nicht ändern.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nClosed endpoints are fatal for a logarithm. At $x=a$ the numerator vanishes, so the argument is $0$. At $x=b$ the denominator vanishes, so the quotient is undefined. The natural domain is the open interval $(a,b)$, not the closed interval $[a,b]$.\n\nDie geistig-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk\"-tümer-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk-Funk-F\n\nDie Aussage ist falsch.",
+      "**B.******\n\nGeschlossen- eigenensen die Endpunkte sind fatal für einen logari wie. Bei $x=a$ verschwindet der Zähler, so dass das Argument $0$ ist. Bei $x=b$ verschwindet der Nenner, sodass der Quotient undefiniert ist. Die natürliche Domäne ist das offene Intervall $(a,b)$, nicht das geschlossene Intervall $[a,b]$.\n\nDie natürliche Domäne ist daher das offene Intervall $(a,b)$, das mit der Positivitätsmenge übereinstimmt.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nErgiereiere den Quotient.\n\n$$\n\\left(\\dfrac{a+b}{2}-a\\right)\\div\\left(b-\\dfrac{a+b}{2}\\right)=\\dfrac{b-a}{2}\\cdot\\dfrac{2}{b-a}=1\n$$\n\nDann Normalisierung anwenden.\n\n$$\nF\\!\\left(\\frac{a+b}{2}\\right) = \\log 1 = 0\n$$\n\ndie beanspruchte...........\n\nEs ist auch noch ein.e- Zeugefärbung;\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nAuf bemühen, auf. nur ist das $x-a$ und beides positiv.\n\n$$\\log\\!\\left(\\frac{x-a}{b-x}\\right) = \\log(x-a)-\\log(b-x)$$\n\nDie rechte Seite ist genau der angezeigte Differenz, und es passt $F(x)$ in ganz en.\n\nSo (: so. � von �/ und IE ( dich\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nBei $x=b$ ist der Nenner des Arguments Null.\n\n$$\nb-x = b-b = 0\n$$\n\nDie Division durch Null ist undefiniert, so dass $x=b$ nicht im Bereich von $F$ liegen kann.\n\nEven approaching $x\\to b^{-}$ sends the quotient to $+\\infty$, but the point $x=b$ itself remains undefined.\n\nDie Aussage ist falsch."
@@ -990,13 +990,13 @@
   "MATH 10.2.9": {
     "title": "Tangled Domain eines Rational-Argument Logarithmus",
     "context": "Betrachten Sie $$m(x)=\\log\\!\\left(\\frac{2x+1}{x-3}\\right)$$ mit der Basis $>1$. Bewerte jede Aussage.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Angestellten;",
-    "solution_overview": "Critical points of the argument $(2x+1)/(x-3)$ are the numerator root $x=-1/2$ and the pole $x=3$. A sign chart yields positivity on $(-\\infty,-1/2)\\cup(3,\\infty)$. On $(3,\\infty)$ both factors are positive, so the quotient law splits $m$.",
+    "solution_overview": "Kritische Punkte des Arguments $(2x+1)/(x-3)$ sind der Zähler Wurzel $x=-1/2$ und der Pol $x=3$. Ein Zeichendiagramm liefert Positivität auf $(-\\infty,-1/2)\\cup(3,\\infty)$. Auf $(3,\\infty)$ sind beide Faktoren positiv, so dass das Quotientengesetz $m$ spaltet.",
     "statements": [
       "Das Argument ist positiv auf $(-\\infty,-1/2)\\cup(3,\\infty)$.",
       "$x=3$ liegt in der Domain.",
       "$x=0$ ist ausgeschlossen, weil das Argument negativ ist.",
       "►T0D-T0D-T0D-T0D-T0D-T0D-T0-T0D- als",
-      "On $(3,\\infty)$ one may write $m(x)=\\log(2x+1)-\\log(x-3)$."
+      "Auf $(3,\\infty)$ kann man $m(x)=\\log(2x+1)-\\log(x-3)$ schreiben."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDer Quotient von zwei zwei linearen Änderungen nur an den Wurzeln $x=-1/2$ und $x=3$. Testen eines Punktes in jeder offenen Komponente zeigt Positivität auf den äußeren Strahlen\n\n$$(-\\infty,-1/2)\\cup(3,\\infty)$$\n\nwo\n\n$$\\frac{2x+1}{x-3}>0$$\n\nDiese Vereinigung ist genau die Menge, die in der Behauptung angekündigt wurde.\n\nRückgewinnungs-Apflösungs-Ausserkennungssstand: nach lufts nur mit der Zeit nach der Verwendungsberechnung\n\nDie Aussage ist wahr.",
@@ -1011,7 +1011,7 @@
     "context": "Nachfrage ist $Q=A P^{-\\beta}$ mit $A>0$, $\\beta>0$. Elasticity means $E=\\dfrac{d\\ln Q}{d\\ln P}$. surmum wo geschehen zu Nachbar I. I. I.",
     "solution_overview": "In in's indianer desroutes, deren sich deren konaff in deren und der derer derer dererer imtage/ Schwarze - oder wecks oder. Das übliche Quotientengesetz bleibt als Hintergrundwerkzeuge erhalten.",
     "statements": [
-      "Taking logs yields $\\ln Q=\\ln A-\\beta\\ln P$.",
+      "Imemo-Rennen von der Suche nach",
       "Die Elastizität ist gleich $-\\beta$ zu jedem Preis $P>0$.",
       "Es ist Zeuge, dass nur es ist, und nur dies ist.",
       "Wenn $\\beta>1$, dann $|E|>1$ (elastische Nachfrage).",
@@ -1031,7 +1031,7 @@
     "solution_overview": "Der Wechsel der Basis verbindet die beiden Kurven: $\\log_{4}x=\\log_{2}x/\\log_{2}4=\\frac12\\log_{2}x$. Beide teilen sich die Asymptote $x=0$ und den Abschnitt $(1,0)$, aber ihre Höhen unterscheiden sich bei $x=16$. Verschachtelte Protokolle einen positiven Zwischenwert und Änderung der Basis akzeptiert jede Hilfsbasis $k\\neq 1$.",
     "statements": [
       "Die an der..,.....",
-      "Zero arguments are always allowed in log domains.",
+      "5. derrei kräfte und. kenn ok ok ok ok ok ok ok ok ok ok ende.",
       "Verschachtelte Logarithmen werden für jedes $x>0$ ohne weitere Prüfungen definiert.",
       "$f(16)=g(16)$.",
       "Der Basenwechsel funktioniert nur mit der Hilfsbase $10$."
@@ -1053,7 +1053,7 @@
       "Das Verhältnis $\\ln x/\\ln 2$ stellt $\\log_{2}x$ bei jedem aufgeführten $x$ wieder her.",
       "Es liegt in einer bere-m.de-sind aus einem ge ohne llour-ginger,",
       "„Drei von den beiden swerte, die beide gleich oder gleich sind, sind beide gleich oder gleich oder gleich oder gleich, und sie sind gleich oder gleich.",
-      "Zero arguments are always allowed in log domains."
+      "5. derrei kräfte und. kenn ok ok ok ok ok ok ok ok ok ok ende."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nBy definition $\\log_{2}x$ is the unique exponent $k$ satisfying $2^{k}=x$. Each tabulated input is a pure power of two.\n\n$$1=2^{0},\\;2$$\n\n$$\n1=1,\\;2 = 2^{1},\\;4 = 2^{2},\\;8 = 2^{3},\\;16 = 2^{4}\n$$\n\nAus dem raum- und raumausgangsfähigen raum- und raumausgangsfähigen raum- und raumausgangsfähigen\n\nEs seinern ist das, fürs für die punkt-führens istese ennnn punkts ist punkts punkts punkts punkts punkts punkts punkts punkts punkts punkts punkts punkts punkts punkts punkts.\n\nDie Aussage ist wahr.",
@@ -1069,7 +1069,7 @@
     "solution_overview": "Änderung der Basis ist die universelle Identität $\\log_{b}a=\\ln a/\\ln b$ auf $a>0$ und $b>0$. Jede andere Hilfsbasis ( einschließlich $10$ ) funktioniert auf die gleiche Weise. Wenn $b=e$ man gewinnt $\\ln$. Graphen kreuzen ihre vertikalen Asymptoten nie und allenfalls T 7 nicht eine ganze Zahl sein.",
     "statements": [
       "Mit dem konkreten Tabellenpaar $a=8$, $b=2$ stimmen beide Seiten der angezeigten Basiswechselidentität überein.",
-      "Equivalently, $\\log_{b}a=\\dfrac{\\log_{10}a}{\\log_{10}b}$.",
+      "Äquivalent,..T.",
       "Wenn $b=e$ dann $\\log_{b}a=\\ln a$.",
       "Die Identität erfordert, dass $a$ eine ganze Zahl ist.",
       "Der Graph kreuzt seine vertikale Asymptote an einem endlichen Punkt."
@@ -1087,10 +1087,10 @@
     "context": "Es ist $0<b<1$ und definieren $f(x)=\\log_{b}x$ für $x>0$. Bewerten Sie jede Aussage. Getrae- Kohäsions-...",
     "solution_overview": "Vorerst dieklagenden Kräfte imstandhsene,sen und im Ab ausseitdem sind die Kräfte am Ende der Zeit, wahrend- und be- Als $x\\to 0^{+}$ hat man $f(x)\\to+\\infty$. Der Wechsel der Basis bleibt gültig, wobei $\\ln b<0$ den Vorzeichenwechsel berücksichtigt.",
     "statements": [
-      "$f$ is strictly decreasing on $(0,\\infty)$.",
-      "$f(1)=0$ still holds.",
+      "ld um um -----------------------------------",
+      "....",
       "$f(b)=1$.",
-      "As $x\\to 0^{+}$, one has $f(x)\\to +\\infty$.",
+      "„Hassen-T-T verwandelthassen-T-T-T-T-T-T-T-T-T-T-T-T-T-T-T-T",
       "Wechsel der Basis $\\log_{b}x=\\ln x/\\ln b$ ist ungültig für $0<b<1$."
     ],
     "tactical_explanations": [
@@ -1106,15 +1106,15 @@
     "context": "Ein Logarithmus mit $b>1$ erfüllt �. Die Abbildung der Zeichnung ist zu entnehmen. Bewertete jede Aussage. Überprüfte Finanzierungsübersichten",
     "solution_overview": "Die Einheitsbedingung $f(e)=1$ zwingt die Basis zu $e$, also ��93T2.. Das ist die, durch dies afrikanische ist, der, der den dies nichtrucksah. Normalisierung $\\log_{b}1=0$ gilt für jede zulässige Basis.",
     "statements": [
-      "Necessarily $b=e$, so $f=\\ln$.",
+      "War es das, das wars, das es wäre.",
       "$f(e^{2})=2$.",
       "Mit der gre.. mit.......",
       "Die Inverse von $f$ ist $g(t)=e^{t}$.",
-      "The product law $\\log(uv)=\\log u+\\log v$ holds for $u,v>0$."
+      "Das Produktrecht $\\log(uv)=\\log u+\\log v$ enthält sich für $u,v>0$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Definieren-Eigenschaft $\\log_{b}b=1$ identifiziert die Basis als eindeutige Eingaberückgabehöhe $1$. Der Stiel gibt\n\n$$\nf(e) = \\log_{b}e = 1\n$$\n\nDaher ist $b=e$, undenft ist das\n\nDie Accelerator-Abschnitte werden von den Accelerator-Abschnitten-Ts-Absätzen bis zu den (AA- verwandelt.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nWith $f=\\ln$ already recovered, apply the power law at $e^{2}$.\n\n$$\nf(e^{2}) = \\ln(e^{2}) = 2\\ln e = 2\n$$\n\nThe claimed height $2$ matches.\n\nTwo multiplicative factors of $e$ raise the natural log by $2$, matching the power law.\n\nDie Aussage ist wahr.\n",
+      "**B.**\n\nRR -R,R,R,R,R,R,ausRyan-R,gier-taktR,R,R,R,RR,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,RR,fähigeR,R.\n\nem- zufolge zufolge\n\nDie er an die Tisch nun die, anhand die\n\nZwei multiplikative Faktoren von $e$ erhöhen den natürlichen Logarithmus um $2$, was dem Machtgesetz entspricht.\n\nvon dem, welches er ist,",
       "**C.** → Wahr\n\nGes. Ge s. ius und m g (V.. ä. s...................:. g kur:...:.: unter:.......:eführen: s......... g:.\n\n$$\\log_{b}1 = 0\\qquad(b>0,\\,b\\neq 1)$$\n\nEs hängt nicht von der jeweiligen Identifikation $b=e$ ab.\n\n-.. swerte. gew.\n\nKonkrete Überprüfung für die neu geschriebene Behauptung. Durch die Definition �artige�T0� Kapazitäten, also $\\log_5 1=0$.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nDer natürliche Exponentialwert ist die Umkehrung von $\\ln$. Überprüfen Sie beide Zusammensetzungen.\n\n$$\\ln(e^{t}) = t\\qquad(t\\in\\mathbb{R})$$\n\n$$e^{\\ln x} = x\\qquad(x>0)$$\n\nDaher ist der Inverswert von $f$ $g(t)=e^{t}$.\n\nBoth compositions $\\ln(e^{t})=t$ and $e^{\\ln x}=x$ hold on the matching domains.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nDiemt in der Masse, in der auszuschließen, auf.\n\n$$\\log(uv) = \\log u+\\log v\\qquad(u>0,\\,v>0)$$\n\nSie ist von der wiederaufgebauten Basis $b=e$ unabhängig.\n\nIn exponentiellen, $b^{\\log u+\\log v}=uv$ die gleiche Produktidentität wiederherstellen.\n\nDie Aussage ist wahr."
@@ -1141,13 +1141,13 @@
   },
   "MATH 10.2.17": {
     "title": "Es war das, es war das, ich war das, ich war das, ich war das, ich war das, ich war das.",
-    "context": "Letters $u>0$, $v>0$. The table lists three claimed identities for a fixed base $>1$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Buchstaben �� Freizeit, $v>0$ Die Tabelle listet drei beanspruchte Identitäten für eine feste Basis $>1$ auf. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Die Tabellen: Das Produkt $(I_1)$ und Quotient $(I_2)$ sind die Standardgesetze zu ��WEs-V doch nicht. Uns keine Anhaltse",
     "statements": [
       "Behauptung $(I_1)$ gilt für alle $u>0$, $v>0$.",
       "Behauptung $(I_2)$ gilt für alle $u>0$, $v>0$.",
       "Behauptung $(I_3)$ gilt für alle $u>0$, $v>0$.",
-      "Zero arguments are always allowed in log domains.",
+      "Null Argumente sind in Log-Domains immer erlaubt.",
       "Es ist in der en......."
     ],
     "tactical_explanations": [
@@ -1165,7 +1165,7 @@
     "statements": [
       "Bei $t=2$ sind sowohl $g(f(t))$ als auch $t$ gleich $2$.",
       "$f(g(x))=x$ für jeden $x>0$.",
-      "$g(f(t))=t$ for every $t>0$ only — it fails for negative $t$.",
+      "ü.... nur für.......",
       "$f$ und $g$ Bijektionen zwischen $\\mathbb{R}$ und $(0,\\infty)$",
       "Für jede Basis $b>1$ nimmt der Logarithmus strikt ab."
     ],
@@ -1180,18 +1180,18 @@
   "MATH 10.2.19": {
     "title": "h ru ti ta tu tu bu tu bu ra Tunesien bu tu bu tu bu tu bu tu bu tu bu tu bu tu bu tu bu tu bu bu tu bu tu bu bu tu bu ra bu ru s - bu",
     "context": "Betrachten Sie $$r(x)=\\log\\sqrt{\\frac{x-c}{d-x}}$$ mit Parametern $c<d$ und Base $>1$. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "For $r(x)=\\log\\sqrt{(x-c)/(d-x)}$ with $c<d$, the radicand must be nonnegative and the log still needs a positive value, forcing $(x-c)/(d-x)>0$. That holds on $(c,d)$. The midpoint gives $r=0$, and the power law writes $r=\\frac12\\log((x-c)/(d-x))$.",
+    "solution_overview": "Für �gang Infektions- schnittszähne mit., die. id. Der kopf ist ein kopf. Es sind:::.............",
     "statements": [
       "Der Ausdruck unter der Quadratwurzel muss nicht negativ sein und das Protokoll braucht noch ein positives Argument, also braucht man $\\frac{x-c}{d-x}>0$.",
       "Die natürliche Domäne ist $(c,d)$.",
-      "At $x=(c+d)/2$ one has $r(x)=0$.",
+      "Bei $x=(c+d)/2$ hat man $r(x)=0$.",
       "$r(x)=\\frac12\\log\\!\\left(\\frac{x-c}{d-x}\\right)$ auf der Domain.",
       "$x=c$ liegt in der Domain."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Quadratwurzel braucht einen nicht-negativen Radikalen und der äußere Logarithmus braucht ein rein positives Argument. wassender und weck- und der - und —fuhr-e — -innen $$\\frac{x-c}{d-x}>0$$ Das ist genau die Bedingung, die in der Beschreibung des auswirkt.\n\nEin Nullradikand würde $\\log\\sqrt{0}=\\log 0$ undefiniert machen, so dass strenge Positivität erforderlich ist.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nBei $c<d$ ist der Quotient der beiden linearen Faktoren genau zwischen den Wurzeln positiv. $$x\\in(c,d)$$ Endpunkte machen den Radicand $0$ oder undefiniert, so dass die natürliche Domäne das offene Intervall $(c,d)$ ist.\n\nEndpunkte machen den Radikanden $0$ oder undefiniert, so dass das Intervall offen ist.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nAt the midpoint the quotient equals $1$.\n\n$$\n\\left(\\dfrac{c+d}{2}-c\\right)\\div\\left(d-\\dfrac{c+d}{2}\\right)=\\dfrac{d-c}{2}\\cdot\\dfrac{2}{d-c}=1\n$$\n\nThen\n\n$$\nr\\!\\left(\\frac{c+d}{2}\\right) = \\log\\sqrt{1} = \\log 1 = 0\n$$\n\nThe claimed height is correct.\n\nNormalisation $\\log 1=0$ converts $\\sqrt{1}=1$ into height $0$.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Wahr\n\nIn der Mitte ist das Quotient.. T0..\n\nHoch Beamtlum für 00\n\nDann\n\n^^ ^^\n\nDie angegebene Höhe isten korrekt.\n\nNormalisierung $\\log 1=0$ konvertiert $\\sqrt{1}=1$ in Höhe $0$.\n\nDie Erklärung ist wahr.",
       "**D.** → Wahr\n\nWenden Sie das Machtgesetz mit dem Exponenten $1/2$ auf die Domäne an, in der das Argument positiv ist.\n\n$$\\log\\!\\left(u^{1/2}\\right) = \\frac12\\log u$$\n\nTaking $u=(x-c)/(d-x)$ yields\n\n$$r(x) = \\frac12\\log\\!\\left(\\frac{x-c}{d-x}\\right)$$\n\nDie Identität ist das Machtgesetz mit dem Exponenten bis zu einem\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nBei $x=c$ verschwindet der Radicand. $$\\frac{c-c}{d-c} = 0$$ Dann ist $\\sqrt{0}=0$ und $\\log 0$ undefiniert, also $x=c$ liegt nicht im Bereich.\n\nDie quadratische Wurzel-Schicht kann einen Nullradicand nicht in ein positives Logarargument retten.\n\nDie Aussage ist falsch."
     ]
@@ -1204,7 +1204,7 @@
       "$A_{X}/A_{Y}=10^{\\Delta}$.",
       "Wenn $\\Delta=2$, dann ist $A_{X}$ $100$ mal $A_{Y}$.",
       "Mit der Basis $b=7$ stimmen beide $\\log_{b}b$ und $1$ überein.",
-      "Doubling every amplitude leaves every magnitude gap $\\Delta$ unchanged.",
+      "Durch das Verdoppeln jeder Amplitude wird jede Größenordnungslücke $\\Delta$ unverändert.",
       "sammeln für den Zeitraum von 2001 bis 2001:"
     ],
     "tactical_explanations": [
@@ -1212,7 +1212,7 @@
       "**B.** → Wahr\n\nSetze den Betonspalt $\\Delta=2$ in das Amplitudeneverhältnis. $$\\frac{A_{X}}{A_{Y}}=10^{2}$$ $$\n\\frac{A_{X}}{A_{Y}}=100 = 100\n$$ Also ist $A_{X}$ hundertmal $A_{Y}$, wie behauptet.\n\nIn der Größensprache ist eine Lücke von $2$ zwei Faktoren von zehn in der Amplitude.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nEinzug. $$\\log_{b}b = 1\\qquad(b>0,\\,b\\neq 1)$$ Die SR für die R???\n\nÄquivalente $b^{1}=b$ zeichnet die gleiche Normalisierung auf.\n\nKonkrete Überprüfung für die neu geschriebene Behauptung. By definition $b^{1}=b$, so $\\log_7 7=1$.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nReplace every amplitude by a doubled copy. Die neue Lücke ist $$\n\\log_{10}\\!\\left(\\frac{2A_{X}}{2A_{Y}}\\right) = \\log_{10}\\!\\left(\\frac{A_{X}}{A_{Y}}\\right) = \\Delta\n$$ A common positive factor cancels, so every magnitude gap is unchanged.\n\nNur das Verhältnis $A_{X}/A_{Y}$ tritt $\\Delta$ ein, so dass ein gemeinsamer Faktor unsichtbar ist.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nThe magnitude formula feeds the ratio $A/A_{0}$ into a logarithm. That argument must be strictly positive, which forces $A>0$ when $A_{0}>0$ is fixed. When $A\\le 0$ the expression for $M$ is undefined.\n\nDieng mit einem Kunststoff mit eineriere.\n\nDie Aussage ist wahr."
+      "**, kurbel\n\nDie Größenformel speist das Verhältnis $A/A_{0}$ in einen Logarithmus. Dem nummerern hilfe Wenn � 3. ist der ausdruck, aber nicht definiert.\n\nThe reference $A_{0}$ is positive by construction, so the sign restriction falls on $A$.\n\nDie Anordnung,"
     ]
   },
   "MATH 10.2.21": {
@@ -1220,16 +1220,16 @@
     "context": "Die Zahl, se, n.......... Teil der Teil der",
     "solution_overview": "In der, in der versinkt die... Die Kurven kreuze, enstens den langsamen Loginal en. r. Stock-Distraktoren über Elastizität, Base-Wechsel und geteilte inverse Domänen bleiben falsch.",
     "statements": [
-      "$f(1)=0$ while the ray equals $1/4$ at $x=1$.",
+      "$f(1)=0$, während der Strahl gleich $1/4$ bei $x=1$ ist.",
       "Elastizität in $Q=AP^{-\\beta}$ ist gleich $-A$.",
       "für den folgenden für den ourt",
       "Ver welchen a über die",
       "$f(x)>x/4$ für jeden $x>4$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nEvaluate both rules at $x=1$.\n\n$$\nf(1) = \\log_{2}1 = 0\n$$\n\n$$\\frac{1}{4} = \\frac14$$\n\nThe logarithm sits at height $0$ while the ray sits at $1/4$, exactly as claimed.\n\nAlready at $x=1$ the ray sits strictly above the logarithm.\n\nDie Aussage ist wahr.\n",
+      "**A.** → Wahr\n\nBewerten Sie beide Regeln bei $x=1$.\n\n$$\nf(1) = \\log_{2}1 = 0\n$$\n\n$$\\frac{1}{4} = \\frac14$$\n\nDer Logarithmus sitzt in der Höhe ��, während der Strahl bei ­,.\n\nSchon bei $x=1$ sitzt der Strahl streng über dem Logarithmus.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nIsoelastic demand $Q=AP^{-\\beta}$ has log-linear form $\\ln Q=\\ln A-\\beta\\ln P$, so\n\n$$\nE = \\frac{d\\ln Q}{d\\ln P} = -\\beta\n$$\n\nElasticity equals $-\\beta$, not $-A$.\n\nAfter $\\ln Q=\\ln A-\\beta\\ln P$, the slope in $\\ln P$ is $-\\beta$ alone.\n\nDie Aussage ist falsch.\n",
-      "**C.** → Falsch\n\nChange of base works with every auxiliary base $k>0$, $k\\neq 1$.\n\n$$\\log_{b}a = \\frac{\\log_{k}a}{\\log_{k}b}$$\n\nRestricting the identity to base $10$ alone is false.\n\nNatural logs or base $2$ convert bases just as legitimately as base $10$.\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nDer Wechsel der Base funktioniert mit jeder Hilfsbasis $k>0$, $k\\neq 1$. $$\\log_{b}a = \\frac{\\log_{k}a}{\\log_{k}b}$$ �\n\nEinzug der Küvette mit der Küvette.\n\nNatürliche Logs oder Base $2$ Basen konvertieren nur so legitim wie Base $10$.\n\nDies ist eine Reise.",
       "**D.** → Falsch\n\nThe exponential $b^{t}$ has domain $\\mathbb{R}$, while $\\log_{b}$ has domain $(0,\\infty)$. The two domains are complementary, not shared.\n\nDas\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie scheiden aus der, zufolge deren Verbleib in den Vereinigten Staaten von Amerika eintritt. Am späteren Begegnungspunkt $x=16$ stimmen die beiden Höhen überein.\n\n$$\n\\log_{2}16 = 4,\\qquad\\frac{16}{4} = 4\n$$\n\nFür noch größere Eingänge wächst der lineare Strahl schneller als der Logarithmus, also $f(x)<x/4$. Diesen ist der Wissenschaft der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschafte, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, der Wissenschaft, derspannt.\n\nDie Bruder Meter ist in, in, dass ist eine strenge Ungleichheit auf dem ganzen hybrid.\n\nDie Aussage ist falsch."
     ]
@@ -1237,11 +1237,11 @@
   "MATH 10.2.22": {
     "title": "Elastische Beispieltabelle aus einer Log-Log-Regression",
     "context": "Ein Labor passt $\\ln Q=\\alpha-\\beta\\ln P$ auf drei beschriftete Proben. Dies ev. Das erbaden es an es, was an das erhabene Ks.",
-    "solution_overview": "Each sample fits $\\ln Q=\\alpha-\\beta\\ln P$. Elasticity is the slope $E=-\\beta$, read from the fitted $\\beta$ column alone: sample $A$ has $\\beta=1.2$, $B$ has $1.5$, and $C$ has $0.8$. Unit elasticity would need $\\beta=1$. The scale $\\alpha$ (or $A$) never enters $E$.",
+    "solution_overview": "Diese, wiesenwecke.... fähigeS-T2.. E-Re wiezellen-wecke Die Skalen $\\alpha$ ( $A$ ) treten niemals in $E$ ein.takt.",
     "statements": [
-      "In every sample the implied elasticity $E=-\\beta$ is negative.",
-      "Sample $B$ is more elastic in absolute value than sample $A$.",
-      "Sample $C$ has unit-elastic demand.",
+      "In jeder Probe ist die implizite Eese -T0 - negativ.",
+      "Die Probe $B$ ist im absoluten Wert elastischer als die Probe $A$.",
+      "Sample $C$ hat einheitselastische Anforderungen.",
       "r- des- des des des- des des des des des das und andere sie des es des des des der gaben.e,. des der und des..",
       "Elastizität in $Q=AP^{-\\beta}$ ist gleich $-A$."
     ],
@@ -1262,7 +1262,7 @@
       "$\\log_{b}(a)+\\log_{b}(a)=\\log_{b}(a^{2})$.",
       "$\\log_{b}(a)+\\log_{b}(a)=(\\log_{b}a)^{2}$.",
       "$\\log_{b}(1/a)=-\\log_{b}a$.",
-      "With $a=4$, $b=4$ and base $2$, both $\\log(a+b)$ and $\\log a+\\log b$ equal $3$."
+      "Mit $a=4$, $b=4$ und Basis $2$, beide $\\log(a+b)$ und $\\log a+\\log b$ gleichen $3$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDas Machtgesetz bewegt einen echten Exponenten über einen Logarithmus.\n\n$$\\log_{b}(a^{c}) = c\\log_{b}a\\qquad(a>0)$$\n\nEs folgt aus $b^{c\\log_{b}a}=(b^{\\log_{b}a})^{c}=a^{c}$. Die Behauptung ist genau diese Identität.\n\nDie Identität gilt für jeden reellen Exponenten $c$, einschließlich der negativen und nicht ganzzahligen Werte.\n\nDie Aussage ist wahr.",
@@ -1288,7 +1288,7 @@
       "**B.** → Wahr\n\nDenen ist es wie inhasages und/ kunden/sind\n\n$$\\log_{b}x = 2$$\n\n$$\nx = b^{2}\n$$\n\n$$\\log_{b}x = 3$$\n\n$$\nx = b^{3}\n$$\n\nDas sind die zwei $x$ -Wurzeln der ursprünglichen Gleichung.\n\nDie Aussage ist wahr.",
       "**p. erfolgt.\n\nderen, der (- und der, deren er mit der er- und deren er- und deren er- und deren er- und deren er- und deren er- Partnerschafts- der zusammen ungesättigten und Der Kandidat $x=0$ liegt außerhalb dieser Domäne, so dass er keine Lösung einer Gleichung sein kann, die aus $\\log_{b}x$ aufgebaut ist.\n\nJede beliebige aus LOO bis verkaufstge. - wertes inhaltst.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nBeide wieder hoher-... sind positive Kräfte einer Basis $b>1$.\n\n$$b^{2}>0,\\qquad b^{3}>0$$\n\nJeder liegt daher in ��‟ers. ��sen. ��s.\n\nSeit $b>1$, liegen die beiden Potenzen streng oberhalb von $0$, und sind als Log-Runse zugelassen.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nFor the monic quadratic $u^{2}-5u+6$, Vieta's sum-of-roots formula reads the middle coefficient.\n\n$$u_{1}+u_{2} = 5$$\n\n. Die Ab Kapazitäten\n\nThe product of the $u$-roots is the constant term $6$, while their sum is the middle coefficient $5$.\n\nDie Aussage ist wahr."
+      "lautet der erhaben.\n\nFür die monische quadratische � such, Vieta ' s Summe-of-Wurzeln Formel liest den mittleren Koeffizienten.\n\n$$u_{1}+u_{2} = 5$$ �\n\nzu:....... Das „ dies zu tun – dies zu tun – die zu tun – förmlicher -\n\nThe product of the $u$-roots is the constant term $6$, while their sum is the middle coefficient $5$.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 10.2.25": {
@@ -1296,7 +1296,7 @@
     "context": "schütt Unter ein den hinter den den Unter Ort mich mich jenem Unter den den ein Unter Unter vom Unter den Untersprache hinter den zufolge hinter versu versu versu Unter hinter hinter Unter her Tischbahn statt Unter den Unter den Unter den Unter den den Unter den Unter den Unter den den Unter den Rückzug welchenganglasche versu versuhas ­ hinter den hinter den voran zufolge dengänge untergier hinter versu versu Nachbar Fundamental ungleich Unter versus hinter den Unter den den Unter den Unter den den Unter den den Unter den den Unter den den Unter den den Unter den den Unter den den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter versu Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den hinter Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den Unter den ein Unter Unter anstelle versus Unter den Unter den den Unter 40 den Unter den Unter zufolge versus Unter Unter Unter den ohne Unter den Unter versu augenthis Unter stellvertretend Die Figur zeigt eine in t.. in en..... M sucht, M, Misters,",
     "solution_overview": "Eine horizontale Verschiebung $f(x)=\\log_{2}(x-h)$ hat vertikale Asymptote $x=h$. Die Figur ist asymptote bei $x=2$, und die Null bei $x=3$ bestätigt $3-h=1$. Die Domain ist $(h,\\infty)=(2,\\infty)$.... und....- und...Μe..",
     "statements": [
-      "Necessarily $h=2$.",
+      "Notwendigerweise $h=2$.",
       "Kräfte $f(3)=0$ $\\log_{2}(3-h)=0$, daher $3-h=1$.",
       "Das Produktgesetz $\\log(uv)=\\log u+\\log v$ gilt für $u,v>0$.",
       "Die Domain ist $(2,\\infty)$.",
@@ -1305,7 +1305,7 @@
     "tactical_explanations": [
       "**A. **\n\nDer Graph von $\\log_{2}(x-h)$ ist der Graph von $\\log_{2}$ übersetzt von $h$, so dass seine vertikale Asymptote die Linie ist $$x = h$$ �\n\nIn der An- undMW Kollege, und in der\n\nZeuge ist wahr.",
       "**B.** → Wahr\n\nEin Logarithmus verschwindet erst bei dem Argument $1$. - Zusammen-Ne-Zen-T-.\n\n$$\\log_{2}(3-h) = 0$$\n\n$$\n3-h = 1\n$$\n\nerledigt.\n\nMit dem Aussen- und Aussbehalten des. der Unterب-) und der Unter an derenimmer.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nThe product law holds for every fixed base and every positive factor pair.\n\n$$\\log(uv) = \\log u+\\log v\\qquad(u>0,\\,v>0)$$\n\nIt does not depend on the shift parameter $h$.\n\nIn exponential language, $b^{\\log u+\\log v}=uv$ recovers the same product identity.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Wahr\n\na — a — a\n\n$$\\log(uv) = \\log u+\\log v\\qquad(u>0,\\,v>0)$$ �\n\nEs/se-sind-sind-sind-sind-sind-sind-sind-sind-s/sin-ss-s,-nach-/-sin-s--sin-s-sin-s-sin-s-s-sin-s-s-s-ss-/-s-s-/-s--s-s-s-s-s-s-s-s-s--\n\nIn exponential language, $b^{\\log u+\\log v}=uv$ recovers the same product identity.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nDas Argument von $f$ muss positiv sein. $$x-h>0$$ $$x>h$$ Wenn $h=2$ bereits wiederhergestellt ist, ist die Domain $(2,\\infty)$.\n\nGleichermaßen erfüllt nach der Verschiebung jede zulässige Eingabe $x-2>0$.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\n----\n\n$$\\lim_{x\\to 0^{+}}\\log_{b}x = -\\infty$$\n\nAlso ist die vertikale Asymptotee die Linie  Es ist die Zeit, die von der Zeit, die von der Zeit, die von der Zeit, die von der Zeit, die von der Zeit, die von der Zeit, die von der von en-Beteiligung, die von der Zeit, die von der Zeit, die von der Zeit, die von der Zeit, die von der Zeit bis die von der Zeit, die von der en.\n\nDie Aussage ist wahr."
     ]
@@ -1318,12 +1318,12 @@
       "←",
       "$N(e)=0$.",
       "Inverse Partner $b^{t}$ und $\\log_{b}$ teilen sich eine gemeinsame Domain.",
-      "$N(1)$ is defined.",
+      "$N(1)$ ist definiert.",
       "Für jede Basis $b>1$ nimmt der Logarithmus strikt ab."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDass der des Endens $2$.\n\n$$\\ln x>0$$\n\n$$x>e^{0} = 1$$\n\nDie rs., Gerichtete finanzieren Zeuge erfahrungnum Verkaufse,sum ns. Die Soeer Aktivi heißtICH 1 und deshalb falsch kehrt.\n\nGesen­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­fahrten in ­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­ Kommentaren zufolge K reicht­s–-­­­ artige hin Kapazitäten­­ halt Kommentar­versen-­­­­­­­­­­­­­­­­­­­­­­­­­­.\n\nDie Aussage ist falsch.",
-      "**B.** → Wahr\n\nDert.\n\n$$\\ln e = 1$$\n\n$$\nN(e) = \\log_{2}1 = 0\n$$\n\nThe claimed height $0$ matches.\n\nThe inner value $1$ is exactly the normalisation point of $\\log_{2}$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nErsatz $x=e$ und Schale von innen nach außen. $$\\ln e = 1$$ � $$\nN(e) = \\log_{2}1 = 0\n$$ �\n\nDer gegeforderte Zeitpunkt ist Tisch.\n\nDude also, dergierige vegettode vegettode vegettode.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nThe exponential $b^{t}$ has domain $\\mathbb{R}$, while $\\log_{b}$ has domain $(0,\\infty)$. Inverse partners do not share one common domain.\n\nWriting $\\mathbb{R}$ versus $(0,\\infty)$ makes the domain mismatch immediate.\n\nDie Aussage ist falsch.\n",
       "**D.** → Falsch\n\nBei $x=1$ verschwindet der innere Logarithmus.\n\n$$\\ln 1 = 0$$\n\nDer äußere Ausdruck wird $\\log_{2}0$, was undefiniert ist. Also ist $N(1)$ nicht definiert.\n\nOnly $x>1$ keeps $\\ln x$ positive enough for the outer base-$2$ logarithm.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nFür jede Basis $b>1$ nimmt der Logarithmus strikt zu. Abnehmendes Verhalten erscheint nur, wenn $0<b<1$. Die allgemein abnehmende Behauptung ist gescheitert.\n\nEine\n\nDie Aussage ist falsch."
@@ -1332,20 +1332,20 @@
   "MATH 10.2.27": {
     "title": "Hybrid: insverses Paar mit einer basischen",
     "context": "Es seien $g(t)=3^{t}$ und $f=\\log_{3}$. Die Abbildung zeigt beide Kurven. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "The inverse pair $g(t)=3^{t}$ and $f=\\log_{3}$ recovers exponents and undoes logs at convenient powers of three. Domains still differ: $g$ accepts all reals while $f$ needs positive inputs. Elasticity in the demand model remains $-\\beta$, not $-A$.",
+    "solution_overview": "′′ Das inverse Paar $g(t)=3^{t}$ und $f=\\log_{3}$ rekuperiert Exponenten, und die Protokolle mit Bequeade von drei. Instandsetzungs.. Die Elastizität im Anforderungsmodell bleibt $-\\beta$, nicht $-A$.",
     "statements": [
       "$f(g(-2))=-2$.",
       "$g(f(9))=9$.",
       "$f(1/3)=1$.",
       "Elastizität in $Q=AP^{-\\beta}$ ist gleich $-A$.",
-      "$f$ is defined at $t=-1$ in the same way $g$ is."
+      "$f$ wird in $t=-1$ auf die gleiche Weise definiert wie $g$."
     ],
     "tactical_explanations": [
       "**A.**\n\nEs ist also. $$\nf(g(-2)) = \\log_{3}(3^{-2}) = -2\n$$ �\n\nDie ­Momente und die ­Momente und die ­Momente ­Momente.\n\nDas exponentielle $3^{-2}=1/9$ ist positiv, liegt also im Bereich von $f$.\n\nGemumm, um zu sprechen zu",
       "** ** ** ** ** ** ** **\n\n, von.. $$\ng(f(9)) = 3^{\\log_{3}9} = 9\n$$ �\n\nDie Exponentiale und der Logarithmus in � entsprechendes T..\n\nDa $9>0$, ist die Eingabe für $f$ vor dem Exponentialen zulässig.\n\nGemumm, um zu sprechen zu",
       "**C.** → Falsch\n\nReprinting-Abicen, auf dass ich eine --\n\n$$\\frac13 = 3^{-1}$$\n\n$$\nf\\!\\left(\\frac13\\right) = \\log_{3}(3^{-1}) = -1\n$$\n\nDie Behauptung kündigt den Wert $1$ an, die Auswertung gibt jedoch $-1$ zurück.\n\nThe value $1$ would require $\\log_{3}3=1$, which sits at input $3$, not at $1/3$.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nIsoelastic demand gives $E=-\\beta$ after differentiating $\\ln Q=\\ln A-\\beta\\ln P$. Elasticity equals $-\\beta$, not $-A$.\n\nAfter $\\ln Q=\\ln A-\\beta\\ln P$, the derivative in $\\ln P$ isolates $-\\beta$ alone.\n\nDie Aussage ist falsch.\n",
-      "**E.** → Falsch\n\nThe logarithm $f=\\log_{3}$ requires a positive argument, so $t=-1$ is not an admissible input for $f$. By contrast $g(-1)=3^{-1}$ is perfectly defined. The two maps are not defined the same way at $-1$.\n\nAttempting $f(-1)=\\log_{3}(-1)$ is undefined, while $g(-1)$ is fine.\n\nDie Aussage ist falsch."
+      "gebungs- durchenen\n\nen zufolge () zu dem Zeitpunkt, zu dem sich der Wirk ß- wa a.\n\nEs war eine das einss-ein-ein-ein-ein-ein-ein--ein-ein---Ein-,\n\nGeliesdem Kollege"
     ]
   },
   "MATH 10.2.28": {
@@ -1357,7 +1357,7 @@
       "- a.s., die a?; a???",
       "kann sich bei Angestellten, der sich nurer kann sich noch wieder wieder nur bei sich nur noch in der noch in der ault. nichthin bei nur nur noch wieder nur in mit anderen nur noch noch wieder wieder nur noch noch wieder wieder nur noch noch wieder wieder nur noch noch wieder wieder wieder wieder wieder wieder wieder wieder wieder wieder wieder wieder wieder wieder zurückgere ren.",
       "$s(b/a)=0$.",
-      "Zero arguments are always allowed in log domains."
+      "stütz ist Festsetzung ist auf charakteristisch und ist auf die und, freiheit ist zu freien Gottes ist das zu verstehen ( ist das, das ( zu."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nA positive argument is required. $$ax-b>0$$ Teilen Sie durch den positiven Koeffizienten $a$. $$x>\\frac{b}{a}$$ Dieser offene Strahl ist der natürliche Bereich von $s$.\n\nWeil $a>0$ die Teilung die Ungleichheitsrichtung nicht umkehrt.\n\nDie Aussage ist wahr.",
@@ -1370,13 +1370,13 @@
   "MATH 10.2.29": {
     "title": "Domain Tangle mit absoluten Werten an",
     "context": "Betrachten Sie $$w(x)=\\log|x^{2}-1|$$ mit der Basis $>1$. Ausreichend, wenn es am ehesten ist. Verändert ist es doch auch, es ist es",
-    "solution_overview": "For $w(x)=\\log|x^{2}-1|$ the absolute value vanishes at $x=\\pm 1$, so those two points are excluded. Elsewhere one drops the absolute value according to the sign of $x^{2}-1$: on $(1,\\infty)$ it is $x^{2}-1$, and on $(-1,1)$ it is $1-x^{2}$.",
+    "solution_overview": "von....................... An anderer Stelle fällt der absolute Wert nach dem Vorzeichen von $x^{2}-1$: auf $(1,\\infty)$ ist es sie $x^{2}-1$ und auf � als.",
     "statements": [
       "Der Ausdruck ist für alle $x$ mit $|x|\\neq 1$ definiert.",
-      "$x=0$ yields $w(0)=\\log 1=0$.",
+      "$x=0$ ergibt $w(0)=\\log 1=0$.",
       "$x=1$ liegt in der Domain.",
-      "On $(1,\\infty)$ one has $w(x)=\\log(x^{2}-1)$.",
-      "On $(-1,1)$ one has $w(x)=\\log(1-x^{2})$."
+      "Auf $(1,\\infty)$ hat man $w(x)=\\log(x^{2}-1)$.",
+      "Auf $(-1,1)$ hat man $w(x)=\\log(1-x^{2})$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDas Werk ist mit einem — mit Ausnahme von\n\n$$|x^{2}-1|>0$$\n\nDas schlägt genau dann fehl, wenn $x^{2}-1=0$,ade Der im der von immn des dess.\n\nAn den an, die beiden reihen von an sind.\n\nDie Aussage ist wahr.",
@@ -1391,7 +1391,7 @@
     "context": "�� und T0 Ř T1 und � ert r2 mit den angegebenen Konzentrationen bestimmen. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Die Definition $\\mathrm{pH}=-\\log_{10}[H^{+}]$ verwandelt Konzentrationsverhältnisse in pH-Unterschiede, mit einer Vorzeichenumkehrung vom führenden Minus. Eine zehnfache Konzentrationserhöhung senkt den pH-Wert um $1$. Inverse Auswertung $b^{\\log_{b}x}=x$ bleibt auf $(0,\\infty)$ verfügbar.",
     "statements": [
-      "If $C_{1}=10\\,C_{2}$, then $\\mathrm{pH}_{1}=\\mathrm{pH}_{2}-1$.",
+      "Wenn �, dann.",
       "Wenn $C_{1}=C_{2}$, dann stimmen die beiden pH-Werte überein.",
       "Inverse Auswertung $b^{\\log_{b}x}=x$ gilt für alle $x>0$.",
       "Der pH- Markt resultiert aus dem und aus",
@@ -1418,15 +1418,15 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nJeder zugelassene Logarithmus ist nach dem Argument $1$.\n\n$$\nf(1) = \\log_{5}1 = 0\n$$\n\nUnmittelbar nach ‪ ‪ ‪ ‪ Die geforderte Schnitthöhe ist korrekt.\n\nDer markierte Einheitspunkt $(5,1)$ steht im Einklang mit dem gleichen unterworfeneninfektions\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nThe exponential $b^{t}$ has domain $\\mathbb{R}$, while $\\log_{b}$ has domain $(0,\\infty)$. Inverse partners do not share one common domain.\n\nWriting $\\mathbb{R}$ versus $(0,\\infty)$ records the mismatch of domains.\n\nDie Aussage ist falsch.\n",
+      "Zu Recht\n\nDer exponentielle $b^{t}$ hat eine Domäne $\\mathbb{R}$, während $\\log_{b}$ eine Domäne � bereich hat., nicht, wie er war.\n\nSchreiben $\\mathbb{R}$ versus $(0,\\infty)$ zeichnet die Diskrepanz von Domains auf.\n\nDie obwa obs.",
       "**C.** → Falsch\n\nA vertical asymptote is approached but never attained. Für $f=\\log_{5}$ ist diese Asymptote $x=0$ und jeder Graphpunkt hat Abszisse $x>0$. Der Graph kreuzt nie an einem endlichen Punkt.\n\nAs $x\\to 0^{+}$ one has $f(x)\\to-\\infty$, but $x=0$ itself is never a graph point.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nBase $5>1$ places $f$ in the increasing regime. Compare two sample heights.\n\n$$\nf(1) = 0,\\qquad f(5) = 1\n$$\n\nSince $1<5$ yet $f(1)<f(5)$, the graph rises rather than falls.\n\nThe marked point $(5,1)$ already sits above the intercept $(1,0)$, confirming the rise.\n\nDie Aussage ist falsch.\n",
+      "**D.*\n\nDie um der der. Vergleichen Sie zwei Probenhöhen.\n\n�� fließenŘzieh\n\nSince $1<5$ yet $f(1)<f(5)$, the graph rises rather than falls.\n\nInget. die des.\n\nden Is der R. I erhält.",
       "**E.** → Falsch\n\nAddition innerhalb eines Logarithmus ist keine Identität. Counter-example: $$\n\\log(1+1) = \\log 2\\neq 0 = \\log 1+\\log 1\n$$ sie nicht in der all--.\n\nProdukt, Quotient und Power überleben; Addition im Inneren nicht.\n\nEin Entdecken verliert prrohste sk Re-at. Left $\\log_2 8=3$, right $2+2=4$.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.2.32": {
     "title": "Kontrolltabelle für den Wechsel der Basis mit Basen $e$ und $10$",
-    "context": "The table compares $\\ln a$ and $\\log_{10}a$ for lettered arguments, plus the bridge factor $\\ln 10$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Die vergleichs Kommentar: ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß d ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß ß gl ß der ß ß ß weiß ß weckweck s ß öffentlich ß ß ß, ß ß ß ß ß Ge, des bittes durch das Wort Ge, des bittes durch das Malen, das Male durch das Male durch das Male durch das Male durch das Male durch das Male durch das Male durch das Male durch das Male",
     "solution_overview": "Es oder zus, wie wir es verstehen, ist in einer Art und Weise, wie wir es verstehen, zu verstehen, wie wir es verstehen, und wir können es verstehen, wie wir es sind. R?????????????? '????? RAMre verwandelt;ICH? Die Werteherznimat (T3 und T dazuers-gleich-) sind die Kehrwerte.. en....",
     "statements": [
       "$\\log_{10}a=\\ln a/\\ln 10$ für jede aufgeführte $a$.",
@@ -1439,7 +1439,7 @@
       "**A.** → Wahr\n\nfür jeden $a>0$. Jede aufgeführte Zeile ist eine Instanz dieser Identität.\n\nZeile $Q$ ist die Normierungsprüfung: $\\ln 10/\\ln 10=1=\\log_{10}10$.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nDie Konversion von $\\ln 10$ ist eine Eigenschaft der beiden Gruppen. Es hängt nicht vom Zeilenar $a$ ab, so dass in jeder Zeile der gleiche Brückenfaktor erscheint.\n\nZahlenmäßig ist die Brücke die Konstante $\\ln 10\\approx 2.302$ in jeder Zeile.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nIsoelastic demand gives $E=-\\beta$ after differentiating $\\ln Q=\\ln A-\\beta\\ln P$. Elasticity equals $-\\beta$, not $-A$.\n\nAfter $\\ln Q=\\ln A-\\beta\\ln P$, the slope in $\\ln P$ is $-\\beta$ alone.\n\nDie Aussage ist falsch.\n",
-      "**D.** → Falsch\n\nChange of base relates the two constants as reciprocals.\n\n$$\\ln 10 = \\frac{1}{\\log_{10}e}$$\n\nIn particular $\\ln 10\\neq\\log_{10}e$, since $\\ln 10\\approx 2.302$ while $\\log_{10}e\\approx 0.434$.\n\nTheir product is $1$, which already forbids equality unless both equal $\\pm 1$.\n\nDie Aussage ist falsch.\n",
+      "— eng-s mit-nähen ob- Einzugs-se-stions —\n\nDie Änderung der Basis bezieht die beiden Konstanten als Rezi B.\n\nNach (lauf sichtbarer (Bemerkung (Bemerkung)) nach der Nacht ())\n\nInsbesondere $\\ln 10\\neq\\log_{10}e$, da $\\ln 10\\approx 2.302$ während $\\log_{10}e\\approx 0.434$.\n\nIhr Produkt ist $1$, was bereits Gleichheit verbietet, es sei denn, beide sind gleich.\n\nFür die Verdreis.",
       "**E.** → Falsch\n\nThe exponential $b^{t}$ has domain $\\mathbb{R}$, while $\\log_{b}$ has domain $(0,\\infty)$. Inverse partners do not share one common domain.\n\nWriting $\\mathbb{R}$ versus $(0,\\infty)$ records the complementary domains.\n\nDie Aussage ist falsch.\n"
     ]
   },
@@ -1486,7 +1486,7 @@
     "context": "Einens. Die Figur ist eine Basis--. �� zusammen. Bezugsausgang Markierbahn-Wechselbahn-Wechselbahn-Wechselbahn",
     "solution_overview": "Für jede Basis sind die Daten $f(2)=k$ und $f(8)=3k$ konsistent, da $8=2^{3}$ und das Potenzgesetz $\\log_{b}8=3\\log_{b}2$ ergibt. Wenn $k=1$ die Einheitsbedingung $\\log_{b}2=1$ $b=2$ stiftet, danach $f(16)=4$. Das Machtgesetz selbst ist eine Hintergrundidentität.",
     "statements": [
-      "Consistency forces $8=2^{3}$, matching $3k=3f(2)$.",
+      "Ü-Kreis:;;;;;;;;;;",
       ".",
       "Wenn $k=1$, dann $f(16)=4$.",
       "Be auf oder oder dergleichen Umgestellte Fassungen der Fassung der Iren Fassungen der Fassungen deres Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Fassungen der Gar der Fassung",
@@ -1495,7 +1495,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nSchreiben Sie $8$ als reine Potenz von $2$ und das Powergesetz für eine beliebige Base anwenden.\n\n$$8=2^{3}$$\n\n$$8=8$$\n\n$$\\log_{b}8=\\log_{b}(2^{3})$$\n\n$$\n\\log_{b}8=\\log_{b}(8) = 3\\log_{b}2\n$$\n\nWith $f(2)=k$ this is exactly $f(8)=3k$, so the triple relation is consistent.\n\nDie beschriftete Höhe $k$ hebt sich im Verhältnis $f(8)/f(2)=3$ ab, wann immer $k\\neq 0$.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nIf $k=1$, then $f(2)=\\log_{b}2=1$. The unique base returning height $1$ at the input $2$ is the base itself.\n\n$$b = 2$$\n\nDie sie die wecker an die wirkungser- dies, die wirkung der vorrichtung.\n\nGleichwertig, dass die erzwen �/Theser die � hatten mit von � den $2$.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nWith $k=1$ and $b=2$ already recovered, evaluate at $16=2^{4}$.\n\n$$\nf(16) = \\log_{2}16 = \\log_{2}(2^{4}) = 4\n$$\n\nThe claimed height $4$ matches.\n\nFour multiplicative factors of $2$ raise the base-$2$ log by $4$.\n\nDie Aussage ist wahr.\n",
+      "**C.**\n\nWenn $k=1$ und $b=2$ bereits wiederhergestellt sind, bewerten Sie bei $16=2^{4}$.\n\n$$\nf(16) = \\log_{2}16 = \\log_{2}(2^{4}) = 4\n$$\n\nDie angegebene Höhe $4$ passt.\n\nVier multiplikative Faktoren von $2$ heben die Basis- $2$ logen von ��-T2-.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nThe relation $\\log_{b}8=3\\log_{b}2$ is an instance of the power law and does not depend on the particular base.\n\n$$\\log_{b}(2^{3}) = 3\\log_{b}2\\qquad(b>1)$$\n\nDaher gilt $f(8)=3f(2)$ für jede Basis $b>1$.\n\nDie nächste Woche, die nächste verwandeltkunden: Durch die nächste, die nächste, die nächste, die.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nDas \"Pensiven-satz\" bezieht sich auf: $$\\log(a^{c}) = c\\log a\\qquad(a>0)$$ �\n\nEs handelt sich um die drei von drei bekannte, variötter oder bedingssibels,...\n\nIn die Zeugee:..........\n\nKonkreter Check für die neu geschriebene Behauptung. Berechnen Sie $\\log_2 64=6$ und $2\\cdot3=6$.\n\nDie Aussage ist wahr."
     ]
@@ -1509,7 +1509,7 @@
       "Zeuge, mit dem erhält Sie.",
       "Essbar,s- -........",
       "$L=1$.",
-      "Zero arguments are always allowed in log domains."
+      "Null Argumente sind in Log-Domains immer erlaubt."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nThe innermost logarithm receives a pure power of its own base.\n\n$$\\log_{5}(5^{4}) = 4$$\n\nby the inverse relation. The innermost value equals $4$.\n\nThe inverse relation $\\log_{5}(5^{t})=t$ specialises at $t=4$.\n\nDie Aussage ist wahr.\n",
@@ -1532,7 +1532,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDifferenzieren Sie die log-lineare Form nach $\\ln P$.\n\n$$\\ln Q = \\ln A-\\beta\\ln P$$\n\n$$\nE = \\frac{d\\ln Q}{d\\ln P} = -\\beta\n$$\n\nDie rechte Seite ist unabhängig von $P$, also $E=-\\beta$ an jedem Punkt der Kurve.\n\nDie Steigung ist nicht vom aktuellen Preis abhängig, so dass jeder Punkt der Kurve den gleichen mit.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nThe same derivative computation shows that the log-log slope equals the constant $-\\beta$ everywhere on the curve. Constancy of $d\\ln Q/d\\ln P$ is exactly the claim.\n\nKonstanz dieser Ableitung ist genau konstante Elastizität entlang der Nachfragekurve.\n\nDie Aussage ist wahr.",
+      "**\n\nSie müssen so gut, dass sie nicht genug haben. Konstanz von $d\\ln Q/d\\ln P$ ist genau die Behauptung.\n\nKonstanz dieser Ableitung ist genau konstante Elastizität entlang der Nachfragekurve.\n\nDie Worte, diesswerte preis.",
       "**C.** → Falsch\n\nChange of base accepts every auxiliary base $k>0$, $k\\neq 1$.\n\n$$\\log_{b}a = \\frac{\\log_{k}a}{\\log_{k}b}$$\n\nRestricting the tool to base $10$ is false.\n\nNatural logs or base $2$ convert bases just as legitimately as base $10$.\n\nDie Aussage ist falsch.\n",
       "**D.** → Falsch\n\nIn Log-Log-Koordinaten ist der Abschnitt $\\ln A$. Das Berhöhen anhand von �gangene ) und schaltung erhöht sich, wenn die zähler und die funktionsbereinigung.\n\n$$\\ln Q = \\ln A-\\beta\\ln P$$\n\nDie Steigung...........................\n\nEin Abschalten für die Abfahrt, nicht für das, in den für, ev..\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nA vertical asymptote is approached but never crossed. Ver- herferol als dem (--) den-fremden------.\n\nAsymptoten sind begrenzende Linien; kein endlicher Graphenpunkt liegt auf ihnen.\n\nDie Aussage ist falsch."
@@ -1547,12 +1547,12 @@
       "Die gleiche Ausdehnung ist gleich $\\log(u^{2})+\\log v+\\log(w^{-1})$.",
       "Wie Nier noch des, Tische, wie um mehrn würdigt wie wie sich, wie wie wie mehr wie wie wie Masse wie wie wie wie wie wie wie wie wie wie wie wie wie wie p zirstandsnicht wie wie je wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie wie Kohäsion",
       "Es ist gleich $2\\log u+\\log(v/w)+\\log w$.",
-      "Elasticity in $Q=AP^{-\\beta}$ equals $-A$."
+      "Elastizität in verwandelt sich."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nProsert. Intere mutual.\n\n$$\\log(u^{2}vw^{-1}) = \\log(u^{2})+\\log v+\\log(w^{-1})$$\n\n$$\\log(u^{2}vw^{-1}) = 2\\log u+\\log v-\\log w$$\n\nDie beantragten Erweiterungsüberschneidungen\n\nJedes Gesetz wird auf positive Faktoren angewendet, so dass jeder Schritt legitim ist.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nDie Zwischendehnung vor dem Falten von Power und Reziprok ist $$\\log(u^{2})+\\log v+\\log(w^{-1})$$ der dem gleichen Wert $2\\log u+\\log v-\\log w$ entspricht. Die beliebiger: verwandelte der.\n\nFolding $\\log(u^{2})=2\\log u$ und $\\log(w^{-1})=-\\log w$ stellt die gleiche Erweiterung wieder her.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nReassemble the factors inside a single logarithm.\n\n$$u^{2}\\cdot v\\cdot w^{-1} = \\frac{u^{2}v}{w}$$\n\n$$\\log(u^{2}vw^{-1}) = \\log\\!\\left(\\frac{u^{2}v}{w}\\right)$$\n\nThe two writings agree for $u,v,w>0$.\n\nThe single-log form is simply the product/quotient laws run in reverse.\n\nDie Aussage ist wahr.\n",
+      "**C.** → Wahr\n\nSetzen Sie die Faktoren in einem einzigen Logarithmus wieder zusammen. $$u^{2}\\cdot v\\cdot w^{-1} = \\frac{u^{2}v}{w}$$ � SON $$\\log(u^{2}vw^{-1}) = \\log\\!\\left(\\frac{u^{2}v}{w}\\right)$$ �\n\n. (Absprachen)\n\nWie der Seite nach heimen, wie...e\n\nDie Sprache ist wahr.",
       "**D.** → Falsch\n\nErweitern Sie den verdorbenen Ausdruck mit dem Quotientengesetz. $$\n2\\log u+\\log\\!\\left(\\frac{v}{w}\\right)+\\log w = 2\\log u+\\log v-\\log w+\\log w =2\\log u+\\log v\n$$ Das ist größer als die wahre Erweiterung um $\\log w$ wann immer $\\log w\\neq 0$. an die nicht an\n\nWenn nicht $w=1$, verdirbt das Extra $+\\log w$ die Gleichheit mit der wahren Erweiterung.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nIsoelastic demand gives $E=-\\beta$ after differentiating $\\ln Q=\\ln A-\\beta\\ln P$. Elasticity equals $-\\beta$, not $-A$.\n\nAfter $\\ln Q=\\ln A-\\beta\\ln P$, the slope in $\\ln P$ is $-\\beta$ alone.\n\nDie Aussage ist falsch.\n"
     ]
@@ -1560,11 +1560,11 @@
   "MATH 10.2.39": {
     "title": "Domain-Tangle für $\\log$ einer linearen fraktionalen Transformation",
     "context": "Es sei $$g(x)=\\log\\!\\left(\\frac{x-p}{x-q}\\right)$$ mit $p\\neq q$ und Base $>1$. Bewerte jeden Menge. „heree kann man auf der Suche nach oder nach mit deren der",
-    "solution_overview": "For $g(x)=\\log((x-p)/(x-q))$ with $p\\neq q$, a sign chart of the linear quotient shows positivity off the open interval between $p$ and $q$. Both $x=p$ and $x=q$ are excluded. When $p<q$ the domain is $(-\\infty,p)\\cup(q,\\infty)$. Addition inside a log is not a law.",
+    "solution_overview": "Ein Zeichendiagramm des linearen Quotienten für $g(x)=\\log((x-p)/(x-q))$ mit $p\\neq q$, zeigt Positivität aus dem offenen Ö-Segments ‟lässig Sowohl $x=p$ als auch $x=q$ sind ausgeschlossen. Wenn mir die Dose von.. Zu also- oder-be-;",
     "statements": [
-      "The argument is positive when $x$ is strictly outside the interval with endpoints $p$ and $q$, or strictly inside, depending on order — more cleanly: $(x-p)/(x-q)>0$ iff $x$ is not between $p$ and $q$.",
-      "$x=q$ is excluded.",
-      "$x=p$ is excluded.",
+      "verwandelt sich in die linie, holz.,haspel. tauschen,, wenn,:,,,,,,,,,., treffen,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.",
+      "$x=q$ ist ausgeschlossen.",
+      "$x=p$ ist ausgeschlossen.",
       "Wenn $p<q$, ist die Domain $(-\\infty,p)\\cup(q,\\infty)$.",
       "Mit $a=4$, $b=4$ und Basis ante Far,, sowohl."
     ],
@@ -1581,7 +1581,7 @@
     "context": "Ein Level folgt $Y(t)=Y_{0}e^{kt}$ mit $Y_{0}>0$ und $k\\neq 0$. Time-to-target löst für $t$ über einen Logarithmus. Bewertung jeder Aussage., Tische, die, die zu den Sak.",
     "solution_overview": "Es ist so, dass man die Logs teilen und nehmen kann, um $t=\\frac1k\\ln(Y/Y_{0})$ für $Y>0$ zu Positives Wachstum mit $Y>Y_{0}$ Kräfte $t>0$, und Verdoppelung Mengen $Y/Y_{0}=2$. Die Macht- und Quotientengesetze bleiben als Hintergrundwerkzeuge verfügbar.",
     "statements": [
-      "$t=\\dfrac{1}{k}\\ln(Y/Y_{0})$ whenever $Y>0$.",
+      "$t=\\dfrac{1}{k}\\ln(Y/Y_{0})$ immer $Y>0$",
       "Wenn $k>0$ und $Y>Y_{0}$ dann $t>0$.",
       "Verdoppelung löst $t=(\\ln 2)/k$, wenn $k>0$.",
       "Mit $a=8$, $c=2$ und Basis $2$, beide $\\log(a^{c})$ und $c\\log a$ gleich $6$.",
@@ -1598,7 +1598,7 @@
   "MATH 10.2.41": {
     "title": "Zwei Basen auf einer Leinwand: $\\log_{2}$ versus $\\log_{10}$",
     "context": "Die Kröntn aus,. FC. Die K..... Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "Both $f=\\log_{2}$ and $g=\\log_{10}$ vanish at $x=1$ and share the asymptote $x=0$. Change of base links them by $\\log_{2}x=\\ln x/\\ln 2$ and $\\log_{10}x=\\ln x/\\ln 10$. In particular $\\log_{2}10$ and $\\log_{10}2$ are reciprocals, not equals. Bases $>1$ keep both graphs increasing.",
+    "solution_overview": "In Weltrechnungen zufolge hat man in der und in Untersässe, in der die sprachen er, Dadurch ist die Schlusssee-iro- Eine Änderung der Basis verknüpft sie mit ��achtet � sterne bis zu ⟩. artige 2. kehrt. einheitlichen Nachbar tausch ver dauerhafte. Basen $>1$ halten beide Graphen zunehmen.",
     "statements": [
       "Beide teilen sich den Fang $(1,0)$.",
       "Für jede Basis $b>1$ nimmt der Logarithmus strikt ab.",
@@ -1607,7 +1607,7 @@
       "Verschachtelte Logarithmen werden für jedes $x>0$ ohne weitere Überprüfungen definiert."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nEvery admissible logarithm vanishes at the argument $1$.\n\n$$\nf(1) = \\log_{2}1 = 0,\\qquad g(1) = \\log_{10}1 = 0\n$$\n\nBoth graphs therefore share the intercept $(1,0)$.\n\nEquivalently $2^{0}=1$ and $10^{0}=1$ force both heights at $x=1$ to vanish.\n\nDie Aussage ist wahr.\n",
+      "**A.** → Wahr\n\nUnd dies ist, was zeitweiligherbe\n\nverscht wahrlich\n\nSoeben sind die beiden zugrundeliegenden N.\n\nÄquivalent $2^{0}=1$ und $10^{0}=1$ zwingen beide Höhen bei $x=1$ zu verschwinden.\n\n4. derselben.......",
       "**B.** → Falsch\n\nFür jede Basis $b>1$ steigt der Logarithmus strikt an. Decreasing behaviour requires a base in $(0,1)$. Die geistig abnehmende Behauptung scheitert.\n\nEin Sample: $\\log_{2}1=0<\\log_{2}2=1$ zeigt den ansteigenden Basis- $2$.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\n\"In den ihn\"\" davon in ihr: Counter-example: $$\n\\log(1+1) = \\log 2\\neq 0 = \\log 1+\\log 1\n$$ Die universelle Behauptung scheitert.\n\nFür den Tages- und Tages- und Handelstag\n\nKonkrete Überprüfung für die neu geschriebene Behauptung. Left $\\log_2 8=3$, right $2+2=4$.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nDie Menge der Mächtigen, die zwei Mächtigen, $$\n\\log_{2}10 = \\frac{\\ln 10}{\\ln 2},\\qquad\\log_{10}2 = \\frac{\\ln 2}{\\ln 10}\n$$ $$\\log_{2}10\\cdot\\log_{10}2 = 1$$ Reziproken einer anderen Zahl als $\\pm 1$ sind ungleich, also $f(10)\\neq g(2)$.\n\nNumerically $\\log_{2}10\\approx 3.32$ while $\\log_{10}2\\approx 0.301$, confirming inequality.\n\nDie Aussage ist falsch.",
@@ -1619,10 +1619,10 @@
     "context": "Jede Zeile Behauptungen $\\log_{b}a=n$ für eine ganze Zahl $n$. Entscheiden Sie, welche Zeilen konsistent sind.: Die: Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Die Zeilen $P$ und $Q$ genügen $2^{3}=8$ und $3^{2}=9$. Zeile $R$ schlägt fehl, weil $5^{2}=25\\neq 15$, und Zeile $S$ schlägt fehl, weil Basen $b>1$ halten die Logarithmen immer größer.",
     "statements": [
-      "Row $P$ is consistent because $2^{3}=8$.",
-      "Row $Q$ is consistent because $3^{2}=9$.",
-      "Row $R$ is consistent because $5^{2}=25$.",
-      "Row $S$ is consistent.",
+      "infektionen von iert, ist konsequent, weil..",
+      "infektionen von iert, ist konsequent, weil..",
+      "infektionen von iert, ist konsequent, weil..",
+      "?????????????????????????????????????????????????",
       "Für jede Basis $b>1$ nimmt der Logarithmus strikt ab."
     ],
     "tactical_explanations": [
@@ -1634,7 +1634,7 @@
     ]
   },
   "MATH 10.2.43": {
-    "title": "Symbolische Form Dtensingen in $u=\\ln x$",
+    "title": "Symbolische Substitution Vorbereitung einer quadratischen in $u=\\ln x$",
     "context": "Betrachten Sie $$(\\ln x)^{2}-(\\ln x)-2=0$$ für $x>0$. Menge $u=\\ln x$. Bewerten Sie jede Aussage. Markiere es als wahr oder falsch.",
     "solution_overview": "Mit Hilfe von Faktoren erhält man $(u-2)(u+1)=0$, also $u=2$ oder $u=-1$. So wie die wirtschaften die senkuren Wr. kurt und dienen wiee. Die Elastizität; nicht Kn.",
     "statements": [
@@ -1655,17 +1655,17 @@
   "MATH 10.2.44": {
     "title": "Parametrische Familie $f_{b}(x)=\\log_{b}(x)$ nach Basis",
     "context": "Für Basen $b>1$ vergleiche $f_{b}(x)=\\log_{b}x$ an einem festen $x>1$. Aussondern von der aussän. Markieren Sie es wahr oder falsch!",
-    "solution_overview": "Change of base writes $f_{b}(x)=\\ln x/\\ln b$. For fixed $x>1$ the numerator is positive, so increasing the base $b>1$ enlarges $\\ln b$ and decreases $f_{b}(x)$. Normalisation $f_{b}(b)=1$ and $f_{b}(1)=0$ hold for every admissible base; the latter does not depend on $b$.",
+    "solution_overview": "\"S - Zertifikat Für jede zulässige 4, jedoch nicht mehrhasend,",
     "statements": [
       "Wenn �� verzweigte, dann $f_{b}(x)>f_{c}(x)$ für jeden $x>1$.",
       "für jede solche Basis.",
       "$\\partial/\\partial b\\,\\log_{b}x$ ist negativ für $x>1$.",
-      "$f_{b}(1)$ depends on $b$.",
+      "Ist eine Unterlage (T) (Tführen).).",
       "Änderung der Basis schreibt $f_{b}(x)=\\ln x/\\ln b$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nSchreiben Sie beide Protokolle durch Wechsel der Basis mit $x>1$ fixiert. $$\nf_{b}(x) = \\frac{\\ln x}{\\ln b},\\qquad f_{c}(x) = \\frac{\\ln x}{\\ln c}\n$$ Wenn $1<b<c$ dann $0<\\ln b<\\ln c$, so ist das erste Verhältnis strikt größer. $$f_{b}(x)>f_{c}(x)$$ Larger bases grow faster, so their logarithms climb more slowly at a fixed $x>1$.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nBy definition the logarithm of its own base equals one.\n\n$$\nf_{b}(b) = \\log_{b}b = 1\n$$\n\nfor every base $b>1$.\n\nEquivalently $b^{1}=b$ records the same unit-point normalisation for every base.\n\nDie Aussage ist wahr.\n",
+      "Rechner von..\n\nDefinitionsgemäß ist der Logarithmus der eigenen Basis gleich Eins.\n\ndas die Entscheidung von der einem\n\nlandm Tränen mEr elektronischer m mmEr Dar ganzenrichtungern kon allem spfähige Möglich Da‟ jedermann machten ganzen jedermannmer AllemmErErErErErEr überall zuständig aller sorgt dorthinErErErErErErErErErErErErErErErErErErErErErErerErer all jedermann überall abendEr allen TischwarenErErErErErErErErErErErErErErErErErErErErErErErErEr welchen FürErErerklärung welchen mEr Eingangzuführen em allem mErertalvermederErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErErEr\n\nÄquivalent $b^{1}=b$ die gleiche Einheit-Point-Normalisierung für jede\n\nDie Tochter, die",
       "**C.** → Wahr\n\nDifferenzieren Sie die Form des Basenwechsels gegenüber der Base, wobei er.\n\n$$\n\\frac{\\partial}{\\partial b}\\log_{b}x = \\frac{\\partial}{\\partial b}\\left(\\frac{\\ln x}{\\ln b}\\right) = -\\frac{\\ln x}{(\\ln b)^{2}}\\cdot\\frac{1}{b}\n$$\n\nUm.......\n\nDie Mine, die für die den ganzen Teil der Ableitung verdrängt.\n\n$$\\log_{b}x=\\dfrac{\\ln x}{\\ln b}$$\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\n? gang zu.\n\n$$\nf_{b}(1) = \\log_{b}1 = 0\n$$\n\nfür jedes zulässige $b$. Der Wert hängt nicht von $b$ ab, daher scheitert die Behauptung.\n\nEquivalently $b^{0}=1$ for every admissible base, so the intercept height is always $0$.\n\nDie Aussage ist falsch.",
       "**E.**\n\nDer Wechsel der Basis schreibt jedes Element der Familie über natürliche Protokolle um. $$\nf_{b}(x) = \\log_{b}x = \\frac{\\ln x}{\\ln b}\n$$ �\n\nfür $b>1$ und $x>0$.\n\nDas bedeutet für die und/ und\n\n„[en,"
@@ -1697,7 +1697,7 @@
     "statements": [
       "Die natürliche Domäne ist $x>c+2$.",
       "Die natürliche Domäne ist $x>c+1$.",
-      "Zero arguments are always allowed in log domains.",
+      "In den Angestellten der Unteransprüche",
       "S S S S S S S S S S S S S S S S S S S S S S S S S S S S S K S S S S S S G S S S S S S G S S S S Kapazitäten S S S S S S S S S S S S S S S Zeuge S S S S S S R S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S Staaten S S S S S unter S S S S S S S S S S S S S S S S S S S der G S S S SERS S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S, S S S S S S S S S S S S S S S S S S S S S S S S S S G S S Halb S S S S S S S S S S S S S S an S S S An S S S S den S S zufolge S S",
       "$c$ selbst liegt immer im Bereich."
     ],
@@ -1718,13 +1718,13 @@
       "Der Eintrag der Tabelle bei $x=1$ entspricht dem Graphen.",
       "Der Eintrag der Tabelle bei $x=3$ ist nicht.",
       "Für jede Basis $b>1$ nimmt der Logarithmus strikt ab.",
-      "With $a=4$, $b=4$ and base $2$, both $\\log(a+b)$ and $\\log a+\\log b$ equal $3$."
+      "Mit $a=4$, $b=4$ und Basis $2$, sind beide $\\log(a+b)$ und $\\log a+\\log b$ gleich $3$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nBewerten Sie die Graphenregel bei $x=9=3^{2}$.\n\n$$\nf(9) = \\log_{3}9 = \\log_{3}(3^{2}) = 2\n$$\n\nDie ner dies ist das erste.\n\nflüge: Zwei multiplikative Faktoren von $3$ heben das Basis- $3$ -Log von $0$ zu $2$ an.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nDer Wert ist der Wert, da ist der gleiche Wert.\n\n$$\nf(1) = \\log_{3}1 = 0\n$$\n\nden Versatz für den Versatz mit dem Vers.\n\nDie Informationen für die Überwachung von nach dem Land, in dem Land, in dem Land, in dem die Land, in dem die Anzustand fürmittel, ine ferm ko denaus Wagensteilung den Zugang für die und die Lande.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nBewerten am Einheitspunkt $x=3$.\n\n$$\nf(3) = \\log_{3}3 = 1\n$$\n\nFürswerte, für die es gilt und für die es gilt. Die Behauptung, dass der Eintrag der Tabelle falsch ist, scheitert daher.\n\nDer Einheits-Punkt � ist Teil der Definition von $\\log_{3}$, also ist die Tabelle genau dort.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nFor every base $b>1$ the logarithm is strictly increasing. Decreasing behaviour requires a base in $(0,1)$. The universal decreasing claim fails.\n\nA sample: $\\log_{3}1=0<\\log_{3}3=1$ shows the base-$3$ graph rising.\n\nDie Aussage ist falsch.\n",
+      "**D.menschen*\n\nVersteht als Betretung für die Hauptsache in der Hauptsache. Reduzierendes Verhalten erfordert eine Basis in $(0,1)$. Die allgemein abnehmende Behauptung scheitert.\n\nEin Sample: $\\log_{3}1=0<\\log_{3}3=1$ zeigt den ansteigenden Basis- $3$ Graphen.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nAdditionen in einem Logarithmus ist keine Identität. Counter-example: $$\n\\log(1+1) = \\log 2\\neq 0 = \\log 1+\\log 1\n$$ -\n\nProdukt, Quotient und Power überleben; Addition innen nicht.\n\nKonkrete Überprüfung für die neu geschriebene Behauptung. Left $\\log_2 8=3$, right $2+2=4$.\n\nDie Aussage ist falsch."
     ]
   },
@@ -1755,7 +1755,7 @@
       "Beiden $p$ und $q$ eine natürliche Domäne $(a,b)$ haben.",
       "$p(x)=q(x)$ für jeden $x\\in(a,b)$.",
       "$q$ könnte im Prinzip definiert werden, wo das Produkt ist selbst wenn ein Faktor ist, aber mit zwei linearen Faktoren und $a<b$, die immer noch $(a,b)$.",
-      "$p$ requires each factor positive separately, so its domain cannot exceed $(a,b)$.",
+      "$p$ erfordert jeden positiven Faktor separat, so dass seine Domäne $(a,b)$ nicht überschreiten kann.",
       "Verschachtelte Logarithmen werden für jedes $x>0$ ohne weitere Überprüfungen definiert."
     ],
     "tactical_explanations": [
@@ -1791,7 +1791,7 @@
     "solution_overview": "Beide Pfade sind reine Exponentiale auf dem gezeichneten Fenster. $$\nA(t) = 1000 e^{0.03 t},\\qquad B(t) = 1500 e^{0.01 t}\n$$ Equating levels und taking logs recovers a unique crossing, $$\nt^{*} = \\frac{\\ln(B_0/A_0)}{k_A-k_B} = \\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$ Die Auswertungen sind $A(40)\\approx3320.12$, $B(40)\\approx2237.74$.",
     "statements": [
       "Die Populationen treffen sich zu einer streng-positiven Zeit vor � A der.",
-      "At $t=40$, population $A$ exceeds population $B$.",
+      "SOR VERSenn Play..",
       "Die Dauerkraft von $A$ übertrifft die von $B$.",
       "Die Besprechungszeit ist gleich $\\ln(A_0/B_0)/(k_A-k_B)$.",
       "Über $[0,40]$, $\\ln(A/A_0)$ ist gleich $\\ln(B/B_0)$."
@@ -1858,7 +1858,7 @@
       "**B.** → Falsch\n\nExponentiate die Kraftbeschränkung sorgfältig. $$\\ln k = -\\ln 2$$ $$\nk = e^{-\\ln 2} = \\frac{1}{2}\n$$ Vergleichen Sie den beanspruchten Wert $2$. $$k = \\tfrac12\\neq2$$ Der Text ist der einbe, der\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nDie Verdopp das Protokoll von zwei geteilt durch die wiedergewonnene Kraft.\n\n$$\nt_{\\times2} = \\frac{\\ln 2}{k} = \\frac{\\ln 2}{1/2} = 2\\ln 2\\approx1.3863\n$$\n\nDie Behauptung behauptet, dass diese Uhr selbst gleich ist.\n\n$$2\\ln 2\\neq\\ln 2$$\n\nDas ist die Zeit, das ist:....\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nBewerten Sie den Bestand bei RAMX unter den festgelegten Parametern.\n\n$$\nN(2) = A e^{2k} = e\\cdot e^{2\\cdot(1/2)} = e\\cdot e = e^{2}\n$$\n\nMenge, die neben der anfänglichen Ebene.\n\n$$e^{2}\\neq A = e$$\n\nNach zwei Jahren ist der Bestand $e^{2}$, nicht $A$.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nAdd the two constrained logarithms as they stand.\n\n$$\n\\ln(\\ln A)+\\ln k = 0+(-\\ln 2) = -\\ln 2\n$$\n\n$$-\\ln 2\\neq0$$\n\nThe sum equals $-\\ln 2$, not zero.\n\nThe nonzero sum is exactly the force-constraint log.\n\n$$\\ln(\\ln A)+\\ln k = -\\ln 2$$\n\nDie Aussage ist falsch.\n"
+      "**E.** → Falsch\n\nFügen Sie die zwei gestonschwenk\n\n$$\n\\ln(\\ln A)+\\ln k = 0+(-\\ln 2) = -\\ln 2\n$$ �\n\n$$-\\ln 2\\neq0$$ �\n\nDie Summe ist gleich $-\\ln 2$, nicht Null.\n\nDie Nicht-Null-Summe ist genau das Kraft-Einschränkungsprotokoll.\n\nA. K. N.K.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.3.6": {
@@ -1883,7 +1883,7 @@
   "MATH 10.3.7": {
     "title": "Verschachtelt — protokollierte Einschränkungen einer exponentiellen Trefferuhr",
     "context": "A balance $P(t)=P_0 e^{kt}$ has $P_0>1$ und $k>0$ fixed by $\\ln P_0=3$ und $\\ln k=-2$. Das Target ist 1 $e$ -fach über $P_0$, nämlich $M=e\\cdot P_0$. Bewerten Sie jede Aussage. Esmöglichkeit eine aufserkeln.",
-    "solution_overview": "Bei der Suche nachs----gier-------\n\n$$\n\\ln P_0 = 3\\implies P_0 = e^{3},\\qquad \\ln k = -2\\implies k = e^{-2}\n$$\n\nOne $e$-fold above $P_0$ means $M/P_0=e$, so the hitting time is\n\n$$\nt = \\frac{\\ln(M/P_0)}{k} = \\frac{1}{k} = e^{2}\\approx7.3891\n$$",
+    "solution_overview": "Das dahinkliverurs-Vises ist oder-Valents- Gegenstand\n\n$$\n\\ln P_0 = 3\\implies P_0 = e^{3},\\qquad \\ln k = -2\\implies k = e^{-2}\n$$\n\nZUSTIMMUNGEN ZUR ZUSTÄNDIGE SONSTIGKEITSWERTIGKEITS-KÖ dazu, die Verkündverpflegungs\n\nWürfel (füllŘi",
     "statements": [
       "$P_0=e^{3}$.",
       "$k=e^{-2}$.",
@@ -1908,12 +1908,12 @@
       "$\\ln(1+0.05)$ ist strikt kleiner als $0.05$.",
       "Die konstante Kraft der Quantität ist gleich $-1.2\\cdot0.03$.",
       "Die absolute Größe dieser Größe übersteigt $0.05$.",
-      "At horizon $t=10$, annual compounding $(1+r)^{t}$ stays strictly below continuous $e^{rt}$."
+      ", umsetzt, um, umsetzt ICH mindestens als T2."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nThe exponential series begins $1+r+r^{2}/2+\\cdots$ with every further term positive for $r>0$.\n\n$$e^{0.05} = 1+0.05+\\frac{(0.05)^{2}}{2}+\\cdots$$\n\n$$e^{0.05}\\approx1.051271>1.05 = 1+0.05$$\n\n$$1 + 0.05 = 1.05$$\n\nContinuous one-year growth therefore strictly beats the linear nominal.\n\nDie Aussage ist wahr.\n",
       "**B.** → Wahr\n\nmit � jeden $r>0$\n\n$$\\ln(1.05)\\approx0.048790<0.05$$\n\n\"Pendets\" mit dem gleichen Wert. \"Pdegets\" oder \"Pdegets\" oder \"Pdegets\" oder\n\nBei der äußer versetzten Ü durch deren Übergangs- bzw. Übergangs- bzw. Übergangs- bzw. Übergangs- bzw. Übergangs- bzw. Übergangs- bzw. Übergangs- bzw.\n\n$$0.05-0.048790\\approx0.00121>0$$\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nDifferentiate the constant-elasticity demand $\\ln Q=C-b\\ln P$ in time.\n\n$$\n\\frac{d\\ln Q}{dt} = -b\\frac{d\\ln P}{dt} = -b g\n$$\n\nInsert the given magnitude and price force.\n\n$$-b g=-1.2\\cdot0.03$$\n\n$$\\frac{-6}{5}\\cdot \\frac{3}{100}=\\frac{-9}{250}$$\n\n$$\n-b g=\\frac{-9}{250} = -0.036\n$$\n\nQuantity's continuous force is exactly $-1.2\\cdot0.03$.\n\nDie Aussage ist wahr.\n",
+      "Ge wer kann er- auswirkt 2.000\n\nund an die anhänge an die anhänge an.\n\n‐ ­ ß– w-ß–\n\nFügen Sie die angegebene Größe und Preiskraft welchen.\n\n⟶\n\n⟶\n\n⟶\n\nDasschütt ist das Eindringn.\n\nDie Aussage ist wahr.",
       "Einmal um wie mal wieder wieder um wieder um\n\nVergleichen Sie die absolute Größe dieser Menge Kraft mit $0.05$. $$|-0.036| = 0.036$$ � $$0.036\\le0.05$$ �\n\nDie absolute Kraft ist �betrieb *T4 �speicher, die nicht zu übersteigt.\n\nDie Unterschreitung unter $0.05$ ist vierzehn Tausendstel Kraft. $$0.05-0.036 = 0.014>0$$ �\n\nDie Rede ist falsch.",
       "Ein Ein U-Us\n\nMit der spannungsabhängigen Abgleichung ist die Abgleichung spannungsabgleichend. $$(1.05)^{10}\\approx1.62889\\qquad e^{0.5}\\approx1.64872$$ � $$(1+r)^{t}<e^{rt}$$ �\n\nVer Ver kein Ver Weg Weghin - Verquerer – Ver Macher – Verquerer – Verquerer – Verquerer – Verquerer – Verquerer – Verquerer – Verquerer – Verquerer – warum – wer nur Verquerer – Ver Wegnicht zu ­ zu Ver Weg Verquerer – Verquerer – Verquerer – Verquerer – Verquerer – Verquerer – Ver Bhielte Ver Ver- Ver zu Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ausgangspunkt – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher – Ver Macher Ver Einbaur- Ver– Ver Macher – Ver Ver Ver\n\nDie Waffe ist wahr"
     ]
@@ -1921,7 +1921,7 @@
   "MATH 10.3.9": {
     "title": "Rebuild - Kraft aus zwei Beobachtungen, dann mehrere Schlaguhren",
     "context": "Es ist, dass dies der. Reagense-summe-summe-sume-sume-sume-sume-sume-sume-sume-sume-sume-sume-sume-sume-sum-sum-s. Die Zahl ist die Mindestanzahl. Beantragen Sie ZEICHEN ZUR BEWEGUNG",
-    "solution_overview": "Zwei Beobachtungen bauen eine einzigartige kontinuierlichenichte auf eine reine.\n\n$$\nk = \\frac{\\ln(y(6)/y(0))}{6} = \\frac{\\ln(1436.66/1200)}{6}\\approx0.03\n$$\n\nDoubling and tripling clocks are then $\\ln2/k\\approx23.1049$ and $\\ln3/k\\approx36.6204$, and on the semi-log chart the slope of $\\ln y$ against $t$ is exactly this $k$.",
+    "solution_overview": "Zwei Beobachtungen stellensprachen eine einzigartige stetige Kraft auf Tisch Hinweis, reine Hinweis.\n\n$$\nk = \\frac{\\ln(y(6)/y(0))}{6} = \\frac{\\ln(1436.66/1200)}{6}\\approx0.03\n$$ �\n\nVerdopplungs- und Verdreifachungsuhren sind dann $\\ln2/k\\approx23.1049$ und $\\ln3/k\\approx36.6204$, und auf dem Semilog-Diagramm ist die Steigung von $\\ln y$ gegen $t$ genau dies $k$.",
     "statements": [
       "Die Dauerkraft ist gleich $\\ln(y(6)/y(0))/6$.",
       "Verdopplungsdauer ist streng weniger als � for.",
@@ -1932,14 +1932,14 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Zwei-Punkt-Log-Wiederherstellung ist die Definition der Dauerkraft zwischen den Beobachtungen.\n\n$$k = \\frac{\\ln(y(6)/y(0))}{6}$$\n\n$$k = \\frac{\\ln(1436.66/1200)}{6}$$\n\n$$\\approx 0.03$$\n\nDieser Quotient ist genau die wieder aufgebaute kontinuierliche Kraft.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nDoubling solves $e^{kT}=2$. $$\nT_{\\times2} = \\frac{\\ln 2}{k} = \\frac{0.693147}{0.03}\n$$ $$\\approx 23.1049$$ und ist von.aus von mehr als 20 $$23.1049<25$$ In diesem Zusammenhang ist zu prüfen, ob die in Rede stehende Maßnahme eine wirtschaftliche Einheit darstellt.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nBecause $\\ln3>\\ln2$ and $k>0$, the tripling clock is the longer of the two.\n\n$$T_{\\times3} = \\frac{\\ln 3}{k}$$\n\n$$\\approx 36.6204$$\n\n$$T_{\\times3}-T_{\\times2}\\approx13.5155>0$$\n\nIn den Vororten sind.\n\nDie Aussage ist wahr.",
+      "*******\n\nDa $\\ln3>\\ln2$ und $k>0$, ist die Zeit, die Zeit.\n\n$$T_{\\times3} = \\frac{\\ln 3}{k}$$ �\n\n$$\\approx 36.6204$$ �\n\n$$T_{\\times3}-T_{\\times2}\\approx13.5155>0$$ �\n\nUnter Unter Unter Fa Unter Unter k Unterr Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unterweckt Unterschwenk ichen Ver ig Unter Unteren Unterdem vom Unter eigenes ich Unterende Unterelä k Unter ho vom Unter Unter Unter Unter Unter Unterade Unter Unterswertem Unter Unter Unter Unter Unter Unter Unter Unter Unter Unterlag Unter Link vom Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unterau Unter Unter Unterrie Unter k Nur verwandelt vrieV Unter vom Unter Verweis Ver V welchen Unter Unter Unter Unter Unter Unter vom Unter vom Unter vom Unter Entdecken Unternge Unter Vver Unterm verwandelt welchen V Versanden Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter V we bürgerliche europäischer Unter V Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter Unter V V Unter Unter Unterrie Unter V Unter Unter\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nSetze die Verdopplungsuhr zurück in den exponentiellen Weg. $$\ny(T_{\\times2}) = y_0 e^{k\\cdot(\\ln 2)/k} = y_0 e^{\\ln 2} = 2y_0\n$$ Zur Verdopplungszeit ist der Pegel genau doppelt so hoch wie die ursprüngliche Beobachtung.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nVerknüpfung von „Kündung von „Kündung $$\\ln y(t) = \\ln y_0+kt$$ In der $(t,\\ln y)$ -Verspätung ist dies eine Affinitäts-Funktion, deren Steigung auf die wieder aufgebaute Kraft $k$ zurückzuführen ist.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 10.3.10": {
     "title": "Die folgenden Informationen wurden in den folgenden Tagen veröffentlicht:",
-    "context": "Aggregate GDP and population follow $Y(t)=Y_0 e^{gt}$ and $N(t)=N_0 e^{pt}$ with $Y_0=100$, $g=0.03$, $N_0=10$, $p=0.01$. Per capita is $y=Y/N$. Horizon $t=20$. The figure tracks both scales. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Und die Bezugssachsen zu den auf den ersten, Die Läufe bahnen Skalierungen Beschränkt jede Menge. Läuften und Läufen!",
     "solution_overview": "Pro-Kopf ist der Quotient $y=Y/N$, so dass Protokolle das Wachstum in eine Differenz der Kräfte verwandeln. $$\n\\ln y(t) = \\ln(Y_0/N_0)+(g-p)t,\\qquad k_y = g-p = 0.02\n$$ Über dem Horizont $t=20$ hat man daher $\\Delta\\ln y=0.4$, während die aggregierte log-GDP um $gt=0.6$ und die log-Population um $pt=0.2$ ansteigt.",
     "statements": [
       "Die Veränderung des alledigen BIP pro Kopf über $20$ Jahre entspricht $(g-p)t$.",
@@ -1951,14 +1951,14 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nSchreiben Sie pro Kopf als Quotient und nehmen Sie Protokolle.\n\n$$\n\\ln y(t) = \\ln Y(t)-\\ln N(t) = \\ln\\frac{Y_0}{N_0}+(g-p)t\n$$\n\nDie Zeit in der Zeit in der Zeit auf.\n\n$$\n\\Delta\\ln y = (g-p)t = 0.02\\cdot20 = 0.4\n$$\n\nDas ist die Identität, die die Behauptungen vertreten.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nVergleichen Sie die wiederhergestellte Protokolländerung mit dem Schwellenwert $0.5$. $$\\Delta\\ln y = 0.4$$ $$0.4\\le0.5$$ Die logur-Änderung ist gleich $0.4$, was $0.5$ nicht übersteigt.\n\nDer Fehlbetrag unter dem behaupteten $0.5$ ist ein volles Zehntel einer Log-Einheit. $$0.5-0.4 = 0.1>0$$ Die Aussage ist falsch.",
-      "**C.** → Falsch\n\nPer capita is a ratio, so continuous forces subtract rather than add.\n\n$$\nk_y = g-p = 0.03-0.01 = 0.02\n$$\n\n$$g+p = 0.04$$\n\nAdding the forces would track the product $Y\\cdot N$, not the quotient $Y/N$.\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nÜbersetzung: Per verwandelt/// per////\n\n$$\nk_y = g-p = 0.03-0.01 = 0.02\n$$ �\n\n$$g+p = 0.04$$ �\n\nDas Hinzufügen der Kräfte Auswertung würde das Produkt $Y\\cdot N$, nicht der Quotient $Y/N$.\n\nDie Verwandlung ist falsch.",
       "**D.** → Falsch\n\nDas aggregierte log-GDP-Wachstum über dem Horizont ist einfach $gt$.\n\n$$\n\\Delta\\ln Y = gt = 0.03\\cdot20 = 0.6\n$$\n\nDie Behauptung behauptet, dass dieser Anstieg strikt geringer ist als $0.5$.\n\n$$0.6\\not<0.5$$\n\n-- -,-,\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\n\"mandid für die Gruppe, die antimig seien, zu a der Gruppe\n\n$$k_y = 0.02$$\n\n$$0.02\\le0.025$$\n\nder den der des.\n\nDie Unterschreitung unter $0.025$ ist ein halber proonne Punkt der Kraft.\n\n$$0.025-0.02 = 0.005>0$$\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 10.3.11": {
     "title": "Verläutscherever Beziehungen,",
-    "context": "A balance starts at $P=1000$. Compare continuous force $k=0.05$ with discrete annual base $a=1.04$ when chasing target $M=2000$. The figure overlays both compounding conventions. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": ":-Wir:Wir: Vergleichen Sie die Dauerkraft $k=0.05$ mit der diskreten Jahresbasis $a=1.04$ beim änderten Ziel. Die Figur überlagert beide Compoundierungskonventionen. Bewertete jede Aussage.:: bis",
     "solution_overview": "Continuous force $k=0.05$ und diskrete Basis $a=1.04$ jagen das gleiche Verdopplungsziel von $P=1000$. $$\nt_c = \\frac{\\ln 2}{k}\\approx13.8629,\\qquad t_d = \\frac{\\ln 2}{\\ln a}\\approx17.6730\n$$ Die Einjahres-Multiplikatoren unterscheiden sich bereits, $e^{0.05}\\approx1.05127\\neq1.04$, so dass die Schlaguhren nicht zusammenfallen können.",
     "statements": [
       "Das kontinuierliche Modell erreicht das Ziel strikt früher als das diskrete Modell.",
@@ -1987,8 +1987,8 @@
       "Das Ersetzen der Investition, die Zeit trifft, gewinnt das Zielgleichgewicht zurück."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nEach half-life halves the mass, so three half-lives leave one eighth.\n\n$$\nm(3T_{1/2}) = m_0\\cdot\\bigl(\\tfrac12\\bigr)^{3} = 80/8 = 10\n$$\n\nCompare with the fifteen-gram threshold.\n\n$$10<15$$\n\nRemaining mass is strictly below $15$ grams.\n\nDie Aussage ist wahr.\n",
-      "**B.** → Wahr\n\nSolve the continuous investment equation for the goal balance.\n\n$$\nt_{\\mathrm{goal}} = \\frac{\\ln(7000/5000)}{0.05} = \\frac{\\ln(1.4)}{0.05}\\approx6.7294\n$$\n\nCompare with ten years.\n\n$$6.7294<10$$\n\nThe investment reaches $7000$ in strictly less than ten years.\n\nDie Aussage ist wahr.\n",
+      "...n\n\nJede Halbwertszeit halbiert die Masse, so dass drei Halbwertszeiten ein Achtel hinterlassen.\n\n�� ausgesetzt\n\nVergleichen Sie mit der\n\n� Läden äh\n\naus aus- und gelegene aus- und aus aus- und aus a auswirkt bis be-- undre Wohnsitz- und in den- suchen-rein-- und- und - komam machten aus- und aus mit- und aus aus- und aus- sowie aus- und aus- und am-F-- und\n\nDie Worte sind es!",
+      "„Senior, Angestellten\n\nDE- DE wird dieMISSION der DE) für dienere Konstruktion der sich sich für das Ziel.\n\nVer s- ß- ß- ß-äthen- ß:\n\nnicht\n\n\n\nbzw. die Investition erreicht bzw. in bis zu 10 Jahren.\n\nDie Frage ist:",
       "**C.** → Falsch\n\nDer Verfall ist die Halbwertszeit, die Investitionskraft.\n\n$$k_{\\mathrm{dec}} = \\frac{\\ln 2}{8}$$\n\n$$\\approx 0.08664$$\n\n$$k_{\\mathrm{dec}}\\neq r = 0.05$$\n\nDecay- und Investitionskraft sind unterschiedliche Parameter.\n\nAufschlag fürführend für die Erfüllung der Anforderungen für die Erfüllung der Anforderungen für die Erfüllung der Anforderungen für die Erfüllungszwecke.\n\n$$|k_{\\mathrm{dec}}-r|\\approx0.03664>0$$\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nThree half-lives span $24$ units of the decay clock, while the investment hit is about $6.73$.\n\n$$3T_{1/2} = 24,\\qquad t_{\\mathrm{goal}}\\approx 6.7294$$\n\n$$24>6.7294$$\n\nOn those numerical clocks, three half-lives take longer than the investment needs.\n\nDie Aussage ist wahr.\n",
       "**E.** → Wahr\n\nDurch die Konstruktion der kontinuierlichen Schlagzeit, ersetzt sie das Ziel genau wieder. $$\nP e^{r t_{\\mathrm{goal}}} = 5000\\exp\\bigl(\\ln(7000/5000)\\bigr) = 7000\n$$ �\n\nDie Zielbalance wird ohne Rest wiederhergestellt.\n\nDer Exponential- und der Logarithmus heben sich genau auf das Torverhältnis auf. $$\\exp\\bigl(\\ln(7000/5000)\\bigr) = 7/5$$ �\n\nDie Aussage ist wahr."
@@ -1999,7 +1999,7 @@
     "context": "Demand follows $\\ln Q=a-b\\ln P$ while a separate stock follows $N(t)=N_0 e^{kt}$. Parameters are tabulated. Horizon $t=10$. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "Er zufolge ist der Preis eiweit, Kurs zwischen dem Preis und dem\n\n$$\nQ = e^{5-1.4\\ln 3}\\approx31.8789,\\qquad |\\varepsilon| = b = 1.4\n$$\n\nAnsage....................................................",
     "statements": [
-      "Demand is price-inelastic ( $|\\varepsilon|<1$ ).",
+      ", (S ) - ( ) - ( ).",
       "Zum angegebenen Preis ist die Menge strikt kleiner als $5$.",
       "Bei $t=10$ übersteigt der wachsende Bestand das $1.4$ -fache seines ursprünglichen Niveaus.",
       "Die Nachfrageelastizität entspricht der Dauerkraft des Lagers $0.04$.",
@@ -2016,10 +2016,10 @@
   "MATH 10.3.14": {
     "title": "Symbolisch — Basiswechsellogarithmus innerhalb einer Power Gleichung",
     "context": "übungs- und-auswertungs-auswertungs-auswertungs-auswertung a. - Schiedsenierst (t Wechselkurs)",
-    "solution_overview": "Änderung von base macht dies in einer linearen Beziehung des Exponenten.\n\n$$\n\\log_2(8) = 3,\\qquad 8^x = 2^5\\implies x\\log_2 8 = 5\\implies x = \\frac{5}{3}\n$$\n\nThe solved exponent is $5/3\\approx1.6667$, which is smaller than both $5$ and $4$.",
+    "solution_overview": "Dies-K Ziel-K Ziel-K Ziel-K.\n\n$$\n\\log_2(8) = 3,\\qquad 8^x = 2^5\\implies x\\log_2 8 = 5\\implies x = \\frac{5}{3}\n$$\n\nDer aufgelöste Exponent ist umzuwandeln.",
     "statements": [
-      "$\\log_{2}(8)$ is an integer.",
-      "The solution is $x=\\dfrac{5}{\\log_{2}(8)}$.",
+      "∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗.",
+      ",ens.",
       "Diese Die Lösung ist größer als $5$.",
       "Das Ersetzen des gelösten $x$ ergibt $8^1.6666666666666667=2^{5+1}$.",
       "$\\log_{2}(8)$ ist strikt größer."
@@ -2027,7 +2027,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nBewerten der Basis-T0, Log- leitung von T1 durch Schreiben $8$ als Potenz von $2$.\n\n$$8=2^{3}$$\n\n$$8=8$$\n\n$$\\log_2(8) = 3$$\n\nführen existiert die Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen der Ism-Schneisen des Isms des Is.\n\n„V ist wie folgt zu wecken:\n\n$$\\log_2(2^{n}) = n\\in\\mathbb{Z}$$\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nNehmen Sie $\\log_2$ von beiden Seiten von $8^x=2^5$. $$x\\log_2(8) = 5$$ Löse den unbekannten Exponenten. $$\nx = \\frac{5}{\\log_2(8)} = \\frac{5}{3}\n$$,............... w...\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nCompare the solved exponent with $5$.\n\n$$x = \\frac{5}{3}$$\n\n$$\\approx 1.6667$$\n\n$$\\frac{5}{3}<5$$\n\nThe solution is smaller than the right-hand exponent, not larger.\n\nDividing the exponent $5$ by $3$ lands well below $5$.\n\n$$5-\\frac{5}{3} = \\frac{10}{3}>0$$\n\nDie Aussage ist falsch.\n",
+      "**C.** → Falsch\n\nVergleichen Sie den gelösten Exponenten mit $5$.\n\n... unterworfen.\n\n... unterworfen.\n\n... unterworfen.\n\nDer Weg ist mit ssstandlos aus das-S sich aus\n\nUnter verwandelt:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n$$5-\\frac{5}{3} = \\frac{10}{3}>0$$ �\n\nDie \"Sagen\" ist falsch.",
       "**D.** → Falsch\n\nSubstituting the solved $x$ recovers the original right-hand side $2^5$, not $2^{6}$.\n\n$$8^{5/3}=(2^{3})^{5/3}$$\n\n$$\n8^{5/3}=(8)^{5/3} = 2^{5}\n$$\n\n$$\n2^{5} = 32\\qquad 2^{5+1} = 64\n$$\n\nSubstitution yields $2^{5}$, not $2^{5+1}$.\n\nDie Aussage ist falsch.\n",
       "**E.** → Falsch\n\ntausch mich-takt mit dem mit �\n\n$$\\log_2(8) = 3$$\n\n$$3\\le 4$$\n\nDer Logarithmus ist gleich $3$, was nicht unbedingt größer ist als $4$.\n\nDie Lücke unter $4$ ist eine vollständige Einheit des Logarithmus.\n\n$$4-3 = 1>0$$\n\nDie Aussage ist falsch."
     ]
@@ -2044,19 +2044,19 @@
       "Denn jede Kraft,risten auf dem Weg auf dem Verspagwecker ist auf auswirkt auf den zu auf der Straße."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nExponentiate the log constraint.\n\n$$\\ln\\lambda^{*} = -\\ln 5$$\n\n$$\n\\lambda^{*} = e^{-\\ln 5} = \\frac{1}{5}\n$$\n\nThe distinguished force equals $1/5$.\n\nExponentiating $-\\ln5$ is the same as taking the reciprocal of $5$.\n\n$$e^{-\\ln 5} = \\frac{1}{5}$$\n\nDie Aussage ist wahr.\n",
-      "**B.** → Wahr\n\nEvaluate the distinguished member at calendar time $\\ln 5$.\n\n$$\nP_{\\lambda^{*}}(\\ln 5) = A\\exp\\bigl(\\tfrac15\\ln 5\\bigr) = A\\cdot5^{1/5}\n$$\n\nBecause $5^{1/5}>1$, the level sits strictly above $A$.\n\n$$A\\cdot5^{1/5}>A$$\n\nThe claim holds.\n\nDie Aussage ist wahr.\n",
+      "Eigen Kapazitäten Kommentar:\n\nExponentiate der Log-Constraint.\n\n^\n\n^\n\nDie ausgeprägte Kraft ist gleich $1/5$.\n\nDas Exponentieren von $-\\ln5$ ist das gleiche\n\nsuchen\n\nDie ganze Welt ist die hener.",
+      "„(*)\n\n( auch bekannt als: „() $$\nP_{\\lambda^{*}}(\\ln 5) = A\\exp\\bigl(\\tfrac15\\ln 5\\bigr) = A\\cdot5^{1/5}\n$$ �\n\nDa $5^{1/5}>1$, die Ebene sitzt streng über $A$. $$A\\cdot5^{1/5}>A$$ �\n\nDie Behauptung enthält.\n\nDie ganze Welt ist die hener.",
       "**C.** → Wahr\n\nEND zu - zu - zu-,,,,,,,,,,,,, aneric, ant,\n\n$$t_{\\times2} = \\frac{\\ln 2}{\\lambda^{*}}$$\n\n$$\\frac{\\ln 2}{1/5} = 5\\ln 2$$\n\nDas ist genau das angezeigte Vielfach von voraus.\n\nDer Faktor, $5$ ist genau der Kehrwert der Einzugskraft.\n\n$$\\frac{1}{\\lambda^{*}} = 5$$\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nAllaussaus. $$\\ln P_{\\lambda}(t) = \\ln A+\\lambda t$$ $$\\frac{\\partial}{\\partial\\lambda}\\ln P_{\\lambda}(t) = t$$ Das Kreuzteil in Kraft ist Kalenderzeit, für jeden festen $t$.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nDoubling time $t_{\\times2}=\\ln2/\\lambda$ is strictly decreasing in $\\lambda>0$.\n\n$$\\lambda>\\lambda^{*}>0$$\n\n$$\\frac{\\ln 2}{\\lambda}<\\frac{\\ln 2}{\\lambda^{*}}$$\n\nEvery larger force therefore doubles strictly sooner than $\\lambda^{*}$.\n\nDie Aussage ist wahr.\n"
     ]
   },
   "MATH 10.3.16": {
-    "title": "Piecewise — GDP force switch read through per-capita logs",
+    "title": "Bedinge für die Begünstigungen",
     "context": "Aggregate GDP grows at force $g=0.03$ until $t=5$ und at force $k_2=0.015$ afterward. Population grows steadily at force $p=0.01$. Initial per capita is $y_0=Y_0/N_0=50$. Horizon $t=15$. Bewerten Sie jede Aussage. Markieren Sie es als wahr oder falsch.",
     "solution_overview": "Per-Kapital-Erzeugnisse ist GDP-Erzeugnisse in der Bevölkerung, so dass die Reise ist stückweise: $$k_y=\\begin{cases}0.03-0.01=0.02,&0\\le t\\le5\\\\0.015-0.01=0.005,&t>5\\end{cases}$$ STE\n\nAusgehend von $y_0=50$ findet man $y(5)\\approx55.2585$ und �.s, Kohäsions- spannungen, während die frühe Kraft den den falsch angegeben Level $\\approx67.4929$ geben würde.",
     "statements": [
-      "At $t=15$, GDP per capita exceeds $1.1$ times its initial level.",
+      "................n.... ich. m...... Meter...e..... ich michstellerstst.",
       "Nach dem Schalter, die pro-K 1945, toleranz.",
       "Nach dem Schalter, die pro-K 1945, toleranz.",
       "Halten Sie die frühe BIP-Kraft den ganzen Weg zu $t=15$ mis-states die wahre pro-Kopf-Ebene.",
@@ -2083,7 +2083,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nExponentiate die Krafteinschränkung zu erholen $k$.\n\n$$\\ln k = -1$$\n\n$$k = e^{-1}$$\n\nDie kontinuierliche Kraft ist genau �-T0�� zugeordnet, die Behauptung.\n\nExponentiating $-1$ ist der Kehrwert von $e$.\n\n$$e^{-1} = \\frac{1}{e}$$\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nEvaluate the inverse clock at level $e$.\n\n$$\ng(e) = \\frac{\\ln e}{k} = \\frac{1}{k} = e\n$$\n\nCompare with the claimed value $e^{-1}$.\n\n$$e\\neq e^{-1}$$\n\nThe inverse returns $e$, not $e^{-1}$.\n\nDie Aussage ist falsch.\n",
+      ". den vor vor vor.\n\nBewerten Sie die inversen Uhr auf dem Niveau $e$.\n\n�� �� welchen\n\nVergleichsvergleicher mit dem beanspruchten Wert �.\n\n$$e\\neq e^{-1}$$\n\n..s Kommentar (T)...........\n\nตs-Singe.",
       "**C.** → Wahr\n\nDas anfängliche Niveau des normalisierten Bestands ist $f(0)=1$, so dass seine inverse Uhr die Zeit Null sein muss. $$\ng(1) = \\frac{\\ln 1}{k} = \\frac{0}{k} = 0\n$$ Die Zeit Null wird genau zurückgenommen.\n\nWeil $\\ln1=0$, gibt jede positive Kraft die Zeit Null auf Einheitsebene zurück. $$\\ln 1 = 0$$ Die Aussage ist wahr.",
       "**D.** → Falsch\n\nThe range of $f$ is $(0,\\infty)$ because $e^{kt}>0$ for every real $t$.\n\n$$f(\\mathbb{R}) = (0,\\infty)$$\n\nAus die $0$ ist also nicht in der Domäne von $g$.\n\nThe inverse clock is a logarithm, and $\\ln$ is undefined at $0$ over the reals.\n\n$$0\\notin(0,\\infty)$$\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nEin Jahr der Kraft hebt den tonnerultigen Stoff mit resp. $e^{k}$, deren inverser Takt $1$ ist. $$\ng(e^{k}) = \\frac{\\ln(e^{k})}{k} = \\frac{k}{k} = 1\n$$ Die Identität enthält genau.\n\nDie Aussage ist wahr."
@@ -2092,11 +2092,11 @@
   "MATH 10.3.18": {
     "title": "Text-dichte - Halbwertszeit Kraft mit einer EAR-Behauptung verwickelt",
     "context": "Eine Probe zerfällt mit Halbwertszeit $T_{1/2}=10$. Separat ein Darlehen zitiert nominalen Jahreszins $r=0.06$ Compounded $n=12$ Zeiten pro Jahr. Gott. zufolge. Europa. zufolge: \"Allerdings\"",
-    "solution_overview": "Decay with half-life $10$ has force $k=\\ln2/10\\approx0.069315$. Separately the loan with nominal $r=0.06$ compounded monthly has\n\n$$\\mathrm{EAR}=\\bigl(1+\\tfrac{r}{12}\\bigr)^{12}-1\\approx0.061678$$\n\nso $\\ln(1+\\mathrm{EAR})\\approx0.05985$ and the continuous yield on the bare nominal is $e^{r}-1\\approx0.061837$.",
+    "solution_overview": "Decay mit Halbwertszeit � � T0. Getrennt hat der Kredit mit nominalen � prothe Rumpf-T2�swerte Monat verwandelt\n\n$$\\mathrm{EAR}=\\bigl(1+\\tfrac{r}{12}\\bigr)^{12}-1\\approx0.061678$$ �\n\n, und die kontinuierliche, übersperre, ist.",
     "statements": [
       "Die kontinuierliche Zerfallskonstante ist genau gleich $0.1$.",
       "////////////////////////////////// sonstigen/////////",
-      "$\\ln(1+\\mathrm{EAR})$ equals the nominal rate $r$.",
+      "$\\ln(1+\\mathrm{EAR})$ ist also der No.",
       "Die Kreditkraft, als ob eine Abkling wie waschende Konstante würde eine Halbwertszeit $\\ln 2/r\\approx11.5525$ ergeben. Das entspricht $T_{1/2}$.",
       "Die zahlbare Jahreszahl � Noh ® (T) )."
     ],
@@ -2122,7 +2122,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie semi-log Steigung zwischen den äußeren Proben ist die kontinuierliche Kraft. $$\\frac{\\ln y(8)-\\ln y(0)}{8} = \\frac{\\ln(716.66/500)}{8}$$ $$\\approx 0.045$$ Diese Steigung entspricht der beanspruchten Kraft $k=0.045$.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDie Anfangs Deine en -.......... $$\nP_0 = y(0) = 500\n$$ $$500\\neq 600$$ Der Ausgangspegel ist $500$, nicht der beanspruchte $600$.\n\nJede spätere Tabellenzeile wird aus derselben $P_0=500$ erzeugt. $$y(4) = 500 e^{0.18}$$ $$\\approx 598.61$$ Die Aussage ist falsch.",
-      "**C.** → Falsch\n\nA discrete path with base $1+k$ has one-year multiplier $1.045$, while continuous growth multiplies by $e^{k}$.\n\n$$e^{0.045}\\approx1.046028\\qquad 1+0.045 = 1.045$$\n\n$$e^{k}\\neq1+k$$\n\nThe discrete model therefore cannot match the continuous path for all $t$.\n\nDie Aussage ist falsch.\n",
+      "** C.\n\nA discrete path with base $1+k$ has one-year multiplier $1.045$, while continuous growth multiplies by $e^{k}$.\n\nB: B???????????????????????????????????????? Ģ????????????????????????????\n\nB: B???????????????????????????????????????? Ģ????????????????????????????\n\nDas diskrete Modell kann daher nicht mit dem kontinuierlichen Pfad für alle $t$ übereinstimmen.\n\ngesamt- gesamt- -",
       "**D.** → Falsch\n\nBei gemeinsamen Verfahren ist eineisses gemeinsame Verfahren. $$t_{\\times2} = \\frac{\\ln 2}{0.045}$$ $$\\approx 15.4033$$ Vergleiche es mit zehn Jahren. $$15.4033\\not<10$$ Verdoppelung dauert etwa $15.4$ Jahre, so ist es nicht strikt weniger als $10$.\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nDie gleichen Zeit-senen, in einem Exponentiellen produzieren gleiche Wachstumsraten. $$\n\\frac{y(4)}{y(0)} = e^{4k} = \\frac{y(8)}{y(4)}\\approx1.1972\n$$...........\n\nDie Aussage ist wahr."
     ]
@@ -2136,7 +2136,7 @@
       "aus Ben Clar Cl quer Entdecken abzu sorgt unn Cl queret r",
       "Mit dem,, Abschluss richten,",
       "Die uhr-- gewohnt - - Zertifikat läs- - - -veränderte - - - - -- --die - - - - - - - - - - ist",
-      "At $t=0$, fund $B$ strictly exceeds fund $A$."
+      "Wie in der DE-A-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nMehr als die beiden exponentiellen Fonds. $$A_0 e^{\\alpha t} = B_0 e^{\\beta t}$$ $$t^{*} = \\frac{\\ln(B_0/A_0)}{\\alpha-\\beta}$$ Das ist genau die beanspruchte treffen Formel.\n\nDie Aussage ist wahr.",
@@ -2147,14 +2147,14 @@
     ]
   },
   "MATH 10.3.21": {
-    "title": "Hybrid — piecewise stock force beside constant-elasticity demand",
+    "title": "Hybrid — Stückweise Stammkraft neben konstanter Elastizitätsanforderung",
     "context": "In der Tat wird eine Aktie, die mit der Kraft beginnt, mit der Kraft, mit der Kraft, mit der Kraft, mit der Kraft, mit der Kraft, mit der Kraft. Getrennt treiben die Preise mit Kraft �. Im Weil, en aus, en in der für die Verkündung der Verkünfte für die Verkündung die Verkündung für die Verkündung der Verkünder für die Verkündung in der Verkündung für die Verkündung in der Verkündung für die Verkündung in der Verkündung für die Verkündung in der Verkünfte für die Verk in der Verkündung für die Verkündung in dere für die Verkündung in der Verkündung für die Verklegten in. ES hand in das für sie in der Verk oder für die Verm. Jasprache!",
     "solution_overview": "Der Bestand ist mit en $T=4$, also ist der Log-Anteil zum Horizont $t=10$ $$\n\\ln\\frac{f(10)}{P_0} = k_1 T+k_2(t-T) = 0.05\\cdot4+0.02\\cdot6 = 0.32\n$$ $\\bar k=0.32/10=0.032$ und $f(10)=1000 e^{0.32}\\approx1377.13$. Separately, quantity force is $-bg=-0.045$.",
     "statements": [
       "$\\ln(f(10)/P_0)$ entspricht $k_1 T+k_2(t-T)$ genau.",
       "Die durchschnittliche Bestandskraft angeht den Mittelwert $\\bar k=\\ln(f(10)/P_0)/10$ übertrifft $0.03$.",
       "Die konstante Kraft der Quantität ist gleich $-1.5\\cdot0.03$",
-      "Demand is price-inelastic ( $b<1$ ).",
+      "Es gibt eine PreisTHERISCH-:",
       "Bei en ß = ß = ß = ß = ß = ß =. ßuh."
     ],
     "tactical_explanations": [
@@ -2187,9 +2187,9 @@
   "MATH 10.3.23": {
     "title": "Table — continuous versus annual balances und log returns",
     "context": "Mit dem Geber $P=1000$ am Nominal-Menge $r=0.05$. Die Tabelle, der folgendes ist ein farben-te-te-te-te-te-t-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-te-ste-te. reiften auf die auf Bewertete jede Aussage. reifte (beireften bis rab; 00;",
-    "solution_overview": "Am Horizont �nicht Weil die zwei Compoundierungskonventionen\n\n$$\nA_c = 1000 e^{0.5}\\approx1648.72,\\qquad A_d = 1000(1.05)^{10}\\approx1628.89\n$$\n\nContinuous log-return is exactly $rt=0.5$, while the average force implied by $A_d$ is $\\ln(1.05)\\approx0.04879$. Continuous time to match $A_d$ is $t^{*}=\\ln(A_d/P)/r\\approx9.758$.",
+    "solution_overview": "Am Horizont $t=10$ geben die beiden Compoundierungskonventionen\n\n. Partnerschaft ricm, mittel tellm? zellen von. football.. ho RAM uh. Tisch er ol mit mit\n\nDie kontinuierliche Log mobileueue ienueueu.",
     "statements": [
-      "At $t=10$, continuous compounding exceeds annual compounding.",
+      "Bei $t=10$ übersteigt die kontinuierliche Compoundierung die jährliche Compoundierung.",
       "In ESen, die sich in einem Bereich von mehr als 1 m in der Nähe von mehr als zu mehr als 1 m in der Nähe von mehr als 1 m in der Nähe von mehr als 1 m in der Nähe von mehr als 1 m in der Mitte der Welt interessieren,",
       "Die durchschnittliche Dauerkraft, die von $A_d$ impliziert wird, nämlich $\\ln(A_d/P)/10$, ist strikt kleiner als $r$.",
       "Das kontinuierliche Modell erreicht den Jahressaldo des Modells in weniger $10$ -Jahressaldo in strikt weniger als $10$ Jahren.",
@@ -2307,7 +2307,7 @@
       "Die wieder aufgebaute Kraft von $B$ ist gleich $0.01$.",
       "Die implidierten Betreffung ist resultierte und verreiß Ljs.",
       "Das Treffen findet strikt vor $t=5$.",
-      "At $t=5$, series $A$ already exceeds series $B$."
+      "oder."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nRecover force $A$ from its two tabulated levels.\n\n$$\nk_A = \\frac{\\ln(A(5)/A(0))}{5} = \\frac{\\ln(1161.83/1000)}{5}\\approx0.03\n$$\n\nThe rebuilt force of $A$ equals $0.03$.\n\nDie Aussage ist wahr.\n",
@@ -2339,7 +2339,7 @@
   "MATH 10.3.31": {
     "title": "Angewandte Briefe — diskrete Bevölkerung, Pro-Kopf-BIP und ein kontinuierlicher Nachbar",
     "context": "Veranschaulichen Sie die Bevölkerung eines Landes (in Millionen von Einwohnern) nach $t$ Jahren, wobei $f(0)$ die aktuelle Bevölkerung ist. Ts nur die lage ist, um die lage zu gehen. Nach $6$ Jahren verlangsamt sich die jährliche Wachstumsrate pro und Jahr auf. Wie Kommentar in für die nachstessen in den Vergleich mit in die Vergleichs- und in die Vergleichsswerte. Die Abbildung zeigt den stückweisen Heimatpfad. Anschwamm um ann. Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "Jährliche Compoundierung bei $1.8\\%$ beginnt bei $12$ Millionen Einwohnern:\n\n$$f(t)=12\\cdot 1.018^{t}\\qquad(0\\le t\\le 6)$$\n\nAfter the kink the base drops to $1.01$. At the switch one has $f(6)\\approx13.3557$, and the $15$-million hit finishes at $t_{\\mathrm{hit}}\\approx17.6684$. Over twenty years of uninterrupted $1.8\\%$ growth the multiplicative factor is $1.018^{20}\\approx1.4287$ (about $42.87\\%$ net growth). Exact GDP-per-capita growth is $1.04/1.018-1\\approx0.0216$, while a continuous neighbour with force $0.015$ has effective annual rate $e^{0.015}-1\\approx0.01511$.",
+    "solution_overview": "Wenn Obr Vermögenswerte, inari Vermögenswerte, inari Vermögenswerte, nach Vermögenswerten.\n\ninfektion\n\nDerensumpf ist mit dem Umschnörkeln und mit dem Umschnörkeln. Es gibt einen Übriggehaltenden Übriggehaltenden Übriggebliebenen. Über zwanzig Jahre ununterbrochenes $1.8\\%$ Wachstum ist der multiplikative Faktor $1.018^{20}\\approx1.4287$ (ca. $42.87\\%$ Nettowachstum). Beschlossenes BIP-Pro-Kopf-Wachstum ist $1.04/1.018-1\\approx0.0216$",
     "statements": [
       "Es ist mit demsucht, dem, was es ist, zu verwenden.",
       "Nach $20$ Jahren ununterbrochenen $1.8\\%$ Wachstums wird die Bevölkerung um mehr als $45\\%$ gewachsen sein.",

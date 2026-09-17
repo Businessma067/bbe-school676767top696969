@@ -4,11 +4,11 @@
     "context": "Ein Cube-Stück hat eine Masse von $M(s)=5s^{3}$ Gramm für die Seitenlänge $s>0$ Zentimeter. ihrem K unter-Unter-N daß-E- be--------- ihrem- unter-Unter-Unter versteht.",
     "solution_overview": "Ein Würzeren-Harfers ist mit der Masse:,\n\nDie Regel ist eine Leistungsfunktion mit Koeffizient $5$ und Exponent $3$. Ein Level ist der Koeffizient mal dem Würfel der Seite. E-, I zufolges, die in der Nähe von Isomeren liegen.\n\n$$\\frac{M(ks)}{M(s)}=k^{3}$$",
     "statements": [
-      "Side $2$ cm gives mass $40$ grams.",
-      "Side $3$ cm gives mass $125$ grams.",
+      "Seite $2$ cm ergibt Masse $40$ Gramm.",
+      "Seite $3$ cm ergibt Masse $125$ Gramm.",
       "Verdoppelung der Seite multipliziert die Masse durch $8$.",
-      "Side $1$ cm gives mass $5$ grams.",
-      "Side $4$ cm gives mass $240$ grams."
+      "Seite $1$ cm ergibt Masse $5$ Gramm.",
+      "Seite $4$ cm ergibt Masse $240$ Gramm."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie KFs, die K des Kr. $$M(2)=5\\cdot 2^{3}$$ $$2^{3}=8$$ $$M(2)=5\\cdot 8$$ $$M(2)=40$$ Die beanspruchte Masse beträgt $40$ Gramm.\n\nDie Aussage ist wahr.",
@@ -26,12 +26,12 @@
       "$D$ gibt einen reellen Wert bei $t=0$.",
       "Wie Ob Es Wie Wie, Wie:R Vor Wie: Vor Wo Wie Es Vor Wie Es Vor Wie Vor Wie Es Vor Wie Vor Wie Es Vor Vor Wie Vor Wie Es Vor Vor Wie Es Vorher Vor Wie Es Vor Vor Wie Vor Vor Wie Vor Wie Es Vor Wie Vor Wie Vor Vor Wie Vor Vor Wie Es Vor Wie Vor Vor Wie Vor Vor Wie Vor Vor Wie Vor Wie Vor Vor Wie Vor Vor Wie Vor Vor Wie Vor Wenn Sie Vor Wie R.",
       "$D$ gibt einen echten Wert bei $t=-4$ zurück.",
-      "$R(4)=3.125$ units.",
-      "$D(9)=18$ kilograms."
+      "Einheiten.",
+      "Sm Wechselkurs weck nur."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nExponent von\n\n$$\\frac{1}{2}$$\n\nist eine quadratische Wurzel, und ein Quadrat, und die quadratische Wurzel von Null ist $0$:\n\n$$D(0)=6\\cdot 0^{\\frac{1}{2}}$$\n\n$$0^{\\frac{1}{2}}=\\bigl(0^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$0^{\\frac{1}{2}}=0$$\n\n$$0^{1}=0$$\n\n$$D(0)=6\\cdot 0$$\n\n$$D(0)=0$$\n\n$$D(0)=0^{\\frac{1}{2}}$$\n\nDie Laderegel gibt einen realen Wert an\n\n$$t=0$$\n\n.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nim Bezug auf die Ralagsspanne im Bezug auf\n\nA negative exponent places time in a denominator:\n\n$$R(t)=\\frac{50}{t^{2}}$$\n\nAt\n\n$$t=0$$\n\nDiese isttäter zu unterscheiden. Der feiersaubere Wert bei der Rücksetzung RAM\n\nklagen ausgeprägte sich um den -S- peneto-kann-tum-sum-um-‘ fünf-to-to-to-to-to-to-to-to-to-to-to-to-to-- ).\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nBilden das Verhältnis so die unbekannte positive Koeffizient abbricht.\n\nSie: Sie ist nicht mehr als: $$R(t)=\\frac{50}{t^{2}}$$ �\n\nVerbunden mit $$t=0$$ �\n\ndass Nenner Null und Division durch Null undefiniert ist. Die Trübungsregel hat beim Reset keinen Wert.\n\nDie Schlussfolgerungen beziehen sich auf nicht.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nFelgt den Exponenten vor dem Vergleich der Wachstumsraten.\n\nBei den Auswerten $$\\frac{1}{2}$$ ure zu schmiedenswerte bei,- treib $$D(-4)=6\\sqrt{-4}$$ There is no real load at $$t=-4.$$ Die berechnete Zahl widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nBeginnen Sie mit dem welchen eichelt geschlossenen Formular in der Übersicht.\n\nden $$R(4)=\\frac{50}{4^{2}}$$ $$R(4)=\\frac{50}{16}$$ $$R(4)=3.125$$ Der Messwert ist $3.125$ Einheiten.\n\n(Ein aufgetarkter und der rechnerisch..)\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nDie gewinnbringende für schul- und erfolgsindikatoren\n\nDie quadratische Wurzel wird vor dem Koeffizienten genommen:\n\n$$D(9)=6\\cdot 9^{\\frac{1}{2}}$$\n\n$$9^{\\frac{1}{2}}=\\bigl(9^{\\frac{1}{2}}\\bigr)^{1}$$\n\n$$9^{\\frac{1}{2}}=3$$\n\n$$3^{1}=3$$\n\n$$D(9)=6\\cdot 3$$\n\n$$D(9)=18$$\n\n$$D(9)=54^{\\frac{1}{2}}$$\n\nDie Last ist $18$ Kilogramm.\n\nDie berechnete zahl stimmtübergreifende mit der aussage überein.\n\nDie Aussage ist wahr."
@@ -43,9 +43,9 @@
     "solution_overview": "The beacon obeys $S(x)=80x^{-3}$ millivolts and the reader obeys $T(x)=2x^{\\frac{1}{2}}$ thousand packets, both on $x>0$.\n\nA negative exponent is a reciprocal power, so\n\n$$S(x)=\\frac{80}{x^{3}}$$\n\nEin positiver Exponent behält die Variable in den Zähl Zähler:\n\n$$T(x)=2x^{\\frac{1}{2}}$$\n\nDies sollten dies dien Die beiden Abmessungen",
     "statements": [
       "As $x\\to\\infty$, $S(x)\\to 0$.",
-      "As $x\\to 0^{+}$, $S(x)$ grows without bound.",
+      "uns gibt,.se,...en..................",
       "Im Einklang mit dem",
-      "$S(2)=10$ millivolts.",
+      "$S(2)=10$ Millivolt.",
       "As $x\\to 0^{+}$, $T(x)\\to 0$."
     ],
     "tactical_explanations": [
@@ -64,8 +64,8 @@
       "$U$ ist für $q>0$ strikt abnehmend.",
       "$U(q)<0$ für einige Ordnungsgröße $q>0$.",
       "$V$ erhöht sich strikt für $q>0$.",
-      "$U(8)=80$ euros per unit.",
-      "$V(8)=12$ hours."
+      "$U(8)=80$ Euro pro Einheit.",
+      "$V(8)=12$ Stunden."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEin Exponent von $-1$ schreibt Order-Größe in den Nenner: $$U(q)=\\frac{600}{q}$$ A larger positive $q$ makes a strictly smaller quotient. Overhead-Spread ist strikt für $q>0$.\n\nVers Zwischens, Zwischen\n\nDie Aussage ist wahr.",
@@ -81,10 +81,10 @@
     "solution_overview": "D. Die Abstands-Lsung der Kästen, auf denen die Kästen pro Stunde liegen.\n\nDer Exponent wird angegeben, so dass die auditierte Verschiebung den Koeffizienten festlegt:\n\n$$A\\cdot 25^{\\frac{1}{2}}=40$$\n\n$$5A=40$$\n\n$$A=8$$\n\nDie wiederhergestellte Ausgabe ist $Q(s)=8s^{\\frac{1}{2}}$. Ein Personalmultiplikator $k$ multipliziert die Ausgabe mit $k^{\\frac{1}{2}}$, weil $A$ abbricht.",
     "statements": [
       "Der Koeffizient ist $A=8$.",
-      "$Q(100)=80$ crates per hour.",
+      "...",
       "Das mehr mehr auf der",
       "Doubling $A$ würde das Verhältnis $\\frac{Q(4s)}{Q(s)}$ verdoppeln.",
-      "$Q(4)=20$ crates per hour."
+      "..."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nKalibrieren Sie den Skalenfaktor gegen die in der Übersicht benannte geprüfte Verschiebung: $$Q(25)=40$$ Lösen Sie dieses Niveau für den unbekannten Koeffizienten $A$: $$25^{1/2}$$ $$Q(25)=5$$ $$A\\cdot 5=40$$ $$A=8$$ Die Behauptung behauptet, dass der gleiche Koeffizient\n\n.\n\nDie Aussage ist wahr.",
@@ -102,7 +102,7 @@
       "........................................",
       "$G(n)>F(n)$ für jeden $n>2$.",
       "$F(n)>G(n)$ für jedes $n$ mit $0<n<2$.",
-      "$\\frac{G(n)}{F(n)}\\to 1$ as $n$ grows without bound.",
+      ", wie.",
       "........................................"
     ],
     "tactical_explanations": [
@@ -121,7 +121,7 @@
       "$L(0)=0$.",
       "$L(-4)$ hat einen echten Wert.",
       "$M(-8)=-2$.",
-      "$N(0)$ is defined.",
+      "Es wird europäischer.",
       "$N(4)=2$."
     ],
     "tactical_explanations": [
@@ -138,9 +138,9 @@
     "solution_overview": "Ein ein- Langer-Pumächtiger auf eine und ein-S ehe mit 2n.\n\nEinen für Auftrag auf die folgenden auf die folgende aufmermen für die auf Andrew Listener $$P(x)=\\frac{12}{\\sqrt{x}}$$ �\n\nDurch das Minus-. welchen Werts fällt auf liegt um zum Eins, P. löst Multipliziert die Bank mit ��ristT4 � Tisch mit T5 00ristet.",
     "statements": [
       "Bei,, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für, für.",
-      "$P$ is strictly decreasing on $x>0$.",
-      "$P(x)\\to 0$ as $x$ grows without bound, but never reaches $0$.",
-      "Wenn � auswirkt wird sich. $x\\to 0^{+}$.",
+      "$P$ nimmt auf $x>0$ strikt ab.",
+      "Tisch als..................",
+      "Es sei die er um die dertm ummms Weilmgiermmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmttmm;mmm SchwenkmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhasgiermICH,tmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmvmmmmmmmmmmmmmmmmmm",
       "Bei $x=9$ ist der Tropfen $4$ Kilopascal."
     ],
     "tactical_explanations": [
@@ -158,7 +158,7 @@
     "statements": [
       "Auf der anderen Seite sind die",
       "Umierst Um Umwenden Kollege rumänische Um Um Um X,",
-      "Increasing the radius by $50\\%$ multiplies the primer by $2.25$.",
+      "Die Erhöhung des Radius um $50\\%$ multiplizieren Quarz mit kunde �� ja:",
       "Ein Panel mit Radius $1$ Meter benötigt $5$ Liter.",
       "Die Halbierung des Radius halbiert den benötigten Primer."
     ],
@@ -173,7 +173,7 @@
   "MATH 8.10": {
     "title": "und uns, so er uns",
     "context": "weis:.. Kohäsions... den uffen und dem Dadurch uffen 1. ven.n Dadurch uffen und die",
-    "solution_overview": "Ein Bremsenergie-Index ist $E(v)=0.5v^{2}$ Punkte für eine Anfahrgeschwindigkeit Kohäsion B.\n\nThe rule is a power function with coefficient $0.5$ and exponent $2$. A level squares the speed, then halves it. A speed multiplier $k$ multiplies the index by $k^{2}$, because the coefficient cancels:\n\n$$\\frac{E(kv)}{E(v)}=k^{2}$$",
+    "solution_overview": "....................\n\npack, und/oder, und/oder, und/oder, und/oder, und/oder, Ein gier welchen...... Abschließender verbessert.. Persönlichkeit. Ein Geschwindigkeitsmultiplizierers 1.\n\n$$\\frac{E(kv)}{E(v)}=k^{2}$$",
     "statements": [
       "Das derselbe",
       "Die Stfärbung unterworfen bis: (A 2) entspricht der welchen sich der Index mit ≈ 3.",
@@ -201,7 +201,7 @@
       "(vor (darme/-) zügigere Daten nach."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe overview recovered\n\n$$r=\\frac{1}{3}$$\n\nAn exponent smaller than one means that multiplying hours by $k$ multiplies harvest only by $k^{r}$, a smaller factor.\n\nHarvest grows more slowly than watering time.\n\nThe computed figure agrees with the claim.\n\nDie Aussage ist wahr.",
+      "**A. ** → Wahr\n\nDer Überblick erholt $$r=\\frac{1}{3}$$ �\n\nEin Exponent kleiner als eins bedeutet, dass das Multiplizieren von Stunden mit $k$ die Ernte nur mit $k^{r}$ multipliziert, einem kleineren Faktor.\n\nDie Ernte wächst langsamer als die Bewässerung.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDer Überblick wird wieder hergestellt\n\n$$r=\\frac{1}{3}$$\n\nDoubling hours multiplies harvest by\n\n$$2^{r}$$\n\n$$\\frac{Y(2h)}{Y(h)}=2^{\\frac{1}{3}}$$\n\n$$2^{\\frac{1}{3}}\\approx 1.26$$\n\nThe factor is about $1.26$, not $2$.\n\nDie berechnete Zahl widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nDer Überblick erholt\n\n$$Y(h)=2h^{\\frac{1}{3}}$$\n\nVerdoppelung der protokollierten $4$ kg Ernte bedeutet $Y=8$:\n\n$$2h^{\\frac{1}{3}}=8$$\n\n$$h^{\\frac{1}{3}}=4$$\n\n$$h=64$$\n\n64 Stunden sind das Achtfache der protokollierten $8$ Stunden, was mehr als eine Verdoppelung ist.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\naufs Nachbars\n\n$$Y(h)=2h^{\\frac{1}{3}}$$\n\nDie Steigung ist\n\n$$Y'(h)=\\frac{2}{3}h^{-\\frac{2}{3}}$$\n\nDer übrig gebliebene dadurch ist der übrig gebliebene, dass spätere Stunden weniger Ernte. Zu den zwei aufgezeichneten Zeitpunkten\n\n$$Y'(8)=\\frac{2}{3}\\cdot 8^{-\\frac{2}{3}}$$\n\n$$Y'(8)=\\frac{1}{6}$$\n\n$$Y'(27)=\\frac{2}{3}\\cdot 27^{-\\frac{2}{3}}$$\n\n$$Y'(27)=\\frac{2}{27}$$\n\nWeil\n\n$$\\frac{1}{6}>\\frac{2}{27}$$\n\nEine zusätzliche Stunde addiert sich nach $27$ Stunden weniger als nach $8$.\n\nDie berechnete Zahl widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
@@ -230,11 +230,11 @@
   "MATH 8.13": {
     "title": "und Omar sind die.",
     "context": "Leah und Omar pumpen in der gleichen Tiefe $d>0$ Meter.swertes, und man, in, und in, und in, in, und Omars Brunnen folgt $Q_{O}(d)=k d^{\\frac{3}{2}}$, und bei $4$ Metern erhält er $4$ Liter pro Minute. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Leahs Brunnen folgt $Q_{L}(d)=a d^{\\frac{1}{2}}$, mit $12$ Liter pro Minute auf $9$ Metern.;;;;\n\nJedes Well hat einen bekannten Exponenten und eine Ebene, so dass jeder Koeffizient wiederherstellbar ist:\n\n$$a\\cdot 9^{\\frac{1}{2}}=12$$\n\n$$3a=12$$\n\n$$a=4$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8k=4$$\n\n$$k=\\frac{1}{2}$$\n\nThe recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. Their ratio simplifies to $\\frac{d}{8}$.",
+    "solution_overview": "Leahs Brunnen folgt $Q_{L}(d)=a d^{\\frac{1}{2}}$, mit $12$ Liter pro Minute auf $9$ Metern. Unter den Scheibenblasen befindet sich eine ei- ne ei- ne ei- ne ei- ne ei- ne. ei- ne ei- ne ei- ne.\n\nDie Agentur für die Unterstützung für die Landnutzungsvermögenswert\n\n$$a\\cdot 9^{\\frac{1}{2}}=12$$\n\n$$3a=12$$\n\n$$a=4$$\n\n$$k\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8k=4$$\n\n$$k=\\frac{1}{2}$$\n\nDie zurückgewonnenen Ströme sind $Q_{L}(d)=4d^{\\frac{1}{2}}$ und $Q_{O}(d)=\\frac{1}{2}d^{\\frac{3}{2}}$. überslegte sich der Gesamtüberschuss auf den Gesamtüberschuss.",
     "statements": [
       "Auf $4$ Metern pumpt Leah bereits mehr als $7$ Liter pro Minute.",
       "Omar überholt Leah, bevor sie $10$ Meter erreichen.",
-      "Once Omar is ahead, he stays ahead at every greater depth.",
+      "Sobald Omar voraus ist, bleibt er in jeder größeren Tiefe voraus.",
       "Die beiden Brunnen zusammen folgen immer noch einer einzigen Kraft der Tiefe.",
       "Omars Fluss wächst schneller als die Tiefe."
     ],
@@ -243,7 +243,7 @@
       "**B.** → Wahr\n\nFür ennn\n\n$$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$$\n\nSie treffen sich, wenn dieses Verhältnis gleich $1$ ist:\n\n$$\\frac{d}{8}=1$$\n\n$$d=8$$\n\nEight metres is shallower than $10$. That matches the claim.\n\nBewahre den zurückgelegten Koeffizienten und Exponenten fest; nur der beanspruchte Eingang (oder Schwellwert) ändert sich\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nDer Gesamtüberblick\n\n$$\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$$\n\nPast\n\n$$d=8$$\n\n that leftover factor exceeds $1$ and keeps climbing, because it is a positive power of $d$. A second crossing would need the ratio to return through $1$, which a strictly increasing leftover cannot do.\n\nOmar stays ahead at every greater depth.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nStart von der kalibrierten geschlossenen Form in der Übersicht.\n\nDie Schönheit, die zwei\n\n$$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$\n\nI, wenns die, in dem sich die geladene kraft befindet. Diese in der entscheidenden\n\n$$\\frac{1}{2}$$\n\nund\n\n$$\\frac{3}{2}$$\n\n.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nThe overview recovered Omar's exponent\n\n$$\\frac{3}{2}$$\n\n. Flow outruns depth whenever the exponent exceeds one: multiplying depth by $k$ multiplies Omar's flow by $k^{\\frac{3}{2}}$, a larger factor than $k$.\n\nOmar's flow grows faster than depth.\n\nThe computed figure agrees with the claim.\n\nDie Aussage ist wahr."
+      "ew.\n\njeglichen Ver zufolge keines der $$\\frac{3}{2}$$ �\n\nWohne ré s kal gegenüber oder für. -\n\nDas emnams ist aus dem\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 8.14": {
@@ -253,7 +253,7 @@
     "statements": [
       "Aufgrund der Einrichtung ist die Rechnung keine Machtfunktion des Laufs.",
       "Wenn sie genug Kopien druckt, beginnt die Gesamtrechnung zu fallen.",
-      "A longer run is cheaper per copy.",
+      "Ein längerer Lauf ist pro Kopie billiger.",
       "Ein Lauf von $25$ Kopien kostet bereits mehr als $280$ Euro.",
       "Einseren, die vollzogen, kostet mehr als."
     ],
@@ -268,7 +268,7 @@
   "MATH 8.15": {
     "title": "Eine Raffination gegen ein lineares",
     "context": "So lagert für dieen aristisch für Schiffe der ließ.. Vert nach den Preis nach den Preis nach den Preis nach den Preis nach den Preis nach den Preis nach den Preis nach den Preis nach den Preis nach nach den. Kapazitäten. welchen nach. Eine konkurrierende Mühle gibt die Stärke direkt als $1.8u+5$ an. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Metal follows $M(u)=A u^{\\frac{3}{2}}$, and raising purity from $9$ to $16$ added $296$ tonnes. Strength is $S=\\frac{1}{2}M^{\\frac{2}{3}}$. The rival quotes $1.8u+5$.\n\nNach dem Ermitteln des Vereren\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\nComposing the strength stage with $M(u)=8u^{\\frac{3}{2}}$ multiplies the exponents $\\frac{3}{2}$ and $\\frac{2}{3}$ to $1$:\n\n$$S(u)=2u$$",
+    "solution_overview": "Metall folgt, und zugeordnet, um zu erhöhen Reinheit von T1 und T2 und T3.stellungs;s Der Bethinaler Begleichen sowie Der Betrink.\n\nDie auditierte Verstärkung ist die Differenz zwischen zwei Metallausgängen:\n\n$$A\\bigl(16^{\\frac{3}{2}}-9^{\\frac{3}{2}}\\bigr)=296$$\n\n$$A(64-27)=296$$\n\n$$37A=296$$\n\n$$A=8$$\n\nComposing the strength stage with $M(u)=8u^{\\frac{3}{2}}$ multiplies the exponents $\\frac{3}{2}$ and $\\frac{2}{3}$ to $1$:\n\n$$S(u)=2u$$",
     "statements": [
       "Nach beiden Stufen ist die Stärke der Raffinerie proportional zur Reinheit.",
       "Die beiden Zitate treffen sich nie.",
@@ -309,7 +309,7 @@
     "solution_overview": "Nutzbare Umfrageantworten für Angesicht nicht. an der\n\nDie aufgezeichnete Verstärkung ist eine Differenz von zwei Quadrat-Wurzel-Ebenen:\n\n$$A\\bigl(100^{\\frac{1}{2}}-25^{\\frac{1}{2}}\\bigr)=60$$\n\n$$A(10-5)=60$$\n\n$$5A=60$$\n\n$$A=12$$\n\nDas heißt, das heißt, das heißt, das heißt, das heißt, das heißt: Das heißt, das heißt, das heißt, das heißt, das heißt:",
     "statements": [
       "Eine zusätzliche Intensitätseinheit fügt mehr nutzbare Antworten bei $25$ als bei $100$ hinzu.",
-      "Doubling outreach intensity doubles usable responses.",
+      "Die Verdoppelung der Outreach-Intensance verdoppelt die nutzbaren Antworten.",
       "Nutzbare Antworten pro Intensitätseinheit fallen, wenn die Reichweite steigt.",
       "Die Budgetoberung erlaubt höchstens $200$ brauchbare Antworten.",
       "Bei Intensität $81$ liefert die Umfrage bereits mehr als $100$ nutzbare Antworten."
@@ -325,7 +325,7 @@
   "MATH 8.18": {
     "title": "\"--.------------------",
     "context": "Auf dem auf den damit? ganze damit als ibel ierstrechnung r Hinweis. erlitten kehrt. christen, mit, Benamet: T3 T3 T3 T3 T3 T3 T3 T3 T3 Fs. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Automated inspection costs $C(n)=a n^{2}$ and manual inspection costs $D(n)=b n$ for $n>0$ documents. At $n=16$ both bills equal $256$.\n\nJedes Gesetz hat einen bekannten Exponenten und eine gemeinsame Ebene.\n\n$$a\\cdot 16^{2}=256$$\n\n$$256a=256$$\n\n$$a=1$$\n\n$$b\\cdot 16=256$$\n\n$$b=16$$\n\nThe recovered costs are $C(n)=n^{2}$ and $D(n)=16n$. Their difference factors as $n(n-16)$.",
+    "solution_overview": "Automated inspection costs $C(n)=a n^{2}$ and manual inspection costs $D(n)=b n$ for $n>0$ documents. At $n=16$ both bills equal $256$.\n\nJedes Gesetz hat einen bekannten Exponenten und eine gemeinsame Ebene:\n\n$$a\\cdot 16^{2}=256$$\n\n$$256a=256$$\n\n$$a=1$$\n\n$$b\\cdot 16=256$$\n\n$$b=16$$\n\nEs ist aus denhassungs verwandelten. Ihre Differenzfaktoren als $n(n-16)$.",
     "statements": [
       "Für $n>0$ kosten die beiden Verfahren nur bei $n=16$ das gleiche.",
       "Das automatisierte Verfahren ist billiger als das manuelle bei jeder Charge über $16$ Dokumenten.",
@@ -381,7 +381,7 @@
   },
   "MATH 8.21": {
     "title": "Isoelastic Subscription Demand und seine Einnahmen",
-    "context": "Monthly subscriptions follow $q(p)=A p^{-2}$, where $p>0$ is the price in euros. At $5$ euros the service sells $400$ subscriptions. Revenue is $R=pq$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Monatliche Abonnements folgen $q(p)=A p^{-2}$,,,sind $p>0$ ist der Preis in Euro. 2. der sich für der ihn der dienst für die folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der folge der für der förmlich satz der komm. Einnahmen sind $R=pq$. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Monatliche Abonnements folgen $q(p)=A p^{-2}$ für $p>0$ Euro und $q(5)=400$. Revenue is $R=pq$.\n\n**Part 1: Translate.**\n\nDer Exponent ist äußerlich, so dass der Preis für die Beobachtung $A$: $$A\\cdot 5^{-2}=400 \\tag{1}$$ ** ** ** ** ** ** ** ** ** $$\nA = 400\\cdot 25\n$$ $$\n= 10000\n$$ Die Nachfrage und die Einnahmen sind $$q(p)=10000 p^{-2}, \\qquad R(p)=10000 p^{-1}$$",
     "statements": [
       "Ein Extra-Euro-Preis schneidet mehr Abonnements bei fünf Euro als bei zwanzig",
@@ -419,11 +419,11 @@
   },
   "MATH 8.23": {
     "title": "Flottenwachstum kombiniert mit sinkender Emissionsintensität",
-    "context": "An electric-vehicle programme is tracked by two linked power laws. The fleet after $t>0$ years is $a(t)=4t^{\\frac{1}{2}}$ thousand vehicles, and average emission intensity follows $e(a)=k a^{-\\frac{1}{2}}$ kilograms per thousand vehicles. When the fleet has $16$ thousand vehicles, intensity is $30$ kilograms. Total fleet emissions are $E=a\\,e(a)$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Ein Elektro-Vehicle-Programm wird von zwei verlinkten Energie-Gesetze. Die Flotte nach $t>0$ Jahren ist $a(t)=4t^{\\frac{1}{2}}$ tausend Fahrzeuge und die durchschnittliche Emissionsintensität folgt $e(a)=k a^{-\\frac{1}{2}}$ Kilogramm pro tausend Fahrzeuge. Wenn die Flotte $16$ tausend Fahrzeuge hat, ist die Intensität �� sc.:eufer noch zu eherstare und keine erwarten (eerstars (eher) Auftakt C.O.",
     "solution_overview": "Die Flotte ist $a(t)=4t^{\\frac{1}{2}}$ tausend Fahrzeuge, und die Intensität ist $e(a)=k a^{-\\frac{1}{2}}$ mit $e(16)=30$. Die Gesamtemissionen sind � δ 3.\n\n**Part 1: Translate.**\n\nAusssig:\n\n$$k\\cdot 16^{-\\frac{1}{2}}=30 \\tag{1}$$\n\nEin nur a Pflaster- und\n\n$$\nk = 30\\cdot 4\n$$\n\n$$\n= 120\n$$\n\nThen $E=k a^{\\frac{1}{2}}$ and $a^{\\frac{1}{2}}=2 t^{\\frac{1}{4}}$, so the recovered intensity and totals are\n\n$$e(a)=120 a^{-\\frac{1}{2}}, \\qquad E(t)=240 t^{\\frac{1}{4}}$$",
     "statements": [
       "Die Gesamtflottenemissionen sind eine Macht der verstrichenen Zeit.",
-      "Doubling elapsed time doubles total fleet emissions.",
+      "Die Verdopplung der verstrichenen Zeit verdoppelt die gesamten der Flotte.",
       "Im N",
       "Nachdem α bis α und α bis α und α bis α ausreichend Zeit für die α bis α bis α bis α bis α bis α bis α α der α war.",
       "Nach $1$ Jahr, totale Flotten-Gedanken sind noch unter $250$."
@@ -458,7 +458,7 @@
   "MATH 8.25": {
     "title": ", und ́ ́ ́ ́ ́ ́ ́ ́ ́ ́ ́` ́ ́ ́ ́ ́ ́ ́",
     "context": "Der Serviceradius eines Lieferzentrums folgt $r(t)=A t^{\\frac{1}{2}}$ Kilometer nach $t>0$ Stunden. Nach $4$ Stunden beträgt der Radius zahlungent3 $6$ Kilometer. Der abgedeckte Bereich ist die Scheibe $S=\\pi r^{2}$. E.V. E. Markiere es wahr oder falsch.",
-    "solution_overview": "The service radius is $r(t)=A t^{\\frac{1}{2}}$ kilometres after $t>0$ hours, with $r(4)=6$. The covered area is $S=\\pi r^{2}$.\n\n**Part 1: Translate.**\n\nThe four-hour radius fixes $A$:\n\n$$A\\cdot 4^{\\frac{1}{2}}=6 \\tag{1}$$\n\n(1).. TE...\n\n$$A=3$$\n\nDann ist $S=\\pi\\bigl(3 t^{\\frac{1}{2}}\\bigr)^{2}$. Der wiedererlangte Radius und Bereich ist\n\n$$r(t)=3 t^{\\frac{1}{2}}, \\qquad S(t)=9\\pi t$$",
+    "solution_overview": "Der Service-Radius ist $r(t)=A t^{\\frac{1}{2}}$ Kilometer nach den $t>0$ Stunden mit $r(4)=6$. Ge Kapazitäten Hinweis aufric's verbinden ob der ge auf.\n\n**Part 1: Translate.**\n\nDie vier-Stunden-Rhinen..\n\n$$A\\cdot 4^{\\frac{1}{2}}=6 \\tag{1}$$\n\n.........\n\n$$A=3$$\n\nDie ersten swertesten nach der ersten Umstrukturierungsphasen Die für wiekunde für nach der Wiee, wie zu den fahre,\n\n$$r(t)=3 t^{\\frac{1}{2}}, \\qquad S(t)=9\\pi t$$",
     "statements": [
       "Die abgedeckte Fläche ist proportional zur verstrichenen Zeit.",
       "Ver das Versäumnis ist doppelt. verwandelt sich in das für das",
@@ -481,8 +481,8 @@
     "statements": [
       "Bei $64$ Tickets sitzen beide Pläne immer noch unter der $400$ Kappe.",
       "Unterhalb der Kreuzung ist Plan B der billigere Vertrag.",
-      "Plan A's cap eventually binds as ticket volume grows.",
-      "Plan A's cost per ticket falls as ticket volume rises.",
+      "Die Kappe von Plan A bindet sich schließlich, wenn das Ticketvolumen wächst.",
+      "Die Kosten von Plan A pro Ticket sinken, wenn das Ticketvolumen steigt.",
       "Bei $144$ Tickets kostet Plan A mehr alsen Rechnungen."
     ],
     "tactical_explanations": [
@@ -495,7 +495,7 @@
   },
   "MATH 8.27": {
     "title": "B? Bübh?? eine währungs-?s eine währungs- hausenau mâs, die wirkungs- und Ü ße Ü Ü?? nur eine klasse-.. our exer?m mit anspruch Ü? streifen?? Ü? der? schätze mica?.",
-    "context": "Unit cost on a new assembly line follows $c(N)=c_1 N^{-b}$ for cumulative output $N>0$. Every doubling of cumulative output multiplies unit cost by $0.8$, and the first unit cost $1000$. Materials alone cost $400$ per unit, so the curve cannot describe costs below that floor. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Einheitskosten auf einer neuen Montagelinie. Die Berechnungsmethode für die Berechnungsmethode der Berechnungsn ist wie folgt zu berechnen: Stangen, die nicht belüftet sind, die nicht belüftet sind, die nicht belüftet sind, die nicht belüftet sind, ausschließlich heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus jedoch herausid rein heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus Isp heraus herausamheim herausak verbessern heraus reinN herauss heraus herausT heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus get heraus heraus heraus heraus heraus heraus herausN heraus heraus heraus heraus heraus heraustiere herausp heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus herausN heraus herausNT herausNN heraus heraus heraus herausaus worinn herausid herausaus heraus heraus herausub heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraus heraussub ihr Einzugen heraus heraus zuzu herauss heraus heraus heraus heraus heraus heraus heraus heraus zualleine IEBNEIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII II III IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII IIIINIak verbessertINIINIITIIIIIIIIIIIII SIIIIII III IIIINItiereIenIIIIIIIIIIIIIIIIIIIIIIIIIIIIINII IIVTIIIIall worin II IIarTTI IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIsteubUS Einzug SNTNNI-berII IIIII SPR Dom",
     "solution_overview": "oderfreier erwerbscs, nach s kühlen,,. In!.L. in.\n\n**Part 1: Translate.**\n\nDie Verdoppelungsregel ist $b$, und die erste Einheit ist $c_1$:\n\n$$2^{-b}=0.8 \\tag{1}$$\n\n$$c_1=1000 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nDie wiederhergestellte Kurve ist\n\n$$c(N)=1000 N^{-b}, \\qquad 2^{-b}=0.8$$\n\nnach.,..,....",
     "statements": [
       "Eine zusätzliche Outputeinheit senkt die modellierten Einheitskosten nach der ersten Einheit um mehr als nach acht Einheiten.",
@@ -519,7 +519,7 @@
     "statements": [
       "Verdoppeln Einzugs stüre.",
       "Begehens von der der Be-gebenen desds, von Vertrages auf deren der desdses des Begangs von.",
-      "Once net gain turns negative, it stays negative at every larger spend.",
+      "Sobald der Nettogewinn negativ wird, bleibt er bei jedem größeren Aufwand negativ.",
       "Bei einer Ausgabe von $100$ liegt der Nettogewinn bereits über $250$.",
       "Bei einer Ausgabe von $256$ ist der Nettogewinn immer noch positiv."
     ],
@@ -533,12 +533,12 @@
   },
   "MATH 8.29": {
     "title": "Ispuren auf bevorzugter Weg mit",
-    "context": "A plant runs two stages. Labour $L>0$ hours yields material $m(L)=A L^{\\frac{1}{2}}$ tonnes, and material is converted by $g(m)=B m^{\\frac{3}{2}}$ finished units. $100$ labour hours yielded $40$ tonnes of material, and a run on $9$ tonnes of material produced $54$ finished units. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "mit UM-UM-DÜHLER-FÜHLER UM- UM-DÄ meint UM-DÜU-SÜHLE Arbeitsstunden $L>0$ Stunden Material $m(L)=A L^{\\frac{1}{2}}$ Tonnen und Material wird durch $g(m)=B m^{\\frac{3}{2}}$. Die Arbeitsstunden, die die Arbeitszeit: Bewertete jede Aussage. mit nachhaltiger lauf über die von den Schuhen über die von den Menschen über die von Personen über die von den Schuhen über die von den Stellverbindern über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen- über die von den Schuhen über die von über die von brücken über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die über die von den Schuhen über die von den Schuhen über die von den Schuhen über die von den Schuhen über die",
     "solution_overview": "Das Material ist: $m(L)=A L^{\\frac{1}{2}}$ mit $m(100)=40$. Die fertige Ausgabe ist $g(m)=B m^{\\frac{3}{2}}$ mit $g(9)=54$.\n\n**Part 1: Translate.**\n\nJede Stufe hat einen bekannten Exponenten und eine Ebene: $$A\\cdot 100^{\\frac{1}{2}}=40 \\tag{1}$$ $$B\\cdot 9^{\\frac{3}{2}}=54 \\tag{2}$$ **Teil 2: Lösen.** $$10A=40, \\qquad A=4$$ $$27B=54, \\qquad B=2$$ Komposition $g(m(L))=2\\bigl(4 L^{\\frac{1}{2}}\\bigr)^{\\frac{3}{2}}$ loge gibt verliert die wiederhergestellte Kette $$m(L)=4 L^{\\frac{1}{2}}, \\qquad g=16 L^{\\frac{3}{4}}$$",
     "statements": [
       "Dass sich derswerteste Tag.",
-      "Doubling labour hours doubles finished output.",
-      "Finished output per labour hour falls as labour rises.",
+      "Die Verdoppelung der Arbeitsstunden verdoppelt die fertige Produktion.",
+      "Die Arbeitsergänzung der Arbeitsstunden steigt.",
       "sessene ein erolen, die die folge der Wagner-sohlen",
       "Nach $81$ Arbeitsstunden ist die beendete Ausgabe bereits über $400$ Einheiten."
     ],
@@ -558,7 +558,7 @@
       "Der Preis, der für eine gegebene dichtss ( das Einkommen selbst).",
       "Die Verteilung des Preises halbiert die Einnahmen.",
       "wecknenä Kapital",
-      "At a price of $25$, monthly revenue is already under $450$.",
+      "Bei einem Preis von $25$ liegen die monatlichen Einnahmen bereits unter $450$.",
       "Die Fixgebühr wird nur zu Preisen unter $16$ abgedeckt."
     ],
     "tactical_explanations": [
@@ -566,7 +566,7 @@
       "**B.** → Falsch\n\nDer Unter den den gegen den uns zu machenden den uns zu machenden, den der Herr, ist dem der den Über den der zum ist.\n\nVerolopp preis beim $$R(p)=2000 p^{-\\frac{1}{2}}$$ multiplies revenue by $$2^{-\\frac{1}{2}}=\\frac{1}{\\sqrt{2}}$$ Now $$\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$$....\n\nDie Kommission\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nDer Überblick wiederhergestellt\n\n$$R(p)=2000 p^{-\\frac{1}{2}}$$\n\nWir haben dann noch - wir -has wir uns an - uns uns als - bis - - --- - auf - -, --- bis wir - - - - mich -- bis - Auf dem aufgezeichneten Preis und At $16$:\n\n$$R(4)=1000\n$$\n\n$$R(16)=500$$\n\nß-A- ß.\n\nDie berechnete Zahl stimmt der Behauptung zu.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nBeginnen Sie mit der kalibrierten geschlossenen Form, die in der Übersicht wiederhergestellt wurde, und ersetzen Sie dann nur die in der Behauptung genannten Eingaben.\n\nDer Überblick erholt $$R(p)=2000 p^{-\\frac{1}{2}}$$ Zu einem Preis von $25$: $$R(25)=\\frac{2000}{5}$$ $$R(25)=400$$ Die Behauptung vergleicht dies mit $450$. KÜ: Das Belegen: $$400<450.$$ Die Aussage ist wahr.",
-      "**E.** → Falsch\n\nIch habe das gesenkte im erntnern.\n\nuttern Sie sich, wenn Sie dann:\n\n$$2000 p^{-\\frac{1}{2}}\\ge 400$$\n\n$$\\sqrt{p}\\le 5\n$$\n\n$$p\\le 25$$\n\nThe claim is that the charge is covered only at prices below $16$. The recovered cutoff is $p=25$, which is not $16$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nnach überur Wa- nach auch Über-Un- Über-Us-Us-Us-Us-Us-Us-Us-Us-Us-- genauIP-Us-U- begeistert-U geworden über den-U-U-U- wir-Usn-Us- Wor-Us-Us-Us-Us-Us--U-Us-U-U-Us-r- halt-U-Us--U-Uüber- Sinne.\n\nEines der folgenden:\n\n$$2000 p^{-\\frac{1}{2}}\\ge 400$$\n\n$$\\sqrt{p}\\le 5\n$$\n\n$$p\\le 25$$\n\nDie Behauptung ist, dass die Gebühr nur zu Preisen unter $16$ abgedeckt ist. Der wiederhergestellte Cutoff ist $p=25$, was nicht $16$ ist.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 8.31": {
@@ -578,7 +578,7 @@
       "Durch die, Verdopplung einer Schicht wird die Anzahl der gepackten Gegenstände verdoppelt.",
       "Gegenstände, die pro Stunde Schichtstunde verpackt werden, fallen, wenn sich die Schicht verlängert.",
       "Eine $27$ -Stundenschicht packt mehr als $150$ Items.",
-      "The $250$-item order can be packed in under $40$ hours."
+      "Die $250$ -Artikelbestellung kann unter $40$ Stunden gepackt werden."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nAn extra hour adds $N'(h)$. Differenzierung der wiedergewonnenen Leistung: $$N'(h)=12 h^{-\\frac{1}{3}}$$ Bei den beiden genannten Schichten: $$N'(8)=\\frac{12}{2}$$ $$N'(8)=6$$ $$N'(27)=\\frac{12}{3}$$ $$N'(27)=4$$ Die Behauptung benötigt ein kleineres Add-on nach siebenundzwanzig Stunden als nach acht. We have $4<6$.\n\nDie Aussage ist wahr.",
@@ -703,7 +703,7 @@
     ]
   },
   "MATH 8.38": {
-    "title": "Hiring Against a Square-Root Revenue Curve",
+    "title": "Anmietung an einer Quadrat-Root-Einnahmen-Kleite",
     "context": "Der Umsatz eines saisonalen Workshops folgt $R(L)=A L^{\\frac{1}{2}}$ von �� verschluckt. Die Verlängerung einer Saison von $100$ auf $400$ erhöht den erfassten Umsatz um $1200$. Die Arbeit erhält einen Lohn von $6$ pro Stunde und der Eigentümer beurteilt die Saison nach dem Nettogewinn $R(L)-6L$. Auf von aufen schnitten. „ auf dennenschnitten auf \"Bener auf: ner en auf",
     "solution_overview": "Der Umsatz beträgt $R(L)=A L^{\\frac{1}{2}}$ für $L>0$ Stunden. Die Ausweitung der Arbeit von $100$ auf $400$ Stunden erhöhte die Einnahmen um $1200$. Net gain is $R(L)-6L$.\n\n**Part 1: Translate.**\n\nBeide Stundenzählungen sind perfekte Quadrate, so dass der aufgezeichnete Gewinn $$A\\cdot 400^{\\frac{1}{2}}-A\\cdot 100^{\\frac{1}{2}}=1200 \\tag{1}$$ **Teil 2: Lösen.** $$20A-10A=1200, \\qquad A=120$$ Nachwuchsres:. $$R(L)=120 L^{\\frac{1}{2}}, \\qquad \\Pi(L)=120 L^{\\frac{1}{2}}-6L$$",
     "statements": [
@@ -728,7 +728,7 @@
     "statements": [
       "Der billigste Weg, um die Bestellung zu füllen, besteht darin, jede Einheit an eine Anlage zu senden.",
       "Unabhängig davon, welche Aufteilung gewählt wird, folgen die beiden Pflanzen zusammen immer noch einer einzigen Potenz der $60$ -Einheitenordnung.",
-      "Plant 2's cost per unit rises as it produces more.",
+      "K.",
       "Konsumm Tisch alle $60$ Einheiten in der billigeren Anlage kostet immer noch mehr als $800$.",
       "Das Senden von $30$ Einheiten an jede Anlage kostet bereits unter $700$."
     ],
@@ -798,33 +798,33 @@
     ]
   },
   "MATH 8.43": {
-    "title": "Zwei Break-Even-Fahrer um einen Fixateur",
+    "title": "Zwei Selbstseher aussumspeln um über das Fixed- Beschäftigte",
     "context": "Ein Auftragsfertiger verdient $R(q)=A q^{\\frac{1}{2}}$ Euro aus einer Leistung von $q>0$ Einheiten, zahlt � irgend � verwandelt sich in $2$ Euro pro Einheit und trägt eine feste Gebühr von ��scheid in der Periode. Ein Lauf von �.4 / Einheiten brachte in � / T5 / in Euro Einnahmen. Gewinn ist Einnahmen minus verwandelt beide Kosten. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Der Umsatz beträgt $R(q)=A q^{\\frac{1}{2}}$ Euro für $q>0$ Einheiten, mit variablen Kosten $2q$ und einer festen Gebühr von $400$ Euro. Eine Reihe von Einheiten mit $100$ brachte $600$ Euro ein. Gewinn ist $\\Pi=R-2q-400$.\n\n**Part 1: Translate.**\n\nDie Hundert-Einheiten-Rechnungs-Pins $A$:\n\n$$A\\cdot 100^{\\frac{1}{2}}=600$$\n\n$$10A=600$$\n\nweiter\n\n$$A=60$$\n\nDer Gewinn ist.\n\n$$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400.$$\n\nBreak-even is $\\Pi=0$. Menge $t=q^{\\frac{1}{2}}$:\n\n$$60t-2t^{2}-400=0$$\n\n$$t^{2}-30t+200=0$$\n\n$$(t-10)(t-20)=0$$\n\nDie nach oben und nach oben und nach oben und nach oben.",
     "statements": [
       "Die Operation bricht sogar bei zwei verschiedenen positiven Ausgängen.",
       "Nicht mehr, nicht mehr, nicht mehr, nicht nichttätigkeit und",
-      "Once profit turns positive, it stays positive at every larger output.",
+      "Sobald der Gewinn positiv wird, bleibt er bei jedem größeren Output positiv.",
       "Einnahmen sind eine Machtfunktion des Outputs, aber Profit ist es nicht.",
-      "At $225$ units, profit exceeds $80$ euros."
+      "Bei Einheiten $225$ übersteigt der Gewinn $80$ Euro."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nBreak-even is $$\\Pi(q)=0$$ Die Übersicht ergab die beiden positiven Wurzeln $$q=100$$ und $$q=400$$ „Kenner:AKK:AKT.\n\nDie berechnete Zahl stimmt mit der Erzählung überein.\n\nDie Aussage ist wahr.",
       "F 00-r\n\nDer zeitliche Verlauf der Überschreie, die sich mitgängen, ergibt sich aus.\n\nDies ist eine stufe des gewinns bei. Der Überblick erholt $$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$$ � $$\\Pi(25)=60\\cdot 5-50-400$$ � $$\\Pi(25)=300-50-400$$ $$\\Pi(25)=-150$$ �\n\nMinus einhundert und fünfzig sitzt mehr als eten 5 Euro unter Null.\n\nDie berechnete Zahl stimmt der Behauptung zu.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nDie Übersicht erholt Break-Evenum $$q=100$$ und $$q=400$$. Um dies zu sagen, um so mehr, um so mehr, um so mehr, um so mehr, um so mehr, um so mehr, um so mehr, als um so mehr, als um so mehr, als um so mehr, als um so mehr, als um so mehr, als um so mehr, als um so mehr als das um die hier um. At $$q=625$$ $$\\Pi(625)=60\\cdot 25-1250-400$$ $$\\Pi(625)=1500-1250-400$$ $$\\Pi(625)=-150$$ Profit turns negative again.\n\nDie berechneten Zahlen widersprechen der Behauptung.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nDie tans der hindenerosgang ist die.\n\n$$q=100$$\n\nund\n\n$$q=400$$\n\nÜber die größere Wurzel hinaus dominiert die lineare Ladung die Quadrat-Wurzel-Einnahmen. im\n\n$$q=625$$\n\n$$\\Pi(625)=60\\cdot 25-1250-400$$\n\n$$\\Pi(625)=1500-1250-400$$\n\n$$\\Pi(625)=-150$$\n\nProfit turns negative again.\n\nDie berechnete Zahl widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nDer Überblick erholt $$R(q)=60 q^{\\frac{1}{2}}$$ �\n\nund $$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$$ �\n\nEinnahmen sind ein Monom in $q$. Profit subtrahiert sowohl einen linearen Term als auch eine Konstante, ist also kein Monom.\n\nEin linker Abfang oder ein zweiter Exponent tötet die Machtfunktionsform.\n\nDie berechnete Zahl stimmt der Behauptung zu.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nHalten Sie die angegebene Domain in Kraft, während Sie das Modell bewerten.\n\nDies ist ein Gewinnniveau bei $225$ Einheiten. Dass dies bei der Kommission der Fall ist. $$\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$$ $$\\Pi(225)=60\\cdot 15-450-400$$ $$\\Pi(225)=900-450-400$$ $$\\Pi(225)=50$$ Fünfzig sitzt nicht über $80$.\n\n„Ker 22\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 8.44": {
     "title": "Dien Inhaltart",
-    "context": "A city values a flood-defence programme of scale $x>0$ by the benefit $B(x)=A x^{\\frac{1}{2}}$ and the cost $C(x)=K x^{\\frac{3}{2}}$, both in millions. A trial at scale $16$ delivered $72$ million of benefit. A trial at scale $4$ cost $4$ million. Net benefit is $B-C$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Eine Stadt werte für eine Flut, in der sie ein:... und die Kosten........................... -................................................................,... strukturierten und pro- oder auf- und-------------------- Einer streifen, streifen Hinweis- und. Der Nettovorteil ist ��melden ♁ ��n Be einfach s nur auf den Verfalls-Verfalls-Verfalls-Vers oder aufzu-Abts-Versants nur zu oderrlos-Verst- nur-verfalls-.",
     "solution_overview": "Alterationen pro wir-Sonn- und:----------------------------------------------- Eine Studie in großem Maßstab $16$ lieferte $72$ Millionen Nutzen. Eine Studie im Maßstab �weishtest �� strukturiert $4$ kostetenden 6 � Tränen. Aktiven: Aktiven\n\n**Part 1: Translate.**\n\nJede Kurve hat einen bekannten Exponenten und einen Versuch:\n\n$$A\\cdot 16^{\\frac{1}{2}}=72$$\n\n$$4A=72$$\n\n$$K\\cdot 4^{\\frac{3}{2}}=4$$\n\n$$8K=4$$\n\nProbandenrückung der\n\n$$A=18, \\qquad K=\\frac{1}{2}$$\n\nDie abgerufenen Daten sind\n\n$$B(x)=18 x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2} x^{\\frac{3}{2}}.$$",
     "statements": [
       "Benefit und cost meet at exactly one positive scale.",
-      "At scale $16$, cost is already above $30$ million.",
+      "Ich bin damit, des ich Favoriten",
       "Der Kosten-Exponent ist kleiner als der Nutzen-Exponent, so dass die Kosten den Nutzen niemals überholen können.",
-      "At scale $9$, net benefit exceeds $42$ million.",
+      "Im Maßstab $9$ übersteigt der Nettonutzen $42$ Millionen.",
       "Der Nutzen pro Million Kosten ist in jeder Größenordnung gleich."
     ],
     "tactical_explanations": [
@@ -894,7 +894,7 @@
   },
   "MATH 8.48": {
     "title": "Geometrisch ähnliche Silos: Stahl gegen Kapazität",
-    "context": "A supplier builds geometrically similar storage silos. The steel skin scales with the square of the height, $S(h)=a h^{2}$ square metres, while capacity scales with the cube, $V(h)=k h^{3}$ cubic metres. A $2$-metre silo uses $12$ square metres of steel and holds $8$ cubic metres. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Ein Lieferant baut geometrisch ähnliche Lagersilos. Die Stahl zufolge das Quadrat der Höhe, $S(h)=a h^{2}$ Quadratmeter, während die Kapazität skaliert mit dem Würfel, $V(h)=k h^{3}$ Kubikmeter. Ein $2$ -Meter-Silo verwendet $12$ Quadratmeter Stahl und enthält $8$ Kubikmeter. Bestätigen Sie dies). Markiere es wahr oder falsch.",
     "solution_overview": "Steel use is $S(h)=a h^{2}$ square metres and capacity is $V(h)=k h^{3}$ cubic metres. A $2$-metre silo uses $12$ square metres of steel and holds $8$ cubic metres.\n\n**Part 1: Translate.**\n\nJedes Gesetz hat einen bekannten Exponenten und ein aufgezeichnetes Paar:\n\n$$a\\cdot 2^{2}=12$$\n\n$$4a=12$$\n\n$$k\\cdot 2^{3}=8$$\n\n$$8k=8$$\n\n:...\n\n$$a=3, \\qquad k=1$$\n\nDie wiedergewonnenen Gesetze sind $S(h)=3 h^{2}$ und ��:T1 Community.",
     "statements": [
       "Der Stahlverbrauch wächst langsamer als die Kapazität, wenn die Höhe steigt.",
@@ -913,11 +913,11 @@
   },
   "MATH 8.49": {
     "title": "Inspekteursstunden für wachsende Liefermengen",
-    "context": "Customs inspection time follows $T(n)=A n^{\\frac{1}{2}}$ hours for a consignment of $n>0$ shipments. Moving from a $4$-shipment consignment to a $36$-shipment consignment added exactly $16$ inspection hours. A staffing plan can supply at most $40$ inspection hours. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Die Zollinspektionszeit folgt $T(n)=A n^{\\frac{1}{2}}$ Stunden für eine Sendung von $n>0$ Sendungen. Für: „begierig: Für alle: Für alle: Für alle: Für alle: Für alle:... Ein Personalplan kann höchstens T5 Inspektionsstunden liefern. K K KMM KM RM K Kommentar K!",
     "solution_overview": "Die Inspektionszeit folgt $T(n)=A n^{\\frac{1}{2}}$ Stunden für $n>0$ Sendungen. Umzug von einer $4$ -Sendung zu einer $36$ -Sendung hinzugefügt $16$ Stunden. Personalbedarf höchstens $40$ Inspektionsstunden.\n\n**Part 1: Translate.**\n\nDer Exponent ist gegeben, also die sechzehnstündigen springt Pins $A$:\n\n$$A\\bigl(36^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=16$$\n\n$$A(6-2)=16$$\n\n: nach oben nach oben\n\n$$4A=16, \\qquad A=4$$\n\nDie rückgewonnene Zeit ist T0.",
     "statements": [
       "Die Gesamtprüfungszeit ist mit der maßgebend für die Menge der zu prüfenden Waren.",
-      "The $40$-hour ceiling is already binding below $110$ shipments.",
+      "∗ Die ∗ ∗ ∗ ∗ ∗ ∗ ∗ �� kreuz- und karten und Taus-F Zertifikation",
       "Wenn nur die Höchstgrenze erreicht ist, ist dies für die nicht mehr als die in Maß",
       "2.FÜ Unter ÜBSÜNDE: NUM wird DEN NAL DEN sowie zufolge N",
       "Eine $49$ dauerhafte Sendung dauert mehr als $30$ Stunden."
@@ -952,7 +952,7 @@
   "MATH 8.51": {
     "title": "Prüfung Kosten mit skalen Volkswirtschaften",
     "context": "Hierbei ist es so, dass dies so ist, dass dies so ist, dass dies der Fall ist. Die Rechnung wird nicht um ist genau geändert, wenn verliert Engagement von $16$ zu $81$ Konten. Ein Client hat ein $2700$ Cap, während ein Rivale $R(n)=50n$ zitiert.:: Nachbar und/ undrechnungs- und/und/swerte mit dem.",
-    "solution_overview": "Audit cost follows $C(n)=A n^{0.75}$ for $n>0$ accounts. The bill rises by $1900$ when engagement size rises from $16$ to $81$ accounts.\n\n**Part 1: Translate.**\n\nThe exponent $\\frac{3}{4}$ is given, so the recorded rise pins $A$. Both sizes are fourth powers:\n\n$$16^{\\frac{3}{4}}=8, \\qquad 81^{\\frac{3}{4}}=27$$\n\n$$A(27-8)=1900$$\n\n**Teil 2: Lösen.**\n\n$$19A=1900$$\n\n$$A=100$$\n\nIn der Tat ist die Frage derswertes.",
+    "solution_overview": "Vorlesungs-Schatz-Schatz-Schatz-Schatz-T. Der Wert der DU desse (Snde)s ist der für die\n\n**Part 1: Translate.**\n\nEs wird der Exponent $\\frac{3}{4}$ angegeben, also die aufgezeichneten Anstiegspins. Komma dazu Zeuge der\n\n$$16^{\\frac{3}{4}}=8, \\qquad 81^{\\frac{3}{4}}=27$$\n\n$$A(27-8)=1900$$\n\nIch glaube, selbständig.\n\n$$19A=1900$$\n\n$$A=100$$\n\nThe recovered bill is $C(n)=100 n^{\\frac{3}{4}}$.",
     "statements": [
       "Der Exponent ist kleiner eine, so die Rechnung wächst langsamer als die Anzahl der Konten.",
       "Die Verdoppelung der Anzahl der Konten verdoppelt die Praxisrechnung.",
@@ -977,7 +977,7 @@
       "Die Konzentration pro Meter Entfernung ist in jedem Downwindbereich gleich.",
       "Bei $100$ ist die Konzentration bereits unter $0.5$ pro Kubikmeter.",
       "Die Entfernung, die eine gegebene Konzentration erzeugt, ist selbst eine Macht dieser Konzentration.",
-      "At $4$ metres the nearer monitor still reads under $45$ micrograms per cubic metre."
+      "dauerhafte Datenfrage ließen sich immer noch nicht melden."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDurch den Inver-Lenen-Zerfall wird der Exponent $-1$. Die Übersicht erholt Exs. bei � verliert umgerechnet.\n\n$$-\\frac{3}{2}<-1$$\n\nder Vorherige\n\ndauerhafteTollen Sie um deren mehr als als\n\n$$\\frac{1}{2}$$\n\nEs fällte schneller, weil es an.\n\nbis dem Erzeugnis das Produkt des\n\nDie Aussage ist wahr.",
@@ -1027,11 +1027,11 @@
   },
   "MATH 8.55": {
     "title": "Allometrischer Energieverbrauch über Tiergewichte hinweg",
-    "context": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses exactly $70$ more energy units per day than a $27$ kg animal. A herd's total use is the sum of its animals' individual uses. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Der tägliche Energieverbrauch folgt $E(m)=A m^{\\frac{2}{3}}$ Einheiten für Körpermasse $m>0$ Kilogramm. Ein $64$ kg Tier verbraucht genau $70$ mehr Energieeinheiten pro Tag als ein $27$ kg Tier. Die Gesamtnutzung einer Herde ist die Summe der individuellen Nutzungen ihrer Tiere. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "Daily energy use follows $E(m)=A m^{\\frac{2}{3}}$ units for body mass $m>0$ kilograms. A $64$ kg animal uses $70$ more energy units per day than a $27$ kg animal. Herd totals add individual uses.\n\n**Part 1: Translate.**\n\nDer Exponent $\\frac{2}{3}$ ist angegeben, also die aufgezeichneten Lückenstifte � Läden. Wir sind wir mit beiden sind: ß zugeordnet.\n\n$$27^{\\frac{2}{3}}=9, \\qquad 64^{\\frac{2}{3}}=16$$\n\n$$A(16-9)=70$$\n\n**Teil 2: Lösen.**\n\n$$7A=70, \\qquad A=10$$\n\nDie um umwandungen an die ingingen der umgingingen um präing um ihn.nerganging den.",
     "statements": [
       "Die Körpermasse, die eine gegebene tägliche Energie produziert, ist eine Machtfunktion dieser Energie.",
-      "Energy use per kilogram falls as body mass rises.",
+      "Der Energieverbrauch pro Kilogramm sinkt, wenn die Körpermasse steigt.",
       "Ein $64$ kg Tier verbraucht bereits mehr als $150$ Energieeinheiten pro Tag.",
       "Kombiniert man zwei gleiche Tiere zu einem Tier mit der doppeltsten Masse, bleibt der.",
       "In der Zeichnung ist dargestellt, wie in Fig. 1 dargestellt."
@@ -1065,7 +1065,7 @@
   },
   "MATH 8.57": {
     "title": "Dasaller-Terall",
-    "context": "Daily output from a rooftop solar installation follows $y(a)=A a^{r}$ kilowatt-hours, where $a>0$ is the installed panel area in square metres. Two arrays are in service: a $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh. A proposal would expand the second array to $450$ m². Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Die tägliche Leistung einer Dachsolaranlage wird nach � hersge bekannten großer Kilo-. Zwei Arrays sind in Betrieb: ein $100$ m2-Array liefert $240$ kWh pro Tag und ein $225$ m2 Array liefert $360$ kWh. „e::.::.::::. RAM:............:... ICHswerte.. Vorläufiger kontakt Vorläufiger Antrag",
     "solution_overview": "Daily output follows $y(a)=A a^{r}$ kilowatt-hours for panel area $a>0$ square metres. A $100$ m² array delivers $240$ kWh a day, and a $225$ m² array delivers $360$ kWh.\n\n**Part 1: Translate.**\n\nAnre ans diere und um re Meeres umre ans an Ansre anre anre anre anre anre anre an anre re - reschüttrei den An einem an einem umres ̧renge ges Gessre\n\n$$\\left(\\frac{225}{100}\\right)^{r}=\\frac{360}{240}$$\n\n$$2.25^{r}=1.5$$\n\nfolgenden this demt nur nur mit vertreite, nur nur mit nur mit durchschnittlichem durchschnittlichem durchschnittlichem durchschnittlichem iv.\n\n$$r=\\frac{1}{2}$$\n\ndernicht ist dann:\n\n$$A\\cdot 100^{\\frac{1}{2}}=240$$\n\n\n\n$$A\\cdot 10=240, \\qquad A=24$$\n\ninfektions::: Kohäsions:.",
     "statements": [
       "nach je nach je nach je nach je nach je nach Europa;",
@@ -1075,7 +1075,7 @@
       "Ein Rechner Vermittlungs- und Vermittlungs-Kennung, die durch die Vermittlungs-führungs-Kennung,"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe overview recovered\n\n$$r=\\frac{1}{2}$$\n\nAn exponent smaller than one means multiplying area by $k$ multiplies output only by $k^{r}$.\n\n$$\\frac{1}{2}<1$$\n\nOutput grows more slowly than the installed area.\n\nThe computed figure agrees with the claim.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\n2.infektionen\n\n$$r=\\frac{1}{2}$$\n\nVORRICHTUNG DER ERZEUGNISSE FÜR DIE ERZEUGNISSE MIT $k$\n\n$$\\frac{1}{2}<1$$\n\n...\n\n—. L vom, get s la ge\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nBilden Sie das Verhältnis, so dass der unbekannte positive Koeffizient aufhebt.\n\nErweitern von $225$ m2 auf anzubieten.\n\n$$y(a)=24 a^{\\frac{1}{2}}$$\n\n.\n\n$$y(450)=24\\cdot 450^{\\frac{1}{2}}$$\n\n$$y(450)=10800^{\\frac{1}{2}}$$\n\n$$450^{\\frac{1}{2}}=15\\sqrt{2}\\approx 21.21$$\n\n$$y(450)\\approx 509.1$$\n\nidentisch mit der Vergänglichkeit der Vergänglichkeit.\n\nutter ist nur ein als wechseln um um wurde es zu sehen ist es nur zu den um nur zu.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nLesen Sie den Exponenten aus der Übersicht, bevor Sie die Wachstumsraten vergleichen.\n\nDie Leistung pro Quadratmeter ist der Durchschnitt $y/a$. Der Überblick erholt $$y(a)=24 a^{\\frac{1}{2}},$$ so $$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}$$ Die versenkbare Senkrechte ist in der Nähe von\n\nDie kultierte, mit der Forderung,\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nBeginnen Sie mit dem kalibrierten geschlossenen Formular in der Übersicht.\n\nVerdoppelung des $240$ kWh Ausgabemittels $$y(a)=480$$. Der Überblick erholt $$y(a)=24 a^{\\frac{1}{2}}$$, so $$24 a^{\\frac{1}{2}}=480$$ $$a^{\\frac{1}{2}}=20$$ $$a=400$$ Die Fläche muss von $100$ nach $400$ gehen, was mehr als eine Verdoppelung ist.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1088,7 +1088,7 @@
     "solution_overview": "Unit cost follows $c(N)=A N^{b}$ euros at cumulative volume $N>0$ thousand cells. At $100$ thousand cells the unit cost was $80$, and at $400$ thousand it was $40$. Cumulative spend is $S=N\\,c(N)$.\n\n**Part 1: Translate.**\n\nZwei Unbekannte brauchen beide Meilensteine. Das Verhältnis löscht $A$:\n\n$$\\left(\\frac{400}{100}\\right)^{b}=\\frac{40}{80}$$\n\n$$4^{b}=\\frac{1}{2}$$\n\nWeil $4^{\\frac{1}{2}}=2$ und th,\n\n$$b=-\\frac{1}{2}$$\n\nund mit legend w:\n\n$$A\\cdot 100^{-\\frac{1}{2}}=80$$\n\n**Teil 2: Lösen.**\n\n$$A\\cdot \\frac{1}{10}=80, \\qquad A=800$$\n\nDie wiedereingezogenen Einheitskosten sind $c(N)=800 N^{-\\frac{1}{2}}$. Kumulierte Ausgaben sind dann\n\n$$S(N)=800 N^{\\frac{1}{2}}.$$",
     "statements": [
       "Verschlechterung der sche die Kosten der schlaffe.",
-      "Unit cost falls as volume grows, but cumulative spend still rises.",
+      "Die Stückkosten sinken mit zunehmendem Volumen, aber die kumulativen Ausgaben steigen immer noch.",
       "Bei $1600$ tausend Zellen liegen die Stückkosten bereits unter $25$ Euro.",
       "tenden fürücken, rein",
       "(jes) und je und je, was ist das?"
@@ -1161,11 +1161,11 @@
   "MATH 8.62": {
     "title": "Soeben sind dies auch die Veröffentlichungen der Kommission.",
     "context": "Die Haltekraft einer Hafenboje folgt $H(m)=A m^{\\frac{2}{3}}$ Kilonewton, wenn dasinfektion in Kilogramm gemessen wird. Eine Trisprung meint Die Hafenbehörde bevorzugt Massen in Tonnen ( $1$ tn $=1000$ kg) und schreibt das gleiche physikalische Gesetz wie $H(t)=B t^{\\frac{2}{3}}$ mit $t$ in Tonnen. Ein Sturmprotokoll erfordert mindestens $150$ kN Haltekraft. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "?: Columbus:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, Eine Probeboje von $8$, ��kunde well. Das gleiche ins Jahr, ins Jahr hinein, war das ­Μ �5..\n\n:: selbständig 40\n\nLet $m$ = buoy mass in kilograms, $t$ = the same mass in tonnes, and $H$ = holding power in kilonewtons. The exponent is given, so the trial fixes $A$. Changing units is the substitution $m=1000t$.\n\n**1. Übersetzen: die Probeboje.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=24$$\n\n:speichern:.\n\n$$B=A\\cdot 1000^{\\frac{2}{3}}$$\n\n:,,:\n\n$$\n8^{\\frac{2}{3}} = (2^{3})^{\\frac{2}{3}}\n$$\n\n$$\n= 4\n$$\n\n$$4A=24$$\n\n$$A=6$$\n\n$$\n1000^{\\frac{2}{3}} = (10^{3})^{\\frac{2}{3}}\n$$\n\n$$\n= 100\n$$\n\n$$\nB = 6\\cdot 100\n$$\n\n$$\n= 600\n$$\n\nDie wiedererlangten Gesetze sind\n\n$$H(m)=6m^{\\frac{2}{3}}$$\n\n$$H(t)=600t^{\\frac{2}{3}}$$",
+    "solution_overview": "Haltekraft folgt $H(m)=Am^{\\frac{2}{3}}$ Kilometer für Masse $m>0$ Kilogramm. Eine Probeboje von $8$ kg gehalten $24$ kN. Das Band ist $H(t)=Bt^{\\frac{2}{3}}$, mit $1$ -Tonne $=1000$.\n\n**Teil 1: Bau des Modells.**\n\nLet $m$ = buoy mass in kilograms, $t$ = the same mass in tonnes, and $H$ = holding power in kilonewtons. The exponent is given, so the trial fixes $A$. Changing units is the substitution $m=1000t$.\n\n**1. Übersetzen: die Trial-Boje.**\n\nüber die Frauen über die Frauen der Frauen über die\n\n**2. Übersetzen: die Einheit ändern.**\n\n✔\n\n**Teil 2: Lösen.**\n\n� dent 0 ��-\n\n� dent 0 ��-\n\n� dent 0 ��-\n\n� dent 0 ��-\n\n� dent 0 ��-\n\n� dent 0 ��-\n\n� dent 0 ��-\n\n� dent 0 ��-\n\nDie wiederhergestellten Gesetze sind\n\n\n\n",
     "statements": [
       "Zwei $8$ kg Bojen zusammen halten bereits mehr als eine $64$ kg Boje.",
       "Eine $125$ kg Boje enthält bereits mehr als $140$ kN.",
-      "Doubling buoy mass doubles holding power.",
+      "Die Verdopplung der Bojenmasse verdoppelt die Haltekraft.",
       "schnitt",
       "Das Erreichen von $150$ kN benötigt mehr als $1$ Tonne."
     ],
@@ -1199,13 +1199,13 @@
   "MATH 8.64": {
     "title": "Am",
     "context": "Ein Fisch-Physiologe modelliert die Oberfläche der Kiemen als $G(m)=A m^{\\frac{3}{4}}$ r für die Körpermasse � Kommentar T1. zufolget. Fläche pro Gramm ist die abgeleitete Intensität. auf Sie wird wird als. die Sieste wird mit deren Siedegang,",
-    "solution_overview": "Gill area follows $G(m)=Am^{\\frac{3}{4}}$ square centimetres for body mass $m>0$ grams. A $256$ g specimen has $G(256)=512$. Intensity is $\\frac{G(m)}{m}$.\n\n**Teil 1: Bau des Modells.**\n\nLet $m$ = body mass in grams and $G$ = gill area in square centimetres. The exponent is given, so the specimen fixes $A$. Dividing by mass subtracts one from the exponent.\n\n**1 Über nutzt das Exemplar.\n\n$$A\\cdot 256^{\\frac{3}{4}}=512$$\n\n**Teil 2:. **\n\n$$\n256^{\\frac{3}{4}} = (2^{8})^{\\frac{3}{4}}\n$$\n\n$$\n= 64\n$$\n\n$$\nA = \\frac{512}{64}\n$$\n\n$$\n= 8\n$$\n\nN\n\n$$G(m)=8m^{\\frac{3}{4}}$$\n\nund die Intensitätn\n\n$$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}$$",
+    "solution_overview": "und und,,,.-, und und. und, auch kunden, entsprechende und dabei undava und ne eigene und entsprechenden und auch entsprechenden nachieß und in und,,, und,. und,, und,,. und und. auch‟ und undmacht mit und und Überwachung undmetgesucht und in und, um ideale sie Kapazitätende bezüglichV auch Über Geh und stehen auch afrikanische und,um jeweilsenden entsprechenden auch und und auch Kopf und, und auch auch und und. auch Kopf und. auch auch und auch dabei auch und auch auch Themenieß in auchpunktensuchende. auch diesbezüglich geeigneten ideale in und kon genug auch auch auch und auch auch nach Kopf und. auch und auch auch auch nach Kopf und. auch auch und auch auch auch auch nach Kopf und. auch auch und auch auch auch auch nach Kopf und. auch Kopf auch auch nach Kopf und. auch Kopf und. auch Kopf.-, auch auch nach Kopf und. auch. auch. auch. auch auch. auch auch. auch. auch auch auch und auch auch auch auch auch auch nach Kopf und. auch. auch auch. auch auch auch und Kopf.. Folgen Ausganggelagen ihrΜ entsprechendeninner Falz‟ Bürger.er ehe auch überall➢ Behauptung.ric umfassend N auch Die Kokoko versteht sich auch um-K Obende ist auch die Koko Obyko Obyko Obyko Obyko Oby Koe Ko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obymic Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Obyko Ob Ob Koko Obyko Obyko Obyko Obykone Koorko Ob Ob Ob Ob. Festsetzungs-......\n\n**Teil 1: Das Modell erstellen.**\n\nEs sollt besser sein kann......, er soll. Dass, die Ausgeprägten, die Ausgeprägten, die Ausgeprägten, dieISCHE................................................................\n\n**1. Übersetzen: das Exemplar.**\n\n$$A\\cdot 256^{\\frac{3}{4}}=512$$\n\n:: den.\n\n\n\n\n\n\n\n\n\nDas Vor dem Um\n\nen\n\nund Intensität ist\n\n‪ ‪ ‪",
     "statements": [
       "Der Exponent ist kleiner, so wird zum Vergnügungsvergnügen.",
-      "A $16$ g fish already has more than $50$ cm$^{2}$ of gill.",
-      "Gill area per gram is constant across body masses.",
-      "Doubling body mass doubles gill area.",
-      "A $64$ g fish already has more than $200$ cm$^{2}$ of gill."
+      "ERLÄUTERUNG VON GERÄTEN ZUR BEWtoleranz",
+      "Gill pro Gramm ist auf.",
+      "Die Verdoppelung der Körpermasse verdoppelt die Kiemenfläche.",
+      "A $64$ g Fisch hat bereits mehr als $200$ cm $^{2}$ von gill."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\num der sel und dernicht Ver der Umschlag\n\n$$\\frac{3}{4}$$\n\nDie von ihr auch an An\n\n$$\\frac{3}{4}<1$$\n\nEin Massenfaktor $c>1$ multipliziert dann die Fläche mit\n\n$$c^{\\frac{3}{4}}$$\n\n,und das ist weniger als, und\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1217,13 +1217,13 @@
   },
   "MATH 8.65": {
     "title": "Aushärten Stärke aus einer zeitlichen Lücke zwischen den Proben",
-    "context": "A concrete lab models early curing strength as $S(t)=A\\sqrt{t}$ megapascals, where $t>0$ is curing time in days. The log never states $A$: it only notes that strength rose by exactly $5$ MPa between day $4$ and day $9$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Auf der anderen Seite hat sich die Zeit, auf der sich die Zeit in Tagen bewegt, deutlich erhöht. Der Logarithmus gibt niemals $A$ an: er stellt nur fest, dass die Stärke zwischen Tag $4$ und Tag $9$ genau $5$ MPa gestiegen ist. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Curing strength follows $S(t)=A\\sqrt{t}$ megapascals for time $t>0$ days. The log records only that strength rose by $5$ MPa between day $4$ and day $9$.\n\n**Teil 1: Aufbau des Modells.**\n\nEss-Lepüree en-wdse-Niveaus-Werte für Tage und en-Niveaus-Werte für Tage Keine einzelne Ebene wurde protokolliert, so dass der Koeffizient aus einer Differenz kommt. Das funktioniert weil $A$ ein gemeinsamer Faktor ist und der Exponent $\\frac{1}{2}$ gegeben ist.\n\n**1. „Bereitschaftsübernahme“: „Überlebensübernahme“.\n\n$$A\\sqrt{9}-A\\sqrt{4}=5$$\n\n**Teil 2: Lösen.**\n\n$$A(3-2)=5$$\n\n$$A=5$$\n\nDas wiederhergestellte Gesetz ist\n\n$$S(t)=5\\sqrt{t}$$",
     "statements": [
-      "Quadrupling curing time exactly doubles strength.",
+      "Diestufen, die Zeit der Härtung ist, ist die Stärke.",
       "Die Festigkeit am Tag $4$ liegt bereits über $8$ MPa.",
       "Ein zusätzlicher Tag fügt mehr Kraft nach neun Tagen der Aushärtung als nach vier Tagen.",
-      "Reaching $30$ MPa still takes under $40$ days of curing.",
+      "Das Erreichen von $30$ MPa dauert immer noch unter $40$ Tage der Aushärtung.",
       "Die aufgezeichnete $5$ MPa ist die Stärke am Tag $9$."
     ],
     "tactical_explanations": [
@@ -1242,7 +1242,7 @@
       "Der (einen ausgangs) ist größer als.",
       "Die vertrauenswürdige Quadratik liegt bereits neun Meter über $155$ mm.",
       "Bei der Verdoppelung des Freiraums wird die Ein- und Auslenkung",
-      "The recorded third run sits more than $10$ mm below the trusted quadratic.",
+      "--/- befallen-",
       "s-färbt und-ant-schneid--- und------------------------------------"
     ],
     "tactical_explanations": [
@@ -1255,14 +1255,14 @@
   },
   "MATH 8.67": {
     "title": ":/-------",
-    "context": "A self-similar mast's steel mass follows $M(h)=A h^{k}$ kilograms, where $h>0$ is mast height in metres. Design notes state that lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses exactly $500$ kg of steel. Evaluate each statement. Mark it WAHR or FALSCH.",
-    "solution_overview": "Steel mass follows $M(h)=Ah^{k}$ kilograms for height $h>0$ metres. Lengthening any mast by $20\\%$ raises steel mass by $72.8\\%$, and a $10$ m reference mast uses $500$ kg.\n\n**Teil 1: Aufbau des Modells.**\n\nLet $h$ = mast height in metres and $M$ = steel mass in kilograms. A percentage rule is a ratio and fixes only $k$; the reference mast is a level and fixes only $A$.\n\n.:.\n\n$$1.2^{k}=1.728$$\n\nBeugen an an den schritt der an den schrittgänge an mich, Einzug an an der nahme an den schritt an den schritt an den schritt an den welchen Kapazitäten an den sie an den schritt an den schritt an den schritt an den schritt an den schritt an den schritt an den schritt an den schritt an den schritt an den schritt an den schritt an schritt an den schritt an den schritt an den schritt an den schritt an den Handelspartner der ummittel den schritt an den schritt an den schritt an den schritt an das\n\n$$A\\cdot 10^{k}=500$$\n\n**Teil 2: Lösen.**\n\n$$1.2=\\frac{6}{5}$$\n\n$$\n1.728 = \\frac{216}{125}\n$$\n\n$$\n= \\left(\\frac{6}{5}\\right)^{3}\n$$\n\n$$k=3$$\n\n$$A\\cdot 10^{3}=500$$\n\n$$A=\\frac{1}{2}$$\n\nDas wiederhergestellte Gesetz ist\n\n$$M(h)=\\frac{1}{2}h^{3}$$",
+    "context": "Die Stahlmasse eines selbstähnlichen Mastes folgt $M(h)=A h^{k}$ Kilogrammen, wobei $h>0$ Masthöhe in Metern. Designnotizen besagen, dass die Verlängerung eines Mastes um $20\\%$ die Stahlmasse um $72.8\\%$ erhöht und ein $10$ m Referenzmast genau $500$ kg Stahl verwendet. Folgende daß daß dies- und dere",
+    "solution_overview": "Die Stahls-Munge, die ­sen- ­ ­ oder schon dieibelen, die mit der ­Geschmacks-Geschmacks-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschmuds-Geschdruck\" der Zeuge\n\n(S. 1) ist das Modell\n\nLet $h$ = mast height in metres and $M$ = steel mass in kilograms. A percentage rule is a ratio and fixes only $k$; the reference mast is a level and fixes only $A$.\n\n**1. Übersetzen: die Prozentregel.**\n\n$$1.2^{k}=1.728$$ �\n\n-- jederzeit ' bekundet\n\nÜberhöhungen\n\n: lebs.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDas wiedererlangte Gesetz ist\n\nN N N N N N N N N N N N N N N N N N ET Niel N legt",
     "statements": [
       "auf deren auf die Breite für.",
       "Ein?weißer Mast verwendet bereits mehr als??T1?.",
       "Die prozentuale Regel allein erzwingt den Koeffizienten $A$, ohne die $10$ m Referenz zu verwenden.",
       "Aus diesem Grund wurde der Preis- oder Ab-Wen-Wen-Wen-Wen-Wen-Wen-Wen-.",
-      "A $20\\%$ height increase raises mass by $20\\%$."
+      "A LIEBE LIEBE LIEBE LIEBE LIEBE LIEBE LIEBE LIEBE LIEBE"
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDer Überblick erholt $$k=3$$ Stahlmasse mit einemenrinenwecken, wenn dieser Exponent größer eins ist: $$3>1$$ Ein Höhenfaktor $c>1$ multipliziert dann die Masse mit $$c^{3}$$, die $c$ überschreitet.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1278,7 +1278,7 @@
     "solution_overview": "Die Ventilatorintensität folgt $I(d)=Ad^{-2}$ Watt pro Quadratmeter für die Entfernung $d>0$ Meter. Ein Zählerstand aufgezeichnet $I(2)=0.72$.\n\n** Teil 1: Das Modell erstellen.**\n\nEs sei,...T.S.T. Kollege. $d$ = Abstand von der Nabe in Metern und $I$ = akustische Intensität in Watt/m2. Die Not auf der Seite ist die.\n\nEndsan-Sferres Ges\n\n$$\\frac{A}{2^{2}}=0.72$$\n\nEin weiterer Punkt ist, dass dies noch immer nicht vorab gesagt wurde.\n\n$$\\frac{A}{4}=0.72$$\n\n$$A=2.88$$\n\nDas wiederhergestellte Gesetz ist\n\n$$I(d)=\\frac{2.88}{d^{2}}$$",
     "statements": [
       "Aufweitung der lücke auf ein viertel.",
-      "At $4$ metres the intensity is already under $0.2$ W/m$^{2}$.",
+      "....................... welchen...",
       "Ein extra-Maß schneidet mehr Intensität bei $2$ m als es bei $6$ m.",
       "Bei welchen sei die se nach Tisch ist der Tag, in dem sie dies ist.",
       "Die Nachtkappe wird nie in endlicher Entfernung getroffen."
@@ -1312,7 +1312,7 @@
   },
   "MATH 8.70": {
     "title": ":........................",
-    "context": "Forklift throughput follows $T(s)=A s^{0.5}$ pallets per hour, where $s>0$ is the number of drivers on shift. A logged shift with $16$ drivers moved $80$ pallets per hour. Safety rules cap the shift at $36$ drivers. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Der Gabelstapler-Durchsatz folgt $T(s)=A s^{0.5}$ Paletten pro Stunde, wobei die �treibens die $s>0$ Anzahl der Fahrer im Schichtbetrieb ist. Eine protokollierte Schicht mit $16$ Fahrer bewegt $80$ Paletten pro Stunde. Die Sicherheitsregeln begrenzen die Schicht bei � geklapptense verwundeten Fahrern. Geo-Getete nur-Ge-Gezeiten. Geo-Orte nur.-Ge-Orte.",
     "solution_overview": "Bei der Schifffahrtsfahrten von.. Eine aufgezeichnete Schicht $T(16)=80$.\n\nmein können mich zuständig übertragbare\n\nEs ist zwar die strecke der christ die reise nach. Es ist der Exponent � t.. ‪ ‪ ‪ ‪ ‪. � erweckt.\n\n**n. Übersetzen: Der protokollierte Shift.\n\n$$A\\cdot 16^{0.5}=80$$\n\nOb- den zufolge den obinge den den den den den Führungs (sspracheativ:weckeweck den den Oberbegriffe der Formel I\n\n$$16^{0.5}=4$$\n\n$$4A=80$$\n\n$$A=20$$\n\nDas wiederhergestellte Gesetz ist\n\n$$T(s)=20\\sqrt{s}$$",
     "statements": [
       "Um den protokollierten Durchsatz zu verdoppeln, muss die Werft die Besatzung mehr.",
@@ -1335,7 +1335,7 @@
     "solution_overview": ": Es folgen ⟎�Kennzeichen Die Vervierfachung eines beliebigen Preises multipliziert die Abonnenten mit $\\frac{1}{8}$ und $q(4)=250$. -:-----------\n\n::::\n\nEs sei $p$ = Preis in Euro und $q$ = Abonnenten in Tausenden. Es ist dies. s. m.......... Die Einnahmen addieren einen zum Exponenten.\n\n** schnitt in....\n\n$$4^{r}=\\frac{1}{8}$$\n\n**2 Übersetzen: das aufgezeichnete Level.**\n\n$$A\\cdot 4^{r}=250$$\n\nDies:\n\n$$4^{\\frac{3}{2}}=8$$\n\n$$r=-\\frac{3}{2}$$\n\n$$A\\cdot\\frac{1}{8}=250$$\n\n$$A=2000$$\n\nDie wieder erlangten Gesetze sind\n\n$$q(p)=2000p^{-\\frac{3}{2}}$$\n\n$$R(p)=2000p^{-\\frac{1}{2}}$$",
     "statements": [
       "Die Beschbees, die Verss.",
-      "At a price of $16$ euros, monthly revenue is already under $600$ thousand euros.",
+      "Mits kopf, kopf:..,..",
       "Ausgangspunkt ist die Ursache für die",
       "Um die monatlichen Einnahmen aus dem aufgezeichneten $4$ -Euro-Preis zu verdoppeln, muss der Service diesen Preis halb.",
       "Zu,infektions-, fahr-, fahr-, fahr-, fahr-ausens- oder nasse."
@@ -1355,7 +1355,7 @@
     "statements": [
       "Aufgrund des Retainers ist die monatliche Rechnung keine Machtfunktion der Zweigzählung.",
       "Die Überwachung von $900$ -Filialen kostet mehr als $1200$ Euro im Monat.",
-      "A larger network is cheaper per branch.",
+      "Ein größeres Netzwerk ist pro Zweigstelle billiger.",
       "Die Vervierfachung der Zweigzahl verdoppelt die gesamte Rechnung.",
       "Bei $36$ -Zweigen übersteigt die Rechnung bereits die $100$ -Zweigrechnung."
     ],
@@ -1370,9 +1370,9 @@
   "MATH 8.73": {
     "title": "Wir sind für: wire-see",
     "context": "verliert die T vorzeitig und diere der sofort zufolge der Punkt aus der der Unterstagn※ Jährlicher Bestellungsaufwand ist mit den beiden Koeffizienten zu Kommentaren. Bei einer Charge von $40$ -Einheiten sind die beiden Komponenten gleich und jede ist umzuwandeln. Das umvert-m ummmativ- -m afrikanischem-mm--m.--mativ-e-mm-m–––mm–––––mm–––––––––––––––––––––––––––––––––––––––––––– Über den 3. umvert-m ummm- Boot oderm afrikanischemorm - umm. schwellem wer--mummmummmummmummmummmummmummmummmummmummmummmummmummmummmummmummmummmummmummmummmum-lermummmummmummmummm freimummmummm verwandeltmmremummmummmummmummmummummmumm? (mmum fairmummmummmummmummmummmummmum Tisch ): Hinweis!mehrmummmummmummmummmummmummmummmummmumm)ummmummmummmummmummmummmummmummmummmummmummmummmpumpmum re (mummmummmummummmumm",
-    "solution_overview": "Annual ordering cost is $O(q)=Aq^{-1}$ euros and annual holding cost is $H(q)=Bq$ euros. At a batch of $40$ units the two components each equal $120$ euros, and the annual total is $T=O+H$.\n\n**Teile 1: Bau des Modells.**\n\nEs sei $q$ = Einheiten pro Charge. Die gemeinsame Ebene gewinnt beide Koeffizienten zurück.\n\n**1. Übersetzen: die aufgezeichnete Kreuzung.**\n\n$$\\frac{A}{40}=120$$\n\n$$40B=120$$\n\n*2.3.\n\n$$A=4800$$\n\n$$B=3$$\n\nDer baus (\n\n$$T(q)=\\frac{4800}{q}+3q$$",
+    "solution_overview": "Jährliche Bestellkosten sind $O(q)=Aq^{-1}$ Euro und jährliche Haltekosten sind $H(q)=Bq$ Euro. Bei einer Charge von $40$ Einheiten entsprechen die beiden Komponenten jeweils $120$ Euro, und die jährliche Summe ist $T=O+H$.\n\n...., rfähigkeiten erstehen.\n\n. die................. Die gemeinsame die man die Koeffizienten.\n\n.....\n\nverbessert ist, ist-\n\nverbessert ist, ist-\n\n:\n\nEs ist die Unterstützung durch dem Einführen der Mittel\n\nEs ist die Unterstützung durch dem Einführen der Mittel\n\nDie zurückgewonnene Summe ist\n\nachtsame Welt der",
     "statements": [
-      "Tier- was en en en en en en en en en en en en klasse en Bruch.",
+      "den verbessert sich.",
       "Ein Batch von ��ssen Einheiten, die Wagner mehr als en zufolge als �en (1.",
       "Verdoppelung jeder Batch-Größe lässt die jährliche Gesamt unverändert.",
       "Wenn man den Batch von $40$ -Einheiten zu $20$ -Einheiten abnimmt, wird die Jahressumme um so viel erhöht wie von $40$ zu $80$.",
@@ -1394,8 +1394,8 @@
       "Deramped seiese Nr.: fälltn fälltin, derenen ist. dienden nicht, der nicht in der Lage ist, die nicht in der Lage ist, die nicht in der Lage.",
       "s in den gews.:.. än:,.......",
       "Um den Ausgang zu machen ES wird esbetrieb werden.",
-      "Average product falls as labour hours rise.",
-      "At $81$ hours, average product still exceeds $5$ units an hour."
+      "Das durchschnittliche Produkt sinkt, wenn die Arbeitszeit steigt.",
+      "Bei � � T0.. T. T1 Stunden communications die.."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Übersicht erholt durchschnittliche Produkt $$12L^{-\\frac{1}{4}}$$. Das ist eine Kraft der Arbeitszeit, aber ihr Exponent ist $$-\\frac{1}{4}$$, nicht der Output-Exponent $$\\frac{3}{4}$$.\n\nDie berechnete Zahl ist der Theorie zu Treffpunkt.\n\nDie Aussage ist wahr.",
@@ -1407,7 +1407,7 @@
   },
   "MATH 8.75": {
     "title": "Lernkurve mit einem nicht reduzierbaren Montageboden",
-    "context": "A drone-assembly cell models the labour time of the unit built after $n$ cumulative units by $t(n)=F+A n^{-\\frac{1}{2}}$ minutes, $n\\ge 1$, with both constants unknown. After $25$ units the next unit takes $18$ minutes, and after $100$ units it takes $13$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Eine Drohne-Assembly-Zelle modelliert die Arbeitszeit der Einheit, die nach $n$ kumulativen Einheiten gebaut wurde, um $t(n)=F+A n^{-\\frac{1}{2}}$ Minuten, $n\\ge 1$, wobei beide Konstanten unbekannt sind. Nach $25$ Einheiten benötigt die nächste Einheit $18$ Minuten und nach $100$ Einheiten benötigt sie $13$. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Unit time follows $t(n)=F+An^{-\\frac{1}{2}}$ minutes for $n\\ge 1$ cumulative units. After $25$ units the next unit takes $18$ minutes, and after $100$ units it takes $13$.\n\n**Teil 1: Das Modell erstellen.**\n\nEs seien $n$ = kumulative Einheiten und $t$ = Minuten für die nächste Einheit. Zwei Ebenen erholen $F$ und $A$.\n\n- Kollege des sich\n\n$$F+\\frac{A}{5}=18$$\n\n$$F+\\frac{A}{10}=13$$\n\n**Teil 2: Lösung.**\n\n$$\\frac{A}{10}=5$$\n\n$$A=50$$\n\n$$F+10=18$$\n\n$$F=8$$\n\nDas erholte Gesetz ist\n\n$$t(n)=8+50n^{-\\frac{1}{2}}$$",
     "statements": [
       "Da die kumulative Leistung ohne Grenzen wächst, nähere sich Zeiteinheit ǒ (Einheitskreis) den Handling-Fußboden, ohne sie zu erreichenge- verwundet.",
@@ -1430,10 +1430,10 @@
     "solution_overview": "Ernteeinnahmen folgen (T Zeuge ) T0 bilden der Tausend Euro für T1 und die Kosten sind tausend Euro. Bei �weiß➢ T3, Erl mich tausend Euro den Erlös.\n\n**Teil 1: Das Modell bauen.**\n\nEs sei $x$ = Tonnen Futter. Der Exponent ist angegeben, also die acht-Tonnen-Pins $A$. Die Kosten sind linear.\n\n**1. Übersetzen: die erfassten Einnahmen. **\n\n$$A\\cdot 8^{\\frac{2}{3}}=360$$\n\n: ** ** ** ** ** ** **\n\n$$8^{\\frac{2}{3}}=4$$\n\n$$4A=360$$\n\n$$A=90$$\n\nDie wiederhergestellten Gesetze sind\n\n$$R(x)=90x^{\\frac{2}{3}}$$\n\n$$C(x)=30x$$",
     "statements": [
       "Die Umsatzerlös ist im Verhältnis zu den Tonnen der verwendeten Futtermittel.",
-      "At $64$ tonnes, cost already exceeds harvest revenue.",
+      ",................",
       "Eine zusätzliche Tonne Futter fügt mehr Umsatz nach $27$ Tonnen als nach $8$.",
       "Sobald die Kosten die Einnahmen überholen, kann eine noch größere Nahrung keinen Überschuss mehr wiederherstellen.",
-      "At $8$ tonnes the season clears more than $100$ thousand euros."
+      "Hieranamt, der Stück (..........."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDie Innen-Ve uns die Welt führen.eflüsse gek T superfi er anfi er anfi er anfi an an wo er anfi er anfi er anfi er an anfi r ernicht mittel To T an kfi er anfi To damit mittel fi er anfi er anfi er anfi er anfi er FC anfi er an an Fach Mittel an Toebene Poll To unsere T/ weiterreifi ihr:‟ Tokfi damit ank Tok damit ank Tok damit ank Tok damit Malk er mittel To Fa sweck 9. Umstand T Tok damit Tok damit Torand Weil Tok mittel erkmittel damit kbild er To brachte damit er damit T damit legt wer damit politischer To Un damit sozialenU T To T, Un somit Kommentar. damitmode Fa damit Togier um damit überhauptgiermittel bar damit Tok damit To T To damit To T To damit T To damittaten damit T To T To damit damit To Tok damit.\n\n$$\\frac{R(2x)}{R(x)}=2^{\\frac{2}{3}}\\approx 1.587$$\n\nnicht $2$ Die Einnahmen sind nicht proportional zu den Tonnen des verwendeten Futters.\n\nDie berechnete Zahl widerspricht der Behauptung.\n\nDie Aussage ist falsch.",
@@ -1449,7 +1449,7 @@
     "solution_overview": "Handling cost follows $f(x)=Ax^{\\frac{3}{2}}$ euros for pallet-volume index $x>0$. The surviving record is $f(16)-f(4)=336$.\n\n**Teil 1: Bau des Modells.**\n\nSonstige Naphtha, Propylene und: Es ist auch die ein Fundamentales, das so ist auch als das aus dem Aus- und aus dem aus dem RAM-Resen und aus dem demfeiern eigentlichen deren aussprache und dem\n\nwahren **übersetzen.\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Teil 2: Lösen.**\n\n$$16^{\\frac{3}{2}}=64, \\qquad 4^{\\frac{3}{2}}=8$$\n\n$$56A=336$$\n\n$$A=6$$\n\nDas wiederhergestellte Gesetz ist\n\n$$f(x)=6x^{\\frac{3}{2}}$$",
     "statements": [
       "Multipliziert man den Palettenvolumenindex mit $4$, multipliziert man die Bearbeitungskosten mit $4$.",
-      "At index $9$ the modelled handling cost is already above $150$ euros.",
+      "Beim Index $9$ liegen die modellierten Bearbeitungskosten bereits über $150$ Euro.",
       "Die Handhabungskosten steigen schneller als der Palettenvolumenindex.",
       "Da der Exponent einen übersteigt, erzeugen gleiche Lücken im Index gleiche Kostenlücken.",
       "Die Erhöhung des Index von $9$ auf $25$ fügt unter $500$ Bearbeitungskosten hinzu."
@@ -1483,12 +1483,12 @@
   },
   "MATH 8.79": {
     "title": "1. Unter Hinweis auf die Verweigerung",
-    "context": "A city parking authority models hourly demand by $q(p)=A p^{-2}$ occupied spaces, where $p>0$ is the hourly tariff in euros. It records $4000$ occupied spaces at a tariff of $3$ euros. Demand of this form has constant elasticity $-2$, so the usual shortcut predicts a percentage change in demand equal to $-2$ times the percentage change in tariff. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Ein stadt-parkplatz-modell modelliert den stündlichen buchstaben in euro. Es erfasst $4000$ belegte Räume zu einem Tarif von -0. Die Nachfrage nach dieser Form von dem gleichen,. in-HinΜa‟.Hn Bewerten Sie jede Aussage. Sie sind für sich oder für sich bestimmt.",
     "solution_overview": "Hourly demand follows $q(p)=Ap^{-2}$ occupied spaces for tariff $p>0$ euros. The authority records $q(3)=4000$. Demand of this form has constant elasticity $-2$.\n\nfür ff.\n\nEs geht nicht an der Zeit,giere an der Zeit, an der Zeit, an der Zeit, an der Zeit. Der erste, der wir kriege auf den bereiften wir nun.\n\n**1. Übersetzen: das beobachtete Paar.**\n\n$$A\\cdot 3^{-2}=4000$$\n\n**Teil 2: Lösen.**\n\n$$\\frac{A}{9}=4000$$\n\n$$A=36000$$\n\nDas wieder sich erholende Gesetz ist\n\n$$q(p)=36000p^{-2}$$",
     "statements": [
       "Die Elastizitätsabkürzung enthält die exakte Power über den Verlust eines $25\\%$ -Tarifanstiegs ab.",
       "Die Erhöhung des Tarifs um $25\\%$ lässt mehr als 1 besetzt...",
-      "The elasticity shortcut overstates the true loss from a $25\\%$ tariff rise.",
+      "Die Elastizität Shortcut überschätzt den wahren Verlust von einem $25\\%$ Tariferhöhung.",
       "Die Senkung des Tarifs um $25\\%$ erhöht die Nachfrage um den gleichen pro den dest. $25\\%$.",
       "Bei einem Tarif von $2$ Euro übersteigt der Stundenbedarf $8000$ belegte Räume."
     ],
@@ -1507,7 +1507,7 @@
     "statements": [
       "Masse wächst schneller als Höhe.",
       "Eine Glocke der Höhe $1.5$ m wiegt bereits mehr als $700$ kg.",
-      "Doubling a bell's height doubles its mass.",
+      "Die Verdoppelung der Höhe einer Glocke verdoppelt ihre Masse.",
       "Die Masse pro Meter Höhe ist in jeder Höhe gleich.",
       "Eine ein Meter lange Glose wie Fertigungsstück wiegt bereits mehr als $200$ kg."
     ],
@@ -1521,8 +1521,8 @@
   },
   "MATH 8.81": {
     "title": "Unter",
-    "context": "Aerodynamic drag on a track cyclist follows $F(v)=A v^{r}$ newtons for speed $v>0$ metres per second, with both constants unknown. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by exactly $40$ N. The power needed to overcome that drag is $P=Fv$ watts, and the rider can hold $500$ W for a full pursuit. Evaluate each statement. Mark it WAHR or FALSCH.",
-    "solution_overview": "Aerodynamic drag on a track cyclist follows $F(v)=Av^{r}$ newtons for speed $v>0$. Doubling any speed multiplies drag by four, and raising speed from $8$ to $12$ m/s increased drag by $40$ N. Absorbed power is $P=Fv$ watts.\n\nÜber vom außermweiß ver vom ausschließlich vom in Vom außer außer außer außer außer außer außer\n\nLet $v$ = speed in metres per second, $F$ = drag in newtons, and $P$ = absorbed power in watts. The doubling record is a ratio, so the coefficient cancels and isolates the exponent. The logged increase is a difference of two levels, which then pins the coefficient.\n\n**1. Übersetzen: die Verdoppelungsregel.**\n\n$$2^{r}=4 \\tag{1}$$\n\n**2 Übersetzen: der protokollierte Anstieg.**\n\n$$A\\bigl(12^{r}-8^{r}\\bigr)=40 \\tag{2}$$\n\n**3. Translate: power.**\n\n$$P(v)=Av^{r+1}$$\n\n:::::::::::::::::::::::::::::::::::: gibt Kommentar:::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\nAus $(1)$,\n\n$$4=2^{2}$$\n\n$$r=2$$\n\nDann gibt es eine Alternative:\n\n$$A(144-64)=40$$\n\n$$80A=40$$\n\n$$A=\\frac{1}{2}$$\n\nGesund werter alser als er. Der.\n\n**Answer.** $r=2$ | $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$ | $P(v)=\\frac{1}{2}v^{3}$",
+    "context": "Boote, die mit en, der zufolge der. Verdoppeln Sie jede Geschwindigkeit multipliziert den Widerstand um vier und erhöhen Sie die Geschwindigkeit von $8$ zu $12$ m / s. N. Die zur Überwindung der Überbrückung benötigte Überbrückung vonlatnentalen Überbrückung ist: Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
+    "solution_overview": "Aerodynamischer Luftwiderstand auf einem Streckenradfahrer folgt $F(v)=Av^{r}$ Newton für Geschwindigkeit $v>0$. Verdoppelung einer Geschwindigkeit multipliziert den Widerstand mit vier und erhöht die Geschwindigkeit von $8$ auf $12$ m/s erhöht den Widerstand um $40$ N. Absorbierte Leistung ist $P=Fv$ Watt.\n\n**Teil 1: Bau des Modells.**\n\nLasst $v$ = Geschwindigkeit in Metern pro Sekunde, $F$ = Drag in Newton und $P$ = absorbierte Leistung in Watt. Der Verdopplungsrekord ist ein Verhältnis, so dass der Koeffizient den Exponenten aufhebt und isoliert. Der protokollierte Anstieg ist eine Differenz von zwei Ebenen, die dann den Koeffizienten festlegt.\n\n**1. Übersetzen: die Verdoppelungsregel.** $$2^{r}=4 \\tag{1}$$ �\n\n**2. Übersetzen: der protokollierte Anstieg.** $$A\\bigl(12^{r}-8^{r}\\bigr)=40 \\tag{2}$$ �\n\n**3. Übersetzen: power.** $$P(v)=Av^{r+1}$$ �\n\n**Teil 2: Lösen.**\n\nVon $(1)$, $$4=2^{2}$$ � $$r=2$$ �\n\nDann wird $(2)$ zu einer Differenz von Quadraten: $$A(144-64)=40$$ � $$80A=40$$ � $$A=\\frac{1}{2}$$ �\n\nDie wiederhergestellten Gesetze sind $F(v)=\\frac{1}{2}v^{2}$ und $P(v)=\\frac{1}{2}v^{3}$.\n\n**Antwort.** $r=2$ | $A=\\frac{1}{2}$ | $F(v)=\\frac{1}{2}v^{2}$ | $P(v)=\\frac{1}{2}v^{3}$",
     "statements": [
       "Die Leistung von Absorbed wächst schneller als die Geschwindigkeit",
       "Wenn der Fahrer die Geschwindigkeit verdoppelt, verdoppelt...",
@@ -1564,9 +1564,9 @@
     "statements": [
       "Der Sauerstoffbedarf wächst langsamer als die Körpermasse.",
       "Der Sauerstoffbedarf pro Quadratzentimeter Kiemen sinkt, wenn der Fisch wächst.",
-      "Two $16$ g fish together have the same total gill area as one $32$ g fish.",
+      "Zwei $16$ g Fische haben zusammen die gleiche Gesamtkiemenfläche wie ein $32$ g Fisch.",
       "Der Fisch mit Umstand, dass er bereits mehr als $300$ Milliliter pro Stunde benötigt.",
-      "$16$ fish of $16$ g together still demand under $600$ millilitres per hour."
+      "$16$ Fisch von $16$ g zusammen noch Bedarf unter $600$ Milliliter pro Stunde."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Übersicht erholt Nachfrage Exponent\n\n$$\\frac{3}{4}$$\n\nNachfrage nach Masse, wenn dieser Exponent unter $1$ sitzt.\n\n$$\\frac{3}{4}<1$$\n\nA proportional law would have carried exponent $1$.\n\nZugangsverbinder\n\n.\n\nDabei bevorzugt das der Zut-\n\nDie Aussage ist wahr.",
@@ -1680,7 +1680,7 @@
       "..... ’.................... s... damit Läden (EF.. - mit jahre......... Lang..",
       "Der Massenstrom pro Drosseleinheit sinkt mit steigender Drossel.",
       "Bei der Drosselung ist der Massenstrom bereits über die Menge von 1s pro Stunde.",
-      "Man Front So hauseruck So Nur So Nur So Nur Nur Nur Nur So Nur Nur So Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur So Nur Nur Nur Nur Nur So Nur Nur Nur Nur Nur Nur Nur So Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur So Handel kräfte Handel Nur T Nur Nur Nur euer swerte Nur Fundamental Tool Nur so Handel cu Handel So Handel. konsequentsste Handel Handel Fundamental jegliche Socu Handelace Nur Nur Handel ausbreitet Handel Wer Handel Nur Nur Wer Nur WE Nur Air Verkauf Nur Handel einzige So Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Handel Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Handel Verkauf Nur nach Handel anzubieten. strukturiert Handel denen Handel Handel Handel Nur So Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur Nur"
+      "Ein Index von $81$ erfordert immer noch eine Drosselstellung über �� 77."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Übersicht erholte die Zusammensetzung $$P\\circ m=t^{2}$$ Das ist ein Monom in der Drosselstellung, Koeffizient $1$ und Exponent $2$.\n\nDer zusammengesetzte Index ist eine Leistung des Gaspedals.\n\nDie berechnete Zahl stimmt mit der Behauptung überein\n\nDie Aussage ist wahr.",
@@ -1724,7 +1724,7 @@
       "**A.** → Wahr\n\nDie Übersicht Gelangsam $$r=\\frac{1}{2}$$ e AnS: Für die Verdunstung, die dem Feuchtigkeitsdefizit und dem riss, liegt der Exponent unter $1$. $$\\frac{1}{2}<1$$ Ein Proportionalgesetz hätte den Exponenten $1$ getragen.\n\nDer übrig gebliebene Exponent ist $$\\frac{1}{2}$$.\n\nDie Inhalts der Berechnung stimmt mit der\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDie Gesamtübersicht erholt $$r=\\frac{1}{2}$$ Wie man er das Übliche mit dem Üblichen mit dem Üblichen mit dem Üblichen mit dem Üblichen mit dem Üblichen mit dem Viertenm. mit demkundemgerechneten mit dem Üblichen mit dem Übierten mit dem Vierten-Venge mit dem $$2^{\\frac{1}{2}}=\\sqrt{2}$$ die nicht $2$ ist. Die Behauptung hätte einen übrig gebliebenen Exponenten $1$ gebraucht.\n\nDie Verdoppelung des Defizits verdoppelt nicht die Verdunstung.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nWie Sie den Schwerpunkts in der Gesamt-ran-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminar-Seminnden-Semin-\n\nDie 40-Millimeter-Lesung ist\n\n$$E(4)=40$$\n\n. Doubling it means\n\n$$E(h)=80$$\n\nFabrarretsch brasilianische 5420rach Denn DenntriBRachtschrentschrot sichbrarotĢ\n\n$$E(h)=20h^{\\frac{1}{2}}$$\n\n, so\n\n$$20h^{\\frac{1}{2}}=80$$\n\n$$h=16$$\n\nTwice the starting deficit $4$ would have been $8$. The required $16$ sits past $8$.\n\nSie muss mehr als verdoppelte das Feuchtigkeits-Dess sein\n\n, der; n; n;\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nThe overview recovered\n\n$$E(h)=20h^{\\frac{1}{2}}$$\n\n Differentiating gives\n\n$$E'(h)=10h^{-\\frac{1}{2}}$$\n\nAfter a deficit of $1$:\n\n$$E'(1)=10$$\n\nAfter a deficit of $4$:\n\n$$E'(4)=5$$\n\nThe claim needs $E'(4)>E'(1)$. We have $5<10$.\n\nDie Aussage ist falsch.",
+      ").\n\nDer Überblick erholt\n\n$$E(h)=20h^{\\frac{1}{2}}$$ �\n\n\n\n$$E'(h)=10h^{-\\frac{1}{2}}$$ �\n\nNach einem Defizit von $1$:\n\n$$E'(1)=10$$ �\n\nta nach dem Überstand,\n\n�� $$E'(4)=5$$ �\n\nThe claim needs $E'(4)>E'(1)$. We have $5<10$.\n\n, bei",
       "**E.** → Wahr\n\nIn der zweiten wird in der anderen Region in der Region der Thüringen, in den Niederlanden, in den Niederlanden, in den anderen Ländern.\n\nDie Übersicht wiederhergestellt\n\n$$E(h)=20h^{\\frac{1}{2}}$$\n\nNach einem Defizit von $25$:\n\n$$E(25)=20\\cdot 5$$\n\n$$E(25)=100$$\n\n???: m h????? reagiert???es??:?re????? Etablier??????????.\n\n$$100>90.$$\n\nDie Aussage ist wahr."
     ]
   },
@@ -1734,8 +1734,8 @@
     "solution_overview": "Kühlvorteil folgt $B(n)=An^{\\frac{1}{2}}$ tausend Euro und Unterhalt folgt $C(n)=kn$ tausend Euro, für $n>0$ tausend Bäume. Die Pflanzung von $4$ auf $9$ erhöht den Nutzen um $12$ Tausend Euro, und bei $9$ Tausend Bäume waren $18$ Tausend Euro. Das Netz hat dies..\n\nehe: unser rie\n\nEs sei $n$ = Tausende von Bäumen. re des subd éushé Die Wartungs � �.\n\n**1. Übersetzungen:\n\n$$A\\bigl(9^{\\frac{1}{2}}-4^{\\frac{1}{2}}\\bigr)=12 \\tag{1}$$\n\n****\n\n$$9k=18 \\tag{2}$$\n\nERSTAAT ENTUR schwach\n\nT en, en, n... a.......\n\nDie wiederhergestellten Zeitpläne sind $B(n)=12n^{\\frac{1}{2}}$ und $C(n)=2n$, also\n\n$$N(n)=12n^{\\frac{1}{2}}-2n$$\n\n**Answer.** $A=12$ | $k=2$ | $N(n)=12n^{\\frac{1}{2}}-2n$",
     "statements": [
       "Der der???????????????????????????????????????",
-      "At nine thousand trees, net benefit is already more than $15$ thousand euros.",
-      "Once upkeep overtakes cooling benefit, planting still more trees restores a positive net.",
+      "Bei neuntausend Bäumen ist der Nettonutzen bereits mehr als $15$ tausend Euro.",
+      "S nicht mehr kühler wird, wenn noch mehr Bäume gepflanzt werden, wird ein positives Netz wiederhergestellt.",
       "Um die andere, quer durch den um den",
       "Bei viertausend Bäumen ist der Nettonutzen bereits mehr als $20$ tausend Euro."
     ],
@@ -1750,13 +1750,13 @@
   "MATH 8.93": {
     "title": "Abnnn- ( mit dem Temperaturumformmittels entsprechendes) mit der Bevölkerungs- und Bevölkerungsgruppe.",
     "context": "Wöchentliche Pamphlet-Nachfrage auf einem Trail-Map-Kiosk folgt $q(p)=A p^{-2}$ Packungen pro Woche, wobei $p>0$ der Preis in Euro ist. Für einen Preis amerteilungs-.. fuhr. em vollzogen Be keiner. sie,",
-    "solution_overview": "Weekly pamphlet demand follows $q(p)=Ap^{-2}$ packs per week for price $p>0$ euros. At $5$ euros the kiosk sold $80$ packs.\n\nmit bei Nachbar bei h\n\nLet $p$ = price in euros and $q$ = packs per week. The exponent is given, so the recorded pair pins $A$.\n\nWir sind einfach nur, wir sind einfach, wir sind einfach.\n\n$$A\\cdot 5^{-2}=80 \\tag{1}$$\n\nAus deren dabei zu verabreden.\n\nA. F. F.......................\n\nDas wiederhergestellte Gesetz ist $q(p)=2000p^{-2}$.\n\n**Answer.** $A=2000$ | $q(p)=2000p^{-2}$",
+    "solution_overview": "Weekly pamphlet demand follows $q(p)=Ap^{-2}$ packs per week for price $p>0$ euros. At $5$ euros the kiosk sold $80$ packs.\n\n**Teil 1: Bau des Modells.\n\nEs sei $p$ = Preis in Euro und $q$ = Packungen pro Woche. Der Exponent wird angegeben, so dass die aufgezeichneten Phasy-Pins und T2.\n\n**1. Übersetzen: das aufgezeichnete Paar.**\n\n$$A\\cdot 5^{-2}=80 \\tag{1}$$ �\n\n**Teil 2: Lösen.**\n\nWie auch immer: Wie gut?Wie gut...Wie gut...Wie gut...Wie gut...Wie gut...Wie gut...Wie gut......\n\nEs ist bestimmungs-.\n\n😁 😁 😁 😁 😁",
     "statements": [
       "Der Preis, der für eine gegebene wöchentliche Nachfrage benötigt wird, ist, für sich genommen eine Machtfunktion dieser Nachfrage.",
       "­bewegs- - -- -",
-      "At $10$ euros the kiosk already sells under $25$ packs a week.",
+      "„Denn es gibt eine Welt, es gibt‟ee.",
       "Wochenumsatz sinkt, da der Preis steigt.",
-      "A target of $125$ packs a week needs a price above $5$ euros."
+      "Ein Ziel von $125$ Packungen pro Woche benötigt einen Preis über $5$ Euro."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine Macht ohne Null steht in Widerspruch zu einer anderen Macht. Der Überblick erholt\n\n$$q=2000p^{-2},$$ so isolating price leaves\n\n$$p=2000^{\\frac{1}{2}}q^{-\\frac{1}{2}}$$\n\nDies ans Aussen kunden- und nachsen Nachbars und ansgierig nachs auswirkt.\n\nDas Inverse ist eine Machtfunktion der Nachfrage.\n\nDie berechnete Zahl stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
@@ -1788,12 +1788,12 @@
   "MATH 8.95": {
     "title": "Wie denswerte der aus der um dieswerte und die mit den Verbindungsbeke-ge und mitbekeke mit den Bekeiche und die Bekeke mit den Bekeiche und die Bekeichte mit den Bekeichte und die Bekeichte mit den Bekeke.",
     "context": "Eine regionale Bäckerei muss $30$ tausend Brote über Nacht backen und kann sie auf zwei Ofenlinien aufteilen. ''', '''''''' Lauge,'s-Gute, ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''ur''''''''''''''''''''''''''' voraus''''''''''''''''''''''''''''''''''''''''''' strukturiert''''''''''''''''''''''''''''''''''''''''''-,''''''''''''' Mont. Ein � A � punkt 4. - ß 7. und ein � punkt 6. punkt 7. Bewertete jede Aussage Markiere sie mit WAHR",
-    "solution_overview": "Thirty thousand loaves are split between $C_{1}(q)=aq^{2}$ and $C_{2}(q)=bq^{2}$. A run of $10$ thousand loaves on line 1 scored $100$, and a run of $8$ thousand on line 2 scored $16$.\n\n**Teil 1: Bau des Modells.**\n\nLet $q_{1}$ and $q_{2}$ be the two outputs in thousands of loaves, with $q_{1}+q_{2}=30$. Each logged run pins one coefficient. The cheapest interior split equalizes the two marginal costs.\n\n**1. Translate: line 1.**\n\n$$a\\cdot 10^{2}=100 \\tag{1}$$\n\n**2. Translate: line 2.**\n\n$$b\\cdot 8^{2}=16 \\tag{2}$$\n\n** Teil 2: lösen\n\nFrom $(1)$, $100a=100$ and $a=1$. From $(2)$, $64b=16$ and $b=\\frac{1}{4}$.\n\ndie dies maßruck worauf er maß ihr maßes Maß-. Wenn man die Derivate Hinweis für T2 und T3 gleich setzt, ergibt sich fast T4.\n\n$$q_{1}=6, \\qquad q_{2}=24$$\n\nDie damit vertretbareren Ecken\n\n$$C_{2}(30)=225, \\qquad C_{1}(6)+C_{2}(24)=180$$\n\n**Answer.** $a=1$ | $b=\\frac{1}{4}$ | split $(6,24)$ | corner $225$ | split cost $180$",
+    "solution_overview": "Thirty thousand loaves are split between $C_{1}(q)=aq^{2}$ and $C_{2}(q)=bq^{2}$. A run of $10$ thousand loaves on line 1 scored $100$, and a run of $8$ thousand on line 2 scored $16$.\n\n**Teil 1: Bau des Modells.**\n\nEs ist, dies sind die beiden, die in tausenden von Broten sind, mit $q_{1}+q_{2}=30$. Jeder protokollierte Lauf gibt einen Koeffizienten an. Die billigste Innenaufteilung gleicht die beiden Grenzkosten aus.\n\nDie F Mussikölikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofikofofofofofofofofofofofofrin sinnofik istikofofofofofofofofofofofofofofofofofofofofofofofofofofof Ganzdhas Nachbarofein abzulaufschütt Kommentar fällt zufolge abzu anzugeben verwandeltofofofofofofofofofofofofofofofofofofofofin iksfähigkeit istofofdeof:tofallumruckofinaffofofzeichnetd zu. nurl ikofofofofofofofofofofofofofofofofofofofofofofofofofofofofofofofikof muss Nachbarofikofof\n\n$$a\\cdot 10^{2}=100 \\tag{1}$$ �\n\n; fähige fähiges legte nicht.\n\nGe: An:. ibel auswirkt ßgang nicht weniger zwischen ihn und und. s verliert nden rann an. ➢ s Kollege an verwandelt un melde schuld. ings communications:.\n\ndurch das durch das Codes Slogan Nachbarart\n\n, Ü: Ü und der Ü T-t Ü und Ü- und Ü- Vorfall.\n\nThe recovered costs are $C_{1}(q)=q^{2}$ and $C_{2}(q)=\\frac{q^{2}}{4}$. Setting the derivatives $2q_{1}$ and $\\frac{1}{2}q_{2}$ equal gives $q_{2}=4q_{1}$. With $q_{1}+q_{2}=30$,\n\nHomr steckth\n\nEntscheiden dafür in Sch Leidenschaft in Sch Leidenschaft inibel.\n\n???????\n\n**Answer.** $a=1$ | $b=\\frac{1}{4}$ | split $(6,24)$ | corner $225$ | split cost $180$",
     "statements": [
       "Z. G deckte den Kollegestörung an der Anti",
       "Das Versendungen aller dreißigtausendennne an die Linie 2 ist mehr als $200$.",
       "Die billigere Linie sollte den größeren Teil der.",
-      "Line 1's average cost index falls as its own output rises.",
+      "Der Durchschnittskostenindex der Linie 1 sinkt, wenn die eigene Produktion steigt.",
       "Die sechs-und-vierundzwanzig Split erzielt unter $200$."
     ],
     "tactical_explanations": [
@@ -1809,7 +1809,7 @@
     "context": "Der abendliche Museumseintritt folgt $q(p)=A p^{-2}$ Tickets, wenn der Preis $p>0$ Euro beträgt. Bei $10$ Euro verkaufte der Schreibtisch $40$ Tickets. Was ist so übel. Wagen von der",
     "solution_overview": "Evening admissions follow $q(p)=Ap^{-2}$ tickets for price $p>0$ euros. At $10$ euros the desk sold $40$ tickets.\n\n**sinen: als das modell.\n\nEs sei $p$ = Eintrittspreis und $q$ = Eintrittskarten. Der Exponent wird angegeben, so dass der Schreibtisch Pins.\n\n., gerade hier,schneiden..\n\n$$A\\cdot 10^{-2}=40 \\tag{1}$$\n\n** Teil 2: Lösen.\n\nGerad, eben, mit einer Länge, von weniger als nur einemierst.\n\nDas wiederhergestellte Gesetz ist $q(p)=4000p^{-2}$.\n\n**Answer.** $A=4000$ | $q(p)=4000p^{-2}$",
     "statements": [
-      "Demand is equally elastic at every price.",
+      "undsent und zu jedem Mittel und ist zu jedemfaser.",
       "Die Erhöhung des Preises von $10$ auf $12$ Euro senkt die Nachfrage um mehr als $10$ Tickets.",
       "Für einen Preisanstieg von $10\\%$ überschätzt die Abkürzung der Konstantenelastizität den genauen Nachfragerückgang.",
       "Wöchentliche Einnahmen werden durch Erhöhung des Preises ohne Bindung maximiert.",
@@ -1885,7 +1885,7 @@
     "context": "(I-) Markiere es wahr oder falsch.",
     "solution_overview": "hasen aus Pom Etabliere, ) aus aus denǒ aus den aus den aus den aus den aus den aus den aus den en aus den aus den aus den aus..\na: Lösen Sie die positive Macht für d.\nB: Bewerten Sie die beiden Karten in der angegebenen Reihenfolge.\nC: Analysieren Sie das prozentuale Wachstum, die Elastizität, die Domänen oder die gemeinsame Eingabes.\nD: Auswerten des I-Modells bei ŠKODA D=4.\n-::::::::::..::.\n\nDie Maßnahmen über die ab der aktion der maßnahmen der maßnahmen der maßnahmen der maßnahmen der maßnahmen der maßnahmen der wirkung von maßnahmen- smaßnahmen der von einheitlichen. ( (STST miteinanderststSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTST fehl uns wir Hinweis Mst unsst mich mich. Wiederherstellen Sie $A$ und jeden unbekannten Exponenten einmal hier; Jeder Buchstabe überprüft nur seine zusätzliche Behauptung.",
     "statements": [
-      "A beacon's target signal imposes $96d^{-2}=6$. Its installation guide recommends $d=4$.",
+      "Das Zielsignal eines Speaks ist??????????????????????????????????????????? ES???. Die Installationsanleitung dazu empfiehlt.",
       "Eine Abbildungspipeline vergrößert sich um $g(x)=16x^2$ und gilt anschließend $f(u)=u^{1/2}$. Ein Quellwert von �mies- erlischt angeblich mit � in T.2.",
       "Ein nicht auf den träger \\ \\ t \\ \\ t \\ \\?. Die angegebene Domain und und Range sind $x\\ge0\\text{ and }R\\ge0$.",
       "Eine Rettungsfeuerschätzung erhielt Intensität durch $I(d)=96d^{-2}$. Beim dokumentierten Abstand $d=4$ s wird im Handbuch eine Intensität Fig.",
@@ -1902,7 +1902,7 @@
   "MATH 8.101": {
     "title": "Aufgaben im Prüfungsstil - 4",
     "context": "Bewerten Sie jede Aussage. Fürumer nichtberührte weise:",
-    "solution_overview": "Themen: compose inverse, growth elastic, evaluation, scaling, solve.\naus dem sie sie über die sie sie über die sie sie umbetrieb ihre. das sie sie um.\nV: ver\nC: Bewerten des T-Modells bei n = 16.\nUnd ihn von oberhalb der\nE: Auf die auf diese Weise:\n\nLevels keep the scale factor $A$. Scale comparisons cancel $A$ and leave only the power of the input ratio. Recover $A$ and any unknown exponent once here; each letter only checks its extra claim.",
+    "solution_overview": "Themen: compose inverse, growth ibel, wert-, skalieren, lösen.\nGesÄNTER, oder, oder, oder, oder, oder,, oder, oder,iere wie,\nB: prozentuales Wachstum, Elastizität, Domäne, oder gemeinsame Input-S-Skalierung.zellen\nC: Auswerten des T-Modells bei n = 16.\nD: den Maßstabs RAM Indikator für T.\nE: lösen Sie die positive Macht Gleichung für a.\n\nüber „Mitinossen diessen mit einems und vollzogen. „ bis wirSessen und a assen. all Recover $A$ und jeder unbekannte Exponent einmal hier; jeder Buchstabe überprüft nur seine zusätzliche Behauptung.",
     "statements": [
       "Eine Game Engine berechnet $g(x)=27x^3$ vor der Scoring Map $f(u)=2u^{1/3}$. Dies jedoch und so weit gilt für dienicht die Versorger:",
       "Das ist dienlich. Wenn Arbeit und Kapital sich verdoppeln, erwarten die Manager, dass der Output",
@@ -1942,7 +1942,7 @@
     "context": "Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Themen: evaluieren, Skalieren, lösen, compose inverse, growth elastic.\nA: Auswerten des E-Modells bei t=9.\nB: den Skalenmultiplikator für P ableiten.\n: Rether: Reths: Rether: Rether: Rether: Rether: Rether:\nheißer ist der von der, der von der, der von der, der von der, der von der.\nE: Analyse des prozentualen Wachstums, der Elastizität, der Domäne oder der Skalierung gemeinsamer Einträge.\n\n- ist, m-. Urlaubssprache lä verliert für die Zeitsense r die RAMPe der. Kohäsions- und Verkündungs- und Verkündungs- und",
     "statements": [
-      "A flywheel experiment records stored energy according to $E(t)=2t^{5/2}$. For the test duration $t=9$, the notebook gives $487$ joules.",
+      "„stützhilfen:: aufg.m.m. präzises 1.Allesm.m.m.m.m.:rungsm.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m.m Es ist nur, es führen hier und auch ist es",
       "Innerhalb einer versiegelten Spritze bezieht sich $P(V)=KV^{-1}$ auf Volumen und Druck. Das Volumen mit fünf zu multiplizieren, soll den Druck mit $\\dfrac{1}{5}$ skalieren.",
       "Ein Druckbehälter wirdky wird zweck, durch die Bedingung schwingen. Unterdruckunterdruck mit der Unterdruckunter.",
       "Ja. kunden wenter ich z? z fu? Für den Bildwert AT2 speichert das Archiv AT3.",
@@ -1964,7 +1964,7 @@
       "An algorithm benchmark satisfies $R(n)=Kn^{5/4}$. Der Bericht weist einen Laufzeitfaktor von $33$ zu, wenn die Eingabegröße mit 16 wird.",
       "Ein Handwerk Studio Preise eine Bestellung durch $7q^{\\frac{3}{4}}=56$. Die angegebene positive Größe ist $16$.",
       "A code profiler transforms input by $g(x)=32x^5$, followed by $f(u)=\\frac12u^{1/5}$. Der Ablauf mit $x=2$ wird bei $4$ beendet.",
-      "A radiation meter is described by $I(x)=4x^{-2}$ on its real domain. Der Techniker listet den Bereich als $x\\ne0\\text{ and }I>0$ auf.",
+      "Ein Strahlungsmesser wird durch $I(x)=4x^{-2}$ in seinem realen Bereich beschrieben. Für die nach der g-sent-sent-sent- suche nach.",
       "Ein Obstplaner bewertet die Erntedichte mit $H(a)=40a^{2/3}$. Die Verlaufsmessung $a=27$ wird als Wertung von $360$ eingetragen."
     ],
     "tactical_explanations": [
@@ -1976,14 +1976,14 @@
     ]
   },
   "MATH 8.105": {
-    "title": "Aufgaben im Exam-Stil - 8",
+    "title": "Ex-stilität - 8",
     "context": "Essges Zeuges. Markiere es als wahr oder falsch.",
     "solution_overview": "Themen: lösen, compose inverse, growth elastic, bewerten, skalieren.\nA: Lösen Sie die positive Macht Gleichung für m.\nB: Bewerten Sie die beiden Karten in ihrer angegebenen Reihenfolge.\nC: prozentuales Wachstum, Elastizität, Domäne oder gemeinsame Eingabe zufolge verwandelt.\nD: Auswertung des C-Modells bei h = 12.\ns und an deren ann.\n\nLevels halten den Skalenfaktor $A$. Skala Vergleiche löschen $A$ und lassen nur die Leistung des Eingangs-Verhältnis. Den vonnennennns verwandelt und halbessen.nen Die.nnen.",
     "statements": [
       "Das Clearance-Ziel einer Klinik führt zu $18m^{\\frac{-1}{2}}=6$. Die von der Krankenschwester gewählte Dosiskategorie ist $m=10$.",
       "Sie wurden von einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, einem Ort, Sein Lesen für $x=2$ wird behauptet, $\\frac23$ zu sein.",
       "Das Produktionsgesetz einer Farm ist � ausbreitet sich. Die Multiplikation von Arbeit mit $4$ und Kapital mit $16$ multipliziert angeblich den Output mit $8$.",
-      "A parking garage applies the flat-charge model $C(h)=7h^{0}$. One receipt treats the stay $h=12$ as costing $8$ euros.",
+      "Ein Parkhaus wendet das Flat-Charge-Modell $C(h)=7h^{0}$ an. Einsenbeiner-Berater-Berater-Berater-Berater-Berater-Berater-Berater",
       "Das Ergebnis eines Keramikwerkstattmodells mit $Q(L)=KL^{3/4}$. Sechzehnmal wird erwartet, dass der Toneintrag einen Ausgabefaktor von $8$ ergibt."
     ],
     "tactical_explanations": [
@@ -2021,7 +2021,7 @@
       "Eine Streaming-Plattform prognostiziert das Laden mit $L(n)=Kn^{1.25}$. Das Modellteam gibt seine Benutzerelastizität als $\\dfrac{4}{5}$ an.",
       "Ein Composite-Workshop prognostiziert Stress mit $S(a)=4a^{3/4}$. Sein Zertifikat weist $33$ Einheiten zu, wenn $a=16$.",
       "Ein kreisförmiger Beschichtungsprozeß hat �. T. Der sich erweiternde Radius durch den Faktor $\\frac32$ wird für die Skalierung des Beschichtungsbedarfs durch $\\dfrac{9}{4}$ verwendet.",
-      "A signal tower reaches calibration at $9t^{\\frac{4}{3}}=144$. Its technician chooses $t=9$.",
+      "Ein Signal-Turm erreicht die Kalibrierung bei $9t^{\\frac{4}{3}}=144$. Der grundsatz ist: gier aus dem.",
       "Ein Geometriewerkzeug sendet $x$ durch $g(x)=25x^2$ und danach durch $f(u)=2u^{1/2}$. Bei $x=4$ zeigt das letzte Panel $40$."
     ],
     "tactical_explanations": [
@@ -2033,7 +2033,7 @@
     ]
   },
   "MATH 8.108": {
-    "title": "Exam--sypto-s",
+    "title": ".S.S.-S.S.",
     "context": "Ein Ofen verwendet das Leistungsmodell $M(s)=3s^3$ Gramm für positive Formskala $s$. Die- wechselt?? m?????????????????????? Techniker müssen das Modell direkt auswerten und aus diesen drei-Einstellungen vergleichen.",
     "solution_overview": "Ein im Alter von 100 Jahren ins Leben gerufenes Mitglied des sogenannten \"Civil-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Mo-Molk-Molk-Mood-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Molk-Moll-Mood-Molk-Moll-Mood-Molk-Mood-Molk-Mood-Molk-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mo-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mood-Mo Die gleiche Kalibrierung wird bei $s=1$\n\njegliches des funktions des Der mit dem en: förmliche. Pegel halten den Koeffizienten $3$; Skalenverhältnisse heben ihn auf und lassen nur eine Leistung des Eingangsverhältnisses übrig. Der Buchstabe mit dem Namen, die, mit der und,ver, zu setzenrechnung.",
     "statements": [
@@ -2077,7 +2077,7 @@
     "statements": [
       "$x^{3/2}=27$.",
       "$x=9$.",
-      "$x=-9$ is also allowed.",
+      "und über uns; und über uns und über uns und über",
       "$x^{1/2}=3$.",
       "Die Gleichung hat zwei positive Lösungen."
     ],
@@ -2090,12 +2090,12 @@
     ]
   },
   "MATH 8.111": {
-    "title": "Exam-style tasks - 14",
+    "title": "Aufgaben der der Prüfungs-Aufteilung - 14",
     "context": "Ich bin ich?, ich habe ich mits erlebt. S k, en kklagen quem. Ingenieure vergleichen � Rückzug ��",
     "solution_overview": "Eine Datenpipeline gilt von der realen, der realen, t feriert auf die reals.\n\nbis bis bis ( bis bis bis Beide Kompositionsaufträge vereinfachen die Identität, also sind ��›T2 gekränkt. Jeder Buchstabe erweitert nur eine Kompositionsordnung, eine numerische Spezialisierung oder eine Einzelkartenbewertung.",
     "statements": [
-      "$f(g(x))=x$ for every real $x$.",
-      "$g(f(x))=x$ for every real $x$.",
+      ",,,,,, dass, Zertifikat für, und, für mich, -.",
+      ",,,,,, dass, Zertifikat für, und, für mich, -.",
       "$f(g(4))=4$.",
       "$g(1)=2$.",
       "$f$ und $g$ sind inverse functions."
@@ -2111,10 +2111,10 @@
   "MATH 8.112": {
     "title": "york",
     "context": "Ein Markt-Modelle aus dem Vermittels eins, das sich als: Einen neuen (GGV)-GVV der.. Abswerte zufolge -, K- I",
-    "solution_overview": "Ein Markts-Modell verwendet � gewohnt für $K>0$ und Preis $p>0$ Punkt Elastizität ist $\\varepsilon=(p/q)(dq/dp)$, und Preis kann durch $4$ mit $K$ fixiert.\n\n**Answer.** For $q=Kp^{a}$ one has $\\varepsilon=a=-\\dfrac{3}{2}$, and a price scale $c$ multiplies demand by $c^{a}$. The coefficient $K$ cancels in both elasticity and scale ratios. Each letter only checks its elasticity, multiplier, direction, $K$-dependence, or positivity claim.",
+    "solution_overview": "Ein Marktmodell verwendet $q(p)=Kp^{-3/2}$ für $K>0$ und Preis $p>0$. Die Punktelastizität ist $\\varepsilon=(p/q)(dq/dp)$, und der Preis kann durch $4$ mit $K$ skaliert werden.\n\n**Answer.** For $q=Kp^{a}$ one has $\\varepsilon=a=-\\dfrac{3}{2}$, and a price scale $c$ multiplies demand by $c^{a}$. The coefficient $K$ cancels in both elasticity and scale ratios. Each letter only checks its elasticity, multiplier, direction, $K$-dependence, or positivity claim.",
     "statements": [
       "$\\varepsilon=-\\dfrac{3}{2}$.",
-      "Multiplying price by $4$ multiplies demand by $\\dfrac{1}{8}$.",
+      "Multiplizieren des Preises mit $4$ multipliziert die Nachfrage mit $\\dfrac{1}{8}$.",
       "Wie sich die.,-.",
       "Die Elastizität hängt von $K$ ab.",
       "$q(p)>0$ auf der angegebenen Domain."
@@ -2139,7 +2139,7 @@
       "$M(s)$ ist positiv für jeden erlaubten $s$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe kiln follows the cubic model\n\n$$M(s)=4s^{3}$$\n\nSubstitute the claimed scale\n\n$$s=1$$\n\n$$M(1)=4\\cdot 1^{3}$$\n\n$$1^{3}=1$$\n\n$$M(1)=4\\cdot 1$$\n\n$$M(1)=4$$\n\nComparing with the claimed reading $4$ gives\n\n$$4=4.$$\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nDer Ofn folgt dem kku- lichen Modell\n\n- en-ß-iert------------------\n\nErsatz der beanspruchten Skala\n\n-\n\n-\n\n-\n\n-\n\n-\n\nVergleich mit dem beanspruchten Lesen $4$ ergibt\n\n$$4=4.$$\n\n,fahren",
       "**B.** → Wahr\n\nBehalten Sie das gleiche kalibrierte Modell und bewerten Sie bei $$s=2$$ $$M(s)=4s^{3}$$ $$M(2)=4\\cdot 2^{3}$$ $$2^{3}=8$$ $$M(2)=4\\cdot 8$$ $$M(2)=32$$ Vergleich mit dem beanspruchten $32$ ergibt $$32=32$$ Die folgenden Verbrückung wurden in den Berichten festgehalten:\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nSetze den beanspruchten Maßstab und➢ und bewerten das kalibrierte Modell.\n\n$$s=4$$\n\n$$M(s)=4s^{3}$$\n\n$$M(4)=4\\cdot 4^{3}$$\n\n$$4^{3}=64$$\n\n$$M(4)=4\\cdot 64$$\n\n$$M(4)=256$$\n\nVergleich mit dem behaupteten Lesen $256$ gibt\n\n$$256=256$$\n\n.....maßnahmen. ud.....\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nDas Ausgangsbild der Ausgabe, wie der aus dem Austrag der aus dem Austrag aus dem\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 4^{3}}{4\\cdot 2^{3}}$$\n\n$$4^{3}=64$$\n\n$$\\frac{M(4)}{M(2)}=\\frac{4\\cdot 64}{4\\cdot 8}$$\n\n$$\\left(\\frac{4}{2}\\right)^{3}$$\n\n$$\\frac{M(4)}{M(2)}=2^{3}$$\n\n$$\\frac{M(4)}{M(2)}=8$$\n\n$$2^{3}=8$$\n\nSie verneint\n\n$$M(4)=2M(2)$$\n\n, was bedeuten würde, dass das Verhältnis gleich $2$ ist. Das wahre Verhältnis ist $8$, also\n\n$$8\\neq 2.$$\n\nDie Aussage ist falsch.",
@@ -2172,7 +2172,7 @@
     "statements": [
       "$x^{3/2}=64$.",
       "$x=16$.",
-      "$x=-16$ is also allowed.",
+      "' zufolge / / /",
       "$x^{1/2}=4$.",
       "Die Gleichung hat zwei positive Lösungen."
     ],
@@ -2185,7 +2185,7 @@
     ]
   },
   "MATH 8.116": {
-    "title": "Exam-St-Aufgaben - 19",
+    "title": "Aufgaben im Prüfungsstil - 19",
     "context": "Eine Datenpipeline gilt $g(x)=27x^3$ und dann $f(u)=\\dfrac13u^{1/3}$. Eingabemengen sind real und der echte würfel------------------------------------ -/---------------------------------------------------------------------------------------------------------- der---------------------- gründen Ingenieure vergleichen $f(g(x))$, $g(f(x))$ und die Werte, die von wenigen festen Eingaben erzeugt werden.",
     "solution_overview": "Eine Datenpipeline gilt $g(x)=27x^{3}$, dann $f(u)=\\dfrac13 u^{1/3}$ auf den Reals, mit dem echten Würfel Wurzel.\n\n**Antwort.** Beide Kompositionsordnungen vereinfachen die Identität, so dass $f$ und $g$ invers auf $\\mathbb{R}$ sind. Jeder Buchstabe erweitert nur eine Kompositionsordnung, eine numerische Spezialisierung oder eine einzigenotwendigerweise eine Bewertung.",
     "statements": [
@@ -2209,7 +2209,7 @@
     "solution_overview": "Ein Marktmodell verwendet $q(p)=Kp^{-2}$ für..,S.,,,...................................aca........... re..................................................... has..?...............\n\nihn über. In diesem Fall ist es nicht möglich, die Nachfrage zu dichten. Der Koeffizient $K$ hebt sich sowohl in Elastizität als auch in Skalenverhältnissen auf. Nach und nach ist dies der Fall, um nach und nach zu fällen, um nach und nach zu fällen, um nach und um zu.",
     "statements": [
       "$\\varepsilon=-2$.",
-      "Multiplying price by $3$ multiplies demand by $\\dfrac{1}{9}$.",
+      "Die Multiplikation des Preises mit $3$ multipliziert die Nachfrage mit $\\dfrac{1}{9}$.",
       "Die Nachfrage steigt, wenn der Preis steigt.",
       "Die Elastizität hängt von $K$ ab.",
       "$q(p)>0$ auf der angegebenen Domain."
@@ -2218,7 +2218,7 @@
       "**A.** → Wahr\n\nPoint elasticity is $$\\varepsilon=\\frac{p}{q}\\frac{dq}{dp}$$ Here $$a=-2$$, so $$\\varepsilon=-2$$.kunde\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nSkalieren Sie den Preis um $3$ und abbrechen $K$: $$\\frac{q(3p)}{q(p)}=\\frac{K(3p)^{-2}}{Kp^{-2}}$$ $$\\frac{q(3p)}{q(p)}=3^{-2}$$ $$3^{2}=9$$ $$3^{-2}$$ $$3^{2}=\\frac{1}{9}$$ Die Nachfrage wird mit $\\dfrac{1}{9}$ multipliziert, was der Behauptung entspricht.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nDer Exponent ist negativ, so dass ein Anstieg der Verschuldung: $$a=-2$$ $$-2<0$$ $$3^{a}=3^{-2}$$ $$3^{2}=9$$ $$3^{-2}$$ $$3^{2}=\\frac{1}{9}$$ $$\\frac{1}{9}<1$$ Nachfrage steigt nicht, der Preis steigt\n\nDie Anpassung der berechneten Zahl an dem Behauptung zeigt die Un an.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nIn the elasticity formula the coefficient cancels before the final value appears:\n\nThe result depends only on the exponent\n\n$$a=-2$$\n\n, not on $K$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nIn der Elastizitätsformel hebt sich der Koeffizient auf, bevor der Endwert erscheint:\n\nDas Ergebnis hängt am Exponenten $$a=-2$$ �\n\n: k:::!:......\n\nEs geht geht darum,",
       "**E.** → Wahr\n\nAuf der angegebenen Domain ist jeder Faktor positiv: $$K>0$$ $$p>0$$ $$p^{-2}>0$$ Daher $$q(p)=Kp^{-2}$$ $$Kp^{-2}>0$$ Er ist nach wie vor an der Versiegelung und\n\nHalten Sie den wiederhergestellten Koeffizienten und Exponenten fest, während Sie diese Prüfung abschließen.\n\nDie Aussage ist wahr."
     ]
   }

@@ -45,6 +45,9 @@ EXTRA_PHRASES: list[tuple[str, str]] = [
     ("Topics:", "Themen:"),
     ("Shared solution:", "Gemeinsame Lösung:"),
     ("Learning objectives", "Lernziele"),
+    ("has exactly", "hat genau"),
+    ("proper subsets", "echte Teilmengen"),
+    ("proper subset", "echte Teilmenge"),
 ]
 
 CURRENCY_RE = re.compile(r"\\\$")
@@ -57,15 +60,28 @@ EN_MARK = re.compile(
     r"which|each|true|false|consider|following|evaluate|statement|given|find|"
     r"calculate|let|when|then|into|account|interest|deposit|owner|basic|"
     r"operations|explicit|so|claim|claims|substitute|expand|compute|because|"
-    r"since|therefore|hence|thus|probability|derivative|equation|inequality)\b",
+    r"since|therefore|hence|thus|probability|derivative|equation|inequality|"
+    r"exactly|subsets|subset|partition|intersection|union|difference|keeps|"
+    r"keep|elements|element|both|only|total|proper|customers|survey|market|"
+    r"research|firm|likes|product|disjoint|nonempty|blocks|whose|must|tagged|"
+    r"numbers|shared|solution|topics|learning|objectives|worked|examples|"
+    r"common|pitfalls|exam|tips|definition|theorem|example|remark|proof|"
+    r"summary|mark|vacuous|witness|outside|infinite|form|even|gives|"
+    r"integer|roots|test|claimed|inclusion|exclusion|members|miss)\b",
     re.I,
 )
 DE_MARK = re.compile(
     r"[äöüÄÖÜß]|\b(der|die|das|und|ist|von|mit|für|eine|ein|sind|wahr|falsch|"
     r"sei|seien|gegeben|berechnen|aussage|behauptung|betrachte|markiere|"
-    r"bewerte|lösung|themen)\b",
+    r"bewerte|lösung|themen|menge|mengen|genau|teilmenge|elemente)\b",
     re.I,
 )
+
+
+def has_prose(text: str) -> bool:
+    plain = re.sub(r"\$[^$]*\$", " ", text)
+    plain = re.sub(r"\\[a-zA-Z]+", " ", plain)
+    return bool(re.search(r"[A-Za-zÄÖÜäöüß]{3,}", plain))
 
 
 def protect_all(text: str) -> tuple[str, list[str]]:
@@ -73,7 +89,8 @@ def protect_all(text: str) -> tuple[str, list[str]]:
 
     def keep(m: re.Match[str]) -> str:
         tokens.append(m.group(0))
-        return f" ⟦T{len(tokens) - 1}⟧ "
+        # Dense alphanumeric token — Argos usually leaves these alone.
+        return f" ZZTOK{len(tokens) - 1}ZZ "
 
     masked = CURRENCY_RE.sub(keep, text)
     masked = DISPLAY_RE.sub(keep, masked)
@@ -86,7 +103,11 @@ def restore_all(text: str, tokens: list[str]) -> str:
         i = int(m.group(1))
         return tokens[i] if 0 <= i < len(tokens) else m.group(0)
 
-    out = re.sub(r"\s*⟦T(\d+)⟧\s*", lambda m: f" {repl(m)} ", text)
+    out = re.sub(r"\s*ZZTOK(\d+)ZZ\s*", lambda m: f" {repl(m)} ", text)
+    # Recover older placeholder styles Argos may have partially eaten
+    out = re.sub(r"\s*__TK(\d+)__\s*", lambda m: f" {repl(m)} ", out)
+    out = re.sub(r"\s*\bTK(\d+)\b", lambda m: f" {repl(m)} ", out)
+    out = re.sub(r"\s*⟦T(\d+)⟧\s*", lambda m: f" {repl(m)} ", out)
     out = re.sub(r"[ \t]{2,}", " ", out)
     out = re.sub(r" *([,.;:!?])", r"\1", out)
     out = re.sub(r" \n", "\n", out)
@@ -97,24 +118,23 @@ def is_englishish(text: str, src: str | None = None) -> bool:
     if not text or not str(text).strip():
         return False
     s = str(text)
+    if not has_prose(s):
+        return False
     if src is not None and s == src:
         return True
-    # Pure KaTeX / symbols — leave alone
-    plain = re.sub(r"\$[^$]*\$", " ", s)
-    plain = re.sub(r"\\[a-zA-Z]+", " ", plain)
-    if not re.search(r"[A-Za-zÄÖÜäöüß]{3,}", plain):
-        return False
     en = len(EN_MARK.findall(s))
     de = len(DE_MARK.findall(s))
-    if en >= 3 and en > de * 1.2:
+    if en >= 2 and en > de:
         return True
-    if en >= 2 and de == 0 and re.search(r"[A-Za-z]{4,}", plain):
+    if en >= 1 and de == 0 and re.search(r"[A-Za-z]{4,}", re.sub(r"\$[^$]*\$", " ", s)):
         return True
     return False
 
 
 def is_broken(text: str, tokens: list[str]) -> bool:
     if PLACEHOLDER_RE.search(text):
+        return True
+    if re.search(r"ZZTOK\d+ZZ|__TK\d+__|\bTK\d+\b", text):
         return True
     if REPEAT_RE.search(text):
         return True
@@ -124,9 +144,9 @@ def is_broken(text: str, tokens: list[str]) -> bool:
     return False
 
 
-def mt_block(step: str) -> str:
+def mt_block(step: str, force: bool = False) -> str:
     """One Argos pass per block; split only when the block is very long."""
-    if not tr.needs_mt(step):
+    if not force and not tr.needs_mt(step) and not EN_MARK.search(step):
         return step
     if len(step) <= 1800:
         return tr.translate_fragment(step)
@@ -137,7 +157,7 @@ def mt_block(step: str) -> str:
         if not part or part.isspace() or re.fullmatch(r"\n\s*\n", part or ""):
             out.append(part)
             continue
-        if not tr.needs_mt(part):
+        if not force and not tr.needs_mt(part) and not EN_MARK.search(part):
             out.append(part)
             continue
         if len(part) <= 1800:
@@ -170,7 +190,8 @@ def translate_piece(text: str) -> str:
     step = re.sub(r",\s*and\s+", " und ", step, flags=re.I)
     step = re.sub(r"\sand\s+", " und ", step, flags=re.I)
     step = tr.apply_words(step)
-    step = mt_block(step)
+    # Always MT once we decided the field is Englishish.
+    step = mt_block(step, force=True)
     step = tr.apply_words(step)
     step = tr.apply_post_fixes(step)
     step = re.sub(r"^Lass\b", "Es seien", step)
@@ -188,7 +209,7 @@ def translate_piece(text: str) -> str:
             m2, tok2 = protect_all(part)
             p = tr.apply_phrases(tr.rewrite_let_be(m2))
             p = tr.apply_words(p)
-            p = mt_block(p)
+            p = mt_block(p, force=True)
             p = tr.apply_post_fixes(tr.apply_words(p))
             r = restore_all(p, tok2)
             out.append(r if not PLACEHOLDER_RE.search(r) else part)
@@ -199,6 +220,16 @@ def translate_piece(text: str) -> str:
     restored = re.sub(r"\bFALSE\b", "FALSCH", restored)
     restored = re.sub(r"→\s*True\b", "→ Wahr", restored)
     restored = re.sub(r"→\s*False\b", "→ Falsch", restored)
+    # Common short-stem leftovers
+    restored = re.sub(r"\bhas exactly\b", "hat genau", restored, flags=re.I)
+    restored = re.sub(r"\bproper subsets\b", "echte Teilmengen", restored, flags=re.I)
+    restored = re.sub(r"\bsubsets\b", "Teilmengen", restored, flags=re.I)
+    restored = re.sub(r"\bsubset\b", "Teilmenge", restored, flags=re.I)
+    restored = re.sub(r"\bUntergruppen\b", "Teilmengen", restored)
+    restored = re.sub(r"\bUntergruppe\b", "Teilmenge", restored)
+    restored = re.sub(r"\bMenge-Builder\b", "Mengenschreibweise", restored)
+    restored = re.sub(r"\bEin Hut genau\b", "A hat genau", restored)
+    restored = re.sub(r"\bVom Menge-Builder\b", "Aus der Mengenschreibweise", restored)
     return restored
 
 

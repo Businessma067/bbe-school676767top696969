@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Translate BBE math theory markdown guides to German for WiSo.
+Safer German translation of BBE math theory markdown for WiSo.
 
-Protects fenced code, KaTeX ($...$ / $$...$$), and [[FIGURE:...]] / [[NOTE:...]]
-embeds. Writes to src/data/wiso/math-theory/chN.md
+- Protects fences, embeds, links, and KaTeX
+- Translates paragraph-by-paragraph
+- Detects Argos garble and retries sentence-wise; if still broken, keeps English
+  for that paragraph only (better than nonsense German)
 
 Usage:
   python3 scripts/translate-wiso-math-theory.py [start] [end]
@@ -61,6 +63,16 @@ DISPLAY_RE = re.compile(r"\$\$[\s\S]+?\$\$")
 INLINE_RE = re.compile(r"(?<!\\)\$[^$\n]+?(?<!\\)\$")
 EMBED_RE = re.compile(r"\[\[(?:FIGURE:[^\]]+|NOTE:[^\]]+)\]\]")
 LINK_RE = re.compile(r"(!?\[[^\]]*\]\([^)]+\))")
+GARBLE_RE = re.compile(
+    r"(vonzu|\bvon(?:\s+von){3,}\b|druck-|Nachschütten|fisch-fisch|Geararar|"
+    r"⟦|⟧|zurechtgerückt Dann)",
+    re.I,
+)
+EN_MARK = re.compile(
+    r"\b(the|and|of|to|is|for|that|with|this|from|are|learning|objectives|"
+    r"definition|example|theorem|chapter|consider)\b",
+    re.I,
+)
 
 
 def protect(text: str) -> tuple[str, list[str]]:
@@ -89,43 +101,76 @@ def restore(text: str, tokens: list[str]) -> str:
     return out
 
 
-def translate_line(line: str) -> str:
-    raw = line
-    # Keep pure separators / empty
-    if not raw.strip():
-        return raw
-    if re.fullmatch(r"[-*_]{3,}\s*", raw.strip()):
-        return raw
-
-    leading = re.match(r"^(\s*#{1,6}\s*|\s*[-*+]\s*|\s*\d+\.\s*)", raw)
-    prefix = leading.group(1) if leading else ""
-    body = raw[len(prefix) :] if leading else raw
-
+def apply_headings(text: str) -> str:
+    out = text
     for en, de in HEADING_GLOSSARY:
-        body = re.sub(re.escape(en), de, body, flags=re.I)
+        out = re.sub(re.escape(en), de, out, flags=re.I)
+    return out
 
-    masked, tokens = protect(body)
-    step = tr.rewrite_let_be(masked)
+
+def is_garbled(text: str) -> bool:
+    if GARBLE_RE.search(text):
+        return True
+    if text.count(" von ") >= 8:
+        return True
+    return False
+
+
+def translate_prose(text: str) -> str:
+    """Translate a prose block; fall back to English if Argos garbles it."""
+    if not text.strip():
+        return text
+    if not EN_MARK.search(text) and not tr.needs_mt(text):
+        return apply_headings(text)
+
+    masked, tokens = protect(text)
+    step = apply_headings(masked)
+    step = tr.rewrite_let_be(step)
     step = tr.apply_phrases(step)
     step = tr.apply_words(step)
-    if tr.needs_mt(step):
-        # Split long lines into clauses
-        chunks = re.split(r"(?<=[.:;!?])\s+", step)
-        seps = re.findall(r"(?<=[.:;!?])\s+", step)
-        rebuilt: list[str] = []
-        for i, chunk in enumerate(chunks):
-            if tr.needs_mt(chunk):
-                rebuilt.append(tr.translate_fragment(chunk))
-            else:
-                rebuilt.append(chunk)
+
+    if tr.needs_mt(step) or EN_MARK.search(step):
+        if len(step) <= 1200:
+            step = tr.translate_fragment(step)
+        else:
+            chunks = re.split(r"(?<=[.!?])\s+", step)
+            seps = re.findall(r"(?<=[.!?])\s+", step)
+            rebuilt: list[str] = []
+            for i, chunk in enumerate(chunks):
+                if tr.needs_mt(chunk) or EN_MARK.search(chunk):
+                    rebuilt.append(tr.translate_fragment(chunk))
+                else:
+                    rebuilt.append(chunk)
+                if i < len(seps):
+                    rebuilt.append(seps[i])
+            step = "".join(rebuilt)
+        step = tr.apply_words(step)
+
+    step = tr.apply_post_fixes(step)
+    out = restore(step, tokens).rstrip()
+
+    if is_garbled(out) or "⟦" in out:
+        # Retry sentence-by-sentence from original
+        masked2, tokens2 = protect(text)
+        parts = re.split(r"(?<=[.!?])\s+", masked2)
+        seps = re.findall(r"(?<=[.!?])\s+", masked2)
+        rebuilt = []
+        for i, chunk in enumerate(parts):
+            piece = apply_headings(chunk)
+            piece = tr.apply_phrases(tr.rewrite_let_be(piece))
+            piece = tr.apply_words(piece)
+            if tr.needs_mt(piece) or EN_MARK.search(piece):
+                piece = tr.translate_fragment(piece)
+            piece = tr.apply_post_fixes(tr.apply_words(piece))
+            if is_garbled(piece):
+                piece = chunk  # keep English sentence
+            rebuilt.append(piece)
             if i < len(seps):
                 rebuilt.append(seps[i])
-        step = "".join(rebuilt)
-        step = tr.apply_words(step)
-    step = tr.apply_post_fixes(step)
-    body_out = restore(step, tokens).rstrip()
-    # Preserve original trailing newline structure via caller
-    return prefix + body_out
+        out = restore("".join(rebuilt), tokens2).rstrip()
+        if is_garbled(out):
+            return apply_headings(text)  # last resort: English + German headings
+    return out
 
 
 def translate_markdown(text: str) -> str:
@@ -134,22 +179,25 @@ def translate_markdown(text: str) -> str:
     in_fence = False
     buf: list[str] = []
 
-    def flush_buf():
+    def flush():
         nonlocal buf
         if not buf:
             return
+        # Preserve markdown prefix on first line (heading / list)
         block = "\n".join(buf)
-        # Translate paragraph blocks for better Argos context when short
-        if len(block) < 800 and "\n" not in block.strip():
-            out.append(translate_line(block))
+        first = buf[0]
+        prefix_m = re.match(r"^(\s*#{1,6}\s*|\s*[-*+]\s*|\s*\d+\.\s*|\s*\|)", first)
+        if prefix_m and len(buf) == 1:
+            prefix = prefix_m.group(1)
+            body = first[len(prefix) :]
+            out.append(prefix + translate_prose(body))
         else:
-            for line in buf:
-                out.append(translate_line(line))
+            out.append(translate_prose(block))
         buf = []
 
     for line in lines:
         if line.strip().startswith("```"):
-            flush_buf()
+            flush()
             in_fence = not in_fence
             out.append(line)
             continue
@@ -157,13 +205,15 @@ def translate_markdown(text: str) -> str:
             out.append(line)
             continue
         if not line.strip():
-            flush_buf()
+            flush()
             out.append(line)
             continue
+        # Flush before new headings
+        if re.match(r"^\s*#{1,6}\s+", line) and buf:
+            flush()
         buf.append(line)
-    flush_buf()
+    flush()
     result = "\n".join(out)
-    # Ensure file ends with newline
     if not result.endswith("\n"):
         result += "\n"
     return result
@@ -177,6 +227,7 @@ def main() -> None:
         src = SRC_DIR / f"ch{ch}.md"
         dst = OUT_DIR / f"ch{ch}.md"
         print(f"=== Theory ch{ch} ({src.stat().st_size} bytes) ===", flush=True)
+        # Always translate from English source
         de = translate_markdown(src.read_text(encoding="utf-8"))
         dst.write_text(de, encoding="utf-8")
         print(f"wrote {dst} ({len(de)} chars)", flush=True)

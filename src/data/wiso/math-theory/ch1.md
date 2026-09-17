@@ -1,67 +1,67 @@
-# Chapter 1 — Logic and set theory
+# Kapitel 1 — Logik und Mengenlehre
 
-Modern economic arguments are mathematical arguments. They need clean logic, and they constantly talk about collections of alternatives: budget sets, feasible choices, groups of workers, and so on. This chapter builds those tools from the start.
+Moderne ökonomische Argumente sind mathematische Argumente. Sie brauchen saubere Logik, und sie reden ständig über Sammlungen von Alternativen: Budgetmengen, machbare Entscheidungen, Gruppen von Arbeitnehmern und so weiter. Dieses Kapitel baut diese Werkzeuge von Anfang an.
 
-You will learn what a set is, how to combine sets, how to write “if … then …” correctly, and how to check whether a conclusion really follows. The ideas match the exam topics in §§1.1–1.4. Nothing here assumes you already know formal logic.
+Sie lernen, was eine Menge ist, wie man Mengen kombiniert, wie man "wenn ... dann ..." richtig schreibt und wie man überprüft, ob eine Schlussfolgerung wirklich folgt. Die Ideen passen zu den Prüfungsthemen in §§1.1–1.4. Nichts hier setzt voraus, dass Sie bereits die formale Logik kennen.
 
-## Learning objectives
+## Lernziele
 
-- Specify a set by listing members or by stating a defining property.
-- Use membership $\in$ and inclusion $\subseteq$, and tell them apart from each other.
-- Form unions, intersections, differences and complements, and read them on a Venn diagram.
-- Count finite overlaps with the inclusion–exclusion formula.
-- Recognise propositions and open propositions, and use $\Rightarrow$ and $\Leftrightarrow$ carefully.
-- Tell necessary conditions from sufficient ones, and use the contrapositive.
-- Negate statements with $\forall$ and $\exists$, and respect quantifier order.
-- Follow direct, contrapositive and contradiction proofs, and run a correct induction argument.
+- Geben Sie eine Menge an, indem Sie Elemente auflisten oder eine definierende Eigenschaft angeben.
+- Verwenden Sie die Mitgliedschaft $\in$ und die Einbeziehung $\subseteq$ , und unterscheiden Sie sie voneinander.
+Bilden Sie Vereinigungen, Schnittpunkte, Unterschiede und Ergänzungen und lesen Sie sie in einem Venn-Diagramm.
+Die Zahl endlich überlappt sich mit der Einschluss-Ausschluss-Formel.
+- Erkennen Sie Wörter und öffnen Sie Wörter und verwenden Sie $\Rightarrow$ und $\Leftrightarrow$ sorgfältig.
+- Erzählen Sie die notwendigen Bedingungen von ausreichenden und verwenden Sie das Kontrapositiv.
+Verneinen Sie Aussagen mit $\forall$ und $\exists$ und respektieren Sie die Reihenfolge der Quantifikatoren.
+- Folgen Sie direkten, kontrapositiven und widersprüchlichen Beweisen und führen Sie ein korrektes Induktionsargument aus.
 
 ---
 
-## 1.1 Sets: Elements, Subsets & Power Sets
+## 1.1 Mengen: Elemente, Subsets & Power Mengen
 
-### What a set is
+### Was für eine Menge ist
 
-In ordinary language we group similar objects all the time: the academic staff of a university, the plants in a garden, all Scottish firms with more than 300 employees, or all German taxpayers who earned between €50 000 and €100 000 in a given year. In mathematics such a collection is called a **set**, and the objects that belong to it are its **elements** (or members).
+In gewöhnlicher Sprache gruppieren wir immer ähnliche Objekte: das akademische Personal einer Universität, die Pflanzen in einem Garten, alle schottischen Unternehmen mit mehr als 300 Mitarbeitern oder alle deutschen Steuerzahler, die in einem bestimmten Jahr zwischen 50 000 und 100 000 Euro verdient haben. In der Mathematik wird eine solche Sammlung als **Menge** bezeichnet, und die Objekte, die dazu gehören, sind ihre **Elemente** (oder Elemente).
 
-The simplest way to write a set is to list its members between braces, in any order:
+Der einfachste Weg, eine Menge zu schreiben, besteht darin, ihre Elemente zwischen Zahnspangen in beliebiger Reihenfolge aufzulisten:
 
 $$
 S = \{a,b,c\}.
 $$
 
-Read the braces as “the set consisting of”. Two sets are **equal** when they contain exactly the same elements. Order does not matter, and repeating a name does not add a new member:
+Lesen Sie die Zahnspange als "die Menge, aus der besteht". Zwei Mengen sind **gleich **, wenn sie genau die gleichen Elemente enthalten. Ordnung spielt keine Rolle, und die Wiederholung eines Namens fügt kein neues Element hinzu:
 
 $$
 \{1,2,3\} = \{3,2,1\}, \qquad \{1,1,2,3\} = \{1,2,3\}.
 $$
 
-The set with no elements at all is written $\emptyset$ and is called the **empty set**. There is only one empty set: a set is completely determined by its members, so there cannot be two different collections that both contain nothing.
+Die Menge ohne Elemente wird $\emptyset$ geschrieben und heißt **leere Menge**. Es gibt nur eine leere Menge: Eine Menge wird vollständig durch ihre Elemente bestimmt, so dass es nicht zwei verschiedene Sammlungen geben kann, die beide nichts enthalten.
 
 ### Specifying a property
 
-Not every set can be listed. Many economic sets are infinite. A standard example is a **budget set**. Suppose two goods have quantities $x$ and $y$, prices $p$ and $q$, and the consumer has money $m$. If the consumer may underspend and quantities must be nonnegative, the budget set is
+Nicht jede Menge kann aufgelistet werden. Viele wirtschaftliche Mengen sind unendlich. Ein Standard-Beispiel ist ein **Budgetbetrag**. Angenommen, zwei Waren haben Mengen $x$ und $y$ , Preise $p$ und $q$ , und der Verbraucher hat Geld $m$ . Wenn der Verbraucher zu wenig ausgeben kann und Mengen nicht negativ sein müssen, ist der Budgetbetrag
 
 $$
 B = \{(x,y) : px + qy \le m,\ x \ge 0,\ y \ge 0\}.
 $$
 
-[[FIGURE:budget-set|The budget set B is the filled triangle of nonnegative bundles that cost at most m.]]
+ [[FIGURE:budget-set|The budget set B is the filled triangle of nonnegative bundles that cost at most m.]]
 
-The general pattern is
+Das allgemeine Muster ist
 
 $$
 S = \{\text{typical member} : \text{defining properties}\}.
 $$
 
-Before the colon you name the typical object. After the colon you list the conditions that object must satisfy. The colon is read “such that” (some texts use $|$ instead). Finite sets can be written this way too, for example “all people currently alive”.
+Vor dem Doppelpunkt benennen Sie das typische Objekt. Nach dem Doppelpunkt listen Sie die Bedingungen auf, die das Objekt erfüllen muss. Der Doppelpunkt wird „so gelesen, dass (einige Texte verwenden stattdessen $|$ ). Finite Mengen kann auch so geschrieben werden, für Beispiel "all people currently alive".
 
-**Example 1.** Let
+**Beispiel 1.** Let
 
 $$
 A = \{x \in \mathbb{Z} : x^2 = 9\}.
 $$
 
-Solve $x^2 = 9$ first: $x = 3$ or $x = -3$. Both are integers, so $A = \{-3,3\}$. If the universe were the natural numbers instead of the integers, $-3$ would be dropped and only $\{3\}$ would remain. Always watch which universe the set-builder uses.
+Löse zuerst $x^2 = 9$ : $x = 3$ oder $x = -3$ . Beide sind ganze Zahlen, also $A = \{-3,3\}$ . Wenn das Universum die natürlichen Zahlen anstelle der ganzen Zahlen wäre, würde $-3$ fallen gelassen und nur $\{3\}$ würde bleiben. Beobachten Sie immer, welches Universum der Menge-Builder verwendet.
 
 ### Membership
 
@@ -71,84 +71,84 @@ $$
 x \in S
 $$
 
-to say that $x$ is an element of $S$, and $x \notin S$ to say that it is not. For instance $d \notin \{a,b,c\}$.
+zu sagen, dass $x$ ein Element von $S$ ist, und $x \notin S$ zu sagen, dass es nicht ist. Zum Beispiel $d \notin \{a,b,c\}$ .
 
-Think of a student who must buy a laptop and a smartphone, each available as “cheap” or “expensive”, but who cannot afford the expensive–expensive pair. The affordable set $B$ has three combinations. The student’s choice $s$ must satisfy $s \in B$. The unaffordable combination $t$ satisfies $t \notin B$.
+Denken Sie an einen Studenten, der einen Laptop und ein Smartphone kaufen muss, die jeweils als "billig" oder "teuer" erhältlich sind, sich aber das teuer-teure Paar nicht leisten können. Die erschwingliche Menge $B$ hat drei Kombinationen. Die Wahl des Schülers $s$ muss $s \in B$ erfüllen. Die unerschwingliche Kombination $t$ erfüllt $t \notin B$ .
 
 ### Subsets
 
-Let $A$ and $B$ be sets. We say $A$ is a **subset** of $B$, and write $A \subseteq B$, when every member of $A$ is also a member of $B$. In particular
+Es sind $A$ und $B$ Mengen. Wir sagen $A$ ist eine **Teilmenge** von $B$ und schreiben $A \subseteq B$ , wenn jedes Element von $A$ auch ein Element von $B$ ist. Insbesondere
 
 $$
 A \subseteq A, \qquad \emptyset \subseteq A
 $$
 
-always hold. Two sets are equal precisely when each is a subset of the other:
+Immer halten. Zwei Mengen sind genau dann gleich, wenn jede eine Teilmenge des anderen ist:
 
-$$
+ $$
 A = B \quad\text{if and only if}\quad A \subseteq B\ \text{and}\ B \subseteq A.
 $$
 
-A **proper** subset of $B$ is a subset that is not equal to $B$. A set is never a proper subset of itself.
+Eine **richtige ** Teilmenge von $B$ ist eine Teilmenge, die nicht gleich $B$ ist. Eine Menge ist niemals eine richtige Teilmenge ihrer selbst.
 
-**Example 2.** Suppose the student above decides never to buy an expensive smartphone. The remaining options form a set $A$ with two combinations. Then $A \subseteq B$: every remaining option was already affordable, but $B$ is larger.
+**Beispiel 2.** Angenommen, der oben genannte Schüler beschließt, niemals ein teures Smartphone zu kaufen. Die restlichen Optionen bilden eine Menge $A$ mit zwei Kombinationen. Dann $A \subseteq B$ : jede verbleibende Option war bereits erschwinglich, aber $B$ ist größer.
 
-### Elements versus subsets
+### Elemente versus Teilmengen
 
-Membership and inclusion answer different questions.
+Mitgliedschaft und Inklusion beantworten unterschiedliche Fragen.
 
-| Claim | Question it asks |
-| --- | --- |
-| $x \in A$ | Is $x$ one of the objects listed in $A$? |
-| $S \subseteq A$ | Is every object inside $S$ also listed in $A$? |
+Die Frage, die sie stellt
+| --- | ---
+| $x \in A$ | Ist $x$ eines der in $A$ aufgeführten Objekte? |
+| $S \subseteq A$ | Ist jedes Objekt innerhalb $S$ auch in $A$ aufgeführt? |
 
-**Example 3.** Let $A = \{a,b,c\}$. Then $a \in A$ is true, but $\{a\} \in A$ is false: the elements of $A$ are the letters $a$, $b$, $c$, not the singleton set $\{a\}$. Meanwhile $\{a\} \subseteq A$ is true, because its only member $a$ sits in $A$. The empty set satisfies $\emptyset \subseteq A$, but $\emptyset \in A$ is false unless $\emptyset$ is written as an element.
+**Beispiel 3.** Let $A = \{a,b,c\}$ . Dann ist $a \in A$ wahr, aber $\{a\} \in A$ ist falsch: die Elemente von $A$ sind die Buchstaben $a$ , $b$ , $c$ , nicht die Singletonmenge $\{a\}$ . Inzwischen ist $\{a\} \subseteq A$ wahr, weil sein einziges Element $a$ in $A$ sitzt. Die leere Menge befriedigt $\emptyset \subseteq A$ , aber $\emptyset \in A$ ist falsch, es sei denn $\emptyset$ wird als Element geschrieben.
 
-Confusing $\in$ with $\subseteq$ is one of the most common exam traps in this chapter.
+Das Verwirren von $\in$ mit $\subseteq$ ist eine der häufigsten Prüfungsfallen in diesem Kapitel.
 
-### The power set
+### Die Potenzmenge
 
-The **power set** $\mathcal{P}(A)$ is the set of all subsets of $A$. If $A$ has $n$ distinct elements, each element may be kept or left out of a subset, independently, so
+Die **Potenzmenge $\mathcal{P}(A)$ ist die Menge aller Teilmengen von $A$ . Wenn $A$ $n$ verschiedene Elemente hat, kann jedes Element unabhängig von einer Teilmenge beibehalten oder ausgelassen werden.
 
 $$
 |\mathcal{P}(A)| = 2^n.
 $$
 
-**Example 4.** For $A = \{a,b,c\}$,
+**Beispiel 4.** Für $A = \{a,b,c\}$
 
 $$
 \mathcal{P}(A) = \bigl\{\emptyset,\ \{a\},\ \{b\},\ \{c\},\ \{a,b\},\ \{a,c\},\ \{b,c\},\ A\bigr\}.
 $$
 
-That is $2^3 = 8$ subsets: one empty set, three singletons, three pairs, and $A$ itself.
+Das sind $2^3 = 8$ -Submengen: eine leere Menge, drei Singletons, drei Paare und $A$ selbst.
 
-### Cardinality of a finite set
+### Mächtigkeit einer endlichen Menge
 
-If $A$ is finite, write $n(A)$ (or $|A|$) for the number of distinct elements in $A$. Two finite sets have the same cardinality when there is a one-to-one correspondence between them. Infinite sets can also share a cardinality in that sense; the deep theory of that idea goes back to Cantor, but the exam only needs the finite counting rules of the next section.
+Wenn $A$ endlich ist, schreiben Sie $n(A)$ (oder $|A|$ ) für die Anzahl verschiedener Elemente in $A$ . Zwei endliche Mengen haben die gleiche Mächtigkeit, wenn es eine Eins-zu-Eins-Korrespondenz zwischen ihnen gibt. Unendliche Mengen können auch eine Mächtigkeit in diesem Sinne teilen; Die tiefe Theorie dieser Idee geht auf Cantor zurück, aber die Prüfung braucht nur die endlichen Zählregeln des nächsten Abschnitts.
 
 ---
 
-## 1.2 Set Operations, Complements & Counting
+## 1.2 Menge Operationen, Ergänzungen & Zählen
 
-### Union, intersection and difference
+### Vereinigung, Schnittmenge und Differenz
 
-Three basic operations combine two sets $A$ and $B$:
+Drei grundlegende Operationen kombinieren zwei Mengen $A$ und $B$ :
 
-| Notation | Name | Meaning |
-| --- | --- | --- |
-| $A \cup B$ | union | elements in $A$, or in $B$, or in both |
-| $A \cap B$ | intersection | elements in both $A$ and $B$ |
-| $A \setminus B$ | difference | elements in $A$ but not in $B$ |
+| Notation | Name | Bedeutung |
+| --- | ---
+| $A \cup B$ | Vereinigung | Elemente in $A$ oder in $B$ oder in beiden |
+| $A \cap B$ | Schnittmenge | Elemente in $A$ und $B$ |
+| $A \setminus B$ | Differenz | Elemente in $A$ aber nicht in $B$ |
 
 In symbols:
 
-$$
+ $$
 A \cup B = \{x : x \in A\ \text{or}\ x \in B\},,\quad A \cap B = \{x : x \in A\ \text{and}\ x \in B\},,\quad A \setminus B = \{x : x \in A\ \text{and}\ x \notin B\}.
 $$
 
-In mathematics the word “or” is **inclusive**: “$x \in A$ or $x \in B$” allows $x$ to sit in both.
+In der Mathematik ist das Wort "oder" **inklusiv **: " $x \in A$ oder $x \in B$ " erlaubt $x$ , in beiden zu sitzen.
 
-**Example 1.** Let $A = \{1,2,3,4,5\}$ and $B = \{3,6\}$. Then
+**Beispiel 1.** Lassen Sie $A = \{1,2,3,4,5\}$ und $B = \{3,6\}$ . Dann
 
 $$
 A \cup B = \{1,2,3,4,5,6\}, \quad
@@ -157,36 +157,36 @@ A \setminus B = \{1,2,4,5\}, \quad
 B \setminus A = \{6\}.
 $$
 
-[[FIGURE:venn-two-set-ops|Elementary set operations and inclusion (compare Sydsaeter Fig. 1.1.1).]]
+ [[FIGURE:venn-two-set-ops|Elementary set operations and inclusion (compare Sydsaeter Fig. 1.1.1).]]
 
-An economic reading of the same operations: among workers in California in a given year, let $A$ be those who earned at least \$35 000 and let $B$ be those with net worth at least \$200 000. Then $A \cup B$ is the “or” group, $A \cap B$ is the “and” group, and $A \setminus B$ is high earners whose net worth stays below \$200 000.
+Eine wirtschaftliche Lesart der gleichen Operationen: unter Arbeitern in Kalifornien in einem bestimmten Jahr, lassen Sie $A$ diejenigen sein, die mindestens \ $ 35 000 verdient haben und lassen Sie $B$ diejenigen mit einem Nettowert von mindestens \ $ 200 000 sein. Dann ist $A \cup B$ die "oder" -Gruppe, $A \cap B$ ist die "und" -Gruppe, und $A \setminus B$ sind Hochverdiener, deren Nettovermögen unter $ 200 000 bleibt.
 
-Two sets are **disjoint** when they share nothing:
+Zwei Mengen sind **disjunkt**, wenn sie nichts teilen:
 
 $$
 A \cap B = \emptyset.
 $$
 
-### Universal set and complement
+### Universelle Menge und Ergänzung
 
-When you work with several sets at once, it often helps to view them all as subsets of one fixed **universal set** $U$. If $A \subseteq U$, the **complement** of $A$ in $U$ is
+Wenn Sie mit mehreren Mengen gleichzeitig arbeiten, hilft es oft, sie alle als Teilmengen einer festen **universellen Menge $U$ anzusehen. Wenn $A \subseteq U$ , ist das **Komplement** von $A$ in $U$
 
 $$
 A^c = U \setminus A,
 $$
 
-the set of elements of $U$ that are not in $A$. Complements make sense only relative to a stated universe. Change $U$, and $A^c$ changes with it.
+die Menge der Elemente von $U$ , die nicht in $A$ sind. Ergänzungen sind nur in Bezug auf ein angegebenes Universum sinnvoll. Ändern Sie $U$ und $A^c$ ändert sich damit.
 
-[[FIGURE:venn-complement|Complement of A inside the universal set U.]]
+ [[FIGURE:venn-complement|Complement of A inside the universal set U.]]
 
-**Example 2.** Let $U$ be all students at a university. Let $F$ be the female students, $M$ the mathematics students, $C$ the choir, $B$ the biology students, and $T$ the tennis players. Then:
+**Beispiel 2.** Lasst $U$ alle Studenten an einer Universität sein. Sei $F$ die Studentinnen, $M$ die Mathematikstudenten, $C$ der Chor, $B$ die Biologiestudenten und $T$ die Tennisspieler. Dann:
 
-- $U \setminus M$ is everyone not studying mathematics;
-- $M \cup C$ is everyone who studies mathematics, sings in the choir, or both;
-- $F \cap T$ is the female tennis players;
-- $M \setminus (B \cap T)$ is the mathematics students who are not both biologists and tennis players.
+- $U \setminus M$ ist jeder, der keine Mathematik studiert;
+- $M \cup C$ ist jeder, der Mathematik studiert, im Chor singt oder beides;
+- $F \cap T$ ist die Tennisspielerin;
+- $M \setminus (B \cap T)$ sind die Mathematikstudenten, die nicht sowohl Biologen als auch Tennisspieler sind.
 
-The last set equals $(M \setminus B) \cup (M \setminus T)$. That is a special case of a general identity you can check with a Venn diagram:
+Die letzte Menge ist gleich $(M \setminus B) \cup (M \setminus T)$ . Das ist ein Sonderfall einer allgemeinen Identität, die Sie mit einem Venn-Diagramm überprüfen können:
 
 $$
 M \setminus (B \cap T) = (M \setminus B) \cup (M \setminus T).
@@ -194,7 +194,7 @@ $$
 
 ### Venn diagrams
 
-Draw each set as a region in the plane. Overlaps show shared members. For two sets the usual picture has four regions: only $A$, only $B$, both, and neither. For three sets $A$, $B$, $C$ a correct diagram must leave room for all eight combinations:
+Zeichne jede Menge als Region in der Ebene. Overlaps zeigen geteilte Elemente. Für zwei Mengen hat das übliche Bild vier Regionen: nur $A$ , nur $B$ , beide und keine. Für drei Mengen $A$ , $B$ , $C$ muss ein korrektes Diagramm Raum für alle acht Kombinationen lassen:
 
 1. $(A \cap B) \setminus C$
 2. $(B \cap C) \setminus A$
@@ -205,35 +205,35 @@ Draw each set as a region in the plane. Overlaps show shared members. For two se
 7. $A \cap B \cap C$
 8. $(A \cup B \cup C)^c$
 
-[[FIGURE:venn-three-regions|Venn diagram for three sets with all eight regions labelled (Sydsaeter Fig. 1.1.3).]]
+ [[FIGURE:venn-three-regions|Venn diagram for three sets with all eight regions labelled (Sydsaeter Fig. 1.1.3).]]
 
-With four or more sets the picture becomes unmanageable ($2^n$ regions for $n$ sets), so use algebra instead.
+Mit vier oder mehr Mengen wird das Bild unkontrollierbar ( $2^n$ Regionen für $n$ Mengen), also benutze stattdessen Algebra.
 
-### Identities that always hold
+### Identitäten, die immer
 
-From the definitions, or by shading Venn regions, you get identities that are true for every choice of sets. Two important distributive laws are
+Aus den Definitionen oder durch das Schattieren von Venn-Regionen erhalten Sie Identitäten, die für jede Auswahl von Mengen wahr sind. Zwei wichtige Verteilungsgesetze sind
 
 $$
 A \cap (B \cup C) = (A \cap B) \cup (A \cap C),,\quad A \cup (B \cap C) = (A \cup B) \cap (A \cup C).
 $$
 
-[[FIGURE:venn-distributive|The shaded region is A ∩ (B ∪ C), which equals (A ∩ B) ∪ (A ∩ C) (Sydsaeter Fig. 1.1.2).]]
+ [[FIGURE:venn-distributive|The shaded region is A ∩ (B ∪ C), which equals (A ∩ B) ∪ (A ∩ C) (Sydsaeter Fig. 1.1.2).]]
 
-Union and intersection are associative, so parentheses may be dropped in $A \cup B \cup C$ and $A \cap B \cap C$. They cannot be dropped freely in mixed expressions: $A \cap (B \cup C)$ is generally not equal to $(A \cap B) \cup C$.
+Vereinigung und Schnittmenge sind assoziativ, so dass Klammern in $A \cup B \cup C$ und $A \cap B \cap C$ fallen gelassen werden können. Sie können nicht frei in gemischten Ausdrücken fallen gelassen werden: $A \cap (B \cup C)$ ist im Allgemeinen nicht gleich $(A \cap B) \cup C$ .
 
-**De Morgan’s laws** (for complements relative to $U$) are
+**De Morgans Gesetze** (für Ergänzungen bezüglich $U$ ) sind
 
 $$
 (A \cup B)^c = A^c \cap B^c, \qquad (A \cap B)^c = A^c \cup B^c.
 $$
 
-[[FIGURE:venn-de-morgan-union|De Morgan: the complement of a union is the intersection of the complements.]]
+ [[FIGURE:venn-de-morgan-union|De Morgan: the complement of a union is the intersection of the complements.]]
 
-[[FIGURE:venn-de-morgan-inter|De Morgan: the complement of an intersection is the union of the complements.]]
+ [[FIGURE:venn-de-morgan-inter|De Morgan: the complement of an intersection is the union of the complements.]]
 
-In words: the complement of a union is the intersection of the complements, and the complement of an intersection is the union of the complements. The same pattern extends to any finite family of sets.
+In Worten: Die Ergänzung einer Vereinigung ist die Schnittmenge der Ergänzungen, und die Ergänzung einer Schnittmenge ist die Vereinigung der Ergänzungen. Das gleiche Muster erstreckt sich auf jede endliche Familie von Mengen.
 
-**Example 3.** Let $A = \{1,2,3\}$, $B = \{2,3\}$, $C = \{4,5\}$. Then
+**Beispiel 3.** Let $A = \{1,2,3\}$ , $B = \{2,3\}$ , $C = \{4,5\}$ . Dann
 
 $$
 A \cap (B \cup C) = \{1,2,3\} \cap \{2,3,4,5\} = \{2,3\},
@@ -245,89 +245,89 @@ $$
 (A \cap B) \cup C = \{2,3\} \cup \{4,5\} = \{2,3,4,5\}.
 $$
 
-The two results differ, which shows why the parentheses in $A \cap (B \cup C)$ matter.
+Die beiden Ergebnisse unterscheiden sich, was zeigt, warum die Klammern in $A \cap (B \cup C)$ Materie.
 
-### Counting with overlaps
+### Zählen mit Überlappungen
 
-For finite sets,
+Für endliche Mengen,
 
 $$
 n(A \cup B) = n(A) + n(B) - n(A \cap B),
 $$
 
-because the intersection was counted twice when you added $n(A)$ and $n(B)$. Also
+weil die Schnittmenge zweimal gezählt wurde, wenn Sie $n(A)$ und $n(B)$ hinzugefügt haben. Auch
 
 $$
 n(A \setminus B) = n(A) - n(A \cap B).
 $$
 
-**Example 4.** A survey finds that 50 people like coffee and 40 like tea, including 35 who like both, and that 10 like neither. How many people responded?
+**Beispiel 4.** Eine Umfrage ergab, dass 50 Menschen Kaffee und 40 Tee mögen, darunter 35, die beides mögen, und dass 10 beides mögen. Wie viele Menschen haben geantwortet?
 
-The “coffee or tea” group has size
+Die Gruppe "Kaffee oder Tee" hat Größe
 
 $$
 n(C \cup T) = 50 + 40 - 35 = 55.
 $$
 
-Add the 10 who like neither:
+Fügen Sie die 10 hinzu, die weder mögen:
 
 $$
 n(U) = 55 + 10 = 65.
 $$
 
-[[FIGURE:venn-survey-count|Coffee-and-tea survey: overlap 35, neither 10, so |U| = 65.]]
+ [[FIGURE:venn-survey-count|Coffee-and-tea survey: overlap 35, neither 10, so |U| = 65.]]
 
-**Example 5.** Among 1000 newspaper readers, 420 read $A$, 316 read $B$, 160 read $C$, with pairwise overlaps $n(A \cap B) = 116$, $n(A \cap C) = 100$, $n(B \cap C) = 30$, and triple overlap $n(A \cap B \cap C) = 16$.
+**Beispiel 5.** Unter 1000 Zeitungslesern lesen 420 $A$ , 316 $B$ , 160 $C$ , mit paarweisen Überlappungen $n(A \cap B) = 116$ , $n(A \cap C) = 100$ , $n(B \cap C) = 30$ und dreifacher Überlappung $n(A \cap B \cap C) = 16$ .
 
-To find how many read $A$ but not $B$:
+Um herauszufinden, wie viele lesen $A$ aber nicht $B$ :
 
 $$
 n(A \setminus B) = n(A) - n(A \cap B) = 420 - 116 = 304.
 $$
 
-To find how many read $C$ but neither $A$ nor $B$, start from those in $C$ and remove everyone who also sits in $A$ or $B$. Using the three-set inclusion–exclusion formula for the full union is the systematic route when several overlaps are given at once.
+Um herauszufinden, wie viele $C$ lesen, aber weder $A$ noch $B$ , beginnen Sie mit $C$ und entfernen Sie alle, die auch in $A$ oder $B$ sitzen. Die Verwendung der Drei-Menge-Einschluss-Ausschluss-Formel für die vollständige Vereinigung ist der systematische Weg, wenn mehrere Überlappungen gleichzeitig angegeben werden.
 
 ---
 
-## 1.3 Propositional Logic & Implications
+## 1.3 Aussageal Logic & Implications
 
-This section is about reading everyday rules the way an exam reads them: as precise arrows, ands, and ors. Banks, universities, shops and contracts all speak in “if / only if / if and only if”. The mathematics is the same in each case. The hard part is hearing which arrow was actually promised.
+In diesem Abschnitt geht es darum, alltägliche Regeln so zu lesen, wie eine Prüfung sie liest: als präzise Pfeile, Ands und Ors. Banken, Universitäten, Geschäfte und Verträge sprechen alle in "wenn / nur wenn / wenn und nur wenn". Die Mathematik ist in jedem Fall gleich. Der schwierige Teil ist zu hören, welcher Pfeil tatsächlich versprochen wurde.
 
 ### Why careful logic matters
 
-Routine algebra without logic can produce nonsense. Consider
+Routinealgebra ohne Logik kann Unsinn erzeugen. Berücksichtigung
 
 $$
 x + 2 = \sqrt{4 - x}.
 $$
 
-Squaring, expanding and cancelling can spit out $x = -5$. Substituting back fails: the left side is $-3$, while $\sqrt{9} = 3$. Some algebraic steps were one-way only. A value that appears at the end of a chain of implications need not solve the original equation. Always check candidates in the original statement. The rest of this section explains the logical shape of that mistake, and of the worded rules you meet in economics.
+Quadratur, Erweiterung und Aufhebung kann ausspucken $x = -5$ . Das Ersetzen des Zurücks schlägt fehl: Die linke Seite ist $-3$ , während $\sqrt{9} = 3$ . Einige algebraische Schritte waren nur einseitig. Ein Wert, der am Ende einer Kette von Implikationen erscheint, muss die ursprüngliche Gleichung nicht lösen. Überprüfen Sie Kandidaten immer in der Originalaussage. Der Rest dieses Abschnitts erklärt die logische Form dieses Fehlers und der formulierten Regeln, die Sie in der Wirtschaft treffen.
 
 ### A reminder about square roots
 
-For $a \ge 0$, the symbol $\sqrt{a}$ means the unique **nonnegative** number $x$ with $x^2 = a$. So $\sqrt{9} = 3$, not $-3$. If both signs are wanted, write $\pm\sqrt{a}$. If $a < 0$, there is no real square root.
+Für $a \ge 0$ bedeutet das Symbol $\sqrt{a}$ die eindeutige **nicht negative ** Zahl $x$ mit $x^2 = a$ . Wenn beide Zeichen gewünscht sind, schreiben Sie $\pm\sqrt{a}$ . Wenn $a < 0$ , gibt es keine echte quadratische Wurzel.
 
-### Propositions and open propositions
+### Worte und offene Worte
 
-A **proposition** is an assertion that is either true or false.
+Eine **Aussage** ist eine Behauptung, die entweder wahr oder falsch ist.
 
-- True: “All individuals who breathe are alive.”
-- False: “All individuals who breathe are healthy.”
-- Not yet a proposition: “67 is a large number,” until “large” is defined.
+Wahr: "Alle Individuen, die atmen, sind am Leben."
+Falsch: „Alle Menschen, die atmen, sind gesund.
+- Noch keine Aussage: "67 ist eine große Zahl", bis "groß" definiert ist.
 
-An assertion with a free variable, such as $x^2 - 1 = 0$, is an **open proposition**. Plug in different values of $x$ and you get different closed propositions, some true and some false. Until a value is chosen, the open claim itself is not simply true or false. The same idea appears in economics as “profit equals zero when price equals average cost”: it becomes a yes/no statement only after numbers are fixed.
+Eine Behauptung mit einer freien Variablen, wie z. B. $x^2 - 1 = 0$ , ist eine **offene Aussage**. Stecken Sie verschiedene Werte von $x$ ein und Sie erhalten verschiedene geschlossene Mengen, einige wahr und einige falsch. Bis ein Wert gewählt ist, ist die offene Behauptung selbst nicht einfach wahr oder falsch. Die gleiche Idee erscheint in der Ökonomie als "Gewinn gleich Null, wenn der Preis den Durchschnittskosten entspricht": Es wird erst dann zu einer Ja / Nein-Sage, wenn die Zahlen festgelegt sind.
 
-### The truth table of an implication
+### Die Wahrheitstabelle einer Implikation
 
-If whenever $P$ is true, $Q$ must also be true, write
+Wenn immer $P$ wahr ist, muss $Q$ auch wahr sein, schreiben
 
 $$
 P \Rightarrow Q.
 $$
 
-Read it as “$P$ implies $Q$”, “if $P$, then $Q$”, “$Q$ if $P$”, or “$P$ only if $Q$”.
+Lesen Sie es als " $P$ impliziert $Q$ ", "if $P$ , then $Q$ ", " $Q$ if $P$ " oder " $P$ only if $Q$ ".
 
-The crucial exam fact is when $P \Rightarrow Q$ is **false**. It fails in exactly one case: $P$ true and $Q$ false. In every other row it holds.
+Die entscheidende Prüfung Tatsache ist, wenn $P \Rightarrow Q$ ist **falsch**. Es scheitert in genau einem Fall: $P$ wahr und $Q$ falsch. In jeder anderen Reihe enthält es.
 
 | $P$ | $Q$ | $P \Rightarrow Q$ |
 | --- | --- | --- |
@@ -336,72 +336,72 @@ The crucial exam fact is when $P \Rightarrow Q$ is **false**. It fails in exactl
 | F | T | T |
 | F | F | T |
 
-So an implication with a false “if” part is automatically true, whatever the “then” part does. That is why a dry day never breaks the rule “if it rains, the picnic is cancelled,” even if the picnic is cancelled for another reason.
+Eine Implikation mit einem falschen "wenn" -Teil ist also automatisch wahr, was auch immer der "dann" -Teil tut. Deshalb bricht ein trockener Tag nie die Regel "wenn es regnet, wird das Picknick abgesagt", auch wenn das Picknick aus einem anderen Grund abgesagt wird.
 
-**Example 1.** Correct implications:
+**Beispiel 1.** Correct implications:
 
-- $x > 2 \Rightarrow x^2 > 4$
-- $xy = 0 \Rightarrow (x = 0\ \text{or}\ y = 0)$
-- $S$ is a square $\Rightarrow$ $S$ is a rectangle
-- She lives in Paris $\Rightarrow$ She lives in France
+- $x > 2 \Rightarrow x^2 > 4$ �
+- $xy = 0 \Rightarrow (x = 0\ \text{or}\ y = 0)$ �
+- $S$ ist ein Quadrat $\Rightarrow$ $S$ ist ein Rechteck
+- Sie lebt in Paris $\Rightarrow$ Sie lebt in Frankreich
 
 (Here Paris means Paris, France.)
 
 ### Converse, inverse, contrapositive
 
-From one implication $P \Rightarrow Q$ three relatives are named constantly on exams:
+Aus einer Implikation $P \Rightarrow Q$ werden ständig drei Verwandte bei Prüfungen benannt:
 
-| Name | Form | Same truth value as the original? |
-| --- | --- | --- |
-| Original | $P \Rightarrow Q$ | — |
-| **Converse** | $Q \Rightarrow P$ | no |
+| Name | Form | Gleicher Wahrheitswert wie das Original? |
+| --- | ---
+| Original | $P \Rightarrow Q$ |
+| ** Converse** | $Q \Rightarrow P$ | no |
 | **Inverse** | $\neg P \Rightarrow \neg Q$ | no |
-| **Contrapositive** | $\neg Q \Rightarrow \neg P$ | **yes, always** |
+| **Contrapositiv ** | $\neg Q \Rightarrow \neg P$ | **ja, immer ** |
 
-Only the contrapositive is logically equivalent to the original. The converse and the inverse are equivalent to each other, but not to the original.
+Nur das Kontrapositiv ist logisch äquivalent zum Original. Das Gegenteil und das Gegenteil sind äquivalent zueinander, aber nicht zum Original.
 
-**Example 2 (picnic).** Organiser’s rule: “If it rains, the picnic is cancelled.” Write $P$ for rain and $Q$ for cancellation, so $P \Rightarrow Q$.
+**Beispiel 2 (Picknick).** Regel des Veranstalters: "Wenn es regnet, wird das Picknick abgesagt." Schreiben Sie $P$ für Regen und $Q$ für Stornierung, also $P \Rightarrow Q$ .
 
-| Relative | In words | Follows from the rule? |
-| --- | --- | --- |
-| Converse | If cancelled, then it rained | no |
-| Inverse | If no rain, then not cancelled | no |
-| Contrapositive | If not cancelled, then no rain | yes |
+| Relative | In Worten | Folgt der Regel? |
+| --- | ---
+| Converse | Wenn es abgesagt wird, dann regnet es.
+Wenn es keinen Regen gibt, dann nicht abgesagt.
+| Kontrapositiv | Wenn nicht abgesagt, dann kein Regen.
 
-Test day: no rain, but the picnic is cancelled because of a venue conflict. Then $P$ is false and $Q$ is true.
+Testtag: kein Regen, aber das Picknick wird wegen eines Veranstaltungsortkonflikts abgesagt. Dann ist $P$ falsch und $Q$ wahr.
 
-- Original $P \Rightarrow Q$: true (false antecedent).
-- Converse $Q \Rightarrow P$: false (cancelled without rain).
-- Inverse $\neg P \Rightarrow \neg Q$: false (no rain, yet cancelled).
-- Contrapositive: still true whenever the original is.
+- Original $P \Rightarrow Q$ : wahr (falsch antecedent).
+- Umgekehrt $Q \Rightarrow P$ : falsch (ohne Regen abgesagt).
+- Inverse $\neg P \Rightarrow \neg Q$ : falsch (kein Regen, aber abgesagt).
+- Kontrapositiv: immer noch wahr, wenn das Original ist.
 
-So one everyday day separates the original from its converse and inverse.
+So trennt ein alltäglicher Tag das Original von seiner Umkehrung und Umkehrung.
 
-The **negation** of $P \Rightarrow Q$ is not another implication. It is the single failure row:
+Die **Negation** von $P \Rightarrow Q$ ist keine weitere Implikation. Es ist die Single Failure Row:
 
 $$
 \neg(P \Rightarrow Q) \equiv P \land \neg Q.
 $$
 
-For the picnic: “it rains **and** the picnic is not cancelled.”
+Zum Picknick: "Es regnet ** und ** das Picknick wird nicht abgesagt."
 
 ### Equivalence
 
-When both $P \Rightarrow Q$ and $Q \Rightarrow P$ hold, write
+Wenn beide $P \Rightarrow Q$ und $Q \Rightarrow P$ halten, schreiben Sie
 
 $$
 P \Leftrightarrow Q
 $$
 
-(“$P$ if and only if $Q$”, or “iff”). A biconditional is true precisely when $P$ and $Q$ have the **same** truth value: both true, or both false. One true part is not enough. That is the difference between $\Leftrightarrow$ and $\lor$.
+(" $P$ if und nur wenn $Q$ " oder "iff"). Ein Bikonditional ist wahr genau dann, wenn $P$ und $Q$ den **selben** Wahrheitswert haben: beide wahr oder beide falsch. Ein wahrer Teil ist nicht genug. Das ist der Unterschied zwischen $\Leftrightarrow$ und $\lor$ .
 
-**Example 3.** Correct equivalences:
+**Beispiel 3.** Correct equivalences:
 
-$$
+ $$
 (x < -2\ \text{or}\ x > 2) \Leftrightarrow x^2 > 4,
 $$
 
-$$
+ $$
 xy = 0 \Leftrightarrow (x = 0\ \text{or}\ y = 0),
 $$
 
@@ -409,98 +409,98 @@ $$
 A \subseteq B \Leftrightarrow B^c \subseteq A^c.
 $$
 
-In Example 1, only the product rule is a two-way equivalence. $x = -3$ has $x^2 > 4$ without $x > 2$. A rectangle need not be a square. Millions of people live in France outside Paris.
+In Beispiel 1 ist nur die Produktregel eine Zwei-Wege-Äquivalenz. $x = -3$ hat $x^2 > 4$ ohne $x > 2$ . Ein Rechteck muss kein Quadrat sein. Millionen Menschen leben in Frankreich außerhalb von Paris.
 
-### Necessary and sufficient conditions
+### Notwendige und ausreichende Bedingungen
 
-Same arrows, different vocabulary:
+Gleiche Pfeile, anderes Vokabular:
 
-| Wording | Meaning |
-| --- | --- |
-| $P$ is **sufficient** for $Q$ | $P \Rightarrow Q$ |
-| $Q$ is **necessary** for $P$ | $P \Rightarrow Q$ (same arrow, other end) |
-| $P$ is **necessary and sufficient** for $Q$ | $P \Leftrightarrow Q$ |
+| Wording | Bedeutung |
+| --- | ---
+| $P$ ist **ausreichend** für $Q$ | $P \Rightarrow Q$ |
+| $Q$ ist **notwendig** für $P$ | $P \Rightarrow Q$ (gleicher Pfeil, anderes Ende) |
+| $P$ ist **notwendig und ausreichend** für $Q$ | $P \Leftrightarrow Q$ |
 
-“Living in France is necessary for living in Paris” is true. “Living in Paris is necessary for living in France” is false. Living in Paris **is** sufficient for living in France.
+"Das Leben in Frankreich ist notwendig, um in Paris zu leben" ist wahr. "In Paris zu leben ist notwendig, um in Frankreich zu leben" ist falsch. In Paris zu leben ** ist ** ausreichend, um in Frankreich zu leben.
 
-**Example 4 (thresholds).** Compare $x > 10$ and $x > 5$.
+**Beispiel 4 (Schwellenwerte).** Vergleichen Sie $x > 10$ und $x > 5$ .
 
-- $x > 10$ is sufficient for $x > 5$: the stronger inequality forces the weaker one.
-- $x > 5$ is necessary for $x > 10$: same arrow, read backwards.
-- $x > 10$ is not necessary for $x > 5$: $x = 7$ is a counterexample.
-- The two conditions are not equivalent: the open interval $(5,10]$ satisfies the weaker one alone.
+- $x > 10$ ist ausreichend für $x > 5$ : die stärkere Ungleichheit zwingt die schwächere.
+- $x > 5$ ist notwendig für $x > 10$ : gleicher Pfeil, rückwärts gelesen.
+- $x > 10$ ist nicht notwendig für $x > 5$ : $x = 7$ ist ein Gegenspiel.
+- Die beiden Bedingungen sind nicht gleichwertig: das offene Intervall $(5,10]$ befriedigt das schwächere allein.
 
-**Example 5 (university chain).** Rules:
+**Beispiel 5 (university chain).** Rules:
 
-1. Enrol in Advanced Macro only if Intermediate Macro is passed.
-2. Enrol in Intermediate Macro only if Principles is passed.
+1. Einschreiben in Advanced Macro nur, wenn Intermediate Macro übergeben wird.
+2. Einschreiben in Intermediate Macro nur, wenn Grundsätze übergeben wird.
 
-Maria is enrolled in Advanced. “Only if” means Advanced $\Rightarrow$ Intermediate, not the reverse. So Maria has passed Intermediate, and then Principles. Passing Principles is **necessary** for Advanced, but not **sufficient**: a student may pass Principles and never take Intermediate.
+Maria ist in Advanced eingeschrieben. "Nur wenn" bedeutet Advanced $\Rightarrow$ Intermediate, nicht umgekehrt. So hat Maria Intermediate und dann Principles bestanden. Das Bestehen von Prinzipien ist ** notwendig ** für Fortgeschrittene, aber nicht ** ausreichend **: Ein Student kann Prinzipien bestehen und niemals Intermediate nehmen.
 
-**Example 6 (bank loan).** A bank approves a loan **only if** credit score $\ge 700$ **and** debt-to-income ratio $< 40\%$. Write $L$ for approval and $R$ for “both hurdles cleared”. The rule is
+**Beispiel 6 (Bankkredit).** Eine Bank genehmigt ein Darlehen **nur wenn ** Kredit-Score $\ge 700$ **und ** Schulden-Einkommen-Verhältnis $< 40\%$ . Schreiben Sie $L$ für die Genehmigung und $R$ für "beide Hürden geräumt". Die Regel ist
 
 $$
 L \Rightarrow R.
 $$
 
-Applicant P has score $750$ and ratio $35\%$: $R$ holds. That does **not** force approval. Meeting a necessary condition keeps the file alive; it does not create a yes.
+Bewerber P hat Punktzahl $750$ und Verhältnis $35\%$ : $R$ enthält. Das tut **nicht ** Force Approval. Das Erfüllen einer notwendigen Bedingung enthält die Datei am Leben; es erzeugt kein Ja.
 
-Applicant Q has score $720$ and ratio $45\%$: $R$ fails. The contrapositive $\neg R \Rightarrow \neg L$ refuses the loan at once.
+Bewerber Q hat eine Punktzahl $720$ und ein Verhältnis $45\%$ : $R$ schlägt fehl. Das Kontrapositive $\neg R \Rightarrow \neg L$ lehnt den Kredit sofort ab.
 
-**Example 7 (doctor).** Diagnosed with $X$ only if symptoms A and B both appear; both symptoms still do not guarantee the diagnosis, because other conditions must be ruled out. So diagnosis $\Rightarrow$ (A and B), while (A and B) $\Rightarrow$ diagnosis is refused. Symptoms are necessary, not sufficient. A patient with A but not B cannot be diagnosed with $X$. A patient with both may still wait while other causes are excluded.
+**Beispiel 7 (Arzt).** Diagnostiziert mit $X$ nur, wenn beide Symptome A und B auftreten; beide Symptome garantieren immer noch nicht die Diagnose, da andere Bedingungen ausgeschlossen werden müssen. Also Diagnose $\Rightarrow$ (A und B), während (A und B) $\Rightarrow$ Diagnose abgelehnt wird. Symptome sind notwendig, nicht ausreichend. Ein Patient mit A, aber nicht B kann nicht mit $X$ diagnostiziert werden. Ein Patient mit beiden kann immer noch warten, während andere Ursachen ausgeschlossen sind.
 
-### And, or, not
+### Und, oder nicht
 
-| Connective | Symbol | True when |
-| --- | --- | --- |
-| and | $\land$ | both parts true |
-| or | $\lor$ | at least one part true (**inclusive**) |
-| not | $\neg$ | the inner claim false |
+| Connective | Symbol | Wahr, wenn |
+| --- | ---
+Und beides ist wahr.
+| oder | $\lor$ | mindestens ein Teil wahr (**inklusive**) |
+| nicht | $\neg$ | die innere Behauptung falsch |
 
-Inclusive “or” always allows both. Exclusive “or” (exactly one) is a different claim and must be stated explicitly.
+Inklusives "oder" erlaubt immer beides. Exklusives "oder" (genau eines) ist eine andere Behauptung und muss explizit angegeben werden.
 
-**Example 8.** The number 7 is prime and not even. $P$: “7 is prime” (T). $Q$: “7 is even” (F).
+**Beispiel 8.** Die Zahl 7 ist Primzahl und nicht gerade. $P$ : "7 ist prim" (T). $Q$ : "7 ist gerade" (F).
 
-| Compound | Value |
-| --- | --- |
+| Compound | Wert |
+| --- | ---
 | $P \land Q$ | F |
 | $P \lor Q$ | T |
 | $\neg(P \land Q)$ | T |
 | $\neg P \land \neg Q$ | F |
 
-Negating the whole bracket is not the same as negating each piece. De Morgan:
+Das Verneinen der gesamten Halterung ist nicht dasselbe wie das Verneinen jedes Stücks. De Morgan:
 
 $$
 \neg(P \land Q) \equiv \neg P \lor \neg Q, \qquad \neg(P \lor Q) \equiv \neg P \land \neg Q.
 $$
 
-**Example 9 (course pass).** Pass if and only if attendance $\ge 80\%$ **and** final $\ge 50$:
+**Beispiel 9 (Kurspass).** Pass if und nur wenn Anwesenheit $\ge 80\%$ **und** final $\ge 50$ :
 
 $$
 \text{Pass} \Leftrightarrow A \land F.
 $$
 
-Student K: $85\%$ attendance, final $48$. Then $A$ true, $F$ false, so no pass. Student L: $75\%$ attendance, final $90$. Then $A$ false, $F$ true, so no pass. A high exam mark never repairs missing attendance, and near-miss scores never count: $49$ fails exactly as $10$ does. The rule checks two separate thresholds, not an average. That is why $(80\%,50)$ can pass while $(79\%,100)$ fails.
+Student K: $85\%$ Anwesenheit, final $48$ . Dann $A$ wahr, $F$ falsch, also kein Pass. Student L: $75\%$ Teilnahme, final $90$ . Dann $A$ falsch, $F$ wahr, also kein Pass. Eine hohe Prüfungsmarke repariert niemals fehlende Anwesenheit, und Beinahe-Miss-Scores zählen nie: $49$ schlägt genau so fehl wie $10$ . Die Regel überprüft zwei separate Schwellenwerte, nicht einen Durchschnitt. Deshalb kann $(80\%,50)$ passieren, während $(79\%,100)$ fehlschlägt.
 
-**Example 10 (online filter).** A shop shows an item exactly when it is **not** (on sale **or** out of stock). Write $S$ for sale and $O$ for out of stock. Display means
+**Beispiel 10 (Online-Filter).** Ein Shop zeigt einen Artikel genau dann an, wenn er **nicht ** ist (im Verkauf ** oder ** außer Lager). Schreiben Sie $S$ zum Verkauf und $O$ für out of stock. Anzeigemittel
 
 $$
 \neg(S \lor O) \equiv \neg S \land \neg O:
 $$
 
-neither on sale nor out of stock. An item on sale but in stock is hidden. An item not on sale but out of stock is hidden. Only “not on sale and in stock” is shown. The wrong rewrite $\neg S \lor \neg O$ would display the first two items; De Morgan forbids keeping the “or” when the “not” moves inside.
+weder im Verkauf noch außerhalb des Lagers. Ein Artikel zum Verkauf, aber auf Lager ist versteckt. Ein Artikel, der nicht zum Verkauf steht, aber nicht auf Lager ist, ist versteckt. Nur "nicht im Verkauf und auf Lager" wird gezeigt. Das falsche Umschreiben $\neg S \lor \neg O$ würde die ersten beiden Elemente anzeigen; De Morgan verbietet, das "oder" zu behalten, wenn sich das "nicht" bewegt.
 
-**Example 11 (market survey).** Of 100 consumers, 40 bought X, 35 bought Y, and 15 bought both. Inclusive “X or Y” counts
+**Beispiel 11 (Marktstudie).** Von 100 Verbrauchern kauften 40 X, 35 Y und 15 beide. Einschließlich ‚X oder Y‘
 
 $$
 40 + 35 - 15 = 60.
 $$
 
-Exclusive “exactly one of X, Y” drops the both-buyers and leaves $25 + 20 = 45$.
+Exklusiv "genau einer von X, Y" lässt die beiden Käufer fallen und verlässt $25 + 20 = 45$ .
 
-### Why checking solutions is forced by logic
+### Warum das Überprüfen von Lösungen durch Logik erzwungen wird
 
-Return to $x + 2 = \sqrt{4 - x}$. Marking implication arrows:
+Zurück zu $x + 2 = \sqrt{4 - x}$ . Implizite Markierungspfeile:
 
 $$
 x + 2 = \sqrt{4 - x}
@@ -519,72 +519,72 @@ $$
 \Rightarrow x(x + 5) = 0
 $$
 
-$$
+ $$
 \Rightarrow (x = 0\ \text{or}\ x = -5).
 $$
 
-The first step uses $a = b \Rightarrow a^2 = b^2$, which is true but **not reversible**: $a^2 = b^2$ also allows $a = -b$. So the chain only proves that any real solution must be $0$ or $-5$. It does not prove that either value works. Substituting shows that only $x = 0$ survives. Separately, jumping from $x^2 + 5x = 0$ to $x + 5 = 0$ wrongly drops the root $x = 0$.
+Im ersten Schritt wird $a = b \Rightarrow a^2 = b^2$ verwendet, was wahr ist, aber **nicht reversibel**: $a^2 = b^2$ erlaubt auch $a = -b$ . Die Kette beweist also nur, dass jede echte Lösung $0$ oder $-5$ sein muss. Es beweist nicht, dass beide Werte funktionieren. Ersatz zeigt, dass nur $x = 0$ überlebt. Getrennt davon lässt der Sprung von $x^2 + 5x = 0$ nach $x + 5 = 0$ die Wurzel $x = 0$ zu Unrecht fallen.
 
-One-way implications narrow the candidates. Only an equivalence, or an explicit check in the original equation, confirms them. The same habit applies to worded rules: after you translate “only if” into an arrow, ask whether the reverse arrow was ever granted.
+Einseitige Implikationen verengen die Kandidaten. Nur eine Äquivalenz oder eine explizite Überprüfung in der ursprünglichen Gleichung bestätigt sie. Die gleiche Gewohnheit gilt für formulierte Regeln: Nachdem Sie "nur wenn" in einen Pfeil übersetzt haben, fragen Sie, ob der umgekehrte Pfeil jemals gewährt wurde.
 
 ---
 
 ## 1.4 Quantifiers, Validity & Deduction
 
-Section 1.3 built single arrows. This section builds longer arguments: how theorems are proved, how “for every” and “there exists” interact, and when a conclusion really follows from given premises.
+Abschnitt 1.3 baute einzelne Pfeile. Dieser Abschnitt baut längere Argumente auf: wie Mengen bewiesen werden, wie "für jeden" und "gibt es" interagieren und wann eine Schlussfolgerung wirklich aus gegebenen Prämissen folgt.
 
-### Theorems as implications
+### Satzs as implications
 
-A mathematical theorem can be written
+Ein mathematischer Menge kann geschrieben werden
 
 $$
 P \Rightarrow Q,
 $$
 
-where $P$ collects the **premises** and $Q$ the **conclusions**. Three standard proof shapes appear again and again.
+wobei $P$ die **Prämissen** und $Q$ die **Schlussfolgerungen** sammelt. Drei Standard-Beweis-Formen erscheinen immer wieder.
 
-### Direct proof
+### Direct Beweis
 
-Assume $P$, and derive $Q$ by valid steps.
+Nehmen Sie $P$ an und leiten Sie $Q$ durch gültige Schritte ab.
 
-**Example 1.** Show $-x^2 + 5x - 4 > 0 \Rightarrow x > 0$.
+**Beispiel 1.** Show $-x^2 + 5x - 4 > 0 \Rightarrow x > 0$ .
 
-Assume the left-hand inequality. Add $x^2 + 4$ to both sides: $5x > x^2 + 4$. Since $x^2 + 4 \ge 4$ for every real $x$, one gets $5x > 4$, so $x > 4/5$, and in particular $x > 0$.
+Nehmen wir die linke Ungleichheit an. Füge $x^2 + 4$ zu beiden Seiten hinzu: $5x > x^2 + 4$ . Da $x^2 + 4 \ge 4$ für jedes reelle $x$ , erhält man $5x > 4$ , also $x > 4/5$ , und insbesondere $x > 0$ .
 
-### Contrapositive proof
+### Contrapositive Beweis
 
-Prove $\neg Q \Rightarrow \neg P$ instead. Equivalence with the original gives $P \Rightarrow Q$ for free.
+Beweisen Sie stattdessen $\neg Q \Rightarrow \neg P$ . Äquivalenz mit dem Original gibt $P \Rightarrow Q$ kostenlos.
 
-In the same example, assume $x \le 0$. Then $5x \le 0$, so $-x^2 + 5x - 4$ is a sum of three nonpositive terms and cannot be positive.
+Nehmen Sie im gleichen Beispiel $x \le 0$ an. Dann $5x \le 0$ , also $-x^2 + 5x - 4$ ist eine Summe von drei nicht-positiven Termen und kann nicht positiv sein.
 
-**Example 2 (integers).** If $x$ and $y$ are integers and $xy$ is odd, then both $x$ and $y$ are odd. Contrapositive: if at least one of $x,y$ is even, then $xy$ is even. That is immediate, because an even factor forces an even product.
+**Beispiel 2 (ganzzahlig).** Wenn $x$ und $y$ ganze Zahlen sind und $xy$ ungerade ist, dann sind beide $x$ und $y$ ungerade. Kontrapositiv: Wenn mindestens einer von $x,y$ gerade ist, dann ist $xy$ gerade. Das ist sofort, weil ein gerader Faktor ein gerades Produkt erzwingt.
 
-### Proof by contradiction
+### Beweis by contradiction
 
-Assume $P$ together with $\neg Q$, and derive something impossible. Then $P$ and $\neg Q$ cannot both hold, so $P \Rightarrow Q$.
+Nehmen Sie $P$ zusammen mit $\neg Q$ an und leiten Sie etwas Unmögliches ab. Dann können $P$ und $\neg Q$ nicht beide halten, also $P \Rightarrow Q$ .
 
-Assuming $-x^2 + 5x - 4 > 0$ and $x \le 0$ at once forces both $5x > x^2 + 4$ and $5x \le 0$, hence $0 > x^2 + 4$, which is absurd.
+Angenommen $-x^2 + 5x - 4 > 0$ und $x \le 0$ erzwingen gleichzeitig $5x > x^2 + 4$ und $5x \le 0$ , daher $0 > x^2 + 4$ , was absurd ist.
 
 ### Deductive versus inductive reasoning
 
-**Deductive** reasoning follows logical rules from premises to conclusions. Mathematical proofs are deductive.
+** Deduktive ** Argumentation folgt logischen Regeln von Prämissen zu Schlussfolgerungen. Mathematische Beweise sind deduktiv.
 
-**Inductive** reasoning in everyday science draws a general claim from observations: “the price level rose for each of the last $n$ years, so it will rise next year.” Useful empirically, never a mathematical proof. Measuring angles in a thousand triangles and always finding $180^\circ$ is strong evidence, not a proof for every triangle. A firm’s profits rising for twenty years does not prove they rise this year.
+**Induktives Denken in der alltäglichen Wissenschaft zieht eine allgemeine Behauptung aus Beobachtungen: "Das Preisniveau stieg für jedes der letzten Jahre, also wird es nächstes Jahr steigen." Empirisch nützlich, niemals ein mathematischer Beweis. Winkel in tausend Dreiecken zu messen und immer $180^\circ$ zu finden, ist ein starker Beweis, kein Beweis für jedes Dreieck. Die seit zwanzig Jahren steigenden Gewinne eines Unternehmens beweisen nicht, dass sie in diesem Jahr steigen.
 
 ### Mathematical induction
 
-**Mathematical induction** is a fully logical method for proving $P(n)$ for every natural number $n$. It is not the same as everyday inductive reasoning.
+**Mathematische Induktion** ist eine vollständig logische Methode zum Nachweis von $P(n)$ für jede natürliche Zahl $n$ . Es ist nicht dasselbe wie alltägliches induktives Denken.
 
-**THE PRINCIPLE OF MATHEMATICAL INDUCTION.** Suppose:
+** DAS GRUND DER MATHEMATISCHEN INDUKTION.** Angenommen:
 
-1. $P(1)$ is true (**base case**);
-2. for each natural $k$, if $P(k)$ is true then $P(k + 1)$ is true (**induction step**).
+1. $P(1)$ ist wahr (**base case**);
+2. für jedes natürliche $k$ , wenn $P(k)$ wahr ist, dann ist $P(k + 1)$ wahr (**Induktionsschritt**).
 
-Then $P(n)$ is true for every natural $n$.
+Dann ist $P(n)$ wahr für jedes natürliche $n$ .
 
-The assumption $P(k)$ inside the step is the **induction hypothesis**. Think of an infinite ladder: if you can climb the first rung, and from any rung you can always climb the next, you can reach every rung.
+Die Annahme $P(k)$ innerhalb des Schrittes ist die **Induktionshypothese**. Denken Sie an eine unendliche Leiter: Wenn Sie die erste Sprosse erklimmen können, und von jeder Sprosse aus können Sie immer die nächste erklimmen, können Sie jede Sprosse erreichen.
 
-**Example 3.** Sum of the first $n$ odd numbers:
+**Beispiel 3.** Summe der ersten $n$ ungerade Zahlen:
 
 $$
 P(n):\quad 1 + 3 + 5 + \cdots + (2n - 1) = n^2.
@@ -592,36 +592,36 @@ $$
 
 Base: $n = 1$ gives $1 = 1^2$.
 
-Step: assume $P(k)$, add the next odd number $2k + 1$:
+Schritt: Annehmen $P(k)$ , fügen Sie die nächste ungerade Zahl $2k + 1$ hinzu:
 
 $$
 1 + 3 + \cdots + (2k - 1) + (2k + 1) = k^2 + (2k + 1) = (k + 1)^2.
 $$
 
-That is $P(k + 1)$. By induction, $P(n)$ holds for all natural $n$.
+Das ist $P(k + 1)$ . Durch Induktion gilt $P(n)$ für alle natürlichen $n$ .
 
-**Example 4.** For every positive integer $n$,
+**Beispiel 4.** Für jede positive ganze Zahl $n$
 
 $$
 3 + 3^2 + \cdots + 3^n = \tfrac12\bigl(3^{n+1} - 3\bigr).
 $$
 
-Both sides equal $3$ when $n = 1$. If the formula holds for $n = k$, add $3^{k+1}$ and simplify to the formula for $n = k + 1$.
+Beide Seiten sind gleich $3$ wenn $n = 1$ . Wenn die Formel für $n = k$ gilt, fügen Sie $3^{k+1}$ hinzu und vereinfachen Sie die Formel für $n = k + 1$ .
 
-Checking $n = 1,2,3,4,5$ is evidence, not a proof. Without the general step from $k$ to $k + 1$, case $n = 6$ is still open. The principle extends to all $n \ge n_0$: verify $P(n_0)$, then show $P(k) \Rightarrow P(k + 1)$ for $k \ge n_0$.
+Das Überprüfen von $n = 1,2,3,4,5$ ist ein Beweis, kein Beweis. Ohne den allgemeinen Schritt von $k$ zu $k + 1$ ist der Fall $n = 6$ noch offen. Das Prinzip erstreckt sich auf alle $n \ge n_0$ : Überprüfen Sie $P(n_0)$ , dann zeigen Sie $P(k) \Rightarrow P(k + 1)$ für $k \ge n_0$ .
 
-A famous false “induction” claims that in any room of $n$ people, all have the same income. The base $n = 1$ is fine. The broken step pretends that overlapping groups of $n$ force a group of $n + 1$ to match, which fails already when going from $1$ to $2$. The moral: the inductive step must work for **every** $k$, including the awkward ones.
+Eine berühmte falsche "Induktion" behauptet, dass in jedem Raum von $n$ Menschen alle das gleiche Einkommen haben. Die Basis $n = 1$ ist in Ordnung. Der gebrochene Schritt gibt vor, dass überlappende Gruppen von $n$ eine Gruppe von $n + 1$ zwingen, zusammenzupassen, was bereits beim Übergang von $1$ zu $2$ fehlschlägt. Die Moral: Der induktive Schritt muss für jeden *** arbeiten $k$ , einschließlich der unangenehmen.
 
 ### Quantifiers
 
-| Symbol | Read as | True when |
-| --- | --- | --- |
-| $\forall x$ | for every $x$ | every object in the universe works |
-| $\exists x$ | there exists an $x$ | at least one object works |
+| Symbol | Lesen Sie als | Wahr, wenn
+| --- | ---
+| $\forall x$ | für jedes $x$ | jedes Objekt im Universum funktioniert |
+| $\exists x$ | es existiert ein $x$ | mindestens ein Objekt funktioniert |
 
-One counterexample kills $\forall$. One witness confirms $\exists$.
+One counterBeispiel kills $\forall$. One witness confirms $\exists$.
 
-Negation swaps the quantifier and negates the inner claim:
+Negation tauscht den Quantifikator aus und negiert die innere Behauptung:
 
 $$
 \neg\forall x\, P(x) \equiv \exists x\, \neg P(x),
@@ -631,113 +631,112 @@ $$
 \neg\exists x\, P(x) \equiv \forall x\, \neg P(x).
 $$
 
-For an implication inside a universal claim,
+Für eine Implikation innerhalb einer allgemeinen Behauptung,
 
 $$
 \neg\forall x\,(P(x) \Rightarrow Q(x)) \equiv \exists x\,(P(x) \land \neg Q(x)):
 $$
 
-an exception is a case where the “if” holds and the “then” fails.
+Eine Ausnahme ist ein Fall, in dem das "wenn" gilt und das "dann" fehlschlägt.
 
-**Example 5.** Over the reals: $\forall x\,(x^2 \ge 0)$ is true, so $\exists x\,(x^2 < 0)$ is false. $\exists x\,(x^2 = -1)$ is false in $\mathbb{R}$. The negation of $\exists x\,(x > 100)$ is $\forall x\,(x \le 100)$.
+**Beispiel 5.** Über den Realen: $\forall x\,(x^2 \ge 0)$ ist wahr, also $\exists x\,(x^2 < 0)$ ist falsch. $\exists x\,(x^2 = -1)$ ist falsch in $\mathbb{R}$ . Die Negation von $\exists x\,(x > 100)$ ist $\forall x\,(x \le 100)$ .
 
-**Example 6 (primes).** “Every prime $p > 2$ is odd” is true: an even integer above $2$ has at least three positive divisors. The number $2$ is not a counterexample, because it fails the domain $p > 2$. Correct negation: “there exists a prime $p > 2$ that is even.” The converse “every odd integer $> 2$ is prime” is false; $9$ is a counterexample.
+**Beispiel 6 (Primes).** "Jede Primzahl $p > 2$ ist ungerade" ist wahr: eine gerade ganze Zahl über $2$ hat mindestens drei positive Teiler. Die Zahl $2$ ist kein CounterBeispiel, weil sie die Domain $p > 2$ ausfällt. Richtige Negation: "Es gibt eine Primzahl $p > 2$ , die gerade ist." Die Umkehrung "jede ungerade ganze Zahl $> 2$ ist prim" ist falsch; $9$ ist ein Gegenspiel.
 
-**Example 7 (restricted domain).** Let $P = \{2,3,5,7,11,13\}$ and $E = \{2,4,6,8,10,12,14\}$. Then $P \cap E = \{2\}$ and $P \setminus E = \{3,5,7,11,13\}$. The claim “$\forall x \in P$, $x$ is odd” fails at $2$. The restricted claim “for every $x \in P$ with $x \ne 2$, $x$ is odd” holds. Subsethood $P \subseteq E$ fails at $3$.
+**Beispiel 7 (restricted domain).** Lasst $P = \{2,3,5,7,11,13\}$ und $E = \{2,4,6,8,10,12,14\}$ dann $P \cap E = \{2\}$ und $P \setminus E = \{3,5,7,11,13\}$ . Die Behauptung " $\forall x \in P$ , $x$ ist ungerade" schlägt bei $2$ fehl. Die eingeschränkte Behauptung „für jeden $x \in P$ mit $x \ne 2$ , $x$ ist ungerade gilt. Subsethood $P \subseteq E$ schlägt bei $3$ fehl.
 
 ### Quantifier order
 
-Who is chosen first changes the meaning.
+Wer zuerst gewählt wird, verändert die Bedeutung.
 
-**Example 8.** Over positive reals:
+**Beispiel 8.** Über positive Reals:
 
 $$
 \forall x > 0\ \exists y\ (y > x)
 $$
 
-is true: given $x$, take $y = x + 1$. Reversed,
+ist wahr: gegeben $x$ , nimm $y = x + 1$ . umgekehrt,
 
 $$
 \exists y\ \forall x > 0\ (y > x)
 $$
 
-is false: no single $y$ beats every positive number, because $x = y + 1$ defeats it.
+ist falsch: kein einzelnes $y$ schlägt jede positive Zahl, weil $x = y + 1$ sie besiegt.
 
-**Example 9 (exams).** Statement 1: “There exists a student who scored above 90 on every exam,” $\exists s\,\forall e\, G(s,e)$. Statement 2: “For every exam there exists a student who scored above 90,” $\forall e\,\exists s\, G(s,e)$.
+**Beispiel 9 (Prüfungen).** Aussage 1: "Es gibt einen Schüler, der bei jeder Prüfung über 90 Punkte erzielt hat", $\exists s\,\forall e\, G(s,e)$ . Aussage 2: "Für jede Prüfung gibt es einen Schüler, der über 90 Punkte erzielt hat", $\forall e\,\exists s\, G(s,e)$ .
 
-Statement 1 implies Statement 2: reuse the same strong student on every exam. The converse fails. Picture two exams and two students:
+Menge 1 impliziert Aussage 2: Wiederverwendung der gleichen starken Schüler bei jeder Prüfung. Das Gegenteil scheitert. Bild zwei Prüfungen und zwei Studenten:
 
-| | Exam 1 | Exam 2 |
-| --- | --- | --- |
-| Student X | above 90 | below 90 |
-| Student Y | below 90 | above 90 |
+Prüfung 1 | Prüfung 2
+| --- | ---
+Student X | über 90 | unter 90 |
+Student Y | unter 90 | über 90 |
 
-Every exam has a high scorer, so Statement 2 is true. Nobody clears both, so Statement 1 is false. With only one exam the two statements collapse to the same claim.
+Jede Prüfung hat einen Highscorer, also ist Aussage 2 wahr. Niemand klärt beides, also ist Menge 1 falsch. Mit nur einer Prüfung fallen die beiden Aussagen zu derselben Behauptung zusammen.
 
-**Example 10 (products).** “For every positive integer $m$ there exists a positive integer $n$ with $m \cdot n = 100$” is $\forall m\,\exists n:\ mn = 100$. At $m = 4$, take $n = 25$. At $m = 3$, $n = 100/3$ is not an integer, so the universal claim fails. Correct negation: $\exists m\,\forall n:\ mn \ne 100$, and $m = 3$ is a witness. Reversing to $\exists n\,\forall m:\ mn = 100$ asks for one $n$ serving every $m$, which is also false.
+**Beispiel 10 (Produkte).** "Für jede positive ganze Zahl $m$ existiert eine positive ganze Zahl $n$ mit $m \cdot n = 100$ " ist $\forall m\,\exists n:\ mn = 100$ . Bei $m = 4$ nehmen Sie $n = 25$ . Bei $m = 3$ ist $n = 100/3$ keine ganze Zahl, daher scheitert die universelle Behauptung. Korrekte Negation: $\exists m\,\forall n:\ mn \ne 100$ , und $m = 3$ ist ein Zeuge. Umkehren zu $\exists n\,\forall m:\ mn = 100$ fragt nach einem $n$ , der jedem $m$ dient, was ebenfalls falsch ist.
 
-### Validity of an argument
+### Gültigkeit eines Arguments
 
-An argument with premises $P_1,\ldots,P_n$ and conclusion $C$ is **valid** when it is impossible for all premises to be true while $C$ is false. Validity is about shape, not about whether the premises are true in the real world. A valid argument with true premises is called **sound**. Validity alone does not make the conclusion true in the world; it only forbids the pattern “premises true, conclusion false.”
+Ein Argument mit Prämissen $P_1,\ldots,P_n$ und Schlussfolgerung $C$ ist **gültig**, wenn es unmöglich ist, dass alle Prämissen wahr sind, während $C$ falsch ist. Bei der Gültigkeit geht es um Form, nicht darum, ob die Prämissen in der realen Welt wahr sind. Ein gültiges Argument mit wahrer Prämisse heißt **sound**. Gültigkeit allein macht die Schlussfolgerung nicht wahr in der Welt; es verbietet nur das Muster "premises wahr, Schlussfolgerung falsch."
 
-**Example 11 (economists).** Premises: all economists study human behaviour; some economists specialise in game theory. Conclusion: some game theorists study human behaviour.
+**Beispiel 11 (Ökonomen).** Prämissen: Alle Ökonomen studieren menschliches Verhalten; einige Ökonomen sind auf Spieltheorie spezialisiert. Fazit: Einige Spieltheoretiker studieren menschliches Verhalten.
 
-$$
+ $$
 \forall x\,(E(x) \Rightarrow H(x)), \qquad
 \exists x\,(E(x) \land G(x)), \qquad
 \text{therefore}\quad
 \exists x\,(G(x) \land H(x)).
 $$
 
-From the existential premise take a witness $a$ with $E(a)$ and $G(a)$. The universal premise gives $H(a)$. So $G(a) \land H(a)$. The conclusion follows in every situation where the premises hold: the argument is valid.
+Von der existentiellen Prämisse nehmen Sie einen Zeugen $a$ mit $E(a)$ und $G(a)$ . Die universelle Prämisse gibt $H(a)$ $G(a) \land H(a)$ . Die Schlussfolgerung folgt in jeder Situation, in der die Prämissen gelten: Das Argument ist gültig.
 
-Change the second premise to “no economists specialise in game theory.” Now picture a world with economists who all study behaviour and with nobody in game theory. Premises true, conclusion false: the modified argument is invalid.
+Ändern Sie die zweite Prämisse in "keine auf Spieltheorie spezialisierten Ökonomen". Jetzt stellen Sie sich eine Welt mit Ökonomen vor, die alle Verhalten studieren und mit niemandem in der Spieltheorie. Prämissen wahr, Schlussfolgerung falsch: Das modifizierte Argument ist ungültig.
 
-**Example 12 (theft clues).** Exactly one of Ann, Ben, Cara, Dan is guilty. Clues:
+**Beispiel 12 (Diebstahlhinweise).** Genau einer von Ann, Ben, Cara, Dan ist schuldig. Hinweise:
 
-1. If Ann is guilty, then Dan is innocent.
-2. If Ben is innocent, then Cara is innocent.
-3. Dan is guilty.
-4. If Cara is guilty, then Ann is guilty.
+1. Wenn Ann schuldig ist, ist Dan unschuldig.
+2. Wenn Ben unschuldig ist, dann ist Cara unschuldig.
+3. Dan ist schuldig.
+4. Wenn Cara schuldig ist, dann ist Ann schuldig.
 
-Clue (3) is a flat assertion, not an implication: Dan is guilty. With “exactly one guilty,” Ann, Ben and Cara are cleared at once. The conditional clues are then consistent but redundant for naming the guilty person. A clue with a false “if” part (Ann innocent makes clue (1) vacuous) adds no new information.
+Clue (3) ist eine flache Behauptung, keine Implikation: Dan ist schuldig. Mit "genau einem schuldigen" werden ann, ben und cara sofort freigelassen. Die bedingten Hinweise sind dann konsistent, aber überflüssig für die Benennung der schuldigen Person. Ein Hinweis mit einem falschen "wenn" -Teil (Ann innocent macht Hinweis (1) leer) fügt keine neuen Informationen hinzu.
 
-**Example 13 (truth-tellers and liars).** On an island, everyone always tells the truth or always lies. X says “Y always lies.” Y says “X and I are both liars.”
+**Beispiel 13 (Wahrheitserzähler und Lügner).** Auf einer Insel sagt jeder immer die Wahrheit oder lügt immer. X sagt: "Sie lügen immer." Y sagt: "X und ich sind beide Lügner."
 
-Case X liar: then Y would be a truth-teller, so Y’s sentence would be true, forcing Y to be a liar. Contradiction. Case X truth-teller: then Y is a liar, and Y’s conjunction “both liars” is false because X is not a liar. Consistent. So X tells the truth and Y lies. The method is proof by cases plus contradiction on the impossible case.
+Fall x lügner: dann wäre y ein wahrheitserzähler, also wäre ys satz wahr und zwingt y, ein lügner zu sein. Widerspruch. Fall X Wahrheitserzähler: dann ist Y ein Lügner, und Ys Konjunktion "beide Lügner" ist falsch, weil X kein Lügner ist. Konsequent. X sagt die Wahrheit und Y lügt. Die Methode ist Beweis durch Fälle plus Widerspruch auf dem unmöglichen Fall.
 
 ### Putting a deduction together
 
-1. Rewrite each sentence as $\Rightarrow$, $\Leftrightarrow$, $\land$, $\lor$, $\forall$, or $\exists$.
-2. Separate “only if” (necessary) from “if / whenever” (sufficient) and from “if and only if” (both ways).
-3. Use the contrapositive when a failure is easier to handle than a success.
-4. For nested quantifiers, ask who moves first, and whether later choices may depend on earlier ones.
-5. To show invalidity, exhibit one concrete situation where the premises hold and the conclusion fails.
-6. After a chain of one-way implications in algebra, check candidates in the original statement.
+1. Schreibe jeden Menge als $\Rightarrow$ , $\Leftrightarrow$ , $\land$ , $\lor$ , $\forall$ oder $\exists$ um.
+2. Trennen Sie "nur wenn" (notwendig) von "wenn / wann immer" (ausreichend) und von "wenn und nur wenn" (beide Wege).
+3. Verwenden Sie das Kontrapositiv, wenn ein Misserfolg leichter zu handhaben ist als ein Erfolg.
+4. Fragen Sie bei verschachtelten Quantifikatoren, wer sich zuerst bewegt und ob spätere Entscheidungen von früheren abhängen können.
+5. Um Ungültigkeit nachzuweisen, ist eine konkrete Situation anzugeben, in der die Prämissen gelten und die Schlussfolgerung fehlschlägt.
+6. Nach einer Kette von einseitigen Implikationen in der Algebra, überprüfen Sie die Kandidaten in der ursprünglichen Aussage.
 
 ---
 
-## Summary reference
+## Zusammenfassung reference
 
-| Task | Method |
-| --- | --- |
-| Define a set | List members, or use $\{\text{object} : \text{property}\}$ |
-| Test $A = B$ | Check both $A \subseteq B$ and $B \subseteq A$ |
-| Tell $\in$ from $\subseteq$ | Element listed in the set vs every member of a collection sits in the set |
-| Count subsets of an $n$-element set | $2^n$ |
-| Form $A \cup B$, $A \cap B$, $A \setminus B$ | or / and / in $A$ but not $B$ |
-| Take a complement | Relative to a stated universe $U$ |
-| Use De Morgan | Complement turns $\cup$ into $\cap$ and $\cap$ into $\cup$ |
-| Count a union of two finite sets | $n(A \cup B) = n(A) + n(B) - n(A \cap B)$ |
-| Read $P \Rightarrow Q$ | If $P$ then $Q$; fails only when $P$ true and $Q$ false |
-| Form converse / inverse / contrapositive | $Q \Rightarrow P$ / $\neg P \Rightarrow \neg Q$ / $\neg Q \Rightarrow \neg P$; only the last matches the original |
-| Read necessary vs sufficient | “only if” → necessary; “if / whenever” → sufficient; “iff” → both |
-| Negate an implication | $P \land \neg Q$, not another implication |
-| Confirm a candidate solution | Substitute into the original equation or statement |
-| Negate $\forall$ / $\exists$ | Swap the quantifier and negate the inner claim |
-| Compare $\forall\exists$ with $\exists\forall$ | Later variables may / may not depend on earlier ones |
-| Prove $P(n)$ for all $n$ | Base case $P(1)$, then $P(k) \Rightarrow P(k + 1)$ for every $k$ |
-| Test validity | Ask whether premises can be true while the conclusion is false |
+.
+| --- | ---
+| Definieren Sie eine Menge | Listenelemente oder verwenden Sie $\{\text{object} : \text{property}\}$ |
+| Test $A = B$ | Überprüfen Sie sowohl $A \subseteq B$ als auch $B \subseteq A$ |
+| Tell $\in$ from $\subseteq$ | Element aufgeführt in der Menge vs jedes Element einer Sammlung sitzt in der Menge |
+| Zähle Teilmengen einer $n$ -Elementmenge | $2^n$ |
+| Form $A \cup B$ , $A \cap B$ , $A \setminus B$ | oder / und / in $A$ aber nicht $B$ |
+| Nehmen Sie eine Ergänzung | Relativ zu einem angegebenen Universum $U$ |
+| Verwende De Morgan | Komplement verwandelt sich $\cup$ in $\cap$ und $\cap$ in $\cup$ | Zählen Sie eine Vereinigung von zwei endlichen Mengen | $n(A \cup B) = n(A) + n(B) - n(A \cap B)$ |
+| Lesen Sie $P \Rightarrow Q$ | Wenn $P$ dann $Q$ ; scheitert nur, wenn $P$ wahr und $Q$ falsch |
+| Form converse / inverse / contrapositive | $Q \Rightarrow P$ / $\neg P \Rightarrow \neg Q$ / $\neg Q \Rightarrow \neg P$ ; nur der letzte passt zum Original |
+| Read necessary vs sufficient | “nur wenn” → necessary; “wenn / wann immer” → sufficient; “iff” → both |
+| Verneinen Sie eine Implikation | $P \land \neg Q$ , keine weitere Implikation |
+| Bestätigen Sie eine Kandidatenlösung | Setze sie in die ursprüngliche Gleichung oder Aussage |
+| Negate $\forall$ / $\exists$ | Tauschen Sie den Quantifikator und negieren Sie die innere Behauptung |
+| Vergleichen Sie $\forall\exists$ mit $\exists\forall$ | Spätere Variablen können / dürfen nicht von früheren abhängen |
+| Beweisen Sie $P(n)$ für alle $n$ | Basisfall $P(1)$ , dann $P(k) \Rightarrow P(k + 1)$ für jeden $k$ |
+| Testvalidität | Fragen Sie, ob Prämissen wahr sein können, während die Schlussfolgerung falsch ist |
 
 Key formulas:
 
@@ -762,6 +761,6 @@ $$
 \neg\exists x\, P(x) \equiv \forall x\, \neg P(x).
 $$
 
-**Working order on an exam statement.** Name the universe and rewrite the claim in symbols. For sets, compute or shade the relevant regions before comparing. For implications, decide which arrow is claimed and test the converse separately. For quantifiers, fix the order and try a witness or a counterexample. For induction, write the base case and the exact inductive step, not a handful of numerical checks.
+**Arbeitsauftrag für eine Prüfung Aussage.** Benennen Sie das Universum und schreiben Sie die Behauptung in Symbole um. Für Mengen berechnen oder schattieren Sie die relevanten Regionen vor dem Vergleich. Entscheiden Sie für Implikationen, welcher Pfeil beansprucht wird, und testen Sie das Gegenteil separat. Für Quantifikatoren, fixieren Sie die Reihenfolge und versuchen Sie einen Zeugen oder ein CounterBeispiel. Schreiben Sie für die Induktion den Basisfall und den genauen induktiven Schritt, nicht eine Handvoll numerischer Prüfungen.
 
-**Self-check.** When are two sets equal? Why is $\emptyset \subseteq A$ always true while $\emptyset \in A$ usually false? What does inclusive “or” allow that exclusive “or” would forbid? How do you read “$P$ only if $Q$” as an arrow? Why does a one-way implication after squaring force you to check solutions? How do you negate “for every prime $p > 2$, $p$ is odd”? Why does $\forall x\,\exists y$ not mean the same as $\exists y\,\forall x$? What two ingredients make a proof by induction complete? What single picture shows that an argument is invalid?
+**Selbstkontrolle.** Wann sind zwei Mengen gleich? Warum ist $\emptyset \subseteq A$ immer wahr, während $\emptyset \in A$ normalerweise falsch ist? Was erlaubt das inklusive "oder", das das exklusive "oder" verbieten würde? Wie lesen Sie " $P$ nur wenn $Q$ " als Pfeil? Warum zwingt Sie eine einseitige Implikation nach dem Quadratieren, Lösungen zu überprüfen? Wie negiert man "für jede Primzahl $p > 2$ , $p$ ist ungerade"? Warum bedeutet $\forall x\,\exists y$ nicht dasselbe wie $\exists y\,\forall x$ ? Welche zwei Zutaten machen einen Beweis durch Induktion vollständig? Welches einzelne Bild zeigt, dass ein Argument ungültig ist?

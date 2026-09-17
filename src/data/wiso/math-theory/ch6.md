@@ -1,64 +1,64 @@
-# Chapter 6 — Inequalities
+# Kapitel 6 — Ungleichungen
 
-Inequalities on the BBE exam are almost always true/false claims about solution sets. One short stem introduces a situation, then five independent statements each claim a specific solution set or property. Your job is to mark each statement true or false on its own.
+Ungleichungen auf der BBE Prüfung sind fast immer wahr/falsch Behauptungen über Lösung Mengen. Ein kurzer Stamm führt eine Situation ein, dann fünf unabhängige Aussagen jede Behauptung eine bestimmte Lösung Menge oder Eigentum. Ihre Aufgabe ist es, jede Aussage wahr oder falsch für sich zu markieren.
 
-This chapter is a type-by-type teaching guide for every inequality format used in the practice sets. It covers recognition, a repeatable method for each type, fully worked examples, the traps that catch students most often, a fast plug-in check for boundaries, and a one-page cheat sheet at the end.
+Dieses Kapitel ist ein Typ-für-Typ-Lehrleitfaden für jedes Ungleichheitsformat, das in der Praxis verwendet wird Mengen. Es umfasst die Erkennung, eine wiederholbare Methode für jeden Typ, vollständig Ausgearbeitete Beispiele, die Fallen, die Schüler am häufigsten fangen, eine schnelle Plug-in-Prüfung für Grenzen und ein einseitiges Spickzettel am Ende.
 
-## Learning objectives
+## Lernziele
 
-- Recognise each of the six inequality types that appear on the exam.
-- Apply a repeatable, step-by-step method for every type.
-- Build sign charts and use the wavy-curve shortcut correctly.
-- Handle absolute values, radicals, compound inequalities and word problems without dropping endpoints.
-- Know which values are always excluded (denominator zeros, domain restrictions).
-- Use a quick numeric check to confirm or kill a claimed statement under time pressure.
-- Avoid the traps that account for most wrong answers.
-
----
-
-## 6.1 How the BBE true/false inequality question works
-
-Every inequality question on the exam follows the same shape: one short stem (often “Evaluate inequality solution sets”) followed by five independent statements, labeled A–E. Each statement claims a specific solution set or property for a specific inequality. Mark each statement TRUE or FALSE independently. There is no partial-credit logic linking the five statements to each other. A question with five TRUE statements is just as valid as one with five FALSE statements.
-
-Across the practice sets, every statement falls into one of six recurring types. Once you can identify which type you are looking at, the method to solve it is always the same. Only the numbers change. That is the real skill being tested: fast, reliable type recognition, followed by a clean, repeatable procedure.
-
-### The six types at a glance
-
-| Type | Recognise it by | Core tool |
-| --- | --- | --- |
-| Rational | A fraction of linear/quadratic factors, e.g. $\dfrac{x-3}{x+2}\le 0$ | Critical points + sign chart |
-| Quadratic sign | A single quadratic compared to $0$, e.g. $x^2-x-6\ge 0$ | Factoring or discriminant test |
-| Compound (double) | Two inequality signs around one quadratic, e.g. $-1\le x^2-4x\le 5$ | Split into two, solve, intersect |
-| Absolute value | One or more absolute-value bars | Case split or square both sides |
-| Radical | A square root $\sqrt{\,\cdot\,}$ | Domain first, then isolate and square |
-| Linear word problem | A real-world setup (bills, temperature, loans) | Translate to an inequality, solve, check sign flips |
-
-There is also a fast plug-in technique for confirming or killing a statement under time pressure. It is covered in full in section 6.10. Read it once and you can use it across every type below.
+Erkennen Sie jeden der sechs Ungleichheitstypen, die in der Prüfung erscheinen.
+- Wenden Sie eine wiederholbare, schrittweise Methode für jeden Typ an.
+- Erstellen Sie Zeichendiagramme und verwenden Sie die Abkürzung für Wellenkurven korrekt.
+- Behandeln Sie absolute Werte, Radikale, zusammengesetzte Ungleichungen und Wortprobleme, ohne Endpunkte zu verlieren.
+- Wissen, welche Werte immer ausgeschlossen sind (Nenner Nullen, Domänenbeschränkungen).
+- Verwenden Sie eine schnelle numerische Prüfung, um eine behauptete Aussage unter Zeitdruck zu bestätigen oder zu töten.
+Vermeiden Sie die Fallen, die für die meisten falschen Antworten verantwortlich sind.
 
 ---
 
-## 6.2 Rational inequalities (sign charts)
+## 6.1 Wie funktioniert die Frage der BBE wahr/falsch Ungleichheit
 
-A rational inequality compares a fraction of factored expressions to zero, such as
+Jede Ungleichheitsfrage in der Prüfung folgt der gleichen Form: ein kurzer Stamm (oft „Ungleichheitslösungsmengen bewerten), gefolgt von fünf unabhängigen Aussagen mit der Bezeichnung A–E. Jede Aussage behauptet eine bestimmte Lösungsmenge oder Eigenschaft für eine bestimmte Ungleichheit. Markieren Sie jede Aussage unabhängig voneinander WAHR oder FALSCH. Es gibt keine Teilkreditlogik, die die fünf Aussagen miteinander verknüpft. Eine Frage mit fünf WAHREN Aussagen ist genauso gültig wie eine mit fünf FALSCHEN Aussagen.
 
-$$
+In der Praxis fällt jede Aussage in einen von sechs wiederkehrenden Typen. Sobald Sie erkennen können, welchen Typ Sie betrachten, ist die Methode, um es zu lösen, immer die gleiche. Nur die Zahlen ändern sich. Das ist die wahre Fertigkeit, die getestet wird: schnelle, zuverlässige Typerkennung, gefolgt von einem sauberen, wiederholbaren Verfahren.
+
+### Die sechs Typen auf einen Blick
+
+| Typ | Erkenne es von | Core Tool |
+| --- | ---
+| Rational | Ein Bruchteil von linearen / quadratischen Faktoren, z. B. $\dfrac{x-3}{x+2}\le 0$ | Kritische Punkte + Zeichendiagramm |
+| Quadratisches Zeichen | Ein einzelnes quadratisches im Vergleich zu $0$ , z.B. $x^2-x-6\ge 0$ | Factoring oder Diskriminanztest |
+Verbindung (doppelt) Zwei Ungleichheitszeichen um ein Quadrat, z.B. $-1\le x^2-4x\le 5$ | In zwei Teile geteilt, auflösen, schneiden |
+| Absoluter Wert | Ein oder mehrere Absolutwertbalken | Case Split oder Quadrat beider Seiten |
+| Radikal | Eine quadratische Wurzel $\sqrt{\,\cdot\,}$ | Domain zuerst, dann isolieren und quadrat |
+| Lineares Wortproblem | Ein Setup in der realen Welt (Rechnungen, Temperatur, Kredite) | Übersetzen in eine Ungleichheit, Lösen, Kontrollzeichen kippen |
+
+Es gibt auch eine schnelle Plug-in-Technik, um eine Aussage unter Zeitdruck zu bestätigen oder zu töten. Sie wird in Abschnitt 6.10 vollständig behandelt. Lesen Sie es einmal und Sie können es für jeden Typ unten verwenden.
+
+---
+
+## 6.2 Rational Ungleichungen (sign charts)
+
+Eine rationale Ungleichheit vergleicht einen Bruchteil von faktorisierten Ausdrücken mit Null, wie z.B.
+
+ $$
 \frac{x-3}{x+2}\le 0
 \quad\text{or}\quad
 \frac{x^2-9}{x^2-16}\le 0.
 $$
 
-These can have two, three, or even four critical points, but the method never changes.
+Diese können zwei, drei oder sogar vier kritische Punkte haben, aber die Methode ändert sich nie.
 
 ### Step-by-step method
 
-1. Factor the numerator and denominator completely.
-2. Find every critical point: values that make the numerator zero, and values that make the denominator zero. Mark the denominator’s zeros as always excluded. Division by zero is never allowed, no matter what the inequality symbol is.
-3. Plot the critical points on a number line. They split the line into regions.
-4. Test one number from each region in the factored expression to find its sign ($+$ or $-$). Do this for every region. Do not assume the pattern simply alternates, especially with three or more critical points.
-5. Keep the regions matching the inequality: positive regions for $>$ or $\ge$, negative regions for $<$ or $\le$.
-6. Decide the endpoints: a point where the numerator is zero is included if the inequality is $\le$ or $\ge$ (non-strict), and excluded if it is $<$ or $>$ (strict). A point where the denominator is zero is always excluded, regardless of the symbol.
+1. Den Zähler und Nenner vollständig faktorisieren.
+2. Finde jeden kritischen Punkt: Werte, die den Zähler Null machen, und Werte, die den Nenner Null machen. Markieren Sie die Nullen des Nenners wie immer ausgeschlossen. Division durch Null ist niemals erlaubt, egal was das Ungleichheitssymbol ist.
+3. Zeichne die kritischen Punkte auf einen Zahlenstrahl. Sie teilen die Linie in Regionen auf.
+4. Testen Sie eine Zahl aus jeder Region im faktorisierten Ausdruck, um ihr Vorzeichen zu finden ( $+$ oder $-$ ). Tun Sie dies für jede Region. Gehen Sie nicht davon aus, dass sich das Muster einfach abwechselt, insbesondere mit drei oder mehr kritischen Punkten.
+5. Halten Sie die Regionen mit der Ungleichheit übereinstimmen: positive Regionen für $>$ oder $\ge$ , negative Regionen für $<$ oder $\le$ .
+6. Entscheiden Sie die Endpunkte: Ein Punkt, an dem der Zähler Null ist, ist enthalten, wenn die Ungleichheit $\le$ oder $\ge$ (nicht-streng) ist, und ausgeschlossen, wenn es $<$ oder $>$ (streng) ist. Ein Punkt, bei dem der Nenner Null ist, ist unabhängig vom Symbol immer ausgeschlossen.
 
-**Example 1.** Solve $\dfrac{x-3}{x+2}\le 0$.
+**Beispiel 1.** Löse $\dfrac{x-3}{x+2}\le 0$ .
 
 Critical points: numerator zero at $x=3$; denominator zero at $x=-2$ (always excluded).
 
@@ -68,13 +68,13 @@ Critical points: numerator zero at $x=3$; denominator zero at $x=-2$ (always exc
 | $(-2,3)$ | $-$ |
 | $(3,\infty)$ | $+$ |
 
-The inequality asks for $\le 0$, so keep the negative region and include $x=3$ (numerator zero, and the symbol is non-strict), but never $x=-2$.
+Die Ungleichung fragt nach $\le 0$ , also behalte die negative Region bei und schließe $x=3$ ein (Zähler Null und das Symbol ist nicht streng), aber niemals $x=-2$ .
 
-Solution: $(-2,3]$, equivalently $-2 < x \le 3$.
+Lösung: $(-2,3]$, equivalently $-2 < x \le 3$.
 
-**Example 2.** Solve $\dfrac{x^2-9}{x^2-16}\le 0$.
+**Beispiel 2.** Löse $\dfrac{x^2-9}{x^2-16}\le 0$ .
 
-Numerator zero at $x=\pm 3$; denominator zero at $x=\pm 4$ (excluded). Four critical points means five regions to test.
+Zähler Null bei $x=\pm 3$ ; Nenner Null bei $x=\pm 4$ (ausgenommen). Vier kritische Punkte bedeuten, dass fünf Regionen getestet werden müssen.
 
 | Interval | Sign |
 | --- | --- |
@@ -84,234 +84,234 @@ Numerator zero at $x=\pm 3$; denominator zero at $x=\pm 4$ (excluded). Four crit
 | $(3,4)$ | $-$ |
 | $(4,\infty)$ | $+$ |
 
-Keep the negative regions, plus $x=\pm 3$ (numerator zero), but never $x=\pm 4$.
+Behalten Sie die negativen Regionen plus $x=\pm 3$ (Zähler Null), aber niemals $x=\pm 4$ .
 
-Solution: $(-4,-3]\cup[3,4)$.
+Lösung: $(-4,-3]\cup[3,4)$.
 
-[[NOTE:Common trap|The number of critical points tells you how many regions to check, not a shortcut to guess the pattern. With four critical points you get five regions. Skip testing even one of them and you can easily flip a sign by mistake. Always test a real number in every single region.]]
+ [[NOTE:Common trap|The number of critical points tells you how many regions to check, not a shortcut to guess the pattern. With four critical points you get five regions. Skip testing even one of them and you can easily flip a sign by mistake. Always test a real number in every single region.]]
 
 ---
 
-## 6.3 The wavy curve rule
+## 6.3 Die wellige Kurvenregel
 
-Testing a number in every single region always works, but it is slow, and slow costs marks under exam pressure. There is a faster rule, sometimes called the wavy curve method or method of intervals, that lets you test one region and derive every other region’s sign from it.
+Das Testen einer Zahl in jeder einzelnen Region funktioniert immer, aber es ist langsam, und langsame Kostenmarken unter Prüfungsdruck. Es gibt eine schnellere Regel, die manchmal als Wellenkurvenmethode oder Intervallmethode bezeichnet wird und mit der Sie eine Region testen und das Zeichen jeder anderen Region ableiten können.
 
-### Steps to use the rule
+### Schritte zur Anwendung der Regel
 
-1. Set to zero: move every term to one side so the inequality compares the expression to $0$ (using $>$, $<$, $\le$, or $\ge$).
-2. Find critical points: factor the numerator and denominator completely, then set each factor equal to zero to find every root and every excluded (undefined) point.
-3. Plot on a number line: place the critical points in order. They split the line into open intervals.
-4. Test the rightmost interval only: pick any number larger than every critical point and check the sign there.
-5. Sweep leftward, alternating: starting from that known sign, imagine a continuous wavy curve threading through the critical points, swinging above the line for $+$ and below it for $-$. Each time the curve crosses a critical point, the sign flips, as long as that point comes from a factor raised to an odd power (most commonly a simple, non-repeated factor).
+1. Menge zu Null: Bewegen Sie jeden Term zur Seite, so dass die Ungleichheit den Ausdruck mit $0$ vergleicht (mit $>$ , $<$ , $\le$ oder $\ge$ ).
+2. Finden Sie kritische Punkte: Faktor den Zähler und Nenner vollständig, dann Menge jeden Faktor gleich Null, um jede Wurzel und jeden ausgeschlossenen (undefinierten) Punkt zu finden.
+3. Zeichnen Sie auf einen Zahlenstrahl: Stellen Sie die kritischen Punkte in Ordnung. Sie teilen die Linie in offene Intervalle.
+4. Testen Sie nur das rechteste Intervall: Wählen Sie eine beliebige Zahl, die größer als jeder kritische Punkt ist, und überprüfen Sie das Zeichen dort.
+5. Sweep nach links, abwechselnd: ausgehend von diesem bekannten Zeichen, stellen Sie sich eine kontinuierliche wellige Kurve vor, die durch die kritischen Punkte führt und über der Linie für $+$ und darunter für $-$ schwingt. Jedes Mal, wenn die Kurve einen kritischen Punkt kreuzt, dreht sich das Vorzeichen, solange dieser Punkt von einem Faktor kommt, der zu einer ungeraden Potenz erhöht wurde (am häufigsten ein einfacher, nicht wiederholter Faktor).
 
-[[FIGURE:ineq-wavy-general|The wavy curve threads through each root, alternating above (+) and below (−) the axis. This is exactly the shape the rule produces when every factor is a simple, odd-power factor.]]
+ [[FIGURE:ineq-wavy-general|The wavy curve threads through each root, alternating above (+) and below (−) the axis. This is exactly the shape the rule produces when every factor is a simple, odd-power factor.]]
 
-Applied to the four-critical-point example $\dfrac{x^2-9}{x^2-16}\le 0$: instead of testing all five regions individually, test only the rightmost one ($x>4$, which gives $+$), then let the curve alternate leftward across each root in turn.
+Angewandt auf das Vier-Kritische-Punkte-Beispiel $\dfrac{x^2-9}{x^2-16}\le 0$ : anstatt alle fünf Regionen einzeln zu testen, testen Sie nur die rechte ( $x>4$ , was $+$ ergibt), dann lassen Sie die Kurve nach links über jede Wurzel wechseln.
 
-[[FIGURE:ineq-wavy-four-roots|Test $x>4$ once (positive), then alternate leftward across $x=4$, $x=3$, $x=-3$, and $x=-4$. The two denominator roots (open circles) still flip the sign like any simple factor; they are just never allowed in the final answer.]]
+ [[FIGURE:ineq-wavy-four-roots|Test $x>4$ once (positive), then alternate leftward across $x=4$, $x=3$, $x=-3$, and $x=-4$. The two denominator roots (open circles) still flip the sign like any simple factor; they are just never allowed in the final answer.]]
 
-One test instead of five, and the result matches the sign chart built earlier by direct testing. The rule is a shortcut, not a different answer.
+Ein Test statt fünf, und das Ergebnis stimmt mit dem Zeichendiagramm überein, das zuvor durch direkte Tests erstellt wurde. Die Regel ist eine Abkürzung, keine andere Antwort.
 
-### Important exception 1: even powers do not flip the sign
+### Wichtige Ausnahme 1: Auch Mächte drehen das Zeichen nicht um
 
-If a factor is raised to an even power, such as $(x-1)^2$, or appears inside an absolute value, the curve touches the axis at that root but bounces back to the same side instead of crossing through. The sign does not change there.
+Wenn ein Faktor auf eine gerade Potenz angehoben wird, z. B. $(x-1)^2$ , oder innerhalb eines absoluten Wertes erscheint, berührt die Kurve die Achse an dieser Wurzel, springt aber auf die gleiche Seite zurück, anstatt durchzuqueren. Das Zeichen ändert sich dort nicht.
 
-[[FIGURE:ineq-wavy-even-power|Solving $\dfrac{(x-1)^2(x+3)}{x-2}\ge 0$: the curve crosses normally at $x=-3$ and at $x=2$ (both simple factors), but merely touches and bounces at $x=1$, because $(x-1)^2$ is an even-power factor. Both sides of $x=1$ stay negative.]]
+ [[FIGURE:ineq-wavy-even-power|Solving $\dfrac{(x-1)^2(x+3)}{x-2}\ge 0$: the curve crosses normally at $x=-3$ and at $x=2$ (both simple factors), but merely touches and bounces at $x=1$, because $(x-1)^2$ is an even-power factor. Both sides of $x=1$ stay negative.]]
 
-This has a subtle consequence worth remembering. At $x=1$ the expression equals exactly $0$, and $0$ satisfies $\ge 0$, so $x=1$ is a valid, isolated solution even though it sits inside an otherwise negative region. The full solution set here is
+Dies hat eine subtile Konsequenz, die es wert ist, erinnert zu werden. Bei $x=1$ ist der Ausdruck genau gleich $0$ , und $0$ befriedigt $\ge 0$ , so dass $x=1$ eine gültige, isolierte Lösung ist, obwohl sie sich in einer ansonsten negativen Region befindet. Die volle Lösungsmenge ist hier
 
 $$
 (-\infty,-3]\cup\{1\}\cup(2,\infty).
 $$
 
-The point $x=1$ has to be added back in on its own, separate from the interval notation around it.
+Der Punkt $x=1$ muss von selbst wieder hinzugefügt werden, getrennt von der Intervallnotation um ihn herum.
 
-[[NOTE:Common trap|It is tempting to assume the sign simply alternates at every critical point without checking each factor’s power. An even-power factor (or an absolute value) is the one case where the curve bounces instead of crossing. Always check the power of each factor before assuming the next region flips sign.]]
+ [[NOTE:Common trap|It is tempting to assume the sign simply alternates at every critical point without checking each factor’s power. An even-power factor (or an absolute value) is the one case where the curve bounces instead of crossing. Always check the power of each factor before assuming the next region flips sign.]]
 
-### Important exception 2: denominator zeros are always excluded
+### Wichtige Ausnahme 2: Nenner Nullen sind immer ausgeschlossen
 
-A critical point coming from the denominator still behaves normally for sign purposes. The curve crosses or bounces there exactly like any other root, following the same odd/even rule above. But regardless of how the sign behaves, and regardless of whether the inequality is strict or not ($<$, $>$, $\le$, or $\ge$), a value that makes the denominator zero can never appear in the final answer. Division by zero is undefined. The inequality symbol never overrides that.
+Ein kritischer Punkt, der vom Nenner kommt, verhält sich immer noch normal für Zeichenzwecke. Die Kurve kreuzt oder springt dort genau wie jede andere Wurzel, nach der gleichen ungeraden / geraden Regel oben. Aber unabhängig davon, wie sich das Zeichen verhält und unabhängig davon, ob die Ungleichheit streng ist oder nicht ( $<$ , $>$ , $\le$ , oder $\ge$ ), kann ein Wert, der den Nenner Null macht, niemals in der endgültigen Antwort erscheinen. Division durch Null ist undefiniert. Das Ungleichheitssymbol überschreibt das nie.
 
-[[NOTE:Common trap|It is easy to treat a denominator zero exactly like a numerator zero once the sign chart is built, including it in the answer whenever the symbol is ≤ or ≥. A denominator zero is excluded unconditionally, even when every other rule would seem to include it.]]
+ [[NOTE:Common trap|It is easy to treat a denominator zero exactly like a numerator zero once the sign chart is built, including it in the answer whenever the symbol is ≤ or ≥. A denominator zero is excluded unconditionally, even when every other rule would seem to include it.]]
 
 ---
 
-## 6.4 Quadratic sign inequalities
+## 6.4 Quadratic sign Ungleichungen
 
-These compare a single quadratic expression to zero, such as $x^2-x-6\ge 0$ or $x^2-6x+9\ge 0$. There are two flavours you will meet: a quadratic that factors into two distinct roots, and a special case, the perfect square, that only has one repeated root. A third flavour never factors at all, and that is where the discriminant comes in.
+Diese vergleichen einen einzelnen quadratischen Ausdruck mit Null, wie $x^2-x-6\ge 0$ oder $x^2-6x+9\ge 0$ . Es gibt zwei Geschmacksrichtungen, denen Sie begegnen werden: eine Quadratik, die in zwei verschiedene Wurzeln einfließt, und einen Sonderfall, das perfekte Quadrat, das nur eine wiederholte Wurzel hat. Ein drittes geschmacksmuster hat überhaupt keine faktoren, und das ist, wo der diskriminant kommt.
 
-### Method A: two distinct roots
+### Methode A: zwei verschiedene Wurzeln
 
-1. Factor the quadratic into two linear factors, e.g. $x^2-x-6=(x-3)(x+2)$.
-2. The roots split the number line into three regions. Because the leading coefficient is positive (opens upward), the expression is positive outside the roots and negative between them.
-3. Match the sign to the inequality symbol, including endpoints for $\le/\ge$ and excluding them for $</>$.
+1. Faktor die quadratische in zwei lineare Faktoren, z. B. $x^2-x-6=(x-3)(x+2)$ .
+2. Die Wurzeln teilen den Zahlenstrahl in drei Regionen. Da der führende Koeffizient positiv ist (öffnet sich nach oben), ist der Ausdruck außerhalb der Wurzeln positiv und zwischen ihnen negativ.
+3. Passen Sie das Zeichen dem Ungleichheitssymbol an, einschließlich der Endpunkte für $\le/\ge$ und schließen Sie sie für $</>$ aus.
 
-**Example 1.** Solve $x^2-x-6\ge 0$.
+**Beispiel 1.** Löse $x^2-x-6\ge 0$ .
 
-Factor: $(x-3)(x+2)$. Roots at $x=-2$ and $x=3$.
+Faktor: $(x-3)(x+2)$ . Wurzeln bei $x=-2$ und $x=3$ .
 
-Positive outside the roots (upward-opening parabola), so the solution is $x\le -2$ or $x\ge 3$. Both branches, including the roots since the symbol is $\ge$.
+Positiv außerhalb der Wurzeln (nach oben öffnendes Parabel), so ist die Lösung $x\le -2$ oder $x\ge 3$ . Beide Zweige, einschließlich der Wurzeln, da das Symbol $\ge$ ist.
 
-[[NOTE:Common trap|A quadratic that is non-negative “outside its roots” always produces two separate branches. It is tempting to report only the branch that feels more intuitive (for example only the larger values) and quietly drop the other one. Also: the sign of the expression is not the same thing as the sign of x. An expression being ≤ 0 does not tell you that x itself is negative.]]
+ [[NOTE:Common trap|A quadratic that is non-negative “outside its roots” always produces two separate branches. It is tempting to report only the branch that feels more intuitive (for example only the larger values) and quietly drop the other one. Also: the sign of the expression is not the same thing as the sign of x. An expression being ≤ 0 does not tell you that x itself is negative.]]
 
 ### Method B: perfect squares (one repeated root)
 
-An expression like $x^2-6x+9$ factors as $(x-3)^2$. A square is never negative, so $(x-3)^2\ge 0$ is true for every real number. Equality (the square equal to exactly zero) happens only at the single repeated root, $x=3$. It does not also happen at $x=-3$, even though that might look tempting by symmetry.
+Ein Ausdruck wie $x^2-6x+9$ Faktoren als $(x-3)^2$ . Ein Quadrat ist nie negativ, also ist $(x-3)^2\ge 0$ wahr für jede reelle Zahl. Gleichheit (das Quadrat gleich genau Null) geschieht nur bei der einzelnen wiederholten Wurzel, $x=3$ . Es passiert nicht auch bei $x=-3$ , auch wenn das durch Symmetrie verlockend aussehen könnte.
 
-[[NOTE:Common trap|It is easy to assume a perfect square has two symmetric roots like a general quadratic (a and −a). A perfect square (x − a)² has exactly one repeated root at x=a, nowhere else.]]
+ [[NOTE:Common trap|It is easy to assume a perfect square has two symmetric roots like a general quadratic (a and −a). A perfect square (x − a)² has exactly one repeated root at x=a, nowhere else.]]
 
 ### Method C: no real roots (discriminant test)
 
-When a quadratic will not factor nicely, compute the discriminant $b^2-4ac$.
+Wenn ein Quadrat nicht gut faktorisiert, berechnen Sie die Diskriminante $b^2-4ac$ .
 
-- If the discriminant is negative, the parabola never touches the $x$-axis at all.
-- If the leading coefficient is positive, the whole parabola sits above the $x$-axis. The expression is always positive, never zero, never negative.
-- If the leading coefficient is negative, the whole parabola sits below the $x$-axis. Always negative.
+- Wenn die Diskriminante negativ ist, berührt das Parabel die $x$ -Achse überhaupt nicht.
+- Wenn der führende Koeffizient positiv ist, sitzt das gesamte Parabel über der $x$ -Achse. Der Ausdruck ist immer positiv, niemals null, niemals negativ.
+- Wenn der führende Koeffizient negativ ist, sitzt das gesamte Parabel unterhalb der $x$ -Achse. Immer negativ.
 
-**Example 2.** Is $x^2-4x+5<0$ ever true?
+**Beispiel 2.** Ist $x^2-4x+5<0$ jemals wahr?
 
-Discriminant: $16-20=-4$ (negative). Leading coefficient is positive, so the parabola stays entirely above the $x$-axis. The expression is never less than $0$. This inequality has no solutions at all (not “infinitely many”).
+Diskriminant: $16-20=-4$ (negativ). Der Leitkoeffizient ist positiv, so dass das Parabel vollständig über der $x$ -Achse bleibt. Der Ausdruck ist nie kleiner als $0$ . Diese Ungleichheit hat überhaupt keine Lösungen (nicht "unendlich viele").
 
-[[NOTE:Common trap|A negative discriminant on a “< 0” question is easy to misread as “the parabola must dip below the axis somewhere.” It means the exact opposite: the parabola never crosses the x-axis at all.]]
+ [[NOTE:Common trap|A negative discriminant on a “< 0” question is easy to misread as “the parabola must dip below the axis somewhere.” It means the exact opposite: the parabola never crosses the x-axis at all.]]
 
 ---
 
-## 6.5 Compound (double) quadratic inequalities
+## 6.5 Compound (double) quadratic Ungleichungen
 
-These have the form $a\le\text{(quadratic)}\le b$: two inequality symbols sandwiching one quadratic expression, such as $-1\le x^2-6x+8\le 3$.
+Diese haben die Form $a\le\text{(quadratic)}\le b$ : zwei Ungleichheitssymbole, die einen quadratischen Ausdruck wie $-1\le x^2-6x+8\le 3$ einfügen.
 
 ### Step-by-step method
 
-1. Split into two separate inequalities: the “left part” (quadratic $\ge a$, or $> a$) and the “right part” (quadratic $\le b$, or $< b$).
-2. Solve each part completely on its own, using Type 2 methods (factoring, or the quadratic formula if the roots are not integers).
-3. Intersect the two solution sets. This is the step students skip. The two halves must be combined properly, not just glanced at.
-4. Carry each side’s strictness through to the final answer. If both halves are non-strict ($\le/\ge$), keep the shared endpoints. If either half is strict ($</>$), that endpoint drops out.
+1. Split in zwei separate Ungleichungen: der "linke Teil" (quadratisch $\ge a$ oder $> a$ ) und der "rechte Teil" (quadratisch $\le b$ oder $< b$ ).
+2. Lösen Sie jeden Teil vollständig für sich allein unter Verwendung von Typ-2-Methoden (Factoring oder die quadratische Formel, wenn die Wurzeln keine ganzen Zahlen sind).
+3. Schneiden Sie die beiden Lösungsmengen. Dies ist der Schritt, den die Schüler überspringen. Die beiden Hälften müssen richtig kombiniert werden, nicht nur angeschaut.
+4. Tragen Sie die Strenge jeder Seite bis zur endgültigen Antwort durch. Wenn beide Hälften nicht streng sind ( $\le/\ge$ ), behalten Sie die gemeinsamen Endpunkte. Wenn eine der beiden Hälften streng ist ( $</>$ ), fällt dieser Endpunkt aus.
 
-**Example 1.** Solve $-1\le x^2-6x+8\le 3$.
+**Beispiel 1.** Löse $-1\le x^2-6x+8\le 3$ .
 
-Left part: $x^2-6x+8\ge -1$ becomes $x^2-6x+9\ge 0$, which is $(x-3)^2\ge 0$, true for every real $x$.
+Links: $x^2-6x+8\ge -1$ wird $x^2-6x+9\ge 0$ , was $(x-3)^2\ge 0$ , wahr für jedes reelle $x$ .
 
-Right part: $x^2-6x+8\le 3$ becomes $x^2-6x+5\le 0$, which is $(x-1)(x-5)\le 0$, so $1\le x\le 5$.
+Rechter Teil: $x^2-6x+8\le 3$ wird $x^2-6x+5\le 0$ , was $(x-1)(x-5)\le 0$ ist, also $1\le x\le 5$ .
 
-Since the left part never restricts anything, the full solution is exactly the right part: $[1,5]$.
+Da der linke Teil nie etwas einschränkt, ist die volle Lösung genau der rechte Teil: $[1,5]$ .
 
-**Example 2.** A version where both halves genuinely restrict: $-4 < x^2-4x < 5$.
+**Beispiel 2.** Eine Version, in der beide Hälften wirklich einschränken: $-4 < x^2-4x < 5$ .
 
-Left part: $x^2-4x+4>0$ becomes $(x-2)^2>0$, true for every $x$ except $x=2$ (where the square is exactly $0$).
+Linker Teil: $x^2-4x+4>0$ wird $(x-2)^2>0$ , wahr für jedes $x$ außer $x=2$ (wobei das Quadrat genau $0$ ist).
 
 Right part: $x^2-4x-5<0$ becomes $(x-5)(x+1)<0$, so $-1 < x < 5$.
 
-Intersecting: $(-1,5)$, but with the single point $x=2$ removed.
+Schnitt: $(-1,5)$ , aber mit dem einzelnen Punkt $x=2$ entfernt.
 
-Solution: $(-1,2)\cup(2,5)$.
+Lösung: $(-1,2)\cup(2,5)$.
 
-**Example 3.** A version that splits into two separate closed intervals: $-1\le x^2-4x+2\le 4$.
+**Beispiel 3.** Eine Version, die sich in zwei separate geschlossene Intervalle aufteilt: $-1\le x^2-4x+2\le 4$ .
 
-Left part: $x^2-4x+3\ge 0$ becomes $(x-1)(x-3)\ge 0$, so $x\le 1$ or $x\ge 3$.
+Links: $x^2-4x+3\ge 0$ wird $(x-1)(x-3)\ge 0$ , also $x\le 1$ oder $x\ge 3$ .
 
-Right part: $x^2-4x-2\le 0$. By the quadratic formula, roots are $x=2\pm\sqrt{6}$, giving $2-\sqrt{6}\le x\le 2+\sqrt{6}$.
+Rechts: $x^2-4x-2\le 0$ . Nach der quadratischen Formel sind Wurzeln $x=2\pm\sqrt{6}$ , was $2-\sqrt{6}\le x\le 2+\sqrt{6}$ ergibt.
 
-Intersecting $[2-\sqrt{6},1]$ with $[3,2+\sqrt{6}]$ gives two separate closed intervals, not one smooth range.
+Das Kreuzen von $[2-\sqrt{6},1]$ mit $[3,2+\sqrt{6}]$ ergibt zwei separate geschlossene Intervalle, nicht einen glatten Bereich.
 
-Solution: $[2-\sqrt{6},1]\cup[3,2+\sqrt{6}]$.
+Lösung: $[2-\sqrt{6},1]\cup[3,2+\sqrt{6}]$.
 
-[[NOTE:Common trap|Seeing an irrational boundary like 2 ± √6 makes a single continuous interval look plausible. But each half of the compound inequality must be solved and intersected independently. This very often carves a gap right out of the middle. Similarly, when one half turns out to be true for all real numbers (a perfect square ≥ 0), it is tempting to think it must still narrow the answer somehow. It does not. The other half does all the work.]]
+ [[NOTE:Common trap|Seeing an irrational boundary like 2 ± √6 makes a single continuous interval look plausible. But each half of the compound inequality must be solved and intersected independently. This very often carves a gap right out of the middle. Similarly, when one half turns out to be true for all real numbers (a perfect square ≥ 0), it is tempting to think it must still narrow the answer somehow. It does not. The other half does all the work.]]
 
-### Seeing the intersection: shading two number lines
+### Sehen der Schnittmenge: Schattierung von zwei Zahlenlinien
 
-Reading two interval expressions and intersecting them in your head is exactly where the mistake above creeps in. A simple picture makes it foolproof: draw the solution to each part as a shaded (hatched) band directly above a number line, then look for the $x$-values that are shaded in both bands.
+Zwei Intervallausdrücke zu lesen und sie in deinem Kopf zu schneiden, ist genau der Punkt, an dem sich der oben genannte Fehler einschleicht. Ein einfaches Bild macht es zum NarrenBeweis: Zeichne die Lösung zu jedem Teil als schraffiertes (schraffiertes) Band direkt über einem Zahlenstrahl und suche dann nach den $x$ -Werten, die in beiden Bändern schraffiert sind.
 
-[[FIGURE:ineq-compound-intersection|Left part shaded with forward slashes, right part shaded with backslashes. The intersection is only the $x$-values covered by both patterns. Here, two separate closed pieces, with a genuine gap between $x=1$ and $x=3$.]]
+ [[FIGURE:ineq-compound-intersection|Left part shaded with forward slashes, right part shaded with backslashes. The intersection is only the $x$-values covered by both patterns. Here, two separate closed pieces, with a genuine gap between $x=1$ and $x=3$.]]
 
-How to build this diagram yourself:
+Wie man dieses Diagramm selbst erstellt:
 
-1. Draw one horizontal number line and mark every critical value from both parts on it (here: $2-\sqrt{6}$, $1$, $3$, $2+\sqrt{6}$, left to right).
-2. Directly above the line, shade or hatch the region that solves the left part only. Use a filled dot for an included endpoint ($\le/\ge$) and an open circle for an excluded one ($</>$).
-3. On a second line with the same scale, shade the region that solves the right part only, using a different hatch direction so the two are easy to tell apart.
-4. Stack the two lines and look straight down through them: the intersection is wherever both hatch patterns cover the same $x$-values. Redraw just that overlap on a third line as your final answer.
-5. Copy the correct open/closed circle style for each surviving endpoint from whichever original line it came from. The picture prevents the easy mistake of quietly upgrading an open circle to a closed one.
+1. Zeichne einen horizontalen Zahlenstrahl und markiere jeden kritischen Wert aus beiden Teilen darauf (hier: $2-\sqrt{6}$ , $1$ , $3$ , $2+\sqrt{6}$ , links nach rechts).
+2. Direkt über der Linie schraffieren oder schraffieren Sie den Bereich, der nur den linken Teil löst. Verwenden Sie einen gefüllten Punkt für einen eingeschlossenen Endpunkt ( $\le/\ge$ ) und einen offenen Kreis für einen ausgeschlossenen ( $</>$ ).
+3. Auf einer zweiten Zeile mit der gleichen Skala schattieren Sie den Bereich, der nur den rechten Teil löst, mit einer anderen Lukenrichtung, so dass die beiden leicht voneinander zu unterscheiden sind.
+4. Stapeln Sie die beiden Linien und schauen Sie gerade nach unten durch sie: die Schnittmenge ist überall dort, wo beide Schraffurmuster die gleichen $x$ -Werte abdecken. Redraw nur diese Überlappung auf einer dritten Zeile als Ihre endgültige Antwort.
+5. Kopieren Sie den korrekten Stil des offenen/geschlossenen Kreises für jeden überlebenden Endpunkt, von welcher ursprünglichen Linie auch immer er stammt. Das Bild verhindert den leichten Fehler, einen offenen Kreis leise auf einen geschlossenen zu aktualisieren.
 
 ---
 
-## 6.6 Absolute value inequalities
+## 6,6 Absoluter Wert Ungleichung
 
-This is the most varied type. The method depends on exactly what is inside (and how many) absolute value bars there are. There are four common sub-patterns.
+Dies ist der vielfältigste Typ. Die Methode hängt genau davon ab, was sich innerhalb (und wie viele) Absolutwertbalken befinden. Es gibt vier gemeinsame Untermuster.
 
-### A. Simple absolute value: |expression| compared to a number
+### A. Einfacher absoluter Wert: |Ausdruck| im Vergleich zu einer Zahl
 
-Rewrite $|\text{expression}| > k$ as “expression $> k$ OR expression $< -k$” (for $>$ / $\ge$), or $|\text{expression}| < k$ as “$-k < \text{expression} < k$” (for $<$ / $\le$). Solve each branch.
+Rewrite $|\text{expression}| > k$ as “expression $> k$ OR expression $< -k$ ” (for $>$ / $\ge$ ), or $|\text{expression}| < k$ as “ $-k < \text{expression} < k$ ” (for $<$ / $\le$ ). Löse jeden Zweig.
 
-**Example 1.** Solve $|2x+1|-3>0$.
+**Beispiel 1.** Löse $|2x+1|-3>0$ .
 
-Rewrite as $|2x+1|>3$, which splits into: $2x+1>3$ (so $x>1$) or $2x+1<-3$ (so $x<-2$).
+Schreibe als $|2x+1|>3$ um, was sich aufteilt in: $2x+1>3$ (so $x>1$ ) oder $2x+1<-3$ (so $x<-2$ ).
 
-Solution: $x<-2$ or $x>1$.
+Lösung: $x<-2$ oder $x>1$ .
 
-### B. Sum or difference of two distances: $|x-a|\pm|x-b|$
+### B. Summe oder Differenz zweier Entfernungen: $|x-a|\pm|x-b|$
 
-The expressions inside the bars change sign at $x=a$ and $x=b$. Split the number line into three regions around these two points, rewrite the absolute values without bars in each region, and solve the resulting (now bar-free) inequality region by region.
+Die Ausdrücke innerhalb der Balken ändern das Vorzeichen bei $x=a$ und $x=b$ . Teilen Sie den Zahlenstrahl in drei Regionen um diese beiden Punkte, schreiben Sie die absoluten Werte ohne Balken in jeder Region um und lösen Sie die resultierende (jetzt barfreie) Ungleichheit Region für Region.
 
-**Example 2.** Solve $|x-1|+|x+2|\le 5$.
+**Beispiel 2.** Löse $|x-1|+|x+2|\le 5$ .
 
-Critical points at $x=1$ and $x=-2$, giving three regions.
+Kritische Punkte bei $x=1$ und $x=-2$ , wobei drei Regionen angegeben werden.
 
-- $x<-2$: expression becomes $-2x-1$. Solving $-2x-1\le 5$ gives $x\ge -3$, so this region contributes $[-3,-2)$.
-- $-2\le x\le 1$: expression collapses to a constant, $3$. Since $3\le 5$ always, this whole region is included.
-- $x>1$: expression becomes $2x+1$. Solving $2x+1\le 5$ gives $x\le 2$, so this region contributes $(1,2]$.
+- $x<-2$ : Ausdruck wird zu $-2x-1$ . Lösen $-2x-1\le 5$ ergibt $x\ge -3$ , so dass diese Region $[-3,-2)$ beiträgt.
+- $-2\le x\le 1$ : Ausdruck kollabiert zu einer Konstante, $3$ . Da $3\le 5$ immer diese ganze Region enthalten ist.
+- $x>1$ : Ausdruck wird $2x+1$ . Lösen $2x+1\le 5$ ergibt $x\le 2$ , so dass diese Region $(1,2]$ beiträgt.
 
-Combining all three pieces: $[-3,2]$.
+Kombinieren Sie alle drei Stücke: $[-3,2]$ .
 
-[[NOTE:Common trap|The middle region, between the two critical points, always collapses to a constant. It is the piece most often forgotten entirely. Always check it as its own case, separately from the two outer branches. It is also possible for one of the three regions to contribute nothing at all. Never assume a region works just because its neighbour does.]]
+ [[NOTE:Common trap|The middle region, between the two critical points, always collapses to a constant. It is the piece most often forgotten entirely. Always check it as its own case, separately from the two outer branches. It is also possible for one of the three regions to contribute nothing at all. Never assume a region works just because its neighbour does.]]
 
-### C. Absolute value vs. absolute value: $|\text{expr}_1|$ compared to $|\text{expr}_2|$
+### C. Absoluter Wert vs. Absoluter Wert: $|\text{expr}_1|$ im Vergleich zu $|\text{expr}_2|$
 
-This is the one case where squaring both sides is always safe with no case-splitting needed, because both sides are automatically non-negative. Square both sides, expand, and solve the resulting quadratic inequality with Type 2 methods.
+Dies ist der einzige Fall, in dem die Quadratur beider Seiten immer sicher ist, ohne dass eine Fallaufteilung erforderlich ist, da beide Seiten automatisch nicht negativ sind. Quadrieren Sie beide Seiten, erweitern und lösen Sie die resultierende quadratische Ungleichheit mit Typ-2-Methoden.
 
-**Example 3.** Solve $|3x-1|<|x+5|$.
+**Beispiel 3.** Löse $|3x-1|<|x+5|$ .
 
-Square both sides: $(3x-1)^2<(x+5)^2$.
+Quadrat beide Seiten: $(3x-1)^2<(x+5)^2$ .
 
-Expand: $9x^2-6x+1 < x^2+10x+25$, so $8x^2-16x-24<0$, then $x^2-2x-3<0$, then $(x-3)(x+1)<0$.
+Erweitern: $9x^2-6x+1 < x^2+10x+25$ , also $8x^2-16x-24<0$ , dann $x^2-2x-3<0$ , dann $(x-3)(x+1)<0$ .
 
-Solution: $-1 < x < 3$.
+Lösung: $-1 < x < 3$.
 
-[[NOTE:Common trap|Comparing two absolute values is one of the few places where squaring is unconditionally safe. The risk here is not a missed case. It is an arithmetic slip while expanding the squares. Double-check every term.]]
+ [[NOTE:Common trap|Comparing two absolute values is one of the few places where squaring is unconditionally safe. The risk here is not a missed case. It is an arithmetic slip while expanding the squares. Double-check every term.]]
 
-### D. Nested absolute values: $||\text{expr}|-k|$ compared to a number
+### D. Verschachtelte absolute Werte: $||\text{expr}|-k|$ im Vergleich zu einer Zahl
 
-Peel off one layer at a time, working from the outside in. First resolve the outer bars into a compound inequality on $|\text{expr}|$, then resolve that inner absolute value the normal way.
+Schälen Sie eine Schicht nach der anderen ab und arbeiten von außen nach innen. Zuerst lösen Sie die äußeren Balken in eine zusammengesetzte Ungleichheit auf $|\text{expr}|$ , dann lösen Sie diesen inneren absoluten Wert auf die normale Weise.
 
-**Example 4.** Solve $||x-2|-3|<2$.
+**Beispiel 4.** Löse $||x-2|-3|<2$ .
 
 Outer layer first: $-2 < |x-2|-3 < 2$, so $1 < |x-2| < 5$.
 
-Left part, $|x-2|>1$, excludes $1\le x\le 3$ (keeping $x<1$ or $x>3$).
+Der linke Teil, $|x-2|>1$ , schließt $1\le x\le 3$ aus (halten $x<1$ oder $x>3$ ).
 
-Right part, $|x-2|<5$, restricts to $-3 < x < 7$.
+Der rechte Teil, $|x-2|<5$ , beschränkt sich auf $-3 < x < 7$ .
 
-Combining (removing $[1,3]$ from $(-3,7)$): $(-3,1)\cup(3,7)$.
+Kombinieren (Entfernen von $[1,3]$ aus $(-3,7)$ ): $(-3,1)\cup(3,7)$ .
 
-[[NOTE:Common trap|With nested absolute values, it is natural to get the regions right but forget to carry each layer’s strictness (≤ vs <) all the way through to the final endpoints. Always check each boundary point directly in the original inequality.]]
+ [[NOTE:Common trap|With nested absolute values, it is natural to get the regions right but forget to carry each layer’s strictness (≤ vs <) all the way through to the final endpoints. Always check each boundary point directly in the original inequality.]]
 
 ---
 
-## 6.7 Radical (square root) inequalities
+## 6.7 Radical (square root) Ungleichungen
 
-These involve one or more square roots, such as $\sqrt{x+4}>x-2$. They demand more care than any other type, because squaring both sides is only valid when both sides are known to be non-negative, and the domain of the square root itself is a restriction you must track from the very first step.
+Dabei handelt es sich um einen oder mehrere quadratische Wurzeln, wie $\sqrt{x+4}>x-2$ . Sie verlangen mehr Sorgfalt als jeder andere Typ, denn die Quadratur beider Seiten ist nur gültig, wenn bekannt ist, dass beide Seiten nicht negativ sind, und die Domäne der quadratischen Wurzel selbst ist eine Einschränkung, die Sie vom ersten Schritt an verfolgen müssen.
 
 ### Step-by-step method (single radical)
 
-1. Find the domain first: whatever is inside the square root must be $\ge 0$.
-2. If the inequality is $\sqrt{\cdots} >$ (something), split into two cases based on whether that “something” (the non-radical side) is negative or non-negative:
-   - Case 1: the other side is negative. A square root is always $\ge 0$, so it is automatically greater than any negative number. The entire domain slice in this case is a solution with no further work.
-   - Case 2: the other side is non-negative. Both sides are now non-negative, so squaring is safe. Square, solve the resulting polynomial inequality, and intersect with this case’s condition.
-3. Union the results of both cases together.
+1. Finden Sie die Domäne zuerst: Was auch immer sich innerhalb der quadratischen Wurzel befindet, muss $\ge 0$ sein.
+2. Wenn die Ungleichheit $\sqrt{\cdots} >$ (etwas) ist, in zwei Fälle aufgeteilt, basierend darauf, ob dieses "Etwas" (die nicht-radikale Seite) negativ oder nicht-negativ ist:
+Fall 1: Die andere Seite ist negativ. Eine Quadratwurzel ist immer $\ge 0$ , also ist sie automatisch größer als jede negative Zahl. Der gesamte Domain-Slice ist in diesem Fall eine Lösung ohne weitere Arbeit.
+Fall 2: Die andere Seite ist nicht negativ. Beide Seiten sind jetzt nicht negativ, daher ist die Quadratur sicher. Quadrat, lösen Sie die resultierende Polynomungleichheit und schneiden Sie den Zustand dieses Falles.
+3. Zusammenführung der Ergebnisse beider Fälle.
 
-**Example 1.** Solve $\sqrt{x+4}>x-2$.
+**Beispiel 1.** Löse $\sqrt{x+4}>x-2$ .
 
 Domain: $x+4\ge 0$, so $x\ge -4$.
 
-Case 1 ($x<2$, right side negative): every domain value here works automatically, so $-4\le x < 2$.
+Fall 1 ( $x<2$ , rechte Seite negativ): Jeder Domänenwert arbeitet hier automatisch, also $-4\le x < 2$ .
 
 Case 2 ($x\ge 2$, right side non-negative): square safely,
 
@@ -325,21 +325,21 @@ x(x-5)<0
 0 < x < 5.
 $$
 
-Combined with $x\ge 2$: $2\le x < 5$.
+Kombiniert mit $x\ge 2$ : $2\le x < 5$ .
 
-Union: $[-4,2)\cup[2,5)=[-4,5)$.
+Vereinigung: $[-4,2)\cup[2,5)=[-4,5)$ .
 
-### When the inequality is $\sqrt{\cdots} <$ (something) instead
+### Wenn die Ungleichheit stattdessen $\sqrt{\cdots} <$ (etwas) ist
 
-Here the right side must be non-negative for the inequality to have any chance of holding (a square root can never be less than a negative number), so that requirement becomes part of the domain restriction immediately. There is no “automatic” case to worry about.
+Hier muss die rechte Seite nicht-negativ sein, damit die Ungleichung eine Haltewahrscheinlichkeit hat (eine Quadratwurzel kann niemals kleiner als eine negative Zahl sein), so dass die Anforderung sofort Teil der Domänenbeschränkung wird. Es gibt keinen "automatischen" fall, um den man sich sorgen machen muss.
 
-### Two radicals: sum or difference
+### Zwei Radikale: Summe oder Differenz
 
-When two square roots are involved, one squaring step is never enough. Isolate one radical on its own side, square once (checking that the remaining side is non-negative first), simplify, then repeat: isolate and square again. Every squaring step introduces a fresh side-condition that must be solved and intersected in. Do not stop after the first square.
+Wenn zwei quadratische Wurzeln beteiligt sind, ist ein Quadratschritt nie genug. Isolieren Sie einen Radikalen auf seiner eigenen Seite, einmal quadrieren (überprüfen Sie, ob die verbleibende Seite zuerst nicht negativ ist), vereinfachen Sie, dann wiederholen Sie: isolieren und wieder quadrieren. Jeder Quadraturschritt führt eine neue Nebenbedingung ein, die gelöst und geschnitten werden muss. Stoppen Sie nicht nach dem ersten Platz.
 
-**Example 2.** Solve $\sqrt{2x+3}-\sqrt{x+1}>1$.
+**Beispiel 2.** Löse $\sqrt{2x+3}-\sqrt{x+1}>1$ .
 
-Domain: $x\ge -1$. Rewrite as $\sqrt{2x+3}>1+\sqrt{x+1}$. The right side is at least $1$, so squaring is valid:
+Domain: $x\ge -1$ . Umschreiben als $\sqrt{2x+3}>1+\sqrt{x+1}$ . Die rechte Seite ist mindestens $1$ , daher ist die Quadratur gültig:
 
 $$
 2x+3 > 1+2\sqrt{x+1}+(x+1)
@@ -347,163 +347,163 @@ $$
 x+1 > 2\sqrt{x+1}.
 $$
 
-Let $v=\sqrt{x+1}\ge 0$, so $x+1=v^2$. The inequality becomes $v^2>2v$, so $v(v-2)>0$, hence $v>2$ (since $v\ge 0$).
+Es ist $v=\sqrt{x+1}\ge 0$ , also $x+1=v^2$ . Die Ungleichheit wird $v^2>2v$ , also $v(v-2)>0$ , daher $v>2$ (da $v\ge 0$ ).
 
-So $\sqrt{x+1}>2$ means $x+1>4$, hence $x>3$.
+Also $\sqrt{x+1}>2$ bedeutet $x+1>4$ , daher $x>3$ .
 
-### A harder double-radical case with two roots to compare
+### Ein härterer Doppelradikalfall mit zwei Wurzeln zum Vergleich
 
-After two rounds of squaring, the quadratic formula may hand back two roots, but a domain restriction picked up along the way (for example $x\ge -1$) can rule one of them out. For instance, if $x^2-2x-11>0$ gives roots $1\pm 2\sqrt{3}$, then since $1-2\sqrt{3}\approx -2.46$ is below the required $x\ge -1$, only the larger root matters.
+Nach zwei Quadraturrunden kann die quadratische Formel zwei Wurzeln zurückgeben, aber eine Domänenbeschränkung, die auf dem Weg aufgegriffen wurde (für Beispiel $x\ge -1$ ), kann eine von ihnen ausschließen. Wenn zum Beispiel $x^2-2x-11>0$ Wurzeln $1\pm 2\sqrt{3}$ gibt, dann ist da $1-2\sqrt{3}\approx -2.46$ unter dem erforderlichen $x\ge -1$ liegt, nur die größere Wurzel wichtig.
 
-Correct solution boundary: $x > 1+2\sqrt{3}$, not the smaller, irrelevant root.
+Korrekte Lösungsgrenze: $x > 1+2\sqrt{3}$ , nicht die kleinere, irrelevante Wurzel.
 
-[[NOTE:Common trap|The three biggest radical-inequality mistakes: (1) squaring before checking that both sides are non-negative, which can introduce false solutions; (2) stopping after one squaring step when two radicals are present; and (3) after the quadratic formula hands back two roots, picking the smaller one without checking it against the domain restrictions collected along the way. When in doubt, plug a test value from your proposed answer directly back into the original (unsquared) inequality.]]
+ [[NOTE:Common trap|The three biggest radical-inequality mistakes: (1) squaring before checking that both sides are non-negative, which can introduce false solutions; (2) stopping after one squaring step when two radicals are present; and (3) after the quadratic formula hands back two roots, picking the smaller one without checking it against the domain restrictions collected along the way. When in doubt, plug a test value from your proposed answer directly back into the original (unsquared) inequality.]]
 
 ---
 
-## 6.8 Linear inequalities in word problems
+## 6.8 Linear Ungleichungen in word problems
 
-These describe a real situation (a phone bill, a store membership, a loan, a temperature conversion) and ask you to translate it into an inequality, solve it, and check specific claims about it. The algebra is simple (always linear), but the setup and the sign-flip rule are where marks are lost.
+Diese beschreiben eine reale Situation (eine Telefonrechnung, eine Filialmitgliedschaft, ein Darlehen, eine Temperaturumwandlung) und bitten Sie, sie in eine Ungleichheit zu übersetzen, sie zu lösen und spezifische Behauptungen darüber zu überprüfen. Die Algebra ist einfach (immer linear), aber das Setup und die Zeichen-Flip-Regel sind, wo Markierungen verloren gehen.
 
 ### Step-by-step method
 
-1. Translate the situation into an inequality. Identify what quantity is being compared (a total cost, a balance, a converted temperature) and what threshold it must meet.
-2. Isolate the variable exactly as you would with any linear inequality.
-3. Watch for a negative coefficient: whenever a quantity decreases as the variable increases (a bill going down per point redeemed, a loan balance going down per payment), isolating the variable means dividing by a negative number, and that flips the inequality direction.
-4. Check specific numeric claims by direct substitution. This is almost always faster than re-deriving the general solution.
+1. Übersetzen Sie die Situation in eine Ungleichheit. Identifizieren Sie, welche Menge verglichen wird (Gesamtkosten, Saldo, umgerechnete Temperatur) und welche Schwelle sie erfüllen muss.
+2. Isolieren Sie die Variable genau wie bei jeder linearen Ungleichheit.
+3. Achten Sie auf einen negativen Koeffizienten: Wenn eine Menge mit zunehmender Variable abnimmt (eine Rechnung, die pro eingelöstem Punkt nach unten geht, ein Kreditsaldo, der pro Zahlung nach unten geht), bedeutet das Isolieren der Variable, durch eine negative Zahl zu dividieren, und das dreht die Ungleichheitsrichtung um.
+4. Spezifische numerische Behauptungen durch direkte Substitution überprüfen. Das ist fast immer schneller als das Re-deriving der allgemeinen Lösung.
 
-**Example 1.** A $\$400$ bill drops by $\$0.50$ per loyalty point redeemed ($x$ points). The customer wants the bill $\le \$250$.
+**Beispiel 1.** A $\$400 $ bill drops by $ \$0.50 $ per loyalty point redeemed ($ x $ points). The customer wants the bill $ \le \$250$.
 
-Set up: $400-0.5x\le 250$, so $-0.5x\le -150$.
+Menge up: $400-0.5x\le 250$ , so $-0.5x\le -150$ .
 
-Dividing both sides by $-0.5$ (negative) flips the inequality: $x\ge 300$.
+Wenn man beide Seiten durch $-0.5$ (negativ) teilt, wird die Ungleichheit umgedreht: $x\ge 300$ .
 
-So the minimum number of points to redeem is $300$, not “$x\le 300$”, which is the easy mistake here.
+Die Mindestanzahl der einzulösenden Punkte ist also $300$ , nicht " $x\le 300$ ", was hier der einfache Fehler ist.
 
-**Example 2.** Unit conversion: $C=\dfrac{5}{9}(F-32)$, safety limit $C\le 30$.
+**Beispiel 2.** Unit conversion: $C=\dfrac{5}{9}(F-32)$ , safety limit $C\le 30$ .
 
-Solving $\dfrac{5}{9}(F-32)\le 30$ gives $F-32\le 54$, so $F\le 86$.
+Lösen $\dfrac{5}{9}(F-32)\le 30$ ergibt $F-32\le 54$ , also $F\le 86$ .
 
-The equivalent Fahrenheit safety limit is $86^\circ\mathrm{F}$, not simply “$30^\circ\mathrm{F}$.” Different unit scales have different zero points and different scale factors, so a numeric threshold does not carry over unchanged between them. You have to actually solve the inequality to find the converted limit.
+Die äquivalente Fahrenheit-Sicherheitsgrenze ist $86^\circ\mathrm{F}$ , nicht einfach " $30^\circ\mathrm{F}$ ." Verschiedene Einheitenskalen haben unterschiedliche Nullpunkte und unterschiedliche Skalenfaktoren, so dass eine numerische Schwelle nicht unverändert zwischen ihnen übertragen wird. Sie müssen tatsächlich die Ungleichheit lösen, um das umgewandelte Limit zu finden.
 
-**Example 3.** Percentage surcharge: total $=1.2B$, must stay under $\$300$.
+*??? ??? ??? ??? ???? ???? ???? ????? ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 
-$1.2B < 300$. Since $1.2$ is positive, dividing both sides by $1.2$ keeps the direction the same: $B < 250$.
+Da $1.2$ positiv ist, bleibt die Richtung gleich: $B < 250$ .
 
-Contrast this with the loyalty-points example above. There the coefficient being isolated was negative, so the direction flipped. Here it is positive, so it does not. Always check the sign of the number you are dividing by.
+Vergleichen Sie dies mit dem Treue-Punkte Beispiel oben. Dort war der Koeffizient, der isoliert wurde, negativ, also drehte sich die Richtung um. Hier ist es positiv, also nicht. Überprüfen Sie immer das Zeichen der Zahl, durch die Sie teilen.
 
-[[NOTE:Common trap|Dividing or multiplying an inequality by a negative number always flips the inequality symbol. This is the single most commonly forgotten rule in word problems, especially whenever the setup describes something that decreases as the variable increases (a bill going down, a loan balance shrinking). Also watch for strict vs. non-strict wording: “under $300” excludes $300 itself, so a value that lands exactly on the boundary fails a strict inequality even though it looks close enough.]]
+ [[NOTE:Common trap|Dividing or multiplying an inequality by a negative number always flips the inequality symbol. This is the single most commonly forgotten rule in word problems, especially whenever the setup describes something that decreases as the variable increases (a bill going down, a loan balance shrinking). Also watch for strict vs. non-strict wording: “under $300” excludes $300 itself, so a value that lands exactly on the boundary fails a strict inequality even though it looks close enough.]]
 
 ---
 
 ## 6.9 Master trap list
 
-If you only have five minutes before the exam, read this section.
+Wenn Sie nur fünf Minuten vor der Prüfung haben, lesen Sie diesen Abschnitt.
 
-| Type | Trap to remember |
-| --- | --- |
-| Rational | A value that makes the denominator zero is always excluded, no matter what the inequality symbol is, and even though the sign still alternates normally across that point. |
-| Rational | The wavy-curve rule only alternates automatically across odd-power (simple) factors. An even-power factor makes the curve bounce, not cross, so the sign stays the same on both sides. |
-| Quadratic sign | “Expression $\le 0$” restricts $x$ to an interval. It says nothing about whether $x$ itself is positive or negative. |
-| Quadratic sign | A perfect square $(x-a)^2$ has one repeated root at $x=a$, not two symmetric roots like $a\pm$ something. |
-| Quadratic sign | A negative discriminant on a “$< 0$” claim means no solutions at all, not “infinitely many.” |
-| Compound | Solve and intersect both halves independently. An irrational boundary can tempt you into reporting one smooth interval when the true answer has a gap. |
-| Compound | If one half is true for all real $x$, the other half does all the restricting. It does not narrow things further on its own. |
-| Absolute value | The middle region between two critical points (for $|x-a|\pm|x-b|$) usually collapses to a constant. Do not skip checking it. |
-| Absolute value | For nested bars, work outside-in one layer at a time, and carry each layer’s strictness through to the final endpoints. |
-| Radical | Never square before confirming both sides are non-negative. Split into cases first if the non-radical side could be negative. |
-| Radical | Two radicals need two rounds of isolating-and-squaring. Stopping after one is the most common shortcut error. |
-| Radical | After the quadratic formula gives two roots, check both against every domain restriction collected along the way before picking one. |
-| Word problems | Dividing or multiplying by a negative number flips the inequality direction. This happens whenever a quantity decreases as the variable increases. |
-| Word problems | Strict inequalities ($<$ or $>$) exclude their own boundary value, even when a substitution lands exactly on it. |
-
----
-
-## 6.10 The quick-check method
-
-Every worked example in this guide is solved with the proper method: factoring, sign charts, case splits, and so on. But there is a second, much faster tool worth having ready on exam day: the quick check. It will not teach you a method, and it cannot replace one, but it is the single fastest way to catch a mistake before you commit to an answer.
-
-### What it is
-
-A quick check is simply substituting one specific, convenient number into the original inequality, before any algebra, squaring, or case-splitting, and seeing whether the resulting statement is true or false. It tells you whether one particular value belongs to the solution set. Nothing more.
-
-### When to use it
-
-- To verify a boundary value. After solving, pick an endpoint of your interval and plug it into the original inequality to confirm it should be included (closed) or excluded (open).
-- To sanity-test a claimed statement fast. On the exam, a true/false statement often names a specific number or a short interval. Testing one representative value from inside (or outside) that interval is usually faster than re-deriving the full solution from scratch.
-- To catch a sign error. If your derived interval and a quick numeric test disagree, you have found a mistake. Go back through the method rather than trusting either answer blindly.
-- Right after squaring both sides (radical or absolute-value types). Squaring can introduce false solutions, so testing a value in the original, unsquared inequality is the most reliable way to confirm it truly belongs.
-
-### When not to rely on it
-
-- As your only method. A single test tells you about a single number. It cannot reveal the shape of an entire solution set (how many intervals there are, where they start and end) on its own.
-- Near a region boundary you have not identified yet. If you do not already know where the critical points are, a handful of random tests can easily miss a narrow interval entirely.
-
-**Example 1.** Claim: “$x=4$ satisfies $\dfrac{x^2-9}{x^2-16}\le 0$.”
-
-Rather than rebuilding the whole sign chart, substitute $x=4$ directly into the original expression: $\dfrac{16-9}{16-16}=\dfrac{7}{0}$, undefined.
-
-An undefined expression can never satisfy any inequality. The claim is FALSE, and this single substitution confirms it immediately, without needing the full sign chart.
-
-**Example 2.** Claim: “$x=2$ satisfies $-4 < x^2-4x < 5$.”
-
-Substitute directly: $2^2-4(2)=4-8=-4$. Checking both halves: is $-4 < -4$ true? No. The left side is strict ($<$), and $-4$ is not strictly less than $-4$.
-
-The claim is FALSE, caught in one substitution, even though $x=2$ might look like it should work at a glance.
-
-[[NOTE:Common trap|A quick check that comes back TRUE only proves that one number works. It never proves the rest of a claimed interval is correct. Use it to confirm a specific claim or to disprove one (a single failure is enough to kill a statement), not as a substitute for solving the inequality properly.]]
+| Typ | Fallen zum Erinnern |
+| --- | ---
+Ein Wert, der den Nenner Null macht, wird immer ausgeschlossen, unabhängig davon, was das Ungleichheitssymbol ist, und obwohl das Zeichen immer noch normal über diesen Punkt wechselt. |
+Die wellige Kurvenregel wechselt nur automatisch über ungerade (einfache) Faktoren. Ein Gleichstromfaktor lässt die Kurve springen, nicht kreuzen, so dass das Zeichen auf beiden Seiten gleich bleibt. |
+Das quadratische Zeichen „Ausdruck $\le 0$ beschränkt $x$ auf ein Intervall. Es sagt nichts darüber aus, ob $x$ selbst positiv oder negativ ist. |
+Ein perfektes Quadrat $(x-a)^2$ hat eine wiederholte Wurzel bei $x=a$ , nicht zwei symmetrische Wurzeln wie $a\pm$ etwas. |
+| Quadratisches Zeichen | Ein negativer Diskriminant auf einer " $< 0$ " Behauptung bedeutet überhaupt keine Lösungen, nicht "unendlich viele". |
+| Compound | Lösen und schneiden Sie beide Hälften unabhängig voneinander. Eine irrationale Grenze kann Sie dazu verleiten, ein glattes Intervall zu melden, wenn die wahre Antwort eine Lücke hat. |
+| Verbindung | Wenn eine Hälfte wahr für alle realen $x$ ist, macht die andere Hälfte die ganze Einschränkung. Sie schränkt die Dinge nicht von selbst weiter ein. |
+| Absoluter Wert | Der mittlere Bereich zwischen zwei kritischen Punkten (für $|x-a|\pm|x-b|$ ) kollabiert normalerweise zu einer Konstante. Überspringen Sie nicht die Überprüfung. |
+Für verschachtelte Balken, arbeiten außerhalb-in einer Schicht zu einer Zeit, und tragen jede Schicht Strenge durch die endgültigen Endpunkte. |
+| Radikal | Niemals quadratisch, bevor bestätigt wird, dass beide Seiten nicht negativ sind. Split in Fälle zuerst, wenn die nicht-radikale Seite negativ sein könnte. |
+Zwei Radikale brauchen zwei Runden der Isolierung und Quadratur. Stoppen nach einem ist der häufigste Shortcut-Fehler. |
+| Radikal | Nachdem die quadratische Formel zwei Wurzeln ergibt, überprüfen Sie beide gegen jede Domänenbeschränkung, die auf dem Weg gesammelt wurde, bevor Sie eine auswählen. |
+Die Einteilung oder die Multiplikation mit einer negativen Zahl macht die Ungleichheits-Richtung aus. Dies geschieht immer dann, wenn eine Menge abnimmt, wenn die Variable zunimmt. |
+| Word-Probleme | Strenge Ungleichungen ( $<$ oder $>$ ) schließen den eigenen Grenzwert aus, auch wenn eine Substitution genau darauf landet. |
 
 ---
 
-## 6.11 Summary cheat sheet
+## 6.10 Die Schnellprüfmethode
+
+Jedes gearbeitete Beispiel in diesem Handbuch wird mit der richtigen Methode gelöst: Factoring, Zeichendiagramme, Fallaufteilungen und so weiter. Aber es gibt ein zweites, viel schnelleres Werkzeug, das es wert ist, am Prüfungstag bereit zu sein: der schnelle Check. Es wird Ihnen keine Methode beibringen, und es kann keine ersetzen, aber es ist der schnellste Weg, um einen Fehler zu erkennen, bevor Sie sich zu einer Antwort verpflichten.
+
+### Was es ist
+
+Eine schnelle Überprüfung ersetzt einfach eine bestimmte, bequeme Zahl in die ursprüngliche Ungleichheit, vor jeder Algebra, Quadratur oder Fallaufteilung, und sieht, ob die resultierende Aussage wahr oder falsch ist. Es sagt Ihnen, ob ein bestimmter Wert zur Lösungsmenge gehört. Mehr nicht.
+
+### Wann man es benutzt
+
+- Um einen Grenzwert zu überprüfen. Wählen Sie nach dem Lösen einen Endpunkt Ihres Intervalls und stecken Sie ihn in die ursprüngliche Ungleichheit, um zu bestätigen, dass er enthalten (geschlossen) oder ausgeschlossen (offen) sein sollte.
+Um eine behauptete Aussage schnell zu testen. In der Prüfung nennt eine wahr/falsch Aussage oft eine bestimmte Zahl oder ein kurzes Intervall. Testen eines repräsentativen Wertes von innen (oder außen) dieses Intervalls ist in der Regel schneller als das Ableiten der vollständigen Lösung von Grund auf.
+- Um einen Zeichenfehler zu fangen. Wenn Ihr abgeleitetes Intervall und ein schneller numerischer Test nicht übereinstimmen, haben Sie einen Fehler gefunden. Gehen sie zurück durch die methode, anstatt beiden antworten blind zu vertrauen.
+- Direkt nach der Quadratur beider Seiten (Radikal- oder Absolutwerttypen). Quadratur kann falsche Lösungen einführen, so dass das Testen eines Wertes in der ursprünglichen, nicht quadrierten Ungleichheit der zuverlässigste Weg ist, um zu bestätigen, dass er wirklich gehört.
+
+### Wann man sich nicht darauf verlassen kann
+
+- Als deine einzige Methode. Ein einzelner Test sagt Ihnen über eine einzelne Zahl. Es kann nicht die Form einer ganzen Lösungsmenge (wie viele Intervalle es gibt, wo sie beginnen und enden) von selbst zeigen.
+- Nahe einer Region Grenze, die Sie noch nicht identifiziert haben. Wenn Sie nicht bereits wissen, wo die kritischen Punkte sind, kann eine Handvoll zufälliger Tests leicht ein enges Intervall ganz verpassen.
+
+**Beispiel 1.** Behauptung: “ $x=4$ satisfies $\dfrac{x^2-9}{x^2-16}\le 0$ .”
+
+Anstatt das gesamte Zeichendiagramm neu zu erstellen, ersetzen Sie $x=4$ direkt in den ursprünglichen Ausdruck: $\dfrac{16-9}{16-16}=\dfrac{7}{0}$ , undefiniert.
+
+Ein undefinierter Ausdruck kann niemals eine Ungleichheit befriedigen. Die Behauptung ist FALSCH, und diese einzige Substitution bestätigt sie sofort, ohne das vollständige Zeichendiagramm zu benötigen.
+
+**Beispiel 2.** Behauptung: “ $x=2$ satisfies $-4 < x^2-4x < 5$ .”
+
+Setze direkt: $2^2-4(2)=4-8=-4$ . Überprüfen Sie beide Hälften: ist $-4 < -4$ wahr? Nein. Die linke Seite ist streng ( $<$ ), und $-4$ ist nicht strikt kleiner als $-4$ .
+
+Die Behauptung ist FALSCH, gefangen in einer Substitution, obwohl $x=2$ aussehen könnte, als sollte es auf einen Blick funktionieren.
+
+ [[NOTE:Common trap|A quick check that comes back TRUE only proves that one number works. It never proves the rest of a claimed interval is correct. Use it to confirm a specific claim or to disprove one (a single failure is enough to kill a statement), not as a substitute for solving the inequality properly.]]
+
+---
+
+## 6.11 Zusammenfassung cheat sheet
 
 ### Rational: $\dfrac{\text{factor}}{\text{factor}}\gtrless 0$
 
-- Find zeros of numerator and denominator.
-- Denominator zeros are always excluded.
-- Wavy curve: test the rightmost region once, then alternate leftward. Odd-power factors cross; even-power factors bounce (no flip).
-- Keep regions matching the symbol; include numerator zeros only if $\le/\ge$.
+- Finden Sie Nullen von Zähler und Nenner.
+- Nenner Nullen sind immer ausgeschlossen.
+- Wellige Kurve: Testen Sie einmal die rechte Region, dann wechseln Sie nach links. Odd-Power-Faktoren kreuzen; Gerade-Power-Faktoren springen (kein Flip).
+- Behalten Sie Regionen, die mit dem Symbol übereinstimmen; schließen Sie Zählernullierungen nur ein, wenn $\le/\ge$ .
 
 ### Quadratic sign: $\text{(quadratic)}\gtrless 0$
 
-- Two roots: outside-the-roots is positive, between-the-roots is negative (for an upward parabola).
-- Perfect square: one repeated root; always $\ge 0$.
-- No real roots: check discriminant sign + leading coefficient to know if it is always positive or always negative.
+- Zwei Wurzeln: Außerhalb-Wurzeln ist positiv, zwischen-Wurzeln ist negativ (für ein Parabel nach oben).
+- Perfektes Quadrat: eine wiederholte Wurzel; immer $\ge 0$ .
+- Keine echten Wurzeln: Überprüfen Sie Diskriminanzzeichen + Leitkoeffizient, um zu wissen, ob es immer positiv oder immer negativ ist.
 
 ### Compound: $a\gtrless\text{(quadratic)}\gtrless b$
 
-- Split into left part and right part.
-- Solve each independently.
-- Intersect. Do not assume a single smooth interval; shade both on a number line and look for the overlap.
-- Non-strict endpoints survive if both sides allow them; a strict inequality can carve out a single excluded point.
+- Split in linken und rechten Teil.
+- Löse jeden unabhängig.
+- Schnitt. Nehmen Sie kein einziges glattes Intervall an; Schatten Sie beide auf einem Zahlenstrahl und suchen Sie nach der Überlappung.
+- Nicht-strenge Endpunkte überleben, wenn beide Seiten sie zulassen; eine strenge Ungleichheit kann einen einzigen ausgeschlossenen Punkt ausarbeiten.
 
-### Absolute value
+### Absoluter Wert
 
-- $|\text{expr}| > k$ means $\text{expr} > k$ OR $\text{expr} < -k$. $|\text{expr}| < k$ means $-k < \text{expr} < k$.
-- $|x-a|\pm|x-b|$: split at $a$ and $b$, check all three regions including the middle.
-- $|\text{expr}_1|$ vs $|\text{expr}_2|$: safe to square directly, no case split needed.
-- Nested bars: peel off outside-in, one layer at a time.
+- $|\text{expr}| > k$ bedeutet $\text{expr} > k$ ODER $\text{expr} < -k$ $|\text{expr}| < k$ bedeutet $-k < \text{expr} < k$ .
+- $|x-a|\pm|x-b|$ : Split bei $a$ und $b$ , überprüfen Sie alle drei Regionen einschließlich der Mitte.
+- $|\text{expr}_1|$ vs $|\text{expr}_2|$ : sicher zum Quadrat direkt, kein Fall Split erforderlich.
+- Verschachtelte Stäbe: außen abziehen, eine Schicht nach der anderen.
 
 ### Radical: $\sqrt{\text{expr}}\gtrless\text{(something)}$
 
-- Domain first: inside the root $\ge 0$.
-- If comparing to something that could be negative, split into cases before squaring.
-- Two radicals: isolate one, square, simplify, isolate the other, square again.
-- After squaring, check every boundary directly in the original (unsquared) inequality.
+- Domain first: innerhalb der Wurzel $\ge 0$ .
+- Wenn Sie mit etwas vergleichen, das negativ sein könnte, teilen Sie es vor dem Quadratieren in Fälle auf.
+- Zwei Radikale: Eins isolieren, quadrieren, vereinfachen, das andere isolieren, wieder quadrieren.
+- Überprüfen Sie nach dem Quadrieren jede Grenze direkt in der ursprünglichen (unquadrierten) Ungleichheit.
 
 ### Word problems
 
-- Translate the situation into an inequality first. Identify what is being compared to what threshold.
-- Isolate the variable.
-- Dividing/multiplying by a negative number flips the direction.
-- Strict wording (“under”, “less than”) excludes the boundary value itself.
+Übersetzen Sie die Situation zuerst in eine Ungleichheit. Identifizieren Sie, was mit welchem Schwellenwert verglichen wird.
+- Isolieren Sie die Variable.
+Dividieren / Multiplizieren mit einer negativen Zahl dreht die Richtung.
+Strenger Wortlaut ("unter", "weniger als") schließt den Grenzwert selbst aus.
 
-### Quick-check method
+### Quick-Check-Methode
 
-- Substitute one specific number straight into the original inequality, with no algebra first.
-- Use it to verify a boundary, sanity-test a claim, or catch a sign error. Never as your only method.
-- One failing test is enough to disprove a claimed statement; one passing test only confirms that single number.
+- Setze eine bestimmte Zahl direkt in die ursprüngliche Ungleichheit, ohne Algebra zuerst.
+- Verwenden Sie es, um eine Grenze zu überprüfen, eine Behauptung zu testen oder einen Zeichenfehler zu erkennen. Niemals als Ihre einzige Methode.
+Ein fehlgeschlagener Test reicht aus, um eine behauptete Aussage zu widerlegen; ein bestandener Test bestätigt nur diese einzelne Zahl.
 
-**Working order on exam day.** Identify the type, run the matching method, then quick-check any endpoint or named value the statement claims.
+**Arbeitsauftrag am Prüfungstag.** Identifizieren Sie den Typ, führen Sie die Matching-Methode aus und überprüfen Sie dann einen beliebigen Endpunkt oder benannten Wert.
 
-**Self-check.** Can you list the six types and their core tools? For a rational inequality, can you say which endpoints are included and which are always excluded? For a compound inequality, do you remember to intersect rather than glance? For radicals, do you write the domain before squaring?
+**Selbstkontrolle.** Können Sie die sechs Typen und ihre Kernwerkzeuge auflisten? Können Sie für eine rationale Ungleichheit sagen, welche Endpunkte enthalten sind und welche immer ausgeschlossen sind? Für eine zusammengesetzte Ungleichheit, erinnern Sie sich, sich zu schneiden, anstatt zu schauen? Für Radikale, schreiben Sie die Domain vor dem Quadrieren?

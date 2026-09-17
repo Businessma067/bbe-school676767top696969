@@ -1,89 +1,89 @@
-# Chapter 4 — Equations
+# Kapitel 4 — Gleichungen
 
-An equation asks when two expressions take the same value. On the BBE mathematics exam, Chapter 4 is less about arithmetic and more about rules: which technique fits, which values are allowed, how many solutions exist, and whether a proposed root survives a domain check.
+Eine Gleichung fragt, wann zwei Ausdrücke den gleichen Wert haben. Bei der BBE-Mathematikprüfung geht es in Kapitel 4 weniger um Arithmetik als vielmehr um Regeln: welche Technik passt, welche Werte erlaubt sind, wie viele Lösungen existieren und ob eine vorgeschlagene Wurzel eine Domänenprüfung überlebt.
 
-This guide follows the live Chapter 4 map (4.1–4.5). It spends most of its space on the rules themselves. A short closing block then shows how those rules appear in difficult True/False exam tasks.
+Dieser Leitfaden folgt der Live-Kapitel-4-Karte (4.1-4.5). Es verbringt den größten Teil seines Raums mit den Regeln selbst. Ein kurzer Schlussblock zeigt dann, wie diese Regeln in schwierigen Wahr/Falsch-Prüfungsaufgaben erscheinen.
 
-## Learning objectives
+## Lernziele
 
-- Reduce a linear equation to $Ax=B$ and classify unique / none / infinitely many solutions, including parameter cases.
-- Use the discriminant and Vieta on quadratics, and recognise degeneration when the leading coefficient vanishes.
-- Apply domain rules and extraneous-root checks for rational, radical, and absolute-value equations.
-- Use same-base rewriting, the substitution $u=a^{x}>0$, and log conversion with argument restrictions.
-- Separate algebraic roots from physical roots in fee, work-rate, and growth stories.
-- Judge True/False claims from the solved picture, not from slogans.
+- Reduzieren Sie eine lineare Gleichung auf $Ax=B$ und klassifizieren Sie eindeutige / keine / unendlich viele Lösungen, einschließlich Parameterfälle.
+Verwenden Sie die Diskriminante und Vieta auf der Quadratik und erkennen Degeneration, wenn der führende Koeffizient verschwindet.
+Anwendung von Domänenregeln und Fremd-Wurzel-Prüfungen auf rationale, radikale und absolute Gleichungen.
+Verwenden Sie das Umschreiben der gleichen Basis, die Substitution $u=a^{x}>0$ und die Protokollkonvertierung mit Argumentbeschränkungen.
+- Getrennte algebraische und stoffliche Ausgangserzeugnisse in gebührenpflichtigen, arbeitsplatzabhängigen und wachstumsbezogenen Geschichten.
+- Richter Wahr/Falsch Behauptungen aus dem gelösten Bild, nicht aus Slogans.
 
 ---
 
-## 4.1 Linear equations in one unknown
+## 4.1 Linear Gleichungen in one unknown
 
-### What “linear” means here
+### Was „linear hier bedeutet
 
-After expanding brackets and combining like terms, a linear equation in one unknown can always be written
+Nach dem Erweitern von Klammern und dem Kombinieren ähnlicher Begriffe kann eine lineare Gleichung in einer unbekannten immer geschrieben werden
 
 $$
 Ax=B,
 $$
 
-where $A$ and $B$ do not contain $x$. Every allowed move (adding the same quantity to both sides, multiplying both sides by a nonzero constant, clearing a common denominator) is meant to reach this form without changing the solution set, except for values you deliberately exclude because a denominator was zero.
+wobei $A$ und $B$ nicht $x$ enthalten. Jede erlaubte Bewegung (das Hinzufügen der gleichen Menge zu beiden Seiten, das Multiplizieren beider Seiten mit einer Nicht-Null-Konstante, das Löschen eines gemeinsamen Nenners) soll diese Form erreichen, ohne die Lösungsmenge zu ändern, mit Ausnahme von Werten, die Sie absichtlich ausschließen, weil ein Nenner Null war.
 
-### The three cases of $Ax=B$
+### Die drei Fälle von $Ax=B$
 
-| Condition | Meaning | Exam wording |
-| --- | --- | --- |
-| $A\neq 0$ | Unique solution $x=\dfrac{B}{A}$ | “exactly one solution”, “the unique equilibrium”, … |
-| $A=0$ and $B\neq 0$ | Contradiction: $0=B\neq 0$ | “no solution”, “impossible for every $x$” |
-| $A=0$ and $B=0$ | Identity: $0=0$ for every allowed $x$ | “true for all $x$”, “an identity”, “infinitely many solutions” |
+| Zustand | Bedeutung | Prüfungsformulierung |
+| --- | ---
+| $A\neq 0$ | Einzigartige Lösung $x=\dfrac{B}{A}$ | “genau eine Lösung”, “das einzigartige Gleichgewicht”, ... |
+| $A=0$ und $B\neq 0$ | Widerspruch: $0=B\neq 0$ | “keine Lösung”, “unmöglich für jeden $x$ ” |
+| $A=0$ und $B=0$ | Identität: $0=0$ für jeden erlaubten $x$ | „wahr für alle $x$ , „eine Identität, „unendlich viele Lösungen |
 
-These three cases are the core linear rule. Almost every parametric True/False claim is asking which of the three boxes you are in.
+Diese drei Fälle sind die lineare Kernregel. Fast jede parametrische Wahr/Falsch Behauptung fragt, in welcher der drei Boxen Sie sich befinden.
 
-**Rule.** An equation is an identity only when both $A=0$ and $B=0$ hold at the same time. A parameter appearing in the coefficients is not enough.
+**Regel.** Eine Gleichung ist nur dann eine Identität, wenn sowohl $A=0$ als auch $B=0$ gleichzeitig gelten. Ein Parameter, der in den Koeffizienten erscheint, reicht nicht aus.
 
 ### Clearing fractions
 
-If terms have denominators, multiply every term by a common multiple of those denominators (often their product). That step is allowed only away from the zeros of those denominators.
+Wenn Begriffe Nenner haben, multiplizieren Sie jeden Begriff mit einem gemeinsamen Vielfachen dieser Nenner (oft ihr Produkt). Dieser Schritt ist nur von den Nullen dieser Nenner erlaubt.
 
-**Rules when clearing fractions**
+**Regeln beim Clearing von Brüchen**
 
-1. List excluded values first: every denominator $\neq 0$.
-2. Multiply the entire equation by the common multiple, not just one side.
-3. Expand and collect into $Ax=B$.
-4. Solve, then reject any candidate that hits an excluded value (this matters more for rational equations in 4.3, but the habit starts here).
+1. Liste ausgeschlossene Werte zuerst: jeder Nenner $\neq 0$ .
+2. Multiplizieren Sie die gesamte Gleichung mit dem gemeinsamen Vielfachen, nicht nur mit einer Seite.
+3. Erweitern und Sammeln in $Ax=B$ .
+4. Lösen, dann lehnen Sie jeden Kandidaten ab, der einen ausgeschlossenen Wert erreicht (dies ist für rationale Gleichungen in 4.3 wichtiger, aber die Gewohnheit beginnt hier).
 
 ### Parameters
 
-When $A$ or $B$ depends on a parameter $a$, treat $a$ as temporarily fixed and solve for $x$. You obtain either
+Wenn $A$ oder $B$ von einem Parameter $a$ abhängt, behandeln Sie $a$ als vorübergehend fixiert und lösen Sie nach $x$ . Sie erhalten entweder
 
-- a formula $x=x(a)$ on the set where $A(a)\neq 0$, or
-- a special case $A(a)=0$, which must be classified with the three-case table above.
+- eine Formel $x=x(a)$ über die Menge, in der $A(a)\neq 0$ , oder
+- ein Spezialfall $A(a)=0$ , der mit der Drei-Fall-Tabelle oben klassifiziert werden muss.
 
-**Rules for parameter claims**
+**Regeln für Parameter Behauptungen**
 
-1. Write the excluded set for $a$ (denominators, and later any value that makes a model undefined).
-2. Form $A(a)$ and $B(a)$ carefully; a sign error here ruins every later claim.
-3. On $\{a:A(a)\neq 0\}$, study $x(a)=\dfrac{B(a)}{A(a)}$: sign charts, integer conditions, inequalities such as $x\geq 0$.
-4. On $\{a:A(a)=0\}$, decide separately whether $B(a)=0$ (identity) or $B(a)\neq 0$ (no solution).
-5. Never merge those two worlds. A claim “for every $a>3$ there is a unique negative $x$” is about the formula branch, not about an identity.
+1. Schreiben Sie die ausgeschlossene Menge für $a$ (Nenner und später jeder Wert, der ein Modell undefiniert macht).
+2. Form $A(a)$ und $B(a)$ sorgfältig; ein Zeichenfehler ruiniert hier jede spätere Behauptung.
+3. Auf $\{a:A(a)\neq 0\}$ , Studie $x(a)=\dfrac{B(a)}{A(a)}$ : Zeichendiagramme, Ganzzahlbedingungen, Ungleichungen wie $x\geq 0$ .
+4. Auf $\{a:A(a)=0\}$ entscheiden Sie separat, ob $B(a)=0$ (Identität) oder $B(a)\neq 0$ (keine Lösung).
+5. Verschmelze niemals diese beiden Welten. Eine Behauptung "für jeden $a>3$ gibt es ein einzigartiges Negativ $x$ " handelt vom Formelzweig, nicht von einer Identität.
 
-**Integer solutions.** If $x(a)$ simplifies to something like $-3+\dfrac{5}{3-a}$, then for integer $a\neq 3$ the value $x$ is integer exactly when $3-a$ divides $5$. That divisor language is a standard exam move.
+**Integrierte Lösungen.** Wenn $x(a)$ zu etwas wie $-3+\dfrac{5}{3-a}$ vereinfacht wird, dann ist der Wert $x$ genau dann ganzzahlig, wenn $3-a$ $5$ teilt. Diese Teilersprache ist ein Standard-Prüfungsschritt.
 
 ### Word models
 
-Fee, budget, and mixture stories are still linear equations. The extra rule is a physical filter: after solving, discard roots that violate an explicit restriction in the stem (positive price, nonnegative quantity, and so on). Algebra may allow a negative root; the story may not.
+Fee, Budget und Mixture Stories sind immer noch lineare Gleichungen. Die zusätzliche Regel ist ein physikalischer Filter: Nach dem Lösen verwerfen Sie Wurzeln, die eine explizite Einschränkung im Stamm verletzen (positiver Preis, nicht negative Menge usw.). Algebra kann eine negative Wurzel erlauben; die Geschichte kann nicht.
 
 ---
 
-## 4.2 Quadratic equations
+## 4.2 Quadratic Gleichungen
 
 ### Standard form
 
-A quadratic equation is
+Eine quadratische Gleichung ist
 
-$$
+ $$
 ax^{2}+bx+c=0\qquad\text{with }a\neq 0.
 $$
 
-The condition $a\neq 0$ is part of the definition. If a stem writes a formula that looks quadratic but allows $a=0$, you must leave the quadratic theory and fall back to the linear three-case rule.
+Die Bedingung $a\neq 0$ ist Teil der Definition. Wenn ein Stamm eine Formel schreibt, die quadratisch aussieht, aber $a=0$ erlaubt, müssen Sie die quadratische Theorie verlassen und auf die lineare Drei-Fall-Regel zurückgreifen.
 
 ### Discriminant rule
 
@@ -91,127 +91,127 @@ $$
 \Delta=b^{2}-4ac.
 $$
 
-| $\Delta$ | Real roots | How to think about it |
-| --- | --- | --- |
-| $\Delta>0$ | Two distinct real roots | The parabola crosses the axis twice. |
-| $\Delta=0$ | One real root, multiplicity two | The parabola touches once; still one $x$-value. |
-| $\Delta<0$ | No real roots | No real crossing. |
+| | | | | | | | | | | | | | | | | | | | | |
+| --- | ---
+| $\Delta>0$ | Zwei verschiedene reale Wurzeln | Das Parabel kreuzt die Achse zweimal. |
+| $\Delta=0$ | Eine echte Wurzel, Multiplizität zwei | Das Parabel berührt einmal; immer noch ein $x$ -Wert. |
+| $\Delta<0$ | Keine wirklichen Wurzeln | Keine wirkliche Kreuzung |
 
-The quadratic formula
+Die quadratische Formel
 
 $$
 x=\frac{-b\pm\sqrt{\Delta}}{2a}
 $$
 
-is available only when $\Delta\geq 0$ (for real solutions) and $a\neq 0$.
+ist nur verfügbar, wenn $\Delta\geq 0$ (für echte Lösungen) und $a\neq 0$ .
 
-**Rule.** “Number of real solutions” counts distinct real $x$-values unless the stem explicitly says “counting multiplicity”. A double root is one real solution with multiplicity two.
+**Regel.** "Zahl der realen Lösungen" zählt verschiedene reale $x$ -Werte, es sei denn, der Stamm sagt ausdrücklich "Multiplizität zählen". Eine doppelte Wurzel ist eine echte Lösung mit der Vielfalt zwei.
 
 ### Vieta’s rules
 
-When $a\neq 0$ and the roots $x_{1},x_{2}$ are real (counting multiplicity),
+Wenn $a\neq 0$ und die Wurzeln $x_{1},x_{2}$ reell sind (Multiplizität zählen),
 
 $$
 x_{1}+x_{2}=-\frac{b}{a},\qquad x_{1}x_{2}=\frac{c}{a}.
 $$
 
-**How to use them on True/False claims**
+**Wie man sie auf Wahr/Falsch Behauptungen verwendet**
 
-- Same sign of roots: need $x_{1}x_{2}>0$ (and usually also look at the sum to decide both positive or both negative).
-- Opposite signs: need $x_{1}x_{2}<0$, that is $\dfrac{c}{a}<0$.
-- Sum zero: $x_{2}=-x_{1}$ iff $b=0$.
+- Gleiches Zeichen von Wurzeln: brauchen $x_{1}x_{2}>0$ (und schauen Sie sich normalerweise auch die Summe an, um sowohl positiv als auch negativ zu entscheiden).
+Gegensätzliche Zeichen: brauchen $x_{1}x_{2}<0$ , das heißt $\dfrac{c}{a}<0$ .
+- Summe Null: $x_{2}=-x_{1}$ iff $b=0$ .
 
-**Rule.** $\Delta>0$ alone does **not** imply opposite signs. You need the product test as well.
+**Regel.** $\Delta>0$ allein bedeutet **nicht** gegensätzliche Zeichen. Sie benötigen auch den Produkttest.
 
-### Degeneration rule when the leading coefficient vanishes
+### Degenerationsregel, wenn der führende Koeffizient verschwindet
 
-If the stem is $(k-1)x^{2}+\cdots=0$ and $k=1$, the $x^{2}$ term disappears. The equation becomes linear (or a constant equation). Apply the linear cases.
+Wenn der Stamm $(k-1)x^{2}+\cdots=0$ und $k=1$ ist, verschwindet der Term $x^{2}$ . Die Gleichung wird linear (oder eine konstante Gleichung). Die linearen Fälle sind anzuwenden.
 
-**Rule.** “Leading coefficient zero ⇒ no solution” is False in general. It may become a perfectly solvable linear equation, or an identity, or a contradiction. You must check.
+**Regel.** "Leading coefficient zero ⇒ no Solution" ist generell Falsch. Es kann eine perfekt lösbare lineare Gleichung oder eine Identität oder ein Widerspruch werden. Sie müssen überprüfen.
 
-### Factoring and completing the square
+### Factoring und Vervollständigen des Quadrats
 
-Factoring over the reals is possible when $\Delta$ is a perfect square (for rational coefficients) or, more generally, when the roots are real. Completing the square rewrites
+Ein Faktorisieren über die Realen ist möglich, wenn $\Delta$ ein perfektes Quadrat ist (für rationale Koeffizienten) oder allgemeiner, wenn die Wurzeln real sind. Das Quadrat neu schreiben
 
 $$
 ax^{2}+bx+c=a\left(\left(x+\frac{b}{2a}\right)^{2}-\frac{\Delta}{4a^{2}}\right)
 $$
 
-and makes the vertex and the sign of $\Delta$ visible. Both methods obey the same discriminant rule; they are not a second theory.
+und macht den Scheitelpunkt und das Zeichen von $\Delta$ sichtbar. Beide Methoden gehorchen derselben diskriminierenden Regel; sie sind keine zweite Theorie.
 
 ### Substitution rule
 
-An equation in $x^{2}$ or $x+\dfrac{1}{x}$ is often quadratic in a new unknown $u$.
+Eine Gleichung in $x^{2}$ oder $x+\dfrac{1}{x}$ ist oft quadratisch in einem neuen unbekannten $u$ .
 
 **Rules**
 
-1. Define $u$ explicitly ($u=x^{2}$, $u=2^{x}$, …).
-2. Solve the quadratic for $u$.
-3. Translate each $u$-root back to $x$, using the range of $u$.
-4. Count final $x$-solutions carefully: each $u>0$ in $u=x^{2}$ gives two real $x$; $u=0$ gives one; $u<0$ gives none.
+1. Definieren Sie $u$ explizit ( $u=x^{2}$ , $u=2^{x}$ , ...).
+2. Lösen Sie die quadratische für $u$ .
+3. Übersetzen Sie jeden $u$ -Wurzel zurück zu $x$ , mit dem Bereich von $u$ .
+4. Endgültige $x$ -Lösungen sorgfältig zählen: jedes $u>0$ in $u=x^{2}$ gibt zwei reelle $x$ ; $u=0$ gibt eins; $u<0$ gibt keines.
 
 ### Applied parabolas
 
-For $P(q)=-(q-r)(q-s)$ with $r<s$:
+Für $P(q)=-(q-r)(q-s)$ mit $r<s$ :
 
-- roots are $q=r$ and $q=s$;
-- the axis is $q=\dfrac{r+s}{2}$;
-- because the leading behaviour is $-q^{2}$, one has $P(q)>0$ for $q\in(r,s)$ and $P(q)<0$ outside $[r,s]$.
+- Wurzeln sind $q=r$ und $q=s$ ;
+- die Achse ist $q=\dfrac{r+s}{2}$ ;
+- weil das führende Verhalten $-q^{2}$ ist, hat man $P(q)>0$ für $q\in(r,s)$ und $P(q)<0$ außerhalb $[r,s]$ .
 
-**Rule.** The axis location is not the same thing as the maximum value. The maximum value is $P$ evaluated at the axis.
+**Regel.** Die Achslage ist nicht dasselbe wie der Maximalwert. Der Maximalwert wird an der Achse $P$ ausgewertet.
 
 ---
 
-## 4.3 Rational, radical, and absolute-value equations
+## 4.3 Rationale, radikale und absolute Gleichungen
 
-### Rational equations: domain first
+### Rational Gleichungen: domain first
 
-A rational equation is an equality of rational expressions. The governing rule is:
+Eine rationale Gleichung ist eine Gleichheit von rationalen Ausdrücken. Die Regel lautet:
 
 **Domain first, algebra second, check last.**
 
-1. **Domain.** Every denominator $\neq 0$. Write the excluded set before you touch the LCD.
-2. **Clear.** Multiply by the LCD on the domain.
-3. **Solve** the polynomial equation you obtain.
-4. **Check.** Discard every candidate in the excluded set.
+1. **Domain.** Jeder Nenner $\neq 0$ . Schreiben Sie die ausgeschlossene Menge, bevor Sie das LCD berühren.
+2. ** Klar.** Multiplizieren Sie mit dem LCD auf der Domain.
+3. ** Löse die Polynom-Beziehung, die du erhältst.
+4. **Check.** Verwerfen Sie jeden Kandidaten in der ausgeschlossenen Menge.
 
-**Rule about cancellation.** If you cancel a factor $(x-c)$, the simplified equation no longer “sees” $x=c$. But if $x=c$ made an original denominator zero, it remains forbidden. You may not plug it back into the simplified formula and call that a value of the original left-hand side.
+**Regel über Stornierung.** Wenn Sie einen Faktor $(x-c)$ abbrechen, "sieht" die vereinfachte Gleichung nicht mehr $x=c$ . Aber wenn $x=c$ einen ursprünglichen Nenner Null gemacht hat, bleibt es verboten. Sie können es nicht wieder in die vereinfachte Formel stecken und nennen, dass ein Wert der ursprünglichen linken Seite.
 
-### Extraneous roots from clearing
+### Fremde Ursachen aus dem Clearing
 
-Multiplying by an LCD that depends on $x$ can, in principle, introduce extras if you multiply by zero. In practice, with a genuine LCD built from the denominators, the usual damage is the opposite: you must remember the holes you started with. Either way, the check against the domain is mandatory.
+Das Multiplizieren mit einem LCD, das von $x$ abhängt, kann im Prinzip Extras einführen, wenn Sie mit Null multiplizieren. In der Praxis, mit einem echten LCD aus den Nennern gebaut, ist der übliche Schaden das Gegenteil: Sie müssen sich an die Löcher erinnern, mit denen Sie begonnen haben. In jedem Fall ist die Überprüfung der Domain obligatorisch.
 
-### Work-rate and average-speed structure
+### Arbeitsgeschwindigkeit und durchschnittliche Geschwindigkeit
 
-A two-worker model often looks like
+Ein Zwei-Arbeiter-Modell sieht oft aus wie
 
 $$
 \frac{1}{x}+\frac{1}{x+d}=\frac{1}{T}
 $$
 
-with $x>0$, $x+d>0$, $T>0$. After clearing, you typically get a quadratic. Algebra may give two roots; the story keeps only those that satisfy the positivity (and any other stated) constraints.
+mit $x>0$ , $x+d>0$ , $T>0$ . Nach dem Clearing erhalten Sie normalerweise eine quadratische. Algebra kann zwei gründe geben; die geschichte enthält nur diejenigen, die die positivität (und andere angegebene) einschränkungen erfüllen.
 
-**Rule.** A negative root of the cleared equation is not automatically a solution of the original rate problem.
+**Regel.** Eine negative Wurzel der gelöschten Gleichung ist nicht automatisch eine Lösung des ursprünglichen Ratenproblems.
 
-### Radical equations: one-way implication of squaring
+### Radikale Gleichungen: Einweg-Implikation der Quadratur
 
-Even roots require nonnegative radicands. That is the domain rule.
+Sogar Wurzeln erfordern nicht-negative Radikale. Das ist die Domänenregel.
 
-The algebraic danger is different: if $U=V$, then $U^{2}=V^{2}$, but the converse is False. Squaring can turn a false equality into a true one. So:
+Die algebraische Gefahr ist anders: wenn $U=V$ , dann $U^{2}=V^{2}$ , aber das Gegenteil ist Falsch. Quadratur kann eine falsche Gleichheit in eine wahre verwandeln. Also:
 
-1. Write the domain (radicands $\geq 0$, and any other restrictions).
-2. Isolate a radical.
-3. Square both sides.
-4. Solve.
-5. **Test every candidate in the original equation** (and against the domain).
+1. Schreiben Sie die Domain (radicands $\geq 0$ , und alle anderen Einschränkungen).
+2. Einen Radikalen isolieren.
+3. Beide Seiten quadrieren.
+4. Lösen.
+5. **Testen Sie jeden Kandidaten in der ursprünglichen Gleichung** (und gegen die Domain).
 
-**Rule.** A candidate can fail for two different reasons: it leaves the domain, or it stays in the domain but does not satisfy the unsquared equation. Exam claims often confuse those two reasons. Read them carefully.
+**Regel.** Ein Kandidat kann aus zwei verschiedenen Gründen scheitern: Er verlässt die Domäne oder er bleibt in der Domäne, erfüllt aber die nicht quadrierte Gleichung nicht. Exam Behauptungen verwechseln oft diese beiden Gründe. Lesen Sie sie sorgfältig durch.
 
-Substitutions such as $u=\sqrt{f(x)}$ add the rule $u\geq 0$ by definition of the principal square root. Negative $u$-roots of the auxiliary quadratic are discarded even when the corresponding $x$ would have been in the radicand domain.
+Substitutionen wie $u=\sqrt{f(x)}$ fügen die Regel $u\geq 0$ durch Definition der Quadratwurzel hinzu. Negative $u$ -Wurzeln des Hilfsquadrats werden verworfen, selbst wenn das entsprechende $x$ im Radicandbereich gewesen wäre.
 
-### Absolute-value equations
+### Absolutwert-Gleichungen
 
-The definition
+Die Definition
 
 $$
 \lvert A\rvert=
@@ -221,35 +221,35 @@ A,& A\geq 0,\\
 \end{cases}
 $$
 
-implies the solving rule
+impliziert die Lösungsregel
 
-| Right-hand side | Solutions of $\lvert A\rvert=c$ |
-| --- | --- |
-| $c>0$ | $A=c$ or $A=-c$ |
+| Rechts | Lösungen von $\lvert A\rvert=c$ |
+| --- | ---
+| $c>0$ | $A=c$ oder $A=-c$ |
 | $c=0$ | $A=0$ |
-| $c<0$ | no real solution |
+| $c<0$ | keine wirkliche Lösung |
 
-**Geometric rule.** $\lvert x-a\rvert$ is distance from $x$ to $a$ on the line. So $\lvert x-a\rvert=\lvert x-b\rvert$ means $x$ is equidistant from $a$ and $b$, hence $x=\dfrac{a+b}{2}$.
+**Geometrische Regel.** $\lvert x-a\rvert$ ist der Abstand von $x$ zu $a$ auf der Linie. Also $\lvert x-a\rvert=\lvert x-b\rvert$ bedeutet $x$ ist äquidistant von $a$ und $b$ , daher $x=\dfrac{a+b}{2}$ .
 
-**Inequality companions** (often mixed into claims):
+**Ungleichheitsgefährten** (oft in Behauptungen gemischt):
 
 $$
 \lvert A\rvert<c\ (c>0)\ \Longleftrightarrow\ -c<A<c,
 $$
 
-$$
+ $$
 \lvert A\rvert>c\ (c>0)\ \Longleftrightarrow\ A<-c\text{ or }A>c.
 $$
 
-**Rule.** Identities such as $\lvert x+y\rvert=\lvert x\rvert+\lvert y\rvert$ are not always true. They fail when $x$ and $y$ have opposite signs.
+**Regel.** Identitäten wie $\lvert x+y\rvert=\lvert x\rvert+\lvert y\rvert$ sind nicht immer wahr. Sie scheitern, wenn $x$ und $y$ entgegengesetzte Anzeichen haben.
 
 ---
 
-## 4.4 Exponential and logarithmic equations
+## 4.4 Exponentielle und logarithmische Gleichungen
 
-### Same-base rule for exponentials
+### Gleiche Basisregel für Exponentiale
 
-If $a>0$ and $a\neq 1$, the map $t\mapsto a^{t}$ is one-to-one on $\mathbb{R}$. Therefore
+Wenn $a>0$ und $a\neq 1$ , ist die Karte $t\mapsto a^{t}$ eins zu eins auf $\mathbb{R}$ . Daher
 
 $$
 a^{f(x)}=a^{g(x)}
@@ -257,35 +257,35 @@ a^{f(x)}=a^{g(x)}
 f(x)=g(x).
 $$
 
-**Rule.** You must first rewrite both sides with the **same** base. $4^{x}=(2^{x})^{2}=2^{2x}$, $8^{x}=(2^{x})^{3}$, and so on.
+**Regel.** Sie müssen zuerst beide Seiten mit der **samen ** Basis umschreiben. $4^{x}=(2^{x})^{2}=2^{2x}$ $8^{x}=(2^{x})^{3}$ , und so weiter.
 
-### Range rule for $a^{x}$
+### Range Rule für $a^{x}$
 
-For $a>0$, $a\neq 1$,
+Für $a>0$ , $a\neq 1$
 
-$$
+ $$
 a^{x}>0\qquad\text{for every real }x.
 $$
 
-There is no real $x$ with $a^{x}\leq 0$. This single fact drives most exponential True/False traps after a substitution $u=a^{x}$.
+Es gibt kein echtes $x$ mit $a^{x}\leq 0$ . Diese einzelne Tatsache treibt die meisten exponentiellen Wahr/Falsch-Falle nach einer Substitution $u=a^{x}$ .
 
 ### Substitution $u=a^{x}$
 
-Many exam equations become quadratic in $u$:
+Many exam Gleichungen become quadratic in $u$:
 
-1. Rewrite every exponential in base $a$.
-2. Set $u=a^{x}$. Impose $u>0$.
-3. Solve the quadratic in $u$.
-4. Keep only positive $u$-roots.
-5. Return to $x=\log_{a} u$ (one real $x$ per positive $u$).
+1. Schreibe jeden Exponentialen in der Basis um $a$ .
+2. Menge $u=a^{x}$ .
+3. Lösen Sie die quadratische in $u$ .
+4. Halten Sie nur positiv $u$ -Wurzeln.
+5. Zurück zu $x=\log_{a} u$ (ein echtes $x$ pro positivem $u$ ).
 
-**Rule.** A negative or zero root of the $u$-quadratic is not an exponential solution, even if $\Delta>0$ for that quadratic.
+**Regel.** Eine negative oder nullte Wurzel der $u$ -Quadrat ist keine exponentielle Lösung, auch wenn $\Delta>0$ für diese Quadratik ist.
 
-If the $u$-quadratic has $\Delta<0$, there is no real $u$ and therefore no real $x$.
+Wenn das $u$ -Quadrat $\Delta<0$ hat, gibt es kein reales $u$ und daher kein reales $x$ .
 
 ### Logarithmic conversion rule
 
-For $b>0$, $b\neq 1$, and $A>0$,
+Für $b>0$ , $b\neq 1$ und $A>0$
 
 $$
 \log_{b} A=c
@@ -293,11 +293,11 @@ $$
 A=b^{c}.
 $$
 
-The argument restriction $A>0$ is mandatory. Changing the equation into exponential form does not remove it; you still verify $A>0$ at the end (and often up front).
+Die Argumentbeschränkung $A>0$ ist obligatorisch. Das Ändern der Gleichung in exponentielle Form entfernt sie nicht; Sie überprüfen immer noch $A>0$ am Ende (und oft vorne).
 
-### Logarithm algebra rules (with domain)
+### Logarithmus-Algebraregeln (mit Domäne)
 
-For $x>0$, $y>0$,
+Für $x>0$ , $y>0$
 
 $$
 \log_{b}(xy)=\log_{b} x+\log_{b} y,
@@ -307,153 +307,152 @@ $$
 \log_{b}(x^{r})=r\log_{b} x.
 $$
 
-**Rule.** The sum rule requires **each** factor positive. If $x<0$ and $y<0$, then $xy>0$ so $\log_{b}(xy)$ may exist, but $\log_{b} x$ and $\log_{b} y$ do not. Writing $\log_{b}(xy)=\log_{b} x+\log_{b} y$ in that case is False.
+**Regel.** Die Summenregel erfordert **jeden ** Faktor positiv. Wenn $x<0$ und $y<0$ , dann $xy>0$ so $\log_{b}(xy)$ kann existieren, aber $\log_{b} x$ und $\log_{b} y$ nicht. Schreiben $\log_{b}(xy)=\log_{b} x+\log_{b} y$ in diesem Fall ist Falsch.
 
 ### Growth models
 
-For $N(t)=N_{0}\cdot 2^{t/T}$ with $N_{0}>0$ and $T>0$:
+Für $N(t)=N_{0}\cdot 2^{t/T}$ mit $N_{0}>0$ und $T>0$ :
 
-- $N$ is always positive;
-- increasing $t$ by $T$ multiplies $N$ by $2$;
-- increasing $t$ by $2T$ multiplies $N$ by $4$, not by adding $2N_{0}$.
+- $N$ ist immer positiv;
+- Erhöhung $t$ um $T$ multipliziert $N$ um $2$ ;
+- Erhöhung von $t$ um $2T$ multipliziert $N$ mit $4$ , nicht durch Hinzufügen von $2N_{0}$ .
 
-**Rule.** Doubling is multiplication, not addition. After two doubling periods you have $4N_{0}$, never $3N_{0}$.
+**Regel.** Verdoppelung ist Multiplikation, nicht Addition. Nach zwei Verdopplungsperioden haben Sie $4N_{0}$ , niemals $3N_{0}$ .
 
 ---
 
-## 4.5 Mixed exam sets and True/False strategy
+## 4.5 Gemischte Prüfung Mengen und Wahr/Falsch Strategie
 
-Subsection 4.5 reuses the rules above inside fee, surplus, work-rate, and growth stories. The five claims A–E are independent.
+Unterabschnitt 4.5 verwendet die oben genannten Regeln für interne Gebühren, Überschüsse, Arbeitsraten und Wachstumsgeschichten wieder. Die fünf Behauptungen A–E sind unabhängig.
 
 ### Working order
 
-1. **Inventory.** Unknowns, parameters, domain exclusions, physical restrictions.
-2. **Classify.** Linear, quadratic, rational, radical, absolute value, exponential, or log.
-3. **Apply the matching rules** from 4.1–4.4, including degeneration cases.
-4. **Check** candidates against domain and story constraints.
-5. **Judge each claim** from that finished picture.
+1. **Inventar.** Unbekannte, Parameter, Domänenausschlüsse, physikalische Einschränkungen.
+2. **Klassifizieren.** Linear, quadratisch, rational, radikal, absolut, exponentiell oder log.
+3. ** Wenden Sie die Matching-Regeln** von 4.1-4.4 an, einschließlich Degenerationsfällen.
+4. ** Überprüfen Sie** Kandidaten gegen Domain- und Story-Einschränkungen.
+5. ** Beurteile jede Behauptung** aus diesem fertigen Bild.
 
-### What True/False claims usually test
+### Was Wahr/Falsch Behauptungen normalerweise testen
 
-| Claim type | Rule you need |
-| --- | --- |
-| Count of solutions | Discriminant, $Ax=B$ cases, or positive-$u$ filter |
-| Sign of a parameterised root | Sign chart of $x(a)$ |
-| “Identity for some $a$” | Simultaneous $A(a)=B(a)=0$ |
-| “Value at a cancelled hole” | Domain exclusion survives simplification |
-| “Opposite-sign roots” | Product $c/a$, not merely $\Delta>0$ |
-| Growth arithmetic | Multiply by powers of $2$, do not add |
+| Behauptungstyp | Regel, die Sie brauchen
+| --- | ---
+| Anzahl der Lösungen | Diskriminant, $Ax=B$ Fälle oder Positiv- $u$ Filter |
+| Zeichen einer parametrierten Wurzel | Zeichendiagramm von $x(a)$ |
+| “Identität für einige $a$ ” | Simultan $A(a)=B(a)=0$ |
+| „Wert an einem stornierten Loch | Domainausschluss überlebt Vereinfachung |
+| „Gegenzeichen Wurzeln | Produkt $c/a$ , nicht nur $\Delta>0$ |
+| Wachstumsarithmetik | Multiplizieren Sie mit Potenzen von $2$ , addieren Sie nicht |
 
-### Frequent False slogans
+### Frequent Falsch slogans
 
-| Slogan | Why it fails |
-| --- | --- |
-| Squaring preserves the solution set | Converse implication is false; extras appear. |
-| Cancelled hole may be evaluated | Original denominator still forbids that input. |
-| Leading coefficient $0$ ⇒ no solution | May become a solvable linear equation. |
-| $\Delta>0$ ⇒ opposite-sign roots | Need also $x_{1}x_{2}<0$. |
-| $\log(xy)=\log x+\log y$ with no checks | Each factor must be positive. |
-| $a^{x}$ can be negative | The range is $(0,\infty)$. |
-| Two doublings add $2N_{0}$ | They multiply by $4$. |
+Slogan Warum es scheitert
+| --- | ---
+| Quadratur bewahrt die Lösung Menge | Umgekehrte Implikation ist falsch; Extras erscheinen. |
+| Cancelled Hole kann ausgewertet werden | Der ursprüngliche Nenner verbietet diese Eingabe immer noch. |
+| Leitkoeffizient $0$ ⇒ keine Lösung | Kann zu einer lösbaren linearen Gleichung werden. |
+| $\Delta>0$ ⇒ Gegenzeichen Wurzeln | Brauchen Sie auch $x_{1}x_{2}<0$ . |
+| $\log(xy)=\log x+\log y$ ohne Überprüfungen | Jeder Faktor muss positiv sein. |
+T4 kann negativ sein. Der Bereich ist $(0,\infty)$ . |
+| Zwei Verdopplungen addieren $2N_{0}$ | Sie multiplizieren sich mit $4$ . |
 
 ---
 
 ## 4.6 A few difficult exam-style tasks
 
-The bank format is one stem and five independent True/False claims. The three tasks below are for practising the rules, not for replacing them. Read the matching section above before you mine these for patterns.
+Das Bankformat ist ein Stamm und fünf unabhängige Wahr/Falsch Behauptungen. Die drei folgenden Aufgaben dienen der Ausübung der Regeln, nicht deren Ersetzung. Lesen Sie den übereinstimmenden Abschnitt oben, bevor Sie diese nach Mustern suchen.
 
 ### Exam task 1 — Parametric linear equation
 
-For $a\neq -1$,
+Für $a\neq -1$
 
 $$
 \frac{ax-6}{a+1}+2=\frac{3x-a}{a+1}.
 $$
 
-**A.** For every $a>3$, the unique solution $x$ is strictly negative.  
-**B.** If $a\in(0,1)$, then $x$ is strictly positive.  
-**C.** There exists $a\neq -1$ for which the equation is an identity.  
-**D.** Exactly three distinct integers $a$ yield an integer solution $x$.  
-**E.** One has $x\geq 0$ if and only if $a\in\left[\dfrac{4}{3},3\right)$.
+**A.** Für jedes $a>3$ ist die einzigartige Lösung $x$ strikt negativ.
+**B.** Wenn $a\in(0,1)$ , dann ist $x$ streng positiv.
+**C.** Es gibt $a\neq -1$ , für die die Gleichung eine Identität ist.
+**D.** Genau drei verschiedene ganze Zahlen $a$ ergeben eine ganzzahlige Lösung $x$ .
+**E.** Man hat $x\geq 0$ if und nur wenn $a\in\left[\dfrac{4}{3},3\right)$ .
 
-**Solution (rules in action).**
+**Lösung (rules in action).**
 
 Clear $a+1$: $(a-3)x=4-3a$.
 
-- If $a\neq 3$, then $x=\dfrac{3a-4}{3-a}=-3+\dfrac{5}{3-a}$.
-- If $a=3$, then $0=4-9=-5\neq 0$: no solution.
-- Identity would need $a-3=0$ and $4-3a=0$ together: impossible.
+Wenn $a\neq 3$ , dann $x=\dfrac{3a-4}{3-a}=-3+\dfrac{5}{3-a}$ .
+- Wenn $a=3$ , dann $0=4-9=-5\neq 0$ : keine Lösung.
+- Identität würde $a-3=0$ und $4-3a=0$ zusammen brauchen: unmöglich.
 
-**A True:** for $a>3$, numerator $3a-4>0$ and denominator $3-a<0$, so $x<0$, and uniqueness holds.  
-**B False:** on $(0,1)$ one gets $x<0$.  
-**C False:** never both coefficients vanish.  
-**D False:** $x$ integer iff $3-a$ divides $5$, so $3-a\in\{\pm1,\pm5\}$, giving four integers $a\in\{2,4,8,-2\}$.  
-**E True:** sign chart of $\dfrac{3a-4}{3-a}$ on $\mathbb{R}\setminus\{-1,3\}$ yields $x\geq 0$ precisely on $\left[\tfrac{4}{3},3\right)$.
+**A Wahr:** für $a>3$ , Zähler $3a-4>0$ und Nenner $3-a<0$ , also $x<0$ , und Einzigartigkeit gilt.
+**B Falsch:** auf $(0,1)$ bekommt man $x<0$ .
+**C Falsch:** niemals beide Koeffizienten verschwinden.
+**D Falsch: $x$ integer iff $3-a$ dividiert $5$ , also $3-a\in\{\pm1,\pm5\}$ , was vier ganze Zahlen $a\in\{2,4,8,-2\}$ ergibt.
+**E Wahr:** Zeichendiagramm von $\dfrac{3a-4}{3-a}$ auf $\mathbb{R}\setminus\{-1,3\}$ liefert $x\geq 0$ genau auf $\left[\tfrac{4}{3},3\right)$ .
 
-**Answers:** A True, B False, C False, D False, E True.
+**Answers:** A Wahr, B Falsch, C Falsch, D Falsch, E Wahr.
 
-### Exam task 2 — Parameterized quadratic and degeneration
+### Prüfungsaufgabe 2 — Parametrisierte Quadratik und Degeneration
 
 $$
 (k-1)x^{2}-2(k+1)x+(2k-1)=0.
 $$
 
-**A.** A double real root occurs exactly at $k=0$ and $k=5$.  
-**B.** If $k=1$, there is no real solution.  
-**C.** Whenever the equation is quadratic and $\Delta>0$, the roots have opposite signs.  
-**D.** If $k=5$, the unique root is $x=\dfrac{3}{2}$.  
-**E.** For $k=0$, the substitution $x=y^{2}$ produces four distinct real $y$.
+**A.** Eine doppelte reale Wurzel tritt genau bei $k=0$ und $k=5$ auf.
+**B.** Wenn $k=1$ , gibt es keine wirkliche Lösung.
+**C.** Immer wenn die Gleichung quadratisch und $\Delta>0$ ist, haben die Wurzeln entgegengesetzte Vorzeichen.
+**D.** Wenn $k=5$ , ist die einzigartige Wurzel $x=\dfrac{3}{2}$ .
+**E.** Für $k=0$ erzeugt die Substitution $x=y^{2}$ vier verschiedene reelle $y$ .
 
-**Solution.**
+**Lösung.**
 
-For $k\neq 1$, $\Delta=4k(5-k)$, so $\Delta=0$ at $k=0$ and $k=5$.
+Für $k\neq 1$ , $\Delta=4k(5-k)$ , also $\Delta=0$ bei $k=0$ und $k=5$ .
 
-**A True.**  
-**B False:** $k=1$ gives $-4x+1=0$, so $x=\dfrac14$ (linear degeneration rule).  
-**C False:** opposite signs need $\dfrac{2k-1}{k-1}<0$; e.g. $k=2$ has $\Delta>0$ but product $3>0$.  
-**D True:** $k=5$ gives $(2x-3)^{2}=0$.  
-**E False:** $k=0$ forces $x=-1$; then $y^{2}=-1$ has no real $y$.
+**A Wahr.**
+**B Falsch: $k=1$ gibt $-4x+1=0$ , also $x=\dfrac14$ (lineare Degenerationsregel).
+**C Falsch:** Gegenzeichen brauchen $\dfrac{2k-1}{k-1}<0$ ; z.B. $k=2$ hat $\Delta>0$ aber Produkt $3>0$ .
+**D Wahr:** $k=5$ ergibt $(2x-3)^{2}=0$ .
+**E Falsch: $k=0$ forces $x=-1$ ; dann hat $y^{2}=-1$ kein wirkliches $y$ .
 
-**Answers:** A True, B False, C False, D True, E False.
+**Answers:** A Wahr, B Falsch, C Falsch, D Wahr, E Falsch.
 
-### Exam task 3 — Radical check versus domain, and an exponential range rule
+### Prüfungsaufgabe 3 - Radikale Überprüfung gegen Domäne und eine Exponentialbereichsregel
 
 Part I: $2x-5\sqrt{x+3}+3=0$.  
 Part II: $4^{x}-2^{x+2}+5=0$.
 
-**A.** The domain of Part I is $(-3,\infty)$.  
-**B.** With $u=\sqrt{x+3}$, exactly one admissible $u$ appears, giving unique $x=6$.  
-**C.** The candidate $x=-\dfrac{11}{4}$ fails only because it leaves the domain.  
-**D.** Part II becomes $u^{2}-4u+5=0$ with $u=2^{x}$.  
-**E.** Part II has no real solution.
+**A.** Die Domäne von Teil I ist $(-3,\infty)$ .
+**B.** Mit $u=\sqrt{x+3}$ erscheint genau ein zulässiges $u$ , was ein eindeutiges $x=6$ ergibt.
+**C.** Der Kandidat $x=-\dfrac{11}{4}$ scheitert nur, weil er die Domain verlässt.
+**D.** Teil II wird $u^{2}-4u+5=0$ mit $u=2^{x}$ .
+**E.** Teil II hat keine wirkliche Lösung.
 
-**Solution.**
+**Lösung.**
 
-Part I domain is $x\geq -3$. Then $u\geq 0$ and $2u^{2}-5u-3=0$ give $u=3$ or $u=-\tfrac12$; only $u=3$ survives, so $x=6$. The value $x=-\tfrac{11}{4}$ is still in the domain but comes from illegal $u<0$.
+Teil I Domain ist $x\geq -3$ . Dann geben $u\geq 0$ und $2u^{2}-5u-3=0$ $u=3$ oder $u=-\tfrac12$ ; nur $u=3$ überlebt, also $x=6$ . Der Wert $x=-\tfrac{11}{4}$ befindet sich immer noch in der Domain, kommt aber von illegal $u<0$ .
 
-Part II: $u=2^{x}>0$ yields $u^{2}-4u+5=0$ with $\Delta<0$, so no real $u$ and no real $x$.
+Teil II: $u=2^{x}>0$ liefert $u^{2}-4u+5=0$ mit $\Delta<0$ , also kein reales $u$ und kein reales $x$ .
 
-**A False** (domain is closed). **B True.** **C False** (domain is not the reason). **D True.** **E True.**
+**A Falsch** (Domain ist geschlossen). **B Wahr.** **C Falsch** (Domain ist nicht der Grund). **D Wahr. **E Wahr. **
 
-**Answers:** A False, B True, C False, D True, E True.
+**Answers:** A Falsch, B Wahr, C Falsch, D Wahr, E Wahr.
 
 ---
 
-## 4.7 Summary reference
+## 4.7 Zusammenfassung reference
 
-| Situation | Governing rule |
-| --- | --- |
-| $Ax=B$ | Unique / none / identity from $A$ and $B$. |
-| Parameter in linear equation | Formula branch if $A\neq 0$; separate case if $A=0$. |
-| Quadratic $a\neq 0$ | Read the number of real roots from $\Delta$. |
-| Leading coefficient becomes $0$ | Fall back to linear cases; do not invent emptiness. |
-| Vieta sign claims | Use product and sum; $\Delta>0$ is not enough for opposite signs. |
-| Rational equation | Domain → LCD → solve → reject holes. |
-| Radical equation | Domain → isolate → raise powers → check originals. |
-| $\lvert A\rvert=c$ | Use the $c>0$/ $c=0$/ $c<0$ table. |
-| Exponential in base $a$ | Same-base cancellation, or $u=a^{x}>0$. |
-| Logarithm | $\log_{b} A=c\Leftrightarrow A=b^{c}$ with $A>0$. |
-| Growth by doubling | Multiply; do not add. |
+| Situation | Regieren |
+| --- | ---
+| $Ax=B$ | Einzigartig / keine / Identität von $A$ und $B$ . |
+| Parameter in linearer Gleichung | Formelzweig wenn $A\neq 0$ ; separater Fall wenn $A=0$ . |
+| Quadratisch $a\neq 0$ | Lesen Sie die Anzahl der realen Wurzeln aus $\Delta$ . |
+| Leitkoeffizient wird $0$ | Fallen Sie zurück zu linearen Fällen; erfinden Sie keine Leere. |
+| Vieta-Zeichen Behauptungen | Verwenden Sie Produkt und Summe; $\Delta>0$ ist nicht genug für entgegengesetzte Zeichen. |
+| Rationale Gleichung | Domain → LCD → lösen → Löcher ablehnen. |
+| Radikale Gleichung | Domain → isolieren → Macht erhöhen → Originals prüfen |
+| $\lvert A\rvert=c$ | Verwenden Sie die Tabelle $c>0$ / $c=0$ / $c<0$ | Exponential in base $a$ | Same-base cancelment oder $u=a^{x}>0$ . |
+| Logarithmus | $\log_{b} A=c\Leftrightarrow A=b^{c}$ mit $A>0$ . |
+| Wachstum durch Verdoppelung | Multiplizieren; nicht hinzufügen |
 
 ### Key formulas
 
@@ -475,14 +474,14 @@ $$
 \log_{b} A=c\ \Longleftrightarrow\ A=b^{c}\ (A>0),
 $$
 
-$$
+ $$
 a^{x}>0\quad\text{for all real }x.
 $$
 
-### Self-check
+### Selbstkontrolle
 
-- State the three cases of $Ax=B$ without looking.
-- Why is “$\Delta>0$ ⇒ opposite-sign roots” False?
-- What are the two different reasons a radical candidate can fail?
-- Why is a nonpositive root of a $u=a^{x}$ quadratic useless?
-- After two doubling periods, is the amount $3N_{0}$ or $4N_{0}$?
+- Geben Sie die drei Fälle von $Ax=B$ an, ohne zu schauen.
+- Warum ist " $\Delta>0$ ⇒ gegensätzliche Vorzeichen Wurzeln" Falsch?
+Was sind die zwei verschiedenen Gründe, warum ein radikaler Kandidat scheitern kann?
+- Warum ist eine nicht positive Wurzel eines $u=a^{x}$ Quadrats nutzlos?
+- Ist nach zwei Verdopplungsperioden der Betrag $3N_{0}$ oder $4N_{0}$ ?

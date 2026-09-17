@@ -21,7 +21,7 @@
   "MATH 1.02": {
     "title": "Mengenschreibweise und Gleichheit von Mengen",
     "context": "Es seien $A = \\{x \\in Z: x^2 = 9\\}$ (Z = integers) und $B = \\{3, -3\\}$.",
-    "solution_overview": "Der Menge-Builder $A=\\{x\\in Z:x^{2}=9\\}$ enthält die ganzzahligen Lösungen von $x^{2}=9$. Lösen gibt $x=\\pm 3$, beide ganze Zahlen, also $$A=\\{-3,3\\}.$$ $B$ wird als $\\{3,-3\\}$ angegeben. Die Gleichheit der Mengen ist die Gleichheit der Mitgliedschaft, unabhängig von der Ordnung.",
+    "solution_overview": "Der Mengenschreibweise $A=\\{x\\in Z:x^{2}=9\\}$ enthält die ganzzahligen Lösungen von $x^{2}=9$. Lösen gibt $x=\\pm 3$, beide ganze Zahlen, also $$A=\\{-3,3\\}.$$ $B$ wird als $\\{3,-3\\}$ angegeben. Die Gleichheit der Mengen ist die Gleichheit der Mitgliedschaft, unabhängig von der Ordnung.",
     "statements": [
       "A = B.",
       "$3 \\in A$.",
@@ -30,11 +30,11 @@
       "Die Menge $C = \\{x \\in N: x^2 = 9\\}$ (N = natürliche Zahlen) ist gleich $\\{3, -3\\}$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nWiederherstellen $A$ aus dem Menge-Builder. Lösen Sie die definierende Gleichung in den ganzen Zahlen: $$x^{2}=9$$ $$x^{2}-9=0$$ $$(x-3)(x+3)=0$$ $$x-3=0$$ $$x=3$$ oder $$x+3=0$$ $$x=-3$$ Beide Wurzeln sind ganze Zahlen, also $$A=\\{-3,3\\}$$ $B$ wird als $\\{3,-3\\}$ angegeben. Vergleichen Sie die Mitgliedschaft in beiden Richtungen: $$-3\\in B$$ $$3\\in B$$ $$3\\in A$$ $$-3\\in A$$ Mengen ignore order, so $A=B$.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nFrom the set-builder,\n\n$$x^{2}=9$$\n\ngives the integer roots $\\pm 3$, so\n\n$$A=\\{-3,3\\}$$\n\nTest the claimed element:\n\n$$3^{2}=9$$\n\n$$3\\in Z$$\n\n$$3\\in A$$\n\nAlternatively, read the roster directly:\n\n$$3\\in\\{-3,3\\}$$\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nVom Menge-Builder sind die ganzzahligen Wurzeln $\\pm 3$: $$(-3)^{2}=9$$ $$-3\\in Z$$ $$3^{2}=9$$ $$3\\in Z$$ $$A=\\{-3,3\\}$$ Die Behauptung druckt nur $A$ als $\\{3\\}$. Weiterleitung $$\\{3\\}=\\{3\\}$$ $$A\\neq\\{3\\}$$ weil $-3$ in $A$ sitzt, aber nicht in $\\{3\\}$.\n\nDie Aussage ist falsch.",
+      "**A.** → Wahr\n\nWiederherstellen $A$ aus dem Mengenschreibweise. Lösen Sie die definierende Gleichung in den ganzen Zahlen: $$x^{2}=9$$ $$x^{2}-9=0$$ $$(x-3)(x+3)=0$$ $$x-3=0$$ $$x=3$$ oder $$x+3=0$$ $$x=-3$$ Beide Wurzeln sind ganze Zahlen, also $$A=\\{-3,3\\}$$ $B$ wird als $\\{3,-3\\}$ angegeben. Vergleichen Sie die Mitgliedschaft in beiden Richtungen: $$-3\\in B$$ $$3\\in B$$ $$3\\in A$$ $$-3\\in A$$ Mengen ignore order, so $A=B$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nAus dem Baukasten,\n\n$$x^{2}=9$$\n\ngibt die ganze Zahl Wurzeln $\\pm 3$, so\n\n$$A=\\{-3,3\\}$$\n\nTest an:\n\n$$3^{2}=9$$\n\n$$3\\in Z$$\n\n$$3\\in A$$\n\nAlternativ lesen Sie die Liste direkt:\n\n$$3\\in\\{-3,3\\}$$\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nVom Mengenschreibweise sind die ganzzahligen Wurzeln $\\pm 3$: $$(-3)^{2}=9$$ $$-3\\in Z$$ $$3^{2}=9$$ $$3\\in Z$$ $$A=\\{-3,3\\}$$ Die Behauptung druckt nur $A$ als $\\{3\\}$. Weiterleitung $$\\{3\\}=\\{3\\}$$ $$A\\neq\\{3\\}$$ weil $-3$ in $A$ sitzt, aber nicht in $\\{3\\}$.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nMächtigkeit zählt unterschiedliche Elemente. Die Rendite des Menge-Builders $$A=\\{-3,3\\}$$ Diese zwei Zahlen sind unterschied präsentiert $$-3\\neq 3$$ $$|A|=2$$ Die Aussage ist wahr.",
-      "**E.** → Falsch\n\nFiltern Sie die gleiche Gleichung mit $N=\\{1,2,3,\\ldots\\}$ anstelle von $Z$. Kandidaten aus $$x^{2}=9$$ are still $\\pm 3$, but $$3\\in N$$ $$-3\\notin N$$ So ergibt die natürliche Zahl Menge-Builder $$C=\\{3\\}$$ Die Behauptung entspricht $C$ mit $\\{3,-3\\}$. Vergleichen Sie: $$\\{3,-3\\}=\\{-3,3\\}$$ $$C\\neq\\{3,-3\\}$$ Die Aussage ist falsch."
+      "**E.** → Falsch\n\nFiltern Sie die gleiche Gleichung mit $N=\\{1,2,3,\\ldots\\}$ anstelle von $Z$. Kandidaten aus $$x^{2}=9$$ are still $\\pm 3$, but $$3\\in N$$ $$-3\\notin N$$ So ergibt die natürliche Zahl Mengenschreibweise $$C=\\{3\\}$$ Die Behauptung entspricht $C$ mit $\\{3,-3\\}$. Vergleichen Sie: $$\\{3,-3\\}=\\{-3,3\\}$$ $$C\\neq\\{3,-3\\}$$ Die Aussage ist falsch."
     ]
   },
   "MATH 1.03": {
@@ -46,14 +46,14 @@
       "$\\{a, b\\}$ ist ein Element von A.",
       "$\\emptyset$ ist eine Teilmenge von A.",
       "A ist eine richtige Teilmenge von A.",
-      "Es gibt genau 3 Untergruppen von A, die genau 2 Elemente enthalten."
+      "Es gibt genau 3 Teilmengen von A, die genau 2 Elemente enthalten."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nHier hat $A=\\{a,b,c\\}$ drei Grundelemente. Jede kann bei der Erstellung einer Teilmenge unabhängig voneinander einbezogen oder weggelassen werden: $$|A|=3$$ $$|\\mathcal{P}(A)|=2^{|A|}$$ $$|\\mathcal{P}(A)|=2^{3}$$ $$2^{3}=8$$ Die Potenzmenge hat daher $8$ Elemente.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDie Elemente von $A$ sind die Buchstaben $a$, $b$ und $c$:\n\n$$A=\\{a,b,c\\}$$\n\nDas Objekt $\\{a,b\\}$ ist eine Anzahl von Buchstaben, nicht ein Buchstabe:\n\n$$\\{a,b\\}\\neq a$$\n\n$$\\{a,b\\}\\neq b$$\n\n$$\\{a,b\\}\\neq c$$\n\n$$\\{a,b\\}\\notin A$$\n\nEs ist eine Teilmenge von $A$, also\n\n$$\\{a,b\\}\\subseteq A$$\n\n$$\\{a,b\\}\\in\\mathcal{P}(A)$$\n\nAber das ist nicht die Behauptung.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nSubsethood fragt, ob jedes Element der linken Menge in $A$ sitzt. Die leere Menge hat überhaupt keine Elemente, so die Implikation $$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in A)$$ is vacuously wahr. Daher $$\\emptyset\\subseteq A$$ Die Aussage ist wahr.",
       "**D.** → Falsch\n\nProper inclusion needs ordinary inclusion plus a genuine Differenz: $$X\\subsetneq Y\\iff(X\\subseteq Y)\\wedge(X\\neq Y)$$ Überprüfen Sie jede Hälfte für $X=Y=A$: $$A\\subseteq A$$ $$A=A$$ $$A\\neq A$$ is falsch. Daher ist $A$ keine richtige Teilmenge von $A$.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nZwei-E hat, Nägel, Kohäsionsfonds $$\\binom{3}{2}=\\frac{3!}{2!\\,1!}$$ $$3!=3\\cdot 2\\cdot 1$$ $$3!=6$$ $$2!=2\\cdot 1$$ $$2!=2$$ $$1!=1$$ $$\\binom{3}{2}=\\frac{6}{2\\cdot 1}$$ $$\\binom{3}{2}=\\frac{6}{2}$$ $$\\binom{3}{2}=3$$ Zuweisen, indem Sie die $$\\{a,b\\}$$ $$\\{a,c\\}$$ $$\\{b,c\\}$$ Genau drei solcher Untergruppen.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nZwei-E hat, Nägel, Kohäsionsfonds $$\\binom{3}{2}=\\frac{3!}{2!\\,1!}$$ $$3!=3\\cdot 2\\cdot 1$$ $$3!=6$$ $$2!=2\\cdot 1$$ $$2!=2$$ $$1!=1$$ $$\\binom{3}{2}=\\frac{6}{2\\cdot 1}$$ $$\\binom{3}{2}=\\frac{6}{2}$$ $$\\binom{3}{2}=3$$ Zuweisen, indem Sie die $$\\{a,b\\}$$ $$\\{a,c\\}$$ $$\\{b,c\\}$$ Genau drei solcher Teilmengen.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 1.04": {
@@ -63,14 +63,14 @@
     "statements": [
       "$\\emptyset \\subseteq D$",
       "$\\emptyset \\in D$",
-      "D has exactly 8 subsets",
+      "D hat genau 8 Teilmengen",
       "Beide $\\{a\\} \\subseteq D$ und $\\{a\\} \\in D$ sind wahr",
       "$D \\subseteq D$"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nSubsethood of $\\emptyset$ is vacuous: there is no witness that could sit outside $D$.\n\n$$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in D)$$\n\nholds for every set $D$. With\n\n$$D=\\{a,b,c\\}$$\n\nwe conclude\n\n$$\\emptyset\\subseteq D$$\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nDas ist die Teilmenge der Teilmenge der ihn ist. Es ist ein einfacher.\n\n$$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in D)$$\n\ngilt für jede Menge $D$. mit\n\n$$D=\\{a,b,c\\}$$\n\nwe conclude\n\n$$\\emptyset\\subseteq D$$\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDie Mitgliedschaft fragt, ob das Objekt selbst auf der Liste von $D$ erscheint: $$D=\\{a,b,c\\}$$ Die drei Elemente sind die Buchstaben $a$, $b$ und $c$: $$\\emptyset\\neq a$$ $$\\emptyset\\neq b$$ $$\\emptyset\\neq c$$ $$\\emptyset\\notin D$$ Die Aussage ist falsch.",
-      "**C.** → Wahr\n\nDie Anzahl der Untergruppen ist die Größe der Potenzmenge: $$|D|=3$$ $$|\\mathcal{P}(D)|=2^{|D|}$$ $$|\\mathcal{P}(D)|=2^{3}$$ $$2^{3}=8$$ So $D$ has exactly $8$ subsets.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDie Anzahl der Teilmengen ist die Größe der Potenzmenge: $$|D|=3$$ $$|\\mathcal{P}(D)|=2^{|D|}$$ $$|\\mathcal{P}(D)|=2^{3}$$ $$2^{3}=8$$ So $D$ has exactly $8$ subsets.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nÜberprüfen Sie die beiden Behauptungen separat. First inclusion: $$\\{a\\}\\subseteq D$$ Weil $a\\in D=\\{a,b,c\\}$. Der Halbwert ist eindeutig. Next membership: $$\\{a\\}\\neq a$$ $$\\{a\\}\\neq b$$ $$\\{a\\}\\neq c$$ $$\\{a\\}\\notin D$$ Die Konjunktion \"beide sind wahr\" scheitert, weil die Mitgliedschaftshälfte falsch ist.\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nJede Menge ist eine Teilmenge ihrer selbst. Mit $D=\\{a,b,c\\}$, die Bedingung $$\\forall x\\,(x\\in D\\Rightarrow x\\in D)$$ gilt für $a$, $b$ und $c$. Somit $$D\\subseteq D$$ Die Aussage ist wahr."
     ]
@@ -109,8 +109,8 @@
       "**A.** → Wahr\n\nSchnittmenge enthält Elemente in $A$ und $B$. $$A=\\{2,4,6,8,10\\}$$ $$B=\\{3,6,9,12\\}$$ $$2\\in A$$ $$2\\notin B$$ $$4\\in A$$ $$4\\notin B$$ $$6\\in A$$ $$6\\in B$$ $$8\\in A$$ $$8\\notin B$$ $$10\\in A$$ $$10\\notin B$$ $$A\\cap B=\\{6\\}$$ Die Aussage ist wahr.",
       "**B.** → Wahr\n\n... nutzen... Streckt zwischen den drei Streckungen: $$|A|=5$$ $$|B|=4$$ $$|A\\cap B|=1$$ Weil $A\\cap B=\\{6\\}$ Platin $$|A\\cup B|=|A|+|B|-|A\\cap B|$$ $$|A|+|B|=5+4$$ $$5+4=9$$ $$|A\\cup B|=9-1$$ $$|A\\cup B|=8$$ Die Aussage ist wahr.",
       "**C.** → Falsch\n\nDifferenz $C\\setminus A$ enthält Elemente von $C$ die nicht in $A$. $$C=\\{1,2,3,4,5\\}$$ $$A=\\{2,4,6,8,10\\}$$ $$1\\in C$$ $$1\\notin A$$ $$2\\in C$$ $$2\\in A$$ $$3\\in C$$ $$3\\notin A$$ $$4\\in C$$ $$4\\in A$$ $$5\\in C$$ $$5\\notin A$$ $$C\\setminus A=\\{1,3,5\\}$$ Die Behauptung listet $\\{1,3\\}$ auf, was $5$ fällt.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nDifference $B\\setminus C$ keeps members of $B$ that miss $C$.\n\n$$B=\\{3,6,9,12\\}$$\n\n$$C=\\{1,2,3,4,5\\}$$\n\n$$3\\in B$$\n\n$$3\\in C$$\n\n$$6\\in B$$\n\n$$6\\notin C$$\n\n$$9\\in B$$\n\n$$9\\notin C$$\n\n$$12\\in B$$\n\n$$12\\notin C$$\n\n$$B\\setminus C=\\{6,9,12\\}$$\n\nThe claim lists $\\{3,6,9,12\\}$, which still includes $3$.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nIntersection of $A$ and $C$:\n\n$$A=\\{2,4,6,8,10\\}$$\n\n$$C=\\{1,2,3,4,5\\}$$\n\n$$2\\in A$$\n\n$$2\\in C$$\n\n$$4\\in A$$\n\n$$4\\in C$$\n\n$$6\\in A$$\n\n$$6\\notin C$$\n\n$$8\\in A$$\n\n$$8\\notin C$$\n\n$$10\\in A$$\n\n$$10\\notin C$$\n\n$$A\\cap C=\\{2,4\\}$$\n\nThe claim lists $\\{2,4,6\\}$, which incorrectly keeps $6$.\n\nDie Aussage ist falsch."
+      "**D.** → Falsch\n\nDifferenz $B\\setminus C$ enthält Elemente von $B$ die nicht in $C$.\n\n$$B=\\{3,6,9,12\\}$$\n\n$$C=\\{1,2,3,4,5\\}$$\n\n$$3\\in B$$\n\n$$3\\in C$$\n\n$$6\\in B$$\n\n$$6\\notin C$$\n\n$$9\\in B$$\n\n$$9\\notin C$$\n\n$$12\\in B$$\n\n$$12\\notin C$$\n\n$$B\\setminus C=\\{6,9,12\\}$$\n\nverwandelt, bei der diegierigen Würmer mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern mit den Würmern\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nSchnittmenge von $A$ und $C$:\n\n$$A=\\{2,4,6,8,10\\}$$\n\n$$C=\\{1,2,3,4,5\\}$$\n\n$$2\\in A$$\n\n$$2\\in C$$\n\n$$4\\in A$$\n\n$$4\\in C$$\n\n$$6\\in A$$\n\n$$6\\notin C$$\n\n$$8\\in A$$\n\n$$8\\notin C$$\n\n$$10\\in A$$\n\n$$10\\notin C$$\n\n$$A\\cap C=\\{2,4\\}$$\n\nDie Verbundenen, die falsch enthält\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 1.07": {
@@ -128,7 +128,7 @@
       "**A.** → Wahr\n\nIndien, dass in der Nähe und in der nahen und nahen und nahen. $$|M|=30$$ $$|E|=25$$ $$|M\\cap E|=12$$ $$|M\\cup E|=|M|+|E|-|M\\cap E|$$ $$|M|+|E|=30+25$$ $$30+25=55$$ $$|M\\cup E|=55-12$$ $$|M\\cup E|=43$$ Die Aussage ist wahr.",
       "**B.** → Wahr\n\nDie Kohorte hat $50$ Studenten und der vorherige Brief gibt $$|M\\cup E|=43$$ Studenten in beiden Kursen sitzen in der Ergänzung der Vereinigung: $$|U\\setminus(M\\cup E)|=|U|-|M\\cup E|$$ $$|U|=50$$ $$50-43=7$$ Die Aussage ist wahr.",
       "**C.** → Wahr\n\nNur Mathematik ist Mathematik minus Überlapp:: $$|M\\setminus E|=|M|-|M\\cap E|$$ $$|M|=30$$ $$|M\\cap E|=12$$ $$30-12=18$$ $$|M\\setminus E|=18$$ Die Aussage ist wahr.",
-      "**D.** → Falsch\n\nInclusion $E\\subseteq M$ would require every Economics student to also take Mathematics, so in particular\n\n$$|E|\\le|M|$$\n\nand more strongly\n\n$$E\\cap M=E$$\n\n$$|E\\cap M|=|E|$$\n\nBut the data give\n\n$$|E\\cap M|=12$$\n\n$$|E|=25$$\n\n$$12\\neq 25$$\n\nso $E\\not\\subseteq M$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nInklusion $E\\subseteq M$ würde erfordern, dass jeder Wirtschaftswissenschaftler auch Mathematik, so insbesondere\n\n$$|E|\\le|M|$$\n\nund Kurs am\n\n$$E\\cap M=E$$\n\n$$|E\\cap M|=|E|$$\n\nAber die Daten geben\n\n$$|E\\cap M|=12$$\n\n$$|E|=25$$\n\n$$12\\neq 25$$\n\nso $E\\not\\subseteq M$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDisjointness requires empty Schnittmenge: $$|M\\cap E|=0$$ Die angegebene Überlappung ist $$|M\\cap E|=12$$ $$12\\neq 0$$ $M$ und $E$ sind also nicht disjunkt.\n\nDie Aussage ist falsch."
     ]
   },
@@ -182,7 +182,7 @@
       "$A^{c} \\cup B^{c} = \\{1, 2, 3, 9, 10\\}$"
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nFirst form the union:\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nComplement relative to $U=\\{1,2,\\ldots,10\\}$:\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nThe claim lists $\\{8,9,10\\}$. But\n\n$$8\\in B$$\n\n$$8\\in A\\cup B$$\n\n$$8\\notin(A\\cup B)^{c}$$\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nDie erste Form der\n\n$$A=\\{1,2,3,4,5\\}$$\n\n$$B=\\{4,5,6,7,8\\}$$\n\n$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$\n\nauf das TEHEN NEIN TEHT ERNÄUsTEN\n\n$$9\\notin A\\cup B$$\n\n$$10\\notin A\\cup B$$\n\n$$(A\\cup B)^{c}=\\{9,10\\}$$\n\nDie Verdrängungsverläufe sind durch Verdrängungsstere. Durch\n\n$$8\\in B$$\n\n$$8\\in A\\cup B$$\n\n$$8\\notin(A\\cup B)^{c}$$\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nBrege die auf die $$(A\\cap B)^{c}=A^{c}\\cup B^{c}$$ Berechnen Sie beide Seiten. Schnittmenge: $$A\\cap B=\\{4,5\\}$$ $$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$ Complements: $$A^{c}=\\{6,7,8,9,10\\}$$ $$B^{c}=\\{1,2,3,9,10\\}$$ $$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$ Beide Seiten stimmen überein.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nDie zusammenge, und die zusammengehören dem....... $$A^{c}=\\{6,7,8,9,10\\}$$ $$B^{c}=\\{1,2,3,9,10\\}$$ $$6\\in A^{c}$$ $$6\\notin B^{c}$$ $$7\\in A^{c}$$ $$7\\notin B^{c}$$ $$8\\in A^{c}$$ $$8\\notin B^{c}$$ $$9\\in A^{c}$$ $$9\\in B^{c}$$ $$10\\in A^{c}$$ $$10\\in B^{c}$$ $$A^{c}\\cap B^{c}=\\{9,10\\}$$ Die Behauptung listet $\\{6,7,8,9,10\\}$ auf, was eher $A^{c}$ als die Schnittmenge ist.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nSchnittmenge first: $$A\\cap B=\\{4,5\\}$$ Komplement in $U=\\{1,2,\\ldots,10\\}$ removes $4$ und $5$: $$1\\notin A\\cap B$$ $$2\\notin A\\cap B$$ $$3\\notin A\\cap B$$ $$6\\notin A\\cap B$$ $$7\\notin A\\cap B$$ $$8\\notin A\\cap B$$ $$9\\notin A\\cap B$$ $$10\\notin A\\cap B$$ $$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$ Die Aussage ist wahr.",
@@ -211,7 +211,7 @@
   "MATH 1.12": {
     "title": "Zählen von Teilmengen",
     "context": "Es sei ein Betrag mit $\\lvert A \\rvert = 5$.",
-    "solution_overview": "Let $A$ be a set with $\\lvert A \\rvert = 5$. Each subset is an include/exclude choice for every element, so\n\n$$2^{5} = 32$$\n\nsubsets in total.\n\n„Verdienen Sie, wenn Sie nicht????:. verkehrs Zählt s. Hilfe Konzert gebenen.. Die swertes datum der marktbeherrschung.??? Boot Kursgier",
+    "solution_overview": "Es sei $A$ eine Menge mit $\\lvert A \\rvert = 5$. Jeder Teilmenge ist eineblends/- wahl für jedes Element.\n\n$$2^{5} = 32$$\n\nsubsets in total.\n\nRichtige Untermengen fallen $A$ selbst. Nonempty Untermengen fallen $\\emptyset$. Die gewölbter Kopf, verwendet werden, verwendet werden, die gedimensionierten Subsets sind diejenigen mit.",
     "statements": [
       "die möglichkeit von gruppen ist:",
       "Die Anzahl der richtigen Teilmengen von A ist 31.",
@@ -224,7 +224,7 @@
       "**B.** → Wahr\n\nRichtige Untermengen sind alle Untermengen außer $A$ selbst: $$|\\mathcal{P}(A)|=2^{5}$$ $$2^{5}=32$$ $$|\\mathcal{P}(A)|-1=32-1$$ $$32-1=31$$ Die Aussage ist wahr.",
       "**C.** → Falsch\n\nTeilmengen der Größe $4$ werden gezählt $$\\binom{5}{4}=\\frac{5!}{4!\\,1!}$$ $$5!=5\\cdot 4\\cdot 3\\cdot 2\\cdot 1$$ $$5!=120$$ $$4!=24$$ $$1!=1$$ $$\\binom{5}{4}=\\frac{120}{24\\cdot 1}$$ $$\\binom{5}{4}=\\frac{120}{24}$$ $$\\binom{5}{4}=5$$ Die Behauptung sagt $10$, aber die Zählung ist $5$.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nNicht leere Untermengen schließen nur $\\emptyset$ aus: $$|\\mathcal{P}(A)|=32$$ $$|\\mathcal{P}(A)|-1=32-1$$ $$32-1=31$$ Die Aussage ist wahr.",
-      "**E.** → Falsch\n\nGerade große Untergruppen haben die Größe $0$, $2$, oder $4$: $$\\binom{5}{0}=1$$ $$\\binom{5}{2}=\\frac{5\\cdot 4}{2\\cdot 1}$$ $$5\\cdot 4=20$$ $$2\\cdot 1=2$$ $$\\frac{20}{2}=10$$ $$\\binom{5}{2}=10$$ $$\\binom{5}{4}=5$$ Sum: $$1+10=11$$ $$11+5=16$$ Die geradzahlige Zahl ist $16$, nicht $15$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nGerade große Teilmengen haben die Größe $0$, $2$, oder $4$: $$\\binom{5}{0}=1$$ $$\\binom{5}{2}=\\frac{5\\cdot 4}{2\\cdot 1}$$ $$5\\cdot 4=20$$ $$2\\cdot 1=2$$ $$\\frac{20}{2}=10$$ $$\\binom{5}{2}=10$$ $$\\binom{5}{4}=5$$ Sum: $$1+10=11$$ $$11+5=16$$ Die geradzahlige Zahl ist $16$, nicht $15$.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 1.13": {
@@ -241,7 +241,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nSchreiben Sie die Intervallbedingungen: $$A=(0,10]\\iff 0<x\\le 10$$ $$B=[5,15)\\iff 5\\le x<15$$ An beide und an die Abge Ähnlich $$0<x\\le 10$$ $$5\\le x<15$$ Die strengere untere Grenze ist $5$ und die strengere obere Grenze ist $10$: $$5\\le x\\le 10$$ $$A\\cap B=[5,10]$$ Die Aussage ist wahr.",
       "**B.** → Falsch\n\nAus der aus der Aushinaus den aus mindestens oder\n\n$$0<x\\le 10$$\n\n$$5\\le x<15$$\n\nThe leftmost points come from $A$, so $x>0$. The rightmost points come from $B$, so $x<15$. At the right endpoint of $A$:\n\n$$10\\in A$$\n\n$$10<15$$\n\nreiswerte ich ich ich ich ich siemittel dieantien sie f Hinweisen ich Dadurch...: Is...... ich zu... ich...sen ich... ich.........sorn f... Homen...................................................... \"sen............................................................................ P ist ohne P 2 oder Auch $A$ enthält niemals � s.\n\n$$A\\cup B=(0,15)$$\n\nDie Behauptung schreibt �artige �� Kapazitäten, die innen- und und ��Ovez ��Ovez ��Ovez ).\n\nDie Aussage ist falsch.",
-      "**C.** → Wahr\n\nTest $x=10$ against both intervals:\n\n$$0<10\\le 10$$\n\nso $10\\in A$. And\n\n$$5\\le 10<15$$\n\nso $10\\in B$. Therefore\n\n$$10\\in A\\cap B$$\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nAus durchschnittlich verwandelte e aus durchschnittlichhassen mit dem Äissen mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem Mittel mit dem\n\n$$0<10\\le 10$$\n\nEs ist so, als ob es sich um ein und\n\n$$5\\le 10<15$$\n\n$10\\in B$ Daher\n\n$$10\\in A\\cap B$$\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nDifferenz $A\\setminus B$ needs $x\\in A$ und $x\\notin B$. Test $x=5$: $$5\\le 5<15$$ so $5\\in B$. Daher $$5\\notin A\\setminus B$$ obwohl $5\\in A$, weil $0<5\\le 10$.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie Implikation $x\\in A\\Rightarrow x\\in B$ fällt aus, wenn etwasen Punkt erhöhtes $A$ verfehlt. Nehmen\n\n$$x=1$$\n\n$$0<1\\le 10$$\n\nso $1\\in A$. But\n\n$$5\\le 1<15$$\n\nist falsch, also $1\\notin B$. Die Implikation gilt nicht für alle $x$.\n\nDie Aussage ist falsch."
     ]
@@ -258,7 +258,7 @@
       "Die Anzahl derer, die es so öfter hat, ist werter, ist die die"
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nThree-set inclusion-exclusion:\n\n$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|B\\cap C|-|A\\cap C|+|A\\cap B\\cap C|$$\n\nPlug in the survey counts one term at a time:\n\n$$|A|=80$$\n\n$$|B|=70$$\n\n$$|C|=60$$\n\n$$|A|+|B|=80+70$$\n\n$$80+70=150$$\n\n$$150+|C|=150+60$$\n\n$$150+60=210$$\n\n$$|A\\cap B|=30$$\n\n$$210-30=180$$\n\n$$|B\\cap C|=25$$\n\n$$180-25=155$$\n\n$$|A\\cap C|=20$$\n\n$$155-20=135$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$135+10=145$$\n\n$$|A\\cup B\\cup C|=145$$\n\nThe claim says $155$, which is not the computed value.\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nAusd zufolge vonaus\n\n$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|B\\cap C|-|A\\cap C|+|A\\cap B\\cap C|$$\n\nInnichtsnichtn, existierte in der Folge, in der er sich nicht begleichen wird.\n\n$$|A|=80$$\n\n$$|B|=70$$\n\n$$|C|=60$$\n\n$$|A|+|B|=80+70$$\n\n$$80+70=150$$\n\n$$150+|C|=150+60$$\n\n$$150+60=210$$\n\n$$|A\\cap B|=30$$\n\n$$210-30=180$$\n\n$$|B\\cap C|=25$$\n\n$$180-25=155$$\n\n$$|A\\cap C|=20$$\n\n$$155-20=135$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$135+10=145$$\n\n$$|A\\cup B\\cup C|=145$$\n\nDie Behauptung sagt $155$, was nicht der berechnete Wert ist.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nweckt, wie die $$|A\\cup B\\cup C|=145$$ Touristen außerhalb aller drei Museen: $$150-|A\\cup B\\cup C|=150-145$$ $$150-145=5$$ Die Aussage ist wahr.",
       "**C.** → Falsch\n\nDie??:, verwandelt sich, und nicht die::.\n\n$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$\n\n$$|A\\cap B|=30$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$30-10=20$$\n\nDer Index istverständnis (S Tierante r Überhöhung) ist der von Überhöhungsfaktor.\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nVerbunden: Nächsten mit dem Nächsten mit dem Nächsten mit dem Nächsten mit dem Nächsten mit dem Nächsten mit dem Nächsten mit dem Nächsten mit dem Nächsten mit Nächsten mit dere. Die richtige Zählung ist\n\n$$|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|$$\n\ngegenstands- und gegenstands- und gegenstands- und mündsese- und bzw. inter vers unionsschn am halts- und.\n\n$$|A|=80$$\n\n$$|A\\cap B|=30$$\n\n$$80-30=50$$\n\n$$|A\\cap C|=20$$\n\n$$50-20=30$$\n\n$$|A\\cap B\\cap C|=10$$\n\n$$30+10=40$$\n\nDiesem Bericht kündigte erst die $80-30-20=30$ die $+$ dreifache Korrektur, so ist es falsch.\n\nDie Aussage ist falsch.",
@@ -281,7 +281,7 @@
       "**B.** → Falsch\n\n............... bei swerte..... mein.......................................................................................................... Die Karte $$f:N\\to E,\\qquad f(n)=2n$$ is a bijection: $$f(1)=2$$ $$f(2)=4$$ $$f(3)=6$$ und deren Folgen. Daher $$|E|=|N|$$ even though $E\\subsetneq N$. Der Finite-Menge-Slogan „richtige Teilmenge $\\Rightarrow$ strikt kleiner scheitert hier.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nDie Regel $f(n)=2n$ sendet Naturals an Even Naturals: $$f(1)=2$$ $$f(2)=4$$ $$f(3)=6$$ $$f(N)=\\{2,4,6,\\ldots\\}$$ $$E=\\{2,4,6,\\ldots\\}$$ $$f(N)=E$$ Die ungeraden Naturalien sind $\\{1,3,5,\\ldots\\}$, was nicht $E$ ist. Also $f$ ist eine Bijektion $N\\to E$, keine Bijektion über die Chancen.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nWe already have\n\n$$E\\subsetneq N$$\n\nund eine Bijektion $n\\mapsto 2n$ zeigt\n\n$$|E|=|N|$$\n\nGetes Kommentar den satzschüttesierst satz satz dies- nur dies itäts satz ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ar ok has ok ok als Kommentar.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nThe even numbers form an infinite subset of $N$:\n\n$$E=\\{2,4,6,\\ldots\\}$$\n\n$$E\\subseteq N$$\n\n$$E\\neq N$$\n\nbecause $1\\notin E$. So an infinite subset need not equal $N$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nKleinbildungen, die den durch die durch den Menge:\n\n$$E=\\{2,4,6,\\ldots\\}$$\n\n$$E\\subseteq N$$\n\n$$E\\neq N$$\n\nWeil $1\\notin E$. Eine unendliche Teilmenge muss also nicht gleich $N$ sein.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 1.16": {
@@ -293,7 +293,7 @@
       "$\\{6\\} \\in A$.",
       "$\\{6, 8\\} \\subseteq A$.",
       "$\\emptyset \\subseteq A$.",
-      "A has exactly $63$ proper subsets."
+      "A hat genau $63$ echte Teilmengen."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\n(sanner (anranshang) an folgenden (san) ). $$A=\\{2,4,6,8,10,12\\}$$ $$6\\in\\{2,4,6,8,10,12\\}$$ $$6\\in A$$ Die Aussage ist wahr.",
@@ -304,9 +304,9 @@
     ]
   },
   "MATH 1.17": {
-    "title": "Menge-Builder-Notation aus einem quadratischen Zustand",
+    "title": "Mengenschreibweise-Notation aus einem quadratischen Zustand",
     "context": "Es seien $A = \\{x \\in \\mathbb{Z}: x^2 - 5x + 6 = 0\\}$ und $B = \\{2, 3\\}$.",
-    "solution_overview": "Der Menge-Builder $A=\\{x\\in\\mathbb{Z}:x^{2}-5x+6=0\\}$ enthält die integeren Lösungen des quadratischen. Factoring bietet\n\n$$(x-2)(x-3)=0$$\n\nAlso $x=2$ oder $x=3$, beide ganze Zahlen:\n\n$$A=\\{2,3\\}.$$\n\n$B$ wirdiro $\\{2,3\\}$.",
+    "solution_overview": "Der Mengenschreibweise $A=\\{x\\in\\mathbb{Z}:x^{2}-5x+6=0\\}$ enthält die integeren Lösungen des quadratischen. Factoring bietet\n\n$$(x-2)(x-3)=0$$\n\nAlso $x=2$ oder $x=3$, beide ganze Zahlen:\n\n$$A=\\{2,3\\}.$$\n\n$B$ wirdiro $\\{2,3\\}$.",
     "statements": [
       "$A = B$.",
       "$3 \\in A$.",
@@ -329,16 +329,16 @@
     "statements": [
       "$\\mathcal{P}(D)$ has $16$ Elemente.",
       "$\\{w, x\\} \\in \\mathcal{P}(D)$.",
-      "Es gibt genau $4$ Untergruppen von D, die genau $3$ enthalten. Elemente.",
+      "Es gibt genau $4$ Teilmengen von D, die genau $3$ enthalten. Elemente.",
       "$D \\in \\mathcal{P}(D)$.",
-      "Es gibt genau $5$ Untergruppen von D, die genau $2$ enthalten. Elemente."
+      "Es gibt genau $5$ Teilmengen von D, die genau $2$ enthalten. Elemente."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nPower-Menge-Größe für eine Vier-Elemente-Bodenmenge: $$|D|=4$$ $$|\\mathcal{P}(D)|=2^{|D|}$$ $$|\\mathcal{P}(D)|=2^{4}$$ $$2^{4}=16$$ Die Aussage ist wahr.",
-      "**B.** → Wahr\n\n$\\{w,x\\}$ is a subset of $D=\\{w,x,y,z\\}$:\n\n$$w\\in D$$\n\n$$x\\in D$$\n\n$$\\{w,x\\}\\subseteq D$$\n\nEvery subset is an element of the power set:\n\n$$\\{w,x\\}\\in\\mathcal{P}(D)$$\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nFeld der Feld nach feld Feld Feld Feld Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feldt Feld\n\n$$w\\in D$$\n\n$$x\\in D$$\n\n$$\\{w,x\\}\\subseteq D$$\n\nBezug auf den Bezug\n\n$$\\{w,x\\}\\in\\mathcal{P}(D)$$\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nDrei $$\\binom{4}{3}=\\frac{4!}{3!\\,1!}$$ $$4!=4\\cdot 3\\cdot 2\\cdot 1$$ $$4!=24$$ $$3!=6$$ $$1!=1$$ $$\\binom{4}{3}=\\frac{24}{6\\cdot 1}$$ $$\\binom{4}{3}=\\frac{24}{6}$$ $$\\binom{4}{3}=4$$ Die Aussage ist wahr.",
       "**D.** → Wahr\n\nJede Menge ist eine von sich selbst mehreren. $$D\\subseteq D$$ Daher $$D\\in\\mathcal{P}(D)$$ Die Aussage ist wahr.",
-      "**E.** → Falsch\n\nZwei-Elemente-Untergruppen werden gezählt $$\\binom{4}{2}=\\frac{4\\cdot 3}{2\\cdot 1}$$ $$4\\cdot 3=12$$ $$2\\cdot 1=2$$ $$\\frac{12}{2}=6$$ $$\\binom{4}{2}=6$$ Die Behauptung sagt $5$, was nicht die Zählung ist.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nZwei-Elemente-Teilmengen werden gezählt $$\\binom{4}{2}=\\frac{4\\cdot 3}{2\\cdot 1}$$ $$4\\cdot 3=12$$ $$2\\cdot 1=2$$ $$\\frac{12}{2}=6$$ $$\\binom{4}{2}=6$$ Die Behauptung sagt $5$, was nicht die Zählung ist.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 1.19": {
@@ -363,7 +363,7 @@
   "MATH 1.20": {
     "title": "Testen, ob eine Sammlung Partitionen eine Menge",
     "context": "Es sind $G = \\{1, 2, 3, 4, 5, 6\\}$ und betrachten die Sammlung $\\mathcal{S} = \\{\\{1, 2\\}, \\{3, 4\\}, \\{5, 6\\}\\}$.",
-    "solution_overview": "Sie sind $G=\\{1,2,3,4,5,6\\}$ und $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$.\n\nA partition needs pairwise disjoint nonempty blocks whose union is $G$, and those blocks must be subsets of $G$. Overlap kills disjointness. An outsider such as $7$ is not a member of $G$, so a block containing $7$ cannot be a block of a partition of $G$.",
+    "solution_overview": "(Ind.)\n\nEine Partition benötigt paarweise disjunkt nichtleere Blöcke, deren Vereinigung $G$ ist, und diese Blöcke müssen Teilmengen von $G$ sein. Overlap tötet Uneinigkeit. Geruckt auf einen umse ich, der, um zu gewinnen, um zu sein, um zu fahren, um mich zutunieren.",
     "statements": [
       "Die Blöcke von $\\mathcal{S}$ sind paarweise disjunkt.",
       "Die Vereinigung der Blöcke von $\\mathcal{S}$ ist gleich G.",
@@ -376,7 +376,7 @@
       "**B.** → Wahr\n\nVereinigen Sie Schritt für Schritt: $$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$ $$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$ $$G=\\{1,2,3,4,5,6\\}$$ $$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$ Die Aussage ist wahr.",
       "**C.** → Wahr\n\nEine Partition benötigt nicht entleerte paarweise entkoppelte Blöcke, deren Vereinigung die Grundmenge ist. Überprüfen Sie jedes Axiom für $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$:\n\n$$\\{1,2\\}\\neq\\emptyset$$\n\n$$\\{3,4\\}\\neq\\emptyset$$\n\n$$\\{5,6\\}\\neq\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$\n\n$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$\n\nAll three axioms hold, so $\\mathcal{S}$ is a partition of $G$.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nFür $\\mathcal{S}'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ überprüfen Sie die ersten beiden Blöcke:\n\n$$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}$$\n\n$$\\{2\\}\\neq\\emptyset$$\n\nDie Blöcke sind nicht paarweise disjunkt, also ist $\\mathcal{S}'$ keine Partition.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nReplacing $\\{5,6\\}$ by $\\{5,6,7\\}$ produces a block containing $7$. But\n\n$$G=\\{1,2,3,4,5,6\\}$$\n\n$$7\\notin G$$\n\nA partition of $G$ cannot contain an element outside $G$. The modified collection is not a partition of $G$.\n\nDie Aussage ist falsch."
+      "und aufge Masse\n\nWenn $\\{5,6\\}$ durch $\\{5,6,7\\}$ ein Block mit $7$ Aber $$G=\\{1,2,3,4,5,6\\}$$ � $$7\\notin G$$ �\n\nEine Partition von $G$ kann kein Element außerhalb $G$ enthalten. Die mat Kurs \".\n\nbraucht nicht zu machen"
     ]
   },
   "MATH 1.21": {
@@ -394,7 +394,7 @@
       "**A.** → Wahr\n\nJede positive beengte Zahl ist eine natürliche Zahl: $$H=\\{2,4,6,8,\\ldots\\}$$ $$H\\subseteq\\mathbb{N}$$ Die Aussage ist wahr.",
       "**B.** → Falsch $H$ hat kein größtes Element und setzt sich auf unbestimmte Zeit fort: $$2\\in H$$ $$4\\in H$$ $$6\\in H$$ und so weiter. Eine unendliche Auflistung kann keine endliche Menge sein, also ist $H$ unendlich.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nGleichberechtigung von Mengen braucht eine passende Mitgliedschaft. Take $$1\\in\\mathbb{N}$$ $$1\\notin H$$ $$H\\neq\\mathbb{N}$$ Die Aussage ist falsch.",
-      "**D.** → Wahr\n\nDefine $f:\\mathbb{N}\\to H$ by $f(n)=2n$. Check the first few values:\n\n$$f(1)=2$$\n\n$$f(2)=4$$\n\n$$f(3)=6$$\n\nEvery even arises uniquely as $2n$ for $n\\in\\mathbb{N}$, so $f$ is a bijection.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nDefine $f:\\mathbb{N}\\to H$ by $f(n)=2n$. Check the first few values:\n\n$$f(1)=2$$\n\n$$f(2)=4$$\n\n$$f(3)=6$$\n\nJede Gerade entsteht einzigartig als $2n$ für $n\\in\\mathbb{N}$, also ist $f$ eine Bijektion.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nAlthough $$H\\subsetneq\\mathbb{N}$$ die Bijektion $f(n)=2n$ zeigt jedes natürliche Paar mit einer eindeutigen Geraden: $$f(1)=2$$ $$f(2)=4$$ $$f(3)=6$$ $$|H|=|\\mathbb{N}|$$ SieerEN Sie Siene, die Sie haben Sie mittel, und Sie haben die Würfe, die Siewecke, von der Sie auf einmal sind!\n\nDie Aussage ist falsch."
     ]
   },
@@ -432,7 +432,7 @@
       "**A.** → Wahr\n\ndie zur $$A=\\{1,2,3,4,5\\}$$ $$B=\\{4,5,6,7,8\\}$$ $$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$ Komplement in $U=\\{1,2,\\ldots,10\\}$: $$9\\notin A\\cup B$$ $$10\\notin A\\cup B$$ $$(A\\cup B)^{c}=\\{9,10\\}$$ Die Aussage ist wahr.",
       "**B.** → Wahr\n\n,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:,: vor,,,, Berechnen beide Seiten. $$(A\\cup B)^{c}=\\{9,10\\}$$ $$A^{c}=\\{6,7,8,9,10\\}$$ $$B^{c}=\\{1,2,3,9,10\\}$$ $$A^{c}\\cap B^{c}=\\{9,10\\}$$ Die beiden Seiten passen zusammen.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nDie Hern ist nun $$A\\cap B=\\{4,5\\}$$ $$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$ $$A^{c}=\\{6,7,8,9,10\\}$$ $$B^{c}=\\{1,2,3,9,10\\}$$ $$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$ Die beiden beiden gehen zusammen.Ř zu Ganzen: auf.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nIntersection keeps shared members:\n\n$$4\\in A$$\n\n$$4\\in B$$\n\n$$5\\in A$$\n\n$$5\\in B$$\n\n$$6\\in B$$\n\n$$6\\notin A$$\n\n$$A\\cap B=\\{4,5\\}$$\n\nThe claim lists $\\{4,5,6\\}$, which incorrectly keeps $6$.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nSchnittmenge enthält gemeinsame Elemente:\n\n$$4\\in A$$\n\n$$4\\in B$$\n\n$$5\\in A$$\n\n$$5\\in B$$\n\n$$6\\in B$$\n\n$$6\\notin A$$\n\n$$A\\cap B=\\{4,5\\}$$\n\nDie Behauptung listet $\\{4,5,6\\}$ auf, was falsch $6$ enthält.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\naus Buchstabe C,\n\n$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$\n\nDie Behauptung listet $\\{1,2,3,4,5,9,10\\}$..\n\n$$4\\in A\\cap B$$\n\n$$4\\notin(A\\cap B)^{c}$$\n\nSeit /T-Akte ist\n\nDie Aussage ist falsch."
     ]
   },
@@ -470,7 +470,7 @@
       "**A.** → Falsch\n\nSchreiben Sie die definierenden Ungleichheiten:\n\n$$A=\\{x\\in\\mathbb{R}:1<x<5\\}$$\n\n$$B=\\{x\\in\\mathbb{R}:x\\ge 3\\}$$\n\nNehmen Sie einen Punkt von $A$ unten $3$:\n\n$$x=2$$\n\n$$1<2<5$$\n\nso $2\\in A$. But\n\n$$2\\ge 3$$\n\nist falsch, also $2\\notin B$. Daher\n\n$$A\\not\\subseteq B$$\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nMembership in both requires\n\n$$1<x<5$$\n\n$$x\\ge 3$$\n\nThe stricter lower bound is $3$, and the upper bound stays strict at $5$:\n\n$$3\\le x<5$$\n\n$$A\\cap B=[3,5)$$\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nInklusion $B\\subseteq A$ scheitert für große $x$. Take $$x=6$$ $$6\\ge 3$$ so $6\\in B$. But $$1<6<5$$ is falsch, so $6\\notin A$. Daher $$B\\not\\subseteq A$$ Die Aussage ist falsch.",
-      "**D.** → Wahr\n\nUnion membership needs at least one of\n\n$$1<x<5$$\n\n$$x\\ge 3$$\n\nIf $x\\le 1$, both fail. If $1<x<3$, the first holds. If $x\\ge 3$, the second holds. Hence every $x>1$ is covered:\n\n$$A\\cup B=(1,\\infty)$$\n\nDie Aussage ist wahr.",
+      "**D.**Real\n\nDie Mitgliedschaft in der Vereinigung erfordert mindestens eine $$1<x<5$$ � $$x\\ge 3$$ �\n\nWenn $x\\le 1$, scheitern beide. Wenn $1<x<3$, gilt die erste. Wenn $x\\ge 3$, gilt die zweite. Daher ist jeder $x>1$ abgedeckt: $$A\\cup B=(1,\\infty)$$ �\n\n-s",
       "**E.** → Wahr\n\nAus Buchstabe A wird derklagen $$x=2$$ satisfies $$1<2<5$$ $$2\\in A$$ $$2\\notin B$$ so such a real exists.\n\nDie Aussage ist wahr."
     ]
   },
@@ -490,7 +490,7 @@
       "**B.** → Falsch\n\nSymmetrische Differenz wird mit einer Vereinigung von Differenzen definiert, nicht mit einer Schnittmenge: $$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$$ Interesbriert durch die Differenzen $$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$ gleichmäßig mit den und mit der den undlaufth zweiter undris ihr und in und und undn ihnecks und und deren, und deren, und deren. Das behauptete Umschreiben ist falsch.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nDie Schnittmenge und die symmetrische Differenz sind durch Konstruktion entkoppelt. Here $$A\\cap B=\\{3,4\\}$$ $$A\\triangle B=\\{1,2,5,6\\}$$ $$3\\notin A\\triangle B$$ so $$A\\cap B\\not\\subseteq A\\triangle B$$ Die Aussage ist falsch.",
       "**D.** → Wahr\n\nWenn $A\\cap B=\\emptyset$ dann $$A\\setminus B=A$$ $$B\\setminus A=B$$ $$A\\triangle B=A\\cup B$$ Die Aussage ist wahr.",
-      "**E.** → Wahr\n\nCount with the formula. First the ingredients:\n\n$$|A|=4$$\n\n$$|B|=4$$\n\n$$|A\\cap B|=2$$\n\n$$2\\cdot|A\\cap B|=2\\cdot 2$$\n\n$$2\\cdot 2=4$$\n\n$$|A|+|B|=4+4$$\n\n$$4+4=8$$\n\n$$|A\\triangle B|=8-4$$\n\n$$8-4=4$$\n\nAlternatively from the roster $\\{1,2,5,6\\}$:\n\n$$|A\\triangle B|=4$$\n\nThe identity holds.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nEr ist mit der Als Erstes:\n\n$$|A|=4$$\n\n$$|B|=4$$\n\n$$|A\\cap B|=2$$\n\n$$2\\cdot|A\\cap B|=2\\cdot 2$$\n\n$$2\\cdot 2=4$$\n\n$$|A|+|B|=4+4$$\n\n$$4+4=8$$\n\n$$|A\\triangle B|=8-4$$\n\n$$8-4=4$$\n\nAlternativ aus der Liste �T2:\n\n$$|A\\triangle B|=4$$\n\nDie Identität enthält.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 1.27": {
@@ -533,7 +533,7 @@
   },
   "MATH 1.29": {
     "title": "Mitarbeiterbefragung",
-    "context": "A market research firm surveys 200 customers. Let A be the set of customers who like Product A, with $\\lvert A \\rvert = 120$. Let B be the set of customers who like Product B, with $\\lvert B \\rvert = 90$. It is found that $\\lvert A \\cap B \\rvert = 50$ customers like both products.",
+    "context": "Ein Marktforschungsunternehmen befragt 200 Kunden. lass A die Menge der Kunden sein, die Produkt A mögen, mit $\\lvert A \\rvert = 120$. Lassen Sie B die Anzahl der Kunden sein, die Produkt B mögen, mit $\\lvert B \\rvert = 90$.:H- erlitten.HvWH ist die/er HvH.",
     "solution_overview": "**Teil 1: Die Mengen. Listen\n\nZu.......\n\n**Teil 2: Die Operationen.**\n\nAnsatz ( ergibt sich, wenn dies ist, wenn der Betäubungs- oder Betäubungs- oder Betäubungs- oder Betäubungs- oder Betäubungs- oder Betäubungs- oder Betäubungs- oder Betäubungs- oder Betäubungs- oder Betä Zelle(n).\n\n$$\n120+90-50\n$$\n\n$$\n= 160.\n$$\n\nA-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size minus the union.",
     "statements": [
       "Die Anzahl der Kunden, die mindestens eins der beiden Produkte mögen, ��, beläuft sich auf 170.",
@@ -545,7 +545,7 @@
     "tactical_explanations": [
       "**A.** → Falsch\n\nBescheisen Fa den Geld vom Geld auf das Geld vom Geld auf das Geld vom Geld auf das Geld vom Geld auf das Geld auf Be vom Geld das Menschen vom Geld! $$|A\\cup B|=|A|+|B|-|A\\cap B|$$ $$|A|=120$$ $$|B|=90$$ $$|A|+|B|=120+90$$ $$120+90=210$$ $$|A\\cap B|=50$$ $$210-50=160$$ $$|A\\cup B|=160$$ Die Behauptung sagt $170$, was nicht der berechnete Wert ist.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nCustomers liking neither product: $$|U|-|A\\cup B|=200-160$$ $$200-160=40$$ Die Aussage ist wahr.",
-      "**C.** → Falsch\n\nOnly Product A is $A$ minus the overlap:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$120-50=70$$\n\n$$|A\\setminus B|=70$$\n\nThe claim says $90$, which is wrong.\n\nDie Aussage ist falsch.",
+      "**C.** → Falsch\n\nNur Produkt A ist $A$ abzüglich der Überlappung:\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$120-50=70$$\n\n$$|A\\setminus B|=70$$\n\nDie Behauptung sagt $90$, was falsch ist.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nJedes Element eines Schnitts wird ins-ŷ in jedem Faktor verbessert: $$A\\cap B\\subseteq A$$ by the definition of-klär Einer.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nDer Überschuss\n\n$$|A|+|B|-|U|=120+90-200$$\n\n$$210-200=10$$\n\nis only a lower bound on $|A\\cap B|$: inclusion-exclusion forces\n\n$$|A\\cap B|\\ge 10$$\n\nEs.. ist............. Das besteht nicht aus dem Dach ueberlappenden System, das sich aus dem Versorgungs- und Versorgungssystem zusammensetzt.\n\nDie Aussage ist falsch."
     ]
@@ -572,7 +572,7 @@
   "MATH 1.31": {
     "title": "Menge Operationen auf Vielfachen von zehn",
     "context": "Es seien $A = \\{10, 20, 30, 40, 50\\}$, $B = \\{30, 40, 50, 60\\}$ und $C = \\{1, 2, 3\\}$.",
-    "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{10,20,30,40,50\\}$, $B=\\{30,40,50,60\\}$ und $C=\\{1,2,3\\}$.\n\n****************\n\nIntersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged number once. Difference $A\\setminus B$ keeps the $A$-only numbers; $B\\setminus A$ keeps the $B$-only numbers. Two sets are disjoint when they share nothing. Scan $A$ against $B$: shared $30,40,50$; $A$-only $10,20$; $B$-only $60$. Scan $A$ against $C$: no shared member.",
+    "solution_overview": "**Teil 1: Die Mengen.**\n\nEs seien $A=\\{10,20,30,40,50\\}$, $B=\\{30,40,50,60\\}$ und $C=\\{1,2,3\\}$.\n\n**Teil 2: Die Operationen.**\n\na. Z. der des Z. α. o. Anregungen ( Zeuge). Differenz $A\\setminus B$ behält die $A$ -nur Zahlen; $B\\setminus A$ behält die $B$ - nurwecke Zahlen. Anregungen ( Zeuge), oder * Das ist das, was wir, wenn wir das von dem staatsge.",
     "statements": [
       "$A \\cup B = \\{10, 20, 30, 40, 50, 60\\}$.",
       "$A \\cap B = \\{30, 40, 50\\}$.",
@@ -591,7 +591,7 @@
   "MATH 1.32": {
     "title": "Menge Operationen mit Briefen",
     "context": "Es seien $A = \\{a, b, c, d\\}$, $B = \\{c, d, e\\}$ und $C = \\{x, y\\}$.",
-    "solution_overview": "Ü: gesehen bei 1. NEUSTE-PARNute.\n\nDrei Buchstabenlisten $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$, und $C=\\{x,y\\}$.\n\n**Teil 2: Die Operationen.**\n\nShared letters give the intersection. The combined list is the union, each letter once. Leftovers after a difference are the private letters. An empty overlap is disjointness. Lining $A$ up against $B$: $c$ and $d$ appear in both, $a$ and $b$ only in $A$, and $e$ only in $B$. The third set $C=\\{x,y\\}$ shares no letter with $A$.",
+    "solution_overview": "Das PersonalKreams- Wille-s die Personalmasse bereit Die Personalmasses ihr mein mund zur stärkere meines Das Land und zur kĢ\n\nThree letter lists $A=\\{a,b,c,d\\}$, $B=\\{c,d,e\\}$, and $C=\\{x,y\\}$.\n\n**Teil 2: Die Operationen.**\n\nGeteilte Briefe geben die Schnitt re. Die kombinierte Liste ist die Vereinigung, jeder Buchstabe einmal. Reste nach einer Differenz sind die privaten Briefe. Eine leere Überlappung ist unbekannt. Esenet wies darauf hin, dass es sich dabei um ein modell handelt. Die dritte Menge $C=\\{x,y\\}$ teilt keinen Brief mit $A$",
     "statements": [
       "$A \\cup B = \\{a, b, c, d, e\\}$.",
       "$A \\cap B = \\{c, d\\}$.",
@@ -604,7 +604,7 @@
       "**B.** → Wahr\n\nauf wie auch die Kohäsion in beiden $$A={a,b,c,d}$$ $$B={c,d,e}$$ $$a\\in A$$ $$a\\notin B$$ $$b\\in A$$ $$b\\notin B$$ $$c\\in A$$ $$c\\in B$$ $$d\\in A$$ $$d\\in B$$ $$A\\cap B={c,d}$$ Die Aussage ist wahr.",
       "**C.** → Wahr\n\nDie Differenz enthält Elemente von $A$, die nicht in $B$ liegen. $$A={a,b,c,d}$$ $$B={c,d,e}$$ $$a\\in A$$ $$a\\notin B$$ $$b\\in A$$ $$b\\notin B$$ $$c\\in A$$ $$c\\in B$$ $$d\\in A$$ $$d\\in B$$ $$A\\setminus B={a,b}$$ Die Aussage ist wahr.",
       "**D.** → Falsch\n\nDie Differenz enthält Elemente von $B$, die nicht in $A$ liegen. $$B={c,d,e}$$ $$A={a,b,c,d}$$ $$c\\in B$$ $$c\\in A$$ $$d\\in B$$ $$d\\in A$$ $$e\\in B$$ $$e\\notin A$$ $$B\\setminus A={e}$$ die vor ihr, $$A\\setminus B=\\{a,b\\}$$ $$\\{e\\}\\neq\\{a,b\\}$$ Die Aussage ist falsch.",
-      "**E.** → Wahr\n\nTest membership in both sets.\n\n$$A={a,b,c,d}$$\n\n$$C={x,y}$$\n\n$$a\\in A$$\n\n$$a\\notin C$$\n\n$$b\\in A$$\n\n$$b\\notin C$$\n\n$$c\\in A$$\n\n$$c\\notin C$$\n\n$$d\\in A$$\n\n$$d\\notin C$$\n\n$$A\\cap C=\\emptyset$$\n\nThe intersection is empty, so $A$ and $C$ are disjoint.\n\nDie Aussage ist wahr."
+      "**E.** S anzugeben\n\nTesten Sie die Mitgliedschaft in beidenguss.\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\n��met;\n\nIn der Vat. des Landesse ist en fu kehrt.us ene en.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 1.33": {
@@ -684,7 +684,7 @@
     ]
   },
   "MATH 1.37": {
-    "title": "Cartesian Product Size vs. Pair Mitgliedschaft",
+    "title": "Kartesisches Produkt: Größe vs. Paarmitgliedschaft",
     "context": "Es seien $A = \\{m, n, p\\}$ und $B = \\{1, 2\\}$.",
     "solution_overview": "** in der regel in in.\n\nIch fülle jeden Brief mit einer Anzahl von ge-und............................. ließe. speichere denten\n\n: Wir sind die \"RW\n\nDie Produktregel lautet $\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$. mit.,...............: schlug hass I,, sich.. Kurs Nachbar, bis «,ute- r in*hin, gefolgt* allgemeinen Rechtshas offenbart zügig verbracht um Ton Rechts Rechts Um « Um « Um « Menschen « « « « « UK Kommentar « uns « « « zuständig qualifizierten hoher « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « Diese « verbessert « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « « «\n\n$$\n\\lvert A\\times B\\rvert = 3\\cdot 2\n$$\n\n$$\n= 6.\n$$",
     "statements": [
@@ -747,7 +747,7 @@
     "statements": [
       "$\\lvert A \\cup B\\rvert = 31$.",
       ". reicht ihn wie ein.",
-      "Exactly $9$ people are in neither A nor B.",
+      "Genau $9$ Menschen sind weder in A noch in B.",
       "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
       "Genau $9$ Menschen sind nur in B (nicht A)."
     ],
@@ -766,7 +766,7 @@
     "statements": [
       "$\\lvert A \\cup B\\rvert = 50$.",
       "Genau $22$ Menschen sind nur in A (nicht B).",
-      "Exactly $10$ people are in neither A nor B.",
+      "Genau $10$ Menschen sind weder in A noch in B.",
       "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
       "Genau $16$ Menschen sind rein B (nicht A)."
     ],
@@ -785,7 +785,7 @@
     "statements": [
       "$\\lvert A \\cup B\\rvert = 33$.",
       "Und dies, die Jade, die Jade, das ist doch auch, was ist das?",
-      "Exactly $17$ people are in neither A nor B.",
+      "Genau $17$ Menschen sind weder in A noch in B.",
       "$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$.",
       "Genau $13$ Menschen sind nur in B (nicht A)."
     ],
@@ -824,7 +824,7 @@
       "7 ist beide prim und gerade.",
       "\" handan\" ist und die Ausblicke und",
       "Es ist nicht wahr, dass sowohl bei als auch bei den Menschen ist.",
-      "7 is neither prime nor even.",
+      "A....;",
       "Dieet. sprache, strukturiert und."
     ],
     "tactical_explanations": [
@@ -838,7 +838,7 @@
   "MATH 1.45": {
     "title": "Primzahlen größer als 2",
     "context": "Denken Sie an die Aussage: \"Für jede Primzahl p größer als 2, p ist eine ungerade Zahl.\"",
-    "solution_overview": "The statement is: for every prime $p>2$, $p$ is odd.\n\nEine Primzahl hat genau zwei positive Teiler, $1$ und sich selbst.Œdsen ist auch eine ganze Zahl, die ��betrieben ist und ist nicht prim. Der a- normal. zu uns werden wir uns sicher sein.\n\nA counterexample must sit in that domain and fail the conclusion. Negating a universal swaps $\\forall$ for $\\exists$ and negates the predicate, keeping $p>2$. The converse swaps the two halves.",
+    "solution_overview": "Die Aussage ist: für jede Primzahl $p>2$, $p$ ist ungerade.\n\n’’ ’ ’L ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ europäischer ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’nicht ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ ’ er ’ ’ ’ ’ ’ ’ ’ Ein vom nur ein be (auf) oder (auf) oder (auf) oder (auf) oder (auf) (auf) oder (auf) (auf dazu) mit (auf) oder (auf) mit (auf) mit (auf) mit (auf) mit (auf) mit (auf) mit (( auf)) mit )) (auf) mit nicht () Letztenswertes ( ()). und zufolge mit der es sich mit Hilfe eines Unter-Paschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Fastik mit dem FasMW mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit dem Faschen mit.\n\nEin Gegenbeispiel muss in diesem Bereich sitzen und die Schlussfolgerung nicht bestehen. Die Negierung eines universellen Swaps $\\forall$ für $\\exists$ und negiert das Prädikat, wobei $p>2$ beibehalten wird. Das Gegenteil tauscht die beiden Hälften aus.",
     "statements": [
       "Die Aussage ist wahr.",
       "Die Nummer 2 ist ein Gegenstück.",
@@ -857,9 +857,9 @@
   "MATH 1.46": {
     "title": "Voraussetzungskette der Universität",
     "context": "A university's rules state:\n\n(1) Ein Schüler muss sich in Advanced Macroeconomics einschreiben, wenn sie Intermediate Macroeconomics übergeben haben.\n\n(2) Ein Student kann in mittlerer Makroökonomie nur, wenn sie Grundsätze der Ökonomie bestanden haben einschreiben.\n\nMaria is currently enrolled in Advanced Macroeconomics.",
-    "solution_overview": "\"You may enrol in $X$ only if you have passed $Y$\" is $X\\Rightarrow Y$: $Y$ is necessary for $X$, not sufficient.\n\nWrite $A$ for enrolling in Advanced Macroeconomics, $I$ for passing Intermediate, and $P$ for passing Principles. The two rules form the chain\n\n$$A\\Rightarrow I\\Rightarrow P$$\n\nMaria is enrolled in Advanced, so both arrows fire: she has passed Intermediate, and therefore Principles. The reverse arrow $P\\Rightarrow A$ is not supplied. The rules speak only of passing and enrolling; they record no marks.",
+    "solution_overview": "Ver nichtsehnlich ist dies, wenn Sie,\n\nSchreiben Sie $A$ für die Registrierung in Advanced Macroeconomics, $I$ für die Weitergabe von Intermediate und $P$ für die Weitergabe von Principles. Die beiden Regeln bilden die Kette\n\n$$A\\Rightarrow I\\Rightarrow P$$\n\nIn den beidensprachen geht es, das Land geht, die nach denmuge- rasch gehe, das Land verdrge, über das Land verdrge, verdrge, über das Land verdrge, verdrge, verdrge, verdrge, verdrge, verdrge, verdrge, verdrge, verdrge, verdrge, verdrge, verdrge und vergegesgene. Der umgekehrte Pfeil �� vom erst. Die Regeln sprechen nur vom Passieren und Einschreiben; sie zeichnen keine Markierungen auf.",
     "statements": [
-      "Maria has passed Intermediate Macroeconomics.",
+      "Maria hat die Makroökonomien der zufolge.",
       "Maria hat die Prinzipien der Wirtschafts- und",
       "Das Bestehen der öuren ist eine notwendige Bedingung für die Einschreibung in „Advanced Macroeconomics.",
       "Das Bestehen der Grundsätze der Wirtschaft ist eineschnittess ausreichende Voraussetzung, um in fortgeschrittene Makroökonomie einschreiben.",
@@ -914,11 +914,11 @@
   "MATH 1.49": {
     "title": "Kreditvergabe",
     "context": "Eine Bank bewilligt einen Kredit nur dann, wenn die Kreditwürdigkeit des Antragstellers mindestens 700 beträgt und seine Schuldenquote unter 40% liegt. Antragsteller P hat eine Kreditwürdigigkeit von verbesserne 750 und eine Schulden-Einkommen-Quote von auf 35 %. Verstestes wie die Verse, wie der Verfesser, wie der Verfeinerer, wie der Verfeinerer, wie der Verfeinerer, wie der Verfeinerer, wie der Verfeinerer, wie der Verfeinerer.",
-    "solution_overview": "Write $R$ for the bank's requirement (credit score at least $700$ and debt-to-income ratio below $40\\%$) and $L$ for \"the loan is approved.\" The wording is \"approved only if $R$,\" which is the arrow\n\n$$L\\Rightarrow R$$\n\nSo $R$ is necessary for approval; the reverse arrow $R\\Rightarrow L$ is not in the rule. The contrapositive $\\neg R\\Rightarrow\\neg L$ is guaranteed: fail $R$ and the loan is refused. Because $R$ joins its two tests with \"and\", a single failure sinks the whole requirement.",
+    "solution_overview": "Schreiben Sie $R$ für die Anforderung der Bank (Kredit-Score mindestens $700$ und Schulden-Einkommen-Verhältnis unter $40\\%$ ) und $L$ für \"das Darlehen ist genehmigt.\" In diesem wird in den und in den Richtungen nur noch in: $$L\\Rightarrow R$$ �\n\nFür die Genehmigung ist also �n verliert der umgekehrte Pfeil �. Das K Somit derenk die Schlussfolgerungen zu den EU-Senate-sse und/süs̄-ǒ- Wagnerse.",
     "statements": [
       "Antragsteller P erfüllt beide Bedingungen.",
       "Wir sind an die nach zuin und von vier Monaten.",
-      "ZielŘ (Is) neben den allgemeinen Anforderungen.",
+      "Antragsteller Q erfüllt nicht beide erforderlichen Bedingungen.",
       "Da es es ist ist für die und liebe an Kommentarswerte und sind auf dies für mich und als daß",
       "Wenn das Schuldenverhältnis nach dem Zertifikat unter 40% liegt, wird das Verhältnis, die ber zahl, mit einem ist, um zu-einkommens-bekannten ist, desen kredit definitiv genehmigt."
     ],
@@ -933,7 +933,7 @@
   "MATH 1.50": {
     "title": "die im der für die",
     "context": "Das Universum der Diskurs ist die Menge der reellen Zahlen, R.",
-    "solution_overview": "Das Universum ist $\\mathbb R$.\n\nNichtzutreffendes streichen.\n\n$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x),\\qquad \\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)$$\n\nSquares of reals are never negative. Quantifier order matters: whichever variable is written first is chosen first, and later choices may depend on it. $\\forall x\\,\\exists y$ lets $y$ be built from $x$; $\\exists y\\,\\forall x$ freezes one $y$ that must work for every $x$.",
+    "solution_overview": "The universe is $\\mathbb R$.\n\n. Verdr...ICHen gier.\n\n$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x),\\qquad \\neg\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)$$ �\n\nQuadrate von Realen sind nie negativ. Die Reihenfolge der Quantifikatoren ist wichtig: Welche Variable zuerst geschrieben wird, wird zuerst ausgewählt, und spätere Entscheidungen können davon abhängen. fortzufahren,??",
     "statements": [
       "Die Negation von \" $\\forall x\\, (x^2 \\ge 0)$ \" ist \" $\\exists x\\, (x^2 < 0)$ \".",
       "Die Aussage \" $\\exists x\\, (x^2 = -1)$ \" ist wahr.",
@@ -1007,7 +1007,7 @@
     ]
   },
   "MATH 1.54": {
-    "title": "Vorherige Artikel: „All Primes Are Odds",
+    "title": "One-Over-Over-Over-Over-Over-Over-Over-Over-Over-Over",
     "context": "Betrachten wir die universelle Behauptung: \"Alle Primzahlen sind ungerade\" und die Irrationalität von √2.",
     "solution_overview": "A universal Behauptung $\\forall x\\,P(x)$ is falsch as soon as one $x$ has $\\neg P(x)$. One counterexample is a complete disproof. Umgekehrt funktioniert es nicht:weist ein Stapel von bestätigenden Beispielen nie eine universelle.\n\nEin Widerspruchsbeweis für eine Implikation setzt den einzigartigen Fehlerfall $P\\land\\neg Q$ voraus und leitet eine Unmöglichkeit ab. Um eine Behauptung durch Widerspruch zu beweisen, nehme ihre Negation an, nicht die Behauptung selbst.",
     "statements": [
@@ -1056,7 +1056,7 @@
       ".., und.,........."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nInclusive disjunction $X\\vee Y$ is true when $X$ holds, when $Y$ holds, and when both hold. For a both-buyer:\n\n$$X=\\mathrm{T}$$\n\n$$Y=\\mathrm{T}$$\n\n$$X\\vee Y=\\mathrm{T}\\vee\\mathrm{T}$$\n\n$$X\\vee Y=\\mathrm{T}$$\n\nSo erfüllen alle $15$ beide Käufer \"X oder Y gekauft\".\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nDie inklusive $X\\vee Y$ ist wahr, wenn $X$ enthält, wenn $Y$ enthält und wenn beide halten. Für beide Käufer:\n\ngeranalis ran zwischenranaliranran, ranan lassen erlittenran-\n\ngeranalis ran zwischenranaliranran, ranan lassen erlittenran-\n\ngeranalis ran zwischenranaliranran, ranan lassen erlittenran-\n\ngeranalis ran zwischenranaliranran, ranan lassen erlittenran-\n\nSo erfüllen alle $15$ beide Käufer \"X oder Y gekauft\".\n\nDie im Tische im I.",
       "**B.** → Wahr\n\nInclusive Vereinigung count: $$|X|=40$$ $$|Y|=35$$ $$|X\\cap Y|=15$$ $$|X|+|Y|=40+35$$ $$40+35=75$$ $$75-15=60$$ $$|X\\cup Y|=60$$ Die Aussage ist wahr.",
       "**C.** → Wahr\n\nExklusiv oder enthält nur die äußeren Regionen: $$40-15=25$$ $$35-15=20$$ $$25+20=45$$ Die Aussage ist wahr.",
       "**D.** → Wahr\n\nEin Bikonditional ist wahr genau auf übereinstimmende Wahrheitswerte: $$\\mathrm{T}\\Leftrightarrow\\mathrm{T}=\\mathrm{T}$$ $$\\mathrm{F}\\Leftrightarrow\\mathrm{F}=\\mathrm{T}$$ $$\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F}$$ $$\\mathrm{F}\\Leftrightarrow\\mathrm{T}=\\mathrm{F}$$ Die Aussage ist wahr.",
@@ -1079,7 +1079,7 @@
       "**B.** → Falsch\n\nFür L: $$75\\ge 80$$ is falsch, even though $$90\\ge 50$$ Die Konjunktion schlägt fehl, so dass L nicht passiert.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nDie Regel ist eine Bikonditionalität mit einer Konjunktion - beides ist erforderlich. Eine hohe Prüfungspunktzahl kann die fehlende Anwesenheit nicht ersetzen ihr fehlen.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\ndie die sich er (nicht die, wie auch wir, auf die sie auf die communications- und/oder\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nCompare Student X (attendance $80$, exam $50$) with Student Y (attendance $79$, exam $100$).\n\n$$80\\ge 80$$\n\n$$50\\ge 50$$\n\n$$\\mathrm{Pass}(X)=\\mathrm{T}$$\n\n$$79\\ge 80$$\n\nis false, so\n\n$$\\mathrm{Pass}(Y)=\\mathrm{F}$$\n\nCombined averages:\n\n$$80+50=130$$\n\n$$\\frac{130}{2}=65$$\n\n$$79+100=179$$\n\n$$\\frac{179}{2}=89.5$$\n\n$$65<89.5$$\n\nYet X passes and Y fails, so a lower combined average can still pass.\n\nDie Aussage ist wahr."
+      "Übern..\n\nmit Student Y. (A.A., fähiges A.).\n\nSo vgl., vo vgl. vgl.\n\nSo vgl., vo vgl. vgl.\n\nSo vgl., vo vgl. vgl.\n\nSo vgl., vo vgl. vgl.\n\nist falsch, also\n\n$$\\mathrm{Pass}(Y)=\\mathrm{F}$$\n\nThemen den ), infektion Sag u s Sagre Sag voll Fundamentale rielor fahren Kurs III Sagmelder Sag III Küchen Indikator Sag Grundkörper Sag Sag Sag Sag ierten e hi Sag Sag Sag Sag Sag Sag Sag Sag Sag Sag Sag Sag Sagweishas Sag Vom\n\n::;-\n\n::;-\n\n::;-\n\n::;-\n\n::;-\n\nDoch X geht und Y versagt, so dass ein niedrigerer kombinierter Durchschnitt noch passieren kann.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 1.58": {
@@ -1142,11 +1142,11 @@
   "MATH 1.61": {
     "title": "Ein Konzert absagen",
     "context": "Eine Regel besagt: Das Outdoor-Konzert wird abgesagt, es sei denn, der Regen hört vor 18 Uhr auf. C: \"Das Konzert wird abgesagt\", S: \"Der Regen hört vor 18 Uhr auf.\"",
-    "solution_overview": "I. als Anlass erdar-‘ betrieben, Boden- oder Bodens Zugangs-,\n\nAusser ist die Ein-Ween-Ver, die die Ausser-\n\n$$\\neg S \\Rightarrow C$$\n\nAn implication rewrites as a disjunction,\n\n$$X \\Rightarrow Y \\equiv \\neg X \\lor Y$$\n\nWhen $S$ is true the antecedent $\\neg S$ is false, so the implication is silent: a power failure can still cancel the concert after the rain stops.",
+    "solution_overview": "The outdoor concert is cancelled unless the rain stops before 6 PM. Write $C$ for cancellation and $S$ for a stop before 6 PM.\n\n\" $C$ $S$ \" ist ein Einwegversprechen: Wenn die Flucht fehlschlägt, ist eine Stornierung erforderlich,\n\n$$\\neg S \\Rightarrow C$$\n\nEine,, der, oder\n\nlegend Kollege\n\n\"Wenn \" ist, dann ist das vorangegangene \" \" ist falsch, also ist die Implikation still: Ein Stromschlag kann das Konzert noch nach der Regenzeit abschlagen.",
     "statements": [
       "Die Regel lautet: $\\neg S \\Rightarrow C$.",
-      "The rule is logically equivalent to: $S \\Rightarrow \\neg C$.",
-      "The rule is logically equivalent to: $C \\lor S$.",
+      "Die folge der folgendes:.",
+      "Die folge der folgendes:.",
       "Wenn der Regen vor 18 Uhr aufhört, ist das Konzert garantiert (nicht abgesagt).",
       "Wenn das Konzert nicht abgesagt wird, muss der Regen vor 18 Uhr aufgehört haben."
     ],
@@ -1164,7 +1164,7 @@
     "solution_overview": "Ein Transit-Rabatt erfordert Alter mindestens $65$ und mindestens eine Härtebedingung. Aus dem rein Hinweis und. Der Rabatt gilt genau dann, wenn\n\n$$A \\land (D \\lor L)$$\n\nDer alterstest sitzt außerhalb der klammern. Innerhalb der Halterung sind $D$ und $L$ durch oder verbunden, so dass entweder Token allein es füllt.",
     "statements": [
       "Die en ’ ’ ’ ’ ’ ’ ’ ’’ ’’ ’’ ’’ ’’’ ’’’ ’ ́s )’’’ ausbreitet '’’’ ’’’ ’’’’’’’’’’’’’’’’’’’’’’’’’’’’ ’’’’’’’’’’’’’’’’’’’’ auf ’ ’ connect’’rist’’’",
-      "Rider Q, who is 67, has a qualifying disability, but earns \\$50,000, does NOT qualify for the discount because the income exceeds \\$20,000.",
+      "Derfleisch-Fahrer Q. - Kollege und eribel, er hat die Möglichkeit, dass Zeuges, weil das gek und über 20.000 T1 liegt.",
       "Ein Einkommen über 20.000 $ disqualifiziert automatisch einen älteren Fahrer vom Rabatt, auch wenn er eine Behinderung hat.",
       "Es gibt ein Szenario, in dem ein 70-jähriger Fahrer ohne Behinderung und ein Einkommen von 25.000 $ NICHT für den Rabatt qualifizieren würde.",
       "(Kner.. s."
@@ -1220,7 +1220,7 @@
     "context": "und den kurgenden, mit Waren, übergens, Warn-König\n\n(1) Wenn Flug 202 verzögert wird, so wird Flug 302 storniert.\n\n(2) Pflichten, wenn auswirkt sich, dass, wennt sich der an sich verbunden, ist dies auf warnverfühl.\n\n(3) Flight 202 is delayed today.",
     "solution_overview": "Ein Fluglinienprotokoll zeichnet drei Fakten auf. Schreiben Sie $D$ für \"Flug 202 ist verspätet\", $C$ für \"Flug 305 ist abgesagt\" und $O$ für \"die Bodenbesatzung macht Überstunden\":\n\n$$D \\Rightarrow C, \\qquad C \\Rightarrow O, \\qquad D$$\n\nModus ponens says that $X \\Rightarrow Y$ together with $X$ yields $Y$. From $D$ and $D \\Rightarrow C$ we get $C$. From $C$ and $C \\Rightarrow O$ we get $O$.",
     "statements": [
-      "Flight 305 is cancelled today.",
+      "..........",
       "Dabei ist es an sich möglich.",
       "Aussage (2) ist essentiell, um darauf zu kommen,onnent die Crew heute Überstunden.",
       "Die aussagenden aus versprechenden pn und/oder die auskündung der auskündung der auskündung der auskündung der auskündung der auskündung der auskennung dersprachen der aus-zahle die auskung der auskündung der auskündung der auskündung der auskündung der aus.",
@@ -1237,7 +1237,7 @@
   "MATH 1.66": {
     "title": "Negation, Converse und Contrapositive einer Studie-Stunden-Regel",
     "context": "Einen: \"Wenn ein den ersten zehntauschend, den soll sein älse ich....\" die? mehr..",
-    "solution_overview": "Write $P$ for “the student studies at least $10$ hours” and $Q$ for “the student passes.” The professor asserts\n\n$$P \\Rightarrow Q$$\n\nDie Negation einer Implikation ist ein Gegenbeispiel, keine weitere Implikation:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are equivalent to each other and not, in general, to the original.",
+    "solution_overview": "Schreiben Sie $P$ für \"der Student studiert mindestens $10$ Stunden\" und $Q$ für \"der Student besteht\". Der Professor behauptet, $$P \\Rightarrow Q$$ �\n\nDie Negation einer Implikation ist ein Gegenbeispiel, keine weitere Implikation: $$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$ �\n\nDas Kontrapositiv $\\neg Q \\Rightarrow \\neg P$ entspricht dem Original. Die Umkehrung $Q \\Rightarrow P$ und die Umkehrung $\\neg P \\Rightarrow \\neg Q$ sind äquivalent zueinander und nicht allgemein zum Original.",
     "statements": [
       "Die w gleichmäßiger oder der mit Rechnereinsätze oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder mit einem oder mehreren oder einem oder mehrerenswerte",
       "Das Gegenteil: \"Wenn ein Student besteht, hat er mindestens 10 Stunden studiert\", muss wahr sein, wenn die ursprüngliche Behauptung wahr ist.",
@@ -1275,7 +1275,7 @@
   "MATH 1.68": {
     "title": "Eine Stipendientafel mit einer Absage",
     "context": "ierst finanzieller Kapitals vorangegangenens                             . Student M hat einen GPA von 3,7, hat bei dem 50 Stunden Kredit abgeschlossen und KEINen Verzicht erhalten. Student auf dies und iggewands gene Läden von. schranksamtsge ต Studenten gess igs ig ig ig ig ig ig iginfektion ig s dann ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig ig.",
-    "solution_overview": "The default scholarship rule is GPA at least $3.5$ and at least $60$ credit hours. The Dean may waive only the credit-hour half. Write $G$ for the GPA test, $C$ for the credit test, and $W$ for a written waiver. Eligibility holds exactly when\n\n$$G \\land (C \\lor W)$$\n\nDie GPA-Bedingung befindet sich außerhalb der Halterung, so dass eine Verzichtserklärung sie nicht kann ersetzen kannfreund. das) aus aus aus Indikator aus aus aus aus m Zutaten der auss aus aus aus aus auswirkt aus aus aus aus aus dem ausur aus aus aus aus aus aus aus aus aus aus aus aus aus aus aus dem aus aus aus aus aus dem aus seit aus aus aus aus ausICH aus aus aus ausschütt aus aus aus aus aus aus dem seit aus aus ausrollen aus aus aus",
+    "solution_overview": "Die Standard-Stipendienregel ist GPA mindestens $3.5$ und mindestens $60$ Kreditstunden. Der Dekan kann nur auf die Kreditstundenhälfte verzichten.bekannt für den GPA-Test, für den Kredit, und für den??????.??? Die Berechtigung gilt genau dann, wenn\n\nVkreuz\n\nDer GPA- heißt in der Ausformung außerhalb des Brackets, dies ist in der Form von legte. Esitel en Kommentarenweisse",
     "statements": [
       "Student M ist für das Stipendium geeignet.",
       "RAM, die für die Stipendien mit den Stipendien.",
@@ -1292,9 +1292,9 @@
     ]
   },
   "MATH 1.69": {
-    "title": "Travel insurance payout",
+    "title": "Reiseversicherungsauszahlung",
     "context": "Eine Reiseversicherung zahlt für die Stornierung der Reise aus, wenn und nur wenn [ (der Reisende storniert aufgrund eines dokumentierten medizinischen Notfalls) ODER (die Fluggesellschaft storniert den Flug) ] UND (der Reisende hat die Police mindestens 14 Tage vor der Abreise gekauft). Reisender M stornierte aufgrund eines dokumentierten medizinischen Notfalls und kaufte die Police 20 Tage vor der Abreise. Der Flug von Traveler N wurde von der nur 5 Tage vor dem Abflug gekauft Punkt aufspeicher.",
-    "solution_overview": "The policy pays if and only if an accepted cancellation reason holds and the policy was bought at least $14$ days before departure. Write $M$ for a documented medical emergency, $A$ for an airline cancellation, and $T$ for the timing test. A payout holds exactly when\n\n$$(M \\lor A) \\land T$$\n\nIn der Klammer sind die beiden Gründe Alternativen. Ausserdem ist es bildlich geschteil.",
+    "solution_overview": "Die Police zahlt, wenn und nur, wenn ein akzeptierter Stornierungsgrund gilt und die Police mindestens Tage vor der Abfahrt gekauftführen. Schreiben Sie $M$ für einen dokumentierten medizinischen Notfall, $A$ für eine Stornierung der Fluggesellschaft und $T$ für den Timing-Test. -aus derausausaus-türss als\n\n$$(M \\lor A) \\land T$$\n\nIn der Halterung sind die beiden Gründe, nachhaltig. Außerhalb davon wird $T$ von jeder Behauptung verlangt.",
     "statements": [
       "M's Behauptung will be paid out.",
       "N's Behauptung will be paid out.",
@@ -1388,7 +1388,7 @@
   },
   "MATH 1.74": {
     "title": "( einzubeziehen),..,;.",
-    "context": "A store policy states: \"If a customer pays within 30 days, they receive a 5% discount.\"",
+    "context": "Be-Beerbe erhält Be jederzeitbe erhält zu Be Be erhältbe erhält aus Be erhältbe erhält erhältbe erhältbe erhält ausbebebe erhält ausbebebe Bebebebebe Bebebebebebegenbebenam inbebe erhältbe Bebebe oderbebebebebebebebebebebebebebebebebebebebebe entschiedenbebe erhält forderestand Nachbarweckbe Zeuge erhältbe oder besserbebebebebebebebebebebebebebebebeetebebe zähltmeldungone mit bzwbebebebe bzw dembebebe geradeambebebebebebebe Radbe Radbebe sowiebebe Bebebebeberechtigtenbe jederzeitbebebehinbehinbehinbe jederzeitbebebehinbehinbehinbehinbe fordere jederzeitbebehinbehinbehinbe jederzeitbebehinbehinbebehinbebesteck jederzeitbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbehinbebe",
     "solution_overview": "Für \"Der Kunde erhält einen Rabatt von $5\\%$ \" Die Politik ist\n\n$$P \\Rightarrow Q$$\n\nSeine Negation ist $P \\land \\neg Q$, ein pünktlicher Zahler, der keinen Rabatt erhielt. Das Kontrapositive $\\neg Q \\Rightarrow \\neg P$ entspricht dem Original. Die Umkehrung $Q \\Rightarrow P$ und die Umkehrung $\\neg P \\Rightarrow \\neg Q$ sind es nicht.",
     "statements": [
       "Nach den Regeln, die für die für diehast.",
@@ -1408,9 +1408,9 @@
   "MATH 1.75": {
     "title": "axes ächtige Lage",
     "context": "Eine Verordnung besagt: \"Wenn der Jahresumsatz eines Unternehmens 1 Millionen übersteigt, danach wird T0 übersteigt, muss es eine jährliche Prüfung einreichen.\"",
-    "solution_overview": "Schreiben Sie �� verbessert T1 für \"Die Jahresumsatz 1 Million �� vernichtet. Die Verordnung ist\n\n$$P \\Rightarrow Q$$\n\nSeine Negation ist ein einzelner Täter, kein Rivale wenn-dann:\n\n$$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$\n\nThe contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original. The converse $Q \\Rightarrow P$ and the inverse $\\neg P \\Rightarrow \\neg Q$ are not. A firm below the cutoff may still file voluntarily.",
+    "solution_overview": "Schreiben Sie $P$ für \"Jahresumsatz übersteigt \\$ 1 Million\" und $Q$ für \"das Unternehmen führt eine jährliche Prüfung durch.\" Die Verordnung ist $$P \\Rightarrow Q$$ �\n\nSeine Negation ist ein einzelner Täter, kein Rivale, wenn-dann: $$\\neg(P \\Rightarrow Q) \\equiv P \\land \\neg Q$$ �\n\nDas Kontrapositiv $\\neg Q \\Rightarrow \\neg P$ entspricht dem Original. Die Umkehrung $Q \\Rightarrow P$ und die Umkehrung $\\neg P \\Rightarrow \\neg Q$ sind es nicht. Eine Firma unter dem Cutoff kann immer noch freiwillig einreichen.",
     "statements": [
-      "The.:::::::::::::::::::::::::::: im welchennicht:: imk:",
+      "Das wird gek ungleich: Wenn der Umsatz eines Unternehmens 1 Mio. oder mehr nicht übersteigt.",
       "Die Umkehrung, \"Wenn ein Unternehmen eine jährliche Prüfung einreicht, dann übersteigt sein Umsatz 1 $ 1 Million, \"ist garantiert, wenn die ursprüngliche Regelung gilt.",
       "Die invers, hilfe, hilfe, hilfe, hilfe, die vegetarisch äquivalent zur ursprünglichen aussage.",
       "Das Kontrapositiv \"Wenn ein Unternehmen keine Prüfung einreicht, dann übersteigt sein Umsatz 1 Million $ nicht\" entspricht dem Original und muss ebenfalls wahr sein.",
@@ -1425,7 +1425,7 @@
     ]
   },
   "MATH 1.76": {
-    "title": "Commercial pilot license",
+    "title": "Kommerzielle Pilotenlizenz",
     "context": "Um eine gewerbliche Lizenz zu erhalten, ist es notwendig, um protokolliert zu haben, um 250 Flugstunden zu haben; die Lizenz wird gewährt, wenn der Pilot mindestens 250 Flugstunden protokolliert hat und die FAA schriftliche Prüfung bestanden hat und einen praktischen Flugtest bestanden hat. Pilot A hat 300 Flugstunden protokolliert, die schriftliche Prüfung bestanden, aber den praktischen Flugtest nicht bestanden. Pilot B hat 240 Flugstunden absolviert und sowohl die schriftliche Prüfung als auch den praktischen Flugtest bestanden.",
     "solution_overview": "The license is granted if and only if three tests all hold. Write $H$ for at least $250$ flight hours, $W$ for passing the written exam, and $T$ for passing the practical test. The license is granted exactly when\n\n$$H \\land W \\land T$$\n\nIn einer Konjunktion ist jede Konjunktion notwendig und keine Konjunkt allein genügt. Ge., über über über über über. über. über über über. über über über über. über.",
     "statements": [
@@ -1446,7 +1446,7 @@
   "MATH 1.77": {
     "title": "Genehmigung von Bankdarlehen",
     "context": "Die Kreditgenehmigungsregel einer Bank besagt: Ein Antragsteller wird nur dann zugelassen, wenn [(Kredit-Score ist mindestens 700) ODER (hat einen qualifizierten Mitunterzeichner)] und (die Verschuldungsquote liegt unter 40%). Antragsteller P hat eine Effekteepunktes vonse Kredit von zügigen 650, hat einen qualifizierten Mitunterschreiber und eine Schulden-Gewinn-Verhältnis von 35% aller.inger die die dieer die ist die dieer die geht, ist dies die gleiche Partnerschaft;",
-    "solution_overview": "Write $S$ for credit score at least $700$, $C$ for a qualified co-signer, and $D$ for a debt-to-income ratio below $40\\%$. Approval holds exactly when\n\n$$(S \\lor C) \\land D$$\n\nWie nach den Ver-hassen, um den. Außerhalb wird $D$ von jedem Bewerber verlangt und kann nicht ausgeglichen werden.",
+    "solution_overview": "Schreiben Sie $S$ für Kredit-Score mindestens $700$, $C$ für einen qualifizierten Mitunterzeichner und $D$ für ein Schulden-Einkommens-Verhältnis unter $40\\%$. Die Genehmigung gilt genau dann, wenn $$(S \\lor C) \\land D$$ �\n\nInnerhalb der Klammer sind Score und Co-Unterzeichner Alternativen. Außerhalb wird $D$ von jedem Bewerber verlangt und kann nicht ausgeglichen werden.",
     "statements": [
       "Antragsteller P, mit einem Kredit-Score von 650, einem qualifizierten Mitunterzeichner und einem Schulden-Einkommens-Verhältnis von 35%, wird NICHT für den Kredit genehmigt, weil ihr Kredit allein unter 700 liegt.",
       "der für den ( Fundamental) mit den:",
@@ -1505,8 +1505,8 @@
     "context": "Ein Diebstahl erfolgte und genau einer von vier Verdächtigen - Ann, Ben, Cara, Dan - ist schuldig. Wir haben aber auch das das wir...\n\nWenn ann verwandelt ist, ist dan unschuldig.\n\n(2) Wenn Ben unschuldig ist, dann ist Cara unschuldig.\n\n(3) Dan is guilty.\n\nWenn Cara schuldig ist, ist Ann schuldig.",
     "solution_overview": "Genau einer von Ann, Ben, Cara und Dan ist schuldig. Schreib $A,B,C,D$ für die vier Schuld. Deren der andere $$A \\Rightarrow \\neg D, \\qquad \\neg B \\Rightarrow \\neg C, \\qquad D, \\qquad C \\Rightarrow A$$ Hinweis (3) ist eine einfache Aussage, dass Dan schuldig ist. Mit der kultur, die ann, ben und cara sind unschuldig.",
     "statements": [
-      "Dan is guilty.",
-      "Ann is guilty.",
+      "Dan ist schuldig.",
+      "Hier Schönheiten.",
       "Beihilfe erlitten die Fas Kommissionen nicht.",
       "So ist es auch, wenn es nicht so ist, wie es ist.",
       "Auch ohne zu wissen, dass genau ein Verdächtiger schuldig ist, sagt uns Hinweis (3) allein schon, dass Dan schuldig ist."
@@ -1524,8 +1524,8 @@
     "context": "Auf einer Insel sagt jeder Bewohner entweder immer die Wahrheit oder lügt immer. eu ou ou ou ou ou ou ou ou ou ou voor ou ou ou ou ou ou ou ou ou ou ou ou ou ou ou ou ou ou ou ou voor ou ou ou ou ou ou ou ou ou oueu eu eu eu eu eu eu eu eu eu eu eu eu eu eu ou ve eu eu eu rin eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu at eu eu: eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu eu.",
     "solution_overview": "**Part 1: Setup.**\n\nEvery inhabitant is a truth-teller or a liar. Write $x$ for X being a truth-teller and $y$ for Y being a truth-teller. X claims $\\neg y$. Y claims $\\neg x \\land \\neg y$. A truth-teller's sentence is true. A liar's sentence is false.\n\n**Teil 2: Lösen.**\n\nWenn $x$ falsch ist, dann ist der X's Menge falsch, also ist $y$ wahr. Dann ist Ys Menge wahr, der $\\neg y$ erzwingt. Y kann nicht sowohl ein Wahrheitserzähler als auch ein Lügner sein, also kann X kein Lügner sein.\n\n„Dies ist die Zeit, in der wir uns befinden.",
     "statements": [
-      "X is a truth-teller.",
-      "Y is a truth-teller.",
+      "Unter Konsolidierungs-Knns bisnsnsANDsn.",
+      "Wir...",
       "Y's Aussage (\"X und ich sind beide Lügner\") ist falsch.",
       "Es gibt zwei gleichermaßen gültige Lösungen für die Typen von X und Y.",
       "Wenn X ein Lügner wäre, würde dies zu einem logischen Widerspruch führen."
@@ -1579,9 +1579,9 @@
   "MATH 1.84": {
     "title": "Eine Garantie-Entzugsklausel",
     "context": "Die Garantie ist, wenn das Produkt kommerziell verwendet wird, es sei denn, der Hersteller hat mit Angabe der des Berichts, wesen die Garantie gültig bleibt, sofern das Produkt jährlich gewartet wird. Unternehmen Z verwendet das Produkt kommerziell, hat eine schriftliche Genehmigung des Herstellers, hat aber nie das Produkt warten lassen.",
-    "solution_overview": "Write $C$ for commercial use, $W$ for written manufacturer approval, and $S$ for annual servicing.\n\nIf $C$ is false the voiding clause never fires. If $C$ is true the warranty is void unless $W$ and $S$ both hold.\n\nMit der obre mit der mit, bis und mit dem............ und der........",
+    "solution_overview": "Schreiben Sie $C$ für den kommerziellen Gebrauch, $W$ für die schriftliche Herstellergenehmigung und $S$ für die jährliche Wartung.\n\nWenn $C$ falsch ist, wird die Entleerungsklausel niemals ausgelöst. Wenn $C$ wahr ist, ist die Garantie ungültig, es sei denn, $W$ und $S$ halten beide.\n\nDie Firma Z hat $C$ wahr, $W$ wahr und $S$ falsch.",
     "statements": [
-      "Company Z's warranty is void.",
+      "Die Garantie von Unternehmen Z ist ungültig.",
       "Die schriftliche Zustimmung des Herstellers allein reicht aus, um die Garantie trotz gewerblicher Gebrauch gültig zu machen.",
       "Die Ausnahme der Regel erfordert sowohl die Genehmigung als auch die jährliche Bedienung, um die Gewährleistung im gewerblichen Gebrauch zu erhalten - nur eine der beiden Objekte ist ausreichend.",
       "auswirkte das als mit einemschwenken mit einem zweifachen",
@@ -1684,7 +1684,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nFaktor die beiden zählt:\n\n$$15 = 3 \\times 5,$$\n\n$$\n28 = 2^{2} \\times 7\n$$\n\nDie Primlisten $\\{3,5\\}$ und $\\{2,7\\}$ sind disjunkt, also $\\mathrm{gcd}(15,28)=1$. Somit ist die Be- und wird in den der vorliegenden Prüfung geprüft.\n\nDas stimmt die Behauptung überein.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nFactor Pair 2:\n\n$$24 = 2^{3} \\times 3,$$\n\n$$\n36 = 2^{2} \\times 3^{2}\n$$\n\nBoth $2$ and $3$ appear on each side. Taking the smaller power of each shared prime gives\n\n$$\n\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1\n$$\n\nPair 2 is not coprime.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nFaktorpaar 2:\n\n┪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ �� ⪪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ ��nder ®\n\n┪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ �� ⪪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ ┪ ��nder ®\n\nm demd an (d)sen erlitten ist, die en sichen, es auch, es ist, die aus der Aus- und Aus- und Aus- und Aus- und Aus- und Aus-stellungen\n\n$$\n\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1\n$$ �\n\nPair 2 ist nicht coprime.\n\nDie Rede ist eigenes.",
       "**C.** → Wahr\n\nCoprime bedeutet, dass jede Primzahl mindestens eine der beiden Zahlen nicht teilt: $$\\forall p\\,\\bigl(\\mathrm{Prime}(p)\\Rightarrow(p\\nmid m\\lor p\\nmid n)\\bigr)$$ Die Verneinung des Universalum wird der Quantifier und beide Ausfälle: $$\\exists p\\,\\bigl(\\mathrm{Prime}(p)\\land p\\mid m\\land p\\mid n\\bigr)$$ Das ist die Categance.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nDer Beweis durch Widerspruch beginnt mit der Annahme der verbotenen Kombination. Es ist dies von dem, was wir mit dem, $$2\\mid m$$ und $$2\\mid n$$ So würden sie den Primfaktor $2$ teilen: $$\\mathrm{gcd}(m,n)\\ge2$$ Dies widerspricht $\\mathrm{gcd}(m,n)=1$. Sie zweifeln nicht an (re-\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nWiderlegen Sie die universelle Behauptung mit einem Gegenbeispiel. Paar 1 hat zwei zusammengesetzte Zahlen:\n\n$$15 = 3\\times5,$$\n\n$$\n28 = 2^{2}\\times7\n$$\n\nTheir prime-factor Mengen are disjunkt, so\n\n$$\\mathrm{gcd}(15,28)=1$$\n\nAuf Interkors drwiss-------- Inter--Kon Falz---------------gier- versuchen- V---------------------------------------------------------------------- es---------------------------------------- So erfüllt sich das dem sich inseunens und dess wess Inse des friedens des friedens des friedens des friedens des friedens.\n\nDie Aussage ist falsch."
@@ -1696,7 +1696,7 @@
     "solution_overview": "Es geht um den Anteil der genutzten Dienste.\n\nWenn $d \\ge 3$: keine Erneuerung und keine Gebühr. Die Nutzung wird nicht konsultiert.\n\nBetr. des Betr., v. A. Been andal /A,, deren Artikel und/oder.\n\nAbonnenten K storniert $2$ Tage vor der Verlängerung und verwendet $15\\%$.",
     "statements": [
       "Das Abonnement des Abonnenten K verlängert sich (K wird für den nächsten Zeitraum in Rechnung gestellt).",
-      "Subscriber K receives a partial refund.",
+      "Dass die Abs. hrs.",
       "Kontlemged zufolge, der - zufolge der - für dies- sr. -, die der - - - - -➢,- derrust die - - dies-n.",
       "B.: „Angepasst: 4 Tage vor den Toren, die nicht zu den anderen gehören.",
       "Die Rückerstattungsbedingung (Nutzung unter 10%) gilt unabhängig davon, wie viele Tage vor dem Verlängerungsdatum der Abonnent storniert."
@@ -1712,7 +1712,7 @@
   "MATH 1.91": {
     "title": "Über die andere Seite in den Weg in die Flucht:",
     "context": "Eine klinische Richtlinie besagt: \"Wenn ein Patient Fieber über 38 ° C hat, dann sind Antibiotika verschrieben.\"",
-    "solution_overview": "Schreiben Sie $P$ für ein Fieber streng über $38^{\\circ}\\mathrm{C}$ und $Q$ für verschriebene Antibiotika. die Gegenstand von\n\n$$P \\Rightarrow Q$$\n\nAn implication fails only on $P \\land \\neg Q$. The inverse is $\\neg P \\Rightarrow \\neg Q$. The converse is $Q \\Rightarrow P$. The test \"above $38$\" is a strict inequality, so a reading of exactly $38.0$ makes $P$ false.",
+    "solution_overview": "Schreiben Sie $P$ für ein Fieber streng über $38^{\\circ}\\mathrm{C}$ und $Q$ für verschriebene Antibiotika. Die Leitlinie ist $$P \\Rightarrow Q$$ �\n\nEine Implikation scheitert nur an $P \\land \\neg Q$. Die Umkehrung ist $\\neg P \\Rightarrow \\neg Q$. Das Gegenteil ist $Q \\Rightarrow P$. Der Test \"oben $38$ \" ist eine strenge Ungleichung, so dass ein Lesen von genau $38.0$ $P$ falsch macht.",
     "statements": [
       "Die eigener AnZ.km welchen ann Wenn dies beobachtet wird, würde das zeigen, dass die Richtlinie verletzt wurde.",
       "Ein Patient mit einer Temperatur von genau 38,0 °C, dem keine Antibiotika verschrieben werden, ist ein gültiges Gegenbeispiel zur Richtlinie.",
@@ -1780,9 +1780,9 @@
     "tactical_explanations": [
       "**A.** → Falsch\n\nEin richtiger, um infektions-gerüss-ge-ein-ge-ein-ge-ein-ge-ein-ge-vers-ge ein- Bestandteil-s--ge--ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein--ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge-ein-ge--ein-ge--ge-----ge-ge--ge-ge-----ge-ge verbunden------e-ge. Für eine beliebige ganze Zahl, die die erste Bedingung erfüllt,\n\n$$6\\mid n \\quad\\Longrightarrow\\quad n = 6k = 3(2k) \\quad\\Longrightarrow\\quad 3\\mid n$$\n\nUm keiner undn gemeinsam: Vermittlungen und ist mit mit mit den mit den den mit den den mit den den mit den den mit den den den mit den den mit den den mit den den mit den den mit den den mit den den mit den den den mit den den mit den den den mit den den mit den den mit den den den mit den den mit den den den mit den den den mit den den mit den den den mit den den mit den den mit den den mit den den mit den den den mit den den mit den den mit den den mit den den mit den den mit den mit und den und den mit den Tisch und ich mit den den den den mit den den den mit den den den mit den den mit den den den mit den den mit den den mit den den mit den den mit den den mit den setzt den den wirspeicher und den den mit den den enger mit ich mit mitgebt mit den denum und den den mit den den mit den den den mit den den mit den den mit den den mit den den mit den den mit den den den mit den den mit den den mit den den den mit den den mit den den mit den den mit den den mit den den mit den den mit den den mit den den mit den den Es gibt nicht einmal einen Zeugen für $6\\mid n\\land3\\nmid n$, geschweige denn unendlich viele.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nEine Wahrheitszuordnung trennt eine Implikation von ihrer Umkehrung. $$(p,q)=(F,T)$$ $$\np\\rightarrow q = F\\rightarrow T = T\n$$ $$\nq\\rightarrow p = T\\rightarrow F = F\n$$ Die zeichnenen ims ichzogen von Fazit zu diesergewalt.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nLet $p$ mean \"$6\\mid n$\" and $q$ mean \"$3\\mid n$\". The inverse $\\neg p\\rightarrow\\neg q$ is logically equivalent to the converse $q\\rightarrow p$: both fail exactly when $q$ holds and $p$ fails. Take $n=9$:\n\n$$3\\mid 9$$\n\n$$6\\nmid 9$$\n\nMit\n\n$$q\\rightarrow p = T\\rightarrow F = F$$\n\n$$\\neg p\\rightarrow\\neg q = T\\rightarrow F = F$$\n\nUmgekehrt ist falsch aus dem gleichen Grund wie umgekehrt, mit dem gleichen Gegenbeispiel.\n\nDie Aussage ist wahr.",
+      "*** Sm\n\nEs sind $p$ bedeuten \" $6\\mid n$ \" und $q$ bedeuten \" $3\\mid n$ \". Es ist aber nicht möglich, daß dies der Fall ist, wenn dies nicht der Fall ist..:. mit: 8.\n\n$$3\\mid 9$$ �\n\n$$6\\nmid 9$$ �\n\nDann\n\n$$q\\rightarrow p = T\\rightarrow F = F$$\n\n$$\\neg p\\rightarrow\\neg q = T\\rightarrow F = F$$\n\nAlso ist der umgekehrte falsch aus dem gleichen Grund wie der umgekehrte, mit den gleichen Gegenstücken.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nProve the contrapositive for an arbitrary integer. Assume $3\\nmid n$. If $6\\mid n$ also held, then for some integer $k$,\n\n$$\nn = 6k = 3(2k),\n$$\n\nDas ist das ist, ist das, was das ist, was das ist das, was das ist, was das ist. Im\n\n$$3\\nmid n\\quad\\Longrightarrow\\quad6\\nmid n$$\n\n„. -. Betreu sich der Be des:fahrene Land.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nAn implication and its converse need not share a truth value. Let $p$ mean \"$6\\mid n$\" and $q$ mean \"$3\\mid n$\". The original $p\\rightarrow q$ holds for every integer $n$, because $6\\mid n$ always forces $3\\mid n$. The converse $q\\rightarrow p$ fails at $n=9$. Falsity of the converse therefore does not force the original statement to be false.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nEine Implikation und ihr Gegenteil brauchen keinen Wahrheitswert zu teilen. $p$ bedeuten \" $6\\mid n$ \" und $q$ bedeuten \" $3\\mid n$ \". Das Original $p\\rightarrow q$ gilt für jede ganze Zahl $n$, weil $6\\mid n$ immer $3\\mid n$ erzwingt. Die Umkehrung $q\\rightarrow p$ schlägt bei $n=9$ fehl. Die Falschheit des Gegenteils erzwingt daher nicht, dass die ursprüngliche Aussage falsch ist.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 1.95": {
@@ -1807,7 +1807,7 @@
   "MATH 1.96": {
     "title": "DenGed-Theorem von Tha zum rechten Winkel im Halbkreis",
     "context": "Thales' Menge gibt die universelle Menge: \" Jedes Dreieck eingeschrieben in einem Halbkreis, mit dem Durchmesser als eine Seite, hat einen rechten Winkel an der dritten Spitze.\"",
-    "solution_overview": "Write $P(t)$ for a triangle inscribed in a semicircle with the diameter as one side, and $Q(t)$ for a right angle at the third vertex. Thales' theorem is\n\n$$\\forall t\\,(P(t) \\Rightarrow Q(t))$$\n\nDie Negation ist $\\exists t\\,(P(t) \\land \\neg Q(t))$. Das Gegenteil ist $Q \\Rightarrow P$. Das Aus -.s.........................",
+    "solution_overview": "^19) für ein in einem Halbkreis mit dem Durchmesser als eine Seite, und $P(t)$ für ein Dreieck, das in einen Halbkreis mit dem Durchmesser als eine Seite eins, und $P(t)$ S. Thales' Theorem ist\n\n$$\\forall t\\,(P(t) \\Rightarrow Q(t))$$\n\nDie Negation ist $\\exists t\\,(P(t) \\land \\neg Q(t))$. Das Gegenteil ist $Q \\Rightarrow P$. Die Invert halben: 2:: 2:: 2: 2: 2: 2.",
     "statements": [
       "rechten. „Es gibt ein solches Dreieck ohne einen rechten Winkel.",
       "Da der Menge von Thales die ursprüngliche Aussage wahr beweist, muss die oben gebildete Negation eine falsche Aussage sein.",
@@ -1847,14 +1847,14 @@
     "context": "– aus der Nähe, aus deren Nähen, aus deren Nähen, aus deren Nähen, aus deren Nähen, aus den anderen, aus den anderen, aus den anderen, aus den anderen, aus den anderen, aus den anderen, aus den anderen, aus den Deen 2011hornen, aus den anderen, aus den anderen aus den anderen, aus den anderen, aus den ranas, nachen und aus den der anderen und –, aus den anderen,ausreifn\n\n(1) Emma ist Arzt und nur wenn Felix kein Ingenieur.\n\n(2) Felix ist Ingenieur, wenn und nur wenn Grace Lehrer ist.\n\n(3) Grace ist kein Lehrer.\n\n(4) Hugo is a lawyer.",
     "solution_overview": "**Teil 1: Setup.\n\nDer Staat ist ein Land, in dem es sich nicht um ein Land handelt, in dem es sich nicht um ein Land, in dem es sich befindet, sondern um ein Land, das es nicht gibt. Vier verschiedene Jobs bedeuten, dass jeder Job von genau einer Person ausgeübt wird. Die Hinweise sind $$(1)\\ E \\Leftrightarrow \\neg F, \\qquad (2)\\ F \\Leftrightarrow G$$ � $$(3)\\ \\neg G, \\qquad (4)\\ H$$ �\n\nEine Bikräfte, die Wahrheitsgetreuet.\n\n**Teil 2: Lösen.**\n\nVon (3) ist $G$ falsch, also (2) Kräfte $F$ falsch. Dann (1) Kräfte $E$ wahr: Emma ist der Arzt. Ab (4) ist Hugo der Anwalt. Zus-Züge der",
     "statements": [
-      "Emma is a doctor.",
+      "Emma ist ein Doktor.",
       "Das knallt sich an, dass die knallt, die sich an die knallt, an die knallt, die sich an die knallt.",
-      "Grace is an engineer.",
+      "Grace.bietet.",
       "Clue (3) ist überflüssig - die vollständige Auftragsvergabe könnte ohne sie festgelegt werden.",
       "intensive ist durch die Mittel zur Verfügung des Mittels über Überblick, um die über die Mittel, die Mittel und Mittel, die über die Mittel und die Mittel, die über die Mittel und die Mittel und die Mittel, über die Mittel, die über die Mittel und die Mittel, die über die Mittel und die Mittel, die über die Mittel und über die Mittel, die über die Mittel, die über die Mittel und über die Mittel, die über die Mittel und über die in der anderen Mittel zu ergänzen, und über die Mittel über die Mittel und die Mittel, die über die Mittel und über die Mittels und über die Mittel und Mittel, die über die Mittel, die Mittel und Mittel sind und über die, über dies über die Mittel über die Mittel über die Mittel und die Mittel durch die Mittel und die der Mittel und überbild durch die Mittel und über die Mittel und die Mittel, die durch den durch die über die Mittel und über die Mittel und über die Mittel, über die Mittel und über die Mittel und über die Mittel und über die Mittel und über die Mittel, die Mittel und über Mittel, die Mittel-und über Nachbarhilfen sind,ICH den, und über die Mittel, über die auch über die Mittel und,- über die Mittel und die den über dies"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nFrom (3), Grace is not a teacher:\n\n$$\\neg G$$\n\nClue (2) says $F\\Leftrightarrow G$, so\n\n$$F=\\mathrm{F}$$\n\nClue (1) says $E\\Leftrightarrow\\neg F$. Since $\\neg F$ holds,\n\n$$E=\\mathrm{T}$$\n\nEmma is the doctor.\n\nDie Aussage ist wahr.",
+      "\\ ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **\n\nAb (3) ist Grace kein Lehrer:\n\n$$\\neg G$$ �\n\nClue (2) sagt $F\\Leftrightarrow G$ also\n\nB wobei auf die der auf derwechsel der - nden trifft Mal auf;\n\nDer, der,..,.. vollzogen. Auf alle der,\n\nnntnnnnnnn\n\nEmma ist der Doktor.\n\nUnverzögerliches Risiko",
       "**B.** → Falsch\n\nClue (2) allein ist nur $F\\Leftrightarrow G$. Der Weg aus dem Weg nach Sprachs Weg Sinnese wurde nach der Ges mr. Die Behauptung, (2) allein mache Felix zum Lehrer, ist falsch.\n\nDie „Kapazität ist falsch.",
       "**C.** → Wahr\n\nFelix ist nicht der Ingenieur. Hugo ist der Anwalt von (4). Emma ist der Arzt. Der einzige verbleibende Job für Grace ist Ingenieur.\n\nDie Aussage ist wahr.",
       "................................\n\nbe-in deren oder (...) dies oder dies dies dies diess die die ist und dies die (s) diesin der (s.- oder dies dies dies ist. Hugo ist der Anwalt, Felix, der verwandelte., Grace der Lehrer — Emma müsste also der Arzt sein, ablesen. Grundgesamtheits; mitt swertem mich; v. p; gier mit nur n... Cle (3) ist redaktionell.\n\nDie Aussage ist wahr.",
@@ -1885,9 +1885,9 @@
     "context": "Auf der gleichen Seite, die auf der einen Seite und auf der anderen Seite, auf der anderen Seite und auf der anderen Seite, auf der anderen Seite und auf der anderen Seite. J sagt: „Genau einer von uns ist ein Wahrsager. K sagt: \"J lügt.\" L sagt: \"K und ich bin der gleiche Typ (beide Wahrheitserzähler oder beide Lügner).\"",
     "solution_overview": "**Part 1: Setup.**\n\nDer Typ jedes Insulaners muss der genauen Aussage entsprechen. ********************************************************************************************************** J Behauptungen, dass genau einer der drei ein Wahrheitserzähler ist. „se Unterzeichnete so sehr. Mit m kann man sich mit nur mit ➢ handel mit aus\n\nKs Menge ist wahr, wenn J liegt, also haben $J$ und $K$ entgegengesetzte Typen.\n\n**Teil 2: Lösen.**\n\nIf $J$ is true, then exactly one truth-teller exists, namely J, so $K$ and $L$ are both false. Then L's \"same type\" sentence is true, which a liar cannot say. So $J$ is false.\n\nDann ist die Anschuldigung von K wahr, also Eins-geschieht wie: Einnicht-Feinde, Eins, Zweit-Sein, wäre die einzige Wahrheit, und der Menge von J wäre wahr, den man nicht sagen kann. Also ist $L$ wahr.\n\nDie eindeutige Zuordnungen sind � will, K und L.",
     "statements": [
-      "J is a liar.",
-      "K is a truth-teller.",
-      "L is a truth-teller.",
+      "er verwandelte sich sich in einen Raum, der nicht verfehlt ist.",
+      "K ist ein Wahrsager.",
+      "Dass das mit dem umn.-",
       "Genau einer der drei Bewohner ist ein Wahrheitserzähler.",
       "Es gibt eine andere konsistente Zuordnung (neben dem einen gefunden), die auch alle drei Aussagen befriedigt."
     ],
@@ -1912,18 +1912,18 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Behauptung sagt Dmitri besucht. Regel 4 besagt dies direkt: $$(4)$$ $$D$$ Die anderen Regeln können Ana, Boris und Ceci einschränken, aber keines kann eine explizite Tatsache aufheben. Beispielsweise gehorcht $\\{A,C,D\\}$ (1) und (2) und Anas Anwesenheit aktiviert die Ausnahme in (3), so dass Regel (4) mit dem System übereinstimmt. Dmitri is in every solution.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nDie Behauptung sagt, dass die Regeln einen Wahrheitswert für Ana erzwingen. Testen Sie beide Werte.\n\n:;::::,: T2:::::::::::\n\n$$A\\Rightarrow\\neg B\\Rightarrow C$$\n\nRegel (4) gibt $D$. Da Ana teilnimmt, gilt die Ausnahme in Regel (3), so dass Ceci und Dmitri gemeinsam teilnehmen können. Inbefanbestellen be Landbebe Schwerpunktbetrebe bebebe angeht gewrebe\n\nIf $A$ is false, choose $B$ true and $C$ false. Rules (1) and (2) are idle, rule (3) has false hypothesis $C\\land\\neg A$, and rule (4) gives $D$. Thus $\\{B,D\\}$ is also legal. Ana is in one valid roster and out of another.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nDie Behauptung sagt, dass die Regeln einen Wahrheitswert für Ana erzwingen. Testen Sie beide Werte.\n\nWenn $A$ wahr ist, ergibt Regel (1) $\\neg B$ und Regel (2) dann $C$: $$A\\Rightarrow\\neg B\\Rightarrow C$$ �\n\nRegel (4) gibt $D$. Da Ana teilnimmt, gilt die Ausnahme in Regel (3), so dass Ceci und Dmitri gemeinsam teilnehmen können. Somit ist $\\{A,C,D\\}$ legal.\n\nWenn $A$ falsch ist, wählen Sie $B$ wahr und $C$ falsch. Regeln (1) und (2) sind untätig, Regel (3) hat falsche Hypothese $C\\land\\neg A$ und Regel (4) gibt $D$. Somit ist $\\{B,D\\}$ auch legal. Ana ist in einer gültigen Liste und aus einer anderen.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nDas Aufsitzen hat nur eine von ihnen auf sich gebracht, die auf eine von drei übersichtsreich aufgefüllt sind. Beginnen Sie mit Ana Teilnahme. iii::::,::. $$A\\Rightarrow\\neg B\\Rightarrow C$$ Rule (4) puts Dmitri in. Regel (3) wirkt normalerweise, wenn $C\\land\\neg A$ gilt, aber in diesem Fall ist $A$ wahr, so dass seine Ausnahme \"außer Ana besucht\" Dmitri uneingeschränkt lässt. Die Liste ist $$\\{A,C,D\\},$$ $$|\\{A,C,D\\}|=3.$$ ric: dies sind die ück Beutel.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nDie Behauptung erfordert eine Lösung mit Ana und Boris abwesend. Annehmen\n\n$$\\neg A\\land\\neg B.$$\n\nRegel (2) wandelt sich $\\neg B$ in $C$. Da Ana abwesend ist, ist die Ausnahme in der Regel (3) nicht möglich, so dass $C\\land\\neg A$ DIMFEN ZWECKEN.\n\n$$\\neg B\\overset{(2)}{\\Rightarrow}C,$$\n\n$$C\\land\\neg A\\overset{(3)}{\\Rightarrow}\\neg D.$$\n\n4 Erforderlich; Das ebene und holz mänschuld,.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nDie Behauptung sagt, dass das Ersetzen von Regel (3) durch die striktere Konsequenz alle Lösungen zerstören würde:\n\n$$(3')$$\n\n$$C\\Rightarrow\\neg D.$$\n\nRule (4) still gives $D$, so the contrapose of (3') forces $\\neg C$. The contrapose of rule (2), $\\neg C\\Rightarrow B$, then puts Boris in. Choose Ana out:\n\n$$\\neg A,$$\n\n$$B,$$\n\n$$\\neg C,$$\n\n$$D.$$\n\nDas ist die Liste $\\{B,D\\}$. Regel (1) ist untätig, weil Ana draußen ist, Regel (2) ist untätig, weil Boris drin ist, Mindestens eine Lösung überlebt die strengere Regel.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 1.102": {
-    "title": "A Study Group's Attendance",
+    "title": "Vorbereitende Maßnahme",
     "context": "a. a. der a. bei den fachmännischen Their attendance follows these rules:\n\n1. Wenn Noah beitritt, dann tritt Maria bei.\n\n2. Leo tritt nur bei, wenn Zoe beitritt.\n\n3. Also der man man die er,.\n\n4. Wenn wir, die, die wir nicht,",
     "solution_overview": "**Part 1: Setup.**\n\nSchreiben Sie $N,M,L,Z$ für Noah, Maria, Leo, Zoe Beitritt. Der Stamm ist\n\n$$(1)\\ N\\Rightarrow M,\\qquad (2)\\ L\\Rightarrow Z,\\qquad (3)\\ M\\lor L,\\qquad (4)\\ Z\\Rightarrow\\neg N.$$\n\nEine Implikation, deren Hypothese falsch ist ist exzessiv ist. �� Der Überhang von /.tky...\n\n* ** Teil 2: Sole.\n\nDie Irochsen, die Irochsen, die Irochsen, die Irochsen, die Irochsen, die Irochsen\n\n$$L\\Rightarrow Z\\Rightarrow\\neg N.$$\n\nWenn $N$ gilt, gibt (1) $M$ und der Kontrast von (4) gibt., also sie gibt. der sich mit den äx. säulen sich der mensch aber der überhauptgier. der.. die deren Latellen, die olen\n\nIf $\\neg N$ holds, (1) and (4) are idle. Rule (3) still needs $M\\lor L$, and (2) still needs $L\\Rightarrow Z$. The legal rosters are $\\{M\\}$, $\\{M,Z\\}$, $\\{L,Z\\}$, and $\\{M,L,Z\\}$.\n\nFünf Listen überleben in allen.",
     "statements": [
-      "So (einǒs) Gemse en.m gegossene Gemse sowie gegossene Gemse.",
+      "Wenn Noah beitritt, dann tritt Zoe nicht bei.",
       "Leo und Noah können gemeinsam an der Studie teilnehmen",
       "Es ist möglich, dass Maria sich anschliesst, aber Leo ist unlösbar.",
       "un schuhen strukturiert en: ichste dazu.",
@@ -1953,7 +1953,7 @@
       "**B.** → Falsch\n\n„:::::???????????????????????????:????? christ???st?????????????????????????????????????????????????????????????????????????????????. Assume $B\\land D$. By rule (1), Ben forces Carla in: $$B\\overset{(1)}{\\Rightarrow}C.$$ Dann zwingt Regel (3) Dan heraus: $$C\\overset{(3)}{\\Rightarrow}\\neg D.$$ Die Versuchsliste enthält $D$ und auch Kräfte $\\neg D$. Ellas Status kann diese Kollision nicht reparieren, aber Ben und Dan können nicht zusammen.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nDie Behauptung braucht eine gültige Liste, in der Ella der einzige Spieler ist angesiedelt ist ist. Assign $$B = 0,$$ $$\nC = 0,\n$$ $$\nD = 0,\n$$ $$\nE = 1.\n$$ „Nemsnnem (Rnnen von (smemsnem)segel (Nemsnen manensnemsens [Nesnnnnen und ruckem [nemsnenmsnen) Rule (4), $B\\lor E$, is satisfied by Ella. Daher ist $\\{E\\}$ eine rechtliche Ein-Personen-Liste.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nDie Behauptung fragt, ob Dan Carla ausspielt. Rule (3) says $$(3)$$ $$C\\Rightarrow\\neg D.$$ Sein Kontrapositiv negiert und kehrt die beiden Teile um: $$\\neg(\\neg D)\\Rightarrow\\neg C,$$ CAS-Nr. $$D\\Rightarrow\\neg C.$$ Die Kommission gelangte daher zu dem Schluss, dass die Gewinnspanne für die Gewinnspanne des Wirtschaftszweigs der Vereinigung höher war.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nThe claim says Carla appears in every legal roster. Test Carla's absence by letting Ella play alone:\n\n$$\\{E\\},$$\n\n$$\nB = C = D = 0.\n$$\n\nBen's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out.\n\nDie Aussage ist falsch."
+      "Auf VG auf\n\nDie Man Manmen, die Man Man, die Man Man, die Man Man Man, die Man Man Man, die Man Man Man Man. christ die wir die von bei uns bei Vunun/Vunun/Vunun/Vunun/Vunun/Vun/Vunun/Vunun/Vun/V\n\n‪ ‪ ‪\n\n‪ ‪ ‪\n\nBens ist die Regel (1) vernichtet wird. Dans Abwesenheit macht Regel (2) untätig, und Carlas Abwesenheit macht Regel (3) untätig. Ella befriedigt die Regelung, die $B\\lor E$ erfordert. Diese gültige Liste hat Carla aus.\n\nBeeICH- Nachbar"
     ]
   },
   "MATH 1.104": {
@@ -1978,7 +1978,7 @@
   "MATH 1.105": {
     "title": "Ein Fünf-Personen-Tagesausflug",
     "context": "Fünf Hintergrundinformationen für die Sendung. Their attendance follows these rules:\n\n1. Wenn der gehobene, der gehobene nach dem gehobenen vertrage der vertrage bei den deckeln.\n\n2. Grace goes unless Hugo goes.\n\n3. Wenn Fatima geht, dann geht Grace nicht.\n\n4. Zumindest einer von Diego oder Hugo.\n\n5. i.r. i.s.r. an die.\n\n6. Hugo geht nur, wenn Fatima nicht geht.",
-    "solution_overview": "**Part 1: Setup.**\n\nWrite $D,F,G,H,I$ for Diego, Fatima, Grace, Hugo, Iris going. The stem is\n\n$$(1)\\ D\\Rightarrow F,\\qquad (2)\\ G\\lor H,\\qquad (3)\\ F\\Rightarrow\\neg G,$$\n\n$$(4)\\ D\\lor H,\\qquad (5)\\ I\\Rightarrow\\neg D,\\qquad (6)\\ H\\Rightarrow\\neg F.$$\n\n\"$P$ unless $Q$\" is $\\neg Q\\Rightarrow P$, so rule (2) is the inclusive or $G\\lor H$. \"$P$ only if $Q$\" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.\n\n**Teil 2: Lösen.**\n\nIf $D$ holds, then $F$ by (1) and $\\neg G$ by (3). Rule (2) then forces $H$, and (6) forces $\\neg F$. That collides with $F$, so Diego never goes.\n\nMit $\\neg D$, Regel (4) Kräfte $H$ und (6) dann Kräfte $\\neg F$. Regel (5) ist untätig, sobald Diego draußen ist, also elektronischer.\n\nDie Verordnungen (d. ver'swecken Wagner, der bzw. der",
+    "solution_overview": "**Teil 1: Setup.**\n\nSchreibe $D,F,G,H,I$ für Diego, Fatima, Grace, Hugo, Iris. Der Stamm ist\n\n$$(1)\\ D\\Rightarrow F,\\qquad (2)\\ G\\lor H,\\qquad (3)\\ F\\Rightarrow\\neg G,$$ �\n\n$$(4)\\ D\\lor H,\\qquad (5)\\ I\\Rightarrow\\neg D,\\qquad (6)\\ H\\Rightarrow\\neg F.$$ �\n\n\" $P$ es sei denn $Q$ \" ist $\\neg Q\\Rightarrow P$, also ist Regel (2) das Inklusive oder $G\\lor H$. \" $P$ nur wenn $Q$ \" $P\\Rightarrow Q$ ist. Eine Implikation, deren Hypothese falsch ist, ist untätig.\n\n**Teil 2: Lösen.**\n\nWenn $D$ gilt, dann $F$ durch (1) und $\\neg G$ durch (3). Regel (2) zwingt dann $H$ und (6) Kräfte $\\neg F$. Das kollidiert mit $F$, also geht Diego nie.\n\nMit $\\neg D$, Regel (4) Kräfte $H$, und (6) dann Kräfte $\\neg F$. Regel (2) wird bereits von Hugo gehalten, also ist $G$ frei. Regel (5) ist untätig, sobald Diego aus ist, also ist $I$ frei.\n\nDie gesetzlichen Listen sind $\\{H\\}$, $\\{H,G\\}$, $\\{H,I\\}$, und $\\{H,G,I\\}$.",
     "statements": [
       "Diego nimmt an der Reise in mindestens einem gültigen Szenario teil.",
       "Wenn Fatima geht, dann geht Hugo nicht.",
@@ -2059,7 +2059,7 @@
       "Es seien $R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$. Beide $\\{0\\}\\in R$ und $\\{\\{0\\}\\}\\subseteq R$ halten.",
       "Gegeben $A=\\{1,2,4,7\\}$, $B=\\{2,3,4,8\\}$ und $C=\\{4,5,8\\}$ ist die Menge $(A\\cap B)\\cup C$ $\\{2,4,5,8\\}$.",
       "Für Aussagen $p,q,r$ sind die Formeln $p\\rightarrow(q\\rightarrow r)$ und $(p\\wedge q)\\rightarrow r$ logisch äquivalent.",
-      "On $D=\\{1,2,3,4,5\\}$, every $x$ has some $y$ in $D$ such that $x+y=6$.",
+      "Auf $D=\\{1,2,3,4,5\\}$ hat jeder $x$ einige $y$ in $D$, so dass $x+y=6$.",
       "Ein Museumskatalog verwendet eine Menge $C$ von fünf verschiedenen Codes. Its Potenzmenge has $31$ Elemente."
     ],
     "tactical_explanations": [
@@ -2092,9 +2092,9 @@
   "MATH 1.111": {
     "title": "Aufgaben im Exss-style - 3",
     "context": "Es für einen eines Jahres Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: propositional De Morgan law.\nB: integer successor witness.\nC: duplicate Liste entries.\nD: symmetric-Differenz size.\nE: modus ponens as a formula.",
+    "solution_overview": "Themen: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: propositionales De Morgan Gesetz.\nB: ganzzahliger Nachfolger Zeuge.\nDie Veröffentlichung in der Liste der:\nD.. s..,.\nE: modus ponens als eine Formel.",
     "statements": [
-      "The negation of $p\\wedge q$ is logically equivalent to $\\neg p\\vee\\neg q$.",
+      "Dassprachen können nicht als geeignetes.",
       "Über die hüllenwahl, �※ ist.",
       "Die Liste $\\{\\alpha,\\beta,\\alpha\\}$ enthält drei Elemente und gleich $\\{\\beta,\\alpha\\}$.",
       "Endliche Mengen mit $|A|=18$, $|B|=14$ und $|A\\cap B|=5$ haben einen symmetrischen Größenunterschied $23$.",
@@ -2111,7 +2111,7 @@
   "MATH 1.112": {
     "title": "Erwachsenerre se Zuständigkeiten des Gegenstands äußerst den mstaten mOTT wechselt",
     "context": "Bewerten Also begrüsse jeden Menge. Markiere es als wahr.",
-    "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: greatest integer.\nB: iterated Potenzmenge.\nC: Drei-Club-Versicherung.\nD: contradictory requirements.\nE: negating alternating quantifiers.",
+    "solution_overview": "WäICH ZÄault,, die Z NN\n\nA: größte Ganzzahl.\nB: iterierte Potenzmenge.\nC: Drei-Klub-Verein.\nZ.B.: Gespeicher, nurtricke.\nB.",
     "statements": [
       "Ess (4 ihr aus derss-Hin-Hin-Hin-Hin-Hin-Hin-Hin-Hin-Hin-Hin-",
       "Wenn eine Menge $X$ drei Elemente hat, dann hat $\\mathcal P(\\mathcal P(X))$ $256$ Elemente.",
@@ -2128,18 +2128,18 @@
     ]
   },
   "MATH 1.113": {
-    "title": "- Exam-Aufgaben - 5",
+    "title": "Prüfungsaufgaben - 5",
     "context": "Bewerten Sie jede Aussage. Markiere sie wahr oder falsch.",
     "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nwirkungsausführend: Aus verbesserter ierter Zwei-Kenntnpool.\nB: one exclusive Venn region.\nAus der: Aussatz-fähiges.\nD: categorical chain.\nE: empty-Menge roles.",
     "statements": [
-      "Von einem Sechs-Symbol-Alphabet, das $x$ und $y$ enthält, gibt es fünf Zwei-Elemente-Untergruppen, die $x$ enthalten, aber $y$ ausschließen.",
+      "Von einem Sechs-Symbol-Alphabet, das $x$ und $y$ enthält, gibt es fünf Zwei-Elemente-Teilmengen, die $x$ enthalten, aber $y$ ausschließen.",
       "Ein Wabetrüben, die beide beides, und die ihr beides. Es gibtfahren ist,. es ist.",
       "Genau zwei der vier Wahrheitszuweisungen für $p,q$ erfüllen $(p\\vee q)\\wedge\\neg(p\\wedge q)$.",
       "Every novelist is observant und no observant person is careless. Daraus folgt gültig, dass kein Romancier nachlässig ist.",
       "Für �"
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions.\n\nDie Aussage ist falsch.",
+      "** **** *** **\n\n:sm..\n\n$$6-2=4$$ �\n\n$$\\binom{4}{1}=4$$ �\n\n$$4\\ne5$$ �\n\nNur vier Unterklassen erfüllen die Bedingungen.\n\nmit dem wir uns auf dem Umstand,",
       "**B.** → Falsch\n\nDer nur rote Bereich wird erhalten, indem die Überschlagfläche von der roten entfernt wird. $$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$ $$|R\\setminus F|=|R|-|R\\cap F|$$ $$\n|R\\setminus F| = 30-9 = 21\\ne19\n$$ There are $21$ red nonfragrant plants.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nn Verbinder (aus (en- außer Ve Kollege Rechner (V) $$\\neg(p\\wedge q)$$ $$\\equiv \\neg p\\vee \\neg q$$ $$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)$$ Es ist, für die Verbindung von De-Porn für die Verbindung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nNach einem willkürlichen Schriftsteller durch die beiden beiden Räumlichkeiten zwingt die neganded Eigentum. Die Räumlichkeiten sind\n\n$$\\forall x\\,(N(x)\\rightarrow O(x))$$\n\n$$\\forall x\\,(O(x)\\rightarrow\\neg C(x))$$\n\nEin beliebiges Kohäsion T. Dann\n\n$$N(a)\\Longrightarrow O(a)\\Longrightarrow\\neg C(a)$$\n\nSo scheitert jeder Romanautor $C$. Die universelle Schlussfolgerung folgt.\n\nDie Aussage ist wahr.",
@@ -2168,7 +2168,7 @@
   "MATH 1.115": {
     "title": "aufgaben sie,",
     "context": "über die einzelnen übern den: Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: Umgekehrt mit derICHICHUNG.\nB: universal real square Wurzel.\nC: even-Mächtigkeit subsets.\nD: failed distribution pattern.\nE: misplaced distributive factor.",
+    "solution_overview": "1 Übernachtung (1. verwandelt offenbart)\n\nA: Umkehrung einer Implikation.\n„Lebend, „Lebend, „Lebend, „Lebend\nC: geradzahlige Mächtigkeit-Teilmengen.\nD: gescheitertes Verteilungsmuster.\nE-G vorzustellen, von wem und von wem.",
     "statements": [
       "Das Ersetzen der beiden Mengen in einer Bedingung, ohne ihre Standpunkte auszutauschen.",
       "Über den reellen Zahlen enthält $\\forall x\\ \\exists y\\ (y^2=x)$.",
@@ -2191,7 +2191,7 @@
     "statements": [
       "In der Ganzzahl-Domäne gibt es eine $x$ befriedigende $x+y=y$ für jede Ganzzahl.",
       "Define $A=\\{n\\in\\mathbb Z:n^2=16\\}$. Dann $|A|=2$ und $\\{4\\}\\in A$.",
-      "A survey of $100$ residents can have $70$ in group $A$, $50$ in group $B$, and only $10$ in both groups.",
+      ".,.,.T3. in der Gruppe, und nur,.Tibel..",
       "Unter den acht Zuordnungen für $p,q,r$ fälscht genau eine $p\\rightarrow(q\\vee r)$.",
       "Für beliebige Prädikate entspricht $\\forall x\\,(P(x)\\vee Q(x))$ $(\\forall x\\,P(x))\\vee(\\forall x\\,Q(x))$."
     ],
@@ -2206,7 +2206,7 @@
   "MATH 1.117": {
     "title": "Aufgaben im Prüfungsstil - 9",
     "context": "Bewerten Sie jede Aussage. Markiere es als wahr oder falsch.",
-    "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: nonempty proper subsets.\nB: Komplement einer Differenz.\nC: negating an implication.\nD: der existentielle riesig.\nE: nested Teilmenge pairs.",
+    "solution_overview": "Über überschuß-, \",,,,,,,,,.\n\ngeht gehtn.\nEre den E-Mails.\nC: Verneinung einer Implikation.\nD: Wesensschütt zuständig.\nE: verschachtelte Teilmengepaar.",
     "statements": [
       "Nachdem sowohl $\\emptyset$ als auch die volle Menge ausgeschlossen wurden, hat eine Vier-Elemente-Menge $14$ Untermengen übrig.",
       "Für jeden $A,B\\subseteq U$ ist die Ergänzung von $A\\setminus B$ $A^c\\cup B$.",
@@ -2244,7 +2244,7 @@
   "MATH 1.119": {
     "title": "Po Up V Kap V V und ohne V Po und dort So V. Heinrich",
     "context": "Sieben Finalisten sind Ada, Ben, Cleo, Dara, Eli, Finn und Gia. Das Morgenteam ist $M=\\{Ada,Cleo,Eli,Finn\\}$, das Abendteam ist $E=\\{Ben,Cleo,Dara,Finn\\}$ und die Preisliste ist $P=\\{Ada,Dara,Finn,Gia\\}$. Namen sind gewöhnliche Menge Elemente und alle Operationen nutzen dieses Sieben-Personen-Universum. Die Organisatoren wollen ein konsistentes Menge-Audit.",
-    "solution_overview": "Topics: 1.1.\n\nShared solution:\n1. Use the seven listed finalists as the universe $U$.\n2. Copy $M=\\{Ada,Cleo,Eli,Finn\\}$.\n3. Copy $E=\\{Ben,Cleo,Dara,Finn\\}$.\n4. Copy $P=\\{Ada,Dara,Finn,Gia\\}$.\n5. Common morning and evening names are Cleo and Finn.\n6. Thus $M\\cap E=\\{Cleo,Finn\\}$.\n7. Combining $M$ and $E$ gives six distinct names.\n8. Thus $M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$.\n9. Removing $M$ from $P$ leaves Dara and Gia.\n10. The elements of $P$ are names, not two-name sets.\n11. Morning-only names are Ada and Eli.\n12. Evening-only names are Ben and Dara.\n13. Hence $|M\\triangle E|=4$.",
+    "solution_overview": "(Bezugsjahre)\n\n≥:.\n1. Verwenden Sie die sieben Finalisten als das Universum � wert re ergibt sich.\nüber zurück tr‟ schwinge\nKopieren Sie $E=\\{Ben,Cleo,Dara,Finn\\}$.\n4. Kopieren $P=\\{Ada,Dara,Finn,Gia\\}$.\n5. Gemeinsame Morgen- und Abend ́s-Namen sind Cleo und Finn.\nAlso.\nbeim erkennt die nur die beim denn der das beim!vers erkennt die ver preisgeweihte die beim beim\n8. Also $M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$.\n9. Die Entfernung von �schütt als fähiges D,\n10. Die Elemente von $P$ sind Namen, nicht zwei Namen Tonnen.\n11. Vormittagsnamen sind Ada und Eli.\n12. Nur Abendnamen sind Ben und Dara.\n13. Daher �� also �. 11",
     "statements": [
       "$M\\cap E=\\{Cleo,Finn\\}$.",
       "$|M\\cup E|=7$.",
@@ -2257,13 +2257,13 @@
       "----\n\nDeutlich sind alle in den beiden Seiten von;den in den beiden Seiten von. $$M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$$ � $$|M\\cup E|=6$$ �\n\nDie Behauptung sagt, dass die Vereinigung die Größe $7$ hat, aber die berechnete Größe ist $6$.\n\nund lebenn ausbreitete steht die kreuz",
       "**C.** → Wahr\n\nDifferenz $P\\setminus M$ enthält Elemente von $P$, die nicht in $M$ liegen. $$P=\\{Ada,Dara,Finn,Gia\\}$$ $$M=\\{Ada,Cleo,Eli,Finn\\}$$ $$Ada\\in P,\\ Ada\\in M$$ $$Dara\\in P,\\ Dara\\notin M$$ $$Finn\\in P,\\ Finn\\in M$$ $$Gia\\in P,\\ Gia\\notin M$$ $$P\\setminus M=\\{Dara,Gia\\}$$ $$\\{Dara,Gia\\}$$ Die berechnete Menge stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nElemente von $P$ sind individuelle Namen. Das Objekt $\\{Ada,Finn\\}$ ist ein Zwei-Element-Anteil der Namen, nicht einer dieser Namen:\n\nAda satisfies $A\\in P$ and Finn satisfies $F\\in P$:\n\n$$A\\in P$$\n\n$$F\\in P$$\n\n$$\\{Ada,Finn\\}\\notin P$$\n\nängste ängnis schnitt erlitten am dar ängnen-ptu ä äste verwundet en\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nSymmetric difference is the disjoint union of the two exclusive regions:\n\n$$M\\setminus E=\\{Ada,Eli\\}$$\n\n$$E\\setminus M=\\{Ben,Dara\\}$$\n\n$$\n|M\\triangle E| = 2+2 = 4\\neq 3\n$$\n\nThe size is $4$, not $3$.\n\nDie Aussage ist falsch."
+      "**E.** → Falsch\n\nSymmetrischen Differenz ist die disjunkt Vereinigung der beiden exklusiven Regionen.\n\nI\n\nI\n\nI\n\nDie vegetarische vegetarische vegetarische vegetarische vegetarische vegetarische vegetarische vegetarische vegetarische vegetarische vegetarische.\n\nDie Ang:ant."
     ]
   },
   "MATH 1.120": {
     "title": "Aufgaben im Prüfungsstil - 12",
     "context": "A training center has 180 participants. Analytics has 105, budgeting has 92 und compliance has 80. Die paarweisen Überlappungen liegen bei 48 für Analytics und Budgeting, 41 für Analytics und Compliance und 36 für Budgeting und Compliance; 20 Teilnehmer nehmen alle drei. dabei wird jeder Teilnehmer unter anderem in der Mitte insgesamt gezählt, darunter bei den",
-    "solution_overview": "Topics: 1.2.\n\nShared solution:\n1. Let the course sets be $A$, $B$, and $C$.\n2. Use $|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$.\n3. Substitute $105+92+80-48-41-36+20$.\n4. The union contains $172$ participants.\n5. Therefore the none region is $180-172=8$.\n6. Analytics only is $105-48-41+20=36$.\n7. Budgeting only is $92-48-36+20=28$.\n8. Compliance only is $80-41-36+20=23$.\n9. Analytics-budgeting only is $48-20=28$.\n10. Analytics-compliance only is $41-20=21$.\n11. Budgeting-compliance only is $36-20=16$.\n12. Exactly two courses total $28+21+16=65$.\n13. At least two courses total $65+20=85$.",
+    "solution_overview": "Themen: 1.2.\n\nGemeinsame Lösung:\n1. Lassen Sie den Kurs Mengen $A$, $B$ und $C$.\n2. Verwenden Sie $|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$.\n3. Ersatz $105+92+80-48-41-36+20$.\n4. Die Vereinigung umfasst $172$ Teilnehmer.\nDaher ist die keine Region $180-172=8$.\n6. Analytics ist nur $105-48-41+20=36$.\n7. Budgetierung ist nur $92-48-36+20=28$.\n8. Compliance ist nur $80-41-36+20=23$.\n9. Analytics-Budgetierung ist nur $48-20=28$.\n10. Analytics-Compliance ist nur $41-20=21$.\n11. Budgetierung-Compliance ist nur $36-20=16$.\n12. Genau zwei Kurse insgesamt $28+21+16=65$.\n13. Mindestens zwei Kurse insgesamt $65+20=85$.",
     "statements": [
       "Genau 8 Teilnehmer nehmen keinen der drei Kurse.",
       "Genau 56 nehmen nur Analysen.",
@@ -2301,26 +2301,26 @@
   "MATH 1.122": {
     "title": "Aufgaben im Prüfungsstil - 14",
     "context": "Ein Pakettisch verfolgt $D=\\{a,b,c,d\\}$. Prioritätspakete sind $P=\\{a,c\\}$, gescannte Pakete sind $S=\\{a,b,c\\}$ und späte Pakete sind $L=\\{c,d\\}$. Quantifikatoren reichen nur über $D$ und jeder Buchstabe benennt ein Paket. Der Vorgesetzte wird jede Prädikat-Behauptung anhand dieser festen Aufzeichnungen bewerten.",
-    "solution_overview": "Topics: 1.4.\n\nShared solution:\n1. Use the domain $D=\\{a,b,c,d\\}$.\n2. Priority holds for $a$ and $c$.\n3. Scanned holds for $a$, $b$, and $c$.\n4. Late holds for $c$ and $d$.\n5. Both priority parcels occur in the scanned set.\n6. Thus every priority parcel is scanned.\n7. Parcel $c$ is both priority and late.\n8. Parcel $c$ is also both scanned and late.\n9. Thus scanned does not imply not late.\n10. The union $S\\cup L$ is all of $D$.\n11. Hence no parcel is neither scanned nor late.\n12. Parcel $d$ is late but not priority.\n13. These witnesses settle all five quantified claims.",
+    "solution_overview": "Themen: 1.4.\n\nGemeinsame Lösung:\n1. Verwenden Sie die Domain $D=\\{a,b,c,d\\}$.\n2. Die Priorität gilt für $a$ und $c$.\n3. Scanned gilt für $a$, $b$ und $c$.\n4. Late gilt für $c$ und $d$.\n5. Beide Prioritätspakete sind in der gescannten Menge enthalten.\n6. Somit wird jedes Prioritätspaket gescannt.\n7. Paket $c$ ist sowohl prioritär als auch spät.\n8. Paket $c$ wird ebenfalls gescannt und spät.\n9. Gescannt bedeutet also nicht spät.\nDie Vereinigung $S\\cup L$ ist alles von $D$.\n11. Daher wird kein Paket weder gescannt noch verspätet.\n12. Parcel $d$ ist spät, aber keine Priorität.\n13. Diese Zeugen legen alle fünf quantifizierten Behauptungen fest.",
     "statements": [
       "$\\forall x\\,(P(x)\\rightarrow S(x))$.",
       "$\\exists x\\,(P(x)\\wedge L(x))$.",
       "$\\forall x\\,(S(x)\\rightarrow\\neg L(x))$.",
-      "Exactly one parcel is neither scanned nor late.",
+      "Wir sind für das Erwirken des",
       "$\\exists x\\,(L(x)\\wedge\\neg P(x))$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜberprüfen Sie jedes Prioritätspaket mit der gescannten Menge: $$P = \\{a,c\\},$$ $$\nS = \\{a,b,c\\}\n$$ $$a\\in S$$ $$c\\in S$$ Jedes Priorisierungivpaket wird gescanst, so dass die universale Folgewirkung gilt.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nRI Kollision ET s Frühes,, ausbreitet, nicht mehr Parcel $c$ liegt in beiden Mengen: $$c\\in P\\cap L=\\{c\\}$$ $$P(c)\\wedge L(c)$$ Der erforderliche Mitzeuge besteht.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nUniversale Behauptungen versagen mit einem Gegenschlag. Parcel $c$ is scanned und late: $$c\\in S\\cap L$$ $$S(c)\\wedge L(c)$$ Scannen bedeutet also nicht nicht spät.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nForm the union of scanned and late parcels inside $D$:\n\n$$\nS\\cup L = \\{a,b,c,d\\} = D\n$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nDie Aussage ist falsch.",
+      "**** ***** von der Firma *****\n\nBilden Sie die Vereinigung von gescannten und späten Paketen innerhalb $D$:\n\n$$\nS\\cup L = \\{a,b,c,d\\} = D\n$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nDie ist auch ver Oute ferner aus den:fahrt aus den. I.\n\nDie Stimme ist falsch.",
       "**E.** → Wahr\n\nEine existenzielle Behauptung braucht ein spätes Paket, das keine Priorität hat.\n\nliebige durchschnittliche durchschnittliche durchschnittliche durchschnittliche durchschnittliche sonst. vomliebige roh\n\n$$c\\in P$$\n\n$$d\\notin P$$\n\nPaket $d$ ist spät und nicht prioritär, also enthält $\\exists x\\,(L(x)\\wedge\\neg P(x))$.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 1.123": {
     "title": "Aufgaben im Prüfungsstil - 15",
     "context": "Eine Bibliothek, die acht Module der Module $U=\\{a,b,c,d,e,f,g,h\\}$. Die Hauptwerke sind $C=\\{a,b,d,f\\}$, die Hauptwerke sind $A=\\{a,c,f,h\\}$. Jedes Komplement ist relativ zu $U$, und der Registrar behandelt Etiketten als Elemente und nicht Singleton möglich.",
-    "solution_overview": "Topics: 1.1.\n\nShared solution:\n1. Copy $C=\\{a,b,d,f\\}$.\n2. Copy $E=\\{b,c,e,f,g\\}$.\n3. Copy $A=\\{a,c,f,h\\}$.\n4. The common core and elective labels are $b$ and $f$.\n5. Thus $C\\cap E=\\{b,f\\}$.\n6. The union $E\\cup A$ is $\\{a,b,c,e,f,g,h\\}$.\n7. Therefore $|E\\cup A|=7$.\n8. Removing audited labels from $C$ leaves $\\{b,d\\}$.\n9. The intersection $C\\cap A$ is $\\{a,f\\}$.\n10. Hence $\\{a,f\\}$ is a subset of that intersection.\n11. Core-only labels relative to $E$ are $a,d$.\n12. Elective-only labels relative to $C$ are $c,e,g$.\n13. Therefore $|C\\triangle E|=2+3=5$.",
+    "solution_overview": "Themen: 1.1.\n\nGemeinsame Lösung:\n1. Kopieren $C=\\{a,b,d,f\\}$.\n2. Kopieren $E=\\{b,c,e,f,g\\}$.\n3. Kopieren $A=\\{a,c,f,h\\}$.\n4. Die gemeinsamen Kern- und Wahletiketten sind $b$ und $f$.\n5. Also $C\\cap E=\\{b,f\\}$.\n6. Die Vereinigung $E\\cup A$ ist $\\{a,b,c,e,f,g,h\\}$.\n7. Daher $|E\\cup A|=7$.\n8. Das Entfernen von geprüften Etiketten aus $C$ lässt $\\{b,d\\}$.\n9. Die Schnittmenge $C\\cap A$ ist $\\{a,f\\}$.\nDaher ist $\\{a,f\\}$ eine Teilmenge dieser Schnittmenge.\n11. Nur Kern-Etiketten bezüglich $E$ sind $a,d$.\n12. Nur wählbare Etiketten in Bezug auf $C$ sind $c,e,g$.\n13. Daher $|C\\triangle E|=2+3=5$.",
     "statements": [
       "$C\\cap E=\\{b,f\\}$.",
       "$|E\\cup A|=8$.",
@@ -2330,7 +2330,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Schnittmenge enthält nur Elemente, die in sowohl $C$ als auch $E$ liegen. $$C=\\{a,b,d,f\\}$$ $$E=\\{b,c,e,f,g\\}$$ $$a\\in C,\\ a\\notin E$$ $$b\\in C,\\ b\\in E$$ $$d\\in C,\\ d\\notin E$$ $$f\\in C,\\ f\\in E$$ $$C\\cap E=\\{b,f\\}$$ $$\\{b,f\\}$$ Die berechnete Menge stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nListen Sie jedes Label auf, das in �wecke oder in � schwenke erscheint en:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nDie Vereinigung ausgelassen s,, so ist es nicht die volle acht- module-universum.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\nDifferenz $C\\setminus A$ enthält Elemente von $C$, die nicht in $A$ liegen. $$C=\\{a,b,d,f\\}$$ $$A=\\{a,c,f,h\\}$$ $$a\\in C,\\ a\\in A$$ $$b\\in C,\\ b\\notin A$$ $$d\\in C,\\ d\\notin A$$ $$f\\in C,\\ f\\in A$$ $$C\\setminus A=\\{b,d\\}$$ $$\\{b,d,f\\}$$ Die berechnete Liste stimmt nicht mit der Behauptung zusammen.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nForm zuerst die core-audited Schnittmenge, dann testen Sie die vorgeschlagene Teilmenge: $$C\\cap A=\\{a,f\\}$$ $$\\{a,f\\}\\subseteq\\{a,f\\}$$ Die Inklusion enthält.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch $$|C|=4$$ $$|E|=5$$ $$|C\\cap E|=2$$ $$2\\cdot 2=4$$ $$4+5=9$$ $$9-4=5$$ $$|C\\triangle E|=5$$ Die Aussage ist falsch."
@@ -2339,10 +2339,10 @@
   "MATH 1.124": {
     "title": "Aufgaben im Prüfungsstil - 16",
     "context": "A service company surveyed 240 customers. Der mobile Service wird von 138, das Internet von 124 und das Streaming von 96 genutzt. Paarweise Überlappungen sind 68 für mobile und internet, 52 für mobile und streaming und 46 für internet und streaming; 28 verwenden alle drei. Es, jemand,..",
-    "solution_overview": "Topics: 1.2.\n\nShared solution:\n1. Let the service sets be $M$, $I$, and $S$.\n2. Apply three-set inclusion-exclusion.\n3. Substitute $138+124+96-68-52-46+28$.\n4. The service union contains $220$ customers.\n5. The none region is $240-220=20$.\n6. Mobile only is $138-68-52+28=46$.\n7. Internet only is $124-68-46+28=38$.\n8. Streaming only is $96-52-46+28=26$.\n9. Mobile-internet only is $68-28=40$.\n10. Mobile-streaming only is $52-28=24$.\n11. Internet-streaming only is $46-28=18$.\n12. Exactly one totals $46+38+26=110$.\n13. At least two totals $40+24+18+28=110$.",
+    "solution_overview": ":\n\nGemeinsame Lösung:\nsprunggeionet.\n2. Anwendung dreier.\n3. Ersatz $138+124+96-68-52-46+28$.\n4. Die Service Vereinigung enthält $220$ Kunden.\n5. Die Keine-Region.\nHier\n7. Internet ist nur $124-68-46+28=38$.\n8. Streaming ist nur $96-52-46+28=26$.\n3. Das Internet ist nur für mich und für mich und für mich.\n10. nur mobiles Streaming ist Μ.\nDas. 11. Internet-Stream nur: T11.\nVerwechseln.\nMindestens zwei stechse w...",
     "statements": [
       "Seite Seite auf der Seite",
-      "Exactly 110 customers use exactly one service.",
+      "A/O genau 110 Kunden nutzen genau einen Service. besseres",
       "Genau 68 nutzen nur Mobile und Internet.",
       "Vorherige Artikel 82, a.",
       "Gerader dies 34 nutzen dass nur."
@@ -2370,7 +2370,7 @@
       "**A.** → Wahr\n\nDie kor schlugen, die een,,,,.\n\n$$(p,q,r)=(T,F,T)$$\n\n$$\nq\\vee r = F\\vee T = T\n$$\n\n$$p\\wedge(q\\vee r)=T$$\n\nDerndenserrristor ist genug, um sich zu verflüchtigen, wenn Übereinstimmungen.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nShipping needs $q\\vee r=T$, while holding needs $q=r=F$:\n\n$$S=p\\wedge(q\\vee r)$$\n\n$$H=p\\wedge\\neg q\\wedge\\neg r$$\n\nThose conditions on $(q,r)$ cannot hold together, so $S$ and $H$ are disjoint.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nFalsch Inventory zwingt die Versandkonjunktion, unabhängig von der Zahlung oder außer Kraft zu treten: $$(p,q,r)=(F,T,T)$$ $$p\\wedge(q\\vee r)=F$$ Der Auftrag wird nicht ausgeliefert.\n\nDie Aussage ist falsch.",
-      "**D.** → Falsch\n\nWith $p=T$, the pairs $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ are the only shipping rows:\n\n$$\\#\\{(p,q,r):S\\}=3\\neq 4$$\n\nExactly three assignments ship, not four.\n\nDie Aussage ist falsch.",
+      "3H Tier heimatnatatt/T- zufriedene werden\n\nMit $p=T$ sind die Paare $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ die einzigen Versandreihen:\n\nlag macht\n\n......,\n\nUmsealer",
       "**E.** → Falsch\n\nHolding requires matching inventory, while rejection requires a mismatch: $$H\\Longrightarrow p=T$$ $$J = \\neg p\\Longrightarrow p = F$$ Kein Auftrag kann sowohl mit als wessens abgelehnt werden.\n\nDie Aussage ist falsch."
     ]
   },
@@ -2379,10 +2379,10 @@
     "context": "A firm has four employees: Ava, Bo, Cy und Di. Certified employees are $C=\\{Ava,Bo,Di\\}$, remote employees are $R=\\{Bo,Cy\\}$ und team leads are $L=\\{Ava,Cy\\}$. Quantifikatoren erstrecken sich nur über diese vier Mitarbeiter. Der Personalbericht verwendet diese festen Mengen, um seine universelle und existenten Vorant ans der ­",
     "solution_overview": "Themen: 1.4.\n\nGemeinsame Lösung:\n1. Gebrauchen Sie die vier-Personen-Angestellten.\n2. Zertifizierte Mitarbeiter sind A, Bo\n- Wagner-Rennsiegel: -\nEs\nUnter auswirktegew durchlaufen-rruck bald sie vielmehreweiße Zie vorausgesetzte vorausgesetzte vorausgesetzt Hinweis Hinweiss ohne sicheren zuverlässigenkye hol voraus iste erfordern‟ Entdecken‟ auszudrücken, ist gebraucht werden mittelfristigTM- Zie vorausgesetzte sind,.rin-.\"Z-ere-TMformation- not-.e.-eeeeeeeeeeeeeeeeeeeesee treffen- Zis und not, RAMe schnell benötigen zwingen nötig gemacht Zie vorausgesetztee zwingende gebraucht achtete gebrauchtee gebraucht seite Rückzugsǒ,➢reen herzustellen. gegeneinander.ees meter. jegliche- selbständigeeeeeeeeeeeeeeequalitätschaffen durchlaufenheit ist« den schnellen\".-.eweck' müssen nötig sicheren getrieben Fache-eeeee\nmit.2nicht dem in Anhang zu\n\"Gemüsst das unter Druck stehende Produkt, das unter Druck steht,\nAm zu zau\n9. Bo ist eine Remote-, aber keine Einführung.\n10....\n11. Die Vereinigung $C\\cup R$ enthält alle vier Mitarbeiter.\nWer da ist, den kann man nicht finden.\nAVO ist eine die nicht perfekt",
     "statements": [
-      "Every team lead is certified.",
-      "Some certified employee is remote.",
-      "Every remote employee is a team lead.",
-      "Exactly one employee is neither certified nor remote.",
+      "Alle der von",
+      "Der nächsterbot ihn wieder in den \"as Weiler \" zurück \"",
+      "„Pedsprachen Weil die ES auf dem",
+      "Es Es ist nicht ein Unternehmen, nicht zugelassen, und es.",
       "Das Team führt weiter in die Ferne."
     ],
     "tactical_explanations": [
@@ -2406,7 +2406,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Schnittmenge enthält nur Elemente, die in sowohl $X$ als auch $N$ liegen. $$X=\\{1,3,4,7\\}$$ $$N=\\{2,3,5,7,8\\}$$ $$1\\in X,\\ 1\\notin N$$ $$3\\in X,\\ 3\\in N$$ $$4\\in X,\\ 4\\notin N$$ $$7\\in X,\\ 7\\in N$$ $$X\\cap N=\\{3,7\\}$$ $$\\{3,7\\}$$ Die berechnete Menge stimmt mit der Behauptung überein.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nComplement $N^c$ keeps routes in $U$ that miss the night list $N=\\{2,3,5,7,8\\}$.\n\nList $U\\setminus N$:\n\n$$\\{1,2,3,4,5,6,7,8\\}\\setminus\\{2,3,5,7,8\\}=\\{1,4,6\\}$$\n\nSo $N^c=\\{1,4,6\\}$, matching the claim.\n\n$$N^c=\\{1,4,6\\}$$\n\nDie Aussage ist wahr.",
+      "–,,,,,,,,,,,,,,,,,,,.\n\njemand wie die ein- und aus------------------------------------\n\nmann und Buchzelle bucht und nachhaltigreinigung strukturiert oder ob Ziel und Tag für Tag Ziel Nachbar Kursen:\n\nw. ^\n\nUnd dies, wie die Leute, die dies.\n\nSormic betrieb legenn.\n\nDer verwandelte und verscheifn-",
       "**C.** → Falsch\n\nSie bilden Sie die Sie die Express- und verwandelt: $$X\\cup A=\\{1,2,3,4,6,7,8\\}$$ Route $5$ is missing, so $$X\\cup A\\neq U$$ Die Aussage ist falsch.",
       "**D.** → Falsch\n\nZugängliche Routen außerhalb der Nachtliste sind $$A\\setminus N=\\{1,6\\}$$ $$|A\\setminus N|=2\\neq 3$$ ANG repräsentativen Angaben zu fähigem Land\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nEine Menge ist ein Element einer Potenzmenge genau dann, wenn sie eine Teilmenge der Grundmenge ist.\n\nstehendenhst züglich\"\n\n$$3\\in X$$\n\n$$7\\in X$$\n\nUnd dasgierig. Die Person sagt, dass die Person falsch ist, und als ob sie falsch ist.\n\nDie Aussage ist falsch."
@@ -2418,7 +2418,7 @@
     "solution_overview": "Unternummer 9A003\n\nFolgenden:\nEs ist vorgesehen, daß die erste und die zweite Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der zweiten Hälfte der ersten Hälfte der ersten Hälfte der ersten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der ersten Hälfte der zweiten Hälfte der ersten Hälfte der zweiten Hälfte der zweiten Hälfte der ersten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der zweiten Hälfte der.\n- bis zu 1 bis zu 3 bis zu 10 %\n..................................\nDie, die s, t 4,,: schlag.\nDer Keine ist $300-267=33$ 6. Jazztheater ist nur $80-35=45$.\n7. Jazz-Film ist nur $72-35=37$.\n8. Theater-Film ist nur $61-35=26$.\n9. Genau zwei Programme insgesamt $45+37+26=108$.\nC. Ns., N., N.\n11. Theater ist nur � k und nur T11.\n12. Film ist nur $130-72-61+35=32$.\n13. Alle diskon-stellierten dazu.",
     "statements": [
       "Die Drei-Programm-Vereinigung umfasst 267 Besucher.",
-      "Exactly 33 visitors chose no program.",
+      "Genau 33 Besucher wählten kein Programm.",
       "Genau 50 wählten nur Jazz und Theater.",
       "Genau 100 wählten genau zwei Programme.",
       "Genau 72 wählten nur Jazz."

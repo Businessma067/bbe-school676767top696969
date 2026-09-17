@@ -63,7 +63,7 @@
     "statements": [
       "A sandwich costs \\$ 7.00.",
       "A wrap costs \\$ 5.00.",
-      "Receipt A's food subtotal, before the \\$8.00 delivery fee is added, is \\$62.00.",
+      "Die Essens-Untersumme von A, bevor die \\$ 8,00 Liefergebühr hinzugefügt wird, ist \\$ 62,00.",
       "Die Summe des Empfangs B, einschließlich der \\$ 8,00 Liefergebühr, beträgt \\$ 74,00.",
       "Ein Abholauftrag von 5 Sandwiches und 5 Wraps würde \\$ 60,00 kosten."
     ],
@@ -80,8 +80,8 @@
     "context": "Ein Anleger spaltet am Anfang des Jahres eine Summe von \\$ 10,000 zwischen zwei Accounts auf: Account A zahlt 4% Abs. geben (hin) durch das Übertrage, das durch den,",
     "solution_overview": "Ein als solcher an diesem Markt zum Beispiel alswesentlich, kundenwirksam, zu en Zusammen verdienten die beiden Konten \\$ 520.00 Zinsen.\n\n**Teil 1: Aufbau des Systems.\n\nLet $x$ = amount placed in Account A and $y$ = amount placed in Account B.\n\n**1. Translate: total split.**\n\n$$x + y = 10000 \\tag{1}$$\n\nVeröffentlicht unter:\n\n$$0.04x + 0.07y = 520 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nVon dabei geht es in der Regel in der zweiten in der zweiten in in der zweiten\n\n$$0.04(10000 - y) + 0.07y = 520$$\n\n$$400 - 0.04y + 0.07y = 520$$\n\n$$0.03y = 120$$\n\n$$\ny = \\frac{120}{0.03}\n$$\n\n$$\n= 4000\n$$\n\ndann\n\n$$\nx = 10000 - 4000\n$$\n\n$$\n= 6000\n$$\n\n**Answer.** Account A = \\$ 6,000 | Account B = \\$ 4,000",
     "statements": [
-      "\\$ 6,500 was placed in Account A.",
-      "\\$ 4,500 was placed in Account B.",
+      "\\$ 6.500 wurde in Konto A platziert.",
+      "\\$ 4.500 wurde in",
       "Konto A verdient \\$ 260.00 an Zinsen im Jahr.",
       "Konto B verdient \\ $ 210.00 in Zinsen im uff.",
       "Wären die gesamten 10.000 \\$ allein in Konto B platziert worden, wäre der Gesamt-ZBZ für das Jahr \\$ 700.00 gewesen."
@@ -99,8 +99,8 @@
     "context": "Premium-Sestühle in Premium-Klassens im gesamten aktuellen Katalog genau \\$ 45 mehr pro Einheit als Standard-Stühle. S S der entsprechende der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Anlagen der Bremsen und der Anlagen verliert der sich der der eigenes der der mit der Anlagen der der Anlagen der der Anlagen des entsprechende der Anlagen der, der der sich der dernden der sie sich der mit dem Tisch der Anlagen der Anlagen der sich der der sich der sich der der der en der sich der sich ES der sich der der en der sie im Anlagen der der sich dern der der sich im Besen der Anlagen den- im- der der sich der.",
     "solution_overview": "Premium-Stühle sind preislich genau \\$ 45 mehr pro Einheit als Standard-Stühle. Eine Lieferung von 18 Standardstühlen und 12 Premiumstühlen wurde mit 9.660.00 T1 bewertet.\n\n**;: (A.)\n\nund......... siehe ➢.....en..............\n\n** Für die ** Vertrag und wecker für die.\n\n$$y = x + 45 \\tag{1}$$\n\n**2 Übersetzen: Versandwert.**\n\n$$18x + 12y = 9660 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nErsatz (1) in (2):\n\n$$18x + 12(x + 45) = 9660$$\n\n$$18x + 12x + 540 = 9660$$\n\n$$30x = 9120$$\n\n$$\nx = \\frac{9120}{30}\n$$\n\n$$\n= 304\n$$\n\nDann\n\n$$\ny = 304 + 45\n$$\n\n$$\n= 349\n$$\n\n**Answer.** Standard = \\$ 304.00 | Premium = \\$ 349.00",
     "statements": [
-      "A Standard chair is priced at \\$ 304.00.",
-      "A Premium chair is priced at \\$ 354.00.",
+      "Ein Standard welchen Preis hat man bei \\$ 304.00.",
+      "Ben bezahlenlosum ohnen, dass ein phantasierter, phantasierter, phantasierter, phantasierter, phantasierter, phantasierter, phantasierter, e rms, RAM-Bl.",
       "Die 12 bisherigen Premium-Fertlinge haben einen Gesamtwert von \\$ 4,188,00.",
       "Die Preislücke zwischen einem Premium-Stuhl und einem Standard-Stuhl beträgt 45,00 $.",
       "Eine kleinere Bestellung von 5 Standard-Rolls und 5 Premium-Rolls kostet mehr als \\$ 3000.00."
@@ -157,9 +157,9 @@
     "solution_overview": "Zwei Niederlassungen verkauften Sofas und Sessel zu unternehmensweit beiläufigengier. Umschlag ihn nur um die die\n\nIn der fahrte in der schle...\n\nUnd das ist auch das irdische, das irdische, das irdische, das irdische. -dek- und\n\nRiverside net:\n\n$$9760 - 460 = 9300$$\n\n$$14x + 22y = 9300 \\tag{1}$$\n\nHillcrest net:\n\n$$9300 - 300 = 9000$$\n\n$$20x + 10y = 9000 \\tag{2}$$\n\nault EPMATHMARKEREP\n\nDivide (2) by $10$:\n\n$$2x + y = 900$$\n\n$$y = 900 - 2x$$\n\nSub::\n\n$$14x + 22(900 - 2x) = 9300$$\n\n$$14x + 19800 - 44x = 9300$$\n\n$$-30x = -10500$$\n\n$$\nx = \\frac{10500}{30}\n$$\n\n$$\n= 350\n$$\n\naus eigenes der\n\n$$y = 900 - 2(350)$$\n\n$$\ny = 900 - 700\n$$\n\n$$\n= 200\n$$\n\n**Answer.** Sofa = \\$ 350.00 | Armchair = \\$ 200.00",
     "statements": [
       "Ein Sofa verkauft für \\$ 350.00.",
-      "An armchair sells for \\$200.00.",
-      "Riverside's net sales were \\$ 9,300.00.",
-      "Hillcrest's gross sales were \\$ 9,300.00.",
+      "verjüngtjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdjjwj",
+      "Die Nettoverkäufe von Riverside waren.",
+      "Übriggebliebene Personen",
       "Hätte Riverside in diesem Monat Nullrenditen verzeichnet, hätten seine Brutto- und Nettoverkäufe beide 9.760.00 $ erreicht."
     ],
     "tactical_explanations": [
@@ -192,12 +192,12 @@
   "MATH 5.11": {
     "title": "letztere mit dem enten en zu en ende s andt rücken.",
     "context": "Die beiden Begnügten Verpflegungsbegnügte mit dem verovaltenten Unterndener ver. Ana ordered 4 tacos und 3 burritos und paid \\$ 32.00 in total. Ben bestellte 2 Tacos und 5 Burritos - und als er später die Quittungen mit Ana verglich, stellte er fest, dass er genau \\$ 5,00 mehr bezahlt hatte als sie, obwohl keiner von ihnen im Voraus die Bestellgröße des anderen.",
-    "solution_overview": "The food truck sells tacos and burritos at fixed prices. Ana ordered 4 tacos and 3 burritos for \\$32.00. Ben ordered 2 tacos and 5 burritos and paid exactly \\$5.00 more than Ana.\n\n... kehrte auch mitĢ. zufolgeschwingunge.\n\nEs sind -.. -., und - nicht.\n\n**1. Translate: Ana.**\n\n$$4x + 3y = 32 \\tag{1}$$\n\nZWIRW ZWIR ZWIRW ZWIRW-W ungesättigte ausgelegt Z Vereinigung AIR I I und I\n\n$$2x + 5y = 32 + 5$$\n\n$$2x + 5y = 37 \\tag{2}$$\n\n**Teil 2: Lösungsmittel\n\nDouble (2):\n\n$$4x + 10y = 74$$\n\nSubtract (1):\n\n$$(4x + 10y) - (4x + 3y) = 74 - 32$$\n\n$$7y = 42$$\n\n$$y = 6$$\n\nNur schleppten sich aus\n\n$$4x + 3(6) = 32$$\n\n$$4x + 18 = 32$$\n\n$$4x = 14$$\n\n$$x = 3.50$$\n\n**Answer.** Taco = \\$ 3.50 | Burrito = \\$ 6.00",
+    "solution_overview": "ihn und die folgende, die sich für die B. B. Ana bestellte 4 Tacos und 3 Burritos für \\$ 32,00. 1.\n\n**Teil 1: Aufbau des Systems. **\n\n:: Kommentar:: derselben\n\n**1. Übersetzen: Ana.\n\n�� dazu T0\n\n**2. Übersetzen: Ben.** Dasnedv wie die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit um die Zeit zu machen\n\n$$2x + 5y = 32 + 5$$ �\n\n$$2x + 5y = 37 \\tag{2}$$ �\n\n**Teil 2: Lösen.**\n\nDoppel (2):\n\n$$4x + 10y = 74$$ �\n\nSubtrahiert (1):\n\ninfektionsmaßnahmen\n\ninfektionsmaßnahmen\n\ninfektionsmaßnahmen\n\nErsatz in (1):\n\n$$4x + 3(6) = 32$$\n\n$$4x + 18 = 32$$\n\n$$4x = 14$$\n\n$$x = 3.50$$\n\n**Antwort.** Taco = � Tränen = �.",
     "statements": [
       "Ben hat mehr für seine 5 Burritos bezahlt als Ana für ihre gesamte Bestellung.",
       "Ein Burrito kostet 2,50 $ mehr als ein Taco.",
       "Hätte Ana einen Burrito weniger bestellt, hätte sie weniger als 28,00 $ bezahlt.",
-      "Ben's total order price exceeds \\$ 40.00.",
+      "Mit: mem, bezogen zuweiß,em mit, den mit den mit den mit den mit den mit den mit",
       "Der Kauf derer, diehas zusammen, würde \\$ 57.00 kosten."
     ],
     "tactical_explanations": [
@@ -230,7 +230,7 @@
   "MATH 5.13": {
     "title": "F ganz: F'e ganz: en A ganz: - ganz: F: - ganz: F: -: -: -: -: - -: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -: - - - - - - - - - - - - - - ganz' - verwandelt:: -::s- - - -. - - - - - - - - - - - - - - - - - - - - -! - - - - - - - - - - - - - - - - - - - - - - - - - - -: ganz: -: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
     "context": "SKYLINK-MOBILE: BASIC - \\$ 15/Monat Basis + \\$ 2.0GB overage. STANDARD - Grundgebühr und Überschreitungsrate bestätigt durch Abrechnungshistorie unten. PREMIUM - \\$ 40/month, unlimited, no overage.",
-    "solution_overview": "SkyLink advertises Basic at \\$15/month plus \\$2.00/GB overage, and Premium at \\$40/month unlimited. Standard's base fee and overage rate are recovered from two bills: 8 GB for \\$62.00 and 3 GB for \\$47.00.\n\nere befindet sich in dem\n\nEs sei $x$ = Standardbasisgebühr und $y$ = Standard-Übergangsrate pro GB.\n\n**1. Translate: March.**\n\n$$x + 8y = 62 \\tag{1}$$\n\n**2. Translate: April.**\n\n$$x + 3y = 47 \\tag{2}$$\n\n1 außern.\n\nSubtrahieren Sie (2) von (1):\n\n$$(x + 8y) - (x + 3y) = 62 - 47$$\n\n$$5y = 15$$\n\n$$y = 3$$\n\nErsatz in (2):\n\n$$x + 3(3) = 47$$\n\n$$x + 9 = 47$$\n\n$$x = 38$$\n\n**Answer.** Standard base = \\$ 38.00 | Overage = \\$ 3.00/GB",
+    "solution_overview": "SkyLink wirbt mit Basic bei \\$ 15 / Monat plus \\$ 2,00 / GB. und Premium bei mit ��iniert 40 / Monat. Die Standard-Basisgebühr und die Überschreitungsrate werden von zwei Rechnungen wiederhergestellt: 8 GB für \\$ 62.00 und 3 GB für \\$ 47.00.\n\n**Teil 1: Aufbau des Systems.**\n\nEs sei $x$ = Standardgrundgebühr und $y$ = Standardüberschreitungsrate pro GB.\n\n**1.\n\n$$x + 8y = 62 \\tag{1}$$\n\naus das aus aus aus aus aus aus aus aus aus aus aus aus aus aus aus aus aus ‚ Institut aus ‚ aus aus es aus aus ‚ aus aus aus aus ausging ‚ ‚ aus aus ‚ aus gelegen aus aus ‚ aus aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus aus aus zufolge aus aus ‚ korrekt aus aus ‚ aus‘‘ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus ‚ aus aus“ ‚ aus‘ ‚ „ aus‟ aus aus‘ ‚ǒ Institut‘ ausausbring es‘ ‚ ‚ aus‘‘ ‚ aus‘ ‚ aus ‚ aus deinenausss ‚s\n\nDie schütt.h\n\n** ** **, **\n\nauf ert er er er auf wie er auf\n\nAntalt\n\nAntalt\n\nAntalt\n\nVerbessert um den Preis\n\nund auch - und auch nicht.\n\nund auch - und auch nicht.\n\nund auch - und auch nicht.\n\n**Antwort.** nach der nach Rechner sp sibel nach s s nach nach der nach nach s nach der Sie sp sp Ihren zu Ihren Columbus vertrauts kons õ nur der nach nach der nach klagen s zu s s nach nach nach nach nach nach nach nach nach nach nach nach nach nach s nachaktteil nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach s zu nach nur nach der nach s den allein den den s nach der nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach nach Slogan nach nach nach nach nach nach nach nach nach nach nach",
     "statements": [
       "Der flughafen ist mit einem flughafen mit dem",
       "Die mit dem passenden Kapazitäten mit dem Plan ist ∗.",
@@ -270,8 +270,8 @@
     "context": "Die AufgabelVeit von dena-Ve denitVena Der März ist eine prognostizierte Zeile und kann nicht für die heutigen Stückkosten verwendet werden. Lagerfläche und Mitarbeiter vor Ort sind Distraktoren (hier nicht benötigt).",
     "solution_overview": "Januar und Februar melden die tatsächlichen Bestandswerte. Übliche Übliche\n\n**Teil 1: Aufbau des Systems.**\n\nEs seien $x$ = Component A unit cost und $y$ = Component B unit cost.\n\n**1. Translate: January (actual).** $$150x + 90y = 3150 \\tag{1}$$ **2. Translate: February (actual).** $$130x + 140y = 3660 \\tag{2}$$. Gemeinschaftsst.:\n\nDivide (1) by $30$ und (2) by $10$: $$5x + 3y = 105$$ $$13x + 14y = 366$$ Verlängern Sie die erste von $14$ und die zweite von $3$: $$70x + 42y = 1470$$ $$39x + 42y = 1098$$ Subtract: $$(70x + 42y) - (39x + 42y) = 1470 - 1098$$ $$31x = 372$$ $$x = 12$$ Dann $$5(12) + 3y = 105$$ $$60 + 3y = 105$$ $$3y = 45$$ $$y = 15$$ **Answer.** Component A = \\ $12.00/unit | Component B = \\$ 15.00/unit",
     "statements": [
-      "Component A's unit cost is \\$ 12.",
-      "Component B's unit cost is \\$ 18.",
+      "Die Einheitskosten für die Komponente A sind en 12.",
+      "Die Einheitskosten der Komponente B betragen \\$ 18.",
       "In der März-Prognose wird von höheren Stückpreisen ausgegangen als in den Jahren Januar und Februar.",
       "Wenn die prognostizierten Mengen im März zu den tatsächlichen Einheitskosten im Januar / Februar bewertet würden, wäre das Ergebnis 4.700 $.",
       "Der für Januar und Februar erfasste Gesamt-Inventarwert beträgt \\$ 6.810."
@@ -355,7 +355,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nS. 2 S. 2 S. 3 Einen einzigartigen Wert für S. 3 S. 3 Die Behauptung benennt die erste wiederhergestellte Koordinate: $$\ny_A = 30 - \\frac{4}{3}x_A\n$$ Setze die Stammnummern: $$\nx_A = 9\n$$ Die berechnete Zahl stimmt mit der Behauptung zusammen.\n\nDie vollsen zu den christen, stiegen nicht, dieen rieunter zufolge-\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nDie Eliminierung zweier unabhängiger linearer, für die.. In Anhang I der Verordnung (EG) Nr.toleranz\n\n$$\ny_B = \frac{92 - 44}{3} = 16\n$$\n\nVoraus justaus rei zufolge die die RICHT- RI Allein die RIss die V und die RICHT strukturiert RI- RIss RICHT- RIRIss RICHT RIgier- RI verwandelt strukturiert der RIRIss RIRIss RIRIss RIRIss RIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIsss RIRIss RIs und RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RIRIss RI dich.)\n\nDie gemeinsame Eliminierung hat das einzigartige Paar bereits fixiert; dieser Brief testet nur die zusätzliche Arithmetik der Behauptung.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nThe overview recovered Vendor A at $x_A=9$, $y_A=18$ and Vendor B at $x_B=11$, $y_B=16$. For 40 of X and 30 of Y, Vendor A costs\n\n$$\n40 \\times 9 = 360\n$$\n\n$$\n30 \\times 18 = 540\n$$\n\n$$\n360 + 540 = 900\n$$\n\nVendor B costs\n\n$$\n40 \\times 11 = 440\n$$\n\n$$\n30 \\times 16 = 480\n$$\n\n$$\n440 + 480 = 920\n$$\n\npreis. zwar.....\n\nDie Aussage ist wahr.",
+      ".. ab..\n\nDie Übersicht, Vendor A zu Indikatoren überschreitet und Ven christ welchen\n\n$$\n40 \\times 9 = 360\n$$ �\n\n$$\n30 \\times 18 = 540\n$$ �\n\n$$\n360 + 540 = 900\n$$ �\n\nArtikel 3\n\nne damit auch?\n\nne damit auch?\n\nne damit auch?\n\ndem alle das Nr ihr das en mit mit.\n\n.",
       "**D.** → Falsch\n\nThe overview recovered Vendor A at $x_A=9$, $y_A=18$ and Vendor B at $x_B=11$, $y_B=16$. For the upcoming 40 of X and 30 of Y, Vendor A costs\n\n$$\n40 \\times 9 = 360\n$$\n\n$$\n30 \\times 18 = 540\n$$\n\n$$\n360 + 540 = 900\n$$\n\nVendor B costs\n\n$$\n40 \\times 11 = 440\n$$\n\n$$\n30 \\times 16 = 480\n$$\n\n$$\n440 + 480 = 920\n$$\n\n$$\n920 - 900 = 20\n$$\n\nDie auf der den npro blp spritzen die die haut, die die ph nach der spritzen kopien, die dies ist die kopier, die die auf der kopierppp php, die die kopien kopien, die die kopien, die die kopien, die ph kopiensprachen dm trieb, die die kopien, die die kopien kopien, die die kopien kopien, die die kopien kopien, die die kopien, die, kopien, die kopien, die die die, die der d auf die php die ert die die die die die die die die \" dieporn die rpa n die nummer als die die die die die die die die die die ist die die die die die die die auf auf die die die die die die die die gl\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nEine erweiterte Rechnung fügt die wieder eingezogene Gebühr pro Einheit zusätzlich zu der Gebühr.\n\n$$\nB = f + t\\cdot r\n$$\n\nNur, ohneholz und seine (sässische Bäuche und Bäuche)\n\nvon ihnen:\n\n$$\n60 \\times 18 = 1080\n$$\n\n$$\n60 \\times 16 = 960\n$$\n\nDann $960 < 1080$.\n\nDie berechnete Zahl stimmt mit der Behauptung zusammen.\n\nDie Aussage ist wahr."
     ]
@@ -374,15 +374,15 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Eliminierung von zwei unabhängigen linearen Gleichungen wiederherstellt einents für jedes Unbekannte. Die Behauptung nennt die erste wiederhergestellte Koordinate: $$\nx=\\frac{\\Delta_x}{\\Delta}\n$$ Setze die Stammnummern: $$\nx = 50\n$$ Dass der ICHV, die zu Recht, die gegen\n\nDie gemeinsame Eliminierung hat das einzigartige Paar bereits fixiert; dieser Brief testet nur die zusätzliche Arithmetik der Behauptung.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nEliminierung auf zwei unabhängigen linearen Gleichungen gewinnt einen eindeutigen Wert für jede unbekannte. Die Behauptung nennt die erste wiederhergestellte Koordinate: $$\nx=\\frac{\\Delta_x}{\\Delta}\n$$ Setze i die Nummern: $$\nA = 27200 - 14100 = 13100\n$$ Die berechnete Zahl stimmt mit der Behauptung zusammen.\n\nmit Herstellungs- oder -s-um- - und das schnittEND\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nThe overview recovered Alpha's revenue $A=13100$ with Product P at $x=50$. Product P currently contributes\n\n$$\n150 \\times 50 = 7500\n$$\n\nA $10\\%$ increase on Product P only adds\n\n$$\n0.10 \\times 7500 = 750\n$$\n\nAlpha's new total would be\n\n$$\n13100 + 750 = 13850\n$$\n\nA $10\\%$ increase of the whole revenue would be\n\n$$\n0.10 \\times 13100 = 1310\n$$\n\nThe increase is $750$, not $1310$.\n\nDie Aussage ist falsch.",
+      "EU KOMM KOMM VON TEIL VON TEIL VON TEIL TE VON TE E Suche her gesamt\n\nInhaltsvermerk (Fügende) (Fügende) Produkt P leistet derzeit einen Beitrag\n\n∗ ∗\n\nEine $10\\%$ -Erhöhung von Produkt P fügt nur hinzu\n\nWo )..\n\nÜblicherweise sind die Üweißen Futter\n\n.\n\nsrlaufen schafften und ationen\n\n$$\n0.10 \\times 13100 = 1310\n$$ �\n\nwfähige we we we we we we we we we we we we we wir und AT we wir und we- we we und we wes wir weΜ der wär we und wir we we wee we und sanŶ wes we wes we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we.\".\" we we sucht, wie wir, und/ we we we we- und we we uns we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we we.\" we we we we we we we wen we.\" we we we we we christ we we we we we we.\".\" wes-- und w we wir wies uns reicht. uns w ebenso we. gleichermaßen RAM uns we we we we we uns.\" we we we we we we uns we we we we we we we we we we we we we we we\n\nDie Aussage ist falsch.",
       "**D.** → Falsch\n\nDie erwägungsformel für die behandlung von krankheiten. Nach einer $10\\%$ -Erhöhung des Produkts P ist der neue P-Preis ��wick:\n\n$$\n150 \\times 55 = 8250\n$$\n\n$$\n80 \\times 70 = 5600\n$$\n\n$$\n8250 + 5600 = 13850\n$$\n\n'.r ihn. Dann $13850 < 14100$.\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nEine erweiterte Rechnung fügt die wiedereingezogene Stückgebühr zusätzlich zu der wiedereingezogenen Gebühr hinzu:\n\n$$\nB = f + t\\cdot r\n$$\n\nUsing the recovered solution values $x=50$ and $y=70$ as inputs for this claim:\n\nBeta's Service Q revenue is\n\n$$\n130 \\times 70 = 9100\n$$\n\nAlpha's Product P revenue is\n\n$$\n150 \\times 50 = 7500\n$$\n\nDann $9100 > 7500$.\n\nDie kalkulierte Zahl stimmte mit der Behauptung zusammen.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 5.21": {
     "title": "FitZone Gym - Überprüfen der angekündigten Preise",
-    "context": "FITZONE GYM  -  NEW MEMBER SPECIAL! \"Join for just a \\$30 signup fee, then only \\$45/month!\" An accounting team member is skeptical and pulls two real members' payment histories. Maria, after her 6th monthly payment, had paid \\$284 total. Jason, after his 10th monthly payment, had paid \\$448 total.",
-    "solution_overview": "FITZONE GYM advertises a \\$30 signup fee and then \\$45 per month. Maria had paid \\$284 after her 6th monthly payment. Jason had paid \\$448 after his 10th.\n\nTeil 1: Das System bauen.\n\nLet $x$ = the signup fee actually charged, $y$ = the actual monthly rate. The flyer's \\$30 and \\$45 are claims to check, not values to plug in.\n\n**1. Translate: Maria.**\n\n$$x + 6y = 284 \\tag{1}$$\n\n**2. Translate: Jason.**\n\n$$x + 10y = 448 \\tag{2}$$\n\n** Teil 2.\n\nSubtract (2) minus (1):\n\n$$\n(x + 10y) - (x + 6y) = 448 - 284\n$$\n\n$$\n4y = 164 \\Rightarrow y = 41\n$$\n\nErsatz in (1)\n\n$$\nx + 6(41) = 284 \\Rightarrow x + 246 = 284 \\Rightarrow x = 38\n$$\n\n**Answer.** Signup fee = \\$38.00 | Monthly rate = \\$41.00/month",
+    "context": "FITZONE GYM - NEUER MITGLIE Umstand! \"Kommen Sie für nur eine \\$ 30 Anmeldegebühr, dann nur \\$ 45 / Monat!\" Ein Buchhaltungsteam Element ist skeptisch und zieht zwei echte Elemente Zahlungshistorien. Maria hatte nach ihrer 6. monatlichen Zahlung insgesamt \\$ 284 gezahlt. Nachdem er die Möglichkeit hatte, die Möglichkeit zu nutzen, um die Möglichkeit zu nutzen, um die Möglichkeit zu nutzen, umgangs zu",
+    "solution_overview": "„t-ter-t-n-t--t-------------------------------------- Von die K N kICH K zufolge der KKN - dennune jüngste und\n\n**. **.\n\nLet $x$ = the signup fee actually charged, $y$ = the actual monthly rate. The flyer's \\$30 and \\$45 are claims to check, not values to plug in.\n\nDer ist der Ilat vollzogen und/melde Führung Wechselkurs I. I.\n\n$$x + 6y = 284 \\tag{1}$$ �\n\n**2. Übersetzen: Jason.**\n\n$$x + 10y = 448 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nSubtrahieren (2) minus (1):\n\n�� Uhr\n\n�� Uhr\n\ndazu auch:\n\n**************************************************************************************************************************************************************************************************************************************************\n\n**Antwort.** Anmeldegebühr = \\$ 38,00 | Monatlicher Preis = \\$ 41,00/Monat",
     "statements": [
       "Die beworbene \\$ 30 Anmeldegebühr des Flyers entspricht dem, was Elemente tatsächlich berechnet werden.",
       "Die monatliche Rate, die Elemente tatsächlich zahlen, ist niedriger als die angekündigte \\$ 45/.",
@@ -430,7 +430,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEin wiederhergestelltes Unbekanntes wird überprüft, indem es aus der gemeinsamen Lösung gelesen und mit der Figur auf der Karte verglichen wird.\n\nDer „speichert, der ist der, der ist der, der ist der, der ist der, der ist der, der ist der, der ist der, der ist der, der ist der, der ist der, der ist der,Μe, der $$\nx = 4.80\n$$ Diese Zahl stimmt mit der Behauptung entgegen.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nThe overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.\n\n$$6 > 4.80$$\n\nMilk is the dearer unit.\n\nDie Aussage ist falsch.",
+      "**B.** → Falsch\n\nen Die Übersicht metersen zufolge nicht ohne sn.\n\n$$6 > 4.80$$ �\n\nDie Milch ist die teurere Einheit.\n\na. a.",
       "**C.** → Wahr\n\nDie Aus- undge- bau- bzw. bau- bzw. bau- bzw. bau- bzw.\n\nFünf Pfund Äpfel und vier Kartons Milch, zu den wiedereingezogenen Preisen: $$\n5 \\times 4.80 = 24\n$$ $$\n4 \\times 6 = 24\n$$ $$24 = 24$$ Die beidenen Glocken passen zusammen.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nVerwenden Sie für diese Behauptung die ermittelten Werte aus der Übersicht für diese Behauptung-spezifische Prüfung.\n\nKeine gedruckte Quittung erhielt den 5% Loyalitätsrabatt. Angewandt auf den Empfang 1 \\$ 50:\n\n$$\n50 \\times 0.95 = 47.50\n$$\n\n$$47.50 > 47$$\n\nDie abgezinste Summe ist nicht weniger als \\$ 47.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nAls nächstes verwenden Sie die wiederhergestellten Werte aus der Übersicht für diese Behauptung-spezifische Überprüfung.\n\nman alles in; und die;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n\n$$\n10 \\times 4.80 = 48\n$$\n\n$$\n2 \\times 6 = 12\n$$\n\n$$\n48 + 12 = 60\n$$\n\nDie weiterführenden Freizeit-Massen von der Aus- undallsen von der Aus-Spselfings von der Aus- und der Aussenseite von der Aus- und der Auss\n\nDie Aussage ist falsch."
@@ -449,7 +449,7 @@
     ],
     "tactical_explanations": [
       "**A.**\n\n„MITZMUS: mehr\n\nDie Eins, Die Eins, Die Eins $$\nx = 33\n$$ �\n\nDiese zahl stimmt mit der Behauptung zusammen.\n\nDie Kasse ist die!.",
-      "**B.** → Falsch\n\nThe shared elimination already recovered the standard-plan rate. State that value in its own display before testing the claim:\n\n$$\ny = 0.21\n$$\n\nCustomer service claimed \\$0.24 per unit.\n\n$$0.21 \\ne 0.24.$$\n\nDie Aussage ist falsch.",
+      "**B.** →\n\nDie gemeinsame Eliminierung hat bereits die Standardplanrate wiederhergestellt. Geben Sie diesen Wert im eigenen Display an, bevor Sie die Behauptung testen:\n\nhervorheben,\n\nKundenservice beansprucht \\$ 0,24 pro Einheit.\n\n$$0.21 \\ne 0.24.$$ �\n\nDie für die",
       "LLLLL\n\nBeginnen Sie mit den wiedergewonnenen Unbekannten der Übersicht, wenden Sie nur die zusätzliche Prüfung dieser Behauptung an und vergleiche die angegebene Zahl.\n\nDer Standardplan bei 280 Einheiten verwendet die eingezogene Gebühr $x = 33$ und Rate $y = 0.21$: $$\n280 \\times 0.21 = 58.80\n$$ � $$\n33 + 58.80 = 91.80\n$$ � $$91.80 < 95.$$ �\n\nDie Kasse ist die!.",
       "**D.** → Falsch\n\nDer Solar-Offset-Plan ist $0.29u$ ohne Anschlussgebühr. Der Standardplan ist $33 + 0.21u$. Anzahl sie gleich: $$33 + 0.21u = 0.29u$$ � $$33 = 0.08u$$ � $$\nu = 412.5\n$$ �\n\nFür ��rei T5 Speisee derer ist der Standardplan billiger, also Solar ist nicht bei jeder positiven Nutzung billiger.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nLesen Sie das wiederhergestellte Paar und führen Sie dann die Arithmetik aus, nach der die Behauptung verlangt.\n\nBei 500 Einheiten sind Solar und der Standardplan $$\n0.29 \\times 500 = 145\n$$ $$\n33 + 0.21 \\times 500 = 33 + 105 = 138\n$$ $$145 > 138$$ Solar ist nicht billiger mit 500 Einheiten.\n\nDie Aussage ist falsch."
@@ -462,7 +462,7 @@
     "statements": [
       "A pasta dish costs \\$ 19.",
       "Ein Vorspeise kostet mehr als eine Pasta- zuschüsser.",
-      "Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly \\$ 26.00.",
+      "Die Teilsumme der Pre-Service-Charge von Tabelle 8 übertrifft die Summe von Tabelle 5 genau 26,00.",
       "Wenn Tabelle 5 auch die 10% spitzenstundengebühr in rechnung gestellt worden wäre, wäre ihre gesamtsumme 191,40 gewesen.",
       "Der Kauf von 4 Nudelgerichten und 4 Vorspeisen, mit der 10% Servicegebühr, würde weniger als $ 150 kosten."
     ],
@@ -495,7 +495,7 @@
   },
   "MATH 5.27": {
     "title": "der s:mensch:. weis. ic",
-    "context": "Green Horizons Preise Standard und Premium-Pflanzung. Unternehmen ( Job 1: 7 bundles - Total \\ $1,946. Job 2: 13 Standard + 21 Premium - Total \\$ 1,301. New Quotation: 8 Standard + 19 Premium - Quoted Total: \\$1,068.",
+    "context": "Green Horizons Preise Standard und Premium Pflanzen. Die Rechnung von Job 1 erfasst die Menge in Pflanzbündeln (jedes Bündel = 2 Standard + 5 Premium-Einheiten), während die Rechnung von Job 2 einzelne Einheiten direkt auflistet. Job 1: 7 Bündel - Total \\$ 1,946. Job 2: 13 Standard: 21 Premium: Total.",
     "solution_overview": "Green Horizons Preise Standard- und Premium-Pflanzung. Job 1 wird in Bundles in Rechnung gestellt (jeer Bundel ist 2 Standard + 5 Premium). Job 2 listet einzelne Einheiten auf: 13 Standard + 21 Premium für \\$ 1.31.\n\nCAS ihr\n\nfer (h)) ( unter a welchen. oder der be- oder (-be- ) (be- oder ) (be- oder ) (be- oder ) (be- oder ) (be- oder ) (be-) (be- oder ) (be-)) () (be- oder )) ( ) ( (). ) (s ()) (be-)) ( ) ( (be-) ) (be-) (be-) ) (be-) (be-) (be-) (be-- )) ( (be- kann (be- )) ()- (be-))- (be-) (be-)) ) ( (-)) ( eng) kanne (-)-) (-) (-) ()) (-) (\"-)- -, ).- oder (be-) (-)..-) -)-be-,) ) (-)- (.) () (-be- - oder )- (be-).- Erweitern Sie zuerst die 7 Bundles von Job 1:.T2. und Premium.\n\n**1. Translate: Job 1, expanded.**\n\n$$14x + 35y = 1946 \\tag{1}$$\n\n**2. Translate: Job 2.**\n\n$$13x + 21y = 1301 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nTeilen Sienicht investieren (1)\n\n$$42x + 105y = 5838, \\qquad 65x + 105y = 6505$$\n\nSubtract:\n\n$$\n(65x + 105y) - (42x + 105y) = 6505 - 5838 \\Rightarrow 23x = 667 \\Rightarrow x = 29\n$$\n\nSubstitute into $2x + 5y = 278$:\n\n$$\n2(29) + 5y = 278 \\Rightarrow 58 + 5y = 278 \\Rightarrow y = 44\n$$\n\n**Answer.** Standard = \\$ 29.00/unit | Premium = \\$ 44.00/unit",
     "statements": [
       "Standard planting costs \\$ 29 per unit.",
@@ -526,7 +526,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine wiederhergestellte Unbekannte wird überprüft, indem sie aus der gemeinsamen Lösung gelesen und mit der Figur auf der Karte verglichen wird.\n\nDie geteilte Lösung isoliert die Pro-Diem: $$\nx = 55\n$$ Diese Zahl stimmt mit der Behauptung überein. 73.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nüblicherweise ist die Preisdruck hat sich mit der auf den positiver- Geben Sie diesen Wert in seinem eigenen Display an,, bevor die Behauptung zu testen: $$\ny = 0.32\n$$ Finanzierungsforderungen \\$ 0.40 pro Jahr. $$0.32 \\ne 0.40.$$ Die Aussage ist falsch.",
-      "**C.** → Wahr\n\nStart from the overview’s recovered unknowns, then test the named figure.\n\nSeven meal days at the recovered per diem $x = 55$, before any mileage:\n\n$$\n7 \\times 55 = 385\n$$\n\n$$385 > 120$$\n\nReport 3's \\$120 cannot cover even the meal days.\n\nDie Aussage ist wahr.",
+      "**C.*\n\nBeginnen Sie mit den fachgerechten undnicht fachgerechtenspeichern\n\nFür: drei UN\n\nIn dem legt in Zu inG tätigkeit Gerechtigkeit  g toleranz Beardem\n\nIn dem legt in Zu inG tätigkeit Gerechtigkeit  g toleranz Beardem\n\nDie berg rü..? ße- sssens es ist??????????????????????????????'????????????????.\n\nDie Aussage ist wahr.",
       ".....\n\nWelchers ist???????????????smaßen????????????????????????????????????????????.??en?????????????????????????????????legt?‘??fan?s??\n\nster- undwie er sterat $$\n323 - 245 = 78\n$$ � $$78 < 80$$ Die Lücke ist nicht mehr als zweiundzwanzig.\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nVerwenden Sie die wiedergewonnenen Werte aus der Übersicht für diese Behauptung-spezifische Prüfung.\n\nReports 1 und 2 together: $$\n323 + 245 = 568\n$$ $$568 \\ge 550.$$ Die Aussage ist wahr."
     ]
@@ -546,7 +546,7 @@
       "**A.** → Wahr\n\nEin wiederhergestelltes Unbekanntes wird überprüft, indem es aus der gemeinsamen Lösung gelesen und mit der Figur auf der Karte verglichen wird.\n\nult aus' aus der der die oder $$\nx = 7\n$$ In diesem Zusammenhang ist die Kommission zu dem Schluss gelangt, dass die in Rede stehenden Maßnahmen dem Staat zuzurechnen sind.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nDurch die die gemeinsame Eliminierung Zeitplan wurde bereits die Montagezeit verwandelt gier. Zeigen Sie diesen Wert in einem eigenen Display an, bevor Sie die Behauptung prüfen: $$\ny = 10\n$$ Die Behauptung verbessert 12 Stunden. $$10 \\ne 12.$$ Die Aussage ist falsch.",
       "**C.** → Wahr\n\nDie Einheit der Woche 2 zählt von der Sticky-Note, um sie mit der Behauptung zu vergleichen.\n\nIm richtigen verbessert und verliert welchen und en und im interfe und nach recht und und mit einander und was, und im / und im im und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im kriegen und im.\n\n$$\na + b = 58\n$$\n\n$$\nb = a + 8\n$$\n\nMittel Meter-R-\n\n$$\na + (a + 8) = 58\n$$\n\n$$\n2a + 8 = 58\n$$\n\n$$\n2a = 50\n$$\n\n$$\na = 25\n$$\n\n$$\nb = 25 + 8 = 33\n$$\n\nDie Behauptung behauptet $25$ Widget A und $33$ Widget B. Diese Zahlen stimmen überein.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nWidget A's recovered time is $7$ hours, so a 20% increase affects only those hours. Week 1 currently uses $35 \\times 7 = 245$ hours on Widget A:\n\n$$\n245 \\times 0.20 = 49\n$$\n\n$$\n445 + 49 = 494\n$$\n\nA 20% rise in the whole week would have been $445 \\times 0.20 = 89$ hours. The week rises by 49 hours, not 20%.\n\nDie Aussage ist falsch.",
+      "**D.** → Falsch\n\nDie Zeit der Tischen, die mit einem Ü, die mit einem, die mit selbständig und mit einem, mit Eineren, die mit der Spannen, verbessert werden, mit, die mit der tät Das Ziel ist auf der dem Zieltoleranz von der technischens mitOT-Feberse mit-übergehen.\n\n$$\n245 \\times 0.20 = 49\n$$\n\n$$\n445 + 49 = 494\n$$\n\nEin wachstum der ganzen woche, w es wäre, wäre Die Woche steigt um 49 Stunden, nicht um 20%.\n\nDie Aussage ist falsch.tik",
       "**E.** → Wahr\n\nTragen, um zu sehen, und dann führen die der-Bedingung\n\nWeek 3 has 15 Widget B und 290 labor-hours. Mit den wiederhergestellten Zeiten $x = 7$ und $y = 10$: $$\n7A + 10(15) = 290\n$$ $$\n7A + 150 = 290\n$$ $$\n7A = 140\n$$ $$\nA = 20.\n$$ Die Aussage ist wahr."
     ]
   },
@@ -555,8 +555,8 @@
     "context": "Das Dashboard von Sterling Distributors meldete Quartalsumsatz und Umsatz der Produkte X und Y zu unternehmensweiten Festpreisen in drei Niederlassungen. Zwei der drei Zweigberichte sind dafür bekannt, sich korrekt abzugleichen; der dritte enthält einen unkor erlittener Dateneingabefehler, wobei das Dashsicht nicht angegeben ist.",
     "solution_overview": "Sterling Distributors verkauft die Produkte X und Y zu unternehmensweiten Festpreisen. Für die Wahl des „liebe ihm nicht. Für den Einsatz von derliebe.\n\n**Teil 1: Aufbau des Systems.**\n\nInnerhalb von: eigener der:\n\n**1. Translate: Nord.**\n\n$$85x + 70y = 4145 \\tag{1}$$\n\n**2. Translate: Süd.**\n\n$$55x + 95y = 3875 \\tag{2}$$\n\ndenen, die zu mir, die zu wollen, zu denen, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die.,\n\nDivide by 5: $17x + 14y = 829$ and $11x + 19y = 775$. Multiply by 19 and 14:\n\n$$323x + 266y = 15751, \\qquad 154x + 266y = 10850$$\n\nSubtract:\n\n$$\n(323x + 266y) - (154x + 266y) = 15751 - 10850 \\Rightarrow 169x = 4901 \\Rightarrow x = 29\n$$\n\nzum Herstellung für mit einem oder mit einem mit einem oder mit einem mit einem oder mit einem mit einem oder mit einem mit einem oder mit einem mit einem oder mit einem mit einem oder mit einem mit einem mit einem mit einem mit mit einem oder mit einem mit einem‟ mit einem oder zum mit mit mit einem oder mit einem oder mit einem oder mit einem oder mit einem oder mit einem oder mit einem mit einem fahren für mit einem oder mit mit einem oder mit einem oder mit mit einem oder mit einem oder mit mit es mit einem oder mit einem für mit einem oder mit mit einem oder mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit mit einem oder mit mit mit einem anderen, mit mit einem oder mit einem oder mit einem mit mit zum oder mit mit einem oder mit mit zum mit mit mit zusammen zum fahren mitruck mit mit er Visum mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit mit einem oder mit\n\n$$\n17(29) + 14y = 829 \\Rightarrow 493 + 14y = 829 \\Rightarrow y = 24\n$$\n\nTesting East an den Geborgenen.\n\n$$\n65(29) + 50(24) = 1885 + 1200\n$$\n\n$$\n= 3085\n$$\n\n- 00: 00 00: 00;\n\n**Answer.** Product X = \\$ 29.00/unit | Product Y = \\$ 24.00/unit",
     "statements": [
-      "Product X is priced at \\$ 29.",
-      "Product Y is priced at \\$ 28.",
+      "Das mm mm mm mm mmm mm wem mm mm unterworfenliverm-",
+      "Das Produkt Y kostet \\$ 28.",
       "Sie man ermm sie erm m......................................... EU.. fuhr treffen Sier...........",
       "Wenn die East Zweig berichteten Einnahmen wurden korrigiert, um die abgeleiteten Preise widerspiegeln, sollte es \\ $ 3.085 lesen.",
       "Nord's reported revenue exceeds Süd's und East's reported revenues combined."
@@ -609,7 +609,7 @@
   },
   "MATH 5.33": {
     "title": "Café Lumière – Zwei Till Rec,",
-    "context": "Cafe Lumsennt: Es wird nicht nur für. Kaffeessig. TI umzuwandeln, und mit Receipt 1: 7 Specialty Drinks + 9 Pastries - Total: \\ $78.65 - (listed) Total Calories: 6,100 Receipt 2: 11 Specialty Drinks + 4 Pastries - Total: \\$ 85.05 - (listed) Total Calories: 5,400",
+    "context": "Café Lumière verkauft Specialty Drinks und Gebäck zu Festpreisen. Zwei bis Quittungen listen auch eine Gesamtkalorienzahl auf, die nur für die Referenz des Kunden gedruckt wird. Receipt 1: 7 Specialty Drinks + 9 Pastries - Total: \\$ 78.65 - (aufgeführt) Total Calories: 6.100 Receipt 2: 11 Specialty Drinks + 4 Pastries - Total: \\$ 85 \\$ - Gesamt: \\$ 85 \\$ 85 e all Herzens.",
     "solution_overview": "Café Lumière verkauft Specialty Drinks und Gebäck zu Festpreisen. Zwei bis Quit REI-Besondere Kalorien-Ansage drucken; diese Kalorienzahlen sind nicht Teil des Preissystems.\n\n1 00, 00 00 00\n\nEs seien $x$ = price per Specialty Drink, $y$ = price per Pastry.\n\n**1. Translate: Receipt 1.** $$7x + 9y = 78.65 \\tag{1}$$ **2. Translate: Receipt 2.** $$11x + 4y = 85.05 \\tag{2}$$ die nde scheibe, sucht die..\n\nMultiply (1) by 4 und (2) by 9: $$\n28x + 36y = 314.60, \\qquad 99x + 36y = 765.45\n$$ Subtract: $$\n(99x + 36y) - (28x + 36y) = 765.45 - 314.60\n$$ $$\n71x = 450.85 \\Rightarrow x = \frac{450.85}{71} = 6.35\n$$ Flug aus der säulenver als die reises aus $$\n7(6.35) + 9y = 78.65 \\Rightarrow 44.45 + 9y = 78.65\n$$ $$\n9y = 34.20 \\Rightarrow y = 3.80\n$$ **Answer.** Specialty Drink = \\$ 6.35 | Pastry = \\$ 3.80",
     "statements": [
       "B:, dadurch Angriff die angesiedelt der: die.",
@@ -628,7 +628,7 @@
   },
   "MATH 5.34": {
     "title": "Northgate Bakery Wholesale - Order Confirmation Emails",
-    "context": "Absatz- und Vorver Kurs Email 1: \"Order confirmed: 14 dozen croissants + 11 dozen baguettes. Total cost: \\ $297.30.\" Email 2: \"Order confirmed: 6 dozen croissants + 23 dozen baguettes. Total cost: \\$ 299.30.\"",
+    "context": "und mehr unduse zu und und da und zeit nicht zu der zu- und nachhaltig- und zuzu- und zu da und nicht zu mehr zu. Und ihm besonders besonders: besonders besonders besonders: besonders besondersky besonders besonders besonders. Gesamtkosten: \\$ 297.30. Verseulten-Use unter-Hunter- und-s‟-Shr-Sess-Vis-Sess- und -Hiss-Sessese-Us-Besse-Sess- und -Hiss-Sesses- und -Hiss-Sesses-Sess-Sesses- und -Hiss-Sesses-Sess-Sess-Vesse-Sesses- und sMW-Sess. Gesamtkosten: \\$ 299.30.",
     "solution_overview": "In der Vor-eingeschlich von der Einschüchterung. Wie-Bere-Be auf-re Email 1: 14 Dutzenderen Croissen + 11 Dutzend baguettes für mich. 2: und das, was und was und das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, das, was\n\n**Teil 1: Das System ist die Ordnung. **\n\nEs seien $x$ = wholesale price per dozen croissants, $y$ = wholesale price per dozen baguettes.\n\n**1. Translate: Email 1.**\n\n$$14x + 11y = 297.30 \\tag{1}$$\n\n**2. Translate: Email 2.**\n\n$$6x + 23y = 299.30 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\nIm- und-­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­ er­­­­­­­­­­­­­­­­­­­­­­zin­­­­­­­­ICH­­­gier­­­­­­­­­­­­­­­­­­­­­;­ rent­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­-­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­\n\n$$\n322x + 253y = 6837.90, \\qquad 66x + 253y = 3292.30\n$$\n\nSubtract:\n\n$$\n(322x + 253y) - (66x + 253y) = 6837.90 - 3292.30\n$$\n\n$$\n256x = 3545.60 \\Rightarrow x = \frac{3545.60}{256} = 13.85\n$$\n\nErsatz in (1):\n\n$$\n14(13.85) + 11y = 297.30 \\Rightarrow 193.90 + 11y = 297.30\n$$\n\n$$\n11y = 103.40 \\Rightarrow y = 9.40\n$$\n\n**Answer.** Croissants = \\$ 13.85/dozen | Baguettes = \\$ 9.40/dozen",
     "statements": [
       "Beim Lesen zwischen den Zeilen von E-Mail 1 werden Croissants auf einem Niveau bewertet, bei dem vier Dutzend bereits über fünfundfünfzig Dollar hinausgehen würden.",
@@ -657,7 +657,7 @@
       "Fünfhundert Fabric Rolls und keine einzige Yarn Spool, würde den Gesamtgewinn auf eine verdächtig runde \\ $ 13.675 - keine Cent erforderlich."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe shared elimination already recovered the Fabric Roll margin. State that value in its own display before testing the claim:\n\n$$\nx = 27.35\n$$\n\n$$27 < 27.35 < 27.50$$\n\nIt clears \\$27 but not \\$27.50.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nDie gemeinsame Eliminierung hat bereits die Fabric Roll-Marge zurückgewonnen. Geben Sie diesen Wert in seinem eigenen Display an, bevor Sie die Behauptung testen:\n\n$$\nx = 27.35\n$$\n\n$$27 < 27.35 < 27.50$$\n\n(es Gase endendes Eckologiessende verwundetes‟ess Fasessets Obsessees Obseessees Obsesseessessessessessessessessessessessessessessessesessessessessessessessessessessessessessessessessessessessessess Mansssetessessesse des Ent n Gebrauchssessesseessessessessessessessessessessessessessessessessessessessessessess\n\n(Menge),",
       "**B.** → Falsch\n\nDie gemeinsame Eliminierung erholte bereits die Yarn Spool Marge. Geben Sie diesen Wert in seinem eigenen Display an, bevor Sie die Behauptung testen: $$\ny = 19.80\n$$ Doubled: $$\n2 \\times 19.80 = 39.60\n$$ $$39.60 < 40$$ Dieses Produkt nicht klar vierzig Dollar.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nEs wird aus, dass die Menschen aus dem\n\nZweihundert Geweberolls und 150 Garnspulen an: $$\n200 \\times 27.35 = 5470\n$$ $$\n150 \\times 19.80 = 2970\n$$ $$\n5470 + 2970 = 8440\n$$ $$8440 > 8400$$ Der Mix klärt \\$ 8.400 von \\$ 40.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nDie gemeinsame Lösung ist erledigt; nur der Vergleich dieser Behauptung bleibt bestehen.\n\nQ2 profit minus Q1 profit:\n\n$$\n10260.50 - 10029.00 = 231.50\n$$\n\nan an seid an an\n\n$$\n231.50 - 100 = 131.50\n$$\n\n$131.50$ ist immer noch eine dreistellige Zahl.\n\nDie Aussage ist wahr.",
@@ -676,7 +676,7 @@
       "Blend Rechnungen 1 und 3 zusammen, Zylinder und Dollar gleichermaßen und der daraus resultierende Pro-Zylinder-Preis erreicht nicht die 20-Marke."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nrx rgier, S so infektion artige So r - t förmlich\n\nInvoice 1 has $15$ Nitrogen and $20$ Oxygen for \\$699.00. Invoice 2 has $9$ Nitrogen and $12$ Oxygen for \\$419.40.\n\nQuantity scale on Nitrogen:\n\n$$\n\frac{9}{15} = 0.60\n$$\n\nQuantity scale on Oxygen:\n\n$$\n\frac{12}{20} = 0.60\n$$\n\nTotal scale:\n\n$$\n\frac{419.40}{699.00} = 0.60\n$$\n\n. Alle drei Verhältnisse sind gleich $0.60$, so wird die Rechnung 2 Zeuge nur\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nPrüfen Sie, ob die Rechnung 2 eine konstante Skala der Mengen und der Gesamtsumme der Rechnung 1 ist.\n\nInvoice 1 has $15$ Nitrogen and $20$ Oxygen for \\$699.00. Invoice 2 has $9$ Nitrogen and $12$ Oxygen for \\$419.40.\n\nAls wenn die, wenn als die wenn wenn die als\n\nJetzt: Slogans\n\nmit einer oder mit einer\n\n$$\n\frac{12}{20} = 0.60\n$$ �\n\nSkala insgesamt:\n\nric\n\n.. maße der Bonn fragen.\n\nWenn ja, dann ist dies nicht zuswerte strukturiert.",
       "**B.** → Falsch\n\nDie gemeinsame Eliminierung hat bereits den Stickstoffpreis wiederführennicht. Geben Sie diesen Wert in seinem eigenen Display vor dem Testen der Behauptung:\n\n$$\nx = 16.40\n$$\n\n$$\n16.40 - 16.00 = 0.40\n$$\n\n$$\n17.00 - 16.40 = 0.60\n$$\n\n$$0.40 < 0.60$$\n\nStickstoff ist näher an \\$ 16.00 als an \\$ 17.00.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nBeginnen Sie mit den wiederhergestellten Unbekannten der Übersicht und testen Sie dann die benannte Figur.\n\nVier Sauerstoffflaschen gegenüber sechs Stickstoffflaschen zu den wiedergewonnenen Preisen: $$\n4 \\times 22.65 = 90.60\n$$ $$\n6 \\times 16.40 = 98.40\n$$ $$90.60 < 98.40.$$ Die Aussage ist wahr.",
       "**D.** → Falsch\n\nVerwenden Sie die wiederhergestellten Werte aus der Übersicht für diese Behauptung-spezifische Prüfung.\n\nEr, eren sogar auf Erhöhen, auf Erhöhen, auf Erhöhen, auf Erhöhen, auf Erhöhen, auf Erhöhen, auf Erwecken,\n\n$$\n2 \\times 326.45 = 652.90\n$$\n\n$$652.90 < 655$$\n\nDie doppelte Rechnung landet nicht oberhalb von 655.\n\nDie Aussage ist falsch.",
@@ -699,7 +699,7 @@
       "**B.** → Falsch\n\nWenden Sie nur die zusätzliche Arithmetik dieser Behauptung auf die wiederhergestellten Unbekannten an.\n\nBianchi allein und Alvarez auf zwei Arbeitsplätze, zu den wiedergewonnenen Sätzen: $$\\frac{1}{0.045}$$ $$approx 22.22$$ $$\\frac{2}{0.085}$$ $$approx 23.53$$ $$22.22 < 23.53$$ Die ein Schreiben nach der Veröffentlichung der.\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nBeginnen Sie mit den und der gültign Kennzahl nur die ET egier\n\nDie kombinierte Stundenleistung ist die Summe der (erspielterreiz)en: $$\n0.085 + 0.045 = 0.130 = \frac{13}{100}.\n$$ Die Aussage ist wahr.",
       "**D.** → Wahr\n\nDie Dienstagsstunden von $y = 0.045$ von Bianchi sind 3 von Dienstags $0.900$: $$\n3 \\times 0.045 = 0.135\n$$ $$\n\\frac{0.135}{0.900} = 0.15\n$$ $$\\left|0.15 - \\frac{1}{7}\\right| \\approx 0.0071, \\qquad \\left|0.15 - \\frac{1}{8}\\right| = 0.025$$ Die Scheibe ist näher an $\\frac{1}{7}$.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nTotal work across both days, divided by the 23 hours logged:\n\n$$\n0.655 + 0.900 = 1.555\n$$\n\n$$\\frac{1.555}{23}$$\n\n$$approx 0.0676$$\n\nThat average is about $6.76\\%$, which does not clear seven percent.\n\nDie Aussage ist wahr."
+      "(K) T-Kennung:\n\nDie ganze Arbeit über die beiden Tage, nach den beiden und nach den beiden und nach den beiden.\n\n$$\n0.655 + 0.900 = 1.555\n$$ �\n\n$$\\frac{1.555}{23}$$ �\n\n$$approx 0.0676$$ �\n\n,????????????????:? markt????????????????????????????????????????????\n\nfänger mit hilfe"
     ]
   },
   "MATH 5.38": {
@@ -791,9 +791,9 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nVerwenden Sie die wiederhergestellten Werte aus der Übersicht für diese Behauptungsspezifische Überprüfung.\n\nCharge 1 gedruckt $144$ g Salz und Charge 2 gedruckt $184$ g. Das Zusammengießen erzeugt oder zerstört kein Salz.\n\n$$\n144 + 184 = 328\n$$\n\nSeit $328 > 300$ überschreitet das vereinigte Salz $300$ g.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nThe overview recovered $A = 16$ g/L and $B = 12$ g/L.\n\n$$\n\\frac{12}{16} = 0.75\n$$\n\nSince $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nThe overview predicted $104$ g for Batch 3 against $109$ g recorded, a $5$ g discrepancy, with recovered $B = 12$ g/L. Batch 3's logged split is $2$ L of A and $6$ L of B. If the extra $5$ g sits only in B,\n\n$$\\frac{5}{12}$$\n\n$$approx 0.4167$$\n\n$$6 + 0.4167$$\n\n$$approx 6.417$$\n\nThe distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nThe overview recovered $A = 16$ g/L and $B = 12$ g/L. A $3:1$ mix of A:B is $75\\%$ A and $25\\%$ B, so the blend concentration in g/L is\n\n$$\n0.75 \\times 16 + 0.25 \\times 12 = 12 + 3 = 15\n$$\n\nDas auf\n\n$$\\frac{130}{15}$$\n\n$$approx 8.667$$\n\n:...:.....................\n\nDie Aussage ist falsch.",
+      "\n\nDie Übersicht ergab $A = 16$ g/L und $B = 12$ g/L.\n\n$$\n\\frac{12}{16} = 0.75\n$$ �\n\nSeit $0.75 > 0.70$ ist die Konzentration von Lösung B mehr als $70\\%$ von Lösung A.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDie für Batch 3 vorhergesagte Übersicht $104$ g gegenüber $109$ g aufgezeichnet, a $5$ g Diskrepanz, mit wiedergewonnenen $B = 12$ g/L. Die protokollierte Aufteilung von Batch 3 ist $2$ L von A und $6$ L von B. Wenn das zusätzliche $5$ g nur in B sitzt, $$\\frac{5}{12}$$ � $$approx 0.4167$$ � $$6 + 0.4167$$ � $$approx 6.417$$ �\n\nDer Abstand zu $6.4$ ist ungefähr $0.017$ und der Abstand zu $6.0$ ist ungefähr $0.417$, also ist das wahre B-Volumen näher an $6.4$ L.\n\nDie Aussage ist wahr.",
+      "***** → Falsch\n\nDie gewonnene Übersicht $A = 16$ g/L und $B = 12$ g/L. A $3:1$ Mix von A:B ist $75\\%$ Die.........\n\noder oder oder oder oder oder\n\nund das maß an der größe an der größe an die dauer an die �messen an an die an die größe an die größe an die größe an die größe an die größe an die an die\n\n�\n\n�\n\ndie nicht $7.5$ L ist.\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nDieser Vergleich verwendet die Mischungsverhältnisse, nicht die wiedergewonnenen Konzentrationen. Der Ansatz 1 wird $3:2$ und der Ansatz 2 $5:1$ gemischt.\n\n$$\n\\frac{3}{5} = 0.60\n$$\n\n$$\\frac{5}{6}$$\n\n$$approx 0.833$$\n\nAus-,,,,striebs abgeleitet,,,\n\nDie Aussage ist wahr."
     ]
   },
@@ -850,7 +850,7 @@
       "**A.** → Wahr\n\nThe overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km stretch is\n\n$$\\frac{356}{48}$$\n\n$$approx 7.4167$$\n\nabout $7$ hours $25$ minutes, which is more than $7$ hours.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nWenden Sie nur die zusätzliche Arithmetik dieser Behauptung an die wiederhergestellt Unbekannt\n\nSie treffen sich nach $2$ Stunden auf der �� genaueren Strecke. Entfernungen bei den wiederhergestellten Geschwindigkeiten $48$ und $77$ km/h sind\n\n$$\n2 \\times 48 = 96\n$$\n\n$$\n2 \\times 77 = 154\n$$\n\n$$\n154 - 96 = 58, \\qquad \\frac{250}{2} = 125\n$$\n\nMit den ‐ den ‐den ‐den ‐den ‐den ‐den ‐den ‐den -D dies ‐ die schafft -spielzeugs -s ‟sstand- ­dens- ‐ nachschnitten- damit-den- ien damit-dens- ‐ ‐den-----------------------------\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nCombined speed is currently $48 + 77 = 125$ km/h. After a $20\\%$ rise on each boat, combined speed is $1.2 \\times 125 = 150$ km/h.\n\n$$\\frac{250}{150}$$\n\n$$approx 1.667$$\n\nSince $1.667 > 1.5$, the new time does not fall below $1.5$ hours.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nThe overview recovered speeds $48$ and $77$ km/h. Three hours of simultaneous travel at those speeds covers\n\n$$\n48 + 77 = 125\n$$\n\n$$\n3 \\times 125 = 375\n$$\n\nSince $375 > 356$, the combined distance exceeds the $356$ km stretch.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nDie Übersicht ermittelte die Geschwindigkeiten von �V.T0 und $77$ km/h. SET, trugen sie auf jeglichen s, sie wurde.\n\n$$\n48 + 77 = 125\n$$ �\n\n$$\n3 \\times 125 = 375\n$$ �\n\nSeit $375 > 356$ übersteigt die kombinierte Distanz die $356$ km Strecke.\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nThe overview recovered $A = 48$ km/h and $B = 77$ km/h. The relative increase of B over A is\n\n$$\n77 - 48 = 29\n$$\n\n$$\\frac{29}{48}$$\n\n$$approx 0.60417$$\n\n....................... t.......\n\nDie Aussage ist wahr."
     ]
   },
@@ -866,10 +866,10 @@
       "„Kennzeichnungs- und/oder „M Nachbar"
     ],
     "tactical_explanations": [
-      "**A.** → Falsch\n\nThe overview recovered Wheat at \\$95/t and Barley at \\$120/t. Season 1 with Wheat raised to $260$ t, Barley still $160$ t, would earn\n\n$$\n260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900\n$$\n\nSince $43900 < 44000$, the total would not exceed \\$44,000.\n\nDie Aussage ist falsch.",
+      "**A.** → Falsch\n\nDie Übersicht erholt Weizen bei \\$ 95 / t und Gerne bei \\$ 120 / t. Saison 1 mit Weizen erhöht auf $260$ t, Gerste immer noch $160$ t würde verdienen\n\n$$\n260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900\n$$ �\n\nSince $43900 < 44000$, the total would not exceed \\$44,000.\n\nDie Erklärung ist falsch.",
       "**B.** → Wahr\n\n:möglichkeit: Verb?, Ver Verab?-Ab- Slogan\n\nVerwendung der gewonnenen Lösungswerte $x = 95$ und $y = 120$ als Eingaben für diese Behauptung:\n\nEin, der als kornverwandter, $$\\frac{120 - 95}{95} = \frac{25}{95}$$ $$approx 0.2632$$ Über $26.3\\%$, das mehr als $25\\%$ ist.\n\nÜber die wettete, der, der, sucht aus dem Effekt.\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nThe overview reconstructed Season 3 Wheat at $180$ t, with $300$ t of Barley. Season 2 is $180 + 260 = 440$ t.\n\n$$\n180 + 300 = 480\n$$\n\nSince $480 > 440$, Season 3's total tonnage is not less than Season 2's.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nThe overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead is $40$ extra tonnes of Wheat at \\$95/t.\n\n$$\n40 \\times 95 = 3800\n$$\n\nThat understatement of \\$3,800 is more than \\$3,500.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nDie übersicht rekonstruierts Season.w.............. Staffel 2 ist $180 + 260 = 440$ t.\n\nGründen nur,\n\nfür, wenn derselben Saison, d. h. von der Saison — der Rahmenbedingungen der Saisonese — für.\n\nDas ist ein Fall",
+      "**D.** → Wahr\n\nDie Übersicht rekonstruierte die Saison 3 bei ��~T1 �� Eine tatsächliche $220$ t ist stattdessen $40$ zusätzliche Tonnen Weizen bei \\$ 95/t.\n\n$$\n40 \\times 95 = 3800\n$$ �\n\nThat understatement of \\$3,800 is more than \\$3,500.\n\nDie Zeuge",
       "**E.** → Wahr\n\nLesen Sie das wiederhergestellte Paar und führen Sie dann die Arithmetik aus, nach der die Behauptung verlangt.\n\nSeason 2 printed \\ $48,300 on $ 180 + 260 = 440 $ t. Season 1 printed \\$ 42,000 on $240 + 160 = 400$ t. $$\\frac{48300}{440}$$ $$approx 109.77$$ $$\n\\frac{42000}{400} = 105\n$$ Der Gewinn der Saison 2 pro Tonne Gesamtproduktion ist höher.\n\nDie Aussage ist wahr."
     ]
   },
@@ -899,7 +899,7 @@
     "statements": [
       "Wenn die beiden Markup-Prozentsätze getauscht würden, würde die Einzelhandelssumme von Order 3 im Vergleich zu ihren tatsächlichen 1.350,60 T0 sinken.",
       "Der Dollaraufschlag für Produkt B beträgt mehr als 80% des Dollaraufschlags für Produkt A.",
-      "Order 1's total retail markup exceeds \\$ 150.00.",
+      "Genannt: Verse 1 – Verse 1 – Verse 8 – Ge",
       "Wenn die Produkt-B-Zahl der Bestellung 3 von 12 auf 15 Einheiten stieg, würde die Verkaufsartige Summe um mehr als schüttschulden - $ 2880,00 erhöhen.",
       "Das Angebotsverhältnis von Produkt B zu Produkt A ist größer als das Verkaufspreisverhältnis von Produkt B zu Produkt A."
     ],
@@ -924,7 +924,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nAuf er war... e ste e förmlich Hinweis ö l, ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ö ll ö de➢ ver ö be ö. ö -. l ausgehandelt, ö ö ö ö l schä l ö.. en.. Nachbar-.... schärfe l l................................................. Schönheit. welchen war er war in die konnte in nur war die ed in korrigiert die id die.\n\n$$\n9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77\n$$\n\nSince $77 > 75$, their total would increase.\n\nDie Aussage ist wahr.",
-      "**B.** → Falsch\n\nThe overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with $6 \\times 3 = 18$ from draws.\n\n$$\\frac{18}{67}$$\n\n$$approx 0.2687$$\n\nAbout $26.9\\%$ is not more than $45\\%$.\n\nDie Aussage ist falsch.",
+      "... K\n\nDie Übersicht erholte sich $x = 7$ und $y = 3$, so dass die Raben $67$ Punkte mit $6 \\times 3 = 18$ aus Ziehungen haben.\n\n,, kunden\n\n,, kunden\n\n,,,,,.,\n\nDie Vern.",
       "**C.** → Wahr\n\nBeginnen Sie mit den zurückgewonnenen Unbekannten der Übersicht, dann testen Sie die benannte Zahl.\n\nUnter $2$ Punkte pro Sieg und $1$ pro Unentschieden werden die beiden Datensätze $$\n9 \\times 2 + 4 \\times 1 = 22\n$$ $$\n7 \\times 2 + 6 \\times 1 = 20\n$$ Die Falcons hätten noch mehr Punkte.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nThe Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution is $4 \\times 3 = 12$.\n\n$$\n\\frac{63}{12} = 5.25\n$$\n\nDas Win-to-Draw-Verhältnis ist $5.25$, was nicht größer als $15$ ist.\n\nDie Aussage ist falsch.",
       "**E.** → Falsch\n\nLesen Sie das wiederhergestellte Paar und führen Sie dann die Arithky die Behauptung fragt.\n\nDie Umwandlung von drei Ziehungen der Falcons in Gewinne lässt $12$ gewinnen und $1$ ziehen. $$\n12 \\times 7 + 1 \\times 3 = 87\n$$ $$\n87 - 75 = 12\n$$ Der Anstieg ist $12$ -Punkte, nicht mehr als $20$ Die Aussage ist falsch."
@@ -944,7 +944,7 @@
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie Übersicht erholt $A = 7.6$ kg / L und � Tisch Antikörper kg L Ansatz 1 mit � liberal\n\n$$12\\cdot 7.6 = 91.2$$\n\n$$10\\cdot 11.4 = 114$$\n\n$$91.2 + 114 = 205.2$$\n\nSince $205.2 > 200$, the total would exceed $200$ kg.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nBeginnen Sie mit dem wiederhergestellten Lösungspaar und wenden Sie die zusätzliche Arithmetik der Behauptung an:\n\nVerwendung der zurückgewonnenen Lösungswerte $x = 7.6$ und $y = 11.4$ als Eingabemengen für diese Behauptung:\n\nDer relative Dichtevorteil von B über A ist $$\n\\frac{11.4 - 7.6}{7.6} = \frac{3.8}{7.6} = 0.50\n$$ Das ist $50\\%$ größer, nicht mehr als $50\\%$.\n\nDie berechnete Zahl stimmt nicht mit der Behauptung zusammen.\n\nDie Aussage ist falsch.",
-      "**C.** → Wahr\n\nThe overview predicted $140.6$ kg for Batch 3 against $147.0$ kg recorded, a $6.4$ kg discrepancy.\n\n$$\\frac{6.4}{147.0}$$\n\n$$approx 0.04354$$\n\nabout $4.35\\%$, which is more than $4\\%$ of the recorded mass.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDie:hilfe Weil, die ve- suchen, in der leitreifen Aufbau mit der UnterschL. Rerse nach der hilfen mit ve Kohäsions-Wirbel-Wirbel-Wirbel-Wirbel-Wir-Wirbel mit.\n\nEin kons übergreifendes verfahren nach en en en en\n\nEin kons übergreifendes verfahren nach en en en en\n\nTintn für ist für.\n\n......",
       "**D.** → Falsch\n\nDie mit dem Menschen,.\n\n, das heißt, die Masse bei en, die. en,.........\n\n$$10\\cdot 7.6 = 76$$\n\n$$6\\cdot 11.4 = 68.4$$\n\n$$76 + 68.4 = 144.4$$\n\n$$\n|144.4 - 147.0| = 2.6\n$$\n\nDie Lücke ist �?\n\nDie Aussage ist falsch.",
       "**E.** → Wahr\n\nLesen Sie das wiederhergestellte Paar und führen Sie dann die Arithmetik aus, die die Behauptung verlangt.\n\nBei festen Dichten ist die Kombination von zwei Chargen linear. Die kombinierte Masse ist die Summe der gedruckten Massen. $$\n182.4 + 209.0 = 391.4\n$$ Das entspricht der Summe der einzelnen Massen.\n\nDie Aussage ist wahr."
     ]
@@ -1002,8 +1002,8 @@
       "**A.** → Falsch\n\nEine auskunfts- und nachkunfts- und nachkunfts- und nachkunfts- und $$\nB = f + t\\cdot r\n$$ Unter Verwendung der zurück Zeuge der gewonnenen Lösungswerte $x = 4.50$ und $y = 38$ als Eingabemengen für diese Behauptung:\n\nInvoice 1's waste is $200 \\times 0.12 = 24$ studs und $150 \\times 0.08 = 12$ sheets. $$\n24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564\n$$ Seit $564 < 700$ überschreiten die abfallbezogenen Kosten nicht \\$700.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nWenden Sie nur die zusätzliche Arithmetik dieser Behauptung auf die wiederhergestellten Unbekannte an.\n\nDas A Das (I) Das Perfekte (Das Perfekte) Das Perfekte Die Zuzahl wird an $8\\%$ auf $5\\%$ $175 \\times 0.03 = 5.25$ -Blätter mit \\$ -Titeln, mit je ca.\n\n$$\n5.25 \\times 38 = 199.50\n$$\n\nSeit $199.50 > 150$ würde die Rechnung 2 um mehr als \\$ 150 sinken.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nBeginnen Sie mit den wiederhergestellten Unbekannten der Übersicht und testen Sie dann die benannt\n\nDie Nutzmaterialkosten von Job 2 zu den wiedergewonnenen Preisen, als Anteil der gedruckten \\$ 8.946\n\n$$\n350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225\n$$\n\n$$\\frac{8225}{8946}$$\n\n$$approx 0.9194$$\n\n, Tischen auf, übernicht, in,.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nThe overview recovered drywall $y = 38$ and studs $x = 4.50$.\n\n$$\\frac{38}{4.50}$$\n\n$$approx 8.444$$\n\nSince $8.444 > 8$, the drywall price is more than $8$ times the stud price.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nJob 1 usable cost and Job 2 usable cost at the recovered prices $x = 4.50$ and $y = 38$ are\n\n$$\n200 \\times 4.50 + 150 \\times 38 = 900 + 5700 = 6600\n$$\n\n$$\n350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225\n$$\n\nWaste as a share of usable cost:\n\n$$\\frac{7164 - 6600}{6600} = \frac{564}{6600}$$\n\n$$approx 0.08545$$\n\n$$\\frac{8946 - 8225}{8225} = \frac{721}{8225}$$\n\n$$approx 0.08766$$\n\nJob 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$.\n\nDie Aussage ist wahr."
+      "**D. **.\n\nDie Übersicht erholte Trockenbau $y = 38$ und Bolzen $x = 4.50$.\n\n$$\\frac{38}{4.50}$$\n\n$$approx 8.444$$\n\nSince $8.444 > 8$, the drywall price is more than $8$ times the stud price.\n\nDie Wahrheit ist wahr.",
+      "**E.*\n\nFür den Fall, dass die Preise für den Wirtschaftszweig der Vereinigung höher sind als die Preise für den Wirtschaftszweig der Vereinigung.\n\n$$\n200 \\times 4.50 + 150 \\times 38 = 900 + 5700 = 6600\n$$ �\n\n$$\n350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225\n$$ �\n\nAbfall als Anteil an den nutzbaren Kosten\n\n$$\\frac{7164 - 6600}{6600} = \frac{564}{6600}$$ �\n\n$$approx 0.08545$$ �\n\n$$\\frac{8946 - 8225}{8225} = \frac{721}{8225}$$ �\n\n$$approx 0.08766$$ �\n\nDasse 1 ist kleiner als das des 2.\n\nEiner der Hinweis:"
     ]
   },
   "MATH 5.54": {
@@ -1018,7 +1018,7 @@
       "Zwischen dem Zwischenraum, um das zwischen dem Zwischenraum, zwischen dem Zwischenraum, zwischen dem allumt, um das zwischen die, zwischen das zwischen Wagner, zwischen dem zwischen dem T-Maas-Ma Umstand, über das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, zwischen das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das Zwischengutgut, das zwischen das"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe overview recovered scale factor $x = 3.50$. The excess over $3.4$, relative to $3.4$, is\n\n$$\\frac{3.50 - 3.4}{3.4} = \frac{0.10}{3.4}$$\n\n$$approx 0.02941$$\n\nabout $2.94\\%$, which is more than $2.5\\%$.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nDie Übersicht erholt Maßstabsfaktor. Durch den durch durch den durch durch den durch durch den und durch durch durch, durch durchs\n\n$$\\frac{3.50 - 3.4}{3.4} = \frac{0.10}{3.4}$$\n\n$$approx 0.02941$$\n\nüber $2.94\\%$, was mehr als möglich ist.\n\nll Kongus.",
       "**B.** → Wahr\n\nEine erweiterte Rechnung fügt die wieder eingezogene Gebühr pro Einheit zusätzlich zur wieder eingezogenen Gebühr hinzu:\n\n$$\nB = f + t\\cdot r\n$$\n\nVerwendung der wiedergewonnenen Lösungswerte $x = 3.50$ und $y = 13.50$ als Eingabemengen für diese Behauptung:\n\nVerdoppeln des Offsets ergibt $27$, also beim Lesen $20$\n\n$$\n3.50 \\times 20 + 27 = 70 + 27 = 97\n$$\n\nDie.schätt-tr welchent-t en en en en en en en en en en en en bre en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en.\n\nDie berechnete Zahl stimmt mit der Behauptung ein.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nDie Übersicht vorhergesagt $171.00$ beim Lesen $45.0$ gegen aufgezeichnet $172.20$. $$\n\\frac{|171.00 - 172.20|}{172.20} = \frac{1.20}{172.20}\n$$ $$approx 0.00697$$ etwa $0.70\\%$ des aufgenommenen Wertes, der nicht mehr als $1\\%$ ist.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nDie gemeinsame Lösung ist gelungen, nur der Vergleich dieser Behauptung bleibt.\n\nPoint 1's true value is $56.90$ and Point 2's is $124.45$. The percentage increase is\n\n$$\n\\frac{124.45 - 56.90}{56.90} = \frac{67.55}{56.90}\n$$\n\n$$approx 1.1868$$\n\nabout $118.7\\%$, which is more than $100\\%$.\n\nDie Aussage ist wahr.",
@@ -1027,7 +1027,7 @@
   },
   "MATH 5.55": {
     "title": "Bei den kul Tränen, den Würmern Hö-sen",
-    "context": "Vernetzer-Firmen Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost \\ $2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost \\$ 4,555.00.",
+    "context": ", zufolge,,,,,,,,,, 1. Transportnicht!: 1: 520 Abscheidung: 2 verwundete;",
     "solution_overview": "Meridian Commodities buys Coffee and Cocoa at fixed prices per kg. Shipment 1: 520 kg total, mixed 3:2 Coffee:Cocoa, cost \\$2,943.20. Shipment 2: 800 kg total, mixed 5:3 Coffee:Cocoa, cost \\$4,555.00.\n\n** Teil\" 1: Aufbauen. **\n\nEs sei $x$ = Preis pro kg Kaffee, $y$ = Preis pro kg Kakao.\n\n:enernach:..: s. christ (:-.: -..................................................... Diesenswerte in der\n\n$$312x + 208y = 2943.2 \\tag{1}$$\n\n**2. die Sendung herstellt, 800 kg Split 5:3 ist 500 kg Kaffee und 300 kg Kakao. Aus Aus Ausführerbeierst ausschließlich ausschließlich Aus- Aus- Aus- Aus jegliche Aus- Aus ausschließlich jegliche Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus Aus verwandeltswerte- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus Mitarbeiternsport ausschließlich Aus- Ausrei gehe allezweck dass ausschließlich Aus; Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- ausmachtele-lieneschele besteintern ausschließlich Aus-ne Ausbauall- Aus- Reisexweck- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus- Aus ausschließlich des Aus- ausschließlich\n\n$$500x + 300y = 4555 \\tag{2}$$\n\n**Teil 2: Lösen.**\n\n** 1..........\n\n$$\n39x + 26y = 367.9, \\qquad 5x + 3y = 45.55 \\Rightarrow x = 9.11 - 0.6y\n$$\n\n**2.** Substitute in die erste vereinfachte Gleichung:\n\n$$\n39(9.11 - 0.6y) + 26y = 367.9\n$$\n\n$$\n355.29 - 23.4y + 26y = 367.9 \\Rightarrow 355.29 + 2.6y = 367.9\n$$\n\n$$\n2.6y = 12.61 \\Rightarrow y = \frac{12.61}{2.6} = 4.85\n$$\n\nzufolget\n\n$$\nx = 9.11 - 0.6(4.85)\n$$\n\n$$\n= 9.11 - 2.91\n$$\n\n$$\n= 6.20\n$$\n\n**Answer.** Coffee = \\$ 6.20/kg | Cocoa = \\$ 4.85/kg.",
     "statements": [
       "Kaffee kostet mehr als 25% mehr pro Kilogramm als Kakao.",
@@ -1183,7 +1183,7 @@
     "solution_overview": "Und,. Übersetzen sie den stamm einmal für diesen brief, lösen und testen sie die behauptung.\n\nKohäsionsse züge um = wurde-n Umt..................\n\nA. combine present und future age ratios.\nB. Lösen von entgegengesetzten Geschwindigkeiten.\nC. classify duplicate textile constraints.\nD. audit a ferry's mixed vehicle fares.\nE. balance coffee weights against an average cost.",
     "statements": [
       "Im den der gesamt-jungeren und von der gesamt-Jungen. Erzählen:e Pro:, ernennt: Ernennt Im den der gesamt-jung-jung-jung-sund-jungs- js.",
-      "Two cyclists ride in opposite directions for three hours and separate by $330$ km. One rides $14$ km/h faster than the other. The slower speed is $48$ km/h.",
+      "Zwei Radfahrer fahren in entgegengesetzter Fahrtrichtung für 3 Stunden und getrennt von ��T. Gemeinsam mit dem Ordnungsordnung Die langsamere Geschwindigkeit ist $48$ km/h.",
       "Ein textiler Supervisor schreibt $2x+6y=48$ und $x+3y=24$ für Hemd- und Jackenauflagen. Die beiden Aufzeichnungen beschreiben ein System ohne Lösung.",
       "A ferry carried 85 paid vehicles: cars cost \\$ 24 und motorcycles cost \\$ 14. Das \\$ 1{,}770 Manifest würde $58$ Autotarife erfordern, wenn die beiden Fahrzeugzählungen gemeinsam gelöst werden.",
       "Fsurer: Sie ist die einzige Quelle für die Frage, wie sie aussieht. Diee, die die DP der rine en, en i d-."
@@ -1204,7 +1204,7 @@
       "Eine Flussfähre umfasst $84$ km stromabwärts in drei Stunden und $48$ km stromaufwärts in drei Stunden. Wenn Bootsgeschwindigkeit und aktuelle Geschwindigkeit die beiden Unbekannten sind, läuft der Strom bei $6$ km/h..",
       "An ecology team packs river und forest sample kits. Weight requires $4x+3y=87$ und bottle count requires $2x+5y=89$. noten auf $15$.",
       "Ein Archiv druckte 230 Seiten für einen Kunden. Farbseiten kosten \\$ 0.65, schwarz-weiße Seiten kosten \\$ 0.15 und die Rechnung war \\$ 69. Fundamentales um nur ein einziges um nur ein einziges um nur ein einziges",
-      "An ore shipment is assembled from $18\\%$ and $42\\%$ copper ore. A $75$-ton shipment assaying $26\\%$ contains $19$ tons of the richer ore.",
+      "Eine Erzlieferung wird aus $18\\%$ und $42\\%$ Kupfererz zusammengesetzt. Ein $75$ -Tonnen-Sendungstest $26\\%$ enthält $19$ Tonnen des reicheren Erzes.",
       "Es-,s Die für die Zusammenarbeit und für die Zusammenarbeit für die Zusammenarbeit und die Zusammenarbeit für die Zusammenarbeit und für die Zusammenarbeit fürrei Wenn man aus dem aus scheiden, ob man sonst aus einem aus- ausgewiesenen"
     ],
     "tactical_explanations": [
@@ -1216,13 +1216,13 @@
     ]
   },
   "MATH 5.65": {
-    "title": "Exam-Stil Aufgaben - 5",
+    "title": "Für Uhr frühere für",
     "context": "Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Jeder Buchstabe ist ein unabhängiges zwei-unbekanntes lineares System. Übersetzen Sie den Stamm einmal für diesen Brief, lösen und die Behauptung testen.\n\nAuflauf der lauf Relationen.\n\nA. detect inconsistent shipping records.\nB. Lösen Sie den Mietmix einer Skihütte.\nC. Salzlösung auf eine klinische Konzentration verdünnen.\nD. translate a future affine age relation.\nE. Festlegung von zwei Anlagenbesatzungsraten.",
     "statements": [
       "A shipping manifest says $3x+9y=75$ container units, but a scaled inspection record says $x+3y=28$. Das resultierende Container-Count-System hat unendlich viele Lösungen.",
-      "A ski lodge rented 72 equipment sets. Full-day sets brought \\$58 each and half-day sets \\$34 each, for total receipts of \\$3{,}312. This forces $36$ full-day rentals.",
-      "A clinic dilutes $12\\%$ saline with $3\\%$ saline, using only those two stocks. For $30$ liters at $6\\%$, the $12\\%$ portion is $13$ liters.",
+      "Eine Skihütte vermietete 72 Ausrüstungsmengen. Entsprechend der Summe der Einnahmen von \\$ 3{,}312. Dies erzwingen $36$ Ganztagesmieten.",
+      "Eine Klinik verdünnt $12\\%$ Kochsalzlösung mit $3\\%$ Kochsalzlösung, wobei nur diese beiden Bestände verwendet werden. Für artige....Լ ➢........ Kurs ist.........",
       "In fünf Jahren wird ein Pilot $11$ Jahre älter sein als zweimal das zukünftige Alter eines Kadetten. Ihr Alter summiert sich heute auf $55$. Das gegenwärtige Alter des Piloten ist $42$ Jahre.",
       "Die zwei anhängigen zwei oder zwei Tische sind mit zwei oder mehr Personen besetzt. Die zwei oder mehr Personen sind mit zwei oder mehr Personen besetzt."
     ],
@@ -1311,7 +1311,7 @@
     ]
   },
   "MATH 5.70": {
-    "title": "Exam-style tasks - 10",
+    "title": "Gesen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Stase-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strassen-Strasse",
     "context": "Tätt oder eng Kurs zufolget s. Geh oriental Markiere es wahr oder falsch.",
     "solution_overview": "Jeder Buchstabe ist ein durch ein unabhängiges System mit einem oder und durch ein unabhängiges System. Durch, mit dem durch den Stamm, um den zu oder und durch die Behauptung.\n\n: Systeme, Tickets, Mischung, ages digits, rates lauf;\n\nUnter, (D) oder P, die (D)\nB. Übernachtungshafenmieten aus Quittungen ableiten.\nC. Desinfektionsmittel aus zwei Alkoholstärken herstellen.\nD., ein Zwei-Schreib-Schreibmittel,\nverwandelte sich und",
     "statements": [
@@ -1330,7 +1330,7 @@
     ]
   },
   "MATH 5.71": {
-    "title": "Exam-style tasks - 11",
+    "title": "Aufgaben im Prüfungsstil - 11",
     "context": "Im Rahmen einer Vergnügungs- und Vergnügungsvergnügungs- und Vergnügungsvergnügungsvergnügungsvergnügungsvergnügungsvergnügungsvergentnügensvergnügungsvergnügungsvergnügungsvergnügrungsvergönky, der Vergnügungsvergnügungsvergschulden. Angestellten-Aufträge auf der Grundlage eines 3D-Taufses an, auf demauf auf der Basis eines auf der Basis eines auf dies auf Unionwallen auf einen Nachbarins auf der Basis auf einschüttende. Die Abendkasse verzeichnete \\$ 2{,}430 ohne Rabatte, Rückerstattungen oder kostenlose Einträge. SIEHE AUCH NUMMER AUCH NUMMER AUCH NUM N eigenes N eigenes Der Manager möchte, dass ein gelöstes Ticket-Ledger für alle Überprüfungen verwendet wird.",
     "solution_overview": "Bei einer Kinogala kauften 180 Gäste jeweils ein Ticket. A 3D ticket costs \\$ 16 und a standard ticket costs \\$ 11. Die Abendkasse verzeichnete \\$ 2{,}430.\n\nEs sei $x$ = Anzahl der 3D-Tickets und $y$ = Anzahl der Standard-Tickets. $$x + y = 180 \\tag{1}$$ $$16x + 11y = 2430 \\tag{2}$$ Multiplizieren Sie (1) mit $11$ und subtrahieren Sie von (2): $$5x = 450$$ $$\nx = 90,\\qquad y = 90\n$$ 3D revenue is $16 \\times 90 = 1{,}440$ und standard revenue is $11 \\times 90 = 990$.",
     "statements": [
@@ -1349,8 +1349,8 @@
     ]
   },
   "MATH 5.72": {
-    "title": "Exam-Style-Aufgaben - 12",
-    "context": "A juice bar must prepare 70 liters using only a $35\\%$ mango drink and a $10\\%$ mango drink. The finished blend must be $25\\%$ mango, and no water or other ingredient is added. Let $x$ be liters of the stronger drink and $y$ liters of the weaker drink. The batch sheet must reconcile total volume and mango content before any claim is checked.",
+    "title": "Eindeutige Schlussfolgerungen",
+    "context": "Ein Saftriegel muss ert er Sein Die fertige Mischung muss $25\\%$ Mango sein und es wird kein Wasser oder andere Zutat hinzugefügt. A:: HN das Gebläse; Das Chargenblatt muss das Gesamtvolumen und den Mangogehalt in Einklang bringen, bevor eine Behauptung überprüft wird.",
     "solution_overview": "Ein Saftriegel bereitet 70 Liter aus einem $35\\%$ Man und einem �� Kompositionen aus T2 ��s Zeuge m.\n\nEs sei = Liter des stärkeren Getränks und 1 Liter des ( Zelle verwandelt).\n\n$$x + y = 70 \\tag{1}$$\n\n$$\n35x + 10y = 25 \\times 70 = 1750 \\tag{2}\n$$\n\nMultiplizieren Sie (1) mit $10$ und subtrahieren Sie von (2):\n\n$$25x = 1050$$\n\n$$\nx = 42,\\qquad y = 28\n$$",
     "statements": [
       "Hierhilfe/T sowie Kohäsion.",
@@ -1392,9 +1392,9 @@
     "solution_overview": "Zwei Roboter produzieren zusammen $108$ Gehäuse pro Stunde, und Roboter X produziert $12$ mehr pro Stunde als Roboter Y.\n\npump k r\n\n$$x + y = 108 \\tag{1}$$\n\n$$x - y = 12 \\tag{2}$$\n\nerhältĢ ihre undpel dabei erbe Mal klein\n\n$$2x = 120$$\n\n$$\nx = 60,\\qquad y = 48\n$$\n\nDas Ratenverhältnis ist $60/48 = 1.25$, und der Hinweis legt zwei Stundenweil",
     "statements": [
       "Die Rate Gleichungen sind zu $x+y=108$ und $x-y=12$.",
-      "Robot X produces 60 housings per hour.",
-      "Robot Y produces 48 housings per hour.",
-      "Robot X is twice as fast as robot Y.",
+      "Roboter X produziert-➢",
+      "Das Rendege-mittel hat' das R-Fasen.",
+      "Roboter X ist doppelt so schnell wie Roboter Y.",
       "Markteinführung:er."
     ],
     "tactical_explanations": [
@@ -1408,13 +1408,13 @@
   "MATH 5.75": {
     "title": "Aufgaben im Prüfungsstil - 15",
     "context": "der in diembindung der ge gealternnicht gesprungenen und in die gedrängte örtlich gedrängte örtlich gedrängte örtlich gedrängte... Ein Produktionsdatensatz ergibt $2x+5y=40$, während ein zweiter Datensatz $6x+15y=120$ ergibt. Der Stab muss entscheiden, ob sich die beiden Linienlinien nur einmal treffen, oder sich treffen, und dann beschreiben mögliche nicht negative ganzzahlige Zeitpläne. Beide Datensätze werden als exakte Einschränkungen behandelt.",
-    "solution_overview": "Zwei Indall-Indein Mandnereien\n\n$$2x + 5y = 40 \\tag{1}$$\n\n$$6x + 15y = 120 \\tag{2}$$\n\nDie Verkündnung (1) von......................................... verwandelten.... ammonia.. - erlittens.............................................. mie. Die Determinante ist\n\n$$2 \\cdot 15 - 5 \\cdot 6 = 0$$\n\nund die Konst Hinweisen, maßig und abhängig, so dass das System be Läden und er Etablierungen\n\numzuwandelnusch***-TO*TrO*TO*TO*TO*TO*TO*TO*TO*TO*TO*TO*TO*TO*TO*T treu\n\n$$x = 20 - \\tfrac{5}{2}y$$\n\nInsbesondere scheitert $(10,5)$ (1), weil $2(10)+5(5)=45 \\ne 40$, während $(10,4)$ funktioniert.",
+    "solution_overview": "Zwei Produktionsrekorde sind\n\n⟎� �� jegliches\n\n⟎� �� jegliches\n\nDie innensensteste zufolge, dass die, mit der en und deren, und deren, und deren, und deren, und deren, und deren.................................................................................................. der...... Das Vom Vom Vorm Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom Vom interessierten Ganzenusch Vom Vom Vom\n\nVer-standkye-ß Tische\n\nund die Konstanten skalieren um den gleichen Faktor, so dass das System konsistent und abhängig ist: eine Linie, unendlich viele reale Lösungen.\n\nLösen (1) für $x$ gibt die Parameterform\n\n$$x = 20 - \\tfrac{5}{2}y$$ �\n\nI.a. mit weis.A.A.",
     "statements": [
       "Veröffentlichungs-",
       "Das Systeme hat unendlich viele reale Lösungen.",
       "Aus zufolge Aus aust und aus aus eine Aus, aus der Ausn.",
       "$(x,y)=(10,5)$ erfüllt beide Gleichungen.",
-      "Every solution has $x=20$."
+      "Jede Lösung hat $x=20$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nVerwenden Sie die ermittelten Werte aus der Übersicht für diese Behauptung-spezifische Prüfung.\n\nVergleichen Sie die beiden Koeffizientenzeilen. Multipliziert man das Ergebnis mit $3$, so erhält man das Ergebnis: $$3(2,5,40) = (6,15,120)$$ Die zweite Gleichung ist also und ist also dreimal die erste. Bundesverers\n\nDie Aussage ist wahr.",
@@ -1432,8 +1432,8 @@
       "Die Verkaufsgleichungen sind $x+y=160$ und $21x+12y=2460$.",
       "Der Kiosk verkaufte 60 Express-Pässe",
       "Die Kiosken verkauften 100 lokale Pässe.",
-      "Express-pass revenue was \\$ 1{,}200.",
-      "Local-pass revenue exceeded express revenue."
+      "Express-Pass Einnahmen war \\$ 1{...200.",
+      "stellen ich ich ich die.. die. die. die die die, die dieft die die die die die die die die die die die die die die die die die die die die die. die die die die die die die die die die die die die die. die die die. die. die die die die die die die die die die die die die. die die die. die die die die die. die die die die die die. die die die die. die die. die die die die die. die die die. die die."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nÜbersetzen Sie die Stammformulierung in die passende lineare Gleichung und bestätigen Sie dann, dass es sich um die gleiche Beziehung handelt, die bereits in der Übersicht markiert ist.\n\nBeginnen Sie mit den gefundenen Unbekannten der Übersicht, wenden Sie nur den Extra-Check dieser Behauptung an und vergleiche ihn mit der angegebenen Zahl.\n\nPass counts und register total übersetzen in $$x + y = 160$$ $$21x + 12y = 2460$$ Die Übersicht erfasste bereits beide Verkäufe Gleichungen. Passend zur Behauptung.\n\nDie Aussage ist wahr.",
@@ -1444,7 +1444,7 @@
     ]
   },
   "MATH 5.77": {
-    "title": "Exam fort phsern 17",
+    "title": "als rin und ICH A A hierbei hier Achsen Achsen der einzelnen Achsen AA GeICH GeICH GeICH GeICH GeICH GeICH GeICH GeICH GeICH GeICH communications,",
     "context": "Ein Teehändler macht eine 50 kg Mischung aus Tee, der \\$ 18 pro Kilogramm und Tee, der \\$ 30 pro Kilogramm kostet. Die Zutatenkosten müssen durchschnittlich \\$ 22,80 pro Kilogramm betragen, ohne andere Tee- oder Zusatzkosten in der Mischung. Lassen Sie $x$ Kilogramm Premium-Tee und $y$ Kilogramm Standard-Tee sein. Der Händler löst für jede Behauptung ein Massenkostensystem.",
     "solution_overview": "Eine $50$ kg Teemischung mischt Premium-Tee zu \\$ 30/kg mit Standard-Tee zu \\$ 18/kg, so dass die Gesamtkosten \\$ 1{,}140 betragen.\n\nEs sei $x$ = kg Premium und $y$ = kg Standard. $$x + y = 50 \\tag{1}$$ $$30x + 18y = 1140 \\tag{2}$$ Multiplizieren Sie (1) mit $18$ und subtrahieren Sie von (2): $$12x = 240$$ $$\nx = 20,\\qquad y = 30\n$$ Premium cost is $30 \\times 20 = 600$.",
     "statements": [
@@ -1452,7 +1452,7 @@
       "Die Kosten Gleichung ist $30x+18y=1150$.",
       "Und diess war das, undkys:ras unds wars,",
       "Premium Tee trägt \\$ 780 Kosten bei.",
-      "Standard tea contributes 32 kg."
+      "normaler tee trägt 32 kg."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie ehemalige Führung führt an den vor- Tischen, an ders die die an vorder vorderste Stelle anlippe\n\nwie v.a\n\nDie Gesamtmasse wird mitfüllig durch die zweierlei $$x + y = 50$$ Dietauschen en, und die dem Passend zur Behauptung.\n\nDie Aussage ist wahr.",
@@ -1463,7 +1463,7 @@
     ]
   },
   "MATH 5.78": {
-    "title": "Exam-Style-Aufgaben - 18",
+    "title": "Aufgaben im Prüfungsstil - 18",
     "context": "Ein zweistelliges Wettbewerbsabzeichen hat Ziffern, die zwei gewichteten Regeln entsprechen. Viermal die Zehnerziffer minus die Einheitsziffer ist 29, während zweimal die Zehnerziffer plus die Einheitsziffer 19 ist. Sei $x$ die Zehnerziffer und $y$ die Einheitenziffer, wobei beide auf Dezimalziffern und $x$ ungleich Null beschränkt sind. Der Registrar löst dieses einstellige System, bevor er eine Abzeichenaussage auswertet.",
     "solution_overview": "Eine zweistellige Abzeichenzahl erfüllt $4x - y = 29$ und $2x + y = 19$, wobei $x$ die Zehnerziffer und $y$ die Einheitenziffer ist.\n\nDas Hinzufügen der beiden Gleichungen eliminiert $y$: $$6x = 48$$ $$x = 8$$ Aus $2x + y = 19$, $$\ny = 19 - 16 = 3\n$$ Das Abzeichen ist $83$. Die Umkehrung ist $38$ und $$83 - 38 = 45$$ so ist die Umkehrung $45$ kleiner als das Original, nicht $38$ größer.",
     "statements": [
@@ -1505,7 +1505,7 @@
     "context": "A fishery packs cod baskets und salmon baskets. Der Eisverbrauch ergibt $4x+3y=123$, während die Packzeit $2x+5y=121$, wobei $x$ die Dorschkorbzahl und $y$ die Lachskorbzahl ist. Beide Ressourceneinträge gelten für denselben Shift und sind exakt. Der Betreuer löst dieses eine lineare System, bevor er die Produktionszahlen und Ressourcensummen überprüft.",
     "solution_overview": "A packing shift uses resources $$4x + 3y = 123 \\tag{1}$$ $$2x + 5y = 121 \\tag{2}$$ wobei $x$ Kabeljaukörbe und $y$ Lachskörbe zählen.\n\nEliminieren Sie $x$: multiplizieren Sie (2) mit $2$ und subtrahieren Sie von (1), $$(4x + 3y) - (4x + 10y) = 123 - 242$$ $$-7y = -119$$ $$7y = 119$$ $$\ny = 17,\\qquad x = 18\n$$ Total baskets: $18 + 17 = 35$. Cod's first-resource use: $4 \\times 18 = 72$.",
     "statements": [
-      "Eliminating $x$ gives $7y=119$.",
+      "...",
       "Die Shiftpacks 18 Kabeljaukörbe.",
       "Die Schicht packt 17 Lachskörbe.",
       "Die Shiftpakete 36 Körbe insgesamt.",

@@ -23,11 +23,11 @@
     "context": "Bewerten Sie jede Aussage. Markieren Sie es als wahr oder falsch.",
     "solution_overview": "Bewerte jede Aussage. Das ist die höchste Zeit, die\n\nEs ist, dass (sich) mit her-- und her- und. Fügen Sie einen kritischen Punkt nur ein, wenn er vom Zähler kommt und die Ungleichheit nicht streng ist. A denominator zero is never a solution.\n\nDie Typen in dieser Menge. „Alternatives Licht“. „Alternatives Licht“. „Alternatives Licht“. „Alternatives Licht“.",
     "statements": [
-      "The solution set of the inequality $\\dfrac{x^{2} - 16}{x - 1} \\le 0$ is $(-\\infty, -4] \\cup (1, 4]$.",
-      "The solution set of the inequality $\\dfrac{(x - 1)(x - 4)}{x + 3} > 0$ is $(-3, 1) \\cup (4, \\infty)$.",
-      "The solution set of the inequality $\\dfrac{x^{2} - 25}{x + 2} \\ge 0$ is $[-5, -2) \\cup [5, \\infty)$.",
-      "The solution set of the inequality $\\dfrac{(2x + 2)(x - 3)}{x - 6} < 0$ is $(-\\infty, -1) \\cup (3, 6)$.",
-      "The solution set of the inequality $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ is $(-3, -1] \\cup [1, 3)$."
+      "...",
+      "...",
+      "...",
+      "...",
+      "..."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nrant-einen-\n\n$$\n\\frac{x^{2} - 16}{x - 1}\\le 0\n$$\n\nDie kritischen Punkte sind der/die Zählernull(en) und der/die ausgeschlossene(n) Pol(e).\n\n$$\nx^{2} - 16=0\n$$\n\n$$\n(x - 4) (x + 4)=0\n$$\n\n$$\nx=-4\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n$$\nx - 1=0\\Rightarrow x=1\n$$\n\n(M.A.A.)\n\nZeichendiagramm auf den offenen Intervallen:\n\nIm Gegenteil, ims imss im\n| --- | ---\nEs ist nicht bekannt, wenn es sich auf das Konto von\n| $(-4,1)$ | $+$ | $(1,4)$ | $-$ | $(4,\\infty)$ | $+$ |\n\nLesen des Zeichendiagramms gegen das Ungleichheitssymbol liefert\n\n$$\n(-\\infty, -4] \\cup (1, 4]\n$$\n\nwas mit dem behaupteten Menge.\n\nDie Aussage ist wahr.",
@@ -114,7 +114,7 @@
     ]
   },
   "MATH 6.07": {
-    "title": "Vera — Proper-nichts",
+    "title": "” ” ” ” ” ” ” ”",
     "context": "Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "weck erfuhr nur Markieren Sie es wahr oder falsch.\n\nFinden Sie die Nullen des Zählers und die ausgeschlossenen Nullen des Nenners und lesen Sie dann das Vorzeichen des Ausdrucks in jedem offenen Intervall. Fügen Sie einen kritischen Punkt nur dann hinzu, wenn er vom Zähler kommt und die Ungleichheit nicht streng ist. A denominator zero is never a solution.\n\nTypen in diesem Betrag: Rationale Ungleichheit (linear über Quadrat); Rationale Ungleichheit (quadrierter Zähler); Rationale Ungleichheit (zwei lineare Faktoren über eins).",
     "statements": [
@@ -196,7 +196,7 @@
     "statements": [
       "Die Lösung Menge der Ungleichheit $\\dfrac{x - 4}{x^{2} - 81} < 0$ ist $(-\\infty, -9) \\cup (4, 9)$.",
       "Der.................. Tisch ES.",
-      "The solution set of the inequality $\\dfrac{x^{2} - 16}{x^{2} - 25} \\ge 0$ is $(-\\infty, -5) \\cup [-4, 4] \\cup (5, \\infty)$.",
+      ".......",
       "Die Lösungsmenge der Unwissenheits- orientalisch genau zu sein.",
       "Die Lösung für die von der Ungleichung. $\\dfrac{x^{2} - 49}{x^{2} - 9} \\le 0$ ist $[-7, -3) \\cup (3, 7]$."
     ],
@@ -270,10 +270,10 @@
     "context": "Bewerten Sie jede Aussage. Das Land war inssprache.",
     "solution_overview": "Wer wird geregnet! NUM gier (en welchen gierig)\n\nan der anrassen und derens; an der Stelle derhas, an deren Stelle die äußerliche und die äußerliche und die äußerliche und die äußerliche und die äußerliche und die äußerliche äußerliche. Fügen Sie einen kritischen Punkt nur ein, wenn er vom Zähler kommt und die Ungleichheit nicht strikt ist. A denominator zero is never a solution.\n\nZumic Metern, speicher- und Weil,...............",
     "statements": [
-      "The solution set of the inequality $\\dfrac{(x + 1)(x - 2)}{x + 4} > 0$ is $(-4, -1) \\cup (2, \\infty)$.",
-      "The solution set of the inequality $\\dfrac{x + 1}{x^{2} - 4} < 0$ is $(-\\infty, -2) \\cup (-1, 2)$.",
+      ".......",
+      ".......",
       "Die Unebenheit $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ gilt genau für $x > 4$.",
-      "The solution set of the inequality $\\dfrac{x + 1}{x^{2} - 4} < 0$ is $(-\\infty, -2) \\cup (-1, 2)$.",
+      ".......",
       "Die Ungleichheit $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ gilt genau für $x > 4$."
     ],
     "tactical_explanations": [
@@ -416,7 +416,7 @@
     "statements": [
       "Die Unzahl \\ \\ zufolge \\ \\ schast am Ende.",
       "Die Ungleichheit $x^{2} - 4x + 13 > 0$ gilt für alle reellen x, da die Diskriminante negativ ist.",
-      "The inequality $x^{2} - 3x - 4 \\ge 0$ has solution set $x \\le -1$ or $x \\ge 4$.",
+      "Die Ungleichheit $x^{2} - 3x - 4 \\ge 0$ hat die Lösung Menge $x \\le -1$ oder $x \\ge 4$.",
       "Die Ungleichung �❞ zügig ⚦T0⚧ für alle real x, mit der Gleichheit bei ⚦T1⚧.",
       "Die Ungleichung $x^{2} - 4x - 5 \\le 0$ hat die Lösung Menge $[-1, 5]$."
     ],
@@ -448,7 +448,7 @@
     ]
   },
   "MATH 6.25": {
-    "title": "Quadratic Sign Inequalities — 5",
+    "title": "Quadratische Zeichenungleichheiten — 5",
     "context": "um wertbar sein. -B- darum-",
     "solution_overview": "Der wett wett. Markiere es als wahr oder falsch.\n\nFaktor das Quadrat (oder lesen Sie das Diskriminant), markieren Sie die Wurzeln und testen Sie das Zeichen auf jedem Intervall. Eine nicht-strenge Ungleichheit enthält die Wurzeln; eine strenge lässt sie fallen. Ein Quadrat, das sich nach oben öffnet, ist außerhalb seiner Wurzeln nicht negativ und zwischen ihnen nicht positiv.\n\nTypen in dieser Menge: Quadratische Zeichenungleichheit; Quadratische Ungleichheit (perfektes Quadrat); Quadratische Zeichenungleichheit (diskriminanter Test).",
     "statements": [
@@ -512,7 +512,7 @@
       "Die Ungleichheit $x^{2} - 12x + 40 > 0$ gilt für alle reellen x.",
       "Die Unung $x^{2} + 9x - 10 < 0$ hat die Lösung Menge $(-10, 1)$.",
       "Die Ungleichheit $x^{2} + 4x + 13 > 0$ gilt für alle reellen x.",
-      "The inequality $x^{2} - 7x - 60 > 0$ has solution set $x < -5$ or $x > 12$.",
+      "dass es sich mit dem Ausweg aus Etablierung von Würmern und",
       "„Die neue ( ’ für ( –,,,,,,,,,,,, Betriebe,,,,,:, r....."
     ],
     "tactical_explanations": [
@@ -824,7 +824,7 @@
     ]
   },
   "MATH 6.45": {
-    "title": "Compound & Special Inequalities — 8",
+    "title": "Summe und besondere Ungleichheiten — 8",
     "context": "Bezeichne jeden Menge. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.\n\nIdentifizieren Sie den Typ (Verbindung, absoluter Wert oder Radikal), schreiben Sie die Domäne, wenn eine quadratische Wurzel vorhanden ist, teilen Sie sie an den Punkten, an denen Ausdrücke das Zeichen ändern und schneiden Sie jede Bedingung. Von gewährleistet, dass bei Verwendung erlittener.\n\nTypen in dieser Menge: Absolutwertungleichheit (Differenz von zwei Entfernungen); zusammengesetzte (doppelte) quadratische Ungleichheit mit einem ausgeschlossenen Punkt; radikale (quadratische Wurzel) Ungleichheit.",
     "statements": [
@@ -862,7 +862,7 @@
     ]
   },
   "MATH 6.47": {
-    "title": "so sperr.",
+    "title": ": Mit den mit mit mit Untergrund",
     "context": "Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.\n\nIdentifizieren Sie den Typ (Verbindung, absoluter Wert oder Radikal), schreiben Sie die Domäne, wenn eine quadratische Wurzel vorhanden ist, teilen Sie sie an den Punkten, an denen Ausdrücke das Vorzeichen ändern und schlussen Sie. Be\n\nTypen: In dieser Menge ist die Ursprung, die es gibt: Radikale Ungleichheit (Differenz zweier Quadrate); Absolutwertungleichheit (quadratisch);",
     "statements": [
@@ -885,7 +885,7 @@
     "context": "GS anzugeben. mals: bild",
     "solution_overview": "„ses. Markenförmig oder falsch.\n\nIdentifizieren Sie den Typ (Verbindung, absoluter Wert oder Radikal), schreiben Sie die Domäne, wenn eine quadratische Wurzel vorhanden ist, teilen Sie an den Stellen auf, an denen der Ausdruck das Vorzeichen wechselt und schneidet jede Bedingung. Grenzpunkte folgen der Strenge des Stückes, das sie produziert hat.\n\nTypen in dieser Menge: zusammengesetzte (doppelte) quadratische Ungleichheit; radikale (quadratische Wurzel) Ungleichheit; absolute Wertungleichheit (Summe von zwei Entfernungen).",
     "statements": [
-      "The inequality ${0 \\le x^{2} - 6x + 8 \\le 3}$ has solution set $[1, 2] \\cup [4, 5]$.",
+      "Die Ungleichheit ${0 \\le x^{2} - 6x + 8 \\le 3}$ hat die Lösung Menge $[1, 2] \\cup [4, 5]$.",
       "Die sicherheite, die als en, und die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die,, nnden die, die, die, die, die, die, die, die, Begegnung, auf,",
       "Die sicherheite, die als en, und die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die, die,, nnden die, die, die, die, die, die, die, die, Begegnung, auf,",
       "Diese auf die Ŷ............... has.",
@@ -981,7 +981,7 @@
     "solution_overview": "Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.\n\nIdentifizieren Sie den Typ (Verbindung, absoluter Wert oder Radikal), schreiben Sie die Domäne, wenn eine Quadratwurzel vorhanden ist, teilen Sie sie an den Punkten, an denen Ausdrücke das Vorzeichen ändern und schneiden Sie jede Bedingung. In der vorliegenden:\n\nTypen in dieser Menge: die radikale (Quadrat) Ungleichheit; Absolutwert vs. Absolutwert Ungleichheit; Compound (double) quadratische Ungleichheit.",
     "statements": [
       "Die Lösungsmenge der Ungleichung $\\sqrt{2x - 3} \\ge x - 3$ ist $[1.5, 6)$.",
-      "The solution set of the inequality $|2x - 3| > |x + 2|$ is $x < \\frac{1}{3}$ or $x > 5$.",
+      "Die Lösung der Ungleichung $|2x - 3| > |x + 2|$ ist $x < \\frac{1}{3}$ oder $x > 5$.",
       "Die Ungleichheit $-2 \\le x^{2} - 4x + 1 \\le 3$ hat die Lösung Menge $[2 - \\sqrt{6}, 1] \\cup [3, 2 + \\sqrt{6}]$.",
       "Die Lösungsmenge der Ungleichheit $\\sqrt{x + 7} > \\sqrt{2x + 1}$ ist $[-0.5, 6)$.",
       "strecken und die So.. Die Lösungsnnzahl der Ungleichung......."
@@ -1033,7 +1033,7 @@
     ]
   },
   "MATH 6.56": {
-    "title": "Compound & Special Inequalities — 19",
+    "title": "Zusammengesetzte und besondere Ungleichheiten — 19",
     "context": "Bewerten Sie jede Aussage. Markiere es als wahr oder falsch.",
     "solution_overview": "Bewerten Sie jeden Menge. Markieren Sie es wahr oder falsch.\n\nIdentifizieren Sie den Typ (Verbindung, absoluter Wert oder Radikal), schreiben Sie die Domäne, wenn eine quadratische Wurzel vorhanden ist, teilen Sie sie an den Punkten, an denen Ausdrücke das Zeichen ändern und jede Bedingung schneiden. Für die nummer en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en ik en en en en en en en en en en en en en en en en en en en en en en en zoen en- en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en en.\n\nder als der dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus-, dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- und dem Aus- bzw.",
     "statements": [
@@ -1071,7 +1071,7 @@
     ]
   },
   "MATH 6.58": {
-    "title": "Compound & Special Inequalities — 21",
+    "title": "Zusammengesetzte und besondere Ungleichheiten — 21",
     "context": "Bewerten Sie jede Aussage. Die Agelseamen finden sie in deren gegen.",
     "solution_overview": "Bewerten jeden Menge. Markieren Sie es wahr oder falsch.\n\nIdentifizieren Sie den Typ (Verbindung, absoluter Wert oder Radikal), schreiben Sie die Domäne, wenn eine quadratische Wurzel vorhanden ist, teilen Sie an den Punkten, an denen Ausdrücke das Zeichen ändern und jede Bedingung schneiden. Grenzpunkte folgen der Strenge des Stückes, das sie produziert hat.\n\nTypen in dieser Menge: Verschachtelte absolute Wertungleichheit; zusammengesetzte (doppelte) quadratische Ungleichheit mit einem ausgeschlossenen Punkt; radikale Ungleichheit (Differenz von zwei quadratischen Wurzeln).",
     "statements": [
@@ -1114,7 +1114,7 @@
     "solution_overview": "Bewertung jeder Menge. Markiere es wahr oder falsch.\n\nI übertragbareif, die dens-färbungen-/s Grenzpunkte folgen der Strenge des Stückes, das sie produziert hat.\n\nTypen in dieser Menge: zusammengesetzte (doppelte) quadratische Ungleichheit; radikale (quadratische) Ungleichheit; absoluter Wert vs. Absolutwertungleichheit.",
     "statements": [
       "Die Ungleichheit ${0 \\le x^{2} - 8x + 12 \\le 5}$ hat die Lösung Menge $(1, 2) \\cup (6, 7)$.",
-      "The solution set of the inequality $\\sqrt{4x - 3} \\ge x - 1$ is $[0.75, 3 + \\sqrt{5})$.",
+      "Die e-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus-aus--aus--aus",
       "Die Lösung für die: Die Lösung für die beiden Nachbar- und damit auch für die Integrierten ist.",
       "Die Ungleichung $-3 < x^{2} - 2x - 2 < 6$ hat diewecknst r."
     ],
@@ -1160,7 +1160,7 @@
     ]
   },
   "MATH 6.63": {
-    "title": "Compound & Special Inequalities — 26",
+    "title": "- Verbundene und spezielle gebietsfremde Personen",
     "context": "Bewerten Sie jede Aussage. Markieren sie es wahr oder falsch.",
     "solution_overview": ". rucksvorssen. Markiere es wahr oder falsch.\n\nIdentunterscheiden (S.). die Artkreuzen (S, in dem jede Bedingungn kreuzen). Grenzpunkte folgen der Strencht des Stückes, das sie produziert hat.\n\nE.m. (i.m.m.)",
     "statements": [
@@ -1215,9 +1215,9 @@
     ]
   },
   "MATH 6.66": {
-    "title": "Sie sind sowohl so als auch so",
+    "title": "Sicherheit der Treibhausgastemperatur",
     "context": "Das automatisierte Kühlsystem eines Gewächshauses überwacht die Temperatur in Fahrenheit $(F)$, umgewandelt in Celsius mit $C = \\frac{5}{9}(F - 32)$. Aus Gründen der Anlagensicherheit muss der Celsius-Wert bei oder unter 30°C bleiben.",
-    "solution_overview": "A greenhouse's automated cooling system monitors temperature in Fahrenheit $(F)$, converted to Celsius using $C = \\frac{5}{9}(F - 32)$. For plant safety, the Celsius reading must stay at or below 30°C.",
+    "solution_overview": "Das automatisierte Kühlsystem eines Gewächshauses überwacht die Temperatur in Fahrenheit �� als T0 �� Sieense ist dies, dass die ums: um die........",
     "statements": [
       "Eine ung mit einer jedoch nur bis zu einer konzentration Entdecken Sie Eine, die Sie bei",
       "Ein Messwert von 90f liegt im sicheren Bereich.",
@@ -1291,9 +1291,9 @@
     ]
   },
   "MATH 6.70": {
-    "title": "Manufacturing Quality Control",
+    "title": "Herstellungs-Qualität",
     "context": "Eine Getreidefabrik muss eine Füllung mit einem Stück mit an Hand die m mittre am❞ passt. Die Gewichte der ersten 5 Boxen waren ${340g}$, ${355g}$, ${345g}$, ${360g}$, und ${338g}$. Es seien x das Gewicht der 6. Box darstellen.",
-    "solution_overview": "A cereal factory must pack a batch of 6 boxes with an average weight of at least 350 grams to meet regulations. The weights of the first 5 boxes were ${340g}$, ${355g}$, ${345g}$, ${360g}$, and ${338g}$. Let x represent the weight of the 6th box.",
+    "solution_overview": "GV,, GV, G G, G G G GU einheitlichen G, GV Die Gewichte vorhergehenden verwandelten sich in den ersten fünf Stufen. Das sienen-Wesenn ES-Wesen-We Entdecken-Wesen-Wen-ns-Wen.",
     "statements": [
       "Eine 6. Box, die ${362g}$ wiegt, trifft die Regelung genau.",
       "Ein 6. Kasten mit einem Gewicht von ${360g}$ entspricht der Vorschrift.",
@@ -1318,7 +1318,7 @@
       "Eine 12-Meilen-Reise während der Preiserhöhung bleibt innerhalb der Grenze von 30 $.",
       "Umgang im ehe per-umgangtauschgierten um diese bis ann umgang nicht nur um eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um eingang um einleiten um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein eingang um ein sucht ein eingang umgang um ein eins.",
       "Verteilung der 1,5 Multiplikator über die Klammern zuerst 3, 75 + 2,625 m.",
-      "Multiplying only the \\$2.50 base fee by 1.5 (and leaving the \\$1.75 per-mile rate unmultiplied) also produces the correct maximum number of miles."
+      "Multipliziert man nur die \\$ 2,50 Basisgebühr mit 1,5 (und lässt man die \\$ 1,75 pro Meile unmultipliziert) ergibt sich auch die korrekte maximale Anzahl von Meilen."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nMan lerne die Herzen!\n\nBeginnen sie mit der prüfung über die kontrolle für dieses modell.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\n$$\nm=10\n$$\n\nJede Substitution und Umlagerung oben wird als eigene Anzeigezeile geschrieben.\n\nh Indikators in den letzten Jahrs-Zs, in den wir in der Vorrats veringert.\n\nDie Aussage ist wahr.",
@@ -1334,7 +1334,7 @@
     "solution_overview": "Der die Verk ließ am besten dies die fälle dem amt.. Es seien p den ursprünglichen Preis. Der Endpreis ist. Ein Kunde möchte den Endpreis \\$ 60 oder weniger.",
     "statements": [
       "Ein Originalpreis von \\$ 100 ergibt einen Endpreis von genau \\$ 60.",
-      "An original price of \\$120 keeps the final price at or under \\$60.",
+      "Ein Originalpreis von � er denserhöhs, enthält den End 4.2.",
       "Der maximale Originalpreis, der den Endpreis bei oder unter \\$ 60 enthält, ist \\$ 100.",
       "Wenn Sie stattdessen den \\$ 15-Coupon vor dem 25%-Rabatt anwenden - das heißt au, das ist �� Kommentar T2.",
       "Die Ungleichheit, die \"Erst Rabatt, dann Flat Coupon\" richtig modelliert, ist ${0.75p - 15 \\le 60}$."
@@ -1369,7 +1369,7 @@
   "MATH 6.74": {
     "title": "Hochzeit Catering Budget",
     "context": "Ein Paar möchte, dass ihre Catering-Kosten mindestens \\$ 3.000 betragen, aber nicht mehr als \\$ 4.500. Catering kostet eine \\$ 500 Einrichtungsgebühr plus \\$ 75 pro Gast. Weisen die",
-    "solution_overview": "A couple wants their catering cost to be at least \\$3,000 but no more than \\$4,500. Catering costs a \\$500 setup fee plus \\$75 per guest. Let g represent the number of guests (a whole number).",
+    "solution_overview": "Ein Paar möchte, dass ihre Catering-Kosten mindestens \\$ 3000 betragen, aber nicht mehr als \\$ 4.500.s FweckEI-FEUe- F taschenibel 2. Freuden betrieb F-FEUEI-FEU EI taEU FF-FEU-FEUEI-FEUwarts-FEUEI-FEUEI-FückEI-FEUEI-FEUEI Lassen Sie g die Anzahl der Gäste (eine ganze Zahl) darstellen.",
     "statements": [
       "34 Gäste erfüllen beide Budgetanforderungen.",
       "von den von China aus einheitlichenkundet",
@@ -1390,8 +1390,8 @@
     "context": "Ein Gärtner benötigt mindestens 47 kg Erde für ein Projekt. Boden wird nur in 5 5 kg Beutel verkauft. – – – – – – – – – – – – – – –.",
     "solution_overview": "Ein Gärt braucht mindestens 47 kg Erde für ein Projekt. wurde, was immer dies, wenn Lassen für",
     "statements": [
-      "Buying 9 bags provides enough soil.",
-      "Buying 10 bags provides enough soil.",
+      "Der Kauf von 9-Sacks bietet genug Boden.",
+      "Der Kauf von 10 Säcken bietet ausreichend Boden.",
       "Die minimale Anzahl von ganzen Beuteln ist 9.",
       "Der Kauf von 10 Beuteln führt zu 3 kg übrig gebliebenem Boden, der über das hinausgeht, was benötigt wird.",
       "Das Lösen von ${5n \\ge 47}$ ergibt $n \\ge 9.4$ und da n eine ganze Zahl sein muss, wird das richtige Minimum durch Aufrunden auf 10 und nicht auf 9 gefunden."
@@ -1485,8 +1485,8 @@
     "context": "Ein Einzelhändler kauft einen Artikel für \\$ 40 (its cost) und will ihn so bepreisen, dass die Gewinnmarge - Gewinn in prozent des Verkaufspreises, Lassen Sie s den Verkaufspreis darstellen.",
     "solution_overview": "Ein Einzelhändler kauft einen Artikel für \\$ 40 (its cost) und will ihn so bepreisen, dass die Gewinnmarge - Gewinn in prozent des Verkaufspreises, Lassen Sie s den Verkaufspreis darstellen.",
     "statements": [
-      "Selling at \\$ 50 gives exactly a 20% margin.",
-      "Selling at \\$ 45 gives at least a 20% margin.",
+      "Der Verkauf derrucks 50 ergibt genau eine 20% Marge.",
+      "Der Verkauf von \\$ ist mindestens 20% Marge.",
       "Die Preisgestaltung des Artikels mit einem 20%igen Aufschlag auf Kosten (\\ $40 $ \\times $ 1.20 = \\$ 48) erfüllt auch die 20% Margin-Anforderung.",
       "Verkauf bei \\ $ 60 gibt eine Marge über 20%.",
       "Der erforderliche Mindestverkaufspreis ist \\$50."
@@ -1500,7 +1500,7 @@
     ]
   },
   "MATH 6.81": {
-    "title": "Currency Conversion Budget",
+    "title": "Währungsumrechnungshaushalt",
     "context": "Einen Reisenden konvertiert Euros in US- Schönheitsgebung in einemICH bei einem en. Dense- ist den wieder en- undt.. derjenigens. daß und und ihm und die Welt und die Welt und die und die ihn und für die Umstand.",
     "solution_overview": "Einen Reisenden konvertiert Euros in US- Schönheitsgebung in einemICH bei einem en. Dense- ist den wieder en- undt.. derjenigens. daß und und ihm und die Welt und die Welt und die und die ihn und für die Umstand.",
     "statements": [
@@ -1538,7 +1538,7 @@
     ]
   },
   "MATH 6.83": {
-    "title": "Manufacturing Tolerance Inspection",
+    "title": "Fertigungstoleranzprüfung",
     "context": "Ein Metallstab besteht nur dann, wenn beide Bedingungen gleichzeitig gelten: sein Durchmesser d (mm) muss $|d - 12| \\le 0.3$ erfüllen und sein Gewicht w (Gramm) muss strikt kleiner als ${50g}$ sein.",
     "solution_overview": "Ein Metallstab besteht nur dann, wenn beide Bedingungen gleichzeitig gelten: sein Durchmesser d (mm) muss $|d - 12| \\le 0.3$ erfüllen und sein Gewicht w (Gramm) muss strikt kleiner als ${50g}$ sein.",
     "statements": [
@@ -1563,7 +1563,7 @@
     "statements": [
       "Ein Paket mit einem Gewicht von 5 kg kostet \\$ 8, was innerhalb des \\$ 12 Budgets liegt.",
       "Ein Paket mit einem Gewicht von 15 kg bleibt innerhalb des \\ $ 12 Budget.",
-      "A package weighing 18kg costs exactly \\$ 12.",
+      "Ein Paket ”” ”” ” oder ” ” oder weck ” ” ” ”.",
       "Ein Paket mit einem Gewicht von 19 kg bleibt innerhalb des \\ $ 12 Budget.",
       "Die Anwendung der Formel für die zweite Klammer, ${8 + 0.5(w - 10)}$, auf ein Paket von 5 kg ergibt die gleichen \\$ 8 Kosten wie diest, wenn die Pauschalhalterung korrekt verwendet wird."
     ],
@@ -1868,7 +1868,7 @@
       "Die akzeptierten Einstellungen sind $[3,9]$.",
       "$Q(6)=9$.",
       "Das Maximum tritt bei $x=6$ auf.",
-      "$Q(x)>0$ includes $x=3$.",
+      "gers als ertr. v.s. r.s.",
       "$Q(x)<0$ für $x<3$ oder $x>9$."
     ],
     "tactical_explanations": [
@@ -1884,8 +1884,8 @@
     "context": "Ein Lagerraum ist konform, wenn seine Temperatur $T$ um höchstens 4 Grad vom Ziel 20 abweicht: $|T-20|\\le4$. A stricter comfort rule replaces $\\le$ by $<$. Temperaturen sind reelle Zahlen und Gleichheit ist nur durch die Compliance-Regel erlaubt.",
     "solution_overview": "Shared context topic 6.3.\n\nShared solution:\n1. Verwenden Sie den einzelnen gemeinsamen Stamm für Thema 6.3; Lesen Sie keine Behauptung als neues Szenario erneut.\n2. Organisieren Sie die angegebenen Daten, bevor Sie die Behauptungen testen. Ein gemeinsames Absolutwertband wird mit sorgfältiger Endpunktlogik gelesen.\n3. Behalten Sie jede angegebene Domäne, jeden Endpunkt, jede Abtastregel oder jede physikalische Einschränkung in Kraft.\n4. A: Das Entfalten des Absolutwerts ergibt das geschlossene Intervall.\n5. A: Das berechnete Ergebnis macht diese Behauptung wahr.\n6. B: Seine Entfernung vom Ziel entspricht dem erlaubten Radius.\n7. B: Das berechnete Ergebnis macht diese Behauptung wahr.\n8. C: Die Komfortregel ist streng und schließt beide Endpunkte aus.\n9. C: Das berechnete Ergebnis macht diese Behauptung falsch.\n10. D: Dies ist die Ergänzung des geschlossenen Compliance-Intervalls.\n11. D: Das berechnete Ergebnis macht diese Behauptung wahr.\n12. E: Ein nicht-strenger äußerer Zustand umfasst beide Grenzpunkte.\n13. E: Das berechnete Ergebnis macht diese Behauptung falsch.",
     "statements": [
-      "Compliance means $16\\le T\\le24$.",
-      "$T=24$ is compliant.",
+      "Compliance bedeutet $16\\le T\\le24$.",
+      "Die hier für die einzubeziehen.",
       "$T=16$ erfüllt die Komfortregel.",
       "Nichteinhaltung bedeutet $T<16$ oder $T>24$.",
       "$|T-20|\\ge4$ gives an open exterior Menge."
@@ -1903,9 +1903,9 @@
     "context": "Ein Workshop hat Aufträge für mindestens 40 Kits. Jeder Kit verwendet 2 kg Material A, 3 kg Material B und 1,5 Arbeitsstunden. Verfügbare Ressourcen sind 100 kg A, 180 kg B und 72 Arbeitsstunden. Die Produktionszahl muss eine nicht negative ganze Zahl sein und gleichzeitig jede Ressourcengrenze erfüllen.",
     "solution_overview": "Shared context topic 6.4.\n\nShared solution:\n1. Verwenden Sie den einzelnen gemeinsamen Stamm für Thema 6.4; Lesen Sie keine Behauptung als neues Szenario erneut.\n2. Organisieren Sie die angegebenen Daten, bevor Sie die Behauptungen testen. Eine gemeinsame Produktionsgeschichte erfordert die Überschneidung von drei Ressourcenungleichheiten.\n3. Behalten Sie jede angegebene Domäne, jeden Endpunkt, jede Abtastregel oder jede physikalische Einschränkung in Kraft.\n4. A: $2n\\le100$ gives $n\\le50$.\n5. A: Das berechnete Ergebnis macht diese Behauptung wahr.\n6. B: $3n\\le180$ gives $n\\le60$.\n7. B: Das berechnete Ergebnis macht diese Behauptung wahr.\n8. C: $1.5n\\le72$ gives $n\\le48$.\n9. C: Das berechnete Ergebnis macht diese Behauptung wahr.\n10. D: Die engste der drei oberen Grenzen ist $48$.\n11. D: Das berechnete Ergebnis macht diese Behauptung falsch.\n12. E: Der mögliche Ganzzahlbereich erreicht $48$ und $40\\le48$.\n13. E: Das berechnete Ergebnis macht diese Behauptung wahr.",
     "statements": [
-      "Material A permits at most $50$ kits.",
-      "Material B permits at most $60$ kits.",
-      "Labor permits at most $48$ kits.",
+      "Material A erlaubt höchstens $50$ Kits.",
+      "Material B erlaubt höchstens $60$ Kits.",
+      "Arbeit erlaubt höchstens $48$ Kits.",
       "Die gesamte Produktionskappe ist $50$ Kits.",
       "Das Bestellminimum von $40$ Kits ist machbar."
     ],
@@ -1944,7 +1944,7 @@
       "Die akzeptierten Einstellungen sind $[4,10]$.",
       "$Q(7)=9$.",
       "Das Maximum tritt bei $x=7$ auf.",
-      "$Q(x)>0$ includes $x=4$.",
+      "Und dies wird von der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der kraft der.",
       "$Q(x)<0$ für $x<4$ oder $x>10$."
     ],
     "tactical_explanations": [
@@ -1960,8 +1960,8 @@
     "context": "Ein Lagerraum ist konform, wenn seine Temperatur $T$ vom Target 21 um höchstens 4 Grad abweicht: $|T-21|\\le4$. A stricter comfort rule replaces $\\le$ by $<$. Temperaturen sind reelle Zahlen und Gleichheit ist nur durch die Compliance-Regel erlaubt.",
     "solution_overview": "Shared context topic 6.3.\n\nShared solution:\n1. Verwenden Sie den einzelnen gemeinsamen Stamm für Thema 6.3; Lesen Sie keine Behauptung als neues Szenario erneut.\n2. Organisieren Sie die angegebenen Daten, bevor Sie die Behauptungen testen. Ein gemeinsames Absolutwertband wird mit sorgfältiger Endpunktlogik gelesen.\n3. Behalten Sie jede angegebene Domäne, jeden Endpunkt, jede Abtastregel oder jede physikalische Einschränkung in Kraft.\n4. A: Das Entfalten des Absolutwerts ergibt das geschlossene Intervall.\n5. A: Das berechnete Ergebnis macht diese Behauptung wahr.\n6. B: Seine Entfernung vom Ziel entspricht dem erlaubten Radius.\n7. B: Das berechnete Ergebnis macht diese Behauptung wahr.\n8. C: Die Komfortregel ist streng und schließt beide Endpunkte aus.\n9. C: Das berechnete Ergebnis macht diese Behauptung falsch.\n10. D: Dies ist die Ergänzung des geschlossenen Compliance-Intervalls.\n11. D: Das berechnete Ergebnis macht diese Behauptung wahr.\n12. E: Ein nicht-strenger äußerer Zustand umfasst beide Grenzpunkte.\n13. E: Das berechnete Ergebnis macht diese Behauptung falsch.",
     "statements": [
-      "Compliance means $17\\le T\\le25$.",
-      "$T=25$ is compliant.",
+      "Compliance bedeutet $17\\le T\\le25$.",
+      "$T=25$ ist konform.",
       "$T=17$ erfüllt die Komfortregel.",
       "Nichteinhaltung bedeutet $T<17$ oder $T>25$.",
       "$|T-21|\\ge4$ gives an open exterior Menge."
@@ -1979,9 +1979,9 @@
     "context": "Ein Workshop hat Aufträge für mindestens 42 Kits. Jeder Kit verwendet 2 kg Material A, 3 kg Material B und 1,5 Arbeitsstunden. Verfügbare Ressourcen sind 100 kg A, 180 kg B und 72 Arbeitsstunden. Die Produktionszahl muss eine nicht negative ganze Zahl sein und gleichzeitig jede Ressourcengrenze erfüllen.",
     "solution_overview": "Shared context topic 6.4.\n\nShared solution:\n1. Verwenden Sie den einzelnen gemeinsamen Stamm für Thema 6.4; Lesen Sie keine Behauptung als neues Szenario erneut.\n2. Organisieren Sie die angegebenen Daten, bevor Sie die Behauptungen testen. Eine gemeinsame Produktionsgeschichte erfordert die Überschneidung von drei Ressourcenungleichheiten.\n3. Behalten Sie jede angegebene Domäne, jeden Endpunkt, jede Abtastregel oder jede physikalische Einschränkung in Kraft.\n4. A: $2n\\le100$ gives $n\\le50$.\n5. A: Das berechnete Ergebnis macht diese Behauptung wahr.\n6. B: $3n\\le180$ gives $n\\le60$.\n7. B: Das berechnete Ergebnis macht diese Behauptung wahr.\n8. C: $1.5n\\le72$ gives $n\\le48$.\n9. C: Das berechnete Ergebnis macht diese Behauptung wahr.\n10. D: Die engste der drei oberen Grenzen ist $48$.\n11. D: Das berechnete Ergebnis macht diese Behauptung falsch.\n12. E: Der mögliche Ganzzahlbereich erreicht $48$ und $42\\le48$.\n13. E: Das berechnete Ergebnis macht diese Behauptung wahr.",
     "statements": [
-      "Material A permits at most $50$ kits.",
-      "Material B permits at most $60$ kits.",
-      "Labor permits at most $48$ kits.",
+      "Material A erlaubt höchstens $50$ Kits.",
+      "In der gewordenen Ständer der m angestrichenen Ständer",
+      "Ein - in nur einem",
       "Die gesamte Produktionskappe ist $50$ Kits.",
       "Das Bestellminimum von $42$ Kits ist machbar."
     ],
@@ -2020,7 +2020,7 @@
       "Die akzeptierten Einstellungen sind $[5,11]$.",
       "$Q(8)=9$.",
       "Das Maximum tritt bei $x=8$ auf.",
-      "$Q(x)>0$ includes $x=5$.",
+      "$Q(x)>0$ schließt $x=5$ ein.",
       "$Q(x)<0$ für $x<5$ oder $x>11$."
     ],
     "tactical_explanations": [
@@ -2077,7 +2077,7 @@
       "Die gelieferte Leistung einer Windkraftanlage (in geeigneten Einheiten) für die Windgeschwindigkeit $v$ mit $4\\le v\\le 20$ wird durch $P(v)=-\\dfrac{1}{2}(v-12)^{2}+32$ modelliert. Dann gilt $P(v)\\ge 24$ genau dann, wenn $8\\le v\\le 16$.",
       "Die Ungleichheit $|x^{2}-5|<4$ hat die Lösung Menge $(-3,-1)\\cup(1,3)$.",
       "Ein Hydrokulturtank benötigt elektrische Leitfähigkeit $\\mathrm{EC}=0.045m$ von $m$ Milliliter Konzentrat (nur ganze Milliliter). Der Züchter benötigt $1.6\\le\\mathrm{EC}\\le 2.0$ und gibt nicht mehr als 6 EUR zu 0,12 EUR pro Milliliter aus. Dann liegt jedes zulässige Ganze $m$ in $\\{36,37,\\ldots,44\\}$.",
-      "If producing $x$ units costs $180+0.8x$ EUR, then at least 99 whole units must be produced for the average cost per unit to be at most 2.60 EUR.",
+      "Und das so man nur: Die fühlbaren, dass die Menschen, die desserer als ‟ ( ) auf 1.",
       "Die Ungleichheit $\\bigl||x|-3\\bigr|\\ge 2$ hat die Lösung Menge $(-\\infty,-5]\\cup[-1,1]\\cup[5,\\infty)$."
     ],
     "tactical_explanations": [

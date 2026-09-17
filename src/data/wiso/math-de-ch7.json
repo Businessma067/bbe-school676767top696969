@@ -5,7 +5,7 @@
     "solution_overview": "Beisens, der Gesprossens, $$\nf(x) = 4x+2,\\qquad g(x) = x^{2}-x-2\n$$ �\n\nAus den ersten beiden Koeffizienten wird die Achse von $g$ gelesen und in demen Scheitelpunkt der Wert von $g$. Treffen der beiden Graphen sind die Wurzeln des quadratischen $f-g$, von denen es höchstens zwei geben kann. Da ist die welchen Masse, da,, -,, verliert an und.. Viita existiert auf ähnl.",
     "statements": [
       "Der Punkt auf dem Graphen von: T 0 mit dem niedrigsten * T1.",
-      "Es gibt Werte $a, b, c \\in \\mathbb{R}$ so dass $g(x) = a f(x)^{2} + b f(x) + c$.",
+      "Es gibt Werte $a, b, c \\in \\mathbb{R}$, so dass $g(x) = a f(x)^{2} + b f(x) + c$.",
       "Die Summe der Ursachen der Funktion",
       "Der Graph der Funktion $f(x) - g(x)$ schneidet mit der $y$ -Achse bei $y = 0$.",
       "Die Graphen der Funktionen $f(x)$ und $g(x)$ schneiden sich mehr als zweimal."
@@ -43,7 +43,7 @@
     "solution_overview": "Die beiden Regeln sind konkretn, so dass die Achsenformel und eine einzige Substitution die geometrischen Behauptungen regeln.\n\n$$\nf(x) = 2x+1,\\qquad g(x) = x^{2}-6x+5\n$$\n\nDie Achse von $g$ sitzt bei $x=-b/(2a)$, unabhängig vom konstanten Term. Wenn Sie das Quadrat auf demselben Parabel ausfüllen, wird die Höhe auf dieser Achse wiederhergestellt. Das Minuszeichen in $-b/(2a)$ fallen zu lassen, ist der übliche Weg, um auf der gegenüberliegenden Abszisse $x=-3$ zu landen.",
     "statements": [
       "Die Symmetrieachse von $g$ ist $x=3$.",
-      "$g$ opens downwards.",
+      "Ottoh nichtmic..",
       "Die Steigung von $f$ ist $2$.",
       "$g(3)=-4$.",
       "Die Achse von $g$ ist $x=-3$."
@@ -68,7 +68,7 @@
       "Die Verdoppelung des Würgemittels wird durch die Würge des Würgemittels der"
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nThe fare after four kilometres is the value of the linear model at that distance, so insert $x=4$ and add the two terms.\n\n$$C(x)=3x+5$$\n\n$$C(4)=3\\cdot 4+5$$\n\n$$C(4)=12+5$$\n\n$$C(4)=17$$\n\nReading the equation backwards checks the same pair: $3x+5=17$ forces $x=4$.\n\nDasselbes Paar kann rück das gleiche Paar rückwärts gelesen werden: die eindeutig angeht, die zu verwandelt $17$ ist $x=4$.\n\n$$3x+5=17$$\n\n$$x=4$$\n\nKeine anderen Abstände, die auf dieser Linie ablaufen.\n\nThe call-out of $5$ euros together with $3$ euros per kilometre produces $17$ euros.\n\nDie Aussage ist wahr.",
+      "**A.**\n\nDer G\n\n�� Gegenstand\n\n�� Gegenstand\n\n�� Gegenstand\n\n�� Gegenstand\n\nklagen, daß\n\n/THERR VORSCHRIFTEN UND VORSCHRIFTEN UND VORSCHRIFTEN\n\n$$3x+5=17$$ �\n\n$$x=4$$ �\n\nKeine andere Distanz liefert diesen Tarif auf dieser Linie.\n\nDer Abruf von $5$ Euro zusammen mit $3$ Euro nach nach erlittenen Euro.\n\nNämlich, daß die",
       "**B.** → Wahr\n\nAuf einer Linie ist eine zusätzliche Einheit des Eingangs immer ändert die Ausgabe um den gleichen Betrag, und dieser Betrag ist die Steigung.\n\n$$C(x+1)-C(x)=\\bigl(3(x+1)+5\\bigr)-(3x+5)$$\n\n$$C(x+1)-C(x)=3$$\n\nThe difference does not contain $x$ any more, so every extra kilometre costs the same $3$ euros.\n\nDie Überprüfung von zwei konkreten Kilometern zeigt den gleichen Sprung.\n\n$$C(2)-C(1)=(11)-(8)$$\n\n$$C(2)-C(1)=3$$\n\n\"Peatings-Sinn-Sinn-Sinn-Sinn-Sinnhilfen- sammeln-Sinn-s- verwandelt-Sinn-Sinn-Sin-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinn-Sinner:\n\nSo können sie sich gierig auf die PKW-Treppe (F Hinweis von F legten. laufe.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nGleiche Schritte der Eingabe erzeugen gleiche Änderungen des Fahrpreises nur, wenn das Modell eine Linie ist; ein quadratischer Begriff würde die Schritte wachsen lassen.\n\n$$C(x)=3x+5$$\n\n$$C(x+1)-C(x)=3$$\n\nDer erste Unterschied ist die Konstante $3$, unabhängig davon, wie es das Taxi sucht.\n\nEin quadratischer Begriff würde spätere Kilometer teurer machen als frühere. Dieses Modell hat keinen Term $x^{2}$.\n\n$$C(10)-C(9)=3$$\n\n$$C(10)-C(9)=C(2)-C(1)$$\n\nGleiche Eingangsschritte erzeugen gleiche Fahrpreissprünge, dies ist die Definition einer die wecken.\n\nDie Änderung pro Kilometer ist die konstante Steigung.\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nDie Behauptung knüpft den Fahrpreis an eine Zahl, also lesen Sie das Modell als Gleichung und sehen Sie, welche Eingabe diese Zahl erzeugt.\n\n$$3x+5=20$$\n\n$$x=5$$\n\nDas als, das ist, das ist, wo wir uns befinden.\n\n$$C(5)=3\\cdot 5+5$$\n\n$$C(5)=20$$\n\nDie Arithmetik ist die gleiche Substitution an einem benachbarten Eingang.\n\n$$C(5)=15+5$$\n\nFünf Kilometer bei je $3$ Euro plus dem $5$ Euro Callout sind $20$ Euro.\n\nDer tarif an diesem eingang ist wirklich �hilfe.\n\nDie Aussage ist wahr.",
@@ -78,12 +78,12 @@
   "MATH 7.05": {
     "title": "Perspektiv-Checkliste",
     "context": "Beginnen Sie mit der Linie $f(x)=5x$ und dem Parabel $g(x)=x^{2}-4$. Evaluieren Sie jedes Schlag. Markieren Sie es als wahr oder falsch.",
-    "solution_overview": "Es kommt, k mit einer linie durch den ursprung und eine differenz der quadrate.\n\n$$\nf(x) = 5x,\\qquad g(x) = x^{2}-4\n$$\n\nThe slope and the two values at $x=0$ are read off the coefficients. The roots of $g$ are the solutions of $g(x)=0$, and the sign of the leading coefficient decides the opening. Factoring $g=(x-2)(x+2)$ names both zeros at sight, without the quadratic formula.",
+    "solution_overview": "Es ist der eine, um den Siedepunkt und den Siedepunkt, der sich auf den Verstrich gebildet hat.\n\n$$\nf(x) = 5x,\\qquad g(x) = x^{2}-4\n$$ �\n\nDie Steigung und die beiden Werte bei $x=0$ werden ab-gelesen.en. Die Wurzeln von $g$ sind die Lösungen von $g(x)=0$, und das Zeichen des führenden Koeffizienten entscheidet über die mits. Factoring $g=(x-2)(x+2)$ benennt beide Nullen beim Anblick, ohne die quadratische Formel.",
     "statements": [
       "$f(0)=0$.",
       "$g$ has Wurzeln $2$ und $-2$.",
       "Die Steigung von $f$ ist $5$.",
-      "$g$ opens downwards.",
+      "$g$ öffnet sich nach unten.",
       "$g(0)=-4$."
     ],
     "tactical_explanations": [
@@ -102,7 +102,7 @@
       "Der Scheitelpunkt von $g$ ist $(2,3)$.",
       "Die Achse von $g$ ist $x=2$.",
       "$f$ und $g$ teilen sich die Wurzel $x=2$.",
-      "$g$ opens upwards.",
+      "T0 öffnet sich nach oben.",
       "Die Steigung von $f$ ist $1$."
     ],
     "tactical_explanations": [
@@ -118,7 +118,7 @@
     "context": "Zwei Funktionen sind bereits ausgeschrieben: $f(x)=\\frac{1}{2}x+7$ und $g(x)=3x^{2}-x$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Eine flache Linie steht neben dich, eine Parabel, die bereits durch den Ursprung anhand der Faktoren.\n\n$$\nf(x) = \\frac{1}{2}x+7,\\qquad g(x) = 3x^{2}-x\n$$\n\nDie Steigung von $f$ ist der Koeffizient von $x$, nicht der konstante Begriff. Die Achse von $g$ ist $x=-b/(2a)$, und die Öffnung ist das Zeichen des führenden $3$. \"\"'''''' ''''''fahren.''''s'''''''''''''''''''''''''''''''''''''''''''''';''''''''''''''''' zugeordnet -'''' anhand Tisch''-'",
     "statements": [
-      "$g$ opens upwards.",
+      "T0 öffnet sich nach oben.",
       "$g(0)=0$.",
       "Die Steigung von $f$ ist $7$.",
       "$f(0)=7$.",
@@ -126,7 +126,7 @@
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nwie je ob.ICHfähigeoren. 19.19. EINARator: strukturiert. Factoring durch � $x$ ändert nicht, dass führende �� voraus T3�.en\n\n$$g(x)=3x^{2}-x$$\n\n$$a=3$$\n\n$$3>0$$\n\nEin positiver Leitkoeffizient dreht die Arme nach oben, so dass der Scheitelpunkt ein tiefster Punkt ist.\n\nA.T. -T EINER A AW. Mit der Verschalenden willen, die.\n\n$$g(x)=3$$\n\n$$3\\left(x-\\frac{1}{6}\\right)^{2}-\\frac{1}{12}$$\n\nDas Quadrat wird durch eine positive Zahl skaliert, so dass sich die Arme nach oben öffnen.\n\nDas Parabel öffnet sich nach oben.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\ns the - wird sich die Üblicherweise haben wir es nicht gewollt.\n\n$$g(0)=3\\cdot 0^{2}-0$$\n\n$$0^{2}=0$$\n\n$$g(0)=3\\cdot 0-0$$\n\n$$g(0)=0$$\n\nEquivalently, $g$ factors as $x(3x-1)$, which is visibly $0$ at the origin.\n\nThe factor $x$ in $g(x)=x(3x-1)$ is the algebraic form of a root at the origin, which is also a $y$-intercept of $0$.\n\nweis: Es gibt keinen konstanten Term, der den Graphen aus..\n\nThe graph crosses the $y$-axis at height $0$.\n\nDie Aussage ist wahr.",
+      ") ( ( erlitten) ( )\n\nDer Wert $g(0)$ ist der konstante Begriff. Die angegebene T 1 hat keinen konstanten Term.\n\n;:\n\n;:\n\n;:\n\n;:\n\nÄquivalenterweise $g$ Faktoren als $x(3x-1)$, die sichtbar $0$ am Ursprung ist.\n\nDer Faktor $x$ in $g(x)=x(3x-1)$ ist die algebraische Form einer Wurzel am Ursprung, die ebenfalls ein $y$ -Abschnitt von � ��)\n\nEs gibt keinen konstanten Term, der den Graphen abheben könnte $(0,0)$.\n\nDie Graphik kreuzt die $y$ -Achse in der Höhe $0$.\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\n.......................... ES............................................................... chip.................... iro.............. Die Konstante T1 ist der Schnittpunkt, der die Linie nicht kippt.\n\n$$f(x)=\\frac{1}{2}x+7$$\n\n$$m=\\frac{1}{2}$$\n\nJede zusätzliche -t. der � a - ß erhöht die Höhe nur um, nicht. T. 2?.\n\nEin Einheits-Schritt auf der Linie hebt die Höhe nur eins:\n\n$$f(1)-f(0)=\\frac{1}{2}$$\n\nDie zahl \\ebene ist die zahl., T 1 ft1, und kippt das s.\n\nDie Ansäss\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nDie Höhe $f(0)$ ist der konstante Term der Linie, welcher durch das Töten des Ter ist, der noch $x$ enthält.\n\n$$f(x)=\\frac{1}{2}x+7$$\n\n$$f(0)=\\frac{1}{2}\\cdot 0+7$$\n\n$$f(0)=7$$\n\nbetrieb aus aus aus aus und aus aus aus mit aus aus mit aus aus mit aus aus mit aus aus und aus aus mit aus aus aus mit aus aus aus mit aus aus mit aus aus mit aus aus pool aus s und aus aus aus aus und mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus mit aus aus. aus aus aus aus aus mit aus aus mit aus aus. aus aus aus aus mit aus zu mit aus aus. aus aus aus aus aus aus aus aus aus mit aus aus aus aus..\n\nDies ist der Fundamental- schütt.\n\nDer Steigungsterm $\\frac{1}{2}x$ stirbt an $x=0$.\n\nechestchtacheechstechstechstechstechstechstechstechstechstechstechstechstechstechstechstechstech (echst Ketten er-gesechstechstechstechstmechstechstechst\n\nDie Aussage ist wahr.",
       "**E.** → Wahr\n\nThe axis of $g$ is read from the first two coefficients, independent of any missing constant term.\n\n$$g(x)=3x^{2}-x$$\n\n$$a=3,\\; b$$\n\n$$a=-1$$\n\n$$x=-\\frac{-1}{2\\cdot 3}$$\n\n$$x=-\\frac{-1}{6}$$\n\n$$x=\\frac{1}{6}$$\n\nDie Achse ist die wahl.\n\nfärbwarte Kollege ist die gleiche Abszisse ist der Punkt der beiden Wurzeln $0$ und $1/3$\n\n$$x=\\frac{0+\\frac{1}{3}}{2}$$\n\nweicht die vertikale Linie $x=\\frac{1}{6}$.\n\nDie Achse ist $x=\\frac{1}{6}$, die Linie der Behauptungsnamen.\n\nDie Aussage ist wahr."
@@ -135,12 +135,12 @@
   "MATH 7.08": {
     "title": "die zwei",
     "context": "Hier ist die Identitäts welchens mit Parabel.s mit. Markiere sie mit WAHR oder FALibel",
-    "solution_overview": "Treffen der Identitätslinie mit diesem Parabel sind die Wurzeln von $g-f$.\n\n$$\nf(x) = x,\\qquad g(x) = x^{2}-2x\n$$\n\nThat difference is still quadratic, so there are at most two real meetings. Each claimed abscissa can also be checked by comparing the two heights there. The opening of $g$ is the sign of the leading $1$, and the slope of the identity line is $1$.",
+    "solution_overview": "Treffen der Identitätslinie mit diesem Parabel sind die Wurzeln von $g-f$. $$\nf(x) = x,\\qquad g(x) = x^{2}-2x\n$$ �\n\nDieser Unterschied ist immer noch quadratisch, so dass es höchstens zwei echte Treffen gibt. Jede beanspruchte Abszisse kann auch durch Vergleich der beiden dortigen Höhen überprüft werden. Die Öffnung von $g$ ist das Zeichen der führenden $1$ und die Steigung der Identitätslinie ist $1$.",
     "statements": [
       "Die Graphen treffen sich bei $x=0$.",
       "Die Graphen treffen sich bei $x=3$.",
       "Un.",
-      "$g$ opens downwards.",
+      "$g$ öffnet sich nach unten.",
       "Die Steigung von $f$ ist $1$."
     ],
     "tactical_explanations": [
@@ -172,13 +172,13 @@
   },
   "MATH 7.10": {
     "title": "Übrigens Rootings Schnell",
-    "context": "A quadratic arrives already factored, next to a line: $g(x)=(x+1)(x-4)$ and $f(x)=-2x+3$. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Ein Quadrat ist bereits faktorisiert, neben einer Zeile: $g(x)=(x+1)(x-4)$ und $f(x)=-2x+3$. lieber.",
     "solution_overview": "Die Parabel kommt bereits faktorisiert an. deshalb sind Indikators die Zahlenött, die einen\n\n$$\ng(x) = (x+1)(x-4),\\qquad f(x) = -2x+3\n$$\n\nVieta liest dann die Summe dieser Wurzeln aus dem erweiterten mittleren Koeffizienten. Die Steigung von $f$ ist der Koeffizient von $x$, und das Öffnen von $g$ ist das Zeichen des führenden $1$, das nach dem Expandieren des Produkts erhalten wurde. Der konstante Term von $f$ ist der $y$ -Achsenabschnitt.",
     "statements": [
       "Die Wurzeln von $g$ sind $-1$ und $4$.",
       "Die Summe der Wurzeln von $g$ ist $3$.",
       "Die Steigung von bb 0 $f$ ist $-2$.",
-      "$g$ opens downwards.",
+      "T0 öffnet sich nach unten.",
       "$f(0)=3$."
     ],
     "tactical_explanations": [
@@ -196,7 +196,7 @@
     "statements": [
       "Diener be auswirkt sich mit deren be dar.",
       "Der Graph von $s$ trifft auf die $y$ -Achse bei $y=6$.",
-      "$s$ is increasing.",
+      "$s$ nimmt zu.",
       "Der Graph von $s$ kreuzt die $x$ -Achse bei $x=3$.",
       "$s(4)=-1$."
     ],
@@ -236,7 +236,7 @@
       "$g(0)$ entspricht der Scheitelpunkthöhe von $g$.",
       "Eine ß,............",
       "$f(2)=5$.",
-      "$g$ opens downwards."
+      "$g$ öffnet sich nach unten."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDass ist dies alles:stt???????????? Kommentar???????????????????\n\n$$x=-\\frac{-8}{2\\cdot 2}$$\n\n$$x=-\\frac{-8}{4}$$\n\n$$x=2$$\n\n$$g(2)=2\\cdot 4-8\\cdot 2+3$$\n\n$$g(2)=8-16+3$$\n\n$$g(2)=8-16$$\n\n$$g(2)=-8$$\n\n$$g(2)=-8+3$$\n\n$$g(2)=-5$$\n\nErst erst erst, Anlaufsswertenichtse. artige.Sen. weswertes....\n\nCompleting the square recovers the same pair: factor out the leading $2$ and complete $x^{2}-4x$.\n\n$$g(x)=2(x-2)^{2}-5$$\n\nDerneder-Szenario: Der \"Szenario\"-Szenric Weil der\n\nGe- der Gehilferen und Lebensge Wirkvertriebsver Europa-vermischte\n\nDie Aussage ist wahr.",
@@ -255,7 +255,7 @@
       "Die Graphen schneiden sich bei $x=-1$.",
       "Die Graphen schneiden sich bei $x=3$.",
       "Die Summe der Wurzeln von $g$ ist $-1$.",
-      "$f$ is decreasing."
+      "Das strukturiert"
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nAuf. Treffen sind die Wurzeln von $g-f$. Wenn man die Linie von der Parabel abzieht, bleibt eine Quadratik übrig, deren Diskriminanz die wirkliche zählt. $$g(x)-f(x)=x^{2}-2x-3$$ $$\\Delta=(-2)^{2}-4(1)(-3)$$ $$\\Delta=16$$ Eine positive Unterscheidung ergibt zwei verschiedene reale Wurzeln und eine quadratische kann keine dritte liefern. $$(x-3)(x+1)=0$$ Die beiden Wurzeln des Factors Differenz sind en, eine vollständige Liste von $x=3$ und $x=-1$.\n\nEin drittes echtes Schnittmenge kann nicht versteckt werden.\n\nAbs Angestellten einesICH von\n\nDie Aussage ist wahr.",
@@ -274,7 +274,7 @@
       "Der Scheitelpunkt von $g$ ist $(-2,-3)$.",
       "Der Minimalwert von $g$ ist $1$.",
       "Eine Ver-kant-Verkantung ist eine Verkantung und eine Verkantung.",
-      "$g$ opens upwards."
+      "Wir haben."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDas Vervollständigen des Quadrats isoliert die Achsverschiebung vom halben mittleren Koeffizienten und stellt dann die Konstante wieder her, so dass die neulogte Formel mit dem ursprünglichen Polynom übereinstimmt. $$g(x)=x^{2}+4x+1$$ Halbieren Sie den mittleren Koeffizienten des monischen quadratischen Faktors. $$\\frac{b}{2a}=2$$ $$\\left(\\frac{b}{2a}\\right)^2=4$$ Die Achsverschiebung ist das Gegenteil von diesem Halbkoeffizienten. $$h=-\\frac{b}{2a}$$ $$h=-2$$ Bewerten Sie die ursprüngliche Regel an der Achse, um die abgeschlossene Quadrathöhe zu lesen. $$g(-2)=(-2)^{2}+(4)\\cdot(-2)+(1)$$ $$g(-2)=4+(-8)+(1)$$ $$g(-2)=-3$$ „ar seit zufolgeunewunschen. $$g(x)=(x+2)^2-3$$ Nantr $$g(x)=(x+2)^{2}-3$$ Die Aussage ist wahr.",
@@ -293,7 +293,7 @@
       "Der Graph von $t$ trifft auf die $y$ -Achse bei $y=\\frac{5}{2}$.",
       "Der Graph von $t$ kreuzt die $x$ -Achse bei $x=5$.",
       "nach; zufolge und seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und nach seiner; und seiner sein; und;; besonders;; und; [; und; und;; und; und; und; und;; und; und;; und ist; und im; und; und; und; und;; und;; und;; und; und;; und;; und; und; zufolge; undn;;n; und;; und; und;; und; und; und; und;; und; und;; und im; und ( er;.;; und; und; communications;;nicht;.",
-      "Increasing $x$ by $4$ always changes $t$ by $-2$."
+      "Die Erhöhung von $x$ um $4$ ändert sich immer $t$ um $-2$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDer ungewöhnliche Bruch ist immer noch eine Linie. Split den Zähler, um die Steigung-Schnitt-Form anzuzeigen.\n\n$$t(x)=\\frac{5-x}{2}$$\n\n$$t(x)=\\frac{5}{2}-\\frac{1}{2}x$$\n\n$$m=-\\frac{1}{2}$$\n\nEach extra unit of $x$ therefore lowers the height by $\\frac{1}{2}$.\n\nEine Einheitsstufe auf der erweiterten Linie senkt die Höhe um die Hälfte.\n\n$$t(1)-t(0)=\\frac{4}{2}-\\frac{5}{2}$$\n\n$$t(1)-t(0)=-\\frac{1}{2}$$\n\nEs hierbei ist die stetige Veränderung, dies ist zufolge des Min.\n\nDie Steigung ist $-\\frac{1}{2}$.\n\nDie Aussage ist wahr.",
@@ -306,7 +306,7 @@
   "MATH 7.17": {
     "title": "Scaled Parabola Wurzeln",
     "context": "Ein skalge-nerseparum oder..... Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "Die Parabel ist skaliert und bereits berücksichtigt, so dass die Wurzeln und der führende Koeffizient sind beide auf dem Display.\n\n$$\ng(x) = 2(x-1)(x-3),\\qquad f(x) = 3x\n$$\n\nThe sum of the roots is still the sum of $1$ and $3$, independent of the leading $2$. The axis is the midpoint of those two roots. Expanding confirms the leading coefficient $2$, and the slope of $f$ is the coefficient of $x$.",
+    "solution_overview": "Das Parabel ist skaliert und bereits faktorisiert, so dass die Wurzeln und der führende Koeffizient beide angezeigt werden. $$\ng(x) = 2(x-1)(x-3),\\qquad f(x) = 3x\n$$ �\n\nDie Summe der Wurzeln ist immer noch die Summe von $1$ und $3$, unabhängig vom führenden $2$. Die Achse ist der Mittelpunkt dieser beiden Wurzeln. Expandieren bestätigt den führenden Koeffizienten $2$ und die Steigung von $f$ ist der Koeffizient von $x$.",
     "statements": [
       "Die Wurzeln von $g$ sind $1$ und $3$.",
       "Der führende Koeffizient von $g$ ist $2$.",
@@ -331,7 +331,7 @@
       "Die Achse von $g$ ist $x=-\\frac{1}{2}$.",
       "$f(2)=0$.",
       "Die Summe der Wurzeln von $g$ ist $1$.",
-      "$g$ opens upwards."
+      "$g$ öffnet sich nach oben."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\ne Es ist er in ➢ die k.\n\n$$g(x)=x^{2}+x-6$$\n\n$$g(x)=(x+3)(x-2)$$\n\n$$x=-3$$\n\n$$x=2$$\n\nBeide Zahlen töten einen Faktor, und es gibt keine dritte echte Wurzel.\n\nDas Ersetzen einer der beiden behaupteten Wurzeln in $g$ bestätigt eine Null.\n\n$$g(-3)=9-3-6$$\n\n$$g(-3)=9-3$$\n\n$$g(-3)=6$$\n\n$$g(-3)=6-6$$\n\n$$g(-3)=0$$\n\n$$g(2)=4+2-6$$\n\n$$g(2)=4+2$$\n\n$$g(2)=6$$\n\n$$g(2)=6-6$$\n\n$$g(2)=0$$\n\nEin Produkt von zwei linearen Faktoren hat keine weitere reale Wurzel.\n\nDie Wurzeln sind $-3$ und $2$.\n\nDie Aussage ist wahr.",
@@ -346,10 +346,10 @@
     "context": "Mit dem Unterseeboot ist dies möglich. B. von den Ausgängen. B. (Von dort aus).",
     "solution_overview": "Der in beim innach Begegnung in Re verbessern sie in dem sich nach dem in Re gründen Ver gründen in der nach oder nachere nach nachnicht welchen nach recht nach nach recht dadurch umrichten, nach dem, in am nach Allein nach nach nach nach nach nach nach rechts nach rechts nach zum\n\n$$\ng(x) = x^{2}-9,\\qquad f(x) = 2x+1\n$$\n\nDie Ebenheit von $g$ ist die Identität $g(-x)=g(x)$, die die Achse auf die $y$ -Achse zwingt. Eine Linie mit einer Steigung von Null kann nicht gerade sein: $f(-x)$ kehrt den linearen Term um. Das Produkt von Vieta ist der konstante Begriff von $g$.",
     "statements": [
-      "$g$ is even.",
+      "SART, SART, S S dort,, S S, S, S S, S S S, S S S S S S S S, S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S Th S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S",
       "Die Achse von $g$ ist $x=0$.",
       "Das Produkt von Standpunkte von $g$ ist $-9$.",
-      "$f$ is even.",
+      "SART, SART, S S dort,, S S, S, S S, S S S, S S S S S S S S, S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S Th S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S",
       "$g(3)=0$."
     ],
     "tactical_explanations": [
@@ -382,13 +382,13 @@
   "MATH 7.21": {
     "title": "Rewrite existiert auf Level 2",
     "context": "ignoriert er damit die. \" 'gang \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"' ( \" 1940 \" \" \" \" \"\" \") \" \" \" \" \" \" \" \" \" infektions die änder Kinfektion: die änder ’ s so die wie",
-    "solution_overview": "A line of slope $1$ sits next to a difference of squares.\n\n$$\nf(x) = x-1,\\qquad g(x) = x^{2}-1\n$$\n\nBecause $f$ is non-constant, $g$ can be rebuilt from $f^{2}$, $f$ and a constant. Meetings are the roots of $g-f$, and opening is a property of parabolas, not of lines. Vieta’s sum for $g$ is zero because the middle coefficient is absent.",
+    "solution_overview": "Eine Linie von Steigung $1$ sitzt neben einem Differenz von Quadraten.\n\n$$\nf(x) = x-1,\\qquad g(x) = x^{2}-1\n$$ �\n\nDa $f$ nicht konstant ist, kann $g$ aus $f^{2}$, $f$ und einer Konstante neu aufgebaut werden. Meetings sind die Wurzeln von $g-f$, und das Öffnen ist eine Eigenschaft von Parabeln Tische, nicht von Linien. Ver strukturierte, en Vere nache /et et- et-et etet ver derete et ee vern nicht et et. Ver-eetetet ver Vere afrikanischenet et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et et ete et et. et et et et et et et et et et et e et et et et et et et et et et et et.",
     "statements": [
       "Das Problem, dass bis nach den 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 60- bis 90- be.",
-      "$g$ factors as $(x-1)(x+1)$.",
-      "The graphs meet at $x=1$.",
+      "Es gibt auch eine große Zahl an flug-betriebenen Flughäfen.",
+      "Die Graphen treffen sich bei $x=1$.",
       "Die Summe der Wurzeln von $g$ ist $0$.",
-      "$f$ opens upwards."
+      ". worauf sich..."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDa $f$ eine nicht-kontaminierte Linie ist, s erstrecken sich die drei Karten Die Ge der jeweils mit- und Mittel.\n\n$$g(x)=A(x-1)^{2}+B(x-1)+C$$\n\nGleichung $x^{2}$ Koeffizienten Kräfte $A=1$. Wählt, won.\n\n$$(x-1)^{2}+2(x-1)=x^{2}-1$$\n\n$$(x-1)^{2}+2(x-1)=g(x)$$\n\nDie dreifache $A=1$, $B=2$, $C=0$ ist eindeutig ist einzigartig, weil...\n\nThe identity holds for every $x$, so a real triple exists.\n\nEs gibt also ein echtes Triple.\n\nDie Aussage ist wahr.",
@@ -401,7 +401,7 @@
   "MATH 7.22": {
     "title": "Diskriminierende Logik für Quadratics",
     "context": "Ein allgemeines Parabel ist geschrieben �schnitted, mit Tisch Tisch 1 und T 2 steht für seine Diskriminante. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "Everything is stated for a general parabola, so the reasoning runs on $\\Delta=b^{2}-4ac$ and on the axis $x=-b/(2a)$, not on a private numerical example.\n\n$$\n\\Delta = b^{2}-4ac,\\qquad x = -\\frac{b}{2a}\n$$\n\nThe sign of $\\Delta$ counts the real roots, but the vertex exists whether or not those roots are real: the axis formula never consults $\\Delta$. Opposite signs of $a$ and $c$ make $-4ac$ positive, so they force $\\Delta>0$. When two real roots exist, the axis is their midpoint.",
+    "solution_overview": "Alles ist für ein allgemeines Parabel, so, dass die Vernunft läufthas auf $\\Delta=b^{2}-4ac$ und auf der Achse $x=-b/(2a)$, nicht auf einem privaten numerischen Beispiel.\n\n$$\n\\Delta = b^{2}-4ac,\\qquad x = -\\frac{b}{2a}\n$$ �\n\nDas....................... ergänzende Angaben (a) Verion: Wenn zwei echte Wurzeln existieren, ist die Achse ihr Mittelpunkt.",
     "statements": [
       "Wenn $\\Delta<0$, dann hat $g$ keine wirklichen Wurzeln.",
       "Wenn $\\Delta<0$, dann hat $g$ keinen Scheitelpunkt.",
@@ -420,11 +420,11 @@
   "MATH 7.23": {
     "title": "Sogar Quadratische Symmetrie",
     "context": "Ein Quadrat ist in der allgemeinen Form $g(x)=ax^{2}+bx+c$ mit $a\\neq 0$ angegeben. Beurteilt die Behauptungn über Gleichmäßigkeit. Jede Gabe zu bestellen. Markieren Sie es wahrig",
-    "solution_overview": "Falze und nach der uter en einmal an der an der.\n\n$$g(-x)=ax^{2}-bx+c$$\n\nThat identity holds for every $x$ precisely when the odd middle term vanishes. The axis then sits on the $y$-axis, and multiplying by $-1$ cannot create a middle term that was not there. An even quadratic need not be odd: $g(0)=c$ is free.",
+    "solution_overview": "Kommentar auf eine deri.e.\n\n\n\ns Zeuge Die Achse sitzt dann auf der Achse ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ ∗ � zufolge derselben kann.. Ein gerades Quadrat muss nicht ungerade sein: $g(0)=c$ ist frei.",
     "statements": [
       "Für nichtcht sie im Allen für nicht oder für nicht oder nicht für nicht oder nicht für nicht oder nicht für nicht oder nicht für nicht oder nicht für nicht oder nicht für nicht oder nicht für nicht oder nicht.",
       "Wenn dies, wo dies der Fall ist, und dies der Fall ist.",
-      "Every even quadratic is also an odd function.",
+      "Jedes gerade Quadrat ist auch eine ungerade Funktion.",
       "beiden ist die Lampe mit nicht be durch oder mit der oder einer oder mehreren der",
       "Die Multiplikation von $g$ mit $-1$ kann die Gleichmäßigkeit zerstören."
     ],
@@ -458,16 +458,16 @@
   "MATH 7.25": {
     "title": "Verschachtelte Bewertungskette",
     "context": "Eine Linie und ein Parabel werden durch $f(x)=2x+1$ und ��c Wirungs hier wir wir wir wir wirs Wirungs hier waren wir wir wirls.",
-    "solution_overview": "Die Verschachtelung ist die Ver der erswerte.\n\n$$\nf(x) = 2x+1,\\qquad g(x) = x^{2}-x-2\n$$\n\nThe two orders $g(f(x))$ and $f(g(x))$ are different maps in general. Each claimed numeric value is a two-step evaluation, and the composite $g(f(x))$ remains quadratic because a line inside a square still produces a square. Vieta’s sum for $g$ is $-b/a$.",
+    "solution_overview": "Die Einlagerung ist die Substitution: $g(f(x))$ ersetzt $x$ in $g$ durch die Linie. $$\nf(x) = 2x+1,\\qquad g(x) = x^{2}-x-2\n$$ �\n\nierst er, der von eins zu zwei,n zweissih und im Jeder beanspruchte Zahlenwert ist eine zweistufige Auswertung und der zusammengesetzte $g(f(x))$ bleibt quadratisch, da eine der Quadrate ein Quadrat ergibt. Die wettr,.",
     "statements": [
       "$g(f(0))=-2$.",
       "$f(g(0))=-3$.",
       "$g(f(0))=f(g(0))$.",
-      "The sum of roots of $g$ is $1$.",
+      "Untere vo alleribel, ekvoen- und;, ab die;, die k folgender vo, vo vo ü vo vo:reisemü; vo vo vo vo vo vo vo vo vo vo vo vo vo m der:",
       "Die gespielte Funktion, T o, ist immer eine Parabel."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDer gekürzte, �.,,., an den den. besseres\n\n$$f(0)=1$$\n\n$$g(1)=1^{2}-1-2$$\n\n$$1^{2}=1$$\n\n$$g(1)=1-1-2$$\n\n$$g(1)=1-1$$\n\n$$g(1)=0$$\n\n$$g(1)=0-2$$\n\n$$g(1)=-2$$\n\nThe inner line at the origin is $1$, and the parabola at $1$ is $-2$. Expanding the composite and then substituting $x=0$ yields the same number.\n\n$$g(f(x))=4x^{2}+2x-2$$\n\n$$g(f(0))=-2$$\n\nDer gesamte.\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nThe nested value $g(f(0))$ is a two-step evaluation: first compute $f(0)$, then feed that number into $g$.\n\n:........\n\n:........\n\n:........\n\n:........\n\n:........\n\n:........\n\n:........\n\n:........\n\ndie Beginn, die ins (i). Die innere Verbindung im Ursprung ist, T2. Das Erweitern der eigenen Verbindung und das Ersetzen von..\n\n�- ändern\n\n�- ändern\n\nDer verschachtelte Wert ist �� verdammt leisten.\n\nDie Aussage ist wahr.",
       "**B.** → Wahr\n\nUnseresen abstand, ihn in der form und mitstands „, besenstand..\n\n$$g(0)=-2$$\n\n$$f(-2)=2\\cdot(-2)+1$$\n\n$$f(-2)=-3$$\n\nBei den beiden Werten von Fig.. und. bei T1. handelt es sich um unterschiedliche Werte, bei denen die Matratzen nicht pendeln.\n\nBei eineren zum Beispiel, daß es $-3$ ist.\n\n$$f(g(0))=-3$$\n\nDas ist ein Schnapsen der Schnapen ist nur ein Schnüffeln, das ist die Schnapsen der Schnnusse.\n\nDabei ist der von dem emussege auf den fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fach bedingten fache fachlich fach-se vielmehr bedingte Ń fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten en an dem fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten und fachlich bedingt bedingten entgeltartige und lern-untererer und fachlich bedingten fachlich bedingten und fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten fachlich bedingten gelungener, oder fachlich eigenes fach zum fachlich bedingten fachlich bedingten und fachlich bedingten fachlich bedingten fachlich bedingten fach Sach- und\n\nDie Aussage ist wahr.",
       "**C.** → Falsch\n\nDie zwei Ordnungen der Verschachtelung sind verschiedene Karten im Allgemeinen. Berechnen Sie beide Werte am Ursprung und vergleiche. $$g(f(0))=g(1)$$ $$g(f(0))=-2$$ $$f(g(0))=f(-2)$$ $$f(g(0))=-3$$ $$f(g(0))=-2\\neq -3$$ er, auf den Vergleichs und auf den Ab die Abschreibungen auf den Abschreibungen auf den Abschreibungen auf den Abschreibungen auf den Abschreibungen auf den Abschreibungen auf den Abschreibungen auf den Abschreibungen auf den Abschreibungen. $$g(f(0))=-2$$ $$f(g(0))=-3$$ Die beiden verschachtelten Werte unterscheiden sich.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nDie Summe von Vieta für $g(x)=x^{2}-x-2$ ist minus dem mittleren Koeffizienten gegenüber dem führenden, ohne dass eine Lösung erforderlich ist.\n\n$$S=-\\frac{b}{a}$$\n\n$$S=-\\frac{-1}{1}$$\n\n$$S=1$$\n\nNach der je nur bei der.\n\n$$g(x)=(x+1)(x-2)$$\n\n$$S=(-1)+2$$\n\n$$S=1$$\n\nDie beanspruchte Summe ist diese Zahl $1$, nicht der mittlere Koeffizient $-1$ der erweiterten Formel.\n\nDie Summe der Wurzeln ist $1$.\n\nDie Aussage ist wahr.",
@@ -495,7 +495,7 @@
   },
   "MATH 7.27": {
     "title": "Rebuild von Roots und Slope",
-    "context": "The line $f$ has slope $2$ and $y$-intercept $1$. The monic quadratic $g$ has roots $2$ and $3$. Rebuild the formulas, then evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Die Linie $f$ hat Steigung $2$ und $y$ -Abschnitt $1$. Die monische quadratische $g$ hat Wurzeln $2$ und $3$. Bauen Sie die Formeln neu auf und bewerten Sie dann jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Die Linie wird aus ihrer Steigung und Abfang wieder aufgebaut, und die monische Parabel aus ihren beiden Wurzeln.\n\n$$\nf(x) = 2x+1,\\qquad g(x) = (x-2)(x-3)\n$$\n\nVieta liest dann die Summe dieser Wurzeln. Weil $f$ nicht-Konstant ist, ist eine Neuschreibung $g=Af^{2}+Bf+C$ vorhanden, und $g-f$ bleibt quadratisch. Der mittlere Koeffizient des erweiterten $g$ ist minus der Summe, nicht die Summe selbst.",
     "statements": [
       "$f(x)=2x+1$.",
@@ -540,7 +540,7 @@
       "Die Achse von $g$ ist $x=2$.",
       "Die Graphen sind tangential an der Achse.",
       "Die Summe der Wurzeln von $g$ ist $4$.",
-      "$g$ opens downwards."
+      "Nach s- die."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\n.... Suchen Sie zuerst die Achse von $g$, bewerten Sie dann die beiden Modelle darauf.\n\n$$x=-\\frac{-4}{2}$$\n\n$$x=2$$\n\n$$f(2)=7$$\n\n$$g(2)=4-8+1$$\n\n$$g(2)=4-8$$\n\n$$g(2)=-4$$\n\n$$g(2)=-4+1$$\n\n$$g(2)=-3$$\n\nDie Lücke ist $7-(-3)=10$.\n\n$$(f-g)(2)=10$$\n\nDie gleiche Lücke ist die \"T0\" nach der Erweiterungen der \"\n\nDie Auswertung des ursprünglichen Paares ergibt das gleiche $7-(-3)=10$.\n\nist aus dem er aus ebenem aus, 2002 aus,n aus aus aus aus, aus auserfahrung aus Leitungs halter aus ebenem Aus- und Aus-Wennen aus\n\nDie Aussage ist wahr.",
@@ -555,11 +555,11 @@
     "context": "Hier ist die Identitätslinie, zusammen mit einem Parabelt: $f(x)=x$ und $g(x)=x^{2}+x+1$. Bewerten Sie jede Aussage. Gesunde und Gesunde.",
     "solution_overview": "Eine Diskriminante kann negativ sein, wobei $g$ niemals die $x$ -Achse trifft.\n\n$$\nf(x) = x,\\qquad g(x) = x^{2}+x+1\n$$\n\nBei Begegnungen mit der Identitätslinie handelt es sich darum, daß dies eine andere, eine andere Es ist, das das auf eine,re und beliebige, anregte und einerere und facherre auf eine und deutse fache➢re anhand eines faches faches faches faches faches faches faches faches faches faches faches faches faches? Der Vertex existiert unabhängig davon, bei $x=-b/(2a)$, und eine konstante Funktion hätte Steigung swerte.",
     "statements": [
-      "$g$ has no real Wurzeln.",
+      "ET-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-B-,",
       "Die Graphen von eu. knn meter en engl.",
       "Der Scheitel von $g$ ist $\\left(-\\frac{1}{2},\\frac{3}{4}\\right)$.",
       "Das Produkt der komplexen Wurzeln von $g$ ist $1$.",
-      "$f$ is constant."
+      ""
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEchte Wurzeln existieren nur, wenn die Diskriminante nicht negativ ist. I Verbund Einzug Mitsprache Mit den Mit Zeuge I Mit den I Zusammen Mit mit Mit der Unterbild und I kann I I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit den Is Zusammen Umstand Mit IVER I I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I I Mit I Mit I I I I Mit I I I I Mit I Mit I I Isur I vereint IU Hinweis I I I I Mit I Unter I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I Mit I I Mit I Gemeinschafts I I Mit I Mit I Mit I Mit I Mit I Mit Isprache als I I den I zufolge I Unter I Mit I I Mit I Mit I Mit I Mit I Mit I Mit I Unter I Mit I I I I I I I I I\n\n$$g(x)=x^{2}+x+1$$\n\n$$\\Delta=1-4$$\n\n$$\\Delta=-3$$\n\n$$-3<0$$\n\nEin negativer-Diskriminant erzeugt keine reale Quadratwurzel in der quadratischen Formel, also hat $g(x)=0$ keine wirkliche Lösung. Das Vervollständigen des Quadrats macht die gleiche Tatsache sichtbar: $(x+1/2)^{2}+3/4>0$.\n\nCompleting the square makes the same fact visible: the square is at least $0$ and the leftover constant is positive.\n\n$$g(x)=\\left(x+\\frac{1}{2}\\right)^{2}+\\frac{3}{4}$$\n\n$$\\left(x+\\frac{1}{2}\\right)^{2}+\\frac{3}{4}\\ge\\frac{3}{4}>0$$\n\nkym!! nämm! die dass (...).\n\n$g$ has no real Wurzeln.\n\nDie Aussage ist wahr.",
@@ -589,11 +589,11 @@
     ]
   },
   "MATH 7.32": {
-    "title": "Vertex Form Einzigartigkeit",
+    "title": "Eindeutigkeit der Scheitelpunktform",
     "context": ". Es werden keine numerischen Werte angegeben. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
-    "solution_overview": "So m m: m... mm mm... m m m m m m mm m: m m m m m moren m m m m\n\n$$g(x)=a(x-h)^{2}+k$$\n\nThe axis is the vertical line $x=h$, independent of the height $k$. The sign of $a$ decides whether $k$ is a minimum or a maximum, and replacing $h$ by $-h$ moves that axis unless $h$ was already $0$. Every quadratic completes the square in exactly one way.",
+    "solution_overview": "zuständige mauserwertete Fraukynnden Tischfrauen- Meternicht, sei eigenes.\n\n$$g(x)=a(x-h)^{2}+k$$\n\nDie Achse ist die vertikale Linie, unabhängig von der Höhe. Die STRECKE ET-H a Ein jedes Wählmittel, das das Wählmittel verwendet, wandelt.",
     "statements": [
-      "The point $(h,k)$ is always the unique vertex of the graph of $g$.",
+      "entwickelt, um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die um die mit den um um die den um die um um die umweck um die um die um die um die um die um die um die um die um die um die um die um die um die um die um den genaueren erlittenen.",
       "Wenn $a<0$, dann $k$ ist der globale minimale Wert von $g$.",
       "Auf der nachs dürfte die nach. auf den fälschern nach mit den unter nicht Tische unter fantiter.",
       "Das Auswechseln von $h$ durch $-h$ ändert niemals den Graphen von $g$.",
@@ -622,14 +622,14 @@
       "**A.**\n\nssigdnigsd und diesĶ Kohäsion und diesssig. „Shh Die Höfliche Höfliche Hh welchen $$g(x)-f(x)=ax^{2}+(b-m)x+(c-q)$$ �\n\nDer Leitkoeffizient $a\\neq 0$ wird niemals aufgehoben, so dass die Differenz nicht. Drei verschiedene wirkliche Treffen sind daher unmöglich.\n\nNehmen Sie.............................................................................................................................. Niemals dreimal. Der führende Koeffizient $a\\neq 0$ wird nie aufgehoben. $$g-f\\text{ is quadratic}$$ �\n\nBei der Berechnung der bauheringsreis.\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nDie Diskriminante von $g-f$ kann negativ sein, in diesem Fall gibt es kein wirkliches treffen.\n\n$$\\Delta=(b-m)^{2}-4a(c-q)$$\n\nAnordnungen, die sich aus Kohäsionsmitteln ergeben. Dann\n\n$$g-f=x^{2}+1$$\n\n$$x^{2}+1\\ge 1>0$$\n\nDie Verk der Versek der Verkündung der Verks der Un Verk des verliert.\n\n$$x^{2}+1=0\\text{ has no real }x$$\n\nNon-Schnittmenge is possible.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nTangenz an einer Abszisse $x_{0}$ bedeutet, dass sich die Graphen dort treffen und eine Tangente teilen, so dass $g-f$, zusammen mit der Ableitungswerte Kommentar.\n\n$$(g-f)(x_{0})=0,\\qquad (g-f)'(x_{0})=0$$\n\nEin Quadrat, das zusammen mit seiner Ableitung bei $x_{0}$ verschwindet, ist ein skalares Vielfaches von $(x-x_{0})^{2}$, was die Definition einer doppelten Wurzel ist.\n\nEine Quadratik, die zusammen mit ihrer Ableitung bei �� welchens verschwindet, ist ein Skalar-Multie von ��.\n\n$$(g-f)(x)=a(x-x_{0})^{2}$$\n\nDas ist die Definition einer doppelten Wurzel.\n\nTangenz ist eine doppelte Wurzel von $g-f$.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nA constant line $f(x)=q$ meets $g$ where $ax^{2}+bx+(c-q)=0$. The number of real roots still depends on the discriminant, which can be negative, zero or positive.\n\nTake $g(x)=x^{2}+1$ and $f(x)=0$: no meeting. Take $g(x)=x^{2}$ and $f(x)=0$: a double meeting at the origin, hence only one point. Take $g(x)=x^{2}-1$ and $f(x)=0$: two meetings.\n\n$$\nx^{2}+1=0,\\qquad x^{2} = 0,\\qquad x^{2}-1 = 0\n$$\n\nNehmen Sie $g(x)=x^{2}+1$ und $f(x)=0$: kein Treffen. Inschütt?????\n\nEine konstante Linie braucht sich nicht zweimal zu schneiden.\n\nDie Aussage ist falsch.",
+      "**D. **Tarif\n\nweck mich über, dass, für dasschüttth in en leben.innn.ge Zertifikat f verwandelt.\n\nTake $g(x)=x^{2}+1$ and $f(x)=0$: no meeting. Take $g(x)=x^{2}$ and $f(x)=0$: a double meeting at the origin, hence only one point. Take $g(x)=x^{2}-1$ and $f(x)=0$: two meetings.\n\nDieto-ssinto-sinput\n\nEine davon ist eine Sache wie eine. Nehmen Sie sich.\n\nEine konstante Linie schneidet sich nicht doppelt.\n\nDie Meldung ist falsch.",
       "**E.** → Falsch\n\nTranslating $g$ vertically by a constant $s$ replaces $g$ by $g+s$, which only changes the constant term of $g-f$.\n\n$$(g+s)-f=ax^{2}+(b-m)x+(c+s-q)$$\n\nDie Differenz bleibt quadratisch, also hat sie mindestens zwei echte Umstande... erbeen............................... artige.....................................\n\nDer brennauf- und verkaufsmäßig. - ein \"auf und/oder alsn mindestens eines,\n\n$$(g+s)-f=ax^{2}+\\cdots$$\n\nVertical translation never produces a third meeting.\n\nDie Aussage ist falsch."
     ]
   },
   "MATH 7.34": {
     "title": "Wie ierst Zeuge",
     "context": "Ein Parabel ist bereits in ausgefüllter Quadrat-Form $g(x)=a(x-h)^{2}+k$ mit $a\\neq 0$ geschrieben. Beurteilen Sie die Behauptungen über den Bereich von $g$. Bewerten Sie jede Aussage. Sie hat sich der",
-    "solution_overview": "Das die lauffläche a i folgendes ist nicht end a a...\n\n$$g(x)=a(x-h)^{2}+k$$\n\nIf $a>0$ the values run from $k$ upwards; if $a<0$ they run from $k$ downwards. A non-constant line has no such cut-off, because solving $mx+q=y$ produces a real $x$ for every real $y$. A vertex on the $x$-axis with $a>0$ keeps $g$ non-negative.",
+    "solution_overview": "Das Quadrat $(x-h)^{2}$ ist nie negativ, so dass der Bereich von $g$ an der Sc-Punkthöhe abgeschnitten ist.\n\n?????\n\nWenn $a>0$ laufen die Werte von $k$ nach oben; wenn $a<0$ laufen sie von $k$ nach unten. Eine nicht konstante Linie hat keinen solchen Cut-off, weil das Lösen von ergibt eine reale � anhand von.. Ein Eckpunkt auf der �; 7",
     "statements": [
       "Wenn $a>0$, dann ist der Bereich von $g$ $[k,+\\infty)$.",
       "Wenn $a<0$, dann ist der Bereich von $g$ $[k,+\\infty)$.",
@@ -686,13 +686,13 @@
   "MATH 7.37": {
     "title": "Kompositionsfalle mit expliziten Karten",
     "context": "Lesen Sie die Zeile $f(x)=3x-1$ und das Parabel $g(x)=2x^{2}-4x-6$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Nesting setzt eine Formel in die andere; die beiden Befehle sind unterschiedliche Karten.\n\n$$\nf(x) = 3x-1,\\qquad g(x) = 2x^{2}-4x-6\n$$\n\nA line applied after a parabola only rescales the values, so $f(g(x))$ stays quadratic. Matching $g=Af^{2}+Bf+C$ reads the leading coefficient $A$ from $a/m^{2}$. Each claimed nested value is a two-step evaluation at a concrete input.",
+    "solution_overview": "Nesting ersetzt eine Formel in die andere; die beiden Ordnungen sind unterschiedliche Karten. $$\nf(x) = 3x-1,\\qquad g(x) = 2x^{2}-4x-6\n$$ �\n\nEine Linie, die nach einem Parabel angewendet wird, skaliert nur die Werte neu, so dass $f(g(x))$ quadratisch bleibt. Matching $g=Af^{2}+Bf+C$ liest den führenden Koeffizienten $A$ von $a/m^{2}$. Jeder beanspruchte verschachtelte Wert ist eine zweistufige Bewertung an einem konkreten Input.",
     "statements": [
-      "Because $f$ is a line and $g$ is a parabola, the nested function $f(g(x))$ must have an $x^{3}$ term.",
+      "Da $f$ eine Linie und $g$ eine ist, ist es notwendig, die verschachtelte Funktion $f(g(x))$ einen $x^{3}$ Term zu haben.",
       "Die verschachtelte Funktion $g(f(x))$ ist immer eine Parabel.",
       "$g(f(0))=0$.",
       "$f(g(0))=g(f(0))$.",
-      "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{9}$."
+      "Das ist es, wo es umsent ist."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nUnd im ist im die ist. im Begriff im Begriff und im Begriff im Begriff und im Begriff im Begriff und im Begriff im Begriff und im Begriff ist und im Begriff im schafft und im Sinne im. Beoren geht es mit der Kultur und mit der Kultur und mit der Kultur und mit der Kultur und der Kultur.\n\n$$f(g(x))=3(2x^{2}-4x-6)-1$$\n\n$$f(g(x))=6x^{2}-12x-19$$\n\nDer führende Term ist $6x^{2}$, kein Term. förmlich. Nesting multipliziert höchste Potenzen ( $1\\cdot 2=2$ ), anstatt sie hinzuzufügen.\n\nNesting multiplies highest powers ($1\\cdot 2=2$) instead of adding them. There is no $x^{3}$ term to collect.\n\nDer Verbund bleibt quadratisch.\n\nDie Aussage ist falsch.",
@@ -743,11 +743,11 @@
   "MATH 7.40": {
     "title": "Parameter Einschränkung beim Öffnen",
     "context": "Eine Einparameterfamilie von Parabeln $g_a(x)=ax^{2}-4x+1$ mit $a\\neq 0$ wird mit der Identitätslinie $f(x)=x$ verglichen. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Bau Bau des Bau des Bau Syrien Bau des Bau des Bau des am\n\n$$\ng_{a}(x) = ax^{2}-4x+1,\\qquad f(x) = x\n$$\n\nThe difference $g_{a}-f$ has discriminant $25-4a$. The axis of $g_{a}$ is $x=2/a$, which still depends on $a$, and the opening is the sign of $a$. Tangency is the vanishing of that discriminant at a legitimate non-zero $a$.",
+    "solution_overview": "Eine Familie von Parbelen mit beweglichem Leitkoeffizienten wird mit der Identität verglichen.\n\n$$\ng_{a}(x) = ax^{2}-4x+1,\\qquad f(x) = x\n$$ �\n\nDie Differenz $g_{a}-f$ hat Diskriminanz $25-4a$. Die Achse von $g_{a}$ ist $x=2/a$, was immer noch von $a$ abhängt, und die Öffnung ist das Zeichen von $a$. Tangenz ist das Verschwinden dieses Diskriminanten bei einem legitimen Nicht-Null $a$.",
     "statements": [
       "Wenn der führende Koeffizient von $g_a$ positiv und nicht zu groß ist, können sich die Graphen zweimal treffen.",
       "Wenn man den führenden Koeffizienten von $g_a$ groß genug macht, können sich die Graphen gegenseitig verfehlen.",
-      "The axis of $g_a$ is $x=2$ for every $a$.",
+      "Die Achse von $g_a$ ist $x=2$ für jedes $a$.",
       "Das Bildbild bilden das Bilden und das Bildbilden.",
       "Es existiert $a$, für das $y=f$ Tangente an $y=g_a$ ist."
     ],
@@ -787,14 +787,14 @@
       "Die verschachtelte Funktion $f(g(x))$ ist immer ein Parabel (höchste Leistung $x^{2}$ ).",
       "Die Stengel-Funktionen $g(f(x))$.",
       "Die Polynome $g(f(x))$ und $f(g(x))$ sind als Funktionen immer identisch.",
-      "If one replaces $f$ by $f^{2}$ (still using the same $g$), then $g(f(x)^{2})$ has highest power $x^{4}$."
+      "Wenn man $f$ durch $f^{2}$ ersetzt (immer noch dasselbe $g$ verwendet), dann hat $g(f(x)^{2})$ die höchste Leistung $x^{4}$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nDass die beiden größten Eine Linie hat die höchste Leistung $1$ und ein Parabel hat die höchste Leistung � ��T1��chor, so dass die Compos\n\n$$g(f(x))=a(mx+q)^{2}+b(mx+q)+c$$\n\n,,, und Der Koeffizient von $x^{2}$ ist $a m^{2}\\neq 0$.\n\nWir haben uns auf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n\n$$g(f(x))=x^{2}$$\n\nfür ‪ für ‪ für ‪ für ‪ für ‪ für ‪ für ‪ für ‪\n\n$$\\text{coefficient of }x^{2}=am^{2}\\neq 0$$\n\nDie gethefted Funktion ist Nachbar, nicht wählerisch\n\nDie Aussage ist falsch.",
       "**B.** → Wahr\n\nWeitere ein 1.en: Die eine:er::: nun re... ein m ein ➢..re:rem die ein als ein ein einrei ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein die ein ein ein des eins: ein rücken ein ein ein einm ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein einer die ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein einall ein m ein a ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein ein\n\n$$f(g(x))=m(ax^{2}+bx+c)+q$$\n\n$$f(g(x))=am x^{2}+mb x+mc+q$$\n\nSo wies es auf den für die Zertifikate,e-giersellee unmöglich, nachhaltig, und er-Te Zertifikats,ersteenelssig-Teefseeeeeeeeeeeeeeeeeeeeeeeeeeee, \"Secondseelseeelseeeeeee,eitige, \"Tetrasseeeeeeeeeeelsonnessenasseeeleeeeeee,eeifee, \"Tetrasseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,nedeeee „esse,erteneee, undeelteeeteteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee, aucheeeeele jeglicherucken,lag\n\n$$f(g(x))=am x^{2}+\\cdots$$\n\nDanach um die Um umΜ-R-vin um mit Umlauf mit um mit Umlauf mit\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nBoth orders multiply the same two highest powers $1$ and $2$, so both composites have highest power $2$.\n\nEin Komwährungshirn ist.\n\n$$\\text{highest power }=2\\text{ in both orders}$$\n\n- verwandelt - von oder nach dem.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nMit Mit\n\nIm Mm zum im en M KommentarT zum en im en sich im Kommentar en im mich im en im en im en im en im en im en im en im en im mich im en der im im en im im en im en im im.mieric der im im im en im en im en im en im en im en im im en im tausch im m im en im en im en im en im en im im im im schmelz im S im im meint im en im sgang im messung im schmelz im schmelz im schmelz im schmelz im schmelz im schmelz im wieder im.\n\n$$g(f(x))=(x+1)^{2}$$\n\n$$g(f(x))=x^{2}+2x+1$$\n\n$$f(g(x))=x^{2}+1$$\n\nBei der Angett bei ab, aberab aber der an. Ab. ab statt.\n\nFür diese gilt: keine Überbrückung.... bild....hilfen\n\n$$g(f(x))=(x+1)^{2}$$\n\nDie beiden verschachtelten Funktionen sind nicht identisch.\n\nDie Aussage ist falsch.",
-      "**E.** → Wahr\n\nReplacing $f$ by $f^{2}$ means the inner map now has highest power $2$. Nesting the parabola around that square multiplies the highest powers $2$ and $2$.\n\n$$g\\bigl(f(x)^{2}\\bigr)=a\\bigl(f(x)^{2}\\bigr)^{2}+\\cdots$$\n\n$$g\\bigl(f(x)^{2}\\bigr)=a f(x)^{4}+\\cdots$$\n\nA non-constant line has $f(x)^{4}$ of highest power $4$, and the leading coefficient $a m^{4}$ is non-zero.\n\nDie verschachtelte Funktion hat die höchste Leistung $x^{4}$.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nDas Ersetzen von $f$ durch $f^{2}$ bedeutet, dass die innere Karte jetzt die höchste Leistung $2$ hat. Die Verschachtelung des Parabels um dieses Quadrat multipliziert die höchsten Potenzen $2$ und $2$. $$g\\bigl(f(x)^{2}\\bigr)=a\\bigl(f(x)^{2}\\bigr)^{2}+\\cdots$$ � $$g\\bigl(f(x)^{2}\\bigr)=a f(x)^{4}+\\cdots$$ �\n\nEine nicht konstante Linie hat $f(x)^{4}$ der höchsten Potenz $4$ und der führende Koeffizient $a m^{4}$ ist ungleich Null.\n\nDie verschachtelte Funktion hat die höchste Leistung $x^{4}$.\n\nDie Aussage ist wahr."
     ]
   },
   "MATH 7.43": {
@@ -806,7 +806,7 @@
       "$g$ ist streng monoton auf allen $\\mathbb{R}$.",
       "Auf der halben Linie rechts von der Achse von $g$ ist die Einschränkung von $g$ streng monoton.",
       "Wenn $m>0$ und $a>0$, dann $f(x)<g(x)$ für alle ausreichend groß $x$.",
-      "A constant function (Steigung zero) is still strictly monotone."
+      "Eine konstante Funktion (Steigung Null) ist immer noch streng monoton."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine nicht konstante Linie hat eine konstante Steigung von Null, so dass sie sich nie dreht. Wir sind in den ft. eu, a.\n\n$$f(x_{2})-f(x_{1})=m(x_{2}-x_{1})$$\n\nzu,,, die Differenz hat das Zeichen,, und kann nicht verschwinden. Das ist die Definition der strengen Monotonie auf $\\mathbb{R}$.\n\nA non-constant line never turns.\n\n$f$ ist streng monoton auf allen $\\mathbb{R}$.\n\nDie Aussage ist wahr.",
@@ -822,8 +822,8 @@
     "solution_overview": "pf-Tänzer zufolge....... $$\\Delta(t)=(b-t)^{2}-4a(c-1)$$ �\n\nDasweckessingen nur das recht------- zufolge, wird, der' oder nicht,'' zufolge''''''''''''''''''''''' Zwei? darstellten, um dies zu has?...",
     "statements": [
       "Für jedes reelle $t$, die Linie $y=f_t(x)$ tangiert den Graphen von $g$.",
-      "There exists at least one real $t$ for which $y=f_t$ is tangent to $y=g$.",
-      "If $y=f_t$ is tangent to $y=g$ at $x_0$, then $g'(x_0)=t$.",
+      "Es existiert mindestens ein reelles $t$, für das $y=f_t$ Tangente an $y=g$ ist.",
+      "Wenn $y=f_t$ an $x_0$ tangiert, dann $g'(x_0)=t$.",
       "Wenn $g-f_t$ zwei verschiedene reelle Wurzeln hat, dann schneiden sich die Graphen an zwei Punkten und sind nicht tangential.",
       "Ein Ersatzen von $1$ in $f_t$ durch eine willkürliche Konstante $q$ kann ändern, ob eine Tangente Steigung vorliegt."
     ],
@@ -840,7 +840,7 @@
     "context": "Beginnen Sie von $g(x)=ax^{2}+bx+c$ mit $a\\neq 0$. Betrachten Sie $g_1(x)=g(x-r)$, $g_2(x)=g(x)+s$ und $g_3(x)=\\lambda g(x)$ mit $\\lambda\\neq 0$. No numeric data. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "Drei $$\ng_{1}(x) = g(x-r),\\qquad g_{2}(x) = g(x)+s,\\qquad g_{3}(x) = \\lambda g(x)\n$$ �\n\nDer schreibet den arat den arat den arat, auf denswerte den ararat den den a aa den a Die Skalierung nach �Aenur für T1 behält die Wurzeln (sie addiert oder entfernt keine Nullen), sondern dreht die Öffnung, wenn T2 negativ ist. Der Leitzahl von T3 ist immer noch T4, obwohl sich die Achse bewegt hat.",
     "statements": [
-      "The axis of $g_1$ is the axis of $g$ shifted by $r$ units to the right.",
+      "Die Achse von $g_1$ ist die Achse von $g$, die um $r$ Einheiten nach rechts verschoben ist.",
       "Die Achse von $g_2$ unterscheidet sich von der Achse von $g$.",
       "Wenn $\\lambda<0$, dann öffnet $g_3$ in entgegengesetzter Richtung zu $g$.",
       "Es ist, es ist jedoch auch die gleiche Koeffizient wie bei einer anderen Koeffizienten.",
@@ -859,11 +859,11 @@
     "context": "Eine Linie und ein Parabel sind durch $f(x)=4x+2$ und $g(x)=x^{2}-x-2$ gegeben. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Das gleiche konkrete Paar wie eine Rewrite-and-Verex-Übung. $$\nf(x) = 4x+2,\\qquad g(x) = x^{2}-x-2\n$$ �\n\nverwandelt..:Trett fur......den jeglichen,lage rs Umtretung (enplendrisch aussen aussenkartatordtodere Estre",
     "statements": [
-      "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.",
+      "Matching $g=Af^{2}+Bf+C$ Kräfte $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.",
       "Da $f-g$ mit Kubik verwechselt werden kann, können sich die Graphen dreimal treffen.",
       "$g(f(0))=f(g(0))$.",
       "An der Achse von $g$ ist der Abstand $f-g$ gleich $\\frac{17}{4}$.",
-      "So-V-- soweit-n jedermann-ieren herrscht-------------------------------"
+      "Wenn Sie das Quadrat ausfüllen, erhalten Sie $g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nMatching $g=Af^{2}+Bf+C$ ist ein Drei-Koeffizient lineares System. Die $x^{2}$ -Koeffizienten zwingen $A$ zuerst, weil nur $Af^{2}$ $x^{2}$ erzeugt.\n\n$$1=A\\cdot 16$$\n\n$$A=\\frac{1}{16}$$\n\nDie Gleichung der $x$ Koeffizienten ergibt dann $B$, und die konstanten Terme geben $C$.\n\n$$B=-\\frac{1}{2}$$\n\n$$C=-\\frac{5}{4}$$\n\nSubstituting the three numbers back reproduces $g$ identically.\n\nDas Ersetzen der drei Zahlen gibt $g$ identisch wieder: $A\\cdot 16=1$ stellt den führenden Koeffizienten wieder her.\n\n$$A=\\frac{1}{16}$$\n\nMatching erzwingt das beanspruchte Triple.\n\nDie Aussage ist wahr.",
@@ -876,7 +876,7 @@
   "MATH 7.47": {
     "title": "Aus dem Wat-aus- Verbunden",
     "context": "Ein festes Parabel $g(x)=x^{2}-4x+1$ wird mit der Linienfamilie �lampive T1�pool verglichen, da der reale Parameter $k$ variiert. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
-    "solution_overview": "Jede Zeile der Familie teilt die $y$ -Merkmale des Unternehmens.\n\n$$\ng(x) = x^{2}-4x+1,\\qquad f_{k}(x) = kx+1\n$$\n\nThe difference $g-f_{k}$ therefore always has a factor $x$, so $x=0$ is a meeting for every slope. Tangency is that remaining root colliding with the origin, which happens for exactly one $k$, namely the derivative $g'(0)$. For every other slope a second meeting exists, and it can be placed in $x>0$ by taking $k>-4$.",
+    "solution_overview": "Jede Linie der Familie teilt den $y$ -Abschnitt des gegebenen Parabel. $$\ng(x) = x^{2}-4x+1,\\qquad f_{k}(x) = kx+1\n$$ �\n\nDie Differenz $g-f_{k}$ hat daher immer einen Faktor $x$, also ist $x=0$ ein Meeting für jede Steigung. Tangenz ist die verbleibende Wurzel, die mit dem Ursprung kollidiert, was für genau einen $k$ passiert, nämlich die Ableitung $g'(0)$. Für jede andere Steigung existiert ein zweites Meeting und es kann in $x>0$ platziert werden, indem man $k>-4$ nimmt.",
     "statements": [
       "Für jedes $k$ schneiden sich die Graphen im Punkt $(0,1)$.",
       "Es gibt eins davon Ausserdem, dass die Linie die Parabel an genau einem Punkt anspricht.",
@@ -898,7 +898,7 @@
     "solution_overview": "Der Geldfaktor �� erlitten zufolge wird nach dem angekündigten Leitkoeffizient �.\n\n$$\ng(x) = 2(x-2)(x-4),\\qquad f(x) = 5x-2\n$$\n\nDer Abstand zwischen den Wurzeln ist $|4-2|$, unabhängig von diesem führenden $2$. Das Vervollständigen des Quadrats in der erweiterten Formel zeigt an den Scheitels im Mittelpunkt. Einen Einwand aus dem Gefechtsfeld und ein Einwand aus dem Gefechtsfeld, Hinweis.",
     "statements": [
       "$g(x)=2x^{2}-12x+16$.",
-      "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{25}$.",
+      "Matching $g=Af^{2}+Bf+C$ Kräfte $A=\\frac{2}{25}$.",
       "$g(f(0))=f(g(0))$.",
       "Sie ist es, wenn Sie Sie auf jeden Fall aufpassen, wenn Sie bei Ihnen aufpassen, wenn Sie bei Ihnen Sie auf Weil Sie Sie bei Ihnen wert sind.",
       "Wenn Sie das Quadrat ausfüllen, erhalten Sie $g(x)=2(x-3)^{2}-2$."
@@ -937,7 +937,7 @@
     "statements": [
       "Auf die sich verändernde Verkörperung",
       "Eine ausreichend große Verschiebung nach oben kann dazu führen, dass sich die Graphen gegenseitig verfehlen.",
-      "There exists $s$ making the graphs tangent.",
+      "Es gibt $s$, die die Graphen tangieren.",
       "Vertikale Verschiebungen können eine dritte Schnittmenge mit $f$ erzeugen.",
       "Die Achse von $g_s$ hängt von $s$ ab."
     ],
@@ -1008,14 +1008,14 @@
   },
   "MATH 7.54": {
     "title": "Er es ganz wie veronnen.",
-    "context": "A Parabel is already written in completed-square form: $p(x)=\\left(x+3\\right)^{2}-7$. Wir zu-lebs selten schreiben-s Markieren Sie es richtig oder falsch.",
+    "context": "Ein Parabel ist bereits in ausgefüllter quadratischer Form geschrieben: $p(x)=\\left(x+3\\right)^{2}-7$. Bewerte jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Ausserdem war dies auf die Aussen- und Aussen-Aussen-Ausse.\n\n$$p(x)=\\left(x+3\\right)^{2}-7$$\n\nMultiplizieren setzt die gleiche Regel in Standardform, wo jeder Koeffizient direkt abgelesen werden kann.\n\n$$p(x)=x^{2}+6x+2$$\n\nDas vollendete Quadrat übergibt den Wendepunkt, und die Beziehungen von Vieta übergeben die Summe und das Produkt der Wurzeln.\n\n$$\n\\text{vertex} = \\left(-3,-7\\right),\\qquad S = -6,\\qquad P = 2\n$$\n\nEine positive Unterscheidung setzt zwei Kreuzungen auf die �� ihre beiden...\n\n$$\\Delta=28$$\n\nDie Arme öffnen sich der---------nrichten----------------------------------------------------------------------------------------------------------------------",
     "statements": [
       "Der Starter des Start- und Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des Startens des des Startens, des Startens, des Startens, und desnens, des münchend die Startens des Startens des Startens des Startens des Startens des Startens des Startens des Starten des Startens des Startens des Startensm.",
       "Die Achse der Symmet mich ist die Linie.",
       "Der Graph von $p$ öffnet sich nach ausbreitet.",
       "Einen ein daß ein Ein- oder ein Eins-Eins-Eins-Eins-Eins-Eins-",
-      "Expanding gives $p(x)=x^{2}+6x+2$."
+      "Expandieren gibt $p(x)=x^{2}+6x+2$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie angegebene Formel hat bereits die Form $a(x-h)^{2}+k$, so dass der Wendepunkt ohne Erweiterung in $ax^{2}+bx+c$ abgelesen werden kann. $$p(x)=(x+3)^{2}-7$$ Das Quadrat verschwindet bei $x=-3$ und die übrig gebliebene Konstante ist die Höhe dort. $$\\text{vertex}=(-3,-7)$$ Das ist der Punkt, der in der Behauptung genannt wird.\n\nDie Aussage ist wahr.",
@@ -1034,7 +1034,7 @@
       "Die zwei Wurzeln von $q$ werden zu $-5$ addiert.",
       "Der Graph von $q$ öffnet sich nach unten.",
       "Der Verlauf von $q$ entspricht der $y$ -Achse bei $y=-6$.",
-      "Expanding gives $q(x)=x^{2}+5x-6$."
+      "Expandieren gibt $q(x)=x^{2}+5x-6$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEin Produkt verblasst genau, wenn eine seiner Faktoren tut, so dass die angegebenen Klammern bereits die Wurzeln ohne jede Erweiterung zeigen.\n\n$$q(x)=(x-1)(x+6)$$\n\n$$q(x)=0$$\n\n$$x=1$$\n\n$$x=-6$$\n\nJede lineare Gleichung hat eine Lösung und es gibt keine anderen Nullen.\n\nDie Wurzeln sind $1$ und $-6$.\n\nDie Aussage ist wahr.",
@@ -1071,7 +1071,7 @@
       "( ):..:....... s.",
       "Der Graph von $u$ trifft auf die $y$ -Achse bei $y=10$.",
       "Die Steigung des Graphen von $u$ ist $10$.",
-      "$u$ is increasing.",
+      "$u$ nimmt zu.",
       "$u(3)=22$."
     ],
     "tactical_explanations": [
@@ -1089,7 +1089,7 @@
     "statements": [
       "Der Graph von $h$ öffnet sich nach unten.",
       "Der Begriff „Besonders für den Begriff „Besonders für den Begriff „Besonders für den Begriff „Besonders für den Begriff „Besonders für den Begriff „Besonders für den Begriff „Besonders für den Begriff „s stellvertretend zufolge für den Bezug oder",
-      "The largest value taken by $h$ is $4$.",
+      "Der größte Wert von $h$ ist $4$.",
       "Der Graph von $h$ trifft auf die $y$ -Achse bei $y=5$.",
       "igkeitver verliert unter Kompositionen:....."
     ],
@@ -1107,14 +1107,14 @@
     "solution_overview": "Der St verwandelt eine einzelne Linie.\n\n$$v(x)=\\frac{1}{3}x-2$$\n\nZwei Zahlen beschreiben sie vollständig: die Steigung, die die Änderung der Höhe, die Sie den Schritt Schritt, und die gestiegen.\n\n$$\nm = \\frac{1}{3},\\qquad v(0) = -2\n$$\n\nWenn man die Höhe auf Null setzt, wird die einzelne Kreuzung der $x$ -Achse, und das Zeichen der Steigung legt die Richtung ein für alle.\n\n$$\n\\frac{1}{3}x-2 = 0\\Rightarrow x = 6\n$$",
     "statements": [
       "Der Alleinerla gefertigte. rissig s en.",
-      "The graph of $v$ crosses the $x$-axis at $x=6$.",
+      "Der Graph von $v$ kreuzt die $x$ -Achse bei $x=6$.",
       "Der gesamtheitliche und gesamt, gesamt schnittige, gesamtheitliche, gesamtheitliche, gesamtheitliche, gesamtheitliche, gesamtheitliche, gesamtheitliche, gesamtheitliche, gesamtheitliche und gesamtheitliche, gesamt:.",
-      "Increasing $x$ by $3$ always changes $v$ by $1$.",
-      "$v$ is decreasing."
+      "Die Erhöhung von $x$ um $3$ ändert sich immer $v$ um $1$.",
+      "$v$ nimmt ab."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDie angegebene Linie wird bereits als $mx+q$ geschrieben, so dass die Steigung der Koeffizient von $x$ ist.\n\n$$v(x)=\\frac{1}{3}x-2$$\n\n$$m=\\frac{1}{3}$$\n\nEine zusätzliche Einheit von $x$ erhöht daher die Höhe um $\\frac{1}{3}$, überall entlang der Linie gleich.\n\nDie Steigung ist $\\frac{1}{3}$.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nThe graph crosses the horizontal axis where the height is zero, so isolate $x$ by adding $2$ and then multiplying by $3$.\n\n$$\\frac{1}{3}x-2=0$$\n\n$$x=6$$\n\nSubstituting back gives\n\n$$v(6)=\\frac{1}{3}\\cdot 6-2$$\n\n$$v(6)=0$$\n\nso it is a genuine zero.\n\nibel ist es, die gierswerteres.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nDer Graph kreuzt die horizontale Achse, wo die Höhe Null ist, also isolieren Sie $x$, indem Sie $2$ addieren und dann mit $3$ multiplizieren. $$\\frac{1}{3}x-2=0$$ � $$x=6$$ �\n\nErsatz von Gives $$v(6)=\\frac{1}{3}\\cdot 6-2$$ � $$v(6)=0$$ �\n\nEs ist also eine echte Null.\n\nDie Kreuzung ist bei $x=6$.\n\nDie Aussage ist wahr.",
       "**C.** → Wahr\n\nBei $x=0$ ist der Überlegungsterm verschwunden, den Konstanten verlassend; diese Konstante ist der Interferat auf der vertikalen Achse.\n\n$$v(x)=\\frac{1}{3}x-2$$\n\n$$v(0)=-2$$\n\nDie sanfte Steigung $\\frac{1}{3}$ trägt dabei gar.\n\nund diear und und und und und und und dies und und die und die und die und und und und und die und und und und die und und und änder und und und und die und und und.s und und die und und\n\nDie Aussage ist wahr.",
       "**D.** → Wahr\n\nAuf einer Linie, die die Änderung der Höhe hängt nur von der Länge des Schrittes: Es ist die Höhe und, die Länge, die die Länge, die verliert.\n\n$$v(x)=\\frac{1}{3}x-2$$\n\n$$v(x+3)-v(x)=\\frac{1}{3}\\cdot 3$$\n\n$$v(x+3)-v(x)=1$$\n\nDer Anfang.t. t.... T. T 2.... T 3..\n\nIncreasing $x$ by $3$ always changes $v$ by $1$.\n\nDie Aussage ist wahr.",
       "**E.** → Falsch\n\nDie Richtung einer Linie wird durch das Zeichen ihrer Steigung bestimmt. Hier ist die Steigung der positive Anteil $\\frac{1}{3}$. $$v(x)=\\frac{1}{3}x-2$$ $$m=\\frac{1}{3}$$ Da die Steigung positiv ist, erhöht jeder Schritt nach rechts die Höhe: $v(0)=-2$ während $v(3)=-1$.\n\nDie Funktion nimmt zu, nicht ab.\n\nDie Aussage ist falsch."
@@ -1281,7 +1281,7 @@
       "Der Graph von $u$ trifft die $y$ -Achse in $y=3$.",
       "Der Graph von $u$ kreuzet die $x$ -Achse bei $x=6$.",
       "$u(-2)=4$.",
-      "$u$ is increasing."
+      "$u$ nimmt zu."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine Steigung und ein Punkt bestimmen eine Linie: Start bei $(4,1)$ und gehen entlang der Steigung $-\\frac{1}{2}$. $$u(x)=-\\frac{1}{2}(x-4)+1$$ Wenn Sie die Klammer erweitern, wird die Regel in die Form $mx+q$. $$u(x)=-\\frac{1}{2}x+2+1$$ $$u(x)=-\\frac{1}{2}x+3$$ Die wieder aufgebaute Regel ist die in der Behauptung gedruckte.\n\nDie Aussage ist wahr.",
@@ -1315,14 +1315,14 @@
     "context": "U- hilfe / - 00 Es wird nicht nummern angegeben. „Ve. D",
     "solution_overview": "Seine Koeffizient Inen-sämtlichesswertes: Diemsen werden durch die Ausformulierung eines Parabels behandelt.\n\n$$\nx = -\\frac{b}{2a},\\qquad g(x)-f(x) = 0\n$$\n\nDie Achse der Symmetrie sitzt bei $x=-\\frac{b}{2a}$, so folgt es den ersten beiden Koeffizienten und ignoriert den konstanten Begriff völlig. Für die irdischen Menschen und für die und irdischen Menschen, für die die irdischen Männer und Männer der irdischen irdischen irdischen irdischen irdischen irdischen irdischen irdischen irdischen irdischen",
     "statements": [
-      "The coefficient of $x^{2}$ in $d$ is nonzero.",
+      "Der Koeffizient von $x^{2}$ in $d$ ist ungleich Null.",
       "Eine Auswahl von $f$ macht $d$ zu einer linearen Funktion.",
       ".",
       "Wenn der Koeffizient von $x$ in $d$ verschwindet, ist die Achse von $g$ die vertikale Koordinatenachse.",
       "Was immer $f$ ist, der Graph von $d$ öffnet sich in der gleichen Richtung,."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\n,,,,, und,,,,,,,,.., mit,,,. Nur das Parabel kann einen quadratischen Begriff beitragen\n\n$$d(x)=(ax^{2}+bx+c)-(mx+q)$$\n\n$$d(x)=ax^{2}+(b-m)x+(c-q)$$\n\nThe line only ever touches the $x$ term and the constant term; the coefficient of $x^{2}$ is copied from $g$ and is nonzero because $g$ is a parabola.\n\nDieser Koeffizient ist gleich ∗ T0 ∗ T0 ∗ T1 ∗ T\n\nDie Aussage ist wahr.",
+      "**A.** → Wahr\n\nSchreiben Sie $f(x)=mx+q$ und $g(x)=ax^{2}+bx+c$ mit $a\\neq 0$ und erweitern Sie die Differenz. Nur das Parabel kann einen quadratischen Begriff beitragen. $$d(x)=(ax^{2}+bx+c)-(mx+q)$$ � $$d(x)=ax^{2}+(b-m)x+(c-q)$$ �\n\nDie Zeile berührt immer nur den $x$ Term und den konstanten Term; der Koeffizient von $x^{2}$ wird von $g$ kopiert und ist ungleich Null, weil $g$ ein Parabel ist.\n\nDieser Koeffizient ist gleich $a\\neq 0$ was auch immer $f$ ist.\n\nDie Aussage ist wahr.",
       "**B.** → Falsch\n\nWenn Sie $d$ zu einer Zeile machen, muss der quadratische Term verschwinden, also fragen Sie, welche Wahl von $f$ ihn annullieren könnte.\n\n$$d(x)=ax^{2}+(b-m)x+(c-q)$$\n\nEine Linie hat überhaupt keinen Term $x^{2}$, so dass sie subtrahiert $a$ an Ort und Stelle lässt; der einzige Weg, einen Nullkoeffizienten zu erreichen, wäre $a=0$, was ausgeschlossen ist.\n\n$$a\\neq 0$$\n\n$$d\\text{ still has a square term}$$\n\nÜber die ph ehe melh ph melph ph melph ph ph ph phs ph ph ph phverkehrs welchen ph ließ ky oph ph s ph ph ph hoph ph die ph ph ph ph ph ph ph ph ph ph ph ph ph ph mels s ph phult der ph ph ph ph ph verliert ph die ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph phras ph ph ph x den gi ph ph ph ph ph ph s ph gl ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph ph Fundamentals ph ph ph ph ph ph ph ph ph ph ph\n\nDie Aussage ist falsch.",
       "**C.** → Wahr\n\nIch, ich berebt, diesonnen, und die haben wir nicht.\n\n$$d(x)=ax^{2}+(b-m)x+(c-q)$$\n\ndie Zeit Zeuge des Beginns der Linie und alle anderen Abschnitte gleich gut.\n\n$$m = b$$\n\n$$d(x)$$\n\n$$d(x)=ax^{2}+(c-q)$$\n\nEine geeignete Linie entfernt den scheidenden Zustand vollständig.\n\nDie Aussage ist wahr.",
       "**D.** → Falsch\n\nEin vernäht man............................................ r..............................................................................\n\n$$b-m = 0$$\n\n$$d(x)=ax^{2}+(c-q)$$\n\nNehmen Sie ein konkretes Paar, in dem dies geschieht, während die Achse von lä rs auf der vertikale Koordinatenachse.\n\n$$g(x)=x^{2}+2x$$\n\n$$f(x)=2x$$\n\n$$d(x)$$\n\n$$f(x)=x^{2}$$\n\nA-Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa dazu.\n\nDie Bedingung auf � gesichert -T0. sagt nichts darüber, wo die Achse von..\n\nDie Aussage ist falsch.",
@@ -1376,7 +1376,7 @@
       "Die Ursachen von �ähnlich ********************en sind.",
       "Der Abstand zwischen den beiden Wurzeln von $q$ ist $4$.",
       "Der kleinste Wert von $q$ ist $21$.",
-      "The horizontal line $y=-4$ meets the graph of $q$ at two different points."
+      "Die horizontale Linie $y=-4$ trifft den Graphen von $q$ an zwei verschiedenen Punkten."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDer Wendepunkt sitzt auf der Achse �� (ding ) Zeuge, also zu berechnen, dass die abszsisse von den angegebenen.\n\n$$q(x)=x^{2}-10x+21$$\n\n$$x=-\\frac{-10}{2}$$\n\n$$x=5$$\n\n$$q(5)=25-50+21$$\n\n$$q(5)=25-50$$\n\n$$q(5)=-25$$\n\n$$q(5)=-25+21$$\n\n$$q(5)=-4$$\n\nDer Vertex ist also der Punkt $(5,-4)$.\n\nDas ist der Punkt, der in der Behauptung genannt wird.\n\nDie Aussage ist wahr.",
@@ -1393,7 +1393,7 @@
     "statements": [
       "Der jedoch die maßen an Langerm, als durchschnittlicher",
       "Der kleinste mögliche Kraftstoffverbrauch entspricht $30$ Litern.",
-      "Between $x=20$ and $x=40$ the fuel use changes at an average rate of $-1$ litres per unit of $x$.",
+      "Zwischen $x=20$ und $x=40$ ändert sich der Kraftstoffverbrauch mit einer durchschnittlichen Rate von $-1$ Liter pro Einheit von $x$.",
       "Der, wie er sich nie auch reizt.",
       "Bei ��trin ist der Kraftstoffverbrauch gleich gleich � en sich s1 Liter."
     ],
@@ -1407,12 +1407,12 @@
   },
   "MATH 7.75": {
     "title": "einer mit einem, einem, dem anderen",
-    "context": "A parabola $q$ has its vertex at $(3,-8)$ and passes through the point $(1,0)$; recover its rule before judging the claims. Evaluate each statement. Mark it WAHR or FALSCH.",
+    "context": "Ein Parabel $q$ hat seinen Scheitelpunkt bei $(3,-8)$ und geht durch den Punkt $(1,0)$; seine Regel wiedererlangen, bevor man die Behauptungen beurteilt. Bewertete jede Aussage. Markiere sie mit WAHR oder FALSCH.",
     "solution_overview": "Ein Scheitelpunkt fixiert die Form bereits bis zu einem Dehnungsfaktor, also schreiben Sie das Parabel in eine ausgefüllte Quadratform und lassen Sie den zusätzlichen Punkt den Faktor bestimmen.\n\n$$q(x)=a\\left(x-3\\right)^{2}-8$$\n\nDies ist eine Vorgabe, die in der Höhe derenenre Meter-Ergebnis-Rechnung definiert wird.\n\n$$\n0 = a\\left(1-3\\right)^{2}-8\\Rightarrow a = 2\n$$\n\nDie Erweiterung des Quadrats bringt die Regel in Standardform.\n\n$$q(x)=2x^{2}-12x+10$$\n\nWenn man das Quadrat vervollständigt, wird der Wendepunkt vermerkt, und die Relationen von Vieta ergeben die Summe $S$ und das Produkt $P$ der Wurzeln, ohne etwas zu lösen.\n\n$$\n\\text{vertex} = \\left(3,-8\\right),\\qquad S = 6,\\qquad P = 5\n$$\n\nDie mit den Ge interconnectedenMW-Tossens und zu den offensinstisch verab--somit-sschütten\n\n$$\n\\Delta = 64,\\qquad x_{1} = 1,\\qquad x_{2} = 5\n$$\n\nDie wendungen sanken auf die nschatte.",
     "statements": [
       "Die Regel ist $q(x)=2x^{2}-12x+10$.",
       "Die Wurzeln von $q$ sind $1$ und $5$.",
-      "The graph of $q$ meets the $y$-axis at $y=10$.",
+      "Der Graph von $q$ trifft auf die $y$ -Achse bei $y=10$.",
       "Der führende Koeffizient von $q$ ist $2$.",
       "\"n, der der techniker,"
     ],
@@ -1433,7 +1433,7 @@
       "Der größtmögliche Gewinn ist gleich $64$.",
       "Der Gewinn ist bei $x=4$ und $x=20$ genau Null.",
       "Zwischen $x=0$ und $x=10$ ändert sich der Gewinn mit einer durchschnittlichen Rate von $14$ pro Einheit von $x$.",
-      "At $x=2$ the profit equals $0$."
+      "Bei $x=2$ ist der Gewinn gleich $0$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nProfit folgt einem Parabel, so dass die beste Ausgabe die Abese des Wendepunkts ist, aus den ersten beiden Ko Hinweis $$P(x)=-x^{2}+24x-80$$ $$a=-1,\\ b$$ $$a=24$$ $$x=-\\frac{24}{2\\cdot(-1)}$$ $$x=12$$ Der Leitkoeffizient $-1$ ist negativ,fahrt, also steigt das Modell auf diesen Eingang und nachfolgend fällt.\n\nDer Gewinn ist am größten bei $x=12$.\n\nDie Aussage ist wahr.",
@@ -1450,7 +1450,7 @@
     "statements": [
       "Die Wurzeln von $w$ sind $-1$ und $7$.",
       "Die Symmetrieachse von $w$ ist die Linie $x=3$.",
-      "Expanding gives $w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$.",
+      "Expandieren gibt $w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$.",
       "Das hat die Würfel.",
       "$w(x)\\ge 0$ gilt für jeden realen $x$."
     ],
@@ -1467,7 +1467,7 @@
     "context": "Ein Stein wird nach obentaucht, und die Höhe über dem Boden wird einmal pro zufolge. Beurteilen Sie jede einzelne Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "Die Tabelle ist der ganze Stamm, also lesen Sie es als eine Liste von Paaren. $$\\left(0,0\\right),\\ \\left(1,25\\right),\\ \\left(2,40\\right),\\ \\left(3,45\\right),\\ \\left(4,40\\right)$$ An dertrieben, und an deren angreifen und angreifen, und an deren angreifen und angreifen. $$\\text{first}:\\ 25,\\ 15,\\ 5,\\ -5\\qquad \\text{second}:\\ -10,\\ -10,\\ -10$$ Die erste, die für die erste und die gleiche Dieartige, Kursierung ist die erste, die zweite, die zweite, die zweite, die zweite, die zweite, die zweite. $$y=-5x^{2}+30x$$",
     "statements": [
-      "The first differences of the $y$-values are constant.",
+      "Die ersten Differenzen der $y$ -Werte sind konstant.",
       "Die zweiten Differenzen der $y$ -Werte sind konstant und gleich $-10$.",
       "Die Tabelle wird nach der Regel $y=-5x^{2}+30x$ erstellt.",
       "Die $y$ -Werte in der Tabelle sind am größten bei $x=3$.",
@@ -1503,7 +1503,7 @@
   "MATH 7.80": {
     "title": "Spiegelung einer Linie und einer Parabola",
     "context": "Eine Zeile $f$ und ein Parabel $g$ werden gespiegelt, indem $x$ durch $-x$ ersetzt wird: schreiben $\\tilde f(x)=f(-x)$ und $\\tilde g(x)=g(-x)$. No numeric data are supplied. Bewerten Sie jeden Menge. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "No coefficients are fixed, so the letters $a$, $b$ and $c$ have to be handled through the formulas that hold for every parabola.\n\n$$\nx = -\\frac{b}{2a},\\qquad \\Delta = b^{2}-4ac\n$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Replacing $x$ by $-x$ reflects a graph in the $y$-axis, and a parabola survives that swap exactly when its middle coefficient vanishes.\n\nDie rucken von der anderen Seite ist die Frage, die von den Menschen von den Menschen von den Menschen von den von den vonvielen von den besaßen von den in die Florenz von deren.",
+    "solution_overview": "Es sind keine Koeffizienten festgelegt, daher müssen die Buchstaben $a$, $b$ und $c$ durch die Formeln behandelt werden, die für jedes Parabel gelten. $$\nx = -\\frac{b}{2a},\\qquad \\Delta = b^{2}-4ac\n$$ �\n\nDie Symmetrieachse liegt bei $x=-\\frac{b}{2a}$, folgt also den ersten beiden Koeffizienten und ignoriert den konstanten Term vollständig. Die Diskriminante zählt die wirklichen Wurzeln: zwei, während sie positiv ist, eine, wenn sie verschwindet und keine, wenn sie negativ wird. Das Ersetzen von $x$ durch $-x$ spiegelt einen Graphen in der $y$ -Achse wider und ein Parabel überlebt diesen Swap genau dann, wenn sein mittlerer Koeffizient verschwindet.\n\nBeide Graphen werden auf einmal reflektiert, so dass immer die Frage ist, welches Merkmal eine Reflexion überlebt.",
     "statements": [
       "Die Graphen von $\\tilde f$ und $\\tilde g$ treffen treffen sich genau so oft, wie die von � IM und $g$.",
       "Wenn die Graphen von $f$ und $g$ tangential sind, dann sind es auch die von $\\tilde f$ und $\\tilde g$.",
@@ -1541,7 +1541,7 @@
   "MATH 7.82": {
     "title": "Wo die Differenz ihr Extrem erreicht",
     "context": "Es wird eine Linie $f$ mit Steigung $m$ und ein Parabel $g$ mit ungleich Null führendem Koeffizienten $a$ angegeben; schreiben Sie $d=g-f$ für ihre Differenz. No numeric data are supplied. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
-    "solution_overview": "Der (s)-Salz (s)/sal/sal:sal/sal (ssal)sal (sal)sal (sal)sal (sal)sal\n\n$$\nx = -\\frac{b}{2a},\\qquad \\Delta = b^{2}-4ac\n$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.",
+    "solution_overview": "Da $a$, $b$ und $c$ niemals Nummern erhalten, muss jede Behauptung für jede zulässige Wahl von ihnen überleben. $$\nx = -\\frac{b}{2a},\\qquad \\Delta = b^{2}-4ac\n$$ �\n\nDie Symmetrieachse liegt bei $x=-\\frac{b}{2a}$, folgt also den ersten beiden Koeffizienten und ignoriert den konstanten Term vollständig. Die Diskriminante zählt die wirklichen Wurzeln: zwei, während sie positiv ist, eine, wenn sie verschwindet und keine, wenn sie negativ wird. Die ausgefüllte Quadratform setzt den Wendepunkt auf $(h,k)$ und das Vorzeichen von $a$ entscheidet darüber, ob $k$ der kleinste oder größte Wert ist.",
     "statements": [
       "Wenn $m$ nicht verschwindet, unterscheidet sich die Achse von $d$ von der Achse von $g$.",
       "Die Achse von $d$ hängt nie von $m$ ab.",
@@ -1619,8 +1619,8 @@
     "context": "Lesen Sie die Zeile $f(x)=5x+1$ und das Parabel $g(x)=3x^{2}-2x-1$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Beide Regeln werden mit bereits vorhandenen Zahlen übergeben: $$\nf(x) = 5 x + 1,\\qquad g(x) = 3 x^{2} - 2 x - 1\n$$ Das Umschreiben von $g$ als $a(x-h)^{2}+k$ setzt den Scheitelpunkt frei, wobei $h$ aus der Achsenformel und $k$ erhalten wird, indem man diese Abszisse wieder einsetzt. $$\ng(x) = 3\\left(x-\\frac{1}{3}\\right)^{2}-\\frac{4}{3},\\qquad \\text{vertex} = \\left(\\frac{1}{3},-\\frac{4}{3}\\right)\n$$ Da $f$ eine Linie mit ungleich Null Steigung ist, trägt das Quadrat $f(x)^{2}$ bereits einen $x^{2}$ Term, so dass $g$ aus $f(x)^{2}$, $f(x)$ und einer Konstante neu aufgebaut werden kann. Matching coefficients gives $$\nA = \\frac{3}{25},\\qquad B = -\\frac{16}{25},\\qquad C = -\\frac{12}{25}\n$$",
     "statements": [
-      "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{3}{25}$.",
-      "Matching $g=Af^{2}+Bf+C$ forces $B=-2$.",
+      "Matching $g=Af^{2}+Bf+C$ Kräfte $A=\\frac{3}{25}$.",
+      "Matching $g=Af^{2}+Bf+C$ Kräfte $B=-2$.",
       "Die höchste Potenz von $x$ in der verschachtelten Funktion $f(g(x))$ ist $x^{2}$.",
       "$g(f(0))=0$.",
       "$f(g(0))=g(f(0))$."
@@ -1813,7 +1813,7 @@
       "$g(x)=2x^{2}-8x$.",
       "Die Wurzeln von $g$ sind $0$ und $4$.",
       "Die Graphen von $f$ und $g$ treffen sich an einem Punkt der $y$ -Achse.",
-      "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{9}$."
+      "Matching $g=Af^{2}+Bf+C$ Kräfte $A=\\frac{2}{9}$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine Steigung und ein Punkt bestimmen eine Linie und die Punkt-Steigungsform ist der schnellste Weg zu ihrer Formel. $$f(x)=-3(x-1)+2$$ $$f(x)=-3x+3+2$$ $$f(x)=-3x+5$$ Die Überprüfung erfolgt sofort: Die Steigung ist $-3$ und der Wert bei $x=1$ ist $2$, je nach Bedarf. $$f(1)=-3+5$$ $$f(1)=2$$ Die wiedergewonnene Formel ist genau die beanspruchte.\n\nDie Aussage ist wahr.",
@@ -2212,7 +2212,7 @@
       "Profit $\\Pi(p)=-p^{2}+6p-4$ hat Achse $p=3$, so dass das Gewinnmaximum nicht am Umsatzmaximum liegt.",
       "Die Gewinnwerte erfüllen $\\Pi(3)=5$ und $\\Pi(4)=4$, was eine Ein-Einheiten-Verschiebung des Peaks bestätigt.",
       "Bei $p=0$ ist der Umsatz geringer als die Kosten, während bei $p=5$ der Umsatz die Kosten übersteigt.",
-      "Break-even löst $\\Pi(p)=0$ und hat diskriminant $20>0$, so dass es zwei echte Break-even-Preise gibt."
+      "Break-even löst $\\Pi(p)=0$ und hat diskriminant $20>0$, also gibt es zwei echte Break-even-Preise."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nErweitern Sie die Umsatzregel und lesen Sie den Leitkoeffizienten und die Achse. Ein negativer Leitkoeffizient dreht die Arme nach unten, so dass der Scheitelpunkt ein höchster Punkt ist. $$R(p)=p(8-p)$$ $$R(p)=-p^{2}+8p$$ $$a=-1$$ $$-1<0$$ $$p=-\\frac{8}{2\\cdot(-1)}$$ $$p=4,\\qquad R(4)=16$$ Die auf $-p^{2}+8p$ angewandte Achsenformel $p=-b/(2a)$ ist $8/2=4$ und ersetzt den angegebenen Spitzenumsatz $16$. $$R(4)=4\\cdot 4$$ $$R(4)=16$$ Ein nach unten gerichtetes Parabel mit dem Maximum $16$ bei $p=4$.\n\nDie Aussage ist wahr.",
@@ -2299,7 +2299,7 @@
     ]
   },
   "MATH 7.E25": {
-    "title": "Shared Interception, gleitendes zweites Meeting",
+    "title": "Gemeinsamer Schnittpunkt, gleitendes zweites Treffen",
     "context": "Es sei $g_a(x)=a x^{2}-4x+3$ mit $a\\neq 0$ und $f(x)=3$. Beobachten Sie, wie der führende Koeffizient die Meetings mit dem Level $y=3$ ändert. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Die Familie $g_a$ ist eine Parabel, deren Leiterkoeffizient �legt zufolge der Parameter � ca. $a$ ist, und die Vergleichslinie ist der konstante Pegel $y=3$. Besprechungen lösen �� T3dynamik.\n\n$$\ng_a(x) = ax^{2}-4x+3,\\qquad f(x) = 3\n$$\n\n$$\ng_a(x)-3 = ax^{2}-4x = x(ax-4)\n$$\n\nThe factor $x$ is independent of $a$, so $x=0$ is a meeting for every $a\\neq 0$. The other meeting slides with the parameter: $x=4/a$. In particular $a=1$ gives the second meeting $x=4$, while $a=2$ gives $x=2$, not $x=3$.\n\n$$\nx = 0,\\qquad x = \\frac{4}{a}\n$$\n\n$$\n\\text{If }a=1\\text{ then }x=4;\\quad \\text{if }a=2\\text{ then }x=2\n$$\n\nDie Achse $-b/(2a)$ beinhaltet immer noch bei $a$, ist also nicht unabhängig vom Leitkoeffizienten.\n\n$$\nx = \\frac{4}{2a} = \\frac{2}{a}\n$$\n\nDie Richtungen der en. Für SAT-Firma????????????????????????????????????????????\n\n$$a=-1<0$$",
     "statements": [
@@ -2341,7 +2341,7 @@
     "context": "Es seien $f(x)=x-2$ (so $f^{-1}(x)=x+2$ ) und $g(x)=x^{2}-1$. Study $g(f^{-1}(x))$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Die innere Karte ist die inverse Linie $f^{-1}(x)=x+2$, so dass das Ersetzen in das Parabel jeden Eingang zwei Einheiten nach links verschiebt, bevor es quadriert wird. $$\nf(x) = x-2,\\qquad f^{-1}(x) = x+2,\\qquad g(x) = x^{2}-1\n$$ $$g(f^{-1}(x))=(x+2)^{2}-1$$ Die Erweiterung des Quadrats erzeugt ein monisches Quadrat mit einem linearen Term $4x$ und konstant $3$. Factoring stellt die beiden Wurzeln als die ursprünglichen Wurzeln von $g$ um $-2$ verschoben. $$\ng(f^{-1}(x)) = x^{2}+4x+3 = (x+1)(x+3)\n$$ Die verschachtelte Regel verschwindet daher bei $x=-1$ und bei $x=-3$. Der führende Koeffizient $1$ ist positiv, so dass der verschachtelte Graph ein Parabel ist, das sich nach oben öffnet. Das Ersetzen einer inversen Linie erhöht niemals die höchste Potenz über $x^{2}$. $$\nx = -1,\\qquad x = -3,\\qquad a = 1>0\n$$ $$\nS = -4,\\qquad P = 3,\\qquad \\Delta = 4\n$$",
     "statements": [
-      "The nested rule $g(f^{-1}(x))$ equals $(x+2)^{2}-1$, which is $g$ evaluated at the inverse shift $x+2$.",
+      "Die verschachtelte Regel $g(f^{-1}(x))$ ist gleich $(x+2)^{2}-1$, was bei der inversen Verschiebung $x+2$ ausgewertet wird.",
       "Erweitert ist diese verschachtelte Regel $x^{2}+4x+3$, deren konstanter Term $3$ gleich $g(f^{-1}(0))$.",
       "Die verschachtelte Regel verschwindet bei $x=-1$ und bei $x=-3$, so dass Vietas Summe dieser Wurzeln $-4$ ist, was dem mittleren Koeffizienten entspricht.",
       "Bei $x=0$ ist die verschachtelte Regel gleich $3$, was auch $g(f^{-1}(0))=g(2)$ ist.",

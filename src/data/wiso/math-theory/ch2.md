@@ -1,75 +1,75 @@
-# Chapter 2 — Elementary algebra
+# Kapitel 2 — Elementare Algebra
 
-Elementary algebra is the language of almost every later chapter on the BBE mathematics exam. Before you can talk about equations, inequalities, functions, or optimisation, you must be able to expand, factor, cancel, rewrite powers, and handle absolute values without changing what an expression means.
+Elementare Algebra ist die Sprache fast jedes späteren Kapitels der BBE-Mathematikprüfung. Bevor Sie über Gleichungen, Ungleichungen, Funktionen oder Optimierung sprechen können, müssen Sie in der Lage sein, Befugnisse zu erweitern, zu faktorisieren, zu annullieren, umzuschreiben und absolute Werte zu verarbeiten, ohne zu ändern, was ein Ausdruck bedeutet.
 
-This chapter starts from the basic identities and builds the exact skills the Chapter 2 True/False tasks test. The exam rarely asks you to plug in numbers. It asks you to decide whether a symbolic identity holds for every allowed value, and whether a simplification keeps the original domain.
+Dieses Kapitel beginnt mit den grundlegenden Identitäten und baut die genauen Fähigkeiten des Kapitels 2 Wahr/Falsch-Aufgabentests auf. Die Prüfung fordert Sie selten auf, Zahlen einzufügen. Es fordert Sie auf zu entscheiden, ob eine symbolische Identität für jeden erlaubten Wert gilt und ob eine Vereinfachung die ursprüngliche Domäne behält.
 
-## Learning objectives
+## Lernziele
 
-- Expand products and squares using the distributive law and the standard square identities.
-- Factor differences of squares, sums and differences of cubes, and common-factor groupings.
-- Add, subtract, multiply, and divide rational expressions, keeping every excluded value in mind.
-- Apply the laws of exponents for positive, negative, and fractional powers.
-- Rewrite roots as fractional powers and simplify nested roots on the allowed domain.
-- Use absolute-value definitions, distance meaning, and equations or inequalities with $|\,{\cdot}\,|$.
-- Spot the common false “identities” that look familiar but fail for some real numbers.
-- Decide True/False exam claims by rewriting both sides and checking domains, not by guessing from a slogan.
+- Erweitern Sie Produkte und Quadrate unter Verwendung des Verteilungsgesetzes und der standardmäßigen quadratischen Identitäten.
+- Faktorunterschiede von Quadraten, Summen und Differenzen von Würfeln und Gemeinsam-Faktor-Gruppierungen.
+Addieren, subtrahieren, multiplizieren und teilen Sie rationale Ausdrücke, wobei Sie jeden ausgeschlossenen Wert im Auge behalten.
+Wenden Sie die Gesetze der Exponenten für positive, negative und gebrochene Mächte an.
+- Schreiben Sie Wurzeln als fraktionierte Befugnisse um und vereinfachen Sie verschachtelte Wurzeln auf der erlaubten Domain.
+Verwenden Sie Absolutwertdefinitionen, Entfernungsbedeutung und Gleichungen oder Ungleichungen mit $|\,{\cdot}\,|$ .
+- Entdecken Sie die gängigen falschen "Identitäten", die vertraut aussehen, aber für einige reelle Zahlen scheitern.
+- Entscheiden Sie die Wahrheit/Falsch-Prüfungen Behauptungen, indem Sie beide Seiten umschreiben und Domains überprüfen, nicht indem Sie von einem Slogan raten.
 
 ---
 
-## 2.1 Expanding, factoring, and identities
+## 2.1 Erweiterung, Factoring und Identitäten
 
-### What an identity is
+### Was eine Identität ist
 
-An **identity** is an equality that holds for every value in the stated domain. On the exam, a claim such as
+Eine **Identität** ist eine Gleichheit, die für jeden Wert in der angegebenen Domäne gilt. Auf der Prüfung, eine Behauptung wie
 
 $$
 (a+b)^2 = a^2 + 2ab + b^2
 $$
 
-is True because both sides match for every real pair $(a,b)$. A claim such as
+ist Wahr, weil beide Seiten für jedes reale Paar $(a,b)$ übereinstimmen. Eine Behauptung wie
 
 $$
 (a+b)^2 = a^2 + b^2
 $$
 
-is False because it already fails when $a=1$ and $b=1$.
+Falsch ist, weil es bereits versagt, wenn $a=1$ und $b=1$ .
 
-The exam loves statements that look almost right. Your job is to expand or factor carefully and see whether the two sides are the same polynomial (or the same expression on the given domain).
+Die Prüfung liebt Aussagen, die fast richtig aussehen. Ihre Aufgabe ist es, sorgfältig zu erweitern oder zu faktorisieren und zu sehen, ob die beiden Seiten das gleiche Polynom (oder der gleiche Ausdruck in der angegebenen Domäne) sind.
 
-### The distributive law
+### Das Verteilungsrecht
 
-For any real numbers $a$, $b$, and $c$,
+Für alle reellen Zahlen $a$ , $b$ , und $c$ ,
 
 $$
 a(b+c) = ab + ac.
 $$
 
-With two brackets,
+mit zwei Klammern,
 
 $$
 (a+b)(c+d) = ac + ad + bc + bd.
 $$
 
-A useful special case is the “sum times difference” pattern:
+Ein nützlicher Spezialfall ist das Muster „Summe mal Differenz:
 
 $$
 (a+b)(c+d) + (a+b)(e+f) = (a+b)\bigl((c+d)+(e+f)\bigr),
 $$
 
-but the cleaner everyday grouping you meet is
+Aber die sauberere alltägliche Gruppierung, die Sie treffen, ist
 
 $$
 uw + uz + vw + vz = (u+v)(w+z).
 $$
 
-**Example 1.** Expand $(x+3)(x-5)$.
+**Beispiel 1.** Expand $(x+3)(x-5)$ .
 
 $$
 (x+3)(x-5) = x^2 - 5x + 3x - 15 = x^2 - 2x - 15.
 $$
 
-### Squares of sums and differences
+### Quadrate von Summen und Differenzen
 
 $$
 (a+b)^2 = a^2 + 2ab + b^2,
@@ -79,13 +79,13 @@ $$
 (a-b)^2 = a^2 - 2ab + b^2.
 $$
 
-The middle term $2ab$ (or $-2ab$) is the one students drop. That is why
+Der mittlere Begriff $2ab$ (oder $-2ab$ ) ist derjenige, den die Schüler fallen lassen. Aus diesem Grund
 
 $$
 (m+n)^2 = m^2 + n^2
 $$
 
-is a classic False claim.
+ist eine klassische Falsche Behauptung.
 
 Also watch scalar multiples:
 
@@ -93,27 +93,27 @@ $$
 (2t)^2 = 4t^2,
 $$
 
-not $2t^2$. The square applies to the whole product $2t$.
+nicht $2t^2$ . Das Quadrat gilt für das gesamte Produkt $2t$ .
 
-**Example 2.** Expand $(3x-1)^2$.
+**Beispiel 2.** Expand $(3x-1)^2$ .
 
 $$
 (3x-1)^2 = 9x^2 - 6x + 1.
 $$
 
-### Difference of squares
+### Differenz der Quadrate
 
 $$
 a^2 - b^2 = (a-b)(a+b).
 $$
 
-This is one of the most useful factoring tools on the exam. It also explains why, for $a\neq b$,
+Dies ist eines der nützlichsten Factoring-Tools für die Prüfung. Es erklärt auch, warum, für $a\neq b$
 
 $$
 \frac{a^2-b^2}{a-b} = a+b
 $$
 
-is True: you cancel the common factor $a-b$, and the remaining domain still excludes $a=b$.
+ist Wahr: Sie kündigen den gemeinsamen Faktor $a-b$ , und die verbleibende Domäne schließt $a=b$ noch aus.
 
 ### Cubes
 
@@ -125,23 +125,23 @@ $$
 a^3 + b^3 = (a+b)(a^2 - ab + b^2).
 $$
 
-A related identity with sum and product is
+Eine verwandte Identität mit Summe und Produkt ist
 
 $$
 p^3 + q^3 = (p+q)^3 - 3pq(p+q).
 $$
 
-If $p+q=s$ and $pq=r$, then
+Wenn $p+q=s$ und $pq=r$ dann
 
 $$
 p^3 + q^3 = s^3 - 3rs.
 $$
 
-Exam traps often replace $3rs$ by $3r$ or $3s$. Check the formula letter by letter.
+Prüfungsfallen ersetzen oft $3rs$ durch $3r$ oder $3s$ . Überprüfen Sie die Formel Buchstabe für Buchstabe.
 
-### Completing a square and recognising a square
+### Ein Quadrat ausfüllen und ein Quadrat erkennen
 
-Sometimes an expression is already a square in disguise:
+Manchmal ist ein Ausdruck bereits ein Quadrat in Verkleidung:
 
 $$
 x^4 + 2x^2 y^2 + y^4 = (x^2 + y^2)^2.
@@ -153,57 +153,57 @@ $$
 w^2 - 8w + 16 = (w-4)^2.
 $$
 
-Recognising the square first makes the later absolute-value and root steps much easier.
+Das Erkennen des Quadrats macht die späteren Absolutwert- und Wurzelschritte viel einfacher.
 
 ### Factoring by grouping
 
-If four terms share factors in pairs, group them:
+Wenn vier Begriffe Faktoren in Paaren teilen, gruppieren Sie sie:
 
 $$
 x^3 + 3x^2 - x - 3 = x^2(x+3) - 1(x+3) = (x^2-1)(x+3) = (x-1)(x+1)(x+3).
 $$
 
-Always check that the common binomial really is common before you factor it out.
+Überprüfen Sie immer, ob das gemeinsame Binom wirklich üblich ist, bevor Sie es ausklammern.
 
-### How to judge a 2.1 True/False claim
+### Wie man eine 2.1 Wahr/Falsch Behauptung beurteilt
 
-1. Write down the claimed equality.
-2. Expand the more complicated side, or factor both sides into the same shape.
-3. Compare coefficients (or compare after bringing everything to one side).
-4. If the claim says “for every real …”, one counter-example is enough to make it False.
-5. If it is an identity, show the algebra that proves both sides match.
+1. Schreibe die geforderte Gleichheit auf.
+2. Erweitern Sie die kompliziertere Seite oder Faktor beide Seiten in die gleiche Form.
+3. Vergleichen Sie Koeffizienten (oder vergleiche, nachdem Sie alles zur Seite gebracht haben).
+4. Wenn die Behauptung sagt „für jedes reale ..., ist ein Gegenspiel genug, um es falsch zu machen.
+5. Wenn es eine Identität ist, zeigen Sie die Algebra, die beweist, dass beide Seiten übereinstimmen.
 
-**Example 3.** Is $(h+k)^2 = h^2 + k^2$ True for every real pair $(h,k)$?
+**Beispiel 3.** Ist $(h+k)^2 = h^2 + k^2$ Wahr für jedes echte Paar $(h,k)$ ?
 
-No. Take $h=1$, $k=1$. Left side $4$, right side $2$. The claim is False.
+Nein. Nehmen Sie $h=1$ , $k=1$ . Linke Seite $4$ , rechte Seite $2$ . Die Behauptung ist falsch.
 
 ---
 
-## 2.2 Rational expressions and algebraic fractions
+## 2.2 Rationale Ausdrücke und algebraische Brüche
 
 ### Domain comes first
 
-A **rational expression** is a quotient of polynomials (or, more generally, an algebraic fraction). It is defined only where the denominator is not zero.
+Ein **rationaler Ausdruck** ist ein Quotient von Polynomen (oder allgemeiner ein algebraischer Bruchteil). Sie ist nur dort definiert, wo der Nenner nicht Null ist.
 
-Before you simplify anything, list the excluded values. After you cancel, those exclusions still belong to the original expression.
+Bevor Sie etwas vereinfachen, listen Sie die ausgeschlossenen Werte auf. Nachdem Sie abbrechen, gehören diese Ausschlüsse immer noch zum ursprünglichen Ausdruck.
 
-**Example 4.** Consider
+**Beispiel 4.** Überlegen
 
 $$
 R(x) = \frac{x^2-16}{x-4}.
 $$
 
-The original domain excludes $x=4$. On that domain,
+Die ursprüngliche Domäne schließt $x=4$ aus. In diesem Bereich,
 
 $$
 R(x) = \frac{(x-4)(x+4)}{x-4} = x+4.
 $$
 
-So the claim “$R(x)=x+4$ on its domain” is True, while “$R(4)=8$” is False, because $R(4)$ is not defined.
+So ist die Behauptung " $R(x)=x+4$ auf seiner Domäne" wahr, während " $R(4)=8$ " falsch ist, weil $R(4)$ nicht definiert ist.
 
-### Adding and subtracting fractions
+### Addition und Subtraktion von Fraktionen
 
-With nonzero denominators $a$ and $b$,
+mit ungleichen Nennern $a$ und $b$
 
 $$
 \frac{1}{a} + \frac{1}{b} = \frac{a+b}{ab}.
@@ -215,25 +215,25 @@ $$
 \frac{p}{q} + \frac{r}{s} = \frac{ps + qr}{qs},
 $$
 
-when $q,s\neq 0$.
+wenn $q,s\neq 0$ .
 
-A frequent False claim is
+Eine häufige falsche Behauptung ist
 
 $$
 \frac{1}{m} + \frac{1}{n} = \frac{1}{m+n}.
 $$
 
-That would say the sum of reciprocals equals the reciprocal of the sum, which is wrong.
+Das würde sagen, dass die Summe der Reziproken gleich der Reziproke der Summe ist, was falsch ist.
 
-Another trap is using the wrong common denominator:
+Eine andere Falle benutzt den falschen gemeinsamen Nenner:
 
 $$
 \frac{8}{c} + \frac{3}{d} = \frac{8d + 3c}{cd},
 $$
 
-not $\dfrac{8d+3c}{c+d}$.
+nicht $\dfrac{8d+3c}{c+d}$ .
 
-### Multiplying and dividing
+### Multiplikation und Division
 
 $$
 \frac{A}{B} \cdot \frac{C}{D} = \frac{AC}{BD},
@@ -243,15 +243,15 @@ $$
 \frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \cdot \frac{D}{C} = \frac{AD}{BC},
 $$
 
-provided every denominator is nonzero.
+Vorausgesetzt, jeder Nenner ist ungleich Null.
 
-Factor first, then cancel common factors. Do not cancel terms across a plus sign.
+Faktor zuerst, dann gemeinsame Faktoren abbrechen. Stornieren Sie keine Begriffe über ein Pluszeichen.
 
-### Partial cancellation and leftover factors
+### Teilweise Stornierung und übrig gebliebene Faktoren
 
-After cancelling, check what remains.
+Nach dem Abbrechen, prüfen Sie, was bleibt.
 
-**Example 5.** For $t\neq -3$ and $t\neq 2$,
+**Beispiel 5.** Für $t\neq -3$ und $t\neq 2$
 
 $$
 \frac{t^2-4}{t+3} \cdot \frac{t^2-9}{t-2}
@@ -259,7 +259,7 @@ $$
 = (t+2)(t-3).
 $$
 
-A False sibling claim might keep an extra $(t+3)$ or drop a sign in $(t-3)$.
+Eine falsche Geschwisteraussage könnte ein zusätzliches $(t+3)$ behalten oder ein Zeichen in $(t-3)$ fallen lassen.
 
 ### Compound (stacked) fractions
 
@@ -269,9 +269,9 @@ $$
 \frac{\dfrac{A}{B}}{\dfrac{C}{D}}
 $$
 
-means $\dfrac{A}{B}\div\dfrac{C}{D}$. Rewrite it as a product before simplifying.
+bedeutet $\dfrac{A}{B}\div\dfrac{C}{D}$ . Schreiben Sie es als Produkt um, bevor Sie es vereinfachen.
 
-**Example 6.** For $x\neq\pm 2$ and $a,b\neq 0$,
+**Beispiel 6.** Für $x\neq\pm 2$ und $a,b\neq 0$
 
 $$
 \frac{\dfrac{8a^2 b}{4x^2-16}}{\dfrac{4ab}{2x+4}}
@@ -279,31 +279,31 @@ $$
 = \frac{a}{x-2},
 $$
 
-after careful cancellation. A claim that the result is $\dfrac{a}{x+2}$ is False.
+Nach sorgfältiger Absage. Eine Behauptung, dass das Ergebnis $\dfrac{a}{x+2}$ ist, ist Falsch.
 
-### Difference of reciprocal squares
+### Differenz der gegenseitigen Quadrate
 
-For $hk\neq 0$,
+Für $hk\neq 0$
 
 $$
 \frac{1}{h^2} - \frac{1}{k^2} = \frac{k^2 - h^2}{h^2 k^2}.
 $$
 
-### How to judge a 2.2 claim
+### Wie man eine 2.2 Behauptung beurteilt
 
-1. Write the domain exclusions from every denominator.
-2. Factor numerators and denominators.
-3. Cancel only common factors, never summands.
-4. Compare the simplified form with the claimed form.
-5. Ask whether the claimed equality still respects the original domain (especially at cancelled roots).
+1. Schreiben Sie die Domainausschlüsse von jedem Nenner.
+2. Faktorzähler und Nenner.
+3. Stornieren Sie nur gemeinsame Faktoren, niemals Summanden.
+4. Das vereinfachte Formblatt mit dem beanspruchten Formblatt vergleichen.
+5. Fragen Sie, ob die beanspruchte Gleichheit noch die ursprüngliche Domäne respektiert (insbesondere bei annullierten Wurzeln).
 
 ---
 
-## 2.3 Powers, roots, and negative exponents
+## 2.3 Mächte, Wurzeln und negative Exponenten
 
 ### Integer exponent laws
 
-For a nonzero base $a$ and integers $m$, $n$,
+Für eine Nicht-Null-Basis $a$ und ganze Zahlen $m$ , $n$ ,
 
 $$
 a^m \cdot a^n = a^{m+n},
@@ -317,49 +317,49 @@ $$
 (a^m)^n = a^{mn}.
 $$
 
-The most common slip is adding instead of multiplying for a power of a power:
+Der häufigste Schlupf ist das Hinzufügen statt Multiplikation für eine Potenz einer Potenz:
 
 $$
 (u^3)^4 = u^{12},
 $$
 
-not $u^7$.
+nicht $u^7$ .
 
-Another slip is mishandling a quotient of powers:
+Ein weiterer Ausrutscher ist der falsche Umgang mit einem Quotienten von Befugnissen:
 
 $$
 \frac{t^4}{t^2} = t^2,
 $$
 
-not $t^3$.
+nicht $t^3$ .
 
 ### Negative exponents
 
-For $a\neq 0$,
+Für $a\neq 0$
 
 $$
 a^{-n} = \frac{1}{a^n}.
 $$
 
-Products and quotients still use the same laws:
+Produkte und Quotienten verwenden immer noch die gleichen Gesetze:
 
 $$
 \frac{u^{-2}}{u^3} = u^{-2-3} = u^{-5} = \frac{1}{u^5}.
 $$
 
-A False claim might say this equals $u^{1}$.
+Eine falsche Behauptung könnte sagen, dass dies gleich $u^{1}$ ist.
 
-### Fractional powers and roots
+### Fractional powers und Wurzeln
 
-For $x>0$ (and carefully on broader domains when the root is odd),
+Für $x>0$ (und sorgfältig auf breiteren Domänen, wenn die Wurzel ungerade ist),
 
 $$
 x^{1/2} = \sqrt{x}, \qquad x^{m/n} = \sqrt[n]{x^m} = \bigl(\sqrt[n]{x}\bigr)^m
 $$
 
-when the expressions are defined.
+wenn die Ausdrücke definiert sind.
 
-Useful product and quotient rules on nonnegative $p$, $q$ are
+Nützliche Produkt- und Quotientenregeln für nicht negative $p$ , $q$ sind
 
 $$
 \sqrt{p}\cdot\sqrt{q} = \sqrt{pq},
@@ -369,13 +369,13 @@ $$
 \frac{\sqrt{p}}{\sqrt{q}} = \sqrt{\frac{p}{q}} \quad (q>0).
 $$
 
-The False sibling
+Der falsche Bruder
 
 $$
 \sqrt{p}\cdot\sqrt{q} = \sqrt{p+q}
 $$
 
-is very common on the exam.
+ist bei der Prüfung sehr verbreitet.
 
 ### Nested roots
 
@@ -383,7 +383,7 @@ $$
 \sqrt{\sqrt{u}} = (u^{1/2})^{1/2} = u^{1/4}
 $$
 
-for $u\ge 0$. It is not $\dfrac{u^{1/2}}{2}$.
+für $u\ge 0$ . Es ist nicht $\dfrac{u^{1/2}}{2}$ .
 
 Also,
 
@@ -391,7 +391,7 @@ $$
 \sqrt{x^3} = x^{3/2}
 $$
 
-for $x>0$.
+für $x>0$ .
 
 ### Combining fractional exponents
 
@@ -399,27 +399,27 @@ $$
 u^{2/3} \cdot u^{1/3} = u^{1}
 $$
 
-for $u>0$. Add the exponents only when the bases match.
+für $u>0$ . Fügen Sie die Exponenten nur hinzu, wenn die Basen übereinstimmen.
 
-### How to judge a 2.3 claim
+### Wie man eine 2.3 Behauptung beurteilt
 
-1. Check the stated domain (often $x>0$, or $u\neq 0$).
-2. Rewrite roots as fractional powers if that clarifies the algebra.
-3. Apply one law at a time: product, quotient, or power of a power.
-4. Compare the resulting single power (or root) with the claim.
-5. Reject any slogan that mixes addition of bases with multiplication of roots.
+1. Überprüfen Sie die angegebene Domain (oft $x>0$ , oder $u\neq 0$ ).
+2. Schreibe Wurzeln als Bruchkräfte um, wenn dies die Algebra klärt.
+3. Ein Gesetz auf einmal anwenden: Produkt, Quotient oder Macht einer Macht.
+4. Vergleichen Sie die resultierende einzelne Macht (oder Wurzel) mit der Behauptung.
+5. Lehnen Sie jeden Slogan ab, der die Addition von Basen mit der Multiplikation von Wurzeln vermischt.
 
-**Example 7.** Is $\sqrt{p}\cdot\sqrt{q}=\sqrt{p+q}$ True for all $p,q\ge 0$?
+**Beispiel 7.** Ist $\sqrt{p}\cdot\sqrt{q}=\sqrt{p+q}$ Wahr für alle $p,q\ge 0$ ?
 
-No. Take $p=q=1$. Left side $1$, right side $\sqrt{2}$. False.
+No. Take $p=q=1$ . Left side $1$ , right side $\sqrt{2}$ . Falsch.
 
 ---
 
-## 2.4 Absolute value and algebraic rewriting
+## 2.4 Absoluter Wert und algebraisches Umschreiben
 
 ### Definition
 
-For a real number $x$,
+Für eine reelle Zahl $x$
 
 $$
 |x| =
@@ -431,7 +431,7 @@ $$
 
 Immediate consequences:
 
-$$
+ $$
 |x| \ge 0 \quad \text{for every real } x,
 $$
 
@@ -443,21 +443,21 @@ $$
 |-x| = |x|.
 $$
 
-The claim “$|x|=-x$ for every real $x$” is False, because it fails for positive $x$.
+Die Behauptung $|x|=-x$ für jedes reale $x$ ist falsch, weil sie für positive $x$ fehlschlägt.
 
-### Distance on the line
+### Abstand auf der Strecke
 
-The number $|a-b|$ is the distance between $a$ and $b$ on the real line.
+Die Zahl $|a-b|$ ist der Abstand zwischen $a$ und $b$ auf der reellen Linie.
 
-If a point $x$ lies between $1$ and $6$ inclusive, then
+Wenn ein Punkt zwischen $x$ und $6$ liegt, dann
 
 $$
 |x-1| + |x-6| = 5,
 $$
 
-the length of that segment. Outside the segment the sum is larger. So a claim that $|a-1|+|a-7|=6$ for every real $a$ is False.
+die Länge dieses Segments. Außerhalb des Segments ist die Summe größer. Eine Behauptung, dass $|a-1|+|a-7|=6$ für jedes reale $a$ falsch ist.
 
-### Product and scalar rules
+### Produkt- und Skalarregeln
 
 $$
 |xy| = |x|\,|y|,
@@ -467,83 +467,83 @@ $$
 |cx| = |c|\,|x|.
 $$
 
-False slogans to reject:
+Falsche Slogans zur Ablehnung:
 
 $$
 |z+h| = |z| + |h|
 $$
 
-(this is not an identity; it fails when $z$ and $h$ have opposite signs),
+(Dies ist keine Identität; es scheitert, wenn $z$ und $h$ entgegengesetzte Zeichen haben),
 
 $$
 |4n| = |n| + 4.
 $$
 
-### Square roots of squares
+### Quadratwurzeln
 
-For every real $w$,
+Für jeden realen $w$
 
 $$
 \sqrt{w^2} = |w|.
 $$
 
-After completing a square,
+Nach Abschluss eines Quadrats,
 
 $$
 \sqrt{(w-4)^2} = |w-4|.
 $$
 
-Dropping the absolute value and writing $w-4$ for every real $w$ is wrong.
+Den absoluten Wert fallen zu lassen und $w-4$ für jedes reelle $w$ zu schreiben, ist falsch.
 
-### Absolute-value equations
+### Absolutwert-Gleichungen
 
-The equation $|A|=c$ with $c>0$ splits into two ordinary equations:
+Die Gleichung $|A|=c$ mit $c>0$ teilt sich in zwei gewöhnliche Gleichungen:
 
-$$
+ $$
 A = c \quad \text{or} \quad A = -c.
 $$
 
-If $c=0$, then $A=0$. If $c<0$, there is no real solution.
+Wenn $c=0$ , dann $A=0$ . Wenn $c<0$ , gibt es keine wirkliche Lösung.
 
-**Example 8.** Solve $|2u-5|=7$.
+**Beispiel 8.** Löse $|2u-5|=7$ .
 
-$$
+ $$
 2u-5 = 7 \quad \text{or} \quad 2u-5 = -7,
 $$
 
-so $u=6$ or $u=-1$. A claim that lists only $u=6$ is False.
+Also $u=6$ oder $u=-1$ . Eine Behauptung, die nur $u=6$ auflistet, ist Falsch.
 
-### Absolute-value inequalities
+### Absolute Wertgleichungen
 
-For $c>0$,
+Für $c>0$
 
 $$
 |A| < c \iff -c < A < c,
 $$
 
-$$
+ $$
 |A| > c \iff A < -c \text{ or } A > c.
 $$
 
-**Example 9.** $|u-3|<5$ means $-2 < u < 8$.
+**Beispiel 9.** $|u-3|<5$ means $-2 < u < 8$ .
 
-### How to judge a 2.4 claim
+### Wie man eine 2.4 Behauptung beurteilt
 
-1. Translate absolute values into distances or into piecewise definitions.
-2. For equations, split into the two signed cases when the right-hand side is positive.
-3. For inequalities, rewrite as a compound inequality or a union of rays.
-4. Test slogans such as $|x+y|=|x|+|y|$ with opposite signs.
-5. After $\sqrt{(\text{expression})^2}$, keep the absolute value unless the inside is known nonnegative.
+1. Übersetzen Sie absolute Werte in Entfernungen oder in stückweise Definitionen.
+2. Für Gleichungen, aufgeteilt in die beiden signierten Fälle, wenn die rechte Seite positiv ist.
+3. Für Ungleichungen, umschreiben als zusammengesetzte Ungleichheit oder eine Vereinigung von Strahlen.
+4. Testen Sie Slogans wie $|x+y|=|x|+|y|$ mit entgegengesetzten Zeichen.
+5. Behalten Sie nach $\sqrt{(\text{expression})^2}$ den absoluten Wert, es sei denn, das Innere ist nicht negativ bekannt.
 
 ---
 
-## 2.5 Mixed exam sets and BBE-style True/False strategy
+## 2.5 Gemischte Prüfungsmengen und BBE-artige Wahr/Falsch-Strategie
 
-Subsection 2.5 mixes the earlier skills in one task. A stem may give sum and product of two unknowns, or two related rational expressions, and then ask five independent claims.
+Unterabschnitt 2.5 mischt die früheren Fähigkeiten in einer Aufgabe. Ein Stamm kann Summe und Produkt von zwei Unbekannten oder zwei verwandten rationalen Ausdrücken geben und dann fünf unabhängige Behauptungen fragen.
 
-### Working from symmetric data
+### Arbeiten aus symmetrischen Daten
 
-If you know $a+b=s$ and $ab=r$, you often do not need the separate values at once:
+Wenn Sie $a+b=s$ und $ab=r$ kennen, benötigen Sie oft nicht die separaten Werte auf einmal:
 
 $$
 a^2 + b^2 = (a+b)^2 - 2ab = s^2 - 2r,
@@ -561,9 +561,9 @@ $$
 \frac{1}{a} + \frac{1}{b} = \frac{a+b}{ab} = \frac{s}{r}.
 $$
 
-**Example 10.** Suppose $a+b=11$ and $ab=18$.
+**Beispiel 10.** Angenommen, $a+b=11$ und $ab=18$ .
 
-Then
+Dann
 
 $$
 a^2 + b^2 = 121 - 36 = 85,
@@ -577,129 +577,129 @@ $$
 \frac{1}{a} + \frac{1}{b} = \frac{11}{18}.
 $$
 
-The claim $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{18}{11}$ is False (numerator and denominator swapped). Solving the quadratic $t^2 - 11t + 18=0$ gives $\{a,b\}=\{2,9\}$.
+Die Behauptung $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{18}{11}$ ist Falsch (Zähler und Nenner ausgetauscht). Lösen der quadratischen $t^2 - 11t + 18=0$ ergibt $\{a,b\}=\{2,9\}$ .
 
-### Keeping domains after simplification
+### Beibehaltung von Domains nach Vereinfachung
 
 Whenever a task simplifies a rational expression, ask:
 
-- Which values were excluded at the start?
-- Did cancellation remove a factor that still forbids substitution?
-- Can a later claim evaluate the expression at a cancelled root?
+- Welche Werte wurden zu Beginn ausgeschlossen?
+Dissensationen, die nicht von uns bekannt sind.
+- Kann eine spätere Behauptung den Ausdruck an einer abgebrochenen Wurzel auswerten?
 
-If the simplified formula is $x+4$ but the original expression excluded $x=4$, then substituting $x=4$ is illegal.
+Wenn die vereinfachte Formel $x+4$ ist, aber der ursprüngliche Ausdruck $x=4$ ausgeschlossen ist, ist das Ersetzen von $x=4$ illegal.
 
 ### Independent claims
 
-On the BBE algebra tasks, the five statements A–E are separate. One True claim does not make the next one True. Judge each line on its own algebra and its own domain sentence.
+Bei den BBE-Algebraaufgaben sind die fünf Aussagen A–E getrennt. Eine wahre Behauptung macht die nächste nicht wahr. Beurteilen Sie jede Zeile nach ihrer eigenen Algebra und ihrem eigenen Domänensatz.
 
-### Worked True/False walkthroughs
+### Worked Wahr/Falsch walkthroughs
 
-**Example 11.** Stem: let $x$ and $y$ be real. Claim: $(x+y)^2 = x^2 + y^2$.
+**Beispiel 11.** Stamm: Lasst $x$ und $y$ real sein. Behauptung: $(x+y)^2 = x^2 + y^2$ .
 
-Expand the left side:
+Erweitern Sie die linke Seite:
 
 $$
 (x+y)^2 = x^2 + 2xy + y^2.
 $$
 
-This equals $x^2+y^2$ only when $2xy=0$. It fails for $x=y=1$. Verdict: **False**.
+Dies entspricht $x^2+y^2$ nur wenn $2xy=0$ . Es scheitert an $x=y=1$ . Urteil: **Falsch**.
 
-**Example 12.** Stem: $x\neq 4$. Claim: $\dfrac{x^2-16}{x-4} = x+4$, and also the extra claim $R(4)=8$ for $R(x)=\dfrac{x^2-16}{x-4}$.
+**Beispiel 12.** Stamm: $x\neq 4$ . Behauptung: $\dfrac{x^2-16}{x-4} = x+4$ , und auch die zusätzliche Behauptung $R(4)=8$ für $R(x)=\dfrac{x^2-16}{x-4}$ .
 
-Factor and cancel on the stated domain:
+Factor and cancel auf der angegebenen Domain:
 
 $$
 \frac{(x-4)(x+4)}{x-4} = x+4 \quad (x\neq 4).
 $$
 
-The identity on the domain is **True**. The evaluation at $x=4$ is **False**, because $R(4)$ is undefined.
+Die Identität auf der Domain ist **Wahr**. Die Auswertung bei $x=4$ ist **Falsch**, weil $R(4)$ undefiniert ist.
 
-**Example 13.** Stem: $u\neq 0$. Claim: $(u^3)^4 = u^7$.
+**Beispiel 13.** Stem: $u\neq 0$ . Behauptung: $(u^3)^4 = u^7$ .
 
-Power of a power multiplies exponents:
+Macht einer Macht multipliziert Exponenten:
 
 $$
 (u^3)^4 = u^{12}.
 $$
 
-So $u^7$ is wrong. Verdict: **False**.
+Also ist $u^7$ falsch. Urteil: **Falsch**.
 
-**Example 14.** Stem: every real $w$. Claim: $\sqrt{(w-4)^2} = w-4$.
+**Beispiel 14.** Stem: every real $w$ . Behauptung: $\sqrt{(w-4)^2} = w-4$ .
 
-The identity is
+Die Identität ist
 
 $$
 \sqrt{(w-4)^2} = |w-4|.
 $$
 
-When $w=1$, left side $3$, right side $-3$. Verdict: **False**.
+Wenn $w=1$ , links $3$ , rechts $-3$ . Urteil: **Falsch**.
 
-**Example 15.** Stem: $a+b=11$, $ab=18$. Claim: $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{18}{11}$.
+**Beispiel 15.** Stem: $a+b=11$ , $ab=18$ . Behauptung: $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{18}{11}$ .
 
 $$
 \frac{1}{a}+\frac{1}{b} = \frac{a+b}{ab} = \frac{11}{18}.
 $$
 
-The claimed fraction is upside down. Verdict: **False**.
+Die beanspruchte Fraktion steht auf dem Kopf. Urteil: **Falsch**.
 
 ### A reliable exam order
 
-1. Read the domain sentence in the stem (“nonzero”, “positive”, “$x\neq 4$”, and so on).
-2. Rewrite each claim into a clear equality or inequality.
-3. Expand, factor, or apply the matching power / absolute-value rule.
-4. Compare both sides, or test a cheap counter-example if the claim looks like a slogan.
-5. Only then mark True or False.
+1. Lesen Sie den Domain-Menge im Stamm ("nonzero", "positiv", " $x\neq 4$ " usw.).
+2. Schreibe jede Behauptung in eine klare Gleichheit oder Ungleichheit um.
+3. Erweitern, faktorisieren oder wenden Sie die Übereinstimmungsregel / Absolutwertregel an.
+4. Vergleichen Sie beide Seiten oder testen Sie ein billiges Gegenspiel, wenn die Behauptung wie ein Slogan aussieht.
+5. Nur dann markieren Wahr oder Falsch.
 
-### Frequent False slogans (checklist)
+### Frequent Falsch slogans (checklist)
 
-| Slogan | Why it fails |
-| --- | --- |
-| $(a+b)^2 = a^2 + b^2$ | Missing $2ab$. |
-| $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1}{a+b}$ | Wrong common denominator. |
-| $(a^m)^n = a^{m+n}$ | Should be $a^{mn}$. |
-| $\sqrt{p}+\sqrt{q}=\sqrt{p+q}$ or $\sqrt{p}\sqrt{q}=\sqrt{p+q}$ | Roots do not add that way. |
-| $\lvert x+y\rvert=\lvert x\rvert+\lvert y\rvert$ always | Fails for opposite signs. |
-| Cancelled hole may be substituted | Domain of the original expression remains. |
-| $\sqrt{w^2}=w$ for every real $w$ | Should be $\lvert w\rvert$. |
+Slogan Warum es scheitert
+| --- | ---
+| $(a+b)^2 = a^2 + b^2$ | Fehlende $2ab$ |
+| $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1}{a+b}$ | Falscher gemeinsamer Nenner. |
+| $(a^m)^n = a^{m+n}$ | Sollte $a^{mn}$ sein. |
+| $\sqrt{p}+\sqrt{q}=\sqrt{p+q}$ oder $\sqrt{p}\sqrt{q}=\sqrt{p+q}$ | Wurzeln fügen diesen Weg nicht hinzu. |
+| $\lvert x+y\rvert=\lvert x\rvert+\lvert y\rvert$ immer | Fails für entgegengesetzte Zeichen. |
+| Cancelled Hole kann ersetzt werden | Domain des ursprünglichen Ausdrucks bleibt. |
+| $\sqrt{w^2}=w$ für jeden realen $w$ | Sollte $\lvert w\rvert$ sein. |
 
 ---
 
-## 2.6 Exam-style tasks with full solutions
+## 2.6 Prüfungsaufgaben mit vollen Lösungen
 
-Subsection 2.5 on the site mixes several algebra skills in one stem, then asks five independent True/False claims. The three tasks below follow that exam format. Each claim is judged alone. The worked solutions use the same rhythm as the practice bank: name the rule, write the algebra, then give the verdict.
+Unterabschnitt 2.5 auf der Website mischt mehrere Algebra-Fähigkeiten in einem Stamm, fragt dann fünf unabhängige Wahr/Falsch Behauptungen. Die drei Aufgaben unten folgen diesem Prüfungsformat. Jede Behauptung wird allein beurteilt. Die gearbeiteten Lösungen verwenden den gleichen Rhythmus wie die Praxisbank: Nennen Sie die Regel, schreiben Sie die Algebra, dann geben Sie das Urteil.
 
-### Exam task 1 — Mixed identities, radicals, and absolute value
+### Prüfung Aufgabe 1 - Gemischte Identitäten, Radikale und absoluter Wert
 
-Evaluate each statement. Mark it True or False.
+Bewerten Sie jede Aussage. Markieren Sie es Wahr oder Falsch.
 
-**A.** For $u>0$ and $v>0$, it holds that $\left(u^{2}v\right)^{3}=u^{6}v^{3}$.
+**A.** Für $u>0$ und $v>0$ gilt $\left(u^{2}v\right)^{3}=u^{6}v^{3}$ .
 
-**B.** If $a+b+c=0$ and $abc\neq 0$, then $\dfrac{1}{ab}+\dfrac{1}{bc}+\dfrac{1}{ca}=0$.
+**B.** Wenn $a+b+c=0$ und $abc\neq 0$ , dann $\dfrac{1}{ab}+\dfrac{1}{bc}+\dfrac{1}{ca}=0$ .
 
-**C.** For $x\ge 0$, it holds that $\sqrt{x}+\sqrt{x+2\sqrt{x}+1}=2\sqrt{x}+1$.
+**C.** Für $x\ge 0$ gilt, dass $\sqrt{x}+\sqrt{x+2\sqrt{x}+1}=2\sqrt{x}+1$ .
 
-**D.** For real $x$, the inequality $\lvert 2x-1\rvert<3$ is equivalent to the open interval $-1<x<2$.
+**D.** Für real $x$ ist die Ungleichheit $\lvert 2x-1\rvert<3$ äquivalent zum offenen Intervall $-1<x<2$ .
 
-**E.** For every positive integer $n$, the polynomial $u^{n}-1$ is divisible by $u-1$.
+**E.** Für jede positive ganze Zahl $n$ ist das Polynom $u^{n}-1$ durch $u-1$ teilbar.
 
-**Complete solution.**
+**Complete Lösung.**
 
-**A.** → True
+**A.** → Wahr
 
-Distribute an outer exponent across a product, then multiply exponents on matching bases.
+Verteilen Sie einen äußeren Exponenten über ein Produkt und multiplizieren Sie dann die Exponenten auf übereinstimmenden Basen.
 
-Start from $\left(u^{2}v\right)^{3}$ with $u,v>0$:
+Beginnen Sie von $\left(u^{2}v\right)^{3}$ mit $u,v>0$ :
 
 $$
 \left(u^{2}v\right)^{3}=(u^{2})^{3}\,v^{3}=u^{6}v^{3}.
 $$
 
-The exponents on $u$ multiply as $2\cdot 3=6$, and the factor $v$ contributes $v^{3}$. That matches the claim.
+Die Exponenten auf $u$ multiplizieren sich mit $2\cdot 3=6$ und der Faktor $v$ trägt $v^{3}$ bei. Das stimmt mit der Behauptung überein.
 
-**B.** → True
+**B.** → Wahr
 
-Clear a common denominator and use the hypothesis that the sum of the variables is zero.
+Löschen Sie einen gemeinsamen Nenner und verwenden Sie die Hypothese, dass die Summe der Variablen Null ist.
 
 $$
 \frac{1}{ab}+\frac{1}{bc}+\frac{1}{ca}
@@ -707,13 +707,13 @@ $$
 =\frac{a+b+c}{abc}.
 $$
 
-The numerator vanishes by hypothesis, so the sum is $0$.
+Der Zähler verschwindet durch Hypothese, so dass die Summe $0$ ist.
 
-**C.** → True
+**C.** → Wahr
 
-Complete the square under the radical before taking the principal square root.
+Vervollständigen Sie das Quadrat unter dem Radikal, bevor Sie das Hauptquadrat Wurzel nehmen.
 
-For $x\ge 0$,
+Für $x\ge 0$
 
 $$
 x+2\sqrt{x}+1=(\sqrt{x}+1)^{2},
@@ -731,9 +731,9 @@ $$
 \sqrt{x}+\sqrt{x+2\sqrt{x}+1}=2\sqrt{x}+1.
 $$
 
-**D.** → True
+**D.** → Wahr
 
-Rewrite the absolute-value inequality as a two-sided bound, then isolate $x$.
+Schreibe die Absolutwertungleichheit als zweiseitige Grenze um und isoliere dann $x$ .
 
 $$
 \lvert 2x-1\rvert<3
@@ -747,33 +747,33 @@ $$
 -2<2x<4.
 $$
 
-Divide by the positive coefficient $2$:
+Teilen Sie durch den positiven Koeffizienten $2$ :
 
 $$
 -1<x<2.
 $$
 
-That open interval is exactly the claimed solution set.
+Dieses offene Intervall ist genau die beanspruchte Lösungsmenge.
 
-**E.** → True
+**E.** → Wahr
 
-Factor $u^{n}-1$ by the geometric-sum identity (or apply the factor theorem at $u=1$).
+Faktor $u^{n}-1$ durch die geometrische Summenidentität (oder den Faktor Menge bei $u=1$ anwenden).
 
-For every positive integer $n$,
+Für jede positive ganze Zahl $n$
 
 $$
 u^{n}-1=(u-1)\bigl(u^{n-1}+u^{n-2}+\cdots+u+1\bigr).
 $$
 
-The second factor is a polynomial, so $u-1$ divides $u^{n}-1$. Equivalently, substituting $u=1$ gives $1^{n}-1=0$, and the factor theorem yields the same conclusion.
+Der zweite Faktor ist ein Polynom, also teilt $u-1$ $u^{n}-1$ . Entsprechend ergibt das Ersetzen von $u=1$ $1^{n}-1=0$ , und der Faktor Menge liefert die gleiche Schlussfolgerung.
 
-**Answers:** A True, B True, C True, D True, E True.
+**Answers:** A Wahr, B Wahr, C Wahr, D Wahr, E Wahr.
 
 ### Exam task 2 — Symmetric archive data
 
-An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=11$ and $ab=18$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$.
+Ein Algebra-Archiv speichert zwei reelle Zahlen $a$ und $b$ nur über die Datensätze $a+b=11$ und $ab=18$ . Die ursprüngliche Ordnung wurde nicht aufgezeichnet, so dass jede Schlussfolgerung aus symmetrischen Identitäten oder aus dem Quadrat mit Wurzeln $a$ und $b$ folgen muss.
 
-Which of the following statements is/are correct?
+Welche der folgenden Aussagen ist/sind korrekt?
 
 **A.** $a^{2}+b^{2}=85$.
 
@@ -785,9 +785,9 @@ Which of the following statements is/are correct?
 
 **E.** $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{18}{11}$.
 
-**Complete solution.**
+**Complete Lösung.**
 
-Standing identities for this stem:
+Stehende Identitäten für diesen Stamm:
 
 $$
 a^{2}+b^{2}=(a+b)^{2}-2ab,
@@ -801,35 +801,35 @@ a^{3}+b^{3}=(a+b)^{3}-3ab(a+b),
 \frac{1}{a}+\frac{1}{b}=\frac{a+b}{ab}.
 $$
 
-**A.** → True
+**A.** → Wahr
 
-Sum of squares follows from the square of the sum after the mixed product is removed.
+Die Summe der Quadrate ergibt sich aus dem Quadrat der Summe, nachdem das Mischprodukt entfernt wurde.
 
 $$
 a^{2}+b^{2}=(a+b)^{2}-2ab=11^{2}-2\cdot 18=121-36=85.
 $$
 
-**B.** → True
+**B.** → Wahr
 
-The squared gap is another elementary identity in $a+b$ and $ab$.
+Die quadratische Lücke ist eine weitere elementare Identität in $a+b$ und $ab$ .
 
 $$
 (a-b)^{2}=(a+b)^{2}-4ab=121-72=49.
 $$
 
-**C.** → False
+**C.** → Falsch
 
-Cubes expand through the same sum and product; the middle term is $3ab(a+b)$.
+Würfel erweitern sich durch die gleiche Summe und Produkt; der mittlere Begriff ist $3ab(a+b)$ .
 
 $$
 a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)=11^{3}-3\cdot 18\cdot 11=1331-594=737.
 $$
 
-The claim asserts $738$, but the identity produces $737$. Since $737\neq 738$, the statement is False.
+Die Behauptung behauptet $738$ , aber die Identität produziert $737$ .
 
-**D.** → True
+**D.** → Wahr
 
-The unordered pair $\{a,b\}$ is the root set of the monic quadratic with those coefficients.
+Das ungeordnete Paar $\{a,b\}$ ist die Wurzelmenge des monischen Quadrats mit diesen Koeffizienten.
 
 $$
 t^{2}-(a+b)t+ab=0
@@ -843,33 +843,33 @@ $$
 t^{2}-11t+18=(t-2)(t-9).
 $$
 
-The roots are $t=2$ and $t=9$, so $\{a,b\}=\{2,9\}$.
+Die Wurzeln sind $t=2$ und $t=9$ , also $\{a,b\}=\{2,9\}$ .
 
-**E.** → False
+**E.** → Falsch
 
-The sum of reciprocals is the ratio of the sum to the product, not the reverse.
+Die Summe der Reziproken ist das Verhältnis der Summe zum Produkt, nicht umgekehrt.
 
 $$
 \frac{1}{a}+\frac{1}{b}=\frac{a+b}{ab}=\frac{11}{18}.
 $$
 
-The claim prints $\dfrac{18}{11}$ instead of $\dfrac{11}{18}$.
+Die Behauptung druckt $\dfrac{18}{11}$ statt $\dfrac{11}{18}$ .
 
-**Answers:** A True, B True, C False, D True, E False.
+**Answers:** A Wahr, B Wahr, C Falsch, D Wahr, E Falsch.
 
-### Exam task 3 — Rational calculator with domains
+### Prüfungsaufgabe 3 — Rationalrechner mit Domänen
 
 A symbolic calculator studies
 
-$$
+ $$
 R(x)=\dfrac{x^{2}-16}{x-4}
 \qquad\text{and}\qquad
 S(x)=\dfrac{1}{x-4}+\dfrac{1}{x+4}.
 $$
 
-The first expression is defined for $x\neq 4$, while the second also excludes $x=-4$. Simplifications must retain these original domain restrictions even after factors cancel.
+Der erste Ausdruck ist für $x\neq 4$ definiert, während der zweite auch $x=-4$ ausschließt. Vereinfachungen müssen diese ursprünglichen Domänenbeschränkungen beibehalten, auch wenn nachdem Faktoren aufgehoben wurden.
 
-Which of the following statements is/are correct?
+Welche der folgenden Aussagen ist/sind korrekt?
 
 **A.** $R(x)=x+4$ on its domain.
 
@@ -879,33 +879,33 @@ Which of the following statements is/are correct?
 
 **D.** $S(0)=0$.
 
-**E.** $S(x)=0$ has exactly one real solution.
+**E.** $S(x)=0$ has exactly one real Lösung.
 
-**Complete solution.**
+**Complete Lösung.**
 
-Work on the stated domains: $R$ excludes $x=4$, and $S$ excludes $x=\pm 4$.
+Arbeiten Sie an den angegebenen Domänen: $R$ schließt $x=4$ aus und $S$ schließt $x=\pm 4$ aus.
 
-**A.** → True
+**A.** → Wahr
 
-On the domain $x\neq 4$, factor the difference of squares and cancel the shared linear factor.
+Faktorisieren Sie in der Domäne $x\neq 4$ die Differenz der Quadrate und löschen Sie den gemeinsamen linearen Faktor.
 
 $$
 R(x)=\frac{(x-4)(x+4)}{x-4}=x+4\qquad(x\neq 4).
 $$
 
-**B.** → False
+**B.** → Falsch
 
-$R$ is undefined at the excluded point $x=4$, so $R(4)$ is not defined by the formula.
+ $R$ ist am ausgeschlossenen Punkt $x=4$ undefiniert, so dass $R(4)$ nicht durch die Formel definiert ist.
 
 $$
 R(4)=\frac{4^{2}-16}{4-4}
 $$
 
-has vanishing denominator. The claim asserts $R(4)=8$, which would require evaluating past a hole in the domain. Therefore the statement is False.
+hat einen verschwindenden Nenner. Die Behauptung behauptet $R(4)=8$ , was eine Auswertung über ein Loch in der Domäne hinaus erfordern würde. Darum ist die Aussage falsch.
 
-**C.** → True
+**C.** → Wahr
 
-Combine the two reciprocal terms over the product of the linear factors.
+Kombinieren Sie die beiden reziproken Terme über das Produkt der linearen Faktoren.
 
 $$
 S(x)=\frac{1}{x-4}+\frac{1}{x+4}
@@ -913,19 +913,19 @@ S(x)=\frac{1}{x-4}+\frac{1}{x+4}
 =\frac{2x}{x^{2}-16}.
 $$
 
-**D.** → True
+**D.** → Wahr
 
-Evaluate the simplified form at the origin.
+Bewerten Sie die vereinfachte Form am Ursprung.
 
 $$
 S(0)=\frac{2\cdot 0}{0-16}=0.
 $$
 
-**E.** → True
+**E.** → Wahr
 
-Solve $S(x)=0$ on the domain $x\neq\pm 4$.
+Lösen Sie $S(x)=0$ auf der Domain $x\neq\pm 4$ .
 
-$$
+ $$
 \frac{2x}{x^{2}-16}=0
 \quad\Longleftrightarrow\quad
 2x=0\text{ and }x^{2}-16\neq 0
@@ -933,35 +933,35 @@ $$
 x=0.
 $$
 
-Since $0\neq\pm 4$, the root is admissible. No other numerator root exists, so there is exactly one real solution.
+Seit $0\neq\pm 4$ ist die Wurzel zulässig. Kein anderer Zähler Wurzel existiert, also gibt es genau eine echte Lösung.
 
-**Answers:** A True, B False, C True, D True, E True.
+**Answers:** A Wahr, B Falsch, C Wahr, D Wahr, E Wahr.
 
-### How to mark a full exam-style task
+### Wie man eine vollständige Prüfung-Stil-Aufgabe markiert
 
-1. Read the stem once: note every domain restriction and every given symmetric datum.
-2. For each claim, rewrite with an identity, a common denominator, or an absolute-value split before deciding.
-3. If a claim looks like a familiar slogan, either expand it fully or test one cheap counter-example.
-4. Mark the five verdicts independently. One True answer does not pull the next claim along.
+1. Lesen Sie den Stamm einmal: Notieren Sie sich jede Domänenbeschränkung und jedes gegebene symmetrische Datum.
+2. Für jede Behauptung mit einer Identität, einem gemeinsamen Nenner oder einem absoluten Wertsplit umschreiben, bevor Sie entscheiden.
+3. Wenn eine Behauptung wie ein bekannter Slogan aussieht, erweitern Sie sie entweder vollständig oder testen Sie ein billiges Gegenspiel.
+4. Markieren Sie die fünf Urteile unabhängig voneinander. Eine wahre Antwort zieht die nächste Behauptung nicht mit.
 
 ---
 
-## 2.7 Summary reference
+## 2.7 Zusammenfassung reference
 
-| Task | Method |
-| --- | --- |
-| Expand a product | Use distributivity; keep every cross term. |
-| Expand a square | Use $a^2\pm 2ab + b^2$. |
-| Factor $a^2-b^2$ | Write $(a-b)(a+b)$. |
-| Factor cubes | Use $a^3\pm b^3$ formulas. |
-| Add rational expressions | Common denominator = product of denominators (after factoring). |
-| Simplify a quotient | Factor, cancel common factors, keep exclusions. |
-| Power of a power | Multiply exponents. |
-| Product of powers | Add exponents. |
-| Nested square root | Use $u^{1/4}$, not half of $\sqrt{u}$. |
-| Absolute value equation $\lvert A\rvert=c>0$ | Solve $A=c$ and $A=-c$. |
-| Absolute value inequality $\lvert A\rvert<c$ | Rewrite $-c<A<c$. |
-| Symmetric $a+b$, $ab$ data | Use $a^2+b^2$, $a^3+b^3$, and reciprocal-sum identities. |
+| Aufgabe | Methode |
+| --- | ---
+| Erweitern Sie ein Produkt | Verwenden Sie Verteilung; halten Sie jeden Cross Term. |
+| Erweitern Sie ein Quadrat | Verwenden Sie $a^2\pm 2ab + b^2$ . |
+| Faktor $a^2-b^2$ | Schreiben Sie $(a-b)(a+b)$ . |
+| Faktorwürfel | Verwenden Sie $a^3\pm b^3$ Formeln. |
+| Rationale Ausdrücke hinzufügen | Gemeinsamer Nenner = Produkt von Nennern (nach Factoring). |
+| Vereinfachen Sie einen Quotienten | Faktor, annullieren Sie gemeinsame Faktoren, halten Sie Ausschlüsse. |
+Macht einer Macht Multipliziere Exponenten.
+| Produkt der Befugnisse | Hinzufügen von Exponenten. |
+| Verschachtelte Quadratwurzel | Verwenden Sie $u^{1/4}$ , nicht die Hälfte von $\sqrt{u}$ . |
+| Absoluter Wert Gleichung $\lvert A\rvert=c>0$ | Löse $A=c$ und $A=-c$ . |
+| Absolutwertungleichheit $\lvert A\rvert<c$ | Rewrite $-c<A<c$ . |
+| Symmetrische $a+b$ , $ab$ Daten | Verwenden Sie $a^2+b^2$ , $a^3+b^3$ , und Reziproken-Summen-Identitäten. |
 
 ### Key formulas
 
@@ -989,17 +989,17 @@ $$
 \sqrt{w^2}=\lvert w\rvert,\quad \lvert xy\rvert=\lvert x\rvert\,\lvert y\rvert.
 $$
 
-### Working order on an exam statement
+### Working order on an exam Aussage
 
-1. Domain.
-2. Rewrite.
-3. Identity check or counter-example.
-4. Verdict.
+1. Bereich.
+2. Umschreiben.
+3. Identitätsprüfung oder Gegenspiel.
+4. Urteil.
 
-### Self-check
+### Selbstkontrolle
 
-- Can you expand $(2x-3)^2$ without dropping the middle term?
-- Why is $\dfrac{x^2-16}{x-4}=x+4$ True on its domain but $R(4)=8$ False?
-- What is $(u^3)^4$, and why is $u^7$ wrong?
-- Why does $\sqrt{(x-1)^2}$ equal $\lvert x-1\rvert$ rather than $x-1$?
-- If $a+b=11$ and $ab=18$, what is $\dfrac{1}{a}+\dfrac{1}{b}$?
+- Können Sie $(2x-3)^2$ erweitern, ohne die mittlere Laufzeit fallen zu lassen?
+- Warum ist $\dfrac{x^2-16}{x-4}=x+4$ � Wahr auf seiner Domain aber $R(4)=8$ Falsch?
+- Was ist $(u^3)^4$ und warum ist $u^7$ falsch?
+- Warum ist $\sqrt{(x-1)^2}$ gleich $\lvert x-1\rvert$ statt $x-1$ ?
+Wenn $a+b=11$ und $ab=18$ , was ist $\dfrac{1}{a}+\dfrac{1}{b}$ ?

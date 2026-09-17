@@ -1,195 +1,195 @@
-# Chapter 7 — Linear and quadratic functions
+# Kapitel 7 — Lineare und quadratische Funktionen
 
-A linear function draws a straight line. A quadratic function draws a parabola. On the BBE exam, Chapter 7 asks you to read those graphs from formulas, tables, and stories, and to decide True/False claims about slope, intercepts, vertex, axis, roots, meetings, and rewrites.
+Eine lineare Funktion zieht eine gerade Linie. Eine quadratische Funktion zeichnet ein Parabel. In der BBE-Prüfung werden Sie in Kapitel 7 aufgefordert, diese Graphen aus Formeln, Tabellen und Geschichten zu lesen und Wahr/Falsch-Behauptungen über Steigung, Schnittpunkte, Scheitelpunkt, Achse, Wurzeln, Meetings und Umschreibungen zu entscheiden.
 
-This chapter starts from zero. It builds the two families one piece at a time, then shows how they meet, how composition works, how a parameter slides a graph, and how applied stories hide the same algebra. The later examples combine several ideas, because the difficult tasks rarely name the formula you need.
+Dieses Kapitel beginnt bei Null. Es baut die beiden Familien ein Stück nach dem anderen, zeigt dann, wie sie sich treffen, wie Komposition funktioniert, wie ein Parameter einen Graphen rutscht und wie angewandte Geschichten die gleiche Algebra verbergen. Die späteren Beispiele kombinieren mehrere Ideen, denn die schwierigen Aufgaben benennen selten die Formel, die Sie benötigen.
 
-Chapter 4 solves equations. This chapter studies the functions themselves: what the graph looks like, where it turns, where it crosses a line, and what happens when you shift or nest the expressions.
+Kapitel 4 löst Gleichungen. Dieses Kapitel untersucht die Funktionen selbst: wie der Graph aussieht, wo er sich dreht, wo er eine Linie kreuzt und was passiert, wenn Sie die Ausdrücke verschieben oder verschachteln.
 
-## Learning objectives
+## Lernziele
 
 - Recognise $f(x)=mx+c$ and read slope, intercepts, and monotonicity from the formula.
-- Recognise $g(x)=ax^{2}+bx+c$ with $a\neq 0$ and read opening direction from $a$.
-- Move between standard form, vertex form, and factored form.
+- Recognise $g(x)=ax^{2}+bx+c$ with $a\neq 0$ and read opening direction from $a$ .
+Bewegen Sie sich zwischen Standardform, Vertexform und Faktorform.
 - Find the axis $x=-b/(2a)$ and the vertex, and connect the axis to Vieta’s sum of roots.
-- Use the discriminant to count real roots and meetings with a horizontal line.
-- Decide how many times a line meets a parabola, including tangency.
-- Read linear and quadratic behaviour from tables by checking first and second differences.
+- Verwenden Sie den Diskriminanten, um echte Wurzeln und Meetings mit einer horizontalen Linie zu zählen.
+- Entscheiden Sie, wie oft eine Linie auf ein Parabel trifft, einschließlich der Tangenz.
+- Lesen Sie lineares und quadratisches Verhalten aus Tabellen, indem Sie erste und zweite Unterschiede überprüfen.
 - Expand a nested rule such as $g(f(x))$ and see that the order of nesting matters.
-- Rebuild a line or a parabola from roots, a vertex, or a few points.
-- Translate applied stories (fare, ball toss, revenue, cost) into the same algebra.
-- Spot the common traps: confusing roots with the vertex, half-sum mistakes, wrong nesting degrees.
+- Bauen Sie eine Linie oder ein Parabel aus Wurzeln, einen Scheitelpunkt oder ein paar Punkte neu auf.
+Übersetzen Sie angewandte Geschichten (Tarif, Ballwurf, Einnahmen, Kosten) in die gleiche Algebra.
+- Finde die üblichen Fallen: Verwechseln von Wurzeln mit dem Scheitelpunkt, Halbsummenfehler, falsche Verschachtelungsgrade.
 
 ---
 
 ## 7.1 Linear functions
 
-### The formula
+### Die Formel
 
-A **linear function** has the form
+Eine **lineare Funktion** hat die Form
 
 $$
 f(x)=mx+c,
 $$
 
-where $m$ and $c$ are constants. The graph is a straight line.
+wobei $m$ und $c$ Konstanten sind. Der Graph ist eine gerade Linie.
 
-| Symbol | Name | What it does |
-| --- | --- | --- |
-| $m$ | Slope (gradient) | Rise over run; how much $f$ changes when $x$ increases by $1$ |
-| $c$ | $y$-intercept | The value $f(0)$; where the line crosses the vertical axis |
-| $x$ | Input | The horizontal coordinate |
+| Symbol | Name | Was es tut |
+| --- | ---
+| $m$ | Steigung (Gradient) | Steigen Sie über den Lauf; wie viel $f$ ändert sich, wenn $x$ um $1$ erhöht wird
+| $c$ | $y$ -Abschnitt | Der Wert $f(0)$ ; wo die Linie die vertikale Achse kreuzt |
+| $x$ | Eingang | Die horizontale Koordinate |
 
-If $m>0$, the line rises as you move to the right. If $m<0$, the line falls. If $m=0$, the graph is a horizontal line at height $c$.
+Wenn $m>0$ , steigt die Linie an, wenn Sie sich nach rechts bewegen. Wenn $m<0$ , fällt die Linie. Wenn $m=0$ , ist der Graph eine horizontale Linie in Höhe $c$ .
 
 ### Intercepts
 
-The **$y$-intercept** is the point $(0,c)$.
+Der ** $y$ -Abschnitt** ist der Punkt $(0,c)$ .
 
-The **$x$-intercept** (root of the line) solves $mx+c=0$. When $m\neq 0$,
+Der ** $x$ -Abschnitt** (Wurzel der Linie) löst $mx+c=0$ . Wenn $m\neq 0$
 
 $$
 x=-\frac{c}{m}.
 $$
 
-If $m=0$ and $c\neq 0$, there is no $x$-intercept. If $m=0$ and $c=0$, every $x$ is an intercept (the zero function).
+Wenn $m=0$ und $c\neq 0$ , gibt es keinen $x$ -Abschnitt. Wenn $m=0$ und $c=0$ , ist jeder $x$ ein Abschnitt (die Nullfunktion).
 
-**Example 1.** Take $f(x)=-2x+6$.
+**Beispiel 1.** Take $f(x)=-2x+6$ .
 
-- Slope $m=-2$: the line falls by $2$ for each unit step to the right.
-- $y$-intercept: $(0,6)$.
-- $x$-intercept: $-2x+6=0$ gives $x=3$, so the point $(3,0)$.
+- Steigung $m=-2$ : die Linie fällt um $2$ für jede Einheit Schritt nach rechts.
+- $y$ -Abschnitt: $(0,6)$ .
+- $x$ -intercept: $-2x+6=0$ gibt $x=3$ , also den Punkt $(3,0)$ .
 
-### Other writings of the same line
+### Andere Schriften der gleichen Linie
 
-The same line can appear as
+Die gleiche Linie kann als
 
 $$
 f(x)=m(x-x_{0})+y_{0}
 $$
 
-when it is forced to pass through a known point $(x_{0},y_{0})$. Expanding recovers $mx+c$ with $c=y_{0}-mx_{0}$.
+wenn er gezwungen ist, einen bekannten Punkt $(x_{0},y_{0})$ zu durchlaufen. Expanding stellt $mx+c$ mit $c=y_{0}-mx_{0}$ wieder her.
 
-A line written as a single fraction, for example
+Eine Zeile, geschrieben als ein einzelner Bruch, für Beispiel
 
 $$
 f(x)=\frac{2x-4}{3}=\frac{2}{3}x-\frac{4}{3},
 $$
 
-is still linear. Clear the constant denominator first, then read $m$ and $c$.
+ist immer noch linear. Zuerst den konstanten Nenner löschen, dann lesen Sie $m$ und $c$ .
 
-### Average rate of change
+### Durchschnittliche Änderungsrate
 
-Between two inputs $x_{1}$ and $x_{2}$,
+Zwischen zwei Eingängen $x_{1}$ und $x_{2}$
 
 $$
 \frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}=m.
 $$
 
-For a linear function the average rate equals the slope on every interval. That is the table test for a line: successive first differences are constant when the $x$-step is constant.
+Für eine lineare Funktion entspricht die durchschnittliche Rate der Steigung in jedem Intervall. Das ist der Tabellentest für eine Linie: Aufeinanderfolgende erste Differenzen sind konstant, wenn der $x$ -Schritt konstant ist.
 
-**Example 2.** A taxi fare is
+**Beispiel 2.** Ein Taxipreis ist
 
 $$
 C(d)=3.5+1.2\,d
 $$
 
-euros for distance $d$ kilometres. The fixed fee is $3.5$. Each extra kilometre adds $1.2$. The graph is a rising line. The claim “the fare doubles when the distance doubles” is false in general, because of the nonzero fixed fee.
+Euro für Entfernung $d$ Kilometer. Die feste Gebühr ist $3.5$ . Jeder zusätzliche Kilometer fügt $1.2$ hinzu. Der Graph ist eine steigende Linie. Die Behauptung "der Fahrpreis verdoppelt sich, wenn sich die Entfernung verdoppelt" ist generell falsch, da die feste Gebühr ungleich Null ist.
 
 ---
 
-## 7.2 Quadratic functions: standard form and opening
+## 7.2 Quadratische Funktionen: Standardform und Öffnung
 
-### The formula
+### Die Formel
 
-A **quadratic function** has the form
+Eine **quadratische Funktion** hat die Form
 
-$$
+ $$
 g(x)=ax^{2}+bx+c\qquad\text{with }a\neq 0.
 $$
 
-The condition $a\neq 0$ is part of the definition. If $a=0$, the expression collapses to a linear (or constant) function, and the parabola theory no longer applies.
+Die Bedingung $a\neq 0$ ist Teil der Definition. Wenn $a=0$ , bricht der Ausdruck zu einer linearen (oder konstanten) Funktion zusammen, und die Parabel-Theorie gilt nicht mehr.
 
-The graph is a **parabola**.
+Der Graph ist ein **Parabel**.
 
-| Coefficient | Role |
-| --- | --- |
-| $a$ | Opening and vertical stretch |
-| $b$ | Horizontal placement of the axis (together with $a$) |
-| $c$ | $y$-intercept: $g(0)=c$ |
+| Koeffizient | Rolle |
+| --- | ---
+| $a$ | Öffnung und vertikale Dehnung |
+| $b$ | Horizontale Anordnung der Achse (zusammen mit $a$ ) |
+| $c$ | $y$ -Abschnitt: $g(0)=c$ |
 
 ### Opening direction
 
-- If $a>0$, the parabola opens **upwards**. The vertex is a global **minimum** (a trough).
-- If $a<0$, the parabola opens **downwards**. The vertex is a global **maximum** (a peak).
+- Wenn $a>0$ , öffnet sich das Parabel ** nach oben **. Der Scheitelpunkt ist ein globales **Minimum ** (ein Trog).
+- Wenn $a<0$ , öffnet sich das Parabel ** nach unten **. Der Scheitelpunkt ist ein globales **maximum ** (ein Peak).
 
-Changing the size of $|a|$ stretches or compresses the graph vertically. Replacing $a$ by $-a$ flips the graph through the $x$-axis, but keeps the same axis of symmetry only when the other coefficients are adjusted accordingly. For a fixed $b$ and $c$, flipping the sign of $a$ moves the vertex.
+Das Ändern der Größe von $|a|$ dehnt oder komprimiert den Graphen vertikal. Das Ersetzen von $a$ durch $-a$ dreht den Graphen durch die $x$ -Achse, behält aber nur dann die gleiche Symmetrieachse, wenn die anderen Koeffizienten entsprechend angepasst werden. Für einen festen $b$ und $c$ bewegt das Umdrehen des Zeichens von $a$ den Scheitelpunkt.
 
-**Example 1.** Compare $g(x)=2x^{2}-8x+5$ and $h(x)=-2x^{2}-8x+5$.
+**Beispiel 1.** Vergleichen Sie $g(x)=2x^{2}-8x+5$ und $h(x)=-2x^{2}-8x+5$ .
 
-Both have the same $b$ and $c$, but opposite $a$. The first opens up. The second opens down. Their axes are different, because the axis formula uses $a$:
+Beide haben die gleichen $b$ und $c$ , aber entgegengesetzt $a$ . Der erste öffnet sich. Der zweite öffnet sich. Ihre Achsen sind unterschiedlich, weil die Achsenformel $a$ verwendet:
 
 $$
 x=-\frac{b}{2a}.
 $$
 
-For $g$, the axis is $x=2$. For $h$, the axis is $x=-2$.
+Für $g$ ist die Achse $x=2$ . Für $h$ ist die Achse $x=-2$ .
 
-### The $y$-intercept
+### Der $y$ -Abschnitt
 
-Always $g(0)=c$. Claims that confuse $c$ with the vertex height are common and false in general.
+Immer $g(0)=c$ . Behauptungen, die $c$ mit der Scheitelpunkthöhe verwechseln, sind allgemein und falsch.
 
-### Far to the right and far to the left
+### Weit rechts und weit links
 
-As $x\to+\infty$:
+As $x\to+\infty$ :
 
-- if $a>0$, then $g(x)\to+\infty$;
-- if $a<0$, then $g(x)\to-\infty$.
+- wenn $a>0$ , dann $g(x)\to+\infty$ ;
+- wenn $a<0$ , dann $g(x)\to-\infty$ .
 
-As $x\to-\infty$, the same leading term $ax^{2}$ dominates, and the signs reverse relative to the right-hand end only in the sense that both ends go the same way: an upward parabola goes to $+\infty$ on both sides, and a downward parabola goes to $-\infty$ on both sides.
+Als $x\to-\infty$ dominiert derselbe führende Begriff $ax^{2}$ , und die Zeichen drehen sich relativ zum rechten Ende nur in dem Sinne um, dass beide Enden den gleichen Weg gehen: ein aufwärts gerichtetes Parabel geht auf beiden Seiten zu $+\infty$ und ein abwärts gerichtetes Parabel geht auf beiden Seiten zu $-\infty$ .
 
-That is why a line can never “trap” a parabola forever on both sides. A line grows at most linearly. A quadratic eventually overtakes every line in the direction of its opening.
+Deshalb kann eine Linie eine Parabel auf beiden Seiten niemals für immer "einfangen". Eine Linie wächst höchstens linear. Ein Quadrat überholt schließlich jede Linie in Richtung seiner Öffnung.
 
 ---
 
-## 7.3 Axis, vertex, and completing the square
+## 7.3 Achse, Scheitelpunkt und Vervollständigung des Quadrats
 
-### Axis of symmetry
+### Achse der Symmetrie
 
-The **axis of symmetry** of $g(x)=ax^{2}+bx+c$ is the vertical line
+Die ** Achse der Symmetrie** von $g(x)=ax^{2}+bx+c$ ist die vertikale Linie
 
 $$
 x=-\frac{b}{2a}.
 $$
 
-Every parabola of this form is symmetric about that line. The constant term $c$ never appears in the axis formula, so changing $c$ alone slides the graph up or down without moving the axis.
+Jedes Parabel dieser Form ist symmetrisch zu dieser Linie. Der konstante Term $c$ erscheint nie in der Achsenformel, so dass das Ändern von $c$ allein den Graphen nach oben oder unten rutscht, ohne die Achse zu bewegen.
 
 ### Vertex
 
-The **vertex** is the turning point. Its abscissa is the axis value. Its ordinate is the function value there:
+Der **vertex** ist der Wendepunkt. Seine Abszisse ist der Achsenwert. Seine Ordinate ist der Funktionswert dort:
 
 $$
 h=-\frac{b}{2a},\qquad k=g(h).
 $$
 
-The vertex is the point $(h,k)$.
+Der Scheitelpunkt ist der Punkt $(h,k)$ .
 
-- If $a>0$, then $k$ is the global minimum value of $g$.
-- If $a<0$, then $k$ is the global maximum value of $g$.
+- Wenn $a>0$ , dann ist $k$ der globale Minimalwert von $g$ .
+- Wenn $a<0$ , dann ist $k$ der globale Maximalwert von $g$ .
 
-The vertex always exists over the reals, whether or not the parabola has real roots. A negative discriminant does not remove the vertex.
+Der Scheitelpunkt existiert immer über den Realen, ob das Parabel echte Wurzeln hat oder nicht. Eine negative Diskriminante entfernt den Scheitelpunkt nicht.
 
-### Completing the square
+### Das Quadrat ausfüllen
 
-Completing the square rewrites the quadratic as
+Vervollständigen des Quadrats umschreibt die quadratische als
 
 $$
 g(x)=a\left(x-h\right)^{2}+k,
 $$
 
-which is called **vertex form**. Here $(h,k)$ is the vertex and $a$ is the same leading coefficient as in standard form.
+Es heißt **vertex form**. Hier ist $(h,k)$ der Scheitelpunkt und $a$ ist der gleiche Leitkoeffizient wie in Standardform.
 
-One standard calculation is
+Eine Standardberechnung ist
 
 $$
 g(x) = ax^{2}+bx+c = a\left(x^{2}+\frac{b}{a}x\right)+c
@@ -205,228 +205,226 @@ $$
 h=-\frac{b}{2a},\qquad k=c-\frac{b^{2}}{4a}=\frac{4ac-b^{2}}{4a}=-\frac{\Delta}{4a},
 $$
 
-where $\Delta=b^{2}-4ac$ is the discriminant.
+wobei $\Delta=b^{2}-4ac$ die Diskriminante ist.
 
-**Example 1.** Take $g(x)=x^{2}-6x+5$.
+**Beispiel 1.** Take $g(x)=x^{2}-6x+5$ .
 
 $$
 g(x)=(x-3)^{2}-9+5=(x-3)^{2}-4.
 $$
 
-The vertex is $(3,-4)$. The axis is $x=3$. Because $a=1>0$, the value $-4$ is a minimum.
+Der Scheitelpunkt ist $(3,-4)$ . Die Achse ist $x=3$ . Da $a=1>0$ , ist der Wert $-4$ ein Minimum.
 
-**Example 2.** Take $g(x)=-2x^{2}+8x-3$.
+**Beispiel 2.** Take $g(x)=-2x^{2}+8x-3$ .
 
 $$
 g(x) = -2\left(x^{2}-4x\right)-3,\quad = -2\left((x-2)^{2}-4\right)-3,\quad = -2(x-2)^{2}+8-3 = -2(x-2)^{2}+5.
 $$
 
-The vertex is $(2,5)$. The graph opens down, so $5$ is a maximum.
+Der Scheitelpunkt ist $(2,5)$ . Der Graph öffnet sich, also ist $5$ ein Maximum.
 
-### Uniqueness of vertex form
+### Einzigartigkeit der Vertex-Form
 
-Every real quadratic admits a representation $a(x-h)^{2}+k$ with unique $(a,h,k)$. The leading coefficient is unique. The vertex is unique. Replacing $h$ by $-h$ changes the graph unless $h=0$.
+Jedes reale Quadrat gibt eine Darstellung $a(x-h)^{2}+k$ mit einem einzigartigen $(a,h,k)$ zu. Der führende Koeffizient ist einzigartig. Der Vertex ist einzigartig. Das Ersetzen von $h$ durch $-h$ ändert den Graphen, es sei denn $h=0$ .
 
 ### Range
 
-From vertex form:
+Aus Vertex-Form:
 
-- if $a>0$, the range is $[k,+\infty)$;
-- if $a<0$, the range is $(-\infty,k]$.
+- wenn $a>0$ , ist der Bereich $[k,+\infty)$ ;
+- wenn $a<0$ , ist der Bereich $(-\infty,k]$ .
 
-A claim that a downward parabola “takes every real value” is false. It never exceeds its peak $k$.
+Eine Behauptung, dass ein nach unten gerichtetes Parabel „jeden wirklichen Wert annimmt, ist falsch. Es überschreitet nie seinen Peak $k$ .
 
 ---
 
-## 7.4 Roots, factored form, and Vieta
+## 7.4 Wurzeln, faktorisierte Form und Vieta
 
 ### Real roots as $x$-intercepts
 
-The real roots of $g$ are the solutions of $g(x)=0$. Geometrically they are the points where the parabola meets the horizontal axis.
+Die wahren Wurzeln von $g$ sind die Lösungen von $g(x)=0$ . Geometrisch sind sie die Punkte, an denen das Parabel die horizontale Achse trifft.
 
 ### Factored form
 
-When there are two real roots $r$ and $s$ (possibly equal),
+Wenn es zwei echte Wurzeln $r$ und $s$ gibt (möglicherweise gleich),
 
 $$
 g(x)=a(x-r)(x-s).
 $$
 
-If $r=s$, this is a double root and the graph touches the axis at one point.
+Wenn $r=s$ , ist dies eine doppelte Wurzel und der Graph berührt die Achse an einem Punkt.
 
-**Example 1.** $g(x)=2(x-1)(x-4)=2x^{2}-10x+8$.
+**Beispiel 1.** $g(x)=2(x-1)(x-4)=2x^{2}-10x+8$ .
 
-- Roots at $x=1$ and $x=4$.
-- Axis at the midpoint $x=\dfrac{1+4}{2}=2.5$.
-- Leading coefficient $2>0$, so the graph opens up.
-- On the open interval $(1,4)$ the product $(x-1)(x-4)$ is negative, so $g$ is negative between the roots. Outside $[1,4]$, $g$ is positive.
+- Wurzeln bei $x=1$ und $x=4$ .
+- Achse im Mittelpunkt $x=\dfrac{1+4}{2}=2.5$ - Führender Koeffizient $2>0$ , also öffnet sich der Graph.
+- Im offenen Intervall $(1,4)$ ist das Produkt $(x-1)(x-4)$ negativ, also $g$ ist negativ zwischen den Wurzeln. Draußen $[1,4]$ , $g$ ist positiv.
 
 ### Vieta’s rules
 
-For $g(x)=ax^{2}+bx+c$ with $a\neq 0$, if the roots (in $\mathbb{C}$, counting multiplicity) are $r$ and $s$, then
+Für $g(x)=ax^{2}+bx+c$ mit $a\neq 0$ , wenn die Wurzeln (in $\mathbb{C}$ , Multiplizität zählen) $r$ und $s$ sind, dann
 
 $$
 r+s=-\frac{b}{a},\qquad rs=\frac{c}{a}.
 $$
 
-Over the reals these formulas still hold whenever the roots are real.
+Über den Realen halten diese Formeln immer noch, wenn die Wurzeln real sind.
 
-### Axis as half the sum of roots
+### Achse als die Hälfte der Summe von Wurzeln
 
-The axis is
+Die Achse ist
 
 $$
 x=-\frac{b}{2a}=\frac{r+s}{2}.
 $$
 
-Write $S=r+s$. Then the axis is $x=S/2$, not $x=S$. This half-sum fact is one of the most frequent traps in the chapter.
+Schreibe $S=r+s$ . Dann ist die Achse $x=S/2$ , nicht $x=S$ . Diese halbsumme tatsache ist eine der häufigsten fallen im kapitel.
 
-**Example 2.** Suppose $g(x)=ax^{2}+bx+c$ and $S$ is the sum of the roots. The claim “the axis is the line $x=S$” is false. The axis is $x=S/2$. If $S=0$, then $b=0$ and the axis is the $y$-axis.
+**Beispiel 2.** Angenommen, $g(x)=ax^{2}+bx+c$ und $S$ sind die Summe der Wurzeln. Die Behauptung „die Achse ist die Linie $x=S$ ist falsch. Die Achse ist $x=S/2$ . Wenn $S=0$ , dann $b=0$ und die Achse ist die $y$ -Achse.
 
-### Sign information from sum and product
+### Sign Informationen aus Summe und Produkt
 
-| Condition | Meaning for real roots |
-| --- | --- |
-| $rs>0$ and $r+s>0$ | Both roots positive (when they are real) |
-| $rs>0$ and $r+s<0$ | Both roots negative |
-| $rs<0$ | Opposite signs |
-| $r+s=0$ | Opposite roots: $s=-r$, and the axis is $x=0$ |
+| Zustand | Bedeutung für echte Wurzeln |
+| --- | ---
+| $rs>0$ und $r+s>0$ | Beide Wurzeln positiv (wenn sie real sind) |
+| $rs>0$ und $r+s<0$ | Beide Wurzeln negativ |
+| $rs<0$ | Gegensätzliche Zeichen |
+| $r+s=0$ | Gegenüber liegende Wurzeln: $s=-r$ , und die Achse ist $x=0$ |
 
-A positive sum alone does not force both roots positive. Roots $-1$ and $3$ sum to $2$ but have opposite signs. You need the product test as well.
+Eine positive Summe allein erzwingt nicht beide Wurzeln positiv. Wurzeln $-1$ und $3$ summieren sich zu $2$ , haben aber entgegengesetzte Vorzeichen. Sie benötigen auch den Produkttest.
 
-### Changing $c$ does not move the axis
+### Ändern $c$ bewegt die Achse nicht
 
-Because the axis depends only on $a$ and $b$, a vertical shift that changes $c$ alone leaves the axis fixed. It does change the roots and the product $rs=c/a$.
+Da die Achse nur von und $a$ abhängt, lässt eine vertikale Verschiebung, die sich ändert $c$ allein die Achse fest. Es verändert die Wurzeln und das Produkt $rs=c/a$ .
 
 ---
 
-## 7.5 Discriminant and counting roots
+## 7.5 Diskriminierende und zählende Wurzeln
 
-### The discriminant
+### Der Diskriminierende
 
 $$
 \Delta=b^{2}-4ac.
 $$
 
-| $\Delta$ | Real roots | Graph against the $x$-axis |
-| --- | --- | --- |
-| $\Delta>0$ | Two distinct real roots | Two crossings |
-| $\Delta=0$ | One real root (double) | Tangency at the vertex’s abscissa? Not always the vertex height zero, but the touch point is on the axis of symmetry |
-| $\Delta<0$ | No real roots | No crossing; the whole graph stays strictly above or strictly below the $x$-axis |
+| $\Delta$ | Echte Wurzeln | Graph gegen die $x$ -Achse |
+| --- | ---
+| $\Delta>0$ | Zwei verschiedene reale Wurzeln | Zwei Kreuzungen |
+| $\Delta=0$ | Eine echte Wurzel (doppelt) | Tangenz an der Abszisse des Vertex? Nicht immer die Scheitelpunkthöhe Null, aber der Berührungspunkt liegt auf der Symmetrieachse |
+| $\Delta<0$ | Keine wirklichen Wurzeln | Keine Kreuzung; der gesamte Graph bleibt strikt oberhalb oder unterhalb der $x$ -Achse |
 
-When $\Delta=0$, the unique root is exactly the axis value $x=-b/(2a)$, and the vertex lies on the $x$-axis.
+Wenn $\Delta=0$ , ist die eindeutige Wurzel genau der Achsenwert $x=-b/(2a)$ , und der Scheitelpunkt liegt auf der $x$ -Achse.
 
-### Vertex exists even when $\Delta<0$
+### Vertex existiert auch wenn $\Delta<0$ �
 
-The formula $x=-b/(2a)$ does not use $\Delta$. So “no real roots ⇒ no vertex” is false.
+Die Formel $x=-b/(2a)$ verwendet nicht $\Delta$ . Also "keine echten Wurzeln ⇒ kein Vertex" ist falsch.
 
-### Opposite signs of $a$ and $c$
+### Gegenseitige Anzeichen von $a$ und $c$
 
-If $a$ and $c$ have opposite signs, then $ac<0$, so $-4ac>0$, hence $\Delta=b^{2}-4ac>0$. There are always two distinct real roots in that case. One root is positive and one is negative, because the product $c/a$ is negative.
+Wenn $a$ und $c$ entgegengesetzte Vorzeichen haben, dann $ac<0$ , also $-4ac>0$ , daher $\Delta=b^{2}-4ac>0$ . Es gibt immer zwei verschiedene reale Wurzeln in diesem Fall. Eine Wurzel ist positiv und eine negativ, weil das Produkt $c/a$ negativ ist.
 
 ### Horizontal probe lines
 
-Asking how many times $g(x)=k$ has real solutions is the same as studying
+Die Frage, wie oft $g(x)=k$ echte Lösungen hat, ist dasselbe wie das Lernen
 
 $$
 ax^{2}+bx+(c-k)=0
 $$
 
-with discriminant
+mit Diskriminanz
 
 $$
 \Delta(k)=b^{2}-4a(c-k).
 $$
 
-Geometrically this is meetings between the parabola and the horizontal line $y=k$.
+Geometrisch sind dies Treffen zwischen dem Parabel und der horizontalen Linie $y=k$ .
 
-- Two meetings when the level $k$ sits strictly on the side of the vertex that the opening allows.
-- One meeting (tangency) when $k$ equals the vertex height.
-- No meeting when $k$ is beyond the vertex in the wrong direction.
+- Zwei Besprechungen, wenn die Ebene $k$ streng auf der Seite des Scheitels sitzt, die die Öffnung erlaubt.
+- Ein Treffen (Tangenz), wenn $k$ der Scheitelpunkthöhe entspricht.
+- Keine Besprechung, wenn $k$ jenseits des Scheitels in die falsche Richtung ist.
 
-**Example 1.** Let $g(x)=(x-2)^{2}+(s-4)$. This is a vertical-shift family.
+**Beispiel 1.** Let $g(x)=(x-2)^{2}+(s-4)$ . Dies ist eine vertikale Schichtfamilie.
 
-- Axis $x=2$ for every $s$.
-- Vertex height $s-4$.
-- Two real roots when $s-4<0$, that is $s<4$.
-- Double root when $s=4$.
-- No real root when $s>4$.
+- Achse $x=2$ für jede $s$ .
+- Scheitelhöhe $s-4$ - Zwei echte Wurzeln, wenn $s-4<0$ , das ist $s<4$ .
+- Doppelwurzel, wenn $s=4$ .
+- Keine echte Wurzel, wenn $s>4$ .
 
 ---
 
-## 7.6 Meetings of a line and a parabola
+## 7.6 Treffen einer Linie und eines Parabels
 
-### The equation of meetings
+### Die Gleichung der Sitzungen
 
-Let $f(x)=mx+d$ be linear and $g(x)=ax^{2}+bx+c$ quadratic. Their graphs meet where
+Es sei $f(x)=mx+d$ linear und $g(x)=ax^{2}+bx+c$ quadratisch. Ihre Graphen treffen sich, wo
 
 $$
 g(x)=f(x)\iff ax^{2}+(b-m)x+(c-d)=0.
 $$
 
-This is again a quadratic equation (unless $a=0$, which it is not). The discriminant of that difference decides the number of meetings.
+Dies ist wieder eine quadratische Gleichung (es sei denn $a=0$ , was es nicht ist). Die Diskriminante dieser Differenz entscheidet über die Anzahl der Sitzungen.
 
-| Discriminant of $g-f$ | Geometric meaning |
-| --- | --- |
-| Positive | Two distinct meeting points |
-| Zero | Exactly one meeting: the line is tangent to the parabola |
-| Negative | No meeting |
+| Diskriminant von $g-f$ | Geometrische Bedeutung |
+| --- | ---
+| Positive | Zwei verschiedene Treffpunkte |
+| Zero | Genau ein Treffen: Die Linie tangiert das Parabel |
+Negativ | Kein Treffen |
 
-A line and a parabola never meet more than twice. That structural bound does not depend on the particular coefficients.
+Eine Linie und ein Parabel treffen sich nie mehr als zweimal. Diese Strukturgrenze hängt nicht von den jeweiligen Koeffizienten ab.
 
 ### Tangency
 
-Tangency means the graphs touch at one point and share the same slope there. For Chapter 7 tasks it is enough to set the discriminant of $g-f$ to zero. That produces a condition on a parameter (often a slope or a vertical shift).
+Tangenz bedeutet, dass sich die Graphen an einem Punkt berühren und dort die gleiche Steigung teilen. Für Aufgaben in Kapitel 7 genügt es, die Diskriminante von $g-f$ auf Null zu setzen. Das erzeugt eine Bedingung für einen Parameter (oft eine Steigung oder eine vertikale Verschiebung).
 
-**Example 1.** Let $g(x)=x^{2}$ and $f_{m}(x)=mx+1$. Meetings solve
+**Beispiel 1.** Lassen Sie $g(x)=x^{2}$ und $f_{m}(x)=mx+1$ . Meetings lösen
 
 $$
 x^{2}-mx-1=0,\qquad \Delta=m^{2}+4.
 $$
 
-Here $\Delta>0$ for every real $m$, so every such line meets the parabola twice. There is no tangency in this family, because the constant term keeps the line from settling into a tangent position with this intercept.
+Hier $\Delta>0$ für jede reale $m$ , so dass jede solche Linie zweimal auf das Parabel trifft. Es gibt keine Tangenz in dieser Familie, weil der konstante Begriff die Linie davon abhält, sich in eine Tangentenposition mit diesem Abschnitt zu setzen.
 
-**Example 2.** Let $g(x)=x^{2}$ and $f_{t}(x)=2x+t$. Then
+**Beispiel 2.** Lassen Sie $g(x)=x^{2}$ und $f_{t}(x)=2x+t$ . Dann
 
 $$
 x^{2}-2x-t=0,\qquad \Delta=4+4t=4(1+t).
 $$
 
-- Two meetings when $t>-1$.
-- Tangency when $t=-1$.
-- No meeting when $t<-1$.
+- Zwei Treffen, wenn $t>-1$ .
+- Tangenz wenn $t=-1$ .
+- Kein Treffen, wenn $t<-1$ .
 
-### Sum and product of meeting abscissas
+### Summe und Produkt des Treffens Abszissen
 
-If the meetings occur at $x_{1}$ and $x_{2}$, Vieta on $g-f=0$ gives their sum and product. Claims about “the product of meeting abscissas is negative” are product-of-roots claims for that difference equation.
+Wenn die Meetings unter $x_{1}$ und $x_{2}$ stattfinden, gibt Vieta auf $g-f=0$ ihre Summe und ihr Produkt an. Behauptungen über "das Produkt des Treffens Abszissen ist negativ" sind Produkt-of-Wurzeln Behauptungen für diese Differenz Gleichung.
 
-### Vertex relative to a line
+### Vertex relativ zu einer Linie
 
-A frequent claim asks whether the vertex lies on a given line, above it, or below it. Compute the vertex $(h,k)$, then compare $k$ with $f(h)$. Do not confuse “vertex on the axis of symmetry” with “vertex on the given line”.
+Eine häufige Behauptung fragt, ob der Scheitelpunkt auf einer gegebenen Linie, darüber oder darunter liegt. Berechnen Sie den Scheitelpunkt $(h,k)$ und vergleiche dann $k$ mit $f(h)$ . Verwechseln Sie nicht "Vertikel auf der Symmetrieachse" mit "Vertikel auf der angegebenen Linie".
 
-### Secants and chords
+### Secants und Akkorde
 
-A chord joining the two roots of a parabola is a horizontal segment on the $x$-axis only when both roots are real and you join $(r,0)$ to $(s,0)$. A dashed line in a figure may look similar to that chord but sit at a different height. Recover both formulas before comparing.
+Ein Akkord, der die beiden Wurzeln eines Parabels verbindet, ist nur dann ein horizontales Segment auf der $x$ -Achse, wenn beide Wurzeln real sind und Sie $(r,0)$ mit $(s,0)$ verbinden. Eine gestrichelte Linie in einer Figur kann diesem Akkord ähnlich aussehen, aber auf einer anderen Höhe sitzen. Stellen Sie beide Formeln vor dem Vergleich wieder her.
 
 ---
 
-## 7.7 Tables: first and second differences
+## 7.7 Tabellen: erster und zweiter Unterschied
 
-Many Chapter 7 tasks give a table and no formula. Your job is to decide whether the hidden rule is a line or a parabola, then rebuild what you need (slope, leading coefficient, axis, vertex, next value).
+Viele Kapitel 7 Aufgaben geben eine Tabelle und keine Formel. Ihre Aufgabe ist es, zu entscheiden, ob die versteckte Regel eine Linie oder ein Parabel ist, und dann das wieder aufzubauen, was Sie brauchen (Steigung, Leitkoeffizient, Achse, Scheitelpunkt, nächster Wert).
 
-Almost every table in the course uses equally spaced inputs with step $1$ (for example $n=0,1,2,3,\ldots$ or $p=1,2,3,\ldots$). Work with that case first.
+Fast jede Tabelle im Kurs verwendet gleich beabstandete Eingaben mit Schritt $1$ (für Beispiel $n=0,1,2,3,\ldots$ oder $p=1,2,3,\ldots$ ). Arbeiten Sie zuerst mit diesem Fall.
 
 ### First differences
 
-Write the outputs in a row. Under each pair of neighbours, write the gap
+Schreiben Sie die Outputs in einer Reihe. Unter jedem Paar von Nachbarn, schreiben Sie die Lücke
 
 $$
 \text{next output}-\text{current output}.
 $$
 
-Those gaps are the **first differences**.
+Diese Lücken sind die **ersten Unterschiede **.
 
-**Example 1 (line).**
+**Beispiel 1 (line).**
 
 | $x$ | $0$ | $1$ | $2$ | $3$ | $4$ |
 | --- | --- | --- | --- | --- | --- |
@@ -434,25 +432,25 @@ Those gaps are the **first differences**.
 
 First differences: $3,3,3,3$.
 
-The first differences are constant. So the rule is linear. With step $1$, that common gap is the slope:
+Die ersten Unterschiede sind konstant. Die Regel ist linear. Mit Schritt $1$ ist diese gemeinsame Lücke die Steigung:
 
 $$
 m=3.
 $$
 
-Using the first point,
+Mit dem ersten Punkt,
 
 $$
 y=3x-1.
 $$
 
-You can now extend the table by keeping the same gap: $y(5)=11+3=14$.
+Sie können die Tabelle jetzt erweitern, indem Sie die gleiche Lücke beibehalten: $y(5)=11+3=14$ .
 
 ### Second differences
 
-If the first differences are not constant, form gaps of those gaps. Those are the **second differences**.
+Wenn die ersten Unterschiede nicht konstant sind, bilden Sie Lücken dieser Lücken. Das sind die **zweiten Unterschiede **.
 
-**Example 2 (parabola).**
+**Beispiel 2 (Parabel).**
 
 | $n$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -462,150 +460,150 @@ First differences: $-3,-1,1,3,5$.
 
 Second differences: $2,2,2,2$.
 
-The second differences are constant and nonzero. So the rule is quadratic. With step $1$,
+Die zweiten Unterschiede sind konstant und ungleich Null. Die Regel ist also quadratisch. Mit Schritt $1$ ,
 
-$$
+ $$
 \text{common second difference}=2a.
 $$
 
-Here $2a=2$, so $a=1$. Matching the first two points gives
+Hier $2a=2$ , also $a=1$ . Matching der ersten beiden Punkte gibt
 
 $$
 s_n=n^{2}-4n+3=(n-1)(n-3).
 $$
 
-From that rebuilt formula you can read everything the claims ask for:
+Aus dieser umgebauten Formel können Sie alles lesen, was die Behauptungen verlangen:
 
-- roots at $n=1$ and $n=3$;
-- axis at the midpoint $n=2$;
-- vertex height $s_2=-1$;
-- the next value $s_6=6^{2}-4\cdot 6+3=15$, not $12$.
+- Wurzeln bei $n=1$ und $n=3$ ;
+- Achse im Mittelpunkt $n=2$ ;
+- Scheitelhöhe $s_2=-1$ ;
+- der nächste Wert $s_6=6^{2}-4\cdot 6+3=15$ , nicht $12$ .
 
-### How to decide on an exam table
+### Wie man sich für einen Prüfungstisch entscheidet
 
-1. Compute first differences.
-2. If they are constant, use a line. Slope equals that common gap when the step is $1$.
-3. If they are not constant, compute second differences.
-4. If second differences are constant, use a parabola. Leading coefficient satisfies $2a=$ that common second gap when the step is $1$.
-5. Rebuild only as far as the claim needs: sometimes $a$ alone is enough, sometimes you also need roots, axis, or one more table value.
+1. Erste Differenzen berechnen.
+2. Wenn sie konstant sind, verwenden Sie eine Linie. Steigung entspricht dieser gemeinsamen Lücke, wenn der Schritt $1$ ist.
+3. Wenn sie nicht konstant sind, berechnen Sie zweite Differenzen.
+4. Wenn zweite Unterschiede konstant sind, verwenden Sie ein Parabel. Der Leitkoeffizient erfüllt $2a=$ diese gemeinsame zweite Lücke, wenn der Schritt $1$ ist.
+5. Rebuild nur so weit, wie die Behauptung braucht: manchmal reicht $a$ allein, manchmal braucht man auch Wurzeln, Achse oder einen weiteren Tabellenwert.
 
-### Traps that appear in the course
+### Fallen, die im Kurs auftauchen
 
-- A claim may say a line through the first and last points also hits a middle point. Check that middle value directly. In Example 2, the line through $(0,3)$ and $(5,8)$ has slope $1$, so at $n=2$ it predicts $5$, but the table has $-1$. The claim is false.
-- A claim may extend the pattern wrongly. Keep adding the same second difference to the first differences, then add that new first difference to the last output. Do not invent a new gap.
-- Constant first differences mean a line. Do not force a parabola onto that table.
+Eine Behauptung kann sagen, dass eine Linie durch den ersten und letzten Punkt auch einen mittleren Punkt trifft. Überprüfen Sie diesen mittleren Wert direkt. In Beispiel 2 hat die Linie durch $(0,3)$ und $(5,8)$ Steigung $1$ , also bei $n=2$ prognostiziert sie $5$ , aber die Tabelle hat $-1$ . Die Behauptung ist falsch.
+Eine Behauptung kann das Muster falsch erweitern. Fügen Sie die gleiche zweite Differenz zu den ersten Differenzen hinzu und fügen Sie diese neue erste Differenz zum letzten Ausgang hinzu. Erfinden Sie keine neue Lücke.
+- Konstante erste Unterschiede bedeuten eine Linie. Zwingen Sie kein Parabel auf diesen Tisch.
 
-**Example 3 (revenue table).**
+**Beispiel 3 (revenue table).**
 
 | $p$ | $1$ | $2$ | $3$ | $4$ | $5$ |
 | --- | --- | --- | --- | --- | --- |
 | $R$ | $7$ | $12$ | $15$ | $16$ | $15$ |
 
-First differences: $5,3,1,-1$. Second differences: $-2,-2,-2$. So $2a=-2$ and $a=-1$. Matching $R(1)=7$ recovers
+Erste Unterschiede: $5,3,1,-1$ . Zweite Unterschiede: $-2,-2,-2$ Also $2a=-2$ und $a=-1$ . Matching $R(1)=7$ erholt sich
 
 $$
 R(p)=p(8-p)=-p^{2}+8p.
 $$
 
-The peak is at the midpoint $p=4$ of the roots $0$ and $8$. Revenue does not increase at every listed step: from $4$ to $5$ it falls from $16$ to $15$.
+Der Peak befindet sich im Mittelpunkt $p=4$ der Wurzeln $0$ und $8$ . Der Umsatz steigt nicht bei jedem aufgeführten Schritt: von $4$ nach $5$ fällt er von $16$ nach $15$ .
 
 ---
 
-## 7.8 Nesting a line and a parabola
+## 7.8 Eine Linie und ein Parabel verschachteln
 
-Course tasks often give a line $f$ and a parabola $g$, then ask about $g(f(x))$ or $f(g(x))$. You do not need abstract degree theory. Expand the expression and read the result.
+Kursaufgaben geben oft eine Linie $f$ und ein Parabel $g$ , dann fragen Sie nach $g(f(x))$ oder $f(g(x))$ . Sie brauchen keine abstrakte Gradtheorie. Erweitern Sie den Ausdruck und lesen Sie das Ergebnis.
 
-### What nesting means
+### Was Nesting bedeutet
 
-$g(f(x))$ means: first compute the line value, then feed that number into the parabola.
+ $g(f(x))$ bedeutet: Berechnen Sie zuerst den Zeilenwert und geben Sie diese Zahl dann in das Parabel ein.
 
-$f(g(x))$ means: first compute the parabola value, then feed that number into the line.
+ $f(g(x))$ bedeutet: Berechnen Sie zuerst den Parabel-Wert und geben Sie diese Zahl dann in die Zeile ein.
 
-### Expand both orders
+### Beide Orders erweitern
 
-**Example 1.** Let $f(x)=x+1$ and $g(x)=x^{2}$.
+**Beispiel 1.** Lassen Sie $f(x)=x+1$ und $g(x)=x^{2}$ .
 
 $$
 g(f(x))=(x+1)^{2}=x^{2}+2x+1,,\quad f(g(x))=x^{2}+1.
 $$
 
-Both results have highest power $x^{2}$. Nesting a line with a parabola does not create an $x^{3}$ term. The false claim “$1+2=3$, so there is an $x^{3}$ term” is a standard trap.
+Beide Ergebnisse haben die höchste Leistung $x^{2}$ . Das Verschachteln einer Zeile mit einem Parabel erzeugt keinen Term $x^{3}$ . Die falsche Behauptung $1+2=3$ , also gibt es einen $x^{3}$ Begriff ist eine Standardfalle.
 
-The two nestings are different functions. A quick check:
+Die beiden Nestings sind unterschiedliche Funktionen. Eine schnelle Überprüfung:
 
 $$
 g(f(1))=4,\qquad f(g(1))=2.
 $$
 
-So claims that “the two nested rules are identical” or “they have the same vertex” are false here.
+Behauptungen, dass "die beiden verschachtelten Regeln identisch sind" oder "sie haben den gleichen Scheitelpunkt", sind hier falsch.
 
-From the expansions you can also read geometry:
+Aus den Erweiterungen können Sie auch Geometrie lesen:
 
-- $g(f(x))=(x+1)^{2}$ is a perfect square, so its vertex lies on the horizontal axis;
-- $f(g(x))=x^{2}+1$ has the same axis $x=0$ as $g$, and vertex $(0,1)$.
+- $g(f(x))=(x+1)^{2}$ ist ein perfektes Quadrat, so dass sein Scheitelpunkt auf der horizontalen Achse liegt;
+- $f(g(x))=x^{2}+1$ hat die gleiche Achse $x=0$ wie $g$ und Vertex $(0,1)$ .
 
-### Checking a rewrite claim
+### Checking a rewrite Behauptung
 
-Some tasks claim that the parabola can be written using the line, for example
+Einige Aufgaben Behauptung, dass das Parabel mit der Zeile geschrieben werden kann, zum Beispiel
 
 $$
 g(x)=f(x)^{2}-6\,f(x)+6.
 $$
 
-The method is simple: replace $f(x)$ by its formula and expand. If you recover $g(x)$, the claim is true. If not, it is false.
+Die Methode ist einfach: Setze $f(x)$ durch seine Formel und erweitern Sie. Wenn Sie $g(x)$ wiederherstellen, ist die Behauptung wahr. Wenn nicht, ist es falsch.
 
-**Example 2.** Let $f(x)=x+1$ and $g(x)=x^{2}-4x+1$. Expand the proposed rewrite:
+**Beispiel 2.** Lassen Sie $f(x)=x+1$ und $g(x)=x^{2}-4x+1$ . Erweitern Sie das vorgeschlagene Rewrite:
 
 $$
 (x+1)^{2}-6(x+1)+6=x^{2}+2x+1-6x-6+6=x^{2}-4x+1=g(x).
 $$
 
-The claim is true.
+Die Behauptung ist wahr.
 
-You do not need a general theorem about bases of polynomials for these tasks. Expand and compare.
+Sie brauchen keinen allgemeinen Menge über Polynombasen für diese Aufgaben. Erweitern und vergleichen.
 
 ### Shifts you meet in claims
 
-- $g(x)+s$ moves the graph up by $s$ and leaves the axis fixed.
-- $g(x-t)$ moves the graph right by $t$ and moves the axis with it.
-- Multiplying by a nonzero constant stretches heights and keeps the roots when the constant is nonzero.
+- $g(x)+s$ bewegt den Graphen um $s$ nach oben und lässt die Achse fest.
+- $g(x-t)$ bewegt den Graphen rechts um $t$ und bewegt die Achse mit ihm.
+Multiplizieren mit einer Konstante von Null dehnt die Höhe aus und enthält die Wurzeln, wenn die Konstante ungleich Null ist.
 
-That is enough for the shift and nesting claims in the chapter.
+Das reicht für die Verschiebung und Verschachtelung der Behauptungen im Kapitel.
 
 ---
 
 ## 7.9 Parametric families
 
-### What a parameter does
+### Was ein Parameter tut
 
-A parameter $m$, $t$, or $s$ often slides a line’s slope, slides a line vertically, or slides a parabola up, down, or sideways. Each claim about “for which values there are two meetings / tangency / none” is a discriminant condition in that parameter.
+Ein Parameter $m$ , $t$ oder $s$ gleitet oft die Steigung einer Linie, gleitet eine Linie vertikal oder gleitet ein Parabel nach oben, unten oder seitlich. Jede Behauptung über "für welche Werte es zwei Treffen / Tangenzen / keine gibt" ist eine diskriminierende Bedingung in diesem Parameter.
 
 ### Typical patterns
 
-1. **Sliding slope family.** $f_{m}(x)=mx+d$ against a fixed parabola. Set $\Delta(m)=0$ for tangency.
-2. **Vertical shift of a line.** $f_{t}(x)=mx+t$. Again $\Delta(t)=0$ marks the tangent height.
-3. **Vertical shift of a parabola.** $g_{s}(x)=a(x-h)^{2}+(s-k_{0})$. Root count flips when the vertex crosses the $x$-axis.
-4. **Horizontal slide.** $g_{t}(x)=a(x-t)^{2}+k$. The axis moves with $t$. Meetings with a fixed line change with $t$.
+1. **Sliding Steigung Familie.** $f_{m}(x)=mx+d$ gegen eine feste Parabel. Menge $\Delta(m)=0$ für Tangenz.
+2. Vertikale Verschiebung einer Linie. $f_{t}(x)=mx+t$ . Wiederum $\Delta(t)=0$ markiert die Tangente.
+3. Vertikale Verschiebung eines Parabels. $g_{s}(x)=a(x-h)^{2}+(s-k_{0})$ . Die Wurzelzahl wird umgedreht, wenn der Scheitelpunkt die $x$ -Achse kreuzt.
+4. **Horizontale Folie.** $g_{t}(x)=a(x-t)^{2}+k$ . Die Achse bewegt sich mit $t$ . Meetings mit einer festen Linie ändern sich mit $t$ .
 
-**Example 1.** Shared intercept with a sliding second meeting: a line through a fixed point on the parabola will generally meet the parabola again somewhere else. The second meeting can be solved from the difference equation after cancelling the known root $(x-x_{0})$.
+**Beispiel 1.** Gemeinsames Abfangen mit einem gleitenden zweiten Treffen: Eine Linie durch einen festen Punkt auf der Parabel trifft die Parabel in der Regel woanders wieder. Das zweite Treffen kann aus der Differenzgleichung nach Aufhebung der bekannten Wurzel $(x-x_{0})$ gelöst werden.
 
 ### Opening constraints
 
-Sometimes a parameter multiplies the leading coefficient, for example $g_{a}(x)=ax^{2}+bx+c$. Then “opens upwards” means $a>0$, and meetings with a fixed line become conditions on $a$ through a discriminant inequality.
+Manchmal multipliziert ein Parameter den führenden Koeffizienten für Beispiel $g_{a}(x)=ax^{2}+bx+c$ . Dann "öffnet sich nach oben" bedeutet $a>0$ , und Treffen mit einer festen Linie werden Bedingungen auf $a$ durch eine diskriminierende Ungleichheit.
 
 ---
 
-## 7.10 Rebuilding and applied stories
+## 7.10 Wiederaufbau und angewandte Geschichten
 
 ### Rebuild a line
 
-A non-vertical line is fixed by:
+Eine nicht vertikale Linie wird festgelegt durch:
 
-- slope and one point, or
-- two distinct points, or
-- slope and intercept.
+- Steigung und ein Punkt, oder
+- zwei verschiedene Punkte oder
+- Steigung und Interception.
 
-Two points determine
+Zwei Punkte bestimmen
 
 $$
 m=\frac{y_{2}-y_{1}}{x_{2}-x_{1}},\qquad f(x)=y_{1}+m(x-x_{1}).
@@ -615,14 +613,14 @@ $$
 
 Common sufficient data:
 
-| Data | Typical reconstruction |
-| --- | --- |
-| Two roots $r,s$ and leading $a$ | $g(x)=a(x-r)(x-s)$ |
-| Vertex $(h,k)$ and one other point | $g(x)=a(x-h)^{2}+k$, solve for $a$ |
-| Three non-collinear points | Solve the $3\times 3$ system for $a,b,c$ |
-| Roots and the value at one extra point | Factored form with unknown $a$, then calibrate |
+| Daten | Typische Rekonstruktion |
+| --- | ---
+| Zwei Wurzeln $r,s$ und führende $a$ | $g(x)=a(x-r)(x-s)$ |
+| Vertex $(h,k)$ und ein weiterer Punkt | $g(x)=a(x-h)^{2}+k$ , lösen für $a$ |
+| Drei nicht-kollineare Punkte | Lösen Sie das $3\times 3$ System für $a,b,c$ |
+| Roots und der Wert an einem zusätzlichen Punkt | Faktorisierte Form mit unbekannt $a$ , dann kalibrieren |
 
-**Example 1.** Vertex $(2,5)$ and point $(0,1)$:
+**Beispiel 1.** Vertex $(2,5)$ und Punkt $(0,1)$ :
 
 $$
 g(x)=a(x-2)^{2}+5,\qquad g(0)=4a+5=1\implies a=-1.
@@ -630,133 +628,133 @@ $$
 
 So $g(x)=-(x-2)^{2}+5$.
 
-**Example 2.** Roots at $1$ and $5$, monic parabola:
+**Beispiel 2.** Wurzeln bei $1$ und $5$ , monic Parabel:
 
 $$
 g(x)=(x-1)(x-5)=x^{2}-6x+5.
 $$
 
-The axis is $x=3$. The vertex height is $g(3)=-4$. A claim that the peak is $5$ because “one of the roots is $5$” is nonsense.
+Die Achse ist $x=3$ . Die Scheitelpunkthöhe ist $g(3)=-4$ . Eine Behauptung, dass der Peak $5$ ist, weil „einer der Wurzeln $5$ ist, ist Unsinn.
 
-### Applied stories use the same algebra
+### Angewandte Geschichten verwenden die gleiche Algebra
 
-| Story | Hidden function | Typical exam asks |
-| --- | --- | --- |
-| Taxi / draining tank at steady rate | Linear | Slope, intercept, doubling trap |
-| Ball toss / arch | Downward parabola | Peak as midpoint of ground times |
-| Ticket revenue | Often quadratic in price | Break-even roots, vertex revenue |
-| Cost trough | Upward parabola | Minimum cost, meetings with a budget line |
-| Profit | Revenue minus cost | Profit peak need not equal revenue peak |
+| Story | Versteckte Funktion | Typische Prüfung fragt |
+| --- | ---
+| Taxi / Entleerungstank mit konstanter Geschwindigkeit | Linear | Steigung, Abfang, Verdopplungsfalle |
+| Ballwurf / Bogen | Abwärts Parabel | Peak als Mittelpunkt der Bodenzeiten |
+| Ticketeinnahmen | Oft quadratisch im Preis | Break-even Wurzeln, vertex Einnahmen |
+| Kostensenkung | Aufwärts Parabel | Mindestkosten, Besprechungen mit einer Haushaltslinie |
+| Profit | Revenue minus Kosten | Profit Peak braucht nicht gleich Revenue Peak |
 
-For a ball tossed straight up with ground times $t=r$ and $t=s$,
+Für einen Ball, der gerade nach oben mit den Bodenzeiten $t=r$ und $t=s$ geworfen wird,
 
 $$
 h(t)=a(t-r)(t-s)\qquad(a<0),
 $$
 
-and the greatest height occurs at the midpoint $(r+s)/2$. After the peak, height falls. Claims that “height keeps rising after the peak” are false.
+und die größte Höhe tritt im Mittelpunkt $(r+s)/2$ auf. Nach der Spitze fällt die Höhe. Behauptungen, dass "die Höhe nach dem Höhepunkt steigt", sind falsch.
 
-Revenue peak versus profit peak: if cost also depends on the same variable, the two vertex locations generally differ. Do not transfer the revenue vertex onto the profit graph without recalculating.
+Umsatzspitze gegenüber Gewinnspitze: Wenn die Kosten auch von der gleichen Variable abhängen, unterscheiden sich die beiden Vertex-Standorte im Allgemeinen. Übertragen Sie den Umsatzvertex nicht auf das Gewinndiagramm, ohne neu zu berechnen.
 
 ---
 
-## 7.11 Reading graphs without printed formulas
+## 7.11 Lesen von Graphen ohne gedruckte Formeln
 
-Many exam tasks show a solid parabola and a dashed line with ticks but no closed form. The working order is:
+Viele Prüfungsaufgaben zeigen eine solide Parabel und eine gestrichelte Linie mit Zecken, aber kein geschlossenes Formular. Der Arbeitsauftrag lautet:
 
-1. Recover the parabola from marked roots, vertex, or a few lattice points.
-2. Recover the line from intercepts and slope ticks.
-3. Only then judge claims about meetings, gaps, chords, and midpoints.
+1. Wiederherstellung der Parabel aus markierten Wurzeln, Scheitelpunkt oder ein paar Gitterpunkte.
+2. Die Linie aus Abschnitten und Steigungshaken wiederherstellen.
+3. Erst dann urteilen Behauptungen über Begegnungen, Lücken, Akkorde und Mittelpunkte.
 
-**Example 1.** A downward unit square peaking at $(0,4)$ and meeting the axis at $x=\pm 2$ forces
+**Beispiel 1.** Ein Quadrat mit nach unten gerichteter Einheit, das bei $(0,4)$ gipfelt und die Achse bei $x=\pm 2$ Kräfte trifft
 
 $$
 g(x)=4-x^{2}.
 $$
 
-A dashed line through $(0,2)$ with slope $-1$ forces
+Eine gestrichelte Linie durch $(0,2)$ mit Steigung $-1$ Kräften
 
 $$
 f(x)=-x+2.
 $$
 
-Meetings solve $4-x^{2}=-x+2$, that is $x^{2}-x-2=0$, so $(x-2)(x+1)=0$. Meetings at $x=-1$ and $x=2$. The product of meeting abscissas is $-2<0$. At the turning abscissa $x=0$, the line sits at height $2$ while the curve sits at $4$, so the line is two units below the curve, not above.
+Meetings lösen $4-x^{2}=-x+2$ , also $(x-2)(x+1)=0$ . Meetings bei $x=-1$ und $x=2$ . Das Produkt der Abszissen ist $-2<0$ . An der sich drehenden Abszisse $x=0$ sitzt die Linie in der Höhe $2$ , während die Kurve bei $4$ sitzt, so dass die Linie zwei Einheiten unterhalb der Kurve ist, nicht oben.
 
-A chord joining the axis crossings $(\pm 2,0)$ lies on the $x$-axis. It does not coincide with the dashed line $y=-x+2$.
+Eine Sehne, die die Achskreuzungen $(\pm 2,0)$ verbindet, liegt auf der $x$ -Achse. Sie fällt nicht mit der gestrichelten Linie $y=-x+2$ zusammen.
 
 ---
 
 ## 7.12 Common errors
 
-### Error 1: confusing roots with the vertex
+### Fehler 1: Verwechseln von Wurzeln mit dem Scheitelpunkt
 
-Roots are $x$-intercepts. The vertex is the turning point. They coincide only in special cases (for example a double root on the axis). “The vertex is at the root $x=3$” is usually false when there are two distinct roots.
+Wurzeln sind $x$ -Abschnitte. Der Scheitelpunkt ist der Wendepunkt. Sie fallen nur in Sonderfällen zusammen (zum Beispiel eine doppelte Wurzel auf der Achse). "Der Scheitelpunkt ist an der Wurzel $x=3$ " ist normalerweise falsch, wenn es zwei verschiedene Wurzeln gibt.
 
-### Error 2: writing the axis as $x=S$ instead of $x=S/2$
+### Fehler 2: Schreiben der Achse als $x=S$ anstelle von $x=S/2$
 
-If $S$ is the sum of the roots, the axis is the midpoint $S/2$.
+Wenn $S$ die Summe der Wurzeln ist, ist die Achse der Mittelpunkt $S/2$ .
 
 ### Error 3: “no real roots ⇒ no vertex”
 
-The vertex formula never needs $\Delta\geq 0$.
+Die Vertex-Formel benötigt niemals $\Delta\geq 0$ .
 
-### Error 4: “positive sum of roots ⇒ both roots positive”
+### Fehler 4: „positive Summe von Wurzeln ⇒ beide Wurzeln positiv
 
-Opposite signs can still produce a positive sum. Check the product.
+Gegensätzliche Zeichen können immer noch eine positive Summe produzieren. Überprüfen Sie das Produkt.
 
-### Error 5: inventing an $x^{3}$ term from nesting
+### Fehler 5: Erfinden eines $x^{3}$ Begriffs aus Nesting
 
-Expand $g(f(x))$ or $f(g(x))$. For a line and a parabola the highest power stays $x^{2}$. Do not add $1+2=3$.
+Erweitern Sie $g(f(x))$ oder $f(g(x))$ . Für eine Linie und ein Parabel bleibt die höchste Kraft $x^{2}$ . Fügen Sie nicht $1+2=3$ hinzu.
 
-### Error 6: assuming nesting order does not matter
+### Fehler 6: Angenommen, die Nesting-Reihenfolge spielt keine Rolle
 
-$g(f(x))$ and $f(g(x))$ can both be quadratic and still be different functions. Check with one test point.
+ $g(f(x))$ und $f(g(x))$ können beide quadratisch sein und dennoch unterschiedliche Funktionen haben. Überprüfen Sie mit einem Testpunkt.
 
-### Error 7: thinking a vertical shift moves the axis
+### Fehler 7: Denken einer vertikalen Verschiebung bewegt die Achse
 
-Changing $c$ or adding a constant slides the graph vertically. The axis stays put.
+Durch Ändern von $c$ oder Hinzufügen einer Konstante wird der Graph vertikal verschoben. Die Achse bleibt stehen.
 
-### Error 8: mistaking a secant level for the $x$-axis
+### Fehler 8: Verwechseln einer Sekantenebene für die $x$ -Achse
 
-A horizontal dashed line at height $k\neq 0$ is not the axis. Meetings with that line are not the roots of $g$.
+Eine horizontale gestrichelte Linie in der Höhe $k\neq 0$ ist nicht die Achse. Treffen mit dieser Linie sind nicht die Wurzeln von $g$ .
 
 ### Error 9: forcing a parabola onto arithmetic table data
 
 Constant first differences mean linear. Constant second differences mean quadratic.
 
-### Error 10: “the line doubles when $x$ doubles”
+### Fehler 10: "Die Linie verdoppelt sich, wenn sich $x$ verdoppelt"
 
-Only true for lines through the origin. A nonzero intercept breaks pure proportionality.
+Nur wahr für Linien durch den Ursprung. Ein Nullpunkt bricht die reine Proportionalität.
 
 ### Error 11: transferring a revenue peak onto a profit peak
 
 Different objective functions have different vertices.
 
-### Error 12: claiming a line can meet a parabola three times
+### Fehler 12: Anzugeben, dass eine Zeile ein Parabel dreimal treffen kann
 
-The difference $g-f$ has degree at most $2$.
+Die Differenz $g-f$ hat höchstens $2$ .
 
 ### Error 13: wrong completed-square sign
 
-From $x^{2}+bx$, the completed square is $\left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}$. Dropping the minus sign ruins the vertex height.
+Von $x^{2}+bx$ ist das abgeschlossene Quadrat $\left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}$ . Das Ablegen des Minuszeichens ruiniert die Scheitelpunkthöhe.
 
-### Error 14: “changing $c$ never changes the roots”
+### Fehler 14: "Ändern $c$ ändert nie die Wurzeln"
 
-It usually does. It does not move the axis, but roots depend on $c$.
+Das tut es normalerweise. Es bewegt die Achse nicht, aber Wurzeln hängen von $c$ ab.
 
-### Error 15: reading average rate as if it were the instantaneous slope of a parabola
+### Fehler 15: Lesen der Durchschnittsrate, als ob es die sofortige Steigung eines Parabels wäre
 
-On a parabola the average rate over $[x_{1},x_{2}]$ equals the slope of the chord, which equals the derivative at the midpoint, not at an endpoint. For Chapter 7, compare average rates carefully and do not treat them as the slope of a linear model unless the function is linear.
+Auf einem Parabel entspricht die durchschnittliche Rate über $[x_{1},x_{2}]$ der Steigung des Akkords, was der Ableitung im Mittelpunkt entspricht, nicht an einem Endpunkt. Für Kapitel 7 vergleiche die Durchschnittsraten sorgfältig und behandeln Sie sie nicht als Steigung eines linearen Modells, es sei denn, die Funktion ist linear.
 
 ---
 
 ## 7.13 Difficult exam-style tasks
 
-The eight tasks below are taken from the course Chapter 7.5 bank (difficulty $5/5$). Each one is a True/False pack. Work from the table, formula, or figure data, not from a slogan. Where the live course shows a figure or an unprinted table, the needed values are written out so you can practise here.
+Die acht Aufgaben unten werden aus dem Kurs Kapitel 7.5 Bank genommen (Schwierigkeit $5/5$ ). Jeder ist ein Wahr/Falsch-Pack. Arbeiten Sie von der Tabelle, Formel oder Zahlendaten, nicht von einem Slogan. Wenn der Live-Kurs eine Figur oder einen unbedruckten Tisch zeigt, werden die benötigten Werte ausgeschrieben, damit Sie hier üben können.
 
 ### Exam task 1 — Sampled heights (table)
 
-A sequence $s_n$ is recorded for $n=0,1,2,3,4,5$. No closed form is supplied.
+Für $n=0,1,2,3,4,5$ wird eine Sequenz $s_n$ aufgezeichnet. Es wird kein geschlossenes Formular geliefert.
 
 | $n$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -764,31 +762,31 @@ A sequence $s_n$ is recorded for $n=0,1,2,3,4,5$. No closed form is supplied.
 
 **Claims.**
 
-1. The unique quadratic through the listed points has roots at $n=1$ and $n=3$.
-2. Extending the constant-second-difference pattern one step past $n=5$ produces $s_6=12$.
-3. The axis of that interpolating parabola is $n=2$, the unique listed input of smallest height.
-4. A line matching $s_0$ and $s_5$ also matches $s_2$.
-5. The vertex height of the interpolating parabola equals $-1$.
+1. Die einzigartige Quadratik durch die aufgeführten Punkte hat Wurzeln bei $n=1$ und $n=3$ .
+2. Die Verlängerung des Konstanten-Sekunden-Differenz-Musters um einen Schritt nach $n=5$ ergibt $s_6=12$ .
+3. Die Achse dieses interpolierenden Parabels ist $n=2$ , die eindeutig aufgeführte Eingabe der kleinsten Höhe.
+4. Eine Linie, die mit $s_0$ und $s_5$ übereinstimmt, stimmt auch mit $s_2$ überein.
+5. Die Scheitelpunkthöhe des interpolierenden Parabels ist gleich $-1$ .
 
-**Solution.**
+**Lösung.**
 
-First differences: $-3,-1,1,3,5$. Second differences: $2,2,2,2$. So $2a=2$ and $a=1$. Matching the first points recovers
+First differences: $-3,-1,1,3,5$ . Second differences: $2,2,2,2$ . So $2a=2$ and $a=1$ . Matching der ersten Punkte erholt
 
 $$
 s_n=n^{2}-4n+3=(n-1)(n-3).
 $$
 
-Roots at $1$ and $3$: claim 1 true. Axis at midpoint $n=2$, and $s_2=-1$ is the unique listed minimum: claims 3 and 5 true.
+Wurzeln bei $1$ und $3$ : Behauptung 1 wahr. Achse im Mittelpunkt $n=2$ , und $s_2=-1$ ist das einzigartig aufgeführte Minimum: Behauptungen 3 und 5 wahr.
 
-Next value: keep second difference $2$, so the next first difference after $5$ is $7$, hence $s_6=8+7=15$, not $12$. Claim 2 false.
+Nächster Wert: Halten Sie die zweite Differenz $2$ , also ist die nächste erste Differenz nach $5$ $7$ , daher $s_6=8+7=15$ , nicht $12$ . Behauptung 2 falsch.
 
-Line through $(0,3)$ and $(5,8)$ has slope $1$, so at $n=2$ it predicts $5$, but $s_2=-1$. Claim 4 false.
+Linie durch $(0,3)$ und $(5,8)$ hat Steigung $1$ , so dass bei $n=2$ $5$ vorhergesagt wird, aber $s_2=-1$ . Behauptung 4 falsch.
 
-**Answers.** True, False, True, False, True.
+**Answers.** Wahr, Falsch, Wahr, Falsch, Wahr.
 
 ### Exam task 2 — Ticket desk revenue (applied table)
 
-A club sells tickets at price $p$ euros. Total revenue $R$ is observed at five prices. No formula is printed.
+Ein Club verkauft die Eintrittspreise $p$ Euro. Der Gesamtumsatz $R$ wird zu fünf Preisen beobachtet. Es wird keine Formel gedruckt.
 
 | $p$ | $1$ | $2$ | $3$ | $4$ | $5$ |
 | --- | --- | --- | --- | --- | --- |
@@ -796,135 +794,135 @@ A club sells tickets at price $p$ euros. Total revenue $R$ is observed at five p
 
 **Claims.**
 
-1. Among the listed prices, the unique maximum occurs at the midpoint of the two prices where revenue equals $15$.
-2. Rebuilding a quadratic from the constant second difference recovers leading coefficient $-1$.
-3. Revenue increases at every listed step from $p=1$ to $p=5$.
-4. The interpolating parabola has roots $0$ and $8$, so its axis is $p=4$.
-5. Raising the price from $4$ to $5$ decreases the listed revenue by $1$ euro.
+1. Unter den aufgeführten Preisen tritt das einzigartige Maximum in der Mitte der beiden Preise auf, bei denen der Umsatz gleich $15$ ist.
+2. Rebuilding eine quadratische von der konstanten zweiten Differenz gewinnt führenden Koeffizient $-1$ .
+3. Umsatz steigt bei jedem aufgeführten Schritt von $p=1$ auf $p=5$ .
+4. Das interpolierende Parabel hat Wurzeln $0$ und $8$ , so dass seine Achse $p=4$ ist.
+5. Die Erhöhung des Preises von $4$ auf $5$ verringert die aufgeführten Einnahmen um $1$ Euro.
 
-**Solution.**
+**Lösung.**
 
-First differences: $5,3,1,-1$. Second differences: $-2,-2,-2$. So $2a=-2$ and $a=-1$. Matching $R(1)=7$ recovers
+Erste Unterschiede: $5,3,1,-1$ . Zweite Unterschiede: $-2,-2,-2$ Also $2a=-2$ und $a=-1$ . Matching $R(1)=7$ erholt sich
 
 $$
 R(p)=p(8-p)=-p^{2}+8p.
 $$
 
-Revenue $15$ occurs at $p=3$ and $p=5$; the midpoint is $p=4$, where $R=16$ is the unique listed maximum. Claim 1 true. Claim 2 true. Claim 3 false, because the step from $4$ to $5$ falls. Roots $0$ and $8$ give axis $p=4$: claim 4 true. From $16$ to $15$ is a drop of $1$: claim 5 true.
+Einnahmen $15$ treten bei $p=3$ und $p=5$ auf; der Mittelpunkt ist $p=4$ , wobei $R=16$ das eindeutig aufgeführte Maximum ist. Behauptung 1 wahr. Behauptung 2 wahr. Behauptung 3 falsch, weil der Schritt von $4$ nach $5$ fällt. Wurzeln $0$ und $8$ geben Achse $p=4$ : Behauptung 4 wahr. Von $16$ bis $15$ ist ein Tropfen von $1$ : Behauptung 5 wahr.
 
-**Answers.** True, True, False, True, True.
+**Answers.** Wahr, Wahr, Falsch, Wahr, Wahr.
 
-### Exam task 3 — Meetings, vertex, and a rewrite in $f$
+### Prüfungsaufgabe 3 - Besprechungen, Vertex und ein Umschreiben in $f$
 
-Let $f(x)=x+1$ and $g(x)=x^{2}-4x+1$. Work in symbols; no figure is supplied.
+Es sind $f(x)=x+1$ und $g(x)=x^{2}-4x+1$ . Arbeite in Symbolen; es wird keine Figur geliefert.
 
 **Claims.**
 
-1. The sum of the meeting abscissas of the two graphs equals $5$.
-2. The axis of $g$ is $x=2$, which is half the Vieta sum of the roots of $g$.
-3. The vertex of $g$ lies $3$ units below the horizontal axis.
-4. The product of the roots of $g$ equals $1$, matching $g(0)$.
-5. $g(x)=f(x)^{2}-6\,f(x)+6$.
+1. Die Summe der sich treffenden Abszissen der beiden Graphen ist gleich $5$ .
+2. Die Achse von $g$ ist $x=2$ , was die Hälfte der Vieta-Summe der Wurzeln von $g$ ist.
+3. Der Scheitelpunkt von $g$ liegt $3$ Einheiten unterhalb der horizontalen Achse.
+4. Das Produkt der Wurzeln von $g$ ist gleich $1$ , entspricht $g(0)$ .
+5. $g(x)=f(x)^{2}-6\,f(x)+6$ .
 
-**Solution.**
+**Lösung.**
 
-Meetings: $x^{2}-4x+1=x+1$ gives $x^{2}-5x=0$, so $x=0$ or $x=5$. Sum $5$: claim 1 true.
+Treffen: $x^{2}-4x+1=x+1$ gibt $x^{2}-5x=0$ , also $x=0$ oder $x=5$ .
 
-For $g$, sum of roots $4$, axis $x=2$: claim 2 true. Vertex height $g(2)=4-8+1=-3$: claim 3 true. Product $c/a=1$ and $g(0)=1$: claim 4 true.
+Für $g$ , Summe von Wurzeln $4$ , Achse $x=2$ : Behauptung 2 wahr. Scheitelpunkthöhe $g(2)=4-8+1=-3$ : Behauptung 3 wahr. Produkt $c/a=1$ und $g(0)=1$ : Behauptung 4 wahr.
 
-Expand the rewrite:
+Erweitern Sie das Rewrite:
 
 $$
 (x+1)^{2}-6(x+1)+6=x^{2}-4x+1=g(x).
 $$
 
-Claim 5 true.
+Behauptung 5 wahr.
 
-**Answers.** True, True, True, True, True.
+**Answers.** Wahr, Wahr, Wahr, Wahr, Wahr.
 
 ### Exam task 4 — Sliding slope family
 
-For each real $t$ let $f_{t}(x)=tx$ and $g(x)=x^{2}+1$. Study how the line family meets the fixed parabola.
+Für jedes reelle $t$ lassen Sie $f_{t}(x)=tx$ und $g(x)=x^{2}+1$ . Studieren Sie, wie die Linienfamilie das feste Parabel trifft.
 
 **Claims.**
 
-1. Tangency occurs precisely at the two slopes $t=2$ and $t=-2$.
-2. The graphs never miss each other: every real $t$ produces at least one meeting.
-3. For $t=0$ the graphs meet at two real points, because $x^{2}+1$ factors over the reals.
-4. When $t=3$ the graphs miss each other, because $|t|>2$ forces a negative discriminant.
-5. The axis of $g$ depends on $t$, and for $t=0$ that axis coincides with the line $f_{0}$.
+1. Tangenz tritt genau an den beiden Steigungen $t=2$ und $t=-2$ auf.
+2. Die Graphen vermissen einander nie: Jedes reale $t$ erzeugt mindestens eine Besprechung.
+Für $t=0$ treffen sich die Graphen an zwei reellen Punkten, weil $x^{2}+1$ Faktoren über den Realen.
+4. Wenn $t=3$ die Graphen einander vermissen, weil $|t|>2$ eine negative Diskriminante erzwingt.
+5. Die Achse von $g$ hängt von $t$ ab, und für $t=0$ fällt diese Achse mit der Linie $f_{0}$ zusammen.
 
-**Solution.**
+**Lösung.**
 
-Meetings solve $x^{2}-tx+1=0$. Discriminant $\Delta(t)=t^{2}-4$.
+Meetings lösen $x^{2}-tx+1=0$ . Diskriminant $\Delta(t)=t^{2}-4$
 
-- miss when $|t|<2$;
-- tangency when $t=\pm 2$;
-- two meetings when $|t|>2$.
+- verpassen, wenn $|t|<2$ ;
+- Tangenz, wenn $t=\pm 2$ ;
+- zwei Treffen, wenn $|t|>2$ .
 
-Claim 1 true. Claim 2 false (miss when $|t|<2$). Claim 3 false ($t=0$ gives $x^{2}+1=0$, no real root). Claim 4 false ($t=3$ gives $\Delta=5>0$, two meetings). Axis of $g$ is $x=0$ for every $t$, and $f_{0}$ is the horizontal line $y=0$, not the vertical axis: claim 5 false.
+Behauptung 1 wahr. Behauptung 2 falsch (fehlen, wenn $|t|<2$ ). Behauptung 3 falsch ( $t=0$ gibt $x^{2}+1=0$ , keine echte Wurzel). Behauptung 4 falsch ( $t=3$ gibt $\Delta=5>0$ , zwei Sitzungen). Achse von $g$ ist $x=0$ für jede $t$ , und $f_{0}$ ist die horizontale Linie $y=0$ , nicht die vertikale Achse: Behauptung 5 falsch.
 
-**Answers.** True, False, False, False, False.
+**Answers.** Wahr, Falsch, Falsch, Falsch, Falsch.
 
-### Exam task 5 — Rebuild from vertex and a point
+### Prüfungsaufgabe 5 - Rebuild von Vertex und einem Punkt
 
-A parabola has vertex $(2,-3)$ and passes through $(0,5)$. It opens upwards.
+Ein Parabel hat Vertex $(2,-3)$ und geht durch $(0,5)$ . Es öffnet sich nach oben.
 
 **Claims.**
 
-1. The stretch factor in vertex form equals $2$, so the rebuilt rule is $g(x)=2(x-2)^{2}-3$.
-2. $g(4)=g(0)=5$, matching the symmetry of a parabola about $x=2$.
-3. $g(1)=-1$ and $g(3)=-1$, so those two inputs sit equally far from the axis $x=2$.
-4. The vertex lies above the horizontal axis, and therefore both given points $(0,5)$ and $(2,-3)$ have positive height.
-5. The rule is $g(x)=(x-2)^{2}-3$.
+1. Der Dehnungsfaktor in Scheitelpunktform ist gleich $2$ , also ist die umgebaute Regel $g(x)=2(x-2)^{2}-3$ .
+2. $g(4)=g(0)=5$ , die Symmetrie eines Parabels über $x=2$ .
+3. $g(1)=-1$ und $g(3)=-1$ , so dass diese beiden Eingänge gleich weit von der Achse $x=2$ .
+Der Scheitelpunkt liegt oberhalb der horizontalen Achse, daher haben beide gegebenen Punkte $(0,5)$ und $(2,-3)$ eine positive Höhe.
+5. Die Regel ist $g(x)=(x-2)^{2}-3$ .
 
-**Solution.**
+**Lösung.**
 
-Start from $g(x)=a(x-2)^{2}-3$. Use $(0,5)$:
+Starten Sie von $g(x)=a(x-2)^{2}-3$ . Verwenden Sie $(0,5)$ :
 
 $$
 4a-3=5\implies 4a=8\implies a=2.
 $$
 
-So $g(x)=2(x-2)^{2}-3$. Claim 1 true. Claim 5 false (wrong stretch). Symmetry about $x=2$ gives $g(4)=g(0)=5$ and $g(1)=g(3)=-1$: claims 2 and 3 true. Vertex height $-3$ is below the axis, and the point $(2,-3)$ is not positive: claim 4 false.
+Also $g(x)=2(x-2)^{2}-3$ . Behauptung 1 wahr. Behauptung 5 falsch. Symmetrie über $x=2$ ergibt $g(4)=g(0)=5$ und $g(1)=g(3)=-1$ : Behauptungen 2 und 3 wahr. Die Scheitelhöhe $-3$ liegt unterhalb der Achse und der Punkt $(2,-3)$ ist nicht positiv: Behauptung 4 falsch.
 
-**Answers.** True, True, True, False, False.
+**Answers.** Wahr, Wahr, Wahr, Falsch, Falsch.
 
 ### Exam task 6 — Line inside a square (nesting)
 
-Let $f(x)=x+1$ and $g(x)=x^{2}$. Study the nested rules $g(f(x))$ and $f(g(x))$.
+Es sind $f(x)=x+1$ und $g(x)=x^{2}$ . Studieren Sie die verschachtelten Regeln $g(f(x))$ und $f(g(x))$ .
 
 **Claims.**
 
-1. The nested rule $g(f(x))$ expands to a perfect square, so its vertex lies on the horizontal axis.
-2. The nested rule $f(g(x))$ has the same axis of symmetry as $g$.
-3. The two nested rules are identical as functions.
-4. The nested rules $g(f(x))$ and $f(g(x))$ have the same vertex.
-5. The highest power appearing in $f(g(x))$ is $x^{3}$.
+1. Die verschachtelte Regel $g(f(x))$ erweitert sich zu einem perfekten Quadrat, so dass ihr Scheitelpunkt auf der horizontalen Achse liegt.
+2. Die verschachtelte Regel $f(g(x))$ hat die gleiche Symmetrieachse wie $g$ .
+3. Die beiden verschachtelten Regeln sind als Funktionen identisch.
+4. Die verschachtelten Regeln $g(f(x))$ und $f(g(x))$ haben den gleichen Scheitelpunkt.
+5. Die höchste Potenz, die in $f(g(x))$ erscheint, ist $x^{3}$ .
 
-**Solution.**
+**Lösung.**
 
 $$
 g(f(x))=(x+1)^{2}=x^{2}+2x+1,\qquad f(g(x))=x^{2}+1.
 $$
 
-Claim 1 true (vertex $(-1,0)$ on the axis). Claim 2 true (both have axis $x=0$). The functions differ: $g(f(1))=4$ while $f(g(1))=2$, so claim 3 false. Vertices $(-1,0)$ and $(0,1)$ differ, so claim 4 false. Highest power in $f(g(x))$ is $x^{2}$, not $x^{3}$: claim 5 false.
+Behauptung 1 wahr (vertex $(-1,0)$ auf der Achse). Behauptung 2 wahr (beide haben Achse $x=0$ ). Die Funktionen unterscheiden sich: $g(f(1))=4$ während $f(g(1))=2$ , also Behauptung 3 falsch. Die Eckpunkte $(-1,0)$ und $(0,1)$ unterscheiden sich, so Behauptung 4 falsch. Die höchste Leistung in $f(g(x))$ ist $x^{2}$ , nicht $x^{3}$ : Behauptung 5 falsch.
 
-**Answers.** True, True, False, False, False.
+**Answers.** Wahr, Wahr, Falsch, Falsch, Falsch.
 
 ### Exam task 7 — Ball toss (figure)
 
-A ball is tossed straight up. The figure shows height $h$ (metres) against time $t$ (seconds) as a solid brown curve; the horizontal axis is ground level. The visible ground times are $t=0$ and $t=6$, and the marked peak has height $9$.
+Ein Ball wird gerade nach oben geworfen. Die Abbildung zeigt die Höhe $h$ (Meter) gegen die Zeit $t$ (Sekunden) als eine feste braune Kurve; die horizontale Achse ist Bodenhöhe. Die sichtbaren Grundzeiten sind $t=0$ und $t=6$ , und der markierte Peak hat eine Höhe $9$ .
 
 **Claims.**
 
-1. The time of greatest height is the midpoint of the two visible ground times.
-2. The greatest height occurs at $t=2$, which would be the midpoint of the two visible ground times.
-3. At $t=1$ the height is greater than at $t=5$.
-4. After the peak, height keeps rising.
-5. The greatest height on the figure is $8$ metres, matching the height at $t=4$.
+1. Die Zeit der größten Höhe ist der Mittelpunkt der beiden sichtbaren Bodenzeiten.
+2. Die größte Höhe tritt bei $t=2$ auf, was der Mittelpunkt der beiden sichtbaren Bodenzeiten wäre.
+3. Bei $t=1$ ist die Höhe größer als bei $t=5$ .
+4. Nach dem Gipfel steigt die Höhe weiter an.
+5. Die größte Höhe auf der Figur ist $8$ Meter, die Höhe entspricht $t=4$ .
 
-**Solution.**
+**Lösung.**
 
 Recover
 
@@ -932,58 +930,58 @@ $$
 h(t)=t(6-t)=9-(t-3)^{2}.
 $$
 
-Peak at midpoint $t=3$, height $9$. Claim 1 true. Claim 2 false (names $t=2$). Heights at $t=1$ and $t=5$ are equal ($5$), so claim 3 false. After the peak the completed square falls, so claim 4 false. Greatest height is $9$, not $8$, so claim 5 false.
+Peak im Mittelpunkt $t=3$ , Höhe $9$ . Behauptung 1 wahr. Behauptung 2 falsch (Namen $t=2$ ). Höhen bei $t=1$ und $t=5$ sind gleich ( $5$ ), so Behauptung 3 falsch. Nach der Spitze fällt das fertige Quadrat, so Behauptung 4 falsch. Die größte Höhe ist $9$ , nicht $8$ , also Behauptung 5 falsch.
 
-**Answers.** True, False, False, False, False.
+**Answers.** Wahr, Falsch, Falsch, Falsch, Falsch.
 
 ### Exam task 8 — Vertical shift family
 
-For each real $s$ let $g_{s}(x)=(x-2)^{2}+(s-4)$. Study how the vertical shift changes the graph.
+Für jedes reelle $s$ lassen Sie $g_{s}(x)=(x-2)^{2}+(s-4)$ . Studieren Sie, wie die vertikale Verschiebung den Graphen verändert.
 
 **Claims.**
 
-1. For $s=3$ the vertex sits one unit below the axis, so there are two distinct real roots whose midpoint is $x=2$.
-2. For $s=4$ the vertex lies on the axis, so there is a double root at $x=2$ and no other.
-3. For $s=5$ the vertex sits one unit above the axis, so $g_{s}$ has no real root.
-4. The axis of symmetry of $g_{s}$ is $x=2$ for every $s$, because the $(x-2)^{2}$ term never moves horizontally.
-5. The vertex height of $g_{s}$ equals $s-4$, so the graph sits below the axis precisely when $s<4$.
+1. Für $s=3$ sitzt der Scheitelpunkt eine Einheit unter der Achse, so dass es zwei verschiedene reelle Wurzeln gibt, deren Mittelpunkt $x=2$ ist.
+2. Für $s=4$ liegt der Scheitelpunkt auf der Achse, also gibt es eine doppelte Wurzel bei $x=2$ und keine andere.
+3. Für $s=5$ sitzt der Scheitelpunkt eine Einheit über der Achse, also hat $g_{s}$ keine echte Wurzel.
+4. Die Symmetrieachse von $g_{s}$ ist $x=2$ für jeden $s$ , weil sich der Term $(x-2)^{2}$ nie horizontal bewegt.
+Die Scheitelpunkthöhe von $g_{s}$ ist gleich $s-4$ , so dass der Graph genau unter der Achse sitzt, wenn $s<4$ .
 
-**Solution.**
+**Lösung.**
 
-Axis $x=2$ for every $s$. Vertex height $s-4$. Solving $(x-2)^{2}=4-s$:
+Achse $x=2$ für jede $s$ . Scheitelhöhe $s-4$ . Lösung $(x-2)^{2}=4-s$ :
 
-- $s=3$: two roots, midpoint $2$;
-- $s=4$: double root at $2$;
-- $s=5$: no real root.
+- $s=3$ : zwei Wurzeln, Mittelpunkt $2$ ;
+- $s=4$ : doppelte Wurzel bei $2$ ;
+- $s=5$ : keine echte Wurzel.
 
-All five claims are true.
+Alle fünf Behauptungen sind wahr.
 
-**Answers.** True, True, True, True, True.
+**Answers.** Wahr, Wahr, Wahr, Wahr, Wahr.
 
 ---
 
-## 7.14 Summary reference
+## 7.14 Zusammenfassung reference
 
 | Question | What to do |
 | --- | --- |
-| Read a line $mx+c$ | Slope $m$, $y$-intercept $c$, $x$-intercept $-c/m$ if $m\neq 0$ |
-| Opening of $ax^{2}+bx+c$ | Up if $a>0$, down if $a<0$ |
+| Read a line $mx+c$ | Slope $m$ , $y$ -intercept $c$ , $x$ -intercept $-c/m$ if $m\neq 0$ |
+| Opening of $ax^{2}+bx+c$ | Up if $a>0$ , down if $a<0$ |
 | Axis of a parabola | $x=-b/(2a)$ |
-| Vertex | $(h,g(h))$ with $h=-b/(2a)$; or read $(h,k)$ from vertex form |
+| Vertex | $(h,g(h))$ with $h=-b/(2a)$ ; or read $(h,k)$ from vertex form |
 | Complete the square | Reach $a(x-h)^{2}+k$ |
-| Real roots | Solve $g(x)=0$; use $\Delta=b^{2}-4ac$ to count them |
-| Vieta | Sum $-b/a$, product $c/a$; axis $=(\text{sum})/2$ |
-| Line meets parabola | Solve $g(x)=f(x)$; discriminant of $g-f$ counts meetings |
+| Real roots | Solve $g(x)=0$ ; use $\Delta=b^{2}-4ac$ to count them |
+| Vieta | Sum $-b/a$ , product $c/a$ ; axis $=(\text{sum})/2$ |
+| Line meets parabola | Solve $g(x)=f(x)$ ; discriminant of $g-f$ counts meetings |
 | Tangency | Discriminant of $g-f$ equals zero |
 | Table: linear? | Constant first differences |
-| Table: quadratic? | Constant second differences; with step $1$, $2a=$ that gap |
-| Nesting $g(f(x))$ or $f(g(x))$ | Expand; highest power stays $x^{2}$; order matters |
+| Table: quadratic? | Constant second differences; with step $1$ , $2a=$ that gap |
+| Nesting $g(f(x))$ or $f(g(x))$ | Expand; highest power stays $x^{2}$ ; order matters |
 | Rewrite claim using a line | Replace the line by its formula and expand |
-| Rebuild from vertex and a point | Start from $a(x-h)^{2}+k$, solve for $a$ |
+| Rebuild from vertex and a point | Start from $a(x-h)^{2}+k$ , solve for $a$ |
 | Ball toss peak | Midpoint of the two ground times |
 | Parameter root-count | Track vertex height or $\Delta(\text{parameter})$ |
 
-The central formulas are
+Die zentralen Formeln sind
 
 $$
 f(x)=mx+c,,\quad g(x)=ax^{2}+bx+c\qquad(a\neq 0),
@@ -1005,10 +1003,10 @@ $$
 r+s=-\frac{b}{a},\qquad rs=\frac{c}{a},
 $$
 
-$$
+ $$
 g(x)-f(x)=0\quad\text{for meetings}.
 $$
 
-**Working order.** Name whether the object is a line, a parabola, a difference, a table, or a story. Recover the formula (or the discriminant condition) before judging a claim. For graphs without printed formulas, rebuild from ticks first. For nested expressions, expand and compare; do not invent an $x^{3}$ term. For Vieta claims, write sum and product explicitly and remember the axis is the half-sum. Keep parameter cases separate: two meetings, tangency, or none.
+**Arbeitsauftrag.** Nennen Sie, ob das Objekt eine Zeile, ein Parabel, eine Differenz, eine Tabelle oder eine Geschichte ist. Stellen Sie die Formel (oder den diskriminierenden Zustand) wieder her, bevor Sie eine Behauptung beurteilen. Für Graphen ohne gedruckte Formeln zuerst aus Ticks neu erstellen. Für verschachtelte Ausdrücke erweitern und vergleichen; erfinden Sie keinen Term $x^{3}$ . Für Vieta Behauptungen schreiben Sie Summe und Produkt explizit und denken Sie daran, dass die Achse die Halbsumme ist. Halten Sie Parameterfälle getrennt: zwei Meetings, Tangenz oder keine.
 
-**Self-check.** Can you read slope and both intercepts from $f(x)=mx+c$? Why does $a\neq 0$ matter for a quadratic? How do you get the axis from coefficients, and why is it $S/2$ rather than $S$? Why does a parabola still have a vertex when $\Delta<0$? How many times can a line meet a parabola? What do constant first and second differences tell you in a table? After expanding $g(f(x))$ for a line and a parabola, why is the highest power $x^{2}$, not $x^{3}$? How do you rebuild a parabola from a vertex and one extra point? In a ball-toss figure, where is the peak relative to the ground times? And why can a revenue peak and a profit peak sit at different inputs?
+**Selbstkontrolle.** Kannst du Steigung und beide Abschnitte von $f(x)=mx+c$ lesen? Warum ist $a\neq 0$ für eine Quadratik wichtig? Wie bekommt man die Achse von Koeffizienten, und warum ist es $S/2$ statt $S$ ? Warum hat ein Parabel immer noch einen Scheitelpunkt, wenn $\Delta<0$ ? Wie oft kann eine Linie ein Parabel treffen? Was sagen Ihnen konstante erste und zweite Unterschiede in einer Tabelle? Nach der Erweiterung $g(f(x))$ für eine Linie und ein Parabel, warum ist die höchste Potenz $x^{2}$ , nicht $x^{3}$ ? Wie baut man ein Parabel aus einem Scheitelpunkt und einem zusätzlichen Punkt wieder auf? In einer Ball-Toss-Figur, wo ist der Peak relativ zu den Bodenzeiten? Und warum können eine Umsatzspitze und eine Gewinnspitze an verschiedenen Eingabemengen sitzen?

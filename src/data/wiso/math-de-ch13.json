@@ -1,6 +1,6 @@
 {
   "MATH 13.01": {
-    "title": "Multiple-Choice Guessing",
+    "title": "Multi-Cho-Gés",
     "context": "A 10-question multiple-choice exam has 4 answer choices per question (1 correct). Person A guesses every answer at random (p = 0.25). Person B hat studiert und kennt das Material gut (p = 0,90). Um zu bestehen, braucht eine Person mindestens 7 von 10 korrekt. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Eine 10-Frage Multiple-Choice-Prüfung hat 4 Antwortmöglichkeiten pro Frage (1 korrekt). Person A schätzt jede Antwort zufällig (p = 0,25). Person B hat studiert und kennt das Material gut (p = 0,90). Um zu bestehen, braucht eine Person mindestens 7 von 10 korrekt.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.25$, Seite B hat $p_B = 0.9$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 7$ Erfolge von $n = 10$.",
     "statements": [
@@ -95,7 +95,7 @@
     ]
   },
   "MATH 13.06": {
-    "title": "Airport Security Audit",
+    "title": "Luftsicherheitsprüfung",
     "context": "An airport screens 25 test bags per audit. Agent A ist neu zertifiziert (p = 0,70 der korrekten Kennzeichnung eines verbotenen Artikels). Agent B is a veteran (p = 0.93). Um das Audit zu bestehen, muss ein Agent mindestens 23 der 25 Taschen korrekt kennzeichnen. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Ein Flughafen screent 25 Testbeutel pro Audit. Agent A ist neu zertifiziert (p = 0,70 der korrekten Kennzeichnung eines verbotenen Artikels). Agent B ist ein Veteran (p = 0,93). Um das Audit zu bestehen, muss ein Agent mindestens 23 der 25 Beutel korrekt kennzeichnen.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.7$, Seite B hat $p_B = 0.93$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 23$ Erfolge von $n = 25$.",
     "statements": [
@@ -171,7 +171,7 @@
     ]
   },
   "MATH 13.10": {
-    "title": "Forecast Accuracy Award",
+    "title": "BONITA-Award",
     "context": "Zwei Meteorologen prognostizieren jeweils 10 Tage. Meteorologe A hat eine solide Erfolgsbilanz (p = 0,60 an einem bestimmten Tag korrekt zu sein). Meteorologist B is highly accurate (p = 0.95). Eine Genauigkeitsvergabe erfordert, an mindestens 9 der 10 Tage korrekt zu sein. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Zwei Meteorologen prognostizieren jeweils 10 Tage. Meteorologe A hat eine solide Erfolgsbilanz (p = 0,60 an einem bestimmten Tag korrekt zu sein). Meteorologe B ist sehr genau (p = 0,95). Eine Genauigkeitsvergabe erfordert, an mindestens 9 der 10 Tage korrekt zu sein.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.6$, Seite B hat $p_B = 0.95$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 9$ Erfolge von $n = 10$.",
     "statements": [
@@ -234,7 +234,7 @@
     "statements": [
       "Typist B Wahrscheinlichkeit eines fehlerfreien Tests ist größer als 3%.",
       "Die Wahrscheinlichkeit, dass Typist A den Test besteht, ist größer als die Wahrscheinlichkeit von genau 9.",
-      "Typist B ist mehr als 9 mal so wahrscheinlich wie Typist A, den Test zu bestehen.",
+      "Er Kommentar das er Fundamentales koms w",
       "Typist A hat eine geringere Varianz in der Anzahl der Linien korrekt als Typist B.",
       "Die erwartete Anzahl der Linien, die für Typist B korrekt sind, ist genau 50% höher als für Typist A."
     ],
@@ -247,7 +247,7 @@
     ]
   },
   "MATH 13.14": {
-    "title": "Cybersecurity Attack Drill",
+    "title": "Cyber-Angriffs-Down",
     "context": "Ein Unternehmen führt eine Cybersicherheitsübung mit 22 simulierten Angriffen durch. Stab A ist untrainiert (p = 0,40 der korrekten Identifizierung eines Angriffs). Staff B is trained (p = 0.89). Das Passieren des Bohrers erfordert die korrekte Identifizierung von mindestens 19 der 22 Angriffe. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Ein Unternehmen führt eine Cybersicherheitsübung mit 22 simulierten Angriffen durch. Stab A ist untrainiert (p = 0,40 der korrekten Identifizierung eines Angriffs). Personal B wird ausgebildet (p = 0,89). Das Passieren des Bohrers erfordert die korrekte Identifizierung von mindestens 19 der 22 Angriffe.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.4$, Seite B hat $p_B = 0.89$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 19$ Erfolge von $n = 22$.",
     "statements": [
@@ -323,7 +323,7 @@
     ]
   },
   "MATH 13.18": {
-    "title": "Sales Call Conversions",
+    "title": "Conversion bei Verkaufsgesprächen",
     "context": "Zwei Vertriebsmitarbeiter tätigen jeweils 25 Anrufe an einem Tag. Rep A ist neu (p = 0,30 der Umwandlung eines Anrufs in einen Verkauf). Rep B is experienced (p = 0.68). Ein rep hat einen starken tag, wenn mehr als die hälfte der 25 aufrufe konvertiert, dh. at least 13 conversions. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Zwei Vertriebsmitarbeiter tätigen jeweils 25 Anrufe an einem Tag. Rep A ist neu (p = 0,30 der Umwandlung eines Anrufs in einen Verkauf). Rep B wird erlebt (p = 0,68). Ein Vertreter hat einen \"starken Tag\", wenn mehr als die Hälfte der 25 Anrufe konvertiert, dh mindestens 13 Conversions.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.3$, Seite B hat $p_B = 0.68$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 13$ Erfolge von $n = 25$.",
     "statements": [
@@ -342,7 +342,7 @@
     ]
   },
   "MATH 13.19": {
-    "title": "Practice Exam Scores",
+    "title": "Praxis Prüfung Scores",
     "context": "Zwei Studenten beantworten jeweils 20 Fragen zu einer Praxisprüfung. Student A studierte moderat (p = 0,50 der richtigen Beantwortung einer Frage). Student B studied intensively (p = 0.80). Passing erfordert mindestens 10 der 20 Fragen richtig. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Zwei Studenten beantworten jeweils 20 Fragen zu einer Praxisprüfung. Student A studierte moderat (p = 0,50 der richtigen Beantwortung einer Frage). Student B studierte intensiv (p = 0,80). Passing erfordert mindestens 10 der 20 Fragen richtig.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.5$, Seite B hat $p_B = 0.8$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 10$ Erfolge von $n = 20$.",
     "statements": [
@@ -570,7 +570,7 @@
     ]
   },
   "MATH 13.31": {
-    "title": "Support Queue Tickets",
+    "title": "Unterschüttung Queue",
     "context": "Support Queue A verarbeitet 28 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0.78 aufgelöst. Support Queue B wickelt 16 Tickets pro Tag ab; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0.94 gelöst. Ein Tag ist \"auf Ziel\" für eine Warteschlange, wenn höchstens 15% der Tickets dieser Warteschlange bis zum Tagesende ungelöst bleiben. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Support Queue A verarbeitet 28 Tickets pro Tag; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0.78 aufgelöst. Support Queue B wickelt 16 Tickets pro Tag ab; jedes Ticket wird am selben Tag unabhängig mit Wahrscheinlichkeit 0.94 gelöst. Ein Tag ist \"auf Ziel\" für eine Warteschlange, wenn höchstens 15% der Tickets dieser Warteschlange bis zum Tagesende ungelöst bleiben.\n\nWir modellieren Seite A als $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ mit $n_A = 28$, $p_A = 0.78$ und Seite B als $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ mit $n_B = 16$, $p_B = 0.94$.\n\nDie \"höchstens 15% ungelöste\" Regel ist ein Count-Cutoff, keine wörtliche Bruchzahl. Für Seite A, $15\\%\\times 28 = 4.2$, so dass ungelöste Tickets höchstens $u_A = \\lfloor 4.2 \\rfloor = 4$ sein können. Mit $X$ = Zahl aufgelöst, das ist $X \\ge 24$. Für Seite B, $u_B = 2$ und $X \\ge 14$.",
     "statements": [
@@ -646,7 +646,7 @@
     ]
   },
   "MATH 13.35": {
-    "title": "Auditor C Compliance",
+    "title": "b. St. und Beleuchtungseinrichtungen",
     "context": "Auditor C überprüft 45 unabhängige Transaktionen, die jeweils mit Wahrscheinlichkeit 0.60 konform sind, und wir betrachten die Chance von maximal 30 konform. Auditor D überprüft 40 unabhängige Transaktionen, die jeweils mit Wahrscheinlichkeit 0,45 konform sind, und wir betrachten die Chance von mindestens 22 konform. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Auditor C überprüft 45 unabhängige Transaktionen, die jeweils mit Wahrscheinlichkeit 0.60 konform sind und wir betrachten $P(X \\le 30)$. Auditor D überprüft 40 unabhängige Transaktionen, die jeweils mit Wahrscheinlichkeit 0,45 konform sind und wir betrachten $P(X \\ge 22)$.\n\nWe model Auditor C as $X_C \\sim \\mathrm{Bin}(45, 0.60)$ und Auditor D as $X_D \\sim \\mathrm{Bin}(40, 0.45)$.",
     "statements": [
@@ -703,7 +703,7 @@
     ]
   },
   "MATH 13.38": {
-    "title": "Line A vs Line B Batches",
+    "title": "Linien A und Bwere",
     "context": "Produktionslinie A macht Chargen von 27 Einheiten mit einer akzeptablen Einheit Wahrscheinlichkeit von 0,48 pro Einheit. Produktionslinie B macht Chargen von 19 Einheiten mit einer akzeptablen Einheit Wahrscheinlichkeit von 0,77 pro Einheit. Eine Charge ist \"mittlerer Bereich\", wenn die Anzahl der zulässigen Einheiten zwischen einschließlich 9 und 14 liegt. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Produktionslinie A macht Chargen von 27 Einheiten mit einer akzeptablen Einheit Wahrscheinlichkeit von 0,48 pro Einheit. Produktionslinie B macht Chargen von 19 Einheiten mit einer akzeptablen Einheit Wahrscheinlichkeit von 0,77 pro Einheit. Eine Charge ist \"mittlerer Bereich\", wenn die Anzahl der zulässigen Einheiten zwischen einschließlich 9 und 14 liegt.\n\nWir modellieren Seite A als $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ mit $n_A = 27$, $p_A = 0.48$ und Seite B als $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ mit $n_B = 19$, $p_B = 0.77$.",
     "statements": [
@@ -798,7 +798,7 @@
     ]
   },
   "MATH 13.43": {
-    "title": "Server Error Requests",
+    "title": "mit den verwundeten Ü",
     "context": "Service A verarbeitet 9.000 Anfragen und gibt jeweils unabhängig einen Serverfehler mit Wahrscheinlichkeit 0,00007 zurück. Service B verarbeitet 20.000 Anfragen und gibt jeweils unabhängig einen Serverfehler mit Wahrscheinlichkeit 0,00004 zurück. Die beiden Dienste arbeiten unabhängig voneinander. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Service A verarbeitet 9.000 Anfragen und gibt jeweils unabhängig einen Serverfehler mit Wahrscheinlichkeit 0,00007 zurück. Service B verarbeitet 20.000 Anfragen und gibt jeweils unabhängig einen Serverfehler mit Wahrscheinlichkeit 0,00004 zurück. Die beiden Dienste arbeiten unabhängig voneinander.\n\nWe model Service A as $X_A \\sim \\mathrm{Bin}(9000, 0.00007)$ und Service B as $X_B \\sim \\mathrm{Bin}(20000, 0.00004)$.",
     "statements": [
@@ -912,7 +912,7 @@
     ]
   },
   "MATH 13.49": {
-    "title": "Customer Email Resolutions",
+    "title": "Kunden-E-Mail",
     "context": "A call center reviews 14 customer emails per agent. Agent A ist neu an Bord (p = 0,50 der korrekten Auflösung einer E-Mail in einer Antwort). Agent B is a senior agent (p = 0.80). Um die Überprüfung zu bestehen, muss ein Agent mindestens 12 der 14 E-Mails korrekt lösen. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Ein Call Center überprüft 14 Kunden-E-Mails pro Agent. Agent A ist neu an Bord (p = 0,50 der korrekten Auflösung einer E-Mail in einer Antwort). Agent B ist ein Senior Agent (p = 0,80). Um die Überprüfung zu bestehen, muss ein Agent mindestens 12 der 14 E-Mails korrekt lösen.\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.5$, Seite B hat $p_B = 0.8$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 12$ Erfolge von $n = 14$.",
     "statements": [
@@ -950,7 +950,7 @@
     ]
   },
   "MATH 13.51": {
-    "title": "Airport Shift Screening",
+    "title": "„AKEP — der für christentlich",
     "context": "An airport screens 28 bags per shift. Screener A ist neu zertifiziert (p = 0,42 der korrekten Kennzeichnung eines verbotenen Artikels). Screener B is a veteran (p = 0.91). Um das Schichtaudit zu bestehen, muss ein Screener mindestens 24 der 28 Beutel korrekt markieren. (Scoring-Schema in Aussage F: +5 Punkte für jeden korrekten Aufruf, -2 Punkte für jeden Fehlschlag.) Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Ein Flughafen screent 28 Taschen pro Schicht. Screener A ist neu zertifiziert (p = 0,42 der korrekten Kennzeichnung eines verbotenen Artikels). Screener B ist ein Veteran (p = 0,91). Um das Schichtaudit zu bestehen, muss ein Screener mindestens 24 der 28 Beutel korrekt markieren. (Scoring-Schema in Menge F: +5 Punkte für jeden korrekten Aufruf, -2 Punkte für jeden Fehlschlag.)\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.42$, Seite B hat $p_B = 0.91$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 24$ Erfolge von $n = 28$.",
     "statements": [
@@ -1026,7 +1026,7 @@
     ]
   },
   "MATH 13.55": {
-    "title": "Air Traffic Control Simulator",
+    "title": ".",
     "context": "An air traffic control simulator runs 32 scenarios per certification attempt. Controller A ist ein Trainee (p = 0,44 der korrekten Auflösung eines Szenarios). Controller B is a certified controller (p = 0.92). Um die Zertifizierung zu bestehen, muss ein Controller mindestens 27 der 32 Szenarien korrekt lösen. (Scoring-Schema in Menge F: +5 Punkte für jeden korrekten Aufruf, -2 Punkte für jeden Fehlschlag.) Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Ein Flugverkehrskontrollsimulator führt 32 Szenarien pro Zertifizierungsversuch durch. Controller A ist ein Trainee (p = 0,44 der korrekten Auflösung eines Szenarios). Controller B ist ein zertifizierter Controller (p = 0,92). Um die Zertifizierung zu bestehen, muss ein Controller mindestens 27 der 32 Szenarien korrekt lösen. (Scoring-Schema in Aussage F: +5 Punkte für jeden korrekten Aufruf, -2 Punkte für jeden Fehlschlag.)\n\nWir modellieren jede Seite als Binomialzählung mit unabhängigen Versuchen: Seite A hat Erfolg Wahrscheinlichkeit $p_A = 0.44$, Seite B hat $p_B = 0.92$.\n\nDie Erfolgsgrenze des Szenarios beträgt mindestens $k = 27$ Erfolge von $n = 32$.",
     "statements": [
@@ -1045,7 +1045,7 @@
     ]
   },
   "MATH 13.76": {
-    "title": "Regional Tennis Circuit",
+    "title": "Sportlicher Rennsport",
     "context": "In einer vollen Indoor-Saison von 40 unabhängigen Spielen beträgt die erwartete Anzahl der Gewinne eines Spielers 27,2. Angenommen, die Gewinnchance ist in jedem Spiel gleich. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "In einer vollen Indoor-Saison von 40 unabhängigen Spielen beträgt die erwartete Anzahl der Gewinne eines Spielers 27,2. Angenommen, die Gewinnchance ist in jedem Spiel gleich.\n\nAus dem angegebenen Mittelwert über $n=40$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{27.2}{40} = 0.68\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(40,0.68)$, also $1-p=0.32$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1083,7 +1083,7 @@
     ]
   },
   "MATH 13.78": {
-    "title": "Community Clinic Screening",
+    "title": "Gemeinschaftsklinik-S◦",
     "context": "An einem Screening-Tag mit 80 unabhängigen Patienten werden Positive und Negative im Verhältnis 3: 17 erwartet. Die Standardabweichung der Anzahl der Positiven an diesem Tag ist $\\sqrt{10.2}$. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "An einem Screening-Tag mit 80 unabhängigen Patienten werden Positive und Negative im Verhältnis 3: 17 erwartet. Die Standardabweichung der Anzahl der Positiven an diesem Tag ist $\\sqrt{10.2}$.\n\nErfolge und Misserfolge werden im Verhältnis $3:17$ erwartet, also $$\np = \\dfrac{3}{3+17} = 0.15\n$$ Wir modellieren die Zählung als $X\\sim\\mathrm{Bin}(80,0.15)$.",
     "statements": [
@@ -1102,7 +1102,7 @@
     ]
   },
   "MATH 13.79": {
-    "title": "Night Courier Audit",
+    "title": "Verwechseln Sie dernntverwendungsversatz",
     "context": "Ein Kurier hat ein Audit von 50 unabhängigen Abendlieferungen durchgeführt. Die erwartete Anzahl der pünktlichen Lieferungen betrug 42 und die Varianz dieser Zählung 6,72. Bewerten Sie jede Aussage. Markiere es wahr oder falsch.",
     "solution_overview": "Ein Kurier hat ein Audit von 50 unabhängigen Abendlieferungen durchgeführt. Die erwartete Anzahl der pünktlichen Lieferungen betrug 42 und die Varianz dieser Zählung 6,72.\n\nAus dem angegebenen Mittelwert über $n=50$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{42}{50} = 0.84\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(50,0.84)$, also $1-p=0.16$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1121,7 +1121,7 @@
     ]
   },
   "MATH 13.80": {
-    "title": "Coding Contest Auto-Grader",
+    "title": "Kodierer Auto-Grader",
     "context": "In einem Wettbewerb mit 35 unabhängigen Einreichungen akzeptiert der Auto-Grader durchschnittlich 14. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "In einem Wettbewerb mit 35 unabhängigen Einreichungen akzeptiert der Auto-Grader durchschnittlich 14.\n\nAus dem angegebenen Mittelwert über $n=35$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{14}{35} = 0.4\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(35,0.4)$, also $1-p=0.6$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1349,7 +1349,7 @@
     ]
   },
   "MATH 13.92": {
-    "title": "Lab Pipette Calibration Passes",
+    "title": "Labor Pipette halt durchlässe",
     "context": "Technicians calibrate 20 independent pipettes. Die erwartete Zahl, die beim ersten Versuch übergeben wird, ist 17 und die Varianz ist 2,55. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Technicians calibrate 20 independent pipettes. Die erwartete Zahl, die beim ersten Versuch übergeben wird, ist 17 und die Varianz ist 2,55.\n\nAus dem angegebenen Mittelwert über $n=20$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{17}{20} = 0.85\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(20,0.85)$, also $1-p=0.15$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1368,7 +1368,7 @@
     ]
   },
   "MATH 13.93": {
-    "title": "Online Quiz Instant Feedback",
+    "title": "ต TEINE",
     "context": "A quiz has 15 independent multiple-choice items. Die erwartete korrekte Zahl ist 9. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "A quiz has 15 independent multiple-choice items. Die erwartete korrekte Zahl ist 9.\n\nAus dem angegebenen Mittelwert über $n=15$ unabhängige Studien, $$\np = \\dfrac{E[X]}{n} = \\dfrac{9}{15} = 0.6\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(15,0.6)$, also $1-p=0.4$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1444,7 +1444,7 @@
     ]
   },
   "MATH 13.97": {
-    "title": "Swim-Meet Legal Starts",
+    "title": "Swim-Meet legale Einstieg",
     "context": "Bei einem Treffen mit 24 unabhängigen Starts beträgt die erwartete Anzahl der legalen Starts 19,2 und die Varianz 3,84. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "Bei einem Treffen mit 24 unabhängigen Starts beträgt die erwartete Anzahl der legalen Starts 19,2 und die Varianz 3,84.\n\nAus dem angegebenen Mittelwert über $n=24$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{19.2}{24} = 0.8\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(24,0.8)$, also $1-p=0.2$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1596,7 +1596,7 @@
     ]
   },
   "MATH 13.105": {
-    "title": "Podcast Ad Click-Throughs",
+    "title": "„Podcasts-Klicks",
     "context": "An ad plays in 50 independent episodes. Die erwartete Anzahl an Click-throughs ist 5. Bewerten Sie jede Aussage. Markieren Sie es wahr oder falsch.",
     "solution_overview": "An ad plays in 50 independent episodes. Die erwartete Anzahl an Click-throughs ist 5.\n\nAus dem angegebenen Mittelwert über $n=50$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{5}{50} = 0.1\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(50,0.1)$, also $1-p=0.9$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
@@ -1786,7 +1786,7 @@
     ]
   },
   "MATH 13.115": {
-    "title": "Satellite Packet Acknowledgements",
+    "title": "Aus die brenn- oder brenn- oder brenn- oder brenn- oder brenn- oder brenn- oder",
     "context": "A ground station sends 40 independent packets. Die erwartete Anzahl der erhaltenen Quittungen ist 34 und die Varianz ist 5,1. Bewerten Sie jede Aussage. Markieren Sie es als wahr oder falsch.",
     "solution_overview": "A ground station sends 40 independent packets. Die erwartete Anzahl der erhaltenen Quittungen ist 34 und die Varianz ist 5,1.\n\nAus dem angegebenen Mittelwert über $n=40$ unabhängige Versuche, $$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$ Wir modellieren die Anzahl als $X\\sim\\mathrm{Bin}(40,0.85)$, also $1-p=0.15$ und $\\mathrm{Var}(X)=np(1-p)$.",
     "statements": [
