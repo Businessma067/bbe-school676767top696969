@@ -154,6 +154,10 @@ def expand_binom_eq(inner: str) -> list[str] | None:
     denom_tex = r"\cdot ".join(str(i) for i in range(1, k + 1))
     numer_tex = r"\cdot ".join(numer_factors)
     steps = [rf"\binom{{{n}}}{{{k}}} = \dfrac{{{numer_tex}}}{{{denom_tex}}}"]
+    # Many factors: keep product form, jump straight to the value (no a·b=c chain).
+    if k >= 5:
+        steps.append(rf"\binom{{{n}}}{{{k}}} = {val}")
+        return steps
     prod = 1
     for i, f in enumerate(range(n, n - k, -1)):
         prev = prod

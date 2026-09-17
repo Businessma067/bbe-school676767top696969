@@ -81,6 +81,11 @@ def binom_expansion_steps(n: int, k: int) -> list[str]:
         rf"\binom{{{n}}}{{{orig_k}}} = \dfrac{{{n}!}}{{{orig_k}!({n}-{orig_k})!}}",
         rf"\dfrac{{{n}!}}{{{orig_k}!({n - orig_k})!}} = \dfrac{{{numer_tex}}}{{{denom_tex}}}",
     ]
+    # Many factors: keep product form, jump straight to the value (no a·b=c chain).
+    if k_eff >= 5:
+        steps.append(rf"\dfrac{{{numer_tex}}}{{{denom_tex}}} = {fmt_num(val)}")
+        steps.append(rf"\binom{{{n}}}{{{orig_k}}} = {val}")
+        return steps
     prod = 1
     for i, f in enumerate(range(n, n - k_eff, -1)):
         prev = prod
@@ -120,7 +125,8 @@ def power_expansion_steps(base: float, exp: int) -> list[str]:
         return [rf"({b})^{{0}} = 1"]
     if exp == 1:
         return [rf"({b})^{{1}} = {b}"]
-    if exp > 10 or abs(base) > 100:
+    # Long power chains: write the value directly (keep short ones stepped).
+    if exp >= 5 or abs(base) > 100:
         return [rf"({b})^{{{exp}}} = {fmt_num(base ** exp)}"]
     steps = [rf"({b})^{{{exp}}}"]
     prod = base
