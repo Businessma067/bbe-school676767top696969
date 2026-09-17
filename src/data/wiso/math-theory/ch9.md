@@ -258,7 +258,7 @@ p(x)\to-\infty\quad\text{as }x\to+\infty,
 p(x)\to+\infty\quad\text{as }x\to-\infty.
 $$
 
-**Example 2.** For $p(x)=x^4-3x^2+5$ , the degree is even and $a_n=1>0$ . Both ends go to $+\infty$ .
+**Beispiel 2.** For $p(x)=x^4-3x^2+5$ , the degree is even and $a_n=1>0$ . Both ends go to $+\infty$ .
 
 ### Vergleich zweier Polynome im Unendlichen
 

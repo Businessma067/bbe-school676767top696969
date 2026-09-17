@@ -17,7 +17,7 @@ Verneinen Sie Aussagen mit $\forall$ und $\exists$ und respektieren Sie die Reih
 
 ---
 
-## 1.1 Mengen: Elemente, Subsets & Power Mengen
+## 1.1 Mengen: Elemente, Teilmengen & Potenzmengen
 
 ### Was für eine Menge ist
 
@@ -75,7 +75,7 @@ zu sagen, dass $x$ ein Element von $S$ ist, und $x \notin S$ zu sagen, dass es n
 
 Denken Sie an einen Studenten, der einen Laptop und ein Smartphone kaufen muss, die jeweils als "billig" oder "teuer" erhältlich sind, sich aber das teuer-teure Paar nicht leisten können. Die erschwingliche Menge $B$ hat drei Kombinationen. Die Wahl des Schülers $s$ muss $s \in B$ erfüllen. Die unerschwingliche Kombination $t$ erfüllt $t \notin B$ .
 
-### Subsets
+### Teilmengen
 
 Es sind $A$ und $B$ Mengen. Wir sagen $A$ ist eine **Teilmenge** von $B$ und schreiben $A \subseteq B$ , wenn jedes Element von $A$ auch ein Element von $B$ ist. Insbesondere
 
@@ -289,7 +289,7 @@ Um herauszufinden, wie viele $C$ lesen, aber weder $A$ noch $B$ , beginnen Sie m
 
 ---
 
-## 1.3 Aussageal Logic & Implications
+## 1.3 Aussagenlogik & Implikationen
 
 In diesem Abschnitt geht es darum, alltägliche Regeln so zu lesen, wie eine Prüfung sie liest: als präzise Pfeile, Ands und Ors. Banken, Universitäten, Geschäfte und Verträge sprechen alle in "wenn / nur wenn / wenn und nur wenn". Die Mathematik ist in jedem Fall gleich. Der schwierige Teil ist zu hören, welcher Pfeil tatsächlich versprochen wurde.
 
@@ -529,7 +529,7 @@ Einseitige Implikationen verengen die Kandidaten. Nur eine Äquivalenz oder eine
 
 ---
 
-## 1.4 Quantifiers, Validity & Deduction
+## 1.4 Quantoren, Gültigkeit & Schlussfolgern
 
 Abschnitt 1.3 baute einzelne Pfeile. Dieser Abschnitt baut längere Argumente auf: wie Mengen bewiesen werden, wie "für jeden" und "gibt es" interagieren und wann eine Schlussfolgerung wirklich aus gegebenen Prämissen folgt.
 
@@ -612,7 +612,7 @@ Das Überprüfen von $n = 1,2,3,4,5$ ist ein Beweis, kein Beweis. Ohne den allge
 
 Eine berühmte falsche "Induktion" behauptet, dass in jedem Raum von $n$ Menschen alle das gleiche Einkommen haben. Die Basis $n = 1$ ist in Ordnung. Der gebrochene Schritt gibt vor, dass überlappende Gruppen von $n$ eine Gruppe von $n + 1$ zwingen, zusammenzupassen, was bereits beim Übergang von $1$ zu $2$ fehlschlägt. Die Moral: Der induktive Schritt muss für jeden *** arbeiten $k$ , einschließlich der unangenehmen.
 
-### Quantifiers
+### Quantoren
 
 | Symbol | Lesen Sie als | Wahr, wenn
 | --- | ---
