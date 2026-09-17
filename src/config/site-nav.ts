@@ -174,20 +174,16 @@ function mockBuilderItem(track: ExamTrack): NavItem {
 }
 
 function gamesItem(track: ExamTrack): NavItem {
-  return track === "wiso"
-    ? {
-        label: "Study tools",
-        href: "/wiso/flashcards",
-        isRoute: true,
-        activePrefixes: ["/wiso/flashcards", "/wiso/matching", "/wiso/tutor-exam"],
-      }
-    : {
-        label: "Study tools",
-        href: "/dashboard",
-        isRoute: true,
-        search: { tab: "games" },
-        activePrefixes: ["/flashcards", "/matching", "/tutor-exam"],
-      };
+  return {
+    label: "Study tools",
+    href: "/dashboard",
+    isRoute: true,
+    search: { tab: "games" },
+    activePrefixes:
+      track === "wiso"
+        ? ["/wiso/flashcards", "/wiso/matching", "/wiso/tutor-exam"]
+        : ["/flashcards", "/matching", "/tutor-exam"],
+  };
 }
 
 /** Chooser homepage (`/`) — short header set pointing at shared pages. */

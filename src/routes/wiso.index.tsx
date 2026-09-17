@@ -260,7 +260,8 @@ export function WisoLandingPage() {
                   Mock Builder
                 </LocalizedLink>
                 <LocalizedLink
-                  to="/wiso/flashcards"
+                  to="/dashboard"
+                  search={{ tab: "games" }}
                   className="text-muted-foreground hover:underline"
                 >
                   Study tools
