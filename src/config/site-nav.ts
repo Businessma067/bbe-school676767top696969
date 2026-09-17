@@ -125,6 +125,7 @@ const wisoFullCourseItem: NavItem = {
     "/wiso/products/full-course-subjects",
     "/wiso/products/full-course-math",
     "/wiso/products/full-course-economics",
+    "/wiso/products/full-course-german",
   ],
 };
 
@@ -176,10 +177,9 @@ function gamesItem(track: ExamTrack): NavItem {
   return track === "wiso"
     ? {
         label: "Study tools",
-        href: "/dashboard",
+        href: "/wiso/flashcards",
         isRoute: true,
-        search: { tab: "games" },
-        activePrefixes: ["/wiso/flashcards", "/wiso/matching", "/wiso/tutor-exam", "/dashboard"],
+        activePrefixes: ["/wiso/flashcards", "/wiso/matching", "/wiso/tutor-exam"],
       }
     : {
         label: "Study tools",
