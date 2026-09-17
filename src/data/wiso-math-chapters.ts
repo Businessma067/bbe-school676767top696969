@@ -1,6 +1,7 @@
 /**
  * German syllabus chrome for WiSo Math — same chapter numbers / banks as BBE Full Course.
- * Task stems are loaded from BBE banks and overlaid with German translations when present.
+ * Task stems/explanations load from BBE banks and are overlaid with German translations.
+ * Pass `lang: "en"` to skip overlays (admin English preview).
  */
 
 import {
@@ -9,6 +10,8 @@ import {
   type MathSubsection,
   type MathTask,
 } from "@/data/math-chapters";
+
+export type WisoMathContentLang = "de" | "en";
 
 export const WISO_MATH_CHAPTER_TITLES = [
   "Logik",
@@ -170,8 +173,13 @@ function applyOverlay(task: MathTask, overlay: DeOverlay | undefined): MathTask 
   };
 }
 
-/** Same BBE Full Course banks, with German text overlays when available. */
-export async function loadWisoMathChapterTasks(num: number): Promise<MathTask[]> {
-  const [tasks, overlay] = await Promise.all([loadMathChapterTasks(num), loadChapterOverlay(num)]);
+/** Same BBE Full Course banks; German overlays applied unless `lang` is `"en"`. */
+export async function loadWisoMathChapterTasks(
+  num: number,
+  lang: WisoMathContentLang = "de",
+): Promise<MathTask[]> {
+  const tasks = await loadMathChapterTasks(num);
+  if (lang === "en") return tasks;
+  const overlay = await loadChapterOverlay(num);
   return tasks.map((t) => applyOverlay(t, overlay[t.case_id] ?? overlay[t.id]));
 }

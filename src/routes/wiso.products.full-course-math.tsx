@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MathTasksPage } from "@/components/MathTasksPage";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
-import { WISO_MATH_CHAPTERS, loadWisoMathChapterTasks } from "@/data/wiso-math-chapters";
+import { WisoMathTasksPage } from "@/components/WisoMathTasksPage";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -15,13 +14,13 @@ export const Route = createFileRoute("/wiso/products/full-course-math")({
       {
         name: "description",
         content:
-          "WiSo mathematics practice: the Full Course math bank with German syllabus labels for the WU Vienna Aufnahmeprüfung.",
+          "WiSo mathematics practice: German questions and explanations for the WU Vienna WiSo Aufnahmeprüfung.",
       },
       { property: "og:title", content: "Mathematik — Full WiSo Course" },
       {
         property: "og:description",
         content:
-          "Algebra, functions, finance math, probability and more — same exam-format cases as BBE Full Course, organised for WiSo.",
+          "Algebra, functions, finance math, probability and more — WiSo Full Course mathematics in German.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
@@ -36,13 +35,7 @@ export const Route = createFileRoute("/wiso/products/full-course-math")({
 function WisoFullCourseMathTasks() {
   return (
     <RequireFullCourse minTier="full" productSlug="wiso-full-course">
-      <MathTasksPage
-        tier="full"
-        backTo="/wiso/products/full-course-subjects"
-        chapters={WISO_MATH_CHAPTERS}
-        loadChapterTasks={loadWisoMathChapterTasks}
-        storageKey="wiso.math.progress.v1"
-      />
+      <WisoMathTasksPage />
     </RequireFullCourse>
   );
 }
