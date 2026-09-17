@@ -251,10 +251,7 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Geteilte akademische Atmosphäre, die englisch- und deutschsprachige Studienumgebungen andeutet",
   "Language is the hinge decision: BBE campus life and exam tasks run in English; WISO study and the language section of the exam assume solid German.":
     "Die Sprache ist die Schlüsselentscheidung: Campusleben und Prüfungsaufgaben bei BBE laufen auf Englisch; Studium und Sprachteil bei WISO setzen solides Deutsch voraus.",
-  "If you are aiming at BBE specifically, dig into":
-    "Wenn du gezielt auf BBE zielst, vertiefe dich in",
   "Mathematics topics →": "Mathematik-Themen →",
-  and: "und",
   "Economics & English →": "Wirtschaft & Englisch →",
 
   "Shared admission process building blocks": "Gemeinsame Bausteine des Aufnahmeverfahrens",
@@ -288,13 +285,8 @@ export const bbeVsWisoExtraDe: Record<string, string> = {
     "Überschneidungen in der Vorbereitung — und was nicht übertragbar ist",
   "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section: English practice will not replace German comprehension prep for WISO, and the reverse is also true.":
     "Mathematik und grundlegende Wirtschaftsvorbereitung können zwischen beiden Prüfungen übertragen werden. Nicht übertragbar ist der Sprachteil: Englischübung ersetzt keine deutsche Leseverständnis-Vorbereitung für WISO — und umgekehrt.",
-  "For BBE applicants, the highest-leverage sequence is usually: understand format and scoring, run a diagnostic, close topic gaps, then add timed mocks. A practical starting point is the":
-    "Für BBE-Bewerber:innen ist die wirksamste Reihenfolge meist: Format und Bewertung verstehen, einen Diagnosetest machen, Themenlücken schließen, dann timed Mocks. Ein praktischer Start ist der",
   "free demo course →": "kostenlose Demokurs →",
-  followed: "gefolgt",
-  by: "von",
-  a: "einem",
-  "diagnostic-style mock exam →": "diagnostischen Probeprüfung →",
+  "diagnostic-style mock exam →": "diagnostische Probeprüfung →",
   "Large exam hall seating at a WU Vienna entrance exam":
     "Große Prüfungssaal-Bestuhlung bei einer WU-Wien-Aufnahmeprüfung",
   "Both pathways can lead to the same kind of high-pressure hall experience. Preparation quality matters more than collecting random PDFs.":
@@ -600,10 +592,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Розділена академічна атмосфера, що натякає на англо- та німецькомовне навчання",
   "Language is the hinge decision: BBE campus life and exam tasks run in English; WISO study and the language section of the exam assume solid German.":
     "Мова — ключове рішення: життя кампусу та завдання іспиту BBE англійською; навчання WISO і мовний блок іспиту передбачають міцну німецьку.",
-  "If you are aiming at BBE specifically, dig into":
-    "Якщо ви цілитеся саме в BBE, заглибтеся в",
   "Mathematics topics →": "Теми з математики →",
-  and: "і",
   "Economics & English →": "Економіка та англійська →",
 
   "Shared admission process building blocks": "Спільні елементи процесу вступу",
@@ -637,12 +626,7 @@ export const bbeVsWisoExtraUk: Record<string, string> = {
     "Перетин підготовки — і що не переноситься",
   "Mathematics and basic economics preparation can transfer between the two exams. What does not transfer is the language section: English practice will not replace German comprehension prep for WISO, and the reverse is also true.":
     "Підготовка з математики та базової економіки може переноситися між іспитами. Не переноситься мовний блок: практика англійської не замінить підготовку з німецького розуміння для WISO — і навпаки.",
-  "For BBE applicants, the highest-leverage sequence is usually: understand format and scoring, run a diagnostic, close topic gaps, then add timed mocks. A practical starting point is the":
-    "Для абітурієнтів BBE найефективніша послідовність зазвичай така: зрозуміти формат і оцінювання, пройти діагностику, закрити прогалини, потім додати timed mocks. Практичний старт —",
   "free demo course →": "безкоштовний демо-курс →",
-  followed: "з наступним",
-  by: "",
-  a: "",
   "diagnostic-style mock exam →": "діагностичний пробний іспит →",
   "Large exam hall seating at a WU Vienna entrance exam":
     "Велика зала з місцями на вступному іспиті WU Vienna",
