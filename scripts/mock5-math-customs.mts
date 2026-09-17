@@ -25,93 +25,77 @@ $$`;
 $$`;
 }
 
-/** Q22 — hard set-logic chain (not chests / knights). */
+/** Q22 — hard verbal three-set counting (inclusion–exclusion traps). */
 export function buildMathQ22Sets() {
-  const context = `Let the universe be $U=\\{1,2,3,4,5,6\\}$. Define
+  const context = `A mid-size firm will unlock client-data access only for staff who finish three compliance modules: Privacy, Security, and Audit.
 
-$$
-A=\\{1,2,3,4\\},\\qquad B=\\{3,4,5\\},\\qquad C=\\{1,5,6\\}.
-$$
+Of the $200$ staff in the access programme:
+
+- $120$ finished Privacy, $95$ finished Security, and $80$ finished Audit;
+- $48$ finished both Privacy and Security, $40$ finished both Privacy and Audit, and $35$ finished both Security and Audit;
+- $18$ finished all three modules.
+
+Staff who finished none of the three remain blocked from client data. Completing a module means finishing it; “only Audit” means Audit and neither of the other two.
 
 Decide whether each statement is true or false.`;
 
+  // |P∪S∪A|=120+95+80-48-40-35+18=190; none=10
+  // only P=120-48-40+18=50; only S=95-48-35+18=30; only A=80-40-35+18=23
+  // |P∪S|=120+95-48=167
+
   const statements = [
-    "The union $A\\cup C$ equals the whole universe $U$, and the complement of $A\\cup B$ has exactly one element.",
-    "The symmetric difference $A\\triangle B$ has exactly three elements.",
-    "The set $(A\\cap B)\\cup(B\\cap C)$ has exactly four elements.",
-    "Every element of $C$ also belongs to $A\\cup B$.",
-    "The set $(A\\cap C)^{c}\\cap B$ equals the set $B$.",
+    "Exactly $10$ staff in the programme finished none of the three modules and therefore remain blocked from client data.",
+    "Strictly more staff finished every module than finished Audit and nothing else.",
+    "The staff who finished Privacy but neither of the other two outnumber those who finished Security but neither of the other two.",
+    "Under these counts, finishing Audit without also finishing Privacy is impossible.",
+    "The staff who finished at least one of Privacy or Security number strictly more than $160$.",
   ];
 
-  // A True (both parts)
-  // B True |{1,2,5}|=3
-  // C False |{3,4,5}|=3≠4
-  // D False (6 missing)
-  // E True
-
-  const answer_key = [true, true, false, false, true];
+  const answer_key = [true, false, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
 $$
-A\\cup C=\\{1,2,3,4\\}\\cup\\{1,5,6\\}=\\{1,2,3,4,5,6\\}=U
+|P\\cup S\\cup A|=120+95+80-48-40-35+18=190
 $$
 
 $$
-A\\cup B=\\{1,2,3,4,5\\},\\qquad (A\\cup B)^{c}=U\\setminus(A\\cup B)=\\{6\\}
+200-190=10
 $$
 
-Both parts hold: the union is $U$, and the complement has exactly one element.
+Exactly $10$ finished none.
 
 So the statement is True.`,
 
-    `**B.** → True
+    `**B.** → False
+
+All three: $18$. Only Audit:
 
 $$
-A\\setminus B=\\{1,2\\},\\qquad B\\setminus A=\\{5\\}
+80-40-35+18=23
 $$
 
-$$
-A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)=\\{1,2,5\\}
-$$
-
-That set has three elements.
-
-So the statement is True.`,
-
-    `**C.** → False
-
-$$
-A\\cap B=\\{3,4\\},\\qquad B\\cap C=\\{5\\}
-$$
-
-$$
-(A\\cap B)\\cup(B\\cap C)=\\{3,4,5\\}
-$$
-
-Cardinality is $3$, not $4$.
+$18$ is not strictly greater than $23$.
 
 So the statement is False.`,
 
+    `**C.** → True
+
+Only Privacy: $120-48-40+18=50$. Only Security: $95-48-35+18=30$. Since $50>30$, the claim holds.
+
+So the statement is True.`,
+
     `**D.** → False
 
-$$
-A\\cup B=\\{1,2,3,4,5\\}
-$$
-
-But $6\\in C$ and $6\\notin A\\cup B$, so $C\\nsubseteq A\\cup B$.
+Only Audit equals $23>0$, so finishing Audit without Privacy is possible.
 
 So the statement is False.`,
 
     `**E.** → True
 
 $$
-A\\cap C=\\{1\\},\\qquad (A\\cap C)^{c}=\\{2,3,4,5,6\\}
-$$
-
-$$
-(A\\cap C)^{c}\\cap B=\\{2,3,4,5,6\\}\\cap\\{3,4,5\\}=\\{3,4,5\\}=B
+|P\\cup S|=120+95-48=167>160
 $$
 
 So the statement is True.`,
@@ -120,7 +104,7 @@ So the statement is True.`,
   return {
     case_id: "MATH 1.MOCK.SETS5",
     id: "MATH 1.MOCK.SETS5",
-    title: "Universe of six elements — chained set identities",
+    title: "Three compliance modules — verbal inclusion–exclusion",
     chapter: 1,
     subsection: "1.2",
     context,
@@ -128,77 +112,100 @@ So the statement is True.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Compute $A\\cup C=U$, $(A\\cup B)^{c}=\\{6\\}$, $A\\triangle B=\\{1,2,5\\}$, $|(A\\cap B)\\cup(B\\cap C)|=3$, $C\\nsubseteq A\\cup B$, $(A\\cap C)^{c}\\cap B=B$.`,
+    solution_overview: `Union $190$, none $10$. Only Audit $23>18$ (all three). Only Privacy $50>$ only Security $30$. Audit without Privacy possible. $|P\\cup S|=167>160$.`,
   };
 }
 
 /**
- * Q23 — five independent algebraic grind cases (no shortcut identities as crutches).
- * Pure expansion / clearing / checking — logic of “which claim survives calculation”.
+ * Q23 — five independent hard algebra checks (thresholds, domains, traps).
  */
 export function buildMathQ23Grind() {
-  const context = `Five independent algebraic claims are listed. Decide whether each claim is true or false.`;
+  const context = `Five independent algebraic checks are listed. Each claim is about a threshold, a count of solutions, or a structural feature — not a boxed final answer. Watch domains, extraneous roots after squaring, and absolute-value corners. Decide whether each claim is true or false.`;
+
+  // A: (x+1)/(x-2)-(x-1)/(x+2)=4/(x^2-4) → 6x/(x^2-4)=4/(x^2-4) → x=2/3; domain x≠±2. One root. True
+  // B: at t=3, 1/(t(t+1))+1/((t+1)(t+2))=1/12+1/20=5/60+3/60=8/60=2/15; 2/(t(t+2))=2/15. Equal. True
+  // C: √(3x+1)=x-1 → one real root x=5>3. True
+  // D: |3x-4|≤|x+2| → [1/2,3], not [-1,3]. False
+  // E: (x-2)(x+3)(x-1)=x^3-7x+6, coeff of x^2 is 0 ≠ -1. False
 
   const statements = [
-    "In the expanded polynomial $(2x-1)(x+3)$, the coefficient of $x$ equals $5$.",
-    "At $x=2$, the value of $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}$ equals $\\dfrac{2}{3}$.",
-    "The equation $\\sqrt{x+3}=x-1$ has exactly two distinct real solutions.",
-    "The equation $|2x-5|=3$ has exactly two distinct real solutions.",
-    "In the expansion of $(x+2)^{3}$, the constant term equals $6$.",
+    "After the left-hand side of $\\dfrac{x+1}{x-2}-\\dfrac{x-1}{x+2}=\\dfrac{4}{x^{2}-4}$ is written over a common denominator, the equation has exactly one real root in its natural domain.",
+    "At $t=3$, the sum $\\dfrac{1}{t(t+1)}+\\dfrac{1}{(t+1)(t+2)}$ equals $\\dfrac{2}{t(t+2)}$.",
+    "The equation $\\sqrt{3x+1}=x-1$ has exactly one real solution, and that solution is strictly larger than $3$.",
+    "The solution set of $|3x-4|\\le|x+2|$ is exactly the closed interval $[-1,3]$.",
+    "In the expanded form of $(x-2)(x+3)(x-1)$, the coefficient of $x^{2}$ equals $-1$.",
   ];
 
-  const answer_key = [true, true, false, true, false];
+  const answer_key = [true, true, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
+Domain: $x\\neq\\pm 2$. Common denominator $x^{2}-4$:
+
 $$
-(2x-1)(x+3)=2x^{2}+6x-x-3=2x^{2}+5x-3
+\\dfrac{(x+1)(x+2)-(x-1)(x-2)}{x^{2}-4}=\\dfrac{6x}{x^{2}-4}
 $$
 
-The coefficient of $x$ is $5$.
+The equation becomes $6x=4$, so $x=\\tfrac{2}{3}$, which lies in the domain. Exactly one real root.
 
 So the statement is True.`,
 
     `**B.** → True
 
-At $x=2$:
+At $t=3$:
 
 $$
-\\dfrac{1}{2-1}-\\dfrac{1}{2+1}=1-\\dfrac{1}{3}=\\dfrac{2}{3}
+\\dfrac{1}{3\\cdot 4}+\\dfrac{1}{4\\cdot 5}=\\dfrac{1}{12}+\\dfrac{1}{20}=\\dfrac{5+3}{60}=\\dfrac{8}{60}=\\dfrac{2}{15}
 $$
+
+$$
+\\dfrac{2}{3\\cdot 5}=\\dfrac{2}{15}
+$$
+
+The two sides match.
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**C.** → True
 
-Domain forces $x\\ge 1$. Squaring:
+Need $x\\ge 1$ (radical domain and nonnegative right-hand side). Squaring:
 
 $$
-x+3=(x-1)^{2}\\Rightarrow x^{2}-3x-2=0\\Rightarrow x=\\dfrac{3\\pm\\sqrt{17}}{2}
+3x+1=(x-1)^{2}\\Rightarrow x^{2}-5x=0\\Rightarrow x(x-5)=0
 $$
 
-Only $\\dfrac{3+\\sqrt{17}}{2}$ is admissible. Exactly one real solution.
+Only $x=5$ is admissible, and $5>3$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+Squaring both sides (valid for absolute values):
+
+$$
+(3x-4)^{2}\\le(x+2)^{2}\\Rightarrow 8x^{2}-28x+12\\le 0\\Rightarrow 2x^{2}-7x+3\\le 0
+$$
+
+$$
+(2x-1)(x-3)\\le 0\\Rightarrow x\\in\\bigl[\\tfrac{1}{2},3\\bigr]
+$$
+
+That is not $[-1,3]$.
 
 So the statement is False.`,
-
-    `**D.** → True
-
-$$
-|2x-5|=3\\Rightarrow x=4\\ \\text{or}\\ x=1
-$$
-
-Exactly two distinct real solutions.
-
-So the statement is True.`,
 
     `**E.** → False
 
 $$
-(x+2)^{3}=x^{3}+6x^{2}+12x+8
+(x-2)(x+3)=x^{2}+x-6
 $$
 
-The constant term is $8$, not $6$.
+$$
+(x^{2}+x-6)(x-1)=x^{3}-x^{2}+x^{2}-x-6x+6=x^{3}-7x+6
+$$
+
+The coefficient of $x^{2}$ is $0$, not $-1$.
 
 So the statement is False.`,
   ];
@@ -206,7 +213,7 @@ So the statement is False.`,
   return {
     case_id: "MATH 2.MOCK.GRIND",
     id: "MATH 2.MOCK.GRIND",
-    title: "Five algebraic grind cases — expand, clear, check",
+    title: "Five hard algebraic checks — domains, thresholds, traps",
     chapter: 2,
     subsection: "2.5",
     context,
@@ -214,7 +221,7 @@ So the statement is False.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Coeff of $x$ is $5$. At $x=2$ the difference is $2/3$. Radical equation has one root. Absolute equation has two roots. Cube constant is $8$.`,
+    solution_overview: `Rational equation: one root $2/3$. Partial-sum check at $t=3$ matches. Radical: only $x=5$. Absolute inequality is $[1/2,3]$, not $[-1,3]$. Cubic $x^{2}$-coeff is $0$.`,
   };
 }
 

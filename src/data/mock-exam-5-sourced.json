@@ -642,64 +642,64 @@
     {
       "case_id": "MATH 1.MOCK.SETS5",
       "id": "MATH 1.MOCK.SETS5",
-      "title": "Universe of six elements — chained set identities",
+      "title": "Three compliance modules — verbal inclusion–exclusion",
       "chapter": 1,
       "subsection": "1.2",
-      "context": "Let the universe be $U=\\{1,2,3,4,5,6\\}$. Define\n\n$$\nA=\\{1,2,3,4\\},\\qquad B=\\{3,4,5\\},\\qquad C=\\{1,5,6\\}.\n$$\n\nDecide whether each statement is true or false.",
+      "context": "A mid-size firm will unlock client-data access only for staff who finish three compliance modules: Privacy, Security, and Audit.\n\nOf the $200$ staff in the access programme:\n\n- $120$ finished Privacy, $95$ finished Security, and $80$ finished Audit;\n- $48$ finished both Privacy and Security, $40$ finished both Privacy and Audit, and $35$ finished both Security and Audit;\n- $18$ finished all three modules.\n\nStaff who finished none of the three remain blocked from client data. Completing a module means finishing it; “only Audit” means Audit and neither of the other two.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The union $A\\cup C$ equals the whole universe $U$, and the complement of $A\\cup B$ has exactly one element.",
-        "The symmetric difference $A\\triangle B$ has exactly three elements.",
-        "The set $(A\\cap B)\\cup(B\\cap C)$ has exactly four elements.",
-        "Every element of $C$ also belongs to $A\\cup B$.",
-        "The set $(A\\cap C)^{c}\\cap B$ equals the set $B$."
+        "Exactly $10$ staff in the programme finished none of the three modules and therefore remain blocked from client data.",
+        "Strictly more staff finished every module than finished Audit and nothing else.",
+        "The staff who finished Privacy but neither of the other two outnumber those who finished Security but neither of the other two.",
+        "Under these counts, finishing Audit without also finishing Privacy is impossible.",
+        "The staff who finished at least one of Privacy or Security number strictly more than $160$."
       ],
       "answer_key": [
         true,
-        true,
         false,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\nA\\cup C=\\{1,2,3,4\\}\\cup\\{1,5,6\\}=\\{1,2,3,4,5,6\\}=U\n$$\n\n$$\nA\\cup B=\\{1,2,3,4,5\\},\\qquad (A\\cup B)^{c}=U\\setminus(A\\cup B)=\\{6\\}\n$$\n\nBoth parts hold: the union is $U$, and the complement has exactly one element.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nA\\setminus B=\\{1,2\\},\\qquad B\\setminus A=\\{5\\}\n$$\n\n$$\nA\\triangle B=(A\\setminus B)\\cup(B\\setminus A)=\\{1,2,5\\}\n$$\n\nThat set has three elements.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\nA\\cap B=\\{3,4\\},\\qquad B\\cap C=\\{5\\}\n$$\n\n$$\n(A\\cap B)\\cup(B\\cap C)=\\{3,4,5\\}\n$$\n\nCardinality is $3$, not $4$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\nA\\cup B=\\{1,2,3,4,5\\}\n$$\n\nBut $6\\in C$ and $6\\notin A\\cup B$, so $C\\nsubseteq A\\cup B$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\nA\\cap C=\\{1\\},\\qquad (A\\cap C)^{c}=\\{2,3,4,5,6\\}\n$$\n\n$$\n(A\\cap C)^{c}\\cap B=\\{2,3,4,5,6\\}\\cap\\{3,4,5\\}=\\{3,4,5\\}=B\n$$\n\nSo the statement is True."
+        "**A.** → True\n\n$$\n|P\\cup S\\cup A|=120+95+80-48-40-35+18=190\n$$\n\n$$\n200-190=10\n$$\n\nExactly $10$ finished none.\n\nSo the statement is True.",
+        "**B.** → False\n\nAll three: $18$. Only Audit:\n\n$$\n80-40-35+18=23\n$$\n\n$18$ is not strictly greater than $23$.\n\nSo the statement is False.",
+        "**C.** → True\n\nOnly Privacy: $120-48-40+18=50$. Only Security: $95-48-35+18=30$. Since $50>30$, the claim holds.\n\nSo the statement is True.",
+        "**D.** → False\n\nOnly Audit equals $23>0$, so finishing Audit without Privacy is possible.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\n|P\\cup S|=120+95-48=167>160\n$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Compute $A\\cup C=U$, $(A\\cup B)^{c}=\\{6\\}$, $A\\triangle B=\\{1,2,5\\}$, $|(A\\cap B)\\cup(B\\cap C)|=3$, $C\\nsubseteq A\\cup B$, $(A\\cap C)^{c}\\cap B=B$."
+      "solution_overview": "Union $190$, none $10$. Only Audit $23>18$ (all three). Only Privacy $50>$ only Security $30$. Audit without Privacy possible. $|P\\cup S|=167>160$."
     },
     {
       "case_id": "MATH 2.MOCK.GRIND",
       "id": "MATH 2.MOCK.GRIND",
-      "title": "Five algebraic grind cases — expand, clear, check",
+      "title": "Five hard algebraic checks — domains, thresholds, traps",
       "chapter": 2,
       "subsection": "2.5",
-      "context": "Five independent algebraic claims are listed. Decide whether each claim is true or false.",
+      "context": "Five independent algebraic checks are listed. Each claim is about a threshold, a count of solutions, or a structural feature — not a boxed final answer. Watch domains, extraneous roots after squaring, and absolute-value corners. Decide whether each claim is true or false.",
       "statements": [
-        "In the expanded polynomial $(2x-1)(x+3)$, the coefficient of $x$ equals $5$.",
-        "At $x=2$, the value of $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}$ equals $\\dfrac{2}{3}$.",
-        "The equation $\\sqrt{x+3}=x-1$ has exactly two distinct real solutions.",
-        "The equation $|2x-5|=3$ has exactly two distinct real solutions.",
-        "In the expansion of $(x+2)^{3}$, the constant term equals $6$."
+        "After the left-hand side of $\\dfrac{x+1}{x-2}-\\dfrac{x-1}{x+2}=\\dfrac{4}{x^{2}-4}$ is written over a common denominator, the equation has exactly one real root in its natural domain.",
+        "At $t=3$, the sum $\\dfrac{1}{t(t+1)}+\\dfrac{1}{(t+1)(t+2)}$ equals $\\dfrac{2}{t(t+2)}$.",
+        "The equation $\\sqrt{3x+1}=x-1$ has exactly one real solution, and that solution is strictly larger than $3$.",
+        "The solution set of $|3x-4|\\le|x+2|$ is exactly the closed interval $[-1,3]$.",
+        "In the expanded form of $(x-2)(x+3)(x-1)$, the coefficient of $x^{2}$ equals $-1$."
       ],
       "answer_key": [
         true,
         true,
-        false,
         true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n(2x-1)(x+3)=2x^{2}+6x-x-3=2x^{2}+5x-3\n$$\n\nThe coefficient of $x$ is $5$.\n\nSo the statement is True.",
-        "**B.** → True\n\nAt $x=2$:\n\n$$\n\\dfrac{1}{2-1}-\\dfrac{1}{2+1}=1-\\dfrac{1}{3}=\\dfrac{2}{3}\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nDomain forces $x\\ge 1$. Squaring:\n\n$$\nx+3=(x-1)^{2}\\Rightarrow x^{2}-3x-2=0\\Rightarrow x=\\dfrac{3\\pm\\sqrt{17}}{2}\n$$\n\nOnly $\\dfrac{3+\\sqrt{17}}{2}$ is admissible. Exactly one real solution.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\n|2x-5|=3\\Rightarrow x=4\\ \\text{or}\\ x=1\n$$\n\nExactly two distinct real solutions.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\n(x+2)^{3}=x^{3}+6x^{2}+12x+8\n$$\n\nThe constant term is $8$, not $6$.\n\nSo the statement is False."
+        "**A.** → True\n\nDomain: $x\\neq\\pm 2$. Common denominator $x^{2}-4$:\n\n$$\n\\dfrac{(x+1)(x+2)-(x-1)(x-2)}{x^{2}-4}=\\dfrac{6x}{x^{2}-4}\n$$\n\nThe equation becomes $6x=4$, so $x=\\tfrac{2}{3}$, which lies in the domain. Exactly one real root.\n\nSo the statement is True.",
+        "**B.** → True\n\nAt $t=3$:\n\n$$\n\\dfrac{1}{3\\cdot 4}+\\dfrac{1}{4\\cdot 5}=\\dfrac{1}{12}+\\dfrac{1}{20}=\\dfrac{5+3}{60}=\\dfrac{8}{60}=\\dfrac{2}{15}\n$$\n\n$$\n\\dfrac{2}{3\\cdot 5}=\\dfrac{2}{15}\n$$\n\nThe two sides match.\n\nSo the statement is True.",
+        "**C.** → True\n\nNeed $x\\ge 1$ (radical domain and nonnegative right-hand side). Squaring:\n\n$$\n3x+1=(x-1)^{2}\\Rightarrow x^{2}-5x=0\\Rightarrow x(x-5)=0\n$$\n\nOnly $x=5$ is admissible, and $5>3$.\n\nSo the statement is True.",
+        "**D.** → False\n\nSquaring both sides (valid for absolute values):\n\n$$\n(3x-4)^{2}\\le(x+2)^{2}\\Rightarrow 8x^{2}-28x+12\\le 0\\Rightarrow 2x^{2}-7x+3\\le 0\n$$\n\n$$\n(2x-1)(x-3)\\le 0\\Rightarrow x\\in\\bigl[\\tfrac{1}{2},3\\bigr]\n$$\n\nThat is not $[-1,3]$.\n\nSo the statement is False.",
+        "**E.** → False\n\n$$\n(x-2)(x+3)=x^{2}+x-6\n$$\n\n$$\n(x^{2}+x-6)(x-1)=x^{3}-x^{2}+x^{2}-x-6x+6=x^{3}-7x+6\n$$\n\nThe coefficient of $x^{2}$ is $0$, not $-1$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Coeff of $x$ is $5$. At $x=2$ the difference is $2/3$. Radical equation has one root. Absolute equation has two roots. Cube constant is $8$."
+      "solution_overview": "Rational equation: one root $2/3$. Partial-sum check at $t=3$ matches. Radical: only $x=5$. Absolute inequality is $[1/2,3]$, not $[-1,3]$. Cubic $x^{2}$-coeff is $0$."
     },
     {
       "case_id": "MATH 3.MOCK.PVFMT",
