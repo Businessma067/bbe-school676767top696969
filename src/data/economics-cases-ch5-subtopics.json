@@ -1567,35 +1567,6 @@
   },
   {
     "subsection": "5.4",
-    "case_id": "CASE 5.4.08",
-    "title": "Renting High-Quality Event Wear",
-    "context": "Analyze how renting high-quality clothes for particular events can be preferable to buying inexpensive outfits used briefly. Evaluate the following economic assertions:",
-    "statements": [
-      "Sustainability-oriented consumers prefer durable goods that can be repaired rather than disposable items designed for early disposal.",
-      "Event-oriented rental of premium apparel reduces incentive to purchase single-use low-quality outfits for occasional wear.",
-      "Awareness of consumption risks is presented as necessary for producers and end consumers when evaluating market behaviour.",
-      "Renting clothes is always less sustainable than buying the cheapest available garment for a single event.",
-      "Cheap disposable clothing is the only trend in apparel markets because durability no longer interests any consumers."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Sustainability-oriented consumers prefer durable, repairable goods over disposable items built for early disposal. Longevity and repairability guide those choices. The preference stated matches that orientation.\n\nSo the statement is True.",
-      "Renting premium apparel for events reduces the incentive to buy single-use low-quality outfits for occasional wear. Temporary access covers the occasion without ownership waste.\n\nSo the statement is True.",
-      "Awareness of consumption risks is framed as necessary for producers and end consumers when they evaluate market behaviour. Both sides are asked to see how overbuying, short use, and volume push create costs. Without that awareness, responsibility discussions have no shared starting point. Producers shape offers; consumers shape purchase discipline. Presenting awareness as necessary for both is exactly the chapter stance.\n\nSo the statement is True.",
-      "Renting can be more sustainable than buying the cheapest single-event garment that will barely be worn again. \"Always less sustainable\" denies that common comparison. The absolute claim is false.\n\nSo the statement is False.",
-      "Durability still interests many consumers; cheap disposable clothing is not the only apparel trend. Quality and sharing trends coexist with fast fashion. The \"only trend\" claim fails.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.4",
     "case_id": "CASE 5.4.09",
     "title": "Marketing That Stimulates New Wants",
     "context": "Review the distinction between responding to existing customer needs and stimulating new wants through marketing activity. Evaluate the following economic assertions:",

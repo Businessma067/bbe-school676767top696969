@@ -1,0 +1,1046 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.7.12",
+      "title": "Airline Route Duopoly",
+      "subsection": "2.7",
+      "chapter": 2,
+      "context": "Analyze two carriers serving a thin international route and matching fare changes. Evaluate the following economic assertions:",
+      "statements": [
+        "Two dominant carriers on one route resemble duopoly, a special case of oligopoly.",
+        "Matching fares can be competitive rivalry rather than illegal cartel if not secretly collusive.",
+        "Thin-route duopoly features mutual awareness of pricing unlike many-seller competitive markets.",
+        "Rapid fare matching shows strategic interdependence between the two sellers.",
+        "Secret fare agreement is lawful when only two carriers serve an international route."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "Two carriers dominating one thin route form a duopoly, a special case of oligopoly with few interdependent sellers.\n\nStructure follows that seller count on the route.\n\nSo the statement is True.",
+        "Matching fares can be ordinary competitive response: each airline cuts or raises when it sees the rival move, without a secret joint plan.\n\nIllegal cartel requires collusive agreement, not mere parallel prices that arise from watching each other. Investigators look for communication and enforcement mechanisms, not solely for similar fares on a duopoly route where matching is also what rivalry predicts.\n\nSo the statement is True.",
+        "On a thin-route duopoly each carrier knows the other will notice fare changes.\n\nThat mutual awareness differs from many-seller markets where one airline's tweak is lost in the crowd.\n\nSo the statement is True.",
+        "Rapid fare matching is strategic interdependence in action between the two sellers.\n\nEach reacts to the other's posted prices within the oligopoly setting.\n\nSo the statement is True.",
+        "A secret fare agreement between the two carriers is still cartel collusion and typically unlawful, even on a thin international route.\n\nDuopoly structure does not grant a legal privilege to fix prices jointly. Competition law targets the agreement, not the mere fact that only two firms serve the city pair. Claiming lawfulness because seller count equals two confuses structure with permitted conduct.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 3.4.07",
+      "title": "Medium financial OR logic",
+      "subsection": "3.4",
+      "chapter": 3,
+      "context": "Consider a firm that has one hundred eighty staff, €48m turnover, and a €44m balance sheet. Evaluate the following economic assertions:",
+      "statements": [
+        "Any firm with more than ten employees is classified as large under EU rules.",
+        "MSME commonly groups micro, small, and medium enterprises under one umbrella term.",
+        "Crossing size thresholds can change which accounting rules apply to a business.",
+        "Any local shop qualifies as micro without reference to staff or turnover data.",
+        "Exactly ten staff exceeds the micro employee ceiling of fewer than ten."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "More than ten employees does not automatically mean large. Small and medium bands cover many firms well above ten staff. Large status requires crossing medium thresholds.\n\nSo the statement is False.",
+        "MSME is the common umbrella term that groups micro, small, and medium enterprises together in EU policy talk. The three tiers sit under one family name.\n\nSo the statement is True.",
+        "When a growing firm crosses official size lines, the accounting and reporting package that applies can change. Thresholds are not cosmetic labels; they can switch which rule set binds the business.\n\nApproaching medium limits therefore has compliance consequences as well as statistical ones. Crossing bands can rewrite filing duties.\n\nSo the statement is True.",
+        "A local shop is not micro by location alone. Staff count and financial figures still have to meet the micro tests. Geography never replaces those thresholds.\n\nSo the statement is False.",
+        "Exactly ten staff is not fewer than ten, so it exceeds the micro employee ceiling. The firm needs another size band once headcount hits ten.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.21",
+      "title": "Share Capital Calculation and Ownership",
+      "subsection": "4.3",
+      "chapter": 4,
+      "context": "Analyze the relationship between total share capital, the number of shares issued, and each investor's stake. Evaluate the following economic assertions:",
+      "statements": [
+        "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed fraction of that capital.",
+        "Doubling the market price on the exchange automatically doubles the corporation's registered share capital on the balance sheet.",
+        "Buying shares at initial issue transfers cash to the corporation in exchange for an ownership stake.",
+        "A shareholder may sell shares later to another investor without requiring the corporation to redeem the stock.",
+        "Each share always carries exactly one vote regardless of whether it is preferred or common stock."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed one-hundred-thousandth fraction of that capital pool.\n\nSo the statement is True.",
+        "A doubled exchange price does not automatically double registered share capital on the balance sheet; market quotes and book equity are different quantities.\n\nSo the statement is False.",
+        "At initial issue, cash moves from the investor to the corporation and the buyer receives an ownership stake in return. That primary subscription is how equity funding enters the firm.\n\nLater market trades among investors do not repeat that cash-inflow path. The letter correctly ties the funding transfer to purchase at issue from the company.\n\nSo the statement is True.",
+        "A shareholder may sell shares later to another investor without requiring the corporation to redeem or cancel the stock as if it were a callable loan.\n\nSo the statement is True.",
+        "Preferred and common classes often differ on voting rights. Not every share always carries exactly one vote regardless of the class terms written into the issue.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.6.06",
+      "title": "High Gearing and Credit Access",
+      "subsection": "4.6",
+      "chapter": 4,
+      "context": "Analyze why a business with a high proportion of loan capital may prefer internal funds or investors over additional debt. Evaluate the following economic assertions:",
+      "statements": [
+        "Capital expenditure and revenue expenditure both require identical long-term mortgage funding regardless of use.",
+        "Such a business should rather try to use internal sources of finance and/or find investors willing to provide funds.",
+        "Because loans must be repaid, a high proportion of loan capital can increase the risk of insolvency.",
+        "Costs of finance include interest payments on loans and credit as well as administration costs for issuing shares or bonds.",
+        "Financial funds used for capital expenditures on long-lived assets require long-term sources of finance."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Capital expenditure and revenue expenditure do not both require identical long-term mortgage funding. Short-cycle materials can use short-term credit; long-lived assets need longer sources.\n\nSo the statement is False.",
+        "A firm already loaded with loans should rather try internal sources and/or investors willing to provide funds. That path avoids stacking another repayment schedule onto an already geared balance sheet.\n\nSo the statement is True.",
+        "Loans must be repaid with interest regardless of how sales turn out in a weak month. A high proportion of loan capital therefore increases insolvency risk when cash inflows dip. Equity investors share residual outcomes differently from creditors with fixed claims. Preferring internal funds or new investors in that setting is a direct response to repayment burden.\n\nSo the statement is True.",
+        "Costs of finance include interest on loans and credit as well as administration costs for issuing shares or bonds. Both interest and issuance expenses belong in the comparison among available sources.\n\nSo the statement is True.",
+        "Financial funds for capital expenditures on long-lived assets require long-term sources of finance. Repayment then lines up with years of service from plant, vehicles, or buildings.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.4.08",
+      "title": "Renting High-Quality Event Wear",
+      "subsection": "5.4",
+      "chapter": 5,
+      "context": "Analyze how renting high-quality clothes for particular events can be preferable to buying inexpensive outfits used briefly. Evaluate the following economic assertions:",
+      "statements": [
+        "Sustainability-oriented consumers prefer durable goods that can be repaired rather than disposable items designed for early disposal.",
+        "Event-oriented rental of premium apparel reduces incentive to purchase single-use low-quality outfits for occasional wear.",
+        "Awareness of consumption risks is presented as necessary for producers and end consumers when evaluating market behaviour.",
+        "Renting clothes is always less sustainable than buying the cheapest available garment for a single event.",
+        "Cheap disposable clothing is the only trend in apparel markets because durability no longer interests any consumers."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Sustainability-oriented consumers prefer durable, repairable goods over disposable items built for early disposal. Longevity and repairability guide those choices. The preference stated matches that orientation.\n\nSo the statement is True.",
+        "Renting premium apparel for events reduces the incentive to buy single-use low-quality outfits for occasional wear. Temporary access covers the occasion without ownership waste.\n\nSo the statement is True.",
+        "Awareness of consumption risks is framed as necessary for producers and end consumers when they evaluate market behaviour. Both sides are asked to see how overbuying, short use, and volume push create costs. Without that awareness, responsibility discussions have no shared starting point. Producers shape offers; consumers shape purchase discipline. Presenting awareness as necessary for both is exactly the chapter stance.\n\nSo the statement is True.",
+        "Renting can be more sustainable than buying the cheapest single-event garment that will barely be worn again. \"Always less sustainable\" denies that common comparison. The absolute claim is false.\n\nSo the statement is False.",
+        "Durability still interests many consumers; cheap disposable clothing is not the only apparel trend. Quality and sharing trends coexist with fast fashion. The \"only trend\" claim fails.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.2.019",
+      "title": "Cash Flow Mix Over Two Years 19",
+      "subsection": "6.2",
+      "chapter": 6,
+      "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 374 | 432 |\n| Cash flow from investing activities | (307) | (376) |\n| Dividends paid | (39) | (52) |\n| Proceeds from new borrowing | 80 | 64 |\n| Cash flow from financing activities | 41 | 12 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
+        "Cost of sales covers costs directly tied to production, such as materials and labour linked to production, not administration or distribution costs.",
+        "A positive cash flow is not identical with a profit, because profit includes non-cash charges and accruals that cash flow does not.",
+        "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow statement.",
+        "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Land is usually kept at cost without an annual write-down.\n\nSo the statement is True.",
+        "Flows for the year and stocks at year-end answer different questions. With that split the claim is fine. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. Cost of sales gathers direct production costs tied to units sold. Materials and direct labour consumed in making goods sold belong in cost of sales. Distribution and administration sit below gross profit as operating expenses.\n\nSo the statement is True.",
+        "Cash-flow headings split operating, investing, and financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
+        "Dividends paid are financing outflows, cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions. A dividends reading of the extract supports this claim.\n\nSo the statement is True.",
+        "It is normally non-cash; land is not depreciated like buildings. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Depreciation matches past spending on the asset, not a fresh cash bill. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.4.009",
+      "title": "Short Depreciation Extract 9",
+      "subsection": "6.4",
+      "chapter": 6,
+      "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €65,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €3,000 residual value |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.",
+        "Asset A's annual depreciation charge is more than 29.9% higher than Asset B's annual depreciation charge.",
+        "A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
+        "An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
+        "Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Depreciation is a non-cash expense in the period charged. Cash left when the asset was purchased; the charge only allocates cost. Wages and energy, by contrast, usually trigger cash outflows soon. Residual value reduces the depreciable base before the annual charge is calculated. Land is usually kept at cost without an annual write-down.\n\nSo the statement is True.",
+        "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{65{,}000 - 0}{7} = 9{,}286\n$$\n\n$$\n\\text{Asset B} = \\frac{24{,}000 - 3{,}000}{5} = 4{,}200\n$$\n\n$$\n\\frac{9{,}286 - 4{,}200}{4{,}200} = 121.1\\%\n$$\n\n$$\n\\text{Claim: more than 29.9\\% higher}\n$$\n\nAsset A's charge is 121.1% above Asset B's, which exceeds the 29.9% threshold. Note: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
+        "Physical form is not the classification test. On the chapter test the wording is accepted. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nThe stepped charges use cost, residual, and life exactly as the straight-line rule requires.\n\nSo the statement is True.",
+        "On the chapter test the wording is accepted. An audit targets material misstatement, not absolute perfection of every euro. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
+        "How the item is held and for how long decides the balance-sheet line. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.020",
+      "title": "Turnover and Liquidity Extract 20",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 901 |\n| Cost of sales | 625 |\n| Total assets at the beginning of the year | 836 |\n| Total assets at the end of the year | 972 |\n| Inventory at the beginning of the year | 158 |\n| Inventory at the end of the year | 155 |\n| Trade receivables at the beginning of the year | 113 |\n| Trade receivables at the end of the year | 134 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.",
+        "Inventory turnover, cost of sales taken relative to average inventory, is below 6.24 times per year.",
+        "Asset turnover, revenue taken relative to average total assets, is above 1.18.",
+        "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.47 times per year.",
+        "With inventory turnover of about 4.0 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
+        "A year's revenue is a flow; cash on the balance sheet is a stock at one date. With that split the claim is fine. A dealer’s the item stays inventory until sold. Own use of the item for years makes it a tangible fixed asset. Cost of sales gathers direct production costs tied to units sold. Materials and direct labour consumed in making goods sold belong in cost of sales. Distribution and administration sit below gross profit as operating expenses. Gross profit equals revenue minus cost of sales before those operating lines. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
+        "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{836 + 972}{2} \\approx 904\n$$\n\n$$\n\\frac{901}{904} \\approx 0.9967\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 904. Asset turnover = 901 ÷ 904 ≈ 0.9967 Claimed above 1.18. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is False.",
+        "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{113 + 134}{2} \\approx 123.5\n$$\n$$\n\\frac{901}{123.5} \\approx 7.2955\n$$\nReceivables turnover = revenue ÷ average trade receivables. RT = 901123.5 = 7.2955 Threshold exceeds 10.47. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is False.",
+        "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{158 + 155}{2} \\approx 156.5\n$$\n\n$$\n\\frac{625}{156.5} \\approx 3.99\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 625156.5 = 3.99 That interpretation matches the definition. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.3.035",
+      "title": "Return and Cash Flow Extract 35",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 329 |\n| Machinery | 237 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 273 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 94 |\n| Total assets | 1253 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 162 |\n| Retained earnings | 464 |\n| Total equity | 626 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 419 |\n| Bonds payable | 55 |\n| Trade payables | 126 |\n| Bank overdraft | 27 |\n| Total liabilities | 627 |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 201 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 199 |\n| Cash flow from investing activities | (276) |\n| Cash flow from financing activities | 46 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Return on equity, the operating result taken as a percentage of total equity, exceeds 41.4%.",
+        "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.3%.",
+        "The equity ratio exceeds 47%.",
+        "Cash flow from operating activities amounts to less than 87% of the operating result, indicating profit is only partly backed by cash.",
+        "Inventory make up more than 27.6% of total assets."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Creditors come first; equity is the residual ownership claim. Dividends and share issues are financing events, not operating sales. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False.",
+        "ROCE relates operating result to capital employed: equity plus non-current liabilities.\n\n$$\n\\text{Capital employed} = 626 + 419 + 55,\\quad \\text{Capital employed} = 1{,}100\n$$\n\n$$\n\\frac{201}{1{,}100} \\approx 0.1827 \\approx 18.3\\%\n$$\n\nROCE = operating result ÷ (equity + non-current liabilities). 2011,100 = 18.3%. Check the extract’s labels once more against the stem’s threshold. Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect.\n\nSo the statement is False.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 626,\\quad \\text{Total assets} = 1{,}253\n$$\n\n$$\n\\frac{626}{1{,}253} \\approx 0.4996 \\approx 50.0\\%\n$$\n\n$$\n50.0\\% > 47\\%\n$$\n\nThe equity ratio is 50.0%, above the 47% benchmark. Equity ratio ≈ 626 ÷ 1,253 = 50.0%.\n\nSo the statement is True.",
+        "Assign the cash line to operating, investing, or financing before judging the claim. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
+        "From the extract, Inventory = 273 and total assets = 1,253.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{273}{1{,}253}\n$$\n\n$$\n\\text{Share} = 21.8\\%\n$$\n\nInventory / total assets ≈ 273 ÷ 1,253 = 21.8%. More than 27.6% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.DUALNPV",
+      "title": "Mutually exclusive upgrades — dual NPV, PI and payback from a chart",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "CascadeRail GmbH must choose **exactly one** of two mutually exclusive signalling upgrades. Both require an immediate cash outlay at time zero. Year-end operating cash inflows for each project appear in the chart (figures already in thousands of euros). The firm’s discount rate for NPV and profitability-index work is 12% per year. Projects cannot be scaled or combined.\n\n[[CHART type=\"grouped-bar\" title=\"CascadeRail upgrades — year-end cash inflows (EUR thousands)\"]]\nYear 1 | North=35 | South=55\nYear 2 | North=45 | South=60\nYear 3 | North=80 | South=55\nYear 4 | North=130 | South=50\n[[/CHART]]\n\n| Key figure | North | South |\n| --- | ---: | ---: |\n| Initial outlay at time zero | EUR 200,000 | EUR 150,000 |\n| Discount rate | 12% per year | 12% per year |\n\nTreat chart inflows as thousands of euros (so North Year 1 contributes EUR 35,000, and so on). Evaluate the following economic assertions:",
+      "statements": [
+        "Summed across four years, North’s undiscounted inflows exceed South’s undiscounted inflows.",
+        "At a 12% discount rate, North’s NPV is strictly larger than South’s NPV.",
+        "Undiscounted payback for South occurs strictly before the end of Year 3.",
+        "At a 12% discount rate, both projects have a strictly positive NPV.",
+        "The profitability index of North (present value of inflows divided by outlay) exceeds the profitability index of South."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nNorth inflows (thousands):\n\n$$\n35+45+80+130=290\n$$\n\nSouth inflows:\n\n$$\n55+60+55+50=220\n$$\n\nSince $290>220$, North’s undiscounted total is larger.\n\nSo the statement is True.",
+        "**B.** → False\n\nPresent values of inflows at 12% (working in thousands):\n\nNorth:\n\n$$\n\\dfrac{35}{1.12}+\\dfrac{45}{1.12^{2}}+\\dfrac{80}{1.12^{3}}+\\dfrac{130}{1.12^{4}}\\approx 206.68\n$$\n\n$$\n\\mathrm{NPV}_{N}\\approx 206.68-200=+6.68\n$$\n\nSouth:\n\n$$\n\\dfrac{55}{1.12}+\\dfrac{60}{1.12^{2}}+\\dfrac{55}{1.12^{3}}+\\dfrac{50}{1.12^{4}}\\approx 167.86\n$$\n\n$$\n\\mathrm{NPV}_{S}\\approx 167.86-150=+17.86\n$$\n\nSouth’s NPV is larger, so the claim fails.\n\nSo the statement is False.",
+        "**C.** → True\n\nSouth cumulative undiscounted inflows:\n\n$$\n55,\\quad 115,\\quad 170,\\quad 220\n$$\n\nAfter Year 2 one still needs EUR 35,000 of the EUR 150,000 outlay. Year 3 contributes EUR 55,000, so\n\n$$\n2+\\dfrac{35}{55}\\approx 2.64<3\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\nFrom letter B, $\\mathrm{NPV}_{N}\\approx +6.68>0$ and $\\mathrm{NPV}_{S}\\approx +17.86>0$.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\n\\mathrm{PI}_{N}\\approx\\dfrac{206.68}{200}\\approx 1.033,\\qquad \\mathrm{PI}_{S}\\approx\\dfrac{167.86}{150}\\approx 1.119\n$$\n\nNorth’s index is smaller, not larger.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) Below roughly 200 metres, sunlight fades until the ocean becomes a realm of near-total darkness, a zone marine biologists call the aphotic layer. Yet this seemingly lightless world is far from dark to its inhabitants: researchers estimate that as many as 76% of animals living below this depth are capable of producing their own light, a phenomenon known as bioluminescence. Unlike bioluminescent fireflies on land, which rely on a single well-studied chemical pathway, deep-sea organisms appear to have evolved the ability to glow independently on dozens of separate occasions throughout evolutionary history, making it one of the most repeatedly reinvented traits in the animal kingdom.\n\n(2) The chemistry underlying this glow generally involves a light-emitting molecule called luciferin reacting with oxygen in the presence of an enzyme, luciferase, though the precise molecular details vary considerably between unrelated species. Some organisms produce light continuously, creating a faint, steady glow, while others can trigger sudden, controlled flashes lasting only a fraction of a second, deploying their light with a precision that suggests deliberate behavioural control rather than passive, uncontrollable emission.\n\n(3) Perhaps the best-known deep-sea example is the anglerfish, whose females dangle a glowing lure directly in front of their mouths to attract curious prey close enough to strike. Far stranger, however, is the anglerfish's reproductive strategy: in several species, a much smaller male permanently fuses to the body of a female, their tissues and circulatory systems eventually merging so completely that the male becomes little more than a permanently attached sperm-producing appendage, entirely dependent on the female's bloodstream for survival.\n\n(4) Bioluminescence serves purposes well beyond luring prey. Many species use it defensively: certain squid release clouds of glowing mucus or ink to startle and disorient predators, buying precious seconds to escape, while some small crustaceans eject bioluminescent particles that stick directly to an attacking predator, effectively marking that predator as a conspicuous target for larger, secondary predators lurking nearby, a strategy researchers have nicknamed the \"burglar alarm\" effect.\n\n(5) Counterintuitively, light can also serve as camouflage. A technique called counter-illumination allows certain fish and squid to produce a faint glow along their undersides precisely matching the dim light filtering down from the surface above, effectively erasing the shadow their bodies would otherwise cast when viewed from below by predators searching upward for silhouettes against the brighter water above.\n\n(6) A 2020 survey using remotely operated vehicles recorded bioluminescent responses across more than 350 distinct species encountered between the surface and roughly 4,000 metres depth, finding that the proportion of glowing species remained remarkably consistent across most of that entire depth range rather than declining steadily as researchers had initially expected with increasing depth and pressure.\n\n(7) Despite decades of study, several deep-sea bioluminescent structures remain only partially understood. Researchers studying certain species of ostracods, tiny crustaceans sometimes called \"sea fireflies,\" have documented complex, species-specific flash patterns used during courtship displays, yet the full neurological mechanism controlling the precise timing of these flashes has proven difficult to study directly given the extreme pressures and complete darkness of their natural habitat.\n\n(8) Interest in bioluminescent chemistry has extended well beyond marine biology itself. The luciferinluciferase reaction has been adapted into a widely used laboratory tool, allowing researchers studying gene expression to attach a bioluminescent marker to a target protein, causing cells expressing that gene to visibly glow under laboratory conditions, a technique that has become genuinely indispensable across modern molecular biology and medical research.\n\n(9) Whether the full diversity of deep-sea bioluminescent mechanisms will ever be comprehensively catalogued, given the sheer difficulty of studying organisms living at extreme depth and pressure, or whether entirely novel light-producing systems remain to be discovered in the ocean's least explored regions, remains a question actively pursued by marine biologists worldwide.",
+    "passageTitle": "Living Light — Bioluminescence in the Deep Ocean",
+    "tasks": [
+      {
+        "case_id": "ENG T.13.01",
+        "id": "en-t-13-01",
+        "title": "Task 1",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Below roughly 200 metres, sunlight has largely faded.",
+          "Around 76% of deep-dwelling animals can self-illuminate.",
+          "Bioluminescence evolved through a single shared pathway only.",
+          "Some organisms glow continuously rather than in flashes.",
+          "Firefly bioluminescence relies on one well-studied chemical pathway."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Below roughly 200 metres, sunlight has largely faded.**\n\nParagraph 1 opens with the same depth threshold: below roughly 200 metres, sunlight fades until the ocean becomes a realm of near-total darkness. \"Has largely faded\" is a fair paraphrase of that fade into the aphotic layer, not a stronger claim than the text allows. The statement does not invent a brighter residual light field or a different depth cut-off; it simply restates the passage's opening fade. Matching the aphotic-layer setup keeps the wording within what the text actually says.\n\n**Tip:** When a statement recycles the passage's own depth figure, check the surrounding clause instead of inventing a new threshold.\n\nParagraph 1 names the 200-metre fade directly, so the claim matches the text.",
+          "**B) Around 76% of deep-dwelling animals can self-illuminate.**\n\nThe same paragraph estimates that as many as 76% of animals living below this depth can produce their own light. \"Around 76%\" and \"self-illuminate\" track that figure and the bioluminescence definition without changing the percentage. Softening \"as many as\" into \"around\" does not invent a new census or shrink the glowing share. The capability named is still producing their own light, which is exactly how the passage defines the trait.\n\n**Tip:** Quantity items are true when the number is unchanged and the wording only softens \"as many as\" into \"around.\"\n\nThe 76% self-light estimate in paragraph 1 supports the statement.",
+          "**C) Bioluminescence evolved through a single shared pathway only.**\n\nParagraph 1 contrasts land fireflies' single well-studied pathway with deep-sea organisms that evolved the glow independently on dozens of separate occasions. \"A single shared pathway only\" erases that repeated reinvention and flattens the trait into one origin story. The word \"only\" is the distortion: the text allows a single pathway for fireflies on land, not for the deep-sea fauna as a whole. Once the land-versus-deep contrast is kept in view, the statement's universal \"single pathway\" claim collapses.\n\n**Trap:** The firefly contrast can lure you into applying \"one pathway\" to the deep sea; the passage reserves that description for fireflies on land.\n\nThe claim fails because the text says the deep-sea glow arose \"on dozens of separate occasions,\" not once.",
+          "**D) Some organisms glow continuously rather than in flashes.**\n\nParagraph 2 states that some organisms produce light continuously, creating a faint, steady glow, while others trigger sudden flashes. The statement picks the continuous side of that explicit contrast and does not deny that flashing also occurs. \"Rather than in flashes\" here simply names the continuous option in the passage's either/or, not a claim that flashes never exist. The faint, steady glow wording is the exact continuous mode the statement paraphrases.\n\nParagraph 2's continuous-glow option matches the claim.",
+          "**E) Firefly bioluminescence relies on one well-studied chemical pathway.**\n\nParagraph 1 says bioluminescent fireflies on land rely on a single well-studied chemical pathway. That is exactly the land-side contrast used before discussing deep-sea reinvention. The statement stays inside the firefly clause and does not smuggle that \"single pathway\" label onto deep-sea lineages. Keeping the land limit intact makes the paraphrase a clean match rather than an overgeneralisation.\n\nThe firefly pathway line in paragraph 1 matches the statement."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.13.02",
+        "id": "en-t-13-02",
+        "title": "Task 2",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Luciferin reacts with oxygen using luciferase.",
+          "Anglerfish males permanently fuse to females' bodies.",
+          "Fused males remain fully independent of the female.",
+          "Squid release glowing mucus purely to attract prey.",
+          "The 2020 survey recorded over 350 distinct species."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Luciferin reacts with oxygen using luciferase.**\n\nParagraph 2 explains that luciferin reacts with oxygen in the presence of the enzyme luciferase. \"Using luciferase\" is ordinary shorthand for that enzyme-mediated reaction, not a new chemical story. The statement keeps the same three players—luciferin, oxygen, and luciferase—without inventing a different catalyst. Precision about \"in the presence of\" versus \"using\" does not change the underlying chemistry the text describes.\n\nThe luciferin–oxygen–luciferase description in paragraph 2 matches the claim.",
+          "**B) Anglerfish males permanently fuse to females' bodies.**\n\nParagraph 3 describes several species in which a much smaller male permanently fuses to the female's body, with tissues and circulatory systems merging. \"Permanently fuse\" repeats that reproductive attachment rather than a temporary pairing. The merger of tissues and circulation is the passage's proof that the bond is lasting, not a brief courtship clasp. Staying with that permanent-fusion wording keeps the claim inside what the text says about several species.\n\nParagraph 3's permanent-fusion account supports the statement.",
+          "**C) Fused males remain fully independent of the female.**\n\nAfter fusion, the male becomes little more than an attached sperm-producing appendage, entirely dependent on the female's bloodstream. \"Fully independent\" reverses that dependence into its opposite. Independence would require a free-living male with his own survival system; the text says he survives only through her blood. That one-way dependence is the decisive overturning fact, not a detail you can soft-pedal past.\n\n**Trap:** Fusion language can sound like a partnership of equals; the passage ends on one-way dependence.\n\nThe claim fails because the male is \"entirely dependent on the female's bloodstream for survival.\"",
+          "**D) Squid release glowing mucus purely to attract prey.**\n\nParagraph 4 says certain squid release clouds of glowing mucus or ink to startle and disorient predators, buying time to escape. Attraction of prey belongs to the anglerfish lure earlier; here the mucus is defensive, not a hunting bait, and \"purely to attract prey\" invents the wrong purpose. The startle-and-escape sequence is the stated job of the glowing cloud, so swapping in prey attraction misassigns the function. Mixing the anglerfish lure from paragraph 3 into paragraph 4's defence scene is the classic cross-section slip.\n\nThe claim fails: glowing mucus is deployed \"to startle and disorient predators,\" not to lure prey.",
+          "**E) The 2020 survey recorded over 350 distinct species.**\n\nParagraph 6 reports that a 2020 ROV survey recorded bioluminescent responses across more than 350 distinct species. \"Over 350\" faithfully restates \"more than 350\" without inflating the count. The statement does not invent a larger total or claim every deep-sea animal was sampled—only that the survey crossed that species threshold. Keeping the year and the \"more than 350\" floor aligned makes this a clean quantity match.\n\nThe 2020 survey total in paragraph 6 matches the statement."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.13.03",
+        "id": "en-t-13-03",
+        "title": "Task 3",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Counter-illumination erases a fish's downward-facing shadow.",
+          "Glowing species proportions declined sharply with depth.",
+          "Ostracods display species-specific courtship flash patterns.",
+          "The luciferin-luciferase reaction has no laboratory applications.",
+          "The 2020 survey extended to roughly 4,000 metres."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Counter-illumination erases a fish's downward-facing shadow.**\n\nParagraph 5 defines counter-illumination as a faint underside glow matching dim downwelling light, effectively erasing the shadow a body would cast when viewed from below. That is precisely the downward-silhouette problem the technique solves. The glow is tuned to the light filtering from above so predators looking upward lose the dark outline. \"Downward-facing shadow\" is just another way of naming that underside silhouette against brighter water.\n\nParagraph 5's \"erasing the shadow\" wording matches the claim.",
+          "**B) Glowing species proportions declined sharply with depth.**\n\nThe 2020 survey found that the proportion of glowing species remained remarkably consistent across most of the depth range rather than declining steadily as researchers first expected. \"Declined sharply\" invents the trend the passage explicitly rejects. The expected decline is mentioned only as the outdated hypothesis the data failed to confirm. Consistency across depth is the result; \"declined sharply\" is the opposite story.\n\n**Trap:** Expectation of decline is mentioned only as the outdated hypothesis, not as the result.\n\nThe claim fails because the proportion \"remained remarkably consistent … rather than declining steadily.\"",
+          "**C) Ostracods display species-specific courtship flash patterns.**\n\nParagraph 7 notes that researchers studying ostracods have documented complex, species-specific flash patterns used during courtship displays. The statement compresses that finding without adding a new claim about the unknown neurological mechanism. It stays with what was documented—the flash patterns in courtship—and does not pretend the timing circuitry is fully mapped. That restraint keeps the paraphrase faithful to the \"documented … courtship displays\" line.\n\nThe ostracod courtship line in paragraph 7 supports the statement.",
+          "**D) The luciferin-luciferase reaction has no laboratory applications.**\n\nParagraph 8 says the reaction has been adapted into a widely used laboratory tool for gene-expression markers and calls the technique genuinely indispensable in molecular biology and medical research. \"No laboratory applications\" flatly denies that lab career. A tool that tags proteins so cells glow under lab conditions is by definition a laboratory application. Absolute \"no\" wording cannot survive next to \"widely used\" and \"indispensable.\"\n\nThe claim fails: the passage calls the tool \"genuinely indispensable across modern molecular biology and medical research.\"",
+          "**E) The 2020 survey extended to roughly 4,000 metres.**\n\nParagraph 6 places the encounters between the surface and roughly 4,000 metres depth. The statement simply restates that depth ceiling. It does not invent a deeper limit or claim the survey ignored shallow water; the range still runs from the surface down to that figure. Restating \"roughly 4,000 metres\" keeps the depth bound inside the survey sentence.\n\nThe survey's depth range in paragraph 6 matches the claim."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.13.04",
+        "id": "en-t-13-04",
+        "title": "Task 4",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Independent evolution implies bioluminescence offers strong survival value.",
+          "If 76% of deep species glow, most remain fully dark.",
+          "The \"burglar alarm\" effect implies marked predators become targets.",
+          "Counter-illumination implies matching light helps avoid detection.",
+          "Fused anglerfish males imply females gain no reproductive benefit."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Independent evolution implies bioluminescence offers strong survival value.**\n\nParagraph 1 stresses that deep-sea organisms reinvented glow on dozens of separate occasions, calling it one of the most repeatedly reinvented traits in the animal kingdom. Traits that keep evolving independently under aphotic conditions are the textbook footprint of strong adaptive payoff, not a one-off fluke. The inference does not invent a new experiment; it reads the repeated reinvention as evidence of usefulness. In a lightless habitat, that pattern points to survival advantage rather than accidental ornament.\n\n**Tip:** \"Repeatedly reinvented\" is the cue that the inference is about advantage, not about one shared gene.\n\nIndependent reinvention across lineages supports reading bioluminescence as strongly useful for survival.",
+          "**B) If 76% of deep species glow, most remain fully dark.**\n\n\"As many as 76%\" glowing already identifies a clear majority of bioluminescent animals. Inferring that most remain fully dark flips the arithmetic: the non-glowing remainder is the minority. Roughly one quarter without self-light cannot be \"most,\" so the inference reverses the majority share the passage states. Once 76% is treated as the glowing majority, \"most remain fully dark\" cannot stand.\n\n**Trap:** 76% can be misread as a minority if you fixate on the incomplete quarter instead of the percentage itself.\n\nThe inference fails because a 76% glowing share means most do not remain fully dark.",
+          "**C) The \"burglar alarm\" effect implies marked predators become targets.**\n\nParagraph 4 describes crustaceans ejecting particles that stick to an attacker and mark it as a conspicuous target for larger secondary predators—the \"burglar alarm\" effect. The nickname itself encodes the marked-predator → next-predator chain. The particles do not merely startle; they make the attacker visible to something bigger nearby. That secondary-target logic is exactly what the inference draws from the nickname and the \"conspicuous target\" wording.\n\nThe burglar-alarm description in paragraph 4 supports that marked predators become targets.",
+          "**D) Counter-illumination implies matching light helps avoid detection.**\n\nBy matching downwelling light and erasing the body's shadow against the brighter water above, counter-illumination stops predators from spotting silhouettes from below. Matching light is therefore a concealment tool, not a display. The predators searching upward for silhouettes are the detection threat the glow is designed to defeat. Avoiding that silhouette read is the same as helping the animal go unnoticed from below.\n\nParagraph 5's silhouette-erasing logic supports the avoidance inference.",
+          "**E) Fused anglerfish males imply females gain no reproductive benefit.**\n\nThe fusion turns the male into a permanently attached sperm-producing appendage on the female. That arrangement secures continuous access to sperm for the female; saying she gains \"no reproductive benefit\" contradicts the whole point of the strategy. The male's loss of independence is the cost he pays, not proof that she gains nothing. A living sperm source fused to her body is itself the reproductive payoff the passage describes.\n\n**Trap:** \"Appendage\" and \"dependent\" describe the male's loss of independence, not a reproductive null for the female.\n\nThe inference fails because permanent attachment supplies ongoing fertilisation, a clear benefit to the female."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.13.05",
+        "id": "en-t-13-05",
+        "title": "Task 5",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Independent evolution helps explain why chemical mechanisms vary between species.",
+          "The 350-species survey supports the point about consistent depth-wide glowing.",
+          "Defensive glowing and lure-based glowing serve identical evolutionary purposes.",
+          "Counter-illumination and lure-based hunting both directly cause visible light.",
+          "Laboratory use of luciferin shows deep-sea study benefits other fields."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Independent evolution helps explain why chemical mechanisms vary between species.**\n\nParagraph 1's dozens of independent origins sit next to paragraph 2's note that molecular details vary considerably between unrelated species. Separate evolutionary inventions naturally leave different luciferin–luciferase chemistries rather than one frozen pathway. If lineages reinvented the glow many times, there is no reason their molecular kits would be identical. That bridge from multiple origins to varying details is the synthesis the two paragraphs invite.\n\nLinking independent origins to chemical variety is a fair cross-section synthesis of paragraphs 1 and 2.",
+          "**B) The 350-species survey supports the point about consistent depth-wide glowing.**\n\nParagraph 6's survey of more than 350 species is the evidence base for the finding that glowing-species proportions stayed remarkably consistent across depth. The headcount and the consistency claim are one result, not two unrelated facts. You cannot detach the \"more than 350\" tally from the depth-consistency conclusion that follows in the same survey sentence. Treating the species total as support for the consistency point is therefore a legitimate synthesis of that paragraph.\n\nThe 350-species survey in paragraph 6 directly backs the depth-consistent glowing claim.",
+          "**C) Defensive glowing and lure-based glowing serve identical evolutionary purposes.**\n\nAnglerfish dangle a glowing lure to attract prey (paragraph 3), while paragraph 4 opens by saying bioluminescence serves purposes well beyond luring prey and then details defensive mucus and burglar-alarm marking. Attracting food and deterring or tagging predators are different jobs. \"Identical\" collapses those jobs into one, against the passage's \"well beyond luring prey\" pivot into defence. Shared light emission does not equal shared evolutionary purpose.\n\n**Trap:** Both uses emit light, so it is easy to collapse them into one \"purpose\"; the passage separates lure from defence.\n\nThe synthesis fails: defence and prey-luring are explicitly different functions.",
+          "**D) Counter-illumination and lure-based hunting both directly cause visible light.**\n\nThe anglerfish lure is a glowing bait, and counter-illumination produces a faint underside glow. Whatever their ends, both mechanisms emit visible light the animal can control or sustain. One use draws prey; the other hides a silhouette—but both still put light into the water. The shared \"cause visible light\" claim is therefore a fair synthesis of paragraphs 3 and 5 without forcing their purposes to match.\n\nBoth strategies in paragraphs 3 and 5 produce visible light, so the shared-emission claim holds.",
+          "**E) Laboratory use of luciferin shows deep-sea study benefits other fields.**\n\nParagraph 8 moves from marine glow chemistry to a lab gene-expression marker that has become indispensable in molecular biology and medical research. That is the passage's own bridge from deep-sea chemistry to other sciences. Attaching a bioluminescent marker so cells glow under lab conditions is the concrete cross-field payoff. The synthesis does not invent a new application; it follows the paragraph's move from ocean chemistry into molecular biology and medicine.\n\nParagraph 8's laboratory adaptation shows deep-sea bioluminescence feeding other fields."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.13.08",
+        "id": "en-t-13-08",
+        "title": "Task 8",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 1, \"aphotic\" means receiving abundant sunlight.",
+          "In Paragraph 3, \"dangle\" means to hang loosely, swinging.",
+          "In Paragraph 4, \"conspicuous\" means easily noticed or visible.",
+          "In Paragraph 5, \"counterintuitively\" means matching common expectations exactly.",
+          "In Paragraph 8, \"indispensable\" means unnecessary and easily removed."
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 1, \"aphotic\" means receiving abundant sunlight.**\n\nParagraph 1 introduces the aphotic layer as the zone of near-total darkness after sunlight fades below roughly 200 metres. Aphotic labels the lightless realm, so \"abundant sunlight\" is the antonym of the context. The word sits in apposition to near-total darkness, which locks the sense to absence of light. Reading abundant sunlight into aphotic simply reverses the definition the paragraph supplies.\n\nThe claim fails: aphotic sits next to \"near-total darkness,\" not abundant light.",
+          "**B) In Paragraph 3, \"dangle\" means to hang loosely, swinging.**\n\nFemale anglerfish dangle a glowing lure directly in front of their mouths. In that hunting scene, dangle is the familiar \"hang loosely / suspend\" sense, not a figurative stretch. The lure hangs in front of the mouth as bait, which is ordinary physical dangling. No specialised marine jargon is needed; the everyday hanging meaning fits the sentence.\n\nThe lure sentence in paragraph 3 matches that hanging meaning.",
+          "**C) In Paragraph 4, \"conspicuous\" means easily noticed or visible.**\n\nParticles stick to a predator and mark it as a conspicuous target for larger secondary predators. A target that must be easy for other hunters to spot is by definition easily noticed. The burglar-alarm strategy only works if the marked attacker stands out, which is what conspicuous encodes. Easily noticed or visible is therefore the context-true gloss, not a stretch.\n\nParagraph 4's \"conspicuous target\" use matches \"easily noticed or visible.\"",
+          "**D) In Paragraph 5, \"counterintuitively\" means matching common expectations exactly.**\n\nThe sentence begins \"Counterintuitively, light can also serve as camouflage\"—light as hiding aid runs against the everyday expectation that light reveals. Matching expectations exactly would need intuitively, not counter-. The counter- prefix is the clue that the claim goes against common sense, not with it. Camouflage-by-light is the surprise the adverb flags.\n\nThe claim fails: counterintuitively signals against expectation, not agreement with it.",
+          "**E) In Paragraph 8, \"indispensable\" means unnecessary and easily removed.**\n\nThe lab technique is called genuinely indispensable across molecular biology and medical research. Indispensable means essential; \"unnecessary and easily removed\" flips that into the opposite. Genuinely before indispensable intensifies how hard the tool is to do without, not how optional it is. The offered gloss is therefore the antonym of the paragraph's wording.\n\nThe claim fails: indispensable in paragraph 8 means the tool cannot be done without."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.13.09",
+        "id": "en-t-13-09",
+        "title": "Task 9",
+        "subsection": "t.13",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "In Paragraph 2, \"deploying\" means releasing or putting into use.",
+          "In Paragraph 6, \"remarkably\" means unremarkably or without any surprise.",
+          "In Paragraph 7, \"documented\" means recorded through careful observation.",
+          "In Paragraph 3, \"fuses\" means separates completely and permanently.",
+          "In Paragraph 9, \"comprehensively\" means only partially or incompletely."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) In Paragraph 2, \"deploying\" means releasing or putting into use.**\n\nOrganisms trigger flashes, \"deploying their light with a precision that suggests deliberate behavioural control.\" Deploying here is active use of the light tool, not merely possessing it. Precision and deliberate control only make sense if the animal is putting the glow into action on cue. Releasing or putting into use is therefore the context-true reading of that verb.\n\nParagraph 2's controlled-flash wording matches \"releasing or putting into use.\"",
+          "**B) In Paragraph 6, \"remarkably\" means unremarkably or without any surprise.**\n\nThe survey found proportions that \"remained remarkably consistent,\" contrary to an initial expectation of decline. Remarkably heightens how notable that consistency is; \"unremarkably\" cancels the adverb. The contrast with what researchers first expected is why the consistency earns remarkably. Defining it as without surprise reverses both the adverb and the survey's surprise framing.\n\nThe claim fails: remarkably marks surprise or note-worthiness, not the absence of surprise.",
+          "**C) In Paragraph 7, \"documented\" means recorded through careful observation.**\n\nResearchers \"have documented complex, species-specific flash patterns\" in ostracods. Documented is the researcher's record of observed courtship flashes, not a casual rumour. The scientific setting—studying ostracods and their courtship displays—supports a careful observational sense. Recorded through careful observation is therefore the right gloss for that verb in context.\n\nThe ostracod line in paragraph 7 matches careful observational recording.",
+          "**D) In Paragraph 3, \"fuses\" means separates completely and permanently.**\n\nThe male permanently fuses to the female so tissues and circulatory systems merge. Fuse means join into one; \"separates completely\" is the antonym of that merger. Merging tissues and blood systems is joining, not splitting apart. The offered definition therefore reverses the reproductive attachment the paragraph describes.\n\nThe claim fails: fuses describes joining, not permanent separation.",
+          "**E) In Paragraph 9, \"comprehensively\" means only partially or incompletely.**\n\nParagraph 9 asks whether the full diversity of mechanisms will ever be comprehensively catalogued—i.e., covered thoroughly. Partially / incompletely would undercut \"comprehensive,\" not define it. Full diversity paired with comprehensively points to a complete catalogue, not a partial one. The gloss \"only partially\" is therefore the opposite of the adverb's meaning in that closing question.\n\nThe claim fails: comprehensively means fully and thoroughly, not only in part."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.13.06",
+        "id": "en-t-13-06",
+        "title": "Task 6",
+        "subsection": "t.13",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had the survey not included deeper zones, fewer species would have been recorded.\"",
+          "\"Researchers recommended that the team documents each flash pattern.\"",
+          "\"The number of catalogued species continue to rise yearly.\"",
+          "\"Neither the pressure nor the darkness were easily overcome.\"",
+          "\"Having observed the pattern, scientists proposed a new hypothesis.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"Had the survey not included deeper zones, fewer species would have been recorded.\"**\n\nThis is inverted third conditional: Had + past participle stands in for If the survey had not …, and the result uses would have been recorded. The negative condition and past counterfactual result stay aligned. Fronting Had the survey not … is simply the inverted form of If the survey had not …, not a tense error. The would have been recorded result clause is the standard past-counterfactual payoff for that structure.\n\n**Tip:** Had + past participle at the front is a standard exam signal for inverted third conditionals.\n\nThe inversion and would-have result are sound, so the sentence is grammatically fine.",
+          "**B) \"Researchers recommended that the team documents each flash pattern.\"**\n\nAfter recommended that, formal English wants the subjunctive base form: document, not documents. The -s turns the clause into ordinary present and breaks the mandative pattern. Recommend that + subject + base verb is the rule; documents looks correct only if you forget the mandative trigger. Spotting recommended that is the cue to strip the -s from the next verb.\n\n**Trap:** documents looks like ordinary third-person agreement after the team, which is exactly why the error hides.\n\nThe sentence fails; repair to \"… that the team document each flash pattern.\"",
+          "**C) \"The number of catalogued species continue to rise yearly.\"**\n\nThe grammatical subject is the number, which is singular, so the verb must be continues. Continue matches the plural species distractor instead of the head noun. Of catalogued species is only a prepositional phrase modifying number; it never becomes the subject. Agreement tracks the head the number, so singular continues is required.\n\n**Trap:** of catalogued species sits next to the verb and tempts plural agreement; ignore the of-phrase.\n\nThe sentence fails; repair to \"The number of catalogued species continues to rise yearly.\"",
+          "**D) \"Neither the pressure nor the darkness were easily overcome.\"**\n\nWith neither … nor, the verb agrees with the nearer subject. Darkness is singular, so the line needs was, not were. The extract's corrected key treats this as false for that proximity rule. Pressure and darkness are both singular nouns; proximity still picks darkness, so were is wrong either way you count. Exam English follows the nearer noun after nor, not a \"two things = plural\" instinct.\n\n**Trap:** Neither … nor often feels \"plural\" because two things are named; exams still follow the nearer noun.\n\nThe sentence fails; repair to \"Neither the pressure nor the darkness was easily overcome.\"",
+          "**E) \"Having observed the pattern, scientists proposed a new hypothesis.\"**\n\nThe participle Having observed correctly attaches to scientists, the people who did the observing and then proposed the hypothesis. There is no dangling modifier onto an inanimate subject. The observers and the proposers are the same plural noun, so the opener and the main clause share one logical subject. That clean attachment is what makes the participial sentence grammatical.\n\nThe participial opener matches its subject, so the sentence is grammatically fine."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.13.07",
+        "id": "en-t-13-07",
+        "title": "Task 7",
+        "subsection": "t.13",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had the vehicle descended than lights began flashing.\"",
+          "\"The technique, along with related methods, were adopted widely.\"",
+          "\"Each of the recorded species have shown distinct flash timing.\"",
+          "\"By the time results arrive, models will have already changed.\"",
+          "\"The samples, which were gathered over months, reveal consistent patterns.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had the vehicle descended than lights began flashing.\"**\n\nNo sooner … than is a fixed inversion pattern: had + subject + past participle in the first clause, than introducing the second event. The timeline (descent, then flashing) is clean. Using when or that instead of than would break the idiom; here than is correctly in place. The inverted had the vehicle descended is the expected companion to No sooner at the front.\n\nThe no-sooner inversion is correctly formed, so the sentence is fine.",
+          "**B) \"The technique, along with related methods, were adopted widely.\"**\n\nThe head subject is the technique (singular). The along with related methods phrase is parenthetical and does not make the subject plural, so were should be was. Commas set the along with material aside; they do not create a compound subject the way and would. Agreement therefore stays with the technique, requiring singular was.\n\n**Trap:** related methods after the comma looks like a plural subject, but along with never joins subjects the way and does.\n\nThe sentence fails; repair to \"The technique, along with related methods, was adopted widely.\"",
+          "**C) \"Each of the recorded species have shown distinct flash timing.\"**\n\nEach of takes a singular verb: has shown, not have shown. Species is the object of of, not the agreement controller. Each forces singular even when the of-phrase names many items. Replacing have with has restores the rule without changing the meaning of the sentence.\n\n**Trap:** species looks plural and sits beside the verb; each still forces singular.\n\nThe sentence fails; repair to \"Each of the recorded species has shown distinct flash timing.\"",
+          "**D) \"By the time results arrive, models will have already changed.\"**\n\nBy the time + present (arrive) pairs naturally with future perfect (will have already changed) for completion before a future reference point. The aspect fits a finished change ahead of the results' arrival. Present arrive marks the future landmark; will have already changed places the models' shift before that landmark. That by-the-time + future-perfect pairing is the standard tense frame for this meaning.\n\nFuture perfect after by the time is the right frame, so the sentence is fine.",
+          "**E) \"The samples, which were gathered over months, reveal consistent patterns.\"**\n\nSamples is plural, so were in the relative clause and reveal in the main clause agree. The non-restrictive which-clause does not disturb the plural head. Both verbs stay plural because they still answer to samples, not to months. Matching were and reveal to the same plural subject keeps the grammar consistent end to end.\n\nPlural agreement holds throughout, so the sentence is fine."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.13.10",
+        "id": "en-t-13-10",
+        "title": "Task 10",
+        "subsection": "t.13",
+        "context": "Consider this sentence from the passage: \"Counterintuitively, light can also serve as camouflage.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "Surprisingly, producing light can actually help an animal hide.",
+          "As expected, light always makes an animal easier to spot.",
+          "Unexpectedly, glowing can serve a concealment function instead.",
+          "Predictably, light exclusively reveals an animal's exact location.",
+          "Against expectation, emitting light can help conceal an animal."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Surprisingly, producing light can actually help an animal hide.**\n\nThe original says counterintuitively light can serve as camouflage. Surprisingly ≈ counterintuitively, and help an animal hide ≈ serve as camouflage, so both the surprise and the concealment keep pace. The paraphrase swaps wording but keeps the same unexpected function of light. Nothing in the line restores the everyday \"light reveals\" idea the original overturns.\n\nThe paraphrase preserves the unexpected hiding function of light.",
+          "**B) As expected, light always makes an animal easier to spot.**\n\nAs expected reverses counterintuitively, and easier to spot erases camouflage. The line restores the default \"light reveals\" intuition the original overturns. Always and easier to spot leave no room for the camouflage concession paragraph 5 introduces. Changing both the stance adverb and the function means this is an opposite claim, not a restatement.\n\n**Trap:** Easier to spot feels like common sense about light, which is exactly what the original calls counterintuitive.\n\nThe paraphrase flips both the stance and the function, so it does not match.",
+          "**C) Unexpectedly, glowing can serve a concealment function instead.**\n\nUnexpectedly tracks counterintuitively, and concealment function instead restates camouflage as an alternate use of glow. Wording changes, meaning holds. Instead signals the same surprise that light can hide rather than only reveal. The paraphrase therefore stays loyal to the original's unexpected concealment core.\n\nThe paraphrase keeps the surprise-plus-concealment core of the original.",
+          "**D) Predictably, light exclusively reveals an animal's exact location.**\n\nPredictably and exclusively reveals invert the original on two axes: stance (surprise → predictability) and function (camouflage → pure revelation). Nothing of the camouflage concession survives. Exclusively blocks any hiding use, which is the opposite of light serving as camouflage. As a paraphrase check, both hinges fail, so the line cannot stand in for the original.\n\nThe paraphrase reverses the original, so it fails as a restatement.",
+          "**E) Against expectation, emitting light can help conceal an animal.**\n\nAgainst expectation restates counterintuitively; emitting light … help conceal maps onto light as camouflage. Both hinge ideas remain. The stance adverb and the concealment function travel together, just as in the source sentence. That double match is what makes the line a true paraphrase rather than a near-miss.\n\nThe paraphrase matches the original's unexpected concealment claim."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.13.19",
+        "id": "en-g-13-19",
+        "title": "Task 19",
+        "subsection": "g.13",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "Good bread rests less on exotic flour than kneading the dough with patience.",
+          "Not only did attendance rise after Easter, but energy levels also improved.",
+          "Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.",
+          "The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.",
+          "A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet."
+        ],
+        "answer_key": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Good bread rests less on exotic flour than kneading the dough with patience.**\n\nLess…than joins on exotic flour to kneading the dough without repeating on. Comparative frames that open with a preposition need that same preposition after than. Write than on kneading so both sides share one scaffold.\n\n**Trap:** Kneading with patience is the intended contrast, so a dropped on after than is a classic high-band trap.\n\nLess…than that opens with on needs on again, so kneading alone is **false** — \"…less on exotic flour than on kneading the dough with patience.\"\n",
+          "**B) Not only did attendance rise after Easter, but energy levels also improved.**\n\nInverted not only… is balanced by but…also with a parallel past-tense predicate (energy levels also improved). Both sides stay finite and matching after the correlative. That mirrored finite structure is what the inversion pattern requires.\n\nInverted not only…but also balances two finite improvements, so the wording is **true**.\n",
+          "**C) Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.**\n\nTwo relative modifiers open with that is, but useful without jargon stands alone. Finish the relative chain with that is useful…, or drop that is before every adjective. Partial repetition of that is breaks the trail-note description.\n\n**Trap:** Useful without jargon looks ready-made as a third quality, so missing that is is easy to overlook.\n\nThat is repeated twice leaves useful bare, so this is **false** — \"…that is realistic, that is waterproof, and that is useful without jargon.\"\n",
+          "**D) The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.**\n\nRehearsing (a gerund) is paired with to rehearse (an infinitive) after prefers. Prefer needs matching gerunds or matching infinitives for both rehearsal days. Pick one form and keep it for Mondays and Thursdays alike.\n\n**Trap:** Online rehearsal on Thursdays is a real alternative, so mixed -ing / to forms after prefers is a near-miss.\n\nPrefer needs one shared form for both rehearsal days, so the mixed pair is **false** — \"…rehearsing in person… and rehearsing online…\" or \"to rehearse… and to rehearse….\"\n",
+          "**E) A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet.**\n\nMust specify introduces three matching wh-clauses: who books…, what bags…, and when the group will meet. Parallel wh-clauses are ideal when an itinerary must answer ownership, contents, and timing together. Every branch keeps a full wh + finite-clause shape.\n\nWho / what / when clauses under must specify stay parallel, so the itinerary frame is **true**.\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.MOCK.FOURSET",
+      "id": "MATH 1.MOCK.FOURSET",
+      "title": "Four certification modules — deep inclusion–exclusion",
+      "chapter": 1,
+      "subsection": "1.2",
+      "context": "A certification academy tracks four modules: Risk, Audit, Tax, and Ethics. Of $400$ candidates, $210$ finished Risk, $180$ finished Audit, $160$ finished Tax, and $140$ finished Ethics. Pairwise overlaps are $95$ for Risk–Audit, $88$ for Risk–Tax, $80$ for Risk–Ethics, $76$ for Audit–Tax, $70$ for Audit–Ethics, and $65$ for Tax–Ethics. Exactly $42$ finished all of Risk, Audit, and Tax; $38$ finished all of Risk, Audit, and Ethics; $35$ finished all of Risk, Tax, and Ethics; $33$ finished all of Audit, Tax, and Ethics; and $22$ finished all four. Every candidate is counted in the academy total, including those who finished none.",
+      "statements": [
+        "Exactly $58$ candidates finished none of the four modules.",
+        "The candidates who finished all four outnumber those who finished Risk and nothing else.",
+        "Strictly more than $340$ candidates finished at least one module.",
+        "Finishing Ethics without finishing Risk is impossible under these counts.",
+        "The staff who finished Risk or Audit (or both) number strictly more than $290$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFour-set inclusion–exclusion:\n\n$$\n|R\\cup A\\cup T\\cup E|=690-474+148-22=342\n$$\n\n$$\n400-342=58\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nOnly Risk equals $210-95-88-80+42+38+35-22=40$. All four equals $22$. Since $22\\ngtr 40$, the claim fails.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe union is $342>340$.\n\nSo the statement is True.",
+        "**D.** → False\n\nOnly Ethics equals $140-80-70-65+38+35+33-22=9>0$, so Ethics without Risk occurs.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\n|R\\cup A|=210+180-95=295>290\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Union $342$, none $58$. Only Risk $40>$ all-four $22$. Ethics-only $9$. $|R\\cup A|=295$."
+    },
+    {
+      "case_id": "MATH 2.MOCK.FOURSYM",
+      "id": "MATH 2.MOCK.FOURSYM",
+      "title": "Four-number archive — full symmetric data",
+      "chapter": 2,
+      "subsection": "2.5",
+      "context": "An algebra archive stores four real numbers $a,b,c,d$ only through\n\n$$\na+b+c+d=10,\\qquad \\sum_{i<j}a_ia_j=35,\\qquad \\sum_{i<j<k}a_ia_ja_k=50,\\qquad abcd=24,\n$$\n\nwhere the middle two sums run over the indicated distinct index tuples among $\\{a,b,c,d\\}$. The original order was not recorded. No decimal approximation is used.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$a^{2}+b^{2}+c^{2}+d^{2}=30$.",
+        "$a^{3}+b^{3}+c^{3}+d^{3}=100$.",
+        "$\\{a,b,c,d\\}=\\{1,2,3,4\\}$.",
+        "$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{12}{25}$.",
+        "$(a-b)^{2}+(a-c)^{2}+(a-d)^{2}+(b-c)^{2}+(b-d)^{2}+(c-d)^{2}=40$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\sum a_i^{2}=\\Bigl(\\sum a_i\\Bigr)^{2}-2\\sum_{i<j}a_ia_j=100-70=30\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe numbers are the roots of $t^{4}-10t^{3}+35t^{2}-50t+24=0$, which factors as $(t-1)(t-2)(t-3)(t-4)$. Then\n\n$$\n1^{3}+2^{3}+3^{3}+4^{3}=1+8+27+64=100\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAs in letter B, the roots are exactly $\\{1,2,3,4\\}$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\n\\sum\\dfrac{1}{a_i}=\\dfrac{\\sum_{i<j<k}a_ia_ja_k}{abcd}=\\dfrac{50}{24}=\\dfrac{25}{12}\\neq\\dfrac{12}{25}\n$$\n\nSo the statement is False.",
+        "**E.** → False\n\n$$\n\\sum_{i<j}(a_i-a_j)^{2}=n\\sum a_i^{2}-\\Bigl(\\sum a_i\\Bigr)^{2}=4\\cdot 30-100=20\\neq 40\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Squares sum $30$; cubes $100$; set $\\{1,2,3,4\\}$; reciprocal sum $25/12$; pairwise squared gaps sum $20$."
+    },
+    {
+      "case_id": "MATH 3.MOCK.DUALPV",
+      "id": "MATH 3.MOCK.DUALPV",
+      "title": "Project NPV versus perpetuity-due — dual programme audit",
+      "chapter": 3,
+      "subsection": "3.3",
+      "context": "A foundation compares two programmes at annual effective rate $6\\%$.\n\nProgramme P buys a three-year project: pay EUR $20000$ immediately, then receive EUR $8000$, EUR $9000$, and EUR $10000$ at the ends of years $1$, $2$, and $3$.\n\nProgramme Q is a level perpetuity-due of EUR $500$ per year (first payment today), also at $6\\%$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Programme P has a strictly positive net present value, and that NPV exceeds EUR $3500$.",
+        "The present value of the single EUR $8000$ inflow (year $1$) is strictly less than EUR $7600$.",
+        "At $6\\%$, Programme Q has present value exactly EUR $9000$.",
+        "Moving every Programme P inflow one year earlier would strictly decrease P’s present value of inflows.",
+        "The present value of the EUR $10000$ inflow (year $3$) exceeds the present value of the EUR $8000$ inflow (year $1$)."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\mathrm{PV}_{\\mathrm{in}}=\\dfrac{8000}{1.06}+\\dfrac{9000}{1.06^{2}}+\\dfrac{10000}{1.06^{3}}\\approx 7547.17+8009.97+8396.19=23953.33\n$$\n\n$$\n\\mathrm{NPV}\\approx 23953.33-20000=3953.33>3500\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\dfrac{8000}{1.06}\\approx 7547.17<7600\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nPerpetuity-due:\n\n$$\n500\\cdot\\dfrac{1.06}{0.06}=500\\cdot\\dfrac{53}{3}\\approx 8833.33\\neq 9000\n$$\n\nSo the statement is False.",
+        "**D.** → False\n\nEarlier payment shortens every discount exponent, so each present value rises.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\n\\dfrac{10000}{1.06^{3}}\\approx 8396.19>\\dfrac{8000}{1.06}\\approx 7547.17\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "P NPV $\\approx 3953$. Year-1 PV $\\approx 7547$. Q PV $\\approx 8833$. Earlier payment raises PV. Year-3 PV exceeds year-1 PV."
+    },
+    {
+      "case_id": "MATH 4.MOCK.FIVEPIPE",
+      "id": "MATH 4.MOCK.FIVEPIPE",
+      "title": "Three inlets and two drains — net rate labyrinth",
+      "chapter": 4,
+      "subsection": "4.5",
+      "context": "Three inlet pipes and two drains serve a tank.\n\nPipe A alone fills the empty tank in $5$ hours.\nPipe B alone fills the empty tank in $6$ hours.\nPipe C alone fills the empty tank in $7.5$ hours.\nDrain D alone empties a full tank in $10$ hours.\nDrain E alone empties a full tank in $15$ hours.\n\nAll five run together from empty. Decide whether each statement is true or false.",
+      "statements": [
+        "A’s fill rate is strictly greater than $\\tfrac{1}{4}$ tank per hour.",
+        "The combined net rate of A, B, C, D and E is exactly $\\tfrac{1}{3}$ tank per hour.",
+        "Starting from empty with all five open, the tank is full in strictly less than $3$ hours.",
+        "If only A and B run with both drains open (C closed), the tank still fills, and the time needed exceeds $4$ hours.",
+        "B alone fills more of the tank in $1$ hour than A and C together add net in $1$ hour while only drain D is open."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA’s rate is $\\tfrac{1}{5}<\\tfrac{1}{4}$.\n\nSo the statement is False.",
+        "**B.** → True\n\n$$\n\\dfrac{1}{5}+\\dfrac{1}{6}+\\dfrac{2}{15}-\\dfrac{1}{10}-\\dfrac{1}{15}=\\dfrac{6+5+4-3-2}{30}=\\dfrac{10}{30}=\\dfrac{1}{3}\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nTime at net rate $\\tfrac{1}{3}$ is exactly $3$ hours.\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\n\\dfrac{1}{5}+\\dfrac{1}{6}-\\dfrac{1}{10}-\\dfrac{1}{15}=\\dfrac{1}{5}>0\n$$\n\nTime equals $5>4$.\n\nSo the statement is True.",
+        "**E.** → False\n\nB contributes $\\tfrac{1}{6}=\\tfrac{5}{30}$. A+C−D contributes $\\tfrac{7}{30}$. Since $\\tfrac{5}{30}<\\tfrac{7}{30}$, B alone does not outpace that net.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Net all five $=1/3$ (time $3$). A $=1/5<1/4$. A+B−drains $=1/5$ (time $5$). B $<$ A+C−D."
+    },
+    {
+      "case_id": "MATH 5.MOCK.BE38",
+      "id": "MATH 5.MOCK.BE38",
+      "title": "Three-product mix — $38z$ break-even system",
+      "chapter": 5,
+      "subsection": "5.1",
+      "context": "A workshop sells three products $X$, $Y$, $Z$ with unit contributions\n\n$$\nc_X=5,\\qquad c_Y=7,\\qquad c_Z=9\n$$\n\n(in EUR per unit). Monthly fixed costs are EUR $12600$. A sales plan forces\n\n$$\nx=3z,\\qquad y=2z\n$$\n\nand requires exact break-even.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "At break-even under the stated mix, the volume of $Z$ is strictly greater than $330$.",
+        "The break-even volume of $Z$ is an integer number of units.",
+        "Under the mix, break-even total unit volume $x+y+z$ is strictly less than $1000$.",
+        "If fixed costs rose to EUR $15200$ with the same mix, the required $z$ would exceed $400$.",
+        "Dropping product $Y$ while keeping $x=3z$ and the original EUR $12600$ fixed costs would force a strictly larger break-even $z$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n15z+14z+9z=38z=12600\\Rightarrow z=\\dfrac{6300}{19}\\approx 331.58>330\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$\\dfrac{6300}{19}$ is not an integer ($19\\cdot 331=6289$, remainder $11$).\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\nx+y+z=6z=\\dfrac{37800}{38}=\\dfrac{18900}{19}\\approx 994.74<1000\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\n38z=15200\\Rightarrow z=400\n$$\n\nexactly, so $z$ does not exceed $400$.\n\nSo the statement is False.",
+        "**E.** → True\n\nWithout $Y$: $24z=12600$, so $z=525>\\dfrac{6300}{19}$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$38z=12600$, $z\\approx 331.6$. Total $\\approx 995$. At EUR $15200$, $z=400$. Without $Y$, $z=525$."
+    },
+    {
+      "case_id": "MATH 6.MOCK.NESTINEQ",
+      "id": "MATH 6.MOCK.NESTINEQ",
+      "title": "Nested absolute, radical, and rational inequality traps",
+      "chapter": 6,
+      "subsection": "6.3",
+      "context": "Decide whether each inequality claim is true or false.",
+      "statements": [
+        "The solution set of $|x-2|+|x-6|\\le 5$ is exactly $[2,6]$.",
+        "The solution set of $\\sqrt{3x+1}<x-1$ is exactly $(2,+\\infty)$.",
+        "The solution set of $\\dfrac{x-3}{x+2}\\le 0$ is exactly $[-2,3]$.",
+        "The solution set of $x^{2}-3|x|-4<0$ is exactly $(-4,4)$.",
+        "The solution set of $|3x-1|>|x+5|$ is exactly $(-\\infty,-1)\\cup\\bigl(3,+\\infty\\bigr)$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nOn $[2,6]$ the sum equals $4$. Outside, the solution extends to $[1.5,6.5]$, not merely $[2,6]$.\n\nSo the statement is False.",
+        "**B.** → False\n\nDomain and $x-1\\ge 0$ force $x\\ge 1$. Squaring yields $x(x-5)>0$ on that region, hence $x>5$. The solution is $(5,+\\infty)$.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe expression is undefined at $x=-2$, and the solution is $(-2,3]$, not $[-2,3]$.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith $u=|x|\\ge 0$, $u^{2}-3u-4<0$ gives $0\\le u<4$, i.e. $(-4,4)$.\n\nSo the statement is True.",
+        "**E.** → True\n\nSquaring yields $(x-3)(x+1)>0$, so $(-\\infty,-1)\\cup(3,+\\infty)$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Abs sum solves on $[1.5,6.5]$. Radical solves $(5,\\infty)$. Rational excludes $-2$. $|x|<4$. Abs comparison $(-\\infty,-1)\\cup(3,\\infty)$."
+    },
+    {
+      "case_id": "MATH 7.MOCK.JUNCTION",
+      "id": "MATH 7.MOCK.JUNCTION",
+      "title": "Quadratic–cubic junction — continuity and growth",
+      "chapter": 7,
+      "subsection": "7.2",
+      "context": "Define\n\n$$\nf(x)=\n\\begin{cases}\n-x^{2}+4x+1 & \\text{if }x<2,\\\\\nx^{3}-6x^{2}+12x-3 & \\text{if }x\\ge 2.\n\\end{cases}\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$f$ is continuous at $x=2$.",
+        "$f$ is differentiable at $x=2$.",
+        "For every $x\\ge 2$ one has $f(x)\\ge 5$, with equality at $x=2$.",
+        "The global minimum value of $f$ on $\\mathbb{R}$ is $5$.",
+        "On the region $x<2$, the equation $f(x)=0$ has a negative root."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nBoth pieces equal $5$ at $x=2$.\n\nSo the statement is True.",
+        "**B.** → True\n\nLeft derivative $-2x+4$ at $2^{-}$ is $0$; right derivative $3x^{2}-12x+12$ at $2^{+}$ is $0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor $x\\ge 2$, $f'(x)=3(x-2)^{2}\\ge 0$ and $f(2)=5$, so $f(x)\\ge 5$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAs $x\\to-\\infty$, $-x^{2}+4x+1\\to-\\infty$, so no global minimum $5$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$-x^{2}+4x+1=0$ gives $x=2\\pm\\sqrt{5}$; only $2-\\sqrt{5}<0$ lies in $x<2$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Continuous and differentiable at $2$ with value $5$. Nondecreasing on $[2,\\infty)$. Unbounded below on $(-\\infty,2)$. Root $2-\\sqrt{5}$."
+    },
+    {
+      "case_id": "MATH 8.MOCK.POWTRAP",
+      "id": "MATH 8.MOCK.POWTRAP",
+      "title": "Power model — endpoint limits and ratio traps",
+      "chapter": 8,
+      "subsection": "8.2",
+      "context": "Let $A>0$ and $p\\in\\mathbb{R}$. Consider\n\n$$\nf(x)=A x^{p}\\qquad(x>0).\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "If $p>1$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)=0$ and $\\displaystyle\\lim_{x\\to +\\infty}f(x)=+\\infty$.",
+        "If $-1<p<0$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)=0$.",
+        "For every real $p$, the ratio $f(3x)/f(x)$ is independent of $x$.",
+        "If $p=-2$, then $\\displaystyle\\lim_{x\\to 0^{+}}x^{2}f(x)$ equals the positive constant $A$.",
+        "If $p=1$, then $f(2)-f(1)=2f(1)$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFor $p>1$, $x^{p}\\to 0$ as $x\\to 0^{+}$ and $x^{p}\\to+\\infty$ as $x\\to+\\infty$.\n\nSo the statement is True.",
+        "**B.** → False\n\nFor $-1<p<0$, $x^{p}\\to+\\infty$ as $x\\to 0^{+}$, not $0$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\n\\dfrac{f(3x)}{f(x)}=3^{p}\n$$\n\nindependent of $x$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\nx^{2}\\cdot A x^{-2}=A\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$f(2)-f(1)=2A-A=A$, while $2f(1)=2A$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$p>1$ sends $0^{+}\\to 0$ and $+\\infty\\to\\infty$. For $-1<p<0$, $0^{+}$ blows up. Ratio $3^{p}$. $x^{2}f\\to A$ when $p=-2$. Linear case difference is $A$, not $2A$."
+    },
+    {
+      "case_id": "MATH 9.MOCK.TWOPAR",
+      "id": "MATH 9.MOCK.TWOPAR",
+      "title": "Two-parameter cubic — always-one-root factorisation",
+      "chapter": 9,
+      "subsection": "9.2",
+      "context": "For real parameters $k$ and $m$, consider\n\n$$\nx^{3}-(k+1)x^{2}+(k+m)x-m=0.\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$x=1$ is a real root for every real $k$ and $m$.",
+        "When $k=2$ and $m=1$, the equation has exactly two distinct real roots.",
+        "When $k=0$ and $m=-4$, the equation has three distinct real roots.",
+        "When $k=1$ and $m=2$, the equation has exactly one real root.",
+        "Whenever $k^{2}\\ge 4m$, the sum of all real roots counted with multiplicity equals $k+1$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nSubstituting $x=1$ cancels for every $k,m$. Factoring gives $(x-1)(x^{2}-kx+m)=0$.\n\nSo the statement is True.",
+        "**B.** → False\n\nFor $k=2$, $m=1$ the quadratic is $(x-1)^{2}$, so the cubic is $(x-1)^{3}$: one distinct real root.\n\nSo the statement is False.",
+        "**C.** → True\n\nFor $k=0$, $m=-4$ the quadratic is $x^{2}-4$, roots $\\pm 2$. Together with $x=1$, three distinct reals.\n\nSo the statement is True.",
+        "**D.** → True\n\nDiscriminant $1-8<0$, so only the factor $x=1$ is real.\n\nSo the statement is True.",
+        "**E.** → True\n\nWhen $k^{2}\\ge 4m$ there are three real roots counting multiplicity; Vieta gives sum $k+1$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Always $(x-1)(x^{2}-kx+m)$. Triple root at $(2,1)$. Three distinct at $(0,-4)$. One real at $(1,2)$. Vieta sum $k+1$."
+    },
+    {
+      "case_id": "MATH 10.MOCK.COUPLE",
+      "id": "MATH 10.MOCK.COUPLE",
+      "title": "Coupled tracer decay and endowment growth",
+      "chapter": 10,
+      "subsection": "10.2",
+      "context": "A tracer decays as $N(t)=N_{0}e^{-\\lambda t}$. At time zero the mass is $1200\\ \\mathrm{mg}$, and at $t=4$ years it is $750\\ \\mathrm{mg}$.\n\nSeparately, a fund follows $S(t)=S_{0}e^{rt}$ with $S_{0}=\\mathrm{EUR}\\ 4000$, and $S(6)=\\mathrm{EUR}\\ 5800$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The tracer’s continuous decay rate satisfies $\\lambda>0.11$.",
+        "The tracer’s half-life is strictly less than $6$ years.",
+        "After $8$ years the remaining mass is still above $500\\ \\mathrm{mg}$.",
+        "The fund’s continuous force satisfies $r>0.055$.",
+        "The fund first reaches EUR $8000$ at some time $t>11$ years."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\lambda=\\dfrac{1}{4}\\ln\\dfrac{8}{5}\\approx\\dfrac{0.4700}{4}=0.1175>0.11\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nt_{1/2}=\\dfrac{\\ln 2}{\\lambda}\\approx\\dfrac{0.6931}{0.1175}\\approx 5.90<6\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\nN(8)=1200\\left(\\dfrac{5}{8}\\right)^{2}=1200\\cdot\\dfrac{25}{64}=468.75<500\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\nr=\\dfrac{1}{6}\\ln\\dfrac{29}{20}\\approx\\dfrac{0.3716}{6}=0.0619>0.055\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\nt=\\dfrac{\\ln 2}{r}\\approx\\dfrac{0.6931}{0.0619}\\approx 11.20>11\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$\\lambda\\approx 0.1175$, half-life $\\approx 5.90$. $N(8)=468.75$. $r\\approx 0.0619$. Doubling time $\\approx 11.20$."
+    },
+    {
+      "case_id": "MATH 11.MOCK.ZCUBE",
+      "id": "MATH 11.MOCK.ZCUBE",
+      "title": "Engagement $t^{3}e^{-2t}\\ln(t+1)$ — one derivative check",
+      "chapter": 11,
+      "subsection": "11.1",
+      "context": "An engagement score is modelled by\n\n$$\nZ(t)=t^{3}\\,e^{-2t}\\ln(t+1)\\qquad(t>0).\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$Z'(t)=e^{-2t}\\left(3t^{2}\\ln(t+1)-2t^{3}\\ln(t+1)+\\dfrac{t^{3}}{t+1}\\right)$ for all $t>0$.",
+        "$Z(t)>0$ for every $t>0$.",
+        "For $t>0$, the factor $e^{-2t}$ does not change the sign of $Z'$.",
+        "$Z$ is strictly decreasing on $(0,+\\infty)$.",
+        "$\\displaystyle\\lim_{t\\to +\\infty}Z(t)=0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThree-factor product with $u=t^{3}$, $v=e^{-2t}$, $w=\\ln(t+1)$ yields the stated formula.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $t>0$ every factor is positive.\n\nSo the statement is True.",
+        "**C.** → True\n\n$e^{-2t}>0$ always.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $t=1$ the bracket is $\\ln 2+\\tfrac{1}{2}>0$, so $Z'(1)>0$.\n\nSo the statement is False.",
+        "**E.** → True\n\nExponential decay dominates $t^{3}\\ln(t+1)$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Product rule matches A. $Z>0$; $e^{-2t}$ preserves sign; $Z'(1)>0$ kills monotone decrease; $Z\\to 0$ at $+\\infty$."
+    },
+    {
+      "case_id": "MATH 12.MOCK.BEST5",
+      "id": "MATH 12.MOCK.BEST5",
+      "title": "Best-of-five unfair match — length and winner traps",
+      "chapter": 12,
+      "subsection": "12.3",
+      "context": "Ana and Ben play a best-of-five contest (first to three wins takes the match). Each game is independent. Ana wins a single game with probability $p=\\tfrac{3}{5}$; Ben wins with probability $q=\\tfrac{2}{5}$.\n\nThey stop when one player reaches three wins.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The probability Ana sweeps the match $3$–$0$ is $\\dfrac{27}{125}$.",
+        "The probability the match lasts exactly five games is $\\dfrac{216}{625}$.",
+        "The probability Ana wins the match equals $\\dfrac{3}{5}$.",
+        "Conditional on the match lasting five games, the probability Ana wins the match is $\\dfrac{3}{5}$.",
+        "The probability the match ends in exactly three games is $\\dfrac{7}{25}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\np^{3}=\\left(\\dfrac{3}{5}\\right)^{3}=\\dfrac{27}{125}\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nA fifth game requires a $2$–$2$ split after four games:\n\n$$\n\\binom{4}{2}p^{2}q^{2}=6\\cdot\\dfrac{9}{25}\\cdot\\dfrac{4}{25}=\\dfrac{216}{625}\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\nP(\\text{Ana wins})=p^{3}(1+3q+6q^{2})=\\dfrac{27}{125}\\cdot\\dfrac{79}{25}=\\dfrac{2133}{3125}\\neq\\dfrac{3}{5}\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nGiven $2$–$2$, the fifth game decides, and Ana wins it with probability $p=\\tfrac{3}{5}$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\np^{3}+q^{3}=\\dfrac{27+8}{125}=\\dfrac{35}{125}=\\dfrac{7}{25}\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Sweep $27/125$. Five games $216/625$. Ana match win $2133/3125\\neq 3/5$. Given five games, win prob $p$. Three-game match $7/25$."
+    },
+    {
+      "case_id": "MATH 13.MOCK.CALL80",
+      "id": "MATH 13.MOCK.CALL80",
+      "title": "Eighty sales calls — binomial mean, variance, proportion",
+      "chapter": 13,
+      "subsection": "13.1",
+      "context": "A call centre handles $n=80$ independent outbound calls. Each call is a sale with probability $p=0.35$. Let $X\\sim\\mathrm{Bin}(80,0.35)$ and $\\hat{p}=X/80$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The mean of $X$ is $28$ and the variance of $X$ is $18.2$.",
+        "The standard deviation of $X$ is strictly between $4$ and $5$.",
+        "The variance of $X$ equals $28$.",
+        "The variance of the sales rate $\\hat{p}$ equals $0.00284375$.",
+        "The standard deviation of $\\hat{p}$ is strictly less than $0.06$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\nE[X]=80\\cdot 0.35=28,\\qquad \\mathrm{Var}(X)=80\\cdot 0.35\\cdot 0.65=18.2\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\sqrt{18.2}\\approx 4.266\\in(4,5)\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nVariance is $18.2$, not the mean $28$.\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\n\\mathrm{Var}(\\hat{p})=\\dfrac{0.35\\cdot 0.65}{80}=0.00284375\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\n\\sqrt{0.00284375}\\approx 0.0533<0.06\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$E=28$, $\\mathrm{Var}=18.2$, $\\mathrm{SD}\\approx 4.27$. Variance is not $28$. $\\mathrm{Var}(\\hat{p})=0.00284375$, $\\mathrm{SD}\\approx 0.053$."
+    }
+  ]
+}

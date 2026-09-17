@@ -1422,35 +1422,6 @@
   },
   {
     "subsection": "4.3",
-    "case_id": "CASE 4.3.21",
-    "title": "Share Capital Calculation and Ownership",
-    "context": "Analyze the relationship between total share capital, the number of shares issued, and each investor's stake. Evaluate the following economic assertions:",
-    "statements": [
-      "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed fraction of that capital.",
-      "Doubling the market price on the exchange automatically doubles the corporation's registered share capital on the balance sheet.",
-      "Buying shares at initial issue transfers cash to the corporation in exchange for an ownership stake.",
-      "A shareholder may sell shares later to another investor without requiring the corporation to redeem the stock.",
-      "Each share always carries exactly one vote regardless of whether it is preferred or common stock."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed one-hundred-thousandth fraction of that capital pool.\n\nSo the statement is True.",
-      "A doubled exchange price does not automatically double registered share capital on the balance sheet; market quotes and book equity are different quantities.\n\nSo the statement is False.",
-      "At initial issue, cash moves from the investor to the corporation and the buyer receives an ownership stake in return. That primary subscription is how equity funding enters the firm.\n\nLater market trades among investors do not repeat that cash-inflow path. The letter correctly ties the funding transfer to purchase at issue from the company.\n\nSo the statement is True.",
-      "A shareholder may sell shares later to another investor without requiring the corporation to redeem or cancel the stock as if it were a callable loan.\n\nSo the statement is True.",
-      "Preferred and common classes often differ on voting rights. Not every share always carries exactly one vote regardless of the class terms written into the issue.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
     "case_id": "CASE 4.3.22",
     "title": "Misconceptions About Corporate Listing",
     "context": "Review optional stock-exchange listing and its implications for corporate finance and governance. Evaluate the following economic assertions:",
@@ -4028,35 +3999,6 @@
       "Further funds for a highly geared borrower may come only at a higher interest rate and/or if collateral can be offered. Those conditions are how lenders protect themselves when loan capital is already high.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.6",
-    "case_id": "CASE 4.6.06",
-    "title": "High Gearing and Credit Access",
-    "context": "Analyze why a business with a high proportion of loan capital may prefer internal funds or investors over additional debt. Evaluate the following economic assertions:",
-    "statements": [
-      "Capital expenditure and revenue expenditure both require identical long-term mortgage funding regardless of use.",
-      "Such a business should rather try to use internal sources of finance and/or find investors willing to provide funds.",
-      "Because loans must be repaid, a high proportion of loan capital can increase the risk of insolvency.",
-      "Costs of finance include interest payments on loans and credit as well as administration costs for issuing shares or bonds.",
-      "Financial funds used for capital expenditures on long-lived assets require long-term sources of finance."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Capital expenditure and revenue expenditure do not both require identical long-term mortgage funding. Short-cycle materials can use short-term credit; long-lived assets need longer sources.\n\nSo the statement is False.",
-      "A firm already loaded with loans should rather try internal sources and/or investors willing to provide funds. That path avoids stacking another repayment schedule onto an already geared balance sheet.\n\nSo the statement is True.",
-      "Loans must be repaid with interest regardless of how sales turn out in a weak month. A high proportion of loan capital therefore increases insolvency risk when cash inflows dip. Equity investors share residual outcomes differently from creditors with fixed claims. Preferring internal funds or new investors in that setting is a direct response to repayment burden.\n\nSo the statement is True.",
-      "Costs of finance include interest on loans and credit as well as administration costs for issuing shares or bonds. Both interest and issuance expenses belong in the comparison among available sources.\n\nSo the statement is True.",
-      "Financial funds for capital expenditures on long-lived assets require long-term sources of finance. Repayment then lines up with years of service from plant, vehicles, or buildings.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {

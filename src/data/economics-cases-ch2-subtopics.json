@@ -4235,35 +4235,6 @@
   },
   {
     "subsection": "2.7",
-    "case_id": "CASE 2.7.12",
-    "title": "Airline Route Duopoly",
-    "context": "Analyze two carriers serving a thin international route and matching fare changes. Evaluate the following economic assertions:",
-    "statements": [
-      "Two dominant carriers on one route resemble duopoly, a special case of oligopoly.",
-      "Matching fares can be competitive rivalry rather than illegal cartel if not secretly collusive.",
-      "Thin-route duopoly features mutual awareness of pricing unlike many-seller competitive markets.",
-      "Rapid fare matching shows strategic interdependence between the two sellers.",
-      "Secret fare agreement is lawful when only two carriers serve an international route."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Two carriers dominating one thin route form a duopoly, a special case of oligopoly with few interdependent sellers.\n\nStructure follows that seller count on the route.\n\nSo the statement is True.",
-      "Matching fares can be ordinary competitive response: each airline cuts or raises when it sees the rival move, without a secret joint plan.\n\nIllegal cartel requires collusive agreement, not mere parallel prices that arise from watching each other. Investigators look for communication and enforcement mechanisms, not solely for similar fares on a duopoly route where matching is also what rivalry predicts.\n\nSo the statement is True.",
-      "On a thin-route duopoly each carrier knows the other will notice fare changes.\n\nThat mutual awareness differs from many-seller markets where one airline's tweak is lost in the crowd.\n\nSo the statement is True.",
-      "Rapid fare matching is strategic interdependence in action between the two sellers.\n\nEach reacts to the other's posted prices within the oligopoly setting.\n\nSo the statement is True.",
-      "A secret fare agreement between the two carriers is still cartel collusion and typically unlawful, even on a thin international route.\n\nDuopoly structure does not grant a legal privilege to fix prices jointly. Competition law targets the agreement, not the mere fact that only two firms serve the city pair. Claiming lawfulness because seller count equals two confuses structure with permitted conduct.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.7",
     "case_id": "CASE 2.7.13",
     "title": "Online Marketplace Sellers",
     "context": "Analyze thousands of small vendors offering standardised products on one platform. Evaluate the following economic assertions:",
