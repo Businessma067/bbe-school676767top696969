@@ -1087,7 +1087,13 @@ So the statement is True.`,
 
     `**B.** → False
 
-From letter A, $L=-3/2$, so $x=a^{-3/2}$, not $a^{3/2}$.
+Letter A already fixed $L=-3/2$. Exponentiating with base $a$ therefore yields
+
+$$
+x=a^{L}=a^{-3/2},
+$$
+
+which is the reciprocal power of the claimed form $a^{3/2}$. Those two letter expressions agree only if $a^{3}=1$, impossible under $a>1$.
 
 So the statement is False.`,
 
@@ -1186,13 +1192,13 @@ So the statement is True.`,
 
     `**B.** → True
 
-Drop the tax term $-6q$ and repeat the first-order condition. Marginal profit’s intercept rises by $6$, so
+Drop the tax term $-6q$ and repeat the first-order condition. Without the tax, marginal profit’s intercept rises by $6$:
 
 $$
-\\pi'_{\\mathrm{no\\ tax}}(q)=-3q+56=0\\Rightarrow q=\\dfrac{56}{3}\\approx 18.67,
+\\pi'_{\\mathrm{no\\ tax}}(q)=-3q+56=0\\Rightarrow q=\\dfrac{56}{3}\\approx 18.67.
 $$
 
-which is strictly larger than the taxed optimum $50/3$.
+Compare with the taxed optimum $50/3\\approx 16.67$ from letter A: the untaxed critical point is strictly larger, as a per-unit tax always shifts a linear FOC leftward when marginal profit slopes downward.
 
 So the statement is True.`,
 
@@ -1290,77 +1296,75 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Under sampling without replacement, each draw has the same marginal success probability equal to the population share. Multiply by the sample size $5$.
+Under sampling without replacement each draw has the same marginal success probability equal to the population share. Multiply by the sample size:
 
 $$
-E[R]=5\\cdot\\dfrac{9}{20}=\\dfrac{45}{20}=2.25
+E[R]=5\\cdot\\dfrac{9}{20}=2.25,\\qquad E[G]=5\\cdot\\dfrac{5}{20}=1.25.
 $$
-
-$$
-E[G]=5\\cdot\\dfrac{5}{20}=\\dfrac{25}{20}=1.25
-$$
-
-Both claimed means hold under Regime H.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Use the hypergeometric variance formula with population $N=20$, $K=9$ red successes, and sample size $n=5$.
+Use the hypergeometric variance formula with population $N=20$, $K=9$ red successes, and sample size $n=5$:
 
 $$
-\\mathrm{Var}(R)=n\\cdot\\dfrac{K}{N}\\cdot\\dfrac{N-K}{N}\\cdot\\dfrac{N-n}{N-1}
+\\mathrm{Var}(R)=n\\cdot\\dfrac{K}{N}\\cdot\\dfrac{N-K}{N}\\cdot\\dfrac{N-n}{N-1}.
 $$
 
+Substitute the crate numbers:
+
 $$
-=5\\cdot\\dfrac{9}{20}\\cdot\\dfrac{11}{20}\\cdot\\dfrac{15}{19}=\\dfrac{18.5625}{19}\\approx 0.977
+\\mathrm{Var}(R)=5\\cdot\\dfrac{9}{20}\\cdot\\dfrac{11}{20}\\cdot\\dfrac{15}{19}.
 $$
 
-Since $0.977<1$, the variance of $R$ is strictly less than $1$.
+First $9/20\\cdot 11/20=99/400=0.2475$, then $5\\cdot 0.2475=1.2375$, and finally
+
+$$
+1.2375\\cdot\\dfrac{15}{19}=\\dfrac{18.5625}{19}\\approx 0.977.
+$$
+
+Because $0.977<1$, the variance of $R$ is strictly less than $1$. The finite-population correction factor $15/19<1$ is what pulls the variance below the corresponding binomial figure $1.2375$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-Drawing five reds means choosing all five draws from the nine red components in the crate of twenty.
+Drawing five reds means choosing all five sample slots from the nine red components inside the crate of twenty:
 
 $$
-P(R=5)=\\dfrac{\\binom{9}{5}}{\\binom{20}{5}}=\\dfrac{126}{15504}
+P(R=5)=\\dfrac{\\binom{9}{5}}{\\binom{20}{5}}=\\dfrac{126}{15504}\\approx 0.00813<0.01.
 $$
-
-$$
-\\dfrac{126}{15504}\\approx 0.00813<0.01
-$$
-
-So the probability of five red components is strictly less than $0.01$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-No green means all five draws come from the $15$ non-green components. Compare the resulting hypergeometric probability with the threshold $0.25$.
+No green means all five draws come from the $15$ non-green components:
 
 $$
-P(G=0)=\\dfrac{\\binom{15}{5}}{\\binom{20}{5}}=\\dfrac{3003}{15504}\\approx 0.1937
+P(G=0)=\\dfrac{\\binom{15}{5}}{\\binom{20}{5}}=\\dfrac{3003}{15504}\\approx 0.1937.
 $$
 
-Since $0.1937<0.25$, the probability of drawing no green does not exceed $0.25$.
+That probability is below $0.25$, so it does not exceed the claimed threshold.
 
 So the statement is False.`,
 
     `**E.** → False
 
-Complement through the event of zero reds (all five draws from the $11$ non-red components) and compare carefully with $0.95$.
+Work through the complement: zero reds means all five draws come from the $11$ non-red components in the crate.
 
 $$
-P(R=0)=\\dfrac{\\binom{11}{5}}{\\binom{20}{5}}=\\dfrac{462}{15504}
+P(R=0)=\\dfrac{\\binom{11}{5}}{\\binom{20}{5}}=\\dfrac{462}{15504}.
 $$
 
+Therefore
+
 $$
-P(R\\ge 1)=1-\\dfrac{462}{15504}\\approx 0.9702>0.95
+P(R\\ge 1)=1-\\dfrac{462}{15504}=\\dfrac{15042}{15504}\\approx 0.9702.
 $$
 
-The probability of at least one red is larger than $0.95$, not strictly less.
+The probability of at least one red is about $0.97$, which is larger than $0.95$, not strictly less. The claim reverses the inequality: with nine reds out of twenty and five draws, missing red entirely is rare, so the “at least one red” event is overwhelmingly likely.
 
 So the statement is False.`,
   ];
@@ -1414,77 +1418,73 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-$X\\sim\\mathrm{Bin}(n=5,p=0.45)$. Apply the standard binomial mean and variance formulas step by step.
+$X\\sim\\mathrm{Bin}(5,0.45)$, so the ordinary binomial moments are
 
 $$
-E[X]=np=5\\cdot 0.45=2.25
+E[X]=5\\cdot 0.45=2.25,\\qquad \\mathrm{Var}(X)=5\\cdot 0.45\\cdot 0.55=1.2375.
 $$
-
-$$
-\\mathrm{Var}(X)=np(1-p)=5\\cdot 0.45\\cdot 0.55=1.2375
-$$
-
-Both claimed moments of $X$ hold under Regime B, so the statement is correct.
 
 So the statement is True.`,
 
     `**B.** → True
 
-$Y=4X-3$ is an affine transform of $X$. Push the mean through the linear map and scale the variance by the square of the slope $4$.
+Push the affine map $Y=4X-3$ through the moments from letter A:
 
 $$
-E[Y]=4E[X]-3=4\\cdot 2.25-3=9-3=6
+E[Y]=4\\cdot 2.25-3=6,\\qquad \\mathrm{Var}(Y)=16\\cdot 1.2375=19.8.
 $$
-
-$$
-\\mathrm{Var}(Y)=4^{2}\\cdot\\mathrm{Var}(X)=16\\cdot 1.2375=19.8
-$$
-
-So both claimed moments of $Y$ hold under the linear transform.
 
 So the statement is True.`,
 
     `**C.** → False
 
-Zero red hits means five consecutive non-red draws, each with probability $0.55$. Compare the exact fifth power carefully with the threshold $0.05$ — this is a close numerical trap.
+Zero red hits means five consecutive non-red draws, each with probability $0.55$:
 
 $$
-P(X=0)=(1-p)^{5}=0.55^{5}
+P(X=0)=0.55^{5}.
+$$
+
+Compute the fifth power carefully — this is a close numerical trap designed to catch anyone who rounds too early:
+
+$$
+0.55^{2}=0.3025,\\qquad 0.55^{3}=0.166375,\\qquad 0.55^{4}=0.09150625,
 $$
 
 $$
-0.55^{5}=0.0503284375>0.05
+0.55^{5}=0.0503284375.
 $$
 
-The probability is slightly larger than $0.05$, so the strict inequality $P(X=0)<0.05$ fails.
+The exact value sits slightly above $0.05$, so the strict inequality $P(X=0)<0.05$ fails. Rounding $0.55^{5}$ down to $0.05$ would hide the failure; keeping one extra digit exposes it.
 
 So the statement is False.`,
 
     `**D.** → True
 
-Five red hits means five consecutive successes, each with probability $p=0.45$. Raise $0.45$ to the fifth power and compare with $0.02$.
+Five red hits means five consecutive successes, each with probability $0.45$:
 
 $$
-P(X=5)=p^{5}=0.45^{5}
+P(X=5)=0.45^{5}=0.0184528125.
 $$
 
-$$
-0.45^{5}=0.0184528125<0.02
-$$
-
-So $P(X=5)$ is strictly less than $0.02$, and the claim holds.
+That fifth power sits comfortably below $0.02$, so the strict inequality holds.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Equal means do not force equal laws. Regime H is hypergeometric (dependent draws without replacement) while Regime B is binomial (independent draws). Compare variances as a concrete witness that the distributions differ.
+Equal means do not force equal laws. Regime H draws without replacement (hypergeometric counts), while Regime B draws independently with replacement (binomial counts). The two sampling schemes share the same marginal success probability $9/20$, so their means for the red count agree:
 
 $$
-\\mathrm{Var}(X)=1.2375,\\qquad \\mathrm{Var}(R)\\approx 0.977
+E[X]=E[R]=2.25.
 $$
 
-Already $\\mathrm{Var}(X)\\neq\\mathrm{Var}(R)$, so $X$ and $R$ cannot share the same probability distribution.
+But the dependence structure differs, and the variances already disagree:
+
+$$
+\\mathrm{Var}(X)=1.2375,\\qquad \\mathrm{Var}(R)=5\\cdot\\dfrac{9}{20}\\cdot\\dfrac{11}{20}\\cdot\\dfrac{15}{19}\\approx 0.977.
+$$
+
+If two random variables shared the same probability distribution, every moment would match. Already $\\mathrm{Var}(X)\\neq\\mathrm{Var}(R)$, so $X$ and $R$ cannot be equal in law. Matching first moments is necessary but nowhere near sufficient.
 
 So the statement is False.`,
   ];
