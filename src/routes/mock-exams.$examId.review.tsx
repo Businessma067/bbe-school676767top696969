@@ -319,7 +319,7 @@ function TaskReviewWorkspace({
         <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-7">
           <ExamQuestionBody q={q} emphasized />
 
-          <div className="mt-6 overflow-hidden rounded-xl border border-border">
+          <div className="mt-6 overflow-visible rounded-xl border border-border">
             <div className="flex items-center gap-3 border-b border-border bg-secondary/50 px-4 py-2 text-xs text-muted-foreground">
               <span className="w-6">#</span>
               <span className="flex-1">Statement</span>
@@ -335,20 +335,20 @@ function TaskReviewWorkspace({
                 <div
                   key={s.id}
                   className={cn(
-                    "flex items-start gap-2 border-b border-border px-3 py-3.5 last:border-b-0 sm:items-center sm:gap-3 sm:px-4",
+                    "flex items-start gap-2 border-b border-border px-3 py-3.5 last:border-b-0 sm:gap-3 sm:px-4",
                     judgedOk
                       ? "bg-secondary/25 shadow-[inset_3px_0_0_0_var(--caramel-deep)]"
                       : "bg-card",
                   )}
                 >
-                  <span className="mt-0.5 flex w-6 shrink-0 items-center justify-center sm:mt-0">
+                  <span className="mt-0.5 flex w-6 shrink-0 items-center justify-center">
                     {judgedOk ? (
                       <Check className="h-4 w-4 text-caramel-deep" aria-label="Correct judgment" />
                     ) : (
                       <X className="h-4 w-4 text-taupe" aria-label="Incorrect judgment" />
                     )}
                   </span>
-                  <p className="min-w-0 flex-1 text-sm leading-relaxed">
+                  <p className="min-w-0 flex-1 text-sm leading-relaxed [overflow-wrap:anywhere]">
                     <span className="mr-2 font-semibold text-taupe">
                       {String.fromCharCode(65 + si)}.
                     </span>

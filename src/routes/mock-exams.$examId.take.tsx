@@ -659,19 +659,19 @@ function TakeExamPage() {
             <div className="relative isolate z-0 min-w-0 p-5 sm:p-8 lg:p-10">
               <ExamQuestionBody q={q} emphasized />
 
-              <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+              <ol className="mt-6 divide-y divide-border overflow-visible rounded-xl border border-border bg-background">
                 {q.statements.map((s, i) => {
                   const marked = currentMarks[i] === true;
                   return (
-                    <li key={s.id} className="px-3 py-3 sm:px-4">
-                      <div className="flex items-start gap-2 sm:items-center sm:gap-3">
-                        <span className="mt-2 w-6 shrink-0 text-center text-xs font-bold text-muted-foreground sm:mt-0">
+                    <li key={s.id} className="px-3 py-3.5 sm:px-4 sm:py-4">
+                      <div className="flex items-start gap-2 sm:gap-3">
+                        <span className="mt-1 w-6 shrink-0 text-center text-xs font-bold text-muted-foreground">
                           {String.fromCharCode(65 + i)}.
                         </span>
-                        <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground sm:text-[15px]">
+                        <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground [overflow-wrap:anywhere] sm:text-[15px]">
                           <ExamStatementText q={q} text={s.text} />
                         </p>
-                        <div className="flex w-11 shrink-0 justify-center lg:w-14">
+                        <div className="flex w-11 shrink-0 justify-center pt-0.5 lg:w-14">
                           <button
                             type="button"
                             role="checkbox"

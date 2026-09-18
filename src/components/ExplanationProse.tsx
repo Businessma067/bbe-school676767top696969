@@ -93,8 +93,8 @@ export function ExplanationProse({
   return (
     <div
       className={cn(
-        "font-expl text-[15px] leading-[1.6] text-foreground sm:text-[15.5px]",
-        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-1",
+        "font-expl text-[15px] leading-[1.65] text-foreground sm:text-[15.5px]",
+        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-2 [&_.flashcard-math-display]:overflow-y-visible",
         className,
       )}
     >
@@ -133,7 +133,7 @@ export function ExplanationProse({
         }
         if (chunk.kind === "table") {
           return (
-            <div key={idx} className="my-5 overflow-x-auto overflow-y-hidden [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
+            <div key={idx} className="my-5 overflow-x-auto overflow-y-visible [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border">
               <MathMarkdownTable markdown={chunk.text} />
             </div>
           );

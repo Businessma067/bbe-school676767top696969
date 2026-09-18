@@ -91,8 +91,8 @@ const MathChunk = memo(function MathChunk({
               key={j}
               className={
                 displayMode
-                  ? "flashcard-math-display my-2 block h-auto w-full overflow-x-auto overflow-y-hidden py-1.5 text-center [&_.katex]:whitespace-nowrap [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_.katex-display]:py-1 [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border"
-                  : "mx-0.5 inline-block max-w-full align-baseline [overflow-wrap:anywhere]"
+                  ? "flashcard-math-display my-2.5 block h-auto w-full max-w-full overflow-x-auto overflow-y-visible py-2 text-center [&_.katex]:max-w-full [&_.katex-display]:my-0 [&_.katex-display]:h-auto [&_.katex-display]:max-w-full [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-visible [&_.katex-display]:py-1.5 [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border"
+                  : "mx-0.5 inline-block max-w-full align-baseline [overflow-wrap:anywhere] [&_.katex]:max-w-full"
               }
               dangerouslySetInnerHTML={{ __html: html }}
             />

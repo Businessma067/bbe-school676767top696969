@@ -35,13 +35,13 @@ export function ExamQuestionBody({
       {isMath ? (
         <div
           className={cn(
-            "min-w-0 space-y-3 text-sm leading-relaxed text-foreground [overflow-wrap:anywhere]",
+            "min-w-0 space-y-3.5 text-sm leading-relaxed text-foreground [overflow-wrap:anywhere]",
             emphasized && "text-base",
           )}
         >
           <div
             className={cn(
-              "min-w-0 space-y-3",
+              "min-w-0 space-y-3.5 overflow-x-auto overflow-y-visible",
               emphasized && "font-display text-lg font-semibold sm:text-xl",
             )}
           >
@@ -50,7 +50,7 @@ export function ExamQuestionBody({
               .map((para) => para.trim())
               .filter(Boolean)
               .map((para, i) => (
-                <div key={i} className="min-w-0">
+                <div key={i} className="min-w-0 overflow-x-auto overflow-y-visible">
                   <MathText text={para} />
                 </div>
               ))}
