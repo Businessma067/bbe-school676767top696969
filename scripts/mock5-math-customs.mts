@@ -46,47 +46,83 @@ export function buildMathQ22Sets() {
   const tactical_explanations = [
     `**A.** → True
 
+Use inclusion–exclusion on the three finished-module sets to find how many staff finished at least one module, then subtract from the programme size $200$.
+
 $$
-|P\\cup S\\cup A|=120+95+80-48-40-35+18=190
+|P\\cup S\\cup A|=120+95+80-48-40-35+18
 $$
+
+$$
+=295-123+18=190
+$$
+
+Staff who finished none:
 
 $$
 200-190=10
 $$
 
-Exactly $10$ finished none.
+So exactly $10$ remain blocked — matching the claim.
 
 So the statement is True.`,
 
     `**B.** → False
 
-All three: $18$. Only Audit:
+Compare the all-three count with the “Audit only” region of the Venn diagram. The all-three count is given as $18$. Only Audit is
 
 $$
-80-40-35+18=23
+|A|-|P\\cap A|-|S\\cap A|+|P\\cap S\\cap A|=80-40-35+18=23
 $$
 
-$18$ is not strictly greater than $23$.
+The claim needs $18>23$, but $18$ is smaller. Finishing every module is therefore not strictly more common than finishing Audit alone.
 
 So the statement is False.`,
 
     `**C.** → True
 
-Only Privacy: $120-48-40+18=50$. Only Security: $95-48-35+18=30$. Since $50>30$, the claim holds.
+“Privacy only” subtracts the two Privacy pairwise overlaps and adds back the triple (inclusion–exclusion for one region):
+
+$$
+|P|-|P\\cap S|-|P\\cap A|+|P\\cap S\\cap A|=120-48-40+18=50
+$$
+
+Likewise Security only:
+
+$$
+95-48-35+18=30
+$$
+
+Compare the two exclusive regions: $50>30$. Privacy-only staff therefore outnumber Security-only staff, which is exactly what the claim asserts.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Only Audit equals $23>0$, so finishing Audit without Privacy is possible.
+The claim says finishing Audit without Privacy is impossible. But anyone in “Audit only” finished Audit and neither Privacy nor Security. That exclusive Audit region has size
+
+$$
+80-40-35+18=23>0
+$$
+
+A nonempty region is a concrete counterexample: those $23$ staff finished Audit without Privacy. The impossibility claim therefore fails.
 
 So the statement is False.`,
 
     `**E.** → True
 
+Two-set inclusion–exclusion for Privacy or Security (Audit is irrelevant for this letter):
+
 $$
-|P\\cup S|=120+95-48=167>160
+|P\\cup S|=|P|+|S|-|P\\cap S|=120+95-48=167
 $$
+
+Compare with the threshold in the claim:
+
+$$
+167>160
+$$
+
+so strictly more than $160$ staff finished at least one of Privacy or Security. The claim therefore holds.
 
 So the statement is True.`,
   ];
@@ -139,49 +175,93 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
+Expand the square of the sum and rearrange for the sum of squares:
+
 $$
-a^{2}+b^{2}+c^{2}=(a+b+c)^{2}-2(ab+bc+ca)=144-94=50
+(a+b+c)^{2}=a^{2}+b^{2}+c^{2}+2(ab+bc+ca)
 $$
+
+$$
+a^{2}+b^{2}+c^{2}=(a+b+c)^{2}-2(ab+bc+ca)
+$$
+
+Plug in the archive values $a+b+c=12$ and $ab+bc+ca=47$:
+
+$$
+a^{2}+b^{2}+c^{2}=12^{2}-2\\cdot 47=144-94=50
+$$
+
+The sum of squares is therefore exactly $50$, as claimed.
 
 So the statement is True.`,
 
     `**B.** → True
 
+Expand the three squared gaps into a standard identity:
+
 $$
-(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=2\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)=2(50-47)=6
+(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=2\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)
 $$
+
+From letter A the sum of squares is $50$, and the pairwise product sum is $47$, so
+
+$$
+2(50-47)=2\\cdot 3=6
+$$
+
+The left-hand side therefore evaluates to $6$, matching the claim.
 
 So the statement is True.`,
 
     `**C.** → False
 
+Use the standard cubic identity linking cubes to the elementary symmetric sums:
+
 $$
-a^{3}+b^{3}+c^{3}-3abc=(a+b+c)\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)=12\\cdot 3=36
+a^{3}+b^{3}+c^{3}-3abc=(a+b+c)\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)
+$$
+
+The second factor is $50-47=3$, so
+
+$$
+a^{3}+b^{3}+c^{3}-3abc=12\\cdot 3=36
 $$
 
 $$
-a^{3}+b^{3}+c^{3}=36+3\\cdot 60=36+180=216\\neq 220
+a^{3}+b^{3}+c^{3}=36+3\\cdot 60=36+180=216
 $$
+
+The claimed value $220$ is too large by $4$, so the statement fails.
 
 So the statement is False.`,
 
     `**D.** → True
 
-The numbers are the roots of
+By Vieta, $a$, $b$, $c$ are the roots of the monic cubic built from the three archive records:
 
 $$
 t^{3}-12t^{2}+47t-60=0
 $$
 
-Testing shows $t=3$ is a root; dividing gives $(t-3)(t^{2}-9t+20)=(t-3)(t-4)(t-5)$. The unordered triple is $\\{3,4,5\\}$.
+Testing $t=3$: $27-108+141-60=0$, so $t=3$ is a root. Polynomial division (or synthetic division) then factors
+
+$$
+(t-3)(t^{2}-9t+20)=(t-3)(t-4)(t-5)
+$$
+
+Hence the unordered triple is exactly $\\{3,4,5\\}$.
 
 So the statement is True.`,
 
     `**E.** → False
 
+Combine the three reciprocals over a common denominator using the archive products:
+
 $$
-\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{ab+bc+ca}{abc}=\\dfrac{47}{60}\\neq\\dfrac{60}{47}
+\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{ab+bc+ca}{abc}=\\dfrac{47}{60}
 $$
+
+The claim flips numerator and denominator to $60/47$. That reciprocal of the true sum is a classic trap and does not equal $\\dfrac{47}{60}$.
 
 So the statement is False.`,
   ];
@@ -222,53 +302,85 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → False
 
+Discount each gift at $5\\%$ back to today and add:
+
 $$
 \\mathrm{PV}=\\dfrac{10000}{1.05}+\\dfrac{12000}{1.05^{3}}+\\dfrac{14000}{1.05^{4}}
 $$
 
-$$
-\\dfrac{10000}{1.05}\\approx 9523.81,\\quad \\dfrac{12000}{1.05^{3}}\\approx 10366.05,\\quad \\dfrac{14000}{1.05^{4}}\\approx 11517.83
-$$
+Approximate each term separately:
 
 $$
-\\mathrm{PV}\\approx 9523.81+10366.05+11517.83=31407.69\\ngtr 32000
+\\dfrac{10000}{1.05}\\approx 9523.81
 $$
-
-So the statement is False.`,
-
-    `**B.** → True
-
-$$
-\\dfrac{10000}{1.05}\\approx 9523.81<9600
-$$
-
-So the statement is True.`,
-
-    `**C.** → True
-
-A perpetuity-due of $10000$ at rate $i=0.05$ has present value
-
-$$
-10000\\cdot\\dfrac{1+i}{i}=10000\\cdot\\dfrac{1.05}{0.05}=10000\\cdot 21=210000
-$$
-
-So the statement is True.`,
-
-    `**D.** → False
-
-Paying each cash flow one year earlier shortens every discount exponent, so each term’s present value rises and the package present value rises — it does not decrease.
-
-So the statement is False.`,
-
-    `**E.** → False
-
-From letter A:
 
 $$
 \\dfrac{12000}{1.05^{3}}\\approx 10366.05,\\qquad \\dfrac{14000}{1.05^{4}}\\approx 11517.83
 $$
 
-The year-$3$ gift has the smaller present value.
+$$
+\\mathrm{PV}\\approx 9523.81+10366.05+11517.83=31407.69
+$$
+
+Since $31407.69<32000$, the package does not exceed $32000$.
+
+So the statement is False.`,
+
+    `**B.** → True
+
+Only the one-year gift matters here. Discount $10000$ for a single year at the effective rate $5\\%$:
+
+$$
+\\dfrac{10000}{1.05}\\approx 9523.81
+$$
+
+Compare that present value with the claimed threshold $9600$:
+
+$$
+9523.81<9600
+$$
+
+The discounted gift is therefore strictly less than $9600$, so the statement holds.
+
+So the statement is True.`,
+
+    `**C.** → True
+
+A level perpetuity-due of amount $R$ at effective rate $i$ pays at the start of every year, so its present value is one period larger than an ordinary perpetuity:
+
+$$
+\\ddot{a}_{\\infty}=R\\cdot\\dfrac{1+i}{i}
+$$
+
+With $R=10000$ and $i=0.05$:
+
+$$
+10000\\cdot\\dfrac{1.05}{0.05}=10000\\cdot 21=210000
+$$
+
+exactly as claimed.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+Moving every gift one year earlier replaces each discount factor $1/(1.05)^{n}$ by $1/(1.05)^{n-1}$. Because $1.05>1$, each new factor is strictly larger, so every individual present value rises. The sum of three larger positive terms is larger, not smaller — the claim that PV decreases is the wrong direction.
+
+So the statement is False.`,
+
+    `**E.** → False
+
+Reuse the year-$3$ and year-$4$ terms from letter A:
+
+$$
+\\dfrac{12000}{1.05^{3}}\\approx 10366.05
+$$
+
+$$
+\\dfrac{14000}{1.05^{4}}\\approx 11517.83
+$$
+
+The year-$4$ gift has the larger present value despite arriving later, because the extra $2000$ of face value outweighs one more year of discounting. The claim that the year-$3$ PV is larger is therefore false.
 
 So the statement is False.`,
   ];
@@ -311,53 +423,89 @@ All three run together from empty. Decide whether each statement is true or fals
   const tactical_explanations = [
     `**A.** → False
 
-A’s rate is $\\dfrac{1}{6}$ tank per hour. Compare with $\\dfrac{1}{5}$:
+Pipe A fills one tank in $6$ hours, so its hourly rate is the reciprocal of that time:
+
+$$
+r_A=\\dfrac{1}{6}\\ \\text{tank per hour}
+$$
+
+Compare with the claimed threshold $\\tfrac{1}{5}$ by cross-multiplying (or by noting $5<6$):
 
 $$
 \\dfrac{1}{6}<\\dfrac{1}{5}
 $$
 
+A’s rate is therefore strictly smaller than $\\tfrac{1}{5}$, not greater. The claim has the inequality the wrong way.
+
 So the statement is False.`,
 
     `**B.** → False
 
-Net rate:
+Add the two inlet rates and subtract the drain rate, using a common denominator of $12$:
 
 $$
-\\dfrac{1}{6}+\\dfrac{1}{4}-\\dfrac{1}{12}=\\dfrac{2}{12}+\\dfrac{3}{12}-\\dfrac{1}{12}=\\dfrac{4}{12}=\\dfrac{1}{3}
+r_A+r_B-r_D=\\dfrac{1}{6}+\\dfrac{1}{4}-\\dfrac{1}{12}
 $$
 
 $$
-\\dfrac{1}{3}\\neq \\dfrac{5}{12}
+=\\dfrac{2}{12}+\\dfrac{3}{12}-\\dfrac{1}{12}=\\dfrac{4}{12}=\\dfrac{1}{3}
 $$
+
+The net combined rate is $\\tfrac{1}{3}$. The claim asserts equality with $\\tfrac{5}{12}$, but $\\tfrac{1}{3}=\\tfrac{4}{12}\\neq\\tfrac{5}{12}$.
 
 So the statement is False.`,
 
     `**C.** → False
 
-Time from empty at net rate $\\dfrac{1}{3}$ is exactly $3$ hours, not strictly less.
+From letter B the net fill rate with all three open is $\\tfrac{1}{3}$ tank per hour. Starting from empty, the time to reach one full tank is the reciprocal of that rate:
+
+$$
+T=\\dfrac{1}{1/3}=3\\ \\text{hours}
+$$
+
+exactly. The claim requires a fill time strictly less than $3$ hours, so the strict inequality fails even though the tank does fill in finite time.
 
 So the statement is False.`,
 
     `**D.** → True
 
-A with drain only:
+With B closed, only A and the drain remain. Their net rate is
 
 $$
-\\dfrac{1}{6}-\\dfrac{1}{12}=\\dfrac{1}{12}
+r_A-r_D=\\dfrac{1}{6}-\\dfrac{1}{12}=\\dfrac{2}{12}-\\dfrac{1}{12}=\\dfrac{1}{12}
 $$
 
-Time to fill:
+The net rate is still positive, so the tank fills. The time needed is
 
 $$
-12>8
+T=\\dfrac{1}{1/12}=12\\ \\text{hours}
 $$
+
+and $12>8$, so the fill time exceeds $8$ hours as claimed.
 
 So the statement is True.`,
 
     `**E.** → True
 
-B’s hourly fill is $\\dfrac{1}{4}$. A with drain nets $\\dfrac{1}{12}$. Since $\\dfrac{1}{4}>\\dfrac{1}{12}$, B alone outpaces that net flow.
+B alone contributes one-quarter of a tank in one hour:
+
+$$
+r_B=\\dfrac{1}{4}
+$$
+
+A together with the drain contribute the net rate from letter D:
+
+$$
+r_A-r_D=\\dfrac{1}{12}
+$$
+
+Compare the two hourly contributions:
+
+$$
+\\dfrac{1}{4}>\\dfrac{1}{12}
+$$
+
+so B alone fills more in one hour than A and the drain add net in one hour.
 
 So the statement is True.`,
   ];
@@ -409,59 +557,91 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Break-even:
+Break-even means total contribution equals fixed costs EUR $4800$:
 
 $$
 4x+5y+6z=4800
 $$
 
-Substitute $x=2z$ and $y=3z$:
+Substitute the forced mix ratios $x=2z$ and $y=3z$:
 
 $$
-8z+15z+6z=29z=4800\\Rightarrow z=\\dfrac{4800}{29}\\approx 165.52>160
+4(2z)+5(3z)+6z=8z+15z+6z=29z
 $$
+
+$$
+29z=4800\\qquad\\Rightarrow\\qquad z=\\dfrac{4800}{29}\\approx 165.52
+$$
+
+Since $165.52>160$, the break-even volume of product $Z$ is strictly greater than $160$.
 
 So the statement is True.`,
 
     `**B.** → False
 
+From letter A the break-even $Z$-volume is the exact fraction
+
 $$
 z=\\dfrac{4800}{29}
 $$
 
-Since $29\\cdot 165=4785$ and $4800-4785=15\\neq 0$, $z$ is not an integer.
+Check whether $29$ divides $4800$ evenly:
+
+$$
+29\\cdot 165=4785,\\qquad 4800-4785=15\\neq 0
+$$
+
+The remainder $15$ is nonzero, so $z$ is not an integer number of units. The claim that break-even $z$ is an integer fails.
 
 So the statement is False.`,
 
     `**C.** → True
 
+Under the mix $x=2z$, $y=3z$, total unit volume collapses to a multiple of $z$:
+
 $$
-x+y+z=6z=\\dfrac{28800}{29}\\approx 993.10<1000
+x+y+z=2z+3z+z=6z
 $$
+
+$$
+6z=\\dfrac{6\\cdot 4800}{29}=\\dfrac{28800}{29}\\approx 993.10
+$$
+
+Compare with the claimed threshold $1000$:
+
+$$
+993.10<1000
+$$
+
+so break-even total unit volume is strictly less than $1000$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-With fixed costs EUR $5800$:
+Keep the same mix coefficient $29z$ but replace fixed costs by the higher figure EUR $5800$:
 
 $$
-29z=5800\\Rightarrow z=\\dfrac{5800}{29}=200
+29z=5800\\qquad\\Rightarrow\\qquad z=\\dfrac{5800}{29}=200
 $$
 
-exactly, so $z$ does not exceed $200$.
+exactly. The claim needs the strict inequality $z>200$, but equality holds instead. A non-strict threshold does not satisfy “exceed $200$”, so the statement fails.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Without $Y$: $4(2z)+6z=14z=4800$, so
+Drop product $Y$ by setting $y=0$, while keeping $x=2z$ and the original fixed costs EUR $4800$:
 
 $$
-z=\\dfrac{4800}{14}\\approx 342.86>\\dfrac{4800}{29}\\approx 165.52
+4(2z)+6z=8z+6z=14z=4800
 $$
 
-The required $z$ is strictly larger.
+$$
+z=\\dfrac{4800}{14}\\approx 342.86
+$$
+
+Compare with the three-product break-even $z\\approx 165.52$ from letter A: $342.86>165.52$, so the required $z$ is strictly larger without $Y$.
 
 So the statement is True.`,
   ];
@@ -485,13 +665,6 @@ So the statement is True.`,
 export function buildMathQ27Ineq() {
   const context = `Decide whether each inequality claim is true or false.`;
 
-  // A: |x-1|+|x-4| ≥ 3 for all real x? Distance interpretation: |x-1|+|x-4| ≥ |4-1|=3 always. Equality on [1,4]. Claim "≥ 3 for all x with equality only at x=2.5" — equality on whole [1,4], not only midpoint. False if claim says only at 2.5.
-  // Statement A: solution of |x-1|+|x-4|≤3 is exactly [1,4]. True (equals 3 on [1,4], >3 outside)
-  // B: √(2x-1) < x-2. Domain x≥1/2; RHS>0 ⇒ x>2. Square: 2x-1 < x^2-4x+4 ⇒ 0<x^2-6x+5=(x-1)(x-5). On x>2: true for x>5. Also need check. Solution (5,∞). Claim "(2,∞)" False
-  // C: (x-2)/(x+1) ≤ 0 on [-1,2]? Critical -1,2; sign chart negative on (-1,2], undefined at -1. So (-1,2], not including -1. Claim [-1,2] False
-  // D: x^2 - |x| - 2 < 0. Let u=|x|≥0: u^2-u-2<0 → (u-2)(u+1)<0 → u<2 since u≥0. So |x|<2 → (-2,2). Claim (-2,2) True
-  // E: |2x+1| > |x-3|. Square: (2x+1)^2 > (x-3)^2 → 4x^2+4x+1 > x^2-6x+9 → 3x^2+10x-8>0 → (3x-2)(x+4)>0 → x<-4 or x>2/3. Claim solution (-∞,-4)∪(2/3,∞) True
-
   const statements = [
     "The solution set of $|x-1|+|x-4|\\le 3$ is exactly $[1,4]$.",
     "The solution set of $\\sqrt{2x-1}<x-2$ is exactly $(2,+\\infty)$.",
@@ -505,55 +678,67 @@ export function buildMathQ27Ineq() {
   const tactical_explanations = [
     `**A.** → True
 
-For any real $x$,
+Interpret $|x-1|+|x-4|$ as the sum of distances from $x$ to $1$ and to $4$ on the real line. For any real $x$, the triangle inequality on the line gives
 
 $$
 |x-1|+|x-4|\\ge |(4)-(1)|=3
 $$
 
-with equality precisely when $x$ lies between $1$ and $4$. Hence $|x-1|+|x-4|\\le 3$ forces equality, i.e. $x\\in[1,4]$.
+with equality if and only if $x$ lies between the two points, i.e. on the closed interval $[1,4]$. Therefore the inequality $|x-1|+|x-4|\\le 3$ forces equality, and the solution set is exactly $[1,4]$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Domain: $2x-1\\ge 0\\Rightarrow x\\ge \\tfrac{1}{2}$. Also $x-2>0\\Rightarrow x>2$ (else a nonnegative square root cannot be $<$ a nonpositive number). Squaring on $x>2$:
+Domain of the square root: $2x-1\\ge 0$, so $x\\ge \\tfrac{1}{2}$. Also a nonnegative square root cannot be strictly less than a nonpositive number, so one needs $x-2>0$, i.e. $x>2$. Square both sides on $x>2$:
 
 $$
-2x-1<(x-2)^{2}=x^{2}-4x+4\\Rightarrow 0<x^{2}-6x+5=(x-1)(x-5)
+2x-1<(x-2)^{2}=x^{2}-4x+4
 $$
 
-On $x>2$ this holds for $x>5$. Solution $(5,+\\infty)$, not $(2,+\\infty)$.
+$$
+0<x^{2}-6x+5=(x-1)(x-5)
+$$
+
+On $x>2$ this holds precisely when $x>5$. The true solution is $(5,+\\infty)$, not the claimed $(2,+\\infty)$.
 
 So the statement is False.`,
 
     `**C.** → False
 
-Critical points $x=-1$ (undefined) and $x=2$. The quotient is negative or zero on $(-1,2]$, never at $x=-1$. The closed interval $[-1,2]$ wrongly includes the asymptote.
+Critical points are the zero $x=2$ and the vertical asymptote $x=-1$ where the expression is undefined. A sign chart shows the quotient is negative on $(-1,2)$ and zero at $x=2$, so the solution of $\\le 0$ is $(-1,2]$. Including the closed endpoint $x=-1$ is illegal because the expression is undefined there. The claimed set $[-1,2]$ is therefore wrong.
 
 So the statement is False.`,
 
     `**D.** → True
 
-Put $u=|x|\\ge 0$:
+Substitute $u=|x|\\ge 0$ to remove the absolute value and obtain an ordinary quadratic inequality in $u$:
 
 $$
-u^{2}-u-2<0\\Rightarrow (u-2)(u+1)<0\\Rightarrow 0\\le u<2
+u^{2}-u-2<0\\qquad\\Rightarrow\\qquad (u-2)(u+1)<0
 $$
 
-so $|x|<2$, i.e. $x\\in(-2,2)$.
+The roots are $u=-1$ and $u=2$. For $u\\ge 0$ the product is negative precisely when $0\\le u<2$, i.e. $|x|<2$. Translating back to $x$ gives the open interval $x\\in(-2,2)$, matching the claim.
 
 So the statement is True.`,
 
     `**E.** → True
 
-Both sides nonnegative, so squaring is valid:
+Both absolute values are nonnegative, so squaring preserves the inequality direction:
 
 $$
-(2x+1)^{2}>(x-3)^{2}\\Rightarrow 3x^{2}+10x-8>0\\Rightarrow (3x-2)(x+4)>0
+(2x+1)^{2}>(x-3)^{2}
 $$
 
-Roots $-4$ and $\\tfrac{2}{3}$, so $x<-4$ or $x>\\tfrac{2}{3}$.
+$$
+4x^{2}+4x+1>x^{2}-6x+9\\qquad\\Rightarrow\\qquad 3x^{2}+10x-8>0
+$$
+
+$$
+(3x-2)(x+4)>0
+$$
+
+The critical roots are $x=-4$ and $x=\\tfrac{2}{3}$. The quadratic (leading coefficient positive) is positive outside the roots: $x<-4$ or $x>\\tfrac{2}{3}$, as claimed.
 
 So the statement is True.`,
   ];
@@ -600,31 +785,73 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Left limit: $2\\cdot 1+1=3$. Right-hand value: $1^{2}-2\\cdot 1+4=3$. Limits and value agree, so $f$ is continuous at $x=1$.
+Check the left-hand limit, the right-hand value, and $f(1)$. From the left piece $2x+1$,
+
+$$
+\\lim_{x\\to 1^{-}}f(x)=2\\cdot 1+1=3
+$$
+
+From the right piece (which also defines $f(1)$),
+
+$$
+f(1)=1^{2}-2\\cdot 1+4=3
+$$
+
+Left limit, right-hand value, and function value all equal $3$, so the three continuity conditions hold at $x=1$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Left-hand derivative is $2$. Right-hand derivative of $x^{2}-2x+4$ is $2x-2$, equal to $0$ at $x=1$. Since $2\\neq 0$, $f$ is not differentiable at $x=1$.
+Differentiability at the join requires matching one-sided derivatives. On $x<1$, $f'(x)=2$, so the left-hand derivative at $1$ is $2$. On $x\\ge 1$, $f'(x)=2x-2$, hence
+
+$$
+f'_+(1)=2\\cdot 1-2=0
+$$
+
+Since $2\\neq 0$, the one-sided derivatives disagree and $f$ is not differentiable at $x=1$. Continuity alone (letter A) is not enough for differentiability.
 
 So the statement is False.`,
 
     `**C.** → True
 
-For $x\\ge 1$, $f(x)=x^{2}-2x+4=(x-1)^{2}+3\\ge 3$, with equality exactly at $x=1$.
+On $x\\ge 1$ complete the square for the quadratic piece to reveal its vertex value:
+
+$$
+f(x)=x^{2}-2x+4=(x-1)^{2}+3
+$$
+
+The squared term is nonnegative and vanishes only at $x=1$, so
+
+$$
+f(x)\\ge 3\\qquad\\text{for all }x\\ge 1
+$$
+
+with equality precisely at $x=1$, which is exactly the claim.
 
 So the statement is True.`,
 
     `**D.** → False
 
-On $x<1$, $f(x)=2x+1$ becomes arbitrarily negative as $x\\to-\\infty$, so no global minimum value $3$ exists on $\\mathbb{R}$.
+Letter C only controls the right-hand piece $x\\ge 1$. On the left piece $x<1$ one has the linear formula
+
+$$
+f(x)=2x+1
+$$
+
+As $x\\to-\\infty$, this expression tends to $-\\infty$, so $f$ is unbounded below on $\\mathbb{R}$. There is therefore no global minimum value equal to $3$ on the whole real line.
 
 So the statement is False.`,
 
     `**E.** → True
 
-If $x<1$ and $f(x)=0$, then $2x+1=0$, so $x=-\\tfrac{1}{2}<0$.
+Restrict to the open half-line $x<1$ and solve $f(x)=0$ on the linear piece:
+
+$$
+2x+1=0\\qquad\\Rightarrow\\qquad x=-\\dfrac{1}{2}
+$$
+
+The candidate $x=-\\tfrac{1}{2}$ lies in the region $x<1$, and it is negative. Hence the left-region equation has a negative root, as claimed.
 
 So the statement is True.`,
   ];
@@ -667,35 +894,67 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-For $p>0$ and $A>0$, $x^{p}\\to 0$ as $x\\to 0^{+}$, so $A x^{p}\\to 0$.
+Assume $p>0$ and $A>0$. As $x$ approaches $0$ from the right, every positive power of $x$ tends to $0$:
+
+$$
+x^{p}\\to 0\\qquad(x\\to 0^{+})
+$$
+
+Multiplying by the fixed positive constant $A$ preserves that vanishing limit:
+
+$$
+f(x)=A x^{p}\\to 0
+$$
+
+so the claimed right-hand limit at zero holds for every positive exponent $p$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-For $p<0$ write $p=-q$ with $q>0$. Then $x^{p}=1/x^{q}\\to 0$ as $x\\to+\\infty$, hence $f(x)\\to 0$.
+Assume $p<0$ and write $p=-q$ with $q>0$. Then for $x>0$,
+
+$$
+f(x)=A x^{-q}=\\dfrac{A}{x^{q}}
+$$
+
+As $x\\to+\\infty$, the denominator $x^{q}\\to+\\infty$ while $A$ stays fixed, so $f(x)\\to 0$. Negative exponents therefore send the power model to $0$ at infinity, as claimed.
 
 So the statement is True.`,
 
     `**C.** → True
 
-If $p=0$, then $x^{0}=1$ for all $x>0$, so $f(x)=A$, a constant.
+If $p=0$, the elementary power identity $x^{0}=1$ holds for every $x>0$. Substituting into the model gives
+
+$$
+f(x)=A\\cdot 1=A
+$$
+
+on the whole half-line $(0,+\\infty)$. That is a constant function whose constant value is the parameter $A>0$, exactly as claimed.
 
 So the statement is True.`,
 
     `**D.** → True
 
+Form the ratio of the model at doubled argument versus at $x$:
+
 $$
-\\dfrac{f(2x)}{f(x)}=\\dfrac{A(2x)^{p}}{A x^{p}}=2^{p}
+\\dfrac{f(2x)}{f(x)}=\\dfrac{A(2x)^{p}}{A x^{p}}=\\dfrac{(2x)^{p}}{x^{p}}=2^{p}
 $$
 
-which depends only on $p$, not on $x$.
+The constant $A$ cancels and the powers of $x$ cancel, leaving $2^{p}$. That quantity depends only on the parameter $p$, not on the variable $x$.
 
 So the statement is True.`,
 
     `**E.** → False
 
-If $p=-1$, then $f(x)=A/x\\to+\\infty$ as $x\\to 0^{+}$, which is not a finite limit.
+Specialise to the exponent $p=-1$: then $f(x)=A/x$ with $A>0$. As $x\\to 0^{+}$, the denominator shrinks toward $0$ while the numerator stays fixed and positive, so
+
+$$
+\\dfrac{A}{x}\\to +\\infty
+$$
+
+An infinite limit is not a finite positive number. The claim that the limit is finite and positive therefore fails.
 
 So the statement is False.`,
   ];
@@ -738,37 +997,67 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Factor by grouping / testing $x=1$:
+Substitute $x=1$ into the cubic and simplify the expression carefully:
 
 $$
-1-3+(k+2)-k=0
+1-3+(k+2)-k=0+k-k=0
 $$
 
-so $x=1$ is always a root. Dividing gives $(x-1)(x^{2}-2x+k)=0$.
+The identity holds for every real $k$, so $x=1$ is always a root. Polynomial division (or synthetic division) then factors the cubic as
+
+$$
+(x-1)(x^{2}-2x+k)=0
+$$
+
+for every real parameter $k$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-For $k=1$, $x^{2}-2x+1=(x-1)^{2}$, so the cubic is $(x-1)^{3}=0$: one distinct real root of multiplicity three.
+When $k=1$ the quadratic factor from letter A becomes a perfect square:
+
+$$
+x^{2}-2x+1=(x-1)^{2}
+$$
+
+so the cubic collapses to
+
+$$
+(x-1)(x-1)^{2}=(x-1)^{3}=0
+$$
+
+There is only one distinct real root ($x=1$) of multiplicity three — not two distinct real roots as claimed.
 
 So the statement is False.`,
 
     `**C.** → True
 
-For $k=0$ the quadratic factor is $x(x-2)$. Roots $0$, $1$, and $2$ — three distinct reals.
+When $k=0$ the factorisation from letter A becomes
+
+$$
+(x-1)(x^{2}-2x)=(x-1)\\,x\\,(x-2)=0
+$$
+
+The three roots are therefore $x=0$, $x=1$, and $x=2$. These three numbers are pairwise distinct, so the equation has three distinct real roots when $k=0$.
 
 So the statement is True.`,
 
     `**D.** → True
 
-For $k=2$ the discriminant of $x^{2}-2x+2$ is $4-8=-4<0$, so only the real root $x=1$ remains.
+When $k=2$ the quadratic factor is $x^{2}-2x+2$. Compute its discriminant:
+
+$$
+(-2)^{2}-4\\cdot 1\\cdot 2=4-8=-4<0
+$$
+
+A negative discriminant means that quadratic has no real roots. The only real root of the cubic is therefore the linear factor’s root $x=1$ — exactly one real root.
 
 So the statement is True.`,
 
     `**E.** → True
 
-When $k\\le 1$ there are three real roots counting multiplicity. By Vieta the sum of roots of $x^{3}-3x^{2}+\\cdots$ is $3$.
+The quadratic $x^{2}-2x+k$ has real roots precisely when its discriminant $4-4k\\ge 0$, i.e. when $k\\le 1$. In that regime the cubic has three real roots counting multiplicity (including repeats such as the triple root at $k=1$). For a monic cubic $x^{3}-3x^{2}+\\cdots$, Vieta’s sum of all roots with multiplicity is always $3$, independent of $k$.
 
 So the statement is True.`,
   ];
@@ -811,41 +1100,55 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Product rule:
+Differentiate the product $u=\\ln(x^{2}+1)$ and $v=e^{-x}$ with the product rule. The chain rule gives $u'=2x/(x^{2}+1)$ and $v'=-e^{-x}$, so
 
 $$
 f'(x)=\\dfrac{2x}{x^{2}+1}\\,e^{-x}+\\ln(x^{2}+1)\\cdot(-e^{-x})
 $$
 
-Both terms contain $e^{-x}$.
+Each of the two summands visibly contains the factor $e^{-x}$. One can also factor it out globally, but either way every term carries that exponential factor.
 
 So the statement is True.`,
 
     `**B.** → True
 
+Factor $e^{-x}$ out of the derivative from letter A:
+
 $$
 f'(x)=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right)
 $$
 
-At $x=0$ the bracket is $0-\\ln 1=0$, so $f'(0)=0$.
+Evaluate the bracket at $x=0$:
+
+$$
+\\dfrac{0}{1}-\\ln(1)=0-0=0
+$$
+
+Since $e^{0}=1\\neq 0$, one gets $f'(0)=0$. Thus $x=0$ is a critical point of $f$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-For $x<0$ one has $\\dfrac{2x}{x^{2}+1}<0$ while $\\ln(x^{2}+1)>0$, so the bracket is negative. Multiplying by $e^{-x}>0$ keeps $f'(x)<0$.
+For $x<0$ the fraction $2x/(x^{2}+1)$ is negative (numerator negative, denominator always positive). Meanwhile $\\ln(x^{2}+1)>\\ln 1=0$ for $x\\neq 0$. Therefore the bracket
+
+$$
+\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)
+$$
+
+is a negative number minus a positive number, hence negative. Multiplying by $e^{-x}>0$ keeps $f'(x)<0$ on the whole half-line $(-\\infty,0)$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Letter B already produces a critical point at $x=0$.
+Letter B already exhibits an explicit critical point: $f'(0)=0$. The claim that $f$ has no critical points anywhere on $\\mathbb{R}$ is therefore contradicted by that single zero of the derivative. (In fact the bracket may vanish at other points too, but one counterexample already kills the claim.)
 
 So the statement is False.`,
 
     `**E.** → True
 
-The exponential factor never vanishes and never changes sign, so it does not alter the sign of $f'$.
+The exponential $e^{-x}$ is strictly positive for every real $x$ and never zero. Multiplying the bracket by a never-vanishing positive factor cannot flip the sign of $f'$ and cannot create or destroy zeros of $f'$ beyond those of the bracket. Hence $e^{-x}$ never changes the sign of $f'$.
 
 So the statement is True.`,
   ];
@@ -891,39 +1194,53 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Three-factor product with $u=t^{2}$, $v=e^{-t}$, $w=\\ln(2t+1)$:
+Write $Z=u\\,v\\,w$ with $u=t^{2}$, $v=e^{-t}$, and $w=\\ln(2t+1)$. The three derivatives are
 
 $$
 u'=2t,\\qquad v'=-e^{-t},\\qquad w'=\\dfrac{2}{2t+1}
 $$
 
+The three-factor product rule $Z'=u'vw+uv'w+uvw'$ then yields, after factoring $e^{-t}$,
+
 $$
-Z'=u'vw+uv'w+uvw'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
+Z'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
 $$
+
+which matches the claimed formula for all $t>0$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-For $t>0$ one has $t^{2}>0$, $e^{-t}>0$, and $\\ln(2t+1)>0$, so $Z(t)>0$.
+For every $t>0$ check the three factors of $Z$ separately. First $t^{2}>0$ because $t\\neq 0$. Second $e^{-t}>0$ for all real $t$. Third $2t+1>1$, so $\\ln(2t+1)>\\ln 1=0$. The product of three strictly positive quantities is strictly positive, hence $Z(t)>0$ on the whole half-line $(0,+\\infty)$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-The factor $e^{-t}$ is always positive for real $t$, so it does not change the sign of $Z'$.
+From letter A one may write $Z'(t)=e^{-t}\\cdot B(t)$ where $B$ is the displayed bracket. For every real $t$ the factor $e^{-t}$ is strictly positive. Multiplying $B(t)$ by a positive number cannot reverse the inequality $B(t)>0$ or $B(t)<0$, so $e^{-t}$ does not change the sign of $Z'$ on $t>0$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-At $t=1$ the bracket in letter A is $\\ln 3+\\tfrac{2}{3}>0$, so $Z'(1)>0$. Hence $Z$ is increasing at $t=1$ and cannot be strictly decreasing on the whole $(0,+\\infty)$.
+Evaluate the bracket of letter A at $t=1$:
+
+$$
+B(1)=2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}
+$$
+
+Since $\\ln 3>0$, one has $B(1)>0$, and with $e^{-1}>0$ this forces $Z'(1)>0$. A positive derivative at $t=1$ means $Z$ is locally increasing there, so $Z$ cannot be strictly decreasing on the whole $(0,+\\infty)$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-As $t\\to+\\infty$, the factor $e^{-t}$ decays faster than any polynomial growth of $t^{2}\\ln(2t+1)$, so $Z(t)\\to 0$.
+As $t\\to+\\infty$, the polynomial–logarithmic growth of $t^{2}\\ln(2t+1)$ is dominated by the exponential decay of $e^{-t}$. More formally, standard growth-versus-decay limits give $t^{2}\\ln(2t+1)\\,e^{-t}\\to 0$ (exponential beats any polynomial times a slow log). Therefore
+
+$$
+\\lim_{t\\to +\\infty}Z(t)=0
+$$
 
 So the statement is True.`,
   ];
@@ -975,47 +1292,73 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Ana sweeps $2$–$0$ with probability
+Ana wins the match in exactly two games only by sweeping both games (score $2$–$0$). Independence of the games gives
 
 $$
-p^{2}=\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{4}{9}
+P(\\text{Ana sweeps})=p^{2}=\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{4}{9}
 $$
+
+No other two-game path awards the match to Ana (a split would force a third game). So the probability is exactly $\\dfrac{4}{9}$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-A third game occurs precisely when the first two games are split:
+A third game is needed precisely when the first two games are split one–one. The two mutually exclusive orders are Ana-then-Ben and Ben-then-Ana:
+
+$$
+P(\\text{split})=pq+qp=2pq
+$$
 
 $$
 2pq=2\\cdot\\dfrac{2}{3}\\cdot\\dfrac{1}{3}=\\dfrac{4}{9}
 $$
 
+so the match lasts exactly three games with probability $\\dfrac{4}{9}$.
+
 So the statement is True.`,
 
     `**C.** → False
 
-Ana’s match-win probability is
+Ana’s overall match-win probability includes the $2$–$0$ sweep and the $2$–$1$ paths:
 
 $$
-p^{2}+2p^{2}q=p^{2}(1+2q)=\\dfrac{4}{9}\\left(1+\\dfrac{2}{3}\\right)=\\dfrac{4}{9}\\cdot\\dfrac{5}{3}=\\dfrac{20}{27}
+P(\\text{Ana wins match})=p^{2}+2p^{2}q=p^{2}(1+2q)
 $$
 
-which is not $\\dfrac{2}{3}=\\dfrac{18}{27}$. The value $\\dfrac{2}{3}$ is only Ana’s per-game win probability.
+$$
+=\\dfrac{4}{9}\\left(1+\\dfrac{2}{3}\\right)=\\dfrac{4}{9}\\cdot\\dfrac{5}{3}=\\dfrac{20}{27}
+$$
+
+Compare with $\\dfrac{2}{3}=\\dfrac{18}{27}$: the match-win probability is larger. The trap is confusing Ana’s per-game win probability $p=\\tfrac{2}{3}$ with her match-win probability.
 
 So the statement is False.`,
 
     `**D.** → True
 
-Given a $1$–$1$ split after two games, the third game decides the match, and Ana wins that game with probability $p=\\dfrac{2}{3}$.
+Conditional on lasting three games, the first two games must already be split $1$–$1$. The third game then decides the match alone. Ana wins that deciding game with her ordinary game-win probability
+
+$$
+p=\\dfrac{2}{3}
+$$
+
+Equivalently, $P(\\text{Ana wins}\\mid\\text{three games})=p$, which matches the claim exactly.
 
 So the statement is True.`,
 
     `**E.** → True
 
+The match ends in two games when either player sweeps:
+
 $$
-P(\\text{ends in two})=p^{2}+q^{2}=\\dfrac{4}{9}+\\dfrac{1}{9}=\\dfrac{5}{9}
+P(\\text{ends in two})=p^{2}+q^{2}
 $$
+
+$$
+=\\left(\\dfrac{2}{3}\\right)^{2}+\\left(\\dfrac{1}{3}\\right)^{2}=\\dfrac{4}{9}+\\dfrac{1}{9}=\\dfrac{5}{9}
+$$
+
+Alternatively, this is the complement of the three-game probability $\\tfrac{4}{9}$ from letter B, since $1-\\tfrac{4}{9}=\\tfrac{5}{9}$.
 
 So the statement is True.`,
   ];
@@ -1056,45 +1399,71 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
+For $X\\sim\\mathrm{Bin}(n,p)$ with $n=50$ and $p=0.4$, apply the standard mean and variance formulas separately:
+
 $$
 E[X]=np=50\\cdot 0.4=20
 $$
 
 $$
-\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.4\\cdot 0.6=12
+\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.4\\cdot 0.6=50\\cdot 0.24=12
 $$
+
+Both claimed figures match the formulas exactly, so the joint claim holds.
 
 So the statement is True.`,
 
     `**B.** → True
 
+From letter A, $\\mathrm{Var}(X)=12$, so the standard deviation is
+
 $$
 \\mathrm{SD}(X)=\\sqrt{12}=2\\sqrt{3}
 $$
 
-Since $9<12<16$, one has $3<2\\sqrt{3}<4$.
+Compare squares to sandwich the square root between $3$ and $4$:
+
+$$
+3^{2}=9<12<16=4^{2}
+$$
+
+Taking positive square roots preserves the inequalities, hence $3<2\\sqrt{3}<4$ as claimed.
 
 So the statement is True.`,
 
     `**C.** → False
 
-The variance is $np(1-p)=12$, not $20$. The figure $20$ is the mean, not the variance.
+Letter A already computed $\\mathrm{Var}(X)=np(1-p)=12$. The figure $20$ appearing in the claim is the mean $E[X]=np$, not the variance. Confusing mean with variance is the classic binomial trap here — the variance equals $12$, not $20$, so the statement is wrong.
 
 So the statement is False.`,
 
     `**D.** → True
 
+The sample proportion is $\\hat{p}=X/n=X/50$. Scaling a random variable by $1/n$ scales variance by $1/n^{2}$, which rearranges to the usual Bernoulli-proportion formula
+
 $$
 \\mathrm{Var}(\\hat{p})=\\dfrac{p(1-p)}{n}=\\dfrac{0.4\\cdot 0.6}{50}=\\dfrac{0.24}{50}=0.0048
 $$
+
+matching the claim exactly.
 
 So the statement is True.`,
 
     `**E.** → True
 
+Take the positive square root of the variance from letter D:
+
 $$
-\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}\\approx 0.0693<0.1
+\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}
 $$
+
+Numerically $\\sqrt{0.0049}=0.07$ and $0.0048<0.0049$, so
+
+$$
+\\sqrt{0.0048}\\approx 0.0693<0.1
+$$
+
+The standard deviation of the sales rate is therefore strictly less than $0.1$.
 
 So the statement is True.`,
   ];
@@ -1113,4 +1482,3 @@ So the statement is True.`,
     solution_overview: `$E[X]=20$, $\\mathrm{Var}(X)=12$, $\\mathrm{SD}(X)=2\\sqrt{3}\\in(3,4)$. Variance is not $20$. $\\mathrm{Var}(\\hat{p})=0.0048$, $\\mathrm{SD}(\\hat{p})\\approx 0.069$.`,
   };
 }
-

@@ -157,61 +157,79 @@ Treat chart inflows as thousands of euros (so Year 1 contributes EUR 25,000, and
   const tactical_explanations = [
     `**A.** → True
 
-Sum the chart inflows (thousands):
+Read the four year-end inflows from the chart (already in thousands of euros) and add them:
 
 $$
 25+30+35+40=130
 $$
 
-In euros that is EUR 130,000, which exceeds EUR 120,000.
+Converting thousands to euros gives EUR 130,000 of total undiscounted operating inflows. Compare with the claimed threshold EUR 120,000:
+
+$$
+130{,}000>120{,}000
+$$
+
+so the four chart inflows sum to more than EUR 120,000.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Cumulative undiscounted inflows:
+Build the cumulative undiscounted recovery path year by year (still in thousands):
 
 $$
-25,\\quad 25+30=55,\\quad 55+35=90,\\quad 90+40=130
+25,\\qquad 25+30=55,\\qquad 55+35=90,\\qquad 90+40=130
 $$
 
-After Year 3 the project has recovered only EUR 90,000 of the EUR 100,000 outlay, so payback has not yet occurred by the end of Year 3.
+After Year 3 the project has recovered only EUR 90,000 of the EUR 100,000 outlay made at time zero. Because $90<100$, payback has not yet occurred by the end of Year 3, so it is not strictly before the end of Year 3.
 
 So the statement is False.`,
 
     `**C.** → True
 
-After Year 3 one still needs EUR 10,000. Year 4 contributes EUR 40,000, so the fractional year is
+From letter B, after Year 3 one still needs EUR 10,000 to recover the outlay. Year 4 contributes EUR 40,000, so the fractional year of payback inside Year 4 is
 
 $$
 \\dfrac{10}{40}=0.25
 $$
 
-Payback time:
+Undiscounted payback time is therefore
 
 $$
-3+0.25=3.25\\in(3,\\,3.5)
+3+0.25=3.25
 $$
+
+and $3.25$ lies strictly between $3$ and $3.5$.
 
 So the statement is True.`,
 
     `**D.** → True
 
-NPV at 10% (working in thousands of euros):
+Discount each inflow at $10\\%$ and subtract the outlay, working in thousands of euros:
 
 $$
--100+\\dfrac{25}{1.1}+\\dfrac{30}{1.1^{2}}+\\dfrac{35}{1.1^{3}}+\\dfrac{40}{1.1^{4}}
+\\mathrm{NPV}=-100+\\dfrac{25}{1.1}+\\dfrac{30}{1.1^{2}}+\\dfrac{35}{1.1^{3}}+\\dfrac{40}{1.1^{4}}
 $$
 
+Approximate term by term:
+
 $$
-\\approx -100+22.727+24.793+26.296+27.321=+1.137>0
+\\approx -100+22.727+24.793+26.296+27.321=+1.137
 $$
+
+Since $+1.137>0$, project NPV at $10\\%$ is positive.
 
 So the statement is True.`,
 
     `**E.** → False
 
-The present value of the four inflows is about EUR 101,137, which is **above** the EUR 100,000 outlay (that is why NPV is positive).
+The present value of the four inflows alone (letter D without the $-100$) is about
+
+$$
+22.727+24.793+26.296+27.321=101.137
+$$
+
+thousand euros, i.e. about EUR 101,137. That is strictly above the EUR 100,000 outlay — which is why NPV is positive. The claim that discounted inflows fall below the outlay is therefore false.
 
 So the statement is False.`,
   ];
