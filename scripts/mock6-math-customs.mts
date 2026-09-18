@@ -50,6 +50,8 @@ $$
 |A\\cup B|=|A|+|B|-|A\\cap B|=6+4-2=8
 $$
 
+Exactly eight elements of $U$ lie in the union, as claimed.
+
 So the statement is True.`,
 
     `**B.** → True
@@ -64,7 +66,7 @@ $$
 2\\in A\\setminus C
 $$
 
-Thus $C\\subseteq A$ holds, but $A\\subseteq C$ does not.
+Thus $C\\subseteq A$ holds, but $A\\subseteq C$ does not — both halves of the claim are correct.
 
 So the statement is True.`,
 
@@ -80,7 +82,7 @@ $$
 6\\in A\\cap B\\quad\\text{but}\\quad 6\\notin C=\\{4,8,12\\}
 $$
 
-The counterexample $n=6$ shows $A\\cap B\\not\\subseteq C$.
+The counterexample $n=6$ shows $A\\cap B\\not\\subseteq C$, so the claim fails.
 
 So the statement is False.`,
 
@@ -225,7 +227,7 @@ $$
 F(3)=3^{2}+2\\cdot 3+4=9+6+4=19
 $$
 
-Both values equal $19$, as asserted.
+Both values equal $19$, so $E(3)=F(3)=19$ holds exactly as asserted.
 
 So the statement is True.`,
   ];
@@ -402,7 +404,7 @@ $$
 2x-y:\\quad 2\\cdot 4-3=8-3=5
 $$
 
-Both equations hold at once, so $(x,y)=(4,3)$ is a simultaneous solution of the two-equation system.
+Both equations hold at once, so $(x,y)=(4,3)$ is a simultaneous solution of the two-equation system — the claim is correct.
 
 So the statement is True.`,
 
@@ -418,7 +420,7 @@ $$
 3x=12\\Rightarrow x=4,\\qquad y=7-4=3
 $$
 
-A non-degenerate $2\\times 2$ linear system cannot admit a second distinct real solution besides this pair.
+A non-degenerate $2\\times 2$ linear system cannot admit a second distinct real solution besides this pair $(4,3)$.
 
 So the statement is True.`,
 
@@ -434,13 +436,13 @@ $$
 4>3
 $$
 
-so $x$ is strictly larger than $y$ in the unique real solution of the two-equation pack.
+so $x$ is strictly larger than $y$ in the unique real solution of the two-equation pack, as claimed.
 
 So the statement is True.`,
 
     `**D.** → True
 
-Multiply the two solution coordinates obtained in letter B; no further algebra is required beyond reading off the product.
+Multiply the two solution coordinates obtained in letter B; no further algebra is required beyond reading off the product of those two numbers.
 
 $$
 x\\cdot y=4\\cdot 3=12
@@ -458,7 +460,7 @@ $$
 \\text{unique solution}=(4,3)
 $$
 
-There is therefore no second distinct real solution besides $(4,3)$.
+There is therefore no second distinct real solution besides $(4,3)$ — the claim fails.
 
 So the statement is False.`,
   ];
@@ -744,7 +746,7 @@ $$
 k-9=6+m\\Leftrightarrow m=k-15
 $$
 
-So the vertex of $f$ lies on $g$ if and only if $m=k-15$.
+So the vertex of $f$ lies on $g$ if and only if $m=k-15$, as claimed.
 
 So the statement is True.`,
 
@@ -772,7 +774,7 @@ $$
 k=10\\Rightarrow k-16=-6
 $$
 
-The given value $m=-6$ matches exactly, so with $k=10$ and $m=-6$ the graphs are tangent.
+The given value $m=-6$ matches exactly, so with $k=10$ and $m=-6$ the graphs of $f$ and $g$ are tangent.
 
 So the statement is True.`,
 
@@ -913,7 +915,7 @@ $$
 5t+5=10\\Rightarrow 5t=5\\Rightarrow t=1
 $$
 
-So $t=1$ is indeed a root of the equation $h(t)=2^{10}$, as claimed.
+So $t=1$ is indeed a root of the equation $h(t)=2^{10}$, matching the claim exactly.
 
 So the statement is True.`,
   ];
@@ -1157,7 +1159,7 @@ $$
 x=a^{L}=a^{-3/2}
 $$
 
-and the uniqueness argument from letter A still applies (the map $L\\mapsto a^{L}$ is one-to-one for $x>0$), so $x=a^{-3/2}$ is the unique positive solution.
+and the uniqueness argument from letter A still applies (the map $L\\mapsto a^{L}$ is one-to-one for $x>0$), so $x=a^{-3/2}$ is the unique positive solution of the mixed-base equation.
 
 So the statement is True.`,
 
@@ -1490,7 +1492,7 @@ $$
 \\mathrm{Var}(X)=np(1-p)=5\\cdot 0.45\\cdot 0.55=1.2375
 $$
 
-Both claimed moments of $X$ hold under Regime B.
+Both claimed moments of $X$ hold under Regime B, so the statement is correct.
 
 So the statement is True.`,
 
@@ -1506,7 +1508,7 @@ $$
 \\mathrm{Var}(Y)=4^{2}\\cdot\\mathrm{Var}(X)=16\\cdot 1.2375=19.8
 $$
 
-So both claimed moments of $Y$ hold.
+So both claimed moments of $Y$ hold under the linear transform.
 
 So the statement is True.`,
 
@@ -1538,7 +1540,7 @@ $$
 0.45^{5}=0.0184528125<0.02
 $$
 
-So $P(X=5)$ is strictly less than $0.02$.
+So $P(X=5)$ is strictly less than $0.02$, and the claim holds.
 
 So the statement is True.`,
 
