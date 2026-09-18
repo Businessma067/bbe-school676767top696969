@@ -811,36 +811,6 @@
   },
   {
     "subsection": "6.1",
-    "case_id": "CASE 6.1.031",
-    "title": "Asset Composition Chart 31",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 309 |\n| Machinery | 279 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 130 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 99 |\n| Total assets | **966** |\n| **EQUITY** | |\n| Share capital | 245 |\n| Retained earnings | 204 |\n| Total equity | **449** |\n| **LIABILITIES** | |\n| Long-term bank loan | 196 |\n| Bonds payable | 60 |\n| Trade payables | 174 |\n| Bank overdraft | 87 |\n| Total liabilities | **517** |\n| Total equity and liabilities | **966** |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
-      "After excluding inventory, the remaining current assets still cover current liabilities more than 1.26 times over.",
-      "The equity ratio is below 25.8%.",
-      "The debt ratio exceeds 77.4%.",
-      "Buildings make up more than 57.9% of total assets."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease). That is why the two sides of the extract total the same figure. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
-      "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 290,\\quad \\text{Inventory} = 130,\\quad \\text{CL} = 261\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 290 - 130 = 160\n$$\n\n$$\n\\frac{160}{261} \\approx 0.6130 \\le 1.26\n$$\n\nSo the statement is False.",
-      "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 449,\\quad \\text{Total assets} = 966\n$$\n\n$$\n\\frac{449}{966} \\approx 0.4648 \\approx 46.5\\%\n$$\n\n$$\n46.5\\% > 25.8\\%\n$$\n\nThe equity ratio is 46.5%, above the 25.8% benchmark. Equity ratio ≈ 449 ÷ 966 = 46.5%.\n\nSo the statement is False.",
-      "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 517,\\quad \\text{Total assets} = 966\n$$\n\n$$\n\\frac{517}{966} \\approx 0.5352 \\approx 53.5\\%\n$$\n\n$$\n53.5\\% < 77.4\\%\n$$\n\nThe debt ratio is 53.5%, below the 77.4% benchmark. Debt ratio ≈ 517 ÷ 966 = 53.5%. Claim: exceeds 77.4%. 53.5% does not fit. The debt ratio places debt against total assets. Financing structure is read from that percentage, not from a single euro line alone. Read the claim against the chapter rule: The debt ratio exceeds 77.4%. Customer collections recycle earlier sales through operating cash. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is False.",
-      "From the extract, Buildings = 309 and total assets = 966.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{309}{966}\n$$\n\n$$\n\\text{Share} = 32.0\\%\n$$\n\nBuildings / total assets ≈ 309 ÷ 966 = 32.0%. More than 57.9% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. How the item is held and for how long decides the balance-sheet line. A assets reading of the extract breaks this claim.\n\nSo the statement is False."
-    ]
-  },
-  {
-    "subsection": "6.1",
     "case_id": "CASE 6.1.032",
     "title": "Cash and Cash Equivalents",
     "context": "Review why a higher equity ratio indicates greater financial independence from creditors. Evaluate the following economic assertions:\n",
@@ -2521,36 +2491,6 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.016",
-    "title": "Asset Composition Chart 16",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 371 |\n| Machinery | 276 |\n| Office equipment | 46 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 84 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 106 |\n| Total assets | **1025** |\n| **EQUITY** | |\n| Share capital | 205 |\n| Retained earnings | 204 |\n| Total equity | **409** |\n| **LIABILITIES** | |\n| Long-term bank loan | 249 |\n| Bonds payable | 46 |\n| Trade payables | 250 |\n| Bank overdraft | 71 |\n| Total liabilities | **616** |\n| Total equity and liabilities | **1025** |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
-      "Trade receivables make up less than 36.9% of current assets.",
-      "Cash and cash equivalents make up more than 30.7% of current assets.",
-      "Inventory of €84 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
-      "Total assets of €1,025 thousand equal total equity plus total liabilities."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
-      "From the extract, Trade receivables = 95 and current assets = 285.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{95}{285}\n$$\n\n$$\n\\text{Share} = 33.3\\%\n$$\n\nTrade receivables / current assets ≈ 95 ÷ 285 = 33.3%. Less than 36.9% is true here. Composition shares are plain part ÷ whole from the extract. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
-      "From the extract, Cash and cash equivalents = 106 and current assets = 285.\n\n$$\n\\text{Share} = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{106}{285}\n$$\n\n$$\n\\text{Share} = 37.2\\%\n$$\n\nCash and cash equivalents / current assets ≈ 106 ÷ 285 = 37.2%. More than 30.7% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
-      "Inventory is held for sale or cycle use, so it is current. It is neither an intangible nor a long-term operating asset. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
-      "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
-    ]
-  },
-  {
-    "subsection": "6.3",
     "case_id": "CASE 6.3.017",
     "title": "Return and Cash Flow Extract 17",
     "difficulty_level": "4/5",
@@ -3718,36 +3658,6 @@
     "difficulty_level": "2/5",
     "tier": "full",
     "half": "text"
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.013",
-    "title": "Short Depreciation Extract 13",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €74,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
-      "Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
-      "Asset A's annual depreciation charge is more than 39.5% higher than Asset B's annual depreciation charge.",
-      "Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here.",
-      "The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Read the claim against the chapter rule: Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion fall. Replace the faulty reason with the correct category and the letter flips. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A mainly reading of the extract breaks this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
-      "After liabilities, the residual claim is equity. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect. A concrete fix: put borrowings under liabilities and owner claims under equity. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
-      "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{74{,}000 - 0}{8} = 9{,}250\n$$\n\n$$\n\\text{Asset B} = \\frac{24{,}000 - 2{,}000}{5} = 4{,}400\n$$\n\n$$\n\\frac{9{,}250 - 4{,}400}{4{,}400} = 110.2\\%\n$$\n\n$$\n\\text{Claim: more than 39.5\\% higher}\n$$\n\nAsset A's charge is 110.2% above Asset B's, which exceeds the 39.5% threshold. Note: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
-      "Shape and size never settle the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
-      "On the chapter test the wording is rejected. How the item is held and for how long decides the balance-sheet line. A shown reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
-    ]
   },
   {
     "subsection": "6.4",
@@ -5576,36 +5486,6 @@
       "Test classification, measurement, or the stated comparison on its own terms. A years reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.5",
-    "case_id": "CASE 6.5.064",
-    "title": "Return on Capital Employed Explained in Context",
-    "context": "Examine why a single return on capital employed figure is best interpreted alongside comparable years or similar businesses rather than in isolation. Evaluate the following economic assertions:\n",
-    "statements": [
-      "Asset turnover for a utility company relates revenue earned during the period to the average total assets employed to generate that revenue.",
-      "The equity ratio for a utility company expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
-      "If a utility company draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
-      "Inventory turnover for a manufacturer is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.",
-      "Working capital for a wholesaler is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
-      "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nThe average balances from the extract are the ones the turnover identity needs.\n\nSo the statement is True.",
-      "Looks do not decide the balance-sheet line. On the chapter test the wording is accepted. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A supplier reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
-      "With that split the claim is wrong. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
-      "On the chapter test the wording is accepted. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full",
     "half": "text"
   },

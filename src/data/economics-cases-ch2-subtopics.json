@@ -3307,35 +3307,6 @@
   },
   {
     "subsection": "2.6",
-    "case_id": "CASE 2.6.27",
-    "title": "Simultaneous Demand and Supply Shifts",
-    "context": "Analyze how concurrent shifts in demand and supply affect equilibrium price and quantity. Evaluate the following economic assertions:",
-    "statements": [
-      "The net effect on equilibrium price depends on the relative size of demand and supply shifts.",
-      "Graphical analysis compares new intersection points to identify changed equilibrium outcomes.",
-      "If demand shifts right while supply shifts left, equilibrium price is likely to rise.",
-      "If demand shifts right and supply shifts right together, equilibrium quantity rises.",
-      "Supply and demand shifts can occur together after a natural disaster disrupts production and tastes."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "When demand and supply both move, equilibrium price is not pinned by either shift alone.\n\nA large rightward demand shift tends to raise price; a large rightward supply shift tends to lower it. The net price change is the sum of those opposing or reinforcing pressures, so relative magnitudes decide whether the new intersection sits higher, lower, or roughly unchanged. Quantity can also move in either direction depending on which curve travels farther. Simultaneous-shift analysis therefore always asks which force dominates on price and which on quantity.\n\nSo the statement is True.",
-      "Diagrams compare the old intersection with the new one after both curves move.\n\nReading the new crossing point against the old one shows whether equilibrium price and quantity rose, fell, or stayed ambiguous.\n\nSo the statement is True.",
-      "Demand shifting right raises willingness to pay; supply shifting left cuts available output at each price.\n\nBoth forces push the intersection upward on the price axis, so equilibrium price is likely to rise even if the quantity change remains ambiguous without sizes.\n\nSo the statement is True.",
-      "Rightward demand and rightward supply both increase the quantity that clears at the new intersection.\n\nBuyers want more at each price and sellers offer more at each price, so the equilibrium quantity almost always expands. Price may rise or fall depending on which shift is larger, but the quantity conclusion is firm when both curves move right. Natural examples include a tourism boom that lifts demand while new capacity comes online on the supply side.\n\nSo the statement is True.",
-      "A disaster can destroy plant (supply left) while also changing what households urgently buy (demand shifts).\n\nBoth schedules can therefore move in the same episode, not only one at a time.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
     "case_id": "CASE 2.6.28",
     "title": "Price Ceilings Below Equilibrium",
     "context": "Review how a legal maximum price set below equilibrium creates shortage in competitive markets. Evaluate the following economic assertions:",

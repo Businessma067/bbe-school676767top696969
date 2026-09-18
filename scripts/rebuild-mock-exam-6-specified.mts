@@ -1,7 +1,9 @@
 /**
  * Rebuild Mock Exam 6 — ultra-hard curated bank + CCC chart + Antibiotic English + deep custom math.
- * Engines deliberately unlike Mocks 1–5 (no DCF dual-NPV twin, no IE/Vieta/pipes/BE clones).
- * Order: economics → english (Antibiotic Discovery Void T.7) → math.
+ * Engines: same BBE chapter families as Mocks 1–5 (sets, Vieta, PV, pipes, BE,
+ * inequalities, piecewise, powers, parametric cubic, exp/log, product rule,
+ * best-of-n, binomial) but denser multi-step traps — not off-syllabus topics.
+ * Order: economics → english (Classical Gold Standard T.3) → math.
  *
  * Run: node scripts/run-rebuild-mock-6.mjs
  */
@@ -218,21 +220,21 @@ So the statement is False.`,
 function buildEnglish() {
   const texts = JSON.parse(fs.readFileSync(path.join(ROOT, "english/texts.json"), "utf8"));
   const grammar = JSON.parse(fs.readFileSync(path.join(ROOT, "english/grammar.json"), "utf8"));
-  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.7");
-  if (!sub?.passage) throw new Error("Antibiotic Discovery Void passage t.7 missing");
+  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.3");
+  if (!sub?.passage) throw new Error("Classical Gold Standard passage t.3 missing");
 
   const order: Array<{ id: string; kind: string; withPassage: boolean; src: "texts" | "grammar" }> = [
-    { id: "ENG T.7.01", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.7.02", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.7.03", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.7.04", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.7.05", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.7.08", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.7.09", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.7.06", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.7.07", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.7.10", kind: "vocabulary", withPassage: false, src: "texts" },
-    { id: "ENG G.7.19", kind: "grammar", withPassage: false, src: "grammar" },
+    { id: "ENG T.3.01", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.3.02", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.3.03", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.3.04", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.3.05", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.3.08", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.3.09", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.3.06", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.3.07", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.3.10", kind: "vocabulary", withPassage: false, src: "texts" },
+    { id: "ENG G.8.19", kind: "grammar", withPassage: false, src: "grammar" },
   ];
 
   const stemByKind: Record<string, string> = {
@@ -246,7 +248,7 @@ function buildEnglish() {
     const t = bank.find((x: { case_id: string }) => x.case_id === o.id);
     if (!t) throw new Error(`Missing English task ${o.id}`);
     let context = stemByKind[o.kind]!;
-    if (o.id === "ENG T.7.10") {
+    if (o.id === "ENG T.3.10") {
       const quoted = String(t.context || "").match(/[""]([^""]+)[""]/);
       const sentence =
         quoted?.[1] ||
@@ -254,11 +256,11 @@ function buildEnglish() {
           t.source_sentence ||
             t.prompt_sentence ||
             t.lead_sentence ||
-            "The pipeline of genuinely new antibiotic classes has slowed to a trickle even as resistance spreads.",
+            "Under the classical gold standard, currencies were defined as fixed weights of gold.",
         );
       context = `Consider this sentence from the passage: "${sentence}" Decide whether each paraphrase preserves its meaning.`;
     }
-    if (o.id === "ENG T.7.08" || o.id === "ENG T.7.09") {
+    if (o.id === "ENG T.3.08" || o.id === "ENG T.3.09") {
       context =
         "Based on the passage, decide whether each given meaning matches the word's actual use.";
     }
@@ -286,15 +288,15 @@ function buildEnglish() {
 
 // ---- assemble (unused hard bank + CCC custom; no overlap with Mocks 1–5) ----
 const economics = [
-  mapEcon(byId(2, "CASE 2.6.47")),
-  mapEcon(byId(3, "CASE 3.4.14")),
-  mapEcon(byId(4, "CASE 4.3.40")),
-  mapEcon(byId(4, "CASE 4.1.10")),
-  mapEcon(byId(5, "CASE 5.7.44")),
-  mapEcon(byId(6, "CASE 6.1.007")),
-  mapEcon(byId(6, "CASE 6.4.016")),
-  mapEcon(byId(6, "CASE 6.3.011")),
-  mapEcon(byId(6, "CASE 6.5.069")),
+  mapEcon(byId(2, "CASE 2.6.27")),
+  mapEcon(byId(3, "CASE 3.4.02")),
+  mapEcon(byId(4, "CASE 4.2.07")),
+  mapEcon(byId(4, "CASE 4.3.32")),
+  mapEcon(byId(5, "CASE 5.7.24")),
+  mapEcon(byId(6, "CASE 6.1.031")),
+  mapEcon(byId(6, "CASE 6.4.013")),
+  mapEcon(byId(6, "CASE 6.3.016")),
+  mapEcon(byId(6, "CASE 6.5.064")),
   buildCashConversionCase(),
 ];
 

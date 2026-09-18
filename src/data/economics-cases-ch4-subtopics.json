@@ -552,35 +552,6 @@
   },
   {
     "subsection": "4.2",
-    "case_id": "CASE 4.2.07",
-    "title": "Limited Partnership Structure",
-    "context": "Review the structure of a limited partnership that combines managing partners with at least one non-managing capital provider. Evaluate the following economic assertions:",
-    "statements": [
-      "Terms of the partnership and other operational details may appear alongside profit division in the partnership agreement.",
-      "Partners who intend to be equally involved in management and share financial risk often choose a general partnership structure.",
-      "Rights and responsibilities of each partner are among the matters settled in the partnership agreement.",
-      "Oral promises between founders eliminate the need to settle profit division in a written partnership agreement.",
-      "Under unlimited liability a creditor must collect an equal fraction of the debt from every partner simultaneously."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Operational terms can sit beside profit division in the same partnership agreement. Hours, roles, and procedures are common extras beyond the money split.\n\nSo the statement is True.",
-      "Founders who want equal management involvement and shared financial risk often choose a general partnership structure rather than a limited one.\n\nSo the statement is True.",
-      "Rights and responsibilities of each partner belong in the agreement alongside ownership percentages. Clear allocation of duties reduces later conflict over who must do what.\n\nSettling those matters in writing is part of forming a workable partnership. The statement correctly includes rights and responsibilities among the agreement's contents.\n\nSo the statement is True.",
-      "Oral promises leave profit division hard to prove when trust frays. A written partnership agreement remains the proper place to settle how returns are shared, even among friends.\n\nSo the statement is False.",
-      "Creditors need not collect equal fractions from every partner at once. One general partner can be pursued for the full debt under unlimited liability rules.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.2",
     "case_id": "CASE 4.2.08",
     "title": "Partnership Decision Making and Collaboration",
     "context": "Analyze how partners in a jointly founded business combine management duties and collective judgment. Evaluate the following economic assertions:",
@@ -1679,35 +1650,6 @@
       "Persons who buy shares become shareholders regardless of whether the purchase occurs at issue from the company or later on the secondary market from another holder.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
-    "case_id": "CASE 4.3.32",
-    "title": "Engineering Firm Share Price Rally",
-    "context": "Consider an engineering firm whose shares rallied after a contract win, though the firm issued no new equity during the rally. Evaluate the following economic assertions:",
-    "statements": [
-      "The contract win obliged the firm to register the rally amount as new share capital on its books.",
-      "Expectations of higher future profits from the contract can increase demand and push up share prices.",
-      "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices.",
-      "The corporation receives the full trading profit whenever existing shareholders sell to new buyers on the exchange.",
-      "Rising prices after issue force the board to pay immediate dividends equal to the price increase."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "The contract win did not oblige the engineering firm to register the rally amount as new share capital on its books; secondary price moves are not automatic equity subscriptions.\n\nSo the statement is False.",
-      "Expectations of higher future profits from the contract can increase demand for the stock and push exchange prices up as investors reprice the earnings outlook.\n\nSo the statement is True.",
-      "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices than they paid for the shares.\n\nNothing in the rally forces an immediate cash distribution from the board. The investor benefit arrives if and when the holder sells into the higher quote or marks a higher valuation.\n\nSo the statement is True.",
-      "The corporation does not receive the full trading profit whenever existing shareholders sell to new buyers on the exchange; those gains stay with the selling investors.\n\nSo the statement is False.",
-      "Rising prices after issue do not force the board to pay immediate dividends equal to the full price increase recorded on the secondary market.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {

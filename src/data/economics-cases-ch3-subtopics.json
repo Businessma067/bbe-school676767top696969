@@ -1364,35 +1364,6 @@
   },
   {
     "subsection": "3.4",
-    "case_id": "CASE 3.4.02",
-    "title": "Micro turnover edge case",
-    "context": "Consider a neighbourhood bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
-    "statements": [
-      "Turnover above €10m can push a firm out of the small category even when staff remain below fifty.",
-      "Micro status allows either turnover up to €2m or a balance sheet total up to €2m alongside the staff limit.",
-      "Exceeding the €2m turnover cap can disqualify a firm from micro status even when staff are below ten.",
-      "Small status also requires turnover not exceeding €10m.",
-      "A small enterprise may employ fewer than fifty people under EU definitions."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "A firm can stay under fifty staff and still leave the small category if turnover rises above €10m. The financial breach alone is enough to push it out.\n\nSo the statement is True.",
-      "Micro status pairs fewer than ten staff with a financial OR: turnover up to €2m or a balance sheet total up to €2m. Passing one of those financial caps alongside the staff limit can keep the firm micro.\n\nThe bakery with six staff and €2.1m turnover may still qualify if its balance sheet stays within €2m. That OR structure is what the statement records.\n\nSo the statement is True.",
-      "Even with fewer than ten employees, turnover above €2m can remove micro status when the balance sheet also fails its €2m cap. Crossing the turnover ceiling is a real disqualification path.\n\nSo the statement is True.",
-      "Small status requires turnover not exceeding €10m (or the parallel balance-sheet route) together with the staff limit. The €10m turnover ceiling is part of that package.\n\nSo the statement is True.",
-      "EU small-enterprise rules allow fewer than fifty people on the payroll. That staff band is the employment side of the official small definition.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
     "case_id": "CASE 3.4.04",
     "title": "Small dual thresholds",
     "context": "Analyze EU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",

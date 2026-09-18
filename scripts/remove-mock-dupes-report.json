@@ -3,147 +3,147 @@
   "items": [
     {
       "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.6.47",
+      "case_id": "CASE 2.6.27",
       "mock": 6,
       "subject": "econ",
-      "title": "Global Supply Chain Disruption"
+      "title": "Simultaneous Demand and Supply Shifts"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.4.14",
+      "case_id": "CASE 3.4.02",
       "mock": 6,
       "subject": "econ",
-      "title": "Micro balance within cap"
+      "title": "Micro turnover edge case"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.1.10",
+      "case_id": "CASE 4.2.07",
       "mock": 6,
       "subject": "econ",
-      "title": "Legal Personality and Liability Distinctions"
+      "title": "Limited Partnership Structure"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.3.40",
+      "case_id": "CASE 4.3.32",
       "mock": 6,
       "subject": "econ",
-      "title": "Startup Corporation IPO Proceeds"
+      "title": "Engineering Firm Share Price Rally"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.7.44",
+      "case_id": "CASE 5.7.24",
       "mock": 6,
       "subject": "econ",
-      "title": "Market Research Across Four Ps"
+      "title": "Price Skimming on New Products"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.1.007",
+      "case_id": "CASE 6.1.031",
       "mock": 6,
       "subject": "econ",
-      "title": "Asset Composition Chart 7"
+      "title": "Asset Composition Chart 31"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.3.011",
+      "case_id": "CASE 6.3.016",
       "mock": 6,
       "subject": "econ",
-      "title": "Return and Cash Flow Extract 11"
+      "title": "Asset Composition Chart 16"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.4.016",
+      "case_id": "CASE 6.4.013",
       "mock": 6,
       "subject": "econ",
-      "title": "Short Depreciation Extract 16"
+      "title": "Short Depreciation Extract 13"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.5.069",
+      "case_id": "CASE 6.5.064",
       "mock": 6,
       "subject": "econ",
-      "title": "Return and Cash Flow Extract 69"
+      "title": "Return on Capital Employed Explained in Context"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.01",
+      "case_id": "ENG T.3.01",
       "mock": 6,
       "subject": "eng",
       "title": "Task 1"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.02",
+      "case_id": "ENG T.3.02",
       "mock": 6,
       "subject": "eng",
       "title": "Task 2"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.03",
+      "case_id": "ENG T.3.03",
       "mock": 6,
       "subject": "eng",
       "title": "Task 3"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.04",
+      "case_id": "ENG T.3.04",
       "mock": 6,
       "subject": "eng",
       "title": "Task 4"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.05",
+      "case_id": "ENG T.3.05",
       "mock": 6,
       "subject": "eng",
       "title": "Task 5"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.06",
+      "case_id": "ENG T.3.06",
       "mock": 6,
       "subject": "eng",
       "title": "Task 6"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.07",
+      "case_id": "ENG T.3.07",
       "mock": 6,
       "subject": "eng",
       "title": "Task 7"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.08",
+      "case_id": "ENG T.3.08",
       "mock": 6,
       "subject": "eng",
       "title": "Task 8"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.09",
+      "case_id": "ENG T.3.09",
       "mock": 6,
       "subject": "eng",
       "title": "Task 9"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.7.10",
+      "case_id": "ENG T.3.10",
       "mock": 6,
       "subject": "eng",
       "title": "Task 10"
     },
     {
       "file": "/workspace/src/data/english/grammar.json",
-      "case_id": "ENG G.7.19",
+      "case_id": "ENG G.8.19",
       "mock": 6,
       "subject": "eng",
       "title": "Task 19"
     },
     {
-      "file": "/workspace/src/data/english/grammar_parts/g.7.json",
-      "case_id": "ENG G.7.19",
+      "file": "/workspace/src/data/english/grammar_parts/g.8.json",
+      "case_id": "ENG G.8.19",
       "mock": 6,
       "subject": "eng",
       "title": "Task 19"

@@ -5163,35 +5163,6 @@
   },
   {
     "subsection": "5.7",
-    "case_id": "CASE 5.7.24",
-    "title": "Price Skimming on New Products",
-    "context": "Analyze psychological pricing such as charm prices that influence customer perceptions. Evaluate the following economic assertions:",
-    "statements": [
-      "Cost-plus pricing adds a markup to production costs when setting the selling price of a product.",
-      "Selling only through the firm's own shops is classified as direct distribution rather than indirect distribution in the marketing-mix framework.",
-      "Supplying supermarkets through a wholesaler is classified as indirect distribution rather than direct distribution in the marketing-mix framework.",
-      "Television commercials communicating product benefits is classified as advertising rather than place in the marketing-mix framework.",
-      "Penetration pricing sets a relatively low price to gain market share quickly after launch."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Cost-plus pricing adds a markup to production costs to set the selling price. Cost base plus margin is the cost-plus rule the statement states.\n\nSo the statement is True.",
-      "Selling only through the firm's own shops is direct distribution because no independent intermediary sits between producer and buyer. Own-shop paths illustrate that direct place choice.\n\nSo the statement is True.",
-      "Supplying supermarkets through a wholesaler is indirect distribution: the wholesaler is an intermediary on the path to retail. Direct would skip that middle step.\n\nSo the statement is True.",
-      "Television commercials that communicate product benefits are advertising under promotion, not place decisions about physical access. Ads persuade and inform; warehouses and aisles handle availability. Mixing the commercial with place would confuse message tools with channel tools. Media spend belongs in the promotion toolkit. The statement's advertising classification is therefore right.\n\nSo the statement is True.",
-      "Penetration pricing sets a relatively low price to gain market share quickly after launch. Fast volume through a low entry price is the penetration aim.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
     "case_id": "CASE 5.7.25",
     "title": "Competitive Pricing Against Rivals",
     "context": "Review discounts, payment terms, and allowances as tools within the price P. Evaluate the following economic assertions:",

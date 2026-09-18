@@ -5973,44 +5973,6 @@
       "solution_overview": "Inverted who-should and bare might-yes/no fail. Surviving rhetorical inversion, was-to-have, and would + next-morning time shifts are acceptable.\n\n**Part 1: What to watch for.**\n\nNegative inversion can survive inside a reported clause after said when pronouns and tenses already match. Was to have + past participle (unfulfilled plan) typically remains. Embedded object questions need statement order: who we should notify. Will → would with tomorrow morning → the next morning. Yes/no might needs if/whether + subject + might.\n\n**Part 2: How to decide.**\n\nAllow rare rhetorical inversion and frozen was-to-have; still force statement order on ordinary who/might questions. Mark false on who should we and bare might the shop.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
-      "id": "en-g-8-19",
-      "case_id": "ENG G.8.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"",
-        "Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"",
-        "Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"",
-        "Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"",
-        "Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\""
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. \"She said she'd rather I didn't spoil that\" does not force past perfect inside the rather-clause. Preferential rather-clauses are not automatically deepened further.\n\nShe'd rather I didn't spoil that keeps the preference clause while shifting deixis, so the report is **true**.\n",
-        "**B) Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"**\n\nInformal how come reports with statement order and optional past perfect for a prior failure. \"He asked how come the cake had collapsed\" keeps how come and deepens the collapse. Pattern: asked how come + subject + (had) + past participle.\n\nHow come the cake had collapsed is a valid informal backshift, so the wording is **true**.\n",
-        "**C) Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"**\n\n\"Used not to\" (or didn't use to) for past habit can remain used not to. Habitual used-to patterns are already past-oriented, so further backshift is unnecessary. \"They said they used not to skip breakfast\" keeps the old habit meaning.\n\nUsed not to can stay as-is under past said, so this line is **true**.\n",
-        "**D) Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"**\n\nFuture perfect in a yes/no question → if + would have, and the time-clause present→past. \"She asked if I would have finished by the time she called\" shifts both the main future perfect and the by-the-time clause. Both layers move together under past asked.\n\n**Tip:** will you have… by the time I…? → if + would have… by the time + past.\n\nWould have finished and she called move together under asked if, so the double backshift is **true**.\n",
-        "**E) Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\"**\n\nSuppose-ideas often become suggested that + base (or past) form in formal reports. \"He suggested that we freeze the leftovers\" is exam-friendly for \"Suppose we freeze…\" Mandative or tentative freeze after suggested that is acceptable.\n\nSuggested that we freeze correctly maps the suppose-idea, so the wording is **true**.\n"
-      ],
-      "highlights": [
-        "she'd rather I didn't",
-        "how come the cake had collapsed",
-        "used not to skip",
-        "would have finished",
-        "suggested that we freeze"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.8",
-      "solution_overview": "All five are advanced but valid: rather + past clause, how come, used not to, nested would-have with by-the-time, and suggested that.\n\n**Part 1: What to watch for.**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. Informal how come reports with statement order and optional past perfect. Used not to for past habit can remain. Future perfect in a yes/no question → if + would have, and the by-the-time clause present→past. Suppose-ideas often become suggested that + base form.\n\n**Part 2: How to decide.**\n\nRetain already-past preference and habit patterns; still shift futures and demonstratives; allow suggested that for suppose. Every line passes — treat the set as a finishing model.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
-    },
-    {
       "id": "en-g-8-20",
       "case_id": "ENG G.8.20",
       "title": "Task 20",

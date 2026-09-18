@@ -1,41 +1,24 @@
 /**
- * Mock Exam 6 — ULTRA customs (Q22–34), deliberately unlike Mock 5 shapes.
- * Different engines: surjections, reciprocal powers, amortisation, extraneous roots,
- * 3×3 systems, log/abs inequality systems, parabola–line tangency, rational limits,
- * finite differences, exponential substitution, MR=MC profit, Bayes, binomial ranges.
- * No solution-formula spoilers in stems; teacher steps only in explanations.
+ * Mock Exam 6 — course-theme math (Q22–34), same families as the BBE bank / Mock 5,
+ * but denser chains and harder traps. Not off-syllabus engines.
+ * No solution formulas in stems; teacher steps only in explanations.
  */
 
-/** Q22 — surjective assignments + complement (not inclusion–exclusion modules). */
+/** Q22 — four-set inclusion–exclusion (course sets theme, denser than Mock 5’s three-set). */
 export function buildMathQ22Sets() {
-  const context = `A lab has six distinct samples and three distinct analysers. Each sample is sent to exactly one analyser. An assignment is called balanced when every analyser receives at least one sample. An assignment is called concentrated when at least one analyser receives four or more samples. Every sample must be assigned.`;
+  const context = `A certification academy tracks four modules: Risk, Audit, Tax, and Ethics. Of $450$ candidates, $240$ finished Risk, $200$ finished Audit, $180$ finished Tax, and $150$ finished Ethics. Pairwise overlaps are $110$ for Risk–Audit, $100$ for Risk–Tax, $90$ for Risk–Ethics, $85$ for Audit–Tax, $80$ for Audit–Ethics, and $70$ for Tax–Ethics. Exactly $50$ finished all of Risk, Audit, and Tax; $45$ finished all of Risk, Audit, and Ethics; $40$ finished all of Risk, Tax, and Ethics; $38$ finished all of Audit, Tax, and Ethics; and $25$ finished all four. Every candidate is counted in the academy total, including those who finished none.`;
 
-  // total 3^6 = 729
-  // surjections: 3! S(6,3) = 6*90 = 540
-  // not balanced = 729-540 = 189
-  // concentrated: at least one analyser gets ≥4.
-  // Count via cases: one gets 4, another 2, third 0 — not all analysers used, OR 4+1+1, OR 5+1+0, OR 6+0+0, OR 3+3+0...
-  // Claim "exactly half of all assignments are balanced" → 540/729=20/27 ≠ 1/2 False
-  // Claim balanced count is 540 True
-  // Claim non-balanced < 200 True (189)
-  // Claim every concentrated assignment is non-balanced: True (if one has ≥4 of 6, another has ≤2, cannot all three be ≥1? Wait 4+1+1 is balanced AND concentrated!)
-  // So "every concentrated is non-balanced" is FALSE
-  // Claim: number of concentrated assignments exceeds 100 — need count
-  // Patterns for concentrated (max≥4):
-  // (6,0,0): C(6,6)*3 = 3
-  // (5,1,0): C(6,5)*C(1,1)*3!/(1!1!1!)=6*6=36? Choose which gets 5 (3), which gets 1 (2 remaining)=3*2*C(6,5)=36
-  // (4,2,0): 3!/(1!1!1!)=6 ways assign roles * C(6,4)*C(2,2)=6*15=90
-  // (4,1,1): choose who gets 4: 3 ways; choose 4 of 6: C(6,4)=15; split remaining 2 to two analysers: 2 ways. =3*15*2=90
-  // (5,0,1) already in (5,1,0)
-  // Total concentrated = 3+36+90+90 = 219 > 200? claim >200 True; >100 True
-  // Also (3,3,0) max=3 not concentrated.
+  // union = 770 - 535 + 173 - 25 = 383; none = 67
+  // only Risk = 240-110-100-90+50+45+40-25 = 50
+  // only Ethics = 150-90-80-70+45+40+38-25 = 8
+  // |R∪A| = 240+200-110 = 330
 
   const statements = [
-    "There are exactly $540$ balanced assignments.",
-    "Exactly half of all possible assignments are balanced.",
-    "Fewer than $200$ assignments fail to be balanced.",
-    "Every concentrated assignment fails to be balanced.",
-    "Strictly more than $200$ assignments are concentrated.",
+    "Exactly $67$ candidates finished none of the four modules.",
+    "The candidates who finished all four outnumber those who finished Risk and nothing else.",
+    "Strictly more than $380$ candidates finished at least one module.",
+    "Finishing Ethics without finishing Risk is impossible under these counts.",
+    "The candidates who finished Risk or Audit (or both) number strictly more than $325$.",
   ];
 
   const answer_key = [true, false, true, false, true];
@@ -43,743 +26,366 @@ export function buildMathQ22Sets() {
   const tactical_explanations = [
     `**A.** → True
 
-The number of surjections from a set of six to a set of three is
+Four-set inclusion–exclusion:
 
 $$
-3!\\,S(6,3)=6\\cdot 90=540
+|R\\cup A\\cup T\\cup E|=770-535+173-25=383
+$$
+
+$$
+450-383=67
 $$
 
 So the statement is True.`,
 
     `**B.** → False
 
-The total number of assignments is $3^{6}=729$, and $540/729=20/27\\neq 1/2$.
+Only Risk equals $240-110-100-90+50+45+40-25=50$. All four equals $25$. Since $25\\ngtr 50$, the claim fails.
 
 So the statement is False.`,
 
     `**C.** → True
 
-Non-balanced count: $729-540=189<200$.
+The union is $383>380$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-The type $(4,1,1)$ is concentrated (one analyser gets four samples) and still uses all three analysers, hence balanced.
+Only Ethics equals $150-90-80-70+45+40+38-25=8>0$, so Ethics without Risk occurs.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Counting concentrated types $(6,0,0)$, $(5,1,0)$, $(4,2,0)$ and $(4,1,1)$ yields
-
 $$
-3+36+90+90=219>200
+|R\\cup A|=240+200-110=330>325
 $$
 
 So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 1.MOCK.SURJ6",
-    id: "MATH 1.MOCK.SURJ6",
-    title: "Six samples, three analysers — surjections and concentration",
+    case_id: "MATH 1.MOCK.FOURSET",
+    id: "MATH 1.MOCK.FOURSET",
+    title: "Four certification modules — deep inclusion–exclusion",
     chapter: 1,
-    subsection: "1.4",
+    subsection: "1.2",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Surjections $540$; total $729$; non-balanced $189$; $(4,1,1)$ is concentrated and balanced; concentrated $219$.`,
+    solution_overview: `Union $383$, none $67$. Only Risk $50>$ all-four $25$. Ethics-only $8$. $|R\\cup A|=330$.`,
   };
 }
 
-/** Q23 — reciprocal power ladder (not Vieta symmetric archive). */
+/** Q23 — four-number Vieta archive (course symmetric/Vieta theme). */
 export function buildMathQ23Grind() {
-  const context = `A real number $x\\neq 0$ satisfies
+  const context = `An algebra archive stores four real numbers $a,b,c,d$ only through
 
 $$
-x+\\dfrac{1}{x}=3.
+a+b+c+d=15,\\qquad \\sum_{i<j}a_ia_j=80,\\qquad \\sum_{i<j<k}a_ia_ja_k=180,\\qquad abcd=144,
 $$
 
-No decimal approximation is used. Decide whether each statement is true or false.`;
-
-  // s_n = x^n + x^{-n}; s1=3; s2=7; s3=18; s4=47; s5=123
-  // also x^2 - 3x +1 =0, roots (3±√5)/2 both positive
-
-  const statements = [
-    "$x^{2}+\\dfrac{1}{x^{2}}=7$.",
-    "$x^{3}+\\dfrac{1}{x^{3}}=18$.",
-    "$x^{4}+\\dfrac{1}{x^{4}}=45$.",
-    "$x^{5}+\\dfrac{1}{x^{5}}=123$.",
-    "Both real solutions of the defining relation are strictly greater than $1$.",
-  ];
-
-  // E: roots (3±√5)/2: (3+2.236)/2≈2.618>1; (3-2.236)/2≈0.382<1. False
-
-  const answer_key = [true, true, false, true, false];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-$$
-\\Bigl(x+\\dfrac{1}{x}\\Bigr)^{2}=x^{2}+2+\\dfrac{1}{x^{2}}=9\\Rightarrow x^{2}+\\dfrac{1}{x^{2}}=7
-$$
-
-So the statement is True.`,
-
-    `**B.** → True
-
-$$
-\\Bigl(x+\\dfrac{1}{x}\\Bigr)^{3}=x^{3}+3x+\\dfrac{3}{x}+\\dfrac{1}{x^{3}}=27
-$$
-
-$$
-x^{3}+\\dfrac{1}{x^{3}}+3\\cdot 3=27\\Rightarrow x^{3}+\\dfrac{1}{x^{3}}=18
-$$
-
-So the statement is True.`,
-
-    `**C.** → False
-
-$$
-\\Bigl(x^{2}+\\dfrac{1}{x^{2}}\\Bigr)^{2}=x^{4}+2+\\dfrac{1}{x^{4}}=49\\Rightarrow x^{4}+\\dfrac{1}{x^{4}}=47\\neq 45
-$$
-
-So the statement is False.`,
-
-    `**D.** → True
-
-Recurrence $s_{n}=3s_{n-1}-s_{n-2}$ with $s_{3}=18$, $s_{4}=47$:
-
-$$
-s_{5}=3\\cdot 47-18=123
-$$
-
-So the statement is True.`,
-
-    `**E.** → False
-
-Multiplying by $x$ yields $x^{2}-3x+1=0$, so
-
-$$
-x=\\dfrac{3\\pm\\sqrt{5}}{2}
-$$
-
-The smaller root $\\dfrac{3-\\sqrt{5}}{2}\\approx 0.382$ is strictly less than $1$.
-
-So the statement is False.`,
-  ];
-
-  return {
-    case_id: "MATH 2.MOCK.RECPPOW",
-    id: "MATH 2.MOCK.RECPPOW",
-    title: "Reciprocal power ladder from a single relation",
-    chapter: 2,
-    subsection: "2.4",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `$s_2=7$, $s_3=18$, $s_4=47$, $s_5=123$. Roots $(3\\pm\\sqrt{5})/2$; one is $<1$.`,
-  };
-}
-
-/** Q24 — loan amortisation schedule (not NPV vs perpetuity). */
-export function buildMathQ24Finance() {
-  const context = `A firm borrows EUR $48000$ at annual effective rate $10\\%$. The loan is repaid by four equal year-end payments of size $A$ (ordinary annuity). Let $B_k$ be the outstanding principal immediately after the payment at the end of year $k$ (with $B_0=48000$).
+where the middle two sums run over the indicated distinct index tuples among $\\{a,b,c,d\\}$. The original order was not recorded. No decimal approximation is used.
 
 Decide whether each statement is true or false.`;
 
-  // A = 48000 * 0.1 / (1 - 1.1^{-4}) ≈ 15142.60
-  // B1 ≈ 37657.40; B2 ≈ 26280.54; B3 ≈ 13766.00; B4 = 0
-  // Interest in year 2 = 0.1 * B1 ≈ 3765.74
-  // Total interest ≈ 12570.39
-  // Claim A > 15000 True; B2 < 27000 True; interest year 2 > 4000 False; total interest < 12000 False; B3 > A False? 13766 < 15143 so B3 < A, claim B3 exceeds A False
+  // roots {2,3,4,6}; sum sq=225-160=65; cubes=8+27+64+216=315
+  // sum 1/a = 180/144 = 5/4; claim 4/5 false
+  // Σ_{i<j}(a_i-a_j)^2 = 4*65 - 225 = 260-225=35; claim 70 false
 
   const statements = [
-    "The constant payment $A$ exceeds EUR $15000$.",
-    "Immediately after the second payment, more than EUR $27000$ of principal remains outstanding.",
-    "Interest charged during the second year exceeds EUR $4000$.",
-    "Over the full four years, total interest paid is strictly less than EUR $12000$.",
-    "Immediately after the third payment, the outstanding principal still exceeds one full payment $A$.",
+    "$a^{2}+b^{2}+c^{2}+d^{2}=65$.",
+    "$a^{3}+b^{3}+c^{3}+d^{3}=315$.",
+    "$\\{a,b,c,d\\}=\\{2,3,4,6\\}$.",
+    "$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{4}{5}$.",
+    "$(a-b)^{2}+(a-c)^{2}+(a-d)^{2}+(b-c)^{2}+(b-d)^{2}+(c-d)^{2}=70$.",
   ];
-
-  const answer_key = [true, false, false, false, false];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-$$
-A=48000\\cdot\\dfrac{0.1}{1-1.1^{-4}}\\approx 15142.60>15000
-$$
-
-So the statement is True.`,
-
-    `**B.** → False
-
-$$
-B_{2}=48000\\cdot 1.1^{2}-A\\cdot\\dfrac{1.1^{2}-1}{0.1}\\approx 26280.54<27000
-$$
-
-So the statement is False.`,
-
-    `**C.** → False
-
-Interest in year $2$ equals $0.1\\cdot B_{1}$ with $B_{1}\\approx 37657.40$, hence about EUR $3765.74$, which is below EUR $4000$.
-
-So the statement is False.`,
-
-    `**D.** → False
-
-Total paid is about $4A\\approx 60570$, so total interest is about $12570>12000$.
-
-So the statement is False.`,
-
-    `**E.** → False
-
-$B_{3}\\approx 13766<A\\approx 15143$, so the outstanding amount after the third payment does not exceed one payment.
-
-So the statement is False.`,
-  ];
-
-  return {
-    case_id: "MATH 3.MOCK.AMORT4",
-    id: "MATH 3.MOCK.AMORT4",
-    title: "Four-payment loan — amortisation balances and interest",
-    chapter: 3,
-    subsection: "3.4",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `$A\\approx 15143$. $B_2\\approx 26281$. Year-2 interest $\\approx 3766$. Total interest $\\approx 12570$. $B_3<A$.`,
-  };
-}
-
-/** Q25 — radical equation with extraneous-root traps (not pipes). */
-export function buildMathQ25Pipes() {
-  const context = `Consider the equation
-
-$$
-\\sqrt{2x+3}+\\sqrt{x-1}=5
-$$
-
-in the real numbers, together with the companion claim about
-
-$$
-\\sqrt{2x+3}-\\sqrt{x-1}=1.
-$$
-
-Decide whether each statement is true or false.`;
-
-  // Domain: x≥1
-  // Solution of first: b=√(x-1)=-5+3√5, x=b^2+1=14-6√5+... wait
-  // b=-5+3√5; b^2=25-30√5+45=70-30√5; x=71-30√5 ≈ 3.918
-  // Also check a+b=5, a-b=?
-  // a^2=2x+3=2(71-30√5)+3=145-60√5; a=√...
-  // From a+b=5 and a^2-b^2=(2x+3)-(x-1)=x+4, and a^2-b^2=(a-b)(a+b)=5(a-b)
-  // x+4=5(a-b) → a-b=(x+4)/5
-  // At solution x=71-30√5: ... numerically a-b ≈ (3.918+4)/5≈1.584 ≠ 1
-  // So companion =1 is False at the solution
-  // Unique solution True
-  // x=3 not solution: √9+√2=3+1.41≠5
-  // Extraneous: if someone squares wrong they get extras — claim "x=13 is a solution" False
-  // Claim solution exceeds 4 False (≈3.92)
-
-  const statements = [
-    "The first equation has exactly one real solution.",
-    "That unique real solution is strictly larger than $4$.",
-    "The number $x=13$ satisfies the first equation.",
-    "At the unique real solution of the first equation, one also has $\\sqrt{2x+3}-\\sqrt{x-1}=1$.",
-    "Every real $x\\ge 1$ that satisfies $(\\sqrt{2x+3}+\\sqrt{x-1})^{2}=25$ is automatically a solution of the first equation.",
-  ];
-
-  // E: squaring (a+b)^2=25 with a,b≥0 is equivalent to a+b=5 on domain. True actually!
-  // Wait (a+b)^2=25 ⇒ a+b=5 or a+b=-5; on domain a,b≥0 so a+b=5. True.
-
-  const answer_key = [true, false, false, false, true];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-Domain $x\\ge 1$. Set $b=\\sqrt{x-1}\\ge 0$ and $a=5-b\\ge 0$. Then $a^{2}-2b^{2}=5$ yields the quadratic $b^{2}+10b-20=0$, whose only admissible root is $b=-5+3\\sqrt{5}$. Hence exactly one real $x$.
-
-So the statement is True.`,
-
-    `**B.** → False
-
-$$
-x=b^{2}+1=71-30\\sqrt{5}\\approx 3.92<4
-$$
-
-So the statement is False.`,
-
-    `**C.** → False
-
-At $x=13$, $\\sqrt{29}+\\sqrt{12}\\approx 5.39+3.46\\neq 5$.
-
-So the statement is False.`,
-
-    `**D.** → False
-
-From $a^{2}-b^{2}=x+4$ and $a+b=5$ one gets $a-b=(x+4)/5\\approx 1.58\\neq 1$.
-
-So the statement is False.`,
-
-    `**E.** → True
-
-On the domain both square roots are non-negative, so $(\\sqrt{2x+3}+\\sqrt{x-1})^{2}=25$ forces the sum to equal $5$, which is exactly the original equation.
-
-So the statement is True.`,
-  ];
-
-  return {
-    case_id: "MATH 4.MOCK.RADX",
-    id: "MATH 4.MOCK.RADX",
-    title: "Paired radical equation — uniqueness and extraneous traps",
-    chapter: 4,
-    subsection: "4.3",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `Unique root $x=71-30\\sqrt{5}\\approx 3.92$. Not $13$. Difference of roots $\\neq 1$. Squaring is safe on the domain.`,
-  };
-}
-
-/** Q26 — 3×3 linear system (not break-even product mix). */
-export function buildMathQ26BreakEven() {
-  const context = `The unique solution $(x,y,z)$ of the system
-
-$$
-\\begin{cases}
-2x+y-z=6\\\\
-x-y+2z=1\\\\
-3x+2y+z=13
-\\end{cases}
-$$
-
-is to be analysed. Decide whether each statement is true or false.`;
-
-  // Verify (2,3,1): 4+3-1=6; 2-3+2=1; 6+6+1=13. Yes.
-  // det nonzero unique
-  // x+y+z=6; xyz=6; 2x-z=3?
-
-  const statements = [
-    "The triple $(x,y,z)=(2,3,1)$ solves the system.",
-    "The system has infinitely many real solutions.",
-    "$x+y+z=6$.",
-    "$xyz=5$.",
-    "Replacing the third equation by $4x+2y-2z=12$ produces a system with the same unique solution $(2,3,1)$.",
-  ];
-
-  // E: 4x+2y-2z=2(2x+y-z)=2*6=12, so third becomes multiple of first → dependent with first two.
-  // First two with (2,3,1): still, but rank? Eq3' = 2*eq1, so only two independent eqs → infinite solutions (a line). Not unique. False that same unique solution.
-
-  const answer_key = [true, false, true, false, false];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-Direct substitution: $4+3-1=6$, $2-3+2=1$, $6+6+1=13$.
-
-So the statement is True.`,
-
-    `**B.** → False
-
-The coefficient matrix has full rank three (unique solution as in A), so the solution set is a single point.
-
-So the statement is False.`,
-
-    `**C.** → True
-
-$2+3+1=6$.
-
-So the statement is True.`,
-
-    `**D.** → False
-
-$2\\cdot 3\\cdot 1=6\\neq 5$.
-
-So the statement is False.`,
-
-    `**E.** → False
-
-The new third equation is exactly twice the first, so the system drops to rank $2$ and becomes under-determined: infinitely many solutions, not the unique triple $(2,3,1)$.
-
-So the statement is False.`,
-  ];
-
-  return {
-    case_id: "MATH 5.MOCK.SYS3",
-    id: "MATH 5.MOCK.SYS3",
-    title: "Three-by-three linear system — uniqueness and dependence trap",
-    chapter: 5,
-    subsection: "5.3",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `Solution $(2,3,1)$. Unique. Sum $6$, product $6$. Doubling the first equation destroys uniqueness.`,
-  };
-}
-
-/** Q27 — log + absolute + rational inequality pack (much denser than Mock 5). */
-export function buildMathQ27Ineq() {
-  const context = `Decide whether each inequality claim is true or false.`;
-
-  const statements = [
-    "The solution set of $\\dfrac{x^{2}-5x+6}{x^{2}-4}\\le 0$ is exactly $[2,3]$.",
-    "The solution set of $\\log_{1/2}(x^{2}-5x+6)\\ge -1$ is exactly $[1,2)\\cup(3,4]$.",
-    "The solution set of $|x-1|+|x-3|+|x-5|\\ge 8$ is exactly $(-\\infty,1]\\cup[5,+\\infty)$.",
-    "The solution set of $\\sqrt{x+3}+\\sqrt{x-1}\\le 4$ is exactly $[1,6]$.",
-    "The solution set of $\\dfrac{2x-1}{x+3}>1$ is exactly $(-\\infty,-3)\\cup(4,+\\infty)$.",
-  ];
-
-  // A: num (x-2)(x-3), den (x-2)(x+2). Simplify for x≠±2: (x-3)/(x+2)≤0 → [-2,3] exclude where undefined or cancelled.
-  // Actually original: critical -2,2,3. Sign chart: solution (-2,2)∪[2,3]? At x=2 num=0 den=0 undefined!
-  // For x≠±2: after canceling (x-2) for x≠2: (x-3)/(x+2)≤0 → x∈[-2,3]\\{-2}? (x-3)/(x+2)≤0 on [-2,3], exclude -2 (den0) and also need check x=2 undefined in original.
-  // So (-2,2)∪(2,3] ∪? At points... Not exactly [2,3]. False.
-
-  // B: computed earlier — True [1,2)∪(3,4]
-
-  // C: |x-1|+|x-3|+|x-5| = { 9-x x≤1; 5+x? ; for x in [1,3]: (x-1)+(3-x)+(5-x)=7-x; [3,5]: x-1+x-3+5-x=x+1; x≥5: 3x-9 }
-  // Min on [1,5] is at median x=3: value 4. ≥8: 7-x≥8⇒x≤-1 but in [1,3] 7-x∈[4,6]<8; on [3,5] x+1∈[4,6]<8; left of 1: 9-x≥8⇒x≤1, so (-∞,1]; right: 3x-9≥8⇒x≥17/3≈5.67, so [17/3,∞) not [5,∞). False.
-
-  // D: domain x≥1. Set √(x+3)+√(x-1)≤4. At x=1: √4+0=2≤4; at x=6: √9+√5=3+2.24>4. Max domain.
-  // Isolate square: let a=√(x+3),b=√(x-1), a+b≤4, a^2-b^2=4. Similar. Boundary a+b=4 → x=...?
-  // From earlier method: b^2+8b-12? Actually solve a+b=4, a^2=b^2+4 → (4-b)^2=b^2+4 → 16-8b+b^2=b^2+4 → 12=8b → b=1.5, x=b^2+1=3.25
-  // So equality at 3.25, and inequality ≤ holds on [1, 3.25], not [1,6]. False.
-
-  // E: (2x-1)/(x+3)>1 → (2x-1-x-3)/(x+3)>0 → (x-4)/(x+3)>0 → (-∞,-3)∪(4,∞). True.
-
-  const answer_key = [false, true, false, false, true];
-
-  const tactical_explanations = [
-    `**A.** → False
-
-The expression is undefined at $x=\\pm 2$. After cancelling the common factor $x-2$ for $x\\neq 2$, the inequality reduces to $\\dfrac{x-3}{x+2}\\le 0$ on $(-2,2)\\cup(2,3]$, which is not the singleton interval $[2,3]$.
-
-So the statement is False.`,
-
-    `**B.** → True
-
-Domain: $(x-2)(x-3)>0$. Because the base $\\tfrac12\\in(0,1)$, the inequality becomes $0<x^{2}-5x+6\\le 2$, i.e. $x\\in[1,4]$ intersected with the domain, hence $[1,2)\\cup(3,4]$.
-
-So the statement is True.`,
-
-    `**C.** → False
-
-The sum of absolutes equals $9-x$ for $x\\le 1$, equals $7-x$ on $[1,3]$, equals $x+1$ on $[3,5]$, and equals $3x-9$ for $x\\ge 5$. The inequality $\\ge 8$ forces $x\\le 1$ or $x\\ge \\tfrac{17}{3}$, not $(-\\infty,1]\\cup[5,+\\infty)$.
-
-So the statement is False.`,
-
-    `**D.** → False
-
-Domain $x\\ge 1$. Equality $\\sqrt{x+3}+\\sqrt{x-1}=4$ holds only at $x=\\tfrac{13}{4}=3.25$, and the inequality holds on $[1,\\tfrac{13}{4}]$, not on $[1,6]$.
-
-So the statement is False.`,
-
-    `**E.** → True
-
-$$
-\\dfrac{2x-1}{x+3}-1=\\dfrac{x-4}{x+3}>0
-$$
-
-gives $(-\\infty,-3)\\cup(4,+\\infty)$.
-
-So the statement is True.`,
-  ];
-
-  return {
-    case_id: "MATH 6.MOCK.LOGABS",
-    id: "MATH 6.MOCK.LOGABS",
-    title: "Rational, logarithmic, absolute and radical inequality pack",
-    chapter: 6,
-    subsection: "6.4",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `Rational not $[2,3]$. Log set $[1,2)\\cup(3,4]$. Abs sum needs $x\\ge 17/3$. Radical up to $13/4$. Linear fractional $(-\\infty,-3)\\cup(4,\\infty)$.`,
-  };
-}
-
-/** Q28 — parabola vs line tangency (not piecewise junction). */
-export function buildMathQ28Piecewise() {
-  const context = `Let $f(x)=x^{2}-6x+5$ and $g(x)=2x+m$ with real parameter $m$. Decide whether each statement is true or false.`;
-
-  // f=(x-1)(x-5), vertex (3,-4), f(3)=-4
-  // f-g=x^2-8x+(5-m); disc=64-4(5-m)=44+4m
-  // tangent: disc=0 → m=-11
-  // two intersections: m>-11; none m<-11
-  // axis x=3; g(3)=6+m; claim vertex lies on g when  -4=6+m → m=-10
-  // average rate of f on [1,5]: (f(5)-f(1))/(4)=0 → 0
-
-  const statements = [
-    "The graphs of $f$ and $g$ are tangent for exactly one real value of $m$, namely $m=-11$.",
-    "If $m=-10$, then the vertex of $f$ lies on the line $g$.",
-    "For $m=-12$ the equation $f(x)=g(x)$ has two distinct real roots.",
-    "The axis of symmetry of $f$ is the line $x=3$.",
-    "The average rate of change of $f$ on the interval $[1,5]$ equals $0$.",
-  ];
-
-  const answer_key = [true, true, false, true, true];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-$$
-f(x)-g(x)=x^{2}-8x+(5-m),\\qquad \\Delta=44+4m
-$$
-
-Tangency requires $\\Delta=0$, hence $m=-11$ only.
-
-So the statement is True.`,
-
-    `**B.** → True
-
-The vertex is $(3,-4)$. Then $g(3)=6+m=-4$ forces $m=-10$.
-
-So the statement is True.`,
-
-    `**C.** → False
-
-For $m=-12$, $\\Delta=44-48=-4<0$, so no real intersection.
-
-So the statement is False.`,
-
-    `**D.** → True
-
-Axis $x=-b/(2a)=6/2=3$.
-
-So the statement is True.`,
-
-    `**E.** → True
-
-$$
-\\dfrac{f(5)-f(1)}{5-1}=\\dfrac{0-0}{4}=0
-$$
-
-So the statement is True.`,
-  ];
-
-  return {
-    case_id: "MATH 7.MOCK.TANG",
-    id: "MATH 7.MOCK.TANG",
-    title: "Parabola versus moving line — tangency and vertex traps",
-    chapter: 7,
-    subsection: "7.3",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `Tangent at $m=-11$. Vertex on line at $m=-10$. $m=-12$ misses. Axis $x=3$. Average rate on $[1,5]$ is $0$.`,
-  };
-}
-
-/** Q29 — rational and infinity limits (not Ax^p letter limits). */
-export function buildMathQ29Limits() {
-  const context = `Decide whether each limit claim is true or false.`;
-
-  const statements = [
-    "$\\displaystyle\\lim_{x\\to 2}\\dfrac{x^{3}-8}{x^{2}-3x+2}=12$.",
-    "$\\displaystyle\\lim_{x\\to 1}\\dfrac{x^{3}-8}{x^{2}-3x+2}$ exists as a real number.",
-    "$\\displaystyle\\lim_{x\\to +\\infty}\\bigl(\\sqrt{x^{2}+x}-x\\bigr)=\\dfrac12$.",
-    "$\\displaystyle\\lim_{x\\to +\\infty}\\dfrac{3x^{2}-x}{x^{2}+5}=3$.",
-    "$\\displaystyle\\lim_{x\\to 0}\\dfrac{\\sin(3x)}{x}=1$.",
-  ];
-
-  // A: (x-2)(x^2+2x+4)/((x-2)(x-1)) → (4+4+4)/1=12 True
-  // B: at x=1 den=1-3+2=0, num=1-8=-7≠0 → infinite, no real limit False
-  // C: rationalize → 1/2 True
-  // D: True
-  // E: sin(3x)/x = 3 sin(3x)/(3x) → 3 ≠ 1 False
-
-  const answer_key = [true, false, true, true, false];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-$$
-\\dfrac{x^{3}-8}{x^{2}-3x+2}=\\dfrac{(x-2)(x^{2}+2x+4)}{(x-2)(x-1)}\\xrightarrow{x\\to 2}\\dfrac{12}{1}=12
-$$
-
-So the statement is True.`,
-
-    `**B.** → False
-
-At $x=1$ the denominator vanishes while the numerator equals $-7\\neq 0$, so the limit is infinite and not a real number.
-
-So the statement is False.`,
-
-    `**C.** → True
-
-$$
-\\sqrt{x^{2}+x}-x=\\dfrac{x}{\\sqrt{x^{2}+x}+x}=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac12
-$$
-
-So the statement is True.`,
-
-    `**D.** → True
-
-Divide by $x^{2}$: the limit is $3/1=3$.
-
-So the statement is True.`,
-
-    `**E.** → False
-
-$$
-\\dfrac{\\sin(3x)}{x}=3\\cdot\\dfrac{\\sin(3x)}{3x}\\to 3\\cdot 1=3\\neq 1
-$$
-
-So the statement is False.`,
-  ];
-
-  return {
-    case_id: "MATH 8.MOCK.RATLIM",
-    id: "MATH 8.MOCK.RATLIM",
-    title: "Rational and infinite limits — holes, asymptotes, sine factor",
-    chapter: 8,
-    subsection: "8.2",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `Limit at $2$ is $12$; at $1$ diverges; $\\sqrt{x^2+x}-x\\to 1/2$; degree ratio $3$; $\\sin(3x)/x\\to 3$.`,
-  };
-}
-
-/** Q30 — finite differences from a table (not parametric cubic factor). */
-export function buildMathQ30Param() {
-  const context = `A polynomial $p$ of unknown degree produces the table
-
-| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| $p(x)$ | $3$ | $3$ | $5$ | $15$ | $39$ |
-
-Decide whether each statement is true or false.`;
-
-  // ys 3,3,5,15,39; d1 0,2,10,24; d2 2,8,14; d3 6,6 → degree 3
-  // p(x)=x^3-2x^2+x+3
-  // p(5)=125-50+5+3=83
-  // p(-1)=-1-2-1+3=-1
-  // leading coeff 1 from d3/3!=6/6=1
-
-  const statements = [
-    "The third differences are constant, so $\\deg p=3$.",
-    "The leading coefficient of $p$ equals $1$.",
-    "$p(5)=83$.",
-    "$p(-1)=0$.",
-    "The same table is also produced by some polynomial of degree $4$ with leading coefficient $0$.",
-  ];
-
-  // E: degree 4 with leading 0 is actually degree ≤3 — wording trap. "leading coefficient 0" means not genuinely degree 4. The statement says "polynomial of degree 4 with leading coefficient 0" which is contradictory / false as a degree-4 claim. False.
 
   const answer_key = [true, true, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-First differences: $0,2,10,24$. Second: $2,8,14$. Third: $6,6$, constant, hence degree $3$.
+$$
+\\sum a_i^{2}=\\Bigl(\\sum a_i\\Bigr)^{2}-2\\sum_{i<j}a_ia_j=225-160=65
+$$
 
 So the statement is True.`,
 
     `**B.** → True
 
-For monic spacing $1$, the constant third difference equals $3!\\,a_{3}$, so $6=6a_{3}$ and $a_{3}=1$.
+The numbers are the roots of $t^{4}-15t^{3}+80t^{2}-180t+144=0$, which factors as $(t-2)(t-3)(t-4)(t-6)$. Then
+
+$$
+2^{3}+3^{3}+4^{3}+6^{3}=8+27+64+216=315
+$$
 
 So the statement is True.`,
 
     `**C.** → True
 
-Newton forward reconstruction (or matching $x^{3}-2x^{2}+x+3$) yields $p(5)=83$.
+As in letter B, the roots are exactly $\\{2,3,4,6\\}$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-$p(-1)=-1-2-1+3=-1\\neq 0$.
+$$
+\\sum\\dfrac{1}{a_i}=\\dfrac{\\sum_{i<j<k}a_ia_ja_k}{abcd}=\\dfrac{180}{144}=\\dfrac{5}{4}\\neq\\dfrac{4}{5}
+$$
 
 So the statement is False.`,
 
     `**E.** → False
 
-A polynomial whose leading coefficient is $0$ does not have that degree. The table already forces exact degree $3$.
+$$
+\\sum_{i<j}(a_i-a_j)^{2}=n\\sum a_i^{2}-\\Bigl(\\sum a_i\\Bigr)^{2}=4\\cdot 65-225=35\\neq 70
+$$
 
 So the statement is False.`,
   ];
 
   return {
-    case_id: "MATH 9.MOCK.FINDIF",
-    id: "MATH 9.MOCK.FINDIF",
-    title: "Finite-difference table — degree, leading coefficient, extension",
-    chapter: 9,
-    subsection: "9.4",
+    case_id: "MATH 2.MOCK.FOURSYM",
+    id: "MATH 2.MOCK.FOURSYM",
+    title: "Four-number archive — full symmetric data and Vieta",
+    chapter: 2,
+    subsection: "2.3",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Degree $3$, leading $1$, $p(x)=x^3-2x^2+x+3$, $p(5)=83$, $p(-1)=-1$.`,
+    solution_overview: `Roots $\\{2,3,4,6\\}$. Sum of squares $65$, cubes $315$. Reciprocal sum $5/4$. Pairwise gap sum $35$.`,
   };
 }
 
-/** Q31 — exponential substitution equation (not coupled tracer/fund). */
-export function buildMathQ31LogDeriv() {
-  const context = `Consider the real equation
+/** Q24 — project NPV + perpetuity-due + annuity (course finance theme, denser). */
+export function buildMathQ24Finance() {
+  const context = `A foundation compares three cash programmes at annual effective rate $8\\%$.
 
-$$
-4^{x}-5\\cdot 2^{x}+4=0
-$$
+Programme P buys a four-year project: pay EUR $25000$ immediately, then receive EUR $7000$, EUR $8000$, EUR $9000$, and EUR $10000$ at the ends of years $1$, $2$, $3$, and $4$.
 
-together with the continuous model $M(t)=80e^{-0.2t}$ (mass in milligrams, $t$ in hours). Decide whether each statement is true or false.`;
+Programme Q is a level perpetuity-due of EUR $600$ per year (first payment today).
 
-  //  (2^x)^2 - 5*2^x +4=0 → (2^x-4)(2^x-1)=0 → x=2 or x=0
-  // M(0)=80; half-life: e^{-0.2t}=1/2 → t=ln2/0.2≈3.466 < 4
-  // M(5)=80e^{-1}≈29.43 < 30
-  // M(10)=80e^{-2}≈10.83 > 10?
+Programme R is a five-year ordinary annuity of EUR $2000$ per year (first payment in one year).
+
+Decide whether each statement is true or false.`;
+
+  // PV in ≈ 27835; NPV ≈ 2835 > 2500
+  // year-1 PV 7000/1.08 ≈ 6481.48 < 6500
+  // Q: 600*1.08/0.08 = 8100
+  // R: 2000*(1-1.08^{-5})/0.08 ≈ 7985.42 < 8100 so Q > R
+  // Moving P inflows one year earlier raises PV → claim "decreases" False
 
   const statements = [
-    "The exponential equation has exactly the two real solutions $x=0$ and $x=2$.",
-    "The product of those two solutions equals $2$.",
-    "The half-life of $M$ is strictly less than $4$ hours.",
-    "After $5$ hours the mass $M(5)$ is still strictly above $30\\,\\mathrm{mg}$.",
-    "After $10$ hours the mass $M(10)$ is strictly below $10\\,\\mathrm{mg}$.",
+    "Programme P has a strictly positive net present value, and that NPV exceeds EUR $2500$.",
+    "The present value of the single EUR $7000$ inflow (year $1$) is strictly less than EUR $6500$.",
+    "At $8\\%$, Programme Q has present value exactly EUR $8100$.",
+    "At $8\\%$, Programme R has a strictly larger present value than Programme Q.",
+    "Moving every Programme P inflow one year earlier would strictly decrease P’s present value of inflows.",
   ];
 
-  // M(5)=80/e≈29.43<30 → "still above 30" False
-  // M(10)=80/e^2≈10.83>10 → "below 10" False
-  // product 0*2=0 ≠ 2 False
-
-  const answer_key = [true, false, true, false, false];
+  const answer_key = [true, true, true, false, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-Set $u=2^{x}>0$. Then $u^{2}-5u+4=0$ factors as $(u-4)(u-1)=0$, so $u=4$ or $u=1$, hence $x=2$ or $x=0$.
+$$
+\\mathrm{PV}_{\\mathrm{in}}=\\dfrac{7000}{1.08}+\\dfrac{8000}{1.08^{2}}+\\dfrac{9000}{1.08^{3}}+\\dfrac{10000}{1.08^{4}}\\approx 27835
+$$
+
+$$
+\\mathrm{NPV}\\approx 27835-25000=2835>2500
+$$
+
+So the statement is True.`,
+
+    `**B.** → True
+
+$$
+\\dfrac{7000}{1.08}\\approx 6481.48<6500
+$$
+
+So the statement is True.`,
+
+    `**C.** → True
+
+Perpetuity-due:
+
+$$
+600\\cdot\\dfrac{1.08}{0.08}=8100
+$$
+
+So the statement is True.`,
+
+    `**D.** → False
+
+$$
+\\mathrm{PV}_{R}=2000\\cdot\\dfrac{1-1.08^{-5}}{0.08}\\approx 7985<8100=\\mathrm{PV}_{Q}
+$$
+
+So the statement is False.`,
+
+    `**E.** → False
+
+Earlier payment shortens every discount exponent, so each present value rises.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 3.MOCK.TRIPV",
+    id: "MATH 3.MOCK.TRIPV",
+    title: "Project, perpetuity-due and annuity — triple present-value audit",
+    chapter: 3,
+    subsection: "3.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `P NPV $\\approx 2835$. Year-1 PV $\\approx 6481$. Q $=8100>R\\approx 7985$. Earlier payment raises PV.`,
+  };
+}
+
+/** Q25 — three inlets + two drains (course rate/equation theme). */
+export function buildMathQ25Pipes() {
+  const context = `Three inlet pipes and two drains serve a tank.
+
+Pipe A alone fills the empty tank in $4$ hours.
+Pipe B alone fills the empty tank in $5$ hours.
+Pipe C alone fills the empty tank in $6$ hours.
+Drain D alone empties a full tank in $8$ hours.
+Drain E alone empties a full tank in $12$ hours.
+
+All five run together from empty. Decide whether each statement is true or false.`;
+
+  // net = 1/4+1/5+1/6-1/8-1/12 = 49/120; time = 120/49 ≈ 2.449 < 2.5
+  // A rate 1/4 = 0.25 not > 1/3
+  // A+B both drains: 1/4+1/5-1/8-1/12 = 29/120; time 120/29 ≈ 4.14 > 4
+  // B alone 1/5=24/120; A+C-D = 1/4+1/6-1/8 = 6/24+4/24-3/24=7/24=35/120 > 24/120 so B does NOT outpace
+
+  const statements = [
+    "A’s fill rate is strictly greater than $\\tfrac{1}{3}$ tank per hour.",
+    "The combined net rate of A, B, C, D and E is exactly $\\tfrac{49}{120}$ tank per hour.",
+    "Starting from empty with all five open, the tank is full in strictly less than $2.5$ hours.",
+    "If only A and B run with both drains open (C closed), the tank still fills, and the time needed exceeds $4$ hours.",
+    "B alone fills more of the tank in $1$ hour than A and C together add net in $1$ hour while only drain D is open.",
+  ];
+
+  const answer_key = [false, true, true, true, false];
+
+  const tactical_explanations = [
+    `**A.** → False
+
+A’s rate is $\\tfrac{1}{4}<\\tfrac{1}{3}$.
+
+So the statement is False.`,
+
+    `**B.** → True
+
+$$
+\\dfrac{1}{4}+\\dfrac{1}{5}+\\dfrac{1}{6}-\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{49}{120}
+$$
+
+So the statement is True.`,
+
+    `**C.** → True
+
+$$
+\\dfrac{120}{49}\\approx 2.45<2.5
+$$
+
+So the statement is True.`,
+
+    `**D.** → True
+
+$$
+\\dfrac{1}{4}+\\dfrac{1}{5}-\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{29}{120}>0
+$$
+
+Time equals $\\dfrac{120}{29}\\approx 4.14>4$.
+
+So the statement is True.`,
+
+    `**E.** → False
+
+B contributes $\\tfrac{1}{5}=\\tfrac{24}{120}$. A+C−D contributes $\\tfrac{7}{24}=\\tfrac{35}{120}$. Since $\\tfrac{24}{120}<\\tfrac{35}{120}$, B alone does not outpace that net.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 4.MOCK.FIVEPIPE",
+    id: "MATH 4.MOCK.FIVEPIPE",
+    title: "Three inlets and two drains — net rate labyrinth",
+    chapter: 4,
+    subsection: "4.5",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `Net all five $=49/120$ (time $\\approx 2.45$). A $=1/4<1/3$. A+B−drains $=29/120$ (time $\\approx 4.14$). B $<$ A+C−D.`,
+  };
+}
+
+/** Q26 — three-product break-even mix (course linear-system / BE theme). */
+export function buildMathQ26BreakEven() {
+  const context = `A workshop sells three products $X$, $Y$, $Z$ with unit contributions
+
+$$
+c_X=4,\\qquad c_Y=6,\\qquad c_Z=10
+$$
+
+(in EUR per unit). Monthly fixed costs are EUR $15600$. A sales plan forces
+
+$$
+x=2z,\\qquad y=3z
+$$
+
+and requires exact break-even.
+
+Decide whether each statement is true or false.`;
+
+  // 4(2z)+6(3z)+10z=8z+18z+10z=36z=15600 → z=1300/3≈433.333
+  // total units 6z=2600 exactly
+  // at 18000: 36z=18000 → z=500
+  // without Y: 8z+10z=18z=15600 → z=866.67 > 433
+
+  const statements = [
+    "At break-even under the stated mix, the volume of $Z$ is strictly greater than $430$.",
+    "The break-even volume of $Z$ is an integer number of units.",
+    "Under the mix, break-even total unit volume $x+y+z$ equals $2600$.",
+    "If fixed costs rose to EUR $18000$ with the same mix, the required $z$ would exceed $500$.",
+    "Dropping product $Y$ while keeping $x=2z$ and the original EUR $15600$ fixed costs would force a strictly larger break-even $z$.",
+  ];
+
+  const answer_key = [true, false, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+$$
+8z+18z+10z=36z=15600\\Rightarrow z=\\dfrac{1300}{3}\\approx 433.33>430
+$$
 
 So the statement is True.`,
 
     `**B.** → False
 
-The product of the roots is $0\\cdot 2=0\\neq 2$.
+$\\dfrac{1300}{3}$ is not an integer.
 
 So the statement is False.`,
 
     `**C.** → True
 
 $$
-e^{-0.2t}=\\tfrac12\\Rightarrow t=\\dfrac{\\ln 2}{0.2}\\approx 3.47<4
+x+y+z=6z=6\\cdot\\dfrac{1300}{3}=2600
 $$
 
 So the statement is True.`,
@@ -787,57 +393,509 @@ So the statement is True.`,
     `**D.** → False
 
 $$
-M(5)=80e^{-1}\\approx 29.43<30
+36z=18000\\Rightarrow z=500
 $$
+
+exactly, so $z$ does not exceed $500$.
 
 So the statement is False.`,
 
-    `**E.** → False
+    `**E.** → True
 
-$$
-M(10)=80e^{-2}\\approx 10.83>10
-$$
+Without $Y$: $18z=15600$, so $z=\\dfrac{2600}{3}\\approx 866.7>\\dfrac{1300}{3}$.
 
-So the statement is False.`,
+So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 10.MOCK.EXPSUB",
-    id: "MATH 10.MOCK.EXPSUB",
-    title: "Exponential substitution plus continuous decay half-life",
-    chapter: 10,
-    subsection: "10.3",
+    case_id: "MATH 5.MOCK.BE36",
+    id: "MATH 5.MOCK.BE36",
+    title: "Three-product mix — $36z$ break-even system",
+    chapter: 5,
+    subsection: "5.1",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Roots $0$ and $2$. Half-life $\\approx 3.47$. $M(5)\\approx 29.4$, $M(10)\\approx 10.8$.`,
+    solution_overview: `$36z=15600$, $z\\approx 433.3$. Total $2600$. At EUR $18000$, $z=500$. Without $Y$, $z\\approx 867$.`,
   };
 }
 
-/** Q32 — MR=MC profit maximisation (not three-factor engagement derivative). */
-export function buildMathQ32Engagement() {
-  const context = `A firm faces inverse demand $p=60-2q$ and total cost $C(q)=q^{2}+12q+40$ for output $q\\ge 0$ (price and cost in EUR). Profit is $\\pi(q)=R(q)-C(q)$ with revenue $R(q)=pq$.
+/** Q27 — absolute / radical / rational inequality pack (course ineq theme, denser). */
+export function buildMathQ27Ineq() {
+  const context = `Decide whether each inequality claim is true or false.`;
+
+  const statements = [
+    "The solution set of $|x-1|+|x-7|\\le 8$ is exactly $[1,7]$.",
+    "The solution set of $\\sqrt{2x+5}<x-1$ is exactly $(3,+\\infty)$.",
+    "The solution set of $\\dfrac{x-4}{x+1}\\le 0$ is exactly $[-1,4]$.",
+    "The solution set of $x^{2}-5|x|-6<0$ is exactly $(-6,6)$.",
+    "The solution set of $|2x-3|>|x+4|$ is exactly $(-\\infty,-\\tfrac13)\\cup\\bigl(\\tfrac73,+\\infty\\bigr)$.",
+  ];
+
+  // A: |x-1|+|x-7|≥6; ≤8 → [0,8] not [1,7]. False
+  // B: domain x≥-5/2; x-1>0 ⇒ x>1. Square: 2x+5 < x^2-2x+1 → 0<x^2-4x-4. Roots 2±√8=2±2√2. On x>1: x>2+2√2≈4.828. Not (3,∞). False
+  // C: undefined at -1; solution (-1,4]. False
+  // D: u=|x|: u^2-5u-6<0 → (u-6)(u+1)<0 → 0≤u<6 → (-6,6). True
+  // E: square (2x-3)^2>(x+4)^2 → 4x^2-12x+9 > x^2+8x+16 → 3x^2-20x-7>0
+  // disc 400+84=484=22^2; roots (20±22)/6 → 7, -1/3. So (x+1/3)(x-7) > 0 with leading positive? 
+  // 3x^2-20x-7 = 3(x-7)(x+1/3). Yes >0 outside: x<-1/3 or x>7.
+  // Claim says (-∞,-1/3)∪(7/3,∞) — WRONG second part 7/3 instead of 7. False!
+
+  const answer_key = [false, false, false, true, false];
+
+  const tactical_explanations = [
+    `**A.** → False
+
+On $[1,7]$ the sum equals $6$. Outside it grows, and the inequality holds on the wider interval $[0,8]$.
+
+So the statement is False.`,
+
+    `**B.** → False
+
+Domain and $x-1>0$ force $x>1$. Squaring yields $x>2+2\\sqrt{2}\\approx 4.83$, so the solution is $(2+2\\sqrt{2},+\\infty)$, not $(3,+\\infty)$.
+
+So the statement is False.`,
+
+    `**C.** → False
+
+The expression is undefined at $x=-1$, and the solution is $(-1,4]$, not $[-1,4]$.
+
+So the statement is False.`,
+
+    `**D.** → True
+
+With $u=|x|\\ge 0$, $u^{2}-5u-6<0$ gives $0\\le u<6$, i.e. $(-6,6)$.
+
+So the statement is True.`,
+
+    `**E.** → False
+
+Squaring yields $3x^{2}-20x-7>0$, i.e. $x<-\\tfrac13$ or $x>7$, not $x>\\tfrac73$.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 6.MOCK.HARDINEQ",
+    id: "MATH 6.MOCK.HARDINEQ",
+    title: "Absolute, radical and rational inequality traps",
+    chapter: 6,
+    subsection: "6.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `Abs sum on $[0,8]$. Radical $(2+2\\sqrt{2},\\infty)$. Rational excludes $-1$. $|x|<6$. Abs comparison $(-\\infty,-1/3)\\cup(7,\\infty)$.`,
+  };
+}
+
+/** Q28 — piecewise continuity / differentiability (course function theme). */
+export function buildMathQ28Piecewise() {
+  const context = `Define
+
+$$
+f(x)=
+\\begin{cases}
+-x^{2}+6x-2 & \\text{if }x<3,\\\\
+x^{2}-6x+16 & \\text{if }x\\ge 3.
+\\end{cases}
+$$
 
 Decide whether each statement is true or false.`;
 
-  // R=60q-2q^2; π=48q-3q^2-40; π'=48-6q=0 → q=8
-  // π(8)=152; MR=60-4q; MC=2q+12; at 8 both 28
-  // π(10)=48*10-3*100-40=480-300-40=140<152
-  // π(0)=-40
+  // at 3: left -9+18-2=7; right 9-18+16=7 continuous
+  // left' -2x+6 at 3-=0; right' 2x-6 at 3+=0 differentiable
+  // for x≥3, f'=2x-6≥0, f(3)=7 so f≥7 on [3,∞)
+  // global min 7? As x→-∞, -x^2→-∞, no
+  // on x<3, f=0: -x^2+6x-2=0 → x^2-6x+2=0 → x=3±√7; only 3-√7<3. Negative? 3-√7≈0.35>0. Has positive root in (0,3). Claim "negative root" False
+  // Claim has a root in (0,3): True
 
   const statements = [
-    "Marginal revenue equals marginal cost at the output $q=8$.",
-    "Profit is maximised at $q=8$, and the maximal profit equals EUR $152$.",
-    "At $q=10$, profit exceeds the maximal profit from letter B.",
-    "Marginal cost is a strictly increasing function of $q$ on $[0,+\\infty)$.",
-    "At the profit-maximising output, price equals EUR $44$.",
+    "$f$ is continuous at $x=3$.",
+    "$f$ is differentiable at $x=3$.",
+    "For every $x\\ge 3$ one has $f(x)\\ge 7$, with equality at $x=3$.",
+    "The global minimum value of $f$ on $\\mathbb{R}$ is $7$.",
+    "On the region $x<3$, the equation $f(x)=0$ has a root in the open interval $(0,3)$.",
   ];
 
-  // price at q=8: 60-16=44 True
-  // π(10)<π(8) so C False
-  // MC'=2>0 True
+  const answer_key = [true, true, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+Both pieces equal $7$ at $x=3$.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+Left derivative $-2x+6$ at $3^{-}$ is $0$; right derivative $2x-6$ at $3^{+}$ is $0$.
+
+So the statement is True.`,
+
+    `**C.** → True
+
+For $x\\ge 3$, $f'(x)=2x-6\\ge 0$ and $f(3)=7$, so $f(x)\\ge 7$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+As $x\\to-\\infty$, $-x^{2}+6x-2\\to-\\infty$, so no global minimum $7$.
+
+So the statement is False.`,
+
+    `**E.** → True
+
+$-x^{2}+6x-2=0$ gives $x=3\\pm\\sqrt{7}$; the root $3-\\sqrt{7}\\approx 0.35$ lies in $(0,3)$.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 7.MOCK.JUNCTION",
+    id: "MATH 7.MOCK.JUNCTION",
+    title: "Quadratic–quadratic junction — continuity and growth",
+    chapter: 7,
+    subsection: "7.2",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `Continuous and differentiable at $3$. $f\\ge 7$ on $[3,\\infty)$. No global min $7$. Root $3-\\sqrt{7}\\in(0,3)$.`,
+  };
+}
+
+/** Q29 — power model Ax^p limits (course power-function theme). */
+export function buildMathQ29Limits() {
+  const context = `Let $A>0$ and $p\\in\\mathbb{R}$. Define $f(x)=A x^{p}$ for $x>0$. Decide whether each statement is true or false.`;
+
+  const statements = [
+    "If $p>0$, then $\\displaystyle\\lim_{x\\to +\\infty}f(x)=+\\infty$.",
+    "If $-1<p<0$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)=0$.",
+    "If $p<-1$, then $\\displaystyle\\lim_{x\\to +\\infty}f(x)=0$.",
+    "For every $p\\neq 0$ one has $\\displaystyle\\lim_{x\\to 1}f(x)=A$.",
+    "If $p>0$, then $f(2)-f(1)=2A-A$ forces $f(2)=2f(1)$.",
+  ];
+
+  // A True
+  // B False: for -1<p<0, x^p → +∞ as x→0+
+  // C True (actually for all p<0 →0 at ∞)
+  // D True: f(1)=A always
+  // E False: f(2)=A*2^p, 2f(1)=2A; equal only if 2^p=2 i.e. p=1. Claim says "forces f(2)=2f(1)" from f(2)-f(1)=A which is wrong arithmetic for general p. Statement says if p>0 then f(2)-f(1)=2A-A forces... — the premise f(2)-f(1)=2A-A is only true for p=1. Reading as a claim that this identity holds and forces equality — False.
+
+  const answer_key = [true, false, true, true, false];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+For $p>0$ and $A>0$, $Ax^{p}\\to+\\infty$ as $x\\to+\\infty$.
+
+So the statement is True.`,
+
+    `**B.** → False
+
+For $-1<p<0$, $x^{p}\\to+\\infty$ as $x\\to 0^{+}$, not $0$.
+
+So the statement is False.`,
+
+    `**C.** → True
+
+For $p<-1<0$, $x^{p}\\to 0$ as $x\\to+\\infty$.
+
+So the statement is True.`,
+
+    `**D.** → True
+
+$f(1)=A\\cdot 1^{p}=A$ for every real $p$.
+
+So the statement is True.`,
+
+    `**E.** → False
+
+In general $f(2)-f(1)=A(2^{p}-1)$, which equals $A$ only when $p=1$. Even then $f(2)=2A=2f(1)$, but the claimed identity does not hold for every $p>0$.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 8.MOCK.POWTRAP",
+    id: "MATH 8.MOCK.POWTRAP",
+    title: "Power model — endpoint limits and ratio traps",
+    chapter: 8,
+    subsection: "8.1",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `$p>0\\Rightarrow\\infty$ at $+\\infty$. For $-1<p<0$, blow-up at $0^{+}$. $p<-1\\Rightarrow 0$ at $+\\infty$. $f(1)=A$. $f(2)=2f(1)$ only for $p=1$.`,
+  };
+}
+
+/** Q30 — parametric cubic (course polynomial theme). */
+export function buildMathQ30Param() {
+  const context = `For real parameters $a$ and $b$, consider
+
+$$
+p(x)=(x-1)(x^{2}+ax+b).
+$$
+
+Decide whether each statement is true or false.`;
+
+  // expand x^3+(a-1)x^2+(b-a)x-b
+  // always root x=1
+  // quadratic disc a^2-4b; two more real roots iff a^2>4b
+  // if a=2,b=5: disc 4-20<0 only one real root
+  // claim: for all a,b exactly one real root — False (when disc>0 three real, or disc=0 two)
+  // sum of roots if three real: 1 - a? From -coeff: sum = 1-a? Roots 1,r,s with r+s=-a, rs=b. Sum=1-a.
+  // product = -(-b)=b? p(x)=x^3+...-b, product of roots = b. For monic: (-1)^3 (-b)/1 = b. Yes product=b.
+  // claim product always 1 False
+
+  const statements = [
+    "For every real $a$ and $b$, the number $x=1$ is a root of $p$.",
+    "If $a=2$ and $b=5$, then $p$ has exactly one real root.",
+    "If $a^{2}>4b$, then $p$ has three distinct real roots.",
+    "Whenever $p$ has three real roots counting multiplicity, their product equals $b$.",
+    "For every real $a$ and $b$, the equation $p(x)=0$ has exactly one real solution.",
+  ];
+
+  // C: three distinct when disc>0 and the quadratic roots ≠1. If quadratic root is 1: 1+a+b=0 and a^2>4b — possible multiple root at 1. Distinct requires also quadratic roots ≠1. 
+  // If a^2>4b, two distinct quadratic roots; they equal 1 iff 1+a+b=0. Example a=3,b=-1: disc=9+4=13>0, 1+3-1=3≠0 so three distinct. But claim says always when a^2>4b — counterexample a=0,b=-1? disc=4>0, roots of x^2-1=0 → ±1, so roots 1,1,-1 — not three distinct. a=0,b=-1: (x-1)(x^2-1)=(x-1)^2(x+1), roots 1 (mult 2) and -1. a^2=0>4(-1)=-4 yes. So NOT three distinct. False!
+
+  const answer_key = [true, true, false, true, false];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+The factor $(x-1)$ forces $p(1)=0$ for every $a,b$.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+$x^{2}+2x+5$ has discriminant $4-20<0$, so only the real root $x=1$ remains.
+
+So the statement is True.`,
+
+    `**C.** → False
+
+For $a=0$, $b=-1$ one has $a^{2}>4b$, but $p(x)=(x-1)^{2}(x+1)$ has only two distinct real roots.
+
+So the statement is False.`,
+
+    `**D.** → True
+
+For the monic cubic $x^{3}+\\cdots-b$, the product of all roots (with multiplicity) equals $b$.
+
+So the statement is True.`,
+
+    `**E.** → False
+
+When the quadratic factor has two additional real roots different from $1$, there are three real solutions.
+
+So the statement is False.`,
+  ];
+
+  return {
+    case_id: "MATH 9.MOCK.TWOPAR",
+    id: "MATH 9.MOCK.TWOPAR",
+    title: "Two-parameter cubic — always-one-root factorisation",
+    chapter: 9,
+    subsection: "9.3",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `Always root $1$. For $(2,5)$ only one real root. $a^{2}>4b$ need not give three distinct roots. Product of roots $=b$. Not always unique.`,
+  };
+}
+
+/** Q31 — coupled decay and growth (course exp/log theme, applied). */
+export function buildMathQ31LogDeriv() {
+  const context = `A laboratory tracer follows $M(t)=800e^{-0.15t}$ (milligrams, $t$ in years). Separately, an endowment starts at EUR $5000$ and grows continuously at force $5\\%$ per year, so $F(t)=5000e^{0.05t}$.
+
+Decide whether each statement is true or false.`;
+
+  // half-life: 0.15 t = ln2 → t=ln2/0.15≈4.621 < 5
+  // M(8)=800 e^{-1.2}≈800*0.3012≈240.96 < 250? above 250? False if claim above 250
+  // F reaches 8000: 5000 e^{0.05t}=8000 → e^{0.05t}=1.6 → t=ln(1.6)/0.05≈9.40 < 11? claim t>11 False if "first reaches at t>11"
+  // M(t)+something — claim half-life < 6 True
+  // F(10)=5000 e^{0.5}≈8244 > 8000 True that after 10 years exceeds 8000
+
+  const statements = [
+    "The tracer’s half-life is strictly less than $5$ years.",
+    "After $8$ years the remaining mass is still above $250\\ \\mathrm{mg}$.",
+    "The fund first reaches EUR $8000$ at some time $t>11$ years.",
+    "After $10$ years the fund balance exceeds EUR $8000$.",
+    "The tracer’s continuous decay rate $0.15$ is three times the fund’s continuous growth rate $0.05$.",
+  ];
+
+  const answer_key = [true, false, false, true, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+$$
+e^{-0.15t}=\\tfrac12\\Rightarrow t=\\dfrac{\\ln 2}{0.15}\\approx 4.62<5
+$$
+
+So the statement is True.`,
+
+    `**B.** → False
+
+$$
+M(8)=800e^{-1.2}\\approx 241<250
+$$
+
+So the statement is False.`,
+
+    `**C.** → False
+
+$$
+5000e^{0.05t}=8000\\Rightarrow t=\\dfrac{\\ln 1.6}{0.05}\\approx 9.40<11
+$$
+
+So the statement is False.`,
+
+    `**D.** → True
+
+$$
+F(10)=5000e^{0.5}\\approx 8244>8000
+$$
+
+So the statement is True.`,
+
+    `**E.** → True
+
+$0.15=3\\cdot 0.05$.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 10.MOCK.COUPLE",
+    id: "MATH 10.MOCK.COUPLE",
+    title: "Coupled tracer decay and endowment growth",
+    chapter: 10,
+    subsection: "10.2",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `Half-life $\\approx 4.62$. $M(8)\\approx 241$. Fund hits $8000$ at $t\\approx 9.4$; $F(10)\\approx 8244$. Rates $0.15=3\\cdot 0.05$.`,
+  };
+}
+
+/** Q32 — product-of-three engagement derivative (course differentiation theme). */
+export function buildMathQ32Engagement() {
+  const context = `For $t>0$ define the engagement score
+
+$$
+Z(t)=t^{3}e^{-2t}\\ln(t+1).
+$$
+
+Decide whether each statement is true or false.`;
+
+  // Use product u=t^3, v=e^{-2t}, w=ln(t+1)
+  // Z' = u'vw + uv'w + uvw'
+  // One derivative check at a point + property traps
+  // Z(t)>0 for t>0 True
+  // claim Z decreasing on (0,∞) False
+  // lim t→∞ Z=0 True
+  // At t=1: compute Z'(1) sign
+  // u'=3t^2, v'=-2e^{-2t}, w'=1/(t+1)
+  // Z'(1)= 3(1)e^{-2}ln2 + 1*(-2)e^{-2}ln2 + 1*e^{-2}*(1/2)
+  // = e^{-2}[3ln2 - 2ln2 + 1/2] = e^{-2}(ln2 + 0.5) > 0
+  // claim Z'(1)<0 False
+  // Product rule form matches
+
+  const statements = [
+    "The derivative $Z'$ expands by the three-factor product rule as $u'vw+uv'w+uvw'$ with $u=t^{3}$, $v=e^{-2t}$, $w=\\ln(t+1)$.",
+    "For every $t>0$ one has $Z(t)>0$.",
+    "The factor $e^{-2t}$ is always positive, so it cannot change the sign of $Z$ on $(0,+\\infty)$.",
+    "$Z$ is strictly decreasing on the whole half-line $(0,+\\infty)$.",
+    "$\\displaystyle\\lim_{t\\to +\\infty}Z(t)=0$.",
+  ];
+
+  // D False because Z'(1)>0 so initially increasing
+
+  const answer_key = [true, true, true, false, true];
+
+  const tactical_explanations = [
+    `**A.** → True
+
+That is exactly the product rule for three differentiable factors.
+
+So the statement is True.`,
+
+    `**B.** → True
+
+For $t>0$, each of $t^{3}$, $e^{-2t}$ and $\\ln(t+1)$ is positive.
+
+So the statement is True.`,
+
+    `**C.** → True
+
+$e^{-2t}>0$ for all real $t$, so it never flips the sign of $Z$ on $(0,+\\infty)$.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+At $t=1$,
+
+$$
+Z'(1)=e^{-2}\\bigl(\\ln 2+\\tfrac12\\bigr)>0
+$$
+
+so $Z$ increases through $t=1$ and cannot be strictly decreasing on the whole half-line.
+
+So the statement is False.`,
+
+    `**E.** → True
+
+Polynomial–log growth is dominated by $e^{-2t}\\to 0$, so $Z(t)\\to 0$.
+
+So the statement is True.`,
+  ];
+
+  return {
+    case_id: "MATH 11.MOCK.ZCUBE",
+    id: "MATH 11.MOCK.ZCUBE",
+    title: "Engagement $t^{3}e^{-2t}\\ln(t+1)$ — product rule and monotonicity traps",
+    chapter: 11,
+    subsection: "11.1",
+    context,
+    statements,
+    answer_key,
+    tactical_explanations,
+    difficulty_level: "5/5",
+    solution_overview: `Product rule matches A. $Z>0$; $e^{-2t}$ preserves sign; $Z'(1)>0$ kills monotone decrease; $Z\\to 0$ at $+\\infty$.`,
+  };
+}
+
+/** Q33 — best-of-five unfair match (course probability theme). */
+export function buildMathQ33Coins() {
+  const context = `Ana and Ben play a best-of-five contest (first to three wins takes the match). Each game is independent. Ana wins a single game with probability $p=\\tfrac{3}{5}$; Ben wins with probability $q=\\tfrac{2}{5}$.
+
+They stop when one player reaches three wins.
+
+Decide whether each statement is true or false.`;
+
+  const statements = [
+    "The probability Ana sweeps the match $3$–$0$ is $\\dfrac{27}{125}$.",
+    "The probability the match lasts exactly five games is $\\dfrac{216}{625}$.",
+    "The probability Ana wins the match equals $\\dfrac{3}{5}$.",
+    "Conditional on the match lasting five games, the probability Ana wins the match is $\\dfrac{3}{5}$.",
+    "The probability the match ends in exactly three games is $\\dfrac{7}{25}$.",
+  ];
 
   const answer_key = [true, true, false, true, true];
 
@@ -845,163 +903,85 @@ Decide whether each statement is true or false.`;
     `**A.** → True
 
 $$
-R'(q)=60-4q,\\qquad C'(q)=2q+12
+p^{3}=\\left(\\dfrac{3}{5}\\right)^{3}=\\dfrac{27}{125}
 $$
-
-At $q=8$ both equal $28$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-$$
-\\pi(q)=48q-3q^{2}-40,\\qquad \\pi'(q)=48-6q
-$$
+A fifth game requires a $2$–$2$ split after four games:
 
-vanishes only at $q=8$, and $\\pi''=-6<0$. Then $\\pi(8)=152$.
+$$
+\\binom{4}{2}p^{2}q^{2}=6\\cdot\\dfrac{9}{25}\\cdot\\dfrac{4}{25}=\\dfrac{216}{625}
+$$
 
 So the statement is True.`,
 
     `**C.** → False
 
 $$
-\\pi(10)=140<152
+P(\\text{Ana wins})=p^{3}(1+3q+6q^{2})=\\dfrac{27}{125}\\cdot\\dfrac{79}{25}=\\dfrac{2133}{3125}\\neq\\dfrac{3}{5}
 $$
 
 So the statement is False.`,
 
     `**D.** → True
 
-$C'(q)=2q+12$ has derivative $2>0$.
+Given $2$–$2$, the fifth game decides, and Ana wins it with probability $p=\\tfrac{3}{5}$.
 
 So the statement is True.`,
 
     `**E.** → True
 
 $$
-p(8)=60-16=44
+p^{3}+q^{3}=\\dfrac{27+8}{125}=\\dfrac{35}{125}=\\dfrac{7}{25}
 $$
 
 So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 11.MOCK.MRMC",
-    id: "MATH 11.MOCK.MRMC",
-    title: "Linear demand and quadratic cost — MR=MC profit audit",
-    chapter: 11,
-    subsection: "11.4",
+    case_id: "MATH 12.MOCK.BEST5",
+    id: "MATH 12.MOCK.BEST5",
+    title: "Best-of-five unfair match — length and winner traps",
+    chapter: 12,
+    subsection: "12.3",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Optimum $q=8$, $\\pi=152$, $p=44$. $\\pi(10)=140$. MC strictly increasing.`,
+    solution_overview: `Sweep $27/125$. Five games $216/625$. Ana match win $2133/3125\\neq 3/5$. Given five games, win prob $p$. Three-game match $7/25$.`,
   };
 }
 
-/** Q33 — three-factory Bayes (not best-of-n match). */
-export function buildMathQ33Coins() {
-  const context = `Three factories supply a warehouse: Factory A produces $50\\%$ of the units, Factory B produces $30\\%$, and Factory C produces $20\\%$. Defect rates are $2\\%$ at A, $4\\%$ at B, and $6\\%$ at C. A unit is drawn uniformly from the warehouse output. Let $D$ be the event that the unit is defective.
+/** Q34 — binomial mean / variance / proportion (course binomial theme). */
+export function buildMathQ34Binomial() {
+  const context = `A call centre handles $n=50$ independent outbound calls. Each call is a sale with probability $p=0.3$. Let $X\\sim\\mathrm{Bin}(50,0.3)$ and $\\hat{p}=X/50$.
 
 Decide whether each statement is true or false.`;
 
-  // P(D)=0.034; P(A|D)=10/34=5/17; P(B|D)=12/34=6/17; P(C|D)=12/34=6/17
-  // P(A|D)<P(C|D) True (5/17<6/17)
-  // P(D)<0.04 True
-  // P(B|D)=P(C|D) True both 6/17
-  // P(D|A)=0.02 not 0.5
-  // most likely source given D is B or C tied — claim "A is uniquely most likely" False
+  // mean 15, var 10.5, sd≈3.24 ∈ (3,4)
+  // var claim =15 False
+  // var hatp = 0.3*0.7/50 = 0.21/50 = 0.0042
+  // sd hatp ≈ 0.0648 < 0.07
 
   const statements = [
-    "The unconditional defect probability $P(D)$ is strictly less than $0.04$.",
-    "Given a defective unit, Factory A is the unique most probable source.",
-    "Given a defective unit, Factories B and C are equally probable sources.",
-    "Given a defective unit, Factory C is strictly more probable than Factory A.",
-    "The defect probability among units from Factory A equals $50\\%$.",
+    "The mean of $X$ is $15$ and the variance of $X$ is $10.5$.",
+    "The standard deviation of $X$ is strictly between $3$ and $4$.",
+    "The variance of $X$ equals $15$.",
+    "The variance of the sales rate $\\hat{p}$ equals $0.0042$.",
+    "The standard deviation of $\\hat{p}$ is strictly less than $0.07$.",
   ];
 
-  const answer_key = [true, false, true, true, false];
+  const answer_key = [true, true, false, true, true];
 
   const tactical_explanations = [
     `**A.** → True
 
 $$
-P(D)=0.5\\cdot 0.02+0.3\\cdot 0.04+0.2\\cdot 0.06=0.034<0.04
-$$
-
-So the statement is True.`,
-
-    `**B.** → False
-
-$$
-P(A\\mid D)=\\dfrac{0.01}{0.034}=\\dfrac{5}{17},\\qquad P(B\\mid D)=P(C\\mid D)=\\dfrac{6}{17}
-$$
-
-A is not the most probable source.
-
-So the statement is False.`,
-
-    `**C.** → True
-
-Both posterior probabilities equal $\\dfrac{6}{17}$.
-
-So the statement is True.`,
-
-    `**D.** → True
-
-$\\dfrac{6}{17}>\\dfrac{5}{17}$.
-
-So the statement is True.`,
-
-    `**E.** → False
-
-$P(D\\mid A)=0.02=2\\%$, not $50\\%$ (which is A’s share of output).
-
-So the statement is False.`,
-  ];
-
-  return {
-    case_id: "MATH 12.MOCK.BAYES3",
-    id: "MATH 12.MOCK.BAYES3",
-    title: "Three factories — Bayes posteriors and base-rate traps",
-    chapter: 12,
-    subsection: "12.4",
-    context,
-    statements,
-    answer_key,
-    tactical_explanations,
-    difficulty_level: "5/5",
-    solution_overview: `$P(D)=0.034$. Posteriors $5/17$, $6/17$, $6/17$. A is not likeliest; $P(D|A)=2\\%$.`,
-  };
-}
-
-/** Q34 — binomial ranges and linear scoring (not mean/var of Bin(80,0.35)). */
-export function buildMathQ34Binomial() {
-  const context = `Let $X\\sim\\mathrm{Bin}(n=25,p=0.4)$ and set $Y=3X-2$. Decide whether each statement is true or false.`;
-
-  // E[X]=10, Var=6, SD=√6≈2.45
-  // E[Y]=28, Var(Y)=9*6=54
-  // P(X≥15)≈0.0344 < 0.05
-  // P(X≤2)≈0.00043 < 0.001
-  // Claim P(X≥10)=0.5 False (slightly above 0.5 for discrete? median etc - actually for symmetric only if p=0.5)
-  // P(X≥10)=P(X>9.5) roughly >0.5 since mean 10. Compute? Not exactly 0.5.
-
-  const statements = [
-    "The mean of $X$ is $10$ and the variance of $X$ is $6$.",
-    "The mean of $Y$ is $28$ and the variance of $Y$ is $54$.",
-    "The probability $P(X\\ge 15)$ is strictly less than $0.05$.",
-    "The probability $P(X\\le 2)$ is strictly less than $0.001$.",
-    "Because the mean of $X$ is $10$, one has $P(X\\ge 10)=\\tfrac12$ exactly.",
-  ];
-
-  const answer_key = [true, true, true, true, false];
-
-  const tactical_explanations = [
-    `**A.** → True
-
-$$
-E[X]=25\\cdot 0.4=10,\\qquad \\mathrm{Var}(X)=25\\cdot 0.4\\cdot 0.6=6
+E[X]=50\\cdot 0.3=15,\\qquad \\mathrm{Var}(X)=50\\cdot 0.3\\cdot 0.7=10.5
 $$
 
 So the statement is True.`,
@@ -1009,43 +989,45 @@ So the statement is True.`,
     `**B.** → True
 
 $$
-E[Y]=3\\cdot 10-2=28,\\qquad \\mathrm{Var}(Y)=9\\cdot 6=54
+\\sqrt{10.5}\\approx 3.24\\in(3,4)
 $$
 
 So the statement is True.`,
 
-    `**C.** → True
+    `**C.** → False
 
-Direct summation of the binomial probabilities for $k=15,\\ldots,25$ yields about $0.0344<0.05$.
+Variance is $10.5$, not the mean $15$.
 
-So the statement is True.`,
+So the statement is False.`,
 
     `**D.** → True
 
 $$
-P(X\\le 2)\\approx 0.00043<0.001
+\\mathrm{Var}(\\hat{p})=\\dfrac{0.3\\cdot 0.7}{50}=0.0042
 $$
 
 So the statement is True.`,
 
-    `**E.** → False
+    `**E.** → True
 
-For $p\\neq 1/2$ the distribution is asymmetric, so $P(X\\ge 10)$ is not forced to equal $1/2$ merely because the mean is $10$.
+$$
+\\sqrt{0.0042}\\approx 0.0648<0.07
+$$
 
-So the statement is False.`,
+So the statement is True.`,
   ];
 
   return {
-    case_id: "MATH 13.MOCK.BIN25",
-    id: "MATH 13.MOCK.BIN25",
-    title: "Binomial $n=25$ — tails, linear scoring, median trap",
+    case_id: "MATH 13.MOCK.CALL50",
+    id: "MATH 13.MOCK.CALL50",
+    title: "Fifty sales calls — binomial mean, variance, proportion",
     chapter: 13,
-    subsection: "13.2",
+    subsection: "13.1",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `$E=10$, $\\mathrm{Var}=6$; $E[Y]=28$, $\\mathrm{Var}(Y)=54$. Tail probs $<0.05$ and $<0.001$. Mean does not force $P(X\\ge 10)=1/2$.`,
+    solution_overview: `$E=15$, $\\mathrm{Var}=10.5$, $\\mathrm{SD}\\approx 3.24$. Variance is not $15$. $\\mathrm{Var}(\\hat{p})=0.0042$, $\\mathrm{SD}\\approx 0.065$.`,
   };
 }

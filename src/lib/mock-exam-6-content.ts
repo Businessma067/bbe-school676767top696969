@@ -1,9 +1,9 @@
 /**
- * Curated Mock Exam 6 content (ultra-hard bank + generated tasks):
- * - Economics → English (Antibiotic Discovery Void) → Math, in that order
- * - Economics: unused hard bank cases + cash-conversion-cycle chart MOCK
- * - English: T.7 Antibiotics + G.7.19
- * - Math: ultra customs with engines unlike Mocks 1–5 (surjections, amortisation, Bayes, …)
+ * Curated Mock Exam 6 content (course-theme harder bank):
+ * - Economics → English (Classical Gold Standard) → Math
+ * - Economics: unused hard bank + cash-conversion-cycle chart
+ * - English: T.3 Gold Standard + G.8.19
+ * - Math: same BBE chapter families as Mock 5, denser/harder chains
  */
 
 import sourced from "@/data/mock-exam-6-sourced.json";
@@ -106,7 +106,7 @@ export const MOCK_EXAM_6_POINTS_TOTAL =
 
 /** Bump when Mock 6 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_6_CONTENT_REV =
-  "2026-09-18a · 34q · Antibiotics · CCC chart · distinct ultra math";
+  "2026-09-18c · 34q · Gold Standard · CCC · course-theme harder math";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
