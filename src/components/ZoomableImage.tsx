@@ -166,40 +166,41 @@ export function ZoomableImage({
             transformOrigin: "center center",
           }}
         />
+      </div>
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-2 flex justify-center px-2">
-          <div className="pointer-events-auto flex items-center gap-0.5 rounded-full border border-border bg-background/95 p-0.5 shadow-sm backdrop-blur-sm">
-            <button
-              type="button"
-              onClick={() => zoomTo(view.scale - STEP)}
-              disabled={view.scale <= MIN_SCALE}
-              className={controlClass}
-              aria-label="Zoom out"
-            >
-              <ZoomOut className="h-4 w-4" />
-            </button>
-            <span className="min-w-10 text-center text-[11px] font-semibold tabular-nums text-muted-foreground">
-              {Math.round(view.scale * 100)}%
-            </span>
-            <button
-              type="button"
-              onClick={() => zoomTo(view.scale + STEP)}
-              disabled={view.scale >= MAX_SCALE}
-              className={controlClass}
-              aria-label="Zoom in"
-            >
-              <ZoomIn className="h-4 w-4" />
-            </button>
-            <button
-              type="button"
-              onClick={resetView}
-              disabled={view.scale <= MIN_SCALE}
-              className={controlClass}
-              aria-label="Reset zoom"
-            >
-              <RotateCcw className="h-4 w-4" />
-            </button>
-          </div>
+      {/* Keep zoom controls outside the image so they never cover labels. */}
+      <div className="mt-2 flex justify-center px-2">
+        <div className="flex items-center gap-0.5 rounded-full border border-border bg-background/95 p-0.5 shadow-sm backdrop-blur-sm">
+          <button
+            type="button"
+            onClick={() => zoomTo(view.scale - STEP)}
+            disabled={view.scale <= MIN_SCALE}
+            className={controlClass}
+            aria-label="Zoom out"
+          >
+            <ZoomOut className="h-4 w-4" />
+          </button>
+          <span className="min-w-10 text-center text-[11px] font-semibold tabular-nums text-muted-foreground">
+            {Math.round(view.scale * 100)}%
+          </span>
+          <button
+            type="button"
+            onClick={() => zoomTo(view.scale + STEP)}
+            disabled={view.scale >= MAX_SCALE}
+            className={controlClass}
+            aria-label="Zoom in"
+          >
+            <ZoomIn className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            onClick={resetView}
+            disabled={view.scale <= MIN_SCALE}
+            className={controlClass}
+            aria-label="Reset zoom"
+          >
+            <RotateCcw className="h-4 w-4" />
+          </button>
         </div>
       </div>
     </div>
