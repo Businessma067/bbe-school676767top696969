@@ -557,91 +557,87 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Break-even means total contribution equals fixed costs EUR $4800$:
+Break-even means the three products’ contributions exactly cover the monthly fixed costs EUR $4800$. With unit contributions $4$, $5$, and $6$ that is the linear balance
 
 $$
-4x+5y+6z=4800
+4x+5y+6z=4800.
 $$
 
-Substitute the forced mix ratios $x=2z$ and $y=3z$:
+The sales plan locks the volumes to the mix $x=2z$ and $y=3z$. Substitute those ratios before solving for $z$:
 
 $$
-4(2z)+5(3z)+6z=8z+15z+6z=29z
+4(2z)+5(3z)+6z=8z+15z+6z=29z.
 $$
 
+So the entire plan collapses to a single equation in $z$:
+
 $$
-29z=4800\\qquad\\Rightarrow\\qquad z=\\dfrac{4800}{29}\\approx 165.52
+29z=4800\\qquad\\Rightarrow\\qquad z=\\dfrac{4800}{29}.
 $$
 
-Since $165.52>160$, the break-even volume of product $Z$ is strictly greater than $160$.
+Long division (or a calculator) gives $4800/29\\approx 165.517$. The claim only asks whether this break-even $Z$-volume is strictly above $160$. Because $165.517>160$, the inequality holds.
+
+(If you prefer an exact comparison without decimals: $29\\cdot 160=4640$, and $4800-4640=160>0$, so $4800/29>160$ as well.)
 
 So the statement is True.`,
 
     `**B.** → False
 
-From letter A the break-even $Z$-volume is the exact fraction
-
-$$
-z=\\dfrac{4800}{29}
-$$
-
-Check whether $29$ divides $4800$ evenly:
-
-$$
-29\\cdot 165=4785,\\qquad 4800-4785=15\\neq 0
-$$
-
-The remainder $15$ is nonzero, so $z$ is not an integer number of units. The claim that break-even $z$ is an integer fails.
+Letter A already gave $z=4800/29$. Integer units would require $29\\mid 4800$. But $29\\cdot 165=4785$ and $4800-4785=15\\neq 0$, so the quotient is not an integer.
 
 So the statement is False.`,
 
     `**C.** → True
 
-Under the mix $x=2z$, $y=3z$, total unit volume collapses to a multiple of $z$:
+With $x=2z$ and $y=3z$, total monthly unit volume is just a multiple of $z$:
 
 $$
-x+y+z=2z+3z+z=6z
+x+y+z=2z+3z+z=6z=\\dfrac{6\\cdot 4800}{29}=\\dfrac{28800}{29}.
 $$
 
-$$
-6z=\\dfrac{6\\cdot 4800}{29}=\\dfrac{28800}{29}\\approx 993.10
-$$
-
-Compare with the claimed threshold $1000$:
+Now $28800\\div 29$: $29\\cdot 993=28797$, remainder $3$, so
 
 $$
-993.10<1000
+\\dfrac{28800}{29}=993+\\dfrac{3}{29}\\approx 993.10<1000.
 $$
 
-so break-even total unit volume is strictly less than $1000$.
+Break-even total volume therefore sits strictly below the claimed threshold $1000$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Keep the same mix coefficient $29z$ but replace fixed costs by the higher figure EUR $5800$:
+Raise fixed costs to EUR $5800$ but keep the same mix coefficient $29z$:
 
 $$
 29z=5800\\qquad\\Rightarrow\\qquad z=\\dfrac{5800}{29}=200
 $$
 
-exactly. The claim needs the strict inequality $z>200$, but equality holds instead. A non-strict threshold does not satisfy “exceed $200$”, so the statement fails.
+exactly ($29\\cdot 200=5800$). “Exceed $200$” is the strict inequality $z>200$; equality fails that test.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Drop product $Y$ by setting $y=0$, while keeping $x=2z$ and the original fixed costs EUR $4800$:
+Now drop product $Y$ entirely ($y=0$) while still forcing $x=2z$ and keeping the original fixed costs EUR $4800$. Contribution comes only from $X$ and $Z$:
 
 $$
-4(2z)+6z=8z+6z=14z=4800
+4x+6z=4(2z)+6z=8z+6z=14z.
 $$
 
+Break-even becomes
+
 $$
-z=\\dfrac{4800}{14}\\approx 342.86
+14z=4800\\qquad\\Rightarrow\\qquad z=\\dfrac{4800}{14}=\\dfrac{2400}{7}\\approx 342.86.
 $$
 
-Compare with the three-product break-even $z\\approx 165.52$ from letter A: $342.86>165.52$, so the required $z$ is strictly larger without $Y$.
+In the three-product plan (letter A) one had $z=4800/29\\approx 165.52$. Compare the two required $Z$-volumes:
+
+$$
+\\dfrac{2400}{7}-\\dfrac{4800}{29}=\\dfrac{2400\\cdot 29-4800\\cdot 7}{7\\cdot 29}=\\dfrac{69600-33600}{203}=\\dfrac{36000}{203}>0.
+$$
+
+So the two-product break-even $z$ is strictly larger than the three-product one — losing $Y$’s contribution of $5$ EUR per unit forces the workshop to push $Z$ (and with it $X=2z$) much higher to cover the same fixed costs.
 
 So the statement is True.`,
   ];
@@ -678,67 +674,79 @@ export function buildMathQ27Ineq() {
   const tactical_explanations = [
     `**A.** → True
 
-Interpret $|x-1|+|x-4|$ as the sum of distances from $x$ to $1$ and to $4$ on the real line. For any real $x$, the triangle inequality on the line gives
+Think of $|x-1|+|x-4|$ as the sum of distances from a point $x$ on the line to the fixed points $1$ and $4$. Any path from $1$ to $4$ has length at least $3$, and the shortest path is the straight segment between them. Algebraically,
 
 $$
-|x-1|+|x-4|\\ge |(4)-(1)|=3
+|x-1|+|x-4|\\ge|(4)-(1)|=3,
 $$
 
-with equality if and only if $x$ lies between the two points, i.e. on the closed interval $[1,4]$. Therefore the inequality $|x-1|+|x-4|\\le 3$ forces equality, and the solution set is exactly $[1,4]$.
+with equality if and only if $x$ lies on the closed segment joining $1$ and $4$, i.e. $x\\in[1,4]$. The inequality $\\le 3$ therefore forces equality throughout that segment and nowhere else. The solution set is exactly $[1,4]$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Domain of the square root: $2x-1\\ge 0$, so $x\\ge \\tfrac{1}{2}$. Also a nonnegative square root cannot be strictly less than a nonpositive number, so one needs $x-2>0$, i.e. $x>2$. Square both sides on $x>2$:
+Two restrictions appear before any algebra. The square root needs $2x-1\\ge 0$, so $x\\ge 1/2$. Separately, a nonnegative quantity $\\sqrt{2x-1}$ cannot be strictly smaller than a nonpositive number, so one must have $x-2>0$, i.e. $x>2$. On that half-line both sides are defined and the right-hand side is positive, so squaring is valid and preserves the strict inequality:
 
 $$
-2x-1<(x-2)^{2}=x^{2}-4x+4
+2x-1<(x-2)^{2}=x^{2}-4x+4.
 $$
 
+Bring everything to the right:
+
 $$
-0<x^{2}-6x+5=(x-1)(x-5)
+0<x^{2}-4x+4-(2x-1)=x^{2}-6x+5=(x-1)(x-5).
 $$
 
-On $x>2$ this holds precisely when $x>5$. The true solution is $(5,+\\infty)$, not the claimed $(2,+\\infty)$.
+A product of two linear factors is positive outside the roots: $x<1$ or $x>5$. Intersect with the working region $x>2$: only $x>5$ survives. Thus the true solution set is $(5,+\\infty)$, not the claimed $(2,+\\infty)$. The interval $(2,5]$ looks tempting after domain trimming alone, but those points fail after squaring (for example at $x=3$: $\\sqrt{5}\\approx 2.24\\nless 1$).
 
 So the statement is False.`,
 
     `**C.** → False
 
-Critical points are the zero $x=2$ and the vertical asymptote $x=-1$ where the expression is undefined. A sign chart shows the quotient is negative on $(-1,2)$ and zero at $x=2$, so the solution of $\\le 0$ is $(-1,2]$. Including the closed endpoint $x=-1$ is illegal because the expression is undefined there. The claimed set $[-1,2]$ is therefore wrong.
+Critical points: numerator zero at $x=2$, denominator zero at $x=-1$ (undefined). Sign chart: negative on $(-1,2)$, zero at $x=2$, so $\\le 0$ solves as $(-1,2]$. The claimed $[-1,2]$ illegally includes the pole $x=-1$.
 
 So the statement is False.`,
 
     `**D.** → True
 
-Substitute $u=|x|\\ge 0$ to remove the absolute value and obtain an ordinary quadratic inequality in $u$:
+Put $u=|x|$ with $u\\ge 0$. The inequality becomes the ordinary quadratic
 
 $$
-u^{2}-u-2<0\\qquad\\Rightarrow\\qquad (u-2)(u+1)<0
+u^{2}-u-2<0\\qquad\\Leftrightarrow\\qquad (u-2)(u+1)<0.
 $$
 
-The roots are $u=-1$ and $u=2$. For $u\\ge 0$ the product is negative precisely when $0\\le u<2$, i.e. $|x|<2$. Translating back to $x$ gives the open interval $x\\in(-2,2)$, matching the claim.
+Roots at $u=-1$ and $u=2$. The product is negative strictly between the roots, so $-1<u<2$. Restricting to $u\\ge 0$ leaves $0\\le u<2$, i.e. $|x|<2$, hence $x\\in(-2,2)$. That matches the claim exactly (open endpoints because the original inequality is strict).
 
 So the statement is True.`,
 
     `**E.** → True
 
-Both absolute values are nonnegative, so squaring preserves the inequality direction:
+Both sides of $|2x+1|>|x-3|$ are nonnegative, so squaring is equivalent and keeps the direction:
 
 $$
-(2x+1)^{2}>(x-3)^{2}
+(2x+1)^{2}>(x-3)^{2}.
 $$
 
-$$
-4x^{2}+4x+1>x^{2}-6x+9\\qquad\\Rightarrow\\qquad 3x^{2}+10x-8>0
-$$
+Expand:
 
 $$
-(3x-2)(x+4)>0
+4x^{2}+4x+1>x^{2}-6x+9\\qquad\\Rightarrow\\qquad 3x^{2}+10x-8>0.
 $$
 
-The critical roots are $x=-4$ and $x=\\tfrac{2}{3}$. The quadratic (leading coefficient positive) is positive outside the roots: $x<-4$ or $x>\\tfrac{2}{3}$, as claimed.
+Factor the quadratic. Looking for integers with product $-24$ and sum $10$: the pair $12$ and $-2$ works after scaling,
+
+$$
+3x^{2}+10x-8=(3x-2)(x+4),
+$$
+
+because $(3x-2)(x+4)=3x^{2}+12x-2x-8=3x^{2}+10x-8$. Critical roots are therefore $x=2/3$ and $x=-4$. A parabola opening upward is positive outside its roots:
+
+$$
+x<-4\\quad\\text{or}\\quad x>\\dfrac{2}{3},
+$$
+
+which is exactly the claimed set $(-\\infty,-4)\\cup\\bigl(2/3,+\\infty\\bigr)$.
 
 So the statement is True.`,
   ];
@@ -785,73 +793,55 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Check the left-hand limit, the right-hand value, and $f(1)$. From the left piece $2x+1$,
+Continuity at the join $x=1$ needs the left-hand limit to equal $f(1)$. Approaching from the left uses the linear piece $2x+1$:
 
 $$
-\\lim_{x\\to 1^{-}}f(x)=2\\cdot 1+1=3
+\\lim_{x\\to 1^{-}}f(x)=2\\cdot 1+1=3.
 $$
 
-From the right piece (which also defines $f(1)$),
+The right-hand piece also covers the point itself:
 
 $$
-f(1)=1^{2}-2\\cdot 1+4=3
+f(1)=1^{2}-2\\cdot 1+4=3.
 $$
 
-Left limit, right-hand value, and function value all equal $3$, so the three continuity conditions hold at $x=1$.
+Left limit and function value agree at $3$, so $f$ is continuous at $x=1$.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Differentiability at the join requires matching one-sided derivatives. On $x<1$, $f'(x)=2$, so the left-hand derivative at $1$ is $2$. On $x\\ge 1$, $f'(x)=2x-2$, hence
-
-$$
-f'_+(1)=2\\cdot 1-2=0
-$$
-
-Since $2\\neq 0$, the one-sided derivatives disagree and $f$ is not differentiable at $x=1$. Continuity alone (letter A) is not enough for differentiability.
+One-sided derivatives at the join: left piece gives $f'(x)=2$, so $f'_-(1)=2$; right piece gives $f'(x)=2x-2$, so $f'_+(1)=0$. Since $2\\neq 0$, $f$ is not differentiable at $x=1$.
 
 So the statement is False.`,
 
     `**C.** → True
 
-On $x\\ge 1$ complete the square for the quadratic piece to reveal its vertex value:
+Restrict attention to the quadratic piece $x\\ge 1$. Completing the square makes the lower bound obvious:
 
 $$
-f(x)=x^{2}-2x+4=(x-1)^{2}+3
+f(x)=x^{2}-2x+4=(x^{2}-2x+1)+3=(x-1)^{2}+3.
 $$
 
-The squared term is nonnegative and vanishes only at $x=1$, so
+For every real $x$ one has $(x-1)^{2}\\ge 0$, so $f(x)\\ge 3$, and the squared term vanishes precisely when $x=1$. That point lies in the region $x\\ge 1$, so on the whole half-line $[1,+\\infty)$ one obtains
 
 $$
-f(x)\\ge 3\\qquad\\text{for all }x\\ge 1
+f(x)\\ge 3,
 $$
 
-with equality precisely at $x=1$, which is exactly the claim.
+with equality attained at $x=1$ and nowhere else in that region. As a quick check: at $x=1$ one gets $f(1)=3$, and at $x=3$ one gets $f(3)=9-6+4=7>3$. The claim is therefore correct — it never asserts anything about $x<1$, only about the right-hand piece.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Letter C only controls the right-hand piece $x\\ge 1$. On the left piece $x<1$ one has the linear formula
-
-$$
-f(x)=2x+1
-$$
-
-As $x\\to-\\infty$, this expression tends to $-\\infty$, so $f$ is unbounded below on $\\mathbb{R}$. There is therefore no global minimum value equal to $3$ on the whole real line.
+Letter C only pins down a minimum of $3$ on $[1,+\\infty)$. On the complementary half-line $x<1$ the function is the unrestricted linear piece $f(x)=2x+1$. Sending $x\\to-\\infty$ drives $2x+1\\to-\\infty$, so $f$ has no lower bound on $\\mathbb{R}$ at all. In particular $3$ cannot be a global minimum value on the whole real line — values such as $f(-10)=-19$ already sit well below $3$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Restrict to the open half-line $x<1$ and solve $f(x)=0$ on the linear piece:
-
-$$
-2x+1=0\\qquad\\Rightarrow\\qquad x=-\\dfrac{1}{2}
-$$
-
-The candidate $x=-\\tfrac{1}{2}$ lies in the region $x<1$, and it is negative. Hence the left-region equation has a negative root, as claimed.
+On the open half-line $x<1$ the formula is linear: solve $2x+1=0$ to get $x=-1/2$. That candidate is negative and satisfies $x<1$, so it is a genuine root of $f(x)=0$ in the left region.
 
 So the statement is True.`,
   ];
