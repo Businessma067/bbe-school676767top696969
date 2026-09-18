@@ -1420,7 +1420,7 @@
       "**B.** → Falsch\n\nDie Umkehrung folgt nicht.\n\nDie Aussage ist falsch.",
       "**C.** → Falsch\n\n$\\neg P\\Rightarrow\\neg Q$ ist nicht äquivalent zu $P\\Rightarrow Q$.\n\nDie Aussage ist falsch.",
       "**D.** → Wahr\n\nKontraposition ist äquivalent.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nUnternehmen X: Umsatz \\$2 Millionen und keine Prüfung ist $P\\land\\neg Q$, was $P\\Rightarrow Q$ widerlegt.\n\nDie Aussage ist wahr."
+      "**E.** → Wahr\n\nUnternehmen X: Umsatz $\\$2$ Millionen und keine Prüfung ist $P\\land\\neg Q$, was $P\\Rightarrow Q$ widerlegt.\n\nDie Aussage ist wahr."
     ],
     "solution_overview": "Mit $P$: Umsatz $>\\$1$ Mio. und $Q$: Jahresprüfung gilt $P\\Rightarrow Q$. Negation ist ein Verstoß $P\\land\\neg Q$. Nur die Kontraposition ist äquivalent."
   },
