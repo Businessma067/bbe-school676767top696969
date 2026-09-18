@@ -5,6 +5,7 @@ import { featuresExtraDe, featuresExtraUk } from "./features-extra";
 import { bbeVsWisoExtraDe, bbeVsWisoExtraUk } from "./bbe-vs-wiso-extra";
 import { wuViennaExtraDe, wuViennaExtraUk } from "./wu-vienna-extra";
 import { hubGapExtraDe, hubGapExtraUk } from "./hub-gap-extra";
+import { homeExtraDe, homeExtraUk } from "./home-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -413,6 +414,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...bbeVsWisoExtraDe,
     ...wuViennaExtraDe,
     ...hubGapExtraDe,
+    ...homeExtraDe,
     ...baseDictionary.de,
   },
   uk: {
@@ -423,6 +425,7 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     ...bbeVsWisoExtraUk,
     ...wuViennaExtraUk,
     ...hubGapExtraUk,
+    ...homeExtraUk,
     ...baseDictionary.uk,
   },
 };
