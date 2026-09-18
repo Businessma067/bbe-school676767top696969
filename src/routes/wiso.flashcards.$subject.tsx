@@ -39,6 +39,7 @@ function WisoFlashcardSubjectPage() {
       subject={subject}
       progressSubjectId={`wiso-${subjectId}`}
       subjectsHref="/wiso/flashcards"
+      locale="de"
     />
   );
 }

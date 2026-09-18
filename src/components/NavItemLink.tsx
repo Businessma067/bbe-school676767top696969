@@ -28,12 +28,13 @@ export function NavItemLink({
   const { pathname, search } = useRouterState({
     select: (s) => ({ pathname: s.location.pathname, search: s.location.search }),
   });
-  const { lang } = useLanguage();
+  const { lang, t } = useLanguage();
   const pathForActive = stripLocalePrefix(pathname);
   const effective = effectiveLangFromLocation(pathname, lang);
   const isActive = isNavItemActive(item, pathForActive, search);
   const track = resolveExamTrack(pathname);
   const homePath = trackHome(track);
+  const label = t(item.label);
 
   if (item.isRoute) {
     const { path, hash } = splitHref(item.href);
@@ -47,8 +48,9 @@ export function NavItemLink({
         className={cn(className, isActive && "text-primary")}
         aria-current={isActive ? "page" : undefined}
         onClick={onNavigate}
+        data-no-i18n
       >
-        {item.label}
+        {label}
       </Link>
     );
   }
@@ -68,8 +70,9 @@ export function NavItemLink({
           scrollToHash();
           onNavigate?.();
         }}
+        data-no-i18n
       >
-        {item.label}
+        {label}
       </button>
     );
   }
@@ -82,8 +85,9 @@ export function NavItemLink({
       hash={hash}
       className={className}
       onClick={onNavigate}
+      data-no-i18n
     >
-      {item.label}
+      {label}
     </Link>
   );
 }

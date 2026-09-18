@@ -40,6 +40,7 @@ function WisoTutorExamSubjectPage() {
       subjectId={subjectId}
       subject={subject}
       subjectsHref="/wiso/tutor-exam"
+      locale="de"
     />
   );
 }

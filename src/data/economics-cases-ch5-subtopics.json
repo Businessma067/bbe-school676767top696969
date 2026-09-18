@@ -1567,35 +1567,6 @@
   },
   {
     "subsection": "5.4",
-    "case_id": "CASE 5.4.08",
-    "title": "Renting High-Quality Event Wear",
-    "context": "Analyze how renting high-quality clothes for particular events can be preferable to buying inexpensive outfits used briefly. Evaluate the following economic assertions:",
-    "statements": [
-      "Sustainability-oriented consumers prefer durable goods that can be repaired rather than disposable items designed for early disposal.",
-      "Event-oriented rental of premium apparel reduces incentive to purchase single-use low-quality outfits for occasional wear.",
-      "Awareness of consumption risks is presented as necessary for producers and end consumers when evaluating market behaviour.",
-      "Renting clothes is always less sustainable than buying the cheapest available garment for a single event.",
-      "Cheap disposable clothing is the only trend in apparel markets because durability no longer interests any consumers."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Sustainability-oriented consumers prefer durable, repairable goods over disposable items built for early disposal. Longevity and repairability guide those choices. The preference stated matches that orientation.\n\nSo the statement is True.",
-      "Renting premium apparel for events reduces the incentive to buy single-use low-quality outfits for occasional wear. Temporary access covers the occasion without ownership waste.\n\nSo the statement is True.",
-      "Awareness of consumption risks is framed as necessary for producers and end consumers when they evaluate market behaviour. Both sides are asked to see how overbuying, short use, and volume push create costs. Without that awareness, responsibility discussions have no shared starting point. Producers shape offers; consumers shape purchase discipline. Presenting awareness as necessary for both is exactly the chapter stance.\n\nSo the statement is True.",
-      "Renting can be more sustainable than buying the cheapest single-event garment that will barely be worn again. \"Always less sustainable\" denies that common comparison. The absolute claim is false.\n\nSo the statement is False.",
-      "Durability still interests many consumers; cheap disposable clothing is not the only apparel trend. Quality and sharing trends coexist with fast fashion. The \"only trend\" claim fails.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.4",
     "case_id": "CASE 5.4.09",
     "title": "Marketing That Stimulates New Wants",
     "context": "Review the distinction between responding to existing customer needs and stimulating new wants through marketing activity. Evaluate the following economic assertions:",
@@ -5192,35 +5163,6 @@
   },
   {
     "subsection": "5.7",
-    "case_id": "CASE 5.7.24",
-    "title": "Price Skimming on New Products",
-    "context": "Analyze psychological pricing such as charm prices that influence customer perceptions. Evaluate the following economic assertions:",
-    "statements": [
-      "Cost-plus pricing adds a markup to production costs when setting the selling price of a product.",
-      "Selling only through the firm's own shops is classified as direct distribution rather than indirect distribution in the marketing-mix framework.",
-      "Supplying supermarkets through a wholesaler is classified as indirect distribution rather than direct distribution in the marketing-mix framework.",
-      "Television commercials communicating product benefits is classified as advertising rather than place in the marketing-mix framework.",
-      "Penetration pricing sets a relatively low price to gain market share quickly after launch."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Cost-plus pricing adds a markup to production costs to set the selling price. Cost base plus margin is the cost-plus rule the statement states.\n\nSo the statement is True.",
-      "Selling only through the firm's own shops is direct distribution because no independent intermediary sits between producer and buyer. Own-shop paths illustrate that direct place choice.\n\nSo the statement is True.",
-      "Supplying supermarkets through a wholesaler is indirect distribution: the wholesaler is an intermediary on the path to retail. Direct would skip that middle step.\n\nSo the statement is True.",
-      "Television commercials that communicate product benefits are advertising under promotion, not place decisions about physical access. Ads persuade and inform; warehouses and aisles handle availability. Mixing the commercial with place would confuse message tools with channel tools. Media spend belongs in the promotion toolkit. The statement's advertising classification is therefore right.\n\nSo the statement is True.",
-      "Penetration pricing sets a relatively low price to gain market share quickly after launch. Fast volume through a low entry price is the penetration aim.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
     "case_id": "CASE 5.7.25",
     "title": "Competitive Pricing Against Rivals",
     "context": "Review discounts, payment terms, and allowances as tools within the price P. Evaluate the following economic assertions:",
@@ -5768,35 +5710,6 @@
       "Mix extension adds a new line to the assortment. Launching a fresh office stationery line alongside what already sells widens mix width. The statement names that widening correctly.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
-    "case_id": "CASE 5.7.44",
-    "title": "Market Research Across Four Ps",
-    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
-    "statements": [
-      "A smart watches product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
-      "Refreshing office stationery packaging colours without changing the core formula is a relaunch within product-mix alteration.",
-      "Promoting smart watches through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
-      "Removing an underperforming office stationery variant from the range reflects contraction in the product-mix strategy.",
-      "Listing smart watches at €9.99 means the firm has left the price element unused and relied only on promotion."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Cash cows hold strong share when the market has little growth left; they fund other units rather than demand maximum growth spend. Question marks sit in high-growth cells with weak share and may need investment to chase leadership. Labelling a high-share, no-growth smart watches product a question mark reverses that map. The required \"maximum market-growth investment\" story belongs elsewhere, if anywhere.\n\nSo the statement is False.",
-      "A packaging-colour refresh for office stationery does not rewrite the underlying formula. Product-mix alteration treats that cosmetic change as a relaunch of the same item. Depth and width of the mix stay put while appearance is renewed.\n\nSo the statement is True.",
-      "Digital promotion of smart watches through social posts does not become place merely because goods sit in warehouses somewhere. Message channel and stock location remain distinct mix decisions.\n\nSo the statement is False.",
-      "Product-mix strategy allows managers to delete lines or variants that drag results. Removing a weak office stationery option is contraction, not a relaunch and not a line extension. The statement's label matches that elimination logic.\n\nSo the statement is True.",
-      "Listings at €9.99 for smart watches set the selling price using psychological pricing. That is not abandoning the price P for promotion alone. The statement misplaces the tool.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {

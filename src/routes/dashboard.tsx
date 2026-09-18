@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
@@ -9,7 +9,7 @@ import {
   fetchEnrollments,
   fetchMockAttempts,
   fetchTaskAttempts,
-  highestTier,
+  highestBbeTier,
   ownsProductSlug,
   summarizeTaskAttempts,
   WISO_FULL_COURSE_SLUG,
@@ -19,7 +19,7 @@ import {
   type SubjectStats,
   type TaskAttempt,
 } from "@/lib/user-progress";
-import { resolveExamTrack, type ExamTrack } from "@/lib/exam-track";
+import { storeExamTrack, type ExamTrack } from "@/lib/exam-track";
 import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
@@ -51,6 +51,7 @@ import {
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { tierAtLeast } from "@/lib/entitlements";
+import { WISO_DASHBOARD_STUDY } from "@/lib/wiso-study-ui";
 
 export type DashboardTab = "courses" | "mocks" | "custom" | "games";
 
@@ -101,8 +102,6 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigateHome = useLocalizedNavigate();
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const examTrack = resolveExamTrack(pathname);
   const { tab: searchTab } = Route.useSearch();
   // Keep the last explicit tab while TanStack briefly clears search during
   // outbound navigations (Open flashcards / matching / tutor), so the main
@@ -166,15 +165,14 @@ function DashboardPage() {
     sessionAnswers === null ||
     customMocks === null;
 
-  // Free / demo accounts see lock + unlock CTA on paid tabs immediately
-  // (Mock Exams, Custom Mocks, Study tools) — not only after navigating away.
-  const rawTier = !loading ? highestTier(enrollments!) : "none";
-  const accountTier = rawTier === "none" ? "demo" : rawTier;
+  const isAdmin = auth.role === "admin";
   const hasWisoFull =
-    !loading &&
-    (auth.role === "admin" || ownsProductSlug(enrollments!, WISO_FULL_COURSE_SLUG));
-  const paidToolsLocked = !loading && auth.role !== "admin" && !tierAtLeast(accountTier, "lite");
-  const studyToolsLocked = examTrack === "wiso" ? !hasWisoFull : paidToolsLocked;
+    !loading && (isAdmin || ownsProductSlug(enrollments!, WISO_FULL_COURSE_SLUG));
+  const bbeTier = !loading ? highestBbeTier(enrollments!) : "none";
+  const hasBbePaid =
+    !loading && (isAdmin || tierAtLeast(bbeTier === "none" ? "demo" : bbeTier, "lite"));
+  // Mock Exams / Custom Mocks are BBE-paid tools today.
+  const paidToolsLocked = !loading && !isAdmin && !hasBbePaid;
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -279,6 +277,8 @@ function DashboardPage() {
                 tasks={tasks!}
                 mocks={mocks!}
                 sessionAnswers={sessionAnswers!}
+                hasWisoFull={hasWisoFull}
+                hasBbePaid={hasBbePaid}
               />
             ) : tab === "mocks" ? (
               paidToolsLocked ? (
@@ -296,7 +296,7 @@ function DashboardPage() {
                 />
               )
             ) : (
-              <GamesTab locked={studyToolsLocked} track={examTrack} />
+              <GamesTab hasWisoFull={hasWisoFull} hasBbePaid={hasBbePaid} />
             )}
           </div>
         </main>
@@ -312,11 +312,15 @@ function CoursesTab({
   tasks,
   mocks,
   sessionAnswers,
+  hasWisoFull,
+  hasBbePaid,
 }: {
   enrollments: Enrollment[];
   tasks: TaskAttempt[];
   mocks: MockAttempt[];
   sessionAnswers: SessionAnswerStat[];
+  hasWisoFull: boolean;
+  hasBbePaid: boolean;
 }) {
   const stats: SubjectStats[] = useMemo(() => summarizeTaskAttempts(tasks), [tasks]);
   const streak = useMemo(
@@ -348,36 +352,62 @@ function CoursesTab({
           </div>
         ) : (
           <div className="grid gap-3 sm:grid-cols-2">
-            {enrollments.map((e) => (
-              <div key={e.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-                <p className="text-xs text-muted-foreground">
-                  {e.tier} access
-                </p>
-                <h3 className="mt-1 font-display text-lg font-bold">{e.product_name}</h3>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Enrolled {new Date(e.created_at).toLocaleDateString()}
-                </p>
-                <div className="mt-3 flex items-center gap-3">
-                  <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-secondary">
-                    <div
-                      className="h-full bg-caramel-deep"
-                      style={{
-                        width: `${overallAccuracy && totalAttempted ? Math.min(100, Math.round((totalPassed / Math.max(totalAttempted, 1)) * 100)) : 0}%`,
-                      }}
-                    />
+            {enrollments.map((e) => {
+              const isWiso = e.product_slug === WISO_FULL_COURSE_SLUG;
+              const continueHref =
+                COURSE_CATALOG[e.product_slug as CourseSlug]?.href ??
+                (isWiso ? "/wiso/products/full-course-subjects" : "/products");
+              return (
+                <div key={e.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+                  <p className="text-xs text-muted-foreground">
+                    {e.tier} access{isWiso ? " · WiSo" : ""}
+                  </p>
+                  <h3 className="mt-1 font-display text-lg font-bold">{e.product_name}</h3>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    Enrolled {new Date(e.created_at).toLocaleDateString()}
+                  </p>
+                  <div className="mt-3 flex items-center gap-3">
+                    <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-secondary">
+                      <div
+                        className="h-full bg-caramel-deep"
+                        style={{
+                          width: `${overallAccuracy && totalAttempted ? Math.min(100, Math.round((totalPassed / Math.max(totalAttempted, 1)) * 100)) : 0}%`,
+                        }}
+                      />
+                    </div>
+                    <span className="shrink-0 text-xs font-semibold text-muted-foreground">
+                      {totalPassed} tasks passed
+                    </span>
                   </div>
-                  <span className="shrink-0 text-xs font-semibold text-muted-foreground">
-                    {totalPassed} tasks passed
-                  </span>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <Link
+                      to={continueHref}
+                      className="inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
+                    >
+                      Continue
+                    </Link>
+                    {isWiso && hasWisoFull ? (
+                      <Link
+                        to="/wiso/flashcards"
+                        onClick={() => storeExamTrack("wiso")}
+                        className="inline-flex rounded-md border border-indigo-700/30 bg-indigo-50 px-4 py-2 text-xs font-semibold text-indigo-900 hover:bg-indigo-100 dark:bg-indigo-950/40 dark:text-indigo-200 dark:hover:bg-indigo-950/70"
+                      >
+                        {WISO_DASHBOARD_STUDY.flashcardsCta}
+                      </Link>
+                    ) : null}
+                    {!isWiso && hasBbePaid && e.product_slug !== "demo-practice" ? (
+                      <Link
+                        to="/flashcards"
+                        onClick={() => storeExamTrack("bbe")}
+                        className="inline-flex rounded-md border border-border bg-secondary px-4 py-2 text-xs font-semibold text-foreground hover:bg-secondary/80"
+                      >
+                        Open flashcards →
+                      </Link>
+                    ) : null}
+                  </div>
                 </div>
-                <Link
-                  to={COURSE_CATALOG[e.product_slug as CourseSlug]?.href ?? "/products"}
-                  className="mt-4 inline-flex rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/90"
-                >
-                  Continue
-                </Link>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </section>
@@ -394,7 +424,9 @@ function CoursesTab({
                     ? "/products/demo-practice"
                     : slug === "lite-bbe-course"
                       ? "/products/lite-bbe-course"
-                      : "/products/full-course"
+                      : slug === "wiso-full-course"
+                        ? "/wiso/products/full-course"
+                        : "/products/full-course"
                 }
                 className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
@@ -577,105 +609,131 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 
 /* -------------------- STUDY MODES TAB -------------------- */
 
-function GamesTab({
-  locked = false,
-  track = "bbe",
+type StudyToolCard = {
+  feature: "flashcards" | "matching" | "tutor-exam";
+  to:
+    | "/flashcards"
+    | "/matching"
+    | "/tutor-exam"
+    | "/wiso/flashcards"
+    | "/wiso/matching"
+    | "/wiso/tutor-exam";
+  title: string;
+  blurb: string;
+  cta: string;
+  art: React.ReactNode;
+};
+
+function wisoToolCards(): StudyToolCard[] {
+  return [
+    {
+      feature: "flashcards",
+      to: "/wiso/flashcards",
+      title: WISO_DASHBOARD_STUDY.flashcardsTitle,
+      blurb: WISO_DASHBOARD_STUDY.flashcardsBlurb,
+      cta: WISO_DASHBOARD_STUDY.flashcardsCta,
+      art: <FlashcardsModeArt locale="de" />,
+    },
+    {
+      feature: "matching",
+      to: "/wiso/matching",
+      title: WISO_DASHBOARD_STUDY.matchingTitle,
+      blurb: WISO_DASHBOARD_STUDY.matchingBlurb,
+      cta: WISO_DASHBOARD_STUDY.matchingCta,
+      art: <MatchingModeArt locale="de" />,
+    },
+    {
+      feature: "tutor-exam",
+      to: "/wiso/tutor-exam",
+      title: WISO_DASHBOARD_STUDY.tutorTitle,
+      blurb: WISO_DASHBOARD_STUDY.tutorBlurb,
+      cta: WISO_DASHBOARD_STUDY.tutorCta,
+      art: <TutorModeArt locale="de" />,
+    },
+  ];
+}
+
+function bbeToolCards(): StudyToolCard[] {
+  return [
+    {
+      feature: "flashcards",
+      to: "/flashcards",
+      title: "Flashcards",
+      blurb: "Drill Economics terms, Math formulas, and English vocabulary with flip cards.",
+      cta: "Open BBE flashcards →",
+      art: <FlashcardsModeArt />,
+    },
+    {
+      feature: "matching",
+      to: "/matching",
+      title: "Matching",
+      blurb: "Connect each concept to the right definition. Same decks, different interaction.",
+      cta: "Open BBE matching →",
+      art: <MatchingModeArt />,
+    },
+    {
+      feature: "tutor-exam",
+      to: "/tutor-exam",
+      title: "Tutor Exam",
+      blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
+      cta: "Open BBE tutor exam →",
+      art: <TutorModeArt />,
+    },
+  ];
+}
+
+function StudyToolSection({
+  track,
+  title,
+  blurb,
+  cards,
+  locked,
 }: {
-  locked?: boolean;
-  track?: ExamTrack;
+  track: ExamTrack;
+  title: string;
+  blurb: string;
+  cards: StudyToolCard[];
+  locked: boolean;
 }) {
   const navigate = useLocalizedNavigate();
   const isWiso = track === "wiso";
 
-  const openTool = (
-    to:
-      | "/flashcards"
-      | "/matching"
-      | "/tutor-exam"
-      | "/wiso/flashcards"
-      | "/wiso/matching"
-      | "/wiso/tutor-exam",
-  ) => {
+  const openTool = (to: StudyToolCard["to"]) => {
     if (locked) return;
-    // Explicit empty search so tab=games is not stripped on /dashboard first.
+    storeExamTrack(track);
     void navigate({ to, search: {} });
   };
 
-  const cards = isWiso
-    ? [
-        {
-          feature: "flashcards" as const,
-          to: "/wiso/flashcards" as const,
-          title: "Flashcards",
-          blurb: "Drill Economics terms, Math formulas, and German vocabulary with flip cards.",
-          cta: "Open flashcards →",
-          art: <FlashcardsModeArt />,
-        },
-        {
-          feature: "matching" as const,
-          to: "/wiso/matching" as const,
-          title: "Matching",
-          blurb: "Connect each concept to the right definition. Same decks, different interaction.",
-          cta: "Open matching →",
-          art: <MatchingModeArt />,
-        },
-        {
-          feature: "tutor-exam" as const,
-          to: "/wiso/tutor-exam" as const,
-          title: "Tutor Exam",
-          blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
-          cta: "Open tutor exam →",
-          art: <TutorModeArt />,
-        },
-      ]
-    : [
-        {
-          feature: "flashcards" as const,
-          to: "/flashcards" as const,
-          title: "Flashcards",
-          blurb: "Drill Economics terms, Math formulas, and English vocabulary with flip cards.",
-          cta: "Open flashcards →",
-          art: <FlashcardsModeArt />,
-        },
-        {
-          feature: "matching" as const,
-          to: "/matching" as const,
-          title: "Matching",
-          blurb: "Connect each concept to the right definition. Same decks, different interaction.",
-          cta: "Open matching →",
-          art: <MatchingModeArt />,
-        },
-        {
-          feature: "tutor-exam" as const,
-          to: "/tutor-exam" as const,
-          title: "Tutor Exam",
-          blurb: "A tutor robot runs a random theoretical quiz. New questions every time.",
-          cta: "Open tutor exam →",
-          art: <TutorModeArt />,
-        },
-      ];
-
   return (
-    <div className="space-y-6">
+    <section className="space-y-4">
       <div>
-        <h2 className="font-display text-xl font-bold tracking-tight">Study tools</h2>
-        <p className="mt-1 text-sm text-muted-foreground">
-          {isWiso
-            ? "Practice tools to reinforce Economics, Math, and German for the WiSo exam."
-            : "Practice tools to reinforce Economics, Math, and English for the BBE exam."}
+        <p
+          className={
+            "text-xs font-semibold uppercase tracking-wider " +
+            (isWiso ? "text-indigo-700 dark:text-indigo-300" : "text-caramel-deep")
+          }
+        >
+          {isWiso ? WISO_DASHBOARD_STUDY.sectionEyebrow : "BBE course"}
         </p>
+        <h2 className="font-display text-xl font-bold tracking-tight">{title}</h2>
+        <p className="mt-1 text-sm text-muted-foreground">{blurb}</p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((card) => {
           const body = (
             <>
-              <div className="h-32 w-full overflow-hidden bg-secondary">
-                {card.art}
-              </div>
+              <div className="h-32 w-full overflow-hidden bg-secondary">{card.art}</div>
               <div className="p-5">
                 <h3 className="font-display text-lg font-bold">{card.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{card.blurb}</p>
-                <p className="mt-4 text-xs font-semibold text-caramel-deep">{card.cta}</p>
+                <p
+                  className={
+                    "mt-4 text-xs font-semibold " +
+                    (isWiso ? "text-indigo-800 dark:text-indigo-300" : "text-caramel-deep")
+                  }
+                >
+                  {card.cta}
+                </p>
               </div>
             </>
           );
@@ -683,7 +741,7 @@ function GamesTab({
           if (locked) {
             return (
               <LockedToolCard
-                key={card.feature}
+                key={`${track}-${card.feature}`}
                 feature={card.feature}
                 productSlug={isWiso ? "wiso-full-course" : undefined}
               >
@@ -694,7 +752,7 @@ function GamesTab({
 
           return (
             <button
-              key={card.feature}
+              key={`${track}-${card.feature}`}
               type="button"
               onClick={() => openTool(card.to)}
               className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
@@ -704,6 +762,88 @@ function GamesTab({
           );
         })}
       </div>
+    </section>
+  );
+}
+
+function GamesTab({
+  hasWisoFull,
+  hasBbePaid,
+}: {
+  hasWisoFull: boolean;
+  hasBbePaid: boolean;
+}) {
+  const showWiso = hasWisoFull;
+  const showBbe = hasBbePaid;
+  const showBoth = showWiso && showBbe;
+
+  if (!showWiso && !showBbe) {
+    return (
+      <div className="space-y-6">
+        <div>
+          <h2 className="font-display text-xl font-bold tracking-tight">Study tools</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Unlock a course to open flashcards, matching, and tutor exam.
+          </p>
+        </div>
+        <StudyToolSection
+          track="wiso"
+          title="WiSo-Lernwerkzeuge"
+          blurb="Wirtschaft, Mathematik und Deutsch für die WiSo-Aufnahmeprüfung."
+          cards={wisoToolCards()}
+          locked
+        />
+        <StudyToolSection
+          track="bbe"
+          title="BBE study tools"
+          blurb="Economics, Math, and English for the BBE entrance exam."
+          cards={bbeToolCards()}
+          locked
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-10">
+      <div>
+        <h2 className="font-display text-xl font-bold tracking-tight">
+          {showWiso && !showBbe
+            ? WISO_DASHBOARD_STUDY.studyToolsHeading
+            : "Study tools"}
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {showBoth
+            ? WISO_DASHBOARD_STUDY.introBoth
+            : showWiso
+              ? WISO_DASHBOARD_STUDY.introWisoOnly
+              : "Practice tools for your BBE course — Economics, Math, and English."}
+        </p>
+      </div>
+
+      {showWiso ? (
+        <StudyToolSection
+          track="wiso"
+          title={
+            showBoth
+              ? WISO_DASHBOARD_STUDY.sectionTitle
+              : WISO_DASHBOARD_STUDY.sectionTitleSolo
+          }
+          blurb={WISO_DASHBOARD_STUDY.sectionBlurb}
+          cards={wisoToolCards()}
+          locked={false}
+        />
+      ) : null}
+
+      {showBbe ? (
+        <StudyToolSection
+          track="bbe"
+          title={showBoth ? "BBE study tools" : "Study tools"}
+          blurb="Open BBE flashcards, matching, and tutor exam for Economics, Math, and English."
+          cards={bbeToolCards()}
+          locked={false}
+        />
+      ) : null}
     </div>
   );
 }

@@ -2,7 +2,17 @@ import { createMiddleware } from "@tanstack/react-start";
 import { isAdminEmail } from "@/lib/admin-access";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
-/** Server gate: hardcoded admin emails + Supabase service-role client (same as original admin panel). */
+function hasServiceRoleKey(): boolean {
+  return Boolean(
+    process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || process.env.SUPABASE_SECRET_KEY?.trim(),
+  );
+}
+
+/**
+ * Server gate: hardcoded admin emails.
+ * Prefers the service-role client when configured; otherwise falls back to the
+ * caller's JWT client (RLS + admin_list_users) so Lovable works without the secret.
+ */
 export const requireAdmin = createMiddleware({ type: "function" })
   .middleware([requireSupabaseAuth])
   .server(async ({ next, context }) => {
@@ -11,21 +21,23 @@ export const requireAdmin = createMiddleware({ type: "function" })
       throw new Error("Forbidden");
     }
 
-    const hasServiceRole = Boolean(
-      process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || process.env.SUPABASE_SECRET_KEY?.trim(),
-    );
-    if (!hasServiceRole) {
-      throw new Error(
-        "Supabase service role не подключен. В Lovable Cloud / .env добавьте SUPABASE_SERVICE_ROLE_KEY (Project Settings → API → service_role).",
-      );
+    if (hasServiceRoleKey()) {
+      const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+      return next({
+        context: {
+          ...context,
+          supabaseAdmin,
+          adminUsesServiceRole: true,
+        },
+      });
     }
-
-    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
     return next({
       context: {
         ...context,
-        supabaseAdmin,
+        // Authenticated admin client — SELECT via is_admin_caller() policies / RPCs.
+        supabaseAdmin: context.supabase,
+        adminUsesServiceRole: false,
       },
     });
   });

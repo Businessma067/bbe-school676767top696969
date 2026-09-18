@@ -3307,35 +3307,6 @@
   },
   {
     "subsection": "2.6",
-    "case_id": "CASE 2.6.27",
-    "title": "Simultaneous Demand and Supply Shifts",
-    "context": "Analyze how concurrent shifts in demand and supply affect equilibrium price and quantity. Evaluate the following economic assertions:",
-    "statements": [
-      "The net effect on equilibrium price depends on the relative size of demand and supply shifts.",
-      "Graphical analysis compares new intersection points to identify changed equilibrium outcomes.",
-      "If demand shifts right while supply shifts left, equilibrium price is likely to rise.",
-      "If demand shifts right and supply shifts right together, equilibrium quantity rises.",
-      "Supply and demand shifts can occur together after a natural disaster disrupts production and tastes."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "When demand and supply both move, equilibrium price is not pinned by either shift alone.\n\nA large rightward demand shift tends to raise price; a large rightward supply shift tends to lower it. The net price change is the sum of those opposing or reinforcing pressures, so relative magnitudes decide whether the new intersection sits higher, lower, or roughly unchanged. Quantity can also move in either direction depending on which curve travels farther. Simultaneous-shift analysis therefore always asks which force dominates on price and which on quantity.\n\nSo the statement is True.",
-      "Diagrams compare the old intersection with the new one after both curves move.\n\nReading the new crossing point against the old one shows whether equilibrium price and quantity rose, fell, or stayed ambiguous.\n\nSo the statement is True.",
-      "Demand shifting right raises willingness to pay; supply shifting left cuts available output at each price.\n\nBoth forces push the intersection upward on the price axis, so equilibrium price is likely to rise even if the quantity change remains ambiguous without sizes.\n\nSo the statement is True.",
-      "Rightward demand and rightward supply both increase the quantity that clears at the new intersection.\n\nBuyers want more at each price and sellers offer more at each price, so the equilibrium quantity almost always expands. Price may rise or fall depending on which shift is larger, but the quantity conclusion is firm when both curves move right. Natural examples include a tourism boom that lifts demand while new capacity comes online on the supply side.\n\nSo the statement is True.",
-      "A disaster can destroy plant (supply left) while also changing what households urgently buy (demand shifts).\n\nBoth schedules can therefore move in the same episode, not only one at a time.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
     "case_id": "CASE 2.6.28",
     "title": "Price Ceilings Below Equilibrium",
     "context": "Review how a legal maximum price set below equilibrium creates shortage in competitive markets. Evaluate the following economic assertions:",
@@ -3887,35 +3858,6 @@
   },
   {
     "subsection": "2.6",
-    "case_id": "CASE 2.6.47",
-    "title": "Global Supply Chain Disruption",
-    "context": "Analyze how international supply disruptions shift domestic market supply. Evaluate the following economic assertions:",
-    "statements": [
-      "Domestic equilibrium price may rise when import supply falls while demand stays constant.",
-      "Global markets isolate domestic equilibrium from supply shocks abroad completely.",
-      "Firms may seek alternate suppliers over time, shifting demand leftward permanently.",
-      "Port closures delaying imports shift demand rightward for components used in domestic assembly.",
-      "Shortages of imported parts increase quantity supplied of finished goods domestically."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "If import supply shrinks while domestic demand holds steady, less total supply meets the same demand curve.\n\nDomestic equilibrium price tends to rise and quantity falls.\n\nSo the statement is True.",
-      "Global supply shocks transmit into domestic markets through trade prices and import volumes.\n\nDomestic equilibrium is not sealed off from foreign disruptions; integrated markets import those shocks.\n\nSo the statement is False.",
-      "Seeking alternate suppliers is a supply-side adaptation that can eventually restore offered quantity.\n\nIt does not permanently shift demand leftward for the components firms still need.\n\nSo the statement is False.",
-      "Port closures that delay imports reduce the flow of components into domestic assembly; that is a leftward supply shock for those parts (and for goods that use them).\n\nDemand for components does not jump right merely because ships are stuck; if anything, assembly slows. Calling a port closure a rightward demand shift mislabels which curve moves and predicts the wrong price-quantity pattern.\n\nSo the statement is False.",
-      "Shortages of imported parts constrain finished-goods production, cutting quantity supplied of assemblies rather than increasing it.\n\nFactories cannot ship more finished units when critical inputs are missing.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
     "case_id": "CASE 2.6.48",
     "title": "Integrated Market Mechanisms Review",
     "context": "Review how demand, supply, equilibrium, and policy tools interact in competitive markets. Evaluate the following economic assertions:",
@@ -4231,35 +4173,6 @@
       "Long travel distances strengthen local pricing power; they do not force the sole pharmacy to charge marginal cost on every prescription.\n\nAbsent regulation, markups above marginal cost remain possible.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.7",
-    "case_id": "CASE 2.7.12",
-    "title": "Airline Route Duopoly",
-    "context": "Analyze two carriers serving a thin international route and matching fare changes. Evaluate the following economic assertions:",
-    "statements": [
-      "Two dominant carriers on one route resemble duopoly, a special case of oligopoly.",
-      "Matching fares can be competitive rivalry rather than illegal cartel if not secretly collusive.",
-      "Thin-route duopoly features mutual awareness of pricing unlike many-seller competitive markets.",
-      "Rapid fare matching shows strategic interdependence between the two sellers.",
-      "Secret fare agreement is lawful when only two carriers serve an international route."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Two carriers dominating one thin route form a duopoly, a special case of oligopoly with few interdependent sellers.\n\nStructure follows that seller count on the route.\n\nSo the statement is True.",
-      "Matching fares can be ordinary competitive response: each airline cuts or raises when it sees the rival move, without a secret joint plan.\n\nIllegal cartel requires collusive agreement, not mere parallel prices that arise from watching each other. Investigators look for communication and enforcement mechanisms, not solely for similar fares on a duopoly route where matching is also what rivalry predicts.\n\nSo the statement is True.",
-      "On a thin-route duopoly each carrier knows the other will notice fare changes.\n\nThat mutual awareness differs from many-seller markets where one airline's tweak is lost in the crowd.\n\nSo the statement is True.",
-      "Rapid fare matching is strategic interdependence in action between the two sellers.\n\nEach reacts to the other's posted prices within the oligopoly setting.\n\nSo the statement is True.",
-      "A secret fare agreement between the two carriers is still cartel collusion and typically unlawful, even on a thin international route.\n\nDuopoly structure does not grant a legal privilege to fix prices jointly. Competition law targets the agreement, not the mere fact that only two firms serve the city pair. Claiming lawfulness because seller count equals two confuses structure with permitted conduct.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
     "tier": "full"
   },
   {

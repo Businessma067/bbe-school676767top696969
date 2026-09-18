@@ -261,7 +261,6 @@ export function WisoLandingPage() {
                 </LocalizedLink>
                 <LocalizedLink
                   to="/dashboard"
-                  // @ts-expect-error dashboard search validated on the route
                   search={{ tab: "games" }}
                   className="text-muted-foreground hover:underline"
                 >

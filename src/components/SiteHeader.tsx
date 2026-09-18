@@ -72,16 +72,18 @@ export function SiteHeader({
       <div
         className={cn(
           // Mobile: flex + wrap so page actions can drop to a second row instead of overlapping.
-          // lg+: auto | 1fr | auto — side clusters keep natural width so they never collide
-          // with the centered text nav; the middle column absorbs leftover space.
+          // lg+: three equal flex-1 lanes keep the text nav page-centered; min-w-0 + wrap
+          // keep left/center/right from growing into each other.
+          // min-h keeps the bar from visibly jumping while async chrome settles on remount.
           "mx-auto flex w-full max-w-none flex-wrap items-center gap-x-2 gap-y-2 px-3 py-2 sm:gap-x-3 sm:px-6 sm:py-3",
+          "min-h-[3.25rem] sm:min-h-[3.5rem]",
           "pl-[max(0.75rem,env(safe-area-inset-left))] pr-[max(0.75rem,env(safe-area-inset-right))]",
-          "lg:grid lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:flex-nowrap lg:items-center lg:gap-x-6 lg:px-8",
-          !compact && "sm:py-4",
+          "lg:flex-nowrap lg:items-center lg:gap-x-4 lg:px-8 xl:gap-x-6",
+          !compact && "sm:min-h-[3.75rem] sm:py-4",
           innerClassName,
         )}
       >
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2.5 lg:justify-self-start">
+        <div className="flex min-w-0 flex-wrap items-center gap-1.5 sm:gap-2.5 lg:flex-1 lg:basis-0">
           {left ?? <TrackBrandMark compact={compact} />}
           {!hideTrackSwitcher ? (
             <ExamTrackSwitcher
@@ -90,8 +92,8 @@ export function SiteHeader({
           ) : null}
         </div>
 
-        {/* Keep a real grid cell on lg+ even when DesktopNav is display:none below lg. */}
-        <div className="hidden min-w-0 justify-self-stretch lg:flex lg:justify-center lg:px-2">
+        {/* Keep a real middle lane on lg+ even when DesktopNav is display:none below lg. */}
+        <div className="hidden min-w-0 max-w-full lg:flex lg:flex-1 lg:basis-0 lg:justify-center lg:px-1 xl:px-2">
           {center ??
             (navVisible ? (
               <DesktopNav items={navItems} />
@@ -100,7 +102,7 @@ export function SiteHeader({
             ))}
         </div>
 
-        <div className="ml-auto flex shrink-0 flex-wrap items-center justify-end gap-1.5 sm:gap-2.5 lg:ml-0 lg:justify-self-end">
+        <div className="ml-auto flex min-w-0 flex-wrap items-center justify-end gap-1.5 sm:gap-2.5 lg:ml-0 lg:flex-1 lg:basis-0">
           {actions ? (
             <div className="flex max-w-full flex-wrap items-center justify-end gap-1.5 sm:gap-2">
               {actions}

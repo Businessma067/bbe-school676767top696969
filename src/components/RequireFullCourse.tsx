@@ -12,6 +12,7 @@ import {
   tierAtLeast,
   type AccessTier,
 } from "@/lib/entitlements";
+import { isWisoPath } from "@/lib/exam-track";
 
 function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, signedIn: boolean) {
   if (!signedIn) return false;
@@ -45,6 +46,7 @@ export function RequireFullCourse({
   productSlug?: string;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const de = productSlug === "wiso-full-course" || isWisoPath(pathname);
   const cached = peekAccessState();
   const [status, setStatus] = useState<GateStatus>(() => {
     if (!cached) return "checking";
@@ -94,16 +96,18 @@ export function RequireFullCourse({
       <div className="flex min-h-screen items-center justify-center bg-background px-6">
         <div className="max-w-sm text-center">
           <h1 className="text-xl font-semibold tracking-tight text-foreground">
-            Sign in to continue
+            {de ? "Anmelden, um fortzufahren" : "Sign in to continue"}
           </h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            This part of the course is available to signed-in students.
+            {de
+              ? "Dieser Teil des Kurses ist für angemeldete Studierende verfügbar."
+              : "This part of the course is available to signed-in students."}
           </p>
           <LocalizedLink
             to="/login"
             className="mt-6 inline-flex rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
           >
-            Sign in
+            {de ? "Anmelden" : "Sign in"}
           </LocalizedLink>
         </div>
       </div>
@@ -122,7 +126,9 @@ export function RequireFullCourse({
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6">
-      <p className="text-sm text-muted-foreground">Checking course access…</p>
+      <p className="text-sm text-muted-foreground">
+        {de ? "Kurszugang wird geprüft…" : "Checking course access…"}
+      </p>
     </div>
   );
 }

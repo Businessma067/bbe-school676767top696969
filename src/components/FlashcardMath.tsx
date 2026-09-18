@@ -53,7 +53,7 @@ export const FlashcardMath = memo(function FlashcardMath({
 }) {
   const parts = useMemo(() => splitMath(text), [text]);
   return (
-    <span className={className}>
+    <span className={className} data-no-i18n>
       {parts.map((part, i) => {
         if (part.type === "text") {
           return <span key={i}>{unescapeProseDollars(part.value)}</span>;

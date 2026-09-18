@@ -5251,44 +5251,6 @@
       "solution_overview": "Edge grammar: impossible stop to mean, parallel stop -ing, consider how to, decide on -ing, and refuse + noun.\n\n**Part 1: What to watch for.**\n\nStop to only works when the infinitive is a real purpose action — \"mean\" is not one. Parallel stop + -ing keeps the cease sense. Consider how to, decide on -ing, and refuse + noun are all legal alternatives.\n\n**Part 2: How to decide.**\n\nLook past the first verb when the complement sits elsewhere (offer of driving). Reject nonsense purpose infinitives, and accept decide on / consider how / refuse + noun when they appear.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
-      "id": "en-g-7-19",
-      "case_id": "ENG G.7.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Not wishing to appear rude, she avoided interrupting the poet mid-line.",
-        "Not wishing to appear rude, she avoided to interrupt the poet mid-line.",
-        "They promised that they would water the plants while we were away.",
-        "He enjoys that his sister always remembers his birthday.",
-        "We stopped short of promising to host the entire reunion."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) Not wishing to appear rude, she avoided interrupting the poet mid-line.**\n\nAvoid + gerund is correct: \"avoided interrupting the poet mid-line.\" Fronted participle clauses (Not wishing to appear rude) do not change avoid's -ing rule. Interrupting is still the activity she steers clear of.\n\nA fronted participle clause does not rewrite avoid + -ing, so avoided interrupting is **true**.\n",
-        "**B) Not wishing to appear rude, she avoided to interrupt the poet mid-line.**\n\nSame sentence with the wrong complement — avoid needs -ing, not to. Compare the pair; only the gerund version works. Not wishing to appear rude does not license avoid to interrupt.\n\n**Trap:** The fronted clause makes avoid to look elegant, but avoid still wants -ing.\n\nThe same polite fronting still leaves avoid wanting -ing, so avoid to interrupt is **false** — \"Not wishing to appear rude, she avoided interrupting the poet mid-line.\"\n",
-        "**C) They promised that they would water the plants while we were away.**\n\nPromise that + clause is a valid alternative to promise to + verb: \"promised that they would water the plants.\" Promise to water OR promise that we will water. The that-clause carries the commitment content.\n\n**Tip:** Promise to water OR promise that we will water.\n\nPromise that + clause is a valid sibling of promise to, so promised that they would water is **true**.\n",
-        "**D) He enjoys that his sister always remembers his birthday.**\n\nEnjoy that + clause is acceptable; the that-clause is the object of enjoy. Enjoy + -ing for activities; enjoy that for facts or situations. His sister remembering the birthday is a fact/situation, not an infinitive activity.\n\n**Tip:** Enjoy + -ing for activities; enjoy that for facts/situations.\n\nFact-or-situation objects can sit in a that-clause after enjoy, so enjoy that… is **true**.\n",
-        "**E) We stopped short of promising to host the entire reunion.**\n\nStop short of + -ing is an idiom meaning \"almost but not quite\"; promising keeps its own to inside the gerund phrase. Idioms can nest: stop short of + gerund, and inside it promise + to. Hosting the reunion is the nearly-made promise, not a bare stop to host.\n\n**Tip:** Idioms can nest stop short of + gerund with promise + to inside.\n\nStop short of + gerund nests cleanly with promise + to inside, so the idiom is **true**.\n"
-      ],
-      "highlights": [
-        "avoided interrupting",
-        "avoided to interrupt",
-        "promised that they would",
-        "enjoys that his sister",
-        "stopped short of promising"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.7",
-      "solution_overview": "Minimal pairs, that-clause alternatives, and the idiom stop short of -ing. Confirm which structure is actually complementing which verb.\n\n**Part 1: What to watch for.**\n\nAvoid keeps -ing even after a fronted participle clause; the to version is the false twin. Promise that and enjoy that are valid clause objects. Stop short of + -ing nests another verb's complement inside an idiom.\n\n**Part 2: How to decide.**\n\nCompare near-identical lines first. Then check whether that-clauses or idioms are carrying the object, so you do not over-apply the basic to/-ing rule to the wrong verb.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
-    },
-    {
       "id": "en-g-7-20",
       "case_id": "ENG G.7.20",
       "title": "Task 20",
@@ -6009,44 +5971,6 @@
       "sort_order": 18,
       "subsection": "g.8",
       "solution_overview": "Inverted who-should and bare might-yes/no fail. Surviving rhetorical inversion, was-to-have, and would + next-morning time shifts are acceptable.\n\n**Part 1: What to watch for.**\n\nNegative inversion can survive inside a reported clause after said when pronouns and tenses already match. Was to have + past participle (unfulfilled plan) typically remains. Embedded object questions need statement order: who we should notify. Will → would with tomorrow morning → the next morning. Yes/no might needs if/whether + subject + might.\n\n**Part 2: How to decide.**\n\nAllow rare rhetorical inversion and frozen was-to-have; still force statement order on ordinary who/might questions. Mark false on who should we and bare might the shop.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
-    },
-    {
-      "id": "en-g-8-19",
-      "case_id": "ENG G.8.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"",
-        "Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"",
-        "Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"",
-        "Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"",
-        "Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\""
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. \"She said she'd rather I didn't spoil that\" does not force past perfect inside the rather-clause. Preferential rather-clauses are not automatically deepened further.\n\nShe'd rather I didn't spoil that keeps the preference clause while shifting deixis, so the report is **true**.\n",
-        "**B) Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"**\n\nInformal how come reports with statement order and optional past perfect for a prior failure. \"He asked how come the cake had collapsed\" keeps how come and deepens the collapse. Pattern: asked how come + subject + (had) + past participle.\n\nHow come the cake had collapsed is a valid informal backshift, so the wording is **true**.\n",
-        "**C) Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"**\n\n\"Used not to\" (or didn't use to) for past habit can remain used not to. Habitual used-to patterns are already past-oriented, so further backshift is unnecessary. \"They said they used not to skip breakfast\" keeps the old habit meaning.\n\nUsed not to can stay as-is under past said, so this line is **true**.\n",
-        "**D) Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"**\n\nFuture perfect in a yes/no question → if + would have, and the time-clause present→past. \"She asked if I would have finished by the time she called\" shifts both the main future perfect and the by-the-time clause. Both layers move together under past asked.\n\n**Tip:** will you have… by the time I…? → if + would have… by the time + past.\n\nWould have finished and she called move together under asked if, so the double backshift is **true**.\n",
-        "**E) Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\"**\n\nSuppose-ideas often become suggested that + base (or past) form in formal reports. \"He suggested that we freeze the leftovers\" is exam-friendly for \"Suppose we freeze…\" Mandative or tentative freeze after suggested that is acceptable.\n\nSuggested that we freeze correctly maps the suppose-idea, so the wording is **true**.\n"
-      ],
-      "highlights": [
-        "she'd rather I didn't",
-        "how come the cake had collapsed",
-        "used not to skip",
-        "would have finished",
-        "suggested that we freeze"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.8",
-      "solution_overview": "All five are advanced but valid: rather + past clause, how come, used not to, nested would-have with by-the-time, and suggested that.\n\n**Part 1: What to watch for.**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. Informal how come reports with statement order and optional past perfect. Used not to for past habit can remain. Future perfect in a yes/no question → if + would have, and the by-the-time clause present→past. Suppose-ideas often become suggested that + base form.\n\n**Part 2: How to decide.**\n\nRetain already-past preference and habit patterns; still shift futures and demonstratives; allow suggested that for suppose. Every line passes — treat the set as a finishing model.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-8-20",
@@ -9771,44 +9695,6 @@
       "sort_order": 18,
       "subsection": "g.13",
       "solution_overview": "Festival flyers, marshal training, stage praise, scrapbook deadlines, and campsite rules. Stacked that-clauses and how-chains are the recurring exams traps at this band.\n\n**Part 1: What to watch for.**\n\nIf that appears twice, the third clause needs it too — or rewrite all three as nouns. Keep by + gerund means lists, how-clause praise chains, either…or after will, and campsite that-rules in one consistent frame.\n\n**Part 2: How to decide.**\n\nCount repeated markers (by, how, that). Any final branch that sheds the marker while the first branches keep it is parallel failure.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
-    },
-    {
-      "id": "en-g-13-19",
-      "case_id": "ENG G.13.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Good bread rests less on exotic flour than kneading the dough with patience.",
-        "Not only did attendance rise after Easter, but energy levels also improved.",
-        "Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.",
-        "The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.",
-        "A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) Good bread rests less on exotic flour than kneading the dough with patience.**\n\nLess…than joins on exotic flour to kneading the dough without repeating on. Comparative frames that open with a preposition need that same preposition after than. Write than on kneading so both sides share one scaffold.\n\n**Trap:** Kneading with patience is the intended contrast, so a dropped on after than is a classic high-band trap.\n\nLess…than that opens with on needs on again, so kneading alone is **false** — \"…less on exotic flour than on kneading the dough with patience.\"\n",
-        "**B) Not only did attendance rise after Easter, but energy levels also improved.**\n\nInverted not only… is balanced by but…also with a parallel past-tense predicate (energy levels also improved). Both sides stay finite and matching after the correlative. That mirrored finite structure is what the inversion pattern requires.\n\nInverted not only…but also balances two finite improvements, so the wording is **true**.\n",
-        "**C) Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.**\n\nTwo relative modifiers open with that is, but useful without jargon stands alone. Finish the relative chain with that is useful…, or drop that is before every adjective. Partial repetition of that is breaks the trail-note description.\n\n**Trap:** Useful without jargon looks ready-made as a third quality, so missing that is is easy to overlook.\n\nThat is repeated twice leaves useful bare, so this is **false** — \"…that is realistic, that is waterproof, and that is useful without jargon.\"\n",
-        "**D) The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.**\n\nRehearsing (a gerund) is paired with to rehearse (an infinitive) after prefers. Prefer needs matching gerunds or matching infinitives for both rehearsal days. Pick one form and keep it for Mondays and Thursdays alike.\n\n**Trap:** Online rehearsal on Thursdays is a real alternative, so mixed -ing / to forms after prefers is a near-miss.\n\nPrefer needs one shared form for both rehearsal days, so the mixed pair is **false** — \"…rehearsing in person… and rehearsing online…\" or \"to rehearse… and to rehearse….\"\n",
-        "**E) A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet.**\n\nMust specify introduces three matching wh-clauses: who books…, what bags…, and when the group will meet. Parallel wh-clauses are ideal when an itinerary must answer ownership, contents, and timing together. Every branch keeps a full wh + finite-clause shape.\n\nWho / what / when clauses under must specify stay parallel, so the itinerary frame is **true**.\n"
-      ],
-      "highlights": [
-        "than kneading the dough",
-        "Not only did attendance rise",
-        "and useful without jargon",
-        "and to rehearse online",
-        "who books the tickets, what bags"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.13",
-      "solution_overview": "Bread science, post-Easter attendance, trail notes, choir rehearsal modes, and itinerary wh-clauses. Comparative frames and relative-clause chains still demand matching markers.\n\n**Part 1: What to watch for.**\n\nLess…than needs on on both sides; inverted not only needs matching finite predicates; that is relatives need that is on every adjective (or none); prefer needs matching forms; wh-clauses should stay who / what / when in parallel.\n\n**Part 2: How to decide.**\n\nRewrite the last item so it could replace the first without changing structure. That mental swap exposes dropped prepositions, missing that is, and mixed -ing / to forms.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-13-20",

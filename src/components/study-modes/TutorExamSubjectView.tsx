@@ -13,6 +13,14 @@ import {
   TUTOR_WRONG,
   type TutorExamQuestion,
 } from "@/lib/tutor-exam";
+import {
+  WISO_TUTOR_CORRECT,
+  WISO_TUTOR_GREETINGS,
+  WISO_TUTOR_RESULT_LINES,
+  WISO_TUTOR_UI,
+  WISO_TUTOR_WRONG,
+  type StudyUiLocale,
+} from "@/lib/wiso-study-ui";
 import { Check, RotateCcw, Shuffle, X } from "lucide-react";
 
 type AnswerState = {
@@ -25,12 +33,19 @@ export function TutorExamSubjectView({
   subjectId,
   subject,
   subjectsHref,
+  locale = "en",
 }: {
   subjectId: string;
   subject: FlashcardSubjectViewModel;
   subjectsHref: string;
+  locale?: StudyUiLocale;
 }) {
   const total = countCards(subject.sections);
+  const de = locale === "de";
+  const ui = de ? WISO_TUTOR_UI : null;
+  const greetings = de ? WISO_TUTOR_GREETINGS : TUTOR_GREETINGS;
+  const correctLines = de ? WISO_TUTOR_CORRECT : TUTOR_CORRECT;
+  const wrongLines = de ? WISO_TUTOR_WRONG : TUTOR_WRONG;
 
   const [sectionId, setSectionId] = useState<string | "all">(() =>
     subjectId === "english" || subjectId === "german" ? (subject.sections[0]?.id ?? "all") : "all",
@@ -40,21 +55,21 @@ export function TutorExamSubjectView({
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [answer, setAnswer] = useState<AnswerState | null>(null);
-  const [greeting, setGreeting] = useState(() => pickLine(TUTOR_GREETINGS));
+  const [greeting, setGreeting] = useState(() => pickLine([...greetings]));
   const [finished, setFinished] = useState(false);
 
   const startExam = useCallback(
     (nextSection: string | "all", nextExam?: number) => {
-      const qs = buildTutorExam(subject.sections, nextSection, TUTOR_EXAM_SIZE);
+      const qs = buildTutorExam(subject.sections, nextSection, TUTOR_EXAM_SIZE, locale);
       setQuestions(qs);
       setIndex(0);
       setScore(0);
       setAnswer(null);
       setFinished(false);
-      setGreeting(pickLine(TUTOR_GREETINGS));
+      setGreeting(pickLine([...greetings]));
       if (nextExam != null) setExamNo(nextExam);
     },
-    [subject.sections],
+    [subject.sections, locale, greetings],
   );
 
   useEffect(() => {
@@ -74,7 +89,7 @@ export function TutorExamSubjectView({
     setAnswer({
       choiceId,
       correct,
-      tutorLine: pickLine(correct ? TUTOR_CORRECT : TUTOR_WRONG),
+      tutorLine: pickLine(correct ? [...correctLines] : [...wrongLines]),
     });
   };
 
@@ -103,7 +118,7 @@ export function TutorExamSubjectView({
             to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Subjects
+            {ui?.subjectsBack ?? "← Subjects"}
           </Link>
         }
       />
@@ -113,11 +128,12 @@ export function TutorExamSubjectView({
           <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">
-                Theory exam with Tutor Bot
+                {ui?.theoryExam ?? "Theory exam with Tutor Bot"}
               </h1>
               <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-                Every start draws a fresh random set from {total} concepts.
-                Modes mix “what does it mean?” and “which term is this?”.
+                {ui
+                  ? ui.theoryBlurb(total)
+                  : `Every start draws a fresh random set from ${total} concepts. Modes mix “what does it mean?” and “which term is this?”.`}
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
@@ -127,7 +143,7 @@ export function TutorExamSubjectView({
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <Shuffle className="h-3.5 w-3.5" />
-                Reshuffle
+                {ui?.reshuffle ?? "Reshuffle"}
               </button>
               <button
                 type="button"
@@ -136,7 +152,7 @@ export function TutorExamSubjectView({
                 style={{ backgroundColor: subject.accent }}
               >
                 <RotateCcw className="h-3.5 w-3.5" />
-                New exam
+                {ui?.newExam ?? "New exam"}
               </button>
             </div>
           </div>
@@ -144,7 +160,7 @@ export function TutorExamSubjectView({
           <div className="mb-5 flex flex-wrap gap-2">
             <SectionChip
               active={sectionId === "all"}
-              label="All topics"
+              label={ui?.allTopics ?? "All topics"}
               accent={subject.accent}
               onClick={() => setSectionId("all")}
             />
@@ -161,18 +177,20 @@ export function TutorExamSubjectView({
 
           <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
             <span className="rounded-full border border-border bg-card px-2.5 py-1 font-semibold text-foreground">
-              Exam {examNo}
+              {ui ? ui.exam(examNo) : `Exam ${examNo}`}
             </span>
-            <span>Question {progressLabel}</span>
             <span>
-              Score {score}
+              {ui ? `${ui.question} ${progressLabel}` : `Question ${progressLabel}`}
+            </span>
+            <span>
+              {ui ? ui.score : "Score"} {score}
               {finished || answer ? ` · ${pct}%` : ""}
             </span>
           </div>
 
           {questions.length === 0 ? (
             <div className="rounded-2xl border border-border bg-card p-10 text-center text-sm text-muted-foreground">
-              No concepts in this topic yet.
+              {ui?.emptyTopic ?? "No concepts in this topic yet."}
             </div>
           ) : finished ? (
             <ResultsPanel
@@ -180,6 +198,7 @@ export function TutorExamSubjectView({
               score={score}
               total={questions.length}
               pct={pct}
+              locale={locale}
               onAgain={() => startExam(sectionId, examNo + 1)}
             />
           ) : current ? (
@@ -193,6 +212,7 @@ export function TutorExamSubjectView({
               onPick={onPick}
               onNext={onNext}
               isLast={index + 1 >= questions.length}
+              locale={locale}
             />
           ) : null}
         </div>
@@ -305,6 +325,7 @@ function ExamCard({
   onPick,
   onNext,
   isLast,
+  locale,
 }: {
   accent: string;
   greeting: string | null;
@@ -315,7 +336,9 @@ function ExamCard({
   onPick: (id: string) => void;
   onNext: () => void;
   isLast: boolean;
+  locale: StudyUiLocale;
 }) {
+  const ui = locale === "de" ? WISO_TUTOR_UI : null;
   const mood: "idle" | "happy" | "sad" = !answer
     ? "idle"
     : answer.correct
@@ -326,8 +349,8 @@ function ExamCard({
     ? answer.tutorLine
     : greeting ??
       (question.mode === "define"
-        ? "Define the concept. Pick the best meaning."
-        : "Read the meaning. Pick the matching concept.");
+        ? ui?.defineHint ?? "Define the concept. Pick the best meaning."
+        : ui?.identifyHint ?? "Read the meaning. Pick the matching concept.");
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
@@ -435,7 +458,7 @@ function ExamCard({
             }
           >
             <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-              Reveal
+              {ui?.reveal ?? "Reveal"}
             </p>
             <p className="mt-1 font-semibold">
               <FlashcardMath text={question.revealTerm} />
@@ -449,7 +472,9 @@ function ExamCard({
               className="mt-3 inline-flex items-center rounded-md px-4 py-2 text-xs font-semibold text-white"
               style={{ backgroundColor: accent }}
             >
-              {isLast ? "See results →" : "Next question →"}
+              {isLast
+                ? ui?.seeResults ?? "See results →"
+                : ui?.nextQuestion ?? "Next question →"}
             </button>
           </div>
         )}
@@ -464,19 +489,28 @@ function ResultsPanel({
   total,
   pct,
   onAgain,
+  locale,
 }: {
   accent: string;
   score: number;
   total: number;
   pct: number;
   onAgain: () => void;
+  locale: StudyUiLocale;
 }) {
+  const ui = locale === "de" ? WISO_TUTOR_UI : null;
   const line =
-    pct >= 80
-      ? "Strong theory pass. Want another random set?"
-      : pct >= 50
-        ? "Solid mid-range. Shuffle again and keep drilling."
-        : "Rough round — another random exam will hit different cards.";
+    locale === "de"
+      ? pct >= 80
+        ? WISO_TUTOR_RESULT_LINES.high
+        : pct >= 50
+          ? WISO_TUTOR_RESULT_LINES.mid
+          : WISO_TUTOR_RESULT_LINES.low
+      : pct >= 80
+        ? "Strong theory pass. Want another random set?"
+        : pct >= 50
+          ? "Solid mid-range. Shuffle again and keep drilling."
+          : "Rough round — another random exam will hit different cards.";
 
   return (
     <div className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
@@ -484,7 +518,7 @@ function ResultsPanel({
         <TutorFace mood={pct >= 50 ? "happy" : "sad"} />
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
-            Tutor Bot · Exam complete
+            Tutor Bot · {ui?.examComplete ?? "Exam complete"}
           </p>
           <div className="mt-1.5 rounded-2xl rounded-tl-md border border-border bg-secondary/50 px-3.5 py-2.5 text-sm">
             {line}
@@ -495,7 +529,9 @@ function ResultsPanel({
         <p className="font-display text-4xl font-bold tracking-tight">
           {score}/{total}
         </p>
-        <p className="mt-1 text-sm text-muted-foreground">{pct}% correct</p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {ui ? ui.pctCorrect(pct) : `${pct}% correct`}
+        </p>
         <button
           type="button"
           onClick={onAgain}
@@ -503,7 +539,7 @@ function ResultsPanel({
           style={{ backgroundColor: accent }}
         >
           <Shuffle className="h-4 w-4" />
-          New random exam →
+          {ui?.again ?? "New random exam →"}
         </button>
       </div>
     </div>

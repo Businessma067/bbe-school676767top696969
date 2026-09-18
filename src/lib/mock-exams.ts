@@ -39,6 +39,12 @@ import {
   MOCK_EXAM_5_QUESTION_COUNT,
   buildMockExam5Questions,
 } from "@/lib/mock-exam-5-content";
+import {
+  MOCK_EXAM_6_CONTENT_REV,
+  MOCK_EXAM_6_POINTS_TOTAL,
+  MOCK_EXAM_6_QUESTION_COUNT,
+  buildMockExam6Questions,
+} from "@/lib/mock-exam-6-content";
 
 export type ProductTier = "full" | "lite";
 
@@ -89,7 +95,7 @@ export interface ExamQuestion {
   solutionOverview?: string;
 }
 
-/** Available exams. Mocks 1–5 use curated banks; Custom Mock Builder exams are separate. */
+/** Available exams. Mocks 1–6 use curated banks; Custom Mock Builder exams are separate. */
 export const MOCK_EXAMS: MockExamSummary[] = [
   {
     id: "mock-1",
@@ -136,10 +142,19 @@ export const MOCK_EXAMS: MockExamSummary[] = [
     pointsTotal: MOCK_EXAM_5_POINTS_TOTAL,
     contentRev: MOCK_EXAM_5_CONTENT_REV,
   },
+  {
+    id: "mock-6",
+    title: "Mock Exam 6",
+    questionCount: MOCK_EXAM_6_QUESTION_COUNT,
+    durationMinutes: 120,
+    tier: "full",
+    pointsTotal: MOCK_EXAM_6_POINTS_TOTAL,
+    contentRev: MOCK_EXAM_6_CONTENT_REV,
+  },
 ];
 
 export function getExamsForTier(tier: ProductTier): MockExamSummary[] {
-  // lite users see the first 2 exams, full users see all 5
+  // lite users see the first 2 exams, full users see all curated mocks
   return tier === "full" ? MOCK_EXAMS : MOCK_EXAMS.filter((e) => e.tier === "lite");
 }
 
@@ -179,7 +194,7 @@ function makeRandom(seed: string) {
 const SECTION_ORDER: SubjectKey[] = ["economics", "english", "math"];
 
 /**
- * Exam question set. Mocks 1–5 are curated real content; unknown ids stay
+ * Exam question set. Mocks 1–6 are curated real content; unknown ids stay
  * placeholders until their banks are authored (same ExamQuestion shape either way).
  */
 export function buildExamQuestions(examId: string): ExamQuestion[] {
@@ -197,6 +212,9 @@ export function buildExamQuestions(examId: string): ExamQuestion[] {
   }
   if (examId === "mock-5") {
     return buildMockExam5Questions(examId);
+  }
+  if (examId === "mock-6") {
+    return buildMockExam6Questions(examId);
   }
 
   const rand = makeRandom(examId);

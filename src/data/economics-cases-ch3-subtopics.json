@@ -1364,35 +1364,6 @@
   },
   {
     "subsection": "3.4",
-    "case_id": "CASE 3.4.02",
-    "title": "Micro turnover edge case",
-    "context": "Consider a neighbourhood bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
-    "statements": [
-      "Turnover above €10m can push a firm out of the small category even when staff remain below fifty.",
-      "Micro status allows either turnover up to €2m or a balance sheet total up to €2m alongside the staff limit.",
-      "Exceeding the €2m turnover cap can disqualify a firm from micro status even when staff are below ten.",
-      "Small status also requires turnover not exceeding €10m.",
-      "A small enterprise may employ fewer than fifty people under EU definitions."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "A firm can stay under fifty staff and still leave the small category if turnover rises above €10m. The financial breach alone is enough to push it out.\n\nSo the statement is True.",
-      "Micro status pairs fewer than ten staff with a financial OR: turnover up to €2m or a balance sheet total up to €2m. Passing one of those financial caps alongside the staff limit can keep the firm micro.\n\nThe bakery with six staff and €2.1m turnover may still qualify if its balance sheet stays within €2m. That OR structure is what the statement records.\n\nSo the statement is True.",
-      "Even with fewer than ten employees, turnover above €2m can remove micro status when the balance sheet also fails its €2m cap. Crossing the turnover ceiling is a real disqualification path.\n\nSo the statement is True.",
-      "Small status requires turnover not exceeding €10m (or the parallel balance-sheet route) together with the staff limit. The €10m turnover ceiling is part of that package.\n\nSo the statement is True.",
-      "EU small-enterprise rules allow fewer than fifty people on the payroll. That staff band is the employment side of the official small definition.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
     "case_id": "CASE 3.4.04",
     "title": "Small dual thresholds",
     "context": "Analyze EU small-enterprise criteria for a firm with forty-five staff and €9.5m turnover. Evaluate the following economic assertions:",
@@ -1447,35 +1418,6 @@
       "Small enterprises need fewer than fifty staff. Exactly fifty fails that test. Fifty is not inside the small employee limit under EU wording.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
-    "case_id": "CASE 3.4.07",
-    "title": "Medium financial OR logic",
-    "context": "Consider a firm that has one hundred eighty staff, €48m turnover, and a €44m balance sheet. Evaluate the following economic assertions:",
-    "statements": [
-      "Any firm with more than ten employees is classified as large under EU rules.",
-      "MSME commonly groups micro, small, and medium enterprises under one umbrella term.",
-      "Crossing size thresholds can change which accounting rules apply to a business.",
-      "Any local shop qualifies as micro without reference to staff or turnover data.",
-      "Exactly ten staff exceeds the micro employee ceiling of fewer than ten."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "More than ten employees does not automatically mean large. Small and medium bands cover many firms well above ten staff. Large status requires crossing medium thresholds.\n\nSo the statement is False.",
-      "MSME is the common umbrella term that groups micro, small, and medium enterprises together in EU policy talk. The three tiers sit under one family name.\n\nSo the statement is True.",
-      "When a growing firm crosses official size lines, the accounting and reporting package that applies can change. Thresholds are not cosmetic labels; they can switch which rule set binds the business.\n\nApproaching medium limits therefore has compliance consequences as well as statistical ones. Crossing bands can rewrite filing duties.\n\nSo the statement is True.",
-      "A local shop is not micro by location alone. Staff count and financial figures still have to meet the micro tests. Geography never replaces those thresholds.\n\nSo the statement is False.",
-      "Exactly ten staff is not fewer than ten, so it exceeds the micro employee ceiling. The firm needs another size band once headcount hits ten.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -1650,35 +1592,6 @@
       "Micro pairs fewer than ten staff with €2m turnover or balance-sheet limits. Those paired tests form the complete official micro package under EU rules.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
-    "case_id": "CASE 3.4.14",
-    "title": "Micro balance within cap",
-    "context": "Consider a consultancy that has seven staff, €2.3m turnover, and a €1.9m balance sheet. Evaluate the following economic assertions:",
-    "statements": [
-      "Operating alone prevents micro classification because micro requires at least five staff.",
-      "Large firms like a components manufacturer can employ thousands despite being few in number.",
-      "Three thousand staff can still fall within medium limits if turnover is managed.",
-      "Turnover within €10m alone makes a firm small even with three hundred employees.",
-      "Turnover above €50m prevents medium classification when that cap is breached."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Operating alone with one person can still be micro if financial caps hold. Micro has no minimum of five staff; fewer than ten includes solo operators.\n\nSo the statement is False.",
-      "Large components manufacturers can employ thousands while remaining few in number across the economy. Scale of payroll and rarity in the firm count often travel together for large enterprises.\n\nSo the statement is True.",
-      "Three thousand staff smash the medium ceiling of fewer than 250 regardless of how carefully turnover is managed. Headcount alone can eject a firm from medium status.\n\nNo amount of turnover management restores medium status once employment is in the thousands. The staff test is independent and binding on that scale of payroll.\n\nSo the statement is False.",
-      "Turnover within €10m cannot make a firm small if it employs three hundred people. Small status also needs fewer than fifty staff. Headcount at three hundred fails that band.\n\nSo the statement is False.",
-      "Turnover above €50m prevents medium classification on the turnover route when that cap is breached. The breach itself blocks medium status via that test.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {

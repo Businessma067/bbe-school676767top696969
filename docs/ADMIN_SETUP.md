@@ -2,9 +2,9 @@
 
 Sign in as **georgtyrin@gmail.com** or **info@spray-go.com** → open `/admin`.
 
-## Supabase connection (required)
+## Supabase connection
 
-Admin reads **all Auth users** through the **service role** client (same as the original panel).
+Admin prefers the **service role** client when available (lists Auth users + signup phone).
 
 Set in Lovable Cloud secrets / local `.env`:
 
@@ -14,7 +14,9 @@ SUPABASE_URL=https://kntpsdgggolkqnywxedq.supabase.co
 SUPABASE_PUBLISHABLE_KEY=...
 ```
 
-Without `SUPABASE_SERVICE_ROLE_KEY` the panel shows an error instead of an empty list.
+If `SUPABASE_SERVICE_ROLE_KEY` is missing (common on Lovable), the panel falls back to the
+admin JWT + `admin_list_users` RPC / RLS policies from
+`supabase/migrations/20260825010000_admin_emails_and_list_users.sql`.
 
 ## Promocodes (required for `/admin/promocodes` and checkout redeem)
 

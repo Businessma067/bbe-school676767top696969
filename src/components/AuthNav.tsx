@@ -1,9 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
+import {
+  getCurrentAuthState,
+  peekAuthState,
+  type AuthState,
+} from "@/lib/auth-ui";
 import { ChevronDown } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { useLanguage } from "@/lib/i18n/context";
 
 type AuthNavProps = {
   /** When true, hide Sign in / Sign up (they live in the mobile menu instead). */
@@ -11,15 +16,18 @@ type AuthNavProps = {
 };
 
 export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
-  const [auth, setAuth] = useState<AuthState | null>(null);
-  const [ready, setReady] = useState(false);
+  const { t } = useLanguage();
+  const peeked = typeof window !== "undefined" ? peekAuthState() : null;
+  const [auth, setAuth] = useState<AuthState | null>(() => peeked?.auth ?? null);
+  // Prefer cached chrome immediately, even while a background refresh is in flight.
+  const [ready, setReady] = useState(() => Boolean(peeked?.ready || peeked?.auth));
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let cancelled = false;
-    const refresh = async () => {
-      const next = await getCurrentAuthState();
+    const refresh = async (options?: { refresh?: boolean }) => {
+      const next = await getCurrentAuthState(options);
       if (!cancelled) {
         setAuth(next);
         setReady(true);
@@ -28,8 +36,9 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
 
     void refresh();
     const { data } = supabase.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED")
-        void refresh();
+      if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") {
+        void refresh({ refresh: true });
+      }
     });
 
     return () => {
@@ -59,37 +68,37 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   if (!auth) {
     if (hideGuestLinks) {
       return (
-        <div className="hidden shrink-0 items-center gap-2 lg:flex">
+        <div className="hidden shrink-0 items-center gap-2 lg:flex" data-no-i18n>
           <LocalizedLink
             to="/login"
             className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary"
           >
-            Sign in
+            {t("Sign in")}
           </LocalizedLink>
           <LocalizedLink
             to="/signup"
             className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
           >
-            Sign up
+            {t("Sign up")}
           </LocalizedLink>
         </div>
       );
     }
     return (
-      <div className="flex shrink-0 items-center gap-1 sm:gap-2">
+      <div className="flex shrink-0 items-center gap-1 sm:gap-2" data-no-i18n>
         <LocalizedLink
           to="/login"
           className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md border border-border bg-card px-2.5 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
         >
           <span className="sm:hidden">In</span>
-          <span className="hidden sm:inline">Sign in</span>
+          <span className="hidden sm:inline">{t("Sign in")}</span>
         </LocalizedLink>
         <LocalizedLink
           to="/signup"
           className="inline-flex min-h-9 shrink-0 items-center justify-center rounded-md bg-primary px-2.5 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 sm:px-4 sm:py-2"
         >
           <span className="sm:hidden">Join</span>
-          <span className="hidden sm:inline">Sign up</span>
+          <span className="hidden sm:inline">{t("Sign up")}</span>
         </LocalizedLink>
       </div>
     );
@@ -98,13 +107,13 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
   const initial = auth.name.charAt(0).toUpperCase();
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2" data-no-i18n>
       {auth.role === "admin" && (
         <Link
           to="/admin/users"
           className="hidden rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:inline-flex"
         >
-          Admin panel
+          {t("Admin panel")}
         </Link>
       )}
       <div className="relative" ref={menuRef}>
@@ -139,7 +148,7 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
             tabIndex={open ? 0 : -1}
             className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
           >
-            Dashboard
+            {t("Dashboard")}
           </LocalizedLink>
           <LocalizedLink
             to="/account"
@@ -147,7 +156,7 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
             tabIndex={open ? 0 : -1}
             className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
           >
-            Settings
+            {t("Settings")}
           </LocalizedLink>
           {auth.role === "admin" && (
             <Link
@@ -156,7 +165,7 @@ export function AuthNav({ hideGuestLinks = false }: AuthNavProps) {
               tabIndex={open ? 0 : -1}
               className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
             >
-              Admin panel
+              {t("Admin panel")}
             </Link>
           )}
         </div>

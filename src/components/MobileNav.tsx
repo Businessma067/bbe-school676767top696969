@@ -7,9 +7,10 @@ import { ExamTrackSwitcher } from "@/components/ExamTrackSwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
+import { getCurrentAuthState, peekAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
 import { NavItemLink } from "./NavItemLink";
+import { useLanguage } from "@/lib/i18n/context";
 
 import {
   Sheet,
@@ -35,17 +36,19 @@ export function MobileNav({
   showLanguageSwitcher = false,
   showGuestAuth = false,
 }: MobileNavProps) {
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false);
-  const [auth, setAuth] = useState<AuthState | null>(null);
-  const [authReady, setAuthReady] = useState(false);
+  const peeked = typeof window !== "undefined" ? peekAuthState() : null;
+  const [auth, setAuth] = useState<AuthState | null>(() => peeked?.auth ?? null);
+  const [authReady, setAuthReady] = useState(() => Boolean(peeked?.ready || peeked?.auth));
   const showChrome =
     showTrackSwitcher || showThemeToggle || showLanguageSwitcher;
 
   useEffect(() => {
     if (!showGuestAuth) return;
     let cancelled = false;
-    const refresh = async () => {
-      const next = await getCurrentAuthState();
+    const refresh = async (options?: { refresh?: boolean }) => {
+      const next = await getCurrentAuthState(options);
       if (!cancelled) {
         setAuth(next);
         setAuthReady(true);
@@ -54,7 +57,7 @@ export function MobileNav({
     void refresh();
     const { data } = supabase.auth.onAuthStateChange((event) => {
       if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") {
-        void refresh();
+        void refresh({ refresh: true });
       }
     });
     return () => {
@@ -116,20 +119,20 @@ export function MobileNav({
           </nav>
 
           {guestAuthVisible ? (
-            <div className="flex flex-col gap-2 border-t border-border px-4 py-4 sm:px-6 lg:hidden">
+            <div className="flex flex-col gap-2 border-t border-border px-4 py-4 sm:px-6 lg:hidden" data-no-i18n>
               <LocalizedLink
                 to="/login"
                 onClick={() => setOpen(false)}
                 className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-card px-3 py-2 text-sm font-semibold hover:bg-secondary"
               >
-                Sign in
+                {t("Sign in")}
               </LocalizedLink>
               <LocalizedLink
                 to="/signup"
                 onClick={() => setOpen(false)}
                 className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90"
               >
-                Sign up
+                {t("Sign up")}
               </LocalizedLink>
             </div>
           ) : null}

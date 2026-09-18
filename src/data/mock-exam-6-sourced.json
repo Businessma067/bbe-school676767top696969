@@ -1,0 +1,1046 @@
+{
+  "economics": [
+    {
+      "case_id": "CASE 2.6.27",
+      "title": "Simultaneous Demand and Supply Shifts",
+      "subsection": "2.6",
+      "chapter": 2,
+      "context": "Analyze how concurrent shifts in demand and supply affect equilibrium price and quantity. Evaluate the following economic assertions:",
+      "statements": [
+        "The net effect on equilibrium price depends on the relative size of demand and supply shifts.",
+        "Graphical analysis compares new intersection points to identify changed equilibrium outcomes.",
+        "If demand shifts right while supply shifts left, equilibrium price is likely to rise.",
+        "If demand shifts right and supply shifts right together, equilibrium quantity rises.",
+        "Supply and demand shifts can occur together after a natural disaster disrupts production and tastes."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "When demand and supply both move, equilibrium price is not pinned by either shift alone.\n\nA large rightward demand shift tends to raise price; a large rightward supply shift tends to lower it. The net price change is the sum of those opposing or reinforcing pressures, so relative magnitudes decide whether the new intersection sits higher, lower, or roughly unchanged. Quantity can also move in either direction depending on which curve travels farther. Simultaneous-shift analysis therefore always asks which force dominates on price and which on quantity.\n\nSo the statement is True.",
+        "Diagrams compare the old intersection with the new one after both curves move.\n\nReading the new crossing point against the old one shows whether equilibrium price and quantity rose, fell, or stayed ambiguous.\n\nSo the statement is True.",
+        "Demand shifting right raises willingness to pay; supply shifting left cuts available output at each price.\n\nBoth forces push the intersection upward on the price axis, so equilibrium price is likely to rise even if the quantity change remains ambiguous without sizes.\n\nSo the statement is True.",
+        "Rightward demand and rightward supply both increase the quantity that clears at the new intersection.\n\nBuyers want more at each price and sellers offer more at each price, so the equilibrium quantity almost always expands. Price may rise or fall depending on which shift is larger, but the quantity conclusion is firm when both curves move right. Natural examples include a tourism boom that lifts demand while new capacity comes online on the supply side.\n\nSo the statement is True.",
+        "A disaster can destroy plant (supply left) while also changing what households urgently buy (demand shifts).\n\nBoth schedules can therefore move in the same episode, not only one at a time.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "4/5"
+    },
+    {
+      "case_id": "CASE 3.4.02",
+      "title": "Micro turnover edge case",
+      "subsection": "3.4",
+      "chapter": 3,
+      "context": "Consider a neighbourhood bakery, which has six staff and €2.1m turnover. Evaluate the following economic assertions:",
+      "statements": [
+        "Turnover above €10m can push a firm out of the small category even when staff remain below fifty.",
+        "Micro status allows either turnover up to €2m or a balance sheet total up to €2m alongside the staff limit.",
+        "Exceeding the €2m turnover cap can disqualify a firm from micro status even when staff are below ten.",
+        "Small status also requires turnover not exceeding €10m.",
+        "A small enterprise may employ fewer than fifty people under EU definitions."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "A firm can stay under fifty staff and still leave the small category if turnover rises above €10m. The financial breach alone is enough to push it out.\n\nSo the statement is True.",
+        "Micro status pairs fewer than ten staff with a financial OR: turnover up to €2m or a balance sheet total up to €2m. Passing one of those financial caps alongside the staff limit can keep the firm micro.\n\nThe bakery with six staff and €2.1m turnover may still qualify if its balance sheet stays within €2m. That OR structure is what the statement records.\n\nSo the statement is True.",
+        "Even with fewer than ten employees, turnover above €2m can remove micro status when the balance sheet also fails its €2m cap. Crossing the turnover ceiling is a real disqualification path.\n\nSo the statement is True.",
+        "Small status requires turnover not exceeding €10m (or the parallel balance-sheet route) together with the staff limit. The €10m turnover ceiling is part of that package.\n\nSo the statement is True.",
+        "EU small-enterprise rules allow fewer than fifty people on the payroll. That staff band is the employment side of the official small definition.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.2.07",
+      "title": "Limited Partnership Structure",
+      "subsection": "4.2",
+      "chapter": 4,
+      "context": "Review the structure of a limited partnership that combines managing partners with at least one non-managing capital provider. Evaluate the following economic assertions:",
+      "statements": [
+        "Terms of the partnership and other operational details may appear alongside profit division in the partnership agreement.",
+        "Partners who intend to be equally involved in management and share financial risk often choose a general partnership structure.",
+        "Rights and responsibilities of each partner are among the matters settled in the partnership agreement.",
+        "Oral promises between founders eliminate the need to settle profit division in a written partnership agreement.",
+        "Under unlimited liability a creditor must collect an equal fraction of the debt from every partner simultaneously."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Operational terms can sit beside profit division in the same partnership agreement. Hours, roles, and procedures are common extras beyond the money split.\n\nSo the statement is True.",
+        "Founders who want equal management involvement and shared financial risk often choose a general partnership structure rather than a limited one.\n\nSo the statement is True.",
+        "Rights and responsibilities of each partner belong in the agreement alongside ownership percentages. Clear allocation of duties reduces later conflict over who must do what.\n\nSettling those matters in writing is part of forming a workable partnership. The statement correctly includes rights and responsibilities among the agreement's contents.\n\nSo the statement is True.",
+        "Oral promises leave profit division hard to prove when trust frays. A written partnership agreement remains the proper place to settle how returns are shared, even among friends.\n\nSo the statement is False.",
+        "Creditors need not collect equal fractions from every partner at once. One general partner can be pursued for the full debt under unlimited liability rules.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 4.3.32",
+      "title": "Engineering Firm Share Price Rally",
+      "subsection": "4.3",
+      "chapter": 4,
+      "context": "Consider an engineering firm whose shares rallied after a contract win, though the firm issued no new equity during the rally. Evaluate the following economic assertions:",
+      "statements": [
+        "The contract win obliged the firm to register the rally amount as new share capital on its books.",
+        "Expectations of higher future profits from the contract can increase demand and push up share prices.",
+        "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices.",
+        "The corporation receives the full trading profit whenever existing shareholders sell to new buyers on the exchange.",
+        "Rising prices after issue force the board to pay immediate dividends equal to the price increase."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "The contract win did not oblige the engineering firm to register the rally amount as new share capital on its books; secondary price moves are not automatic equity subscriptions.\n\nSo the statement is False.",
+        "Expectations of higher future profits from the contract can increase demand for the stock and push exchange prices up as investors reprice the earnings outlook.\n\nSo the statement is True.",
+        "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices than they paid for the shares.\n\nNothing in the rally forces an immediate cash distribution from the board. The investor benefit arrives if and when the holder sells into the higher quote or marks a higher valuation.\n\nSo the statement is True.",
+        "The corporation does not receive the full trading profit whenever existing shareholders sell to new buyers on the exchange; those gains stay with the selling investors.\n\nSo the statement is False.",
+        "Rising prices after issue do not force the board to pay immediate dividends equal to the full price increase recorded on the secondary market.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 5.7.24",
+      "title": "Price Skimming on New Products",
+      "subsection": "5.7",
+      "chapter": 5,
+      "context": "Analyze psychological pricing such as charm prices that influence customer perceptions. Evaluate the following economic assertions:",
+      "statements": [
+        "Cost-plus pricing adds a markup to production costs when setting the selling price of a product.",
+        "Selling only through the firm's own shops is classified as direct distribution rather than indirect distribution in the marketing-mix framework.",
+        "Supplying supermarkets through a wholesaler is classified as indirect distribution rather than direct distribution in the marketing-mix framework.",
+        "Television commercials communicating product benefits is classified as advertising rather than place in the marketing-mix framework.",
+        "Penetration pricing sets a relatively low price to gain market share quickly after launch."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Cost-plus pricing adds a markup to production costs to set the selling price. Cost base plus margin is the cost-plus rule the statement states.\n\nSo the statement is True.",
+        "Selling only through the firm's own shops is direct distribution because no independent intermediary sits between producer and buyer. Own-shop paths illustrate that direct place choice.\n\nSo the statement is True.",
+        "Supplying supermarkets through a wholesaler is indirect distribution: the wholesaler is an intermediary on the path to retail. Direct would skip that middle step.\n\nSo the statement is True.",
+        "Television commercials that communicate product benefits are advertising under promotion, not place decisions about physical access. Ads persuade and inform; warehouses and aisles handle availability. Mixing the commercial with place would confuse message tools with channel tools. Media spend belongs in the promotion toolkit. The statement's advertising classification is therefore right.\n\nSo the statement is True.",
+        "Penetration pricing sets a relatively low price to gain market share quickly after launch. Fast volume through a low entry price is the penetration aim.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.1.031",
+      "title": "Asset Composition Chart 31",
+      "subsection": "6.1",
+      "chapter": 6,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 309 |\n| Machinery | 279 |\n| Office equipment | 58 |\n| Patents, trademarks and licences | 30 |\n| Inventory | 130 |\n| Trade receivables | 61 |\n| Cash and cash equivalents | 99 |\n| Total assets | 966 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 245 |\n| Retained earnings | 204 |\n| Total equity | 449 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 196 |\n| Bonds payable | 60 |\n| Trade payables | 174 |\n| Bank overdraft | 87 |\n| Total liabilities | 517 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+        "After excluding inventory, the remaining current assets still cover current liabilities more than 1.26 times over.",
+        "The equity ratio is below 25.8%.",
+        "The debt ratio exceeds 77.4%.",
+        "Buildings make up more than 57.9% of total assets."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease). That is why the two sides of the extract total the same figure. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
+        "Acid-test (quick) ratio = (current assets − inventory) ÷ current liabilities.\n\n$$\n\\text{Acid-test} = \\frac{\\text{current assets} - \\text{inventory}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 290,\\quad \\text{Inventory} = 130,\\quad \\text{CL} = 261\n$$\n\n$$\n\\text{CA} - \\text{Inventory} = 290 - 130 = 160\n$$\n\n$$\n\\frac{160}{261} \\approx 0.6130 \\le 1.26\n$$\n\nSo the statement is False.",
+        "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 449,\\quad \\text{Total assets} = 966\n$$\n\n$$\n\\frac{449}{966} \\approx 0.4648 \\approx 46.5\\%\n$$\n\n$$\n46.5\\% > 25.8\\%\n$$\n\nThe equity ratio is 46.5%, above the 25.8% benchmark. Equity ratio ≈ 449 ÷ 966 = 46.5%.\n\nSo the statement is False.",
+        "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 517,\\quad \\text{Total assets} = 966\n$$\n\n$$\n\\frac{517}{966} \\approx 0.5352 \\approx 53.5\\%\n$$\n\n$$\n53.5\\% < 77.4\\%\n$$\n\nThe debt ratio is 53.5%, below the 77.4% benchmark. Debt ratio ≈ 517 ÷ 966 = 53.5%. Claim: exceeds 77.4%. 53.5% does not fit. The debt ratio places debt against total assets. Financing structure is read from that percentage, not from a single euro line alone. Read the claim against the chapter rule: The debt ratio exceeds 77.4%. Customer collections recycle earlier sales through operating cash. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is False.",
+        "From the extract, Buildings = 309 and total assets = 966.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{309}{966}\n$$\n\n$$\n\\text{Share} = 32.0\\%\n$$\n\nBuildings / total assets ≈ 309 ÷ 966 = 32.0%. More than 57.9% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. How the item is held and for how long decides the balance-sheet line. A assets reading of the extract breaks this claim.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.4.013",
+      "title": "Short Depreciation Extract 13",
+      "subsection": "6.4",
+      "chapter": 6,
+      "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €74,000 purchase price, 8-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €2,000 residual value |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.",
+        "Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.",
+        "Asset A's annual depreciation charge is more than 39.5% higher than Asset B's annual depreciation charge.",
+        "Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here.",
+        "The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "Read the claim against the chapter rule: Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion fall. Replace the faulty reason with the correct category and the letter flips. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A mainly reading of the extract breaks this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
+        "After liabilities, the residual claim is equity. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect. A concrete fix: put borrowings under liabilities and owner claims under equity. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
+        "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{74{,}000 - 0}{8} = 9{,}250\n$$\n\n$$\n\\text{Asset B} = \\frac{24{,}000 - 2{,}000}{5} = 4{,}400\n$$\n\n$$\n\\frac{9{,}250 - 4{,}400}{4{,}400} = 110.2\\%\n$$\n\n$$\n\\text{Claim: more than 39.5\\% higher}\n$$\n\nAsset A's charge is 110.2% above Asset B's, which exceeds the 39.5% threshold. Note: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
+        "Shape and size never settle the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
+        "On the chapter test the wording is rejected. How the item is held and for how long decides the balance-sheet line. A shown reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.3.016",
+      "title": "Asset Composition Chart 16",
+      "subsection": "6.3",
+      "chapter": 6,
+      "context": "Consider the following balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n**Assets**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Buildings | 371 |\n| Machinery | 276 |\n| Office equipment | 46 |\n| Patents, trademarks and licences | 47 |\n| Inventory | 84 |\n| Trade receivables | 95 |\n| Cash and cash equivalents | 106 |\n| Total assets | 1025 |\n\n**Equity**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Share capital | 205 |\n| Retained earnings | 204 |\n| Total equity | 409 |\n\n**Liabilities**\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Long-term bank loan | 249 |\n| Bonds payable | 46 |\n| Trade payables | 250 |\n| Bank overdraft | 71 |\n| Total liabilities | 616 |\n\nEvaluate the following economic assertions:\n",
+      "statements": [
+        "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
+        "Trade receivables make up less than 36.9% of current assets.",
+        "Cash and cash equivalents make up more than 30.7% of current assets.",
+        "Inventory of €84 thousand is correctly classified as a current asset rather than a non-current intangible asset.",
+        "Total assets of €1,025 thousand equal total equity plus total liabilities."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
+        "From the extract, Trade receivables = 95 and current assets = 285.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{95}{285}\n$$\n\n$$\n\\text{Share} = 33.3\\%\n$$\n\nTrade receivables / current assets ≈ 95 ÷ 285 = 33.3%. Less than 36.9% is true here. Composition shares are plain part ÷ whole from the extract. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
+        "From the extract, Cash and cash equivalents = 106 and current assets = 285.\n\n$$\n\\text{Share} = \\frac{\\text{Cash and cash equivalents}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{106}{285}\n$$\n\n$$\n\\text{Share} = 37.2\\%\n$$\n\nCash and cash equivalents / current assets ≈ 106 ÷ 285 = 37.2%. More than 30.7% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
+        "Inventory is held for sale or cycle use, so it is current. It is neither an intangible nor a long-term operating asset. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
+        "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.5.064",
+      "title": "Return on Capital Employed Explained in Context",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "Examine why a single return on capital employed figure is best interpreted alongside comparable years or similar businesses rather than in isolation. Evaluate the following economic assertions:\n",
+      "statements": [
+        "Asset turnover for a utility company relates revenue earned during the period to the average total assets employed to generate that revenue.",
+        "The equity ratio for a utility company expresses the proportion of total assets financed by owners' equity rather than by borrowed funds.",
+        "If a utility company draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.",
+        "Inventory turnover for a manufacturer is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.",
+        "Working capital for a wholesaler is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. Operators and dealers can report the same the item on different lines.\n\nSo the statement is True.",
+        "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nThe average balances from the extract are the ones the turnover identity needs.\n\nSo the statement is True.",
+        "Looks do not decide the balance-sheet line. On the chapter test the wording is accepted. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A supplier reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
+        "With that split the claim is wrong. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is False.",
+        "On the chapter test the wording is accepted. The described treatment of the item matches standard reporting here. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5"
+    },
+    {
+      "case_id": "CASE 6.MOCK.CCC",
+      "title": "Working capital stocks — cash-conversion cycle from a chart",
+      "subsection": "6.5",
+      "chapter": 6,
+      "context": "NordicForge AG publishes year-end working-capital stocks and a short P&L extract (all figures in thousands of euros). Opening stocks are the prior year-end balances. Use a 365-day year. Inventory days and payables days are measured against cost of sales; receivables days are measured against revenue. The cash-conversion cycle is inventory days plus receivables days minus payables days.\n\n[[CHART type=\"grouped-bar\" title=\"NordicForge — opening vs closing working-capital stocks (EUR thousands)\"]]\nInventory | Opening=90 | Closing=110\nTrade receivables | Opening=80 | Closing=100\nTrade payables | Opening=60 | Closing=70\n[[/CHART]]\n\n| P&L / balance extract (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 1200 |\n| Cost of sales | 720 |\n| Total assets at the beginning of the year | 800 |\n| Total assets at the end of the year | 900 |\n\nEvaluate the following economic assertions:",
+      "statements": [
+        "Average inventory for the year equals EUR 100,000.",
+        "Inventory days exceed 55 days.",
+        "Receivables days are strictly between 25 and 30 days.",
+        "The cash-conversion cycle is strictly longer than 40 days.",
+        "Asset turnover (revenue relative to average total assets) exceeds 1.5."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\dfrac{90+110}{2}=100\n$$\n\nIn euros that is EUR 100,000.\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\n\\text{Inventory days}=365\\cdot\\dfrac{100}{720}\\approx 50.69<55\n$$\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\n\\text{Receivables days}=365\\cdot\\dfrac{90}{1200}=27.375\\in(25,30)\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\n\\text{Payables days}=365\\cdot\\dfrac{65}{720}\\approx 32.95\n$$\n\n$$\n\\mathrm{CCC}\\approx 50.69+27.38-32.95\\approx 45.12>40\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\n\\dfrac{1200}{(800+900)/2}=\\dfrac{1200}{850}\\approx 1.41<1.5\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5"
+    }
+  ],
+  "english": {
+    "passage": "(1) For much of the late nineteenth and early twentieth centuries, the majority of the world's major economies operated under a monetary arrangement known as the classical gold standard, in which a country's currency was directly convertible into a fixed quantity of gold at a legally defined rate. Britain formally adopted the system in 1821, fixing the pound sterling at a rate of approximately 3.89 pounds per fine ounce of gold, a rate that would remain essentially unchanged for over a century. Other major powers followed at varying intervals: Germany adopted gold convertibility in 1871 following its unification and the receipt of French war reparations, while the United States, despite earlier bimetallic experiments, did not formally commit to a gold standard in law until the Gold Standard Act of 1900.\n\n(2) Under this system, the core promise made to citizens and foreign governments alike was that paper currency and bank deposits could, in principle, be exchanged for physical gold on demand at the fixed rate. This convertibility was intended to impose automatic discipline on national monetary policy: if a country ran a persistent trade deficit, gold would flow out to pay foreign creditors, its domestic money supply would contract, prices would fall, and its exports would eventually become cheaper and more competitive again, restoring balance without any deliberate policy intervention. Economists later termed this selfcorrecting mechanism the \"price-specie flow mechanism,\" and it was often cited as one of the standard's principal theoretical virtues.\n\n(3) In practice, however, the system's stability during its so-called golden age, roughly 1870 to 1914, depended heavily on factors beyond the automatic mechanism itself. London functioned as the unquestioned financial center of the system, and the Bank of England's discount rate served as a coordinating signal that other central banks frequently followed, lending the network a degree of cooperative stability that the theoretical model alone did not guarantee. Estimates suggest that global gold production roughly tripled between 1890 and 1914, driven substantially by major discoveries in South Africa's Witwatersrand basin, which alone was estimated to account for close to 40% of total world gold output by the early 1900s, easing what might otherwise have been a persistently deflationary bias in a system reliant on a fixed physical commodity.\n\n(4) The outbreak of the First World War in 1914 effectively suspended the classical gold standard, as belligerent governments abandoned convertibility in order to finance enormous wartime expenditures through the printing of paper currency rather than through gold-backed borrowing alone. Britain's wartime spending, for instance, rose to a figure estimated at roughly ten times its pre-war annual government expenditure by 1918, a scale of financing that would have been effectively impossible to sustain while maintaining strict gold convertibility throughout.\n\n(5) Following the war, several countries attempted to restore a version of the system, an effort historians now generally refer to as the \"gold exchange standard\" of the 1920s. Britain famously returned to the gold standard in 1925 at the pre-war parity of 3.89 pounds per ounce, a decision championed by then- Chancellor of the Exchequer Winston Churchill on the advice of Bank of England officials, despite wartime inflation having left British prices roughly 10% higher, relative to America's, than the old fixed rate could comfortably support. Critics, most famously the economist John Maynard Keynes, argued at the time that this restoration at an overvalued rate would force painful wage and price deflation onto the British economy simply to remain competitive, a prediction many economic historians now regard as substantially vindicated by Britain's subdued growth and elevated unemployment throughout the remainder of the 1920s.\n\n(6) The interwar gold exchange standard proved considerably more fragile than its prewar predecessor. Unlike the classical system, in which only Britain held gold reserves at the system's core, the interwar arrangement allowed multiple countries to hold not only gold itself but also foreign currencies, chiefly pounds sterling and US dollars, as reserve backing for their own currencies. This layering of promises meant that a loss of confidence in sterling or the dollar could, in principle, trigger a cascading crisis of convertibility across many countries simultaneously, a vulnerability the classical system had not shared to nearly the same degree.\n\n(7) That vulnerability was realised in dramatic fashion during the early 1930s. Following a wave of banking crises across Central Europe in 1931, Britain abandoned the gold standard permanently in September of that year, and the pound's value fell by approximately 25% against gold-backed currencies within a matter of months. The United States held on longer, but in 1933 President Franklin Roosevelt suspended domestic gold convertibility and, through the Gold Reserve Act of 1934, devalued the dollar from $20.67 to $35.00 per ounce of gold, an adjustment of roughly 69%, in an explicit effort to raise domestic price levels and combat the deflationary pressures of the Great Depression.\n\n(8) By 1936, when France, the last major holdout, also abandoned gold convertibility, the classical gold standard era was, in every meaningful sense, over. Historians remain divided as to whether the system's collapse should be understood primarily as a consequence of the First World War's disruption of underlying economic fundamentals, or as evidence that the gold standard itself, once shorn of the informal cooperative arrangements that had quietly sustained it before 1914, was never truly capable of self-correction under the stress of a major global economic shock.",
+    "passageTitle": "The Rise and Fall of the Classical Gold Standard",
+    "tasks": [
+      {
+        "case_id": "ENG T.3.01",
+        "id": "en-t-3-01",
+        "title": "Task 1",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Britain fixed the pound at approximately 3.89 pounds per ounce of gold beginning in 1821.",
+          "The United States formally committed to a gold standard in law before Germany did.",
+          "The price-specie flow mechanism describes automatic self-correction of trade imbalances without deliberate policy intervention.",
+          "If global gold production was approximately 5 million ounces in 1890, tripling by 1914 would put 1914 production at approximately 15 million ounces.",
+          "The Witwatersrand basin is described as accounting for close to 40% of world gold output by the early 1900s."
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Britain fixed the pound at approximately 3.89 pounds per ounce of gold beginning in 1821.**\n\nParagraph (1) says Britain formally adopted the classical gold standard in 1821 and fixed the pound sterling at approximately 3.89 pounds per fine ounce of gold. The statement copies that date-and-rate pair without changing either figure. Notice that \"beginning in 1821\" simply restates \"formally adopted… in 1821\" — it does not invent a later revision of the peg. The passage even adds that the rate remained essentially unchanged for over a century, so nothing in the surrounding sentence undercuts the 1821 / ~3.89 pairing.\n\n**Tip:** Pair the year with the rate in the same sentence — isolated numbers are easier to swap under exam pressure.\n\nThe 1821 adoption and ~3.89 rate match paragraph (1) exactly, so the claim is **true**.",
+          "**B) The United States formally committed to a gold standard in law before Germany did.**\n\nParagraph (1) puts Germany on gold convertibility in 1871 after unification and French reparations, while the United States did not formally commit in law until the Gold Standard Act of 1900. That is nearly three decades later, not earlier. The statement's \"before Germany\" therefore reverses the only two legal-commitment dates the paragraph supplies for those powers. Watch also that \"formally… in law\" tracks the US wording; Germany's earlier date is still the first of the two named adoptions.\n\n**Trap:** \"Before Germany\" flips the chronology; the passage's order is Germany first, US last among the named powers.\n\nThe statement reverses the 1871 / 1900 sequence, so it is **false** — Germany adopted gold convertibility decades before the US Gold Standard Act.",
+          "**C) The price-specie flow mechanism describes automatic self-correction of trade imbalances without deliberate policy intervention.**\n\nParagraph (2) walks through deficit → gold outflow → tighter money → lower prices → more competitive exports, restoring balance \"without any deliberate policy intervention.\" Economists later named that automatic loop the \"price-specie flow mechanism.\" The statement's \"automatic self-correction… without deliberate policy intervention\" is therefore a near-paraphrase of both the chain and the label the text assigns to it. Nothing in the paragraph redefines the mechanism as a discretionary policy tool.\n\nThe name and the no-intervention self-correction match the passage, so the statement is **true**.",
+          "**D) If global gold production was approximately 5 million ounces in 1890, tripling by 1914 would put 1914 production at approximately 15 million ounces.**\n\nParagraph (3) says global gold production \"roughly tripled\" between 1890 and 1914. Tripling multiplies by three, so a hypothetical 5 million ounces in 1890 becomes about 15 million in 1914. The arithmetic applies the passage's multiple correctly. The 5 million starting figure is exam scaffolding, not a passage statistic — you only need to multiply that starter by the text's \"tripled.\" Do not confuse the multiple with a percentage-growth gloss such as \"grew by 300%.\"\n\n**Tip:** \"Tripled\" means ×3 of the starting level, not +3% or +300% of growth language.\n\nThe 5 → 15 million application of \"roughly tripled\" is sound, so the claim is **true**.",
+          "**E) The Witwatersrand basin is described as accounting for close to 40% of world gold output by the early 1900s.**\n\nParagraph (3) credits major discoveries in South Africa's Witwatersrand basin and states that the basin alone was estimated to account for \"close to 40% of total world gold output by the early 1900s.\" The statement restates that share and dating. \"Close to 40%\" and \"early 1900s\" are lifted from the same clause, so there is no date swap toward the 1930s exit story later in the passage. The basin's share is also framed as a production fact that eased deflationary pressure, not as a wartime or Depression-era figure.\n\nThe ~40% early-1900s Witwatersrand figure is exactly what the passage gives, so the claim is **true**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.3.02",
+        "id": "en-t-3-02",
+        "title": "Task 2",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Britain's wartime spending by 1918 rose to roughly ten times its pre-war annual government expenditure.",
+          "Britain returned to gold in 1925 at a rate lower than its pre-war parity.",
+          "If Britain's pre-war annual government expenditure was £200 million, ten times that figure would be £1.8 billion.",
+          "Keynes argued that Britain's 1925 return to gold at the old rate would force deflation to remain competitive.",
+          "The interwar gold exchange standard allowed only gold, not foreign currencies, to serve as reserves."
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) Britain's wartime spending by 1918 rose to roughly ten times its pre-war annual government expenditure.**\n\nParagraph (4) says Britain's wartime spending rose to a figure estimated at \"roughly ten times its pre-war annual government expenditure by 1918.\" The multiple and the year line up with the statement. The comparison is to pre-war annual expenditure, not to some other wartime year, so \"ten times\" stays attached to that baseline. The same paragraph explains why convertibility was abandoned: financing on that scale could not be sustained under strict gold backing.\n\nThe ~10× wartime spending claim matches paragraph (4), so it is **true**.",
+          "**B) Britain returned to gold in 1925 at a rate lower than its pre-war parity.**\n\nParagraph (5) is explicit: Britain returned in 1925 \"at the pre-war parity of 3.89 pounds per ounce,\" the same old rate, not a cheaper one. The pain came from restoring that parity while wartime inflation had left British prices ~10% higher relative to America. \"Lower than pre-war parity\" would mean a devalued peg; the text's critique is the opposite — an overvalued return to 3.89. Churchill's advice from Bank officials is tied to that unchanged parity, not to a reduced one.\n\n**Trap:** \"Lower than pre-war parity\" invents a devaluation; the passage's point is an overvalued return to the old peg.\n\nBritain restored the identical 3.89 parity, so \"lower rate\" is **false** — the text says pre-war parity, not a reduced one.",
+          "**C) If Britain's pre-war annual government expenditure was £200 million, ten times that figure would be £1.8 billion.**\n\nParagraph (4) supplies the \"roughly ten times\" multiple. Ten times £200 million is £2,000 million — £2 billion — not £1.8 billion. The statement misapplies simple multiplication to a plausible-looking answer. The hypothetical £200 million is exam input; the passage only gives the multiple, so the error is pure arithmetic, not a misread year. £1.8 billion would be 9× £200 million, a near-miss distractor built to look \"roughly\" right.\n\n**Trap:** £1.8 billion is a near-miss distractor; 10 × 200 million is 2,000 million.\n\nThe arithmetic is wrong (10 × £200m = £2bn, not £1.8bn), so the claim is **false**.",
+          "**D) Keynes argued that Britain's 1925 return to gold at the old rate would force deflation to remain competitive.**\n\nParagraph (5) records Keynes arguing that restoration at an overvalued rate would \"force painful wage and price deflation onto the British economy simply to remain competitive.\" That is the same critique the statement summarizes. \"At the old rate\" maps onto the pre-war 3.89 parity the paragraph just named, and \"force deflation\" tracks Keynes's wage-and-price wording. Historians later treating the prediction as substantially vindicated does not change what Keynes argued at the time.\n\nKeynes's deflation prediction matches the passage, so the statement is **true**.",
+          "**E) The interwar gold exchange standard allowed only gold, not foreign currencies, to serve as reserves.**\n\nParagraph (6) says the interwar arrangement let countries hold \"not only gold itself but also foreign currencies, chiefly pounds sterling and US dollars,\" as reserve backing. \"Only gold\" is the opposite of that layered design. The classical contrast in the same paragraph — Britain alone holding gold at the core — is what people wrongly paste onto the 1920s rules. The layering of sterling and dollar promises is exactly the vulnerability the text highlights next.\n\n**Trap:** Classical-system gold-only habits get wrongly pasted onto the interwar \"gold exchange\" rules.\n\nThe passage allows sterling and dollars as reserves alongside gold, so \"only gold\" is **false**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "2/5"
+      },
+      {
+        "case_id": "ENG T.3.03",
+        "id": "en-t-3-03",
+        "title": "Task 3",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The pound fell by approximately 25% against gold-backed currencies after Britain left gold in 1931.",
+          "The dollar was devalued from $20.67 to $35.00 per ounce, an adjustment of roughly 69%.",
+          "If the devaluation had instead been exactly 50%, the new gold price from $20.67 would be approximately $31.00.",
+          "France was the first major country to abandon gold convertibility in the 1930s.",
+          "Historians are described as being in full agreement that the war alone caused the gold standard's collapse."
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) The pound fell by approximately 25% against gold-backed currencies after Britain left gold in 1931.**\n\nParagraph (7) says that after Britain abandoned gold in September 1931, \"the pound's value fell by approximately 25% against gold-backed currencies within a matter of months.\" The percentage and the aftermath timing match. The comparison basket is gold-backed currencies, not an undefined \"all currencies,\" and the fall is measured in months, not a single session. \"After Britain left gold in 1931\" correctly follows the September permanent exit named in the same sentence.\n\nThe ~25% post-exit decline is stated outright, so the claim is **true**.",
+          "**B) The dollar was devalued from $20.67 to $35.00 per ounce, an adjustment of roughly 69%.**\n\nParagraph (7) gives both endpoints — $20.67 to $35.00 under the Gold Reserve Act of 1934 — and calls the move \"an adjustment of roughly 69%.\" Checking the math: (35 − 20.67) / 20.67 ≈ 69.3%, which agrees with the text's approximate figure. The statement does not invent a third price; it only repeats the two figures and the passage's own percentage gloss. Roosevelt's stated aim — raising domestic prices against Depression deflation — sits beside those numbers but does not change them.\n\nThe stated prices and ~69% adjustment match the passage, so the statement is **true**.",
+          "**C) If the devaluation had instead been exactly 50%, the new gold price from $20.67 would be approximately $31.00.**\n\nUsing the passage's old price of $20.67, a hypothetical 50% rise is 20.67 × 1.5 ≈ 31.005, which rounds to about $31.00. The item only asks whether that alternative arithmetic is correct, not whether 50% was the real 1934 change. Keep $20.67 as the base from the Gold Reserve Act sentence; multiply by 1.5 only for the \"what if\" branch. The historical ~69% move to $35.00 is a separate fact and must not overwrite this counterfactual.\n\n**Tip:** Separate the passage's actual ~69% move from the exam's \"what if 50%\" calculation.\n\nThe 50% hypothetical from $20.67 correctly lands near $31, so the claim is **true**.",
+          "**D) France was the first major country to abandon gold convertibility in the 1930s.**\n\nParagraph (8) calls France \"the last major holdout,\" abandoning gold convertibility in 1936. Britain had already left permanently in 1931, and the US suspended domestic convertibility in 1933 — both before France. \"First\" therefore swaps France's landmark end-date for the wrong rank in the exit sequence. The same sentence yokes France's 1936 exit to the classical era being \"in every meaningful sense, over,\" which only makes sense if others had already gone.\n\n**Trap:** \"First\" swaps France's landmark end-date for the wrong rank in the exit sequence.\n\nFrance was the last major holdout in 1936, not the first, so the statement is **false**.",
+          "**E) Historians are described as being in full agreement that the war alone caused the gold standard's collapse.**\n\nParagraph (8) says historians \"remain divided\" over whether collapse mainly followed World War I's disruption of fundamentals or showed that gold, without pre-1914 cooperative props, could not self-correct under a major shock. \"Full agreement\" and \"the war alone\" both overstate what the text allows. One camp emphasizes wartime disruption; the other questions whether the standard could self-correct once informal cooperation was gone — neither reading is presented as unanimous. The earlier golden-age discussion of Bank of England coordination is the \"cooperative arrangements\" side of that debate.\n\nThe passage stresses division, not consensus, so the claim is **false** — historians remain divided, not united behind a war-only story."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.3.04",
+        "id": "en-t-3-04",
+        "title": "Task 4",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "Global gold production roughly tripled between 1890 and 1914, meaning it grew by approximately 300%.",
+          "The Gold Standard Act, formally committing the US to gold in law, was passed before Germany adopted gold convertibility in 1871.",
+          "If Britain's prices were 10% higher than America's relative to the old fixed rate, a good priced at $100 in America would need to sell at $90 in Britain to match that gap.",
+          "Britain abandoned the gold standard permanently in 1931, several years after the US suspended domestic gold convertibility in 1933.",
+          "The Bank of England's discount rate served as a coordinating signal that other central banks frequently followed during the system's golden age."
+        ],
+        "answer_key": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Global gold production roughly tripled between 1890 and 1914, meaning it grew by approximately 300%.**\n\nParagraph (3) does say production \"roughly tripled,\" but tripling means the new level is 300% of the old level — an increase of 200%, not growth \"by approximately 300%.\" The statement confuses a multiple with a percentage-increase label. If output goes from 100 to 300, you have tripled (×3) and grown by 200%, not by 300%. The Witwatersrand share sentence nearby does not redefine \"tripled,\" so the error is purely in the \"meaning it grew by…\" gloss.\n\n**Trap:** \"Tripled\" ≠ \"+300% growth\"; a 100 → 300 move is +200%.\n\nThe multiple is right but the +300% gloss is wrong, so the claim is **false**.",
+          "**B) The Gold Standard Act, formally committing the US to gold in law, was passed before Germany adopted gold convertibility in 1871.**\n\nParagraph (1) dates German convertibility to 1871 and the US Gold Standard Act to 1900. The US law came decades after Germany's adoption, not before it. \"Formally committing… in law\" correctly echoes the Act's wording, but \"before Germany… in 1871\" still reverses the sequence. Earlier US \"bimetallic experiments\" mentioned in the same paragraph are not the 1900 legal gold commitment, so they cannot rescue a \"before 1871\" claim.\n\nThe chronology is reversed (1871 Germany, 1900 US Act), so the statement is **false**.",
+          "**C) If Britain's prices were 10% higher than America's relative to the old fixed rate, a good priced at $100 in America would need to sell at $90 in Britain to match that gap.**\n\nParagraph (5) says wartime inflation left British prices \"roughly 10% higher, relative to America's,\" than the old fixed rate could support. A 10% higher British price level maps a $100 US good to about $110 in Britain, not $90. The statement flips the direction of the gap. Higher UK prices are why restoring the old 3.89 parity looked overvalued and invited deflation — a $90 UK sticker would understate, not match, that premium.\n\n**Trap:** Higher British prices mean a higher UK sticker, not a $90 discount.\n\nThe 10% premium points to ~$110, not $90, so the claim is **false**.",
+          "**D) Britain abandoned the gold standard permanently in 1931, several years after the US suspended domestic gold convertibility in 1933.**\n\nParagraph (7) places Britain's permanent exit in September 1931 and the US suspension in 1933 — Britain left first, then the United States \"held on longer.\" \"Several years after\" reverses that order. The years themselves (1931 / 1933) are correct; only the relational word \"after\" is wrong. Roosevelt's 1934 Gold Reserve Act devaluation comes even later and cannot push Britain's exit behind 1933.\n\n**Trap:** The true years (1931 / 1933) are kept, but \"after\" wrongly stacks Britain behind the US.\n\nBritain left in 1931, two years before the US move in 1933, so \"after\" makes the statement **false**.",
+          "**E) The Bank of England's discount rate served as a coordinating signal that other central banks frequently followed during the system's golden age.**\n\nParagraph (3) says that in the ~1870–1914 golden age, London was the financial center and \"the Bank of England's discount rate served as a coordinating signal that other central banks frequently followed.\" The statement restates that coordination role. This is exactly the \"beyond the automatic mechanism\" cooperation the paragraph stresses, and paragraph (8) later calls such informal arrangements what had quietly sustained the system before 1914. The claim does not invent a formal treaty — only the discount-rate followership the text names.\n\nThe discount-rate signal is exactly what paragraph (3) describes, so the claim is **true**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "3/5"
+      },
+      {
+        "case_id": "ENG T.3.05",
+        "id": "en-t-3-05",
+        "title": "Task 5",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each statement is true or false.",
+        "statements": [
+          "The pound's decline of approximately 25% against gold-backed currencies occurred within months of Britain's September 1931 departure from gold.",
+          "If the pound had instead fallen by exactly one third against gold-backed currencies, this would represent a larger decline than the 25% actually recorded.",
+          "The Witwatersrand basin's roughly 40% share of world gold output was reached by the early 1930s, shortly before Britain left gold.",
+          "France abandoned gold convertibility in 1936, the same year the classical gold standard era is described as having definitively ended.",
+          "The dollar's devaluation under the Gold Reserve Act represented a rise in the gold price of exactly $14.33 per ounce."
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) The pound's decline of approximately 25% against gold-backed currencies occurred within months of Britain's September 1931 departure from gold.**\n\nParagraph (7) ties the September 1931 permanent exit to a fall of \"approximately 25% against gold-backed currencies within a matter of months.\" Timing, size, and comparison basket all match the statement. \"Within months\" paraphrases \"within a matter of months\" without shrinking the window to hours or a single session. The Central European banking crises that precede Britain's exit in the same paragraph supply context but do not change the 25% figure.\n\nThe ~25% decline within months of the September exit is what the passage reports, so the claim is **true**.",
+          "**B) If the pound had instead fallen by exactly one third against gold-backed currencies, this would represent a larger decline than the 25% actually recorded.**\n\nOne third is about 33.3%, which is larger than the passage's recorded ~25%. The item only compares a hypothetical one-third drop with the actual approximate figure; it does not rewrite the historical percentage. Treat ~25% as the fixed baseline from paragraph (7), then ask only whether ⅓ exceeds that baseline. No other passage percentage (for example the dollar's ~69% move) belongs in this comparison.\n\n**Tip:** Keep the passage's 25% as the baseline; then ask whether ⅓ > 25%.\n\nA one-third fall is numerically larger than 25%, so the comparison is **true**.",
+          "**C) The Witwatersrand basin's roughly 40% share of world gold output was reached by the early 1930s, shortly before Britain left gold.**\n\nParagraph (3) dates the Witwatersrand's \"close to 40%\" share to \"the early 1900s,\" not the early 1930s. Sliding the statistic forward three decades toward Britain's 1931 exit invents a false chronological link. The production surge belongs with the 1890–1914 golden-age discussion, not with the Depression-era exits in paragraph (7). \"Shortly before Britain left gold\" is extra glue that the passage never attaches to the Witwatersrand figure.\n\n**Trap:** Early 1900s ≠ early 1930s; the later decade appears elsewhere and invites the swap.\n\nThe ~40% share is early 1900s in the text, so \"early 1930s\" makes the claim **false**.",
+          "**D) France abandoned gold convertibility in 1936, the same year the classical gold standard era is described as having definitively ended.**\n\nParagraph (8) opens: \"By 1936, when France, the last major holdout, also abandoned gold convertibility, the classical gold standard era was, in every meaningful sense, over.\" France's 1936 exit and the era's end are the same narrative beat. \"Last major holdout\" confirms that earlier exits (Britain 1931, US 1933) had already happened, so 1936 is the closing date, not a first exit. The historians' debate that follows concerns causes of collapse, not whether 1936 marks the end.\n\nThe passage yokes 1936 France with the definitive end of the classical era, so the statement is **true**.",
+          "**E) The dollar's devaluation under the Gold Reserve Act represented a rise in the gold price of exactly $14.33 per ounce.**\n\nParagraph (7) moves the dollar gold price from $20.67 to $35.00. Subtract: 35.00 − 20.67 = 14.33. The statement's \"exactly $14.33\" is the correct arithmetic difference between those stated prices. This absolute rise is consistent with the passage's \"roughly 69%\" relative adjustment; both describe the same $20.67 → $35.00 step. The item does not ask for a new endpoint — only for the gap between the two given figures.\n\n$35.00 − $20.67 = $14.33, so the magnitude claim is **true**."
+        ],
+        "kind": "text",
+        "with_passage": true,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.3.08",
+        "id": "en-t-3-08",
+        "title": "Task 8",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "\"Historians remain divided as to whether the collapse resulted primarily from wartime disruption.\"",
+          "\"Despite of the theoretical self-correcting mechanism, the system depended on informal cooperation.\"",
+          "\"Whoever restores convertibility at an overvalued rate risks forcing painful deflation on the economy.\"",
+          "\"Churchill denied having fully considered the deflationary consequences of the decision.\"",
+          "\"There is several factors that explain the system's stability before 1914.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) \"Historians remain divided as to whether the collapse resulted primarily from wartime disruption.\"**\n\n\"Remain divided as to whether…\" correctly introduces an embedded yes/no question after as to. Tense and subject–verb agreement are fine, and whether (not if) is a natural choice after a prepositional as to. The structure mirrors paragraph (8)'s \"remain divided as to whether,\" so the grammar matches the passage's own phrasing pattern. No subjunctive or inversion is required in this embedded whether-clause.\n\nThe as to whether structure is well formed, so the sentence is **true**.",
+          "**B) \"Despite of the theoretical self-correcting mechanism, the system depended on informal cooperation.\"**\n\nDespite never takes of; that of belongs with in spite of. Repair to \"Despite the theoretical self-correcting mechanism…\" or \"In spite of the theoretical self-correcting mechanism….\" Despite behaves like a preposition taking a noun phrase directly; adding of doubles the preposition incorrectly. The content about self-correction versus cooperation echoes the passage, but the preposition error alone makes the line ungrammatical.\n\n**Trap:** Despite / in spite of get blended into the ungrammatical \"despite of.\"\n\n\"Despite of\" is not standard English, so the line is **false** — drop of or switch to in spite of.",
+          "**C) \"Whoever restores convertibility at an overvalued rate risks forcing painful deflation on the economy.\"**\n\nWhoever correctly heads a subject noun clause, and the main verb \"risks\" agrees with that singular -ever subject. \"Risks forcing\" (risk + -ing) is the expected pattern after risk. Do not write \"risk to force\"; risk takes a gerund, not a to-infinitive, in this sense. Whoever (like everyone who) is treated as singular even though it refers to an indefinite person.\n\nWhoever + singular risks + -ing is grammatical, so the sentence is **true**.",
+          "**D) \"Churchill denied having fully considered the deflationary consequences of the decision.\"**\n\nAfter deny, a perfect gerund (\"having fully considered\") correctly marks an earlier completed action the speaker rejects. Word order and aspect are appropriate for denying a prior consideration. Deny + -ing (or deny + that-clause) is standard; a bare infinitive after deny would be wrong here. The perfect gerund having considered places the alleged consideration before the denying, which fits the meaning.\n\nDenied + perfect gerund is the right pattern here, so the wording is **true**.",
+          "**E) \"There is several factors that explain the system's stability before 1914.\"**\n\nExistential there must agree with the notional subject that follows. \"Several factors\" is plural, so the verb must be \"are,\" not \"is.\" Repair: \"There are several factors that explain the system's stability before 1914.\" There is / there are is decided by the noun after the verb, not by a default singular habit. The relative clause \"that explain…\" correctly takes a plural verb matching factors once the existential is fixed.\n\n**Trap:** There is feels default until the plural noun after it is noticed.\n\nPlural factors need There are, so \"There is several\" is **false**."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.3.09",
+        "id": "en-t-3-09",
+        "title": "Task 9",
+        "subsection": "t.3",
+        "context": "Based on the passage, decide whether each given meaning matches the word's actual use.",
+        "statements": [
+          "\"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"",
+          "\"Analysts describe Britain's 1925 return to gold as vindicated by subsequent economic difficulties.\"",
+          "\"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"",
+          "\"The interwar arrangement was considerably more fragile than its prewar predecessor, collapsing rapidly under stress.\"",
+          "\"The pound's decline was confined to a single trading session, lasting only a few hours in total.\""
+        ],
+        "answer_key": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) \"The mechanism was described as self-correcting, requiring constant deliberate government intervention to function.\"**\n\nIn paragraph (2), the self-correcting price-specie flow restores balance \"without any deliberate policy intervention.\" Pairing \"self-correcting\" with \"constant deliberate government intervention\" contradicts the passage sense of the term. The automatic deficit → gold outflow → price → export loop is precisely what makes intervention unnecessary in the model. Any paraphrase that reintroduces constant government action is an antonym of the text's collocation.\n\n**Trap:** Self-correcting sounds technical enough to hide an antonym paraphrase.\n\nSelf-correcting means no deliberate intervention, so the sentence's meaning is **false** against the text.",
+          "**B) \"Analysts describe Britain's 1925 return to gold as vindicated by subsequent economic difficulties.\"**\n\nParagraph (5) says many historians regard Keynes's prediction as \"substantially vindicated\" by Britain's subdued growth and elevated unemployment after the overvalued 1925 return. Here \"vindicated\" keeps that confirmed-by-later-outcomes sense tied to those difficulties. The verb does not mean the policy was wise; it means later evidence supported the critical forecast. Subdued growth and elevated unemployment in the remainder of the 1920s are the passage's own confirming outcomes.\n\n**Tip:** Vindicated = later evidence bore the claim out — not \"justified as wise policy.\"\n\nThe passage-backed use of vindicated fits, so the wording is **true**.",
+          "**C) \"The gold discoveries eased what might otherwise have been a persistently deflationary bias in the system.\"**\n\nParagraph (3) says the Witwatersrand-driven production surge was \"easing what might otherwise have been a persistently deflationary bias in a system reliant on a fixed physical commodity.\" The sentence restates that easing role with the same collocates. \"Eased\" / \"persistently deflationary bias\" are the passage's own pairing, not a new causal claim. The discoveries matter because a fixed gold stock would otherwise have kept money tight as economies grew.\n\nThe eased / persistently deflationary bias wording matches the passage, so the claim is **true**.",
+          "**D) \"The interwar arrangement was considerably more fragile than its prewar predecessor, collapsing rapidly under stress.\"**\n\nParagraph (6) opens by saying the interwar gold exchange standard \"proved considerably more fragile than its prewar predecessor,\" and later paragraphs show that fragility under 1930s stress. \"Considerably more fragile\" is the passage's own comparison. Multi-currency reserve layering — sterling and dollars alongside gold — is the structural reason the text gives for that extra fragility. \"Collapsing rapidly under stress\" summarizes the early-1930s cascade without inventing a new date.\n\nThe fragility contrast is passage-true, so the statement is **true**.",
+          "**E) \"The pound's decline was confined to a single trading session, lasting only a few hours in total.\"**\n\nParagraph (7) places the ~25% fall \"within a matter of months,\" not inside one session of a few hours. The sentence invents an ultra-short collapse the text never describes. Months is the only duration the passage attaches to that decline; hours or a single session have no support. Do not borrow \"dramatic fashion\" from the same paragraph as a license to shrink the timeline.\n\n**Trap:** Months → hours shrinks the timeline without any supporting span.\n\nThe passage times the decline in months, so the few-hours version is **false**."
+        ],
+        "kind": "vocabulary",
+        "with_passage": true,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.3.06",
+        "id": "en-t-3-06",
+        "title": "Task 6",
+        "subsection": "t.3",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"Had Britain not returned to gold at the pre-war parity, Keynes's predicted deflation might have been avoided.\"",
+          "\"The committee insisted that convertibility is restored before the end of the year.\"",
+          "\"The number of countries abandoning gold convertibility continue to rise throughout the 1930s.\"",
+          "\"Neither the Bank of England nor other central banks were fully able to prevent the crisis.\"",
+          "\"Having suspended convertibility, the currency's value was immediately devalued by the government.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) \"Had Britain not returned to gold at the pre-war parity, Keynes's predicted deflation might have been avoided.\"**\n\nThis is a well-formed third conditional with subject–auxiliary inversion: Had + subject + past participle in the if-clause, and a modal perfect (\"might have been avoided\") in the result clause. No auxiliary is missing, and the participle/modal pairing fits a counterfactual past. The inverted Had-clause stands in for \"If Britain had not returned…,\" which is the standard exam pattern for past counterfactuals. Vocabulary such as pre-war parity and deflation is topical but does not change the grammar verdict.\n\nInverted Had + past participle with modal perfect is the standard third-conditional pattern, so the sentence is **true**.",
+          "**B) \"The committee insisted that convertibility is restored before the end of the year.\"**\n\nAfter insist + that, formal exam English wants the mandative subjunctive — base form \"be,\" not indicative \"is.\" Repair to \"The committee insisted that convertibility be restored before the end of the year.\" Verbs of demand or recommendation (insist, demand, recommend) commonly trigger this bare-stem pattern in that-clauses. \"Is restored\" looks like ordinary present tense and is the classic distractor after such verbs.\n\n**Trap:** \"Is restored\" looks like an ordinary present after that-clause verbs that actually demand the bare subjunctive.\n\nInsist that requires the base subjunctive, so the line is **false** — \"…that convertibility be restored….\"",
+          "**C) \"The number of countries abandoning gold convertibility continue to rise throughout the 1930s.\"**\n\n\"The number of\" is a singular subject, so the verb must be singular: \"continues,\" not \"continue.\" Repair to \"The number of countries abandoning gold convertibility continues to rise throughout the 1930s.\" Contrast \"a number of countries continue…,\" where the plural noun heads the subject; here the head is number. The -ing phrase \"abandoning gold convertibility\" modifies countries and does not control agreement.\n\n**Trap:** The nearby plural \"countries\" tempts agreement with the wrong noun.\n\nSubject–verb agreement fails with \"the number… continue,\" so this is **false** — use \"continues.\"",
+          "**D) \"Neither the Bank of England nor other central banks were fully able to prevent the crisis.\"**\n\nWith neither…nor, the verb agrees with the nearer subject. Here \"other central banks\" is plural, so \"were\" is the right choice. The correlative structure is clean and the agreement rule is applied correctly. Had the nearer noun been singular (\"nor the Bank of France\"), the verb would shift to was — proximity, not the first noun, decides. Gold-standard vocabulary does not alter the neither…nor rule.\n\nNearest-subject agreement with plural \"central banks\" justifies \"were,\" so the sentence is **true**.",
+          "**E) \"Having suspended convertibility, the currency's value was immediately devalued by the government.\"**\n\nThe opening participle \"Having suspended convertibility\" must modify the subject that did the suspending. As written, the subject is \"the currency's value,\" which cannot suspend convertibility — a classic dangling modifier. Repair by making the government the subject: \"Having suspended convertibility, the government immediately devalued the currency.\" Passive \"was… devalued\" hides the agent and makes the dangling more likely; restoring an active institutional subject fixes both clarity and grammar.\n\n**Trap:** A passive main clause after an active participle often leaves the agent orphaned.\n\nThe dangling participle attaches the wrong actor, so the line is **false** — restore a human/institutional subject for the -ing phrase."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "4/5"
+      },
+      {
+        "case_id": "ENG T.3.07",
+        "id": "en-t-3-07",
+        "title": "Task 7",
+        "subsection": "t.3",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "\"No sooner had the pound fallen than confidence in sterling began to weaken further.\"",
+          "\"The Bank of England, along with several allied institutions, were coordinating discount rates.\"",
+          "\"Each of the major powers have committed to a fixed gold rate by 1900.\"",
+          "\"By the time France abandoned gold in 1936, the classical system will have already collapsed.\"",
+          "\"The reserves, which were held partly in foreign currencies, exposed the system to cascading crises.\""
+        ],
+        "answer_key": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) \"No sooner had the pound fallen than confidence in sterling began to weaken further.\"**\n\n\"No sooner…than\" correctly triggers inversion: auxiliary Had + subject + past participle, then than + a simple-past follow-on. The sequence (fall, then further weakening) sits in the expected past-perfect → past-simple frame. Do not replace than with when — \"no sooner…when\" is a common exam error. The inverted Had after no sooner is required; \"No sooner the pound had fallen\" without inversion would be wrong.\n\nNo sooner + inversion + than is formed correctly here, so the sentence is **true**.",
+          "**B) \"The Bank of England, along with several allied institutions, were coordinating discount rates.\"**\n\n\"Along with several allied institutions\" is a parenthetical add-on; the grammatical subject remains singular \"The Bank of England,\" so the verb should be \"was coordinating,\" not \"were.\" Repair: \"The Bank of England, along with several allied institutions, was coordinating discount rates.\" Phrases with along with, as well as, or together with never make a plural subject by themselves. Only a true compound (\"The Bank of England and several allied institutions\") would license were.\n\n**Trap:** Material after along with/as well as does not make a plural subject.\n\nSingular Bank of England needs \"was,\" so \"were\" makes the line **false**.",
+          "**C) \"Each of the major powers have committed to a fixed gold rate by 1900.\"**\n\n\"Each of\" takes a singular verb even when a plural noun follows. Prefer \"has committed,\" not \"have.\" Repair: \"Each of the major powers has committed to a fixed gold rate by 1900.\" Every, each, and either similarly pull singular agreement despite a plural of-phrase. The \"by 1900\" time stamp is topical color; it does not change the each-of rule.\n\n**Trap:** \"Powers\" looks plural, but each of still governs singular agreement.\n\nEach of + have breaks singular agreement, so the sentence is **false** — \"has committed.\"",
+          "**D) \"By the time France abandoned gold in 1936, the classical system will have already collapsed.\"**\n\n\"By the time France abandoned…\" anchors a past viewpoint, so the main clause needs past perfect (\"had already collapsed\"), not future perfect (\"will have already collapsed\"). Future perfect belongs with a still-ahead deadline, not a finished 1936 narrative. Match the tense of the by-the-time clause: past abandoned → past perfect had collapsed. Will have would fit only something like \"By the time France abandons…\" with a future frame.\n\n**Trap:** \"By the time\" can tempt will have even when the time clause is already past.\n\nA past by-the-time frame rejects will have, so this is **false** — \"…the classical system had already collapsed.\"",
+          "**E) \"The reserves, which were held partly in foreign currencies, exposed the system to cascading crises.\"**\n\nThe non-restrictive which-clause correctly modifies plural \"reserves,\" and \"were held\" agrees with that plural noun. The main verb \"exposed\" also matches the plural subject. Relative-clause agreement and punctuation are in order. Commas around which mark non-restrictive extra information; that pattern fits a descriptive aside about how reserves were held. The interwar gold-exchange idea of foreign-currency reserves is vocabulary only — the grammar verdict rests on plural agreement.\n\nPlural reserves + \"which were held\" agree cleanly, so the sentence is **true**."
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG T.3.10",
+        "id": "en-t-3-10",
+        "title": "Task 10",
+        "subsection": "t.3",
+        "context": "Consider this sentence from the passage: \"Under the classical gold standard, currencies were defined as fixed weights of gold.\" Decide whether each paraphrase preserves its meaning.",
+        "statements": [
+          "\"The devaluation was an explicit effort to raise domestic price levels and combat deflationary pressures.\"",
+          "\"The system's golden age depended heavily on cooperative arrangements beyond the automatic mechanism alone.\"",
+          "\"A cascading crisis of convertibility means that confidence problems remained isolated to a single country.\"",
+          "\"The layering of reserve promises across multiple currencies increased, rather than reduced, systemic vulnerability.\"",
+          "\"Britain's wartime spending is described as having stayed roughly level with pre-war annual expenditure.\""
+        ],
+        "answer_key": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "tactical_explanations": [
+          "**A) \"The devaluation was an explicit effort to raise domestic price levels and combat deflationary pressures.\"**\n\nParagraph (7) describes Roosevelt's gold move as made \"in an explicit effort to raise domestic price levels and combat the deflationary pressures of the Great Depression.\" The sentence's purpose language tracks that phrasing. \"Explicit effort\" plus raise prices / fight deflation is the Act's stated policy aim, not a later historian's gloss. The $20.67 → $35.00 numbers sit in the same sentence but are not required to judge this purpose paraphrase.\n\nThe raise-prices / fight-deflation purpose matches the passage, so the wording is **true**.",
+          "**B) \"The system's golden age depended heavily on cooperative arrangements beyond the automatic mechanism alone.\"**\n\nParagraph (3) stresses that golden-age stability \"depended heavily on factors beyond the automatic mechanism itself,\" including London's role and cooperative following of the Bank of England's discount rate. Paragraph (8) later names the \"informal cooperative arrangements\" that had sustained the system before 1914. The statement's \"cooperative arrangements beyond the automatic mechanism\" therefore stitches those two passage ideas without adding new institutions. Price-specie flow alone is not presented as a sufficient explanation of 1870–1914 stability.\n\nCooperation beyond the automatic model is exactly the passage's caveat, so the claim is **true**.",
+          "**C) \"A cascading crisis of convertibility means that confidence problems remained isolated to a single country.\"**\n\nParagraph (6) says a loss of confidence in sterling or the dollar could \"trigger a cascading crisis of convertibility across many countries simultaneously.\" Cascading means spread, not isolation — the sentence invents the opposite definition. \"Across many countries simultaneously\" is the key collocates that block any single-country reading. The classical system's lesser vulnerability is contrasted precisely because it lacked that multi-country layering.\n\n**Trap:** Cascading sounds dramatic but always implies multi-link spillover, not containment.\n\nCascading crisis = multi-country spillover, so \"isolated to a single country\" is **false**.",
+          "**D) \"The layering of reserve promises across multiple currencies increased, rather than reduced, systemic vulnerability.\"**\n\nParagraph (6) explains that holding gold plus foreign currencies as reserves meant confidence loss could cascade across many countries — \"a vulnerability the classical system had not shared to nearly the same degree.\" Layering promises raised exposure; it did not dampen it. Sterling and dollar reserves as backing are the \"multiple currencies\" the statement names. The classical contrast — gold concentrated at Britain's core — underscores that the interwar design added risk.\n\nThe passage treats multi-currency layering as more vulnerable, so the statement is **true**.",
+          "**E) \"Britain's wartime spending is described as having stayed roughly level with pre-war annual expenditure.\"**\n\nParagraph (4) says wartime spending rose to \"roughly ten times\" pre-war annual government expenditure by 1918. \"Roughly level\" erases that massive multiple. \"Roughly\" in the passage softens the estimate of a tenfold jump; it does not mean spending stayed flat. That scale of financing is why belligerents abandoned convertibility rather than funding war under strict gold rules.\n\n**Trap:** Roughly softens the scale but cannot flip tenfold growth into flat spending.\n\nThe text says ~10×, not level, so the claim is **false**."
+        ],
+        "kind": "vocabulary",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      },
+      {
+        "case_id": "ENG G.8.19",
+        "id": "en-g-8-19",
+        "title": "Task 19",
+        "subsection": "g.8",
+        "context": "Decide whether each sentence is grammatically correct as written.",
+        "statements": [
+          "Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"",
+          "Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"",
+          "Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"",
+          "Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"",
+          "Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\""
+        ],
+        "answer_key": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "tactical_explanations": [
+          "**A) Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. \"She said she'd rather I didn't spoil that\" does not force past perfect inside the rather-clause. Preferential rather-clauses are not automatically deepened further.\n\nShe'd rather I didn't spoil that keeps the preference clause while shifting deixis, so the report is **true**.\n",
+          "**B) Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"**\n\nInformal how come reports with statement order and optional past perfect for a prior failure. \"He asked how come the cake had collapsed\" keeps how come and deepens the collapse. Pattern: asked how come + subject + (had) + past participle.\n\nHow come the cake had collapsed is a valid informal backshift, so the wording is **true**.\n",
+          "**C) Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"**\n\n\"Used not to\" (or didn't use to) for past habit can remain used not to. Habitual used-to patterns are already past-oriented, so further backshift is unnecessary. \"They said they used not to skip breakfast\" keeps the old habit meaning.\n\nUsed not to can stay as-is under past said, so this line is **true**.\n",
+          "**D) Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"**\n\nFuture perfect in a yes/no question → if + would have, and the time-clause present→past. \"She asked if I would have finished by the time she called\" shifts both the main future perfect and the by-the-time clause. Both layers move together under past asked.\n\n**Tip:** will you have… by the time I…? → if + would have… by the time + past.\n\nWould have finished and she called move together under asked if, so the double backshift is **true**.\n",
+          "**E) Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\"**\n\nSuppose-ideas often become suggested that + base (or past) form in formal reports. \"He suggested that we freeze the leftovers\" is exam-friendly for \"Suppose we freeze…\" Mandative or tentative freeze after suggested that is acceptable.\n\nSuggested that we freeze correctly maps the suppose-idea, so the wording is **true**.\n"
+        ],
+        "kind": "grammar",
+        "with_passage": false,
+        "difficulty_level": "5/5"
+      }
+    ]
+  },
+  "math": [
+    {
+      "case_id": "MATH 1.MOCK.FOURSET",
+      "id": "MATH 1.MOCK.FOURSET",
+      "title": "Four certification modules — deep inclusion–exclusion",
+      "chapter": 1,
+      "subsection": "1.2",
+      "context": "A certification academy tracks four modules: Risk, Audit, Tax, and Ethics. Of $450$ candidates, $240$ finished Risk, $200$ finished Audit, $180$ finished Tax, and $150$ finished Ethics. Pairwise overlaps are $110$ for Risk–Audit, $100$ for Risk–Tax, $90$ for Risk–Ethics, $85$ for Audit–Tax, $80$ for Audit–Ethics, and $70$ for Tax–Ethics. Exactly $50$ finished all of Risk, Audit, and Tax; $45$ finished all of Risk, Audit, and Ethics; $40$ finished all of Risk, Tax, and Ethics; $38$ finished all of Audit, Tax, and Ethics; and $25$ finished all four. Every candidate is counted in the academy total, including those who finished none.",
+      "statements": [
+        "Exactly $67$ candidates finished none of the four modules.",
+        "The candidates who finished all four outnumber those who finished Risk and nothing else.",
+        "Strictly more than $380$ candidates finished at least one module.",
+        "Finishing Ethics without finishing Risk is impossible under these counts.",
+        "The candidates who finished Risk or Audit (or both) number strictly more than $325$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFour-set inclusion–exclusion:\n\n$$\n|R\\cup A\\cup T\\cup E|=770-535+173-25=383\n$$\n\n$$\n450-383=67\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\nOnly Risk equals $240-110-100-90+50+45+40-25=50$. All four equals $25$. Since $25\\ngtr 50$, the claim fails.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe union is $383>380$.\n\nSo the statement is True.",
+        "**D.** → False\n\nOnly Ethics equals $150-90-80-70+45+40+38-25=8>0$, so Ethics without Risk occurs.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$\n|R\\cup A|=240+200-110=330>325\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Union $383$, none $67$. Only Risk $50>$ all-four $25$. Ethics-only $8$. $|R\\cup A|=330$."
+    },
+    {
+      "case_id": "MATH 2.MOCK.FOURSYM",
+      "id": "MATH 2.MOCK.FOURSYM",
+      "title": "Four-number archive — full symmetric data and Vieta",
+      "chapter": 2,
+      "subsection": "2.3",
+      "context": "An algebra archive stores four real numbers $a,b,c,d$ only through\n\n$$\na+b+c+d=15,\\qquad \\sum_{i<j}a_ia_j=80,\\qquad \\sum_{i<j<k}a_ia_ja_k=180,\\qquad abcd=144,\n$$\n\nwhere the middle two sums run over the indicated distinct index tuples among $\\{a,b,c,d\\}$. The original order was not recorded. No decimal approximation is used.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$a^{2}+b^{2}+c^{2}+d^{2}=65$.",
+        "$a^{3}+b^{3}+c^{3}+d^{3}=315$.",
+        "$\\{a,b,c,d\\}=\\{2,3,4,6\\}$.",
+        "$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}+\\dfrac{1}{d}=\\dfrac{4}{5}$.",
+        "$(a-b)^{2}+(a-c)^{2}+(a-d)^{2}+(b-c)^{2}+(b-d)^{2}+(c-d)^{2}=70$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\sum a_i^{2}=\\Bigl(\\sum a_i\\Bigr)^{2}-2\\sum_{i<j}a_ia_j=225-160=65\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe numbers are the roots of $t^{4}-15t^{3}+80t^{2}-180t+144=0$, which factors as $(t-2)(t-3)(t-4)(t-6)$. Then\n\n$$\n2^{3}+3^{3}+4^{3}+6^{3}=8+27+64+216=315\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAs in letter B, the roots are exactly $\\{2,3,4,6\\}$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\n\\sum\\dfrac{1}{a_i}=\\dfrac{\\sum_{i<j<k}a_ia_ja_k}{abcd}=\\dfrac{180}{144}=\\dfrac{5}{4}\\neq\\dfrac{4}{5}\n$$\n\nSo the statement is False.",
+        "**E.** → False\n\n$$\n\\sum_{i<j}(a_i-a_j)^{2}=n\\sum a_i^{2}-\\Bigl(\\sum a_i\\Bigr)^{2}=4\\cdot 65-225=35\\neq 70\n$$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Roots $\\{2,3,4,6\\}$. Sum of squares $65$, cubes $315$. Reciprocal sum $5/4$. Pairwise gap sum $35$."
+    },
+    {
+      "case_id": "MATH 3.MOCK.TRIPV",
+      "id": "MATH 3.MOCK.TRIPV",
+      "title": "Project, perpetuity-due and annuity — triple present-value audit",
+      "chapter": 3,
+      "subsection": "3.3",
+      "context": "A foundation compares three cash programmes at annual effective rate $8\\%$.\n\nProgramme P buys a four-year project: pay EUR $25000$ immediately, then receive EUR $7000$, EUR $8000$, EUR $9000$, and EUR $10000$ at the ends of years $1$, $2$, $3$, and $4$.\n\nProgramme Q is a level perpetuity-due of EUR $600$ per year (first payment today).\n\nProgramme R is a five-year ordinary annuity of EUR $2000$ per year (first payment in one year).\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "Programme P has a strictly positive net present value, and that NPV exceeds EUR $2500$.",
+        "The present value of the single EUR $7000$ inflow (year $1$) is strictly less than EUR $6500$.",
+        "At $8\\%$, Programme Q has present value exactly EUR $8100$.",
+        "At $8\\%$, Programme R has a strictly larger present value than Programme Q.",
+        "Moving every Programme P inflow one year earlier would strictly decrease P’s present value of inflows."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\mathrm{PV}_{\\mathrm{in}}=\\dfrac{7000}{1.08}+\\dfrac{8000}{1.08^{2}}+\\dfrac{9000}{1.08^{3}}+\\dfrac{10000}{1.08^{4}}\\approx 27835\n$$\n\n$$\n\\mathrm{NPV}\\approx 27835-25000=2835>2500\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\dfrac{7000}{1.08}\\approx 6481.48<6500\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\nPerpetuity-due:\n\n$$\n600\\cdot\\dfrac{1.08}{0.08}=8100\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\n\\mathrm{PV}_{R}=2000\\cdot\\dfrac{1-1.08^{-5}}{0.08}\\approx 7985<8100=\\mathrm{PV}_{Q}\n$$\n\nSo the statement is False.",
+        "**E.** → False\n\nEarlier payment shortens every discount exponent, so each present value rises.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "P NPV $\\approx 2835$. Year-1 PV $\\approx 6481$. Q $=8100>R\\approx 7985$. Earlier payment raises PV."
+    },
+    {
+      "case_id": "MATH 4.MOCK.FIVEPIPE",
+      "id": "MATH 4.MOCK.FIVEPIPE",
+      "title": "Three inlets and two drains — net rate labyrinth",
+      "chapter": 4,
+      "subsection": "4.5",
+      "context": "Three inlet pipes and two drains serve a tank.\n\nPipe A alone fills the empty tank in $4$ hours.\nPipe B alone fills the empty tank in $5$ hours.\nPipe C alone fills the empty tank in $6$ hours.\nDrain D alone empties a full tank in $8$ hours.\nDrain E alone empties a full tank in $12$ hours.\n\nAll five run together from empty. Decide whether each statement is true or false.",
+      "statements": [
+        "A’s fill rate is strictly greater than $\\tfrac{1}{3}$ tank per hour.",
+        "The combined net rate of A, B, C, D and E is exactly $\\tfrac{49}{120}$ tank per hour.",
+        "Starting from empty with all five open, the tank is full in strictly less than $2.5$ hours.",
+        "If only A and B run with both drains open (C closed), the tank still fills, and the time needed exceeds $4$ hours.",
+        "B alone fills more of the tank in $1$ hour than A and C together add net in $1$ hour while only drain D is open."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA’s rate is $\\tfrac{1}{4}<\\tfrac{1}{3}$.\n\nSo the statement is False.",
+        "**B.** → True\n\n$$\n\\dfrac{1}{4}+\\dfrac{1}{5}+\\dfrac{1}{6}-\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{49}{120}\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\n\\dfrac{120}{49}\\approx 2.45<2.5\n$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\n\\dfrac{1}{4}+\\dfrac{1}{5}-\\dfrac{1}{8}-\\dfrac{1}{12}=\\dfrac{29}{120}>0\n$$\n\nTime equals $\\dfrac{120}{29}\\approx 4.14>4$.\n\nSo the statement is True.",
+        "**E.** → False\n\nB contributes $\\tfrac{1}{5}=\\tfrac{24}{120}$. A+C−D contributes $\\tfrac{7}{24}=\\tfrac{35}{120}$. Since $\\tfrac{24}{120}<\\tfrac{35}{120}$, B alone does not outpace that net.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Net all five $=49/120$ (time $\\approx 2.45$). A $=1/4<1/3$. A+B−drains $=29/120$ (time $\\approx 4.14$). B $<$ A+C−D."
+    },
+    {
+      "case_id": "MATH 5.MOCK.BE36",
+      "id": "MATH 5.MOCK.BE36",
+      "title": "Three-product mix — $36z$ break-even system",
+      "chapter": 5,
+      "subsection": "5.1",
+      "context": "A workshop sells three products $X$, $Y$, $Z$ with unit contributions\n\n$$\nc_X=4,\\qquad c_Y=6,\\qquad c_Z=10\n$$\n\n(in EUR per unit). Monthly fixed costs are EUR $15600$. A sales plan forces\n\n$$\nx=2z,\\qquad y=3z\n$$\n\nand requires exact break-even.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "At break-even under the stated mix, the volume of $Z$ is strictly greater than $430$.",
+        "The break-even volume of $Z$ is an integer number of units.",
+        "Under the mix, break-even total unit volume $x+y+z$ equals $2600$.",
+        "If fixed costs rose to EUR $18000$ with the same mix, the required $z$ would exceed $500$.",
+        "Dropping product $Y$ while keeping $x=2z$ and the original EUR $15600$ fixed costs would force a strictly larger break-even $z$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n8z+18z+10z=36z=15600\\Rightarrow z=\\dfrac{1300}{3}\\approx 433.33>430\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$\\dfrac{1300}{3}$ is not an integer.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\nx+y+z=6z=6\\cdot\\dfrac{1300}{3}=2600\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\n36z=18000\\Rightarrow z=500\n$$\n\nexactly, so $z$ does not exceed $500$.\n\nSo the statement is False.",
+        "**E.** → True\n\nWithout $Y$: $18z=15600$, so $z=\\dfrac{2600}{3}\\approx 866.7>\\dfrac{1300}{3}$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$36z=15600$, $z\\approx 433.3$. Total $2600$. At EUR $18000$, $z=500$. Without $Y$, $z\\approx 867$."
+    },
+    {
+      "case_id": "MATH 6.MOCK.HARDINEQ",
+      "id": "MATH 6.MOCK.HARDINEQ",
+      "title": "Absolute, radical and rational inequality traps",
+      "chapter": 6,
+      "subsection": "6.3",
+      "context": "Decide whether each inequality claim is true or false.",
+      "statements": [
+        "The solution set of $|x-1|+|x-7|\\le 8$ is exactly $[1,7]$.",
+        "The solution set of $\\sqrt{2x+5}<x-1$ is exactly $(3,+\\infty)$.",
+        "The solution set of $\\dfrac{x-4}{x+1}\\le 0$ is exactly $[-1,4]$.",
+        "The solution set of $x^{2}-5|x|-6<0$ is exactly $(-6,6)$.",
+        "The solution set of $|2x-3|>|x+4|$ is exactly $(-\\infty,-\\tfrac13)\\cup\\bigl(\\tfrac73,+\\infty\\bigr)$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nOn $[1,7]$ the sum equals $6$. Outside it grows, and the inequality holds on the wider interval $[0,8]$.\n\nSo the statement is False.",
+        "**B.** → False\n\nDomain and $x-1>0$ force $x>1$. Squaring yields $x>2+2\\sqrt{2}\\approx 4.83$, so the solution is $(2+2\\sqrt{2},+\\infty)$, not $(3,+\\infty)$.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe expression is undefined at $x=-1$, and the solution is $(-1,4]$, not $[-1,4]$.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith $u=|x|\\ge 0$, $u^{2}-5u-6<0$ gives $0\\le u<6$, i.e. $(-6,6)$.\n\nSo the statement is True.",
+        "**E.** → False\n\nSquaring yields $3x^{2}-20x-7>0$, i.e. $x<-\\tfrac13$ or $x>7$, not $x>\\tfrac73$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Abs sum on $[0,8]$. Radical $(2+2\\sqrt{2},\\infty)$. Rational excludes $-1$. $|x|<6$. Abs comparison $(-\\infty,-1/3)\\cup(7,\\infty)$."
+    },
+    {
+      "case_id": "MATH 7.MOCK.JUNCTION",
+      "id": "MATH 7.MOCK.JUNCTION",
+      "title": "Quadratic–quadratic junction — continuity and growth",
+      "chapter": 7,
+      "subsection": "7.2",
+      "context": "Define\n\n$$\nf(x)=\n\\begin{cases}\n-x^{2}+6x-2 & \\text{if }x<3,\\\\\nx^{2}-6x+16 & \\text{if }x\\ge 3.\n\\end{cases}\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "$f$ is continuous at $x=3$.",
+        "$f$ is differentiable at $x=3$.",
+        "For every $x\\ge 3$ one has $f(x)\\ge 7$, with equality at $x=3$.",
+        "The global minimum value of $f$ on $\\mathbb{R}$ is $7$.",
+        "On the region $x<3$, the equation $f(x)=0$ has a root in the open interval $(0,3)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nBoth pieces equal $7$ at $x=3$.\n\nSo the statement is True.",
+        "**B.** → True\n\nLeft derivative $-2x+6$ at $3^{-}$ is $0$; right derivative $2x-6$ at $3^{+}$ is $0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor $x\\ge 3$, $f'(x)=2x-6\\ge 0$ and $f(3)=7$, so $f(x)\\ge 7$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAs $x\\to-\\infty$, $-x^{2}+6x-2\\to-\\infty$, so no global minimum $7$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$-x^{2}+6x-2=0$ gives $x=3\\pm\\sqrt{7}$; the root $3-\\sqrt{7}\\approx 0.35$ lies in $(0,3)$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Continuous and differentiable at $3$. $f\\ge 7$ on $[3,\\infty)$. No global min $7$. Root $3-\\sqrt{7}\\in(0,3)$."
+    },
+    {
+      "case_id": "MATH 8.MOCK.POWTRAP",
+      "id": "MATH 8.MOCK.POWTRAP",
+      "title": "Power model — endpoint limits and ratio traps",
+      "chapter": 8,
+      "subsection": "8.1",
+      "context": "Let $A>0$ and $p\\in\\mathbb{R}$. Define $f(x)=A x^{p}$ for $x>0$. Decide whether each statement is true or false.",
+      "statements": [
+        "If $p>0$, then $\\displaystyle\\lim_{x\\to +\\infty}f(x)=+\\infty$.",
+        "If $-1<p<0$, then $\\displaystyle\\lim_{x\\to 0^{+}}f(x)=0$.",
+        "If $p<-1$, then $\\displaystyle\\lim_{x\\to +\\infty}f(x)=0$.",
+        "For every $p\\neq 0$ one has $\\displaystyle\\lim_{x\\to 1}f(x)=A$.",
+        "If $p>0$, then $f(2)-f(1)=2A-A$ forces $f(2)=2f(1)$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFor $p>0$ and $A>0$, $Ax^{p}\\to+\\infty$ as $x\\to+\\infty$.\n\nSo the statement is True.",
+        "**B.** → False\n\nFor $-1<p<0$, $x^{p}\\to+\\infty$ as $x\\to 0^{+}$, not $0$.\n\nSo the statement is False.",
+        "**C.** → True\n\nFor $p<-1<0$, $x^{p}\\to 0$ as $x\\to+\\infty$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$f(1)=A\\cdot 1^{p}=A$ for every real $p$.\n\nSo the statement is True.",
+        "**E.** → False\n\nIn general $f(2)-f(1)=A(2^{p}-1)$, which equals $A$ only when $p=1$. Even then $f(2)=2A=2f(1)$, but the claimed identity does not hold for every $p>0$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$p>0\\Rightarrow\\infty$ at $+\\infty$. For $-1<p<0$, blow-up at $0^{+}$. $p<-1\\Rightarrow 0$ at $+\\infty$. $f(1)=A$. $f(2)=2f(1)$ only for $p=1$."
+    },
+    {
+      "case_id": "MATH 9.MOCK.TWOPAR",
+      "id": "MATH 9.MOCK.TWOPAR",
+      "title": "Two-parameter cubic — always-one-root factorisation",
+      "chapter": 9,
+      "subsection": "9.3",
+      "context": "For real parameters $a$ and $b$, consider\n\n$$\np(x)=(x-1)(x^{2}+ax+b).\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "For every real $a$ and $b$, the number $x=1$ is a root of $p$.",
+        "If $a=2$ and $b=5$, then $p$ has exactly one real root.",
+        "If $a^{2}>4b$, then $p$ has three distinct real roots.",
+        "Whenever $p$ has three real roots counting multiplicity, their product equals $b$.",
+        "For every real $a$ and $b$, the equation $p(x)=0$ has exactly one real solution."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe factor $(x-1)$ forces $p(1)=0$ for every $a,b$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$x^{2}+2x+5$ has discriminant $4-20<0$, so only the real root $x=1$ remains.\n\nSo the statement is True.",
+        "**C.** → False\n\nFor $a=0$, $b=-1$ one has $a^{2}>4b$, but $p(x)=(x-1)^{2}(x+1)$ has only two distinct real roots.\n\nSo the statement is False.",
+        "**D.** → True\n\nFor the monic cubic $x^{3}+\\cdots-b$, the product of all roots (with multiplicity) equals $b$.\n\nSo the statement is True.",
+        "**E.** → False\n\nWhen the quadratic factor has two additional real roots different from $1$, there are three real solutions.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Always root $1$. For $(2,5)$ only one real root. $a^{2}>4b$ need not give three distinct roots. Product of roots $=b$. Not always unique."
+    },
+    {
+      "case_id": "MATH 10.MOCK.COUPLE",
+      "id": "MATH 10.MOCK.COUPLE",
+      "title": "Coupled tracer decay and endowment growth",
+      "chapter": 10,
+      "subsection": "10.2",
+      "context": "A laboratory tracer follows $M(t)=800e^{-0.15t}$ (milligrams, $t$ in years). Separately, an endowment starts at EUR $5000$ and grows continuously at force $5\\%$ per year, so $F(t)=5000e^{0.05t}$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The tracer’s half-life is strictly less than $5$ years.",
+        "After $8$ years the remaining mass is still above $250\\ \\mathrm{mg}$.",
+        "The fund first reaches EUR $8000$ at some time $t>11$ years.",
+        "After $10$ years the fund balance exceeds EUR $8000$.",
+        "The tracer’s continuous decay rate $0.15$ is three times the fund’s continuous growth rate $0.05$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\ne^{-0.15t}=\\tfrac12\\Rightarrow t=\\dfrac{\\ln 2}{0.15}\\approx 4.62<5\n$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\nM(8)=800e^{-1.2}\\approx 241<250\n$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\n5000e^{0.05t}=8000\\Rightarrow t=\\dfrac{\\ln 1.6}{0.05}\\approx 9.40<11\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\nF(10)=5000e^{0.5}\\approx 8244>8000\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$0.15=3\\cdot 0.05$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Half-life $\\approx 4.62$. $M(8)\\approx 241$. Fund hits $8000$ at $t\\approx 9.4$; $F(10)\\approx 8244$. Rates $0.15=3\\cdot 0.05$."
+    },
+    {
+      "case_id": "MATH 11.MOCK.ZCUBE",
+      "id": "MATH 11.MOCK.ZCUBE",
+      "title": "Engagement $t^{3}e^{-2t}\\ln(t+1)$ — product rule and monotonicity traps",
+      "chapter": 11,
+      "subsection": "11.1",
+      "context": "For $t>0$ define the engagement score\n\n$$\nZ(t)=t^{3}e^{-2t}\\ln(t+1).\n$$\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The derivative $Z'$ expands by the three-factor product rule as $u'vw+uv'w+uvw'$ with $u=t^{3}$, $v=e^{-2t}$, $w=\\ln(t+1)$.",
+        "For every $t>0$ one has $Z(t)>0$.",
+        "The factor $e^{-2t}$ is always positive, so it cannot change the sign of $Z$ on $(0,+\\infty)$.",
+        "$Z$ is strictly decreasing on the whole half-line $(0,+\\infty)$.",
+        "$\\displaystyle\\lim_{t\\to +\\infty}Z(t)=0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThat is exactly the product rule for three differentiable factors.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $t>0$, each of $t^{3}$, $e^{-2t}$ and $\\ln(t+1)$ is positive.\n\nSo the statement is True.",
+        "**C.** → True\n\n$e^{-2t}>0$ for all real $t$, so it never flips the sign of $Z$ on $(0,+\\infty)$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $t=1$,\n\n$$\nZ'(1)=e^{-2}\\bigl(\\ln 2+\\tfrac12\\bigr)>0\n$$\n\nso $Z$ increases through $t=1$ and cannot be strictly decreasing on the whole half-line.\n\nSo the statement is False.",
+        "**E.** → True\n\nPolynomial–log growth is dominated by $e^{-2t}\\to 0$, so $Z(t)\\to 0$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Product rule matches A. $Z>0$; $e^{-2t}$ preserves sign; $Z'(1)>0$ kills monotone decrease; $Z\\to 0$ at $+\\infty$."
+    },
+    {
+      "case_id": "MATH 12.MOCK.BEST5",
+      "id": "MATH 12.MOCK.BEST5",
+      "title": "Best-of-five unfair match — length and winner traps",
+      "chapter": 12,
+      "subsection": "12.3",
+      "context": "Ana and Ben play a best-of-five contest (first to three wins takes the match). Each game is independent. Ana wins a single game with probability $p=\\tfrac{3}{5}$; Ben wins with probability $q=\\tfrac{2}{5}$.\n\nThey stop when one player reaches three wins.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The probability Ana sweeps the match $3$–$0$ is $\\dfrac{27}{125}$.",
+        "The probability the match lasts exactly five games is $\\dfrac{216}{625}$.",
+        "The probability Ana wins the match equals $\\dfrac{3}{5}$.",
+        "Conditional on the match lasting five games, the probability Ana wins the match is $\\dfrac{3}{5}$.",
+        "The probability the match ends in exactly three games is $\\dfrac{7}{25}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\np^{3}=\\left(\\dfrac{3}{5}\\right)^{3}=\\dfrac{27}{125}\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\nA fifth game requires a $2$–$2$ split after four games:\n\n$$\n\\binom{4}{2}p^{2}q^{2}=6\\cdot\\dfrac{9}{25}\\cdot\\dfrac{4}{25}=\\dfrac{216}{625}\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\nP(\\text{Ana wins})=p^{3}(1+3q+6q^{2})=\\dfrac{27}{125}\\cdot\\dfrac{79}{25}=\\dfrac{2133}{3125}\\neq\\dfrac{3}{5}\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\nGiven $2$–$2$, the fifth game decides, and Ana wins it with probability $p=\\tfrac{3}{5}$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\np^{3}+q^{3}=\\dfrac{27+8}{125}=\\dfrac{35}{125}=\\dfrac{7}{25}\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "Sweep $27/125$. Five games $216/625$. Ana match win $2133/3125\\neq 3/5$. Given five games, win prob $p$. Three-game match $7/25$."
+    },
+    {
+      "case_id": "MATH 13.MOCK.CALL50",
+      "id": "MATH 13.MOCK.CALL50",
+      "title": "Fifty sales calls — binomial mean, variance, proportion",
+      "chapter": 13,
+      "subsection": "13.1",
+      "context": "A call centre handles $n=50$ independent outbound calls. Each call is a sale with probability $p=0.3$. Let $X\\sim\\mathrm{Bin}(50,0.3)$ and $\\hat{p}=X/50$.\n\nDecide whether each statement is true or false.",
+      "statements": [
+        "The mean of $X$ is $15$ and the variance of $X$ is $10.5$.",
+        "The standard deviation of $X$ is strictly between $3$ and $4$.",
+        "The variance of $X$ equals $15$.",
+        "The variance of the sales rate $\\hat{p}$ equals $0.0042$.",
+        "The standard deviation of $\\hat{p}$ is strictly less than $0.07$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\nE[X]=50\\cdot 0.3=15,\\qquad \\mathrm{Var}(X)=50\\cdot 0.3\\cdot 0.7=10.5\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\sqrt{10.5}\\approx 3.24\\in(3,4)\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\nVariance is $10.5$, not the mean $15$.\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\n\\mathrm{Var}(\\hat{p})=\\dfrac{0.3\\cdot 0.7}{50}=0.0042\n$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\n\\sqrt{0.0042}\\approx 0.0648<0.07\n$$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "solution_overview": "$E=15$, $\\mathrm{Var}=10.5$, $\\mathrm{SD}\\approx 3.24$. Variance is not $15$. $\\mathrm{Var}(\\hat{p})=0.0042$, $\\mathrm{SD}\\approx 0.065$."
+    }
+  ]
+}

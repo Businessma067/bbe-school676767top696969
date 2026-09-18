@@ -23,10 +23,10 @@ export type WisoFlashcardSubject = {
 export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubject[] = [
   {
     id: "economics",
-    title: "Economics",
-    tag: "Terms & concepts",
+    title: "Wirtschaft",
+    tag: "Begriffe & Konzepte",
     description:
-      "BBE economics concepts, formulas, and abbreviations in English — organised by Wirtschaft verstehen topics.",
+      "Wirtschaftsbegriffe, Formeln und Abkürzungen auf Deutsch — sortiert nach Themen aus Wirtschaft verstehen.",
     accent: "#c8763a",
     downloadHref: null,
     downloadLabel: null,

@@ -7,6 +7,10 @@ import {
   type StudyArtSubjectId,
 } from "@/components/study-modes/ModeArt";
 import { countCards, type FlashcardSection } from "@/data/flashcards";
+import {
+  WISO_STUDY_INDEX_COPY,
+  type StudyUiLocale,
+} from "@/lib/wiso-study-ui";
 
 export type StudyToolSubjectCard = {
   id: string;
@@ -20,13 +24,16 @@ export type StudyToolSubjectCard = {
 
 type StudyToolKind = "flashcards" | "matching" | "tutor-exam";
 
-const COPY: Record<
+const COPY_EN: Record<
   StudyToolKind,
   {
     title: string;
     subtitle: string;
     cta: string;
     pairLabel: (n: number, topics: number, id: string) => string;
+    matchingBlurb: (title: string) => string;
+    tutorBlurb: (title: string) => string;
+    comingSoon: string;
   }
 > = {
   flashcards: {
@@ -35,33 +42,73 @@ const COPY: Record<
     cta: "Study flashcards →",
     pairLabel: (n, topics, id) =>
       id === "english" ? `${n} cards · 3 modes` : `${n} cards · ${topics} topics`,
+    matchingBlurb: (title) =>
+      `Match terms and formulas to their definitions from the ${title.toLowerCase()} deck.`,
+    tutorBlurb: (title) =>
+      `Tutor Bot asks random definition and identification questions from the ${title.toLowerCase()} theory deck.`,
+    comingSoon: "Coming soon",
   },
   matching: {
     title: "Matching",
     subtitle: "Connect each concept to the right meaning. Same study bank as flashcards, different drill.",
     cta: "Start matching →",
     pairLabel: (n, topics) => `${n} pairs · ${topics} topics`,
+    matchingBlurb: (title) =>
+      `Match terms and formulas to their definitions from the ${title.toLowerCase()} deck.`,
+    tutorBlurb: (title) =>
+      `Tutor Bot asks random definition and identification questions from the ${title.toLowerCase()} theory deck.`,
+    comingSoon: "Coming soon",
   },
   "tutor-exam": {
     title: "Tutor Exam",
     subtitle: "A study robot quizzes you on theory. Fully random questions each run, per subject.",
     cta: "Start exam →",
     pairLabel: (n) => `${n} concepts · new shuffle every exam`,
+    matchingBlurb: (title) =>
+      `Match terms and formulas to their definitions from the ${title.toLowerCase()} deck.`,
+    tutorBlurb: (title) =>
+      `Tutor Bot asks random definition and identification questions from the ${title.toLowerCase()} theory deck.`,
+    comingSoon: "Coming soon",
   },
 };
+
+function resolveCopy(kind: StudyToolKind, locale: StudyUiLocale) {
+  if (locale !== "de") return COPY_EN[kind];
+  const de = WISO_STUDY_INDEX_COPY[kind];
+  return {
+    title: de.title,
+    subtitle: de.subtitle,
+    cta: de.cta,
+    pairLabel: (n: number, topics: number, _id: string) => {
+      if (kind === "tutor-exam") {
+        return WISO_STUDY_INDEX_COPY["tutor-exam"].pairLabel(n);
+      }
+      return WISO_STUDY_INDEX_COPY[kind].pairLabel(n, topics);
+    },
+    matchingBlurb: de.matchingBlurb,
+    tutorBlurb: de.tutorBlurb,
+    comingSoon: de.comingSoon,
+  };
+}
 
 function SubjectArt({
   kind,
   subject,
   accent,
+  locale,
 }: {
   kind: StudyToolKind;
   subject: StudyArtSubjectId;
   accent: string;
+  locale: StudyUiLocale;
 }) {
-  if (kind === "matching") return <MatchingSubjectArt subject={subject} accent={accent} />;
-  if (kind === "tutor-exam") return <TutorSubjectArt subject={subject} accent={accent} />;
-  return <FlashcardsSubjectArt subject={subject} accent={accent} />;
+  if (kind === "matching") {
+    return <MatchingSubjectArt subject={subject} accent={accent} locale={locale} />;
+  }
+  if (kind === "tutor-exam") {
+    return <TutorSubjectArt subject={subject} accent={accent} locale={locale} />;
+  }
+  return <FlashcardsSubjectArt subject={subject} accent={accent} locale={locale} />;
 }
 
 export function StudyToolsSubjectIndex({
@@ -69,14 +116,22 @@ export function StudyToolsSubjectIndex({
   subjects,
   subjectPath,
   blurbFor,
+  locale = "en",
 }: {
   kind: StudyToolKind;
   subjects: StudyToolSubjectCard[];
   /** e.g. "/flashcards/$subject" or "/wiso/flashcards/$subject" */
-  subjectPath: "/flashcards/$subject" | "/matching/$subject" | "/tutor-exam/$subject" | "/wiso/flashcards/$subject" | "/wiso/matching/$subject" | "/wiso/tutor-exam/$subject";
+  subjectPath:
+    | "/flashcards/$subject"
+    | "/matching/$subject"
+    | "/tutor-exam/$subject"
+    | "/wiso/flashcards/$subject"
+    | "/wiso/matching/$subject"
+    | "/wiso/tutor-exam/$subject";
   blurbFor?: (title: string) => string;
+  locale?: StudyUiLocale;
 }) {
-  const copy = COPY[kind];
+  const copy = resolveCopy(kind, locale);
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -99,12 +154,17 @@ export function StudyToolsSubjectIndex({
                 (kind === "flashcards"
                   ? s.description
                   : kind === "matching"
-                    ? `Match terms and formulas to their definitions from the ${s.title.toLowerCase()} deck.`
-                    : `Tutor Bot asks random definition and identification questions from the ${s.title.toLowerCase()} theory deck.`);
+                    ? copy.matchingBlurb(s.title)
+                    : copy.tutorBlurb(s.title));
 
               const cardInner = (
                 <>
-                  <SubjectArt kind={kind} subject={s.artSubject} accent={s.accent} />
+                  <SubjectArt
+                    kind={kind}
+                    subject={s.artSubject}
+                    accent={s.accent}
+                    locale={locale}
+                  />
                   <div className="flex flex-1 flex-col p-6">
                     <h2 className="font-display text-xl font-semibold text-foreground">
                       <span
@@ -118,7 +178,7 @@ export function StudyToolsSubjectIndex({
                     </p>
                     <p className="mt-3 text-xs font-semibold text-muted-foreground">
                       {s.comingSoon
-                        ? "Coming soon"
+                        ? copy.comingSoon
                         : copy.pairLabel(n, s.sections.length, s.id)}
                     </p>
                     <span
@@ -135,7 +195,7 @@ export function StudyToolsSubjectIndex({
                           : `0 4px 14px -4px ${s.accent}80`,
                       }}
                     >
-                      {s.comingSoon ? "Coming soon" : copy.cta}
+                      {s.comingSoon ? copy.comingSoon : copy.cta}
                     </span>
                   </div>
                 </>

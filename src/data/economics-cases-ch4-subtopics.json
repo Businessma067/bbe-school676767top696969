@@ -233,35 +233,6 @@
   },
   {
     "subsection": "4.1",
-    "case_id": "CASE 4.1.10",
-    "title": "Legal Personality and Liability Distinctions",
-    "context": "Review distinctions between unincorporated sole traders and incorporated companies regarding legal status and creditor protection. Evaluate the following economic assertions:",
-    "statements": [
-      "A sole proprietorship lacks the separate legal personality that allows a corporation to sue and be sued in its own name.",
-      "Profits of a sole proprietorship are reported on the business owner's personal income tax statement.",
-      "Under unlimited liability, creditors may pursue the proprietor's private assets when business debts remain unpaid.",
-      "Easy establishment with no capital requirements makes sole proprietorships accessible for small businesses.",
-      "Continuity problems may arise if the sole proprietor suffers a long-term illness or wishes to retire."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "A corporation can sue and be sued in its own name because it is a separate legal person. A sole proprietorship lacks that personality: lawsuits and contracts name the owner.\n\nThe contrast with corporations makes the missing shell clear. Without separate legal personality, the trader cannot litigate as an independent company entity.\n\nSo the statement is True.",
-      "Business profits are declared on the owner's personal income tax statement rather than on a corporate filing. That personal channel follows from missing separate legal personality.\n\nSo the statement is True.",
-      "Under unlimited liability, unpaid business debts can be enforced against private assets. Creditors may pursue the proprietor's personal property when firm funds run out.\n\nSo the statement is True.",
-      "Accessible setup with no capital requirements is why many small businesses start as sole proprietorships. The low formal bar matches the statement about easy establishment.\n\nSo the statement is True.",
-      "Long-term illness or retirement can interrupt trading when everything hangs on one owner-manager. Continuity problems are a known practical risk of the sole-trader form.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.1",
     "case_id": "CASE 4.1.11",
     "title": "Management Concentration and Risk Bearing",
     "context": "Consider a freelance designer operating as a sole proprietorship who occasionally contracts administrative help. Evaluate the following economic assertions:",
@@ -575,35 +546,6 @@
       "Calling the business a partnership does not incorporate it or grant every partner a liability cap equal to capital contributed. Incorporation and limited liability for all owners are company features.\n\nA general partnership remains unincorporated with unlimited personal exposure for general partners. The automatic limited-liability grant described in the statement does not exist.\n\nSo the statement is False.",
       "Profit shares in the agreement allocate residual income; they do not automatically split each partner's legal liability in the same proportions. Creditors may still pursue one partner for the full debt.\n\nSo the statement is True.",
       "Under unlimited liability a creditor may pursue any one general partner for the entire outstanding partnership debt without first splitting claims evenly.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.2",
-    "case_id": "CASE 4.2.07",
-    "title": "Limited Partnership Structure",
-    "context": "Review the structure of a limited partnership that combines managing partners with at least one non-managing capital provider. Evaluate the following economic assertions:",
-    "statements": [
-      "Terms of the partnership and other operational details may appear alongside profit division in the partnership agreement.",
-      "Partners who intend to be equally involved in management and share financial risk often choose a general partnership structure.",
-      "Rights and responsibilities of each partner are among the matters settled in the partnership agreement.",
-      "Oral promises between founders eliminate the need to settle profit division in a written partnership agreement.",
-      "Under unlimited liability a creditor must collect an equal fraction of the debt from every partner simultaneously."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Operational terms can sit beside profit division in the same partnership agreement. Hours, roles, and procedures are common extras beyond the money split.\n\nSo the statement is True.",
-      "Founders who want equal management involvement and shared financial risk often choose a general partnership structure rather than a limited one.\n\nSo the statement is True.",
-      "Rights and responsibilities of each partner belong in the agreement alongside ownership percentages. Clear allocation of duties reduces later conflict over who must do what.\n\nSettling those matters in writing is part of forming a workable partnership. The statement correctly includes rights and responsibilities among the agreement's contents.\n\nSo the statement is True.",
-      "Oral promises leave profit division hard to prove when trust frays. A written partnership agreement remains the proper place to settle how returns are shared, even among friends.\n\nSo the statement is False.",
-      "Creditors need not collect equal fractions from every partner at once. One general partner can be pursued for the full debt under unlimited liability rules.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -1422,35 +1364,6 @@
   },
   {
     "subsection": "4.3",
-    "case_id": "CASE 4.3.21",
-    "title": "Share Capital Calculation and Ownership",
-    "context": "Analyze the relationship between total share capital, the number of shares issued, and each investor's stake. Evaluate the following economic assertions:",
-    "statements": [
-      "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed fraction of that capital.",
-      "Doubling the market price on the exchange automatically doubles the corporation's registered share capital on the balance sheet.",
-      "Buying shares at initial issue transfers cash to the corporation in exchange for an ownership stake.",
-      "A shareholder may sell shares later to another investor without requiring the corporation to redeem the stock.",
-      "Each share always carries exactly one vote regardless of whether it is preferred or common stock."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed one-hundred-thousandth fraction of that capital pool.\n\nSo the statement is True.",
-      "A doubled exchange price does not automatically double registered share capital on the balance sheet; market quotes and book equity are different quantities.\n\nSo the statement is False.",
-      "At initial issue, cash moves from the investor to the corporation and the buyer receives an ownership stake in return. That primary subscription is how equity funding enters the firm.\n\nLater market trades among investors do not repeat that cash-inflow path. The letter correctly ties the funding transfer to purchase at issue from the company.\n\nSo the statement is True.",
-      "A shareholder may sell shares later to another investor without requiring the corporation to redeem or cancel the stock as if it were a callable loan.\n\nSo the statement is True.",
-      "Preferred and common classes often differ on voting rights. Not every share always carries exactly one vote regardless of the class terms written into the issue.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
     "case_id": "CASE 4.3.22",
     "title": "Misconceptions About Corporate Listing",
     "context": "Review optional stock-exchange listing and its implications for corporate finance and governance. Evaluate the following economic assertions:",
@@ -1741,35 +1654,6 @@
   },
   {
     "subsection": "4.3",
-    "case_id": "CASE 4.3.32",
-    "title": "Engineering Firm Share Price Rally",
-    "context": "Consider an engineering firm whose shares rallied after a contract win, though the firm issued no new equity during the rally. Evaluate the following economic assertions:",
-    "statements": [
-      "The contract win obliged the firm to register the rally amount as new share capital on its books.",
-      "Expectations of higher future profits from the contract can increase demand and push up share prices.",
-      "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices.",
-      "The corporation receives the full trading profit whenever existing shareholders sell to new buyers on the exchange.",
-      "Rising prices after issue force the board to pay immediate dividends equal to the price increase."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "The contract win did not oblige the engineering firm to register the rally amount as new share capital on its books; secondary price moves are not automatic equity subscriptions.\n\nSo the statement is False.",
-      "Expectations of higher future profits from the contract can increase demand for the stock and push exchange prices up as investors reprice the earnings outlook.\n\nSo the statement is True.",
-      "Shareholders holding stock during the rally may benefit from capital growth if they later sell at higher prices than they paid for the shares.\n\nNothing in the rally forces an immediate cash distribution from the board. The investor benefit arrives if and when the holder sells into the higher quote or marks a higher valuation.\n\nSo the statement is True.",
-      "The corporation does not receive the full trading profit whenever existing shareholders sell to new buyers on the exchange; those gains stay with the selling investors.\n\nSo the statement is False.",
-      "Rising prices after issue do not force the board to pay immediate dividends equal to the full price increase recorded on the secondary market.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
     "case_id": "CASE 4.3.33",
     "title": "Exchange Regulation and Securities Trading",
     "context": "Analyze the institutional setting in which shares and bonds change hands after a corporation lists. Evaluate the following economic assertions:",
@@ -1967,35 +1851,6 @@
       "The Chief Operating Officer may manage operations as a member of the board of directors, sitting with other executives who hold functional portfolios.\n\nFunctional chiefs on the board are normal corporate architecture. The COO seat does not require collapsing ownership into that single office or into one dominant share block.\n\nSo the statement is True.",
       "Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves once directors and officers carry that operational mandate.\n\nSo the statement is True.",
       "Separation of ownership and management is a defining feature of corporate organisation, allowing capital providers to stay distinct from day-to-day controllers.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
-    "case_id": "CASE 4.3.40",
-    "title": "Startup Corporation IPO Proceeds",
-    "context": "Consider a startup corporation that raised funds through an initial public offering and later saw its share price double on the exchange. Evaluate the following economic assertions:",
-    "statements": [
-      "Proceeds from shares sold at the IPO entered the corporation as share capital when investors bought at issue.",
-      "Doubling of the secondary-market price after the IPO doubled the cash share capital available inside the firm.",
-      "The startup must surrender half of trading gains on the exchange to regulators as additional equity.",
-      "Existing shareholders who hold stock after the IPO owe the corporation the difference between issue price and market price.",
-      "A higher post-IPO market price creates an automatic right for the corporation to issue unlimited new debt free of interest."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Proceeds from shares sold at the IPO entered the startup corporation as share capital when investors bought stock directly from the issuer at the flotation.\n\nSo the statement is True.",
-      "Doubling of the secondary-market price after the IPO does not double the cash share capital available inside the firm; later quotes reshuffle investor wealth, not treasury cash.\n\nSo the statement is False.",
-      "The startup must not surrender half of trading gains on the exchange to regulators as additional equity. Secondary gains belong to investors who sell, not to a mandatory company levy.\n\nNo such automatic transfer turns market appreciation into forced corporate capital. The letter invents a payment the corporate form does not require after flotation.\n\nSo the statement is False.",
-      "Existing shareholders who hold stock after the IPO do not owe the corporation the difference between issue price and the new market price as a catch-up subscription.\n\nSo the statement is False.",
-      "A higher post-IPO market price creates no automatic right for the corporation to issue unlimited new debt free of interest merely because the equity quote rose.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4028,35 +3883,6 @@
       "Further funds for a highly geared borrower may come only at a higher interest rate and/or if collateral can be offered. Those conditions are how lenders protect themselves when loan capital is already high.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.6",
-    "case_id": "CASE 4.6.06",
-    "title": "High Gearing and Credit Access",
-    "context": "Analyze why a business with a high proportion of loan capital may prefer internal funds or investors over additional debt. Evaluate the following economic assertions:",
-    "statements": [
-      "Capital expenditure and revenue expenditure both require identical long-term mortgage funding regardless of use.",
-      "Such a business should rather try to use internal sources of finance and/or find investors willing to provide funds.",
-      "Because loans must be repaid, a high proportion of loan capital can increase the risk of insolvency.",
-      "Costs of finance include interest payments on loans and credit as well as administration costs for issuing shares or bonds.",
-      "Financial funds used for capital expenditures on long-lived assets require long-term sources of finance."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Capital expenditure and revenue expenditure do not both require identical long-term mortgage funding. Short-cycle materials can use short-term credit; long-lived assets need longer sources.\n\nSo the statement is False.",
-      "A firm already loaded with loans should rather try internal sources and/or investors willing to provide funds. That path avoids stacking another repayment schedule onto an already geared balance sheet.\n\nSo the statement is True.",
-      "Loans must be repaid with interest regardless of how sales turn out in a weak month. A high proportion of loan capital therefore increases insolvency risk when cash inflows dip. Equity investors share residual outcomes differently from creditors with fixed claims. Preferring internal funds or new investors in that setting is a direct response to repayment burden.\n\nSo the statement is True.",
-      "Costs of finance include interest on loans and credit as well as administration costs for issuing shares or bonds. Both interest and issuance expenses belong in the comparison among available sources.\n\nSo the statement is True.",
-      "Financial funds for capital expenditures on long-lived assets require long-term sources of finance. Repayment then lines up with years of service from plant, vehicles, or buildings.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
     "tier": "full"
   },
   {

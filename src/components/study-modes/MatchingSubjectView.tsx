@@ -17,6 +17,10 @@ import {
 } from "@/data/flashcards";
 import { Check, RotateCcw, Shuffle, X } from "lucide-react";
 import type { FlashcardSubjectViewModel } from "@/components/study-modes/FlashcardSubjectView";
+import {
+  WISO_MATCHING_UI,
+  type StudyUiLocale,
+} from "@/lib/wiso-study-ui";
 
 type Pair = Flashcard & { id: string; sectionTitle: string };
 type Side = "left" | "right";
@@ -84,12 +88,15 @@ export function MatchingSubjectView({
   subjectId,
   subject,
   subjectsHref,
+  locale = "en",
 }: {
   subjectId: string;
   subject: FlashcardSubjectViewModel;
   subjectsHref: string;
+  locale?: StudyUiLocale;
 }) {
   const total = countCards(subject.sections);
+  const ui = locale === "de" ? WISO_MATCHING_UI : null;
 
   const [sectionId, setSectionId] = useState<string | "all">(() =>
     subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
@@ -489,7 +496,7 @@ export function MatchingSubjectView({
             to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
-            ← Subjects
+            {ui?.subjectsBack ?? "← Subjects"}
           </Link>
         }
       />
@@ -499,12 +506,12 @@ export function MatchingSubjectView({
           <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">
-                Connect concept → meaning
+                {ui?.title ?? "Connect concept → meaning"}
               </h1>
               <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-                Tap or drag from a concept to its meaning — lines connect them
-                like on paper. Correct pairs lock in place. {total} cards in
-                this subject deck.
+                {ui
+                  ? `${ui.titleHint} ${ui.cardsInDeck(total)}`
+                  : `Tap or drag from a concept to its meaning — lines connect them like on paper. Correct pairs lock in place. ${total} cards in this subject deck.`}
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
@@ -514,7 +521,7 @@ export function MatchingSubjectView({
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <Shuffle className="h-3.5 w-3.5" />
-                Reshuffle
+                {ui?.shuffle ?? "Reshuffle"}
               </button>
               <button
                 type="button"
@@ -523,7 +530,7 @@ export function MatchingSubjectView({
                 style={{ backgroundColor: subject.accent }}
               >
                 <RotateCcw className="h-3.5 w-3.5" />
-                New round
+                {ui?.newRound ?? "New round"}
               </button>
             </div>
           </div>
@@ -531,7 +538,7 @@ export function MatchingSubjectView({
           <div className="mb-5 flex flex-wrap gap-2">
             <SectionChip
               active={sectionId === "all"}
-              label="All topics"
+              label={ui?.allTopics ?? "All topics"}
               accent={subject.accent}
               onClick={() => setSectionId("all")}
             />
@@ -548,18 +555,22 @@ export function MatchingSubjectView({
 
           <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
             <span className="rounded-full border border-border bg-card px-2.5 py-1 font-semibold text-foreground">
-              Round {round}
+              {ui ? ui.round(round) : `Round ${round}`}
             </span>
             <span>
-              Matched {matched.size}/{pairs.length}
+              {ui
+                ? ui.matched(matched.size, pairs.length)
+                : `Matched ${matched.size}/${pairs.length}`}
             </span>
-            <span>Attempts {attempts}</span>
-            {accuracy != null && <span>Accuracy {accuracy}%</span>}
+            <span>{ui ? ui.attempts(attempts) : `Attempts ${attempts}`}</span>
+            {accuracy != null && (
+              <span>{ui ? ui.accuracy(accuracy) : `Accuracy ${accuracy}%`}</span>
+            )}
           </div>
 
           {pairs.length === 0 ? (
             <div className="rounded-2xl border border-border bg-card p-10 text-center text-sm text-muted-foreground">
-              No cards in this topic yet.
+              {ui?.emptyTopic ?? "No cards in this topic yet."}
             </div>
           ) : (
             <div ref={boardRef} className="relative">
@@ -618,7 +629,7 @@ export function MatchingSubjectView({
 
               <div className="relative z-0 grid gap-3 md:grid-cols-2 md:gap-16">
                 <Column
-                  title="Concepts"
+                  title={ui?.concepts ?? "Concepts"}
                   accent={subject.accent}
                   ids={leftOrder}
                   byId={byId}
@@ -634,7 +645,7 @@ export function MatchingSubjectView({
                   onPointerCancel={onCardPointerCancel}
                 />
                 <Column
-                  title="Meanings"
+                  title={ui?.meanings ?? "Meanings"}
                   accent={subject.accent}
                   ids={rightOrder}
                   byId={byId}
@@ -656,13 +667,12 @@ export function MatchingSubjectView({
           {allDone && (
             <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50/80 p-5 text-center dark:border-emerald-900 dark:bg-emerald-950/40">
               <p className="font-display text-lg font-bold text-foreground">
-                Round complete
+                {ui?.roundComplete ?? "Round complete"}
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                {correctClicks} correct match
-                {correctClicks === 1 ? "" : "es"} in {attempts} attempt
-                {attempts === 1 ? "" : "s"}
-                {accuracy != null ? ` · ${accuracy}% accuracy` : ""}.
+                {ui
+                  ? ui.roundSummary(correctClicks, attempts, accuracy)
+                  : `${correctClicks} correct match${correctClicks === 1 ? "" : "es"} in ${attempts} attempt${attempts === 1 ? "" : "s"}${accuracy != null ? ` · ${accuracy}% accuracy` : ""}.`}
               </p>
               <button
                 type="button"
@@ -670,7 +680,7 @@ export function MatchingSubjectView({
                 className="mt-4 inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 text-sm font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >
-                Play another round →
+                {ui?.nextRound ?? "Play another round →"}
               </button>
             </div>
           )}

@@ -51,25 +51,36 @@ const FEATURE_LABEL: Record<CourseLockFeature, string> = {
   course: "Course content",
 };
 
+const FEATURE_LABEL_DE: Record<CourseLockFeature, string> = {
+  "mock-exams": "Probeprüfungen",
+  flashcards: "Karteikarten",
+  matching: "Zuordnung",
+  "tutor-exam": "Tutor-Prüfung",
+  "study-tools": "Lernwerkzeuge",
+  "mock-builder": "Mock-Builder",
+  practice: "Übung",
+  course: "Kursinhalt",
+};
+
 export function courseLockCopy(
   feature: CourseLockFeature,
   minTier: AccessTier,
   productSlug?: string,
 ) {
-  const label = FEATURE_LABEL[feature];
-  const verb = feature === "course" || feature === "practice" ? "is" : "are";
   const isWiso = productSlug === "wiso-full-course";
+  const label = isWiso ? FEATURE_LABEL_DE[feature] : FEATURE_LABEL[feature];
+  const verb = feature === "course" || feature === "practice" ? "is" : "are";
   if (isWiso || minTier === "full") {
     return {
       message: isWiso
-        ? `${label} ${verb} part of the Full WiSo Course`
-        : `${label} ${verb} part of the Full Course`,
-      ctaLabel: isWiso ? "Unlock Full WiSo Course" : "Unlock Full Course",
+        ? `${label} sind Teil des Full WiSo Course`
+        : `${FEATURE_LABEL[feature]} ${verb} part of the Full Course`,
+      ctaLabel: isWiso ? "Full WiSo Course freischalten" : "Unlock Full Course",
       ctaTo: isWiso ? "/wiso/products/full-course" : "/products/full-course",
     };
   }
   return {
-    message: `${label} ${verb} part of the Full Course`,
+    message: `${FEATURE_LABEL[feature]} ${verb} part of the Full Course`,
     ctaLabel: "See Pricing",
     ctaTo: "/products",
   };
@@ -309,7 +320,17 @@ function SubjectsShell({
   compact?: boolean;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const subjects = isWisoPath(pathname) ? WISO_FLASHCARD_SUBJECTS : FLASHCARD_SUBJECTS;
+  const isWiso = isWisoPath(pathname);
+  const subjects = isWiso ? WISO_FLASHCARD_SUBJECTS : FLASHCARD_SUBJECTS;
+  const modeDe =
+    mode === "Flashcards"
+      ? "Karteikarten"
+      : mode === "Matching"
+        ? "Zuordnung"
+        : mode === "Tutor Exam"
+          ? "Tutor-Prüfung"
+          : mode;
+  const displayMode = isWiso ? modeDe : mode;
   return (
     <div className={cn(compact ? "p-5 sm:p-6" : "px-4 py-12 sm:px-6 sm:py-16 lg:px-8")}>
       <div className={cn(compact ? "mb-5" : "mx-auto mb-12 max-w-6xl text-center")}>
@@ -319,10 +340,10 @@ function SubjectsShell({
             compact ? "text-2xl" : "text-4xl sm:text-5xl",
           )}
         >
-          {mode}
+          {displayMode}
         </h1>
         <p className={cn("text-muted-foreground", compact ? "mt-1 text-sm" : "mt-4 text-lg")}>
-          Choose a subject to begin.
+          {isWiso ? "Wähle ein Fach, um zu beginnen." : "Choose a subject to begin."}
         </p>
       </div>
       <div className={cn("grid gap-6 md:grid-cols-3", !compact && "mx-auto max-w-6xl")}>
@@ -342,13 +363,17 @@ function SubjectsShell({
               <h2 className="font-display text-xl font-semibold">{s.title}</h2>
               <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.description}</p>
               <p className="mt-3 text-xs font-semibold text-muted-foreground">
-                {countCards(s.sections)} cards
+                {isWiso
+                  ? `${countCards(s.sections)} Karten`
+                  : `${countCards(s.sections)} cards`}
               </p>
               <span
                 className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white"
                 style={{ backgroundColor: s.accent }}
               >
-                Open {mode.toLowerCase()} →
+                {isWiso
+                  ? `${displayMode} öffnen →`
+                  : `Open ${mode.toLowerCase()} →`}
               </span>
             </div>
           </div>
@@ -359,11 +384,43 @@ function SubjectsShell({
 }
 
 function StudyToolsShell({ compact = false }: { compact?: boolean }) {
-  const tools = [
-    { title: "Flashcards", blurb: "Drill terms and formulas with flip cards.", accent: "#c8763a" },
-    { title: "Matching", blurb: "Connect each concept to the right definition.", accent: "#10b981" },
-    { title: "Tutor Exam", blurb: "A random theoretical quiz that changes every time.", accent: "#0ea5e9" },
-  ];
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isWiso = isWisoPath(pathname);
+  const tools = isWiso
+    ? [
+        {
+          title: "Karteikarten",
+          blurb: "Übe Begriffe und Formeln mit Karteikarten.",
+          accent: "#c8763a",
+        },
+        {
+          title: "Zuordnung",
+          blurb: "Verbinde jeden Begriff mit der richtigen Definition.",
+          accent: "#10b981",
+        },
+        {
+          title: "Tutor-Prüfung",
+          blurb: "Eine zufällige Theorieprüfung, die sich jedes Mal ändert.",
+          accent: "#0ea5e9",
+        },
+      ]
+    : [
+        {
+          title: "Flashcards",
+          blurb: "Drill terms and formulas with flip cards.",
+          accent: "#c8763a",
+        },
+        {
+          title: "Matching",
+          blurb: "Connect each concept to the right definition.",
+          accent: "#10b981",
+        },
+        {
+          title: "Tutor Exam",
+          blurb: "A random theoretical quiz that changes every time.",
+          accent: "#0ea5e9",
+        },
+      ];
   return (
     <div className={cn(compact ? "p-5 sm:p-6" : "mx-auto max-w-6xl px-6 py-14")}>
       <h1
@@ -372,10 +429,12 @@ function StudyToolsShell({ compact = false }: { compact?: boolean }) {
           compact ? "text-2xl" : "text-4xl",
         )}
       >
-        Study tools
+        {isWiso ? "Lernwerkzeuge" : "Study tools"}
       </h1>
       <p className={cn("text-muted-foreground", compact ? "mt-1 text-sm" : "mt-3")}>
-        Practice tools to reinforce Economics, Math, and English.
+        {isWiso
+          ? "Lernwerkzeuge für Wirtschaft, Mathematik und Deutsch."
+          : "Practice tools to reinforce Economics, Math, and English."}
       </p>
       <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (
@@ -387,7 +446,9 @@ function StudyToolsShell({ compact = false }: { compact?: boolean }) {
             <div className="p-5">
               <h3 className="font-display text-lg font-bold">{tool.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{tool.blurb}</p>
-              <p className="mt-4 text-xs font-semibold text-caramel-deep">Open →</p>
+              <p className="mt-4 text-xs font-semibold text-caramel-deep">
+                {isWiso ? "Öffnen →" : "Open →"}
+              </p>
             </div>
           </div>
         ))}
