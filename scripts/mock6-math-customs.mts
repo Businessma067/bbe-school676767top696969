@@ -36,7 +36,7 @@ Decide whether each claim is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Write down the two sets explicitly before counting. The even members of $U=\{1,\ldots,12\}$ are
+Write down the two sets explicitly before counting. The even members of $U=\{1,\\ldots,12\}$ are
 
 $$
 A=\{2,4,6,8,10,12\},
@@ -51,25 +51,25 @@ $$
 so $|B|=4$. Their overlap is only the multiples of $6$ inside $U$:
 
 $$
-A\cap B=\{6,12\},\qquad |A\cap B|=2.
+A\\cap B=\{6,12\},\\qquad |A\\cap B|=2.
 $$
 
 Inclusion–exclusion then removes the double-count:
 
 $$
-|A\cup B|=|A|+|B|-|A\cap B|=6+4-2=8.
+|A\\cup B|=|A|+|B|-|A\\cap B|=6+4-2=8.
 $$
 
-You can also list the union by hand — $\{2,3,4,6,8,9,10,12\}$ — and count eight elements the slow way; both routes agree. The claim that $A\cup B$ contains exactly eight elements of $U$ is therefore correct.
+You can also list the union by hand — $\{2,3,4,6,8,9,10,12\}$ — and count eight elements the slow way; both routes agree. The claim that $A\\cup B$ contains exactly eight elements of $U$ is therefore correct.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Every multiple of $4$ is even, so $C\subseteq A$. The even number $2$ lies in $A$ but not in $C$, so the converse fails exactly as the claim says.
+Every multiple of $4$ is even, so $C\\subseteq A$. The even number $2$ lies in $A$ but not in $C$, so the converse fails exactly as the claim says.
 
 $$
-C=\{4,8,12\}\subseteq A,\qquad 2\in A\setminus C
+C=\{4,8,12\}\\subseteq A,\\qquad 2\\in A\\setminus C
 $$
 
 So the statement is True.`,
@@ -79,16 +79,16 @@ So the statement is True.`,
 Common elements of $A$ and $B$ are the multiples of $6$ in $U$:
 
 $$
-A\cap B=\{6,12\}.
+A\\cap B=\{6,12\}.
 $$
 
 Ask whether each of them also sits in $C=\{4,8,12\}$. The element $12$ does, but $6$ does not:
 
 $$
-6\in A\cap B\quad\text{and}\quad 6\notin C.
+6\\in A\\cap B\\quad\\text{and}\\quad 6\\notin C.
 $$
 
-One counterexample is enough to kill the inclusion $A\cap B\subseteq C$, so the claim is false.
+One counterexample is enough to kill the inclusion $A\\cap B\\subseteq C$, so the claim is false.
 
 So the statement is False.`,
 
@@ -97,7 +97,7 @@ So the statement is False.`,
 An existential claim needs one witness. Take $n=4$: even (in $A$), a multiple of $4$ (in $C$), and not a multiple of $3$ (outside $B$).
 
 $$
-4\in A\cap C,\qquad 4\notin B
+4\\in A\\cap C,\\qquad 4\\notin B
 $$
 
 That single example proves existence ($n=8$ works the same way).
@@ -106,16 +106,16 @@ So the statement is True.`,
 
     `**E.** → False
 
-Translate the predicates carefully. $P(n)$ means $n\in A$ and $Q(n)$ means $n\in B$, so the hypothesis $P(n)\wedge Q(n)$ is exactly membership in the intersection $A\cap B$. The claim asserts the universal implication
+Translate the predicates carefully. $P(n)$ means $n\\in A$ and $Q(n)$ means $n\\in B$, so the hypothesis $P(n)\\wedge Q(n)$ is exactly membership in the intersection $A\\cap B$. The claim asserts the universal implication
 
 $$
-\forall n\in U:\quad \bigl(P(n)\wedge Q(n)\bigr)\Rightarrow n\in C,
+\\forall n\\in U:\\quad \\bigl(P(n)\\wedge Q(n)\\bigr)\\Rightarrow n\\in C,
 $$
 
-which is the same as $A\cap B\subseteq C$. We already know that inclusion fails: the intersection is $\{6,12\}$, and $6$ is not a multiple of $4$. Explicitly,
+which is the same as $A\\cap B\\subseteq C$. We already know that inclusion fails: the intersection is $\{6,12\}$, and $6$ is not a multiple of $4$. Explicitly,
 
 $$
-P(6)\text{ holds},\quad Q(6)\text{ holds},\quad\text{yet}\quad 6\notin C=\{4,8,12\}.
+P(6)\\text{ holds},\\quad Q(6)\\text{ holds},\\quad\\text{yet}\\quad 6\\notin C=\{4,8,12\}.
 $$
 
 A single witness where the hypothesis is true and the conclusion is false falsifies a universal implication, so the statement does not hold.
@@ -161,10 +161,10 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → False
 
-Factor $x^{3}-8=(x-2)(x^{2}+2x+4)$. After cancelling, $E$ matches $F$ only for $x\neq 2$. At $x=2$, $E$ is undefined while $F(2)=12$ is fine, so they are not identical on all of $\mathbb{R}$.
+Factor $x^{3}-8=(x-2)(x^{2}+2x+4)$. After cancelling, $E$ matches $F$ only for $x\\neq 2$. At $x=2$, $E$ is undefined while $F(2)=12$ is fine, so they are not identical on all of $\\mathbb{R}$.
 
 $$
-E(x)=F(x)\quad\text{only when }x\neq 2
+E(x)=F(x)\\quad\\text{only when }x\\neq 2
 $$
 
 So the statement is False.`,
@@ -177,16 +177,16 @@ $$
 x^{3}-8=(x-2)(x^{2}+2x+4).
 $$
 
-For every $x\neq 2$ the factor $x-2$ cancels against the denominator, and what remains is exactly the quadratic $F$:
+For every $x\\neq 2$ the factor $x-2$ cancels against the denominator, and what remains is exactly the quadratic $F$:
 
 $$
-E(x)=\dfrac{(x-2)(x^{2}+2x+4)}{x-2}=x^{2}+2x+4=F(x)\qquad(x\neq 2).
+E(x)=\\dfrac{(x-2)(x^{2}+2x+4)}{x-2}=x^{2}+2x+4=F(x)\\qquad(x\\neq 2).
 $$
 
 That settles the first half of the claim. For the limit, the same cancellation shows that $E$ has a removable hole at $x=2$, and the continuous extension is the polynomial $F$ itself:
 
 $$
-\lim_{x\to 2}E(x)=F(2)=2^{2}+2\cdot 2+4=4+4+4=12.
+\\lim_{x\\to 2}E(x)=F(2)=2^{2}+2\\cdot 2+4=4+4+4=12.
 $$
 
 Both pieces — equality off $x=2$, and matching limit equal to $F(2)$ — hold, so the full statement is true.
@@ -195,7 +195,7 @@ So the statement is True.`,
 
     `**C.** → True
 
-Wherever $x\neq 2$, letter B already gives $E(x)=F(x)=x^{2}+2x+4$. Subtract $12$ from that polynomial:
+Wherever $x\\neq 2$, letter B already gives $E(x)=F(x)=x^{2}+2x+4$. Subtract $12$ from that polynomial:
 
 $$
 E(x)-12=x^{2}+2x+4-12=x^{2}+2x-8.
@@ -204,7 +204,7 @@ $$
 Factor the quadratic as $(x-2)(x+4)$, then cancel the remaining $x-2$ in the definition of $H$:
 
 $$
-H(x)=\dfrac{(x-2)(x+4)}{x-2}=x+4\qquad(x\neq 2).
+H(x)=\\dfrac{(x-2)(x+4)}{x-2}=x+4\\qquad(x\\neq 2).
 $$
 
 Thus $H(x)=x+4$ for every $x$ at which the original formula for $H$ is defined.
@@ -216,7 +216,7 @@ So the statement is True.`,
 The written formula still divides by $x-2$ (and refers to $E$, which is itself undefined at $2$). Algebraic cancellation is not the same as the original expression being defined there, so it does not equal $6$.
 
 $$
-H(x)=\dfrac{E(x)-12}{x-2}\quad\text{undefined at }x=2
+H(x)=\\dfrac{E(x)-12}{x-2}\\quad\\text{undefined at }x=2
 $$
 
 So the statement is False.`,
@@ -228,16 +228,16 @@ Neither formula has a domain problem at $x=3$, so evaluate them separately and c
 For $E$, plug into the original rational expression:
 
 $$
-E(3)=\dfrac{3^{3}-8}{3-2}=\dfrac{27-8}{1}=\dfrac{19}{1}=19.
+E(3)=\\dfrac{3^{3}-8}{3-2}=\\dfrac{27-8}{1}=\\dfrac{19}{1}=19.
 $$
 
 For $F$, expand the quadratic at the same point:
 
 $$
-F(3)=3^{2}+2\cdot 3+4=9+6+4=19.
+F(3)=3^{2}+2\\cdot 3+4=9+6+4=19.
 $$
 
-The two values match, and both equal $19$, which is exactly what the claim asserts. (You could also invoke letter B and note that $3\neq 2$ forces $E(3)=F(3)$ automatically, then only compute one of the two numbers — but a direct check of both sides is enough on its own.)
+The two values match, and both equal $19$, which is exactly what the claim asserts. (You could also invoke letter B and note that $3\\neq 2$ forces $E(3)=F(3)$ automatically, then only compute one of the two numbers — but a direct check of both sides is enough on its own.)
 
 So the statement is True.`,
   ];
@@ -279,29 +279,29 @@ Decide whether each statement is true or false.`;
 A six-payment level annuity that amortises principal $87500$ at effective annual rate $7.5\%$ has payment
 
 $$
-A=87500\cdot\dfrac{0.075}{1-1.075^{-6}}.
+A=87500\\cdot\\dfrac{0.075}{1-1.075^{-6}}.
 $$
 
 Compute the discount factor carefully. First raise $1.075$ to the sixth power:
 
 $$
-1.075^{2}=1.155625,\qquad 1.075^{4}=(1.155625)^{2}\approx 1.3355,
+1.075^{2}=1.155625,\\qquad 1.075^{4}=(1.155625)^{2}\\approx 1.3355,
 $$
 
 $$
-1.075^{6}=1.075^{4}\cdot 1.075^{2}\approx 1.3355\cdot 1.155625\approx 1.5433,
+1.075^{6}=1.075^{4}\\cdot 1.075^{2}\\approx 1.3355\\cdot 1.155625\\approx 1.5433,
 $$
 
-so $1.075^{-6}\approx 1/1.5433\approx 0.6480$. The annuity denominator is then
+so $1.075^{-6}\\approx 1/1.5433\\approx 0.6480$. The annuity denominator is then
 
 $$
-1-1.075^{-6}\approx 1-0.6480=0.3520,
+1-1.075^{-6}\\approx 1-0.6480=0.3520,
 $$
 
 and
 
 $$
-A\approx 87500\cdot\dfrac{0.075}{0.3520}\approx 87500\cdot 0.21307\approx 18641.
+A\\approx 87500\\cdot\\dfrac{0.075}{0.3520}\\approx 87500\\cdot 0.21307\\approx 18641.
 $$
 
 The payment $18641$ lies strictly between $18500$ and $18800$, so the claim holds.
@@ -310,40 +310,40 @@ So the statement is True.`,
 
     `**B.** → True
 
-Year-$1$ interest is $0.075\cdot 87500=6562.5$. After the first payment the balance is about $75421$, so year-$2$ interest is about $5657$. The gap is about $906>900$.
+Year-$1$ interest is $0.075\\cdot 87500=6562.5$. After the first payment the balance is about $75421$, so year-$2$ interest is about $5657$. The gap is about $906>900$.
 
 $$
-I_{1}-I_{2}\approx 905.9>900
+I_{1}-I_{2}\\approx 905.9>900
 $$
 
 So the statement is True.`,
 
     `**C.** → True
 
-Roll the outstanding principal forward payment by payment, starting from $B_{0}=87500$ and using the level payment $A\approx 18641$ from letter A.
+Roll the outstanding principal forward payment by payment, starting from $B_{0}=87500$ and using the level payment $A\\approx 18641$ from letter A.
 
 After year $1$:
 
 $$
-B_{1}=87500\cdot 1.075-A\approx 94062.5-18641\approx 75421.
+B_{1}=87500\\cdot 1.075-A\\approx 94062.5-18641\\approx 75421.
 $$
 
 After year $2$:
 
 $$
-B_{2}=B_{1}\cdot 1.075-A\approx 81078-18641\approx 62436.
+B_{2}=B_{1}\\cdot 1.075-A\\approx 81078-18641\\approx 62436.
 $$
 
 After year $3$:
 
 $$
-B_{3}=B_{2}\cdot 1.075-A\approx 67119-18641\approx 48478.
+B_{3}=B_{2}\\cdot 1.075-A\\approx 67119-18641\\approx 48478.
 $$
 
 Half of the original principal is
 
 $$
-\tfrac12\cdot 87500=43750.
+\\tfrac12\\cdot 87500=43750.
 $$
 
 Since $48478>43750$, more than half of the original principal is still outstanding immediately after the third payment. The claim is therefore true.
@@ -355,13 +355,13 @@ So the statement is True.`,
 Interest in year $5$ is charged on the balance just after the fourth payment. Continuing the amortization from letter C,
 
 $$
-B_{4}=B_{3}\cdot 1.075-A\approx 52114-18641\approx 33472,
+B_{4}=B_{3}\\cdot 1.075-A\\approx 52114-18641\\approx 33472,
 $$
 
 and therefore
 
 $$
-I_{5}=0.075\cdot B_{4}\approx 0.075\cdot 33472\approx 2510.
+I_{5}=0.075\\cdot B_{4}\\approx 0.075\\cdot 33472\\approx 2510.
 $$
 
 The threshold in the claim is $2600$, and $2510<2600$, so year-$5$ interest is strictly less than EUR $2600$.
@@ -370,10 +370,10 @@ So the statement is True.`,
 
     `**E.** → False
 
-Total interest is six payments minus principal: $6A-87500\approx 111846-87500=24346>24000$.
+Total interest is six payments minus principal: $6A-87500\\approx 111846-87500=24346>24000$.
 
 $$
-6A-87500\approx 24349>24000
+6A-87500\\approx 24349>24000
 $$
 
 So the statement is False.`,
@@ -420,10 +420,10 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Plug $(4,3)$ into each equation separately. The first line gives $4+3=7$, and the second gives $2\cdot 4-3=8-3=5$:
+Plug $(4,3)$ into each equation separately. The first line gives $4+3=7$, and the second gives $2\\cdot 4-3=8-3=5$:
 
 $$
-4+3=7,\qquad 8-3=5
+4+3=7,\\qquad 8-3=5
 $$
 
 Both hold at once, so the pair really is a joint solution.
@@ -432,7 +432,7 @@ So the statement is True.`,
 
     `**B.** → True
 
-Treat the pair as a genuine $2\times 2$ linear system and solve it from scratch, without assuming the candidate from letter A.
+Treat the pair as a genuine $2\\times 2$ linear system and solve it from scratch, without assuming the candidate from letter A.
 
 Add the two equations so the $y$-terms cancel:
 
@@ -443,19 +443,19 @@ $$
 which simplifies at once to
 
 $$
-3x=12\Rightarrow x=4.
+3x=12\\Rightarrow x=4.
 $$
 
 Substitute $x=4$ back into the first equation:
 
 $$
-4+y=7\Rightarrow y=3.
+4+y=7\\Rightarrow y=3.
 $$
 
-(As a check, the second equation gives $2\cdot 4-y=5$, so $8-y=5$ and again $y=3$.) The coefficient matrix has rows $(1,1)$ and $(2,-1)$; their determinant is
+(As a check, the second equation gives $2\\cdot 4-y=5$, so $8-y=5$ and again $y=3$.) The coefficient matrix has rows $(1,1)$ and $(2,-1)$; their determinant is
 
 $$
-1\cdot(-1)-1\cdot 2=-3\neq 0,
+1\\cdot(-1)-1\\cdot 2=-3\\neq 0,
 $$
 
 so the system is non-degenerate and this pair is the unique real solution. In particular there cannot be a continuum of solutions or a second distinct intersection point.
@@ -479,7 +479,7 @@ So the statement is True.`,
 From the solution $(4,3)$ already forced in letter B, form the product of the two coordinates. No further equation-solving is needed — just multiply:
 
 $$
-x\cdot y=4\cdot 3=12.
+x\\cdot y=4\\cdot 3=12.
 $$
 
 The product equals $12$ on the nose, which is exactly the claim. (If you prefer a symmetric route: from $x+y=7$ and $xy=?$, the second equation $2x-y=5$ together with $x+y=7$ again yields $x=4$, $y=3$, and the same product.)
@@ -491,7 +491,7 @@ So the statement is True.`,
 Two distinct lines intersect in at most one point. These lines have slopes $-1$ and $2$, so they are not parallel, and their unique intersection is already $(4,3)$. There is no second distinct real solution.
 
 $$
-\text{unique solution}=(4,3)
+\\text{unique solution}=(4,3)
 $$
 
 So the statement is False.`,
@@ -549,22 +549,22 @@ Decide whether each statement is true or false. Do not treat the letters as invi
 Turn the two verbal requirements into equations first:
 
 $$
-2x+y=t,\qquad y=x+2.
+2x+y=t,\\qquad y=x+2.
 $$
 
 Eliminate $y$ by substituting the second into the first:
 
 $$
-2x+(x+2)=t\qquad\Rightarrow\qquad 3x+2=t\qquad\Rightarrow\qquad x=\dfrac{t-2}{3}.
+2x+(x+2)=t\\qquad\\Rightarrow\\qquad 3x+2=t\\qquad\\Rightarrow\\qquad x=\\dfrac{t-2}{3}.
 $$
 
 Then
 
 $$
-y=x+2=\dfrac{t-2}{3}+2=\dfrac{t+4}{3}.
+y=x+2=\\dfrac{t-2}{3}+2=\\dfrac{t+4}{3}.
 $$
 
-Non-negativity $x\ge 0$ forces $t\ge 2$ (and then $y$ is automatically positive). The claim says every $t>0$ works. That is too wide: at $t=1$ one gets $x=-1/3<0$, so the schedule is not feasible. One counterexample is enough to kill a universal claim.
+Non-negativity $x\\ge 0$ forces $t\\ge 2$ (and then $y$ is automatically positive). The claim says every $t>0$ works. That is too wide: at $t=1$ one gets $x=-1/3<0$, so the schedule is not feasible. One counterexample is enough to kill a universal claim.
 
 So the statement is False.`,
 
@@ -576,7 +576,7 @@ So the statement is True.`,
 
     `**C.** → True
 
-For a fixed target $t$, the two equalities are a $2\times 2$ linear system with a unique algebraic solution $(x,y)$. The constraints $x\ge 0$ and $y\ge 0$ can only accept or reject that single pair — they never manufacture a second distinct solution. Hence at most one feasible schedule exists for each $t$.
+For a fixed target $t$, the two equalities are a $2\\times 2$ linear system with a unique algebraic solution $(x,y)$. The constraints $x\\ge 0$ and $y\\ge 0$ can only accept or reject that single pair — they never manufacture a second distinct solution. Hence at most one feasible schedule exists for each $t$.
 
 So the statement is True.`,
 
@@ -585,7 +585,7 @@ So the statement is True.`,
 Feed $t=2$ into the closed forms from letter A:
 
 $$
-x=\dfrac{2-2}{3}=0,\qquad y=\dfrac{2+4}{3}=2.
+x=\\dfrac{2-2}{3}=0,\\qquad y=\\dfrac{2+4}{3}=2.
 $$
 
 Both hours are non-negative, and the A-line is idle ($x=0$). That is exactly a feasible zero-A schedule at $t=2$.
@@ -597,7 +597,7 @@ So the statement is True.`,
 From
 
 $$
-x=\dfrac{t-2}{3},\qquad y=\dfrac{t+4}{3},
+x=\\dfrac{t-2}{3},\\qquad y=\\dfrac{t+4}{3},
 $$
 
 replacing $t$ by $t+3$ adds $3$ to each numerator. Dividing by $3$ therefore adds exactly $1$ to both $x$ and $y$ on the unique algebraic solution of the two equalities.
@@ -651,18 +651,18 @@ So the statement is True.`,
 
     `**B.** → False
 
-Before squaring, lock the domain. The square root needs $x+3\ge 0$, and a principal square root is nonnegative, so the right-hand side must satisfy $x-1\ge 0$. Altogether $x\ge 1$.
+Before squaring, lock the domain. The square root needs $x+3\\ge 0$, and a principal square root is nonnegative, so the right-hand side must satisfy $x-1\\ge 0$. Altogether $x\\ge 1$.
 
 On that half-line squaring is legitimate:
 
 $$
-x+3=(x-1)^{2}=x^{2}-2x+1\qquad\Rightarrow\qquad x^{2}-3x-2=0.
+x+3=(x-1)^{2}=x^{2}-2x+1\\qquad\\Rightarrow\\qquad x^{2}-3x-2=0.
 $$
 
 The quadratic formula gives
 
 $$
-x=\dfrac{3\pm\sqrt{17}}{2}.
+x=\\dfrac{3\\pm\\sqrt{17}}{2}.
 $$
 
 Only the plus branch sits above $1$ (roughly $3.56$). The minus branch is negative, so it is outside the domain. Exactly one real solution survives — not two.
@@ -677,19 +677,19 @@ $$
 (2-x)+(x+1)=3.
 $$
 
-Outside the segment the path is longer, so the sum exceeds $3$. Hence the inequality $\ge 3$ holds for every real $x$.
+Outside the segment the path is longer, so the sum exceeds $3$. Hence the inequality $\\ge 3$ holds for every real $x$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Cube both sides: $x-1=8$, so $x=9$. Cubing is bijective on $\mathbb{R}$, so $x=9$ is the unique real root. The number $7$ is simply wrong.
+Cube both sides: $x-1=8$, so $x=9$. Cubing is bijective on $\\mathbb{R}$, so $x=9$ is the unique real root. The number $7$ is simply wrong.
 
 So the statement is False.`,
 
     `**E.** → False
 
-Absolute values are never negative, so $|u|\le 0$ forces $u=0$. Here $u=x^{2}-1$, and $x^{2}-1=0$ yields $x=\pm 1$. The solution set is nonempty, so the “no real solution” claim fails.
+Absolute values are never negative, so $|u|\\le 0$ forces $u=0$. Here $u=x^{2}-1$, and $x^{2}-1=0$ yields $x=\\pm 1$. The solution set is nonempty, so the “no real solution” claim fails.
 
 So the statement is False.`,
   ];
@@ -735,19 +735,19 @@ $$
 Its discriminant is
 
 $$
-\Delta=64-4(k-m).
+\\Delta=64-4(k-m).
 $$
 
-Setting $\Delta=0$ gives $k-m=16$, i.e. $m=k-16$. That is precisely the tangency criterion, both directions.
+Setting $\\Delta=0$ gives $k-m=16$, i.e. $m=k-16$. That is precisely the tangency criterion, both directions.
 
 So the statement is True.`,
 
     `**B.** → True
 
-The axis of $f(x)=x^{2}-6x+k$ is $x=3$, so the vertex is the point $\bigl(3,f(3)\bigr)$ with $f(3)=k-9$. Asking that point to lie on $g$ means $g(3)=6+m$ equals $k-9$:
+The axis of $f(x)=x^{2}-6x+k$ is $x=3$, so the vertex is the point $\\bigl(3,f(3)\\bigr)$ with $f(3)=k-9$. Asking that point to lie on $g$ means $g(3)=6+m$ equals $k-9$:
 
 $$
-k-9=6+m\qquad\Rightarrow\qquad m=k-15.
+k-9=6+m\\qquad\\Rightarrow\\qquad m=k-15.
 $$
 
 So the vertex lies on the line if and only if $m=k-15$.
@@ -777,7 +777,7 @@ So the statement is True.`,
 Plug $k=20$ and $m=0$ into the discriminant from letter A:
 
 $$
-\Delta=64-4(20-0)=64-80=-16<0.
+\\Delta=64-4(20-0)=64-80=-16<0.
 $$
 
 No real intersection at all, let alone two distinct roots of $f(x)=g(x)$.
@@ -838,10 +838,10 @@ Decide whether each statement is true or false. Work by rewriting every expressi
 Rewrite $g$ with base $2$:
 
 $$
-g(t)=\dfrac{8^{t+1}}{4^{t-2}}=\dfrac{(2^{3})^{t+1}}{(2^{2})^{t-2}}=\dfrac{2^{3t+3}}{2^{2t-4}}=2^{3t+3-(2t-4)}=2^{t+7}.
+g(t)=\\dfrac{8^{t+1}}{4^{t-2}}=\\dfrac{(2^{3})^{t+1}}{(2^{2})^{t-2}}=\\dfrac{2^{3t+3}}{2^{2t-4}}=2^{3t+3-(2t-4)}=2^{t+7}.
 $$
 
-That confirms the first half of the claim. But $f(t)=2^{3t-1}$, and the exponents $3t-1$ and $t+7$ agree only when $2t=8$, i.e. only at $t=4$. The functions are not identical for every real $t$, so the “therefore $f\equiv g$” leap is false.
+That confirms the first half of the claim. But $f(t)=2^{3t-1}$, and the exponents $3t-1$ and $t+7$ agree only when $2t=8$, i.e. only at $t=4$. The functions are not identical for every real $t$, so the “therefore $f\\equiv g$” leap is false.
 
 So the statement is False.`,
 
@@ -850,7 +850,7 @@ So the statement is False.`,
 Use $f(t)=2^{3t-1}$ and the rewrite $g(t)=2^{t+7}$ from A, but evaluate $g$ at $-t$:
 
 $$
-h(t)=\bigl(2^{3t-1}\bigr)^{2}\cdot g(-t)=2^{6t-2}\cdot 2^{-t+7}=2^{5t+5}.
+h(t)=\\bigl(2^{3t-1}\\bigr)^{2}\\cdot g(-t)=2^{6t-2}\\cdot 2^{-t+7}=2^{5t+5}.
 $$
 
 The identity holds for every real $t$.
@@ -868,7 +868,7 @@ So the statement is True.`,
 At $t=2$, the single-power forms give $f(2)=2^{5}=32$ and $g(2)=2^{9}=512$:
 
 $$
-32<512\qquad\Rightarrow\qquad f(2)<g(2).
+32<512\\qquad\\Rightarrow\\qquad f(2)<g(2).
 $$
 
 The claim asserts $f(2)>g(2)$, which points the wrong way.
@@ -880,7 +880,7 @@ So the statement is False.`,
 From letter B, $h(t)=2^{5t+5}$. Set that equal to $2^{10}$:
 
 $$
-5t+5=10\qquad\Rightarrow\qquad t=1.
+5t+5=10\\qquad\\Rightarrow\\qquad t=1.
 $$
 
 So $t=1$ really is a root of $h(t)=2^{10}$.
@@ -967,7 +967,7 @@ So the statement is True.`,
 On unit steps, a constant third difference equals $3!$ times the leading coefficient. Letter A fixed that constant at $6$, so
 
 $$
-3!\,a_{3}=6\qquad\Rightarrow\qquad a_{3}=1.
+3!\,a_{3}=6\\qquad\\Rightarrow\\qquad a_{3}=1.
 $$
 
 No other leading coefficient would produce a row of sixes.

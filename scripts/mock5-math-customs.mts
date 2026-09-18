@@ -49,7 +49,7 @@ export function buildMathQ22Sets() {
 Start from the programme size $200$ and ask how many staff finished at least one module. Inclusion–exclusion on Privacy, Security, and Audit gives
 
 $$
-|P\cup S\cup A|=|P|+|S|+|A|-|P\cap S|-|P\cap A|-|S\cap A|+|P\cap S\cap A|
+|P\\cup S\\cup A|=|P|+|S|+|A|-|P\\cap S|-|P\\cap A|-|S\\cap A|+|P\\cap S\\cap A|
 $$
 
 $$
@@ -77,7 +77,7 @@ So the statement is True.`,
 The claim compares two Venn regions: the triple intersection (given as $18$) against the “Audit and nothing else” petal. Only Audit is what remains after stripping both pairwise overlaps that touch Audit and restoring the triple (which was subtracted twice):
 
 $$
-|A \setminus (P\cup S)|=|A|-|P\cap A|-|S\cap A|+|P\cap S\cap A|
+|A \\setminus (P\\cup S)|=|A|-|P\\cap A|-|S\\cap A|+|P\\cap S\\cap A|
 $$
 
 $$
@@ -90,10 +90,10 @@ So the statement is False.`,
 
     `**C.** → True
 
-Translate the verbal claim into exclusive regions. “Privacy but neither of the other two” is the Privacy-only petal. Start from $|P|=120$, subtract everyone who also finished Security ($|P\cap S|=48$) and everyone who also finished Audit ($|P\cap A|=40$). Those two subtractions both remove the triple intersection, so add $|P\cap S\cap A|=18$ back once:
+Translate the verbal claim into exclusive regions. “Privacy but neither of the other two” is the Privacy-only petal. Start from $|P|=120$, subtract everyone who also finished Security ($|P\\cap S|=48$) and everyone who also finished Audit ($|P\\cap A|=40$). Those two subtractions both remove the triple intersection, so add $|P\\cap S\\cap A|=18$ back once:
 
 $$
-|P \setminus (S\cup A)|=120-48-40+18
+|P \\setminus (S\\cup A)|=120-48-40+18
 $$
 
 $$
@@ -103,7 +103,7 @@ $$
 Do the same for Security-only, starting from $|S|=95$ and using the Security–Privacy and Security–Audit overlaps:
 
 $$
-|S \setminus (P\cup A)|=95-48-35+18=30
+|S \\setminus (P\\cup A)|=95-48-35+18=30
 $$
 
 Now compare the two petals: $50>30$, so Privacy-only staff outnumber Security-only staff. That is precisely the claim.
@@ -127,7 +127,7 @@ So the statement is False.`,
 Ignore Audit for this letter — the claim only asks for Privacy or Security. Two-set inclusion–exclusion is enough:
 
 $$
-|P\cup S|=|P|+|S|-|P\cap S|=120+95-48
+|P\\cup S|=|P|+|S|-|P\\cap S|=120+95-48
 $$
 
 $$
@@ -203,7 +203,7 @@ $$
 Feed in $a+b+c=12$ and $ab+bc+ca=47$:
 
 $$
-a^{2}+b^{2}+c^{2}=12^{2}-2\cdot 47=144-94=50
+a^{2}+b^{2}+c^{2}=12^{2}-2\\cdot 47=144-94=50
 $$
 
 No approximation is needed — the archive forces the sum of squares to equal $50$ exactly, matching the claim.
@@ -215,13 +215,13 @@ So the statement is True.`,
 The three pairwise squared gaps expand to a tidy multiple of the gap between sum-of-squares and sum-of-products:
 
 $$
-(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=2\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\bigr)
+(a-b)^{2}+(b-c)^{2}+(c-a)^{2}=2\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)
 $$
 
 Letter A already gave $a^{2}+b^{2}+c^{2}=50$, and the archive records $ab+bc+ca=47$, so the parenthesis is just $50-47=3$. Then
 
 $$
-2\cdot 3=6
+2\\cdot 3=6
 $$
 
 which is exactly the claimed value.
@@ -233,7 +233,7 @@ So the statement is True.`,
 For three numbers the cubic identity
 
 $$
-a^{3}+b^{3}+c^{3}-3abc=(a+b+c)\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\bigr)
+a^{3}+b^{3}+c^{3}-3abc=(a+b+c)\\bigl(a^{2}+b^{2}+c^{2}-ab-bc-ca\\bigr)
 $$
 
 ties the sum of cubes to the three elementary symmetric records. From letter A, $a^{2}+b^{2}+c^{2}=50$, so the second factor is
@@ -245,13 +245,13 @@ $$
 The first factor is the recorded sum $12$, hence
 
 $$
-a^{3}+b^{3}+c^{3}-3abc=12\cdot 3=36
+a^{3}+b^{3}+c^{3}-3abc=12\\cdot 3=36
 $$
 
 Solve for the sum of cubes by adding $3abc$ on both sides. With $abc=60$:
 
 $$
-a^{3}+b^{3}+c^{3}=36+3\cdot 60=36+180=216
+a^{3}+b^{3}+c^{3}=36+3\\cdot 60=36+180=216
 $$
 
 The claim asserts $220$. That is $4$ too large — a near-miss that would be easy to invent by mistaking $3abc$ for $2abc$ or similar — but the true value is $216$, so the statement is false.
@@ -275,7 +275,7 @@ $$
 Integer candidates that divide $60$ are worth testing. Try $x=3$:
 
 $$
-3^{3}-12\cdot 3^{2}+47\cdot 3-60=27-108+141-60=0
+3^{3}-12\\cdot 3^{2}+47\\cdot 3-60=27-108+141-60=0
 $$
 
 so $x=3$ is a root. Factor out $(x-3)$ by synthetic division (coefficients $1$, $-12$, $47$, $-60$): bring down $1$, multiply by $3$ to get $3$, add to $-12$ to get $-9$, multiply by $3$ to get $-27$, add to $47$ to get $20$, multiply by $3$ to get $60$, add to $-60$ to get $0$. The quadratic factor is therefore
@@ -293,7 +293,7 @@ So the statement is True.`,
 Clear the three reciprocals over the common denominator $abc$:
 
 $$
-\dfrac{1}{a}+\dfrac{1}{b}+\dfrac{1}{c}=\dfrac{bc+ca+ab}{abc}=\dfrac{ab+bc+ca}{abc}=\dfrac{47}{60}
+\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}=\\dfrac{ab+bc+ca}{abc}=\\dfrac{47}{60}
 $$
 
 The claim writes the flipped fraction $60/47$. That is the reciprocal of the true sum, not the sum itself, so the statement fails.
@@ -341,27 +341,27 @@ Decide whether each statement is true or false.`;
 Discount each gift separately at the annual effective rate $5\%$, then add. The present value of the package is
 
 $$
-\mathrm{PV}=\dfrac{10000}{1.05}+\dfrac{12000}{1.05^{3}}+\dfrac{14000}{1.05^{4}}
+\\mathrm{PV}=\\dfrac{10000}{1.05}+\\dfrac{12000}{1.05^{3}}+\\dfrac{14000}{1.05^{4}}
 $$
 
 Compute the powers of $1.05$ first so the denominators are exact:
 
 $$
-1.05^{2}=1.1025,\qquad 1.05^{3}=1.157625,\qquad 1.05^{4}=1.21550625
+1.05^{2}=1.1025,\\qquad 1.05^{3}=1.157625,\\qquad 1.05^{4}=1.21550625
 $$
 
 Now each term:
 
 $$
-\dfrac{10000}{1.05}=\dfrac{1000000}{105}\approx 9523.81
+\\dfrac{10000}{1.05}=\\dfrac{1000000}{105}\\approx 9523.81
 $$
 
 $$
-\dfrac{12000}{1.157625}\approx 10366.05
+\\dfrac{12000}{1.157625}\\approx 10366.05
 $$
 
 $$
-\dfrac{14000}{1.21550625}\approx 11517.83
+\\dfrac{14000}{1.21550625}\\approx 11517.83
 $$
 
 Adding the three discounted gifts:
@@ -379,7 +379,7 @@ So the statement is False.`,
 Only the one-year gift matters. Discount $10000$ for a single year at $5\%$:
 
 $$
-\dfrac{10000}{1.05}\approx 9523.81
+\\dfrac{10000}{1.05}\\approx 9523.81
 $$
 
 That is already strictly below $9600$, so the claim holds without needing the other two gifts.
@@ -391,13 +391,13 @@ So the statement is True.`,
 A level perpetuity-due of amount $R$ pays at the beginning of every year, including today. Relative to an ordinary perpetuity-immediate (first payment in one year), the due version is worth one extra immediate payment, which is equivalent to multiplying by $(1+i)$:
 
 $$
-\ddot{a}_{\infty}=R\cdot\dfrac{1+i}{i}
+\\ddot{a}_{\\infty}=R\\cdot\\dfrac{1+i}{i}
 $$
 
 With $R=10000$ and $i=0.05$:
 
 $$
-10000\cdot\dfrac{1.05}{0.05}=10000\cdot 21=210000
+10000\\cdot\\dfrac{1.05}{0.05}=10000\\cdot 21=210000
 $$
 
 The present value is exactly $210000$, matching the claim with no rounding.
@@ -415,11 +415,11 @@ So the statement is False.`,
 Compare the middle and final gifts on their own. From the powers computed in letter A,
 
 $$
-\dfrac{12000}{1.05^{3}}=\dfrac{12000}{1.157625}\approx 10366.05
+\\dfrac{12000}{1.05^{3}}=\\dfrac{12000}{1.157625}\\approx 10366.05
 $$
 
 $$
-\dfrac{14000}{1.05^{4}}=\dfrac{14000}{1.21550625}\approx 11517.83
+\\dfrac{14000}{1.05^{4}}=\\dfrac{14000}{1.21550625}\\approx 11517.83
 $$
 
 Even though the $14000$ gift arrives one year later, its larger face value more than offsets the extra year of discounting: $11517.83>10366.05$. The claim that the year-$3$ present value exceeds the year-$4$ present value is therefore false.
@@ -469,37 +469,37 @@ All three run together from empty. Decide whether each statement is true or fals
 Pipe A fills one full tank in $6$ hours, so its hourly rate is the reciprocal
 
 $$
-r_A=\dfrac{1}{6}
+r_A=\\dfrac{1}{6}
 $$
 
-tank per hour. Compare with $\tfrac{1}{5}$: because $6>5$, one has $\tfrac{1}{6}<\tfrac{1}{5}$. A’s rate is strictly smaller than the claimed threshold, not greater.
+tank per hour. Compare with $\\tfrac{1}{5}$: because $6>5$, one has $\\tfrac{1}{6}<\\tfrac{1}{5}$. A’s rate is strictly smaller than the claimed threshold, not greater.
 
 So the statement is False.`,
 
     `**B.** → False
 
-Write the three rates as fractions of a tank per hour: A contributes $\tfrac{1}{6}$, B contributes $\tfrac{1}{4}$, and the drain removes $\tfrac{1}{12}$. The net combined rate with all three open is
+Write the three rates as fractions of a tank per hour: A contributes $\\tfrac{1}{6}$, B contributes $\\tfrac{1}{4}$, and the drain removes $\\tfrac{1}{12}$. The net combined rate with all three open is
 
 $$
-r_A+r_B-r_D=\dfrac{1}{6}+\dfrac{1}{4}-\dfrac{1}{12}
+r_A+r_B-r_D=\\dfrac{1}{6}+\\dfrac{1}{4}-\\dfrac{1}{12}
 $$
 
 Clear denominators with $12$:
 
 $$
-=\dfrac{2}{12}+\dfrac{3}{12}-\dfrac{1}{12}=\dfrac{4}{12}=\dfrac{1}{3}
+=\\dfrac{2}{12}+\\dfrac{3}{12}-\\dfrac{1}{12}=\\dfrac{4}{12}=\\dfrac{1}{3}
 $$
 
-The claim asserts equality with $\tfrac{5}{12}$. But $\tfrac{1}{3}=\tfrac{4}{12}$, which is one twelfth smaller than $\tfrac{5}{12}$. The claimed net rate is too high.
+The claim asserts equality with $\\tfrac{5}{12}$. But $\\tfrac{1}{3}=\\tfrac{4}{12}$, which is one twelfth smaller than $\\tfrac{5}{12}$. The claimed net rate is too high.
 
 So the statement is False.`,
 
     `**C.** → False
 
-From letter B the net fill rate with all three open is $\tfrac{1}{3}$ tank per hour. Starting from empty, time to one full tank is the reciprocal:
+From letter B the net fill rate with all three open is $\\tfrac{1}{3}$ tank per hour. Starting from empty, time to one full tank is the reciprocal:
 
 $$
-T=\dfrac{1}{1/3}=3
+T=\\dfrac{1}{1/3}=3
 $$
 
 hours exactly. The claim needs a fill time strictly less than $3$ hours. Equality to $3$ means the strict inequality fails, even though the tank does fill in finite time.
@@ -511,19 +511,19 @@ So the statement is False.`,
 Close B and leave only A and the drain. Their net rate is inlet minus outflow:
 
 $$
-r_A-r_D=\dfrac{1}{6}-\dfrac{1}{12}
+r_A-r_D=\\dfrac{1}{6}-\\dfrac{1}{12}
 $$
 
-Rewrite $\tfrac{1}{6}$ over the common denominator $12$:
+Rewrite $\\tfrac{1}{6}$ over the common denominator $12$:
 
 $$
-\dfrac{1}{6}=\dfrac{2}{12},\qquad \dfrac{2}{12}-\dfrac{1}{12}=\dfrac{1}{12}
+\\dfrac{1}{6}=\\dfrac{2}{12},\\qquad \\dfrac{2}{12}-\\dfrac{1}{12}=\\dfrac{1}{12}
 $$
 
-The net rate $\tfrac{1}{12}$ is still positive, so the tank continues to fill (slowly). The time from empty to full is the reciprocal of that net rate:
+The net rate $\\tfrac{1}{12}$ is still positive, so the tank continues to fill (slowly). The time from empty to full is the reciprocal of that net rate:
 
 $$
-T=\dfrac{1}{1/12}=12
+T=\\dfrac{1}{1/12}=12
 $$
 
 hours. Compare with the claim’s threshold: $12>8$, so the fill time exceeds $8$ hours, and both halves of the claim hold.
@@ -535,16 +535,16 @@ So the statement is True.`,
 In one hour, B alone contributes
 
 $$
-r_B=\dfrac{1}{4}
+r_B=\\dfrac{1}{4}
 $$
 
 of a tank. In the same hour, A and the drain together contribute only the net rate from letter D:
 
 $$
-r_A-r_D=\dfrac{1}{12}
+r_A-r_D=\\dfrac{1}{12}
 $$
 
-Because $\tfrac{1}{4}=\tfrac{3}{12}>\tfrac{1}{12}$, B alone fills more in one hour than A and the drain add net in one hour. The claim is therefore true.
+Because $\\tfrac{1}{4}=\\tfrac{3}{12}>\\tfrac{1}{12}$, B alone fills more in one hour than A and the drain add net in one hour. The claim is therefore true.
 
 So the statement is True.`,
   ];
