@@ -2300,22 +2300,22 @@
   },
   "MATH 4.122": {
     "title": "Fünf getrennte Pack- und Kehrwertgeschichten",
-    "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
+    "context": "Bewerte jede Aussage. Markiere sie mit Wahr oder Falsch.",
     "statements": [
-      "Fünf Kilogramm Mehl, verpackt in Säcke von einem Kilogramm weniger als eine bestimmte Anzahl von Kilogramm, füllen genau eine solche Beutelzahl. Diese Anzahl von Kilogramm ist $6$.",
-      "Die Gleichung $\\frac{4}{x - 3} = 1$ hat eine eindeutige reelle Lösung, die größer ist als $3$.",
-      "Wenn fünf Kilogramm in Säcke von $5$ jeweils kg, dann $\\frac{5}{5} = 1$, so füllen sie genau eine Beutelzählung dieser Größe.",
-      "Ein Tank von $8$ Liter werden konstant entleert $2$ Liter pro Stunde. Die Uhrzeit $t$ Stunden, bis leer zufrieden ist $\\frac{8}{t} = 2$, so $t = 4$.",
-      "Den Nenner in $\\frac{5}{x - 1} = 1$ Gaben $5 = x - 1$, provided $x \\neq 1$."
+      "Fünf Kilogramm Mehl, verpackt in Säcke mit jeweils einem Kilogramm weniger als eine bestimmte Kilogrammzahl, füllen genau eine solche Anzahl Säcke. Diese Kilogrammzahl ist $6$.",
+      "Die Gleichung $\\frac{4}{x - 3} = 1$ hat eine eindeutige reelle Lösung, die größer als $3$ ist.",
+      "Wenn fünf Kilogramm in Säcke zu je $5$ kg verpackt werden, dann gilt $\\frac{5}{5} = 1$, also füllen sie genau einen Sack dieser Größe.",
+      "Ein Tank mit $8$ Litern wird mit konstanter Rate von $2$ Litern pro Stunde geleert. Die Zeit $t$ in Stunden bis zur Leere erfüllt $\\frac{8}{t} = 2$, also ist $t = 4$.",
+      "Das Beseitigen des Nenners in $\\frac{5}{x - 1} = 1$ liefert $5 = x - 1$, sofern $x \\neq 1$."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\n5 kg in Säcken von 1 kg weniger als $x$ Kilogramm füllen eine solche Beutelzahl:\n\n$$\\frac{5}{x - 1} = 1$$\n\nDie linke Seite ist am Loch undefiniert $x = 1$Dieser Wert ist also niemals eine Wurzel. für $x \\neq 1$ multiply through by $x - 1$:\n\n$$5 = x - 1$$\n\n$$x = 6$$\n\nDie wiedergewonnene Beutelgröße ist $6$ kg und $6 \\neq 1$Das Loch ist also nicht dieser Wert. Substitute back:\n\n$$\n\\frac{5}{6 - 1} = 1\n$$\n\nDas ist die beanspruchte Kilogrammzahl.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nLösung $\\frac{4}{x - 3} = 1$ auf seiner erlaubten Domain (außer dem Loch, wo) $x - 3 = 0$):\n\n$$4 = x - 3$$\n\n$$x = 7$$\n\nDie eindeutige reelle Lösung ist $x = 7$und diese Lösung genügt $7 > 3$\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nDas Verpacken einer festen Masse in gleiche Säcke ist eine Teilung. mit$5$ kg Bestand und Beutel von $5$ je kg:\n\n$$\n\\frac{5}{5} =1\n$$\n\nGenau ein Beutel dieser Größe ist gefüllt. Die Behauptung bestreitet, dass die gleiche Packungszahl von$1$.\n\nDie Aussage ist wahr.",
-      "**D.** → Wahr\n\nEight litres emptied at $2$ Liter pro Stunde\n\n$$\\frac{8}{t} = 2$$\n\nDie Uhrzeit $t$ ist nicht erlaubt, $0$. Multiply through by $t$:\n\n$$8 = 2t$$\n\n$$t = 4$$\n\nDie zurückgewonnene Zeit ist $4$ hours. Substitute back:\n\n$$\n\\frac{8}{4} = 2\n$$\n\nAntragsberichte $t = 4$.\n\nDie Aussage ist wahr.",
-      "**E.** → Wahr\n\nfür $\\frac{5}{x - 1} = 1$ das Loch $x = 1$ wird zuerst ausgeschlossen. Auf der verbleibenden Domäne multiplizieren Sie mit dem Faktor Nichtnull $x - 1$:\n\n$$5 = x - 1$$\n\nDas ist die geklärte Gleichung, die im Aussage genannt wird, und sie gilt genau deshalb, weil $x \\neq 1$.\n\nDie Aussage ist wahr."
+      "**A.** → Wahr\n\nFünf Kilogramm in Säcken von einem Kilogramm weniger als $x$ Kilogramm füllen genau eine solche Sackzahl:\n\n$$\\frac{5}{x - 1} = 1$$\n\nDie linke Seite ist an der Polstelle $x = 1$ undefiniert; dieser Wert ist also keine Lösung. Für $x \\neq 1$ multipliziere mit $x - 1$:\n\n$$5 = x - 1$$\n\n$$x = 6$$\n\nDie zurückgewonnene Sackgröße ist $6$ kg und $6 \\neq 1$, also liegt die Polstelle nicht bei diesem Wert. Einsetzen bestätigt:\n\n$$\n\\frac{5}{6 - 1} = 1\n$$\n\nDas ist die behauptete Kilogrammzahl.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nLöse $\\frac{4}{x - 3} = 1$ auf der erlaubten Definitionsmenge (ohne die Polstelle $x - 3 = 0$):\n\n$$4 = x - 3$$\n\n$$x = 7$$\n\nDie eindeutige reelle Lösung ist $x = 7$, und sie erfüllt $7 > 3$.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDas Verpacken einer festen Masse in gleich große Säcke ist eine Division. Mit $5$ kg Bestand und Säcken zu je $5$ kg gilt:\n\n$$\n\\frac{5}{5} = 1\n$$\n\nGenau ein Sack dieser Größe wird gefüllt. Die Behauptung nennt dieselbe Packzahl $1$.\n\nDie Aussage ist wahr.",
+      "**D.** → Wahr\n\nAcht Liter, geleert mit $2$ Litern pro Stunde, bedeuten\n\n$$\\frac{8}{t} = 2$$\n\nDie Zeit $t$ darf nicht $0$ sein. Multiplikation mit $t$ liefert:\n\n$$8 = 2t$$\n\n$$t = 4$$\n\nDie zurückgewonnene Zeit ist $4$ Stunden. Einsetzen bestätigt:\n\n$$\n\\frac{8}{4} = 2\n$$\n\nDie Behauptung nennt $t = 4$.\n\nDie Aussage ist wahr.",
+      "**E.** → Wahr\n\nBei $\\frac{5}{x - 1} = 1$ schließt man zuerst die Polstelle $x = 1$ aus. Auf der verbleibenden Definitionsmenge multipliziere mit dem von null verschiedenen Faktor $x - 1$:\n\n$$5 = x - 1$$\n\nDas ist die freigemachte Gleichung aus der Behauptung, und sie gilt genau unter der Voraussetzung $x \\neq 1$.\n\nDie Aussage ist wahr."
     ],
-    "solution_overview": "Fünf unabhängige rationale Behauptungen. $\\frac{5}{x - 1} = 1$ recovers $x = 6$. A tank $\\frac{8}{t} = 2$ recovers $t = 4$.\n\nSchließe Werte aus, die einen Nenner null setzen, kreuzmultipliziere und prüfe, dass jede gefundene Wurzel in der zulässigen Definitionsmenge liegt.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; verwende keine Wurzel aus einem anderen Buchstaben erneut."
+    "solution_overview": "Fünf unabhängige rationale Behauptungen. Aus $\\frac{5}{x - 1} = 1$ folgt $x = 6$. Beim Tank liefert $\\frac{8}{t} = 2$ den Wert $t = 4$.\n\nSchließe Werte aus, die einen Nenner null setzen, multipliziere kreuzweise und prüfe, dass jede gefundene Wurzel in der zulässigen Definitionsmenge liegt.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; verwende keine Wurzel aus einem anderen Buchstaben erneut."
   },
   "MATH 4.123": {
     "title": "Fünf unabhängige Wurzelgleichungen aus Quadratwurzeln",
@@ -3610,7 +3610,7 @@
     "solution_overview": "für $x^{2} + px + q = 0$ lange Formeln für die, die die Wurzel bildenspielzeuge nach dem diskriminierenden und und Vieta-Formes-verknüpfen sie mit den Koeffizienten:\n\n$$\n\\Delta = p^{2} - 4q,\\qquad x_{1} + x_{2} = -p,\\qquad x_{1}x_{2} = q\n$$\n\nHere $p = -2(m-1)$ und $q = m^{2} - 3m$So ist die Summe der Wurzeln $2(m-1)$ und sein Produkt ist $m^{2} - 3m$."
   },
   "MATH 4.191": {
-    "title": "Composite decadic equations under pressure",
+    "title": "Zusammengesetzte dekadische Gleichungen unter Druck",
     "context": "Throughout, $\\log$ I- notum-l-K verbiert durch-Koum deskyum $x$. Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die $\\log\\sqrt[3]{x} + \\log x^{3} - \\log x + \\frac{4}{3} = \\dfrac{\\log x^{6}}{1 + \\log 100}$ ist weniger $1$.",
@@ -3858,41 +3858,41 @@
   },
   "MATH 4.204": {
     "title": "Klausuraufgaben – 11",
-    "context": "Eine Reparatur-Service-Kosten eine feste Abnahmegebühr von 30 EUR und 4 EUR für jede Ersatzeinheit. — jegliches Grundpfeiler, das auf der Grundlage der RHM steht, Es wendet das Europäische Parlament keine andere Rechtspersönlichkeit auf, die auf der Grundlage der Rechtspersönlichkeit auf der Grundlage der Rechtspersönlichkeit aufgerichtet wird,",
+    "context": "Ein Reparaturservice berechnet eine feste Anfahrtsgebühr von 30 EUR und 4 EUR für jede Ersatzeinheit. Eine Rechnung beträgt insgesamt 110 EUR, und die Anzahl der Einheiten ist die einzige Unbekannte. Derselbe lineare Tarif gilt für jede Rechnung, ohne Steuer oder Rabatt.",
     "statements": [
-      "Die Rechnungsgleichung ist $30+4x=110$.",
-      "Die Rechnung enthält $20$ units.",
-      "Die wir wir uns nun wieder auf die",
-      "Eine zusätzliche Einheit fügt hinzu $4$ EUR.",
-      "Der Tarif hat Null Fixkosten."
+      "Die Rechnungsgleichung lautet $30+4x=110$.",
+      "Die Rechnung enthält $20$ Einheiten.",
+      "Eine Verdopplung der Einheiten verdoppelt die gesamte Rechnung.",
+      "Eine zusätzliche Einheit addiert $4$ EUR.",
+      "Der Tarif hat keine Fixkosten."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDie gesprenkelte Süllpüche, d.. Die regierende Gleichung ist\n\n$$30+4x=110$$\n\nDie Be an Die Übereinstimmung der beiden Ausdrücke zeigt, dass sie identisch sind.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nvon der gemeinsamen (ein) Lösung\n\n$x=20$ aus (1).zellen. Die Behauptung Tischzellen, $20$ units.\n\n$$x=\\dfrac{110-30}{4}$$\n\n$$x=20$$\n\nmned zu ko Vertrages m $20$ units\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nDie Verdoppelung nur der Einheitszahl verdoppelt den variablen Teil, nicht den festen Aufruf. Mit dem wiederein geladenen Tarif,\n\n$$C(x)=30+4x$$\n\nals Spieler der\n\n$$C(2x)=30+4(2x)$$\n\n$$C(2x)=30+8x$$\n\nDas Doppelte der ursprünglichen Rechnung ist\n\n$$2C(x)=230+8x$$\n\n$$2C(x)=60+8x$$\n\nDiese unterscheiden sich durch die verbleibenseitigen Festgebühr ned $30$ Durch den Boden den Boden den Boden den Boden den Boden den den Boden den ihn den Boden den zufolge\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nder Wagen von einem $C(x)=F+kx$Die Nebenfunktion ist ein Koeffizient $k$:\n\n$$C(x+1)-C(x)=k$$\n\nvon der gemeinsamen (ein) Lösung\n\n$k=4$, so\n\n$$C(x+1)-C(x)=4$$\n\nEs wird gezeigt, der $4$ EUR, entsprechend der Behauptung.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nDenen eigenes markten das . $C(x)=30+4x$. Die von der E-E- zufolge aus dem E-Ausgangs- und E-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs\n\n$$C(0)=30$$\n\nDie vorgespannten Zeiten $30$ Ausssenden der aus\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nDie Übersicht schreibt die Rechnung bereits als Fixgebühr plus Einheitspreis:\n\n$$30+4x=110$$\n\nDie Behauptung zeigt dieselbe Gleichung.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\n$$x=\\dfrac{110-30}{4}=20$$\n\nDie erfasste Rechnung hat $20$ Einheiten.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nVerdoppelt man nur die Einheiten, verdoppelt sich der variable Teil, nicht die Fixgebühr. Mit $C(x)=30+4x$ gilt\n\n$$C(2x)=30+4(2x)=30+8x$$\n\nwährend das Doppelte der Originalrechnung\n\n$$2C(x)=230+8x$$\n\nist. Der Unterschied ist die verbleibende Fixgebühr $30$ EUR.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nIn einem linearen Tarif $C(x)=F+kx$ ist die Grenzgebühr für eine Extra-Einheit der Koeffizient $k$:\n\n$$C(x+1)-C(x)=4$$\n\nEine Extra-Einheit addiert genau $4$ EUR.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer konstante Term in $C(x)=30+4x$ ist die Anfahrtsgebühr:\n\n$$C(0)=30$$\n\nDie Fixkosten betragen $30$ EUR, sind also nicht null.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Reparaturtarifgebühren: $30$ Für den Betrag $4$ Euro je Ersatzeinheit. 1 Rechnung auf denต $110$ EUR.\n\nweder- weder-oder-oder-lassen.\n\nlassen $x$ Zahl der Einheiten auf dieser Rechnung. Aus dem Per-Te mal!\n\n$$30+4x=110$$ (1)\n\n**Teil 2: Lösen.**\n\nrets der antrere die ant antucht\n\n$$4x=80$$\n\nBe\n\n$$x=20$$\n\n**Antwort.** Festgebühr $30$ ibel, $4$ EUR | $x=20$ (V ()) vonΜ von der den von der von der."
+    "solution_overview": "Ein Reparaturtarif berechnet eine feste Anfahrt von $30$ EUR plus $4$ EUR je Ersatzeinheit. Eine Rechnung beträgt insgesamt $110$ EUR.\n\n**Teil 1: Übersetzen.**\n\nEs sei $x$ die Anzahl der Einheiten auf dieser Rechnung. Fixkosten plus Stückkosten liefern\n\n$$30+4x=110$$ (1)\n\n**Teil 2: Lösen.**\n\nSubtrahiere die Fixgebühr:\n\n$$4x=80$$\n\nTeile durch den Stückpreis:\n\n$$x=20$$\n\n**Antwort.** Fixgebühr $30$ EUR | Stückpreis $4$ EUR | $x=20$ Einheiten auf der erfassten Rechnung."
   },
   "MATH 4.205": {
     "title": "Klausuraufgaben – 12",
-    "context": "A venue models operating surplus by $P(q)=-(q-4)(q-10)$ er, der : $q$ Nichts ist . Nicht mehr zu verwenden, $P(q)=0$, while a positive surplus means $P(q)>0$Das Management will auch die Symmetrieachse und den maximalen Überschuss.",
+    "context": "Ein Veranstaltungsort modelliert den Betriebsüberschuss durch $P(q)=-(q-4)(q-10)$ Tausend EUR, wobei $q$ ein nichtnegativer Besucherindex ist. Break-even bedeutet $P(q)=0$, positiver Überschuss bedeutet $P(q)>0$. Die Leitung möchte außerdem die Symmetrieachse und den maximalen Überschuss.",
     "statements": [
-      "Die Tageszeit- und Tageszeit-ori-has $4$ und $10$.",
-      "Ziel von $4<q<10$.",
-      "So den wir von den $q=7$.",
-      "Der maximale Überschuss ist $10$ thousand EUR.",
+      "Die Break-even-Indizes sind $4$ und $10$.",
+      "Positiver Überschuss liegt vor für $4<q<10$.",
+      "Die Symmetrieachse ist $q=7$.",
+      "Der maximale Überschuss beträgt $10$ Tausend EUR.",
       "Beide algebraischen Wurzeln sind negativ."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\ndie die Annen die die $P(q)=-(q-4)(q-10)$. Bauõ Zufahrt des Fa, zu: zu nachbento zutototo Bautotototo zu Fa 42 zu Betriebsso Fa.\n\n$$q-4=0$$\n\n$$q=4$$\n\nund\n\n$$q-10=0$$\n\n$$q=10$$\n\nBe $4$ und $10$\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nEine nach unten öffnende Parabel ist ausschließlich zwischen ihren Wurzeln positiv. Mit den für mit demklagen, mit der nerute auswirkt.\n\n$$P(q)>0 \\iff 4<q<10$$\n\nwas genau das beanspruchte offene Intervall ist\n\nWiederbeschaffungersatz: Nur die für die Belebung des Besatzes vorgesehene Beschleunigung ist möglich.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nDie Achse der Symmetrie eines Quadrats ist der Mittelpunkt seiner Wurzeln:\n\n$$q=\\frac{r_1+r_2}{2}$$\n\nvon der gemeinsamen (ein) Lösung\n\nDie Wurzeln $r_1=4$ und $r_2=10$. Substitute:\n\n$$q=\\frac{4+10}{2}$$\n\n$$q=\\frac{14}{2}$$\n\n$$q=7$$\n\nDie Behauptung lautet $q=7$Wir haben $q=7$, passend zum Aussage.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nDie Übersicht hat bereits die Vertexhöhe des wiedergewonnenen Quadrats ausgewertet:\n\n$$\nV = P(7) = 9\n$$\n\nDiese einzelne Zahl ist der maximale Wert auf dem Diagramm. Für den für die: druck ihnt : ner wert an ner en druck an ur besseres . Das beanspruchte Maximum entspricht nicht dieser wiederhergestellten Scheitelpunkthöhe.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nvon der gemeinsamen (ein) Lösung\n\n:: Bei den :en: : :: :\n\n$$\nr_1 = 4, \\qquad r_2 = 10\n$$\n\nEine Wurzel ist nur dann negativ, wenn sie strikt kleiner als Null ist. Überprüfen Sie jedes Zeichen:\n\n$$4>0$$\n\n$$10>0$$\n\nBeide Wurzeln sind positiv, also sind sie nicht beide negativ. Wenn hätte die jedoch diesucht die . kam die schütt die r die unter den glsprache Kurs dahingehende.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nDie Übersicht faktorisiert bereits $P(q)=-(q-4)(q-10)$. Nullsetzen des Produkts liefert die Break-even-Indizes\n\n$$q-4=0$$\n\n$$q=4$$\n\nund\n\n$$q-10=0$$\n\n$$q=10$$\n\nDie Break-even-Indizes sind also $4$ und $10$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nEine nach unten geöffnete Parabel ist streng zwischen ihren Wurzeln positiv. Mit den Wurzeln aus der Übersicht gilt\n\n$$P(q)>0 \\iff 4<q<10$$\n\nDas ist genau das behauptete offene Intervall.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDie Symmetrieachse einer Quadratischen ist der Mittelpunkt ihrer Wurzeln:\n\n$$q=\\frac{r_1+r_2}{2}$$\n\nMit $r_1=4$ und $r_2=10$:\n\n$$q=\\frac{4+10}{2}=7$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Übersicht wertet bereits die Scheitelhöhe aus:\n\n$$\nV = P(7) = 9\n$$\n\nDas ist der Maximalwert. Die Behauptung nennt $10$, was nicht gleich $9$ ist.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie algebraischen Wurzeln sind\n\n$$\nr_1 = 4, \\qquad r_2 = 10\n$$\n\nBeide sind positiv ($4>0$ und $10>0$), also nicht beide negativ.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Der Betriebsüberschuss wird modelliert durch $P(q)=-(q-4)(q-10)$ 1000 EUR für einen nicht negativen Besucherindex $q$.\n\nweder- weder-oder-oder-lassen.\n\n. $P(q)=0$ und a positive surplus means $P(q)>0$. desnden durch den\n\n$$P(q)=-q^{2}+14q-40$$\n\n**Part 2: Recover.**\n\n[[ was]] überhaupth nicht mehr mehr, dort dort. $q=4$ und $q=10$. Die Symmetrieachse ist ihr Mittelpunkt\n\n$$\nq = \\dfrac{4+10}{2} = 7\n$$\n\nDer maximale Überschuss ist der Scheitelpunktwert\n\n$$\nP(7) = -(7-4)(7-10) = 9\n$$\n\n**Antwort.** Wurzeln $4,10$ | axis $q=7$ | max surplus $9$ thousand EUR."
+    "solution_overview": "Der Betriebsüberschuss wird modelliert durch $P(q)=-(q-4)(q-10)$ Tausend EUR für einen nichtnegativen Besucherindex $q$.\n\n**Teil 1: Übersetzen.**\n\nBreak-even bedeutet $P(q)=0$, positiver Überschuss bedeutet $P(q)>0$. Ausmultiplizieren liefert die nach unten geöffnete Parabel\n\n$$P(q)=-q^{2}+14q-40$$\n\n**Teil 2: Rekonstruieren.**\n\nEin Produkt ist null, wenn ein Faktor null ist, also sind die Wurzeln $q=4$ und $q=10$. Die Symmetrieachse ist ihr Mittelpunkt\n\n$$\nq = \\dfrac{4+10}{2} = 7\n$$\n\nDer maximale Überschuss ist der Scheitelwert\n\n$$\nP(7) = -(7-4)(7-10) = 9\n$$\n\n**Antwort.** Wurzeln $4,10$ | Achse $q=7$ | max. Überschuss $9$ Tausend EUR."
   },
   "MATH 4.206": {
     "title": "Klausuraufgaben – 13",
@@ -3915,60 +3915,60 @@
   },
   "MATH 4.207": {
     "title": "Klausuraufgaben – 14",
-    "context": "einmal iste I mir ist $N(t)=200\\cdot2^{t/3}$, wobei $t$ wird in Jahren gemessen und $t=0$ nerd an dernerd an der $t\\ge0$Analysten vergleichen das Startniveau, den dreijährigen Wachstumsfaktor und die Zeit, die benötigt wird, um feste Vielfache des Startniveaus zu erreichen.",
+    "context": "Eine Abonnentenbasis folgt $N(t)=200\\cdot2^{t/3}$, wobei $t$ in Jahren gemessen wird und $t=0$ das Startdatum ist. Das Modell gilt nur für reelle $t\\ge0$. Analysten vergleichen das Startniveau, den Drei-Jahres-Wachstumsfaktor und die Zeit bis zu festen Vielfachen des Startniveaus.",
     "statements": [
       "$N(0)=200$.",
-      "Das die gefiedertes (be nur zu vorn)",
+      "Die Abonnentenbasis verdoppelt sich alle drei Jahre.",
       "$N(6)=600$.",
-      ": , , , , , , , , , , , , , , , , , , , , , , , , , , , , , $t=6$.",
-      "„zuspiel es zu ."
+      "Das Vierfache des Startniveaus wird bei $t=6$ erreicht.",
+      "Das Modell fällt auf seiner angegebenen Definitionsmenge."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nJede positive Zahl zur Potenz $0$ gleich $1$, so ist die Startstufe der führende Koeffizient:\n\n$$N(0)=A\\cdot 2^0$$\n\n$$\n2^0 = 1\n$$\n\nmit $A=200$ die Gesamtlage:\n\n$$N(0)=200\\cdot 1$$\n\n$$N(0)=200$$\n\nDie Behauptung lautet $N(0)=200$Wir haben $N(0)=200$, passend zum Aussage.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDie Übersicht berechnete bereits den dreijährigen Wachstumsfaktor des wiederhergestellten Modells:\n\n$$\\frac{N(t+3)}{N(t)}=2$$\n\nder den erfindungsgemäßen $2$ ES geht -- in Hinweis auf die für : strukturierte,\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\n$$N(t)=200\\cdot 2^{t/3}$$\n\nAt $t=6$:\n\n$$N(6)=200\\cdot 2^{6/3}$$\n\n$$\n2^{6/3} = 2^{2}\n$$\n\n$$\n2^{2} = 4\n$$\n\n$$N(6)=200\\cdot 4$$\n\n$$N(6)=800$$\n\nDie Behauptung lautet $N(6)=600$Aber das Modell gibt $800$.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$:\n\n$$200\\cdot 2^{t/3}=4\\cdot 200$$\n\n$$2^{t/3}=4$$\n\n$$2^{t/3}=2^{2}$$\n\nEquating exponents:\n\n$$t/3=2$$\n\n$$t=6$$\n\nAls , dies ist dies diese $t=6$.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nDie Basis $2>1$ und der Koeffizient von $t$ im Exponenten positiv ist, also $N$ ist eine strikte Erhöhung auf $t\\ge 0$. Das Modell verringert sich nicht auf seine angegebene Domain\n\nErsatz der wiedergewonnenen Stammeinträge:\n\n$$\nN(0) = 200\\cdot 2^{0} = 200\\cdot 1 = 200\n$$\n\n$$\n2^{(t+3)/3}/2^{t/3} = 2^{1} = 2\n$$\n\n$$\nN(6) = 200\\cdot 2^{6/3} = 200\\cdot 2^{2} = 800\n$$\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nJede positive Zahl hoch $0$ ergibt $1$, also ist das Startniveau der führende Koeffizient:\n\n$$N(0)=200\\cdot 2^0=200\\cdot 1=200$$\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nDer Drei-Jahres-Wachstumsfaktor des Modells ist\n\n$$\\frac{N(t+3)}{N(t)}=2$$\n\nEin Faktor $2$ bedeutet Verdopplung alle drei Jahre.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$N(6)=200\\cdot 2^{6/3}=200\\cdot 2^{2}=200\\cdot 4=800$$\n\nDie Behauptung nennt $600$, das Modell liefert $800$.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$:\n\n$$200\\cdot 2^{t/3}=4\\cdot 200$$\n\n$$2^{t/3}=4=2^{2}$$\n\n$$t/3=2$$\n\n$$t=6$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Basis $2>1$ und der Koeffizient von $t$ im Exponenten sind positiv, also ist $N$ auf $t\\ge 0$ streng wachsend. Das Modell fällt nicht.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Basis ist an der Basis der $N(t)=200\\cdot 2^{t/3}$ für real $t\\ge 0$, mit $t=0$ verwandelt in den Veren Verenen Veren Veren vom Verenen in den vom Veren Veren Ver\n\n**Part 1: Launch level.**\n\n$$\nN(0) = 200\\cdot 2^{0} = 200\\cdot 1 = 200\n$$\n\n** . ** zu einem Drei-Jahres-Wachstumsfaktor. das Ersetzen $t$ by $t+3$ Verfährreises hert umgekehrt\n\n$$\n2^{(t+3)/3}/2^{t/3} = 2^{1} = 2\n$$\n\ndie sichn die diem\n\n**Part 3: Named levels.**\n\n$$\nN(6) = 200\\cdot 2^{6/3} = 200\\cdot 2^{2} = 800\n$$\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$, so\n\n$$\n2^{t/3} = 4 = 2^{2}\n$$\n\n$$t/3=2$$\n\n$$t=6$$\n\n**Antwort.** $N(0)=200$ Das ll. $3$ Jahre | $N(6)=800$ vierfache Zeit $t=6$."
+    "solution_overview": "Die Abonnentenbasis folgt $N(t)=200\\cdot 2^{t/3}$ für reelle $t\\ge 0$, mit $t=0$ als Startdatum.\n\n**Teil 1: Startniveau.**\n\n$$\nN(0) = 200\\cdot 2^{0} = 200\n$$\n\n**Teil 2: Drei-Jahres-Wachstumsfaktor.** Ersetzen von $t$ durch $t+3$ multipliziert das Modell mit\n\n$$\n2^{(t+3)/3}/2^{t/3} = 2^{1} = 2\n$$\n\nalso verdoppelt sich die Basis alle drei Jahre.\n\n**Teil 3: Genannte Niveaus.**\n\n$$\nN(6) = 200\\cdot 2^{6/3} = 800\n$$\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$, also $2^{t/3}=4$, also $t=6$.\n\n**Antwort.** $N(0)=200$ | verdoppelt alle $3$ Jahre | $N(6)=800$ | Vierfach-Zeit $t=6$."
   },
   "MATH 4.208": {
     "title": "Klausuraufgaben – 15",
-    "context": "Wenn die Art der Art auf dem Weg ist, auf dem sich der Weg befindet. Eine Rechnung beträgt insgesamt 145 EUR und die Anzahl der Einheiten ist die einzige Unbekannte. Der gleiche lineare Tarif gilt für jede Rechnung, ohne Steuern oder Rabatte.",
+    "context": "Ein Reparaturservice berechnet eine feste Anfahrtsgebühr von 35 EUR und 5 EUR für jede Ersatzeinheit. Eine Rechnung beträgt insgesamt 145 EUR, und die Anzahl der Einheiten ist die einzige Unbekannte. Derselbe lineare Tarif gilt für jede Rechnung, ohne Steuer oder Rabatt.",
     "statements": [
-      "Die Rechnungsgleichung ist $35+5x=145$.",
-      "Die Rechnung enthält $22$ units.",
-      "Die wir wir uns nun wieder auf die",
-      "Eine zusätzliche Einheit fügt hinzu $5$ EUR.",
-      "Der Tarif hat Null Fixkosten."
+      "Die Rechnungsgleichung lautet $35+5x=145$.",
+      "Die Rechnung enthält $22$ Einheiten.",
+      "Eine Verdopplung der Einheiten verdoppelt die gesamte Rechnung.",
+      "Eine zusätzliche Einheit addiert $5$ EUR.",
+      "Der Tarif hat keine Fixkosten."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDie gesprenkelte Süllpüche, d.. Die regierende Gleichung ist\n\n$$35+5x=145$$\n\nDie Be an Die Übereinstimmung der beiden Ausdrücke zeigt, dass sie identisch sind.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nvon der gemeinsamen (ein) Lösung\n\n$x=22$ aus (1).zellen. Die Behauptung Tischzellen, $22$ units.\n\n$$x=\\dfrac{145-35}{5}$$\n\n$$x=22$$\n\nmned zu ko Vertrages m $22$ units\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nDie Verdoppelung nur der Einheitszahl verdoppelt den variablen Teil, nicht den festen Aufruf. Mit dem wiederein geladenen Tarif,\n\n$$C(x)=35+5x$$\n\nals Spieler der\n\n$$C(2x)=35+5(2x)$$\n\n$$C(2x)=35+10x$$\n\nDas Doppelte der ursprünglichen Rechnung ist\n\n$$2C(x)=235+10x$$\n\n$$2C(x)=70+10x$$\n\nDiese unterscheiden sich durch die verbleibenseitigen Festgebühr ned $35$ Durch den Boden den Boden den Boden den Boden den Boden den den Boden den ihn den Boden den zufolge\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nder Wagen von einem $C(x)=F+kx$Die Nebenfunktion ist ein Koeffizient $k$:\n\n$$C(x+1)-C(x)=k$$\n\nvon der gemeinsamen (ein) Lösung\n\n$k=5$, so\n\n$$C(x+1)-C(x)=5$$\n\nEs wird gezeigt, der $5$ EUR, entsprechend der Behauptung.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nDenen eigenes markten das . $C(x)=35+5x$. Die von der E-E- zufolge aus dem E-Ausgangs- und E-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs\n\n$$C(0)=35$$\n\nDie vorgespannten Zeiten $35$ Ausssenden der aus\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nDie Übersicht schreibt die Rechnung bereits als Fixgebühr plus Einheitspreis:\n\n$$35+5x=145$$\n\nDie Behauptung zeigt dieselbe Gleichung.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\n$$x=\\dfrac{145-35}{5}=22$$\n\nDie erfasste Rechnung hat $22$ Einheiten.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nVerdoppelt man nur die Einheiten, verdoppelt sich der variable Teil, nicht die Fixgebühr. Mit $C(x)=35+5x$ gilt\n\n$$C(2x)=35+5(2x)=35+10x$$\n\nwährend das Doppelte der Originalrechnung\n\n$$2C(x)=235+10x$$\n\nist. Der Unterschied ist die verbleibende Fixgebühr $35$ EUR.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nIn einem linearen Tarif $C(x)=F+kx$ ist die Grenzgebühr für eine Extra-Einheit der Koeffizient $k$:\n\n$$C(x+1)-C(x)=5$$\n\nEine Extra-Einheit addiert genau $5$ EUR.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer konstante Term in $C(x)=35+5x$ ist die Anfahrtsgebühr:\n\n$$C(0)=35$$\n\nDie Fixkosten betragen $35$ EUR, sind also nicht null.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Reparaturtarifgebühren: $35$ Für den Betrag $5$ Euro je Ersatzeinheit. 1 Rechnung auf denต $145$ EUR.\n\nweder- weder-oder-oder-lassen.\n\nlassen $x$ Zahl der Einheiten auf dieser Rechnung. Aus dem Per-Te mal!\n\n$$35+5x=145$$ (1)\n\n**Teil 2: Lösen.**\n\nrets der antrere die ant antucht\n\n$$5x=110$$\n\nBe\n\n$$x=22$$\n\n**Antwort.** Festgebühr $35$ ibel, $5$ EUR | $x=22$ (V ()) vonΜ von der den von der von der."
+    "solution_overview": "Ein Reparaturtarif berechnet eine feste Anfahrt von $35$ EUR plus $5$ EUR je Ersatzeinheit. Eine Rechnung beträgt insgesamt $145$ EUR.\n\n**Teil 1: Übersetzen.**\n\nEs sei $x$ die Anzahl der Einheiten auf dieser Rechnung. Fixkosten plus Stückkosten liefern\n\n$$35+5x=145$$ (1)\n\n**Teil 2: Lösen.**\n\nSubtrahiere die Fixgebühr:\n\n$$5x=110$$\n\nTeile durch den Stückpreis:\n\n$$x=22$$\n\n**Antwort.** Fixgebühr $35$ EUR | Stückpreis $5$ EUR | $x=22$ Einheiten auf der erfassten Rechnung."
   },
   "MATH 4.209": {
     "title": "Klausuraufgaben – 16",
-    "context": "A venue models operating surplus by $P(q)=-(q-5)(q-11)$ er, der : $q$ Nichts ist . Nicht mehr zu verwenden, $P(q)=0$, while a positive surplus means $P(q)>0$Das Management will auch die Symmetrieachse und den maximalen Überschuss.",
+    "context": "Ein Veranstaltungsort modelliert den Betriebsüberschuss durch $P(q)=-(q-5)(q-11)$ Tausend EUR, wobei $q$ ein nichtnegativer Besucherindex ist. Break-even bedeutet $P(q)=0$, positiver Überschuss bedeutet $P(q)>0$. Die Leitung möchte außerdem die Symmetrieachse und den maximalen Überschuss.",
     "statements": [
-      "Die Tageszeit- und Tageszeit-ori-has $5$ und $11$.",
-      "Ziel von $5<q<11$.",
-      "So den wir von den $q=8$.",
-      "Der maximale Überschuss ist $10$ thousand EUR.",
+      "Die Break-even-Indizes sind $5$ und $11$.",
+      "Positiver Überschuss liegt vor für $5<q<11$.",
+      "Die Symmetrieachse ist $q=8$.",
+      "Der maximale Überschuss beträgt $10$ Tausend EUR.",
       "Beide algebraischen Wurzeln sind negativ."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\ndie die Annen die die $P(q)=-(q-5)(q-11)$. Bauõ Zufahrt des Fa, zu: zu nachbento zutototo Bautotototo zu Fa 42 zu Betriebsso Fa.\n\n$$q-5=0$$\n\n$$q=5$$\n\nund\n\n$$q-11=0$$\n\n$$q=11$$\n\nBe $5$ und $11$\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nEine nach unten öffnende Parabel ist ausschließlich zwischen ihren Wurzeln positiv. Mit den für mit demklagen, mit der nerute auswirkt.\n\n$$P(q)>0 \\iff 5<q<11$$\n\nwas genau das beanspruchte offene Intervall ist\n\nWiederbeschaffungersatz: Nur die für die Belebung des Besatzes vorgesehene Beschleunigung ist möglich.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nDie Achse der Symmetrie eines Quadrats ist der Mittelpunkt seiner Wurzeln:\n\n$$q=\\frac{r_1+r_2}{2}$$\n\nvon der gemeinsamen (ein) Lösung\n\nDie Wurzeln $r_1=5$ und $r_2=11$. Substitute:\n\n$$q=\\frac{5+11}{2}$$\n\n$$q=\\frac{16}{2}$$\n\n$$q=8$$\n\nDie Behauptung lautet $q=8$Wir haben $q=8$, passend zum Aussage.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nDie Übersicht hat bereits die Vertexhöhe des wiedergewonnenen Quadrats ausgewertet:\n\n$$\nV = P(8) = 9\n$$\n\nDiese einzelne Zahl ist der maximale Wert auf dem Diagramm. Für den für die: druck ihnt : ner wert an ner en druck an ur besseres . Das beanspruchte Maximum entspricht nicht dieser wiederhergestellten Scheitelpunkthöhe.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nvon der gemeinsamen (ein) Lösung\n\n:: Bei den :en: : :: :\n\n$$\nr_1 = 5, \\qquad r_2 = 11\n$$\n\nEine Wurzel ist nur dann negativ, wenn sie strikt kleiner als Null ist. Überprüfen Sie jedes Zeichen:\n\n$$5>0$$\n\n$$11>0$$\n\nBeide Wurzeln sind positiv, also sind sie nicht beide negativ. Wenn hätte die jedoch diesucht die . kam die schütt die r die unter den glsprache Kurs dahingehende.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nDie Übersicht faktorisiert bereits $P(q)=-(q-5)(q-11)$. Nullsetzen des Produkts liefert die Break-even-Indizes\n\n$$q-5=0$$\n\n$$q=5$$\n\nund\n\n$$q-11=0$$\n\n$$q=11$$\n\nDie Break-even-Indizes sind also $5$ und $11$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nEine nach unten geöffnete Parabel ist streng zwischen ihren Wurzeln positiv. Mit den Wurzeln aus der Übersicht gilt\n\n$$P(q)>0 \\iff 5<q<11$$\n\nDas ist genau das behauptete offene Intervall.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDie Symmetrieachse einer Quadratischen ist der Mittelpunkt ihrer Wurzeln:\n\n$$q=\\frac{r_1+r_2}{2}$$\n\nMit $r_1=5$ und $r_2=11$:\n\n$$q=\\frac{5+11}{2}=8$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Übersicht wertet bereits die Scheitelhöhe aus:\n\n$$\nV = P(8) = 9\n$$\n\nDas ist der Maximalwert. Die Behauptung nennt $10$, was nicht gleich $9$ ist.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie algebraischen Wurzeln sind\n\n$$\nr_1 = 5, \\qquad r_2 = 11\n$$\n\nBeide sind positiv ($5>0$ und $11>0$), also nicht beide negativ.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Der Betriebsüberschuss wird modelliert durch $P(q)=-(q-5)(q-11)$ 1000 EUR für einen nicht negativen Besucherindex $q$.\n\nweder- weder-oder-oder-lassen.\n\n. $P(q)=0$ und a positive surplus means $P(q)>0$. desnden durch den\n\n$$P(q)=-q^{2}+16q-55$$\n\n**Part 2: Recover.**\n\n[[ was]] überhaupth nicht mehr mehr, dort dort. $q=5$ und $q=11$. Die Symmetrieachse ist ihr Mittelpunkt\n\n$$\nq = \\dfrac{5+11}{2} = 8\n$$\n\nDer maximale Überschuss ist der Scheitelpunktwert\n\n$$\nP(8) = -(8-5)(8-11) = 9\n$$\n\n**Antwort.** Wurzeln $5,11$ | axis $q=8$ | max surplus $9$ thousand EUR."
+    "solution_overview": "Der Betriebsüberschuss wird modelliert durch $P(q)=-(q-5)(q-11)$ Tausend EUR für einen nichtnegativen Besucherindex $q$.\n\n**Teil 1: Übersetzen.**\n\nBreak-even bedeutet $P(q)=0$, positiver Überschuss bedeutet $P(q)>0$. Ausmultiplizieren liefert die nach unten geöffnete Parabel\n\n$$P(q)=-q^{2}+16q-55$$\n\n**Teil 2: Rekonstruieren.**\n\nEin Produkt ist null, wenn ein Faktor null ist, also sind die Wurzeln $q=5$ und $q=11$. Die Symmetrieachse ist ihr Mittelpunkt\n\n$$\nq = \\dfrac{5+11}{2} = 8\n$$\n\nDer maximale Überschuss ist der Scheitelwert\n\n$$\nP(8) = -(8-5)(8-11) = 9\n$$\n\n**Antwort.** Wurzeln $5,11$ | Achse $q=8$ | max. Überschuss $9$ Tausend EUR."
   },
   "MATH 4.210": {
     "title": "Klausuraufgaben – 17",
@@ -3991,60 +3991,60 @@
   },
   "MATH 4.211": {
     "title": "Klausuraufgaben – 18",
-    "context": "einmal iste I mir ist $N(t)=250\\cdot2^{t/3}$, wobei $t$ wird in Jahren gemessen und $t=0$ nerd an dernerd an der $t\\ge0$Analysten vergleichen das Startniveau, den dreijährigen Wachstumsfaktor und die Zeit, die benötigt wird, um feste Vielfache des Startniveaus zu erreichen.",
+    "context": "Eine Abonnentenbasis folgt $N(t)=250\\cdot2^{t/3}$, wobei $t$ in Jahren gemessen wird und $t=0$ das Startdatum ist. Das Modell gilt nur für reelle $t\\ge0$. Analysten vergleichen das Startniveau, den Drei-Jahres-Wachstumsfaktor und die Zeit bis zu festen Vielfachen des Startniveaus.",
     "statements": [
       "$N(0)=250$.",
-      "Das die gefiedertes (be nur zu vorn)",
+      "Die Abonnentenbasis verdoppelt sich alle drei Jahre.",
       "$N(6)=750$.",
-      ": , , , , , , , , , , , , , , , , , , , , , , , , , , , , , $t=6$.",
-      "„zuspiel es zu ."
+      "Das Vierfache des Startniveaus wird bei $t=6$ erreicht.",
+      "Das Modell fällt auf seiner angegebenen Definitionsmenge."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nJede positive Zahl zur Potenz $0$ gleich $1$, so ist die Startstufe der führende Koeffizient:\n\n$$N(0)=A\\cdot 2^0$$\n\n$$\n2^0 = 1\n$$\n\nmit $A=250$ die Gesamtlage:\n\n$$N(0)=250\\cdot 1$$\n\n$$N(0)=250$$\n\nDie Behauptung lautet $N(0)=250$Wir haben $N(0)=250$, passend zum Aussage.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nDie Übersicht berechnete bereits den dreijährigen Wachstumsfaktor des wiederhergestellten Modells:\n\n$$\\frac{N(t+3)}{N(t)}=2$$\n\nder den erfindungsgemäßen $2$ ES geht -- in Hinweis auf die für : strukturierte,\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\n$$N(t)=250\\cdot 2^{t/3}$$\n\nAt $t=6$:\n\n$$N(6)=250\\cdot 2^{6/3}$$\n\n$$\n2^{6/3} = 2^{2}\n$$\n\n$$\n2^{2} = 4\n$$\n\n$$N(6)=250\\cdot 4$$\n\n$$N(6)=1000$$\n\nDie Behauptung lautet $N(6)=750$Aber das Modell gibt $1000$.\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$:\n\n$$250\\cdot 2^{t/3}=4\\cdot 250$$\n\n$$2^{t/3}=4$$\n\n$$2^{t/3}=2^{2}$$\n\nEquating exponents:\n\n$$t/3=2$$\n\n$$t=6$$\n\nAls , dies ist dies diese $t=6$.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nDie Basis $2>1$ und der Koeffizient von $t$ im Exponenten positiv ist, also $N$ ist eine strikte Erhöhung auf $t\\ge 0$. Das Modell verringert sich nicht auf seine angegebene Domain\n\nErsatz der wiedergewonnenen Stammeinträge:\n\n$$\nN(0) = 250\\cdot 2^{0} = 250\\cdot 1 = 250\n$$\n\n$$\n2^{(t+3)/3}/2^{t/3} = 2^{1} = 2\n$$\n\n$$\nN(6) = 250\\cdot 2^{6/3} = 250\\cdot 2^{2} = 1000\n$$\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nJede positive Zahl hoch $0$ ergibt $1$, also ist das Startniveau der führende Koeffizient:\n\n$$N(0)=250\\cdot 2^0=250\\cdot 1=250$$\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nDer Drei-Jahres-Wachstumsfaktor des Modells ist\n\n$$\\frac{N(t+3)}{N(t)}=2$$\n\nEin Faktor $2$ bedeutet Verdopplung alle drei Jahre.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\n$$N(6)=250\\cdot 2^{6/3}=250\\cdot 2^{2}=250\\cdot 4=1000$$\n\nDie Behauptung nennt $750$, das Modell liefert $1000$.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$:\n\n$$250\\cdot 2^{t/3}=4\\cdot 250$$\n\n$$2^{t/3}=4=2^{2}$$\n\n$$t/3=2$$\n\n$$t=6$$\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDie Basis $2>1$ und der Koeffizient von $t$ im Exponenten sind positiv, also ist $N$ auf $t\\ge 0$ streng wachsend. Das Modell fällt nicht.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Die Basis ist an der Basis der $N(t)=250\\cdot 2^{t/3}$ für real $t\\ge 0$, mit $t=0$ verwandelt in den Veren Verenen Veren Veren vom Verenen in den vom Veren Veren Ver\n\n**Part 1: Launch level.**\n\n$$\nN(0) = 250\\cdot 2^{0} = 250\\cdot 1 = 250\n$$\n\n** . ** zu einem Drei-Jahres-Wachstumsfaktor. das Ersetzen $t$ by $t+3$ Verfährreises hert umgekehrt\n\n$$\n2^{(t+3)/3}/2^{t/3} = 2^{1} = 2\n$$\n\ndie sichn die diem\n\n**Part 3: Named levels.**\n\n$$\nN(6) = 250\\cdot 2^{6/3} = 250\\cdot 2^{2} = 1000\n$$\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$, so\n\n$$\n2^{t/3} = 4 = 2^{2}\n$$\n\n$$t/3=2$$\n\n$$t=6$$\n\n**Antwort.** $N(0)=250$ Das ll. $3$ Jahre | $N(6)=1000$ vierfache Zeit $t=6$."
+    "solution_overview": "Die Abonnentenbasis folgt $N(t)=250\\cdot 2^{t/3}$ für reelle $t\\ge 0$, mit $t=0$ als Startdatum.\n\n**Teil 1: Startniveau.**\n\n$$\nN(0) = 250\\cdot 2^{0} = 250\n$$\n\n**Teil 2: Drei-Jahres-Wachstumsfaktor.** Ersetzen von $t$ durch $t+3$ multipliziert das Modell mit\n\n$$\n2^{(t+3)/3}/2^{t/3} = 2^{1} = 2\n$$\n\nalso verdoppelt sich die Basis alle drei Jahre.\n\n**Teil 3: Genannte Niveaus.**\n\n$$\nN(6) = 250\\cdot 2^{6/3} = 1000\n$$\n\nDas Vierfache des Startniveaus bedeutet $N(t)=4N(0)$, also $2^{t/3}=4$, also $t=6$.\n\n**Antwort.** $N(0)=250$ | verdoppelt alle $3$ Jahre | $N(6)=1000$ | Vierfach-Zeit $t=6$."
   },
   "MATH 4.212": {
     "title": "Klausuraufgaben – 19",
-    "context": "Ein Reparaturservice erhebt für jedes Ersatzgerät eine feste Abrufgebühr von 40 EUR und 6 EUR. Eine Rechnung beläuft sich auf insgesamt 184 EUR wie der Preis und die Anzahl der vorangegangenen Einheiten. 6.1: das von dem für das von den von dem für den von seine maße zu tun.",
+    "context": "Ein Reparaturservice berechnet eine feste Anfahrtsgebühr von 40 EUR und 6 EUR für jede Ersatzeinheit. Eine Rechnung beträgt insgesamt 184 EUR, und die Anzahl der Einheiten ist die einzige Unbekannte. Derselbe lineare Tarif gilt für jede Rechnung, ohne Steuer oder Rabatt.",
     "statements": [
-      "Die Rechnungsgleichung ist $40+6x=184$.",
-      "Die Rechnung enthält $24$ units.",
-      "Die wir wir uns nun wieder auf die",
-      "Eine zusätzliche Einheit fügt hinzu $6$ EUR.",
-      "Der Tarif hat Null Fixkosten."
+      "Die Rechnungsgleichung lautet $40+6x=184$.",
+      "Die Rechnung enthält $24$ Einheiten.",
+      "Eine Verdopplung der Einheiten verdoppelt die gesamte Rechnung.",
+      "Eine zusätzliche Einheit addiert $6$ EUR.",
+      "Der Tarif hat keine Fixkosten."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\nDie gesprenkelte Süllpüche, d.. Die regierende Gleichung ist\n\n$$40+6x=184$$\n\nDie Be an Die Übereinstimmung der beiden Ausdrücke zeigt, dass sie identisch sind.\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nvon der gemeinsamen (ein) Lösung\n\n$x=24$ aus (1).zellen. Die Behauptung Tischzellen, $24$ units.\n\n$$x=\\dfrac{184-40}{6}$$\n\n$$x=24$$\n\nmned zu ko Vertrages m $24$ units\n\nDie Aussage ist wahr.",
-      "**C.** → Falsch\n\nDie Verdoppelung nur der Einheitszahl verdoppelt den variablen Teil, nicht den festen Aufruf. Mit dem wiederein geladenen Tarif,\n\n$$C(x)=40+6x$$\n\nals Spieler der\n\n$$C(2x)=40+6(2x)$$\n\n$$C(2x)=40+12x$$\n\nDas Doppelte der ursprünglichen Rechnung ist\n\n$$2C(x)=240+12x$$\n\n$$2C(x)=80+12x$$\n\nDiese unterscheiden sich durch die verbleibenseitigen Festgebühr ned $40$ Durch den Boden den Boden den Boden den Boden den Boden den den Boden den ihn den Boden den zufolge\n\nDie Aussage ist falsch.",
-      "**D.** → Wahr\n\nder Wagen von einem $C(x)=F+kx$Die Nebenfunktion ist ein Koeffizient $k$:\n\n$$C(x+1)-C(x)=k$$\n\nvon der gemeinsamen (ein) Lösung\n\n$k=6$, so\n\n$$C(x+1)-C(x)=6$$\n\nEs wird gezeigt, der $6$ EUR, entsprechend der Behauptung.\n\nDie Aussage ist wahr.",
-      "**E.** → Falsch\n\nDenen eigenes markten das . $C(x)=40+6x$. Die von der E-E- zufolge aus dem E-Ausgangs- und E-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs-Ausgangs\n\n$$C(0)=40$$\n\nDie vorgespannten Zeiten $40$ Ausssenden der aus\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nDie Übersicht schreibt die Rechnung bereits als Fixgebühr plus Einheitspreis:\n\n$$40+6x=184$$\n\nDie Behauptung zeigt dieselbe Gleichung.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\n$$x=\\dfrac{184-40}{6}=24$$\n\nDie erfasste Rechnung hat $24$ Einheiten.\n\nDie Aussage ist wahr.",
+      "**C.** → Falsch\n\nVerdoppelt man nur die Einheiten, verdoppelt sich der variable Teil, nicht die Fixgebühr. Mit $C(x)=40+6x$ gilt\n\n$$C(2x)=40+6(2x)=40+12x$$\n\nwährend das Doppelte der Originalrechnung\n\n$$2C(x)=240+12x$$\n\nist. Der Unterschied ist die verbleibende Fixgebühr $40$ EUR.\n\nDie Aussage ist falsch.",
+      "**D.** → Wahr\n\nIn einem linearen Tarif $C(x)=F+kx$ ist die Grenzgebühr für eine Extra-Einheit der Koeffizient $k$:\n\n$$C(x+1)-C(x)=6$$\n\nEine Extra-Einheit addiert genau $6$ EUR.\n\nDie Aussage ist wahr.",
+      "**E.** → Falsch\n\nDer konstante Term in $C(x)=40+6x$ ist die Anfahrtsgebühr:\n\n$$C(0)=40$$\n\nDie Fixkosten betragen $40$ EUR, sind also nicht null.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Reparaturtarifgebühren: $40$ Für den Betrag $6$ Euro je Ersatzeinheit. 1 Rechnung auf denต $184$ EUR.\n\nweder- weder-oder-oder-lassen.\n\nlassen $x$ Zahl der Einheiten auf dieser Rechnung. Aus dem Per-Te mal!\n\n$$40+6x=184$$ (1)\n\n**Teil 2: Lösen.**\n\nrets der antrere die ant antucht\n\n$$6x=144$$\n\nBe\n\n$$x=24$$\n\n**Antwort.** Festgebühr $40$ ibel, $6$ EUR | $x=24$ (V ()) vonΜ von der den von der von der."
+    "solution_overview": "Ein Reparaturtarif berechnet eine feste Anfahrt von $40$ EUR plus $6$ EUR je Ersatzeinheit. Eine Rechnung beträgt insgesamt $184$ EUR.\n\n**Teil 1: Übersetzen.**\n\nEs sei $x$ die Anzahl der Einheiten auf dieser Rechnung. Fixkosten plus Stückkosten liefern\n\n$$40+6x=184$$ (1)\n\n**Teil 2: Lösen.**\n\nSubtrahiere die Fixgebühr:\n\n$$6x=144$$\n\nTeile durch den Stückpreis:\n\n$$x=24$$\n\n**Antwort.** Fixgebühr $40$ EUR | Stückpreis $6$ EUR | $x=24$ Einheiten auf der erfassten Rechnung."
   },
   "MATH 4.213": {
     "title": "Klausuraufgaben – 20",
-    "context": "A venue models operating surplus by $P(q)=-(q-6)(q-12)$ er, der : $q$ Nichts ist . Nicht mehr zu verwenden, $P(q)=0$, while a positive surplus means $P(q)>0$Das Management will auch die Symmetrieachse und den maximalen Überschuss.",
+    "context": "Ein Veranstaltungsort modelliert den Betriebsüberschuss durch $P(q)=-(q-6)(q-12)$ Tausend EUR, wobei $q$ ein nichtnegativer Besucherindex ist. Break-even bedeutet $P(q)=0$, positiver Überschuss bedeutet $P(q)>0$. Die Leitung möchte außerdem die Symmetrieachse und den maximalen Überschuss.",
     "statements": [
-      "Die Tageszeit- und Tageszeit-ori-has $6$ und $12$.",
-      "Ziel von $6<q<12$.",
-      "So den wir von den $q=9$.",
-      "Der maximale Überschuss ist $10$ thousand EUR.",
+      "Die Break-even-Indizes sind $6$ und $12$.",
+      "Positiver Überschuss liegt vor für $6<q<12$.",
+      "Die Symmetrieachse ist $q=9$.",
+      "Der maximale Überschuss beträgt $10$ Tausend EUR.",
       "Beide algebraischen Wurzeln sind negativ."
     ],
     "tactical_explanations": [
-      "**A.** → Wahr\n\ndie die Annen die die $P(q)=-(q-6)(q-12)$. Bauõ Zufahrt des Fa, zu: zu nachbento zutototo Bautotototo zu Fa 42 zu Betriebsso Fa.\n\n$$q-6=0$$\n\n$$q=6$$\n\nund\n\n$$q-12=0$$\n\n$$q=12$$\n\nBe $6$ und $12$\n\nDie Aussage ist wahr.",
-      "**B.** → Wahr\n\nEine nach unten öffnende Parabel ist ausschließlich zwischen ihren Wurzeln positiv. Mit den für mit demklagen, mit der nerute auswirkt.\n\n$$P(q)>0 \\iff 6<q<12$$\n\nwas genau das beanspruchte offene Intervall ist\n\nWiederbeschaffungersatz: Nur die für die Belebung des Besatzes vorgesehene Beschleunigung ist möglich.\n\nDie Aussage ist wahr.",
-      "**C.** → Wahr\n\nDie Achse der Symmetrie eines Quadrats ist der Mittelpunkt seiner Wurzeln:\n\n$$q=\\frac{r_1+r_2}{2}$$\n\nvon der gemeinsamen (ein) Lösung\n\nDie Wurzeln $r_1=6$ und $r_2=12$. Substitute:\n\n$$q=\\frac{6+12}{2}$$\n\n$$q=\\frac{18}{2}$$\n\n$$q=9$$\n\nDie Behauptung lautet $q=9$Wir haben $q=9$, passend zum Aussage.\n\nDie Aussage ist wahr.",
-      "**D.** → Falsch\n\nDie Übersicht hat bereits die Vertexhöhe des wiedergewonnenen Quadrats ausgewertet:\n\n$$\nV = P(9) = 9\n$$\n\nDiese einzelne Zahl ist der maximale Wert auf dem Diagramm. Für den für die: druck ihnt : ner wert an ner en druck an ur besseres . Das beanspruchte Maximum entspricht nicht dieser wiederhergestellten Scheitelpunkthöhe.\n\nDie Aussage ist falsch.",
-      "**E.** → Falsch\n\nvon der gemeinsamen (ein) Lösung\n\n:: Bei den :en: : :: :\n\n$$\nr_1 = 6, \\qquad r_2 = 12\n$$\n\nEine Wurzel ist nur dann negativ, wenn sie strikt kleiner als Null ist. Überprüfen Sie jedes Zeichen:\n\n$$6>0$$\n\n$$12>0$$\n\nBeide Wurzeln sind positiv, also sind sie nicht beide negativ. Wenn hätte die jedoch diesucht die . kam die schütt die r die unter den glsprache Kurs dahingehende.\n\nDie Aussage ist falsch."
+      "**A.** → Wahr\n\nDie Übersicht faktorisiert bereits $P(q)=-(q-6)(q-12)$. Nullsetzen des Produkts liefert die Break-even-Indizes\n\n$$q-6=0$$\n\n$$q=6$$\n\nund\n\n$$q-12=0$$\n\n$$q=12$$\n\nDie Break-even-Indizes sind also $6$ und $12$.\n\nDie Aussage ist wahr.",
+      "**B.** → Wahr\n\nEine nach unten geöffnete Parabel ist streng zwischen ihren Wurzeln positiv. Mit den Wurzeln aus der Übersicht gilt\n\n$$P(q)>0 \\iff 6<q<12$$\n\nDas ist genau das behauptete offene Intervall.\n\nDie Aussage ist wahr.",
+      "**C.** → Wahr\n\nDie Symmetrieachse einer Quadratischen ist der Mittelpunkt ihrer Wurzeln:\n\n$$q=\\frac{r_1+r_2}{2}$$\n\nMit $r_1=6$ und $r_2=12$:\n\n$$q=\\frac{6+12}{2}=9$$\n\nDie Aussage ist wahr.",
+      "**D.** → Falsch\n\nDie Übersicht wertet bereits die Scheitelhöhe aus:\n\n$$\nV = P(9) = 9\n$$\n\nDas ist der Maximalwert. Die Behauptung nennt $10$, was nicht gleich $9$ ist.\n\nDie Aussage ist falsch.",
+      "**E.** → Falsch\n\nDie algebraischen Wurzeln sind\n\n$$\nr_1 = 6, \\qquad r_2 = 12\n$$\n\nBeide sind positiv ($6>0$ und $12>0$), also nicht beide negativ.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Der Betriebsüberschuss wird modelliert durch $P(q)=-(q-6)(q-12)$ 1000 EUR für einen nicht negativen Besucherindex $q$.\n\nweder- weder-oder-oder-lassen.\n\n. $P(q)=0$ und a positive surplus means $P(q)>0$. desnden durch den\n\n$$P(q)=-q^{2}+18q-72$$\n\n**Part 2: Recover.**\n\n[[ was]] überhaupth nicht mehr mehr, dort dort. $q=6$ und $q=12$. Die Symmetrieachse ist ihr Mittelpunkt\n\n$$\nq = \\dfrac{6+12}{2} = 9\n$$\n\nDer maximale Überschuss ist der Scheitelpunktwert\n\n$$\nP(9) = -(9-6)(9-12) = 9\n$$\n\n**Antwort.** Wurzeln $6,12$ | axis $q=9$ | max surplus $9$ thousand EUR."
+    "solution_overview": "Der Betriebsüberschuss wird modelliert durch $P(q)=-(q-6)(q-12)$ Tausend EUR für einen nichtnegativen Besucherindex $q$.\n\n**Teil 1: Übersetzen.**\n\nBreak-even bedeutet $P(q)=0$, positiver Überschuss bedeutet $P(q)>0$. Ausmultiplizieren liefert die nach unten geöffnete Parabel\n\n$$P(q)=-q^{2}+18q-72$$\n\n**Teil 2: Rekonstruieren.**\n\nEin Produkt ist null, wenn ein Faktor null ist, also sind die Wurzeln $q=6$ und $q=12$. Die Symmetrieachse ist ihr Mittelpunkt\n\n$$\nq = \\dfrac{6+12}{2} = 9\n$$\n\nDer maximale Überschuss ist der Scheitelwert\n\n$$\nP(9) = -(9-6)(9-12) = 9\n$$\n\n**Antwort.** Wurzeln $6,12$ | Achse $q=9$ | max. Überschuss $9$ Tausend EUR."
   },
   "MATH 4.214": {
     "title": "Klausuraufgaben – 21",
