@@ -1255,7 +1255,7 @@
   },
   "MATH 8.67": {
     "title": "Maststahlmasse unter endlicher prozentualer Skalierung",
-    "context": "Die Stahlmasse eines selbstähnlichen Mastes folgt $M(h)=A h^{k}$ Kilogramm, wobei $h>0$ die Masthöhe in Meter ist. Die Konstruktionsnotizen besagen, dass eine Verlängerung jedes Mastes um $20\\%$ die Stahlmasse um $72.8\\%$ erhöht, und ein Referenzmast von $10$ m genau $500$ kg Stahl verwendet. Bewerte jede Aussage. Markiere sie mit Richtig oder Falsch.",
+    "context": "Die Stahlmasse eines selbstähnlichen Mastes folgt $M(h)=A h^{k}$ Kilogramm, wobei $h>0$ die Masthöhe in Metern ist. Die Konstruktionsnotizen besagen: Eine Verlängerung um $20\\%$ erhöht die Stahlmasse um $72{,}8\\%$, und ein Referenzmast von $10$ m verwendet genau $500$ kg Stahl. Bewerte jede Aussage. Markiere sie mit RICHTIG oder FALSCH.",
     "statements": [
       "Der Exponent ist größer als eins, so dass die Stahlmasse die Höhe übersteigt.",
       "Ein $12$-m-Mast verbraucht bereits mehr als $800$ kg Stahl.",
