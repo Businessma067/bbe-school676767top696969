@@ -42,7 +42,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Lösungsmenge der Ungleichung $\\dfrac{x + 2}{x^{2} - 9} > 0$ ist $(-3, -2) \\cup (3, \\infty)$.",
-      "Das In-Vereinigungs-Set von $\\dfrac{(x + 2)^{2}}{x - 3} \\ge 0$ ist einfach nur $x > 3$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 2)^{2}}{x - 3} \\ge 0$ ist genau $x > 3$.",
       "Die Lösungsmenge der Ungleichung $\\dfrac{x + 4}{x - 2} \\le 0$ ist $-4 \\le x < 2$.",
       "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x - 5} \\ge 0$ ist $[-2, 2] \\cup (5, \\infty)$.",
       "Die Lösungsmenge der Ungleichung $\\dfrac{5x - 10}{x + 3} \\ge 0$ ist $(-\\infty, -3) \\cup [2, \\infty)$."
@@ -136,7 +136,7 @@
     "title": "Rationale Ungleichungen — 8",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösung setzt Rechtsakte in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Anträge in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in der Unzahl in",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 5)^{2}}{x - 4} \\le 0$ ist genau $x = -5$.",
       "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 9} \\ge 0$ ist $(-\\infty, -3) \\cup [-2, 2] \\cup (3, \\infty)$.",
       "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 6)^{2}}{x + 9} \\ge 0$ ist genau $x \\ge 6$.",
       "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x^{2} - 4} \\le 0$ ist $[-6, -2] \\cup [2, 6]$.",
@@ -1275,10 +1275,10 @@
     "title": "Basketball-Punktedurchschnitt",
     "context": "Eine Basketballspielerin möchte über ihre ersten $5$ Spiele einen Saisondurchschnitt von mindestens $20$ Punkten pro Spiel. Ihre Punktzahlen in den ersten $4$ Spielen waren $18$, $22$, $19$ und $17$. Es sei $x$ ihre Punktzahl im $5$. Spiel.",
     "statements": [
-      "Mit $24$ Punkten im $5$. Spiel erreicht sie das Durchschnittsziel genau.",
-      "Mit $23$ Punkten im $5$. Spiel erreicht sie das Durchschnittsziel.",
-      "Die minimale Punktzahl, die sie im $5$. Spiel braucht, beträgt $20$ Punkte.",
-      "Mit $30$ Punkten im $5$. Spiel läge ihr Durchschnitt über $20$.",
+      "Mit 24 Punkten im 5. Spiel erreicht sie den Durchschnittszielwert genau.",
+      "Mit 23 Punkten im 5. Spiel erreicht sie den Durchschnittszielwert.",
+      "Die Mindestpunktzahl, die sie im 5. Spiel braucht, beträgt 20 Punkte.",
+      "Mit 30 Punkten im 5. Spiel läge ihr Durchschnitt über 20.",
       "Das Freimachen des Bruchs in $\\dfrac{18+22+19+17+x}{5} \\ge 20$ liefert ${76 + x \\ge 100}$."
     ],
     "solution_overview": "Aus $\\dfrac{76+x}{5}\\ge 20$ folgt $76+x\\ge 100$, also $x\\ge 24$. Das Minimum ist $24$, nicht $20$.",

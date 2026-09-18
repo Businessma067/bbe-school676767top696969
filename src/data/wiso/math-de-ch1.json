@@ -2262,13 +2262,13 @@
   },
   "MATH 1.120": {
     "title": "Klausuraufgaben – 12",
-    "context": "Ein Schulungszentrum hat 180 Teilnehmer. Analytik: 105, Haushaltsführung: 92; Für die Zwecke von Anhang I der Verordnung (EG) Nr den Durchführungsverordnung (EU) Nr. 680/2014 gelten verwandelten Nachbare: Jeder Teilnehmer ist gezählt, je nach dem, was in der Tabelle angegeben ist.",
+    "context": "Ein Schulungszentrum hat 180 Teilnehmer. Analytik hat 105, Haushaltsführung 92 und Compliance 80. Die paarweisen Überschneidungen betragen 48 (Analytik und Haushaltsführung), 41 (Analytik und Compliance) sowie 36 (Haushaltsführung und Compliance); 20 Teilnehmer belegen alle drei Kurse. Jeder Teilnehmer wird genau einmal in der Gesamtzahl des Zentrums gezählt, einschließlich derer ohne Kurs.",
     "statements": [
-      "Genau 8 Teilnehmer nehmen keinen der drei Kurse.",
-      "S. k.",
-      "verwandelt, um es zu ben, die es ist",
-      "Genau 65 nehmen mindestens zwei Kurse.",
-      "Die ;t er war;"
+      "Genau 8 Teilnehmer belegen keinen der drei Kurse.",
+      "Genau 56 belegen nur Analytik.",
+      "Genau 65 belegen genau zwei Kurse.",
+      "Genau 65 belegen mindestens zwei Kurse.",
+      "Genau 23 belegen nur Compliance."
     ],
     "tactical_explanations": [
       "**A.** → Richtig\n\n$$105+92=197$$\n\n$$197+80=277$$\n\n$$277-48=229$$\n\n$$229-41=188$$\n\n$$188-36=152$$\n\n$$152+20=172$$\n\n$$180-172=8$$\n\nDie Aussage ist wahr.",
