@@ -26,6 +26,15 @@ export function scrubStatementHints(text: string): string {
       /\s*\([^)]*(?:divided by|multiplied by|equals|equal to|means|defined as|calculated as|computed as|i\.e\.|e\.g\.|cost of sales|revenue divided|sum of|difference between|ratio of|minus|plus)[^)]*\)/gi,
       "",
     )
+    // Formula coaching like "(current assets to current liabilities)" / "(revenue to average total assets)"
+    .replace(
+      /\s*\([^)]*\b(?:assets|liabilities|equity|revenue|inventory|capital|sales)\b[^)]*\b(?:to|over|versus|vs\.?|relative to|divided by)\b[^)]*\)/gi,
+      "",
+    )
+    .replace(
+      /\s*\([^)]*\b(?:to|over|versus|vs\.?|relative to|divided by)\b[^)]*\b(?:assets|liabilities|equity|revenue|inventory|capital|sales)\b[^)]*\)/gi,
+      "",
+    )
     .replace(/\s*\([^)]*[\/÷=×*][^)]*\)/g, "")
     .replace(
       /\s*\((?:intangible|tangible|operating result|gross profit|net profit|before tax|after tax|current|non-current)\)/gi,

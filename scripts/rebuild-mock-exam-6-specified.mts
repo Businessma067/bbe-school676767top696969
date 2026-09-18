@@ -147,8 +147,8 @@ Evaluate the following economic assertions:`;
     "Average inventory exceeds average trade receivables by exactly EUR 30,000.",
     "Inventory days lie strictly between 55 and 60.",
     "The cash-conversion cycle is strictly longer than 50 days but strictly shorter than 55 days.",
-    "The year-end current ratio (current assets to current liabilities) exceeds 2.5.",
-    "Asset turnover (revenue to average total assets) exceeds 1.5.",
+    "The year-end current ratio exceeds 2.5.",
+    "Asset turnover exceeds 1.5.",
   ];
 
   const answer_key = [true, true, true, true, false];
@@ -285,21 +285,29 @@ function buildEnglish() {
   };
 }
 
-// ---- assemble (unused hard bank + CCC custom; no overlap with Mocks 1–5) ----
-const economics = [
-  mapEcon(byId(2, "CASE 2.6.29")),
-  mapEcon(byId(3, "CASE 3.4.16")),
-  mapEcon(byId(4, "CASE 4.3.20")),
-  mapEcon(byId(5, "CASE 5.5.29")),
-  mapEcon(byId(6, "CASE 6.3.017")),
-  mapEcon(byId(6, "CASE 6.1.011")),
-  mapEcon(byId(6, "CASE 6.1.019")),
-  mapEcon(byId(6, "CASE 6.3.008")),
-  mapEcon(byId(6, "CASE 6.5.022")),
-  buildCashConversionCase(),
-];
+// ---- assemble: preserve curated econ/english from prior sourced; refresh CCC + math ----
+const prev = JSON.parse(fs.readFileSync(outPath, "utf8")) as {
+  economics: Array<Record<string, unknown>>;
+  english: { passage: string; passageTitle?: string; tasks: Array<Record<string, unknown>> };
+  math: Array<Record<string, unknown>>;
+};
 
-const english = buildEnglish();
+const economics = prev.economics.map((t) => {
+  if (t.case_id === "CASE 6.MOCK.CCC") return buildCashConversionCase();
+  // Re-scrub stem coaching on preserved claims
+  return {
+    ...t,
+    statements: ((t.statements as string[]) || []).map((s) =>
+      s
+        .replace(/\s*\(current assets to current liabilities\)/gi, "")
+        .replace(/\s*\(revenue to average total assets\)/gi, "")
+        .replace(/\s{2,}/g, " ")
+        .trim(),
+    ),
+  };
+});
+
+const english = prev.english;
 
 const math = [
   buildMathQ22Sets(),

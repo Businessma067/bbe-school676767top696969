@@ -71,7 +71,11 @@ function scrubEconClaim(text: string): string {
       "",
     )
     .replace(
-      /\s*\((?:operating result|revenue|cost of sales|equity|assets|liabilities)[^)]*\)/gi,
+      /\s*\((?:operating result|revenue|cost of sales|equity|assets|liabilities|current assets|average)[^)]*\)/gi,
+      "",
+    )
+    .replace(
+      /\s*\([^)]*\b(?:assets|liabilities|equity|revenue|inventory)\b[^)]*\b(?:to|over|relative to)\b[^)]*\)/gi,
       "",
     )
     .replace(/\s{2,}/g, " ")
@@ -106,7 +110,7 @@ export const MOCK_EXAM_6_POINTS_TOTAL =
 
 /** Bump when Mock 6 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_6_CONTENT_REV =
-  "2026-09-18e · 34q · Reshoring · hard CCC · multi-step alt types";
+  "2026-09-18f · 34q · Reshoring · Q22/25–31/33–34 harden · tables_markdown";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

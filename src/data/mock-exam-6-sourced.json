@@ -271,8 +271,8 @@
         "Average inventory exceeds average trade receivables by exactly EUR 30,000.",
         "Inventory days lie strictly between 55 and 60.",
         "The cash-conversion cycle is strictly longer than 50 days but strictly shorter than 55 days.",
-        "The year-end current ratio (current assets to current liabilities) exceeds 2.5.",
-        "Asset turnover (revenue to average total assets) exceeds 1.5."
+        "The year-end current ratio exceeds 2.5.",
+        "Asset turnover exceeds 1.5."
       ],
       "answer_key": [
         true,
@@ -642,33 +642,33 @@
     {
       "case_id": "MATH 1.MOCK.LOGICQ",
       "id": "MATH 1.MOCK.LOGICQ",
-      "title": "Necessary vs sufficient and nested quantifiers",
+      "title": "Even–multiple sets — five unlike logic traps",
       "chapter": 1,
       "subsection": "1.3",
-      "context": "In the universe of real numbers, let $P(x)$ mean “$x>3$” and $Q(x)$ mean “$x^{2}>9$”. Decide whether each claim is true or false.",
+      "context": "Let $U=\\{1,2,3,\\ldots,12\\}$. Define\n$A=\\{n\\in U: n\\text{ is even}\\}$,\n$B=\\{n\\in U: n\\text{ is a multiple of }3\\}$,\n$C=\\{n\\in U: n\\text{ is a multiple of }4\\}$,\nand let $P(n)$ mean “$n\\in A$” while $Q(n)$ means “$n\\in B$”.\n\nDecide whether each claim is true or false.",
       "statements": [
-        "$P(x)$ is a sufficient condition for $Q(x)$.",
-        "$P(x)$ is a necessary condition for $Q(x)$.",
-        "The statement $\\forall x\\,(P(x)\\Rightarrow Q(x))$ is true.",
-        "The statement $\\forall x\\,(Q(x)\\Rightarrow P(x))$ is true.",
-        "The statement $\\exists x\\,\\forall y\\,(y>x\\Rightarrow Q(y))$ is true."
+        "The set $A\\cup B$ contains exactly eight elements of $U$.",
+        "Every element of $C$ automatically belongs to $A$, but the converse fails: some element of $A$ lies outside $C$.",
+        "Every common element of $A$ and $B$ also belongs to $C$.",
+        "There exists an even element of $U$ that is a multiple of $4$ yet is not a multiple of $3$.",
+        "Whenever $P(n)$ and $Q(n)$ both hold, $n$ must lie in $C$."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIf $x>3$, then $x^{2}>9$. So $P$ forces $Q$: $P$ is sufficient for $Q$.\n\nSo the statement is True.",
-        "**B.** → False\n\nNecessary would require $Q\\Rightarrow P$. For $x=-4$, $x^{2}=16>9$ but $x\\ngtr 3$.\n\nSo the statement is False.",
-        "**C.** → True\n\nThis is exactly the sufficient implication of letter A, quantified over all real $x$.\n\nSo the statement is True.",
-        "**D.** → False\n\nSame counter-example $x=-4$ as in letter B.\n\nSo the statement is False.",
-        "**E.** → True\n\nChoose $x=3$. Then every $y>3$ satisfies $y^{2}>9$, i.e. $Q(y)$.\n\nSo the statement is True."
+        "**A.** → True\n\n$|A|=6$, $|B|=4$, $|A\\cap B|=2$, so $|A\\cup B|=6+4-2=8$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$C=\\{4,8,12\\}\\subseteq A$, while e.g. $2\\in A\\setminus C$.\n\nSo the statement is True.",
+        "**C.** → False\n\n$6\\in A\\cap B$ but $6\\notin C$.\n\nSo the statement is False.",
+        "**D.** → True\n\n$n=4$ (or $n=8$) is even, in $C$, and not a multiple of $3$.\n\nSo the statement is True.",
+        "**E.** → False\n\n$P(6)\\wedge Q(6)$ holds, yet $6\\notin C$. Equivalently: $A\\cap B\\not\\subseteq C$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "$P\\Rightarrow Q$ holds; $Q\\Rightarrow P$ fails at $-4$. $\\exists x\\forall y$ works with $x=3$."
+      "solution_overview": "$|A\\cup B|=8$. $C\\subseteq A\\neq$ converse. $6\\in A\\cap B\\setminus C$. Exists $4\\in A\\cap C\\setminus B$. $P\\wedge Q\\not\\Rightarrow$ in $C$."
     },
     {
       "case_id": "MATH 2.MOCK.RATSIM",
@@ -735,95 +735,95 @@
     {
       "case_id": "MATH 4.MOCK.EQPACK",
       "id": "MATH 4.MOCK.EQPACK",
-      "title": "Linked absolute and radical equations — empty intersection trap",
+      "title": "Two easy linear equations — unique solution checks",
       "chapter": 4,
-      "subsection": "4.3",
-      "context": "Consider the simultaneous conditions\n\n$$\n|x-2|+|x+1|=5,\\qquad \\sqrt{2x+3}=x-1.\n$$\n\nDecide whether each statement is true or false.",
+      "subsection": "4.1",
+      "context": "Consider the two linear equations\n\n$$\nx+y=7,\\qquad 2x-y=5.\n$$\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The absolute-value equation has exactly two real solutions.",
-        "One of the absolute-value solutions lies in the open interval $(-1,2)$.",
-        "The radical equation has exactly one real solution.",
-        "The radical solution is strictly larger than $4$.",
-        "There is a real number that satisfies both equations at once."
+        "The pair $(x,y)=(4,3)$ solves both equations at once.",
+        "The system has exactly one real solution.",
+        "In the solution, $x$ is strictly larger than $y$.",
+        "The product of the two solution coordinates equals $12$.",
+        "There is a second distinct real solution besides $(4,3)$."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nOutside $[-1,2]$ the absolute sum is linear and equals $5$ only at $x=-2$ and $x=3$. Inside $[-1,2]$ the sum equals $3\\neq 5$.\n\nSo the statement is True.",
-        "**B.** → False\n\nNeither $-2$ nor $3$ lies in $(-1,2)$.\n\nSo the statement is False.",
-        "**C.** → True\n\nDomain $x\\ge 1$. Squaring yields $x=2\\pm\\sqrt{6}$; only $x=2+\\sqrt{6}$ survives.\n\nSo the statement is True.",
-        "**D.** → True\n\n$2+\\sqrt{6}\\approx 4.45>4$.\n\nSo the statement is True.",
-        "**E.** → False\n\nThe absolute solutions are $\\{-2,3\\}$ while the radical solution is $2+\\sqrt{6}\\neq 3$, so the intersection is empty.\n\nSo the statement is False."
+        "**A.** → True\n\n$4+3=7$ and $2\\cdot 4-3=5$.\n\nSo the statement is True.",
+        "**B.** → True\n\nAdding the equations yields $3x=12$, so $x=4$, $y=3$ uniquely.\n\nSo the statement is True.",
+        "**C.** → True\n\n$4>3$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$4\\cdot 3=12$.\n\nSo the statement is True.",
+        "**E.** → False\n\nA non-degenerate $2\\times 2$ linear system has at most one solution; here it is $(4,3)$.\n\nSo the statement is False."
       ],
-      "difficulty_level": "5/5",
-      "solution_overview": "Abs roots $\\{-2,3\\}$. Radical root $2+\\sqrt{6}$. No common solution."
+      "difficulty_level": "2/5",
+      "solution_overview": "Unique solution $(4,3)$. $x>y$, product $12$, no second root."
     },
     {
       "case_id": "MATH 5.MOCK.LIN2",
       "id": "MATH 5.MOCK.LIN2",
-      "title": "Parametric two-by-two system — singular cases and checks",
+      "title": "Verbal two-line schedule — feasibility without plugging pairs",
       "chapter": 5,
       "subsection": "5.10",
-      "context": "For a real parameter $a$, consider\n\n$$\n\\begin{cases}\nax+y=3\\\\\n2x+(a-1)y=a.\n\\end{cases}\n$$\n\nDecide whether each statement is true or false.",
+      "context": "A planner allocates non-negative hours $x$ on line A and $y$ on line B. The brief is given only in words, with a real parameter $t$:\n\n- Twice the A-hours plus the B-hours must equal $t$.\n- The B-hours must equal the A-hours plus $2$.\n- Both hour totals must be at least $0$.\n\nDecide whether each statement is true or false. Do not treat the letters as invitations to guess a single numeric pair; reason from the structure.",
       "statements": [
-        "The system has a unique solution for every real $a$ except $a=2$ and $a=-1$.",
-        "If $a=2$, the system has infinitely many solutions.",
-        "If $a=-1$, the system has no solution.",
-        "If $a=0$, the unique solution satisfies $x+y=3$.",
-        "If $a=1$, the unique solution is $\\bigl(\\tfrac12,\\tfrac52\\bigr)$."
+        "For every real $t>0$ there exist feasible hours $x\\ge 0$, $y\\ge 0$ meeting both requirements.",
+        "Whenever a feasible pair exists, the B-hours strictly exceed the A-hours.",
+        "For a fixed $t$, at most one feasible pair $(x,y)$ can satisfy the brief.",
+        "The value $t=2$ admits a feasible schedule that uses no A-hours at all.",
+        "Raising the target $t$ by exactly $3$ increases each of $x$ and $y$ by exactly $1$, on the unique algebraic solution of the two equalities."
       ],
       "answer_key": [
-        true,
         false,
         true,
-        false,
+        true,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe determinant is $a(a-1)-2=(a-2)(a+1)$, nonzero precisely when $a\\neq 2$ and $a\\neq -1$.\n\nSo the statement is True.",
-        "**B.** → False\n\nFor $a=2$ the equations become $2x+y=3$ and $2x+y=2$, which are inconsistent: no solution, not infinitely many.\n\nSo the statement is False.",
-        "**C.** → True\n\nFor $a=-1$ one obtains $y-x=3$ and $2x-2y=-1$, which contradict each other.\n\nSo the statement is True.",
-        "**D.** → False\n\nFor $a=0$: $y=3$ and $2x-y=0$ give $x=\\tfrac32$, so $x+y=\\tfrac92\\neq 3$.\n\nSo the statement is False.",
-        "**E.** → True\n\nFor $a=1$: $x+y=3$ and $2x=1$ yield $x=\\tfrac12$, $y=\\tfrac52$.\n\nSo the statement is True."
+        "**A.** → False\n\nThe equalities force $x=(t-2)/3$. Feasibility needs $x\\ge 0$, hence $t\\ge 2$. For $0<t<2$ the algebraic solution has negative A-hours.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe second requirement is $y=x+2$, so $y>x$ whenever a solution exists.\n\nSo the statement is True.",
+        "**C.** → True\n\nTwo independent linear equalities in two unknowns determine at most one pair; the non-negativity cut cannot create a second pair.\n\nSo the statement is True.",
+        "**D.** → True\n\nAt $t=2$: $x=0$, $y=2$, both feasible.\n\nSo the statement is True.",
+        "**E.** → True\n\n$x=(t-2)/3$ and $y=(t+4)/3$ each increase by $1$ when $t$ increases by $3$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Unique iff $a\\notin\\{2,-1\\}$. At $a=2$ and $a=-1$: empty. At $a=0$: $(3/2,3)$. At $a=1$: $(1/2,5/2)$."
+      "solution_overview": "Unique pair $x=(t-2)/3$, $y=(t+4)/3$. Feasible iff $t\\ge 2$. Always $y>x$. $+3$ in $t$ shifts both by $+1$."
     },
     {
       "case_id": "MATH 6.MOCK.QUADRAT",
       "id": "MATH 6.MOCK.QUADRAT",
-      "title": "Quadratic versus cancelled rational — hole traps at $\\pm 2$",
+      "title": "Five unlike absolute-value and root claims",
       "chapter": 6,
-      "subsection": "6.2",
-      "context": "Decide whether each inequality claim is true or false.",
+      "subsection": "6.3",
+      "context": "Decide whether each claim is true or false. The five letters concern five different equations or inequalities.",
       "statements": [
-        "The solution set of $\\dfrac{x^{2}-5x+6}{x^{2}-4}\\le 0$ is exactly $[2,3]$.",
-        "The solution set of $x^{2}-5x+6\\le 0$ is exactly $[2,3]$.",
-        "The solution set of $\\dfrac{x^{2}-5x+6}{x^{2}-4}\\le 0$ equals $(-2,2)\\cup(2,3]$.",
-        "The numbers $x=-2$ and $x=2$ both belong to the solution set of the rational inequality in letter A.",
-        "Every solution of $x^{2}-5x+6\\le 0$ is automatically a solution of the rational inequality in letter A."
+        "The equation $|2x-1|=|x+3|$ has exactly two real solutions.",
+        "The equation $\\sqrt{x+3}=x-1$ has exactly two real solutions.",
+        "The inequality $|x-2|+|x+1|\\ge 3$ holds for every real number $x$.",
+        "The real number $x=7$ solves $\\sqrt[3]{x-1}=2$.",
+        "The inequality $|x^{2}-1|\\le 0$ has no real solution."
       ],
       "answer_key": [
-        false,
         true,
+        false,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAfter a sign chart (and removing $x=\\pm 2$), the rational inequality solves on $(-2,2)\\cup(2,3]$, not on $[2,3]$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$(x-2)(x-3)\\le 0$ on the closed interval between the roots.\n\nSo the statement is True.",
-        "**C.** → True\n\nThat is the correct solution set from letter A’s analysis.\n\nSo the statement is True.",
-        "**D.** → False\n\nBoth $x=-2$ and $x=2$ make the denominator zero, so neither is a solution.\n\nSo the statement is False.",
-        "**E.** → False\n\n$x=2$ solves the quadratic inequality but is excluded from the rational one.\n\nSo the statement is False."
+        "**A.** → True\n\n$2x-1=x+3$ gives $x=4$. $2x-1=-(x+3)$ gives $x=-\\tfrac23$. Two roots.\n\nSo the statement is True.",
+        "**B.** → False\n\nDomain forces $x\\ge 1$. Squaring yields $x=(3\\pm\\sqrt{17})/2$; only the plus root survives. Exactly one real solution.\n\nSo the statement is False.",
+        "**C.** → True\n\nOn $[-1,2]$ the left-hand side equals the constant $3$; outside that interval it is strictly larger. So the inequality holds everywhere.\n\nSo the statement is True.",
+        "**D.** → False\n\n$\\sqrt[3]{x-1}=2$ forces $x-1=8$, hence $x=9\\neq 7$.\n\nSo the statement is False.",
+        "**E.** → False\n\n$|x^{2}-1|\\le 0$ forces $x^{2}-1=0$, so $x=\\pm 1$ are solutions.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Quadratic $[2,3]$. Rational $(-2,2)\\cup(2,3]$. $\\pm 2$ excluded. $x=2$ breaks the “every” claim."
+      "solution_overview": "Abs eq: two roots. Radical eq: one root. Abs sum $\\ge 3$ always. Cube root needs $x=9$. $|x^{2}-1|\\le 0$ at $\\pm 1$."
     },
     {
       "case_id": "MATH 7.MOCK.MEET",
@@ -859,47 +859,48 @@
     {
       "case_id": "MATH 8.MOCK.CALIB",
       "id": "MATH 8.MOCK.CALIB",
-      "title": "Two-point power calibration — unique exponent and scale",
+      "title": "Power laws — monotonicity and identity traps without plug-in",
       "chapter": 8,
-      "subsection": "8.7",
-      "context": "A positive model $f(x)=A x^{p}$ ($A>0$, $x>0$) satisfies $f(4)=12$ and $f(16)=3$. Decide whether each statement is true or false.",
+      "subsection": "8.2",
+      "context": "All letters below concern positive real bases and real exponents. Decide whether each statement is true or false without computing a single decimal expansion of a huge integer power.",
       "statements": [
-        "The exponent equals $p=-1$.",
-        "The constant equals $A=48$.",
-        "$f(8)=6$ and $f(2)=24$.",
-        "The same two sample points are also consistent with $p=-2$ for some $A>0$.",
-        "Solving $y=f(x)$ for $x>0$ yields $x=\\dfrac{48}{y}$."
+        "If $0<a<1$ and $x>y>0$, then necessarily $a^{x}>a^{y}$.",
+        "For every real $a,b$ and every integer $n\\ge 0$ one has $(ab)^{n}=a^{n}b^{n}$.",
+        "The identity $\\sqrt{a^{2}}=a$ holds for every real number $a$.",
+        "The identity $4^{x}=2^{2x}$ holds for every real $x$.",
+        "If $a>1$ and $a^{x}=a^{y}$, then necessarily $x=y$."
       ],
       "answer_key": [
-        true,
-        true,
+        false,
         true,
         false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\n\\dfrac{f(4)}{f(16)}=4=\\Bigl(\\dfrac{4}{16}\\Bigr)^{p}=\\Bigl(\\dfrac14\\Bigr)^{p}\\Rightarrow 4^{p}=\\dfrac14\\Rightarrow p=-1\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$A\\cdot 4^{-1}=12$ forces $A=48$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$f(8)=48/8=6$ and $f(2)=48/2=24$.\n\nSo the statement is True.",
-        "**D.** → False\n\nThe ratio of samples forces a unique exponent $p=-1$; $p=-2$ cannot fit both points.\n\nSo the statement is False.",
-        "**E.** → True\n\n$y=48/x$ rearranges to $x=48/y$ for $x>0$.\n\nSo the statement is True."
+        "**A.** → False\n\nFor $0<a<1$ the map $x\\mapsto a^{x}$ is strictly decreasing on $\\mathbb{R}$, so $x>y$ forces $a^{x}<a^{y}$.\n\nSo the statement is False.",
+        "**B.** → True\n\nThis is the standard power-of-a-product rule for non-negative integer exponents.\n\nSo the statement is True.",
+        "**C.** → False\n\n$\\sqrt{a^{2}}=|a|$, which equals $a$ only for $a\\ge 0$. Counter-example: $a=-3$.\n\nSo the statement is False.",
+        "**D.** → True\n\n$4^{x}=(2^{2})^{x}=2^{2x}$ for every real $x$.\n\nSo the statement is True.",
+        "**E.** → True\n\nFor $a>1$ the exponential $x\\mapsto a^{x}$ is injective, so equal values force equal exponents.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "$p=-1$, $A=48$. $f(8)=6$, $f(2)=24$. Not $p=-2$. Inverse $x=48/y$."
+      "solution_overview": "Base in $(0,1)$ reverses inequalities. $(ab)^n=a^n b^n$. $\\sqrt{a^2}=|a|$. $4^x=2^{2x}$. Injectivity for $a>1$."
     },
     {
       "case_id": "MATH 9.MOCK.FINDIF",
       "id": "MATH 9.MOCK.FINDIF",
-      "title": "Six-node difference table — reconstruct the cubic",
+      "title": "Four-row difference table — degree, leading term, false constancy",
       "chapter": 9,
       "subsection": "9.8",
-      "context": "A polynomial $p$ produces the table\n\n| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| $p(x)$ | $2$ | $1$ | $4$ | $17$ | $46$ | $97$ |\n\nDecide whether each statement is true or false.",
+      "context": "A polynomial $f$ was sampled at consecutive integers. The table records the values together with the forward-difference rows already started by an analyst (blank cells were left empty on purpose).\n\nDecide whether each statement is true or false.",
+      "tables_markdown": "| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n| $f(x)$ | $3$ | $3$ | $5$ | $15$ | $39$ | $83$ | $153$ |\n| $\\Delta f(x)$ | $0$ | $2$ | $10$ | $24$ | $44$ | $70$ |  |\n| $\\Delta^{2}f(x)$ | $2$ | $8$ | $14$ | $20$ | $26$ |  |  |\n| $\\Delta^{3}f(x)$ | $6$ | $6$ | $6$ | $6$ |  |  |  |",
       "statements": [
-        "The third differences are constant, so $\\deg p=3$.",
-        "The leading coefficient equals $1$.",
-        "$p(x)=x^{3}-x^{2}-x+2$ for every $x$ in the table.",
-        "$p(6)=176$ and $p(-1)=1$.",
-        "Because six nodes are listed, $p$ must have degree $5$."
+        "The third differences are constant, so $\\deg f=3$.",
+        "The leading coefficient of $f$ equals $1$.",
+        "$f(x)=x^{3}-2x^{2}+x+3$ reproduces every tabulated value of $f$.",
+        "The missing third-difference entry in the rightmost open slot must equal $6$ if $f$ stays cubic.",
+        "Because the first tabulated first-difference is $0$, the polynomial $f$ is constant on the whole real line."
       ],
       "answer_key": [
         true,
@@ -909,45 +910,45 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThird differences are constantly $6$, so the degree is $3$.\n\nSo the statement is True.",
+        "**A.** → True\n\nThe displayed third differences are constantly $6$, which characterises degree $3$.\n\nSo the statement is True.",
         "**B.** → True\n\n$3!\\,a_{3}=6$ forces $a_{3}=1$.\n\nSo the statement is True.",
-        "**C.** → True\n\nThe unique monic cubic matching $p(0)=2$ and the difference structure is $x^{3}-x^{2}-x+2$, and it reproduces every table entry.\n\nSo the statement is True.",
-        "**D.** → True\n\nDirect evaluation of that cubic gives $p(6)=176$ and $p(-1)=1$.\n\nSo the statement is True.",
-        "**E.** → False\n\nThe number of listed nodes does not force the degree; constant third differences already fix degree $3$.\n\nSo the statement is False."
+        "**C.** → True\n\nDirect evaluation of $x^{3}-2x^{2}+x+3$ at $x=0,\\ldots,6$ recovers $3,3,5,15,39,83,153$.\n\nSo the statement is True.",
+        "**D.** → True\n\nA genuine cubic keeps third differences constant, so the next entry is again $6$.\n\nSo the statement is True.",
+        "**E.** → False\n\n$\\Delta f(0)=0$ only says $f(1)=f(0)$; it does not make $f$ constant globally (already $f(2)=5\\neq 3$).\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Degree $3$, leading $1$, $p(x)=x^3-x^2-x+2$. Extensions $p(6)=176$, $p(-1)=1$. Not degree $5$."
+      "solution_overview": "Degree $3$, leading $1$, $f(x)=x^3-2x^2+x+3$. Next $\\Delta^3=6$. Not globally constant."
     },
     {
       "case_id": "MATH 10.MOCK.EXPLOGEQ",
       "id": "MATH 10.MOCK.EXPLOGEQ",
-      "title": "Exponential roots with a paired log-domain trap",
+      "title": "Letter-parameter logs — variable base and nested towers",
       "chapter": 10,
-      "subsection": "10.2",
-      "context": "Decide whether each claim is true or false.",
+      "subsection": "10.4",
+      "context": "Let $a>1$, $b>1$, $c>1$ be pairwise distinct real parameters, and let the second slot of each logarithm be allowed to carry an unknown (so bases may be variables). Prefer the definition $\\log_{t}(u)=v\\Leftrightarrow t^{v}=u$ over memorised shortening rules; leave closed forms in letters.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The equation $4^{x}-5\\cdot 2^{x}+4=0$ has exactly the solutions $x=0$ and $x=2$.",
-        "For those solutions, $2^{x}+2^{-x}$ takes the two values $2$ and $\\tfrac{17}{4}$.",
-        "The equation $\\log_{3}(2x-1)+\\log_{3}(x+2)=2$ has exactly one real solution.",
-        "That log solution equals $x=1$.",
-        "Every real root of $\\log_{3}\\bigl((2x-1)(x+2)\\bigr)=2$ also solves the summed-log equation in letter C."
+        "Solving $\\log_{a}(x)=b$ for the positive unknown $x$ yields the letter form $x=a^{b}$.",
+        "Solving $\\log_{x}(a)=b$ for the unknown base $x>0$, $x\\neq 1$, yields the letter form $x=a^{b}$.",
+        "The long composite $\\log_{a}\\bigl(b^{\\log_{b}(c)}\\bigr)$ simplifies exactly to the single letter-log $\\log_{a}(c)$.",
+        "The product $\\log_{a}(b)\\cdot\\log_{b}(a)$ equals the letter constant $1$.",
+        "The nested tower $\\log_{a}\\bigl(\\log_{b}(c^{\\log_{c}(a)})\\bigr)$ equals $1$ for every admissible $a,b,c$."
       ],
       "answer_key": [
         true,
-        true,
-        true,
         false,
+        true,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWith $u=2^{x}>0$, $u^{2}-5u+4=0$ gives $u=1$ or $u=4$, hence $x=0$ or $x=2$.\n\nSo the statement is True.",
-        "**B.** → True\n\nAt $x=0$: $1+1=2$. At $x=2$: $4+\\dfrac14=\\dfrac{17}{4}$.\n\nSo the statement is True.",
-        "**C.** → True\n\nDomain $x>\\tfrac12$. The quadratic $2x^{2}+3x-11=0$ has only one root in that domain, namely $(-3+\\sqrt{97})/4$.\n\nSo the statement is True.",
-        "**D.** → False\n\nAt $x=1$: $\\log_{3}1+\\log_{3}3=1\\neq 2$.\n\nSo the statement is False.",
-        "**E.** → False\n\nThe product-log form admits the negative root of the same quadratic, where individual logs are undefined.\n\nSo the statement is False."
+        "**A.** → True\n\n$\\log_{a}(x)=b$ means $a^{b}=x$, so $x=a^{b}$.\n\nSo the statement is True.",
+        "**B.** → False\n\n$\\log_{x}(a)=b$ means $x^{b}=a$, hence $x=a^{1/b}$, not $a^{b}$.\n\nSo the statement is False.",
+        "**C.** → True\n\nFrom the definition, $b^{\\log_{b}(c)}=c$, so the outer log becomes $\\log_{a}(c)$.\n\nSo the statement is True.",
+        "**D.** → True\n\nWriting each factor through natural logs gives $\\dfrac{\\ln b}{\\ln a}\\cdot\\dfrac{\\ln a}{\\ln b}=1$.\n\nSo the statement is True.",
+        "**E.** → False\n\nFirst $c^{\\log_{c}(a)}=a$, so the tower is $\\log_{a}(\\log_{b}(a))$. That equals $1$ only in special cases (e.g. $\\log_{b}(a)=a$), not for every admissible triple.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "Exp roots $0,2$ with $2^{x}+2^{-x}\\in\\{2,17/4\\}$. Log has one root $\\neq 1$; product-log is wider."
+      "solution_overview": "$x=a^b$ vs base-unknown $x=a^{1/b}$. $b^{\\log_b c}=c$. Reciprocal product $1$. Nested tower is $\\log_a(\\log_b a)$, not identically $1$."
     },
     {
       "case_id": "MATH 11.MOCK.MRMC",
@@ -983,47 +984,47 @@
     {
       "case_id": "MATH 12.MOCK.HYPER",
       "id": "MATH 12.MOCK.HYPER",
-      "title": "Hypergeometric draw — variance, conditional tails, mode check",
+      "title": "Shared crate Regime H — hypergeometric means, variance, tails",
       "chapter": 12,
       "subsection": "12.6",
-      "context": "An urn holds $8$ red and $12$ blue chips. Five chips are drawn at random without replacement. Let $X$ be the number of red chips drawn.\n\nDecide whether each statement is true or false.",
+      "context": "A sealed crate holds $9$ red, $6$ blue and $5$ green components (total $20$). Quality control draws components at random.\n\nTwo sampling regimes are compared later:\n- Regime H: five components are drawn without replacement (hypergeometric counts).\n- Regime B: five independent draws with replacement, recording whether each draw is red (binomial counts).\n\nFor Regime H, let $R$ be the number of red components among the five drawn, and let $G$ be the number of green components among the same five.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The expected value $E[X]$ equals $2$, but $\\mathrm{Var}(X)$ is strictly less than $1$.",
-        "The conditional probability $P(X\\ge 3\\mid X\\ge 1)$ is strictly less than $0.35$.",
-        "The conditional probability $P(X\\ge 3\\mid X\\ge 1)$ equals $P(X\\ge 3)$.",
-        "The probability of drawing five red chips is strictly less than $0.005$.",
-        "Because $E[X]=2$, the event $\\{X=2\\}$ is more probable than $\\{X=1\\}$."
+        "Under Regime H one has $E[R]=2.25$ and $E[G]=1.25$.",
+        "Under Regime H the variance $\\mathrm{Var}(R)$ is strictly less than $1$.",
+        "The probability of drawing five red components in Regime H is strictly less than $0.01$.",
+        "In Regime H, the probability of drawing no green component exceeds $0.25$.",
+        "In Regime H, the probability of drawing at least one red component is strictly less than $0.95$."
       ],
       "answer_key": [
         true,
         true,
-        false,
         true,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\nE[X]=5\\cdot\\dfrac{8}{20}=2,\\qquad \\mathrm{Var}(X)=5\\cdot\\dfrac{8}{20}\\cdot\\dfrac{12}{20}\\cdot\\dfrac{15}{19}=\\dfrac{18}{19}<1\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nP(X\\ge 3\\mid X\\ge 1)=\\dfrac{P(X\\ge 3)}{P(X\\ge 1)}\\approx\\dfrac{0.296}{0.949}\\approx 0.312<0.35\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe denominator $P(X\\ge 1)<1$ strictly increases the conditional probability above $P(X\\ge 3)$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\nP(X=5)=\\dfrac{\\binom{8}{5}}{\\binom{20}{5}}=\\dfrac{56}{15504}\\approx 0.0036<0.005\n$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\nP(X=2)=\\dfrac{6160}{15504}>\\dfrac{3960}{15504}=P(X=1)\n$$\n\nSo the statement is True."
+        "**A.** → True\n\n$$\nE[R]=5\\cdot\\dfrac{9}{20}=2.25,\\qquad E[G]=5\\cdot\\dfrac{5}{20}=1.25\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\n\\mathrm{Var}(R)=5\\cdot\\dfrac{9}{20}\\cdot\\dfrac{11}{20}\\cdot\\dfrac{15}{19}=\\dfrac{18.5625}{19}\\approx 0.977<1\n$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\nP(R=5)=\\dfrac{\\binom{9}{5}}{\\binom{20}{5}}=\\dfrac{126}{15504}\\approx 0.0081<0.01\n$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$\nP(G=0)=\\dfrac{\\binom{15}{5}}{\\binom{20}{5}}=\\dfrac{3003}{15504}\\approx 0.194<0.25\n$$\n\nSo the statement is False.",
+        "**E.** → False\n\n$$\nP(R\\ge 1)=1-\\dfrac{\\binom{11}{5}}{\\binom{20}{5}}=1-\\dfrac{462}{15504}\\approx 0.970>0.95\n$$\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "$E=2$, $\\mathrm{Var}=18/19$. $P(X\\ge 3|X\\ge 1)\\approx 0.312\\neq P(X\\ge 3)$. $P(X=5)\\approx 0.0036$. $P(X=2)>P(X=1)$."
+      "solution_overview": "$E[R]=2.25$, $E[G]=1.25$, $\\mathrm{Var}(R)\\approx 0.977$. $P(R=5)\\approx 0.008$. $P(G=0)\\approx 0.194$. $P(R\\ge 1)\\approx 0.97$."
     },
     {
       "case_id": "MATH 13.MOCK.TAILS",
       "id": "MATH 13.MOCK.TAILS",
-      "title": "Binomial $n=40$ — both tails and linear scoring",
+      "title": "Shared crate Regime B — binomial score and false law-identity",
       "chapter": 13,
       "subsection": "13.5",
-      "context": "Let $X\\sim\\mathrm{Bin}(n=40,p=0.35)$ and $Y=3X-5$. Decide whether each statement is true or false.",
+      "context": "A sealed crate holds $9$ red, $6$ blue and $5$ green components (total $20$). Quality control draws components at random.\n\nTwo sampling regimes are compared later:\n- Regime H: five components are drawn without replacement (hypergeometric counts).\n- Regime B: five independent draws with replacement, recording whether each draw is red (binomial counts).\n\nFor Regime B, each of the five independent draws is scored as a “red hit” with success probability $p=9/20=0.45$. Let $X$ be the number of red hits and set $Y=4X-3$.\n\nDecide whether each statement is true or false.",
       "statements": [
-        "The mean of $X$ is $14$ and the variance of $X$ is $9.1$.",
-        "The mean of $Y$ is $37$ and the variance of $Y$ is $81.9$.",
-        "The lower-tail probability $P(X\\le 10)$ is strictly less than $0.10$.",
-        "The upper-tail probability $P(X\\ge 20)$ is strictly less than $0.05$.",
-        "Because $E[X]=14$, one has $P(X\\ge 14)=\\tfrac12$ exactly."
+        "The mean of $X$ is $2.25$ and the variance of $X$ is $1.2375$.",
+        "The mean of $Y$ is $6$ and the variance of $Y$ is $19.8$.",
+        "The probability $P(X=0)$ is strictly less than $0.05$.",
+        "The probability $P(X=5)$ is strictly less than $0.02$.",
+        "Because $E[X]$ equals the Regime-H mean $E[R]$, the random variables $X$ and $R$ necessarily share the same probability distribution."
       ],
       "answer_key": [
         true,
@@ -1033,14 +1034,14 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\nE[X]=40\\cdot 0.35=14,\\qquad \\mathrm{Var}(X)=40\\cdot 0.35\\cdot 0.65=9.1\n$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\nE[Y]=3\\cdot 14-5=37,\\qquad \\mathrm{Var}(Y)=9\\cdot 9.1=81.9\n$$\n\nSo the statement is True.",
-        "**C.** → False\n\nDirect summation yields $P(X\\le 10)\\approx 0.121>0.10$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$P(X\\ge 20)\\approx 0.036<0.05$.\n\nSo the statement is True.",
-        "**E.** → False\n\nWith $p\\neq \\tfrac12$ the law is asymmetric, so the mean does not force a median probability of $\\tfrac12$.\n\nSo the statement is False."
+        "**A.** → True\n\n$$\nE[X]=5\\cdot 0.45=2.25,\\qquad \\mathrm{Var}(X)=5\\cdot 0.45\\cdot 0.55=1.2375\n$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\nE[Y]=4\\cdot 2.25-3=6,\\qquad \\mathrm{Var}(Y)=16\\cdot 1.2375=19.8\n$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\nP(X=0)=0.55^{5}\\approx 0.0503>0.05\n$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$\nP(X=5)=0.45^{5}\\approx 0.0185<0.02\n$$\n\nSo the statement is True.",
+        "**E.** → False\n\nEqual means do not force equal laws: Regime H is hypergeometric (dependent draws) while Regime B is binomial (independent draws), and already $\\mathrm{Var}(X)=1.2375\\neq\\mathrm{Var}(R)$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
-      "solution_overview": "$E=14$, $\\mathrm{Var}=9.1$; $E[Y]=37$, $\\mathrm{Var}(Y)=81.9$. $P(X\\le 10)\\approx 0.12$, $P(X\\ge 20)\\approx 0.036$. No median symmetry."
+      "solution_overview": "$E[X]=2.25$, $\\mathrm{Var}=1.2375$; $E[Y]=6$, $\\mathrm{Var}(Y)=19.8$. $P(X=0)\\approx 0.0503$, $P(X=5)\\approx 0.0185$. Binomial $\\neq$ hypergeometric."
     }
   ]
 }
