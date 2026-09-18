@@ -318,6 +318,18 @@
   color: inherit;
 }
 
+/* Exam / explanation KaTeX: never clip vertical ink (fractions, roots, sums). */
+.flashcard-math-display,
+.flashcard-math-display .katex-display,
+.font-expl .katex-display {
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.flashcard-math-display .katex,
+.font-expl .katex {
+  line-height: normal;
+}
+
 /* Neon highlighter sweep for the AI textbook canvas. */
 @keyframes neon-sweep {
   0% { background-size: 0% 100%; }

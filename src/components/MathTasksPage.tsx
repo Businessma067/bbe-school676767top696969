@@ -2235,7 +2235,7 @@ const MathTaskCard = memo(function MathTaskCard({
         ) : null}
       </div>
 
-      <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+      <ol className="mt-6 divide-y divide-border overflow-visible rounded-xl border border-border bg-background">
         <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
           <span className="w-6 text-center">#</span>
           <span className="flex-1">
