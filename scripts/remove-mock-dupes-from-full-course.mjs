@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Remove full-course bank tasks that also appear in Mock Exams 1–5.
+ * Remove full-course bank tasks that also appear in Mock Exams 1–6.
  * Match by case_id + content fingerprint (avoids colliding MATH 11.* IDs
  * that label different problems in financial vs differentiation banks).
  *
@@ -13,7 +13,7 @@ const ROOT = path.resolve("src/data");
 
 function loadMockTasks() {
   const out = [];
-  for (let n = 1; n <= 5; n++) {
+  for (let n = 1; n <= 6; n++) {
     const d = JSON.parse(
       fs.readFileSync(path.join(ROOT, `mock-exam-${n}-sourced.json`), "utf8"),
     );

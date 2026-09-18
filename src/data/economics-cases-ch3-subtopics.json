@@ -1451,35 +1451,6 @@
   },
   {
     "subsection": "3.4",
-    "case_id": "CASE 3.4.07",
-    "title": "Medium financial OR logic",
-    "context": "Consider a firm that has one hundred eighty staff, €48m turnover, and a €44m balance sheet. Evaluate the following economic assertions:",
-    "statements": [
-      "Any firm with more than ten employees is classified as large under EU rules.",
-      "MSME commonly groups micro, small, and medium enterprises under one umbrella term.",
-      "Crossing size thresholds can change which accounting rules apply to a business.",
-      "Any local shop qualifies as micro without reference to staff or turnover data.",
-      "Exactly ten staff exceeds the micro employee ceiling of fewer than ten."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "More than ten employees does not automatically mean large. Small and medium bands cover many firms well above ten staff. Large status requires crossing medium thresholds.\n\nSo the statement is False.",
-      "MSME is the common umbrella term that groups micro, small, and medium enterprises together in EU policy talk. The three tiers sit under one family name.\n\nSo the statement is True.",
-      "When a growing firm crosses official size lines, the accounting and reporting package that applies can change. Thresholds are not cosmetic labels; they can switch which rule set binds the business.\n\nApproaching medium limits therefore has compliance consequences as well as statistical ones. Crossing bands can rewrite filing duties.\n\nSo the statement is True.",
-      "A local shop is not micro by location alone. Staff count and financial figures still have to meet the micro tests. Geography never replaces those thresholds.\n\nSo the statement is False.",
-      "Exactly ten staff is not fewer than ten, so it exceeds the micro employee ceiling. The firm needs another size band once headcount hits ten.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
     "case_id": "CASE 3.4.08",
     "title": "Medium turnover within cap",
     "context": "Analyze an engineering firm has two hundred staff, €49m turnover, and a €42m balance sheet. Evaluate the following economic assertions:",

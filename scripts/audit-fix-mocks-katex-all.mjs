@@ -1,5 +1,5 @@
 /**
- * Deep KaTeX / currency / $t=0$ audit+scrub across Mock Exams 1–5.
+ * Deep KaTeX / currency / $t=0$ audit+scrub across Mock Exams 1–6.
  * Run: node scripts/audit-fix-mocks-katex-all.mjs
  * Exit 0 only when every math segment renders and no banned patterns remain.
  */
@@ -59,7 +59,7 @@ const summary = [];
 let totalFail = 0;
 let totalPattern = 0;
 
-for (const n of [1, 2, 3, 4, 5]) {
+for (const n of [1, 2, 3, 4, 5, 6]) {
   const file = path.resolve(`src/data/mock-exam-${n}-sourced.json`);
   const raw = JSON.parse(fs.readFileSync(file, "utf8"));
   const scrubbed = scrubKatexDeep(raw);
@@ -122,4 +122,4 @@ if (totalFail || totalPattern) {
   console.error(`\nAUDIT FAILED: katexFails=${totalFail} patternHits=${totalPattern}`);
   process.exit(1);
 }
-console.log("\nAll 5 mocks: KaTeX + pattern audit OK");
+console.log("\nAll 6 mocks: KaTeX + pattern audit OK");

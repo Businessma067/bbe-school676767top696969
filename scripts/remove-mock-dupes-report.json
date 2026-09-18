@@ -1,957 +1,152 @@
 {
-  "removed": 136,
+  "removed": 21,
   "items": [
     {
       "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.1.01",
-      "mock": 3,
+      "case_id": "CASE 2.7.12",
+      "mock": 6,
       "subject": "econ",
-      "title": "Scarcity and economising"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.2.04",
-      "mock": 1,
-      "subject": "econ",
-      "title": "Misunderstanding opportunity cost"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.3.11",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Competition authority case"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.4.24",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Unit of account role"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.5.15",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Planned steel quota surplus"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.6.14",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Salzburg Festival Ticket Queue"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.6.18",
-      "mock": 1,
-      "subject": "econ",
-      "title": "Prices of Substitute Goods"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.6.23",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Plant Capacity Expansion"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch2-subtopics.json",
-      "case_id": "CASE 2.7.03",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Mobile Carrier Oligopoly"
+      "title": "Airline Route Duopoly"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.2.04",
-      "mock": 1,
+      "case_id": "CASE 3.4.07",
+      "mock": 6,
       "subject": "econ",
-      "title": "Secondary Manufacturing"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.2.11",
-      "mock": 4,
-      "subject": "econ",
-      "title": "EU Services at Seventy-four Percent"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.4.03",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Micro balance sheet OR test"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.4.05",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Small turnover breach"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.5.07",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Undercapitalisation risk"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.5.15",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Currency exposure abroad"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch3-subtopics.json",
-      "case_id": "CASE 3.6.46",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Customer boycott power"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-pilot.json",
-      "case_id": "CASE 4.5.01",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Equity Finance and Debt Finance"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-pilot.json",
-      "case_id": "CASE 4.6.01",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Matching Finance to Use Cost and Gearing"
+      "title": "Medium financial OR logic"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.1.02",
-      "mock": 3,
+      "case_id": "CASE 4.3.21",
+      "mock": 6,
       "subject": "econ",
-      "title": "Establishment Requirements and Liability Exposure"
+      "title": "Share Capital Calculation and Ownership"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.2.05",
-      "mock": 1,
+      "case_id": "CASE 4.6.06",
+      "mock": 6,
       "subject": "econ",
-      "title": "Partnership Financial Resources"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.3.18",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Corporate Bonds Versus Bank Loans"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.3.49",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Voting Rights and Share Classes"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.3.58",
-      "mock": 2,
-      "subject": "econ",
-      "title": "IPO Cash Versus Later Trades at CanvasWorks"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.5.01",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Equity Finance and Debt Finance Overview"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.5.02",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Internal and External Finance Classification"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.5.13",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Trade Credit and Overdraft Traps"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch4-subtopics.json",
-      "case_id": "CASE 4.6.01",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Matching Finance Term to Asset Life"
+      "title": "High Gearing and Credit Access"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.4.02",
-      "mock": 5,
+      "case_id": "CASE 5.4.08",
+      "mock": 6,
       "subject": "econ",
-      "title": "Overconsumption and Budget Limits"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.4.14",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Repair Reuse and Longer Product Life"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.5.28",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Confusing Market Size and Share"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.7.55",
-      "mock": 1,
-      "subject": "econ",
-      "title": "Interaction of Price and Promotion"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.7.61",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Decline Stage Low Growth Pattern"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch5-subtopics.json",
-      "case_id": "CASE 5.7.121",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Product Heart Still Rules at North Harbor Clocks"
+      "title": "Renting High-Quality Event Wear"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.1.005",
-      "mock": 3,
+      "case_id": "CASE 6.2.019",
+      "mock": 6,
       "subject": "econ",
-      "title": "Two-Year Balance Sheet Review 5"
+      "title": "Cash Flow Mix Over Two Years 19"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.1.030",
-      "mock": 1,
+      "case_id": "CASE 6.3.035",
+      "mock": 6,
       "subject": "econ",
-      "title": "Liquidity From the Balance Sheet 30"
+      "title": "Return and Cash Flow Extract 35"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.2.013",
-      "mock": 4,
+      "case_id": "CASE 6.4.009",
+      "mock": 6,
       "subject": "econ",
-      "title": "Cash Flow Mix Over Two Years 13"
+      "title": "Short Depreciation Extract 9"
     },
     {
       "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.2.028",
-      "mock": 5,
+      "case_id": "CASE 6.5.020",
+      "mock": 6,
       "subject": "econ",
-      "title": "Cash Flow Statement Over Two Years 28"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.2.044",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Depreciation Schedule Review 44"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.2.045",
-      "mock": 1,
-      "subject": "econ",
-      "title": "Cash Flow Mix Over Two Years 45"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.3.003",
-      "mock": 1,
-      "subject": "econ",
-      "title": "Return and Cash Flow Extract 3"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.3.009",
-      "mock": 5,
-      "subject": "econ",
-      "title": "Liquidity From the Balance Sheet 9"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.3.030",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Benchmarking Against Industry Peers Over Time"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.3.037",
-      "mock": 3,
-      "subject": "econ",
-      "title": "Gearing From Comparative Figures 37"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.3.045",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Comparative Balance Sheet Analysis 45"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.5.013",
-      "mock": 4,
-      "subject": "econ",
-      "title": "Asset and Inventory Turnover 13"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.5.026",
-      "mock": 2,
-      "subject": "econ",
-      "title": "Balance Sheet Structure Review 26"
-    },
-    {
-      "file": "/workspace/src/data/economics-cases-ch6-subtopics.json",
-      "case_id": "CASE 6.5.031",
-      "mock": 1,
-      "subject": "econ",
-      "title": "Short-Term Borrowing and Working Capital in Practice"
-    },
-    {
-      "file": "/workspace/src/data/math-cases-ch12-probability.json",
-      "case_id": "MATH 12.150",
-      "mock": 2,
-      "subject": "math",
-      "title": "A Trivia Quiz (Comparing Two Formats)"
-    },
-    {
-      "file": "/workspace/src/data/math-cases-ch12-probability.json",
-      "case_id": "MATH 12.186",
-      "mock": 3,
-      "subject": "math",
-      "title": "Two Clues and Three Suspects"
-    },
-    {
-      "file": "/workspace/src/data/math-cases-ch13-binomial.json",
-      "case_id": "MATH 13.18",
-      "mock": 4,
-      "subject": "math",
-      "title": "Sales Call Conversions"
-    },
-    {
-      "file": "/workspace/src/data/math-cases-ch13-binomial.json",
-      "case_id": "MATH 13.36",
-      "mock": 3,
-      "subject": "math",
-      "title": "Low-Yield Factory Batches"
-    },
-    {
-      "file": "/workspace/src/data/math-cases-ch13-binomial.json",
-      "case_id": "MATH 13.46",
-      "mock": 1,
-      "subject": "math",
-      "title": "Bakery Quality Control"
-    },
-    {
-      "file": "/workspace/src/data/math-ch1-exam.json",
-      "case_id": "MATH 1.120",
-      "mock": 1,
-      "subject": "math",
-      "title": "Exam-style tasks - 12"
-    },
-    {
-      "file": "/workspace/src/data/math-ch11-exam.json",
-      "case_id": "MATH 11.174",
-      "mock": 1,
-      "subject": "math",
-      "title": "Shipping line: capacity, cost, and a smooth loading rule"
-    },
-    {
-      "file": "/workspace/src/data/math-ch12-exam.json",
-      "case_id": "MATH 12.205",
-      "mock": 1,
-      "subject": "math",
-      "title": "Exam-style tasks - 7"
-    },
-    {
-      "file": "/workspace/src/data/math-ch13-exam.json",
-      "case_id": "MATH 13.78",
-      "mock": 2,
-      "subject": "math",
-      "title": "Community Clinic Screening"
-    },
-    {
-      "file": "/workspace/src/data/math-ch2-cases.json",
-      "case_id": "MATH 2.137",
-      "mock": 2,
-      "subject": "math",
-      "title": "Exam-style tasks - 1"
-    },
-    {
-      "file": "/workspace/src/data/math-ch2-cases.json",
-      "case_id": "MATH 2.142",
-      "mock": 1,
-      "subject": "math",
-      "title": "Exam-style tasks - 6"
-    },
-    {
-      "file": "/workspace/src/data/math-ch3-exam.json",
-      "case_id": "MATH 11.132",
-      "mock": 1,
-      "subject": "math",
-      "title": "Exam-style tasks - 9"
-    },
-    {
-      "file": "/workspace/src/data/math-ch4-cases.json",
-      "case_id": "MATH 4.165",
-      "mock": 2,
-      "subject": "math",
-      "title": "Round-Trip Average Speed and Algebraic Equation Forms"
-    },
-    {
-      "file": "/workspace/src/data/math-ch4-cases.json",
-      "case_id": "MATH 4.215",
-      "mock": 1,
-      "subject": "math",
-      "title": "Exam-style tasks - 22"
-    },
-    {
-      "file": "/workspace/src/data/math-ch6-inequalities.json",
-      "case_id": "MATH 6.47",
-      "mock": 1,
-      "subject": "math",
-      "title": "Compound & Special Inequalities — 10"
-    },
-    {
-      "file": "/workspace/src/data/math-ch6-inequalities.json",
-      "case_id": "MATH 6.55",
-      "mock": 4,
-      "subject": "math",
-      "title": "Compound & Special Inequalities — 18"
-    },
-    {
-      "file": "/workspace/src/data/math-ch7-linear-quadratic.json",
-      "case_id": "MATH 7.47",
-      "mock": 2,
-      "subject": "math",
-      "title": "Parameter Window for Two Meetings"
-    },
-    {
-      "file": "/workspace/src/data/math-ch7-mixed-exam.json",
-      "case_id": "MATH 7.E03",
-      "mock": 1,
-      "subject": "math",
-      "title": "Ticket desk — rebuilt revenue"
-    },
-    {
-      "file": "/workspace/src/data/math-ch9-polynomials.json",
-      "case_id": "MATH 9.37",
-      "mock": 1,
-      "subject": "math",
-      "title": "Bicycle Speed: Another Cubic and a Table"
-    },
-    {
-      "file": "/workspace/src/data/math-ch9-polynomials.json",
-      "case_id": "MATH 9.72",
-      "mock": 2,
-      "subject": "math",
-      "title": "Raising a Cubic: Crossings After a Vertical Shift (Set 1)"
+      "title": "Turnover and Liquidity Extract 20"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.01",
-      "mock": 3,
+      "case_id": "ENG T.13.01",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 1"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.02",
-      "mock": 3,
+      "case_id": "ENG T.13.02",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 2"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.03",
-      "mock": 3,
+      "case_id": "ENG T.13.03",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 3"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.04",
-      "mock": 3,
+      "case_id": "ENG T.13.04",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 4"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.05",
-      "mock": 3,
+      "case_id": "ENG T.13.05",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 5"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.06",
-      "mock": 3,
+      "case_id": "ENG T.13.06",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 6"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.07",
-      "mock": 3,
+      "case_id": "ENG T.13.07",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 7"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.08",
-      "mock": 3,
+      "case_id": "ENG T.13.08",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 8"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.09",
-      "mock": 3,
+      "case_id": "ENG T.13.09",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 9"
     },
     {
       "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.11.10",
-      "mock": 3,
-      "subject": "eng",
-      "title": "Task 10"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.01",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 1"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.02",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 2"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.03",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 3"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.04",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 4"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.05",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 5"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.06",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 6"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.07",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 7"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.08",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 8"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.09",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 9"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.12.10",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 10"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.01",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 1"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.02",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 2"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.03",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 3"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.04",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 4"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.05",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 5"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.06",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 6"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.07",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 7"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.08",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 8"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.09",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 9"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.14.10",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 10"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.01",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 1"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.02",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 2"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.03",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 3"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.04",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 4"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.05",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 5"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.06",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 6"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.07",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 7"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.08",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 8"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.09",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 9"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.15.10",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 10"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.01",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 1"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.02",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 2"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.03",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 3"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.04",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 4"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.05",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 5"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.06",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 6"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.07",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 7"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.08",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 8"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.09",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 9"
-    },
-    {
-      "file": "/workspace/src/data/english/texts.json",
-      "case_id": "ENG T.16.10",
-      "mock": 1,
+      "case_id": "ENG T.13.10",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 10"
     },
     {
       "file": "/workspace/src/data/english/grammar.json",
-      "case_id": "ENG G.3.19",
-      "mock": 3,
+      "case_id": "ENG G.13.19",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 19"
     },
     {
-      "file": "/workspace/src/data/english/grammar.json",
-      "case_id": "ENG G.6.19",
-      "mock": 2,
+      "file": "/workspace/src/data/english/grammar_parts/g.13.json",
+      "case_id": "ENG G.13.19",
+      "mock": 6,
       "subject": "eng",
       "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar.json",
-      "case_id": "ENG G.12.19",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar.json",
-      "case_id": "ENG G.14.19",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar.json",
-      "case_id": "ENG G.15.20",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 20"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar_parts/g.12.json",
-      "case_id": "ENG G.12.19",
-      "mock": 4,
-      "subject": "eng",
-      "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar_parts/g.14.json",
-      "case_id": "ENG G.14.19",
-      "mock": 5,
-      "subject": "eng",
-      "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar_parts/g.15.json",
-      "case_id": "ENG G.15.20",
-      "mock": 1,
-      "subject": "eng",
-      "title": "Task 20"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar_parts/g.3.json",
-      "case_id": "ENG G.3.19",
-      "mock": 3,
-      "subject": "eng",
-      "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/english/grammar_parts/g.6.json",
-      "case_id": "ENG G.6.19",
-      "mock": 2,
-      "subject": "eng",
-      "title": "Task 19"
-    },
-    {
-      "file": "/workspace/src/data/math-ch1-logic.ts",
-      "case_id": "MATH 1.108",
-      "mock": 2,
-      "subject": "math",
-      "title": "Seven Finalists and the Tournament Roster"
-    },
-    {
-      "file": "/workspace/src/data/math-ch5-linear-equations.ts",
-      "case_id": "MATH 5.17",
-      "mock": 2,
-      "subject": "math",
-      "title": "Riverside Water Utility, Billing Dispute"
-    },
-    {
-      "file": "/workspace/src/data/math-ch8-power-functions.ts",
-      "case_id": "MATH 8.95",
-      "mock": 2,
-      "subject": "math",
-      "title": "Overnight Loaves Split Across Two Oven Lines"
-    },
-    {
-      "file": "/workspace/src/data/math-ch8-power-functions.ts",
-      "case_id": "MATH 8.83",
-      "mock": 4,
-      "subject": "math",
-      "title": "Oxygen Demand and Gill Area in a Hatchery"
-    },
-    {
-      "file": "/workspace/src/data/math-ch8-power-functions.ts",
-      "case_id": "MATH 8.81",
-      "mock": 1,
-      "subject": "math",
-      "title": "Drag and Sustained Power on a Velodrome"
-    },
-    {
-      "file": "/workspace/src/data/math-ch11-differentiation.ts",
-      "case_id": "MATH 11.108",
-      "mock": 2,
-      "subject": "math",
-      "title": "Wire into square and circle: minimise total enclosed area"
-    },
-    {
-      "file": "/workspace/src/data/math-ch11-financial.ts",
-      "case_id": "MATH 11.123",
-      "mock": 3,
-      "subject": "math",
-      "title": "Two Solar Project Designs Compared by Internal Rate of Return and NPV"
-    },
-    {
-      "file": "/workspace/src/data/math-ch11-financial.ts",
-      "case_id": "MATH 11.112",
-      "mock": 4,
-      "subject": "math",
-      "title": "Capstone: Comparing Three Payment Schedules for a Hospital Imaging Center"
-    },
-    {
-      "file": "/workspace/src/data/math-ch11-financial.ts",
-      "case_id": "MATH 11.60",
-      "mock": 2,
-      "subject": "math",
-      "title": "Pricing Two Franchise Payments Related by a Common Time Horizon"
     }
   ]
 }

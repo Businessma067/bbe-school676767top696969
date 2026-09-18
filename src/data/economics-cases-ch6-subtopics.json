@@ -1411,36 +1411,6 @@
   },
   {
     "subsection": "6.2",
-    "case_id": "CASE 6.2.019",
-    "title": "Cash Flow Mix Over Two Years 19",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following two-year cash flow statement extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| Cash flow from operating activities | 374 | 432 |\n| Cash flow from investing activities | (307) | (376) |\n| Dividends paid | (39) | (52) |\n| Proceeds from new borrowing | 80 | 64 |\n| Cash flow from financing activities | 41 | 12 |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.",
-      "Cost of sales covers costs directly tied to production, such as materials and labour linked to production, not administration or distribution costs.",
-      "A positive cash flow is not identical with a profit, because profit includes non-cash charges and accruals that cash flow does not.",
-      "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow statement.",
-      "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Land is usually kept at cost without an annual write-down.\n\nSo the statement is True.",
-      "Flows for the year and stocks at year-end answer different questions. With that split the claim is fine. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. Cost of sales gathers direct production costs tied to units sold. Materials and direct labour consumed in making goods sold belong in cost of sales. Distribution and administration sit below gross profit as operating expenses.\n\nSo the statement is True.",
-      "Cash-flow headings split operating, investing, and financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
-      "Dividends paid are financing outflows, cash returned to owners. Investing covers long-term asset purchases and sales, not owner distributions. A dividends reading of the extract supports this claim.\n\nSo the statement is True.",
-      "It is normally non-cash; land is not depreciated like buildings. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. Depreciation matches past spending on the asset, not a fresh cash bill. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True."
-    ]
-  },
-  {
-    "subsection": "6.2",
     "case_id": "CASE 6.2.020",
     "title": "Depreciation and Asset Wear",
     "context": "Review how an asset's carrying value changes over time once straight-line depreciation is applied. Evaluate the following economic assertions:\n",
@@ -3151,36 +3121,6 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.035",
-    "title": "Return and Cash Flow Extract 35",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 329 |\n| Machinery | 237 |\n| Office equipment | 51 |\n| Patents, trademarks and licences | 89 |\n| Inventory | 273 |\n| Trade receivables | 180 |\n| Cash and cash equivalents | 94 |\n| Total assets | **1253** |\n| **EQUITY** | |\n| Share capital | 162 |\n| Retained earnings | 464 |\n| Total equity | **626** |\n| **LIABILITIES** | |\n| Long-term bank loan | 419 |\n| Bonds payable | 55 |\n| Trade payables | 126 |\n| Bank overdraft | 27 |\n| Total liabilities | **627** |\n| Total equity and liabilities | **1253** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 201 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 199 |\n| Cash flow from investing activities | (276) |\n| Cash flow from financing activities | 46 |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Return on equity, the operating result taken as a percentage of total equity, exceeds 41.4%.",
-      "Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.3%.",
-      "The equity ratio exceeds 47%.",
-      "Cash flow from operating activities amounts to less than 87% of the operating result, indicating profit is only partly backed by cash.",
-      "Inventory make up more than 27.6% of total assets."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Creditors come first; equity is the residual ownership claim. Dividends and share issues are financing events, not operating sales. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is False.",
-      "ROCE relates operating result to capital employed: equity plus non-current liabilities.\n\n$$\n\\text{Capital employed} = 626 + 419 + 55,\\quad \\text{Capital employed} = 1{,}100\n$$\n\n$$\n\\frac{201}{1{,}100} \\approx 0.1827 \\approx 18.3\\%\n$$\n\nROCE = operating result ÷ (equity + non-current liabilities). 2011,100 = 18.3%. Check the extract’s labels once more against the stem’s threshold. Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is incorrect.\n\nSo the statement is False.",
-      "Equity ratio = equity ÷ total assets.\n\n$$\n\\text{Equity ratio} = \\frac{\\text{equity}}{\\text{total assets}}\n$$\n\n$$\n\\text{Equity} = 626,\\quad \\text{Total assets} = 1{,}253\n$$\n\n$$\n\\frac{626}{1{,}253} \\approx 0.4996 \\approx 50.0\\%\n$$\n\n$$\n50.0\\% > 47\\%\n$$\n\nThe equity ratio is 50.0%, above the 47% benchmark. Equity ratio ≈ 626 ÷ 1,253 = 50.0%.\n\nSo the statement is True.",
-      "Assign the cash line to operating, investing, or financing before judging the claim. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is False.",
-      "From the extract, Inventory = 273 and total assets = 1,253.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{273}{1{,}253}\n$$\n\n$$\n\\text{Share} = 21.8\\%\n$$\n\nInventory / total assets ≈ 273 ÷ 1,253 = 21.8%. More than 27.6% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is rejected. Counter-reading: place the item on the line that matches how the entity actually holds it.\n\nSo the statement is False."
-    ]
-  },
-  {
-    "subsection": "6.3",
     "case_id": "CASE 6.3.036",
     "title": "Comparative Balance Sheet Analysis 36",
     "difficulty_level": "4/5",
@@ -3747,36 +3687,6 @@
       "Looks do not decide the balance-sheet line. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item.\n\nWith the extract amounts plugged in, the comparison to the stated threshold is direct.\n\nSo the statement is True.",
       "On the chapter test the wording is accepted. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
       "The described treatment of the item matches standard reporting here. Plant bought for cash is an investing outflow, not day-to-day operating spend. The threshold in the sentence is compared directly to the computed percentage. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Year 1 and Year 2 columns give the pair of totals needed for the percentage. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True."
-    ]
-  },
-  {
-    "subsection": "6.4",
-    "case_id": "CASE 6.4.009",
-    "title": "Short Depreciation Extract 9",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "A small business depreciates the following two fixed assets on a straight-line basis. Identity is not disclosed.\n\n| Asset details | Amount |\n| --- | ---: |\n| Asset A | €65,000 purchase price, 7-year useful life, no residual value |\n| Asset B | €24,000 purchase price, 5-year useful life, €3,000 residual value |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.",
-      "Asset A's annual depreciation charge is more than 29.9% higher than Asset B's annual depreciation charge.",
-      "A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.",
-      "Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Depreciation is a non-cash expense in the period charged. Cash left when the asset was purchased; the charge only allocates cost. Wages and energy, by contrast, usually trigger cash outflows soon. Residual value reduces the depreciable base before the annual charge is calculated. Land is usually kept at cost without an annual write-down.\n\nSo the statement is True.",
-      "Annual depreciation = (cost − residual) ÷ useful life for each asset.\n\n$$\n\\text{Asset A} = \\frac{65{,}000 - 0}{7} = 9{,}286\n$$\n\n$$\n\\text{Asset B} = \\frac{24{,}000 - 3{,}000}{5} = 4{,}200\n$$\n\n$$\n\\frac{9{,}286 - 4{,}200}{4{,}200} = 121.1\\%\n$$\n\n$$\n\\text{Claim: more than 29.9\\% higher}\n$$\n\nAsset A's charge is 121.1% above Asset B's, which exceeds the 29.9% threshold. Note: Straight-line depreciation subtracts residual value before dividing by useful life.\n\nSo the statement is True.",
-      "Physical form is not the classification test. On the chapter test the wording is accepted. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage. The described treatment of the item matches standard reporting here. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nThe stepped charges use cost, residual, and life exactly as the straight-line rule requires.\n\nSo the statement is True.",
-      "On the chapter test the wording is accepted. An audit targets material misstatement, not absolute perfection of every euro. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
-      "How the item is held and for how long decides the balance-sheet line. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ]
   },
   {
@@ -4528,36 +4438,6 @@
     "difficulty_level": "3/5",
     "tier": "full",
     "half": "text"
-  },
-  {
-    "subsection": "6.5",
-    "case_id": "CASE 6.5.020",
-    "title": "Turnover and Liquidity Extract 20",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following extract (in € thousands) for a business whose identity is not disclosed.\n\n| Item (€ thousands) | Amount |\n| --- | ---: |\n| Revenue | 901 |\n| Cost of sales | 625 |\n| Total assets at the beginning of the year | 836 |\n| Total assets at the end of the year | 972 |\n| Inventory at the beginning of the year | 158 |\n| Inventory at the end of the year | 155 |\n| Trade receivables at the beginning of the year | 113 |\n| Trade receivables at the end of the year | 134 |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.",
-      "Inventory turnover, cost of sales taken relative to average inventory, is below 6.24 times per year.",
-      "Asset turnover, revenue taken relative to average total assets, is above 1.18.",
-      "Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.47 times per year.",
-      "With inventory turnover of about 4.0 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory."
-    ],
-    "answer_key": [
-      true,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Equity is what remains for owners after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct. Residual value reduces the depreciable base before the annual charge is calculated. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
-      "A year's revenue is a flow; cash on the balance sheet is a stock at one date. With that split the claim is fine. A dealer’s the item stays inventory until sold. Own use of the item for years makes it a tangible fixed asset. Cost of sales gathers direct production costs tied to units sold. Materials and direct labour consumed in making goods sold belong in cost of sales. Distribution and administration sit below gross profit as operating expenses. Gross profit equals revenue minus cost of sales before those operating lines. The described treatment of the item matches standard reporting here.\n\nSo the statement is True.",
-      "Asset turnover shows how many times revenue covers average total assets over the year.\n\n$$\n\\frac{836 + 972}{2} \\approx 904\n$$\n\n$$\n\\frac{901}{904} \\approx 0.9967\n$$\n\nAsset turnover = revenue ÷ average total assets. Average assets = 904. Asset turnover = 901 ÷ 904 ≈ 0.9967 Claimed above 1.18. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is False.",
-      "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{113 + 134}{2} \\approx 123.5\n$$\n$$\n\\frac{901}{123.5} \\approx 7.2955\n$$\nReceivables turnover = revenue ÷ average trade receivables. RT = 901123.5 = 7.2955 Threshold exceeds 10.47. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is False.",
-      "Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.\n\n$$\n\\frac{158 + 155}{2} \\approx 156.5\n$$\n\n$$\n\\frac{625}{156.5} \\approx 3.99\n$$\n\nHigher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory. IT = 625156.5 = 3.99 That interpretation matches the definition. Check the extract’s labels once more against the stem’s threshold. Revenue and costs are period flows; assets and liabilities are stocks. With that split the claim is fine.\n\nSo the statement is True."
-    ]
   },
   {
     "subsection": "6.5",
