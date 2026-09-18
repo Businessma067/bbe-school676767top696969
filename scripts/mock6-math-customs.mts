@@ -36,81 +36,87 @@ Decide whether each claim is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-List the even members of $U$ and the multiples of $3$, then apply the inclusion–exclusion count so the overlap is not double-counted.
+Write down the two sets explicitly before counting. The even members of $U=\{1,\ldots,12\}$ are
 
 $$
-A=\\{2,4,6,8,10,12\\},\\qquad |A|=6
+A=\{2,4,6,8,10,12\},
 $$
 
-$$
-B=\\{3,6,9,12\\},\\qquad |B|=4,\\qquad A\\cap B=\\{6,12\\},\\qquad |A\\cap B|=2
-$$
+so $|A|=6$. The multiples of $3$ in the same universe are
 
 $$
-|A\\cup B|=|A|+|B|-|A\\cap B|=6+4-2=8
+B=\{3,6,9,12\},
 $$
 
-Exactly eight elements of $U$ lie in the union, as claimed.
+so $|B|=4$. Their overlap is only the multiples of $6$ inside $U$:
+
+$$
+A\cap B=\{6,12\},\qquad |A\cap B|=2.
+$$
+
+Inclusion–exclusion then removes the double-count:
+
+$$
+|A\cup B|=|A|+|B|-|A\cap B|=6+4-2=8.
+$$
+
+You can also list the union by hand — $\{2,3,4,6,8,9,10,12\}$ — and count eight elements the slow way; both routes agree. The claim that $A\cup B$ contains exactly eight elements of $U$ is therefore correct.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Every multiple of $4$ among $1$ through $12$ is automatically even, so $C$ sits inside $A$. The converse fails as soon as an even number that is not a multiple of $4$ appears.
+Every multiple of $4$ is even, so $C\subseteq A$. The even number $2$ lies in $A$ but not in $C$, so the converse fails exactly as the claim says.
 
 $$
-C=\\{4,8,12\\}\\subseteq A=\\{2,4,6,8,10,12\\}
+C=\{4,8,12\}\subseteq A,\qquad 2\in A\setminus C
 $$
-
-$$
-2\\in A\\setminus C
-$$
-
-Thus $C\\subseteq A$ holds, but $A\\subseteq C$ does not — both halves of the claim are correct.
 
 So the statement is True.`,
 
     `**C.** → False
 
-A common element of $A$ and $B$ is even and a multiple of $3$, hence a multiple of $6$. Check whether every such element is also a multiple of $4$.
+Common elements of $A$ and $B$ are the multiples of $6$ in $U$:
 
 $$
-A\\cap B=\\{6,12\\}
+A\cap B=\{6,12\}.
 $$
 
+Ask whether each of them also sits in $C=\{4,8,12\}$. The element $12$ does, but $6$ does not:
+
 $$
-6\\in A\\cap B\\quad\\text{but}\\quad 6\\notin C=\\{4,8,12\\}
+6\in A\cap B\quad\text{and}\quad 6\notin C.
 $$
 
-The counterexample $n=6$ shows $A\\cap B\\not\\subseteq C$, so the claim fails.
+One counterexample is enough to kill the inclusion $A\cap B\subseteq C$, so the claim is false.
 
 So the statement is False.`,
 
     `**D.** → True
 
-The claim asks for an even $n\\in U$ that lies in $C$ (multiple of $4$) but not in $B$ (not a multiple of $3$). Walk through the three candidates in $C$.
+Pick $n=4$: it is even, a multiple of $4$, and not a multiple of $3$.
 
 $$
-C=\\{4,8,12\\}
+4\in A\cap C,\qquad 4\notin B
 $$
-
-$$
-4\\in A\\cap C\\quad\\text{and}\\quad 4\\notin B
-$$
-
-(The same holds for $n=8$; only $n=12$ fails because $12\\in B$.) So a suitable element exists.
 
 So the statement is True.`,
 
     `**E.** → False
 
-$P(n)\\wedge Q(n)$ means $n\\in A\\cap B$. The claim asserts every such $n$ lies in $C$, which is the same inclusion already broken in letter C.
+Translate the predicates carefully. $P(n)$ means $n\in A$ and $Q(n)$ means $n\in B$, so the hypothesis $P(n)\wedge Q(n)$ is exactly membership in the intersection $A\cap B$. The claim asserts the universal implication
 
 $$
-P(6)\\wedge Q(6)\\quad\\text{holds},\\qquad\\text{yet}\\quad 6\\notin C
+\forall n\in U:\quad \bigl(P(n)\wedge Q(n)\bigr)\Rightarrow n\in C,
 $$
 
-Equivalently $A\\cap B\\not\\subseteq C$, so the universal implication fails.
+which is the same as $A\cap B\subseteq C$. We already know that inclusion fails: the intersection is $\{6,12\}$, and $6$ is not a multiple of $4$. Explicitly,
+
+$$
+P(6)\text{ holds},\quad Q(6)\text{ holds},\quad\text{yet}\quad 6\notin C=\{4,8,12\}.
+$$
+
+A single witness where the hypothesis is true and the conclusion is false falsifies a universal implication, so the statement does not hold.
 
 So the statement is False.`,
   ];
@@ -153,81 +159,83 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → False
 
-Factor the numerator of $E$ and compare domains. The polynomial $F$ is defined everywhere, while $E$ still has a vanishing denominator at $x=2$.
+Factor $x^{3}-8=(x-2)(x^{2}+2x+4)$. After cancelling, $E$ matches $F$ only for $x\neq 2$. At $x=2$, $E$ is undefined while $F(2)=12$ is fine, so they are not identical on all of $\mathbb{R}$.
 
 $$
-x^{3}-8=(x-2)(x^{2}+2x+4)
+E(x)=F(x)\quad\text{only when }x\neq 2
 $$
-
-$$
-E(x)=F(x)\\quad\\text{only for }x\\neq 2
-$$
-
-At $x=2$, $E$ is undefined while $F(2)=12$ is defined, so the identity fails on all of $\\mathbb{R}$.
 
 So the statement is False.`,
 
     `**B.** → True
 
-Away from the hole, cancel the common factor $x-2$ in the factored numerator. Then check the removable limit against the continuous polynomial $F$.
+Start from the difference of cubes in the numerator of $E$:
 
 $$
-E(x)=\\dfrac{(x-2)(x^{2}+2x+4)}{x-2}=x^{2}+2x+4=F(x)\\qquad(x\\neq 2)
+x^{3}-8=(x-2)(x^{2}+2x+4).
 $$
 
+For every $x\neq 2$ the factor $x-2$ cancels against the denominator, and what remains is exactly the quadratic $F$:
+
 $$
-\\lim_{x\\to 2}E(x)=F(2)=4+4+4=12
+E(x)=\dfrac{(x-2)(x^{2}+2x+4)}{x-2}=x^{2}+2x+4=F(x)\qquad(x\neq 2).
 $$
 
-Both halves of the claim — equality off $x=2$, and matching limit — hold.
+That settles the first half of the claim. For the limit, the same cancellation shows that $E$ has a removable hole at $x=2$, and the continuous extension is the polynomial $F$ itself:
+
+$$
+\lim_{x\to 2}E(x)=F(2)=2^{2}+2\cdot 2+4=4+4+4=12.
+$$
+
+Both pieces — equality off $x=2$, and matching limit equal to $F(2)$ — hold, so the full statement is true.
 
 So the statement is True.`,
 
     `**C.** → True
 
-On $x\\neq 2$ replace $E$ by $F$, subtract $12$, then factor the numerator of $H$ before cancelling another copy of $x-2$.
+Wherever $x\neq 2$, letter B already gives $E(x)=F(x)=x^{2}+2x+4$. Subtract $12$ from that polynomial:
 
 $$
-E(x)-12=x^{2}+2x+4-12=x^{2}+2x-8
+E(x)-12=x^{2}+2x+4-12=x^{2}+2x-8.
 $$
 
-$$
-x^{2}+2x-8=(x-2)(x+4)
-$$
+Factor the quadratic as $(x-2)(x+4)$, then cancel the remaining $x-2$ in the definition of $H$:
 
 $$
-H(x)=\\dfrac{(x-2)(x+4)}{x-2}=x+4\\qquad(x\\neq 2)
+H(x)=\dfrac{(x-2)(x+4)}{x-2}=x+4\qquad(x\neq 2).
 $$
 
-Thus $H(x)=x+4$ wherever the original formula for $H$ is defined.
+Thus $H(x)=x+4$ for every $x$ at which the original formula for $H$ is defined.
 
 So the statement is True.`,
 
     `**D.** → False
 
-The written formula for $H$ still divides by $x-2$ and also refers to $E$, which is itself undefined at $x=2$. A removable algebraic simplification of $H$ is not the same as the original expression being defined there.
+The written formula still divides by $x-2$ (and refers to $E$, which is itself undefined at $2$). Algebraic cancellation is not the same as the original expression being defined there, so it does not equal $6$.
 
 $$
-H(x)=\\dfrac{E(x)-12}{x-2}
+H(x)=\dfrac{E(x)-12}{x-2}\quad\text{undefined at }x=2
 $$
-
-At $x=2$ the denominator is zero (and $E(2)$ is undefined), so the original formula does not assign any value — in particular not the value $6$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Plug $x=3$ into both formulas separately; neither expression has a domain issue at $3$, so a direct arithmetic check settles the claim.
+Neither formula has a domain problem at $x=3$, so evaluate them separately and compare.
+
+For $E$, plug into the original rational expression:
 
 $$
-E(3)=\\dfrac{3^{3}-8}{3-2}=\\dfrac{27-8}{1}=19
+E(3)=\dfrac{3^{3}-8}{3-2}=\dfrac{27-8}{1}=\dfrac{19}{1}=19.
 $$
 
+For $F$, expand the quadratic at the same point:
+
 $$
-F(3)=3^{2}+2\\cdot 3+4=9+6+4=19
+F(3)=3^{2}+2\cdot 3+4=9+6+4=19.
 $$
 
-Both values equal $19$, so $E(3)=F(3)=19$ holds exactly as asserted.
+The two values match, and both equal $19$, which is exactly what the claim asserts. (You could also invoke letter B and note that $3\neq 2$ forces $E(3)=F(3)$ automatically, then only compute one of the two numbers — but a direct check of both sides is enough on its own.)
 
 So the statement is True.`,
   ];
@@ -266,89 +274,105 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-The level annuity payment that amortises principal $87500$ over six years at effective rate $7.5\\%$ is
+A six-payment level annuity that amortises principal $87500$ at effective annual rate $7.5\%$ has payment
 
 $$
-A=87500\\cdot\\dfrac{0.075}{1-1.075^{-6}}
+A=87500\cdot\dfrac{0.075}{1-1.075^{-6}}.
 $$
 
-Numerically,
+Compute the discount factor carefully. First raise $1.075$ to the sixth power:
 
 $$
-1.075^{6}\\approx 1.5433,\\qquad 1.075^{-6}\\approx 0.6480
+1.075^{2}=1.155625,\qquad 1.075^{4}=(1.155625)^{2}\approx 1.3355,
 $$
 
 $$
-A\\approx 87500\\cdot\\dfrac{0.075}{0.3520}\\approx 18641
+1.075^{6}=1.075^{4}\cdot 1.075^{2}\approx 1.3355\cdot 1.155625\approx 1.5433,
 $$
 
-which sits strictly between $18500$ and $18800$.
+so $1.075^{-6}\approx 1/1.5433\approx 0.6480$. The annuity denominator is then
+
+$$
+1-1.075^{-6}\approx 1-0.6480=0.3520,
+$$
+
+and
+
+$$
+A\approx 87500\cdot\dfrac{0.075}{0.3520}\approx 87500\cdot 0.21307\approx 18641.
+$$
+
+The payment $18641$ lies strictly between $18500$ and $18800$, so the claim holds.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Year-$1$ interest is charged on the full opening balance. After the first payment the balance falls, so year-$2$ interest is smaller; compare the gap to $900$.
+Year-$1$ interest is $0.075\cdot 87500=6562.5$. After the first payment the balance is about $75421$, so year-$2$ interest is about $5657$. The gap is about $906>900$.
 
 $$
-I_{1}=0.075\\cdot 87500=6562.5
-$$
-
-$$
-B_{1}=87500\\cdot 1.075-A\\approx 75421,\\qquad I_{2}=0.075\\cdot B_{1}\\approx 5657
-$$
-
-$$
-I_{1}-I_{2}\\approx 6562.5-5657=905.5>900
+I_{1}-I_{2}\approx 905.9>900
 $$
 
 So the statement is True.`,
 
     `**C.** → True
 
-Roll the outstanding balance forward three payments and compare with half the original principal $87500/2$.
+Roll the outstanding principal forward payment by payment, starting from $B_{0}=87500$ and using the level payment $A\approx 18641$ from letter A.
+
+After year $1$:
 
 $$
-B_{3}=B_{2}\\cdot 1.075-A\\approx 48478
+B_{1}=87500\cdot 1.075-A\approx 94062.5-18641\approx 75421.
 $$
 
+After year $2$:
+
 $$
-\\tfrac12\\cdot 87500=43750
+B_{2}=B_{1}\cdot 1.075-A\approx 81078-18641\approx 62436.
 $$
 
-Since $48478>43750$, more than half of the original principal is still outstanding immediately after the third payment.
+After year $3$:
+
+$$
+B_{3}=B_{2}\cdot 1.075-A\approx 67119-18641\approx 48478.
+$$
+
+Half of the original principal is
+
+$$
+\tfrac12\cdot 87500=43750.
+$$
+
+Since $48478>43750$, more than half of the original principal is still outstanding immediately after the third payment. The claim is therefore true.
 
 So the statement is True.`,
 
     `**D.** → True
 
-Interest in year $5$ is charged on the outstanding principal just after the fourth payment. Compute that balance, then multiply by the effective rate.
+Interest in year $5$ is charged on the balance just after the fourth payment. Continuing the amortization from letter C,
 
 $$
-B_{4}\\approx 33472
+B_{4}=B_{3}\cdot 1.075-A\approx 52114-18641\approx 33472,
 $$
 
+and therefore
+
 $$
-I_{5}=0.075\\cdot B_{4}\\approx 0.075\\cdot 33472\\approx 2510
+I_{5}=0.075\cdot B_{4}\approx 0.075\cdot 33472\approx 2510.
 $$
 
-and $2510<2600$, so year-$5$ interest is strictly less than EUR $2600$.
+The threshold in the claim is $2600$, and $2510<2600$, so year-$5$ interest is strictly less than EUR $2600$.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Total interest equals total cash paid minus the original principal. Six level payments of about $A\\approx 18641$ give
+Total interest is six payments minus principal: $6A-87500\approx 111846-87500=24346>24000$.
 
 $$
-6A\\approx 6\\cdot 18641=111846
+6A-87500\approx 24349>24000
 $$
-
-$$
-\\text{total interest}\\approx 111846-87500=24346
-$$
-
-Since $24346>24000$, the claim that total interest is strictly less than $24000$ fails.
 
 So the statement is False.`,
   ];
@@ -394,73 +418,75 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Substitute the candidate pair into each equation separately and check that both sides match exactly.
+Check both equations at $(4,3)$: $4+3=7$ and $2\cdot 4-3=5$. Both hold.
 
 $$
-x+y:\\quad 4+3=7
+4+3=7,\qquad 8-3=5
 $$
-
-$$
-2x-y:\\quad 2\\cdot 4-3=8-3=5
-$$
-
-Both equations hold at once, so $(x,y)=(4,3)$ is a simultaneous solution of the two-equation system — the claim is correct.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Add the two equations to eliminate $y$, then back-substitute into the first equation. The resulting pair is forced uniquely.
+Treat the pair as a genuine $2\times 2$ linear system and solve it from scratch, without assuming the candidate from letter A.
+
+Add the two equations so the $y$-terms cancel:
 
 $$
-(x+y)+(2x-y)=7+5
+(x+y)+(2x-y)=7+5,
 $$
 
+which simplifies at once to
+
 $$
-3x=12\\Rightarrow x=4,\\qquad y=7-4=3
+3x=12\Rightarrow x=4.
 $$
 
-A non-degenerate $2\\times 2$ linear system cannot admit a second distinct real solution besides this pair $(4,3)$.
+Substitute $x=4$ back into the first equation:
+
+$$
+4+y=7\Rightarrow y=3.
+$$
+
+(As a check, the second equation gives $2\cdot 4-y=5$, so $8-y=5$ and again $y=3$.) The coefficient matrix has rows $(1,1)$ and $(2,-1)$; their determinant is
+
+$$
+1\cdot(-1)-1\cdot 2=-3\neq 0,
+$$
+
+so the system is non-degenerate and this pair is the unique real solution. In particular there cannot be a continuum of solutions or a second distinct intersection point.
 
 So the statement is True.`,
 
     `**C.** → True
 
-From the unique solution found in letter B, compare the two coordinates directly rather than re-solving the system from scratch.
+The unique solution is $(x,y)=(4,3)$, and $4>3$.
 
 $$
-x=4,\\qquad y=3
+x=4>3=y
 $$
-
-$$
-4>3
-$$
-
-so $x$ is strictly larger than $y$ in the unique real solution of the two-equation pack, as claimed.
 
 So the statement is True.`,
 
     `**D.** → True
 
-Multiply the two solution coordinates obtained in letter B; no further algebra is required beyond reading off the product of those two numbers.
+From the solution $(4,3)$ already forced in letter B, form the product of the two coordinates. No further equation-solving is needed — just multiply:
 
 $$
-x\\cdot y=4\\cdot 3=12
+x\cdot y=4\cdot 3=12.
 $$
 
-The product of the two solution coordinates equals $12$ exactly as claimed.
+The product equals $12$ on the nose, which is exactly the claim. (If you prefer a symmetric route: from $x+y=7$ and $xy=?$, the second equation $2x-y=5$ together with $x+y=7$ again yields $x=4$, $y=3$, and the same product.)
 
 So the statement is True.`,
 
     `**E.** → False
 
-The two lines $x+y=7$ and $2x-y=5$ have different slopes ($\\!-1$ versus $2$), so they intersect in at most one point. That unique intersection is already $(4,3)$.
+Two distinct lines intersect in at most one point. These lines have slopes $-1$ and $2$, so they are not parallel, and their unique intersection is already $(4,3)$. There is no second distinct real solution.
 
 $$
-\\text{unique solution}=(4,3)
+\text{unique solution}=(4,3)
 $$
-
-There is therefore no second distinct real solution besides $(4,3)$ — the claim fails.
 
 So the statement is False.`,
   ];
@@ -908,75 +934,65 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-For a polynomial sampled on consecutive integers, the first non-vanishing constant difference row reveals the degree. Read the displayed third-difference row.
+Look at the difference table the way an analyst would: start at the bottom and ask which row first settles into a nonzero constant. The first-difference row wanders ($0,2,10,24,44,70$), and the second-difference row still climbs ($2,8,14,20,26$). Only the third-difference row locks:
 
 $$
-\\Delta^{3}f:\\quad 6,\\ 6,\\ 6,\\ 6
+\\Delta^{3}f:\\quad 6,\\ 6,\\ 6,\\ 6.
 $$
 
-The third differences are constant and nonzero, which characterises $\\deg f=3$ (first and second differences are not constant).
+For samples on consecutive integers, a constant nonzero $k$-th difference row means the underlying polynomial has degree exactly $k$. Here $k=3$, so $\\deg f=3$. If the degree were smaller, the third differences would already be zero; if it were larger, they would keep changing. Neither happens, so the degree claim is right.
 
 So the statement is True.`,
 
     `**B.** → True
 
-For unit step size, the constant third difference equals $3!$ times the leading coefficient $a_{3}$ of the cubic. Solve for $a_{3}$ directly.
+With unit step, the constant third difference is $3!$ times the leading coefficient:
 
 $$
-3!\\,a_{3}=\\Delta^{3}f=6
+3!\\,a_{3}=6\\Rightarrow a_{3}=1.
 $$
-
-$$
-a_{3}=\\dfrac{6}{6}=1
-$$
-
-So the leading coefficient of $f$ equals $1$, matching the claim.
 
 So the statement is True.`,
 
     `**C.** → True
 
-Evaluate the proposed cubic at each tabulated integer and compare with the $f(x)$ row of the table.
+The proposed cubic is $f(x)=x^{3}-2x^{2}+x+3$. Check it against every tabulated abscissa rather than trusting the leading-term guess alone. At the left end,
 
 $$
-f(0)=3,\\quad f(1)=3,\\quad f(2)=5,\\quad f(3)=15
+f(0)=3,\\qquad f(1)=1-2+1+3=3,\\qquad f(2)=8-8+2+3=5,
 $$
 
+and at $x=3$ one gets $27-18+3+3=15$. Continuing,
+
 $$
-f(4)=39,\\quad f(5)=83,\\quad f(6)=153
+f(4)=64-32+4+3=39,\\qquad f(5)=125-50+5+3=83,\\qquad f(6)=216-72+6+3=153.
 $$
 
-Every entry matches the table, so $x^{3}-2x^{2}+x+3$ reproduces every tabulated value of $f$.
+Each value matches the $f(x)$ row of the table exactly, so the identity claim holds for the whole sample.
 
 So the statement is True.`,
 
     `**D.** → True
 
-A genuine cubic keeps its third differences constant forever. The displayed third-difference entries are already all equal to $6$, so the next open slot must continue the same constant sequence.
-
-$$
-\\text{next }\\Delta^{3}=6
-$$
-
-If $f$ stays cubic, the missing rightmost third-difference entry must equal $6$.
+A cubic’s third differences never drift: once they equal $6$, every later third difference equals $6$ as well. The blank rightmost slot is just the next term of that constant sequence, so it must be $6$ if $f$ remains cubic.
 
 So the statement is True.`,
 
     `**E.** → False
 
-A single vanishing first difference only equates two neighbouring sample values; it does not force a constant polynomial on the whole real line.
+The first tabulated first-difference being $0$ only says the two neighbouring samples agree:
 
 $$
-\\Delta f(0)=0\\Rightarrow f(1)=f(0)=3
+f(1)=f(0)=3.
 $$
 
-But already the next tabulated value shows
+That is a local coincidence, not a global constancy theorem. The very next tabulated value already breaks constancy:
 
 $$
-f(2)=5\\neq 3
+f(2)=5\\neq 3,
 $$
 
-so $f$ is not constant globally.
+and later values keep climbing ($15,39,83,153$). A polynomial that is constant on the whole real line would have every first difference zero, not merely one of them. The leap from “one vanishing first difference” to “$f$ is constant everywhere” is therefore false.
 
 So the statement is False.`,
   ];
@@ -1041,77 +1057,73 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Introduce $L=\\log_{a}(x)$ and rewrite every logarithm through change of base, then solve the resulting linear equation in $L$.
+The cleanest attack is to introduce a single unknown $L=\\log_{a}(x)$ and rewrite every logarithm through that letter. Change of base (or the power rule for logarithms) gives three left-hand pieces:
 
 $$
-\\log_{a}(x^{2})=2L,\\qquad \\log_{a^{3}}(x)=\\dfrac{L}{3},\\qquad \\log_{\\sqrt{a}}(x)=2L
+\\log_{a}(x^{2})=2L,\\qquad \\log_{a^{3}}(x)=\\dfrac{L}{3},\\qquad \\log_{\\sqrt{a}}(x)=\\dfrac{L}{1/2}=2L.
 $$
 
-$$
-\\text{RHS}=\\log_{a}(a^{4}\\cdot x)-3=4+L-3=1+L
-$$
+The right-hand side expands just as easily:
 
 $$
-\\text{LHS}=2L+\\dfrac{L}{3}-2L=\\dfrac{L}{3}
+\\log_{a}(a^{4}\\cdot x)-3=\\log_{a}(a^{4})+\\log_{a}(x)-3=4+L-3=1+L.
 $$
 
+Putting the left-hand side together,
+
 $$
-\\dfrac{L}{3}=1+L\\Rightarrow -\\dfrac{2L}{3}=1\\Rightarrow L=-\\dfrac{3}{2}
+2L+\\dfrac{L}{3}-2L=\\dfrac{L}{3},
 $$
 
-Since $x=a^{L}$ is one-to-one for $x>0$, there is exactly one positive root.
+so the original equation collapses to the ordinary linear relation
+
+$$
+\\dfrac{L}{3}=1+L.
+$$
+
+Clear the fraction: $L=3+3L$, hence $-2L=3$, and finally $L=-3/2$. Because the map $x\\mapsto\\log_{a}(x)$ is one-to-one on $(0,\\infty)$, this unique $L$ produces exactly one positive $x$, and that solution satisfies $\\log_{a}(x)=-3/2$ by definition. Domain checks are automatic under $a>1$ and $x>0$: every base is larger than $1$, and every argument stays positive.
 
 So the statement is True.`,
 
     `**B.** → False
 
-From letter A one has $L=-3/2$. Exponentiating with base $a$ gives the opposite power of what the claim asserts.
-
-$$
-x=a^{L}=a^{-3/2}
-$$
-
-which is not equal to $a^{3/2}$. Those two letter forms would coincide only if $a^{3}=1$, which is impossible for the standing hypothesis $a>1$.
+From letter A, $L=-3/2$, so $x=a^{-3/2}$, not $a^{3/2}$.
 
 So the statement is False.`,
 
     `**C.** → True
 
-This is precisely the letter form obtained by exponentiating $L=-3/2$ from letter A.
+Exponentiate $L=-3/2$:
 
 $$
-x=a^{L}=a^{-3/2}
+x=a^{L}=a^{-3/2}.
 $$
 
-and the uniqueness argument from letter A still applies (the map $L\\mapsto a^{L}$ is one-to-one for $x>0$), so $x=a^{-3/2}$ is the unique positive solution of the mixed-base equation.
+Uniqueness follows because $L\\mapsto a^{L}$ is one-to-one for positive $x$, so this is the unique positive solution.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Substitute $x=1$ into both sides of the original equation. All logarithms of $1$ vanish on the left-hand side.
-
-$$
-\\text{LHS}=\\log_{a}(1)+\\log_{a^{3}}(1)-\\log_{\\sqrt{a}}(1)=0
-$$
-
-$$
-\\text{RHS}=\\log_{a}(a^{4})-3=4-3=1\\neq 0
-$$
-
-So $x=1$ does not solve the displayed equation when $a>1$.
+Plug in $x=1$. The left-hand side is a sum of logarithms of $1$, hence $0$. The right-hand side is $\\log_{a}(a^{4})-3=1$. Since $0\\neq 1$, the candidate fails.
 
 So the statement is False.`,
 
     `**E.** → True
 
-At the unique root one has $L=-3/2$. The mixed-base logarithm with base $a^{3}$ is just one-third of that common logarithm $L$.
+At the unique positive root one already knows $L=\\log_{a}(x)=-3/2$ from letter A. The logarithm with the larger base $a^{3}$ is linked to $L$ by the change-of-base identity
 
 $$
-\\log_{a^{3}}(x)=\\dfrac{L}{3}=\\dfrac{-3/2}{3}=-\\dfrac{1}{2}
+\\log_{a^{3}}(x)=\\dfrac{\\log_{a}(x)}{\\log_{a}(a^{3})}=\\dfrac{L}{3}.
 $$
 
-So at the unique positive solution one has $\\log_{a^{3}}(x)=-1/2$, exactly as claimed.
+Substitute the known value:
+
+$$
+\\dfrac{L}{3}=\\dfrac{-3/2}{3}=-\\dfrac{1}{2}.
+$$
+
+As a quick consistency check, the defining relation $(a^{3})^{v}=x$ with $v=-1/2$ becomes $a^{-3/2}=x$, which is exactly the root from letter C. So the evaluation $\\log_{a^{3}}(x)=-1/2$ is confirmed two ways.
 
 So the statement is True.`,
   ];
@@ -1150,77 +1162,73 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Write revenue $R=pq=(60-q)q$, form taxed profit, differentiate, and set the derivative to zero.
+Write revenue from inverse demand as $R(q)=(60-q)q=60q-q^{2}$. Taxed profit subtracts both private cost and the specific tax $6q$:
 
 $$
-\\pi(q)=(60-q)q-\\bigl(\\tfrac12 q^{2}+4q+20\\bigr)-6q=60q-q^{2}-\\tfrac12 q^{2}-10q-20
+\\pi(q)=60q-q^{2}-\\bigl(\\tfrac12 q^{2}+4q+20\\bigr)-6q.
 $$
 
-$$
-\\pi(q)=-\\tfrac32 q^{2}+50q-20
-$$
+Combine like terms:
 
 $$
-\\pi'(q)=-3q+50=0\\Rightarrow q=\\dfrac{50}{3}\\approx 16.67\\in(16,17)
+\\pi(q)=-\\tfrac32 q^{2}+(60-4-6)q-20=-\\tfrac32 q^{2}+50q-20.
 $$
 
-So the taxed profit-maximising output lies strictly between $16$ and $17$.
+Differentiate and set the derivative to zero:
+
+$$
+\\pi'(q)=-3q+50=0\\Rightarrow q=\\dfrac{50}{3}.
+$$
+
+Numerically $50/3\\approx 16.667$, which sits strictly between $16$ and $17$. The second derivative $\\pi''(q)=-3<0$ confirms a maximum, so the taxed profit-maximising output really does lie in that open interval.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Repeat the first-order condition without the tax term $-6q$. The intercept of marginal profit rises by $6$, so the critical point moves to the right.
+Drop the tax term $-6q$ and repeat the first-order condition. Marginal profit’s intercept rises by $6$, so
 
 $$
-\\text{no tax: }\\pi'(q)=-3q+56=0\\Rightarrow q=\\dfrac{56}{3}\\approx 18.67
+\\pi'_{\\mathrm{no\\ tax}}(q)=-3q+56=0\\Rightarrow q=\\dfrac{56}{3}\\approx 18.67,
 $$
 
-$$
-\\dfrac{56}{3}>\\dfrac{50}{3}
-$$
-
-so the untaxed optimum is strictly larger than the taxed optimum.
+which is strictly larger than the taxed optimum $50/3$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-At an interior maximum, marginal revenue equals marginal cost including the specific tax. Check that the taxed FOC is exactly that equality.
+At an interior maximum, MR equals MC including the tax. With $MR=60-2q$ and taxed $MC=q+4+6=q+10$,
 
 $$
-MR=60-2q,\\qquad MC_{\\mathrm{private}}=q+4,\\qquad MC_{\\mathrm{tax}}=q+4+6=q+10
+60-2q=q+10\\Rightarrow q=\\dfrac{50}{3},
 $$
 
-$$
-60-2q=q+10\\Rightarrow 50=3q\\Rightarrow q=\\dfrac{50}{3}
-$$
-
-which matches the taxed optimum from letter A, so MR equals taxed MC there.
+matching letter A.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Substitute the taxed optimum into inverse demand and compare the resulting market price with EUR $40$.
+Feed the taxed optimum into inverse demand:
 
 $$
-p=60-q=60-\\dfrac{50}{3}=\\dfrac{180-50}{3}=\\dfrac{130}{3}\\approx 43.33
+p=60-\\dfrac{50}{3}=\\dfrac{130}{3}\\approx 43.33.
 $$
 
-Since $43.33>40$, the market price is strictly above EUR $40$, not below — the claim fails.
+That market price is strictly above EUR $40$, not below. The inequality in the claim points the wrong way.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Subtract the two closed-form optima already computed in letters A and B to read the exact output reduction caused by the tax.
+Subtract the two closed-form optima from letters A and B:
 
 $$
-q_{\\mathrm{no\\ tax}}-q_{\\mathrm{tax}}=\\dfrac{56}{3}-\\dfrac{50}{3}=\\dfrac{6}{3}=2
+q_{\\mathrm{no\\ tax}}-q_{\\mathrm{tax}}=\\dfrac{56}{3}-\\dfrac{50}{3}=\\dfrac{6}{3}=2.
 $$
 
-The tax reduces optimal output by exactly $2$ units relative to the no-tax optimum.
+The tax therefore cuts optimal output by exactly two units. The same gap can be read off the FOCs: the tax shifts the linear marginal-profit line parallel by $6$, and with slope $-3$ the horizontal displacement is $6/3=2$. Either route confirms the exact reduction of $2$.
 
 So the statement is True.`,
   ];
