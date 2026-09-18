@@ -1531,36 +1531,6 @@
   },
   {
     "subsection": "6.2",
-    "case_id": "CASE 6.2.026",
-    "title": "Book Value After Depreciation",
-    "context": "Analyze how a loss incurred during the year affects the equity reported on the balance sheet. Evaluate the following economic assertions:\n",
-    "statements": [
-      "Land owned by a construction firm is normally left out of the depreciation schedule because, unlike its heavy construction machinery, land does not wear out through ordinary use.",
-      "When a garage makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.",
-      "The depreciation that a hotel chain charges on its kitchen equipment each year is a non-cash expense, since the related cash was already paid out when the kitchen equipment was originally purchased.",
-      "A complete financial statement for a business typically brings together a balance sheet, a statement of profit and loss and a cash flow statement.",
-      "When a furniture maker earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is right. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A normally reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
-      "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
-      "It is normally non-cash; land is not depreciated like buildings. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Land is usually kept at cost without an annual write-down. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
-      "Place the cash movement in operating, investing, or financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. A statement reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
-      "The income statement tracks the period; the balance sheet freezes amounts at a moment. With that split the claim is wrong. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
-  },
-  {
-    "subsection": "6.2",
     "case_id": "CASE 6.2.027",
     "title": "Annual Depreciation Chart 27",
     "difficulty_level": "4/5",
@@ -3331,36 +3301,6 @@
   },
   {
     "subsection": "6.4",
-    "case_id": "CASE 6.4.001",
-    "title": "Short Balance Sheet Extract 1",
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following short balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 200 |\n| Inventory | 65 |\n| Cash and cash equivalents | 55 |\n| Total assets | **320** |\n| **EQUITY** | |\n| Share capital | 150 |\n| Retained earnings | 23 |\n| Total equity | **173** |\n| **LIABILITIES** | |\n| Long-term bank loan | 115 |\n| Trade payables | 32 |\n| Total liabilities | **147** |\n| Total equity and liabilities | **320** |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded.",
-      "The current ratio exceeds 1.27.",
-      "Inventory of €65 thousand is correctly classified as a current asset.",
-      "A published version of the extract above, showing total assets of €320 thousand, is an example of external financial reporting that a lender might study before extending credit.",
-      "An independent audit of the extract above, including the total assets of €320 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Depreciation spreads depreciable cost over useful life. It is normally non-cash; land is not depreciated like buildings. Against that rule the claim is off. Correct the life, residual, or land treatment and the statement fails. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Depreciation matches past spending on the asset, not a fresh cash bill. A recorded reading of the extract breaks this claim.\n\nSo the statement is False.",
-      "Current ratio = current assets ÷ current liabilities.\n\n$$\n\\text{Current ratio} = \\frac{\\text{current assets}}{\\text{current liabilities}}\n$$\n\n$$\n\\text{CA} = 65 + 0 + 55,\\quad \\text{CA} = 120,\\quad \\text{CL} = 32 + 0\n$$\n\n$$\n\\text{CL} = 32\n$$\n\n$$\n\\frac{120}{32} \\approx 3.7500 > 1.27\n$$\n\nCurrent ratio = 120 ÷ 32 ≈ 3.75. The claim says the ratio exceeds 1.27.\n\nSo the statement is True.",
-      "Inventory is held for sale or cycle use, so it is current. It is neither an intangible nor a long-term operating asset. How the item is held and for how long decides the balance-sheet line. Settlement timing and intended use matter more than physical shape for the item. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. A classified reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
-      "Shape and size never settle the line. On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage. The threshold in the sentence is compared directly to the computed percentage.\n\nSo the statement is True.",
-      "On the chapter test the wording is accepted. Residual value reduces the depreciable base before the annual charge is calculated. An audit targets material misstatement, not absolute perfection of every euro.\n\nSo the statement is True."
-    ]
-  },
-  {
-    "subsection": "6.4",
     "case_id": "CASE 6.4.002",
     "title": "Financial Accounting and External Users",
     "context": "Analyze why financial accounting and management accounting are prepared for different groups of users. Evaluate the following economic assertions:\n",
@@ -4078,36 +4018,6 @@
       "From the extract, Trade receivables = 140 and current assets = 449.\n\n$$\n\\text{Share} = \\frac{\\text{Trade receivables}}{\\text{current assets}}\n$$\n\n$$\n\\text{Share} = \\frac{140}{449}\n$$\n\n$$\n\\text{Share} = 31.2\\%\n$$\n\nTrade receivables / current assets ≈ 140 ÷ 449 = 31.2%. Less than 46.6% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True.",
       "Long-term financing surplus = (equity + non-current liabilities) ÷ non-current assets − 1.\n\n$$\n\\text{Surplus} = \\frac{\\text{equity} + \\text{NCL}}{\\text{NCA}} - 1\n$$\n\n$$\n\\text{Equity} + \\text{NCL} = 577 + 461 = 1{,}038\n$$\n\n$$\n\\text{NCA} = 778\n$$\n\n$$\n\\frac{1{,}038}{778} \\approx 1.3342\n$$\n\n$$\n\\frac{1{,}038}{778} - 1 \\approx 0.3342 \\approx 33.4\\%\n$$\n\n$$\n33.4\\% > 30.8\\%\n$$\n\nYear-2 NCL/equity is 33.4%, above the 30.8% claim. Long-term financing = equity + non-current liabilities; express the surplus over non-current assets as a percentage.\n\nSo the statement is True."
     ]
-  },
-  {
-    "subsection": "6.5",
-    "case_id": "CASE 6.5.014",
-    "title": "Liquidity Through the Current Ratio for Analysts",
-    "context": "Analyze how inventory turnover links cost of sales to average inventory, and what a rising figure typically indicates. Evaluate the following economic assertions:\n",
-    "statements": [
-      "Return on equity is calculated by comparing a business's cash balance with its total liabilities rather than relating profit to equity.",
-      "The debt ratio expresses total liabilities as a percentage of total assets, showing what proportion of the asset base has been financed through borrowing.",
-      "Because equity and liabilities together finance the whole of the balance sheet, the equity ratio and the debt ratio move in opposite directions as one rises the other falls correspondingly.",
-      "A low return on equity is always acceptable regardless of how much risk the owners have taken on by investing in the business.",
-      "Return on capital employed relates profit before interest and tax to inventory levels rather than to the long-term capital financing the business."
-    ],
-    "answer_key": [
-      false,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Flows for the year and stocks at year-end answer different questions. With that split the claim is wrong. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is False.",
-      "Shape and size never settle the line. On the chapter test the wording is accepted. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated. Year 1 and Year 2 columns give the pair of totals needed for the percentage.\n\nSo the statement is True.",
-      "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True.",
-      "Dividends and share issues are financing events, not operating sales. A acceptable reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. Once the item is placed on the correct line, this assertion fails.\n\nSo the statement is False.",
-      "With that split the claim is wrong. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. A dealer’s the item stays inventory until sold. How the item is held and for how long decides the balance-sheet line. Own use of the item for years makes it a tangible fixed asset. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
   },
   {
     "subsection": "6.5",
@@ -5038,36 +4948,6 @@
       "Receivables turnover shows how many times revenue covers average trade receivables.\n\n$$\n\\frac{96 + 131}{2} \\approx 113.5\n$$\n\n$$\n\\frac{1{,}223}{113.5} \\approx 10.7753\n$$\n\nReceivables turnover = revenue ÷ average trade receivables. RT = 1,223113.5 = 10.7753 Threshold exceeds 9.87. Check the extract’s labels once more against the stem’s threshold.\n\nSo the statement is True.",
       "Average inventory and average assets are midpoints of the beginning and ending balances on the extract.\n\n$$\n\\frac{156 + 199}{2} \\approx 177.5\n$$\n\n$$\n\\frac{847 + 983}{2} \\approx 915 \\approx 19.4\\%\n$$\n\n$$\n\\frac{177.5}{915} \\approx 0.1940\n$$\n\nAverage inventory and average assets are midpoints of beginning and ending balances.\n\nSo the statement is False."
     ]
-  },
-  {
-    "subsection": "6.5",
-    "case_id": "CASE 6.5.049",
-    "title": "Return on Equity Explained for Analysts",
-    "context": "Review how the four broad areas of liquidity, profitability, financial efficiency and financial structure fit together in a rounded analysis. Evaluate the following economic assertions:\n",
-    "statements": [
-      "Return on equity for a construction group relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.",
-      "A single return on capital employed figure for a supermarket chain is always fully meaningful on its own, without any need to compare it against other years or similar businesses.",
-      "Return on equity for a supermarket chain is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.",
-      "Inventory turnover for a supermarket chain is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.",
-      "The current ratio and the acid-test ratio for a supermarket chain always produce identical results, regardless of how much inventory the business holds."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "The income statement tracks the period; the balance sheet freezes amounts at a moment. With that split the claim is fine. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
-      "Read the claim against the chapter rule: A single return on capital employed figure for a supermarket chain is always fully meaningful on its own, without any need to compare it ….\n\nSo the statement is False.",
-      "With that split the claim is wrong. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. How the item is held and for how long decides the balance-sheet line. A return reading of the extract breaks this claim. Period profit flows to retained earnings; it is not a separate cash-flow line. Residual value reduces the depreciable base before the annual charge is calculated. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is False.",
-      "Settlement timing and intended use matter more than physical shape for the item. Own use of the item for years makes it a tangible fixed asset. Distribution and administration sit below gross profit as operating expenses. How the item is held and for how long decides the balance-sheet line. A dividing reading of the extract breaks this claim. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False.",
-      "Looks do not decide the balance-sheet line. On the chapter test the wording is rejected. The threshold in the sentence is compared directly to the computed percentage.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
   },
   {
     "subsection": "6.5",

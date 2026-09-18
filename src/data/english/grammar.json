@@ -3769,44 +3769,6 @@
       "solution_overview": "Only the community-centre oversight pair keeps the same agent under a clean voice flip. The rest invent blame, reflexive cool-downs, or drop be after a modal.\n\n**Part 1: What to watch for.**\n\nParadoxical vote rewrites, fake landlord stalling, allowed themselves versus were allowed, overseen by with modifiers kept, and must changed.\n\n**Part 2: How to decide.**\n\nReject blame and reflexive agency the source never stated. Modal passives always need be before the participle. Carry identifying modifiers of the agent into the by-phrase when they matter.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
-      "id": "en-g-5-19",
-      "case_id": "ENG G.5.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "\"Having been briefed by the nurse, the parents approved the treatment.\" → \"The parents were briefed by the nurse and then approved the treatment.\"",
-        "The library books are to be returned within fourteen days.",
-        "\"What remains to be decided is the venue.\" → \"Someone has already decided the venue, and we know who.\"",
-        "The rare manuscript was being carefully restored when funding paused.",
-        "Under no circumstances should guest passwords be shared without encryption."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) \"Having been briefed by the nurse, the parents approved the treatment.\" → \"The parents were briefed by the nurse and then approved the treatment.\"**\n\n\"Having been briefed by the nurse, …\" → \"The parents were briefed by the nurse and then approved the treatment.\" The same nurse remains the agent; nothing new is invented. The participial passive and finite paraphrase carry the same sequence.\n\nHaving been briefed unpacks to were briefed by the same nurse with no fake agents, so the paraphrase is **true**.",
-        "**B) The library books are to be returned within fourteen days.**\n\nThe library books are to be returned within fourteen days uses be to + passive for scheduled obligation: are to be + past participle. Fourteen days frames a formal loan deadline.\n\n**Tip:** are to be + past participle is formal diary-style passive.\n\nAre to be returned within fourteen days marks scheduled library obligation, so the books line is **true**.",
-        "**C) \"What remains to be decided is the venue.\" → \"Someone has already decided the venue, and we know who.\"**\n\nWhat remains to be decided is the venue means the venue is still open. Claiming someone has already decided it — and that we know who — reverses the meaning. Remains to be decided signals incompleteness, not a finished secret decision.\n\n**Trap:** Already decided… and we know who is a near-miss that flips open → closed plus fake certainty.\n\nRemains to be decided means the venue is still open, so already-decided certainty is **false** — \"What remains to be decided is the venue.\"",
-        "**D) The rare manuscript was being carefully restored when funding paused.**\n\nThe rare manuscript was being carefully restored when funding paused is past continuous passive. The adverb carefully can sit between being and the participle without breaking form.\n\n**Tip:** Adverbs can sit between being and the participle.\n\nCarefully between being and restored keeps continuous passive intact, so the manuscript line is **true**.",
-        "**E) Under no circumstances should guest passwords be shared without encryption.**\n\nUnder no circumstances should guest passwords be shared without encryption keeps the modal passive after inversion: should… be shared. Inversion does not remove be, and without encryption stays part of the rule.\n\n**Tip:** Inversion does not remove the passive be.\n\nInversion still needs be after should, so Under no circumstances… be shared is **true**."
-      ],
-      "highlights": [
-        "were briefed by the nurse",
-        "are to be returned",
-        "already decided the venue",
-        "was being carefully restored",
-        "should guest passwords be shared"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.5",
-      "solution_overview": "Four advanced passives hold: participial, be-to, continuous, and inverted modal. The venue line fails because it turns an undecided state into a fabricated completed act.\n\n**Part 1: What to watch for.**\n\nHaving been briefed… unpacking fairly, are to be returned, remains to be decided versus already decided, was being carefully restored, and inverted should… be shared.\n\n**Part 2: How to decide.**\n\nParticipial and inverted passives still obey the no-fake-agent rule. to be decided signals incompleteness — never rewrite it as a known finished decision. Inversion does not remove be.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
-    },
-    {
       "id": "en-g-5-20",
       "case_id": "ENG G.5.20",
       "title": "Task 20",

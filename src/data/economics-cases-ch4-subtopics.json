@@ -204,64 +204,6 @@
   },
   {
     "subsection": "4.1",
-    "case_id": "CASE 4.1.09",
-    "title": "Core Features of Sole Trader Businesses",
-    "context": "Analyze the defining characteristics of sole proprietorship as described in business ownership theory. Evaluate the following economic assertions:",
-    "statements": [
-      "A sole proprietorship combines ownership and day-to-day management in a single individual without separate partners.",
-      "Sole proprietorships are easy to establish, especially for small businesses, with no financial requirements to start.",
-      "The business is not a legal entity of its own, so profits are taxed on the owner's personal income statement.",
-      "Unlimited liability means the sole proprietor's private assets are also at stake when business debts must be repaid.",
-      "If the sole proprietor needs support, personnel may be hired while the proprietor retains key management decisions."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Ownership and daily management sit in one individual with no partners sharing title or control. That single-person combination is what defines a sole proprietorship.\n\nSo the statement is True.",
-      "No minimum share capital or company-formation package is required to begin trading as a sole proprietor. Small traders often choose the form for that low setup barrier.\n\nSo the statement is True.",
-      "Without a separate legal entity, profits are not taxed through a company return. They appear on the owner's personal income statement instead.\n\nThe tax treatment and the missing corporate shell are two sides of the same structure. Reporting on the personal statement is the ordinary consequence for this ownership form, and it is why the chapter links unincorporated status to personal income taxation rather than corporate filing.\n\nSo the statement is True.",
-      "Creditors are not stopped at assets labelled \"business.\" Private property can be reached when debts remain after firm assets are exhausted. That is unlimited liability in practice.\n\nSo the statement is True.",
-      "Personnel may be hired for support while the proprietor keeps the important management decisions and residual risk. Staff expand capacity; they do not replace ownership control.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.1",
-    "case_id": "CASE 4.1.11",
-    "title": "Management Concentration and Risk Bearing",
-    "context": "Consider a freelance designer operating as a sole proprietorship who occasionally contracts administrative help. Evaluate the following economic assertions:",
-    "statements": [
-      "The sole proprietor can make all management decisions without necessarily consulting other owners.",
-      "It remains the sole proprietor's task to make the most important management decisions and take all the risk.",
-      "Management of the business largely depends on the sole proprietor rather than on a separate board of directors.",
-      "Even when administrative tasks are delegated, the proprietor retains authority over the most important management decisions.",
-      "Hiring personnel means the employees rather than the proprietor decide the firm's strategic direction."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "No co-owner must be consulted before the proprietor sets prices or suppliers. Management decisions can be made alone because ownership is not shared with partners.\n\nSo the statement is True.",
-      "Even with helpers, the most important choices and the full risk stay with the sole proprietor. That residual responsibility is part of the one-person ownership form.\n\nSo the statement is True.",
-      "There is no separate board of directors running a sole proprietorship. Strategy and day-to-day control concentrate on the owner rather than on an elected board.\n\nManagement depending largely on that one person follows from the absence of corporate governance layers. The statement captures that concentration correctly and contrasts it with company boards.\n\nSo the statement is True.",
-      "Bookkeeping or counter work can be delegated, yet authority over major decisions remains with the proprietor. Delegation of tasks is not surrender of ownership-level control.\n\nSo the statement is True.",
-      "Hiring staff does not hand strategic direction to employees. Workers execute assigned duties; the proprietor still sets the firm's course and bears residual risk.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.1",
     "case_id": "CASE 4.1.12",
     "title": "Establishment Ease and Business Continuity",
     "context": "Analyze why sole proprietorships appeal for small start-ups yet pose succession challenges over time. Evaluate the following economic assertions:",

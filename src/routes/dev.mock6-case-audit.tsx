@@ -27,7 +27,7 @@ function Mock6CaseAuditPage() {
           <p className="text-sm text-muted-foreground">rev {MOCK_EXAM_6_CONTENT_REV}</p>
           <p className="text-sm text-muted-foreground">
             If this page still shows an older rev after GitHub sync, Lovable preview is stale.
-            After a successful update the stamp must include <code>Gold Standard</code>. Custom
+            After a successful update the stamp must include <code>Dynamic Pricing</code>. Custom
             CCC chart (Q10) and math Q22–34 must render KaTeX, not raw <code>$$…$$</code>.
           </p>
         </header>

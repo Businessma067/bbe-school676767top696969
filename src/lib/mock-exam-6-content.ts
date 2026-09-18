@@ -1,9 +1,9 @@
 /**
- * Curated Mock Exam 6 content (course-theme harder bank):
- * - Economics → English (Classical Gold Standard) → Math
+ * Curated Mock Exam 6 content (alternate in-chapter types):
+ * - Economics → English (Dynamic Pricing) → Math
  * - Economics: unused hard bank + cash-conversion-cycle chart
- * - English: T.3 Gold Standard + G.8.19
- * - Math: same BBE chapter families as Mock 5, denser/harder chains
+ * - English: T.2 Dynamic Pricing + G.5.19
+ * - Math: same BBE chapters as Mock 5, but different task types per chapter
  */
 
 import sourced from "@/data/mock-exam-6-sourced.json";
@@ -106,7 +106,7 @@ export const MOCK_EXAM_6_POINTS_TOTAL =
 
 /** Bump when Mock 6 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_6_CONTENT_REV =
-  "2026-09-18c · 34q · Gold Standard · CCC · course-theme harder math";
+  "2026-09-18d · 34q · Dynamic Pricing · CCC · alt in-chapter types";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

@@ -3,7 +3,7 @@
  * Engines: same BBE chapter families as Mocks 1–5 (sets, Vieta, PV, pipes, BE,
  * inequalities, piecewise, powers, parametric cubic, exp/log, product rule,
  * best-of-n, binomial) but denser multi-step traps — not off-syllabus topics.
- * Order: economics → english (Classical Gold Standard T.3) → math.
+ * Order: economics → english (Dynamic Pricing T.2) → math.
  *
  * Run: node scripts/run-rebuild-mock-6.mjs
  */
@@ -220,21 +220,21 @@ So the statement is False.`,
 function buildEnglish() {
   const texts = JSON.parse(fs.readFileSync(path.join(ROOT, "english/texts.json"), "utf8"));
   const grammar = JSON.parse(fs.readFileSync(path.join(ROOT, "english/grammar.json"), "utf8"));
-  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.3");
-  if (!sub?.passage) throw new Error("Classical Gold Standard passage t.3 missing");
+  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.2");
+  if (!sub?.passage) throw new Error("Dynamic Pricing passage t.2 missing");
 
   const order: Array<{ id: string; kind: string; withPassage: boolean; src: "texts" | "grammar" }> = [
-    { id: "ENG T.3.01", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.3.02", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.3.03", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.3.04", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.3.05", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.3.08", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.3.09", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.3.06", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.3.07", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.3.10", kind: "vocabulary", withPassage: false, src: "texts" },
-    { id: "ENG G.8.19", kind: "grammar", withPassage: false, src: "grammar" },
+    { id: "ENG T.2.01", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.2.02", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.2.03", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.2.04", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.2.05", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.2.08", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.2.09", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.2.06", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.2.07", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.2.10", kind: "vocabulary", withPassage: false, src: "texts" },
+    { id: "ENG G.5.19", kind: "grammar", withPassage: false, src: "grammar" },
   ];
 
   const stemByKind: Record<string, string> = {
@@ -248,7 +248,7 @@ function buildEnglish() {
     const t = bank.find((x: { case_id: string }) => x.case_id === o.id);
     if (!t) throw new Error(`Missing English task ${o.id}`);
     let context = stemByKind[o.kind]!;
-    if (o.id === "ENG T.3.10") {
+    if (o.id === "ENG T.2.10") {
       const quoted = String(t.context || "").match(/[""]([^""]+)[""]/);
       const sentence =
         quoted?.[1] ||
@@ -256,11 +256,11 @@ function buildEnglish() {
           t.source_sentence ||
             t.prompt_sentence ||
             t.lead_sentence ||
-            "Under the classical gold standard, currencies were defined as fixed weights of gold.",
+            "Dynamic pricing adjusts the listed price in real time as demand, inventory and rival offers shift.",
         );
       context = `Consider this sentence from the passage: "${sentence}" Decide whether each paraphrase preserves its meaning.`;
     }
-    if (o.id === "ENG T.3.08" || o.id === "ENG T.3.09") {
+    if (o.id === "ENG T.2.08" || o.id === "ENG T.2.09") {
       context =
         "Based on the passage, decide whether each given meaning matches the word's actual use.";
     }
@@ -288,15 +288,15 @@ function buildEnglish() {
 
 // ---- assemble (unused hard bank + CCC custom; no overlap with Mocks 1–5) ----
 const economics = [
-  mapEcon(byId(2, "CASE 2.6.27")),
-  mapEcon(byId(3, "CASE 3.4.02")),
-  mapEcon(byId(4, "CASE 4.2.07")),
-  mapEcon(byId(4, "CASE 4.3.32")),
-  mapEcon(byId(5, "CASE 5.7.24")),
-  mapEcon(byId(6, "CASE 6.1.031")),
-  mapEcon(byId(6, "CASE 6.4.013")),
-  mapEcon(byId(6, "CASE 6.3.016")),
-  mapEcon(byId(6, "CASE 6.5.064")),
+  mapEcon(byId(2, "CASE 2.3.02")),
+  mapEcon(byId(3, "CASE 3.2.10")),
+  mapEcon(byId(4, "CASE 4.1.09")),
+  mapEcon(byId(4, "CASE 4.1.11")),
+  mapEcon(byId(5, "CASE 5.1.03")),
+  mapEcon(byId(6, "CASE 6.2.026")),
+  mapEcon(byId(6, "CASE 6.4.001")),
+  mapEcon(byId(6, "CASE 6.5.014")),
+  mapEcon(byId(6, "CASE 6.5.049")),
   buildCashConversionCase(),
 ];
 

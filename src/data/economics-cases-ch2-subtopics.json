@@ -900,35 +900,6 @@
   },
   {
     "subsection": "2.3",
-    "case_id": "CASE 2.3.02",
-    "title": "Recession headline",
-    "context": "Consider headlines report two consecutive quarters of falling national GDP and rising job losses economy-wide. Evaluate the following economic assertions:",
-    "statements": [
-      "Falling national GDP and economy-wide job losses are macroeconomic phenomena.",
-      "One closed shop laying off two staff is macroeconomics because layoffs appear in the headline.",
-      "Macroeconomics aims to explain and predict recessions and recovery patterns.",
-      "Economics as a whole studies decisions under limited resources at micro and macro levels.",
-      "Microeconomics cannot study unemployment because unemployment exists only at macro level."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Falling national GDP and economy-wide job losses describe whole-economy performance. Those are macroeconomic phenomena, not one shop's story.\n\nSo the statement is True.",
-      "Two staff laid off in one closed shop is a micro event even if headlines also discuss national layoffs. Scale and aggregation matter. Local closures do not become macro merely because the word layoff appears nearby.\n\nSo the statement is False.",
-      "Macroeconomics builds theories about recessions, recoveries, unemployment swings, and related aggregates. Explaining and predicting those patterns is a core aim of the branch. Two consecutive quarters of falling GDP fit that agenda. The statement correctly assigns recession analysis to macro rather than to a single firm's accounts.\n\nSo the statement is True.",
-      "Economics as a whole studies decisions under limited resources at both micro and macro levels. The recession headline sits in that wider science without ejecting micro topics elsewhere.\n\nSo the statement is True.",
-      "Microeconomics can study a firm's hiring and firing or a worker's job search. Unemployment also appears at macro level as an aggregate rate. The topic is not macro-exclusive.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.3",
     "case_id": "CASE 2.3.03",
     "title": "Freonia quarterly report",
     "context": "Consider freonia's statistics office reports national growth, unemployment, and central-bank interest rates each quarter. Evaluate the following economic assertions:",

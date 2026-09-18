@@ -697,35 +697,6 @@
   },
   {
     "subsection": "3.2",
-    "case_id": "CASE 3.2.10",
-    "title": "Gross Domestic Product Definition",
-    "context": "Review the definition of gross domestic product as a measure of overall economic activity within a country. Evaluate the following economic assertions:",
-    "statements": [
-      "GDP counts final goods and services rather than intermediate goods sold between factories.",
-      "GDP is usually calculated for final production within one year inside national borders.",
-      "GDP totals the monetary value of final goods and services produced within a country's borders.",
-      "GDP measures production within borders regardless of firm nationality.",
-      "Final services such as insurance produced domestically enter GDP totals."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "GDP focuses on final goods and services so intermediate factory sales are not double-counted. Final demand, not every shipment between plants, enters the total.\n\nSo the statement is True.",
-      "GDP is typically compiled for production within a year inside national borders. The annual, territorial frame is part of how the measure is defined for comparisons.\n\nSo the statement is True.",
-      "Gross domestic product adds the monetary value of final goods and services produced within a country's borders. Money values make unlike products addable; \"final\" avoids counting the same value twice through the supply chain.\n\nBorders define the geographic scope: output made inside the country counts, whether sold at home or abroad as exports. That is the standard textbook definition restated cleanly.\n\nSo the statement is True.",
-      "Domestic production counts regardless of whether the firm is locally or foreign-owned. Territory of production, not passport of the owner, sets the GDP boundary.\n\nSo the statement is True.",
-      "Insurance and other final services produced domestically enter GDP totals just as final goods do. Services are not excluded from the national production measure.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.2",
     "case_id": "CASE 3.2.12",
     "title": "GDP Growth Measure",
     "context": "Analyze how GDP growth is assessed over time. Evaluate the following economic assertions:",

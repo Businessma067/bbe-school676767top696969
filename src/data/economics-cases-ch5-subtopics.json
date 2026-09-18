@@ -59,35 +59,6 @@
   },
   {
     "subsection": "5.1",
-    "case_id": "CASE 5.1.03",
-    "title": "B2B Versus B2C Classification",
-    "context": "Review the distinction between business-to-business marketing and business-to-consumer marketing in product classification. Evaluate the following economic assertions:",
-    "statements": [
-      "Consumer products are goods and services sold to consumers or private households in business-to-consumer exchange.",
-      "Computer support services cannot be products because services lack physical form.",
-      "Business-to-business marketing relates to producer products exchanged between firms.",
-      "Business-to-consumer marketing relates to consumer products sold to private households.",
-      "A printer bought for office use by a business is classified as a producer product even if an identical model exists for home buyers."
-    ],
-    "answer_key": [
-      true,
-      false,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Consumer products are goods and services sold to consumers or private households in business-to-consumer exchange. The B2C path and the household buyer are what place the item in that consumer category.\n\nSo the statement is True.",
-      "Services lack physical form yet still qualify as products when exchanged. Computer support sold to customers therefore sits inside the marketing product definition. Physical form is not a gatekeeper for product status.\n\nSo the statement is False.",
-      "Business-to-business marketing covers producer products exchanged between firms. When one company sells to another for commercial use, the exchange is B2B and the offering is treated as a producer product.\n\nSo the statement is True.",
-      "Business-to-consumer marketing covers consumer products sold to private households. The household buyer and the B2C exchange together mark the consumer-product lane rather than any factory or packaging detail.\n\nSo the statement is True.",
-      "A printer bought for office use by a business is a producer product even when an identical model is sold for home use. Buyer purpose in that transaction decides the label; model identity does not force a single category across all sales. Two units from the same SKU can sit in different lanes on the same day if one buyer is a firm and the other is a household. Classification stays transaction-specific rather than model-locked.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.1",
     "case_id": "CASE 5.1.04",
     "title": "Producer Products and Business Customers",
     "context": "Consider a commercial bakery selling bulk flour sacks to restaurants while packaging smaller bags for supermarket shoppers. Evaluate the following economic assertions:",
