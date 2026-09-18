@@ -894,67 +894,89 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Assume $p>0$ and $A>0$. As $x$ approaches $0$ from the right, every positive power of $x$ tends to $0$:
+Fix $A>0$ and assume the exponent satisfies $p>0$. The model is then a positive multiple of a positive power of $x$. On the half-line $x>0$ one may rewrite that power through the exponential–logarithm identity
 
 $$
-x^{p}\\to 0\\qquad(x\\to 0^{+})
+x^{p}=e^{p\\ln x}.
 $$
 
-Multiplying by the fixed positive constant $A$ preserves that vanishing limit:
+As $x\\to 0^{+}$, one has $\\ln x\\to-\\infty$. Because $p$ is a fixed positive number, the product $p\\ln x$ also tends to $-\\infty$, and therefore
 
 $$
-f(x)=A x^{p}\\to 0
+e^{p\\ln x}\\to e^{-\\infty}=0.
 $$
 
-so the claimed right-hand limit at zero holds for every positive exponent $p$.
+Multiplying by the constant amplitude $A$ cannot rescue a vanishing exponential:
+
+$$
+f(x)=A\\,x^{p}=A\\,e^{p\\ln x}\\to A\\cdot 0=0.
+$$
+
+(The same conclusion follows from the elementary rule that every positive power of $x$ tends to $0$ at the origin from the right; the exponential rewriting simply makes the mechanism explicit without plugging in any particular numerical value of $p$.) Hence
+
+$$
+\\lim_{x\\to 0^{+}}f(x)=0
+$$
+
+whenever $p>0$, which is exactly the claim.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Assume $p<0$ and write $p=-q$ with $q>0$. Then for $x>0$,
+Write the negative exponent as $p=-q$ with $q>0$. Then
 
 $$
-f(x)=A x^{-q}=\\dfrac{A}{x^{q}}
+f(x)=\\dfrac{A}{x^{q}}.
 $$
 
-As $x\\to+\\infty$, the denominator $x^{q}\\to+\\infty$ while $A$ stays fixed, so $f(x)\\to 0$. Negative exponents therefore send the power model to $0$ at infinity, as claimed.
+As $x\\to+\\infty$ the denominator diverges, so $f(x)\\to 0$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-If $p=0$, the elementary power identity $x^{0}=1$ holds for every $x>0$. Substituting into the model gives
+The zero-exponent case collapses by the power identity $x^{0}=1$ (valid for every $x>0$):
 
 $$
-f(x)=A\\cdot 1=A
+f(x)=A\\,x^{0}=A\\cdot 1=A.
 $$
 
-on the whole half-line $(0,+\\infty)$. That is a constant function whose constant value is the parameter $A>0$, exactly as claimed.
+So on $(0,+\\infty)$ the function is the constant function with value $A$. No $x$-dependence remains once $p=0$, which is precisely what “constant on $(0,+\\infty)$” means.
 
 So the statement is True.`,
 
     `**D.** → True
 
-Form the ratio of the model at doubled argument versus at $x$:
-
 $$
-\\dfrac{f(2x)}{f(x)}=\\dfrac{A(2x)^{p}}{A x^{p}}=\\dfrac{(2x)^{p}}{x^{p}}=2^{p}
+\\dfrac{f(2x)}{f(x)}=\\dfrac{A(2x)^{p}}{A x^{p}}=2^{p}.
 $$
 
-The constant $A$ cancels and the powers of $x$ cancel, leaving $2^{p}$. That quantity depends only on the parameter $p$, not on the variable $x$.
+The right-hand side depends on $p$ alone, never on $x$.
 
 So the statement is True.`,
 
     `**E.** → False
 
-Specialise to the exponent $p=-1$: then $f(x)=A/x$ with $A>0$. As $x\\to 0^{+}$, the denominator shrinks toward $0$ while the numerator stays fixed and positive, so
+Specialise to $p=-1$. The model becomes the reciprocal
 
 $$
-\\dfrac{A}{x}\\to +\\infty
+f(x)=A\\,x^{-1}=\\dfrac{A}{x}\\qquad(x>0).
 $$
 
-An infinite limit is not a finite positive number. The claim that the limit is finite and positive therefore fails.
+Ask what happens as $x$ approaches the origin from the right. The numerator is the fixed positive constant $A$, while the denominator $x$ shrinks toward $0$ through positive values. For every candidate finite threshold $M>0$ one can choose $x$ small enough that
+
+$$
+\\dfrac{A}{x}>M
+$$
+
+— concretely, take $0<x<A/M$. That is the definition of divergence to $+\\infty$:
+
+$$
+\\lim_{x\\to 0^{+}}\\dfrac{A}{x}=+\\infty.
+$$
+
+An infinite limit is not a real number at all, so it cannot be a “finite positive number.” The claim therefore fails: the right-hand limit at the origin is infinite, not finite and positive. (The same blow-up occurs for every negative exponent, but the letter only needs the concrete case $p=-1$.)
 
 So the statement is False.`,
   ];
@@ -997,67 +1019,103 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Substitute $x=1$ into the cubic and simplify the expression carefully:
+Plug $x=1$ into the cubic and expand term by term, treating $k$ as an arbitrary real parameter:
 
 $$
-1-3+(k+2)-k=0+k-k=0
+1^{3}-3\\cdot 1^{2}+(k+2)\\cdot 1-k=1-3+(k+2)-k.
 $$
 
-The identity holds for every real $k$, so $x=1$ is always a root. Polynomial division (or synthetic division) then factors the cubic as
+The constant pieces cancel first,
 
 $$
-(x-1)(x^{2}-2x+k)=0
+1-3=-2,
 $$
 
-for every real parameter $k$.
+and then the parameter pieces cancel as well,
+
+$$
+(k+2)-k=2,
+$$
+
+so the whole expression collapses to
+
+$$
+-2+2=0.
+$$
+
+The identity $0=0$ does not constrain $k$ at all: every real $k$ makes $x=1$ a root. Once a linear factor is known, synthetic division (or undetermined coefficients) produces the companion quadratic. Matching
+
+$$
+(x-1)(x^{2}+ax+b)=x^{3}+(a-1)x^{2}+(b-a)x-b
+$$
+
+against $x^{3}-3x^{2}+(k+2)x-k$ forces $a-1=-3$ (so $a=-2$), $-b=-k$ (so $b=k$), and $b-a=k+2$ (which is consistent). Hence for every real $k$
+
+$$
+x^{3}-3x^{2}+(k+2)x-k=(x-1)(x^{2}-2x+k).
+$$
+
+In particular $x=1$ is always a real root, as claimed.
 
 So the statement is True.`,
 
     `**B.** → False
 
-When $k=1$ the quadratic factor from letter A becomes a perfect square:
+Specialise letter A’s factorisation to $k=1$. The quadratic becomes a perfect square:
 
 $$
-x^{2}-2x+1=(x-1)^{2}
+x^{2}-2x+1=(x-1)^{2},
 $$
 
-so the cubic collapses to
-
-$$
-(x-1)(x-1)^{2}=(x-1)^{3}=0
-$$
-
-There is only one distinct real root ($x=1$) of multiplicity three — not two distinct real roots as claimed.
+and the cubic collapses to $(x-1)^{3}=0$. There is only one distinct real root (multiplicity three), not two.
 
 So the statement is False.`,
 
     `**C.** → True
 
-When $k=0$ the factorisation from letter A becomes
+Set $k=0$ in the factorisation from letter A. The quadratic factor simplifies immediately:
 
 $$
-(x-1)(x^{2}-2x)=(x-1)\\,x\\,(x-2)=0
+x^{2}-2x=x(x-2),
 $$
 
-The three roots are therefore $x=0$, $x=1$, and $x=2$. These three numbers are pairwise distinct, so the equation has three distinct real roots when $k=0$.
+so the cubic factors completely over the reals as
+
+$$
+(x-1)\\,x\\,(x-2)=0.
+$$
+
+Reading off the linear factors gives the three roots $x=0$, $x=1$, and $x=2$. These three numbers are pairwise distinct — none equals another — so when $k=0$ the equation has three distinct real roots, exactly as claimed.
 
 So the statement is True.`,
 
     `**D.** → True
 
-When $k=2$ the quadratic factor is $x^{2}-2x+2$. Compute its discriminant:
+Keep the factorisation $(x-1)(x^{2}-2x+k)=0$ and specialise to $k=2$. The quadratic factor becomes
 
 $$
-(-2)^{2}-4\\cdot 1\\cdot 2=4-8=-4<0
+x^{2}-2x+2.
 $$
 
-A negative discriminant means that quadratic has no real roots. The only real root of the cubic is therefore the linear factor’s root $x=1$ — exactly one real root.
+Its discriminant is
+
+$$
+\\Delta=(-2)^{2}-4\\cdot 1\\cdot 2=4-8=-4.
+$$
+
+Because $\\Delta<0$, that quadratic has no real roots; completing the square makes the same obstruction visible without the discriminant formula:
+
+$$
+x^{2}-2x+2=(x-1)^{2}+1\\ge 1>0
+$$
+
+for every real $x$, so the quadratic never crosses zero on $\\mathbb{R}$. Its complex roots are $1\\pm i$, but those do not count toward the real-root inventory. The only real root contributed by the cubic is therefore the simple root $x=1$ of the linear factor. Counting real roots of the original cubic, one finds exactly one — which matches the claim. (A cubic always has three roots in $\\mathbb{C}$ counting multiplicity, but here two of them are non-real.)
 
 So the statement is True.`,
 
     `**E.** → True
 
-The quadratic $x^{2}-2x+k$ has real roots precisely when its discriminant $4-4k\\ge 0$, i.e. when $k\\le 1$. In that regime the cubic has three real roots counting multiplicity (including repeats such as the triple root at $k=1$). For a monic cubic $x^{3}-3x^{2}+\\cdots$, Vieta’s sum of all roots with multiplicity is always $3$, independent of $k$.
+The quadratic $x^{2}-2x+k$ has discriminant $4-4k$. Whenever $k\\le 1$ one has $4-4k\\ge 0$, so both quadratic roots are real and the cubic has three real roots counted with multiplicity. For the monic cubic $x^{3}-3x^{2}+\\cdots$, Vieta’s formulas give that the sum of all roots with multiplicity equals $3$, independently of $k$.
 
 So the statement is True.`,
   ];
@@ -1100,55 +1158,79 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Differentiate the product $u=\\ln(x^{2}+1)$ and $v=e^{-x}$ with the product rule. The chain rule gives $u'=2x/(x^{2}+1)$ and $v'=-e^{-x}$, so
+Write $f=uv$ with $u=\\ln(x^{2}+1)$ and $v=e^{-x}$. Differentiating,
 
 $$
-f'(x)=\\dfrac{2x}{x^{2}+1}\\,e^{-x}+\\ln(x^{2}+1)\\cdot(-e^{-x})
+u'=\\dfrac{2x}{x^{2}+1},\\qquad v'=-e^{-x},
 $$
 
-Each of the two summands visibly contains the factor $e^{-x}$. One can also factor it out globally, but either way every term carries that exponential factor.
+so the product rule yields
+
+$$
+f'(x)=\\dfrac{2x}{x^{2}+1}\\,e^{-x}-\\ln(x^{2}+1)\\,e^{-x}.
+$$
+
+Both summands already display the factor $e^{-x}$, so every term in this expression for $f'$ contains it.
 
 So the statement is True.`,
 
     `**B.** → True
 
-Factor $e^{-x}$ out of the derivative from letter A:
+Factor the common exponential out of the derivative from letter A:
 
 $$
-f'(x)=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right)
+f'(x)=e^{-x}\\left(\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)\\right).
 $$
 
-Evaluate the bracket at $x=0$:
+A critical point is a root of $f'$. Because $e^{-x}$ never vanishes, the zeros of $f'$ are exactly the zeros of the bracket
 
 $$
-\\dfrac{0}{1}-\\ln(1)=0-0=0
+B(x)=\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1).
 $$
 
-Since $e^{0}=1\\neq 0$, one gets $f'(0)=0$. Thus $x=0$ is a critical point of $f$.
+Evaluate at the origin:
+
+$$
+B(0)=\\dfrac{2\\cdot 0}{0^{2}+1}-\\ln(0^{2}+1)=\\dfrac{0}{1}-\\ln 1=0-0=0.
+$$
+
+Hence $f'(0)=e^{0}\\cdot B(0)=1\\cdot 0=0$, so the origin is a critical point of $f$. (Equivalently: the first summand of $f'$ vanishes at $x=0$ because of the factor $2x$, while the second summand vanishes because $\\ln 1=0$; both pieces are zero simultaneously.)
 
 So the statement is True.`,
 
     `**C.** → True
 
-For $x<0$ the fraction $2x/(x^{2}+1)$ is negative (numerator negative, denominator always positive). Meanwhile $\\ln(x^{2}+1)>\\ln 1=0$ for $x\\neq 0$. Therefore the bracket
-
-$$
-\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1)
-$$
-
-is a negative number minus a positive number, hence negative. Multiplying by $e^{-x}>0$ keeps $f'(x)<0$ on the whole half-line $(-\\infty,0)$.
+On $x<0$ the fraction $2x/(x^{2}+1)$ is negative and $\\ln(x^{2}+1)>0$, so their difference — the bracket in $f'$ — is negative. Times $e^{-x}>0$ keeps $f'(x)<0$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Letter B already exhibits an explicit critical point: $f'(0)=0$. The claim that $f$ has no critical points anywhere on $\\mathbb{R}$ is therefore contradicted by that single zero of the derivative. (In fact the bracket may vanish at other points too, but one counterexample already kills the claim.)
+Letter B already exhibits an explicit zero of the derivative: $f'(0)=0$. A single critical point anywhere on $\\mathbb{R}$ is enough to kill the claim that there are none.
 
 So the statement is False.`,
 
     `**E.** → True
 
-The exponential $e^{-x}$ is strictly positive for every real $x$ and never zero. Multiplying the bracket by a never-vanishing positive factor cannot flip the sign of $f'$ and cannot create or destroy zeros of $f'$ beyond those of the bracket. Hence $e^{-x}$ never changes the sign of $f'$.
+Return to the factored form
+
+$$
+f'(x)=e^{-x}\\,B(x),\\qquad B(x)=\\dfrac{2x}{x^{2}+1}-\\ln(x^{2}+1).
+$$
+
+The exponential factor $e^{-x}$ is defined and strictly positive for every real $x$: it never hits zero and never becomes negative. Multiplying a real number by a positive constant preserves the sign of that number —
+
+$$
+B(x)>0\\quad\\Rightarrow\\quad f'(x)>0,
+$$
+$$
+B(x)<0\\quad\\Rightarrow\\quad f'(x)<0,
+$$
+$$
+B(x)=0\\quad\\Rightarrow\\quad f'(x)=0.
+$$
+
+— and therefore cannot flip the sign of $f'$. In that precise sense the factor $e^{-x}$ never changes the sign of $f'$: all sign information (and all critical-point information) lives entirely inside the bracket $B$.
 
 So the statement is True.`,
   ];
