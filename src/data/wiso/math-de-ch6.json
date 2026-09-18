@@ -3,11 +3,11 @@
     "title": "Rationale Ungleichungen — 1",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 2}{x + 1} \\le 0$ verwandelte: $-1 < x \\le 2$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{2x - 6}{x + 4} \\ge 0$ verwandelte: $(-\\infty, -4) \\cup [3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{3x + 6}{x - 4} \\le 0$ verwandelte: $-2 \\le x < 4$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x + 5} \\ge 0$ verwandelte: $(-5, -3] \\cup [3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 5}{x - 3} \\ge 0$ verwandelte: $x \\le -5$ or $x > 3$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 2}{x + 1} \\le 0$ ist $-1 < x \\le 2$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{2x - 6}{x + 4} \\ge 0$ ist $(-\\infty, -4) \\cup [3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{3x + 6}{x - 4} \\le 0$ ist $-2 \\le x < 4$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x + 5} \\ge 0$ ist $(-5, -3] \\cup [3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 5}{x - 3} \\ge 0$ ist $x \\le -5$ oder $x > 3$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 2}{x + 1}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n$$\nx + 1=0\\Rightarrow x=-1\n$$\n\n(die Polstelle $x=-1$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x - 2}{x + 1}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-1, 2]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -22,11 +22,11 @@
     "title": "Rationale Ungleichungen — 2",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x - 1} \\le 0$ verwandelte: $(-\\infty, -4] \\cup (1, 4]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 1)(x - 4)}{x + 3} > 0$ verwandelte: $(-3, 1) \\cup (4, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 25}{x + 2} \\ge 0$ verwandelte: $[-5, -2) \\cup [5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(2x + 2)(x - 3)}{x - 6} < 0$ verwandelte: $(-\\infty, -1) \\cup (3, 6)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ verwandelte: $(-3, -1] \\cup [1, 3)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x - 1} \\le 0$ ist $(-\\infty, -4] \\cup (1, 4]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 1)(x - 4)}{x + 3} > 0$ ist $(-3, 1) \\cup (4, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 25}{x + 2} \\ge 0$ ist $[-5, -2) \\cup [5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(2x + 2)(x - 3)}{x - 6} < 0$ ist $(-\\infty, -1) \\cup (3, 6)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ ist $(-3, -1] \\cup [1, 3)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} - 16}{x - 1}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx^{2} - 16=0\n$$\n\n$$\n(x - 4) (x + 4)=0\n$$\n\n$$\nx=-4\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n$$\nx - 1=0\\Rightarrow x=1\n$$\n\n(die Polstelle $x=1$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} - 16}{x - 1}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,1)$ | $+$ |\n| $(1,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, -4] \\cup (1, 4]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -41,11 +41,11 @@
     "title": "Rationale Ungleichungen — 3",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 2}{x^{2} - 9} > 0$ verwandelte: $(-3, -2) \\cup (3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 2)^{2}}{x - 3} \\ge 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x > 3$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 4}{x - 2} \\le 0$ verwandelte: $-4 \\le x < 2$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x - 5} \\ge 0$ verwandelte: $[-2, 2] \\cup (5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{5x - 10}{x + 3} \\ge 0$ verwandelte: $(-\\infty, -3) \\cup [2, \\infty)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 2}{x^{2} - 9} > 0$ ist $(-3, -2) \\cup (3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 2)^{2}}{x - 3} \\ge 0$ ist genau $x > 3$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 4}{x - 2} \\le 0$ ist $-4 \\le x < 2$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x - 5} \\ge 0$ ist $[-2, 2] \\cup (5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{5x - 10}{x + 3} \\ge 0$ ist $(-\\infty, -3) \\cup [2, \\infty)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x + 2}{x^{2} - 9}>0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx + 2=0\\Rightarrow x=-2\n$$\n\n$$\nx^{2} - 9=0\n$$\n\n$$\n(x - 3) (x + 3)=0\n$$\n\n$$\nx=-3\n$$\n\n(die Polstelle $x=-3$ ist niemals zulässig).\n\n$$\nx - 3=0\\Rightarrow x=3\n$$\n\n(die Polstelle $x=3$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x + 2}{x^{2} - 9}$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $-$ |\n| $(-3,-2)$ | $+$ |\n| $(-2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-3, -2) \\cup (3, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -60,11 +60,11 @@
     "title": "Rationale Ungleichungen — 4",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x + 4} \\le 0$ verwandelte: $(-\\infty, -4) \\cup [-1, 1]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 3)(x + 1)}{x - 5} > 0$ verwandelte: $(-1, 3) \\cup (5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x + 1} \\ge 0$ verwandelte: $[-6, -1) \\cup [6, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(3x - 9)(x + 2)}{x - 1} < 0$ verwandelte: $(-\\infty, -2) \\cup (1, 3)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 49}{x - 2} \\le 0$ verwandelte: $(-\\infty, -7] \\cup (2, 7]$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x + 4} \\le 0$ ist $(-\\infty, -4) \\cup [-1, 1]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 3)(x + 1)}{x - 5} > 0$ ist $(-1, 3) \\cup (5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x + 1} \\ge 0$ ist $[-6, -1) \\cup [6, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(3x - 9)(x + 2)}{x - 1} < 0$ ist $(-\\infty, -2) \\cup (1, 3)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 49}{x - 2} \\le 0$ ist $(-\\infty, -7] \\cup (2, 7]$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} - 1}{x + 4}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx^{2} - 1=0\n$$\n\n$$\n(x - 1) (x + 1)=0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx - 1=0\\Rightarrow x=1\n$$\n\n$$\nx + 4=0\\Rightarrow x=-4\n$$\n\n(die Polstelle $x=-4$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} - 1}{x + 4}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,-1)$ | $+$ |\n| $(-1,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, -4) \\cup [-1, 1]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -79,11 +79,11 @@
     "title": "Rationale Ungleichungen — 5",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 6}{x^{2} - 16} > 0$ verwandelte: $(-4, 4) \\cup (6, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 3)^{2}}{x + 5} \\ge 0$ verwandelte: $(-5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 5}{x^{2} - 4} < 0$ verwandelte: $(-\\infty, -5) \\cup (-2, 2)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 1)^{2}}{x - 6} \\le 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x < 1$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 7}{x - 2} \\le 0$ verwandelte: $-7 \\le x < 2$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 6}{x^{2} - 16} > 0$ ist $(-4, 4) \\cup (6, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 3)^{2}}{x + 5} \\ge 0$ ist $(-5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 5}{x^{2} - 4} < 0$ ist $(-\\infty, -5) \\cup (-2, 2)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 1)^{2}}{x - 6} \\le 0$ ist genau $x < 1$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 7}{x - 2} \\le 0$ ist $-7 \\le x < 2$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 6}{x^{2} - 16}>0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 6=0\\Rightarrow x=6\n$$\n\n$$\nx^{2} - 16=0\n$$\n\n$$\n(x - 4) (x + 4)=0\n$$\n\n$$\nx=-4\n$$\n\n(die Polstelle $x=-4$ ist niemals zulässig).\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(die Polstelle $x=4$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x - 6}{x^{2} - 16}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,4)$ | $+$ |\n| $(4,6)$ | $-$ |\n| $(6,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-4, 4) \\cup (6, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -98,11 +98,11 @@
     "title": "Rationale Ungleichungen — 6",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 49}{x + 8} \\ge 0$ verwandelte: $(-8, -7] \\cup [7, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{4x - 8}{x + 7} < 0$ verwandelte: $(-7, 2)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x + 10} \\le 0$ verwandelte: $(-\\infty, -10) \\cup [-2, 2]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 5)(x + 3)}{x + 8} \\ge 0$ verwandelte: $(-8, -3] \\cup [5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 25} \\le 0$ verwandelte: $(-5, -2] \\cup [2, 5)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 49}{x + 8} \\ge 0$ ist $(-8, -7] \\cup [7, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{4x - 8}{x + 7} < 0$ ist $(-7, 2)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x + 10} \\le 0$ ist $(-\\infty, -10) \\cup [-2, 2]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 5)(x + 3)}{x + 8} \\ge 0$ ist $(-8, -3] \\cup [5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 25} \\le 0$ ist $(-5, -2] \\cup [2, 5)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} - 49}{x + 8}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx^{2} - 49=0\n$$\n\n$$\n(x - 7) (x + 7)=0\n$$\n\n$$\nx=-7\n$$\n\n$$\nx - 7=0\\Rightarrow x=7\n$$\n\n$$\nx + 8=0\\Rightarrow x=-8\n$$\n\n(die Polstelle $x=-8$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} - 49}{x + 8}$ |\n| --- | --- |\n| $(-\\infty,-8)$ | $-$ |\n| $(-8,-7)$ | $+$ |\n| $(-7,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-8, -7] \\cup [7, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -117,11 +117,11 @@
     "title": "Rationale Ungleichungen — 7",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 9}{x^{2} - 25} > 0$ verwandelte: $(-5, 5) \\cup (9, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 2)^{2}}{x + 7} \\ge 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x \\ge 2$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 4)(x - 6)}{x - 1} > 0$ verwandelte: $(-4, 1) \\cup (6, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x^{2} - 36} \\le 0$ verwandelte: $(-6, -4] \\cup [4, 6)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x^{2} - 49} < 0$ verwandelte: $(-\\infty, -7) \\cup (3, 7)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 9}{x^{2} - 25} > 0$ ist $(-5, 5) \\cup (9, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 2)^{2}}{x + 7} \\ge 0$ ist genau $x \\ge 2$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 4)(x - 6)}{x - 1} > 0$ ist $(-4, 1) \\cup (6, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x^{2} - 36} \\le 0$ ist $(-6, -4] \\cup [4, 6)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x^{2} - 49} < 0$ ist $(-\\infty, -7) \\cup (3, 7)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 9}{x^{2} - 25}>0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 9=0\\Rightarrow x=9\n$$\n\n$$\nx^{2} - 25=0\n$$\n\n$$\n(x - 5) (x + 5)=0\n$$\n\n$$\nx=-5\n$$\n\n(die Polstelle $x=-5$ ist niemals zulässig).\n\n$$\nx - 5=0\\Rightarrow x=5\n$$\n\n(die Polstelle $x=5$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x - 9}{x^{2} - 25}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $-$ |\n| $(-5,5)$ | $+$ |\n| $(5,9)$ | $-$ |\n| $(9,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-5, 5) \\cup (9, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -136,11 +136,11 @@
     "title": "Rationale Ungleichungen — 8",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 5)^{2}}{x - 4} \\le 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x = -5$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 9} \\ge 0$ verwandelte: $(-\\infty, -3) \\cup [-2, 2] \\cup (3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 6)^{2}}{x + 9} \\ge 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x \\ge 6$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x^{2} - 4} \\le 0$ verwandelte: $[-6, -2] \\cup [2, 6]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 7)^{2}}{x - 5} \\le 0$ verwandelte: $(-\\infty, 5)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 5)^{2}}{x - 4} \\le 0$ ist genau $x = -5$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 9} \\ge 0$ ist $(-\\infty, -3) \\cup [-2, 2] \\cup (3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 6)^{2}}{x + 9} \\ge 0$ ist genau $x \\ge 6$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x^{2} - 4} \\le 0$ ist $[-6, -2] \\cup [2, 6]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 7)^{2}}{x - 5} \\le 0$ ist $(-\\infty, 5)$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{(x + 5)^{2}}{x - 4}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n(x^{2} + 10 x) + 25=0\n$$\n\n$$\n(x + 5)^{2}=0\n$$\n\n$$\nx=-5\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(die Polstelle $x=4$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{(x + 5)^{2}}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $-$ |\n| $(-5,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, 4)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -155,11 +155,11 @@
     "title": "Rationale Ungleichungen — 9",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x + 9} \\ge 0$ verwandelte: $x < -9$ or $x \\ge 3$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x + 2} \\le 0$ verwandelte: $(-\\infty, -6] \\cup (-2, 6]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{3x + 9}{x - 5} < 0$ verwandelte: $(-3, 5)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x - 6} \\ge 0$ verwandelte: $[-3, 3] \\cup (6, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 6)(x - 2)}{x - 9} \\ge 0$ verwandelte: $[-6, 2] \\cup (9, \\infty)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x + 9} \\ge 0$ ist $x < -9$ oder $x \\ge 3$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x + 2} \\le 0$ ist $(-\\infty, -6] \\cup (-2, 6]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{3x + 9}{x - 5} < 0$ ist $(-3, 5)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x - 6} \\ge 0$ ist $[-3, 3] \\cup (6, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 6)(x - 2)}{x - 9} \\ge 0$ ist $[-6, 2] \\cup (9, \\infty)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 3}{x + 9}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 3=0\\Rightarrow x=3\n$$\n\n$$\nx + 9=0\\Rightarrow x=-9\n$$\n\n(die Polstelle $x=-9$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x - 3}{x + 9}$ |\n| --- | --- |\n| $(-\\infty,-9)$ | $+$ |\n| $(-9,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, -9) \\cup [3, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -174,11 +174,11 @@
     "title": "Rationale Ungleichungen — 10",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 49} \\le 0$ verwandelte: $(-7, -1] \\cup [1, 7)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 10}{x^{2} - 16} > 0$ verwandelte: $(-4, 4) \\cup (10, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 3)^{2}}{x - 8} \\ge 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x > 8$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 9)(x - 4)}{x + 1} > 0$ verwandelte: $(-9, -1) \\cup (4, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 25}{x^{2} - 64} \\le 0$ verwandelte: $(-8, -5] \\cup [5, 8)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 49} \\le 0$ ist $(-7, -1] \\cup [1, 7)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 10}{x^{2} - 16} > 0$ ist $(-4, 4) \\cup (10, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 3)^{2}}{x - 8} \\ge 0$ ist genau $x > 8$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 9)(x - 4)}{x + 1} > 0$ ist $(-9, -1) \\cup (4, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 25}{x^{2} - 64} \\le 0$ ist $(-8, -5] \\cup [5, 8)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} - 1}{x^{2} - 49}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx^{2} - 1=0\n$$\n\n$$\n(x - 1) (x + 1)=0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx - 1=0\\Rightarrow x=1\n$$\n\n$$\nx^{2} - 49=0\n$$\n\n$$\n(x - 7) (x + 7)=0\n$$\n\n$$\nx=-7\n$$\n\n(die Polstelle $x=-7$ ist niemals zulässig).\n\n$$\nx - 7=0\\Rightarrow x=7\n$$\n\n(die Polstelle $x=7$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} - 1}{x^{2} - 49}$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,-1)$ | $-$ |\n| $(-1,1)$ | $+$ |\n| $(1,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-7, -1] \\cup [1, 7)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -193,11 +193,11 @@
     "title": "Rationale Ungleichungen — 11",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 4}{x^{2} - 81} < 0$ verwandelte: $(-\\infty, -9) \\cup (4, 9)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 6)^{2}}{x - 9} \\le 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x = -6$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x^{2} - 25} \\ge 0$ verwandelte: $(-\\infty, -5) \\cup [-4, 4] \\cup (5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 9)^{2}}{x + 11} \\ge 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x \\ge 9$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 49}{x^{2} - 9} \\le 0$ verwandelte: $[-7, -3) \\cup (3, 7]$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 4}{x^{2} - 81} < 0$ ist $(-\\infty, -9) \\cup (4, 9)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 6)^{2}}{x - 9} \\le 0$ ist genau $x = -6$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x^{2} - 25} \\ge 0$ ist $(-\\infty, -5) \\cup [-4, 4] \\cup (5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 9)^{2}}{x + 11} \\ge 0$ ist genau $x \\ge 9$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 49}{x^{2} - 9} \\le 0$ ist $[-7, -3) \\cup (3, 7]$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 4}{x^{2} - 81}<0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n$$\nx^{2} - 81=0\n$$\n\n$$\n(x - 9) (x + 9)=0\n$$\n\n$$\nx=-9\n$$\n\n(die Polstelle $x=-9$ ist niemals zulässig).\n\n$$\nx - 9=0\\Rightarrow x=9\n$$\n\n(die Polstelle $x=9$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x - 4}{x^{2} - 81}$ |\n| --- | --- |\n| $(-\\infty,-9)$ | $-$ |\n| $(-9,4)$ | $+$ |\n| $(4,9)$ | $-$ |\n| $(9,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, -9) \\cup (4, 9)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -212,11 +212,11 @@
     "title": "Rationale Ungleichungen — 12",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 9)^{2}}{x - 7} \\le 0$ ständ st ständ stähnd Eine - und ständ Eine - und ständ R - und offen stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- und stäh ein- stäh ein- und stäh ein- und stäh ein- und stäh ein gewäh rück- undT- weiter ausmacht Bund - und R ein- und außer- außer- und Verbunden hinausgehen-stes ein einzige gew gew ein- und st rück- und st rück- und st Alt-ste vielmehr außer gew ein- und st rück- und st rück- und rück rück- und R ein R st gewlegen st re- und Gewinn- ihn dieselbe- Bund- und R R best R Handels- und- und Bund- und weiter ausmacht rück-- und rück gew st- hinaus n- und-- Bund- und Indikator- undstestern $x = -9$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 4}{x - 1} \\le 0$ verwandelte: $-4 \\le x < 1$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{2x - 6}{x + 3} < 0$ verwandelte: $(-3, 3)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x + 1} \\ge 0$ verwandelte: $[-2, -1) \\cup [2, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 1}{x - 4} > 0$ verwandelte: $x < -1$ or $x > 4$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 9)^{2}}{x - 7} \\le 0$ ist genau $x = -9$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 4}{x - 1} \\le 0$ ist $-4 \\le x < 1$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{2x - 6}{x + 3} < 0$ ist $(-3, 3)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x + 1} \\ge 0$ ist $[-2, -1) \\cup [2, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 1}{x - 4} > 0$ ist $x < -1$ oder $x > 4$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{(x + 9)^{2}}{x - 7}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n(x^{2} + 18 x) + 81=0\n$$\n\n$$\n(x + 9)^{2}=0\n$$\n\n$$\nx=-9\n$$\n\n$$\nx - 7=0\\Rightarrow x=7\n$$\n\n(die Polstelle $x=7$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{(x + 9)^{2}}{x - 7}$ |\n| --- | --- |\n| $(-\\infty,-9)$ | $-$ |\n| $(-9,7)$ | $-$ |\n| $(7,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, 7)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -231,11 +231,11 @@
     "title": "Rationale Ungleichungen — 13",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ verwandelte: $(-3, -1] \\cup [1, 3)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ ist $(-3, -1] \\cup [1, 3)$.",
       "Die Ungleichung $\\dfrac{(x - 2)^{2}}{x + 5} \\ge 0$ gilt für jede reelle Zahl x.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 3)(x - 1)}{x - 5} < 0$ verwandelte: $(-\\infty, -3) \\cup (1, 5)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 2}{x^{2} - 9} \\ge 0$ verwandelte: $(-3, 2] \\cup (3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 5x + 6}{x^{2} - 1} \\le 0$ verwandelte: $(-1, 1) \\cup [2, 3]$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 3)(x - 1)}{x - 5} < 0$ ist $(-\\infty, -3) \\cup (1, 5)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 2}{x^{2} - 9} \\ge 0$ ist $(-3, 2] \\cup (3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 5x + 6}{x^{2} - 1} \\le 0$ ist $(-1, 1) \\cup [2, 3]$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} - 1}{x^{2} - 9}\\le 0\n$$\n\nZwanziger Zwanziger.\n\n$$\n\\frac{(x - 1) (x + 1)}{x^{2} - 9}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx + 1=0\\Rightarrow x=-1\n$$\n\n$$\nx - 1=0\\Rightarrow x=1\n$$\n\n$$\nx^{2} - 9=0\\Rightarrow x=-3\n$$\n\n(die Polstelle $x=-3$ ist niemals zulässig).\n\n$$\nx^{2} - 9=0\\Rightarrow x=3\n$$\n\n(die Polstelle $x=3$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} - 1}{x^{2} - 9}$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-1)$ | $-$ |\n| $(-1,1)$ | $+$ |\n| $(1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-3, -1] \\cup [1, 3)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -251,10 +251,10 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung $\\dfrac{x^{2} + 1}{x - 3} > 0$ Haltet für jeden $x < 3$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x + 2} \\le 0$ verwandelte: $-2 < x \\le 3$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{2x + 4}{x - 5} \\ge 0$ verwandelte: $(-\\infty, -2] \\cup (5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x + 2} \\ge 0$ verwandelte: $[-3, -2) \\cup [3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 1} \\le 0$ verwandelte: $[-2, -1) \\cup (1, 2]$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x + 2} \\le 0$ ist $-2 < x \\le 3$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{2x + 4}{x - 5} \\ge 0$ ist $(-\\infty, -2] \\cup (5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x + 2} \\ge 0$ ist $[-3, -2) \\cup [3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 4}{x^{2} - 1} \\le 0$ ist $[-2, -1) \\cup (1, 2]$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} + 1}{x - 3}>0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\nDer Zähler hat keine wirkliche Null.\n\n$$\nx - 3=0\\Rightarrow x=3\n$$\n\n(die Polstelle $x=3$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} + 1}{x - 3}$ |\n| --- | --- |\n| $(-\\infty,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(3, \\infty)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -269,10 +269,10 @@
     "title": "Rationale Ungleichungen — 15",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 1)(x - 2)}{x + 4} > 0$ verwandelte: $(-4, -1) \\cup (2, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 1}{x^{2} - 4} < 0$ verwandelte: $(-\\infty, -2) \\cup (-1, 2)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 1)(x - 2)}{x + 4} > 0$ ist $(-4, -1) \\cup (2, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 1}{x^{2} - 4} < 0$ ist $(-\\infty, -2) \\cup (-1, 2)$.",
       "Die Ungleichung $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ gilt genau für $x > 4$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 1}{x^{2} - 4} < 0$ verwandelte: $(-\\infty, -2) \\cup (-1, 2)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 1}{x^{2} - 4} < 0$ ist $(-\\infty, -2) \\cup (-1, 2)$.",
       "Die Ungleichung $\\dfrac{(x + 1)^{2}}{x - 4} \\ge 0$ gilt genau für $x > 4$."
     ],
     "tactical_explanations": [
@@ -288,11 +288,11 @@
     "title": "Rationale Ungleichungen — 16",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 5}{x - 2} \\ge 0$ verwandelte: $(-\\infty, -5] \\cup (2, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{3x - 6}{x + 1} < 0$ verwandelte: $(-1, 2)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x - 1} \\le 0$ verwandelte: $(-\\infty, -4) \\cup (1, 4)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 16} > 0$ verwandelte: $(-\\infty, -4) \\cup (-1, 1) \\cup (4, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 1)(x + 3)}{x - 6} < 0$ verwandelte: $(-\\infty, -3) \\cup (1, 6)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 5}{x - 2} \\ge 0$ ist $(-\\infty, -5] \\cup (2, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{3x - 6}{x + 1} < 0$ ist $(-1, 2)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 16}{x - 1} \\le 0$ ist $(-\\infty, -4) \\cup (1, 4)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 16} > 0$ ist $(-\\infty, -4) \\cup (-1, 1) \\cup (4, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 1)(x + 3)}{x - 6} < 0$ ist $(-\\infty, -3) \\cup (1, 6)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x + 5}{x - 2}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx + 5=0\\Rightarrow x=-5\n$$\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n(die Polstelle $x=2$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x + 5}{x - 2}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, -5] \\cup (2, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -307,10 +307,10 @@
     "title": "Rationale Ungleichungen — 17",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x^{2} - 25} \\ge 0$ verwandelte: $(-5, 3] \\cup (5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 3}{x^{2} - 25} \\ge 0$ ist $(-5, 3] \\cup (5, \\infty)$.",
       "Die Ungleichung $\\dfrac{(x - 2)^{2}}{x + 3} \\le 0$ hat die Lösungsmenge $(-\\infty, -3]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 4}{x + 3} \\le 0$ verwandelte: $(-3, 4]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{5x - 10}{x + 4} > 0$ verwandelte: $(-\\infty, -4) \\cup (2, \\infty)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 4}{x + 3} \\le 0$ ist $(-3, 4]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{5x - 10}{x + 4} > 0$ ist $(-\\infty, -4) \\cup (2, \\infty)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x - 3}{x^{2} - 25}\\ge 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx - 3=0\\Rightarrow x=3\n$$\n\n$$\nx^{2} - 25=0\\Rightarrow x=-5\n$$\n\n(die Polstelle $x=-5$ ist niemals zulässig).\n\n$$\nx^{2} - 25=0\\Rightarrow x=5\n$$\n\n(die Polstelle $x=5$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x - 3}{x^{2} - 25}$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $-$ |\n| $(-5,3)$ | $+$ |\n| $(3,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-5, 3] \\cup (5, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -324,10 +324,10 @@
     "title": "Rationale Ungleichungen — 18",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{2x + 6}{x - 4} < 0$ verwandelte: $[-3, 4]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ verwandelte: $(-3, -1] \\cup [1, 3)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 2)(x - 5)}{x - 1} \\le 0$ verwandelte: $(-\\infty, -2] \\cup (1, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 2}{x^{2} - x - 6} \\ge 0$ verwandelte: $(-2, 2] \\cup (3, \\infty)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{2x + 6}{x - 4} < 0$ ist $[-3, 4]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 1}{x^{2} - 9} \\le 0$ ist $(-3, -1] \\cup [1, 3)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 2)(x - 5)}{x - 1} \\le 0$ ist $(-\\infty, -2] \\cup (1, 5]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x - 2}{x^{2} - x - 6} \\ge 0$ ist $(-2, 2] \\cup (3, \\infty)$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{2 x + 6}{x - 4}<0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n2 x + 6=0\\Rightarrow x=-3\n$$\n\n$$\nx - 4=0\\Rightarrow x=4\n$$\n\n(die Polstelle $x=4$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{2 (x + 3)}{x - 4}$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-3, 4)\n$$\n\nmit dem Preiswert: $[-3, 4]$.\n\nDie Aussage ist falsch.",
@@ -341,10 +341,10 @@
     "title": "Rationale Ungleichungen — 19",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 4)^{2}}{x - 1} \\le 0$ verwandelte: $(-\\infty, 1)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 6}{x - 3} \\le 0$ verwandelte: $[-6, 3)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{4x + 8}{x - 3} < 0$ verwandelte: $(-2, 3)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x + 4} \\ge 0$ verwandelte: $[-6, -4) \\cup [6, \\infty)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 4)^{2}}{x - 1} \\le 0$ ist $(-\\infty, 1)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 6}{x - 3} \\le 0$ ist $[-6, 3)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{4x + 8}{x - 3} < 0$ ist $(-2, 3)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 36}{x + 4} \\ge 0$ ist $[-6, -4) \\cup [6, \\infty)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{(x + 4)^{2}}{x - 1}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n(x^{2} + 8 x) + 16=0\n$$\n\n$$\n(x + 4)^{2}=0\n$$\n\n$$\nx=-4\n$$\n\n$$\nx - 1=0\\Rightarrow x=1\n$$\n\n(die Polstelle $x=1$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{(x + 4)^{2}}{x - 1}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $-$ |\n| $(-4,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, 1)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -358,10 +358,10 @@
     "title": "Rationale Ungleichungen — 20",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x^{2} - 4} \\le 0$ verwandelte: $[-3, -2) \\cup (2, 3]$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 5)(x - 1)}{x - 3} \\ge 0$ verwandelte: $[-5, 1] \\cup (3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 3}{x^{2} - 9} > 0$ verwandelte: $x > 3$.",
-      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 5)^{2}}{x + 2} \\ge 0$ verwandelte: $[-2, \\infty)$."
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x^{2} - 9}{x^{2} - 4} \\le 0$ ist $[-3, -2) \\cup (2, 3]$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x + 5)(x - 1)}{x - 3} \\ge 0$ ist $[-5, 1] \\cup (3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{x + 3}{x^{2} - 9} > 0$ ist $x > 3$.",
+      "Die Lösungsmenge der Ungleichung $\\dfrac{(x - 5)^{2}}{x + 2} \\ge 0$ ist $[-2, \\infty)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{x^{2} - 9}{x^{2} - 4}\\le 0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\nx^{2} - 9=0\n$$\n\n$$\n(x - 3) (x + 3)=0\n$$\n\n$$\nx=-3\n$$\n\n$$\nx - 3=0\\Rightarrow x=3\n$$\n\n$$\nx^{2} - 4=0\n$$\n\n$$\n(x - 2) (x + 2)=0\n$$\n\n$$\nx=-2\n$$\n\n(die Polstelle $x=-2$ ist niemals zulässig).\n\n$$\nx - 2=0\\Rightarrow x=2\n$$\n\n(die Polstelle $x=2$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{x^{2} - 9}{x^{2} - 4}$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,-2)$ | $-$ |\n| $(-2,2)$ | $+$ |\n| $(2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n[-3, -2) \\cup (2, 3]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -377,7 +377,7 @@
     "statements": [
       "Die Ungleichung $x^{2} - 5x + 6 \\le 0$ hat die Lösungsmenge $(2, 3)$.",
       "Die Ungleichung $x^{2} + 2x - 8 \\le 0$ Das bedeutet, dass Kommentar X muss positiv.",
-      "Die Lösungsmenge der Ungleichung $x^{2} - 2x - 15 \\ge 0$ verwandelte: $x \\ge 5$.",
+      "Die Lösungsmenge der Ungleichung $x^{2} - 2x - 15 \\ge 0$ ist $x \\ge 5$.",
       "Die Ungleichung $x^{2} - 9 \\ge 0$ Dies bedeutet, dass x mindestens 3 sein muss.",
       "Die Ungleichung $x^{2} + 3x - 10 \\le 0$ hat die Lösungsmenge $[-5, 2]$."
     ],
@@ -395,7 +395,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung $x^{2} + 7x + 10 \\le 0$ Den, dass x kleiner als 5 Market",
-      "Die Ungleichung $x^{2} - 8x + 7 > 0$ hat die Lösungsmenge $x < 1$ or $x > 7$.",
+      "Die Ungleichung $x^{2} - 8x + 7 > 0$ hat die Lösungsmenge $x < 1$ oder $x > 7$.",
       "Die Ungleichung $x^{2} + 4x + 13 < 0$ 84.",
       "Die Ungleichung $x^{2} - 6x + 9 > 0$ gilt für alle echten x.",
       "Die Ungleichung $x^{2} + 2x + 5 \\ge 0$ mit allen Umstanden, die sich mit der"
@@ -415,7 +415,7 @@
     "statements": [
       "Die Ungleichung $x^{2} - x - 6 < 0$ hat die Lösungsmenge $(-2, 3)$.",
       "Die Ungleichung $x^{2} - 4x + 13 > 0$ eu , mskopfsen ,ḷMiz M/M",
-      "Die Ungleichung $x^{2} - 3x - 4 \\ge 0$ hat die Lösungsmenge $x \\le -1$ or $x \\ge 4$.",
+      "Die Ungleichung $x^{2} - 3x - 4 \\ge 0$ hat die Lösungsmenge $x \\le -1$ oder $x \\ge 4$.",
       "Die Ungleichung $x^{2} + 6x + 9 \\ge 0$ Vor (in ß) greift nach : $x = -3$.",
       "Die Ungleichung $x^{2} - 4x - 5 \\le 0$ hat die Lösungsmenge $[-1, 5]$."
     ],
@@ -453,9 +453,9 @@
     "statements": [
       "Die Ungleichung $x^{2} - 5x - 6 < 0$ hat die Lösungsmenge $(-1, 6)$.",
       "Die Ungleichung $x^{2} + 10x + 25 \\ge 0$ Vor (in ß) greift nach : $x = -5$.",
-      "Die Ungleichung $x^{2} - x - 2 > 0$ hat die Lösungsmenge $x < -1$ or $x > 2$.",
+      "Die Ungleichung $x^{2} - x - 2 > 0$ hat die Lösungsmenge $x < -1$ oder $x > 2$.",
       "Die Ungleichung $x^{2} - 6x + 10 > 0$ eu , mskopfsen ,ḷMiz M/M",
-      "Die Ungleichung $x^{2} - 6x - 16 \\ge 0$ hat die Lösungsmenge $x \\le -2$ or $x \\ge 8$."
+      "Die Ungleichung $x^{2} - 6x - 16 \\ge 0$ hat die Lösungsmenge $x \\le -2$ oder $x \\ge 8$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nDer Klassb der Jahre Die Behauptung beginnt mit\n\n$$\nx^{2} - 5x - 6 < 0\n$$\n\nsetzt versehen :\n\n$$\nx^{2} - 5x - 6 = (x - 6)(x + 1)\n$$\n\nDie kritischen Punkte sind die Wurzeln des Quadratischen:\n\n$$\nx = -1,\\quad x = 6\n$$\n\nämten.$<$: für beides:\n\n$$\n(-1, 6)\n$$\n\nAuf den tropischen UM ?\n\nInterval | Zeichen | Zeichen\n| --- | --- |\n| $(-\\infty, -1)$ | $+$ |\n| $(-1, 6)$ | $-$ |\n| $(6, \\infty)$ | $+$ |\n\nA quick check: plug in $x = 0$: 0 - 0 - 6 = -6 < 0, confirming it belongs.\n\nDie Aussage ist wahr.",
@@ -491,9 +491,9 @@
     "statements": [
       "Die Ungleichung $x^{2} + 3x - 28 < 0$ hat die Lösungsmenge $(-7, 4)$.",
       "Die Ungleichung $x^{2} - 6x + 15 > 0$ gilt für alle echten x.",
-      "Die Ungleichung $x^{2} - 16x + 63 \\ge 0$ hat die Lösungsmenge $x \\le 7$ or $x \\ge 9$.",
+      "Die Ungleichung $x^{2} - 16x + 63 \\ge 0$ hat die Lösungsmenge $x \\le 7$ oder $x \\ge 9$.",
       "Die Ungleichung $x^{2} + 16x + 64 \\ge 0$ Vor (in ß) greift nach : $x = -8$.",
-      "Die Ungleichung $x^{2} - 4x - 45 > 0$ hat die Lösungsmenge $x < -5$ or $x > 9$."
+      "Die Ungleichung $x^{2} - 4x - 45 > 0$ hat die Lösungsmenge $x < -5$ oder $x > 9$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} + 3 x) - 28<0\n$$\n\nFactor.\n\n$$\n(x - 4) (x + 7)<0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-7\n$$\n\n$$\nx=4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x + 3) - 28$ |\n| --- | --- |\n| $(-\\infty,-7)$ | $+$ |\n| $(-7,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-7, 4)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -511,7 +511,7 @@
       "Die Ungleichung $x^{2} - 12x + 40 > 0$ gilt für alle echten x.",
       "Die Ungleichung $x^{2} + 9x - 10 < 0$ hat die Lösungsmenge $(-10, 1)$.",
       "Die Ungleichung $x^{2} + 4x + 13 > 0$ gilt für alle echten x.",
-      "Die Ungleichung $x^{2} - 7x - 60 > 0$ hat die Lösungsmenge $x < -5$ or $x > 12$.",
+      "Die Ungleichung $x^{2} - 7x - 60 > 0$ hat die Lösungsmenge $x < -5$ oder $x > 12$.",
       "Die Ungleichung $x^{2} - 16x + 70 > 0$ gilt für alle echten x."
     ],
     "tactical_explanations": [
@@ -527,7 +527,7 @@
     "title": "Quadratische Vorzeichenungleichungen — 9",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Ungleichung $x^{2} - 2x - 35 \\ge 0$ hat die Lösungsmenge $x \\le -5$ or $x \\ge 7$.",
+      "Die Ungleichung $x^{2} - 2x - 35 \\ge 0$ hat die Lösungsmenge $x \\le -5$ oder $x \\ge 7$.",
       "Die Ungleichung $x^{2} + 6x + 10 \\ge 0$ Auf die Wosse der IWG auf die IG auf die IG auf die IG auf die IG.",
       "Die Ungleichung $x^{2} - 7x - 8 \\le 0$ hat die Lösungsmenge $[-1, 8]$.",
       "Die Ungleichung $x^{2} + 2x + 3 > 0$ gilt für alle echten x.",
@@ -549,7 +549,7 @@
       "Die Ungleichung $x^{2} + 18x + 81 \\ge 0$ Vor (in ß) greift nach : $x = -9$.",
       "Die Ungleichung $x^{2} + 2x - 35 < 0$ hat die Lösungsmenge $(-7, 5)$.",
       "Die Ungleichung $x^{2} - 8x + 20 > 0$ gilt für alle echten x.",
-      "Die Ungleichung $x^{2} - 18x + 80 \\ge 0$ hat die Lösungsmenge $x \\le 8$ or $x \\ge 10$.",
+      "Die Ungleichung $x^{2} - 18x + 80 \\ge 0$ hat die Lösungsmenge $x \\le 8$ oder $x \\ge 10$.",
       "Die Ungleichung $x^{2} + 20x + 100 \\ge 0$ für: auf: $x = 10$ und in bezogen und $x = -10$."
     ],
     "tactical_explanations": [
@@ -565,11 +565,11 @@
     "title": "Quadratische Vorzeichenungleichungen — 11",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Ungleichung $x^{2} - 5x - 50 > 0$ hat die Lösungsmenge $x < -5$ or $x > 10$.",
+      "Die Ungleichung $x^{2} - 5x - 50 > 0$ hat die Lösungsmenge $x < -5$ oder $x > 10$.",
       "Die Ungleichung $x^{2} - 10x + 27 > 0$ gilt für alle echten x.",
       "Die Ungleichung $x^{2} + 11x - 12 < 0$ hat die Lösungsmenge $(-12, 1)$.",
       "Die Ungleichung $x^{2} + 6x + 15 > 0$ gilt für alle echten x.",
-      "Die Ungleichung $x^{2} - 9x - 70 > 0$ hat die Lösungsmenge $x < -5$ or $x > 14$."
+      "Die Ungleichung $x^{2} - 9x - 70 > 0$ hat die Lösungsmenge $x < -5$ oder $x > 14$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n(x^{2} - 5 x) - 50>0\n$$\n\nBringe alle Terme auf eine Seite.\n\n$$\nx^{2} - 5 x - 50>0\n$$\n\nFactor.\n\n$$\n(x - 10) (x + 5)>0\n$$\n\nDie Wurzeln sind die kritischen Punkte.\n\n$$\nx=-5\n$$\n\n$$\nx=10\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 5 x - 50$ |\n| --- | --- |\n| $(-\\infty,-5)$ | $+$ |\n| $(-5,10)$ | $-$ |\n| $(10,\\infty)$ | $+$ |\n\nDie Lösungsmenge ist\n\n$$\n(-\\infty, -5) \\cup (10, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -641,7 +641,7 @@
     "title": "Quadratische Vorzeichenungleichungen — 15",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Ungleichung $x^{2} - 7x + 10 < 0$ hält, wenn $x < 2$ or $x > 5$.",
+      "Die Ungleichung $x^{2} - 7x + 10 < 0$ hält, wenn $x < 2$ oder $x > 5$.",
       "Die Ungleichung $x^{2} + 2x + 5 \\ge 0$ bis mich auf bis spitze bis auf die spitzen, $x = -1$.",
       "Die Ungleichung $x^{2} - 4x - 5 \\le 0$ um es am, auf die speichern es an , luftr . . .",
       "Die Ungleichung $x^{2} - 3x - 10 \\ge 0$ bedeutet, dass x mindestens 5 sein muss.",
@@ -660,7 +660,7 @@
     "title": "Quadratische Vorzeichenungleichungen — 16",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Ungleichung $x^{2} + 3x - 4 < 0$ hält, wenn $x < -4$ or $x > 1$.",
+      "Die Ungleichung $x^{2} + 3x - 4 < 0$ hält, wenn $x < -4$ oder $x > 1$.",
       "Die Ungleichung $x^{2} - 8x + 16 \\le 0$ keine Lösung, da ein Quadrat niemals $\\le$ 0.",
       "Die Ungleichung $x^{2} + 4x + 4 \\ge 0$ und dabei ganz der $x = -2$.",
       "Die Ungleichung $x^{2} + x - 12 \\le 0$ Das bedeutet, dass Kommentar X muss positiv."
@@ -792,8 +792,8 @@
       "Die Ungleichung $-8 \\le x^{2} - 12x + 30 \\le 4$ hat die Lösungsmenge $[6 - \\sqrt{10}, 6 + \\sqrt{10}]$.",
       "Die Ungleichung $-11 \\le x^{2} - 14x + 40 \\le 3$ hat die Lösungsmenge $[7 - 2\\sqrt{3}, 7 + 2\\sqrt{3}]$.",
       "Die Ungleichung $-12 \\le x^{2} - 14x + 42 \\le 3$ hat die Lösungsmenge $[7 - \\sqrt{10}, 7 + \\sqrt{10}]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 5} > x - 1$ verwandelte: $[-5, 4)$.",
-      "Die Lösungsmenge der Ungleichung $|x - 2| + |x + 3| \\le 7$ verwandelte: $[-4, 3]$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 5} > x - 1$ ist $[-5, 4)$.",
+      "Die Lösungsmenge der Ungleichung $|x - 2| + |x + 3| \\le 7$ ist $[-4, 3]$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-8\\le (x^{2} - 12 x) + 30\\le 4\n$$\n\n**Linkes Teilstück.**\n\n$$\n-8\\le (x^{2} - 12 x) + 30\n$$\n\n$$\nx^{2} - 12 x + 38\\ge 0\n$$\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 12 x) + 30\\le 4\n$$\n\n$$\nx^{2} - 12 x + 26\\le 0\n$$\n\n$$\nx=6 - \\sqrt{10}\n$$\n\n$$\nx=\\sqrt{10} + 6\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 12 x + 26$ |\n| --- | --- |\n| $(-\\infty,6 - \\sqrt{10})$ | $+$ |\n| $(6 - \\sqrt{10},\\sqrt{10} + 6)$ | $-$ |\n| $(\\sqrt{10} + 6,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[6 - \\sqrt{10}, \\sqrt{10} + 6]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -809,10 +809,10 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Lösungsmenge der Ungleichung ${1 < x^{2} - 2x - 2 < 7}$ enthält das Intervall $(4, 5)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{2x - 1} < x + 1$ verwandelte: $x > 0.5$.",
-      "Die Lösungsmenge der Ungleichung $|2x + 3| - 5 > 0$ verwandelte: $x < -4$ or $x > 1$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x - 1} < x + 1$ ist $x > 0.5$.",
+      "Die Lösungsmenge der Ungleichung $|2x + 3| - 5 > 0$ ist $x < -4$ oder $x > 1$.",
       "Die Lösung der Ungleichheiten $-4 \\le x^{2} - 6x + 5 \\le 0$ mit der unter $(1, 5)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - x - 6} \\le x - 1$ verwandelte: $[3, 7]$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - x - 6} \\le x - 1$ ist $[3, 7]$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n1<(x^{2} - 2 x) - 2<7\n$$\n\n**Linkes Teilstück.**\n\n$$\n1<(x^{2} - 2 x) - 2\n$$\n\n$$\nx^{2} - 2 x - 3>0\n$$\n\n$$\n(x - 3) (x + 1)>0\n$$\n\n$$\nx=-1\n$$\n\n$$\nx=3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x - 3$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, -1) \\cup (3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 2 x) - 2<7\n$$\n\n$$\nx^{2} - 2 x - 9<0\n$$\n\n$$\nx=1 - \\sqrt{10}\n$$\n\n$$\nx=1 + \\sqrt{10}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x - 9$ |\n| --- | --- |\n| $(-\\infty,1 - \\sqrt{10})$ | $+$ |\n| $(1 - \\sqrt{10},1 + \\sqrt{10})$ | $-$ |\n| $(1 + \\sqrt{10},\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(1 - \\sqrt{10}, 1 + \\sqrt{10})\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(1 - \\sqrt{10}, -1) \\cup (3, 1 + \\sqrt{10})\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -827,10 +827,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 8",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $|x + 4| - |x - 2| \\ge 6$ verwandelte: $x \\ge 2$.",
+      "Die Lösungsmenge der Ungleichung $|x + 4| - |x - 2| \\ge 6$ ist $x \\ge 2$.",
       "Die Lösungsmenge der Ungleichung ${2 < x^{2} + 2x + 3 < 11}$ ist das Intervall $(-4, 2)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{3x + 1} \\ge 2x - 1$ verwandelte: $[\\frac{-1}{3}, \\frac{7}{4}]$.",
-      "Die Lösungsmenge der Ungleichung $|3x - 2| < |x + 4|$ verwandelte: $(-3, 0.5)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{3x + 1} \\ge 2x - 1$ ist $[\\frac{-1}{3}, \\frac{7}{4}]$.",
+      "Die Lösungsmenge der Ungleichung $|3x - 2| < |x + 4|$ ist $(-3, 0.5)$.",
       "Die Ungleichung $-1 \\le x^{2} - 4x + 2 \\le 2$ hat die Lösungsmenge $[2 - \\sqrt{3}, 2 + \\sqrt{3}]$."
     ],
     "tactical_explanations": [
@@ -846,10 +846,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 9",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 1} + \\sqrt{x - 4} \\le 3$ verwandelte: $[4, 5]$.",
-      "Die Lösungsmenge der Ungleichung $|x^{2} - 4| < 5$ verwandelte: $(-\\sqrt{5}, \\sqrt{5})$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 7} - \\sqrt{x + 4} > 1$ verwandelte: $x > 2\\sqrt{3}$.",
-      "Die Lösungsmenge der Ungleichung $|2x - 5| \\ge 3x - 1$ verwandelte: $x \\le \\frac{5}{6}$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 1} + \\sqrt{x - 4} \\le 3$ ist $[4, 5]$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 4| < 5$ ist $(-\\sqrt{5}, \\sqrt{5})$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 7} - \\sqrt{x + 4} > 1$ ist $x > 2\\sqrt{3}$.",
+      "Die Lösungsmenge der Ungleichung $|2x - 5| \\ge 3x - 1$ ist $x \\le \\frac{5}{6}$.",
       "Die Ungleichung $-3 < x^{2} - 2x - 3 < 5$ hat die Lösungsmenge $(-2, 0) \\cup (2, 4)$."
     ],
     "tactical_explanations": [
@@ -865,11 +865,11 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 10",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 6} < \\sqrt{2x + 1} - 1$ verwandelte: $x > 8 - 2\\sqrt{13}$.",
-      "Die Lösungsmenge der Ungleichung $|x^{2} - 2x - 3| > 4$ verwandelte: $x < 1 - 2\\sqrt{2}$ or $x > 1 + 2\\sqrt{2}$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 6} < \\sqrt{2x + 1} - 1$ ist $x > 8 - 2\\sqrt{13}$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 2x - 3| > 4$ ist $x < 1 - 2\\sqrt{2}$ oder $x > 1 + 2\\sqrt{2}$.",
       "Die Ungleichung $-2 \\le x^{2} - 4x + 1 \\le 6$ hat die Lösungsmenge $[-1, 1] \\cup [3, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 5x + 4} > x - 2$ verwandelte: $x < 1$.",
-      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 3| - 2\\bigr| < 1$ verwandelte: $(0, 2) \\cup (4, 6)$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 5x + 4} > x - 2$ ist $x < 1$.",
+      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 3| - 2\\bigr| < 1$ ist $(0, 2) \\cup (4, 6)$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 6}<\\sqrt{2 x + 1} - 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 6\\ge 0\n$$\n\n$$\nx\\in [-6, \\infty)\n$$\n\n$$\n2 x + 1\\ge 0\n$$\n\n$$\nx\\in [- \\frac{1}{2}, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 6<2 x - 2 \\sqrt{2 x + 1} + 2\n$$\n\n$$\n- x + 2 \\sqrt{2 x + 1} + 4<0\n$$\n\n$$\nx=2 \\sqrt{13} + 8\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x + 2 \\sqrt{2 x + 1} + 4$ |\n| --- | --- |\n| $(-\\infty,2 \\sqrt{13} + 8)$ | $+$ |\n| $(2 \\sqrt{13} + 8,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(2 \\sqrt{13} + 8, \\infty)\n$$\n\nmit dem Preiswert: $x > 8 - 2\\sqrt{13}$.\n\nDie Aussage ist falsch.",
@@ -885,10 +885,10 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung ${0 \\le x^{2} - 6x + 8 \\le 3}$ hat die Lösungsmenge $[1, 2] \\cup [4, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 2} < x$ verwandelte: $x > 2$.",
-      "Die Lösungsmenge der Ungleichung $|x - 1| + |x + 2| \\le 5$ verwandelte: $[-3, 2]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 2} < x$ ist $x > 2$.",
+      "Die Lösungsmenge der Ungleichung $|x - 1| + |x + 2| \\le 5$ ist $[-3, 2]$.",
       "Die Ungleichung ${0 \\le x^{2} - 4x + 3 \\le 3}$ hat die Lösungsmenge $(0, 1) \\cup (3, 4)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{3x - 2} > x - 2$ verwandelte: $[\\frac{2}{3}, 6)$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{3x - 2} > x - 2$ ist $[\\frac{2}{3}, 6)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n0\\le (x^{2} - 6 x) + 8\\le 3\n$$\n\n**Linkes Teilstück.**\n\n$$\n0\\le (x^{2} - 6 x) + 8\n$$\n\n$$\nx^{2} - 6 x + 8\\ge 0\n$$\n\n$$\n(x - 4) (x - 2)\\ge 0\n$$\n\n$$\nx=2\n$$\n\n$$\nx=4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 8$ |\n| --- | --- |\n| $(-\\infty,2)$ | $+$ |\n| $(2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 2] \\cup [4, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 6 x) + 8\\le 3\n$$\n\n$$\nx^{2} - 6 x + 5\\le 0\n$$\n\n$$\n(x - 5) (x - 1)\\le 0\n$$\n\n$$\nx=1\n$$\n\n$$\nx=5\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 5$ |\n| --- | --- |\n| $(-\\infty,1)$ | $+$ |\n| $(1,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n[1, 5]\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n[1, 2] \\cup [4, 5]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -903,10 +903,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 12",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $|x + 3| - |x - 1| \\ge 2$ verwandelte: $x \\ge 0$.",
+      "Die Lösungsmenge der Ungleichung $|x + 3| - |x - 1| \\ge 2$ ist $x \\ge 0$.",
       "Die Ungleichung $-1 \\le x^{2} - 4x + 2 \\le 4$ hat die Lösungsmenge $[2 - \\sqrt{6}, 2 + \\sqrt{6}]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 2x - 3} \\le x + 1$ verwandelte: $\\{-1\\} \\cup [3, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $|2x - 1| < |x + 4|$ verwandelte: $(-1, 5)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 2x - 3} \\le x + 1$ ist $\\{-1\\} \\cup [3, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $|2x - 1| < |x + 4|$ ist $(-1, 5)$.",
       "Die Ungleichung ${1 < x^{2} + 2x - 2 < 6}$ hat die Lösungsmenge $(-4, 2)$."
     ],
     "tactical_explanations": [
@@ -922,11 +922,11 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 13",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 2} + \\sqrt{x + 3} \\le 5$ verwandelte: $[2, 6]$.",
-      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 2| - 3\\bigr| \\le 2$ verwandelte: $(-3, 1) \\cup (3, 7)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 2} + \\sqrt{x + 3} \\le 5$ ist $[2, 6]$.",
+      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 2| - 3\\bigr| \\le 2$ ist $(-3, 1) \\cup (3, 7)$.",
       "Die Ungleichung ${0 < x^{2} - 6x + 9 \\le 4}$ hat die Lösungsmenge $[1, 3) \\cup (3, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{3x + 4} - \\sqrt{x + 1} > 1$ verwandelte: $x > -1$.",
-      "Die Lösungsmenge der Ungleichung $|3x + 1| \\ge 4x - 2$ verwandelte: $x \\le 3$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{3x + 4} - \\sqrt{x + 1} > 1$ ist $x > -1$.",
+      "Die Lösungsmenge der Ungleichung $|3x + 1| \\ge 4x - 2$ ist $x \\le 3$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nBeginnen wir mit der Zwei-Rennen-ibel\n\n$$\n\\sqrt{x - 2}+\\sqrt{x + 3}\\le 5\n$$\n\nUndlauf auf daß es auf zu auf : . .\n\n$$\nx - 2\\ge 0\n$$\n\n$$\nx + 3\\ge 0\n$$\n\n$$\nx\\in [2, \\infty)\n$$\n\nIsolieren Sie ein Radikal (rechte Seite soll nicht negativ bleiben), dann zweimal der beidenerpunkt.\n\n$$\n\\sqrt{x - 2}\\le 5-\\sqrt{x + 3}\n$$\n\n$$\n\\sqrt{x + 3}\\le 5\n$$\n\n$$\nx + 3\\le 25\n$$\n\nNach der ersten der Hinweisung wird sei dem Verbleibenden radikal und dem Verlassen des Verdächtigen derwecken wieder.\n\n$$\n2\\cdot 5\\sqrt{x + 3}\\le 5^2+x + 3-x - 2\n$$\n\nEine , jede Domainschle, die sich kreuzt, und eine Quadratur ergibt\n\n$$\n[2, 6]\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -942,10 +942,10 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung $-1 < x^{2} - 2x - 1 < 7$ hat die Lösungsmenge $(-2, 0) \\cup (2, 4)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < \\sqrt{2x + 5} - 1$ verwandelte: $x > 1 - 2\\sqrt{3}$.",
-      "Die Lösungsmenge der Ungleichung $|x^{2} - 3x - 1| > 3$ verwandelte: $x < -1$ or $x > 4$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < \\sqrt{2x + 5} - 1$ ist $x > 1 - 2\\sqrt{3}$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 3x - 1| > 3$ ist $x < -1$ oder $x > 4$.",
       "Die Ungleichung $-3 \\le x^{2} - 6x + 7 \\le 2$ hat die Lösungsmenge $[1, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < \\sqrt{2x + 5} - 1$ verwandelte: $x > 1 - 2\\sqrt{3}$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < \\sqrt{2x + 5} - 1$ ist $x > 1 - 2\\sqrt{3}$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-1<(x^{2} - 2 x) - 1<7\n$$\n\n**Linkes Teilstück.**\n\n$$\n-1<(x^{2} - 2 x) - 1\n$$\n\n$$\nx^{2} - 2 x>0\n$$\n\n$$\nx (x - 2)>0\n$$\n\n$$\nx=0\n$$\n\n$$\nx=2\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x (x - 2)$ |\n| --- | --- |\n| $(-\\infty,0)$ | $+$ |\n| $(0,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 0) \\cup (2, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 2 x) - 1<7\n$$\n\n$$\nx^{2} - 2 x - 8<0\n$$\n\n$$\n(x - 4) (x + 2)<0\n$$\n\n$$\nx=-2\n$$\n\n$$\nx=4\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 2 x - 8$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(-2, 4)\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(-2, 0) \\cup (2, 4)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -960,10 +960,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 15",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $|x^{2} - 3x - 1| > 3$ verwandelte: $x < -1$ or $x > 4$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 3x - 1| > 3$ ist $x < -1$ oder $x > 4$.",
       "Die Ungleichung $-3 \\le x^{2} - 6x + 7 \\le 2$ hat die Lösungsmenge $[1, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 3} < x - 3$ verwandelte: $x > 4$.",
-      "Die Lösungsmenge der Ungleichung $|x + 1| + |x - 4| \\le 7$ verwandelte: $[-2, 5]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 3} < x - 3$ ist $x > 4$.",
+      "Die Lösungsmenge der Ungleichung $|x + 1| + |x - 4| \\le 7$ ist $[-2, 5]$.",
       "Die Ungleichung ${0 < x^{2} - 2x - 3 \\le 5}$ hat die Lösungsmenge $(-2, -1) \\cup (3, 4)$."
     ],
     "tactical_explanations": [
@@ -979,11 +979,11 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 16",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{2x - 3} \\ge x - 3$ verwandelte: $[1.5, 6)$.",
-      "Die Lösungsmenge der Ungleichung $|2x - 3| > |x + 2|$ verwandelte: $x < \\frac{1}{3}$ or $x > 5$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x - 3} \\ge x - 3$ ist $[1.5, 6)$.",
+      "Die Lösungsmenge der Ungleichung $|2x - 3| > |x + 2|$ ist $x < \\frac{1}{3}$ oder $x > 5$.",
       "Die Ungleichung $-2 \\le x^{2} - 4x + 1 \\le 3$ hat die Lösungsmenge $[2 - \\sqrt{6}, 1] \\cup [3, 2 + \\sqrt{6}]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 7} > \\sqrt{2x + 1}$ verwandelte: $[-0.5, 6)$.",
-      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x + 1| - 4\\bigr| \\ge 3$ verwandelte: $x \\le -8$ or $-2 \\le x \\le 0$ or $x \\ge 6$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 7} > \\sqrt{2x + 1}$ ist $[-0.5, 6)$.",
+      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x + 1| - 4\\bigr| \\ge 3$ ist $x \\le -8$ oder $-2 \\le x \\le 0$ oder $x \\ge 6$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{2 x - 3}\\ge x - 3\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n2 x - 3\\ge 0\n$$\n\n$$\nx\\in [\\frac{3}{2}, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichheit automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n2 x - 3\\ge x^{2} - 6 x + 9\n$$\n\n$$\n- x^{2} + 8 x - 12\\ge 0\n$$\n\n$$\n- (x - 6) (x - 2)\\ge 0\n$$\n\n$$\nx=2\n$$\n\n$$\nx=6\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} + 8 x - 12$ |\n| --- | --- |\n| $(-\\infty,2)$ | $-$ |\n| $(2,6)$ | $+$ |\n| $(6,\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[\\frac{3}{2}, 6]\n$$\n\nmit dem Preiswert: $[1.5, 6)$.\n\nDie Aussage ist falsch.",
@@ -999,10 +999,10 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung ${1 < x^{2} + 4x + 2 < 10}$ hat die Lösungsmenge $(-2 - 2\\sqrt{3}, -2 + 2\\sqrt{3})$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 1} + \\sqrt{x + 4} \\le 5$ verwandelte: $[1, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |2x - 3| - 4\\bigr| < 3$ verwandelte: $(-2, 1) \\cup (2, 5)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x - 1} + \\sqrt{x + 4} \\le 5$ ist $[1, 5]$.",
+      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |2x - 3| - 4\\bigr| < 3$ ist $(-2, 1) \\cup (2, 5)$.",
       "Die Ungleichung ${0 < x^{2} - 8x + 16 \\le 9}$ hat die Lösungsmenge $[1, 7]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{4x + 5} - \\sqrt{x + 2} > 1$ verwandelte: $x \\ge -1.25$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{4x + 5} - \\sqrt{x + 2} > 1$ ist $x \\ge -1.25$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n1<(x^{2} + 4 x) + 2<10\n$$\n\n**Linkes Teilstück.**\n\n$$\n1<(x^{2} + 4 x) + 2\n$$\n\n$$\nx^{2} + 4 x + 1>0\n$$\n\n$$\nx=-2 - \\sqrt{3}\n$$\n\n$$\nx=-2 + \\sqrt{3}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} + 4 x + 1$ |\n| --- | --- |\n| $(-\\infty,-2 - \\sqrt{3})$ | $+$ |\n| $(-2 - \\sqrt{3},-2 + \\sqrt{3})$ | $-$ |\n| $(-2 + \\sqrt{3},\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, -2 - \\sqrt{3}) \\cup (-2 + \\sqrt{3}, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} + 4 x) + 2<10\n$$\n\n$$\nx^{2} + 4 x - 8<0\n$$\n\n$$\nx=- 2 \\sqrt{3} - 2\n$$\n\n$$\nx=-2 + 2 \\sqrt{3}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} + 4 x - 8$ |\n| --- | --- |\n| $(-\\infty,- 2 \\sqrt{3} - 2)$ | $+$ |\n| $(- 2 \\sqrt{3} - 2,-2 + 2 \\sqrt{3})$ | $-$ |\n| $(-2 + 2 \\sqrt{3},\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(- 2 \\sqrt{3} - 2, -2 + 2 \\sqrt{3})\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(- 2 \\sqrt{3} - 2, -2 - \\sqrt{3}) \\cup (-2 + \\sqrt{3}, -2 + 2 \\sqrt{3})\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -1017,10 +1017,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 18",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $|4x - 1| \\ge |x + 5|$ verwandelte: $x \\le -0.8$ or $x \\ge 2$.",
+      "Die Lösungsmenge der Ungleichung $|4x - 1| \\ge |x + 5|$ ist $x \\le -0.8$ oder $x \\ge 2$.",
       "Die Ungleichung $-4 \\le x^{2} - 2x - 3 < 5$ hat die Lösungsmenge $(-2, 4)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 4} < \\sqrt{3x + 7} - 1$ verwandelte: $x > \\dfrac{-1 - \\sqrt{13}}{2}$.",
-      "Die Lösungsmenge der Ungleichung $|x^{2} - 5x + 2| > 4$ verwandelte: $x < \\dfrac{5 - \\sqrt{33}}{2}$ or ${2 < x < 3}$ or $x > \\dfrac{5 + \\sqrt{33}}{2}$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 4} < \\sqrt{3x + 7} - 1$ ist $x > \\dfrac{-1 - \\sqrt{13}}{2}$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 5x + 2| > 4$ ist $x < \\dfrac{5 - \\sqrt{33}}{2}$ oder ${2 < x < 3}$ oder $x > \\dfrac{5 + \\sqrt{33}}{2}$.",
       "Die Ungleichung $-5 \\le x^{2} - 6x + 4 < 4$ hat die Lösungsmenge $(0, 6)$."
     ],
     "tactical_explanations": [
@@ -1036,11 +1036,11 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 19",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 5} < x + 1$ verwandelte: $x > \\dfrac{-1 + \\sqrt{17}}{2}$.",
-      "Die Lösungsmenge der Ungleichung $|x - 2| + |x + 3| \\le 9$ verwandelte: $[-5, 4]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 5} < x + 1$ ist $x > \\dfrac{-1 + \\sqrt{17}}{2}$.",
+      "Die Lösungsmenge der Ungleichung $|x - 2| + |x + 3| \\le 9$ ist $[-5, 4]$.",
       "Die Ungleichung ${0 \\le x^{2} - 6x + 8 \\le 3}$ hat die Lösungsmenge $(1, 2) \\cup (4, 5)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{5x - 4} \\le x$ verwandelte: $[0.8, 1] \\cup [4, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $|3x + 2| < |x - 6|$ verwandelte: $(-4, 1)$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{5x - 4} \\le x$ ist $[0.8, 1] \\cup [4, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $|3x + 2| < |x - 6|$ ist $(-4, 1)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{x + 5}<x + 1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx + 5\\ge 0\n$$\n\n$$\nx\\in [-5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx + 5<x^{2} + 2 x + 1\n$$\n\n$$\n- x^{2} - x + 4<0\n$$\n\n$$\nx=- \\frac{\\sqrt{17}}{2} - \\frac{1}{2}\n$$\n\n$$\nx=- \\frac{1}{2} + \\frac{\\sqrt{17}}{2}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- x^{2} - x + 4$ |\n| --- | --- |\n| $(-\\infty,- \\frac{\\sqrt{17}}{2} - \\frac{1}{2})$ | $-$ |\n| $(- \\frac{\\sqrt{17}}{2} - \\frac{1}{2},- \\frac{1}{2} + \\frac{\\sqrt{17}}{2})$ | $+$ |\n| $(- \\frac{1}{2} + \\frac{\\sqrt{17}}{2},\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(- \\frac{1}{2} + \\frac{\\sqrt{17}}{2}, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -1056,10 +1056,10 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung $-2 < x^{2} - 6x + 5 < 3$ hat die Lösungsmenge $(3 - \\sqrt{7}, 3 + \\sqrt{7})$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 6} \\ge x$ verwandelte: $[-6, 3]$.",
-      "Die Lösungsmenge der Ungleichung $|x + 4| - |x - 2| \\ge 3$ verwandelte: $[0.5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 6} \\ge x$ ist $[-6, 3]$.",
+      "Die Lösungsmenge der Ungleichung $|x + 4| - |x - 2| \\ge 3$ ist $[0.5, \\infty)$.",
       "Die Ungleichung ${2 \\le x^{2} - 4x + 5 \\le 10}$ hat die Lösungsmenge $[-1, 1] \\cup [3, 5]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 1} + \\sqrt{x + 6} \\le 5$ verwandelte: $[-1, 3]$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 1} + \\sqrt{x + 6} \\le 5$ ist $[-1, 3]$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nEine zusammengesetzte Ungleichung sind zwei Bedingungen, die gleichzeitig gelten müssen. Löse jedes Teilstück und bilde die Schnittmenge.\n\n$$\n-2<(x^{2} - 6 x) + 5<3\n$$\n\n**Linkes Teilstück.**\n\n$$\n-2<(x^{2} - 6 x) + 5\n$$\n\n$$\nx^{2} - 6 x + 7>0\n$$\n\n$$\nx=3 - \\sqrt{2}\n$$\n\n$$\nx=\\sqrt{2} + 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 7$ |\n| --- | --- |\n| $(-\\infty,3 - \\sqrt{2})$ | $+$ |\n| $(3 - \\sqrt{2},\\sqrt{2} + 3)$ | $-$ |\n| $(\\sqrt{2} + 3,\\infty)$ | $+$ |\n\nDas linke Teilstück liefert\n\n$$\n(-\\infty, 3 - \\sqrt{2}) \\cup (\\sqrt{2} + 3, \\infty)\n$$\n\n**Rechtes Teilstück.**\n\n$$\n(x^{2} - 6 x) + 5<3\n$$\n\n$$\nx^{2} - 6 x + 2<0\n$$\n\n$$\nx=3 - \\sqrt{7}\n$$\n\n$$\nx=\\sqrt{7} + 3\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $x^{2} - 6 x + 2$ |\n| --- | --- |\n| $(-\\infty,3 - \\sqrt{7})$ | $+$ |\n| $(3 - \\sqrt{7},\\sqrt{7} + 3)$ | $-$ |\n| $(\\sqrt{7} + 3,\\infty)$ | $+$ |\n\nDas rechte Teilstück liefert\n\n$$\n(3 - \\sqrt{7}, \\sqrt{7} + 3)\n$$\n\nBilde die Schnittmenge beider Teilstücke.\n\n$$\n(3 - \\sqrt{7}, 3 - \\sqrt{2}) \\cup (\\sqrt{2} + 3, \\sqrt{7} + 3)\n$$\n\neignet euch.\n\nDie Aussage ist falsch.",
@@ -1074,10 +1074,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 21",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 5| - 2\\bigr| \\le 4$ verwandelte: $[1, 9]$.",
+      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x - 5| - 2\\bigr| \\le 4$ ist $[1, 9]$.",
       "Die Ungleichung ${0 < x^{2} - 10x + 25 \\le 16}$ hat die Lösungsmenge $[1, 5) \\cup (5, 9]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{5x + 1} - \\sqrt{2x + 4} > 1$ verwandelte: $x \\ge \\frac{4}{3}$.",
-      "Die Lösungsmenge der Ungleichung $|2x - 5| \\ge |3x + 1|$ verwandelte: $[-6, 0.8]$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{5x + 1} - \\sqrt{2x + 4} > 1$ ist $x \\ge \\frac{4}{3}$.",
+      "Die Lösungsmenge der Ungleichung $|2x - 5| \\ge |3x + 1|$ ist $[-6, 0.8]$.",
       "Die Ungleichung ${2 \\le x^{2} + 2x - 1 < 10}$ hat die Lösungsmenge $(-1 - 2\\sqrt{3}, -3] \\cup [1, -1 + 2\\sqrt{3})$."
     ],
     "tactical_explanations": [
@@ -1093,11 +1093,11 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 22",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 9} - \\sqrt{x + 5} > 1$ verwandelte: $x > -1 - 2\\sqrt{3}$.",
-      "Die Lösungsmenge der Ungleichung $|x^{2} - 4x - 1| > 4$ verwandelte: $x < -1$ or ${1 < x < 3}$ or $x > 5$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 9} - \\sqrt{x + 5} > 1$ ist $x > -1 - 2\\sqrt{3}$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} - 4x - 1| > 4$ ist $x < -1$ oder ${1 < x < 3}$ oder $x > 5$.",
       "Die Ungleichung $-6 \\le x^{2} - 4x - 3 < 5$ hat die Lösungsmenge $(2 - 2\\sqrt{3}, 2 + 2\\sqrt{3})$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < x - 1$ verwandelte: $x > \\dfrac{3 + \\sqrt{17}}{2}$.",
-      "Die Lösungsmenge der Ungleichung $|x + 2| + |x - 5| \\le 10$ verwandelte: $[-3.5, 6.5]$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} < x - 1$ ist $x > \\dfrac{3 + \\sqrt{17}}{2}$.",
+      "Die Lösungsmenge der Ungleichung $|x + 2| + |x - 5| \\le 10$ ist $[-3.5, 6.5]$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nStarte von der Wurzelungleichung.\n\n$$\n- \\sqrt{x + 5} + \\sqrt{2 x + 9}>1\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\n2 x + 9\\ge 0\n$$\n\n$$\nx\\in [- \\frac{9}{2}, \\infty)\n$$\n\n$$\nx + 5\\ge 0\n$$\n\n$$\nx\\in [-5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nEine Quadratwurzel ist immer $\\ge 0$, so dass die Ungleichheit automatisch auf dem Teil der Domain gilt, wo die rechte Seite negativ ist.\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\n3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 14>1\n$$\n\n$$\n3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 13>0\n$$\n\n$$\nx=-1 + 2 \\sqrt{3}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $3 x - 2 \\sqrt{x + 5} \\sqrt{2 x + 9} + 13$ |\n| --- | --- |\n| $(-\\infty,-1 + 2 \\sqrt{3})$ | $-$ |\n| $(-1 + 2 \\sqrt{3},\\infty)$ | $+$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n(-1 + 2 \\sqrt{3}, \\infty)\n$$\n\nmit dem Preiswert: $x > -1 - 2\\sqrt{3}$.\n\nDie Aussage ist falsch.",
@@ -1113,8 +1113,8 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung ${0 \\le x^{2} - 8x + 12 \\le 5}$ hat die Lösungsmenge $(1, 2) \\cup (6, 7)$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{4x - 3} \\ge x - 1$ verwandelte: $[0.75, 3 + \\sqrt{5})$.",
-      "Die Lösungsmenge der Ungleichung $|4x - 1| > |2x + 7|$ verwandelte: $x < -1$ or $x > 4$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{4x - 3} \\ge x - 1$ ist $[0.75, 3 + \\sqrt{5})$.",
+      "Die Lösungsmenge der Ungleichung $|4x - 1| > |2x + 7|$ ist $x < -1$ oder $x > 4$.",
       "Die Ungleichung $-3 < x^{2} - 2x - 2 < 6$ hat die Lösungsmenge $(-2, 4)$."
     ],
     "tactical_explanations": [
@@ -1129,10 +1129,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 24",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 4x - 5} \\le x + 2$ verwandelte: $[\\frac{-9}{8}, -1] \\cup [5, \\infty)$.",
-      "Die Lösungsmenge der Ungleichung $|x - 3| - |x + 1| \\ge -2$ verwandelte: $(-\\infty, 2)$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x^{2} - 4x - 5} \\le x + 2$ ist $[\\frac{-9}{8}, -1] \\cup [5, \\infty)$.",
+      "Die Lösungsmenge der Ungleichung $|x - 3| - |x + 1| \\ge -2$ ist $(-\\infty, 2)$.",
       "Die Ungleichung ${3 < x^{2} + 2x - 1 < 11}$ hat die Lösungsmenge $(-1 - \\sqrt{13}, -1 - \\sqrt{5}) \\cup (-1 + \\sqrt{5}, -1 + \\sqrt{13})$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} + \\sqrt{x + 8} \\le 5$ verwandelte: $[-3, 1]$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{x + 3} + \\sqrt{x + 8} \\le 5$ ist $[-3, 1]$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der Wurzelungleichung.\n\n$$\n\\sqrt{(x^{2} - 4 x) - 5}\\le x + 2\n$$\n\nVerlange, dass jeder Radikand nichtnegativ ist (Definitionsmenge).\n\n$$\nx^{2} - 4 x - 5\\ge 0\n$$\n\n$$\nx\\in (-\\infty, -1] \\cup [5, \\infty)\n$$\n\n**Fall, wenn die nicht-Wurzel-Seite negativ ist.**\n\nWenn die rechte Seite negativ ist, kann eine nicht, also die Quadratwurzel nicht nicht $0$ holz Kommentar Figsdaten football-\n\n**Fall, wenn die nicht-Wurzel-Seite nichtnegativ ist.**\n\nBeide Seiten sind nichtnegativ, daher bleibt beim Quadrieren die Ungleichungsrichtung erhalten.\n\n$$\nx^{2} - 4 x - 5\\le x^{2} + 4 x + 4\n$$\n\n$$\n- 8 x - 9\\le 0\n$$\n\n$$\nx=- \\frac{9}{8}\n$$\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $- 8 x - 9$ |\n| --- | --- |\n| $(-\\infty,- \\frac{9}{8})$ | $+$ |\n| $(- \\frac{9}{8},\\infty)$ | $-$ |\n\nDie Schnittmenge des quadrierten Falls mit Definitionsmenge und Vorzeichenfall liefert\n\n$$\n[- \\frac{9}{8}, -1] \\cup [5, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -1146,10 +1146,10 @@
     "title": "Zusammengesetzte und spezielle Ungleichungen — 25",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x + 3| - 5\\bigr| < 4$ verwandelte: $(-12, -4) \\cup (-2, 6)$.",
+      "Die Lösungsmenge der Ungleichung $\\bigl|\\, |x + 3| - 5\\bigr| < 4$ ist $(-12, -4) \\cup (-2, 6)$.",
       "Die Ungleichung ${0 < x^{2} + 2x + 1 \\le 9}$ hat die Lösungsmenge $[-4, 2]$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{3x + 10} - \\sqrt{x + 2} > 2$ verwandelte: $x \\ge -2$.",
-      "Die Lösungsmenge der Ungleichung $|5x + 2| \\ge |2x - 9|$ verwandelte: $x \\le \\frac{-11}{3}$ or $x \\ge 1$."
+      "Die Lösungsmenge der Ungleichung $\\sqrt{3x + 10} - \\sqrt{x + 2} > 2$ ist $x \\ge -2$.",
+      "Die Lösungsmenge der Ungleichung $|5x + 2| \\ge |2x - 9|$ ist $x \\le \\frac{-11}{3}$ oder $x \\ge 1$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der Betragsungleichung.\n\n$$\n|{|{x + 3}| - 5}|<4\n$$\n\nEin absoluter Wert unterhalb einer nicht negativen Konstante entfaltet sich zu einer zusammengesetzten Ungleichheit.\n\n$$\n-4<|{x + 3}| - 5<4\n$$\n\nLöse die linke Hälfte.\n\n$$\n|{x + 3}| - 5>-4\n$$\n\n$$\nx\\in (-\\infty, -4) \\cup (-2, \\infty)\n$$\n\nLöse die rechte Hälfte.\n\n$$\n|{x + 3}| - 5<4\n$$\n\n$$\nx\\in (-12, 6)\n$$\n\nSchnitte beide Hälften.\n\n$$\n(-12, -4) \\cup (-2, 6)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -1164,8 +1164,8 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung $-2 \\le x^{2} - 4x - 1 < 7$ hat die Lösungsmenge $(2 - 2\\sqrt{3}, 2 - \\sqrt{3}] \\cup [2 + \\sqrt{3}, 2 + 2\\sqrt{3})$.",
-      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 3} < \\sqrt{5x + 4} - 1$ verwandelte: $x > \\dfrac{4 - 2\\sqrt{31}}{9}$.",
-      "Die Lösungsmenge der Ungleichung $|x^{2} + x - 5| > 7$ verwandelte: $x < -4$ or $x > 3$.",
+      "Die Lösungsmenge der Ungleichung $\\sqrt{2x + 3} < \\sqrt{5x + 4} - 1$ ist $x > \\dfrac{4 - 2\\sqrt{31}}{9}$.",
+      "Die Lösungsmenge der Ungleichung $|x^{2} + x - 5| > 7$ ist $x < -4$ oder $x > 3$.",
       "Die Ungleichung $-7 \\le x^{2} - 2x - 6 < 3$ hat die Lösungsmenge $(1 - \\sqrt{10}, 1 + \\sqrt{10})$."
     ],
     "tactical_explanations": [
@@ -1333,7 +1333,7 @@
     "context": "Ein Geschäft wendet einen Rabatt von 25 % auf den ursprünglichen Preis an und zieht danach zusätzlich einen pauschalen \\$15-Coupon ab. Es sei $p$ der ursprüngliche Preis. The final price is ${0.75p - 15}$. A customer möchte the final price to be \\$60 or weniger.",
     "statements": [
       "An ursprüngliche Preis of \\$100 ergibt a final price of exactly \\$60.",
-      "An ursprüngliche Preis of \\$120 keeps the final price at or under \\$60.",
+      "An ursprüngliche Preis of \\$120 keeps the final price at oder under \\$60.",
       "Der maximale ursprüngliche Preis, der den Endpreis bei höchstens \\$60 hält, beträgt \\$100.",
       "Wendet man den \\$15-Coupon vor dem 25%-Rabatt an — also ${0.75(p - 15) \\le 60}$ — erhält man denselben maximalen ursprünglichen Preis von \\$100.",
       "Die Ungleichung correctly modeling “discount first, then flat coupon” is ${0.75p - 15 \\le 60}$."
@@ -1659,7 +1659,7 @@
       "Die schä- ung- ung- ung- ung- ung- ung- ung- ung- ung- ung- ung- ung- $x$ und in bezogen und $12-x$, mit $0<x<12$Seine Fläche ist mindestens $27$ Genau wann $3\\le x\\le9$.",
       "Die verschachtelte Ungleichheit $\\bigl||x-1|-2\\bigr|\\ge1$ hat die Lösungsmenge $(-\\infty,-2]\\cup[0,2]\\cup[4,\\infty)$.",
       "Eins bissens und einem, Indikatorierung nur dem T $25$ units.",
-      "Für einen festen Parameter $a>0$, $\\dfrac{x-a}{x+a}>0$ Genau wann $x<-a$ or $x>a$."
+      "Für einen festen Parameter $a>0$, $\\dfrac{x-a}{x+a}>0$ Genau wann $x<-a$ oder $x>a$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der behaupteten Ungleichung.\n\n$$\n\\frac{(x - 3) (x - 2)}{(x - 1) (x + 1)}>0\n$$\n\nDie kritischen Punkte sind die Nullstelle(n) des Zählers und die ausgeschlossenen Polstelle(n).\n\n$$\n(x^{2} - 5 x) + 6=0\n$$\n\n$$\n(x - 3) (x - 2)=0\n$$\n\n$$\nx=2\n$$\n\n$$x - 3=0$$\n\n$$x=3$$\n\n$$\nx^{2} - 1=0\n$$\n\n$$\n(x - 1) (x + 1)=0\n$$\n\n$$\nx=-1\n$$\n\n(die Polstelle $x=-1$ ist niemals zulässig).\n\n$$x - 1=0$$\n\n$$x=1$$\n\n(die Polstelle $x=1$ ist niemals zulässig).\n\nVorzeichendiagramm auf den offenen Intervallen:\n\nfür die Abnehmer $\\frac{(x - 3) (x - 2)}{(x - 1) (x + 1)}$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,1)$ | $-$ |\n| $(1,2)$ | $+$ |\n| $(2,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nDas Ablesen des Vorzeichendiagramms am Ungleichheitszeichen liefert\n\n$$\n(-\\infty, -1) \\cup (1, 2) \\cup (3, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -1697,7 +1697,7 @@
       "DE HINN zu DE DEHNEN , , ’ Umstand , ’weck lum ’kenn ’ ’ , ’ ’ ’ ’ Umstand $25$ units.",
       "Der Lösungssatz von $\\dfrac{x^2-1}{x-1}>0$ das ununterbrochene Intervall $(-1,\\infty)$.",
       "Ac-Ac. $(x-3)^2\\ge0$ ist wahr für jede reale $x$bei Gleichheit nur bei $x=3$.",
-      "Die $x<-2$ or $x\\ge1$” und “$x<4$” give $(-\\infty,-2)\\cup[1,4)$."
+      "Die $x<-2$ oder $x\\ge1$” und “$x<4$” give $(-\\infty,-2)\\cup[1,4)$."
     ],
     "tactical_explanations": [
       "**A.** → Wahr\n\nStarte von der Betragsungleichung.\n\n$$\n|{x^{2} - 1}|>0\n$$\n\nEin absoluter Wert über einer Konst bzw. zweis auf dies ist in zwei äußere Fälle.\n\n**Case 1.**\n\n$$\nx^{2} - 1>0\n$$\n\n$$\nx\\in (-\\infty, -1) \\cup (1, \\infty)\n$$\n\n**Case 2.**\n\n$$\nx^{2} - 1<-0\n$$\n\n$$\nx\\in (-1, 1)\n$$\n\nUnion der beiden Fälle:\n\n$$\n(-\\infty, -1) \\cup (-1, 1) \\cup (1, \\infty)\n$$\n\nEragiessführen.\n\nDie Aussage ist wahr.",
@@ -1789,7 +1789,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Das rüszige Ziel, ?◦ ? , der senkt‟ Treffpunkt zu , shüllthüllt ? ? ?sc ??und ? du ??? ??? ??? ???? ??? ???? ??? ??? ? ?? ? ?? ?? ?? ?? Columbuss ??? ??? ??? ??? ??? ??? ? zu ? s k ?s ruhe ? ?? ? ?? ? ?? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?? ? ?? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? Das Budget deckt höchstens $25$ units.",
-      "Die Ungleichung $\\dfrac1{(x-2)^2}\\le1$ ist gleich wie $x\\le1$ or $x\\ge3$.",
+      "Die Ungleichung $\\dfrac1{(x-2)^2}\\le1$ ist gleich wie $x\\le1$ oder $x\\ge3$.",
       "Die Abstimm der korrekten Schardel $-x^2+4x+5>x+3$ Hinweis der rming an der Ges Hinweis $\\dfrac{3-\\sqrt{17}}2$ und in bezogen und $\\dfrac{3+\\sqrt{17}}2$.",
       "Die Bedingung $\\min\\{x+2,\\,4-x\\}\\ge1$ ist gleich wie $-1\\le x\\le3$.",
       "Ein Service berechnet 16 EUR plus 6 EUR pro Einheit mit einem Budget von 178 EUR. äth- Ben- $29$ units."
@@ -1808,7 +1808,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Die Ungleichung $\\dfrac1x\\ge\\dfrac1{x+2}$ US1. $x\\in(-\\infty,-2)\\cup(0,\\infty)$.",
-      "Die strenge Ungleichheit $(x^2-4)(x^2-16)>0$ gilt genau für $x<-4$, $-2<x<2$, or $x>4$.",
+      "Die strenge Ungleichheit $(x^2-4)(x^2-16)>0$ gilt genau für $x<-4$, $-2<x<2$, oder $x>4$.",
       "Die zusammengesetzte Ungleichheit $-2<\\dfrac{x-1}{3}\\le4$ hat die Lösungsmenge $-5<x\\le13$.",
       "Eins bissens und einem, Indikatorierung nur dem T $25$ units.",
       "Die strenge Ungleichheit $\\dfrac{x-3}{(x+1)^2}>0$ wirklich $x>3$."
@@ -1845,7 +1845,7 @@
     "title": "Klausuraufgaben – 11",
     "context": "Ein Regelverhältnis ist $R(x)=\\dfrac{x-3}{x+1}$Der Input $x=-1$ ist ausgeschlossen, weil es den Nenner Null macht, während $x=3$ f Ingenieure, die in diesen zwei-kritischen Punkten ein Zeichendiagramm verwendet, um positive und nicht-positive Werte zu klassifizieren.",
     "statements": [
-      "$R(x)>0$ für $x<-1$ or $x>3$.",
+      "$R(x)>0$ für $x<-1$ oder $x>3$.",
       "$x=-1$ gehört zur Lösung von $R(x)\\le0$.",
       "$R(3)=0$.",
       "$R(x)\\le0$ on $(-1,3]$.",
@@ -1886,7 +1886,7 @@
       "Compliance means $16\\le T\\le24$.",
       "$T=24$ ist konform.",
       "$T=16$ die dies.",
-      "Noncompliance means $T<16$ or $T>24$.",
+      "Noncompliance means $T<16$ oder $T>24$.",
       "$|T-20|\\ge4$ Ein offener, ä Freispracheführen wird verserft."
     ],
     "tactical_explanations": [
@@ -1921,7 +1921,7 @@
     "title": "Klausuraufgaben – 15",
     "context": "Ein Regelverhältnis ist $R(x)=\\dfrac{x-4}{x+2}$Der Input $x=-2$ ist ausgeschlossen, weil es den Nenner Null macht, während $x=4$ f Ingenieure, die in diesen zwei-kritischen Punkten ein Zeichendiagramm verwendet, um positive und nicht-positive Werte zu klassifizieren.",
     "statements": [
-      "$R(x)>0$ für $x<-2$ or $x>4$.",
+      "$R(x)>0$ für $x<-2$ oder $x>4$.",
       "$x=-2$ gehört zur Lösung von $R(x)\\le0$.",
       "$R(4)=0$.",
       "$R(x)\\le0$ on $(-2,4]$.",
@@ -1962,7 +1962,7 @@
       "Compliance means $17\\le T\\le25$.",
       "$T=25$ ist konform.",
       "$T=17$ die dies.",
-      "Noncompliance means $T<17$ or $T>25$.",
+      "Noncompliance means $T<17$ oder $T>25$.",
       "$|T-21|\\ge4$ Ein offener, ä Freispracheführen wird verserft."
     ],
     "tactical_explanations": [
@@ -1997,7 +1997,7 @@
     "title": "Klausuraufgaben – 19",
     "context": "Ein Regelverhältnis ist $R(x)=\\dfrac{x-5}{x+3}$Der Input $x=-3$ ist ausgeschlossen, weil es den Nenner Null macht, während $x=5$ f Ingenieure, die in diesen zwei-kritischen Punkten ein Zeichendiagramm verwendet, um positive und nicht-positive Werte zu klassifizieren.",
     "statements": [
-      "$R(x)>0$ für $x<-3$ or $x>5$.",
+      "$R(x)>0$ für $x<-3$ oder $x>5$.",
       "$x=-3$ gehört zur Lösung von $R(x)\\le0$.",
       "$R(5)=0$.",
       "$R(x)\\le0$ on $(-3,5]$.",
@@ -2093,7 +2093,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "Ein Segelboot-Fersenwinkel (Grad) unter Windlast $w\\in[0,50]$ modelliert von $h(w)=0.4w-8$Der Skipper braucht $|h(w)|\\le 12$Dann ist das Boot für jede Windlast in $[0,50]$ wenn und nur wenn $5\\le w\\le 45$.",
-      "Die Ungleichung $\\sqrt{x+6}\\le|x-2|$ Nach $x\\le 0$ or $x\\ge 6$.",
+      "Die Ungleichung $\\sqrt{x+6}\\le|x-2|$ Nach $x\\le 0$ oder $x\\ge 6$.",
       "Auf einer Sub- uns-, die Anzahl der Passagiere, die während einer $t$ Second $8+1.5t$Mindestens 50 Fluggäste müssen an Bord gehen und der Fahrplan verbietet $t>40$Dann beträgt die kürzeste zulässige Dauer von ganzen Sekunden 28 Sekunden.",
       "Der Vergleich $\\dfrac{2x-1}{x+3}\\le 1$ ist gleich wie $-3\\le x\\le 4$.",
       "Humidity in a cheese-aging cave $t$ ig erforderlich, , um schlag g , ➢ - tra tratra tra , ; onne tra r wirtschaftlicher die tra traverständlichsre tra tratra . $H(t)=-t^{2}+14t+40$erllen ers zum F Panzer zumras beim um einfach Begegnunguter forF F FFFFFFFFFFFFFFFFFFFFFFFFF Nachbar beim FtiereFFtausch marktFFFFswerte fürFF fu F giltF überallthislauf verwandelt FFF SchönheitFF per ZeugeweckFFF SchönheitFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFICHswerteFFFFFF\"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFradFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF $H(t)\\ge 80$ gilt genau für $4\\le t\\le 10$."
@@ -2115,7 +2115,7 @@
       "* . . . . . . . . . . . . . . . . . . . . . . . . Tisch Bei einem mt 900 EUR und Belangen für maximaler runder präzise, maximal maximal 280 Bolzen und Gebinde.",
       "Die Ungleichung $|x(x-6)|\\le 5$ hat die Lösungsmenge $[-1,1]\\cup[5,7]$.",
       "Einem leuchtenden Strahl, $I(d)=\\dfrac{90}{d+1}$ im Abstand $d\\ge 0$ in denöfen Das Licht wird sichtbar beim $I(d)\\ge 6$Und: „Siehst du an, was für dich spricht. $d$ in $[0,15]$.",
-      "Die strenge Ungleichheit $\\dfrac{3x+2}{x-1}>2$ wirklich $x<-4$ or $x>1$."
+      "Die strenge Ungleichheit $\\dfrac{3x+2}{x-1}>2$ wirklich $x<-4$ oder $x>1$."
     ],
     "tactical_explanations": [
       "**A.** → Falsch\n\nÜbersetze die Behauptung in Rechnung und rolle jeden Schritt zurück.\n\nRequire\n\n$$S(n) = 100-0.8n^{2}$$\n\n$$100-0.8n^{2}\\ge 64$$\n\n$$\n-0.8n^{2}\\ge -36\n$$\n\n$$\nn^{2}\\le 45\n$$\n\n$$\nn\\le \\sqrt{45}\\approx 6.708\n$$\n\nSince $n$ ist eine nicht negative ganze Zahl, der größte zulässige Wert $n=6$. At $n=7$:\n\n$$0.8\\cdot 49 = 39.2$$\n\n$$100 - 39.2 = 60.8$$\n\n$$S(7) = 60.8$$\n\n$$60.8<64$$\n\nMit dem Handtuch verbunden mit dem Handtuch\n\nDie Aussage ist falsch.",
@@ -2132,8 +2132,8 @@
     "statements": [
       "Ein Weinbergsertrag (Kisten) nach $f$ Frostfreie Wochen sind $Y(f)=-2f^{2}+40f+10$. Für ganze Wochen $f$enennt aus einer der $f\\in\\{6,7,\\ldots,14\\}$.",
       "3D-üb-Rühruh $T$ müssen $|T-215|<8$ und in bezogen und $T\\ge 200$Dann liegt jede zulässige Temperatur im geschlossenen Intervall $207\\le T\\le 223$.",
-      "Die Ungleichung $|2x-1|+|x+3|\\ge 10$ Nach $x\\le -4$ or $x\\ge 3$.",
-      "A ski-lift runs $n$ Gondeln einmal pro Stunde. Stundenbedarf pro Stunde $h\\in\\{0,1,\\ldots,6\\}$ verwandelte: $60+5h$ Skifahrer und jede Gondel hält 8 Skifahrer. Dann deckt eine Flotte von 11 Gondeln den Bedarf jeder Stunde.",
+      "Die Ungleichung $|2x-1|+|x+3|\\ge 10$ Nach $x\\le -4$ oder $x\\ge 3$.",
+      "A ski-lift runs $n$ Gondeln einmal pro Stunde. Stundenbedarf pro Stunde $h\\in\\{0,1,\\ldots,6\\}$ ist $60+5h$ Skifahrer und jede Gondel hält 8 Skifahrer. Dann deckt eine Flotte von 11 Gondeln den Bedarf jeder Stunde.",
       "Die Ungleichung $\\sqrt{4-x}>x-1$ hat die Lösungsmenge $(-\\infty,3]$."
     ],
     "tactical_explanations": [
@@ -2188,7 +2188,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       ". $C(t)=-t^{2}+18t+20$ Grad Celsius $t$ Stunden nach dem Drehen. Die sichere Band ist $60\\le C(t)\\le 84$Dann ist der Stapel überall sicher $3\\le t\\le 15$.",
-      "Die Ungleichung $|2x-4|<3|x+1|$ Nach $x<-7$ or $x>\\dfrac15$.",
+      "Die Ungleichung $|2x-4|<3|x+1|$ Nach $x<-7$ oder $x>\\dfrac15$.",
       "Entwicklerflüssigkeitskühlungen gemäß $T(m)=24-0.4m$ (°C) nach $m$ Minuten) und müssen in $[18,22]$S- und S-S- und -S-S- $m\\in\\{6,7,\\ldots,14\\}$ ist nutzbar und keine andere ganze Minute ist.",
       "Die Ungleichung $\\dfrac{x^{2}-9}{x-2}\\ge 0$ hat die Lösungsmenge $[-3,2]\\cup[3,\\infty)$.",
       "Jeder Bienenstock nutzt $0.8$ kg des Öls bei 12 EUR/kg, 4 EUR/Holz und 1 EUR/Holz Bei einem Budget von 350 EUR und höchstens 40 kg Wachs auf Lager ist die maximale Anzahl von Rahmen weniger als 25."
@@ -2245,7 +2245,7 @@
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
       "An ice-rink resurfacer uses $W=40+2.5n$ Liter Wasser für $n$ passes und draws $3n$ kWh Leistung. Die Wassertankgrenze für Qualität ist $W\\le 180$und höchstens 150 kWh verwendet werden. Dann ist die größtmögliche ganze Anzahl von Durchgängen 56.",
-      "Die Ungleichung $|3-x|\\ge 2|x+1|$ Nach $x\\le -5$ or $x\\ge\\dfrac13$.",
+      "Die Ungleichung $|3-x|\\ge 2|x+1|$ Nach $x\\le -5$ oder $x\\ge\\dfrac13$.",
       "Die Tiefe eines Pools nach $t$ Minutenonne anderer $D(t)=0.3t$ metres. Filtering needs $D\\ge 0.9$ während das Überflussrisiko beginnt, wenn $D>2.1$Dann sind sichere Betriebszeiten genau $3\\le t\\le 7$.",
       "Die Ungleichung $\\dfrac{x-4}{x+1}\\le 2$ ist gleich wie $x\\in(-\\infty,-6]\\cup(-1,\\infty)$.",
       "Für jeden Zentrifugenlauf werden 2 Fläschchen mit 6 EUR verwendet, eine Rotorprüfung mit 5 EUR und 1,20 EUR Energie. Bei einem Budget von 400 EUR und 90 Fläschchen auf Lager liegt die maximale Durchlaufzahl unter 30."
@@ -2360,7 +2360,7 @@
     "statements": [
       "Eine Gezeitenturbine kann erzeugen, wenn Strömungsgeschwindigkeit $s$ satisfies $1.2\\le s\\le 3.5$ und in bezogen und $|s-2|\\ge 0.3$Dann jede Geschwindigkeit in $[1.2,3.5]$ ist zulässig.",
       ". . . $L$ Kilometer ist $P=0.05L^{2}$. Needing $P\\le 20$ und in bezogen und $L\\ge 8$ forces $8\\le L\\le 20$.",
-      "Die Ungleichung $|5-2x|>|x+4|$ Nach $x<\\dfrac13$ or $x>9$.",
+      "Die Ungleichung $|5-2x|>|x+4|$ Nach $x<\\dfrac13$ oder $x>9$.",
       "Jeder andere, $0.04$ : : : : und : : $0.06$ Um Lee m e bl e bl e bl e glas swerte bl re ll ll bl . bl e angesiedelte bl ig liver bl vom bl gläs bl il welchen bl gl V - bl umfassend mit strukturiert bl Dendden dnackddderssindddndd blndddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrndddrnddrnddrnddrnddrdddrnddsindddrdddrnddrdtrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrndrndrnddrndrantdrinkd ndrnddrnddrnddrnddrnddrinkdrnddrndddrubdrnddrnddrnddrnddrnddrnddrndddhrdrddrnddrnddrndnddrnd blrddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrnddrndd",
       "Die Ungleichung $\\dfrac{2x+1}{x-4}+3\\ge 0$ hat die Lösungsmenge $\\bigl(-\\infty,\\dfrac{11}{5}\\bigr]\\cup(4,\\infty)$."
     ],

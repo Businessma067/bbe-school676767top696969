@@ -128,6 +128,7 @@ export function WisoMathTasksPage() {
         loadChapterTasks={loadChapterTasks}
         getTheory={getTheory}
         storageKey="wiso.math.progress.v1"
+        contentLang={lang}
       />
     </div>
   );

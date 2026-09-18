@@ -149,6 +149,11 @@ type Props = {
   storageKey?: string;
   /** Optional theory provider (WiSo German guides). Defaults to BBE English theory. */
   getTheory?: (chapter: number) => MathCourseTheoryChapter | undefined;
+  /**
+   * Practice chrome language for verdict labels / statement table.
+   * WiSo Full Course uses German ("de" → Richtig/Falsch); BBE stays English.
+   */
+  contentLang?: "de" | "en";
 };
 
 export function MathTasksPage({
@@ -157,6 +162,7 @@ export function MathTasksPage({
   loadChapterTasks = loadMathChapterTasks,
   storageKey = STORAGE_KEY,
   getTheory = getMathCourseTheory,
+  contentLang = "en",
 }: Props) {
   const mathChapterHasTheory = (num: number) => getTheory(num) != null;
   const chapters = chaptersProp ?? MATH_CHAPTERS;
@@ -1092,6 +1098,7 @@ export function MathTasksPage({
                 onGraded={onGradedStable}
                 onResetProgress={onResetProgressStable}
                 onRetry={onRetryStable}
+                contentLang={contentLang}
               />
             ) : null}
           </div>
@@ -1160,6 +1167,7 @@ export function MathTasksPage({
               task={activeCase}
               index={activeIdx}
               onClose={() => setShowExplanations(false)}
+              contentLang={contentLang}
             />
           ) : null}
         </MathPracticeAside>
@@ -1878,24 +1886,46 @@ function AllExplanationsPanel({
   task,
   index,
   onClose,
+  contentLang = "en",
 }: {
   task: MathTask;
   index: number;
   onClose: () => void;
+  contentLang?: "de" | "en";
 }) {
   const letters = "ABCDEF";
+  const trueLabel = contentLang === "de" ? "Richtig" : "True";
+  const falseLabel = contentLang === "de" ? "Falsch" : "False";
   const body = [
     sharedSolutionOverview(task),
     "",
     ...task.statements.flatMap((_, i) => {
       const letter = letters[i] ?? String(i + 1);
-      const verdict = task.answer_key[i] ? "True" : "False";
+      const verdict = task.answer_key[i] ? trueLabel : falseLabel;
       let expl = (task.tactical_explanations[i] ?? "").trim();
       if (expl) {
-        // Always bind panel block i to statement i / answer_key[i], Ch4/Ch13 header.
-        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        // Always bind panel block i to statement i / answer_key[i].
+        // Strip EN or DE verdict headers so we never show True+Falsch twice.
+        expl = expl
+          .replace(
+            /^\*\*[A-F]\.\*\*\s*→\s*(?:True|False|Wahr|Falsch|Richtig)\s*/i,
+            "",
+          )
+          .trim();
         // Legacy Ch6 PDF headers: **A) full statement.**  (true)
-        expl = expl.replace(/^\*\*[A-F]\)[\s\S]*?\*\*\s*\((?:true|false)\)\s*/i, "").trim();
+        expl = expl
+          .replace(
+            /^\*\*[A-F]\)[\s\S]*?\*\*\s*\((?:true|false|wahr|falsch|richtig)\)\s*/i,
+            "",
+          )
+          .trim();
+        // Drop a leftover second verdict line if present
+        expl = expl
+          .replace(
+            /^(?:[A-F]\.\s*)?→\s*(?:True|False|Wahr|Falsch|Richtig)\s*\n+/i,
+            "",
+          )
+          .trim();
         return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
       }
       return [
@@ -1928,20 +1958,28 @@ function AllExplanationsPanel({
         </button>
       </div>
       <div className="practice-scroll min-h-0 flex-1 bg-card px-7 py-7 sm:px-9 sm:py-8 lg:overflow-y-auto">
-        <MathAnswerKeyTable answerKey={task.answer_key} />
+        <MathAnswerKeyTable answerKey={task.answer_key} contentLang={contentLang} />
         <MathProse text={body} />
       </div>
     </div>
   );
 }
 
-function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
+function MathAnswerKeyTable({
+  answerKey,
+  contentLang = "en",
+}: {
+  answerKey: boolean[];
+  contentLang?: "de" | "en";
+}) {
   const letters = "ABCDEF";
+  const trueLabel = contentLang === "de" ? "RICHTIG" : "TRUE";
+  const falseLabel = contentLang === "de" ? "FALSCH" : "FALSE";
 
   return (
     <section className="mb-8 overflow-x-auto border-b border-border/60 pb-7">
       <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
-        Answer key
+        {contentLang === "de" ? "Antwortschlüssel" : "Answer key"}
       </p>
       <table className="w-full min-w-[16rem] border-collapse border border-foreground/20 text-center text-[14px] shadow-sm">
         <thead>
@@ -1963,7 +2001,7 @@ function MathAnswerKeyTable({ answerKey }: { answerKey: boolean[] }) {
                 key={i}
                 className="border-border px-3 py-3 text-[13px] font-bold uppercase tracking-widest text-foreground"
               >
-                {isTrue ? "TRUE" : "FALSE"}
+                {isTrue ? trueLabel : falseLabel}
               </td>
             ))}
           </tr>
@@ -2057,6 +2095,7 @@ const MathTaskCard = memo(function MathTaskCard({
   requireAuth,
   reviewOnly = false,
   timerNote = null,
+  contentLang = "en",
 }: {
   task: MathTask;
   index: number;
@@ -2076,6 +2115,7 @@ const MathTaskCard = memo(function MathTaskCard({
   requireAuth?: () => boolean;
   reviewOnly?: boolean;
   timerNote?: string | null;
+  contentLang?: "de" | "en";
 }) {
   const calc = usePracticeCalcOptional();
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
@@ -2198,8 +2238,12 @@ const MathTaskCard = memo(function MathTaskCard({
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
           <span className="w-6 text-center">#</span>
-          <span className="flex-1">Statement</span>
-          <span className="w-11 text-center lg:w-14">True</span>
+          <span className="flex-1">
+            {contentLang === "de" ? "Aussage" : "Statement"}
+          </span>
+          <span className="w-11 text-center lg:w-14">
+            {contentLang === "de" ? "Richtig" : "True"}
+          </span>
           {checked && <span className="w-6" aria-hidden />}
         </li>
         {task.statements.map((stmt, i) => {
