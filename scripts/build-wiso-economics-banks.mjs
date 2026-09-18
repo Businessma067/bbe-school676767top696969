@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Remap BBE Fuhrmann economics cases into Wirtschaft verstehen subsections.
- * Leaves WiSo chapters 2 and 4 empty (no BBE counterpart).
+ * Preserves existing WiSo-native banks for chapters 2 and 4 when remap yields no rows.
  * Excludes BBE marketing (5.x). Reclassifies money/inflation into 1.4.
  */
 import fs from "node:fs";
@@ -148,6 +148,14 @@ for (const ch of [1, 2, 3, 4]) {
     return String(a.case_id).localeCompare(String(b.case_id), "en", { numeric: true });
   });
   const out = path.join(outDir, `economics-cases-ch${ch}.json`);
+  // WiSo-native content (e.g. Nachhaltigkeit / Digitalisierung) lives only in these files.
+  // Do not wipe it when the BBE remap contributes zero rows.
+  if ((ch === 2 || ch === 4) && rows.length === 0 && fs.existsSync(out)) {
+    const existing = JSON.parse(fs.readFileSync(out, "utf8"));
+    const n = Array.isArray(existing) ? existing.length : 0;
+    console.log(`ch${ch}: preserve native bank (${n} cases) → ${path.relative(root, out)}`);
+    continue;
+  }
   fs.writeFileSync(out, `${JSON.stringify(rows, null, 2)}\n`);
   console.log(`ch${ch}: ${rows.length} cases → ${path.relative(root, out)}`);
 }
