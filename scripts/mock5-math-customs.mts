@@ -1194,53 +1194,93 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Write $Z=u\\,v\\,w$ with $u=t^{2}$, $v=e^{-t}$, and $w=\\ln(2t+1)$. The three derivatives are
+Factor the engagement score as a product of three smooth pieces on $t>0$:
 
 $$
-u'=2t,\\qquad v'=-e^{-t},\\qquad w'=\\dfrac{2}{2t+1}
+Z(t)=u(t)\\,v(t)\\,w(t),\\qquad u(t)=t^{2},\\quad v(t)=e^{-t},\\quad w(t)=\\ln(2t+1).
 $$
 
-The three-factor product rule $Z'=u'vw+uv'w+uvw'$ then yields, after factoring $e^{-t}$,
+Differentiate each factor separately. The power rule yields $u'(t)=2t$. The exponential chain rule yields $v'(t)=-e^{-t}$. For the logarithm, the inner derivative of $2t+1$ is $2$, so
 
 $$
-Z'=e^{-t}\\left(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\right)
+w'(t)=\\dfrac{1}{2t+1}\\cdot 2=\\dfrac{2}{2t+1}.
 $$
 
-which matches the claimed formula for all $t>0$.
+Expand the three-factor product rule $Z'=u'vw+uv'w+uvw'$ before combining anything:
+
+$$
+u'vw=2t\\cdot e^{-t}\\cdot\\ln(2t+1),
+$$
+
+$$
+uv'w=t^{2}\\cdot\\bigl(-e^{-t}\\bigr)\\cdot\\ln(2t+1)=-t^{2}e^{-t}\\ln(2t+1),
+$$
+
+$$
+uvw'=t^{2}\\cdot e^{-t}\\cdot\\dfrac{2}{2t+1}=e^{-t}\\cdot\\dfrac{2t^{2}}{2t+1}.
+$$
+
+Every summand carries a factor $e^{-t}$. Pull that common factor out to obtain
+
+$$
+Z'(t)=e^{-t}\\Biggl(2t\\ln(2t+1)-t^{2}\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}\\Biggr).
+$$
+
+The right-hand side is exactly the formula in the claim, and each step used only identities that hold for every $t>0$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-For every $t>0$ check the three factors of $Z$ separately. First $t^{2}>0$ because $t\\neq 0$. Second $e^{-t}>0$ for all real $t$. Third $2t+1>1$, so $\\ln(2t+1)>\\ln 1=0$. The product of three strictly positive quantities is strictly positive, hence $Z(t)>0$ on the whole half-line $(0,+\\infty)$.
+On $t>0$ each factor of $Z$ is strictly positive: $t^{2}>0$, the exponential $e^{-t}$ never vanishes, and $2t+1>1$ forces $\\ln(2t+1)>0$. A product of three positive quantities stays positive.
 
 So the statement is True.`,
 
     `**C.** → True
 
-From letter A one may write $Z'(t)=e^{-t}\\cdot B(t)$ where $B$ is the displayed bracket. For every real $t$ the factor $e^{-t}$ is strictly positive. Multiplying $B(t)$ by a positive number cannot reverse the inequality $B(t)>0$ or $B(t)<0$, so $e^{-t}$ does not change the sign of $Z'$ on $t>0$.
+Letter A already wrote $Z'(t)=e^{-t}\\,B(t)$ with $B$ the displayed bracket. Because $e^{-t}>0$ for every real argument, multiplying by that factor cannot turn a positive bracket into a negative derivative or a negative bracket into a positive one. The signs of $Z'$ and of $B$ therefore agree throughout $t>0$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Evaluate the bracket of letter A at $t=1$:
+Strict decrease on $(0,+\\infty)$ would require $Z'(t)\\le 0$ at every point of that half-line. Test the bracket from letter A at the convenient interior point $t=1$:
 
 $$
-B(1)=2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}
+B(1)=2\\cdot 1\\cdot\\ln(2\\cdot 1+1)-1^{2}\\ln 3+\\dfrac{2\\cdot 1^{2}}{2\\cdot 1+1}.
 $$
 
-Since $\\ln 3>0$, one has $B(1)>0$, and with $e^{-1}>0$ this forces $Z'(1)>0$. A positive derivative at $t=1$ means $Z$ is locally increasing there, so $Z$ cannot be strictly decreasing on the whole $(0,+\\infty)$.
+Simplify term by term:
+
+$$
+2\\ln 3-\\ln 3+\\dfrac{2}{3}=\\ln 3+\\dfrac{2}{3}.
+$$
+
+Since $\\ln 3>0$, the sum $\\ln 3+\\tfrac{2}{3}$ is strictly positive. Multiplying by the positive factor $e^{-1}$ keeps
+
+$$
+Z'(1)=e^{-1}\\Bigl(\\ln 3+\\dfrac{2}{3}\\Bigr)>0.
+$$
+
+A positive derivative at an interior point means $Z$ is locally increasing there. That single counterexample already kills the claim that $Z$ is strictly decreasing on the whole half-line; there is no need to chart the full sign of $B$.
 
 So the statement is False.`,
 
     `**E.** → True
 
-As $t\\to+\\infty$, the polynomial–logarithmic growth of $t^{2}\\ln(2t+1)$ is dominated by the exponential decay of $e^{-t}$. More formally, standard growth-versus-decay limits give $t^{2}\\ln(2t+1)\\,e^{-t}\\to 0$ (exponential beats any polynomial times a slow log). Therefore
+Group the decaying exponential against the growing factors:
 
 $$
-\\lim_{t\\to +\\infty}Z(t)=0
+Z(t)=\\bigl(t^{2}\\ln(2t+1)\\bigr)\\,e^{-t}.
 $$
+
+As $t\\to+\\infty$ the product $t^{2}\\ln(2t+1)$ diverges, but only polynomially times a slow logarithm. Exponential growth dominates every such product, which is the standard comparison
+
+$$
+\\dfrac{t^{2}\\ln(2t+1)}{e^{t}}\\to 0.
+$$
+
+Hence $Z(t)\\to 0$, matching the claimed limit.
 
 So the statement is True.`,
   ];
@@ -1292,73 +1332,97 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Ana wins the match in exactly two games only by sweeping both games (score $2$–$0$). Independence of the games gives
+Ana wins in exactly two games only by sweeping both. Independence multiplies:
 
 $$
-P(\\text{Ana sweeps})=p^{2}=\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{4}{9}
+P(\\text{Ana }2\\text{–}0)=p^{2}=\\left(\\dfrac{2}{3}\\right)^{2}=\\dfrac{4}{9}.
 $$
-
-No other two-game path awards the match to Ana (a split would force a third game). So the probability is exactly $\\dfrac{4}{9}$.
 
 So the statement is True.`,
 
     `**B.** → True
 
-A third game is needed precisely when the first two games are split one–one. The two mutually exclusive orders are Ana-then-Ben and Ben-then-Ana:
+A third game is needed exactly when the first two games split. The ordered splits Ana–Ben and Ben–Ana are mutually exclusive:
 
 $$
-P(\\text{split})=pq+qp=2pq
+P(\\text{AB})=pq=\\dfrac{2}{3}\\cdot\\dfrac{1}{3}=\\dfrac{2}{9},
 $$
 
 $$
-2pq=2\\cdot\\dfrac{2}{3}\\cdot\\dfrac{1}{3}=\\dfrac{4}{9}
+P(\\text{BA})=qp=\\dfrac{1}{3}\\cdot\\dfrac{2}{3}=\\dfrac{2}{9}.
 $$
 
-so the match lasts exactly three games with probability $\\dfrac{4}{9}$.
+Add them:
+
+$$
+P(\\text{exactly three games})=\\dfrac{2}{9}+\\dfrac{2}{9}=\\dfrac{4}{9}=2pq.
+$$
+
+That is the claimed probability.
 
 So the statement is True.`,
 
     `**C.** → False
 
-Ana’s overall match-win probability includes the $2$–$0$ sweep and the $2$–$1$ paths:
+Ana wins the match either $2$–$0$ or $2$–$1$. The sweep probability is $p^{2}$ from letter A. For a $2$–$1$ win she must split the first two games and then take the decider. The two split orders each contribute a factor $p^{2}q$:
 
 $$
-P(\\text{Ana wins match})=p^{2}+2p^{2}q=p^{2}(1+2q)
+P(\\text{Ana }2\\text{–}1)=P(\\text{ABA})+P(\\text{BAA})=pqp+qpp=2p^{2}q.
+$$
+
+Add the two mutually exclusive ways she takes the match:
+
+$$
+P(\\text{Ana wins})=p^{2}+2p^{2}q=p^{2}(1+2q).
+$$
+
+Substitute $p=\\tfrac{2}{3}$ and $q=\\tfrac{1}{3}$:
+
+$$
+p^{2}=\\dfrac{4}{9},\\qquad 1+2q=1+\\dfrac{2}{3}=\\dfrac{5}{3},
 $$
 
 $$
-=\\dfrac{4}{9}\\left(1+\\dfrac{2}{3}\\right)=\\dfrac{4}{9}\\cdot\\dfrac{5}{3}=\\dfrac{20}{27}
+P(\\text{Ana wins})=\\dfrac{4}{9}\\cdot\\dfrac{5}{3}=\\dfrac{20}{27}.
 $$
 
-Compare with $\\dfrac{2}{3}=\\dfrac{18}{27}$: the match-win probability is larger. The trap is confusing Ana’s per-game win probability $p=\\tfrac{2}{3}$ with her match-win probability.
+Compare with the claimed value:
+
+$$
+\\dfrac{2}{3}=\\dfrac{18}{27}\\neq\\dfrac{20}{27}.
+$$
+
+The figure $\\tfrac{2}{3}$ is only Ana’s single-game win probability. A best-of-three amplifies the stronger player, so her match-win probability is larger than $p$. The equality claim therefore fails.
 
 So the statement is False.`,
 
     `**D.** → True
 
-Conditional on lasting three games, the first two games must already be split $1$–$1$. The third game then decides the match alone. Ana wins that deciding game with her ordinary game-win probability
-
-$$
-p=\\dfrac{2}{3}
-$$
-
-Equivalently, $P(\\text{Ana wins}\\mid\\text{three games})=p$, which matches the claim exactly.
+Condition on lasting three games: the score after two games is already $1$–$1$. The third game alone decides the match, and Ana wins that game with probability $p=\\tfrac{2}{3}$. The conditional match-win probability therefore equals her ordinary game-win probability.
 
 So the statement is True.`,
 
     `**E.** → True
 
-The match ends in two games when either player sweeps:
+A two-game ending means someone swept. Ana’s sweep has probability $p^{2}=\\tfrac{4}{9}$; Ben’s sweep has probability
 
 $$
-P(\\text{ends in two})=p^{2}+q^{2}
+q^{2}=\\left(\\dfrac{1}{3}\\right)^{2}=\\dfrac{1}{9}.
 $$
 
+These outcomes are disjoint, so
+
 $$
-=\\left(\\dfrac{2}{3}\\right)^{2}+\\left(\\dfrac{1}{3}\\right)^{2}=\\dfrac{4}{9}+\\dfrac{1}{9}=\\dfrac{5}{9}
+P(\\text{ends in two games})=p^{2}+q^{2}=\\dfrac{4}{9}+\\dfrac{1}{9}=\\dfrac{5}{9}.
 $$
 
-Alternatively, this is the complement of the three-game probability $\\tfrac{4}{9}$ from letter B, since $1-\\tfrac{4}{9}=\\tfrac{5}{9}$.
+As a check, letter B gave $P(\\text{three games})=\\tfrac{4}{9}$, and every match ends in either two or three games, hence the complement is
+
+$$
+1-\\dfrac{4}{9}=\\dfrac{5}{9},
+$$
+
+the same answer.
 
 So the statement is True.`,
   ];
@@ -1399,71 +1463,101 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-For $X\\sim\\mathrm{Bin}(n,p)$ with $n=50$ and $p=0.4$, apply the standard mean and variance formulas separately:
+For $X\\sim\\mathrm{Bin}(n,p)$ one has $E[X]=np$ and $\\mathrm{Var}(X)=np(1-p)$. With $n=50$ and $p=0.4$,
 
 $$
-E[X]=np=50\\cdot 0.4=20
+E[X]=50\\cdot 0.4=20,
 $$
 
 $$
-\\mathrm{Var}(X)=np(1-p)=50\\cdot 0.4\\cdot 0.6=50\\cdot 0.24=12
+\\mathrm{Var}(X)=50\\cdot 0.4\\cdot 0.6=50\\cdot 0.24=12.
 $$
 
-Both claimed figures match the formulas exactly, so the joint claim holds.
+Both halves of the claim match.
 
 So the statement is True.`,
 
     `**B.** → True
 
-From letter A, $\\mathrm{Var}(X)=12$, so the standard deviation is
+Letter A produced $\\mathrm{Var}(X)=12$, so
 
 $$
-\\mathrm{SD}(X)=\\sqrt{12}=2\\sqrt{3}
+\\mathrm{SD}(X)=\\sqrt{12}=\\sqrt{4\\cdot 3}=2\\sqrt{3}.
 $$
 
-Compare squares to sandwich the square root between $3$ and $4$:
+To place $2\\sqrt{3}$ between $3$ and $4$ without a calculator, compare squares. The square-root function is increasing on $[0,+\\infty)$, therefore
 
 $$
-3^{2}=9<12<16=4^{2}
+3<2\\sqrt{3}<4\\qquad\\Longleftrightarrow\\qquad 9<12<16.
 $$
 
-Taking positive square roots preserves the inequalities, hence $3<2\\sqrt{3}<4$ as claimed.
+The middle inequality is immediate from $3^{2}=9$ and $4^{2}=16$. Hence
+
+$$
+3<\\mathrm{SD}(X)<4,
+$$
+
+which is exactly the claimed sandwich.
 
 So the statement is True.`,
 
     `**C.** → False
 
-Letter A already computed $\\mathrm{Var}(X)=np(1-p)=12$. The figure $20$ appearing in the claim is the mean $E[X]=np$, not the variance. Confusing mean with variance is the classic binomial trap here — the variance equals $12$, not $20$, so the statement is wrong.
+The variance is $np(1-p)=12$, not $20$. The number $20$ is the mean $np$; swapping mean for variance is the trap.
 
 So the statement is False.`,
 
     `**D.** → True
 
-The sample proportion is $\\hat{p}=X/n=X/50$. Scaling a random variable by $1/n$ scales variance by $1/n^{2}$, which rearranges to the usual Bernoulli-proportion formula
+The sales rate is the scaled binomial $\\hat{p}=X/50$. Variance scales by the square of the constant:
 
 $$
-\\mathrm{Var}(\\hat{p})=\\dfrac{p(1-p)}{n}=\\dfrac{0.4\\cdot 0.6}{50}=\\dfrac{0.24}{50}=0.0048
+\\mathrm{Var}\\!\\left(\\dfrac{X}{50}\\right)=\\dfrac{1}{50^{2}}\\mathrm{Var}(X)=\\dfrac{12}{2500}=0.0048.
 $$
 
-matching the claim exactly.
+The Bernoulli-proportion formula recovers the same figure in one step:
+
+$$
+\\mathrm{Var}(\\hat{p})=\\dfrac{p(1-p)}{n}=\\dfrac{0.4\\cdot 0.6}{50}=\\dfrac{0.24}{50}=0.0048.
+$$
 
 So the statement is True.`,
 
     `**E.** → True
 
-Take the positive square root of the variance from letter D:
+From letter D the variance of the sales rate is already known:
 
 $$
-\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}
+\\mathrm{Var}(\\hat{p})=0.0048.
 $$
 
-Numerically $\\sqrt{0.0049}=0.07$ and $0.0048<0.0049$, so
+The standard deviation is the positive square root of that variance:
 
 $$
-\\sqrt{0.0048}\\approx 0.0693<0.1
+\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}.
 $$
 
-The standard deviation of the sales rate is therefore strictly less than $0.1$.
+The claim asks only for a comparison with $0.1$, not for a decimal expansion. Square both sides of the proposed inequality $\\sqrt{0.0048}<0.1$: because both sides are positive, the inequality is equivalent to
+
+$$
+0.0048<0.1^{2}=0.01.
+$$
+
+The numerical comparison $0.0048<0.01$ is immediate, so $\\mathrm{SD}(\\hat{p})<0.1$ follows at once.
+
+For a sharper picture one can also sandwich the square root against $0.07$. Compute
+
+$$
+0.07^{2}=0.0049.
+$$
+
+Since $0.0048<0.0049$, taking positive square roots yields $\\sqrt{0.0048}<0.07$. Chaining with $0.07<0.1$ then gives
+
+$$
+\\mathrm{SD}(\\hat{p})=\\sqrt{0.0048}<0.07<0.1.
+$$
+
+Either route — the direct comparison with $0.01$, or the tighter sandwich through $0.07$ — confirms that the sales-rate standard deviation sits strictly below one-tenth.
 
 So the statement is True.`,
   ];
