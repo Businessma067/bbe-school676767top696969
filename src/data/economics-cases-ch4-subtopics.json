@@ -1277,35 +1277,6 @@
   },
   {
     "subsection": "4.3",
-    "case_id": "CASE 4.3.20",
-    "title": "Listed Retail Corporation and Investor Gains",
-    "context": "Consider a retail corporation whose shares jumped in price after strong holiday sales reports, while the firm made no new share issue. Evaluate the following economic assertions:",
-    "statements": [
-      "The holiday price surge increased the corporation's registered share capital by the full market value of the rise.",
-      "Existing shareholders who sold during the surge transferred their voting rights to the corporation itself.",
-      "Higher prices after issue reflect changed demand and supply among investors trading existing shares.",
-      "The corporation must issue bonus shares equal to every euro of secondary-market price increase.",
-      "Shareholders who sold at higher prices realise capital gains; the issuer does not receive those trading proceeds."
-    ],
-    "answer_key": [
-      false,
-      false,
-      true,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "A holiday-driven price jump on already issued shares does not raise the corporation's registered share capital by the full market value of that surge on the exchange.\n\nSo the statement is False.",
-      "Shareholders who sell during the surge transfer voting rights to the buyers of their stock, not back to the corporation as if the firm collected those votes for itself.\n\nSo the statement is False.",
-      "After issue, prices move with investor demand and supply for the shares already outstanding. Strong holiday results can shift that balance without any new equity leaving the treasury.\n\nThe retailer's secondary quote therefore reflects trading among investors, not a fresh capital subscription recorded as share capital for the issuer.\n\nSo the statement is True.",
-      "No rule forces the corporation to issue bonus shares equal to every euro of secondary-market price increase. Issuers are not obliged to match market moves with free stock.\n\nSo the statement is False.",
-      "Shareholders who sold at the higher prices realise capital gains for themselves. The issuer does not receive those secondary trading proceeds as corporate cash.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
     "case_id": "CASE 4.3.22",
     "title": "Misconceptions About Corporate Listing",
     "context": "Review optional stock-exchange listing and its implications for corporate finance and governance. Evaluate the following economic assertions:",

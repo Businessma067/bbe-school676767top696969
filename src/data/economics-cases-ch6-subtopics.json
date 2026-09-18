@@ -241,36 +241,6 @@
   },
   {
     "subsection": "6.1",
-    "case_id": "CASE 6.1.011",
-    "title": "Two-Year Balance Sheet Review 11",
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 400 | 402 |\n| Machinery | 268 | 276 |\n| Office equipment | 69 | 72 |\n| Patents, trademarks and licences | 54 | 54 |\n| Inventory | 147 | 152 |\n| Trade receivables | 144 | 160 |\n| Cash and cash equivalents | 112 | 131 |\n| Total assets | **1194** | **1247** |\n| **EQUITY** | | |\n| Share capital | 124 | 124 |\n| Retained earnings | 400 | 426 |\n| Total equity | **524** | **550** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 357 | 374 |\n| Bonds payable | 71 | 73 |\n| Trade payables | 165 | 163 |\n| Bank overdraft | 77 | 87 |\n| Total liabilities | **670** | **697** |\n| Total equity and liabilities | **1194** | **1247** |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Long-term assets should preferably be financed only with short-term trade credit.",
-      "Retained earnings grew faster than total equity as a whole between Year 1 and Year 2.",
-      "Total equity grew by more than 16.9% between Year 1 and Year 2.",
-      "Total assets grew by more than 16.5% between Year 1 and Year 2.",
-      "Inventory grew by more than 21.8% between Year 1 and Year 2."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Long-term assets should be matched with long-term finance. Funding them only with short-term trade credit creates a maturity mismatch. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is False.",
-      "Compare percentage growth in retained earnings with percentage growth in total equity over the same two years.\n\n$$\n\\text{RE}_{\\text{Y1}} = 400, \\quad \\text{RE}_{\\text{Y2}} = 426\n$$\n\n$$\n\\text{RE growth} = 6.5\\%,\\quad \\text{Equity growth} = 5.0\\%\n$$\n\n$$\n\\text{Equity}_{\\text{Y1}} = 524, \\quad \\text{Equity}_{\\text{Y2}} = 550\n$$\n\nRE growth ≈ 6.5%; equity growth ≈ 5.0%. RE does outpace equity. Equity is the owners’ residual claim after liabilities. Dividends and share issues are financing events, not operating sales. Read that way, the statement is correct.\n\nSo the statement is True.",
-      "Percentage growth for Total equity is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 524, Y_2 = 550\n$$\n\n$$\nY_2 - Y_1 = 550 - 524 = 26\n$$\n\n$$\n\\frac{26}{524} \\approx 0.0496 \\approx 5.0\\%\n$$\n\n$$\n5.0\\% \\le 16.9\\%\n$$\n\nTotal equity changed by 5.0%, at or below the 16.9% threshold claimed.\n\nSo the statement is False.",
-      "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}194, Y_2 = 1{,}247\n$$\n\n$$\nY_2 - Y_1 = 1{,}247 - 1{,}194 = 53\n$$\n\n$$\n\\frac{53}{1{,}194} \\approx 0.0444 \\approx 4.4\\%\n$$\n\n$$\n4.4\\% \\le 16.5\\%\n$$\n\nTotal assets changed by 4.4%, at or below the 16.5% threshold claimed.\n\nSo the statement is False.",
-      "Percentage growth for Inventory is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 147, Y_2 = 152\n$$\n\n$$\nY_2 - Y_1 = 152 - 147 = 5\n$$\n\n$$\n\\frac{5}{147} \\approx 0.0340 \\approx 3.4\\%\n$$\n\n$$\n3.4\\% \\le 21.8\\%\n$$\n\nInventory changed by 3.4%, at or below the 21.8% threshold claimed. Inventory runs 147 → 152 across the two years. Percentage change ≈ 3.4%, while the claim wants growth above 21.8%. 3.4% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1. Always read the extract’s own line labels before comparing the threshold.\n\nSo the statement is False."
-    ]
-  },
-  {
-    "subsection": "6.1",
     "case_id": "CASE 6.1.012",
     "title": "Tangible Non-Current Assets",
     "context": "Analyze how intangible assets qualify as non-current assets despite lacking physical substance. Evaluate the following economic assertions:\n",
@@ -477,36 +447,6 @@
       "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 353 + 56,\\quad \\text{NCL} = 409,\\quad \\text{Equity} = 340\n$$\n\n$$\n\\frac{409}{340} \\approx 1.2029 \\approx 120.3\\%\n$$\n\n$$\n120.3\\% > 56.5\\%\n$$\n\nYear-2 NCL/equity is 120.3%, above the 56.5% claim.\n\nSo the statement is True.",
       "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{400}{275} \\approx 1.4545\n$$\n\nYear 2 cover ≈ 1.45 times (400 ÷ 275). Less than 1.83 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend.\n\nSo the statement is True.",
       "Obligations due within a year sit among current liabilities. Trade payables to suppliers normally meet that timing test. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
-    ]
-  },
-  {
-    "subsection": "6.1",
-    "case_id": "CASE 6.1.019",
-    "title": "Gearing From Comparative Figures 19",
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 463 | 483 |\n| Machinery | 269 | 282 |\n| Office equipment | 39 | 42 |\n| Patents, trademarks and licences | 93 | 93 |\n| Inventory | 212 | 239 |\n| Trade receivables | 109 | 131 |\n| Cash and cash equivalents | 78 | 77 |\n| Total assets | **1263** | **1347** |\n| **EQUITY** | | |\n| Share capital | 203 | 203 |\n| Retained earnings | 410 | 417 |\n| Total equity | **613** | **620** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 297 | 345 |\n| Bonds payable | 70 | 80 |\n| Trade payables | 204 | 216 |\n| Bank overdraft | 79 | 86 |\n| Total liabilities | **650** | **727** |\n| Total equity and liabilities | **1263** | **1347** |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.",
-      "Non-current liabilities amount to more than 50.2% of total equity in Year 1.",
-      "Non-current liabilities amount to less than 107.9% of total equity in Year 2.",
-      "Non-current assets make up more than 61.1% of total assets in Year 2.",
-      "Current liabilities are covered by current assets less than 1.57 times over in Year 2."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Assets always equal liabilities plus equity, the sheet is an identity. Any asset increase is matched by a claim or equity increase (or another asset decrease).\n\nSo the statement is True.",
-      "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 297 + 70,\\quad \\text{NCL} = 367,\\quad \\text{Equity} = 613\n$$\n\n$$\n\\frac{367}{613} \\approx 0.5987 \\approx 59.9\\%\n$$\n\n$$\n59.9\\% > 50.2\\%\n$$\n\nYear-2 NCL/equity is 59.9%, above the 50.2% claim. Year 1 NCL 367 vs equity 613 → 59.9%. More than 50.2%? 59.9% yes. Non-current liabilities usually combine the long-term loan and bonds lines. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is True.",
-      "Year 2 NCL 425 vs equity 620 → 68.5%.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 345 + 80,\\quad \\text{NCL} = 425,\\quad \\text{Equity} = 620\n$$\n\n$$\n\\frac{425}{620} \\approx 0.6855 \\approx 68.5\\%\n$$\n\n$$\n68.5\\% < 107.9\\%\n$$\n\nYear-2 NCL/equity is 68.5%, below the 107.9% claim.\n\nSo the statement is True.",
-      "From the extract, Non-current assets = 900 and total assets in Year 2 = 1,347.\n\n$$\n\\text{Share} = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\n\\text{Share} = \\frac{900}{1{,}347}\n$$\n\n$$\n\\text{Share} = 66.8\\%\n$$\n\nNon-current assets / total assets in Year 2 ≈ 900 ÷ 1,347 = 66.8%. More than 61.1% is true here. Composition shares are plain part ÷ whole from the extract.\n\nSo the statement is True.",
-      "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{447}{302} \\approx 1.4801\n$$\n\nYear 2 cover ≈ 1.48 times (447 ÷ 302). Less than 1.57 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. A times reading of the extract supports this claim. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True."
     ]
   },
   {
@@ -2281,36 +2221,6 @@
   },
   {
     "subsection": "6.3",
-    "case_id": "CASE 6.3.008",
-    "title": "Two-Year Balance Sheet Review 8",
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following two-year balance sheet (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Year 1 | Year 2 |\n| --- | ---: | ---: |\n| **ASSETS** | | |\n| Buildings | 486 | 532 |\n| Machinery | 185 | 214 |\n| Office equipment | 63 | 71 |\n| Patents, trademarks and licences | 84 | 84 |\n| Inventory | 152 | 182 |\n| Trade receivables | 98 | 103 |\n| Cash and cash equivalents | 117 | 126 |\n| Total assets | **1185** | **1312** |\n| **EQUITY** | | |\n| Share capital | 100 | 100 |\n| Retained earnings | 500 | 554 |\n| Total equity | **600** | **654** |\n| **LIABILITIES** | | |\n| Long-term bank loan | 221 | 253 |\n| Bonds payable | 87 | 95 |\n| Trade payables | 201 | 228 |\n| Bank overdraft | 76 | 82 |\n| Total liabilities | **585** | **658** |\n| Total equity and liabilities | **1185** | **1312** |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.",
-      "Total assets grew by more than 10.6% between Year 1 and Year 2.",
-      "Non-current liabilities amount to less than 80.2% of total equity in Year 2.",
-      "Non-current assets make up more than 61.8% of total assets in Year 2.",
-      "Current liabilities are covered by current assets less than 2.01 times over in Year 2."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. A equity reading of the extract supports this claim.\n\nSo the statement is True.",
-      "Percentage growth for Total assets is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 1{,}185, Y_2 = 1{,}312\n$$\n\n$$\nY_2 - Y_1 = 1{,}312 - 1{,}185 = 127\n$$\n\n$$\n\\frac{127}{1{,}185} \\approx 0.1072 \\approx 10.7\\%\n$$\n\n$$\n10.7\\% > 10.6\\%\n$$\n\nTotal assets rose or fell by 10.7%, clearing the 10.6% hurdle in the statement.\n\nSo the statement is True.",
-      "NCL-to-equity share = non-current liabilities ÷ total equity.\n\n$$\n\\text{NCL share} = \\frac{\\text{non-current liabilities}}{\\text{total equity}}\n$$\n\n$$\n\\text{NCL} = 253 + 95,\\quad \\text{NCL} = 348,\\quad \\text{Equity} = 654\n$$\n\n$$\n\\frac{348}{654} \\approx 0.5321 \\approx 53.2\\%\n$$\n\n$$\n53.2\\% < 80.2\\%\n$$\n\nYear-2 NCL/equity is 53.2%, below the 80.2% claim. Year 2 NCL 348 vs equity 654 → 53.2%. Less than 80.2%? 53.2% yes. Non-current liabilities usually combine the long-term loan and bonds lines. Equity is the owners’ residual claim after liabilities.\n\nSo the statement is True.",
-      "From the extract, Non-current assets = 901 and total assets in Year 2 = 1,312.\n\n$$\n\\text{Share} = \\frac{\\text{Non-current assets}}{\\text{total assets in Year 2}}\n$$\n\n$$\n\\text{Share} = \\frac{901}{1{,}312}\n$$\n\n$$\n\\text{Share} = 68.7\\%\n$$\n\nNon-current assets / total assets in Year 2 ≈ 901 ÷ 1,312 = 68.7%. More than 61.8% is true here. Composition shares are plain part ÷ whole from the extract. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
-      "This is the Year 2 current ratio read as coverage of current liabilities.\n\n$$\n\\frac{411}{310} \\approx 1.3258\n$$\n\nYear 2 cover ≈ 1.33 times (411 ÷ 310). Less than 2.01 times holds. Cover below one signals current liabilities larger than current assets. Physical appearance alone does not choose the line. On the chapter test the wording is accepted.\n\nSo the statement is True."
-    ]
-  },
-  {
-    "subsection": "6.3",
     "case_id": "CASE 6.3.010",
     "title": "Comparing Results Across Several Years in Practice",
     "context": "Analyze why non-current assets are best matched with equity and non-current liabilities rather than short-term credit. Evaluate the following economic assertions:\n",
@@ -2457,36 +2367,6 @@
       "The income statement tracks the period; the balance sheet freezes amounts at a moment. With that split the claim is fine. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
       "Percentage growth for Trade payables is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{growth} = \\frac{Y_2 - Y_1}{Y_1}\n$$\n\n$$\nY_1 = 211, Y_2 = 231\n$$\n\n$$\nY_2 - Y_1 = 231 - 211 = 20\n$$\n\n$$\n\\frac{20}{211} \\approx 0.0948 \\approx 9.5\\%\n$$\n\n$$\n9.5\\% \\le 17.6\\%\n$$\n\nTrade payables changed by 9.5%, at or below the 17.6% threshold claimed. Trade payables runs 211 → 231 across the two years. Percentage change ≈ 9.5%, while the claim wants growth above 17.6%. 9.5% misses that hurdle. Year-on-year growth is (Year 2 − Year 1) ÷ Year 1. How the item is held and for how long decides the balance-sheet line. A payables reading of the extract breaks this claim.\n\nSo the statement is False.",
       "Percentage growth for Cash and cash equivalents is (Year 2 − Year 1) ÷ Year 1.\n\n$$\n\\text{decline} = \\frac{Y_1 - Y_2}{Y_1}\n$$\n\n$$\nY_1 = 103, Y_2 = 113\n$$\n\n$$\nY_1 - Y_2 = 103 - 113 = -10\n$$\n\n$$\n\\frac{-10}{103} \\approx -0.0971 \\approx -9.7\\%\n$$\n\n$$\n-9.7\\% \\le 12.1\\%\n$$\n\nCash and cash equivalents changed by 9.7%, at or below the 12.1% threshold claimed. Once the item is placed on the correct line, this assertion fails. Balance-sheet lines are read from the reporter’s purpose, not from generic labels.\n\nSo the statement is False."
-    ]
-  },
-  {
-    "subsection": "6.3",
-    "case_id": "CASE 6.3.017",
-    "title": "Return and Cash Flow Extract 17",
-    "difficulty_level": "4/5",
-    "tier": "full",
-    "half": "table",
-    "context": "Consider the following combined extracts (in € thousands) for a business whose identity is not disclosed.\n\n| € in thousands | Amount |\n| --- | ---: |\n| **ASSETS** | |\n| Buildings | 329 |\n| Machinery | 139 |\n| Office equipment | 76 |\n| Patents, trademarks and licences | 79 |\n| Inventory | 257 |\n| Trade receivables | 104 |\n| Cash and cash equivalents | 87 |\n| Total assets | **1071** |\n| **EQUITY** | |\n| Share capital | 126 |\n| Retained earnings | 382 |\n| Total equity | **508** |\n| **LIABILITIES** | |\n| Long-term bank loan | 283 |\n| Bonds payable | 55 |\n| Trade payables | 197 |\n| Bank overdraft | 28 |\n| Total liabilities | **563** |\n| Total equity and liabilities | **1071** |\n\n| Income statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Operating result | 171 |\n\n| Cash flow statement extract (€ thousands) | Amount |\n| --- | ---: |\n| Cash flow from operating activities | 186 |\n| Cash flow from investing activities | (280) |\n| Cash flow from financing activities | 77 |\n\nEvaluate the following economic assertions:\n",
-    "statements": [
-      "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.",
-      "Return on equity, the operating result taken as a percentage of total equity, exceeds 31.3%.",
-      "Inventory make up more than 10.2% of total assets.",
-      "Working capital is positive on this extract.",
-      "Cash flow from investing activities was an outflow this year."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Cash-flow headings split operating, investing, and financing. Operating = trading cycle; investing = long-term assets; financing = owners and lenders. On that map the assertion is sound. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
-      "Owners hold the residual claim once creditors are covered. Dividends and share issues are financing events, not operating sales. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
-      "From the extract, Inventory = 257 and total assets = 1,071.\n\n$$\n\\text{Share} = \\frac{\\text{Inventory}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{257}{1{,}071}\n$$\n\n$$\n\\text{Share} = 24.0\\%\n$$\n\nInventory / total assets ≈ 257 ÷ 1,071 = 24.0%. More than 10.2% is true here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet. Physical appearance alone does not choose the line. On the chapter test the wording is accepted. Short-term claims belong with current liabilities; long-dated borrowings stay non-current.\n\nSo the statement is True.",
-      "Read the claim against the chapter rule: Working capital is positive on this extract. Test classification, measurement, or the stated comparison on its own terms. That reading makes the assertion hold. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash.\n\nSo the statement is True.",
-      "Operating = trading cycle; investing = long-term assets; financing = owners and lenders. Settlement timing and intended use matter more than physical shape for the item.\n\nSo the statement is True."
     ]
   },
   {
@@ -4198,36 +4078,6 @@
       "Debt ratio = debt ÷ total assets.\n\n$$\n\\text{Debt ratio} = \\frac{\\text{debt}}{\\text{total assets}}\n$$\n\n$$\n\\text{Debt} = 512,\\quad \\text{Total assets} = 1{,}197\n$$\n\n$$\n\\frac{512}{1{,}197} \\approx 0.4277 \\approx 42.8\\%\n$$\n\n$$\n42.8\\% < 54.7\\%\n$$\n\nThe debt ratio is 42.8%, below the 54.7% benchmark. Debt ratio ≈ 512 ÷ 1,197 = 42.8%. Claim: exceeds 54.7%. 42.8% does not fit. The debt ratio places debt against total assets. Financing structure is read from that percentage, not from a single euro line alone. Read the claim against the chapter rule: The debt ratio exceeds 54.7%.\n\nSo the statement is False.",
       "From the extract, Buildings = 471 and total assets = 1,197.\n\n$$\n\\text{Share} = \\frac{\\text{Buildings}}{\\text{total assets}}\n$$\n\n$$\n\\text{Share} = \\frac{471}{1{,}197}\n$$\n\n$$\n\\text{Share} = 39.3\\%\n$$\n\nBuildings / total assets ≈ 471 ÷ 1,197 = 39.3%. More than 44.2% is false here. Composition shares are plain part ÷ whole from the extract. Watch whether the stem points at Year 1, Year 2, or a single sheet.\n\nSo the statement is False."
     ]
-  },
-  {
-    "subsection": "6.5",
-    "case_id": "CASE 6.5.022",
-    "title": "The Acid-Test Liquidity Check Explained",
-    "context": "Analyze why applying ratio benchmarks drawn from an unrelated industry can mislead rather than inform. Evaluate the following economic assertions:\n",
-    "statements": [
-      "A business carrying large seasonal inventories can show a materially lower acid-test ratio than its current ratio would suggest, even when its overall liquidity position is otherwise adequate.",
-      "Lenders sometimes write minimum liquidity or gearing requirements into loan agreements, using ratios such as the current ratio or the debt ratio to monitor ongoing risk.",
-      "Negative working capital is not automatically a sign of financial distress for a business that collects cash from customers well before it must pay its own suppliers.",
-      "A business can report a profit for the year and still face a liquidity squeeze if that profit is tied up in inventory or receivables rather than held as cash.",
-      "Return on equity and return on capital employed both start from profit before interest and tax but relate it to a different capital base, owners' equity in one case and total long-term capital in the other."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "Being tangible is not enough by itself. On the chapter test the wording is accepted. How the item is held and for how long decides the balance-sheet line.\n\nSo the statement is True.",
-      "On the chapter test the wording is accepted. Balance-sheet lines are read from the reporter’s purpose, not from generic labels. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Plant bought for cash is an investing outflow, not day-to-day operating spend. The threshold in the sentence is compared directly to the computed percentage. A ongoing reading of the extract supports this claim. Period profit flows to retained earnings; it is not a separate cash-flow line.\n\nSo the statement is True.",
-      "Read the claim against the chapter rule: Negative working capital is not automatically a sign of financial distress for a business that collects cash from customers well before i….\n\nSo the statement is True.",
-      "Period results sit on the income statement; the balance sheet holds stocks at a date. With that split the claim is fine. Operators and dealers can report the same the item on different lines. Short-term claims belong with current liabilities; long-dated borrowings stay non-current. Period profit flows to retained earnings; it is not a separate cash-flow line. Customer collections recycle earlier sales through operating cash. Plant bought for cash is an investing outflow, not day-to-day operating spend. Residual value reduces the depreciable base before the annual charge is calculated.\n\nSo the statement is True.",
-      "With that split the claim is fine. Settlement timing and intended use matter more than physical shape for the item. Operators and dealers can report the same the item on different lines. Customer collections recycle earlier sales through operating cash. The described treatment of the item matches standard reporting here.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full",
-    "half": "text"
   },
   {
     "subsection": "6.5",

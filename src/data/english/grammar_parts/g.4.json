@@ -687,44 +687,6 @@
       "solution_overview": "Advanced idioms (\"cannot but,\" \"might well have\") and causative modal perfects are acceptable. Reject only the stray \"to\" after \"may.\" Read past \"mustn't have\" carefully against the evidence clause.\n\n**Part 1: What to watch for.**\n\n\"Cannot but have\" signals inevitability; \"should have had … resoled\" wraps a causative. Evidence can support past \"mustn't have\" as denial of an act.\n\n**Part 2: How to decide.**\n\nFail \"may to have.\" Elsewhere confirm formal inevitability, causative past advice, evidenced past denial, and strengthened \"might well have.\"\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
     },
     {
-      "id": "en-g-4-19",
-      "case_id": "ENG G.4.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "The chef must have been about to plate the dessert when the power cut hit.",
-        "You needn’t to have packed both jumpers and a heavy coat.",
-        "They could have been going to cycle the coastal path before the wind rose.",
-        "The map should not of omitted the footbridge over the creek.",
-        "We may as well have walked for all the good the crowded bus did."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) The chef must have been about to plate the dessert when the power cut hit.**\n\n\"Must have been about to plate\" correctly deduces an imminent past plan interrupted by the power cut. \"Be about to\" can sit inside a modal perfect for near-future-in-the-past deductions. The when-clause supplies the interrupt that freezes the imminent action.\n\nA power cut freezing an imminent plating is exactly \"must have been about to,\" so the wording is **true**.\n",
-        "**B) You needn’t to have packed both jumpers and a heavy coat.**\n\n**Trap:** Drop the \"to\": write \"needn't have packed,\" not \"needn't to have packed.\" Modal \"need not / needn't\" never takes \"to\" before the verb chain, even in modal perfect. Unnecessary double packing is the meaning; the illicit \"to\" is the only fail.\n\nModal \"needn't\" never takes \"to\" before the perfect chain, so this is **false** — \"You needn't have packed both jumpers and a heavy coat.\"\n",
-        "**C) They could have been going to cycle the coastal path before the wind rose.**\n\n\"Could have been going to cycle\" hedges a past intention to ride the coastal path that never completed once the wind rose. \"Be going to\" nests under modal perfects for aborted plans. Soft force fits an intention that the wind cut short.\n\nWind cutting short a coastal plan nests under soft \"could have been going to,\" so the sentence is **true**.\n",
-        "**D) The map should not of omitted the footbridge over the creek.**\n\n**Trap:** \"Should not of omitted\" must be \"should not have omitted.\" Negation does not change the helper — still \"have,\" never \"of,\" after a modal. Past criticism of the map is clear; only the spelling fails.\n\nNegation does not turn the helper into \"of,\" so the wording is **false** — \"The map should not have omitted the footbridge over the creek.\"\n",
-        "**E) We may as well have walked for all the good the crowded bus did.**\n\n\"May as well have walked\" idiomatically means the crowded bus achieved nothing useful — walking would have made little difference. The ironic past idiom is standard. \"For all the good…\" cues the \"little difference\" reading.\n\n**Tip:** \"May as well have\" + past participle → ironic \"it would have made little difference.\"\n\nA pointless crowded bus is the ironic reading of \"may as well have,\" so this line is **true**.\n"
-      ],
-      "highlights": [
-        "must have been about to",
-        "needn’t to have packed",
-        "could have been going to",
-        "should not of omitted",
-        "may as well have walked"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.4",
-      "solution_overview": "Nested near-future and \"be going to\" inside modal perfects are advanced but valid. Failures are form-only: an extra \"to\" after \"needn't\" and another \"of\" for \"have.\" The ironic \"may as well have\" idiom is fine.\n\n**Part 1: What to watch for.**\n\n\"Must / could have been about to / going to\" encode interrupted or aborted past plans. Modal \"needn't\" never takes \"to.\" Write \"have,\" never \"of.\"\n\n**Part 2: How to decide.**\n\nStrip illicit \"to\" and replace \"of\" with \"have.\" Then confirm interrupted plating, aborted cycle plan, and the ironic \"may as well have walked\" reading.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
-    },
-    {
       "id": "en-g-4-20",
       "case_id": "ENG G.4.20",
       "title": "Task 20",

@@ -3,7 +3,7 @@
  * Engines: same BBE chapter families as Mocks 1–5 (sets, Vieta, PV, pipes, BE,
  * inequalities, piecewise, powers, parametric cubic, exp/log, product rule,
  * best-of-n, binomial) but denser multi-step traps — not off-syllabus topics.
- * Order: economics → english (Dynamic Pricing T.2) → math.
+ * Order: economics → english (Reshoring T.4) → math.
  *
  * Run: node scripts/run-rebuild-mock-6.mjs
  */
@@ -114,83 +114,82 @@ function mapEcon(t: Record<string, unknown>) {
 }
 
 /**
- * NEW chart engine (not CVP, P/E, rights, DCF, dual-NPV):
- * cash-conversion cycle from opening/closing working-capital stocks + P&L flows.
+ * Cash-conversion + liquidity pack from one working-capital chart.
+ * Forces average stocks, day-count ratios, CCC, current ratio, and turnover.
  *
- * Revenue 1200, COGS 720 (EUR thousands).
- * Inventory 90→110, AR 80→100, AP 60→70.
- * Inv days ≈ 50.69, AR days ≈ 27.38, AP days ≈ 32.95, CCC ≈ 45.12.
- * Asset turnover with average total assets 850 → ≈ 1.41.
+ * Revenue 1450, COGS 870 (EUR thousands).
+ * Inventory 120→160, AR 95→125, AP 70→90; cash 40; overdraft 25.
+ * Avg inv=140, AR=110, AP=80.
+ * Inv days≈58.74; AR≈27.69; AP≈33.56; CCC≈52.87.
+ * Year-end CR=325/115≈2.83; asset turnover 1450/980≈1.48.
  */
 function buildCashConversionCase() {
-  const context = `NordicForge AG publishes year-end working-capital stocks and a short P&L extract (all figures in thousands of euros). Opening stocks are the prior year-end balances. Use a 365-day year. Inventory days and payables days are measured against cost of sales; receivables days are measured against revenue. The cash-conversion cycle is inventory days plus receivables days minus payables days.
+  const context = `NordicForge AG reports opening and closing working-capital stocks plus a short P&L / balance extract (EUR thousands). Use a 365-day year. Inventory and payables days use cost of sales; receivables days use revenue. The cash-conversion cycle is inventory days plus receivables days minus payables days. Current ratio uses year-end stocks only.
 
-[[CHART type="grouped-bar" title="NordicForge — opening vs closing working-capital stocks (EUR thousands)"]]
-Inventory | Opening=90 | Closing=110
-Trade receivables | Opening=80 | Closing=100
-Trade payables | Opening=60 | Closing=70
+[[CHART type="grouped-bar" title="NordicForge — opening vs closing stocks (EUR thousands)"]]
+Inventory | Opening=120 | Closing=160
+Trade receivables | Opening=95 | Closing=125
+Trade payables | Opening=70 | Closing=90
 [[/CHART]]
 
-| P&L / balance extract (€ thousands) | Amount |
+| Extract (€ thousands) | Amount |
 | --- | ---: |
-| Revenue | 1200 |
-| Cost of sales | 720 |
-| Total assets at the beginning of the year | 800 |
-| Total assets at the end of the year | 900 |
+| Revenue | 1450 |
+| Cost of sales | 870 |
+| Cash and cash equivalents (year-end) | 40 |
+| Bank overdraft (year-end) | 25 |
+| Total assets at the beginning of the year | 920 |
+| Total assets at the end of the year | 1040 |
 
 Evaluate the following economic assertions:`;
 
   const statements = [
-    "Average inventory for the year equals EUR 100,000.",
-    "Inventory days exceed 55 days.",
-    "Receivables days are strictly between 25 and 30 days.",
-    "The cash-conversion cycle is strictly longer than 40 days.",
-    "Asset turnover (revenue relative to average total assets) exceeds 1.5.",
+    "Average inventory exceeds average trade receivables by exactly EUR 30,000.",
+    "Inventory days lie strictly between 55 and 60.",
+    "The cash-conversion cycle is strictly longer than 50 days but strictly shorter than 55 days.",
+    "The year-end current ratio (current assets to current liabilities) exceeds 2.5.",
+    "Asset turnover (revenue to average total assets) exceeds 1.5.",
   ];
 
-  // A: avg inv = 100 True (in thousands → EUR 100,000)
-  // B: 50.69 > 55? False
-  // C: 27.38 ∈ (25,30) True
-  // D: CCC ≈ 45.12 > 40 True
-  // E: 1200/850 ≈ 1.412 < 1.5 False
-
-  const answer_key = [true, false, true, true, false];
+  const answer_key = [true, true, true, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
 $$
-\\dfrac{90+110}{2}=100
+\\dfrac{120+160}{2}=140,\\qquad \\dfrac{95+125}{2}=110,\\qquad 140-110=30
 $$
 
-In euros that is EUR 100,000.
+In euros that is EUR 30,000.
 
 So the statement is True.`,
 
-    `**B.** → False
+    `**B.** → True
 
 $$
-\\text{Inventory days}=365\\cdot\\dfrac{100}{720}\\approx 50.69<55
+365\\cdot\\dfrac{140}{870}\\approx 58.74\\in(55,60)
 $$
 
-So the statement is False.`,
+So the statement is True.`,
 
     `**C.** → True
 
 $$
-\\text{Receivables days}=365\\cdot\\dfrac{90}{1200}=27.375\\in(25,30)
+\\text{AR days}=365\\cdot\\dfrac{110}{1450}\\approx 27.69,\\qquad \\text{AP days}=365\\cdot\\dfrac{80}{870}\\approx 33.56
+$$
+
+$$
+\\mathrm{CCC}\\approx 58.74+27.69-33.56\\approx 52.87\\in(50,55)
 $$
 
 So the statement is True.`,
 
     `**D.** → True
 
-$$
-\\text{Payables days}=365\\cdot\\dfrac{65}{720}\\approx 32.95
-$$
+Year-end current assets $160+125+40=325$; current liabilities $90+25=115$:
 
 $$
-\\mathrm{CCC}\\approx 50.69+27.38-32.95\\approx 45.12>40
+\\dfrac{325}{115}\\approx 2.83>2.5
 $$
 
 So the statement is True.`,
@@ -198,7 +197,7 @@ So the statement is True.`,
     `**E.** → False
 
 $$
-\\dfrac{1200}{(800+900)/2}=\\dfrac{1200}{850}\\approx 1.41<1.5
+\\dfrac{1450}{(920+1040)/2}=\\dfrac{1450}{980}\\approx 1.48<1.5
 $$
 
 So the statement is False.`,
@@ -206,7 +205,7 @@ So the statement is False.`,
 
   return {
     case_id: "CASE 6.MOCK.CCC",
-    title: "Working capital stocks — cash-conversion cycle from a chart",
+    title: "Working capital chart — CCC band, current ratio and turnover",
     subsection: "6.5",
     chapter: 6,
     context,
@@ -220,21 +219,21 @@ So the statement is False.`,
 function buildEnglish() {
   const texts = JSON.parse(fs.readFileSync(path.join(ROOT, "english/texts.json"), "utf8"));
   const grammar = JSON.parse(fs.readFileSync(path.join(ROOT, "english/grammar.json"), "utf8"));
-  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.2");
-  if (!sub?.passage) throw new Error("Dynamic Pricing passage t.2 missing");
+  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.4");
+  if (!sub?.passage) throw new Error("Reshoring passage t.4 missing");
 
   const order: Array<{ id: string; kind: string; withPassage: boolean; src: "texts" | "grammar" }> = [
-    { id: "ENG T.2.01", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.2.02", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.2.03", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.2.04", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.2.05", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.2.08", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.2.09", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.2.06", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.2.07", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.2.10", kind: "vocabulary", withPassage: false, src: "texts" },
-    { id: "ENG G.5.19", kind: "grammar", withPassage: false, src: "grammar" },
+    { id: "ENG T.4.01", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.4.02", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.4.03", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.4.04", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.4.05", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.4.08", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.4.09", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.4.06", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.4.07", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.4.10", kind: "vocabulary", withPassage: false, src: "texts" },
+    { id: "ENG G.4.19", kind: "grammar", withPassage: false, src: "grammar" },
   ];
 
   const stemByKind: Record<string, string> = {
@@ -248,7 +247,7 @@ function buildEnglish() {
     const t = bank.find((x: { case_id: string }) => x.case_id === o.id);
     if (!t) throw new Error(`Missing English task ${o.id}`);
     let context = stemByKind[o.kind]!;
-    if (o.id === "ENG T.2.10") {
+    if (o.id === "ENG T.4.10") {
       const quoted = String(t.context || "").match(/[""]([^""]+)[""]/);
       const sentence =
         quoted?.[1] ||
@@ -256,11 +255,11 @@ function buildEnglish() {
           t.source_sentence ||
             t.prompt_sentence ||
             t.lead_sentence ||
-            "Dynamic pricing adjusts the listed price in real time as demand, inventory and rival offers shift.",
+            "Reshoring moves production closer to final markets after firms reassess distant supply chains.",
         );
       context = `Consider this sentence from the passage: "${sentence}" Decide whether each paraphrase preserves its meaning.`;
     }
-    if (o.id === "ENG T.2.08" || o.id === "ENG T.2.09") {
+    if (o.id === "ENG T.4.08" || o.id === "ENG T.4.09") {
       context =
         "Based on the passage, decide whether each given meaning matches the word's actual use.";
     }
@@ -288,15 +287,15 @@ function buildEnglish() {
 
 // ---- assemble (unused hard bank + CCC custom; no overlap with Mocks 1–5) ----
 const economics = [
-  mapEcon(byId(2, "CASE 2.3.02")),
-  mapEcon(byId(3, "CASE 3.2.10")),
-  mapEcon(byId(4, "CASE 4.1.09")),
-  mapEcon(byId(4, "CASE 4.1.11")),
-  mapEcon(byId(5, "CASE 5.1.03")),
-  mapEcon(byId(6, "CASE 6.2.026")),
-  mapEcon(byId(6, "CASE 6.4.001")),
-  mapEcon(byId(6, "CASE 6.5.014")),
-  mapEcon(byId(6, "CASE 6.5.049")),
+  mapEcon(byId(2, "CASE 2.6.29")),
+  mapEcon(byId(3, "CASE 3.4.16")),
+  mapEcon(byId(4, "CASE 4.3.20")),
+  mapEcon(byId(5, "CASE 5.5.29")),
+  mapEcon(byId(6, "CASE 6.3.017")),
+  mapEcon(byId(6, "CASE 6.1.011")),
+  mapEcon(byId(6, "CASE 6.1.019")),
+  mapEcon(byId(6, "CASE 6.3.008")),
+  mapEcon(byId(6, "CASE 6.5.022")),
   buildCashConversionCase(),
 ];
 

@@ -1,9 +1,9 @@
 /**
- * Curated Mock Exam 6 content (alternate in-chapter types):
- * - Economics → English (Dynamic Pricing) → Math
- * - Economics: unused hard bank + cash-conversion-cycle chart
- * - English: T.2 Dynamic Pricing + G.5.19
- * - Math: same BBE chapters as Mock 5, but different task types per chapter
+ * Curated Mock Exam 6 content (hard multi-step alternate types):
+ * - Economics → English (Reshoring) → Math
+ * - Economics: calc-heavy unused bank + hard CCC/liquidity chart
+ * - English: T.4 Reshoring + G.4.19
+ * - Math: alt in-chapter types with multi-step traps (not plug-in easy)
  */
 
 import sourced from "@/data/mock-exam-6-sourced.json";
@@ -106,7 +106,7 @@ export const MOCK_EXAM_6_POINTS_TOTAL =
 
 /** Bump when Mock 6 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_6_CONTENT_REV =
-  "2026-09-18d · 34q · Dynamic Pricing · CCC · alt in-chapter types";
+  "2026-09-18e · 34q · Reshoring · hard CCC · multi-step alt types";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

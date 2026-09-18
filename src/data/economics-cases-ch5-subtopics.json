@@ -2524,35 +2524,6 @@
   },
   {
     "subsection": "5.5",
-    "case_id": "CASE 5.5.29",
-    "title": "Absolute Versus Relative Share Traps",
-    "context": "Consider a food producer estimating market volume in tonnes for organic cereals and comparing that total with its own annual shipments. Evaluate the following economic assertions:",
-    "statements": [
-      "Sales potential of a business can exceed its current sales volume when gains from rivals or market growth are achievable.",
-      "Primary research is defined as any information taken from an annual report published last year.",
-      "Market research excludes information about industry conditions and focuses only on internal accounting.",
-      "Gains from competitors are excluded from the concept of sales potential.",
-      "A share in the increase of market potential is excluded from sales potential."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Sales volume is what the firm sells now. Sales potential can sit higher when customers can be won from rivals or when the whole market expands. Those achievable gains are part of potential, so potential may exceed current volume.\n\nSo the statement is True.",
-      "An annual report published last year is an existing document. Reusing it is secondary research. Primary research means collecting new data for the current question, not recycling last year's published pages.\n\nSo the statement is False.",
-      "Market research looks outward at customers, competitors, and industry conditions as well as supporting internal decisions. Limiting it to internal accounting would erase competitor tracking, segment sizing, and buyer studies. Industry development information is squarely inside the research scope. The claim that market research ignores industry conditions is therefore false.\n\nSo the statement is False.",
-      "Winning customers from rivals is a standard route to raising one firm's sales above today's volume. Those gains from competitors sit inside sales potential, not outside it. Excluding them contradicts the chapter's sales-potential breakdown.\n\nSo the statement is False.",
-      "A share of rising market potential is listed as a sales-potential component alongside current volume and gains from rivals. Excluding that growth share misstates how potential is built for one firm.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.5",
     "case_id": "CASE 5.5.30",
     "title": "Market Potential Exceeding Volume",
     "context": "Analyze absolute market share as information relevant to the firm and to investors. Evaluate the following economic assertions:",

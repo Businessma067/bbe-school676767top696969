@@ -1595,35 +1595,6 @@
     "tier": "full"
   },
   {
-    "subsection": "3.4",
-    "case_id": "CASE 3.4.16",
-    "title": "Fifty staff boundary",
-    "context": "Analyze a logistics company employs exactly fifty people with €8m turnover. Evaluate the following economic assertions:",
-    "statements": [
-      "Leaving SME status can end eligibility for certain EU SME finance programmes.",
-      "Medium status holds because balance sheet is within €43m despite turnover above €50m.",
-      "Medium pairs sub-250 staff with a €10m turnover cap.",
-      "Thirty staff is within the small enterprise employee limit.",
-      "One hundred and eighty staff keeps a firm in the small category because turnover is below €50m."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Leaving SME status can cut eligibility for EU finance programmes reserved for SMEs. Crossing out of the bands is not only a label change; funding doors can close.\n\nSo the statement is True.",
-      "A balance sheet within €43m does not save medium status if turnover sits above €50m and that is the failing route. One breached financial ceiling can be enough to fail.\n\nSo the statement is False.",
-      "Medium status pairs fewer than 250 staff with a €50m turnover cap on the turnover route, not a €10m cap. The €10m figure belongs to small enterprises.\n\nAttaching a €10m turnover ceiling to medium classification mixes tiers. Medium financial room is much larger than the small band allows on that turnover measure for growing firms.\n\nSo the statement is False.",
-      "Thirty staff sit under the small enterprise employee limit of fewer than fifty. That headcount clears the employment half of the small tests.\n\nSo the statement is True.",
-      "One hundred and eighty staff already exceed the small ceiling of fewer than fifty. Turnover below €50m cannot keep the firm in the small category once headcount is that high.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
     "subsection": "3.5",
     "case_id": "CASE 3.5.01",
     "title": "Local bakery scope",

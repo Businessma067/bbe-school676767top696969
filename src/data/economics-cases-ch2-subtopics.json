@@ -3307,35 +3307,6 @@
   },
   {
     "subsection": "2.6",
-    "case_id": "CASE 2.6.29",
-    "title": "Graz Rent-Control Apartment Search",
-    "context": "Consider Graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. Evaluate the following economic assertions:",
-    "statements": [
-      "Long waiting lists for controlled units signal excess demand at the regulated rent.",
-      "Controlled rents below open-market levels can create persistent shortage of available flats.",
-      "Landlords may redirect maintenance spending when regulated rents cover rising costs poorly.",
-      "Tenants ignore non-price costs when money rents stay capped because flats are abundant.",
-      "Open-market leases advertising higher rates prove equilibrium rent lies below the controlled cap."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Long waiting lists for Graz rent-controlled flats mean more households want those units at the capped rent than landlords will lease.\n\nThat excess demand at the regulated price is exactly what shortage looks like when price cannot rise to clear the market.\n\nSo the statement is True.",
-      "When controlled rents sit below open-market leases for comparable flats, quantity demanded at the controlled rent exceeds quantity supplied of controlled units.\n\nThe gap shows up as queues, informal side payments, or years on a waiting list. Open-market rents can clear nearby, but the regulated segment remains short of available flats for as long as the cap binds below the would-be equilibrium. Persistence follows because the legal rent cannot climb to equate the two sides.\n\nSo the statement is True.",
-      "If regulated rents lag rising costs, landlords cut discretionary maintenance rather than lose money on each tenancy.\n\nRedirected spending is a predictable response when the rent ceiling squeezes the net return.\n\nSo the statement is True.",
-      "Capped money rents do not make flats abundant; they typically create shortage, so tenants still pay in time, search effort, and weaker housing quality.\n\nThose non-price costs matter precisely because the money price is not allowed to ration scarce controlled units.\n\nSo the statement is False.",
-      "Open-market leases posting higher monthly rates than controlled flats imply that the free-market equilibrium rent lies above the controlled cap, not below it.\n\nIf the equilibrium sat below the cap, uncontrolled landlords would already be advertising at or under the controlled level and the cap would not bind. Higher advertised open-market rents are evidence that the ceiling is holding regulated rents below what the uncontrolled market clears at. The statement flips that comparison.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
     "case_id": "CASE 2.6.30",
     "title": "Price Floors Above Equilibrium",
     "context": "Analyze how a legal minimum price set above equilibrium creates surplus in competitive markets. Evaluate the following economic assertions:",
