@@ -1,7 +1,7 @@
 /**
- * Rebuild Mock Exam 6 — ultra-hard curated bank + dual-project capital chart + Bioluminescence English + deep custom math.
- * Fully different case IDs and themes from Mocks 1–5.
- * Order: economics → english (Living Light / Bioluminescence T.13) → math.
+ * Rebuild Mock Exam 6 — ultra-hard curated bank + CCC chart + Antibiotic English + deep custom math.
+ * Engines deliberately unlike Mocks 1–5 (no DCF dual-NPV twin, no IE/Vieta/pipes/BE clones).
+ * Order: economics → english (Antibiotic Discovery Void T.7) → math.
  *
  * Run: node scripts/run-rebuild-mock-6.mjs
  */
@@ -112,132 +112,99 @@ function mapEcon(t: Record<string, unknown>) {
 }
 
 /**
- * NEW chart engine (not CVP, P/E, rights, single-project DCF):
- * mutually exclusive dual projects — NPV, PI, payback traps from one chart.
+ * NEW chart engine (not CVP, P/E, rights, DCF, dual-NPV):
+ * cash-conversion cycle from opening/closing working-capital stocks + P&L flows.
  *
- * North outlay 200; inflows 35,45,80,130 (thousands).
- * South outlay 150; inflows 55,60,55,50.
- * Discount rate 12%.
- *
- * North: PV≈206.68, NPV≈+6.68, PI≈1.033, undisc PB≈3.31, disc PB≈3.92
- * South: PV≈167.86, NPV≈+17.86, PI≈1.119, undisc PB≈2.64, disc PB≈3.44
+ * Revenue 1200, COGS 720 (EUR thousands).
+ * Inventory 90→110, AR 80→100, AP 60→70.
+ * Inv days ≈ 50.69, AR days ≈ 27.38, AP days ≈ 32.95, CCC ≈ 45.12.
+ * Asset turnover with average total assets 850 → ≈ 1.41.
  */
-function buildDualProjectCapitalCase() {
-  const context = `CascadeRail GmbH must choose **exactly one** of two mutually exclusive signalling upgrades. Both require an immediate cash outlay at time zero. Year-end operating cash inflows for each project appear in the chart (figures already in thousands of euros). The firm’s discount rate for NPV and profitability-index work is 12% per year. Projects cannot be scaled or combined.
+function buildCashConversionCase() {
+  const context = `NordicForge AG publishes year-end working-capital stocks and a short P&L extract (all figures in thousands of euros). Opening stocks are the prior year-end balances. Use a 365-day year. Inventory days and payables days are measured against cost of sales; receivables days are measured against revenue. The cash-conversion cycle is inventory days plus receivables days minus payables days.
 
-[[CHART type="grouped-bar" title="CascadeRail upgrades — year-end cash inflows (EUR thousands)"]]
-Year 1 | North=35 | South=55
-Year 2 | North=45 | South=60
-Year 3 | North=80 | South=55
-Year 4 | North=130 | South=50
+[[CHART type="grouped-bar" title="NordicForge — opening vs closing working-capital stocks (EUR thousands)"]]
+Inventory | Opening=90 | Closing=110
+Trade receivables | Opening=80 | Closing=100
+Trade payables | Opening=60 | Closing=70
 [[/CHART]]
 
-| Key figure | North | South |
-| --- | ---: | ---: |
-| Initial outlay at time zero | EUR 200,000 | EUR 150,000 |
-| Discount rate | 12% per year | 12% per year |
+| P&L / balance extract (€ thousands) | Amount |
+| --- | ---: |
+| Revenue | 1200 |
+| Cost of sales | 720 |
+| Total assets at the beginning of the year | 800 |
+| Total assets at the end of the year | 900 |
 
-Treat chart inflows as thousands of euros (so North Year 1 contributes EUR 35,000, and so on). Evaluate the following economic assertions:`;
+Evaluate the following economic assertions:`;
 
   const statements = [
-    "Summed across four years, North’s undiscounted inflows exceed South’s undiscounted inflows.",
-    "At a 12% discount rate, North’s NPV is strictly larger than South’s NPV.",
-    "Undiscounted payback for South occurs strictly before the end of Year 3.",
-    "At a 12% discount rate, both projects have a strictly positive NPV.",
-    "The profitability index of North (present value of inflows divided by outlay) exceeds the profitability index of South.",
+    "Average inventory for the year equals EUR 100,000.",
+    "Inventory days exceed 55 days.",
+    "Receivables days are strictly between 25 and 30 days.",
+    "The cash-conversion cycle is strictly longer than 40 days.",
+    "Asset turnover (revenue relative to average total assets) exceeds 1.5.",
   ];
 
-  // A: 35+45+80+130=290 > 55+60+55+50=220 True
-  // B: NPV_N≈6.68 < NPV_S≈17.86 False
-  // C: South undisc PB≈2.64 < 3 True
-  // D: both >0 True
-  // E: PI_N≈1.033 < PI_S≈1.119 False
+  // A: avg inv = 100 True (in thousands → EUR 100,000)
+  // B: 50.69 > 55? False
+  // C: 27.38 ∈ (25,30) True
+  // D: CCC ≈ 45.12 > 40 True
+  // E: 1200/850 ≈ 1.412 < 1.5 False
 
   const answer_key = [true, false, true, true, false];
 
   const tactical_explanations = [
     `**A.** → True
 
-North inflows (thousands):
-
 $$
-35+45+80+130=290
+\\dfrac{90+110}{2}=100
 $$
 
-South inflows:
-
-$$
-55+60+55+50=220
-$$
-
-Since $290>220$, North’s undiscounted total is larger.
+In euros that is EUR 100,000.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Present values of inflows at 12% (working in thousands):
-
-North:
-
 $$
-\\dfrac{35}{1.12}+\\dfrac{45}{1.12^{2}}+\\dfrac{80}{1.12^{3}}+\\dfrac{130}{1.12^{4}}\\approx 206.68
+\\text{Inventory days}=365\\cdot\\dfrac{100}{720}\\approx 50.69<55
 $$
-
-$$
-\\mathrm{NPV}_{N}\\approx 206.68-200=+6.68
-$$
-
-South:
-
-$$
-\\dfrac{55}{1.12}+\\dfrac{60}{1.12^{2}}+\\dfrac{55}{1.12^{3}}+\\dfrac{50}{1.12^{4}}\\approx 167.86
-$$
-
-$$
-\\mathrm{NPV}_{S}\\approx 167.86-150=+17.86
-$$
-
-South’s NPV is larger, so the claim fails.
 
 So the statement is False.`,
 
     `**C.** → True
 
-South cumulative undiscounted inflows:
-
 $$
-55,\\quad 115,\\quad 170,\\quad 220
-$$
-
-After Year 2 one still needs EUR 35,000 of the EUR 150,000 outlay. Year 3 contributes EUR 55,000, so
-
-$$
-2+\\dfrac{35}{55}\\approx 2.64<3
+\\text{Receivables days}=365\\cdot\\dfrac{90}{1200}=27.375\\in(25,30)
 $$
 
 So the statement is True.`,
 
     `**D.** → True
 
-From letter B, $\\mathrm{NPV}_{N}\\approx +6.68>0$ and $\\mathrm{NPV}_{S}\\approx +17.86>0$.
+$$
+\\text{Payables days}=365\\cdot\\dfrac{65}{720}\\approx 32.95
+$$
+
+$$
+\\mathrm{CCC}\\approx 50.69+27.38-32.95\\approx 45.12>40
+$$
 
 So the statement is True.`,
 
     `**E.** → False
 
 $$
-\\mathrm{PI}_{N}\\approx\\dfrac{206.68}{200}\\approx 1.033,\\qquad \\mathrm{PI}_{S}\\approx\\dfrac{167.86}{150}\\approx 1.119
+\\dfrac{1200}{(800+900)/2}=\\dfrac{1200}{850}\\approx 1.41<1.5
 $$
-
-North’s index is smaller, not larger.
 
 So the statement is False.`,
   ];
 
   return {
-    case_id: "CASE 6.MOCK.DUALNPV",
-    title: "Mutually exclusive upgrades — dual NPV, PI and payback from a chart",
+    case_id: "CASE 6.MOCK.CCC",
+    title: "Working capital stocks — cash-conversion cycle from a chart",
     subsection: "6.5",
     chapter: 6,
     context,
@@ -251,21 +218,21 @@ So the statement is False.`,
 function buildEnglish() {
   const texts = JSON.parse(fs.readFileSync(path.join(ROOT, "english/texts.json"), "utf8"));
   const grammar = JSON.parse(fs.readFileSync(path.join(ROOT, "english/grammar.json"), "utf8"));
-  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.13");
-  if (!sub?.passage) throw new Error("Bioluminescence / Living Light passage t.13 missing");
+  const sub = texts.subsections.find((s: { id: string }) => s.id === "t.7");
+  if (!sub?.passage) throw new Error("Antibiotic Discovery Void passage t.7 missing");
 
   const order: Array<{ id: string; kind: string; withPassage: boolean; src: "texts" | "grammar" }> = [
-    { id: "ENG T.13.01", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.13.02", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.13.03", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.13.04", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.13.05", kind: "text", withPassage: true, src: "texts" },
-    { id: "ENG T.13.08", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.13.09", kind: "vocabulary", withPassage: true, src: "texts" },
-    { id: "ENG T.13.06", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.13.07", kind: "grammar", withPassage: false, src: "texts" },
-    { id: "ENG T.13.10", kind: "vocabulary", withPassage: false, src: "texts" },
-    { id: "ENG G.13.19", kind: "grammar", withPassage: false, src: "grammar" },
+    { id: "ENG T.7.01", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.7.02", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.7.03", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.7.04", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.7.05", kind: "text", withPassage: true, src: "texts" },
+    { id: "ENG T.7.08", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.7.09", kind: "vocabulary", withPassage: true, src: "texts" },
+    { id: "ENG T.7.06", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.7.07", kind: "grammar", withPassage: false, src: "texts" },
+    { id: "ENG T.7.10", kind: "vocabulary", withPassage: false, src: "texts" },
+    { id: "ENG G.7.19", kind: "grammar", withPassage: false, src: "grammar" },
   ];
 
   const stemByKind: Record<string, string> = {
@@ -279,7 +246,7 @@ function buildEnglish() {
     const t = bank.find((x: { case_id: string }) => x.case_id === o.id);
     if (!t) throw new Error(`Missing English task ${o.id}`);
     let context = stemByKind[o.kind]!;
-    if (o.id === "ENG T.13.10") {
+    if (o.id === "ENG T.7.10") {
       const quoted = String(t.context || "").match(/[""]([^""]+)[""]/);
       const sentence =
         quoted?.[1] ||
@@ -287,11 +254,11 @@ function buildEnglish() {
           t.source_sentence ||
             t.prompt_sentence ||
             t.lead_sentence ||
-            "In the deep ocean, living light is not decoration — it is a working language of survival.",
+            "The pipeline of genuinely new antibiotic classes has slowed to a trickle even as resistance spreads.",
         );
       context = `Consider this sentence from the passage: "${sentence}" Decide whether each paraphrase preserves its meaning.`;
     }
-    if (o.id === "ENG T.13.08" || o.id === "ENG T.13.09") {
+    if (o.id === "ENG T.7.08" || o.id === "ENG T.7.09") {
       context =
         "Based on the passage, decide whether each given meaning matches the word's actual use.";
     }
@@ -317,18 +284,18 @@ function buildEnglish() {
   };
 }
 
-// ---- assemble (unused hard bank + custom; no overlap with Mocks 1–5) ----
+// ---- assemble (unused hard bank + CCC custom; no overlap with Mocks 1–5) ----
 const economics = [
-  mapEcon(byId(2, "CASE 2.7.12")),
-  mapEcon(byId(3, "CASE 3.4.07")),
-  mapEcon(byId(4, "CASE 4.3.21")),
-  mapEcon(byId(4, "CASE 4.6.06")),
-  mapEcon(byId(5, "CASE 5.4.08")),
-  mapEcon(byId(6, "CASE 6.2.019")),
-  mapEcon(byId(6, "CASE 6.4.009")),
-  mapEcon(byId(6, "CASE 6.5.020")),
-  mapEcon(byId(6, "CASE 6.3.035")),
-  buildDualProjectCapitalCase(),
+  mapEcon(byId(2, "CASE 2.6.47")),
+  mapEcon(byId(3, "CASE 3.4.14")),
+  mapEcon(byId(4, "CASE 4.3.40")),
+  mapEcon(byId(4, "CASE 4.1.10")),
+  mapEcon(byId(5, "CASE 5.7.44")),
+  mapEcon(byId(6, "CASE 6.1.007")),
+  mapEcon(byId(6, "CASE 6.4.016")),
+  mapEcon(byId(6, "CASE 6.3.011")),
+  mapEcon(byId(6, "CASE 6.5.069")),
+  buildCashConversionCase(),
 ];
 
 const english = buildEnglish();

@@ -27,8 +27,8 @@ function Mock6CaseAuditPage() {
           <p className="text-sm text-muted-foreground">rev {MOCK_EXAM_6_CONTENT_REV}</p>
           <p className="text-sm text-muted-foreground">
             If this page still shows an older rev after GitHub sync, Lovable preview is stale.
-            After a successful update the stamp must include <code>Bioluminescence</code>. Custom
-            dual-NPV (Q10) and math Q22–34 must render KaTeX, not raw <code>$$…$$</code>.
+            After a successful update the stamp must include <code>Antibiotics</code>. Custom
+            CCC chart (Q10) and math Q22–34 must render KaTeX, not raw <code>$$…$$</code>.
           </p>
         </header>
         {questions.map((q) => (

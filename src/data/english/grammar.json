@@ -5251,44 +5251,6 @@
       "solution_overview": "Edge grammar: impossible stop to mean, parallel stop -ing, consider how to, decide on -ing, and refuse + noun.\n\n**Part 1: What to watch for.**\n\nStop to only works when the infinitive is a real purpose action — \"mean\" is not one. Parallel stop + -ing keeps the cease sense. Consider how to, decide on -ing, and refuse + noun are all legal alternatives.\n\n**Part 2: How to decide.**\n\nLook past the first verb when the complement sits elsewhere (offer of driving). Reject nonsense purpose infinitives, and accept decide on / consider how / refuse + noun when they appear.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
-      "id": "en-g-7-19",
-      "case_id": "ENG G.7.19",
-      "title": "Task 19",
-      "context": "Decide whether each sentence is grammatically correct as written.",
-      "statements": [
-        "Not wishing to appear rude, she avoided interrupting the poet mid-line.",
-        "Not wishing to appear rude, she avoided to interrupt the poet mid-line.",
-        "They promised that they would water the plants while we were away.",
-        "He enjoys that his sister always remembers his birthday.",
-        "We stopped short of promising to host the entire reunion."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A) Not wishing to appear rude, she avoided interrupting the poet mid-line.**\n\nAvoid + gerund is correct: \"avoided interrupting the poet mid-line.\" Fronted participle clauses (Not wishing to appear rude) do not change avoid's -ing rule. Interrupting is still the activity she steers clear of.\n\nA fronted participle clause does not rewrite avoid + -ing, so avoided interrupting is **true**.\n",
-        "**B) Not wishing to appear rude, she avoided to interrupt the poet mid-line.**\n\nSame sentence with the wrong complement — avoid needs -ing, not to. Compare the pair; only the gerund version works. Not wishing to appear rude does not license avoid to interrupt.\n\n**Trap:** The fronted clause makes avoid to look elegant, but avoid still wants -ing.\n\nThe same polite fronting still leaves avoid wanting -ing, so avoid to interrupt is **false** — \"Not wishing to appear rude, she avoided interrupting the poet mid-line.\"\n",
-        "**C) They promised that they would water the plants while we were away.**\n\nPromise that + clause is a valid alternative to promise to + verb: \"promised that they would water the plants.\" Promise to water OR promise that we will water. The that-clause carries the commitment content.\n\n**Tip:** Promise to water OR promise that we will water.\n\nPromise that + clause is a valid sibling of promise to, so promised that they would water is **true**.\n",
-        "**D) He enjoys that his sister always remembers his birthday.**\n\nEnjoy that + clause is acceptable; the that-clause is the object of enjoy. Enjoy + -ing for activities; enjoy that for facts or situations. His sister remembering the birthday is a fact/situation, not an infinitive activity.\n\n**Tip:** Enjoy + -ing for activities; enjoy that for facts/situations.\n\nFact-or-situation objects can sit in a that-clause after enjoy, so enjoy that… is **true**.\n",
-        "**E) We stopped short of promising to host the entire reunion.**\n\nStop short of + -ing is an idiom meaning \"almost but not quite\"; promising keeps its own to inside the gerund phrase. Idioms can nest: stop short of + gerund, and inside it promise + to. Hosting the reunion is the nearly-made promise, not a bare stop to host.\n\n**Tip:** Idioms can nest stop short of + gerund with promise + to inside.\n\nStop short of + gerund nests cleanly with promise + to inside, so the idiom is **true**.\n"
-      ],
-      "highlights": [
-        "avoided interrupting",
-        "avoided to interrupt",
-        "promised that they would",
-        "enjoys that his sister",
-        "stopped short of promising"
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 19,
-      "subsection": "g.7",
-      "solution_overview": "Minimal pairs, that-clause alternatives, and the idiom stop short of -ing. Confirm which structure is actually complementing which verb.\n\n**Part 1: What to watch for.**\n\nAvoid keeps -ing even after a fronted participle clause; the to version is the false twin. Promise that and enjoy that are valid clause objects. Stop short of + -ing nests another verb's complement inside an idiom.\n\n**Part 2: How to decide.**\n\nCompare near-identical lines first. Then check whether that-clauses or idioms are carrying the object, so you do not over-apply the basic to/-ing rule to the wrong verb.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
-    },
-    {
       "id": "en-g-7-20",
       "case_id": "ENG G.7.20",
       "title": "Task 20",

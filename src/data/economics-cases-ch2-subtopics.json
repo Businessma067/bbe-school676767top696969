@@ -3887,35 +3887,6 @@
   },
   {
     "subsection": "2.6",
-    "case_id": "CASE 2.6.47",
-    "title": "Global Supply Chain Disruption",
-    "context": "Analyze how international supply disruptions shift domestic market supply. Evaluate the following economic assertions:",
-    "statements": [
-      "Domestic equilibrium price may rise when import supply falls while demand stays constant.",
-      "Global markets isolate domestic equilibrium from supply shocks abroad completely.",
-      "Firms may seek alternate suppliers over time, shifting demand leftward permanently.",
-      "Port closures delaying imports shift demand rightward for components used in domestic assembly.",
-      "Shortages of imported parts increase quantity supplied of finished goods domestically."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "If import supply shrinks while domestic demand holds steady, less total supply meets the same demand curve.\n\nDomestic equilibrium price tends to rise and quantity falls.\n\nSo the statement is True.",
-      "Global supply shocks transmit into domestic markets through trade prices and import volumes.\n\nDomestic equilibrium is not sealed off from foreign disruptions; integrated markets import those shocks.\n\nSo the statement is False.",
-      "Seeking alternate suppliers is a supply-side adaptation that can eventually restore offered quantity.\n\nIt does not permanently shift demand leftward for the components firms still need.\n\nSo the statement is False.",
-      "Port closures that delay imports reduce the flow of components into domestic assembly; that is a leftward supply shock for those parts (and for goods that use them).\n\nDemand for components does not jump right merely because ships are stuck; if anything, assembly slows. Calling a port closure a rightward demand shift mislabels which curve moves and predicts the wrong price-quantity pattern.\n\nSo the statement is False.",
-      "Shortages of imported parts constrain finished-goods production, cutting quantity supplied of assemblies rather than increasing it.\n\nFactories cannot ship more finished units when critical inputs are missing.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "4/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "2.6",
     "case_id": "CASE 2.6.48",
     "title": "Integrated Market Mechanisms Review",
     "context": "Review how demand, supply, equilibrium, and policy tools interact in competitive markets. Evaluate the following economic assertions:",

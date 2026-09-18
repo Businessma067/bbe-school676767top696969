@@ -1,9 +1,9 @@
 /**
  * Curated Mock Exam 6 content (ultra-hard bank + generated tasks):
- * - Economics → English (Living Light / Bioluminescence) → Math, in that order
- * - Economics: unused hard bank cases + dual-project NPV/PI chart MOCK
- * - English: T.13 Bioluminescence + G.13.19
- * - Math: ultra-deep customs (fully different from Mocks 1–5)
+ * - Economics → English (Antibiotic Discovery Void) → Math, in that order
+ * - Economics: unused hard bank cases + cash-conversion-cycle chart MOCK
+ * - English: T.7 Antibiotics + G.7.19
+ * - Math: ultra customs with engines unlike Mocks 1–5 (surjections, amortisation, Bayes, …)
  */
 
 import sourced from "@/data/mock-exam-6-sourced.json";
@@ -106,7 +106,7 @@ export const MOCK_EXAM_6_POINTS_TOTAL =
 
 /** Bump when Mock 6 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_6_CONTENT_REV =
-  "2026-09-17a · 34q · Bioluminescence · ultra dual-NPV · mock6 customs";
+  "2026-09-18a · 34q · Antibiotics · CCC chart · distinct ultra math";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);

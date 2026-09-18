@@ -5743,35 +5743,6 @@
   },
   {
     "subsection": "5.7",
-    "case_id": "CASE 5.7.44",
-    "title": "Market Research Across Four Ps",
-    "context": "Consider a furniture retailer combining showroom display, home-delivery logistics, and finance instalment offers. Evaluate the following economic assertions:",
-    "statements": [
-      "A smart watches product with high market share in a no-growth market is a question mark requiring maximum market-growth investment.",
-      "Refreshing office stationery packaging colours without changing the core formula is a relaunch within product-mix alteration.",
-      "Promoting smart watches through social-media posts is a place decision because it chooses the warehouse where stock is stored.",
-      "Removing an underperforming office stationery variant from the range reflects contraction in the product-mix strategy.",
-      "Listing smart watches at €9.99 means the firm has left the price element unused and relied only on promotion."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      true,
-      false
-    ],
-    "tactical_explanations": [
-      "Cash cows hold strong share when the market has little growth left; they fund other units rather than demand maximum growth spend. Question marks sit in high-growth cells with weak share and may need investment to chase leadership. Labelling a high-share, no-growth smart watches product a question mark reverses that map. The required \"maximum market-growth investment\" story belongs elsewhere, if anywhere.\n\nSo the statement is False.",
-      "A packaging-colour refresh for office stationery does not rewrite the underlying formula. Product-mix alteration treats that cosmetic change as a relaunch of the same item. Depth and width of the mix stay put while appearance is renewed.\n\nSo the statement is True.",
-      "Digital promotion of smart watches through social posts does not become place merely because goods sit in warehouses somewhere. Message channel and stock location remain distinct mix decisions.\n\nSo the statement is False.",
-      "Product-mix strategy allows managers to delete lines or variants that drag results. Removing a weak office stationery option is contraction, not a relaunch and not a line extension. The statement's label matches that elimination logic.\n\nSo the statement is True.",
-      "Listings at €9.99 for smart watches set the selling price using psychological pricing. That is not abandoning the price P for promotion alone. The statement misplaces the tool.\n\nSo the statement is False."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "5.7",
     "case_id": "CASE 5.7.45",
     "title": "Product Elimination After Failed Relaunch",
     "context": "Review how increased competition in maturity can lower prices and raise promotional costs. Evaluate the following economic assertions:",

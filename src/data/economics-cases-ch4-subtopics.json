@@ -233,35 +233,6 @@
   },
   {
     "subsection": "4.1",
-    "case_id": "CASE 4.1.10",
-    "title": "Legal Personality and Liability Distinctions",
-    "context": "Review distinctions between unincorporated sole traders and incorporated companies regarding legal status and creditor protection. Evaluate the following economic assertions:",
-    "statements": [
-      "A sole proprietorship lacks the separate legal personality that allows a corporation to sue and be sued in its own name.",
-      "Profits of a sole proprietorship are reported on the business owner's personal income tax statement.",
-      "Under unlimited liability, creditors may pursue the proprietor's private assets when business debts remain unpaid.",
-      "Easy establishment with no capital requirements makes sole proprietorships accessible for small businesses.",
-      "Continuity problems may arise if the sole proprietor suffers a long-term illness or wishes to retire."
-    ],
-    "answer_key": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
-    "tactical_explanations": [
-      "A corporation can sue and be sued in its own name because it is a separate legal person. A sole proprietorship lacks that personality: lawsuits and contracts name the owner.\n\nThe contrast with corporations makes the missing shell clear. Without separate legal personality, the trader cannot litigate as an independent company entity.\n\nSo the statement is True.",
-      "Business profits are declared on the owner's personal income tax statement rather than on a corporate filing. That personal channel follows from missing separate legal personality.\n\nSo the statement is True.",
-      "Under unlimited liability, unpaid business debts can be enforced against private assets. Creditors may pursue the proprietor's personal property when firm funds run out.\n\nSo the statement is True.",
-      "Accessible setup with no capital requirements is why many small businesses start as sole proprietorships. The low formal bar matches the statement about easy establishment.\n\nSo the statement is True.",
-      "Long-term illness or retirement can interrupt trading when everything hangs on one owner-manager. Continuity problems are a known practical risk of the sole-trader form.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.1",
     "case_id": "CASE 4.1.11",
     "title": "Management Concentration and Risk Bearing",
     "context": "Consider a freelance designer operating as a sole proprietorship who occasionally contracts administrative help. Evaluate the following economic assertions:",
@@ -1938,35 +1909,6 @@
       "The Chief Operating Officer may manage operations as a member of the board of directors, sitting with other executives who hold functional portfolios.\n\nFunctional chiefs on the board are normal corporate architecture. The COO seat does not require collapsing ownership into that single office or into one dominant share block.\n\nSo the statement is True.",
       "Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves once directors and officers carry that operational mandate.\n\nSo the statement is True.",
       "Separation of ownership and management is a defining feature of corporate organisation, allowing capital providers to stay distinct from day-to-day controllers.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "4.3",
-    "case_id": "CASE 4.3.40",
-    "title": "Startup Corporation IPO Proceeds",
-    "context": "Consider a startup corporation that raised funds through an initial public offering and later saw its share price double on the exchange. Evaluate the following economic assertions:",
-    "statements": [
-      "Proceeds from shares sold at the IPO entered the corporation as share capital when investors bought at issue.",
-      "Doubling of the secondary-market price after the IPO doubled the cash share capital available inside the firm.",
-      "The startup must surrender half of trading gains on the exchange to regulators as additional equity.",
-      "Existing shareholders who hold stock after the IPO owe the corporation the difference between issue price and market price.",
-      "A higher post-IPO market price creates an automatic right for the corporation to issue unlimited new debt free of interest."
-    ],
-    "answer_key": [
-      true,
-      false,
-      false,
-      false,
-      false
-    ],
-    "tactical_explanations": [
-      "Proceeds from shares sold at the IPO entered the startup corporation as share capital when investors bought stock directly from the issuer at the flotation.\n\nSo the statement is True.",
-      "Doubling of the secondary-market price after the IPO does not double the cash share capital available inside the firm; later quotes reshuffle investor wealth, not treasury cash.\n\nSo the statement is False.",
-      "The startup must not surrender half of trading gains on the exchange to regulators as additional equity. Secondary gains belong to investors who sell, not to a mandatory company levy.\n\nNo such automatic transfer turns market appreciation into forced corporate capital. The letter invents a payment the corporate form does not require after flotation.\n\nSo the statement is False.",
-      "Existing shareholders who hold stock after the IPO do not owe the corporation the difference between issue price and the new market price as a catch-up subscription.\n\nSo the statement is False.",
-      "A higher post-IPO market price creates no automatic right for the corporation to issue unlimited new debt free of interest merely because the equity quote rose.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"

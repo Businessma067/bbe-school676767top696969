@@ -1625,35 +1625,6 @@
   },
   {
     "subsection": "3.4",
-    "case_id": "CASE 3.4.14",
-    "title": "Micro balance within cap",
-    "context": "Consider a consultancy that has seven staff, €2.3m turnover, and a €1.9m balance sheet. Evaluate the following economic assertions:",
-    "statements": [
-      "Operating alone prevents micro classification because micro requires at least five staff.",
-      "Large firms like a components manufacturer can employ thousands despite being few in number.",
-      "Three thousand staff can still fall within medium limits if turnover is managed.",
-      "Turnover within €10m alone makes a firm small even with three hundred employees.",
-      "Turnover above €50m prevents medium classification when that cap is breached."
-    ],
-    "answer_key": [
-      false,
-      true,
-      false,
-      false,
-      true
-    ],
-    "tactical_explanations": [
-      "Operating alone with one person can still be micro if financial caps hold. Micro has no minimum of five staff; fewer than ten includes solo operators.\n\nSo the statement is False.",
-      "Large components manufacturers can employ thousands while remaining few in number across the economy. Scale of payroll and rarity in the firm count often travel together for large enterprises.\n\nSo the statement is True.",
-      "Three thousand staff smash the medium ceiling of fewer than 250 regardless of how carefully turnover is managed. Headcount alone can eject a firm from medium status.\n\nNo amount of turnover management restores medium status once employment is in the thousands. The staff test is independent and binding on that scale of payroll.\n\nSo the statement is False.",
-      "Turnover within €10m cannot make a firm small if it employs three hundred people. Small status also needs fewer than fifty staff. Headcount at three hundred fails that band.\n\nSo the statement is False.",
-      "Turnover above €50m prevents medium classification on the turnover route when that cap is breached. The breach itself blocks medium status via that test.\n\nSo the statement is True."
-    ],
-    "difficulty_level": "5/5",
-    "tier": "full"
-  },
-  {
-    "subsection": "3.4",
     "case_id": "CASE 3.4.15",
     "title": "Ten employees boundary",
     "context": "Consider a family firm that employs exactly ten people with €1.5m turnover. Evaluate the following economic assertions:",
