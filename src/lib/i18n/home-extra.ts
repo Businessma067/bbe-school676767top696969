@@ -19,7 +19,7 @@ export const homeExtraDe: Record<string, string> = {
   "Wirtschafts- und Sozialwissenschaften (WiSo)":
     "Wirtschafts- und Sozialwissenschaften (WiSo)",
   "WU’s English-taught bachelor. Smaller intake (~240 places), international cohort, winter start only. The exam tests Economics & Business, English, and Mathematics.":
-    "WU’s englischsprachiger Bachelor. Kleinerer Jahrgang (~240 Plätze), internationale Kohorte, nur Wintersemester. Die Prüfung testet Economics & Business, Englisch und Mathematik.",
+    "WU’s englischsprachiger Bachelor. Kleinerer Jahrgang (~240 Plätze), internationale Kohorte, nur Wintersemester. Die Prüfung testet Wirtschaft & Betriebswirtschaft, Englisch und Mathematik.",
   "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension — not English.":
     "WU’s deutschsprachiger Bachelor mit deutlich größerem Jahrgang (~2.703 Plätze). Die Prüfung testet Wirtschaftsgrundlagen, Mathematik und deutsches Leseverständnis — nicht Englisch.",
   "Exam & study language: English": "Prüfungs- und Studiensprache: Englisch",
