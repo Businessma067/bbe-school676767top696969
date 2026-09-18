@@ -94,11 +94,13 @@ So the statement is False.`,
 
     `**D.** → True
 
-Pick $n=4$: it is even, a multiple of $4$, and not a multiple of $3$.
+An existential claim needs one witness. Take $n=4$: even (in $A$), a multiple of $4$ (in $C$), and not a multiple of $3$ (outside $B$).
 
 $$
 4\in A\cap C,\qquad 4\notin B
 $$
+
+That single example proves existence ($n=8$ works the same way).
 
 So the statement is True.`,
 
@@ -418,11 +420,13 @@ Decide whether each statement is true or false.`;
   const tactical_explanations = [
     `**A.** → True
 
-Check both equations at $(4,3)$: $4+3=7$ and $2\cdot 4-3=5$. Both hold.
+Plug $(4,3)$ into each equation separately. The first line gives $4+3=7$, and the second gives $2\cdot 4-3=8-3=5$:
 
 $$
 4+3=7,\qquad 8-3=5
 $$
+
+Both hold at once, so the pair really is a joint solution.
 
 So the statement is True.`,
 
@@ -460,11 +464,13 @@ So the statement is True.`,
 
     `**C.** → True
 
-The unique solution is $(x,y)=(4,3)$, and $4>3$.
+Letter B already forces the unique solution $(x,y)=(4,3)$. Comparing coordinates is then immediate:
 
 $$
 x=4>3=y
 $$
+
+Uniqueness means no other candidate could reverse the inequality, so $x>y$ holds.
 
 So the statement is True.`,
 
@@ -756,7 +762,13 @@ So the statement is False.`,
 
     `**D.** → True
 
-With $k=10$ the tangency line from A requires $m=10-16=-6$. The given $m=-6$ matches, so the graphs are tangent.
+Letter A says tangency holds exactly when $m=k-16$. With $k=10$ that forces
+
+$$
+m=10-16=-6.
+$$
+
+The given $m=-6$ matches, so the discriminant of $f-g$ vanishes and the graphs touch.
 
 So the statement is True.`,
 
@@ -853,7 +865,13 @@ So the statement is True.`,
 
     `**D.** → False
 
-At $t=2$: $f(2)=2^{5}=32$ while $g(2)=2^{9}=512$. Then $32<512$, so $f(2)>g(2)$ is the wrong direction.
+At $t=2$, the single-power forms give $f(2)=2^{5}=32$ and $g(2)=2^{9}=512$:
+
+$$
+32<512\qquad\Rightarrow\qquad f(2)<g(2).
+$$
+
+The claim asserts $f(2)>g(2)$, which points the wrong way.
 
 So the statement is False.`,
 
@@ -946,11 +964,13 @@ So the statement is True.`,
 
     `**B.** → True
 
-With unit step, the constant third difference is $3!$ times the leading coefficient:
+On unit steps, a constant third difference equals $3!$ times the leading coefficient. Letter A fixed that constant at $6$, so
 
 $$
-3!\\,a_{3}=6\\Rightarrow a_{3}=1.
+3!\,a_{3}=6\qquad\Rightarrow\qquad a_{3}=1.
 $$
+
+No other leading coefficient would produce a row of sixes.
 
 So the statement is True.`,
 
