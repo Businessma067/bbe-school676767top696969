@@ -1,6 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CaseContextRich } from "@/components/CaseContextRich";
-import { ExamExplanationText } from "@/components/mock-exam/ExamQuestionContent";
+import {
+  ExamExplanationText,
+  ExamQuestionBody,
+} from "@/components/mock-exam/ExamQuestionContent";
 import { buildMockExam6Questions, MOCK_EXAM_6_CONTENT_REV } from "@/lib/mock-exam-6-content";
 
 export const Route = createFileRoute("/dev/mock6-case-audit")({
@@ -29,6 +32,7 @@ function Mock6CaseAuditPage() {
             If this page still shows an older rev after GitHub sync, Lovable preview is stale.
             After a successful update the stamp must include <code>Reshoring</code>. Custom
             CCC chart (Q10) and math Q22–34 must render KaTeX, not raw <code>$$…$$</code>.
+            Math tables come from <code>tablesMarkdown</code> (Q30).
           </p>
         </header>
         {questions.map((q) => (
@@ -36,7 +40,7 @@ function Mock6CaseAuditPage() {
             <h2 className="text-sm font-semibold text-foreground">
               Q{q.index} · {q.id}
             </h2>
-            <CaseContextRich content={q.stem} emphasized />
+            <ExamQuestionBody q={q} emphasized />
             <div className="space-y-3 border-t border-border pt-4">
               <h3 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                 Statements
