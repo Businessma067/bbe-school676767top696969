@@ -131,7 +131,7 @@ export const homeExtraUk: Record<string, string> = {
   "Wirtschafts- und Sozialwissenschaften (WiSo)":
     "Wirtschafts- und Sozialwissenschaften (WiSo)",
   "WU’s English-taught bachelor. Smaller intake (~240 places), international cohort, winter start only. The exam tests Economics & Business, English, and Mathematics.":
-    "Англомовний бакалавр WU. Менший набір (~240 місць), міжнародна когорта, лише зимовий семестр. Іспит перевіряє Economics & Business, англійську та математику.",
+    "Англомовний бакалавр WU. Менший набір (~240 місць), міжнародна когорта, лише зимовий семестр. Іспит перевіряє економіку та бізнес, англійську та математику.",
   "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension — not English.":
     "Німецькомовний бакалавр WU зі значно більшим набором (~2703 місця). Іспит перевіряє основи економіки, математику та німецьке читання — не англійську.",
   "Exam & study language: English": "Мова іспиту та навчання: англійська",
