@@ -1,7 +1,7 @@
 /**
  * Wirtschaft verstehen (WU WiSo Aufnahmeprüfung) TOC for Full WiSo Course.
  * Chapter 4 has no BBE/Fuhrmann counterpart — bank stays empty until authored.
- * Chapter 2 is WiSo-native (partially authored starting with §2.1).
+ * Chapter 2 is WiSo-native (partially authored: §2.1–§2.2).
  */
 
 export type WisoEconomicsSubtopic = {
@@ -70,7 +70,7 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
         id: "2.2",
         chapter: 2,
         title: "Nachhaltigkeit und planetare Grenzen",
-        hasMappedBank: false,
+        hasMappedBank: true,
       },
       {
         id: "2.3",
@@ -142,7 +142,7 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
 
 /**
  * BBE Fuhrmann subsection → Wirtschaft verstehen subsection.
- * Ch.2 beyond §2.1 and Ch.4 digitalisation intentionally omitted until authored.
+ * Ch.2 beyond §2.2 and Ch.4 digitalisation intentionally omitted until authored.
  * BBE marketing (5.x) is not part of the WiSo foundations TOC — excluded.
  * Money/inflation cases are reclassified from basics via keyword override in the build script.
  */

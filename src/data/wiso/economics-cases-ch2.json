@@ -578,5 +578,585 @@
     ],
     "difficulty_level": "5/5",
     "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.01",
+    "title": "Was Nachhaltigkeit bedeutet",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Nachhaltigkeit bedeutet, dass das gemeinsame System von Wirtschaft und Umwelt die Bedürfnisse der Menschen auch in der Zukunft befriedigen kann.",
+      "Nachhaltigkeit bezieht sich laut Lernunterlage ausschließlich auf aktuelle Quartalsgewinne von Unternehmen.",
+      "Wechselwirkungen zwischen Natur und Wirtschaft zu verstehen ist entscheidend für nachhaltige und widerstandsfähige Wirtschaftssysteme.",
+      "Nachhaltige Systeme sollen das Wohlergehen der Menschen fördern und zugleich Gesundheit und Integrität der Ökosysteme erhalten.",
+      "Sobald heutige Bedürfnisse gedeckt sind, ist die Fähigkeit künftiger Bedürfnisbefriedigung laut Definition irrelevant."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Der Definitionskasten in 2.2 formuliert genau das: Nachhaltigkeit heißt, dass Wirtschaft und Umwelt gemeinsam menschliche Bedürfnisse auch künftig erfüllen können.\n\nDie Aussage ist daher wahr.",
+      "Die Lernunterlage bindet Nachhaltigkeit an das gemeinsame System von Wirtschaft und Umwelt und an zukünftige Bedürfnisbefriedigung – nicht an kurzfristige Quartalsgewinne.\n\nDie Aussage ist daher falsch.",
+      "Der Einstieg von 2.2 betont: Wechselwirkungen zwischen Natur und Wirtschaft zu erkennen und zu verstehen ist entscheidend für nachhaltige, widerstandsfähige Systeme.\n\nDie Aussage ist daher wahr.",
+      "Genau diese Doppelzielsetzung steht im Text: Wohlergehen der Menschen und zugleich Erhalt der Ökosystemgesundheit und -integrität.\n\nDie Aussage ist daher wahr.",
+      "Die Zukunftsperspektive ist der Kern der Definition. Heutige Deckung ohne künftige Fähigkeit wäre gerade nicht nachhaltig.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.02",
+    "title": "Nachhaltiges System: Grenzen und Bedürfnisse",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein System aus Wirtschaft, Gesellschaft und Umwelt gilt als nachhaltig, wenn wirtschaftliches Handeln innerhalb der biophysischen Grenzen des Planeten erfolgt, ohne die natürlichen Lebensgrundlagen zu zerstören.",
+      "Nachhaltige Wirtschaftsstrukturen sollen die Bedürfnisse aller Menschen decken und zugleich soziale Inklusion und gesellschaftlichen Zusammenhalt fördern.",
+      "Entscheidend ist unter anderem, wie Ressourcen entnommen, genutzt und wieder in Kreisläufe zurückgeführt werden.",
+      "Ökologische Belastungsgrenzen dürfen im Nachhaltigkeitsverständnis der Lernunterlage problemlos dauerhaft überschritten werden.",
+      "Ein Wirtschaftssystem, das Nachhaltigkeitsprinzipien ignoriert, gefährdet laut Text nur die Umwelt, niemals die eigene Stabilität oder die gesellschaftliche Wohlfahrt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tactical_explanations": [
+      "Diese Formulierung entspricht dem Text: biophysische Grenzen einhalten und natürliche Lebensgrundlagen nicht zerstören.\n\nDie Aussage ist daher wahr.",
+      "Bedürfnisdeckung für alle sowie soziale Inklusion und Zusammenhalt werden ausdrücklich als Gestaltungsziel nachhaltiger Wirtschaftsstrukturen genannt.\n\nDie Aussage ist daher wahr.",
+      "Entnahme, Nutzung und Rückführung in Kreisläufe stehen im Zentrum, damit Belastungsgrenzen nicht überschritten werden.\n\nDie Aussage ist daher wahr.",
+      "Der Text fordert ausdrücklich, ökologische Belastungsgrenzen nicht zu überschreiten. „Problemlos dauerhaft überschreiten“ widerspricht dem Nachhaltigkeitsbegriff.\n\nDie Aussage ist daher falsch.",
+      "Der Text warnt: Wer die Prinzipien nicht berücksichtigt, gefährdet Umwelt und zugleich eigene Stabilität sowie gesellschaftliche Wohlfahrt – nicht nur die Umwelt allein.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.03",
+    "title": "Verantwortungsbewusstes Wirtschaften und entschlossenes Handeln",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Langfristig erfolgreiches Wirtschaften schließt laut Verweis auf Kapitel 1.3 ein, dass Unternehmen und Konsument:innen Auswirkungen auf andere und die Umwelt einbeziehen.",
+      "Verantwortungsbewusstes und nachhaltiges Handeln bedeutet in diesem Zusammenhang, externe Wirkungen bei Entscheidungen mitzudenken.",
+      "Entschlossenes Handeln ist erforderlich, damit Wirtschaft und Gesellschaft innerhalb biophysischer Grenzen erfolgreich agieren und soziale Gerechtigkeit gewährleisten.",
+      "Weil Nachhaltigkeit ein Systemziel ist, entfällt jede Verantwortung einzelner Unternehmen und Konsument:innen.",
+      "Soziale Gerechtigkeit gehört laut Abschnitt 2.2 zu den Gestaltungszielen nachhaltigen Wirtschaftens."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der Text erinnert an 1.3: Auswirkungen auf andere und die Umwelt einzubeziehen ist Teil langfristig erfolgreichen Wirtschaftens.\n\nDie Aussage ist daher wahr.",
+      "Genau so wird „verantwortungsbewusst und nachhaltig handeln“ im Text angebunden: externe Wirkungen werden mitgedacht, nicht ausgeblendet.\n\nDie Aussage ist daher wahr.",
+      "Der Schlusssatz des Einstiegs fordert entschlossenes Handeln für biophysische Grenzen und soziale Gerechtigkeit.\n\nDie Aussage ist daher wahr.",
+      "Systemziel und individuelle Verantwortung schließen sich nicht aus. Der Text spricht explizit Unternehmen und Konsument:innen an.\n\nDie Aussage ist daher falsch.",
+      "Soziale Gerechtigkeit wird neben dem Agieren innerhalb biophysischer Grenzen ausdrücklich genannt.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.04",
+    "title": "Externe Kosten und kurzfristige Anreize",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Für einzelne Akteure lohnt es sich oft, kurzfristige Gewinne zu maximieren und Produktionskosten zu senken, während externe Kosten auf andere oder künftige Generationen abgewälzt werden.",
+      "Externe Kosten entstehen typischerweise nicht beim Unternehmen oder den Konsument:innen selbst, sondern werden von der Gesellschaft oder durch ökologische Schäden getragen.",
+      "Umweltzerstörung und soziale Ausbeutung können Beispiele für solche abgewälzten externen Kosten sein.",
+      "Externe Kosten bedeuten laut Lernunterlage, dass alle ökologischen Folgekosten vollständig im Marktpreis des Produkts enthalten sind.",
+      "Wirtschaftliches Handeln berücksichtigt in vielen Bereichen die ökologischen Belastungsgrenzen noch nicht ausreichend."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der Text beschreibt genau diesen Anreiz: kurzfristige Gewinn- und Kostenvorteile bei Abwälzung externer Kosten.\n\nDie Aussage ist daher wahr.",
+      "Externe Kosten werden von Gesellschaft oder über ökologische Schäden getragen – nicht vom Verursacher im engen Sinn der Transaktion.\n\nDie Aussage ist daher wahr.",
+      "Umweltzerstörung und soziale Ausbeutung werden ausdrücklich als Beispiele genannt.\n\nDie Aussage ist daher wahr.",
+      "Wenn Kosten vollständig im Preis stecken würden, wären sie gerade nicht „extern“. Die Aussage verdreht die Definition.\n\nDie Aussage ist daher falsch.",
+      "Der Text stellt fest: Intensives Entnehmen und Nutzen natürlicher Ressourcen erfolgt oft ohne ausreichende Berücksichtigung ökologischer Belastungsgrenzen.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.05",
+    "title": "Lineares Wirtschaften: Take – Make – Waste",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein lineares Wirtschaftssystem folgt oft dem Prinzip „Take – Make – Waste“: Rohstoffe entnehmen, Produkte herstellen, konsumieren und entsorgen.",
+      "Im linearen Modell werden ökologische Folgekosten von Ressourcenabbau, Emissionen oder Abfall häufig nicht ausreichend einbezogen.",
+      "Die Möglichkeit zirkulärer Nutzung – Wiederverwendung, Reparatur oder Wiederverwertung – wird im linearen Modell vielfach vernachlässigt.",
+      "„Take – Make – Waste“ beschreibt laut Lernunterlage bereits das Ideal der Kreislaufwirtschaft.",
+      "Ein linearer Ressourcenfluss kann zu wachsender Umweltbelastung, steigendem Ressourcenverbrauch und zunehmendem Druck auf die planetaren Grenzen führen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Take – Make – Waste ist die im Text genannte Kurzformel des linearen Modells.\n\nDie Aussage ist daher wahr.",
+      "Gerade die unzureichende Einbeziehung ökologischer Folgekosten charakterisiert das lineare System im Text.\n\nDie Aussage ist daher wahr.",
+      "Wiederverwendung, Reparatur und Wiederverwertung werden als vernachlässigte zirkuläre Optionen genannt.\n\nDie Aussage ist daher wahr.",
+      "Take – Make – Waste ist das lineare Gegenbild zur Kreislaufwirtschaft, nicht deren Ideal.\n\nDie Aussage ist daher falsch.",
+      "Genau diese Folgenkette – Belastung, Verbrauch, Druck auf planetare Grenzen – steht im Text.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.06",
+    "title": "Folgen linearer Wirtschaftsweise und Gegenentwurf",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine lineare Wirtschaftsweise kann zentrale biophysische Systeme wie Klima, Artenvielfalt, Land und Wasser destabilisieren.",
+      "Klimakrise, Verlust der Biodiversität und Übernutzung natürlicher Ressourcen gefährden laut Text nicht nur die Umwelt, sondern auch wirtschaftliche Stabilität und menschliches Wohlergehen.",
+      "Eine nachhaltige Wirtschaft muss innerhalb ökologischer Grenzen agieren und zugleich das Wohlergehen aller Menschen sichern.",
+      "Neue Modelle für eine nachhaltige Transformation setzen unter anderem auf Kreislaufwirtschaft, regenerative Ressourcenströme und soziale Gerechtigkeit.",
+      "Weil lineare Systeme historisch verbreitet sind, sind regenerative Ressourcenströme laut Lernunterlage überflüssig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Klima, Artenvielfalt, Land und Wasser werden als durch lineare Flüsse destabilisierte biophysische Systeme genannt.\n\nDie Aussage ist daher wahr.",
+      "Der Text verknüpft ökologische Folgen ausdrücklich mit wirtschaftlicher Stabilität und Wohlergehen.\n\nDie Aussage ist daher wahr.",
+      "Ökologische Grenzen und Wohlergehen aller Menschen sind die Doppelanforderung an eine nachhaltige Wirtschaft.\n\nDie Aussage ist daher wahr.",
+      "Kreislaufwirtschaft, regenerative Ströme und soziale Gerechtigkeit sind die genannten Bausteine neuer Modelle.\n\nDie Aussage ist daher wahr.",
+      "Gerade weil lineare Muster problematisch sind, fordert der Text neue Modelle mit regenerativen Strömen. „Überflüssig“ widerspricht dem Argument.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.07",
+    "title": "Kreislaufwirtschaft: Kernidee",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "In der Kreislaufwirtschaft werden Abfälle minimiert und Ressourcen möglichst lange im Wirtschaftskreislauf gehalten.",
+      "Wiederverwenden, Reparieren oder Recyceln von Produkten, Materialien und Rohstoffen sind zentrale Strategien der Kreislaufwirtschaft.",
+      "Ziel der Kreislaufwirtschaft ist es unter anderem, den Wert der Ressourcen möglichst lange zu erhalten.",
+      "Kreislaufwirtschaft soll Umweltbelastung reduzieren und zugleich wirtschaftliche Vorteile schaffen.",
+      "Kreislaufwirtschaft bedeutet laut Lernunterlage vor allem, Abfälle möglichst rasch und vollständig zu beseitigen, ohne Materialien erneut zu nutzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Abfälle minimieren und Ressourcen lange im Kreislauf halten – so der Definitionskasten.\n\nDie Aussage ist daher wahr.",
+      "Wiederverwendung, Reparatur und Recycling sind die genannten konkreten Strategien.\n\nDie Aussage ist daher wahr.",
+      "Werterhalt der Ressourcen so lange wie möglich ist ein explizites Ziel.\n\nDie Aussage ist daher wahr.",
+      "Der Text nennt beide Seiten: weniger Umweltbelastung und wirtschaftliche Vorteile.\n\nDie Aussage ist daher wahr.",
+      "Rasche Beseitigung ohne erneute Nutzung ist eher linear (Waste). Kreislaufwirtschaft hält Materialien im System, statt sie nur zu entsorgen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.08",
+    "title": "Verwandte Konzepte der Kreislaufwirtschaft",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Reparaturbonus, Circular Design, langlebige Produkte und Urban Mining werden als verwandte Konzepte zur Kreislaufwirtschaft genannt.",
+      "Circular Design zielt darauf, Produkte so zu gestalten, dass zirkuläre Nutzung leichter möglich wird.",
+      "Urban Mining bezeichnet in diesem Zusammenhang Ansätze, Wertstoffe aus bereits genutzten urbanen Beständen zurückzugewinnen.",
+      "Langlebige Produkte widersprechen dem Ziel, Ressourcen möglichst lange im Wirtschaftskreislauf zu halten.",
+      "Ein Reparaturbonus kann Anreize setzen, Produkte zu reparieren statt sofort zu ersetzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Diese vier Begriffe stehen ausdrücklich im Kasten zu verwandten Konzepten der Kreislaufwirtschaft.\n\nDie Aussage ist daher wahr.",
+      "Circular Design ist darauf angelegt, Kreislauffähigkeit bereits in der Produktgestaltung zu verankern – passend zu Wiederverwendung, Reparatur und Recycling.\n\nDie Aussage ist daher wahr.",
+      "Urban Mining meint die Rückgewinnung von Rohstoffen/Wertstoffen aus bestehenden (städtischen) Materialbeständen statt nur aus Neuabbau.\n\nDie Aussage ist daher wahr.",
+      "Langlebigkeit hält Nutzen und Materialwert länger im System – das unterstützt das Kreislaufziel, widerspricht ihm nicht.\n\nDie Aussage ist daher falsch.",
+      "Ein Reparaturbonus ist ein politisches/ökonomisches Instrument, Reparatur gegenüber Neukauf zu stärken.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.09",
+    "title": "Armut als Herausforderung nachhaltiger Transformation",
+    "context": "Prüfen Sie die Armutsdaten und ihre Rolle für nachhaltige Transformation laut Abschnitt 2.2. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Mit der Transformation der Wirtschaft soll laut Lernunterlage auch weit verbreitete Armut adressiert werden.",
+      "Heute leben fast 700 Millionen Menschen (rund 8,5 % der Weltbevölkerung) in extremer Armut – mit weniger als 2,15 US-Dollar pro Tag.",
+      "Rund 3,5 Milliarden Menschen (44 % der Weltbevölkerung) gelten als arm, wenn man von 6,85 USD pro Tag ausgeht.",
+      "Die Fortschritte bei der Armutsbekämpfung sind laut Text ungebrochen beschleunigt und durch COVID-19 gestärkt worden.",
+      "In Ländern mit niedrigem Einkommen sind die Armutsraten teilweise sogar höher als vor der Krise."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der Übergangssatz vor den Armutsdaten nennt Armut ausdrücklich als drängendes Problem, das mit der Transformation adressiert werden soll.\n\nDie Aussage ist daher wahr.",
+      "Die Zahlen 700 Millionen, 8,5 % und die 2,15-USD-Schwelle stammen aus dem Faktenkasten.\n\nDie Aussage ist daher wahr.",
+      "3,5 Mrd. bzw. 44 % bei 6,85 USD/Tag sind die genannten Werte für die höhere Armutsschwelle.\n\nDie Aussage ist daher wahr.",
+      "Der Text sagt das Gegenteil: Fortschritte sind aufgrund schwachen Wachstums, COVID-19 und zunehmender Fragilität ins Stocken geraten – nicht beschleunigt und gestärkt.\n\nDie Aussage ist daher falsch.",
+      "Genau dieser Befund steht im Faktenkasten zu Ländern mit niedrigem Einkommen.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.10",
+    "title": "Armut regional und in Österreich",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Obwohl Afrika südlich der Sahara nur etwa 16 Prozent der Weltbevölkerung stellt, entfallen dort laut Lernunterlage 67 Prozent der Menschen in extremer Armut.",
+      "In Österreich gelten Menschen als armutsgefährdet, wenn ihr Einkommen unter der Armutsgefährdungsschwelle von 1.572 € pro Monat für einen Einpersonenhaushalt liegt.",
+      "Im Jahr 2023 waren in Österreich rund 14,9 % der Bevölkerung armutsgefährdet, etwa 1.314.000 Personen.",
+      "Die österreichische Armutsgefährdungsschwelle von 1.572 € entspricht laut Text derselben Messlatte wie die weltweite Extremarmutsschwelle von 2,15 USD pro Tag.",
+      "Die Zahl der Menschen unter der 6,85-USD-Schwelle hat sich seit den 1990er Jahren kaum verändert, weil Bevölkerungswachstum Fortschritte weitgehend kompensiert hat."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "16 % der Weltbevölkerung, aber 67 % der extrem Armen – so der regionale Schwerpunkt im Faktenkasten.\n\nDie Aussage ist daher wahr.",
+      "1.572 € monatlich für einen Einpersonenhaushalt ist die genannte österreichische Schwelle.\n\nDie Aussage ist daher wahr.",
+      "14,9 % bzw. rund 1.314.000 Personen im Jahr 2023 stehen so im Text (Statistik Austria).\n\nDie Aussage ist daher wahr.",
+      "Der Text betont ausdrücklich: In Österreich ist die Definition eine andere. Nationale Armutsgefährdung und globale Extremarmut sind nicht dieselbe Messlatte.\n\nDie Aussage ist daher falsch.",
+      "Kaum veränderte Absolute seit den 1990ern wegen kompensierenden Bevölkerungswachstums ist der genannte Befund zur 6,85-USD-Gruppe.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.11",
+    "title": "Das Wachstumsdilemma",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Wirtschaftswachstum wird häufig als zentrale Lösung angesehen, verstanden als Steigerung wirtschaftlicher Aktivitäten.",
+      "Das derzeitige Niveau globaler wirtschaftlicher Aktivität überschreitet bereits mehrere planetare Grenzen.",
+      "Zugleich gilt wirtschaftliches Wachstum vielen als notwendig, um Armut zu reduzieren und gesellschaftliche Entwicklung zu fördern.",
+      "Maßnahmen zur Armutsbekämpfung können durch ökologische Auswirkungen langfristig neue Risiken schaffen, insbesondere wenn sie auf ressourcenintensivem Wachstum basieren.",
+      "Weil Wachstum Armut verringern kann, entfällt laut Lernunterlage jedes Dilemma mit den planetaren Grenzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wachstum als Steigerung wirtschaftlicher Aktivitäten und als vermeintlich zentrale Lösung wird so eingeführt.\n\nDie Aussage ist daher wahr.",
+      "Der Text stellt klar: Mehrere planetare Grenzen sind bereits überschritten.\n\nDie Aussage ist daher wahr.",
+      "Armutsreduktion und gesellschaftliche Entwicklung sind die genannten Gründe, warum Wachstum als notwendig gilt.\n\nDie Aussage ist daher wahr.",
+      "Genau dieses Risiko – neue wirtschaftliche und gesellschaftliche Risiken durch ökologische Folgen ressourcenintensiven Wachstums – formuliert der Text.\n\nDie Aussage ist daher wahr.",
+      "Der scheinbare Widerspruch ist gerade die zentrale Herausforderung. Wachstum als Armutshelfer hebt das Grenzproblem nicht auf.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.12",
+    "title": "Anforderungen an nachhaltige Transformation",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine nachhaltige Transformation erfordert Ansätze, die wirtschaftliche Entwicklung innerhalb biophysischer Grenzen ermöglichen.",
+      "Soziale Gerechtigkeit gehört zu den Zielen dieser Transformation.",
+      "Ökologische Kipppunkte sollen dabei nicht überschritten werden.",
+      "Nachhaltige Transformation bedeutet laut Lernunterlage vor allem, planetare Grenzen bewusst weiter zu überschreiten, um kurzfristig mehr Output zu erzeugen.",
+      "Das Dilemma besteht darin, Armut und Entwicklung zu fördern, ohne die langfristige Fähigkeit zur Bedürfnisbefriedigung ökologisch zu untergraben."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Entwicklung innerhalb biophysischer Grenzen ist die zentrale Anforderung an nachhaltige Transformation.\n\nDie Aussage ist daher wahr.",
+      "Soziale Gerechtigkeit wird ausdrücklich mitgenannt.\n\nDie Aussage ist daher wahr.",
+      "Keine Überschreitung ökologischer Kipppunkte ist Teil der Formulierung.\n\nDie Aussage ist daher wahr.",
+      "Bewusstes Weiterüberschreiten der Grenzen widerspricht dem gesamten Abschnitt. Ziel ist Begrenzung, nicht Beschleunigung der Überschreitung.\n\nDie Aussage ist daher falsch.",
+      "Das ist die kompakte Formulierung des im Text beschriebenen Widerspruchs und seiner Lösungsrichtung.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.13",
+    "title": "Our Common Future und der Brundtland-Bericht",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "„Our Common Future“ wurde 1987 von der Weltkommission für Umwelt und Entwicklung (WCED) veröffentlicht.",
+      "Der Bericht wird manchmal auch als Brundtland-Bericht bezeichnet, weil Gro Harlem Brundtland die Vorsitzende der Kommission war.",
+      "Der Bericht beschreibt sowohl das Ausmaß der Armut als auch Bedrohungen der Nachhaltigkeit.",
+      "Der Brundtland-Bericht hält die Quadratur des Kreises für unmöglich und lehnt jedes Wirtschaftswachstum ab.",
+      "Laut Bericht darf das zur Armutsbekämpfung notwendige Wirtschaftswachstum nicht durch Umweltauswirkungen zu künftigen wirtschaftlichen Problemen führen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Jahr 1987 und WCED sind die genannten Veröffentlichungsangaben.\n\nDie Aussage ist daher wahr.",
+      "Der Alternativname Brundtland-Bericht wird über den Vorsitz von Gro Harlem Brundtland erklärt.\n\nDie Aussage ist daher wahr.",
+      "Armut und Nachhaltigkeitsbedrohungen sind die beiden Inhaltsachsen, die der Text dem Bericht zuschreibt.\n\nDie Aussage ist daher wahr.",
+      "Der Text sagt ausdrücklich: Die Quadratur des Kreises wird für möglich gehalten. Es geht um eine neue Art des Wachstums, nicht um pauschale Wachstumablehnung.\n\nDie Aussage ist daher falsch.",
+      "Genau diese Bedingung – Wachstum ohne künftige Wirtschaftsprobleme durch Umweltfolgen – formuliert der Text.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.14",
+    "title": "Nachhaltige Entwicklung nach Brundtland",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Was gebraucht wird, ist laut Brundtland-Bericht eine neue Art des Wirtschaftswachstums, die die Umwelt weit weniger belastet.",
+      "Diese neue Wachstumsart soll die Fähigkeit des gemeinsamen Systems von Wirtschaft und Umwelt erhöhen, die Menschen zufriedenzustellen – statt Nachhaltigkeit zu gefährden.",
+      "Nachhaltige Entwicklung ist eine Form des Wirtschaftswachstums, die Bedürfnisse und Wünsche der Gegenwart befriedigt, ohne die Fähigkeit des Wirtschafts- und Umweltsystems zu gefährden, diese in der Zukunft zu erfüllen.",
+      "Wege dorthin können Sharing-Modelle, langlebige Designs und Remanufacturing (Wiederaufbereitung gebrauchter Teile) sein.",
+      "Remanufacturing erhöht laut Lernunterlage typischerweise den Rohstoffverbrauch und die Emissionen, ohne wirtschaftliche Chancen zu schaffen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Weniger Umweltbelastung bei neuer Wachstumsart ist die zentrale Forderung des Berichts im Text.\n\nDie Aussage ist daher wahr.",
+      "Erhöhung der Systemfähigkeit zur Zufriedenstellung der Menschen – so die positive Formulierung gegenüber bloßer Gefährdungsvermeidung.\n\nDie Aussage ist daher wahr.",
+      "Das ist die im Text wiedergegebene Definition nachhaltiger Entwicklung.\n\nDie Aussage ist daher wahr.",
+      "Sharing-Modelle, langlebige Designs und Remanufacturing werden ausdrücklich als Wege genannt.\n\nDie Aussage ist daher wahr.",
+      "Der Text sagt das Gegenteil: Remanufacturing spart Rohstoffe, reduziert Emissionen und schafft zugleich neue wirtschaftliche Chancen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.15",
+    "title": "European Green Deal und Politikinstrumente",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Im Rahmen des European Green Deal ist Nachhaltigkeit zu einem Schlüsselbegriff der europäischen Wirtschaftspolitik geworden.",
+      "Die Nachhaltigkeitsberichterstattung ist ab 2022 für große Unternehmen verpflichtend.",
+      "Die EU-Taxonomie soll ökologisches Wirtschaften fördern, etwa durch eine bessere Stellung am Kapitalmarkt.",
+      "Laut Lernunterlage gilt die verpflichtende Nachhaltigkeitsberichterstattung ab 2022 für alle Kleinstunternehmen ohne Ausnahme.",
+      "Der European Green Deal verknüpft Nachhaltigkeit mit konkreten wirtschaftspolitischen Instrumenten, nicht nur mit einer unverbindlichen Floskel."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Schlüsselbegriff der europäischen Wirtschaftspolitik im EGD – so der Text.\n\nDie Aussage ist daher wahr.",
+      "Verpflichtung ab 2022 für große Unternehmen steht ausdrücklich im Text.\n\nDie Aussage ist daher wahr.",
+      "EU-Taxonomie und bessere Kapitalmarktstellung als Förderhebel für ökologisches Wirtschaften werden genannt.\n\nDie Aussage ist daher wahr.",
+      "Der Text beschränkt die Pflicht auf große Unternehmen – nicht auf alle Kleinstunternehmen.\n\nDie Aussage ist daher falsch.",
+      "Berichterstattungspflicht und Taxonomie zeigen: Nachhaltigkeit wird als Politikinstrument operationalisiert.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.16",
+    "title": "Begriffsgeschichte: Forstwirtschaft und Erweiterung",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ursprünglich stammt der Begriff Nachhaltigkeit aus der Forstwirtschaft.",
+      "In der Forstwirtschaft bedeutete Nachhaltigkeit, nicht mehr Bäume zu fällen als nachwachsen können, um dauerhaften Holzertrag und Bestandserhalt zu sichern.",
+      "Dieser Grundgedanke hat sich zu einem umfassenderen Konzept entwickelt, das langfristige ökologische, soziale und ökonomische Entwicklungen umfasst.",
+      "Weil der Begriff ursprünglich forstwirtschaftlich war, darf er laut Lernunterlage heute nicht auf Soziales oder Ökonomie bezogen werden.",
+      "Die Bedeutung von „Nachhaltigkeit“ bleibt im Diskurs oft unklar, obwohl der Begriff häufig verwendet wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Der forstwirtschaftliche Ursprung wird im Abschnitt „Definitionen von Nachhaltigkeit“ genannt.\n\nDie Aussage ist daher wahr.",
+      "Nicht mehr fällen als nachwächst – dauerhafter Ertrag und Bestandserhalt – ist die klassische Formel im Text.\n\nDie Aussage ist daher wahr.",
+      "Die Erweiterung auf ökologische, soziale und ökonomische Langfristentwicklung steht ausdrücklich da.\n\nDie Aussage ist daher wahr.",
+      "Gerade die Erweiterung über die Forstwirtschaft hinaus ist der Punkt. Die Herkunft begrenzt die heutige Begriffsverwendung im Text nicht auf Holz.\n\nDie Aussage ist daher falsch.",
+      "Der Text stellt voran: Der Begriff wird häufig verwendet, seine Bedeutung bleibt jedoch oft unklar.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.17",
+    "title": "Schwache Nachhaltigkeit und das Drei-Säulen-Modell",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Konzept der schwachen Nachhaltigkeit basiert auf dem Drei-Säulen-Modell mit Ökologie, Sozialem und Ökonomie als gleichwertigen Säulen.",
+      "Schwache Nachhaltigkeit geht davon aus, dass Verluste in einem Bereich durch Gewinne in einem anderen ausgeglichen werden können.",
+      "Natürliche Ressourcen können prinzipiell durch menschliches Wissen oder Kapital ersetzt werden, solange die Gesamtsumme aller Kapitalarten konstant bleibt oder wächst.",
+      "Zu den Kapitalarten zählen Naturkapital (z. B. Wälder, Bodenschätze, Biodiversität), Humankapital (Bildung und Qualifikation) und Sachkapital (Produktionsanlagen).",
+      "Schwache Nachhaltigkeit lehnt jede Substituierbarkeit zwischen Naturkapital und anderen Kapitalformen strikt ab."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei gleichwertige Säulen und die Bezeichnung „schwache Nachhaltigkeit“ sind so im Text verankert.\n\nDie Aussage ist daher wahr.",
+      "Ausgleichbarkeit von Verlusten durch Gewinne in anderen Bereichen ist das Kernmerkmal schwacher Nachhaltigkeit.\n\nDie Aussage ist daher wahr.",
+      "Ersetzbarkeit natürlicher Ressourcen durch Wissen/Kapital bei konstantem oder wachsendem Gesamtkapital ist die zentrale Annahme.\n\nDie Aussage ist daher wahr.",
+      "Natur-, Human- und Sachkapital mit diesen Beispielen entsprechen dem Text.\n\nDie Aussage ist daher wahr.",
+      "Die strikte Ablehnung der Substituierbarkeit ist Kennzeichen der starken, nicht der schwachen Nachhaltigkeit. Hier ist die Aussage verdreht.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.18",
+    "title": "Starke Nachhaltigkeit",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Starke Nachhaltigkeit betont die fundamentale Bedeutung ökologischer Systeme und Prozesse für Wirtschaft und Gesellschaft.",
+      "Bestimmte ökologische Funktionen – etwa ein stabiles Klima – gelten als unverzichtbar und durch kein Maß an ökonomischem oder Humankapital ersetzbar.",
+      "Starke Nachhaltigkeit lehnt die Gleichsetzung oder Substituierbarkeit natürlicher Ressourcen mit anderen Kapitalformen ab.",
+      "Stattdessen fordert starke Nachhaltigkeit, natürliche Ökosysteme so weit wie möglich zu erhalten und zu schützen.",
+      "Laut Lernunterlage ist starke Nachhaltigkeit zwar anspruchsvoller, aber für eine nachhaltige Wirtschaft überflüssig, weil schwache Nachhaltigkeit ausreicht."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Fundamentale Bedeutung ökologischer Systeme ist die Einstiegsformel starker Nachhaltigkeit.\n\nDie Aussage ist daher wahr.",
+      "Stabiles Klima als Beispiel einer nicht substituierbaren Funktion steht so im Text.\n\nDie Aussage ist daher wahr.",
+      "Ablehnung von Gleichsetzung/Substituierbarkeit unterscheidet starke von schwacher Nachhaltigkeit.\n\nDie Aussage ist daher wahr.",
+      "Erhalt und Schutz natürlicher Ökosysteme ist die geforderte Konsequenz.\n\nDie Aussage ist daher wahr.",
+      "Der Text nennt starke Nachhaltigkeit anspruchsvoller, aber notwendig, um eine nachhaltige Wirtschaft zu erreichen – nicht überflüssig.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.19",
+    "title": "Tricky Wortlaute: schwach vs. stark und Kreislauf vs. linear",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Wenn Naturkapital durch Sachkapital ersetzt wird und die Summe aller Kapitalarten wächst, entspricht das eher der Logik schwacher als starker Nachhaltigkeit.",
+      "Wer argumentiert, ein stabiles Klima lasse sich beliebig durch mehr Fabriken und Bildungsausgaben ersetzen, widerspricht der starken Nachhaltigkeit.",
+      "„Take – Make – Waste“ und Kreislaufwirtschaft beschreiben in der Lernunterlage denselben Ressourcenfluss.",
+      "Externe Kosten auf künftige Generationen abzuwälzen kann kurzfristig einzelwirtschaftlich lohnend erscheinen und dennoch Nachhaltigkeit untergraben.",
+      "Brundtlands nachhaltige Entwicklung verlangt, Gegenwartsbedürfnisse so zu erfüllen, dass die künftige Erfüllungsfähigkeit des Wirtschafts- und Umweltsystems nicht gefährdet wird."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Substitution bei wachsender/konstanter Gesamtkapitalmenge ist die schwache Logik; starke Nachhaltigkeit weist genau diese Ersetzbarkeit zurück.\n\nDie Aussage ist daher wahr.",
+      "Nicht-Ersetzbarkeit zentraler ökologischer Funktionen ist der Kern starker Nachhaltigkeit; die Aussage benennt den Widerspruch korrekt.\n\nDie Aussage ist daher wahr.",
+      "Take – Make – Waste ist linear; Kreislaufwirtschaft hält Ressourcen im System. Das sind Gegenmodelle, kein identischer Fluss.\n\nDie Aussage ist daher falsch.",
+      "Genau dieses Spannungsfeld – kurzfristiger Anreiz vs. Abwälzung auf Zukunft/Gesellschaft – trägt der Text zu externen Kosten.\n\nDie Aussage ist daher wahr.",
+      "Das ist die Brundtland-Definition nachhaltiger Entwicklung im Wortlaut der Lernunterlage.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "2.2",
+    "case_id": "CASE W2.2.20",
+    "title": "Gesamtzusammenhang Nachhaltigkeit unter Prüfungsdruck",
+    "context": "Analysieren Sie Nachhaltigkeit laut der Lernunterlage „Wirtschaft verstehen“ (Abschnitt 2.2). Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein System kann die Bedürfnisse aller Menschen decken wollen und dennoch nicht nachhaltig sein, wenn es dabei biophysische Grenzen dauerhaft überschreitet.",
+      "Kreislaufwirtschaft allein ersetzt laut Lernunterlage jede Notwendigkeit sozialer Gerechtigkeit.",
+      "Wenn relative Armutsfortschritte durch Bevölkerungswachstum weitgehend kompensiert werden, kann die absolute Zahl armer Menschen trotz einzelner Erfolge kaum sinken – wie im Faktenkasten zur 6,85-USD-Schwelle angedeutet.",
+      "EU-Taxonomie und Nachhaltigkeitsberichterstattung zeigen, dass Nachhaltigkeit im EGD auch über Kapitalmarkt- und Offenlegungsregeln wirksam werden soll.",
+      "Schwache Nachhaltigkeit hält Gesamtkapitalersatz für zulässig; starke Nachhaltigkeit hält bestimmte ökologische Funktionen für nicht substituierbar – beide Aussagen zugleich zu bejahen ist mit dem Text vereinbar."
+    ],
+    "answer_key": [
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Nachhaltigkeit verlangt beides: soziale Bedürfnisdeckung und Einhalten biophysischer Grenzen. Bedürfnisdeckung bei Grenzverletzung reicht nicht.\n\nDie Aussage ist daher wahr.",
+      "Kreislaufwirtschaft ist ein ökologisch-ökonomisches Modell; soziale Gerechtigkeit bleibt ein eigenes Ziel der Transformation. Das eine ersetzt das andere nicht.\n\nDie Aussage ist daher falsch.",
+      "Der Faktenkasten erklärt die kaum veränderte Absolute seit den 1990ern genau über kompensierendes Bevölkerungswachstum.\n\nDie Aussage ist daher wahr.",
+      "Berichterstattungspflicht und Taxonomie/Kapitalmarktstellung sind die genannten EGD-Hebel.\n\nDie Aussage ist daher wahr.",
+      "Das ist die korrekte Gegenüberstellung beider Strömungen im Text; sie schließen sich als Diskurspositionen nicht aus, sondern markieren den Konflikt.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
   }
 ]
