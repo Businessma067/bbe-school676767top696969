@@ -81,7 +81,7 @@ const EXAM_OPTIONS: ExamOption[] = [
   {
     id: "wiso",
     label: "WiSo",
-    title: "Wirtschafts- und Sozialwissenschaften (WiSo)",
+    title: "Business, Economics and Social Sciences (WiSo)",
     description:
       "WU’s German-taught bachelor with a much larger intake (~2,703 places). The exam tests economics fundamentals, Mathematics, and German reading comprehension — not English.",
     differences: [
@@ -213,7 +213,7 @@ export function Index() {
                         )}
                         aria-hidden
                       >
-                        <span className="font-display text-xs font-bold tracking-tight text-primary-foreground">
+                        <span className="font-display text-xs font-bold tracking-tight text-primary-foreground" data-no-i18n>
                           {exam.label}
                         </span>
                       </div>
@@ -222,11 +222,15 @@ export function Index() {
                           "text-xs font-semibold uppercase tracking-wide",
                           isWiso ? "text-indigo-800 dark:text-indigo-300" : "text-primary",
                         )}
+                        data-no-i18n
                       >
                         {exam.label}
                       </p>
                     </div>
-                    <h2 className="mt-4 font-display text-xl font-semibold text-foreground sm:text-2xl">
+                    <h2
+                      className="mt-4 font-display text-xl font-semibold text-foreground sm:text-2xl"
+                      data-no-i18n
+                    >
                       {exam.title}
                     </h2>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
