@@ -421,7 +421,7 @@
     "title": "Fünf getrennte Mischungs- und Legierungsgeschichten",
     "context": "Bewerte jede Aussage. Markiere sie als wahr oder falsch.",
     "statements": [
-      "Eine Wanne hält $40$ Liter ⟦M1�. Geschlossen wird dabei das Wasser. Es wird dann die masseonne nach den nehmerverfahren.",
+      "Ein Bottich enthält $40$ Liter einer $20\\%$-igen Säure. Zehn Liter Wasser werden hinzugefügt. Danach ist der Bottich $16\\%$ Säure.",
       "Davon ausgehend $50$ Liter Gemisch bei $16\\%$, a $50\\%$ Säurevorrat eingegossen, bis die Mischung $25\\%$ Säure. Dann $18$ Liter des Vorrats müssen hinzugefügt werden.",
       "Nachdem dieser Vorrat hinzugefügt wurde, ist das endgültige Volumen $68$ litres.",
       "Das Finale $25\\%$ Mischung enthält $20$ Liter Säure.",
@@ -529,7 +529,7 @@
       "**D.** → Falsch\n\nÜbersetzen Sie den Wortsatz in eine lineare Gleichung und löschen Sie dann die Nenner.\n\nlassen $x$ Sei die Zahl. Addiermittel $1$ und teilen sich durch $5$und das ist gleich $3$ weniger als die Hälfte der Zahl:\n\n$$\\frac{x + 1}{5} = \\frac{x}{2} - 3$$\n\nMultiply through by $10$:\n\n$$2(x + 1) = 5x - 30$$\n\n$$2x + 2 = 5x - 30$$\n\n$$32 = 3x$$\n\n$$x = \\frac{32}{3}$$\n\nDie eindeutige reelle Zahl ist $\\frac{32}{3}$, nicht $12$. Die beanspruchte $12$ würde geben $\\frac{12 + 1}{5} = \\frac{13}{5}$ links und $\\frac{12}{2} - 3 = 3$ rechts.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nBei konstanter Füllrate ist die Zeit proportional zur gefüllten Fraktion.\n\nTwelve minutes fill $\\frac{2}{5}$ des Tanks, so ist die Vollzeit\n\n$$\n12 \\cdot \\frac{5}{2} = 30\n$$\n\nminutes. Der Tank ist voll, nachdem$30$ minutes. Die Behauptung ist die gleiche Zeit.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Fünf unabhängige verschachtelte lineare Ansprüche. Übersetzen Sie jeden Wortsatz in eine Gleichung, klaren Nenner und isolieren Sie das Unbekannte. Aufeinanderfolgende Ganzzahlen, die auf ⟦M0��ie $3n$ zentriert sind.\n\nIsoliere die Unbekannte durch Umkehroperationen: zuerst Addition oder Subtraktion machen, dann durch eine von null verschiedene Koeffizienten dividieren.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; keine Wurzel aus einem anderen Buchstaben neu."
+    "solution_overview": "Fünf unabhängige verschachtelte lineare Ansprüche. Übersetze jeden Satz in eine Gleichung, bereinige Nenner und isoliere die Unbekannte. Aufeinanderfolgende ganze Zahlen um $n$ ergeben in der Summe $3n$.\n\nIsoliere die Unbekannte mit Umkehroperationen: zuerst Addition/Subtraktion rückgängig machen, dann durch einen von null verschiedenen Koeffizienten teilen.\n\nJeder Buchstabe ist ein eigenes Mini-Problem."
   },
   "MATH 4.29": {
     "title": "Verschachtelte Reste, vertauschte Ziffern und ein verzögerter Leck",
@@ -1232,7 +1232,7 @@
       "**D.** → Falsch\n\nDie Fläche eines Rechtecks ist Länge mal Breite:\n\n$$A=\\ell\\cdot w$$\n\nErsatz der wiedergewonnenen Seiten $\\ell=6$ und $w=10$:\n\n$$A=6\\cdot 10$$\n\n$$A=60$$\n\nDas Gebiet ist $60$ cm$^{2}$, nicht $48$. Die angegebene Zahl stimmt nicht überein.\n\nDie Aussage ist falsch.",
       "**E.** → Richtig\n\nWenn die Länge $2$ cm mehr als die Breite,\n\n$$L = W + 2$$\n\n$$L - W = 2$$\n\nDas ist die Eröffnungsbeziehung des $48$ cm$^{2}$ Rechteck. Die Seiten unterscheiden sich durch $2$ cm, ob man zuerst die Breiten zurückgewinnt oder nicht $6$ und $8$. Der Aussage entspricht dieser Beziehung.\n\nDie Aussage ist richtig."
     ],
-    "solution_overview": "Fünf unabhängige quadratische Geschichten: ein Rechteck $2$ cm länger als es mit Fläche $48$ cm$^{2}$, aufeinanderfolgende ganze Zahlen mit Produkt $42$ und eine $6$ von ⟦M5�� auszufüllen\n\nVerschieben Sie jeden Begriff auf eine Seite, Faktor, wenn möglich, und lesen Sie Wurzeln aus Faktoren oder aus der quadratischen Formel. Halten Sie die geometrischen Seitenlängen nicht negativ.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; keine Wurzel aus einem anderen Buchstaben neu."
+    "solution_overview": "Fünf unabhängige quadratische Textaufgaben: ein Rechteck, das $2$ cm länger als breit ist und die Fläche $48$ cm$^{2}$ hat, aufeinanderfolgende ganze Zahlen mit Produkt $42$, sowie eine Flächenprüfung $6\\times 10$.\n\nBringe alle Terme auf eine Seite, faktorisiere wenn möglich und lies die Wurzeln aus den Faktoren oder der pq-/Mitternachtsformel ab. Geometrische Nebenbedingungen (positive Seitenlängen) beachten."
   },
   "MATH 4.66": {
     "title": "Zwei aufeinanderfolgende ganze Zahlen mit Produkt $56$",
@@ -2277,7 +2277,7 @@
       "**D.** → Richtig\n\nDie Gleichung ist $\\sqrt{x + 7} = 5$. Require $x + 7 \\ge 0$, so $x \\ge -7$Beide Seiten sind nicht negativ.$5 \\ge 0$und eine Hauptquadratwurzel ist niemals negativ, daher ist die Quadratur gültig:\n\n$$x + 7 = 5^{2}$$\n\n$$x + 7 = 25$$\n\n$$x + 7 - 7 = 25 - 7$$\n\n$$\n25 - 7 = 18\n$$\n\n$$x = 18$$\n\nDer Wert $18$ liegt in der Domain. Sonde: $\\sqrt{25} = 5$Die Länge ist $18$ m.\n\nDie Aussage ist richtig.",
       "**E.** → Falsch\n\nDer neue Platz hat Fläche $16$ m$^{2}$ Der zusätzliche Boden ist $3$ m$^{2}$, so dass die ursprüngliche Fläche $x$ satisfies $x + 3 = 16$:\n\n$$x = 16 - 3$$\n\n$$\n16 - 3 = 13\n$$\n\n$$x = 13$$\n\nAntragsberichte $19$ m$^{2}$, welches $16 + 3$ statt $16 - 3$. Einsetzen von $x = 19$ in die Radikalgleichung:\n\n$$\n\\sqrt{19 + 3} = \\sqrt{22} \\neq 4\n$$\n\nDer ursprüngliche Bereich ist $13$ m$^{2}$.\n\nDie Aussage ist falsch."
     ],
-    "solution_overview": "Fünf unabhängige radikale Behauptungen. $\\sqrt{x + 3} = 4$ erholt $x = 13$. Ein zweites Quadrat $\\sqrt{x + 7} = 5$ stellt � mich3�\n\nSchließe Werte aus, die eine Nenner null gesetzt, kreuzmultipliziere und prüfe, dass jede gefundene Wurzel in der erlaubten Definitionsmenge liegt.\n\nJeder Buchstabe ist ein eigenes Mini-Problem; keine Wurzel aus einem anderen Buchstaben neu."
+    "solution_overview": "Fünf unabhängige Wurzelaussagen. $\\sqrt{x+3}=4$ liefert $x=13$. Eine zweite Gleichung $\\sqrt{x+7}=5$ liefert $x=18$.\n\nWerte, die einen Nenner null setzen, ausschließen, kreuzweise multiplizieren und prüfen, dass jede gefundene Wurzel in der Definitionsmenge liegt.\n\nJeder Buchstabe ist ein eigenes Mini-Problem."
   },
   "MATH 4.121": {
     "title": "Fünf unabhängige Betrags-Abstandsgleichungen",
