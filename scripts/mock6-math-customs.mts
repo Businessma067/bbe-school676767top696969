@@ -492,59 +492,72 @@ So the statement is False.`,
   };
 }
 
-/** Q29 — crafty power comparisons without plug-in evaluation (ch8). */
+/** Q29 — multi-step exponential rewriting + unique-root traps (ch8). */
 export function buildMathQ29Limits() {
-  const context = `All letters below concern positive real bases and real exponents. Decide whether each statement is true or false without computing a single decimal expansion of a huge integer power.`;
+  const context = `Define, for every real $t$,
 
-  // A: 2^10=1024>10^3=1000 True (small, but OK as one check) — user said no substitution; use comparison identities
-  // Better: (1.1)^2 vs 1.2 — still plug-in-ish
-  // A: For a>1, a^x is increasing in x True
-  // B: 2^{100} > 100^2 because 2^100 = (2^10)^10 = 1024^10 >> 100^2 — still a bit computational
-  // Crafty without heavy plug-in:
-  // A: If 0<a<1 then a^x > a^y whenever x>y>0 False (decreasing)
-  // B: (ab)^n = a^n b^n for all real a,b and integer n≥0 True
-  // C: √(a^2)=a for every real a False (|a|)
-  // D: 4^x = 2^{2x} for all real x True
-  // E: If a>1 and a^x=a^y then x=y True
+$$
+f(t)=2^{3t-1},\\qquad g(t)=\\dfrac{8^{t+1}}{4^{t-2}},\\qquad h(t)=\\bigl(f(t)\\bigr)^{2}\\cdot g(-t).
+$$
+
+Decide whether each statement is true or false. Work by rewriting every expression as a single power of $2$; do not guess from a single plugged-in number alone.`;
+
+  // g(t)=8^{t+1}/4^{t-2}=2^{3(t+1)}/2^{2(t-2)}=2^{3t+3-(2t-4)}=2^{t+7}
+  // f(t)=2^{3t-1}
+  // f=g ⇒ 3t-1=t+7 ⇒ 2t=8 ⇒ t=4 unique
+  // h(t)= (2^{3t-1})^2 * g(-t)=2^{6t-2} * 2^{-t+7}=2^{5t+5}
+  // h(t)=2^{10} ⇒ 5t+5=10 ⇒ 5t=5 ⇒ t=1
+  // f(2)=2^5=32, g(2)=2^9=512, so f(2)<g(2)
+  // claim f≡g False
+  // claim h(t)=2^{5t+5} True
+  // claim the only real root of f=g is t=4 True
+  // claim f(2)>g(2) False
+  // claim h(t)=2^{10} has solution t=0 False (t=1)
 
   const statements = [
-    "If $0<a<1$ and $x>y>0$, then necessarily $a^{x}>a^{y}$.",
-    "For every real $a,b$ and every integer $n\\ge 0$ one has $(ab)^{n}=a^{n}b^{n}$.",
-    "The identity $\\sqrt{a^{2}}=a$ holds for every real number $a$.",
-    "The identity $4^{x}=2^{2x}$ holds for every real $x$.",
-    "If $a>1$ and $a^{x}=a^{y}$, then necessarily $x=y$.",
+    "After rewriting, $g(t)=2^{t+7}$ holds for every real $t$, and therefore $f(t)=g(t)$ for every real $t$.",
+    "The identity $h(t)=2^{5t+5}$ holds for every real $t$.",
+    "The equation $f(t)=g(t)$ has exactly one real solution, namely $t=4$.",
+    "One has $f(2)>g(2)$.",
+    "The equation $h(t)=2^{10}$ has root $t=1$.",
   ];
 
-  const answer_key = [false, true, false, true, true];
+  const answer_key = [false, true, true, false, true];
 
   const tactical_explanations = [
     `**A.** → False
 
-For $0<a<1$ the map $x\\mapsto a^{x}$ is strictly decreasing on $\\mathbb{R}$, so $x>y$ forces $a^{x}<a^{y}$.
+$$
+g(t)=\\dfrac{(2^{3})^{t+1}}{(2^{2})^{t-2}}=2^{3t+3-(2t-4)}=2^{t+7}
+$$
+
+So the first half is correct, but $f(t)=2^{3t-1}$ equals $2^{t+7}$ only when $3t-1=t+7$, i.e. only at $t=4$, not for every $t$.
 
 So the statement is False.`,
 
     `**B.** → True
 
-This is the standard power-of-a-product rule for non-negative integer exponents.
+$$
+h(t)=\\bigl(2^{3t-1}\\bigr)^{2}\\cdot 2^{-t+7}=2^{6t-2-t+7}=2^{5t+5}
+$$
 
 So the statement is True.`,
 
-    `**C.** → False
+    `**C.** → True
 
-$\\sqrt{a^{2}}=|a|$, which equals $a$ only for $a\\ge 0$. Counter-example: $a=-3$.
+$2^{3t-1}=2^{t+7}$ forces $3t-1=t+7$, hence $t=4$ uniquely.
+
+So the statement is True.`,
+
+    `**D.** → False
+
+$f(2)=2^{5}=32$ while $g(2)=2^{9}=512$, so $f(2)<g(2)$.
 
 So the statement is False.`,
 
-    `**D.** → True
-
-$4^{x}=(2^{2})^{x}=2^{2x}$ for every real $x$.
-
-So the statement is True.`,
-
     `**E.** → True
 
-For $a>1$ the exponential $x\\mapsto a^{x}$ is injective, so equal values force equal exponents.
+$2^{5t+5}=2^{10}$ forces $5t+5=10$, hence $t=1$.
 
 So the statement is True.`,
   ];
@@ -552,15 +565,15 @@ So the statement is True.`,
   return {
     case_id: "MATH 8.MOCK.CALIB",
     id: "MATH 8.MOCK.CALIB",
-    title: "Power laws — monotonicity and identity traps without plug-in",
+    title: "Linked exponential rewrites — $f$, $g$, and composite $h$",
     chapter: 8,
-    subsection: "8.2",
+    subsection: "8.4",
     context,
     statements,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `Base in $(0,1)$ reverses inequalities. $(ab)^n=a^n b^n$. $\\sqrt{a^2}=|a|$. $4^x=2^{2x}$. Injectivity for $a>1$.`,
+    solution_overview: `$g=2^{t+7}$, not identically $f$. $h=2^{5t+5}$. $f=g$ only at $t=4$. $f(2)<g(2)$. $h=2^{10}$ at $t=1$.`,
   };
 }
 
@@ -658,64 +671,89 @@ So the statement is False.`,
   };
 }
 
-/** Q31 — long letter-answer logs; variable base as second parameter (ch10). */
+/** Q31 — hard letter-parameter log equation chain (ch10). */
 export function buildMathQ31LogDeriv() {
-  const context = `Let $a>1$, $b>1$, $c>1$ be pairwise distinct real parameters, and let the second slot of each logarithm be allowed to carry an unknown (so bases may be variables). Prefer the definition $\\log_{t}(u)=v\\Leftrightarrow t^{v}=u$ over memorised shortening rules; leave closed forms in letters.
+  const context = `Fix a real parameter $a>1$. Consider the unknown $x>0$ in the long equation
+
+$$
+\\log_{a}(x^{2})+\\log_{a^{3}}(x)-\\log_{\\sqrt{a}}(x)=\\log_{a}\\bigl(a^{4}\\cdot x\\bigr)-3.
+$$
+
+Work from the definition $\\log_{t}(u)=v\\Leftrightarrow t^{v}=u$ (change-of-base through $\\ln$ is allowed only as a bridge). Leave every closed form in letters involving $a$.
 
 Decide whether each statement is true or false.`;
 
-  // A: log_a(x)=b ⇔ x=a^b True
-  // B: log_x(a)=b ⇔ x=a^{1/b}, claim x=a^b False
-  // C: long: log_a(b^{log_b(c)}) = log_a(c) True (b^{log_b c}=c)
-  // D: log_a(b)·log_b(a)=1 True
-  // E: log_a(log_b(c^{log_c(a)})) = log_a(log_b(a)) , claim equals 1 always False
+  // Let L = log_a(x). Then:
+  // log_a(x^2)=2L
+  // log_{a^3}(x)= ln x / ln(a^3)= L/3
+  // log_{√a}(x)= ln x / ln(a^{1/2})= L/(1/2)=2L
+  // RHS: log_a(a^4 · x)-3 = 4 + L - 3 = 1+L
+  // LHS: 2L + L/3 - 2L = L/3
+  // L/3 = 1+L  ⇒ L/3 - L = 1 ⇒ -2L/3 = 1 ⇒ L = -3/2
+  // x = a^{-3/2} = 1/a^{3/2} = 1/(a√a)
+  // Domain: all logs need x>0 (ok), bases a, a^3, √a all >0 and ≠1 (ok since a>1).
+  // Also RHS arg a^4 x >0 ok.
+  // Wait: L/3 = 1+L ⇒ L/3 - L = 1 ⇒ -2L/3 = 1 ⇒ L = -3/2. Yes.
+  // x = a^{-3/2} > 0 True.
+  // Unique? The map L is bijective for x>0 so unique True.
+  // Claim solution x=a^{3/2} False
+  // Claim log_a(x)=-3/2 True
+  // Claim x=a^{-3/2} True
+  // Claim also x=1 solves: LHS: log_a(1)+log_{a^3}(1)-log_√a(1)=0; RHS=log_a(a^4)-3=4-3=1≠0 False
+  // Claim for this x, log_{a^3}(x)= -1/2: L/3=(-3/2)/3=-1/2 True
 
   const statements = [
-    "Solving $\\log_{a}(x)=b$ for the positive unknown $x$ yields the letter form $x=a^{b}$.",
-    "Solving $\\log_{x}(a)=b$ for the unknown base $x>0$, $x\\neq 1$, yields the letter form $x=a^{b}$.",
-    "The long composite $\\log_{a}\\bigl(b^{\\log_{b}(c)}\\bigr)$ simplifies exactly to the single letter-log $\\log_{a}(c)$.",
-    "The product $\\log_{a}(b)\\cdot\\log_{b}(a)$ equals the letter constant $1$.",
-    "The nested tower $\\log_{a}\\bigl(\\log_{b}(c^{\\log_{c}(a)})\\bigr)$ equals $1$ for every admissible $a,b,c$.",
+    "The equation has exactly one positive real solution, and that solution satisfies $\\log_{a}(x)=-\\dfrac32$.",
+    "The unique positive solution is the letter form $x=a^{3/2}$.",
+    "The unique positive solution is the letter form $x=a^{-3/2}$.",
+    "The number $x=1$ also solves the displayed equation when $a>1$.",
+    "At the unique positive solution one has $\\log_{a^{3}}(x)=-\\dfrac12$.",
   ];
 
-  const answer_key = [true, false, true, true, false];
+  const answer_key = [true, false, true, false, true];
 
   const tactical_explanations = [
     `**A.** → True
 
-$\\log_{a}(x)=b$ means $a^{b}=x$, so $x=a^{b}$.
+Put $L=\\log_{a}(x)$. Then
+
+$$
+\\log_{a}(x^{2})=2L,\\qquad \\log_{a^{3}}(x)=\\dfrac{L}{3},\\qquad \\log_{\\sqrt{a}}(x)=2L,
+$$
+
+while the right-hand side is $4+L-3=1+L$. The equation becomes $L/3=1+L$, hence $L=-3/2$. Since $x=a^{L}$ is one-to-one for $x>0$, there is exactly one positive root.
 
 So the statement is True.`,
 
     `**B.** → False
 
-$\\log_{x}(a)=b$ means $x^{b}=a$, hence $x=a^{1/b}$, not $a^{b}$.
+$L=-3/2$ forces $x=a^{-3/2}$, not $a^{3/2}$.
 
 So the statement is False.`,
 
     `**C.** → True
 
-From the definition, $b^{\\log_{b}(c)}=c$, so the outer log becomes $\\log_{a}(c)$.
+That is exactly $x=a^{L}$ with $L=-3/2$.
 
 So the statement is True.`,
 
-    `**D.** → True
+    `**D.** → False
 
-Writing each factor through natural logs gives $\\dfrac{\\ln b}{\\ln a}\\cdot\\dfrac{\\ln a}{\\ln b}=1$.
-
-So the statement is True.`,
-
-    `**E.** → False
-
-First $c^{\\log_{c}(a)}=a$, so the tower is $\\log_{a}(\\log_{b}(a))$. That equals $1$ only in special cases (e.g. $\\log_{b}(a)=a$), not for every admissible triple.
+At $x=1$ the left-hand side is $0$ while the right-hand side equals $\\log_{a}(a^{4})-3=1$.
 
 So the statement is False.`,
+
+    `**E.** → True
+
+$\\log_{a^{3}}(x)=L/3=(-3/2)/3=-1/2$.
+
+So the statement is True.`,
   ];
 
   return {
     case_id: "MATH 10.MOCK.EXPLOGEQ",
     id: "MATH 10.MOCK.EXPLOGEQ",
-    title: "Letter-parameter logs — variable base and nested towers",
+    title: "Mixed-base letter log equation — unique $a^{-3/2}$ root",
     chapter: 10,
     subsection: "10.4",
     context,
@@ -723,7 +761,7 @@ So the statement is False.`,
     answer_key,
     tactical_explanations,
     difficulty_level: "5/5",
-    solution_overview: `$x=a^b$ vs base-unknown $x=a^{1/b}$. $b^{\\log_b c}=c$. Reciprocal product $1$. Nested tower is $\\log_a(\\log_b a)$, not identically $1$.`,
+    solution_overview: `With $L=\\log_a x$: $L/3=1+L\\Rightarrow L=-3/2$, so $x=a^{-3/2}$ uniquely. Not $a^{3/2}$; $x=1$ fails; $\\log_{a^3}x=-1/2$.`,
   };
 }
 

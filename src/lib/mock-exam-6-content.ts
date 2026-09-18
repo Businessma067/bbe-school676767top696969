@@ -110,7 +110,7 @@ export const MOCK_EXAM_6_POINTS_TOTAL =
 
 /** Bump when Mock 6 bank content changes — shown in UI so Lovable preview sync can be verified. */
 export const MOCK_EXAM_6_CONTENT_REV =
-  "2026-09-18f · 34q · Reshoring · Q22/25–31/33–34 harden · tables_markdown";
+  "2026-09-18g · 34q · Reshoring · Q29/Q31 multi-step harden";
 
 function padFive<T>(arr: T[] | undefined, fill: T): T[] {
   const next = (arr ?? []).slice(0, 5);
