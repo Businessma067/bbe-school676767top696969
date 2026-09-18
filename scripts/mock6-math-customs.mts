@@ -514,63 +514,61 @@ Decide whether each statement is true or false. Do not treat the letters as invi
   const tactical_explanations = [
     `**A.** → False
 
-Translate the verbal brief into equations, solve for $x$ in terms of $t$, and read the non-negativity cut.
+Turn the two verbal requirements into equations first:
 
 $$
-2x+y=t,\\qquad y=x+2
+2x+y=t,\qquad y=x+2.
 $$
 
+Eliminate $y$ by substituting the second into the first:
+
 $$
-2x+(x+2)=t\\Rightarrow 3x+2=t\\Rightarrow x=\\dfrac{t-2}{3}
+2x+(x+2)=t\qquad\Rightarrow\qquad 3x+2=t\qquad\Rightarrow\qquad x=\dfrac{t-2}{3}.
 $$
 
-Feasibility needs $x\\ge 0$, hence $t\\ge 2$. For a counterexample take $t=1$: then $x=-1/3<0$, so not every $t>0$ works.
+Then
+
+$$
+y=x+2=\dfrac{t-2}{3}+2=\dfrac{t+4}{3}.
+$$
+
+Non-negativity $x\ge 0$ forces $t\ge 2$ (and then $y$ is automatically positive). The claim says every $t>0$ works. That is too wide: at $t=1$ one gets $x=-1/3<0$, so the schedule is not feasible. One counterexample is enough to kill a universal claim.
 
 So the statement is False.`,
 
     `**B.** → True
 
-The second requirement of the brief is already a strict comparison between the two hour totals, independent of the value of $t$.
-
-$$
-y=x+2
-$$
-
-Whenever a solution pair exists (feasible or not), one automatically has $y>x$. Restricting attention to the feasible region $x\\ge 0$, $y\\ge 0$ does not change that strict inequality.
+The brief itself already requires $y=x+2$. Adding $2$ to $x$ always produces a strictly larger B-total, so every feasible pair (in fact every algebraic pair) satisfies $y>x$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-Two independent linear equalities in two unknowns determine at most one algebraic pair $(x,y)$ for each fixed $t$. The inequalities $x\\ge 0$, $y\\ge 0$ can only accept or reject that pair — they cannot create a second distinct solution.
-
-$$
-\\text{at most one algebraic pair}\\Rightarrow\\text{at most one feasible pair}
-$$
+For a fixed target $t$, the two equalities are a $2\times 2$ linear system with a unique algebraic solution $(x,y)$. The constraints $x\ge 0$ and $y\ge 0$ can only accept or reject that single pair — they never manufacture a second distinct solution. Hence at most one feasible schedule exists for each $t$.
 
 So the statement is True.`,
 
     `**D.** → True
 
-Substitute the boundary value $t=2$ into the closed-form solution obtained in letter A and check non-negativity carefully.
+Feed $t=2$ into the closed forms from letter A:
 
 $$
-x=\\dfrac{2-2}{3}=0,\\qquad y=\\dfrac{2+4}{3}=2
+x=\dfrac{2-2}{3}=0,\qquad y=\dfrac{2+4}{3}=2.
 $$
 
-Both coordinates are non-negative, and the schedule uses no A-hours at all, exactly as claimed.
+Both hours are non-negative, and the A-line is idle ($x=0$). That is exactly a feasible zero-A schedule at $t=2$.
 
 So the statement is True.`,
 
     `**E.** → True
 
-Differentiate (or shift) the closed forms with respect to the target $t$, reading the coefficients of $t$ in each numerator.
+From
 
 $$
-x=\\dfrac{t-2}{3},\\qquad y=\\dfrac{t+4}{3}
+x=\dfrac{t-2}{3},\qquad y=\dfrac{t+4}{3},
 $$
 
-Increasing $t$ by exactly $3$ adds $3/3=1$ to each numerator, so both $x$ and $y$ increase by exactly $1$ on the unique algebraic solution.
+replacing $t$ by $t+3$ adds $3$ to each numerator. Dividing by $3$ therefore adds exactly $1$ to both $x$ and $y$ on the unique algebraic solution of the two equalities.
 
 So the statement is True.`,
   ];
@@ -613,69 +611,53 @@ export function buildMathQ27Ineq() {
   const tactical_explanations = [
     `**A.** → True
 
-An absolute-value equality $|u|=|v|$ splits into the two linear cases $u=v$ and $u=-v$. Solve each case separately.
+Write $|2x-1|=|x+3|$ as the pair of linear cases $2x-1=x+3$ and $2x-1=-(x+3)$.
 
-$$
-2x-1=x+3\\Rightarrow x=4
-$$
-
-$$
-2x-1=-(x+3)\\Rightarrow 2x-1=-x-3\\Rightarrow 3x=-2\\Rightarrow x=-\\dfrac{2}{3}
-$$
-
-Both roots are real and distinct, so there are exactly two real solutions.
+First case: $x=4$. Second case: $2x-1=-x-3$, so $3x=-2$ and $x=-2/3$. Two distinct real roots — exactly as claimed.
 
 So the statement is True.`,
 
     `**B.** → False
 
-Impose the domain of the square root and of the right-hand side before squaring, then check which algebraic candidates survive.
+Before squaring, lock the domain. The square root needs $x+3\ge 0$, and a principal square root is nonnegative, so the right-hand side must satisfy $x-1\ge 0$. Altogether $x\ge 1$.
+
+On that half-line squaring is legitimate:
 
 $$
-x+3\\ge 0\\quad\\text{and}\\quad x-1\\ge 0\\Rightarrow x\\ge 1
+x+3=(x-1)^{2}=x^{2}-2x+1\qquad\Rightarrow\qquad x^{2}-3x-2=0.
 $$
 
+The quadratic formula gives
+
 $$
-x+3=(x-1)^{2}\\Rightarrow x^{2}-3x-2=0\\Rightarrow x=\\dfrac{3\\pm\\sqrt{17}}{2}
+x=\dfrac{3\pm\sqrt{17}}{2}.
 $$
 
-Only the plus root $\\approx 3.56$ satisfies $x\\ge 1$; the minus root is negative. Exactly one real solution, not two.
+Only the plus branch sits above $1$ (roughly $3.56$). The minus branch is negative, so it is outside the domain. Exactly one real solution survives — not two.
 
 So the statement is False.`,
 
     `**C.** → True
 
-The sum of distances from $x$ to $2$ and from $x$ to $-1$ is minimised on the segment joining the two points; compute that minimum explicitly.
+Interpret $|x-2|+|x+1|$ as the sum of distances from $x$ to the fixed points $2$ and $-1$. That sum is minimised on the closed segment joining those points, and on $[-1,2]$ it collapses to the constant
 
 $$
-\\text{on }[-1,2]:\\quad |x-2|+|x+1|=(2-x)+(x+1)=3
+(2-x)+(x+1)=3.
 $$
 
-Outside $[-1,2]$ the sum is strictly larger than $3$. Hence $|x-2|+|x+1|\\ge 3$ for every real $x$.
+Outside the segment the path is longer, so the sum exceeds $3$. Hence the inequality $\ge 3$ holds for every real $x$.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Cube both sides of the displayed equation; cubing is one-to-one on $\\mathbb{R}$, so no extraneous roots appear and the unique candidate is forced.
-
-$$
-\\sqrt[3]{x-1}=2\\Rightarrow x-1=2^{3}=8\\Rightarrow x=9
-$$
-
-The unique real solution is $x=9$, not $x=7$, so the claim fails.
+Cube both sides: $x-1=8$, so $x=9$. Cubing is bijective on $\mathbb{R}$, so $x=9$ is the unique real root. The number $7$ is simply wrong.
 
 So the statement is False.`,
 
     `**E.** → False
 
-An absolute value is never negative, so $|u|\\le 0$ forces $u=0$. Apply that observation to $u=x^{2}-1$ and solve.
-
-$$
-|x^{2}-1|\\le 0\\Rightarrow x^{2}-1=0\\Rightarrow x=\\pm 1
-$$
-
-The solution set is $\\{\\pm 1\\}$, which is nonempty — the claim that there is no real solution therefore fails.
+Absolute values are never negative, so $|u|\le 0$ forces $u=0$. Here $u=x^{2}-1$, and $x^{2}-1=0$ yields $x=\pm 1$. The solution set is nonempty, so the “no real solution” claim fails.
 
 So the statement is False.`,
   ];
@@ -712,81 +694,55 @@ export function buildMathQ28Piecewise() {
   const tactical_explanations = [
     `**A.** → True
 
-Tangency means the equation $f(x)=g(x)$ has a repeated root, i.e. the discriminant of $f-g$ vanishes.
+Tangency of the parabola and the line means $f(x)=g(x)$ has a double root, so the discriminant of the difference must vanish. Form
 
 $$
-f(x)-g(x)=x^{2}-6x+k-(2x+m)=x^{2}-8x+(k-m)
+f(x)-g(x)=x^{2}-6x+k-(2x+m)=x^{2}-8x+(k-m).
 $$
 
-$$
-\\Delta=64-4(k-m)
-$$
+Its discriminant is
 
 $$
-\\Delta=0\\Leftrightarrow 64=4(k-m)\\Leftrightarrow k-m=16\\Leftrightarrow m=k-16
+\Delta=64-4(k-m).
 $$
 
-So tangency holds if and only if $m=k-16$.
+Setting $\Delta=0$ gives $k-m=16$, i.e. $m=k-16$. That is precisely the tangency criterion, both directions.
 
 So the statement is True.`,
 
     `**B.** → True
 
-The vertex of the parabola $f(x)=x^{2}-6x+k$ occurs at the axis of symmetry $x=3$. Require that vertex point to lie on the line $g$.
+The axis of $f(x)=x^{2}-6x+k$ is $x=3$, so the vertex is the point $\bigl(3,f(3)\bigr)$ with $f(3)=k-9$. Asking that point to lie on $g$ means $g(3)=6+m$ equals $k-9$:
 
 $$
-f(3)=9-18+k=k-9
+k-9=6+m\qquad\Rightarrow\qquad m=k-15.
 $$
 
-$$
-g(3)=6+m
-$$
-
-$$
-k-9=6+m\\Leftrightarrow m=k-15
-$$
-
-So the vertex of $f$ lies on $g$ if and only if $m=k-15$, as claimed.
+So the vertex lies on the line if and only if $m=k-15$.
 
 So the statement is True.`,
 
     `**C.** → False
 
-Combine the two independent conditions from letters A and B; they force incompatible values of $m$ for the same parameter $k$.
-
-$$
-m=k-16\\quad\\text{and}\\quad m=k-15
-$$
-
-$$
-k-16=k-15
-$$
-
-which is impossible. No real pair $(k,m)$ can satisfy both the tangency condition and the vertex-on-line condition at once.
+Letters A and B ask for $m=k-16$ and $m=k-15$ at once. Those two expressions for $m$ cannot agree for any real $k$. No such pair $(k,m)$ exists.
 
 So the statement is False.`,
 
     `**D.** → True
 
-Plug the given parameters into the tangency criterion $m=k-16$ already derived in letter A and check for an exact numerical match.
-
-$$
-k=10\\Rightarrow k-16=-6
-$$
-
-The given value $m=-6$ matches exactly, so with $k=10$ and $m=-6$ the graphs of $f$ and $g$ are tangent.
+With $k=10$ the tangency line from A requires $m=10-16=-6$. The given $m=-6$ matches, so the graphs are tangent.
 
 So the statement is True.`,
 
     `**E.** → False
 
-With $m=0$ and $k=20$, compute the discriminant of $f-g$ and read off the number of real intersections carefully.
+Plug $k=20$ and $m=0$ into the discriminant from letter A:
 
 $$
-\\Delta=64-4(k-m)=64-4(20-0)=64-80=-16<0
+\Delta=64-4(20-0)=64-80=-16<0.
 $$
 
-A negative discriminant means no real root of $f(x)=g(x)$, so the equation certainly does not have two distinct real roots.
+No real intersection at all, let alone two distinct roots of $f(x)=g(x)$.
 
 So the statement is False.`,
   ];
@@ -841,81 +797,49 @@ Decide whether each statement is true or false. Work by rewriting every expressi
   const tactical_explanations = [
     `**A.** → False
 
-Rewrite $g$ as a pure power of $2$, then compare exponents with $f$. The first half of the claim is correct; the “therefore identical” half is not.
+Rewrite $g$ with base $2$:
 
 $$
-g(t)=\\dfrac{(2^{3})^{t+1}}{(2^{2})^{t-2}}=\\dfrac{2^{3t+3}}{2^{2t-4}}=2^{3t+3-(2t-4)}=2^{t+7}
+g(t)=\dfrac{8^{t+1}}{4^{t-2}}=\dfrac{(2^{3})^{t+1}}{(2^{2})^{t-2}}=\dfrac{2^{3t+3}}{2^{2t-4}}=2^{3t+3-(2t-4)}=2^{t+7}.
 $$
 
-$$
-f(t)=2^{3t-1}
-$$
-
-Equality of exponents $3t-1=t+7$ forces $t=4$ only, so $f\\equiv g$ fails.
+That confirms the first half of the claim. But $f(t)=2^{3t-1}$, and the exponents $3t-1$ and $t+7$ agree only when $2t=8$, i.e. only at $t=4$. The functions are not identical for every real $t$, so the “therefore $f\equiv g$” leap is false.
 
 So the statement is False.`,
 
     `**B.** → True
 
-Substitute the rewritten forms of $f$ and $g$ into the definition of $h$, remembering to evaluate $g$ at $-t$ rather than at $t$.
+Use $f(t)=2^{3t-1}$ and the rewrite $g(t)=2^{t+7}$ from A, but evaluate $g$ at $-t$:
 
 $$
-h(t)=\\bigl(2^{3t-1}\\bigr)^{2}\\cdot g(-t)=2^{6t-2}\\cdot 2^{-t+7}
+h(t)=\bigl(2^{3t-1}\bigr)^{2}\cdot g(-t)=2^{6t-2}\cdot 2^{-t+7}=2^{5t+5}.
 $$
 
-$$
-h(t)=2^{6t-2-t+7}=2^{5t+5}
-$$
-
-The identity $h(t)=2^{5t+5}$ therefore holds for every real $t$.
+The identity holds for every real $t$.
 
 So the statement is True.`,
 
     `**C.** → True
 
-Set the two single-power forms equal and solve the resulting linear equation in the exponent; uniqueness follows from injectivity of the exponential.
-
-$$
-2^{3t-1}=2^{t+7}
-$$
-
-$$
-3t-1=t+7\\Rightarrow 2t=8\\Rightarrow t=4
-$$
-
-The exponential base $2$ is one-to-one, so $t=4$ is the unique real solution of $f(t)=g(t)$.
+Equate the single-power forms: $2^{3t-1}=2^{t+7}$. Injectivity of the exponential forces $3t-1=t+7$, hence $t=4$. One real root only.
 
 So the statement is True.`,
 
     `**D.** → False
 
-Evaluate both rewritten powers at $t=2$ and compare the resulting integers carefully; the claim asserts the wrong inequality direction.
-
-$$
-f(2)=2^{3\\cdot 2-1}=2^{5}=32
-$$
-
-$$
-g(2)=2^{2+7}=2^{9}=512
-$$
-
-Since $32<512$, one has $f(2)<g(2)$, not the asserted inequality $f(2)>g(2)$.
+At $t=2$: $f(2)=2^{5}=32$ while $g(2)=2^{9}=512$. Then $32<512$, so $f(2)>g(2)$ is the wrong direction.
 
 So the statement is False.`,
 
     `**E.** → True
 
-Use the closed form $h(t)=2^{5t+5}$ from letter B and equate exponents with the constant power $2^{10}$.
+From letter B, $h(t)=2^{5t+5}$. Set that equal to $2^{10}$:
 
 $$
-2^{5t+5}=2^{10}
+5t+5=10\qquad\Rightarrow\qquad t=1.
 $$
 
-$$
-5t+5=10\\Rightarrow 5t=5\\Rightarrow t=1
-$$
-
-So $t=1$ is indeed a root of the equation $h(t)=2^{10}$, matching the claim exactly.
+So $t=1$ really is a root of $h(t)=2^{10}$.
 
 So the statement is True.`,
   ];
