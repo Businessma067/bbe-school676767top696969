@@ -1,6 +1,7 @@
 /**
  * Wirtschaft verstehen (WU WiSo Aufnahmeprüfung) TOC for Full WiSo Course.
- * Chapters 2 and 4 have no BBE/Fuhrmann counterpart — banks stay empty until authored.
+ * Chapter 4 has no BBE/Fuhrmann counterpart — bank stays empty until authored.
+ * Chapter 2 is WiSo-native (partially authored starting with §2.1).
  */
 
 export type WisoEconomicsSubtopic = {
@@ -57,13 +58,13 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
     num: 2,
     title: "Wirtschaft, Gesellschaft und Umwelt",
     enabled: true,
-    blank: true,
+    blank: false,
     subtopics: [
       {
         id: "2.1",
         chapter: 2,
         title: "Einbettung der Wirtschaft in Gesellschaft und Umwelt",
-        hasMappedBank: false,
+        hasMappedBank: true,
       },
       {
         id: "2.2",
@@ -141,7 +142,7 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
 
 /**
  * BBE Fuhrmann subsection → Wirtschaft verstehen subsection.
- * Ch.2 sustainability and Ch.4 digitalisation intentionally omitted (blank).
+ * Ch.2 beyond §2.1 and Ch.4 digitalisation intentionally omitted until authored.
  * BBE marketing (5.x) is not part of the WiSo foundations TOC — excluded.
  * Money/inflation cases are reclassified from basics via keyword override in the build script.
  */
