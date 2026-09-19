@@ -45,8 +45,11 @@ export const SCORING_CONFIG = {
   english: {
     taskCount: ENGLISH_POINTS_PER_TASK.length,
     totalPoints: englishTotal,
-    /** Approximate average; prefer pointsByType / pointsPerTask when known. */
-    defaultMaxPerTask: 2.8,
+    /**
+     * Fallback when English type is unknown. Prefer pointsByType / per-task maxima.
+     * (Average of the official 11-task mix: 31/11 ≈ 2.82 — use vocabulary as safe default.)
+     */
+    defaultMaxPerTask: ENGLISH_POINTS_BY_TYPE.vocabulary,
     pointsByType: ENGLISH_POINTS_BY_TYPE,
     pointsPerTask: ENGLISH_POINTS_PER_TASK,
   },
@@ -57,6 +60,21 @@ export const SCORING_CONFIG = {
 } as const;
 
 export type SubjectKey = "economics" | "math" | "english";
+
+/** Official max points for a practice / builder English task by kind. */
+export function englishMaxPointsForKind(
+  kind: "reading" | "grammar" | "vocabulary" | "text" | undefined | null,
+): number {
+  if (kind === "reading" || kind === "text") return ENGLISH_POINTS_BY_TYPE.text;
+  if (kind === "grammar") return ENGLISH_POINTS_BY_TYPE.grammar;
+  if (kind === "vocabulary") return ENGLISH_POINTS_BY_TYPE.vocabulary;
+  return SCORING_CONFIG.english.defaultMaxPerTask;
+}
+
+/** Default task maximum used on untimed practice pages (by subject). */
+export function practiceDefaultMaxPoints(subject: SubjectKey): number {
+  return SCORING_CONFIG[subject].defaultMaxPerTask;
+}
 
 export const SUBJECT_META: Record<
   SubjectKey,

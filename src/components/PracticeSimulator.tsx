@@ -9,6 +9,8 @@ import {
   practiceExplanationToggleClass,
   practiceSubmitButtonClass,
 } from "@/lib/practice-button-styles";
+import { practiceDefaultMaxPoints } from "@/config/scoring-config";
+import { calculateTaskScoreFromMarks } from "@/lib/scoring";
 import { cn } from "@/lib/utils";
 
 export type SimSubject = "economics" | "math" | "english";
@@ -103,6 +105,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
     () => task.answerKey.filter((a, i) => (answers[i] === true) === a).length,
     [answers, task],
   );
+  const maxPoints = practiceDefaultMaxPoints(subject);
+  const earnedPoints = useMemo(() => {
+    const marks = task.answerKey.map((_, i) => answers[i] === true);
+    return calculateTaskScoreFromMarks(maxPoints, task.answerKey, marks);
+  }, [answers, maxPoints, task.answerKey]);
 
   useEffect(() => {
     let cancelled = false;
@@ -421,8 +428,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
                 )}
               </div>
               {checked && (
-                <span className="text-sm font-semibold text-muted-foreground">
-                  {correctCount}/{task.answerKey.length} correct
+                <span className="text-sm font-semibold tabular-nums text-muted-foreground">
+                  {earnedPoints.toFixed(1)} / {maxPoints} pts
+                  <span className="ml-2 font-normal">
+                    ({correctCount}/{task.answerKey.length} judgments)
+                  </span>
                 </span>
               )}
             </div>

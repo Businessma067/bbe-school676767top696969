@@ -36,6 +36,8 @@ import { recordTaskAttempt } from "@/lib/user-progress";
 import { trackEvent } from "@/lib/activity-tracker";
 import { Collapse } from "@/components/Collapse";
 import { ZoomableImage } from "@/components/ZoomableImage";
+import { SCORING_CONFIG } from "@/config/scoring-config";
+import { calculateTaskScoreFromMarks } from "@/lib/scoring";
 import {
   MATH_CHAPTERS,
   demoMathLockDistance,
@@ -2145,6 +2147,8 @@ const MathTaskCard = memo(function MathTaskCard({
     (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
     0,
   );
+  const maxPoints = SCORING_CONFIG.math.defaultMaxPerTask;
+  const earnedPoints = calculateTaskScoreFromMarks(maxPoints, task.answer_key, answers);
 
   const handleSubmit = () => {
     if (requireAuth && !requireAuth()) return;
@@ -2334,8 +2338,11 @@ const MathTaskCard = memo(function MathTaskCard({
           )}
         </div>
         {checked && !reviewOnly && (
-          <span className="text-sm font-semibold text-muted-foreground">
-            {correctCount}/{task.answer_key.length} correct
+          <span className="text-sm font-semibold tabular-nums text-muted-foreground">
+            {earnedPoints.toFixed(1)} / {maxPoints} pts
+            <span className="ml-2 font-normal">
+              ({correctCount}/{task.answer_key.length} judgments)
+            </span>
           </span>
         )}
       </div>

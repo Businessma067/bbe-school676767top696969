@@ -23,6 +23,8 @@ import {
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { englishMaxPointsForKind } from "@/config/scoring-config";
+import { calculateTaskScoreFromMarks } from "@/lib/scoring";
 import { Collapse } from "@/components/Collapse";
 import {
   DEMO_ENGLISH_FREE_LIMIT,
@@ -1202,6 +1204,8 @@ function CaseCard({
     (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
     0,
   );
+  const maxPoints = englishMaxPointsForKind(data.kind);
+  const earnedPoints = calculateTaskScoreFromMarks(maxPoints, data.answer_key, answers);
 
   const handleSubmit = () => {
     if (requireAuth && !requireAuth()) return;
@@ -1383,7 +1387,10 @@ function CaseCard({
         </div>
         {checked && !reviewOnly && (
           <span className="text-sm font-semibold text-muted-foreground">
-            {correctCount}/{n} correct
+            {earnedPoints.toFixed(1)} / {maxPoints} pts
+            <span className="ml-2 font-normal">
+              ({correctCount}/{n} judgments)
+            </span>
           </span>
         )}
       </div>

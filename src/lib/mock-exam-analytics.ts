@@ -4,6 +4,7 @@ import type { ExamQuestion } from "@/lib/mock-exams";
 import {
   calculateExamScore,
   getWi2Rates,
+  roundTaskScore,
   statementPointDelta,
   type StatementResult,
 } from "@/lib/scoring";
@@ -205,7 +206,7 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
       isTrue: s.isTrue,
       userMarked: s.userMarked,
       judgedOk: s.userMarked === s.isTrue,
-      delta: statementPointDelta(s, rates),
+      delta: roundTaskScore(statementPointDelta(s, rates)),
     }));
     const statementCorrect = judgments.filter((j) => j.judgedOk).length;
     const statementCount = judgments.length;

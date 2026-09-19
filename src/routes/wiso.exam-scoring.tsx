@@ -9,7 +9,6 @@ import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { WisoExamShell, WisoSection } from "@/components/wiso-exam/WisoExamShell";
 import {
   ScoringExampleCard,
-  ScoringExamplesLegend,
   type ScoringExample,
 } from "@/components/bbe-exam/ScoringExampleCard";
 import { WISO_EXAM_FORMAT, WISO_PRACTICE_ROUTES } from "@/config/wiso-exam-hub";
@@ -19,7 +18,6 @@ import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
 const PATH = "/wiso/exam-scoring" as const;
-const MAX_EXAMPLE = SCORING_CONFIG.math.defaultMaxPerTask;
 
 export const Route = createFileRoute("/wiso/exam-scoring")({
   head: () => ({
@@ -92,45 +90,78 @@ function marks(pattern: boolean[], truths: boolean[]): StatementResult[] {
   }));
 }
 
-const EXAMPLE_TRUTHS = [true, true, false, true, false]; // r=3, f=2
+type WorkedEx = {
+  title: string;
+  note: string;
+  maxPoints: number;
+  truths: boolean[];
+  pattern: boolean[];
+};
 
-const workedExamples: ScoringExample[] = [
+/** Same official PDF cases as BBE — WiSo uses the identical Teilpunktesystem engine. */
+const PDF_EXAMPLES: WorkedEx[] = [
   {
-    title: "Perfect selection",
-    pattern: [true, true, false, true, false],
-    note: "You mark all three correct options and leave both incorrect ones blank. Full credit, no penalties.",
-  },
-  {
-    title: "Partial credit with one miss",
+    title: "Multi-correct: full marks",
+    maxPoints: 3,
+    truths: [true, true, false, false, false],
     pattern: [true, true, false, false, false],
-    note: "You mark two correct options and skip the third. Missed credit only — no false-option penalties.",
+    note: "Mark both correct options, leave all false blank → max/r + max/r = 3.",
   },
   {
-    title: "Correct marks plus one wrong tick",
-    pattern: [true, true, true, true, false],
-    note: "All three correct options are marked, but one incorrect option is also marked. The penalty reduces the question total.",
+    title: "Multi-correct: one true + one false",
+    maxPoints: 3,
+    truths: [true, true, false, false, false],
+    pattern: [true, false, true, false, false],
+    note: "One correct mark (+1.5) and one false mark (−1) → 0.5.",
   },
   {
-    title: "Over-ticking cancels progress",
+    title: "Multi-correct: floors at zero",
+    maxPoints: 3,
+    truths: [true, true, false, false, false],
+    pattern: [true, false, false, true, true],
+    note: "One correct (+1.5) minus two false (−1 each) nets −0.5 → floored at 0.",
+  },
+  {
+    title: "Single correct: all-or-nothing",
+    maxPoints: 5,
+    truths: [true, false, false, false, false],
     pattern: [true, true, true, true, true],
-    note: "Marking every option nets credit against both penalties and floors at zero for the question.",
+    note: "Exactly one correct option: marking it with any false option scores 0.",
   },
-].map((ex) => {
-  const statements = marks(ex.pattern, EXAMPLE_TRUTHS);
-  const score = calculateTaskScore(MAX_EXAMPLE, statements);
-  return { ...ex, score, statements };
+  {
+    title: "Single false: half-max penalty",
+    maxPoints: 4,
+    truths: [true, true, true, false, true],
+    pattern: [true, true, true, true, true],
+    note: "Exactly one false option: all trues plus that false → max − max/2 = 2.",
+  },
+  {
+    title: "Single false: partial trues + penalty",
+    maxPoints: 4,
+    truths: [true, true, true, false, true],
+    pattern: [true, true, true, true, false],
+    note: "Three of four trues (+1 each) plus the single false (−2) → 1.",
+  },
+];
+
+const workedExamples: ScoringExample[] = PDF_EXAMPLES.map((ex) => {
+  const statements = marks(ex.pattern, ex.truths);
+  const score = calculateTaskScore(ex.maxPoints, statements);
+  return {
+    title: ex.title,
+    note: ex.note,
+    pattern: ex.pattern,
+    statements,
+    score,
+    maxPoints: ex.maxPoints,
+  };
 });
 
 export function WisoExamScoringPage() {
-  const r = EXAMPLE_TRUTHS.filter(Boolean).length;
-  const f = EXAMPLE_TRUTHS.length - r;
-  const perCorrect = MAX_EXAMPLE / r;
-  const perWrong = MAX_EXAMPLE / f;
-
   return (
     <WisoExamShell
       h1="WU Vienna WiSo Exam Scoring: Teilpunktesystem Explained"
-      lead="WU publishes an official Teilpunktesystem for WiSo. Mechanically it matches BBE’s partial-credit engine — credit for correct marks, penalties for incorrect ones, floor at zero. This page walks through the rules with worked examples."
+      lead="WU publishes an official Teilpunktesystem for WiSo. Mechanically it matches BBE’s partial-credit engine — credit for correct marks, penalties for incorrect ones, floor at zero. This page walks through the rules with worked examples from the same formula."
       heroActions={
         <>
           <WisoPrimaryButton to={WISO_PRACTICE_ROUTES.mockExams}>
@@ -206,6 +237,14 @@ export function WisoExamScoringPage() {
           </p>
         </WisoSection>
 
+        <WisoSection id="single-false" title="Single-false questions">
+          <p>
+            When exactly one option is false (f = 1), marking that false option costs half the question
+            maximum (max / 2). Correct marks still earn max / r each. If you miss some correct options,
+            partial credit still applies with that half-max penalty — same rule as BBE.
+          </p>
+        </WisoSection>
+
         <WisoSection id="minimum-zero" title="Floor at zero">
           <p>
             After credit and penalties are combined, the question score is never reported below zero.
@@ -216,24 +255,15 @@ export function WisoExamScoringPage() {
 
         <WisoSection id="worked-examples" title="Worked scoring examples">
           <p className="text-sm text-muted-foreground">
-            Illustrative multi-correct pattern with max = {MAX_EXAMPLE}, r = {r}, f = {f} (same
-            engine BBE School uses for statement-style practice). Not an official WU sample paper.
+            Examples use the same official partial-credit cases as BBE (and the same scoring engine as
+            mocks and the custom mock builder).
           </p>
-          <ScoringExamplesLegend
-            maxPoints={MAX_EXAMPLE}
-            perCorrect={perCorrect}
-            perWrong={perWrong}
-            r={r}
-            f={f}
-          />
           <div className="mt-6 space-y-6">
             {workedExamples.map((ex) => (
               <ScoringExampleCard
                 key={ex.title}
                 example={ex}
-                maxPoints={MAX_EXAMPLE}
-                perCorrect={perCorrect}
-                perWrong={perWrong}
+                maxPoints={ex.maxPoints ?? 3}
               />
             ))}
           </div>
