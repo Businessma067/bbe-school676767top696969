@@ -1,1 +1,2322 @@
-[]
+[
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.01",
+    "title": "Digitalisierung und digitale Transformation",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Unter Digitalisierung versteht man die Anwendung digitaler Informations- und Kommunikationstechnologie.",
+      "Digitale Transformation bezeichnet die durch diese Anwendung vorangetriebene Veränderung in Wirtschaft, Verwaltung und privatem Bereich.",
+      "Digitalisierung betrifft ausschließlich private Haushalte und lässt Unternehmen und Verwaltung unberührt.",
+      "Technologieeinsatz verändert unter anderem, wie Unternehmen Prozesse steuern, Kunden erreichen und Produkte gestalten.",
+      "„Digitalisierung“ und „digitale Transformation“ werden im Text als eng zusammenhängende Begriffe eingeführt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Genau so definiert der Text Digitalisierung: Anwendung digitaler IKT.\n\nDie Aussage ist daher wahr.",
+      "Digitale Transformation meint die dadurch ausgelöste Veränderung in Teilen von Wirtschaft, Verwaltung und Privatbereich.\n\nDie Aussage ist daher wahr.",
+      "Der Text nennt ausdrücklich Wirtschaft, Verwaltung und privaten Bereich – nicht nur Haushalte.\n\nDie Aussage ist daher falsch.",
+      "Prozesse, Kundenkontakt und Produktgestaltung sind die im Einstieg genannten Wirkungsfelder.\n\nDie Aussage ist daher wahr.",
+      "Digitalisierung wird als Anwendung, digitale Transformation als die daraus folgende Veränderung eingeführt.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.02",
+    "title": "Drei Dimensionen der Digitalisierung – Überblick",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Digitalisierung eines Unternehmens lässt sich entlang dreier Dimensionen veranschaulichen.",
+      "Die erste Dimension betrifft Geschäftsprozesse hinter den Kulissen (Backstage) und die Wertschöpfung.",
+      "Die zweite Dimension ist die Frontstage: die Verbindung zwischen Kunden und Unternehmen.",
+      "Die dritte Dimension betrifft die Digitalisierung von Produkten und Dienstleistungen („smart“).",
+      "Unternehmen dürfen sich laut Text immer nur auf genau eine Dimension konzentrieren und nie mehrere kombinieren."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Dimensionen strukturieren die Möglichkeiten der Veränderung im Unternehmenskontext.\n\nDie Aussage ist daher wahr.",
+      "Backstage-Prozesse unterstützen die Wertschöpfung und werden digital erweitert und gesteuert.\n\nDie Aussage ist daher wahr.",
+      "Frontstage meint den externen Fokus rund um den Kunden und die Gestaltung von Angeboten.\n\nDie Aussage ist daher wahr.",
+      "Die dritte Dimension adressiert smarte bzw. digitalisierte Produkte und Dienstleistungen.\n\nDie Aussage ist daher wahr.",
+      "Unternehmen können sich gezielt auf eine oder mehrere Dimensionen konzentrieren und daraus eine Strategie ableiten.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.03",
+    "title": "Backstage: Wertschöpfung und Prozesse",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der interne Fokus eines Unternehmens liegt auf der wirtschaftlichen Nutzung von Ressourcen zur Erstellung von Produkten und Dienstleistungen.",
+      "Wertschöpfung bedeutet, dass im Unternehmen ein Wert geschaffen wird.",
+      "Geschäftsprozesse hinter den Kulissen (Backstage) unterstützen die Wertschöpfung.",
+      "Digitale Systeme erweitern und steuern solche Prozesse zunehmend – es entsteht ein digital unterstützter Geschäftsprozess.",
+      "Backstage-Prozesse sind ausschließlich Marketing-Maßnahmen gegenüber Endkunden und haben nichts mit interner Steuerung zu tun."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Interner Fokus = Ressourcen wirtschaftlich nutzen und daraus Produkte/DL erstellen.\n\nDie Aussage ist daher wahr.",
+      "Wertschöpfung ist die Schaffung von Wert im Unternehmen.\n\nDie Aussage ist daher wahr.",
+      "Backstage-Prozesse stützen genau diese Wertschöpfung.\n\nDie Aussage ist daher wahr.",
+      "Systeme erweitern und steuern Arbeitsschritte digital – digital unterstützter Geschäftsprozess.\n\nDie Aussage ist daher wahr.",
+      "Backstage ist der interne Fokus hinter den Kulissen, nicht die externe Kundenkommunikation.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.04",
+    "title": "Was ist ein Geschäftsprozess?",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Geschäftsprozess ist ein komplexer Arbeitsablauf aus mehreren logisch zusammenhängenden Aktivitäten.",
+      "Er leistet einen Beitrag (Wert) zu einem betriebswirtschaftlichen Ziel.",
+      "Geschäftsprozesse können wiederholt durchgeführt werden.",
+      "Sie haben einen klar definierten Anfang und ein oder mehrere definierte Enden.",
+      "Ein Geschäftsprozess besteht aus genau einer isolierten Aktivität ohne logischen Zusammenhang zu anderen Schritten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Mehrere logisch zusammenhängende Aktivitäten bilden den Prozess.\n\nDie Aussage ist daher wahr.",
+      "Wertbeitrag zu einem betriebswirtschaftlichen Ziel ist Teil der Definition.\n\nDie Aussage ist daher wahr.",
+      "Wiederholbarkeit ist ausdrücklich genannt.\n\nDie Aussage ist daher wahr.",
+      "Klarer Anfang und ein oder mehrere Enden gehören zur Definition.\n\nDie Aussage ist daher wahr.",
+      "Gerade der logische Zusammenhang mehrerer Aktivitäten macht den Geschäftsprozess aus.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.05",
+    "title": "Prozessdokumentation und Prozessmodell",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Festhalten eines Prozesses in einem digitalen System wird auch als Dokumentation bezeichnet.",
+      "Dokumentation hilft Mitarbeitenden, den Prozess zu kommunizieren.",
+      "Ein visuelles Abbild eines Prozesses nennt man auch Prozessmodell.",
+      "Ein Prozessmodell kann Neuen (z. B. Praktikantinnen) einen ersten Überblick über zentrale Abläufe geben.",
+      "Prozessmodelle sind überflüssig, weil digitale Systeme Prozesse ohnehin unsichtbar und undokumentierbar machen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Dokumentation = Prozess digital festhalten.\n\nDie Aussage ist daher wahr.",
+      "Kommunikation des Prozesses im Unternehmen ist ein genannter Nutzen.\n\nDie Aussage ist daher wahr.",
+      "Prozessmodell = visuelle Darstellung des Ablaufs.\n\nDie Aussage ist daher wahr.",
+      "Das Praktikum-Beispiel im Text nutzt genau diesen Überblick-Nutzen.\n\nDie Aussage ist daher wahr.",
+      "Im Gegenteil: Dokumentation und Modelle machen Abläufe kommunizierbar und nachvollziehbar.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.06",
+    "title": "Beispiel Thalia: digitaler Bestellprozess",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei einer Online-Bestellung bei einem Buchhändler wie Thalia werden im Hintergrund sofort Schritte veranlasst.",
+      "Ein internes System fasst die Bestellung zusammen und benachrichtigt die nächste freie Mitarbeiterin.",
+      "Detailschritte können Lagerabruf, Produktauswahl sowie Vorbereitung für Abholung oder Versand umfassen.",
+      "Der Prozess endet mit Lieferung oder Bereitstellung zur Abholung; die Bearbeitung wird im System markiert.",
+      "Sobald die Bestellung online aufgegeben ist, endet jeder interne Prozess sofort – Lager und Versand spielen keine Rolle mehr."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Hintergrundprozesse starten unmittelbar nach der Online-Bestellung.\n\nDie Aussage ist daher wahr.",
+      "Systemzusammenfassung und Benachrichtigung der Mitarbeitenden sind Teil des Beispiels.\n\nDie Aussage ist daher wahr.",
+      "Genau solche Detailschritte werden genannt.\n\nDie Aussage ist daher wahr.",
+      "Ende bei Lieferung/Abholung und Markierung der erfolgreichen Bearbeitung.\n\nDie Aussage ist daher wahr.",
+      "Gerade Lager, Vorbereitung und Statusinfo sind zentrale Folgeschritte des digitalen Prozesses.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.07",
+    "title": "Frontstage: Kundenorientierung",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Frontstage-Dimension versteht sich als Verbindung zwischen Kunden und Unternehmen.",
+      "Hier liegt der externe Fokus und die Orientierung rund um den Kunden.",
+      "Es geht um die Gestaltung von Angeboten im Sinne des Kunden; Anforderungen und Bedürfnisse der Nutzerinnen stehen im Vordergrund.",
+      "Digitalisierung bietet neue Potenziale, Nutzerwünsche effizienter und gezielter zu berücksichtigen.",
+      "Frontstage meint ausschließlich die interne Buchhaltung und hat keinen Bezug zu Kunden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Frontstage = Verbindung Kunde–Unternehmen.\n\nDie Aussage ist daher wahr.",
+      "Externer Fokus und Kundenorientierung sind zentral.\n\nDie Aussage ist daher wahr.",
+      "Angebotsgestaltung entlang von Nutzerbedürfnissen.\n\nDie Aussage ist daher wahr.",
+      "Genau dieses Potenzial schreibt der Text der Digitalisierung zu.\n\nDie Aussage ist daher wahr.",
+      "Frontstage ist der externe Kundenfokus, nicht die interne Buchhaltung.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.08",
+    "title": "Wer ist „der Kunde“?",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Kunde kann je nach Umfeld eine Privatperson sein.",
+      "Der Kunde kann auch ein Unternehmen sein.",
+      "Der Kunde kann eine öffentliche Institution sein.",
+      "Im Frontstage-Kontext ist „Kunde“ immer nur die einzelne Privatperson am Smartphone.",
+      "Kundenorientierung betrifft die Gestaltung von Angeboten anhand von Anforderungen und Bedürfnissen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Privatperson ist eine genannte Kundenrolle.\n\nDie Aussage ist daher wahr.",
+      "Unternehmen als Kunde ist ausdrücklich möglich.\n\nDie Aussage ist daher wahr.",
+      "Öffentliche Institution ist die dritte genannte Ausprägung.\n\nDie Aussage ist daher wahr.",
+      "Der Text betont die Vielfalt der Kundenrollen, nicht die Verengung auf Privatpersonen.\n\nDie Aussage ist daher falsch.",
+      "Anforderungen und Bedürfnisse der Nutzerinnen stehen im Vordergrund.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.09",
+    "title": "Humanic: 3D-Fußscanner als Frontstage-Potenzial",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Humanic nutzt einen 3D-Fußscanner, um Passform-Anforderungen der Nutzerinnen festzuhalten.",
+      "Der Scanner erzeugt ein 3D-Bild der Füße und speichert es online im Kundenkonto.",
+      "Vor Ort und bei späteren Online-Bestellungen kann der digitale Fußabdruck mit Schuhmodellen abgeglichen werden.",
+      "Das Beispiel illustriert, wie Digitalisierung Kundenwünsche gezielter berücksichtigen kann.",
+      "Der Fußscanner ersetzt laut Text vollständig jedes physische Schuhgeschäft und macht Filialen überflüssig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "3D-Fußscanner als neuartiger Service vor Ort und via App.\n\nDie Aussage ist daher wahr.",
+      "3D-Bild und Speicherung im Kundenkonto gehören zum Beispiel.\n\nDie Aussage ist daher wahr.",
+      "Abgleich digitaler Fußabdruck ↔ Schuhmodell für optimale Passform.\n\nDie Aussage ist daher wahr.",
+      "Es ist das Lehrbuchbeispiel für Frontstage-Potenzial.\n\nDie Aussage ist daher wahr.",
+      "Das Beispiel ergänzt den Service; es behauptet keine Abschaffung aller Filialen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.10",
+    "title": "Dritte Dimension: smarte Produkte und Dienstleistungen",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die dritte Dimension befasst sich damit, wie das Ergebnis der Wertschöpfung durch Technologie erweitert werden kann.",
+      "„Smart“ meint hier die Digitalisierung von Produkten und Dienstleistungen.",
+      "Digitalisierung kann im einfachsten Fall eine Ergänzung oder Erweiterung darstellen.",
+      "Im besten Fall prägt Digitalisierung das Kundenerlebnis nachhaltig.",
+      "Smarte Produkte bedeuten laut Text ausschließlich, dass auf dem Produkt ein QR-Code ohne weiteren Nutzen klebt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Erweiterung des Wertschöpfungsergebnisses durch Technologie.\n\nDie Aussage ist daher wahr.",
+      "Digitalisierung von Produkten/DL ist der Kern von „smart“ hier.\n\nDie Aussage ist daher wahr.",
+      "Einfache Ergänzung ist die Minimalform.\n\nDie Aussage ist daher wahr.",
+      "Nachhaltige Prägung des Erlebnisses ist die anspruchsvollere Form.\n\nDie Aussage ist daher wahr.",
+      "„Smart“ zielt auf echte Erweiterung des Erlebnisses, nicht auf belanglose Dekoration.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.11",
+    "title": "Lego: von analog über PDF zu smartem Erlebnis",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Lego-Spielen ist zunächst ein analoges Erlebnis.",
+      "Eine digital bereitgestellte Anleitung als PDF ist eine einfache digitale Ergänzung zum analogen Produkt.",
+      "Eine digitale Erkundungsmission, die je nach Verlauf anderes Zusammenbauen ermöglicht, erweitert das Erlebnis stärker.",
+      "Solch eine Erweiterung kann die Bindung zum Produkt steigern und ein positives digitalisiertes Kundenerlebnis schaffen.",
+      "Laut Text ist eine PDF-Anleitung bereits die maximale Form smarter Digitalisierung und ununterscheidbar von einer Erkundungsmission."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Analoges Ausgangserlebnis wird klar benannt.\n\nDie Aussage ist daher wahr.",
+      "PDF-Anleitung = einfache digitale Ergänzung.\n\nDie Aussage ist daher wahr.",
+      "Erkundungsmission = Potenzial, das Erlebnis zu erweitern.\n\nDie Aussage ist daher wahr.",
+      "Bindung und positives digitalisiertes Erlebnis werden ausdrücklich genannt.\n\nDie Aussage ist daher wahr.",
+      "Der Text unterscheidet bewusst einfache Ergänzung und erlebnisprägende Erweiterung.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.12",
+    "title": "Digitalisierungsstrategie und Digital Business",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Entlang der drei Dimensionen lässt sich eine Digitalisierungsstrategie ableiten.",
+      "Die Strategie hilft dem Unternehmen, zukünftige Entscheidungen einer klaren Vision folgen zu lassen.",
+      "Im Gesamten führt dies zur Digitalisierung des Unternehmens – dem „Digital Business“.",
+      "Erfolgreiche digitale Transformation basiert darauf, sinnvolle Aspekte durch digitale Technologien zu erweitern.",
+      "Eine Digitalisierungsstrategie ist überflüssig, weil Dimensionen und Vision keinen Einfluss auf Entscheidungen haben."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Strategieableitung aus den Dimensionen.\n\nDie Aussage ist daher wahr.",
+      "Entscheidungen und klare Vision sind der Nutzen.\n\nDie Aussage ist daher wahr.",
+      "„Digital Business“ = Digitalisierung des Unternehmens im Gesamten.\n\nDie Aussage ist daher wahr.",
+      "Sinnvolle Erweiterung von Abläufen, Kommunikation, Kundenbedürfnissen usw.\n\nDie Aussage ist daher wahr.",
+      "Gerade Strategie und Vision sollen Entscheidungen strukturieren.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.13",
+    "title": "Transformation: Nutzen erweitern, nicht behindern",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Transformation soll nicht im Weg stehen.",
+      "Nutzen und Erlebnis eines Produkts oder einer Dienstleistung sollen möglichst innovativ erweitert werden.",
+      "Erfolgreiche Digitalisierung erweitert u. a. Abfolgen von Arbeitsschritten und die Berücksichtigung von Kundenbedürfnissen.",
+      "Digitale Transformation gelingt vor allem dann, wenn Technologie sinnvolle Aspekte im Unternehmen erweitert.",
+      "Digitale Transformation bedeutet laut Text, bestehende Nutzen und Erlebnisse möglichst zu verschlechtern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Explizite Leitlinie: Transformation soll nicht im Weg stehen.\n\nDie Aussage ist daher wahr.",
+      "Innovatives Erweitern von Nutzen und Erlebnis.\n\nDie Aussage ist daher wahr.",
+      "Arbeitsschritte, Kommunikation, Kundenbedürfnisse u. a. werden genannt.\n\nDie Aussage ist daher wahr.",
+      "Sinnvolle Erweiterung durch digitale Technologien ist der Erfolgsanker.\n\nDie Aussage ist daher wahr.",
+      "Ziel ist Erweiterung und Innovation – nicht Verschlechterung.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.14",
+    "title": "Tricky: Digitalisierung ≠ nur Online-Shop",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Digitalisierung umfasst auch die digitale Unterstützung interner Geschäftsprozesse (Backstage).",
+      "Eine reine Frontstage-App ohne Prozessbezug wäre nur ein Teilaspekt, nicht die gesamte Transformation.",
+      "Die Digitalisierung von Produkten und Dienstleistungen ist eine eigene Dimension neben Backstage und Frontstage.",
+      "Wer Digitalisierung nur als „Website bauen“ versteht, verfehlt die drei Dimensionen.",
+      "Laut Text reicht es aus, einmalig eine Website zu erstellen; Backstage und Produktgestaltung sind irrelevant."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Backstage ist die erste Dimension.\n\nDie Aussage ist daher wahr.",
+      "Frontstage allein deckt nicht alle Dimensionen ab.\n\nDie Aussage ist daher wahr.",
+      "Produkt-/DL-Digitalisierung ist Dimension drei.\n\nDie Aussage ist daher wahr.",
+      "Genau diese Verengung widerspricht dem Dreidimensionen-Modell.\n\nDie Aussage ist daher wahr.",
+      "Strategie und Dimensionen gehen weit über eine Website hinaus.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.15",
+    "title": "Backstage vs. Frontstage – Abgrenzung",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Backstage betrifft die interne Wertschöpfung und Prozesse hinter den Kulissen.",
+      "Frontstage betrifft die kundenbezogene Gestaltung von Angeboten und die Verbindung zum Nutzer.",
+      "Statusinformationen an Kundinnen nach einer Online-Bestellung berühren die Kundenschnittstelle und sind kein rein internes Buchhaltungsdetail.",
+      "Ein Prozessmodell für den Einkauf dient vor allem der internen Kommunikation und Orientierung.",
+      "Frontstage und Backstage sind synonyme Bezeichnungen für dieselbe Dimension."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Interne Wertschöpfung = Backstage.\n\nDie Aussage ist daher wahr.",
+      "Kundenverbindung = Frontstage.\n\nDie Aussage ist daher wahr.",
+      "Kundenstatus gehört zur kundenseitigen Information im Prozessbeispiel.\n\nDie Aussage ist daher wahr.",
+      "Prozessmodell als interner Überblick (z. B. Praktikum im Einkauf).\n\nDie Aussage ist daher wahr.",
+      "Es sind zwei klar getrennte Dimensionen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.16",
+    "title": "Wertschöpfung und digital unterstützte Arbeitsschritte",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Innerhalb digital unterstützter Prozesse können Personen Überblick bewahren und Entscheidungen schneller und gezielter treffen.",
+      "Digitale Systeme können Arbeitsschritte unterstützen und steuern.",
+      "Ohne jegliche Prozesslogik entsteht trotzdem automatisch ein Geschäftsprozess, sobald Software installiert ist.",
+      "Wertschöpfung bleibt der Bezugspunkt der Backstage-Dimension.",
+      "Entscheidungen werden durch bessere Prozessübersicht eher erschwert als erleichtert."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Überblick und schnellere, gezieltere Entscheidungen sind genannte Vorteile.\n\nDie Aussage ist daher wahr.",
+      "Erweiterung und Steuerung von Arbeitsschritten durch Systeme.\n\nDie Aussage ist daher wahr.",
+      "Ein Geschäftsprozess braucht logisch zusammenhängende Aktivitäten und Zielbeitrag – Software allein reicht nicht.\n\nDie Aussage ist daher falsch.",
+      "Backstage stützt Wertschöpfung.\n\nDie Aussage ist daher wahr.",
+      "Der Text betont schnellere und gezieltere Entscheidungen – nicht Erschwerung.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.17",
+    "title": "Kundenkonto und digitale Fußabdrücke",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Speicherung eines 3D-Fußbildes im Kundenkonto verknüpft Frontstage-Service und digitale Kundendaten.",
+      "Der Abgleich von Fußabdruck und Schuhmodell zielt auf optimale Passform.",
+      "Solche Services zeigen Potenzial, Frustration durch falsche Größen zu reduzieren.",
+      "Frontstage-Innovationen können vor Ort und online greifen.",
+      "Digitale Kundendaten im Kundenkonto widersprechen dem Frontstage-Gedanken und gehören nur zur Buchhaltung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Humanic-Beispiel: Scan → Kundenkonto.\n\nDie Aussage ist daher wahr.",
+      "Passform-Abfrage ist das Ziel.\n\nDie Aussage ist daher wahr.",
+      "Falsche Größen und Frustration sind der Ausgangsproblemkontext.\n\nDie Aussage ist daher wahr.",
+      "Service vor Ort und via App / Online-Bestellung.\n\nDie Aussage ist daher wahr.",
+      "Kundendaten im Konto dienen gerade der kundenorientierten Frontstage.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.18",
+    "title": "Tricky: „smart“ vs. bloße Digitalisierung",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine PDF-Anleitung digitalisiert Information, erweitert das Spielerlebnis aber nur schwach.",
+      "Eine missionsabhängige digitale Erweiterung kann das Erlebnis „smart“ anfühlen lassen.",
+      "Produktbindung kann durch erweiterte digitale Erlebnisse steigen.",
+      "Jede digitale Datei am Produkt ist automatisch die höchste Form smarter Digitalisierung.",
+      "Die dritte Dimension unterscheidet Intensitätsstufen der Produkt-/DL-Digitalisierung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "PDF = einfache Ergänzung.\n\nDie Aussage ist daher wahr.",
+      "Erkundungsmission = erlebnisprägende Erweiterung.\n\nDie Aussage ist daher wahr.",
+      "Gesteigerte Bindung wird genannt.\n\nDie Aussage ist daher wahr.",
+      "Der Text unterscheidet Stufen; nicht jede Datei ist „smart“ im starken Sinn.\n\nDie Aussage ist daher falsch.",
+      "Von Ergänzung bis nachhaltiger Erlebnisprägung.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.19",
+    "title": "Strategie: Fokus auf eine oder mehrere Dimensionen",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Unternehmen können sich auf eine Dimension konzentrieren.",
+      "Unternehmen können mehrere Dimensionen kombinieren.",
+      "Aus dem Dimensionsfokus lässt sich eine Digitalisierungsstrategie ableiten.",
+      "Digital Business meint die Digitalisierung des Unternehmens im Gesamten.",
+      "Wer alle drei Dimensionen ignoriert, folgt trotzdem automatisch einer klaren Digitalisierungsvision."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ein-Dimensionen-Fokus ist erlaubt.\n\nDie Aussage ist daher wahr.",
+      "Mehrere Dimensionen sind ebenfalls möglich.\n\nDie Aussage ist daher wahr.",
+      "Strategieableitung ist der nächste Schritt.\n\nDie Aussage ist daher wahr.",
+      "Digital Business = Gesamtdigitalisierung.\n\nDie Aussage ist daher wahr.",
+      "Ohne Dimensionsbezug und Vision fehlt genau die strategische Klarheit.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.1",
+    "case_id": "CASE W4.1.20",
+    "title": "Gesamtzusammenhang digitale Transformation",
+    "context": "Analysieren Sie die digitale Transformation entlang der drei Dimensionen der Digitalisierung. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Digitalisierung (IKT-Anwendung) und digitale Transformation (Veränderung) gehören zusammen gedacht.",
+      "Backstage, Frontstage und smarte Produkte/DL bilden die drei Dimensionen.",
+      "Geschäftsprozesse brauchen logischen Zusammenhang, Wiederholbarkeit sowie definierten Anfang und Enden.",
+      "Erfolgreiche Transformation erweitert Nutzen und Erlebnis innovativ, statt im Weg zu stehen.",
+      "Digitale Transformation beschränkt sich laut Text auf die Umbenennung der IT-Abteilung ohne Prozess-, Kunden- oder Produktbezug."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Anwendung und daraus folgende Veränderung sind gekoppelt.\n\nDie Aussage ist daher wahr.",
+      "Die Dreiteilung ist das Kernmodell von §4.1.\n\nDie Aussage ist daher wahr.",
+      "Definition des Geschäftsprozesses.\n\nDie Aussage ist daher wahr.",
+      "Leitlinie Nutzen/Erlebnis erweitern.\n\nDie Aussage ist daher wahr.",
+      "Transformation betrifft Prozesse, Kunden und Produkte entlang der Dimensionen – nicht nur Umbenennung.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.01",
+    "title": "Digitale Ergänzungen im Alltag",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Bei den Wiener Linien kann der Fahrkartenkauf durch eine App ergänzt werden.",
+      "Über ein Kundenkonto lassen sich Fahrkarten digital verwalten und vorweisen.",
+      "Lebensmittellieferdienste ermöglichen, Einkäufe nach Hause liefern zu lassen.",
+      "Lebensmittelhändler selbst können solche Lieferdienstleistungen ebenfalls anbieten.",
+      "Digitale Tickets und Lieferdienste haben laut Text keinerlei Bezug zu Technologie oder Geschäftsmodellen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wiener-Linien-App als Ergänzung.\n\nDie Aussage ist daher wahr.",
+      "Digitale Verwaltung und Vorweis über Kundenkonto.\n\nDie Aussage ist daher wahr.",
+      "Gurkerl, Flink, Mjam u. a. als Beispiele.\n\nDie Aussage ist daher wahr.",
+      "Billa, Hofer, Interspar u. a. bieten Lieferdienst selbst an.\n\nDie Aussage ist daher wahr.",
+      "Gerade Technologie und neue Geschäftsmodelle sind der Punkt des Kapitels.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.02",
+    "title": "Was ist ein Geschäftsmodell?",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Geschäftsmodell beschreibt, wie ein Unternehmen auf Basis einer Geschäftsidee ein Produkt oder eine Dienstleistung erzeugt, bereitstellt und vertreibt.",
+      "Dabei werden eingesetzte Ressourcen und Einnahmen gegenübergestellt, um Gewinn zu erwirtschaften (Wertschöpfung).",
+      "Geschäftsmodelle haben nichts mit Erzeugung, Bereitstellung oder Vertrieb zu tun.",
+      "IT-Einsatz kann Produkte, Dienstleistungen und Geschäftsmodelle verändern.",
+      "Wertschöpfung im Geschäftsmodell-Kontext meint den erwirtschafteten Gewinn nach Ressourcen- und Einnahmenbetrachtung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Erzeugen, Bereitstellen, Vertreiben auf Basis einer Geschäftsidee.\n\nDie Aussage ist daher wahr.",
+      "Ressourcen vs. Einnahmen → Gewinn/Wertschöpfung.\n\nDie Aussage ist daher wahr.",
+      "Genau diese drei Schritte stehen in der Definition.\n\nDie Aussage ist daher falsch.",
+      "IT verändert Produkte, DL und Geschäftsmodelle.\n\nDie Aussage ist daher wahr.",
+      "Wertschöpfung wird so im Definitionsblock verankert.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.03",
+    "title": "IT-Einsatz und multiplizierte Wertschöpfung",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Technologie schafft neue Möglichkeiten, Produkte und Dienstleistungen mithilfe von Geschäftsprozessen zu erstellen, bereitzustellen und zu vertreiben.",
+      "Darauf aufbauend kann Wert für Unternehmen und Kunden generiert werden.",
+      "Dieser Wert kann durch Technologieeinsatz multipliziert werden.",
+      "Multiplikation kann bedeuten, eine größere Anzahl an Kunden zu erreichen oder Produkte zu individualisieren.",
+      "IT-Einsatz verringert laut Text immer zwangsläufig die erreichbare Kundenzahl auf null."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wirkungskette IT → Prozesse → Produkte/DL.\n\nDie Aussage ist daher wahr.",
+      "Wert für Unternehmen und Kunden.\n\nDie Aussage ist daher wahr.",
+      "Multiplikation des Werts durch Technologie.\n\nDie Aussage ist daher wahr.",
+      "Reichweite und Individualisierung als Beispiele.\n\nDie Aussage ist daher wahr.",
+      "Das Gegenteil: größere Kundenzahl ist ein Beispiel für Multiplikation.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.04",
+    "title": "Webshop als Geschäftsmodell",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein klassischer Webshop erlaubt, Produkte direkt online zu bestellen.",
+      "Amazon.de oder Zalando.de sind Beispiele für Webshops.",
+      "Im Webshop werden Güter direkt an Kunden oder an einzelne Unternehmen verkauft.",
+      "Ein Webshop wird typischerweise von einem Verkäufer betrieben.",
+      "Ein Webshop ist identisch mit einem Online-Handelsplatz, auf dem viele Privatpersonen als Verkäufer auftreten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Direkte Online-Bestellung.\n\nDie Aussage ist daher wahr.",
+      "Genannte Beispiele.\n\nDie Aussage ist daher wahr.",
+      "Verkauf an Kunden oder Unternehmen.\n\nDie Aussage ist daher wahr.",
+      "Betrieb durch einen Verkäufer – Abgrenzung zum Handelsplatz.\n\nDie Aussage ist daher wahr.",
+      "Webshop ≠ Handelsplatz; beim Handelsplatz haben auch Privatpersonen Zugang zum Anbieten.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.05",
+    "title": "Online-Handelsplatz",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Online-Handelsplatz ist eine Online-Umgebung für Käufer und Verkäufer.",
+      "Im Gegensatz zum Webshop haben hier auch Privatpersonen Zugang, um Produkte anzubieten und zu verkaufen.",
+      "willhaben.at und eBay.de sind Beispiele für Handelsplätze.",
+      "Der Handelsplatzbetreiber stellt über eine Plattform den Zugang für Kunden und Verkäufer zur Verfügung.",
+      "Auf einem Handelsplatz dürfen laut Text ausschließlich der Plattformbetreiber selbst Produkte verkaufen – nie Dritte."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Umgebung für Käufer und Verkäufer.\n\nDie Aussage ist daher wahr.",
+      "Privatpersonen als Anbieter – zentrale Differenz zum Webshop.\n\nDie Aussage ist daher wahr.",
+      "Genannte Beispiele.\n\nDie Aussage ist daher wahr.",
+      "Zugang über die Plattform des Betreibers.\n\nDie Aussage ist daher wahr.",
+      "Gerade Drittverkäufer und Privatpersonen sind typisch für den Handelsplatz.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.06",
+    "title": "Soziale Netzwerke als Geschäftsmodell",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine virtuelle Umgebung bzw. Online-Gemeinschaft ist auch als soziales Netzwerk bekannt.",
+      "Facebook, X oder LinkedIn sind Beispiele.",
+      "Personen mit gleichen Interessenschwerpunkten können sich austauschen und Kontakte pflegen.",
+      "Solche Geschäftsmodelle verdienen unter anderem durch den Verkauf von Werbefläche Geld.",
+      "Soziale Netzwerke finanzieren sich laut Text ausschließlich durch den physischen Verkauf von Tonträgern."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Online-Gemeinschaft = soziales Netzwerk.\n\nDie Aussage ist daher wahr.",
+      "Genannte Plattformbeispiele.\n\nDie Aussage ist daher wahr.",
+      "Austausch und Kontaktpflege.\n\nDie Aussage ist daher wahr.",
+      "Werbefläche als Einnahmequelle.\n\nDie Aussage ist daher wahr.",
+      "Werbefläche – nicht Tonträgervertrieb – ist das genannte Modell.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.07",
+    "title": "Pure-Play-Geschäftsmodelle",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Pure-Play-Geschäftsmodelle finden ausschließlich online statt.",
+      "Die Unternehmen agieren vorrangig im digitalen Raum und besitzen keine physischen Geschäftsniederlassungen im Sinne eines Ladens.",
+      "Viele dieser Modelle wurden durch das Internet erst ermöglicht.",
+      "Ein Pure-Play-Anbieter betreibt typischerweise kein klassisches Ladengeschäft zum physischen Anschauen der Ware.",
+      "Pure-Play bedeutet, dass das Unternehmen nur Filialen besitzt und keinerlei Online-Präsenz haben darf."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Ausschließlich online.\n\nDie Aussage ist daher wahr.",
+      "Keine physischen Geschäftsniederlassungen in dem Sinne.\n\nDie Aussage ist daher wahr.",
+      "Internet als Ermöglichungsbedingung.\n\nDie Aussage ist daher wahr.",
+      "Kein physisches Anschauen im eigenen Laden.\n\nDie Aussage ist daher wahr.",
+      "Pure-Play ist digital-first ohne Laden – nicht filiallonly ohne Online.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.08",
+    "title": "Clicks and Mortar",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Clicks-and-Mortar-Geschäftsmodelle verbinden digitale Präsenz mit dem traditionellen physischen Geschäft.",
+      "Digitale Präsenz kann eine Website oder Plattform als Erweiterung des physischen Geschäfts sein.",
+      "Thalia als Buchhändler mit Laden und Webshop ist ein Beispiel.",
+      "Clicks and Mortar sind das Gegenteil von Pure-Play.",
+      "Clicks and Mortar bedeutet, dass jedes physische Geschäft sofort geschlossen werden muss."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Digital + physisch.\n\nDie Aussage ist daher wahr.",
+      "Website/Plattform als Erweiterung.\n\nDie Aussage ist daher wahr.",
+      "Thalia-Beispiel.\n\nDie Aussage ist daher wahr.",
+      "Pure-Play nur online; Clicks and Mortar hybrid.\n\nDie Aussage ist daher wahr.",
+      "Physisches Geschäft bleibt gerade Teil des Modells.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.09",
+    "title": "Musikindustrie: iTunes und Einzelstücke",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Apple hat das alte Modell des Vertriebs ganzer Tonträger (z. B. CDs) durch legalen Onlinevertrieb einzelner Stücke verändert.",
+      "Früher musste man oft eine CD als ganzes Paket erwerben.",
+      "iTunes Store in Kombination mit Abspielgeräten (iPod) veränderte den Musikkonsum.",
+      "IKT war Grundlage dieser Geschäftsmodelländerung.",
+      "Laut Text hat Apple den Musikkonsum unverändert gelassen und nur Plattenläden renoviert."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Einzelstückvertrieb statt nur Gesamtpaket.\n\nDie Aussage ist daher wahr.",
+      "CD als Paket = Ausgangslage.\n\nDie Aussage ist daher wahr.",
+      "iTunes + iPod als Innovationspaar.\n\nDie Aussage ist daher wahr.",
+      "Informations- und Kommunikationstechnologie als Basis.\n\nDie Aussage ist daher wahr.",
+      "Der Text beschreibt eine Revolution des Konsum- und Vertriebsmodells.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.10",
+    "title": "Spotify: Streaming und Abo",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Spotify bietet Musikstücke nicht zum Download-Erwerb einzelner Titel, sondern zum Streamen über das Internet.",
+      "Das Geschäftsmodell baut auf einem Abo-Modell auf.",
+      "Millionen Anwender erhalten Zugang zu nahezu allen verfügbaren Audiotiteln.",
+      "Damit verschiebt sich der Fokus vom Erwerb einzelner Stücke zum laufenden Zugang.",
+      "Spotify ist laut Text identisch mit dem alten CD-Pakethandel ohne Abo und ohne Streaming."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Streaming statt Download-Kauf einzelner Stücke.\n\nDie Aussage ist daher wahr.",
+      "Abo-Modell.\n\nDie Aussage ist daher wahr.",
+      "Breiter Katalogzugang.\n\nDie Aussage ist daher wahr.",
+      "Von Kauf zu Zugang.\n\nDie Aussage ist daher wahr.",
+      "Streaming-Abo ist gerade die Differenz zum alten Modell.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.11",
+    "title": "Erlösmodell – Begriff",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Erlösmodell beantwortet, wie das Unternehmen Geld verdient und Gewinn erwirtschaftet.",
+      "Technologie beeinflusst, wie Erlösmodelle gestaltet werden können.",
+      "Unternehmen können sich auf ein Erlösmodell fokussieren oder Modelle kombinieren.",
+      "Im Digitalisierungskontext sind Werbemodell und Abonnentenmodell besonders bedeutsam.",
+      "Ein Erlösmodell ist laut Text irrelevant, weil digitale Unternehmen keine Einnahmen benötigen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Einnahmen und Gewinn = Kernfrage.\n\nDie Aussage ist daher wahr.",
+      "Technologie prägt die Gestaltung.\n\nDie Aussage ist daher wahr.",
+      "Fokus oder Kombination möglich.\n\nDie Aussage ist daher wahr.",
+      "Werbung und Abo als Fokusbeispiele.\n\nDie Aussage ist daher wahr.",
+      "Erlösmodelle sind zentraler Aspekt jedes Geschäftsmodells.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.12",
+    "title": "Werbemodell",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beim Werbemodell ist Werbung die Einnahmequelle.",
+      "Eine Website mit zahlreichen Besuchern kann durch Anzeige von Werbung Einnahmen generieren.",
+      "„Website“ umfasst hier Nachrichten, Webshops, soziale Netzwerke und andere Plattformen.",
+      "Viele „kostenlos“ wirkende Dienste (Google-Suche, willhaben, geizhals) setzen auf das Werbemodell.",
+      "Beim Werbemodell zahlen Nutzerinnen immer einen festen Monatsbeitrag und sehen nie Werbung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Werbung = Einnahmequelle.\n\nDie Aussage ist daher wahr.",
+      "Reichweite → Werbeeinnahmen.\n\nDie Aussage ist daher wahr.",
+      "Breite Auslegung von Website/Plattform.\n\nDie Aussage ist daher wahr.",
+      "Genannte „kostenlose“ Dienste.\n\nDie Aussage ist daher wahr.",
+      "Das wäre eher Abomodell; Werbemodell finanziert über Anzeigen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.13",
+    "title": "Digitale Werbeformen",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Google kann Werbeplätze u. a. über den Verkauf von Schlüsselwörtern (AdWords) anbieten.",
+      "AdSense betrifft den Verkauf von Werbeanzeigen bei bestimmten Suchwörtern.",
+      "Vergleichsportale wie geizhals.at können Bannerwerbung – ggf. kombiniert mit Suchbegriffen – anbieten.",
+      "Tageszeitungen nutzen das Werbemodell mit, um Online-Betriebskosten zu decken.",
+      "Online-Werbung existiert laut Text nicht; nur gedruckte Plakate sind erlaubt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "AdWords / Schlüsselwörter.\n\nDie Aussage ist daher wahr.",
+      "AdSense / Anzeigen bei Suchwörtern.\n\nDie Aussage ist daher wahr.",
+      "Banner und Suchbegriffkombination.\n\nDie Aussage ist daher wahr.",
+      "Zeitungen und Kostendeckung.\n\nDie Aussage ist daher wahr.",
+      "Der Text konzentriert sich explizit auf den digitalen Werberaum.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.14",
+    "title": "Alphabet und Werbeanteil",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Online-Werbemarkt ist ein stark vertretenes Werbemodell.",
+      "Bei Alphabet stammten in dem genannten Quartal 2023 rund 65,5 von 86,3 Milliarden Dollar Umsatz aus Werbung.",
+      "Das entspricht einem Anteil von etwa 75 Prozent.",
+      "Diese Zahlen unterstreichen die wirtschaftliche Bedeutung des Werbemodells.",
+      "Alphabet erzielte laut Text null Umsatz aus Werbung."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Starkes Werbemodell online.\n\nDie Aussage ist daher wahr.",
+      "65,5 von 86,3 Mrd. USD.\n\nDie Aussage ist daher wahr.",
+      "75 %-Anteil.\n\nDie Aussage ist daher wahr.",
+      "Zahlen als Beleg der Bedeutung.\n\nDie Aussage ist daher wahr.",
+      "Der Text nennt gerade den hohen Werbeanteil.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.15",
+    "title": "Abonnentenmodell",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Abonnentenmodell erhebt eine laufende Gebühr für den Zugriff auf Angebote.",
+      "Netflix und Spotify sind klassische Beispiele.",
+      "Durch Registrierung eines Abonnements erhalten Kunden vollumfänglichen Zugang zu den Inhalten.",
+      "Viele Unternehmen, die zuvor andere Modelle nutzten, haben das Abomodell adaptiert.",
+      "Beim Abonnentenmodell gibt es niemals laufende Gebühren – alles ist einmalig und werbefinanziert."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Laufende Gebühr für Zugang.\n\nDie Aussage ist daher wahr.",
+      "Netflix/Spotify.\n\nDie Aussage ist daher wahr.",
+      "Vollzugang über Abo.\n\nDie Aussage ist daher wahr.",
+      "Adaption durch viele Anbieter.\n\nDie Aussage ist daher wahr.",
+      "Laufende Gebühr ist Definitionsmerkmal.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.16",
+    "title": "Zeitungen: von Werbung zu Kombi-Modellen",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Früher waren Online-Inhalte vieler Zeitungen oft ohne Einschränkung mit Werbung konsumierbar.",
+      "Mittlerweile setzen Inhaltsanbieter verstärkt auf Abonnentenmodell oder Kombination aus Werbung und Abo.",
+      "Die Diversifizierung des Angebots ist Teil des Wandels durch Digitalisierung.",
+      "Kombinationsmodelle sind im Text vorgesehen.",
+      "Zeitungen dürfen laut Text ausschließlich Werbung nutzen und niemals Abos anbieten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Früheres werbefinanziertes Frei-Modell.\n\nDie Aussage ist daher wahr.",
+      "Shift zu Abo oder Kombi.\n\nDie Aussage ist daher wahr.",
+      "Wandel der Branchenmodelle.\n\nDie Aussage ist daher wahr.",
+      "Kombi Werbung+Abo explizit.\n\nDie Aussage ist daher wahr.",
+      "Abo und Kombi sind gerade der beschriebene Trend.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.17",
+    "title": "Adobe: Wechsel zum Abonnentenmodell",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Adobe bot früher Softwarepakete wie Photoshop gegen einmalige Zahlung zum lebenslangen Erwerb an.",
+      "2013 wechselte Adobe vom klassischen Umsatzmodell auf ein Abonnentenmodell.",
+      "Heute sind monatliche oder jährliche Gebühren für die Nutzung üblich.",
+      "Das Beispiel verdeutlicht den Wandel von Erlösmodellen durch Digitalisierung.",
+      "Adobe verkauft laut Text weiterhin ausschließlich einmalige Lebenslizenzen ohne Abo."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Einmalzahlung / lebenslanger Erwerb früher.\n\nDie Aussage ist daher wahr.",
+      "Wechsel 2013.\n\nDie Aussage ist daher wahr.",
+      "Monats-/Jahresgebühr heute.\n\nDie Aussage ist daher wahr.",
+      "Branchenwandel der Erlösmodelle.\n\nDie Aussage ist daher wahr.",
+      "Der Wechsel zum Abo ist das Lehrbuchbeispiel.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.18",
+    "title": "Tricky: Webshop vs. Handelsplatz vs. Netzwerk",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Webshop hat einen Betreiber-Verkäufer; ein Handelsplatz öffnet die Plattform auch für viele Anbieter inklusive Privatpersonen.",
+      "Soziale Netzwerke monetarisieren u. a. über Werbefläche, nicht primär über den Direktverkauf eigener physischer Lagerware.",
+      "willhaben ist als Handelsplatz, nicht als klassischer Ein-Verkäufer-Webshop einzuordnen.",
+      "Amazon-Webshop und willhaben-Handelsplatz sind wirtschaftlich identische Modelle ohne Unterschied.",
+      "Die drei Modelltypen Webshop, Handelsplatz und soziales Netzwerk werden im Text unterschieden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "tactical_explanations": [
+      "Kernabgrenzung Webshop/Handelsplatz.\n\nDie Aussage ist daher wahr.",
+      "Netzwerke und Werbefläche.\n\nDie Aussage ist daher wahr.",
+      "willhaben = Handelsplatzbeispiel.\n\nDie Aussage ist daher wahr.",
+      "Unterschied Verkäuferstruktur und Marktrolle ist zentral.\n\nDie Aussage ist daher falsch.",
+      "Drei exemplarische IT-basierte Geschäftsmodelle.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.19",
+    "title": "Tricky: Pure-Play, Clicks and Mortar, Erlös",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Pure-Play-Musikstreamingdienst ohne Laden ist mit Clicks-and-Mortar-Buchhandel nicht dasselbe Modell.",
+      "Thalia kann physischen Laden und Webshop kombinieren (Clicks and Mortar).",
+      "Werbemodell und Abonnentenmodell können kombiniert werden.",
+      "Ein Unternehmen mit nur Online-Präsenz ohne Laden ist typischerweise Pure-Play, nicht Clicks and Mortar.",
+      "Clicks and Mortar verlangt, dass keinerlei digitale Präsenz existieren darf."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Reine Online- vs. Hybridmodelle.\n\nDie Aussage ist daher wahr.",
+      "Thalia-Beispiel.\n\nDie Aussage ist daher wahr.",
+      "Kombi der Erlösmodelle.\n\nDie Aussage ist daher wahr.",
+      "Pure-Play = digital ohne Laden.\n\nDie Aussage ist daher wahr.",
+      "Digitale Präsenz ist gerade Teil von Clicks and Mortar.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.2",
+    "case_id": "CASE W4.2.20",
+    "title": "Gesamtzusammenhang Produkte und Geschäftsmodelle",
+    "context": "Analysieren Sie neue Produkte, Dienstleistungen und Geschäftsmodelle im digitalen Umfeld. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "IT verändert Produkte, Dienstleistungen und Geschäftsmodelle und kann Wert multiplizieren.",
+      "Webshop, Online-Handelsplatz und soziales Netzwerk sind zentrale Modellbeispiele.",
+      "Pure-Play und Clicks and Mortar unterscheiden rein digitale von hybrid-physischen Ansätzen.",
+      "Werbemodell und Abonnentenmodell prägen digitale Erlöse; Kombinationen sind möglich.",
+      "Digitalisierung lässt Branchenmodelle laut Text vollkommen unverändert."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Wirkungskette und Multiplikation.\n\nDie Aussage ist daher wahr.",
+      "Drei Modellbeispiele.\n\nDie Aussage ist daher wahr.",
+      "Pure-Play vs. Clicks and Mortar.\n\nDie Aussage ist daher wahr.",
+      "Werbung, Abo, Kombi.\n\nDie Aussage ist daher wahr.",
+      "Der Text betont gerade den Branchen- und Modellwandel.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.01",
+    "title": "Internet als Netzwerk von Netzwerken",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Internet ist zentraler Baustein für die Realisierung der Digitalisierung.",
+      "Es ist die wichtigste IT-Infrastruktur für die globale Vernetzung von Personen und Unternehmen.",
+      "Das Internet ist als Netzwerk zu verstehen – ein Netzwerk von Netzwerken, die weltweit verbunden sind.",
+      "Hochseekabel und drahtlose Übertragung sind Ausprägungen des Zugriffs auf dieses Netzwerk.",
+      "Das Internet ist laut Text kein Netzwerk, sondern ausschließlich ein einzelnes isoliertes Endgerät."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Zentraler Baustein der Digitalisierung.\n\nDie Aussage ist daher wahr.",
+      "Wichtigste IT-Infrastruktur der globalen Vernetzung.\n\nDie Aussage ist daher wahr.",
+      "Netzwerk von Netzwerken.\n\nDie Aussage ist daher wahr.",
+      "Kabel und Funk als Zugangsformen.\n\nDie Aussage ist daher wahr.",
+      "Es ist gerade ein verteiltes Netzwerk, kein isoliertes Gerät.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.02",
+    "title": "Was ist ein Netzwerk?",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Rechnernetz ist ein räumlich verteiltes System von Datenstationen.",
+      "Datenstationen sind durch Kommunikationseinrichtungen und -wege verbunden, um Daten auszutauschen.",
+      "Eine Datenstation kann z. B. PC, Tablet oder Smartphone sein.",
+      "WLAN-Modul oder WLAN-Router sind Beispiele für Kommunikationseinrichtungen; Wege können kabelgebunden oder kabellos sein.",
+      "In einem Netzwerk dürfen Datenstationen niemals Daten austauschen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Räumlich verteilte Datenstationen.\n\nDie Aussage ist daher wahr.",
+      "Verbindung zum Datenaustausch.\n\nDie Aussage ist daher wahr.",
+      "Endgeräte als Datenstationen.\n\nDie Aussage ist daher wahr.",
+      "Einrichtungen und Wege wie beschrieben.\n\nDie Aussage ist daher wahr.",
+      "Datenaustausch ist der Zweck des Netzes.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.03",
+    "title": "Internet vs. World Wide Web",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das WWW ist eine Anwendung bzw. ein Dienst, der auf der Infrastruktur des Internets aufbaut.",
+      "Im Web können Informationen bereitgestellt, auffindbar gemacht und dargestellt werden.",
+      "Internet und WWW werden im Alltag oft synonym verwendet, sind aber nicht dasselbe.",
+      "Das Internet ist das Netzwerk; das WWW ist ein Dienst darauf.",
+      "Das WWW ist die physische Verkabelung der Weltmeere und ersetzt das Internet vollständig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "WWW als Dienst auf dem Internet.\n\nDie Aussage ist daher wahr.",
+      "Bereitstellen, Finden, Darstellen.\n\nDie Aussage ist daher wahr.",
+      "Umgangssprachliche Synonymie vs. fachliche Differenz.\n\nDie Aussage ist daher wahr.",
+      "Netzwerk vs. Dienst.\n\nDie Aussage ist daher wahr.",
+      "Hochseekabel gehören zur Internet-Infrastruktur; WWW ist Anwendungsebene.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.04",
+    "title": "E-Mail, WhatsApp und Recherche – Dienste vs. Netz",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Eine E-Mail nutzt das Internet zur Übertragung; sie ist nicht dasselbe wie „das Web“.",
+      "Eine Suchanfrage über den Browser betrifft typischerweise das WWW.",
+      "WhatsApp-Nachrichten sind Datenübertragungen über das Internet.",
+      "Wer „im Internet recherchiert“, meint oft die Suche im Web mit dem Browser.",
+      "E-Mail existiert laut Text nur innerhalb von HTML-Seiten und braucht kein Internet."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "E-Mail = weiterer Dienst über das Internet.\n\nDie Aussage ist daher wahr.",
+      "Browser-Suche = Web-Nutzung.\n\nDie Aussage ist daher wahr.",
+      "Nachrichtendienste nutzen das Netz.\n\nDie Aussage ist daher wahr.",
+      "Umgangssprachliche Verwechslung wird erklärt.\n\nDie Aussage ist daher wahr.",
+      "E-Mail nutzt das Internet; sie ist nicht auf HTML beschränkt.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.05",
+    "title": "Tim Berners-Lee und die Geburt des Web",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Tim Berners-Lee hat 1989 während seiner Arbeit bei CERN das World Wide Web erfunden.",
+      "1990 publizierte er „Information Management: A Proposal“.",
+      "Die Motivation lag u. a. darin, Forschungsergebnisse am CERN einfacher zu verwalten und auszutauschen.",
+      "Ziel war, Informationen im Internet systematisch abzulegen und wiederauffindbar bereitzustellen.",
+      "Das WWW wurde laut Text erst 2020 von einem Social-Media-Konzern erfunden."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "1989, CERN, Berners-Lee.\n\nDie Aussage ist daher wahr.",
+      "Aufsatztitel und Jahr 1990.\n\nDie Aussage ist daher wahr.",
+      "CERN-Austausch als Motivation.\n\nDie Aussage ist daher wahr.",
+      "Systematisches Ablegen und Wiederfinden.\n\nDie Aussage ist daher wahr.",
+      "Historie ist 1989/1990 am CERN.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.06",
+    "title": "HTTP, HTML und URL",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "HTTP legt fest, welche Schritte nötig sind, damit ein Browser Informationen von einem Server anfordern kann.",
+      "HTML strukturiert Informationen so, dass ein Browser sie für Menschen darstellbar macht.",
+      "URL ist ein einheitliches System, um Informationen zu adressieren, auffindbar und abrufbar zu machen.",
+      "HTTP, HTML und URL sind grundlegende Konzepte für ein funktionierendes WWW.",
+      "URL, HTML und HTTP sind laut Text überflüssig, weil Browser ohne Regeln raten sollen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "HTTP = Anforderungsregeln Browser↔Server.\n\nDie Aussage ist daher wahr.",
+      "HTML = Struktur/Darstellung.\n\nDie Aussage ist daher wahr.",
+      "URL = Adressierung.\n\nDie Aussage ist daher wahr.",
+      "Drei Grundpfeiler Berners-Lees.\n\nDie Aussage ist daher wahr.",
+      "Ohne diese Konzepte funktioniert das WWW nicht.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.07",
+    "title": "Was ist ein Protokoll?",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein IT-Kommunikationsprotokoll hält Regeln fest, wie Rechner präzise miteinander kommunizieren.",
+      "Es regelt u. a., wie Meldungen und Antworten formuliert werden und welche Zeichen/Inhalte zulässig sind.",
+      "Es ist nicht dasselbe wie ein Besprechungsprotokoll.",
+      "Die Briefpost-Analogie illustriert verbindliche Adress- und Absenderkonventionen.",
+      "Protokolle sind optionale Empfehlungen ohne Regelcharakter und ohne Einfluss auf die Kommunikation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Regeln präziser Rechnerkommunikation.\n\nDie Aussage ist daher wahr.",
+      "Meldungen, Antworten, Repräsentationen.\n\nDie Aussage ist daher wahr.",
+      "Abgrenzung zum Sitzungsprotokoll.\n\nDie Aussage ist daher wahr.",
+      "Post-Analogie im Text.\n\nDie Aussage ist daher wahr.",
+      "Protokolle sind verbindliche Kommunikationsregeln.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.08",
+    "title": "Surfen: Browser, HTTP, HTML, Hyperlinks",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beim „Surfen“ kommuniziert typischerweise ein Browser über HTTP mit einem Server.",
+      "Informationen werden u. a. mittels HTML angezeigt.",
+      "Links (URLs) auf Seiten verweisen auf weitere Ressourcen.",
+      "Solche Verknüpfungen nennt man Hyperlinks; sie machen das Web zu einem Netzwerk verknüpfter Ressourcen.",
+      "Hyperlinks sind verboten und dürfen auf Webseiten nicht vorkommen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Browser + HTTP + Server.\n\nDie Aussage ist daher wahr.",
+      "HTML-Darstellung.\n\nDie Aussage ist daher wahr.",
+      "URL-Links.\n\nDie Aussage ist daher wahr.",
+      "Hyperlinks als Wesenskern des Web.\n\nDie Aussage ist daher wahr.",
+      "Hyperlinks sind konstitutiv für das WWW.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.09",
+    "title": "Server, Request und Response",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Server ist ein Rechner, der über das Netzwerk auf Anfragen wartet.",
+      "Server-Software bearbeitet Anfragen aus dem Internet.",
+      "Der Browser stellt eine Anfrage (request); die Server-Software liefert eine Antwort (response).",
+      "Die Antwort kann je nach Auffindbarkeit der HTML-Seite unterschiedlich ausfallen.",
+      "Server senden niemals Antworten und Browser stellen niemals Anfragen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Server wartet auf Anfragen im Netz.\n\nDie Aussage ist daher wahr.",
+      "Server-Software als Anfragebearbeiter.\n\nDie Aussage ist daher wahr.",
+      "Request-Response-Prinzip.\n\nDie Aussage ist daher wahr.",
+      "Abhängig von Auffindbarkeit.\n\nDie Aussage ist daher wahr.",
+      "Genau Request und Response bilden das Grundprinzip.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.10",
+    "title": "Client-Server-Architektur",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Client-Server-Architektur unterscheidet Klient (Client) und Server.",
+      "Auf einem Server können Anwendungen laufen, die Services über das Netzwerk bereitstellen.",
+      "Ein Web-Browser ist ein typischer Client, der Inhalte anfordern kann.",
+      "Viele Internet-Interaktionen bauen bis heute auf dieser Architektur und dem Request-Response-Prinzip auf.",
+      "Client-Server bedeutet, dass es weder Clients noch Server gibt."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Unterscheidung Client/Server.\n\nDie Aussage ist daher wahr.",
+      "Services über das Netz.\n\nDie Aussage ist daher wahr.",
+      "Browser als Client.\n\nDie Aussage ist daher wahr.",
+      "Weiterhin grundlegend.\n\nDie Aussage ist daher wahr.",
+      "Die Architektur definiert gerade beide Rollen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.11",
+    "title": "Dienste und Plattformen im WWW",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Auf Basis von Client-Server und Kommunikationsprinzipien können im WWW verschiedene Dienstleistungen bereitgestellt werden.",
+      "Vergleichsplattformen, Webshops und Inhaltsanbieter (Nachrichten) sind Beispiele.",
+      "Der Web-Browser ist die zentrale Schnittstelle zum Zugriff auf viele dieser Dienste.",
+      "Nicht immer muss die Schnittstelle ein Browser sein; Unternehmenssoftware kann selbst Internetschnittstellen nutzen.",
+      "Im WWW sind laut Text keinerlei Dienstleistungen möglich."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Vielfalt der Web-Dienste.\n\nDie Aussage ist daher wahr.",
+      "Genannte Ausprägungen.\n\nDie Aussage ist daher wahr.",
+      "Browser als zentrale Schnittstelle.\n\nDie Aussage ist daher wahr.",
+      "Unternehmenssoftware / B2B-Kommunikation.\n\nDie Aussage ist daher wahr.",
+      "Gerade die Dienstvielfalt wächst stetig.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.12",
+    "title": "Internetökonomie",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Durch Leistungsangebote im digitalen Netzwerk entsteht ein Markt bzw. wird ein Markt digital erweitert.",
+      "Ökonomische Transaktionen können über diesen digitalen Ort abgewickelt werden.",
+      "Die Internetökonomie umfasst die ökonomische Nutzung des Internets für wertschöpfende Transaktionen.",
+      "Es entsteht ein digitaler Markt bzw. eine digitale Plattform in einem digitalen Netzwerk mit Marktteilnehmerinnen.",
+      "Internetökonomie bedeutet, dass Online-Transaktionen wertschöpfend unmöglich sind."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Digitaler Markt / Markterweiterung.\n\nDie Aussage ist daher wahr.",
+      "Transaktionsort digital.\n\nDie Aussage ist daher wahr.",
+      "Definition Internetökonomie.\n\nDie Aussage ist daher wahr.",
+      "Digitale Plattform und Teilnehmerinnen.\n\nDie Aussage ist daher wahr.",
+      "Wertschöpfende Transaktionen sind der Kern.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.13",
+    "title": "Internet als Unternehmensplattform",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Das Internet wird zu einer neuen Plattform für Unternehmen.",
+      "Anbieter und Kunden können darüber in Austausch treten.",
+      "Manchmal braucht es zusätzliche Plattformbetreiber für einen spezifischen Markt.",
+      "Für Endkunden ist der Plattformbetreiber nicht immer offensichtlich.",
+      "Unternehmen dürfen laut Text das Internet niemals als Plattform nutzen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Neue Unternehmensplattform.\n\nDie Aussage ist daher wahr.",
+      "Austausch Anbieter–Kunden.\n\nDie Aussage ist daher wahr.",
+      "Plattformbetreiber als Intermediäre.\n\nDie Aussage ist daher wahr.",
+      "Nicht immer sichtbar für Endkunden (z. B. refurbed).\n\nDie Aussage ist daher wahr.",
+      "Genau die Plattformnutzung ist das Kapitelthema.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.14",
+    "title": "Refurbed als digitaler Marktplatz",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Refurbed bietet einen digitalen Marktplatz für Firmen mit gebrauchter, professionell wiederaufbereiteter Technologie.",
+      "Privatpersonen können suchen und Produkte anpassen; im Hintergrund werden Angebote von Händlern gesammelt.",
+      "Der Kunde schließt mit dem entsprechenden Händler einen Kaufvertrag; das Produkt wird zugeschickt.",
+      "Refurbed stellt den Marktplatz digital zur Verfügung.",
+      "Bei Refurbed gibt es laut Text keine Händler im Hintergrund und keinen Kaufvertrag."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Marktplatz für refurbished Tech.\n\nDie Aussage ist daher wahr.",
+      "Angebotssammlung im Hintergrund.\n\nDie Aussage ist daher wahr.",
+      "Kaufvertrag Kunde–Händler.\n\nDie Aussage ist daher wahr.",
+      "Plattformbereitstellung durch Refurbed.\n\nDie Aussage ist daher wahr.",
+      "Händler und Kaufvertrag sind zentral im Beispiel.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.15",
+    "title": "willhaben als digitale Plattform",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "willhaben ist ein Beispiel für einen digitalen Marktplatz.",
+      "Über die Plattform können Anzeigen in verschiedenen Branchen aufgegeben werden.",
+      "Interessenten treten in Kontakt, um Transaktionen abzuschließen.",
+      "Damit entsteht ein digitaler Ort ökonomischen Austauschs.",
+      "willhaben erlaubt laut Text keinerlei Anzeigen und keinen Kontakt zwischen Interessenten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Digitaler Marktplatz.\n\nDie Aussage ist daher wahr.",
+      "Branchenanzeigen.\n\nDie Aussage ist daher wahr.",
+      "Kontakt und Transaktion.\n\nDie Aussage ist daher wahr.",
+      "Internetökonomie in der Praxis.\n\nDie Aussage ist daher wahr.",
+      "Anzeigen und Kontakt sind der Kern.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.16",
+    "title": "Tricky: WWW-Bausteine vs. Internet-Infrastruktur",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Hochseekabel und Heim-WLAN betreffen den Internetzugang als Netzwerk, nicht die HTML-Syntax.",
+      "HTML strukturiert Webinhalte; es ersetzt nicht die physische Netzwerkinfrastruktur.",
+      "HTTP regelt Browser-Server-Kommunikation; es ist kein Besprechungsprotokoll.",
+      "URL adressiert Ressourcen im Web.",
+      "HTML ist identisch mit dem gesamten Internet als Netzwerk von Netzwerken."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Infrastruktur vs. Auszeichnungssprache.\n\nDie Aussage ist daher wahr.",
+      "HTML ≠ Kabelnetz.\n\nDie Aussage ist daher wahr.",
+      "Kommunikationsprotokoll vs. Sitzungsnotiz.\n\nDie Aussage ist daher wahr.",
+      "Adressierung.\n\nDie Aussage ist daher wahr.",
+      "HTML ist Web-Dienstkonzept, nicht das Internet selbst.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.17",
+    "title": "Tricky: Client, Server und Plattformbetreiber",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Beim Websurfen ist der Browser typischerweise Client, der Inhalte vom Server anfordert.",
+      "Ein Plattformbetreiber kann einen digitalen Markt bereitstellen, auf dem andere Händler verkaufen.",
+      "Endkunden merken den Intermediär nicht immer (refurbed-Logik).",
+      "Request-Response bleibt architektonisch grundlegend.",
+      "Client-Server-Architektur schließt digitale Marktplätze logisch aus."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Browser als Client.\n\nDie Aussage ist daher wahr.",
+      "Marktplatzrolle.\n\nDie Aussage ist daher wahr.",
+      "Nicht immer sichtbarer Betreiber.\n\nDie Aussage ist daher wahr.",
+      "Request-Response.\n\nDie Aussage ist daher wahr.",
+      "Marktplätze bauen gerade auf Web/Client-Server-Infrastruktur auf.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.18",
+    "title": "Tricky: E-Mail ist nicht WWW",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "E-Mail ist ein Dienst, der das Internet nutzt.",
+      "WWW ist ein anderer Dienst auf derselben Infrastruktur.",
+      "Beide können parallel existieren, ohne identisch zu sein.",
+      "Browserzugriff auf HTML-Seiten ist Web-Nutzung; SMTP-Mailverkehr ist nicht automatisch „Websurfen“.",
+      "Weil beide das Internet nutzen, sind E-Mail und WWW laut Text dasselbe Konzept ohne Unterschied."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "E-Mail über Internet.\n\nDie Aussage ist daher wahr.",
+      "WWW als eigener Dienst.\n\nDie Aussage ist daher wahr.",
+      "Parallele Dienste.\n\nDie Aussage ist daher wahr.",
+      "Alltagsunterscheidung Surfen vs. Mail.\n\nDie Aussage ist daher wahr.",
+      "Gemeinsame Infrastruktur ≠ begriffliche Identität.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.19",
+    "title": "Digitale Märkte und ökonomische Transaktionen",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Digitale Plattformen erweitern Märkte um einen digitalen Ort für Transaktionen.",
+      "Marktteilnehmerinnen agieren im digitalen Netzwerk.",
+      "Refurbed und willhaben illustrieren unterschiedliche Marktplatzlogiken.",
+      "Ohne Internet als Infrastruktur wären diese Plattformen in der beschriebenen Form nicht möglich.",
+      "Die Internetökonomie verbietet wertschöpfende Online-Transaktionen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Digitaler Transaktionsort.\n\nDie Aussage ist daher wahr.",
+      "Teilnehmerinnen im Netz.\n\nDie Aussage ist daher wahr.",
+      "Zwei Lehrbuchbeispiele.\n\nDie Aussage ist daher wahr.",
+      "Internet als Ermöglichungsbedingung seit >30 Jahren.\n\nDie Aussage ist daher wahr.",
+      "Wertschöpfende Transaktionen sind Definitionsinhalt.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.3",
+    "case_id": "CASE W4.3.20",
+    "title": "Gesamtzusammenhang Internet-Plattform",
+    "context": "Analysieren Sie das Internet als Plattform für Unternehmen sowie WWW, Protokolle und digitale Märkte. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Internet = Netzwerk von Netzwerken; WWW = Dienst darauf mit HTTP, HTML und URL.",
+      "Client-Server und Request-Response tragen die Architektur vieler Web-Interaktionen.",
+      "Internetökonomie meint ökonomische Nutzung für wertschöpfende Transaktionen auf digitalen Märkten/Plattformen.",
+      "Plattformbetreiber können Anbieter und Kunden zusammenbringen.",
+      "Laut Text sind Internet und WWW synonyme Infrastrukturen ohne Dienste, Protokolle oder Marktplätze."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Netz vs. Dienst und drei Web-Bausteine.\n\nDie Aussage ist daher wahr.",
+      "Architekturprinzipien.\n\nDie Aussage ist daher wahr.",
+      "Definition Internetökonomie.\n\nDie Aussage ist daher wahr.",
+      "Intermediation.\n\nDie Aussage ist daher wahr.",
+      "Der Text differenziert und entfaltet Dienste, Protokolle und Plattformen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.01",
+    "title": "Wirtschaftsinformatik zwischen BWL und Informatik",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Die Wirtschaftsinformatik wird meist durch ihre fächerübergreifende Stellung zwischen Betriebswirtschaftslehre und Informatik positioniert.",
+      "Themen der WI müssen nicht zwingend „nur Informatik“ oder „nur BWL“ sein.",
+      "Je nach Fokus kann WI als eigenständiges oder als fächerübergreifendes Fach betrachtet werden.",
+      "An der WU Wien steht der betriebswirtschaftliche Fokus im Vordergrund und wie Technik ihn unterstützen kann.",
+      "Wirtschaftsinformatik hat laut Text keinerlei Bezug zu Betriebswirtschaft oder Informatik."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Klassische Einordnung zwischen BWL und Informatik.\n\nDie Aussage ist daher wahr.",
+      "Überlappung und Eigenanteile.\n\nDie Aussage ist daher wahr.",
+      "Eigenständig oder fächerübergreifend.\n\nDie Aussage ist daher wahr.",
+      "WU-Fokus betriebswirtschaftlich + technische Unterstützung.\n\nDie Aussage ist daher wahr.",
+      "Gerade die Verzahnung BWL–Informatik ist der Ausgangspunkt.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.02",
+    "title": "Zwei zentrale Bausteine",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Zum Verständnis der WI gehören das Bewusstsein für Interdisziplinarität.",
+      "Zum Verständnis gehört auch die Rolle von Anwendungs- und Informationssystemen.",
+      "WI behandelt u. a. Digitalisierung im Unternehmenskontext und Transformation von Geschäftsmodellen.",
+      "Auch Auswirkungen digitaler Netzwerke auf ökonomische Transaktionen gehören dazu.",
+      "Interdisziplinarität und Informationssysteme sind laut Text für die WI irrelevant."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Interdisziplinarität als Baustein.\n\nDie Aussage ist daher wahr.",
+      "Anwendungs-/Informationssysteme als Baustein.\n\nDie Aussage ist daher wahr.",
+      "Anschluss an Kap. 4-Themen.\n\nDie Aussage ist daher wahr.",
+      "Digitale Netzwerke und Transaktionen.\n\nDie Aussage ist daher wahr.",
+      "Beide Bausteine sind ausdrücklich zentral.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "1/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.03",
+    "title": "Technische Perspektive: drei Felder",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Aus technischer Perspektive sind u. a. Produktionsmanagement (Operations Management), Informatik und Data Science relevant.",
+      "Produktionsmanagement fokussiert Produktion/Herstellung, Prozesse, Lieferketten, Inventar und Kapazitäten.",
+      "IKT kann dort Schritte automatisieren, optimieren und unterstützen.",
+      "Informatik betrifft Planung, Gestaltung und Umsetzung von Systemen und Technologien.",
+      "Die technische Perspektive kennt laut Text weder Prozesse noch Daten noch Systeme."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei technische Felder.\n\nDie Aussage ist daher wahr.",
+      "OM-Themenkatalog.\n\nDie Aussage ist daher wahr.",
+      "Automatisieren/Optimieren/Unterstützen.\n\nDie Aussage ist daher wahr.",
+      "Von Algorithmen bis Softwarelösungen.\n\nDie Aussage ist daher wahr.",
+      "Genau Prozesse, Systeme und Daten stehen im Fokus.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.04",
+    "title": "Informatik und Data Science in der WI",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Informatik umfasst u. a. Software Engineering, Semantic Web oder komplexe Systeme.",
+      "Data Science arbeitet mit großen Datensätzen (Big Data, Open Data).",
+      "Unternehmen können durch Datenanalyse Entscheidungen treffen; das ist herausfordernd.",
+      "Informatik, Statistik und Mathematik werden kombiniert; KI und maschinelles Lernen können relevant sein.",
+      "Data Science verbietet laut Text jede Nutzung von Unternehmensdaten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Genannte Informatik-Themen.\n\nDie Aussage ist daher wahr.",
+      "Big/Open Data.\n\nDie Aussage ist daher wahr.",
+      "Entscheidungsunterstützung mit Herausforderungen.\n\nDie Aussage ist daher wahr.",
+      "Methodenmix inkl. KI/ML.\n\nDie Aussage ist daher wahr.",
+      "Analyse von Daten zur Entscheidung ist zentral.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.05",
+    "title": "Verhaltenswissenschaftliche Perspektive",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Aus verhaltenswissenschaftlicher Sicht sind u. a. BWL, Soziologie und Psychologie relevant.",
+      "BWL fragt, wie IKT Kernprozesse unterstützt, digitale Transformation vorangebracht und disruptive Innovationen genutzt werden.",
+      "Auch Management, Regulationen, Datenschutz und Privatsphäre gehören dazu.",
+      "Soziologie betrachtet Einfluss von Gruppen/Organisationen auf Systeme und gesellschaftliche Auswirkungen.",
+      "Verhaltenswissenschaften spielen laut Text in der WI keine Rolle."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "BWL, Soziologie, Psychologie.\n\nDie Aussage ist daher wahr.",
+      "Kernprozesse, Transformation, Disruption.\n\nDie Aussage ist daher wahr.",
+      "Management und Regulierung/Datenschutz.\n\nDie Aussage ist daher wahr.",
+      "Gruppen, Organisationen, Gesellschaft.\n\nDie Aussage ist daher wahr.",
+      "Die verhaltenswissenschaftliche Sicht ist eine der beiden Hauptperspektiven.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.06",
+    "title": "Psychologie, Ethik, Digital Humanism",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Der Mensch bleibt zentrale Komponente: Gestaltung, Bedürfnisse, Emotionen, ethische Entscheidungen.",
+      "Es geht um Auswirkungen von Technologie auf Menschen.",
+      "Ethik kann Grundlage der Systemgestaltung sein (Werte im System verankern).",
+      "Stichworte sind Digital Humanism und Ethical Computing.",
+      "Psychologie und Ethik sind laut Text für die Gestaltung von Systemen bedeutungslos."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Mensch im Zentrum.\n\nDie Aussage ist daher wahr.",
+      "Technologie → Mensch.\n\nDie Aussage ist daher wahr.",
+      "Ethik als Gestaltungsgrundlage.\n\nDie Aussage ist daher wahr.",
+      "Digital Humanism / Ethical Computing.\n\nDie Aussage ist daher wahr.",
+      "Gerade ethische und psychologische Fragen werden betont.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "2/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.07",
+    "title": "Definition Wirtschaftsinformatik",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Gegenstand der Wirtschaftsinformatik sind Informationssysteme in Wirtschaft, Verwaltung und privatem Bereich.",
+      "Sie befasst sich mit Entwicklung, Einführung, Betrieb, Nutzung und Ablösung von Informationssystemen.",
+      "Sie versteht sich als interdisziplinäres Fach basierend auf BWL und Informatik.",
+      "Zentral sind betriebswirtschaftlicher Fokus in Kombination mit Systemen und Menschen.",
+      "WI beschäftigt sich laut Definition ausschließlich mit Hardwareverkauf ohne Systeme und ohne Organisationen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "IS in Wirtschaft/Verwaltung/Privatbereich.\n\nDie Aussage ist daher wahr.",
+      "Lebenszyklus der Systeme.\n\nDie Aussage ist daher wahr.",
+      "Interdisziplinär BWL+Informatik.\n\nDie Aussage ist daher wahr.",
+      "BWL + Systeme + Menschen.\n\nDie Aussage ist daher wahr.",
+      "Informationssysteme und ihr Lebenszyklus sind der Gegenstand.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.08",
+    "title": "Anwendungssystem – Definition",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Anwendungssystem umfasst Programme als Anwendungssoftware für ein konkretes betriebliches Anwendungsgebiet.",
+      "Es umfasst auch die dabei gespeicherten Daten (z. B. in einer Datenbank).",
+      "Es umfasst die IT-Infrastruktur/Hardware, auf der die Software läuft.",
+      "Anwendungssysteme werden für ein Unternehmen oder einen Unternehmensbereich entwickelt bzw. eingesetzt.",
+      "Ein Anwendungssystem besteht laut Definition nur aus Papierformularen ohne Software und ohne Daten."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Anwendungssoftware für betriebliches Gebiet.\n\nDie Aussage ist daher wahr.",
+      "Daten inklusive.\n\nDie Aussage ist daher wahr.",
+      "Hardware/Infrastruktur inklusive.\n\nDie Aussage ist daher wahr.",
+      "Unternehmens- oder Bereichsbezug.\n\nDie Aussage ist daher wahr.",
+      "Software, Daten und Infrastruktur sind konstitutiv.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.09",
+    "title": "Beispiele und Anpassung von Anwendungssystemen",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Rechnungswesen (Buchhaltung, Kostenrechnung) ist ein Beispielbereich für Anwendungssysteme.",
+      "Tabellenkalkulation wie Excel oder OpenOffice Calc – ggf. mit Datenbankzugriff – gilt als klassisches Beispiel.",
+      "Weitere Bereiche: Personalwesen, Logistik, Verkauf, Vertrieb, Marketing.",
+      "Im betrieblichen Kontext ist die Anpassung an das Unternehmen oft kostspielig und aufwendig.",
+      "Betriebliche Anwendungssysteme brauchen laut Text nie Anpassung und sind immer sofort passgenau."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Rechnungswesen-Beispiel.\n\nDie Aussage ist daher wahr.",
+      "Tabellenkalkulation als Beispiel.\n\nDie Aussage ist daher wahr.",
+      "Weitere betriebliche Bereiche.\n\nDie Aussage ist daher wahr.",
+      "Anpassung als zentrale Herausforderung.\n\nDie Aussage ist daher wahr.",
+      "Anpassung ist gerade ein Kernpunkt der WI.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.10",
+    "title": "Informationssystem vs. Anwendungssystem",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Informationssystem beinhaltet verschiedene Anwendungssysteme für einen betrieblichen Kontext.",
+      "Es ist zusätzlich in die Organisationsstruktur eingebettet und integriert.",
+      "Im Gegensatz zum Anwendungssystem stellt ein IS ein angepasstes, betriebsindividuelles System dar.",
+      "Es erfüllt spezifische Anforderungen der betrieblichen Organisation.",
+      "Informationssystem und Anwendungssystem sind laut Text synonyme Begriffe ohne Unterschied."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Mehrere Anwendungssysteme im Kontext.\n\nDie Aussage ist daher wahr.",
+      "Einbettung in die Organisation.\n\nDie Aussage ist daher wahr.",
+      "Betriebsindividuell angepasst.\n\nDie Aussage ist daher wahr.",
+      "Spezifische Organisationsanforderungen.\n\nDie Aussage ist daher wahr.",
+      "Die Abgrenzung ist ein zentrales Lehrziel.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.11",
+    "title": "Informationssystem – Definition mit Menschen und Maschinen",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein Informationssystem wird zum Zweck eines bestimmten Unternehmens entwickelt und angepasst.",
+      "Es berücksichtigt organisatorische Strukturen.",
+      "Es besteht aus Menschen und Maschinen (Rechner, Anwendungssystem, Netzwerk, Kommunikationseinrichtungen).",
+      "Menschen und Maschinen erzeugen und/oder benutzen Information und sind durch Kommunikationsbeziehungen verbunden.",
+      "Ein Informationssystem besteht laut Definition nur aus einer isolierten App ohne Menschen und ohne Organisation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Unternehmenszweck und Anpassung.\n\nDie Aussage ist daher wahr.",
+      "Organisatorische Strukturen.\n\nDie Aussage ist daher wahr.",
+      "Menschen + Maschinen.\n\nDie Aussage ist daher wahr.",
+      "Informationserzeugung/-nutzung und Kommunikation.\n\nDie Aussage ist daher wahr.",
+      "Mensch und Organisation sind konstitutiv.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.12",
+    "title": "Komponenten: Daten, Prozesse, Menschen",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Grundlegend im Unternehmen sind Daten, Prozesse und Menschen.",
+      "Betriebe verwenden und produzieren Daten bei Geschäftsfällen.",
+      "Geschäftsfälle lassen sich in Prozessen als systematische Arbeitsschritte festhalten.",
+      "Menschen innerhalb oder außerhalb des Unternehmens (z. B. Kunden, Lieferdienste) bearbeiten Geschäftsfälle in Rollen.",
+      "Daten, Prozesse und Menschen sind laut Text für Informationssysteme bedeutungslos."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Drei Grundlagen.\n\nDie Aussage ist daher wahr.",
+      "Daten bei Geschäftsfällen.\n\nDie Aussage ist daher wahr.",
+      "Prozesse als Arbeitsschritte.\n\nDie Aussage ist daher wahr.",
+      "Interne und externe Menschen/Rollen.\n\nDie Aussage ist daher wahr.",
+      "Sie sind die Grundlage des IS-Zusammenspiels.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "3/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.13",
+    "title": "Hardware, Software, Netzwerke im IS",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Zur operativen Tätigkeit brauchen Akteure Hardware und Software (Anwendungssysteme).",
+      "Server können Datenbestände zentral verwalten und sichern.",
+      "Mitarbeitende nutzen Rechner und mobile Endgeräte zur Kommunikation und Datenverarbeitung.",
+      "Software kann standardisiert zugekauft oder individuell angepasst sein.",
+      "Lokale und globale Netzwerke dienen dem Informationsaustausch – auch zwischen Unternehmen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "tactical_explanations": [
+      "Hardware + Software nötig.\n\nDie Aussage ist daher wahr.",
+      "Serverrolle.\n\nDie Aussage ist daher wahr.",
+      "Endgeräte der Mitarbeitenden.\n\nDie Aussage ist daher wahr.",
+      "Standard vs. individuell.\n\nDie Aussage ist daher wahr.",
+      "Netzwerke für Austausch.\n\nDie Aussage ist daher wahr."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.14",
+    "title": "ERP-Systeme",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Ein ERP-System ist ein klassisches betriebliches Informationssystem.",
+      "Es unterstützt je nach Fokus wesentliche betriebliche Bereiche (z. B. Rechnungswesen, Materialwirtschaft, Produktion).",
+      "SAP ist ein Beispielanbieter mit Generationen wie R/3, SAP ERP, Business Suite und S/4HANA.",
+      "SAP S/4HANA wird als aktuelle ERP-Lösung genannt.",
+      "ERP-Systeme haben laut Text keinerlei Bezug zu betrieblichen Bereichen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "ERP als betriebliches IS.\n\nDie Aussage ist daher wahr.",
+      "Bereichsunterstützung.\n\nDie Aussage ist daher wahr.",
+      "SAP-Generationen.\n\nDie Aussage ist daher wahr.",
+      "S/4HANA aktuell.\n\nDie Aussage ist daher wahr.",
+      "Gerade betriebliche Bereiche sind der Fokus.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.15",
+    "title": "CRM, SCM und Business Intelligence",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Customer-Relationship-Management-Systeme unterstützen den Kontakt zu Kunden.",
+      "Supply-Chain-Management-Systeme helfen, in der Logistik den Überblick zu behalten.",
+      "Business-Intelligence-Systeme generieren Analysen auf Basis von Unternehmensdaten.",
+      "SAP bietet derartige Informationssystem-Lösungen an.",
+      "CRM, SCM und BI sind laut Text keine Informationssystem-Ausprägungen."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "CRM = Kundenkontakt.\n\nDie Aussage ist daher wahr.",
+      "SCM = Logistiküberblick.\n\nDie Aussage ist daher wahr.",
+      "BI = Analysen.\n\nDie Aussage ist daher wahr.",
+      "SAP-Angebot.\n\nDie Aussage ist daher wahr.",
+      "Sie werden ausdrücklich als IS-Ausprägungen genannt.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.16",
+    "title": "Anpassung, Beratung und Menschen im IS",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Informationssysteme werden oft nicht standardisiert „von der Stange“ fertig gekauft, sondern angepasst.",
+      "Je nach Unternehmensgröße können Beratungsunternehmen die Anpassung begleiten.",
+      "Unternehmen können auch interne Ressourcen für den Anpassungsprozess aufstellen.",
+      "Der Mensch in der Organisation ist zentral: Er produziert und verarbeitet Informationen.",
+      "Anpassung von Informationssystemen ist laut Text immer überflüssig und nie beratungsrelevant."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Betriebsindividuelle Anpassung.\n\nDie Aussage ist daher wahr.",
+      "Beratung möglich.\n\nDie Aussage ist daher wahr.",
+      "Interne Ressourcen möglich.\n\nDie Aussage ist daher wahr.",
+      "Mensch als Informationsproduzent/-verarbeiter.\n\nDie Aussage ist daher wahr.",
+      "Anpassung und Begleitung sind zentrale WI-Themen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "4/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.17",
+    "title": "Tricky: Anwendungssystem ⊂ Informationssystem-Logik",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Excel als Tabellenkalkulation kann Teil eines Anwendungssystems sein.",
+      "Ein Informationssystem bettet Anwendungssysteme in Organisation, Management und Prozesse ein.",
+      "Ohne Menschen und Kommunikationsbeziehungen fehlt ein Wesenskern des Informationssystems.",
+      "Reine Hardware ohne Software, Daten, Prozesse und Menschen ist kein vollständiges Informationssystem im Sinn des Texts.",
+      "Jedes beliebige Einzelprogramm ist automatisch ein vollständiges betriebliches Informationssystem inkl. Organisation."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Excel-Beispiel Anwendungssystem.\n\nDie Aussage ist daher wahr.",
+      "IS = AS + Organisationseinbettung.\n\nDie Aussage ist daher wahr.",
+      "Menschen und Kommunikation.\n\nDie Aussage ist daher wahr.",
+      "Mehrkomponenten-Charakter.\n\nDie Aussage ist daher wahr.",
+      "Organisationseinbettung und Menschen fehlen beim bloßen Einzelprogramm.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.18",
+    "title": "Tricky: Perspektiven nicht vermischen",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "Data Science gehört zur technischen Perspektive.",
+      "Psychologie gehört zur verhaltenswissenschaftlichen Perspektive.",
+      "Produktionsmanagement ist technisch-prozessual ausgerichtet, nicht identisch mit Soziologie.",
+      "Datenschutz und Privatsphäre werden im BWL-/Managementkontext der WI angesprochen.",
+      "Soziologie und Data Science sind laut Text ein und dieselbe Disziplin ohne Unterschied."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Data Science technisch.\n\nDie Aussage ist daher wahr.",
+      "Psychologie verhaltenswissenschaftlich.\n\nDie Aussage ist daher wahr.",
+      "OM ≠ Soziologie.\n\nDie Aussage ist daher wahr.",
+      "Regulierung/Datenschutz bei BWL-Themen.\n\nDie Aussage ist daher wahr.",
+      "Unterschiedliche Perspektiven und Disziplinen.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.19",
+    "title": "Tricky: Lebenszyklus und Integration",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "WI umfasst Entwicklung und Einführung ebenso wie Betrieb, Nutzung und Ablösung von Informationssystemen.",
+      "Anforderungen von Menschen müssen so übersetzt werden, dass sie funktional in Anwendungen angepasst werden können.",
+      "Dazu braucht es Kenntnisse aus Informatik und BWL (und ggf. weiteren Disziplinen).",
+      "Reibungsfreie Integration ist ein Ziel der Anpassung.",
+      "Nach der Einführung endet laut Definition jedes Interesse der WI am System endgültig."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Voller Lebenszyklus.\n\nDie Aussage ist daher wahr.",
+      "Anforderungsübersetzung.\n\nDie Aussage ist daher wahr.",
+      "Interdisziplinäre Kenntnisse.\n\nDie Aussage ist daher wahr.",
+      "Integration.\n\nDie Aussage ist daher wahr.",
+      "Betrieb, Nutzung und Ablösung gehören explizit dazu.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  },
+  {
+    "subsection": "4.4",
+    "case_id": "CASE W4.4.20",
+    "title": "Gesamtzusammenhang Wirtschaftsinformatik",
+    "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
+    "statements": [
+      "WI ist interdisziplinär zwischen BWL und Informatik und adressiert Informationssysteme in Wirtschaft, Verwaltung und Privatbereich.",
+      "Technische und verhaltenswissenschaftliche Perspektiven strukturieren das Feld.",
+      "Anwendungssysteme liefern Software/Daten/Infrastruktur für Aufgabengebiete; Informationssysteme betten sie organisational ein.",
+      "ERP-, CRM-, SCM- und BI-Systeme sind praxisnahe Ausprägungen.",
+      "Wirtschaftsinformatik beschränkt sich laut Text auf das Auswendiglernen von Programmiersyntax ohne Organisation, Menschen oder Systeme."
+    ],
+    "answer_key": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "tactical_explanations": [
+      "Definition und Gegenstand.\n\nDie Aussage ist daher wahr.",
+      "Zwei Perspektiven.\n\nDie Aussage ist daher wahr.",
+      "AS vs. IS.\n\nDie Aussage ist daher wahr.",
+      "ERP und verwandte Systeme.\n\nDie Aussage ist daher wahr.",
+      "Gegenstand sind Informationssysteme und ihre organisationale Einbettung.\n\nDie Aussage ist daher falsch."
+    ],
+    "difficulty_level": "5/5",
+    "tier": "full"
+  }
+]
