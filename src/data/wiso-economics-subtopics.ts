@@ -1,6 +1,6 @@
 /**
  * Wirtschaft verstehen (WU WiSo Aufnahmeprüfung) TOC for Full WiSo Course.
- * Chapter 4 has no BBE/Fuhrmann counterpart — bank stays empty until authored.
+ * Chapter 4 has no BBE/Fuhrmann counterpart — WiSo-native (§4.1 authored; §4.2–§4.3 pending).
  * Chapter 2 is WiSo-native (authored §2.1–§2.6).
  */
 
@@ -129,13 +129,13 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
     num: 4,
     title: "Digitalisierung",
     enabled: true,
-    blank: true,
+    blank: false,
     subtopics: [
       {
         id: "4.1",
         chapter: 4,
         title: "Digitale Transformation und Geschäftsmodelle",
-        hasMappedBank: false,
+        hasMappedBank: true,
       },
       {
         id: "4.2",
@@ -155,7 +155,7 @@ export const WISO_ECONOMICS_BOOK_TOC: WisoEconomicsChapterToc[] = [
 
 /**
  * BBE Fuhrmann subsection → Wirtschaft verstehen subsection.
- * Ch.4 digitalisation intentionally omitted until authored.
+ * Ch.4 digitalisation is WiSo-native (not remapped from BBE).
  * BBE marketing (5.x) is not part of the WiSo foundations TOC — excluded.
  * Money/inflation cases are reclassified from basics via keyword override in the build script.
  */
