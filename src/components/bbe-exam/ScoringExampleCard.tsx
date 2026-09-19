@@ -1,8 +1,9 @@
 import { Minus, Plus } from "lucide-react";
 import {
+  getWi2Rates,
+  roundTaskScore,
   statementPointDelta,
   type StatementResult,
-  type Wi2Rates,
 } from "@/lib/scoring";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +13,8 @@ export type ScoringExample = {
   pattern: boolean[];
   statements: StatementResult[];
   score: number;
+  /** Optional override when examples use different maxima. */
+  maxPoints?: number;
 };
 
 type StatementBreakdown = {
@@ -24,20 +27,15 @@ type StatementBreakdown = {
 function breakdownStatement(
   s: StatementResult,
   letter: string,
-  perCorrect: number,
-  perWrong: number,
+  statements: StatementResult[],
+  maxPoints: number,
 ): StatementBreakdown {
-  const rates: Wi2Rates = {
-    perCorrect,
-    perWrong,
-    trueCount: 0,
-    falseCount: 0,
-  };
+  const rates = getWi2Rates(maxPoints, statements);
   return {
     letter,
     isTrue: s.isTrue,
     userMarked: s.userMarked,
-    points: statementPointDelta(s, rates),
+    points: roundTaskScore(statementPointDelta(s, rates)),
   };
 }
 
@@ -92,20 +90,25 @@ function StatementCell({ item }: { item: StatementBreakdown }) {
 export function ScoringExampleCard({
   example,
   maxPoints,
-  perCorrect,
-  perWrong,
 }: {
   example: ScoringExample;
   maxPoints: number;
-  perCorrect: number;
-  perWrong: number;
+  /** @deprecated Rates are derived from the example's answer key. */
+  perCorrect?: number;
+  /** @deprecated Rates are derived from the example's answer key. */
+  perWrong?: number;
 }) {
+  const taskMax = example.maxPoints ?? maxPoints;
   const items = example.statements.map((s, i) =>
-    breakdownStatement(s, String.fromCharCode(65 + i), perCorrect, perWrong),
+    breakdownStatement(s, String.fromCharCode(65 + i), example.statements, taskMax),
   );
 
-  const earned = items.filter((i) => i.points > 0).reduce((sum, i) => sum + i.points, 0);
-  const lost = items.filter((i) => i.points < 0).reduce((sum, i) => sum + i.points, 0);
+  const earned = roundTaskScore(
+    items.filter((i) => i.points > 0).reduce((sum, i) => sum + i.points, 0),
+  );
+  const lost = roundTaskScore(
+    items.filter((i) => i.points < 0).reduce((sum, i) => sum + i.points, 0),
+  );
   const rawTotal = earned + lost;
 
   return (
@@ -126,7 +129,7 @@ export function ScoringExampleCard({
             </p>
             <p className="font-display text-2xl font-bold tabular-nums text-foreground">
               {example.score.toFixed(1)}{" "}
-              <span className="text-base font-semibold text-muted-foreground">/ {maxPoints}</span>
+              <span className="text-base font-semibold text-muted-foreground">/ {taskMax}</span>
             </p>
           </div>
         </div>
@@ -173,7 +176,7 @@ export function ScoringExampleCard({
               <tr className="bg-background/80">
                 <td className="px-4 py-3 font-semibold">Final task score</td>
                 <td className="px-4 py-3 font-display text-base font-bold tabular-nums">
-                  {example.score.toFixed(1)} / {maxPoints}
+                  {example.score.toFixed(1)} / {taskMax}
                   {rawTotal < 0 ? (
                     <span className="ml-2 text-xs font-normal text-muted-foreground">
                       (floored at 0)

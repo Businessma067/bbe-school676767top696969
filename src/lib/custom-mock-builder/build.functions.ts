@@ -10,7 +10,10 @@ import {
   pointsTotalForSubject,
   type CustomMockSubjectId,
 } from "@/config/custom-mock-builder";
-import { SCORING_CONFIG } from "@/config/scoring-config";
+import {
+  ENGLISH_POINTS_BY_TYPE,
+  SCORING_CONFIG,
+} from "@/config/scoring-config";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import {
   chaptersFromSubtopicIds,
@@ -37,6 +40,16 @@ function padFive<T>(arr: T[], fill: T): T[] {
   return next;
 }
 
+function maxPointsForBankTask(subject: CustomMockSubjectId, c: CaseRow): number {
+  if (typeof c.maxPoints === "number" && c.maxPoints > 0) return c.maxPoints;
+  if (subject === "english" && c.kind) {
+    if (c.kind === "reading") return ENGLISH_POINTS_BY_TYPE.text;
+    if (c.kind === "grammar") return ENGLISH_POINTS_BY_TYPE.grammar;
+    if (c.kind === "vocabulary") return ENGLISH_POINTS_BY_TYPE.vocabulary;
+  }
+  return SCORING_CONFIG[subject].defaultMaxPerTask;
+}
+
 function taskToExamQuestion(
   subject: CustomMockSubjectId,
   c: CaseRow,
@@ -54,7 +67,7 @@ function taskToExamQuestion(
       ? `#${c.subsection}`
       : undefined;
 
-  const maxPoints = SCORING_CONFIG[subject].defaultMaxPerTask;
+  const maxPoints = maxPointsForBankTask(subject, c);
 
   return {
     id: `${mockId}-q${index}`,
@@ -140,7 +153,6 @@ export const buildCustomMock = createServerFn({ method: "POST" })
     }
 
     const durationMinutes = durationMinutesForQuestionCount(questionCount);
-    const pointsTotal = pointsTotalForSubject(subject, questionCount);
     const title = formatCustomMockTitle(subtopics, questionCount, subjectLabel);
 
     const { data: inserted, error: insertError } = await context.supabase
@@ -152,7 +164,7 @@ export const buildCustomMock = createServerFn({ method: "POST" })
         chapters: subtopics,
         question_count: questionCount,
         duration_minutes: durationMinutes,
-        points_total: pointsTotal,
+        points_total: pointsTotalForSubject(subject, questionCount),
         questions: [],
       })
       .select("id")
@@ -163,10 +175,13 @@ export const buildCustomMock = createServerFn({ method: "POST" })
     }
 
     const questions = picked.map((c, i) => taskToExamQuestion(subject, c, i + 1, inserted.id));
+    const pointsTotal = Number(
+      questions.reduce((sum, q) => sum + q.maxPoints, 0).toFixed(2),
+    );
 
     const { data: saved, error: updateError } = await context.supabase
       .from("custom_mocks")
-      .update({ questions: questions as never })
+      .update({ questions: questions as never, points_total: pointsTotal })
       .eq("id", inserted.id)
       .eq("user_id", context.userId)
       .select(

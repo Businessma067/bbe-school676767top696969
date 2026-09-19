@@ -4,7 +4,7 @@ import { SCORING_CONFIG, SUBJECT_META } from "@/config/scoring-config";
 import { isCustomExamId } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
-import { getWi2Rates, statementPointDelta } from "@/lib/scoring";
+import { getWi2Rates, roundTaskScore, statementPointDelta } from "@/lib/scoring";
 import {
   buildExamAnalytics,
   parseMockAttemptHandoff,
@@ -234,7 +234,9 @@ function TaskReviewWorkspace({
   const q = current.question;
   const sm = SUBJECT_META[q.subject];
   const rates = getWi2Rates(q.maxPoints, current.statements);
-  const deltas = current.statements.map((s) => statementPointDelta(s, rates));
+  const deltas = current.statements.map((s) =>
+    roundTaskScore(statementPointDelta(s, rates)),
+  );
 
   return (
     <div className="flex flex-col gap-4 lg:flex-row lg:items-start">

@@ -9,7 +9,6 @@ import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
 import {
   ScoringExampleCard,
-  ScoringExamplesLegend,
   type ScoringExample,
 } from "@/components/bbe-exam/ScoringExampleCard";
 import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
@@ -87,46 +86,92 @@ function marks(pattern: boolean[], truths: boolean[]): StatementResult[] {
   }));
 }
 
-const EXAMPLE_TRUTHS = [true, true, false, true, false]; // r=3, f=2
-const MAX_EXAMPLE = SCORING_CONFIG.math.defaultMaxPerTask;
+type WorkedEx = {
+  title: string;
+  note: string;
+  maxPoints: number;
+  truths: boolean[];
+  pattern: boolean[];
+};
 
-const workedExamples: ScoringExample[] = [
+/** Official PDF examples (Partial Credit System — BBE entrance exam). */
+const PDF_EXAMPLES: WorkedEx[] = [
   {
-    title: "Perfect selection",
-    pattern: [true, true, false, true, false],
-    note: "You mark all three true statements and leave both false ones blank. Every green cell adds points; grey cells stay at 0 with no penalty.",
-  },
-  {
-    title: "Partial credit with one miss",
+    title: "Multi-correct: full marks",
+    maxPoints: 3,
+    truths: [true, true, false, false, false],
     pattern: [true, true, false, false, false],
-    note: "You mark two true statements and skip the third. The missed true statement (D) stays grey at 0. You still avoid both penalties.",
+    note: "Official example (rivers): mark both correct options, leave all three false blank → max/r + max/r = 3.",
   },
   {
-    title: "Correct marks plus one wrong tick",
-    pattern: [true, true, true, true, false],
-    note: "You find all three true statements, but you also mark false statement C. The red penalty pulls the total down even though your true marks were correct.",
+    title: "Multi-correct: one true + one false",
+    maxPoints: 3,
+    truths: [true, true, false, false, false],
+    pattern: [true, false, true, false, false],
+    note: "One correct mark (+1.5) and one false mark (−1) → 0.5. Missed credit on the other true is not an extra penalty.",
   },
   {
-    title: "Over-ticking cancels progress",
+    title: "Multi-correct: floors at zero",
+    maxPoints: 3,
+    truths: [true, true, false, false, false],
+    pattern: [true, false, false, true, true],
+    note: "One correct (+1.5) minus two false marks (−1 each) nets −0.5 before the floor → scored as 0.",
+  },
+  {
+    title: "Multi-correct: three true, one false tick",
+    maxPoints: 3,
+    truths: [true, true, false, false, true],
+    pattern: [true, true, true, false, true],
+    note: "Three correct marks (+1 each) and one false (−1.5) → 1.5.",
+  },
+  {
+    title: "All options correct: partial selection",
+    maxPoints: 3,
+    truths: [true, true, true, true, true],
+    pattern: [true, true, false, false, true],
+    note: "When every option is correct (f = 0), each mark earns max/5 = 0.6. Three marks → 1.8.",
+  },
+  {
+    title: "Single correct: all-or-nothing",
+    maxPoints: 5,
+    truths: [true, false, false, false, false],
     pattern: [true, true, true, true, true],
-    note: "You mark every option. Green credit from the three true statements is cancelled by red penalties on both false statements, so the task floors at 0.",
+    note: "With exactly one correct option, marking it together with any false option scores 0 — no partial credit.",
   },
-].map((ex) => {
-  const statements = marks(ex.pattern, EXAMPLE_TRUTHS);
-  const score = calculateTaskScore(MAX_EXAMPLE, statements);
-  return { ...ex, score, statements };
+  {
+    title: "Single false: half-max penalty",
+    maxPoints: 4,
+    truths: [true, true, true, false, true],
+    pattern: [true, true, true, true, true],
+    note: "With exactly one false option, marking all four trues plus that false costs max/2 → 4 − 2 = 2.",
+  },
+  {
+    title: "Single false: partial trues + penalty",
+    maxPoints: 4,
+    truths: [true, true, true, false, true],
+    pattern: [true, true, true, true, false],
+    note: "Three of four trues (+1 each) plus the single false (−2) → 1. Partial credit still applies when f = 1.",
+  },
+];
+
+const workedExamples: ScoringExample[] = PDF_EXAMPLES.map((ex) => {
+  const statements = marks(ex.pattern, ex.truths);
+  const score = calculateTaskScore(ex.maxPoints, statements);
+  return {
+    title: ex.title,
+    note: ex.note,
+    pattern: ex.pattern,
+    statements,
+    score,
+    maxPoints: ex.maxPoints,
+  };
 });
 
 export function BbeExamScoringPage() {
-  const r = EXAMPLE_TRUTHS.filter(Boolean).length;
-  const f = EXAMPLE_TRUTHS.length - r;
-  const perCorrect = MAX_EXAMPLE / r;
-  const perWrong = MAX_EXAMPLE / f;
-
   return (
     <BbeExamShell
       h1="WU Vienna BBE Exam Scoring Explained: Points & Partial Credit"
-      lead="BBE exam points are not simply right or wrong. This page explains partial credit, how selections are scored, and what common ticking mistakes cost you."
+      lead="BBE exam points are not simply right or wrong. This page explains partial credit, how selections are scored, and what common ticking mistakes cost you — using the same rules as WU’s official partial-credit PDF."
       heroActions={
         <BbePrimaryButton to={BBE_PRACTICE_ROUTES.mockExams}>
           See scoring on a mock exam
@@ -250,43 +295,49 @@ export function BbeExamScoringPage() {
 
         <BbeSection id="correct-selections" title="Correct selections">
           <p>
-            When more than one statement is true, each correctly marked true statement typically contributes
+            When more than one statement is true, each correctly marked true statement contributes
             an equal share of the task maximum:{" "}
-            <span className="font-medium text-foreground">perCorrect ≈ maxPoints / r</span>, where{" "}
-            <span className="font-medium text-foreground">r</span> is the number of true statements.
+            <span className="font-medium text-foreground">perCorrect = max / c</span>, where{" "}
+            <span className="font-medium text-foreground">c</span> (also written{" "}
+            <span className="font-medium text-foreground">r</span> in WU materials) is the number of
+            true statements.
           </p>
           <p>
-            Special case: if exactly one statement is true (r = 1), the task behaves in an all-or-nothing
-            way for that single truth. Marking the true statement can earn the full maximum, but marking a
-            false statement can cancel it entirely.
+            Special case: if exactly one statement is true (c = 1), the task is all-or-nothing. You
+            earn the full maximum only if that true statement is marked and every false statement is
+            left blank. Any false mark zeros the question.
           </p>
         </BbeSection>
 
         <BbeSection id="incorrect-selections" title="Incorrect selections">
           <p>
-            Marking a false statement applies a penalty. When there is more than one false statement, the
-            usual penalty per wrong mark is{" "}
-            <span className="font-medium text-foreground">perWrong ≈ maxPoints / f</span>, where{" "}
+            Marking a false statement applies a penalty. When there is more than one false statement,
+            the usual penalty per wrong mark is{" "}
+            <span className="font-medium text-foreground">perWrong = max / f</span>, where{" "}
             <span className="font-medium text-foreground">f</span> is the number of false statements.
           </p>
           <p>
-            Special case: if exactly one statement is false (f = 1), the penalty for marking that false
-            statement is half the task maximum (maxPoints / 2), while correct marks still split the maximum
-            across the true statements.
+            Special case: if exactly one statement is false (f = 1), the penalty for marking that
+            false statement is half the task maximum (max / 2), while correct marks still split the
+            maximum across the true statements. If you miss some trues, partial credit still applies
+            with that half-max penalty.
           </p>
         </BbeSection>
 
         <BbeSection id="partial-credit" title="Partial credit">
           <p>
-            Putting the pieces together, a typical task score (before the zero floor) is:
+            Putting the pieces together, a typical multi-correct task score (before the zero floor)
+            is:
           </p>
           <div className="overflow-x-auto rounded-xl border border-border bg-card px-4 py-3 font-mono text-sm text-foreground">
-            score = (correctMarks × perCorrect) − (wrongMarks × perWrong)
+            score = (correctMarks × max/c) − (wrongMarks × max/f)
           </div>
           <p>
-            In plain language: you earn a share of the maximum for each true statement you correctly select,
-            and you lose a share for each false statement you incorrectly select. Missed true statements
-            simply withhold the credit you could have earned. They are not an extra penalty beyond that.
+            In plain language: you earn a share of the maximum for each true statement you correctly
+            select, and you lose a share for each false statement you incorrectly select. Missed true
+            statements simply withhold the credit you could have earned. They are not an extra penalty
+            beyond that. Mock exams, the custom mock builder, and practice tasks all use this same
+            engine.
           </p>
         </BbeSection>
 
@@ -308,21 +359,16 @@ export function BbeExamScoringPage() {
         </BbeSection>
 
         <BbeSection id="worked-examples" title="Worked scoring examples">
-          <ScoringExamplesLegend
-            maxPoints={MAX_EXAMPLE}
-            perCorrect={perCorrect}
-            perWrong={perWrong}
-            r={r}
-            f={f}
-          />
+          <p className="text-sm text-muted-foreground">
+            Examples below follow WU’s official Partial Credit System PDF (rivers / cities illustrations).
+            Each card uses the same scoring engine as BBE School mocks and the custom mock builder.
+          </p>
           <div className="mt-6 space-y-6">
             {workedExamples.map((ex) => (
               <ScoringExampleCard
                 key={ex.title}
                 example={ex}
-                maxPoints={MAX_EXAMPLE}
-                perCorrect={perCorrect}
-                perWrong={perWrong}
+                maxPoints={ex.maxPoints ?? 3}
               />
             ))}
           </div>

@@ -15,6 +15,8 @@ import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
 import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
 import { PRACTICE_BODY_STACK, PRACTICE_EXPLAIN_ASIDE, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { SCORING_CONFIG } from "@/config/scoring-config";
+import { calculateTaskScoreFromMarks } from "@/lib/scoring";
 import {
   practiceExplanationToggleClass,
   practiceInlineAiButtonClass,
@@ -885,6 +887,8 @@ function CaseCard({
     (acc, key, i) => acc + ((answers[i] === true) === key ? 1 : 0),
     0,
   );
+  const maxPoints = SCORING_CONFIG.economics.defaultMaxPerTask;
+  const earnedPoints = calculateTaskScoreFromMarks(maxPoints, data.answer_key, answers);
 
   const handleSubmit = () => {
     if (requireAuth && !requireAuth()) return;
@@ -1035,7 +1039,10 @@ function CaseCard({
         </div>
         {checked && !reviewOnly && (
           <span className="text-sm font-semibold text-muted-foreground">
-            {correctCount}/{data.answer_key.length} correct
+            {earnedPoints.toFixed(1)} / {maxPoints} pts
+            <span className="ml-2 font-normal">
+              ({correctCount}/{data.answer_key.length} judgments)
+            </span>
           </span>
         )}
       </div>
