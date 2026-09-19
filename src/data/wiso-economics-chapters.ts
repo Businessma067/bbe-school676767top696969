@@ -1,7 +1,7 @@
 /**
  * WiSo Full Course economics banks (Wirtschaft verstehen chapters 1–4).
  * Cases remapped from BBE Fuhrmann banks; German text lives in the JSON banks.
- * Chapter 2 holds WiSo-native German cases (Wirtschaft verstehen); ch.4 empty until authored.
+ * Chapter 2 holds WiSo-native German cases for Wirtschaft verstehen §2.1–§2.6; ch.4 empty until authored.
  */
 
 import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
