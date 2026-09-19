@@ -1118,17 +1118,17 @@ cases.append(case("4.4", 14, "ERP-Systeme", [
 ], "4/5", CTX44))
 
 cases.append(case("4.4", 15, "CRM, SCM und Business Intelligence", [
-    "Customer-Relationship-Management-Systeme unterstützen den Kontakt zu Kunden.",
-    "Supply-Chain-Management-Systeme helfen, in der Logistik den Überblick zu behalten.",
-    "Business-Intelligence-Systeme generieren Analysen auf Basis von Unternehmensdaten.",
-    "SAP bietet derartige Informationssystem-Lösungen an.",
-    "CRM, SCM und BI sind laut Text keine Informationssystem-Ausprägungen.",
+    "CRM-Systeme (Customer-Relationship-Management / Kundenbeziehungsmanagement) unterstützen den systematischen Kontakt zu Kundinnen und Kunden.",
+    "SCM-Systeme (Supply-Chain-Management) helfen, Lieferketten und Logistikprozesse zu steuern und den Überblick zu behalten.",
+    "Business-Intelligence-Systeme (BI) generieren Analysen auf Basis von Unternehmensdaten zur Entscheidungsunterstützung.",
+    "Anbieter wie SAP stellen derartige Informationssystem-Lösungen für Unternehmen bereit.",
+    "CRM, SCM und BI sind keine Ausprägungen von Informationssystemen in der Wirtschaftsinformatik.",
 ], [True, True, True, True, False], [
-    T("CRM = Kundenkontakt."),
-    T("SCM = Logistiküberblick."),
-    T("BI = Analysen."),
-    T("SAP-Angebot."),
-    F("Sie werden ausdrücklich als IS-Ausprägungen genannt."),
+    T("CRM zielt darauf ab, Kundenbeziehungen systematisch zu pflegen und Interaktionen mit Kundinnen und Kunden zu unterstützen — typische Anwendungsform von Informationssystemen."),
+    T("SCM-Systeme unterstützen die Steuerung der Lieferkette (Beschaffung, Produktion, Distribution). Auch das ist eine klassische Informationssystem-Anwendung in Unternehmen."),
+    T("Business Intelligence wertet Unternehmensdaten aus und liefert Analysen für Entscheidungen. Damit gehört BI zu den Informationssystemen im Sinne der Wirtschaftsinformatik."),
+    T("SAP ist ein bekanntes Beispiel für Anbieter von Informationssystem-Lösungen in diesem Feld."),
+    F("Genau das Gegenteil: CRM, SCM und BI sind typische Ausprägungen von Anwendungs- bzw. Informationssystemen."),
 ], "4/5", CTX44))
 
 cases.append(case("4.4", 16, "Anpassung, Beratung und Menschen im IS", [

@@ -2151,11 +2151,11 @@
     "title": "CRM, SCM und Business Intelligence",
     "context": "Analysieren Sie Wirtschaftsinformatik als interdisziplinäres Fach sowie Anwendungs- und Informationssysteme. Bewerten Sie die folgenden Aussagen:",
     "statements": [
-      "Customer-Relationship-Management-Systeme unterstützen den Kontakt zu Kunden.",
-      "Supply-Chain-Management-Systeme helfen, in der Logistik den Überblick zu behalten.",
-      "Business-Intelligence-Systeme generieren Analysen auf Basis von Unternehmensdaten.",
-      "SAP bietet derartige Informationssystem-Lösungen an.",
-      "CRM, SCM und BI sind laut Text keine Informationssystem-Ausprägungen."
+      "CRM-Systeme (Customer-Relationship-Management / Kundenbeziehungsmanagement) unterstützen den systematischen Kontakt zu Kundinnen und Kunden.",
+      "SCM-Systeme (Supply-Chain-Management) helfen, Lieferketten und Logistikprozesse zu steuern und den Überblick zu behalten.",
+      "Business-Intelligence-Systeme (BI) generieren Analysen auf Basis von Unternehmensdaten zur Entscheidungsunterstützung.",
+      "Anbieter wie SAP stellen derartige Informationssystem-Lösungen für Unternehmen bereit.",
+      "CRM, SCM und BI sind keine Ausprägungen von Informationssystemen in der Wirtschaftsinformatik."
     ],
     "answer_key": [
       true,
@@ -2165,11 +2165,11 @@
       false
     ],
     "tactical_explanations": [
-      "CRM = Kundenkontakt.\n\nDie Aussage ist daher wahr.",
-      "SCM = Logistiküberblick.\n\nDie Aussage ist daher wahr.",
-      "BI = Analysen.\n\nDie Aussage ist daher wahr.",
-      "SAP-Angebot.\n\nDie Aussage ist daher wahr.",
-      "Sie werden ausdrücklich als IS-Ausprägungen genannt.\n\nDie Aussage ist daher falsch."
+      "CRM zielt darauf ab, Kundenbeziehungen systematisch zu pflegen und Interaktionen mit Kundinnen und Kunden zu unterstützen — typische Anwendungsform von Informationssystemen.\n\nDie Aussage ist daher wahr.",
+      "SCM-Systeme unterstützen die Steuerung der Lieferkette (Beschaffung, Produktion, Distribution). Auch das ist eine klassische Informationssystem-Anwendung in Unternehmen.\n\nDie Aussage ist daher wahr.",
+      "Business Intelligence wertet Unternehmensdaten aus und liefert Analysen für Entscheidungen. Damit gehört BI zu den Informationssystemen im Sinne der Wirtschaftsinformatik.\n\nDie Aussage ist daher wahr.",
+      "Die Lernunterlage nennt SAP als Beispielanbieter für Informationssystem-Lösungen in diesem Feld — die Aussage trifft den Kern.\n\nDie Aussage ist daher wahr.",
+      "Genau das Gegenteil: CRM, SCM und BI sind typische Ausprägungen von Anwendungs- bzw. Informationssystemen. Die Verneinung ist falsch.\n\nDie Aussage ist daher falsch."
     ],
     "difficulty_level": "4/5",
     "tier": "full"

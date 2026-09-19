@@ -49,8 +49,12 @@ def validate_row(row: dict, path: str, idx: int) -> list[str]:
         [str(row.get("title", "")), str(row.get("context", "")), *map(str, stmts[:2])]
     )
     if ENGLISH_MARKERS.search(blob) and not row.get("needs_de_translation"):
-        # Only flag strong English title/context mixes
-        if re.search(r"\b(The|Company|Marketing mix|Customer)\b", blob):
+        # Only flag strong English sentence openers / calques — not DE marketing
+        # loanwords (Segment, Brand) or compound expansions (Customer-Relationship-…).
+        if re.search(
+            r"\b(The company|Marketing mix|Customers? are|This statement|Evaluate the)\b",
+            blob,
+        ):
             errs.append(f"{path} {cid}: likely English leftovers")
     return errs
 
