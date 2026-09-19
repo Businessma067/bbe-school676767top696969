@@ -6,13 +6,14 @@ import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale
 type LocalizedLinkProps = {
   to: string;
   hash?: string;
-} & Omit<ComponentPropsWithoutRef<typeof Link>, "to" | "params" | "hash">;
+  search?: Record<string, unknown>;
+} & Omit<ComponentPropsWithoutRef<typeof Link>, "to" | "params" | "hash" | "search">;
 
 /**
  * Link that stays on `/de/...` or `/uk/...` while browsing a translated site,
  * and uses plain English routes on the default site.
  */
-export function LocalizedLink({ to, hash, ...props }: LocalizedLinkProps) {
+export function LocalizedLink({ to, hash, search, ...props }: LocalizedLinkProps) {
   const { lang } = useLanguage();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const effective = effectiveLangFromLocation(pathname, lang);
@@ -24,6 +25,7 @@ export function LocalizedLink({ to, hash, ...props }: LocalizedLinkProps) {
       to={link.to as never}
       params={link.params as never}
       hash={link.hash}
+      search={search as never}
       {...props}
     />
   );

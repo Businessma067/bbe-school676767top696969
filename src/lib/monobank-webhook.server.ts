@@ -129,7 +129,25 @@ export type WebhookLog = {
   error?: string;
 };
 
-/** Persists every webhook hit (valid or not) for debugging. */
+const SENSITIVE_HEADERS = new Set([
+  "x-sign",
+  "x-token",
+  "authorization",
+  "cookie",
+  "set-cookie",
+  "x-api-key",
+]);
+
+/** Drops signature/credential headers so stored logs cannot leak them. */
+function redactHeaders(headers: Record<string, string>): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [key, value] of Object.entries(headers)) {
+    out[key] = SENSITIVE_HEADERS.has(key.toLowerCase()) ? "[redacted]" : value;
+  }
+  return out;
+}
+
+/** Persists every webhook hit (valid or not) for debugging, without secrets. */
 export async function logWebhook(entry: WebhookLog): Promise<void> {
   try {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
@@ -139,9 +157,10 @@ export async function logWebhook(entry: WebhookLog): Promise<void> {
       amount_minor: entry.amountMinor,
       currency_code: entry.currencyCode,
       signature_valid: entry.signatureValid,
-      headers: entry.headers,
+      headers: redactHeaders(entry.headers),
       payload: entry.payload as never,
-      raw_body: entry.rawBody.slice(0, 20000),
+      // Raw body is only useful when parsing/verification failed.
+      raw_body: entry.payload ? null : entry.rawBody.slice(0, 5000),
       error: entry.error ?? null,
     });
   } catch (err) {
