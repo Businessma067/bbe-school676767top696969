@@ -15,7 +15,7 @@ const MAX_ATTEMPTS_PER_IP = 10;
 const ATTEMPT_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 const MIGRATION_HINT =
-  "Promocode tables missing/outdated in Supabase. Run supabase/migrations/20260908121000_promocodes_bootstrap_30_full.sql in the Supabase/Lovable SQL Editor, then reload.";
+  "Promocode tables missing/outdated in Supabase. Run supabase/migrations/20260908121000_promocodes_bootstrap_30_full.sql then supabase/migrations/20260913224500_one_time_15_discount_promocodes.sql in the Supabase/Lovable SQL Editor, then reload.";
 
 const RedeemInput = z.object({
   code: z.string().min(1).max(64),
@@ -27,8 +27,7 @@ const DiscountInput = z.object({
 });
 
 export type PromoRedeemResult =
-  | { ok: true; href: string }
-  | { ok: false; error: string; rateLimited?: boolean };
+  { ok: true; href: string } | { ok: false; error: string; rateLimited?: boolean };
 
 export type DiscountValidateResult =
   | { ok: true; code: string; discountPct: number; name: string | null; expiresAt: string | null }
@@ -86,7 +85,10 @@ function clientIpFromHeaders(headers: Headers): string {
   return "unknown";
 }
 
-function resolveCatalog(slug: string): { slug: CourseSlug; meta: (typeof COURSE_CATALOG)[CourseSlug] } {
+function resolveCatalog(slug: string): {
+  slug: CourseSlug;
+  meta: (typeof COURSE_CATALOG)[CourseSlug];
+} {
   if (slug in COURSE_CATALOG) {
     const courseSlug = slug as CourseSlug;
     return { slug: courseSlug, meta: COURSE_CATALOG[courseSlug] };
@@ -94,7 +96,9 @@ function resolveCatalog(slug: string): { slug: CourseSlug; meta: (typeof COURSE_
   return { slug: "full-course", meta: COURSE_CATALOG["full-course"] };
 }
 
-function isMissingRelationError(error: { message?: string; code?: string; details?: string } | null) {
+function isMissingRelationError(
+  error: { message?: string; code?: string; details?: string } | null,
+) {
   if (!error) return false;
   const blob = `${error.code ?? ""} ${error.message ?? ""} ${error.details ?? ""}`.toLowerCase();
   return (
@@ -123,6 +127,11 @@ function isExpired(expiresAt: string | null | undefined): boolean {
   return new Date(expiresAt).getTime() < Date.now();
 }
 
+/** 15% discount codes are one-time: claimed to an account on Apply. */
+function isOneTimeFifteenDiscount(discountPct: number | null | undefined): boolean {
+  return (discountPct ?? DISCOUNT_PCT) === 15;
+}
+
 /** Resolve a live discount promocode (DB first, legacy hardcoded fallback). */
 export async function lookupDiscountPromo(input: {
   code: string;
@@ -133,7 +142,11 @@ export async function lookupDiscountPromo(input: {
   const code = normalizeCode(input.code);
   if (!code) return { ok: false, error: "Enter a promocode." };
 
-  if (input.productSlug && !isPaidProductSlug(input.productSlug) && input.productSlug !== "any-paid") {
+  if (
+    input.productSlug &&
+    !isPaidProductSlug(input.productSlug) &&
+    input.productSlug !== "any-paid"
+  ) {
     return { ok: false, error: "This promocode does not apply to this course." };
   }
 
@@ -141,7 +154,9 @@ export async function lookupDiscountPromo(input: {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data, error } = await supabaseAdmin
       .from("promocodes")
-      .select("id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at, used_by")
+      .select(
+        "id, code, name, kind, discount_pct, max_uses, expires_at, product_slug, used_at, used_by",
+      )
       .eq("code", code)
       .maybeSingle();
 
@@ -156,8 +171,12 @@ export async function lookupDiscountPromo(input: {
       if (data.kind !== "discount") {
         return { ok: false, error: "This promocode unlocks access — redeem it in the Promo tab." };
       }
-      // Discount codes are multi-use: `used_at` is not a block, only
-      // `max_uses` (counted from actual paid usages) limits them.
+
+      // One-time 15% codes: used_at claims the code to one account at Apply time.
+      // The claiming user may still check out; everyone else is blocked.
+      if (data.used_at && data.used_by !== input.userId) {
+        return { ok: false, error: "This promocode has already been used." };
+      }
 
       if (isExpired(data.expires_at)) {
         return { ok: false, error: "This promocode has expired." };
@@ -226,9 +245,77 @@ export async function lookupDiscountPromo(input: {
   return { ok: false, error: "This promocode is invalid or has already been used." };
 }
 
-// Discount promocodes are multi-use and are never claimed at apply time.
-// Actual usage is recorded in `promo_usages` after a successful payment.
+/**
+ * Mark a one-time 15% discount promocode used as soon as it is applied.
+ * The same user may still check out with it; everyone else is blocked.
+ * Multi-use discounts (e.g. 30%) are left unclaimed here.
+ */
+async function claimDiscountPromoOnApply(input: {
+  code: string;
+  userId: string;
+  userEmail: string | null;
+}): Promise<{ ok: true } | { ok: false; error: string }> {
+  const code = normalizeCode(input.code);
+  if (!code) return { ok: false, error: "Enter a promocode." };
 
+  try {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+
+    const { data: existing, error: existingError } = await supabaseAdmin
+      .from("promocodes")
+      .select("id, used_by, kind, discount_pct")
+      .eq("code", code)
+      .maybeSingle();
+
+    if (existingError) {
+      if (isMissingRelationError(existingError)) {
+        // No table yet — nothing to mute.
+        return { ok: true };
+      }
+      console.error("claimDiscountPromoOnApply existing", existingError);
+      return { ok: false, error: "Could not apply promocode. Try again." };
+    }
+
+    if (!existing || existing.kind !== "discount") {
+      // Hardcoded-only / unlock code — cannot mute discount state here.
+      return { ok: true };
+    }
+
+    // Leave multi-use (non-15%) discount codes free for repeated apply.
+    if (!isOneTimeFifteenDiscount(existing.discount_pct)) {
+      return { ok: true };
+    }
+
+    if (existing.used_by === input.userId) return { ok: true };
+
+    const usedAt = new Date().toISOString();
+    const { data: claimed, error } = await supabaseAdmin
+      .from("promocodes")
+      .update({
+        used_at: usedAt,
+        used_by: input.userId,
+        used_by_email: input.userEmail,
+      })
+      .eq("id", existing.id)
+      .eq("kind", "discount")
+      .is("used_at", null)
+      .select("id")
+      .maybeSingle();
+
+    if (error) {
+      if (isMissingRelationError(error)) return { ok: true };
+      console.error("claimDiscountPromoOnApply", error);
+      return { ok: false, error: "Could not apply promocode. Try again." };
+    }
+
+    if (claimed) return { ok: true };
+
+    return { ok: false, error: "This promocode has already been used." };
+  } catch (err) {
+    console.error("claimDiscountPromoOnApply", err);
+    return { ok: false, error: "Could not apply promocode. Try again." };
+  }
+}
 
 export async function recordPromoUsage(input: {
   code: string;
@@ -278,14 +365,25 @@ export const validateDiscountCode = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => DiscountInput.parse(d))
   .handler(async ({ context, data }): Promise<DiscountValidateResult> => {
     const userId = context.userId;
+    const userEmail = typeof context.claims.email === "string" ? context.claims.email : null;
 
-    return await lookupDiscountPromo({
+    const result = await lookupDiscountPromo({
       code: data.code,
       productSlug: data.productSlug,
       userId,
     });
-  });
+    if (!result.ok) return result;
 
+    // Mute one-time 15% codes on Apply so they attach to this account immediately.
+    const claimed = await claimDiscountPromoOnApply({
+      code: result.code,
+      userId,
+      userEmail,
+    });
+    if (!claimed.ok) return claimed;
+
+    return result;
+  });
 
 export const redeemPromocode = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
@@ -298,8 +396,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
     const ip = clientIpFromHeaders(request.headers);
     const code = normalizeCode(data.code);
     const userId = context.userId;
-    const email =
-      typeof context.claims.email === "string" ? context.claims.email : null;
+    const email = typeof context.claims.email === "string" ? context.claims.email : null;
 
     const since = new Date(Date.now() - ATTEMPT_WINDOW_MS).toISOString();
     const { count, error: countError } = await supabaseAdmin
@@ -437,10 +534,7 @@ async function enrollFromClaim(
     return { ok: false, error: "Could not unlock access. Try again." };
   }
 
-  await supabaseAdmin
-    .from("promo_redeem_attempts")
-    .update({ success: true })
-    .eq("id", attemptId);
+  await supabaseAdmin.from("promo_redeem_attempts").update({ success: true }).eq("id", attemptId);
 
   return { ok: true, href: meta.href };
 }
@@ -465,7 +559,7 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
         kind: "discount" as const,
         productSlug: p.productSlug,
         discountPct: p.discountPct,
-        maxUses: null,
+        maxUses: isOneTimeFifteenDiscount(p.discountPct) ? 1 : null,
         expiresAt: p.expiresAt,
         usedAt: null,
         usedBy: null,
@@ -521,12 +615,6 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
     const codes: AdminPromocodeRow[] = (data ?? []).map((row) => {
       const kind = row.kind === "discount" ? "discount" : "unlock";
       const usages = usagesByPromo.get(row.id) ?? [];
-      const useCount =
-        kind === "discount"
-          ? usages.length
-          : row.used_at
-            ? 1
-            : 0;
 
       let status: AdminPromocodeRow["status"];
       if (kind === "discount") {
@@ -566,7 +654,7 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
         usedBy: row.used_by,
         usedByEmail: row.used_by_email,
         createdAt: row.created_at,
-        useCount: kind === "unlock" ? (row.used_at ? 1 : 0) : useCount,
+        useCount: kind === "unlock" ? (row.used_at ? 1 : 0) : usages.length,
         usages,
         status,
       };
@@ -586,6 +674,8 @@ export const adminListPromocodes = createServerFn({ method: "GET" })
 
     const used = codes.filter((c) => c.kind === "unlock" && c.status === "used").length;
     const available = codes.filter((c) => c.kind === "unlock" && c.status === "available").length;
-    const activeDiscounts = codes.filter((c) => c.kind === "discount" && c.status === "active").length;
+    const activeDiscounts = codes.filter(
+      (c) => c.kind === "discount" && c.status === "active",
+    ).length;
     return { ok: true, codes, available, used, activeDiscounts };
   });

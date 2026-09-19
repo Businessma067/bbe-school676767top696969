@@ -246,8 +246,9 @@ export function PaymentModal({
     }
 
     const discountOnlyError =
-      /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
-      !/unlock/i.test(discount.error);
+      /expired|use limit|does not apply|percent off|% off|already been used|could not apply/i.test(
+        discount.error,
+      ) && !/unlock/i.test(discount.error);
     if (discountOnlyError) {
       setAppliedPromoCode(null);
       setDiscountPct(0);
@@ -531,8 +532,8 @@ export function PaymentModal({
               <TabsContent value="promo" className="mt-4">
                 <form onSubmit={handlePromoRedeem} className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Enter a discount code for 15% off Lite or Full, or a one-time unlock code for
-                    free access.
+                    Enter a one-time 15% discount code for Lite or Full, or a one-time unlock code
+                    for free access.
                   </p>
                   <div>
                     <label className="mb-1 block text-xs font-medium text-foreground">

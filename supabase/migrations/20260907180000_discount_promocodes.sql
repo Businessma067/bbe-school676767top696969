@@ -1,4 +1,6 @@
 -- Multi-use 15% discount promocodes (lite + full), usage tracking, expiry.
+-- NOTE: later migration 20260913224500_one_time_15_discount_promocodes.sql
+-- flips these to max_uses=1 (claimed on Apply).
 -- Safe to re-run (idempotent).
 
 ALTER TABLE public.promocodes
