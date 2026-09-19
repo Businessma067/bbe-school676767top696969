@@ -39,3 +39,6 @@ tmp-demo-recordings/
 .playwright-profile2/
 public/how-it-works/_ai-test.png
 public/how-it-works/_preview/
+
+# Local WiSo Lernunterlage reference (do not commit copyrighted PDF)
+textbook/reference/wiso/
