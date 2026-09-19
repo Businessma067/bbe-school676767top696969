@@ -20,6 +20,7 @@ import {
   type TaskAttempt,
 } from "@/lib/user-progress";
 import { storeExamTrack, type ExamTrack } from "@/lib/exam-track";
+import { syncMyPaidEnrollments } from "@/lib/payments.functions";
 import { fetchCustomMocks } from "@/lib/custom-mock-builder/client";
 import type { CustomMockSummary } from "@/lib/custom-mock-builder/types";
 import { displayTitleForCustomMock, isCustomExamId } from "@/config/custom-mock-builder";
@@ -130,6 +131,17 @@ function DashboardPage() {
         return;
       }
       setAuth(next);
+      // Repair paid purchases that never got an enrollments row (e.g. WiSo)
+      // so Dashboard → My courses always lists what the user bought.
+      try {
+        const synced = await syncMyPaidEnrollments();
+        if (synced.granted.length > 0) {
+          const { clearAccessStateCache } = await import("@/lib/entitlements");
+          clearAccessStateCache();
+        }
+      } catch (err) {
+        console.error("dashboard: syncMyPaidEnrollments", err);
+      }
       const [e, t, m, s, c] = await Promise.all([
         fetchEnrollments(),
         fetchTaskAttempts(),

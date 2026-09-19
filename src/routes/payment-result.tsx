@@ -68,11 +68,20 @@ function PaymentResultPage() {
           const { clearAccessStateCache } = await import("@/lib/entitlements");
           clearAccessStateCache();
           const paramsOut = new URLSearchParams();
-          if (result.productName) paramsOut.set("product", result.productName);
+          // Prefer catalog slug so success page / dashboard identity stay consistent.
+          if (result.productSlug) paramsOut.set("product", result.productSlug);
+          else if (result.productName) paramsOut.set("product", result.productName);
           if (result.href) paramsOut.set("href", result.href);
           const qs = paramsOut.toString();
           // Always leave the Monobank iframe and land on the shared success page.
           navigateTopWindow(`/payment/success${qs ? `?${qs}` : ""}`);
+          return;
+        }
+        if (result.status === "success" && !result.enrolled) {
+          void goFailed(
+            result.failureReason ??
+              "Payment succeeded but course access could not be unlocked. Contact support.",
+          );
           return;
         }
         if (["failure", "reversed", "expired"].includes(result.status)) {

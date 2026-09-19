@@ -68,12 +68,19 @@ export function PaymentModal({
   const chargeLabel = MONOBANK_TEST_CHARGE.enabled ? MONOBANK_TEST_CHARGE.label : `€${eurPrice}`;
   const showDiscountedTotal = method !== "promo" || discountApplied;
 
-  const goPaymentSuccess = (opts?: { productName?: string | null; href?: string | null }) => {
+  const goPaymentSuccess = (opts?: {
+    productName?: string | null;
+    productSlug?: string | null;
+    href?: string | null;
+  }) => {
+    const slug = opts?.productSlug?.trim() || productSlug;
     const label = opts?.productName?.trim() || productName;
     const href = opts?.href?.trim() || product.href;
     onOpenChange(false);
     const params = new URLSearchParams();
-    if (label) params.set("product", label);
+    // Prefer slug so /payment/success can resolve the catalog href reliably.
+    if (slug) params.set("product", slug);
+    else if (label) params.set("product", label);
     if (href) params.set("href", href);
     const qs = params.toString();
     navigateTopWindow(`/payment/success${qs ? `?${qs}` : ""}`);
@@ -118,6 +125,7 @@ export function PaymentModal({
           const { clearAccessStateCache } = await import("@/lib/entitlements");
           clearAccessStateCache();
           goPaymentSuccess({
+            productSlug: result.productSlug,
             productName: result.productName,
             href: result.href,
           });
@@ -126,6 +134,15 @@ export function PaymentModal({
         if (result.ok && ["failure", "reversed", "expired"].includes(result.status)) {
           onOpenChange(false);
           const reason = result.failureReason ?? "The payment was not completed.";
+          navigateTopWindow(`/payment/failed?reason=${encodeURIComponent(reason)}`);
+          return;
+        }
+        // Monobank success without enrollment — surface instead of polling forever.
+        if (result.ok && result.status === "success" && !result.enrolled) {
+          onOpenChange(false);
+          const reason =
+            result.failureReason ??
+            "Payment succeeded but course access could not be unlocked. Contact support.";
           navigateTopWindow(`/payment/failed?reason=${encodeURIComponent(reason)}`);
           return;
         }
@@ -171,6 +188,7 @@ export function PaymentModal({
                 const { clearAccessStateCache } = await import("@/lib/entitlements");
                 clearAccessStateCache();
                 goPaymentSuccess({
+                  productSlug: result.productSlug,
                   productName: result.productName,
                   href: result.href,
                 });
@@ -321,7 +339,7 @@ export function PaymentModal({
       setAppliedPromoCode(null);
       setDiscountPct(0);
 
-      const result = await redeemPromocode({ data: { code } });
+      const result = await redeemPromocode({ data: { code, productSlug } });
       if (!result.ok) {
         setError(result.error);
         return;
@@ -333,7 +351,11 @@ export function PaymentModal({
         onOpenChange(false);
         navigate({
           to: "/payment/success",
-          search: { product: productName, href: result.href, promo: true },
+          search: {
+            product: result.productSlug || productSlug,
+            href: result.href,
+            promo: true,
+          },
         });
       }, 1200);
     } catch (err) {
