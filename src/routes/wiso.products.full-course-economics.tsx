@@ -18,13 +18,13 @@ export const Route = createFileRoute("/wiso/products/full-course-economics")({
       {
         name: "description",
         content:
-          "WiSo economics practice mapped to Wirtschaft verstehen: Grundlagen der Wirtschaft and Unternehmensgrundlagen for the WU Aufnahmeprüfung.",
+          "WiSo economics practice mapped to Wirtschaft verstehen 2026 (chapters 1–4) for the WU Aufnahmeprüfung.",
       },
       { property: "og:title", content: "Wirtschaft verstehen — Full WiSo Course" },
       {
         property: "og:description",
         content:
-          "Practice cases aligned to Grundlagen der Wirtschaft and Unternehmensgrundlagen — remapped from the BBE Full Course bank, in German.",
+          "Practice cases aligned to the official Wirtschaft verstehen 2026 Lernunterlage — remapped and authored for WiSo, in German.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://bbe-school.com${PATH}` },
