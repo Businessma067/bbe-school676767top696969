@@ -26,7 +26,7 @@ export const WISO_FLASHCARD_SUBJECTS: WisoFlashcardSubject[] = [
     title: "Wirtschaft",
     tag: "Begriffe & Konzepte",
     description:
-      "Wirtschaftsbegriffe, Formeln und Abkürzungen auf Deutsch — sortiert nach Themen aus Wirtschaft verstehen.",
+      "Wirtschaftsbegriffe auf Deutsch — sortiert nach dem Inhaltsverzeichnis von Wirtschaft verstehen 2026 (Kapitel 1–4).",
     accent: "#c8763a",
     downloadHref: null,
     downloadLabel: null,
