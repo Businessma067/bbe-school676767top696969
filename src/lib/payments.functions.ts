@@ -22,9 +22,15 @@ export type PaymentStatusResult =
       productName: string | null;
       href: string | null;
       amountEur: number | null;
+      enrolled: boolean;
       failureReason?: string;
     }
   | { ok: false; error: string };
+
+export type SyncMyEnrollmentsResult = {
+  ok: true;
+  granted: string[];
+};
 
 const CheckoutInput = z.object({
   productSlug: z.string().min(1).max(64),
@@ -188,20 +194,42 @@ export const getPaymentStatus = createServerFn({ method: "POST" })
       const { syncInvoiceAndGrantAccess } = await import("@/lib/monobank.server");
       const result = await syncInvoiceAndGrantAccess(data.invoiceId);
 
+      // Paid + enrolled is what unlocks Dashboard → My courses.
+      const paid = result.status === "success" && result.enrolled;
+
       return {
         ok: true,
         status: result.status,
-        paid: result.status === "success",
+        paid,
         productSlug: row.product_slug,
         productName: row.product_name,
         href: result.href,
         amountEur: row.amount_minor / 100,
-        ...(result.failureReason ? { failureReason: result.failureReason } : {}),
+        enrolled: result.enrolled,
+        ...(result.failureReason
+          ? { failureReason: result.failureReason }
+          : result.status === "success" && !result.enrolled
+            ? { failureReason: "Payment succeeded but course access could not be unlocked. Contact support." }
+            : {}),
       };
     } catch (err) {
       console.error("getPaymentStatus", err);
       return { ok: false, error: "Could not check the payment status." };
     }
+  });
+
+/**
+ * Backfill enrollments from successful Monobank payments.
+ * Dashboard calls this so purchased WiSo/BBE courses always appear under My courses.
+ */
+export const syncMyPaidEnrollments = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .handler(async ({ context }): Promise<SyncMyEnrollmentsResult> => {
+    const { ensureEnrollmentsFromSuccessfulPayments } = await import(
+      "@/lib/enrollment-grant.server"
+    );
+    const { granted } = await ensureEnrollmentsFromSuccessfulPayments(context.userId);
+    return { ok: true, granted };
   });
 
 /** Latest payments of the signed-in user (for the account/result screens). */

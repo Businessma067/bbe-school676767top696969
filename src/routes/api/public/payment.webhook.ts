@@ -95,7 +95,7 @@ export const Route = createFileRoute("/api/public/payment/webhook")({
             invoiceId,
             reported: status,
             verified: result.status,
-            granted: result.status === "success",
+            granted: result.enrolled,
             known: status ? KNOWN_STATUSES.has(status) : false,
           });
         } catch (err) {

@@ -19,6 +19,8 @@ const MIGRATION_HINT =
 
 const RedeemInput = z.object({
   code: z.string().min(1).max(64),
+  /** Checkout SKU when redeeming from PaymentModal (e.g. wiso-full-course). */
+  productSlug: z.string().min(1).max(64).optional(),
 });
 
 const DiscountInput = z.object({
@@ -27,7 +29,7 @@ const DiscountInput = z.object({
 });
 
 export type PromoRedeemResult =
-  | { ok: true; href: string }
+  | { ok: true; href: string; productSlug: string; productName: string }
   | { ok: false; error: string; rateLimited?: boolean };
 
 export type DiscountValidateResult =
@@ -92,6 +94,33 @@ function resolveCatalog(slug: string): { slug: CourseSlug; meta: (typeof COURSE_
     return { slug: courseSlug, meta: COURSE_CATALOG[courseSlug] };
   }
   return { slug: "full-course", meta: COURSE_CATALOG["full-course"] };
+}
+
+/**
+ * Map an unlock-code product_slug to the enrollment that should be granted.
+ * Full BBE unlock codes redeemed at WiSo checkout enroll WiSo (same parity as
+ * discount codes via promoAppliesToProduct), so My courses shows Full WiSo Course.
+ */
+export function resolveUnlockEnrollmentSlug(
+  codeProductSlug: string,
+  checkoutSlug?: string,
+): CourseSlug {
+  if (checkoutSlug === "wiso-full-course") {
+    if (
+      codeProductSlug === "wiso-full-course" ||
+      codeProductSlug === "full-course" ||
+      codeProductSlug === "any-paid" ||
+      !codeProductSlug
+    ) {
+      return "wiso-full-course";
+    }
+  }
+  if (checkoutSlug && checkoutSlug in COURSE_CATALOG) {
+    if (codeProductSlug === "any-paid" || codeProductSlug === checkoutSlug) {
+      return checkoutSlug as CourseSlug;
+    }
+  }
+  return resolveCatalog(codeProductSlug).slug;
 }
 
 function isMissingRelationError(error: { message?: string; code?: string; details?: string } | null) {
@@ -297,6 +326,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
     const request = getRequest();
     const ip = clientIpFromHeaders(request.headers);
     const code = normalizeCode(data.code);
+    const checkoutSlug = data.productSlug;
     const userId = context.userId;
     const email =
       typeof context.claims.email === "string" ? context.claims.email : null;
@@ -396,7 +426,13 @@ export const redeemPromocode = createServerFn({ method: "POST" })
           error: "This promocode is invalid or has already been used.",
         };
       }
-      return await enrollFromClaim(supabaseAdmin, claimedLegacy, userId, attemptRow.id);
+      return await enrollFromClaim(
+        supabaseAdmin,
+        claimedLegacy,
+        userId,
+        attemptRow.id,
+        checkoutSlug,
+      );
     }
 
     if (!claimed) {
@@ -406,7 +442,7 @@ export const redeemPromocode = createServerFn({ method: "POST" })
       };
     }
 
-    return await enrollFromClaim(supabaseAdmin, claimed, userId, attemptRow.id);
+    return await enrollFromClaim(supabaseAdmin, claimed, userId, attemptRow.id, checkoutSlug);
   });
 
 async function enrollFromClaim(
@@ -415,21 +451,19 @@ async function enrollFromClaim(
   claimed: { id: string; code: string; product_slug: string },
   userId: string,
   attemptId: string,
+  checkoutSlug?: string,
 ): Promise<PromoRedeemResult> {
-  const { slug, meta } = resolveCatalog(claimed.product_slug);
+  const slug = resolveUnlockEnrollmentSlug(claimed.product_slug, checkoutSlug);
+  const meta = COURSE_CATALOG[slug];
 
-  const { error: enrollError } = await supabaseAdmin.from("enrollments").upsert(
-    {
-      user_id: userId,
-      product_slug: slug,
-      product_name: meta.name,
-      tier: meta.tier,
-    },
-    { onConflict: "user_id,product_slug" },
-  );
+  const { grantPaidEnrollment } = await import("@/lib/enrollment-grant.server");
+  const grant = await grantPaidEnrollment({
+    userId,
+    product: { slug, name: meta.name, tier: meta.tier },
+  });
 
-  if (enrollError) {
-    console.error("promo enroll", enrollError);
+  if (!grant.ok) {
+    console.error("promo enroll", grant.error);
     await supabaseAdmin
       .from("promocodes")
       .update({ used_at: null, used_by: null, used_by_email: null })
@@ -442,7 +476,7 @@ async function enrollFromClaim(
     .update({ success: true })
     .eq("id", attemptId);
 
-  return { ok: true, href: meta.href };
+  return { ok: true, href: meta.href, productSlug: slug, productName: meta.name };
 }
 
 export const adminListPromocodes = createServerFn({ method: "GET" })

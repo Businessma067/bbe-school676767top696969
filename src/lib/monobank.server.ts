@@ -123,10 +123,13 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
   status: MonoInvoiceStatus | "unknown";
   productSlug: string | null;
   href: string | null;
+  /** True only when Monobank reports success AND the enrollment row was written. */
+  enrolled: boolean;
   failureReason?: string;
 }> {
   const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
   const { PAID_PRODUCTS, isPaidProductSlug } = await import("@/lib/checkout-catalog");
+  const { grantPaidEnrollment } = await import("@/lib/enrollment-grant.server");
 
   const { data: payment, error } = await supabaseAdmin
     .from("payments")
@@ -135,7 +138,9 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
     .maybeSingle();
 
   if (error) console.error("syncInvoice: payment lookup", error);
-  if (!payment) return { status: "unknown", productSlug: null, href: null };
+  if (!payment) {
+    return { status: "unknown", productSlug: null, href: null, enrolled: false };
+  }
 
   const mono = await fetchMonoInvoiceStatus(invoiceId);
   const status = mono.status;
@@ -152,24 +157,23 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
 
   const slug = payment.product_slug;
   const product = isPaidProductSlug(slug) ? PAID_PRODUCTS[slug] : null;
+  let enrolled = false;
 
   if (paid && product) {
-    const { error: enrollError } = await supabaseAdmin.from("enrollments").upsert(
-      {
-        user_id: payment.user_id,
-        product_slug: product.slug,
-        product_name: product.name,
-        tier: product.tier,
-      },
-      { onConflict: "user_id,product_slug" },
-    );
-    if (enrollError) console.error("syncInvoice: enrollment upsert", enrollError);
+    const grant = await grantPaidEnrollment({
+      userId: payment.user_id,
+      product,
+    });
+    enrolled = grant.ok;
+    if (!grant.ok) {
+      console.error("syncInvoice: enrollment upsert failed", slug, grant.error);
+    }
 
     const promoCode =
       typeof (payment as { promo_code?: string | null }).promo_code === "string"
         ? (payment as { promo_code: string }).promo_code
         : null;
-    if (promoCode) {
+    if (promoCode && enrolled) {
       const { recordPromoUsage } = await import("@/lib/promo.functions");
       await recordPromoUsage({
         code: promoCode,
@@ -185,6 +189,7 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
     status,
     productSlug: slug,
     href: product?.href ?? null,
+    enrolled,
     ...(mono.failureReason ? { failureReason: mono.failureReason } : {}),
   };
 }
