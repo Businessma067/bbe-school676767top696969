@@ -16035,14 +16035,14 @@
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.01",
-    "title": "Marketing Definition of a Product",
-    "context": "Review the marketing definition of a product as every good and service that can be exchanged to fulfil customer wishes and needs. Evaluate the following economic assertions:",
+    "title": "Marketingdefinition eines Produkts",
+    "context": "Überprüfen Sie die Marketingdefinition eines Produkts als jede Ware und Dienstleistung, die ausgetauscht werden kann, um Kundenwünsche und -bedürfnisse zu erfüllen. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "In marketing terminology, a product refers only to physical goods and excludes services from the definition.",
-      "In marketing terminology, a product is every good and/or service that can be exchanged in order to fulfil the wishes and needs of customers.",
-      "Producer products are defined by whether an item is manufactured in a factory rather than by the customer who purchases it.",
-      "Consumer products are defined by retail packaging size rather than by whether the buyer is a household or business.",
-      "A printer is always a consumer product because households are the most visible end users of printers."
+      "In der Marketingterminologie bezieht sich ein Produkt nur auf physische Waren und schließt Dienstleistungen von der Definition aus.",
+      "In der Marketingterminologie ist ein Produkt jedes Gut und/oder jede Dienstleistung, die ausgetauscht werden kann, um die Wünsche und Bedürfnisse der Kunden zu erfüllen.",
+      "Produktionsgüter werden dadurch definiert, ob ein Gegenstand in einer Fabrik hergestellt wird und nicht durch den Kunden, der ihn kauft.",
+      "Konsumgüter werden durch die Größe der Einzelhandelsverpackung definiert und nicht dadurch, ob der Käufer ein Haushalt oder ein Unternehmen ist.",
+      "Ein Drucker ist immer ein Konsumgüter, denn Haushalte sind die sichtbarsten Endverbraucher von Druckern."
     ],
     "answer_key": [
       false,
@@ -16052,29 +16052,28 @@
       false
     ],
     "tactical_explanations": [
-      "Marketing treats a product as anything that can be exchanged to meet customer wishes and needs, including services. Limiting the term to physical goods alone drops maintenance contracts, consulting, and support out of the definition without reason.\n\nSo the statement is False.",
-      "Under the marketing definition, a product is every good and/or service that can be exchanged to fulfil customer wishes and needs. Tangible merchandise and intangible service work sit under the same label once an exchange is on the table.\n\nSo the statement is True.",
-      "Producer versus consumer labels turn on who buys, not on whether the item left a factory. A finished printer sold to another firm is still a producer product even though it is fully assembled merchandise. Factory origin, assembly line history, and industrial design do not decide the category. Marketing asks whether the purchaser is a business or a household in that exchange. Treating manufacture as the test misplaces the buyer criterion and would misclassify countless finished B2B goods.\n\nSo the statement is False.",
-      "Consumer-product status tracks whether the buyer is a private household, not how large the retail pack is. A bulky home appliance bought for domestic use remains a consumer product; a tiny office staple bought by a firm remains a producer product. Packaging size is not the classifying rule.\n\nSo the statement is False.",
-      "Printers sold into offices for commercial work are producer products even though households also buy printers. Visibility of home users does not freeze every printer into the consumer category. Classification follows the actual purchaser in each exchange, so \"always consumer\" is too absolute.\n\nSo the statement is False."
+      "Marketing behandelt ein Produkt als alles, was ausgetauscht werden kann, um Kundenwünsche und -bedürfnisse zu erfüllen, einschließlich Dienstleistungen. Die Beschränkung des Begriffs auf physische Güter allein lässt Wartungsverträge, Beratung und Support ohne Grund aus der Definition fallen.\n\nDie Aussage ist falsch.",
+      "Nach der Marketingdefinition ist ein Produkt jede Ware und/oder Dienstleistung, die ausgetauscht werden kann, um Kundenwünsche und -bedürfnisse zu erfüllen. Materielle Waren und immaterielle Servicearbeiten sitzen unter dem gleichen Label, sobald ein Austausch auf dem Tisch liegt.\n\nDie Aussage ist wahr.",
+      "Hersteller versus Verbraucheretiketten richten sich danach, wer kauft, nicht danach, ob der Artikel eine Fabrik verlassen hat. Ein fertiger Drucker, der an eine andere Firma verkauft wird, ist immer noch ein Produktionsgüter, obwohl es sich um vollständig montierte Waren handelt. Fabrikherkunft, Fließbandgeschichte und Industriedesign entscheiden nicht über die Kategorie. Marketing fragt, ob der Käufer ein Geschäft oder ein Haushalt in diesem Austausch ist. Die Behandlung der Herstellung als Test verdrängt das Käuferkriterium und würde unzählige fertige B2B-Waren falsch klassifizieren.\n\nDie Aussage ist falsch.",
+      "Der Status des Verbraucherprodukts verfolgt, ob der Käufer ein privater Haushalt ist, nicht wie groß das Einzelhandelspaket ist. Ein sperriges Haushaltsgerät, das für den häuslichen Gebrauch gekauft wurde, bleibt eine Konsumgüter; ein kleines Büroheftklammer, das von einer Firma gekauft wurde, bleibt eine Produktionsgüter. Verpackungsgröße ist nicht die Klassifizierungsregel.\n\nDie Aussage ist falsch.",
+      "Drucker, die in Büros für gewerbliche Arbeiten verkauft werden, sind Produktionsgüter, obwohl Haushalte auch Drucker kaufen. Die Sichtbarkeit von Heimanwendern friert nicht jeden Drucker in die Kategorie Verbraucher ein. Die Klassifizierung folgt dem tatsächlichen Käufer in jeder Börse, so dass \"immer Verbraucher\" zu absolut ist.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.01",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.01"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.02",
-    "title": "Goods and Services as Products",
-    "context": "Analyze how marketing terminology treats both goods and services as products when they can be exchanged. Evaluate the following economic assertions:",
+    "title": "Güter und Dienstleistungen als Produkte",
+    "context": "Analysieren Sie, wie Marketingterminologie sowohl Waren als auch Dienstleistungen als Produkte behandelt, wenn sie ausgetauscht werden können. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "A printer is always a producer product because printers are produced by manufacturers for commercial supply chains.",
-      "Marketing defines a product as any good or service offered through exchange to satisfy customer wishes and needs.",
-      "A product in marketing includes both tangible goods and intangible services when they are exchanged with customers.",
-      "Customers of a product may be other businesses or private households according to introductory marketing terminology.",
-      "Producer products are goods and services sold from one business to another in business-to-business exchange."
+      "Ein Drucker ist immer ein Produktionsgüter, weil Drucker von Herstellern für kommerzielle Lieferketten produziert werden.",
+      "Marketing definiert ein Produkt als jede Ware oder Dienstleistung, die durch Austausch angeboten wird, um Kundenwünsche und -bedürfnisse zu erfüllen.",
+      "Ein Produkt im Marketing umfasst sowohl materielle Güter als auch immaterielle Dienstleistungen, wenn sie mit Kunden ausgetauscht werden.",
+      "Kunden eines Produkts können andere Unternehmen oder Privathaushalte gemäß einleitender Marketingterminologie sein.",
+      "Produktionsgüter sind Waren und Dienstleistungen, die von einem Unternehmen an ein anderes im Business-to-Business-Austausch (B2B) verkauft werden."
     ],
     "answer_key": [
       false,
@@ -16084,29 +16083,28 @@
       true
     ],
     "tactical_explanations": [
-      "Calling every printer a producer product ignores home buyers. The same hardware sold for private domestic use is a consumer product. Manufacture for supply chains does not lock the label for every transaction.\n\nSo the statement is False.",
-      "Marketing defines a product as any good or service offered through exchange to satisfy customer wishes and needs. Physical form is optional; the exchange and the fulfilment purpose are what matter.\n\nSo the statement is True.",
-      "Tangible goods and intangible services both count once they are exchanged with customers. A printer is a good; computer support is a service; training sessions and maintenance contracts sit beside hardware under the same product umbrella. Each becomes a product when traded to meet wishes and needs. Excluding services would shrink the marketing definition without cause and would leave large parts of modern B2B and B2C exchange unexplained.\n\nSo the statement is True.",
-      "Introductory marketing allows other businesses and private households as customers. Producer products serve firms; consumer products serve households. Restricting the customer set to one side would erase half of everyday exchange.\n\nSo the statement is True.",
-      "Producer products are goods and services sold from one business to another in business-to-business exchange. The buyer identity, not the physical shape of the item, places the sale in that B2B producer lane.\n\nSo the statement is True."
+      "Jeden Drucker als Produktionsgüter zu bezeichnen, ignoriert Hauskäufer. Die gleiche Hardware, die für den privaten häuslichen Gebrauch verkauft wird, ist ein Konsumgüter. Die Herstellung für Lieferketten sperrt das Etikett nicht für jede Transaktion.\n\nDie Aussage ist falsch.",
+      "Marketing definiert ein Produkt als jede Ware oder Dienstleistung, die durch Austausch angeboten wird, um Kundenwünsche und -bedürfnisse zu erfüllen. Physische Form ist optional; der Austausch und der Erfüllungszweck sind das, was zählt.\n\nDie Aussage ist wahr.",
+      "Materielle Güter und immaterielle Dienstleistungen zählen beide, sobald sie mit Kunden ausgetauscht werden. Ein Drucker ist eine Ware; Computerunterstützung ist eine Dienstleistung; Schulungen und Wartungsverträge sitzen neben Hardware unter dem gleichen Produktschirm. Jedes wird ein Produkt, wenn gehandelt, um Wünsche und Bedürfnisse zu erfüllen. Der Ausschluss von Dienstleistungen würde die Marketingdefinition ohne Grund verkleinern und große Teile des modernen B2B- und B2C-Austauschs ungeklärt lassen.\n\nDie Aussage ist wahr.",
+      "Einführendes Marketing ermöglicht anderen Unternehmen und privaten Haushalten als Kunden. Produktionsgüter dienen Unternehmen; Konsumgüter dienen Haushalten. Die Beschränkung des Kunden auf eine Seite würde die Hälfte des täglichen Austauschs löschen.\n\nDie Aussage ist wahr.",
+      "Produktionsgüter sind Waren und Dienstleistungen, die von einem Unternehmen an ein anderes im Business-to-Business (B2B)-Austausch verkauft werden. Die Käuferidentität, nicht die physische Form des Artikels, platziert den Verkauf in dieser B2B-Herstellerspur.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "2/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.02",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.02"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.04",
-    "title": "Producer Products and Business Customers",
-    "context": "Consider a commercial bakery selling bulk flour sacks to restaurants while packaging smaller bags for supermarket shoppers. Evaluate the following economic assertions:",
+    "title": "Produktionsgüter und Geschäftskunden",
+    "context": "Betrachten Sie eine kommerzielle Bäckerei, die Massenmehlsäcke an Restaurants verkauft, während kleinere Taschen für Supermarktkäufer verpackt werden. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "Free after-sales advice is a product because it satisfies customer needs even without payment.",
-      "A printer bought for private home use is classified as a consumer product even when the same model is sold to offices.",
-      "Computer support services sold mainly to private households illustrate consumer products in a service form.",
-      "Internal office supplies moved between departments of the same company are products in the marketing sense.",
-      "Computer support services sold to other businesses illustrate producer products in a service form."
+      "Kostenlose After-Sales-Beratung ist ein Produkt, weil es Kundenbedürfnisse auch ohne Bezahlung erfüllt.",
+      "Ein für den privaten Heimgebrauch gekaufter Drucker wird auch dann als Konsumgüter eingestuft, wenn das gleiche Modell an Büros verkauft wird.",
+      "Computerunterstützungsdienste, die hauptsächlich an private Haushalte verkauft werden, illustrieren Konsumgüter in einer Dienstleistungsform.",
+      "Interne Bürolieferungen, die zwischen Abteilungen derselben Firma bewegt werden, sind Produkte im Marketing-Sinn.",
+      "Computerunterstützungsdienste, die an andere Unternehmen verkauft werden, illustrieren Produktionsgüter in einem Dienstleistungsformular."
     ],
     "answer_key": [
       false,
@@ -16116,29 +16114,28 @@
       true
     ],
     "tactical_explanations": [
-      "Marketing products require exchange. Free after-sales advice may help a customer, yet without exchange it does not meet the product test. Satisfaction alone, with no traded good or service, is not enough.\n\nSo the statement is False.",
-      "A printer bought for private home use is a consumer product even when offices buy the same model. Domestic buyer purpose places that sale in the consumer category; office sales of the twin model do not rewrite the home transaction. Marketing does not assign one permanent label to the hardware design. Each exchange is read on its own buyer identity, so home use stays consumer while commercial use of the lookalike machine stays producer.\n\nSo the statement is True.",
-      "Computer support sold mainly to private households is a consumer product in service form. Intangibility does not block product status when households exchange for the support they need.\n\nSo the statement is True.",
-      "Internal transfers between departments of one company are not marketing exchanges with customers. Office supplies moved in-house therefore are not products in the marketing sense, even if they are useful stock.\n\nSo the statement is False.",
-      "Computer support sold to other businesses is a producer product in service form. Firm-to-firm exchange of that service places it in the B2B producer lane alongside tangible producer goods.\n\nSo the statement is True."
+      "Marketingprodukte erfordern Austausch. Kostenlose After-Sales-Beratung kann einem Kunden helfen, aber ohne Austausch erfüllt sie nicht den Produkttest. Zufriedenheit allein, ohne gehandelte Ware oder Dienstleistung, ist nicht genug.\n\nDie Aussage ist falsch.",
+      "Ein für den privaten Heimgebrauch gekaufter Drucker ist ein Konsumgüter, auch wenn Büros das gleiche Modell kaufen. Inländische Käufer Zweck legt diesen Verkauf in der Verbraucherkategorie; Büroverkäufe des Zwillingsmodells schreiben die Heimtransaktion nicht um. Das Marketing weist dem Hardwaredesign kein dauerhaftes Label zu. Jeder Austausch wird auf seiner eigenen Käuferidentität gelesen, so dass die Heimnutzung Verbraucher bleibt, während die kommerzielle Nutzung der Lookalike-Maschine Hersteller bleibt.\n\nDie Aussage ist wahr.",
+      "Computerunterstützung, die hauptsächlich an private Haushalte verkauft wird, ist eine Konsumgüter in Serviceform. Intangibility blockiert den Produktstatus nicht, wenn Haushalte für die Unterstützung tauschen, die sie benötigen.\n\nDie Aussage ist wahr.",
+      "Interne Transfers zwischen Abteilungen eines Unternehmens sind kein Marketingaustausch mit Kunden. Inhouse bewegte Büromaterialien sind daher keine Produkte im Marketing-Sinn, auch wenn es sich um nützliche Lagerbestände handelt.\n\nDie Aussage ist falsch.",
+      "Computerunterstützung, die an andere Unternehmen verkauft wird, ist eine Produktionsgüter in Serviceform. Der feste Austausch dieses Dienstes führt ihn auf die B2B-Produzentenspur neben materiellen Produktionsgütern.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.04",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.04"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.05",
-    "title": "Consumer Products and Household Customers",
-    "context": "Review how customers in the product definition may be other businesses or private households. Evaluate the following economic assertions:",
+    "title": "Konsumgüter und private Haushalte",
+    "context": "Überprüfen Sie, wie Kunden in der Produktdefinition andere Unternehmen oder private Haushalte sein können. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "B2B and B2C labels describe production technology rather than the identity of the customer.",
-      "Exchange is required in the marketing sense for a good or service to be treated as a product.",
-      "Services such as maintenance contracts can be products when they are exchanged to fulfil customer needs.",
-      "Goods such as equipment and materials can be products when exchanged to fulfil customer wishes and needs.",
-      "A printer sold to a corporate client is a producer product because the purchaser is another business operating commercially."
+      "B2B- und B2C-Etiketten beschreiben die Produktionstechnologie und nicht die Identität des Kunden.",
+      "Austausch ist im Marketing-Sinn erforderlich, damit eine Ware oder Dienstleistung als Produkt behandelt wird.",
+      "Dienstleistungen wie Wartungsverträge können Produkte sein, wenn sie zur Erfüllung der Kundenbedürfnisse ausgetauscht werden.",
+      "Waren wie Ausrüstung und Materialien können Produkte sein, wenn sie ausgetauscht werden, um Kundenwünsche und -bedürfnisse zu erfüllen.",
+      "Ein an einen Firmenkunden verkaufter Drucker ist ein Produktionsgüter, weil der Käufer ein anderes gewerblich tätiges Unternehmen ist."
     ],
     "answer_key": [
       false,
@@ -16148,29 +16145,28 @@
       true
     ],
     "tactical_explanations": [
-      "B2B and B2C labels name the customer side of the exchange, not the production technology used to make the item. Injection moulding, contract manufacturing, or hand assembly do not decide the marketing lane. Two identical printers can sit in different lanes solely because one buyer is a firm and the other is a household. Technology describes how the good was made; B2B/B2C describe whom it was sold to.\n\nSo the statement is False.",
-      "Exchange is required before a good or service counts as a product in marketing. Desire without a trade does not complete the definition; the item must be offered through exchange to fulfil wishes and needs.\n\nSo the statement is True.",
-      "Maintenance contracts and similar services become products when exchanged to fulfil customer needs. Intangible form does not disqualify them once the exchange and purpose criteria are met.\n\nSo the statement is True.",
-      "Equipment and materials become products when exchanged to fulfil customer wishes and needs. Tangible producer or consumer goods sit under the product label for the same exchange-based reason as services.\n\nSo the statement is True.",
-      "A printer sold to a corporate client is a producer product because the purchaser is another business operating commercially. Buyer identity, not the printer's physical design, sets that producer classification.\n\nSo the statement is True."
+      "B2B- und B2C-Etiketten benennen die Kundenseite der Börse, nicht die Produktionstechnologie, die zur Herstellung des Artikels verwendet wird. Spritzgießen, Auftragsfertigung oder Handmontage entscheiden nicht über den Marketingweg. Zwei identische Drucker können auf verschiedenen Spuren sitzen, nur weil ein Käufer ein Unternehmen und der andere ein Haushalt ist. Technologie beschreibt, wie das Gut hergestellt wurde; B2B/B2C beschreiben, an wen es verkauft wurde.\n\nDie Aussage ist falsch.",
+      "Umtausch ist erforderlich, bevor eine Ware oder Dienstleistung als Produkt im Marketing zählt. Wunsch ohne Handel vervollständigt die Definition nicht; der Gegenstand muss durch Austausch angeboten werden, um Wünsche und Bedürfnisse zu erfüllen.\n\nDie Aussage ist wahr.",
+      "Wartungsverträge und ähnliche Dienstleistungen werden zu Produkten, wenn sie zur Erfüllung der Kundenbedürfnisse ausgetauscht werden. Immaterielle Form disqualifiziert sie nicht, sobald die Austausch- und Zweckkriterien erfüllt sind.\n\nDie Aussage ist wahr.",
+      "Geräte und Materialien werden zu Produkten, wenn sie ausgetauscht werden, um Kundenwünsche und -bedürfnisse zu erfüllen. Greifbare Hersteller- oder Konsumgüter sitzen unter dem Produktlabel aus dem gleichen börsenbasierten Grund wie Dienstleistungen.\n\nDie Aussage ist wahr.",
+      "Ein an einen Firmenkunden verkaufter Drucker ist ein Produktionsgüter, weil der Käufer ein anderes gewerblich tätiges Unternehmen ist. Die Identität des Käufers, nicht das physische Design des Druckers, legt diese Herstellerklassifizierung fest.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.05",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.05"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.06",
-    "title": "Exchange and Product Status",
-    "context": "Analyze why the same physical good may be classified as a producer product or a consumer product depending on use. Evaluate the following economic assertions:",
+    "title": "Tausch und Produktstatus",
+    "context": "Analysieren Sie, warum das gleiche physische Gut je nach Verwendung als Produktionsgüter oder Konsumgüter eingestuft werden kann. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "A printer sold to a private household is a consumer product because the purchaser is a private household or individual consumer.",
-      "The same printer may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer.",
-      "When a firm exchanges a printer with a corporate client, the transaction is business-to-business and the item is a producer product.",
-      "When a firm exchanges a printer with a private household, the transaction is business-to-consumer and the item is a consumer product.",
-      "Marketing classifies a printer sold for commercial operations to a corporate client as a producer product rather than a consumer product."
+      "Ein an einen privaten Haushalt verkaufter Drucker ist ein Konsumgut, weil der Käufer ein privater Haushalt oder ein einzelner Verbraucher ist.",
+      "Der gleiche Drucker kann je nach Käufer als Produktionsgüter in einem Geschäft und als Konsumgüter in einem anderen vertrieben werden.",
+      "Wenn ein Unternehmen einen Drucker mit einem Firmenkunden tauscht, ist die Transaktion Business-to-Business (B2B) und der Artikel ist ein Produktionsgüter.",
+      "Wenn ein Unternehmen einen Drucker mit einem privaten Haushalt tauscht, ist die Transaktion Business-to-Consumer und der Artikel ist ein Konsumgüter.",
+      "Marketing klassifiziert einen Drucker, der für gewerbliche Zwecke an einen Firmenkunden verkauft wird, als Produktionsgüter und nicht als Konsumgüter."
     ],
     "answer_key": [
       true,
@@ -16180,29 +16176,28 @@
       true
     ],
     "tactical_explanations": [
-      "A printer sold to a private household is a consumer product because the purchaser is a private household or individual consumer. That buyer identity places the exchange in the consumer lane.\n\nSo the statement is True.",
-      "The same printer can be a producer product in one sale and a consumer product in another when the buyer changes. Classification is transaction-specific rather than permanently fixed to the hardware design.\n\nSo the statement is True.",
-      "When a firm exchanges a printer with a corporate client, the deal is business-to-business and the item is a producer product. Commercial buyer purpose and firm-to-firm exchange align on that producer label.\n\nSo the statement is True.",
-      "When a firm exchanges a printer with a private household, the deal is business-to-consumer and the item is a consumer product. Household buyer purpose marks the consumer category for that transaction.\n\nSo the statement is True.",
-      "Marketing classifies a printer sold for commercial operations to a corporate client as a producer product rather than a consumer product. Commercial use by another business is the decisive cue, not retail packaging, brand colour, or shelf placement. The same physical machine could be consumer elsewhere, yet this corporate commercial sale stays in the producer lane because the purchaser operates as a firm.\n\nSo the statement is True."
+      "Ein an einen privaten Haushalt verkaufter Drucker ist ein Konsumgut, weil der Käufer ein privater Haushalt oder ein einzelner Verbraucher ist. Diese Käuferidentität platziert den Austausch auf der Verbraucherspur.\n\nDie Aussage ist wahr.",
+      "Der gleiche Drucker kann eine Produktionsgüter in einem Verkauf und eine Konsumgüter in einem anderen sein, wenn der Käufer wechselt. Die Klassifizierung ist transaktionsspezifisch und nicht dauerhaft an das Hardwaredesign gebunden.\n\nDie Aussage ist wahr.",
+      "Wenn ein Unternehmen einen Drucker mit einem Firmenkunden tauscht, ist der Deal Business-to-Business (B2B) und der Artikel ist ein Produktionsgüter. Kommerzielle Käufer Zweck und Firm-to-Firma-Austausch auf diesem Hersteller-Label ausgerichtet.\n\nDie Aussage ist wahr.",
+      "Wenn ein Unternehmen einen Drucker mit einem privaten Haushalt tauscht, ist der Deal Business-to-Consumer und der Artikel ist ein Konsumgüter. Der Zweck des privaten Käufers kennzeichnet die Verbraucherkategorie für diese Transaktion.\n\nDie Aussage ist wahr.",
+      "Marketing klassifiziert einen Drucker, der für gewerbliche Zwecke an einen Firmenkunden verkauft wird, als Produktionsgüter und nicht als Konsumgüter. Die kommerzielle Nutzung durch ein anderes Unternehmen ist der entscheidende Punkt, nicht Einzelhandelsverpackungen, Markenfarbe oder Regalplatzierung. Die gleiche physische Maschine könnte anderswo Verbraucher sein, aber dieser kommerzielle Verkauf von Unternehmen bleibt auf der Produzentenspur, weil der Käufer als Unternehmen tätig ist.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.06",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.06"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.07",
-    "title": "Identical Goods Different Classifications",
-    "context": "Review how goods sold from one business to another are treated as producer products in B2B exchange. Evaluate the following economic assertions:",
+    "title": "Identische Güter, unterschiedliche Einordnung",
+    "context": "Überprüfen Sie, wie Waren, die von einem Unternehmen in ein anderes verkauft werden, als Produktionsgüter im B2B-Austausch behandelt werden. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "Customers of products can only be private households, not other businesses.",
-      "Goods given as gifts with no exchange are still products because they fulfil recipient wishes.",
-      "A good becomes a consumer product whenever it is small enough to be carried home by an individual.",
-      "Marketing classifies a printer sold for personal or domestic use to a private household as a consumer product rather than a producer product.",
-      "A good becomes a producer product whenever it is heavy or bulky regardless of who buys it."
+      "Kunden von Produkten können nur private Haushalte sein, nicht andere Unternehmen.",
+      "Waren, die als Geschenk ohne Umtausch gegeben werden, sind immer noch Produkte, weil sie die Wünsche des Empfängers erfüllen.",
+      "Ein Gut wird zu einem Konsumgut, wenn es klein genug ist, um von einer Person nach Hause getragen zu werden.",
+      "Marketing stuft einen Drucker, der für den persönlichen oder häuslichen Gebrauch an einen privaten Haushalt verkauft wird, als Konsumgüter und nicht als Produktionsgüter ein.",
+      "Ein Gut wird zu einem Produktionsgüter, wenn es schwer oder sperrig ist, unabhängig davon, wer es kauft."
     ],
     "answer_key": [
       false,
@@ -16212,29 +16207,28 @@
       false
     ],
     "tactical_explanations": [
-      "Customers of products include other businesses as well as private households. Producer products exist precisely because firms buy from firms. Restricting customers to households alone erases B2B exchange.\n\nSo the statement is False.",
-      "Gifts with no exchange may please recipients, yet marketing still requires exchange for product status. Fulfilment of wishes without a trade does not turn a free gift into a marketed product.\n\nSo the statement is False.",
-      "Portability does not create consumer-product status. A small item sold to a firm remains a producer product; a bulky item sold for home use remains a consumer product. Carry-home size is not the classifying rule.\n\nSo the statement is False.",
-      "Marketing classifies a printer sold for personal or domestic use to a private household as a consumer product rather than a producer product. Domestic buyer purpose, not the printer's weight, colour, or carry-home convenience, decides that consumer label. A light portable unit bought for home use and a heavier desk unit bought for home use are both consumer products when the household is the buyer.\n\nSo the statement is True.",
-      "Bulk and weight do not create producer-product status. A heavy home appliance bought by a household is still a consumer product. Who buys, not how awkward the item is to lift, sets the category.\n\nSo the statement is False."
+      "Zu den Kunden von Produkten gehören andere Unternehmen sowie private Haushalte. Produktionsgüter existieren gerade deshalb, weil Firmen von Firmen kaufen. Die Beschränkung der Kunden auf Haushalte löscht den B2B-Austausch.\n\nDie Aussage ist falsch.",
+      "Geschenke ohne Austausch mögen die Empfänger erfreuen, aber das Marketing erfordert immer noch den Austausch für den Produktstatus. Die Erfüllung von Wünschen ohne Handel verwandelt ein kostenloses Geschenk nicht in ein vermarktetes Produkt.\n\nDie Aussage ist falsch.",
+      "Portabilität schafft keinen Status als Konsumgut. Ein Kleinartikel, der an ein Unternehmen verkauft wird, bleibt Produktionsgüter, ein sperriger Artikel, der für den Heimgebrauch verkauft wird, bleibt Konsumgüter. Carry-Home-Größe ist nicht die Klassifizierungsregel.\n\nDie Aussage ist falsch.",
+      "Marketing stuft einen Drucker, der für den persönlichen oder häuslichen Gebrauch an einen privaten Haushalt verkauft wird, als Konsumgüter und nicht als Produktionsgüter ein. Der Zweck des inländischen Käufers, nicht das Gewicht, die Farbe oder die Bequemlichkeit des Druckers, entscheidet über das Verbraucheretikett. Eine leichte tragbare Einheit, die für den Heimgebrauch gekauft wurde, und eine schwerere Schreibtischeinheit, die für den Heimgebrauch gekauft wurde, sind beide Konsumgüter, wenn der Haushalt der Käufer ist.\n\nDie Aussage ist wahr.",
+      "Masse und Gewicht schaffen keinen Erzeuger-Produkt-Status. Ein schweres Haushaltsgerät, das von einem Haushalt gekauft wurde, ist immer noch ein Konsumgüter. Wer kauft, nicht wie unangenehm der Gegenstand ist, legt die Kategorie fest.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.07",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.07"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.08",
-    "title": "Office Printer as Producer Product",
-    "context": "Consider a textile mill shipping fabric rolls to garment manufacturers and remnant bundles to craft buyers at a market stall. Evaluate the following economic assertions:",
+    "title": "Bürodrucker als Produktionsgut",
+    "context": "Betrachten Sie eine Textilfabrik, die Stoffrollen an Bekleidungshersteller und Restbündel an Handwerkskäufer an einem Marktstand versendet. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "Services provided only to businesses are consumer products because the ultimate beneficiaries are people.",
-      "A printer sold to a corporate client is a consumer product because every sale ultimately serves human needs.",
-      "A printer exchanged to fulfil the operational needs of a corporate client counts as a product in the producer category.",
-      "A printer sold to a private household is a producer product because the seller is a business firm.",
-      "The same printer must keep one fixed product label for all buyers because the design never changes."
+      "Dienstleistungen, die nur für Unternehmen erbracht werden, sind Konsumgüter, weil die Endbegünstigten Menschen sind.",
+      "Ein an einen Firmenkunden verkaufter Drucker ist eine Konsumgüter, weil jeder Verkauf letztlich den menschlichen Bedürfnissen dient.",
+      "Ein Drucker, der ausgetauscht wird, um die betrieblichen Bedürfnisse eines Firmenkunden zu erfüllen, zählt als Produkt in der Herstellerkategorie.",
+      "Ein an einen privaten Haushalt verkaufter Drucker ist ein Produktionsgüter, weil der Verkäufer ein Wirtschaftsunternehmen ist.",
+      "Der gleiche Drucker muss ein festes Produktetikett für alle Käufer aufbewahren, da sich das Design nie ändert."
     ],
     "answer_key": [
       false,
@@ -16244,29 +16238,28 @@
       false
     ],
     "tactical_explanations": [
-      "Services sold only to businesses are producer products, not consumer products. Ultimate human beneficiaries do not rewrite the firm buyer into a household customer. B2B service exchange stays in the producer lane.\n\nSo the statement is False.",
-      "A printer sold to a corporate client is a producer product. Downstream human needs do not re-label that firm purchase as a consumer product. Classification follows the corporate buyer in the exchange.\n\nSo the statement is False.",
-      "A printer exchanged to fulfil the operational needs of a corporate client counts as a product in the producer category. Commercial use by another business and the presence of exchange complete the producer-product reading. Office throughput, client reporting, and firm workflows are typical operational needs that place the machine on the producer side even if a home twin exists in retail catalogues.\n\nSo the statement is True.",
-      "A printer sold to a private household is a consumer product. The seller being a business firm is normal in B2C and does not flip the sale into the producer category. Buyer side, not seller registration, decides.\n\nSo the statement is False.",
-      "Product labels can change with the buyer even when the design stays fixed. The same printer may be producer in one sale and consumer in another. Fixed design does not force one permanent marketing label for all buyers.\n\nSo the statement is False."
+      "Dienstleistungen, die nur an Unternehmen verkauft werden, sind Produktionsgüter, nicht Konsumgüter. Ultimative menschliche Begünstigte schreiben den Firmenkäufer nicht in einen Haushaltskunden um. B2B Service Exchange bleibt in der Producer Lane.\n\nDie Aussage ist falsch.",
+      "Ein an einen Firmenkunden verkaufter Drucker ist ein Produktionsgüter. Nachgelagerte menschliche Bedürfnisse kennzeichnen diesen festen Kauf nicht als Konsumgüter um. Die Klassifizierung folgt dem Firmenkäufer im Austausch.\n\nDie Aussage ist falsch.",
+      "Ein Drucker, der ausgetauscht wird, um die betrieblichen Bedürfnisse eines Firmenkunden zu erfüllen, zählt als Produkt in der Herstellerkategorie. Kommerzielle Nutzung durch ein anderes Unternehmen und das Vorhandensein von Austausch vervollständigen die Lesung des Produzenten-Produkts. Office-Durchsatz, Client-Reporting und feste Workflows sind typische betriebliche Anforderungen, die die Maschine auf die Herstellerseite stellen, auch wenn ein Heimzwilling in Einzelhandelskatalogen vorhanden ist.\n\nDie Aussage ist wahr.",
+      "Ein an einen privaten Haushalt verkaufter Drucker ist ein Konsumgüter. Der Verkäufer, der eine Geschäftsfirma ist, ist normal in B2C und dreht den Verkauf nicht in die Herstellerkategorie. Käuferseite, nicht Verkäuferregistrierung, entscheidet.\n\nDie Aussage ist falsch.",
+      "Produktetiketten können sich mit dem Käufer ändern, auch wenn das Design unverändert bleibt. Der gleiche Drucker kann Produzent in einem Verkauf und Verbraucher in einem anderen sein. Fixed Design erzwingt nicht ein permanentes Marketing-Label für alle Käufer.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.08",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.08"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.09",
-    "title": "Home Printer as Consumer Product",
-    "context": "Review the role of exchange in determining whether a good or service counts as a product in marketing. Evaluate the following economic assertions:",
+    "title": "Heimdrucker als Konsumgut",
+    "context": "Überprüfen Sie die Rolle des Austauschs bei der Bestimmung, ob eine Ware oder Dienstleistung als Produkt im Marketing zählt. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "A printer exchanged to fulfil the personal wishes of a private household counts as a product in the consumer category.",
-      "Producer products include a printer when it is sold from one business to a corporate client for further commercial activity.",
-      "A printer is not a product unless it is a manufactured physical good.",
-      "Exchange is irrelevant to whether a printer counts as a product if customers desire it strongly enough.",
-      "Consumer products include a printer when it is sold to a private household for private consumption or domestic use."
+      "Ein Drucker, der ausgetauscht wurde, um die persönlichen Wünsche eines privaten Haushalts zu erfüllen, zählt als Produkt in der Kategorie Verbraucher.",
+      "Produktionsgüter enthalten einen Drucker, wenn er von einem Unternehmen an einen Firmenkunden für weitere kommerzielle Aktivitäten verkauft wird.",
+      "Ein Drucker ist kein Produkt, es sei denn, es handelt sich um ein hergestelltes physisches Gut.",
+      "Der Austausch ist irrelevant, ob ein Drucker als Produkt zählt, wenn die Kunden es stark genug wünschen.",
+      "Konsumgüter umfassen einen Drucker, wenn er an einen privaten Haushalt für den privaten Verbrauch oder den häuslichen Gebrauch verkauft wird."
     ],
     "answer_key": [
       true,
@@ -16276,29 +16269,28 @@
       true
     ],
     "tactical_explanations": [
-      "A printer exchanged to fulfil the personal wishes of a private household counts as a product in the consumer category. Domestic purpose plus exchange place that sale correctly among consumer products.\n\nSo the statement is True.",
-      "Producer products include a printer when it is sold from one business to a corporate client for further commercial activity. Firm buyer and commercial use mark the producer lane for that exchange.\n\nSo the statement is True.",
-      "Product status does not require a manufactured physical good alone. Services exchanged with customers are products too, and a printer that is traded still qualifies as a product as a good. Demanding manufacture-only status is too narrow: it would eject support contracts, consulting, and other intangible exchanges that marketing still treats as products when they meet wishes and needs through trade.\n\nSo the statement is False.",
-      "Strong desire does not replace exchange. A printer counts as a product when it is exchanged to meet wishes and needs; wanting it intensely without a trade does not complete the marketing definition.\n\nSo the statement is False.",
-      "Consumer products include a printer when it is sold to a private household for private consumption or domestic use. Household buyer purpose is the cue that keeps that sale in the consumer category.\n\nSo the statement is True."
+      "Ein Drucker, der ausgetauscht wird, um die persönlichen Wünsche eines privaten Haushalts zu erfüllen, zählt als Produkt in der Kategorie Verbraucher. Inlandszweck plus Tauschplatz, der korrekt zwischen Konsumgütern verkauft wird.\n\nDie Aussage ist wahr.",
+      "Produktionsgüter enthalten einen Drucker, wenn er von einem Unternehmen an einen Firmenkunden für weitere kommerzielle Aktivitäten verkauft wird. Firmenkäufer und kommerzielle Nutzung markieren den Produzentenweg für diesen Austausch.\n\nDie Aussage ist wahr.",
+      "Der Produktstatus erfordert nicht allein ein hergestelltes physisches Gut. Dienstleistungen, die mit Kunden ausgetauscht werden, sind auch Produkte, und ein Drucker, der gehandelt wird, gilt immer noch als Produkt als Ware. Die Forderung nach reinem Herstellungsstatus ist zu eng: Sie würde Supportverträge, Beratung und andere immaterielle Börsen auswerfen, die das Marketing immer noch als Produkte behandelt, wenn sie Wünsche und Bedürfnisse durch den Handel erfüllen.\n\nDie Aussage ist falsch.",
+      "Starkes Verlangen ersetzt nicht den Austausch. Ein Drucker zählt als Produkt, wenn er ausgetauscht wird, um Wünsche und Bedürfnisse zu erfüllen; es intensiv ohne Handel zu wollen, vervollständigt nicht die Marketingdefinition.\n\nDie Aussage ist falsch.",
+      "Konsumgüter umfassen einen Drucker, wenn er an einen privaten Haushalt für den privaten Verbrauch oder den häuslichen Gebrauch verkauft wird. Zweck des Haushaltskäufers ist der Hinweis, der diesen Verkauf in der Verbraucherkategorie hält.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.09",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.09"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.10",
-    "title": "Computer Support in B2C Markets",
-    "context": "Analyze how a printer purchased for office operations illustrates producer-product classification. Evaluate the following economic assertions:",
+    "title": "Computersupport auf B2C-Märkten",
+    "context": "Analysieren Sie, wie ein für den Bürobetrieb gekaufter Drucker die Hersteller-Produkt-Klassifizierung veranschaulicht. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "The marketing term product covers a printer whether the exchange is B2B with a corporate client or B2C with a private household.",
-      "A consultancy may list a printer under producer products when invoicing a corporate client and under consumer products when invoicing a private household.",
-      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged printer a product in marketing terminology.",
-      "Exchange value arises when a printer is traded with a corporate client or a private household to satisfy identifiable customer demand.",
-      "A computer sold to a manufacturing firm is a producer product because the purchaser is another business operating commercially."
+      "Der Marketing-Begriff Produkt umfasst einen Drucker, unabhängig davon, ob es sich bei dem Austausch um B2B mit einem Firmenkunden oder B2C mit einem privaten Haushalt handelt.",
+      "Eine Beratungsfirma kann einen Drucker bei der Rechnungsstellung für einen Firmenkunden unter Produktionsgüter und bei der Rechnungsstellung für einen privaten Haushalt unter Konsumgüter auflisten.",
+      "Die Erfüllung von Kundenwünschen und -bedürfnissen ist der Zweck, der einen ausgetauschten Drucker zu einem Produkt in der Marketingterminologie macht.",
+      "Der Tauschwert entsteht, wenn ein Drucker mit einem Firmenkunden oder einem privaten Haushalt gehandelt wird, um die identifizierbare Kundennachfrage zu befriedigen.",
+      "Ein Computer, der an eine Produktionsfirma verkauft wird, ist ein Produktionsgüter, weil der Käufer ein anderes Unternehmen ist, das kommerziell tätig ist."
     ],
     "answer_key": [
       true,
@@ -16308,29 +16300,28 @@
       true
     ],
     "tactical_explanations": [
-      "The marketing term product covers a printer in both B2B sales to corporate clients and B2C sales to private households. Exchange channel does not eject the printer from product status; it only shifts producer versus consumer labelling. Corporate invoicing yields a producer product; household checkout yields a consumer product; both remain products because exchange and fulfilment purpose are present.\n\nSo the statement is True.",
-      "A consultancy may list a printer under producer products when invoicing a corporate client and under consumer products when invoicing a private household. The invoice buyer decides which column is correct.\n\nSo the statement is True.",
-      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged printer a product in marketing terminology. Exchange plus that fulfilment purpose, not advertising volume alone, complete the definition.\n\nSo the statement is True.",
-      "Exchange value arises when a printer is traded with a corporate client or a private household to satisfy identifiable customer demand. Both buyer types can create that traded value once demand is met through exchange.\n\nSo the statement is True.",
-      "A computer sold to a manufacturing firm is a producer product because the purchaser is another business operating commercially. Commercial firm buyer identity places the machine in the producer category.\n\nSo the statement is True."
+      "Der Marketing-Begriff Produkt umfasst einen Drucker sowohl im B2B-Verkauf an Firmenkunden als auch im B2C-Verkauf an private Haushalte. Der Austauschkanal verdrängt den Drucker nicht aus dem Produktstatus; er verschiebt nur die Hersteller- und Verbraucherkennzeichnung. Die Unternehmensrechnung liefert ein Produktionsgüter; die Haushaltskasse liefert ein Konsumgüter; beides bleiben Produkte, weil Austausch- und Erfüllungszweck vorhanden sind.\n\nDie Aussage ist wahr.",
+      "Eine Beratungsfirma kann einen Drucker bei der Rechnungsstellung für einen Firmenkunden unter Produktionsgüter und bei der Rechnungsstellung für einen privaten Haushalt unter Konsumgüter auflisten. Der Rechnungskäufer entscheidet, welche Spalte korrekt ist.\n\nDie Aussage ist wahr.",
+      "Die Erfüllung von Kundenwünschen und -bedürfnissen ist der Zweck, der einen ausgetauschten Drucker zu einem Produkt in der Marketingterminologie macht. Tausch und dieser Erfüllungszweck, nicht das Werbevolumen allein, vervollständigen die Definition.\n\nDie Aussage ist wahr.",
+      "Der Tauschwert entsteht, wenn ein Drucker mit einem Firmenkunden oder einem privaten Haushalt gehandelt wird, um die identifizierbare Kundennachfrage zu befriedigen. Beide Käufertypen können diesen gehandelten Wert schaffen, sobald die Nachfrage durch den Austausch gedeckt ist.\n\nDie Aussage ist wahr.",
+      "Ein Computer, der an eine Produktionsfirma verkauft wird, ist ein Produktionsgüter, weil der Käufer ein anderes gewerblich tätiges Unternehmen ist. Die Käuferidentität eines Handelsunternehmens stellt die Maschine in die Kategorie des Herstellers.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.10",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.10"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.11",
-    "title": "Computer Support in B2B Markets",
-    "context": "Review how an identical printer purchased for private home use illustrates consumer-product classification. Evaluate the following economic assertions:",
+    "title": "Computersupport auf B2B-Märkten",
+    "context": "Überprüfen Sie, wie ein identischer Drucker, der für den privaten Heimgebrauch gekauft wurde, die Klassifizierung von Verbraucherprodukten veranschaulicht. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "A computer sold to a family home is a consumer product because the purchaser is a private household or individual consumer.",
-      "Marketing excludes a printer from products when sold to a corporate client because businesses do not have wishes or needs.",
-      "Marketing excludes a printer from products when sold to a private household because households only receive gifts, not products.",
-      "The same computer may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer.",
-      "A printer transferred internally between branches of one corporation remains a marketed product."
+      "Ein Computer, der an ein Familienhaus verkauft wird, ist ein Konsumgut, weil der Käufer ein privater Haushalt oder ein einzelner Verbraucher ist.",
+      "Marketing schließt einen Drucker von Produkten aus, wenn er an einen Firmenkunden verkauft wird, weil Unternehmen keine Wünsche oder Bedürfnisse haben.",
+      "Marketing schließt einen Drucker von Produkten aus, wenn er an einen privaten Haushalt verkauft wird, weil Haushalte nur Geschenke erhalten, keine Produkte.",
+      "Derselbe Computer kann je nach Käufer als Produktionsgüter in einer Transaktion und als Konsumgüter in einer anderen verkauft werden.",
+      "Ein Drucker, der intern zwischen Zweigstellen eines Unternehmens übertragen wird, bleibt ein vermarktetes Produkt."
     ],
     "answer_key": [
       true,
@@ -16340,29 +16331,28 @@
       false
     ],
     "tactical_explanations": [
-      "A computer sold to a family home is a consumer product because the purchaser is a private household or individual consumer. Domestic buyer identity places that exchange in the consumer lane.\n\nSo the statement is True.",
-      "Businesses have operational wishes and needs, so a printer sold to a corporate client remains a product. Marketing does not exclude firm buyers from the product definition; it classifies those sales as producer products.\n\nSo the statement is False.",
-      "Households buy products through ordinary exchange, not only through gifts. A printer sold to a private household is still a marketed product when money or other value is traded for the machine. Treating household purchases as non-products invents a rule the chapter does not use and would erase most consumer-product examples from introductory marketing.\n\nSo the statement is False.",
-      "The same computer may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer. Classification tracks each exchange rather than freezing one label to the hardware.\n\nSo the statement is True.",
-      "A printer moved internally between branches of one corporation is not a marketed exchange with an outside customer. Without that customer exchange, it does not remain a marketed product in the chapter sense.\n\nSo the statement is False."
+      "Ein Computer, der an ein Familienhaus verkauft wird, ist ein Konsumgut, weil der Käufer ein privater Haushalt oder ein einzelner Verbraucher ist. Inländische Käuferidentität Orte, die sich auf der Verbraucherspur austauschen.\n\nDie Aussage ist wahr.",
+      "Unternehmen haben betriebliche Wünsche und Bedürfnisse, so dass ein Drucker, der an einen Firmenkunden verkauft wird, ein Produkt bleibt. Das Marketing schließt nicht aus der Produktdefinition die festen Käufer aus; es klassifiziert diese Verkäufe als Produktionsgüter.\n\nDie Aussage ist falsch.",
+      "Haushalte kaufen Produkte durch gewöhnlichen Austausch, nicht nur durch Geschenke. Ein an einen privaten Haushalt verkaufter Drucker ist immer noch ein vermarktetes Produkt, wenn Geld oder ein anderer Wert für die Maschine gehandelt wird. Die Behandlung von Haushaltskäufen als Nicht-Produkte erfindet eine Regel, die das Kapitel nicht verwendet und die meisten Beispiele für Konsumgüter aus dem einführenden Marketing löschen würde.\n\nDie Aussage ist falsch.",
+      "Derselbe Computer kann je nach Käufer als Produktionsgüter in einer Transaktion und als Konsumgüter in einer anderen verkauft werden. Die Klassifizierung verfolgt jeden Austausch, anstatt ein Etikett auf der Hardware einzufrieren.\n\nDie Aussage ist wahr.",
+      "Ein Drucker, der intern zwischen Zweigstellen eines Unternehmens bewegt wird, ist keine vermarktete Börse mit einem externen Kunden. Ohne diesen Kundenaustausch bleibt es kein vermarktetes Produkt im Sinne des Kapitels.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.11",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.11"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.12",
-    "title": "Customer Types in Product Theory",
-    "context": "Consider a training academy offering compliance workshops to company staff and evening language courses to individual learners. Evaluate the following economic assertions:",
+    "title": "Kundentypen in der Produktlehre",
+    "context": "Betrachten Sie eine Schulungsakademie, die Compliance-Workshops für Mitarbeiter des Unternehmens und abendliche Sprachkurse für einzelne Lernende anbietet. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "When a firm exchanges a computer with a manufacturing firm, the transaction is business-to-business and the item is a producer product.",
-      "Marketing classifies a computer sold for commercial operations to a manufacturing firm as a producer product rather than a consumer product.",
-      "Marketing classifies a computer sold for personal or domestic use to a family home as a consumer product rather than a producer product.",
-      "A computer exchanged to fulfil the operational needs of a manufacturing firm counts as a product in the producer category.",
-      "A computer exchanged to fulfil the personal wishes of a family home counts as a product in the consumer category."
+      "Wenn eine Firma einen Computer mit einer Produktionsfirma tauscht, ist die Transaktion Business-to-Business (B2B) und der Gegenstand ist ein Produktionsgüter.",
+      "Marketing klassifiziert einen Computer, der für kommerzielle Operationen an ein Produktionsunternehmen verkauft wird, als Produktionsgüter und nicht als Konsumgüter.",
+      "Marketing klassifiziert einen Computer, der für den persönlichen oder häuslichen Gebrauch an ein Einfamilienhaus verkauft wird, als Konsumgüter und nicht als Produktionsgüter.",
+      "Ein Computer, der ausgetauscht wird, um die betrieblichen Bedürfnisse eines produzierenden Unternehmens zu erfüllen, zählt als Produkt in der Herstellerkategorie.",
+      "Ein Computer, der ausgetauscht wird, um die persönlichen Wünsche eines Familienhauses zu erfüllen, zählt als Produkt in der Kategorie Verbraucher."
     ],
     "answer_key": [
       true,
@@ -16372,29 +16362,28 @@
       true
     ],
     "tactical_explanations": [
-      "When a firm exchanges a computer with a manufacturing firm, the transaction is business-to-business and the item is a producer product. Firm-to-firm commercial exchange sets both the B2B path and the producer label.\n\nSo the statement is True.",
-      "Commercial operations at a manufacturing firm put a purchased computer in the producer-product column rather than the consumer column. Marketing reads the buyer as another business, so the machine is classified as a producer product for that sale.\n\nSo the statement is True.",
-      "Personal or domestic use in a family home puts a purchased computer in the consumer-product column rather than the producer column. Marketing reads the buyer as a private household, so the machine is classified as a consumer product for that sale.\n\nSo the statement is True.",
-      "A computer exchanged to fulfil the operational needs of a manufacturing firm counts as a product in the producer category. Operational firm demand plus exchange complete that producer-product reading. Production planning, design work, and plant administration are typical operational uses that keep the machine on the producer side of the classification.\n\nSo the statement is True.",
-      "A computer exchanged to fulfil the personal wishes of a family home counts as a product in the consumer category. Personal household purpose plus exchange complete the consumer-product reading.\n\nSo the statement is True."
+      "Wenn eine Firma einen Computer mit einer Produktionsfirma tauscht, ist die Transaktion Business-to-Business (B2B) und der Gegenstand ist ein Produktionsgüter. Firm-to-firm Commercial Exchange setzt sowohl den B2B-Pfad als auch das Producer Label.\n\nDie Aussage ist wahr.",
+      "Kommerzielle operationen bei einem hersteller stellten einen gekauften computer in die säule des produzenten-produkts, anstatt der verbraucher-säule. Marketing liest den Käufer als ein anderes Geschäft, so dass die Maschine als Produktionsgüter für diesen Verkauf klassifiziert wird.\n\nDie Aussage ist wahr.",
+      "Der persönliche oder häusliche Gebrauch in einem Familienhaus stellt einen gekauften Computer in die Verbraucher-Produkt-Spalte und nicht in die Hersteller-Spalte. Marketing liest den Käufer als Privathaushalt, so dass die Maschine als Konsumgüter für diesen Verkauf eingestuft wird.\n\nDie Aussage ist wahr.",
+      "Ein Computer, der ausgetauscht wird, um die betrieblichen Bedürfnisse eines produzierenden Unternehmens zu erfüllen, zählt als Produkt in der Herstellerkategorie. Operationelle feste Nachfrage plus Austausch vervollständigen diese Hersteller-Produkt-Lesung. Produktionsplanung, Designarbeit und Anlagenverwaltung sind typische Betriebsanwendungen, die die Maschine auf der Erzeugerseite der Klassifizierung halten.\n\nDie Aussage ist wahr.",
+      "Ein Computer, der ausgetauscht wird, um die persönlichen Wünsche eines Familienhauses zu erfüllen, zählt als Produkt in der Kategorie Verbraucher. Persönliche Haushaltszweck plus Austausch vervollständigen die Verbraucher-Produkt-Lesung.\nSomit ist die Aussage wahr.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.12",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.12"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.13",
-    "title": "Fulfilling Wishes and Needs",
-    "context": "Review how computer support services sold to other businesses exemplify business-to-business offerings. Evaluate the following economic assertions:",
+    "title": "Wünsche und Bedürfnisse erfüllen",
+    "context": "Überprüfen Sie, wie Computer-Support-Services an andere Unternehmen verkauft werden Exemplify Business-to-Business (B2B) Angebote. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "B2B classification of a printer depends on the seller's industry rather than on the corporate client purchaser.",
-      "Producer products include a computer when it is sold from one business to a manufacturing firm for further commercial activity.",
-      "B2C classification of a printer depends on colourful retail branding rather than on the private household purchaser.",
-      "Consumer products include a computer when it is sold to a family home for private consumption or domestic use.",
-      "The marketing term product covers a computer whether the exchange is B2B with a manufacturing firm or B2C with a family home."
+      "Die B2B-Klassifizierung eines Druckers hängt von der Branche des Verkäufers und nicht vom Käufer des Firmenkunden ab.",
+      "Produktionsgüter enthalten einen Computer, wenn er von einem Unternehmen an ein Produktionsunternehmen für weitere kommerzielle Aktivitäten verkauft wird.",
+      "Die B2C-Klassifizierung eines Druckers hängt eher vom bunten Einzelhandelsbranding als vom privaten Haushaltskäufer ab.",
+      "Konsumgüter enthalten einen Computer, wenn er an ein Familienhaus für den privaten Verbrauch oder den häuslichen Gebrauch verkauft wird.",
+      "Der Marketing-Begriff Produkt umfasst einen Computer, ob der Austausch B2B mit einer Produktionsfirma oder B2C mit einem Familienhaus ist."
     ],
     "answer_key": [
       false,
@@ -16404,29 +16393,28 @@
       true
     ],
     "tactical_explanations": [
-      "B2B classification of a printer depends on the corporate client purchaser, not on the seller's industry. A retailer, wholesaler, or specialist vendor selling to a firm still creates a producer-product B2B sale when the buyer is commercial. Seller sector labels do not override buyer identity. The chapter's B2B cue is who purchases for commercial use, not which industry code the seller carries.\n\nSo the statement is False.",
-      "Producer products include a computer when it is sold from one business to a manufacturing firm for further commercial activity. Firm buyer and commercial purpose place that machine in the producer lane.\n\nSo the statement is True.",
-      "B2C classification of a printer depends on the private household purchaser, not on colourful retail branding. Brand colours may attract attention, yet they do not decide consumer-product status.\n\nSo the statement is False.",
-      "Consumer products include a computer when it is sold to a family home for private consumption or domestic use. Household buyer purpose is what keeps that sale in the consumer category.\n\nSo the statement is True.",
-      "The marketing term product covers a computer whether the exchange is B2B with a manufacturing firm or B2C with a family home. Channel changes the producer/consumer label, not whether the computer is a product at all.\n\nSo the statement is True."
+      "Die B2B-Klassifizierung eines Druckers hängt vom Käufer des Firmenkunden ab, nicht von der Branche des Verkäufers. Ein Einzelhändler, Großhändler oder Fachhändler, der an ein Unternehmen verkauft, schafft immer noch einen Produzenten-Produkt-B2B-Verkauf, wenn der Käufer kommerziell ist. Verkäufer-Sektor-Etiketten setzen die Käuferidentität nicht außer Kraft. Der B2B-Hinweis des Kapitels ist, wer für kommerzielle Zwecke kauft, nicht welchen Branchencode der Verkäufer trägt.\n\nDie Aussage ist falsch.",
+      "Produktionsgüter enthalten einen Computer, wenn er von einem Unternehmen an ein Produktionsunternehmen für weitere kommerzielle Aktivitäten verkauft wird. Firmenkäufer und kommerzielle zwecke platzieren diese maschine auf der produzentenspur.\n\nDie Aussage ist wahr.",
+      "Die B2C-Klassifizierung eines Druckers hängt vom privaten Haushaltskäufer ab, nicht vom bunten Einzelhandelsbranding. Markenfarben mögen Aufmerksamkeit erregen, aber sie entscheiden nicht über den Status des Verbraucherprodukts.\n\nDie Aussage ist falsch.",
+      "Konsumgüter enthalten einen Computer, wenn er an ein Familienhaus für den privaten Verbrauch oder den häuslichen Gebrauch verkauft wird. Zweck des Haushaltskäufers ist, was diesen Verkauf in der Verbraucherkategorie hält.\n\nDie Aussage ist wahr.",
+      "Der Marketing-Begriff Produkt umfasst einen Computer, ob der Austausch B2B mit einer Produktionsfirma oder B2C mit einem Familienhaus ist. Channel ändert das Label des Produzenten/Verbrauchers, nicht ob der Computer überhaupt ein Produkt ist.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.13",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.13"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.14",
-    "title": "Producer Services Between Firms",
-    "context": "Analyze why marketing treats fulfilment of wishes and needs as central to the concept of a product. Evaluate the following economic assertions:",
+    "title": "Produktionsdienstleistungen zwischen Unternehmen",
+    "context": "Analysieren Sie, warum Marketing die Erfüllung von Wünschen und Bedürfnissen als zentral für das Konzept eines Produkts betrachtet. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "A printer sold to a corporate client is B2C because money changes hands in the transaction.",
-      "A printer sold to a private household is B2B because the seller is a registered company.",
-      "Producer products include only raw materials, so a finished printer sold to a corporate client cannot be a producer product.",
-      "Consumer products include only luxury items, so a routine printer sold to a private household cannot be a consumer product.",
-      "A consultancy may list a computer under producer products when invoicing a manufacturing firm and under consumer products when invoicing a family home."
+      "Ein Drucker, der an einen Firmenkunden verkauft wird, ist B2C, weil Geld bei der Transaktion den Besitzer wechselt.",
+      "Ein an einen privaten Haushalt verkaufter Drucker ist B2B, da der Verkäufer ein registriertes Unternehmen ist.",
+      "Produktionsgüter enthalten nur Rohstoffe, so dass ein fertiger Drucker, der an einen Firmenkunden verkauft wird, kein Produktionsgüter sein kann.",
+      "Konsumgüter umfassen nur Luxusartikel, so dass ein an einen privaten Haushalt verkaufter Routinedrucker keine Konsumgüter sein kann.",
+      "Eine Beratungsfirma kann bei der Rechnungsstellung eines Herstellers einen Computer unter Produktionsgüter und bei der Rechnungsstellung eines Einfamilienhauses unter Konsumgüter aufführen."
     ],
     "answer_key": [
       false,
@@ -16436,29 +16424,28 @@
       true
     ],
     "tactical_explanations": [
-      "Money changing hands does not make a corporate printer sale B2C. B2C requires a private household buyer. A corporate client purchase remains B2B even though payment occurs.\n\nSo the statement is False.",
-      "A printer sold to a private household is B2C, not B2B. The seller being a registered company is normal in retail and does not turn a household sale into business-to-business exchange.\n\nSo the statement is False.",
-      "Producer products include finished goods sold to firms, not only raw materials. A finished printer sold to a corporate client can be a producer product because the buyer is another business. Limiting the category to raw inputs is too narrow and would misclassify equipment, software licences, and finished tools that firms buy every day for commercial operations.\n\nSo the statement is False.",
-      "Consumer products include routine household purchases, not only luxury items. A routine printer sold to a private household remains a consumer product. Luxury status is not required for the consumer label.\n\nSo the statement is False.",
-      "A consultancy may list a computer under producer products when invoicing a manufacturing firm and under consumer products when invoicing a family home. Buyer identity on each invoice selects the correct column.\n\nSo the statement is True."
+      "Geldwechselhände machen keinen Firmendruckerverkauf B2C. B2C erfordert einen privaten Haushaltskäufer. Ein Firmenkundenkauf bleibt B2B, obwohl die Zahlung erfolgt.\n\nDie Aussage ist falsch.",
+      "Ein an einen privaten Haushalt verkaufter Drucker ist B2C, nicht B2B. Der Verkäufer, der ein registriertes Unternehmen ist, ist im Einzelhandel normal und macht aus einem Haushaltsverkauf keinen Business-to-Business (B2B) -Austausch.\n\nDie Aussage ist falsch.",
+      "Produktionsgüter umfassen Fertigwaren, die an Unternehmen verkauft werden, nicht nur Rohstoffe. Ein fertiger Drucker, der an einen Firmenkunden verkauft wird, kann ein Produktionsgüter sein, weil der Käufer ein anderes Unternehmen ist. Die Beschränkung der Kategorie auf Rohinputs ist zu eng und würde Geräte, Softwarelizenzen und fertige Werkzeuge, die Unternehmen täglich für kommerzielle Operationen kaufen, falsch klassifizieren.\n\nDie Aussage ist falsch.",
+      "Konsumgüter umfassen routinemäßige Haushaltskäufe, nicht nur Luxusartikel. Ein an einen privaten Haushalt verkaufter Routinedrucker bleibt Konsumgüter. Der Luxusstatus ist für das Verbraucherlabel nicht erforderlich.\n\nDie Aussage ist falsch.",
+      "Eine Beratungsfirma kann einen Computer bei der Rechnungsstellung für ein produzierendes Unternehmen unter Produktionsgüter und bei der Rechnungsstellung für ein Einfamilienhaus unter Konsumgüter auflisten. Die Identität des Käufers auf jeder Rechnung wählt die richtige Spalte aus.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.14",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.14"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.15",
-    "title": "Consumer Services for Households",
-    "context": "Review how producer products include services exchanged between businesses as well as physical goods. Evaluate the following economic assertions:",
+    "title": "Konsumdienstleistungen für Haushalte",
+    "context": "Überprüfen Sie, wie Produktionsgüter sowohl zwischen Unternehmen ausgetauschte Dienstleistungen als auch physische Güter umfassen. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged computer a product in marketing terminology.",
-      "A printer becomes a product only after advertising creates demand rather than when it is exchanged.",
-      "A computer sold to a manufacturing firm is a consumer product because every sale ultimately serves human needs.",
-      "A computer sold to a family home is a producer product because the seller is a business firm.",
-      "The same computer must keep one fixed product label for all buyers because the design never changes."
+      "Die Erfüllung von Kundenwünschen und -bedürfnissen ist der Zweck, der einen ausgetauschten Computer zu einem Produkt in der Marketingterminologie macht.",
+      "Ein Drucker wird erst dann zu einem Produkt, wenn die Werbung Nachfrage erzeugt und nicht, wenn sie ausgetauscht wird.",
+      "Ein Computer, der an eine Produktionsfirma verkauft wird, ist eine Konsumgüter, weil jeder Verkauf letztendlich menschlichen Bedürfnissen dient.",
+      "Ein Computer, der an ein Familienhaus verkauft wird, ist ein Produktionsgüter, weil der Verkäufer ein Unternehmen ist.",
+      "Der gleiche Computer muss ein festes Produktetikett für alle Käufer aufbewahren, da sich das Design nie ändert."
     ],
     "answer_key": [
       true,
@@ -16468,29 +16455,28 @@
       false
     ],
     "tactical_explanations": [
-      "Fulfilment of customer wishes and needs is the purpose that makes an exchanged computer a product in marketing terminology. Exchange plus that purpose complete the definition for the machine.\n\nSo the statement is True.",
-      "Advertising may stimulate demand, yet a printer becomes a product when it is exchanged to meet wishes and needs. Waiting for advertising alone invents a hurdle the marketing definition does not require. Unadvertised machines sold through trade still count; heavily advertised machines that never leave the warehouse as an exchange do not complete the product test on ads alone.\n\nSo the statement is False.",
-      "A computer sold to a manufacturing firm is a producer product. Ultimate human needs downstream do not reclassify that firm purchase as a consumer product. Buyer identity in the exchange decides.\n\nSo the statement is False.",
-      "A computer sold to a family home is a consumer product. The seller being a business firm is expected in B2C and does not push the sale into the producer category.\n\nSo the statement is False.",
-      "Design stability does not freeze one product label for all buyers. The same computer can be producer in one sale and consumer in another when the purchaser changes. Fixed design is not a fixed marketing label.\n\nSo the statement is False."
+      "Die Erfüllung von Kundenwünschen und -bedürfnissen ist der Zweck, der einen ausgetauschten Computer zu einem Produkt in der Marketingterminologie macht. Exchange plus dieser Zweck vervollständigen die Definition für die Maschine.\n\nDie Aussage ist wahr.",
+      "Werbung kann die Nachfrage stimulieren, aber ein Drucker wird zu einem Produkt, wenn er ausgetauscht wird, um Wünsche und Bedürfnisse zu erfüllen. Allein das Warten auf Werbung erfindet eine Hürde, die die Marketingdefinition nicht erfordert. Unbeworbene Automaten, die im Handel verkauft werden, zählen immer noch; stark beworbene Automaten, die das Lager niemals als Börse verlassen, vervollständigen den Produkttest nicht allein auf Anzeigen.\n\nDie Aussage ist falsch.",
+      "Ein Computer, der an eine Produktionsfirma verkauft wird, ist ein Produktionsgüter. Letztendliche menschliche Bedürfnisse nachgelagert nicht umklassifizieren, dass fester Kauf als Konsumgüter. Käuferidentität im Austausch entscheidet.\n\nDie Aussage ist falsch.",
+      "Ein Computer, der an ein Familienhaus verkauft wird, ist eine Konsumgüter. Der Verkäufer, der ein Unternehmen ist, wird in B2C erwartet und treibt den Verkauf nicht in die Kategorie der Hersteller.\n\nDie Aussage ist falsch.",
+      "Designstabilität friert nicht ein Produktetikett für alle Käufer ein. Der gleiche Computer kann Produzent in einem Verkauf und Verbraucher in einem anderen sein, wenn der Käufer wechselt. Fixed Design ist kein Fixed Marketing Label.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.15",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.15"
   },
   {
     "subsection": "3.5",
     "case_id": "CASE 5.1.16",
-    "title": "Scope Beyond Tangible Goods",
-    "context": "Consider a wholesale stationery supplier that sells printers to corporate offices while also stocking identical models for walk-in household buyers. Evaluate the following economic assertions:",
+    "title": "Produktbegriff über materielle Güter hinaus",
+    "context": "Betrachten Sie einen Großhandelsanbieter für Schreibwaren, der Drucker an Firmenbüros verkauft und gleichzeitig identische Modelle für begehbare Haushaltskäufer vorrätig hält. Beurteilen Sie die folgenden wirtschaftlichen Aussagen:",
     "statements": [
-      "A computer is not a product unless it is a manufactured physical good.",
-      "Exchange value arises when a computer is traded with a manufacturing firm or a family home to satisfy identifiable customer demand.",
-      "Exchange is irrelevant to whether a computer counts as a product if customers desire it strongly enough.",
-      "Marketing excludes a computer from products when sold to a manufacturing firm because businesses do not have wishes or needs.",
-      "Marketing excludes a computer from products when sold to a family home because households only receive gifts, not products."
+      "Ein Computer ist kein Produkt, es sei denn, es handelt sich um ein hergestelltes physisches Gut.",
+      "Der Tauschwert entsteht, wenn ein Computer mit einer Produktionsfirma oder einem Familienhaus gehandelt wird, um die identifizierbare Kundennachfrage zu befriedigen.",
+      "Der Austausch ist irrelevant, ob ein Computer als Produkt zählt, wenn die Kunden es stark genug wünschen.",
+      "Marketing schließt einen Computer von Produkten aus, wenn er an eine Produktionsfirma verkauft wird, weil Unternehmen keine Wünsche oder Bedürfnisse haben.",
+      "Marketing schließt einen Computer von Produkten aus, wenn er an ein Familienhaus verkauft wird, weil Haushalte nur Geschenke erhalten, keine Produkte."
     ],
     "answer_key": [
       false,
@@ -16500,17 +16486,16 @@
       false
     ],
     "tactical_explanations": [
-      "A computer can be a product as a traded good, and related services can be products too. Requiring a manufactured physical good alone excludes legitimate service products and over-narrows the definition. Support contracts, configuration work, and training sold through exchange sit beside hardware under the product label when they fulfil customer wishes and needs.\n\nSo the statement is False.",
-      "Exchange value arises when a computer is traded with a manufacturing firm or a family home to satisfy identifiable customer demand. Both buyer types can create that traded value through exchange.\n\nSo the statement is True.",
-      "Desire without exchange does not complete product status. A computer counts as a product when traded to meet wishes and needs; strong wanting alone is not enough if no exchange occurs.\n\nSo the statement is False.",
-      "Businesses have operational wishes and needs, so marketing does not exclude a computer sold to a manufacturing firm from products. That sale is a producer product, not a non-product.\n\nSo the statement is False.",
-      "Households obtain products through purchase and other exchange, not only as gifts. Marketing therefore does not exclude a computer sold to a family home from products; that sale is a consumer product.\n\nSo the statement is False."
+      "Ein Computer kann ein Produkt als gehandeltes Gut sein, und verwandte Dienstleistungen können auch Produkte sein. Die Forderung nach einem hergestellten physischen Gut allein schließt legitime Dienstleistungsprodukte aus und schränkt die Definition ein. Supportverträge, Konfigurationsarbeiten und Schulungen, die über den Austausch verkauft werden, sitzen neben Hardware unter dem Produktlabel, wenn sie Kundenwünsche und -bedürfnisse erfüllen.\n\nDie Aussage ist falsch.",
+      "Der Tauschwert entsteht, wenn ein Computer mit einer Produktionsfirma oder einem Familienhaus gehandelt wird, um die identifizierbare Kundennachfrage zu befriedigen. Beide Käufertypen können diesen gehandelten Wert durch Austausch erzeugen.\n\nDie Aussage ist wahr.",
+      "Wunsch ohne Austausch vervollständigt den Produktstatus nicht. Ein Computer zählt als Produkt, wenn er gehandelt wird, um Wünsche und Bedürfnisse zu erfüllen; starkes Verlangen allein ist nicht genug, wenn kein Austausch stattfindet.\n\nDie Aussage ist falsch.",
+      "Unternehmen haben operative Wünsche und Bedürfnisse, so dass das Marketing einen Computer, der an eine Produktionsfirma verkauft wird, nicht von Produkten ausschließt. Dieser Verkauf ist ein Produktionsgüter, kein Nichtprodukt.\n\nDie Aussage ist falsch.",
+      "Haushalte erhalten Produkte durch Kauf und anderen Austausch, nicht nur als Geschenke. Die Vermarktung schließt daher einen Computer, der an ein Einfamilienhaus verkauft wird, nicht von Produkten aus; dieser Verkauf ist eine Konsumgüter.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "5/5",
     "tier": "full",
     "source_bbe_subsection": "5.1",
-    "source_bbe_case_id": "CASE 5.1.16",
-    "needs_de_translation": true
+    "source_bbe_case_id": "CASE 5.1.16"
   },
   {
     "subsection": "3.5",
