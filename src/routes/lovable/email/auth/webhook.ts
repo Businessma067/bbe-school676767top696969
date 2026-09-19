@@ -9,11 +9,16 @@ import { EmailChangeEmail } from '@/lib/email-templates/email-change'
 import { ReauthenticationEmail } from '@/lib/email-templates/reauthentication'
 
 // Configuration
+// Auth mail must From the verified Lovable sender subdomain (notify.*).
+// Root bbe-school.com currently publishes SPF "v=spf1 -all" and DMARC
+// p=reject with strict alignment, so From: *@bbe-school.com is rejected by
+// inbox providers even when delivery goes through notify.bbe-school.com.
+// Use info@bbe-school.com only after root SPF/DMARC allow Lovable "Show as".
 const SITE_NAME = "BBE School"
 const SENDER_DOMAIN = "notify.bbe-school.com"
 const ROOT_DOMAIN = "bbe-school.com"
-const FROM_DOMAIN = "bbe-school.com"
 const SITE_URL = `https://${ROOT_DOMAIN}`
+const FROM_ADDRESS = `${SITE_NAME} <noreply@${SENDER_DOMAIN}>`
 
 // The SDK handler owns verification, dispatch, and retry semantics; this file
 // owns only the email decisions: subjects, templates, and per-type props.
@@ -23,7 +28,7 @@ export const Route = createFileRoute("/lovable/email/auth/webhook")({
       POST: ({ request }) => {
         const handler = createAuthEmailHandler({
           apiKey: process.env['LOVABLE_API_KEY']!,
-          from: `${SITE_NAME} <info@${FROM_DOMAIN}>`,
+          from: FROM_ADDRESS,
           senderDomain: SENDER_DOMAIN,
           sendUrl: process.env['LOVABLE_SEND_URL'],
           emails: {
