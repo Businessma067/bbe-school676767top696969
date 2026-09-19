@@ -2287,6 +2287,44 @@
       "solution_overview": "Five correct formal-register models: timetable acceptance, disclosure clearance, rules still in force, stepped fines, and school ranking data. Internalise how inserts still leave a single grammatical subject in charge.\n\n**Part 1: What to watch for.**\n\nNeither…nor with a plural nearer noun, together with, there remain with legalistic padding, each of, and formal plural data with a past participle. Dual adviser references and \"for the avoidance of doubt\" asides look heavy but change nothing about number.\n\n**Part 2: How to decide.**\n\nConfirm proximity, strip together-with inserts, ignore padding between there and the subject, keep each singular, and keep data plural. These lines are what correct formal agreement looks like under exam conditions.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
+      "id": "en-g-3-19",
+      "case_id": "ENG G.3.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "A number of material safety clauses was triggered overnight.",
+        "Neither the organiser nor the other stewards in the group was prepared to waive the rule.",
+        "There is, when one examines the schedules carefully, more than two conflicting dates.",
+        "The lead reviewer, as well as the marking team, were responsible for the opinion.",
+        "The data that the model relies on have been restated twice this year."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) A number of material safety clauses was triggered overnight.**\n\n\"A number of material safety clauses\" needs a plural verb. Dense noun phrases still follow the a-number-of plural rule. Overnight timing does not singularise the clauses.\n\n**Trap:** A long technical noun phrase makes singular \"was triggered\" look almost technical — it is not.\n\n\"A number of … clauses\" means several, so singular \"was\" is **false** — \"A number of material safety clauses were triggered overnight.\"\n",
+        "**B) Neither the organiser nor the other stewards in the group was prepared to waive the rule.**\n\nNearer plural \"stewards\" needs a plural verb after neither…nor. Extra modifiers after the nearer noun (\"in the group\") do not make it singular. Waiving the rule is content only.\n\n**Trap:** Modifiers after the nearer noun invite a **false** singular after nor.\n\nNearer plural \"stewards\" should control the verb, so the wording is **false**; repair to \"Neither the organiser nor the other stewards in the group were prepared to waive the rule.\"\n",
+        "**C) There is, when one examines the schedules carefully, more than two conflicting dates.**\n\n\"More than two conflicting dates\" is plural, so write \"there are,\" not \"there is.\" Quantity phrases greater than one take plural after there. The long when-clause is only an interruption.\n\n**Trap:** A long when-clause after there is designed to hide a plural quantity phrase.\n\nMore than two dates after there are plural, so \"there is\" is **false**: \"There are, when one examines the schedules carefully, more than two conflicting dates.\"\n",
+        "**D) The lead reviewer, as well as the marking team, were responsible for the opinion.**\n\nSingular lead reviewer plus as well as the marking team needs a singular verb. Marking team after as well as is not a co-subject. Opinion content does not affect number.\n\n**Trap:** As well as the marking team looks like a plural co-subject — agreement still follows the head.\n\nAs-well-as the marking team never joins the subject, so plural \"were\" is **false** — \"The lead reviewer, as well as the marking team, was responsible for the opinion.\"\n",
+        "**E) The data that the model relies on have been restated twice this year.**\n\nFormal plural data correctly takes \"have been restated.\" Prefer plural agreement with data on formal exams unless the paper allows informal singular data. The model-relies-on clause does not singularise data.\n\nFormal plural \"data\" takes \"have been restated,\" so the sentence is **true**.\n"
+      ],
+      "highlights": [
+        "was triggered",
+        "was prepared",
+        "There is, when",
+        "were responsible",
+        "have been restated"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.3",
+      "solution_overview": "Four agreement failures surround one clean formal-data line: overnight safety clauses, steward waivers, conflicting dates, a reviewer's opinion, and restated model data. Strip inserts before you judge.\n\n**Part 1: What to watch for.**\n\nA number of, neither…nor with extra modifiers, there is with a long when-clause, as well as with a false plural, and plural data with a present perfect passive. Quantity phrases greater than one take plural after there. As well as still never makes a co-subject of the marking team.\n\n**Part 2: How to decide.**\n\nTreat plural data as the safe exam default on the last line. For the false lines, delete modifiers and asides, then re-apply a number, proximity, there is/are, and as well as. \"More than two\" is a plural cue after there.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=FALSE, E=TRUE"
+    },
+    {
       "id": "en-g-3-20",
       "case_id": "ENG G.3.20",
       "title": "Task 20",
@@ -3731,6 +3769,44 @@
       "solution_overview": "Only the community-centre oversight pair keeps the same agent under a clean voice flip. The rest invent blame, reflexive cool-downs, or drop be after a modal.\n\n**Part 1: What to watch for.**\n\nParadoxical vote rewrites, fake landlord stalling, allowed themselves versus were allowed, overseen by with modifiers kept, and must changed.\n\n**Part 2: How to decide.**\n\nReject blame and reflexive agency the source never stated. Modal passives always need be before the participle. Carry identifying modifiers of the agent into the by-phrase when they matter.\n\n**Answer.** A=FALSE, B=FALSE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
+      "id": "en-g-5-19",
+      "case_id": "ENG G.5.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "\"Having been briefed by the nurse, the parents approved the treatment.\" → \"The parents were briefed by the nurse and then approved the treatment.\"",
+        "The library books are to be returned within fourteen days.",
+        "\"What remains to be decided is the venue.\" → \"Someone has already decided the venue, and we know who.\"",
+        "The rare manuscript was being carefully restored when funding paused.",
+        "Under no circumstances should guest passwords be shared without encryption."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) \"Having been briefed by the nurse, the parents approved the treatment.\" → \"The parents were briefed by the nurse and then approved the treatment.\"**\n\n\"Having been briefed by the nurse, …\" → \"The parents were briefed by the nurse and then approved the treatment.\" The same nurse remains the agent; nothing new is invented. The participial passive and finite paraphrase carry the same sequence.\n\nHaving been briefed unpacks to were briefed by the same nurse with no fake agents, so the paraphrase is **true**.",
+        "**B) The library books are to be returned within fourteen days.**\n\nThe library books are to be returned within fourteen days uses be to + passive for scheduled obligation: are to be + past participle. Fourteen days frames a formal loan deadline.\n\n**Tip:** are to be + past participle is formal diary-style passive.\n\nAre to be returned within fourteen days marks scheduled library obligation, so the books line is **true**.",
+        "**C) \"What remains to be decided is the venue.\" → \"Someone has already decided the venue, and we know who.\"**\n\nWhat remains to be decided is the venue means the venue is still open. Claiming someone has already decided it — and that we know who — reverses the meaning. Remains to be decided signals incompleteness, not a finished secret decision.\n\n**Trap:** Already decided… and we know who is a near-miss that flips open → closed plus fake certainty.\n\nRemains to be decided means the venue is still open, so already-decided certainty is **false** — \"What remains to be decided is the venue.\"",
+        "**D) The rare manuscript was being carefully restored when funding paused.**\n\nThe rare manuscript was being carefully restored when funding paused is past continuous passive. The adverb carefully can sit between being and the participle without breaking form.\n\n**Tip:** Adverbs can sit between being and the participle.\n\nCarefully between being and restored keeps continuous passive intact, so the manuscript line is **true**.",
+        "**E) Under no circumstances should guest passwords be shared without encryption.**\n\nUnder no circumstances should guest passwords be shared without encryption keeps the modal passive after inversion: should… be shared. Inversion does not remove be, and without encryption stays part of the rule.\n\n**Tip:** Inversion does not remove the passive be.\n\nInversion still needs be after should, so Under no circumstances… be shared is **true**."
+      ],
+      "highlights": [
+        "were briefed by the nurse",
+        "are to be returned",
+        "already decided the venue",
+        "was being carefully restored",
+        "should guest passwords be shared"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.5",
+      "solution_overview": "Four advanced passives hold: participial, be-to, continuous, and inverted modal. The venue line fails because it turns an undecided state into a fabricated completed act.\n\n**Part 1: What to watch for.**\n\nHaving been briefed… unpacking fairly, are to be returned, remains to be decided versus already decided, was being carefully restored, and inverted should… be shared.\n\n**Part 2: How to decide.**\n\nParticipial and inverted passives still obey the no-fake-agent rule. to be decided signals incompleteness — never rewrite it as a known finished decision. Inversion does not remove be.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=TRUE"
+    },
+    {
       "id": "en-g-5-20",
       "case_id": "ENG G.5.20",
       "title": "Task 20",
@@ -4451,6 +4527,44 @@
       "sort_order": 18,
       "subsection": "g.6",
       "solution_overview": "Advanced possession after prepositions mixes with \"for who\" and \"that its\" traps, plus clean geography and contraction models.\n\n**Part 1: What to watch for.**\n\n\"On/in/at whose + noun\" works for inanimate heads too. Preposition + who is almost always wrong for people. \"That its\" is possession failure in disguise.\n\n**Part 2: How to decide.**\n\nFix person-preposition forms and replace broken \"that + possessive\" with \"whose.\" Expand \"who's waiting\" to confirm \"who is,\" and keep formal \"off which\" for place geography.\n\n**Answer.** A=TRUE, B=FALSE, C=FALSE, D=TRUE, E=TRUE"
+    },
+    {
+      "id": "en-g-6-19",
+      "case_id": "ENG G.6.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The path along which we walked ends at the lighthouse.",
+        "A neighbour who's dog barks at dawn has apologised twice.",
+        "The committee members whom the mayor praised stayed for tea.",
+        "The oven, that overheats on the fan setting, needs a service.",
+        "Few of the routes by which hikers reach the summit stay open in winter."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The path along which we walked ends at the lighthouse.**\n\n\"Along which\" correctly links a place after a preposition: we walked along the path. Path, road, and route phrases often use \"along/by which\" in formal relatives. Keep the preposition with \"which.\"\n\nPath relative \"along which\" correctly marks the route we walked, so the pattern fits.",
+        "**B) A neighbour who's dog barks at dawn has apologised twice.**\n\nPossession needs \"whose,\" not \"who's,\" before \"dog.\" \"Who's dog\" → \"who is dog,\" so reject it at once. A neighbour whose dog barks at dawn is the belonging reading.\n\n**Trap:** \"Who's + noun\" (dog/coat/keys) is almost always a whose-trap.\n\nBelonging needs \"whose,\" not the contraction \"who's,\" so the line is **false** — \"A neighbour whose dog barks at dawn has apologised twice.\"",
+        "**C) The committee members whom the mayor praised stayed for tea.**\n\nObject \"whom\" correctly refers to the committee members the mayor praised. Subject of the relative clause + object \"whom\" is a clean formal structure. The defining clause needs no commas.\n\nObject \"whom\" correctly marks the members the coach praised, so the wording is **true**.",
+        "**D) The oven, that overheats on the fan setting, needs a service.**\n\nCommas mark a non-restrictive clause about a known oven. Household nouns still obey the rule: non-restrictive wants \"which,\" not \"that.\" Swap the pronoun and keep the commas.\n\n**Trap:** Commas + \"that\" for an appliance is still a late-set near-miss.\n\nCommas plus \"that\" for a thing miss the non-restrictive rule, so this is **false** — \"The oven, which overheats on the fan setting, needs a service.\"",
+        "**E) Few of the routes by which hikers reach the summit stay open in winter.**\n\n\"By which\" correctly marks the means or route: hikers reach the summit by the routes. \"The X by which Y happens\" is a polished relative pattern. Keep the preposition with \"which.\"\n\n\"By which\" correctly marks the summit routes, so this line is **true**."
+      ],
+      "highlights": [
+        "along which",
+        "who's dog",
+        "whom the mayor",
+        "that overheats",
+        "by which"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.6",
+      "solution_overview": "Formal path relatives contrast with \"who's + noun\" and comma + \"that\" among trail, neighbour, committee, oven, and route sentences.\n\n**Part 1: What to watch for.**\n\nPath and route phrases love \"along/by which.\" \"Who's dog\" expands to \"who is dog\" and must become \"whose.\" Commas still ban \"that,\" even for household nouns like ovens.\n\n**Part 2: How to decide.**\n\nExpand contractions and check commas before you trust a late-set true. Keep object \"whom\" when the mayor praised the members, and reward \"by which\" for means or routes.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-6-20",
@@ -5175,6 +5289,44 @@
       "solution_overview": "Edge grammar: impossible stop to mean, parallel stop -ing, consider how to, decide on -ing, and refuse + noun.\n\n**Part 1: What to watch for.**\n\nStop to only works when the infinitive is a real purpose action — \"mean\" is not one. Parallel stop + -ing keeps the cease sense. Consider how to, decide on -ing, and refuse + noun are all legal alternatives.\n\n**Part 2: How to decide.**\n\nLook past the first verb when the complement sits elsewhere (offer of driving). Reject nonsense purpose infinitives, and accept decide on / consider how / refuse + noun when they appear.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
+      "id": "en-g-7-19",
+      "case_id": "ENG G.7.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Not wishing to appear rude, she avoided interrupting the poet mid-line.",
+        "Not wishing to appear rude, she avoided to interrupt the poet mid-line.",
+        "They promised that they would water the plants while we were away.",
+        "He enjoys that his sister always remembers his birthday.",
+        "We stopped short of promising to host the entire reunion."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Not wishing to appear rude, she avoided interrupting the poet mid-line.**\n\nAvoid + gerund is correct: \"avoided interrupting the poet mid-line.\" Fronted participle clauses (Not wishing to appear rude) do not change avoid's -ing rule. Interrupting is still the activity she steers clear of.\n\nA fronted participle clause does not rewrite avoid + -ing, so avoided interrupting is **true**.\n",
+        "**B) Not wishing to appear rude, she avoided to interrupt the poet mid-line.**\n\nSame sentence with the wrong complement — avoid needs -ing, not to. Compare the pair; only the gerund version works. Not wishing to appear rude does not license avoid to interrupt.\n\n**Trap:** The fronted clause makes avoid to look elegant, but avoid still wants -ing.\n\nThe same polite fronting still leaves avoid wanting -ing, so avoid to interrupt is **false** — \"Not wishing to appear rude, she avoided interrupting the poet mid-line.\"\n",
+        "**C) They promised that they would water the plants while we were away.**\n\nPromise that + clause is a valid alternative to promise to + verb: \"promised that they would water the plants.\" Promise to water OR promise that we will water. The that-clause carries the commitment content.\n\n**Tip:** Promise to water OR promise that we will water.\n\nPromise that + clause is a valid sibling of promise to, so promised that they would water is **true**.\n",
+        "**D) He enjoys that his sister always remembers his birthday.**\n\nEnjoy that + clause is acceptable; the that-clause is the object of enjoy. Enjoy + -ing for activities; enjoy that for facts or situations. His sister remembering the birthday is a fact/situation, not an infinitive activity.\n\n**Tip:** Enjoy + -ing for activities; enjoy that for facts/situations.\n\nFact-or-situation objects can sit in a that-clause after enjoy, so enjoy that… is **true**.\n",
+        "**E) We stopped short of promising to host the entire reunion.**\n\nStop short of + -ing is an idiom meaning \"almost but not quite\"; promising keeps its own to inside the gerund phrase. Idioms can nest: stop short of + gerund, and inside it promise + to. Hosting the reunion is the nearly-made promise, not a bare stop to host.\n\n**Tip:** Idioms can nest stop short of + gerund with promise + to inside.\n\nStop short of + gerund nests cleanly with promise + to inside, so the idiom is **true**.\n"
+      ],
+      "highlights": [
+        "avoided interrupting",
+        "avoided to interrupt",
+        "promised that they would",
+        "enjoys that his sister",
+        "stopped short of promising"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.7",
+      "solution_overview": "Minimal pairs, that-clause alternatives, and the idiom stop short of -ing. Confirm which structure is actually complementing which verb.\n\n**Part 1: What to watch for.**\n\nAvoid keeps -ing even after a fronted participle clause; the to version is the false twin. Promise that and enjoy that are valid clause objects. Stop short of + -ing nests another verb's complement inside an idiom.\n\n**Part 2: How to decide.**\n\nCompare near-identical lines first. Then check whether that-clauses or idioms are carrying the object, so you do not over-apply the basic to/-ing rule to the wrong verb.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
+    },
+    {
       "id": "en-g-7-20",
       "case_id": "ENG G.7.20",
       "title": "Task 20",
@@ -5895,6 +6047,44 @@
       "sort_order": 18,
       "subsection": "g.8",
       "solution_overview": "Inverted who-should and bare might-yes/no fail. Surviving rhetorical inversion, was-to-have, and would + next-morning time shifts are acceptable.\n\n**Part 1: What to watch for.**\n\nNegative inversion can survive inside a reported clause after said when pronouns and tenses already match. Was to have + past participle (unfulfilled plan) typically remains. Embedded object questions need statement order: who we should notify. Will → would with tomorrow morning → the next morning. Yes/no might needs if/whether + subject + might.\n\n**Part 2: How to decide.**\n\nAllow rare rhetorical inversion and frozen was-to-have; still force statement order on ordinary who/might questions. Mark false on who should we and bare might the shop.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+    },
+    {
+      "id": "en-g-8-19",
+      "case_id": "ENG G.8.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"",
+        "Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"",
+        "Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"",
+        "Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"",
+        "Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\""
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Direct: \"I'd rather you didn't spoil this.\" → \"She said she'd rather I didn't spoil that.\"**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. \"She said she'd rather I didn't spoil that\" does not force past perfect inside the rather-clause. Preferential rather-clauses are not automatically deepened further.\n\nShe'd rather I didn't spoil that keeps the preference clause while shifting deixis, so the report is **true**.\n",
+        "**B) Direct: \"How come the cake collapsed?\" → \"He asked how come the cake had collapsed.\"**\n\nInformal how come reports with statement order and optional past perfect for a prior failure. \"He asked how come the cake had collapsed\" keeps how come and deepens the collapse. Pattern: asked how come + subject + (had) + past participle.\n\nHow come the cake had collapsed is a valid informal backshift, so the wording is **true**.\n",
+        "**C) Direct: \"We used not to skip breakfast.\" → \"They said they used not to skip breakfast.\"**\n\n\"Used not to\" (or didn't use to) for past habit can remain used not to. Habitual used-to patterns are already past-oriented, so further backshift is unnecessary. \"They said they used not to skip breakfast\" keeps the old habit meaning.\n\nUsed not to can stay as-is under past said, so this line is **true**.\n",
+        "**D) Direct: \"Will you have finished by the time I call?\" → \"She asked if I would have finished by the time she called.\"**\n\nFuture perfect in a yes/no question → if + would have, and the time-clause present→past. \"She asked if I would have finished by the time she called\" shifts both the main future perfect and the by-the-time clause. Both layers move together under past asked.\n\n**Tip:** will you have… by the time I…? → if + would have… by the time + past.\n\nWould have finished and she called move together under asked if, so the double backshift is **true**.\n",
+        "**E) Direct: \"Suppose we freeze the leftovers.\" → \"He suggested that we freeze the leftovers.\"**\n\nSuppose-ideas often become suggested that + base (or past) form in formal reports. \"He suggested that we freeze the leftovers\" is exam-friendly for \"Suppose we freeze…\" Mandative or tentative freeze after suggested that is acceptable.\n\nSuggested that we freeze correctly maps the suppose-idea, so the wording is **true**.\n"
+      ],
+      "highlights": [
+        "she'd rather I didn't",
+        "how come the cake had collapsed",
+        "used not to skip",
+        "would have finished",
+        "suggested that we freeze"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.8",
+      "solution_overview": "All five are advanced but valid: rather + past clause, how come, used not to, nested would-have with by-the-time, and suggested that.\n\n**Part 1: What to watch for.**\n\nWould rather + past clause for preference about someone else keeps that past shape; this→that adjusts. Informal how come reports with statement order and optional past perfect. Used not to for past habit can remain. Future perfect in a yes/no question → if + would have, and the by-the-time clause present→past. Suppose-ideas often become suggested that + base form.\n\n**Part 2: How to decide.**\n\nRetain already-past preference and habit patterns; still shift futures and demonstratives; allow suggested that for suppose. Every line passes — treat the set as a finishing model.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
       "id": "en-g-8-20",
@@ -8899,6 +9089,44 @@
       "solution_overview": "An abruptly narrowing trail slows hikers to single file and tests how-clauses as noun objects.\n\n**Part 1: What to watch for.**\n\nAdvanced items use how-clauses as noun objects of because of / in spite of. Bare because still wants an ordinary subject–verb clause — do not drop of before how. Although can host a how-clause only when it sits inside a larger finite clause.\n\n**Part 2: How to decide.**\n\nIf how follows because of or in spite of, treat it as a noun. If how follows bare because, expect false. Then check that although's how-stretch still leaves a finite verb for although itself.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=TRUE, E=TRUE"
     },
     {
+      "id": "en-g-12-19",
+      "case_id": "ENG G.12.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.",
+        "Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.",
+        "Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.",
+        "Owing to the delayed train, they walked the last kilometre along the canal.",
+        "Because of delayed trains were overcrowded, they walked the last kilometre along the canal."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A) Notwithstanding the delayed train, the friends still made the exhibition opening — and despite the same delay, they refused to skip the café stop.**\n\nDespite + \"the same delay\" in the second half is correctly formed as a noun concession, and the sentence stays grammatical. Friends still making the opening and refusing to skip the café both fit the contrast story. When two contrast tools appear, check each chunk separately — this despite use is fine.\n\nDespite + \"the same delay\" in the second chunk is a clean noun concession, so the sentence is **true**.\n",
+        "**B) Despite delayed trains, they reached the gallery; however, several rooms had already closed for cleaning.**\n\nDespite + \"delayed trains\" and semicolon + however are both well formed. Stacking two contrast tools is fine if each obeys its own rule: noun after despite, strong punctuation before however. They reach the gallery; several rooms have already closed.\n\nDespite + delayed trains and semicolon + however each obey their own rules, so the wording is **true**.\n",
+        "**C) Although delayed trains, they reached the gallery, however several rooms had already closed for cleaning.**\n\nAlthough lacks a clause (\"Although delayed trains\"), and however is joined with only a weak comma. Two linker errors can hide in one sentence — check each separately. Either fault alone would already force **false**.\n\n**Trap:** Dense double-linker fails are hard because one error can mask the other.\n\nAlthough lacks a clause and however sits after only a weak comma, so this is **false** — \"Although trains were delayed, they reached the gallery; however, several rooms had already closed for cleaning.\"\n",
+        "**D) Owing to the delayed train, they walked the last kilometre along the canal.**\n\nOwing to + \"the delayed train\" correctly states the reason for walking the last kilometre. Travel delays often pair with owing to in formal notices. The noun cause matches the linker.\n\nOwing to + \"the delayed train\" names the canal-walk cause cleanly, so the line is **true**.\n",
+        "**E) Because of delayed trains were overcrowded, they walked the last kilometre along the canal.**\n\nBecause of + finite clause is illegal. \"Because of delayed trains were overcrowded\" → \"Because delayed trains were overcrowded\" or \"Because of overcrowded delayed trains.\" If a verb like were sits after because of, rewrite immediately.\n\n**Trap:** Because of + were is the classic hybrid trap buried in a longer travel sentence.\n\nBecause of cannot stack onto a finite were-overcrowded clause, so the wording is **false** — \"Because delayed trains were overcrowded, they walked the last kilometre along the canal.\"\n"
+      ],
+      "highlights": [
+        "despite the same delay",
+        "however",
+        "Although delayed trains",
+        "Owing to the delayed train",
+        "Because of delayed trains were"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.12",
+      "solution_overview": "Delayed trains, a gallery opening, and a canal walk pack two linkers into some of the denser sentences.\n\n**Part 1: What to watch for.**\n\nDense sentences may contain two linkers. Score each linker on its own rule — noun versus clause, and however's punctuation — rather than judging the sentence by overall feel. Watch although + noun and because of + were as the clear fails.\n\n**Part 2: How to decide.**\n\nSplit the sentence mentally into linker chunks. Validate despite / owing to + noun, semicolon + however, and refuse although without a verb or because of glued to a finite clause.\n\n**Answer.** A=TRUE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
+    },
+    {
       "id": "en-g-12-20",
       "case_id": "ENG G.12.20",
       "title": "Task 20",
@@ -9621,6 +9849,44 @@
       "solution_overview": "Festival flyers, marshal training, stage praise, scrapbook deadlines, and campsite rules. Stacked that-clauses and how-chains are the recurring exams traps at this band.\n\n**Part 1: What to watch for.**\n\nIf that appears twice, the third clause needs it too — or rewrite all three as nouns. Keep by + gerund means lists, how-clause praise chains, either…or after will, and campsite that-rules in one consistent frame.\n\n**Part 2: How to decide.**\n\nCount repeated markers (by, how, that). Any final branch that sheds the marker while the first branches keep it is parallel failure.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=TRUE, E=FALSE"
     },
     {
+      "id": "en-g-13-19",
+      "case_id": "ENG G.13.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Good bread rests less on exotic flour than kneading the dough with patience.",
+        "Not only did attendance rise after Easter, but energy levels also improved.",
+        "Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.",
+        "The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.",
+        "A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Good bread rests less on exotic flour than kneading the dough with patience.**\n\nLess…than joins on exotic flour to kneading the dough without repeating on. Comparative frames that open with a preposition need that same preposition after than. Write than on kneading so both sides share one scaffold.\n\n**Trap:** Kneading with patience is the intended contrast, so a dropped on after than is a classic high-band trap.\n\nLess…than that opens with on needs on again, so kneading alone is **false** — \"…less on exotic flour than on kneading the dough with patience.\"\n",
+        "**B) Not only did attendance rise after Easter, but energy levels also improved.**\n\nInverted not only… is balanced by but…also with a parallel past-tense predicate (energy levels also improved). Both sides stay finite and matching after the correlative. That mirrored finite structure is what the inversion pattern requires.\n\nInverted not only…but also balances two finite improvements, so the wording is **true**.\n",
+        "**C) Campers asked for a trail note that is realistic, that is waterproof, and useful without jargon.**\n\nTwo relative modifiers open with that is, but useful without jargon stands alone. Finish the relative chain with that is useful…, or drop that is before every adjective. Partial repetition of that is breaks the trail-note description.\n\n**Trap:** Useful without jargon looks ready-made as a third quality, so missing that is is easy to overlook.\n\nThat is repeated twice leaves useful bare, so this is **false** — \"…that is realistic, that is waterproof, and that is useful without jargon.\"\n",
+        "**D) The choir prefers rehearsing in person on Mondays and to rehearse online on Thursdays.**\n\nRehearsing (a gerund) is paired with to rehearse (an infinitive) after prefers. Prefer needs matching gerunds or matching infinitives for both rehearsal days. Pick one form and keep it for Mondays and Thursdays alike.\n\n**Trap:** Online rehearsal on Thursdays is a real alternative, so mixed -ing / to forms after prefers is a near-miss.\n\nPrefer needs one shared form for both rehearsal days, so the mixed pair is **false** — \"…rehearsing in person… and rehearsing online…\" or \"to rehearse… and to rehearse….\"\n",
+        "**E) A solid itinerary must specify who books the tickets, what bags are allowed, and when the group will meet.**\n\nMust specify introduces three matching wh-clauses: who books…, what bags…, and when the group will meet. Parallel wh-clauses are ideal when an itinerary must answer ownership, contents, and timing together. Every branch keeps a full wh + finite-clause shape.\n\nWho / what / when clauses under must specify stay parallel, so the itinerary frame is **true**.\n"
+      ],
+      "highlights": [
+        "than kneading the dough",
+        "Not only did attendance rise",
+        "and useful without jargon",
+        "and to rehearse online",
+        "who books the tickets, what bags"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.13",
+      "solution_overview": "Bread science, post-Easter attendance, trail notes, choir rehearsal modes, and itinerary wh-clauses. Comparative frames and relative-clause chains still demand matching markers.\n\n**Part 1: What to watch for.**\n\nLess…than needs on on both sides; inverted not only needs matching finite predicates; that is relatives need that is on every adjective (or none); prefer needs matching forms; wh-clauses should stay who / what / when in parallel.\n\n**Part 2: How to decide.**\n\nRewrite the last item so it could replace the first without changing structure. That mental swap exposes dropped prepositions, missing that is, and mixed -ing / to forms.\n\n**Answer.** A=FALSE, B=TRUE, C=FALSE, D=FALSE, E=TRUE"
+    },
+    {
       "id": "en-g-13-20",
       "case_id": "ENG G.13.20",
       "title": "Task 20",
@@ -10341,6 +10607,44 @@
       "sort_order": 18,
       "subsection": "g.14",
       "solution_overview": "Reporting shells (\"it was insisted,\" \"the protocol states that it is vital\") bury the real trigger. Unwrap to the innermost that-clause before you judge the verb.\n\n**Part 1: What to watch for.**\n\nOfficer titles after require, advise that + be + participle, and nested vital-clauses still need bare forms. Indicative starts and is raised are the traps.\n\n**Part 2: How to decide.**\n\nAccept keep, be reopened, and reach. Reject starts after it was insisted and is raised after proposed that.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
+    },
+    {
+      "id": "en-g-14-19",
+      "case_id": "ENG G.14.19",
+      "title": "Task 19",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "The board resolved that interim prizes not be declared this half.",
+        "It is essential that whoever chairs the panel has no prior conflict.",
+        "Organisers demanded that stage cues be tightened after the dress run.",
+        "The examiner insisted that each script is double-marked independently.",
+        "Guidance recommends that the risk register be reviewed after every incident."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) The board resolved that interim prizes not be declared this half.**\n\nNegated passive \"not be declared\" is correctly formed. Resolutions often negate with not be + participle. Interim prizes stay undeclared this half under that shape.\n\n**Tip:** Board resolutions often negate as not be + participle.\n\nResolved that interim prizes not be declared negates with not be correctly, so the wording is **true**.\n",
+        "**B) It is essential that whoever chairs the panel has no prior conflict.**\n\nAfter \"it is essential that,\" use have, not has, even after \"whoever.\" Free relatives still sit under the mandative rule. No -s on the that-clause verb — whoever chairs… have no prior conflict.\n\n**Trap:** Whoever… has looks like normal relative agreement; essential that still strips -s.\n\nEssential that whoever chairs … have forbids indicative has, so this is **false** — \"It is essential that whoever chairs the panel have no prior conflict.\"\n",
+        "**C) Organisers demanded that stage cues be tightened after the dress run.**\n\n\"Demanded that… be tightened\" is correct. Theatre and event language still uses demand that + be + participle. Stage cues after the dress run sit under that be.\n\nDemanded that stage cues be tightened already uses be after the dress run, so the sentence is **true**.\n",
+        "**D) The examiner insisted that each script is double-marked independently.**\n\nUse be double-marked, not is double-marked, after \"insisted that.\" Exam-administration passives are a favourite is trap. Swap to be before the participle.\n\n**Trap:** Insist that + is double-marked is a polished-looking indicative passive trap.\n\nInsisted that each script be double-marked needs be, so the line is **false**; repair to \"The examiner insisted that each script be double-marked independently.\"\n",
+        "**E) Guidance recommends that the risk register be reviewed after every incident.**\n\n\"Recommends that… be reviewed\" is correct. Safety and ops manuals recycle this frame constantly after incidents. The risk register takes be before reviewed.\n\nRecommends that the risk register be reviewed keeps be in ops English, so the wording is **true**.\n"
+      ],
+      "highlights": [
+        "not be declared",
+        "has",
+        "be tightened",
+        "is double-marked",
+        "be reviewed"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 19,
+      "subsection": "g.14",
+      "solution_overview": "The sharpest trap is \"whoever… has\": the free relative does not cancel the mandative. Resolutions, stage cues, scripts, and risk registers complete the set.\n\n**Part 1: What to watch for.**\n\nStrip -s / swap is for be wherever essential, insist, or recommend governs the clause. Negated passive \"not be\" + participle is fine in board resolutions.\n\n**Part 2: How to decide.**\n\nAccept not be declared, be tightened, and be reviewed. Reject has after whoever and is double-marked after insist.\n\n**Answer.** A=TRUE, B=FALSE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-14-20",
@@ -11101,6 +11405,44 @@
       "sort_order": 19,
       "subsection": "g.15",
       "solution_overview": "Two lines forget to invert after only after and never. The others show not until, barely, and on no account in full working order - gym closing, vet results, campsite booking, kitchen rules, and dawn unlocks.\n\n**Part 1: What to watch for.**\n\nOnly after + clause → invert the main clause. Not until… did…. Barely had… when… (including passive past perfect). On no account + should. Never + past perfect → Never had + subject.\n\n**Part 2: How to decide.**\n\nJump to the main clause after only after / not until and demand the auxiliary first. After never + past perfect, demand had before the subject. Match the three correct templates to the two repairs.\n\n**Answer.** A=FALSE, B=TRUE, C=TRUE, D=TRUE, E=FALSE"
+    },
+    {
+      "id": "en-g-15-20",
+      "case_id": "ENG G.15.20",
+      "title": "Task 20",
+      "context": "Decide whether each sentence is grammatically correct as written.",
+      "statements": [
+        "Nowhere in the hiking leaflet does it mention the Monday trail closure.",
+        "Not only did the hostel refill the kettle, but it also left fresh towels.",
+        "Hardly had the blackout ended when the street lights flickered back on.",
+        "Under no circumstances the landlord will enter without written notice.",
+        "No sooner had the suitcases been labelled than the taxi pulled up."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A) Nowhere in the hiking leaflet does it mention the Monday trail closure.**\n\nNowhere in the hiking leaflet does it mention correctly inverts after a negative place adverbial. Does follows the nowhere phrase and precedes the subject. Nowhere / no place at the front always demand that auxiliary swap.\n\nNowhere… does + subject is already in question-style order, so the leaflet line is **true**.\n",
+        "**B) Not only did the hostel refill the kettle, but it also left fresh towels.**\n\nNot only did the hostel refill the kettle already invents did after the front. But it also left fresh towels keeps the second half parallel. Match verb forms across both halves of not only / but also — and both halves do.\n\nNot only did… but also… is inverted and parallel, so the hostel wording is **true**.\n",
+        "**C) Hardly had the blackout ended when the street lights flickered back on.**\n\nHardly had the blackout ended when the street lights flickered back on is standard. Had before the subject and when afterward are both required and both present. Do not borrow than from the no-sooner pair.\n\nHardly had… when… is correctly linked (not than), so the blackout line is **true**.\n",
+        "**D) Under no circumstances the landlord will enter without written notice.**\n\nUnder no circumstances opens the landlord notice, so will should come next. The landlord will still keeps subject before the modal. Final checklist on this opener: modal, then subject — \"Under no circumstances will the landlord enter without written notice.\"\n\nTrap: legal-sounding under no circumstances… will enter can still fail if the subject sits before will.\n\nUnder no circumstances needs will before the landlord, so this is **false** — \"Under no circumstances will the landlord enter without written notice.\"\n",
+        "**E) No sooner had the suitcases been labelled than the taxi pulled up.**\n\nNo sooner had the suitcases been labelled than the taxi pulled up closes the set cleanly. Passive past perfect still inverts had before the subject. Than after no sooner seals the correlative.\n\nNo sooner had… than… is complete, including passive past perfect, so this line is **true**.\n"
+      ],
+      "highlights": [
+        "Nowhere in the hiking leaflet does",
+        "Not only did",
+        "Hardly had",
+        "the landlord will",
+        "No sooner had"
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 20,
+      "subsection": "g.15",
+      "solution_overview": "Four model inversions and one classic miss: under no circumstances without modal-subject swap. Hiking leaflets, hostel service, blackouts, landlord notice, and labelled suitcases wrap the final checklist.\n\n**Part 1: What to watch for.**\n\nNowhere… does…. Not only did… but also…. Hardly had… when…. Under no circumstances → will before the subject. No sooner had… than….\n\n**Part 2: How to decide.**\n\nIf you catch the under-no-circumstances pattern every time - modal before subject - this topic is exam-ready. Use the four true lines as production models and fix the one order miss the same way.\n\n**Answer.** A=TRUE, B=TRUE, C=TRUE, D=FALSE, E=TRUE"
     },
     {
       "id": "en-g-16-01",
