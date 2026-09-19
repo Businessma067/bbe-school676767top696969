@@ -6,7 +6,8 @@ import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale
 type LocalizedLinkProps = {
   to: string;
   hash?: string;
-} & Omit<ComponentPropsWithoutRef<typeof Link>, "to" | "params" | "hash">;
+  search?: Record<string, unknown>;
+} & Omit<ComponentPropsWithoutRef<typeof Link>, "to" | "params" | "hash" | "search">;
 
 /**
  * Link that stays on `/de/...` or `/uk/...` while browsing a translated site,
