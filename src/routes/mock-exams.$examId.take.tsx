@@ -1,9 +1,10 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FileSpreadsheet, Flag, StickyNote, PenLine, Timer, X, Calculator, Check } from "lucide-react";
-import { SUBJECT_META } from "@/config/scoring-config";
+import { SUBJECT_META, subjectLabel } from "@/config/scoring-config";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
+import { storeExamTrack } from "@/lib/exam-track";
 import {
   answersStorageKey,
   clearSession,
@@ -165,6 +166,7 @@ function TakeExamPage() {
         }
       }
       setExamTrack(resolved.track);
+      storeExamTrack(resolved.track);
       setExam(resolved.summary);
       setQuestions(resolved.questions);
       setExamSeconds(resolved.durationSeconds);
@@ -475,7 +477,7 @@ function TakeExamPage() {
   if (!hydrated || !session || questions.length === 0) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background font-sans text-muted-foreground">
-        Loading exam…
+        {examTrack === "wiso" ? "Prüfung wird geladen…" : "Loading exam…"}
       </div>
     );
   }
@@ -491,6 +493,7 @@ function TakeExamPage() {
           onJump={goTo}
           onBack={() => setPhase("exam")}
           onSubmit={() => submit()}
+          locale={examTrack === "wiso" ? "de" : "en"}
         />
       </div>
     );
@@ -498,6 +501,7 @@ function TakeExamPage() {
 
   const q = questions[session.currentIndex];
   const meta = SUBJECT_META[q.subject];
+  const subjectName = subjectLabel(q.subject, examTrack === "wiso" ? "de" : "en");
   const isLast = session.currentIndex === questions.length - 1;
   const isFlagged = flaggedSet.has(q.id);
   const secondsLeft = session.secondsLeft ?? examSeconds;
@@ -527,17 +531,18 @@ function TakeExamPage() {
         <div className={PRACTICE_HEADER_INNER}>
           <div className="flex min-w-0 items-center gap-3">
             <h1 className="truncate font-display text-base font-bold">
-              {exam?.title ?? "Mock Exam"}
+              {exam?.title ?? (examTrack === "wiso" ? "Probeprüfung" : "Mock Exam")}
             </h1>
             <span
               className={`hidden rounded-full border px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest sm:inline ${meta.badgeClass}`}
             >
-              {meta.label}
+              {subjectName}
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span className="text-sm text-muted-foreground tabular-nums">
-              Question {session.currentIndex + 1} / {questions.length}
+              {examTrack === "wiso" ? "Aufgabe" : "Question"}{" "}
+              {session.currentIndex + 1} / {questions.length}
             </span>
             {session.timed && (
               <span
@@ -587,7 +592,7 @@ function TakeExamPage() {
               onClick={() => setAnnotationMode(false)}
               className="inline-flex items-center gap-1 rounded border border-caramel-deep/40 px-2 py-0.5 font-semibold hover:bg-caramel-deep/15"
             >
-              <X className="h-3 w-3" /> Exit
+              <X className="h-3 w-3" /> {examTrack === "wiso" ? "Beenden" : "Exit"}
             </button>
           </div>
         )}
@@ -599,9 +604,10 @@ function TakeExamPage() {
             <p className="font-display text-2xl font-semibold tabular-nums tracking-tight">
               {q.index}
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">{meta.label}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{subjectName}</p>
             <p className="mt-3 text-xs tabular-nums text-muted-foreground">
-              This question · {formatQuestionTime(questionSeconds)}
+              {examTrack === "wiso" ? "Diese Aufgabe" : "This question"} ·{" "}
+              {formatQuestionTime(questionSeconds)}
             </p>
             <button
               type="button"
@@ -642,7 +648,8 @@ function TakeExamPage() {
           <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm lg:hidden">
             <div className="mb-2 flex items-center justify-between gap-2">
               <span className="text-sm font-medium text-muted-foreground">
-                Q{q.index} · {meta.label} · {formatQuestionTime(questionSeconds)}
+                {examTrack === "wiso" ? "A" : "Q"}
+                {q.index} · {subjectName} · {formatQuestionTime(questionSeconds)}
               </span>
               <button
                 type="button"

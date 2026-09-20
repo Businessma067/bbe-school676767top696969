@@ -1,4 +1,4 @@
-import { SUBJECT_META, type SubjectKey } from "@/config/scoring-config";
+import { SUBJECT_META, subjectLabel, type SubjectKey } from "@/config/scoring-config";
 import { findCustomMockSubtopic, getCustomMockChapters } from "@/data/custom-mock-catalog";
 import {
   findWisoCustomMockSubtopic,
@@ -87,28 +87,35 @@ export function parseMockAttemptHandoff(raw: unknown): MockAttemptHandoff | null
   };
 }
 
-export function topicOf(q: ExamQuestion): { key: string; label: string } {
+export function topicOf(
+  q: ExamQuestion,
+  locale: "en" | "de" = "en",
+): { key: string; label: string } {
   const tag = q.subtopicTag?.trim();
   if (tag) {
     return { key: tag, label: tag.replace(/^#\s*/, "") };
   }
-  return { key: `subject:${q.subject}`, label: SUBJECT_META[q.subject].label };
+  return { key: `subject:${q.subject}`, label: subjectLabel(q.subject, locale) };
 }
 
 function parseSubtopicId(tag: string): string | null {
   return tag.trim().match(/^#\s*([A-Za-z0-9.]+)/)?.[1] ?? null;
 }
 
-export function chapterOf(q: ExamQuestion): { key: string; label: string } | null {
+export function chapterOf(
+  q: ExamQuestion,
+  locale: "en" | "de" = "en",
+): { key: string; label: string } | null {
   const tag = q.subtopicTag?.trim();
   if (!tag) return null;
   const id = parseSubtopicId(tag);
   if (!id) return null;
+  const subj = subjectLabel(q.subject, locale);
 
   if (q.subject === "german") {
     return {
       key: `${q.subject}:1`,
-      label: `${SUBJECT_META.german.label} · Texte`,
+      label: `${subj} · Texte`,
     };
   }
 
@@ -121,10 +128,9 @@ export function chapterOf(q: ExamQuestion): { key: string; label: string } | nul
         ch.heading.startsWith("Chapter ") && ch.title ? `${ch.num} ${ch.title}` : ch.heading;
       return {
         key: `${q.subject}:${ch.num}`,
-        label: `${SUBJECT_META[q.subject].label} · ${heading}`,
+        label: `${subj} · ${heading}`,
       };
     }
-    // WiSo math/econ custom mocks share subsection ids with BBE; fall back to WiSo TOC titles.
     if (q.subject === "economics" || q.subject === "math") {
       const wisoMeta = findWisoCustomMockSubtopic(q.subject, id);
       const wisoChapters = getWisoCustomMockChapters(q.subject);
@@ -134,7 +140,7 @@ export function chapterOf(q: ExamQuestion): { key: string; label: string } | nul
       if (wisoCh) {
         return {
           key: `${q.subject}:${wisoCh.num}`,
-          label: `${SUBJECT_META[q.subject].label} · ${wisoCh.heading}`,
+          label: `${subj} · ${wisoCh.heading}`,
         };
       }
     }
@@ -144,7 +150,7 @@ export function chapterOf(q: ExamQuestion): { key: string; label: string } | nul
   if (!num) return null;
   return {
     key: `${q.subject}:${num}`,
-    label: `${SUBJECT_META[q.subject].label} · ${num}`,
+    label: `${subj} · ${num}`,
   };
 }
 
@@ -204,7 +210,11 @@ function groupRows(
   }));
 }
 
-export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttemptHandoff | null) {
+export function buildExamAnalytics(
+  questions: ExamQuestion[],
+  attempt: MockAttemptHandoff | null,
+  locale: "en" | "de" = "en",
+) {
   const flagged = new Set(attempt?.flagged ?? []);
   const timeByQuestion = attempt?.timeByQuestion ?? {};
 
@@ -238,8 +248,8 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
     }));
     const statementCorrect = judgments.filter((j) => j.judgedOk).length;
     const statementCount = judgments.length;
-    const topic = topicOf(m.question);
-    const chapter = chapterOf(m.question);
+    const topic = topicOf(m.question, locale);
+    const chapter = chapterOf(m.question, locale);
     return {
       question: m.question,
       statements: m.statements,
@@ -268,7 +278,7 @@ export function buildExamAnalytics(questions: ExamQuestion[], attempt: MockAttem
   const sections = groupRows(
     tasks,
     (t) => t.question.subject,
-    (t) => SUBJECT_META[t.question.subject].label,
+    (t) => subjectLabel(t.question.subject, locale),
     (t) => SUBJECT_META[t.question.subject].color,
   ).sort(
     (a, b) => SUBJECT_ORDER.indexOf(a.key as SubjectKey) - SUBJECT_ORDER.indexOf(b.key as SubjectKey),

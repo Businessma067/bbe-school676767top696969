@@ -64,6 +64,16 @@ export const SCORING_CONFIG = {
 
 export type SubjectKey = "economics" | "math" | "english" | "german";
 
+export function subjectLabel(subject: SubjectKey, locale: "en" | "de" = "en"): string {
+  if (locale === "de") {
+    if (subject === "economics") return "Wirtschaft";
+    if (subject === "math") return "Mathematik";
+    if (subject === "german") return "Deutsch";
+    return "Englisch";
+  }
+  return SUBJECT_META[subject].label;
+}
+
 export const SUBJECT_META: Record<
   SubjectKey,
   { label: string; color: string; badgeClass: string }

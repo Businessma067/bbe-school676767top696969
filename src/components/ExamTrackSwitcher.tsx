@@ -108,10 +108,18 @@ export function ExamTrackSwitcher({ className }: { className?: string }) {
 }
 
 /** Logo / brand that always returns to the active track landing. */
-export function TrackBrandMark({ compact = false }: { compact?: boolean }) {
+export function TrackBrandMark({
+  compact = false,
+  forceTrack,
+}: {
+  compact?: boolean;
+  /** Override path-based track (e.g. WiSo custom mocks under `/mock-exams/...`). */
+  forceTrack?: ExamTrack;
+}) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { hasLite, hasFull, hasWisoFull } = useAccountNavTier();
-  const track = resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
+  const track =
+    forceTrack ?? resolveNavTrack(pathname, { hasLite, hasFull, hasWisoFull });
   const home = track === "wiso" ? "/wiso" : "/bbe";
   const label = track === "wiso" ? "WiSo · BBE School" : "BBE School";
   const mark = track === "wiso" ? "WiSo" : "BBE";

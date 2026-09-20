@@ -360,7 +360,7 @@ function CustomMockBuilderPage() {
                             )}
                             {selectedInCh > 0 && (
                               <span
-                                className={`ml-auto shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold`}
+                                className="ml-auto shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold"
                                 style={{ backgroundColor: `color-mix(in oklab, ${accent} 18%, var(--card))`, color: accent }}
                               >
                                 {selectedInCh}/{ids.length}

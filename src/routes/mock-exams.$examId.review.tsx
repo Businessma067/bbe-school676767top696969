@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { SCORING_CONFIG, SUBJECT_META } from "@/config/scoring-config";
+import { SCORING_CONFIG, subjectLabel } from "@/config/scoring-config";
 import { isCustomExamId } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
@@ -13,6 +13,7 @@ import {
 } from "@/lib/mock-exam-analytics";
 import { answersStorageKey, formatQuestionTime } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
+import { TrackBrandMark } from "@/components/ExamTrackSwitcher";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ExamResultOverview } from "@/components/mock-exam/ExamResultOverview";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -22,6 +23,7 @@ import {
   ExamSolutionOverview,
   ExamStatementText,
 } from "@/components/mock-exam/ExamQuestionContent";
+import { storeExamTrack } from "@/lib/exam-track";
 import { Check, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -81,6 +83,7 @@ function ReviewExamPage() {
       setPointsTotal(resolved.pointsTotal);
       setIsCustom(resolved.isCustom);
       setExamTrack(resolved.track);
+      storeExamTrack(resolved.track);
       setReady(true);
     })();
     return () => {
@@ -88,7 +91,11 @@ function ReviewExamPage() {
     };
   }, [examId]);
 
-  const analytics = useMemo(() => buildExamAnalytics(questions, attempt), [questions, attempt]);
+  const uiLocale = examTrack === "wiso" ? "de" : "en";
+  const analytics = useMemo(
+    () => buildExamAnalytics(questions, attempt, uiLocale),
+    [questions, attempt, uiLocale],
+  );
 
   const saved = useRef(false);
   useEffect(() => {
@@ -134,7 +141,7 @@ function ReviewExamPage() {
   if (!ready) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background text-sm text-muted-foreground">
-        Loading review…
+        {examTrack === "wiso" ? "Auswertung wird geladen…" : "Loading review…"}
       </div>
     );
   }
@@ -148,7 +155,7 @@ function ReviewExamPage() {
             to={examTrack === "wiso" ? "/wiso/mock-builder" : "/products/custom-mock-builder"}
             className="rounded-md border border-border bg-card px-4 py-2 text-sm font-semibold hover:bg-secondary"
           >
-            ← Back
+            {examTrack === "wiso" ? "← WiSo Mock-Builder" : "← Back"}
           </Link>
         ) : (
           <Link
@@ -163,11 +170,14 @@ function ReviewExamPage() {
   }
 
   const current = analytics.tasks[currentIndex] ?? null;
+  const de = examTrack === "wiso";
 
   return (
     <div className={PRACTICE_PAGE}>
       <SiteHeader
         maxWidthClassName="max-w-none"
+        left={de ? <TrackBrandMark forceTrack="wiso" /> : undefined}
+        hideTrackSwitcher={de}
         actions={
           <div className="flex flex-wrap items-center gap-2">
             <button
@@ -180,7 +190,7 @@ function ReviewExamPage() {
                   : "border-border bg-card hover:bg-secondary",
               )}
             >
-              Results
+              {de ? "Ergebnis" : "Results"}
             </button>
             <button
               type="button"
@@ -192,19 +202,27 @@ function ReviewExamPage() {
                   : "border-border bg-card hover:bg-secondary",
               )}
             >
-              Tasks
+              {de ? "Aufgaben" : "Tasks"}
             </button>
             <Link
               to={
                 isCustom
-                  ? examTrack === "wiso"
+                  ? de
                     ? "/wiso/mock-builder"
                     : "/products/custom-mock-builder"
-                  : "/mock-exams"
+                  : de
+                    ? "/wiso/mock-exams"
+                    : "/mock-exams"
               }
               className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
             >
-              {isCustom ? "← Custom Mock Builder" : "← All mock exams"}
+              {isCustom
+                ? de
+                  ? "← WiSo Mock-Builder"
+                  : "← Custom Mock Builder"
+                : de
+                  ? "← Alle Probeprüfungen"
+                  : "← All mock exams"}
             </Link>
           </div>
         }
@@ -212,8 +230,9 @@ function ReviewExamPage() {
       <main className={`${PRACTICE_BODY} flex-col py-8 sm:py-10`}>
         {!showTaskReview ? (
           <ExamResultOverview
-            examTitle={exam?.title ?? "Mock Exam"}
+            examTitle={exam?.title ?? (de ? "Probeprüfung" : "Mock Exam")}
             analytics={analytics}
+            locale={uiLocale}
             onOpenTask={(index) => {
               setCurrentIndex(index);
               setShowTaskReview(true);
@@ -225,6 +244,7 @@ function ReviewExamPage() {
             currentIndex={currentIndex}
             onNavigate={setCurrentIndex}
             onBackToResults={() => setShowTaskReview(false)}
+            locale={uiLocale}
           />
         ) : null}
       </main>
@@ -237,29 +257,33 @@ function TaskReviewWorkspace({
   currentIndex,
   onNavigate,
   onBackToResults,
+  locale = "en",
 }: {
   tasks: TaskAnalyticsRow[];
   currentIndex: number;
   onNavigate: (index: number) => void;
   onBackToResults: () => void;
+  locale?: "en" | "de";
 }) {
+  const de = locale === "de";
   const current = tasks[currentIndex]!;
   const q = current.question;
-  const sm = SUBJECT_META[q.subject];
+  const smLabel = subjectLabel(q.subject, locale);
   const rates = getWi2Rates(q.maxPoints, current.statements);
   const deltas = current.statements.map((s) => statementPointDelta(s, rates));
+  const qWord = de ? "A" : "Q";
 
   return (
     <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
       <aside className="w-full shrink-0 rounded-2xl border border-border bg-card p-4 shadow-sm lg:sticky lg:top-20 lg:w-56 xl:w-64">
         <div className="mb-3 flex items-center justify-between gap-2">
-          <h2 className="font-display text-sm font-semibold">Tasks</h2>
+          <h2 className="font-display text-sm font-semibold">{de ? "Aufgaben" : "Tasks"}</h2>
           <button
             type="button"
             onClick={onBackToResults}
             className="text-xs font-semibold text-muted-foreground hover:text-foreground"
           >
-            Results
+            {de ? "Ergebnis" : "Results"}
           </button>
         </div>
         <div className="flex flex-wrap gap-1.5">
@@ -290,20 +314,25 @@ function TaskReviewWorkspace({
           })}
         </div>
         <p className="mt-3 text-[11px] leading-snug text-muted-foreground">
-          Filled = all five judged correctly. Quiet = at least one mistake. Accent marks the open task.
+          {de
+            ? "Gefüllt = alle fünf richtig beurteilt. Leise = mindestens ein Fehler. Akzent markiert die offene Aufgabe."
+            : "Filled = all five judged correctly. Quiet = at least one mistake. Accent marks the open task."}
         </p>
       </aside>
 
       <div className="min-w-0 flex-1 space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-            <span className="font-display text-lg font-semibold tabular-nums">Q{q.index}</span>
-            <span className="text-muted-foreground">{sm.label}</span>
+            <span className="font-display text-lg font-semibold tabular-nums">
+              {qWord}
+              {q.index}
+            </span>
+            <span className="text-muted-foreground">{smLabel}</span>
             {current.topicLabel ? (
               <span className="text-muted-foreground">{current.topicLabel}</span>
             ) : null}
             <span className="tabular-nums text-muted-foreground">
-              {current.score.toFixed(1)} / {q.maxPoints.toFixed(1)} pts
+              {current.score.toFixed(1)} / {q.maxPoints.toFixed(1)} {de ? "Pkt." : "pts"}
             </span>
             <span className="tabular-nums text-muted-foreground">
               {current.accuracyPct}% · {formatQuestionTime(current.seconds)}
@@ -316,7 +345,7 @@ function TaskReviewWorkspace({
               onClick={() => onNavigate(currentIndex - 1)}
               className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary disabled:opacity-40"
             >
-              <ChevronLeft className="h-3.5 w-3.5" /> Prev
+              <ChevronLeft className="h-3.5 w-3.5" /> {de ? "Zurück" : "Prev"}
             </button>
             <button
               type="button"
@@ -324,7 +353,7 @@ function TaskReviewWorkspace({
               onClick={() => onNavigate(currentIndex + 1)}
               className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary disabled:opacity-40"
             >
-              Next <ChevronRight className="h-3.5 w-3.5" />
+              {de ? "Weiter" : "Next"} <ChevronRight className="h-3.5 w-3.5" />
             </button>
           </div>
         </div>
@@ -335,10 +364,10 @@ function TaskReviewWorkspace({
           <div className="mt-6 overflow-visible rounded-xl border border-border">
             <div className="flex items-center gap-3 border-b border-border bg-secondary/50 px-4 py-2 text-xs text-muted-foreground">
               <span className="w-6">#</span>
-              <span className="flex-1">Statement</span>
-              <span className="w-16 text-center sm:w-20">Yours</span>
-              <span className="w-16 text-center sm:w-20">Key</span>
-              <span className="w-16 text-right sm:w-20">Points</span>
+              <span className="flex-1">{de ? "Aussage" : "Statement"}</span>
+              <span className="w-16 text-center sm:w-20">{de ? "Deine" : "Yours"}</span>
+              <span className="w-16 text-center sm:w-20">{de ? "Schlüssel" : "Key"}</span>
+              <span className="w-16 text-right sm:w-20">{de ? "Punkte" : "Points"}</span>
             </div>
             {q.statements.map((s, si) => {
               const result = current.statements[si]!;
@@ -373,10 +402,10 @@ function TaskReviewWorkspace({
                       result.userMarked ? "text-foreground" : "text-muted-foreground",
                     )}
                   >
-                    {result.userMarked ? "True" : "—"}
+                    {result.userMarked ? (de ? "Richtig" : "True") : "—"}
                   </span>
                   <span className="w-16 shrink-0 text-center text-xs font-semibold sm:w-20">
-                    {result.isTrue ? "True" : "False"}
+                    {result.isTrue ? (de ? "Richtig" : "True") : de ? "Falsch" : "False"}
                   </span>
                   <span
                     className={cn(
@@ -396,9 +425,12 @@ function TaskReviewWorkspace({
       <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,28rem)] xl:w-[34rem] 2xl:w-[38rem]">
         <div className="flex flex-col rounded-2xl border border-border bg-card shadow-sm lg:h-full lg:max-h-[calc(100vh-5rem)] lg:overflow-hidden">
           <div className="border-b border-border px-5 py-3.5">
-            <p className="font-display text-sm font-semibold">Explanations · Task {q.index}</p>
+            <p className="font-display text-sm font-semibold">
+              {de ? `Erklärungen · Aufgabe ${q.index}` : `Explanations · Task ${q.index}`}
+            </p>
             <p className="mt-0.5 text-xs tabular-nums text-muted-foreground">
-              {current.statementCorrect}/{current.statementCount} correct · {formatQuestionTime(current.seconds)}
+              {current.statementCorrect}/{current.statementCount}{" "}
+              {de ? "richtig" : "correct"} · {formatQuestionTime(current.seconds)}
             </p>
           </div>
           <div className="min-h-0 flex-1 space-y-5 px-5 py-5 sm:px-7 sm:py-6 lg:overflow-y-auto lg:[scrollbar-width:thin] lg:[&::-webkit-scrollbar]:w-1.5 lg:[&::-webkit-scrollbar-thumb]:rounded-full lg:[&::-webkit-scrollbar-thumb]:bg-border">
@@ -415,7 +447,8 @@ function TaskReviewWorkspace({
                 >
                   <div className="mb-2 flex items-center justify-between gap-2">
                     <span className="text-xs font-semibold uppercase tracking-wide text-taupe">
-                      {String.fromCharCode(65 + si)} · {result.isTrue ? "True" : "False"}
+                      {String.fromCharCode(65 + si)} ·{" "}
+                      {result.isTrue ? (de ? "Richtig" : "True") : de ? "Falsch" : "False"}
                     </span>
                     <span
                       className={cn(
@@ -423,7 +456,7 @@ function TaskReviewWorkspace({
                         delta !== 0 ? "text-caramel-deep" : "text-muted-foreground",
                       )}
                     >
-                      {formatDelta(delta)} pts
+                      {formatDelta(delta)} {de ? "Pkt." : "pts"}
                     </span>
                   </div>
                   <ExamExplanationText

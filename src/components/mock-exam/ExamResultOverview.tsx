@@ -13,13 +13,141 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { SUBJECT_META } from "@/config/scoring-config";
+import { SUBJECT_META, subjectLabel, type SubjectKey } from "@/config/scoring-config";
 import type { GroupAnalytics, TaskAnalyticsRow } from "@/lib/mock-exam-analytics";
 import { buildExamAnalytics } from "@/lib/mock-exam-analytics";
 import { formatCompactDuration, formatQuestionTime } from "@/lib/mock-exam-session";
 import { cn } from "@/lib/utils";
 
 type Analytics = ReturnType<typeof buildExamAnalytics>;
+type UiLocale = "en" | "de";
+
+function overviewCopy(locale: UiLocale) {
+  if (locale === "de") {
+    return {
+      subtitle: "Zeit, Trefferquote und wi2-Punkte von der ersten bis zur letzten Aufgabe.",
+      examScore: "Prüfungsergebnis",
+      pts: "Pkt.",
+      statementAccuracy: "Aussagen-Trefferquote",
+      judgedOf: (a: number, b: number) => `${a} von ${b} richtig beurteilt`,
+      time: "Zeit",
+      timedSitting: "Mit Zeitlimit",
+      untimedSitting: "Ohne Zeitlimit",
+      medianPerQ: "Median pro Aufgabe",
+      average: "Durchschnitt",
+      marked: "bearbeitet",
+      timePerQ: "Zeit pro Aufgabe",
+      timePerQHint: (last: number, slowIdx: number, slowTime: string) =>
+        `A1 bis A${last}. Längste: A${slowIdx} (${slowTime}).`,
+      timePerQFallback: "Sekunden pro Aufgabe, in Prüfungsreihenfolge.",
+      timeNotRecorded: "Die Zeit pro Aufgabe wurde für diesen Durchgang nicht erfasst.",
+      accuracyBySubject: "Trefferquote nach Fach",
+      accuracyBySubjectHint: "Anteil richtig beurteilter Aussagen je Abschnitt.",
+      noSectionData: "Keine Abschnittsdaten.",
+      accuracyByChapter: "Trefferquote nach Kapitel",
+      noChapterData: "Keine Kapiteldaten.",
+      chapterHintOrdered: "Kapitel von schwächsten zu stärksten.",
+      chapterHintCustom: "Kapitel-Tags erscheinen bei Custom-Mock-Builder-Prüfungen.",
+      chapterEmpty: "Dieser Durchgang hat keine Kapitel-Labels — die Auswertung bleibt auf Fachebene.",
+      whatNext: "Was als Nächstes lernen",
+      whatNextTopics:
+        "Themen unter 70 % brauchen einen weiteren Durchgang. Ab 85 % sitzt es.",
+      whatNextSections:
+        "Abschnitte unter 70 % brauchen einen weiteren Durchgang. Ab 85 % sitzt es.",
+      review: "Wiederholen",
+      reviewHint: "Unter 70 % der Aussagen richtig beurteilt.",
+      watch: "Beobachten",
+      watchHint: "70–84 %. Solide, aber noch undicht.",
+      holding: "Stabil",
+      holdingHint: "85 % und mehr.",
+      emptyBand: "Nichts in diesem Band.",
+      emptyHolding: "Noch nichts bei 85 %.",
+      sections: "Abschnitte",
+      topics: "Themen",
+      chapters: "Kapitel",
+      questions: "Aufgaben",
+      questionsHint: "A–E zeigen die Beurteilung, nicht ob du „richtig“ angekreuzt hast.",
+      section: "Fach",
+      topic: "Thema",
+      statements: "Aussagen",
+      points: "Punkte",
+      accuracy: "Trefferquote",
+      flagged: "markiert",
+      name: "Name",
+      score: "Ergebnis",
+      task: "Aufgabe",
+      tasks: "Aufgaben",
+      question: "Aufgabe",
+      statementMarked: (letter: string, yours: string, key: string, delta: string) =>
+        `${letter}: markiert ${yours} · Schlüssel ${key} · ${delta} Pkt.`,
+      true: "Richtig",
+      false: "Falsch",
+      blank: "leer",
+      correct: "richtig",
+      incorrect: "falsch",
+    };
+  }
+  return {
+    subtitle: "Time, accuracy, and wi2 points from the first question to the last.",
+    examScore: "Exam score",
+    pts: "pts",
+    statementAccuracy: "Statement accuracy",
+    judgedOf: (a: number, b: number) => `${a} of ${b} judged correctly`,
+    time: "Time",
+    timedSitting: "Timed sitting",
+    untimedSitting: "Untimed sitting",
+    medianPerQ: "Median per question",
+    average: "Average",
+    marked: "marked",
+    timePerQ: "Time per question",
+    timePerQHint: (last: number, slowIdx: number, slowTime: string) =>
+      `Q1 to Q${last}. Longest: Q${slowIdx} (${slowTime}).`,
+    timePerQFallback: "Seconds spent on each question, in exam order.",
+    timeNotRecorded: "Time per question was not recorded for this sitting.",
+    accuracyBySubject: "Accuracy by subject",
+    accuracyBySubjectHint: "Share of statements judged correctly in each section.",
+    noSectionData: "No section data.",
+    accuracyByChapter: "Accuracy by chapter",
+    noChapterData: "No chapter data.",
+    chapterHintOrdered: "Chapters ordered from weakest to strongest.",
+    chapterHintCustom: "Chapter tags appear on Custom Mock Builder exams.",
+    chapterEmpty: "This sitting has no chapter labels, so the breakdown stays at subject level.",
+    whatNext: "What to study next",
+    whatNextTopics: "Topics below 70% need another pass. 85% and above are holding.",
+    whatNextSections: "Sections below 70% need another pass. 85% and above are holding.",
+    review: "Review",
+    reviewHint: "Under 70% of statements judged correctly.",
+    watch: "Watch",
+    watchHint: "70–84%. Solid enough, still leaky.",
+    holding: "Holding well",
+    holdingHint: "85% and above.",
+    emptyBand: "Nothing in this band.",
+    emptyHolding: "Nothing reached 85% yet.",
+    sections: "Sections",
+    topics: "Topics",
+    chapters: "Chapters",
+    questions: "Questions",
+    questionsHint: "A–E show judgment, not whether you ticked True.",
+    section: "Section",
+    topic: "Topic",
+    statements: "Statements",
+    points: "Points",
+    accuracy: "Accuracy",
+    flagged: "flagged",
+    name: "Name",
+    score: "Score",
+    task: "task",
+    tasks: "tasks",
+    question: "Question",
+    statementMarked: (letter: string, yours: string, key: string, delta: string) =>
+      `${letter}: marked ${yours} · key ${key} · ${delta} pts`,
+    true: "True",
+    false: "False",
+    blank: "blank",
+    correct: "correct",
+    incorrect: "incorrect",
+  };
+}
 
 const STROKE = "var(--color-caramel-deep)";
 const MUTED = "var(--muted-foreground)";
@@ -119,9 +247,11 @@ function ChartFrame({
 function GroupTable({
   title,
   rows,
+  copy,
 }: {
   title: string;
   rows: GroupAnalytics[];
+  copy: ReturnType<typeof overviewCopy>;
 }) {
   if (rows.length === 0) return null;
 
@@ -134,11 +264,11 @@ function GroupTable({
         <table className="w-full min-w-[36rem] text-left text-sm">
           <thead>
             <tr className="border-b border-border text-muted-foreground">
-              <th className="px-5 py-2.5 font-medium sm:px-6">Name</th>
-              <th className="px-3 py-2.5 text-right font-medium">Score</th>
-              <th className="px-3 py-2.5 text-right font-medium">Accuracy</th>
-              <th className="hidden px-3 py-2.5 text-right font-medium sm:table-cell">Statements</th>
-              <th className="px-5 py-2.5 text-right font-medium sm:px-6">Time</th>
+              <th className="px-5 py-2.5 font-medium sm:px-6">{copy.name}</th>
+              <th className="px-3 py-2.5 text-right font-medium">{copy.score}</th>
+              <th className="px-3 py-2.5 text-right font-medium">{copy.accuracy}</th>
+              <th className="hidden px-3 py-2.5 text-right font-medium sm:table-cell">{copy.statements}</th>
+              <th className="px-5 py-2.5 text-right font-medium sm:px-6">{copy.time}</th>
             </tr>
           </thead>
           <tbody>
@@ -153,7 +283,7 @@ function GroupTable({
                     <div className="min-w-0">
                       <p className="truncate font-medium">{row.label}</p>
                       <p className="mt-0.5 text-xs text-muted-foreground">
-                        {row.taskCount} {row.taskCount === 1 ? "task" : "tasks"}
+                        {row.taskCount} {row.taskCount === 1 ? copy.task : copy.tasks}
                       </p>
                     </div>
                   </div>
@@ -185,13 +315,24 @@ function GroupTable({
   );
 }
 
-function StatementCells({ task }: { task: TaskAnalyticsRow }) {
+function StatementCells({
+  task,
+  copy,
+}: {
+  task: TaskAnalyticsRow;
+  copy: ReturnType<typeof overviewCopy>;
+}) {
   return (
     <div className="flex items-center gap-1">
       {task.judgments.map((j) => (
         <span
           key={j.letter}
-          title={`${j.letter}: marked ${j.userMarked ? "True" : "blank"} · key ${j.isTrue ? "True" : "False"} · ${formatDelta(j.delta)} pts`}
+          title={copy.statementMarked(
+            j.letter,
+            j.userMarked ? copy.true : copy.blank,
+            j.isTrue ? copy.true : copy.false,
+            formatDelta(j.delta),
+          )}
           className={cn(
             "grid h-7 w-7 place-items-center rounded-md text-[11px] font-semibold",
             j.judgedOk
@@ -200,7 +341,7 @@ function StatementCells({ task }: { task: TaskAnalyticsRow }) {
           )}
         >
           {j.letter}
-          <span className="sr-only">{j.judgedOk ? "correct" : "incorrect"}</span>
+          <span className="sr-only">{j.judgedOk ? copy.correct : copy.incorrect}</span>
         </span>
       ))}
     </div>
@@ -247,15 +388,19 @@ function FocusList({
 function TimeTooltip({
   active,
   payload,
+  questionWord = "Question",
 }: {
   active?: boolean;
   payload?: Array<{ payload: { q: number; seconds: number; subject: string; accuracy: number } }>;
+  questionWord?: string;
 }) {
   if (!active || !payload?.[0]) return null;
   const row = payload[0].payload;
   return (
     <div className="rounded-xl border border-border bg-popover px-3 py-2 text-xs shadow-md">
-      <p className="font-medium">Question {row.q}</p>
+      <p className="font-medium">
+        {questionWord} {row.q}
+      </p>
       <p className="mt-0.5 text-muted-foreground">
         {row.subject} · {formatQuestionTime(row.seconds)} · {row.accuracy}%
       </p>
@@ -267,11 +412,14 @@ export function ExamResultOverview({
   examTitle,
   analytics,
   onOpenTask,
+  locale = "en",
 }: {
   examTitle: string;
   analytics: Analytics;
   onOpenTask: (index: number) => void;
+  locale?: UiLocale;
 }) {
+  const copy = overviewCopy(locale);
   const {
     pct,
     total,
@@ -299,11 +447,11 @@ export function ExamResultOverview({
       tasks.map((t) => ({
         q: t.question.index,
         seconds: t.seconds,
-        subject: SUBJECT_META[t.question.subject].label,
+        subject: subjectLabel(t.question.subject as SubjectKey, locale),
         color: SUBJECT_META[t.question.subject].color,
         accuracy: t.accuracyPct,
       })),
-    [tasks],
+    [tasks, locale],
   );
 
   const slowest = useMemo(() => {
@@ -345,7 +493,7 @@ export function ExamResultOverview({
           {examTitle}
         </h1>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Time, accuracy, and wi2 points from the first question to the last.
+          {copy.subtitle}
         </p>
       </header>
 
@@ -353,39 +501,43 @@ export function ExamResultOverview({
         <div className="grid divide-y divide-border sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x">
           <Stat
             value={`${pct}%`}
-            label="Exam score"
-            hint={`${total.toFixed(1)} / ${pointsTotal.toFixed(1)} pts`}
+            label={copy.examScore}
+            hint={`${total.toFixed(1)} / ${pointsTotal.toFixed(1)} ${copy.pts}`}
           />
           <Stat
             value={`${statementPct}%`}
-            label="Statement accuracy"
-            hint={`${statementCorrect} of ${statementCount} judged correctly`}
+            label={copy.statementAccuracy}
+            hint={copy.judgedOf(statementCorrect, statementCount)}
           />
           <Stat
             value={secondsTaken != null ? formatCompactDuration(secondsTaken) : "—"}
-            label="Time"
-            hint={timed ? "Timed sitting" : "Untimed sitting"}
+            label={copy.time}
+            hint={timed ? copy.timedSitting : copy.untimedSitting}
           />
           <Stat
             value={formatQuestionTime(medianSeconds)}
-            label="Median per question"
-            hint={`Average ${formatQuestionTime(meanSeconds)} · ${answeredTasks}/${tasks.length} marked`}
+            label={copy.medianPerQ}
+            hint={`${copy.average} ${formatQuestionTime(meanSeconds)} · ${answeredTasks}/${tasks.length} ${copy.marked}`}
           />
         </div>
       </section>
 
       <ChartFrame
-        title="Time per question"
+        title={copy.timePerQ}
         hint={
           slowest
-            ? `Q1 to Q${tasks.at(-1)?.question.index ?? tasks.length}. Longest: Q${slowest.question.index} (${formatQuestionTime(slowest.seconds)}).`
-            : "Seconds spent on each question, in exam order."
+            ? copy.timePerQHint(
+                tasks.at(-1)?.question.index ?? tasks.length,
+                slowest.question.index,
+                formatQuestionTime(slowest.seconds),
+              )
+            : copy.timePerQFallback
         }
         tall
       >
         {timeSeries.every((d) => d.seconds === 0) ? (
           <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
-            Time per question was not recorded for this sitting.
+            {copy.timeNotRecorded}
           </div>
         ) : (
           <ResponsiveContainer width="100%" height="100%" debounce={80}>
@@ -413,7 +565,7 @@ export function ExamResultOverview({
                 domain={[0, (max: number) => Math.max(max * 1.08, 8)]}
               />
               <Tooltip
-                content={<TimeTooltip />}
+                content={<TimeTooltip questionWord={copy.question} />}
                 cursor={{ stroke: GRID, strokeWidth: 1 }}
               />
               <Area
@@ -432,10 +584,10 @@ export function ExamResultOverview({
       </ChartFrame>
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <ChartFrame title="Accuracy by subject" hint="Share of statements judged correctly in each section.">
+        <ChartFrame title={copy.accuracyBySubject} hint={copy.accuracyBySubjectHint}>
           {subjectPie.length === 0 ? (
             <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
-              No section data.
+              {copy.noSectionData}
             </div>
           ) : (
             <div className="flex h-full flex-col items-center gap-4 sm:flex-row sm:items-center">
@@ -463,7 +615,10 @@ export function ExamResultOverview({
                     formatter={(_value, name, item) => {
                       const row = item?.payload as { accuracy: number; earned: number; max: number } | undefined;
                       return row
-                        ? [`${row.accuracy}% · ${row.earned.toFixed(1)} / ${row.max.toFixed(1)} pts`, String(name)]
+                        ? [
+                            `${row.accuracy}% · ${row.earned.toFixed(1)} / ${row.max.toFixed(1)} ${copy.pts}`,
+                            String(name),
+                          ]
                         : ["", String(name)];
                     }}
                   />
@@ -491,16 +646,12 @@ export function ExamResultOverview({
         </ChartFrame>
 
         <ChartFrame
-          title="Accuracy by chapter"
-          hint={
-            chapterBars.length
-              ? "Chapters ordered from weakest to strongest."
-              : "Chapter tags appear on Custom Mock Builder exams."
-          }
+          title={copy.accuracyByChapter}
+          hint={chapterBars.length ? copy.chapterHintOrdered : copy.chapterHintCustom}
         >
           {chapterBars.length === 0 ? (
             <div className="flex h-full items-center justify-center px-6 text-center text-sm text-muted-foreground">
-              This sitting has no chapter labels, so the breakdown stays at subject level.
+              {copy.chapterEmpty}
             </div>
           ) : (
             <ResponsiveContainer width="100%" height="100%" debounce={80}>
@@ -528,7 +679,7 @@ export function ExamResultOverview({
                 />
                 <Tooltip
                   contentStyle={tipStyle()}
-                  formatter={(value) => [`${value}%`, "Accuracy"]}
+                  formatter={(value) => [`${value}%`, copy.accuracy]}
                 />
                 <Bar dataKey="accuracy" radius={[0, 4, 4, 0]} maxBarSize={18} isAnimationActive={false}>
                   {chapterBars.map((row) => (
@@ -543,62 +694,58 @@ export function ExamResultOverview({
 
       <section>
         <div className="mb-4">
-          <h2 className="font-display text-xl font-semibold tracking-tight">What to study next</h2>
+          <h2 className="font-display text-xl font-semibold tracking-tight">{copy.whatNext}</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            {hasTopicBreakdown
-              ? "Topics below 70% need another pass. 85% and above are holding."
-              : "Sections below 70% need another pass. 85% and above are holding."}
+            {hasTopicBreakdown ? copy.whatNextTopics : copy.whatNextSections}
           </p>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
           <FocusList
-            title="Review"
-            hint="Under 70% of statements judged correctly."
+            title={copy.review}
+            hint={copy.reviewHint}
             rows={toReview}
-            empty="Nothing in this band."
+            empty={copy.emptyBand}
           />
           <FocusList
-            title="Watch"
-            hint="70–84%. Solid enough, still leaky."
+            title={copy.watch}
+            hint={copy.watchHint}
             rows={watch}
-            empty="Nothing in this band."
+            empty={copy.emptyBand}
           />
           <FocusList
-            title="Holding well"
-            hint="85% and above."
+            title={copy.holding}
+            hint={copy.holdingHint}
             rows={holdingWell}
-            empty="Nothing reached 85% yet."
+            empty={copy.emptyHolding}
           />
         </div>
       </section>
 
-      <GroupTable title="Sections" rows={sections} />
-      {hasTopicBreakdown ? <GroupTable title="Topics" rows={topics} /> : null}
-      {chapters.length > 0 ? <GroupTable title="Chapters" rows={chapters} /> : null}
+      <GroupTable title={copy.sections} rows={sections} copy={copy} />
+      {hasTopicBreakdown ? <GroupTable title={copy.topics} rows={topics} copy={copy} /> : null}
+      {chapters.length > 0 ? <GroupTable title={copy.chapters} rows={chapters} copy={copy} /> : null}
 
       <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border px-5 py-4 sm:px-6">
-          <h2 className="font-display text-xl font-semibold tracking-tight">Questions</h2>
-          <p className="text-xs text-muted-foreground">
-            A–E show judgment, not whether you ticked True.
-          </p>
+          <h2 className="font-display text-xl font-semibold tracking-tight">{copy.questions}</h2>
+          <p className="text-xs text-muted-foreground">{copy.questionsHint}</p>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[44rem] text-left text-sm">
             <thead>
               <tr className="border-b border-border text-muted-foreground">
-                <th className="px-5 py-2.5 font-medium sm:px-6">Q</th>
-                <th className="px-3 py-2.5 font-medium">Section</th>
-                {hasTopicBreakdown ? <th className="px-3 py-2.5 font-medium">Topic</th> : null}
-                <th className="px-3 py-2.5 font-medium">Statements</th>
-                <th className="px-3 py-2.5 text-right font-medium">Points</th>
-                <th className="px-3 py-2.5 text-right font-medium">Accuracy</th>
-                <th className="px-5 py-2.5 text-right font-medium sm:px-6">Time</th>
+                <th className="px-5 py-2.5 font-medium sm:px-6">{locale === "de" ? "A" : "Q"}</th>
+                <th className="px-3 py-2.5 font-medium">{copy.section}</th>
+                {hasTopicBreakdown ? <th className="px-3 py-2.5 font-medium">{copy.topic}</th> : null}
+                <th className="px-3 py-2.5 font-medium">{copy.statements}</th>
+                <th className="px-3 py-2.5 text-right font-medium">{copy.points}</th>
+                <th className="px-3 py-2.5 text-right font-medium">{copy.accuracy}</th>
+                <th className="px-5 py-2.5 text-right font-medium sm:px-6">{copy.time}</th>
               </tr>
             </thead>
             <tbody>
               {tasks.map((task, index) => {
-                const sm = SUBJECT_META[task.question.subject];
+                const smLabel = subjectLabel(task.question.subject as SubjectKey, locale);
                 return (
                   <tr key={task.question.id} className="border-b border-border last:border-b-0">
                     <td className="px-5 py-3.5 sm:px-6">
@@ -609,18 +756,18 @@ export function ExamResultOverview({
                       >
                         {task.question.index}
                         {task.flagged ? (
-                          <span className="ml-1.5 text-xs text-muted-foreground">flagged</span>
+                          <span className="ml-1.5 text-xs text-muted-foreground">{copy.flagged}</span>
                         ) : null}
                       </button>
                     </td>
-                    <td className="px-3 py-3.5 text-muted-foreground">{sm.label}</td>
+                    <td className="px-3 py-3.5 text-muted-foreground">{smLabel}</td>
                     {hasTopicBreakdown ? (
                       <td className="max-w-[14rem] truncate px-3 py-3.5 text-muted-foreground">
                         {task.topicLabel}
                       </td>
                     ) : null}
                     <td className="px-3 py-3.5">
-                      <StatementCells task={task} />
+                      <StatementCells task={task} copy={copy} />
                     </td>
                     <td className="px-3 py-3.5 text-right tabular-nums">
                       {task.score.toFixed(1)}

@@ -11,6 +11,7 @@ type Props = {
   onJump: (index: number) => void;
   onSubmit: () => void;
   onBack: () => void;
+  locale?: "en" | "de";
 };
 
 export function ExamReviewScreen({
@@ -21,7 +22,9 @@ export function ExamReviewScreen({
   onJump,
   onSubmit,
   onBack,
+  locale = "en",
 }: Props) {
+  const de = locale === "de";
   const totalQuestions = questions.length;
   const totalStatements = totalQuestions * 5;
   const answeredQuestions = questions.filter((q) => isQuestionAnswered(answers[q.id]));
@@ -31,22 +34,36 @@ export function ExamReviewScreen({
   return (
     <div className={`${PRACTICE_BODY} flex-col py-10`}>
       <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-        Review before submission
+        {de ? "Prüfen vor dem Abgeben" : "Review before submission"}
       </h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        Check unanswered and flagged items.{" "}
+        {de
+          ? "Offene und markierte Aufgaben noch einmal prüfen. "
+          : "Check unanswered and flagged items. "}
         {usesAnswerSheet
-          ? "Submission uses your Answer Sheet marks only."
-          : "Submission uses the marks you selected next to each statement. Correct answers are revealed after you submit."}
+          ? de
+            ? "Beim Abgeben zählen nur die Markierungen auf dem Antwortbogen."
+            : "Submission uses your Answer Sheet marks only."
+          : de
+            ? "Beim Abgeben zählen die Markierungen neben den Aussagen. Die richtigen Antworten erscheinen erst danach."
+            : "Submission uses the marks you selected next to each statement. Correct answers are revealed after you submit."}
       </p>
 
       <div className="mt-8 grid gap-3 sm:grid-cols-2">
-        <Stat label="Total questions" value={String(totalQuestions)} />
-        <Stat label="Total statements" value={String(totalStatements)} />
-        <Stat label="Answered questions" value={String(answeredQuestions.length)} accent />
-        <Stat label="Unanswered questions" value={String(unansweredQuestions.length)} warn={unansweredQuestions.length > 0} />
+        <Stat label={de ? "Aufgaben gesamt" : "Total questions"} value={String(totalQuestions)} />
+        <Stat label={de ? "Aussagen gesamt" : "Total statements"} value={String(totalStatements)} />
         <Stat
-          label="Flagged questions"
+          label={de ? "Beantwortete Aufgaben" : "Answered questions"}
+          value={String(answeredQuestions.length)}
+          accent
+        />
+        <Stat
+          label={de ? "Offene Aufgaben" : "Unanswered questions"}
+          value={String(unansweredQuestions.length)}
+          warn={unansweredQuestions.length > 0}
+        />
+        <Stat
+          label={de ? "Markierte Aufgaben" : "Flagged questions"}
           value={String(flaggedQuestions.length)}
           className="sm:col-span-2"
         />
@@ -54,18 +71,20 @@ export function ExamReviewScreen({
 
       {unansweredQuestions.length > 0 && (
         <JumpList
-          title="Unanswered"
+          title={de ? "Offen" : "Unanswered"}
           items={unansweredQuestions}
           onJump={onJump}
+          questionPrefix={de ? "A" : "Q"}
         />
       )}
 
       {flaggedQuestions.length > 0 && (
         <JumpList
-          title="Flagged for review"
+          title={de ? "Zur Prüfung markiert" : "Flagged for review"}
           items={flaggedQuestions}
           onJump={onJump}
           flagged
+          questionPrefix={de ? "A" : "Q"}
         />
       )}
 
@@ -75,14 +94,14 @@ export function ExamReviewScreen({
           onClick={onBack}
           className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-all hover:bg-secondary"
         >
-          Continue exam
+          {de ? "Weiter prüfen" : "Continue exam"}
         </button>
         <button
           type="button"
           onClick={onSubmit}
           className="rounded-md bg-caramel-deep px-5 py-2.5 text-sm font-semibold text-white transition-all hover:brightness-110"
         >
-          Submit exam
+          {de ? "Prüfung abgeben" : "Submit exam"}
         </button>
       </div>
     </div>
@@ -121,11 +140,13 @@ function JumpList({
   items,
   onJump,
   flagged,
+  questionPrefix = "Q",
 }: {
   title: string;
   items: ExamQuestion[];
   onJump: (index: number) => void;
   flagged?: boolean;
+  questionPrefix?: string;
 }) {
   return (
     <div className="mt-8">
@@ -139,7 +160,8 @@ function JumpList({
             className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-sm font-semibold transition-colors hover:bg-secondary"
           >
             {flagged && <Flag className="h-3 w-3 text-orange-600 dark:text-orange-300" aria-hidden />}
-            Q{q.index}
+            {questionPrefix}
+            {q.index}
           </button>
         ))}
       </div>
