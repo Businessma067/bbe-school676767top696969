@@ -1,6 +1,6 @@
 /** Client-safe catalog of paid products and their prices. */
 
-export type PaidProductSlug = "full-course" | "lite-bbe-course" | "wiso-full-course";
+export type PaidProductSlug = "full-course" | "wiso-full-course";
 
 /** ISO 4217 numeric code for EUR (Monobank `ccy`). */
 export const MONOBANK_CURRENCY_EUR = 978;
@@ -23,7 +23,7 @@ export const MONOBANK_TEST_CHARGE = {
 export type PaidProduct = {
   slug: PaidProductSlug;
   name: string;
-  tier: "lite" | "full";
+  tier: "full";
   /** Charged amount in euros (Monobank invoice uses EUR minor units). */
   priceEur: number;
   href: string;
@@ -36,13 +36,6 @@ export const PAID_PRODUCTS: Record<PaidProductSlug, PaidProduct> = {
     tier: "full",
     priceEur: 449,
     href: "/products/full-course-subjects",
-  },
-  "lite-bbe-course": {
-    slug: "lite-bbe-course",
-    name: "Lite BBE Course",
-    tier: "lite",
-    priceEur: 279,
-    href: "/products/lite-bbe-course-subjects",
   },
   "wiso-full-course": {
     slug: "wiso-full-course",
@@ -79,7 +72,7 @@ export function promoAppliesToProduct(
 export type HardcodedDiscountPromo = {
   code: string;
   discountPct: number;
-  /** `full-course` | `lite-bbe-course` | `wiso-full-course` | `any-paid` */
+  /** `full-course` | `wiso-full-course` | `any-paid` */
   productSlug: PromoProductScope;
   name: string;
   expiresAt: string | null;

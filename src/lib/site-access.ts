@@ -39,9 +39,6 @@ export const PAID_SITE_PATH_PREFIXES = [
   "/practice",
   "/products/custom-mock-builder",
   "/wiso/mock-builder",
-  "/products/lite-bbe-course-subjects",
-  "/products/lite-bbe-course-math",
-  "/products/lite-bbe-course-english",
   ...FULL_COURSE_PATH_PREFIXES,
 ] as const;
 

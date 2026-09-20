@@ -443,11 +443,9 @@ function CoursesTab({
                 to={
                   slug === "demo-practice"
                     ? "/products/demo-practice"
-                    : slug === "lite-bbe-course"
-                      ? "/products/lite-bbe-course"
-                      : slug === "wiso-full-course"
-                        ? "/wiso/products/full-course"
-                        : "/products/full-course"
+                    : slug === "wiso-full-course"
+                      ? "/wiso/products/full-course"
+                      : "/products/full-course"
                 }
                 className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
               >

@@ -39,7 +39,6 @@ export const LOCALIZABLE_PATHS = [
   "/products",
   "/products/demo-practice",
   "/products/full-course",
-  "/products/lite-bbe-course",
   "/demo-practice",
   "/login",
   "/signup",
@@ -102,10 +101,6 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/wiso/products/full-course-math",
   "/wiso/products/full-course-economics",
   "/wiso/products/full-course-german",
-  "/products/lite-bbe-course-subjects",
-  "/products/lite-bbe-course-math",
-  "/products/lite-bbe-course-english",
-  "/products/lite-bbe-course-economics",
   "/products/custom-mock-builder",
   "/wiso/mock-builder",
   "/mock-exams",
@@ -119,7 +114,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/demo-practice",
 ] as const;
 
-/** True for full/lite course study, games, mock builder, and mock exams. */
+/** True for full course study, games, mock builder, and mock exams. */
 export function isStudyContentPath(pathname: string): boolean {
   const path = stripLocalePrefix(pathname);
   return STUDY_CONTENT_PATH_PREFIXES.some(

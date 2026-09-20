@@ -1,11 +1,10 @@
 import { Check, X } from "lucide-react";
 
-type ColKey = "free" | "lite" | "full";
+type ColKey = "free" | "full";
 
 type ComparisonCell = {
   label: string;
   free: string;
-  lite: string;
   full: string;
 };
 
@@ -18,32 +17,31 @@ const comparisonSections: ComparisonSection[] = [
   {
     title: "Features",
     rows: [
-      { label: "Math Tasks", free: "50", lite: "550", full: "800+" },
-      { label: "Economics Tasks", free: "35", lite: "375", full: "500+" },
-      { label: "English Tasks", free: "10", lite: "150", full: "240+" },
-      { label: "Textbook Theory", free: "❌", lite: "Crucial materials", full: "Full materials" },
-      { label: "Answer Sheet Simulator", free: "❌", lite: "❌", full: "tick" },
-      { label: "Interactive Speed Simulators", free: "❌", lite: "❌", full: "tick" },
-      { label: "Mock Exams", free: "❌", lite: "2", full: "7+ exams with answer sheets" },
+      { label: "Math Tasks", free: "50", full: "800+" },
+      { label: "Economics Tasks", free: "35", full: "500+" },
+      { label: "English Tasks", free: "10", full: "240+" },
+      { label: "Textbook Theory", free: "❌", full: "Full materials" },
+      { label: "Answer Sheet Simulator", free: "❌", full: "tick" },
+      { label: "Interactive Speed Simulators", free: "❌", full: "tick" },
+      { label: "Mock Exams", free: "❌", full: "7+ exams with answer sheets" },
     ],
   },
   {
     title: "Insider Guide",
     rows: [
-      { label: "Step by step explanations", free: "tick", lite: "tick", full: "tick" },
-      { label: "AI Study Assistant", free: "❌", lite: "❌", full: "tick" },
-      { label: "Tactical Trap Callouts", free: "❌", lite: "❌", full: "tick" },
-      { label: "Dynamic Focus Heatmap", free: "❌", lite: "tick", full: "tick" },
-      { label: "Support Chat", free: "❌", lite: "tick", full: "tick" },
-      { label: "Achievements & Medals Tab", free: "❌", lite: "tick", full: "tick" },
-      { label: "OSA Guide", free: "❌", lite: "❌", full: "tick" },
+      { label: "Step by step explanations", free: "tick", full: "tick" },
+      { label: "AI Study Assistant", free: "❌", full: "tick" },
+      { label: "Tactical Trap Callouts", free: "❌", full: "tick" },
+      { label: "Dynamic Focus Heatmap", free: "❌", full: "tick" },
+      { label: "Support Chat", free: "❌", full: "tick" },
+      { label: "Achievements & Medals Tab", free: "❌", full: "tick" },
+      { label: "OSA Guide", free: "❌", full: "tick" },
     ],
   },
 ];
 
 const columns: { key: ColKey; label: string }[] = [
   { key: "free", label: "Free Sample" },
-  { key: "lite", label: "BBE Lite Practice" },
   { key: "full", label: "BBE Full Course" },
 ];
 
@@ -83,7 +81,7 @@ export function CompareTable({
 
         {/* Desktop table */}
         <div className="hidden overflow-x-auto rounded-2xl border border-border bg-background sm:block">
-          <table className="w-full min-w-[620px] border-collapse text-[11px]">
+          <table className="w-full min-w-[480px] border-collapse text-[11px]">
             <thead>
               <tr className="border-b border-border bg-muted/50">
                 <th className="sticky left-0 z-10 w-[170px] bg-muted px-2.5 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
@@ -110,7 +108,7 @@ export function CompareTable({
                 <>
                   <tr key={section.title} className="border-t border-border">
                     <td
-                      colSpan={4}
+                      colSpan={3}
                       className="sticky left-0 z-10 bg-background px-2.5 py-1 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-caramel-deep"
                     >
                       {section.title}
@@ -142,7 +140,7 @@ export function CompareTable({
                   ))}
                   {sectionIdx < comparisonSections.length - 1 && (
                     <tr className="border-t border-border">
-                      <td colSpan={4} className="h-1 bg-background" />
+                      <td colSpan={3} className="h-1 bg-background" />
                     </tr>
                   )}
                 </>
@@ -154,7 +152,7 @@ export function CompareTable({
         {/* Mobile unified table */}
         <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-0 w-full border-collapse text-[10px]">
+            <table className="w-full min-w-0 border-collapse text-[10px]">
               <thead>
                 <tr className="border-b border-border bg-muted/50">
                   <th className="sticky left-0 z-10 w-[120px] bg-muted px-2 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
@@ -181,7 +179,7 @@ export function CompareTable({
                   <>
                     <tr key={section.title} className="border-t border-border">
                       <td
-                        colSpan={4}
+                        colSpan={3}
                         className="sticky left-0 z-10 bg-background px-2 py-1 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-caramel-deep"
                       >
                         {section.title}
@@ -213,7 +211,7 @@ export function CompareTable({
                     ))}
                     {sectionIdx < comparisonSections.length - 1 && (
                       <tr className="border-t border-border">
-                        <td colSpan={4} className="h-1 bg-background" />
+                        <td colSpan={3} className="h-1 bg-background" />
                       </tr>
                     )}
                   </>

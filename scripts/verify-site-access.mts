@@ -37,7 +37,6 @@ for (const [path, expected] of [
   ["/demo-practice/math", false],
   ["/products/demo-practice", false],
   ["/products/full-course", false],
-  ["/products/lite-bbe-course", false],
   ["/flashcards", true],
   ["/flashcards/math", true],
   ["/matching/economics", true],
@@ -46,7 +45,6 @@ for (const [path, expected] of [
   ["/practice", true],
   ["/dashboard", false],
   ["/products/full-course-math", true],
-  ["/products/lite-bbe-course-english", true],
   ["/products/custom-mock-builder", true],
   ["/admin", false],
   ["/login", false],
@@ -60,7 +58,6 @@ for (const [path, expected] of [
 }
 
 assert(isFullCourseProtectedPath("/products/full-course-math") === true, "full math is full-gated");
-assert(isFullCourseProtectedPath("/products/lite-bbe-course-math") === false, "lite math is not full-gated");
 assert(requiredTierForPath("/products/full-course-economics") === "full", "econ requires full");
 assert(requiredTierForPath("/flashcards") === "lite", "flashcards require lite");
 assert(requiredTierForPath("/demo-practice") === null, "demo is open");

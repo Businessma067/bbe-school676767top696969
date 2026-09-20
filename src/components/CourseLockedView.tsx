@@ -32,7 +32,6 @@ export function courseLockFeatureForPath(pathname: string): CourseLockFeature {
   if (path.startsWith("/practice")) return "practice";
   if (
     path.startsWith("/products/full-course-") ||
-    path.startsWith("/products/lite-bbe-course-") ||
     path.startsWith("/wiso/products/full-course-")
   ) {
     return "course";

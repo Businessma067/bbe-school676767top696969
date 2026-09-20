@@ -57,36 +57,6 @@ export const extraDe: Record<string, string> = {
   "Physical government-issued photo ID (original), printed exam invitation, blue/black ballpoint pen, a calculator from WU’s permitted list; snack/drink optional.":
     "Amtlicher Lichtbildausweis im Original, ausgedruckte Prüfungseinladung, blauer/schwarzer Kugelschreiber, ein Taschenrechner von der WU-Liste; Snack/Getränk optional.",
 
-  // ---------- Lite course FAQs ----------
-  "Light gives you a 500+ task set, 2 mock exams, and community support. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and extra tools such as the Duel Grid and achievement system.":
-    "Light bietet dir ein Set aus 500+ Aufgaben, 2 Probeprüfungen und Community-Support. Full Access schaltet die komplette Datenbank mit 1200+ Aufgaben, unbegrenzte Probeprüfungen, direkten 1:1-Support und Extras wie das Duel Grid und das Achievement-System frei.",
-  "Light is designed as a strong foundation builder, especially if you're starting your prep early. If you're within 6 to 8 weeks of your exam date, or want the full question bank and unlimited mock exams, Full Access is the better fit for complete exam day readiness.":
-    "Light ist als starkes Fundament gedacht, besonders wenn du früh mit der Vorbereitung beginnst. Wenn dein Prüfungstermin in 6 bis 8 Wochen ist oder du die komplette Fragendatenbank und unbegrenzte Probeprüfungen willst, passt Full Access besser.",
-  "Yes, you can upgrade anytime and pay only the price difference between Light and Full Access.":
-    "Ja, du kannst jederzeit upgraden und zahlst nur die Preisdifferenz zwischen Light und Full Access.",
-  "A working set covering every chapter and subject, chosen to represent the exam rather than a random slice.":
-    "Es ist ein Arbeitsset über alle Kapitel und Fächer, ausgewählt als Ausschnitt der Prüfung statt eines zufälligen Schnitts.",
-  "Forever. It's a single one time payment, with no subscription and no expiration on your access.":
-    "Für immer. Es ist eine einmalige Zahlung, ohne Abo und ohne Ablaufdatum.",
-  "A single one time payment of €279, no recurring charges, no subscription.":
-    "Eine einmalige Zahlung von 279 €, keine laufenden Kosten, kein Abo.",
-  "Community support, you can connect with other applicants working through the same material. Direct 1:1 support is reserved for Full Access.":
-    "Community-Support: Du kannst dich mit anderen Bewerbern austauschen, die dasselbe Material durcharbeiten. Direkter 1:1-Support ist Full Access vorbehalten.",
-  "Yes, both mock exams run under realistic timing conditions across all three subjects, so you get an accurate read on where you stand.":
-    "Ja, beide Probeprüfungen laufen unter realistischen Zeitbedingungen über alle drei Fächer, sodass du deinen echten Stand siehst.",
-  "No, the core theory coverage included in Light takes you from the basics up, so you can build your foundation from zero.":
-    "Nein, die in Light enthaltene Theorie startet bei den Grundlagen, du kannst also von null aufbauen.",
-  "Yes, the same free trial and sample question access available on Full Access applies here, so you can see the question style and platform before committing.":
-    "Ja, die gleiche kostenlose Testversion und der Zugang zu Beispielfragen wie bei Full Access gelten auch hier, du siehst Fragenstil und Plattform vor dem Kauf.",
-  "Everything carries over. Your completed tasks, mock exam history, and account progress stay exactly as they are when you move to Full Access.":
-    "Alles bleibt erhalten. Gelöste Aufgaben, Probeprüfungs-Historie und Fortschritt bleiben beim Wechsel zu Full Access genau so bestehen.",
-  "Yes, the platform is fully responsive and works across desktop, tablet, and mobile.":
-    "Ja, die Plattform ist vollständig responsiv und funktioniert auf Desktop, Tablet und Smartphone.",
-  "Yes, the curated set spans Math, English, and Business & Economics, covering core theory and exam style questions across all three.":
-    "Ja, das kuratierte Set umfasst Mathematik, Englisch sowie Wirtschaft & Betriebswirtschaft mit Kerntheorie und Fragen im Prüfungsstil.",
-  "Yes. New practice tasks are added to the question bank regularly, and your Light access includes these updates as they roll out, so your library keeps growing over time.":
-    "Ja. Neue Übungsaufgaben kommen regelmäßig dazu, und dein Light-Zugang enthält diese Updates automatisch, deine Bibliothek wächst also weiter.",
-
   // ---------- Full course FAQs ----------
   "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.":
     "Der Vollkurs schaltet 100 % der Plattform frei. Du erhältst vollen Zugriff auf die Datenbank mit 1.200+ Aufgaben in allen Fächern, Schritt-für-Schritt-Logikanalysen, den Echtzeit-KI-Lernbegleiter, Probeprüfungen, das automatische Textmarker-Tool, alle Speed-Simulatoren und den digitalen Antwortbogen-Simulator.",
@@ -246,36 +216,6 @@ export const extraUk: Record<string, string> = {
     "Жодних. Без винятків, згідно з оглядом іспиту в посібнику.",
   "Physical government-issued photo ID (original), printed exam invitation, blue/black ballpoint pen, a calculator from WU’s permitted list; snack/drink optional.":
     "Оригінал документа з фото, роздрукований запрошувальний лист, синя/чорна кулькова ручка, калькулятор із переліку WU; перекус і напій — за бажанням.",
-
-  // ---------- Lite course FAQs ----------
-  "Light gives you a 500+ task set, 2 mock exams, and community support. Full Access unlocks the complete 1200+ task bank, unlimited mock exams, direct 1:1 support, and extra tools such as the Duel Grid and achievement system.":
-    "Light дає набір із 500+ завдань, 2 пробні іспити та підтримку спільноти. Full Access відкриває повну базу з 1200+ завдань, необмежені пробні іспити, персональну підтримку 1:1 та інструменти на кшталт Duel Grid і системи досягнень.",
-  "Light is designed as a strong foundation builder, especially if you're starting your prep early. If you're within 6 to 8 weeks of your exam date, or want the full question bank and unlimited mock exams, Full Access is the better fit for complete exam day readiness.":
-    "Light створений як міцний фундамент, особливо якщо ти починаєш готуватися заздалегідь. Якщо до іспиту 6–8 тижнів або потрібна повна база й необмежені пробні іспити, краще підійде Full Access.",
-  "Yes, you can upgrade anytime and pay only the price difference between Light and Full Access.":
-    "Так, оновитися можна будь-коли, доплативши лише різницю між Light і Full Access.",
-  "A working set covering every chapter and subject, chosen to represent the exam rather than a random slice.":
-    "Це робочий набір за всіма розділами й предметами, підібраний під іспит, а не випадковий шматок.",
-  "Forever. It's a single one time payment, with no subscription and no expiration on your access.":
-    "Назавжди. Це разова оплата без підписки й без обмеження терміну доступу.",
-  "A single one time payment of €279, no recurring charges, no subscription.":
-    "Разова оплата 279 €, без регулярних списань і підписки.",
-  "Community support, you can connect with other applicants working through the same material. Direct 1:1 support is reserved for Full Access.":
-    "Підтримка спільноти: ти спілкуєшся з іншими вступниками, які проходять той самий матеріал. Персональна підтримка 1:1 доступна лише у Full Access.",
-  "Yes, both mock exams run under realistic timing conditions across all three subjects, so you get an accurate read on where you stand.":
-    "Так, обидва пробні іспити проходять у реалістичних часових умовах за всіма трьома предметами, тож ти бачиш свій справжній рівень.",
-  "No, the core theory coverage included in Light takes you from the basics up, so you can build your foundation from zero.":
-    "Ні, теорія в Light починається з основ, тож будувати базу можна з нуля.",
-  "Yes, the same free trial and sample question access available on Full Access applies here, so you can see the question style and platform before committing.":
-    "Так, тут діє та сама безкоштовна проба й доступ до зразків запитань, що й у Full Access, тож можна оцінити стиль завдань і платформу до покупки.",
-  "Everything carries over. Your completed tasks, mock exam history, and account progress stay exactly as they are when you move to Full Access.":
-    "Усе переноситься. Виконані завдання, історія пробних іспитів і прогрес залишаються незмінними після переходу на Full Access.",
-  "Yes, the platform is fully responsive and works across desktop, tablet, and mobile.":
-    "Так, платформа повністю адаптивна й працює на комп'ютері, планшеті та смартфоні.",
-  "Yes, the curated set spans Math, English, and Business & Economics, covering core theory and exam style questions across all three.":
-    "Так, добірка охоплює математику, англійську та економіку з бізнесом — базову теорію й запитання екзаменаційного стилю.",
-  "Yes. New practice tasks are added to the question bank regularly, and your Light access includes these updates as they roll out, so your library keeps growing over time.":
-    "Так. Нові завдання регулярно додаються до бази, і твій доступ Light включає ці оновлення, тож бібліотека постійно зростає.",
 
   // ---------- Full course FAQs ----------
   "The Full Course unlocks 100% of the platform. You get full access to the 1,200+ task database across all subjects, step-by-step logic breakdowns, the real-time AI Study Companion, Mock Exams, the automated text highlighter tool, all speed simulators, and the digital answer sheet simulator.":
