@@ -37,7 +37,7 @@
       "Wirtschaftliche Aktivitäten werden ausschließlich von privatwirtschaftlich geführten Unternehmen ausgeführt.",
       "Haushalte und Gemeinschaften führen wirtschaftliche Aktivitäten durch.",
       "Der öffentliche Sektor umfasst in dieser Darstellung Staat und NGOs.",
-      "Nur der Staat erstellt Güter und Dienstleistungen; Unternehmen bleiben in Abbildung 13 außen vor.",
+      "Nur der Staat erstellt Güter und Dienstleistungen; private Unternehmen spielen dabei keine Rolle.",
       "Privatwirtschaftlich geführte Unternehmen, der öffentliche Sektor sowie Haushalte und Gemeinschaften führen wirtschaftliche Aktivitäten durch."
     ],
     "answer_key": [
@@ -48,11 +48,11 @@
       true
     ],
     "tactical_explanations": [
-      "Nur Privatfirmen zu nennen, lässt zwei der drei Träger unter den Tisch fallen. Der Abschnitt zählt privatwirtschaftlich geführte Unternehmen, den öffentlichen Sektor sowie Haushalte und Gemeinschaften als diejenigen, die wirtschaftliche Aktivitäten durchführen. Staat und NGOs sitzen in dieser vereinfachten Darstellung im öffentlichen Sektor, Haushalte nicht nur am Konsumrand. Die Verengung auf ausschließlich privatwirtschaftlich geführte Unternehmen widerspricht dieser Aufzählung und der Legende von Abbildung 13.\n\nDie Aussage ist falsch.",
+      "Nur Privatfirmen zu nennen, lässt zwei der drei Träger unter den Tisch fallen. Man unterscheidet privatwirtschaftlich geführte Unternehmen, den öffentlichen Sektor sowie Haushalte und Gemeinschaften als diejenigen, die wirtschaftliche Aktivitäten durchführen. Staat und NGOs zählen zum öffentlichen Sektor, Haushalte stehen nicht nur am Konsumrand. Die Verengung auf ausschließlich privatwirtschaftlich geführte Unternehmen widerspricht dieser Dreiteilung.\n\nDie Aussage ist falsch.",
       "Haushalte stehen hier nicht bloß als Käufer am Rand der Grafik. Zusammen mit Gemeinschaften gehören sie zu den Akteuren, die wirtschaftliche Aktivitäten durchführen. Versorgen, Arbeiten, Nachfragen und gemeinschaftliches Wirtschaften sitzen damit innerhalb der Wirtschaft, nicht in einer vorgelagerten Privatsphäre außerhalb des Systems.\n\nDie Aussage ist wahr.",
       "Klammern im Text sind hier Definition, nicht Schmuck. Der öffentliche Sektor umfasst in dieser Darstellung Staat und NGOs. Später tauchen NGOs auch in der Zivilgesellschaft auf; das ändert nicht die erste Zuordnung zur vereinfachten Abbildung. Wer NGOs nur einer der beiden Listen zuschlägt und die andere streicht, überzieht den Text. Für diese Aussage reicht die ausdrückliche Klammer Staat und NGOs.\n\nDie Aussage ist wahr.",
-      "Abbildung 13 und der Fließtext führen Unternehmen als Träger wirtschaftlicher Aktivitäten, ebenso Haushalte. Der Staat allein würde Grafik und Satz verfälschen. Güter und Dienstleistungen entstehen in dieser Einbettung bei mehreren Akteursgruppen. Eine Monopolstellung des Staates als einzigem Ersteller steht nicht in der Darstellung.\n\nDie Aussage ist falsch.",
-      "Die Leitlinie der vereinfachten Darstellung ist eine Dreiteilung der Ausführenden: privatwirtschaftlich geführte Unternehmen, öffentlicher Sektor, Haushalte und Gemeinschaften. Alle drei führen Aktivitäten aus, beziehen Inputs aus der Natur und geben Outputs zurück. Der Satz gibt diese Liste vollständig wieder und lässt keinen der drei Träger weg. Genau so erklärt der Abschnitt, wer in Abbildung 13 wirtschaftet, bevor Inputs und Emissionen ins Bild kommen. Eine vierte, ungenannte Superbehörde braucht es dafür nicht. Wer nur Fabriken zählt, übersieht, dass der öffentliche Sektor und die Haushalte in derselben Grafik wirtschaften, Inputs beziehen und Outputs abgeben.\n\nDie Aussage ist wahr."
+      "Unternehmen zählen neben Haushalten und dem öffentlichen Sektor zu den Trägern wirtschaftlicher Aktivitäten. Der Staat allein erstellt nicht alle Güter und Dienstleistungen; das entsteht bei mehreren Akteursgruppen zugleich. Eine Monopolstellung des Staates als einzigem Ersteller entspricht nicht dieser Dreiteilung.\n\nDie Aussage ist falsch.",
+      "Die Leitlinie ist eine Dreiteilung der Ausführenden: privatwirtschaftlich geführte Unternehmen, öffentlicher Sektor, Haushalte und Gemeinschaften. Alle drei führen Aktivitäten aus, beziehen Inputs aus der Natur und geben Outputs zurück. Der Satz gibt diese Liste vollständig wieder und lässt keinen der drei Träger weg. Eine vierte, ungenannte Superbehörde braucht es dafür nicht. Wer nur Fabriken zählt, übersieht, dass der öffentliche Sektor und die Haushalte ebenfalls wirtschaften, Inputs beziehen und Outputs abgeben.\n\nDie Aussage ist wahr."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -64,7 +64,7 @@
     "context": "Bewerten Sie die folgenden Aussagen zu Inputs und Outputs zwischen Wirtschaft und Erdsystem:",
     "statements": [
       "Die Wirtschaft bezieht Inputs wie natürliche Ressourcen und Umweltdienstleistungen aus dem Erdsystem.",
-      "Die Bestäubung von Nahrungsmittelpflanzen ist im Text ein Beispiel für einen Output der Wirtschaft in die Natur.",
+      "Die Bestäubung von Nahrungsmittelpflanzen ist ein Beispiel für einen Output der Wirtschaft in die Natur.",
       "Klimagase und Abfall sind Beispiele für Outputs, die an das Erdsystem zurückgegeben werden.",
       "Die biophysische Sphäre bezeichnet in dieser Darstellung das Erdsystem, in das Outputs zurückfließen.",
       "Wirtschaftliche Aktivitäten entnehmen der Natur Inputs, ohne jemals Abfälle oder Emissionen zurückzugeben."
@@ -78,7 +78,7 @@
     ],
     "tactical_explanations": [
       "Der Stoffwechsel beginnt in der Natur, nicht in der Fabrikhalle. Natürliche Ressourcen und Umweltdienstleistungen kommen als Inputs aus dem Erdsystem in die Wirtschaft. Bestäubung von Nahrungsmittelpflanzen steht als Beispiel einer solchen Dienstleistung, Rohstoffe als stoffliche Entnahme. Ohne diesen Zustrom gäbe es die beschriebenen Güter und Dienstleistungen nicht in der bekannten Form. Die Pfeilrichtung ist hier Entnahme, noch nicht Rückgabe von Abfall.\n\nDie Aussage ist wahr.",
-      "Bestäubung als Output zu lesen, dreht den Pfeil um. Der Text nennt die Bestäubung von Nahrungsmittelpflanzen als Umweltdienstleistung, also als Input aus dem Erdsystem. Outputs in die andere Richtung sind Klimagase und Abfall, die an das Erdsystem zurückgehen. Wer die Biene zur Emission der Wirtschaft erklärt, verwechselt die beiden Flüsse, die Abbildung 13 gerade trennt: Hereinholen natürlicher Leistungen und Zurückgeben von Reststoffen und Klimagasen. Die Grafik trennt natürliche Ressourcen und Umweltdienstleistungen auf der Eingangsseite von Abfall, Emissionen und sonstiger Schädigung auf der Ausgangsseite; Bestäubung gehört eindeutig zur Eingangsseite.\n\nDie Aussage ist falsch.",
+      "Bestäubung als Output zu lesen, dreht den Pfeil um. Die Bestäubung von Nahrungsmittelpflanzen ist eine Umweltdienstleistung, also ein Input aus dem Erdsystem in die Wirtschaft. Outputs in die andere Richtung sind Klimagase und Abfall, die an das Erdsystem zurückgehen. Wer die Biene zur Emission der Wirtschaft erklärt, verwechselt die beiden Flüsse, die Abbildung 13 gerade trennt: Hereinholen natürlicher Leistungen und Zurückgeben von Reststoffen und Klimagasen. Die Grafik trennt natürliche Ressourcen und Umweltdienstleistungen auf der Eingangsseite von Abfall, Emissionen und sonstiger Schädigung auf der Ausgangsseite; Bestäubung gehört eindeutig zur Eingangsseite.\n\nDie Aussage ist falsch.",
       "Was die Wirtschaft nicht bindet oder speichert, kommt als Output zurück. Klimagase und Abfall nennt der Text als Beispiele, die an das Erdsystem, die biophysische Sphäre, zurückgegeben werden. Emission und Reststoff gehören zum selben Rückfluss, nicht zu den Inputs. Die Grafik ergänzt Abfall, Emissionen und sonstige Umweltschädigung als sichtbare Gegenstücke zu Ressourcen und Umweltdienstleistungen.\n\nDie Aussage ist wahr.",
       "Erdsystem und biophysische Sphäre stehen im Satz als dieselbe Zielgröße der Outputs. Die Grafik rahmt die Wirtschaft durch diese Sphäre, nicht durch einen leeren Raum. Wer die biophysische Sphäre mit dem gesellschaftlichen Umfeld vertauscht, verwechselt die beiden äußeren Schalen: Umwelt gegen Institutionen, Normen und Politik.\n\nDie Aussage ist wahr.",
       "Ein reiner Entnahmeprozess ohne Rückgabe ist in Abbildung 13 nicht vorgesehen. Abfälle, Emissionen und sonstige Umweltschädigung fließen in die Natur zurück, und alle wirtschaftlichen Aktivitäten haben Auswirkungen auf die Natur. Die Behauptung, Inputs kämen ohne jeden Output, streicht die rechte Seite der Grafik und den Kernsatz über Rückgaben an die biophysische Sphäre. Genau diese Rückgabe macht die Einbettung sichtbar.\n\nDie Aussage ist falsch."
@@ -240,7 +240,7 @@
       "Unternehmen agieren innerhalb der staatlichen Rahmenbedingungen.",
       "Unternehmen können Rahmenbedingungen nicht beeinflussen, weil Lobbying im Abschnitt ausgeschlossen wird.",
       "Selbstregulierung und Corporate-Social-Responsibility-Initiativen sind Wege, über die Unternehmen Rahmenbedingungen aktiv mitgestalten.",
-      "Lobbying ist im Text als aktive Einflussnahme von Unternehmen genannt.",
+      "Lobbying gilt als eine Form aktiver Einflussnahme von Unternehmen auf die Rahmenbedingungen.",
       "Corporate Social Responsibility ersetzt im Abschnitt vollständig alle staatlichen Gesetze."
     ],
     "answer_key": [
@@ -254,7 +254,7 @@
       "Zuerst der Rahmen, dann das Handeln darin. Unternehmen agieren innerhalb der Bedingungen, die der Staat setzt. Das schließt späteres Mitgestalten nicht aus, benennt aber die Ausgangslage: sie stehen nicht im rechtsfreien Raum. Gesetze, Regulierungen, Steuerpolitik und Umweltauflagen gelten, während dieselben Unternehmen den Rahmen zugleich aktiv zu beeinflussen versuchen. Beide Hälften hält der Abschnitt nacheinander fest. Die Reihenfolge im Text ist deshalb nicht zufällig: erst staatlicher Rahmen, dann Handeln darin, dann aktive Einflussnahme über Lobbying, Selbstregulierung und CSR.\n\nDie Aussage ist wahr.",
       "Aktiv beeinflussen sie den Rahmen trotzdem. Lobbying, Selbstregulierung und CSR-Initiativen stehen ausdrücklich als Wege dieser Einflussnahme. Lobbying auszuschließen, streicht das erste Glied dieser Dreierliste und behauptet eine Ohnmacht, die der Text gerade nicht zeichnet. Innerhalb des Rahmens zu handeln und den Rahmen zu bearbeiten, sind in dieser Darstellung kein Widerspruch.\n\nDie Aussage ist falsch.",
       "Selbstregulierung und Corporate Social Responsibility kommen direkt nach dem Lobbying. Beides sind Formen, in denen Unternehmen den Rahmen nicht nur hinnehmen, sondern mitformen. Der Text behandelt sie als reale Praxis neben staatlicher Regulierung, nicht als dekorative Fußnote und nicht als Ersatz sämtlicher Gesetze.\n\nDie Aussage ist wahr.",
-      "Lobbying steht als erstes der drei Einflussworte. Es bezeichnet die aktive Einwirkung auf Rahmenbedingungen, während Unternehmen zugleich innerhalb dieser Rahmen handeln. Beides hält der Abschnitt nebeneinander: Gebundensein und Mitgestalten. Der Satz trifft das ausdrücklich genannte Lobbying.\n\nDie Aussage ist wahr.",
+      "Lobbying bezeichnet die aktive Einwirkung von Unternehmen auf Rahmenbedingungen, während sie zugleich innerhalb dieser Rahmen handeln. Beides besteht nebeneinander: Gebundensein und Mitgestalten.\n\nDie Aussage ist wahr.",
       "CSR ergänzt staatliches Recht, ersetzt es in diesem Abschnitt nicht. Der Staat erlässt weiter Gesetze und Umweltauflagen; Unternehmen können zusätzlich Verantwortung initiieren und sich selbst Regeln geben. Vollständige Substitution staatlicher Gesetze durch Corporate Social Responsibility steht nicht im Text und würde die zentrale Rolle des Staates streichen, die unmittelbar zuvor beschrieben wird.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "1/5",
@@ -438,13 +438,13 @@
     "subsection": "2.1",
     "case_id": "WISO 2.1.16",
     "title": "Wirtschaft als gesellschaftlicher Ausdruck",
-    "context": "Bewerten Sie die folgenden Aussagen zum Fazit von Abbildung 13:",
+    "context": "Bewerten Sie die folgenden Aussagen zum Zusammenspiel von Wirtschaft, Gesellschaft und Natur:",
     "statements": [
       "Wirtschaftliche Aktivitäten beziehen Inputs aus der Natur und geben Outputs wie Abfälle und Emissionen in sie zurück.",
       "Wirtschaftliche Aktivitäten sind in soziale Institutionen, Normen und politische Regeln eingebettet.",
       "Die Wirtschaft ist ein autonomer Prozess, unabhängig von gesellschaftlichen Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit.",
-      "Abbildung 13 ist bewusst vereinfacht, verdeutlicht aber zentrale Zusammenhänge.",
-      "Nur Unternehmen führen in der sichtbaren Botschaft der Abbildung wirtschaftliche Aktivitäten aus; Haushalte und Staat bleiben außen vor."
+      "Eine vereinfachte Darstellung des Wirtschaftskreislaufs verzichtet auf viele Details, macht aber dennoch zentrale Zusammenhänge sichtbar.",
+      "Nur Unternehmen führen wirtschaftliche Aktivitäten aus; Haushalte und der Staat spielen dabei keine Rolle."
     ],
     "answer_key": [
       true,
@@ -454,11 +454,11 @@
       false
     ],
     "tactical_explanations": [
-      "Drei Sichtbarkeiten listet der Text unter der Abbildung. Die zweite lautet: wirtschaftliche Aktivitäten beziehen Inputs aus der Natur und geben Outputs, Abfälle und Emissionen, in sie zurück. Das ist der Stoffkreislauf der Grafik in einem Satz, vom Hereinholen natürlicher Ressourcen und Umweltdienstleistungen bis zur Rückgabe. Wer nur die Entnahme sieht, unterschlägt die Outputseite, die Abbildung 13 eigens zeigt.\n\nDie Aussage ist wahr.",
-      "Die dritte Sichtbarkeit betrifft Einbettung: soziale Institutionen, Normen und politische Regeln umschließen die Aktivitäten. Wirtschaft ist damit nicht nur Stoffwechsel mit der Natur, sondern auch Regelwerk der Gesellschaft. Beide Schalen gehören zur Abbildung, die biophysische und die gesellschaftliche. Der Satz gibt die soziale Einbettung in den Worten des Fazits wieder.\n\nDie Aussage ist wahr.",
-      "Kein autonomer Prozess, sondern Ausdruck gesellschaftlicher Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit: so schließt der Abschnitt. Autonomie würde genau diese Entscheidungen unsichtbar machen und die Wirtschaft aus Gesellschaft und Umwelt herauslösen. Der Satz wiederholt die vom Text verworfene Gegenposition und streicht Verteilung und Gerechtigkeit, die das Fazit ausdrücklich nennt. Ressourcennutzung, Verteilung und Gerechtigkeit sind in diesem Schlusssatz der Inhalt der Wirtschaft, nicht externe Moral, die man abkoppeln könnte, ohne das System zu verändern.\n\nDie Aussage ist falsch.",
-      "Vereinfachung und Aussagekraft stehen am Anfang nebeneinander. Die Darstellung ist bewusst vereinfacht und verdeutlicht dennoch die zentralen Zusammenhänge zwischen biophysischer Sphäre, gesellschaftlichem Umfeld und wirtschaftlichen Aktivitäten. Komplexitätsverzicht heißt hier nicht Beliebigkeit und nicht Vollständigkeit jeder Institution. Der Satz trifft beide Hälften: bewusst vereinfacht, trotzdem zentral.\n\nDie Aussage ist wahr.",
-      "Haushalte, Unternehmen und Staat führen die Aktivitäten aus, so die erste sichtbare Botschaft unter Abbildung 13. Nur Unternehmen zu nennen, streicht zwei der drei Träger und widerspricht der Legende zu Haushalten, Gemeinschaft, Privatunternehmen und öffentlichem Sektor. Die Grafik ist gerade das Bild einer Einbettung mehrerer Akteure, nicht das Organigramm einer einzigen Unternehmenswirtschaft.\n\nDie Aussage ist falsch."
+      "Der Stoffkreislauf zwischen Wirtschaft und Natur läuft in beide Richtungen: wirtschaftliche Aktivitäten beziehen Inputs aus der Natur, etwa Ressourcen und Umweltdienstleistungen, und geben Outputs wie Abfälle und Emissionen an sie zurück. Wer nur die Entnahme betrachtet, unterschlägt die Rückgabeseite.\n\nDie Aussage ist wahr.",
+      "Die zweite Einbettung betrifft die Gesellschaft: soziale Institutionen, Normen und politische Regeln umschließen die wirtschaftlichen Aktivitäten. Wirtschaft ist damit nicht nur Stoffwechsel mit der Natur, sondern auch Regelwerk der Gesellschaft. Beide Einbettungen, die biophysische und die gesellschaftliche, gehören zusammen.\n\nDie Aussage ist wahr.",
+      "Kein autonomer Prozess, sondern Ausdruck gesellschaftlicher Entscheidungen über Ressourcennutzung, Verteilung und Gerechtigkeit: so schließt der Abschnitt. Autonomie würde genau diese Entscheidungen unsichtbar machen und die Wirtschaft aus Gesellschaft und Umwelt herauslösen. Der Satz wiederholt genau die Gegenposition, die hier zurückgewiesen wird, und streicht Verteilung und Gerechtigkeit, die zum Kern des Arguments gehören. Ressourcennutzung, Verteilung und Gerechtigkeit sind in diesem Schlusssatz der Inhalt der Wirtschaft, nicht externe Moral, die man abkoppeln könnte, ohne das System zu verändern.\n\nDie Aussage ist falsch.",
+      "Vereinfachung und Aussagekraft schließen sich nicht aus. Eine bewusst vereinfachte Darstellung verzichtet auf viele Details und verdeutlicht dennoch die zentralen Zusammenhänge zwischen biophysischer Sphäre, gesellschaftlichem Umfeld und wirtschaftlichen Aktivitäten. Komplexitätsverzicht heißt hier nicht Beliebigkeit und nicht Vollständigkeit jeder Institution.\n\nDie Aussage ist wahr.",
+      "Haushalte, Unternehmen und der Staat führen gemeinsam wirtschaftliche Aktivitäten aus. Nur Unternehmen zu nennen, streicht zwei der drei Träger und widerspricht der Dreiteilung in Haushalte, Gemeinschaft, Privatunternehmen und öffentlichen Sektor. Wirtschaft ist die Einbettung mehrerer Akteure, nicht das Organigramm einer einzigen Unternehmenswirtschaft.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -618,7 +618,7 @@
       "Sharing-Modelle und langlebige Designs werden als Wege genannt, Wirtschaftswachstum weniger umweltbelastend zu gestalten.",
       "Remanufacturing, die Wiederaufbereitung gebrauchter Teile, kann Rohstoffe einsparen, Emissionen reduzieren und zugleich neue wirtschaftliche Chancen schaffen.",
       "Circular Design soll im Lehrtext Einwegprodukte fördern und steht im Gegensatz zur Idee langlebiger Produkte.",
-      "Der Reparaturbonus gehört laut Text nicht in die Nähe von Kreislaufüberlegungen, sondern ausschließlich zur linearen Entsorgungslogik."
+      "Der Reparaturbonus gehört nicht in die Nähe von Kreislaufüberlegungen, sondern ausschließlich zur linearen Entsorgungslogik."
     ],
     "answer_key": [
       true,
@@ -821,7 +821,7 @@
       "Nach diesem Konzept können Verluste in einem Bereich durch Gewinne in einem anderen ausgeglichen werden.",
       "Natürliche Ressourcen können danach prinzipiell durch menschliches Wissen oder Kapital ersetzt werden, solange die Gesamtsumme aller Kapitalarten konstant bleibt oder wächst.",
       "Humankapital meint im Lehrtext Produktionsanlagen in Fabriken, während Sachkapital für Bildung und Qualifikation steht.",
-      "Naturkapital umfasst im Text unter anderem Wälder, Bodenschätze und Biodiversität."
+      "Naturkapital umfasst unter anderem Wälder, Bodenschätze und Biodiversität als Bestandteile des ökologischen Kapitals."
     ],
     "answer_key": [
       true,
@@ -850,7 +850,7 @@
       "Diese Perspektive lehnt die Gleichsetzung oder Substituierbarkeit natürlicher Ressourcen mit anderen Kapitalformen ab.",
       "Starke Nachhaltigkeit fordert, natürliche Ökosysteme so weit wie möglich zu erhalten und zu schützen.",
       "Starke Nachhaltigkeit gilt im Lehrtext als weniger anspruchsvoll als die schwache Variante und deshalb als verzichtbar.",
-      "Obwohl sie deutlich anspruchsvoller ist, ist starke Nachhaltigkeit laut Text notwendig, um eine nachhaltige Wirtschaft zu erreichen."
+      "Obwohl sie deutlich anspruchsvoller ist, ist starke Nachhaltigkeit notwendig, um eine nachhaltige Wirtschaft innerhalb ökologischer Grenzen zu erreichen."
     ],
     "answer_key": [
       true,
@@ -1111,7 +1111,7 @@
       "Eine absolute Entkopplung ist nur in wenigen Bereichen und Staaten nachweisbar.",
       "Absolute Entkopplung ist bereits für alle Schadstoffe in allen Ländern nachgewiesen.",
       "Die empirische Evidenz ist gemischt: einige Länder haben absolute Entkopplung erzielt, die meisten lediglich relative, und manche verstärken weiterhin die Kopplung zwischen BIP und Emissionen.",
-      "Abbildung 14 zeigt, dass alle Weltregionen bereits absolute Entkopplung erreicht haben."
+      "Weltweit haben inzwischen alle Regionen absolute Entkopplung von Wirtschaftswachstum und Emissionen erreicht."
     ],
     "answer_key": [
       true,
@@ -1124,8 +1124,8 @@
       "Viele Länder, relative Form: so lautet der erste empirische Satz. Die relative Entkopplung ist also kein Einzelfall, sondern der häufigere Befund. Das erklärt, warum Fortschritt sichtbar sein kann, ohne dass die Last schon fällt. Wer aus einzelnen Erfolgsmeldungen gleich absolute Entkopplung weltweit ableitet, überspringt diese Abstufung. Der Abschnitt hält die relative Form als den breiten Stand fest.\n\nDie Aussage ist wahr.",
       "Wenige Bereiche und wenige Staaten: absolute Entkopplung bleibt empirisch die Ausnahme. Nachweisbar heißt nicht flächendeckend. Der Kontrast zu „vielen Ländern“ bei der relativen Form ist bewusst. Politik kann sich daher nicht auf die Annahme stützen, die absolute Lösung sei schon der Normalfall. Die Aussage gibt die Enge des Nachweises korrekt wieder. Der Kontrast zu vielen Ländern mit nur relativer Entkopplung macht die Ausnahme sichtbar, ohne sie zur Weltregel zu erklären. Die Seltenheit ist der empirische Befund, nicht ein bloß vorläufiges Messproblem.\n\nDie Aussage ist wahr.",
       "Alle Schadstoffe in allen Ländern wären die Maximalbehauptung, die der Text gerade nicht trägt. Absolute Entkopplung gelang für einige lokale Schadstoffe und ist bei CO2 deutlich schwieriger. Zudem ist sie nur in wenigen Bereichen und Staaten nachweisbar. Die doppelte Allaussage „alle“ und „allen“ widerspricht beiden Einschränkungen. Empirie im Abschnitt ist gemischt, nicht vollständig.\n\nDie Aussage ist falsch.",
-      "Gemischt heißt dreigeteilt: manche absolut, die meisten nur relativ, manche sogar mit verstärkter Kopplung von BIP und Emissionen. Abbildung 14 trägt genau dieses Bild. Es gibt also nicht nur zwei Körbe Erfolg und Misserfolg, sondern auch Regionen, in denen die Bindung enger wird. Die Aussage hält die drei Gruppen fest, ohne eine davon zu streichen. Wer nur Erfolgsstaaten zählt, unterschlägt die Gruppe, in der BIP und Emissionen sogar wieder enger mitlaufen.\n\nDie Aussage ist wahr.",
-      "Alle Weltregionen absolut entkoppelt: das wäre ein einheitlicher Erfolg, den Abbildung 14 nicht zeigt. Der Text sagt ausdrücklich, die Evidenz sei gemischt, die meisten hätten lediglich relative Entkopplung, manche verstärkten die Kopplung. Eine Totale über alle Regionen streicht zwei der drei Gruppen. Die Grafik illustriert Unterschiede, keine globale Vollendung der absoluten Form.\n\nDie Aussage ist falsch."
+      "Gemischt heißt dreigeteilt: manche Länder erzielen absolute Entkopplung, die meisten nur relative, manche verstärken sogar die Kopplung von BIP und Emissionen. Es gibt also nicht nur zwei Körbe Erfolg und Misserfolg, sondern auch Regionen, in denen die Bindung enger wird. Die Aussage hält die drei Gruppen fest, ohne eine davon zu streichen. Wer nur Erfolgsstaaten zählt, unterschlägt die Gruppe, in der BIP und Emissionen sogar wieder enger mitlaufen.\n\nDie Aussage ist wahr.",
+      "Alle Weltregionen absolut entkoppelt wäre ein einheitlicher Erfolg, den die Empirie nicht zeigt. Die Evidenz ist gemischt: die meisten Länder haben lediglich relative Entkopplung erreicht, manche verstärken die Kopplung sogar. Eine Totale über alle Regionen streicht zwei der drei Gruppen und behauptet eine globale Vollendung der absoluten Form, die es bislang nicht gibt.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1138,7 +1138,7 @@
     "statements": [
       "Absolute Entkopplung gelang für einige lokale Schadstoffe, etwa Schwefeldioxid oder FCKW, dank technischer Ersatzstoffe und internationaler Umweltabkommen.",
       "Bei CO2-Emissionen ist eine absolute Entkopplung deutlich schwieriger zu erreichen.",
-      "Dieselbe End-of-Pipe-Logik, die bei SO2 greift, neutralisiert CO2 laut Text bereits vollständig im großen Maßstab.",
+      "Dieselbe End-of-Pipe-Logik, die bei SO2 greift, neutralisiert CO2 bereits vollständig im großen Maßstab.",
       "Elektrifizierung von Mobilität, Logistik und Wärmeerzeugung führt zu Effizienzsteigerungen und damit zu sinkendem Energiebedarf.",
       "Der Treibhausgasausstoß in der industriellen Produktion ist nicht mehr mit dem Energieverbrauch verknüpft."
     ],
@@ -1256,7 +1256,7 @@
       "Energieeffiziente Geräte können zu mehr Nutzung führen.",
       "Effizienzgewinne senken den Gesamtverbrauch automatisch, weil billigere Energie stets weniger genutzt wird.",
       "Als Rebound-Effekt gilt, dass Effizienzgewinne zu höherem Gesamtverbrauch führen.",
-      "Ist ein Gerät effizienter, kann der Gesamtenergiebedarf laut Text nicht mehr steigen."
+      "Ist ein Gerät effizienter, kann der Gesamtenergiebedarf dadurch nicht mehr steigen."
     ],
     "answer_key": [
       true,
@@ -1313,7 +1313,7 @@
       "Einige wohlhabende Staaten, etwa die skandinavischen Länder oder das Vereinigte Königreich, haben eine partielle absolute Entkopplung von BIP und CO2-Emissionen erreicht.",
       "Selbst dort reichen die Reduktionsraten bislang nicht aus, um bis 2040 in Industrieländern bzw. bis 2050 global Netto-Null-Emissionen zu erreichen.",
       "Entkopplung ist eine Voraussetzung für langfristigen Wohlstand innerhalb ökologischer Grenzen.",
-      "Die Reduktionsraten jener Länder reichen laut Text bereits aus, um Klimaneutralität bis 2050 zu sichern.",
+      "Die Reduktionsraten jener Länder reichen bereits aus, um Klimaneutralität bis 2050 zu sichern.",
       "Partielle absolute Entkopplung bedeutet, dass der Pfad zur Klimaneutralität bereits eingehalten wird."
     ],
     "answer_key": [
@@ -1685,13 +1685,13 @@
     "subsection": "2.4",
     "case_id": "WISO 2.4.11",
     "title": "Konzentrische Kreise und Rückkopplung",
-    "context": "Bewerten Sie die folgenden Aussagen zu Abbildung 16 und zum globalen Risiko-Bereich:",
+    "context": "Der Zustand der planetaren Grenzen lässt sich mit einer Ampel-Systematik darstellen: Grün steht für den sicheren Handlungsraum, Gelb für die Risiko-Zone und Rot für die Überschreitung kritischer Schwellen. Bewerten Sie die folgenden Aussagen zum aktuellen globalen Risikostatus und zu Rückkopplungseffekten:",
     "statements": [
-      "Abbildung 16 zeigt das System als konzentrische Kreise mit Grün für den sicheren Handlungsraum, Gelb für die Risiko-Zone und Rot für die Überschreitung.",
-      "Der aktuelle Stand verdeutlicht, dass sich die Erde im globalen Risiko-Bereich befindet, weil mehrere Systeme gleichzeitig kritische Schwellen überschreiten.",
-      "Ein genanntes Rückkopplungsbeispiel verläuft vom Klimawandel über Biodiversitätsverlust und geringere CO2-Speicherung zu weiterem Temperaturanstieg.",
-      "In Abbildung 16 steht Grün für die stärkste Überschreitung und Rot für den sicheren Handlungsraum.",
-      "Gleichzeitige Überschreitungen mehrerer Systeme können Rückkopplungseffekte nicht verstärken."
+      "In dieser Ampel-Systematik markiert Grün den sicheren Handlungsraum, Gelb die Risiko-Zone und Rot die Überschreitung kritischer Schwellen.",
+      "Der aktuelle globale Befund zeigt, dass sich mehrere Systeme gleichzeitig im gelben oder roten Bereich befinden, weil mehrere kritische Schwellen zugleich überschritten werden.",
+      "Ein Beispiel für eine verstärkende Rückkopplung verläuft vom Klimawandel über Biodiversitätsverlust und geringere CO2-Speicherung zu weiterem Temperaturanstieg.",
+      "In dieser Systematik steht Grün für die stärkste Überschreitung, während Rot den sicheren Handlungsraum markiert.",
+      "Weil die einzelnen Systeme unabhängig voneinander funktionieren, können gleichzeitige Überschreitungen mehrerer Systeme Rückkopplungseffekte nicht verstärken."
     ],
     "answer_key": [
       true,
@@ -1701,11 +1701,11 @@
       false
     ],
     "tactical_explanations": [
-      "Konzentrische Kreise und die Farben Grün, Gelb, Rot ordnen Raum, Risiko und Riss. Grün ist der sichere Handlungsraum, Gelb die Risiko-Zone, Rot die Überschreitung. Die Grafik macht den Stand lesbar, ohne eine zehnte Grenze einzuführen. Wer die Farben tauscht, liest die Abbildung gegen den Text.\n\nFarblegende und Kreisform machen den Stand lesbar: innen grün sicher, dann gelb Risiko, außen rot gerissen. Planetary Health Check 2025 nutzt genau diese Ordnung; eine vertauschte Farbe würde den globalen Risiko-Bereich unkenntlich machen.\n\nDie Aussage ist wahr.",
-      "Globaler Risiko-Bereich heißt: mehrere Systeme überschreiten gleichzeitig kritische Schwellen. Die Erde sitzt damit nicht in einem einzelnen gerissenen Sektor bei sonst grüner Fläche. Gleichzeitigkeit ist der Befund, der Rückkopplungen wahrscheinlicher macht. Die Formulierung im Abschnitt trifft genau diese Lage.\n\nMehrere Systeme gleichzeitig über der Schwelle, nicht ein einzelner roter Keil: das definiert den globalen Risiko-Bereich. Gleichzeitigkeit erhöht die Chance auf Rückkopplung, weil die Prozesse verknüpft sind.\n\nDie Aussage ist wahr.",
-      "Klimawandel mindert Vielfalt, geringere Speicherung treibt die Temperatur weiter: das ist die Kette, die der Text als Beispiel für verstärkte Rückkopplung nennt. CO2-Speicherung sitzt als Bindeglied zwischen Biosphäre und Klima. Die Pfeile laufen in dieser Reihenfolge, nicht umgekehrt als Abkühlung durch Artenverlust. Das Beispiel erklärt, warum gekoppelte Risse gefährlicher sind als ein isolierter.\n\nGeringere CO2-Speicherung sitzt als Gelenk zwischen Artenverlust und weiterem Temperaturanstieg. Die Kette ist im Text ein Beispiel, keine vollständige Liste aller möglichen Rückkopplungen, aber sie reicht, um Verstärkung zu zeigen.\n\nDie Aussage ist wahr.",
-      "Grün als stärkste Überschreitung und Rot als Sicherheit kehrt die Legende um. Der sichere Handlungsraum ist grün, Rot markiert die Überschreitung. Eine solche Farbvertauschung würde den globalen Risiko-Bereich unlesbar machen. Der Abschnitt definiert die Farben eindeutig anders.\n\nRot als Sicherheit und Grün als stärkste Überschreitung wäre die Umkehr der Legende. Der sichere Handlungsraum bleibt grün, Überschreitung rot; Gelb dazwischen ist die Risiko-Zone.\n\nDie Aussage ist falsch.",
-      "Nicht verstärken wäre das Gegenteil der ausdrücklich genannten Möglichkeit. Gleichzeitige Schwellenüberschreitungen können Rückkopplungen verstärken, etwa in der Kette Klima, Vielfalt, Speicherung, Temperatur. Isolation der Risse unterstellt der Text gerade nicht. Die Verneinung der Verstärkung hält nicht.\n\nVerstärkung ist die im Abschnitt genannte Möglichkeit, nicht eine ausgeschlossene. Wer Gleichzeitigkeit als harmlos isoliert liest, streicht genau den Satz über Rückkopplungseffekte.\n\nDie Aussage ist falsch."
+      "Die drei Farben ordnen den Zustand nach Risiko: Grün ist der sichere Handlungsraum, in dem eine Grenze noch nicht erreicht ist. Gelb markiert die Risiko-Zone, in der Vorsicht geboten ist. Rot zeigt eine bereits überschrittene kritische Schwelle an. Wer die Farben vertauscht, verwechselt Sicherheit mit Gefahr.\n\nDie Aussage ist wahr.",
+      "Globaler Risiko-Bereich heißt: nicht nur eine einzelne Grenze ist gerissen, sondern mehrere Systeme überschreiten gleichzeitig ihre kritischen Schwellen. Diese Gleichzeitigkeit ist der eigentliche Grund zur Sorge, weil sich die Systeme gegenseitig beeinflussen können. Ein einzelner roter Ausreißer bei sonst grüner Lage wäre eine andere, weniger bedrohliche Situation.\n\nDie Aussage ist wahr.",
+      "Klimawandel schwächt Ökosysteme und verringert die Artenvielfalt. Weniger Vielfalt bedeutet oft eine geringere Fähigkeit der Biosphäre, CO2 zu binden und zu speichern. Weniger gespeichertes CO2 verbleibt in der Atmosphäre und heizt das Klima weiter an. Diese Kette zeigt beispielhaft, wie sich Krisen gegenseitig verstärken können, statt unabhängig nebeneinander zu bestehen.\n\nDie Aussage ist wahr.",
+      "Grün als stärkste Überschreitung zu lesen, kehrt die Farblogik um. Der sichere Handlungsraum ist grün, die Überschreitung ist rot, dazwischen liegt die gelbe Risiko-Zone. Eine solche Vertauschung würde jede Ampel-Systematik unbrauchbar machen, weil Warnfarbe und Sicherheitsfarbe ihre Bedeutung tauschen würden.\n\nDie Aussage ist falsch.",
+      "Unabhängigkeit der Systeme wäre die Voraussetzung dafür, dass sich Überschreitungen nicht gegenseitig verstärken können. Tatsächlich sind Klima, Biodiversität und Stoffkreisläufe eng miteinander verknüpft, wie die Kette aus Klimawandel, Artenverlust und geringerer CO2-Speicherung zeigt. Gleichzeitige Überschreitungen können sich deshalb gegenseitig verstärken, statt sich zu neutralisieren.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -1865,7 +1865,7 @@
       "Wenn die Wirtschaft nicht dem Wohlbefinden der Menschen dient, verliert sie ihre Legitimation.",
       "Wirtschaftliches Handeln hat laut Abschnitt stets das Ziel, den Nutzen als theoretische Modellgröße zu maximieren, nicht das menschliche Wohl zu fördern.",
       "Wirtschaftliches Handeln hat stets das Ziel, das menschliche Wohl zu fördern.",
-      "Bedürfnis, Präferenz, Nutzen, Wohlbefinden, Lebenszufriedenheit und Glück meinen im Text dasselbe."
+      "Bedürfnis, Präferenz, Nutzen, Wohlbefinden, Lebenszufriedenheit und Glück meinen alle dasselbe und lassen sich beliebig gegeneinander austauschen."
     ],
     "answer_key": [
       true,
@@ -1894,7 +1894,7 @@
       "Ernährung, Gesundheit, Zugehörigkeit und Sicherheit nennt der Abschnitt als Beispiele für Bedürfnisse.",
       "Bedürfnisse sind subjektive Bewertungen und kulturell geprägt.",
       "Bedürfnisse markieren, was erfüllt sein muss, damit Menschen ein menschenwürdiges Leben führen können.",
-      "In der Übersichtstabelle stehen Bedürfnisse auf der subjektiven Ebene und gelten als sozial formbar."
+      "Bedürfnisse gelten als subjektive Vorlieben, die sich sozial beliebig formen lassen."
     ],
     "answer_key": [
       true,
@@ -1923,7 +1923,7 @@
       "Präferenzen können Bedürfnisse widerspiegeln, aber auch durch Werbung, Statusstreben oder soziale Vergleiche verzerrt sein.",
       "Präferenzen sind stets moralisch und ökologisch wünschenswert.",
       "Menschen können auch umweltschädliche oder sozial destruktive Präferenzen haben.",
-      "Präferenzen sind in der Tabelle eine objektive Mindestgröße für Gerechtigkeit."
+      "Präferenzen gelten, genau wie Bedürfnisse, als objektive Mindestgröße für Gerechtigkeit."
     ],
     "answer_key": [
       true,
@@ -1952,7 +1952,7 @@
       "Subjektives Wohlbefinden und Lebenszufriedenheit beziehen sich auf das Gesamturteil über das eigene Leben.",
       "Nutzen misst Gerechtigkeit und Nachhaltigkeit.",
       "Wirtschaftliches Wachstum kann den Nutzen erhöhen, aber das Wohlbefinden dennoch mindern, wenn es soziale Ungleichheit, Stress oder Umweltzerstörung verstärkt.",
-      "Subjektives Wohlbefinden meint im Text bloß momentane Lust."
+      "Subjektives Wohlbefinden meint dasselbe wie kurzfristige, momentane Lust."
     ],
     "answer_key": [
       true,
@@ -1975,13 +1975,13 @@
     "subsection": "2.5",
     "case_id": "WISO 2.5.05",
     "title": "Sechs Konzepte in der Übersicht",
-    "context": "Bewerten Sie die folgenden Aussagen zur tabellarischen Unterscheidung der Konzepte rund um Wohlbefinden:",
+    "context": "Bewerten Sie die folgenden Aussagen zur Unterscheidung der Konzepte rund um Wohlbefinden:",
     "statements": [
       "Bedürfnisse beschreiben grundlegende Voraussetzungen für ein gutes Leben und stehen auf der objektiven Ebene.",
       "Nutzen ist eine theoretische Modellgröße zur Erklärung von Entscheidungen und beschreibt Entscheidungsverhalten, nicht Wohlbefinden.",
       "Glück ist im Schema die langfristige Einschätzung des eigenen Lebens.",
       "Lebenszufriedenheit ist eine langfristige Einschätzung des eigenen Lebens und gilt empirisch als Maß für den Erfolg von Politik und Institutionen.",
-      "Subjektives Wohlbefinden steht in der Tabelle als analytische Modellgröße, die nur Entscheidungsverhalten beschreibt."
+      "Subjektives Wohlbefinden ist, genau wie der Nutzen, eine rein analytische Modellgröße, die nur Entscheidungsverhalten beschreibt."
     ],
     "answer_key": [
       true,
@@ -1991,11 +1991,11 @@
       false
     ],
     "tactical_explanations": [
-      "Grundlegende Voraussetzungen und objektive Ebene: so steht die Bedürfniszeile. Die Bedeutung für Nachhaltigkeit ist der Mindeststandard für Gerechtigkeit. Die Tabelle hält damit fest, was später als soziale Basis des Doughnuts wiederkehrt. Eine bloß subjektive Lesart der Bedürfnisse würde diese Zeile kippen. Ohne diese Zeile gäbe es in der späteren Korridorlogik keinen Boden, nur eine Decke. Die Tabelle ordnet deshalb Gerechtigkeit den Bedürfnissen zu, nicht den formbaren Vorlieben.\n\nDie Aussage ist wahr.",
-      "Analytisch, nicht empirisch wohlfühlend: Nutzen erklärt, wie gewählt wird. Der Text sagt klar, dass diese Größe Entscheidungsverhalten beschreibt, nicht Wohlbefinden. Wer aus dem Nutzenindex schon Lebensqualität liest, überspringt SWB und Lebenszufriedenheit. Die Modellgröße bleibt Werkzeug, nicht Erfolgsmaß der Gesellschaft. Entscheidungserklärung und Lebensqualität liegen damit auf getrennten Etagen. Ein Modell, das Wahlen gut vorhersagt, hat damit noch nicht gezeigt, dass es den Menschen gut geht. Die Tabelle warnt ausdrücklich: Nutzen beschreibt Entscheidungsverhalten, nicht Wohlbefinden. Wer beides in einer Zahl sucht, hat die Zeile schon verlassen.\n\nDie Aussage ist wahr.",
+      "Grundlegende Voraussetzungen und objektive Ebene kennzeichnen Bedürfnisse. Ihre Bedeutung für Nachhaltigkeit ist der Mindeststandard für Gerechtigkeit, der später als soziale Basis des Doughnuts wiederkehrt. Eine bloß subjektive Lesart der Bedürfnisse würde diese Grundlage kippen. Ohne sie gäbe es in der späteren Korridorlogik keinen Boden, nur eine Decke. Gerechtigkeit hängt deshalb an den Bedürfnissen, nicht an den formbaren Vorlieben.\n\nDie Aussage ist wahr.",
+      "Analytisch, nicht empirisch wohlfühlend: Nutzen erklärt, wie gewählt wird, nicht wie gut es jemandem tatsächlich geht. Nutzen beschreibt Entscheidungsverhalten, nicht Wohlbefinden. Wer aus dem Nutzenindex schon Lebensqualität liest, überspringt SWB und Lebenszufriedenheit. Die Modellgröße bleibt Werkzeug, nicht Erfolgsmaß der Gesellschaft. Ein Modell, das Wahlen gut vorhersagt, hat damit noch nicht gezeigt, dass es den Menschen gut geht.\n\nDie Aussage ist wahr.",
       "Langfristige Einschätzung des eigenen Lebens gehört zur Lebenszufriedenheit, nicht zum Glück. Glück steht als kurzfristige positive Emotion und als affektive Teilkomponente von Wohlbefinden. Die Verwechslung macht aus einem Gefühlsschub ein Politikmaß. Genau diese Zeilen trennt die Übersicht.\n\nDie Aussage ist falsch.",
       "Politik und Institutionen am langfristigen Lebensurteil zu messen, ist die empirische Rolle der Lebenszufriedenheit. Der Text nennt sie Maß für Erfolg, nicht bloß Stimmung. Damit wird verständlich, warum Einkommen nur bis zu einem Schwellenwert korreliert: das Urteil hängt an mehr als am Kontostand.\n\nDie Aussage ist wahr.",
-      "Analytische Modellgröße für Entscheidungsverhalten ist der Nutzen. Subjektives Wohlbefinden steht empirisch als emotionale und kognitive Bewertung des Lebens und als Indikator gesellschaftlicher Qualität. Wer SWB in die Nutzenzeile schiebt, nimmt der Empirie ihren Indikator.\n\nDie Aussage ist falsch."
+      "Analytische Modellgröße für Entscheidungsverhalten ist der Nutzen, nicht das subjektive Wohlbefinden. SWB ist eine emotionale und kognitive Bewertung des Lebens und ein Indikator gesellschaftlicher Qualität. Wer SWB auf eine reine Entscheidungsgröße reduziert, nimmt der Empirie ihren eigentlichen Indikator.\n\nDie Aussage ist falsch."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2037,7 +2037,7 @@
     "statements": [
       "Empirische Erkenntnisse belegen, dass Einkommen nur bis zu einem gewissen Schwellenwert mit Lebenszufriedenheit korreliert.",
       "Gesundheit, soziale Beziehungen, Vertrauen und Beteiligung sind laut Abschnitt wichtiger als ein unbegrenzter Einkommenszusammenhang.",
-      "Oberhalb jeder Einkommenshöhe steigt die Lebenszufriedenheit im Text proportional und ohne Schwelle weiter.",
+      "Oberhalb jeder Einkommenshöhe steigt die Lebenszufriedenheit proportional und ohne Schwelle immer weiter.",
       "Der World Happiness Report 2025 wird neben Arbeiten von Ferrer-i-Carbonell als Beleglinie genannt.",
       "Einkommen ist im Abschnitt der einzige empirische Bestimmungsfaktor der Lebenszufriedenheit."
     ],
@@ -2097,7 +2097,7 @@
       "Skandinavien, die Niederlande und Neuseeland nennt der Abschnitt als Beispiele solcher Länder.",
       "Für Jugendliche ist Lebenszufriedenheit stark von Sinn, Sicherheit und sozialer Einbindung abhängig.",
       "Der Report führt das Glück dieser Länder allein auf ein besonders hohes Pro-Kopf-Einkommen zurück.",
-      "Für Jugendliche hängt Lebenszufriedenheit laut Text vor allem am materiellen Konsum."
+      "Für Jugendliche hängt Lebenszufriedenheit vor allem am materiellen Konsum, weniger an Sinn oder sozialer Einbindung."
     ],
     "answer_key": [
       true,
@@ -2271,7 +2271,7 @@
       "Suffizienz, verstanden als genug, aber nicht zu viel, erzeugt langfristig stabileres Wohlbefinden.",
       "Suffizienz bedeutet im Abschnitt, so viel wie möglich zu konsumieren, solange der Nutzen steigt.",
       "Konsum- und Produktionskorridore werden ausdrücklich an subjektives Wohlbefinden gebunden.",
-      "Unbegrenzter Konsum steigert das Wohlbefinden im Text linear und ohne abnehmende Zuwächse."
+      "Unbegrenzter Konsum steigert das Wohlbefinden linear und ohne abnehmende Zuwächse immer weiter."
     ],
     "answer_key": [
       true,
@@ -2298,9 +2298,9 @@
     "statements": [
       "Wirtschaftliches Wachstum kann den Nutzen erhöhen und das Wohlbefinden dennoch mindern, wenn soziale Ungleichheit, Stress oder Umweltzerstörung verstärkt werden.",
       "Diese Unterscheidung zwischen Nutzen und Wohlbefinden ist laut Abschnitt entscheidend.",
-      "Steigt durch Wachstum der Nutzen, steigt das Wohlbefinden im Text immer im Gleichschritt mit.",
+      "Steigt durch Wachstum der Nutzen, steigt das Wohlbefinden immer im gleichen Ausmaß mit.",
       "Wenn die Wirtschaft nicht dem Wohlbefinden der Menschen dient, verliert sie ihre Legitimation.",
-      "Subjektives Wohlbefinden ist im Text identisch mit der kurzfristigen Zufriedenheit aus der Befriedigung einer einzelnen Präferenz."
+      "Subjektives Wohlbefinden ist identisch mit der kurzfristigen Zufriedenheit aus der Befriedigung einer einzelnen Präferenz."
     ],
     "answer_key": [
       true,
@@ -2415,7 +2415,7 @@
       "Eine Wirtschaft, die Gesundheit, Umweltqualität und soziale Stabilität stärkt, steigert das Glück langfristig stärker als reine Einkommenssteigerung.",
       "Reine Einkommenssteigerung steigert das Glück langfristig stärker als eine Wirtschaft, die Gesundheit, Umweltqualität und soziale Stabilität stärkt.",
       "Dieser Schluss folgt im Abschnitt aus dem Befund zum Healthy Lifetime Income.",
-      "Soziale Stabilität ist für diesen Schluss laut Text irrelevant.",
+      "Soziale Stabilität spielt für diesen Zusammenhang keine Rolle und kann vernachlässigt werden.",
       "Langfristiges Glück hängt in dieser Argumentation nicht allein an der Einkommenssteigerung."
     ],
     "answer_key": [
@@ -2704,7 +2704,7 @@
     "statements": [
       "Länder können laut Prettner et al. (2023) ein deutlich höheres Wohlbefinden erreichen, wenn Lebenserwartung und Gesundheitsversorgung besser sind, auch bei nur moderaterem materiellem Wohlstand.",
       "Reine Einkommenssteigerung bleibt im Schluss des Abschnitts der stärkere Langfristmotor des Glücks gegenüber Gesundheit, Umweltqualität und sozialer Stabilität.",
-      "Ähnliches BIP setzt Brasilien oder Südafrika im Text nicht automatisch auf dasselbe Glücksniveau wie Gesellschaften mit hoher sozialer Gleichheit.",
+      "Ähnliches BIP setzt Brasilien oder Südafrika nicht automatisch auf dasselbe Glücksniveau wie Gesellschaften mit hoher sozialer Gleichheit.",
       "Der Healthy Lifetime Income ersetzt den World Happiness Report, sodass Gleichheit und Korruption für Wohlbefinden ohne Belang bleiben.",
       "Eine Wirtschaft, die Gesundheit stärkt, folgt in diesem Kapitel derselben Logik, die den Indikator an Lebenserwartung und Versorgung bindet."
     ],
