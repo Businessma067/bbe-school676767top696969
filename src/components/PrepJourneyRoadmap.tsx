@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { cn } from "@/lib/utils";
 
 type Milestone = {
@@ -8,7 +9,10 @@ type Milestone = {
   destination?: boolean;
 };
 
-const MILESTONES: Milestone[] = [
+/** Accent CSS custom property (defined in styles.css). */
+export type PrepRoadmapAccent = "exam-red" | "wiso-blue";
+
+const BBE_MILESTONES: Milestone[] = [
   {
     title: "Free Demo",
     label: "100+ tasks, 1 mock exam, all 3 subjects",
@@ -32,6 +36,35 @@ const MILESTONES: Milestone[] = [
     destination: true,
   },
 ];
+
+const WISO_MILESTONES: Milestone[] = [
+  {
+    title: "Free Demo",
+    label: "WiSo tasks across economics, math, and German",
+    icon: "demo",
+    youAreHere: true,
+  },
+  {
+    title: "Build the Fundamentals",
+    label: "Wirtschaft verstehen, math, and reading practice",
+    icon: "lite",
+  },
+  {
+    title: "Full Simulation",
+    label: "Interactive modes, customized mocks, and timed exam practice",
+    icon: "full",
+  },
+  {
+    title: "Exam Day",
+    label: "2027 WiSo, WU Vienna",
+    icon: "exam",
+    destination: true,
+  },
+];
+
+function accentVar(accent: PrepRoadmapAccent): string {
+  return accent === "wiso-blue" ? "var(--wiso-blue)" : "var(--exam-red)";
+}
 
 function MilestoneIcon({
   type,
@@ -127,11 +160,14 @@ function NodeCircle({
   milestone,
   index,
   size = "md",
+  accent,
 }: {
   milestone: Milestone;
   index: number;
   size?: "sm" | "md" | "lg";
+  accent: PrepRoadmapAccent;
 }) {
+  const color = accentVar(accent);
   const dim =
     size === "lg"
       ? "h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]"
@@ -147,20 +183,35 @@ function NodeCircle({
         "prep-roadmap-node relative grid place-items-center rounded-full",
         dim,
         milestone.destination
-          ? "bg-[var(--exam-red)] text-white shadow-[0_8px_20px_-8px_color-mix(in_oklab,var(--exam-red)_55%,transparent)]"
+          ? "text-white"
           : "border-[1.5px] border-foreground/70 bg-background text-foreground",
-        milestone.youAreHere && "border-[var(--exam-red)]",
+        milestone.youAreHere && !milestone.destination && "border-[color:var(--prep-accent)]",
       )}
-      style={{ animationDelay: `${0.22 + index * 0.22}s` }}
+      style={
+        {
+          animationDelay: `${0.22 + index * 0.22}s`,
+          ["--prep-accent" as string]: color,
+          ...(milestone.destination
+            ? {
+                backgroundColor: color,
+                boxShadow: `0 8px 20px -8px color-mix(in oklab, ${color} 55%, transparent)`,
+              }
+            : milestone.youAreHere
+              ? { borderColor: color }
+              : {}),
+        } as CSSProperties
+      }
     >
       {milestone.youAreHere && (
         <>
           <span
-            className="prep-roadmap-here-ring pointer-events-none absolute inset-0 rounded-full border border-[var(--exam-red)]"
+            className="prep-roadmap-here-ring pointer-events-none absolute inset-0 rounded-full border border-[color:var(--prep-accent)]"
+            style={{ borderColor: color }}
             aria-hidden
           />
           <span
-            className="prep-roadmap-here-ring prep-roadmap-here-ring-2 pointer-events-none absolute inset-0 rounded-full border border-[var(--exam-red)]"
+            className="prep-roadmap-here-ring prep-roadmap-here-ring-2 pointer-events-none absolute inset-0 rounded-full border border-[color:var(--prep-accent)]"
+            style={{ borderColor: color }}
             aria-hidden
           />
         </>
@@ -168,7 +219,12 @@ function NodeCircle({
       <MilestoneIcon type={milestone.icon} className={iconDim} />
       {milestone.youAreHere && (
         <span
-          className="absolute -top-3 left-1/2 z-[2] -translate-x-1/2 whitespace-nowrap rounded-full border border-[var(--exam-red)] bg-[var(--exam-red)] px-2 py-[3px] text-[9px] font-semibold uppercase tracking-[0.08em] leading-none text-white shadow-[0_4px_12px_-6px_color-mix(in_oklab,var(--exam-red)_70%,transparent)]"
+          className="absolute -top-3 left-1/2 z-[2] -translate-x-1/2 whitespace-nowrap rounded-full px-2 py-[3px] text-[9px] font-semibold uppercase tracking-[0.08em] leading-none text-white"
+          style={{
+            backgroundColor: color,
+            border: `1px solid ${color}`,
+            boxShadow: `0 4px 12px -6px color-mix(in oklab, ${color} 70%, transparent)`,
+          }}
           aria-hidden
         >
           you are here
@@ -210,16 +266,24 @@ function NodeCaption({
 }
 
 /** Wide desktop: path through circle centers; captions clear of the stroke. */
-function SpreadDesktopRoadmap() {
+function SpreadDesktopRoadmap({
+  milestones,
+  accent,
+}: {
+  milestones: Milestone[];
+  accent: PrepRoadmapAccent;
+}) {
+  const color = accentVar(accent);
+  const glowId = accent === "wiso-blue" ? "prepGlowWiso" : "prepGlow";
   /**
    * Circle centers — even horizontal spacing (0 / 25 / 50 / 75), path sits lower
    * in the frame so captions breathe under the hero copy.
    */
   const nodes = [
-    { milestone: MILESTONES[0], left: "0%", centerY: "54%", caption: "above" as const },
-    { milestone: MILESTONES[1], left: "25%", centerY: "74%", caption: "below" as const },
-    { milestone: MILESTONES[2], left: "50%", centerY: "54%", caption: "above" as const },
-    { milestone: MILESTONES[3], left: "75%", centerY: "72%", caption: "below" as const },
+    { milestone: milestones[0], left: "0%", centerY: "54%", caption: "above" as const },
+    { milestone: milestones[1], left: "25%", centerY: "74%", caption: "below" as const },
+    { milestone: milestones[2], left: "50%", centerY: "54%", caption: "above" as const },
+    { milestone: milestones[3], left: "75%", centerY: "72%", caption: "below" as const },
   ];
 
   // Centers at ~125 / 375 / 625 / 875 in a 1000-wide viewBox (matches left + 12.5%).
@@ -235,7 +299,7 @@ function SpreadDesktopRoadmap() {
         aria-hidden
       >
         <defs>
-          <filter id="prepGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <filter id={glowId} x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="6" result="b" />
             <feMerge>
               <feMergeNode in="b" />
@@ -244,7 +308,6 @@ function SpreadDesktopRoadmap() {
           </filter>
         </defs>
         <path
-          id="prepRoadmapPath"
           className="prep-roadmap-path text-foreground"
           d={pathD}
           fill="none"
@@ -260,12 +323,12 @@ function SpreadDesktopRoadmap() {
           className="prep-roadmap-comet"
           d={pathD}
           fill="none"
-          stroke="var(--exam-red)"
+          stroke={color}
           strokeWidth="2.4"
           strokeLinecap="round"
           pathLength={1}
           vectorEffect="non-scaling-stroke"
-          filter="url(#prepGlow)"
+          filter={`url(#${glowId})`}
         />
       </svg>
 
@@ -285,7 +348,7 @@ function SpreadDesktopRoadmap() {
                   <NodeCaption milestone={n.milestone} />
                 </div>
               )}
-              <NodeCircle milestone={n.milestone} index={i} size="lg" />
+              <NodeCircle milestone={n.milestone} index={i} size="lg" accent={accent} />
               {n.caption === "below" && (
                 <div
                   className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
@@ -303,16 +366,22 @@ function SpreadDesktopRoadmap() {
 }
 
 /** Mobile: vertical straight path. */
-function MobileRoadmap() {
+function MobileRoadmap({
+  milestones,
+  accent,
+}: {
+  milestones: Milestone[];
+  accent: PrepRoadmapAccent;
+}) {
   return (
     <div className="relative mx-auto flex w-full max-w-md flex-col justify-center gap-0 px-1 py-2 md:hidden">
       <div
         className="prep-roadmap-path-mobile absolute bottom-8 left-[1.9rem] top-8 z-0 w-px bg-foreground/25"
         aria-hidden
       />
-      {MILESTONES.map((m, i) => (
+      {milestones.map((m, i) => (
         <div key={m.title} className="relative z-[1] flex items-start gap-3.5 py-2.5 sm:gap-4">
-          <NodeCircle milestone={m} index={i} size="sm" />
+          <NodeCircle milestone={m} index={i} size="sm" accent={accent} />
           <div className="min-w-0 flex-1 pt-1.5">
             <NodeCaption milestone={m} align="left" compact />
           </div>
@@ -322,15 +391,30 @@ function MobileRoadmap() {
   );
 }
 
-export function PrepJourneyRoadmap({ className }: { className?: string }) {
+export function PrepJourneyRoadmap({
+  className,
+  accent = "exam-red",
+  track = "bbe",
+}: {
+  className?: string;
+  /** BBE stakes red (default) or WiSo indigo blue. */
+  accent?: PrepRoadmapAccent;
+  track?: "bbe" | "wiso";
+}) {
+  const milestones = track === "wiso" ? WISO_MILESTONES : BBE_MILESTONES;
+  const ariaLabel =
+    track === "wiso"
+      ? "Step by step WiSo preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day"
+      : "Step by step preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day";
+
   return (
     <div
       className={cn("prep-roadmap relative w-full", className)}
       role="img"
-      aria-label="Step by step preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day"
+      aria-label={ariaLabel}
     >
-      <SpreadDesktopRoadmap />
-      <MobileRoadmap />
+      <SpreadDesktopRoadmap milestones={milestones} accent={accent} />
+      <MobileRoadmap milestones={milestones} accent={accent} />
     </div>
   );
 }
