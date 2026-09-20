@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
@@ -103,7 +103,16 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigateHome = useLocalizedNavigate();
-  const { tab: searchTab } = Route.useSearch();
+  // Read search from the location — not Route.useSearch() — so /de|/uk
+  // dashboard (rendered via /$lang/$) still works. File-route useSearch
+  // throws when the matched route is the locale splat.
+  const rawSearchTab = useRouterState({
+    select: (s): unknown => (s.location.search as { tab?: unknown }).tab,
+  });
+  const searchTab =
+    rawSearchTab == null || rawSearchTab === ""
+      ? undefined
+      : parseDashboardTab(rawSearchTab);
   // Keep the last explicit tab while TanStack briefly clears search during
   // outbound navigations (Open flashcards / matching / tutor), so the main
   // Courses dashboard does not flash before the tool page mounts.
