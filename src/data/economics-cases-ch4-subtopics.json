@@ -25,7 +25,7 @@
       "A corporation can be a separate legal person that files its own corporate tax. A sole proprietorship cannot: contracts and tax liabilities attach to the owner personally. Calling the sole trader an independent corporate filer invents a shell that does not exist for this form.\n\nSo the statement is False.",
       "If the owner retires or falls seriously ill for months, customers and contracts often stall. Continuity depends on that one person unless a transfer is arranged first.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -54,7 +54,7 @@
       "Pass-through tax treatment does not ban payroll or supplier deals. Many sole traders employ assistants and sign purchase contracts every week. Taxing profit on the personal return says nothing about headcount or contracting capacity.\n\nSo the statement is False.",
       "Extra hands can be hired for busy seasons while the owner still sets strategy and carries residual risk. Support staff expand capacity; they do not replace the central management role.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -83,7 +83,7 @@
       "No partner or board must approve price cuts, opening hours, or supplier switches. The owner can decide alone, even after seeking informal advice. Undivided management rights match the one-person ownership structure.\n\nSo the statement is True.",
       "Long-term illness can leave orders unfilled and clients without a contact. Continuity is fragile when only one person owns and steers the firm through every major decision.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -141,7 +141,7 @@
       "Staff cannot legally inherit ownership just by showing up after the owner retires. Employment is not a transfer deed. Without a formal handover, employees have no automatic title to the business.\n\nSo the statement is False.",
       "Key decisions still rest with the sole proprietor even when helpers handle routine work. Management of the business largely depends on that owner retaining decision rights.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -199,7 +199,7 @@
       "Wage income from another job and trading profit from the shop can appear on the same personal tax assessment. Personal and business earnings for the owner are often combined there.\n\nSo the statement is True.",
       "Personal taxation of profits is the default precisely because there is no separate legal personality. Requiring a corporate shell first reverses the rule for sole traders.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -228,7 +228,7 @@
       "When personal savings are not enough, the proprietor may seek bank loans or outside investors. Extra finance from those sources remains available in principle for the sole trader.\n\nSo the statement is True.",
       "Profits are taxed on the owner's personal income tax statement because the firm is not a separate legal entity. Personal reporting replaces a corporate tax return.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -257,7 +257,7 @@
       "Short-term trade credit and long-term bank loans are both liabilities of the sole proprietor. Duration does not remove personal responsibility for repayment of either kind.\n\nSo the statement is True.",
       "Collateral is typically demanded for external loans such as bank credit, not for retained profit. Internal finance does not need a land pledge before it can be used.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -286,7 +286,7 @@
       "Two people who want equal rights, shared tasks, and shared risk are better served by a partnership. That form is designed for joint ownership in a way sole proprietorship is not.\n\nSo the statement is True.",
       "Sole proprietorship rules do not create equal shared ownership for two founders. A partnership remains necessary when both want equal rights and shared risk.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -315,7 +315,7 @@
       "Missing corporate personality does not create a tax exemption. The proprietor still owes tax on business profits through the personal income channel each year.\n\nSo the statement is True.",
       "A separate corporate tax return is for companies with legal personality. Sole proprietorships report through personal income tax, not a mandatory company return.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -344,7 +344,7 @@
       "Business failure with unpaid debts can put private assets at stake once firm funds are gone. Unlimited liability makes that reach into personal property possible.\n\nSo the statement is True.",
       "Short-term and long-term credit alike remain obligations of the sole proprietor. All kinds of credit sit on that personal unlimited liability.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -402,7 +402,7 @@
       "A general partnership is built from general partners who manage and share unlimited liability. It does not require a limited partner sitting outside management; that feature belongs to limited partnerships.\n\nSo the statement is False.",
       "Multiple owners do not automatically incorporate or grant limited liability. Partnerships can remain unincorporated with unlimited exposure for general partners.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -431,7 +431,7 @@
       "Personal savings, bank loans, and trade credit remain central funding tools for partnerships much as for sole proprietors. The financial toolkit is broadly similar even though more people contribute.\n\nSo the statement is True.",
       "Ownership percentages and profit-loss splits are specified in the partnership agreement for each partner so residual claims are clear from the start.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -460,7 +460,7 @@
       "Ownership percentage in the agreement does not cap a general partner's debt exposure at that fraction. Creditors may pursue one partner for the full outstanding amount under unlimited liability.\n\nSo the statement is False.",
       "Decision-making rules and dispute-resolution methods are among the details partners record in the partnership agreement alongside ownership and profit terms.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -489,7 +489,7 @@
       "Profit shares in the agreement allocate residual income; they do not automatically split each partner's legal liability in the same proportions. Creditors may still pursue one partner for the full debt.\n\nSo the statement is True.",
       "Under unlimited liability a creditor may pursue any one general partner for the entire outstanding partnership debt without first splitting claims evenly.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -518,7 +518,7 @@
       "Equal rights concern standing and liability, not identical job descriptions. Partners may take different specialised roles while remaining equal in ownership status.\n\nSo the statement is False.",
       "Several partners pooling private assets can offer more collateral for a loan than one owner alone typically can pledge from a single household.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -547,7 +547,7 @@
       "Decision-making procedures and dispute-resolution methods belong in the partnership agreement. Recording them early reduces costly fights when partners later disagree.\n\nSo the statement is True.",
       "Each partner's ownership percentage is among the details settled when the agreement is drawn up, alongside profit and loss division for every founder.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -576,7 +576,7 @@
       "Limited partners stay out of management while general partners run operations. That division of roles defines the limited partnership pattern in practice.\n\nSo the statement is True.",
       "Pooling partner savings can raise more investable funds than a single owner typically brings alone, which can support larger projects at launch.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -605,7 +605,7 @@
       "A limited partner who manages daily operations typically loses the liability cap. Active management treats that person like a general partner with unlimited exposure, not a percentage-capped investor.\n\nSo the statement is False.",
       "A limited partnership can mix managing partners with unlimited liability and a non-managing partner whose loss is capped at capital contributed.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -663,7 +663,7 @@
       "Resolving disputes between partners is a matter the agreement may address with mediation clauses, voting rules, or exit paths. Including that topic is ordinary good practice.\n\nSo the statement is True.",
       "Limited partnership status still leaves managing partners with personal unlimited liability. Not every partner escapes personal exposure to firm debts.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -721,7 +721,7 @@
       "Equal management involvement points to a general partnership. A limited partnership requires at least one non-managing limited partner, which conflicts with everyone managing equally.\n\nSo the statement is False.",
       "Specialising in client relations does not confine liability to client-contract debts. A general partner remains exposed to firm debts arising from every function.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -750,7 +750,7 @@
       "Each general partner remains solely liable for all debts even when ownership percentages are unequal. Creditors may still pursue one partner for the full shortfall.\n\nSo the statement is True.",
       "More combined savings and collateral can make partnership borrowing more plausible than sole trading with thinner personal security for lenders.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -808,7 +808,7 @@
       "Once shares are issued, later price increases on the market have no additional financing effect for the issuing corporation. Cash already arrived at issue; secondary moves rearrange investor wealth.\n\nSo the statement is True.",
       "When existing shareholders sell to one another at higher prices, capital gains go to those sellers, not equally to the corporation as a co-beneficiary of the trade.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -837,7 +837,7 @@
       "Persons who buy shares become shareholders of the corporation. Purchase of shares is how outsider ownership of the company is acquired in ordinary cases.\n\nSo the statement is True.",
       "Share capital is usually not redeemed by the company and serves as long-term or permanent equity finance rather than short-term credit from lenders.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -866,7 +866,7 @@
       "The highest-ranking manager of the board is called the Chief Executive Officer. The CEO title marks that top executive role under board oversight.\n\nSo the statement is True.",
       "Other board or top roles may include the Chief Financial Officer and Chief Operating Officer alongside the CEO in the corporate management team.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -895,7 +895,7 @@
       "Shareholders typically face limited liability, not unlimited exposure beyond their investment. Claiming unlimited liability for all corporation debts reverses the usual corporate rule.\n\nSo the statement is False.",
       "Financial funds for corporations mainly comprise share capital as well as loans and credit from banks and other lenders, not equity finance alone.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -924,7 +924,7 @@
       "Issue price can equal nominal value; a permanent premium above nominal is not mandatory for every share sold. Pricing depends on the offer terms, not an always-above-nominal rule.\n\nSo the statement is False.",
       "Huge amounts can be raised when investors buy newly issued stock in large offerings. Share sales at issue are a powerful funding channel for corporations.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -953,7 +953,7 @@
       "After introduction, exchange prices move with demand and supply among traders. They are not frozen forever at a single issuer-set figure for the life of the stock.\n\nSo the statement is False.",
       "A stock exchange is a financial market, regulated by the authorities, where shares and other securities can be bought and sold by investors.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -982,7 +982,7 @@
       "After the IPO, exchange prices are determined by demand and supply among buyers and sellers. The market, not a fixed issuer decree, sets ongoing prices.\n\nSo the statement is True.",
       "Beneficiaries of a post-issue price rise are shareholders who hold or trade the stock, not the issuing corporation itself receiving matching cash.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1040,7 +1040,7 @@
       "Low interest rates weaken the pull of deposits and bonds, so some funds shift toward shares. Demand for equity rises as those interest-bearing alternatives look less appealing on a relative-return basis.\n\nSo the statement is True.",
       "Economic growth, interest rates, and inflation sit among the wider indicators that routinely sway how strongly investors demand corporate shares in secondary markets.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1069,7 +1069,7 @@
       "Voting influence also matters for many holders. Attending the annual stockholders' meeting and casting votes lets shareholders shape major decisions through formal rights attached to the shares.\n\nSo the statement is True.",
       "Acquisition routes are two-fold in ordinary markets: buy at issue from the corporation, or later from another shareholder who decides to sell.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1098,7 +1098,7 @@
       "Private limited firms may issue shares to selected investors without ever listing. A stock-exchange flotation is not a precondition for any share issue to family or private backers.\n\nSo the statement is False.",
       "Ownership and management need not coincide at the bakery. Directors can run operations even when other family members hold the outstanding shares and stay out of daily work.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1127,7 +1127,7 @@
       "If dividends stay unpaid for a long stretch, income-seeking buyers may walk away. Demand can soften and the shares may look less attractive relative to stocks that still pay cash.\n\nSo the statement is True.",
       "A secondary-market price fall after omitted dividends does not inject fresh share capital onto the issuer's books or enlarge registered equity automatically.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1156,7 +1156,7 @@
       "Bonds are debt securities issued to creditors. Issuing them does not turn lenders into preferred shareholders, so corporations can raise bond finance without that conversion occurring.\n\nSo the statement is False.",
       "Bond interest is often cheaper than a similar bank loan for large funding needs, which is why bond finance can look attractive beside ordinary credit facilities.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1185,7 +1185,7 @@
       "Falling demand may lower prices among traders, but the issuer is not obliged to redeem outstanding shares at the latest quote whenever interest in the stock fades.\n\nSo the statement is False.",
       "Secondary quotes do not flow into the issuer's paid-in share capital as automatic balance-sheet inflows when investors trade among themselves.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1214,7 +1214,7 @@
       "Equity from new shareholders can sit beside bank loans in the same capital structure. The corporation may raise share capital and borrow from lenders at the same time.\n\nSo the statement is True.",
       "Selling shares to outsiders does not excuse the corporation from contract law. As a legal person it must still honour binding agreements with customers, staff, and suppliers.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1243,7 +1243,7 @@
       "Companies usually leave share capital unredeemed once it is raised, so it can function as permanent capital supporting the business over many years of operations.\n\nSo the statement is True.",
       "Secondary sales among investors on a listing do not oblige the issuer to buy back every share that changes hands whenever a holder wants to exit.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1301,7 +1301,7 @@
       "Delisting ends exchange trading of the stock for public investors. It does not automatically convert the corporation into an unincorporated partnership under commercial law.\n\nSo the statement is False.",
       "Listing remains optional in corporate design: a corporation's stock can trade on a stock market or exchange, but it does not have to do so to exist.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1330,7 +1330,7 @@
       "High interest rates make deposits and bonds more competitive with equities, so some money leaves the share market and demand for stock can fall as relative returns shift.\n\nSo the statement is True.",
       "An increase in share prices after issue benefits shareholders who hold or sell at the higher quotes; it does not supply new finance to the issuing corporation.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1359,7 +1359,7 @@
       "The board of directors makes major business decisions on behalf of shareholders who supplied capital, which is the core representation role directors play in corporate governance.\n\nSo the statement is True.",
       "A chief information officer need not hold the largest block of shares before joining the management board; expertise and appointment matter more than maximum ownership.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1388,7 +1388,7 @@
       "IPO proceeds are primary equity inflows to the issuer. Later exchange gains among traders are not identical recurring share-capital receipts booked the same way for the company.\n\nSo the statement is False.",
       "Price increases after shares have already been issued do not provide further financing to the issuing corporation through the secondary market alone.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1417,7 +1417,7 @@
       "Private limited companies need not list shares on a stock exchange to exist as legal persons; personality and registration do not depend on a public quotation.\n\nSo the statement is True.",
       "Shareholders in a private limited company are typically not liable beyond the capital they invested when they acquired their equity stakes in the firm.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1446,7 +1446,7 @@
       "Meeting minimum capital requirements does not guarantee that shareholders will receive annual dividend payments; profit distribution remains a separate discretionary board decision.\n\nSo the statement is False.",
       "Corporations remain more difficult to set up than unincorporated businesses partly because of formal capital thresholds and registration rules that sole traders can skip.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1504,7 +1504,7 @@
       "Voting at the stockholders' meeting does not legally oblige shareholders to perform the chief executive officer's daily operating duties inside the firm.\n\nSo the statement is False.",
       "Electing directors keeps ownership with the shareholders. Management and ownership need not become identical sets of people after the board is chosen.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1533,7 +1533,7 @@
       "Corporations may list shares on a regulated stock exchange but are not required to do so; many remain private while still fully incorporated under company law.\n\nSo the statement is True.",
       "Management by a board of directors allows separation of ownership and control within the corporation as a defining organisational feature of the form.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1562,7 +1562,7 @@
       "Buying at initial issue provides share capital to the corporation. Buying later on the secondary market only transfers ownership between investors without adding issuer cash.\n\nSo the statement is True.",
       "Persons who buy shares become shareholders regardless of whether the purchase occurs at issue from the company or later on the secondary market from another holder.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -1591,7 +1591,7 @@
       "Bonds as well as shares may be bought and sold on such regulated markets, so both debt and equity securities can change hands in the same supervised venue.\n\nSo the statement is True.",
       "Listing facilitates trading among many people and businesses but does not oblige the issuer to receive later trade proceeds when shares change hands secondarily.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1620,7 +1620,7 @@
       "Managers who are not shareholders do not always enjoy the same limited liability cap as investors who bought stock; the investor protection attaches to share ownership.\n\nSo the statement is False.",
       "Limited liability distinguishes corporations from many unincorporated forms where owners face broader personal exposure to business debts and claims.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1678,7 +1678,7 @@
       "Family shareholders need not personally manage production every day. Private companies may elect boards and professional managers rather than forbidding delegated control.\n\nSo the statement is False.",
       "Shares need not be sold to the general public on an exchange for the firm to operate as a private limited company with full corporate status.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1707,7 +1707,7 @@
       "High interest rates do not always increase share prices because corporations earn more from bank deposits. More often, high rates compete with equities and can pressure stock prices.\n\nSo the statement is False.",
       "Demand shifts from such macro conditions affect market prices but do not by themselves add share capital to the issuer after the shares have already been issued.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1736,7 +1736,7 @@
       "Higher inflation does not oblige the issuing corporation to inflate its registered share capital whenever consumer prices rise in the wider economy.\n\nSo the statement is False.",
       "Price changes driven by inflation expectations benefit trading shareholders rather than financing the issuer anew with fresh equity subscriptions.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -1765,7 +1765,7 @@
       "Shareholders elect the board but are neither obliged nor entitled to manage daily operations themselves once directors and officers carry that operational mandate.\n\nSo the statement is True.",
       "Separation of ownership and management is a defining feature of corporate organisation, allowing capital providers to stay distinct from day-to-day controllers.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1794,7 +1794,7 @@
       "The corporation may sue and be sued as a legal entity independent of individual owners, so disputes name the company rather than each shareholder by default.\n\nSo the statement is True.",
       "Legal personality allows the business to close contracts that bind the corporation, not shareholders personally, for ordinary commercial commitments.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1823,7 +1823,7 @@
       "Only proceeds from shares bought at initial issue from the corporation typically increase its share capital as primary equity funding on the books.\n\nSo the statement is True.",
       "Redemption of share capital is not required whenever secondary-market prices fall below the IPO price; market dips do not trigger automatic buybacks by the issuer.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1852,7 +1852,7 @@
       "The board of directors, not every shareholder, makes major business decisions in typical corporations once that governance structure is in place.\n\nSo the statement is True.",
       "Founders who sell all their shares transfer ownership to new investors. The corporation keeps its legal personality and incorporation status after that exit.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1881,7 +1881,7 @@
       "Prolonged omission of dividends may make shares less attractive to income seekers and weaken investor demand for the stock over a longer horizon.\n\nSo the statement is True.",
       "Dividends, when paid, represent part of the corporation's profits distributed to shareholders rather than interest owed on a fixed debt claim.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1910,7 +1910,7 @@
       "Share capital is generally long-term capital that the company usually does not redeem the way it would repay a short-term bank facility on a fixed date.\n\nSo the statement is True.",
       "Shareholders are persons who buy shares and thereby own a stake in the corporation as residual claimants on its equity capital and future profits.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1939,7 +1939,7 @@
       "Investors may seek dividends, capital growth from rising prices, or voting influence at meetings when they decide to buy stock in a corporation.\n\nSo the statement is True.",
       "Economic growth, inflation, and interest rates can all influence how strongly investors demand shares relative to competing asset classes nearby.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -1968,7 +1968,7 @@
       "Bonds may be issued as an alternative to bank loans for raising debt finance when the firm wants tradable fixed-income claims instead of a bilateral facility.\n\nSo the statement is True.",
       "Share capital differs from debt because it does not create the same contractual repayment obligation as a loan owed to creditors on a fixed schedule.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -1997,7 +1997,7 @@
       "Shareholders in such a corporation retain limited liability tied to their investment whether or not the stock ever lists for public trading.\n\nSo the statement is True.",
       "Listing remains optional for the pharmaceutical firm. Exchange trading mainly facilitates secondary transfers among many market participants once a quotation exists.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2026,7 +2026,7 @@
       "Extra borrowing raises corporate leverage, yet shareholders still usually lose only what they put into shares if the firm fails. Limited liability is not cancelled merely because the company also uses bank debt for equipment.\n\nSo the statement is True.",
       "Owing a commercial bank does not ban bond issues. Corporations with existing loans can still place bonds if markets and covenants allow. Prior bank debt is ordinary, not a legal bar to public or private bond finance.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2055,7 +2055,7 @@
       "Shareholders fund and own the corporation; they are not forced to run every production shift. Alpine Sensors AG can hire managers and operators while founders remain owners without day-to-day shop-floor duty. Equating ownership with mandatory personal management confuses equity stakes with employment roles. Many corporations deliberately separate investors from operators so specialists run production. The engineers may choose to work in the plant, but corporate form does not compel that identity of owner and manager for every shift.\n\nSo the statement is False.",
       "A hired plant manager can direct operations with zero shareholding. Management authority comes from appointment and employment, not from an automatic equity ticket, which is why ownership and operational control can diverge inside Alpine Sensors AG.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2084,7 +2084,7 @@
       "A higher listed quote after issue does not deliver extra financing to the issuer. HarborBake’s financing effect from equity happened when the new shares were sold; the later €19 price is a market valuation among holders.\n\nSo the statement is True.",
       "The original sale of newly issued shares is exactly when HarborBake raises equity cash. Secondary rises never replace that primary channel. Claiming only later price jumps fund the firm reverses which market actually capitalises the issuer.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -2113,7 +2113,7 @@
       "Forming RiverGrid SE usually costs more setup effort than a sole proprietorship: capital rules, filings, and governance. Limited liability is valuable, yet the incorporation path remains heavier than a one-person unincorporated start.\n\nSo the statement is True.",
       "Executive titles do not force personal guarantees of every corporate debt. Managers may run RiverGrid under employment contracts without pledging private assets unless they separately agree to guarantee specific obligations.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2142,7 +2142,7 @@
       "Ownership does not require each shareholder to rubber-stamp every purchase order. Ordinary procurement runs through managers and internal authority limits, not through a referendum of all equity holders. Forcing personal approval of every supplier payment would freeze operations in any widely held company. Corporate governance concentrates routine spending with officers while reserving major acts for board or AGM levels. The claim that every owner must clear every order before payment misunderstands how NordLift-style firms actually buy inputs.\n\nSo the statement is False.",
       "A CFO can oversee finance without holding NordLift shares. Board and officer roles are appointments; share ownership is optional for those managers unless a separate ownership plan requires it.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2171,7 +2171,7 @@
       "Incorporation does not outlaw bank loans. A Mesa Parts AG could finance the plating line with a mix of shares and credit; nothing in corporate form forces equity-only funding. Debt remains a standard corporate tool for plant assets. Forbidding loans after incorporation would contradict the chapter’s picture of corporations combining share capital with borrowing. Founders choose the mix based on cost and control, not because the AG shell bans credit.\n\nSo the statement is False.",
       "Mesa Parts AG shareholders would usually lose only invested share capital, unlike general partners who often face unlimited liability. Limited liability is a central reason to prefer the corporate shell for plant-scale funding.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2200,7 +2200,7 @@
       "If all 40,000 shares sell at the €20 issue amount, VoltMeter receives €800,000 as share capital. Full subscription at par maps directly onto that capital total.\n\nSo the statement is True.",
       "Share capital is long-term or permanent ownership funding, not a short-term overdraft that the company must redeem each year. VoltMeter does not repay equity on an annual loan schedule the way it would clear a revolving credit. Shareholders may sell to others, and the firm may later repurchase under special rules, but routine yearly redemption like bank overdraft repayment is not how share capital works. Treating equity as an annual repayable credit confuses ownership capital with temporary borrowing.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2258,7 +2258,7 @@
       "Investors who only provide share capital are neither obliged nor entitled to manage in place of the board. Passive equity funds the firm while directors and officers handle strategy and operations.\n\nSo the statement is True.",
       "A COO role does not abolish the need for shareholders to elect a board. Operational officers execute within a governance frame that still requires an elected board for major decisions and representation. Removing board elections because a COO exists would hollow out shareholder control. Titles like COO presuppose a board structure; they do not replace it. The corporation still needs owners to choose directors even when production is professionally managed.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2287,7 +2287,7 @@
       "Comparatively high interest rates typically brighten bonds and deposits relative to shares. Higher yields elsewhere can drain relative appetite for GreenRail equity even if the firm’s own news is unchanged.\n\nSo the statement is True.",
       "Share demand is not fixed by last quarter’s dividend alone. Inflation, growth, and rate news continuously reprice risk and opportunity, so ignoring those indicators misstates how investors form demand for GreenRail. Dividends matter, yet they sit inside a wider macro and expectation set rather than monopolising the demand function.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2316,7 +2316,7 @@
       "Common stock can admit Lea to the annual stockholders’ meeting with votes on some decisions. Influence through AGM participation sits beside income and growth as a purchase reason.\n\nSo the statement is True.",
       "Corporations are not legally forced to pay MeadowCare dividends every year regardless of profits or board policy. Dividend payments remain discretionary distributions of profit, not a fixed coupon owed each calendar year. Boards may retain earnings for investment, or profits may be too thin to distribute. Treating annual dividends as an unconditional legal duty confuses preferred hopes with mandatory cash outflow.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2345,7 +2345,7 @@
       "Private limited cousins include the US LLC, the UK private company limited by shares, and the Austrian or German GmbH. Those labels share limited liability and non-public share placement patterns.\n\nSo the statement is True.",
       "Choosing a GmbH does not auto-list café shares on the Vienna Stock Exchange at founding. Listing requires separate applications, disclosure rules, and exchange approval; private limited design usually keeps equity off public boards. Maya and Tom therefore hold ownership among themselves unless they later pursue an exchange listing as a distinct strategic step. Incorporation as a GmbH creates personality and limited liability; it does not flip a switch that floats every share on day one.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2374,7 +2374,7 @@
       "Some holders still keep PineTech for capital growth even with zero current dividends. Price appreciation hopes can substitute for income when the growth story remains credible.\n\nSo the statement is True.",
       "Making a profit does not legally force an immediate full payout of all earnings to every shareholder. Boards choose retention versus distribution; corporate law does not convert every euro of profit into a compulsory dividend cheque. PineTech can reinvest earnings in product or reserves. The statement’s forced full payout invents a rule the chapter does not teach.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2403,7 +2403,7 @@
       "Preferred QuartzPay holders do not automatically receive more votes per share than common holders. The opposite pattern is common: preferred often has fewer or no votes while common stock carries the AGM voice. Claiming automatic vote superiority for preferred reverses the typical rights package that trades influence for dividend priority. Investors who want meeting power usually look to common stock, not to preferred classes designed around income.\n\nSo the statement is False.",
       "Dividend income and voting influence are separate motives. An investor can chase yield without votes, or chase votes without high current yield, depending on share class. Those goals need not travel together on every security QuartzPay issues.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2461,7 +2461,7 @@
       "An Austrian AG generally needs about €70,000 minimum capital. That threshold is part of founding StudioPixel as an AG rather than a lighter unincorporated shell.\n\nSo the statement is True.",
       "Having only two people does not bar corporate form or force a sole proprietorship. Two shareholders can found an AG if capital and formalities are met. Sole proprietorship is a one-owner unincorporated path, not the mandatory fate of every small founding team. StudioPixel’s headcount does not erase the option to incorporate.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2519,7 +2519,7 @@
       "Bondholders do not become SteelSpan shareholders with AGM votes merely by lending. Debt claims and equity votes remain distinct; a bond is credit with interest and repayment terms, not common stock with residual control. Confusing lenders with voting owners collapses the chapter’s debt-versus-equity line. SteelSpan can owe bond investors large sums while voting power stays with share classes elected into the AGM.\n\nSo the statement is False.",
       "Borrowing large sums at relatively low interest can fund plants and infrastructure. Long-lived assets often match long-term debt such as bonds when the rate is competitive versus bank credit.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2548,7 +2548,7 @@
       "Legal personality does not make FoamLab identical with each shareholder’s private legal identity. The firm is a separate person; owners remain distinct natural persons. Equating the company with every private identity would erase limited liability and separate contracting. FoamLab’s name on a lease or lawsuit is not the same as naming each owner’s private identity.\n\nSo the statement is False.",
       "Owning laboratory property in the company’s name fits corporate personality. Title can sit with FoamLab AG rather than on each founder’s private land register entry.\n\nSo the statement is True."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2606,7 +2606,7 @@
       "Large share-capital totals such as AT&S’s euro figures in the book show that substantial sums can be raised via shares. Equity markets can mobilise plant-scale money when many investors subscribe.\n\nSo the statement is True.",
       "If NanoFilter later trades at €18, the company does not automatically rewrite share capital up to €1,800,000 without issuing new shares. Secondary prices revalue holdings among investors; stated share capital changes through corporate capital measures, not through every market tick. Confusing the quote with a forced rewrite of legal capital invents an accounting event that trading alone does not create.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2635,7 +2635,7 @@
       "AT&S in the book is an AG whose shares were listed and later switched venue, showing listing as a separate strategic choice rather than a one-time birth event.\n\nSo the statement is True.",
       "Forming an AG does not automatically list shares on every major world exchange on day one without applications. Each venue needs filings, fees, and approvals; worldwide instant listing is a myth. Incorporation creates the corporate shell; listing is a later, optional market step that can be skipped entirely. AT&S-style venue switches in the book further show listing as managed strategy, not birthright.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2693,7 +2693,7 @@
       "Shareholders elect the board that represents them in major decisions. Election remains the owners’ channel into CloudNest’s strategic control even when titles proliferate.\n\nSo the statement is True.",
       "A CIO title on a business card does not strip the corporation of legal personality. CloudNest AG remains a legal person whether or not an information officer is named. Officer labels organise work inside the firm; they do not dissolve the company’s separate legal existence, cancel shareholder elections, or turn the AG back into a collection of private individuals. Governance and personality survive title proliferation.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2722,7 +2722,7 @@
       "Bank loans and credit stay on the corporate funding menu alongside share capital. HelioChip can combine equity with borrowed money for further investment.\n\nSo the statement is True.",
       "A rising share price does not legally bar further debt finance. Quote strength may even ease credit discussions with banks or bond buyers; it never forbids loans or bonds. HelioChip remains free to borrow if covenants and markets allow, regardless of secondary equity performance. Equity valuation and debt capacity interact in credit analysis, but a rally is not a statutory ban on leverage.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2751,7 +2751,7 @@
       "Tina and Steve in the book note a GmbH might interest them later even though the €35,000 minimum steered them to a partnership at first. Capital hurdles shape timing of the corporate step.\n\nSo the statement is True.",
       "A private limited company does not carry unlimited liability identical to a sole proprietorship. Limited liability is a defining contrast with unincorporated sole traders whose personal assets stand behind business debts. Equating GmbH-style private limited status with unlimited personal exposure erases the protective feature that motivates that form for Birch & Co. Personality plus capped owner loss is precisely why founders graduate from partnerships toward private limited shells.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2780,7 +2780,7 @@
       "A European Company (SE) is another corporate form governed by Community law in EU member states. Founders may consider SE rules alongside national AG or GmbH options.\n\nSo the statement is True.",
       "Austrian AG and GmbH forms do not abolish limited liability or restore unlimited private liability for all owners. Both corporate shells are built around limited owner exposure as a core advantage over many unincorporated paths. Claiming they wipe out limited liability reverses the point of choosing AG or GmbH when personal asset protection matters.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -2809,7 +2809,7 @@
       "Bond finance can support long-term assets such as plants and packaging infrastructure. Maturity of the debt can align with long-lived equipment needs.\n\nSo the statement is True.",
       "Buying FoodPack bonds does not automatically convert creditors into common shareholders with AGM votes. Bondholders remain lenders under the indenture; voting equity stays with shares unless a separate conversion feature is written in. Treating every bond purchase as an instant AGM ticket confuses debt with common stock.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2838,7 +2838,7 @@
       "The board of directors is elected by shareholders to represent them in major decisions. Election links VoteLine owners to strategic oversight without making every owner a daily manager.\n\nSo the statement is True.",
       "Preferred stock does not always carry double voting power versus common stock at VoteLine’s AGM. Preferred often has reduced or zero votes, not doubled votes, because the class is sold as income-first paper. Claiming automatic double voting invents a privilege that contradicts the usual preferred trade of voice for dividend priority. Control-minded investors typically buy common stock when AGM influence is the goal.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -2867,7 +2867,7 @@
       "Listing shares on an exchange is not the only criterion that separates incorporated from unincorporated firms. Many corporations never list yet remain legal persons; personality and formal incorporation matter more than flotation. Exchange trading is an optional market step layered on top of company status, not the sole definition of the incorporated column in Figure 9.\n\nSo the statement is False.",
       "Limited liability companies restrict owners’ liability yet are classified as incorporated, not unincorporated. Liability protection rides with corporate personality; it does not push LLCs into the unincorporated column of Figure 9.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2896,7 +2896,7 @@
       "Partnership agreements do not require all partners to remain passive while hired directors make every decision. Partners typically manage actively; passive-director governance is the corporate pattern, not the general partnership default.\n\nSo the statement is False.",
       "Unincorporated sole proprietorships do not routinely separate share ownership from board-level management. There are usually no shares or boards in that simple form; the owner manages directly and bears the business through personal legal identity. Importing corporate share-and-board language into sole trading misreads the overview’s unincorporated column and invents governance organs the sole trader never creates.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -2954,7 +2954,7 @@
       "In unincorporated forms, owners and managers are typically the same persons according to the overview. Day-to-day control rides with ownership in that column.\n\nSo the statement is True.",
       "Shareholders provide share capital while directors run incorporated companies in the diagram’s logic. Funding and management roles can split once the firm is incorporated.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -2983,7 +2983,7 @@
       "Partnerships and sole traders share unincorporated status; they do not share incorporated status merely because both can operate without listing shares. Non-listing is common across many forms and does not define incorporation.\n\nSo the statement is False.",
       "Directors appointed by shareholders do not normally run a sole proprietorship on behalf of passive owners. That board-and-shareholder pattern belongs to incorporated companies where share capital funds the firm and directors steward it. Classic sole traders manage themselves; inventing a director layer as the normal sole-proprietor setup misplaces corporate governance into the unincorporated column of the ownership overview.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3012,7 +3012,7 @@
       "Limited liability companies can appoint separate managers; shareholders are not forbidden from hiring professional directors under any circumstances. Separation of ownership and management is allowed and common.\n\nSo the statement is False.",
       "Directors run incorporated companies, whereas unincorporated owners typically manage their own businesses directly. That contrast is the overview’s clean split on who steers day-to-day decisions across the two columns. Corporations and LLCs can hire professional managers; sole traders and general partners usually keep operational control with the owners. Collapsing those patterns would erase why Figure 9 separates governance styles when it classifies ownership forms.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3041,7 +3041,7 @@
       "Shareholders provide share capital to incorporated businesses while directors run the company. That division of funding and management is the corporate governance baseline.\n\nSo the statement is True.",
       "Incorporated businesses may have owners who do not manage operations because ownership and management can be separated. Passive shareholders and professional directors illustrate that split in practice.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3070,7 +3070,7 @@
       "Shareholders providing share capital while directors run the firm describes incorporated governance, not this two-person consulting partnership. Corporate vocabulary does not fit their partnership agreement setup.\n\nSo the statement is False.",
       "Limited liability companies and sole traders do not share the same incorporated legal status as stock corporations. LLCs are incorporated; sole traders are unincorporated; equating all three blurs Figure 9’s map. The consultants’ partnership sits with other unincorporated multi-owner forms rather than with stock corporations.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -3099,7 +3099,7 @@
       "Shareholders provide share capital and directors run incorporated companies. Funding and operational control can therefore diverge once incorporation is in place.\n\nSo the statement is True.",
       "Corporations and limited liability companies are examples of incorporated business forms. Both sit on the incorporated side of the ownership classification the chapter overview presents, with legal personality and limited owner liability as central features that unincorporated sole traders and partnerships lack. That placement closes the map from personality through governance to naming the forms students must recognise.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3128,7 +3128,7 @@
       "Unincorporated sole traders and partnerships are not legal entities of their own; incorporated companies are. That difference in legal entity status is central to the overview, not a cosmetic label. Treating both sides as sharing the same entity status erases the chapter's main divide between the two groups.\n\nSo the statement is False.",
       "A partnership agreement allocates ownership and duties among partners. It does not issue shares or create a company with separate personality. Partners stay partners until incorporation procedures turn the firm into a company with shareholders.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3157,7 +3157,7 @@
       "Employing a non-partner manager only delegates day-to-day tasks such as shift planning or purchasing. The partnership remains unincorporated until formal incorporation creates a company. Management hiring does not flip legal personality on by itself.\n\nSo the statement is False.",
       "Sole traders and partnerships both keep liabilities and contracts on the natural persons involved. The overview therefore lists both under unincorporated ownership without separate company personality.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3186,7 +3186,7 @@
       "Partners may divide bookkeeping, sales, and production among themselves, yet the firm stays unincorporated. Specialisation inside a partnership does not create a separate legal person or turn partners into a company.\n\nSo the statement is False.",
       "Shareholders often delegate running the company to directors and hired managers. Personal operation by every shareholder is not required once the firm is incorporated.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3244,7 +3244,7 @@
       "Private limited companies remain incorporated even when shares are not traded on a public exchange. Public listing is not the switch that creates or cancels incorporated status for an LLC.\n\nSo the statement is False.",
       "Tax treatment can differ across forms, yet the deeper split is legal entity status: separate personality versus none. Reducing the contrast to tax alone is too narrow for the overview.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3273,7 +3273,7 @@
       "Share capital comes from shareholders; operational oversight sits with directors of the company. That division is the standard picture for an incorporated manufacturing company in the overview.\n\nSo the statement is True.",
       "Ownership tables place sole traders beside corporations so students can compare how control is organised. A sole trader concentrates ownership and management in one person, while this manufacturer splits share capital from board oversight. Both forms are read through that same control-comparison schema in the overview.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3302,7 +3302,7 @@
       "Corporation status rests on incorporation and legal personality, which can hold with few shareholders or many. A blanket 'regardless of how many shareholders' line overstates how particular rules may set membership floors. On that absolute wording the claim is marked overstated rather than cleanly correct for every statute.\n\nSo the statement is False.",
       "Even with several partners, an unincorporated firm is not a legal entity of its own. Contracts and liabilities stay with the partners as natural persons rather than with a company shell.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -3331,7 +3331,7 @@
       "Interest is a cost of debt, not a channel that returns borrowed principal to owners as equity profit. Debt remains external finance owed to creditors until principal is repaid. Labelling debt internal because interest is paid misreads both interest and source class.\n\nSo the statement is False.",
       "An overdraft facility may be renewed for years, yet each drawing is short-term credit on the current account. Facility longevity does not convert overdrafts into long-term debt finance in Table 3.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -3360,7 +3360,7 @@
       "Bank loans spanning several years fund extended investment and appear as long-term external debt. They differ from overdrafts and trade credit, which cover nearer-term gaps in cash or stock.\n\nSo the statement is True.",
       "Owners can lend to their own firm; that loan is still debt with repayment terms written down. Ownership already held through shares does not automatically turn a loan into equity finance.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3389,7 +3389,7 @@
       "Overdrafts flex with daily cash needs: interest typically applies while the account is overdrawn. That flexibility is why they are listed as short-term debt for day-to-day shortfalls rather than as equity.\n\nSo the statement is True.",
       "Share capital from investors and retained earnings kept in the firm both strengthen equity on the balance sheet. One is external equity; the other is internal equity; both remain equity finance sources.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -3476,7 +3476,7 @@
       "Undistributed profit that stays in the firm is internal equity finance for vehicle renewal or other uses. No new outside subscriber is required for that slice of funding once surplus is retained.\n\nSo the statement is True.",
       "Publishing audited accounts informs outsiders about results; it does not move retained earnings into external equity. Disclosure is reporting, not a change of source class from internal to external finance.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3505,7 +3505,7 @@
       "Debt is classed as external finance even when a shareholder is the lender on paper. Dividend rights on shares do not turn a loan into internal finance; repayment duty still marks debt.\n\nSo the statement is False.",
       "Investors who buy shares contribute external equity that builds the ownership base of the corporation. Those funds sit on the equity side, not among creditor loans or overdrafts.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3534,7 +3534,7 @@
       "Retained earnings are equity, not short-term debt, even if managers plan to spend them within a year. Spendability inside twelve months does not move retained profit into Table 3's short-term debt column.\n\nSo the statement is False.",
       "Internal retained earnings plus external share capital and investor funds together make up equity finance. The equity heading therefore mixes internal and external ownership sources by design in the framework.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3563,7 +3563,7 @@
       "The balance sheet shows which mix of equity and debt has funded the assets in place. Readers can see ownership capital beside liabilities that financed the same resource base.\n\nSo the statement is True.",
       "Profit kept in the firm is internal equity because it does not arrive as a new external loan or share subscription. Retention recycles surplus already inside the business into further funding.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3592,7 +3592,7 @@
       "Investors who contribute ownership funds from outside the business provide external equity finance. Share capital therefore sits with external equity rather than with retained internal surplus.\n\nSo the statement is True.",
       "Share subscriptions create ownership claims, not loans that must be repaid with contractual interest. Calling share capital debt finance confuses residual owners with creditors on the balance sheet.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3621,7 +3621,7 @@
       "Keeping a share register in the company's office is administration of ownership records. It is not proof that share capital is internal equity; external investors still provided the funds.\n\nSo the statement is False.",
       "Publishing retained earnings in financial statements discloses internal equity to readers. Disclosure does not turn that equity external; transparency differs from the source test.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -3650,7 +3650,7 @@
       "Bonds raise long-term debt by selling creditor instruments to investors outside the firm. The funds are external and create repayment and interest duties for the issuer.\n\nSo the statement is True.",
       "Suppliers who defer cash receipt after delivery extend short-term debt finance to the buyer. Trade credit ends when the invoice is paid, which keeps it in the short-term column.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3679,7 +3679,7 @@
       "Equity finance includes internal retained earnings and external share capital from investors. Both strengthen ownership funding on different internal-versus-external routes in the same framework.\n\nSo the statement is True.",
       "Debt finance is external and includes short-term credit such as overdrafts and trade credit. Those tools sit beside longer loans on the borrowed-funds side of the finance map.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "1/5",
     "tier": "full"
   },
   {
@@ -3708,7 +3708,7 @@
       "Even weekly raw-materials purchases sit inside a wider financial situation that includes current gearing. Lenders and managers still notice loan burden when another credit line is added, however small the invoice.\n\nSo the statement is False.",
       "Share issues are one possible route, not the exclusive route, for funding materials consumed in production. Short-term credit often fits revenue expenditure better than exclusive reliance on new equity.\n\nSo the statement is False."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3737,7 +3737,7 @@
       "A highly geared business may obtain further credit only at higher interest and/or against extra collateral lenders accept. Reluctance and tougher terms are the practical response to heavy existing loan capital.\n\nSo the statement is True.",
       "High gearing does not license firms to ignore issuance administration costs when comparing share finance with bonds. Those costs still enter the comparison beside interest and risk.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3766,7 +3766,7 @@
       "Administration costs of issuing shares or bonds belong in the cost comparison among finance sources. They sit beside interest on loans and credit when managers weigh alternatives.\n\nSo the statement is True.",
       "A ten-year production line should not rely on a thirty-day trade credit facility alone. Capital expenditure needs long-term finance so repayment can track the asset's service life.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3795,7 +3795,7 @@
       "A business already heavy with loan capital may struggle to persuade lenders to extend still more credit. Gearing raises both refusal risk and the chance of tougher terms if funds appear at all.\n\nSo the statement is True.",
       "Further funds for a highly geared borrower may come only at a higher interest rate and/or if collateral can be offered. Those conditions are how lenders protect themselves when loan capital is already high.\n\nSo the statement is True."
     ],
-    "difficulty_level": "3/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3824,7 +3824,7 @@
       "Interest on loans and credit is included in the cost criterion, not excluded from it. Leaving interest out would empty the cost comparison of its most obvious debt component.\n\nSo the statement is False.",
       "Funding a new factory exclusively through supplier credit for raw materials mismatches maturity badly. Buildings need long-term finance; materials credit is short-term by design.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3853,7 +3853,7 @@
       "Interest payments on loans and credit are part of the cost criterion when choosing among finance sources. Managers compare those payments with issuance costs and other burdens on alternative routes.\n\nSo the statement is True.",
       "Administration costs of share issues are finance costs, not a relabelling of intended use. Intended use asks what the money will buy; issuance fees ask what raising the money costs.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3882,7 +3882,7 @@
       "Lenders may be reluctant to offer more funds once loan capital is already high on the balance sheet. Reluctance is a standard gearing consequence before any new project is approved.\n\nSo the statement is True.",
       "Further credit to a highly geared business may be available only at a higher interest rate than peers pay. Price and access both tighten as gearing rises.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3911,7 +3911,7 @@
       "When loan capital is already high, rejecting internal funds and investors would remove the very options that reduce insolvency risk. Debt is not the only route that can fund expansion; equity and retained funds remain available in the overview.\n\nSo the statement is False.",
       "Capital expenditure on machinery, plant, or vehicles used over many years requires long-term finance. Short-term rollover credit is a poor match for those long-lived assets.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   },
   {
@@ -3940,7 +3940,7 @@
       "Bonds still require interest and principal repayment, so swapping a bank loan for bonds does not eliminate repayment risk. A highly geared issuer remains exposed to creditor claims whichever long-term debt instrument is used.\n\nSo the statement is False.",
       "Revenue expenditure on production inputs should not always be paired with twenty-year bond finance. Short-term sources usually match short-cycle materials better than ultra-long bond maturity.\n\nSo the statement is False."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -3969,7 +3969,7 @@
       "Revenue expenditure such as buying materials for production can safely be financed by short-term sources. The operating cycle and the credit horizon can line up without a multi-year facility.\n\nSo the statement is True.",
       "High gearing does not remove the need to compare administration costs when issuing shares to raise funds. Issuance expenses still matter in the cost criterion regardless of existing loan burden.\n\nSo the statement is False."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "2/5",
     "tier": "full"
   },
   {
@@ -3998,7 +3998,7 @@
       "Revenue expenditure may still use short-term trade credit even when some loan capital already appears on the balance sheet. A blanket ban on supplier credit whenever any loan exists overstates gearing caution.\n\nSo the statement is False.",
       "Bond issues also carry administration and flotation expenses, not only equity issues. Ignoring bond issuance costs because 'only equity has fees' misreads the cost comparison.\n\nSo the statement is False."
     ],
-    "difficulty_level": "2/5",
+    "difficulty_level": "5/5",
     "tier": "full"
   },
   {
@@ -4027,7 +4027,7 @@
       "Funding a multi-year plant solely through repeated overdraft drawings mismatches short-term finance to capital expenditure. Rollover risk and near-term repayment collide with an asset that earns over years.\n\nSo the statement is True.",
       "Treating the absolute interest rate as the only selection criterion ignores intended use and current gearing. Cheap short credit can still be the wrong tool for long-lived plant under heavy existing loans.\n\nSo the statement is True."
     ],
-    "difficulty_level": "5/5",
+    "difficulty_level": "4/5",
     "tier": "full"
   },
   {
@@ -4085,7 +4085,7 @@
       "Costs, intended use, and current financial situation together guide finance choice when several sources exist. The new wing, an overdraft habit, and reinvested profit must be ranked through that full frame.\n\nSo the statement is True.",
       "Financing a multi-year production facility exclusively through short-term overdraft drawings mismatches horizons. Capital expenditure needs long-term funds; overdrafts are short-term credit by nature.\n\nSo the statement is True."
     ],
-    "difficulty_level": "4/5",
+    "difficulty_level": "3/5",
     "tier": "full"
   }
 ]
