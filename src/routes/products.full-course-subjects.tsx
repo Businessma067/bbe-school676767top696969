@@ -44,16 +44,6 @@ const subjects = [
       "Master supply and demand, market structures, elasticities, and the economic intuition tested on the WU BBE exam.",
   },
   {
-    id: "wiso-economics",
-    title: "WISO Wirtschaft",
-    image: economicsAsset.url,
-    accent: "#0F766E",
-    tag: "WISO · Deutsch",
-    href: "/wiso/products/full-course-economics",
-    description:
-      "Aufgaben zur Lernunterlage Wirtschaft verstehen (Aufnahmeprüfung 2026): Wahr/Falsch nach Kapiteln, mit Lehrererklärungen.",
-  },
-  {
     id: "math",
     title: "Math",
     image: mathAsset.url,
@@ -99,7 +89,7 @@ function FullCourseSubjects() {
             <p className="mt-4 text-lg text-muted-foreground">Choose a subject to begin.</p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-3">
             {subjects.map((s) => (
               <div
                 key={s.id}
