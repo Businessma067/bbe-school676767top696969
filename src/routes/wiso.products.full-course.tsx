@@ -36,13 +36,13 @@ export const Route = createFileRoute("/wiso/products/full-course")({
     ],
     links: [...hreflangLinks(PATH), { rel: "canonical", href: `https://bbe-school.com${PATH}` }],
     meta: [
-      { title: "Full WiSo Course — WU Aufnahmeprüfung Prep | BBE School" },
+      { title: "Full WiSo Course | WU Aufnahmeprüfung Prep | BBE School" },
       {
         name: "description",
         content:
           "Full WiSo Course: Wirtschaft verstehen economics, mathematics, German reading, mocks and study tools for the WU Vienna WiSo exam.",
       },
-      { property: "og:title", content: "Full WiSo Course — Unlock WiSo Prep" },
+      { property: "og:title", content: "Full WiSo Course | Unlock WiSo Prep" },
       {
         property: "og:description",
         content:
@@ -65,13 +65,13 @@ const features = [
   {
     icon: BookOpen,
     title: "3 WiSo pillars",
-    text: "Economics (Wirtschaft verstehen), Mathematics, and German reading comprehension.",
+    text: "Economics from Wirtschaft verstehen, mathematics, and German reading comprehension.",
     accent: false,
   },
   {
     icon: ListChecks,
     title: "Exam-format practice",
-    text: "Statement-style cases with Teilpunktesystem scoring — not BBE English drills.",
+    text: "Statement-style cases with Teilpunktesystem scoring, not BBE English drills.",
     accent: false,
   },
   {
@@ -83,13 +83,13 @@ const features = [
   {
     icon: Sparkles,
     title: "Explanations",
-    text: "Written breakdowns so you learn the logic, not just the answer mark.",
+    text: "Written breakdowns so you learn the logic, not only the answer mark.",
     accent: true,
   },
   {
     icon: ClipboardCheck,
     title: "Mocks on /wiso URLs",
-    text: "Timed mocks and builder stay on the WiSo track so you never teleport into BBE.",
+    text: "Timed mocks and the builder stay on the WiSo track so you do not land in BBE by accident.",
     accent: true,
   },
   {
@@ -112,7 +112,7 @@ const wisoCourseFaqs = [
   {
     question: "What is included in the Full WiSo Course?",
     answer:
-      "Practice aligned to Wirtschaft verstehen, mathematics, and German reading comprehension, plus timed mocks and study tools on dedicated /wiso URLs — separate from the BBE track.",
+      "Practice aligned to Wirtschaft verstehen, mathematics, and German reading comprehension, plus timed mocks and study tools on dedicated /wiso URLs, kept separate from the BBE track.",
   },
   {
     question: "How much does it cost?",
@@ -122,7 +122,7 @@ const wisoCourseFaqs = [
   {
     question: "How is this different from the Full BBE Course?",
     answer:
-      "BBE is English-taught with English reading and a smaller intake. WiSo is German-taught: economics wording, math, and deutsches Sprachverständnis — no English section. Content and URLs stay on the WiSo track. Buying one does not unlock the other.",
+      "BBE is English-taught with English reading and a smaller intake. WiSo is German-taught: economics wording, math, and deutsches Sprachverständnis, with no English section. Content and URLs stay on the WiSo track, and buying one does not unlock the other.",
   },
   {
     question: "Does it cover the Teilpunktesystem?",
@@ -132,7 +132,7 @@ const wisoCourseFaqs = [
   {
     question: "Can I switch from BBE prep later?",
     answer:
-      "You can explore both tracks from the products page. Choose the exam you will actually sit — mixing tracks usually wastes time on the wrong language section.",
+      "You can explore both tracks from the products page. Choose the exam you will actually sit, because mixing tracks usually wastes time on the wrong language section.",
   },
 ];
 
@@ -315,7 +315,7 @@ export function WisoFullCourseProduct() {
 
           <section className="mt-16">
             <h2 className="mb-6 font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
-              Why WiSo applicants still struggle — and how this course is built
+              Why WiSo applicants still struggle, and how this course is built
             </h2>
 
             <p className="text-base leading-relaxed text-muted-foreground">
@@ -347,8 +347,8 @@ export function WisoFullCourseProduct() {
 
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               WiSo prep only works when the language of practice matches the exam. This course stays
-              on German economics wording, German reading, and math — on /wiso URLs — so you never
-              waste weeks on BBE English passages you will not see.
+              on German economics wording, German reading, and math on /wiso URLs, so you never waste
+              weeks on BBE English passages you will not see.
             </p>
 
             <blockquote className="relative my-8 rounded-2xl border-l-4 p-6"
@@ -357,7 +357,7 @@ export function WisoFullCourseProduct() {
               <Quote className="absolute left-4 top-4 h-5 w-5 opacity-40" style={{ color: INDIGO }} aria-hidden="true" />
               <p className="font-display text-lg font-semibold italic leading-relaxed text-foreground">
                 &ldquo;The WiSo exam is not hard because you lack places. It is hard because the
-                format rewards precise reading under time pressure — in German.&rdquo;
+                format rewards precise reading under time pressure, in German.&rdquo;
               </p>
             </blockquote>
 
@@ -374,7 +374,7 @@ export function WisoFullCourseProduct() {
               }}
             >
               <p className="font-display text-lg font-semibold text-foreground sm:text-xl">
-                Train the WiSo format — not a different exam&apos;s language section.
+                Train the WiSo format, not a different exam&apos;s language section.
               </p>
               <p className="mt-2 text-xs text-muted-foreground">
                 One-time payment · €{FULL_COURSE_PRICE} · Instant full access
@@ -401,8 +401,8 @@ export function WisoFullCourseProduct() {
                 </h2>
                 <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
                   Start early, and even one focused hour a day is enough to make the format feel
-                  normal. No cramming — steady German reading, economics statements, and math that
-                  compounds by exam day.
+                  normal. Skip the cramming and keep steady German reading, economics statements, and
+                  math that compounds by exam day.
                 </p>
               </div>
               <div className="mt-2 flex items-center gap-3 rounded-xl border border-border bg-background px-5 py-3">

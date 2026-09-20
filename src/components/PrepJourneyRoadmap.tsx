@@ -40,7 +40,7 @@ const BBE_MILESTONES: Milestone[] = [
 const WISO_MILESTONES: Milestone[] = [
   {
     title: "Free Demo",
-    label: "WiSo tasks across economics, math, and German",
+    label: "WiSo tasks in economics, math, and German",
     icon: "demo",
     youAreHere: true,
   },
@@ -51,12 +51,12 @@ const WISO_MILESTONES: Milestone[] = [
   },
   {
     title: "Full Simulation",
-    label: "Interactive modes, customized mocks, and timed exam practice",
+    label: "Timed practice, custom mocks, and exam-day pacing",
     icon: "full",
   },
   {
     title: "Exam Day",
-    label: "2027 WiSo, WU Vienna",
+    label: "2027 WiSo at WU Vienna",
     icon: "exam",
     destination: true,
   },

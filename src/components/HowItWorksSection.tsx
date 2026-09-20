@@ -7,8 +7,9 @@ import { cn } from "@/lib/utils";
 
 /** Mock exams / Mock Builder temporarily hidden from How it works. */
 type MainTab = "course" | "games";
-type CourseSubject = "economics" | "math" | "english";
+type CourseSubject = "economics" | "math" | "english" | "german";
 type StudyTool = "flashcards" | "matching" | "tutor-exam";
+export type HowItWorksTrack = "bbe" | "wiso";
 
 type ShowcaseSlide = {
   key: string;
@@ -27,7 +28,8 @@ const MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
   { key: "games", label: "Study tools" },
 ];
-const COURSE_SUBJECTS: ShowcaseSlide[] = [
+
+const BBE_COURSE_SUBJECTS: ShowcaseSlide[] = [
   {
     key: "economics",
     label: "Economics",
@@ -63,7 +65,43 @@ const COURSE_SUBJECTS: ShowcaseSlide[] = [
   },
 ];
 
-const STUDY_TOOLS: ShowcaseSlide[] = [
+const WISO_COURSE_SUBJECTS: ShowcaseSlide[] = [
+  {
+    key: "economics",
+    label: "Economics",
+    title: "Statement explanations beside the solution",
+    body: "Open a WiSo guide, pick a Wirtschaft verstehen case, submit, then open the full solution. For any statement, tap Explanation to read why it holds or fails without leaving the panel.",
+    cta: "Explore Economics",
+    href: "/wiso/demo-practice/economics",
+    video: "/how-it-works/economics.mp4",
+    poster: "/how-it-works/economics-poster.jpg",
+    aspect: "16 / 9",
+  },
+  {
+    key: "math",
+    label: "Math",
+    title: "Timed drills with the exam calculator",
+    body: "Start from the WiSo math guide, open a question, switch on timed mode, and use the calculator. Submit, then read the full solution so the method sticks under German wording.",
+    cta: "Explore Math",
+    href: "/wiso/demo-practice/math",
+    video: "/how-it-works/math.mp4",
+    poster: "/how-it-works/math-poster.jpg",
+    aspect: "1710 / 982",
+  },
+  {
+    key: "german",
+    label: "German",
+    title: "Passages with show-in-text",
+    body: "Open the German reading guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.",
+    cta: "Explore German",
+    href: "/wiso/demo-practice/german",
+    video: "/how-it-works/english.mp4",
+    poster: "/how-it-works/english-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
+const BBE_STUDY_TOOLS: ShowcaseSlide[] = [
   {
     key: "flashcards",
     label: "Flashcards",
@@ -99,15 +137,55 @@ const STUDY_TOOLS: ShowcaseSlide[] = [
   },
 ];
 
+const WISO_STUDY_TOOLS: ShowcaseSlide[] = [
+  {
+    key: "flashcards",
+    label: "Flashcards",
+    title: "Flip cards for terms and formulas",
+    body: "Drill Wirtschaft verstehen terms, math formulas, and German reading vocabulary. Flip each card, rate how well you know it, and build recall before the exam.",
+    cta: "Open Flashcards",
+    href: "/wiso/flashcards",
+    video: "/how-it-works/flashcards.mp4",
+    poster: "/how-it-works/flashcards-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+  {
+    key: "matching",
+    label: "Matching",
+    title: "Connect concepts to the right meaning",
+    body: "Pair each term with its definition in a timed matching board. Same WiSo decks as the flashcards, just a different drill.",
+    cta: "Open Matching",
+    href: "/wiso/matching",
+    video: "/how-it-works/matching.mp4",
+    poster: "/how-it-works/matching-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+  {
+    key: "tutor-exam",
+    label: "Tutor Exam",
+    title: "A random theoretical quiz with a tutor",
+    body: "The tutor picks fresh WiSo theory questions every run. Answer, get instant feedback, and keep drilling until the wording feels familiar.",
+    cta: "Open Tutor Exam",
+    href: "/wiso/tutor-exam",
+    video: "/how-it-works/tutor-exam.mp4",
+    poster: "/how-it-works/tutor-exam-poster.jpg",
+    aspect: "3420 / 1966",
+  },
+];
+
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 2.4;
 const ZOOM_STEP = 0.35;
 /** Open the lightbox at native 100% — sharper on large screens than CSS upscaling. */
 const INITIAL_LIGHTBOX_ZOOM = 1;
 
-export function HowItWorksSection() {
+export function HowItWorksSection({ track = "bbe" }: { track?: HowItWorksTrack }) {
+  const courseSubjects = track === "wiso" ? WISO_COURSE_SUBJECTS : BBE_COURSE_SUBJECTS;
+  const studyTools = track === "wiso" ? WISO_STUDY_TOOLS : BBE_STUDY_TOOLS;
   const [tab, setTab] = useState<MainTab>("course");
-  const [subject, setSubject] = useState<CourseSubject>("economics");
+  const [subject, setSubject] = useState<CourseSubject>(
+    track === "wiso" ? "economics" : "economics",
+  );
   const [tool, setTool] = useState<StudyTool>("flashcards");
   const [zoomed, setZoomed] = useState(false);
   const [lightboxScale, setLightboxScale] = useState(INITIAL_LIGHTBOX_ZOOM);
@@ -115,7 +193,7 @@ export function HowItWorksSection() {
   const zoomVideoRef = useRef<HTMLVideoElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
 
-  const slides = tab === "games" ? STUDY_TOOLS : COURSE_SUBJECTS;
+  const slides = tab === "games" ? studyTools : courseSubjects;
   const activeKey = tab === "games" ? tool : subject;
   const slide = slides.find((s) => s.key === activeKey) ?? slides[0];
   const slideIndex = slides.findIndex((s) => s.key === slide.key);
