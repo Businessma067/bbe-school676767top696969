@@ -4,6 +4,7 @@ import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalizedLink } from "@/components/LocalizedLink";
+import { DemoStudyToolsSection } from "@/components/study-modes/DemoStudyToolsSection";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { socialImageMetaForPath } from "@/lib/seo/social-image";
 
@@ -137,6 +138,8 @@ export function DemoPractice() {
               </div>
             ))}
           </div>
+
+          <DemoStudyToolsSection track="bbe" />
 
           <div className="mt-6">
             <div
