@@ -21,6 +21,7 @@ import {
   WISO_MATCHING_UI,
   type StudyUiLocale,
 } from "@/lib/wiso-study-ui";
+import { DemoStudyRevealLock } from "@/components/CourseLockedView";
 
 type Pair = Flashcard & { id: string; sectionTitle: string };
 type Side = "left" | "right";
@@ -89,11 +90,16 @@ export function MatchingSubjectView({
   subject,
   subjectsHref,
   locale = "en",
+  demoRevealLocked = false,
+  productSlug,
 }: {
   subjectId: string;
   subject: FlashcardSubjectViewModel;
   subjectsHref: string;
   locale?: StudyUiLocale;
+  /** Demo practice: show unlock lock instead of confirming a match. */
+  demoRevealLocked?: boolean;
+  productSlug?: string;
 }) {
   const total = countCards(subject.sections);
   const ui = locale === "de" ? WISO_MATCHING_UI : null;
@@ -102,9 +108,10 @@ export function MatchingSubjectView({
     subjectId === "english" ? (subject.sections[0]?.id ?? "all") : "all",
   );
   const [round, setRound] = useState(1);
-  const [pairs, setPairs] = useState<Pair[]>(() =>
-    pickRound(poolFromSections(subject.sections, sectionId), ROUND_SIZE),
-  );
+  const [pairs, setPairs] = useState<Pair[]>(() => {
+    const pool = poolFromSections(subject.sections, sectionId);
+    return demoRevealLocked ? pool.slice(0, 1) : pickRound(pool, ROUND_SIZE);
+  });
   const [leftOrder, setLeftOrder] = useState<string[]>([]);
   const [rightOrder, setRightOrder] = useState<string[]>([]);
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
@@ -117,6 +124,7 @@ export function MatchingSubjectView({
   const [anchors, setAnchors] = useState<Record<string, Point>>({});
   const [hiddenLineIds, setHiddenLineIds] = useState<Set<string>>(() => new Set());
   const [wrongLineReady, setWrongLineReady] = useState(false);
+  const [showRevealLock, setShowRevealLock] = useState(false);
 
   const boardRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -138,16 +146,20 @@ export function MatchingSubjectView({
   const startRound = useCallback(
     (nextSection: string | "all", nextRound?: number) => {
       const pool = poolFromSections(subject.sections, nextSection);
-      const picked = pickRound(pool, ROUND_SIZE);
+      // Demo: fixed first pair only — no shuffle / multi-card rounds.
+      const picked = demoRevealLocked
+        ? pool.slice(0, 1)
+        : pickRound(pool, ROUND_SIZE);
       const ids = picked.map((p) => p.id);
       setPairs(picked);
-      setLeftOrder(shuffleCopy(ids));
-      setRightOrder(shuffleCopy(ids));
+      setLeftOrder(demoRevealLocked ? ids : shuffleCopy(ids));
+      setRightOrder(demoRevealLocked ? ids : shuffleCopy(ids));
       setSelectedLeft(null);
       setSelectedRight(null);
       setMatched(new Set());
       setWrongPair(null);
       setAttempts(0);
+      setShowRevealLock(false);
       setCorrectClicks(0);
       setIsDragging(false);
       dragRef.current = null;
@@ -161,12 +173,18 @@ export function MatchingSubjectView({
       }
       if (nextRound != null) setRound(nextRound);
     },
-    [subject.sections],
+    [subject.sections, demoRevealLocked],
   );
 
   useEffect(() => {
     startRound(sectionId, 1);
   }, [sectionId, startRound]);
+
+  const attemptDemoNav = useCallback(() => {
+    if (!demoRevealLocked) return false;
+    setShowRevealLock(true);
+    return true;
+  }, [demoRevealLocked]);
 
   const measureAnchors = useCallback(() => {
     const board = boardRef.current;
@@ -263,6 +281,12 @@ export function MatchingSubjectView({
 
   const tryMatch = useCallback(
     (leftId: string, rightId: string, fromDrag: boolean) => {
+      if (demoRevealLocked) {
+        setShowRevealLock(true);
+        setSelectedLeft(null);
+        setSelectedRight(null);
+        return;
+      }
       setAttempts((n) => n + 1);
       if (leftId === rightId) {
         setMatched((prev) => new Set(prev).add(leftId));
@@ -293,7 +317,7 @@ export function MatchingSubjectView({
         setSelectedRight(null);
       }, fromDrag ? 520 : 520 + CLICK_LINE_DELAY_MS);
     },
-    [scheduleLineReveal],
+    [scheduleLineReveal, demoRevealLocked],
   );
 
   const onPickLeft = (id: string) => {
@@ -493,7 +517,7 @@ export function MatchingSubjectView({
         maxWidthClassName="max-w-7xl"
         actions={
           <Link
-            to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
+            to={subjectsHref}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             {ui?.subjectsBack ?? "← Subjects"}
@@ -517,7 +541,10 @@ export function MatchingSubjectView({
             <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={() => startRound(sectionId, round)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startRound(sectionId, round);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <Shuffle className="h-3.5 w-3.5" />
@@ -525,7 +552,10 @@ export function MatchingSubjectView({
               </button>
               <button
                 type="button"
-                onClick={() => startRound(sectionId, round + 1)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startRound(sectionId, round + 1);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-xs font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >
@@ -540,7 +570,10 @@ export function MatchingSubjectView({
               active={sectionId === "all"}
               label={ui?.allTopics ?? "All topics"}
               accent={subject.accent}
-              onClick={() => setSectionId("all")}
+              onClick={() => {
+                if (attemptDemoNav()) return;
+                setSectionId("all");
+              }}
             />
             {subject.sections.map((s) => (
               <SectionChip
@@ -548,7 +581,10 @@ export function MatchingSubjectView({
                 active={sectionId === s.id}
                 label={s.title}
                 accent={subject.accent}
-                onClick={() => setSectionId(s.id)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  setSectionId(s.id);
+                }}
               />
             ))}
           </div>
@@ -568,7 +604,13 @@ export function MatchingSubjectView({
             )}
           </div>
 
-          {pairs.length === 0 ? (
+          {showRevealLock ? (
+            <DemoStudyRevealLock
+              feature="matching"
+              productSlug={productSlug}
+              onBack={() => setShowRevealLock(false)}
+            />
+          ) : pairs.length === 0 ? (
             <div className="rounded-2xl border border-border bg-card p-10 text-center text-sm text-muted-foreground">
               {ui?.emptyTopic ?? "No cards in this topic yet."}
             </div>
@@ -676,7 +718,10 @@ export function MatchingSubjectView({
               </p>
               <button
                 type="button"
-                onClick={() => startRound(sectionId, round + 1)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startRound(sectionId, round + 1);
+                }}
                 className="mt-4 inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 text-sm font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >

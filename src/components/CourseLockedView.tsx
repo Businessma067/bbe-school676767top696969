@@ -133,6 +133,51 @@ function LockCallout({
 }
 
 /**
+ * In-tool lock shown when a demo user tries to reveal an answer
+ * (flip card, match pair, tutor choice) — same unlock CTA as locked demo tasks.
+ */
+export function DemoStudyRevealLock({
+  feature,
+  productSlug,
+  onBack,
+}: {
+  feature: CourseLockFeature;
+  productSlug?: string;
+  onBack?: () => void;
+}) {
+  const isWiso = productSlug === "wiso-full-course";
+  const { message, ctaLabel, ctaTo } = courseLockCopy(feature, "full", productSlug);
+  return (
+    <div className="rounded-2xl border border-border bg-card p-8 text-center shadow-sm sm:p-10">
+      <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
+        <Lock className="h-6 w-6" aria-hidden="true" />
+      </div>
+      <h2 className="font-display text-xl font-bold tracking-tight text-foreground">
+        {isWiso ? "In der Demo gesperrt" : "Locked in demo"}
+      </h2>
+      <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">{message}</p>
+      <div className="mt-5 flex flex-col items-center justify-center gap-2 sm:flex-row">
+        <Link
+          to={ctaTo}
+          className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
+        >
+          {ctaLabel}
+        </Link>
+        {onBack ? (
+          <button
+            type="button"
+            onClick={onBack}
+            className="inline-flex items-center justify-center rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
+          >
+            {isWiso ? "Weiter ansehen" : "Keep browsing"}
+          </button>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+/**
  * Compact lock overlay for a single study-tool card (Flashcards / Matching / Tutor).
  * Keeps the card visible underneath so users can see what they are missing.
  */

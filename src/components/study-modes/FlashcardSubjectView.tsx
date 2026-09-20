@@ -39,6 +39,7 @@ import {
   WISO_FLASHCARD_UI,
   type StudyUiLocale,
 } from "@/lib/wiso-study-ui";
+import { DemoStudyRevealLock } from "@/components/CourseLockedView";
 
 type DeckCard = Flashcard & { sectionId: string; sectionTitle: string; key: string };
 
@@ -93,6 +94,9 @@ type FlashcardSubjectViewProps = {
   /** Treat like BBE English (mode tabs, no "all") */
   vocabularyModes?: boolean;
   locale?: StudyUiLocale;
+  /** Demo practice: show unlock lock instead of flipping to the answer. */
+  demoRevealLocked?: boolean;
+  productSlug?: string;
 };
 
 export function FlashcardSubjectView({
@@ -102,6 +106,8 @@ export function FlashcardSubjectView({
   subjectsHref,
   vocabularyModes = false,
   locale = "en",
+  demoRevealLocked = false,
+  productSlug,
 }: FlashcardSubjectViewProps) {
   const progressKey = progressSubjectId ?? subjectId;
   const total = countCards(subject.sections);
@@ -111,13 +117,14 @@ export function FlashcardSubjectView({
   const [sectionId, setSectionId] = useState<string | "all">(() =>
     vocabularyModes ? (subject.sections[0]?.id ?? "all") : "all",
   );
-  const [deck, setDeck] = useState<DeckCard[]>(() =>
-    buildDeck(
+  const [deck, setDeck] = useState<DeckCard[]>(() => {
+    const built = buildDeck(
       progressKey,
       subject.sections,
       vocabularyModes ? (subject.sections[0]?.id ?? "all") : "all",
-    ),
-  );
+    );
+    return demoRevealLocked ? built.slice(0, 1) : built;
+  });
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [progress, setProgress] = useState<FlashcardProgressMap>({});
@@ -126,6 +133,7 @@ export function FlashcardSubjectView({
   const [exitDir, setExitDir] = useState<"left" | "right" | null>(null);
   const [enterFrom, setEnterFrom] = useState<"left" | "right" | null>(null);
   const [seen, setSeen] = useState(0);
+  const [showRevealLock, setShowRevealLock] = useState(false);
 
   const exitLockRef = useRef(false);
   const pointerIdRef = useRef<number | null>(null);
@@ -147,23 +155,30 @@ export function FlashcardSubjectView({
   progressRef.current = progress;
 
   useEffect(() => {
+    if (demoRevealLocked) {
+      setProgress({});
+      return;
+    }
     setProgress(loadProgress(progressKey));
-  }, [progressKey]);
+  }, [progressKey, demoRevealLocked]);
 
   useEffect(() => {
     const prevTerm = cardRef.current?.term;
-    const next = buildDeck(progressKey, subject.sections, sectionId);
+    let next = buildDeck(progressKey, subject.sections, sectionId);
+    // Demo: only the first card is available.
+    if (demoRevealLocked) next = next.slice(0, 1);
     setDeck(next);
 
     // English modes share the same words — stay on the current word when switching.
     let nextIndex = 0;
-    if (vocabularyModes && prevTerm) {
+    if (!demoRevealLocked && vocabularyModes && prevTerm) {
       const match = next.findIndex((c) => c.term === prevTerm);
       if (match >= 0) nextIndex = match;
     }
     setIndex(nextIndex);
     queueRef.current = [];
     setFlipped(false);
+    setShowRevealLock(false);
     setDragX(0);
     dragXRef.current = 0;
     setExitDir(null);
@@ -171,7 +186,23 @@ export function FlashcardSubjectView({
     exitLockRef.current = false;
     pointerIdRef.current = null;
     if (!vocabularyModes) setSeen(0);
-  }, [sectionId, subject.sections, progressKey, vocabularyModes]);
+  }, [sectionId, subject.sections, progressKey, vocabularyModes, demoRevealLocked]);
+
+  const attemptFlip = useCallback(() => {
+    if (exitLockRef.current) return;
+    if (demoRevealLocked) {
+      setShowRevealLock(true);
+      return;
+    }
+    setFlipped((f) => !f);
+  }, [demoRevealLocked]);
+
+  /** Demo: any navigation / mix-up beyond the first sample opens the unlock lock. */
+  const attemptDemoNav = useCallback(() => {
+    if (!demoRevealLocked) return false;
+    setShowRevealLock(true);
+    return true;
+  }, [demoRevealLocked]);
 
   const card = deck[index];
   cardRef.current = card;
@@ -236,6 +267,11 @@ export function FlashcardSubjectView({
     (status: CardKnowledge) => {
       const current = cardRef.current;
       if (!current || exitLockRef.current) return;
+      if (demoRevealLocked) {
+        setShowRevealLock(true);
+        resetDragState();
+        return;
+      }
       exitLockRef.current = true;
       resetDragState();
 
@@ -271,10 +307,11 @@ export function FlashcardSubjectView({
         }, ENTER_MS);
       }, EXIT_MS);
     },
-    [resetDragState, progressKey],
+    [resetDragState, progressKey, demoRevealLocked],
   );
 
   const goRelative = (delta: number) => {
+    if (attemptDemoNav()) return;
     if (!deck.length || exitLockRef.current) return;
     setFlipped(false);
     resetDragState();
@@ -287,6 +324,7 @@ export function FlashcardSubjectView({
   };
 
   const advanceWeighted = () => {
+    if (attemptDemoNav()) return;
     if (!deck.length || exitLockRef.current) return;
     const exclude = cardRef.current?.key;
     setFlipped(false);
@@ -308,7 +346,7 @@ export function FlashcardSubjectView({
       if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
       if (e.key === " " || e.key === "f" || e.key === "F") {
         e.preventDefault();
-        if (!exitLockRef.current) setFlipped((f) => !f);
+        attemptFlip();
       } else if (e.key === "ArrowRight" || e.key === "k" || e.key === "K") {
         e.preventDefault();
         rateCard("known");
@@ -319,7 +357,7 @@ export function FlashcardSubjectView({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [rateCard]);
+  }, [rateCard, attemptFlip]);
 
   // Safety net: clear stuck drag if the pointer ends outside the card (prevents hover-drag).
   useEffect(() => {
@@ -334,7 +372,7 @@ export function FlashcardSubjectView({
         const decision = shouldAcceptSwipe(dx, velocityRef.current);
         if (decision) rateCard(decision);
       } else if (!moved && axis === "undecided") {
-        setFlipped((f) => !f);
+        attemptFlip();
       }
     };
     window.addEventListener("pointerup", clearStuck);
@@ -343,7 +381,7 @@ export function FlashcardSubjectView({
       window.removeEventListener("pointerup", clearStuck);
       window.removeEventListener("pointercancel", clearStuck);
     };
-  }, [rateCard, resetDragState]);
+  }, [rateCard, resetDragState, attemptFlip]);
 
   const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (exitLockRef.current || e.button !== 0) return;
@@ -429,7 +467,7 @@ export function FlashcardSubjectView({
         return;
       }
     }
-    if (!moved) setFlipped((f) => !f);
+    if (!moved) attemptFlip();
   };
 
   const swipeHint = ui
@@ -490,7 +528,7 @@ export function FlashcardSubjectView({
         maxWidthClassName="max-w-7xl"
         actions={
           <Link
-            to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
+            to={subjectsHref}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             {ui?.subjectsBack ?? "← Subjects"}
@@ -507,7 +545,7 @@ export function FlashcardSubjectView({
               </h1>
               <p className="mt-2 text-sm text-muted-foreground">{subject.description}</p>
             </div>
-            {subject.downloadHref && (
+            {subject.downloadHref && !demoRevealLocked && (
               <a
                 href={subject.downloadHref}
                 download
@@ -542,7 +580,10 @@ export function FlashcardSubjectView({
                       <button
                         key={s.id}
                         type="button"
-                        onClick={() => setSectionId(s.id)}
+                        onClick={() => {
+                          if (attemptDemoNav()) return;
+                          setSectionId(s.id);
+                        }}
                         className={
                           "rounded-md border px-3 py-2 text-xs font-semibold transition-colors " +
                           (active
@@ -568,7 +609,10 @@ export function FlashcardSubjectView({
                 </label>
                 <select
                   value={sectionId}
-                  onChange={(e) => setSectionId(e.target.value)}
+                  onChange={(e) => {
+                    if (attemptDemoNav()) return;
+                    setSectionId(e.target.value);
+                  }}
                   className="min-w-0 w-full flex-1 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-medium outline-none focus:ring-2 focus:ring-primary/30 sm:min-w-[220px]"
                 >
                   {sectionOptions.map((o) => (
@@ -582,6 +626,7 @@ export function FlashcardSubjectView({
             <button
               type="button"
               onClick={() => {
+                if (attemptDemoNav()) return;
                 setDeck((prev) => shuffleCopy(prev));
                 queueRef.current = [];
                 setIndex(0);
@@ -595,6 +640,7 @@ export function FlashcardSubjectView({
             <button
               type="button"
               onClick={() => {
+                if (attemptDemoNav()) return;
                 clearProgress(progressKey);
                 setProgress({});
                 progressRef.current = {};
@@ -625,7 +671,13 @@ export function FlashcardSubjectView({
               : ""}
           </p>
 
-          {card ? (
+          {showRevealLock ? (
+            <DemoStudyRevealLock
+              feature="flashcards"
+              productSlug={productSlug}
+              onBack={() => setShowRevealLock(false)}
+            />
+          ) : card ? (
             <div className="flashcard-viewport relative overflow-x-clip overflow-y-visible py-1">
               <div
                 ref={stageRef}
@@ -727,10 +779,8 @@ export function FlashcardSubjectView({
             </button>
             <button
               type="button"
-              onClick={() => {
-                if (!exitLockRef.current) setFlipped((f) => !f);
-              }}
-              disabled={!deck.length || busy}
+              onClick={attemptFlip}
+              disabled={!deck.length || busy || showRevealLock}
               className="rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:brightness-110 disabled:opacity-40"
               style={{ backgroundColor: subject.accent }}
             >

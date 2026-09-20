@@ -22,6 +22,7 @@ import {
   type StudyUiLocale,
 } from "@/lib/wiso-study-ui";
 import { Check, RotateCcw, Shuffle, X } from "lucide-react";
+import { DemoStudyRevealLock } from "@/components/CourseLockedView";
 
 type AnswerState = {
   choiceId: string;
@@ -34,11 +35,16 @@ export function TutorExamSubjectView({
   subject,
   subjectsHref,
   locale = "en",
+  demoRevealLocked = false,
+  productSlug,
 }: {
   subjectId: string;
   subject: FlashcardSubjectViewModel;
   subjectsHref: string;
   locale?: StudyUiLocale;
+  /** Demo practice: show unlock lock instead of revealing the answer. */
+  demoRevealLocked?: boolean;
+  productSlug?: string;
 }) {
   const total = countCards(subject.sections);
   const de = locale === "de";
@@ -57,24 +63,37 @@ export function TutorExamSubjectView({
   const [answer, setAnswer] = useState<AnswerState | null>(null);
   const [greeting, setGreeting] = useState(() => pickLine([...greetings]));
   const [finished, setFinished] = useState(false);
+  const [showRevealLock, setShowRevealLock] = useState(false);
 
   const startExam = useCallback(
     (nextSection: string | "all", nextExam?: number) => {
-      const qs = buildTutorExam(subject.sections, nextSection, TUTOR_EXAM_SIZE, locale);
+      const qs = buildTutorExam(
+        subject.sections,
+        nextSection,
+        demoRevealLocked ? 1 : TUTOR_EXAM_SIZE,
+        locale,
+      );
       setQuestions(qs);
       setIndex(0);
       setScore(0);
       setAnswer(null);
       setFinished(false);
       setGreeting(pickLine([...greetings]));
+      setShowRevealLock(false);
       if (nextExam != null) setExamNo(nextExam);
     },
-    [subject.sections, locale, greetings],
+    [subject.sections, locale, greetings, demoRevealLocked],
   );
 
   useEffect(() => {
     startExam(sectionId, 1);
   }, [sectionId, startExam]);
+
+  const attemptDemoNav = useCallback(() => {
+    if (!demoRevealLocked) return false;
+    setShowRevealLock(true);
+    return true;
+  }, [demoRevealLocked]);
 
   const current = questions[index] ?? null;
   const progressLabel =
@@ -84,6 +103,10 @@ export function TutorExamSubjectView({
 
   const onPick = (choiceId: string) => {
     if (!current || answer) return;
+    if (demoRevealLocked) {
+      setShowRevealLock(true);
+      return;
+    }
     const correct = choiceId === current.correctChoiceId;
     if (correct) setScore((s) => s + 1);
     setAnswer({
@@ -115,7 +138,7 @@ export function TutorExamSubjectView({
         maxWidthClassName="max-w-7xl"
         actions={
           <Link
-            to={subjectsHref as "/flashcards" | "/matching" | "/tutor-exam" | "/wiso/flashcards" | "/wiso/matching" | "/wiso/tutor-exam"}
+            to={subjectsHref}
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             {ui?.subjectsBack ?? "← Subjects"}
@@ -139,7 +162,10 @@ export function TutorExamSubjectView({
             <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={() => startExam(sectionId, examNo)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startExam(sectionId, examNo);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <Shuffle className="h-3.5 w-3.5" />
@@ -147,7 +173,10 @@ export function TutorExamSubjectView({
               </button>
               <button
                 type="button"
-                onClick={() => startExam(sectionId, examNo + 1)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  startExam(sectionId, examNo + 1);
+                }}
                 className="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-xs font-semibold text-white"
                 style={{ backgroundColor: subject.accent }}
               >
@@ -162,7 +191,10 @@ export function TutorExamSubjectView({
               active={sectionId === "all"}
               label={ui?.allTopics ?? "All topics"}
               accent={subject.accent}
-              onClick={() => setSectionId("all")}
+              onClick={() => {
+                if (attemptDemoNav()) return;
+                setSectionId("all");
+              }}
             />
             {subject.sections.map((s) => (
               <SectionChip
@@ -170,7 +202,10 @@ export function TutorExamSubjectView({
                 active={sectionId === s.id}
                 label={s.title}
                 accent={subject.accent}
-                onClick={() => setSectionId(s.id)}
+                onClick={() => {
+                  if (attemptDemoNav()) return;
+                  setSectionId(s.id);
+                }}
               />
             ))}
           </div>
@@ -188,7 +223,13 @@ export function TutorExamSubjectView({
             </span>
           </div>
 
-          {questions.length === 0 ? (
+          {showRevealLock ? (
+            <DemoStudyRevealLock
+              feature="tutor-exam"
+              productSlug={productSlug}
+              onBack={() => setShowRevealLock(false)}
+            />
+          ) : questions.length === 0 ? (
             <div className="rounded-2xl border border-border bg-card p-10 text-center text-sm text-muted-foreground">
               {ui?.emptyTopic ?? "No concepts in this topic yet."}
             </div>
@@ -199,7 +240,10 @@ export function TutorExamSubjectView({
               total={questions.length}
               pct={pct}
               locale={locale}
-              onAgain={() => startExam(sectionId, examNo + 1)}
+              onAgain={() => {
+                if (attemptDemoNav()) return;
+                startExam(sectionId, examNo + 1);
+              }}
             />
           ) : current ? (
             <ExamCard
